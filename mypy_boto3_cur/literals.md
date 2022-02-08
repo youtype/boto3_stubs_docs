@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-costandusagereportservice-module"></a>
+
 # Literals for boto3 CostandUsageReportService module
 
 > [Index](..) > [CostandUsageReportService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
-[mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
+[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [Literals for boto3 CostandUsageReportService module](#literals-for-boto3-costandusagereportservice-module)
   - [AWSRegionType](#awsregiontype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [TimeUnitType](#timeunittype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="awsregiontype"></a>
 
 ## AWSRegionType
 
@@ -51,6 +55,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="additionalartifacttype"></a>
+
 ## AdditionalArtifactType
 
 ```python
@@ -62,6 +68,8 @@ Values:
 - `ATHENA`
 - `QUICKSIGHT`
 - `REDSHIFT`
+
+<a id="compressionformattype"></a>
 
 ## CompressionFormatType
 
@@ -75,6 +83,8 @@ Values:
 - `Parquet`
 - `ZIP`
 
+<a id="describereportdefinitionspaginatorname"></a>
+
 ## DescribeReportDefinitionsPaginatorName
 
 ```python
@@ -84,6 +94,8 @@ from mypy_boto3_cur.literals import DescribeReportDefinitionsPaginatorName
 Values:
 
 - `describe_report_definitions`
+
+<a id="reportformattype"></a>
 
 ## ReportFormatType
 
@@ -96,6 +108,8 @@ Values:
 - `Parquet`
 - `textORcsv`
 
+<a id="reportversioningtype"></a>
+
 ## ReportVersioningType
 
 ```python
@@ -107,6 +121,8 @@ Values:
 - `CREATE_NEW_REPORT`
 - `OVERWRITE_REPORT`
 
+<a id="schemaelementtype"></a>
+
 ## SchemaElementType
 
 ```python
@@ -116,6 +132,8 @@ from mypy_boto3_cur.literals import SchemaElementType
 Values:
 
 - `RESOURCES`
+
+<a id="timeunittype"></a>
 
 ## TimeUnitType
 
@@ -128,6 +146,8 @@ Values:
 - `DAILY`
 - `HOURLY`
 - `MONTHLY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -436,6 +456,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

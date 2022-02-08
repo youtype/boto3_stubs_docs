@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-braket-module"></a>
+
 # Typed dictionaries for boto3 Braket module
 
 > [Index](..) > [Braket](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module
-[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+[mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [Typed dictionaries for boto3 Braket module](#typed-dictionaries-for-boto3-braket-module)
   - [AlgorithmSpecificationTypeDef](#algorithmspecificationtypedef)
@@ -53,6 +55,8 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="algorithmspecificationtypedef"></a>
+
 ## AlgorithmSpecificationTypeDef
 
 ```python
@@ -66,6 +70,8 @@ Optional fields:
 - `scriptModeConfig`:
   [ScriptModeConfigTypeDef](./type_defs.md#scriptmodeconfigtypedef)
 
+<a id="canceljobrequestrequesttypedef"></a>
+
 ## CancelJobRequestRequestTypeDef
 
 ```python
@@ -75,6 +81,8 @@ from mypy_boto3_braket.type_defs import CancelJobRequestRequestTypeDef
 Required fields:
 
 - `jobArn`: `str`
+
+<a id="canceljobresponsetypedef"></a>
 
 ## CancelJobResponseTypeDef
 
@@ -90,6 +98,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelquantumtaskrequestrequesttypedef"></a>
+
 ## CancelQuantumTaskRequestRequestTypeDef
 
 ```python
@@ -100,6 +110,8 @@ Required fields:
 
 - `clientToken`: `str`
 - `quantumTaskArn`: `str`
+
+<a id="cancelquantumtaskresponsetypedef"></a>
 
 ## CancelQuantumTaskResponseTypeDef
 
@@ -115,6 +127,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="containerimagetypedef"></a>
+
 ## ContainerImageTypeDef
 
 ```python
@@ -124,6 +138,8 @@ from mypy_boto3_braket.type_defs import ContainerImageTypeDef
 Required fields:
 
 - `uri`: `str`
+
+<a id="createjobrequestrequesttypedef"></a>
 
 ## CreateJobRequestRequestTypeDef
 
@@ -155,6 +171,8 @@ Optional fields:
   [JobStoppingConditionTypeDef](./type_defs.md#jobstoppingconditiontypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createjobresponsetypedef"></a>
+
 ## CreateJobResponseTypeDef
 
 ```python
@@ -166,6 +184,8 @@ Required fields:
 - `jobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createquantumtaskrequestrequesttypedef"></a>
 
 ## CreateQuantumTaskRequestRequestTypeDef
 
@@ -188,6 +208,8 @@ Optional fields:
 - `jobToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createquantumtaskresponsetypedef"></a>
+
 ## CreateQuantumTaskResponseTypeDef
 
 ```python
@@ -200,6 +222,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="datasourcetypedef"></a>
+
 ## DataSourceTypeDef
 
 ```python
@@ -210,6 +234,8 @@ Required fields:
 
 - `s3DataSource`: [S3DataSourceTypeDef](./type_defs.md#s3datasourcetypedef)
 
+<a id="deviceconfigtypedef"></a>
+
 ## DeviceConfigTypeDef
 
 ```python
@@ -219,6 +245,8 @@ from mypy_boto3_braket.type_defs import DeviceConfigTypeDef
 Required fields:
 
 - `device`: `str`
+
+<a id="devicesummarytypedef"></a>
 
 ## DeviceSummaryTypeDef
 
@@ -234,6 +262,8 @@ Required fields:
 - `deviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `providerName`: `str`
 
+<a id="getdevicerequestrequesttypedef"></a>
+
 ## GetDeviceRequestRequestTypeDef
 
 ```python
@@ -243,6 +273,8 @@ from mypy_boto3_braket.type_defs import GetDeviceRequestRequestTypeDef
 Required fields:
 
 - `deviceArn`: `str`
+
+<a id="getdeviceresponsetypedef"></a>
 
 ## GetDeviceResponseTypeDef
 
@@ -261,6 +293,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobrequestrequesttypedef"></a>
+
 ## GetJobRequestRequestTypeDef
 
 ```python
@@ -270,6 +304,8 @@ from mypy_boto3_braket.type_defs import GetJobRequestRequestTypeDef
 Required fields:
 
 - `jobArn`: `str`
+
+<a id="getjobresponsetypedef"></a>
 
 ## GetJobResponseTypeDef
 
@@ -308,6 +344,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getquantumtaskrequestrequesttypedef"></a>
+
 ## GetQuantumTaskRequestRequestTypeDef
 
 ```python
@@ -317,6 +355,8 @@ from mypy_boto3_braket.type_defs import GetQuantumTaskRequestRequestTypeDef
 Required fields:
 
 - `quantumTaskArn`: `str`
+
+<a id="getquantumtaskresponsetypedef"></a>
 
 ## GetQuantumTaskResponseTypeDef
 
@@ -341,6 +381,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputfileconfigtypedef"></a>
+
 ## InputFileConfigTypeDef
 
 ```python
@@ -356,6 +398,8 @@ Optional fields:
 
 - `contentType`: `str`
 
+<a id="instanceconfigtypedef"></a>
+
 ## InstanceConfigTypeDef
 
 ```python
@@ -366,6 +410,8 @@ Required fields:
 
 - `instanceType`: [InstanceTypeType](./literals.md#instancetypetype)
 - `volumeSizeInGb`: `int`
+
+<a id="jobcheckpointconfigtypedef"></a>
 
 ## JobCheckpointConfigTypeDef
 
@@ -381,6 +427,8 @@ Optional fields:
 
 - `localPath`: `str`
 
+<a id="jobeventdetailstypedef"></a>
+
 ## JobEventDetailsTypeDef
 
 ```python
@@ -392,6 +440,8 @@ Optional fields:
 - `eventType`: [JobEventTypeType](./literals.md#jobeventtypetype)
 - `message`: `str`
 - `timeOfEvent`: `datetime`
+
+<a id="joboutputdataconfigtypedef"></a>
 
 ## JobOutputDataConfigTypeDef
 
@@ -407,6 +457,8 @@ Optional fields:
 
 - `kmsKeyId`: `str`
 
+<a id="jobstoppingconditiontypedef"></a>
+
 ## JobStoppingConditionTypeDef
 
 ```python
@@ -416,6 +468,8 @@ from mypy_boto3_braket.type_defs import JobStoppingConditionTypeDef
 Optional fields:
 
 - `maxRuntimeInSeconds`: `int`
+
+<a id="jobsummarytypedef"></a>
 
 ## JobSummaryTypeDef
 
@@ -437,6 +491,8 @@ Optional fields:
 - `startedAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -446,6 +502,8 @@ from mypy_boto3_braket.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -459,6 +517,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -470,6 +530,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="quantumtasksummarytypedef"></a>
 
 ## QuantumTaskSummaryTypeDef
 
@@ -492,6 +554,8 @@ Optional fields:
 - `endedAt`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -506,6 +570,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3datasourcetypedef"></a>
+
 ## S3DataSourceTypeDef
 
 ```python
@@ -515,6 +581,8 @@ from mypy_boto3_braket.type_defs import S3DataSourceTypeDef
 Required fields:
 
 - `s3Uri`: `str`
+
+<a id="scriptmodeconfigtypedef"></a>
 
 ## ScriptModeConfigTypeDef
 
@@ -531,6 +599,8 @@ Optional fields:
 
 - `compressionType`: [CompressionTypeType](./literals.md#compressiontypetype)
 
+<a id="searchdevicesfiltertypedef"></a>
+
 ## SearchDevicesFilterTypeDef
 
 ```python
@@ -541,6 +611,8 @@ Required fields:
 
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
+
+<a id="searchdevicesrequestrequesttypedef"></a>
 
 ## SearchDevicesRequestRequestTypeDef
 
@@ -558,6 +630,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="searchdevicesresponsetypedef"></a>
+
 ## SearchDevicesResponseTypeDef
 
 ```python
@@ -572,6 +646,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchjobsfiltertypedef"></a>
+
 ## SearchJobsFilterTypeDef
 
 ```python
@@ -584,6 +660,8 @@ Required fields:
 - `operator`:
   [SearchJobsFilterOperatorType](./literals.md#searchjobsfilteroperatortype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="searchjobsrequestrequesttypedef"></a>
 
 ## SearchJobsRequestRequestTypeDef
 
@@ -601,6 +679,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="searchjobsresponsetypedef"></a>
+
 ## SearchJobsResponseTypeDef
 
 ```python
@@ -614,6 +694,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchquantumtasksfiltertypedef"></a>
+
 ## SearchQuantumTasksFilterTypeDef
 
 ```python
@@ -626,6 +708,8 @@ Required fields:
 - `operator`:
   [SearchQuantumTasksFilterOperatorType](./literals.md#searchquantumtasksfilteroperatortype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="searchquantumtasksrequestrequesttypedef"></a>
 
 ## SearchQuantumTasksRequestRequestTypeDef
 
@@ -643,6 +727,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="searchquantumtasksresponsetypedef"></a>
+
 ## SearchQuantumTasksResponseTypeDef
 
 ```python
@@ -657,6 +743,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -667,6 +755,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

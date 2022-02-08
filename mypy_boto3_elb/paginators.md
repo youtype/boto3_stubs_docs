@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-elasticloadbalancing-module"></a>
+
 # Paginators for boto3 ElasticLoadBalancing module
 
 > [Index](..) > [ElasticLoadBalancing](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
-[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 - [Paginators for boto3 ElasticLoadBalancing module](#paginators-for-boto3-elasticloadbalancing-module)
   - [DescribeAccountLimitsPaginator](#describeaccountlimitspaginator)
   - [DescribeLoadBalancersPaginator](#describeloadbalancerspaginator)
+
+<a id="describeaccountlimitspaginator"></a>
 
 ## DescribeAccountLimitsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elb.paginator import DescribeAccountLimitsPaginator
 
 def get_describe_account_limits_paginator() -> DescribeAccountLimitsPaginator:
-    return boto3.client("elb").get_paginator("describe_account_limits")
+    return Session().client("elb").get_paginator("describe_account_limits")
 ```
 
 Boto3 documentation:
@@ -36,6 +42,8 @@ Arguments for `DescribeAccountLimitsPaginator.paginate` method:
 `DescribeAccountLimitsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef)\].
 
+<a id="describeloadbalancerspaginator"></a>
+
 ## DescribeLoadBalancersPaginator
 
 Type annotations for
@@ -44,10 +52,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elb.paginator import DescribeLoadBalancersPaginator
 
 def get_describe_load_balancers_paginator() -> DescribeLoadBalancersPaginator:
-    return boto3.client("elb").get_paginator("describe_load_balancers")
+    return Session().client("elb").get_paginator("describe_load_balancers")
 ```
 
 Boto3 documentation:

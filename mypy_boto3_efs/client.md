@@ -1,3 +1,5 @@
+<a id="efsclient-for-boto3-efs-module"></a>
+
 # EFSClient for boto3 EFS module
 
 > [Index](..) > [EFS](.) > EFSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
 type annotations stubs module
-[mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
+[mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
 
 - [EFSClient for boto3 EFS module](#efsclient-for-boto3-efs-module)
   - [EFSClient](#efsclient)
@@ -46,6 +48,8 @@ type annotations stubs module
     - [update_file_system](#update_file_system)
     - [get_paginator](#get_paginator)
 
+<a id="efsclient"></a>
+
 ## EFSClient
 
 Type annotations for `boto3.client("efs")`
@@ -53,14 +57,17 @@ Type annotations for `boto3.client("efs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_efs.client import EFSClient
 
 def get_efs_client() -> EFSClient:
-    return boto3.client("efs")
+    return Session().client("efs")
 ```
 
 Boto3 documentation:
 [EFS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -107,7 +114,11 @@ Exceptions:
 - `Exceptions.UnsupportedAvailabilityZone`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -119,6 +130,8 @@ Boto3 documentation:
 [EFS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -134,6 +147,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_access_point"></a>
 
 ### create_access_point
 
@@ -157,6 +172,8 @@ Keyword-only arguments:
 
 Returns
 [AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef).
+
+<a id="create_file_system"></a>
 
 ### create_file_system
 
@@ -185,6 +202,8 @@ Keyword-only arguments:
 Returns
 [FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
 
+<a id="create_mount_target"></a>
+
 ### create_mount_target
 
 Creates a mount target for a file system.
@@ -206,6 +225,8 @@ Keyword-only arguments:
 
 Returns
 [MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef).
+
+<a id="create_replication_configuration"></a>
 
 ### create_replication_configuration
 
@@ -231,6 +252,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef).
 
+<a id="create_tags"></a>
+
 ### create_tags
 
 .
@@ -248,6 +271,8 @@ Keyword-only arguments:
 - `FileSystemId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="delete_access_point"></a>
+
 ### delete_access_point
 
 Deletes the specified access point.
@@ -263,6 +288,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccessPointId`: `str` *(required)*
+
+<a id="delete_file_system"></a>
 
 ### delete_file_system
 
@@ -280,6 +307,8 @@ Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
+<a id="delete_file_system_policy"></a>
+
 ### delete_file_system_policy
 
 Deletes the `FileSystemPolicy` for the specified file system.
@@ -296,6 +325,8 @@ Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 
+<a id="delete_mount_target"></a>
+
 ### delete_mount_target
 
 Deletes the specified mount target.
@@ -311,6 +342,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
+
+<a id="delete_replication_configuration"></a>
 
 ### delete_replication_configuration
 
@@ -329,6 +362,8 @@ Keyword-only arguments:
 
 - `SourceFileSystemId`: `str` *(required)*
 
+<a id="delete_tags"></a>
+
 ### delete_tags
 
 .
@@ -345,6 +380,8 @@ Keyword-only arguments:
 
 - `FileSystemId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="describe_access_points"></a>
 
 ### describe_access_points
 
@@ -369,6 +406,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef).
 
+<a id="describe_account_preferences"></a>
+
 ### describe_account_preferences
 
 Returns the account preferences settings for the Amazon Web Services account
@@ -391,6 +430,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef).
 
+<a id="describe_backup_policy"></a>
+
 ### describe_backup_policy
 
 Returns the backup policy for the specified EFS file system.
@@ -410,6 +451,8 @@ Keyword-only arguments:
 Returns
 [BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
 
+<a id="describe_file_system_policy"></a>
+
 ### describe_file_system_policy
 
 Returns the `FileSystemPolicy` for the specified EFS file system.
@@ -428,6 +471,8 @@ Keyword-only arguments:
 
 Returns
 [FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
+
+<a id="describe_file_systems"></a>
 
 ### describe_file_systems
 
@@ -452,6 +497,8 @@ Keyword-only arguments:
 Returns
 [DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
 
+<a id="describe_lifecycle_configuration"></a>
+
 ### describe_lifecycle_configuration
 
 Returns the current `LifecycleConfiguration` object for the specified Amazon
@@ -473,6 +520,8 @@ Keyword-only arguments:
 Returns
 [LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
 
+<a id="describe_mount_target_security_groups"></a>
+
 ### describe_mount_target_security_groups
 
 Returns the security groups currently in effect for a mount target.
@@ -492,6 +541,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef).
+
+<a id="describe_mount_targets"></a>
 
 ### describe_mount_targets
 
@@ -517,6 +568,8 @@ Keyword-only arguments:
 Returns
 [DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef).
 
+<a id="describe_replication_configurations"></a>
+
 ### describe_replication_configurations
 
 Retrieves the replication configurations for either a specific file system, or
@@ -541,6 +594,8 @@ Keyword-only arguments:
 Returns
 [DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 .
@@ -562,6 +617,8 @@ Keyword-only arguments:
 Returns
 [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -579,6 +636,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -601,6 +660,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="modify_mount_target_security_groups"></a>
+
 ### modify_mount_target_security_groups
 
 Modifies the set of security groups in effect for a mount target.
@@ -618,6 +679,8 @@ Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
 - `SecurityGroups`: `Sequence`\[`str`\]
+
+<a id="put_account_preferences"></a>
 
 ### put_account_preferences
 
@@ -641,6 +704,8 @@ Keyword-only arguments:
 Returns
 [PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef).
 
+<a id="put_backup_policy"></a>
+
 ### put_backup_policy
 
 Updates the file system's backup policy.
@@ -662,6 +727,8 @@ Keyword-only arguments:
 Returns
 [BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
 
+<a id="put_file_system_policy"></a>
+
 ### put_file_system_policy
 
 Applies an Amazon EFS `FileSystemPolicy` to an Amazon EFS file system.
@@ -682,6 +749,8 @@ Keyword-only arguments:
 
 Returns
 [FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
+
+<a id="put_lifecycle_configuration"></a>
 
 ### put_lifecycle_configuration
 
@@ -705,6 +774,8 @@ Keyword-only arguments:
 Returns
 [LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Creates a tag for an EFS resource.
@@ -722,6 +793,8 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from an EFS resource.
@@ -738,6 +811,8 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_file_system"></a>
 
 ### update_file_system
 
@@ -760,6 +835,8 @@ Keyword-only arguments:
 
 Returns
 [FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

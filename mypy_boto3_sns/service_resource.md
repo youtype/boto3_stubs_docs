@@ -1,3 +1,5 @@
+<a id="snsserviceresource-for-boto3-sns-module"></a>
+
 # SNSServiceResource for boto3 SNS module
 
 > [Index](..) > [SNS](.) > SNSServiceResource
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module
-[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [SNSServiceResource for boto3 SNS module](#snsserviceresource-for-boto3-sns-module)
   - [SNSServiceResource](#snsserviceresource)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [Topic collections](#topic-collections)
     - [Topic methods](#topic-methods)
 
+<a id="snsserviceresource"></a>
+
 ## SNSServiceResource
 
 Type annotations for `boto3.resource("sns")`, included resources and
@@ -54,6 +58,8 @@ def get_sns_resource() -> SNSServiceResource:
 Boto3 documentation:
 [SNS.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource)
 
+<a id="attributes"></a>
+
 ## Attributes
 
 - `meta`: [SNSResourceMeta](#snsresourcemeta)
@@ -66,7 +72,11 @@ Boto3 documentation:
 
 - `topics`: [ServiceResourceTopicsCollection](#serviceresourcetopicscollection)
 
+<a id="collections"></a>
+
 ## Collections
+
+<a id="serviceresourceplatformapplicationscollection"></a>
 
 ### ServiceResourcePlatformApplicationsCollection
 
@@ -86,6 +96,8 @@ Provides access to [PlatformApplication](#platformapplication) resource.
 Boto3 documentation:
 [SNS.ServiceResource.platform_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.platform_applications)
 
+<a id="serviceresourcesubscriptionscollection"></a>
+
 ### ServiceResourceSubscriptionsCollection
 
 Type annotations for `boto3.resource("sns").subscriptions` collection.
@@ -103,6 +115,8 @@ Provides access to [Subscription](#subscription) resource.
 
 Boto3 documentation:
 [SNS.ServiceResource.subscriptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.subscriptions)
+
+<a id="serviceresourcetopicscollection"></a>
 
 ### ServiceResourceTopicsCollection
 
@@ -122,7 +136,11 @@ Provides access to [Topic](#topic) resource.
 Boto3 documentation:
 [SNS.ServiceResource.topics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.topics)
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="snsserviceresourceplatformapplication-method"></a>
 
 ### SNSServiceResource.PlatformApplication method
 
@@ -142,6 +160,8 @@ Arguments:
 
 Returns [PlatformApplication](#platformapplication).
 
+<a id="snsserviceresourceplatformendpoint-method"></a>
+
 ### SNSServiceResource.PlatformEndpoint method
 
 Creates a PlatformEndpoint resource.
@@ -159,6 +179,8 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns [PlatformEndpoint](#platformendpoint).
+
+<a id="snsserviceresourcesubscription-method"></a>
 
 ### SNSServiceResource.Subscription method
 
@@ -178,6 +200,8 @@ Arguments:
 
 Returns [Subscription](#subscription).
 
+<a id="snsserviceresourcetopic-method"></a>
+
 ### SNSServiceResource.Topic method
 
 Creates a Topic resource.
@@ -195,6 +219,8 @@ Arguments:
 - `arn`: `str` *(required)*
 
 Returns [Topic](#topic).
+
+<a id="snsserviceresourcecreate_platform_application-method"></a>
 
 ### SNSServiceResource.create_platform_application method
 
@@ -219,6 +245,8 @@ Keyword-only arguments:
 
 Returns [PlatformApplication](#platformapplication).
 
+<a id="snsserviceresourcecreate_topic-method"></a>
+
 ### SNSServiceResource.create_topic method
 
 Creates a topic to which notifications can be published.
@@ -239,6 +267,8 @@ Keyword-only arguments:
 
 Returns [Topic](#topic).
 
+<a id="snsserviceresourceget_available_subresources-method"></a>
+
 ### SNSServiceResource.get_available_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
@@ -249,6 +279,8 @@ Boto3 documentation:
 [SNS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.get_available_subresources)
 
 Returns `Sequence`\[`str`\].
+
+<a id="platformapplication"></a>
 
 ## PlatformApplication
 
@@ -266,6 +298,8 @@ def get_resource() -> PlatformApplication:
 Boto3 documentation:
 [SNS.PlatformApplication](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformApplication)
 
+<a id="platformapplication-attributes"></a>
+
 ### PlatformApplication attributes
 
 - `attributes`: `Dict`\[`str`, `str`\]
@@ -273,7 +307,11 @@ Boto3 documentation:
 - `endpoints`:
   [PlatformApplicationEndpointsCollection](#platformapplicationendpointscollection)
 
+<a id="platformapplication-collections"></a>
+
 ### PlatformApplication collections
+
+<a id="platformapplicationendpoints"></a>
 
 #### PlatformApplication.endpoints
 
@@ -295,7 +333,11 @@ Provides access to [PlatformEndpoint](#platformendpoint) resource.
 Boto3 documentation:
 [SNS.PlatformApplication.PlatformApplicationEndpointsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.endpoints)
 
+<a id="platformapplication-methods"></a>
+
 ### PlatformApplication methods
+
+<a id="platformapplicationcreate_platform_endpoint-method"></a>
 
 #### PlatformApplication.create_platform_endpoint method
 
@@ -318,6 +360,8 @@ Keyword-only arguments:
 
 Returns [PlatformEndpoint](#platformendpoint).
 
+<a id="platformapplicationdelete-method"></a>
+
 #### PlatformApplication.delete method
 
 Deletes a platform application object for one of the supported push
@@ -327,6 +371,8 @@ Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.PlatformApplication.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete)
+
+<a id="platformapplicationget_available_subresources-method"></a>
 
 #### PlatformApplication.get_available_subresources method
 
@@ -339,6 +385,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="platformapplicationload-method"></a>
+
 #### PlatformApplication.load method
 
 Calls :py:meth:`SNS.Client.get_platform_application_attributes` to update the
@@ -349,6 +397,8 @@ Type annotations for `boto3.resource("sns").load` method.
 Boto3 documentation:
 [SNS.PlatformApplication.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.load)
 
+<a id="platformapplicationreload-method"></a>
+
 #### PlatformApplication.reload method
 
 Calls :py:meth:`SNS.Client.get_platform_application_attributes` to update the
@@ -358,6 +408,8 @@ Type annotations for `boto3.resource("sns").reload` method.
 
 Boto3 documentation:
 [SNS.PlatformApplication.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.reload)
+
+<a id="platformapplicationset_attributes-method"></a>
 
 #### PlatformApplication.set_attributes method
 
@@ -376,6 +428,8 @@ Keyword-only arguments:
 
 - `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="platformendpoint"></a>
+
 ## PlatformEndpoint
 
 Type annotations for `boto3.resource("sns").PlatformEndpoint` class.
@@ -392,12 +446,18 @@ def get_resource() -> PlatformEndpoint:
 Boto3 documentation:
 [SNS.PlatformEndpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.PlatformEndpoint)
 
+<a id="platformendpoint-attributes"></a>
+
 ### PlatformEndpoint attributes
 
 - `attributes`: `Dict`\[`str`, `str`\]
 - `arn`: `str`
 
+<a id="platformendpoint-methods"></a>
+
 ### PlatformEndpoint methods
+
+<a id="platformendpointdelete-method"></a>
 
 #### PlatformEndpoint.delete method
 
@@ -407,6 +467,8 @@ Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.PlatformEndpoint.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete)
+
+<a id="platformendpointget_available_subresources-method"></a>
 
 #### PlatformEndpoint.get_available_subresources method
 
@@ -419,6 +481,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="platformendpointload-method"></a>
+
 #### PlatformEndpoint.load method
 
 Calls :py:meth:`SNS.Client.get_endpoint_attributes` to update the attributes of
@@ -428,6 +492,8 @@ Type annotations for `boto3.resource("sns").load` method.
 
 Boto3 documentation:
 [SNS.PlatformEndpoint.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.load)
+
+<a id="platformendpointpublish-method"></a>
 
 #### PlatformEndpoint.publish method
 
@@ -457,6 +523,8 @@ Keyword-only arguments:
 
 Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
+<a id="platformendpointreload-method"></a>
+
 #### PlatformEndpoint.reload method
 
 Calls :py:meth:`SNS.Client.get_endpoint_attributes` to update the attributes of
@@ -466,6 +534,8 @@ Type annotations for `boto3.resource("sns").reload` method.
 
 Boto3 documentation:
 [SNS.PlatformEndpoint.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.reload)
+
+<a id="platformendpointset_attributes-method"></a>
 
 #### PlatformEndpoint.set_attributes method
 
@@ -484,6 +554,8 @@ Keyword-only arguments:
 
 - `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="subscription"></a>
+
 ## Subscription
 
 Type annotations for `boto3.resource("sns").Subscription` class.
@@ -500,12 +572,18 @@ def get_resource() -> Subscription:
 Boto3 documentation:
 [SNS.Subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Subscription)
 
+<a id="subscription-attributes"></a>
+
 ### Subscription attributes
 
 - `attributes`: `Dict`\[`str`, `str`\]
 - `arn`: `str`
 
+<a id="subscription-methods"></a>
+
 ### Subscription methods
+
+<a id="subscriptiondelete-method"></a>
 
 #### Subscription.delete method
 
@@ -515,6 +593,8 @@ Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.Subscription.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete)
+
+<a id="subscriptionget_available_subresources-method"></a>
 
 #### Subscription.get_available_subresources method
 
@@ -527,6 +607,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="subscriptionload-method"></a>
+
 #### Subscription.load method
 
 Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the
@@ -537,6 +619,8 @@ Type annotations for `boto3.resource("sns").load` method.
 Boto3 documentation:
 [SNS.Subscription.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.load)
 
+<a id="subscriptionreload-method"></a>
+
 #### Subscription.reload method
 
 Calls :py:meth:`SNS.Client.get_subscription_attributes` to update the
@@ -546,6 +630,8 @@ Type annotations for `boto3.resource("sns").reload` method.
 
 Boto3 documentation:
 [SNS.Subscription.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.reload)
+
+<a id="subscriptionset_attributes-method"></a>
 
 #### Subscription.set_attributes method
 
@@ -565,6 +651,8 @@ Keyword-only arguments:
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`
 
+<a id="topic"></a>
+
 ## Topic
 
 Type annotations for `boto3.resource("sns").Topic` class.
@@ -581,6 +669,8 @@ def get_resource() -> Topic:
 Boto3 documentation:
 [SNS.Topic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.ServiceResource.Topic)
 
+<a id="topic-attributes"></a>
+
 ### Topic attributes
 
 - `attributes`: `Dict`\[`str`, `str`\]
@@ -588,7 +678,11 @@ Boto3 documentation:
 - `subscriptions`:
   [TopicSubscriptionsCollection](#topicsubscriptionscollection)
 
+<a id="topic-collections"></a>
+
 ### Topic collections
+
+<a id="topicsubscriptions"></a>
 
 #### Topic.subscriptions
 
@@ -610,7 +704,11 @@ Provides access to [Subscription](#subscription) resource.
 Boto3 documentation:
 [SNS.Topic.TopicSubscriptionsCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.subscriptions)
 
+<a id="topic-methods"></a>
+
 ### Topic methods
+
+<a id="topicadd_permission-method"></a>
 
 #### Topic.add_permission method
 
@@ -630,6 +728,8 @@ Keyword-only arguments:
 - `Label`: `str` *(required)*
 - `AWSAccountId`: `Sequence`\[`str`\] *(required)*
 - `ActionName`: `Sequence`\[`str`\] *(required)*
+
+<a id="topicconfirm_subscription-method"></a>
 
 #### Topic.confirm_subscription method
 
@@ -651,6 +751,8 @@ Keyword-only arguments:
 
 Returns [Subscription](#subscription).
 
+<a id="topicdelete-method"></a>
+
 #### Topic.delete method
 
 Deletes a topic and all its subscriptions.
@@ -659,6 +761,8 @@ Type annotations for `boto3.resource("sns").delete` method.
 
 Boto3 documentation:
 [SNS.Topic.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete)
+
+<a id="topicget_available_subresources-method"></a>
 
 #### Topic.get_available_subresources method
 
@@ -671,6 +775,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="topicload-method"></a>
+
 #### Topic.load method
 
 Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of
@@ -680,6 +786,8 @@ Type annotations for `boto3.resource("sns").load` method.
 
 Boto3 documentation:
 [SNS.Topic.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.load)
+
+<a id="topicpublish-method"></a>
 
 #### Topic.publish method
 
@@ -709,6 +817,8 @@ Keyword-only arguments:
 
 Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
+<a id="topicreload-method"></a>
+
 #### Topic.reload method
 
 Calls :py:meth:`SNS.Client.get_topic_attributes` to update the attributes of
@@ -718,6 +828,8 @@ Type annotations for `boto3.resource("sns").reload` method.
 
 Boto3 documentation:
 [SNS.Topic.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.reload)
+
+<a id="topicremove_permission-method"></a>
 
 #### Topic.remove_permission method
 
@@ -735,6 +847,8 @@ Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
+<a id="topicset_attributes-method"></a>
+
 #### Topic.set_attributes method
 
 Allows a topic owner to set an attribute of the topic to a new value.
@@ -751,6 +865,8 @@ Keyword-only arguments:
 
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`
+
+<a id="topicsubscribe-method"></a>
 
 #### Topic.subscribe method
 

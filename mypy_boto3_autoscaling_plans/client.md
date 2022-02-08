@@ -1,3 +1,5 @@
+<a id="autoscalingplansclient-for-boto3-autoscalingplans-module"></a>
+
 # AutoScalingPlansClient for boto3 AutoScalingPlans module
 
 > [Index](..) > [AutoScalingPlans](.) > AutoScalingPlansClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
-[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [AutoScalingPlansClient for boto3 AutoScalingPlans module](#autoscalingplansclient-for-boto3-autoscalingplans-module)
   - [AutoScalingPlansClient](#autoscalingplansclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [update_scaling_plan](#update_scaling_plan)
     - [get_paginator](#get_paginator)
 
+<a id="autoscalingplansclient"></a>
+
 ## AutoScalingPlansClient
 
 Type annotations for `boto3.client("autoscaling-plans")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("autoscaling-plans")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 
 def get_autoscaling-plans_client() -> AutoScalingPlansClient:
-    return boto3.client("autoscaling-plans")
+    return Session().client("autoscaling-plans")
 ```
 
 Boto3 documentation:
 [AutoScalingPlans.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -60,7 +67,11 @@ Exceptions:
 - `Exceptions.ObjectNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -72,6 +83,8 @@ Boto3 documentation:
 [AutoScalingPlans.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_scaling_plan"></a>
 
 ### create_scaling_plan
 
@@ -114,6 +129,8 @@ Keyword-only arguments:
 Returns
 [CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef).
 
+<a id="delete_scaling_plan"></a>
+
 ### delete_scaling_plan
 
 Deletes the specified scaling plan.
@@ -133,6 +150,8 @@ Keyword-only arguments:
 - `ScalingPlanVersion`: `int` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_scaling_plan_resources"></a>
 
 ### describe_scaling_plan_resources
 
@@ -156,6 +175,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef).
+
+<a id="describe_scaling_plans"></a>
 
 ### describe_scaling_plans
 
@@ -182,6 +203,8 @@ Keyword-only arguments:
 Returns
 [DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -200,6 +223,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_scaling_plan_resource_forecast_data"></a>
 
 ### get_scaling_plan_resource_forecast_data
 
@@ -232,6 +257,8 @@ Keyword-only arguments:
 Returns
 [GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef).
 
+<a id="update_scaling_plan"></a>
+
 ### update_scaling_plan
 
 Updates the specified scaling plan.
@@ -255,6 +282,8 @@ Keyword-only arguments:
   `Sequence`\[[ScalingInstructionTypeDef](./type_defs.md#scalinginstructiontypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ssm-module"></a>
+
 # Literals for boto3 SSM module
 
 > [Index](..) > [SSM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
 type annotations stubs module
-[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [Literals for boto3 SSM module](#literals-for-boto3-ssm-module)
   - [AssociationComplianceSeverityType](#associationcomplianceseveritytype)
@@ -143,6 +145,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="associationcomplianceseveritytype"></a>
+
 ## AssociationComplianceSeverityType
 
 ```python
@@ -157,6 +161,8 @@ Values:
 - `MEDIUM`
 - `UNSPECIFIED`
 
+<a id="associationexecutionfilterkeytype"></a>
+
 ## AssociationExecutionFilterKeyType
 
 ```python
@@ -169,6 +175,8 @@ Values:
 - `ExecutionId`
 - `Status`
 
+<a id="associationexecutiontargetsfilterkeytype"></a>
+
 ## AssociationExecutionTargetsFilterKeyType
 
 ```python
@@ -180,6 +188,8 @@ Values:
 - `ResourceId`
 - `ResourceType`
 - `Status`
+
+<a id="associationfilterkeytype"></a>
 
 ## AssociationFilterKeyType
 
@@ -198,6 +208,8 @@ Values:
 - `Name`
 - `ResourceGroupName`
 
+<a id="associationfilteroperatortypetype"></a>
+
 ## AssociationFilterOperatorTypeType
 
 ```python
@@ -209,6 +221,8 @@ Values:
 - `EQUAL`
 - `GREATER_THAN`
 - `LESS_THAN`
+
+<a id="associationstatusnametype"></a>
 
 ## AssociationStatusNameType
 
@@ -222,6 +236,8 @@ Values:
 - `Pending`
 - `Success`
 
+<a id="associationsynccompliancetype"></a>
+
 ## AssociationSyncComplianceType
 
 ```python
@@ -233,6 +249,8 @@ Values:
 - `AUTO`
 - `MANUAL`
 
+<a id="attachmenthashtypetype"></a>
+
 ## AttachmentHashTypeType
 
 ```python
@@ -242,6 +260,8 @@ from mypy_boto3_ssm.literals import AttachmentHashTypeType
 Values:
 
 - `Sha256`
+
+<a id="attachmentssourcekeytype"></a>
 
 ## AttachmentsSourceKeyType
 
@@ -254,6 +274,8 @@ Values:
 - `AttachmentReference`
 - `S3FileUrl`
 - `SourceUrl`
+
+<a id="automationexecutionfilterkeytype"></a>
 
 ## AutomationExecutionFilterKeyType
 
@@ -275,6 +297,8 @@ Values:
 - `StartTimeBefore`
 - `TagKey`
 - `TargetResourceGroup`
+
+<a id="automationexecutionstatustype"></a>
 
 ## AutomationExecutionStatusType
 
@@ -303,6 +327,8 @@ Values:
 - `TimedOut`
 - `Waiting`
 
+<a id="automationsubtypetype"></a>
+
 ## AutomationSubtypeType
 
 ```python
@@ -312,6 +338,8 @@ from mypy_boto3_ssm.literals import AutomationSubtypeType
 Values:
 
 - `ChangeRequest`
+
+<a id="automationtypetype"></a>
 
 ## AutomationTypeType
 
@@ -324,6 +352,8 @@ Values:
 - `CrossAccount`
 - `Local`
 
+<a id="calendarstatetype"></a>
+
 ## CalendarStateType
 
 ```python
@@ -335,6 +365,8 @@ Values:
 - `CLOSED`
 - `OPEN`
 
+<a id="commandexecutedwaitername"></a>
+
 ## CommandExecutedWaiterName
 
 ```python
@@ -344,6 +376,8 @@ from mypy_boto3_ssm.literals import CommandExecutedWaiterName
 Values:
 
 - `command_executed`
+
+<a id="commandfilterkeytype"></a>
 
 ## CommandFilterKeyType
 
@@ -358,6 +392,8 @@ Values:
 - `InvokedAfter`
 - `InvokedBefore`
 - `Status`
+
+<a id="commandinvocationstatustype"></a>
 
 ## CommandInvocationStatusType
 
@@ -376,6 +412,8 @@ Values:
 - `Success`
 - `TimedOut`
 
+<a id="commandpluginstatustype"></a>
+
 ## CommandPluginStatusType
 
 ```python
@@ -390,6 +428,8 @@ Values:
 - `Pending`
 - `Success`
 - `TimedOut`
+
+<a id="commandstatustype"></a>
 
 ## CommandStatusType
 
@@ -407,6 +447,8 @@ Values:
 - `Success`
 - `TimedOut`
 
+<a id="compliancequeryoperatortypetype"></a>
+
 ## ComplianceQueryOperatorTypeType
 
 ```python
@@ -420,6 +462,8 @@ Values:
 - `GREATER_THAN`
 - `LESS_THAN`
 - `NOT_EQUAL`
+
+<a id="complianceseveritytype"></a>
 
 ## ComplianceSeverityType
 
@@ -436,6 +480,8 @@ Values:
 - `MEDIUM`
 - `UNSPECIFIED`
 
+<a id="compliancestatustype"></a>
+
 ## ComplianceStatusType
 
 ```python
@@ -446,6 +492,8 @@ Values:
 
 - `COMPLIANT`
 - `NON_COMPLIANT`
+
+<a id="complianceuploadtypetype"></a>
 
 ## ComplianceUploadTypeType
 
@@ -458,6 +506,8 @@ Values:
 - `COMPLETE`
 - `PARTIAL`
 
+<a id="connectionstatustype"></a>
+
 ## ConnectionStatusType
 
 ```python
@@ -468,6 +518,8 @@ Values:
 
 - `Connected`
 - `NotConnected`
+
+<a id="describeactivationsfilterkeystype"></a>
 
 ## DescribeActivationsFilterKeysType
 
@@ -481,6 +533,8 @@ Values:
 - `DefaultInstanceName`
 - `IamRole`
 
+<a id="describeactivationspaginatorname"></a>
+
 ## DescribeActivationsPaginatorName
 
 ```python
@@ -490,6 +544,8 @@ from mypy_boto3_ssm.literals import DescribeActivationsPaginatorName
 Values:
 
 - `describe_activations`
+
+<a id="describeassociationexecutiontargetspaginatorname"></a>
 
 ## DescribeAssociationExecutionTargetsPaginatorName
 
@@ -501,6 +557,8 @@ Values:
 
 - `describe_association_execution_targets`
 
+<a id="describeassociationexecutionspaginatorname"></a>
+
 ## DescribeAssociationExecutionsPaginatorName
 
 ```python
@@ -510,6 +568,8 @@ from mypy_boto3_ssm.literals import DescribeAssociationExecutionsPaginatorName
 Values:
 
 - `describe_association_executions`
+
+<a id="describeautomationexecutionspaginatorname"></a>
 
 ## DescribeAutomationExecutionsPaginatorName
 
@@ -521,6 +581,8 @@ Values:
 
 - `describe_automation_executions`
 
+<a id="describeautomationstepexecutionspaginatorname"></a>
+
 ## DescribeAutomationStepExecutionsPaginatorName
 
 ```python
@@ -530,6 +592,8 @@ from mypy_boto3_ssm.literals import DescribeAutomationStepExecutionsPaginatorNam
 Values:
 
 - `describe_automation_step_executions`
+
+<a id="describeavailablepatchespaginatorname"></a>
 
 ## DescribeAvailablePatchesPaginatorName
 
@@ -541,6 +605,8 @@ Values:
 
 - `describe_available_patches`
 
+<a id="describeeffectiveinstanceassociationspaginatorname"></a>
+
 ## DescribeEffectiveInstanceAssociationsPaginatorName
 
 ```python
@@ -550,6 +616,8 @@ from mypy_boto3_ssm.literals import DescribeEffectiveInstanceAssociationsPaginat
 Values:
 
 - `describe_effective_instance_associations`
+
+<a id="describeeffectivepatchesforpatchbaselinepaginatorname"></a>
 
 ## DescribeEffectivePatchesForPatchBaselinePaginatorName
 
@@ -561,6 +629,8 @@ Values:
 
 - `describe_effective_patches_for_patch_baseline`
 
+<a id="describeinstanceassociationsstatuspaginatorname"></a>
+
 ## DescribeInstanceAssociationsStatusPaginatorName
 
 ```python
@@ -570,6 +640,8 @@ from mypy_boto3_ssm.literals import DescribeInstanceAssociationsStatusPaginatorN
 Values:
 
 - `describe_instance_associations_status`
+
+<a id="describeinstanceinformationpaginatorname"></a>
 
 ## DescribeInstanceInformationPaginatorName
 
@@ -581,6 +653,8 @@ Values:
 
 - `describe_instance_information`
 
+<a id="describeinstancepatchstatesforpatchgrouppaginatorname"></a>
+
 ## DescribeInstancePatchStatesForPatchGroupPaginatorName
 
 ```python
@@ -590,6 +664,8 @@ from mypy_boto3_ssm.literals import DescribeInstancePatchStatesForPatchGroupPagi
 Values:
 
 - `describe_instance_patch_states_for_patch_group`
+
+<a id="describeinstancepatchstatespaginatorname"></a>
 
 ## DescribeInstancePatchStatesPaginatorName
 
@@ -601,6 +677,8 @@ Values:
 
 - `describe_instance_patch_states`
 
+<a id="describeinstancepatchespaginatorname"></a>
+
 ## DescribeInstancePatchesPaginatorName
 
 ```python
@@ -610,6 +688,8 @@ from mypy_boto3_ssm.literals import DescribeInstancePatchesPaginatorName
 Values:
 
 - `describe_instance_patches`
+
+<a id="describeinventorydeletionspaginatorname"></a>
 
 ## DescribeInventoryDeletionsPaginatorName
 
@@ -621,6 +701,8 @@ Values:
 
 - `describe_inventory_deletions`
 
+<a id="describemaintenancewindowexecutiontaskinvocationspaginatorname"></a>
+
 ## DescribeMaintenanceWindowExecutionTaskInvocationsPaginatorName
 
 ```python
@@ -630,6 +712,8 @@ from mypy_boto3_ssm.literals import DescribeMaintenanceWindowExecutionTaskInvoca
 Values:
 
 - `describe_maintenance_window_execution_task_invocations`
+
+<a id="describemaintenancewindowexecutiontaskspaginatorname"></a>
 
 ## DescribeMaintenanceWindowExecutionTasksPaginatorName
 
@@ -641,6 +725,8 @@ Values:
 
 - `describe_maintenance_window_execution_tasks`
 
+<a id="describemaintenancewindowexecutionspaginatorname"></a>
+
 ## DescribeMaintenanceWindowExecutionsPaginatorName
 
 ```python
@@ -650,6 +736,8 @@ from mypy_boto3_ssm.literals import DescribeMaintenanceWindowExecutionsPaginator
 Values:
 
 - `describe_maintenance_window_executions`
+
+<a id="describemaintenancewindowschedulepaginatorname"></a>
 
 ## DescribeMaintenanceWindowSchedulePaginatorName
 
@@ -661,6 +749,8 @@ Values:
 
 - `describe_maintenance_window_schedule`
 
+<a id="describemaintenancewindowtargetspaginatorname"></a>
+
 ## DescribeMaintenanceWindowTargetsPaginatorName
 
 ```python
@@ -670,6 +760,8 @@ from mypy_boto3_ssm.literals import DescribeMaintenanceWindowTargetsPaginatorNam
 Values:
 
 - `describe_maintenance_window_targets`
+
+<a id="describemaintenancewindowtaskspaginatorname"></a>
 
 ## DescribeMaintenanceWindowTasksPaginatorName
 
@@ -681,6 +773,8 @@ Values:
 
 - `describe_maintenance_window_tasks`
 
+<a id="describemaintenancewindowsfortargetpaginatorname"></a>
+
 ## DescribeMaintenanceWindowsForTargetPaginatorName
 
 ```python
@@ -690,6 +784,8 @@ from mypy_boto3_ssm.literals import DescribeMaintenanceWindowsForTargetPaginator
 Values:
 
 - `describe_maintenance_windows_for_target`
+
+<a id="describemaintenancewindowspaginatorname"></a>
 
 ## DescribeMaintenanceWindowsPaginatorName
 
@@ -701,6 +797,8 @@ Values:
 
 - `describe_maintenance_windows`
 
+<a id="describeopsitemspaginatorname"></a>
+
 ## DescribeOpsItemsPaginatorName
 
 ```python
@@ -710,6 +808,8 @@ from mypy_boto3_ssm.literals import DescribeOpsItemsPaginatorName
 Values:
 
 - `describe_ops_items`
+
+<a id="describeparameterspaginatorname"></a>
 
 ## DescribeParametersPaginatorName
 
@@ -721,6 +821,8 @@ Values:
 
 - `describe_parameters`
 
+<a id="describepatchbaselinespaginatorname"></a>
+
 ## DescribePatchBaselinesPaginatorName
 
 ```python
@@ -730,6 +832,8 @@ from mypy_boto3_ssm.literals import DescribePatchBaselinesPaginatorName
 Values:
 
 - `describe_patch_baselines`
+
+<a id="describepatchgroupspaginatorname"></a>
 
 ## DescribePatchGroupsPaginatorName
 
@@ -741,6 +845,8 @@ Values:
 
 - `describe_patch_groups`
 
+<a id="describepatchpropertiespaginatorname"></a>
+
 ## DescribePatchPropertiesPaginatorName
 
 ```python
@@ -751,6 +857,8 @@ Values:
 
 - `describe_patch_properties`
 
+<a id="describesessionspaginatorname"></a>
+
 ## DescribeSessionsPaginatorName
 
 ```python
@@ -760,6 +868,8 @@ from mypy_boto3_ssm.literals import DescribeSessionsPaginatorName
 Values:
 
 - `describe_sessions`
+
+<a id="documentfilterkeytype"></a>
 
 ## DocumentFilterKeyType
 
@@ -774,6 +884,8 @@ Values:
 - `Owner`
 - `PlatformTypes`
 
+<a id="documentformattype"></a>
+
 ## DocumentFormatType
 
 ```python
@@ -786,6 +898,8 @@ Values:
 - `TEXT`
 - `YAML`
 
+<a id="documenthashtypetype"></a>
+
 ## DocumentHashTypeType
 
 ```python
@@ -797,6 +911,8 @@ Values:
 - `Sha1`
 - `Sha256`
 
+<a id="documentmetadataenumtype"></a>
+
 ## DocumentMetadataEnumType
 
 ```python
@@ -806,6 +922,8 @@ from mypy_boto3_ssm.literals import DocumentMetadataEnumType
 Values:
 
 - `DocumentReviews`
+
+<a id="documentparametertypetype"></a>
 
 ## DocumentParameterTypeType
 
@@ -818,6 +936,8 @@ Values:
 - `String`
 - `StringList`
 
+<a id="documentpermissiontypetype"></a>
+
 ## DocumentPermissionTypeType
 
 ```python
@@ -827,6 +947,8 @@ from mypy_boto3_ssm.literals import DocumentPermissionTypeType
 Values:
 
 - `Share`
+
+<a id="documentreviewactiontype"></a>
 
 ## DocumentReviewActionType
 
@@ -841,6 +963,8 @@ Values:
 - `SendForReview`
 - `UpdateReview`
 
+<a id="documentreviewcommenttypetype"></a>
+
 ## DocumentReviewCommentTypeType
 
 ```python
@@ -850,6 +974,8 @@ from mypy_boto3_ssm.literals import DocumentReviewCommentTypeType
 Values:
 
 - `Comment`
+
+<a id="documentstatustype"></a>
 
 ## DocumentStatusType
 
@@ -864,6 +990,8 @@ Values:
 - `Deleting`
 - `Failed`
 - `Updating`
+
+<a id="documenttypetype"></a>
 
 ## DocumentTypeType
 
@@ -886,6 +1014,8 @@ Values:
 - `ProblemAnalysisTemplate`
 - `Session`
 
+<a id="executionmodetype"></a>
+
 ## ExecutionModeType
 
 ```python
@@ -896,6 +1026,8 @@ Values:
 
 - `Auto`
 - `Interactive`
+
+<a id="faulttype"></a>
 
 ## FaultType
 
@@ -909,6 +1041,8 @@ Values:
 - `Server`
 - `Unknown`
 
+<a id="getinventorypaginatorname"></a>
+
 ## GetInventoryPaginatorName
 
 ```python
@@ -918,6 +1052,8 @@ from mypy_boto3_ssm.literals import GetInventoryPaginatorName
 Values:
 
 - `get_inventory`
+
+<a id="getinventoryschemapaginatorname"></a>
 
 ## GetInventorySchemaPaginatorName
 
@@ -929,6 +1065,8 @@ Values:
 
 - `get_inventory_schema`
 
+<a id="getopssummarypaginatorname"></a>
+
 ## GetOpsSummaryPaginatorName
 
 ```python
@@ -938,6 +1076,8 @@ from mypy_boto3_ssm.literals import GetOpsSummaryPaginatorName
 Values:
 
 - `get_ops_summary`
+
+<a id="getparameterhistorypaginatorname"></a>
 
 ## GetParameterHistoryPaginatorName
 
@@ -949,6 +1089,8 @@ Values:
 
 - `get_parameter_history`
 
+<a id="getparametersbypathpaginatorname"></a>
+
 ## GetParametersByPathPaginatorName
 
 ```python
@@ -958,6 +1100,8 @@ from mypy_boto3_ssm.literals import GetParametersByPathPaginatorName
 Values:
 
 - `get_parameters_by_path`
+
+<a id="instanceinformationfilterkeytype"></a>
 
 ## InstanceInformationFilterKeyType
 
@@ -976,6 +1120,8 @@ Values:
 - `PlatformTypes`
 - `ResourceType`
 
+<a id="instancepatchstateoperatortypetype"></a>
+
 ## InstancePatchStateOperatorTypeType
 
 ```python
@@ -989,6 +1135,8 @@ Values:
 - `LessThan`
 - `NotEqual`
 
+<a id="inventoryattributedatatypetype"></a>
+
 ## InventoryAttributeDataTypeType
 
 ```python
@@ -1000,6 +1148,8 @@ Values:
 - `number`
 - `string`
 
+<a id="inventorydeletionstatustype"></a>
+
 ## InventoryDeletionStatusType
 
 ```python
@@ -1010,6 +1160,8 @@ Values:
 
 - `Complete`
 - `InProgress`
+
+<a id="inventoryqueryoperatortypetype"></a>
 
 ## InventoryQueryOperatorTypeType
 
@@ -1026,6 +1178,8 @@ Values:
 - `LessThan`
 - `NotEqual`
 
+<a id="inventoryschemadeleteoptiontype"></a>
+
 ## InventorySchemaDeleteOptionType
 
 ```python
@@ -1036,6 +1190,8 @@ Values:
 
 - `DeleteSchema`
 - `DisableSchema`
+
+<a id="lastresourcedatasyncstatustype"></a>
 
 ## LastResourceDataSyncStatusType
 
@@ -1049,6 +1205,8 @@ Values:
 - `InProgress`
 - `Successful`
 
+<a id="listassociationversionspaginatorname"></a>
+
 ## ListAssociationVersionsPaginatorName
 
 ```python
@@ -1058,6 +1216,8 @@ from mypy_boto3_ssm.literals import ListAssociationVersionsPaginatorName
 Values:
 
 - `list_association_versions`
+
+<a id="listassociationspaginatorname"></a>
 
 ## ListAssociationsPaginatorName
 
@@ -1069,6 +1229,8 @@ Values:
 
 - `list_associations`
 
+<a id="listcommandinvocationspaginatorname"></a>
+
 ## ListCommandInvocationsPaginatorName
 
 ```python
@@ -1078,6 +1240,8 @@ from mypy_boto3_ssm.literals import ListCommandInvocationsPaginatorName
 Values:
 
 - `list_command_invocations`
+
+<a id="listcommandspaginatorname"></a>
 
 ## ListCommandsPaginatorName
 
@@ -1089,6 +1253,8 @@ Values:
 
 - `list_commands`
 
+<a id="listcomplianceitemspaginatorname"></a>
+
 ## ListComplianceItemsPaginatorName
 
 ```python
@@ -1098,6 +1264,8 @@ from mypy_boto3_ssm.literals import ListComplianceItemsPaginatorName
 Values:
 
 - `list_compliance_items`
+
+<a id="listcompliancesummariespaginatorname"></a>
 
 ## ListComplianceSummariesPaginatorName
 
@@ -1109,6 +1277,8 @@ Values:
 
 - `list_compliance_summaries`
 
+<a id="listdocumentversionspaginatorname"></a>
+
 ## ListDocumentVersionsPaginatorName
 
 ```python
@@ -1118,6 +1288,8 @@ from mypy_boto3_ssm.literals import ListDocumentVersionsPaginatorName
 Values:
 
 - `list_document_versions`
+
+<a id="listdocumentspaginatorname"></a>
 
 ## ListDocumentsPaginatorName
 
@@ -1129,6 +1301,8 @@ Values:
 
 - `list_documents`
 
+<a id="listopsitemeventspaginatorname"></a>
+
 ## ListOpsItemEventsPaginatorName
 
 ```python
@@ -1138,6 +1312,8 @@ from mypy_boto3_ssm.literals import ListOpsItemEventsPaginatorName
 Values:
 
 - `list_ops_item_events`
+
+<a id="listopsitemrelateditemspaginatorname"></a>
 
 ## ListOpsItemRelatedItemsPaginatorName
 
@@ -1149,6 +1325,8 @@ Values:
 
 - `list_ops_item_related_items`
 
+<a id="listopsmetadatapaginatorname"></a>
+
 ## ListOpsMetadataPaginatorName
 
 ```python
@@ -1158,6 +1336,8 @@ from mypy_boto3_ssm.literals import ListOpsMetadataPaginatorName
 Values:
 
 - `list_ops_metadata`
+
+<a id="listresourcecompliancesummariespaginatorname"></a>
 
 ## ListResourceComplianceSummariesPaginatorName
 
@@ -1169,6 +1349,8 @@ Values:
 
 - `list_resource_compliance_summaries`
 
+<a id="listresourcedatasyncpaginatorname"></a>
+
 ## ListResourceDataSyncPaginatorName
 
 ```python
@@ -1178,6 +1360,8 @@ from mypy_boto3_ssm.literals import ListResourceDataSyncPaginatorName
 Values:
 
 - `list_resource_data_sync`
+
+<a id="maintenancewindowexecutionstatustype"></a>
 
 ## MaintenanceWindowExecutionStatusType
 
@@ -1196,6 +1380,8 @@ Values:
 - `SUCCESS`
 - `TIMED_OUT`
 
+<a id="maintenancewindowresourcetypetype"></a>
+
 ## MaintenanceWindowResourceTypeType
 
 ```python
@@ -1207,6 +1393,8 @@ Values:
 - `INSTANCE`
 - `RESOURCE_GROUP`
 
+<a id="maintenancewindowtaskcutoffbehaviortype"></a>
+
 ## MaintenanceWindowTaskCutoffBehaviorType
 
 ```python
@@ -1217,6 +1405,8 @@ Values:
 
 - `CANCEL_TASK`
 - `CONTINUE_TASK`
+
+<a id="maintenancewindowtasktypetype"></a>
 
 ## MaintenanceWindowTaskTypeType
 
@@ -1230,6 +1420,8 @@ Values:
 - `LAMBDA`
 - `RUN_COMMAND`
 - `STEP_FUNCTIONS`
+
+<a id="notificationeventtype"></a>
 
 ## NotificationEventType
 
@@ -1246,6 +1438,8 @@ Values:
 - `Success`
 - `TimedOut`
 
+<a id="notificationtypetype"></a>
+
 ## NotificationTypeType
 
 ```python
@@ -1256,6 +1450,8 @@ Values:
 
 - `Command`
 - `Invocation`
+
+<a id="operatingsystemtype"></a>
 
 ## OperatingSystemType
 
@@ -1277,6 +1473,8 @@ Values:
 - `UBUNTU`
 - `WINDOWS`
 
+<a id="opsfilteroperatortypetype"></a>
+
 ## OpsFilterOperatorTypeType
 
 ```python
@@ -1292,6 +1490,8 @@ Values:
 - `LessThan`
 - `NotEqual`
 
+<a id="opsitemdatatypetype"></a>
+
 ## OpsItemDataTypeType
 
 ```python
@@ -1303,6 +1503,8 @@ Values:
 - `SearchableString`
 - `String`
 
+<a id="opsitemeventfilterkeytype"></a>
+
 ## OpsItemEventFilterKeyType
 
 ```python
@@ -1313,6 +1515,8 @@ Values:
 
 - `OpsItemId`
 
+<a id="opsitemeventfilteroperatortype"></a>
+
 ## OpsItemEventFilterOperatorType
 
 ```python
@@ -1322,6 +1526,8 @@ from mypy_boto3_ssm.literals import OpsItemEventFilterOperatorType
 Values:
 
 - `Equal`
+
+<a id="opsitemfilterkeytype"></a>
 
 ## OpsItemFilterKeyType
 
@@ -1359,6 +1565,8 @@ Values:
 - `Status`
 - `Title`
 
+<a id="opsitemfilteroperatortype"></a>
+
 ## OpsItemFilterOperatorType
 
 ```python
@@ -1372,6 +1580,8 @@ Values:
 - `GreaterThan`
 - `LessThan`
 
+<a id="opsitemrelateditemsfilterkeytype"></a>
+
 ## OpsItemRelatedItemsFilterKeyType
 
 ```python
@@ -1384,6 +1594,8 @@ Values:
 - `ResourceType`
 - `ResourceUri`
 
+<a id="opsitemrelateditemsfilteroperatortype"></a>
+
 ## OpsItemRelatedItemsFilterOperatorType
 
 ```python
@@ -1393,6 +1605,8 @@ from mypy_boto3_ssm.literals import OpsItemRelatedItemsFilterOperatorType
 Values:
 
 - `Equal`
+
+<a id="opsitemstatustype"></a>
 
 ## OpsItemStatusType
 
@@ -1422,6 +1636,8 @@ Values:
 - `Scheduled`
 - `TimedOut`
 
+<a id="parametertiertype"></a>
+
 ## ParameterTierType
 
 ```python
@@ -1433,6 +1649,8 @@ Values:
 - `Advanced`
 - `Intelligent-Tiering`
 - `Standard`
+
+<a id="parametertypetype"></a>
 
 ## ParameterTypeType
 
@@ -1446,6 +1664,8 @@ Values:
 - `String`
 - `StringList`
 
+<a id="parametersfilterkeytype"></a>
+
 ## ParametersFilterKeyType
 
 ```python
@@ -1458,6 +1678,8 @@ Values:
 - `Name`
 - `Type`
 
+<a id="patchactiontype"></a>
+
 ## PatchActionType
 
 ```python
@@ -1468,6 +1690,8 @@ Values:
 
 - `ALLOW_AS_DEPENDENCY`
 - `BLOCK`
+
+<a id="patchcompliancedatastatetype"></a>
 
 ## PatchComplianceDataStateType
 
@@ -1485,6 +1709,8 @@ Values:
 - `MISSING`
 - `NOT_APPLICABLE`
 
+<a id="patchcomplianceleveltype"></a>
+
 ## PatchComplianceLevelType
 
 ```python
@@ -1500,6 +1726,8 @@ Values:
 - `MEDIUM`
 - `UNSPECIFIED`
 
+<a id="patchdeploymentstatustype"></a>
+
 ## PatchDeploymentStatusType
 
 ```python
@@ -1512,6 +1740,8 @@ Values:
 - `EXPLICIT_APPROVED`
 - `EXPLICIT_REJECTED`
 - `PENDING_APPROVAL`
+
+<a id="patchfilterkeytype"></a>
 
 ## PatchFilterKeyType
 
@@ -1541,6 +1771,8 @@ Values:
 - `SEVERITY`
 - `VERSION`
 
+<a id="patchoperationtypetype"></a>
+
 ## PatchOperationTypeType
 
 ```python
@@ -1551,6 +1783,8 @@ Values:
 
 - `Install`
 - `Scan`
+
+<a id="patchpropertytype"></a>
 
 ## PatchPropertyType
 
@@ -1567,6 +1801,8 @@ Values:
 - `PRODUCT_FAMILY`
 - `SEVERITY`
 
+<a id="patchsettype"></a>
+
 ## PatchSetType
 
 ```python
@@ -1577,6 +1813,8 @@ Values:
 
 - `APPLICATION`
 - `OS`
+
+<a id="pingstatustype"></a>
 
 ## PingStatusType
 
@@ -1590,6 +1828,8 @@ Values:
 - `Inactive`
 - `Online`
 
+<a id="platformtypetype"></a>
+
 ## PlatformTypeType
 
 ```python
@@ -1602,6 +1842,8 @@ Values:
 - `MacOS`
 - `Windows`
 
+<a id="rebootoptiontype"></a>
+
 ## RebootOptionType
 
 ```python
@@ -1613,6 +1855,8 @@ Values:
 - `NoReboot`
 - `RebootIfNeeded`
 
+<a id="resourcedatasyncs3formattype"></a>
+
 ## ResourceDataSyncS3FormatType
 
 ```python
@@ -1622,6 +1866,8 @@ from mypy_boto3_ssm.literals import ResourceDataSyncS3FormatType
 Values:
 
 - `JsonSerDe`
+
+<a id="resourcetypefortaggingtype"></a>
 
 ## ResourceTypeForTaggingType
 
@@ -1639,6 +1885,8 @@ Values:
 - `Parameter`
 - `PatchBaseline`
 
+<a id="resourcetypetype"></a>
+
 ## ResourceTypeType
 
 ```python
@@ -1650,6 +1898,8 @@ Values:
 - `Document`
 - `EC2Instance`
 - `ManagedInstance`
+
+<a id="reviewstatustype"></a>
 
 ## ReviewStatusType
 
@@ -1663,6 +1913,8 @@ Values:
 - `NOT_REVIEWED`
 - `PENDING`
 - `REJECTED`
+
+<a id="sessionfilterkeytype"></a>
 
 ## SessionFilterKeyType
 
@@ -1679,6 +1931,8 @@ Values:
 - `Status`
 - `Target`
 
+<a id="sessionstatetype"></a>
+
 ## SessionStateType
 
 ```python
@@ -1689,6 +1943,8 @@ Values:
 
 - `Active`
 - `History`
+
+<a id="sessionstatustype"></a>
 
 ## SessionStatusType
 
@@ -1705,6 +1961,8 @@ Values:
 - `Terminated`
 - `Terminating`
 
+<a id="signaltypetype"></a>
+
 ## SignalTypeType
 
 ```python
@@ -1719,6 +1977,8 @@ Values:
 - `StartStep`
 - `StopStep`
 
+<a id="sourcetypetype"></a>
+
 ## SourceTypeType
 
 ```python
@@ -1730,6 +1990,8 @@ Values:
 - `AWS::EC2::Instance`
 - `AWS::IoT::Thing`
 - `AWS::SSM::ManagedInstance`
+
+<a id="stepexecutionfilterkeytype"></a>
 
 ## StepExecutionFilterKeyType
 
@@ -1746,6 +2008,8 @@ Values:
 - `StepExecutionStatus`
 - `StepName`
 
+<a id="stoptypetype"></a>
+
 ## StopTypeType
 
 ```python
@@ -1756,6 +2020,8 @@ Values:
 
 - `Cancel`
 - `Complete`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -2065,6 +2331,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -2119,6 +2387,8 @@ Values:
 - `list_ops_metadata`
 - `list_resource_compliance_summaries`
 - `list_resource_data_sync`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

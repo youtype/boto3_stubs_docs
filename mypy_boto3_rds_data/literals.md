@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-rdsdataservice-module"></a>
+
 # Literals for boto3 RDSDataService module
 
 > [Index](..) > [RDSDataService](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
-[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+[mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 - [Literals for boto3 RDSDataService module](#literals-for-boto3-rdsdataservice-module)
   - [DecimalReturnTypeType](#decimalreturntypetype)
   - [TypeHintType](#typehinttype)
   - [ServiceName](#servicename)
+
+<a id="decimalreturntypetype"></a>
 
 ## DecimalReturnTypeType
 
@@ -22,6 +26,8 @@ Values:
 
 - `DOUBLE_OR_LONG`
 - `STRING`
+
+<a id="typehinttype"></a>
 
 ## TypeHintType
 
@@ -37,6 +43,8 @@ Values:
 - `TIME`
 - `TIMESTAMP`
 - `UUID`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

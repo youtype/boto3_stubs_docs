@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-qldb-module"></a>
+
 # Typed dictionaries for boto3 QLDB module
 
 > [Index](..) > [QLDB](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
 type annotations stubs module
-[mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
+[mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 - [Typed dictionaries for boto3 QLDB module](#typed-dictionaries-for-boto3-qldb-module)
   - [CancelJournalKinesisStreamRequestRequestTypeDef](#canceljournalkinesisstreamrequestrequesttypedef)
@@ -55,6 +57,8 @@ type annotations stubs module
   - [UpdateLedgerResponseTypeDef](#updateledgerresponsetypedef)
   - [ValueHolderTypeDef](#valueholdertypedef)
 
+<a id="canceljournalkinesisstreamrequestrequesttypedef"></a>
+
 ## CancelJournalKinesisStreamRequestRequestTypeDef
 
 ```python
@@ -65,6 +69,8 @@ Required fields:
 
 - `LedgerName`: `str`
 - `StreamId`: `str`
+
+<a id="canceljournalkinesisstreamresponsetypedef"></a>
 
 ## CancelJournalKinesisStreamResponseTypeDef
 
@@ -77,6 +83,8 @@ Required fields:
 - `StreamId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createledgerrequestrequesttypedef"></a>
 
 ## CreateLedgerRequestRequestTypeDef
 
@@ -94,6 +102,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `DeletionProtection`: `bool`
 - `KmsKey`: `str`
+
+<a id="createledgerresponsetypedef"></a>
 
 ## CreateLedgerResponseTypeDef
 
@@ -113,6 +123,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteledgerrequestrequesttypedef"></a>
+
 ## DeleteLedgerRequestRequestTypeDef
 
 ```python
@@ -122,6 +134,8 @@ from mypy_boto3_qldb.type_defs import DeleteLedgerRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describejournalkinesisstreamrequestrequesttypedef"></a>
 
 ## DescribeJournalKinesisStreamRequestRequestTypeDef
 
@@ -133,6 +147,8 @@ Required fields:
 
 - `LedgerName`: `str`
 - `StreamId`: `str`
+
+<a id="describejournalkinesisstreamresponsetypedef"></a>
 
 ## DescribeJournalKinesisStreamResponseTypeDef
 
@@ -147,6 +163,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejournals3exportrequestrequesttypedef"></a>
+
 ## DescribeJournalS3ExportRequestRequestTypeDef
 
 ```python
@@ -157,6 +175,8 @@ Required fields:
 
 - `Name`: `str`
 - `ExportId`: `str`
+
+<a id="describejournals3exportresponsetypedef"></a>
 
 ## DescribeJournalS3ExportResponseTypeDef
 
@@ -171,6 +191,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeledgerrequestrequesttypedef"></a>
+
 ## DescribeLedgerRequestRequestTypeDef
 
 ```python
@@ -180,6 +202,8 @@ from mypy_boto3_qldb.type_defs import DescribeLedgerRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describeledgerresponsetypedef"></a>
 
 ## DescribeLedgerResponseTypeDef
 
@@ -200,6 +224,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="exportjournaltos3requestrequesttypedef"></a>
+
 ## ExportJournalToS3RequestRequestTypeDef
 
 ```python
@@ -219,6 +245,8 @@ Optional fields:
 
 - `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
 
+<a id="exportjournaltos3responsetypedef"></a>
+
 ## ExportJournalToS3ResponseTypeDef
 
 ```python
@@ -230,6 +258,8 @@ Required fields:
 - `ExportId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getblockrequestrequesttypedef"></a>
 
 ## GetBlockRequestRequestTypeDef
 
@@ -246,6 +276,8 @@ Optional fields:
 
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
+<a id="getblockresponsetypedef"></a>
+
 ## GetBlockResponseTypeDef
 
 ```python
@@ -259,6 +291,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdigestrequestrequesttypedef"></a>
+
 ## GetDigestRequestRequestTypeDef
 
 ```python
@@ -268,6 +302,8 @@ from mypy_boto3_qldb.type_defs import GetDigestRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getdigestresponsetypedef"></a>
 
 ## GetDigestResponseTypeDef
 
@@ -281,6 +317,8 @@ Required fields:
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrevisionrequestrequesttypedef"></a>
 
 ## GetRevisionRequestRequestTypeDef
 
@@ -298,6 +336,8 @@ Optional fields:
 
 - `DigestTipAddress`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 
+<a id="getrevisionresponsetypedef"></a>
+
 ## GetRevisionResponseTypeDef
 
 ```python
@@ -310,6 +350,8 @@ Required fields:
 - `Revision`: [ValueHolderTypeDef](./type_defs.md#valueholdertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="journalkinesisstreamdescriptiontypedef"></a>
 
 ## JournalKinesisStreamDescriptionTypeDef
 
@@ -335,6 +377,8 @@ Optional fields:
 - `Arn`: `str`
 - `ErrorCause`: [ErrorCauseType](./literals.md#errorcausetype)
 
+<a id="journals3exportdescriptiontypedef"></a>
+
 ## JournalS3ExportDescriptionTypeDef
 
 ```python
@@ -357,6 +401,8 @@ Optional fields:
 
 - `OutputFormat`: [OutputFormatType](./literals.md#outputformattype)
 
+<a id="kinesisconfigurationtypedef"></a>
+
 ## KinesisConfigurationTypeDef
 
 ```python
@@ -370,6 +416,8 @@ Required fields:
 Optional fields:
 
 - `AggregationEnabled`: `bool`
+
+<a id="ledgerencryptiondescriptiontypedef"></a>
 
 ## LedgerEncryptionDescriptionTypeDef
 
@@ -387,6 +435,8 @@ Optional fields:
 
 - `InaccessibleKmsKeyDateTime`: `datetime`
 
+<a id="ledgersummarytypedef"></a>
+
 ## LedgerSummaryTypeDef
 
 ```python
@@ -398,6 +448,8 @@ Optional fields:
 - `Name`: `str`
 - `State`: [LedgerStateType](./literals.md#ledgerstatetype)
 - `CreationDateTime`: `datetime`
+
+<a id="listjournalkinesisstreamsforledgerrequestrequesttypedef"></a>
 
 ## ListJournalKinesisStreamsForLedgerRequestRequestTypeDef
 
@@ -414,6 +466,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listjournalkinesisstreamsforledgerresponsetypedef"></a>
+
 ## ListJournalKinesisStreamsForLedgerResponseTypeDef
 
 ```python
@@ -427,6 +481,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listjournals3exportsforledgerrequestrequesttypedef"></a>
 
 ## ListJournalS3ExportsForLedgerRequestRequestTypeDef
 
@@ -443,6 +499,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listjournals3exportsforledgerresponsetypedef"></a>
+
 ## ListJournalS3ExportsForLedgerResponseTypeDef
 
 ```python
@@ -457,6 +515,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listjournals3exportsrequestrequesttypedef"></a>
+
 ## ListJournalS3ExportsRequestRequestTypeDef
 
 ```python
@@ -467,6 +527,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listjournals3exportsresponsetypedef"></a>
 
 ## ListJournalS3ExportsResponseTypeDef
 
@@ -482,6 +544,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listledgersrequestrequesttypedef"></a>
+
 ## ListLedgersRequestRequestTypeDef
 
 ```python
@@ -492,6 +556,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listledgersresponsetypedef"></a>
 
 ## ListLedgersResponseTypeDef
 
@@ -507,6 +573,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -516,6 +584,8 @@ from mypy_boto3_qldb.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -528,6 +598,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -542,6 +614,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3encryptionconfigurationtypedef"></a>
 
 ## S3EncryptionConfigurationTypeDef
 
@@ -558,6 +632,8 @@ Optional fields:
 
 - `KmsKeyArn`: `str`
 
+<a id="s3exportconfigurationtypedef"></a>
+
 ## S3ExportConfigurationTypeDef
 
 ```python
@@ -570,6 +646,8 @@ Required fields:
 - `Prefix`: `str`
 - `EncryptionConfiguration`:
   [S3EncryptionConfigurationTypeDef](./type_defs.md#s3encryptionconfigurationtypedef)
+
+<a id="streamjournaltokinesisrequestrequesttypedef"></a>
 
 ## StreamJournalToKinesisRequestRequestTypeDef
 
@@ -591,6 +669,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `ExclusiveEndTime`: `Union`\[`datetime`, `str`\]
 
+<a id="streamjournaltokinesisresponsetypedef"></a>
+
 ## StreamJournalToKinesisResponseTypeDef
 
 ```python
@@ -603,6 +683,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -613,6 +695,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -625,6 +709,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="updateledgerpermissionsmoderequestrequesttypedef"></a>
+
 ## UpdateLedgerPermissionsModeRequestRequestTypeDef
 
 ```python
@@ -635,6 +721,8 @@ Required fields:
 
 - `Name`: `str`
 - `PermissionsMode`: [PermissionsModeType](./literals.md#permissionsmodetype)
+
+<a id="updateledgerpermissionsmoderesponsetypedef"></a>
 
 ## UpdateLedgerPermissionsModeResponseTypeDef
 
@@ -650,6 +738,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateledgerrequestrequesttypedef"></a>
+
 ## UpdateLedgerRequestRequestTypeDef
 
 ```python
@@ -664,6 +754,8 @@ Optional fields:
 
 - `DeletionProtection`: `bool`
 - `KmsKey`: `str`
+
+<a id="updateledgerresponsetypedef"></a>
 
 ## UpdateLedgerResponseTypeDef
 
@@ -682,6 +774,8 @@ Required fields:
   [LedgerEncryptionDescriptionTypeDef](./type_defs.md#ledgerencryptiondescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="valueholdertypedef"></a>
 
 ## ValueHolderTypeDef
 

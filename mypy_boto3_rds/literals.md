@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-rds-module"></a>
+
 # Literals for boto3 RDS module
 
 > [Index](..) > [RDS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
 type annotations stubs module
-[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [Literals for boto3 RDS module](#literals-for-boto3-rds-module)
   - [ActivityStreamModeType](#activitystreammodetype)
@@ -74,6 +76,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="activitystreammodetype"></a>
+
 ## ActivityStreamModeType
 
 ```python
@@ -84,6 +88,8 @@ Values:
 
 - `async`
 - `sync`
+
+<a id="activitystreamstatustype"></a>
 
 ## ActivityStreamStatusType
 
@@ -98,6 +104,8 @@ Values:
 - `stopped`
 - `stopping`
 
+<a id="applymethodtype"></a>
+
 ## ApplyMethodType
 
 ```python
@@ -109,6 +117,8 @@ Values:
 - `immediate`
 - `pending-reboot`
 
+<a id="authschemetype"></a>
+
 ## AuthSchemeType
 
 ```python
@@ -118,6 +128,8 @@ from mypy_boto3_rds.literals import AuthSchemeType
 Values:
 
 - `SECRETS`
+
+<a id="automationmodetype"></a>
 
 ## AutomationModeType
 
@@ -129,6 +141,8 @@ Values:
 
 - `all-paused`
 - `full`
+
+<a id="customengineversionstatustype"></a>
 
 ## CustomEngineVersionStatusType
 
@@ -142,6 +156,8 @@ Values:
 - `inactive`
 - `inactive-except-restore`
 
+<a id="dbclustersnapshotavailablewaitername"></a>
+
 ## DBClusterSnapshotAvailableWaiterName
 
 ```python
@@ -151,6 +167,8 @@ from mypy_boto3_rds.literals import DBClusterSnapshotAvailableWaiterName
 Values:
 
 - `db_cluster_snapshot_available`
+
+<a id="dbclustersnapshotdeletedwaitername"></a>
 
 ## DBClusterSnapshotDeletedWaiterName
 
@@ -162,6 +180,8 @@ Values:
 
 - `db_cluster_snapshot_deleted`
 
+<a id="dbinstanceavailablewaitername"></a>
+
 ## DBInstanceAvailableWaiterName
 
 ```python
@@ -172,6 +192,8 @@ Values:
 
 - `db_instance_available`
 
+<a id="dbinstancedeletedwaitername"></a>
+
 ## DBInstanceDeletedWaiterName
 
 ```python
@@ -181,6 +203,8 @@ from mypy_boto3_rds.literals import DBInstanceDeletedWaiterName
 Values:
 
 - `db_instance_deleted`
+
+<a id="dbproxyendpointstatustype"></a>
 
 ## DBProxyEndpointStatusType
 
@@ -197,6 +221,8 @@ Values:
 - `insufficient-resource-limits`
 - `modifying`
 
+<a id="dbproxyendpointtargetroletype"></a>
+
 ## DBProxyEndpointTargetRoleType
 
 ```python
@@ -207,6 +233,8 @@ Values:
 
 - `READ_ONLY`
 - `READ_WRITE`
+
+<a id="dbproxystatustype"></a>
 
 ## DBProxyStatusType
 
@@ -226,6 +254,8 @@ Values:
 - `suspended`
 - `suspending`
 
+<a id="dbsnapshotavailablewaitername"></a>
+
 ## DBSnapshotAvailableWaiterName
 
 ```python
@@ -235,6 +265,8 @@ from mypy_boto3_rds.literals import DBSnapshotAvailableWaiterName
 Values:
 
 - `db_snapshot_available`
+
+<a id="dbsnapshotcompletedwaitername"></a>
 
 ## DBSnapshotCompletedWaiterName
 
@@ -246,6 +278,8 @@ Values:
 
 - `db_snapshot_completed`
 
+<a id="dbsnapshotdeletedwaitername"></a>
+
 ## DBSnapshotDeletedWaiterName
 
 ```python
@@ -255,6 +289,8 @@ from mypy_boto3_rds.literals import DBSnapshotDeletedWaiterName
 Values:
 
 - `db_snapshot_deleted`
+
+<a id="describecertificatespaginatorname"></a>
 
 ## DescribeCertificatesPaginatorName
 
@@ -266,6 +302,8 @@ Values:
 
 - `describe_certificates`
 
+<a id="describecustomavailabilityzonespaginatorname"></a>
+
 ## DescribeCustomAvailabilityZonesPaginatorName
 
 ```python
@@ -275,6 +313,8 @@ from mypy_boto3_rds.literals import DescribeCustomAvailabilityZonesPaginatorName
 Values:
 
 - `describe_custom_availability_zones`
+
+<a id="describedbclusterbacktrackspaginatorname"></a>
 
 ## DescribeDBClusterBacktracksPaginatorName
 
@@ -286,6 +326,8 @@ Values:
 
 - `describe_db_cluster_backtracks`
 
+<a id="describedbclusterendpointspaginatorname"></a>
+
 ## DescribeDBClusterEndpointsPaginatorName
 
 ```python
@@ -295,6 +337,8 @@ from mypy_boto3_rds.literals import DescribeDBClusterEndpointsPaginatorName
 Values:
 
 - `describe_db_cluster_endpoints`
+
+<a id="describedbclusterparametergroupspaginatorname"></a>
 
 ## DescribeDBClusterParameterGroupsPaginatorName
 
@@ -306,6 +350,8 @@ Values:
 
 - `describe_db_cluster_parameter_groups`
 
+<a id="describedbclusterparameterspaginatorname"></a>
+
 ## DescribeDBClusterParametersPaginatorName
 
 ```python
@@ -315,6 +361,8 @@ from mypy_boto3_rds.literals import DescribeDBClusterParametersPaginatorName
 Values:
 
 - `describe_db_cluster_parameters`
+
+<a id="describedbclustersnapshotspaginatorname"></a>
 
 ## DescribeDBClusterSnapshotsPaginatorName
 
@@ -326,6 +374,8 @@ Values:
 
 - `describe_db_cluster_snapshots`
 
+<a id="describedbclusterspaginatorname"></a>
+
 ## DescribeDBClustersPaginatorName
 
 ```python
@@ -335,6 +385,8 @@ from mypy_boto3_rds.literals import DescribeDBClustersPaginatorName
 Values:
 
 - `describe_db_clusters`
+
+<a id="describedbengineversionspaginatorname"></a>
 
 ## DescribeDBEngineVersionsPaginatorName
 
@@ -346,6 +398,8 @@ Values:
 
 - `describe_db_engine_versions`
 
+<a id="describedbinstanceautomatedbackupspaginatorname"></a>
+
 ## DescribeDBInstanceAutomatedBackupsPaginatorName
 
 ```python
@@ -355,6 +409,8 @@ from mypy_boto3_rds.literals import DescribeDBInstanceAutomatedBackupsPaginatorN
 Values:
 
 - `describe_db_instance_automated_backups`
+
+<a id="describedbinstancespaginatorname"></a>
 
 ## DescribeDBInstancesPaginatorName
 
@@ -366,6 +422,8 @@ Values:
 
 - `describe_db_instances`
 
+<a id="describedblogfilespaginatorname"></a>
+
 ## DescribeDBLogFilesPaginatorName
 
 ```python
@@ -375,6 +433,8 @@ from mypy_boto3_rds.literals import DescribeDBLogFilesPaginatorName
 Values:
 
 - `describe_db_log_files`
+
+<a id="describedbparametergroupspaginatorname"></a>
 
 ## DescribeDBParameterGroupsPaginatorName
 
@@ -386,6 +446,8 @@ Values:
 
 - `describe_db_parameter_groups`
 
+<a id="describedbparameterspaginatorname"></a>
+
 ## DescribeDBParametersPaginatorName
 
 ```python
@@ -395,6 +457,8 @@ from mypy_boto3_rds.literals import DescribeDBParametersPaginatorName
 Values:
 
 - `describe_db_parameters`
+
+<a id="describedbproxiespaginatorname"></a>
 
 ## DescribeDBProxiesPaginatorName
 
@@ -406,6 +470,8 @@ Values:
 
 - `describe_db_proxies`
 
+<a id="describedbproxyendpointspaginatorname"></a>
+
 ## DescribeDBProxyEndpointsPaginatorName
 
 ```python
@@ -415,6 +481,8 @@ from mypy_boto3_rds.literals import DescribeDBProxyEndpointsPaginatorName
 Values:
 
 - `describe_db_proxy_endpoints`
+
+<a id="describedbproxytargetgroupspaginatorname"></a>
 
 ## DescribeDBProxyTargetGroupsPaginatorName
 
@@ -426,6 +494,8 @@ Values:
 
 - `describe_db_proxy_target_groups`
 
+<a id="describedbproxytargetspaginatorname"></a>
+
 ## DescribeDBProxyTargetsPaginatorName
 
 ```python
@@ -435,6 +505,8 @@ from mypy_boto3_rds.literals import DescribeDBProxyTargetsPaginatorName
 Values:
 
 - `describe_db_proxy_targets`
+
+<a id="describedbsecuritygroupspaginatorname"></a>
 
 ## DescribeDBSecurityGroupsPaginatorName
 
@@ -446,6 +518,8 @@ Values:
 
 - `describe_db_security_groups`
 
+<a id="describedbsnapshotspaginatorname"></a>
+
 ## DescribeDBSnapshotsPaginatorName
 
 ```python
@@ -455,6 +529,8 @@ from mypy_boto3_rds.literals import DescribeDBSnapshotsPaginatorName
 Values:
 
 - `describe_db_snapshots`
+
+<a id="describedbsubnetgroupspaginatorname"></a>
 
 ## DescribeDBSubnetGroupsPaginatorName
 
@@ -466,6 +542,8 @@ Values:
 
 - `describe_db_subnet_groups`
 
+<a id="describeenginedefaultclusterparameterspaginatorname"></a>
+
 ## DescribeEngineDefaultClusterParametersPaginatorName
 
 ```python
@@ -475,6 +553,8 @@ from mypy_boto3_rds.literals import DescribeEngineDefaultClusterParametersPagina
 Values:
 
 - `describe_engine_default_cluster_parameters`
+
+<a id="describeenginedefaultparameterspaginatorname"></a>
 
 ## DescribeEngineDefaultParametersPaginatorName
 
@@ -486,6 +566,8 @@ Values:
 
 - `describe_engine_default_parameters`
 
+<a id="describeeventsubscriptionspaginatorname"></a>
+
 ## DescribeEventSubscriptionsPaginatorName
 
 ```python
@@ -495,6 +577,8 @@ from mypy_boto3_rds.literals import DescribeEventSubscriptionsPaginatorName
 Values:
 
 - `describe_event_subscriptions`
+
+<a id="describeeventspaginatorname"></a>
 
 ## DescribeEventsPaginatorName
 
@@ -506,6 +590,8 @@ Values:
 
 - `describe_events`
 
+<a id="describeexporttaskspaginatorname"></a>
+
 ## DescribeExportTasksPaginatorName
 
 ```python
@@ -515,6 +601,8 @@ from mypy_boto3_rds.literals import DescribeExportTasksPaginatorName
 Values:
 
 - `describe_export_tasks`
+
+<a id="describeglobalclusterspaginatorname"></a>
 
 ## DescribeGlobalClustersPaginatorName
 
@@ -526,6 +614,8 @@ Values:
 
 - `describe_global_clusters`
 
+<a id="describeinstallationmediapaginatorname"></a>
+
 ## DescribeInstallationMediaPaginatorName
 
 ```python
@@ -535,6 +625,8 @@ from mypy_boto3_rds.literals import DescribeInstallationMediaPaginatorName
 Values:
 
 - `describe_installation_media`
+
+<a id="describeoptiongroupoptionspaginatorname"></a>
 
 ## DescribeOptionGroupOptionsPaginatorName
 
@@ -546,6 +638,8 @@ Values:
 
 - `describe_option_group_options`
 
+<a id="describeoptiongroupspaginatorname"></a>
+
 ## DescribeOptionGroupsPaginatorName
 
 ```python
@@ -555,6 +649,8 @@ from mypy_boto3_rds.literals import DescribeOptionGroupsPaginatorName
 Values:
 
 - `describe_option_groups`
+
+<a id="describeorderabledbinstanceoptionspaginatorname"></a>
 
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 
@@ -566,6 +662,8 @@ Values:
 
 - `describe_orderable_db_instance_options`
 
+<a id="describependingmaintenanceactionspaginatorname"></a>
+
 ## DescribePendingMaintenanceActionsPaginatorName
 
 ```python
@@ -575,6 +673,8 @@ from mypy_boto3_rds.literals import DescribePendingMaintenanceActionsPaginatorNa
 Values:
 
 - `describe_pending_maintenance_actions`
+
+<a id="describereserveddbinstancesofferingspaginatorname"></a>
 
 ## DescribeReservedDBInstancesOfferingsPaginatorName
 
@@ -586,6 +686,8 @@ Values:
 
 - `describe_reserved_db_instances_offerings`
 
+<a id="describereserveddbinstancespaginatorname"></a>
+
 ## DescribeReservedDBInstancesPaginatorName
 
 ```python
@@ -595,6 +697,8 @@ from mypy_boto3_rds.literals import DescribeReservedDBInstancesPaginatorName
 Values:
 
 - `describe_reserved_db_instances`
+
+<a id="describesourceregionspaginatorname"></a>
 
 ## DescribeSourceRegionsPaginatorName
 
@@ -606,6 +710,8 @@ Values:
 
 - `describe_source_regions`
 
+<a id="downloaddblogfileportionpaginatorname"></a>
+
 ## DownloadDBLogFilePortionPaginatorName
 
 ```python
@@ -615,6 +721,8 @@ from mypy_boto3_rds.literals import DownloadDBLogFilePortionPaginatorName
 Values:
 
 - `download_db_log_file_portion`
+
+<a id="enginefamilytype"></a>
 
 ## EngineFamilyType
 
@@ -626,6 +734,8 @@ Values:
 
 - `MYSQL`
 - `POSTGRESQL`
+
+<a id="failoverstatustype"></a>
 
 ## FailoverStatusType
 
@@ -639,6 +749,8 @@ Values:
 - `failing-over`
 - `pending`
 
+<a id="iamauthmodetype"></a>
+
 ## IAMAuthModeType
 
 ```python
@@ -650,6 +762,8 @@ Values:
 - `DISABLED`
 - `REQUIRED`
 
+<a id="replicamodetype"></a>
+
 ## ReplicaModeType
 
 ```python
@@ -660,6 +774,8 @@ Values:
 
 - `mounted`
 - `open-read-only`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -678,6 +794,8 @@ Values:
 - `db-security-group`
 - `db-snapshot`
 
+<a id="targethealthreasontype"></a>
+
 ## TargetHealthReasonType
 
 ```python
@@ -692,6 +810,8 @@ Values:
 - `PENDING_PROXY_CAPACITY`
 - `UNREACHABLE`
 
+<a id="targetroletype"></a>
+
 ## TargetRoleType
 
 ```python
@@ -703,6 +823,8 @@ Values:
 - `READ_ONLY`
 - `READ_WRITE`
 - `UNKNOWN`
+
+<a id="targetstatetype"></a>
 
 ## TargetStateType
 
@@ -716,6 +838,8 @@ Values:
 - `REGISTERING`
 - `UNAVAILABLE`
 
+<a id="targettypetype"></a>
+
 ## TargetTypeType
 
 ```python
@@ -727,6 +851,8 @@ Values:
 - `RDS_INSTANCE`
 - `RDS_SERVERLESS_ENDPOINT`
 - `TRACKED_CLUSTER`
+
+<a id="writeforwardingstatustype"></a>
 
 ## WriteForwardingStatusType
 
@@ -741,6 +867,8 @@ Values:
 - `enabled`
 - `enabling`
 - `unknown`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1050,6 +1178,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -1094,6 +1224,8 @@ Values:
 - `describe_reserved_db_instances_offerings`
 - `describe_source_regions`
 - `download_db_log_file_portion`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

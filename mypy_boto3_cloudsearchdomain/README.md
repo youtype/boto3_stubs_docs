@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudsearchdomain-module"></a>
+
 # Type annotations for boto3 CloudSearchDomain module
 
 > [Index](..) > CloudSearchDomain
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module
-[mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
+[mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloudsearchdomain]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloudsearchdomain]'
+
+# standalone installation
 pip install mypy-boto3-cloudsearchdomain
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-cloudsearchdomain
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="cloudsearchdomainclient"></a>
 
 ## CloudSearchDomainClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -38,6 +52,8 @@ from mypy_boto3_cloudsearchdomain.client import CloudSearchDomainClient
 - [suggest](./client.md#suggest)
 - [upload_documents](./client.md#upload_documents)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudSearchDomainClient [exceptions](./client.md#exceptions)
@@ -45,6 +61,8 @@ CloudSearchDomainClient [exceptions](./client.md#exceptions)
 - ClientError
 - DocumentServiceException
 - SearchException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -59,6 +77,8 @@ from mypy_boto3_cloudsearchdomain.literals import ContentTypeType, ...
 - [ContentTypeType](./literals.md#contenttypetype)
 - [QueryParserType](./literals.md#queryparsertype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

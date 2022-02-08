@@ -1,3 +1,5 @@
+<a id="mediaconnectclient-for-boto3-mediaconnect-module"></a>
+
 # MediaConnectClient for boto3 MediaConnect module
 
 > [Index](..) > [MediaConnect](.) > MediaConnectClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect)
 type annotations stubs module
-[mypy_boto3_mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
+[mypy-boto3-mediaconnect](https://pypi.org/project/mypy-boto3-mediaconnect/).
 
 - [MediaConnectClient for boto3 MediaConnect module](#mediaconnectclient-for-boto3-mediaconnect-module)
   - [MediaConnectClient](#mediaconnectclient)
@@ -47,6 +49,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="mediaconnectclient"></a>
+
 ## MediaConnectClient
 
 Type annotations for `boto3.client("mediaconnect")`
@@ -54,14 +58,17 @@ Type annotations for `boto3.client("mediaconnect")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediaconnect.client import MediaConnectClient
 
 def get_mediaconnect_client() -> MediaConnectClient:
-    return boto3.client("mediaconnect")
+    return Session().client("mediaconnect")
 ```
 
 Boto3 documentation:
 [MediaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -88,7 +95,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -100,6 +111,8 @@ Boto3 documentation:
 [MediaConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconnect.html#MediaConnect.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_flow_media_streams"></a>
 
 ### add_flow_media_streams
 
@@ -124,6 +137,8 @@ Keyword-only arguments:
 Returns
 [AddFlowMediaStreamsResponseTypeDef](./type_defs.md#addflowmediastreamsresponsetypedef).
 
+<a id="add_flow_outputs"></a>
+
 ### add_flow_outputs
 
 Adds outputs to an existing flow.
@@ -145,6 +160,8 @@ Keyword-only arguments:
 
 Returns
 [AddFlowOutputsResponseTypeDef](./type_defs.md#addflowoutputsresponsetypedef).
+
+<a id="add_flow_sources"></a>
 
 ### add_flow_sources
 
@@ -168,6 +185,8 @@ Keyword-only arguments:
 
 Returns
 [AddFlowSourcesResponseTypeDef](./type_defs.md#addflowsourcesresponsetypedef).
+
+<a id="add_flow_vpc_interfaces"></a>
 
 ### add_flow_vpc_interfaces
 
@@ -193,6 +212,8 @@ Keyword-only arguments:
 Returns
 [AddFlowVpcInterfacesResponseTypeDef](./type_defs.md#addflowvpcinterfacesresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -207,6 +228,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_flow"></a>
 
 ### create_flow
 
@@ -240,6 +263,8 @@ Keyword-only arguments:
 
 Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
+<a id="delete_flow"></a>
+
 ### delete_flow
 
 Deletes a flow.
@@ -257,6 +282,8 @@ Keyword-only arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns [DeleteFlowResponseTypeDef](./type_defs.md#deleteflowresponsetypedef).
+
+<a id="describe_flow"></a>
 
 ### describe_flow
 
@@ -277,6 +304,8 @@ Keyword-only arguments:
 Returns
 [DescribeFlowResponseTypeDef](./type_defs.md#describeflowresponsetypedef).
 
+<a id="describe_offering"></a>
+
 ### describe_offering
 
 Displays the details of an offering.
@@ -295,6 +324,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
+
+<a id="describe_reservation"></a>
 
 ### describe_reservation
 
@@ -316,6 +347,8 @@ Keyword-only arguments:
 Returns
 [DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -334,6 +367,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="grant_flow_entitlements"></a>
 
 ### grant_flow_entitlements
 
@@ -358,6 +393,8 @@ Keyword-only arguments:
 Returns
 [GrantFlowEntitlementsResponseTypeDef](./type_defs.md#grantflowentitlementsresponsetypedef).
 
+<a id="list_entitlements"></a>
+
 ### list_entitlements
 
 Displays a list of all entitlements that have been granted to this account.
@@ -378,6 +415,8 @@ Keyword-only arguments:
 Returns
 [ListEntitlementsResponseTypeDef](./type_defs.md#listentitlementsresponsetypedef).
 
+<a id="list_flows"></a>
+
 ### list_flows
 
 Displays a list of flows that are associated with this account.
@@ -396,6 +435,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListFlowsResponseTypeDef](./type_defs.md#listflowsresponsetypedef).
+
+<a id="list_offerings"></a>
 
 ### list_offerings
 
@@ -418,6 +459,8 @@ Keyword-only arguments:
 Returns
 [ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
+<a id="list_reservations"></a>
+
 ### list_reservations
 
 Displays a list of all reservations that have been purchased by this account in
@@ -438,6 +481,8 @@ Keyword-only arguments:
 
 Returns
 [ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -460,6 +505,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="purchase_offering"></a>
+
 ### purchase_offering
 
 Submits a request to purchase an offering.
@@ -480,6 +527,8 @@ Keyword-only arguments:
 
 Returns
 [PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
+
+<a id="remove_flow_media_stream"></a>
 
 ### remove_flow_media_stream
 
@@ -502,6 +551,8 @@ Keyword-only arguments:
 Returns
 [RemoveFlowMediaStreamResponseTypeDef](./type_defs.md#removeflowmediastreamresponsetypedef).
 
+<a id="remove_flow_output"></a>
+
 ### remove_flow_output
 
 Removes an output from an existing flow.
@@ -522,6 +573,8 @@ Keyword-only arguments:
 Returns
 [RemoveFlowOutputResponseTypeDef](./type_defs.md#removeflowoutputresponsetypedef).
 
+<a id="remove_flow_source"></a>
+
 ### remove_flow_source
 
 Removes a source from an existing flow.
@@ -541,6 +594,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveFlowSourceResponseTypeDef](./type_defs.md#removeflowsourceresponsetypedef).
+
+<a id="remove_flow_vpc_interface"></a>
 
 ### remove_flow_vpc_interface
 
@@ -563,6 +618,8 @@ Keyword-only arguments:
 Returns
 [RemoveFlowVpcInterfaceResponseTypeDef](./type_defs.md#removeflowvpcinterfaceresponsetypedef).
 
+<a id="revoke_flow_entitlement"></a>
+
 ### revoke_flow_entitlement
 
 Revokes an entitlement from a flow.
@@ -584,6 +641,8 @@ Keyword-only arguments:
 Returns
 [RevokeFlowEntitlementResponseTypeDef](./type_defs.md#revokeflowentitlementresponsetypedef).
 
+<a id="start_flow"></a>
+
 ### start_flow
 
 Starts a flow.
@@ -601,6 +660,8 @@ Keyword-only arguments:
 - `FlowArn`: `str` *(required)*
 
 Returns [StartFlowResponseTypeDef](./type_defs.md#startflowresponsetypedef).
+
+<a id="stop_flow"></a>
 
 ### stop_flow
 
@@ -620,6 +681,8 @@ Keyword-only arguments:
 
 Returns [StopFlowResponseTypeDef](./type_defs.md#stopflowresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified resourceArn.
@@ -637,6 +700,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -653,6 +718,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_flow"></a>
 
 ### update_flow
 
@@ -674,6 +741,8 @@ Keyword-only arguments:
   [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
 
 Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
+
+<a id="update_flow_entitlement"></a>
 
 ### update_flow_entitlement
 
@@ -702,6 +771,8 @@ Keyword-only arguments:
 Returns
 [UpdateFlowEntitlementResponseTypeDef](./type_defs.md#updateflowentitlementresponsetypedef).
 
+<a id="update_flow_media_stream"></a>
+
 ### update_flow_media_stream
 
 Updates an existing media stream.
@@ -728,6 +799,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFlowMediaStreamResponseTypeDef](./type_defs.md#updateflowmediastreamresponsetypedef).
+
+<a id="update_flow_output"></a>
 
 ### update_flow_output
 
@@ -767,6 +840,8 @@ Keyword-only arguments:
 Returns
 [UpdateFlowOutputResponseTypeDef](./type_defs.md#updateflowoutputresponsetypedef).
 
+<a id="update_flow_source"></a>
+
 ### update_flow_source
 
 Updates the source of a flow.
@@ -804,6 +879,8 @@ Keyword-only arguments:
 Returns
 [UpdateFlowSourceResponseTypeDef](./type_defs.md#updateflowsourceresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("mediaconnect").get_paginator` method with
@@ -817,6 +894,8 @@ overloads.
   [ListOfferingsPaginator](./paginators.md#listofferingspaginator)
 - `client.get_paginator("list_reservations")` ->
   [ListReservationsPaginator](./paginators.md#listreservationspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

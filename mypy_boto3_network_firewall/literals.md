@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-networkfirewall-module"></a>
+
 # Literals for boto3 NetworkFirewall module
 
 > [Index](..) > [NetworkFirewall](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
-[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [Literals for boto3 NetworkFirewall module](#literals-for-boto3-networkfirewall-module)
   - [AttachmentStatusType](#attachmentstatustype)
@@ -32,6 +34,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="attachmentstatustype"></a>
+
 ## AttachmentStatusType
 
 ```python
@@ -45,6 +49,8 @@ Values:
 - `READY`
 - `SCALING`
 
+<a id="configurationsyncstatetype"></a>
+
 ## ConfigurationSyncStateType
 
 ```python
@@ -55,6 +61,8 @@ Values:
 
 - `IN_SYNC`
 - `PENDING`
+
+<a id="firewallstatusvaluetype"></a>
 
 ## FirewallStatusValueType
 
@@ -68,6 +76,8 @@ Values:
 - `PROVISIONING`
 - `READY`
 
+<a id="generatedrulestypetype"></a>
+
 ## GeneratedRulesTypeType
 
 ```python
@@ -79,6 +89,8 @@ Values:
 - `ALLOWLIST`
 - `DENYLIST`
 
+<a id="listfirewallpoliciespaginatorname"></a>
+
 ## ListFirewallPoliciesPaginatorName
 
 ```python
@@ -88,6 +100,8 @@ from mypy_boto3_network_firewall.literals import ListFirewallPoliciesPaginatorNa
 Values:
 
 - `list_firewall_policies`
+
+<a id="listfirewallspaginatorname"></a>
 
 ## ListFirewallsPaginatorName
 
@@ -99,6 +113,8 @@ Values:
 
 - `list_firewalls`
 
+<a id="listrulegroupspaginatorname"></a>
+
 ## ListRuleGroupsPaginatorName
 
 ```python
@@ -109,6 +125,8 @@ Values:
 
 - `list_rule_groups`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -118,6 +136,8 @@ from mypy_boto3_network_firewall.literals import ListTagsForResourcePaginatorNam
 Values:
 
 - `list_tags_for_resource`
+
+<a id="logdestinationtypetype"></a>
 
 ## LogDestinationTypeType
 
@@ -131,6 +151,8 @@ Values:
 - `KinesisDataFirehose`
 - `S3`
 
+<a id="logtypetype"></a>
+
 ## LogTypeType
 
 ```python
@@ -142,6 +164,8 @@ Values:
 - `ALERT`
 - `FLOW`
 
+<a id="overrideactiontype"></a>
+
 ## OverrideActionType
 
 ```python
@@ -151,6 +175,8 @@ from mypy_boto3_network_firewall.literals import OverrideActionType
 Values:
 
 - `DROP_TO_ALERT`
+
+<a id="perobjectsyncstatustype"></a>
 
 ## PerObjectSyncStatusType
 
@@ -163,6 +189,8 @@ Values:
 - `IN_SYNC`
 - `PENDING`
 
+<a id="resourcemanagedstatustype"></a>
+
 ## ResourceManagedStatusType
 
 ```python
@@ -173,6 +201,8 @@ Values:
 
 - `ACCOUNT`
 - `MANAGED`
+
+<a id="resourcestatustype"></a>
 
 ## ResourceStatusType
 
@@ -185,6 +215,8 @@ Values:
 - `ACTIVE`
 - `DELETING`
 
+<a id="rulegrouptypetype"></a>
+
 ## RuleGroupTypeType
 
 ```python
@@ -196,6 +228,8 @@ Values:
 - `STATEFUL`
 - `STATELESS`
 
+<a id="ruleordertype"></a>
+
 ## RuleOrderType
 
 ```python
@@ -206,6 +240,8 @@ Values:
 
 - `DEFAULT_ACTION_ORDER`
 - `STRICT_ORDER`
+
+<a id="statefulactiontype"></a>
 
 ## StatefulActionType
 
@@ -219,6 +255,8 @@ Values:
 - `DROP`
 - `PASS`
 
+<a id="statefulruledirectiontype"></a>
+
 ## StatefulRuleDirectionType
 
 ```python
@@ -229,6 +267,8 @@ Values:
 
 - `ANY`
 - `FORWARD`
+
+<a id="statefulruleprotocoltype"></a>
 
 ## StatefulRuleProtocolType
 
@@ -258,6 +298,8 @@ Values:
 - `TLS`
 - `UDP`
 
+<a id="tcpflagtype"></a>
+
 ## TCPFlagType
 
 ```python
@@ -275,6 +317,8 @@ Values:
 - `SYN`
 - `URG`
 
+<a id="targettypetype"></a>
+
 ## TargetTypeType
 
 ```python
@@ -285,6 +329,8 @@ Values:
 
 - `HTTP_HOST`
 - `TLS_SNI`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -593,6 +639,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

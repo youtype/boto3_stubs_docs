@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-healthlake-module"></a>
+
 # Typed dictionaries for boto3 HealthLake module
 
 > [Index](..) > [HealthLake](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
-[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+[mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 - [Typed dictionaries for boto3 HealthLake module](#typed-dictionaries-for-boto3-healthlake-module)
   - [CreateFHIRDatastoreRequestRequestTypeDef](#createfhirdatastorerequestrequesttypedef)
@@ -45,6 +47,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="createfhirdatastorerequestrequesttypedef"></a>
+
 ## CreateFHIRDatastoreRequestRequestTypeDef
 
 ```python
@@ -66,6 +70,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfhirdatastoreresponsetypedef"></a>
+
 ## CreateFHIRDatastoreResponseTypeDef
 
 ```python
@@ -81,6 +87,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="datastorefiltertypedef"></a>
+
 ## DatastoreFilterTypeDef
 
 ```python
@@ -93,6 +101,8 @@ Optional fields:
 - `DatastoreStatus`: [DatastoreStatusType](./literals.md#datastorestatustype)
 - `CreatedBefore`: `Union`\[`datetime`, `str`\]
 - `CreatedAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="datastorepropertiestypedef"></a>
 
 ## DatastorePropertiesTypeDef
 
@@ -118,6 +128,8 @@ Optional fields:
 - `PreloadDataConfig`:
   [PreloadDataConfigTypeDef](./type_defs.md#preloaddataconfigtypedef)
 
+<a id="deletefhirdatastorerequestrequesttypedef"></a>
+
 ## DeleteFHIRDatastoreRequestRequestTypeDef
 
 ```python
@@ -127,6 +139,8 @@ from mypy_boto3_healthlake.type_defs import DeleteFHIRDatastoreRequestRequestTyp
 Optional fields:
 
 - `DatastoreId`: `str`
+
+<a id="deletefhirdatastoreresponsetypedef"></a>
 
 ## DeleteFHIRDatastoreResponseTypeDef
 
@@ -143,6 +157,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefhirdatastorerequestrequesttypedef"></a>
+
 ## DescribeFHIRDatastoreRequestRequestTypeDef
 
 ```python
@@ -152,6 +168,8 @@ from mypy_boto3_healthlake.type_defs import DescribeFHIRDatastoreRequestRequestT
 Optional fields:
 
 - `DatastoreId`: `str`
+
+<a id="describefhirdatastoreresponsetypedef"></a>
 
 ## DescribeFHIRDatastoreResponseTypeDef
 
@@ -166,6 +184,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefhirexportjobrequestrequesttypedef"></a>
+
 ## DescribeFHIRExportJobRequestRequestTypeDef
 
 ```python
@@ -176,6 +196,8 @@ Required fields:
 
 - `DatastoreId`: `str`
 - `JobId`: `str`
+
+<a id="describefhirexportjobresponsetypedef"></a>
 
 ## DescribeFHIRExportJobResponseTypeDef
 
@@ -190,6 +212,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefhirimportjobrequestrequesttypedef"></a>
+
 ## DescribeFHIRImportJobRequestRequestTypeDef
 
 ```python
@@ -200,6 +224,8 @@ Required fields:
 
 - `DatastoreId`: `str`
 - `JobId`: `str`
+
+<a id="describefhirimportjobresponsetypedef"></a>
 
 ## DescribeFHIRImportJobResponseTypeDef
 
@@ -213,6 +239,8 @@ Required fields:
   [ImportJobPropertiesTypeDef](./type_defs.md#importjobpropertiestypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="exportjobpropertiestypedef"></a>
 
 ## ExportJobPropertiesTypeDef
 
@@ -235,6 +263,8 @@ Optional fields:
 - `EndTime`: `datetime`
 - `DataAccessRoleArn`: `str`
 - `Message`: `str`
+
+<a id="importjobpropertiestypedef"></a>
 
 ## ImportJobPropertiesTypeDef
 
@@ -260,6 +290,8 @@ Optional fields:
 - `DataAccessRoleArn`: `str`
 - `Message`: `str`
 
+<a id="inputdataconfigtypedef"></a>
+
 ## InputDataConfigTypeDef
 
 ```python
@@ -269,6 +301,8 @@ from mypy_boto3_healthlake.type_defs import InputDataConfigTypeDef
 Optional fields:
 
 - `S3Uri`: `str`
+
+<a id="kmsencryptionconfigtypedef"></a>
 
 ## KmsEncryptionConfigTypeDef
 
@@ -284,6 +318,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="listfhirdatastoresrequestrequesttypedef"></a>
+
 ## ListFHIRDatastoresRequestRequestTypeDef
 
 ```python
@@ -295,6 +331,8 @@ Optional fields:
 - `Filter`: [DatastoreFilterTypeDef](./type_defs.md#datastorefiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listfhirdatastoresresponsetypedef"></a>
 
 ## ListFHIRDatastoresResponseTypeDef
 
@@ -309,6 +347,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfhirexportjobsrequestrequesttypedef"></a>
 
 ## ListFHIRExportJobsRequestRequestTypeDef
 
@@ -329,6 +369,8 @@ Optional fields:
 - `SubmittedBefore`: `Union`\[`datetime`, `str`\]
 - `SubmittedAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listfhirexportjobsresponsetypedef"></a>
+
 ## ListFHIRExportJobsResponseTypeDef
 
 ```python
@@ -342,6 +384,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfhirimportjobsrequestrequesttypedef"></a>
 
 ## ListFHIRImportJobsRequestRequestTypeDef
 
@@ -362,6 +406,8 @@ Optional fields:
 - `SubmittedBefore`: `Union`\[`datetime`, `str`\]
 - `SubmittedAfter`: `Union`\[`datetime`, `str`\]
 
+<a id="listfhirimportjobsresponsetypedef"></a>
+
 ## ListFHIRImportJobsResponseTypeDef
 
 ```python
@@ -376,6 +422,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -385,6 +433,8 @@ from mypy_boto3_healthlake.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -398,6 +448,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="outputdataconfigtypedef"></a>
+
 ## OutputDataConfigTypeDef
 
 ```python
@@ -409,6 +461,8 @@ Optional fields:
 - `S3Configuration`:
   [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
 
+<a id="preloaddataconfigtypedef"></a>
+
 ## PreloadDataConfigTypeDef
 
 ```python
@@ -419,6 +473,8 @@ Required fields:
 
 - `PreloadDataType`: `Literal['SYNTHEA']` (see
   [PreloadDataTypeType](./literals.md#preloaddatatypetype))
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -434,6 +490,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3configurationtypedef"></a>
+
 ## S3ConfigurationTypeDef
 
 ```python
@@ -445,6 +503,8 @@ Required fields:
 - `S3Uri`: `str`
 - `KmsKeyId`: `str`
 
+<a id="sseconfigurationtypedef"></a>
+
 ## SseConfigurationTypeDef
 
 ```python
@@ -455,6 +515,8 @@ Required fields:
 
 - `KmsEncryptionConfig`:
   [KmsEncryptionConfigTypeDef](./type_defs.md#kmsencryptionconfigtypedef)
+
+<a id="startfhirexportjobrequestrequesttypedef"></a>
 
 ## StartFHIRExportJobRequestRequestTypeDef
 
@@ -474,6 +536,8 @@ Optional fields:
 
 - `JobName`: `str`
 
+<a id="startfhirexportjobresponsetypedef"></a>
+
 ## StartFHIRExportJobResponseTypeDef
 
 ```python
@@ -487,6 +551,8 @@ Required fields:
 - `DatastoreId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startfhirimportjobrequestrequesttypedef"></a>
 
 ## StartFHIRImportJobRequestRequestTypeDef
 
@@ -508,6 +574,8 @@ Optional fields:
 
 - `JobName`: `str`
 
+<a id="startfhirimportjobresponsetypedef"></a>
+
 ## StartFHIRImportJobResponseTypeDef
 
 ```python
@@ -522,6 +590,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -533,6 +603,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -543,6 +615,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

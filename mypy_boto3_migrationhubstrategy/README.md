@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-migrationhubstrategyrecommendations-module"></a>
+
 # Type annotations for boto3 MigrationHubStrategyRecommendations module
 
 > [Index](..) > MigrationHubStrategyRecommendations
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MigrationHubStrategyRecommendations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhubstrategy.html#MigrationHubStrategyRecommendations)
 type annotations stubs module
-[mypy_boto3_migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
+[mypy-boto3-migrationhubstrategy](https://pypi.org/project/mypy-boto3-migrationhubstrategy/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[migrationhubstrategy]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[migrationhubstrategy]'
+
+# standalone installation
 pip install mypy-boto3-migrationhubstrategy
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-migrationhubstrategy
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="migrationhubstrategyrecommendationsclient"></a>
+
 ## MigrationHubStrategyRecommendationsClient
 
 Type annotations for `boto3.client("migrationhubstrategy")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_migrationhubstrategy.client import MigrationHubStrategyRecommendationsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -57,6 +71,8 @@ from mypy_boto3_migrationhubstrategy.client import MigrationHubStrategyRecommend
 - [update_application_component_config](./client.md#update_application_component_config)
 - [update_server_config](./client.md#update_server_config)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MigrationHubStrategyRecommendationsClient [exceptions](./client.md#exceptions)
@@ -71,6 +87,8 @@ MigrationHubStrategyRecommendationsClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -79,7 +97,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_migrationhubstrategy.paginators import GetServerDetailsPaginator, ...
+from mypy_boto3_migrationhubstrategy.paginator import GetServerDetailsPaginator, ...
 ```
 
 - [GetServerDetailsPaginator](./paginators.md#getserverdetailspaginator)
@@ -87,6 +105,8 @@ from mypy_boto3_migrationhubstrategy.paginators import GetServerDetailsPaginator
 - [ListCollectorsPaginator](./paginators.md#listcollectorspaginator)
 - [ListImportFileTaskPaginator](./paginators.md#listimportfiletaskpaginator)
 - [ListServersPaginator](./paginators.md#listserverspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -136,6 +156,8 @@ from mypy_boto3_migrationhubstrategy.literals import AntipatternReportStatusType
 - [VersionControlType](./literals.md#versioncontroltype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

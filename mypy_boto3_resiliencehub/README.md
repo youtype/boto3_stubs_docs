@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-resiliencehub-module"></a>
+
 # Type annotations for boto3 ResilienceHub module
 
 > [Index](..) > ResilienceHub
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
 type annotations stubs module
-[mypy_boto3_resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[resiliencehub]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[resiliencehub]'
+
+# standalone installation
 pip install mypy-boto3-resiliencehub
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-resiliencehub
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="resiliencehubclient"></a>
 
 ## ResilienceHubClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_resiliencehub.client import ResilienceHubClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -74,6 +88,8 @@ from mypy_boto3_resiliencehub.client import ResilienceHubClient
 - [update_app](./client.md#update_app)
 - [update_resiliency_policy](./client.md#update_resiliency_policy)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ResilienceHubClient [exceptions](./client.md#exceptions)
@@ -86,6 +102,8 @@ ResilienceHubClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -122,6 +140,8 @@ from mypy_boto3_resiliencehub.literals import AlarmTypeType, ...
 - [TestRiskType](./literals.md#testrisktype)
 - [TestTypeType](./literals.md#testtypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

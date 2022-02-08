@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elasticbeanstalk-module"></a>
+
 # Literals for boto3 ElasticBeanstalk module
 
 > [Index](..) > [ElasticBeanstalk](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
-[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Literals for boto3 ElasticBeanstalk module](#literals-for-boto3-elasticbeanstalk-module)
   - [ActionHistoryStatusType](#actionhistorystatustype)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="actionhistorystatustype"></a>
+
 ## ActionHistoryStatusType
 
 ```python
@@ -50,6 +54,8 @@ Values:
 - `Completed`
 - `Failed`
 - `Unknown`
+
+<a id="actionstatustype"></a>
 
 ## ActionStatusType
 
@@ -64,6 +70,8 @@ Values:
 - `Scheduled`
 - `Unknown`
 
+<a id="actiontypetype"></a>
+
 ## ActionTypeType
 
 ```python
@@ -75,6 +83,8 @@ Values:
 - `InstanceRefresh`
 - `PlatformUpdate`
 - `Unknown`
+
+<a id="applicationversionstatustype"></a>
 
 ## ApplicationVersionStatusType
 
@@ -90,6 +100,8 @@ Values:
 - `Processing`
 - `Unprocessed`
 
+<a id="computetypetype"></a>
+
 ## ComputeTypeType
 
 ```python
@@ -101,6 +113,8 @@ Values:
 - `BUILD_GENERAL1_LARGE`
 - `BUILD_GENERAL1_MEDIUM`
 - `BUILD_GENERAL1_SMALL`
+
+<a id="configurationdeploymentstatustype"></a>
 
 ## ConfigurationDeploymentStatusType
 
@@ -114,6 +128,8 @@ Values:
 - `failed`
 - `pending`
 
+<a id="configurationoptionvaluetypetype"></a>
+
 ## ConfigurationOptionValueTypeType
 
 ```python
@@ -125,6 +141,8 @@ Values:
 - `List`
 - `Scalar`
 
+<a id="describeapplicationversionspaginatorname"></a>
+
 ## DescribeApplicationVersionsPaginatorName
 
 ```python
@@ -134,6 +152,8 @@ from mypy_boto3_elasticbeanstalk.literals import DescribeApplicationVersionsPagi
 Values:
 
 - `describe_application_versions`
+
+<a id="describeenvironmentmanagedactionhistorypaginatorname"></a>
 
 ## DescribeEnvironmentManagedActionHistoryPaginatorName
 
@@ -145,6 +165,8 @@ Values:
 
 - `describe_environment_managed_action_history`
 
+<a id="describeenvironmentspaginatorname"></a>
+
 ## DescribeEnvironmentsPaginatorName
 
 ```python
@@ -154,6 +176,8 @@ from mypy_boto3_elasticbeanstalk.literals import DescribeEnvironmentsPaginatorNa
 Values:
 
 - `describe_environments`
+
+<a id="describeeventspaginatorname"></a>
 
 ## DescribeEventsPaginatorName
 
@@ -165,6 +189,8 @@ Values:
 
 - `describe_events`
 
+<a id="environmentexistswaitername"></a>
+
 ## EnvironmentExistsWaiterName
 
 ```python
@@ -174,6 +200,8 @@ from mypy_boto3_elasticbeanstalk.literals import EnvironmentExistsWaiterName
 Values:
 
 - `environment_exists`
+
+<a id="environmenthealthattributetype"></a>
 
 ## EnvironmentHealthAttributeType
 
@@ -191,6 +219,8 @@ Values:
 - `InstancesHealth`
 - `RefreshedAt`
 - `Status`
+
+<a id="environmenthealthstatustype"></a>
 
 ## EnvironmentHealthStatusType
 
@@ -210,6 +240,8 @@ Values:
 - `Unknown`
 - `Warning`
 
+<a id="environmenthealthtype"></a>
+
 ## EnvironmentHealthType
 
 ```python
@@ -223,6 +255,8 @@ Values:
 - `Red`
 - `Yellow`
 
+<a id="environmentinfotypetype"></a>
+
 ## EnvironmentInfoTypeType
 
 ```python
@@ -233,6 +267,8 @@ Values:
 
 - `bundle`
 - `tail`
+
+<a id="environmentstatustype"></a>
 
 ## EnvironmentStatusType
 
@@ -251,6 +287,8 @@ Values:
 - `Terminating`
 - `Updating`
 
+<a id="environmentterminatedwaitername"></a>
+
 ## EnvironmentTerminatedWaiterName
 
 ```python
@@ -261,6 +299,8 @@ Values:
 
 - `environment_terminated`
 
+<a id="environmentupdatedwaitername"></a>
+
 ## EnvironmentUpdatedWaiterName
 
 ```python
@@ -270,6 +310,8 @@ from mypy_boto3_elasticbeanstalk.literals import EnvironmentUpdatedWaiterName
 Values:
 
 - `environment_updated`
+
+<a id="eventseveritytype"></a>
 
 ## EventSeverityType
 
@@ -286,6 +328,8 @@ Values:
 - `TRACE`
 - `WARN`
 
+<a id="failuretypetype"></a>
+
 ## FailureTypeType
 
 ```python
@@ -301,6 +345,8 @@ Values:
 - `RollbackFailed`
 - `RollbackSuccessful`
 - `UpdateCancelled`
+
+<a id="instanceshealthattributetype"></a>
 
 ## InstancesHealthAttributeType
 
@@ -322,6 +368,8 @@ Values:
 - `RefreshedAt`
 - `System`
 
+<a id="listplatformversionspaginatorname"></a>
+
 ## ListPlatformVersionsPaginatorName
 
 ```python
@@ -331,6 +379,8 @@ from mypy_boto3_elasticbeanstalk.literals import ListPlatformVersionsPaginatorNa
 Values:
 
 - `list_platform_versions`
+
+<a id="platformstatustype"></a>
 
 ## PlatformStatusType
 
@@ -346,6 +396,8 @@ Values:
 - `Failed`
 - `Ready`
 
+<a id="sourcerepositorytype"></a>
+
 ## SourceRepositoryType
 
 ```python
@@ -356,6 +408,8 @@ Values:
 
 - `CodeCommit`
 - `S3`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -368,6 +422,8 @@ Values:
 - `Git`
 - `Zip`
 
+<a id="validationseveritytype"></a>
+
 ## ValidationSeverityType
 
 ```python
@@ -378,6 +434,8 @@ Values:
 
 - `error`
 - `warning`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -687,6 +745,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -700,6 +760,8 @@ Values:
 - `describe_environments`
 - `describe_events`
 - `list_platform_versions`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

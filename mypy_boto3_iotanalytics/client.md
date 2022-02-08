@@ -1,3 +1,5 @@
+<a id="iotanalyticsclient-for-boto3-iotanalytics-module"></a>
+
 # IoTAnalyticsClient for boto3 IoTAnalytics module
 
 > [Index](..) > [IoTAnalytics](.) > IoTAnalyticsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
-[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+[mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [IoTAnalyticsClient for boto3 IoTAnalytics module](#iotanalyticsclient-for-boto3-iotanalytics-module)
   - [IoTAnalyticsClient](#iotanalyticsclient)
@@ -50,6 +52,8 @@ type annotations stubs module
     - [update_pipeline](#update_pipeline)
     - [get_paginator](#get_paginator)
 
+<a id="iotanalyticsclient"></a>
+
 ## IoTAnalyticsClient
 
 Type annotations for `boto3.client("iotanalytics")`
@@ -57,14 +61,17 @@ Type annotations for `boto3.client("iotanalytics")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotanalytics.client import IoTAnalyticsClient
 
 def get_iotanalytics_client() -> IoTAnalyticsClient:
-    return boto3.client("iotanalytics")
+    return Session().client("iotanalytics")
 ```
 
 Boto3 documentation:
 [IoTAnalytics.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -89,7 +96,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -101,6 +112,8 @@ Boto3 documentation:
 [IoTAnalytics.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_put_message"></a>
 
 ### batch_put_message
 
@@ -123,6 +136,8 @@ Keyword-only arguments:
 Returns
 [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -137,6 +152,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_pipeline_reprocessing"></a>
 
 ### cancel_pipeline_reprocessing
 
@@ -157,6 +174,8 @@ Keyword-only arguments:
 - `reprocessingId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_channel"></a>
 
 ### create_channel
 
@@ -181,6 +200,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+
+<a id="create_dataset"></a>
 
 ### create_dataset
 
@@ -215,6 +236,8 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
+<a id="create_dataset_content"></a>
+
 ### create_dataset_content
 
 Creates the content of a dataset by applying a `queryAction` (a SQL query) or a
@@ -236,6 +259,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatasetContentResponseTypeDef](./type_defs.md#createdatasetcontentresponsetypedef).
+
+<a id="create_datastore"></a>
 
 ### create_datastore
 
@@ -265,6 +290,8 @@ Keyword-only arguments:
 Returns
 [CreateDatastoreResponseTypeDef](./type_defs.md#createdatastoreresponsetypedef).
 
+<a id="create_pipeline"></a>
+
 ### create_pipeline
 
 Creates a pipeline.
@@ -288,6 +315,8 @@ Keyword-only arguments:
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
+<a id="delete_channel"></a>
+
 ### delete_channel
 
 Deletes the specified channel.
@@ -304,6 +333,8 @@ Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 
+<a id="delete_dataset"></a>
+
 ### delete_dataset
 
 Deletes the specified dataset.
@@ -319,6 +350,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
+
+<a id="delete_dataset_content"></a>
 
 ### delete_dataset_content
 
@@ -338,6 +371,8 @@ Keyword-only arguments:
 - `datasetName`: `str` *(required)*
 - `versionId`: `str`
 
+<a id="delete_datastore"></a>
+
 ### delete_datastore
 
 Deletes the specified data store.
@@ -354,6 +389,8 @@ Keyword-only arguments:
 
 - `datastoreName`: `str` *(required)*
 
+<a id="delete_pipeline"></a>
+
 ### delete_pipeline
 
 Deletes the specified pipeline.
@@ -369,6 +406,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
+
+<a id="describe_channel"></a>
 
 ### describe_channel
 
@@ -390,6 +429,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
+<a id="describe_dataset"></a>
+
 ### describe_dataset
 
 Retrieves information about a dataset.
@@ -408,6 +449,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+
+<a id="describe_datastore"></a>
 
 ### describe_datastore
 
@@ -429,6 +472,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatastoreResponseTypeDef](./type_defs.md#describedatastoreresponsetypedef).
 
+<a id="describe_logging_options"></a>
+
 ### describe_logging_options
 
 Retrieves the current settings of the IoT Analytics logging options.
@@ -441,6 +486,8 @@ Boto3 documentation:
 
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
+
+<a id="describe_pipeline"></a>
 
 ### describe_pipeline
 
@@ -461,6 +508,8 @@ Keyword-only arguments:
 Returns
 [DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -479,6 +528,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_dataset_content"></a>
 
 ### get_dataset_content
 
@@ -500,6 +551,8 @@ Keyword-only arguments:
 Returns
 [GetDatasetContentResponseTypeDef](./type_defs.md#getdatasetcontentresponsetypedef).
 
+<a id="list_channels"></a>
+
 ### list_channels
 
 Retrieves a list of channels.
@@ -519,6 +572,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+
+<a id="list_dataset_contents"></a>
 
 ### list_dataset_contents
 
@@ -544,6 +599,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef).
 
+<a id="list_datasets"></a>
+
 ### list_datasets
 
 Retrieves information about datasets.
@@ -563,6 +620,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+<a id="list_datastores"></a>
 
 ### list_datastores
 
@@ -584,6 +643,8 @@ Keyword-only arguments:
 Returns
 [ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef).
 
+<a id="list_pipelines"></a>
+
 ### list_pipelines
 
 Retrieves a list of pipelines.
@@ -603,6 +664,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -624,6 +687,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_logging_options"></a>
+
 ### put_logging_options
 
 Sets or updates the IoT Analytics logging options.
@@ -640,6 +705,8 @@ Keyword-only arguments:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
+
+<a id="run_pipeline_activity"></a>
 
 ### run_pipeline_activity
 
@@ -665,6 +732,8 @@ Keyword-only arguments:
 Returns
 [RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef).
 
+<a id="sample_channel_data"></a>
+
 ### sample_channel_data
 
 Retrieves a sample of messages from the specified channel ingested during the
@@ -687,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [SampleChannelDataResponseTypeDef](./type_defs.md#samplechanneldataresponsetypedef).
+
+<a id="start_pipeline_reprocessing"></a>
 
 ### start_pipeline_reprocessing
 
@@ -712,6 +783,8 @@ Keyword-only arguments:
 Returns
 [StartPipelineReprocessingResponseTypeDef](./type_defs.md#startpipelinereprocessingresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds to or modifies the tags of the given resource.
@@ -730,6 +803,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -750,6 +825,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_channel"></a>
+
 ### update_channel
 
 Used to update the settings of a channel.
@@ -769,6 +846,8 @@ Keyword-only arguments:
   [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+
+<a id="update_dataset"></a>
 
 ### update_dataset
 
@@ -799,6 +878,8 @@ Keyword-only arguments:
 - `lateDataRules`:
   `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
+<a id="update_datastore"></a>
+
 ### update_datastore
 
 Used to update the settings of a data store.
@@ -821,6 +902,8 @@ Keyword-only arguments:
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 
+<a id="update_pipeline"></a>
+
 ### update_pipeline
 
 Updates the settings of a pipeline.
@@ -839,6 +922,8 @@ Keyword-only arguments:
 - `pipelineActivities`:
   `Sequence`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
   *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

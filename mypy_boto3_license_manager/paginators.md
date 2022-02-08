@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-licensemanager-module"></a>
+
 # Paginators for boto3 LicenseManager module
 
 > [Index](..) > [LicenseManager](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LicenseManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/license-manager.html#LicenseManager)
 type annotations stubs module
-[mypy_boto3_license_manager](https://pypi.org/project/mypy-boto3-license-manager/).
+[mypy-boto3-license-manager](https://pypi.org/project/mypy-boto3-license-manager/).
 
 - [Paginators for boto3 LicenseManager module](#paginators-for-boto3-licensemanager-module)
   - [ListAssociationsForLicenseConfigurationPaginator](#listassociationsforlicenseconfigurationpaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListLicenseSpecificationsForResourcePaginator](#listlicensespecificationsforresourcepaginator)
   - [ListResourceInventoryPaginator](#listresourceinventorypaginator)
   - [ListUsageForLicenseConfigurationPaginator](#listusageforlicenseconfigurationpaginator)
+
+<a id="listassociationsforlicenseconfigurationpaginator"></a>
 
 ## ListAssociationsForLicenseConfigurationPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_license_manager.paginator import ListAssociationsForLicenseConfigurationPaginator
 
 def get_list_associations_for_license_configuration_paginator() -> ListAssociationsForLicenseConfigurationPaginator:
-    return boto3.client("license-manager").get_paginator("list_associations_for_license_configuration")
+    return Session().client("license-manager").get_paginator("list_associations_for_license_configuration")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ method:
 `ListAssociationsForLicenseConfigurationPaginator.paginate` returns
 `_PageIterator`\[[ListAssociationsForLicenseConfigurationResponseTypeDef](./type_defs.md#listassociationsforlicenseconfigurationresponsetypedef)\].
 
+<a id="listlicenseconfigurationspaginator"></a>
+
 ## ListLicenseConfigurationsPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_license_manager.paginator import ListLicenseConfigurationsPaginator
 
 def get_list_license_configurations_paginator() -> ListLicenseConfigurationsPaginator:
-    return boto3.client("license-manager").get_paginator("list_license_configurations")
+    return Session().client("license-manager").get_paginator("list_license_configurations")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `ListLicenseConfigurationsPaginator.paginate` method:
 `ListLicenseConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListLicenseConfigurationsResponseTypeDef](./type_defs.md#listlicenseconfigurationsresponsetypedef)\].
 
+<a id="listlicensespecificationsforresourcepaginator"></a>
+
 ## ListLicenseSpecificationsForResourcePaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_license_manager.paginator import ListLicenseSpecificationsForResourcePaginator
 
 def get_list_license_specifications_for_resource_paginator() -> ListLicenseSpecificationsForResourcePaginator:
-    return boto3.client("license-manager").get_paginator("list_license_specifications_for_resource")
+    return Session().client("license-manager").get_paginator("list_license_specifications_for_resource")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `ListLicenseSpecificationsForResourcePaginator.paginate` method:
 `ListLicenseSpecificationsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListLicenseSpecificationsForResourceResponseTypeDef](./type_defs.md#listlicensespecificationsforresourceresponsetypedef)\].
 
+<a id="listresourceinventorypaginator"></a>
+
 ## ListResourceInventoryPaginator
 
 Type annotations for
@@ -102,10 +118,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_license_manager.paginator import ListResourceInventoryPaginator
 
 def get_list_resource_inventory_paginator() -> ListResourceInventoryPaginator:
-    return boto3.client("license-manager").get_paginator("list_resource_inventory")
+    return Session().client("license-manager").get_paginator("list_resource_inventory")
 ```
 
 Boto3 documentation:
@@ -121,6 +139,8 @@ Arguments for `ListResourceInventoryPaginator.paginate` method:
 `ListResourceInventoryPaginator.paginate` returns
 `_PageIterator`\[[ListResourceInventoryResponseTypeDef](./type_defs.md#listresourceinventoryresponsetypedef)\].
 
+<a id="listusageforlicenseconfigurationpaginator"></a>
+
 ## ListUsageForLicenseConfigurationPaginator
 
 Type annotations for
@@ -129,10 +149,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_license_manager.paginator import ListUsageForLicenseConfigurationPaginator
 
 def get_list_usage_for_license_configuration_paginator() -> ListUsageForLicenseConfigurationPaginator:
-    return boto3.client("license-manager").get_paginator("list_usage_for_license_configuration")
+    return Session().client("license-manager").get_paginator("list_usage_for_license_configuration")
 ```
 
 Boto3 documentation:

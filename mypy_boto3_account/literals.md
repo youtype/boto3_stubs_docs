@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-account-module"></a>
+
 # Literals for boto3 Account module
 
 > [Index](..) > [Account](.) > Literals
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
 type annotations stubs module
-[mypy_boto3_account](https://pypi.org/project/mypy-boto3-account/).
+[mypy-boto3-account](https://pypi.org/project/mypy-boto3-account/).
 
 - [Literals for boto3 Account module](#literals-for-boto3-account-module)
   - [AlternateContactTypeType](#alternatecontacttypetype)
   - [ServiceName](#servicename)
+
+<a id="alternatecontacttypetype"></a>
 
 ## AlternateContactTypeType
 
@@ -22,6 +26,8 @@ Values:
 - `BILLING`
 - `OPERATIONS`
 - `SECURITY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

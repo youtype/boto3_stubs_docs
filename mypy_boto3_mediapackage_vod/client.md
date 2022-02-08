@@ -1,3 +1,5 @@
+<a id="mediapackagevodclient-for-boto3-mediapackagevod-module"></a>
+
 # MediaPackageVodClient for boto3 MediaPackageVod module
 
 > [Index](..) > [MediaPackageVod](.) > MediaPackageVodClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
-[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+[mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [MediaPackageVodClient for boto3 MediaPackageVod module](#mediapackagevodclient-for-boto3-mediapackagevod-module)
   - [MediaPackageVodClient](#mediapackagevodclient)
@@ -33,6 +35,8 @@ type annotations stubs module
     - [update_packaging_group](#update_packaging_group)
     - [get_paginator](#get_paginator)
 
+<a id="mediapackagevodclient"></a>
+
 ## MediaPackageVodClient
 
 Type annotations for `boto3.client("mediapackage-vod")`
@@ -40,14 +44,17 @@ Type annotations for `boto3.client("mediapackage-vod")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediapackage_vod.client import MediaPackageVodClient
 
 def get_mediapackage-vod_client() -> MediaPackageVodClient:
-    return boto3.client("mediapackage-vod")
+    return Session().client("mediapackage-vod")
 ```
 
 Boto3 documentation:
 [MediaPackageVod.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -71,7 +78,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnprocessableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -83,6 +94,8 @@ Boto3 documentation:
 [MediaPackageVod.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -98,6 +111,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="configure_logs"></a>
 
 ### configure_logs
 
@@ -123,6 +138,8 @@ Keyword-only arguments:
 Returns
 [ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
+<a id="create_asset"></a>
+
 ### create_asset
 
 Creates a new MediaPackage VOD Asset resource.
@@ -146,6 +163,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
+
+<a id="create_packaging_configuration"></a>
 
 ### create_packaging_configuration
 
@@ -173,6 +192,8 @@ Keyword-only arguments:
 Returns
 [CreatePackagingConfigurationResponseTypeDef](./type_defs.md#createpackagingconfigurationresponsetypedef).
 
+<a id="create_packaging_group"></a>
+
 ### create_packaging_group
 
 Creates a new MediaPackage VOD PackagingGroup resource.
@@ -197,6 +218,8 @@ Keyword-only arguments:
 Returns
 [CreatePackagingGroupResponseTypeDef](./type_defs.md#createpackaginggroupresponsetypedef).
 
+<a id="delete_asset"></a>
+
 ### delete_asset
 
 Deletes an existing MediaPackage VOD Asset resource.
@@ -214,6 +237,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_packaging_configuration"></a>
 
 ### delete_packaging_configuration
 
@@ -234,6 +259,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_packaging_group"></a>
+
 ### delete_packaging_group
 
 Deletes a MediaPackage VOD PackagingGroup resource.
@@ -253,6 +280,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_asset"></a>
+
 ### describe_asset
 
 Returns a description of a MediaPackage VOD Asset resource.
@@ -271,6 +300,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
+
+<a id="describe_packaging_configuration"></a>
 
 ### describe_packaging_configuration
 
@@ -292,6 +323,8 @@ Keyword-only arguments:
 Returns
 [DescribePackagingConfigurationResponseTypeDef](./type_defs.md#describepackagingconfigurationresponsetypedef).
 
+<a id="describe_packaging_group"></a>
+
 ### describe_packaging_group
 
 Returns a description of a MediaPackage VOD PackagingGroup resource.
@@ -312,6 +345,8 @@ Keyword-only arguments:
 Returns
 [DescribePackagingGroupResponseTypeDef](./type_defs.md#describepackaginggroupresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -330,6 +365,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_assets"></a>
 
 ### list_assets
 
@@ -350,6 +387,8 @@ Keyword-only arguments:
 - `PackagingGroupId`: `str`
 
 Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
+
+<a id="list_packaging_configurations"></a>
 
 ### list_packaging_configurations
 
@@ -373,6 +412,8 @@ Keyword-only arguments:
 Returns
 [ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef).
 
+<a id="list_packaging_groups"></a>
+
 ### list_packaging_groups
 
 Returns a collection of MediaPackage VOD PackagingGroup resources.
@@ -394,6 +435,8 @@ Keyword-only arguments:
 Returns
 [ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags assigned to the specified resource.
@@ -414,6 +457,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to the specified resource.
@@ -431,6 +476,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the specified resource.
@@ -447,6 +494,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_packaging_group"></a>
 
 ### update_packaging_group
 
@@ -468,6 +517,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePackagingGroupResponseTypeDef](./type_defs.md#updatepackaginggroupresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

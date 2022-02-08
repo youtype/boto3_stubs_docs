@@ -1,3 +1,5 @@
+<a id="lexruntimev2client-for-boto3-lexruntimev2-module"></a>
+
 # LexRuntimeV2Client for boto3 LexRuntimeV2 module
 
 > [Index](..) > [LexRuntimeV2](.) > LexRuntimeV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
-[mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+[mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 - [LexRuntimeV2Client for boto3 LexRuntimeV2 module](#lexruntimev2client-for-boto3-lexruntimev2-module)
   - [LexRuntimeV2Client](#lexruntimev2client)
@@ -20,6 +22,8 @@ type annotations stubs module
     - [recognize_text](#recognize_text)
     - [recognize_utterance](#recognize_utterance)
 
+<a id="lexruntimev2client"></a>
+
 ## LexRuntimeV2Client
 
 Type annotations for `boto3.client("lexv2-runtime")`
@@ -27,14 +31,17 @@ Type annotations for `boto3.client("lexv2-runtime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
 
 def get_lexv2-runtime_client() -> LexRuntimeV2Client:
-    return boto3.client("lexv2-runtime")
+    return Session().client("lexv2-runtime")
 ```
 
 Boto3 documentation:
 [LexRuntimeV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -60,7 +67,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -72,6 +83,8 @@ Boto3 documentation:
 [LexRuntimeV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -87,6 +100,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_session"></a>
 
 ### delete_session
 
@@ -110,6 +125,8 @@ Keyword-only arguments:
 Returns
 [DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -128,6 +145,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_session"></a>
 
 ### get_session
 
@@ -149,6 +168,8 @@ Keyword-only arguments:
 - `sessionId`: `str` *(required)*
 
 Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+
+<a id="put_session"></a>
 
 ### put_session
 
@@ -177,6 +198,8 @@ Keyword-only arguments:
 
 Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
 
+<a id="recognize_text"></a>
+
 ### recognize_text
 
 Sends user input to Amazon Lex V2.
@@ -201,6 +224,8 @@ Keyword-only arguments:
 
 Returns
 [RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).
+
+<a id="recognize_utterance"></a>
 
 ### recognize_utterance
 

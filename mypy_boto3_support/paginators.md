@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-support-module"></a>
+
 # Paginators for boto3 Support module
 
 > [Index](..) > [Support](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module
-[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 - [Paginators for boto3 Support module](#paginators-for-boto3-support-module)
   - [DescribeCasesPaginator](#describecasespaginator)
   - [DescribeCommunicationsPaginator](#describecommunicationspaginator)
+
+<a id="describecasespaginator"></a>
 
 ## DescribeCasesPaginator
 
@@ -18,10 +22,12 @@ Type annotations for `boto3.client("support").get_paginator("describe_cases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_support.paginator import DescribeCasesPaginator
 
 def get_describe_cases_paginator() -> DescribeCasesPaginator:
-    return boto3.client("support").get_paginator("describe_cases")
+    return Session().client("support").get_paginator("describe_cases")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `DescribeCasesPaginator.paginate` method:
 `DescribeCasesPaginator.paginate` returns
 `_PageIterator`\[[DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef)\].
 
+<a id="describecommunicationspaginator"></a>
+
 ## DescribeCommunicationsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_support.paginator import DescribeCommunicationsPaginator
 
 def get_describe_communications_paginator() -> DescribeCommunicationsPaginator:
-    return boto3.client("support").get_paginator("describe_communications")
+    return Session().client("support").get_paginator("describe_communications")
 ```
 
 Boto3 documentation:

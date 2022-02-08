@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-textract-module"></a>
+
 # Literals for boto3 Textract module
 
 > [Index](..) > [Textract](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
 type annotations stubs module
-[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+[mypy-boto3-textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [Literals for boto3 Textract module](#literals-for-boto3-textract-module)
   - [BlockTypeType](#blocktypetype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [TextTypeType](#texttypetype)
   - [ValueTypeType](#valuetypetype)
   - [ServiceName](#servicename)
+
+<a id="blocktypetype"></a>
 
 ## BlockTypeType
 
@@ -35,6 +39,8 @@ Values:
 - `TABLE`
 - `WORD`
 
+<a id="contentclassifiertype"></a>
+
 ## ContentClassifierType
 
 ```python
@@ -45,6 +51,8 @@ Values:
 
 - `FreeOfAdultContent`
 - `FreeOfPersonallyIdentifiableInformation`
+
+<a id="entitytypetype"></a>
 
 ## EntityTypeType
 
@@ -57,6 +65,8 @@ Values:
 - `KEY`
 - `VALUE`
 
+<a id="featuretypetype"></a>
+
 ## FeatureTypeType
 
 ```python
@@ -67,6 +77,8 @@ Values:
 
 - `FORMS`
 - `TABLES`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -81,6 +93,8 @@ Values:
 - `PARTIAL_SUCCESS`
 - `SUCCEEDED`
 
+<a id="relationshiptypetype"></a>
+
 ## RelationshipTypeType
 
 ```python
@@ -93,6 +107,8 @@ Values:
 - `COMPLEX_FEATURES`
 - `VALUE`
 
+<a id="selectionstatustype"></a>
+
 ## SelectionStatusType
 
 ```python
@@ -103,6 +119,8 @@ Values:
 
 - `NOT_SELECTED`
 - `SELECTED`
+
+<a id="texttypetype"></a>
 
 ## TextTypeType
 
@@ -115,6 +133,8 @@ Values:
 - `HANDWRITING`
 - `PRINTED`
 
+<a id="valuetypetype"></a>
+
 ## ValueTypeType
 
 ```python
@@ -124,6 +144,8 @@ from mypy_boto3_textract.literals import ValueTypeType
 Values:
 
 - `DATE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

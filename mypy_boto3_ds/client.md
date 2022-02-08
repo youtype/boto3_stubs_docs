@@ -1,3 +1,5 @@
+<a id="directoryserviceclient-for-boto3-directoryservice-module"></a>
+
 # DirectoryServiceClient for boto3 DirectoryService module
 
 > [Index](..) > [DirectoryService](.) > DirectoryServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
 type annotations stubs module
-[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [DirectoryServiceClient for boto3 DirectoryService module](#directoryserviceclient-for-boto3-directoryservice-module)
   - [DirectoryServiceClient](#directoryserviceclient)
@@ -79,6 +81,8 @@ type annotations stubs module
     - [verify_trust](#verify_trust)
     - [get_paginator](#get_paginator)
 
+<a id="directoryserviceclient"></a>
+
 ## DirectoryServiceClient
 
 Type annotations for `boto3.client("ds")`
@@ -86,14 +90,17 @@ Type annotations for `boto3.client("ds")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ds.client import DirectoryServiceClient
 
 def get_ds_client() -> DirectoryServiceClient:
-    return boto3.client("ds")
+    return Session().client("ds")
 ```
 
 Boto3 documentation:
 [DirectoryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -145,7 +152,11 @@ Exceptions:
 - `Exceptions.UnsupportedOperationException`
 - `Exceptions.UserDoesNotExistException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -157,6 +168,8 @@ Boto3 documentation:
 [DirectoryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_shared_directory"></a>
 
 ### accept_shared_directory
 
@@ -177,6 +190,8 @@ Keyword-only arguments:
 
 Returns
 [AcceptSharedDirectoryResultTypeDef](./type_defs.md#acceptshareddirectoryresulttypedef).
+
+<a id="add_ip_routes"></a>
 
 ### add_ip_routes
 
@@ -201,6 +216,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="add_region"></a>
+
 ### add_region
 
 Adds two domain controllers in the specified Region for the specified
@@ -224,6 +241,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="add_tags_to_resource"></a>
+
 ### add_tags_to_resource
 
 Adds or overwrites one or more tags for the specified directory.
@@ -243,6 +262,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -257,6 +278,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_schema_extension"></a>
 
 ### cancel_schema_extension
 
@@ -276,6 +299,8 @@ Keyword-only arguments:
 - `SchemaExtensionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="connect_directory"></a>
 
 ### connect_directory
 
@@ -304,6 +329,8 @@ Keyword-only arguments:
 Returns
 [ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
 
+<a id="create_alias"></a>
+
 ### create_alias
 
 Creates an alias for a directory and assigns the alias to the directory.
@@ -322,6 +349,8 @@ Keyword-only arguments:
 - `Alias`: `str` *(required)*
 
 Returns [CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef).
+
+<a id="create_computer"></a>
 
 ### create_computer
 
@@ -347,6 +376,8 @@ Keyword-only arguments:
 Returns
 [CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
 
+<a id="create_conditional_forwarder"></a>
+
 ### create_conditional_forwarder
 
 Creates a conditional forwarder associated with your Amazon Web Services
@@ -367,6 +398,8 @@ Keyword-only arguments:
 - `DnsIpAddrs`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_directory"></a>
 
 ### create_directory
 
@@ -394,6 +427,8 @@ Keyword-only arguments:
 Returns
 [CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
 
+<a id="create_log_subscription"></a>
+
 ### create_log_subscription
 
 Creates a subscription to forward real-time Directory Service domain controller
@@ -414,6 +449,8 @@ Keyword-only arguments:
 - `LogGroupName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_microsoft_ad"></a>
 
 ### create_microsoft_ad
 
@@ -442,6 +479,8 @@ Keyword-only arguments:
 Returns
 [CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
 
+<a id="create_snapshot"></a>
+
 ### create_snapshot
 
 Creates a snapshot of a Simple AD or Microsoft AD directory in the Amazon Web
@@ -462,6 +501,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
+
+<a id="create_trust"></a>
 
 ### create_trust
 
@@ -489,6 +530,8 @@ Keyword-only arguments:
 
 Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 
+<a id="delete_conditional_forwarder"></a>
+
 ### delete_conditional_forwarder
 
 Deletes a conditional forwarder that has been set up for your Amazon Web
@@ -509,6 +552,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_directory"></a>
+
 ### delete_directory
 
 Deletes an Directory Service directory.
@@ -528,6 +573,8 @@ Keyword-only arguments:
 Returns
 [DeleteDirectoryResultTypeDef](./type_defs.md#deletedirectoryresulttypedef).
 
+<a id="delete_log_subscription"></a>
+
 ### delete_log_subscription
 
 Deletes the specified log subscription.
@@ -545,6 +592,8 @@ Keyword-only arguments:
 - `DirectoryId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_snapshot"></a>
 
 ### delete_snapshot
 
@@ -564,6 +613,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
+
+<a id="delete_trust"></a>
 
 ### delete_trust
 
@@ -585,6 +636,8 @@ Keyword-only arguments:
 
 Returns [DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef).
 
+<a id="deregister_certificate"></a>
+
 ### deregister_certificate
 
 Deletes from the system the certificate that was registered for secure LDAP or
@@ -604,6 +657,8 @@ Keyword-only arguments:
 - `CertificateId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_event_topic"></a>
 
 ### deregister_event_topic
 
@@ -625,6 +680,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_certificate"></a>
+
 ### describe_certificate
 
 Displays information about the certificate registered for secure LDAP or client
@@ -645,6 +702,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef).
+
+<a id="describe_client_authentication_settings"></a>
 
 ### describe_client_authentication_settings
 
@@ -671,6 +730,8 @@ Keyword-only arguments:
 Returns
 [DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef).
 
+<a id="describe_conditional_forwarders"></a>
+
 ### describe_conditional_forwarders
 
 Obtains information about the conditional forwarders for this account.
@@ -692,6 +753,8 @@ Keyword-only arguments:
 Returns
 [DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
 
+<a id="describe_directories"></a>
+
 ### describe_directories
 
 Obtains information about the directories that belong to this account.
@@ -712,6 +775,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef).
+
+<a id="describe_domain_controllers"></a>
 
 ### describe_domain_controllers
 
@@ -735,6 +800,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef).
 
+<a id="describe_event_topics"></a>
+
 ### describe_event_topics
 
 Obtains information about which Amazon SNS topics receive status messages from
@@ -755,6 +822,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
+
+<a id="describe_ldaps_settings"></a>
 
 ### describe_ldaps_settings
 
@@ -779,6 +848,8 @@ Keyword-only arguments:
 Returns
 [DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef).
 
+<a id="describe_regions"></a>
+
 ### describe_regions
 
 Provides information about the Regions that are configured for multi-Region
@@ -800,6 +871,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
+
+<a id="describe_shared_directories"></a>
 
 ### describe_shared_directories
 
@@ -823,6 +896,8 @@ Keyword-only arguments:
 Returns
 [DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef).
 
+<a id="describe_snapshots"></a>
+
 ### describe_snapshots
 
 Obtains information about the directory snapshots that belong to this account.
@@ -844,6 +919,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
+
+<a id="describe_trusts"></a>
 
 ### describe_trusts
 
@@ -867,6 +944,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef).
 
+<a id="disable_client_authentication"></a>
+
 ### disable_client_authentication
 
 Disables alternative client authentication methods for the specified directory.
@@ -888,6 +967,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_ldaps"></a>
+
 ### disable_ldaps
 
 Deactivates LDAP secure calls for the specified directory.
@@ -908,6 +989,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_radius"></a>
+
 ### disable_radius
 
 Disables multi-factor authentication (MFA) with the Remote Authentication Dial
@@ -926,6 +1009,8 @@ Keyword-only arguments:
 - `DirectoryId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disable_sso"></a>
 
 ### disable_sso
 
@@ -946,6 +1031,8 @@ Keyword-only arguments:
 - `Password`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="enable_client_authentication"></a>
 
 ### enable_client_authentication
 
@@ -968,6 +1055,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="enable_ldaps"></a>
+
 ### enable_ldaps
 
 Activates the switch for the specific directory to always use LDAP secure
@@ -988,6 +1077,8 @@ Keyword-only arguments:
   [LDAPSTypeType](./literals.md#ldapstypetype)) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="enable_radius"></a>
 
 ### enable_radius
 
@@ -1010,6 +1101,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="enable_sso"></a>
+
 ### enable_sso
 
 Enables single sign-on for a directory.
@@ -1030,6 +1123,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1048,6 +1143,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_directory_limits"></a>
+
 ### get_directory_limits
 
 Obtains directory limit information for the current Region.
@@ -1059,6 +1156,8 @@ Boto3 documentation:
 
 Returns
 [GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef).
+
+<a id="get_snapshot_limits"></a>
 
 ### get_snapshot_limits
 
@@ -1078,6 +1177,8 @@ Keyword-only arguments:
 
 Returns
 [GetSnapshotLimitsResultTypeDef](./type_defs.md#getsnapshotlimitsresulttypedef).
+
+<a id="list_certificates"></a>
 
 ### list_certificates
 
@@ -1101,6 +1202,8 @@ Keyword-only arguments:
 Returns
 [ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef).
 
+<a id="list_ip_routes"></a>
+
 ### list_ip_routes
 
 Lists the address blocks that you have added to a directory.
@@ -1120,6 +1223,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
+
+<a id="list_log_subscriptions"></a>
 
 ### list_log_subscriptions
 
@@ -1142,6 +1247,8 @@ Keyword-only arguments:
 Returns
 [ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef).
 
+<a id="list_schema_extensions"></a>
+
 ### list_schema_extensions
 
 Lists all schema extensions applied to a Microsoft AD Directory.
@@ -1163,6 +1270,8 @@ Keyword-only arguments:
 Returns
 [ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags on a directory.
@@ -1183,6 +1292,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+
+<a id="register_certificate"></a>
 
 ### register_certificate
 
@@ -1207,6 +1318,8 @@ Keyword-only arguments:
 Returns
 [RegisterCertificateResultTypeDef](./type_defs.md#registercertificateresulttypedef).
 
+<a id="register_event_topic"></a>
+
 ### register_event_topic
 
 Associates a directory with an Amazon SNS topic.
@@ -1225,6 +1338,8 @@ Keyword-only arguments:
 - `TopicName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="reject_shared_directory"></a>
 
 ### reject_shared_directory
 
@@ -1246,6 +1361,8 @@ Keyword-only arguments:
 Returns
 [RejectSharedDirectoryResultTypeDef](./type_defs.md#rejectshareddirectoryresulttypedef).
 
+<a id="remove_ip_routes"></a>
+
 ### remove_ip_routes
 
 Removes IP address blocks from a directory.
@@ -1264,6 +1381,8 @@ Keyword-only arguments:
 - `CidrIps`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="remove_region"></a>
 
 ### remove_region
 
@@ -1284,6 +1403,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 Removes tags from a directory.
@@ -1302,6 +1423,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="reset_user_password"></a>
 
 ### reset_user_password
 
@@ -1324,6 +1447,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="restore_from_snapshot"></a>
+
 ### restore_from_snapshot
 
 Restores a directory using an existing directory snapshot.
@@ -1341,6 +1466,8 @@ Keyword-only arguments:
 - `SnapshotId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="share_directory"></a>
 
 ### share_directory
 
@@ -1367,6 +1494,8 @@ Keyword-only arguments:
 Returns
 [ShareDirectoryResultTypeDef](./type_defs.md#sharedirectoryresulttypedef).
 
+<a id="start_schema_extension"></a>
+
 ### start_schema_extension
 
 Applies a schema extension to a Microsoft AD directory.
@@ -1389,6 +1518,8 @@ Keyword-only arguments:
 Returns
 [StartSchemaExtensionResultTypeDef](./type_defs.md#startschemaextensionresulttypedef).
 
+<a id="unshare_directory"></a>
+
 ### unshare_directory
 
 Stops the directory sharing between the directory owner and consumer accounts.
@@ -1409,6 +1540,8 @@ Keyword-only arguments:
 
 Returns
 [UnshareDirectoryResultTypeDef](./type_defs.md#unsharedirectoryresulttypedef).
+
+<a id="update_conditional_forwarder"></a>
 
 ### update_conditional_forwarder
 
@@ -1431,6 +1564,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_number_of_domain_controllers"></a>
+
 ### update_number_of_domain_controllers
 
 Adds or removes domain controllers to or from the directory.
@@ -1450,6 +1585,8 @@ Keyword-only arguments:
 - `DesiredNumber`: `int` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_radius"></a>
 
 ### update_radius
 
@@ -1472,6 +1609,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_trust"></a>
+
 ### update_trust
 
 Updates the trust that has been set up between your Managed Microsoft AD
@@ -1492,6 +1631,8 @@ Keyword-only arguments:
 
 Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 
+<a id="verify_trust"></a>
+
 ### verify_trust
 
 Directory Service for Microsoft Active Directory allows you to configure and
@@ -1510,6 +1651,8 @@ Keyword-only arguments:
 - `TrustId`: `str` *(required)*
 
 Returns [VerifyTrustResultTypeDef](./type_defs.md#verifytrustresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

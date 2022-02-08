@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotanalytics-module"></a>
+
 # Typed dictionaries for boto3 IoTAnalytics module
 
 > [Index](..) > [IoTAnalytics](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
-[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+[mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [Typed dictionaries for boto3 IoTAnalytics module](#typed-dictionaries-for-boto3-iotanalytics-module)
   - [AddAttributesActivityTypeDef](#addattributesactivitytypedef)
@@ -139,6 +141,8 @@ type annotations stubs module
   - [VariableTypeDef](#variabletypedef)
   - [VersioningConfigurationTypeDef](#versioningconfigurationtypedef)
 
+<a id="addattributesactivitytypedef"></a>
+
 ## AddAttributesActivityTypeDef
 
 ```python
@@ -154,6 +158,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="batchputmessageerrorentrytypedef"></a>
+
 ## BatchPutMessageErrorEntryTypeDef
 
 ```python
@@ -166,6 +172,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchputmessagerequestrequesttypedef"></a>
+
 ## BatchPutMessageRequestRequestTypeDef
 
 ```python
@@ -176,6 +184,8 @@ Required fields:
 
 - `channelName`: `str`
 - `messages`: `Sequence`\[[MessageTypeDef](./type_defs.md#messagetypedef)\]
+
+<a id="batchputmessageresponsetypedef"></a>
 
 ## BatchPutMessageResponseTypeDef
 
@@ -190,6 +200,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cancelpipelinereprocessingrequestrequesttypedef"></a>
+
 ## CancelPipelineReprocessingRequestRequestTypeDef
 
 ```python
@@ -200,6 +212,8 @@ Required fields:
 
 - `pipelineName`: `str`
 - `reprocessingId`: `str`
+
+<a id="channelactivitytypedef"></a>
 
 ## ChannelActivityTypeDef
 
@@ -216,6 +230,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="channelmessagestypedef"></a>
+
 ## ChannelMessagesTypeDef
 
 ```python
@@ -225,6 +241,8 @@ from mypy_boto3_iotanalytics.type_defs import ChannelMessagesTypeDef
 Optional fields:
 
 - `s3Paths`: `Sequence`\[`str`\]
+
+<a id="channelstatisticstypedef"></a>
 
 ## ChannelStatisticsTypeDef
 
@@ -236,6 +254,8 @@ Optional fields:
 
 - `size`:
   [EstimatedResourceSizeTypeDef](./type_defs.md#estimatedresourcesizetypedef)
+
+<a id="channelstoragesummarytypedef"></a>
 
 ## ChannelStorageSummaryTypeDef
 
@@ -249,6 +269,8 @@ Optional fields:
 - `customerManagedS3`:
   [CustomerManagedChannelS3StorageSummaryTypeDef](./type_defs.md#customermanagedchannels3storagesummarytypedef)
 
+<a id="channelstoragetypedef"></a>
+
 ## ChannelStorageTypeDef
 
 ```python
@@ -260,6 +282,8 @@ Optional fields:
 - `serviceManagedS3`: `Mapping`\[`str`, `Any`\]
 - `customerManagedS3`:
   [CustomerManagedChannelS3StorageTypeDef](./type_defs.md#customermanagedchannels3storagetypedef)
+
+<a id="channelsummarytypedef"></a>
 
 ## ChannelSummaryTypeDef
 
@@ -276,6 +300,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
+
+<a id="channeltypedef"></a>
 
 ## ChannelTypeDef
 
@@ -295,6 +321,8 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `lastMessageArrivalTime`: `datetime`
 
+<a id="columntypedef"></a>
+
 ## ColumnTypeDef
 
 ```python
@@ -305,6 +333,8 @@ Required fields:
 
 - `name`: `str`
 - `type`: `str`
+
+<a id="containerdatasetactiontypedef"></a>
 
 ## ContainerDatasetActionTypeDef
 
@@ -322,6 +352,8 @@ Required fields:
 Optional fields:
 
 - `variables`: `Sequence`\[[VariableTypeDef](./type_defs.md#variabletypedef)\]
+
+<a id="createchannelrequestrequesttypedef"></a>
 
 ## CreateChannelRequestRequestTypeDef
 
@@ -341,6 +373,8 @@ Optional fields:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createchannelresponsetypedef"></a>
+
 ## CreateChannelResponseTypeDef
 
 ```python
@@ -356,6 +390,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdatasetcontentrequestrequesttypedef"></a>
+
 ## CreateDatasetContentRequestRequestTypeDef
 
 ```python
@@ -370,6 +406,8 @@ Optional fields:
 
 - `versionId`: `str`
 
+<a id="createdatasetcontentresponsetypedef"></a>
+
 ## CreateDatasetContentResponseTypeDef
 
 ```python
@@ -381,6 +419,8 @@ Required fields:
 - `versionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDatasetRequestRequestTypeDef
 
@@ -408,6 +448,8 @@ Optional fields:
 - `lateDataRules`:
   `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -422,6 +464,8 @@ Required fields:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatastorerequestrequesttypedef"></a>
 
 ## CreateDatastoreRequestRequestTypeDef
 
@@ -445,6 +489,8 @@ Optional fields:
 - `datastorePartitions`:
   [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
+<a id="createdatastoreresponsetypedef"></a>
+
 ## CreateDatastoreResponseTypeDef
 
 ```python
@@ -459,6 +505,8 @@ Required fields:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpipelinerequestrequesttypedef"></a>
 
 ## CreatePipelineRequestRequestTypeDef
 
@@ -476,6 +524,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createpipelineresponsetypedef"></a>
+
 ## CreatePipelineResponseTypeDef
 
 ```python
@@ -489,6 +539,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customermanagedchannels3storagesummarytypedef"></a>
+
 ## CustomerManagedChannelS3StorageSummaryTypeDef
 
 ```python
@@ -500,6 +552,8 @@ Optional fields:
 - `bucket`: `str`
 - `keyPrefix`: `str`
 - `roleArn`: `str`
+
+<a id="customermanagedchannels3storagetypedef"></a>
 
 ## CustomerManagedChannelS3StorageTypeDef
 
@@ -516,6 +570,8 @@ Optional fields:
 
 - `keyPrefix`: `str`
 
+<a id="customermanageddatastores3storagesummarytypedef"></a>
+
 ## CustomerManagedDatastoreS3StorageSummaryTypeDef
 
 ```python
@@ -527,6 +583,8 @@ Optional fields:
 - `bucket`: `str`
 - `keyPrefix`: `str`
 - `roleArn`: `str`
+
+<a id="customermanageddatastores3storagetypedef"></a>
 
 ## CustomerManagedDatastoreS3StorageTypeDef
 
@@ -543,6 +601,8 @@ Optional fields:
 
 - `keyPrefix`: `str`
 
+<a id="datasetactionsummarytypedef"></a>
+
 ## DatasetActionSummaryTypeDef
 
 ```python
@@ -553,6 +613,8 @@ Optional fields:
 
 - `actionName`: `str`
 - `actionType`: [DatasetActionTypeType](./literals.md#datasetactiontypetype)
+
+<a id="datasetactiontypedef"></a>
 
 ## DatasetActionTypeDef
 
@@ -568,6 +630,8 @@ Optional fields:
 - `containerAction`:
   [ContainerDatasetActionTypeDef](./type_defs.md#containerdatasetactiontypedef)
 
+<a id="datasetcontentdeliverydestinationtypedef"></a>
+
 ## DatasetContentDeliveryDestinationTypeDef
 
 ```python
@@ -580,6 +644,8 @@ Optional fields:
   [IotEventsDestinationConfigurationTypeDef](./type_defs.md#ioteventsdestinationconfigurationtypedef)
 - `s3DestinationConfiguration`:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
+
+<a id="datasetcontentdeliveryruletypedef"></a>
 
 ## DatasetContentDeliveryRuleTypeDef
 
@@ -596,6 +662,8 @@ Optional fields:
 
 - `entryName`: `str`
 
+<a id="datasetcontentstatustypedef"></a>
+
 ## DatasetContentStatusTypeDef
 
 ```python
@@ -606,6 +674,8 @@ Optional fields:
 
 - `state`: [DatasetContentStateType](./literals.md#datasetcontentstatetype)
 - `reason`: `str`
+
+<a id="datasetcontentsummarytypedef"></a>
 
 ## DatasetContentSummaryTypeDef
 
@@ -622,6 +692,8 @@ Optional fields:
 - `scheduleTime`: `datetime`
 - `completionTime`: `datetime`
 
+<a id="datasetcontentversionvaluetypedef"></a>
+
 ## DatasetContentVersionValueTypeDef
 
 ```python
@@ -631,6 +703,8 @@ from mypy_boto3_iotanalytics.type_defs import DatasetContentVersionValueTypeDef
 Required fields:
 
 - `datasetName`: `str`
+
+<a id="datasetentrytypedef"></a>
 
 ## DatasetEntryTypeDef
 
@@ -642,6 +716,8 @@ Optional fields:
 
 - `entryName`: `str`
 - `dataURI`: `str`
+
+<a id="datasetsummarytypedef"></a>
 
 ## DatasetSummaryTypeDef
 
@@ -660,6 +736,8 @@ Optional fields:
 - `actions`:
   `List`\[[DatasetActionSummaryTypeDef](./type_defs.md#datasetactionsummarytypedef)\]
 
+<a id="datasettriggertypedef"></a>
+
 ## DatasetTriggerTypeDef
 
 ```python
@@ -671,6 +749,8 @@ Optional fields:
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `dataset`:
   [TriggeringDatasetTypeDef](./type_defs.md#triggeringdatasettypedef)
+
+<a id="datasettypedef"></a>
 
 ## DatasetTypeDef
 
@@ -698,6 +778,8 @@ Optional fields:
 - `lateDataRules`:
   `List`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
+<a id="datastoreactivitytypedef"></a>
+
 ## DatastoreActivityTypeDef
 
 ```python
@@ -708,6 +790,8 @@ Required fields:
 
 - `name`: `str`
 - `datastoreName`: `str`
+
+<a id="datastoreiotsitewisemultilayerstoragesummarytypedef"></a>
 
 ## DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef
 
@@ -720,6 +804,8 @@ Optional fields:
 - `customerManagedS3Storage`:
   [IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagesummarytypedef)
 
+<a id="datastoreiotsitewisemultilayerstoragetypedef"></a>
+
 ## DatastoreIotSiteWiseMultiLayerStorageTypeDef
 
 ```python
@@ -730,6 +816,8 @@ Required fields:
 
 - `customerManagedS3Storage`:
   [IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#iotsitewisecustomermanageddatastores3storagetypedef)
+
+<a id="datastorepartitiontypedef"></a>
 
 ## DatastorePartitionTypeDef
 
@@ -743,6 +831,8 @@ Optional fields:
 - `timestampPartition`:
   [TimestampPartitionTypeDef](./type_defs.md#timestamppartitiontypedef)
 
+<a id="datastorepartitionstypedef"></a>
+
 ## DatastorePartitionsTypeDef
 
 ```python
@@ -754,6 +844,8 @@ Optional fields:
 - `partitions`:
   `Sequence`\[[DatastorePartitionTypeDef](./type_defs.md#datastorepartitiontypedef)\]
 
+<a id="datastorestatisticstypedef"></a>
+
 ## DatastoreStatisticsTypeDef
 
 ```python
@@ -764,6 +856,8 @@ Optional fields:
 
 - `size`:
   [EstimatedResourceSizeTypeDef](./type_defs.md#estimatedresourcesizetypedef)
+
+<a id="datastorestoragesummarytypedef"></a>
 
 ## DatastoreStorageSummaryTypeDef
 
@@ -779,6 +873,8 @@ Optional fields:
 - `iotSiteWiseMultiLayerStorage`:
   [DatastoreIotSiteWiseMultiLayerStorageSummaryTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragesummarytypedef)
 
+<a id="datastorestoragetypedef"></a>
+
 ## DatastoreStorageTypeDef
 
 ```python
@@ -792,6 +888,8 @@ Optional fields:
   [CustomerManagedDatastoreS3StorageTypeDef](./type_defs.md#customermanageddatastores3storagetypedef)
 - `iotSiteWiseMultiLayerStorage`:
   [DatastoreIotSiteWiseMultiLayerStorageTypeDef](./type_defs.md#datastoreiotsitewisemultilayerstoragetypedef)
+
+<a id="datastoresummarytypedef"></a>
 
 ## DatastoreSummaryTypeDef
 
@@ -811,6 +909,8 @@ Optional fields:
 - `fileFormatType`: [FileFormatTypeType](./literals.md#fileformattypetype)
 - `datastorePartitions`:
   [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
+
+<a id="datastoretypedef"></a>
 
 ## DatastoreTypeDef
 
@@ -834,6 +934,8 @@ Optional fields:
 - `datastorePartitions`:
   [DatastorePartitionsTypeDef](./type_defs.md#datastorepartitionstypedef)
 
+<a id="deletechannelrequestrequesttypedef"></a>
+
 ## DeleteChannelRequestRequestTypeDef
 
 ```python
@@ -843,6 +945,8 @@ from mypy_boto3_iotanalytics.type_defs import DeleteChannelRequestRequestTypeDef
 Required fields:
 
 - `channelName`: `str`
+
+<a id="deletedatasetcontentrequestrequesttypedef"></a>
 
 ## DeleteDatasetContentRequestRequestTypeDef
 
@@ -858,6 +962,8 @@ Optional fields:
 
 - `versionId`: `str`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -867,6 +973,8 @@ from mypy_boto3_iotanalytics.type_defs import DeleteDatasetRequestRequestTypeDef
 Required fields:
 
 - `datasetName`: `str`
+
+<a id="deletedatastorerequestrequesttypedef"></a>
 
 ## DeleteDatastoreRequestRequestTypeDef
 
@@ -878,6 +986,8 @@ Required fields:
 
 - `datastoreName`: `str`
 
+<a id="deletepipelinerequestrequesttypedef"></a>
+
 ## DeletePipelineRequestRequestTypeDef
 
 ```python
@@ -887,6 +997,8 @@ from mypy_boto3_iotanalytics.type_defs import DeletePipelineRequestRequestTypeDe
 Required fields:
 
 - `pipelineName`: `str`
+
+<a id="deltatimesessionwindowconfigurationtypedef"></a>
 
 ## DeltaTimeSessionWindowConfigurationTypeDef
 
@@ -898,6 +1010,8 @@ Required fields:
 
 - `timeoutInMinutes`: `int`
 
+<a id="deltatimetypedef"></a>
+
 ## DeltaTimeTypeDef
 
 ```python
@@ -908,6 +1022,8 @@ Required fields:
 
 - `offsetSeconds`: `int`
 - `timeExpression`: `str`
+
+<a id="describechannelrequestrequesttypedef"></a>
 
 ## DescribeChannelRequestRequestTypeDef
 
@@ -923,6 +1039,8 @@ Optional fields:
 
 - `includeStatistics`: `bool`
 
+<a id="describechannelresponsetypedef"></a>
+
 ## DescribeChannelResponseTypeDef
 
 ```python
@@ -937,6 +1055,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -946,6 +1066,8 @@ from mypy_boto3_iotanalytics.type_defs import DescribeDatasetRequestRequestTypeD
 Required fields:
 
 - `datasetName`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -958,6 +1080,8 @@ Required fields:
 - `dataset`: [DatasetTypeDef](./type_defs.md#datasettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedatastorerequestrequesttypedef"></a>
 
 ## DescribeDatastoreRequestRequestTypeDef
 
@@ -973,6 +1097,8 @@ Optional fields:
 
 - `includeStatistics`: `bool`
 
+<a id="describedatastoreresponsetypedef"></a>
+
 ## DescribeDatastoreResponseTypeDef
 
 ```python
@@ -987,6 +1113,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloggingoptionsresponsetypedef"></a>
+
 ## DescribeLoggingOptionsResponseTypeDef
 
 ```python
@@ -1000,6 +1128,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepipelinerequestrequesttypedef"></a>
+
 ## DescribePipelineRequestRequestTypeDef
 
 ```python
@@ -1009,6 +1139,8 @@ from mypy_boto3_iotanalytics.type_defs import DescribePipelineRequestRequestType
 Required fields:
 
 - `pipelineName`: `str`
+
+<a id="describepipelineresponsetypedef"></a>
 
 ## DescribePipelineResponseTypeDef
 
@@ -1021,6 +1153,8 @@ Required fields:
 - `pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deviceregistryenrichactivitytypedef"></a>
 
 ## DeviceRegistryEnrichActivityTypeDef
 
@@ -1039,6 +1173,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="deviceshadowenrichactivitytypedef"></a>
+
 ## DeviceShadowEnrichActivityTypeDef
 
 ```python
@@ -1056,6 +1192,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="estimatedresourcesizetypedef"></a>
+
 ## EstimatedResourceSizeTypeDef
 
 ```python
@@ -1066,6 +1204,8 @@ Optional fields:
 
 - `estimatedSizeInBytes`: `float`
 - `estimatedOn`: `datetime`
+
+<a id="fileformatconfigurationtypedef"></a>
 
 ## FileFormatConfigurationTypeDef
 
@@ -1078,6 +1218,8 @@ Optional fields:
 - `jsonConfiguration`: `Mapping`\[`str`, `Any`\]
 - `parquetConfiguration`:
   [ParquetConfigurationTypeDef](./type_defs.md#parquetconfigurationtypedef)
+
+<a id="filteractivitytypedef"></a>
 
 ## FilterActivityTypeDef
 
@@ -1094,6 +1236,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="getdatasetcontentrequestrequesttypedef"></a>
+
 ## GetDatasetContentRequestRequestTypeDef
 
 ```python
@@ -1107,6 +1251,8 @@ Required fields:
 Optional fields:
 
 - `versionId`: `str`
+
+<a id="getdatasetcontentresponsetypedef"></a>
 
 ## GetDatasetContentResponseTypeDef
 
@@ -1124,6 +1270,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="glueconfigurationtypedef"></a>
+
 ## GlueConfigurationTypeDef
 
 ```python
@@ -1134,6 +1282,8 @@ Required fields:
 
 - `tableName`: `str`
 - `databaseName`: `str`
+
+<a id="ioteventsdestinationconfigurationtypedef"></a>
 
 ## IotEventsDestinationConfigurationTypeDef
 
@@ -1146,6 +1296,8 @@ Required fields:
 - `inputName`: `str`
 - `roleArn`: `str`
 
+<a id="iotsitewisecustomermanageddatastores3storagesummarytypedef"></a>
+
 ## IotSiteWiseCustomerManagedDatastoreS3StorageSummaryTypeDef
 
 ```python
@@ -1156,6 +1308,8 @@ Optional fields:
 
 - `bucket`: `str`
 - `keyPrefix`: `str`
+
+<a id="iotsitewisecustomermanageddatastores3storagetypedef"></a>
 
 ## IotSiteWiseCustomerManagedDatastoreS3StorageTypeDef
 
@@ -1170,6 +1324,8 @@ Required fields:
 Optional fields:
 
 - `keyPrefix`: `str`
+
+<a id="lambdaactivitytypedef"></a>
 
 ## LambdaActivityTypeDef
 
@@ -1187,6 +1343,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="latedataruleconfigurationtypedef"></a>
+
 ## LateDataRuleConfigurationTypeDef
 
 ```python
@@ -1197,6 +1355,8 @@ Optional fields:
 
 - `deltaTimeSessionWindowConfiguration`:
   [DeltaTimeSessionWindowConfigurationTypeDef](./type_defs.md#deltatimesessionwindowconfigurationtypedef)
+
+<a id="latedataruletypedef"></a>
 
 ## LateDataRuleTypeDef
 
@@ -1213,6 +1373,8 @@ Optional fields:
 
 - `ruleName`: `str`
 
+<a id="listchannelsrequestrequesttypedef"></a>
+
 ## ListChannelsRequestRequestTypeDef
 
 ```python
@@ -1223,6 +1385,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listchannelsresponsetypedef"></a>
 
 ## ListChannelsResponseTypeDef
 
@@ -1237,6 +1401,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatasetcontentsrequestrequesttypedef"></a>
 
 ## ListDatasetContentsRequestRequestTypeDef
 
@@ -1255,6 +1421,8 @@ Optional fields:
 - `scheduledOnOrAfter`: `Union`\[`datetime`, `str`\]
 - `scheduledBefore`: `Union`\[`datetime`, `str`\]
 
+<a id="listdatasetcontentsresponsetypedef"></a>
+
 ## ListDatasetContentsResponseTypeDef
 
 ```python
@@ -1269,6 +1437,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetsrequestrequesttypedef"></a>
+
 ## ListDatasetsRequestRequestTypeDef
 
 ```python
@@ -1279,6 +1449,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDatasetsResponseTypeDef
 
@@ -1294,6 +1466,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatastoresrequestrequesttypedef"></a>
+
 ## ListDatastoresRequestRequestTypeDef
 
 ```python
@@ -1304,6 +1478,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatastoresresponsetypedef"></a>
 
 ## ListDatastoresResponseTypeDef
 
@@ -1319,6 +1495,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpipelinesrequestrequesttypedef"></a>
+
 ## ListPipelinesRequestRequestTypeDef
 
 ```python
@@ -1329,6 +1507,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listpipelinesresponsetypedef"></a>
 
 ## ListPipelinesResponseTypeDef
 
@@ -1344,6 +1524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1353,6 +1535,8 @@ from mypy_boto3_iotanalytics.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1366,6 +1550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loggingoptionstypedef"></a>
+
 ## LoggingOptionsTypeDef
 
 ```python
@@ -1378,6 +1564,8 @@ Required fields:
 - `level`: `Literal['ERROR']` (see
   [LoggingLevelType](./literals.md#loggingleveltype))
 - `enabled`: `bool`
+
+<a id="mathactivitytypedef"></a>
 
 ## MathActivityTypeDef
 
@@ -1395,6 +1583,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="messagetypedef"></a>
+
 ## MessageTypeDef
 
 ```python
@@ -1406,6 +1596,8 @@ Required fields:
 - `messageId`: `str`
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="outputfileurivaluetypedef"></a>
+
 ## OutputFileUriValueTypeDef
 
 ```python
@@ -1415,6 +1607,8 @@ from mypy_boto3_iotanalytics.type_defs import OutputFileUriValueTypeDef
 Required fields:
 
 - `fileName`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1428,6 +1622,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parquetconfigurationtypedef"></a>
+
 ## ParquetConfigurationTypeDef
 
 ```python
@@ -1439,6 +1635,8 @@ Optional fields:
 - `schemaDefinition`:
   [SchemaDefinitionTypeDef](./type_defs.md#schemadefinitiontypedef)
 
+<a id="partitiontypedef"></a>
+
 ## PartitionTypeDef
 
 ```python
@@ -1448,6 +1646,8 @@ from mypy_boto3_iotanalytics.type_defs import PartitionTypeDef
 Required fields:
 
 - `attributeName`: `str`
+
+<a id="pipelineactivitytypedef"></a>
 
 ## PipelineActivityTypeDef
 
@@ -1474,6 +1674,8 @@ Optional fields:
 - `deviceShadowEnrich`:
   [DeviceShadowEnrichActivityTypeDef](./type_defs.md#deviceshadowenrichactivitytypedef)
 
+<a id="pipelinesummarytypedef"></a>
+
 ## PipelineSummaryTypeDef
 
 ```python
@@ -1487,6 +1689,8 @@ Optional fields:
   `List`\[[ReprocessingSummaryTypeDef](./type_defs.md#reprocessingsummarytypedef)\]
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
+
+<a id="pipelinetypedef"></a>
 
 ## PipelineTypeDef
 
@@ -1505,6 +1709,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
 
+<a id="putloggingoptionsrequestrequesttypedef"></a>
+
 ## PutLoggingOptionsRequestRequestTypeDef
 
 ```python
@@ -1516,6 +1722,8 @@ Required fields:
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef)
 
+<a id="queryfiltertypedef"></a>
+
 ## QueryFilterTypeDef
 
 ```python
@@ -1525,6 +1733,8 @@ from mypy_boto3_iotanalytics.type_defs import QueryFilterTypeDef
 Optional fields:
 
 - `deltaTime`: [DeltaTimeTypeDef](./type_defs.md#deltatimetypedef)
+
+<a id="removeattributesactivitytypedef"></a>
 
 ## RemoveAttributesActivityTypeDef
 
@@ -1541,6 +1751,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="reprocessingsummarytypedef"></a>
+
 ## ReprocessingSummaryTypeDef
 
 ```python
@@ -1553,6 +1765,8 @@ Optional fields:
 - `status`: [ReprocessingStatusType](./literals.md#reprocessingstatustype)
 - `creationTime`: `datetime`
 
+<a id="resourceconfigurationtypedef"></a>
+
 ## ResourceConfigurationTypeDef
 
 ```python
@@ -1563,6 +1777,8 @@ Required fields:
 
 - `computeType`: [ComputeTypeType](./literals.md#computetypetype)
 - `volumeSizeInGB`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1578,6 +1794,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retentionperiodtypedef"></a>
+
 ## RetentionPeriodTypeDef
 
 ```python
@@ -1588,6 +1806,8 @@ Optional fields:
 
 - `unlimited`: `bool`
 - `numberOfDays`: `int`
+
+<a id="runpipelineactivityrequestrequesttypedef"></a>
 
 ## RunPipelineActivityRequestRequestTypeDef
 
@@ -1602,6 +1822,8 @@ Required fields:
 - `payloads`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
   `StreamingBody`\]\]
 
+<a id="runpipelineactivityresponsetypedef"></a>
+
 ## RunPipelineActivityResponseTypeDef
 
 ```python
@@ -1614,6 +1836,8 @@ Required fields:
 - `logResult`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="s3destinationconfigurationtypedef"></a>
 
 ## S3DestinationConfigurationTypeDef
 
@@ -1632,6 +1856,8 @@ Optional fields:
 - `glueConfiguration`:
   [GlueConfigurationTypeDef](./type_defs.md#glueconfigurationtypedef)
 
+<a id="samplechanneldatarequestrequesttypedef"></a>
+
 ## SampleChannelDataRequestRequestTypeDef
 
 ```python
@@ -1648,6 +1874,8 @@ Optional fields:
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
+<a id="samplechanneldataresponsetypedef"></a>
+
 ## SampleChannelDataResponseTypeDef
 
 ```python
@@ -1660,6 +1888,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="scheduletypedef"></a>
+
 ## ScheduleTypeDef
 
 ```python
@@ -1670,6 +1900,8 @@ Optional fields:
 
 - `expression`: `str`
 
+<a id="schemadefinitiontypedef"></a>
+
 ## SchemaDefinitionTypeDef
 
 ```python
@@ -1679,6 +1911,8 @@ from mypy_boto3_iotanalytics.type_defs import SchemaDefinitionTypeDef
 Optional fields:
 
 - `columns`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
+
+<a id="selectattributesactivitytypedef"></a>
 
 ## SelectAttributesActivityTypeDef
 
@@ -1695,6 +1929,8 @@ Optional fields:
 
 - `next`: `str`
 
+<a id="sqlquerydatasetactiontypedef"></a>
+
 ## SqlQueryDatasetActionTypeDef
 
 ```python
@@ -1709,6 +1945,8 @@ Optional fields:
 
 - `filters`:
   `Sequence`\[[QueryFilterTypeDef](./type_defs.md#queryfiltertypedef)\]
+
+<a id="startpipelinereprocessingrequestrequesttypedef"></a>
 
 ## StartPipelineReprocessingRequestRequestTypeDef
 
@@ -1727,6 +1965,8 @@ Optional fields:
 - `channelMessages`:
   [ChannelMessagesTypeDef](./type_defs.md#channelmessagestypedef)
 
+<a id="startpipelinereprocessingresponsetypedef"></a>
+
 ## StartPipelineReprocessingResponseTypeDef
 
 ```python
@@ -1739,6 +1979,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1750,6 +1992,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1760,6 +2004,8 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="timestamppartitiontypedef"></a>
 
 ## TimestampPartitionTypeDef
 
@@ -1775,6 +2021,8 @@ Optional fields:
 
 - `timestampFormat`: `str`
 
+<a id="triggeringdatasettypedef"></a>
+
 ## TriggeringDatasetTypeDef
 
 ```python
@@ -1784,6 +2032,8 @@ from mypy_boto3_iotanalytics.type_defs import TriggeringDatasetTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1795,6 +2045,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatechannelrequestrequesttypedef"></a>
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -1812,6 +2064,8 @@ Optional fields:
   [ChannelStorageTypeDef](./type_defs.md#channelstoragetypedef)
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
+
+<a id="updatedatasetrequestrequesttypedef"></a>
 
 ## UpdateDatasetRequestRequestTypeDef
 
@@ -1838,6 +2092,8 @@ Optional fields:
 - `lateDataRules`:
   `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
+<a id="updatedatastorerequestrequesttypedef"></a>
+
 ## UpdateDatastoreRequestRequestTypeDef
 
 ```python
@@ -1857,6 +2113,8 @@ Optional fields:
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 
+<a id="updatepipelinerequestrequesttypedef"></a>
+
 ## UpdatePipelineRequestRequestTypeDef
 
 ```python
@@ -1868,6 +2126,8 @@ Required fields:
 - `pipelineName`: `str`
 - `pipelineActivities`:
   `Sequence`\[[PipelineActivityTypeDef](./type_defs.md#pipelineactivitytypedef)\]
+
+<a id="variabletypedef"></a>
 
 ## VariableTypeDef
 
@@ -1887,6 +2147,8 @@ Optional fields:
   [DatasetContentVersionValueTypeDef](./type_defs.md#datasetcontentversionvaluetypedef)
 - `outputFileUriValue`:
   [OutputFileUriValueTypeDef](./type_defs.md#outputfileurivaluetypedef)
+
+<a id="versioningconfigurationtypedef"></a>
 
 ## VersioningConfigurationTypeDef
 

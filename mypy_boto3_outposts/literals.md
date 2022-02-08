@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-outposts-module"></a>
+
 # Literals for boto3 Outposts module
 
 > [Index](..) > [Outposts](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
 type annotations stubs module
-[mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
+[mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 - [Literals for boto3 Outposts module](#literals-for-boto3-outposts-module)
   - [AddressTypeType](#addresstypetype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [UplinkGbpsType](#uplinkgbpstype)
   - [ServiceName](#servicename)
 
+<a id="addresstypetype"></a>
+
 ## AddressTypeType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 
 - `OPERATING_ADDRESS`
 - `SHIPPING_ADDRESS`
+
+<a id="catalogitemclasstype"></a>
 
 ## CatalogItemClassType
 
@@ -51,6 +57,8 @@ Values:
 - `RACK`
 - `SERVER`
 
+<a id="catalogitemstatustype"></a>
+
 ## CatalogItemStatusType
 
 ```python
@@ -62,6 +70,8 @@ Values:
 - `AVAILABLE`
 - `DISCONTINUED`
 
+<a id="fiberopticcabletypetype"></a>
+
 ## FiberOpticCableTypeType
 
 ```python
@@ -72,6 +82,8 @@ Values:
 
 - `MULTI_MODE`
 - `SINGLE_MODE`
+
+<a id="lineitemstatustype"></a>
 
 ## LineItemStatusType
 
@@ -90,6 +102,8 @@ Values:
 - `PREPARING`
 - `SHIPPED`
 
+<a id="maximumsupportedweightlbstype"></a>
+
 ## MaximumSupportedWeightLbsType
 
 ```python
@@ -103,6 +117,8 @@ Values:
 - `MAX_1800_LBS`
 - `MAX_2000_LBS`
 - `NO_LIMIT`
+
+<a id="opticalstandardtype"></a>
 
 ## OpticalStandardType
 
@@ -126,6 +142,8 @@ Values:
 - `OPTIC_40GBASE_LR4`
 - `OPTIC_40GBASE_SR`
 
+<a id="orderstatustype"></a>
+
 ## OrderStatusType
 
 ```python
@@ -145,6 +163,8 @@ Values:
 - `PROCESSING`
 - `RECEIVED`
 
+<a id="ordertypetype"></a>
+
 ## OrderTypeType
 
 ```python
@@ -155,6 +175,8 @@ Values:
 
 - `OUTPOST`
 - `REPLACEMENT`
+
+<a id="paymentoptiontype"></a>
 
 ## PaymentOptionType
 
@@ -168,6 +190,8 @@ Values:
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
 
+<a id="paymenttermtype"></a>
+
 ## PaymentTermType
 
 ```python
@@ -177,6 +201,8 @@ from mypy_boto3_outposts.literals import PaymentTermType
 Values:
 
 - `THREE_YEARS`
+
+<a id="powerconnectortype"></a>
 
 ## PowerConnectorType
 
@@ -191,6 +217,8 @@ Values:
 - `IEC309`
 - `L6_30P`
 
+<a id="powerdrawkvatype"></a>
+
 ## PowerDrawKvaType
 
 ```python
@@ -203,6 +231,8 @@ Values:
 - `POWER_15_KVA`
 - `POWER_5_KVA`
 
+<a id="powerfeeddroptype"></a>
+
 ## PowerFeedDropType
 
 ```python
@@ -213,6 +243,8 @@ Values:
 
 - `ABOVE_RACK`
 - `BELOW_RACK`
+
+<a id="powerphasetype"></a>
 
 ## PowerPhaseType
 
@@ -225,6 +257,8 @@ Values:
 - `SINGLE_PHASE`
 - `THREE_PHASE`
 
+<a id="supportedhardwaretypetype"></a>
+
 ## SupportedHardwareTypeType
 
 ```python
@@ -236,6 +270,8 @@ Values:
 - `RACK`
 - `SERVER`
 
+<a id="supportedstorageenumtype"></a>
+
 ## SupportedStorageEnumType
 
 ```python
@@ -246,6 +282,8 @@ Values:
 
 - `EBS`
 - `S3`
+
+<a id="uplinkcounttype"></a>
 
 ## UplinkCountType
 
@@ -266,6 +304,8 @@ Values:
 - `UPLINK_COUNT_7`
 - `UPLINK_COUNT_8`
 
+<a id="uplinkgbpstype"></a>
+
 ## UplinkGbpsType
 
 ```python
@@ -278,6 +318,8 @@ Values:
 - `UPLINK_10G`
 - `UPLINK_1G`
 - `UPLINK_40G`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

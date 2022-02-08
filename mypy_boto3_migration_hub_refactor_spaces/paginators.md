@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-migrationhubrefactorspaces-module"></a>
+
 # Paginators for boto3 MigrationHubRefactorSpaces module
 
 > [Index](..) > [MigrationHubRefactorSpaces](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
 type annotations stubs module
-[mypy_boto3_migration_hub_refactor_spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
+[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 - [Paginators for boto3 MigrationHubRefactorSpaces module](#paginators-for-boto3-migrationhubrefactorspaces-module)
   - [ListApplicationsPaginator](#listapplicationspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListEnvironmentsPaginator](#listenvironmentspaginator)
   - [ListRoutesPaginator](#listroutespaginator)
   - [ListServicesPaginator](#listservicespaginator)
+
+<a id="listapplicationspaginator"></a>
 
 ## ListApplicationsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
-    return boto3.client("migration-hub-refactor-spaces").get_paginator("list_applications")
+    return Session().client("migration-hub-refactor-spaces").get_paginator("list_applications")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListApplicationsPaginator.paginate` method:
 `ListApplicationsPaginator.paginate` returns
 `_PageIterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
 
+<a id="listenvironmentvpcspaginator"></a>
+
 ## ListEnvironmentVpcsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentVpcsPaginator
 
 def get_list_environment_vpcs_paginator() -> ListEnvironmentVpcsPaginator:
-    return boto3.client("migration-hub-refactor-spaces").get_paginator("list_environment_vpcs")
+    return Session().client("migration-hub-refactor-spaces").get_paginator("list_environment_vpcs")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListEnvironmentVpcsPaginator.paginate` method:
 `ListEnvironmentVpcsPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentVpcsResponseTypeDef](./type_defs.md#listenvironmentvpcsresponsetypedef)\].
 
+<a id="listenvironmentspaginator"></a>
+
 ## ListEnvironmentsPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListEnvironmentsPaginator
 
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
-    return boto3.client("migration-hub-refactor-spaces").get_paginator("list_environments")
+    return Session().client("migration-hub-refactor-spaces").get_paginator("list_environments")
 ```
 
 Boto3 documentation:
@@ -91,6 +105,8 @@ Arguments for `ListEnvironmentsPaginator.paginate` method:
 `ListEnvironmentsPaginator.paginate` returns
 `_PageIterator`\[[ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef)\].
 
+<a id="listroutespaginator"></a>
+
 ## ListRoutesPaginator
 
 Type annotations for
@@ -99,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListRoutesPaginator
 
 def get_list_routes_paginator() -> ListRoutesPaginator:
-    return boto3.client("migration-hub-refactor-spaces").get_paginator("list_routes")
+    return Session().client("migration-hub-refactor-spaces").get_paginator("list_routes")
 ```
 
 Boto3 documentation:
@@ -118,6 +136,8 @@ Arguments for `ListRoutesPaginator.paginate` method:
 `ListRoutesPaginator.paginate` returns
 `_PageIterator`\[[ListRoutesResponseTypeDef](./type_defs.md#listroutesresponsetypedef)\].
 
+<a id="listservicespaginator"></a>
+
 ## ListServicesPaginator
 
 Type annotations for
@@ -126,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_migration_hub_refactor_spaces.paginator import ListServicesPaginator
 
 def get_list_services_paginator() -> ListServicesPaginator:
-    return boto3.client("migration-hub-refactor-spaces").get_paginator("list_services")
+    return Session().client("migration-hub-refactor-spaces").get_paginator("list_services")
 ```
 
 Boto3 documentation:

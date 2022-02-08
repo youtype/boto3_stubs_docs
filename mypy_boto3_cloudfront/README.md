@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudfront-module"></a>
+
 # Type annotations for boto3 CloudFront module
 
 > [Index](..) > CloudFront
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
-[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloudfront]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloudfront]'
+
+# standalone installation
 pip install mypy-boto3-cloudfront
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-cloudfront
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudfrontclient"></a>
+
 ## CloudFrontClient
 
 Type annotations for `boto3.client("cloudfront")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloudfront.client import CloudFrontClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -130,6 +144,8 @@ from mypy_boto3_cloudfront.client import CloudFrontClient
 - [update_realtime_log_config](./client.md#update_realtime_log_config)
 - [update_response_headers_policy](./client.md#update_response_headers_policy)
 - [update_streaming_distribution](./client.md#update_streaming_distribution)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -264,6 +280,8 @@ CloudFrontClient [exceptions](./client.md#exceptions)
 - TrustedSignerDoesNotExist
 - UnsupportedOperation
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -272,13 +290,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.paginators import ListCloudFrontOriginAccessIdentitiesPaginator, ...
+from mypy_boto3_cloudfront.paginator import ListCloudFrontOriginAccessIdentitiesPaginator, ...
 ```
 
 - [ListCloudFrontOriginAccessIdentitiesPaginator](./paginators.md#listcloudfrontoriginaccessidentitiespaginator)
 - [ListDistributionsPaginator](./paginators.md#listdistributionspaginator)
 - [ListInvalidationsPaginator](./paginators.md#listinvalidationspaginator)
 - [ListStreamingDistributionsPaginator](./paginators.md#liststreamingdistributionspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -288,12 +308,14 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudfront.waiters import DistributionDeployedWaiter, ...
+from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter, ...
 ```
 
 - [DistributionDeployedWaiter](./waiters.md#distributiondeployedwaiter)
 - [InvalidationCompletedWaiter](./waiters.md#invalidationcompletedwaiter)
 - [StreamingDistributionDeployedWaiter](./waiters.md#streamingdistributiondeployedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -344,6 +366,8 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kendra-module"></a>
+
 # Typed dictionaries for boto3 kendra module
 
 > [Index](..) > [kendra](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
-[mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
+[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 - [Typed dictionaries for boto3 kendra module](#typed-dictionaries-for-boto3-kendra-module)
   - [AccessControlListConfigurationTypeDef](#accesscontrollistconfigurationtypedef)
@@ -218,6 +220,8 @@ type annotations stubs module
   - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
   - [WorkDocsConfigurationTypeDef](#workdocsconfigurationtypedef)
 
+<a id="accesscontrollistconfigurationtypedef"></a>
+
 ## AccessControlListConfigurationTypeDef
 
 ```python
@@ -228,6 +232,8 @@ Optional fields:
 
 - `KeyPath`: `str`
 
+<a id="aclconfigurationtypedef"></a>
+
 ## AclConfigurationTypeDef
 
 ```python
@@ -237,6 +243,8 @@ from mypy_boto3_kendra.type_defs import AclConfigurationTypeDef
 Required fields:
 
 - `AllowedGroupsColumnName`: `str`
+
+<a id="additionalresultattributetypedef"></a>
 
 ## AdditionalResultAttributeTypeDef
 
@@ -252,6 +260,8 @@ Required fields:
 - `Value`:
   [AdditionalResultAttributeValueTypeDef](./type_defs.md#additionalresultattributevaluetypedef)
 
+<a id="additionalresultattributevaluetypedef"></a>
+
 ## AdditionalResultAttributeValueTypeDef
 
 ```python
@@ -262,6 +272,8 @@ Optional fields:
 
 - `TextWithHighlightsValue`:
   [TextWithHighlightsTypeDef](./type_defs.md#textwithhighlightstypedef)
+
+<a id="associateentitiestoexperiencerequestrequesttypedef"></a>
 
 ## AssociateEntitiesToExperienceRequestRequestTypeDef
 
@@ -276,6 +288,8 @@ Required fields:
 - `EntityList`:
   `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
 
+<a id="associateentitiestoexperienceresponsetypedef"></a>
+
 ## AssociateEntitiesToExperienceResponseTypeDef
 
 ```python
@@ -288,6 +302,8 @@ Required fields:
   `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associatepersonastoentitiesrequestrequesttypedef"></a>
 
 ## AssociatePersonasToEntitiesRequestRequestTypeDef
 
@@ -302,6 +318,8 @@ Required fields:
 - `Personas`:
   `Sequence`\[[EntityPersonaConfigurationTypeDef](./type_defs.md#entitypersonaconfigurationtypedef)\]
 
+<a id="associatepersonastoentitiesresponsetypedef"></a>
+
 ## AssociatePersonasToEntitiesResponseTypeDef
 
 ```python
@@ -314,6 +332,8 @@ Required fields:
   `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="attributefiltertypedef"></a>
 
 ## AttributeFilterTypeDef
 
@@ -343,6 +363,8 @@ Optional fields:
 - `LessThanOrEquals`:
   [DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)
 
+<a id="authenticationconfigurationtypedef"></a>
+
 ## AuthenticationConfigurationTypeDef
 
 ```python
@@ -353,6 +375,8 @@ Optional fields:
 
 - `BasicAuthentication`:
   `Sequence`\[[BasicAuthenticationConfigurationTypeDef](./type_defs.md#basicauthenticationconfigurationtypedef)\]
+
+<a id="basicauthenticationconfigurationtypedef"></a>
 
 ## BasicAuthenticationConfigurationTypeDef
 
@@ -365,6 +389,8 @@ Required fields:
 - `Host`: `str`
 - `Port`: `int`
 - `Credentials`: `str`
+
+<a id="batchdeletedocumentrequestrequesttypedef"></a>
 
 ## BatchDeleteDocumentRequestRequestTypeDef
 
@@ -382,6 +408,8 @@ Optional fields:
 - `DataSourceSyncJobMetricTarget`:
   [DataSourceSyncJobMetricTargetTypeDef](./type_defs.md#datasourcesyncjobmetrictargettypedef)
 
+<a id="batchdeletedocumentresponsefaileddocumenttypedef"></a>
+
 ## BatchDeleteDocumentResponseFailedDocumentTypeDef
 
 ```python
@@ -393,6 +421,8 @@ Optional fields:
 - `Id`: `str`
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="batchdeletedocumentresponsetypedef"></a>
 
 ## BatchDeleteDocumentResponseTypeDef
 
@@ -407,6 +437,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetdocumentstatusrequestrequesttypedef"></a>
+
 ## BatchGetDocumentStatusRequestRequestTypeDef
 
 ```python
@@ -419,6 +451,8 @@ Required fields:
 - `DocumentInfoList`:
   `Sequence`\[[DocumentInfoTypeDef](./type_defs.md#documentinfotypedef)\]
 
+<a id="batchgetdocumentstatusresponseerrortypedef"></a>
+
 ## BatchGetDocumentStatusResponseErrorTypeDef
 
 ```python
@@ -430,6 +464,8 @@ Optional fields:
 - `DocumentId`: `str`
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="batchgetdocumentstatusresponsetypedef"></a>
 
 ## BatchGetDocumentStatusResponseTypeDef
 
@@ -444,6 +480,8 @@ Required fields:
 - `DocumentStatusList`: `List`\[[StatusTypeDef](./type_defs.md#statustypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchputdocumentrequestrequesttypedef"></a>
 
 ## BatchPutDocumentRequestRequestTypeDef
 
@@ -462,6 +500,8 @@ Optional fields:
 - `CustomDocumentEnrichmentConfiguration`:
   [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
+<a id="batchputdocumentresponsefaileddocumenttypedef"></a>
+
 ## BatchPutDocumentResponseFailedDocumentTypeDef
 
 ```python
@@ -473,6 +513,8 @@ Optional fields:
 - `Id`: `str`
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="batchputdocumentresponsetypedef"></a>
 
 ## BatchPutDocumentResponseTypeDef
 
@@ -487,6 +529,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="capacityunitsconfigurationtypedef"></a>
+
 ## CapacityUnitsConfigurationTypeDef
 
 ```python
@@ -498,6 +542,8 @@ Required fields:
 - `StorageCapacityUnits`: `int`
 - `QueryCapacityUnits`: `int`
 
+<a id="clearquerysuggestionsrequestrequesttypedef"></a>
+
 ## ClearQuerySuggestionsRequestRequestTypeDef
 
 ```python
@@ -507,6 +553,8 @@ from mypy_boto3_kendra.type_defs import ClearQuerySuggestionsRequestRequestTypeD
 Required fields:
 
 - `IndexId`: `str`
+
+<a id="clickfeedbacktypedef"></a>
 
 ## ClickFeedbackTypeDef
 
@@ -518,6 +566,8 @@ Required fields:
 
 - `ResultId`: `str`
 - `ClickTime`: `Union`\[`datetime`, `str`\]
+
+<a id="columnconfigurationtypedef"></a>
 
 ## ColumnConfigurationTypeDef
 
@@ -537,6 +587,8 @@ Optional fields:
 - `FieldMappings`:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
+<a id="confluenceattachmentconfigurationtypedef"></a>
+
 ## ConfluenceAttachmentConfigurationTypeDef
 
 ```python
@@ -548,6 +600,8 @@ Optional fields:
 - `CrawlAttachments`: `bool`
 - `AttachmentFieldMappings`:
   `Sequence`\[[ConfluenceAttachmentToIndexFieldMappingTypeDef](./type_defs.md#confluenceattachmenttoindexfieldmappingtypedef)\]
+
+<a id="confluenceattachmenttoindexfieldmappingtypedef"></a>
 
 ## ConfluenceAttachmentToIndexFieldMappingTypeDef
 
@@ -562,6 +616,8 @@ Optional fields:
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
 
+<a id="confluenceblogconfigurationtypedef"></a>
+
 ## ConfluenceBlogConfigurationTypeDef
 
 ```python
@@ -572,6 +628,8 @@ Optional fields:
 
 - `BlogFieldMappings`:
   `Sequence`\[[ConfluenceBlogToIndexFieldMappingTypeDef](./type_defs.md#confluenceblogtoindexfieldmappingtypedef)\]
+
+<a id="confluenceblogtoindexfieldmappingtypedef"></a>
 
 ## ConfluenceBlogToIndexFieldMappingTypeDef
 
@@ -585,6 +643,8 @@ Optional fields:
   [ConfluenceBlogFieldNameType](./literals.md#confluenceblogfieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
+
+<a id="confluenceconfigurationtypedef"></a>
 
 ## ConfluenceConfigurationTypeDef
 
@@ -613,6 +673,8 @@ Optional fields:
 - `InclusionPatterns`: `Sequence`\[`str`\]
 - `ExclusionPatterns`: `Sequence`\[`str`\]
 
+<a id="confluencepageconfigurationtypedef"></a>
+
 ## ConfluencePageConfigurationTypeDef
 
 ```python
@@ -623,6 +685,8 @@ Optional fields:
 
 - `PageFieldMappings`:
   `Sequence`\[[ConfluencePageToIndexFieldMappingTypeDef](./type_defs.md#confluencepagetoindexfieldmappingtypedef)\]
+
+<a id="confluencepagetoindexfieldmappingtypedef"></a>
 
 ## ConfluencePageToIndexFieldMappingTypeDef
 
@@ -636,6 +700,8 @@ Optional fields:
   [ConfluencePageFieldNameType](./literals.md#confluencepagefieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
+
+<a id="confluencespaceconfigurationtypedef"></a>
 
 ## ConfluenceSpaceConfigurationTypeDef
 
@@ -652,6 +718,8 @@ Optional fields:
 - `SpaceFieldMappings`:
   `Sequence`\[[ConfluenceSpaceToIndexFieldMappingTypeDef](./type_defs.md#confluencespacetoindexfieldmappingtypedef)\]
 
+<a id="confluencespacetoindexfieldmappingtypedef"></a>
+
 ## ConfluenceSpaceToIndexFieldMappingTypeDef
 
 ```python
@@ -664,6 +732,8 @@ Optional fields:
   [ConfluenceSpaceFieldNameType](./literals.md#confluencespacefieldnametype)
 - `DateFieldFormat`: `str`
 - `IndexFieldName`: `str`
+
+<a id="connectionconfigurationtypedef"></a>
 
 ## ConnectionConfigurationTypeDef
 
@@ -679,6 +749,8 @@ Required fields:
 - `TableName`: `str`
 - `SecretArn`: `str`
 
+<a id="contentsourceconfigurationtypedef"></a>
+
 ## ContentSourceConfigurationTypeDef
 
 ```python
@@ -690,6 +762,8 @@ Optional fields:
 - `DataSourceIds`: `Sequence`\[`str`\]
 - `FaqIds`: `Sequence`\[`str`\]
 - `DirectPutContent`: `bool`
+
+<a id="createdatasourcerequestrequesttypedef"></a>
 
 ## CreateDataSourceRequestRequestTypeDef
 
@@ -716,6 +790,8 @@ Optional fields:
 - `CustomDocumentEnrichmentConfiguration`:
   [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
+<a id="createdatasourceresponsetypedef"></a>
+
 ## CreateDataSourceResponseTypeDef
 
 ```python
@@ -727,6 +803,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createexperiencerequestrequesttypedef"></a>
 
 ## CreateExperienceRequestRequestTypeDef
 
@@ -747,6 +825,8 @@ Optional fields:
 - `Description`: `str`
 - `ClientToken`: `str`
 
+<a id="createexperienceresponsetypedef"></a>
+
 ## CreateExperienceResponseTypeDef
 
 ```python
@@ -758,6 +838,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfaqrequestrequesttypedef"></a>
 
 ## CreateFaqRequestRequestTypeDef
 
@@ -780,6 +862,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `LanguageCode`: `str`
 
+<a id="createfaqresponsetypedef"></a>
+
 ## CreateFaqResponseTypeDef
 
 ```python
@@ -791,6 +875,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createindexrequestrequesttypedef"></a>
 
 ## CreateIndexRequestRequestTypeDef
 
@@ -818,6 +904,8 @@ Optional fields:
 - `UserGroupResolutionConfiguration`:
   [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
+<a id="createindexresponsetypedef"></a>
+
 ## CreateIndexResponseTypeDef
 
 ```python
@@ -829,6 +917,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createquerysuggestionsblocklistrequestrequesttypedef"></a>
 
 ## CreateQuerySuggestionsBlockListRequestRequestTypeDef
 
@@ -849,6 +939,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createquerysuggestionsblocklistresponsetypedef"></a>
+
 ## CreateQuerySuggestionsBlockListResponseTypeDef
 
 ```python
@@ -860,6 +952,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createthesaurusrequestrequesttypedef"></a>
 
 ## CreateThesaurusRequestRequestTypeDef
 
@@ -880,6 +974,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
+<a id="createthesaurusresponsetypedef"></a>
+
 ## CreateThesaurusResponseTypeDef
 
 ```python
@@ -891,6 +987,8 @@ Required fields:
 - `Id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customdocumentenrichmentconfigurationtypedef"></a>
 
 ## CustomDocumentEnrichmentConfigurationTypeDef
 
@@ -907,6 +1005,8 @@ Optional fields:
 - `PostExtractionHookConfiguration`:
   [HookConfigurationTypeDef](./type_defs.md#hookconfigurationtypedef)
 - `RoleArn`: `str`
+
+<a id="datasourceconfigurationtypedef"></a>
 
 ## DataSourceConfigurationTypeDef
 
@@ -937,6 +1037,8 @@ Optional fields:
 - `WorkDocsConfiguration`:
   [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
 
+<a id="datasourcegrouptypedef"></a>
+
 ## DataSourceGroupTypeDef
 
 ```python
@@ -947,6 +1049,8 @@ Required fields:
 
 - `GroupId`: `str`
 - `DataSourceId`: `str`
+
+<a id="datasourcesummarytypedef"></a>
 
 ## DataSourceSummaryTypeDef
 
@@ -964,6 +1068,8 @@ Optional fields:
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 - `LanguageCode`: `str`
 
+<a id="datasourcesyncjobmetrictargettypedef"></a>
+
 ## DataSourceSyncJobMetricTargetTypeDef
 
 ```python
@@ -978,6 +1084,8 @@ Optional fields:
 
 - `DataSourceSyncJobId`: `str`
 
+<a id="datasourcesyncjobmetricstypedef"></a>
+
 ## DataSourceSyncJobMetricsTypeDef
 
 ```python
@@ -991,6 +1099,8 @@ Optional fields:
 - `DocumentsDeleted`: `str`
 - `DocumentsFailed`: `str`
 - `DocumentsScanned`: `str`
+
+<a id="datasourcesyncjobtypedef"></a>
 
 ## DataSourceSyncJobTypeDef
 
@@ -1011,6 +1121,8 @@ Optional fields:
 - `Metrics`:
   [DataSourceSyncJobMetricsTypeDef](./type_defs.md#datasourcesyncjobmetricstypedef)
 
+<a id="datasourcetoindexfieldmappingtypedef"></a>
+
 ## DataSourceToIndexFieldMappingTypeDef
 
 ```python
@@ -1026,6 +1138,8 @@ Optional fields:
 
 - `DateFieldFormat`: `str`
 
+<a id="datasourcevpcconfigurationtypedef"></a>
+
 ## DataSourceVpcConfigurationTypeDef
 
 ```python
@@ -1036,6 +1150,8 @@ Required fields:
 
 - `SubnetIds`: `Sequence`\[`str`\]
 - `SecurityGroupIds`: `Sequence`\[`str`\]
+
+<a id="databaseconfigurationtypedef"></a>
 
 ## DatabaseConfigurationTypeDef
 
@@ -1061,6 +1177,8 @@ Optional fields:
 - `SqlConfiguration`:
   [SqlConfigurationTypeDef](./type_defs.md#sqlconfigurationtypedef)
 
+<a id="deletedatasourcerequestrequesttypedef"></a>
+
 ## DeleteDataSourceRequestRequestTypeDef
 
 ```python
@@ -1071,6 +1189,8 @@ Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
+
+<a id="deleteexperiencerequestrequesttypedef"></a>
 
 ## DeleteExperienceRequestRequestTypeDef
 
@@ -1083,6 +1203,8 @@ Required fields:
 - `Id`: `str`
 - `IndexId`: `str`
 
+<a id="deletefaqrequestrequesttypedef"></a>
+
 ## DeleteFaqRequestRequestTypeDef
 
 ```python
@@ -1094,6 +1216,8 @@ Required fields:
 - `Id`: `str`
 - `IndexId`: `str`
 
+<a id="deleteindexrequestrequesttypedef"></a>
+
 ## DeleteIndexRequestRequestTypeDef
 
 ```python
@@ -1103,6 +1227,8 @@ from mypy_boto3_kendra.type_defs import DeleteIndexRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="deleteprincipalmappingrequestrequesttypedef"></a>
 
 ## DeletePrincipalMappingRequestRequestTypeDef
 
@@ -1120,6 +1246,8 @@ Optional fields:
 - `DataSourceId`: `str`
 - `OrderingId`: `int`
 
+<a id="deletequerysuggestionsblocklistrequestrequesttypedef"></a>
+
 ## DeleteQuerySuggestionsBlockListRequestRequestTypeDef
 
 ```python
@@ -1130,6 +1258,8 @@ Required fields:
 
 - `IndexId`: `str`
 - `Id`: `str`
+
+<a id="deletethesaurusrequestrequesttypedef"></a>
 
 ## DeleteThesaurusRequestRequestTypeDef
 
@@ -1142,6 +1272,8 @@ Required fields:
 - `Id`: `str`
 - `IndexId`: `str`
 
+<a id="describedatasourcerequestrequesttypedef"></a>
+
 ## DescribeDataSourceRequestRequestTypeDef
 
 ```python
@@ -1152,6 +1284,8 @@ Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
+
+<a id="describedatasourceresponsetypedef"></a>
 
 ## DescribeDataSourceResponseTypeDef
 
@@ -1180,6 +1314,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexperiencerequestrequesttypedef"></a>
+
 ## DescribeExperienceRequestRequestTypeDef
 
 ```python
@@ -1190,6 +1326,8 @@ Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
+
+<a id="describeexperienceresponsetypedef"></a>
 
 ## DescribeExperienceResponseTypeDef
 
@@ -1215,6 +1353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefaqrequestrequesttypedef"></a>
+
 ## DescribeFaqRequestRequestTypeDef
 
 ```python
@@ -1225,6 +1365,8 @@ Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
+
+<a id="describefaqresponsetypedef"></a>
 
 ## DescribeFaqResponseTypeDef
 
@@ -1249,6 +1391,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeindexrequestrequesttypedef"></a>
+
 ## DescribeIndexRequestRequestTypeDef
 
 ```python
@@ -1258,6 +1402,8 @@ from mypy_boto3_kendra.type_defs import DescribeIndexRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="describeindexresponsetypedef"></a>
 
 ## DescribeIndexResponseTypeDef
 
@@ -1293,6 +1439,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprincipalmappingrequestrequesttypedef"></a>
+
 ## DescribePrincipalMappingRequestRequestTypeDef
 
 ```python
@@ -1307,6 +1455,8 @@ Required fields:
 Optional fields:
 
 - `DataSourceId`: `str`
+
+<a id="describeprincipalmappingresponsetypedef"></a>
 
 ## DescribePrincipalMappingResponseTypeDef
 
@@ -1324,6 +1474,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describequerysuggestionsblocklistrequestrequesttypedef"></a>
+
 ## DescribeQuerySuggestionsBlockListRequestRequestTypeDef
 
 ```python
@@ -1334,6 +1486,8 @@ Required fields:
 
 - `IndexId`: `str`
 - `Id`: `str`
+
+<a id="describequerysuggestionsblocklistresponsetypedef"></a>
 
 ## DescribeQuerySuggestionsBlockListResponseTypeDef
 
@@ -1359,6 +1513,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describequerysuggestionsconfigrequestrequesttypedef"></a>
+
 ## DescribeQuerySuggestionsConfigRequestRequestTypeDef
 
 ```python
@@ -1368,6 +1524,8 @@ from mypy_boto3_kendra.type_defs import DescribeQuerySuggestionsConfigRequestReq
 Required fields:
 
 - `IndexId`: `str`
+
+<a id="describequerysuggestionsconfigresponsetypedef"></a>
 
 ## DescribeQuerySuggestionsConfigResponseTypeDef
 
@@ -1390,6 +1548,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describethesaurusrequestrequesttypedef"></a>
+
 ## DescribeThesaurusRequestRequestTypeDef
 
 ```python
@@ -1400,6 +1560,8 @@ Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
+
+<a id="describethesaurusresponsetypedef"></a>
 
 ## DescribeThesaurusResponseTypeDef
 
@@ -1425,6 +1587,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateentitiesfromexperiencerequestrequesttypedef"></a>
+
 ## DisassociateEntitiesFromExperienceRequestRequestTypeDef
 
 ```python
@@ -1437,6 +1601,8 @@ Required fields:
 - `IndexId`: `str`
 - `EntityList`:
   `Sequence`\[[EntityConfigurationTypeDef](./type_defs.md#entityconfigurationtypedef)\]
+
+<a id="disassociateentitiesfromexperienceresponsetypedef"></a>
 
 ## DisassociateEntitiesFromExperienceResponseTypeDef
 
@@ -1451,6 +1617,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatepersonasfromentitiesrequestrequesttypedef"></a>
+
 ## DisassociatePersonasFromEntitiesRequestRequestTypeDef
 
 ```python
@@ -1462,6 +1630,8 @@ Required fields:
 - `Id`: `str`
 - `IndexId`: `str`
 - `EntityIds`: `Sequence`\[`str`\]
+
+<a id="disassociatepersonasfromentitiesresponsetypedef"></a>
 
 ## DisassociatePersonasFromEntitiesResponseTypeDef
 
@@ -1475,6 +1645,8 @@ Required fields:
   `List`\[[FailedEntityTypeDef](./type_defs.md#failedentitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="documentattributeconditiontypedef"></a>
 
 ## DocumentAttributeConditionTypeDef
 
@@ -1492,6 +1664,8 @@ Optional fields:
 - `ConditionOnValue`:
   [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
 
+<a id="documentattributetargettypedef"></a>
+
 ## DocumentAttributeTargetTypeDef
 
 ```python
@@ -1505,6 +1679,8 @@ Optional fields:
 - `TargetDocumentAttributeValue`:
   [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
 
+<a id="documentattributetypedef"></a>
+
 ## DocumentAttributeTypeDef
 
 ```python
@@ -1516,6 +1692,8 @@ Required fields:
 - `Key`: `str`
 - `Value`:
   [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
+
+<a id="documentattributevaluecountpairtypedef"></a>
 
 ## DocumentAttributeValueCountPairTypeDef
 
@@ -1529,6 +1707,8 @@ Optional fields:
   [DocumentAttributeValueTypeDef](./type_defs.md#documentattributevaluetypedef)
 - `Count`: `int`
 
+<a id="documentattributevaluetypedef"></a>
+
 ## DocumentAttributeValueTypeDef
 
 ```python
@@ -1541,6 +1721,8 @@ Optional fields:
 - `StringListValue`: `Sequence`\[`str`\]
 - `LongValue`: `int`
 - `DateValue`: `Union`\[`datetime`, `str`\]
+
+<a id="documentinfotypedef"></a>
 
 ## DocumentInfoTypeDef
 
@@ -1556,6 +1738,8 @@ Optional fields:
 
 - `Attributes`:
   `Sequence`\[[DocumentAttributeTypeDef](./type_defs.md#documentattributetypedef)\]
+
+<a id="documentmetadataconfigurationtypedef"></a>
 
 ## DocumentMetadataConfigurationTypeDef
 
@@ -1574,6 +1758,8 @@ Optional fields:
 - `Relevance`: [RelevanceTypeDef](./type_defs.md#relevancetypedef)
 - `Search`: [SearchTypeDef](./type_defs.md#searchtypedef)
 
+<a id="documentrelevanceconfigurationtypedef"></a>
+
 ## DocumentRelevanceConfigurationTypeDef
 
 ```python
@@ -1584,6 +1770,8 @@ Required fields:
 
 - `Name`: `str`
 - `Relevance`: [RelevanceTypeDef](./type_defs.md#relevancetypedef)
+
+<a id="documenttypedef"></a>
 
 ## DocumentTypeDef
 
@@ -1608,6 +1796,8 @@ Optional fields:
   `Sequence`\[[HierarchicalPrincipalTypeDef](./type_defs.md#hierarchicalprincipaltypedef)\]
 - `ContentType`: [ContentTypeType](./literals.md#contenttypetype)
 
+<a id="documentsmetadataconfigurationtypedef"></a>
+
 ## DocumentsMetadataConfigurationTypeDef
 
 ```python
@@ -1617,6 +1807,8 @@ from mypy_boto3_kendra.type_defs import DocumentsMetadataConfigurationTypeDef
 Optional fields:
 
 - `S3Prefix`: `str`
+
+<a id="entityconfigurationtypedef"></a>
 
 ## EntityConfigurationTypeDef
 
@@ -1628,6 +1820,8 @@ Required fields:
 
 - `EntityId`: `str`
 - `EntityType`: [EntityTypeType](./literals.md#entitytypetype)
+
+<a id="entitydisplaydatatypedef"></a>
 
 ## EntityDisplayDataTypeDef
 
@@ -1643,6 +1837,8 @@ Optional fields:
 - `FirstName`: `str`
 - `LastName`: `str`
 
+<a id="entitypersonaconfigurationtypedef"></a>
+
 ## EntityPersonaConfigurationTypeDef
 
 ```python
@@ -1653,6 +1849,8 @@ Required fields:
 
 - `EntityId`: `str`
 - `Persona`: [PersonaType](./literals.md#personatype)
+
+<a id="experienceconfigurationtypedef"></a>
 
 ## ExperienceConfigurationTypeDef
 
@@ -1667,6 +1865,8 @@ Optional fields:
 - `UserIdentityConfiguration`:
   [UserIdentityConfigurationTypeDef](./type_defs.md#useridentityconfigurationtypedef)
 
+<a id="experienceendpointtypedef"></a>
+
 ## ExperienceEndpointTypeDef
 
 ```python
@@ -1678,6 +1878,8 @@ Optional fields:
 - `EndpointType`: `Literal['HOME']` (see
   [EndpointTypeType](./literals.md#endpointtypetype))
 - `Endpoint`: `str`
+
+<a id="experienceentitiessummarytypedef"></a>
 
 ## ExperienceEntitiesSummaryTypeDef
 
@@ -1691,6 +1893,8 @@ Optional fields:
 - `EntityType`: [EntityTypeType](./literals.md#entitytypetype)
 - `DisplayData`:
   [EntityDisplayDataTypeDef](./type_defs.md#entitydisplaydatatypedef)
+
+<a id="experiencessummarytypedef"></a>
 
 ## ExperiencesSummaryTypeDef
 
@@ -1707,6 +1911,8 @@ Optional fields:
 - `Endpoints`:
   `List`\[[ExperienceEndpointTypeDef](./type_defs.md#experienceendpointtypedef)\]
 
+<a id="facetresulttypedef"></a>
+
 ## FacetResultTypeDef
 
 ```python
@@ -1721,6 +1927,8 @@ Optional fields:
 - `DocumentAttributeValueCountPairs`:
   `List`\[[DocumentAttributeValueCountPairTypeDef](./type_defs.md#documentattributevaluecountpairtypedef)\]
 
+<a id="facettypedef"></a>
+
 ## FacetTypeDef
 
 ```python
@@ -1730,6 +1938,8 @@ from mypy_boto3_kendra.type_defs import FacetTypeDef
 Optional fields:
 
 - `DocumentAttributeKey`: `str`
+
+<a id="failedentitytypedef"></a>
 
 ## FailedEntityTypeDef
 
@@ -1742,6 +1952,8 @@ Optional fields:
 - `EntityId`: `str`
 - `ErrorMessage`: `str`
 
+<a id="faqstatisticstypedef"></a>
+
 ## FaqStatisticsTypeDef
 
 ```python
@@ -1751,6 +1963,8 @@ from mypy_boto3_kendra.type_defs import FaqStatisticsTypeDef
 Required fields:
 
 - `IndexedQuestionAnswersCount`: `int`
+
+<a id="faqsummarytypedef"></a>
 
 ## FaqSummaryTypeDef
 
@@ -1768,6 +1982,8 @@ Optional fields:
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `LanguageCode`: `str`
 
+<a id="getquerysuggestionsrequestrequesttypedef"></a>
+
 ## GetQuerySuggestionsRequestRequestTypeDef
 
 ```python
@@ -1783,6 +1999,8 @@ Optional fields:
 
 - `MaxSuggestionsCount`: `int`
 
+<a id="getquerysuggestionsresponsetypedef"></a>
+
 ## GetQuerySuggestionsResponseTypeDef
 
 ```python
@@ -1796,6 +2014,8 @@ Required fields:
   `List`\[[SuggestionTypeDef](./type_defs.md#suggestiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsnapshotsrequestrequesttypedef"></a>
 
 ## GetSnapshotsRequestRequestTypeDef
 
@@ -1814,6 +2034,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getsnapshotsresponsetypedef"></a>
+
 ## GetSnapshotsResponseTypeDef
 
 ```python
@@ -1828,6 +2050,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="googledriveconfigurationtypedef"></a>
 
 ## GoogleDriveConfigurationTypeDef
 
@@ -1849,6 +2073,8 @@ Optional fields:
 - `ExcludeUserAccounts`: `Sequence`\[`str`\]
 - `ExcludeSharedDrives`: `Sequence`\[`str`\]
 
+<a id="groupmemberstypedef"></a>
+
 ## GroupMembersTypeDef
 
 ```python
@@ -1862,6 +2088,8 @@ Optional fields:
 - `MemberUsers`:
   `Sequence`\[[MemberUserTypeDef](./type_defs.md#memberusertypedef)\]
 - `S3PathforGroupMembers`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+
+<a id="grouporderingidsummarytypedef"></a>
 
 ## GroupOrderingIdSummaryTypeDef
 
@@ -1878,6 +2106,8 @@ Optional fields:
 - `OrderingId`: `int`
 - `FailureReason`: `str`
 
+<a id="groupsummarytypedef"></a>
+
 ## GroupSummaryTypeDef
 
 ```python
@@ -1889,6 +2119,8 @@ Optional fields:
 - `GroupId`: `str`
 - `OrderingId`: `int`
 
+<a id="hierarchicalprincipaltypedef"></a>
+
 ## HierarchicalPrincipalTypeDef
 
 ```python
@@ -1899,6 +2131,8 @@ Required fields:
 
 - `PrincipalList`:
   `Sequence`\[[PrincipalTypeDef](./type_defs.md#principaltypedef)\]
+
+<a id="highlighttypedef"></a>
 
 ## HighlightTypeDef
 
@@ -1916,6 +2150,8 @@ Optional fields:
 - `TopAnswer`: `bool`
 - `Type`: [HighlightTypeType](./literals.md#highlighttypetype)
 
+<a id="hookconfigurationtypedef"></a>
+
 ## HookConfigurationTypeDef
 
 ```python
@@ -1931,6 +2167,8 @@ Optional fields:
 
 - `InvocationCondition`:
   [DocumentAttributeConditionTypeDef](./type_defs.md#documentattributeconditiontypedef)
+
+<a id="indexconfigurationsummarytypedef"></a>
 
 ## IndexConfigurationSummaryTypeDef
 
@@ -1950,6 +2188,8 @@ Optional fields:
 - `Id`: `str`
 - `Edition`: [IndexEditionType](./literals.md#indexeditiontype)
 
+<a id="indexstatisticstypedef"></a>
+
 ## IndexStatisticsTypeDef
 
 ```python
@@ -1961,6 +2201,8 @@ Required fields:
 - `FaqStatistics`: [FaqStatisticsTypeDef](./type_defs.md#faqstatisticstypedef)
 - `TextDocumentStatistics`:
   [TextDocumentStatisticsTypeDef](./type_defs.md#textdocumentstatisticstypedef)
+
+<a id="inlinecustomdocumentenrichmentconfigurationtypedef"></a>
 
 ## InlineCustomDocumentEnrichmentConfigurationTypeDef
 
@@ -1976,6 +2218,8 @@ Optional fields:
   [DocumentAttributeTargetTypeDef](./type_defs.md#documentattributetargettypedef)
 - `DocumentContentDeletion`: `bool`
 
+<a id="jsontokentypeconfigurationtypedef"></a>
+
 ## JsonTokenTypeConfigurationTypeDef
 
 ```python
@@ -1986,6 +2230,8 @@ Required fields:
 
 - `UserNameAttributeField`: `str`
 - `GroupAttributeField`: `str`
+
+<a id="jwttokentypeconfigurationtypedef"></a>
 
 ## JwtTokenTypeConfigurationTypeDef
 
@@ -2006,6 +2252,8 @@ Optional fields:
 - `Issuer`: `str`
 - `ClaimRegex`: `str`
 
+<a id="listdatasourcesyncjobsrequestrequesttypedef"></a>
+
 ## ListDataSourceSyncJobsRequestRequestTypeDef
 
 ```python
@@ -2025,6 +2273,8 @@ Optional fields:
 - `StatusFilter`:
   [DataSourceSyncJobStatusType](./literals.md#datasourcesyncjobstatustype)
 
+<a id="listdatasourcesyncjobsresponsetypedef"></a>
+
 ## ListDataSourceSyncJobsResponseTypeDef
 
 ```python
@@ -2038,6 +2288,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatasourcesrequestrequesttypedef"></a>
 
 ## ListDataSourcesRequestRequestTypeDef
 
@@ -2054,6 +2306,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdatasourcesresponsetypedef"></a>
+
 ## ListDataSourcesResponseTypeDef
 
 ```python
@@ -2067,6 +2321,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listentitypersonasrequestrequesttypedef"></a>
 
 ## ListEntityPersonasRequestRequestTypeDef
 
@@ -2084,6 +2340,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listentitypersonasresponsetypedef"></a>
+
 ## ListEntityPersonasResponseTypeDef
 
 ```python
@@ -2097,6 +2355,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listexperienceentitiesrequestrequesttypedef"></a>
 
 ## ListExperienceEntitiesRequestRequestTypeDef
 
@@ -2113,6 +2373,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listexperienceentitiesresponsetypedef"></a>
+
 ## ListExperienceEntitiesResponseTypeDef
 
 ```python
@@ -2126,6 +2388,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listexperiencesrequestrequesttypedef"></a>
 
 ## ListExperiencesRequestRequestTypeDef
 
@@ -2142,6 +2406,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listexperiencesresponsetypedef"></a>
+
 ## ListExperiencesResponseTypeDef
 
 ```python
@@ -2155,6 +2421,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfaqsrequestrequesttypedef"></a>
 
 ## ListFaqsRequestRequestTypeDef
 
@@ -2171,6 +2439,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listfaqsresponsetypedef"></a>
+
 ## ListFaqsResponseTypeDef
 
 ```python
@@ -2184,6 +2454,8 @@ Required fields:
   `List`\[[FaqSummaryTypeDef](./type_defs.md#faqsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgroupsolderthanorderingidrequestrequesttypedef"></a>
 
 ## ListGroupsOlderThanOrderingIdRequestRequestTypeDef
 
@@ -2202,6 +2474,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listgroupsolderthanorderingidresponsetypedef"></a>
+
 ## ListGroupsOlderThanOrderingIdResponseTypeDef
 
 ```python
@@ -2216,6 +2490,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listindicesrequestrequesttypedef"></a>
+
 ## ListIndicesRequestRequestTypeDef
 
 ```python
@@ -2226,6 +2502,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listindicesresponsetypedef"></a>
 
 ## ListIndicesResponseTypeDef
 
@@ -2240,6 +2518,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listquerysuggestionsblocklistsrequestrequesttypedef"></a>
 
 ## ListQuerySuggestionsBlockListsRequestRequestTypeDef
 
@@ -2256,6 +2536,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listquerysuggestionsblocklistsresponsetypedef"></a>
+
 ## ListQuerySuggestionsBlockListsResponseTypeDef
 
 ```python
@@ -2270,6 +2552,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2279,6 +2563,8 @@ from mypy_boto3_kendra.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2291,6 +2577,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listthesaurirequestrequesttypedef"></a>
 
 ## ListThesauriRequestRequestTypeDef
 
@@ -2307,6 +2595,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listthesauriresponsetypedef"></a>
+
 ## ListThesauriResponseTypeDef
 
 ```python
@@ -2320,6 +2610,8 @@ Required fields:
   `List`\[[ThesaurusSummaryTypeDef](./type_defs.md#thesaurussummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="membergrouptypedef"></a>
 
 ## MemberGroupTypeDef
 
@@ -2335,6 +2627,8 @@ Optional fields:
 
 - `DataSourceId`: `str`
 
+<a id="memberusertypedef"></a>
+
 ## MemberUserTypeDef
 
 ```python
@@ -2344,6 +2638,8 @@ from mypy_boto3_kendra.type_defs import MemberUserTypeDef
 Required fields:
 
 - `UserId`: `str`
+
+<a id="onedriveconfigurationtypedef"></a>
 
 ## OneDriveConfigurationTypeDef
 
@@ -2365,6 +2661,8 @@ Optional fields:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `DisableLocalGroups`: `bool`
 
+<a id="onedriveuserstypedef"></a>
+
 ## OneDriveUsersTypeDef
 
 ```python
@@ -2375,6 +2673,8 @@ Optional fields:
 
 - `OneDriveUserList`: `Sequence`\[`str`\]
 - `OneDriveUserS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
+
+<a id="personassummarytypedef"></a>
 
 ## PersonasSummaryTypeDef
 
@@ -2388,6 +2688,8 @@ Optional fields:
 - `Persona`: [PersonaType](./literals.md#personatype)
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
+
+<a id="principaltypedef"></a>
 
 ## PrincipalTypeDef
 
@@ -2405,6 +2707,8 @@ Optional fields:
 
 - `DataSourceId`: `str`
 
+<a id="proxyconfigurationtypedef"></a>
+
 ## ProxyConfigurationTypeDef
 
 ```python
@@ -2419,6 +2723,8 @@ Required fields:
 Optional fields:
 
 - `Credentials`: `str`
+
+<a id="putprincipalmappingrequestrequesttypedef"></a>
 
 ## PutPrincipalMappingRequestRequestTypeDef
 
@@ -2437,6 +2743,8 @@ Optional fields:
 - `DataSourceId`: `str`
 - `OrderingId`: `int`
 - `RoleArn`: `str`
+
+<a id="queryrequestrequesttypedef"></a>
 
 ## QueryRequestRequestTypeDef
 
@@ -2466,6 +2774,8 @@ Optional fields:
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
 
+<a id="queryresultitemtypedef"></a>
+
 ## QueryResultItemTypeDef
 
 ```python
@@ -2490,6 +2800,8 @@ Optional fields:
   [ScoreAttributesTypeDef](./type_defs.md#scoreattributestypedef)
 - `FeedbackToken`: `str`
 
+<a id="queryresulttypedef"></a>
+
 ## QueryResultTypeDef
 
 ```python
@@ -2508,6 +2820,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="querysuggestionsblocklistsummarytypedef"></a>
+
 ## QuerySuggestionsBlockListSummaryTypeDef
 
 ```python
@@ -2524,6 +2838,8 @@ Optional fields:
 - `UpdatedAt`: `datetime`
 - `ItemCount`: `int`
 
+<a id="relevancefeedbacktypedef"></a>
+
 ## RelevanceFeedbackTypeDef
 
 ```python
@@ -2534,6 +2850,8 @@ Required fields:
 
 - `ResultId`: `str`
 - `RelevanceValue`: [RelevanceTypeType](./literals.md#relevancetypetype)
+
+<a id="relevancetypedef"></a>
 
 ## RelevanceTypeDef
 
@@ -2549,6 +2867,8 @@ Optional fields:
 - `RankOrder`: [OrderType](./literals.md#ordertype)
 - `ValueImportanceMap`: `Dict`\[`str`, `int`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2562,6 +2882,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3datasourceconfigurationtypedef"></a>
 
 ## S3DataSourceConfigurationTypeDef
 
@@ -2583,6 +2905,8 @@ Optional fields:
 - `AccessControlListConfiguration`:
   [AccessControlListConfigurationTypeDef](./type_defs.md#accesscontrollistconfigurationtypedef)
 
+<a id="s3pathtypedef"></a>
+
 ## S3PathTypeDef
 
 ```python
@@ -2593,6 +2917,8 @@ Required fields:
 
 - `Bucket`: `str`
 - `Key`: `str`
+
+<a id="salesforcechatterfeedconfigurationtypedef"></a>
 
 ## SalesforceChatterFeedConfigurationTypeDef
 
@@ -2611,6 +2937,8 @@ Optional fields:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `IncludeFilterTypes`:
   `Sequence`\[[SalesforceChatterFeedIncludeFilterTypeType](./literals.md#salesforcechatterfeedincludefiltertypetype)\]
+
+<a id="salesforceconfigurationtypedef"></a>
 
 ## SalesforceConfigurationTypeDef
 
@@ -2637,6 +2965,8 @@ Optional fields:
 - `IncludeAttachmentFilePatterns`: `Sequence`\[`str`\]
 - `ExcludeAttachmentFilePatterns`: `Sequence`\[`str`\]
 
+<a id="salesforcecustomknowledgearticletypeconfigurationtypedef"></a>
+
 ## SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef
 
 ```python
@@ -2653,6 +2983,8 @@ Optional fields:
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+
+<a id="salesforceknowledgearticleconfigurationtypedef"></a>
 
 ## SalesforceKnowledgeArticleConfigurationTypeDef
 
@@ -2672,6 +3004,8 @@ Optional fields:
 - `CustomKnowledgeArticleTypeConfigurations`:
   `Sequence`\[[SalesforceCustomKnowledgeArticleTypeConfigurationTypeDef](./type_defs.md#salesforcecustomknowledgearticletypeconfigurationtypedef)\]
 
+<a id="salesforcestandardknowledgearticletypeconfigurationtypedef"></a>
+
 ## SalesforceStandardKnowledgeArticleTypeConfigurationTypeDef
 
 ```python
@@ -2688,6 +3022,8 @@ Optional fields:
 - `FieldMappings`:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
+<a id="salesforcestandardobjectattachmentconfigurationtypedef"></a>
+
 ## SalesforceStandardObjectAttachmentConfigurationTypeDef
 
 ```python
@@ -2699,6 +3035,8 @@ Optional fields:
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+
+<a id="salesforcestandardobjectconfigurationtypedef"></a>
 
 ## SalesforceStandardObjectConfigurationTypeDef
 
@@ -2718,6 +3056,8 @@ Optional fields:
 - `FieldMappings`:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
+<a id="scoreattributestypedef"></a>
+
 ## ScoreAttributesTypeDef
 
 ```python
@@ -2727,6 +3067,8 @@ from mypy_boto3_kendra.type_defs import ScoreAttributesTypeDef
 Optional fields:
 
 - `ScoreConfidence`: [ScoreConfidenceType](./literals.md#scoreconfidencetype)
+
+<a id="searchtypedef"></a>
 
 ## SearchTypeDef
 
@@ -2740,6 +3082,8 @@ Optional fields:
 - `Searchable`: `bool`
 - `Displayable`: `bool`
 - `Sortable`: `bool`
+
+<a id="seedurlconfigurationtypedef"></a>
 
 ## SeedUrlConfigurationTypeDef
 
@@ -2755,6 +3099,8 @@ Optional fields:
 
 - `WebCrawlerMode`: [WebCrawlerModeType](./literals.md#webcrawlermodetype)
 
+<a id="serversideencryptionconfigurationtypedef"></a>
+
 ## ServerSideEncryptionConfigurationTypeDef
 
 ```python
@@ -2764,6 +3110,8 @@ from mypy_boto3_kendra.type_defs import ServerSideEncryptionConfigurationTypeDef
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+<a id="servicenowconfigurationtypedef"></a>
 
 ## ServiceNowConfigurationTypeDef
 
@@ -2787,6 +3135,8 @@ Optional fields:
 - `AuthenticationType`:
   [ServiceNowAuthenticationTypeType](./literals.md#servicenowauthenticationtypetype)
 
+<a id="servicenowknowledgearticleconfigurationtypedef"></a>
+
 ## ServiceNowKnowledgeArticleConfigurationTypeDef
 
 ```python
@@ -2807,6 +3157,8 @@ Optional fields:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 - `FilterQuery`: `str`
 
+<a id="servicenowservicecatalogconfigurationtypedef"></a>
+
 ## ServiceNowServiceCatalogConfigurationTypeDef
 
 ```python
@@ -2825,6 +3177,8 @@ Optional fields:
 - `DocumentTitleFieldName`: `str`
 - `FieldMappings`:
   `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+
+<a id="sharepointconfigurationtypedef"></a>
 
 ## SharePointConfigurationTypeDef
 
@@ -2853,6 +3207,8 @@ Optional fields:
 - `DisableLocalGroups`: `bool`
 - `SslCertificateS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
+<a id="sitemapsconfigurationtypedef"></a>
+
 ## SiteMapsConfigurationTypeDef
 
 ```python
@@ -2862,6 +3218,8 @@ from mypy_boto3_kendra.type_defs import SiteMapsConfigurationTypeDef
 Required fields:
 
 - `SiteMaps`: `Sequence`\[`str`\]
+
+<a id="sortingconfigurationtypedef"></a>
 
 ## SortingConfigurationTypeDef
 
@@ -2874,6 +3232,8 @@ Required fields:
 - `DocumentAttributeKey`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="sqlconfigurationtypedef"></a>
+
 ## SqlConfigurationTypeDef
 
 ```python
@@ -2884,6 +3244,8 @@ Optional fields:
 
 - `QueryIdentifiersEnclosingOption`:
   [QueryIdentifiersEnclosingOptionType](./literals.md#queryidentifiersenclosingoptiontype)
+
+<a id="startdatasourcesyncjobrequestrequesttypedef"></a>
 
 ## StartDataSourceSyncJobRequestRequestTypeDef
 
@@ -2896,6 +3258,8 @@ Required fields:
 - `Id`: `str`
 - `IndexId`: `str`
 
+<a id="startdatasourcesyncjobresponsetypedef"></a>
+
 ## StartDataSourceSyncJobResponseTypeDef
 
 ```python
@@ -2907,6 +3271,8 @@ Required fields:
 - `ExecutionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="statustypedef"></a>
 
 ## StatusTypeDef
 
@@ -2921,6 +3287,8 @@ Optional fields:
 - `FailureCode`: `str`
 - `FailureReason`: `str`
 
+<a id="stopdatasourcesyncjobrequestrequesttypedef"></a>
+
 ## StopDataSourceSyncJobRequestRequestTypeDef
 
 ```python
@@ -2931,6 +3299,8 @@ Required fields:
 
 - `Id`: `str`
 - `IndexId`: `str`
+
+<a id="submitfeedbackrequestrequesttypedef"></a>
 
 ## SubmitFeedbackRequestRequestTypeDef
 
@@ -2950,6 +3320,8 @@ Optional fields:
 - `RelevanceFeedbackItems`:
   `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
+<a id="suggestionhighlighttypedef"></a>
+
 ## SuggestionHighlightTypeDef
 
 ```python
@@ -2960,6 +3332,8 @@ Optional fields:
 
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
+
+<a id="suggestiontextwithhighlightstypedef"></a>
 
 ## SuggestionTextWithHighlightsTypeDef
 
@@ -2973,6 +3347,8 @@ Optional fields:
 - `Highlights`:
   `List`\[[SuggestionHighlightTypeDef](./type_defs.md#suggestionhighlighttypedef)\]
 
+<a id="suggestiontypedef"></a>
+
 ## SuggestionTypeDef
 
 ```python
@@ -2983,6 +3359,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Value`: [SuggestionValueTypeDef](./type_defs.md#suggestionvaluetypedef)
+
+<a id="suggestionvaluetypedef"></a>
 
 ## SuggestionValueTypeDef
 
@@ -2995,6 +3373,8 @@ Optional fields:
 - `Text`:
   [SuggestionTextWithHighlightsTypeDef](./type_defs.md#suggestiontextwithhighlightstypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -3005,6 +3385,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -3017,6 +3399,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="textdocumentstatisticstypedef"></a>
+
 ## TextDocumentStatisticsTypeDef
 
 ```python
@@ -3028,6 +3412,8 @@ Required fields:
 - `IndexedTextDocumentsCount`: `int`
 - `IndexedTextBytes`: `int`
 
+<a id="textwithhighlightstypedef"></a>
+
 ## TextWithHighlightsTypeDef
 
 ```python
@@ -3038,6 +3424,8 @@ Optional fields:
 
 - `Text`: `str`
 - `Highlights`: `List`\[[HighlightTypeDef](./type_defs.md#highlighttypedef)\]
+
+<a id="thesaurussummarytypedef"></a>
 
 ## ThesaurusSummaryTypeDef
 
@@ -3053,6 +3441,8 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 
+<a id="timerangetypedef"></a>
+
 ## TimeRangeTypeDef
 
 ```python
@@ -3064,6 +3454,8 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -3074,6 +3466,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatasourcerequestrequesttypedef"></a>
 
 ## UpdateDataSourceRequestRequestTypeDef
 
@@ -3098,6 +3492,8 @@ Optional fields:
 - `CustomDocumentEnrichmentConfiguration`:
   [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
+<a id="updateexperiencerequestrequesttypedef"></a>
+
 ## UpdateExperienceRequestRequestTypeDef
 
 ```python
@@ -3116,6 +3512,8 @@ Optional fields:
 - `Configuration`:
   [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
 - `Description`: `str`
+
+<a id="updateindexrequestrequesttypedef"></a>
 
 ## UpdateIndexRequestRequestTypeDef
 
@@ -3143,6 +3541,8 @@ Optional fields:
 - `UserGroupResolutionConfiguration`:
   [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
+<a id="updatequerysuggestionsblocklistrequestrequesttypedef"></a>
+
 ## UpdateQuerySuggestionsBlockListRequestRequestTypeDef
 
 ```python
@@ -3160,6 +3560,8 @@ Optional fields:
 - `Description`: `str`
 - `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `RoleArn`: `str`
+
+<a id="updatequerysuggestionsconfigrequestrequesttypedef"></a>
 
 ## UpdateQuerySuggestionsConfigRequestRequestTypeDef
 
@@ -3179,6 +3581,8 @@ Optional fields:
 - `MinimumNumberOfQueryingUsers`: `int`
 - `MinimumQueryCount`: `int`
 
+<a id="updatethesaurusrequestrequesttypedef"></a>
+
 ## UpdateThesaurusRequestRequestTypeDef
 
 ```python
@@ -3197,6 +3601,8 @@ Optional fields:
 - `RoleArn`: `str`
 - `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 
+<a id="urlstypedef"></a>
+
 ## UrlsTypeDef
 
 ```python
@@ -3209,6 +3615,8 @@ Optional fields:
   [SeedUrlConfigurationTypeDef](./type_defs.md#seedurlconfigurationtypedef)
 - `SiteMapsConfiguration`:
   [SiteMapsConfigurationTypeDef](./type_defs.md#sitemapsconfigurationtypedef)
+
+<a id="usercontexttypedef"></a>
 
 ## UserContextTypeDef
 
@@ -3224,6 +3632,8 @@ Optional fields:
 - `DataSourceGroups`:
   `Sequence`\[[DataSourceGroupTypeDef](./type_defs.md#datasourcegrouptypedef)\]
 
+<a id="usergroupresolutionconfigurationtypedef"></a>
+
 ## UserGroupResolutionConfigurationTypeDef
 
 ```python
@@ -3235,6 +3645,8 @@ Required fields:
 - `UserGroupResolutionMode`:
   [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
 
+<a id="useridentityconfigurationtypedef"></a>
+
 ## UserIdentityConfigurationTypeDef
 
 ```python
@@ -3244,6 +3656,8 @@ from mypy_boto3_kendra.type_defs import UserIdentityConfigurationTypeDef
 Optional fields:
 
 - `IdentityAttributeName`: `str`
+
+<a id="usertokenconfigurationtypedef"></a>
 
 ## UserTokenConfigurationTypeDef
 
@@ -3258,6 +3672,8 @@ Optional fields:
 - `JsonTokenTypeConfiguration`:
   [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)
 
+<a id="warningtypedef"></a>
+
 ## WarningTypeDef
 
 ```python
@@ -3269,6 +3685,8 @@ Optional fields:
 - `Message`: `str`
 - `Code`: `Literal['QUERY_LANGUAGE_INVALID_SYNTAX']` (see
   [WarningCodeType](./literals.md#warningcodetype))
+
+<a id="webcrawlerconfigurationtypedef"></a>
 
 ## WebCrawlerConfigurationTypeDef
 
@@ -3292,6 +3710,8 @@ Optional fields:
   [ProxyConfigurationTypeDef](./type_defs.md#proxyconfigurationtypedef)
 - `AuthenticationConfiguration`:
   [AuthenticationConfigurationTypeDef](./type_defs.md#authenticationconfigurationtypedef)
+
+<a id="workdocsconfigurationtypedef"></a>
 
 ## WorkDocsConfigurationTypeDef
 

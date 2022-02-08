@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-servicediscovery-module"></a>
+
 # Literals for boto3 ServiceDiscovery module
 
 > [Index](..) > [ServiceDiscovery](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceDiscovery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicediscovery.html#ServiceDiscovery)
 type annotations stubs module
-[mypy_boto3_servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
+[mypy-boto3-servicediscovery](https://pypi.org/project/mypy-boto3-servicediscovery/).
 
 - [Literals for boto3 ServiceDiscovery module](#literals-for-boto3-servicediscovery-module)
   - [CustomHealthStatusType](#customhealthstatustype)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="customhealthstatustype"></a>
+
 ## CustomHealthStatusType
 
 ```python
@@ -41,6 +45,8 @@ Values:
 
 - `HEALTHY`
 - `UNHEALTHY`
+
+<a id="filterconditiontype"></a>
 
 ## FilterConditionType
 
@@ -54,6 +60,8 @@ Values:
 - `EQ`
 - `IN`
 
+<a id="healthchecktypetype"></a>
+
 ## HealthCheckTypeType
 
 ```python
@@ -65,6 +73,8 @@ Values:
 - `HTTP`
 - `HTTPS`
 - `TCP`
+
+<a id="healthstatusfiltertype"></a>
 
 ## HealthStatusFilterType
 
@@ -79,6 +89,8 @@ Values:
 - `HEALTHY_OR_ELSE_ALL`
 - `UNHEALTHY`
 
+<a id="healthstatustype"></a>
+
 ## HealthStatusType
 
 ```python
@@ -91,6 +103,8 @@ Values:
 - `UNHEALTHY`
 - `UNKNOWN`
 
+<a id="listinstancespaginatorname"></a>
+
 ## ListInstancesPaginatorName
 
 ```python
@@ -100,6 +114,8 @@ from mypy_boto3_servicediscovery.literals import ListInstancesPaginatorName
 Values:
 
 - `list_instances`
+
+<a id="listnamespacespaginatorname"></a>
 
 ## ListNamespacesPaginatorName
 
@@ -111,6 +127,8 @@ Values:
 
 - `list_namespaces`
 
+<a id="listoperationspaginatorname"></a>
+
 ## ListOperationsPaginatorName
 
 ```python
@@ -120,6 +138,8 @@ from mypy_boto3_servicediscovery.literals import ListOperationsPaginatorName
 Values:
 
 - `list_operations`
+
+<a id="listservicespaginatorname"></a>
 
 ## ListServicesPaginatorName
 
@@ -131,6 +151,8 @@ Values:
 
 - `list_services`
 
+<a id="namespacefilternametype"></a>
+
 ## NamespaceFilterNameType
 
 ```python
@@ -140,6 +162,8 @@ from mypy_boto3_servicediscovery.literals import NamespaceFilterNameType
 Values:
 
 - `TYPE`
+
+<a id="namespacetypetype"></a>
 
 ## NamespaceTypeType
 
@@ -152,6 +176,8 @@ Values:
 - `DNS_PRIVATE`
 - `DNS_PUBLIC`
 - `HTTP`
+
+<a id="operationfilternametype"></a>
 
 ## OperationFilterNameType
 
@@ -167,6 +193,8 @@ Values:
 - `TYPE`
 - `UPDATE_DATE`
 
+<a id="operationstatustype"></a>
+
 ## OperationStatusType
 
 ```python
@@ -180,6 +208,8 @@ Values:
 - `SUBMITTED`
 - `SUCCESS`
 
+<a id="operationtargettypetype"></a>
+
 ## OperationTargetTypeType
 
 ```python
@@ -191,6 +221,8 @@ Values:
 - `INSTANCE`
 - `NAMESPACE`
 - `SERVICE`
+
+<a id="operationtypetype"></a>
 
 ## OperationTypeType
 
@@ -207,6 +239,8 @@ Values:
 - `UPDATE_NAMESPACE`
 - `UPDATE_SERVICE`
 
+<a id="recordtypetype"></a>
+
 ## RecordTypeType
 
 ```python
@@ -220,6 +254,8 @@ Values:
 - `CNAME`
 - `SRV`
 
+<a id="routingpolicytype"></a>
+
 ## RoutingPolicyType
 
 ```python
@@ -231,6 +267,8 @@ Values:
 - `MULTIVALUE`
 - `WEIGHTED`
 
+<a id="servicefilternametype"></a>
+
 ## ServiceFilterNameType
 
 ```python
@@ -241,6 +279,8 @@ Values:
 
 - `NAMESPACE_ID`
 
+<a id="servicetypeoptiontype"></a>
+
 ## ServiceTypeOptionType
 
 ```python
@@ -250,6 +290,8 @@ from mypy_boto3_servicediscovery.literals import ServiceTypeOptionType
 Values:
 
 - `HTTP`
+
+<a id="servicetypetype"></a>
 
 ## ServiceTypeType
 
@@ -262,6 +304,8 @@ Values:
 - `DNS`
 - `DNS_HTTP`
 - `HTTP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -570,6 +614,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mediapackagevod-module"></a>
+
 # Typed dictionaries for boto3 MediaPackageVod module
 
 > [Index](..) > [MediaPackageVod](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
-[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+[mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [Typed dictionaries for boto3 MediaPackageVod module](#typed-dictionaries-for-boto3-mediapackagevod-module)
   - [AssetShallowTypeDef](#assetshallowtypedef)
@@ -59,6 +61,8 @@ type annotations stubs module
   - [UpdatePackagingGroupRequestRequestTypeDef](#updatepackaginggrouprequestrequesttypedef)
   - [UpdatePackagingGroupResponseTypeDef](#updatepackaginggroupresponsetypedef)
 
+<a id="assetshallowtypedef"></a>
+
 ## AssetShallowTypeDef
 
 ```python
@@ -76,6 +80,8 @@ Optional fields:
 - `SourceRoleArn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="authorizationtypedef"></a>
+
 ## AuthorizationTypeDef
 
 ```python
@@ -86,6 +92,8 @@ Required fields:
 
 - `CdnIdentifierSecret`: `str`
 - `SecretsRoleArn`: `str`
+
+<a id="cmafencryptiontypedef"></a>
 
 ## CmafEncryptionTypeDef
 
@@ -101,6 +109,8 @@ Required fields:
 Optional fields:
 
 - `ConstantInitializationVector`: `str`
+
+<a id="cmafpackagetypedef"></a>
 
 ## CmafPackageTypeDef
 
@@ -119,6 +129,8 @@ Optional fields:
 - `IncludeEncoderConfigurationInSegments`: `bool`
 - `SegmentDurationSeconds`: `int`
 
+<a id="configurelogsrequestrequesttypedef"></a>
+
 ## ConfigureLogsRequestRequestTypeDef
 
 ```python
@@ -133,6 +145,8 @@ Optional fields:
 
 - `EgressAccessLogs`:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
+
+<a id="configurelogsresponsetypedef"></a>
 
 ## ConfigureLogsResponseTypeDef
 
@@ -152,6 +166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createassetrequestrequesttypedef"></a>
+
 ## CreateAssetRequestRequestTypeDef
 
 ```python
@@ -169,6 +185,8 @@ Optional fields:
 
 - `ResourceId`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createassetresponsetypedef"></a>
 
 ## CreateAssetResponseTypeDef
 
@@ -191,6 +209,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpackagingconfigurationrequestrequesttypedef"></a>
+
 ## CreatePackagingConfigurationRequestRequestTypeDef
 
 ```python
@@ -209,6 +229,8 @@ Optional fields:
 - `HlsPackage`: [HlsPackageTypeDef](./type_defs.md#hlspackagetypedef)
 - `MssPackage`: [MssPackageTypeDef](./type_defs.md#msspackagetypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createpackagingconfigurationresponsetypedef"></a>
 
 ## CreatePackagingConfigurationResponseTypeDef
 
@@ -229,6 +251,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpackaginggrouprequestrequesttypedef"></a>
+
 ## CreatePackagingGroupRequestRequestTypeDef
 
 ```python
@@ -245,6 +269,8 @@ Optional fields:
 - `EgressAccessLogs`:
   [EgressAccessLogsTypeDef](./type_defs.md#egressaccesslogstypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createpackaginggroupresponsetypedef"></a>
 
 ## CreatePackagingGroupResponseTypeDef
 
@@ -264,6 +290,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dashencryptiontypedef"></a>
+
 ## DashEncryptionTypeDef
 
 ```python
@@ -274,6 +302,8 @@ Required fields:
 
 - `SpekeKeyProvider`:
   [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
+
+<a id="dashmanifesttypedef"></a>
 
 ## DashManifestTypeDef
 
@@ -289,6 +319,8 @@ Optional fields:
 - `Profile`: [ProfileType](./literals.md#profiletype)
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
+
+<a id="dashpackagetypedef"></a>
 
 ## DashPackageTypeDef
 
@@ -311,6 +343,8 @@ Optional fields:
 - `SegmentTemplateFormat`:
   [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 
+<a id="deleteassetrequestrequesttypedef"></a>
+
 ## DeleteAssetRequestRequestTypeDef
 
 ```python
@@ -320,6 +354,8 @@ from mypy_boto3_mediapackage_vod.type_defs import DeleteAssetRequestRequestTypeD
 Required fields:
 
 - `Id`: `str`
+
+<a id="deletepackagingconfigurationrequestrequesttypedef"></a>
 
 ## DeletePackagingConfigurationRequestRequestTypeDef
 
@@ -331,6 +367,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="deletepackaginggrouprequestrequesttypedef"></a>
+
 ## DeletePackagingGroupRequestRequestTypeDef
 
 ```python
@@ -341,6 +379,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="describeassetrequestrequesttypedef"></a>
+
 ## DescribeAssetRequestRequestTypeDef
 
 ```python
@@ -350,6 +390,8 @@ from mypy_boto3_mediapackage_vod.type_defs import DescribeAssetRequestRequestTyp
 Required fields:
 
 - `Id`: `str`
+
+<a id="describeassetresponsetypedef"></a>
 
 ## DescribeAssetResponseTypeDef
 
@@ -372,6 +414,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepackagingconfigurationrequestrequesttypedef"></a>
+
 ## DescribePackagingConfigurationRequestRequestTypeDef
 
 ```python
@@ -381,6 +425,8 @@ from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingConfiguration
 Required fields:
 
 - `Id`: `str`
+
+<a id="describepackagingconfigurationresponsetypedef"></a>
 
 ## DescribePackagingConfigurationResponseTypeDef
 
@@ -401,6 +447,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepackaginggrouprequestrequesttypedef"></a>
+
 ## DescribePackagingGroupRequestRequestTypeDef
 
 ```python
@@ -410,6 +458,8 @@ from mypy_boto3_mediapackage_vod.type_defs import DescribePackagingGroupRequestR
 Required fields:
 
 - `Id`: `str`
+
+<a id="describepackaginggroupresponsetypedef"></a>
 
 ## DescribePackagingGroupResponseTypeDef
 
@@ -429,6 +479,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="egressaccesslogstypedef"></a>
+
 ## EgressAccessLogsTypeDef
 
 ```python
@@ -438,6 +490,8 @@ from mypy_boto3_mediapackage_vod.type_defs import EgressAccessLogsTypeDef
 Optional fields:
 
 - `LogGroupName`: `str`
+
+<a id="egressendpointtypedef"></a>
 
 ## EgressEndpointTypeDef
 
@@ -450,6 +504,8 @@ Optional fields:
 - `PackagingConfigurationId`: `str`
 - `Status`: `str`
 - `Url`: `str`
+
+<a id="hlsencryptiontypedef"></a>
 
 ## HlsEncryptionTypeDef
 
@@ -468,6 +524,8 @@ Optional fields:
 - `EncryptionMethod`:
   [EncryptionMethodType](./literals.md#encryptionmethodtype)
 
+<a id="hlsmanifesttypedef"></a>
+
 ## HlsManifestTypeDef
 
 ```python
@@ -483,6 +541,8 @@ Optional fields:
 - `RepeatExtXKey`: `bool`
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
+
+<a id="hlspackagetypedef"></a>
 
 ## HlsPackageTypeDef
 
@@ -502,6 +562,8 @@ Optional fields:
 - `SegmentDurationSeconds`: `int`
 - `UseAudioRenditionGroup`: `bool`
 
+<a id="listassetsrequestrequesttypedef"></a>
+
 ## ListAssetsRequestRequestTypeDef
 
 ```python
@@ -513,6 +575,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `PackagingGroupId`: `str`
+
+<a id="listassetsresponsetypedef"></a>
 
 ## ListAssetsResponseTypeDef
 
@@ -527,6 +591,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpackagingconfigurationsrequestrequesttypedef"></a>
+
 ## ListPackagingConfigurationsRequestRequestTypeDef
 
 ```python
@@ -538,6 +604,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `PackagingGroupId`: `str`
+
+<a id="listpackagingconfigurationsresponsetypedef"></a>
 
 ## ListPackagingConfigurationsResponseTypeDef
 
@@ -553,6 +621,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpackaginggroupsrequestrequesttypedef"></a>
+
 ## ListPackagingGroupsRequestRequestTypeDef
 
 ```python
@@ -563,6 +633,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listpackaginggroupsresponsetypedef"></a>
 
 ## ListPackagingGroupsResponseTypeDef
 
@@ -578,6 +650,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -587,6 +661,8 @@ from mypy_boto3_mediapackage_vod.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -600,6 +676,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="mssencryptiontypedef"></a>
+
 ## MssEncryptionTypeDef
 
 ```python
@@ -610,6 +688,8 @@ Required fields:
 
 - `SpekeKeyProvider`:
   [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
+
+<a id="mssmanifesttypedef"></a>
 
 ## MssManifestTypeDef
 
@@ -622,6 +702,8 @@ Optional fields:
 - `ManifestName`: `str`
 - `StreamSelection`:
   [StreamSelectionTypeDef](./type_defs.md#streamselectiontypedef)
+
+<a id="msspackagetypedef"></a>
 
 ## MssPackageTypeDef
 
@@ -638,6 +720,8 @@ Optional fields:
 
 - `Encryption`: [MssEncryptionTypeDef](./type_defs.md#mssencryptiontypedef)
 - `SegmentDurationSeconds`: `int`
+
+<a id="packagingconfigurationtypedef"></a>
 
 ## PackagingConfigurationTypeDef
 
@@ -656,6 +740,8 @@ Optional fields:
 - `PackagingGroupId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="packaginggrouptypedef"></a>
+
 ## PackagingGroupTypeDef
 
 ```python
@@ -672,6 +758,8 @@ Optional fields:
 - `Id`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -683,6 +771,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -698,6 +788,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="spekekeyprovidertypedef"></a>
+
 ## SpekeKeyProviderTypeDef
 
 ```python
@@ -709,6 +801,8 @@ Required fields:
 - `RoleArn`: `str`
 - `SystemIds`: `Sequence`\[`str`\]
 - `Url`: `str`
+
+<a id="streamselectiontypedef"></a>
 
 ## StreamSelectionTypeDef
 
@@ -722,6 +816,8 @@ Optional fields:
 - `MinVideoBitsPerSecond`: `int`
 - `StreamOrder`: [StreamOrderType](./literals.md#streamordertype)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -733,6 +829,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -743,6 +841,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatepackaginggrouprequestrequesttypedef"></a>
 
 ## UpdatePackagingGroupRequestRequestTypeDef
 
@@ -757,6 +857,8 @@ Required fields:
 Optional fields:
 
 - `Authorization`: [AuthorizationTypeDef](./type_defs.md#authorizationtypedef)
+
+<a id="updatepackaginggroupresponsetypedef"></a>
 
 ## UpdatePackagingGroupResponseTypeDef
 

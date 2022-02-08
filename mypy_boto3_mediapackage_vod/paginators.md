@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-mediapackagevod-module"></a>
+
 # Paginators for boto3 MediaPackageVod module
 
 > [Index](..) > [MediaPackageVod](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
-[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+[mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 - [Paginators for boto3 MediaPackageVod module](#paginators-for-boto3-mediapackagevod-module)
   - [ListAssetsPaginator](#listassetspaginator)
   - [ListPackagingConfigurationsPaginator](#listpackagingconfigurationspaginator)
   - [ListPackagingGroupsPaginator](#listpackaginggroupspaginator)
+
+<a id="listassetspaginator"></a>
 
 ## ListAssetsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediapackage_vod.paginator import ListAssetsPaginator
 
 def get_list_assets_paginator() -> ListAssetsPaginator:
-    return boto3.client("mediapackage-vod").get_paginator("list_assets")
+    return Session().client("mediapackage-vod").get_paginator("list_assets")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListAssetsPaginator.paginate` method:
 `ListAssetsPaginator.paginate` returns
 `_PageIterator`\[[ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef)\].
 
+<a id="listpackagingconfigurationspaginator"></a>
+
 ## ListPackagingConfigurationsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediapackage_vod.paginator import ListPackagingConfigurationsPaginator
 
 def get_list_packaging_configurations_paginator() -> ListPackagingConfigurationsPaginator:
-    return boto3.client("mediapackage-vod").get_paginator("list_packaging_configurations")
+    return Session().client("mediapackage-vod").get_paginator("list_packaging_configurations")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ListPackagingConfigurationsPaginator.paginate` method:
 `ListPackagingConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef)\].
 
+<a id="listpackaginggroupspaginator"></a>
+
 ## ListPackagingGroupsPaginator
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediapackage_vod.paginator import ListPackagingGroupsPaginator
 
 def get_list_packaging_groups_paginator() -> ListPackagingGroupsPaginator:
-    return boto3.client("mediapackage-vod").get_paginator("list_packaging_groups")
+    return Session().client("mediapackage-vod").get_paginator("list_packaging_groups")
 ```
 
 Boto3 documentation:

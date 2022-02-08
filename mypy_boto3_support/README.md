@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-support-module"></a>
+
 # Type annotations for boto3 Support module
 
 > [Index](..) > Support
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module
-[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[support]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[support]'
+
+# standalone installation
 pip install mypy-boto3-support
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-support
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="supportclient"></a>
+
 ## SupportClient
 
 Type annotations for `boto3.client("support")` as [SupportClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_support.client import SupportClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_support.client import SupportClient
 - [refresh_trusted_advisor_check](./client.md#refresh_trusted_advisor_check)
 - [resolve_case](./client.md#resolve_case)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SupportClient [exceptions](./client.md#exceptions)
@@ -65,6 +81,8 @@ SupportClient [exceptions](./client.md#exceptions)
 - DescribeAttachmentLimitExceeded
 - InternalServerError
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -73,11 +91,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_support.paginators import DescribeCasesPaginator, ...
+from mypy_boto3_support.paginator import DescribeCasesPaginator, ...
 ```
 
 - [DescribeCasesPaginator](./paginators.md#describecasespaginator)
 - [DescribeCommunicationsPaginator](./paginators.md#describecommunicationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -93,6 +113,8 @@ from mypy_boto3_support.literals import DescribeCasesPaginatorName, ...
 - [DescribeCommunicationsPaginatorName](./literals.md#describecommunicationspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

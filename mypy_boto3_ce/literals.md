@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-costexplorer-module"></a>
+
 # Literals for boto3 CostExplorer module
 
 > [Index](..) > [CostExplorer](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
-[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 - [Literals for boto3 CostExplorer module](#literals-for-boto3-costexplorer-module)
   - [AccountScopeType](#accountscopetype)
@@ -42,6 +44,8 @@ type annotations stubs module
   - [TermInYearsType](#terminyearstype)
   - [ServiceName](#servicename)
 
+<a id="accountscopetype"></a>
+
 ## AccountScopeType
 
 ```python
@@ -52,6 +56,8 @@ Values:
 
 - `LINKED`
 - `PAYER`
+
+<a id="anomalyfeedbacktypetype"></a>
 
 ## AnomalyFeedbackTypeType
 
@@ -65,6 +71,8 @@ Values:
 - `PLANNED_ACTIVITY`
 - `YES`
 
+<a id="anomalysubscriptionfrequencytype"></a>
+
 ## AnomalySubscriptionFrequencyType
 
 ```python
@@ -76,6 +84,8 @@ Values:
 - `DAILY`
 - `IMMEDIATE`
 - `WEEKLY`
+
+<a id="contexttype"></a>
 
 ## ContextType
 
@@ -89,6 +99,8 @@ Values:
 - `RESERVATIONS`
 - `SAVINGS_PLANS`
 
+<a id="costcategoryinheritedvaluedimensionnametype"></a>
+
 ## CostCategoryInheritedValueDimensionNameType
 
 ```python
@@ -99,6 +111,8 @@ Values:
 
 - `LINKED_ACCOUNT_NAME`
 - `TAG`
+
+<a id="costcategoryruletypetype"></a>
 
 ## CostCategoryRuleTypeType
 
@@ -111,6 +125,8 @@ Values:
 - `INHERITED_VALUE`
 - `REGULAR`
 
+<a id="costcategoryruleversiontype"></a>
+
 ## CostCategoryRuleVersionType
 
 ```python
@@ -120,6 +136,8 @@ from mypy_boto3_ce.literals import CostCategoryRuleVersionType
 Values:
 
 - `CostCategoryExpression.v1`
+
+<a id="costcategorysplitchargemethodtype"></a>
 
 ## CostCategorySplitChargeMethodType
 
@@ -133,6 +151,8 @@ Values:
 - `FIXED`
 - `PROPORTIONAL`
 
+<a id="costcategorysplitchargeruleparametertypetype"></a>
+
 ## CostCategorySplitChargeRuleParameterTypeType
 
 ```python
@@ -142,6 +162,8 @@ from mypy_boto3_ce.literals import CostCategorySplitChargeRuleParameterTypeType
 Values:
 
 - `ALLOCATION_PERCENTAGES`
+
+<a id="costcategorystatuscomponenttype"></a>
 
 ## CostCategoryStatusComponentType
 
@@ -153,6 +175,8 @@ Values:
 
 - `COST_EXPLORER`
 
+<a id="costcategorystatustype"></a>
+
 ## CostCategoryStatusType
 
 ```python
@@ -163,6 +187,8 @@ Values:
 
 - `APPLIED`
 - `PROCESSING`
+
+<a id="dimensiontype"></a>
 
 ## DimensionType
 
@@ -205,6 +231,8 @@ Values:
 - `USAGE_TYPE`
 - `USAGE_TYPE_GROUP`
 
+<a id="findingreasoncodetype"></a>
+
 ## FindingReasonCodeType
 
 ```python
@@ -230,6 +258,8 @@ Values:
 - `NETWORK_PPS_OVER_PROVISIONED`
 - `NETWORK_PPS_UNDER_PROVISIONED`
 
+<a id="granularitytype"></a>
+
 ## GranularityType
 
 ```python
@@ -241,6 +271,8 @@ Values:
 - `DAILY`
 - `HOURLY`
 - `MONTHLY`
+
+<a id="groupdefinitiontypetype"></a>
 
 ## GroupDefinitionTypeType
 
@@ -254,6 +286,8 @@ Values:
 - `DIMENSION`
 - `TAG`
 
+<a id="lookbackperiodindaystype"></a>
+
 ## LookbackPeriodInDaysType
 
 ```python
@@ -265,6 +299,8 @@ Values:
 - `SEVEN_DAYS`
 - `SIXTY_DAYS`
 - `THIRTY_DAYS`
+
+<a id="matchoptiontype"></a>
 
 ## MatchOptionType
 
@@ -282,6 +318,8 @@ Values:
 - `EQUALS`
 - `STARTS_WITH`
 
+<a id="metrictype"></a>
+
 ## MetricType
 
 ```python
@@ -298,6 +336,8 @@ Values:
 - `UNBLENDED_COST`
 - `USAGE_QUANTITY`
 
+<a id="monitordimensiontype"></a>
+
 ## MonitorDimensionType
 
 ```python
@@ -307,6 +347,8 @@ from mypy_boto3_ce.literals import MonitorDimensionType
 Values:
 
 - `SERVICE`
+
+<a id="monitortypetype"></a>
 
 ## MonitorTypeType
 
@@ -318,6 +360,8 @@ Values:
 
 - `CUSTOM`
 - `DIMENSIONAL`
+
+<a id="numericoperatortype"></a>
 
 ## NumericOperatorType
 
@@ -334,6 +378,8 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_OR_EQUAL`
 
+<a id="offeringclasstype"></a>
+
 ## OfferingClassType
 
 ```python
@@ -344,6 +390,8 @@ Values:
 
 - `CONVERTIBLE`
 - `STANDARD`
+
+<a id="paymentoptiontype"></a>
 
 ## PaymentOptionType
 
@@ -360,6 +408,8 @@ Values:
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
 
+<a id="platformdifferencetype"></a>
+
 ## PlatformDifferenceType
 
 ```python
@@ -374,6 +424,8 @@ Values:
 - `STORAGE_INTERFACE`
 - `VIRTUALIZATION_TYPE`
 
+<a id="recommendationtargettype"></a>
+
 ## RecommendationTargetType
 
 ```python
@@ -385,6 +437,8 @@ Values:
 - `CROSS_INSTANCE_FAMILY`
 - `SAME_INSTANCE_FAMILY`
 
+<a id="rightsizingtypetype"></a>
+
 ## RightsizingTypeType
 
 ```python
@@ -395,6 +449,8 @@ Values:
 
 - `MODIFY`
 - `TERMINATE`
+
+<a id="savingsplansdatatypetype"></a>
 
 ## SavingsPlansDataTypeType
 
@@ -409,6 +465,8 @@ Values:
 - `SAVINGS`
 - `UTILIZATION`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -419,6 +477,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="subscriberstatustype"></a>
 
 ## SubscriberStatusType
 
@@ -431,6 +491,8 @@ Values:
 - `CONFIRMED`
 - `DECLINED`
 
+<a id="subscribertypetype"></a>
+
 ## SubscriberTypeType
 
 ```python
@@ -441,6 +503,8 @@ Values:
 
 - `EMAIL`
 - `SNS`
+
+<a id="supportedsavingsplanstypetype"></a>
 
 ## SupportedSavingsPlansTypeType
 
@@ -454,6 +518,8 @@ Values:
 - `EC2_INSTANCE_SP`
 - `SAGEMAKER_SP`
 
+<a id="terminyearstype"></a>
+
 ## TermInYearsType
 
 ```python
@@ -464,6 +530,8 @@ Values:
 
 - `ONE_YEAR`
 - `THREE_YEARS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

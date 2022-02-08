@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-opsworkscm-module"></a>
+
 # Waiters for boto3 OpsWorksCM module
 
 > [Index](..) > [OpsWorksCM](.) > Waiters
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
-[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [Waiters for boto3 OpsWorksCM module](#waiters-for-boto3-opsworkscm-module)
   - [NodeAssociatedWaiter](#nodeassociatedwaiter)
+
+<a id="nodeassociatedwaiter"></a>
 
 ## NodeAssociatedWaiter
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_opsworkscm.waiter import NodeAssociatedWaiter
 
 def get_node_associated_waiter() -> NodeAssociatedWaiter:
-    return boto3.client("opsworkscm").get_waiter("node_associated")
+    return Session().client("opsworkscm").get_waiter("node_associated")
 ```
 
 Boto3 documentation:

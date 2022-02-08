@@ -1,3 +1,5 @@
+<a id="translateclient-for-boto3-translate-module"></a>
+
 # TranslateClient for boto3 Translate module
 
 > [Index](..) > [Translate](.) > TranslateClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module
-[mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
+[mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 - [TranslateClient for boto3 Translate module](#translateclient-for-boto3-translate-module)
   - [TranslateClient](#translateclient)
@@ -30,6 +32,8 @@ type annotations stubs module
     - [update_parallel_data](#update_parallel_data)
     - [get_paginator](#get_paginator)
 
+<a id="translateclient"></a>
+
 ## TranslateClient
 
 Type annotations for `boto3.client("translate")`
@@ -37,14 +41,17 @@ Type annotations for `boto3.client("translate")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_translate.client import TranslateClient
 
 def get_translate_client() -> TranslateClient:
-    return boto3.client("translate")
+    return Session().client("translate")
 ```
 
 Boto3 documentation:
 [Translate.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -75,7 +82,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnsupportedLanguagePairException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -87,6 +98,8 @@ Boto3 documentation:
 [Translate.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -102,6 +115,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_parallel_data"></a>
 
 ### create_parallel_data
 
@@ -129,6 +144,8 @@ Keyword-only arguments:
 Returns
 [CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef).
 
+<a id="delete_parallel_data"></a>
+
 ### delete_parallel_data
 
 Deletes a parallel data resource in Amazon Translate.
@@ -148,6 +165,8 @@ Keyword-only arguments:
 Returns
 [DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef).
 
+<a id="delete_terminology"></a>
+
 ### delete_terminology
 
 A synchronous action that deletes a custom terminology.
@@ -163,6 +182,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+
+<a id="describe_text_translation_job"></a>
 
 ### describe_text_translation_job
 
@@ -186,6 +207,8 @@ Keyword-only arguments:
 Returns
 [DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -203,6 +226,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_parallel_data"></a>
 
 ### get_parallel_data
 
@@ -222,6 +247,8 @@ Keyword-only arguments:
 
 Returns
 [GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef).
+
+<a id="get_terminology"></a>
 
 ### get_terminology
 
@@ -243,6 +270,8 @@ Keyword-only arguments:
 
 Returns
 [GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
+
+<a id="import_terminology"></a>
 
 ### import_terminology
 
@@ -270,6 +299,8 @@ Keyword-only arguments:
 Returns
 [ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef).
 
+<a id="list_parallel_data"></a>
+
 ### list_parallel_data
 
 Provides a list of your parallel data resources in Amazon Translate.
@@ -290,6 +321,8 @@ Keyword-only arguments:
 Returns
 [ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef).
 
+<a id="list_terminologies"></a>
+
 ### list_terminologies
 
 Provides a list of custom terminologies associated with your account.
@@ -309,6 +342,8 @@ Keyword-only arguments:
 
 Returns
 [ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef).
+
+<a id="list_text_translation_jobs"></a>
 
 ### list_text_translation_jobs
 
@@ -332,6 +367,8 @@ Keyword-only arguments:
 
 Returns
 [ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef).
+
+<a id="start_text_translation_job"></a>
 
 ### start_text_translation_job
 
@@ -366,6 +403,8 @@ Keyword-only arguments:
 Returns
 [StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
 
+<a id="stop_text_translation_job"></a>
+
 ### stop_text_translation_job
 
 Stops an asynchronous batch translation job that is in progress.
@@ -385,6 +424,8 @@ Keyword-only arguments:
 
 Returns
 [StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef).
+
+<a id="translate_text"></a>
 
 ### translate_text
 
@@ -410,6 +451,8 @@ Keyword-only arguments:
 Returns
 [TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).
 
+<a id="update_parallel_data"></a>
+
 ### update_parallel_data
 
 Updates a previously created parallel data resource by importing a new input
@@ -434,6 +477,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateParallelDataResponseTypeDef](./type_defs.md#updateparalleldataresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

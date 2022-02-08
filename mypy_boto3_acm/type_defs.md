@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-acm-module"></a>
+
 # Typed dictionaries for boto3 ACM module
 
 > [Index](..) > [ACM](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
 type annotations stubs module
-[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+[mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [Typed dictionaries for boto3 ACM module](#typed-dictionaries-for-boto3-acm-module)
   - [AddTagsToCertificateRequestRequestTypeDef](#addtagstocertificaterequestrequesttypedef)
@@ -46,6 +48,8 @@ type annotations stubs module
   - [UpdateCertificateOptionsRequestRequestTypeDef](#updatecertificateoptionsrequestrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addtagstocertificaterequestrequesttypedef"></a>
+
 ## AddTagsToCertificateRequestRequestTypeDef
 
 ```python
@@ -56,6 +60,8 @@ Required fields:
 
 - `CertificateArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="certificatedetailtypedef"></a>
 
 ## CertificateDetailTypeDef
 
@@ -98,6 +104,8 @@ Optional fields:
 - `Options`:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
 
+<a id="certificateoptionstypedef"></a>
+
 ## CertificateOptionsTypeDef
 
 ```python
@@ -108,6 +116,8 @@ Optional fields:
 
 - `CertificateTransparencyLoggingPreference`:
   [CertificateTransparencyLoggingPreferenceType](./literals.md#certificatetransparencyloggingpreferencetype)
+
+<a id="certificatesummarytypedef"></a>
 
 ## CertificateSummaryTypeDef
 
@@ -120,6 +130,8 @@ Optional fields:
 - `CertificateArn`: `str`
 - `DomainName`: `str`
 
+<a id="deletecertificaterequestrequesttypedef"></a>
+
 ## DeleteCertificateRequestRequestTypeDef
 
 ```python
@@ -130,6 +142,8 @@ Required fields:
 
 - `CertificateArn`: `str`
 
+<a id="describecertificaterequestrequesttypedef"></a>
+
 ## DescribeCertificateRequestRequestTypeDef
 
 ```python
@@ -139,6 +153,8 @@ from mypy_boto3_acm.type_defs import DescribeCertificateRequestRequestTypeDef
 Required fields:
 
 - `CertificateArn`: `str`
+
+<a id="describecertificateresponsetypedef"></a>
 
 ## DescribeCertificateResponseTypeDef
 
@@ -153,6 +169,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="domainvalidationoptiontypedef"></a>
+
 ## DomainValidationOptionTypeDef
 
 ```python
@@ -163,6 +181,8 @@ Required fields:
 
 - `DomainName`: `str`
 - `ValidationDomain`: `str`
+
+<a id="domainvalidationtypedef"></a>
 
 ## DomainValidationTypeDef
 
@@ -184,6 +204,8 @@ Optional fields:
 - `ValidationMethod`:
   [ValidationMethodType](./literals.md#validationmethodtype)
 
+<a id="expiryeventsconfigurationtypedef"></a>
+
 ## ExpiryEventsConfigurationTypeDef
 
 ```python
@@ -193,6 +215,8 @@ from mypy_boto3_acm.type_defs import ExpiryEventsConfigurationTypeDef
 Optional fields:
 
 - `DaysBeforeExpiry`: `int`
+
+<a id="exportcertificaterequestrequesttypedef"></a>
 
 ## ExportCertificateRequestRequestTypeDef
 
@@ -204,6 +228,8 @@ Required fields:
 
 - `CertificateArn`: `str`
 - `Passphrase`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="exportcertificateresponsetypedef"></a>
 
 ## ExportCertificateResponseTypeDef
 
@@ -219,6 +245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="extendedkeyusagetypedef"></a>
+
 ## ExtendedKeyUsageTypeDef
 
 ```python
@@ -229,6 +257,8 @@ Optional fields:
 
 - `Name`: [ExtendedKeyUsageNameType](./literals.md#extendedkeyusagenametype)
 - `OID`: `str`
+
+<a id="filterstypedef"></a>
 
 ## FiltersTypeDef
 
@@ -243,6 +273,8 @@ Optional fields:
 - `keyUsage`: `Sequence`\[[KeyUsageNameType](./literals.md#keyusagenametype)\]
 - `keyTypes`: `Sequence`\[[KeyAlgorithmType](./literals.md#keyalgorithmtype)\]
 
+<a id="getaccountconfigurationresponsetypedef"></a>
+
 ## GetAccountConfigurationResponseTypeDef
 
 ```python
@@ -256,6 +288,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcertificaterequestrequesttypedef"></a>
+
 ## GetCertificateRequestRequestTypeDef
 
 ```python
@@ -265,6 +299,8 @@ from mypy_boto3_acm.type_defs import GetCertificateRequestRequestTypeDef
 Required fields:
 
 - `CertificateArn`: `str`
+
+<a id="getcertificateresponsetypedef"></a>
 
 ## GetCertificateResponseTypeDef
 
@@ -278,6 +314,8 @@ Required fields:
 - `CertificateChain`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importcertificaterequestrequesttypedef"></a>
 
 ## ImportCertificateRequestRequestTypeDef
 
@@ -296,6 +334,8 @@ Optional fields:
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="importcertificateresponsetypedef"></a>
+
 ## ImportCertificateResponseTypeDef
 
 ```python
@@ -308,6 +348,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="keyusagetypedef"></a>
+
 ## KeyUsageTypeDef
 
 ```python
@@ -317,6 +359,8 @@ from mypy_boto3_acm.type_defs import KeyUsageTypeDef
 Optional fields:
 
 - `Name`: [KeyUsageNameType](./literals.md#keyusagenametype)
+
+<a id="listcertificatesrequestrequesttypedef"></a>
 
 ## ListCertificatesRequestRequestTypeDef
 
@@ -332,6 +376,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxItems`: `int`
 
+<a id="listcertificatesresponsetypedef"></a>
+
 ## ListCertificatesResponseTypeDef
 
 ```python
@@ -346,6 +392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforcertificaterequestrequesttypedef"></a>
+
 ## ListTagsForCertificateRequestRequestTypeDef
 
 ```python
@@ -355,6 +403,8 @@ from mypy_boto3_acm.type_defs import ListTagsForCertificateRequestRequestTypeDef
 Required fields:
 
 - `CertificateArn`: `str`
+
+<a id="listtagsforcertificateresponsetypedef"></a>
 
 ## ListTagsForCertificateResponseTypeDef
 
@@ -368,6 +418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -379,6 +431,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putaccountconfigurationrequestrequesttypedef"></a>
 
 ## PutAccountConfigurationRequestRequestTypeDef
 
@@ -395,6 +449,8 @@ Optional fields:
 - `ExpiryEvents`:
   [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 
+<a id="removetagsfromcertificaterequestrequesttypedef"></a>
+
 ## RemoveTagsFromCertificateRequestRequestTypeDef
 
 ```python
@@ -406,6 +462,8 @@ Required fields:
 - `CertificateArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="renewcertificaterequestrequesttypedef"></a>
+
 ## RenewCertificateRequestRequestTypeDef
 
 ```python
@@ -415,6 +473,8 @@ from mypy_boto3_acm.type_defs import RenewCertificateRequestRequestTypeDef
 Required fields:
 
 - `CertificateArn`: `str`
+
+<a id="renewalsummarytypedef"></a>
 
 ## RenewalSummaryTypeDef
 
@@ -432,6 +492,8 @@ Required fields:
 Optional fields:
 
 - `RenewalStatusReason`: [FailureReasonType](./literals.md#failurereasontype)
+
+<a id="requestcertificaterequestrequesttypedef"></a>
 
 ## RequestCertificateRequestRequestTypeDef
 
@@ -456,6 +518,8 @@ Optional fields:
 - `CertificateAuthorityArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="requestcertificateresponsetypedef"></a>
+
 ## RequestCertificateResponseTypeDef
 
 ```python
@@ -467,6 +531,8 @@ Required fields:
 - `CertificateArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resendvalidationemailrequestrequesttypedef"></a>
 
 ## ResendValidationEmailRequestRequestTypeDef
 
@@ -480,6 +546,8 @@ Required fields:
 - `Domain`: `str`
 - `ValidationDomain`: `str`
 
+<a id="resourcerecordtypedef"></a>
+
 ## ResourceRecordTypeDef
 
 ```python
@@ -492,6 +560,8 @@ Required fields:
 - `Type`: `Literal['CNAME']` (see
   [RecordTypeType](./literals.md#recordtypetype))
 - `Value`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -507,6 +577,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -521,6 +593,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="updatecertificateoptionsrequestrequesttypedef"></a>
+
 ## UpdateCertificateOptionsRequestRequestTypeDef
 
 ```python
@@ -532,6 +606,8 @@ Required fields:
 - `CertificateArn`: `str`
 - `Options`:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

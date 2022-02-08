@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudhsmv2-module"></a>
+
 # Typed dictionaries for boto3 CloudHSMV2 module
 
 > [Index](..) > [CloudHSMV2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
-[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+[mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [Typed dictionaries for boto3 CloudHSMV2 module](#typed-dictionaries-for-boto3-cloudhsmv2-module)
   - [BackupRetentionPolicyTypeDef](#backupretentionpolicytypedef)
@@ -46,6 +48,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="backupretentionpolicytypedef"></a>
+
 ## BackupRetentionPolicyTypeDef
 
 ```python
@@ -57,6 +61,8 @@ Optional fields:
 - `Type`: `Literal['DAYS']` (see
   [BackupRetentionTypeType](./literals.md#backupretentiontypetype))
 - `Value`: `str`
+
+<a id="backuptypedef"></a>
 
 ## BackupTypeDef
 
@@ -81,6 +87,8 @@ Optional fields:
 - `DeleteTimestamp`: `datetime`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="certificatestypedef"></a>
+
 ## CertificatesTypeDef
 
 ```python
@@ -94,6 +102,8 @@ Optional fields:
 - `AwsHardwareCertificate`: `str`
 - `ManufacturerHardwareCertificate`: `str`
 - `ClusterCertificate`: `str`
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -121,6 +131,8 @@ Optional fields:
 - `Certificates`: [CertificatesTypeDef](./type_defs.md#certificatestypedef)
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="copybackuptoregionrequestrequesttypedef"></a>
+
 ## CopyBackupToRegionRequestRequestTypeDef
 
 ```python
@@ -136,6 +148,8 @@ Optional fields:
 
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="copybackuptoregionresponsetypedef"></a>
+
 ## CopyBackupToRegionResponseTypeDef
 
 ```python
@@ -148,6 +162,8 @@ Required fields:
   [DestinationBackupTypeDef](./type_defs.md#destinationbackuptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createclusterrequestrequesttypedef"></a>
 
 ## CreateClusterRequestRequestTypeDef
 
@@ -167,6 +183,8 @@ Optional fields:
 - `SourceBackupId`: `str`
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -178,6 +196,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhsmrequestrequesttypedef"></a>
 
 ## CreateHsmRequestRequestTypeDef
 
@@ -194,6 +214,8 @@ Optional fields:
 
 - `IpAddress`: `str`
 
+<a id="createhsmresponsetypedef"></a>
+
 ## CreateHsmResponseTypeDef
 
 ```python
@@ -206,6 +228,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackuprequestrequesttypedef"></a>
+
 ## DeleteBackupRequestRequestTypeDef
 
 ```python
@@ -215,6 +239,8 @@ from mypy_boto3_cloudhsmv2.type_defs import DeleteBackupRequestRequestTypeDef
 Required fields:
 
 - `BackupId`: `str`
+
+<a id="deletebackupresponsetypedef"></a>
 
 ## DeleteBackupResponseTypeDef
 
@@ -228,6 +254,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteclusterrequestrequesttypedef"></a>
+
 ## DeleteClusterRequestRequestTypeDef
 
 ```python
@@ -237,6 +265,8 @@ from mypy_boto3_cloudhsmv2.type_defs import DeleteClusterRequestRequestTypeDef
 Required fields:
 
 - `ClusterId`: `str`
+
+<a id="deleteclusterresponsetypedef"></a>
 
 ## DeleteClusterResponseTypeDef
 
@@ -249,6 +279,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletehsmrequestrequesttypedef"></a>
 
 ## DeleteHsmRequestRequestTypeDef
 
@@ -266,6 +298,8 @@ Optional fields:
 - `EniId`: `str`
 - `EniIp`: `str`
 
+<a id="deletehsmresponsetypedef"></a>
+
 ## DeleteHsmResponseTypeDef
 
 ```python
@@ -277,6 +311,8 @@ Required fields:
 - `HsmId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describebackupsrequestrequesttypedef"></a>
 
 ## DescribeBackupsRequestRequestTypeDef
 
@@ -291,6 +327,8 @@ Optional fields:
 - `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `SortAscending`: `bool`
 
+<a id="describebackupsresponsetypedef"></a>
+
 ## DescribeBackupsResponseTypeDef
 
 ```python
@@ -304,6 +342,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclustersrequestrequesttypedef"></a>
+
 ## DescribeClustersRequestRequestTypeDef
 
 ```python
@@ -315,6 +355,8 @@ Optional fields:
 - `Filters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeclustersresponsetypedef"></a>
 
 ## DescribeClustersResponseTypeDef
 
@@ -329,6 +371,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationbackuptypedef"></a>
+
 ## DestinationBackupTypeDef
 
 ```python
@@ -341,6 +385,8 @@ Optional fields:
 - `SourceRegion`: `str`
 - `SourceBackup`: `str`
 - `SourceCluster`: `str`
+
+<a id="hsmtypedef"></a>
 
 ## HsmTypeDef
 
@@ -362,6 +408,8 @@ Optional fields:
 - `State`: [HsmStateType](./literals.md#hsmstatetype)
 - `StateMessage`: `str`
 
+<a id="initializeclusterrequestrequesttypedef"></a>
+
 ## InitializeClusterRequestRequestTypeDef
 
 ```python
@@ -373,6 +421,8 @@ Required fields:
 - `ClusterId`: `str`
 - `SignedCert`: `str`
 - `TrustAnchor`: `str`
+
+<a id="initializeclusterresponsetypedef"></a>
 
 ## InitializeClusterResponseTypeDef
 
@@ -386,6 +436,8 @@ Required fields:
 - `StateMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsrequestrequesttypedef"></a>
 
 ## ListTagsRequestRequestTypeDef
 
@@ -402,6 +454,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsresponsetypedef"></a>
+
 ## ListTagsResponseTypeDef
 
 ```python
@@ -415,6 +469,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="modifybackupattributesrequestrequesttypedef"></a>
+
 ## ModifyBackupAttributesRequestRequestTypeDef
 
 ```python
@@ -425,6 +481,8 @@ Required fields:
 
 - `BackupId`: `str`
 - `NeverExpires`: `bool`
+
+<a id="modifybackupattributesresponsetypedef"></a>
 
 ## ModifyBackupAttributesResponseTypeDef
 
@@ -438,6 +496,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="modifyclusterrequestrequesttypedef"></a>
+
 ## ModifyClusterRequestRequestTypeDef
 
 ```python
@@ -449,6 +509,8 @@ Required fields:
 - `BackupRetentionPolicy`:
   [BackupRetentionPolicyTypeDef](./type_defs.md#backupretentionpolicytypedef)
 - `ClusterId`: `str`
+
+<a id="modifyclusterresponsetypedef"></a>
 
 ## ModifyClusterResponseTypeDef
 
@@ -462,6 +524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -473,6 +537,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -488,6 +554,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restorebackuprequestrequesttypedef"></a>
+
 ## RestoreBackupRequestRequestTypeDef
 
 ```python
@@ -497,6 +565,8 @@ from mypy_boto3_cloudhsmv2.type_defs import RestoreBackupRequestRequestTypeDef
 Required fields:
 
 - `BackupId`: `str`
+
+<a id="restorebackupresponsetypedef"></a>
 
 ## RestoreBackupResponseTypeDef
 
@@ -510,6 +580,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -521,6 +593,8 @@ Required fields:
 - `ResourceId`: `str`
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -531,6 +605,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

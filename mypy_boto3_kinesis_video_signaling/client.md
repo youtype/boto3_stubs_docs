@@ -1,3 +1,5 @@
+<a id="kinesisvideosignalingchannelsclient-for-boto3-kinesisvideosignalingchannels-module"></a>
+
 # KinesisVideoSignalingChannelsClient for boto3 KinesisVideoSignalingChannels module
 
 > [Index](..) > [KinesisVideoSignalingChannels](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
 type annotations stubs module
-[mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
+[mypy-boto3-kinesis-video-signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 - [KinesisVideoSignalingChannelsClient for boto3 KinesisVideoSignalingChannels module](#kinesisvideosignalingchannelsclient-for-boto3-kinesisvideosignalingchannels-module)
   - [KinesisVideoSignalingChannelsClient](#kinesisvideosignalingchannelsclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [get_ice_server_config](#get_ice_server_config)
     - [send_alexa_offer_to_master](#send_alexa_offer_to_master)
 
+<a id="kinesisvideosignalingchannelsclient"></a>
+
 ## KinesisVideoSignalingChannelsClient
 
 Type annotations for `boto3.client("kinesis-video-signaling")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("kinesis-video-signaling")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesis_video_signaling.client import KinesisVideoSignalingChannelsClient
 
 def get_kinesis-video-signaling_client() -> KinesisVideoSignalingChannelsClient:
-    return boto3.client("kinesis-video-signaling")
+    return Session().client("kinesis-video-signaling")
 ```
 
 Boto3 documentation:
 [KinesisVideoSignalingChannels.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.SessionExpiredException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -69,6 +80,8 @@ Boto3 documentation:
 [KinesisVideoSignalingChannels.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -85,6 +98,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -104,6 +119,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_ice_server_config"></a>
 
 ### get_ice_server_config
 
@@ -129,6 +146,8 @@ Keyword-only arguments:
 
 Returns
 [GetIceServerConfigResponseTypeDef](./type_defs.md#geticeserverconfigresponsetypedef).
+
+<a id="send_alexa_offer_to_master"></a>
 
 ### send_alexa_offer_to_master
 

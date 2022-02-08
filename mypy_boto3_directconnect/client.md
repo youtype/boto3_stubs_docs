@@ -1,3 +1,5 @@
+<a id="directconnectclient-for-boto3-directconnect-module"></a>
+
 # DirectConnectClient for boto3 DirectConnect module
 
 > [Index](..) > [DirectConnect](.) > DirectConnectClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DirectConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect)
 type annotations stubs module
-[mypy_boto3_directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
+[mypy-boto3-directconnect](https://pypi.org/project/mypy-boto3-directconnect/).
 
 - [DirectConnectClient for boto3 DirectConnect module](#directconnectclient-for-boto3-directconnect-module)
   - [DirectConnectClient](#directconnectclient)
@@ -79,6 +81,8 @@ type annotations stubs module
     - [update_virtual_interface_attributes](#update_virtual_interface_attributes)
     - [get_paginator](#get_paginator)
 
+<a id="directconnectclient"></a>
+
 ## DirectConnectClient
 
 Type annotations for `boto3.client("directconnect")`
@@ -86,14 +90,17 @@ Type annotations for `boto3.client("directconnect")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_directconnect.client import DirectConnectClient
 
 def get_directconnect_client() -> DirectConnectClient:
-    return boto3.client("directconnect")
+    return Session().client("directconnect")
 ```
 
 Boto3 documentation:
 [DirectConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -115,7 +122,11 @@ Exceptions:
 - `Exceptions.DuplicateTagKeysException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -127,6 +138,8 @@ Boto3 documentation:
 [DirectConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_direct_connect_gateway_association_proposal"></a>
 
 ### accept_direct_connect_gateway_association_proposal
 
@@ -154,6 +167,8 @@ Keyword-only arguments:
 Returns
 [AcceptDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalresulttypedef).
 
+<a id="allocate_connection_on_interconnect"></a>
+
 ### allocate_connection_on_interconnect
 
 Deprecated.
@@ -177,6 +192,8 @@ Keyword-only arguments:
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
+
+<a id="allocate_hosted_connection"></a>
 
 ### allocate_hosted_connection
 
@@ -204,6 +221,8 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
+<a id="allocate_private_virtual_interface"></a>
+
 ### allocate_private_virtual_interface
 
 Provisions a private virtual interface to be owned by the specified Amazon Web
@@ -228,6 +247,8 @@ Keyword-only arguments:
 
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
+
+<a id="allocate_public_virtual_interface"></a>
 
 ### allocate_public_virtual_interface
 
@@ -254,6 +275,8 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
+<a id="allocate_transit_virtual_interface"></a>
+
 ### allocate_transit_virtual_interface
 
 Provisions a transit virtual interface to be owned by the specified Amazon Web
@@ -279,6 +302,8 @@ Keyword-only arguments:
 Returns
 [AllocateTransitVirtualInterfaceResultTypeDef](./type_defs.md#allocatetransitvirtualinterfaceresulttypedef).
 
+<a id="associate_connection_with_lag"></a>
+
 ### associate_connection_with_lag
 
 Associates an existing connection with a link aggregation group (LAG).
@@ -299,6 +324,8 @@ Keyword-only arguments:
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
+
+<a id="associate_hosted_connection"></a>
 
 ### associate_hosted_connection
 
@@ -321,6 +348,8 @@ Keyword-only arguments:
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
+
+<a id="associate_mac_sec_key"></a>
 
 ### associate_mac_sec_key
 
@@ -346,6 +375,8 @@ Keyword-only arguments:
 Returns
 [AssociateMacSecKeyResponseTypeDef](./type_defs.md#associatemacseckeyresponsetypedef).
 
+<a id="associate_virtual_interface"></a>
+
 ### associate_virtual_interface
 
 Associates a virtual interface with a specified link aggregation group (LAG) or
@@ -368,6 +399,8 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -382,6 +415,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="confirm_connection"></a>
 
 ### confirm_connection
 
@@ -401,6 +436,8 @@ Keyword-only arguments:
 
 Returns
 [ConfirmConnectionResponseTypeDef](./type_defs.md#confirmconnectionresponsetypedef).
+
+<a id="confirm_customer_agreement"></a>
 
 ### confirm_customer_agreement
 
@@ -422,6 +459,8 @@ Keyword-only arguments:
 
 Returns
 [ConfirmCustomerAgreementResponseTypeDef](./type_defs.md#confirmcustomeragreementresponsetypedef).
+
+<a id="confirm_private_virtual_interface"></a>
 
 ### confirm_private_virtual_interface
 
@@ -446,6 +485,8 @@ Keyword-only arguments:
 Returns
 [ConfirmPrivateVirtualInterfaceResponseTypeDef](./type_defs.md#confirmprivatevirtualinterfaceresponsetypedef).
 
+<a id="confirm_public_virtual_interface"></a>
+
 ### confirm_public_virtual_interface
 
 Accepts ownership of a public virtual interface created by another Amazon Web
@@ -466,6 +507,8 @@ Keyword-only arguments:
 
 Returns
 [ConfirmPublicVirtualInterfaceResponseTypeDef](./type_defs.md#confirmpublicvirtualinterfaceresponsetypedef).
+
+<a id="confirm_transit_virtual_interface"></a>
 
 ### confirm_transit_virtual_interface
 
@@ -489,6 +532,8 @@ Keyword-only arguments:
 Returns
 [ConfirmTransitVirtualInterfaceResponseTypeDef](./type_defs.md#confirmtransitvirtualinterfaceresponsetypedef).
 
+<a id="create_bgp_peer"></a>
+
 ### create_bgp_peer
 
 Creates a BGP peer on the specified virtual interface.
@@ -508,6 +553,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBGPPeerResponseTypeDef](./type_defs.md#createbgppeerresponsetypedef).
+
+<a id="create_connection"></a>
 
 ### create_connection
 
@@ -535,6 +582,8 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
+<a id="create_direct_connect_gateway"></a>
+
 ### create_direct_connect_gateway
 
 Creates a Direct Connect gateway, which is an intermediate object that enables
@@ -556,6 +605,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDirectConnectGatewayResultTypeDef](./type_defs.md#createdirectconnectgatewayresulttypedef).
+
+<a id="create_direct_connect_gateway_association"></a>
 
 ### create_direct_connect_gateway_association
 
@@ -582,6 +633,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationresulttypedef).
+
+<a id="create_direct_connect_gateway_association_proposal"></a>
 
 ### create_direct_connect_gateway_association_proposal
 
@@ -611,6 +664,8 @@ Keyword-only arguments:
 Returns
 [CreateDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalresulttypedef).
 
+<a id="create_interconnect"></a>
+
 ### create_interconnect
 
 Creates an interconnect between an Direct Connect Partner's network and a
@@ -636,6 +691,8 @@ Keyword-only arguments:
 
 Returns
 [InterconnectResponseMetadataTypeDef](./type_defs.md#interconnectresponsemetadatatypedef).
+
+<a id="create_lag"></a>
 
 ### create_lag
 
@@ -666,6 +723,8 @@ Keyword-only arguments:
 Returns
 [LagResponseMetadataTypeDef](./type_defs.md#lagresponsemetadatatypedef).
 
+<a id="create_private_virtual_interface"></a>
+
 ### create_private_virtual_interface
 
 Creates a private virtual interface.
@@ -688,6 +747,8 @@ Keyword-only arguments:
 
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
+
+<a id="create_public_virtual_interface"></a>
 
 ### create_public_virtual_interface
 
@@ -712,6 +773,8 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
+<a id="create_transit_virtual_interface"></a>
+
 ### create_transit_virtual_interface
 
 Creates a transit virtual interface.
@@ -734,6 +797,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTransitVirtualInterfaceResultTypeDef](./type_defs.md#createtransitvirtualinterfaceresulttypedef).
+
+<a id="delete_bgp_peer"></a>
 
 ### delete_bgp_peer
 
@@ -758,6 +823,8 @@ Keyword-only arguments:
 Returns
 [DeleteBGPPeerResponseTypeDef](./type_defs.md#deletebgppeerresponsetypedef).
 
+<a id="delete_connection"></a>
+
 ### delete_connection
 
 Deletes the specified connection.
@@ -776,6 +843,8 @@ Keyword-only arguments:
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
+
+<a id="delete_direct_connect_gateway"></a>
 
 ### delete_direct_connect_gateway
 
@@ -796,6 +865,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDirectConnectGatewayResultTypeDef](./type_defs.md#deletedirectconnectgatewayresulttypedef).
+
+<a id="delete_direct_connect_gateway_association"></a>
 
 ### delete_direct_connect_gateway_association
 
@@ -821,6 +892,8 @@ Keyword-only arguments:
 Returns
 [DeleteDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationresulttypedef).
 
+<a id="delete_direct_connect_gateway_association_proposal"></a>
+
 ### delete_direct_connect_gateway_association_proposal
 
 Deletes the association proposal request between the specified Direct Connect
@@ -843,6 +916,8 @@ Keyword-only arguments:
 Returns
 [DeleteDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationproposalresulttypedef).
 
+<a id="delete_interconnect"></a>
+
 ### delete_interconnect
 
 Deletes the specified interconnect.
@@ -863,6 +938,8 @@ Keyword-only arguments:
 Returns
 [DeleteInterconnectResponseTypeDef](./type_defs.md#deleteinterconnectresponsetypedef).
 
+<a id="delete_lag"></a>
+
 ### delete_lag
 
 Deletes the specified link aggregation group (LAG).
@@ -881,6 +958,8 @@ Keyword-only arguments:
 
 Returns
 [LagResponseMetadataTypeDef](./type_defs.md#lagresponsemetadatatypedef).
+
+<a id="delete_virtual_interface"></a>
 
 ### delete_virtual_interface
 
@@ -901,6 +980,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteVirtualInterfaceResponseTypeDef](./type_defs.md#deletevirtualinterfaceresponsetypedef).
+
+<a id="describe_connection_loa"></a>
 
 ### describe_connection_loa
 
@@ -925,6 +1006,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionLoaResponseTypeDef](./type_defs.md#describeconnectionloaresponsetypedef).
 
+<a id="describe_connections"></a>
+
 ### describe_connections
 
 Displays the specified connection or all connections in this Region.
@@ -943,6 +1026,8 @@ Keyword-only arguments:
 - `connectionId`: `str`
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
+
+<a id="describe_connections_on_interconnect"></a>
 
 ### describe_connections_on_interconnect
 
@@ -963,6 +1048,8 @@ Keyword-only arguments:
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
+<a id="describe_customer_metadata"></a>
+
 ### describe_customer_metadata
 
 Get and view a list of customer agreements, along with their signed status and
@@ -976,6 +1063,8 @@ Boto3 documentation:
 
 Returns
 [DescribeCustomerMetadataResponseTypeDef](./type_defs.md#describecustomermetadataresponsetypedef).
+
+<a id="describe_direct_connect_gateway_association_proposals"></a>
 
 ### describe_direct_connect_gateway_association_proposals
 
@@ -1002,6 +1091,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsresulttypedef).
+
+<a id="describe_direct_connect_gateway_associations"></a>
 
 ### describe_direct_connect_gateway_associations
 
@@ -1030,6 +1121,8 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef).
 
+<a id="describe_direct_connect_gateway_attachments"></a>
+
 ### describe_direct_connect_gateway_attachments
 
 Lists the attachments between your Direct Connect gateways and virtual
@@ -1055,6 +1148,8 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef).
 
+<a id="describe_direct_connect_gateways"></a>
+
 ### describe_direct_connect_gateways
 
 Lists all your Direct Connect gateways or only the specified Direct Connect
@@ -1078,6 +1173,8 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef).
 
+<a id="describe_hosted_connections"></a>
+
 ### describe_hosted_connections
 
 Lists the hosted connections that have been provisioned on the specified
@@ -1097,6 +1194,8 @@ Keyword-only arguments:
 - `connectionId`: `str` *(required)*
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
+
+<a id="describe_interconnect_loa"></a>
 
 ### describe_interconnect_loa
 
@@ -1121,6 +1220,8 @@ Keyword-only arguments:
 Returns
 [DescribeInterconnectLoaResponseTypeDef](./type_defs.md#describeinterconnectloaresponsetypedef).
 
+<a id="describe_interconnects"></a>
+
 ### describe_interconnects
 
 Lists the interconnects owned by the Amazon Web Services account or only the
@@ -1141,6 +1242,8 @@ Keyword-only arguments:
 
 Returns [InterconnectsTypeDef](./type_defs.md#interconnectstypedef).
 
+<a id="describe_lags"></a>
+
 ### describe_lags
 
 Describes all your link aggregation groups (LAG) or the specified LAG.
@@ -1158,6 +1261,8 @@ Keyword-only arguments:
 - `lagId`: `str`
 
 Returns [LagsTypeDef](./type_defs.md#lagstypedef).
+
+<a id="describe_loa"></a>
 
 ### describe_loa
 
@@ -1182,6 +1287,8 @@ Keyword-only arguments:
 Returns
 [LoaResponseMetadataTypeDef](./type_defs.md#loaresponsemetadatatypedef).
 
+<a id="describe_locations"></a>
+
 ### describe_locations
 
 Lists the Direct Connect locations in the current Amazon Web Services Region.
@@ -1192,6 +1299,8 @@ Boto3 documentation:
 [DirectConnect.Client.describe_locations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_locations)
 
 Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
+
+<a id="describe_router_configuration"></a>
 
 ### describe_router_configuration
 
@@ -1214,6 +1323,8 @@ Keyword-only arguments:
 Returns
 [DescribeRouterConfigurationResponseTypeDef](./type_defs.md#describerouterconfigurationresponsetypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Describes the tags associated with the specified Direct Connect resources.
@@ -1233,6 +1344,8 @@ Keyword-only arguments:
 Returns
 [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
+<a id="describe_virtual_gateways"></a>
+
 ### describe_virtual_gateways
 
 Lists the virtual private gateways owned by the Amazon Web Services account.
@@ -1244,6 +1357,8 @@ Boto3 documentation:
 [DirectConnect.Client.describe_virtual_gateways](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/directconnect.html#DirectConnect.Client.describe_virtual_gateways)
 
 Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
+
+<a id="describe_virtual_interfaces"></a>
 
 ### describe_virtual_interfaces
 
@@ -1265,6 +1380,8 @@ Keyword-only arguments:
 
 Returns [VirtualInterfacesTypeDef](./type_defs.md#virtualinterfacestypedef).
 
+<a id="disassociate_connection_from_lag"></a>
+
 ### disassociate_connection_from_lag
 
 Disassociates a connection from a link aggregation group (LAG).
@@ -1285,6 +1402,8 @@ Keyword-only arguments:
 
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
+
+<a id="disassociate_mac_sec_key"></a>
 
 ### disassociate_mac_sec_key
 
@@ -1308,6 +1427,8 @@ Keyword-only arguments:
 Returns
 [DisassociateMacSecKeyResponseTypeDef](./type_defs.md#disassociatemacseckeyresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1326,6 +1447,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_virtual_interface_test_history"></a>
 
 ### list_virtual_interface_test_history
 
@@ -1352,6 +1475,8 @@ Keyword-only arguments:
 Returns
 [ListVirtualInterfaceTestHistoryResponseTypeDef](./type_defs.md#listvirtualinterfacetesthistoryresponsetypedef).
 
+<a id="start_bgp_failover_test"></a>
+
 ### start_bgp_failover_test
 
 Starts the virtual interface failover test that verifies your configuration
@@ -1376,6 +1501,8 @@ Keyword-only arguments:
 Returns
 [StartBgpFailoverTestResponseTypeDef](./type_defs.md#startbgpfailovertestresponsetypedef).
 
+<a id="stop_bgp_failover_test"></a>
+
 ### stop_bgp_failover_test
 
 Stops the virtual interface failover test.
@@ -1396,6 +1523,8 @@ Keyword-only arguments:
 Returns
 [StopBgpFailoverTestResponseTypeDef](./type_defs.md#stopbgpfailovertestresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified Direct Connect resource.
@@ -1415,6 +1544,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified Direct Connect resource.
@@ -1433,6 +1564,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_connection"></a>
 
 ### update_connection
 
@@ -1455,6 +1588,8 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
+<a id="update_direct_connect_gateway"></a>
+
 ### update_direct_connect_gateway
 
 Updates the name of a current Direct Connect gateway.
@@ -1475,6 +1610,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDirectConnectGatewayResponseTypeDef](./type_defs.md#updatedirectconnectgatewayresponsetypedef).
+
+<a id="update_direct_connect_gateway_association"></a>
 
 ### update_direct_connect_gateway_association
 
@@ -1501,6 +1638,8 @@ Keyword-only arguments:
 Returns
 [UpdateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#updatedirectconnectgatewayassociationresulttypedef).
 
+<a id="update_lag"></a>
+
 ### update_lag
 
 Updates the attributes of the specified link aggregation group (LAG).
@@ -1522,6 +1661,8 @@ Keyword-only arguments:
 
 Returns
 [LagResponseMetadataTypeDef](./type_defs.md#lagresponsemetadatatypedef).
+
+<a id="update_virtual_interface_attributes"></a>
 
 ### update_virtual_interface_attributes
 
@@ -1545,6 +1686,8 @@ Keyword-only arguments:
 
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

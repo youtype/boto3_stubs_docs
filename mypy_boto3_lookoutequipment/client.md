@@ -1,3 +1,5 @@
+<a id="lookoutequipmentclient-for-boto3-lookoutequipment-module"></a>
+
 # LookoutEquipmentClient for boto3 LookoutEquipment module
 
 > [Index](..) > [LookoutEquipment](.) > LookoutEquipmentClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutEquipment](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment)
 type annotations stubs module
-[mypy_boto3_lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
+[mypy-boto3-lookoutequipment](https://pypi.org/project/mypy-boto3-lookoutequipment/).
 
 - [LookoutEquipmentClient for boto3 LookoutEquipment module](#lookoutequipmentclient-for-boto3-lookoutequipment-module)
   - [LookoutEquipmentClient](#lookoutequipmentclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_inference_scheduler](#update_inference_scheduler)
 
+<a id="lookoutequipmentclient"></a>
+
 ## LookoutEquipmentClient
 
 Type annotations for `boto3.client("lookoutequipment")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("lookoutequipment")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lookoutequipment.client import LookoutEquipmentClient
 
 def get_lookoutequipment_client() -> LookoutEquipmentClient:
-    return boto3.client("lookoutequipment")
+    return Session().client("lookoutequipment")
 ```
 
 Boto3 documentation:
 [LookoutEquipment.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -76,7 +83,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -88,6 +99,8 @@ Boto3 documentation:
 [LookoutEquipment.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutequipment.html#LookoutEquipment.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -103,6 +116,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_dataset"></a>
 
 ### create_dataset
 
@@ -127,6 +142,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+
+<a id="create_inference_scheduler"></a>
 
 ### create_inference_scheduler
 
@@ -162,6 +179,8 @@ Keyword-only arguments:
 Returns
 [CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef).
 
+<a id="create_model"></a>
+
 ### create_model
 
 Creates an ML model for data inference.
@@ -196,6 +215,8 @@ Keyword-only arguments:
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
+<a id="delete_dataset"></a>
+
 ### delete_dataset
 
 Deletes a dataset and associated artifacts.
@@ -211,6 +232,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
+
+<a id="delete_inference_scheduler"></a>
 
 ### delete_inference_scheduler
 
@@ -229,6 +252,8 @@ Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
+<a id="delete_model"></a>
+
 ### delete_model
 
 Deletes an ML model currently available for Amazon Lookout for Equipment.
@@ -244,6 +269,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
+
+<a id="describe_data_ingestion_job"></a>
 
 ### describe_data_ingestion_job
 
@@ -266,6 +293,8 @@ Keyword-only arguments:
 Returns
 [DescribeDataIngestionJobResponseTypeDef](./type_defs.md#describedataingestionjobresponsetypedef).
 
+<a id="describe_dataset"></a>
+
 ### describe_dataset
 
 Provides a JSON description of the data that is in each time series dataset,
@@ -286,6 +315,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+
+<a id="describe_inference_scheduler"></a>
 
 ### describe_inference_scheduler
 
@@ -309,6 +340,8 @@ Keyword-only arguments:
 Returns
 [DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef).
 
+<a id="describe_model"></a>
+
 ### describe_model
 
 Provides a JSON containing the overall information about a specific ML model,
@@ -330,6 +363,8 @@ Keyword-only arguments:
 Returns
 [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -348,6 +383,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_data_ingestion_jobs"></a>
 
 ### list_data_ingestion_jobs
 
@@ -373,6 +410,8 @@ Keyword-only arguments:
 Returns
 [ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef).
 
+<a id="list_datasets"></a>
+
 ### list_datasets
 
 Lists all datasets currently available in your account, filtering on the
@@ -394,6 +433,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+<a id="list_inference_executions"></a>
 
 ### list_inference_executions
 
@@ -422,6 +463,8 @@ Keyword-only arguments:
 Returns
 [ListInferenceExecutionsResponseTypeDef](./type_defs.md#listinferenceexecutionsresponsetypedef).
 
+<a id="list_inference_schedulers"></a>
+
 ### list_inference_schedulers
 
 Retrieves a list of all inference schedulers currently available for your
@@ -446,6 +489,8 @@ Keyword-only arguments:
 Returns
 [ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef).
 
+<a id="list_models"></a>
+
 ### list_models
 
 Generates a list of all models in the account, including model name and ARN,
@@ -469,6 +514,8 @@ Keyword-only arguments:
 
 Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all the tags for a specified resource, including key and value.
@@ -488,6 +535,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="start_data_ingestion_job"></a>
 
 ### start_data_ingestion_job
 
@@ -514,6 +563,8 @@ Keyword-only arguments:
 Returns
 [StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef).
 
+<a id="start_inference_scheduler"></a>
+
 ### start_inference_scheduler
 
 Starts an inference scheduler.
@@ -533,6 +584,8 @@ Keyword-only arguments:
 
 Returns
 [StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef).
+
+<a id="stop_inference_scheduler"></a>
 
 ### stop_inference_scheduler
 
@@ -554,6 +607,8 @@ Keyword-only arguments:
 Returns
 [StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates a given tag to a resource in your account.
@@ -573,6 +628,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a specific tag from a given resource.
@@ -591,6 +648,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_inference_scheduler"></a>
 
 ### update_inference_scheduler
 

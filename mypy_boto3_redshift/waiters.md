@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-redshift-module"></a>
+
 # Waiters for boto3 Redshift module
 
 > [Index](..) > [Redshift](.) > Waiters
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module
-[mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
+[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [Waiters for boto3 Redshift module](#waiters-for-boto3-redshift-module)
   - [ClusterAvailableWaiter](#clusteravailablewaiter)
   - [ClusterDeletedWaiter](#clusterdeletedwaiter)
   - [ClusterRestoredWaiter](#clusterrestoredwaiter)
   - [SnapshotAvailableWaiter](#snapshotavailablewaiter)
+
+<a id="clusteravailablewaiter"></a>
 
 ## ClusterAvailableWaiter
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.waiter import ClusterAvailableWaiter
 
 def get_cluster_available_waiter() -> ClusterAvailableWaiter:
-    return boto3.client("redshift").get_waiter("cluster_available")
+    return Session().client("redshift").get_waiter("cluster_available")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ClusterAvailableWaiter.wait` method:
 - `TagValues`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="clusterdeletedwaiter"></a>
+
 ## ClusterDeletedWaiter
 
 Type annotations for `boto3.client("redshift").get_waiter("cluster_deleted")`.
@@ -46,10 +54,12 @@ Type annotations for `boto3.client("redshift").get_waiter("cluster_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.waiter import ClusterDeletedWaiter
 
 def get_cluster_deleted_waiter() -> ClusterDeletedWaiter:
-    return boto3.client("redshift").get_waiter("cluster_deleted")
+    return Session().client("redshift").get_waiter("cluster_deleted")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ClusterDeletedWaiter.wait` method:
 - `TagValues`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="clusterrestoredwaiter"></a>
+
 ## ClusterRestoredWaiter
 
 Type annotations for `boto3.client("redshift").get_waiter("cluster_restored")`.
@@ -71,10 +83,12 @@ Type annotations for `boto3.client("redshift").get_waiter("cluster_restored")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.waiter import ClusterRestoredWaiter
 
 def get_cluster_restored_waiter() -> ClusterRestoredWaiter:
-    return boto3.client("redshift").get_waiter("cluster_restored")
+    return Session().client("redshift").get_waiter("cluster_restored")
 ```
 
 Boto3 documentation:
@@ -89,6 +103,8 @@ Arguments for `ClusterRestoredWaiter.wait` method:
 - `TagValues`: `Sequence`\[`str`\]
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="snapshotavailablewaiter"></a>
+
 ## SnapshotAvailableWaiter
 
 Type annotations for
@@ -97,10 +113,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_redshift.waiter import SnapshotAvailableWaiter
 
 def get_snapshot_available_waiter() -> SnapshotAvailableWaiter:
-    return boto3.client("redshift").get_waiter("snapshot_available")
+    return Session().client("redshift").get_waiter("snapshot_available")
 ```
 
 Boto3 documentation:

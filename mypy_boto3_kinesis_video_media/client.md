@@ -1,3 +1,5 @@
+<a id="kinesisvideomediaclient-for-boto3-kinesisvideomedia-module"></a>
+
 # KinesisVideoMediaClient for boto3 KinesisVideoMedia module
 
 > [Index](..) > [KinesisVideoMedia](.) > KinesisVideoMediaClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideoMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
+[mypy-boto3-kinesis-video-media](https://pypi.org/project/mypy-boto3-kinesis-video-media/).
 
 - [KinesisVideoMediaClient for boto3 KinesisVideoMedia module](#kinesisvideomediaclient-for-boto3-kinesisvideomedia-module)
   - [KinesisVideoMediaClient](#kinesisvideomediaclient)
@@ -16,6 +18,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_media](#get_media)
 
+<a id="kinesisvideomediaclient"></a>
+
 ## KinesisVideoMediaClient
 
 Type annotations for `boto3.client("kinesis-video-media")`
@@ -23,14 +27,17 @@ Type annotations for `boto3.client("kinesis-video-media")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesis_video_media.client import KinesisVideoMediaClient
 
 def get_kinesis-video-media_client() -> KinesisVideoMediaClient:
-    return boto3.client("kinesis-video-media")
+    return Session().client("kinesis-video-media")
 ```
 
 Boto3 documentation:
 [KinesisVideoMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -54,7 +61,11 @@ Exceptions:
 - `Exceptions.NotAuthorizedException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -66,6 +77,8 @@ Boto3 documentation:
 [KinesisVideoMedia.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-media.html#KinesisVideoMedia.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -81,6 +94,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -100,6 +115,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_media"></a>
 
 ### get_media
 

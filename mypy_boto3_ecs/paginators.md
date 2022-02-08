@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ecs-module"></a>
+
 # Paginators for boto3 ECS module
 
 > [Index](..) > [ECS](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module
-[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [Paginators for boto3 ECS module](#paginators-for-boto3-ecs-module)
   - [ListAccountSettingsPaginator](#listaccountsettingspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListTaskDefinitionsPaginator](#listtaskdefinitionspaginator)
   - [ListTasksPaginator](#listtaskspaginator)
 
+<a id="listaccountsettingspaginator"></a>
+
 ## ListAccountSettingsPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListAccountSettingsPaginator
 
 def get_list_account_settings_paginator() -> ListAccountSettingsPaginator:
-    return boto3.client("ecs").get_paginator("list_account_settings")
+    return Session().client("ecs").get_paginator("list_account_settings")
 ```
 
 Boto3 documentation:
@@ -46,6 +52,8 @@ Arguments for `ListAccountSettingsPaginator.paginate` method:
 `ListAccountSettingsPaginator.paginate` returns
 `_PageIterator`\[[ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef)\].
 
+<a id="listattributespaginator"></a>
+
 ## ListAttributesPaginator
 
 Type annotations for `boto3.client("ecs").get_paginator("list_attributes")`.
@@ -53,10 +61,12 @@ Type annotations for `boto3.client("ecs").get_paginator("list_attributes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListAttributesPaginator
 
 def get_list_attributes_paginator() -> ListAttributesPaginator:
-    return boto3.client("ecs").get_paginator("list_attributes")
+    return Session().client("ecs").get_paginator("list_attributes")
 ```
 
 Boto3 documentation:
@@ -75,6 +85,8 @@ Arguments for `ListAttributesPaginator.paginate` method:
 `ListAttributesPaginator.paginate` returns
 `_PageIterator`\[[ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef)\].
 
+<a id="listclusterspaginator"></a>
+
 ## ListClustersPaginator
 
 Type annotations for `boto3.client("ecs").get_paginator("list_clusters")`.
@@ -82,10 +94,12 @@ Type annotations for `boto3.client("ecs").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
-    return boto3.client("ecs").get_paginator("list_clusters")
+    return Session().client("ecs").get_paginator("list_clusters")
 ```
 
 Boto3 documentation:
@@ -99,6 +113,8 @@ Arguments for `ListClustersPaginator.paginate` method:
 `ListClustersPaginator.paginate` returns
 `_PageIterator`\[[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)\].
 
+<a id="listcontainerinstancespaginator"></a>
+
 ## ListContainerInstancesPaginator
 
 Type annotations for
@@ -107,10 +123,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListContainerInstancesPaginator
 
 def get_list_container_instances_paginator() -> ListContainerInstancesPaginator:
-    return boto3.client("ecs").get_paginator("list_container_instances")
+    return Session().client("ecs").get_paginator("list_container_instances")
 ```
 
 Boto3 documentation:
@@ -128,6 +146,8 @@ Arguments for `ListContainerInstancesPaginator.paginate` method:
 `ListContainerInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef)\].
 
+<a id="listservicespaginator"></a>
+
 ## ListServicesPaginator
 
 Type annotations for `boto3.client("ecs").get_paginator("list_services")`.
@@ -135,10 +155,12 @@ Type annotations for `boto3.client("ecs").get_paginator("list_services")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListServicesPaginator
 
 def get_list_services_paginator() -> ListServicesPaginator:
-    return boto3.client("ecs").get_paginator("list_services")
+    return Session().client("ecs").get_paginator("list_services")
 ```
 
 Boto3 documentation:
@@ -156,6 +178,8 @@ Arguments for `ListServicesPaginator.paginate` method:
 `ListServicesPaginator.paginate` returns
 `_PageIterator`\[[ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef)\].
 
+<a id="listtaskdefinitionfamiliespaginator"></a>
+
 ## ListTaskDefinitionFamiliesPaginator
 
 Type annotations for
@@ -164,10 +188,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListTaskDefinitionFamiliesPaginator
 
 def get_list_task_definition_families_paginator() -> ListTaskDefinitionFamiliesPaginator:
-    return boto3.client("ecs").get_paginator("list_task_definition_families")
+    return Session().client("ecs").get_paginator("list_task_definition_families")
 ```
 
 Boto3 documentation:
@@ -184,6 +210,8 @@ Arguments for `ListTaskDefinitionFamiliesPaginator.paginate` method:
 `ListTaskDefinitionFamiliesPaginator.paginate` returns
 `_PageIterator`\[[ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef)\].
 
+<a id="listtaskdefinitionspaginator"></a>
+
 ## ListTaskDefinitionsPaginator
 
 Type annotations for
@@ -192,10 +220,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListTaskDefinitionsPaginator
 
 def get_list_task_definitions_paginator() -> ListTaskDefinitionsPaginator:
-    return boto3.client("ecs").get_paginator("list_task_definitions")
+    return Session().client("ecs").get_paginator("list_task_definitions")
 ```
 
 Boto3 documentation:
@@ -212,6 +242,8 @@ Arguments for `ListTaskDefinitionsPaginator.paginate` method:
 `ListTaskDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef)\].
 
+<a id="listtaskspaginator"></a>
+
 ## ListTasksPaginator
 
 Type annotations for `boto3.client("ecs").get_paginator("list_tasks")`.
@@ -219,10 +251,12 @@ Type annotations for `boto3.client("ecs").get_paginator("list_tasks")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ecs.paginator import ListTasksPaginator
 
 def get_list_tasks_paginator() -> ListTasksPaginator:
-    return boto3.client("ecs").get_paginator("list_tasks")
+    return Session().client("ecs").get_paginator("list_tasks")
 ```
 
 Boto3 documentation:

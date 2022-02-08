@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-dynamodb-module"></a>
+
 # Typed dictionaries for boto3 DynamoDB module
 
 > [Index](..) > [DynamoDB](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB)
 type annotations stubs module
-[mypy_boto3_dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
+[mypy-boto3-dynamodb](https://pypi.org/project/mypy-boto3-dynamodb/).
 
 - [Typed dictionaries for boto3 DynamoDB module](#typed-dictionaries-for-boto3-dynamodb-module)
   - [ArchivalSummaryResponseMetadataTypeDef](#archivalsummaryresponsemetadatatypedef)
@@ -218,6 +220,8 @@ type annotations stubs module
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WriteRequestTypeDef](#writerequesttypedef)
 
+<a id="archivalsummaryresponsemetadatatypedef"></a>
+
 ## ArchivalSummaryResponseMetadataTypeDef
 
 ```python
@@ -232,6 +236,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="archivalsummarytypedef"></a>
+
 ## ArchivalSummaryTypeDef
 
 ```python
@@ -244,6 +250,8 @@ Optional fields:
 - `ArchivalReason`: `str`
 - `ArchivalBackupArn`: `str`
 
+<a id="attributedefinitiontypedef"></a>
+
 ## AttributeDefinitionTypeDef
 
 ```python
@@ -255,6 +263,8 @@ Required fields:
 - `AttributeName`: `str`
 - `AttributeType`:
   [ScalarAttributeTypeType](./literals.md#scalarattributetypetype)
+
+<a id="attributevalueupdatetypedef"></a>
 
 ## AttributeValueUpdateTypeDef
 
@@ -270,6 +280,8 @@ Optional fields:
   `None`\]
 - `Action`: [AttributeActionType](./literals.md#attributeactiontype)
 
+<a id="autoscalingpolicydescriptiontypedef"></a>
+
 ## AutoScalingPolicyDescriptionTypeDef
 
 ```python
@@ -281,6 +293,8 @@ Optional fields:
 - `PolicyName`: `str`
 - `TargetTrackingScalingPolicyConfiguration`:
   [AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef](./type_defs.md#autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef)
+
+<a id="autoscalingpolicyupdatetypedef"></a>
 
 ## AutoScalingPolicyUpdateTypeDef
 
@@ -297,6 +311,8 @@ Optional fields:
 
 - `PolicyName`: `str`
 
+<a id="autoscalingsettingsdescriptiontypedef"></a>
+
 ## AutoScalingSettingsDescriptionTypeDef
 
 ```python
@@ -312,6 +328,8 @@ Optional fields:
 - `ScalingPolicies`:
   `List`\[[AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef)\]
 
+<a id="autoscalingsettingsupdatetypedef"></a>
+
 ## AutoScalingSettingsUpdateTypeDef
 
 ```python
@@ -326,6 +344,8 @@ Optional fields:
 - `AutoScalingRoleArn`: `str`
 - `ScalingPolicyUpdate`:
   [AutoScalingPolicyUpdateTypeDef](./type_defs.md#autoscalingpolicyupdatetypedef)
+
+<a id="autoscalingtargettrackingscalingpolicyconfigurationdescriptiontypedef"></a>
 
 ## AutoScalingTargetTrackingScalingPolicyConfigurationDescriptionTypeDef
 
@@ -343,6 +363,8 @@ Optional fields:
 - `ScaleInCooldown`: `int`
 - `ScaleOutCooldown`: `int`
 
+<a id="autoscalingtargettrackingscalingpolicyconfigurationupdatetypedef"></a>
+
 ## AutoScalingTargetTrackingScalingPolicyConfigurationUpdateTypeDef
 
 ```python
@@ -359,6 +381,8 @@ Optional fields:
 - `ScaleInCooldown`: `int`
 - `ScaleOutCooldown`: `int`
 
+<a id="backupdescriptiontypedef"></a>
+
 ## BackupDescriptionTypeDef
 
 ```python
@@ -372,6 +396,8 @@ Optional fields:
   [SourceTableDetailsTypeDef](./type_defs.md#sourcetabledetailstypedef)
 - `SourceTableFeatureDetails`:
   [SourceTableFeatureDetailsTypeDef](./type_defs.md#sourcetablefeaturedetailstypedef)
+
+<a id="backupdetailstypedef"></a>
 
 ## BackupDetailsTypeDef
 
@@ -392,6 +418,8 @@ Optional fields:
 - `BackupSizeBytes`: `int`
 - `BackupExpiryDateTime`: `datetime`
 
+<a id="backupsummarytypedef"></a>
+
 ## BackupSummaryTypeDef
 
 ```python
@@ -411,6 +439,8 @@ Optional fields:
 - `BackupType`: [BackupTypeType](./literals.md#backuptypetype)
 - `BackupSizeBytes`: `int`
 
+<a id="batchexecutestatementinputrequesttypedef"></a>
+
 ## BatchExecuteStatementInputRequestTypeDef
 
 ```python
@@ -427,6 +457,8 @@ Optional fields:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
+<a id="batchexecutestatementoutputtypedef"></a>
+
 ## BatchExecuteStatementOutputTypeDef
 
 ```python
@@ -441,6 +473,8 @@ Required fields:
   `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchgetiteminputrequesttypedef"></a>
 
 ## BatchGetItemInputRequestTypeDef
 
@@ -458,6 +492,8 @@ Optional fields:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
+<a id="batchgetiteminputserviceresourcetypedef"></a>
+
 ## BatchGetItemInputServiceResourceTypeDef
 
 ```python
@@ -473,6 +509,8 @@ Optional fields:
 
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+
+<a id="batchgetitemoutputtypedef"></a>
 
 ## BatchGetItemOutputTypeDef
 
@@ -493,6 +531,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchstatementerrortypedef"></a>
+
 ## BatchStatementErrorTypeDef
 
 ```python
@@ -504,6 +544,8 @@ Optional fields:
 - `Code`:
   [BatchStatementErrorCodeEnumType](./literals.md#batchstatementerrorcodeenumtype)
 - `Message`: `str`
+
+<a id="batchstatementrequesttypedef"></a>
 
 ## BatchStatementRequestTypeDef
 
@@ -523,6 +565,8 @@ Optional fields:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
+<a id="batchstatementresponsetypedef"></a>
+
 ## BatchStatementResponseTypeDef
 
 ```python
@@ -538,6 +582,8 @@ Optional fields:
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
+
+<a id="batchwriteiteminputrequesttypedef"></a>
 
 ## BatchWriteItemInputRequestTypeDef
 
@@ -557,6 +603,8 @@ Optional fields:
 - `ReturnItemCollectionMetrics`:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
+<a id="batchwriteiteminputserviceresourcetypedef"></a>
+
 ## BatchWriteItemInputServiceResourceTypeDef
 
 ```python
@@ -575,6 +623,8 @@ Optional fields:
 - `ReturnItemCollectionMetrics`:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 
+<a id="batchwriteitemoutputtypedef"></a>
+
 ## BatchWriteItemOutputTypeDef
 
 ```python
@@ -592,6 +642,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="billingmodesummaryresponsemetadatatypedef"></a>
+
 ## BillingModeSummaryResponseMetadataTypeDef
 
 ```python
@@ -605,6 +657,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="billingmodesummarytypedef"></a>
+
 ## BillingModeSummaryTypeDef
 
 ```python
@@ -615,6 +669,8 @@ Optional fields:
 
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 - `LastUpdateToPayPerRequestDateTime`: `datetime`
+
+<a id="capacitytypedef"></a>
 
 ## CapacityTypeDef
 
@@ -627,6 +683,8 @@ Optional fields:
 - `ReadCapacityUnits`: `float`
 - `WriteCapacityUnits`: `float`
 - `CapacityUnits`: `float`
+
+<a id="conditionchecktypedef"></a>
 
 ## ConditionCheckTypeDef
 
@@ -653,6 +711,8 @@ Optional fields:
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
+<a id="conditiontypedef"></a>
+
 ## ConditionTypeDef
 
 ```python
@@ -670,6 +730,8 @@ Optional fields:
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
+
+<a id="consumedcapacitytypedef"></a>
 
 ## ConsumedCapacityTypeDef
 
@@ -689,6 +751,8 @@ Optional fields:
 - `GlobalSecondaryIndexes`: `Dict`\[`str`,
   [CapacityTypeDef](./type_defs.md#capacitytypedef)\]
 
+<a id="continuousbackupsdescriptiontypedef"></a>
+
 ## ContinuousBackupsDescriptionTypeDef
 
 ```python
@@ -705,6 +769,8 @@ Optional fields:
 - `PointInTimeRecoveryDescription`:
   [PointInTimeRecoveryDescriptionTypeDef](./type_defs.md#pointintimerecoverydescriptiontypedef)
 
+<a id="contributorinsightssummarytypedef"></a>
+
 ## ContributorInsightsSummaryTypeDef
 
 ```python
@@ -718,6 +784,8 @@ Optional fields:
 - `ContributorInsightsStatus`:
   [ContributorInsightsStatusType](./literals.md#contributorinsightsstatustype)
 
+<a id="createbackupinputrequesttypedef"></a>
+
 ## CreateBackupInputRequestTypeDef
 
 ```python
@@ -728,6 +796,8 @@ Required fields:
 
 - `TableName`: `str`
 - `BackupName`: `str`
+
+<a id="createbackupoutputtypedef"></a>
 
 ## CreateBackupOutputTypeDef
 
@@ -740,6 +810,8 @@ Required fields:
 - `BackupDetails`: [BackupDetailsTypeDef](./type_defs.md#backupdetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createglobalsecondaryindexactiontypedef"></a>
 
 ## CreateGlobalSecondaryIndexActionTypeDef
 
@@ -759,6 +831,8 @@ Optional fields:
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 
+<a id="createglobaltableinputrequesttypedef"></a>
+
 ## CreateGlobalTableInputRequestTypeDef
 
 ```python
@@ -770,6 +844,8 @@ Required fields:
 - `GlobalTableName`: `str`
 - `ReplicationGroup`:
   `Sequence`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
+
+<a id="createglobaltableoutputtypedef"></a>
 
 ## CreateGlobalTableOutputTypeDef
 
@@ -784,6 +860,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createreplicaactiontypedef"></a>
+
 ## CreateReplicaActionTypeDef
 
 ```python
@@ -793,6 +871,8 @@ from mypy_boto3_dynamodb.type_defs import CreateReplicaActionTypeDef
 Required fields:
 
 - `RegionName`: `str`
+
+<a id="createreplicationgroupmemberactiontypedef"></a>
 
 ## CreateReplicationGroupMemberActionTypeDef
 
@@ -812,6 +892,8 @@ Optional fields:
 - `GlobalSecondaryIndexes`:
   `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
 - `TableClassOverride`: [TableClassType](./literals.md#tableclasstype)
+
+<a id="createtableinputrequesttypedef"></a>
 
 ## CreateTableInputRequestTypeDef
 
@@ -843,6 +925,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
+<a id="createtableinputserviceresourcetypedef"></a>
+
 ## CreateTableInputServiceResourceTypeDef
 
 ```python
@@ -873,6 +957,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
+<a id="createtableoutputtypedef"></a>
+
 ## CreateTableOutputTypeDef
 
 ```python
@@ -886,6 +972,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackupinputrequesttypedef"></a>
+
 ## DeleteBackupInputRequestTypeDef
 
 ```python
@@ -895,6 +983,8 @@ from mypy_boto3_dynamodb.type_defs import DeleteBackupInputRequestTypeDef
 Required fields:
 
 - `BackupArn`: `str`
+
+<a id="deletebackupoutputtypedef"></a>
 
 ## DeleteBackupOutputTypeDef
 
@@ -909,6 +999,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteglobalsecondaryindexactiontypedef"></a>
+
 ## DeleteGlobalSecondaryIndexActionTypeDef
 
 ```python
@@ -918,6 +1010,8 @@ from mypy_boto3_dynamodb.type_defs import DeleteGlobalSecondaryIndexActionTypeDe
 Required fields:
 
 - `IndexName`: `str`
+
+<a id="deleteiteminputrequesttypedef"></a>
 
 ## DeleteItemInputRequestTypeDef
 
@@ -951,6 +1045,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="deleteiteminputtabletypedef"></a>
+
 ## DeleteItemInputTableTypeDef
 
 ```python
@@ -982,6 +1078,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="deleteitemoutputtypedef"></a>
+
 ## DeleteItemOutputTypeDef
 
 ```python
@@ -1001,6 +1099,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletereplicaactiontypedef"></a>
+
 ## DeleteReplicaActionTypeDef
 
 ```python
@@ -1011,6 +1111,8 @@ Required fields:
 
 - `RegionName`: `str`
 
+<a id="deletereplicationgroupmemberactiontypedef"></a>
+
 ## DeleteReplicationGroupMemberActionTypeDef
 
 ```python
@@ -1020,6 +1122,8 @@ from mypy_boto3_dynamodb.type_defs import DeleteReplicationGroupMemberActionType
 Required fields:
 
 - `RegionName`: `str`
+
+<a id="deleterequesttypedef"></a>
 
 ## DeleteRequestTypeDef
 
@@ -1034,6 +1138,8 @@ Required fields:
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="deletetableinputrequesttypedef"></a>
+
 ## DeleteTableInputRequestTypeDef
 
 ```python
@@ -1043,6 +1149,8 @@ from mypy_boto3_dynamodb.type_defs import DeleteTableInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
+
+<a id="deletetableoutputtypedef"></a>
 
 ## DeleteTableOutputTypeDef
 
@@ -1056,6 +1164,8 @@ Required fields:
   [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletetypedef"></a>
 
 ## DeleteTypeDef
 
@@ -1082,6 +1192,8 @@ Optional fields:
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
+<a id="describebackupinputrequesttypedef"></a>
+
 ## DescribeBackupInputRequestTypeDef
 
 ```python
@@ -1091,6 +1203,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeBackupInputRequestTypeDef
 Required fields:
 
 - `BackupArn`: `str`
+
+<a id="describebackupoutputtypedef"></a>
 
 ## DescribeBackupOutputTypeDef
 
@@ -1105,6 +1219,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecontinuousbackupsinputrequesttypedef"></a>
+
 ## DescribeContinuousBackupsInputRequestTypeDef
 
 ```python
@@ -1114,6 +1230,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeContinuousBackupsInputRequestT
 Required fields:
 
 - `TableName`: `str`
+
+<a id="describecontinuousbackupsoutputtypedef"></a>
 
 ## DescribeContinuousBackupsOutputTypeDef
 
@@ -1128,6 +1246,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecontributorinsightsinputrequesttypedef"></a>
+
 ## DescribeContributorInsightsInputRequestTypeDef
 
 ```python
@@ -1141,6 +1261,8 @@ Required fields:
 Optional fields:
 
 - `IndexName`: `str`
+
+<a id="describecontributorinsightsoutputtypedef"></a>
 
 ## DescribeContributorInsightsOutputTypeDef
 
@@ -1161,6 +1283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointsresponsetypedef"></a>
+
 ## DescribeEndpointsResponseTypeDef
 
 ```python
@@ -1173,6 +1297,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexportinputrequesttypedef"></a>
+
 ## DescribeExportInputRequestTypeDef
 
 ```python
@@ -1182,6 +1308,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeExportInputRequestTypeDef
 Required fields:
 
 - `ExportArn`: `str`
+
+<a id="describeexportoutputtypedef"></a>
 
 ## DescribeExportOutputTypeDef
 
@@ -1196,6 +1324,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeglobaltableinputrequesttypedef"></a>
+
 ## DescribeGlobalTableInputRequestTypeDef
 
 ```python
@@ -1205,6 +1335,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableInputRequestTypeDef
 Required fields:
 
 - `GlobalTableName`: `str`
+
+<a id="describeglobaltableoutputtypedef"></a>
 
 ## DescribeGlobalTableOutputTypeDef
 
@@ -1219,6 +1351,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeglobaltablesettingsinputrequesttypedef"></a>
+
 ## DescribeGlobalTableSettingsInputRequestTypeDef
 
 ```python
@@ -1228,6 +1362,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeGlobalTableSettingsInputReques
 Required fields:
 
 - `GlobalTableName`: `str`
+
+<a id="describeglobaltablesettingsoutputtypedef"></a>
 
 ## DescribeGlobalTableSettingsOutputTypeDef
 
@@ -1243,6 +1379,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describekinesisstreamingdestinationinputrequesttypedef"></a>
+
 ## DescribeKinesisStreamingDestinationInputRequestTypeDef
 
 ```python
@@ -1252,6 +1390,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeKinesisStreamingDestinationInp
 Required fields:
 
 - `TableName`: `str`
+
+<a id="describekinesisstreamingdestinationoutputtypedef"></a>
 
 ## DescribeKinesisStreamingDestinationOutputTypeDef
 
@@ -1266,6 +1406,8 @@ Required fields:
   `List`\[[KinesisDataStreamDestinationTypeDef](./type_defs.md#kinesisdatastreamdestinationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describelimitsoutputtypedef"></a>
 
 ## DescribeLimitsOutputTypeDef
 
@@ -1282,6 +1424,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetableinputrequesttypedef"></a>
+
 ## DescribeTableInputRequestTypeDef
 
 ```python
@@ -1291,6 +1435,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeTableInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
+
+<a id="describetableoutputtypedef"></a>
 
 ## DescribeTableOutputTypeDef
 
@@ -1304,6 +1450,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetablereplicaautoscalinginputrequesttypedef"></a>
+
 ## DescribeTableReplicaAutoScalingInputRequestTypeDef
 
 ```python
@@ -1313,6 +1461,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeTableReplicaAutoScalingInputRe
 Required fields:
 
 - `TableName`: `str`
+
+<a id="describetablereplicaautoscalingoutputtypedef"></a>
 
 ## DescribeTableReplicaAutoScalingOutputTypeDef
 
@@ -1327,6 +1477,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetimetoliveinputrequesttypedef"></a>
+
 ## DescribeTimeToLiveInputRequestTypeDef
 
 ```python
@@ -1336,6 +1488,8 @@ from mypy_boto3_dynamodb.type_defs import DescribeTimeToLiveInputRequestTypeDef
 Required fields:
 
 - `TableName`: `str`
+
+<a id="describetimetoliveoutputtypedef"></a>
 
 ## DescribeTimeToLiveOutputTypeDef
 
@@ -1350,6 +1504,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -1360,6 +1516,8 @@ Required fields:
 
 - `Address`: `str`
 - `CachePeriodInMinutes`: `int`
+
+<a id="executestatementinputrequesttypedef"></a>
 
 ## ExecuteStatementInputRequestTypeDef
 
@@ -1382,6 +1540,8 @@ Optional fields:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
+<a id="executestatementoutputtypedef"></a>
+
 ## ExecuteStatementOutputTypeDef
 
 ```python
@@ -1400,6 +1560,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="executetransactioninputrequesttypedef"></a>
+
 ## ExecuteTransactionInputRequestTypeDef
 
 ```python
@@ -1417,6 +1579,8 @@ Optional fields:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
+<a id="executetransactionoutputtypedef"></a>
+
 ## ExecuteTransactionOutputTypeDef
 
 ```python
@@ -1431,6 +1595,8 @@ Required fields:
   `List`\[[ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="expectedattributevaluetypedef"></a>
 
 ## ExpectedAttributeValueTypeDef
 
@@ -1451,6 +1617,8 @@ Optional fields:
   `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
+
+<a id="exportdescriptiontypedef"></a>
 
 ## ExportDescriptionTypeDef
 
@@ -1480,6 +1648,8 @@ Optional fields:
 - `BilledSizeBytes`: `int`
 - `ItemCount`: `int`
 
+<a id="exportsummarytypedef"></a>
+
 ## ExportSummaryTypeDef
 
 ```python
@@ -1490,6 +1660,8 @@ Optional fields:
 
 - `ExportArn`: `str`
 - `ExportStatus`: [ExportStatusType](./literals.md#exportstatustype)
+
+<a id="exporttabletopointintimeinputrequesttypedef"></a>
 
 ## ExportTableToPointInTimeInputRequestTypeDef
 
@@ -1512,6 +1684,8 @@ Optional fields:
 - `S3SseKmsKeyId`: `str`
 - `ExportFormat`: [ExportFormatType](./literals.md#exportformattype)
 
+<a id="exporttabletopointintimeoutputtypedef"></a>
+
 ## ExportTableToPointInTimeOutputTypeDef
 
 ```python
@@ -1525,6 +1699,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="failureexceptiontypedef"></a>
+
 ## FailureExceptionTypeDef
 
 ```python
@@ -1535,6 +1711,8 @@ Optional fields:
 
 - `ExceptionName`: `str`
 - `ExceptionDescription`: `str`
+
+<a id="getiteminputrequesttypedef"></a>
 
 ## GetItemInputRequestTypeDef
 
@@ -1559,6 +1737,8 @@ Optional fields:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
+<a id="getiteminputtabletypedef"></a>
+
 ## GetItemInputTableTypeDef
 
 ```python
@@ -1581,6 +1761,8 @@ Optional fields:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
+<a id="getitemoutputtypedef"></a>
+
 ## GetItemOutputTypeDef
 
 ```python
@@ -1597,6 +1779,8 @@ Required fields:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettypedef"></a>
 
 ## GetTypeDef
 
@@ -1617,6 +1801,8 @@ Optional fields:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
+<a id="globalsecondaryindexautoscalingupdatetypedef"></a>
+
 ## GlobalSecondaryIndexAutoScalingUpdateTypeDef
 
 ```python
@@ -1628,6 +1814,8 @@ Optional fields:
 - `IndexName`: `str`
 - `ProvisionedWriteCapacityAutoScalingUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
+
+<a id="globalsecondaryindexdescriptiontypedef"></a>
 
 ## GlobalSecondaryIndexDescriptionTypeDef
 
@@ -1649,6 +1837,8 @@ Optional fields:
 - `ItemCount`: `int`
 - `IndexArn`: `str`
 
+<a id="globalsecondaryindexinfotypedef"></a>
+
 ## GlobalSecondaryIndexInfoTypeDef
 
 ```python
@@ -1663,6 +1853,8 @@ Optional fields:
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+
+<a id="globalsecondaryindextypedef"></a>
 
 ## GlobalSecondaryIndexTypeDef
 
@@ -1682,6 +1874,8 @@ Optional fields:
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 
+<a id="globalsecondaryindexupdatetypedef"></a>
+
 ## GlobalSecondaryIndexUpdateTypeDef
 
 ```python
@@ -1696,6 +1890,8 @@ Optional fields:
   [CreateGlobalSecondaryIndexActionTypeDef](./type_defs.md#createglobalsecondaryindexactiontypedef)
 - `Delete`:
   [DeleteGlobalSecondaryIndexActionTypeDef](./type_defs.md#deleteglobalsecondaryindexactiontypedef)
+
+<a id="globaltabledescriptiontypedef"></a>
 
 ## GlobalTableDescriptionTypeDef
 
@@ -1713,6 +1909,8 @@ Optional fields:
   [GlobalTableStatusType](./literals.md#globaltablestatustype)
 - `GlobalTableName`: `str`
 
+<a id="globaltableglobalsecondaryindexsettingsupdatetypedef"></a>
+
 ## GlobalTableGlobalSecondaryIndexSettingsUpdateTypeDef
 
 ```python
@@ -1729,6 +1927,8 @@ Optional fields:
 - `ProvisionedWriteCapacityAutoScalingSettingsUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 
+<a id="globaltabletypedef"></a>
+
 ## GlobalTableTypeDef
 
 ```python
@@ -1739,6 +1939,8 @@ Optional fields:
 
 - `GlobalTableName`: `str`
 - `ReplicationGroup`: `List`\[[ReplicaTypeDef](./type_defs.md#replicatypedef)\]
+
+<a id="itemcollectionmetricstypedef"></a>
 
 ## ItemCollectionMetricsTypeDef
 
@@ -1754,6 +1956,8 @@ Optional fields:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `SizeEstimateRangeGB`: `List`\[`float`\]
 
+<a id="itemresponsetypedef"></a>
+
 ## ItemResponseTypeDef
 
 ```python
@@ -1767,6 +1971,8 @@ Optional fields:
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="keyschemaelementtypedef"></a>
+
 ## KeySchemaElementTypeDef
 
 ```python
@@ -1777,6 +1983,8 @@ Required fields:
 
 - `AttributeName`: `str`
 - `KeyType`: [KeyTypeType](./literals.md#keytypetype)
+
+<a id="keysandattributestypedef"></a>
 
 ## KeysAndAttributesTypeDef
 
@@ -1798,6 +2006,8 @@ Optional fields:
 - `ProjectionExpression`: `str`
 - `ExpressionAttributeNames`: `Mapping`\[`str`, `str`\]
 
+<a id="kinesisdatastreamdestinationtypedef"></a>
+
 ## KinesisDataStreamDestinationTypeDef
 
 ```python
@@ -1811,6 +2021,8 @@ Optional fields:
   [DestinationStatusType](./literals.md#destinationstatustype)
 - `DestinationStatusDescription`: `str`
 
+<a id="kinesisstreamingdestinationinputrequesttypedef"></a>
+
 ## KinesisStreamingDestinationInputRequestTypeDef
 
 ```python
@@ -1821,6 +2033,8 @@ Required fields:
 
 - `TableName`: `str`
 - `StreamArn`: `str`
+
+<a id="kinesisstreamingdestinationoutputtypedef"></a>
 
 ## KinesisStreamingDestinationOutputTypeDef
 
@@ -1837,6 +2051,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbackupsinputrequesttypedef"></a>
+
 ## ListBackupsInputRequestTypeDef
 
 ```python
@@ -1852,6 +2068,8 @@ Optional fields:
 - `ExclusiveStartBackupArn`: `str`
 - `BackupType`: [BackupTypeFilterType](./literals.md#backuptypefiltertype)
 
+<a id="listbackupsoutputtypedef"></a>
+
 ## ListBackupsOutputTypeDef
 
 ```python
@@ -1866,6 +2084,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontributorinsightsinputrequesttypedef"></a>
+
 ## ListContributorInsightsInputRequestTypeDef
 
 ```python
@@ -1877,6 +2097,8 @@ Optional fields:
 - `TableName`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listcontributorinsightsoutputtypedef"></a>
 
 ## ListContributorInsightsOutputTypeDef
 
@@ -1892,6 +2114,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listexportsinputrequesttypedef"></a>
+
 ## ListExportsInputRequestTypeDef
 
 ```python
@@ -1903,6 +2127,8 @@ Optional fields:
 - `TableArn`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listexportsoutputtypedef"></a>
 
 ## ListExportsOutputTypeDef
 
@@ -1918,6 +2144,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listglobaltablesinputrequesttypedef"></a>
+
 ## ListGlobalTablesInputRequestTypeDef
 
 ```python
@@ -1929,6 +2157,8 @@ Optional fields:
 - `ExclusiveStartGlobalTableName`: `str`
 - `Limit`: `int`
 - `RegionName`: `str`
+
+<a id="listglobaltablesoutputtypedef"></a>
 
 ## ListGlobalTablesOutputTypeDef
 
@@ -1944,6 +2174,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtablesinputrequesttypedef"></a>
+
 ## ListTablesInputRequestTypeDef
 
 ```python
@@ -1954,6 +2186,8 @@ Optional fields:
 
 - `ExclusiveStartTableName`: `str`
 - `Limit`: `int`
+
+<a id="listtablesoutputtypedef"></a>
 
 ## ListTablesOutputTypeDef
 
@@ -1967,6 +2201,8 @@ Required fields:
 - `LastEvaluatedTableName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsofresourceinputrequesttypedef"></a>
 
 ## ListTagsOfResourceInputRequestTypeDef
 
@@ -1982,6 +2218,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsofresourceoutputtypedef"></a>
+
 ## ListTagsOfResourceOutputTypeDef
 
 ```python
@@ -1994,6 +2232,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="localsecondaryindexdescriptiontypedef"></a>
 
 ## LocalSecondaryIndexDescriptionTypeDef
 
@@ -2011,6 +2251,8 @@ Optional fields:
 - `ItemCount`: `int`
 - `IndexArn`: `str`
 
+<a id="localsecondaryindexinfotypedef"></a>
+
 ## LocalSecondaryIndexInfoTypeDef
 
 ```python
@@ -2023,6 +2265,8 @@ Optional fields:
 - `KeySchema`:
   `List`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
+
+<a id="localsecondaryindextypedef"></a>
 
 ## LocalSecondaryIndexTypeDef
 
@@ -2037,6 +2281,8 @@ Required fields:
   `Sequence`\[[KeySchemaElementTypeDef](./type_defs.md#keyschemaelementtypedef)\]
 - `Projection`: [ProjectionTypeDef](./type_defs.md#projectiontypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2048,6 +2294,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parameterizedstatementtypedef"></a>
 
 ## ParameterizedStatementTypeDef
 
@@ -2066,6 +2314,8 @@ Optional fields:
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="pointintimerecoverydescriptiontypedef"></a>
+
 ## PointInTimeRecoveryDescriptionTypeDef
 
 ```python
@@ -2079,6 +2329,8 @@ Optional fields:
 - `EarliestRestorableDateTime`: `datetime`
 - `LatestRestorableDateTime`: `datetime`
 
+<a id="pointintimerecoveryspecificationtypedef"></a>
+
 ## PointInTimeRecoverySpecificationTypeDef
 
 ```python
@@ -2088,6 +2340,8 @@ from mypy_boto3_dynamodb.type_defs import PointInTimeRecoverySpecificationTypeDe
 Required fields:
 
 - `PointInTimeRecoveryEnabled`: `bool`
+
+<a id="projectiontypedef"></a>
 
 ## ProjectionTypeDef
 
@@ -2099,6 +2353,8 @@ Optional fields:
 
 - `ProjectionType`: [ProjectionTypeType](./literals.md#projectiontypetype)
 - `NonKeyAttributes`: `Sequence`\[`str`\]
+
+<a id="provisionedthroughputdescriptionresponsemetadatatypedef"></a>
 
 ## ProvisionedThroughputDescriptionResponseMetadataTypeDef
 
@@ -2116,6 +2372,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="provisionedthroughputdescriptiontypedef"></a>
+
 ## ProvisionedThroughputDescriptionTypeDef
 
 ```python
@@ -2130,6 +2388,8 @@ Optional fields:
 - `ReadCapacityUnits`: `int`
 - `WriteCapacityUnits`: `int`
 
+<a id="provisionedthroughputoverridetypedef"></a>
+
 ## ProvisionedThroughputOverrideTypeDef
 
 ```python
@@ -2139,6 +2399,8 @@ from mypy_boto3_dynamodb.type_defs import ProvisionedThroughputOverrideTypeDef
 Optional fields:
 
 - `ReadCapacityUnits`: `int`
+
+<a id="provisionedthroughputtypedef"></a>
 
 ## ProvisionedThroughputTypeDef
 
@@ -2150,6 +2412,8 @@ Required fields:
 
 - `ReadCapacityUnits`: `int`
 - `WriteCapacityUnits`: `int`
+
+<a id="putiteminputrequesttypedef"></a>
 
 ## PutItemInputRequestTypeDef
 
@@ -2183,6 +2447,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="putiteminputtabletypedef"></a>
+
 ## PutItemInputTableTypeDef
 
 ```python
@@ -2214,6 +2480,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="putitemoutputtypedef"></a>
+
 ## PutItemOutputTypeDef
 
 ```python
@@ -2233,6 +2501,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putrequesttypedef"></a>
+
 ## PutRequestTypeDef
 
 ```python
@@ -2245,6 +2515,8 @@ Required fields:
   `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
   `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
+
+<a id="puttypedef"></a>
 
 ## PutTypeDef
 
@@ -2270,6 +2542,8 @@ Optional fields:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
+
+<a id="queryinputrequesttypedef"></a>
 
 ## QueryInputRequestTypeDef
 
@@ -2310,6 +2584,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="queryinputtabletypedef"></a>
+
 ## QueryInputTableTypeDef
 
 ```python
@@ -2345,6 +2621,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="queryoutputtypedef"></a>
+
 ## QueryOutputTypeDef
 
 ```python
@@ -2368,6 +2646,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="replicaautoscalingdescriptiontypedef"></a>
+
 ## ReplicaAutoScalingDescriptionTypeDef
 
 ```python
@@ -2385,6 +2665,8 @@ Optional fields:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
 - `ReplicaStatus`: [ReplicaStatusType](./literals.md#replicastatustype)
 
+<a id="replicaautoscalingupdatetypedef"></a>
+
 ## ReplicaAutoScalingUpdateTypeDef
 
 ```python
@@ -2401,6 +2683,8 @@ Optional fields:
   `Sequence`\[[ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexautoscalingupdatetypedef)\]
 - `ReplicaProvisionedReadCapacityAutoScalingUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
+
+<a id="replicadescriptiontypedef"></a>
 
 ## ReplicaDescriptionTypeDef
 
@@ -2423,6 +2707,8 @@ Optional fields:
 - `ReplicaTableClassSummary`:
   [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 
+<a id="replicaglobalsecondaryindexautoscalingdescriptiontypedef"></a>
+
 ## ReplicaGlobalSecondaryIndexAutoScalingDescriptionTypeDef
 
 ```python
@@ -2438,6 +2724,8 @@ Optional fields:
 - `ProvisionedWriteCapacityAutoScalingSettings`:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
 
+<a id="replicaglobalsecondaryindexautoscalingupdatetypedef"></a>
+
 ## ReplicaGlobalSecondaryIndexAutoScalingUpdateTypeDef
 
 ```python
@@ -2450,6 +2738,8 @@ Optional fields:
 - `ProvisionedReadCapacityAutoScalingUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 
+<a id="replicaglobalsecondaryindexdescriptiontypedef"></a>
+
 ## ReplicaGlobalSecondaryIndexDescriptionTypeDef
 
 ```python
@@ -2461,6 +2751,8 @@ Optional fields:
 - `IndexName`: `str`
 - `ProvisionedThroughputOverride`:
   [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
+
+<a id="replicaglobalsecondaryindexsettingsdescriptiontypedef"></a>
 
 ## ReplicaGlobalSecondaryIndexSettingsDescriptionTypeDef
 
@@ -2482,6 +2774,8 @@ Optional fields:
 - `ProvisionedWriteCapacityAutoScalingSettings`:
   [AutoScalingSettingsDescriptionTypeDef](./type_defs.md#autoscalingsettingsdescriptiontypedef)
 
+<a id="replicaglobalsecondaryindexsettingsupdatetypedef"></a>
+
 ## ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef
 
 ```python
@@ -2498,6 +2792,8 @@ Optional fields:
 - `ProvisionedReadCapacityAutoScalingSettingsUpdate`:
   [AutoScalingSettingsUpdateTypeDef](./type_defs.md#autoscalingsettingsupdatetypedef)
 
+<a id="replicaglobalsecondaryindextypedef"></a>
+
 ## ReplicaGlobalSecondaryIndexTypeDef
 
 ```python
@@ -2512,6 +2808,8 @@ Optional fields:
 
 - `ProvisionedThroughputOverride`:
   [ProvisionedThroughputOverrideTypeDef](./type_defs.md#provisionedthroughputoverridetypedef)
+
+<a id="replicasettingsdescriptiontypedef"></a>
 
 ## ReplicaSettingsDescriptionTypeDef
 
@@ -2539,6 +2837,8 @@ Optional fields:
 - `ReplicaTableClassSummary`:
   [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 
+<a id="replicasettingsupdatetypedef"></a>
+
 ## ReplicaSettingsUpdateTypeDef
 
 ```python
@@ -2558,6 +2858,8 @@ Optional fields:
   `Sequence`\[[ReplicaGlobalSecondaryIndexSettingsUpdateTypeDef](./type_defs.md#replicaglobalsecondaryindexsettingsupdatetypedef)\]
 - `ReplicaTableClass`: [TableClassType](./literals.md#tableclasstype)
 
+<a id="replicatypedef"></a>
+
 ## ReplicaTypeDef
 
 ```python
@@ -2567,6 +2869,8 @@ from mypy_boto3_dynamodb.type_defs import ReplicaTypeDef
 Optional fields:
 
 - `RegionName`: `str`
+
+<a id="replicaupdatetypedef"></a>
 
 ## ReplicaUpdateTypeDef
 
@@ -2580,6 +2884,8 @@ Optional fields:
   [CreateReplicaActionTypeDef](./type_defs.md#createreplicaactiontypedef)
 - `Delete`:
   [DeleteReplicaActionTypeDef](./type_defs.md#deletereplicaactiontypedef)
+
+<a id="replicationgroupupdatetypedef"></a>
 
 ## ReplicationGroupUpdateTypeDef
 
@@ -2596,6 +2902,8 @@ Optional fields:
 - `Delete`:
   [DeleteReplicationGroupMemberActionTypeDef](./type_defs.md#deletereplicationgroupmemberactiontypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2609,6 +2917,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="restoresummaryresponsemetadatatypedef"></a>
 
 ## RestoreSummaryResponseMetadataTypeDef
 
@@ -2625,6 +2935,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="restoresummarytypedef"></a>
+
 ## RestoreSummaryTypeDef
 
 ```python
@@ -2640,6 +2952,8 @@ Optional fields:
 
 - `SourceBackupArn`: `str`
 - `SourceTableArn`: `str`
+
+<a id="restoretablefrombackupinputrequesttypedef"></a>
 
 ## RestoreTableFromBackupInputRequestTypeDef
 
@@ -2664,6 +2978,8 @@ Optional fields:
 - `SSESpecificationOverride`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 
+<a id="restoretablefrombackupoutputtypedef"></a>
+
 ## RestoreTableFromBackupOutputTypeDef
 
 ```python
@@ -2676,6 +2992,8 @@ Required fields:
   [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="restoretabletopointintimeinputrequesttypedef"></a>
 
 ## RestoreTableToPointInTimeInputRequestTypeDef
 
@@ -2703,6 +3021,8 @@ Optional fields:
 - `SSESpecificationOverride`:
   [SSESpecificationTypeDef](./type_defs.md#ssespecificationtypedef)
 
+<a id="restoretabletopointintimeoutputtypedef"></a>
+
 ## RestoreTableToPointInTimeOutputTypeDef
 
 ```python
@@ -2715,6 +3035,8 @@ Required fields:
   [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ssedescriptionresponsemetadatatypedef"></a>
 
 ## SSEDescriptionResponseMetadataTypeDef
 
@@ -2731,6 +3053,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ssedescriptiontypedef"></a>
+
 ## SSEDescriptionTypeDef
 
 ```python
@@ -2744,6 +3068,8 @@ Optional fields:
 - `KMSMasterKeyArn`: `str`
 - `InaccessibleEncryptionDateTime`: `datetime`
 
+<a id="ssespecificationtypedef"></a>
+
 ## SSESpecificationTypeDef
 
 ```python
@@ -2755,6 +3081,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `SSEType`: [SSETypeType](./literals.md#ssetypetype)
 - `KMSMasterKeyId`: `str`
+
+<a id="scaninputrequesttypedef"></a>
 
 ## ScanInputRequestTypeDef
 
@@ -2793,6 +3121,8 @@ Optional fields:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
+<a id="scaninputtabletypedef"></a>
+
 ## ScanInputTableTypeDef
 
 ```python
@@ -2826,6 +3156,8 @@ Optional fields:
   `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ConsistentRead`: `bool`
 
+<a id="scanoutputtypedef"></a>
+
 ## ScanOutputTypeDef
 
 ```python
@@ -2849,6 +3181,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="serviceresourcetablerequesttypedef"></a>
+
 ## ServiceResourceTableRequestTypeDef
 
 ```python
@@ -2858,6 +3192,8 @@ from mypy_boto3_dynamodb.type_defs import ServiceResourceTableRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="sourcetabledetailstypedef"></a>
 
 ## SourceTableDetailsTypeDef
 
@@ -2882,6 +3218,8 @@ Optional fields:
 - `ItemCount`: `int`
 - `BillingMode`: [BillingModeType](./literals.md#billingmodetype)
 
+<a id="sourcetablefeaturedetailstypedef"></a>
+
 ## SourceTableFeatureDetailsTypeDef
 
 ```python
@@ -2901,6 +3239,8 @@ Optional fields:
 - `SSEDescription`:
   [SSEDescriptionTypeDef](./type_defs.md#ssedescriptiontypedef)
 
+<a id="streamspecificationresponsemetadatatypedef"></a>
+
 ## StreamSpecificationResponseMetadataTypeDef
 
 ```python
@@ -2913,6 +3253,8 @@ Required fields:
 - `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="streamspecificationtypedef"></a>
 
 ## StreamSpecificationTypeDef
 
@@ -2928,6 +3270,8 @@ Optional fields:
 
 - `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
 
+<a id="tableautoscalingdescriptiontypedef"></a>
+
 ## TableAutoScalingDescriptionTypeDef
 
 ```python
@@ -2941,6 +3285,8 @@ Optional fields:
 - `Replicas`:
   `List`\[[ReplicaAutoScalingDescriptionTypeDef](./type_defs.md#replicaautoscalingdescriptiontypedef)\]
 
+<a id="tablebatchwriterrequesttypedef"></a>
+
 ## TableBatchWriterRequestTypeDef
 
 ```python
@@ -2950,6 +3296,8 @@ from mypy_boto3_dynamodb.type_defs import TableBatchWriterRequestTypeDef
 Optional fields:
 
 - `overwrite_by_pkeys`: `List`\[`str`\]
+
+<a id="tableclasssummaryresponsemetadatatypedef"></a>
 
 ## TableClassSummaryResponseMetadataTypeDef
 
@@ -2964,6 +3312,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tableclasssummarytypedef"></a>
+
 ## TableClassSummaryTypeDef
 
 ```python
@@ -2974,6 +3324,8 @@ Optional fields:
 
 - `TableClass`: [TableClassType](./literals.md#tableclasstype)
 - `LastUpdateDateTime`: `datetime`
+
+<a id="tabledescriptiontypedef"></a>
 
 ## TableDescriptionTypeDef
 
@@ -3018,6 +3370,8 @@ Optional fields:
 - `TableClassSummary`:
   [TableClassSummaryTypeDef](./type_defs.md#tableclasssummarytypedef)
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -3029,6 +3383,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -3039,6 +3395,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="timetolivedescriptiontypedef"></a>
 
 ## TimeToLiveDescriptionTypeDef
 
@@ -3052,6 +3410,8 @@ Optional fields:
   [TimeToLiveStatusType](./literals.md#timetolivestatustype)
 - `AttributeName`: `str`
 
+<a id="timetolivespecificationtypedef"></a>
+
 ## TimeToLiveSpecificationTypeDef
 
 ```python
@@ -3063,6 +3423,8 @@ Required fields:
 - `Enabled`: `bool`
 - `AttributeName`: `str`
 
+<a id="transactgetitemtypedef"></a>
+
 ## TransactGetItemTypeDef
 
 ```python
@@ -3072,6 +3434,8 @@ from mypy_boto3_dynamodb.type_defs import TransactGetItemTypeDef
 Required fields:
 
 - `Get`: [GetTypeDef](./type_defs.md#gettypedef)
+
+<a id="transactgetitemsinputrequesttypedef"></a>
 
 ## TransactGetItemsInputRequestTypeDef
 
@@ -3089,6 +3453,8 @@ Optional fields:
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
 
+<a id="transactgetitemsoutputtypedef"></a>
+
 ## TransactGetItemsOutputTypeDef
 
 ```python
@@ -3104,6 +3470,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="transactwriteitemtypedef"></a>
+
 ## TransactWriteItemTypeDef
 
 ```python
@@ -3117,6 +3485,8 @@ Optional fields:
 - `Put`: [PutTypeDef](./type_defs.md#puttypedef)
 - `Delete`: [DeleteTypeDef](./type_defs.md#deletetypedef)
 - `Update`: [UpdateTypeDef](./type_defs.md#updatetypedef)
+
+<a id="transactwriteitemsinputrequesttypedef"></a>
 
 ## TransactWriteItemsInputRequestTypeDef
 
@@ -3137,6 +3507,8 @@ Optional fields:
   [ReturnItemCollectionMetricsType](./literals.md#returnitemcollectionmetricstype)
 - `ClientRequestToken`: `str`
 
+<a id="transactwriteitemsoutputtypedef"></a>
+
 ## TransactWriteItemsOutputTypeDef
 
 ```python
@@ -3152,6 +3524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -3162,6 +3536,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatecontinuousbackupsinputrequesttypedef"></a>
 
 ## UpdateContinuousBackupsInputRequestTypeDef
 
@@ -3175,6 +3551,8 @@ Required fields:
 - `PointInTimeRecoverySpecification`:
   [PointInTimeRecoverySpecificationTypeDef](./type_defs.md#pointintimerecoveryspecificationtypedef)
 
+<a id="updatecontinuousbackupsoutputtypedef"></a>
+
 ## UpdateContinuousBackupsOutputTypeDef
 
 ```python
@@ -3187,6 +3565,8 @@ Required fields:
   [ContinuousBackupsDescriptionTypeDef](./type_defs.md#continuousbackupsdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecontributorinsightsinputrequesttypedef"></a>
 
 ## UpdateContributorInsightsInputRequestTypeDef
 
@@ -3204,6 +3584,8 @@ Optional fields:
 
 - `IndexName`: `str`
 
+<a id="updatecontributorinsightsoutputtypedef"></a>
+
 ## UpdateContributorInsightsOutputTypeDef
 
 ```python
@@ -3219,6 +3601,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateglobalsecondaryindexactiontypedef"></a>
+
 ## UpdateGlobalSecondaryIndexActionTypeDef
 
 ```python
@@ -3230,6 +3614,8 @@ Required fields:
 - `IndexName`: `str`
 - `ProvisionedThroughput`:
   [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
+
+<a id="updateglobaltableinputrequesttypedef"></a>
 
 ## UpdateGlobalTableInputRequestTypeDef
 
@@ -3243,6 +3629,8 @@ Required fields:
 - `ReplicaUpdates`:
   `Sequence`\[[ReplicaUpdateTypeDef](./type_defs.md#replicaupdatetypedef)\]
 
+<a id="updateglobaltableoutputtypedef"></a>
+
 ## UpdateGlobalTableOutputTypeDef
 
 ```python
@@ -3255,6 +3643,8 @@ Required fields:
   [GlobalTableDescriptionTypeDef](./type_defs.md#globaltabledescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateglobaltablesettingsinputrequesttypedef"></a>
 
 ## UpdateGlobalTableSettingsInputRequestTypeDef
 
@@ -3277,6 +3667,8 @@ Optional fields:
 - `ReplicaSettingsUpdate`:
   `Sequence`\[[ReplicaSettingsUpdateTypeDef](./type_defs.md#replicasettingsupdatetypedef)\]
 
+<a id="updateglobaltablesettingsoutputtypedef"></a>
+
 ## UpdateGlobalTableSettingsOutputTypeDef
 
 ```python
@@ -3290,6 +3682,8 @@ Required fields:
   `List`\[[ReplicaSettingsDescriptionTypeDef](./type_defs.md#replicasettingsdescriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateiteminputrequesttypedef"></a>
 
 ## UpdateItemInputRequestTypeDef
 
@@ -3326,6 +3720,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="updateiteminputtabletypedef"></a>
+
 ## UpdateItemInputTableTypeDef
 
 ```python
@@ -3360,6 +3756,8 @@ Optional fields:
   `Set`\[`str`\], `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
   `Mapping`\[`str`, `Any`\], `None`\]\]
 
+<a id="updateitemoutputtypedef"></a>
+
 ## UpdateItemOutputTypeDef
 
 ```python
@@ -3379,6 +3777,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatereplicationgroupmemberactiontypedef"></a>
+
 ## UpdateReplicationGroupMemberActionTypeDef
 
 ```python
@@ -3397,6 +3797,8 @@ Optional fields:
 - `GlobalSecondaryIndexes`:
   `Sequence`\[[ReplicaGlobalSecondaryIndexTypeDef](./type_defs.md#replicaglobalsecondaryindextypedef)\]
 - `TableClassOverride`: [TableClassType](./literals.md#tableclasstype)
+
+<a id="updatetableinputrequesttypedef"></a>
 
 ## UpdateTableInputRequestTypeDef
 
@@ -3425,6 +3827,8 @@ Optional fields:
   `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 - `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
+<a id="updatetableinputtabletypedef"></a>
+
 ## UpdateTableInputTableTypeDef
 
 ```python
@@ -3448,6 +3852,8 @@ Optional fields:
   `Sequence`\[[ReplicationGroupUpdateTypeDef](./type_defs.md#replicationgroupupdatetypedef)\]
 - `TableClass`: [TableClassType](./literals.md#tableclasstype)
 
+<a id="updatetableoutputtypedef"></a>
+
 ## UpdateTableOutputTypeDef
 
 ```python
@@ -3460,6 +3866,8 @@ Required fields:
   [TableDescriptionTypeDef](./type_defs.md#tabledescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetablereplicaautoscalinginputrequesttypedef"></a>
 
 ## UpdateTableReplicaAutoScalingInputRequestTypeDef
 
@@ -3480,6 +3888,8 @@ Optional fields:
 - `ReplicaUpdates`:
   `Sequence`\[[ReplicaAutoScalingUpdateTypeDef](./type_defs.md#replicaautoscalingupdatetypedef)\]
 
+<a id="updatetablereplicaautoscalingoutputtypedef"></a>
+
 ## UpdateTableReplicaAutoScalingOutputTypeDef
 
 ```python
@@ -3493,6 +3903,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatetimetoliveinputrequesttypedef"></a>
+
 ## UpdateTimeToLiveInputRequestTypeDef
 
 ```python
@@ -3504,6 +3916,8 @@ Required fields:
 - `TableName`: `str`
 - `TimeToLiveSpecification`:
   [TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef)
+
+<a id="updatetimetoliveoutputtypedef"></a>
 
 ## UpdateTimeToLiveOutputTypeDef
 
@@ -3517,6 +3931,8 @@ Required fields:
   [TimeToLiveSpecificationTypeDef](./type_defs.md#timetolivespecificationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetypedef"></a>
 
 ## UpdateTypeDef
 
@@ -3544,6 +3960,8 @@ Optional fields:
 - `ReturnValuesOnConditionCheckFailure`:
   [ReturnValuesOnConditionCheckFailureType](./literals.md#returnvaluesonconditioncheckfailuretype)
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -3554,6 +3972,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="writerequesttypedef"></a>
 
 ## WriteRequestTypeDef
 

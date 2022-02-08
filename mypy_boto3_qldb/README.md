@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-qldb-module"></a>
+
 # Type annotations for boto3 QLDB module
 
 > [Index](..) > QLDB
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [QLDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb.html#QLDB)
 type annotations stubs module
-[mypy_boto3_qldb](https://pypi.org/project/mypy-boto3-qldb/).
+[mypy-boto3-qldb](https://pypi.org/project/mypy-boto3-qldb/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[qldb]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[qldb]'
+
+# standalone installation
 pip install mypy-boto3-qldb
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-qldb
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="qldbclient"></a>
+
 ## QLDBClient
 
 Type annotations for `boto3.client("qldb")` as [QLDBClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_qldb.client import QLDBClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -54,6 +68,8 @@ from mypy_boto3_qldb.client import QLDBClient
 - [update_ledger](./client.md#update_ledger)
 - [update_ledger_permissions_mode](./client.md#update_ledger_permissions_mode)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 QLDBClient [exceptions](./client.md#exceptions)
@@ -65,6 +81,8 @@ QLDBClient [exceptions](./client.md#exceptions)
 - ResourceInUseException
 - ResourceNotFoundException
 - ResourcePreconditionNotMetException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -85,6 +103,8 @@ from mypy_boto3_qldb.literals import EncryptionStatusType, ...
 - [S3ObjectEncryptionTypeType](./literals.md#s3objectencryptiontypetype)
 - [StreamStatusType](./literals.md#streamstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

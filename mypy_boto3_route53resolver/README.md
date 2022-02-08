@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-route53resolver-module"></a>
+
 # Type annotations for boto3 Route53Resolver module
 
 > [Index](..) > Route53Resolver
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
-[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[route53resolver]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[route53resolver]'
+
+# standalone installation
 pip install mypy-boto3-route53resolver
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-route53resolver
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="route53resolverclient"></a>
+
 ## Route53ResolverClient
 
 Type annotations for `boto3.client("route53resolver")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_route53resolver.client import Route53ResolverClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -100,6 +114,8 @@ from mypy_boto3_route53resolver.client import Route53ResolverClient
 - [update_resolver_endpoint](./client.md#update_resolver_endpoint)
 - [update_resolver_rule](./client.md#update_resolver_rule)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Route53ResolverClient [exceptions](./client.md#exceptions)
@@ -122,6 +138,8 @@ Route53ResolverClient [exceptions](./client.md#exceptions)
 - UnknownResourceException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -130,7 +148,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_route53resolver.paginators import ListFirewallConfigsPaginator, ...
+from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator, ...
 ```
 
 - [ListFirewallConfigsPaginator](./paginators.md#listfirewallconfigspaginator)
@@ -148,6 +166,8 @@ from mypy_boto3_route53resolver.paginators import ListFirewallConfigsPaginator, 
 - [ListResolverRuleAssociationsPaginator](./paginators.md#listresolverruleassociationspaginator)
 - [ListResolverRulesPaginator](./paginators.md#listresolverrulespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -201,6 +221,8 @@ from mypy_boto3_route53resolver.literals import ActionType, ...
 - [ValidationType](./literals.md#validationtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

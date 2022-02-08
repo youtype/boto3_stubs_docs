@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-emr-module"></a>
+
 # Waiters for boto3 EMR module
 
 > [Index](..) > [EMR](.) > Waiters
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module
-[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Waiters for boto3 EMR module](#waiters-for-boto3-emr-module)
   - [ClusterRunningWaiter](#clusterrunningwaiter)
   - [ClusterTerminatedWaiter](#clusterterminatedwaiter)
   - [StepCompleteWaiter](#stepcompletewaiter)
+
+<a id="clusterrunningwaiter"></a>
 
 ## ClusterRunningWaiter
 
@@ -19,10 +23,12 @@ Type annotations for `boto3.client("emr").get_waiter("cluster_running")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.waiter import ClusterRunningWaiter
 
 def get_cluster_running_waiter() -> ClusterRunningWaiter:
-    return boto3.client("emr").get_waiter("cluster_running")
+    return Session().client("emr").get_waiter("cluster_running")
 ```
 
 Boto3 documentation:
@@ -33,6 +39,8 @@ Arguments for `ClusterRunningWaiter.wait` method:
 - `ClusterId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="clusterterminatedwaiter"></a>
+
 ## ClusterTerminatedWaiter
 
 Type annotations for `boto3.client("emr").get_waiter("cluster_terminated")`.
@@ -40,10 +48,12 @@ Type annotations for `boto3.client("emr").get_waiter("cluster_terminated")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.waiter import ClusterTerminatedWaiter
 
 def get_cluster_terminated_waiter() -> ClusterTerminatedWaiter:
-    return boto3.client("emr").get_waiter("cluster_terminated")
+    return Session().client("emr").get_waiter("cluster_terminated")
 ```
 
 Boto3 documentation:
@@ -54,6 +64,8 @@ Arguments for `ClusterTerminatedWaiter.wait` method:
 - `ClusterId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stepcompletewaiter"></a>
+
 ## StepCompleteWaiter
 
 Type annotations for `boto3.client("emr").get_waiter("step_complete")`.
@@ -61,10 +73,12 @@ Type annotations for `boto3.client("emr").get_waiter("step_complete")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_emr.waiter import StepCompleteWaiter
 
 def get_step_complete_waiter() -> StepCompleteWaiter:
-    return boto3.client("emr").get_waiter("step_complete")
+    return Session().client("emr").get_waiter("step_complete")
 ```
 
 Boto3 documentation:

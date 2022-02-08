@@ -1,3 +1,5 @@
+<a id="lexmodelsv2client-for-boto3-lexmodelsv2-module"></a>
+
 # LexModelsV2Client for boto3 LexModelsV2 module
 
 > [Index](..) > [LexModelsV2](.) > LexModelsV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
-[mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 - [LexModelsV2Client for boto3 LexModelsV2 module](#lexmodelsv2client-for-boto3-lexmodelsv2-module)
   - [LexModelsV2Client](#lexmodelsv2client)
@@ -82,6 +84,8 @@ type annotations stubs module
     - [update_slot_type](#update_slot_type)
     - [get_waiter](#get_waiter)
 
+<a id="lexmodelsv2client"></a>
+
 ## LexModelsV2Client
 
 Type annotations for `boto3.client("lexv2-models")`
@@ -89,14 +93,17 @@ Type annotations for `boto3.client("lexv2-models")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
 
 def get_lexv2-models_client() -> LexModelsV2Client:
-    return boto3.client("lexv2-models")
+    return Session().client("lexv2-models")
 ```
 
 Boto3 documentation:
 [LexModelsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -121,7 +128,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -133,6 +144,8 @@ Boto3 documentation:
 [LexModelsV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="build_bot_locale"></a>
 
 ### build_bot_locale
 
@@ -155,6 +168,8 @@ Keyword-only arguments:
 Returns
 [BuildBotLocaleResponseTypeDef](./type_defs.md#buildbotlocaleresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -169,6 +184,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_bot"></a>
 
 ### create_bot
 
@@ -194,6 +211,8 @@ Keyword-only arguments:
 - `testBotAliasTags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
+
+<a id="create_bot_alias"></a>
 
 ### create_bot_alias
 
@@ -224,6 +243,8 @@ Keyword-only arguments:
 Returns
 [CreateBotAliasResponseTypeDef](./type_defs.md#createbotaliasresponsetypedef).
 
+<a id="create_bot_locale"></a>
+
 ### create_bot_locale
 
 Creates a locale in the bot.
@@ -248,6 +269,8 @@ Keyword-only arguments:
 Returns
 [CreateBotLocaleResponseTypeDef](./type_defs.md#createbotlocaleresponsetypedef).
 
+<a id="create_bot_version"></a>
+
 ### create_bot_version
 
 Creates a new version of the bot based on the `DRAFT` version.
@@ -270,6 +293,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBotVersionResponseTypeDef](./type_defs.md#createbotversionresponsetypedef).
+
+<a id="create_export"></a>
 
 ### create_export
 
@@ -295,6 +320,8 @@ Keyword-only arguments:
 
 Returns
 [CreateExportResponseTypeDef](./type_defs.md#createexportresponsetypedef).
+
+<a id="create_intent"></a>
 
 ### create_intent
 
@@ -336,6 +363,8 @@ Keyword-only arguments:
 Returns
 [CreateIntentResponseTypeDef](./type_defs.md#createintentresponsetypedef).
 
+<a id="create_resource_policy"></a>
+
 ### create_resource_policy
 
 Creates a new resource policy with the specified policy statements.
@@ -356,6 +385,8 @@ Keyword-only arguments:
 
 Returns
 [CreateResourcePolicyResponseTypeDef](./type_defs.md#createresourcepolicyresponsetypedef).
+
+<a id="create_resource_policy_statement"></a>
 
 ### create_resource_policy_statement
 
@@ -384,6 +415,8 @@ Keyword-only arguments:
 
 Returns
 [CreateResourcePolicyStatementResponseTypeDef](./type_defs.md#createresourcepolicystatementresponsetypedef).
+
+<a id="create_slot"></a>
 
 ### create_slot
 
@@ -415,6 +448,8 @@ Keyword-only arguments:
   [MultipleValuesSettingTypeDef](./type_defs.md#multiplevaluessettingtypedef)
 
 Returns [CreateSlotResponseTypeDef](./type_defs.md#createslotresponsetypedef).
+
+<a id="create_slot_type"></a>
 
 ### create_slot_type
 
@@ -448,6 +483,8 @@ Keyword-only arguments:
 Returns
 [CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef).
 
+<a id="create_upload_url"></a>
+
 ### create_upload_url
 
 Gets a pre-signed S3 write URL that you use to upload the zip archive when
@@ -460,6 +497,8 @@ Boto3 documentation:
 
 Returns
 [CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef).
+
+<a id="delete_bot"></a>
 
 ### delete_bot
 
@@ -479,6 +518,8 @@ Keyword-only arguments:
 - `skipResourceInUseCheck`: `bool`
 
 Returns [DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef).
+
+<a id="delete_bot_alias"></a>
 
 ### delete_bot_alias
 
@@ -501,6 +542,8 @@ Keyword-only arguments:
 Returns
 [DeleteBotAliasResponseTypeDef](./type_defs.md#deletebotaliasresponsetypedef).
 
+<a id="delete_bot_locale"></a>
+
 ### delete_bot_locale
 
 Removes a locale from a bot.
@@ -522,6 +565,8 @@ Keyword-only arguments:
 Returns
 [DeleteBotLocaleResponseTypeDef](./type_defs.md#deletebotlocaleresponsetypedef).
 
+<a id="delete_bot_version"></a>
+
 ### delete_bot_version
 
 Deletes a specific version of a bot.
@@ -542,6 +587,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef).
+
+<a id="delete_custom_vocabulary"></a>
 
 ### delete_custom_vocabulary
 
@@ -565,6 +612,8 @@ Keyword-only arguments:
 Returns
 [DeleteCustomVocabularyResponseTypeDef](./type_defs.md#deletecustomvocabularyresponsetypedef).
 
+<a id="delete_export"></a>
+
 ### delete_export
 
 Removes a previous export and the associated files stored in an S3 bucket.
@@ -583,6 +632,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteExportResponseTypeDef](./type_defs.md#deleteexportresponsetypedef).
+
+<a id="delete_import"></a>
 
 ### delete_import
 
@@ -603,6 +654,8 @@ Keyword-only arguments:
 Returns
 [DeleteImportResponseTypeDef](./type_defs.md#deleteimportresponsetypedef).
 
+<a id="delete_intent"></a>
+
 ### delete_intent
 
 Removes the specified intent.
@@ -621,6 +674,8 @@ Keyword-only arguments:
 - `botId`: `str` *(required)*
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
+
+<a id="delete_resource_policy"></a>
 
 ### delete_resource_policy
 
@@ -642,6 +697,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
+
+<a id="delete_resource_policy_statement"></a>
 
 ### delete_resource_policy_statement
 
@@ -665,6 +722,8 @@ Keyword-only arguments:
 Returns
 [DeleteResourcePolicyStatementResponseTypeDef](./type_defs.md#deleteresourcepolicystatementresponsetypedef).
 
+<a id="delete_slot"></a>
+
 ### delete_slot
 
 Deletes the specified slot from an intent.
@@ -684,6 +743,8 @@ Keyword-only arguments:
 - `botVersion`: `str` *(required)*
 - `localeId`: `str` *(required)*
 - `intentId`: `str` *(required)*
+
+<a id="delete_slot_type"></a>
 
 ### delete_slot_type
 
@@ -705,6 +766,8 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `skipResourceInUseCheck`: `bool`
 
+<a id="delete_utterances"></a>
+
 ### delete_utterances
 
 Deletes stored utterances.
@@ -725,6 +788,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_bot"></a>
+
 ### describe_bot
 
 Provides metadata information about a bot.
@@ -743,6 +808,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef).
+
+<a id="describe_bot_alias"></a>
 
 ### describe_bot_alias
 
@@ -764,6 +831,8 @@ Keyword-only arguments:
 Returns
 [DescribeBotAliasResponseTypeDef](./type_defs.md#describebotaliasresponsetypedef).
 
+<a id="describe_bot_locale"></a>
+
 ### describe_bot_locale
 
 Describes the settings that a bot has for a specific locale.
@@ -784,6 +853,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBotLocaleResponseTypeDef](./type_defs.md#describebotlocaleresponsetypedef).
+
+<a id="describe_bot_recommendation"></a>
 
 ### describe_bot_recommendation
 
@@ -808,6 +879,8 @@ Keyword-only arguments:
 Returns
 [DescribeBotRecommendationResponseTypeDef](./type_defs.md#describebotrecommendationresponsetypedef).
 
+<a id="describe_bot_version"></a>
+
 ### describe_bot_version
 
 Provides metadata about a version of a bot.
@@ -828,6 +901,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef).
+
+<a id="describe_custom_vocabulary_metadata"></a>
 
 ### describe_custom_vocabulary_metadata
 
@@ -851,6 +926,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef).
 
+<a id="describe_export"></a>
+
 ### describe_export
 
 Gets information about a specific export.
@@ -870,6 +947,8 @@ Keyword-only arguments:
 Returns
 [DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef).
 
+<a id="describe_import"></a>
+
 ### describe_import
 
 Gets information about a specific import.
@@ -888,6 +967,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImportResponseTypeDef](./type_defs.md#describeimportresponsetypedef).
+
+<a id="describe_intent"></a>
 
 ### describe_intent
 
@@ -911,6 +992,8 @@ Keyword-only arguments:
 Returns
 [DescribeIntentResponseTypeDef](./type_defs.md#describeintentresponsetypedef).
 
+<a id="describe_resource_policy"></a>
+
 ### describe_resource_policy
 
 Gets the resource policy and policy revision for a bot or bot alias.
@@ -930,6 +1013,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
+
+<a id="describe_slot"></a>
 
 ### describe_slot
 
@@ -954,6 +1039,8 @@ Keyword-only arguments:
 Returns
 [DescribeSlotResponseTypeDef](./type_defs.md#describeslotresponsetypedef).
 
+<a id="describe_slot_type"></a>
+
 ### describe_slot_type
 
 Gets metadata information about a slot type.
@@ -976,6 +1063,8 @@ Keyword-only arguments:
 Returns
 [DescribeSlotTypeResponseTypeDef](./type_defs.md#describeslottyperesponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -994,6 +1083,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_aggregated_utterances"></a>
 
 ### list_aggregated_utterances
 
@@ -1027,6 +1118,8 @@ Keyword-only arguments:
 Returns
 [ListAggregatedUtterancesResponseTypeDef](./type_defs.md#listaggregatedutterancesresponsetypedef).
 
+<a id="list_bot_aliases"></a>
+
 ### list_bot_aliases
 
 Gets a list of aliases for the specified bot.
@@ -1047,6 +1140,8 @@ Keyword-only arguments:
 
 Returns
 [ListBotAliasesResponseTypeDef](./type_defs.md#listbotaliasesresponsetypedef).
+
+<a id="list_bot_locales"></a>
 
 ### list_bot_locales
 
@@ -1073,6 +1168,8 @@ Keyword-only arguments:
 Returns
 [ListBotLocalesResponseTypeDef](./type_defs.md#listbotlocalesresponsetypedef).
 
+<a id="list_bot_recommendations"></a>
+
 ### list_bot_recommendations
 
 Get a list of bot recommendations that meet the specified criteria.
@@ -1097,6 +1194,8 @@ Keyword-only arguments:
 Returns
 [ListBotRecommendationsResponseTypeDef](./type_defs.md#listbotrecommendationsresponsetypedef).
 
+<a id="list_bot_versions"></a>
+
 ### list_bot_versions
 
 Gets information about all of the versions of a bot.
@@ -1119,6 +1218,8 @@ Keyword-only arguments:
 Returns
 [ListBotVersionsResponseTypeDef](./type_defs.md#listbotversionsresponsetypedef).
 
+<a id="list_bots"></a>
+
 ### list_bots
 
 Gets a list of available bots.
@@ -1139,6 +1240,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+
+<a id="list_built_in_intents"></a>
 
 ### list_built_in_intents
 
@@ -1165,6 +1268,8 @@ Keyword-only arguments:
 Returns
 [ListBuiltInIntentsResponseTypeDef](./type_defs.md#listbuiltinintentsresponsetypedef).
 
+<a id="list_built_in_slot_types"></a>
+
 ### list_built_in_slot_types
 
 Gets a list of built-in slot types that meet the specified criteria.
@@ -1188,6 +1293,8 @@ Keyword-only arguments:
 
 Returns
 [ListBuiltInSlotTypesResponseTypeDef](./type_defs.md#listbuiltinslottypesresponsetypedef).
+
+<a id="list_exports"></a>
 
 ### list_exports
 
@@ -1215,6 +1322,8 @@ Keyword-only arguments:
 Returns
 [ListExportsResponseTypeDef](./type_defs.md#listexportsresponsetypedef).
 
+<a id="list_imports"></a>
+
 ### list_imports
 
 Lists the imports for a bot, bot locale, or custom vocabulary.
@@ -1240,6 +1349,8 @@ Keyword-only arguments:
 
 Returns
 [ListImportsResponseTypeDef](./type_defs.md#listimportsresponsetypedef).
+
+<a id="list_intents"></a>
 
 ### list_intents
 
@@ -1267,6 +1378,8 @@ Keyword-only arguments:
 Returns
 [ListIntentsResponseTypeDef](./type_defs.md#listintentsresponsetypedef).
 
+<a id="list_recommended_intents"></a>
+
 ### list_recommended_intents
 
 Gets a list of recommended intents provided by the bot recommendation that you
@@ -1292,6 +1405,8 @@ Keyword-only arguments:
 
 Returns
 [ListRecommendedIntentsResponseTypeDef](./type_defs.md#listrecommendedintentsresponsetypedef).
+
+<a id="list_slot_types"></a>
 
 ### list_slot_types
 
@@ -1319,6 +1434,8 @@ Keyword-only arguments:
 Returns
 [ListSlotTypesResponseTypeDef](./type_defs.md#listslottypesresponsetypedef).
 
+<a id="list_slots"></a>
+
 ### list_slots
 
 Gets a list of slots that match the specified criteria.
@@ -1345,6 +1462,8 @@ Keyword-only arguments:
 
 Returns [ListSlotsResponseTypeDef](./type_defs.md#listslotsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets a list of tags associated with a resource.
@@ -1364,6 +1483,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="search_associated_transcripts"></a>
 
 ### search_associated_transcripts
 
@@ -1394,6 +1515,8 @@ Keyword-only arguments:
 Returns
 [SearchAssociatedTranscriptsResponseTypeDef](./type_defs.md#searchassociatedtranscriptsresponsetypedef).
 
+<a id="start_bot_recommendation"></a>
+
 ### start_bot_recommendation
 
 Use this to provide your transcript data, and to start the bot recommendation
@@ -1422,6 +1545,8 @@ Keyword-only arguments:
 Returns
 [StartBotRecommendationResponseTypeDef](./type_defs.md#startbotrecommendationresponsetypedef).
 
+<a id="start_import"></a>
+
 ### start_import
 
 Starts importing a bot, bot locale, or custom vocabulary from a zip archive
@@ -1448,6 +1573,8 @@ Keyword-only arguments:
 Returns
 [StartImportResponseTypeDef](./type_defs.md#startimportresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -1467,6 +1594,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a bot, bot alias, or bot channel.
@@ -1485,6 +1614,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_bot"></a>
 
 ### update_bot
 
@@ -1509,6 +1640,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
+
+<a id="update_bot_alias"></a>
 
 ### update_bot_alias
 
@@ -1539,6 +1672,8 @@ Keyword-only arguments:
 Returns
 [UpdateBotAliasResponseTypeDef](./type_defs.md#updatebotaliasresponsetypedef).
 
+<a id="update_bot_locale"></a>
+
 ### update_bot_locale
 
 Updates the settings that a bot has for a specific locale.
@@ -1562,6 +1697,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBotLocaleResponseTypeDef](./type_defs.md#updatebotlocaleresponsetypedef).
+
+<a id="update_bot_recommendation"></a>
 
 ### update_bot_recommendation
 
@@ -1589,6 +1726,8 @@ Keyword-only arguments:
 Returns
 [UpdateBotRecommendationResponseTypeDef](./type_defs.md#updatebotrecommendationresponsetypedef).
 
+<a id="update_export"></a>
+
 ### update_export
 
 Updates the password used to protect an export zip archive.
@@ -1608,6 +1747,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateExportResponseTypeDef](./type_defs.md#updateexportresponsetypedef).
+
+<a id="update_intent"></a>
 
 ### update_intent
 
@@ -1652,6 +1793,8 @@ Keyword-only arguments:
 Returns
 [UpdateIntentResponseTypeDef](./type_defs.md#updateintentresponsetypedef).
 
+<a id="update_resource_policy"></a>
+
 ### update_resource_policy
 
 Replaces the existing resource policy for a bot or bot alias with a new one.
@@ -1673,6 +1816,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateResourcePolicyResponseTypeDef](./type_defs.md#updateresourcepolicyresponsetypedef).
+
+<a id="update_slot"></a>
 
 ### update_slot
 
@@ -1706,6 +1851,8 @@ Keyword-only arguments:
 
 Returns [UpdateSlotResponseTypeDef](./type_defs.md#updateslotresponsetypedef).
 
+<a id="update_slot_type"></a>
+
 ### update_slot_type
 
 Updates the configuration of an existing slot type.
@@ -1736,6 +1883,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSlotTypeResponseTypeDef](./type_defs.md#updateslottyperesponsetypedef).
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

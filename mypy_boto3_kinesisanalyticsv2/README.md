@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kinesisanalyticsv2-module"></a>
+
 # Type annotations for boto3 KinesisAnalyticsV2 module
 
 > [Index](..) > KinesisAnalyticsV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
-[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+[mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kinesisanalyticsv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kinesisanalyticsv2]'
+
+# standalone installation
 pip install mypy-boto3-kinesisanalyticsv2
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-kinesisanalyticsv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="kinesisanalyticsv2client"></a>
+
 ## KinesisAnalyticsV2Client
 
 Type annotations for `boto3.client("kinesisanalyticsv2")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
 - [update_application](./client.md#update_application)
 - [update_application_maintenance_configuration](./client.md#update_application_maintenance_configuration)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
@@ -87,6 +103,8 @@ KinesisAnalyticsV2Client [exceptions](./client.md#exceptions)
 - UnableToDetectSchemaException
 - UnsupportedOperationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -95,11 +113,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_kinesisanalyticsv2.paginators import ListApplicationSnapshotsPaginator, ...
+from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator, ...
 ```
 
 - [ListApplicationSnapshotsPaginator](./paginators.md#listapplicationsnapshotspaginator)
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -128,6 +148,8 @@ from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType, ...
 - [UrlTypeType](./literals.md#urltypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

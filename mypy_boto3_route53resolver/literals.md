@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-route53resolver-module"></a>
+
 # Literals for boto3 Route53Resolver module
 
 > [Index](..) > [Route53Resolver](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
-[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Literals for boto3 Route53Resolver module](#literals-for-boto3-route53resolver-module)
   - [ActionType](#actiontype)
@@ -51,6 +53,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="actiontype"></a>
+
 ## ActionType
 
 ```python
@@ -63,6 +67,8 @@ Values:
 - `ALLOW`
 - `BLOCK`
 
+<a id="autodefinedreverseflagtype"></a>
+
 ## AutodefinedReverseFlagType
 
 ```python
@@ -74,6 +80,8 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
+<a id="blockoverridednstypetype"></a>
+
 ## BlockOverrideDnsTypeType
 
 ```python
@@ -83,6 +91,8 @@ from mypy_boto3_route53resolver.literals import BlockOverrideDnsTypeType
 Values:
 
 - `CNAME`
+
+<a id="blockresponsetype"></a>
 
 ## BlockResponseType
 
@@ -96,6 +106,8 @@ Values:
 - `NXDOMAIN`
 - `OVERRIDE`
 
+<a id="firewalldomainimportoperationtype"></a>
+
 ## FirewallDomainImportOperationType
 
 ```python
@@ -105,6 +117,8 @@ from mypy_boto3_route53resolver.literals import FirewallDomainImportOperationTyp
 Values:
 
 - `REPLACE`
+
+<a id="firewalldomainliststatustype"></a>
 
 ## FirewallDomainListStatusType
 
@@ -120,6 +134,8 @@ Values:
 - `IMPORTING`
 - `UPDATING`
 
+<a id="firewalldomainupdateoperationtype"></a>
+
 ## FirewallDomainUpdateOperationType
 
 ```python
@@ -132,6 +148,8 @@ Values:
 - `REMOVE`
 - `REPLACE`
 
+<a id="firewallfailopenstatustype"></a>
+
 ## FirewallFailOpenStatusType
 
 ```python
@@ -142,6 +160,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="firewallrulegroupassociationstatustype"></a>
 
 ## FirewallRuleGroupAssociationStatusType
 
@@ -155,6 +175,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="firewallrulegroupstatustype"></a>
+
 ## FirewallRuleGroupStatusType
 
 ```python
@@ -166,6 +188,8 @@ Values:
 - `COMPLETE`
 - `DELETING`
 - `UPDATING`
+
+<a id="ipaddressstatustype"></a>
 
 ## IpAddressStatusType
 
@@ -186,6 +210,8 @@ Values:
 - `REMAP_ATTACHING`
 - `REMAP_DETACHING`
 
+<a id="listfirewallconfigspaginatorname"></a>
+
 ## ListFirewallConfigsPaginatorName
 
 ```python
@@ -195,6 +221,8 @@ from mypy_boto3_route53resolver.literals import ListFirewallConfigsPaginatorName
 Values:
 
 - `list_firewall_configs`
+
+<a id="listfirewalldomainlistspaginatorname"></a>
 
 ## ListFirewallDomainListsPaginatorName
 
@@ -206,6 +234,8 @@ Values:
 
 - `list_firewall_domain_lists`
 
+<a id="listfirewalldomainspaginatorname"></a>
+
 ## ListFirewallDomainsPaginatorName
 
 ```python
@@ -215,6 +245,8 @@ from mypy_boto3_route53resolver.literals import ListFirewallDomainsPaginatorName
 Values:
 
 - `list_firewall_domains`
+
+<a id="listfirewallrulegroupassociationspaginatorname"></a>
 
 ## ListFirewallRuleGroupAssociationsPaginatorName
 
@@ -226,6 +258,8 @@ Values:
 
 - `list_firewall_rule_group_associations`
 
+<a id="listfirewallrulegroupspaginatorname"></a>
+
 ## ListFirewallRuleGroupsPaginatorName
 
 ```python
@@ -235,6 +269,8 @@ from mypy_boto3_route53resolver.literals import ListFirewallRuleGroupsPaginatorN
 Values:
 
 - `list_firewall_rule_groups`
+
+<a id="listfirewallrulespaginatorname"></a>
 
 ## ListFirewallRulesPaginatorName
 
@@ -246,6 +282,8 @@ Values:
 
 - `list_firewall_rules`
 
+<a id="listresolverconfigspaginatorname"></a>
+
 ## ListResolverConfigsPaginatorName
 
 ```python
@@ -255,6 +293,8 @@ from mypy_boto3_route53resolver.literals import ListResolverConfigsPaginatorName
 Values:
 
 - `list_resolver_configs`
+
+<a id="listresolverdnssecconfigspaginatorname"></a>
 
 ## ListResolverDnssecConfigsPaginatorName
 
@@ -266,6 +306,8 @@ Values:
 
 - `list_resolver_dnssec_configs`
 
+<a id="listresolverendpointipaddressespaginatorname"></a>
+
 ## ListResolverEndpointIpAddressesPaginatorName
 
 ```python
@@ -275,6 +317,8 @@ from mypy_boto3_route53resolver.literals import ListResolverEndpointIpAddressesP
 Values:
 
 - `list_resolver_endpoint_ip_addresses`
+
+<a id="listresolverendpointspaginatorname"></a>
 
 ## ListResolverEndpointsPaginatorName
 
@@ -286,6 +330,8 @@ Values:
 
 - `list_resolver_endpoints`
 
+<a id="listresolverquerylogconfigassociationspaginatorname"></a>
+
 ## ListResolverQueryLogConfigAssociationsPaginatorName
 
 ```python
@@ -295,6 +341,8 @@ from mypy_boto3_route53resolver.literals import ListResolverQueryLogConfigAssoci
 Values:
 
 - `list_resolver_query_log_config_associations`
+
+<a id="listresolverquerylogconfigspaginatorname"></a>
 
 ## ListResolverQueryLogConfigsPaginatorName
 
@@ -306,6 +354,8 @@ Values:
 
 - `list_resolver_query_log_configs`
 
+<a id="listresolverruleassociationspaginatorname"></a>
+
 ## ListResolverRuleAssociationsPaginatorName
 
 ```python
@@ -315,6 +365,8 @@ from mypy_boto3_route53resolver.literals import ListResolverRuleAssociationsPagi
 Values:
 
 - `list_resolver_rule_associations`
+
+<a id="listresolverrulespaginatorname"></a>
 
 ## ListResolverRulesPaginatorName
 
@@ -326,6 +378,8 @@ Values:
 
 - `list_resolver_rules`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -335,6 +389,8 @@ from mypy_boto3_route53resolver.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="mutationprotectionstatustype"></a>
 
 ## MutationProtectionStatusType
 
@@ -346,6 +402,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="resolverautodefinedreversestatustype"></a>
 
 ## ResolverAutodefinedReverseStatusType
 
@@ -360,6 +418,8 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
+<a id="resolverdnssecvalidationstatustype"></a>
+
 ## ResolverDNSSECValidationStatusType
 
 ```python
@@ -373,6 +433,8 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
+<a id="resolverendpointdirectiontype"></a>
+
 ## ResolverEndpointDirectionType
 
 ```python
@@ -383,6 +445,8 @@ Values:
 
 - `INBOUND`
 - `OUTBOUND`
+
+<a id="resolverendpointstatustype"></a>
 
 ## ResolverEndpointStatusType
 
@@ -399,6 +463,8 @@ Values:
 - `OPERATIONAL`
 - `UPDATING`
 
+<a id="resolverquerylogconfigassociationerrortype"></a>
+
 ## ResolverQueryLogConfigAssociationErrorType
 
 ```python
@@ -411,6 +477,8 @@ Values:
 - `DESTINATION_NOT_FOUND`
 - `INTERNAL_SERVICE_ERROR`
 - `NONE`
+
+<a id="resolverquerylogconfigassociationstatustype"></a>
 
 ## ResolverQueryLogConfigAssociationStatusType
 
@@ -426,6 +494,8 @@ Values:
 - `DELETING`
 - `FAILED`
 
+<a id="resolverquerylogconfigstatustype"></a>
+
 ## ResolverQueryLogConfigStatusType
 
 ```python
@@ -438,6 +508,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+
+<a id="resolverruleassociationstatustype"></a>
 
 ## ResolverRuleAssociationStatusType
 
@@ -453,6 +525,8 @@ Values:
 - `FAILED`
 - `OVERRIDDEN`
 
+<a id="resolverrulestatustype"></a>
+
 ## ResolverRuleStatusType
 
 ```python
@@ -466,6 +540,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="ruletypeoptiontype"></a>
+
 ## RuleTypeOptionType
 
 ```python
@@ -477,6 +553,8 @@ Values:
 - `FORWARD`
 - `RECURSIVE`
 - `SYSTEM`
+
+<a id="sharestatustype"></a>
 
 ## ShareStatusType
 
@@ -490,6 +568,8 @@ Values:
 - `SHARED_BY_ME`
 - `SHARED_WITH_ME`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -501,6 +581,8 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="validationtype"></a>
+
 ## ValidationType
 
 ```python
@@ -511,6 +593,8 @@ Values:
 
 - `DISABLE`
 - `ENABLE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -819,6 +903,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

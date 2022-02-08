@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudhsm-module"></a>
+
 # Type annotations for boto3 CloudHSM module
 
 > [Index](..) > CloudHSM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
-[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloudhsm]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloudhsm]'
+
+# standalone installation
 pip install mypy-boto3-cloudhsm
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-cloudhsm
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudhsmclient"></a>
+
 ## CloudHSMClient
 
 Type annotations for `boto3.client("cloudhsm")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloudhsm.client import CloudHSMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -57,6 +71,8 @@ from mypy_boto3_cloudhsm.client import CloudHSMClient
 - [modify_luna_client](./client.md#modify_luna_client)
 - [remove_tags_from_resource](./client.md#remove_tags_from_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudHSMClient [exceptions](./client.md#exceptions)
@@ -66,6 +82,8 @@ CloudHSMClient [exceptions](./client.md#exceptions)
 - CloudHsmServiceException
 - InvalidRequestException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -74,12 +92,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsm.paginators import ListHapgsPaginator, ...
+from mypy_boto3_cloudhsm.paginator import ListHapgsPaginator, ...
 ```
 
 - [ListHapgsPaginator](./paginators.md#listhapgspaginator)
 - [ListHsmsPaginator](./paginators.md#listhsmspaginator)
 - [ListLunaClientsPaginator](./paginators.md#listlunaclientspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -100,6 +120,8 @@ from mypy_boto3_cloudhsm.literals import ClientVersionType, ...
 - [SubscriptionTypeType](./literals.md#subscriptiontypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

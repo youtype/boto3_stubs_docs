@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-personalizeruntime-module"></a>
+
 # Typed dictionaries for boto3 PersonalizeRuntime module
 
 > [Index](..) > [PersonalizeRuntime](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module
-[mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
+[mypy-boto3-personalize-runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 - [Typed dictionaries for boto3 PersonalizeRuntime module](#typed-dictionaries-for-boto3-personalizeruntime-module)
   - [GetPersonalizedRankingRequestRequestTypeDef](#getpersonalizedrankingrequestrequesttypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [GetRecommendationsResponseTypeDef](#getrecommendationsresponsetypedef)
   - [PredictedItemTypeDef](#predicteditemtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="getpersonalizedrankingrequestrequesttypedef"></a>
 
 ## GetPersonalizedRankingRequestRequestTypeDef
 
@@ -33,6 +37,8 @@ Optional fields:
 - `filterArn`: `str`
 - `filterValues`: `Mapping`\[`str`, `str`\]
 
+<a id="getpersonalizedrankingresponsetypedef"></a>
+
 ## GetPersonalizedRankingResponseTypeDef
 
 ```python
@@ -46,6 +52,8 @@ Required fields:
 - `recommendationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrecommendationsrequestrequesttypedef"></a>
 
 ## GetRecommendationsRequestRequestTypeDef
 
@@ -64,6 +72,8 @@ Optional fields:
 - `filterValues`: `Mapping`\[`str`, `str`\]
 - `recommenderArn`: `str`
 
+<a id="getrecommendationsresponsetypedef"></a>
+
 ## GetRecommendationsResponseTypeDef
 
 ```python
@@ -78,6 +88,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="predicteditemtypedef"></a>
+
 ## PredictedItemTypeDef
 
 ```python
@@ -88,6 +100,8 @@ Optional fields:
 
 - `itemId`: `str`
 - `score`: `float`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

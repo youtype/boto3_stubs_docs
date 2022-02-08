@@ -1,3 +1,5 @@
+<a id="schemasclient-for-boto3-schemas-module"></a>
+
 # SchemasClient for boto3 Schemas module
 
 > [Index](..) > [Schemas](.) > SchemasClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module
-[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 - [SchemasClient for boto3 Schemas module](#schemasclient-for-boto3-schemas-module)
   - [SchemasClient](#schemasclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="schemasclient"></a>
+
 ## SchemasClient
 
 Type annotations for `boto3.client("schemas")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("schemas")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_schemas.client import SchemasClient
 
 def get_schemas_client() -> SchemasClient:
-    return boto3.client("schemas")
+    return Session().client("schemas")
 ```
 
 Boto3 documentation:
 [Schemas.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -90,7 +97,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -102,6 +113,8 @@ Boto3 documentation:
 [Schemas.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -117,6 +130,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_discoverer"></a>
 
 ### create_discoverer
 
@@ -140,6 +155,8 @@ Keyword-only arguments:
 Returns
 [CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
 
+<a id="create_registry"></a>
+
 ### create_registry
 
 Creates a registry.
@@ -160,6 +177,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
+
+<a id="create_schema"></a>
 
 ### create_schema
 
@@ -185,6 +204,8 @@ Keyword-only arguments:
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
+<a id="delete_discoverer"></a>
+
 ### delete_discoverer
 
 Deletes a discoverer.
@@ -200,6 +221,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
+
+<a id="delete_registry"></a>
 
 ### delete_registry
 
@@ -217,6 +240,8 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Delete the resource-based policy attached to the specified registry.
@@ -232,6 +257,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RegistryName`: `str`
+
+<a id="delete_schema"></a>
 
 ### delete_schema
 
@@ -249,6 +276,8 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
+
+<a id="delete_schema_version"></a>
 
 ### delete_schema_version
 
@@ -268,6 +297,8 @@ Keyword-only arguments:
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
 - `SchemaVersion`: `str` *(required)*
+
+<a id="describe_code_binding"></a>
 
 ### describe_code_binding
 
@@ -291,6 +322,8 @@ Keyword-only arguments:
 Returns
 [DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef).
 
+<a id="describe_discoverer"></a>
+
 ### describe_discoverer
 
 Describes the discoverer.
@@ -310,6 +343,8 @@ Keyword-only arguments:
 Returns
 [DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef).
 
+<a id="describe_registry"></a>
+
 ### describe_registry
 
 Describes the registry.
@@ -328,6 +363,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
+
+<a id="describe_schema"></a>
 
 ### describe_schema
 
@@ -349,6 +386,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
+
+<a id="export_schema"></a>
 
 ### export_schema
 
@@ -373,6 +412,8 @@ Keyword-only arguments:
 Returns
 [ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -390,6 +431,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_code_binding_source"></a>
 
 ### get_code_binding_source
 
@@ -413,6 +456,8 @@ Keyword-only arguments:
 Returns
 [GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef).
 
+<a id="get_discovered_schema"></a>
+
 ### get_discovered_schema
 
 Get the discovered schema that was generated based on sampled events.
@@ -433,6 +478,8 @@ Keyword-only arguments:
 Returns
 [GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef).
 
+<a id="get_resource_policy"></a>
+
 ### get_resource_policy
 
 Retrieves the resource-based policy attached to a given registry.
@@ -451,6 +498,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+
+<a id="list_discoverers"></a>
 
 ### list_discoverers
 
@@ -474,6 +523,8 @@ Keyword-only arguments:
 Returns
 [ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef).
 
+<a id="list_registries"></a>
+
 ### list_registries
 
 List the registries.
@@ -495,6 +546,8 @@ Keyword-only arguments:
 
 Returns
 [ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
+
+<a id="list_schema_versions"></a>
 
 ### list_schema_versions
 
@@ -518,6 +571,8 @@ Keyword-only arguments:
 Returns
 [ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
+<a id="list_schemas"></a>
+
 ### list_schemas
 
 List the schemas.
@@ -540,6 +595,8 @@ Keyword-only arguments:
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Get tags for resource.
@@ -558,6 +615,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_code_binding"></a>
 
 ### put_code_binding
 
@@ -582,6 +641,8 @@ Keyword-only arguments:
 Returns
 [PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef).
 
+<a id="put_resource_policy"></a>
+
 ### put_resource_policy
 
 The name of the policy.
@@ -602,6 +663,8 @@ Keyword-only arguments:
 
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+
+<a id="search_schemas"></a>
 
 ### search_schemas
 
@@ -626,6 +689,8 @@ Keyword-only arguments:
 Returns
 [SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef).
 
+<a id="start_discoverer"></a>
+
 ### start_discoverer
 
 Starts the discoverer See also:
@@ -645,6 +710,8 @@ Keyword-only arguments:
 
 Returns
 [StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef).
+
+<a id="stop_discoverer"></a>
 
 ### stop_discoverer
 
@@ -666,6 +733,8 @@ Keyword-only arguments:
 Returns
 [StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add tags to a resource.
@@ -683,6 +752,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -699,6 +770,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_discoverer"></a>
 
 ### update_discoverer
 
@@ -722,6 +795,8 @@ Keyword-only arguments:
 Returns
 [UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).
 
+<a id="update_registry"></a>
+
 ### update_registry
 
 Updates a registry.
@@ -741,6 +816,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
+
+<a id="update_schema"></a>
 
 ### update_schema
 
@@ -766,6 +843,8 @@ Keyword-only arguments:
 Returns
 [UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("schemas").get_paginator` method with
@@ -781,6 +860,8 @@ overloads.
   [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - `client.get_paginator("search_schemas")` ->
   [SearchSchemasPaginator](./paginators.md#searchschemaspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

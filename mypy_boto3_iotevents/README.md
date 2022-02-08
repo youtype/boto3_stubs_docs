@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotevents-module"></a>
+
 # Type annotations for boto3 IoTEvents module
 
 > [Index](..) > IoTEvents
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
-[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+[mypy-boto3-iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotevents]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotevents]'
+
+# standalone installation
 pip install mypy-boto3-iotevents
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iotevents
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="ioteventsclient"></a>
 
 ## IoTEventsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotevents.client import IoTEventsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -61,6 +75,8 @@ from mypy_boto3_iotevents.client import IoTEventsClient
 - [update_detector_model](./client.md#update_detector_model)
 - [update_input](./client.md#update_input)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTEventsClient [exceptions](./client.md#exceptions)
@@ -75,6 +91,8 @@ IoTEventsClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - ThrottlingException
 - UnsupportedOperationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -96,6 +114,8 @@ from mypy_boto3_iotevents.literals import AlarmModelVersionStatusType, ...
 - [LoggingLevelType](./literals.md#loggingleveltype)
 - [PayloadTypeType](./literals.md#payloadtypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

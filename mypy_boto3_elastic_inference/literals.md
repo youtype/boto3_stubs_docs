@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elasticinference-module"></a>
+
 # Literals for boto3 ElasticInference module
 
 > [Index](..) > [ElasticInference](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
-[mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 - [Literals for boto3 ElasticInference module](#literals-for-boto3-elasticinference-module)
   - [DescribeAcceleratorsPaginatorName](#describeacceleratorspaginatorname)
   - [LocationTypeType](#locationtypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="describeacceleratorspaginatorname"></a>
 
 ## DescribeAcceleratorsPaginatorName
 
@@ -22,6 +26,8 @@ from mypy_boto3_elastic_inference.literals import DescribeAcceleratorsPaginatorN
 Values:
 
 - `describe_accelerators`
+
+<a id="locationtypetype"></a>
 
 ## LocationTypeType
 
@@ -34,6 +40,8 @@ Values:
 - `availability-zone`
 - `availability-zone-id`
 - `region`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -342,6 +350,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

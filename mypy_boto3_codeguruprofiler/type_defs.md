@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codeguruprofiler-module"></a>
+
 # Typed dictionaries for boto3 CodeGuruProfiler module
 
 > [Index](..) > [CodeGuruProfiler](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
-[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+[mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [Typed dictionaries for boto3 CodeGuruProfiler module](#typed-dictionaries-for-boto3-codeguruprofiler-module)
   - [AddNotificationChannelsRequestRequestTypeDef](#addnotificationchannelsrequestrequesttypedef)
@@ -71,6 +73,8 @@ type annotations stubs module
   - [UpdateProfilingGroupResponseTypeDef](#updateprofilinggroupresponsetypedef)
   - [UserFeedbackTypeDef](#userfeedbacktypedef)
 
+<a id="addnotificationchannelsrequestrequesttypedef"></a>
+
 ## AddNotificationChannelsRequestRequestTypeDef
 
 ```python
@@ -81,6 +85,8 @@ Required fields:
 
 - `channels`: `Sequence`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
 - `profilingGroupName`: `str`
+
+<a id="addnotificationchannelsresponsetypedef"></a>
 
 ## AddNotificationChannelsResponseTypeDef
 
@@ -94,6 +100,8 @@ Required fields:
   [NotificationConfigurationTypeDef](./type_defs.md#notificationconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="agentconfigurationtypedef"></a>
 
 ## AgentConfigurationTypeDef
 
@@ -112,6 +120,8 @@ Optional fields:
   `Dict`\[[AgentParameterFieldType](./literals.md#agentparameterfieldtype),
   `str`\]
 
+<a id="agentorchestrationconfigtypedef"></a>
+
 ## AgentOrchestrationConfigTypeDef
 
 ```python
@@ -121,6 +131,8 @@ from mypy_boto3_codeguruprofiler.type_defs import AgentOrchestrationConfigTypeDe
 Required fields:
 
 - `profilingEnabled`: `bool`
+
+<a id="aggregatedprofiletimetypedef"></a>
 
 ## AggregatedProfileTimeTypeDef
 
@@ -132,6 +144,8 @@ Optional fields:
 
 - `period`: [AggregationPeriodType](./literals.md#aggregationperiodtype)
 - `start`: `datetime`
+
+<a id="anomalyinstancetypedef"></a>
 
 ## AnomalyInstanceTypeDef
 
@@ -149,6 +163,8 @@ Optional fields:
 - `endTime`: `datetime`
 - `userFeedback`: [UserFeedbackTypeDef](./type_defs.md#userfeedbacktypedef)
 
+<a id="anomalytypedef"></a>
+
 ## AnomalyTypeDef
 
 ```python
@@ -161,6 +177,8 @@ Required fields:
   `List`\[[AnomalyInstanceTypeDef](./type_defs.md#anomalyinstancetypedef)\]
 - `metric`: [MetricTypeDef](./type_defs.md#metrictypedef)
 - `reason`: `str`
+
+<a id="batchgetframemetricdatarequestrequesttypedef"></a>
 
 ## BatchGetFrameMetricDataRequestRequestTypeDef
 
@@ -182,6 +200,8 @@ Optional fields:
 - `targetResolution`:
   [AggregationPeriodType](./literals.md#aggregationperiodtype)
 
+<a id="batchgetframemetricdataresponsetypedef"></a>
+
 ## BatchGetFrameMetricDataResponseTypeDef
 
 ```python
@@ -202,6 +222,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="channeltypedef"></a>
+
 ## ChannelTypeDef
 
 ```python
@@ -217,6 +239,8 @@ Required fields:
 Optional fields:
 
 - `id`: `str`
+
+<a id="configureagentrequestrequesttypedef"></a>
 
 ## ConfigureAgentRequestRequestTypeDef
 
@@ -234,6 +258,8 @@ Optional fields:
 - `metadata`: `Mapping`\[[MetadataFieldType](./literals.md#metadatafieldtype),
   `str`\]
 
+<a id="configureagentresponsetypedef"></a>
+
 ## ConfigureAgentResponseTypeDef
 
 ```python
@@ -246,6 +272,8 @@ Required fields:
   [AgentConfigurationTypeDef](./type_defs.md#agentconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprofilinggrouprequestrequesttypedef"></a>
 
 ## CreateProfilingGroupRequestRequestTypeDef
 
@@ -265,6 +293,8 @@ Optional fields:
 - `computePlatform`: [ComputePlatformType](./literals.md#computeplatformtype)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createprofilinggroupresponsetypedef"></a>
+
 ## CreateProfilingGroupResponseTypeDef
 
 ```python
@@ -278,6 +308,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprofilinggrouprequestrequesttypedef"></a>
+
 ## DeleteProfilingGroupRequestRequestTypeDef
 
 ```python
@@ -288,6 +320,8 @@ Required fields:
 
 - `profilingGroupName`: `str`
 
+<a id="describeprofilinggrouprequestrequesttypedef"></a>
+
 ## DescribeProfilingGroupRequestRequestTypeDef
 
 ```python
@@ -297,6 +331,8 @@ from mypy_boto3_codeguruprofiler.type_defs import DescribeProfilingGroupRequestR
 Required fields:
 
 - `profilingGroupName`: `str`
+
+<a id="describeprofilinggroupresponsetypedef"></a>
 
 ## DescribeProfilingGroupResponseTypeDef
 
@@ -310,6 +346,8 @@ Required fields:
   [ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="findingsreportsummarytypedef"></a>
 
 ## FindingsReportSummaryTypeDef
 
@@ -325,6 +363,8 @@ Optional fields:
 - `profilingGroupName`: `str`
 - `totalNumberOfFindings`: `int`
 
+<a id="framemetricdatumtypedef"></a>
+
 ## FrameMetricDatumTypeDef
 
 ```python
@@ -335,6 +375,8 @@ Required fields:
 
 - `frameMetric`: [FrameMetricTypeDef](./type_defs.md#framemetrictypedef)
 - `values`: `List`\[`float`\]
+
+<a id="framemetrictypedef"></a>
 
 ## FrameMetricTypeDef
 
@@ -349,6 +391,8 @@ Required fields:
 - `type`: `Literal['AggregatedRelativeTotalTime']` (see
   [MetricTypeType](./literals.md#metrictypetype))
 
+<a id="getfindingsreportaccountsummaryrequestrequesttypedef"></a>
+
 ## GetFindingsReportAccountSummaryRequestRequestTypeDef
 
 ```python
@@ -360,6 +404,8 @@ Optional fields:
 - `dailyReportsOnly`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="getfindingsreportaccountsummaryresponsetypedef"></a>
 
 ## GetFindingsReportAccountSummaryResponseTypeDef
 
@@ -375,6 +421,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnotificationconfigurationrequestrequesttypedef"></a>
+
 ## GetNotificationConfigurationRequestRequestTypeDef
 
 ```python
@@ -384,6 +432,8 @@ from mypy_boto3_codeguruprofiler.type_defs import GetNotificationConfigurationRe
 Required fields:
 
 - `profilingGroupName`: `str`
+
+<a id="getnotificationconfigurationresponsetypedef"></a>
 
 ## GetNotificationConfigurationResponseTypeDef
 
@@ -398,6 +448,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpolicyrequestrequesttypedef"></a>
+
 ## GetPolicyRequestRequestTypeDef
 
 ```python
@@ -407,6 +459,8 @@ from mypy_boto3_codeguruprofiler.type_defs import GetPolicyRequestRequestTypeDef
 Required fields:
 
 - `profilingGroupName`: `str`
+
+<a id="getpolicyresponsetypedef"></a>
 
 ## GetPolicyResponseTypeDef
 
@@ -420,6 +474,8 @@ Required fields:
 - `revisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getprofilerequestrequesttypedef"></a>
 
 ## GetProfileRequestRequestTypeDef
 
@@ -439,6 +495,8 @@ Optional fields:
 - `period`: `str`
 - `startTime`: `Union`\[`datetime`, `str`\]
 
+<a id="getprofileresponsetypedef"></a>
+
 ## GetProfileResponseTypeDef
 
 ```python
@@ -452,6 +510,8 @@ Required fields:
 - `profile`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrecommendationsrequestrequesttypedef"></a>
 
 ## GetRecommendationsRequestRequestTypeDef
 
@@ -469,6 +529,8 @@ Optional fields:
 
 - `locale`: `str`
 
+<a id="getrecommendationsresponsetypedef"></a>
+
 ## GetRecommendationsResponseTypeDef
 
 ```python
@@ -485,6 +547,8 @@ Required fields:
   `List`\[[RecommendationTypeDef](./type_defs.md#recommendationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfindingsreportsrequestrequesttypedef"></a>
 
 ## ListFindingsReportsRequestRequestTypeDef
 
@@ -504,6 +568,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listfindingsreportsresponsetypedef"></a>
+
 ## ListFindingsReportsResponseTypeDef
 
 ```python
@@ -517,6 +583,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listprofiletimesrequestrequesttypedef"></a>
 
 ## ListProfileTimesRequestRequestTypeDef
 
@@ -537,6 +605,8 @@ Optional fields:
 - `nextToken`: `str`
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
 
+<a id="listprofiletimesresponsetypedef"></a>
+
 ## ListProfileTimesResponseTypeDef
 
 ```python
@@ -551,6 +621,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprofilinggroupsrequestrequesttypedef"></a>
+
 ## ListProfilingGroupsRequestRequestTypeDef
 
 ```python
@@ -562,6 +634,8 @@ Optional fields:
 - `includeDescription`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listprofilinggroupsresponsetypedef"></a>
 
 ## ListProfilingGroupsResponseTypeDef
 
@@ -578,6 +652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -587,6 +663,8 @@ from mypy_boto3_codeguruprofiler.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -600,6 +678,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="matchtypedef"></a>
+
 ## MatchTypeDef
 
 ```python
@@ -611,6 +691,8 @@ Optional fields:
 - `frameAddress`: `str`
 - `targetFramesIndex`: `int`
 - `thresholdBreachValue`: `float`
+
+<a id="metrictypedef"></a>
 
 ## MetricTypeDef
 
@@ -625,6 +707,8 @@ Required fields:
 - `type`: `Literal['AggregatedRelativeTotalTime']` (see
   [MetricTypeType](./literals.md#metrictypetype))
 
+<a id="notificationconfigurationtypedef"></a>
+
 ## NotificationConfigurationTypeDef
 
 ```python
@@ -634,6 +718,8 @@ from mypy_boto3_codeguruprofiler.type_defs import NotificationConfigurationTypeD
 Optional fields:
 
 - `channels`: `List`\[[ChannelTypeDef](./type_defs.md#channeltypedef)\]
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -646,6 +732,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="patterntypedef"></a>
 
 ## PatternTypeDef
 
@@ -663,6 +751,8 @@ Optional fields:
 - `targetFrames`: `List`\[`List`\[`str`\]\]
 - `thresholdPercent`: `float`
 
+<a id="postagentprofilerequestrequesttypedef"></a>
+
 ## PostAgentProfileRequestRequestTypeDef
 
 ```python
@@ -679,6 +769,8 @@ Optional fields:
 
 - `profileToken`: `str`
 
+<a id="profiletimetypedef"></a>
+
 ## ProfileTimeTypeDef
 
 ```python
@@ -688,6 +780,8 @@ from mypy_boto3_codeguruprofiler.type_defs import ProfileTimeTypeDef
 Optional fields:
 
 - `start`: `datetime`
+
+<a id="profilinggroupdescriptiontypedef"></a>
 
 ## ProfilingGroupDescriptionTypeDef
 
@@ -708,6 +802,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 
+<a id="profilingstatustypedef"></a>
+
 ## ProfilingStatusTypeDef
 
 ```python
@@ -720,6 +816,8 @@ Optional fields:
 - `latestAgentProfileReportedAt`: `datetime`
 - `latestAggregatedProfile`:
   [AggregatedProfileTimeTypeDef](./type_defs.md#aggregatedprofiletimetypedef)
+
+<a id="putpermissionrequestrequesttypedef"></a>
 
 ## PutPermissionRequestRequestTypeDef
 
@@ -738,6 +836,8 @@ Optional fields:
 
 - `revisionId`: `str`
 
+<a id="putpermissionresponsetypedef"></a>
+
 ## PutPermissionResponseTypeDef
 
 ```python
@@ -750,6 +850,8 @@ Required fields:
 - `revisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="recommendationtypedef"></a>
 
 ## RecommendationTypeDef
 
@@ -766,6 +868,8 @@ Required fields:
 - `startTime`: `datetime`
 - `topMatches`: `List`\[[MatchTypeDef](./type_defs.md#matchtypedef)\]
 
+<a id="removenotificationchannelrequestrequesttypedef"></a>
+
 ## RemoveNotificationChannelRequestRequestTypeDef
 
 ```python
@@ -776,6 +880,8 @@ Required fields:
 
 - `channelId`: `str`
 - `profilingGroupName`: `str`
+
+<a id="removenotificationchannelresponsetypedef"></a>
 
 ## RemoveNotificationChannelResponseTypeDef
 
@@ -790,6 +896,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removepermissionrequestrequesttypedef"></a>
+
 ## RemovePermissionRequestRequestTypeDef
 
 ```python
@@ -802,6 +910,8 @@ Required fields:
   [ActionGroupType](./literals.md#actiongrouptype))
 - `profilingGroupName`: `str`
 - `revisionId`: `str`
+
+<a id="removepermissionresponsetypedef"></a>
 
 ## RemovePermissionResponseTypeDef
 
@@ -816,6 +926,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -829,6 +941,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="submitfeedbackrequestrequesttypedef"></a>
 
 ## SubmitFeedbackRequestRequestTypeDef
 
@@ -846,6 +960,8 @@ Optional fields:
 
 - `comment`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -857,6 +973,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="timestampstructuretypedef"></a>
+
 ## TimestampStructureTypeDef
 
 ```python
@@ -866,6 +984,8 @@ from mypy_boto3_codeguruprofiler.type_defs import TimestampStructureTypeDef
 Required fields:
 
 - `value`: `datetime`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -877,6 +997,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateprofilinggrouprequestrequesttypedef"></a>
 
 ## UpdateProfilingGroupRequestRequestTypeDef
 
@@ -890,6 +1012,8 @@ Required fields:
   [AgentOrchestrationConfigTypeDef](./type_defs.md#agentorchestrationconfigtypedef)
 - `profilingGroupName`: `str`
 
+<a id="updateprofilinggroupresponsetypedef"></a>
+
 ## UpdateProfilingGroupResponseTypeDef
 
 ```python
@@ -902,6 +1026,8 @@ Required fields:
   [ProfilingGroupDescriptionTypeDef](./type_defs.md#profilinggroupdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="userfeedbacktypedef"></a>
 
 ## UserFeedbackTypeDef
 

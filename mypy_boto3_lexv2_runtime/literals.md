@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lexruntimev2-module"></a>
+
 # Literals for boto3 LexRuntimeV2 module
 
 > [Index](..) > [LexRuntimeV2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
-[mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+[mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 - [Literals for boto3 LexRuntimeV2 module](#literals-for-boto3-lexruntimev2-module)
   - [ConfirmationStateType](#confirmationstatetype)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ShapeType](#shapetype)
   - [StyleTypeType](#styletypetype)
   - [ServiceName](#servicename)
+
+<a id="confirmationstatetype"></a>
 
 ## ConfirmationStateType
 
@@ -28,6 +32,8 @@ Values:
 - `Confirmed`
 - `Denied`
 - `None`
+
+<a id="dialogactiontypetype"></a>
 
 ## DialogActionTypeType
 
@@ -44,6 +50,8 @@ Values:
 - `ElicitSlot`
 - `None`
 
+<a id="intentstatetype"></a>
+
 ## IntentStateType
 
 ```python
@@ -59,6 +67,8 @@ Values:
 - `ReadyForFulfillment`
 - `Waiting`
 
+<a id="messagecontenttypetype"></a>
+
 ## MessageContentTypeType
 
 ```python
@@ -71,6 +81,8 @@ Values:
 - `ImageResponseCard`
 - `PlainText`
 - `SSML`
+
+<a id="sentimenttypetype"></a>
 
 ## SentimentTypeType
 
@@ -85,6 +97,8 @@ Values:
 - `NEUTRAL`
 - `POSITIVE`
 
+<a id="shapetype"></a>
+
 ## ShapeType
 
 ```python
@@ -95,6 +109,8 @@ Values:
 
 - `List`
 - `Scalar`
+
+<a id="styletypetype"></a>
 
 ## StyleTypeType
 
@@ -107,6 +123,8 @@ Values:
 - `Default`
 - `SpellByLetter`
 - `SpellByWord`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

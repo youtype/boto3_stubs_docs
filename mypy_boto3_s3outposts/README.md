@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-s3outposts-module"></a>
+
 # Type annotations for boto3 S3Outposts module
 
 > [Index](..) > S3Outposts
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
-[mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+[mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[s3outposts]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[s3outposts]'
+
+# standalone installation
 pip install mypy-boto3-s3outposts
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-s3outposts
   - [Paginators](#paginators)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="s3outpostsclient"></a>
 
 ## S3OutpostsClient
 
@@ -30,6 +42,8 @@ Can be used directly:
 from mypy_boto3_s3outposts.client import S3OutpostsClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -39,6 +53,8 @@ from mypy_boto3_s3outposts.client import S3OutpostsClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_endpoints](./client.md#list_endpoints)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -51,6 +67,8 @@ S3OutpostsClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -59,10 +77,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_s3outposts.paginators import ListEndpointsPaginator, ...
+from mypy_boto3_s3outposts.paginator import ListEndpointsPaginator, ...
 ```
 
 - [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -79,6 +99,8 @@ from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

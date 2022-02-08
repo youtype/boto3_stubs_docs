@@ -1,3 +1,5 @@
+<a id="mediapackageclient-for-boto3-mediapackage-module"></a>
+
 # MediaPackageClient for boto3 MediaPackage module
 
 > [Index](..) > [MediaPackage](.) > MediaPackageClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
-[mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+[mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 - [MediaPackageClient for boto3 MediaPackage module](#mediapackageclient-for-boto3-mediapackage-module)
   - [MediaPackageClient](#mediapackageclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [update_origin_endpoint](#update_origin_endpoint)
     - [get_paginator](#get_paginator)
 
+<a id="mediapackageclient"></a>
+
 ## MediaPackageClient
 
 Type annotations for `boto3.client("mediapackage")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("mediapackage")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediapackage.client import MediaPackageClient
 
 def get_mediapackage_client() -> MediaPackageClient:
-    return boto3.client("mediapackage")
+    return Session().client("mediapackage")
 ```
 
 Boto3 documentation:
 [MediaPackage.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -73,7 +80,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnprocessableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -85,6 +96,8 @@ Boto3 documentation:
 [MediaPackage.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -100,6 +113,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="configure_logs"></a>
 
 ### configure_logs
 
@@ -125,6 +140,8 @@ Keyword-only arguments:
 Returns
 [ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
+<a id="create_channel"></a>
+
 ### create_channel
 
 Creates a new Channel.
@@ -145,6 +162,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+
+<a id="create_harvest_job"></a>
 
 ### create_harvest_job
 
@@ -169,6 +188,8 @@ Keyword-only arguments:
 
 Returns
 [CreateHarvestJobResponseTypeDef](./type_defs.md#createharvestjobresponsetypedef).
+
+<a id="create_origin_endpoint"></a>
 
 ### create_origin_endpoint
 
@@ -204,6 +225,8 @@ Keyword-only arguments:
 Returns
 [CreateOriginEndpointResponseTypeDef](./type_defs.md#createoriginendpointresponsetypedef).
 
+<a id="delete_channel"></a>
+
 ### delete_channel
 
 Deletes an existing Channel.
@@ -221,6 +244,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_origin_endpoint"></a>
 
 ### delete_origin_endpoint
 
@@ -241,6 +266,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_channel"></a>
+
 ### describe_channel
 
 Gets details about a Channel.
@@ -259,6 +286,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+
+<a id="describe_harvest_job"></a>
 
 ### describe_harvest_job
 
@@ -280,6 +309,8 @@ Keyword-only arguments:
 Returns
 [DescribeHarvestJobResponseTypeDef](./type_defs.md#describeharvestjobresponsetypedef).
 
+<a id="describe_origin_endpoint"></a>
+
 ### describe_origin_endpoint
 
 Gets details about an existing OriginEndpoint.
@@ -300,6 +331,8 @@ Keyword-only arguments:
 Returns
 [DescribeOriginEndpointResponseTypeDef](./type_defs.md#describeoriginendpointresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -318,6 +351,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_channels"></a>
 
 ### list_channels
 
@@ -338,6 +373,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+
+<a id="list_harvest_jobs"></a>
 
 ### list_harvest_jobs
 
@@ -361,6 +398,8 @@ Keyword-only arguments:
 Returns
 [ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef).
 
+<a id="list_origin_endpoints"></a>
+
 ### list_origin_endpoints
 
 Returns a collection of OriginEndpoint records.
@@ -383,6 +422,8 @@ Keyword-only arguments:
 Returns
 [ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 See also:
@@ -404,6 +445,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="rotate_channel_credentials"></a>
+
 ### rotate_channel_credentials
 
 Changes the Channel's first IngestEndpoint's username and password.
@@ -423,6 +466,8 @@ Keyword-only arguments:
 
 Returns
 [RotateChannelCredentialsResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponsetypedef).
+
+<a id="rotate_ingest_endpoint_credentials"></a>
 
 ### rotate_ingest_endpoint_credentials
 
@@ -446,6 +491,8 @@ Keyword-only arguments:
 Returns
 [RotateIngestEndpointCredentialsResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 See also:
@@ -464,6 +511,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 See also:
@@ -481,6 +530,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_channel"></a>
 
 ### update_channel
 
@@ -501,6 +552,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+
+<a id="update_origin_endpoint"></a>
 
 ### update_origin_endpoint
 
@@ -533,6 +586,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateOriginEndpointResponseTypeDef](./type_defs.md#updateoriginendpointresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

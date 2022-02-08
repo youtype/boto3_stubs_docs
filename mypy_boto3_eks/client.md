@@ -1,3 +1,5 @@
+<a id="eksclient-for-boto3-eks-module"></a>
+
 # EKSClient for boto3 EKS module
 
 > [Index](..) > [EKS](.) > EKSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EKS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS)
 type annotations stubs module
-[mypy_boto3_eks](https://pypi.org/project/mypy-boto3-eks/).
+[mypy-boto3-eks](https://pypi.org/project/mypy-boto3-eks/).
 
 - [EKSClient for boto3 EKS module](#eksclient-for-boto3-eks-module)
   - [EKSClient](#eksclient)
@@ -51,6 +53,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="eksclient"></a>
+
 ## EKSClient
 
 Type annotations for `boto3.client("eks")`
@@ -58,14 +62,17 @@ Type annotations for `boto3.client("eks")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_eks.client import EKSClient
 
 def get_eks_client() -> EKSClient:
-    return boto3.client("eks")
+    return Session().client("eks")
 ```
 
 Boto3 documentation:
 [EKS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -96,7 +103,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.UnsupportedAvailabilityZoneException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -108,6 +119,8 @@ Boto3 documentation:
 [EKS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/eks.html#EKS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_encryption_config"></a>
 
 ### associate_encryption_config
 
@@ -131,6 +144,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateEncryptionConfigResponseTypeDef](./type_defs.md#associateencryptionconfigresponsetypedef).
+
+<a id="associate_identity_provider_config"></a>
 
 ### associate_identity_provider_config
 
@@ -157,6 +172,8 @@ Keyword-only arguments:
 Returns
 [AssociateIdentityProviderConfigResponseTypeDef](./type_defs.md#associateidentityproviderconfigresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -171,6 +188,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_addon"></a>
 
 ### create_addon
 
@@ -197,6 +216,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef).
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -229,6 +250,8 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
+<a id="create_fargate_profile"></a>
+
 ### create_fargate_profile
 
 Creates an Fargate profile for your Amazon EKS cluster.
@@ -254,6 +277,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef).
+
+<a id="create_nodegroup"></a>
 
 ### create_nodegroup
 
@@ -295,6 +320,8 @@ Keyword-only arguments:
 Returns
 [CreateNodegroupResponseTypeDef](./type_defs.md#createnodegroupresponsetypedef).
 
+<a id="delete_addon"></a>
+
 ### delete_addon
 
 .
@@ -316,6 +343,8 @@ Keyword-only arguments:
 Returns
 [DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef).
 
+<a id="delete_cluster"></a>
+
 ### delete_cluster
 
 Deletes the Amazon EKS cluster control plane.
@@ -334,6 +363,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+
+<a id="delete_fargate_profile"></a>
 
 ### delete_fargate_profile
 
@@ -355,6 +386,8 @@ Keyword-only arguments:
 Returns
 [DeleteFargateProfileResponseTypeDef](./type_defs.md#deletefargateprofileresponsetypedef).
 
+<a id="delete_nodegroup"></a>
+
 ### delete_nodegroup
 
 Deletes an Amazon EKS node group for a cluster.
@@ -375,6 +408,8 @@ Keyword-only arguments:
 Returns
 [DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef).
 
+<a id="deregister_cluster"></a>
+
 ### deregister_cluster
 
 Deregisters a connected cluster to remove it from the Amazon EKS control plane.
@@ -393,6 +428,8 @@ Keyword-only arguments:
 
 Returns
 [DeregisterClusterResponseTypeDef](./type_defs.md#deregisterclusterresponsetypedef).
+
+<a id="describe_addon"></a>
 
 ### describe_addon
 
@@ -413,6 +450,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAddonResponseTypeDef](./type_defs.md#describeaddonresponsetypedef).
+
+<a id="describe_addon_versions"></a>
 
 ### describe_addon_versions
 
@@ -436,6 +475,8 @@ Keyword-only arguments:
 Returns
 [DescribeAddonVersionsResponseTypeDef](./type_defs.md#describeaddonversionsresponsetypedef).
 
+<a id="describe_cluster"></a>
+
 ### describe_cluster
 
 Returns descriptive information about an Amazon EKS cluster.
@@ -454,6 +495,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
+
+<a id="describe_fargate_profile"></a>
 
 ### describe_fargate_profile
 
@@ -474,6 +517,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFargateProfileResponseTypeDef](./type_defs.md#describefargateprofileresponsetypedef).
+
+<a id="describe_identity_provider_config"></a>
 
 ### describe_identity_provider_config
 
@@ -498,6 +543,8 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityProviderConfigResponseTypeDef](./type_defs.md#describeidentityproviderconfigresponsetypedef).
 
+<a id="describe_nodegroup"></a>
+
 ### describe_nodegroup
 
 Returns descriptive information about an Amazon EKS node group.
@@ -517,6 +564,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNodegroupResponseTypeDef](./type_defs.md#describenodegroupresponsetypedef).
+
+<a id="describe_update"></a>
 
 ### describe_update
 
@@ -539,6 +588,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUpdateResponseTypeDef](./type_defs.md#describeupdateresponsetypedef).
+
+<a id="disassociate_identity_provider_config"></a>
 
 ### disassociate_identity_provider_config
 
@@ -564,6 +615,8 @@ Keyword-only arguments:
 Returns
 [DisassociateIdentityProviderConfigResponseTypeDef](./type_defs.md#disassociateidentityproviderconfigresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -581,6 +634,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_addons"></a>
 
 ### list_addons
 
@@ -601,6 +656,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef).
+
+<a id="list_clusters"></a>
 
 ### list_clusters
 
@@ -624,6 +681,8 @@ Keyword-only arguments:
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
+<a id="list_fargate_profiles"></a>
+
 ### list_fargate_profiles
 
 Lists the Fargate profiles associated with the specified cluster in your Amazon
@@ -645,6 +704,8 @@ Keyword-only arguments:
 
 Returns
 [ListFargateProfilesResponseTypeDef](./type_defs.md#listfargateprofilesresponsetypedef).
+
+<a id="list_identity_provider_configs"></a>
 
 ### list_identity_provider_configs
 
@@ -668,6 +729,8 @@ Keyword-only arguments:
 Returns
 [ListIdentityProviderConfigsResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponsetypedef).
 
+<a id="list_nodegroups"></a>
+
 ### list_nodegroups
 
 Lists the Amazon EKS managed node groups associated with the specified cluster
@@ -690,6 +753,8 @@ Keyword-only arguments:
 Returns
 [ListNodegroupsResponseTypeDef](./type_defs.md#listnodegroupsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for an Amazon EKS resource.
@@ -708,6 +773,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_updates"></a>
 
 ### list_updates
 
@@ -733,6 +800,8 @@ Keyword-only arguments:
 Returns
 [ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef).
 
+<a id="register_cluster"></a>
+
 ### register_cluster
 
 Connects a Kubernetes cluster to the Amazon EKS control plane.
@@ -757,6 +826,8 @@ Keyword-only arguments:
 Returns
 [RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
@@ -776,6 +847,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -794,6 +867,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_addon"></a>
 
 ### update_addon
 
@@ -820,6 +895,8 @@ Keyword-only arguments:
 Returns
 [UpdateAddonResponseTypeDef](./type_defs.md#updateaddonresponsetypedef).
 
+<a id="update_cluster_config"></a>
+
 ### update_cluster_config
 
 Updates an Amazon EKS cluster configuration.
@@ -843,6 +920,8 @@ Keyword-only arguments:
 Returns
 [UpdateClusterConfigResponseTypeDef](./type_defs.md#updateclusterconfigresponsetypedef).
 
+<a id="update_cluster_version"></a>
+
 ### update_cluster_version
 
 Updates an Amazon EKS cluster to the specified Kubernetes version.
@@ -863,6 +942,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateClusterVersionResponseTypeDef](./type_defs.md#updateclusterversionresponsetypedef).
+
+<a id="update_nodegroup_config"></a>
 
 ### update_nodegroup_config
 
@@ -893,6 +974,8 @@ Keyword-only arguments:
 Returns
 [UpdateNodegroupConfigResponseTypeDef](./type_defs.md#updatenodegroupconfigresponsetypedef).
 
+<a id="update_nodegroup_version"></a>
+
 ### update_nodegroup_version
 
 Updates the Kubernetes version or AMI version of an Amazon EKS managed node
@@ -920,6 +1003,8 @@ Keyword-only arguments:
 Returns
 [UpdateNodegroupVersionResponseTypeDef](./type_defs.md#updatenodegroupversionresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("eks").get_paginator` method with overloads.
@@ -938,6 +1023,8 @@ Type annotations for `boto3.client("eks").get_paginator` method with overloads.
   [ListNodegroupsPaginator](./paginators.md#listnodegroupspaginator)
 - `client.get_paginator("list_updates")` ->
   [ListUpdatesPaginator](./paginators.md#listupdatespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

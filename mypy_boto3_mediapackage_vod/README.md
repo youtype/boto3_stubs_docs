@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mediapackagevod-module"></a>
+
 # Type annotations for boto3 MediaPackageVod module
 
 > [Index](..) > MediaPackageVod
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MediaPackageVod](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage-vod.html#MediaPackageVod)
 type annotations stubs module
-[mypy_boto3_mediapackage_vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
+[mypy-boto3-mediapackage-vod](https://pypi.org/project/mypy-boto3-mediapackage-vod/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mediapackage-vod]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mediapackage-vod]'
+
+# standalone installation
 pip install mypy-boto3-mediapackage-vod
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mediapackage-vod
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mediapackagevodclient"></a>
+
 ## MediaPackageVodClient
 
 Type annotations for `boto3.client("mediapackage-vod")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mediapackage_vod.client import MediaPackageVodClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -54,6 +68,8 @@ from mypy_boto3_mediapackage_vod.client import MediaPackageVodClient
 - [untag_resource](./client.md#untag_resource)
 - [update_packaging_group](./client.md#update_packaging_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MediaPackageVodClient [exceptions](./client.md#exceptions)
@@ -66,6 +82,8 @@ MediaPackageVodClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnprocessableEntityException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -74,12 +92,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mediapackage_vod.paginators import ListAssetsPaginator, ...
+from mypy_boto3_mediapackage_vod.paginator import ListAssetsPaginator, ...
 ```
 
 - [ListAssetsPaginator](./paginators.md#listassetspaginator)
 - [ListPackagingConfigurationsPaginator](./paginators.md#listpackagingconfigurationspaginator)
 - [ListPackagingGroupsPaginator](./paginators.md#listpackaginggroupspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -103,6 +123,8 @@ from mypy_boto3_mediapackage_vod.literals import AdMarkersType, ...
 - [StreamOrderType](./literals.md#streamordertype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

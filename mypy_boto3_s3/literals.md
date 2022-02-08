@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-s3-module"></a>
+
 # Literals for boto3 S3 module
 
 > [Index](..) > [S3](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
 type annotations stubs module
-[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [Literals for boto3 S3 module](#literals-for-boto3-s3-module)
   - [AnalyticsS3ExportFileFormatType](#analyticss3exportfileformattype)
@@ -76,6 +78,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="analyticss3exportfileformattype"></a>
+
 ## AnalyticsS3ExportFileFormatType
 
 ```python
@@ -85,6 +89,8 @@ from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType
 Values:
 
 - `CSV`
+
+<a id="archivestatustype"></a>
 
 ## ArchiveStatusType
 
@@ -97,6 +103,8 @@ Values:
 - `ARCHIVE_ACCESS`
 - `DEEP_ARCHIVE_ACCESS`
 
+<a id="bucketacceleratestatustype"></a>
+
 ## BucketAccelerateStatusType
 
 ```python
@@ -107,6 +115,8 @@ Values:
 
 - `Enabled`
 - `Suspended`
+
+<a id="bucketcannedacltype"></a>
 
 ## BucketCannedACLType
 
@@ -121,6 +131,8 @@ Values:
 - `public-read`
 - `public-read-write`
 
+<a id="bucketexistswaitername"></a>
+
 ## BucketExistsWaiterName
 
 ```python
@@ -130,6 +142,8 @@ from mypy_boto3_s3.literals import BucketExistsWaiterName
 Values:
 
 - `bucket_exists`
+
+<a id="bucketlocationconstrainttype"></a>
 
 ## BucketLocationConstraintType
 
@@ -165,6 +179,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="bucketlogspermissiontype"></a>
+
 ## BucketLogsPermissionType
 
 ```python
@@ -177,6 +193,8 @@ Values:
 - `READ`
 - `WRITE`
 
+<a id="bucketnotexistswaitername"></a>
+
 ## BucketNotExistsWaiterName
 
 ```python
@@ -186,6 +204,8 @@ from mypy_boto3_s3.literals import BucketNotExistsWaiterName
 Values:
 
 - `bucket_not_exists`
+
+<a id="bucketversioningstatustype"></a>
 
 ## BucketVersioningStatusType
 
@@ -197,6 +217,8 @@ Values:
 
 - `Enabled`
 - `Suspended`
+
+<a id="compressiontypetype"></a>
 
 ## CompressionTypeType
 
@@ -210,6 +232,8 @@ Values:
 - `GZIP`
 - `NONE`
 
+<a id="deletemarkerreplicationstatustype"></a>
+
 ## DeleteMarkerReplicationStatusType
 
 ```python
@@ -221,6 +245,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="encodingtypetype"></a>
+
 ## EncodingTypeType
 
 ```python
@@ -230,6 +256,8 @@ from mypy_boto3_s3.literals import EncodingTypeType
 Values:
 
 - `url`
+
+<a id="eventtype"></a>
 
 ## EventType
 
@@ -267,6 +295,8 @@ Values:
 - `s3:Replication:OperationNotTracked`
 - `s3:Replication:OperationReplicatedAfterThreshold`
 
+<a id="existingobjectreplicationstatustype"></a>
+
 ## ExistingObjectReplicationStatusType
 
 ```python
@@ -277,6 +307,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="expirationstatustype"></a>
 
 ## ExpirationStatusType
 
@@ -289,6 +321,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="expressiontypetype"></a>
+
 ## ExpressionTypeType
 
 ```python
@@ -298,6 +332,8 @@ from mypy_boto3_s3.literals import ExpressionTypeType
 Values:
 
 - `SQL`
+
+<a id="fileheaderinfotype"></a>
 
 ## FileHeaderInfoType
 
@@ -311,6 +347,8 @@ Values:
 - `NONE`
 - `USE`
 
+<a id="filterrulenametype"></a>
+
 ## FilterRuleNameType
 
 ```python
@@ -321,6 +359,8 @@ Values:
 
 - `prefix`
 - `suffix`
+
+<a id="intelligenttieringaccesstiertype"></a>
 
 ## IntelligentTieringAccessTierType
 
@@ -333,6 +373,8 @@ Values:
 - `ARCHIVE_ACCESS`
 - `DEEP_ARCHIVE_ACCESS`
 
+<a id="intelligenttieringstatustype"></a>
+
 ## IntelligentTieringStatusType
 
 ```python
@@ -343,6 +385,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="inventoryformattype"></a>
 
 ## InventoryFormatType
 
@@ -356,6 +400,8 @@ Values:
 - `ORC`
 - `Parquet`
 
+<a id="inventoryfrequencytype"></a>
+
 ## InventoryFrequencyType
 
 ```python
@@ -367,6 +413,8 @@ Values:
 - `Daily`
 - `Weekly`
 
+<a id="inventoryincludedobjectversionstype"></a>
+
 ## InventoryIncludedObjectVersionsType
 
 ```python
@@ -377,6 +425,8 @@ Values:
 
 - `All`
 - `Current`
+
+<a id="inventoryoptionalfieldtype"></a>
 
 ## InventoryOptionalFieldType
 
@@ -399,6 +449,8 @@ Values:
 - `Size`
 - `StorageClass`
 
+<a id="jsontypetype"></a>
+
 ## JSONTypeType
 
 ```python
@@ -410,6 +462,8 @@ Values:
 - `DOCUMENT`
 - `LINES`
 
+<a id="listmultipartuploadspaginatorname"></a>
+
 ## ListMultipartUploadsPaginatorName
 
 ```python
@@ -419,6 +473,8 @@ from mypy_boto3_s3.literals import ListMultipartUploadsPaginatorName
 Values:
 
 - `list_multipart_uploads`
+
+<a id="listobjectversionspaginatorname"></a>
 
 ## ListObjectVersionsPaginatorName
 
@@ -430,6 +486,8 @@ Values:
 
 - `list_object_versions`
 
+<a id="listobjectspaginatorname"></a>
+
 ## ListObjectsPaginatorName
 
 ```python
@@ -439,6 +497,8 @@ from mypy_boto3_s3.literals import ListObjectsPaginatorName
 Values:
 
 - `list_objects`
+
+<a id="listobjectsv2paginatorname"></a>
 
 ## ListObjectsV2PaginatorName
 
@@ -450,6 +510,8 @@ Values:
 
 - `list_objects_v2`
 
+<a id="listpartspaginatorname"></a>
+
 ## ListPartsPaginatorName
 
 ```python
@@ -459,6 +521,8 @@ from mypy_boto3_s3.literals import ListPartsPaginatorName
 Values:
 
 - `list_parts`
+
+<a id="mfadeletestatustype"></a>
 
 ## MFADeleteStatusType
 
@@ -471,6 +535,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="mfadeletetype"></a>
+
 ## MFADeleteType
 
 ```python
@@ -481,6 +547,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="metadatadirectivetype"></a>
 
 ## MetadataDirectiveType
 
@@ -493,6 +561,8 @@ Values:
 - `COPY`
 - `REPLACE`
 
+<a id="metricsstatustype"></a>
+
 ## MetricsStatusType
 
 ```python
@@ -503,6 +573,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="objectcannedacltype"></a>
 
 ## ObjectCannedACLType
 
@@ -520,6 +592,8 @@ Values:
 - `public-read`
 - `public-read-write`
 
+<a id="objectexistswaitername"></a>
+
 ## ObjectExistsWaiterName
 
 ```python
@@ -530,6 +604,8 @@ Values:
 
 - `object_exists`
 
+<a id="objectlockenabledtype"></a>
+
 ## ObjectLockEnabledType
 
 ```python
@@ -539,6 +615,8 @@ from mypy_boto3_s3.literals import ObjectLockEnabledType
 Values:
 
 - `Enabled`
+
+<a id="objectlocklegalholdstatustype"></a>
 
 ## ObjectLockLegalHoldStatusType
 
@@ -551,6 +629,8 @@ Values:
 - `OFF`
 - `ON`
 
+<a id="objectlockmodetype"></a>
+
 ## ObjectLockModeType
 
 ```python
@@ -561,6 +641,8 @@ Values:
 
 - `COMPLIANCE`
 - `GOVERNANCE`
+
+<a id="objectlockretentionmodetype"></a>
 
 ## ObjectLockRetentionModeType
 
@@ -573,6 +655,8 @@ Values:
 - `COMPLIANCE`
 - `GOVERNANCE`
 
+<a id="objectnotexistswaitername"></a>
+
 ## ObjectNotExistsWaiterName
 
 ```python
@@ -582,6 +666,8 @@ from mypy_boto3_s3.literals import ObjectNotExistsWaiterName
 Values:
 
 - `object_not_exists`
+
+<a id="objectownershiptype"></a>
 
 ## ObjectOwnershipType
 
@@ -594,6 +680,8 @@ Values:
 - `BucketOwnerEnforced`
 - `BucketOwnerPreferred`
 - `ObjectWriter`
+
+<a id="objectstorageclasstype"></a>
 
 ## ObjectStorageClassType
 
@@ -613,6 +701,8 @@ Values:
 - `STANDARD`
 - `STANDARD_IA`
 
+<a id="objectversionstorageclasstype"></a>
+
 ## ObjectVersionStorageClassType
 
 ```python
@@ -622,6 +712,8 @@ from mypy_boto3_s3.literals import ObjectVersionStorageClassType
 Values:
 
 - `STANDARD`
+
+<a id="owneroverridetype"></a>
 
 ## OwnerOverrideType
 
@@ -633,6 +725,8 @@ Values:
 
 - `Destination`
 
+<a id="payertype"></a>
+
 ## PayerType
 
 ```python
@@ -643,6 +737,8 @@ Values:
 
 - `BucketOwner`
 - `Requester`
+
+<a id="permissiontype"></a>
 
 ## PermissionType
 
@@ -658,6 +754,8 @@ Values:
 - `WRITE`
 - `WRITE_ACP`
 
+<a id="protocoltype"></a>
+
 ## ProtocolType
 
 ```python
@@ -668,6 +766,8 @@ Values:
 
 - `http`
 - `https`
+
+<a id="quotefieldstype"></a>
 
 ## QuoteFieldsType
 
@@ -680,6 +780,8 @@ Values:
 - `ALWAYS`
 - `ASNEEDED`
 
+<a id="replicamodificationsstatustype"></a>
+
 ## ReplicaModificationsStatusType
 
 ```python
@@ -691,6 +793,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="replicationrulestatustype"></a>
+
 ## ReplicationRuleStatusType
 
 ```python
@@ -701,6 +805,8 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="replicationstatustype"></a>
 
 ## ReplicationStatusType
 
@@ -715,6 +821,8 @@ Values:
 - `PENDING`
 - `REPLICA`
 
+<a id="replicationtimestatustype"></a>
+
 ## ReplicationTimeStatusType
 
 ```python
@@ -726,6 +834,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="requestchargedtype"></a>
+
 ## RequestChargedType
 
 ```python
@@ -735,6 +845,8 @@ from mypy_boto3_s3.literals import RequestChargedType
 Values:
 
 - `requester`
+
+<a id="requestpayertype"></a>
 
 ## RequestPayerType
 
@@ -746,6 +858,8 @@ Values:
 
 - `requester`
 
+<a id="restorerequesttypetype"></a>
+
 ## RestoreRequestTypeType
 
 ```python
@@ -755,6 +869,8 @@ from mypy_boto3_s3.literals import RestoreRequestTypeType
 Values:
 
 - `SELECT`
+
+<a id="serversideencryptiontype"></a>
 
 ## ServerSideEncryptionType
 
@@ -767,6 +883,8 @@ Values:
 - `AES256`
 - `aws:kms`
 
+<a id="ssekmsencryptedobjectsstatustype"></a>
+
 ## SseKmsEncryptedObjectsStatusType
 
 ```python
@@ -778,6 +896,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="storageclassanalysisschemaversiontype"></a>
+
 ## StorageClassAnalysisSchemaVersionType
 
 ```python
@@ -787,6 +907,8 @@ from mypy_boto3_s3.literals import StorageClassAnalysisSchemaVersionType
 Values:
 
 - `V_1`
+
+<a id="storageclasstype"></a>
 
 ## StorageClassType
 
@@ -806,6 +928,8 @@ Values:
 - `STANDARD`
 - `STANDARD_IA`
 
+<a id="taggingdirectivetype"></a>
+
 ## TaggingDirectiveType
 
 ```python
@@ -816,6 +940,8 @@ Values:
 
 - `COPY`
 - `REPLACE`
+
+<a id="tiertype"></a>
 
 ## TierType
 
@@ -828,6 +954,8 @@ Values:
 - `Bulk`
 - `Expedited`
 - `Standard`
+
+<a id="transitionstorageclasstype"></a>
 
 ## TransitionStorageClassType
 
@@ -844,6 +972,8 @@ Values:
 - `ONEZONE_IA`
 - `STANDARD_IA`
 
+<a id="typetype"></a>
+
 ## TypeType
 
 ```python
@@ -855,6 +985,8 @@ Values:
 - `AmazonCustomerByEmail`
 - `CanonicalUser`
 - `Group`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1164,6 +1296,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -1177,6 +1311,8 @@ Values:
 - `list_objects`
 - `list_objects_v2`
 - `list_parts`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

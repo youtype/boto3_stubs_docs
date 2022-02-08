@@ -1,3 +1,5 @@
+<a id="cloudtrailclient-for-boto3-cloudtrail-module"></a>
+
 # CloudTrailClient for boto3 CloudTrail module
 
 > [Index](..) > [CloudTrail](.) > CloudTrailClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
-[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [CloudTrailClient for boto3 CloudTrail module](#cloudtrailclient-for-boto3-cloudtrail-module)
   - [CloudTrailClient](#cloudtrailclient)
@@ -45,6 +47,8 @@ type annotations stubs module
     - [update_trail](#update_trail)
     - [get_paginator](#get_paginator)
 
+<a id="cloudtrailclient"></a>
+
 ## CloudTrailClient
 
 Type annotations for `boto3.client("cloudtrail")`
@@ -52,14 +56,17 @@ Type annotations for `boto3.client("cloudtrail")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudtrail.client import CloudTrailClient
 
 def get_cloudtrail_client() -> CloudTrailClient:
-    return boto3.client("cloudtrail")
+    return Session().client("cloudtrail")
 ```
 
 Boto3 documentation:
 [CloudTrail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -135,7 +142,11 @@ Exceptions:
 - `Exceptions.TrailNotProvidedException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -147,6 +158,8 @@ Boto3 documentation:
 [CloudTrail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags"></a>
 
 ### add_tags
 
@@ -168,6 +181,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -182,6 +197,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_query"></a>
 
 ### cancel_query
 
@@ -203,6 +220,8 @@ Keyword-only arguments:
 
 Returns
 [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
+
+<a id="create_event_data_store"></a>
 
 ### create_event_data_store
 
@@ -230,6 +249,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEventDataStoreResponseTypeDef](./type_defs.md#createeventdatastoreresponsetypedef).
+
+<a id="create_trail"></a>
 
 ### create_trail
 
@@ -262,6 +283,8 @@ Keyword-only arguments:
 Returns
 [CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
 
+<a id="delete_event_data_store"></a>
+
 ### delete_event_data_store
 
 Disables the event data store specified by `EventDataStore` , which accepts an
@@ -282,6 +305,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_trail"></a>
+
 ### delete_trail
 
 Deletes a trail.
@@ -299,6 +324,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_query"></a>
 
 ### describe_query
 
@@ -321,6 +348,8 @@ Keyword-only arguments:
 Returns
 [DescribeQueryResponseTypeDef](./type_defs.md#describequeryresponsetypedef).
 
+<a id="describe_trails"></a>
+
 ### describe_trails
 
 Retrieves settings for one or more trails associated with the current region
@@ -342,6 +371,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -360,6 +391,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_event_data_store"></a>
 
 ### get_event_data_store
 
@@ -381,6 +414,8 @@ Keyword-only arguments:
 Returns
 [GetEventDataStoreResponseTypeDef](./type_defs.md#geteventdatastoreresponsetypedef).
 
+<a id="get_event_selectors"></a>
+
 ### get_event_selectors
 
 Describes the settings for the event selectors that you configured for your
@@ -401,6 +436,8 @@ Keyword-only arguments:
 Returns
 [GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef).
 
+<a id="get_insight_selectors"></a>
+
 ### get_insight_selectors
 
 Describes the settings for the Insights event selectors that you configured for
@@ -420,6 +457,8 @@ Keyword-only arguments:
 
 Returns
 [GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
+
+<a id="get_query_results"></a>
 
 ### get_query_results
 
@@ -443,6 +482,8 @@ Keyword-only arguments:
 Returns
 [GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
 
+<a id="get_trail"></a>
+
 ### get_trail
 
 Returns settings information for a specified trail.
@@ -460,6 +501,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
+
+<a id="get_trail_status"></a>
 
 ### get_trail_status
 
@@ -479,6 +522,8 @@ Keyword-only arguments:
 
 Returns
 [GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
+
+<a id="list_event_data_stores"></a>
 
 ### list_event_data_stores
 
@@ -502,6 +547,8 @@ Keyword-only arguments:
 Returns
 [ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef).
 
+<a id="list_public_keys"></a>
+
 ### list_public_keys
 
 Returns all public keys whose private keys were used to sign the digest files
@@ -523,6 +570,8 @@ Keyword-only arguments:
 
 Returns
 [ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
+
+<a id="list_queries"></a>
 
 ### list_queries
 
@@ -548,6 +597,8 @@ Keyword-only arguments:
 Returns
 [ListQueriesResponseTypeDef](./type_defs.md#listqueriesresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Lists the tags for the trail in the current region.
@@ -567,6 +618,8 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
+<a id="list_trails"></a>
+
 ### list_trails
 
 Lists trails that are in the current account.
@@ -584,6 +637,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
+
+<a id="lookup_events"></a>
 
 ### lookup_events
 
@@ -614,6 +669,8 @@ Keyword-only arguments:
 Returns
 [LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef).
 
+<a id="put_event_selectors"></a>
+
 ### put_event_selectors
 
 Configures an event selector or advanced event selectors for your trail.
@@ -636,6 +693,8 @@ Keyword-only arguments:
 
 Returns
 [PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
+
+<a id="put_insight_selectors"></a>
 
 ### put_insight_selectors
 
@@ -660,6 +719,8 @@ Keyword-only arguments:
 Returns
 [PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef).
 
+<a id="remove_tags"></a>
+
 ### remove_tags
 
 Removes the specified tags from a trail.
@@ -679,6 +740,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="restore_event_data_store"></a>
 
 ### restore_event_data_store
 
@@ -701,6 +764,8 @@ Keyword-only arguments:
 Returns
 [RestoreEventDataStoreResponseTypeDef](./type_defs.md#restoreeventdatastoreresponsetypedef).
 
+<a id="start_logging"></a>
+
 ### start_logging
 
 Starts the recording of Amazon Web Services API calls and log file delivery for
@@ -720,6 +785,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_query"></a>
+
 ### start_query
 
 Starts a CloudTrail Lake query.
@@ -737,6 +804,8 @@ Keyword-only arguments:
 - `QueryStatement`: `str` *(required)*
 
 Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
+
+<a id="stop_logging"></a>
 
 ### stop_logging
 
@@ -756,6 +825,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_event_data_store"></a>
 
 ### update_event_data_store
 
@@ -783,6 +854,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef).
+
+<a id="update_trail"></a>
 
 ### update_trail
 
@@ -813,6 +886,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTrailResponseTypeDef](./type_defs.md#updatetrailresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

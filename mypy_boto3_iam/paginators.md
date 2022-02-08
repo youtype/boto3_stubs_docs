@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-iam-module"></a>
+
 # Paginators for boto3 IAM module
 
 > [Index](..) > [IAM](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
 type annotations stubs module
-[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 - [Paginators for boto3 IAM module](#paginators-for-boto3-iam-module)
   - [GetAccountAuthorizationDetailsPaginator](#getaccountauthorizationdetailspaginator)
@@ -36,6 +38,8 @@ type annotations stubs module
   - [SimulateCustomPolicyPaginator](#simulatecustompolicypaginator)
   - [SimulatePrincipalPolicyPaginator](#simulateprincipalpolicypaginator)
 
+<a id="getaccountauthorizationdetailspaginator"></a>
+
 ## GetAccountAuthorizationDetailsPaginator
 
 Type annotations for
@@ -44,10 +48,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import GetAccountAuthorizationDetailsPaginator
 
 def get_get_account_authorization_details_paginator() -> GetAccountAuthorizationDetailsPaginator:
-    return boto3.client("iam").get_paginator("get_account_authorization_details")
+    return Session().client("iam").get_paginator("get_account_authorization_details")
 ```
 
 Boto3 documentation:
@@ -62,6 +68,8 @@ Arguments for `GetAccountAuthorizationDetailsPaginator.paginate` method:
 `GetAccountAuthorizationDetailsPaginator.paginate` returns
 `_PageIterator`\[[GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef)\].
 
+<a id="getgrouppaginator"></a>
+
 ## GetGroupPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("get_group")`.
@@ -69,10 +77,12 @@ Type annotations for `boto3.client("iam").get_paginator("get_group")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import GetGroupPaginator
 
 def get_get_group_paginator() -> GetGroupPaginator:
-    return boto3.client("iam").get_paginator("get_group")
+    return Session().client("iam").get_paginator("get_group")
 ```
 
 Boto3 documentation:
@@ -87,6 +97,8 @@ Arguments for `GetGroupPaginator.paginate` method:
 `GetGroupPaginator.paginate` returns
 `_PageIterator`\[[GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef)\].
 
+<a id="listaccesskeyspaginator"></a>
+
 ## ListAccessKeysPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_access_keys")`.
@@ -94,10 +106,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_access_keys")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListAccessKeysPaginator
 
 def get_list_access_keys_paginator() -> ListAccessKeysPaginator:
-    return boto3.client("iam").get_paginator("list_access_keys")
+    return Session().client("iam").get_paginator("list_access_keys")
 ```
 
 Boto3 documentation:
@@ -112,6 +126,8 @@ Arguments for `ListAccessKeysPaginator.paginate` method:
 `ListAccessKeysPaginator.paginate` returns
 `_PageIterator`\[[ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef)\].
 
+<a id="listaccountaliasespaginator"></a>
+
 ## ListAccountAliasesPaginator
 
 Type annotations for
@@ -120,10 +136,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListAccountAliasesPaginator
 
 def get_list_account_aliases_paginator() -> ListAccountAliasesPaginator:
-    return boto3.client("iam").get_paginator("list_account_aliases")
+    return Session().client("iam").get_paginator("list_account_aliases")
 ```
 
 Boto3 documentation:
@@ -137,6 +155,8 @@ Arguments for `ListAccountAliasesPaginator.paginate` method:
 `ListAccountAliasesPaginator.paginate` returns
 `_PageIterator`\[[ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef)\].
 
+<a id="listattachedgrouppoliciespaginator"></a>
+
 ## ListAttachedGroupPoliciesPaginator
 
 Type annotations for
@@ -145,10 +165,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListAttachedGroupPoliciesPaginator
 
 def get_list_attached_group_policies_paginator() -> ListAttachedGroupPoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_attached_group_policies")
+    return Session().client("iam").get_paginator("list_attached_group_policies")
 ```
 
 Boto3 documentation:
@@ -164,6 +186,8 @@ Arguments for `ListAttachedGroupPoliciesPaginator.paginate` method:
 `ListAttachedGroupPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef)\].
 
+<a id="listattachedrolepoliciespaginator"></a>
+
 ## ListAttachedRolePoliciesPaginator
 
 Type annotations for
@@ -172,10 +196,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListAttachedRolePoliciesPaginator
 
 def get_list_attached_role_policies_paginator() -> ListAttachedRolePoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_attached_role_policies")
+    return Session().client("iam").get_paginator("list_attached_role_policies")
 ```
 
 Boto3 documentation:
@@ -191,6 +217,8 @@ Arguments for `ListAttachedRolePoliciesPaginator.paginate` method:
 `ListAttachedRolePoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef)\].
 
+<a id="listattacheduserpoliciespaginator"></a>
+
 ## ListAttachedUserPoliciesPaginator
 
 Type annotations for
@@ -199,10 +227,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListAttachedUserPoliciesPaginator
 
 def get_list_attached_user_policies_paginator() -> ListAttachedUserPoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_attached_user_policies")
+    return Session().client("iam").get_paginator("list_attached_user_policies")
 ```
 
 Boto3 documentation:
@@ -218,6 +248,8 @@ Arguments for `ListAttachedUserPoliciesPaginator.paginate` method:
 `ListAttachedUserPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef)\].
 
+<a id="listentitiesforpolicypaginator"></a>
+
 ## ListEntitiesForPolicyPaginator
 
 Type annotations for
@@ -226,10 +258,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListEntitiesForPolicyPaginator
 
 def get_list_entities_for_policy_paginator() -> ListEntitiesForPolicyPaginator:
-    return boto3.client("iam").get_paginator("list_entities_for_policy")
+    return Session().client("iam").get_paginator("list_entities_for_policy")
 ```
 
 Boto3 documentation:
@@ -247,6 +281,8 @@ Arguments for `ListEntitiesForPolicyPaginator.paginate` method:
 `ListEntitiesForPolicyPaginator.paginate` returns
 `_PageIterator`\[[ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef)\].
 
+<a id="listgrouppoliciespaginator"></a>
+
 ## ListGroupPoliciesPaginator
 
 Type annotations for
@@ -255,10 +291,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListGroupPoliciesPaginator
 
 def get_list_group_policies_paginator() -> ListGroupPoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_group_policies")
+    return Session().client("iam").get_paginator("list_group_policies")
 ```
 
 Boto3 documentation:
@@ -273,6 +311,8 @@ Arguments for `ListGroupPoliciesPaginator.paginate` method:
 `ListGroupPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef)\].
 
+<a id="listgroupspaginator"></a>
+
 ## ListGroupsPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_groups")`.
@@ -280,10 +320,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_groups")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListGroupsPaginator
 
 def get_list_groups_paginator() -> ListGroupsPaginator:
-    return boto3.client("iam").get_paginator("list_groups")
+    return Session().client("iam").get_paginator("list_groups")
 ```
 
 Boto3 documentation:
@@ -298,6 +340,8 @@ Arguments for `ListGroupsPaginator.paginate` method:
 `ListGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef)\].
 
+<a id="listgroupsforuserpaginator"></a>
+
 ## ListGroupsForUserPaginator
 
 Type annotations for
@@ -306,10 +350,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListGroupsForUserPaginator
 
 def get_list_groups_for_user_paginator() -> ListGroupsForUserPaginator:
-    return boto3.client("iam").get_paginator("list_groups_for_user")
+    return Session().client("iam").get_paginator("list_groups_for_user")
 ```
 
 Boto3 documentation:
@@ -324,6 +370,8 @@ Arguments for `ListGroupsForUserPaginator.paginate` method:
 `ListGroupsForUserPaginator.paginate` returns
 `_PageIterator`\[[ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef)\].
 
+<a id="listinstanceprofilespaginator"></a>
+
 ## ListInstanceProfilesPaginator
 
 Type annotations for
@@ -332,10 +380,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListInstanceProfilesPaginator
 
 def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
-    return boto3.client("iam").get_paginator("list_instance_profiles")
+    return Session().client("iam").get_paginator("list_instance_profiles")
 ```
 
 Boto3 documentation:
@@ -350,6 +400,8 @@ Arguments for `ListInstanceProfilesPaginator.paginate` method:
 `ListInstanceProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef)\].
 
+<a id="listinstanceprofilesforrolepaginator"></a>
+
 ## ListInstanceProfilesForRolePaginator
 
 Type annotations for
@@ -358,10 +410,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListInstanceProfilesForRolePaginator
 
 def get_list_instance_profiles_for_role_paginator() -> ListInstanceProfilesForRolePaginator:
-    return boto3.client("iam").get_paginator("list_instance_profiles_for_role")
+    return Session().client("iam").get_paginator("list_instance_profiles_for_role")
 ```
 
 Boto3 documentation:
@@ -376,6 +430,8 @@ Arguments for `ListInstanceProfilesForRolePaginator.paginate` method:
 `ListInstanceProfilesForRolePaginator.paginate` returns
 `_PageIterator`\[[ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef)\].
 
+<a id="listmfadevicespaginator"></a>
+
 ## ListMFADevicesPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_mfa_devices")`.
@@ -383,10 +439,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_mfa_devices")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListMFADevicesPaginator
 
 def get_list_mfa_devices_paginator() -> ListMFADevicesPaginator:
-    return boto3.client("iam").get_paginator("list_mfa_devices")
+    return Session().client("iam").get_paginator("list_mfa_devices")
 ```
 
 Boto3 documentation:
@@ -401,6 +459,8 @@ Arguments for `ListMFADevicesPaginator.paginate` method:
 `ListMFADevicesPaginator.paginate` returns
 `_PageIterator`\[[ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef)\].
 
+<a id="listpoliciespaginator"></a>
+
 ## ListPoliciesPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_policies")`.
@@ -408,10 +468,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_policies")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListPoliciesPaginator
 
 def get_list_policies_paginator() -> ListPoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_policies")
+    return Session().client("iam").get_paginator("list_policies")
 ```
 
 Boto3 documentation:
@@ -429,6 +491,8 @@ Arguments for `ListPoliciesPaginator.paginate` method:
 `ListPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
+<a id="listpolicyversionspaginator"></a>
+
 ## ListPolicyVersionsPaginator
 
 Type annotations for
@@ -437,10 +501,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListPolicyVersionsPaginator
 
 def get_list_policy_versions_paginator() -> ListPolicyVersionsPaginator:
-    return boto3.client("iam").get_paginator("list_policy_versions")
+    return Session().client("iam").get_paginator("list_policy_versions")
 ```
 
 Boto3 documentation:
@@ -455,6 +521,8 @@ Arguments for `ListPolicyVersionsPaginator.paginate` method:
 `ListPolicyVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef)\].
 
+<a id="listrolepoliciespaginator"></a>
+
 ## ListRolePoliciesPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_role_policies")`.
@@ -462,10 +530,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_role_policies")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListRolePoliciesPaginator
 
 def get_list_role_policies_paginator() -> ListRolePoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_role_policies")
+    return Session().client("iam").get_paginator("list_role_policies")
 ```
 
 Boto3 documentation:
@@ -480,6 +550,8 @@ Arguments for `ListRolePoliciesPaginator.paginate` method:
 `ListRolePoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef)\].
 
+<a id="listrolespaginator"></a>
+
 ## ListRolesPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_roles")`.
@@ -487,10 +559,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_roles")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListRolesPaginator
 
 def get_list_roles_paginator() -> ListRolesPaginator:
-    return boto3.client("iam").get_paginator("list_roles")
+    return Session().client("iam").get_paginator("list_roles")
 ```
 
 Boto3 documentation:
@@ -505,6 +579,8 @@ Arguments for `ListRolesPaginator.paginate` method:
 `ListRolesPaginator.paginate` returns
 `_PageIterator`\[[ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef)\].
 
+<a id="listsshpublickeyspaginator"></a>
+
 ## ListSSHPublicKeysPaginator
 
 Type annotations for
@@ -513,10 +589,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListSSHPublicKeysPaginator
 
 def get_list_ssh_public_keys_paginator() -> ListSSHPublicKeysPaginator:
-    return boto3.client("iam").get_paginator("list_ssh_public_keys")
+    return Session().client("iam").get_paginator("list_ssh_public_keys")
 ```
 
 Boto3 documentation:
@@ -531,6 +609,8 @@ Arguments for `ListSSHPublicKeysPaginator.paginate` method:
 `ListSSHPublicKeysPaginator.paginate` returns
 `_PageIterator`\[[ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef)\].
 
+<a id="listservercertificatespaginator"></a>
+
 ## ListServerCertificatesPaginator
 
 Type annotations for
@@ -539,10 +619,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListServerCertificatesPaginator
 
 def get_list_server_certificates_paginator() -> ListServerCertificatesPaginator:
-    return boto3.client("iam").get_paginator("list_server_certificates")
+    return Session().client("iam").get_paginator("list_server_certificates")
 ```
 
 Boto3 documentation:
@@ -557,6 +639,8 @@ Arguments for `ListServerCertificatesPaginator.paginate` method:
 `ListServerCertificatesPaginator.paginate` returns
 `_PageIterator`\[[ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef)\].
 
+<a id="listsigningcertificatespaginator"></a>
+
 ## ListSigningCertificatesPaginator
 
 Type annotations for
@@ -565,10 +649,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListSigningCertificatesPaginator
 
 def get_list_signing_certificates_paginator() -> ListSigningCertificatesPaginator:
-    return boto3.client("iam").get_paginator("list_signing_certificates")
+    return Session().client("iam").get_paginator("list_signing_certificates")
 ```
 
 Boto3 documentation:
@@ -583,6 +669,8 @@ Arguments for `ListSigningCertificatesPaginator.paginate` method:
 `ListSigningCertificatesPaginator.paginate` returns
 `_PageIterator`\[[ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef)\].
 
+<a id="listuserpoliciespaginator"></a>
+
 ## ListUserPoliciesPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_user_policies")`.
@@ -590,10 +678,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_user_policies")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListUserPoliciesPaginator
 
 def get_list_user_policies_paginator() -> ListUserPoliciesPaginator:
-    return boto3.client("iam").get_paginator("list_user_policies")
+    return Session().client("iam").get_paginator("list_user_policies")
 ```
 
 Boto3 documentation:
@@ -608,6 +698,8 @@ Arguments for `ListUserPoliciesPaginator.paginate` method:
 `ListUserPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef)\].
 
+<a id="listusertagspaginator"></a>
+
 ## ListUserTagsPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_user_tags")`.
@@ -615,10 +707,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_user_tags")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListUserTagsPaginator
 
 def get_list_user_tags_paginator() -> ListUserTagsPaginator:
-    return boto3.client("iam").get_paginator("list_user_tags")
+    return Session().client("iam").get_paginator("list_user_tags")
 ```
 
 Boto3 documentation:
@@ -633,6 +727,8 @@ Arguments for `ListUserTagsPaginator.paginate` method:
 `ListUserTagsPaginator.paginate` returns
 `_PageIterator`\[[ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef)\].
 
+<a id="listuserspaginator"></a>
+
 ## ListUsersPaginator
 
 Type annotations for `boto3.client("iam").get_paginator("list_users")`.
@@ -640,10 +736,12 @@ Type annotations for `boto3.client("iam").get_paginator("list_users")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListUsersPaginator
 
 def get_list_users_paginator() -> ListUsersPaginator:
-    return boto3.client("iam").get_paginator("list_users")
+    return Session().client("iam").get_paginator("list_users")
 ```
 
 Boto3 documentation:
@@ -658,6 +756,8 @@ Arguments for `ListUsersPaginator.paginate` method:
 `ListUsersPaginator.paginate` returns
 `_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
 
+<a id="listvirtualmfadevicespaginator"></a>
+
 ## ListVirtualMFADevicesPaginator
 
 Type annotations for
@@ -666,10 +766,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import ListVirtualMFADevicesPaginator
 
 def get_list_virtual_mfa_devices_paginator() -> ListVirtualMFADevicesPaginator:
-    return boto3.client("iam").get_paginator("list_virtual_mfa_devices")
+    return Session().client("iam").get_paginator("list_virtual_mfa_devices")
 ```
 
 Boto3 documentation:
@@ -685,6 +787,8 @@ Arguments for `ListVirtualMFADevicesPaginator.paginate` method:
 `ListVirtualMFADevicesPaginator.paginate` returns
 `_PageIterator`\[[ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef)\].
 
+<a id="simulatecustompolicypaginator"></a>
+
 ## SimulateCustomPolicyPaginator
 
 Type annotations for
@@ -693,10 +797,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import SimulateCustomPolicyPaginator
 
 def get_simulate_custom_policy_paginator() -> SimulateCustomPolicyPaginator:
-    return boto3.client("iam").get_paginator("simulate_custom_policy")
+    return Session().client("iam").get_paginator("simulate_custom_policy")
 ```
 
 Boto3 documentation:
@@ -720,6 +826,8 @@ Arguments for `SimulateCustomPolicyPaginator.paginate` method:
 `SimulateCustomPolicyPaginator.paginate` returns
 `_PageIterator`\[[SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef)\].
 
+<a id="simulateprincipalpolicypaginator"></a>
+
 ## SimulatePrincipalPolicyPaginator
 
 Type annotations for
@@ -728,10 +836,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iam.paginator import SimulatePrincipalPolicyPaginator
 
 def get_simulate_principal_policy_paginator() -> SimulatePrincipalPolicyPaginator:
-    return boto3.client("iam").get_paginator("simulate_principal_policy")
+    return Session().client("iam").get_paginator("simulate_principal_policy")
 ```
 
 Boto3 documentation:

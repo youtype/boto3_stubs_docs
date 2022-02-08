@@ -1,3 +1,5 @@
+<a id="codedeployclient-for-boto3-codedeploy-module"></a>
+
 # CodeDeployClient for boto3 CodeDeploy module
 
 > [Index](..) > [CodeDeploy](.) > CodeDeployClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
-[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [CodeDeployClient for boto3 CodeDeploy module](#codedeployclient-for-boto3-codedeploy-module)
   - [CodeDeployClient](#codedeployclient)
@@ -64,6 +66,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="codedeployclient"></a>
+
 ## CodeDeployClient
 
 Type annotations for `boto3.client("codedeploy")`
@@ -71,14 +75,17 @@ Type annotations for `boto3.client("codedeploy")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codedeploy.client import CodeDeployClient
 
 def get_codedeploy_client() -> CodeDeployClient:
-    return boto3.client("codedeploy")
+    return Session().client("codedeploy")
 ```
 
 Boto3 documentation:
 [CodeDeploy.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -208,7 +215,11 @@ Exceptions:
 - `Exceptions.TriggerTargetsLimitExceededException`
 - `Exceptions.UnsupportedActionForDeploymentTypeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -220,6 +231,8 @@ Boto3 documentation:
 [CodeDeploy.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_on_premises_instances"></a>
 
 ### add_tags_to_on_premises_instances
 
@@ -238,6 +251,8 @@ Keyword-only arguments:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `instanceNames`: `Sequence`\[`str`\] *(required)*
+
+<a id="batch_get_application_revisions"></a>
 
 ### batch_get_application_revisions
 
@@ -262,6 +277,8 @@ Keyword-only arguments:
 Returns
 [BatchGetApplicationRevisionsOutputTypeDef](./type_defs.md#batchgetapplicationrevisionsoutputtypedef).
 
+<a id="batch_get_applications"></a>
+
 ### batch_get_applications
 
 Gets information about one or more applications.
@@ -281,6 +298,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetApplicationsOutputTypeDef](./type_defs.md#batchgetapplicationsoutputtypedef).
+
+<a id="batch_get_deployment_groups"></a>
 
 ### batch_get_deployment_groups
 
@@ -303,6 +322,8 @@ Keyword-only arguments:
 Returns
 [BatchGetDeploymentGroupsOutputTypeDef](./type_defs.md#batchgetdeploymentgroupsoutputtypedef).
 
+<a id="batch_get_deployment_instances"></a>
+
 ### batch_get_deployment_instances
 
 .
@@ -323,6 +344,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetDeploymentInstancesOutputTypeDef](./type_defs.md#batchgetdeploymentinstancesoutputtypedef).
+
+<a id="batch_get_deployment_targets"></a>
 
 ### batch_get_deployment_targets
 
@@ -345,6 +368,8 @@ Keyword-only arguments:
 Returns
 [BatchGetDeploymentTargetsOutputTypeDef](./type_defs.md#batchgetdeploymenttargetsoutputtypedef).
 
+<a id="batch_get_deployments"></a>
+
 ### batch_get_deployments
 
 Gets information about one or more deployments.
@@ -363,6 +388,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetDeploymentsOutputTypeDef](./type_defs.md#batchgetdeploymentsoutputtypedef).
+
+<a id="batch_get_on_premises_instances"></a>
 
 ### batch_get_on_premises_instances
 
@@ -384,6 +411,8 @@ Keyword-only arguments:
 Returns
 [BatchGetOnPremisesInstancesOutputTypeDef](./type_defs.md#batchgetonpremisesinstancesoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -398,6 +427,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="continue_deployment"></a>
 
 ### continue_deployment
 
@@ -419,6 +450,8 @@ Keyword-only arguments:
 - `deploymentWaitType`:
   [DeploymentWaitTypeType](./literals.md#deploymentwaittypetype)
 
+<a id="create_application"></a>
+
 ### create_application
 
 Creates an application.
@@ -439,6 +472,8 @@ Keyword-only arguments:
 
 Returns
 [CreateApplicationOutputTypeDef](./type_defs.md#createapplicationoutputtypedef).
+
+<a id="create_deployment"></a>
 
 ### create_deployment
 
@@ -471,6 +506,8 @@ Keyword-only arguments:
 Returns
 [CreateDeploymentOutputTypeDef](./type_defs.md#createdeploymentoutputtypedef).
 
+<a id="create_deployment_config"></a>
+
 ### create_deployment_config
 
 Creates a deployment configuration.
@@ -495,6 +532,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDeploymentConfigOutputTypeDef](./type_defs.md#createdeploymentconfigoutputtypedef).
+
+<a id="create_deployment_group"></a>
 
 ### create_deployment_group
 
@@ -544,6 +583,8 @@ Keyword-only arguments:
 Returns
 [CreateDeploymentGroupOutputTypeDef](./type_defs.md#createdeploymentgroupoutputtypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes an application.
@@ -559,6 +600,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `applicationName`: `str` *(required)*
+
+<a id="delete_deployment_config"></a>
 
 ### delete_deployment_config
 
@@ -576,6 +619,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `deploymentConfigName`: `str` *(required)*
+
+<a id="delete_deployment_group"></a>
 
 ### delete_deployment_group
 
@@ -598,6 +643,8 @@ Keyword-only arguments:
 Returns
 [DeleteDeploymentGroupOutputTypeDef](./type_defs.md#deletedeploymentgroupoutputtypedef).
 
+<a id="delete_git_hub_account_token"></a>
+
 ### delete_git_hub_account_token
 
 Deletes a GitHub account connection.
@@ -618,6 +665,8 @@ Keyword-only arguments:
 Returns
 [DeleteGitHubAccountTokenOutputTypeDef](./type_defs.md#deletegithubaccounttokenoutputtypedef).
 
+<a id="delete_resources_by_external_id"></a>
+
 ### delete_resources_by_external_id
 
 Deletes resources linked to an external ID.
@@ -637,6 +686,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_on_premises_instance"></a>
+
 ### deregister_on_premises_instance
 
 Deregisters an on-premises instance.
@@ -653,6 +704,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `instanceName`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -673,6 +726,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_application"></a>
+
 ### get_application
 
 Gets information about an application.
@@ -691,6 +746,8 @@ Keyword-only arguments:
 
 Returns
 [GetApplicationOutputTypeDef](./type_defs.md#getapplicationoutputtypedef).
+
+<a id="get_application_revision"></a>
 
 ### get_application_revision
 
@@ -714,6 +771,8 @@ Keyword-only arguments:
 Returns
 [GetApplicationRevisionOutputTypeDef](./type_defs.md#getapplicationrevisionoutputtypedef).
 
+<a id="get_deployment"></a>
+
 ### get_deployment
 
 Gets information about a deployment.
@@ -732,6 +791,8 @@ Keyword-only arguments:
 
 Returns
 [GetDeploymentOutputTypeDef](./type_defs.md#getdeploymentoutputtypedef).
+
+<a id="get_deployment_config"></a>
 
 ### get_deployment_config
 
@@ -752,6 +813,8 @@ Keyword-only arguments:
 Returns
 [GetDeploymentConfigOutputTypeDef](./type_defs.md#getdeploymentconfigoutputtypedef).
 
+<a id="get_deployment_group"></a>
+
 ### get_deployment_group
 
 Gets information about a deployment group.
@@ -771,6 +834,8 @@ Keyword-only arguments:
 
 Returns
 [GetDeploymentGroupOutputTypeDef](./type_defs.md#getdeploymentgroupoutputtypedef).
+
+<a id="get_deployment_instance"></a>
 
 ### get_deployment_instance
 
@@ -793,6 +858,8 @@ Keyword-only arguments:
 Returns
 [GetDeploymentInstanceOutputTypeDef](./type_defs.md#getdeploymentinstanceoutputtypedef).
 
+<a id="get_deployment_target"></a>
+
 ### get_deployment_target
 
 Returns information about a deployment target.
@@ -813,6 +880,8 @@ Keyword-only arguments:
 Returns
 [GetDeploymentTargetOutputTypeDef](./type_defs.md#getdeploymenttargetoutputtypedef).
 
+<a id="get_on_premises_instance"></a>
+
 ### get_on_premises_instance
 
 Gets information about an on-premises instance.
@@ -832,6 +901,8 @@ Keyword-only arguments:
 
 Returns
 [GetOnPremisesInstanceOutputTypeDef](./type_defs.md#getonpremisesinstanceoutputtypedef).
+
+<a id="list_application_revisions"></a>
 
 ### list_application_revisions
 
@@ -861,6 +932,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationRevisionsOutputTypeDef](./type_defs.md#listapplicationrevisionsoutputtypedef).
 
+<a id="list_applications"></a>
+
 ### list_applications
 
 Lists the applications registered with the IAM user or AWS account.
@@ -879,6 +952,8 @@ Keyword-only arguments:
 
 Returns
 [ListApplicationsOutputTypeDef](./type_defs.md#listapplicationsoutputtypedef).
+
+<a id="list_deployment_configs"></a>
 
 ### list_deployment_configs
 
@@ -899,6 +974,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeploymentConfigsOutputTypeDef](./type_defs.md#listdeploymentconfigsoutputtypedef).
+
+<a id="list_deployment_groups"></a>
 
 ### list_deployment_groups
 
@@ -921,6 +998,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeploymentGroupsOutputTypeDef](./type_defs.md#listdeploymentgroupsoutputtypedef).
+
+<a id="list_deployment_instances"></a>
 
 ### list_deployment_instances
 
@@ -947,6 +1026,8 @@ Keyword-only arguments:
 Returns
 [ListDeploymentInstancesOutputTypeDef](./type_defs.md#listdeploymentinstancesoutputtypedef).
 
+<a id="list_deployment_targets"></a>
+
 ### list_deployment_targets
 
 Returns an array of target IDs that are associated a deployment.
@@ -970,6 +1051,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeploymentTargetsOutputTypeDef](./type_defs.md#listdeploymenttargetsoutputtypedef).
+
+<a id="list_deployments"></a>
 
 ### list_deployments
 
@@ -997,6 +1080,8 @@ Keyword-only arguments:
 Returns
 [ListDeploymentsOutputTypeDef](./type_defs.md#listdeploymentsoutputtypedef).
 
+<a id="list_git_hub_account_token_names"></a>
+
 ### list_git_hub_account_token_names
 
 Lists the names of stored connections to GitHub accounts.
@@ -1016,6 +1101,8 @@ Keyword-only arguments:
 
 Returns
 [ListGitHubAccountTokenNamesOutputTypeDef](./type_defs.md#listgithubaccounttokennamesoutputtypedef).
+
+<a id="list_on_premises_instances"></a>
 
 ### list_on_premises_instances
 
@@ -1041,6 +1128,8 @@ Keyword-only arguments:
 Returns
 [ListOnPremisesInstancesOutputTypeDef](./type_defs.md#listonpremisesinstancesoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags for the resource identified by a specified Amazon
@@ -1062,6 +1151,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="put_lifecycle_event_hook_execution_status"></a>
 
 ### put_lifecycle_event_hook_execution_status
 
@@ -1085,6 +1176,8 @@ Keyword-only arguments:
 Returns
 [PutLifecycleEventHookExecutionStatusOutputTypeDef](./type_defs.md#putlifecycleeventhookexecutionstatusoutputtypedef).
 
+<a id="register_application_revision"></a>
+
 ### register_application_revision
 
 Registers with AWS CodeDeploy a revision for the specified application.
@@ -1105,6 +1198,8 @@ Keyword-only arguments:
   *(required)*
 - `description`: `str`
 
+<a id="register_on_premises_instance"></a>
+
 ### register_on_premises_instance
 
 Registers an on-premises instance.
@@ -1124,6 +1219,8 @@ Keyword-only arguments:
 - `iamSessionArn`: `str`
 - `iamUserArn`: `str`
 
+<a id="remove_tags_from_on_premises_instances"></a>
+
 ### remove_tags_from_on_premises_instances
 
 Removes one or more tags from one or more on-premises instances.
@@ -1142,6 +1239,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 - `instanceNames`: `Sequence`\[`str`\] *(required)*
 
+<a id="skip_wait_time_for_instance_termination"></a>
+
 ### skip_wait_time_for_instance_termination
 
 In a blue/green deployment, overrides any specified wait time and starts
@@ -1159,6 +1258,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `deploymentId`: `str`
+
+<a id="stop_deployment"></a>
 
 ### stop_deployment
 
@@ -1180,6 +1281,8 @@ Keyword-only arguments:
 Returns
 [StopDeploymentOutputTypeDef](./type_defs.md#stopdeploymentoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the list of tags in the input `Tags` parameter with the resource
@@ -1200,6 +1303,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Disassociates a resource from a list of tags.
@@ -1219,6 +1324,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_application"></a>
+
 ### update_application
 
 Changes the name of an application.
@@ -1235,6 +1342,8 @@ Keyword-only arguments:
 
 - `applicationName`: `str`
 - `newApplicationName`: `str`
+
+<a id="update_deployment_group"></a>
 
 ### update_deployment_group
 
@@ -1284,6 +1393,8 @@ Keyword-only arguments:
 Returns
 [UpdateDeploymentGroupOutputTypeDef](./type_defs.md#updatedeploymentgroupoutputtypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("codedeploy").get_paginator` method with
@@ -1307,6 +1418,8 @@ overloads.
   [ListGitHubAccountTokenNamesPaginator](./paginators.md#listgithubaccounttokennamespaginator)
 - `client.get_paginator("list_on_premises_instances")` ->
   [ListOnPremisesInstancesPaginator](./paginators.md#listonpremisesinstancespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

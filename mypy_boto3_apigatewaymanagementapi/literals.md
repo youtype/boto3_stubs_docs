@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-apigatewaymanagementapi-module"></a>
+
 # Literals for boto3 ApiGatewayManagementApi module
 
 > [Index](..) > [ApiGatewayManagementApi](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
 type annotations stubs module
-[mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
+[mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 - [Literals for boto3 ApiGatewayManagementApi module](#literals-for-boto3-apigatewaymanagementapi-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="pricingclient-for-boto3-pricing-module"></a>
+
 # PricingClient for boto3 Pricing module
 
 > [Index](..) > [Pricing](.) > PricingClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module
-[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [PricingClient for boto3 Pricing module](#pricingclient-for-boto3-pricing-module)
   - [PricingClient](#pricingclient)
@@ -19,6 +21,8 @@ type annotations stubs module
     - [get_products](#get_products)
     - [get_paginator](#get_paginator)
 
+<a id="pricingclient"></a>
+
 ## PricingClient
 
 Type annotations for `boto3.client("pricing")`
@@ -26,14 +30,17 @@ Type annotations for `boto3.client("pricing")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_pricing.client import PricingClient
 
 def get_pricing_client() -> PricingClient:
-    return boto3.client("pricing")
+    return Session().client("pricing")
 ```
 
 Boto3 documentation:
 [Pricing.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.InvalidParameterException`
 - `Exceptions.NotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [Pricing.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_services"></a>
 
 ### describe_services
 
@@ -107,6 +122,8 @@ Keyword-only arguments:
 Returns
 [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -124,6 +141,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_attribute_values"></a>
 
 ### get_attribute_values
 
@@ -147,6 +166,8 @@ Keyword-only arguments:
 Returns
 [GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef).
 
+<a id="get_products"></a>
+
 ### get_products
 
 Returns a list of all products that match the filter criteria.
@@ -169,6 +190,8 @@ Keyword-only arguments:
 
 Returns
 [GetProductsResponseTypeDef](./type_defs.md#getproductsresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

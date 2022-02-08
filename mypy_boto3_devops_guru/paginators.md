@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-devopsguru-module"></a>
+
 # Paginators for boto3 DevOpsGuru module
 
 > [Index](..) > [DevOpsGuru](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DevOpsGuru](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru)
 type annotations stubs module
-[mypy_boto3_devops_guru](https://pypi.org/project/mypy-boto3-devops-guru/).
+[mypy-boto3-devops-guru](https://pypi.org/project/mypy-boto3-devops-guru/).
 
 - [Paginators for boto3 DevOpsGuru module](#paginators-for-boto3-devopsguru-module)
   - [DescribeOrganizationResourceCollectionHealthPaginator](#describeorganizationresourcecollectionhealthpaginator)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [SearchInsightsPaginator](#searchinsightspaginator)
   - [SearchOrganizationInsightsPaginator](#searchorganizationinsightspaginator)
 
+<a id="describeorganizationresourcecollectionhealthpaginator"></a>
+
 ## DescribeOrganizationResourceCollectionHealthPaginator
 
 Type annotations for
@@ -29,10 +33,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import DescribeOrganizationResourceCollectionHealthPaginator
 
 def get_describe_organization_resource_collection_health_paginator() -> DescribeOrganizationResourceCollectionHealthPaginator:
-    return boto3.client("devops-guru").get_paginator("describe_organization_resource_collection_health")
+    return Session().client("devops-guru").get_paginator("describe_organization_resource_collection_health")
 ```
 
 Boto3 documentation:
@@ -53,6 +59,8 @@ method:
 `DescribeOrganizationResourceCollectionHealthPaginator.paginate` returns
 `_PageIterator`\[[DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef)\].
 
+<a id="describeresourcecollectionhealthpaginator"></a>
+
 ## DescribeResourceCollectionHealthPaginator
 
 Type annotations for
@@ -61,10 +69,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import DescribeResourceCollectionHealthPaginator
 
 def get_describe_resource_collection_health_paginator() -> DescribeResourceCollectionHealthPaginator:
-    return boto3.client("devops-guru").get_paginator("describe_resource_collection_health")
+    return Session().client("devops-guru").get_paginator("describe_resource_collection_health")
 ```
 
 Boto3 documentation:
@@ -81,6 +91,8 @@ Arguments for `DescribeResourceCollectionHealthPaginator.paginate` method:
 `DescribeResourceCollectionHealthPaginator.paginate` returns
 `_PageIterator`\[[DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef)\].
 
+<a id="getcostestimationpaginator"></a>
+
 ## GetCostEstimationPaginator
 
 Type annotations for
@@ -89,10 +101,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import GetCostEstimationPaginator
 
 def get_get_cost_estimation_paginator() -> GetCostEstimationPaginator:
-    return boto3.client("devops-guru").get_paginator("get_cost_estimation")
+    return Session().client("devops-guru").get_paginator("get_cost_estimation")
 ```
 
 Boto3 documentation:
@@ -106,6 +120,8 @@ Arguments for `GetCostEstimationPaginator.paginate` method:
 `GetCostEstimationPaginator.paginate` returns
 `_PageIterator`\[[GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef)\].
 
+<a id="getresourcecollectionpaginator"></a>
+
 ## GetResourceCollectionPaginator
 
 Type annotations for
@@ -114,10 +130,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import GetResourceCollectionPaginator
 
 def get_get_resource_collection_paginator() -> GetResourceCollectionPaginator:
-    return boto3.client("devops-guru").get_paginator("get_resource_collection")
+    return Session().client("devops-guru").get_paginator("get_resource_collection")
 ```
 
 Boto3 documentation:
@@ -134,6 +152,8 @@ Arguments for `GetResourceCollectionPaginator.paginate` method:
 `GetResourceCollectionPaginator.paginate` returns
 `_PageIterator`\[[GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef)\].
 
+<a id="listanomaliesforinsightpaginator"></a>
+
 ## ListAnomaliesForInsightPaginator
 
 Type annotations for
@@ -142,10 +162,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import ListAnomaliesForInsightPaginator
 
 def get_list_anomalies_for_insight_paginator() -> ListAnomaliesForInsightPaginator:
-    return boto3.client("devops-guru").get_paginator("list_anomalies_for_insight")
+    return Session().client("devops-guru").get_paginator("list_anomalies_for_insight")
 ```
 
 Boto3 documentation:
@@ -163,6 +185,8 @@ Arguments for `ListAnomaliesForInsightPaginator.paginate` method:
 `ListAnomaliesForInsightPaginator.paginate` returns
 `_PageIterator`\[[ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef)\].
 
+<a id="listeventspaginator"></a>
+
 ## ListEventsPaginator
 
 Type annotations for
@@ -171,10 +195,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import ListEventsPaginator
 
 def get_list_events_paginator() -> ListEventsPaginator:
-    return boto3.client("devops-guru").get_paginator("list_events")
+    return Session().client("devops-guru").get_paginator("list_events")
 ```
 
 Boto3 documentation:
@@ -192,6 +218,8 @@ Arguments for `ListEventsPaginator.paginate` method:
 `ListEventsPaginator.paginate` returns
 `_PageIterator`\[[ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef)\].
 
+<a id="listinsightspaginator"></a>
+
 ## ListInsightsPaginator
 
 Type annotations for
@@ -200,10 +228,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import ListInsightsPaginator
 
 def get_list_insights_paginator() -> ListInsightsPaginator:
-    return boto3.client("devops-guru").get_paginator("list_insights")
+    return Session().client("devops-guru").get_paginator("list_insights")
 ```
 
 Boto3 documentation:
@@ -220,6 +250,8 @@ Arguments for `ListInsightsPaginator.paginate` method:
 `ListInsightsPaginator.paginate` returns
 `_PageIterator`\[[ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef)\].
 
+<a id="listnotificationchannelspaginator"></a>
+
 ## ListNotificationChannelsPaginator
 
 Type annotations for
@@ -228,10 +260,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import ListNotificationChannelsPaginator
 
 def get_list_notification_channels_paginator() -> ListNotificationChannelsPaginator:
-    return boto3.client("devops-guru").get_paginator("list_notification_channels")
+    return Session().client("devops-guru").get_paginator("list_notification_channels")
 ```
 
 Boto3 documentation:
@@ -245,6 +279,8 @@ Arguments for `ListNotificationChannelsPaginator.paginate` method:
 `ListNotificationChannelsPaginator.paginate` returns
 `_PageIterator`\[[ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef)\].
 
+<a id="listorganizationinsightspaginator"></a>
+
 ## ListOrganizationInsightsPaginator
 
 Type annotations for
@@ -253,10 +289,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import ListOrganizationInsightsPaginator
 
 def get_list_organization_insights_paginator() -> ListOrganizationInsightsPaginator:
-    return boto3.client("devops-guru").get_paginator("list_organization_insights")
+    return Session().client("devops-guru").get_paginator("list_organization_insights")
 ```
 
 Boto3 documentation:
@@ -275,6 +313,8 @@ Arguments for `ListOrganizationInsightsPaginator.paginate` method:
 `ListOrganizationInsightsPaginator.paginate` returns
 `_PageIterator`\[[ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef)\].
 
+<a id="listrecommendationspaginator"></a>
+
 ## ListRecommendationsPaginator
 
 Type annotations for
@@ -283,10 +323,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import ListRecommendationsPaginator
 
 def get_list_recommendations_paginator() -> ListRecommendationsPaginator:
-    return boto3.client("devops-guru").get_paginator("list_recommendations")
+    return Session().client("devops-guru").get_paginator("list_recommendations")
 ```
 
 Boto3 documentation:
@@ -303,6 +345,8 @@ Arguments for `ListRecommendationsPaginator.paginate` method:
 `ListRecommendationsPaginator.paginate` returns
 `_PageIterator`\[[ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef)\].
 
+<a id="searchinsightspaginator"></a>
+
 ## SearchInsightsPaginator
 
 Type annotations for
@@ -311,10 +355,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import SearchInsightsPaginator
 
 def get_search_insights_paginator() -> SearchInsightsPaginator:
-    return boto3.client("devops-guru").get_paginator("search_insights")
+    return Session().client("devops-guru").get_paginator("search_insights")
 ```
 
 Boto3 documentation:
@@ -333,6 +379,8 @@ Arguments for `SearchInsightsPaginator.paginate` method:
 `SearchInsightsPaginator.paginate` returns
 `_PageIterator`\[[SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef)\].
 
+<a id="searchorganizationinsightspaginator"></a>
+
 ## SearchOrganizationInsightsPaginator
 
 Type annotations for
@@ -341,10 +389,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devops_guru.paginator import SearchOrganizationInsightsPaginator
 
 def get_search_organization_insights_paginator() -> SearchOrganizationInsightsPaginator:
-    return boto3.client("devops-guru").get_paginator("search_organization_insights")
+    return Session().client("devops-guru").get_paginator("search_organization_insights")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-managedgrafana-module"></a>
+
 # Paginators for boto3 ManagedGrafana module
 
 > [Index](..) > [ManagedGrafana](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
 type annotations stubs module
-[mypy_boto3_grafana](https://pypi.org/project/mypy-boto3-grafana/).
+[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 - [Paginators for boto3 ManagedGrafana module](#paginators-for-boto3-managedgrafana-module)
   - [ListPermissionsPaginator](#listpermissionspaginator)
   - [ListWorkspacesPaginator](#listworkspacespaginator)
+
+<a id="listpermissionspaginator"></a>
 
 ## ListPermissionsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_grafana.paginator import ListPermissionsPaginator
 
 def get_list_permissions_paginator() -> ListPermissionsPaginator:
-    return boto3.client("grafana").get_paginator("list_permissions")
+    return Session().client("grafana").get_paginator("list_permissions")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListPermissionsPaginator.paginate` method:
 `ListPermissionsPaginator.paginate` returns
 `_PageIterator`\[[ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef)\].
 
+<a id="listworkspacespaginator"></a>
+
 ## ListWorkspacesPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_grafana.paginator import ListWorkspacesPaginator
 
 def get_list_workspaces_paginator() -> ListWorkspacesPaginator:
-    return boto3.client("grafana").get_paginator("list_workspaces")
+    return Session().client("grafana").get_paginator("list_workspaces")
 ```
 
 Boto3 documentation:

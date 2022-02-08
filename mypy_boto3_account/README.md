@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-account-module"></a>
+
 # Type annotations for boto3 Account module
 
 > [Index](..) > Account
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
 type annotations stubs module
-[mypy_boto3_account](https://pypi.org/project/mypy-boto3-account/).
+[mypy-boto3-account](https://pypi.org/project/mypy-boto3-account/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[account]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[account]'
+
+# standalone installation
 pip install mypy-boto3-account
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-account
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="accountclient"></a>
 
 ## AccountClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 from mypy_boto3_account.client import AccountClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -36,6 +50,8 @@ from mypy_boto3_account.client import AccountClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_alternate_contact](./client.md#get_alternate_contact)
 - [put_alternate_contact](./client.md#put_alternate_contact)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -47,6 +63,8 @@ AccountClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TooManyRequestsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -60,6 +78,8 @@ from mypy_boto3_account.literals import AlternateContactTypeType, ...
 
 - [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

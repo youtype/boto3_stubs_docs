@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codegurureviewer-module"></a>
+
 # Literals for boto3 CodeGuruReviewer module
 
 > [Index](..) > [CodeGuruReviewer](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
-[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Literals for boto3 CodeGuruReviewer module](#literals-for-boto3-codegurureviewer-module)
   - [AnalysisTypeType](#analysistypetype)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="analysistypetype"></a>
+
 ## AnalysisTypeType
 
 ```python
@@ -36,6 +40,8 @@ Values:
 - `CodeQuality`
 - `Security`
 
+<a id="codereviewcompletedwaitername"></a>
+
 ## CodeReviewCompletedWaiterName
 
 ```python
@@ -45,6 +51,8 @@ from mypy_boto3_codeguru_reviewer.literals import CodeReviewCompletedWaiterName
 Values:
 
 - `code_review_completed`
+
+<a id="encryptionoptiontype"></a>
 
 ## EncryptionOptionType
 
@@ -56,6 +64,8 @@ Values:
 
 - `AWS_OWNED_CMK`
 - `CUSTOMER_MANAGED_CMK`
+
+<a id="jobstatetype"></a>
 
 ## JobStateType
 
@@ -70,6 +80,8 @@ Values:
 - `Failed`
 - `Pending`
 
+<a id="listrepositoryassociationspaginatorname"></a>
+
 ## ListRepositoryAssociationsPaginatorName
 
 ```python
@@ -79,6 +91,8 @@ from mypy_boto3_codeguru_reviewer.literals import ListRepositoryAssociationsPagi
 Values:
 
 - `list_repository_associations`
+
+<a id="providertypetype"></a>
 
 ## ProviderTypeType
 
@@ -94,6 +108,8 @@ Values:
 - `GitHubEnterpriseServer`
 - `S3Bucket`
 
+<a id="reactiontype"></a>
+
 ## ReactionType
 
 ```python
@@ -104,6 +120,8 @@ Values:
 
 - `ThumbsDown`
 - `ThumbsUp`
+
+<a id="recommendationcategorytype"></a>
 
 ## RecommendationCategoryType
 
@@ -125,6 +143,8 @@ Values:
 - `ResourceLeaks`
 - `SecurityIssues`
 
+<a id="repositoryassociationstatetype"></a>
+
 ## RepositoryAssociationStateType
 
 ```python
@@ -139,6 +159,8 @@ Values:
 - `Disassociating`
 - `Failed`
 
+<a id="repositoryassociationsucceededwaitername"></a>
+
 ## RepositoryAssociationSucceededWaiterName
 
 ```python
@@ -148,6 +170,8 @@ from mypy_boto3_codeguru_reviewer.literals import RepositoryAssociationSucceeded
 Values:
 
 - `repository_association_succeeded`
+
+<a id="severitytype"></a>
 
 ## SeverityType
 
@@ -163,6 +187,8 @@ Values:
 - `Low`
 - `Medium`
 
+<a id="typetype"></a>
+
 ## TypeType
 
 ```python
@@ -173,6 +199,8 @@ Values:
 
 - `PullRequest`
 - `RepositoryAnalysis`
+
+<a id="vendornametype"></a>
 
 ## VendorNameType
 
@@ -185,6 +213,8 @@ Values:
 - `GitHub`
 - `GitLab`
 - `NativeS3`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -494,6 +524,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -503,6 +535,8 @@ from mypy_boto3_codeguru_reviewer.literals import PaginatorName
 Values:
 
 - `list_repository_associations`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

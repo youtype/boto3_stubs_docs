@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-opsworkscm-module"></a>
+
 # Paginators for boto3 OpsWorksCM module
 
 > [Index](..) > [OpsWorksCM](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [OpsWorksCM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworkscm.html#OpsWorksCM)
 type annotations stubs module
-[mypy_boto3_opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
+[mypy-boto3-opsworkscm](https://pypi.org/project/mypy-boto3-opsworkscm/).
 
 - [Paginators for boto3 OpsWorksCM module](#paginators-for-boto3-opsworkscm-module)
   - [DescribeBackupsPaginator](#describebackupspaginator)
   - [DescribeEventsPaginator](#describeeventspaginator)
   - [DescribeServersPaginator](#describeserverspaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
+
+<a id="describebackupspaginator"></a>
 
 ## DescribeBackupsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_opsworkscm.paginator import DescribeBackupsPaginator
 
 def get_describe_backups_paginator() -> DescribeBackupsPaginator:
-    return boto3.client("opsworkscm").get_paginator("describe_backups")
+    return Session().client("opsworkscm").get_paginator("describe_backups")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `DescribeBackupsPaginator.paginate` method:
 `DescribeBackupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef)\].
 
+<a id="describeeventspaginator"></a>
+
 ## DescribeEventsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_opsworkscm.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
-    return boto3.client("opsworkscm").get_paginator("describe_events")
+    return Session().client("opsworkscm").get_paginator("describe_events")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 `DescribeEventsPaginator.paginate` returns
 `_PageIterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
 
+<a id="describeserverspaginator"></a>
+
 ## DescribeServersPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_opsworkscm.paginator import DescribeServersPaginator
 
 def get_describe_servers_paginator() -> DescribeServersPaginator:
-    return boto3.client("opsworkscm").get_paginator("describe_servers")
+    return Session().client("opsworkscm").get_paginator("describe_servers")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `DescribeServersPaginator.paginate` method:
 `DescribeServersPaginator.paginate` returns
 `_PageIterator`\[[DescribeServersResponseTypeDef](./type_defs.md#describeserversresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -100,10 +116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_opsworkscm.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("opsworkscm").get_paginator("list_tags_for_resource")
+    return Session().client("opsworkscm").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

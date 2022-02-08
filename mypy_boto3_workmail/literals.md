@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-workmail-module"></a>
+
 # Literals for boto3 WorkMail module
 
 > [Index](..) > [WorkMail](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
 type annotations stubs module
-[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 - [Literals for boto3 WorkMail module](#literals-for-boto3-workmail-module)
   - [AccessControlRuleEffectType](#accesscontrolruleeffecttype)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accesscontrolruleeffecttype"></a>
+
 ## AccessControlRuleEffectType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 
 - `ALLOW`
 - `DENY`
+
+<a id="dnsrecordverificationstatustype"></a>
 
 ## DnsRecordVerificationStatusType
 
@@ -53,6 +59,8 @@ Values:
 - `PENDING`
 - `VERIFIED`
 
+<a id="entitystatetype"></a>
+
 ## EntityStateType
 
 ```python
@@ -64,6 +72,8 @@ Values:
 - `DELETED`
 - `DISABLED`
 - `ENABLED`
+
+<a id="foldernametype"></a>
 
 ## FolderNameType
 
@@ -79,6 +89,8 @@ Values:
 - `JUNK_EMAIL`
 - `SENT_ITEMS`
 
+<a id="listaliasespaginatorname"></a>
+
 ## ListAliasesPaginatorName
 
 ```python
@@ -88,6 +100,8 @@ from mypy_boto3_workmail.literals import ListAliasesPaginatorName
 Values:
 
 - `list_aliases`
+
+<a id="listgroupmemberspaginatorname"></a>
 
 ## ListGroupMembersPaginatorName
 
@@ -99,6 +113,8 @@ Values:
 
 - `list_group_members`
 
+<a id="listgroupspaginatorname"></a>
+
 ## ListGroupsPaginatorName
 
 ```python
@@ -108,6 +124,8 @@ from mypy_boto3_workmail.literals import ListGroupsPaginatorName
 Values:
 
 - `list_groups`
+
+<a id="listmailboxpermissionspaginatorname"></a>
 
 ## ListMailboxPermissionsPaginatorName
 
@@ -119,6 +137,8 @@ Values:
 
 - `list_mailbox_permissions`
 
+<a id="listorganizationspaginatorname"></a>
+
 ## ListOrganizationsPaginatorName
 
 ```python
@@ -128,6 +148,8 @@ from mypy_boto3_workmail.literals import ListOrganizationsPaginatorName
 Values:
 
 - `list_organizations`
+
+<a id="listresourcedelegatespaginatorname"></a>
 
 ## ListResourceDelegatesPaginatorName
 
@@ -139,6 +161,8 @@ Values:
 
 - `list_resource_delegates`
 
+<a id="listresourcespaginatorname"></a>
+
 ## ListResourcesPaginatorName
 
 ```python
@@ -149,6 +173,8 @@ Values:
 
 - `list_resources`
 
+<a id="listuserspaginatorname"></a>
+
 ## ListUsersPaginatorName
 
 ```python
@@ -158,6 +184,8 @@ from mypy_boto3_workmail.literals import ListUsersPaginatorName
 Values:
 
 - `list_users`
+
+<a id="mailboxexportjobstatetype"></a>
 
 ## MailboxExportJobStateType
 
@@ -172,6 +200,8 @@ Values:
 - `FAILED`
 - `RUNNING`
 
+<a id="membertypetype"></a>
+
 ## MemberTypeType
 
 ```python
@@ -183,6 +213,8 @@ Values:
 - `GROUP`
 - `USER`
 
+<a id="mobiledeviceaccessruleeffecttype"></a>
+
 ## MobileDeviceAccessRuleEffectType
 
 ```python
@@ -193,6 +225,8 @@ Values:
 
 - `ALLOW`
 - `DENY`
+
+<a id="permissiontypetype"></a>
 
 ## PermissionTypeType
 
@@ -206,6 +240,8 @@ Values:
 - `SEND_AS`
 - `SEND_ON_BEHALF`
 
+<a id="resourcetypetype"></a>
+
 ## ResourceTypeType
 
 ```python
@@ -216,6 +252,8 @@ Values:
 
 - `EQUIPMENT`
 - `ROOM`
+
+<a id="retentionactiontype"></a>
 
 ## RetentionActionType
 
@@ -229,6 +267,8 @@ Values:
 - `NONE`
 - `PERMANENTLY_DELETE`
 
+<a id="userroletype"></a>
+
 ## UserRoleType
 
 ```python
@@ -240,6 +280,8 @@ Values:
 - `RESOURCE`
 - `SYSTEM_USER`
 - `USER`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -548,6 +590,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-locationservice-module"></a>
+
 # Typed dictionaries for boto3 LocationService module
 
 > [Index](..) > [LocationService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
 type annotations stubs module
-[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 - [Typed dictionaries for boto3 LocationService module](#typed-dictionaries-for-boto3-locationservice-module)
   - [AssociateTrackerConsumerRequestRequestTypeDef](#associatetrackerconsumerrequestrequesttypedef)
@@ -148,6 +150,8 @@ type annotations stubs module
   - [UpdateTrackerRequestRequestTypeDef](#updatetrackerrequestrequesttypedef)
   - [UpdateTrackerResponseTypeDef](#updatetrackerresponsetypedef)
 
+<a id="associatetrackerconsumerrequestrequesttypedef"></a>
+
 ## AssociateTrackerConsumerRequestRequestTypeDef
 
 ```python
@@ -158,6 +162,8 @@ Required fields:
 
 - `ConsumerArn`: `str`
 - `TrackerName`: `str`
+
+<a id="batchdeletedevicepositionhistoryerrortypedef"></a>
 
 ## BatchDeleteDevicePositionHistoryErrorTypeDef
 
@@ -170,6 +176,8 @@ Required fields:
 - `DeviceId`: `str`
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 
+<a id="batchdeletedevicepositionhistoryrequestrequesttypedef"></a>
+
 ## BatchDeleteDevicePositionHistoryRequestRequestTypeDef
 
 ```python
@@ -180,6 +188,8 @@ Required fields:
 
 - `DeviceIds`: `Sequence`\[`str`\]
 - `TrackerName`: `str`
+
+<a id="batchdeletedevicepositionhistoryresponsetypedef"></a>
 
 ## BatchDeleteDevicePositionHistoryResponseTypeDef
 
@@ -194,6 +204,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdeletegeofenceerrortypedef"></a>
+
 ## BatchDeleteGeofenceErrorTypeDef
 
 ```python
@@ -205,6 +217,8 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `GeofenceId`: `str`
 
+<a id="batchdeletegeofencerequestrequesttypedef"></a>
+
 ## BatchDeleteGeofenceRequestRequestTypeDef
 
 ```python
@@ -215,6 +229,8 @@ Required fields:
 
 - `CollectionName`: `str`
 - `GeofenceIds`: `Sequence`\[`str`\]
+
+<a id="batchdeletegeofenceresponsetypedef"></a>
 
 ## BatchDeleteGeofenceResponseTypeDef
 
@@ -229,6 +245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchevaluategeofenceserrortypedef"></a>
+
 ## BatchEvaluateGeofencesErrorTypeDef
 
 ```python
@@ -241,6 +259,8 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `SampleTime`: `datetime`
 
+<a id="batchevaluategeofencesrequestrequesttypedef"></a>
+
 ## BatchEvaluateGeofencesRequestRequestTypeDef
 
 ```python
@@ -252,6 +272,8 @@ Required fields:
 - `CollectionName`: `str`
 - `DevicePositionUpdates`:
   `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
+
+<a id="batchevaluategeofencesresponsetypedef"></a>
 
 ## BatchEvaluateGeofencesResponseTypeDef
 
@@ -266,6 +288,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetdevicepositionerrortypedef"></a>
+
 ## BatchGetDevicePositionErrorTypeDef
 
 ```python
@@ -277,6 +301,8 @@ Required fields:
 - `DeviceId`: `str`
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 
+<a id="batchgetdevicepositionrequestrequesttypedef"></a>
+
 ## BatchGetDevicePositionRequestRequestTypeDef
 
 ```python
@@ -287,6 +313,8 @@ Required fields:
 
 - `DeviceIds`: `Sequence`\[`str`\]
 - `TrackerName`: `str`
+
+<a id="batchgetdevicepositionresponsetypedef"></a>
 
 ## BatchGetDevicePositionResponseTypeDef
 
@@ -303,6 +331,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchitemerrortypedef"></a>
+
 ## BatchItemErrorTypeDef
 
 ```python
@@ -313,6 +343,8 @@ Optional fields:
 
 - `Code`: [BatchItemErrorCodeType](./literals.md#batchitemerrorcodetype)
 - `Message`: `str`
+
+<a id="batchputgeofenceerrortypedef"></a>
 
 ## BatchPutGeofenceErrorTypeDef
 
@@ -325,6 +357,8 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `GeofenceId`: `str`
 
+<a id="batchputgeofencerequestentrytypedef"></a>
+
 ## BatchPutGeofenceRequestEntryTypeDef
 
 ```python
@@ -335,6 +369,8 @@ Required fields:
 
 - `GeofenceId`: `str`
 - `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
+
+<a id="batchputgeofencerequestrequesttypedef"></a>
 
 ## BatchPutGeofenceRequestRequestTypeDef
 
@@ -347,6 +383,8 @@ Required fields:
 - `CollectionName`: `str`
 - `Entries`:
   `Sequence`\[[BatchPutGeofenceRequestEntryTypeDef](./type_defs.md#batchputgeofencerequestentrytypedef)\]
+
+<a id="batchputgeofenceresponsetypedef"></a>
 
 ## BatchPutGeofenceResponseTypeDef
 
@@ -363,6 +401,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchputgeofencesuccesstypedef"></a>
+
 ## BatchPutGeofenceSuccessTypeDef
 
 ```python
@@ -374,6 +414,8 @@ Required fields:
 - `CreateTime`: `datetime`
 - `GeofenceId`: `str`
 - `UpdateTime`: `datetime`
+
+<a id="batchupdatedevicepositionerrortypedef"></a>
 
 ## BatchUpdateDevicePositionErrorTypeDef
 
@@ -387,6 +429,8 @@ Required fields:
 - `Error`: [BatchItemErrorTypeDef](./type_defs.md#batchitemerrortypedef)
 - `SampleTime`: `datetime`
 
+<a id="batchupdatedevicepositionrequestrequesttypedef"></a>
+
 ## BatchUpdateDevicePositionRequestRequestTypeDef
 
 ```python
@@ -398,6 +442,8 @@ Required fields:
 - `TrackerName`: `str`
 - `Updates`:
   `Sequence`\[[DevicePositionUpdateTypeDef](./type_defs.md#devicepositionupdatetypedef)\]
+
+<a id="batchupdatedevicepositionresponsetypedef"></a>
 
 ## BatchUpdateDevicePositionResponseTypeDef
 
@@ -412,6 +458,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="calculateroutecarmodeoptionstypedef"></a>
+
 ## CalculateRouteCarModeOptionsTypeDef
 
 ```python
@@ -422,6 +470,8 @@ Optional fields:
 
 - `AvoidFerries`: `bool`
 - `AvoidTolls`: `bool`
+
+<a id="calculateroutematrixrequestrequesttypedef"></a>
 
 ## CalculateRouteMatrixRequestRequestTypeDef
 
@@ -446,6 +496,8 @@ Optional fields:
 - `TruckModeOptions`:
   [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
 
+<a id="calculateroutematrixresponsetypedef"></a>
+
 ## CalculateRouteMatrixResponseTypeDef
 
 ```python
@@ -463,6 +515,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="calculateroutematrixsummarytypedef"></a>
+
 ## CalculateRouteMatrixSummaryTypeDef
 
 ```python
@@ -475,6 +529,8 @@ Required fields:
 - `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
 - `ErrorCount`: `int`
 - `RouteCount`: `int`
+
+<a id="calculaterouterequestrequesttypedef"></a>
 
 ## CalculateRouteRequestRequestTypeDef
 
@@ -501,6 +557,8 @@ Optional fields:
   [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
 - `WaypointPositions`: `Sequence`\[`Sequence`\[`float`\]\]
 
+<a id="calculaterouteresponsetypedef"></a>
+
 ## CalculateRouteResponseTypeDef
 
 ```python
@@ -514,6 +572,8 @@ Required fields:
   [CalculateRouteSummaryTypeDef](./type_defs.md#calculateroutesummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="calculateroutesummarytypedef"></a>
 
 ## CalculateRouteSummaryTypeDef
 
@@ -529,6 +589,8 @@ Required fields:
 - `DurationSeconds`: `float`
 - `RouteBBox`: `List`\[`float`\]
 
+<a id="calculateroutetruckmodeoptionstypedef"></a>
+
 ## CalculateRouteTruckModeOptionsTypeDef
 
 ```python
@@ -541,6 +603,8 @@ Optional fields:
 - `AvoidTolls`: `bool`
 - `Dimensions`: [TruckDimensionsTypeDef](./type_defs.md#truckdimensionstypedef)
 - `Weight`: [TruckWeightTypeDef](./type_defs.md#truckweighttypedef)
+
+<a id="creategeofencecollectionrequestrequesttypedef"></a>
 
 ## CreateGeofenceCollectionRequestRequestTypeDef
 
@@ -560,6 +624,8 @@ Optional fields:
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="creategeofencecollectionresponsetypedef"></a>
+
 ## CreateGeofenceCollectionResponseTypeDef
 
 ```python
@@ -573,6 +639,8 @@ Required fields:
 - `CreateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmaprequestrequesttypedef"></a>
 
 ## CreateMapRequestRequestTypeDef
 
@@ -592,6 +660,8 @@ Optional fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createmapresponsetypedef"></a>
+
 ## CreateMapResponseTypeDef
 
 ```python
@@ -605,6 +675,8 @@ Required fields:
 - `MapName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createplaceindexrequestrequesttypedef"></a>
 
 ## CreatePlaceIndexRequestRequestTypeDef
 
@@ -625,6 +697,8 @@ Optional fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createplaceindexresponsetypedef"></a>
+
 ## CreatePlaceIndexResponseTypeDef
 
 ```python
@@ -638,6 +712,8 @@ Required fields:
 - `IndexName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createroutecalculatorrequestrequesttypedef"></a>
 
 ## CreateRouteCalculatorRequestRequestTypeDef
 
@@ -656,6 +732,8 @@ Optional fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createroutecalculatorresponsetypedef"></a>
+
 ## CreateRouteCalculatorResponseTypeDef
 
 ```python
@@ -669,6 +747,8 @@ Required fields:
 - `CreateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtrackerrequestrequesttypedef"></a>
 
 ## CreateTrackerRequestRequestTypeDef
 
@@ -690,6 +770,8 @@ Optional fields:
 - `PricingPlanDataSource`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createtrackerresponsetypedef"></a>
+
 ## CreateTrackerResponseTypeDef
 
 ```python
@@ -704,6 +786,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="datasourceconfigurationtypedef"></a>
+
 ## DataSourceConfigurationTypeDef
 
 ```python
@@ -713,6 +797,8 @@ from mypy_boto3_location.type_defs import DataSourceConfigurationTypeDef
 Optional fields:
 
 - `IntendedUse`: [IntendedUseType](./literals.md#intendedusetype)
+
+<a id="deletegeofencecollectionrequestrequesttypedef"></a>
 
 ## DeleteGeofenceCollectionRequestRequestTypeDef
 
@@ -724,6 +810,8 @@ Required fields:
 
 - `CollectionName`: `str`
 
+<a id="deletemaprequestrequesttypedef"></a>
+
 ## DeleteMapRequestRequestTypeDef
 
 ```python
@@ -733,6 +821,8 @@ from mypy_boto3_location.type_defs import DeleteMapRequestRequestTypeDef
 Required fields:
 
 - `MapName`: `str`
+
+<a id="deleteplaceindexrequestrequesttypedef"></a>
 
 ## DeletePlaceIndexRequestRequestTypeDef
 
@@ -744,6 +834,8 @@ Required fields:
 
 - `IndexName`: `str`
 
+<a id="deleteroutecalculatorrequestrequesttypedef"></a>
+
 ## DeleteRouteCalculatorRequestRequestTypeDef
 
 ```python
@@ -753,6 +845,8 @@ from mypy_boto3_location.type_defs import DeleteRouteCalculatorRequestRequestTyp
 Required fields:
 
 - `CalculatorName`: `str`
+
+<a id="deletetrackerrequestrequesttypedef"></a>
 
 ## DeleteTrackerRequestRequestTypeDef
 
@@ -764,6 +858,8 @@ Required fields:
 
 - `TrackerName`: `str`
 
+<a id="describegeofencecollectionrequestrequesttypedef"></a>
+
 ## DescribeGeofenceCollectionRequestRequestTypeDef
 
 ```python
@@ -773,6 +869,8 @@ from mypy_boto3_location.type_defs import DescribeGeofenceCollectionRequestReque
 Required fields:
 
 - `CollectionName`: `str`
+
+<a id="describegeofencecollectionresponsetypedef"></a>
 
 ## DescribeGeofenceCollectionResponseTypeDef
 
@@ -794,6 +892,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemaprequestrequesttypedef"></a>
+
 ## DescribeMapRequestRequestTypeDef
 
 ```python
@@ -803,6 +903,8 @@ from mypy_boto3_location.type_defs import DescribeMapRequestRequestTypeDef
 Required fields:
 
 - `MapName`: `str`
+
+<a id="describemapresponsetypedef"></a>
 
 ## DescribeMapResponseTypeDef
 
@@ -825,6 +927,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeplaceindexrequestrequesttypedef"></a>
+
 ## DescribePlaceIndexRequestRequestTypeDef
 
 ```python
@@ -834,6 +938,8 @@ from mypy_boto3_location.type_defs import DescribePlaceIndexRequestRequestTypeDe
 Required fields:
 
 - `IndexName`: `str`
+
+<a id="describeplaceindexresponsetypedef"></a>
 
 ## DescribePlaceIndexResponseTypeDef
 
@@ -856,6 +962,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeroutecalculatorrequestrequesttypedef"></a>
+
 ## DescribeRouteCalculatorRequestRequestTypeDef
 
 ```python
@@ -865,6 +973,8 @@ from mypy_boto3_location.type_defs import DescribeRouteCalculatorRequestRequestT
 Required fields:
 
 - `CalculatorName`: `str`
+
+<a id="describeroutecalculatorresponsetypedef"></a>
 
 ## DescribeRouteCalculatorResponseTypeDef
 
@@ -885,6 +995,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrackerrequestrequesttypedef"></a>
+
 ## DescribeTrackerRequestRequestTypeDef
 
 ```python
@@ -894,6 +1006,8 @@ from mypy_boto3_location.type_defs import DescribeTrackerRequestRequestTypeDef
 Required fields:
 
 - `TrackerName`: `str`
+
+<a id="describetrackerresponsetypedef"></a>
 
 ## DescribeTrackerResponseTypeDef
 
@@ -917,6 +1031,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="devicepositiontypedef"></a>
+
 ## DevicePositionTypeDef
 
 ```python
@@ -936,6 +1052,8 @@ Optional fields:
 - `DeviceId`: `str`
 - `PositionProperties`: `Dict`\[`str`, `str`\]
 
+<a id="devicepositionupdatetypedef"></a>
+
 ## DevicePositionUpdateTypeDef
 
 ```python
@@ -954,6 +1072,8 @@ Optional fields:
   [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
 - `PositionProperties`: `Mapping`\[`str`, `str`\]
 
+<a id="disassociatetrackerconsumerrequestrequesttypedef"></a>
+
 ## DisassociateTrackerConsumerRequestRequestTypeDef
 
 ```python
@@ -965,6 +1085,8 @@ Required fields:
 - `ConsumerArn`: `str`
 - `TrackerName`: `str`
 
+<a id="geofencegeometrytypedef"></a>
+
 ## GeofenceGeometryTypeDef
 
 ```python
@@ -974,6 +1096,8 @@ from mypy_boto3_location.type_defs import GeofenceGeometryTypeDef
 Optional fields:
 
 - `Polygon`: `Sequence`\[`Sequence`\[`Sequence`\[`float`\]\]\]
+
+<a id="getdevicepositionhistoryrequestrequesttypedef"></a>
 
 ## GetDevicePositionHistoryRequestRequestTypeDef
 
@@ -992,6 +1116,8 @@ Optional fields:
 - `NextToken`: `str`
 - `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
 
+<a id="getdevicepositionhistoryresponsetypedef"></a>
+
 ## GetDevicePositionHistoryResponseTypeDef
 
 ```python
@@ -1006,6 +1132,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicepositionrequestrequesttypedef"></a>
+
 ## GetDevicePositionRequestRequestTypeDef
 
 ```python
@@ -1016,6 +1144,8 @@ Required fields:
 
 - `DeviceId`: `str`
 - `TrackerName`: `str`
+
+<a id="getdevicepositionresponsetypedef"></a>
 
 ## GetDevicePositionResponseTypeDef
 
@@ -1035,6 +1165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgeofencerequestrequesttypedef"></a>
+
 ## GetGeofenceRequestRequestTypeDef
 
 ```python
@@ -1045,6 +1177,8 @@ Required fields:
 
 - `CollectionName`: `str`
 - `GeofenceId`: `str`
+
+<a id="getgeofenceresponsetypedef"></a>
 
 ## GetGeofenceResponseTypeDef
 
@@ -1062,6 +1196,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmapglyphsrequestrequesttypedef"></a>
+
 ## GetMapGlyphsRequestRequestTypeDef
 
 ```python
@@ -1073,6 +1209,8 @@ Required fields:
 - `FontStack`: `str`
 - `FontUnicodeRange`: `str`
 - `MapName`: `str`
+
+<a id="getmapglyphsresponsetypedef"></a>
 
 ## GetMapGlyphsResponseTypeDef
 
@@ -1087,6 +1225,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmapspritesrequestrequesttypedef"></a>
+
 ## GetMapSpritesRequestRequestTypeDef
 
 ```python
@@ -1097,6 +1237,8 @@ Required fields:
 
 - `FileName`: `str`
 - `MapName`: `str`
+
+<a id="getmapspritesresponsetypedef"></a>
 
 ## GetMapSpritesResponseTypeDef
 
@@ -1111,6 +1253,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmapstyledescriptorrequestrequesttypedef"></a>
+
 ## GetMapStyleDescriptorRequestRequestTypeDef
 
 ```python
@@ -1120,6 +1264,8 @@ from mypy_boto3_location.type_defs import GetMapStyleDescriptorRequestRequestTyp
 Required fields:
 
 - `MapName`: `str`
+
+<a id="getmapstyledescriptorresponsetypedef"></a>
 
 ## GetMapStyleDescriptorResponseTypeDef
 
@@ -1134,6 +1280,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaptilerequestrequesttypedef"></a>
+
 ## GetMapTileRequestRequestTypeDef
 
 ```python
@@ -1146,6 +1294,8 @@ Required fields:
 - `X`: `str`
 - `Y`: `str`
 - `Z`: `str`
+
+<a id="getmaptileresponsetypedef"></a>
 
 ## GetMapTileResponseTypeDef
 
@@ -1160,6 +1310,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="leggeometrytypedef"></a>
+
 ## LegGeometryTypeDef
 
 ```python
@@ -1169,6 +1321,8 @@ from mypy_boto3_location.type_defs import LegGeometryTypeDef
 Optional fields:
 
 - `LineString`: `List`\[`List`\[`float`\]\]
+
+<a id="legtypedef"></a>
 
 ## LegTypeDef
 
@@ -1188,6 +1342,8 @@ Optional fields:
 
 - `Geometry`: [LegGeometryTypeDef](./type_defs.md#leggeometrytypedef)
 
+<a id="listdevicepositionsrequestrequesttypedef"></a>
+
 ## ListDevicePositionsRequestRequestTypeDef
 
 ```python
@@ -1202,6 +1358,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listdevicepositionsresponseentrytypedef"></a>
 
 ## ListDevicePositionsResponseEntryTypeDef
 
@@ -1221,6 +1379,8 @@ Optional fields:
   [PositionalAccuracyTypeDef](./type_defs.md#positionalaccuracytypedef)
 - `PositionProperties`: `Dict`\[`str`, `str`\]
 
+<a id="listdevicepositionsresponsetypedef"></a>
+
 ## ListDevicePositionsResponseTypeDef
 
 ```python
@@ -1235,6 +1395,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgeofencecollectionsrequestrequesttypedef"></a>
+
 ## ListGeofenceCollectionsRequestRequestTypeDef
 
 ```python
@@ -1245,6 +1407,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listgeofencecollectionsresponseentrytypedef"></a>
 
 ## ListGeofenceCollectionsResponseEntryTypeDef
 
@@ -1264,6 +1428,8 @@ Optional fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 
+<a id="listgeofencecollectionsresponsetypedef"></a>
+
 ## ListGeofenceCollectionsResponseTypeDef
 
 ```python
@@ -1277,6 +1443,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgeofenceresponseentrytypedef"></a>
 
 ## ListGeofenceResponseEntryTypeDef
 
@@ -1292,6 +1460,8 @@ Required fields:
 - `Status`: `str`
 - `UpdateTime`: `datetime`
 
+<a id="listgeofencesrequestrequesttypedef"></a>
+
 ## ListGeofencesRequestRequestTypeDef
 
 ```python
@@ -1305,6 +1475,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listgeofencesresponsetypedef"></a>
 
 ## ListGeofencesResponseTypeDef
 
@@ -1320,6 +1492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmapsrequestrequesttypedef"></a>
+
 ## ListMapsRequestRequestTypeDef
 
 ```python
@@ -1330,6 +1504,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listmapsresponseentrytypedef"></a>
 
 ## ListMapsResponseEntryTypeDef
 
@@ -1349,6 +1525,8 @@ Optional fields:
 
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
+<a id="listmapsresponsetypedef"></a>
+
 ## ListMapsResponseTypeDef
 
 ```python
@@ -1363,6 +1541,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listplaceindexesrequestrequesttypedef"></a>
+
 ## ListPlaceIndexesRequestRequestTypeDef
 
 ```python
@@ -1373,6 +1553,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listplaceindexesresponseentrytypedef"></a>
 
 ## ListPlaceIndexesResponseEntryTypeDef
 
@@ -1392,6 +1574,8 @@ Optional fields:
 
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
+<a id="listplaceindexesresponsetypedef"></a>
+
 ## ListPlaceIndexesResponseTypeDef
 
 ```python
@@ -1406,6 +1590,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listroutecalculatorsrequestrequesttypedef"></a>
+
 ## ListRouteCalculatorsRequestRequestTypeDef
 
 ```python
@@ -1416,6 +1602,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listroutecalculatorsresponseentrytypedef"></a>
 
 ## ListRouteCalculatorsResponseEntryTypeDef
 
@@ -1435,6 +1623,8 @@ Optional fields:
 
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
+<a id="listroutecalculatorsresponsetypedef"></a>
+
 ## ListRouteCalculatorsResponseTypeDef
 
 ```python
@@ -1449,6 +1639,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1458,6 +1650,8 @@ from mypy_boto3_location.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1470,6 +1664,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtrackerconsumersrequestrequesttypedef"></a>
 
 ## ListTrackerConsumersRequestRequestTypeDef
 
@@ -1486,6 +1682,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtrackerconsumersresponsetypedef"></a>
+
 ## ListTrackerConsumersResponseTypeDef
 
 ```python
@@ -1499,6 +1697,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtrackersrequestrequesttypedef"></a>
+
 ## ListTrackersRequestRequestTypeDef
 
 ```python
@@ -1509,6 +1709,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listtrackersresponseentrytypedef"></a>
 
 ## ListTrackersResponseEntryTypeDef
 
@@ -1528,6 +1730,8 @@ Optional fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 
+<a id="listtrackersresponsetypedef"></a>
+
 ## ListTrackersResponseTypeDef
 
 ```python
@@ -1542,6 +1746,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="mapconfigurationtypedef"></a>
+
 ## MapConfigurationTypeDef
 
 ```python
@@ -1551,6 +1757,8 @@ from mypy_boto3_location.type_defs import MapConfigurationTypeDef
 Required fields:
 
 - `Style`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1564,6 +1772,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="placegeometrytypedef"></a>
+
 ## PlaceGeometryTypeDef
 
 ```python
@@ -1573,6 +1783,8 @@ from mypy_boto3_location.type_defs import PlaceGeometryTypeDef
 Optional fields:
 
 - `Point`: `List`\[`float`\]
+
+<a id="placetypedef"></a>
 
 ## PlaceTypeDef
 
@@ -1598,6 +1810,8 @@ Optional fields:
 - `SubRegion`: `str`
 - `TimeZone`: [TimeZoneTypeDef](./type_defs.md#timezonetypedef)
 
+<a id="positionalaccuracytypedef"></a>
+
 ## PositionalAccuracyTypeDef
 
 ```python
@@ -1607,6 +1821,8 @@ from mypy_boto3_location.type_defs import PositionalAccuracyTypeDef
 Required fields:
 
 - `Horizontal`: `float`
+
+<a id="putgeofencerequestrequesttypedef"></a>
 
 ## PutGeofenceRequestRequestTypeDef
 
@@ -1619,6 +1835,8 @@ Required fields:
 - `CollectionName`: `str`
 - `GeofenceId`: `str`
 - `Geometry`: [GeofenceGeometryTypeDef](./type_defs.md#geofencegeometrytypedef)
+
+<a id="putgeofenceresponsetypedef"></a>
 
 ## PutGeofenceResponseTypeDef
 
@@ -1634,6 +1852,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1647,6 +1867,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="routematrixentryerrortypedef"></a>
 
 ## RouteMatrixEntryErrorTypeDef
 
@@ -1662,6 +1884,8 @@ Optional fields:
 
 - `Message`: `str`
 
+<a id="routematrixentrytypedef"></a>
+
 ## RouteMatrixEntryTypeDef
 
 ```python
@@ -1675,6 +1899,8 @@ Optional fields:
 - `Error`:
   [RouteMatrixEntryErrorTypeDef](./type_defs.md#routematrixentryerrortypedef)
 
+<a id="searchforpositionresulttypedef"></a>
+
 ## SearchForPositionResultTypeDef
 
 ```python
@@ -1686,6 +1912,8 @@ Required fields:
 - `Distance`: `float`
 - `Place`: [PlaceTypeDef](./type_defs.md#placetypedef)
 
+<a id="searchforsuggestionsresulttypedef"></a>
+
 ## SearchForSuggestionsResultTypeDef
 
 ```python
@@ -1695,6 +1923,8 @@ from mypy_boto3_location.type_defs import SearchForSuggestionsResultTypeDef
 Required fields:
 
 - `Text`: `str`
+
+<a id="searchfortextresulttypedef"></a>
 
 ## SearchForTextResultTypeDef
 
@@ -1710,6 +1940,8 @@ Optional fields:
 
 - `Distance`: `float`
 - `Relevance`: `float`
+
+<a id="searchplaceindexforpositionrequestrequesttypedef"></a>
 
 ## SearchPlaceIndexForPositionRequestRequestTypeDef
 
@@ -1727,6 +1959,8 @@ Optional fields:
 - `Language`: `str`
 - `MaxResults`: `int`
 
+<a id="searchplaceindexforpositionresponsetypedef"></a>
+
 ## SearchPlaceIndexForPositionResponseTypeDef
 
 ```python
@@ -1741,6 +1975,8 @@ Required fields:
   [SearchPlaceIndexForPositionSummaryTypeDef](./type_defs.md#searchplaceindexforpositionsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchplaceindexforpositionsummarytypedef"></a>
 
 ## SearchPlaceIndexForPositionSummaryTypeDef
 
@@ -1757,6 +1993,8 @@ Optional fields:
 
 - `Language`: `str`
 - `MaxResults`: `int`
+
+<a id="searchplaceindexforsuggestionsrequestrequesttypedef"></a>
 
 ## SearchPlaceIndexForSuggestionsRequestRequestTypeDef
 
@@ -1777,6 +2015,8 @@ Optional fields:
 - `Language`: `str`
 - `MaxResults`: `int`
 
+<a id="searchplaceindexforsuggestionsresponsetypedef"></a>
+
 ## SearchPlaceIndexForSuggestionsResponseTypeDef
 
 ```python
@@ -1791,6 +2031,8 @@ Required fields:
   [SearchPlaceIndexForSuggestionsSummaryTypeDef](./type_defs.md#searchplaceindexforsuggestionssummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchplaceindexforsuggestionssummarytypedef"></a>
 
 ## SearchPlaceIndexForSuggestionsSummaryTypeDef
 
@@ -1811,6 +2053,8 @@ Optional fields:
 - `Language`: `str`
 - `MaxResults`: `int`
 
+<a id="searchplaceindexfortextrequestrequesttypedef"></a>
+
 ## SearchPlaceIndexForTextRequestRequestTypeDef
 
 ```python
@@ -1830,6 +2074,8 @@ Optional fields:
 - `Language`: `str`
 - `MaxResults`: `int`
 
+<a id="searchplaceindexfortextresponsetypedef"></a>
+
 ## SearchPlaceIndexForTextResponseTypeDef
 
 ```python
@@ -1844,6 +2090,8 @@ Required fields:
   [SearchPlaceIndexForTextSummaryTypeDef](./type_defs.md#searchplaceindexfortextsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchplaceindexfortextsummarytypedef"></a>
 
 ## SearchPlaceIndexForTextSummaryTypeDef
 
@@ -1865,6 +2113,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `ResultBBox`: `List`\[`float`\]
 
+<a id="steptypedef"></a>
+
 ## StepTypeDef
 
 ```python
@@ -1882,6 +2132,8 @@ Optional fields:
 
 - `GeometryOffset`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1892,6 +2144,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="timezonetypedef"></a>
 
 ## TimeZoneTypeDef
 
@@ -1907,6 +2161,8 @@ Optional fields:
 
 - `Offset`: `int`
 
+<a id="truckdimensionstypedef"></a>
+
 ## TruckDimensionsTypeDef
 
 ```python
@@ -1920,6 +2176,8 @@ Optional fields:
 - `Unit`: [DimensionUnitType](./literals.md#dimensionunittype)
 - `Width`: `float`
 
+<a id="truckweighttypedef"></a>
+
 ## TruckWeightTypeDef
 
 ```python
@@ -1931,6 +2189,8 @@ Optional fields:
 - `Total`: `float`
 - `Unit`: [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1941,6 +2201,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updategeofencecollectionrequestrequesttypedef"></a>
 
 ## UpdateGeofenceCollectionRequestRequestTypeDef
 
@@ -1958,6 +2220,8 @@ Optional fields:
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 
+<a id="updategeofencecollectionresponsetypedef"></a>
+
 ## UpdateGeofenceCollectionResponseTypeDef
 
 ```python
@@ -1971,6 +2235,8 @@ Required fields:
 - `UpdateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemaprequestrequesttypedef"></a>
 
 ## UpdateMapRequestRequestTypeDef
 
@@ -1987,6 +2253,8 @@ Optional fields:
 - `Description`: `str`
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
+<a id="updatemapresponsetypedef"></a>
+
 ## UpdateMapResponseTypeDef
 
 ```python
@@ -2000,6 +2268,8 @@ Required fields:
 - `UpdateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateplaceindexrequestrequesttypedef"></a>
 
 ## UpdatePlaceIndexRequestRequestTypeDef
 
@@ -2018,6 +2288,8 @@ Optional fields:
 - `Description`: `str`
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
+<a id="updateplaceindexresponsetypedef"></a>
+
 ## UpdatePlaceIndexResponseTypeDef
 
 ```python
@@ -2031,6 +2303,8 @@ Required fields:
 - `UpdateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateroutecalculatorrequestrequesttypedef"></a>
 
 ## UpdateRouteCalculatorRequestRequestTypeDef
 
@@ -2047,6 +2321,8 @@ Optional fields:
 - `Description`: `str`
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 
+<a id="updateroutecalculatorresponsetypedef"></a>
+
 ## UpdateRouteCalculatorResponseTypeDef
 
 ```python
@@ -2060,6 +2336,8 @@ Required fields:
 - `UpdateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetrackerrequestrequesttypedef"></a>
 
 ## UpdateTrackerRequestRequestTypeDef
 
@@ -2078,6 +2356,8 @@ Optional fields:
   [PositionFilteringType](./literals.md#positionfilteringtype)
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
+
+<a id="updatetrackerresponsetypedef"></a>
 
 ## UpdateTrackerResponseTypeDef
 

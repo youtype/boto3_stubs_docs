@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-synthetics-module"></a>
+
 # Literals for boto3 Synthetics module
 
 > [Index](..) > [Synthetics](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
-[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+[mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Literals for boto3 Synthetics module](#literals-for-boto3-synthetics-module)
   - [CanaryRunStateReasonCodeType](#canaryrunstatereasoncodetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [CanaryStateType](#canarystatetype)
   - [EncryptionModeType](#encryptionmodetype)
   - [ServiceName](#servicename)
+
+<a id="canaryrunstatereasoncodetype"></a>
 
 ## CanaryRunStateReasonCodeType
 
@@ -25,6 +29,8 @@ Values:
 
 - `CANARY_FAILURE`
 - `EXECUTION_FAILURE`
+
+<a id="canaryrunstatetype"></a>
 
 ## CanaryRunStateType
 
@@ -38,6 +44,8 @@ Values:
 - `PASSED`
 - `RUNNING`
 
+<a id="canarystatereasoncodetype"></a>
+
 ## CanaryStateReasonCodeType
 
 ```python
@@ -47,6 +55,8 @@ from mypy_boto3_synthetics.literals import CanaryStateReasonCodeType
 Values:
 
 - `INVALID_PERMISSIONS`
+
+<a id="canarystatetype"></a>
 
 ## CanaryStateType
 
@@ -66,6 +76,8 @@ Values:
 - `STOPPING`
 - `UPDATING`
 
+<a id="encryptionmodetype"></a>
+
 ## EncryptionModeType
 
 ```python
@@ -76,6 +88,8 @@ Values:
 
 - `SSE_KMS`
 - `SSE_S3`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

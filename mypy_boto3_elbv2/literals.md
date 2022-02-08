@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elasticloadbalancingv2-module"></a>
+
 # Literals for boto3 ElasticLoadBalancingv2 module
 
 > [Index](..) > [ElasticLoadBalancingv2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticLoadBalancingv2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elbv2.html#ElasticLoadBalancingv2)
 type annotations stubs module
-[mypy_boto3_elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
+[mypy-boto3-elbv2](https://pypi.org/project/mypy-boto3-elbv2/).
 
 - [Literals for boto3 ElasticLoadBalancingv2 module](#literals-for-boto3-elasticloadbalancingv2-module)
   - [ActionTypeEnumType](#actiontypeenumtype)
@@ -37,6 +39,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="actiontypeenumtype"></a>
+
 ## ActionTypeEnumType
 
 ```python
@@ -51,6 +55,8 @@ Values:
 - `forward`
 - `redirect`
 
+<a id="authenticatecognitoactionconditionalbehaviorenumtype"></a>
+
 ## AuthenticateCognitoActionConditionalBehaviorEnumType
 
 ```python
@@ -62,6 +68,8 @@ Values:
 - `allow`
 - `authenticate`
 - `deny`
+
+<a id="authenticateoidcactionconditionalbehaviorenumtype"></a>
 
 ## AuthenticateOidcActionConditionalBehaviorEnumType
 
@@ -75,6 +83,8 @@ Values:
 - `authenticate`
 - `deny`
 
+<a id="describeaccountlimitspaginatorname"></a>
+
 ## DescribeAccountLimitsPaginatorName
 
 ```python
@@ -84,6 +94,8 @@ from mypy_boto3_elbv2.literals import DescribeAccountLimitsPaginatorName
 Values:
 
 - `describe_account_limits`
+
+<a id="describelistenercertificatespaginatorname"></a>
 
 ## DescribeListenerCertificatesPaginatorName
 
@@ -95,6 +107,8 @@ Values:
 
 - `describe_listener_certificates`
 
+<a id="describelistenerspaginatorname"></a>
+
 ## DescribeListenersPaginatorName
 
 ```python
@@ -104,6 +118,8 @@ from mypy_boto3_elbv2.literals import DescribeListenersPaginatorName
 Values:
 
 - `describe_listeners`
+
+<a id="describeloadbalancerspaginatorname"></a>
 
 ## DescribeLoadBalancersPaginatorName
 
@@ -115,6 +131,8 @@ Values:
 
 - `describe_load_balancers`
 
+<a id="describerulespaginatorname"></a>
+
 ## DescribeRulesPaginatorName
 
 ```python
@@ -124,6 +142,8 @@ from mypy_boto3_elbv2.literals import DescribeRulesPaginatorName
 Values:
 
 - `describe_rules`
+
+<a id="describesslpoliciespaginatorname"></a>
 
 ## DescribeSSLPoliciesPaginatorName
 
@@ -135,6 +155,8 @@ Values:
 
 - `describe_ssl_policies`
 
+<a id="describetargetgroupspaginatorname"></a>
+
 ## DescribeTargetGroupsPaginatorName
 
 ```python
@@ -144,6 +166,8 @@ from mypy_boto3_elbv2.literals import DescribeTargetGroupsPaginatorName
 Values:
 
 - `describe_target_groups`
+
+<a id="ipaddresstypetype"></a>
 
 ## IpAddressTypeType
 
@@ -156,6 +180,8 @@ Values:
 - `dualstack`
 - `ipv4`
 
+<a id="loadbalanceravailablewaitername"></a>
+
 ## LoadBalancerAvailableWaiterName
 
 ```python
@@ -165,6 +191,8 @@ from mypy_boto3_elbv2.literals import LoadBalancerAvailableWaiterName
 Values:
 
 - `load_balancer_available`
+
+<a id="loadbalancerexistswaitername"></a>
 
 ## LoadBalancerExistsWaiterName
 
@@ -176,6 +204,8 @@ Values:
 
 - `load_balancer_exists`
 
+<a id="loadbalancerschemeenumtype"></a>
+
 ## LoadBalancerSchemeEnumType
 
 ```python
@@ -186,6 +216,8 @@ Values:
 
 - `internal`
 - `internet-facing`
+
+<a id="loadbalancerstateenumtype"></a>
 
 ## LoadBalancerStateEnumType
 
@@ -200,6 +232,8 @@ Values:
 - `failed`
 - `provisioning`
 
+<a id="loadbalancertypeenumtype"></a>
+
 ## LoadBalancerTypeEnumType
 
 ```python
@@ -212,6 +246,8 @@ Values:
 - `gateway`
 - `network`
 
+<a id="loadbalancersdeletedwaitername"></a>
+
 ## LoadBalancersDeletedWaiterName
 
 ```python
@@ -221,6 +257,8 @@ from mypy_boto3_elbv2.literals import LoadBalancersDeletedWaiterName
 Values:
 
 - `load_balancers_deleted`
+
+<a id="protocolenumtype"></a>
 
 ## ProtocolEnumType
 
@@ -238,6 +276,8 @@ Values:
 - `TLS`
 - `UDP`
 
+<a id="redirectactionstatuscodeenumtype"></a>
+
 ## RedirectActionStatusCodeEnumType
 
 ```python
@@ -249,6 +289,8 @@ Values:
 - `HTTP_301`
 - `HTTP_302`
 
+<a id="targetderegisteredwaitername"></a>
+
 ## TargetDeregisteredWaiterName
 
 ```python
@@ -258,6 +300,8 @@ from mypy_boto3_elbv2.literals import TargetDeregisteredWaiterName
 Values:
 
 - `target_deregistered`
+
+<a id="targetgroupipaddresstypeenumtype"></a>
 
 ## TargetGroupIpAddressTypeEnumType
 
@@ -269,6 +313,8 @@ Values:
 
 - `ipv4`
 - `ipv6`
+
+<a id="targethealthreasonenumtype"></a>
 
 ## TargetHealthReasonEnumType
 
@@ -291,6 +337,8 @@ Values:
 - `Target.ResponseCodeMismatch`
 - `Target.Timeout`
 
+<a id="targethealthstateenumtype"></a>
+
 ## TargetHealthStateEnumType
 
 ```python
@@ -306,6 +354,8 @@ Values:
 - `unhealthy`
 - `unused`
 
+<a id="targetinservicewaitername"></a>
+
 ## TargetInServiceWaiterName
 
 ```python
@@ -315,6 +365,8 @@ from mypy_boto3_elbv2.literals import TargetInServiceWaiterName
 Values:
 
 - `target_in_service`
+
+<a id="targettypeenumtype"></a>
 
 ## TargetTypeEnumType
 
@@ -328,6 +380,8 @@ Values:
 - `instance`
 - `ip`
 - `lambda`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -637,6 +691,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -652,6 +708,8 @@ Values:
 - `describe_rules`
 - `describe_ssl_policies`
 - `describe_target_groups`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

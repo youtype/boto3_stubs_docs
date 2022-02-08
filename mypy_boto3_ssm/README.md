@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ssm-module"></a>
+
 # Type annotations for boto3 SSM module
 
 > [Index](..) > SSM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
 type annotations stubs module
-[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ssm]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ssm]'
+
+# standalone installation
 pip install mypy-boto3-ssm
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-ssm
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ssmclient"></a>
+
 ## SSMClient
 
 Type annotations for `boto3.client("ssm")` as [SSMClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ssm.client import SSMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -173,6 +187,8 @@ from mypy_boto3_ssm.client import SSMClient
 - [update_resource_data_sync](./client.md#update_resource_data_sync)
 - [update_service_setting](./client.md#update_service_setting)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SSMClient [exceptions](./client.md#exceptions)
@@ -301,6 +317,8 @@ SSMClient [exceptions](./client.md#exceptions)
 - UnsupportedParameterType
 - UnsupportedPlatformType
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -309,7 +327,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.paginators import DescribeActivationsPaginator, ...
+from mypy_boto3_ssm.paginator import DescribeActivationsPaginator, ...
 ```
 
 - [DescribeActivationsPaginator](./paginators.md#describeactivationspaginator)
@@ -359,6 +377,8 @@ from mypy_boto3_ssm.paginators import DescribeActivationsPaginator, ...
 - [ListResourceComplianceSummariesPaginator](./paginators.md#listresourcecompliancesummariespaginator)
 - [ListResourceDataSyncPaginator](./paginators.md#listresourcedatasyncpaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -367,10 +387,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm.waiters import CommandExecutedWaiter, ...
+from mypy_boto3_ssm.waiter import CommandExecutedWaiter, ...
 ```
 
 - [CommandExecutedWaiter](./waiters.md#commandexecutedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -516,6 +538,8 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="chimesdkmessagingclient-for-boto3-chimesdkmessaging-module"></a>
+
 # ChimeSDKMessagingClient for boto3 ChimeSDKMessaging module
 
 > [Index](..) > [ChimeSDKMessaging](.) > ChimeSDKMessagingClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
 type annotations stubs module
-[mypy_boto3_chime_sdk_messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
+[mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 - [ChimeSDKMessagingClient for boto3 ChimeSDKMessaging module](#chimesdkmessagingclient-for-boto3-chimesdkmessaging-module)
   - [ChimeSDKMessagingClient](#chimesdkmessagingclient)
@@ -60,6 +62,8 @@ type annotations stubs module
     - [update_channel_message](#update_channel_message)
     - [update_channel_read_marker](#update_channel_read_marker)
 
+<a id="chimesdkmessagingclient"></a>
+
 ## ChimeSDKMessagingClient
 
 Type annotations for `boto3.client("chime-sdk-messaging")`
@@ -67,14 +71,17 @@ Type annotations for `boto3.client("chime-sdk-messaging")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 
 def get_chime-sdk-messaging_client() -> ChimeSDKMessagingClient:
-    return boto3.client("chime-sdk-messaging")
+    return Session().client("chime-sdk-messaging")
 ```
 
 Boto3 documentation:
 [ChimeSDKMessaging.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -101,7 +108,11 @@ Exceptions:
 - `Exceptions.ThrottledClientException`
 - `Exceptions.UnauthorizedClientException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -113,6 +124,8 @@ Boto3 documentation:
 [ChimeSDKMessaging.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_channel_flow"></a>
 
 ### associate_channel_flow
 
@@ -132,6 +145,8 @@ Keyword-only arguments:
 - `ChannelArn`: `str` *(required)*
 - `ChannelFlowArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
+
+<a id="batch_create_channel_membership"></a>
 
 ### batch_create_channel_membership
 
@@ -156,6 +171,8 @@ Keyword-only arguments:
 Returns
 [BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -170,6 +187,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="channel_flow_callback"></a>
 
 ### channel_flow_callback
 
@@ -195,6 +214,8 @@ Keyword-only arguments:
 
 Returns
 [ChannelFlowCallbackResponseTypeDef](./type_defs.md#channelflowcallbackresponsetypedef).
+
+<a id="create_channel"></a>
 
 ### create_channel
 
@@ -223,6 +244,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
+<a id="create_channel_ban"></a>
+
 ### create_channel_ban
 
 Permanently bans a member from a channel.
@@ -244,6 +267,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
+
+<a id="create_channel_flow"></a>
 
 ### create_channel_flow
 
@@ -271,6 +296,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelFlowResponseTypeDef](./type_defs.md#createchannelflowresponsetypedef).
 
+<a id="create_channel_membership"></a>
+
 ### create_channel_membership
 
 Adds a user to a channel.
@@ -295,6 +322,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
 
+<a id="create_channel_moderator"></a>
+
 ### create_channel_moderator
 
 Creates a new `ChannelModerator`.
@@ -317,6 +346,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
 
+<a id="delete_channel"></a>
+
 ### delete_channel
 
 Immediately makes a channel and its memberships inaccessible and marks them for
@@ -335,6 +366,8 @@ Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
+
+<a id="delete_channel_ban"></a>
 
 ### delete_channel_ban
 
@@ -355,6 +388,8 @@ Keyword-only arguments:
 - `MemberArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
 
+<a id="delete_channel_flow"></a>
+
 ### delete_channel_flow
 
 Deletes a channel flow, an irreversible process.
@@ -371,6 +406,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ChannelFlowArn`: `str` *(required)*
+
+<a id="delete_channel_membership"></a>
 
 ### delete_channel_membership
 
@@ -391,6 +428,8 @@ Keyword-only arguments:
 - `MemberArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
 
+<a id="delete_channel_message"></a>
+
 ### delete_channel_message
 
 Deletes a channel message.
@@ -410,6 +449,8 @@ Keyword-only arguments:
 - `MessageId`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
 
+<a id="delete_channel_moderator"></a>
+
 ### delete_channel_moderator
 
 Deletes a channel moderator.
@@ -428,6 +469,8 @@ Keyword-only arguments:
 - `ChannelArn`: `str` *(required)*
 - `ChannelModeratorArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
+
+<a id="describe_channel"></a>
 
 ### describe_channel
 
@@ -449,6 +492,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+
+<a id="describe_channel_ban"></a>
 
 ### describe_channel_ban
 
@@ -472,6 +517,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
 
+<a id="describe_channel_flow"></a>
+
 ### describe_channel_flow
 
 Returns the full details of a channel flow in an Amazon Chime `AppInstance`.
@@ -491,6 +538,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelFlowResponseTypeDef](./type_defs.md#describechannelflowresponsetypedef).
+
+<a id="describe_channel_membership"></a>
 
 ### describe_channel_membership
 
@@ -513,6 +562,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
+
+<a id="describe_channel_membership_for_app_instance_user"></a>
 
 ### describe_channel_membership_for_app_instance_user
 
@@ -538,6 +589,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
 
+<a id="describe_channel_moderated_by_app_instance_user"></a>
+
 ### describe_channel_moderated_by_app_instance_user
 
 Returns the full details of a channel moderated by the specified
@@ -562,6 +615,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
 
+<a id="describe_channel_moderator"></a>
+
 ### describe_channel_moderator
 
 Returns the full details of a single ChannelModerator.
@@ -584,6 +639,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
 
+<a id="disassociate_channel_flow"></a>
+
 ### disassociate_channel_flow
 
 Disassociates a channel flow from all its channels.
@@ -603,6 +660,8 @@ Keyword-only arguments:
 - `ChannelFlowArn`: `str` *(required)*
 - `ChimeBearer`: `str` *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -621,6 +680,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_channel_membership_preferences"></a>
 
 ### get_channel_membership_preferences
 
@@ -646,6 +707,8 @@ Keyword-only arguments:
 Returns
 [GetChannelMembershipPreferencesResponseTypeDef](./type_defs.md#getchannelmembershippreferencesresponsetypedef).
 
+<a id="get_channel_message"></a>
+
 ### get_channel_message
 
 Gets the full details of a channel message.
@@ -667,6 +730,8 @@ Keyword-only arguments:
 
 Returns
 [GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
+
+<a id="get_channel_message_status"></a>
 
 ### get_channel_message_status
 
@@ -690,6 +755,8 @@ Keyword-only arguments:
 Returns
 [GetChannelMessageStatusResponseTypeDef](./type_defs.md#getchannelmessagestatusresponsetypedef).
 
+<a id="get_messaging_session_endpoint"></a>
+
 ### get_messaging_session_endpoint
 
 The details of the endpoint for the messaging session.
@@ -702,6 +769,8 @@ Boto3 documentation:
 
 Returns
 [GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
+
+<a id="list_channel_bans"></a>
 
 ### list_channel_bans
 
@@ -726,6 +795,8 @@ Keyword-only arguments:
 Returns
 [ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
 
+<a id="list_channel_flows"></a>
+
 ### list_channel_flows
 
 Returns a paginated lists of all the channel flows created under a single
@@ -748,6 +819,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelFlowsResponseTypeDef](./type_defs.md#listchannelflowsresponsetypedef).
+
+<a id="list_channel_memberships"></a>
 
 ### list_channel_memberships
 
@@ -773,6 +846,8 @@ Keyword-only arguments:
 Returns
 [ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
 
+<a id="list_channel_memberships_for_app_instance_user"></a>
+
 ### list_channel_memberships_for_app_instance_user
 
 Lists all channels that a particular `AppInstanceUser` is a part of.
@@ -796,6 +871,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
+
+<a id="list_channel_messages"></a>
 
 ### list_channel_messages
 
@@ -823,6 +900,8 @@ Keyword-only arguments:
 Returns
 [ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
 
+<a id="list_channel_moderators"></a>
+
 ### list_channel_moderators
 
 Lists all the moderators for a channel.
@@ -845,6 +924,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
+
+<a id="list_channels"></a>
 
 ### list_channels
 
@@ -870,6 +951,8 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
+<a id="list_channels_associated_with_channel_flow"></a>
+
 ### list_channels_associated_with_channel_flow
 
 Lists all channels associated with a specified channel flow.
@@ -892,6 +975,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsAssociatedWithChannelFlowResponseTypeDef](./type_defs.md#listchannelsassociatedwithchannelflowresponsetypedef).
+
+<a id="list_channels_moderated_by_app_instance_user"></a>
 
 ### list_channels_moderated_by_app_instance_user
 
@@ -917,6 +1002,8 @@ Keyword-only arguments:
 Returns
 [ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags applied to an Amazon Chime SDK messaging resource.
@@ -936,6 +1023,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_channel_membership_preferences"></a>
 
 ### put_channel_membership_preferences
 
@@ -964,6 +1053,8 @@ Keyword-only arguments:
 Returns
 [PutChannelMembershipPreferencesResponseTypeDef](./type_defs.md#putchannelmembershippreferencesresponsetypedef).
 
+<a id="redact_channel_message"></a>
+
 ### redact_channel_message
 
 Redacts message content, but not metadata.
@@ -985,6 +1076,8 @@ Keyword-only arguments:
 
 Returns
 [RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
+
+<a id="send_channel_message"></a>
 
 ### send_channel_message
 
@@ -1019,6 +1112,8 @@ Keyword-only arguments:
 Returns
 [SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies the specified tags to the specified Amazon Chime SDK messaging
@@ -1036,6 +1131,8 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -1055,6 +1152,8 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_channel"></a>
 
 ### update_channel
 
@@ -1080,6 +1179,8 @@ Keyword-only arguments:
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
+<a id="update_channel_flow"></a>
+
 ### update_channel_flow
 
 Updates channel flow attributes.
@@ -1104,6 +1205,8 @@ Keyword-only arguments:
 Returns
 [UpdateChannelFlowResponseTypeDef](./type_defs.md#updatechannelflowresponsetypedef).
 
+<a id="update_channel_message"></a>
+
 ### update_channel_message
 
 Updates the content of a message.
@@ -1127,6 +1230,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
+
+<a id="update_channel_read_marker"></a>
 
 ### update_channel_read_marker
 

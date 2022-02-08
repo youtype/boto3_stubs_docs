@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kinesisanalytics-module"></a>
+
 # Literals for boto3 KinesisAnalytics module
 
 > [Index](..) > [KinesisAnalytics](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [KinesisAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalytics.html#KinesisAnalytics)
 type annotations stubs module
-[mypy_boto3_kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
+[mypy-boto3-kinesisanalytics](https://pypi.org/project/mypy-boto3-kinesisanalytics/).
 
 - [Literals for boto3 KinesisAnalytics module](#literals-for-boto3-kinesisanalytics-module)
   - [ApplicationStatusType](#applicationstatustype)
   - [InputStartingPositionType](#inputstartingpositiontype)
   - [RecordFormatTypeType](#recordformattypetype)
   - [ServiceName](#servicename)
+
+<a id="applicationstatustype"></a>
 
 ## ApplicationStatusType
 
@@ -28,6 +32,8 @@ Values:
 - `STOPPING`
 - `UPDATING`
 
+<a id="inputstartingpositiontype"></a>
+
 ## InputStartingPositionType
 
 ```python
@@ -40,6 +46,8 @@ Values:
 - `NOW`
 - `TRIM_HORIZON`
 
+<a id="recordformattypetype"></a>
+
 ## RecordFormatTypeType
 
 ```python
@@ -50,6 +58,8 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-efs-module"></a>
+
 # Typed dictionaries for boto3 EFS module
 
 > [Index](..) > [EFS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
 type annotations stubs module
-[mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
+[mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
 
 - [Typed dictionaries for boto3 EFS module](#typed-dictionaries-for-boto3-efs-module)
   - [AccessPointDescriptionResponseMetadataTypeDef](#accesspointdescriptionresponsemetadatatypedef)
@@ -71,6 +73,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateFileSystemRequestRequestTypeDef](#updatefilesystemrequestrequesttypedef)
 
+<a id="accesspointdescriptionresponsemetadatatypedef"></a>
+
 ## AccessPointDescriptionResponseMetadataTypeDef
 
 ```python
@@ -92,6 +96,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="accesspointdescriptiontypedef"></a>
+
 ## AccessPointDescriptionTypeDef
 
 ```python
@@ -111,6 +117,8 @@ Optional fields:
 - `OwnerId`: `str`
 - `LifeCycleState`: [LifeCycleStateType](./literals.md#lifecyclestatetype)
 
+<a id="backuppolicydescriptiontypedef"></a>
+
 ## BackupPolicyDescriptionTypeDef
 
 ```python
@@ -123,6 +131,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="backuppolicytypedef"></a>
+
 ## BackupPolicyTypeDef
 
 ```python
@@ -132,6 +142,8 @@ from mypy_boto3_efs.type_defs import BackupPolicyTypeDef
 Required fields:
 
 - `Status`: [StatusType](./literals.md#statustype)
+
+<a id="createaccesspointrequestrequesttypedef"></a>
 
 ## CreateAccessPointRequestRequestTypeDef
 
@@ -149,6 +161,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
 - `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
+
+<a id="createfilesystemrequestrequesttypedef"></a>
 
 ## CreateFileSystemRequestRequestTypeDef
 
@@ -171,6 +185,8 @@ Optional fields:
 - `Backup`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmounttargetrequestrequesttypedef"></a>
+
 ## CreateMountTargetRequestRequestTypeDef
 
 ```python
@@ -187,6 +203,8 @@ Optional fields:
 - `IpAddress`: `str`
 - `SecurityGroups`: `Sequence`\[`str`\]
 
+<a id="createreplicationconfigurationrequestrequesttypedef"></a>
+
 ## CreateReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -199,6 +217,8 @@ Required fields:
 - `Destinations`:
   `Sequence`\[[DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)\]
 
+<a id="createtagsrequestrequesttypedef"></a>
+
 ## CreateTagsRequestRequestTypeDef
 
 ```python
@@ -209,6 +229,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="creationinfotypedef"></a>
 
 ## CreationInfoTypeDef
 
@@ -222,6 +244,8 @@ Required fields:
 - `OwnerGid`: `int`
 - `Permissions`: `str`
 
+<a id="deleteaccesspointrequestrequesttypedef"></a>
+
 ## DeleteAccessPointRequestRequestTypeDef
 
 ```python
@@ -231,6 +255,8 @@ from mypy_boto3_efs.type_defs import DeleteAccessPointRequestRequestTypeDef
 Required fields:
 
 - `AccessPointId`: `str`
+
+<a id="deletefilesystempolicyrequestrequesttypedef"></a>
 
 ## DeleteFileSystemPolicyRequestRequestTypeDef
 
@@ -242,6 +268,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 
+<a id="deletefilesystemrequestrequesttypedef"></a>
+
 ## DeleteFileSystemRequestRequestTypeDef
 
 ```python
@@ -251,6 +279,8 @@ from mypy_boto3_efs.type_defs import DeleteFileSystemRequestRequestTypeDef
 Required fields:
 
 - `FileSystemId`: `str`
+
+<a id="deletemounttargetrequestrequesttypedef"></a>
 
 ## DeleteMountTargetRequestRequestTypeDef
 
@@ -262,6 +292,8 @@ Required fields:
 
 - `MountTargetId`: `str`
 
+<a id="deletereplicationconfigurationrequestrequesttypedef"></a>
+
 ## DeleteReplicationConfigurationRequestRequestTypeDef
 
 ```python
@@ -271,6 +303,8 @@ from mypy_boto3_efs.type_defs import DeleteReplicationConfigurationRequestReques
 Required fields:
 
 - `SourceFileSystemId`: `str`
+
+<a id="deletetagsrequestrequesttypedef"></a>
 
 ## DeleteTagsRequestRequestTypeDef
 
@@ -282,6 +316,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="describeaccesspointsrequestrequesttypedef"></a>
 
 ## DescribeAccessPointsRequestRequestTypeDef
 
@@ -295,6 +331,8 @@ Optional fields:
 - `NextToken`: `str`
 - `AccessPointId`: `str`
 - `FileSystemId`: `str`
+
+<a id="describeaccesspointsresponsetypedef"></a>
 
 ## DescribeAccessPointsResponseTypeDef
 
@@ -310,6 +348,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaccountpreferencesrequestrequesttypedef"></a>
+
 ## DescribeAccountPreferencesRequestRequestTypeDef
 
 ```python
@@ -320,6 +360,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeaccountpreferencesresponsetypedef"></a>
 
 ## DescribeAccountPreferencesResponseTypeDef
 
@@ -335,6 +377,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebackuppolicyrequestrequesttypedef"></a>
+
 ## DescribeBackupPolicyRequestRequestTypeDef
 
 ```python
@@ -345,6 +389,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 
+<a id="describefilesystempolicyrequestrequesttypedef"></a>
+
 ## DescribeFileSystemPolicyRequestRequestTypeDef
 
 ```python
@@ -354,6 +400,8 @@ from mypy_boto3_efs.type_defs import DescribeFileSystemPolicyRequestRequestTypeD
 Required fields:
 
 - `FileSystemId`: `str`
+
+<a id="describefilesystemsrequestrequesttypedef"></a>
 
 ## DescribeFileSystemsRequestRequestTypeDef
 
@@ -367,6 +415,8 @@ Optional fields:
 - `Marker`: `str`
 - `CreationToken`: `str`
 - `FileSystemId`: `str`
+
+<a id="describefilesystemsresponsetypedef"></a>
 
 ## DescribeFileSystemsResponseTypeDef
 
@@ -383,6 +433,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelifecycleconfigurationrequestrequesttypedef"></a>
+
 ## DescribeLifecycleConfigurationRequestRequestTypeDef
 
 ```python
@@ -393,6 +445,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 
+<a id="describemounttargetsecuritygroupsrequestrequesttypedef"></a>
+
 ## DescribeMountTargetSecurityGroupsRequestRequestTypeDef
 
 ```python
@@ -402,6 +456,8 @@ from mypy_boto3_efs.type_defs import DescribeMountTargetSecurityGroupsRequestReq
 Required fields:
 
 - `MountTargetId`: `str`
+
+<a id="describemounttargetsecuritygroupsresponsetypedef"></a>
 
 ## DescribeMountTargetSecurityGroupsResponseTypeDef
 
@@ -414,6 +470,8 @@ Required fields:
 - `SecurityGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemounttargetsrequestrequesttypedef"></a>
 
 ## DescribeMountTargetsRequestRequestTypeDef
 
@@ -428,6 +486,8 @@ Optional fields:
 - `FileSystemId`: `str`
 - `MountTargetId`: `str`
 - `AccessPointId`: `str`
+
+<a id="describemounttargetsresponsetypedef"></a>
 
 ## DescribeMountTargetsResponseTypeDef
 
@@ -444,6 +504,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationconfigurationsrequestrequesttypedef"></a>
+
 ## DescribeReplicationConfigurationsRequestRequestTypeDef
 
 ```python
@@ -455,6 +517,8 @@ Optional fields:
 - `FileSystemId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describereplicationconfigurationsresponsetypedef"></a>
 
 ## DescribeReplicationConfigurationsResponseTypeDef
 
@@ -469,6 +533,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetagsrequestrequesttypedef"></a>
 
 ## DescribeTagsRequestRequestTypeDef
 
@@ -485,6 +551,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `Marker`: `str`
 
+<a id="describetagsresponsetypedef"></a>
+
 ## DescribeTagsResponseTypeDef
 
 ```python
@@ -499,6 +567,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationtocreatetypedef"></a>
+
 ## DestinationToCreateTypeDef
 
 ```python
@@ -510,6 +580,8 @@ Optional fields:
 - `Region`: `str`
 - `AvailabilityZoneName`: `str`
 - `KmsKeyId`: `str`
+
+<a id="destinationtypedef"></a>
 
 ## DestinationTypeDef
 
@@ -526,6 +598,8 @@ Required fields:
 Optional fields:
 
 - `LastReplicatedTimestamp`: `datetime`
+
+<a id="filesystemdescriptionresponsemetadatatypedef"></a>
 
 ## FileSystemDescriptionResponseMetadataTypeDef
 
@@ -554,6 +628,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="filesystemdescriptiontypedef"></a>
 
 ## FileSystemDescriptionTypeDef
 
@@ -584,6 +660,8 @@ Optional fields:
 - `AvailabilityZoneName`: `str`
 - `AvailabilityZoneId`: `str`
 
+<a id="filesystempolicydescriptiontypedef"></a>
+
 ## FileSystemPolicyDescriptionTypeDef
 
 ```python
@@ -596,6 +674,8 @@ Required fields:
 - `Policy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="filesystemsizetypedef"></a>
 
 ## FileSystemSizeTypeDef
 
@@ -613,6 +693,8 @@ Optional fields:
 - `ValueInIA`: `int`
 - `ValueInStandard`: `int`
 
+<a id="lifecycleconfigurationdescriptiontypedef"></a>
+
 ## LifecycleConfigurationDescriptionTypeDef
 
 ```python
@@ -626,6 +708,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lifecyclepolicytypedef"></a>
+
 ## LifecyclePolicyTypeDef
 
 ```python
@@ -638,6 +722,8 @@ Optional fields:
   [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
 - `TransitionToPrimaryStorageClass`: `Literal['AFTER_1_ACCESS']` (see
   [TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype))
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -654,6 +740,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -666,6 +754,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifymounttargetsecuritygroupsrequestrequesttypedef"></a>
 
 ## ModifyMountTargetSecurityGroupsRequestRequestTypeDef
 
@@ -680,6 +770,8 @@ Required fields:
 Optional fields:
 
 - `SecurityGroups`: `Sequence`\[`str`\]
+
+<a id="mounttargetdescriptionresponsemetadatatypedef"></a>
 
 ## MountTargetDescriptionResponseMetadataTypeDef
 
@@ -701,6 +793,8 @@ Required fields:
 - `VpcId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mounttargetdescriptiontypedef"></a>
 
 ## MountTargetDescriptionTypeDef
 
@@ -724,6 +818,8 @@ Optional fields:
 - `AvailabilityZoneName`: `str`
 - `VpcId`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -735,6 +831,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="posixusertypedef"></a>
 
 ## PosixUserTypeDef
 
@@ -751,6 +849,8 @@ Optional fields:
 
 - `SecondaryGids`: `Sequence`\[`int`\]
 
+<a id="putaccountpreferencesrequestrequesttypedef"></a>
+
 ## PutAccountPreferencesRequestRequestTypeDef
 
 ```python
@@ -760,6 +860,8 @@ from mypy_boto3_efs.type_defs import PutAccountPreferencesRequestRequestTypeDef
 Required fields:
 
 - `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
+
+<a id="putaccountpreferencesresponsetypedef"></a>
 
 ## PutAccountPreferencesResponseTypeDef
 
@@ -774,6 +876,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putbackuppolicyrequestrequesttypedef"></a>
+
 ## PutBackupPolicyRequestRequestTypeDef
 
 ```python
@@ -784,6 +888,8 @@ Required fields:
 
 - `FileSystemId`: `str`
 - `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
+
+<a id="putfilesystempolicyrequestrequesttypedef"></a>
 
 ## PutFileSystemPolicyRequestRequestTypeDef
 
@@ -800,6 +906,8 @@ Optional fields:
 
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 
+<a id="putlifecycleconfigurationrequestrequesttypedef"></a>
+
 ## PutLifecycleConfigurationRequestRequestTypeDef
 
 ```python
@@ -811,6 +919,8 @@ Required fields:
 - `FileSystemId`: `str`
 - `LifecyclePolicies`:
   `Sequence`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
+
+<a id="replicationconfigurationdescriptionresponsemetadatatypedef"></a>
 
 ## ReplicationConfigurationDescriptionResponseMetadataTypeDef
 
@@ -830,6 +940,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="replicationconfigurationdescriptiontypedef"></a>
+
 ## ReplicationConfigurationDescriptionTypeDef
 
 ```python
@@ -846,6 +958,8 @@ Required fields:
 - `Destinations`:
   `List`\[[DestinationTypeDef](./type_defs.md#destinationtypedef)\]
 
+<a id="resourceidpreferencetypedef"></a>
+
 ## ResourceIdPreferenceTypeDef
 
 ```python
@@ -856,6 +970,8 @@ Optional fields:
 
 - `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
 - `Resources`: `List`\[[ResourceType](./literals.md#resourcetype)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -871,6 +987,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rootdirectorytypedef"></a>
+
 ## RootDirectoryTypeDef
 
 ```python
@@ -881,6 +999,8 @@ Optional fields:
 
 - `Path`: `str`
 - `CreationInfo`: [CreationInfoTypeDef](./type_defs.md#creationinfotypedef)
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -893,6 +1013,8 @@ Required fields:
 - `ResourceId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -904,6 +1026,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -914,6 +1038,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatefilesystemrequestrequesttypedef"></a>
 
 ## UpdateFileSystemRequestRequestTypeDef
 

@@ -1,3 +1,5 @@
+<a id="swfclient-for-boto3-swf-module"></a>
+
 # SWFClient for boto3 SWF module
 
 > [Index](..) > [SWF](.) > SWFClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module
-[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+[mypy-boto3-swf](https://pypi.org/project/mypy-boto3-swf/).
 
 - [SWFClient for boto3 SWF module](#swfclient-for-boto3-swf-module)
   - [SWFClient](#swfclient)
@@ -53,6 +55,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="swfclient"></a>
+
 ## SWFClient
 
 Type annotations for `boto3.client("swf")`
@@ -60,14 +64,17 @@ Type annotations for `boto3.client("swf")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_swf.client import SWFClient
 
 def get_swf_client() -> SWFClient:
-    return boto3.client("swf")
+    return Session().client("swf")
 ```
 
 Boto3 documentation:
 [SWF.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -95,7 +102,11 @@ Exceptions:
 - `Exceptions.UnknownResourceFault`
 - `Exceptions.WorkflowExecutionAlreadyStartedFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -107,6 +118,8 @@ Boto3 documentation:
 [SWF.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -122,6 +135,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="count_closed_workflow_executions"></a>
 
 ### count_closed_workflow_executions
 
@@ -155,6 +170,8 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
+<a id="count_open_workflow_executions"></a>
+
 ### count_open_workflow_executions
 
 Returns the number of open workflow executions within the given domain that
@@ -184,6 +201,8 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
+<a id="count_pending_activity_tasks"></a>
+
 ### count_pending_activity_tasks
 
 Returns the estimated number of activity tasks in the specified task list.
@@ -202,6 +221,8 @@ Keyword-only arguments:
 - `taskList`: [TaskListTypeDef](./type_defs.md#tasklisttypedef) *(required)*
 
 Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
+
+<a id="count_pending_decision_tasks"></a>
 
 ### count_pending_decision_tasks
 
@@ -222,6 +243,8 @@ Keyword-only arguments:
 
 Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
+<a id="deprecate_activity_type"></a>
+
 ### deprecate_activity_type
 
 Deprecates the specified *activity type*.
@@ -240,6 +263,8 @@ Keyword-only arguments:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
+<a id="deprecate_domain"></a>
+
 ### deprecate_domain
 
 Deprecates the specified domain.
@@ -255,6 +280,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
+
+<a id="deprecate_workflow_type"></a>
 
 ### deprecate_workflow_type
 
@@ -273,6 +300,8 @@ Keyword-only arguments:
 - `domain`: `str` *(required)*
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
+
+<a id="describe_activity_type"></a>
 
 ### describe_activity_type
 
@@ -294,6 +323,8 @@ Keyword-only arguments:
 
 Returns [ActivityTypeDetailTypeDef](./type_defs.md#activitytypedetailtypedef).
 
+<a id="describe_domain"></a>
+
 ### describe_domain
 
 Returns information about the specified domain, including description and
@@ -312,6 +343,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns [DomainDetailTypeDef](./type_defs.md#domaindetailtypedef).
+
+<a id="describe_workflow_execution"></a>
 
 ### describe_workflow_execution
 
@@ -336,6 +369,8 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionDetailTypeDef](./type_defs.md#workflowexecutiondetailtypedef).
 
+<a id="describe_workflow_type"></a>
+
 ### describe_workflow_type
 
 Returns information about the specified *workflow type*.
@@ -356,6 +391,8 @@ Keyword-only arguments:
 
 Returns [WorkflowTypeDetailTypeDef](./type_defs.md#workflowtypedetailtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -373,6 +410,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_workflow_execution_history"></a>
 
 ### get_workflow_execution_history
 
@@ -399,6 +438,8 @@ Keyword-only arguments:
 
 Returns [HistoryTypeDef](./type_defs.md#historytypedef).
 
+<a id="list_activity_types"></a>
+
 ### list_activity_types
 
 Returns information about all activities registered in the specified domain
@@ -423,6 +464,8 @@ Keyword-only arguments:
 - `reverseOrder`: `bool`
 
 Returns [ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef).
+
+<a id="list_closed_workflow_executions"></a>
 
 ### list_closed_workflow_executions
 
@@ -459,6 +502,8 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
+<a id="list_domains"></a>
+
 ### list_domains
 
 Returns the list of domains registered in the account.
@@ -480,6 +525,8 @@ Keyword-only arguments:
 - `reverseOrder`: `bool`
 
 Returns [DomainInfosTypeDef](./type_defs.md#domaininfostypedef).
+
+<a id="list_open_workflow_executions"></a>
 
 ### list_open_workflow_executions
 
@@ -513,6 +560,8 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List tags for a given domain.
@@ -531,6 +580,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="list_workflow_types"></a>
 
 ### list_workflow_types
 
@@ -556,6 +607,8 @@ Keyword-only arguments:
 
 Returns [WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef).
 
+<a id="poll_for_activity_task"></a>
+
 ### poll_for_activity_task
 
 Used by workers to get an ActivityTask from the specified activity `taskList`.
@@ -575,6 +628,8 @@ Keyword-only arguments:
 - `identity`: `str`
 
 Returns [ActivityTaskTypeDef](./type_defs.md#activitytasktypedef).
+
+<a id="poll_for_decision_task"></a>
 
 ### poll_for_decision_task
 
@@ -599,6 +654,8 @@ Keyword-only arguments:
 
 Returns [DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef).
 
+<a id="record_activity_task_heartbeat"></a>
+
 ### record_activity_task_heartbeat
 
 Used by activity workers to report to the service that the ActivityTask
@@ -619,6 +676,8 @@ Keyword-only arguments:
 - `details`: `str`
 
 Returns [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef).
+
+<a id="register_activity_type"></a>
 
 ### register_activity_type
 
@@ -646,6 +705,8 @@ Keyword-only arguments:
 - `defaultTaskScheduleToStartTimeout`: `str`
 - `defaultTaskScheduleToCloseTimeout`: `str`
 
+<a id="register_domain"></a>
+
 ### register_domain
 
 Registers a new domain.
@@ -664,6 +725,8 @@ Keyword-only arguments:
 - `workflowExecutionRetentionPeriodInDays`: `str` *(required)*
 - `description`: `str`
 - `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+
+<a id="register_workflow_type"></a>
 
 ### register_workflow_type
 
@@ -691,6 +754,8 @@ Keyword-only arguments:
 - `defaultChildPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `defaultLambdaRole`: `str`
 
+<a id="request_cancel_workflow_execution"></a>
+
 ### request_cancel_workflow_execution
 
 Records a `WorkflowExecutionCancelRequested` event in the currently running
@@ -711,6 +776,8 @@ Keyword-only arguments:
 - `workflowId`: `str` *(required)*
 - `runId`: `str`
 
+<a id="respond_activity_task_canceled"></a>
+
 ### respond_activity_task_canceled
 
 Used by workers to tell the service that the ActivityTask identified by the
@@ -729,6 +796,8 @@ Keyword-only arguments:
 
 - `taskToken`: `str` *(required)*
 - `details`: `str`
+
+<a id="respond_activity_task_completed"></a>
 
 ### respond_activity_task_completed
 
@@ -749,6 +818,8 @@ Keyword-only arguments:
 - `taskToken`: `str` *(required)*
 - `result`: `str`
 
+<a id="respond_activity_task_failed"></a>
+
 ### respond_activity_task_failed
 
 Used by workers to tell the service that the ActivityTask identified by the
@@ -767,6 +838,8 @@ Keyword-only arguments:
 - `taskToken`: `str` *(required)*
 - `reason`: `str`
 - `details`: `str`
+
+<a id="respond_decision_task_completed"></a>
 
 ### respond_decision_task_completed
 
@@ -787,6 +860,8 @@ Keyword-only arguments:
 - `taskToken`: `str` *(required)*
 - `decisions`: `Sequence`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
 - `executionContext`: `str`
+
+<a id="signal_workflow_execution"></a>
 
 ### signal_workflow_execution
 
@@ -809,6 +884,8 @@ Keyword-only arguments:
 - `signalName`: `str` *(required)*
 - `runId`: `str`
 - `input`: `str`
+
+<a id="start_workflow_execution"></a>
 
 ### start_workflow_execution
 
@@ -840,6 +917,8 @@ Keyword-only arguments:
 
 Returns [RunTypeDef](./type_defs.md#runtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add a tag to a Amazon SWF domain.
@@ -857,6 +936,8 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
   *(required)*
+
+<a id="terminate_workflow_execution"></a>
 
 ### terminate_workflow_execution
 
@@ -880,6 +961,8 @@ Keyword-only arguments:
 - `details`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
+<a id="undeprecate_activity_type"></a>
+
 ### undeprecate_activity_type
 
 Undeprecates a previously deprecated *activity type*.
@@ -898,6 +981,8 @@ Keyword-only arguments:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
+<a id="undeprecate_domain"></a>
+
 ### undeprecate_domain
 
 Undeprecates a previously deprecated domain.
@@ -913,6 +998,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `name`: `str` *(required)*
+
+<a id="undeprecate_workflow_type"></a>
 
 ### undeprecate_workflow_type
 
@@ -932,6 +1019,8 @@ Keyword-only arguments:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove a tag from a Amazon SWF domain.
@@ -948,6 +1037,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

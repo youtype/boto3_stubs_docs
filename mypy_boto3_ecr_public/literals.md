@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ecrpublic-module"></a>
+
 # Literals for boto3 ECRPublic module
 
 > [Index](..) > [ECRPublic](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECRPublic](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr-public.html#ECRPublic)
 type annotations stubs module
-[mypy_boto3_ecr_public](https://pypi.org/project/mypy-boto3-ecr-public/).
+[mypy-boto3-ecr-public](https://pypi.org/project/mypy-boto3-ecr-public/).
 
 - [Literals for boto3 ECRPublic module](#literals-for-boto3-ecrpublic-module)
   - [DescribeImageTagsPaginatorName](#describeimagetagspaginatorname)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describeimagetagspaginatorname"></a>
+
 ## DescribeImageTagsPaginatorName
 
 ```python
@@ -28,6 +32,8 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName
 Values:
 
 - `describe_image_tags`
+
+<a id="describeimagespaginatorname"></a>
 
 ## DescribeImagesPaginatorName
 
@@ -39,6 +45,8 @@ Values:
 
 - `describe_images`
 
+<a id="describeregistriespaginatorname"></a>
+
 ## DescribeRegistriesPaginatorName
 
 ```python
@@ -49,6 +57,8 @@ Values:
 
 - `describe_registries`
 
+<a id="describerepositoriespaginatorname"></a>
+
 ## DescribeRepositoriesPaginatorName
 
 ```python
@@ -58,6 +68,8 @@ from mypy_boto3_ecr_public.literals import DescribeRepositoriesPaginatorName
 Values:
 
 - `describe_repositories`
+
+<a id="imagefailurecodetype"></a>
 
 ## ImageFailureCodeType
 
@@ -75,6 +87,8 @@ Values:
 - `KmsError`
 - `MissingDigestAndTag`
 
+<a id="layeravailabilitytype"></a>
+
 ## LayerAvailabilityType
 
 ```python
@@ -85,6 +99,8 @@ Values:
 
 - `AVAILABLE`
 - `UNAVAILABLE`
+
+<a id="layerfailurecodetype"></a>
 
 ## LayerFailureCodeType
 
@@ -97,6 +113,8 @@ Values:
 - `InvalidLayerDigest`
 - `MissingLayerDigest`
 
+<a id="registryaliasstatustype"></a>
+
 ## RegistryAliasStatusType
 
 ```python
@@ -108,6 +126,8 @@ Values:
 - `ACTIVE`
 - `PENDING`
 - `REJECTED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -416,6 +436,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

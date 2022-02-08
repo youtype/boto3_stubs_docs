@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-s3-module"></a>
+
 # Paginators for boto3 S3 module
 
 > [Index](..) > [S3](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
 type annotations stubs module
-[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [Paginators for boto3 S3 module](#paginators-for-boto3-s3-module)
   - [ListMultipartUploadsPaginator](#listmultipartuploadspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListObjectsPaginator](#listobjectspaginator)
   - [ListObjectsV2Paginator](#listobjectsv2paginator)
   - [ListPartsPaginator](#listpartspaginator)
+
+<a id="listmultipartuploadspaginator"></a>
 
 ## ListMultipartUploadsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_s3.paginator import ListMultipartUploadsPaginator
 
 def get_list_multipart_uploads_paginator() -> ListMultipartUploadsPaginator:
-    return boto3.client("s3").get_paginator("list_multipart_uploads")
+    return Session().client("s3").get_paginator("list_multipart_uploads")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `ListMultipartUploadsPaginator.paginate` method:
 `ListMultipartUploadsPaginator.paginate` returns
 `_PageIterator`\[[ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef)\].
 
+<a id="listobjectversionspaginator"></a>
+
 ## ListObjectVersionsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_s3.paginator import ListObjectVersionsPaginator
 
 def get_list_object_versions_paginator() -> ListObjectVersionsPaginator:
-    return boto3.client("s3").get_paginator("list_object_versions")
+    return Session().client("s3").get_paginator("list_object_versions")
 ```
 
 Boto3 documentation:
@@ -76,6 +86,8 @@ Arguments for `ListObjectVersionsPaginator.paginate` method:
 `ListObjectVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef)\].
 
+<a id="listobjectspaginator"></a>
+
 ## ListObjectsPaginator
 
 Type annotations for `boto3.client("s3").get_paginator("list_objects")`.
@@ -83,10 +95,12 @@ Type annotations for `boto3.client("s3").get_paginator("list_objects")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_s3.paginator import ListObjectsPaginator
 
 def get_list_objects_paginator() -> ListObjectsPaginator:
-    return boto3.client("s3").get_paginator("list_objects")
+    return Session().client("s3").get_paginator("list_objects")
 ```
 
 Boto3 documentation:
@@ -108,6 +122,8 @@ Arguments for `ListObjectsPaginator.paginate` method:
 `ListObjectsPaginator.paginate` returns
 `_PageIterator`\[[ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef)\].
 
+<a id="listobjectsv2paginator"></a>
+
 ## ListObjectsV2Paginator
 
 Type annotations for `boto3.client("s3").get_paginator("list_objects_v2")`.
@@ -115,10 +131,12 @@ Type annotations for `boto3.client("s3").get_paginator("list_objects_v2")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_s3.paginator import ListObjectsV2Paginator
 
 def get_list_objects_v2_paginator() -> ListObjectsV2Paginator:
-    return boto3.client("s3").get_paginator("list_objects_v2")
+    return Session().client("s3").get_paginator("list_objects_v2")
 ```
 
 Boto3 documentation:
@@ -142,6 +160,8 @@ Arguments for `ListObjectsV2Paginator.paginate` method:
 `ListObjectsV2Paginator.paginate` returns
 `_PageIterator`\[[ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef)\].
 
+<a id="listpartspaginator"></a>
+
 ## ListPartsPaginator
 
 Type annotations for `boto3.client("s3").get_paginator("list_parts")`.
@@ -149,10 +169,12 @@ Type annotations for `boto3.client("s3").get_paginator("list_parts")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_s3.paginator import ListPartsPaginator
 
 def get_list_parts_paginator() -> ListPartsPaginator:
-    return boto3.client("s3").get_paginator("list_parts")
+    return Session().client("s3").get_paginator("list_parts")
 ```
 
 Boto3 documentation:

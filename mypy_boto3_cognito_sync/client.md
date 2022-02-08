@@ -1,3 +1,5 @@
+<a id="cognitosyncclient-for-boto3-cognitosync-module"></a>
+
 # CognitoSyncClient for boto3 CognitoSync module
 
 > [Index](..) > [CognitoSync](.) > CognitoSyncClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
-[mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+[mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 - [CognitoSyncClient for boto3 CognitoSync module](#cognitosyncclient-for-boto3-cognitosync-module)
   - [CognitoSyncClient](#cognitosyncclient)
@@ -32,6 +34,8 @@ type annotations stubs module
     - [unsubscribe_from_dataset](#unsubscribe_from_dataset)
     - [update_records](#update_records)
 
+<a id="cognitosyncclient"></a>
+
 ## CognitoSyncClient
 
 Type annotations for `boto3.client("cognito-sync")`
@@ -39,14 +43,17 @@ Type annotations for `boto3.client("cognito-sync")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
 
 def get_cognito-sync_client() -> CognitoSyncClient:
-    return boto3.client("cognito-sync")
+    return Session().client("cognito-sync")
 ```
 
 Boto3 documentation:
 [CognitoSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -77,7 +84,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -89,6 +100,8 @@ Boto3 documentation:
 [CognitoSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="bulk_publish"></a>
 
 ### bulk_publish
 
@@ -110,6 +123,8 @@ Keyword-only arguments:
 Returns
 [BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -124,6 +139,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_dataset"></a>
 
 ### delete_dataset
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 Returns
 [DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
+<a id="describe_dataset"></a>
+
 ### describe_dataset
 
 Gets meta data about a dataset by identity and dataset name.
@@ -167,6 +186,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
+<a id="describe_identity_pool_usage"></a>
+
 ### describe_identity_pool_usage
 
 Gets usage details (for example, data storage) about a particular identity
@@ -187,6 +208,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeIdentityPoolUsageResponseTypeDef](./type_defs.md#describeidentitypoolusageresponsetypedef).
+
+<a id="describe_identity_usage"></a>
 
 ### describe_identity_usage
 
@@ -210,6 +233,8 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityUsageResponseTypeDef](./type_defs.md#describeidentityusageresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -228,6 +253,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_bulk_publish_details"></a>
 
 ### get_bulk_publish_details
 
@@ -249,6 +276,8 @@ Keyword-only arguments:
 Returns
 [GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef).
 
+<a id="get_cognito_events"></a>
+
 ### get_cognito_events
 
 Gets the events and the corresponding Lambda functions associated with an
@@ -269,6 +298,8 @@ Keyword-only arguments:
 Returns
 [GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef).
 
+<a id="get_identity_pool_configuration"></a>
+
 ### get_identity_pool_configuration
 
 Gets the configuration settings of an identity pool.
@@ -288,6 +319,8 @@ Keyword-only arguments:
 
 Returns
 [GetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponsetypedef).
+
+<a id="list_datasets"></a>
 
 ### list_datasets
 
@@ -311,6 +344,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
+<a id="list_identity_pool_usage"></a>
+
 ### list_identity_pool_usage
 
 Gets a list of identity pools registered with Cognito.
@@ -331,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [ListIdentityPoolUsageResponseTypeDef](./type_defs.md#listidentitypoolusageresponsetypedef).
+
+<a id="list_records"></a>
 
 ### list_records
 
@@ -358,6 +395,8 @@ Keyword-only arguments:
 Returns
 [ListRecordsResponseTypeDef](./type_defs.md#listrecordsresponsetypedef).
 
+<a id="register_device"></a>
+
 ### register_device
 
 Registers a device to receive push sync notifications.
@@ -380,6 +419,8 @@ Keyword-only arguments:
 Returns
 [RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef).
 
+<a id="set_cognito_events"></a>
+
 ### set_cognito_events
 
 Sets the AWS Lambda function for a given event type for an identity pool.
@@ -396,6 +437,8 @@ Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 - `Events`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="set_identity_pool_configuration"></a>
 
 ### set_identity_pool_configuration
 
@@ -420,6 +463,8 @@ Keyword-only arguments:
 Returns
 [SetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponsetypedef).
 
+<a id="subscribe_to_dataset"></a>
+
 ### subscribe_to_dataset
 
 Subscribes to receive notifications when a dataset is modified by another
@@ -443,6 +488,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="unsubscribe_from_dataset"></a>
+
 ### unsubscribe_from_dataset
 
 Unsubscribes from receiving notifications when a dataset is modified by another
@@ -465,6 +512,8 @@ Keyword-only arguments:
 - `DeviceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_records"></a>
 
 ### update_records
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-directoryservice-module"></a>
+
 # Literals for boto3 DirectoryService module
 
 > [Index](..) > [DirectoryService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
 type annotations stubs module
-[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [Literals for boto3 DirectoryService module](#literals-for-boto3-directoryservice-module)
   - [CertificateStateType](#certificatestatetype)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="certificatestatetype"></a>
+
 ## CertificateStateType
 
 ```python
@@ -62,6 +66,8 @@ Values:
 - `RegisterFailed`
 - `Registering`
 
+<a id="certificatetypetype"></a>
+
 ## CertificateTypeType
 
 ```python
@@ -72,6 +78,8 @@ Values:
 
 - `ClientCertAuth`
 - `ClientLDAPS`
+
+<a id="clientauthenticationstatustype"></a>
 
 ## ClientAuthenticationStatusType
 
@@ -84,6 +92,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="clientauthenticationtypetype"></a>
+
 ## ClientAuthenticationTypeType
 
 ```python
@@ -93,6 +103,8 @@ from mypy_boto3_ds.literals import ClientAuthenticationTypeType
 Values:
 
 - `SmartCard`
+
+<a id="describedirectoriespaginatorname"></a>
 
 ## DescribeDirectoriesPaginatorName
 
@@ -104,6 +116,8 @@ Values:
 
 - `describe_directories`
 
+<a id="describedomaincontrollerspaginatorname"></a>
+
 ## DescribeDomainControllersPaginatorName
 
 ```python
@@ -113,6 +127,8 @@ from mypy_boto3_ds.literals import DescribeDomainControllersPaginatorName
 Values:
 
 - `describe_domain_controllers`
+
+<a id="describeshareddirectoriespaginatorname"></a>
 
 ## DescribeSharedDirectoriesPaginatorName
 
@@ -124,6 +140,8 @@ Values:
 
 - `describe_shared_directories`
 
+<a id="describesnapshotspaginatorname"></a>
+
 ## DescribeSnapshotsPaginatorName
 
 ```python
@@ -134,6 +152,8 @@ Values:
 
 - `describe_snapshots`
 
+<a id="describetrustspaginatorname"></a>
+
 ## DescribeTrustsPaginatorName
 
 ```python
@@ -143,6 +163,8 @@ from mypy_boto3_ds.literals import DescribeTrustsPaginatorName
 Values:
 
 - `describe_trusts`
+
+<a id="directoryeditiontype"></a>
 
 ## DirectoryEditionType
 
@@ -155,6 +177,8 @@ Values:
 - `Enterprise`
 - `Standard`
 
+<a id="directorysizetype"></a>
+
 ## DirectorySizeType
 
 ```python
@@ -165,6 +189,8 @@ Values:
 
 - `Large`
 - `Small`
+
+<a id="directorystagetype"></a>
 
 ## DirectoryStageType
 
@@ -186,6 +212,8 @@ Values:
 - `RestoreFailed`
 - `Restoring`
 
+<a id="directorytypetype"></a>
+
 ## DirectoryTypeType
 
 ```python
@@ -198,6 +226,8 @@ Values:
 - `MicrosoftAD`
 - `SharedMicrosoftAD`
 - `SimpleAD`
+
+<a id="domaincontrollerstatustype"></a>
 
 ## DomainControllerStatusType
 
@@ -215,6 +245,8 @@ Values:
 - `Impaired`
 - `Restoring`
 
+<a id="iproutestatusmsgtype"></a>
+
 ## IpRouteStatusMsgType
 
 ```python
@@ -230,6 +262,8 @@ Values:
 - `RemoveFailed`
 - `Removing`
 
+<a id="ldapsstatustype"></a>
+
 ## LDAPSStatusType
 
 ```python
@@ -243,6 +277,8 @@ Values:
 - `EnableFailed`
 - `Enabling`
 
+<a id="ldapstypetype"></a>
+
 ## LDAPSTypeType
 
 ```python
@@ -252,6 +288,8 @@ from mypy_boto3_ds.literals import LDAPSTypeType
 Values:
 
 - `Client`
+
+<a id="listiproutespaginatorname"></a>
 
 ## ListIpRoutesPaginatorName
 
@@ -263,6 +301,8 @@ Values:
 
 - `list_ip_routes`
 
+<a id="listlogsubscriptionspaginatorname"></a>
+
 ## ListLogSubscriptionsPaginatorName
 
 ```python
@@ -272,6 +312,8 @@ from mypy_boto3_ds.literals import ListLogSubscriptionsPaginatorName
 Values:
 
 - `list_log_subscriptions`
+
+<a id="listschemaextensionspaginatorname"></a>
 
 ## ListSchemaExtensionsPaginatorName
 
@@ -283,6 +325,8 @@ Values:
 
 - `list_schema_extensions`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -292,6 +336,8 @@ from mypy_boto3_ds.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="radiusauthenticationprotocoltype"></a>
 
 ## RadiusAuthenticationProtocolType
 
@@ -306,6 +352,8 @@ Values:
 - `MS-CHAPv2`
 - `PAP`
 
+<a id="radiusstatustype"></a>
+
 ## RadiusStatusType
 
 ```python
@@ -318,6 +366,8 @@ Values:
 - `Creating`
 - `Failed`
 
+<a id="regiontypetype"></a>
+
 ## RegionTypeType
 
 ```python
@@ -329,6 +379,8 @@ Values:
 - `Additional`
 - `Primary`
 
+<a id="replicationscopetype"></a>
+
 ## ReplicationScopeType
 
 ```python
@@ -338,6 +390,8 @@ from mypy_boto3_ds.literals import ReplicationScopeType
 Values:
 
 - `Domain`
+
+<a id="schemaextensionstatustype"></a>
 
 ## SchemaExtensionStatusType
 
@@ -357,6 +411,8 @@ Values:
 - `RollbackInProgress`
 - `UpdatingSchema`
 
+<a id="selectiveauthtype"></a>
+
 ## SelectiveAuthType
 
 ```python
@@ -368,6 +424,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="sharemethodtype"></a>
+
 ## ShareMethodType
 
 ```python
@@ -378,6 +436,8 @@ Values:
 
 - `HANDSHAKE`
 - `ORGANIZATIONS`
+
+<a id="sharestatustype"></a>
 
 ## ShareStatusType
 
@@ -397,6 +457,8 @@ Values:
 - `ShareFailed`
 - `Sharing`
 
+<a id="snapshotstatustype"></a>
+
 ## SnapshotStatusType
 
 ```python
@@ -409,6 +471,8 @@ Values:
 - `Creating`
 - `Failed`
 
+<a id="snapshottypetype"></a>
+
 ## SnapshotTypeType
 
 ```python
@@ -420,6 +484,8 @@ Values:
 - `Auto`
 - `Manual`
 
+<a id="targettypetype"></a>
+
 ## TargetTypeType
 
 ```python
@@ -429,6 +495,8 @@ from mypy_boto3_ds.literals import TargetTypeType
 Values:
 
 - `ACCOUNT`
+
+<a id="topicstatustype"></a>
 
 ## TopicStatusType
 
@@ -443,6 +511,8 @@ Values:
 - `Registered`
 - `Topic not found`
 
+<a id="trustdirectiontype"></a>
+
 ## TrustDirectionType
 
 ```python
@@ -454,6 +524,8 @@ Values:
 - `One-Way: Incoming`
 - `One-Way: Outgoing`
 - `Two-Way`
+
+<a id="truststatetype"></a>
 
 ## TrustStateType
 
@@ -475,6 +547,8 @@ Values:
 - `VerifyFailed`
 - `Verifying`
 
+<a id="trusttypetype"></a>
+
 ## TrustTypeType
 
 ```python
@@ -485,6 +559,8 @@ Values:
 
 - `External`
 - `Forest`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -793,6 +869,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-rds-module"></a>
+
 # Type annotations for boto3 RDS module
 
 > [Index](..) > RDS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
 type annotations stubs module
-[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[rds]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[rds]'
+
+# standalone installation
 pip install mypy-boto3-rds
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-rds
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="rdsclient"></a>
+
 ## RDSClient
 
 Type annotations for `boto3.client("rds")` as [RDSClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_rds.client import RDSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -180,6 +194,8 @@ from mypy_boto3_rds.client import RDSClient
 - [stop_db_instance](./client.md#stop_db_instance)
 - [stop_db_instance_automated_backups_replication](./client.md#stop_db_instance_automated_backups_replication)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 RDSClient [exceptions](./client.md#exceptions)
@@ -307,6 +323,8 @@ RDSClient [exceptions](./client.md#exceptions)
 - SubscriptionCategoryNotFoundFault
 - SubscriptionNotFoundFault
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -315,7 +333,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.paginators import DescribeCertificatesPaginator, ...
+from mypy_boto3_rds.paginator import DescribeCertificatesPaginator, ...
 ```
 
 - [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
@@ -355,6 +373,8 @@ from mypy_boto3_rds.paginators import DescribeCertificatesPaginator, ...
 - [DescribeSourceRegionsPaginator](./paginators.md#describesourceregionspaginator)
 - [DownloadDBLogFilePortionPaginator](./paginators.md#downloaddblogfileportionpaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -363,7 +383,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_rds.waiters import DBClusterSnapshotAvailableWaiter, ...
+from mypy_boto3_rds.waiter import DBClusterSnapshotAvailableWaiter, ...
 ```
 
 - [DBClusterSnapshotAvailableWaiter](./waiters.md#dbclustersnapshotavailablewaiter)
@@ -373,6 +393,8 @@ from mypy_boto3_rds.waiters import DBClusterSnapshotAvailableWaiter, ...
 - [DBSnapshotAvailableWaiter](./waiters.md#dbsnapshotavailablewaiter)
 - [DBSnapshotCompletedWaiter](./waiters.md#dbsnapshotcompletedwaiter)
 - [DBSnapshotDeletedWaiter](./waiters.md#dbsnapshotdeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -449,6 +471,8 @@ from mypy_boto3_rds.literals import ActivityStreamModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codegurureviewer-module"></a>
+
 # Typed dictionaries for boto3 CodeGuruReviewer module
 
 > [Index](..) > [CodeGuruReviewer](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
-[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [Typed dictionaries for boto3 CodeGuruReviewer module](#typed-dictionaries-for-boto3-codegurureviewer-module)
   - [AssociateRepositoryRequestRequestTypeDef](#associaterepositoryrequestrequesttypedef)
@@ -63,6 +65,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="associaterepositoryrequestrequesttypedef"></a>
+
 ## AssociateRepositoryRequestRequestTypeDef
 
 ```python
@@ -79,6 +83,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `KMSKeyDetails`: [KMSKeyDetailsTypeDef](./type_defs.md#kmskeydetailstypedef)
 
+<a id="associaterepositoryresponsetypedef"></a>
+
 ## AssociateRepositoryResponseTypeDef
 
 ```python
@@ -93,6 +99,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="branchdiffsourcecodetypetypedef"></a>
+
 ## BranchDiffSourceCodeTypeTypeDef
 
 ```python
@@ -103,6 +111,8 @@ Required fields:
 
 - `SourceBranchName`: `str`
 - `DestinationBranchName`: `str`
+
+<a id="codeartifactstypedef"></a>
 
 ## CodeArtifactsTypeDef
 
@@ -118,6 +128,8 @@ Optional fields:
 
 - `BuildArtifactsObjectKey`: `str`
 
+<a id="codecommitrepositorytypedef"></a>
+
 ## CodeCommitRepositoryTypeDef
 
 ```python
@@ -127,6 +139,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import CodeCommitRepositoryTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="codereviewsummarytypedef"></a>
 
 ## CodeReviewSummaryTypeDef
 
@@ -150,6 +164,8 @@ Optional fields:
   [MetricsSummaryTypeDef](./type_defs.md#metricssummarytypedef)
 - `SourceCodeType`:
   [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
+
+<a id="codereviewtypedef"></a>
 
 ## CodeReviewTypeDef
 
@@ -176,6 +192,8 @@ Optional fields:
 - `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
 - `AnalysisTypes`: `List`\[[AnalysisTypeType](./literals.md#analysistypetype)\]
 
+<a id="codereviewtypetypedef"></a>
+
 ## CodeReviewTypeTypeDef
 
 ```python
@@ -192,6 +210,8 @@ Optional fields:
 - `AnalysisTypes`:
   `Sequence`\[[AnalysisTypeType](./literals.md#analysistypetype)\]
 
+<a id="commitdiffsourcecodetypetypedef"></a>
+
 ## CommitDiffSourceCodeTypeTypeDef
 
 ```python
@@ -203,6 +223,8 @@ Optional fields:
 - `SourceCommit`: `str`
 - `DestinationCommit`: `str`
 - `MergeBaseCommit`: `str`
+
+<a id="createcodereviewrequestrequesttypedef"></a>
 
 ## CreateCodeReviewRequestRequestTypeDef
 
@@ -220,6 +242,8 @@ Optional fields:
 
 - `ClientRequestToken`: `str`
 
+<a id="createcodereviewresponsetypedef"></a>
+
 ## CreateCodeReviewResponseTypeDef
 
 ```python
@@ -232,6 +256,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecodereviewrequestrequesttypedef"></a>
+
 ## DescribeCodeReviewRequestRequestTypeDef
 
 ```python
@@ -241,6 +267,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import DescribeCodeReviewRequestRequ
 Required fields:
 
 - `CodeReviewArn`: `str`
+
+<a id="describecodereviewresponsetypedef"></a>
 
 ## DescribeCodeReviewResponseTypeDef
 
@@ -253,6 +281,8 @@ Required fields:
 - `CodeReview`: [CodeReviewTypeDef](./type_defs.md#codereviewtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describerecommendationfeedbackrequestrequesttypedef"></a>
 
 ## DescribeRecommendationFeedbackRequestRequestTypeDef
 
@@ -269,6 +299,8 @@ Optional fields:
 
 - `UserId`: `str`
 
+<a id="describerecommendationfeedbackresponsetypedef"></a>
+
 ## DescribeRecommendationFeedbackResponseTypeDef
 
 ```python
@@ -282,6 +314,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerepositoryassociationrequestrequesttypedef"></a>
+
 ## DescribeRepositoryAssociationRequestRequestTypeDef
 
 ```python
@@ -291,6 +325,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import DescribeRepositoryAssociation
 Required fields:
 
 - `AssociationArn`: `str`
+
+<a id="describerepositoryassociationresponsetypedef"></a>
 
 ## DescribeRepositoryAssociationResponseTypeDef
 
@@ -306,6 +342,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociaterepositoryrequestrequesttypedef"></a>
+
 ## DisassociateRepositoryRequestRequestTypeDef
 
 ```python
@@ -315,6 +353,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import DisassociateRepositoryRequest
 Required fields:
 
 - `AssociationArn`: `str`
+
+<a id="disassociaterepositoryresponsetypedef"></a>
 
 ## DisassociateRepositoryResponseTypeDef
 
@@ -330,6 +370,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="eventinfotypedef"></a>
+
 ## EventInfoTypeDef
 
 ```python
@@ -340,6 +382,8 @@ Optional fields:
 
 - `Name`: `str`
 - `State`: `str`
+
+<a id="kmskeydetailstypedef"></a>
 
 ## KMSKeyDetailsTypeDef
 
@@ -352,6 +396,8 @@ Optional fields:
 - `KMSKeyId`: `str`
 - `EncryptionOption`:
   [EncryptionOptionType](./literals.md#encryptionoptiontype)
+
+<a id="listcodereviewsrequestrequesttypedef"></a>
 
 ## ListCodeReviewsRequestRequestTypeDef
 
@@ -372,6 +418,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcodereviewsresponsetypedef"></a>
+
 ## ListCodeReviewsResponseTypeDef
 
 ```python
@@ -385,6 +433,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecommendationfeedbackrequestrequesttypedef"></a>
 
 ## ListRecommendationFeedbackRequestRequestTypeDef
 
@@ -403,6 +453,8 @@ Optional fields:
 - `UserIds`: `Sequence`\[`str`\]
 - `RecommendationIds`: `Sequence`\[`str`\]
 
+<a id="listrecommendationfeedbackresponsetypedef"></a>
+
 ## ListRecommendationFeedbackResponseTypeDef
 
 ```python
@@ -416,6 +468,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecommendationsrequestrequesttypedef"></a>
 
 ## ListRecommendationsRequestRequestTypeDef
 
@@ -432,6 +486,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listrecommendationsresponsetypedef"></a>
+
 ## ListRecommendationsResponseTypeDef
 
 ```python
@@ -445,6 +501,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrepositoryassociationsrequestrequesttypedef"></a>
 
 ## ListRepositoryAssociationsRequestRequestTypeDef
 
@@ -463,6 +521,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listrepositoryassociationsresponsetypedef"></a>
+
 ## ListRepositoryAssociationsResponseTypeDef
 
 ```python
@@ -477,6 +537,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -486,6 +548,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import ListTagsForResourceRequestReq
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -499,6 +563,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricssummarytypedef"></a>
+
 ## MetricsSummaryTypeDef
 
 ```python
@@ -510,6 +576,8 @@ Optional fields:
 - `MeteredLinesOfCodeCount`: `int`
 - `FindingsCount`: `int`
 
+<a id="metricstypedef"></a>
+
 ## MetricsTypeDef
 
 ```python
@@ -520,6 +588,8 @@ Optional fields:
 
 - `MeteredLinesOfCodeCount`: `int`
 - `FindingsCount`: `int`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -533,6 +603,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putrecommendationfeedbackrequestrequesttypedef"></a>
+
 ## PutRecommendationFeedbackRequestRequestTypeDef
 
 ```python
@@ -545,6 +617,8 @@ Required fields:
 - `RecommendationId`: `str`
 - `Reactions`: `Sequence`\[[ReactionType](./literals.md#reactiontype)\]
 
+<a id="recommendationfeedbacksummarytypedef"></a>
+
 ## RecommendationFeedbackSummaryTypeDef
 
 ```python
@@ -556,6 +630,8 @@ Optional fields:
 - `RecommendationId`: `str`
 - `Reactions`: `List`\[[ReactionType](./literals.md#reactiontype)\]
 - `UserId`: `str`
+
+<a id="recommendationfeedbacktypedef"></a>
 
 ## RecommendationFeedbackTypeDef
 
@@ -571,6 +647,8 @@ Optional fields:
 - `UserId`: `str`
 - `CreatedTimeStamp`: `datetime`
 - `LastUpdatedTimeStamp`: `datetime`
+
+<a id="recommendationsummarytypedef"></a>
 
 ## RecommendationSummaryTypeDef
 
@@ -590,6 +668,8 @@ Optional fields:
 - `RuleMetadata`: [RuleMetadataTypeDef](./type_defs.md#rulemetadatatypedef)
 - `Severity`: [SeverityType](./literals.md#severitytype)
 
+<a id="repositoryanalysistypedef"></a>
+
 ## RepositoryAnalysisTypeDef
 
 ```python
@@ -602,6 +682,8 @@ Optional fields:
   [RepositoryHeadSourceCodeTypeTypeDef](./type_defs.md#repositoryheadsourcecodetypetypedef)
 - `SourceCodeType`:
   [SourceCodeTypeTypeDef](./type_defs.md#sourcecodetypetypedef)
+
+<a id="repositoryassociationsummarytypedef"></a>
 
 ## RepositoryAssociationSummaryTypeDef
 
@@ -620,6 +702,8 @@ Optional fields:
 - `ProviderType`: [ProviderTypeType](./literals.md#providertypetype)
 - `State`:
   [RepositoryAssociationStateType](./literals.md#repositoryassociationstatetype)
+
+<a id="repositoryassociationtypedef"></a>
 
 ## RepositoryAssociationTypeDef
 
@@ -644,6 +728,8 @@ Optional fields:
 - `S3RepositoryDetails`:
   [S3RepositoryDetailsTypeDef](./type_defs.md#s3repositorydetailstypedef)
 
+<a id="repositoryheadsourcecodetypetypedef"></a>
+
 ## RepositoryHeadSourceCodeTypeTypeDef
 
 ```python
@@ -653,6 +739,8 @@ from mypy_boto3_codeguru_reviewer.type_defs import RepositoryHeadSourceCodeTypeT
 Required fields:
 
 - `BranchName`: `str`
+
+<a id="repositorytypedef"></a>
 
 ## RepositoryTypeDef
 
@@ -670,6 +758,8 @@ Optional fields:
   [ThirdPartySourceRepositoryTypeDef](./type_defs.md#thirdpartysourcerepositorytypedef)
 - `S3Bucket`: [S3RepositoryTypeDef](./type_defs.md#s3repositorytypedef)
 
+<a id="requestmetadatatypedef"></a>
+
 ## RequestMetadataTypeDef
 
 ```python
@@ -682,6 +772,8 @@ Optional fields:
 - `Requester`: `str`
 - `EventInfo`: [EventInfoTypeDef](./type_defs.md#eventinfotypedef)
 - `VendorName`: [VendorNameType](./literals.md#vendornametype)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -697,6 +789,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rulemetadatatypedef"></a>
+
 ## RuleMetadataTypeDef
 
 ```python
@@ -710,6 +804,8 @@ Optional fields:
 - `ShortDescription`: `str`
 - `LongDescription`: `str`
 - `RuleTags`: `List`\[`str`\]
+
+<a id="s3bucketrepositorytypedef"></a>
 
 ## S3BucketRepositoryTypeDef
 
@@ -726,6 +822,8 @@ Optional fields:
 - `Details`:
   [S3RepositoryDetailsTypeDef](./type_defs.md#s3repositorydetailstypedef)
 
+<a id="s3repositorydetailstypedef"></a>
+
 ## S3RepositoryDetailsTypeDef
 
 ```python
@@ -737,6 +835,8 @@ Optional fields:
 - `BucketName`: `str`
 - `CodeArtifacts`: [CodeArtifactsTypeDef](./type_defs.md#codeartifactstypedef)
 
+<a id="s3repositorytypedef"></a>
+
 ## S3RepositoryTypeDef
 
 ```python
@@ -747,6 +847,8 @@ Required fields:
 
 - `Name`: `str`
 - `BucketName`: `str`
+
+<a id="sourcecodetypetypedef"></a>
 
 ## SourceCodeTypeTypeDef
 
@@ -767,6 +869,8 @@ Optional fields:
 - `RequestMetadata`:
   [RequestMetadataTypeDef](./type_defs.md#requestmetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -777,6 +881,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="thirdpartysourcerepositorytypedef"></a>
 
 ## ThirdPartySourceRepositoryTypeDef
 
@@ -790,6 +896,8 @@ Required fields:
 - `ConnectionArn`: `str`
 - `Owner`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -800,6 +908,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

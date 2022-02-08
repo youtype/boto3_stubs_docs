@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lexmodelsv2-module"></a>
+
 # Type annotations for boto3 LexModelsV2 module
 
 > [Index](..) > LexModelsV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LexModelsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-models.html#LexModelsV2)
 type annotations stubs module
-[mypy_boto3_lexv2_models](https://pypi.org/project/mypy-boto3-lexv2-models/).
+[mypy-boto3-lexv2-models](https://pypi.org/project/mypy-boto3-lexv2-models/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lexv2-models]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lexv2-models]'
+
+# standalone installation
 pip install mypy-boto3-lexv2-models
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-lexv2-models
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="lexmodelsv2client"></a>
+
 ## LexModelsV2Client
 
 Type annotations for `boto3.client("lexv2-models")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lexv2_models.client import LexModelsV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -103,6 +117,8 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [update_slot](./client.md#update_slot)
 - [update_slot_type](./client.md#update_slot_type)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LexModelsV2Client [exceptions](./client.md#exceptions)
@@ -116,6 +132,8 @@ LexModelsV2Client [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -124,7 +142,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_models.waiters import BotAliasAvailableWaiter, ...
+from mypy_boto3_lexv2_models.waiter import BotAliasAvailableWaiter, ...
 ```
 
 - [BotAliasAvailableWaiter](./waiters.md#botaliasavailablewaiter)
@@ -135,6 +153,8 @@ from mypy_boto3_lexv2_models.waiters import BotAliasAvailableWaiter, ...
 - [BotLocaleCreatedWaiter](./waiters.md#botlocalecreatedwaiter)
 - [BotLocaleExpressTestingAvailableWaiter](./waiters.md#botlocaleexpresstestingavailablewaiter)
 - [BotVersionAvailableWaiter](./waiters.md#botversionavailablewaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -205,6 +225,8 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [VoiceEngineType](./literals.md#voiceenginetype)
 - [ServiceName](./literals.md#servicename)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

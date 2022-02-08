@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appsync-module"></a>
+
 # Literals for boto3 AppSync module
 
 > [Index](..) > [AppSync](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module
-[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+[mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [Literals for boto3 AppSync module](#literals-for-boto3-appsync-module)
   - [ApiCacheStatusType](#apicachestatustype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="apicachestatustype"></a>
+
 ## ApiCacheStatusType
 
 ```python
@@ -47,6 +51,8 @@ Values:
 - `DELETING`
 - `FAILED`
 - `MODIFYING`
+
+<a id="apicachetypetype"></a>
 
 ## ApiCacheTypeType
 
@@ -72,6 +78,8 @@ Values:
 - `T2_SMALL`
 - `XLARGE`
 
+<a id="apicachingbehaviortype"></a>
+
 ## ApiCachingBehaviorType
 
 ```python
@@ -82,6 +90,8 @@ Values:
 
 - `FULL_REQUEST_CACHING`
 - `PER_RESOLVER_CACHING`
+
+<a id="associationstatustype"></a>
 
 ## AssociationStatusType
 
@@ -94,6 +104,8 @@ Values:
 - `FAILED`
 - `PROCESSING`
 - `SUCCESS`
+
+<a id="authenticationtypetype"></a>
 
 ## AuthenticationTypeType
 
@@ -109,6 +121,8 @@ Values:
 - `AWS_LAMBDA`
 - `OPENID_CONNECT`
 
+<a id="authorizationtypetype"></a>
+
 ## AuthorizationTypeType
 
 ```python
@@ -118,6 +132,8 @@ from mypy_boto3_appsync.literals import AuthorizationTypeType
 Values:
 
 - `AWS_IAM`
+
+<a id="conflictdetectiontypetype"></a>
 
 ## ConflictDetectionTypeType
 
@@ -129,6 +145,8 @@ Values:
 
 - `NONE`
 - `VERSION`
+
+<a id="conflicthandlertypetype"></a>
 
 ## ConflictHandlerTypeType
 
@@ -142,6 +160,8 @@ Values:
 - `LAMBDA`
 - `NONE`
 - `OPTIMISTIC_CONCURRENCY`
+
+<a id="datasourcetypetype"></a>
 
 ## DataSourceTypeType
 
@@ -159,6 +179,8 @@ Values:
 - `NONE`
 - `RELATIONAL_DATABASE`
 
+<a id="defaultactiontype"></a>
+
 ## DefaultActionType
 
 ```python
@@ -169,6 +191,8 @@ Values:
 
 - `ALLOW`
 - `DENY`
+
+<a id="fieldlogleveltype"></a>
 
 ## FieldLogLevelType
 
@@ -182,6 +206,8 @@ Values:
 - `ERROR`
 - `NONE`
 
+<a id="listapikeyspaginatorname"></a>
+
 ## ListApiKeysPaginatorName
 
 ```python
@@ -191,6 +217,8 @@ from mypy_boto3_appsync.literals import ListApiKeysPaginatorName
 Values:
 
 - `list_api_keys`
+
+<a id="listdatasourcespaginatorname"></a>
 
 ## ListDataSourcesPaginatorName
 
@@ -202,6 +230,8 @@ Values:
 
 - `list_data_sources`
 
+<a id="listfunctionspaginatorname"></a>
+
 ## ListFunctionsPaginatorName
 
 ```python
@@ -211,6 +241,8 @@ from mypy_boto3_appsync.literals import ListFunctionsPaginatorName
 Values:
 
 - `list_functions`
+
+<a id="listgraphqlapispaginatorname"></a>
 
 ## ListGraphqlApisPaginatorName
 
@@ -222,6 +254,8 @@ Values:
 
 - `list_graphql_apis`
 
+<a id="listresolversbyfunctionpaginatorname"></a>
+
 ## ListResolversByFunctionPaginatorName
 
 ```python
@@ -231,6 +265,8 @@ from mypy_boto3_appsync.literals import ListResolversByFunctionPaginatorName
 Values:
 
 - `list_resolvers_by_function`
+
+<a id="listresolverspaginatorname"></a>
 
 ## ListResolversPaginatorName
 
@@ -242,6 +278,8 @@ Values:
 
 - `list_resolvers`
 
+<a id="listtypespaginatorname"></a>
+
 ## ListTypesPaginatorName
 
 ```python
@@ -251,6 +289,8 @@ from mypy_boto3_appsync.literals import ListTypesPaginatorName
 Values:
 
 - `list_types`
+
+<a id="outputtypetype"></a>
 
 ## OutputTypeType
 
@@ -263,6 +303,8 @@ Values:
 - `JSON`
 - `SDL`
 
+<a id="relationaldatabasesourcetypetype"></a>
+
 ## RelationalDatabaseSourceTypeType
 
 ```python
@@ -272,6 +314,8 @@ from mypy_boto3_appsync.literals import RelationalDatabaseSourceTypeType
 Values:
 
 - `RDS_HTTP_ENDPOINT`
+
+<a id="resolverkindtype"></a>
 
 ## ResolverKindType
 
@@ -283,6 +327,8 @@ Values:
 
 - `PIPELINE`
 - `UNIT`
+
+<a id="schemastatustype"></a>
 
 ## SchemaStatusType
 
@@ -299,6 +345,8 @@ Values:
 - `PROCESSING`
 - `SUCCESS`
 
+<a id="typedefinitionformattype"></a>
+
 ## TypeDefinitionFormatType
 
 ```python
@@ -309,6 +357,8 @@ Values:
 
 - `JSON`
 - `SDL`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -617,6 +667,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

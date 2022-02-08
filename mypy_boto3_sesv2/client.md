@@ -1,3 +1,5 @@
+<a id="sesv2client-for-boto3-sesv2-module"></a>
+
 # SESV2Client for boto3 SESV2 module
 
 > [Index](..) > [SESV2](.) > SESV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
 type annotations stubs module
-[mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+[mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 - [SESV2Client for boto3 SESV2 module](#sesv2client-for-boto3-sesv2-module)
   - [SESV2Client](#sesv2client)
@@ -96,6 +98,8 @@ type annotations stubs module
     - [update_email_identity_policy](#update_email_identity_policy)
     - [update_email_template](#update_email_template)
 
+<a id="sesv2client"></a>
+
 ## SESV2Client
 
 Type annotations for `boto3.client("sesv2")`
@@ -103,14 +107,17 @@ Type annotations for `boto3.client("sesv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sesv2.client import SESV2Client
 
 def get_sesv2_client() -> SESV2Client:
-    return boto3.client("sesv2")
+    return Session().client("sesv2")
 ```
 
 Boto3 documentation:
 [SESV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -140,7 +147,11 @@ Exceptions:
 - `Exceptions.SendingPausedException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -152,6 +163,8 @@ Boto3 documentation:
 [SESV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -167,6 +180,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_configuration_set"></a>
 
 ### create_configuration_set
 
@@ -197,6 +212,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_configuration_set_event_destination"></a>
+
 ### create_configuration_set_event_destination
 
 Create an event destination.
@@ -219,6 +236,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_contact"></a>
 
 ### create_contact
 
@@ -244,6 +263,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_contact_list"></a>
+
 ### create_contact_list
 
 Creates a contact list.
@@ -264,6 +285,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_custom_verification_email_template"></a>
 
 ### create_custom_verification_email_template
 
@@ -289,6 +312,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_dedicated_ip_pool"></a>
+
 ### create_dedicated_ip_pool
 
 Create a new pool of dedicated IP addresses.
@@ -307,6 +332,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_deliverability_test_report"></a>
 
 ### create_deliverability_test_report
 
@@ -332,6 +359,8 @@ Keyword-only arguments:
 Returns
 [CreateDeliverabilityTestReportResponseTypeDef](./type_defs.md#createdeliverabilitytestreportresponsetypedef).
 
+<a id="create_email_identity"></a>
+
 ### create_email_identity
 
 Starts the process of verifying an email identity.
@@ -355,6 +384,8 @@ Keyword-only arguments:
 Returns
 [CreateEmailIdentityResponseTypeDef](./type_defs.md#createemailidentityresponsetypedef).
 
+<a id="create_email_identity_policy"></a>
+
 ### create_email_identity_policy
 
 Creates the specified sending authorization policy for the given identity (an
@@ -377,6 +408,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_email_template"></a>
+
 ### create_email_template
 
 Creates an email template.
@@ -397,6 +430,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_import_job"></a>
 
 ### create_import_job
 
@@ -422,6 +457,8 @@ Keyword-only arguments:
 Returns
 [CreateImportJobResponseTypeDef](./type_defs.md#createimportjobresponsetypedef).
 
+<a id="delete_configuration_set"></a>
+
 ### delete_configuration_set
 
 Delete an existing configuration set.
@@ -439,6 +476,8 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_configuration_set_event_destination"></a>
 
 ### delete_configuration_set_event_destination
 
@@ -460,6 +499,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_contact"></a>
+
 ### delete_contact
 
 Removes a contact from a contact list.
@@ -479,6 +520,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_contact_list"></a>
+
 ### delete_contact_list
 
 Deletes a contact list and all of the contacts on that list.
@@ -496,6 +539,8 @@ Keyword-only arguments:
 - `ContactListName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_custom_verification_email_template"></a>
 
 ### delete_custom_verification_email_template
 
@@ -516,6 +561,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_dedicated_ip_pool"></a>
+
 ### delete_dedicated_ip_pool
 
 Delete a dedicated IP pool.
@@ -534,6 +581,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_email_identity"></a>
+
 ### delete_email_identity
 
 Deletes an email identity.
@@ -551,6 +600,8 @@ Keyword-only arguments:
 - `EmailIdentity`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_email_identity_policy"></a>
 
 ### delete_email_identity_policy
 
@@ -573,6 +624,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_email_template"></a>
+
 ### delete_email_template
 
 Deletes an email template.
@@ -590,6 +643,8 @@ Keyword-only arguments:
 - `TemplateName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_suppressed_destination"></a>
 
 ### delete_suppressed_destination
 
@@ -610,6 +665,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -628,6 +685,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account"></a>
+
 ### get_account
 
 Obtain information about the email-sending status and capabilities of your
@@ -639,6 +698,8 @@ Boto3 documentation:
 [SESV2.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2.Client.get_account)
 
 Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
+
+<a id="get_blacklist_reports"></a>
 
 ### get_blacklist_reports
 
@@ -658,6 +719,8 @@ Keyword-only arguments:
 
 Returns
 [GetBlacklistReportsResponseTypeDef](./type_defs.md#getblacklistreportsresponsetypedef).
+
+<a id="get_configuration_set"></a>
 
 ### get_configuration_set
 
@@ -680,6 +743,8 @@ Keyword-only arguments:
 Returns
 [GetConfigurationSetResponseTypeDef](./type_defs.md#getconfigurationsetresponsetypedef).
 
+<a id="get_configuration_set_event_destinations"></a>
+
 ### get_configuration_set_event_destinations
 
 Retrieve a list of event destinations that are associated with a configuration
@@ -701,6 +766,8 @@ Keyword-only arguments:
 Returns
 [GetConfigurationSetEventDestinationsResponseTypeDef](./type_defs.md#getconfigurationseteventdestinationsresponsetypedef).
 
+<a id="get_contact"></a>
+
 ### get_contact
 
 Returns a contact from a contact list.
@@ -720,6 +787,8 @@ Keyword-only arguments:
 
 Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
 
+<a id="get_contact_list"></a>
+
 ### get_contact_list
 
 Returns contact list metadata.
@@ -738,6 +807,8 @@ Keyword-only arguments:
 
 Returns
 [GetContactListResponseTypeDef](./type_defs.md#getcontactlistresponsetypedef).
+
+<a id="get_custom_verification_email_template"></a>
 
 ### get_custom_verification_email_template
 
@@ -760,6 +831,8 @@ Keyword-only arguments:
 Returns
 [GetCustomVerificationEmailTemplateResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponsetypedef).
 
+<a id="get_dedicated_ip"></a>
+
 ### get_dedicated_ip
 
 Get information about a dedicated IP address, including the name of the
@@ -780,6 +853,8 @@ Keyword-only arguments:
 
 Returns
 [GetDedicatedIpResponseTypeDef](./type_defs.md#getdedicatedipresponsetypedef).
+
+<a id="get_dedicated_ips"></a>
 
 ### get_dedicated_ips
 
@@ -803,6 +878,8 @@ Keyword-only arguments:
 Returns
 [GetDedicatedIpsResponseTypeDef](./type_defs.md#getdedicatedipsresponsetypedef).
 
+<a id="get_deliverability_dashboard_options"></a>
+
 ### get_deliverability_dashboard_options
 
 Retrieve information about the status of the Deliverability dashboard for your
@@ -816,6 +893,8 @@ Boto3 documentation:
 
 Returns
 [GetDeliverabilityDashboardOptionsResponseTypeDef](./type_defs.md#getdeliverabilitydashboardoptionsresponsetypedef).
+
+<a id="get_deliverability_test_report"></a>
 
 ### get_deliverability_test_report
 
@@ -837,6 +916,8 @@ Keyword-only arguments:
 Returns
 [GetDeliverabilityTestReportResponseTypeDef](./type_defs.md#getdeliverabilitytestreportresponsetypedef).
 
+<a id="get_domain_deliverability_campaign"></a>
+
 ### get_domain_deliverability_campaign
 
 Retrieve all the deliverability data for a specific campaign.
@@ -856,6 +937,8 @@ Keyword-only arguments:
 
 Returns
 [GetDomainDeliverabilityCampaignResponseTypeDef](./type_defs.md#getdomaindeliverabilitycampaignresponsetypedef).
+
+<a id="get_domain_statistics_report"></a>
 
 ### get_domain_statistics_report
 
@@ -880,6 +963,8 @@ Keyword-only arguments:
 Returns
 [GetDomainStatisticsReportResponseTypeDef](./type_defs.md#getdomainstatisticsreportresponsetypedef).
 
+<a id="get_email_identity"></a>
+
 ### get_email_identity
 
 Provides information about a specific identity, including the identity's
@@ -900,6 +985,8 @@ Keyword-only arguments:
 
 Returns
 [GetEmailIdentityResponseTypeDef](./type_defs.md#getemailidentityresponsetypedef).
+
+<a id="get_email_identity_policies"></a>
 
 ### get_email_identity_policies
 
@@ -922,6 +1009,8 @@ Keyword-only arguments:
 Returns
 [GetEmailIdentityPoliciesResponseTypeDef](./type_defs.md#getemailidentitypoliciesresponsetypedef).
 
+<a id="get_email_template"></a>
+
 ### get_email_template
 
 Displays the template object (which includes the subject line, HTML part and
@@ -942,6 +1031,8 @@ Keyword-only arguments:
 Returns
 [GetEmailTemplateResponseTypeDef](./type_defs.md#getemailtemplateresponsetypedef).
 
+<a id="get_import_job"></a>
+
 ### get_import_job
 
 Provides information about an import job.
@@ -960,6 +1051,8 @@ Keyword-only arguments:
 
 Returns
 [GetImportJobResponseTypeDef](./type_defs.md#getimportjobresponsetypedef).
+
+<a id="get_suppressed_destination"></a>
 
 ### get_suppressed_destination
 
@@ -980,6 +1073,8 @@ Keyword-only arguments:
 
 Returns
 [GetSuppressedDestinationResponseTypeDef](./type_defs.md#getsuppresseddestinationresponsetypedef).
+
+<a id="list_configuration_sets"></a>
 
 ### list_configuration_sets
 
@@ -1002,6 +1097,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
 
+<a id="list_contact_lists"></a>
+
 ### list_contact_lists
 
 Lists all of the contact lists available.
@@ -1021,6 +1118,8 @@ Keyword-only arguments:
 
 Returns
 [ListContactListsResponseTypeDef](./type_defs.md#listcontactlistsresponsetypedef).
+
+<a id="list_contacts"></a>
 
 ### list_contacts
 
@@ -1045,6 +1144,8 @@ Keyword-only arguments:
 Returns
 [ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
 
+<a id="list_custom_verification_email_templates"></a>
+
 ### list_custom_verification_email_templates
 
 Lists the existing custom verification email templates for your account in the
@@ -1067,6 +1168,8 @@ Keyword-only arguments:
 Returns
 [ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef).
 
+<a id="list_dedicated_ip_pools"></a>
+
 ### list_dedicated_ip_pools
 
 List all of the dedicated IP pools that exist in your Amazon Web Services
@@ -1087,6 +1190,8 @@ Keyword-only arguments:
 
 Returns
 [ListDedicatedIpPoolsResponseTypeDef](./type_defs.md#listdedicatedippoolsresponsetypedef).
+
+<a id="list_deliverability_test_reports"></a>
 
 ### list_deliverability_test_reports
 
@@ -1109,6 +1214,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeliverabilityTestReportsResponseTypeDef](./type_defs.md#listdeliverabilitytestreportsresponsetypedef).
+
+<a id="list_domain_deliverability_campaigns"></a>
 
 ### list_domain_deliverability_campaigns
 
@@ -1135,6 +1242,8 @@ Keyword-only arguments:
 Returns
 [ListDomainDeliverabilityCampaignsResponseTypeDef](./type_defs.md#listdomaindeliverabilitycampaignsresponsetypedef).
 
+<a id="list_email_identities"></a>
+
 ### list_email_identities
 
 Returns a list of all of the email identities that are associated with your
@@ -1155,6 +1264,8 @@ Keyword-only arguments:
 
 Returns
 [ListEmailIdentitiesResponseTypeDef](./type_defs.md#listemailidentitiesresponsetypedef).
+
+<a id="list_email_templates"></a>
 
 ### list_email_templates
 
@@ -1177,6 +1288,8 @@ Keyword-only arguments:
 Returns
 [ListEmailTemplatesResponseTypeDef](./type_defs.md#listemailtemplatesresponsetypedef).
 
+<a id="list_import_jobs"></a>
+
 ### list_import_jobs
 
 Lists all of the import jobs.
@@ -1198,6 +1311,8 @@ Keyword-only arguments:
 
 Returns
 [ListImportJobsResponseTypeDef](./type_defs.md#listimportjobsresponsetypedef).
+
+<a id="list_suppressed_destinations"></a>
 
 ### list_suppressed_destinations
 
@@ -1225,6 +1340,8 @@ Keyword-only arguments:
 Returns
 [ListSuppressedDestinationsResponseTypeDef](./type_defs.md#listsuppresseddestinationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieve a list of the tags (keys and values) that are associated with a
@@ -1245,6 +1362,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_account_dedicated_ip_warmup_attributes"></a>
+
 ### put_account_dedicated_ip_warmup_attributes
 
 Enable or disable the automatic warm-up feature for dedicated IP addresses.
@@ -1263,6 +1382,8 @@ Keyword-only arguments:
 - `AutoWarmupEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_account_details"></a>
 
 ### put_account_details
 
@@ -1287,6 +1408,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_account_sending_attributes"></a>
+
 ### put_account_sending_attributes
 
 Enable or disable the ability of your account to send email.
@@ -1305,6 +1428,8 @@ Keyword-only arguments:
 - `SendingEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_account_suppression_attributes"></a>
 
 ### put_account_suppression_attributes
 
@@ -1325,6 +1450,8 @@ Keyword-only arguments:
   `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_configuration_set_delivery_options"></a>
 
 ### put_configuration_set_delivery_options
 
@@ -1347,6 +1474,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_configuration_set_reputation_options"></a>
+
 ### put_configuration_set_reputation_options
 
 Enable or disable collection of reputation metrics for emails that you send
@@ -1367,6 +1496,8 @@ Keyword-only arguments:
 - `ReputationMetricsEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_configuration_set_sending_options"></a>
 
 ### put_configuration_set_sending_options
 
@@ -1389,6 +1520,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_configuration_set_suppression_options"></a>
+
 ### put_configuration_set_suppression_options
 
 Specify the account suppression list preferences for a configuration set.
@@ -1409,6 +1542,8 @@ Keyword-only arguments:
   `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_configuration_set_tracking_options"></a>
 
 ### put_configuration_set_tracking_options
 
@@ -1431,6 +1566,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_dedicated_ip_in_pool"></a>
+
 ### put_dedicated_ip_in_pool
 
 Move a dedicated IP address to an existing dedicated IP pool.
@@ -1449,6 +1586,8 @@ Keyword-only arguments:
 - `DestinationPoolName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_dedicated_ip_warmup_attributes"></a>
 
 ### put_dedicated_ip_warmup_attributes
 
@@ -1471,6 +1610,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_deliverability_dashboard_option"></a>
+
 ### put_deliverability_dashboard_option
 
 Enable or disable the Deliverability dashboard.
@@ -1492,6 +1633,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_email_identity_configuration_set_attributes"></a>
+
 ### put_email_identity_configuration_set_attributes
 
 Used to associate a configuration set with an email identity.
@@ -1512,6 +1655,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_email_identity_dkim_attributes"></a>
+
 ### put_email_identity_dkim_attributes
 
 Used to enable or disable DKIM authentication for an email identity.
@@ -1531,6 +1676,8 @@ Keyword-only arguments:
 - `SigningEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_email_identity_dkim_signing_attributes"></a>
 
 ### put_email_identity_dkim_signing_attributes
 
@@ -1558,6 +1705,8 @@ Keyword-only arguments:
 Returns
 [PutEmailIdentityDkimSigningAttributesResponseTypeDef](./type_defs.md#putemailidentitydkimsigningattributesresponsetypedef).
 
+<a id="put_email_identity_feedback_attributes"></a>
+
 ### put_email_identity_feedback_attributes
 
 Used to enable or disable feedback forwarding for an identity.
@@ -1577,6 +1726,8 @@ Keyword-only arguments:
 - `EmailForwardingEnabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_email_identity_mail_from_attributes"></a>
 
 ### put_email_identity_mail_from_attributes
 
@@ -1601,6 +1752,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_suppressed_destination"></a>
+
 ### put_suppressed_destination
 
 Adds an email address to the suppression list for your account.
@@ -1621,6 +1774,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_bulk_email"></a>
 
 ### send_bulk_email
 
@@ -1654,6 +1809,8 @@ Keyword-only arguments:
 Returns
 [SendBulkEmailResponseTypeDef](./type_defs.md#sendbulkemailresponsetypedef).
 
+<a id="send_custom_verification_email"></a>
+
 ### send_custom_verification_email
 
 Adds an email address to the list of identities for your Amazon SES account in
@@ -1676,6 +1833,8 @@ Keyword-only arguments:
 
 Returns
 [SendCustomVerificationEmailResponseTypeDef](./type_defs.md#sendcustomverificationemailresponsetypedef).
+
+<a id="send_email"></a>
 
 ### send_email
 
@@ -1707,6 +1866,8 @@ Keyword-only arguments:
 
 Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add one or more tags (keys and values) to a specified resource.
@@ -1725,6 +1886,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="test_render_email_template"></a>
 
 ### test_render_email_template
 
@@ -1747,6 +1910,8 @@ Keyword-only arguments:
 Returns
 [TestRenderEmailTemplateResponseTypeDef](./type_defs.md#testrenderemailtemplateresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove one or more tags (keys and values) from a specified resource.
@@ -1765,6 +1930,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_configuration_set_event_destination"></a>
 
 ### update_configuration_set_event_destination
 
@@ -1789,6 +1956,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_contact"></a>
+
 ### update_contact
 
 Updates a contact's preferences for a list.
@@ -1812,6 +1981,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_contact_list"></a>
+
 ### update_contact_list
 
 Updates contact list metadata.
@@ -1831,6 +2002,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_custom_verification_email_template"></a>
 
 ### update_custom_verification_email_template
 
@@ -1856,6 +2029,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_email_identity_policy"></a>
+
 ### update_email_identity_policy
 
 Updates the specified sending authorization policy for the given identity (an
@@ -1877,6 +2052,8 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_email_template"></a>
 
 ### update_email_template
 

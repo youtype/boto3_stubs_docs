@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-networkmanager-module"></a>
+
 # Typed dictionaries for boto3 NetworkManager module
 
 > [Index](..) > [NetworkManager](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NetworkManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/networkmanager.html#NetworkManager)
 type annotations stubs module
-[mypy_boto3_networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
+[mypy-boto3-networkmanager](https://pypi.org/project/mypy-boto3-networkmanager/).
 
 - [Typed dictionaries for boto3 NetworkManager module](#typed-dictionaries-for-boto3-networkmanager-module)
   - [AWSLocationTypeDef](#awslocationtypedef)
@@ -210,6 +212,8 @@ type annotations stubs module
   - [VpcAttachmentTypeDef](#vpcattachmenttypedef)
   - [VpcOptionsTypeDef](#vpcoptionstypedef)
 
+<a id="awslocationtypedef"></a>
+
 ## AWSLocationTypeDef
 
 ```python
@@ -221,6 +225,8 @@ Optional fields:
 - `Zone`: `str`
 - `SubnetArn`: `str`
 
+<a id="acceptattachmentrequestrequesttypedef"></a>
+
 ## AcceptAttachmentRequestRequestTypeDef
 
 ```python
@@ -230,6 +236,8 @@ from mypy_boto3_networkmanager.type_defs import AcceptAttachmentRequestRequestTy
 Required fields:
 
 - `AttachmentId`: `str`
+
+<a id="acceptattachmentresponsetypedef"></a>
 
 ## AcceptAttachmentResponseTypeDef
 
@@ -242,6 +250,8 @@ Required fields:
 - `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associateconnectpeerrequestrequesttypedef"></a>
 
 ## AssociateConnectPeerRequestRequestTypeDef
 
@@ -259,6 +269,8 @@ Optional fields:
 
 - `LinkId`: `str`
 
+<a id="associateconnectpeerresponsetypedef"></a>
+
 ## AssociateConnectPeerResponseTypeDef
 
 ```python
@@ -271,6 +283,8 @@ Required fields:
   [ConnectPeerAssociationTypeDef](./type_defs.md#connectpeerassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associatecustomergatewayrequestrequesttypedef"></a>
 
 ## AssociateCustomerGatewayRequestRequestTypeDef
 
@@ -288,6 +302,8 @@ Optional fields:
 
 - `LinkId`: `str`
 
+<a id="associatecustomergatewayresponsetypedef"></a>
+
 ## AssociateCustomerGatewayResponseTypeDef
 
 ```python
@@ -301,6 +317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatelinkrequestrequesttypedef"></a>
+
 ## AssociateLinkRequestRequestTypeDef
 
 ```python
@@ -312,6 +330,8 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `DeviceId`: `str`
 - `LinkId`: `str`
+
+<a id="associatelinkresponsetypedef"></a>
 
 ## AssociateLinkResponseTypeDef
 
@@ -325,6 +345,8 @@ Required fields:
   [LinkAssociationTypeDef](./type_defs.md#linkassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associatetransitgatewayconnectpeerrequestrequesttypedef"></a>
 
 ## AssociateTransitGatewayConnectPeerRequestRequestTypeDef
 
@@ -342,6 +364,8 @@ Optional fields:
 
 - `LinkId`: `str`
 
+<a id="associatetransitgatewayconnectpeerresponsetypedef"></a>
+
 ## AssociateTransitGatewayConnectPeerResponseTypeDef
 
 ```python
@@ -354,6 +378,8 @@ Required fields:
   [TransitGatewayConnectPeerAssociationTypeDef](./type_defs.md#transitgatewayconnectpeerassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="attachmenttypedef"></a>
 
 ## AttachmentTypeDef
 
@@ -379,6 +405,8 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `UpdatedAt`: `datetime`
 
+<a id="bandwidthtypedef"></a>
+
 ## BandwidthTypeDef
 
 ```python
@@ -390,6 +418,8 @@ Optional fields:
 - `UploadSpeed`: `int`
 - `DownloadSpeed`: `int`
 
+<a id="bgpoptionstypedef"></a>
+
 ## BgpOptionsTypeDef
 
 ```python
@@ -399,6 +429,8 @@ from mypy_boto3_networkmanager.type_defs import BgpOptionsTypeDef
 Optional fields:
 
 - `PeerAsn`: `int`
+
+<a id="connectattachmentoptionstypedef"></a>
 
 ## ConnectAttachmentOptionsTypeDef
 
@@ -410,6 +442,8 @@ Optional fields:
 
 - `Protocol`: `Literal['GRE']` (see
   [TunnelProtocolType](./literals.md#tunnelprotocoltype))
+
+<a id="connectattachmenttypedef"></a>
 
 ## ConnectAttachmentTypeDef
 
@@ -423,6 +457,8 @@ Optional fields:
 - `TransportAttachmentId`: `str`
 - `Options`:
   [ConnectAttachmentOptionsTypeDef](./type_defs.md#connectattachmentoptionstypedef)
+
+<a id="connectpeerassociationtypedef"></a>
 
 ## ConnectPeerAssociationTypeDef
 
@@ -439,6 +475,8 @@ Optional fields:
 - `State`:
   [ConnectPeerAssociationStateType](./literals.md#connectpeerassociationstatetype)
 
+<a id="connectpeerbgpconfigurationtypedef"></a>
+
 ## ConnectPeerBgpConfigurationTypeDef
 
 ```python
@@ -451,6 +489,8 @@ Optional fields:
 - `PeerAsn`: `int`
 - `CoreNetworkAddress`: `str`
 - `PeerAddress`: `str`
+
+<a id="connectpeerconfigurationtypedef"></a>
 
 ## ConnectPeerConfigurationTypeDef
 
@@ -468,6 +508,8 @@ Optional fields:
 - `BgpConfigurations`:
   `List`\[[ConnectPeerBgpConfigurationTypeDef](./type_defs.md#connectpeerbgpconfigurationtypedef)\]
 
+<a id="connectpeersummarytypedef"></a>
+
 ## ConnectPeerSummaryTypeDef
 
 ```python
@@ -484,6 +526,8 @@ Optional fields:
   [ConnectPeerStateType](./literals.md#connectpeerstatetype)
 - `CreatedAt`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="connectpeertypedef"></a>
 
 ## ConnectPeerTypeDef
 
@@ -503,6 +547,8 @@ Optional fields:
   [ConnectPeerConfigurationTypeDef](./type_defs.md#connectpeerconfigurationtypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="connectionhealthtypedef"></a>
+
 ## ConnectionHealthTypeDef
 
 ```python
@@ -514,6 +560,8 @@ Optional fields:
 - `Type`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `Status`: [ConnectionStatusType](./literals.md#connectionstatustype)
 - `Timestamp`: `datetime`
+
+<a id="connectiontypedef"></a>
 
 ## ConnectionTypeDef
 
@@ -535,6 +583,8 @@ Optional fields:
 - `State`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="corenetworkchangetypedef"></a>
+
 ## CoreNetworkChangeTypeDef
 
 ```python
@@ -550,6 +600,8 @@ Optional fields:
   [CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef)
 - `NewValues`:
   [CoreNetworkChangeValuesTypeDef](./type_defs.md#corenetworkchangevaluestypedef)
+
+<a id="corenetworkchangevaluestypedef"></a>
 
 ## CoreNetworkChangeValuesTypeDef
 
@@ -567,6 +619,8 @@ Optional fields:
 - `InsideCidrBlocks`: `List`\[`str`\]
 - `SharedSegments`: `List`\[`str`\]
 
+<a id="corenetworkedgetypedef"></a>
+
 ## CoreNetworkEdgeTypeDef
 
 ```python
@@ -578,6 +632,8 @@ Optional fields:
 - `EdgeLocation`: `str`
 - `Asn`: `int`
 - `InsideCidrBlocks`: `List`\[`str`\]
+
+<a id="corenetworkpolicyerrortypedef"></a>
 
 ## CoreNetworkPolicyErrorTypeDef
 
@@ -593,6 +649,8 @@ Required fields:
 Optional fields:
 
 - `Path`: `str`
+
+<a id="corenetworkpolicytypedef"></a>
 
 ## CoreNetworkPolicyTypeDef
 
@@ -613,6 +671,8 @@ Optional fields:
   `List`\[[CoreNetworkPolicyErrorTypeDef](./type_defs.md#corenetworkpolicyerrortypedef)\]
 - `PolicyDocument`: `str`
 
+<a id="corenetworkpolicyversiontypedef"></a>
+
 ## CoreNetworkPolicyVersionTypeDef
 
 ```python
@@ -629,6 +689,8 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `ChangeSetState`: [ChangeSetStateType](./literals.md#changesetstatetype)
 
+<a id="corenetworksegmentedgeidentifiertypedef"></a>
+
 ## CoreNetworkSegmentEdgeIdentifierTypeDef
 
 ```python
@@ -641,6 +703,8 @@ Optional fields:
 - `SegmentName`: `str`
 - `EdgeLocation`: `str`
 
+<a id="corenetworksegmenttypedef"></a>
+
 ## CoreNetworkSegmentTypeDef
 
 ```python
@@ -652,6 +716,8 @@ Optional fields:
 - `Name`: `str`
 - `EdgeLocations`: `List`\[`str`\]
 - `SharedSegments`: `List`\[`str`\]
+
+<a id="corenetworksummarytypedef"></a>
 
 ## CoreNetworkSummaryTypeDef
 
@@ -668,6 +734,8 @@ Optional fields:
 - `State`: [CoreNetworkStateType](./literals.md#corenetworkstatetype)
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="corenetworktypedef"></a>
 
 ## CoreNetworkTypeDef
 
@@ -689,6 +757,8 @@ Optional fields:
   `List`\[[CoreNetworkEdgeTypeDef](./type_defs.md#corenetworkedgetypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createconnectattachmentrequestrequesttypedef"></a>
+
 ## CreateConnectAttachmentRequestRequestTypeDef
 
 ```python
@@ -708,6 +778,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
+<a id="createconnectattachmentresponsetypedef"></a>
+
 ## CreateConnectAttachmentResponseTypeDef
 
 ```python
@@ -720,6 +792,8 @@ Required fields:
   [ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createconnectpeerrequestrequesttypedef"></a>
 
 ## CreateConnectPeerRequestRequestTypeDef
 
@@ -740,6 +814,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
+<a id="createconnectpeerresponsetypedef"></a>
+
 ## CreateConnectPeerResponseTypeDef
 
 ```python
@@ -751,6 +827,8 @@ Required fields:
 - `ConnectPeer`: [ConnectPeerTypeDef](./type_defs.md#connectpeertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createconnectionrequestrequesttypedef"></a>
 
 ## CreateConnectionRequestRequestTypeDef
 
@@ -771,6 +849,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createconnectionresponsetypedef"></a>
+
 ## CreateConnectionResponseTypeDef
 
 ```python
@@ -782,6 +862,8 @@ Required fields:
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcorenetworkrequestrequesttypedef"></a>
 
 ## CreateCoreNetworkRequestRequestTypeDef
 
@@ -800,6 +882,8 @@ Optional fields:
 - `PolicyDocument`: `str`
 - `ClientToken`: `str`
 
+<a id="createcorenetworkresponsetypedef"></a>
+
 ## CreateCoreNetworkResponseTypeDef
 
 ```python
@@ -811,6 +895,8 @@ Required fields:
 - `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdevicerequestrequesttypedef"></a>
 
 ## CreateDeviceRequestRequestTypeDef
 
@@ -834,6 +920,8 @@ Optional fields:
 - `SiteId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdeviceresponsetypedef"></a>
+
 ## CreateDeviceResponseTypeDef
 
 ```python
@@ -846,6 +934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createglobalnetworkrequestrequesttypedef"></a>
+
 ## CreateGlobalNetworkRequestRequestTypeDef
 
 ```python
@@ -856,6 +946,8 @@ Optional fields:
 
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createglobalnetworkresponsetypedef"></a>
 
 ## CreateGlobalNetworkResponseTypeDef
 
@@ -868,6 +960,8 @@ Required fields:
 - `GlobalNetwork`: [GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlinkrequestrequesttypedef"></a>
 
 ## CreateLinkRequestRequestTypeDef
 
@@ -888,6 +982,8 @@ Optional fields:
 - `Provider`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createlinkresponsetypedef"></a>
+
 ## CreateLinkResponseTypeDef
 
 ```python
@@ -899,6 +995,8 @@ Required fields:
 - `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsiterequestrequesttypedef"></a>
 
 ## CreateSiteRequestRequestTypeDef
 
@@ -916,6 +1014,8 @@ Optional fields:
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createsiteresponsetypedef"></a>
+
 ## CreateSiteResponseTypeDef
 
 ```python
@@ -927,6 +1027,8 @@ Required fields:
 - `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsitetositevpnattachmentrequestrequesttypedef"></a>
 
 ## CreateSiteToSiteVpnAttachmentRequestRequestTypeDef
 
@@ -944,6 +1046,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
+<a id="createsitetositevpnattachmentresponsetypedef"></a>
+
 ## CreateSiteToSiteVpnAttachmentResponseTypeDef
 
 ```python
@@ -956,6 +1060,8 @@ Required fields:
   [SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createvpcattachmentrequestrequesttypedef"></a>
 
 ## CreateVpcAttachmentRequestRequestTypeDef
 
@@ -975,6 +1081,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ClientToken`: `str`
 
+<a id="createvpcattachmentresponsetypedef"></a>
+
 ## CreateVpcAttachmentResponseTypeDef
 
 ```python
@@ -986,6 +1094,8 @@ Required fields:
 - `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customergatewayassociationtypedef"></a>
 
 ## CustomerGatewayAssociationTypeDef
 
@@ -1002,6 +1112,8 @@ Optional fields:
 - `State`:
   [CustomerGatewayAssociationStateType](./literals.md#customergatewayassociationstatetype)
 
+<a id="deleteattachmentrequestrequesttypedef"></a>
+
 ## DeleteAttachmentRequestRequestTypeDef
 
 ```python
@@ -1011,6 +1123,8 @@ from mypy_boto3_networkmanager.type_defs import DeleteAttachmentRequestRequestTy
 Required fields:
 
 - `AttachmentId`: `str`
+
+<a id="deleteattachmentresponsetypedef"></a>
 
 ## DeleteAttachmentResponseTypeDef
 
@@ -1024,6 +1138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconnectpeerrequestrequesttypedef"></a>
+
 ## DeleteConnectPeerRequestRequestTypeDef
 
 ```python
@@ -1033,6 +1149,8 @@ from mypy_boto3_networkmanager.type_defs import DeleteConnectPeerRequestRequestT
 Required fields:
 
 - `ConnectPeerId`: `str`
+
+<a id="deleteconnectpeerresponsetypedef"></a>
 
 ## DeleteConnectPeerResponseTypeDef
 
@@ -1046,6 +1164,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconnectionrequestrequesttypedef"></a>
+
 ## DeleteConnectionRequestRequestTypeDef
 
 ```python
@@ -1056,6 +1176,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `ConnectionId`: `str`
+
+<a id="deleteconnectionresponsetypedef"></a>
 
 ## DeleteConnectionResponseTypeDef
 
@@ -1069,6 +1191,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecorenetworkpolicyversionrequestrequesttypedef"></a>
+
 ## DeleteCoreNetworkPolicyVersionRequestRequestTypeDef
 
 ```python
@@ -1079,6 +1203,8 @@ Required fields:
 
 - `CoreNetworkId`: `str`
 - `PolicyVersionId`: `int`
+
+<a id="deletecorenetworkpolicyversionresponsetypedef"></a>
 
 ## DeleteCoreNetworkPolicyVersionResponseTypeDef
 
@@ -1093,6 +1219,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecorenetworkrequestrequesttypedef"></a>
+
 ## DeleteCoreNetworkRequestRequestTypeDef
 
 ```python
@@ -1102,6 +1230,8 @@ from mypy_boto3_networkmanager.type_defs import DeleteCoreNetworkRequestRequestT
 Required fields:
 
 - `CoreNetworkId`: `str`
+
+<a id="deletecorenetworkresponsetypedef"></a>
 
 ## DeleteCoreNetworkResponseTypeDef
 
@@ -1115,6 +1245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedevicerequestrequesttypedef"></a>
+
 ## DeleteDeviceRequestRequestTypeDef
 
 ```python
@@ -1125,6 +1257,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `DeviceId`: `str`
+
+<a id="deletedeviceresponsetypedef"></a>
 
 ## DeleteDeviceResponseTypeDef
 
@@ -1138,6 +1272,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteglobalnetworkrequestrequesttypedef"></a>
+
 ## DeleteGlobalNetworkRequestRequestTypeDef
 
 ```python
@@ -1147,6 +1283,8 @@ from mypy_boto3_networkmanager.type_defs import DeleteGlobalNetworkRequestReques
 Required fields:
 
 - `GlobalNetworkId`: `str`
+
+<a id="deleteglobalnetworkresponsetypedef"></a>
 
 ## DeleteGlobalNetworkResponseTypeDef
 
@@ -1160,6 +1298,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletelinkrequestrequesttypedef"></a>
+
 ## DeleteLinkRequestRequestTypeDef
 
 ```python
@@ -1170,6 +1310,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `LinkId`: `str`
+
+<a id="deletelinkresponsetypedef"></a>
 
 ## DeleteLinkResponseTypeDef
 
@@ -1183,6 +1325,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -1192,6 +1336,8 @@ from mypy_boto3_networkmanager.type_defs import DeleteResourcePolicyRequestReque
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="deletesiterequestrequesttypedef"></a>
 
 ## DeleteSiteRequestRequestTypeDef
 
@@ -1203,6 +1349,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `SiteId`: `str`
+
+<a id="deletesiteresponsetypedef"></a>
 
 ## DeleteSiteResponseTypeDef
 
@@ -1216,6 +1364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deregistertransitgatewayrequestrequesttypedef"></a>
+
 ## DeregisterTransitGatewayRequestRequestTypeDef
 
 ```python
@@ -1226,6 +1376,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `TransitGatewayArn`: `str`
+
+<a id="deregistertransitgatewayresponsetypedef"></a>
 
 ## DeregisterTransitGatewayResponseTypeDef
 
@@ -1240,6 +1392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeglobalnetworksrequestrequesttypedef"></a>
+
 ## DescribeGlobalNetworksRequestRequestTypeDef
 
 ```python
@@ -1251,6 +1405,8 @@ Optional fields:
 - `GlobalNetworkIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeglobalnetworksresponsetypedef"></a>
 
 ## DescribeGlobalNetworksResponseTypeDef
 
@@ -1265,6 +1421,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="devicetypedef"></a>
 
 ## DeviceTypeDef
 
@@ -1289,6 +1447,8 @@ Optional fields:
 - `State`: [DeviceStateType](./literals.md#devicestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="disassociateconnectpeerrequestrequesttypedef"></a>
+
 ## DisassociateConnectPeerRequestRequestTypeDef
 
 ```python
@@ -1299,6 +1459,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `ConnectPeerId`: `str`
+
+<a id="disassociateconnectpeerresponsetypedef"></a>
 
 ## DisassociateConnectPeerResponseTypeDef
 
@@ -1313,6 +1475,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatecustomergatewayrequestrequesttypedef"></a>
+
 ## DisassociateCustomerGatewayRequestRequestTypeDef
 
 ```python
@@ -1323,6 +1487,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `CustomerGatewayArn`: `str`
+
+<a id="disassociatecustomergatewayresponsetypedef"></a>
 
 ## DisassociateCustomerGatewayResponseTypeDef
 
@@ -1337,6 +1503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatelinkrequestrequesttypedef"></a>
+
 ## DisassociateLinkRequestRequestTypeDef
 
 ```python
@@ -1348,6 +1516,8 @@ Required fields:
 - `GlobalNetworkId`: `str`
 - `DeviceId`: `str`
 - `LinkId`: `str`
+
+<a id="disassociatelinkresponsetypedef"></a>
 
 ## DisassociateLinkResponseTypeDef
 
@@ -1362,6 +1532,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatetransitgatewayconnectpeerrequestrequesttypedef"></a>
+
 ## DisassociateTransitGatewayConnectPeerRequestRequestTypeDef
 
 ```python
@@ -1372,6 +1544,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `TransitGatewayConnectPeerArn`: `str`
+
+<a id="disassociatetransitgatewayconnectpeerresponsetypedef"></a>
 
 ## DisassociateTransitGatewayConnectPeerResponseTypeDef
 
@@ -1386,6 +1560,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="executecorenetworkchangesetrequestrequesttypedef"></a>
+
 ## ExecuteCoreNetworkChangeSetRequestRequestTypeDef
 
 ```python
@@ -1397,6 +1573,8 @@ Required fields:
 - `CoreNetworkId`: `str`
 - `PolicyVersionId`: `int`
 
+<a id="getconnectattachmentrequestrequesttypedef"></a>
+
 ## GetConnectAttachmentRequestRequestTypeDef
 
 ```python
@@ -1406,6 +1584,8 @@ from mypy_boto3_networkmanager.type_defs import GetConnectAttachmentRequestReque
 Required fields:
 
 - `AttachmentId`: `str`
+
+<a id="getconnectattachmentresponsetypedef"></a>
 
 ## GetConnectAttachmentResponseTypeDef
 
@@ -1419,6 +1599,8 @@ Required fields:
   [ConnectAttachmentTypeDef](./type_defs.md#connectattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getconnectpeerassociationsrequestrequesttypedef"></a>
 
 ## GetConnectPeerAssociationsRequestRequestTypeDef
 
@@ -1436,6 +1618,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getconnectpeerassociationsresponsetypedef"></a>
+
 ## GetConnectPeerAssociationsResponseTypeDef
 
 ```python
@@ -1450,6 +1634,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectpeerrequestrequesttypedef"></a>
+
 ## GetConnectPeerRequestRequestTypeDef
 
 ```python
@@ -1459,6 +1645,8 @@ from mypy_boto3_networkmanager.type_defs import GetConnectPeerRequestRequestType
 Required fields:
 
 - `ConnectPeerId`: `str`
+
+<a id="getconnectpeerresponsetypedef"></a>
 
 ## GetConnectPeerResponseTypeDef
 
@@ -1471,6 +1659,8 @@ Required fields:
 - `ConnectPeer`: [ConnectPeerTypeDef](./type_defs.md#connectpeertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getconnectionsrequestrequesttypedef"></a>
 
 ## GetConnectionsRequestRequestTypeDef
 
@@ -1489,6 +1679,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getconnectionsresponsetypedef"></a>
+
 ## GetConnectionsResponseTypeDef
 
 ```python
@@ -1502,6 +1694,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcorenetworkchangesetrequestrequesttypedef"></a>
 
 ## GetCoreNetworkChangeSetRequestRequestTypeDef
 
@@ -1519,6 +1713,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getcorenetworkchangesetresponsetypedef"></a>
+
 ## GetCoreNetworkChangeSetResponseTypeDef
 
 ```python
@@ -1532,6 +1728,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcorenetworkpolicyrequestrequesttypedef"></a>
 
 ## GetCoreNetworkPolicyRequestRequestTypeDef
 
@@ -1549,6 +1747,8 @@ Optional fields:
 - `Alias`:
   [CoreNetworkPolicyAliasType](./literals.md#corenetworkpolicyaliastype)
 
+<a id="getcorenetworkpolicyresponsetypedef"></a>
+
 ## GetCoreNetworkPolicyResponseTypeDef
 
 ```python
@@ -1562,6 +1762,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcorenetworkrequestrequesttypedef"></a>
+
 ## GetCoreNetworkRequestRequestTypeDef
 
 ```python
@@ -1571,6 +1773,8 @@ from mypy_boto3_networkmanager.type_defs import GetCoreNetworkRequestRequestType
 Required fields:
 
 - `CoreNetworkId`: `str`
+
+<a id="getcorenetworkresponsetypedef"></a>
 
 ## GetCoreNetworkResponseTypeDef
 
@@ -1583,6 +1787,8 @@ Required fields:
 - `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcustomergatewayassociationsrequestrequesttypedef"></a>
 
 ## GetCustomerGatewayAssociationsRequestRequestTypeDef
 
@@ -1600,6 +1806,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getcustomergatewayassociationsresponsetypedef"></a>
+
 ## GetCustomerGatewayAssociationsResponseTypeDef
 
 ```python
@@ -1613,6 +1821,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdevicesrequestrequesttypedef"></a>
 
 ## GetDevicesRequestRequestTypeDef
 
@@ -1631,6 +1841,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getdevicesresponsetypedef"></a>
+
 ## GetDevicesResponseTypeDef
 
 ```python
@@ -1643,6 +1855,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlinkassociationsrequestrequesttypedef"></a>
 
 ## GetLinkAssociationsRequestRequestTypeDef
 
@@ -1661,6 +1875,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getlinkassociationsresponsetypedef"></a>
+
 ## GetLinkAssociationsResponseTypeDef
 
 ```python
@@ -1674,6 +1890,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlinksrequestrequesttypedef"></a>
 
 ## GetLinksRequestRequestTypeDef
 
@@ -1694,6 +1912,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getlinksresponsetypedef"></a>
+
 ## GetLinksResponseTypeDef
 
 ```python
@@ -1706,6 +1926,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnetworkresourcecountsrequestrequesttypedef"></a>
 
 ## GetNetworkResourceCountsRequestRequestTypeDef
 
@@ -1723,6 +1945,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getnetworkresourcecountsresponsetypedef"></a>
+
 ## GetNetworkResourceCountsResponseTypeDef
 
 ```python
@@ -1736,6 +1960,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnetworkresourcerelationshipsrequestrequesttypedef"></a>
 
 ## GetNetworkResourceRelationshipsRequestRequestTypeDef
 
@@ -1758,6 +1984,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getnetworkresourcerelationshipsresponsetypedef"></a>
+
 ## GetNetworkResourceRelationshipsResponseTypeDef
 
 ```python
@@ -1771,6 +1999,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnetworkresourcesrequestrequesttypedef"></a>
 
 ## GetNetworkResourcesRequestRequestTypeDef
 
@@ -1793,6 +2023,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getnetworkresourcesresponsetypedef"></a>
+
 ## GetNetworkResourcesResponseTypeDef
 
 ```python
@@ -1806,6 +2038,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnetworkroutesrequestrequesttypedef"></a>
 
 ## GetNetworkRoutesRequestRequestTypeDef
 
@@ -1830,6 +2064,8 @@ Optional fields:
 - `Types`: `Sequence`\[[RouteTypeType](./literals.md#routetypetype)\]
 - `DestinationFilters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
+<a id="getnetworkroutesresponsetypedef"></a>
+
 ## GetNetworkRoutesResponseTypeDef
 
 ```python
@@ -1847,6 +2083,8 @@ Required fields:
   `List`\[[NetworkRouteTypeDef](./type_defs.md#networkroutetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getnetworktelemetryrequestrequesttypedef"></a>
 
 ## GetNetworkTelemetryRequestRequestTypeDef
 
@@ -1869,6 +2107,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getnetworktelemetryresponsetypedef"></a>
+
 ## GetNetworkTelemetryResponseTypeDef
 
 ```python
@@ -1883,6 +2123,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcepolicyrequestrequesttypedef"></a>
+
 ## GetResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -1892,6 +2134,8 @@ from mypy_boto3_networkmanager.type_defs import GetResourcePolicyRequestRequestT
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="getresourcepolicyresponsetypedef"></a>
 
 ## GetResourcePolicyResponseTypeDef
 
@@ -1905,6 +2149,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrouteanalysisrequestrequesttypedef"></a>
+
 ## GetRouteAnalysisRequestRequestTypeDef
 
 ```python
@@ -1915,6 +2161,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `RouteAnalysisId`: `str`
+
+<a id="getrouteanalysisresponsetypedef"></a>
 
 ## GetRouteAnalysisResponseTypeDef
 
@@ -1928,6 +2176,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsitetositevpnattachmentrequestrequesttypedef"></a>
+
 ## GetSiteToSiteVpnAttachmentRequestRequestTypeDef
 
 ```python
@@ -1937,6 +2187,8 @@ from mypy_boto3_networkmanager.type_defs import GetSiteToSiteVpnAttachmentReques
 Required fields:
 
 - `AttachmentId`: `str`
+
+<a id="getsitetositevpnattachmentresponsetypedef"></a>
 
 ## GetSiteToSiteVpnAttachmentResponseTypeDef
 
@@ -1950,6 +2202,8 @@ Required fields:
   [SiteToSiteVpnAttachmentTypeDef](./type_defs.md#sitetositevpnattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsitesrequestrequesttypedef"></a>
 
 ## GetSitesRequestRequestTypeDef
 
@@ -1967,6 +2221,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getsitesresponsetypedef"></a>
+
 ## GetSitesResponseTypeDef
 
 ```python
@@ -1979,6 +2235,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettransitgatewayconnectpeerassociationsrequestrequesttypedef"></a>
 
 ## GetTransitGatewayConnectPeerAssociationsRequestRequestTypeDef
 
@@ -1996,6 +2254,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="gettransitgatewayconnectpeerassociationsresponsetypedef"></a>
+
 ## GetTransitGatewayConnectPeerAssociationsResponseTypeDef
 
 ```python
@@ -2009,6 +2269,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettransitgatewayregistrationsrequestrequesttypedef"></a>
 
 ## GetTransitGatewayRegistrationsRequestRequestTypeDef
 
@@ -2026,6 +2288,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="gettransitgatewayregistrationsresponsetypedef"></a>
+
 ## GetTransitGatewayRegistrationsResponseTypeDef
 
 ```python
@@ -2040,6 +2304,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvpcattachmentrequestrequesttypedef"></a>
+
 ## GetVpcAttachmentRequestRequestTypeDef
 
 ```python
@@ -2049,6 +2315,8 @@ from mypy_boto3_networkmanager.type_defs import GetVpcAttachmentRequestRequestTy
 Required fields:
 
 - `AttachmentId`: `str`
+
+<a id="getvpcattachmentresponsetypedef"></a>
 
 ## GetVpcAttachmentResponseTypeDef
 
@@ -2061,6 +2329,8 @@ Required fields:
 - `VpcAttachment`: [VpcAttachmentTypeDef](./type_defs.md#vpcattachmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="globalnetworktypedef"></a>
 
 ## GlobalNetworkTypeDef
 
@@ -2077,6 +2347,8 @@ Optional fields:
 - `State`: [GlobalNetworkStateType](./literals.md#globalnetworkstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="linkassociationtypedef"></a>
+
 ## LinkAssociationTypeDef
 
 ```python
@@ -2090,6 +2362,8 @@ Optional fields:
 - `LinkId`: `str`
 - `LinkAssociationState`:
   [LinkAssociationStateType](./literals.md#linkassociationstatetype)
+
+<a id="linktypedef"></a>
 
 ## LinkTypeDef
 
@@ -2111,6 +2385,8 @@ Optional fields:
 - `State`: [LinkStateType](./literals.md#linkstatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="listattachmentsrequestrequesttypedef"></a>
+
 ## ListAttachmentsRequestRequestTypeDef
 
 ```python
@@ -2126,6 +2402,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listattachmentsresponsetypedef"></a>
+
 ## ListAttachmentsResponseTypeDef
 
 ```python
@@ -2140,6 +2418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listconnectpeersrequestrequesttypedef"></a>
+
 ## ListConnectPeersRequestRequestTypeDef
 
 ```python
@@ -2152,6 +2432,8 @@ Optional fields:
 - `ConnectAttachmentId`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listconnectpeersresponsetypedef"></a>
 
 ## ListConnectPeersResponseTypeDef
 
@@ -2166,6 +2448,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcorenetworkpolicyversionsrequestrequesttypedef"></a>
 
 ## ListCoreNetworkPolicyVersionsRequestRequestTypeDef
 
@@ -2182,6 +2466,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcorenetworkpolicyversionsresponsetypedef"></a>
+
 ## ListCoreNetworkPolicyVersionsResponseTypeDef
 
 ```python
@@ -2196,6 +2482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcorenetworksrequestrequesttypedef"></a>
+
 ## ListCoreNetworksRequestRequestTypeDef
 
 ```python
@@ -2206,6 +2494,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listcorenetworksresponsetypedef"></a>
 
 ## ListCoreNetworksResponseTypeDef
 
@@ -2221,6 +2511,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2230,6 +2522,8 @@ from mypy_boto3_networkmanager.type_defs import ListTagsForResourceRequestReques
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2243,6 +2537,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="locationtypedef"></a>
+
 ## LocationTypeDef
 
 ```python
@@ -2255,6 +2551,8 @@ Optional fields:
 - `Latitude`: `str`
 - `Longitude`: `str`
 
+<a id="networkresourcecounttypedef"></a>
+
 ## NetworkResourceCountTypeDef
 
 ```python
@@ -2265,6 +2563,8 @@ Optional fields:
 
 - `ResourceType`: `str`
 - `Count`: `int`
+
+<a id="networkresourcesummarytypedef"></a>
 
 ## NetworkResourceSummaryTypeDef
 
@@ -2280,6 +2580,8 @@ Optional fields:
 - `Definition`: `str`
 - `NameTag`: `str`
 - `IsMiddlebox`: `bool`
+
+<a id="networkresourcetypedef"></a>
 
 ## NetworkResourceTypeDef
 
@@ -2301,6 +2603,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Metadata`: `Dict`\[`str`, `str`\]
 
+<a id="networkroutedestinationtypedef"></a>
+
 ## NetworkRouteDestinationTypeDef
 
 ```python
@@ -2316,6 +2620,8 @@ Optional fields:
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 
+<a id="networkroutetypedef"></a>
+
 ## NetworkRouteTypeDef
 
 ```python
@@ -2330,6 +2636,8 @@ Optional fields:
 - `PrefixListId`: `str`
 - `State`: [RouteStateType](./literals.md#routestatetype)
 - `Type`: [RouteTypeType](./literals.md#routetypetype)
+
+<a id="networktelemetrytypedef"></a>
 
 ## NetworkTelemetryTypeDef
 
@@ -2349,6 +2657,8 @@ Optional fields:
 - `Address`: `str`
 - `Health`: [ConnectionHealthTypeDef](./type_defs.md#connectionhealthtypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2360,6 +2670,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pathcomponenttypedef"></a>
 
 ## PathComponentTypeDef
 
@@ -2374,6 +2686,8 @@ Optional fields:
   [NetworkResourceSummaryTypeDef](./type_defs.md#networkresourcesummarytypedef)
 - `DestinationCidrBlock`: `str`
 
+<a id="proposedsegmentchangetypedef"></a>
+
 ## ProposedSegmentChangeTypeDef
 
 ```python
@@ -2385,6 +2699,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AttachmentPolicyRuleNumber`: `int`
 - `SegmentName`: `str`
+
+<a id="putcorenetworkpolicyrequestrequesttypedef"></a>
 
 ## PutCoreNetworkPolicyRequestRequestTypeDef
 
@@ -2403,6 +2719,8 @@ Optional fields:
 - `LatestVersionId`: `int`
 - `ClientToken`: `str`
 
+<a id="putcorenetworkpolicyresponsetypedef"></a>
+
 ## PutCoreNetworkPolicyResponseTypeDef
 
 ```python
@@ -2416,6 +2734,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putresourcepolicyrequestrequesttypedef"></a>
+
 ## PutResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -2427,6 +2747,8 @@ Required fields:
 - `PolicyDocument`: `str`
 - `ResourceArn`: `str`
 
+<a id="registertransitgatewayrequestrequesttypedef"></a>
+
 ## RegisterTransitGatewayRequestRequestTypeDef
 
 ```python
@@ -2437,6 +2759,8 @@ Required fields:
 
 - `GlobalNetworkId`: `str`
 - `TransitGatewayArn`: `str`
+
+<a id="registertransitgatewayresponsetypedef"></a>
 
 ## RegisterTransitGatewayResponseTypeDef
 
@@ -2451,6 +2775,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rejectattachmentrequestrequesttypedef"></a>
+
 ## RejectAttachmentRequestRequestTypeDef
 
 ```python
@@ -2460,6 +2786,8 @@ from mypy_boto3_networkmanager.type_defs import RejectAttachmentRequestRequestTy
 Required fields:
 
 - `AttachmentId`: `str`
+
+<a id="rejectattachmentresponsetypedef"></a>
 
 ## RejectAttachmentResponseTypeDef
 
@@ -2473,6 +2801,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="relationshiptypedef"></a>
+
 ## RelationshipTypeDef
 
 ```python
@@ -2483,6 +2813,8 @@ Optional fields:
 
 - `From`: `str`
 - `To`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2498,6 +2830,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restorecorenetworkpolicyversionrequestrequesttypedef"></a>
+
 ## RestoreCoreNetworkPolicyVersionRequestRequestTypeDef
 
 ```python
@@ -2508,6 +2842,8 @@ Required fields:
 
 - `CoreNetworkId`: `str`
 - `PolicyVersionId`: `int`
+
+<a id="restorecorenetworkpolicyversionresponsetypedef"></a>
 
 ## RestoreCoreNetworkPolicyVersionResponseTypeDef
 
@@ -2521,6 +2857,8 @@ Required fields:
   [CoreNetworkPolicyTypeDef](./type_defs.md#corenetworkpolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="routeanalysiscompletiontypedef"></a>
 
 ## RouteAnalysisCompletionTypeDef
 
@@ -2536,6 +2874,8 @@ Optional fields:
   [RouteAnalysisCompletionReasonCodeType](./literals.md#routeanalysiscompletionreasoncodetype)
 - `ReasonContext`: `Dict`\[`str`, `str`\]
 
+<a id="routeanalysisendpointoptionsspecificationtypedef"></a>
+
 ## RouteAnalysisEndpointOptionsSpecificationTypeDef
 
 ```python
@@ -2546,6 +2886,8 @@ Optional fields:
 
 - `TransitGatewayAttachmentArn`: `str`
 - `IpAddress`: `str`
+
+<a id="routeanalysisendpointoptionstypedef"></a>
 
 ## RouteAnalysisEndpointOptionsTypeDef
 
@@ -2559,6 +2901,8 @@ Optional fields:
 - `TransitGatewayArn`: `str`
 - `IpAddress`: `str`
 
+<a id="routeanalysispathtypedef"></a>
+
 ## RouteAnalysisPathTypeDef
 
 ```python
@@ -2570,6 +2914,8 @@ Optional fields:
 - `CompletionStatus`:
   [RouteAnalysisCompletionTypeDef](./type_defs.md#routeanalysiscompletiontypedef)
 - `Path`: `List`\[[PathComponentTypeDef](./type_defs.md#pathcomponenttypedef)\]
+
+<a id="routeanalysistypedef"></a>
 
 ## RouteAnalysisTypeDef
 
@@ -2595,6 +2941,8 @@ Optional fields:
 - `ReturnPath`:
   [RouteAnalysisPathTypeDef](./type_defs.md#routeanalysispathtypedef)
 
+<a id="routetableidentifiertypedef"></a>
+
 ## RouteTableIdentifierTypeDef
 
 ```python
@@ -2607,6 +2955,8 @@ Optional fields:
 - `CoreNetworkSegmentEdge`:
   [CoreNetworkSegmentEdgeIdentifierTypeDef](./type_defs.md#corenetworksegmentedgeidentifiertypedef)
 
+<a id="sitetositevpnattachmenttypedef"></a>
+
 ## SiteToSiteVpnAttachmentTypeDef
 
 ```python
@@ -2617,6 +2967,8 @@ Optional fields:
 
 - `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `VpnConnectionArn`: `str`
+
+<a id="sitetypedef"></a>
 
 ## SiteTypeDef
 
@@ -2634,6 +2986,8 @@ Optional fields:
 - `CreatedAt`: `datetime`
 - `State`: [SiteStateType](./literals.md#sitestatetype)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="startrouteanalysisrequestrequesttypedef"></a>
 
 ## StartRouteAnalysisRequestRequestTypeDef
 
@@ -2654,6 +3008,8 @@ Optional fields:
 - `IncludeReturnPath`: `bool`
 - `UseMiddleboxes`: `bool`
 
+<a id="startrouteanalysisresponsetypedef"></a>
+
 ## StartRouteAnalysisResponseTypeDef
 
 ```python
@@ -2666,6 +3022,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2677,6 +3035,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2687,6 +3047,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="transitgatewayconnectpeerassociationtypedef"></a>
 
 ## TransitGatewayConnectPeerAssociationTypeDef
 
@@ -2703,6 +3065,8 @@ Optional fields:
 - `State`:
   [TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype)
 
+<a id="transitgatewayregistrationstatereasontypedef"></a>
+
 ## TransitGatewayRegistrationStateReasonTypeDef
 
 ```python
@@ -2714,6 +3078,8 @@ Optional fields:
 - `Code`:
   [TransitGatewayRegistrationStateType](./literals.md#transitgatewayregistrationstatetype)
 - `Message`: `str`
+
+<a id="transitgatewayregistrationtypedef"></a>
 
 ## TransitGatewayRegistrationTypeDef
 
@@ -2728,6 +3094,8 @@ Optional fields:
 - `State`:
   [TransitGatewayRegistrationStateReasonTypeDef](./type_defs.md#transitgatewayregistrationstatereasontypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2738,6 +3106,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateconnectionrequestrequesttypedef"></a>
 
 ## UpdateConnectionRequestRequestTypeDef
 
@@ -2756,6 +3126,8 @@ Optional fields:
 - `ConnectedLinkId`: `str`
 - `Description`: `str`
 
+<a id="updateconnectionresponsetypedef"></a>
+
 ## UpdateConnectionResponseTypeDef
 
 ```python
@@ -2767,6 +3139,8 @@ Required fields:
 - `Connection`: [ConnectionTypeDef](./type_defs.md#connectiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecorenetworkrequestrequesttypedef"></a>
 
 ## UpdateCoreNetworkRequestRequestTypeDef
 
@@ -2782,6 +3156,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updatecorenetworkresponsetypedef"></a>
+
 ## UpdateCoreNetworkResponseTypeDef
 
 ```python
@@ -2793,6 +3169,8 @@ Required fields:
 - `CoreNetwork`: [CoreNetworkTypeDef](./type_defs.md#corenetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedevicerequestrequesttypedef"></a>
 
 ## UpdateDeviceRequestRequestTypeDef
 
@@ -2816,6 +3194,8 @@ Optional fields:
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `SiteId`: `str`
 
+<a id="updatedeviceresponsetypedef"></a>
+
 ## UpdateDeviceResponseTypeDef
 
 ```python
@@ -2827,6 +3207,8 @@ Required fields:
 - `Device`: [DeviceTypeDef](./type_defs.md#devicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateglobalnetworkrequestrequesttypedef"></a>
 
 ## UpdateGlobalNetworkRequestRequestTypeDef
 
@@ -2842,6 +3224,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updateglobalnetworkresponsetypedef"></a>
+
 ## UpdateGlobalNetworkResponseTypeDef
 
 ```python
@@ -2853,6 +3237,8 @@ Required fields:
 - `GlobalNetwork`: [GlobalNetworkTypeDef](./type_defs.md#globalnetworktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatelinkrequestrequesttypedef"></a>
 
 ## UpdateLinkRequestRequestTypeDef
 
@@ -2872,6 +3258,8 @@ Optional fields:
 - `Bandwidth`: [BandwidthTypeDef](./type_defs.md#bandwidthtypedef)
 - `Provider`: `str`
 
+<a id="updatelinkresponsetypedef"></a>
+
 ## UpdateLinkResponseTypeDef
 
 ```python
@@ -2883,6 +3271,8 @@ Required fields:
 - `Link`: [LinkTypeDef](./type_defs.md#linktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatenetworkresourcemetadatarequestrequesttypedef"></a>
 
 ## UpdateNetworkResourceMetadataRequestRequestTypeDef
 
@@ -2896,6 +3286,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Metadata`: `Mapping`\[`str`, `str`\]
 
+<a id="updatenetworkresourcemetadataresponsetypedef"></a>
+
 ## UpdateNetworkResourceMetadataResponseTypeDef
 
 ```python
@@ -2908,6 +3300,8 @@ Required fields:
 - `Metadata`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesiterequestrequesttypedef"></a>
 
 ## UpdateSiteRequestRequestTypeDef
 
@@ -2925,6 +3319,8 @@ Optional fields:
 - `Description`: `str`
 - `Location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 
+<a id="updatesiteresponsetypedef"></a>
+
 ## UpdateSiteResponseTypeDef
 
 ```python
@@ -2936,6 +3332,8 @@ Required fields:
 - `Site`: [SiteTypeDef](./type_defs.md#sitetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatevpcattachmentrequestrequesttypedef"></a>
 
 ## UpdateVpcAttachmentRequestRequestTypeDef
 
@@ -2953,6 +3351,8 @@ Optional fields:
 - `RemoveSubnetArns`: `Sequence`\[`str`\]
 - `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
 
+<a id="updatevpcattachmentresponsetypedef"></a>
+
 ## UpdateVpcAttachmentResponseTypeDef
 
 ```python
@@ -2965,6 +3365,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="vpcattachmenttypedef"></a>
+
 ## VpcAttachmentTypeDef
 
 ```python
@@ -2976,6 +3378,8 @@ Optional fields:
 - `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `SubnetArns`: `List`\[`str`\]
 - `Options`: [VpcOptionsTypeDef](./type_defs.md#vpcoptionstypedef)
+
+<a id="vpcoptionstypedef"></a>
 
 ## VpcOptionsTypeDef
 

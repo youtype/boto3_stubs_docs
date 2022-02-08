@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appstream-module"></a>
+
 # Literals for boto3 AppStream module
 
 > [Index](..) > [AppStream](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppStream](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream)
 type annotations stubs module
-[mypy_boto3_appstream](https://pypi.org/project/mypy-boto3-appstream/).
+[mypy-boto3-appstream](https://pypi.org/project/mypy-boto3-appstream/).
 
 - [Literals for boto3 AppStream module](#literals-for-boto3-appstream-module)
   - [AccessEndpointTypeType](#accessendpointtypetype)
@@ -50,6 +52,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="accessendpointtypetype"></a>
+
 ## AccessEndpointTypeType
 
 ```python
@@ -59,6 +63,8 @@ from mypy_boto3_appstream.literals import AccessEndpointTypeType
 Values:
 
 - `STREAMING`
+
+<a id="actiontype"></a>
 
 ## ActionType
 
@@ -76,6 +82,8 @@ Values:
 - `FILE_UPLOAD`
 - `PRINTING_TO_LOCAL_DEVICE`
 
+<a id="appvisibilitytype"></a>
+
 ## AppVisibilityType
 
 ```python
@@ -87,6 +95,8 @@ Values:
 - `ALL`
 - `ASSOCIATED`
 
+<a id="applicationattributetype"></a>
+
 ## ApplicationAttributeType
 
 ```python
@@ -97,6 +107,8 @@ Values:
 
 - `LAUNCH_PARAMETERS`
 - `WORKING_DIRECTORY`
+
+<a id="authenticationtypetype"></a>
 
 ## AuthenticationTypeType
 
@@ -110,6 +122,8 @@ Values:
 - `SAML`
 - `USERPOOL`
 
+<a id="describedirectoryconfigspaginatorname"></a>
+
 ## DescribeDirectoryConfigsPaginatorName
 
 ```python
@@ -119,6 +133,8 @@ from mypy_boto3_appstream.literals import DescribeDirectoryConfigsPaginatorName
 Values:
 
 - `describe_directory_configs`
+
+<a id="describefleetspaginatorname"></a>
 
 ## DescribeFleetsPaginatorName
 
@@ -130,6 +146,8 @@ Values:
 
 - `describe_fleets`
 
+<a id="describeimagebuilderspaginatorname"></a>
+
 ## DescribeImageBuildersPaginatorName
 
 ```python
@@ -139,6 +157,8 @@ from mypy_boto3_appstream.literals import DescribeImageBuildersPaginatorName
 Values:
 
 - `describe_image_builders`
+
+<a id="describeimagespaginatorname"></a>
 
 ## DescribeImagesPaginatorName
 
@@ -150,6 +170,8 @@ Values:
 
 - `describe_images`
 
+<a id="describesessionspaginatorname"></a>
+
 ## DescribeSessionsPaginatorName
 
 ```python
@@ -159,6 +181,8 @@ from mypy_boto3_appstream.literals import DescribeSessionsPaginatorName
 Values:
 
 - `describe_sessions`
+
+<a id="describestackspaginatorname"></a>
 
 ## DescribeStacksPaginatorName
 
@@ -170,6 +194,8 @@ Values:
 
 - `describe_stacks`
 
+<a id="describeuserstackassociationspaginatorname"></a>
+
 ## DescribeUserStackAssociationsPaginatorName
 
 ```python
@@ -180,6 +206,8 @@ Values:
 
 - `describe_user_stack_associations`
 
+<a id="describeuserspaginatorname"></a>
+
 ## DescribeUsersPaginatorName
 
 ```python
@@ -189,6 +217,8 @@ from mypy_boto3_appstream.literals import DescribeUsersPaginatorName
 Values:
 
 - `describe_users`
+
+<a id="fleetattributetype"></a>
 
 ## FleetAttributeType
 
@@ -203,6 +233,8 @@ Values:
 - `USB_DEVICE_FILTER_STRINGS`
 - `VPC_CONFIGURATION`
 - `VPC_CONFIGURATION_SECURITY_GROUP_IDS`
+
+<a id="fleeterrorcodetype"></a>
 
 ## FleetErrorCodeType
 
@@ -243,6 +275,8 @@ Values:
 - `SUBNET_HAS_INSUFFICIENT_IP_ADDRESSES`
 - `SUBNET_NOT_FOUND`
 
+<a id="fleetstartedwaitername"></a>
+
 ## FleetStartedWaiterName
 
 ```python
@@ -252,6 +286,8 @@ from mypy_boto3_appstream.literals import FleetStartedWaiterName
 Values:
 
 - `fleet_started`
+
+<a id="fleetstatetype"></a>
 
 ## FleetStateType
 
@@ -266,6 +302,8 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
+<a id="fleetstoppedwaitername"></a>
+
 ## FleetStoppedWaiterName
 
 ```python
@@ -275,6 +313,8 @@ from mypy_boto3_appstream.literals import FleetStoppedWaiterName
 Values:
 
 - `fleet_stopped`
+
+<a id="fleettypetype"></a>
 
 ## FleetTypeType
 
@@ -288,6 +328,8 @@ Values:
 - `ELASTIC`
 - `ON_DEMAND`
 
+<a id="imagebuilderstatechangereasoncodetype"></a>
+
 ## ImageBuilderStateChangeReasonCodeType
 
 ```python
@@ -298,6 +340,8 @@ Values:
 
 - `IMAGE_UNAVAILABLE`
 - `INTERNAL_ERROR`
+
+<a id="imagebuilderstatetype"></a>
 
 ## ImageBuilderStateType
 
@@ -319,6 +363,8 @@ Values:
 - `UPDATING`
 - `UPDATING_AGENT`
 
+<a id="imagestatechangereasoncodetype"></a>
+
 ## ImageStateChangeReasonCodeType
 
 ```python
@@ -330,6 +376,8 @@ Values:
 - `IMAGE_BUILDER_NOT_AVAILABLE`
 - `IMAGE_COPY_FAILURE`
 - `INTERNAL_ERROR`
+
+<a id="imagestatetype"></a>
 
 ## ImageStateType
 
@@ -347,6 +395,8 @@ Values:
 - `IMPORTING`
 - `PENDING`
 
+<a id="listassociatedfleetspaginatorname"></a>
+
 ## ListAssociatedFleetsPaginatorName
 
 ```python
@@ -357,6 +407,8 @@ Values:
 
 - `list_associated_fleets`
 
+<a id="listassociatedstackspaginatorname"></a>
+
 ## ListAssociatedStacksPaginatorName
 
 ```python
@@ -366,6 +418,8 @@ from mypy_boto3_appstream.literals import ListAssociatedStacksPaginatorName
 Values:
 
 - `list_associated_stacks`
+
+<a id="messageactiontype"></a>
 
 ## MessageActionType
 
@@ -378,6 +432,8 @@ Values:
 - `RESEND`
 - `SUPPRESS`
 
+<a id="permissiontype"></a>
+
 ## PermissionType
 
 ```python
@@ -388,6 +444,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="platformtypetype"></a>
 
 ## PlatformTypeType
 
@@ -402,6 +460,8 @@ Values:
 - `WINDOWS_SERVER_2016`
 - `WINDOWS_SERVER_2019`
 
+<a id="sessionconnectionstatetype"></a>
+
 ## SessionConnectionStateType
 
 ```python
@@ -412,6 +472,8 @@ Values:
 
 - `CONNECTED`
 - `NOT_CONNECTED`
+
+<a id="sessionstatetype"></a>
 
 ## SessionStateType
 
@@ -424,6 +486,8 @@ Values:
 - `ACTIVE`
 - `EXPIRED`
 - `PENDING`
+
+<a id="stackattributetype"></a>
 
 ## StackAttributeType
 
@@ -445,6 +509,8 @@ Values:
 - `THEME_NAME`
 - `USER_SETTINGS`
 
+<a id="stackerrorcodetype"></a>
+
 ## StackErrorCodeType
 
 ```python
@@ -455,6 +521,8 @@ Values:
 
 - `INTERNAL_SERVICE_ERROR`
 - `STORAGE_CONNECTOR_ERROR`
+
+<a id="storageconnectortypetype"></a>
 
 ## StorageConnectorTypeType
 
@@ -468,6 +536,8 @@ Values:
 - `HOMEFOLDERS`
 - `ONE_DRIVE`
 
+<a id="streamviewtype"></a>
+
 ## StreamViewType
 
 ```python
@@ -478,6 +548,8 @@ Values:
 
 - `APP`
 - `DESKTOP`
+
+<a id="usagereportexecutionerrorcodetype"></a>
 
 ## UsageReportExecutionErrorCodeType
 
@@ -491,6 +563,8 @@ Values:
 - `INTERNAL_SERVICE_ERROR`
 - `RESOURCE_NOT_FOUND`
 
+<a id="usagereportscheduletype"></a>
+
 ## UsageReportScheduleType
 
 ```python
@@ -500,6 +574,8 @@ from mypy_boto3_appstream.literals import UsageReportScheduleType
 Values:
 
 - `DAILY`
+
+<a id="userstackassociationerrorcodetype"></a>
 
 ## UserStackAssociationErrorCodeType
 
@@ -514,6 +590,8 @@ Values:
 - `STACK_NOT_FOUND`
 - `USER_NAME_NOT_FOUND`
 
+<a id="visibilitytypetype"></a>
+
 ## VisibilityTypeType
 
 ```python
@@ -525,6 +603,8 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 - `SHARED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -834,6 +914,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -852,6 +934,8 @@ Values:
 - `describe_users`
 - `list_associated_fleets`
 - `list_associated_stacks`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

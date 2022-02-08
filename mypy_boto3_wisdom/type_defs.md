@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-connectwisdomservice-module"></a>
+
 # Typed dictionaries for boto3 ConnectWisdomService module
 
 > [Index](..) > [ConnectWisdomService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
 type annotations stubs module
-[mypy_boto3_wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 - [Typed dictionaries for boto3 ConnectWisdomService module](#typed-dictionaries-for-boto3-connectwisdomservice-module)
   - [AppIntegrationsConfigurationTypeDef](#appintegrationsconfigurationtypedef)
@@ -92,6 +94,8 @@ type annotations stubs module
   - [UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef](#updateknowledgebasetemplateurirequestrequesttypedef)
   - [UpdateKnowledgeBaseTemplateUriResponseTypeDef](#updateknowledgebasetemplateuriresponsetypedef)
 
+<a id="appintegrationsconfigurationtypedef"></a>
+
 ## AppIntegrationsConfigurationTypeDef
 
 ```python
@@ -102,6 +106,8 @@ Required fields:
 
 - `appIntegrationArn`: `str`
 - `objectFields`: `Sequence`\[`str`\]
+
+<a id="assistantassociationdatatypedef"></a>
 
 ## AssistantAssociationDataTypeDef
 
@@ -124,6 +130,8 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="assistantassociationinputdatatypedef"></a>
+
 ## AssistantAssociationInputDataTypeDef
 
 ```python
@@ -133,6 +141,8 @@ from mypy_boto3_wisdom.type_defs import AssistantAssociationInputDataTypeDef
 Optional fields:
 
 - `knowledgeBaseId`: `str`
+
+<a id="assistantassociationoutputdatatypedef"></a>
 
 ## AssistantAssociationOutputDataTypeDef
 
@@ -144,6 +154,8 @@ Optional fields:
 
 - `knowledgeBaseAssociation`:
   [KnowledgeBaseAssociationDataTypeDef](./type_defs.md#knowledgebaseassociationdatatypedef)
+
+<a id="assistantassociationsummarytypedef"></a>
 
 ## AssistantAssociationSummaryTypeDef
 
@@ -165,6 +177,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="assistantdatatypedef"></a>
 
 ## AssistantDataTypeDef
 
@@ -188,6 +202,8 @@ Optional fields:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="assistantsummarytypedef"></a>
+
 ## AssistantSummaryTypeDef
 
 ```python
@@ -209,6 +225,8 @@ Optional fields:
 - `serverSideEncryptionConfiguration`:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="contentdatatypedef"></a>
 
 ## ContentDataTypeDef
 
@@ -236,6 +254,8 @@ Optional fields:
 - `linkOutUri`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="contentreferencetypedef"></a>
+
 ## ContentReferenceTypeDef
 
 ```python
@@ -248,6 +268,8 @@ Optional fields:
 - `contentId`: `str`
 - `knowledgeBaseArn`: `str`
 - `knowledgeBaseId`: `str`
+
+<a id="contentsummarytypedef"></a>
 
 ## ContentSummaryTypeDef
 
@@ -272,6 +294,8 @@ Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="createassistantassociationrequestrequesttypedef"></a>
+
 ## CreateAssistantAssociationRequestRequestTypeDef
 
 ```python
@@ -291,6 +315,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createassistantassociationresponsetypedef"></a>
+
 ## CreateAssistantAssociationResponseTypeDef
 
 ```python
@@ -303,6 +329,8 @@ Required fields:
   [AssistantAssociationDataTypeDef](./type_defs.md#assistantassociationdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassistantrequestrequesttypedef"></a>
 
 ## CreateAssistantRequestRequestTypeDef
 
@@ -324,6 +352,8 @@ Optional fields:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createassistantresponsetypedef"></a>
+
 ## CreateAssistantResponseTypeDef
 
 ```python
@@ -335,6 +365,8 @@ Required fields:
 - `assistant`: [AssistantDataTypeDef](./type_defs.md#assistantdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcontentrequestrequesttypedef"></a>
 
 ## CreateContentRequestRequestTypeDef
 
@@ -356,6 +388,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `title`: `str`
 
+<a id="createcontentresponsetypedef"></a>
+
 ## CreateContentResponseTypeDef
 
 ```python
@@ -367,6 +401,8 @@ Required fields:
 - `content`: [ContentDataTypeDef](./type_defs.md#contentdatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createknowledgebaserequestrequesttypedef"></a>
 
 ## CreateKnowledgeBaseRequestRequestTypeDef
 
@@ -392,6 +428,8 @@ Optional fields:
   [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createknowledgebaseresponsetypedef"></a>
+
 ## CreateKnowledgeBaseResponseTypeDef
 
 ```python
@@ -404,6 +442,8 @@ Required fields:
   [KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsessionrequestrequesttypedef"></a>
 
 ## CreateSessionRequestRequestTypeDef
 
@@ -422,6 +462,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createsessionresponsetypedef"></a>
+
 ## CreateSessionResponseTypeDef
 
 ```python
@@ -434,6 +476,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteassistantassociationrequestrequesttypedef"></a>
+
 ## DeleteAssistantAssociationRequestRequestTypeDef
 
 ```python
@@ -445,6 +489,8 @@ Required fields:
 - `assistantAssociationId`: `str`
 - `assistantId`: `str`
 
+<a id="deleteassistantrequestrequesttypedef"></a>
+
 ## DeleteAssistantRequestRequestTypeDef
 
 ```python
@@ -454,6 +500,8 @@ from mypy_boto3_wisdom.type_defs import DeleteAssistantRequestRequestTypeDef
 Required fields:
 
 - `assistantId`: `str`
+
+<a id="deletecontentrequestrequesttypedef"></a>
 
 ## DeleteContentRequestRequestTypeDef
 
@@ -466,6 +514,8 @@ Required fields:
 - `contentId`: `str`
 - `knowledgeBaseId`: `str`
 
+<a id="deleteknowledgebaserequestrequesttypedef"></a>
+
 ## DeleteKnowledgeBaseRequestRequestTypeDef
 
 ```python
@@ -475,6 +525,8 @@ from mypy_boto3_wisdom.type_defs import DeleteKnowledgeBaseRequestRequestTypeDef
 Required fields:
 
 - `knowledgeBaseId`: `str`
+
+<a id="documenttexttypedef"></a>
 
 ## DocumentTextTypeDef
 
@@ -486,6 +538,8 @@ Optional fields:
 
 - `highlights`: `List`\[[HighlightTypeDef](./type_defs.md#highlighttypedef)\]
 - `text`: `str`
+
+<a id="documenttypedef"></a>
 
 ## DocumentTypeDef
 
@@ -503,6 +557,8 @@ Optional fields:
 - `excerpt`: [DocumentTextTypeDef](./type_defs.md#documenttexttypedef)
 - `title`: [DocumentTextTypeDef](./type_defs.md#documenttexttypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -517,6 +573,8 @@ Required fields:
   [FilterOperatorType](./literals.md#filteroperatortype))
 - `value`: `str`
 
+<a id="getassistantassociationrequestrequesttypedef"></a>
+
 ## GetAssistantAssociationRequestRequestTypeDef
 
 ```python
@@ -527,6 +585,8 @@ Required fields:
 
 - `assistantAssociationId`: `str`
 - `assistantId`: `str`
+
+<a id="getassistantassociationresponsetypedef"></a>
 
 ## GetAssistantAssociationResponseTypeDef
 
@@ -541,6 +601,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassistantrequestrequesttypedef"></a>
+
 ## GetAssistantRequestRequestTypeDef
 
 ```python
@@ -550,6 +612,8 @@ from mypy_boto3_wisdom.type_defs import GetAssistantRequestRequestTypeDef
 Required fields:
 
 - `assistantId`: `str`
+
+<a id="getassistantresponsetypedef"></a>
 
 ## GetAssistantResponseTypeDef
 
@@ -563,6 +627,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontentrequestrequesttypedef"></a>
+
 ## GetContentRequestRequestTypeDef
 
 ```python
@@ -573,6 +639,8 @@ Required fields:
 
 - `contentId`: `str`
 - `knowledgeBaseId`: `str`
+
+<a id="getcontentresponsetypedef"></a>
 
 ## GetContentResponseTypeDef
 
@@ -586,6 +654,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontentsummaryrequestrequesttypedef"></a>
+
 ## GetContentSummaryRequestRequestTypeDef
 
 ```python
@@ -596,6 +666,8 @@ Required fields:
 
 - `contentId`: `str`
 - `knowledgeBaseId`: `str`
+
+<a id="getcontentsummaryresponsetypedef"></a>
 
 ## GetContentSummaryResponseTypeDef
 
@@ -610,6 +682,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getknowledgebaserequestrequesttypedef"></a>
+
 ## GetKnowledgeBaseRequestRequestTypeDef
 
 ```python
@@ -619,6 +693,8 @@ from mypy_boto3_wisdom.type_defs import GetKnowledgeBaseRequestRequestTypeDef
 Required fields:
 
 - `knowledgeBaseId`: `str`
+
+<a id="getknowledgebaseresponsetypedef"></a>
 
 ## GetKnowledgeBaseResponseTypeDef
 
@@ -632,6 +708,8 @@ Required fields:
   [KnowledgeBaseDataTypeDef](./type_defs.md#knowledgebasedatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrecommendationsrequestrequesttypedef"></a>
 
 ## GetRecommendationsRequestRequestTypeDef
 
@@ -649,6 +727,8 @@ Optional fields:
 - `maxResults`: `int`
 - `waitTimeSeconds`: `int`
 
+<a id="getrecommendationsresponsetypedef"></a>
+
 ## GetRecommendationsResponseTypeDef
 
 ```python
@@ -662,6 +742,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsessionrequestrequesttypedef"></a>
+
 ## GetSessionRequestRequestTypeDef
 
 ```python
@@ -672,6 +754,8 @@ Required fields:
 
 - `assistantId`: `str`
 - `sessionId`: `str`
+
+<a id="getsessionresponsetypedef"></a>
 
 ## GetSessionResponseTypeDef
 
@@ -685,6 +769,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="highlighttypedef"></a>
+
 ## HighlightTypeDef
 
 ```python
@@ -696,6 +782,8 @@ Optional fields:
 - `beginOffsetInclusive`: `int`
 - `endOffsetExclusive`: `int`
 
+<a id="knowledgebaseassociationdatatypedef"></a>
+
 ## KnowledgeBaseAssociationDataTypeDef
 
 ```python
@@ -706,6 +794,8 @@ Optional fields:
 
 - `knowledgeBaseArn`: `str`
 - `knowledgeBaseId`: `str`
+
+<a id="knowledgebasedatatypedef"></a>
 
 ## KnowledgeBaseDataTypeDef
 
@@ -734,6 +824,8 @@ Optional fields:
   [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="knowledgebasesummarytypedef"></a>
+
 ## KnowledgeBaseSummaryTypeDef
 
 ```python
@@ -760,6 +852,8 @@ Optional fields:
   [SourceConfigurationTypeDef](./type_defs.md#sourceconfigurationtypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="listassistantassociationsrequestrequesttypedef"></a>
+
 ## ListAssistantAssociationsRequestRequestTypeDef
 
 ```python
@@ -775,6 +869,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listassistantassociationsresponsetypedef"></a>
+
 ## ListAssistantAssociationsResponseTypeDef
 
 ```python
@@ -789,6 +885,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listassistantsrequestrequesttypedef"></a>
+
 ## ListAssistantsRequestRequestTypeDef
 
 ```python
@@ -799,6 +897,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listassistantsresponsetypedef"></a>
 
 ## ListAssistantsResponseTypeDef
 
@@ -813,6 +913,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontentsrequestrequesttypedef"></a>
 
 ## ListContentsRequestRequestTypeDef
 
@@ -829,6 +931,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listcontentsresponsetypedef"></a>
+
 ## ListContentsResponseTypeDef
 
 ```python
@@ -843,6 +947,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listknowledgebasesrequestrequesttypedef"></a>
+
 ## ListKnowledgeBasesRequestRequestTypeDef
 
 ```python
@@ -853,6 +959,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listknowledgebasesresponsetypedef"></a>
 
 ## ListKnowledgeBasesResponseTypeDef
 
@@ -868,6 +976,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -877,6 +987,8 @@ from mypy_boto3_wisdom.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -890,6 +1002,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notifyrecommendationsreceivederrortypedef"></a>
+
 ## NotifyRecommendationsReceivedErrorTypeDef
 
 ```python
@@ -900,6 +1014,8 @@ Optional fields:
 
 - `message`: `str`
 - `recommendationId`: `str`
+
+<a id="notifyrecommendationsreceivedrequestrequesttypedef"></a>
 
 ## NotifyRecommendationsReceivedRequestRequestTypeDef
 
@@ -912,6 +1028,8 @@ Required fields:
 - `assistantId`: `str`
 - `recommendationIds`: `Sequence`\[`str`\]
 - `sessionId`: `str`
+
+<a id="notifyrecommendationsreceivedresponsetypedef"></a>
 
 ## NotifyRecommendationsReceivedResponseTypeDef
 
@@ -927,6 +1045,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -938,6 +1058,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="queryassistantrequestrequesttypedef"></a>
 
 ## QueryAssistantRequestRequestTypeDef
 
@@ -955,6 +1077,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="queryassistantresponsetypedef"></a>
+
 ## QueryAssistantResponseTypeDef
 
 ```python
@@ -967,6 +1091,8 @@ Required fields:
 - `results`: `List`\[[ResultDataTypeDef](./type_defs.md#resultdatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="recommendationdatatypedef"></a>
 
 ## RecommendationDataTypeDef
 
@@ -984,6 +1110,8 @@ Optional fields:
 - `relevanceLevel`: [RelevanceLevelType](./literals.md#relevanceleveltype)
 - `relevanceScore`: `float`
 
+<a id="removeknowledgebasetemplateurirequestrequesttypedef"></a>
+
 ## RemoveKnowledgeBaseTemplateUriRequestRequestTypeDef
 
 ```python
@@ -994,6 +1122,8 @@ Required fields:
 
 - `knowledgeBaseId`: `str`
 
+<a id="renderingconfigurationtypedef"></a>
+
 ## RenderingConfigurationTypeDef
 
 ```python
@@ -1003,6 +1133,8 @@ from mypy_boto3_wisdom.type_defs import RenderingConfigurationTypeDef
 Optional fields:
 
 - `templateUri`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1018,6 +1150,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultdatatypedef"></a>
+
 ## ResultDataTypeDef
 
 ```python
@@ -1032,6 +1166,8 @@ Required fields:
 Optional fields:
 
 - `relevanceScore`: `float`
+
+<a id="searchcontentrequestrequesttypedef"></a>
 
 ## SearchContentRequestRequestTypeDef
 
@@ -1050,6 +1186,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="searchcontentresponsetypedef"></a>
+
 ## SearchContentResponseTypeDef
 
 ```python
@@ -1064,6 +1202,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchexpressiontypedef"></a>
+
 ## SearchExpressionTypeDef
 
 ```python
@@ -1073,6 +1213,8 @@ from mypy_boto3_wisdom.type_defs import SearchExpressionTypeDef
 Required fields:
 
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="searchsessionsrequestrequesttypedef"></a>
 
 ## SearchSessionsRequestRequestTypeDef
 
@@ -1091,6 +1233,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="searchsessionsresponsetypedef"></a>
+
 ## SearchSessionsResponseTypeDef
 
 ```python
@@ -1105,6 +1249,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="serversideencryptionconfigurationtypedef"></a>
+
 ## ServerSideEncryptionConfigurationTypeDef
 
 ```python
@@ -1114,6 +1260,8 @@ from mypy_boto3_wisdom.type_defs import ServerSideEncryptionConfigurationTypeDef
 Optional fields:
 
 - `kmsKeyId`: `str`
+
+<a id="sessiondatatypedef"></a>
 
 ## SessionDataTypeDef
 
@@ -1132,6 +1280,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="sessionsummarytypedef"></a>
+
 ## SessionSummaryTypeDef
 
 ```python
@@ -1145,6 +1295,8 @@ Required fields:
 - `sessionArn`: `str`
 - `sessionId`: `str`
 
+<a id="sourceconfigurationtypedef"></a>
+
 ## SourceConfigurationTypeDef
 
 ```python
@@ -1156,6 +1308,8 @@ Optional fields:
 - `appIntegrations`:
   [AppIntegrationsConfigurationTypeDef](./type_defs.md#appintegrationsconfigurationtypedef)
 
+<a id="startcontentuploadrequestrequesttypedef"></a>
+
 ## StartContentUploadRequestRequestTypeDef
 
 ```python
@@ -1166,6 +1320,8 @@ Required fields:
 
 - `contentType`: `str`
 - `knowledgeBaseId`: `str`
+
+<a id="startcontentuploadresponsetypedef"></a>
 
 ## StartContentUploadResponseTypeDef
 
@@ -1182,6 +1338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1193,6 +1351,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1203,6 +1363,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatecontentrequestrequesttypedef"></a>
 
 ## UpdateContentRequestRequestTypeDef
 
@@ -1224,6 +1386,8 @@ Optional fields:
 - `title`: `str`
 - `uploadId`: `str`
 
+<a id="updatecontentresponsetypedef"></a>
+
 ## UpdateContentResponseTypeDef
 
 ```python
@@ -1236,6 +1400,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateknowledgebasetemplateurirequestrequesttypedef"></a>
+
 ## UpdateKnowledgeBaseTemplateUriRequestRequestTypeDef
 
 ```python
@@ -1246,6 +1412,8 @@ Required fields:
 
 - `knowledgeBaseId`: `str`
 - `templateUri`: `str`
+
+<a id="updateknowledgebasetemplateuriresponsetypedef"></a>
 
 ## UpdateKnowledgeBaseTemplateUriResponseTypeDef
 

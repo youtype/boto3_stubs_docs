@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudwatchlogs-module"></a>
+
 # Type annotations for boto3 CloudWatchLogs module
 
 > [Index](..) > CloudWatchLogs
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
-[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[logs]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[logs]'
+
+# standalone installation
 pip install mypy-boto3-logs
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-logs
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudwatchlogsclient"></a>
+
 ## CloudWatchLogsClient
 
 Type annotations for `boto3.client("logs")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_logs.client import CloudWatchLogsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -79,6 +93,8 @@ from mypy_boto3_logs.client import CloudWatchLogsClient
 - [test_metric_filter](./client.md#test_metric_filter)
 - [untag_log_group](./client.md#untag_log_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudWatchLogsClient [exceptions](./client.md#exceptions)
@@ -96,6 +112,8 @@ CloudWatchLogsClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - UnrecognizedClientException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -104,7 +122,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_logs.paginators import DescribeDestinationsPaginator, ...
+from mypy_boto3_logs.paginator import DescribeDestinationsPaginator, ...
 ```
 
 - [DescribeDestinationsPaginator](./paginators.md#describedestinationspaginator)
@@ -116,6 +134,8 @@ from mypy_boto3_logs.paginators import DescribeDestinationsPaginator, ...
 - [DescribeResourcePoliciesPaginator](./paginators.md#describeresourcepoliciespaginator)
 - [DescribeSubscriptionFiltersPaginator](./paginators.md#describesubscriptionfilterspaginator)
 - [FilterLogEventsPaginator](./paginators.md#filterlogeventspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -143,6 +163,8 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [StandardUnitType](./literals.md#standardunittype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

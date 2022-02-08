@@ -1,3 +1,5 @@
+<a id="route53domainsclient-for-boto3-route53domains-module"></a>
+
 # Route53DomainsClient for boto3 Route53Domains module
 
 > [Index](..) > [Route53Domains](.) > Route53DomainsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
-[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Route53DomainsClient for boto3 Route53Domains module](#route53domainsclient-for-boto3-route53domains-module)
   - [Route53DomainsClient](#route53domainsclient)
@@ -46,6 +48,8 @@ type annotations stubs module
     - [view_billing](#view_billing)
     - [get_paginator](#get_paginator)
 
+<a id="route53domainsclient"></a>
+
 ## Route53DomainsClient
 
 Type annotations for `boto3.client("route53domains")`
@@ -53,14 +57,17 @@ Type annotations for `boto3.client("route53domains")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_route53domains.client import Route53DomainsClient
 
 def get_route53domains_client() -> Route53DomainsClient:
-    return boto3.client("route53domains")
+    return Session().client("route53domains")
 ```
 
 Boto3 documentation:
 [Route53Domains.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -84,7 +91,11 @@ Exceptions:
 - `Exceptions.TLDRulesViolation`
 - `Exceptions.UnsupportedTLD`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -96,6 +107,8 @@ Boto3 documentation:
 [Route53Domains.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_domain_transfer_from_another_aws_account"></a>
 
 ### accept_domain_transfer_from_another_aws_account
 
@@ -120,6 +133,8 @@ Keyword-only arguments:
 Returns
 [AcceptDomainTransferFromAnotherAwsAccountResponseTypeDef](./type_defs.md#acceptdomaintransferfromanotherawsaccountresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -134,6 +149,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_domain_transfer_to_another_aws_account"></a>
 
 ### cancel_domain_transfer_to_another_aws_account
 
@@ -157,6 +174,8 @@ Keyword-only arguments:
 Returns
 [CancelDomainTransferToAnotherAwsAccountResponseTypeDef](./type_defs.md#canceldomaintransfertoanotherawsaccountresponsetypedef).
 
+<a id="check_domain_availability"></a>
+
 ### check_domain_availability
 
 This operation checks the availability of one domain name.
@@ -177,6 +196,8 @@ Keyword-only arguments:
 
 Returns
 [CheckDomainAvailabilityResponseTypeDef](./type_defs.md#checkdomainavailabilityresponsetypedef).
+
+<a id="check_domain_transferability"></a>
 
 ### check_domain_transferability
 
@@ -199,6 +220,8 @@ Keyword-only arguments:
 Returns
 [CheckDomainTransferabilityResponseTypeDef](./type_defs.md#checkdomaintransferabilityresponsetypedef).
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 This operation deletes the specified domain.
@@ -217,6 +240,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
+
+<a id="delete_tags_for_domain"></a>
 
 ### delete_tags_for_domain
 
@@ -238,6 +263,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_domain_auto_renew"></a>
+
 ### disable_domain_auto_renew
 
 This operation disables automatic renewal of domain registration for the
@@ -257,6 +284,8 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disable_domain_transfer_lock"></a>
 
 ### disable_domain_transfer_lock
 
@@ -279,6 +308,8 @@ Keyword-only arguments:
 Returns
 [DisableDomainTransferLockResponseTypeDef](./type_defs.md#disabledomaintransferlockresponsetypedef).
 
+<a id="enable_domain_auto_renew"></a>
+
 ### enable_domain_auto_renew
 
 This operation configures Amazon Route 53 to automatically renew the specified
@@ -298,6 +329,8 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="enable_domain_transfer_lock"></a>
 
 ### enable_domain_transfer_lock
 
@@ -320,6 +353,8 @@ Keyword-only arguments:
 Returns
 [EnableDomainTransferLockResponseTypeDef](./type_defs.md#enabledomaintransferlockresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -338,6 +373,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_contact_reachability_status"></a>
 
 ### get_contact_reachability_status
 
@@ -361,6 +398,8 @@ Keyword-only arguments:
 Returns
 [GetContactReachabilityStatusResponseTypeDef](./type_defs.md#getcontactreachabilitystatusresponsetypedef).
 
+<a id="get_domain_detail"></a>
+
 ### get_domain_detail
 
 This operation returns detailed information about a specified domain that is
@@ -380,6 +419,8 @@ Keyword-only arguments:
 
 Returns
 [GetDomainDetailResponseTypeDef](./type_defs.md#getdomaindetailresponsetypedef).
+
+<a id="get_domain_suggestions"></a>
 
 ### get_domain_suggestions
 
@@ -403,6 +444,8 @@ Keyword-only arguments:
 Returns
 [GetDomainSuggestionsResponseTypeDef](./type_defs.md#getdomainsuggestionsresponsetypedef).
 
+<a id="get_operation_detail"></a>
+
 ### get_operation_detail
 
 This operation returns the current status of an operation that is not
@@ -423,6 +466,8 @@ Keyword-only arguments:
 
 Returns
 [GetOperationDetailResponseTypeDef](./type_defs.md#getoperationdetailresponsetypedef).
+
+<a id="list_domains"></a>
 
 ### list_domains
 
@@ -448,6 +493,8 @@ Keyword-only arguments:
 Returns
 [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
+<a id="list_operations"></a>
+
 ### list_operations
 
 Returns information about all of the operations that return an operation ID and
@@ -470,6 +517,8 @@ Keyword-only arguments:
 
 Returns
 [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+
+<a id="list_prices"></a>
 
 ### list_prices
 
@@ -494,6 +543,8 @@ Keyword-only arguments:
 
 Returns [ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef).
 
+<a id="list_tags_for_domain"></a>
+
 ### list_tags_for_domain
 
 This operation returns all of the tags that are associated with the specified
@@ -514,6 +565,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForDomainResponseTypeDef](./type_defs.md#listtagsfordomainresponsetypedef).
+
+<a id="register_domain"></a>
 
 ### register_domain
 
@@ -546,6 +599,8 @@ Keyword-only arguments:
 Returns
 [RegisterDomainResponseTypeDef](./type_defs.md#registerdomainresponsetypedef).
 
+<a id="reject_domain_transfer_from_another_aws_account"></a>
+
 ### reject_domain_transfer_from_another_aws_account
 
 Rejects the transfer of a domain from another Amazon Web Services account to
@@ -568,6 +623,8 @@ Keyword-only arguments:
 Returns
 [RejectDomainTransferFromAnotherAwsAccountResponseTypeDef](./type_defs.md#rejectdomaintransferfromanotherawsaccountresponsetypedef).
 
+<a id="renew_domain"></a>
+
 ### renew_domain
 
 This operation renews a domain for the specified number of years.
@@ -588,6 +645,8 @@ Keyword-only arguments:
 
 Returns
 [RenewDomainResponseTypeDef](./type_defs.md#renewdomainresponsetypedef).
+
+<a id="resend_contact_reachability_email"></a>
 
 ### resend_contact_reachability_email
 
@@ -612,6 +671,8 @@ Keyword-only arguments:
 Returns
 [ResendContactReachabilityEmailResponseTypeDef](./type_defs.md#resendcontactreachabilityemailresponsetypedef).
 
+<a id="retrieve_domain_auth_code"></a>
+
 ### retrieve_domain_auth_code
 
 This operation returns the AuthCode for the domain.
@@ -631,6 +692,8 @@ Keyword-only arguments:
 
 Returns
 [RetrieveDomainAuthCodeResponseTypeDef](./type_defs.md#retrievedomainauthcoderesponsetypedef).
+
+<a id="transfer_domain"></a>
 
 ### transfer_domain
 
@@ -666,6 +729,8 @@ Keyword-only arguments:
 Returns
 [TransferDomainResponseTypeDef](./type_defs.md#transferdomainresponsetypedef).
 
+<a id="transfer_domain_to_another_aws_account"></a>
+
 ### transfer_domain_to_another_aws_account
 
 Transfers a domain from the current Amazon Web Services account to another
@@ -687,6 +752,8 @@ Keyword-only arguments:
 
 Returns
 [TransferDomainToAnotherAwsAccountResponseTypeDef](./type_defs.md#transferdomaintoanotherawsaccountresponsetypedef).
+
+<a id="update_domain_contact"></a>
 
 ### update_domain_contact
 
@@ -712,6 +779,8 @@ Keyword-only arguments:
 Returns
 [UpdateDomainContactResponseTypeDef](./type_defs.md#updatedomaincontactresponsetypedef).
 
+<a id="update_domain_contact_privacy"></a>
+
 ### update_domain_contact_privacy
 
 This operation updates the specified domain contact's privacy setting.
@@ -734,6 +803,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDomainContactPrivacyResponseTypeDef](./type_defs.md#updatedomaincontactprivacyresponsetypedef).
+
+<a id="update_domain_nameservers"></a>
 
 ### update_domain_nameservers
 
@@ -760,6 +831,8 @@ Keyword-only arguments:
 Returns
 [UpdateDomainNameserversResponseTypeDef](./type_defs.md#updatedomainnameserversresponsetypedef).
 
+<a id="update_tags_for_domain"></a>
+
 ### update_tags_for_domain
 
 This operation adds or updates tags for a specified domain.
@@ -779,6 +852,8 @@ Keyword-only arguments:
 - `TagsToUpdate`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="view_billing"></a>
 
 ### view_billing
 
@@ -803,6 +878,8 @@ Keyword-only arguments:
 
 Returns
 [ViewBillingResponseTypeDef](./type_defs.md#viewbillingresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

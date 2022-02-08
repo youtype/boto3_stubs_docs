@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-sns-module"></a>
+
 # Paginators for boto3 SNS module
 
 > [Index](..) > [SNS](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module
-[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [Paginators for boto3 SNS module](#paginators-for-boto3-sns-module)
   - [ListEndpointsByPlatformApplicationPaginator](#listendpointsbyplatformapplicationpaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListSubscriptionsByTopicPaginator](#listsubscriptionsbytopicpaginator)
   - [ListTopicsPaginator](#listtopicspaginator)
 
+<a id="listendpointsbyplatformapplicationpaginator"></a>
+
 ## ListEndpointsByPlatformApplicationPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator
 
 def get_list_endpoints_by_platform_application_paginator() -> ListEndpointsByPlatformApplicationPaginator:
-    return boto3.client("sns").get_paginator("list_endpoints_by_platform_application")
+    return Session().client("sns").get_paginator("list_endpoints_by_platform_application")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ Arguments for `ListEndpointsByPlatformApplicationPaginator.paginate` method:
 `ListEndpointsByPlatformApplicationPaginator.paginate` returns
 `_PageIterator`\[[ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef)\].
 
+<a id="listoriginationnumberspaginator"></a>
+
 ## ListOriginationNumbersPaginator
 
 Type annotations for
@@ -51,10 +59,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListOriginationNumbersPaginator
 
 def get_list_origination_numbers_paginator() -> ListOriginationNumbersPaginator:
-    return boto3.client("sns").get_paginator("list_origination_numbers")
+    return Session().client("sns").get_paginator("list_origination_numbers")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `ListOriginationNumbersPaginator.paginate` method:
 `ListOriginationNumbersPaginator.paginate` returns
 `_PageIterator`\[[ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef)\].
 
+<a id="listphonenumbersoptedoutpaginator"></a>
+
 ## ListPhoneNumbersOptedOutPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListPhoneNumbersOptedOutPaginator
 
 def get_list_phone_numbers_opted_out_paginator() -> ListPhoneNumbersOptedOutPaginator:
-    return boto3.client("sns").get_paginator("list_phone_numbers_opted_out")
+    return Session().client("sns").get_paginator("list_phone_numbers_opted_out")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListPhoneNumbersOptedOutPaginator.paginate` method:
 `ListPhoneNumbersOptedOutPaginator.paginate` returns
 `_PageIterator`\[[ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef)\].
 
+<a id="listplatformapplicationspaginator"></a>
+
 ## ListPlatformApplicationsPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListPlatformApplicationsPaginator
 
 def get_list_platform_applications_paginator() -> ListPlatformApplicationsPaginator:
-    return boto3.client("sns").get_paginator("list_platform_applications")
+    return Session().client("sns").get_paginator("list_platform_applications")
 ```
 
 Boto3 documentation:
@@ -118,6 +136,8 @@ Arguments for `ListPlatformApplicationsPaginator.paginate` method:
 `ListPlatformApplicationsPaginator.paginate` returns
 `_PageIterator`\[[ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef)\].
 
+<a id="listsmssandboxphonenumberspaginator"></a>
+
 ## ListSMSSandboxPhoneNumbersPaginator
 
 Type annotations for
@@ -126,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListSMSSandboxPhoneNumbersPaginator
 
 def get_list_sms_sandbox_phone_numbers_paginator() -> ListSMSSandboxPhoneNumbersPaginator:
-    return boto3.client("sns").get_paginator("list_sms_sandbox_phone_numbers")
+    return Session().client("sns").get_paginator("list_sms_sandbox_phone_numbers")
 ```
 
 Boto3 documentation:
@@ -143,6 +165,8 @@ Arguments for `ListSMSSandboxPhoneNumbersPaginator.paginate` method:
 `ListSMSSandboxPhoneNumbersPaginator.paginate` returns
 `_PageIterator`\[[ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef)\].
 
+<a id="listsubscriptionspaginator"></a>
+
 ## ListSubscriptionsPaginator
 
 Type annotations for `boto3.client("sns").get_paginator("list_subscriptions")`.
@@ -150,10 +174,12 @@ Type annotations for `boto3.client("sns").get_paginator("list_subscriptions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListSubscriptionsPaginator
 
 def get_list_subscriptions_paginator() -> ListSubscriptionsPaginator:
-    return boto3.client("sns").get_paginator("list_subscriptions")
+    return Session().client("sns").get_paginator("list_subscriptions")
 ```
 
 Boto3 documentation:
@@ -167,6 +193,8 @@ Arguments for `ListSubscriptionsPaginator.paginate` method:
 `ListSubscriptionsPaginator.paginate` returns
 `_PageIterator`\[[ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef)\].
 
+<a id="listsubscriptionsbytopicpaginator"></a>
+
 ## ListSubscriptionsByTopicPaginator
 
 Type annotations for
@@ -175,10 +203,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListSubscriptionsByTopicPaginator
 
 def get_list_subscriptions_by_topic_paginator() -> ListSubscriptionsByTopicPaginator:
-    return boto3.client("sns").get_paginator("list_subscriptions_by_topic")
+    return Session().client("sns").get_paginator("list_subscriptions_by_topic")
 ```
 
 Boto3 documentation:
@@ -193,6 +223,8 @@ Arguments for `ListSubscriptionsByTopicPaginator.paginate` method:
 `ListSubscriptionsByTopicPaginator.paginate` returns
 `_PageIterator`\[[ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef)\].
 
+<a id="listtopicspaginator"></a>
+
 ## ListTopicsPaginator
 
 Type annotations for `boto3.client("sns").get_paginator("list_topics")`.
@@ -200,10 +232,12 @@ Type annotations for `boto3.client("sns").get_paginator("list_topics")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sns.paginator import ListTopicsPaginator
 
 def get_list_topics_paginator() -> ListTopicsPaginator:
-    return boto3.client("sns").get_paginator("list_topics")
+    return Session().client("sns").get_paginator("list_topics")
 ```
 
 Boto3 documentation:

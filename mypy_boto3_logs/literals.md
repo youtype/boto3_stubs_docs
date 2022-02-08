@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudwatchlogs-module"></a>
+
 # Literals for boto3 CloudWatchLogs module
 
 > [Index](..) > [CloudWatchLogs](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
-[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [Literals for boto3 CloudWatchLogs module](#literals-for-boto3-cloudwatchlogs-module)
   - [DescribeDestinationsPaginatorName](#describedestinationspaginatorname)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describedestinationspaginatorname"></a>
+
 ## DescribeDestinationsPaginatorName
 
 ```python
@@ -34,6 +38,8 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName
 Values:
 
 - `describe_destinations`
+
+<a id="describeexporttaskspaginatorname"></a>
 
 ## DescribeExportTasksPaginatorName
 
@@ -45,6 +51,8 @@ Values:
 
 - `describe_export_tasks`
 
+<a id="describeloggroupspaginatorname"></a>
+
 ## DescribeLogGroupsPaginatorName
 
 ```python
@@ -54,6 +62,8 @@ from mypy_boto3_logs.literals import DescribeLogGroupsPaginatorName
 Values:
 
 - `describe_log_groups`
+
+<a id="describelogstreamspaginatorname"></a>
 
 ## DescribeLogStreamsPaginatorName
 
@@ -65,6 +75,8 @@ Values:
 
 - `describe_log_streams`
 
+<a id="describemetricfilterspaginatorname"></a>
+
 ## DescribeMetricFiltersPaginatorName
 
 ```python
@@ -74,6 +86,8 @@ from mypy_boto3_logs.literals import DescribeMetricFiltersPaginatorName
 Values:
 
 - `describe_metric_filters`
+
+<a id="describequeriespaginatorname"></a>
 
 ## DescribeQueriesPaginatorName
 
@@ -85,6 +99,8 @@ Values:
 
 - `describe_queries`
 
+<a id="describeresourcepoliciespaginatorname"></a>
+
 ## DescribeResourcePoliciesPaginatorName
 
 ```python
@@ -94,6 +110,8 @@ from mypy_boto3_logs.literals import DescribeResourcePoliciesPaginatorName
 Values:
 
 - `describe_resource_policies`
+
+<a id="describesubscriptionfilterspaginatorname"></a>
 
 ## DescribeSubscriptionFiltersPaginatorName
 
@@ -105,6 +123,8 @@ Values:
 
 - `describe_subscription_filters`
 
+<a id="distributiontype"></a>
+
 ## DistributionType
 
 ```python
@@ -115,6 +135,8 @@ Values:
 
 - `ByLogStream`
 - `Random`
+
+<a id="exporttaskstatuscodetype"></a>
 
 ## ExportTaskStatusCodeType
 
@@ -131,6 +153,8 @@ Values:
 - `PENDING_CANCEL`
 - `RUNNING`
 
+<a id="filterlogeventspaginatorname"></a>
+
 ## FilterLogEventsPaginatorName
 
 ```python
@@ -140,6 +164,8 @@ from mypy_boto3_logs.literals import FilterLogEventsPaginatorName
 Values:
 
 - `filter_log_events`
+
+<a id="orderbytype"></a>
 
 ## OrderByType
 
@@ -151,6 +177,8 @@ Values:
 
 - `LastEventTime`
 - `LogStreamName`
+
+<a id="querystatustype"></a>
 
 ## QueryStatusType
 
@@ -167,6 +195,8 @@ Values:
 - `Scheduled`
 - `Timeout`
 - `Unknown`
+
+<a id="standardunittype"></a>
 
 ## StandardUnitType
 
@@ -203,6 +233,8 @@ Values:
 - `Terabits/Second`
 - `Terabytes`
 - `Terabytes/Second`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -511,6 +543,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

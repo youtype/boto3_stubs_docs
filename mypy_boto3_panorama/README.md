@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-panorama-module"></a>
+
 # Type annotations for boto3 Panorama module
 
 > [Index](..) > Panorama
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Panorama](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/panorama.html#Panorama)
 type annotations stubs module
-[mypy_boto3_panorama](https://pypi.org/project/mypy-boto3-panorama/).
+[mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[panorama]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[panorama]'
+
+# standalone installation
 pip install mypy-boto3-panorama
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-panorama
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="panoramaclient"></a>
 
 ## PanoramaClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_panorama.client import PanoramaClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_panorama.client import PanoramaClient
 - [untag_resource](./client.md#untag_resource)
 - [update_device_metadata](./client.md#update_device_metadata)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PanoramaClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ PanoramaClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceQuotaExceededException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -110,6 +128,8 @@ from mypy_boto3_panorama.literals import ApplicationInstanceHealthStatusType, ..
 - [TemplateTypeType](./literals.md#templatetypetype)
 - [UpdateProgressType](./literals.md#updateprogresstype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloud9-module"></a>
+
 # Typed dictionaries for boto3 Cloud9 module
 
 > [Index](..) > [Cloud9](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
-[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Typed dictionaries for boto3 Cloud9 module](#typed-dictionaries-for-boto3-cloud9-module)
   - [CreateEnvironmentEC2RequestRequestTypeDef](#createenvironmentec2requestrequesttypedef)
@@ -36,6 +38,8 @@ type annotations stubs module
   - [UpdateEnvironmentMembershipResultTypeDef](#updateenvironmentmembershipresulttypedef)
   - [UpdateEnvironmentRequestRequestTypeDef](#updateenvironmentrequestrequesttypedef)
 
+<a id="createenvironmentec2requestrequesttypedef"></a>
+
 ## CreateEnvironmentEC2RequestRequestTypeDef
 
 ```python
@@ -59,6 +63,8 @@ Optional fields:
 - `connectionType`: [ConnectionTypeType](./literals.md#connectiontypetype)
 - `dryRun`: `bool`
 
+<a id="createenvironmentec2resulttypedef"></a>
+
 ## CreateEnvironmentEC2ResultTypeDef
 
 ```python
@@ -71,6 +77,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createenvironmentmembershiprequestrequesttypedef"></a>
+
 ## CreateEnvironmentMembershipRequestRequestTypeDef
 
 ```python
@@ -82,6 +90,8 @@ Required fields:
 - `environmentId`: `str`
 - `userArn`: `str`
 - `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
+
+<a id="createenvironmentmembershipresulttypedef"></a>
 
 ## CreateEnvironmentMembershipResultTypeDef
 
@@ -96,6 +106,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmentmembershiprequestrequesttypedef"></a>
+
 ## DeleteEnvironmentMembershipRequestRequestTypeDef
 
 ```python
@@ -107,6 +119,8 @@ Required fields:
 - `environmentId`: `str`
 - `userArn`: `str`
 
+<a id="deleteenvironmentrequestrequesttypedef"></a>
+
 ## DeleteEnvironmentRequestRequestTypeDef
 
 ```python
@@ -116,6 +130,8 @@ from mypy_boto3_cloud9.type_defs import DeleteEnvironmentRequestRequestTypeDef
 Required fields:
 
 - `environmentId`: `str`
+
+<a id="describeenvironmentmembershipsrequestrequesttypedef"></a>
 
 ## DescribeEnvironmentMembershipsRequestRequestTypeDef
 
@@ -131,6 +147,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describeenvironmentmembershipsresulttypedef"></a>
+
 ## DescribeEnvironmentMembershipsResultTypeDef
 
 ```python
@@ -145,6 +163,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeenvironmentstatusrequestrequesttypedef"></a>
+
 ## DescribeEnvironmentStatusRequestRequestTypeDef
 
 ```python
@@ -154,6 +174,8 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentStatusRequestRequestT
 Required fields:
 
 - `environmentId`: `str`
+
+<a id="describeenvironmentstatusresulttypedef"></a>
 
 ## DescribeEnvironmentStatusResultTypeDef
 
@@ -168,6 +190,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeenvironmentsrequestrequesttypedef"></a>
+
 ## DescribeEnvironmentsRequestRequestTypeDef
 
 ```python
@@ -177,6 +201,8 @@ from mypy_boto3_cloud9.type_defs import DescribeEnvironmentsRequestRequestTypeDe
 Required fields:
 
 - `environmentIds`: `Sequence`\[`str`\]
+
+<a id="describeenvironmentsresulttypedef"></a>
 
 ## DescribeEnvironmentsResultTypeDef
 
@@ -191,6 +217,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="environmentlifecycletypedef"></a>
+
 ## EnvironmentLifecycleTypeDef
 
 ```python
@@ -203,6 +231,8 @@ Optional fields:
   [EnvironmentLifecycleStatusType](./literals.md#environmentlifecyclestatustype)
 - `reason`: `str`
 - `failureResource`: `str`
+
+<a id="environmentmembertypedef"></a>
 
 ## EnvironmentMemberTypeDef
 
@@ -220,6 +250,8 @@ Required fields:
 Optional fields:
 
 - `lastAccess`: `datetime`
+
+<a id="environmenttypedef"></a>
 
 ## EnvironmentTypeDef
 
@@ -244,6 +276,8 @@ Optional fields:
 - `managedCredentialsStatus`:
   [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
 
+<a id="listenvironmentsrequestrequesttypedef"></a>
+
 ## ListEnvironmentsRequestRequestTypeDef
 
 ```python
@@ -254,6 +288,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listenvironmentsresulttypedef"></a>
 
 ## ListEnvironmentsResultTypeDef
 
@@ -268,6 +304,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -277,6 +315,8 @@ from mypy_boto3_cloud9.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -290,6 +330,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -301,6 +343,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -316,6 +360,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -326,6 +372,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -338,6 +386,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -348,6 +398,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateenvironmentmembershiprequestrequesttypedef"></a>
 
 ## UpdateEnvironmentMembershipRequestRequestTypeDef
 
@@ -361,6 +413,8 @@ Required fields:
 - `userArn`: `str`
 - `permissions`: [MemberPermissionsType](./literals.md#memberpermissionstype)
 
+<a id="updateenvironmentmembershipresulttypedef"></a>
+
 ## UpdateEnvironmentMembershipResultTypeDef
 
 ```python
@@ -373,6 +427,8 @@ Required fields:
   [EnvironmentMemberTypeDef](./type_defs.md#environmentmembertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateenvironmentrequestrequesttypedef"></a>
 
 ## UpdateEnvironmentRequestRequestTypeDef
 

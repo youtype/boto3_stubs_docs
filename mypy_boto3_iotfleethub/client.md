@@ -1,3 +1,5 @@
+<a id="iotfleethubclient-for-boto3-iotfleethub-module"></a>
+
 # IoTFleetHubClient for boto3 IoTFleetHub module
 
 > [Index](..) > [IoTFleetHub](.) > IoTFleetHubClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
-[mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+[mypy-boto3-iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 - [IoTFleetHubClient for boto3 IoTFleetHub module](#iotfleethubclient-for-boto3-iotfleethub-module)
   - [IoTFleetHubClient](#iotfleethubclient)
@@ -24,6 +26,8 @@ type annotations stubs module
     - [update_application](#update_application)
     - [get_paginator](#get_paginator)
 
+<a id="iotfleethubclient"></a>
+
 ## IoTFleetHubClient
 
 Type annotations for `boto3.client("iotfleethub")`
@@ -31,14 +35,17 @@ Type annotations for `boto3.client("iotfleethub")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotfleethub.client import IoTFleetHubClient
 
 def get_iotfleethub_client() -> IoTFleetHubClient:
-    return boto3.client("iotfleethub")
+    return Session().client("iotfleethub")
 ```
 
 Boto3 documentation:
 [IoTFleetHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -62,7 +69,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -74,6 +85,8 @@ Boto3 documentation:
 [IoTFleetHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -89,6 +102,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -113,6 +128,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes a Fleet Hub for AWS IoT Device Management web application.
@@ -131,6 +148,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_application"></a>
 
 ### describe_application
 
@@ -152,6 +171,8 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -170,6 +191,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_applications"></a>
 
 ### list_applications
 
@@ -191,6 +214,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for the specified resource.
@@ -211,6 +236,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds to or modifies the tags of the specified resource.
@@ -230,6 +257,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags (metadata) from the resource.
@@ -248,6 +277,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -270,6 +301,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

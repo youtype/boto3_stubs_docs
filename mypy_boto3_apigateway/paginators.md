@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-apigateway-module"></a>
+
 # Paginators for boto3 APIGateway module
 
 > [Index](..) > [APIGateway](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
-[mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+[mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 - [Paginators for boto3 APIGateway module](#paginators-for-boto3-apigateway-module)
   - [GetApiKeysPaginator](#getapikeyspaginator)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [GetUsagePlansPaginator](#getusageplanspaginator)
   - [GetVpcLinksPaginator](#getvpclinkspaginator)
 
+<a id="getapikeyspaginator"></a>
+
 ## GetApiKeysPaginator
 
 Type annotations for
@@ -35,10 +39,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetApiKeysPaginator
 
 def get_get_api_keys_paginator() -> GetApiKeysPaginator:
-    return boto3.client("apigateway").get_paginator("get_api_keys")
+    return Session().client("apigateway").get_paginator("get_api_keys")
 ```
 
 Boto3 documentation:
@@ -55,6 +61,8 @@ Arguments for `GetApiKeysPaginator.paginate` method:
 `GetApiKeysPaginator.paginate` returns
 `_PageIterator`\[[ApiKeysTypeDef](./type_defs.md#apikeystypedef)\].
 
+<a id="getauthorizerspaginator"></a>
+
 ## GetAuthorizersPaginator
 
 Type annotations for
@@ -63,10 +71,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetAuthorizersPaginator
 
 def get_get_authorizers_paginator() -> GetAuthorizersPaginator:
-    return boto3.client("apigateway").get_paginator("get_authorizers")
+    return Session().client("apigateway").get_paginator("get_authorizers")
 ```
 
 Boto3 documentation:
@@ -81,6 +91,8 @@ Arguments for `GetAuthorizersPaginator.paginate` method:
 `GetAuthorizersPaginator.paginate` returns
 `_PageIterator`\[[AuthorizersTypeDef](./type_defs.md#authorizerstypedef)\].
 
+<a id="getbasepathmappingspaginator"></a>
+
 ## GetBasePathMappingsPaginator
 
 Type annotations for
@@ -89,10 +101,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetBasePathMappingsPaginator
 
 def get_get_base_path_mappings_paginator() -> GetBasePathMappingsPaginator:
-    return boto3.client("apigateway").get_paginator("get_base_path_mappings")
+    return Session().client("apigateway").get_paginator("get_base_path_mappings")
 ```
 
 Boto3 documentation:
@@ -107,6 +121,8 @@ Arguments for `GetBasePathMappingsPaginator.paginate` method:
 `GetBasePathMappingsPaginator.paginate` returns
 `_PageIterator`\[[BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef)\].
 
+<a id="getclientcertificatespaginator"></a>
+
 ## GetClientCertificatesPaginator
 
 Type annotations for
@@ -115,10 +131,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetClientCertificatesPaginator
 
 def get_get_client_certificates_paginator() -> GetClientCertificatesPaginator:
-    return boto3.client("apigateway").get_paginator("get_client_certificates")
+    return Session().client("apigateway").get_paginator("get_client_certificates")
 ```
 
 Boto3 documentation:
@@ -132,6 +150,8 @@ Arguments for `GetClientCertificatesPaginator.paginate` method:
 `GetClientCertificatesPaginator.paginate` returns
 `_PageIterator`\[[ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef)\].
 
+<a id="getdeploymentspaginator"></a>
+
 ## GetDeploymentsPaginator
 
 Type annotations for
@@ -140,10 +160,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetDeploymentsPaginator
 
 def get_get_deployments_paginator() -> GetDeploymentsPaginator:
-    return boto3.client("apigateway").get_paginator("get_deployments")
+    return Session().client("apigateway").get_paginator("get_deployments")
 ```
 
 Boto3 documentation:
@@ -158,6 +180,8 @@ Arguments for `GetDeploymentsPaginator.paginate` method:
 `GetDeploymentsPaginator.paginate` returns
 `_PageIterator`\[[DeploymentsTypeDef](./type_defs.md#deploymentstypedef)\].
 
+<a id="getdocumentationpartspaginator"></a>
+
 ## GetDocumentationPartsPaginator
 
 Type annotations for
@@ -166,10 +190,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetDocumentationPartsPaginator
 
 def get_get_documentation_parts_paginator() -> GetDocumentationPartsPaginator:
-    return boto3.client("apigateway").get_paginator("get_documentation_parts")
+    return Session().client("apigateway").get_paginator("get_documentation_parts")
 ```
 
 Boto3 documentation:
@@ -189,6 +215,8 @@ Arguments for `GetDocumentationPartsPaginator.paginate` method:
 `GetDocumentationPartsPaginator.paginate` returns
 `_PageIterator`\[[DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef)\].
 
+<a id="getdocumentationversionspaginator"></a>
+
 ## GetDocumentationVersionsPaginator
 
 Type annotations for
@@ -197,10 +225,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetDocumentationVersionsPaginator
 
 def get_get_documentation_versions_paginator() -> GetDocumentationVersionsPaginator:
-    return boto3.client("apigateway").get_paginator("get_documentation_versions")
+    return Session().client("apigateway").get_paginator("get_documentation_versions")
 ```
 
 Boto3 documentation:
@@ -215,6 +245,8 @@ Arguments for `GetDocumentationVersionsPaginator.paginate` method:
 `GetDocumentationVersionsPaginator.paginate` returns
 `_PageIterator`\[[DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef)\].
 
+<a id="getdomainnamespaginator"></a>
+
 ## GetDomainNamesPaginator
 
 Type annotations for
@@ -223,10 +255,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetDomainNamesPaginator
 
 def get_get_domain_names_paginator() -> GetDomainNamesPaginator:
-    return boto3.client("apigateway").get_paginator("get_domain_names")
+    return Session().client("apigateway").get_paginator("get_domain_names")
 ```
 
 Boto3 documentation:
@@ -240,6 +274,8 @@ Arguments for `GetDomainNamesPaginator.paginate` method:
 `GetDomainNamesPaginator.paginate` returns
 `_PageIterator`\[[DomainNamesTypeDef](./type_defs.md#domainnamestypedef)\].
 
+<a id="getgatewayresponsespaginator"></a>
+
 ## GetGatewayResponsesPaginator
 
 Type annotations for
@@ -248,10 +284,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetGatewayResponsesPaginator
 
 def get_get_gateway_responses_paginator() -> GetGatewayResponsesPaginator:
-    return boto3.client("apigateway").get_paginator("get_gateway_responses")
+    return Session().client("apigateway").get_paginator("get_gateway_responses")
 ```
 
 Boto3 documentation:
@@ -266,6 +304,8 @@ Arguments for `GetGatewayResponsesPaginator.paginate` method:
 `GetGatewayResponsesPaginator.paginate` returns
 `_PageIterator`\[[GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef)\].
 
+<a id="getmodelspaginator"></a>
+
 ## GetModelsPaginator
 
 Type annotations for `boto3.client("apigateway").get_paginator("get_models")`.
@@ -273,10 +313,12 @@ Type annotations for `boto3.client("apigateway").get_paginator("get_models")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetModelsPaginator
 
 def get_get_models_paginator() -> GetModelsPaginator:
-    return boto3.client("apigateway").get_paginator("get_models")
+    return Session().client("apigateway").get_paginator("get_models")
 ```
 
 Boto3 documentation:
@@ -291,6 +333,8 @@ Arguments for `GetModelsPaginator.paginate` method:
 `GetModelsPaginator.paginate` returns
 `_PageIterator`\[[ModelsTypeDef](./type_defs.md#modelstypedef)\].
 
+<a id="getrequestvalidatorspaginator"></a>
+
 ## GetRequestValidatorsPaginator
 
 Type annotations for
@@ -299,10 +343,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetRequestValidatorsPaginator
 
 def get_get_request_validators_paginator() -> GetRequestValidatorsPaginator:
-    return boto3.client("apigateway").get_paginator("get_request_validators")
+    return Session().client("apigateway").get_paginator("get_request_validators")
 ```
 
 Boto3 documentation:
@@ -317,6 +363,8 @@ Arguments for `GetRequestValidatorsPaginator.paginate` method:
 `GetRequestValidatorsPaginator.paginate` returns
 `_PageIterator`\[[RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef)\].
 
+<a id="getresourcespaginator"></a>
+
 ## GetResourcesPaginator
 
 Type annotations for
@@ -325,10 +373,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetResourcesPaginator
 
 def get_get_resources_paginator() -> GetResourcesPaginator:
-    return boto3.client("apigateway").get_paginator("get_resources")
+    return Session().client("apigateway").get_paginator("get_resources")
 ```
 
 Boto3 documentation:
@@ -344,6 +394,8 @@ Arguments for `GetResourcesPaginator.paginate` method:
 `GetResourcesPaginator.paginate` returns
 `_PageIterator`\[[ResourcesTypeDef](./type_defs.md#resourcestypedef)\].
 
+<a id="getrestapispaginator"></a>
+
 ## GetRestApisPaginator
 
 Type annotations for
@@ -352,10 +404,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetRestApisPaginator
 
 def get_get_rest_apis_paginator() -> GetRestApisPaginator:
-    return boto3.client("apigateway").get_paginator("get_rest_apis")
+    return Session().client("apigateway").get_paginator("get_rest_apis")
 ```
 
 Boto3 documentation:
@@ -369,6 +423,8 @@ Arguments for `GetRestApisPaginator.paginate` method:
 `GetRestApisPaginator.paginate` returns
 `_PageIterator`\[[RestApisTypeDef](./type_defs.md#restapistypedef)\].
 
+<a id="getsdktypespaginator"></a>
+
 ## GetSdkTypesPaginator
 
 Type annotations for
@@ -377,10 +433,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetSdkTypesPaginator
 
 def get_get_sdk_types_paginator() -> GetSdkTypesPaginator:
-    return boto3.client("apigateway").get_paginator("get_sdk_types")
+    return Session().client("apigateway").get_paginator("get_sdk_types")
 ```
 
 Boto3 documentation:
@@ -394,6 +452,8 @@ Arguments for `GetSdkTypesPaginator.paginate` method:
 `GetSdkTypesPaginator.paginate` returns
 `_PageIterator`\[[SdkTypesTypeDef](./type_defs.md#sdktypestypedef)\].
 
+<a id="getusagepaginator"></a>
+
 ## GetUsagePaginator
 
 Type annotations for `boto3.client("apigateway").get_paginator("get_usage")`.
@@ -401,10 +461,12 @@ Type annotations for `boto3.client("apigateway").get_paginator("get_usage")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetUsagePaginator
 
 def get_get_usage_paginator() -> GetUsagePaginator:
-    return boto3.client("apigateway").get_paginator("get_usage")
+    return Session().client("apigateway").get_paginator("get_usage")
 ```
 
 Boto3 documentation:
@@ -422,6 +484,8 @@ Arguments for `GetUsagePaginator.paginate` method:
 `GetUsagePaginator.paginate` returns
 `_PageIterator`\[[UsageTypeDef](./type_defs.md#usagetypedef)\].
 
+<a id="getusageplankeyspaginator"></a>
+
 ## GetUsagePlanKeysPaginator
 
 Type annotations for
@@ -430,10 +494,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetUsagePlanKeysPaginator
 
 def get_get_usage_plan_keys_paginator() -> GetUsagePlanKeysPaginator:
-    return boto3.client("apigateway").get_paginator("get_usage_plan_keys")
+    return Session().client("apigateway").get_paginator("get_usage_plan_keys")
 ```
 
 Boto3 documentation:
@@ -449,6 +515,8 @@ Arguments for `GetUsagePlanKeysPaginator.paginate` method:
 `GetUsagePlanKeysPaginator.paginate` returns
 `_PageIterator`\[[UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef)\].
 
+<a id="getusageplanspaginator"></a>
+
 ## GetUsagePlansPaginator
 
 Type annotations for
@@ -457,10 +525,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetUsagePlansPaginator
 
 def get_get_usage_plans_paginator() -> GetUsagePlansPaginator:
-    return boto3.client("apigateway").get_paginator("get_usage_plans")
+    return Session().client("apigateway").get_paginator("get_usage_plans")
 ```
 
 Boto3 documentation:
@@ -475,6 +545,8 @@ Arguments for `GetUsagePlansPaginator.paginate` method:
 `GetUsagePlansPaginator.paginate` returns
 `_PageIterator`\[[UsagePlansTypeDef](./type_defs.md#usageplanstypedef)\].
 
+<a id="getvpclinkspaginator"></a>
+
 ## GetVpcLinksPaginator
 
 Type annotations for
@@ -483,10 +555,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_apigateway.paginator import GetVpcLinksPaginator
 
 def get_get_vpc_links_paginator() -> GetVpcLinksPaginator:
-    return boto3.client("apigateway").get_paginator("get_vpc_links")
+    return Session().client("apigateway").get_paginator("get_vpc_links")
 ```
 
 Boto3 documentation:

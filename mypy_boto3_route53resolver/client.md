@@ -1,3 +1,5 @@
+<a id="route53resolverclient-for-boto3-route53resolver-module"></a>
+
 # Route53ResolverClient for boto3 Route53Resolver module
 
 > [Index](..) > [Route53Resolver](.) > Route53ResolverClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
-[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Route53ResolverClient for boto3 Route53Resolver module](#route53resolverclient-for-boto3-route53resolver-module)
   - [Route53ResolverClient](#route53resolverclient)
@@ -79,6 +81,8 @@ type annotations stubs module
     - [update_resolver_rule](#update_resolver_rule)
     - [get_paginator](#get_paginator)
 
+<a id="route53resolverclient"></a>
+
 ## Route53ResolverClient
 
 Type annotations for `boto3.client("route53resolver")`
@@ -86,14 +90,17 @@ Type annotations for `boto3.client("route53resolver")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_route53resolver.client import Route53ResolverClient
 
 def get_route53resolver_client() -> Route53ResolverClient:
-    return boto3.client("route53resolver")
+    return Session().client("route53resolver")
 ```
 
 Boto3 documentation:
 [Route53Resolver.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -127,7 +134,11 @@ Exceptions:
 - `Exceptions.UnknownResourceException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -139,6 +150,8 @@ Boto3 documentation:
 [Route53Resolver.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_firewall_rule_group"></a>
 
 ### associate_firewall_rule_group
 
@@ -168,6 +181,8 @@ Keyword-only arguments:
 Returns
 [AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef).
 
+<a id="associate_resolver_endpoint_ip_address"></a>
+
 ### associate_resolver_endpoint_ip_address
 
 Adds IP addresses to an inbound or an outbound Resolver endpoint.
@@ -191,6 +206,8 @@ Keyword-only arguments:
 Returns
 [AssociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#associateresolverendpointipaddressresponsetypedef).
 
+<a id="associate_resolver_query_log_config"></a>
+
 ### associate_resolver_query_log_config
 
 Associates an Amazon VPC with a specified query logging configuration.
@@ -211,6 +228,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#associateresolverquerylogconfigresponsetypedef).
+
+<a id="associate_resolver_rule"></a>
 
 ### associate_resolver_rule
 
@@ -234,6 +253,8 @@ Keyword-only arguments:
 Returns
 [AssociateResolverRuleResponseTypeDef](./type_defs.md#associateresolverruleresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -248,6 +269,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_firewall_domain_list"></a>
 
 ### create_firewall_domain_list
 
@@ -270,6 +293,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFirewallDomainListResponseTypeDef](./type_defs.md#createfirewalldomainlistresponsetypedef).
+
+<a id="create_firewall_rule"></a>
 
 ### create_firewall_rule
 
@@ -302,6 +327,8 @@ Keyword-only arguments:
 Returns
 [CreateFirewallRuleResponseTypeDef](./type_defs.md#createfirewallruleresponsetypedef).
 
+<a id="create_firewall_rule_group"></a>
+
 ### create_firewall_rule_group
 
 Creates an empty DNS Firewall rule group for filtering DNS network traffic in a
@@ -324,6 +351,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFirewallRuleGroupResponseTypeDef](./type_defs.md#createfirewallrulegroupresponsetypedef).
+
+<a id="create_resolver_endpoint"></a>
 
 ### create_resolver_endpoint
 
@@ -354,6 +383,8 @@ Keyword-only arguments:
 Returns
 [CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef).
 
+<a id="create_resolver_query_log_config"></a>
+
 ### create_resolver_query_log_config
 
 Creates a Resolver query logging configuration, which defines where you want
@@ -377,6 +408,8 @@ Keyword-only arguments:
 
 Returns
 [CreateResolverQueryLogConfigResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponsetypedef).
+
+<a id="create_resolver_rule"></a>
 
 ### create_resolver_rule
 
@@ -408,6 +441,8 @@ Keyword-only arguments:
 Returns
 [CreateResolverRuleResponseTypeDef](./type_defs.md#createresolverruleresponsetypedef).
 
+<a id="delete_firewall_domain_list"></a>
+
 ### delete_firewall_domain_list
 
 Deletes the specified domain list.
@@ -427,6 +462,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFirewallDomainListResponseTypeDef](./type_defs.md#deletefirewalldomainlistresponsetypedef).
+
+<a id="delete_firewall_rule"></a>
 
 ### delete_firewall_rule
 
@@ -449,6 +486,8 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallRuleResponseTypeDef](./type_defs.md#deletefirewallruleresponsetypedef).
 
+<a id="delete_firewall_rule_group"></a>
+
 ### delete_firewall_rule_group
 
 Deletes the specified firewall rule group.
@@ -468,6 +507,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFirewallRuleGroupResponseTypeDef](./type_defs.md#deletefirewallrulegroupresponsetypedef).
+
+<a id="delete_resolver_endpoint"></a>
 
 ### delete_resolver_endpoint
 
@@ -489,6 +530,8 @@ Keyword-only arguments:
 Returns
 [DeleteResolverEndpointResponseTypeDef](./type_defs.md#deleteresolverendpointresponsetypedef).
 
+<a id="delete_resolver_query_log_config"></a>
+
 ### delete_resolver_query_log_config
 
 Deletes a query logging configuration.
@@ -508,6 +551,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteResolverQueryLogConfigResponseTypeDef](./type_defs.md#deleteresolverquerylogconfigresponsetypedef).
+
+<a id="delete_resolver_rule"></a>
 
 ### delete_resolver_rule
 
@@ -529,6 +574,8 @@ Keyword-only arguments:
 Returns
 [DeleteResolverRuleResponseTypeDef](./type_defs.md#deleteresolverruleresponsetypedef).
 
+<a id="disassociate_firewall_rule_group"></a>
+
 ### disassociate_firewall_rule_group
 
 Disassociates a FirewallRuleGroup from a VPC, to remove DNS filtering from the
@@ -549,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociateFirewallRuleGroupResponseTypeDef](./type_defs.md#disassociatefirewallrulegroupresponsetypedef).
+
+<a id="disassociate_resolver_endpoint_ip_address"></a>
 
 ### disassociate_resolver_endpoint_ip_address
 
@@ -573,6 +622,8 @@ Keyword-only arguments:
 Returns
 [DisassociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#disassociateresolverendpointipaddressresponsetypedef).
 
+<a id="disassociate_resolver_query_log_config"></a>
+
 ### disassociate_resolver_query_log_config
 
 Disassociates a VPC from a query logging configuration.
@@ -595,6 +646,8 @@ Keyword-only arguments:
 Returns
 [DisassociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#disassociateresolverquerylogconfigresponsetypedef).
 
+<a id="disassociate_resolver_rule"></a>
+
 ### disassociate_resolver_rule
 
 Removes the association between a specified Resolver rule and a specified VPC.
@@ -616,6 +669,8 @@ Keyword-only arguments:
 Returns
 [DisassociateResolverRuleResponseTypeDef](./type_defs.md#disassociateresolverruleresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -634,6 +689,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_firewall_config"></a>
 
 ### get_firewall_config
 
@@ -656,6 +713,8 @@ Keyword-only arguments:
 Returns
 [GetFirewallConfigResponseTypeDef](./type_defs.md#getfirewallconfigresponsetypedef).
 
+<a id="get_firewall_domain_list"></a>
+
 ### get_firewall_domain_list
 
 Retrieves the specified firewall domain list.
@@ -676,6 +735,8 @@ Keyword-only arguments:
 Returns
 [GetFirewallDomainListResponseTypeDef](./type_defs.md#getfirewalldomainlistresponsetypedef).
 
+<a id="get_firewall_rule_group"></a>
+
 ### get_firewall_rule_group
 
 Retrieves the specified firewall rule group.
@@ -695,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [GetFirewallRuleGroupResponseTypeDef](./type_defs.md#getfirewallrulegroupresponsetypedef).
+
+<a id="get_firewall_rule_group_association"></a>
 
 ### get_firewall_rule_group_association
 
@@ -717,6 +780,8 @@ Keyword-only arguments:
 Returns
 [GetFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#getfirewallrulegroupassociationresponsetypedef).
 
+<a id="get_firewall_rule_group_policy"></a>
+
 ### get_firewall_rule_group_policy
 
 Returns the Identity and Access Management (Amazon Web Services IAM) policy for
@@ -737,6 +802,8 @@ Keyword-only arguments:
 
 Returns
 [GetFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponsetypedef).
+
+<a id="get_resolver_config"></a>
 
 ### get_resolver_config
 
@@ -759,6 +826,8 @@ Keyword-only arguments:
 Returns
 [GetResolverConfigResponseTypeDef](./type_defs.md#getresolverconfigresponsetypedef).
 
+<a id="get_resolver_dnssec_config"></a>
+
 ### get_resolver_dnssec_config
 
 Gets DNSSEC validation information for a specified resource.
@@ -778,6 +847,8 @@ Keyword-only arguments:
 
 Returns
 [GetResolverDnssecConfigResponseTypeDef](./type_defs.md#getresolverdnssecconfigresponsetypedef).
+
+<a id="get_resolver_endpoint"></a>
 
 ### get_resolver_endpoint
 
@@ -801,6 +872,8 @@ Keyword-only arguments:
 Returns
 [GetResolverEndpointResponseTypeDef](./type_defs.md#getresolverendpointresponsetypedef).
 
+<a id="get_resolver_query_log_config"></a>
+
 ### get_resolver_query_log_config
 
 Gets information about a specified Resolver query logging configuration, such
@@ -822,6 +895,8 @@ Keyword-only arguments:
 
 Returns
 [GetResolverQueryLogConfigResponseTypeDef](./type_defs.md#getresolverquerylogconfigresponsetypedef).
+
+<a id="get_resolver_query_log_config_association"></a>
 
 ### get_resolver_query_log_config_association
 
@@ -845,6 +920,8 @@ Keyword-only arguments:
 Returns
 [GetResolverQueryLogConfigAssociationResponseTypeDef](./type_defs.md#getresolverquerylogconfigassociationresponsetypedef).
 
+<a id="get_resolver_query_log_config_policy"></a>
+
 ### get_resolver_query_log_config_policy
 
 Gets information about a query logging policy.
@@ -864,6 +941,8 @@ Keyword-only arguments:
 
 Returns
 [GetResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#getresolverquerylogconfigpolicyresponsetypedef).
+
+<a id="get_resolver_rule"></a>
 
 ### get_resolver_rule
 
@@ -887,6 +966,8 @@ Keyword-only arguments:
 Returns
 [GetResolverRuleResponseTypeDef](./type_defs.md#getresolverruleresponsetypedef).
 
+<a id="get_resolver_rule_association"></a>
+
 ### get_resolver_rule_association
 
 Gets information about an association between a specified Resolver rule and a
@@ -908,6 +989,8 @@ Keyword-only arguments:
 Returns
 [GetResolverRuleAssociationResponseTypeDef](./type_defs.md#getresolverruleassociationresponsetypedef).
 
+<a id="get_resolver_rule_policy"></a>
+
 ### get_resolver_rule_policy
 
 Gets information about the Resolver rule policy for a specified rule.
@@ -927,6 +1010,8 @@ Keyword-only arguments:
 
 Returns
 [GetResolverRulePolicyResponseTypeDef](./type_defs.md#getresolverrulepolicyresponsetypedef).
+
+<a id="import_firewall_domains"></a>
 
 ### import_firewall_domains
 
@@ -953,6 +1038,8 @@ Keyword-only arguments:
 Returns
 [ImportFirewallDomainsResponseTypeDef](./type_defs.md#importfirewalldomainsresponsetypedef).
 
+<a id="list_firewall_configs"></a>
+
 ### list_firewall_configs
 
 Retrieves the firewall configurations that you have defined.
@@ -974,6 +1061,8 @@ Keyword-only arguments:
 Returns
 [ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef).
 
+<a id="list_firewall_domain_lists"></a>
+
 ### list_firewall_domain_lists
 
 Retrieves the firewall domain lists that you have defined.
@@ -994,6 +1083,8 @@ Keyword-only arguments:
 
 Returns
 [ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef).
+
+<a id="list_firewall_domains"></a>
 
 ### list_firewall_domains
 
@@ -1017,6 +1108,8 @@ Keyword-only arguments:
 
 Returns
 [ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef).
+
+<a id="list_firewall_rule_group_associations"></a>
 
 ### list_firewall_rule_group_associations
 
@@ -1044,6 +1137,8 @@ Keyword-only arguments:
 Returns
 [ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef).
 
+<a id="list_firewall_rule_groups"></a>
+
 ### list_firewall_rule_groups
 
 Retrieves the minimal high-level information for the rule groups that you have
@@ -1065,6 +1160,8 @@ Keyword-only arguments:
 
 Returns
 [ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef).
+
+<a id="list_firewall_rules"></a>
 
 ### list_firewall_rules
 
@@ -1091,6 +1188,8 @@ Keyword-only arguments:
 Returns
 [ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef).
 
+<a id="list_resolver_configs"></a>
+
 ### list_resolver_configs
 
 Retrieves the Resolver configurations that you have defined.
@@ -1111,6 +1210,8 @@ Keyword-only arguments:
 
 Returns
 [ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef).
+
+<a id="list_resolver_dnssec_configs"></a>
 
 ### list_resolver_dnssec_configs
 
@@ -1135,6 +1236,8 @@ Keyword-only arguments:
 Returns
 [ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef).
 
+<a id="list_resolver_endpoint_ip_addresses"></a>
+
 ### list_resolver_endpoint_ip_addresses
 
 Gets the IP addresses for a specified Resolver endpoint.
@@ -1156,6 +1259,8 @@ Keyword-only arguments:
 
 Returns
 [ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef).
+
+<a id="list_resolver_endpoints"></a>
 
 ### list_resolver_endpoints
 
@@ -1179,6 +1284,8 @@ Keyword-only arguments:
 
 Returns
 [ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef).
+
+<a id="list_resolver_query_log_config_associations"></a>
 
 ### list_resolver_query_log_config_associations
 
@@ -1206,6 +1313,8 @@ Keyword-only arguments:
 Returns
 [ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef).
 
+<a id="list_resolver_query_log_configs"></a>
+
 ### list_resolver_query_log_configs
 
 Lists information about the specified query logging configurations.
@@ -1230,6 +1339,8 @@ Keyword-only arguments:
 Returns
 [ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef).
 
+<a id="list_resolver_rule_associations"></a>
+
 ### list_resolver_rule_associations
 
 Lists the associations that were created between Resolver rules and VPCs using
@@ -1252,6 +1363,8 @@ Keyword-only arguments:
 
 Returns
 [ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef).
+
+<a id="list_resolver_rules"></a>
 
 ### list_resolver_rules
 
@@ -1276,6 +1389,8 @@ Keyword-only arguments:
 Returns
 [ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags that you associated with the specified resource.
@@ -1298,6 +1413,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_firewall_rule_group_policy"></a>
+
 ### put_firewall_rule_group_policy
 
 Attaches an Identity and Access Management (Amazon Web Services IAM) policy for
@@ -1319,6 +1436,8 @@ Keyword-only arguments:
 
 Returns
 [PutFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#putfirewallrulegrouppolicyresponsetypedef).
+
+<a id="put_resolver_query_log_config_policy"></a>
 
 ### put_resolver_query_log_config_policy
 
@@ -1344,6 +1463,8 @@ Keyword-only arguments:
 Returns
 [PutResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#putresolverquerylogconfigpolicyresponsetypedef).
 
+<a id="put_resolver_rule_policy"></a>
+
 ### put_resolver_rule_policy
 
 Specifies an Amazon Web Services rule that you want to share with another
@@ -1367,6 +1488,8 @@ Keyword-only arguments:
 Returns
 [PutResolverRulePolicyResponseTypeDef](./type_defs.md#putresolverrulepolicyresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to a specified resource.
@@ -1386,6 +1509,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from a specified resource.
@@ -1404,6 +1529,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_firewall_config"></a>
 
 ### update_firewall_config
 
@@ -1429,6 +1556,8 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallConfigResponseTypeDef](./type_defs.md#updatefirewallconfigresponsetypedef).
 
+<a id="update_firewall_domains"></a>
+
 ### update_firewall_domains
 
 Updates the firewall domain list from an array of domain specifications.
@@ -1452,6 +1581,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFirewallDomainsResponseTypeDef](./type_defs.md#updatefirewalldomainsresponsetypedef).
+
+<a id="update_firewall_rule"></a>
 
 ### update_firewall_rule
 
@@ -1482,6 +1613,8 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallRuleResponseTypeDef](./type_defs.md#updatefirewallruleresponsetypedef).
 
+<a id="update_firewall_rule_group_association"></a>
+
 ### update_firewall_rule_group_association
 
 Changes the association of a FirewallRuleGroup with a VPC.
@@ -1507,6 +1640,8 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponsetypedef).
 
+<a id="update_resolver_config"></a>
+
 ### update_resolver_config
 
 Updates the behavior configuration of Route 53 Resolver behavior for a single
@@ -1531,6 +1666,8 @@ Keyword-only arguments:
 Returns
 [UpdateResolverConfigResponseTypeDef](./type_defs.md#updateresolverconfigresponsetypedef).
 
+<a id="update_resolver_dnssec_config"></a>
+
 ### update_resolver_dnssec_config
 
 Updates an existing DNSSEC validation configuration.
@@ -1552,6 +1689,8 @@ Keyword-only arguments:
 Returns
 [UpdateResolverDnssecConfigResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponsetypedef).
 
+<a id="update_resolver_endpoint"></a>
+
 ### update_resolver_endpoint
 
 Updates the name of an inbound or an outbound Resolver endpoint.
@@ -1572,6 +1711,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef).
+
+<a id="update_resolver_rule"></a>
 
 ### update_resolver_rule
 
@@ -1595,6 +1736,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateResolverRuleResponseTypeDef](./type_defs.md#updateresolverruleresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

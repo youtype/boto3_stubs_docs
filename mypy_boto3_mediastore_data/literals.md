@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mediastoredata-module"></a>
+
 # Literals for boto3 MediaStoreData module
 
 > [Index](..) > [MediaStoreData](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
-[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+[mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Literals for boto3 MediaStoreData module](#literals-for-boto3-mediastoredata-module)
   - [ItemTypeType](#itemtypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [UploadAvailabilityType](#uploadavailabilitytype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="itemtypetype"></a>
 
 ## ItemTypeType
 
@@ -26,6 +30,8 @@ Values:
 - `FOLDER`
 - `OBJECT`
 
+<a id="listitemspaginatorname"></a>
+
 ## ListItemsPaginatorName
 
 ```python
@@ -35,6 +41,8 @@ from mypy_boto3_mediastore_data.literals import ListItemsPaginatorName
 Values:
 
 - `list_items`
+
+<a id="storageclasstype"></a>
 
 ## StorageClassType
 
@@ -46,6 +54,8 @@ Values:
 
 - `TEMPORAL`
 
+<a id="uploadavailabilitytype"></a>
+
 ## UploadAvailabilityType
 
 ```python
@@ -56,6 +66,8 @@ Values:
 
 - `STANDARD`
 - `STREAMING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -364,6 +376,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

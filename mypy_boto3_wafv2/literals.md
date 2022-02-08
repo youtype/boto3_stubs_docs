@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-wafv2-module"></a>
+
 # Literals for boto3 WAFV2 module
 
 > [Index](..) > [WAFV2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
-[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+[mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 - [Literals for boto3 WAFV2 module](#literals-for-boto3-wafv2-module)
   - [ActionValueType](#actionvaluetype)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [TextTransformationTypeType](#texttransformationtypetype)
   - [ServiceName](#servicename)
 
+<a id="actionvaluetype"></a>
+
 ## ActionValueType
 
 ```python
@@ -42,6 +46,8 @@ Values:
 - `COUNT`
 - `EXCLUDED_AS_COUNT`
 
+<a id="bodyparsingfallbackbehaviortype"></a>
+
 ## BodyParsingFallbackBehaviorType
 
 ```python
@@ -53,6 +59,8 @@ Values:
 - `EVALUATE_AS_STRING`
 - `MATCH`
 - `NO_MATCH`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -68,6 +76,8 @@ Values:
 - `LE`
 - `LT`
 - `NE`
+
+<a id="countrycodetype"></a>
 
 ## CountryCodeType
 
@@ -327,6 +337,8 @@ Values:
 - `ZM`
 - `ZW`
 
+<a id="failurereasontype"></a>
+
 ## FailureReasonType
 
 ```python
@@ -337,6 +349,8 @@ Values:
 
 - `TOKEN_EXPIRED`
 - `TOKEN_MISSING`
+
+<a id="fallbackbehaviortype"></a>
 
 ## FallbackBehaviorType
 
@@ -349,6 +363,8 @@ Values:
 - `MATCH`
 - `NO_MATCH`
 
+<a id="filterbehaviortype"></a>
+
 ## FilterBehaviorType
 
 ```python
@@ -360,6 +376,8 @@ Values:
 - `DROP`
 - `KEEP`
 
+<a id="filterrequirementtype"></a>
+
 ## FilterRequirementType
 
 ```python
@@ -370,6 +388,8 @@ Values:
 
 - `MEETS_ALL`
 - `MEETS_ANY`
+
+<a id="forwardedippositiontype"></a>
 
 ## ForwardedIPPositionType
 
@@ -383,6 +403,8 @@ Values:
 - `FIRST`
 - `LAST`
 
+<a id="ipaddressversiontype"></a>
+
 ## IPAddressVersionType
 
 ```python
@@ -393,6 +415,8 @@ Values:
 
 - `IPV4`
 - `IPV6`
+
+<a id="jsonmatchscopetype"></a>
 
 ## JsonMatchScopeType
 
@@ -406,6 +430,8 @@ Values:
 - `KEY`
 - `VALUE`
 
+<a id="labelmatchscopetype"></a>
+
 ## LabelMatchScopeType
 
 ```python
@@ -416,6 +442,8 @@ Values:
 
 - `LABEL`
 - `NAMESPACE`
+
+<a id="positionalconstrainttype"></a>
 
 ## PositionalConstraintType
 
@@ -431,6 +459,8 @@ Values:
 - `EXACTLY`
 - `STARTS_WITH`
 
+<a id="ratebasedstatementaggregatekeytypetype"></a>
+
 ## RateBasedStatementAggregateKeyTypeType
 
 ```python
@@ -441,6 +471,8 @@ Values:
 
 - `FORWARDED_IP`
 - `IP`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -454,6 +486,8 @@ Values:
 - `APPLICATION_LOAD_BALANCER`
 - `APPSYNC`
 
+<a id="responsecontenttypetype"></a>
+
 ## ResponseContentTypeType
 
 ```python
@@ -466,6 +500,8 @@ Values:
 - `TEXT_HTML`
 - `TEXT_PLAIN`
 
+<a id="scopetype"></a>
+
 ## ScopeType
 
 ```python
@@ -476,6 +512,8 @@ Values:
 
 - `CLOUDFRONT`
 - `REGIONAL`
+
+<a id="texttransformationtypetype"></a>
 
 ## TextTransformationTypeType
 
@@ -506,6 +544,8 @@ Values:
 - `URL_DECODE`
 - `URL_DECODE_UNI`
 - `UTF8_TO_UNICODE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

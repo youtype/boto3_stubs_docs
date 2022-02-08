@@ -1,3 +1,5 @@
+<a id="personalizeruntimeclient-for-boto3-personalizeruntime-module"></a>
+
 # PersonalizeRuntimeClient for boto3 PersonalizeRuntime module
 
 > [Index](..) > [PersonalizeRuntime](.) > PersonalizeRuntimeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module
-[mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
+[mypy-boto3-personalize-runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 - [PersonalizeRuntimeClient for boto3 PersonalizeRuntime module](#personalizeruntimeclient-for-boto3-personalizeruntime-module)
   - [PersonalizeRuntimeClient](#personalizeruntimeclient)
@@ -17,6 +19,8 @@ type annotations stubs module
     - [get_personalized_ranking](#get_personalized_ranking)
     - [get_recommendations](#get_recommendations)
 
+<a id="personalizeruntimeclient"></a>
+
 ## PersonalizeRuntimeClient
 
 Type annotations for `boto3.client("personalize-runtime")`
@@ -24,14 +28,17 @@ Type annotations for `boto3.client("personalize-runtime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_personalize_runtime.client import PersonalizeRuntimeClient
 
 def get_personalize-runtime_client() -> PersonalizeRuntimeClient:
-    return boto3.client("personalize-runtime")
+    return Session().client("personalize-runtime")
 ```
 
 Boto3 documentation:
 [PersonalizeRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -51,7 +58,11 @@ Exceptions:
 - `Exceptions.InvalidInputException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -63,6 +74,8 @@ Boto3 documentation:
 [PersonalizeRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -78,6 +91,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -97,6 +112,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_personalized_ranking"></a>
 
 ### get_personalized_ranking
 
@@ -122,6 +139,8 @@ Keyword-only arguments:
 
 Returns
 [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef).
+
+<a id="get_recommendations"></a>
 
 ### get_recommendations
 

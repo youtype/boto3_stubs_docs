@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-accessanalyzer-module"></a>
+
 # Paginators for boto3 AccessAnalyzer module
 
 > [Index](..) > [AccessAnalyzer](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
-[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 - [Paginators for boto3 AccessAnalyzer module](#paginators-for-boto3-accessanalyzer-module)
   - [ListAccessPreviewFindingsPaginator](#listaccesspreviewfindingspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListPolicyGenerationsPaginator](#listpolicygenerationspaginator)
   - [ValidatePolicyPaginator](#validatepolicypaginator)
 
+<a id="listaccesspreviewfindingspaginator"></a>
+
 ## ListAccessPreviewFindingsPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewFindingsPaginator
 
 def get_list_access_preview_findings_paginator() -> ListAccessPreviewFindingsPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_access_preview_findings")
+    return Session().client("accessanalyzer").get_paginator("list_access_preview_findings")
 ```
 
 Boto3 documentation:
@@ -46,6 +52,8 @@ Arguments for `ListAccessPreviewFindingsPaginator.paginate` method:
 `ListAccessPreviewFindingsPaginator.paginate` returns
 `_PageIterator`\[[ListAccessPreviewFindingsResponseTypeDef](./type_defs.md#listaccesspreviewfindingsresponsetypedef)\].
 
+<a id="listaccesspreviewspaginator"></a>
+
 ## ListAccessPreviewsPaginator
 
 Type annotations for
@@ -54,10 +62,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListAccessPreviewsPaginator
 
 def get_list_access_previews_paginator() -> ListAccessPreviewsPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_access_previews")
+    return Session().client("accessanalyzer").get_paginator("list_access_previews")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `ListAccessPreviewsPaginator.paginate` method:
 `ListAccessPreviewsPaginator.paginate` returns
 `_PageIterator`\[[ListAccessPreviewsResponseTypeDef](./type_defs.md#listaccesspreviewsresponsetypedef)\].
 
+<a id="listanalyzedresourcespaginator"></a>
+
 ## ListAnalyzedResourcesPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListAnalyzedResourcesPaginator
 
 def get_list_analyzed_resources_paginator() -> ListAnalyzedResourcesPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_analyzed_resources")
+    return Session().client("accessanalyzer").get_paginator("list_analyzed_resources")
 ```
 
 Boto3 documentation:
@@ -99,6 +113,8 @@ Arguments for `ListAnalyzedResourcesPaginator.paginate` method:
 `ListAnalyzedResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListAnalyzedResourcesResponseTypeDef](./type_defs.md#listanalyzedresourcesresponsetypedef)\].
 
+<a id="listanalyzerspaginator"></a>
+
 ## ListAnalyzersPaginator
 
 Type annotations for
@@ -107,10 +123,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListAnalyzersPaginator
 
 def get_list_analyzers_paginator() -> ListAnalyzersPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_analyzers")
+    return Session().client("accessanalyzer").get_paginator("list_analyzers")
 ```
 
 Boto3 documentation:
@@ -125,6 +143,8 @@ Arguments for `ListAnalyzersPaginator.paginate` method:
 `ListAnalyzersPaginator.paginate` returns
 `_PageIterator`\[[ListAnalyzersResponseTypeDef](./type_defs.md#listanalyzersresponsetypedef)\].
 
+<a id="listarchiverulespaginator"></a>
+
 ## ListArchiveRulesPaginator
 
 Type annotations for
@@ -133,10 +153,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListArchiveRulesPaginator
 
 def get_list_archive_rules_paginator() -> ListArchiveRulesPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_archive_rules")
+    return Session().client("accessanalyzer").get_paginator("list_archive_rules")
 ```
 
 Boto3 documentation:
@@ -151,6 +173,8 @@ Arguments for `ListArchiveRulesPaginator.paginate` method:
 `ListArchiveRulesPaginator.paginate` returns
 `_PageIterator`\[[ListArchiveRulesResponseTypeDef](./type_defs.md#listarchiverulesresponsetypedef)\].
 
+<a id="listfindingspaginator"></a>
+
 ## ListFindingsPaginator
 
 Type annotations for
@@ -159,10 +183,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListFindingsPaginator
 
 def get_list_findings_paginator() -> ListFindingsPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_findings")
+    return Session().client("accessanalyzer").get_paginator("list_findings")
 ```
 
 Boto3 documentation:
@@ -180,6 +206,8 @@ Arguments for `ListFindingsPaginator.paginate` method:
 `ListFindingsPaginator.paginate` returns
 `_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
+<a id="listpolicygenerationspaginator"></a>
+
 ## ListPolicyGenerationsPaginator
 
 Type annotations for
@@ -188,10 +216,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ListPolicyGenerationsPaginator
 
 def get_list_policy_generations_paginator() -> ListPolicyGenerationsPaginator:
-    return boto3.client("accessanalyzer").get_paginator("list_policy_generations")
+    return Session().client("accessanalyzer").get_paginator("list_policy_generations")
 ```
 
 Boto3 documentation:
@@ -206,6 +236,8 @@ Arguments for `ListPolicyGenerationsPaginator.paginate` method:
 `ListPolicyGenerationsPaginator.paginate` returns
 `_PageIterator`\[[ListPolicyGenerationsResponseTypeDef](./type_defs.md#listpolicygenerationsresponsetypedef)\].
 
+<a id="validatepolicypaginator"></a>
+
 ## ValidatePolicyPaginator
 
 Type annotations for
@@ -214,10 +246,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_accessanalyzer.paginator import ValidatePolicyPaginator
 
 def get_validate_policy_paginator() -> ValidatePolicyPaginator:
-    return boto3.client("accessanalyzer").get_paginator("validate_policy")
+    return Session().client("accessanalyzer").get_paginator("validate_policy")
 ```
 
 Boto3 documentation:

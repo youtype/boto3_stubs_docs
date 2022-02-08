@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-computeoptimizer-module"></a>
+
 # Literals for boto3 ComputeOptimizer module
 
 > [Index](..) > [ComputeOptimizer](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
-[mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+[mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [Literals for boto3 ComputeOptimizer module](#literals-for-boto3-computeoptimizer-module)
   - [CpuVendorArchitectureType](#cpuvendorarchitecturetype)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [ServiceName](#servicename)
 
+<a id="cpuvendorarchitecturetype"></a>
+
 ## CpuVendorArchitectureType
 
 ```python
@@ -58,6 +62,8 @@ Values:
 - `AWS_ARM64`
 - `CURRENT`
 
+<a id="currencytype"></a>
+
 ## CurrencyType
 
 ```python
@@ -68,6 +74,8 @@ Values:
 
 - `CNY`
 - `USD`
+
+<a id="currentperformancerisktype"></a>
 
 ## CurrentPerformanceRiskType
 
@@ -82,6 +90,8 @@ Values:
 - `Medium`
 - `VeryLow`
 
+<a id="ebsfilternametype"></a>
+
 ## EBSFilterNameType
 
 ```python
@@ -91,6 +101,8 @@ from mypy_boto3_compute_optimizer.literals import EBSFilterNameType
 Values:
 
 - `Finding`
+
+<a id="ebsfindingtype"></a>
 
 ## EBSFindingType
 
@@ -102,6 +114,8 @@ Values:
 
 - `NotOptimized`
 - `Optimized`
+
+<a id="ebsmetricnametype"></a>
 
 ## EBSMetricNameType
 
@@ -116,6 +130,8 @@ Values:
 - `VolumeWriteBytesPerSecond`
 - `VolumeWriteOpsPerSecond`
 
+<a id="enhancedinfrastructuremetricstype"></a>
+
 ## EnhancedInfrastructureMetricsType
 
 ```python
@@ -127,6 +143,8 @@ Values:
 - `Active`
 - `Inactive`
 
+<a id="enrollmentfilternametype"></a>
+
 ## EnrollmentFilterNameType
 
 ```python
@@ -136,6 +154,8 @@ from mypy_boto3_compute_optimizer.literals import EnrollmentFilterNameType
 Values:
 
 - `Status`
+
+<a id="exportableautoscalinggroupfieldtype"></a>
 
 ## ExportableAutoScalingGroupFieldType
 
@@ -200,6 +220,8 @@ Values:
 - `UtilizationMetricsNetworkPacketsInPerSecondMaximum`
 - `UtilizationMetricsNetworkPacketsOutPerSecondMaximum`
 
+<a id="exportableinstancefieldtype"></a>
+
 ## ExportableInstanceFieldType
 
 ```python
@@ -261,6 +283,8 @@ Values:
 - `UtilizationMetricsNetworkPacketsInPerSecondMaximum`
 - `UtilizationMetricsNetworkPacketsOutPerSecondMaximum`
 
+<a id="exportablelambdafunctionfieldtype"></a>
+
 ## ExportableLambdaFunctionFieldType
 
 ```python
@@ -295,6 +319,8 @@ Values:
 - `UtilizationMetricsDurationMaximum`
 - `UtilizationMetricsMemoryAverage`
 - `UtilizationMetricsMemoryMaximum`
+
+<a id="exportablevolumefieldtype"></a>
 
 ## ExportableVolumeFieldType
 
@@ -333,6 +359,8 @@ Values:
 - `UtilizationMetricsVolumeWriteOpsPerSecondMaximum`
 - `VolumeArn`
 
+<a id="fileformattype"></a>
+
 ## FileFormatType
 
 ```python
@@ -342,6 +370,8 @@ from mypy_boto3_compute_optimizer.literals import FileFormatType
 Values:
 
 - `Csv`
+
+<a id="filternametype"></a>
 
 ## FilterNameType
 
@@ -355,6 +385,8 @@ Values:
 - `FindingReasonCodes`
 - `RecommendationSourceType`
 
+<a id="findingreasoncodetype"></a>
+
 ## FindingReasonCodeType
 
 ```python
@@ -365,6 +397,8 @@ Values:
 
 - `MemoryOverprovisioned`
 - `MemoryUnderprovisioned`
+
+<a id="findingtype"></a>
 
 ## FindingType
 
@@ -378,6 +412,8 @@ Values:
 - `Optimized`
 - `Overprovisioned`
 - `Underprovisioned`
+
+<a id="inferredworkloadtypetype"></a>
 
 ## InferredWorkloadTypeType
 
@@ -395,6 +431,8 @@ Values:
 - `PostgreSql`
 - `Redis`
 
+<a id="inferredworkloadtypespreferencetype"></a>
+
 ## InferredWorkloadTypesPreferenceType
 
 ```python
@@ -405,6 +443,8 @@ Values:
 
 - `Active`
 - `Inactive`
+
+<a id="instancerecommendationfindingreasoncodetype"></a>
 
 ## InstanceRecommendationFindingReasonCodeType
 
@@ -431,6 +471,8 @@ Values:
 - `NetworkPPSOverprovisioned`
 - `NetworkPPSUnderprovisioned`
 
+<a id="jobfilternametype"></a>
+
 ## JobFilterNameType
 
 ```python
@@ -441,6 +483,8 @@ Values:
 
 - `JobStatus`
 - `ResourceType`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -455,6 +499,8 @@ Values:
 - `InProgress`
 - `Queued`
 
+<a id="lambdafunctionmemorymetricnametype"></a>
+
 ## LambdaFunctionMemoryMetricNameType
 
 ```python
@@ -464,6 +510,8 @@ from mypy_boto3_compute_optimizer.literals import LambdaFunctionMemoryMetricName
 Values:
 
 - `Duration`
+
+<a id="lambdafunctionmemorymetricstatistictype"></a>
 
 ## LambdaFunctionMemoryMetricStatisticType
 
@@ -477,6 +525,8 @@ Values:
 - `LowerBound`
 - `UpperBound`
 
+<a id="lambdafunctionmetricnametype"></a>
+
 ## LambdaFunctionMetricNameType
 
 ```python
@@ -487,6 +537,8 @@ Values:
 
 - `Duration`
 - `Memory`
+
+<a id="lambdafunctionmetricstatistictype"></a>
 
 ## LambdaFunctionMetricStatisticType
 
@@ -499,6 +551,8 @@ Values:
 - `Average`
 - `Maximum`
 
+<a id="lambdafunctionrecommendationfilternametype"></a>
+
 ## LambdaFunctionRecommendationFilterNameType
 
 ```python
@@ -509,6 +563,8 @@ Values:
 
 - `Finding`
 - `FindingReasonCode`
+
+<a id="lambdafunctionrecommendationfindingreasoncodetype"></a>
 
 ## LambdaFunctionRecommendationFindingReasonCodeType
 
@@ -523,6 +579,8 @@ Values:
 - `MemoryOverprovisioned`
 - `MemoryUnderprovisioned`
 
+<a id="lambdafunctionrecommendationfindingtype"></a>
+
 ## LambdaFunctionRecommendationFindingType
 
 ```python
@@ -534,6 +592,8 @@ Values:
 - `NotOptimized`
 - `Optimized`
 - `Unavailable`
+
+<a id="metricnametype"></a>
 
 ## MetricNameType
 
@@ -558,6 +618,8 @@ Values:
 - `NETWORK_PACKETS_IN_PER_SECOND`
 - `NETWORK_PACKETS_OUT_PER_SECOND`
 
+<a id="metricstatistictype"></a>
+
 ## MetricStatisticType
 
 ```python
@@ -568,6 +630,8 @@ Values:
 
 - `Average`
 - `Maximum`
+
+<a id="migrationefforttype"></a>
 
 ## MigrationEffortType
 
@@ -581,6 +645,8 @@ Values:
 - `Low`
 - `Medium`
 - `VeryLow`
+
+<a id="platformdifferencetype"></a>
 
 ## PlatformDifferenceType
 
@@ -597,6 +663,8 @@ Values:
 - `StorageInterface`
 - `VirtualizationType`
 
+<a id="recommendationpreferencenametype"></a>
+
 ## RecommendationPreferenceNameType
 
 ```python
@@ -607,6 +675,8 @@ Values:
 
 - `EnhancedInfrastructureMetrics`
 - `InferredWorkloadTypes`
+
+<a id="recommendationsourcetypetype"></a>
 
 ## RecommendationSourceTypeType
 
@@ -620,6 +690,8 @@ Values:
 - `EbsVolume`
 - `Ec2Instance`
 - `LambdaFunction`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -635,6 +707,8 @@ Values:
 - `LambdaFunction`
 - `NotApplicable`
 
+<a id="scopenametype"></a>
+
 ## ScopeNameType
 
 ```python
@@ -646,6 +720,8 @@ Values:
 - `AccountId`
 - `Organization`
 - `ResourceArn`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -659,6 +735,8 @@ Values:
 - `Failed`
 - `Inactive`
 - `Pending`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

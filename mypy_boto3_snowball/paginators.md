@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-snowball-module"></a>
+
 # Paginators for boto3 Snowball module
 
 > [Index](..) > [Snowball](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Snowball](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snowball.html#Snowball)
 type annotations stubs module
-[mypy_boto3_snowball](https://pypi.org/project/mypy-boto3-snowball/).
+[mypy-boto3-snowball](https://pypi.org/project/mypy-boto3-snowball/).
 
 - [Paginators for boto3 Snowball module](#paginators-for-boto3-snowball-module)
   - [DescribeAddressesPaginator](#describeaddressespaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListClustersPaginator](#listclusterspaginator)
   - [ListCompatibleImagesPaginator](#listcompatibleimagespaginator)
   - [ListJobsPaginator](#listjobspaginator)
+
+<a id="describeaddressespaginator"></a>
 
 ## DescribeAddressesPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snowball.paginator import DescribeAddressesPaginator
 
 def get_describe_addresses_paginator() -> DescribeAddressesPaginator:
-    return boto3.client("snowball").get_paginator("describe_addresses")
+    return Session().client("snowball").get_paginator("describe_addresses")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `DescribeAddressesPaginator.paginate` method:
 `DescribeAddressesPaginator.paginate` returns
 `_PageIterator`\[[DescribeAddressesResultTypeDef](./type_defs.md#describeaddressesresulttypedef)\].
 
+<a id="listclusterjobspaginator"></a>
+
 ## ListClusterJobsPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snowball.paginator import ListClusterJobsPaginator
 
 def get_list_cluster_jobs_paginator() -> ListClusterJobsPaginator:
-    return boto3.client("snowball").get_paginator("list_cluster_jobs")
+    return Session().client("snowball").get_paginator("list_cluster_jobs")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListClusterJobsPaginator.paginate` method:
 `ListClusterJobsPaginator.paginate` returns
 `_PageIterator`\[[ListClusterJobsResultTypeDef](./type_defs.md#listclusterjobsresulttypedef)\].
 
+<a id="listclusterspaginator"></a>
+
 ## ListClustersPaginator
 
 Type annotations for `boto3.client("snowball").get_paginator("list_clusters")`.
@@ -72,10 +84,12 @@ Type annotations for `boto3.client("snowball").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snowball.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
-    return boto3.client("snowball").get_paginator("list_clusters")
+    return Session().client("snowball").get_paginator("list_clusters")
 ```
 
 Boto3 documentation:
@@ -89,6 +103,8 @@ Arguments for `ListClustersPaginator.paginate` method:
 `ListClustersPaginator.paginate` returns
 `_PageIterator`\[[ListClustersResultTypeDef](./type_defs.md#listclustersresulttypedef)\].
 
+<a id="listcompatibleimagespaginator"></a>
+
 ## ListCompatibleImagesPaginator
 
 Type annotations for
@@ -97,10 +113,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snowball.paginator import ListCompatibleImagesPaginator
 
 def get_list_compatible_images_paginator() -> ListCompatibleImagesPaginator:
-    return boto3.client("snowball").get_paginator("list_compatible_images")
+    return Session().client("snowball").get_paginator("list_compatible_images")
 ```
 
 Boto3 documentation:
@@ -114,6 +132,8 @@ Arguments for `ListCompatibleImagesPaginator.paginate` method:
 `ListCompatibleImagesPaginator.paginate` returns
 `_PageIterator`\[[ListCompatibleImagesResultTypeDef](./type_defs.md#listcompatibleimagesresulttypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("snowball").get_paginator("list_jobs")`.
@@ -121,10 +141,12 @@ Type annotations for `boto3.client("snowball").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snowball.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("snowball").get_paginator("list_jobs")
+    return Session().client("snowball").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:

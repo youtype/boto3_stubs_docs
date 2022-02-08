@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-macie-module"></a>
+
 # Literals for boto3 Macie module
 
 > [Index](..) > [Macie](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie.html#Macie)
 type annotations stubs module
-[mypy_boto3_macie](https://pypi.org/project/mypy-boto3-macie/).
+[mypy-boto3-macie](https://pypi.org/project/mypy-boto3-macie/).
 
 - [Literals for boto3 Macie module](#literals-for-boto3-macie-module)
   - [ListMemberAccountsPaginatorName](#listmemberaccountspaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [S3OneTimeClassificationTypeType](#s3onetimeclassificationtypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listmemberaccountspaginatorname"></a>
 
 ## ListMemberAccountsPaginatorName
 
@@ -25,6 +29,8 @@ Values:
 
 - `list_member_accounts`
 
+<a id="lists3resourcespaginatorname"></a>
+
 ## ListS3ResourcesPaginatorName
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_macie.literals import ListS3ResourcesPaginatorName
 Values:
 
 - `list_s3_resources`
+
+<a id="s3continuousclassificationtypetype"></a>
 
 ## S3ContinuousClassificationTypeType
 
@@ -45,6 +53,8 @@ Values:
 
 - `FULL`
 
+<a id="s3onetimeclassificationtypetype"></a>
+
 ## S3OneTimeClassificationTypeType
 
 ```python
@@ -55,6 +65,8 @@ Values:
 
 - `FULL`
 - `NONE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -363,6 +375,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

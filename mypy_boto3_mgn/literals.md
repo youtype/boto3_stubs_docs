@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mgn-module"></a>
+
 # Literals for boto3 mgn module
 
 > [Index](..) > [mgn](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
 type annotations stubs module
-[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+[mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [Literals for boto3 mgn module](#literals-for-boto3-mgn-module)
   - [ChangeServerLifeCycleStateSourceServerLifecycleStateType](#changeserverlifecyclestatesourceserverlifecyclestatetype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="changeserverlifecyclestatesourceserverlifecyclestatetype"></a>
+
 ## ChangeServerLifeCycleStateSourceServerLifecycleStateType
 
 ```python
@@ -46,6 +50,8 @@ Values:
 - `CUTOVER`
 - `READY_FOR_CUTOVER`
 - `READY_FOR_TEST`
+
+<a id="datareplicationerrorstringtype"></a>
 
 ## DataReplicationErrorStringType
 
@@ -72,6 +78,8 @@ Values:
 - `UNSTABLE_NETWORK`
 - `UNSUPPORTED_VM_CONFIGURATION`
 
+<a id="datareplicationinitiationstepnametype"></a>
+
 ## DataReplicationInitiationStepNameType
 
 ```python
@@ -92,6 +100,8 @@ Values:
 - `START_DATA_TRANSFER`
 - `WAIT`
 
+<a id="datareplicationinitiationstepstatustype"></a>
+
 ## DataReplicationInitiationStepStatusType
 
 ```python
@@ -105,6 +115,8 @@ Values:
 - `NOT_STARTED`
 - `SKIPPED`
 - `SUCCEEDED`
+
+<a id="datareplicationstatetype"></a>
 
 ## DataReplicationStateType
 
@@ -127,6 +139,8 @@ Values:
 - `STALLED`
 - `STOPPED`
 
+<a id="describejoblogitemspaginatorname"></a>
+
 ## DescribeJobLogItemsPaginatorName
 
 ```python
@@ -136,6 +150,8 @@ from mypy_boto3_mgn.literals import DescribeJobLogItemsPaginatorName
 Values:
 
 - `describe_job_log_items`
+
+<a id="describejobspaginatorname"></a>
 
 ## DescribeJobsPaginatorName
 
@@ -147,6 +163,8 @@ Values:
 
 - `describe_jobs`
 
+<a id="describereplicationconfigurationtemplatespaginatorname"></a>
+
 ## DescribeReplicationConfigurationTemplatesPaginatorName
 
 ```python
@@ -156,6 +174,8 @@ from mypy_boto3_mgn.literals import DescribeReplicationConfigurationTemplatesPag
 Values:
 
 - `describe_replication_configuration_templates`
+
+<a id="describesourceserverspaginatorname"></a>
 
 ## DescribeSourceServersPaginatorName
 
@@ -167,6 +187,8 @@ Values:
 
 - `describe_source_servers`
 
+<a id="describevcenterclientspaginatorname"></a>
+
 ## DescribeVcenterClientsPaginatorName
 
 ```python
@@ -176,6 +198,8 @@ from mypy_boto3_mgn.literals import DescribeVcenterClientsPaginatorName
 Values:
 
 - `describe_vcenter_clients`
+
+<a id="firstboottype"></a>
 
 ## FirstBootType
 
@@ -190,6 +214,8 @@ Values:
 - `UNKNOWN`
 - `WAITING`
 
+<a id="initiatedbytype"></a>
+
 ## InitiatedByType
 
 ```python
@@ -202,6 +228,8 @@ Values:
 - `START_CUTOVER`
 - `START_TEST`
 - `TERMINATE`
+
+<a id="joblogeventtype"></a>
 
 ## JobLogEventType
 
@@ -228,6 +256,8 @@ Values:
 - `SNAPSHOT_START`
 - `USING_PREVIOUS_SNAPSHOT`
 
+<a id="jobstatustype"></a>
+
 ## JobStatusType
 
 ```python
@@ -240,6 +270,8 @@ Values:
 - `PENDING`
 - `STARTED`
 
+<a id="jobtypetype"></a>
+
 ## JobTypeType
 
 ```python
@@ -251,6 +283,8 @@ Values:
 - `LAUNCH`
 - `TERMINATE`
 
+<a id="launchdispositiontype"></a>
+
 ## LaunchDispositionType
 
 ```python
@@ -261,6 +295,8 @@ Values:
 
 - `STARTED`
 - `STOPPED`
+
+<a id="launchstatustype"></a>
 
 ## LaunchStatusType
 
@@ -275,6 +311,8 @@ Values:
 - `LAUNCHED`
 - `PENDING`
 - `TERMINATED`
+
+<a id="lifecyclestatetype"></a>
 
 ## LifeCycleStateType
 
@@ -294,6 +332,8 @@ Values:
 - `STOPPED`
 - `TESTING`
 
+<a id="replicationconfigurationdataplaneroutingtype"></a>
+
 ## ReplicationConfigurationDataPlaneRoutingType
 
 ```python
@@ -304,6 +344,8 @@ Values:
 
 - `PRIVATE_IP`
 - `PUBLIC_IP`
+
+<a id="replicationconfigurationdefaultlargestagingdisktypetype"></a>
 
 ## ReplicationConfigurationDefaultLargeStagingDiskTypeType
 
@@ -316,6 +358,8 @@ Values:
 - `GP2`
 - `ST1`
 
+<a id="replicationconfigurationebsencryptiontype"></a>
+
 ## ReplicationConfigurationEbsEncryptionType
 
 ```python
@@ -326,6 +370,8 @@ Values:
 
 - `CUSTOM`
 - `DEFAULT`
+
+<a id="replicationconfigurationreplicateddiskstagingdisktypetype"></a>
 
 ## ReplicationConfigurationReplicatedDiskStagingDiskTypeType
 
@@ -342,6 +388,8 @@ Values:
 - `ST1`
 - `STANDARD`
 
+<a id="replicationtypetype"></a>
+
 ## ReplicationTypeType
 
 ```python
@@ -353,6 +401,8 @@ Values:
 - `AGENT_BASED`
 - `SNAPSHOT_SHIPPING`
 
+<a id="targetinstancetyperightsizingmethodtype"></a>
+
 ## TargetInstanceTypeRightSizingMethodType
 
 ```python
@@ -363,6 +413,8 @@ Values:
 
 - `BASIC`
 - `NONE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -671,6 +723,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

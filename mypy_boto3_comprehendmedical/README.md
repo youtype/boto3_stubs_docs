@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-comprehendmedical-module"></a>
+
 # Type annotations for boto3 ComprehendMedical module
 
 > [Index](..) > ComprehendMedical
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
-[mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
+[mypy-boto3-comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[comprehendmedical]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[comprehendmedical]'
+
+# standalone installation
 pip install mypy-boto3-comprehendmedical
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-comprehendmedical
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="comprehendmedicalclient"></a>
 
 ## ComprehendMedicalClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -61,6 +75,8 @@ from mypy_boto3_comprehendmedical.client import ComprehendMedicalClient
 - [stop_rx_norm_inference_job](./client.md#stop_rx_norm_inference_job)
 - [stop_snomedct_inference_job](./client.md#stop_snomedct_inference_job)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ComprehendMedicalClient [exceptions](./client.md#exceptions)
@@ -74,6 +90,8 @@ ComprehendMedicalClient [exceptions](./client.md#exceptions)
 - TextSizeLimitExceededException
 - TooManyRequestsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -106,6 +124,8 @@ from mypy_boto3_comprehendmedical.literals import AttributeNameType, ...
 - [SNOMEDCTRelationshipTypeType](./literals.md#snomedctrelationshiptypetype)
 - [SNOMEDCTTraitNameType](./literals.md#snomedcttraitnametype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

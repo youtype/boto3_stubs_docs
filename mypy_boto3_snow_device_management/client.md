@@ -1,3 +1,5 @@
+<a id="snowdevicemanagementclient-for-boto3-snowdevicemanagement-module"></a>
+
 # SnowDeviceManagementClient for boto3 SnowDeviceManagement module
 
 > [Index](..) > [SnowDeviceManagement](.) > SnowDeviceManagementClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
 type annotations stubs module
-[mypy_boto3_snow_device_management](https://pypi.org/project/mypy-boto3-snow-device-management/).
+[mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
 
 - [SnowDeviceManagementClient for boto3 SnowDeviceManagement module](#snowdevicemanagementclient-for-boto3-snowdevicemanagement-module)
   - [SnowDeviceManagementClient](#snowdevicemanagementclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="snowdevicemanagementclient"></a>
+
 ## SnowDeviceManagementClient
 
 Type annotations for `boto3.client("snow-device-management")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("snow-device-management")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_snow_device_management.client import SnowDeviceManagementClient
 
 def get_snow-device-management_client() -> SnowDeviceManagementClient:
-    return boto3.client("snow-device-management")
+    return Session().client("snow-device-management")
 ```
 
 Boto3 documentation:
 [SnowDeviceManagement.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -67,7 +74,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -80,6 +91,8 @@ Boto3 documentation:
 [SnowDeviceManagement.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -96,6 +109,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_task"></a>
 
 ### cancel_task
 
@@ -115,6 +130,8 @@ Keyword-only arguments:
 - `taskId`: `str` *(required)*
 
 Returns [CancelTaskOutputTypeDef](./type_defs.md#canceltaskoutputtypedef).
+
+<a id="create_task"></a>
 
 ### create_task
 
@@ -139,6 +156,8 @@ Keyword-only arguments:
 
 Returns [CreateTaskOutputTypeDef](./type_defs.md#createtaskoutputtypedef).
 
+<a id="describe_device"></a>
+
 ### describe_device
 
 Checks device-specific information, such as the device type, software version,
@@ -159,6 +178,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDeviceOutputTypeDef](./type_defs.md#describedeviceoutputtypedef).
+
+<a id="describe_device_ec2_instances"></a>
 
 ### describe_device_ec2_instances
 
@@ -181,6 +202,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceEc2OutputTypeDef](./type_defs.md#describedeviceec2outputtypedef).
 
+<a id="describe_execution"></a>
+
 ### describe_execution
 
 Checks the status of a remote task running on one or more target devices.
@@ -202,6 +225,8 @@ Keyword-only arguments:
 Returns
 [DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef).
 
+<a id="describe_task"></a>
+
 ### describe_task
 
 Checks the metadata for a given task on a device.
@@ -221,6 +246,8 @@ Keyword-only arguments:
 
 Returns [DescribeTaskOutputTypeDef](./type_defs.md#describetaskoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -239,6 +266,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_device_resources"></a>
 
 ### list_device_resources
 
@@ -263,6 +292,8 @@ Keyword-only arguments:
 Returns
 [ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef).
 
+<a id="list_devices"></a>
+
 ### list_devices
 
 Returns a list of all devices on your Amazon Web Services account that have
@@ -285,6 +316,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef).
+
+<a id="list_executions"></a>
 
 ### list_executions
 
@@ -309,6 +342,8 @@ Keyword-only arguments:
 Returns
 [ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags for a managed device or task.
@@ -328,6 +363,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="list_tasks"></a>
 
 ### list_tasks
 
@@ -350,6 +387,8 @@ Keyword-only arguments:
 
 Returns [ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or replaces tags on a device or task.
@@ -368,6 +407,8 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from a device or task.
@@ -385,6 +426,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

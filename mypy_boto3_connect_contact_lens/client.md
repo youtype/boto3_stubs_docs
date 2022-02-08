@@ -1,3 +1,5 @@
+<a id="connectcontactlensclient-for-boto3-connectcontactlens-module"></a>
+
 # ConnectContactLensClient for boto3 ConnectContactLens module
 
 > [Index](..) > [ConnectContactLens](.) > ConnectContactLensClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
 type annotations stubs module
-[mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
+[mypy-boto3-connect-contact-lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 - [ConnectContactLensClient for boto3 ConnectContactLens module](#connectcontactlensclient-for-boto3-connectcontactlens-module)
   - [ConnectContactLensClient](#connectcontactlensclient)
@@ -16,6 +18,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [list_realtime_contact_analysis_segments](#list_realtime_contact_analysis_segments)
 
+<a id="connectcontactlensclient"></a>
+
 ## ConnectContactLensClient
 
 Type annotations for `boto3.client("connect-contact-lens")`
@@ -23,14 +27,17 @@ Type annotations for `boto3.client("connect-contact-lens")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_connect_contact_lens.client import ConnectContactLensClient
 
 def get_connect-contact-lens_client() -> ConnectContactLensClient:
-    return boto3.client("connect-contact-lens")
+    return Session().client("connect-contact-lens")
 ```
 
 Boto3 documentation:
 [ConnectContactLens.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -53,7 +60,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -65,6 +76,8 @@ Boto3 documentation:
 [ConnectContactLens.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -81,6 +94,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -100,6 +115,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_realtime_contact_analysis_segments"></a>
 
 ### list_realtime_contact_analysis_segments
 

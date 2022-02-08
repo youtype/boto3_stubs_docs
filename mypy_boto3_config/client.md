@@ -1,3 +1,5 @@
+<a id="configserviceclient-for-boto3-configservice-module"></a>
+
 # ConfigServiceClient for boto3 ConfigService module
 
 > [Index](..) > [ConfigService](.) > ConfigServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module
-[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 - [ConfigServiceClient for boto3 ConfigService module](#configserviceclient-for-boto3-configservice-module)
   - [ConfigServiceClient](#configserviceclient)
@@ -102,6 +104,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="configserviceclient"></a>
+
 ## ConfigServiceClient
 
 Type annotations for `boto3.client("config")`
@@ -109,14 +113,17 @@ Type annotations for `boto3.client("config")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_config.client import ConfigServiceClient
 
 def get_config_client() -> ConfigServiceClient:
-    return boto3.client("config")
+    return Session().client("config")
 ```
 
 Boto3 documentation:
 [ConfigService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -187,7 +194,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -199,6 +210,8 @@ Boto3 documentation:
 [ConfigService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_get_aggregate_resource_config"></a>
 
 ### batch_get_aggregate_resource_config
 
@@ -224,6 +237,8 @@ Keyword-only arguments:
 Returns
 [BatchGetAggregateResourceConfigResponseTypeDef](./type_defs.md#batchgetaggregateresourceconfigresponsetypedef).
 
+<a id="batch_get_resource_config"></a>
+
 ### batch_get_resource_config
 
 Returns the `BaseConfigurationItem` for one or more requested resources.
@@ -245,6 +260,8 @@ Keyword-only arguments:
 Returns
 [BatchGetResourceConfigResponseTypeDef](./type_defs.md#batchgetresourceconfigresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -259,6 +276,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_aggregation_authorization"></a>
 
 ### delete_aggregation_authorization
 
@@ -279,6 +298,8 @@ Keyword-only arguments:
 - `AuthorizedAccountId`: `str` *(required)*
 - `AuthorizedAwsRegion`: `str` *(required)*
 
+<a id="delete_config_rule"></a>
+
 ### delete_config_rule
 
 Deletes the specified Config rule and all of its evaluation results.
@@ -294,6 +315,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConfigRuleName`: `str` *(required)*
+
+<a id="delete_configuration_aggregator"></a>
 
 ### delete_configuration_aggregator
 
@@ -313,6 +336,8 @@ Keyword-only arguments:
 
 - `ConfigurationAggregatorName`: `str` *(required)*
 
+<a id="delete_configuration_recorder"></a>
+
 ### delete_configuration_recorder
 
 Deletes the configuration recorder.
@@ -329,6 +354,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
+
+<a id="delete_conformance_pack"></a>
 
 ### delete_conformance_pack
 
@@ -347,6 +374,8 @@ Keyword-only arguments:
 
 - `ConformancePackName`: `str` *(required)*
 
+<a id="delete_delivery_channel"></a>
+
 ### delete_delivery_channel
 
 Deletes the delivery channel.
@@ -362,6 +391,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeliveryChannelName`: `str` *(required)*
+
+<a id="delete_evaluation_results"></a>
 
 ### delete_evaluation_results
 
@@ -381,6 +412,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_organization_config_rule"></a>
+
 ### delete_organization_config_rule
 
 Deletes the specified organization config rule and all of its evaluation
@@ -399,6 +432,8 @@ Keyword-only arguments:
 
 - `OrganizationConfigRuleName`: `str` *(required)*
 
+<a id="delete_organization_conformance_pack"></a>
+
 ### delete_organization_conformance_pack
 
 Deletes the specified organization conformance pack and all of the config rules
@@ -416,6 +451,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OrganizationConformancePackName`: `str` *(required)*
+
+<a id="delete_pending_aggregation_request"></a>
 
 ### delete_pending_aggregation_request
 
@@ -436,6 +473,8 @@ Keyword-only arguments:
 - `RequesterAccountId`: `str` *(required)*
 - `RequesterAwsRegion`: `str` *(required)*
 
+<a id="delete_remediation_configuration"></a>
+
 ### delete_remediation_configuration
 
 Deletes the remediation configuration.
@@ -455,6 +494,8 @@ Keyword-only arguments:
 - `ResourceType`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_remediation_exceptions"></a>
 
 ### delete_remediation_exceptions
 
@@ -479,6 +520,8 @@ Keyword-only arguments:
 Returns
 [DeleteRemediationExceptionsResponseTypeDef](./type_defs.md#deleteremediationexceptionsresponsetypedef).
 
+<a id="delete_resource_config"></a>
+
 ### delete_resource_config
 
 Records the configuration state for a custom resource that has been deleted.
@@ -496,6 +539,8 @@ Keyword-only arguments:
 - `ResourceType`: `str` *(required)*
 - `ResourceId`: `str` *(required)*
 
+<a id="delete_retention_configuration"></a>
+
 ### delete_retention_configuration
 
 Deletes the retention configuration.
@@ -512,6 +557,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RetentionConfigurationName`: `str` *(required)*
+
+<a id="delete_stored_query"></a>
 
 ### delete_stored_query
 
@@ -532,6 +579,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deliver_config_snapshot"></a>
+
 ### deliver_config_snapshot
 
 Schedules delivery of a configuration snapshot to the Amazon S3 bucket in the
@@ -551,6 +600,8 @@ Keyword-only arguments:
 
 Returns
 [DeliverConfigSnapshotResponseTypeDef](./type_defs.md#deliverconfigsnapshotresponsetypedef).
+
+<a id="describe_aggregate_compliance_by_config_rules"></a>
 
 ### describe_aggregate_compliance_by_config_rules
 
@@ -576,6 +627,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef).
+
+<a id="describe_aggregate_compliance_by_conformance_packs"></a>
 
 ### describe_aggregate_compliance_by_conformance_packs
 
@@ -604,6 +657,8 @@ Keyword-only arguments:
 Returns
 [DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef).
 
+<a id="describe_aggregation_authorizations"></a>
+
 ### describe_aggregation_authorizations
 
 Returns a list of authorizations granted to various aggregator accounts and
@@ -625,6 +680,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef).
+
+<a id="describe_compliance_by_config_rule"></a>
 
 ### describe_compliance_by_config_rule
 
@@ -648,6 +705,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef).
+
+<a id="describe_compliance_by_resource"></a>
 
 ### describe_compliance_by_resource
 
@@ -674,6 +733,8 @@ Keyword-only arguments:
 Returns
 [DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef).
 
+<a id="describe_config_rule_evaluation_status"></a>
+
 ### describe_config_rule_evaluation_status
 
 Returns status information for each of your Config managed rules.
@@ -696,6 +757,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef).
 
+<a id="describe_config_rules"></a>
+
 ### describe_config_rules
 
 Returns details about your Config rules.
@@ -715,6 +778,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef).
+
+<a id="describe_configuration_aggregator_sources_status"></a>
 
 ### describe_configuration_aggregator_sources_status
 
@@ -741,6 +806,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef).
 
+<a id="describe_configuration_aggregators"></a>
+
 ### describe_configuration_aggregators
 
 Returns the details of one or more configuration aggregators.
@@ -763,6 +830,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef).
 
+<a id="describe_configuration_recorder_status"></a>
+
 ### describe_configuration_recorder_status
 
 Returns the current status of the specified configuration recorder.
@@ -783,6 +852,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationRecorderStatusResponseTypeDef](./type_defs.md#describeconfigurationrecorderstatusresponsetypedef).
 
+<a id="describe_configuration_recorders"></a>
+
 ### describe_configuration_recorders
 
 Returns the details for the specified configuration recorders.
@@ -802,6 +873,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConfigurationRecordersResponseTypeDef](./type_defs.md#describeconfigurationrecordersresponsetypedef).
+
+<a id="describe_conformance_pack_compliance"></a>
 
 ### describe_conformance_pack_compliance
 
@@ -827,6 +900,8 @@ Keyword-only arguments:
 Returns
 [DescribeConformancePackComplianceResponseTypeDef](./type_defs.md#describeconformancepackcomplianceresponsetypedef).
 
+<a id="describe_conformance_pack_status"></a>
+
 ### describe_conformance_pack_status
 
 Provides one or more conformance packs deployment status.
@@ -848,6 +923,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef).
+
+<a id="describe_conformance_packs"></a>
 
 ### describe_conformance_packs
 
@@ -871,6 +948,8 @@ Keyword-only arguments:
 Returns
 [DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef).
 
+<a id="describe_delivery_channel_status"></a>
+
 ### describe_delivery_channel_status
 
 Returns the current status of the specified delivery channel.
@@ -891,6 +970,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeliveryChannelStatusResponseTypeDef](./type_defs.md#describedeliverychannelstatusresponsetypedef).
 
+<a id="describe_delivery_channels"></a>
+
 ### describe_delivery_channels
 
 Returns details about the specified delivery channel.
@@ -910,6 +991,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDeliveryChannelsResponseTypeDef](./type_defs.md#describedeliverychannelsresponsetypedef).
+
+<a id="describe_organization_config_rule_statuses"></a>
 
 ### describe_organization_config_rule_statuses
 
@@ -933,6 +1016,8 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef).
 
+<a id="describe_organization_config_rules"></a>
+
 ### describe_organization_config_rules
 
 Returns a list of organization config rules.
@@ -954,6 +1039,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef).
+
+<a id="describe_organization_conformance_pack_statuses"></a>
 
 ### describe_organization_conformance_pack_statuses
 
@@ -978,6 +1065,8 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef).
 
+<a id="describe_organization_conformance_packs"></a>
+
 ### describe_organization_conformance_packs
 
 Returns a list of organization conformance packs.
@@ -1000,6 +1089,8 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef).
 
+<a id="describe_pending_aggregation_requests"></a>
+
 ### describe_pending_aggregation_requests
 
 Returns a list of all pending aggregation requests.
@@ -1021,6 +1112,8 @@ Keyword-only arguments:
 Returns
 [DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef).
 
+<a id="describe_remediation_configurations"></a>
+
 ### describe_remediation_configurations
 
 Returns the details of one or more remediation configurations.
@@ -1040,6 +1133,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRemediationConfigurationsResponseTypeDef](./type_defs.md#describeremediationconfigurationsresponsetypedef).
+
+<a id="describe_remediation_exceptions"></a>
 
 ### describe_remediation_exceptions
 
@@ -1064,6 +1159,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRemediationExceptionsResponseTypeDef](./type_defs.md#describeremediationexceptionsresponsetypedef).
+
+<a id="describe_remediation_execution_status"></a>
 
 ### describe_remediation_execution_status
 
@@ -1091,6 +1188,8 @@ Keyword-only arguments:
 Returns
 [DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef).
 
+<a id="describe_retention_configurations"></a>
+
 ### describe_retention_configurations
 
 Returns the details of one or more retention configurations.
@@ -1112,6 +1211,8 @@ Keyword-only arguments:
 Returns
 [DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1129,6 +1230,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_aggregate_compliance_details_by_config_rule"></a>
 
 ### get_aggregate_compliance_details_by_config_rule
 
@@ -1158,6 +1261,8 @@ Keyword-only arguments:
 Returns
 [GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef).
 
+<a id="get_aggregate_config_rule_compliance_summary"></a>
+
 ### get_aggregate_config_rule_compliance_summary
 
 Returns the number of compliant and noncompliant rules for one or more accounts
@@ -1184,6 +1289,8 @@ Keyword-only arguments:
 
 Returns
 [GetAggregateConfigRuleComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconfigrulecompliancesummaryresponsetypedef).
+
+<a id="get_aggregate_conformance_pack_compliance_summary"></a>
 
 ### get_aggregate_conformance_pack_compliance_summary
 
@@ -1213,6 +1320,8 @@ Keyword-only arguments:
 Returns
 [GetAggregateConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getaggregateconformancepackcompliancesummaryresponsetypedef).
 
+<a id="get_aggregate_discovered_resource_counts"></a>
+
 ### get_aggregate_discovered_resource_counts
 
 Returns the resource counts across accounts and regions that are present in
@@ -1240,6 +1349,8 @@ Keyword-only arguments:
 Returns
 [GetAggregateDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getaggregatediscoveredresourcecountsresponsetypedef).
 
+<a id="get_aggregate_resource_config"></a>
+
 ### get_aggregate_resource_config
 
 Returns configuration item that is aggregated for your specific resource in a
@@ -1263,6 +1374,8 @@ Keyword-only arguments:
 
 Returns
 [GetAggregateResourceConfigResponseTypeDef](./type_defs.md#getaggregateresourceconfigresponsetypedef).
+
+<a id="get_compliance_details_by_config_rule"></a>
 
 ### get_compliance_details_by_config_rule
 
@@ -1288,6 +1401,8 @@ Keyword-only arguments:
 Returns
 [GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef).
 
+<a id="get_compliance_details_by_resource"></a>
+
 ### get_compliance_details_by_resource
 
 Returns the evaluation results for the specified Amazon Web Services resource.
@@ -1312,6 +1427,8 @@ Keyword-only arguments:
 Returns
 [GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef).
 
+<a id="get_compliance_summary_by_config_rule"></a>
+
 ### get_compliance_summary_by_config_rule
 
 Returns the number of Config rules that are compliant and noncompliant, up to a
@@ -1325,6 +1442,8 @@ Boto3 documentation:
 
 Returns
 [GetComplianceSummaryByConfigRuleResponseTypeDef](./type_defs.md#getcompliancesummarybyconfigruleresponsetypedef).
+
+<a id="get_compliance_summary_by_resource_type"></a>
 
 ### get_compliance_summary_by_resource_type
 
@@ -1346,6 +1465,8 @@ Keyword-only arguments:
 
 Returns
 [GetComplianceSummaryByResourceTypeResponseTypeDef](./type_defs.md#getcompliancesummarybyresourcetyperesponsetypedef).
+
+<a id="get_conformance_pack_compliance_details"></a>
 
 ### get_conformance_pack_compliance_details
 
@@ -1372,6 +1493,8 @@ Keyword-only arguments:
 Returns
 [GetConformancePackComplianceDetailsResponseTypeDef](./type_defs.md#getconformancepackcompliancedetailsresponsetypedef).
 
+<a id="get_conformance_pack_compliance_summary"></a>
+
 ### get_conformance_pack_compliance_summary
 
 Returns compliance details for the conformance pack based on the cumulative
@@ -1394,6 +1517,8 @@ Keyword-only arguments:
 
 Returns
 [GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef).
+
+<a id="get_discovered_resource_counts"></a>
 
 ### get_discovered_resource_counts
 
@@ -1418,6 +1543,8 @@ Keyword-only arguments:
 
 Returns
 [GetDiscoveredResourceCountsResponseTypeDef](./type_defs.md#getdiscoveredresourcecountsresponsetypedef).
+
+<a id="get_organization_config_rule_detailed_status"></a>
 
 ### get_organization_config_rule_detailed_status
 
@@ -1444,6 +1571,8 @@ Keyword-only arguments:
 Returns
 [GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef).
 
+<a id="get_organization_conformance_pack_detailed_status"></a>
+
 ### get_organization_conformance_pack_detailed_status
 
 Returns detailed status for each member account within an organization for a
@@ -1469,6 +1598,8 @@ Keyword-only arguments:
 
 Returns
 [GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef).
+
+<a id="get_resource_config_history"></a>
 
 ### get_resource_config_history
 
@@ -1498,6 +1629,8 @@ Keyword-only arguments:
 Returns
 [GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef).
 
+<a id="get_stored_query"></a>
+
 ### get_stored_query
 
 Returns the details of a specific stored query.
@@ -1516,6 +1649,8 @@ Keyword-only arguments:
 
 Returns
 [GetStoredQueryResponseTypeDef](./type_defs.md#getstoredqueryresponsetypedef).
+
+<a id="list_aggregate_discovered_resources"></a>
 
 ### list_aggregate_discovered_resources
 
@@ -1543,6 +1678,8 @@ Keyword-only arguments:
 Returns
 [ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef).
 
+<a id="list_discovered_resources"></a>
+
 ### list_discovered_resources
 
 Accepts a resource type and returns a list of resource identifiers for the
@@ -1569,6 +1706,8 @@ Keyword-only arguments:
 Returns
 [ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef).
 
+<a id="list_stored_queries"></a>
+
 ### list_stored_queries
 
 Lists the stored queries for a single Amazon Web Services account and a single
@@ -1590,6 +1729,8 @@ Keyword-only arguments:
 Returns
 [ListStoredQueriesResponseTypeDef](./type_defs.md#liststoredqueriesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for Config resource.
@@ -1610,6 +1751,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_aggregation_authorization"></a>
 
 ### put_aggregation_authorization
 
@@ -1634,6 +1777,8 @@ Keyword-only arguments:
 Returns
 [PutAggregationAuthorizationResponseTypeDef](./type_defs.md#putaggregationauthorizationresponsetypedef).
 
+<a id="put_config_rule"></a>
+
 ### put_config_rule
 
 Adds or updates an Config rule for evaluating whether your Amazon Web Services
@@ -1652,6 +1797,8 @@ Keyword-only arguments:
 - `ConfigRule`: [ConfigRuleTypeDef](./type_defs.md#configruletypedef)
   *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="put_configuration_aggregator"></a>
 
 ### put_configuration_aggregator
 
@@ -1679,6 +1826,8 @@ Keyword-only arguments:
 Returns
 [PutConfigurationAggregatorResponseTypeDef](./type_defs.md#putconfigurationaggregatorresponsetypedef).
 
+<a id="put_configuration_recorder"></a>
+
 ### put_configuration_recorder
 
 Creates a new configuration recorder to record the selected resource
@@ -1698,6 +1847,8 @@ Keyword-only arguments:
 - `ConfigurationRecorder`:
   [ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)
   *(required)*
+
+<a id="put_conformance_pack"></a>
 
 ### put_conformance_pack
 
@@ -1724,6 +1875,8 @@ Keyword-only arguments:
 Returns
 [PutConformancePackResponseTypeDef](./type_defs.md#putconformancepackresponsetypedef).
 
+<a id="put_delivery_channel"></a>
+
 ### put_delivery_channel
 
 Creates a delivery channel object to deliver configuration information to an
@@ -1741,6 +1894,8 @@ Keyword-only arguments:
 
 - `DeliveryChannel`:
   [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef) *(required)*
+
+<a id="put_evaluations"></a>
 
 ### put_evaluations
 
@@ -1764,6 +1919,8 @@ Keyword-only arguments:
 Returns
 [PutEvaluationsResponseTypeDef](./type_defs.md#putevaluationsresponsetypedef).
 
+<a id="put_external_evaluation"></a>
+
 ### put_external_evaluation
 
 Add or updates the evaluations for process checks.
@@ -1784,6 +1941,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_organization_config_rule"></a>
 
 ### put_organization_config_rule
 
@@ -1811,6 +1970,8 @@ Keyword-only arguments:
 
 Returns
 [PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).
+
+<a id="put_organization_conformance_pack"></a>
 
 ### put_organization_conformance_pack
 
@@ -1840,6 +2001,8 @@ Keyword-only arguments:
 Returns
 [PutOrganizationConformancePackResponseTypeDef](./type_defs.md#putorganizationconformancepackresponsetypedef).
 
+<a id="put_remediation_configurations"></a>
+
 ### put_remediation_configurations
 
 Adds or updates the remediation configuration with a specific Config rule with
@@ -1862,6 +2025,8 @@ Keyword-only arguments:
 
 Returns
 [PutRemediationConfigurationsResponseTypeDef](./type_defs.md#putremediationconfigurationsresponsetypedef).
+
+<a id="put_remediation_exceptions"></a>
 
 ### put_remediation_exceptions
 
@@ -1889,6 +2054,8 @@ Keyword-only arguments:
 Returns
 [PutRemediationExceptionsResponseTypeDef](./type_defs.md#putremediationexceptionsresponsetypedef).
 
+<a id="put_resource_config"></a>
+
 ### put_resource_config
 
 Records the configuration state for the resource provided in the request.
@@ -1909,6 +2076,8 @@ Keyword-only arguments:
 - `Configuration`: `str` *(required)*
 - `ResourceName`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="put_retention_configuration"></a>
 
 ### put_retention_configuration
 
@@ -1931,6 +2100,8 @@ Keyword-only arguments:
 Returns
 [PutRetentionConfigurationResponseTypeDef](./type_defs.md#putretentionconfigurationresponsetypedef).
 
+<a id="put_stored_query"></a>
+
 ### put_stored_query
 
 Saves a new query or updates an existing saved query.
@@ -1951,6 +2122,8 @@ Keyword-only arguments:
 
 Returns
 [PutStoredQueryResponseTypeDef](./type_defs.md#putstoredqueryresponsetypedef).
+
+<a id="select_aggregate_resource_config"></a>
 
 ### select_aggregate_resource_config
 
@@ -1976,6 +2149,8 @@ Keyword-only arguments:
 Returns
 [SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef).
 
+<a id="select_resource_config"></a>
+
 ### select_resource_config
 
 .
@@ -1997,6 +2172,8 @@ Keyword-only arguments:
 Returns
 [SelectResourceConfigResponseTypeDef](./type_defs.md#selectresourceconfigresponsetypedef).
 
+<a id="start_config_rules_evaluation"></a>
+
 ### start_config_rules_evaluation
 
 Runs an on-demand evaluation for the specified Config rules against the last
@@ -2017,6 +2194,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_configuration_recorder"></a>
+
 ### start_configuration_recorder
 
 Starts recording configurations of the Amazon Web Services resources you have
@@ -2034,6 +2213,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
+
+<a id="start_remediation_execution"></a>
 
 ### start_remediation_execution
 
@@ -2059,6 +2240,8 @@ Keyword-only arguments:
 Returns
 [StartRemediationExecutionResponseTypeDef](./type_defs.md#startremediationexecutionresponsetypedef).
 
+<a id="stop_configuration_recorder"></a>
+
 ### stop_configuration_recorder
 
 Stops recording configurations of the Amazon Web Services resources you have
@@ -2077,6 +2260,8 @@ Keyword-only arguments:
 
 - `ConfigurationRecorderName`: `str` *(required)*
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified resourceArn.
@@ -2094,6 +2279,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -2110,6 +2297,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

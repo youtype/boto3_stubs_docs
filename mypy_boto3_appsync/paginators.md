@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-appsync-module"></a>
+
 # Paginators for boto3 AppSync module
 
 > [Index](..) > [AppSync](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appsync.html#AppSync)
 type annotations stubs module
-[mypy_boto3_appsync](https://pypi.org/project/mypy-boto3-appsync/).
+[mypy-boto3-appsync](https://pypi.org/project/mypy-boto3-appsync/).
 
 - [Paginators for boto3 AppSync module](#paginators-for-boto3-appsync-module)
   - [ListApiKeysPaginator](#listapikeyspaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListResolversByFunctionPaginator](#listresolversbyfunctionpaginator)
   - [ListTypesPaginator](#listtypespaginator)
 
+<a id="listapikeyspaginator"></a>
+
 ## ListApiKeysPaginator
 
 Type annotations for `boto3.client("appsync").get_paginator("list_api_keys")`.
@@ -23,10 +27,12 @@ Type annotations for `boto3.client("appsync").get_paginator("list_api_keys")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListApiKeysPaginator
 
 def get_list_api_keys_paginator() -> ListApiKeysPaginator:
-    return boto3.client("appsync").get_paginator("list_api_keys")
+    return Session().client("appsync").get_paginator("list_api_keys")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ListApiKeysPaginator.paginate` method:
 `ListApiKeysPaginator.paginate` returns
 `_PageIterator`\[[ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef)\].
 
+<a id="listdatasourcespaginator"></a>
+
 ## ListDataSourcesPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListDataSourcesPaginator
 
 def get_list_data_sources_paginator() -> ListDataSourcesPaginator:
-    return boto3.client("appsync").get_paginator("list_data_sources")
+    return Session().client("appsync").get_paginator("list_data_sources")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListDataSourcesPaginator.paginate` method:
 `ListDataSourcesPaginator.paginate` returns
 `_PageIterator`\[[ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef)\].
 
+<a id="listfunctionspaginator"></a>
+
 ## ListFunctionsPaginator
 
 Type annotations for `boto3.client("appsync").get_paginator("list_functions")`.
@@ -74,10 +86,12 @@ Type annotations for `boto3.client("appsync").get_paginator("list_functions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListFunctionsPaginator
 
 def get_list_functions_paginator() -> ListFunctionsPaginator:
-    return boto3.client("appsync").get_paginator("list_functions")
+    return Session().client("appsync").get_paginator("list_functions")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListFunctionsPaginator.paginate` method:
 `ListFunctionsPaginator.paginate` returns
 `_PageIterator`\[[ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef)\].
 
+<a id="listgraphqlapispaginator"></a>
+
 ## ListGraphqlApisPaginator
 
 Type annotations for
@@ -100,10 +116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListGraphqlApisPaginator
 
 def get_list_graphql_apis_paginator() -> ListGraphqlApisPaginator:
-    return boto3.client("appsync").get_paginator("list_graphql_apis")
+    return Session().client("appsync").get_paginator("list_graphql_apis")
 ```
 
 Boto3 documentation:
@@ -117,6 +135,8 @@ Arguments for `ListGraphqlApisPaginator.paginate` method:
 `ListGraphqlApisPaginator.paginate` returns
 `_PageIterator`\[[ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef)\].
 
+<a id="listresolverspaginator"></a>
+
 ## ListResolversPaginator
 
 Type annotations for `boto3.client("appsync").get_paginator("list_resolvers")`.
@@ -124,10 +144,12 @@ Type annotations for `boto3.client("appsync").get_paginator("list_resolvers")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListResolversPaginator
 
 def get_list_resolvers_paginator() -> ListResolversPaginator:
-    return boto3.client("appsync").get_paginator("list_resolvers")
+    return Session().client("appsync").get_paginator("list_resolvers")
 ```
 
 Boto3 documentation:
@@ -143,6 +165,8 @@ Arguments for `ListResolversPaginator.paginate` method:
 `ListResolversPaginator.paginate` returns
 `_PageIterator`\[[ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef)\].
 
+<a id="listresolversbyfunctionpaginator"></a>
+
 ## ListResolversByFunctionPaginator
 
 Type annotations for
@@ -151,10 +175,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListResolversByFunctionPaginator
 
 def get_list_resolvers_by_function_paginator() -> ListResolversByFunctionPaginator:
-    return boto3.client("appsync").get_paginator("list_resolvers_by_function")
+    return Session().client("appsync").get_paginator("list_resolvers_by_function")
 ```
 
 Boto3 documentation:
@@ -170,6 +196,8 @@ Arguments for `ListResolversByFunctionPaginator.paginate` method:
 `ListResolversByFunctionPaginator.paginate` returns
 `_PageIterator`\[[ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef)\].
 
+<a id="listtypespaginator"></a>
+
 ## ListTypesPaginator
 
 Type annotations for `boto3.client("appsync").get_paginator("list_types")`.
@@ -177,10 +205,12 @@ Type annotations for `boto3.client("appsync").get_paginator("list_types")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_appsync.paginator import ListTypesPaginator
 
 def get_list_types_paginator() -> ListTypesPaginator:
-    return boto3.client("appsync").get_paginator("list_types")
+    return Session().client("appsync").get_paginator("list_types")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-configservice-module"></a>
+
 # Paginators for boto3 ConfigService module
 
 > [Index](..) > [ConfigService](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module
-[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 - [Paginators for boto3 ConfigService module](#paginators-for-boto3-configservice-module)
   - [DescribeAggregateComplianceByConfigRulesPaginator](#describeaggregatecompliancebyconfigrulespaginator)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [SelectAggregateResourceConfigPaginator](#selectaggregateresourceconfigpaginator)
   - [SelectResourceConfigPaginator](#selectresourceconfigpaginator)
 
+<a id="describeaggregatecompliancebyconfigrulespaginator"></a>
+
 ## DescribeAggregateComplianceByConfigRulesPaginator
 
 Type annotations for
@@ -47,10 +51,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRulesPaginator
 
 def get_describe_aggregate_compliance_by_config_rules_paginator() -> DescribeAggregateComplianceByConfigRulesPaginator:
-    return boto3.client("config").get_paginator("describe_aggregate_compliance_by_config_rules")
+    return Session().client("config").get_paginator("describe_aggregate_compliance_by_config_rules")
 ```
 
 Boto3 documentation:
@@ -68,6 +74,8 @@ method:
 `DescribeAggregateComplianceByConfigRulesPaginator.paginate` returns
 `_PageIterator`\[[DescribeAggregateComplianceByConfigRulesResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconfigrulesresponsetypedef)\].
 
+<a id="describeaggregatecompliancebyconformancepackspaginator"></a>
+
 ## DescribeAggregateComplianceByConformancePacksPaginator
 
 Type annotations for
@@ -76,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeAggregateComplianceByConformancePacksPaginator
 
 def get_describe_aggregate_compliance_by_conformance_packs_paginator() -> DescribeAggregateComplianceByConformancePacksPaginator:
-    return boto3.client("config").get_paginator("describe_aggregate_compliance_by_conformance_packs")
+    return Session().client("config").get_paginator("describe_aggregate_compliance_by_conformance_packs")
 ```
 
 Boto3 documentation:
@@ -97,6 +107,8 @@ method:
 `DescribeAggregateComplianceByConformancePacksPaginator.paginate` returns
 `_PageIterator`\[[DescribeAggregateComplianceByConformancePacksResponseTypeDef](./type_defs.md#describeaggregatecompliancebyconformancepacksresponsetypedef)\].
 
+<a id="describeaggregationauthorizationspaginator"></a>
+
 ## DescribeAggregationAuthorizationsPaginator
 
 Type annotations for
@@ -105,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeAggregationAuthorizationsPaginator
 
 def get_describe_aggregation_authorizations_paginator() -> DescribeAggregationAuthorizationsPaginator:
-    return boto3.client("config").get_paginator("describe_aggregation_authorizations")
+    return Session().client("config").get_paginator("describe_aggregation_authorizations")
 ```
 
 Boto3 documentation:
@@ -122,6 +136,8 @@ Arguments for `DescribeAggregationAuthorizationsPaginator.paginate` method:
 `DescribeAggregationAuthorizationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAggregationAuthorizationsResponseTypeDef](./type_defs.md#describeaggregationauthorizationsresponsetypedef)\].
 
+<a id="describecompliancebyconfigrulepaginator"></a>
+
 ## DescribeComplianceByConfigRulePaginator
 
 Type annotations for
@@ -130,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeComplianceByConfigRulePaginator
 
 def get_describe_compliance_by_config_rule_paginator() -> DescribeComplianceByConfigRulePaginator:
-    return boto3.client("config").get_paginator("describe_compliance_by_config_rule")
+    return Session().client("config").get_paginator("describe_compliance_by_config_rule")
 ```
 
 Boto3 documentation:
@@ -150,6 +168,8 @@ Arguments for `DescribeComplianceByConfigRulePaginator.paginate` method:
 `DescribeComplianceByConfigRulePaginator.paginate` returns
 `_PageIterator`\[[DescribeComplianceByConfigRuleResponseTypeDef](./type_defs.md#describecompliancebyconfigruleresponsetypedef)\].
 
+<a id="describecompliancebyresourcepaginator"></a>
+
 ## DescribeComplianceByResourcePaginator
 
 Type annotations for
@@ -158,10 +178,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeComplianceByResourcePaginator
 
 def get_describe_compliance_by_resource_paginator() -> DescribeComplianceByResourcePaginator:
-    return boto3.client("config").get_paginator("describe_compliance_by_resource")
+    return Session().client("config").get_paginator("describe_compliance_by_resource")
 ```
 
 Boto3 documentation:
@@ -179,6 +201,8 @@ Arguments for `DescribeComplianceByResourcePaginator.paginate` method:
 `DescribeComplianceByResourcePaginator.paginate` returns
 `_PageIterator`\[[DescribeComplianceByResourceResponseTypeDef](./type_defs.md#describecompliancebyresourceresponsetypedef)\].
 
+<a id="describeconfigruleevaluationstatuspaginator"></a>
+
 ## DescribeConfigRuleEvaluationStatusPaginator
 
 Type annotations for
@@ -187,10 +211,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeConfigRuleEvaluationStatusPaginator
 
 def get_describe_config_rule_evaluation_status_paginator() -> DescribeConfigRuleEvaluationStatusPaginator:
-    return boto3.client("config").get_paginator("describe_config_rule_evaluation_status")
+    return Session().client("config").get_paginator("describe_config_rule_evaluation_status")
 ```
 
 Boto3 documentation:
@@ -205,6 +231,8 @@ Arguments for `DescribeConfigRuleEvaluationStatusPaginator.paginate` method:
 `DescribeConfigRuleEvaluationStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeConfigRuleEvaluationStatusResponseTypeDef](./type_defs.md#describeconfigruleevaluationstatusresponsetypedef)\].
 
+<a id="describeconfigrulespaginator"></a>
+
 ## DescribeConfigRulesPaginator
 
 Type annotations for
@@ -213,10 +241,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeConfigRulesPaginator
 
 def get_describe_config_rules_paginator() -> DescribeConfigRulesPaginator:
-    return boto3.client("config").get_paginator("describe_config_rules")
+    return Session().client("config").get_paginator("describe_config_rules")
 ```
 
 Boto3 documentation:
@@ -231,6 +261,8 @@ Arguments for `DescribeConfigRulesPaginator.paginate` method:
 `DescribeConfigRulesPaginator.paginate` returns
 `_PageIterator`\[[DescribeConfigRulesResponseTypeDef](./type_defs.md#describeconfigrulesresponsetypedef)\].
 
+<a id="describeconfigurationaggregatorsourcesstatuspaginator"></a>
+
 ## DescribeConfigurationAggregatorSourcesStatusPaginator
 
 Type annotations for
@@ -239,10 +271,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeConfigurationAggregatorSourcesStatusPaginator
 
 def get_describe_configuration_aggregator_sources_status_paginator() -> DescribeConfigurationAggregatorSourcesStatusPaginator:
-    return boto3.client("config").get_paginator("describe_configuration_aggregator_sources_status")
+    return Session().client("config").get_paginator("describe_configuration_aggregator_sources_status")
 ```
 
 Boto3 documentation:
@@ -260,6 +294,8 @@ method:
 `DescribeConfigurationAggregatorSourcesStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeConfigurationAggregatorSourcesStatusResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsourcesstatusresponsetypedef)\].
 
+<a id="describeconfigurationaggregatorspaginator"></a>
+
 ## DescribeConfigurationAggregatorsPaginator
 
 Type annotations for
@@ -268,10 +304,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeConfigurationAggregatorsPaginator
 
 def get_describe_configuration_aggregators_paginator() -> DescribeConfigurationAggregatorsPaginator:
-    return boto3.client("config").get_paginator("describe_configuration_aggregators")
+    return Session().client("config").get_paginator("describe_configuration_aggregators")
 ```
 
 Boto3 documentation:
@@ -286,6 +324,8 @@ Arguments for `DescribeConfigurationAggregatorsPaginator.paginate` method:
 `DescribeConfigurationAggregatorsPaginator.paginate` returns
 `_PageIterator`\[[DescribeConfigurationAggregatorsResponseTypeDef](./type_defs.md#describeconfigurationaggregatorsresponsetypedef)\].
 
+<a id="describeconformancepackstatuspaginator"></a>
+
 ## DescribeConformancePackStatusPaginator
 
 Type annotations for
@@ -294,10 +334,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeConformancePackStatusPaginator
 
 def get_describe_conformance_pack_status_paginator() -> DescribeConformancePackStatusPaginator:
-    return boto3.client("config").get_paginator("describe_conformance_pack_status")
+    return Session().client("config").get_paginator("describe_conformance_pack_status")
 ```
 
 Boto3 documentation:
@@ -312,6 +354,8 @@ Arguments for `DescribeConformancePackStatusPaginator.paginate` method:
 `DescribeConformancePackStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeConformancePackStatusResponseTypeDef](./type_defs.md#describeconformancepackstatusresponsetypedef)\].
 
+<a id="describeconformancepackspaginator"></a>
+
 ## DescribeConformancePacksPaginator
 
 Type annotations for
@@ -320,10 +364,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeConformancePacksPaginator
 
 def get_describe_conformance_packs_paginator() -> DescribeConformancePacksPaginator:
-    return boto3.client("config").get_paginator("describe_conformance_packs")
+    return Session().client("config").get_paginator("describe_conformance_packs")
 ```
 
 Boto3 documentation:
@@ -338,6 +384,8 @@ Arguments for `DescribeConformancePacksPaginator.paginate` method:
 `DescribeConformancePacksPaginator.paginate` returns
 `_PageIterator`\[[DescribeConformancePacksResponseTypeDef](./type_defs.md#describeconformancepacksresponsetypedef)\].
 
+<a id="describeorganizationconfigrulestatusespaginator"></a>
+
 ## DescribeOrganizationConfigRuleStatusesPaginator
 
 Type annotations for
@@ -346,10 +394,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeOrganizationConfigRuleStatusesPaginator
 
 def get_describe_organization_config_rule_statuses_paginator() -> DescribeOrganizationConfigRuleStatusesPaginator:
-    return boto3.client("config").get_paginator("describe_organization_config_rule_statuses")
+    return Session().client("config").get_paginator("describe_organization_config_rule_statuses")
 ```
 
 Boto3 documentation:
@@ -365,6 +415,8 @@ method:
 `DescribeOrganizationConfigRuleStatusesPaginator.paginate` returns
 `_PageIterator`\[[DescribeOrganizationConfigRuleStatusesResponseTypeDef](./type_defs.md#describeorganizationconfigrulestatusesresponsetypedef)\].
 
+<a id="describeorganizationconfigrulespaginator"></a>
+
 ## DescribeOrganizationConfigRulesPaginator
 
 Type annotations for
@@ -373,10 +425,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeOrganizationConfigRulesPaginator
 
 def get_describe_organization_config_rules_paginator() -> DescribeOrganizationConfigRulesPaginator:
-    return boto3.client("config").get_paginator("describe_organization_config_rules")
+    return Session().client("config").get_paginator("describe_organization_config_rules")
 ```
 
 Boto3 documentation:
@@ -391,6 +445,8 @@ Arguments for `DescribeOrganizationConfigRulesPaginator.paginate` method:
 `DescribeOrganizationConfigRulesPaginator.paginate` returns
 `_PageIterator`\[[DescribeOrganizationConfigRulesResponseTypeDef](./type_defs.md#describeorganizationconfigrulesresponsetypedef)\].
 
+<a id="describeorganizationconformancepackstatusespaginator"></a>
+
 ## DescribeOrganizationConformancePackStatusesPaginator
 
 Type annotations for
@@ -399,10 +455,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeOrganizationConformancePackStatusesPaginator
 
 def get_describe_organization_conformance_pack_statuses_paginator() -> DescribeOrganizationConformancePackStatusesPaginator:
-    return boto3.client("config").get_paginator("describe_organization_conformance_pack_statuses")
+    return Session().client("config").get_paginator("describe_organization_conformance_pack_statuses")
 ```
 
 Boto3 documentation:
@@ -418,6 +476,8 @@ method:
 `DescribeOrganizationConformancePackStatusesPaginator.paginate` returns
 `_PageIterator`\[[DescribeOrganizationConformancePackStatusesResponseTypeDef](./type_defs.md#describeorganizationconformancepackstatusesresponsetypedef)\].
 
+<a id="describeorganizationconformancepackspaginator"></a>
+
 ## DescribeOrganizationConformancePacksPaginator
 
 Type annotations for
@@ -426,10 +486,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeOrganizationConformancePacksPaginator
 
 def get_describe_organization_conformance_packs_paginator() -> DescribeOrganizationConformancePacksPaginator:
-    return boto3.client("config").get_paginator("describe_organization_conformance_packs")
+    return Session().client("config").get_paginator("describe_organization_conformance_packs")
 ```
 
 Boto3 documentation:
@@ -444,6 +506,8 @@ Arguments for `DescribeOrganizationConformancePacksPaginator.paginate` method:
 `DescribeOrganizationConformancePacksPaginator.paginate` returns
 `_PageIterator`\[[DescribeOrganizationConformancePacksResponseTypeDef](./type_defs.md#describeorganizationconformancepacksresponsetypedef)\].
 
+<a id="describependingaggregationrequestspaginator"></a>
+
 ## DescribePendingAggregationRequestsPaginator
 
 Type annotations for
@@ -452,10 +516,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribePendingAggregationRequestsPaginator
 
 def get_describe_pending_aggregation_requests_paginator() -> DescribePendingAggregationRequestsPaginator:
-    return boto3.client("config").get_paginator("describe_pending_aggregation_requests")
+    return Session().client("config").get_paginator("describe_pending_aggregation_requests")
 ```
 
 Boto3 documentation:
@@ -469,6 +535,8 @@ Arguments for `DescribePendingAggregationRequestsPaginator.paginate` method:
 `DescribePendingAggregationRequestsPaginator.paginate` returns
 `_PageIterator`\[[DescribePendingAggregationRequestsResponseTypeDef](./type_defs.md#describependingaggregationrequestsresponsetypedef)\].
 
+<a id="describeremediationexecutionstatuspaginator"></a>
+
 ## DescribeRemediationExecutionStatusPaginator
 
 Type annotations for
@@ -477,10 +545,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeRemediationExecutionStatusPaginator
 
 def get_describe_remediation_execution_status_paginator() -> DescribeRemediationExecutionStatusPaginator:
-    return boto3.client("config").get_paginator("describe_remediation_execution_status")
+    return Session().client("config").get_paginator("describe_remediation_execution_status")
 ```
 
 Boto3 documentation:
@@ -497,6 +567,8 @@ Arguments for `DescribeRemediationExecutionStatusPaginator.paginate` method:
 `DescribeRemediationExecutionStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeRemediationExecutionStatusResponseTypeDef](./type_defs.md#describeremediationexecutionstatusresponsetypedef)\].
 
+<a id="describeretentionconfigurationspaginator"></a>
+
 ## DescribeRetentionConfigurationsPaginator
 
 Type annotations for
@@ -505,10 +577,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import DescribeRetentionConfigurationsPaginator
 
 def get_describe_retention_configurations_paginator() -> DescribeRetentionConfigurationsPaginator:
-    return boto3.client("config").get_paginator("describe_retention_configurations")
+    return Session().client("config").get_paginator("describe_retention_configurations")
 ```
 
 Boto3 documentation:
@@ -523,6 +597,8 @@ Arguments for `DescribeRetentionConfigurationsPaginator.paginate` method:
 `DescribeRetentionConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeRetentionConfigurationsResponseTypeDef](./type_defs.md#describeretentionconfigurationsresponsetypedef)\].
 
+<a id="getaggregatecompliancedetailsbyconfigrulepaginator"></a>
+
 ## GetAggregateComplianceDetailsByConfigRulePaginator
 
 Type annotations for
@@ -531,10 +607,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetAggregateComplianceDetailsByConfigRulePaginator
 
 def get_get_aggregate_compliance_details_by_config_rule_paginator() -> GetAggregateComplianceDetailsByConfigRulePaginator:
-    return boto3.client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")
+    return Session().client("config").get_paginator("get_aggregate_compliance_details_by_config_rule")
 ```
 
 Boto3 documentation:
@@ -554,6 +632,8 @@ method:
 `GetAggregateComplianceDetailsByConfigRulePaginator.paginate` returns
 `_PageIterator`\[[GetAggregateComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getaggregatecompliancedetailsbyconfigruleresponsetypedef)\].
 
+<a id="getcompliancedetailsbyconfigrulepaginator"></a>
+
 ## GetComplianceDetailsByConfigRulePaginator
 
 Type annotations for
@@ -562,10 +642,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetComplianceDetailsByConfigRulePaginator
 
 def get_get_compliance_details_by_config_rule_paginator() -> GetComplianceDetailsByConfigRulePaginator:
-    return boto3.client("config").get_paginator("get_compliance_details_by_config_rule")
+    return Session().client("config").get_paginator("get_compliance_details_by_config_rule")
 ```
 
 Boto3 documentation:
@@ -582,6 +664,8 @@ Arguments for `GetComplianceDetailsByConfigRulePaginator.paginate` method:
 `GetComplianceDetailsByConfigRulePaginator.paginate` returns
 `_PageIterator`\[[GetComplianceDetailsByConfigRuleResponseTypeDef](./type_defs.md#getcompliancedetailsbyconfigruleresponsetypedef)\].
 
+<a id="getcompliancedetailsbyresourcepaginator"></a>
+
 ## GetComplianceDetailsByResourcePaginator
 
 Type annotations for
@@ -590,10 +674,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetComplianceDetailsByResourcePaginator
 
 def get_get_compliance_details_by_resource_paginator() -> GetComplianceDetailsByResourcePaginator:
-    return boto3.client("config").get_paginator("get_compliance_details_by_resource")
+    return Session().client("config").get_paginator("get_compliance_details_by_resource")
 ```
 
 Boto3 documentation:
@@ -611,6 +697,8 @@ Arguments for `GetComplianceDetailsByResourcePaginator.paginate` method:
 `GetComplianceDetailsByResourcePaginator.paginate` returns
 `_PageIterator`\[[GetComplianceDetailsByResourceResponseTypeDef](./type_defs.md#getcompliancedetailsbyresourceresponsetypedef)\].
 
+<a id="getconformancepackcompliancesummarypaginator"></a>
+
 ## GetConformancePackComplianceSummaryPaginator
 
 Type annotations for
@@ -619,10 +707,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetConformancePackComplianceSummaryPaginator
 
 def get_get_conformance_pack_compliance_summary_paginator() -> GetConformancePackComplianceSummaryPaginator:
-    return boto3.client("config").get_paginator("get_conformance_pack_compliance_summary")
+    return Session().client("config").get_paginator("get_conformance_pack_compliance_summary")
 ```
 
 Boto3 documentation:
@@ -637,6 +727,8 @@ Arguments for `GetConformancePackComplianceSummaryPaginator.paginate` method:
 `GetConformancePackComplianceSummaryPaginator.paginate` returns
 `_PageIterator`\[[GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef)\].
 
+<a id="getorganizationconfigruledetailedstatuspaginator"></a>
+
 ## GetOrganizationConfigRuleDetailedStatusPaginator
 
 Type annotations for
@@ -645,10 +737,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetOrganizationConfigRuleDetailedStatusPaginator
 
 def get_get_organization_config_rule_detailed_status_paginator() -> GetOrganizationConfigRuleDetailedStatusPaginator:
-    return boto3.client("config").get_paginator("get_organization_config_rule_detailed_status")
+    return Session().client("config").get_paginator("get_organization_config_rule_detailed_status")
 ```
 
 Boto3 documentation:
@@ -666,6 +760,8 @@ method:
 `GetOrganizationConfigRuleDetailedStatusPaginator.paginate` returns
 `_PageIterator`\[[GetOrganizationConfigRuleDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconfigruledetailedstatusresponsetypedef)\].
 
+<a id="getorganizationconformancepackdetailedstatuspaginator"></a>
+
 ## GetOrganizationConformancePackDetailedStatusPaginator
 
 Type annotations for
@@ -674,10 +770,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetOrganizationConformancePackDetailedStatusPaginator
 
 def get_get_organization_conformance_pack_detailed_status_paginator() -> GetOrganizationConformancePackDetailedStatusPaginator:
-    return boto3.client("config").get_paginator("get_organization_conformance_pack_detailed_status")
+    return Session().client("config").get_paginator("get_organization_conformance_pack_detailed_status")
 ```
 
 Boto3 documentation:
@@ -695,6 +793,8 @@ method:
 `GetOrganizationConformancePackDetailedStatusPaginator.paginate` returns
 `_PageIterator`\[[GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef)\].
 
+<a id="getresourceconfighistorypaginator"></a>
+
 ## GetResourceConfigHistoryPaginator
 
 Type annotations for
@@ -703,10 +803,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import GetResourceConfigHistoryPaginator
 
 def get_get_resource_config_history_paginator() -> GetResourceConfigHistoryPaginator:
-    return boto3.client("config").get_paginator("get_resource_config_history")
+    return Session().client("config").get_paginator("get_resource_config_history")
 ```
 
 Boto3 documentation:
@@ -727,6 +829,8 @@ Arguments for `GetResourceConfigHistoryPaginator.paginate` method:
 `GetResourceConfigHistoryPaginator.paginate` returns
 `_PageIterator`\[[GetResourceConfigHistoryResponseTypeDef](./type_defs.md#getresourceconfighistoryresponsetypedef)\].
 
+<a id="listaggregatediscoveredresourcespaginator"></a>
+
 ## ListAggregateDiscoveredResourcesPaginator
 
 Type annotations for
@@ -735,10 +839,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import ListAggregateDiscoveredResourcesPaginator
 
 def get_list_aggregate_discovered_resources_paginator() -> ListAggregateDiscoveredResourcesPaginator:
-    return boto3.client("config").get_paginator("list_aggregate_discovered_resources")
+    return Session().client("config").get_paginator("list_aggregate_discovered_resources")
 ```
 
 Boto3 documentation:
@@ -756,6 +862,8 @@ Arguments for `ListAggregateDiscoveredResourcesPaginator.paginate` method:
 `ListAggregateDiscoveredResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListAggregateDiscoveredResourcesResponseTypeDef](./type_defs.md#listaggregatediscoveredresourcesresponsetypedef)\].
 
+<a id="listdiscoveredresourcespaginator"></a>
+
 ## ListDiscoveredResourcesPaginator
 
 Type annotations for
@@ -764,10 +872,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import ListDiscoveredResourcesPaginator
 
 def get_list_discovered_resources_paginator() -> ListDiscoveredResourcesPaginator:
-    return boto3.client("config").get_paginator("list_discovered_resources")
+    return Session().client("config").get_paginator("list_discovered_resources")
 ```
 
 Boto3 documentation:
@@ -786,6 +896,8 @@ Arguments for `ListDiscoveredResourcesPaginator.paginate` method:
 `ListDiscoveredResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListDiscoveredResourcesResponseTypeDef](./type_defs.md#listdiscoveredresourcesresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -794,10 +906,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("config").get_paginator("list_tags_for_resource")
+    return Session().client("config").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -812,6 +926,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="selectaggregateresourceconfigpaginator"></a>
+
 ## SelectAggregateResourceConfigPaginator
 
 Type annotations for
@@ -820,10 +936,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import SelectAggregateResourceConfigPaginator
 
 def get_select_aggregate_resource_config_paginator() -> SelectAggregateResourceConfigPaginator:
-    return boto3.client("config").get_paginator("select_aggregate_resource_config")
+    return Session().client("config").get_paginator("select_aggregate_resource_config")
 ```
 
 Boto3 documentation:
@@ -840,6 +958,8 @@ Arguments for `SelectAggregateResourceConfigPaginator.paginate` method:
 `SelectAggregateResourceConfigPaginator.paginate` returns
 `_PageIterator`\[[SelectAggregateResourceConfigResponseTypeDef](./type_defs.md#selectaggregateresourceconfigresponsetypedef)\].
 
+<a id="selectresourceconfigpaginator"></a>
+
 ## SelectResourceConfigPaginator
 
 Type annotations for
@@ -848,10 +968,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_config.paginator import SelectResourceConfigPaginator
 
 def get_select_resource_config_paginator() -> SelectResourceConfigPaginator:
-    return boto3.client("config").get_paginator("select_resource_config")
+    return Session().client("config").get_paginator("select_resource_config")
 ```
 
 Boto3 documentation:

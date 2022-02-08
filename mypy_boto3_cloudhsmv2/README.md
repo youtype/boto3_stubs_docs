@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudhsmv2-module"></a>
+
 # Type annotations for boto3 CloudHSMV2 module
 
 > [Index](..) > CloudHSMV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
-[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+[mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloudhsmv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloudhsmv2]'
+
+# standalone installation
 pip install mypy-boto3-cloudhsmv2
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-cloudhsmv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudhsmv2client"></a>
+
 ## CloudHSMV2Client
 
 Type annotations for `boto3.client("cloudhsmv2")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -52,6 +66,8 @@ from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudHSMV2Client [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ CloudHSMV2Client [exceptions](./client.md#exceptions)
 - CloudHsmServiceException
 - CloudHsmTagException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -72,12 +90,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudhsmv2.paginators import DescribeBackupsPaginator, ...
+from mypy_boto3_cloudhsmv2.paginator import DescribeBackupsPaginator, ...
 ```
 
 - [DescribeBackupsPaginator](./paginators.md#describebackupspaginator)
 - [DescribeClustersPaginator](./paginators.md#describeclusterspaginator)
 - [ListTagsPaginator](./paginators.md#listtagspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -99,6 +119,8 @@ from mypy_boto3_cloudhsmv2.literals import BackupPolicyType, ...
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

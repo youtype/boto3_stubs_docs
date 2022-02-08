@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codepipeline-module"></a>
+
 # Type annotations for boto3 CodePipeline module
 
 > [Index](..) > CodePipeline
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodePipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codepipeline.html#CodePipeline)
 type annotations stubs module
-[mypy_boto3_codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
+[mypy-boto3-codepipeline](https://pypi.org/project/mypy-boto3-codepipeline/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codepipeline]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codepipeline]'
+
+# standalone installation
 pip install mypy-boto3-codepipeline
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-codepipeline
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codepipelineclient"></a>
+
 ## CodePipelineClient
 
 Type annotations for `boto3.client("codepipeline")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codepipeline.client import CodePipelineClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -76,6 +90,8 @@ from mypy_boto3_codepipeline.client import CodePipelineClient
 - [update_action_type](./client.md#update_action_type)
 - [update_pipeline](./client.md#update_pipeline)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodePipelineClient [exceptions](./client.md#exceptions)
@@ -119,6 +135,8 @@ CodePipelineClient [exceptions](./client.md#exceptions)
 - ValidationException
 - WebhookNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -127,7 +145,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codepipeline.paginators import ListActionExecutionsPaginator, ...
+from mypy_boto3_codepipeline.paginator import ListActionExecutionsPaginator, ...
 ```
 
 - [ListActionExecutionsPaginator](./paginators.md#listactionexecutionspaginator)
@@ -136,6 +154,8 @@ from mypy_boto3_codepipeline.paginators import ListActionExecutionsPaginator, ..
 - [ListPipelinesPaginator](./paginators.md#listpipelinespaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [ListWebhooksPaginator](./paginators.md#listwebhookspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -173,6 +193,8 @@ from mypy_boto3_codepipeline.literals import ActionCategoryType, ...
 - [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="wellarchitectedclient-for-boto3-wellarchitected-module"></a>
+
 # WellArchitectedClient for boto3 WellArchitected module
 
 > [Index](..) > [WellArchitected](.) > WellArchitectedClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
-[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [WellArchitectedClient for boto3 WellArchitected module](#wellarchitectedclient-for-boto3-wellarchitected-module)
   - [WellArchitectedClient](#wellarchitectedclient)
@@ -54,6 +56,8 @@ type annotations stubs module
     - [update_workload_share](#update_workload_share)
     - [upgrade_lens_review](#upgrade_lens_review)
 
+<a id="wellarchitectedclient"></a>
+
 ## WellArchitectedClient
 
 Type annotations for `boto3.client("wellarchitected")`
@@ -61,14 +65,17 @@ Type annotations for `boto3.client("wellarchitected")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
 
 def get_wellarchitected_client() -> WellArchitectedClient:
-    return boto3.client("wellarchitected")
+    return Session().client("wellarchitected")
 ```
 
 Boto3 documentation:
 [WellArchitected.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -93,7 +100,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -105,6 +116,8 @@ Boto3 documentation:
 [WellArchitected.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_lenses"></a>
 
 ### associate_lenses
 
@@ -123,6 +136,8 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 - `LensAliases`: `Sequence`\[`str`\] *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -137,6 +152,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_lens_share"></a>
 
 ### create_lens_share
 
@@ -159,6 +176,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLensShareOutputTypeDef](./type_defs.md#createlensshareoutputtypedef).
+
+<a id="create_lens_version"></a>
 
 ### create_lens_version
 
@@ -183,6 +202,8 @@ Keyword-only arguments:
 Returns
 [CreateLensVersionOutputTypeDef](./type_defs.md#createlensversionoutputtypedef).
 
+<a id="create_milestone"></a>
+
 ### create_milestone
 
 Create a milestone for an existing workload.
@@ -203,6 +224,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMilestoneOutputTypeDef](./type_defs.md#createmilestoneoutputtypedef).
+
+<a id="create_workload"></a>
 
 ### create_workload
 
@@ -238,6 +261,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkloadOutputTypeDef](./type_defs.md#createworkloadoutputtypedef).
 
+<a id="create_workload_share"></a>
+
 ### create_workload_share
 
 Create a workload share.
@@ -262,6 +287,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkloadShareOutputTypeDef](./type_defs.md#createworkloadshareoutputtypedef).
 
+<a id="delete_lens"></a>
+
 ### delete_lens
 
 Delete an existing lens.
@@ -280,6 +307,8 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str` *(required)*
 - `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
   *(required)*
+
+<a id="delete_lens_share"></a>
 
 ### delete_lens_share
 
@@ -300,6 +329,8 @@ Keyword-only arguments:
 - `LensAlias`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 
+<a id="delete_workload"></a>
+
 ### delete_workload
 
 Delete an existing workload.
@@ -316,6 +347,8 @@ Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
+
+<a id="delete_workload_share"></a>
 
 ### delete_workload_share
 
@@ -336,6 +369,8 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 - `ClientRequestToken`: `str` *(required)*
 
+<a id="disassociate_lenses"></a>
+
 ### disassociate_lenses
 
 Disassociate a lens from a workload.
@@ -353,6 +388,8 @@ Keyword-only arguments:
 
 - `WorkloadId`: `str` *(required)*
 - `LensAliases`: `Sequence`\[`str`\] *(required)*
+
+<a id="export_lens"></a>
 
 ### export_lens
 
@@ -373,6 +410,8 @@ Keyword-only arguments:
 
 Returns [ExportLensOutputTypeDef](./type_defs.md#exportlensoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -391,6 +430,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_answer"></a>
 
 ### get_answer
 
@@ -413,6 +454,8 @@ Keyword-only arguments:
 
 Returns [GetAnswerOutputTypeDef](./type_defs.md#getansweroutputtypedef).
 
+<a id="get_lens"></a>
+
 ### get_lens
 
 Get an existing lens.
@@ -431,6 +474,8 @@ Keyword-only arguments:
 - `LensVersion`: `str`
 
 Returns [GetLensOutputTypeDef](./type_defs.md#getlensoutputtypedef).
+
+<a id="get_lens_review"></a>
 
 ### get_lens_review
 
@@ -452,6 +497,8 @@ Keyword-only arguments:
 
 Returns
 [GetLensReviewOutputTypeDef](./type_defs.md#getlensreviewoutputtypedef).
+
+<a id="get_lens_review_report"></a>
 
 ### get_lens_review_report
 
@@ -475,6 +522,8 @@ Keyword-only arguments:
 Returns
 [GetLensReviewReportOutputTypeDef](./type_defs.md#getlensreviewreportoutputtypedef).
 
+<a id="get_lens_version_difference"></a>
+
 ### get_lens_version_difference
 
 Get lens version differences.
@@ -497,6 +546,8 @@ Keyword-only arguments:
 Returns
 [GetLensVersionDifferenceOutputTypeDef](./type_defs.md#getlensversiondifferenceoutputtypedef).
 
+<a id="get_milestone"></a>
+
 ### get_milestone
 
 Get a milestone for an existing workload.
@@ -516,6 +567,8 @@ Keyword-only arguments:
 
 Returns [GetMilestoneOutputTypeDef](./type_defs.md#getmilestoneoutputtypedef).
 
+<a id="get_workload"></a>
+
 ### get_workload
 
 Get an existing workload.
@@ -533,6 +586,8 @@ Keyword-only arguments:
 - `WorkloadId`: `str` *(required)*
 
 Returns [GetWorkloadOutputTypeDef](./type_defs.md#getworkloadoutputtypedef).
+
+<a id="import_lens"></a>
 
 ### import_lens
 
@@ -554,6 +609,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ImportLensOutputTypeDef](./type_defs.md#importlensoutputtypedef).
+
+<a id="list_answers"></a>
 
 ### list_answers
 
@@ -577,6 +634,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListAnswersOutputTypeDef](./type_defs.md#listanswersoutputtypedef).
+
+<a id="list_lens_review_improvements"></a>
 
 ### list_lens_review_improvements
 
@@ -603,6 +662,8 @@ Keyword-only arguments:
 Returns
 [ListLensReviewImprovementsOutputTypeDef](./type_defs.md#listlensreviewimprovementsoutputtypedef).
 
+<a id="list_lens_reviews"></a>
+
 ### list_lens_reviews
 
 List lens reviews.
@@ -626,6 +687,8 @@ Keyword-only arguments:
 Returns
 [ListLensReviewsOutputTypeDef](./type_defs.md#listlensreviewsoutputtypedef).
 
+<a id="list_lens_shares"></a>
+
 ### list_lens_shares
 
 List the lens shares associated with the lens.
@@ -647,6 +710,8 @@ Keyword-only arguments:
 
 Returns
 [ListLensSharesOutputTypeDef](./type_defs.md#listlenssharesoutputtypedef).
+
+<a id="list_lenses"></a>
 
 ### list_lenses
 
@@ -670,6 +735,8 @@ Keyword-only arguments:
 
 Returns [ListLensesOutputTypeDef](./type_defs.md#listlensesoutputtypedef).
 
+<a id="list_milestones"></a>
+
 ### list_milestones
 
 List all milestones for an existing workload.
@@ -690,6 +757,8 @@ Keyword-only arguments:
 
 Returns
 [ListMilestonesOutputTypeDef](./type_defs.md#listmilestonesoutputtypedef).
+
+<a id="list_notifications"></a>
 
 ### list_notifications
 
@@ -712,6 +781,8 @@ Keyword-only arguments:
 
 Returns
 [ListNotificationsOutputTypeDef](./type_defs.md#listnotificationsoutputtypedef).
+
+<a id="list_share_invitations"></a>
 
 ### list_share_invitations
 
@@ -738,6 +809,8 @@ Keyword-only arguments:
 Returns
 [ListShareInvitationsOutputTypeDef](./type_defs.md#listshareinvitationsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for a resource.
@@ -757,6 +830,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="list_workload_shares"></a>
 
 ### list_workload_shares
 
@@ -781,6 +856,8 @@ Keyword-only arguments:
 Returns
 [ListWorkloadSharesOutputTypeDef](./type_defs.md#listworkloadsharesoutputtypedef).
 
+<a id="list_workloads"></a>
+
 ### list_workloads
 
 List workloads.
@@ -802,6 +879,8 @@ Keyword-only arguments:
 Returns
 [ListWorkloadsOutputTypeDef](./type_defs.md#listworkloadsoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to the specified resource.
@@ -821,6 +900,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -839,6 +920,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_answer"></a>
 
 ### update_answer
 
@@ -866,6 +949,8 @@ Keyword-only arguments:
 
 Returns [UpdateAnswerOutputTypeDef](./type_defs.md#updateansweroutputtypedef).
 
+<a id="update_lens_review"></a>
+
 ### update_lens_review
 
 Update lens review.
@@ -889,6 +974,8 @@ Keyword-only arguments:
 Returns
 [UpdateLensReviewOutputTypeDef](./type_defs.md#updatelensreviewoutputtypedef).
 
+<a id="update_share_invitation"></a>
+
 ### update_share_invitation
 
 Update a workload invitation.
@@ -911,6 +998,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateShareInvitationOutputTypeDef](./type_defs.md#updateshareinvitationoutputtypedef).
+
+<a id="update_workload"></a>
 
 ### update_workload
 
@@ -947,6 +1036,8 @@ Keyword-only arguments:
 Returns
 [UpdateWorkloadOutputTypeDef](./type_defs.md#updateworkloadoutputtypedef).
 
+<a id="update_workload_share"></a>
+
 ### update_workload_share
 
 Update a workload share.
@@ -969,6 +1060,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWorkloadShareOutputTypeDef](./type_defs.md#updateworkloadshareoutputtypedef).
+
+<a id="upgrade_lens_review"></a>
 
 ### upgrade_lens_review
 

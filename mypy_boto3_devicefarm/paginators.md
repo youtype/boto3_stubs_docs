@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-devicefarm-module"></a>
+
 # Paginators for boto3 DeviceFarm module
 
 > [Index](..) > [DeviceFarm](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
-[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 - [Paginators for boto3 DeviceFarm module](#paginators-for-boto3-devicefarm-module)
   - [GetOfferingStatusPaginator](#getofferingstatuspaginator)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [ListUploadsPaginator](#listuploadspaginator)
   - [ListVPCEConfigurationsPaginator](#listvpceconfigurationspaginator)
 
+<a id="getofferingstatuspaginator"></a>
+
 ## GetOfferingStatusPaginator
 
 Type annotations for
@@ -37,10 +41,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import GetOfferingStatusPaginator
 
 def get_get_offering_status_paginator() -> GetOfferingStatusPaginator:
-    return boto3.client("devicefarm").get_paginator("get_offering_status")
+    return Session().client("devicefarm").get_paginator("get_offering_status")
 ```
 
 Boto3 documentation:
@@ -54,6 +60,8 @@ Arguments for `GetOfferingStatusPaginator.paginate` method:
 `GetOfferingStatusPaginator.paginate` returns
 `_PageIterator`\[[GetOfferingStatusResultTypeDef](./type_defs.md#getofferingstatusresulttypedef)\].
 
+<a id="listartifactspaginator"></a>
+
 ## ListArtifactsPaginator
 
 Type annotations for
@@ -62,10 +70,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListArtifactsPaginator
 
 def get_list_artifacts_paginator() -> ListArtifactsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_artifacts")
+    return Session().client("devicefarm").get_paginator("list_artifacts")
 ```
 
 Boto3 documentation:
@@ -82,6 +92,8 @@ Arguments for `ListArtifactsPaginator.paginate` method:
 `ListArtifactsPaginator.paginate` returns
 `_PageIterator`\[[ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef)\].
 
+<a id="listdeviceinstancespaginator"></a>
+
 ## ListDeviceInstancesPaginator
 
 Type annotations for
@@ -90,10 +102,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListDeviceInstancesPaginator
 
 def get_list_device_instances_paginator() -> ListDeviceInstancesPaginator:
-    return boto3.client("devicefarm").get_paginator("list_device_instances")
+    return Session().client("devicefarm").get_paginator("list_device_instances")
 ```
 
 Boto3 documentation:
@@ -107,6 +121,8 @@ Arguments for `ListDeviceInstancesPaginator.paginate` method:
 `ListDeviceInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceInstancesResultTypeDef](./type_defs.md#listdeviceinstancesresulttypedef)\].
 
+<a id="listdevicepoolspaginator"></a>
+
 ## ListDevicePoolsPaginator
 
 Type annotations for
@@ -115,10 +131,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListDevicePoolsPaginator
 
 def get_list_device_pools_paginator() -> ListDevicePoolsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_device_pools")
+    return Session().client("devicefarm").get_paginator("list_device_pools")
 ```
 
 Boto3 documentation:
@@ -134,6 +152,8 @@ Arguments for `ListDevicePoolsPaginator.paginate` method:
 `ListDevicePoolsPaginator.paginate` returns
 `_PageIterator`\[[ListDevicePoolsResultTypeDef](./type_defs.md#listdevicepoolsresulttypedef)\].
 
+<a id="listdevicespaginator"></a>
+
 ## ListDevicesPaginator
 
 Type annotations for
@@ -142,10 +162,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
-    return boto3.client("devicefarm").get_paginator("list_devices")
+    return Session().client("devicefarm").get_paginator("list_devices")
 ```
 
 Boto3 documentation:
@@ -162,6 +184,8 @@ Arguments for `ListDevicesPaginator.paginate` method:
 `ListDevicesPaginator.paginate` returns
 `_PageIterator`\[[ListDevicesResultTypeDef](./type_defs.md#listdevicesresulttypedef)\].
 
+<a id="listinstanceprofilespaginator"></a>
+
 ## ListInstanceProfilesPaginator
 
 Type annotations for
@@ -170,10 +194,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListInstanceProfilesPaginator
 
 def get_list_instance_profiles_paginator() -> ListInstanceProfilesPaginator:
-    return boto3.client("devicefarm").get_paginator("list_instance_profiles")
+    return Session().client("devicefarm").get_paginator("list_instance_profiles")
 ```
 
 Boto3 documentation:
@@ -187,6 +213,8 @@ Arguments for `ListInstanceProfilesPaginator.paginate` method:
 `ListInstanceProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListInstanceProfilesResultTypeDef](./type_defs.md#listinstanceprofilesresulttypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("devicefarm").get_paginator("list_jobs")`.
@@ -194,10 +222,12 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_jobs")
+    return Session().client("devicefarm").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:
@@ -212,6 +242,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef)\].
 
+<a id="listnetworkprofilespaginator"></a>
+
 ## ListNetworkProfilesPaginator
 
 Type annotations for
@@ -220,10 +252,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListNetworkProfilesPaginator
 
 def get_list_network_profiles_paginator() -> ListNetworkProfilesPaginator:
-    return boto3.client("devicefarm").get_paginator("list_network_profiles")
+    return Session().client("devicefarm").get_paginator("list_network_profiles")
 ```
 
 Boto3 documentation:
@@ -239,6 +273,8 @@ Arguments for `ListNetworkProfilesPaginator.paginate` method:
 `ListNetworkProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListNetworkProfilesResultTypeDef](./type_defs.md#listnetworkprofilesresulttypedef)\].
 
+<a id="listofferingpromotionspaginator"></a>
+
 ## ListOfferingPromotionsPaginator
 
 Type annotations for
@@ -247,10 +283,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListOfferingPromotionsPaginator
 
 def get_list_offering_promotions_paginator() -> ListOfferingPromotionsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_offering_promotions")
+    return Session().client("devicefarm").get_paginator("list_offering_promotions")
 ```
 
 Boto3 documentation:
@@ -264,6 +302,8 @@ Arguments for `ListOfferingPromotionsPaginator.paginate` method:
 `ListOfferingPromotionsPaginator.paginate` returns
 `_PageIterator`\[[ListOfferingPromotionsResultTypeDef](./type_defs.md#listofferingpromotionsresulttypedef)\].
 
+<a id="listofferingtransactionspaginator"></a>
+
 ## ListOfferingTransactionsPaginator
 
 Type annotations for
@@ -272,10 +312,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListOfferingTransactionsPaginator
 
 def get_list_offering_transactions_paginator() -> ListOfferingTransactionsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_offering_transactions")
+    return Session().client("devicefarm").get_paginator("list_offering_transactions")
 ```
 
 Boto3 documentation:
@@ -289,6 +331,8 @@ Arguments for `ListOfferingTransactionsPaginator.paginate` method:
 `ListOfferingTransactionsPaginator.paginate` returns
 `_PageIterator`\[[ListOfferingTransactionsResultTypeDef](./type_defs.md#listofferingtransactionsresulttypedef)\].
 
+<a id="listofferingspaginator"></a>
+
 ## ListOfferingsPaginator
 
 Type annotations for
@@ -297,10 +341,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListOfferingsPaginator
 
 def get_list_offerings_paginator() -> ListOfferingsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_offerings")
+    return Session().client("devicefarm").get_paginator("list_offerings")
 ```
 
 Boto3 documentation:
@@ -314,6 +360,8 @@ Arguments for `ListOfferingsPaginator.paginate` method:
 `ListOfferingsPaginator.paginate` returns
 `_PageIterator`\[[ListOfferingsResultTypeDef](./type_defs.md#listofferingsresulttypedef)\].
 
+<a id="listprojectspaginator"></a>
+
 ## ListProjectsPaginator
 
 Type annotations for
@@ -322,10 +370,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_projects")
+    return Session().client("devicefarm").get_paginator("list_projects")
 ```
 
 Boto3 documentation:
@@ -340,6 +390,8 @@ Arguments for `ListProjectsPaginator.paginate` method:
 `ListProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
 
+<a id="listremoteaccesssessionspaginator"></a>
+
 ## ListRemoteAccessSessionsPaginator
 
 Type annotations for
@@ -348,10 +400,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListRemoteAccessSessionsPaginator
 
 def get_list_remote_access_sessions_paginator() -> ListRemoteAccessSessionsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_remote_access_sessions")
+    return Session().client("devicefarm").get_paginator("list_remote_access_sessions")
 ```
 
 Boto3 documentation:
@@ -366,6 +420,8 @@ Arguments for `ListRemoteAccessSessionsPaginator.paginate` method:
 `ListRemoteAccessSessionsPaginator.paginate` returns
 `_PageIterator`\[[ListRemoteAccessSessionsResultTypeDef](./type_defs.md#listremoteaccesssessionsresulttypedef)\].
 
+<a id="listrunspaginator"></a>
+
 ## ListRunsPaginator
 
 Type annotations for `boto3.client("devicefarm").get_paginator("list_runs")`.
@@ -373,10 +429,12 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_runs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListRunsPaginator
 
 def get_list_runs_paginator() -> ListRunsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_runs")
+    return Session().client("devicefarm").get_paginator("list_runs")
 ```
 
 Boto3 documentation:
@@ -391,6 +449,8 @@ Arguments for `ListRunsPaginator.paginate` method:
 `ListRunsPaginator.paginate` returns
 `_PageIterator`\[[ListRunsResultTypeDef](./type_defs.md#listrunsresulttypedef)\].
 
+<a id="listsamplespaginator"></a>
+
 ## ListSamplesPaginator
 
 Type annotations for
@@ -399,10 +459,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListSamplesPaginator
 
 def get_list_samples_paginator() -> ListSamplesPaginator:
-    return boto3.client("devicefarm").get_paginator("list_samples")
+    return Session().client("devicefarm").get_paginator("list_samples")
 ```
 
 Boto3 documentation:
@@ -417,6 +479,8 @@ Arguments for `ListSamplesPaginator.paginate` method:
 `ListSamplesPaginator.paginate` returns
 `_PageIterator`\[[ListSamplesResultTypeDef](./type_defs.md#listsamplesresulttypedef)\].
 
+<a id="listsuitespaginator"></a>
+
 ## ListSuitesPaginator
 
 Type annotations for `boto3.client("devicefarm").get_paginator("list_suites")`.
@@ -424,10 +488,12 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_suites")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListSuitesPaginator
 
 def get_list_suites_paginator() -> ListSuitesPaginator:
-    return boto3.client("devicefarm").get_paginator("list_suites")
+    return Session().client("devicefarm").get_paginator("list_suites")
 ```
 
 Boto3 documentation:
@@ -442,6 +508,8 @@ Arguments for `ListSuitesPaginator.paginate` method:
 `ListSuitesPaginator.paginate` returns
 `_PageIterator`\[[ListSuitesResultTypeDef](./type_defs.md#listsuitesresulttypedef)\].
 
+<a id="listtestspaginator"></a>
+
 ## ListTestsPaginator
 
 Type annotations for `boto3.client("devicefarm").get_paginator("list_tests")`.
@@ -449,10 +517,12 @@ Type annotations for `boto3.client("devicefarm").get_paginator("list_tests")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListTestsPaginator
 
 def get_list_tests_paginator() -> ListTestsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_tests")
+    return Session().client("devicefarm").get_paginator("list_tests")
 ```
 
 Boto3 documentation:
@@ -467,6 +537,8 @@ Arguments for `ListTestsPaginator.paginate` method:
 `ListTestsPaginator.paginate` returns
 `_PageIterator`\[[ListTestsResultTypeDef](./type_defs.md#listtestsresulttypedef)\].
 
+<a id="listuniqueproblemspaginator"></a>
+
 ## ListUniqueProblemsPaginator
 
 Type annotations for
@@ -475,10 +547,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListUniqueProblemsPaginator
 
 def get_list_unique_problems_paginator() -> ListUniqueProblemsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_unique_problems")
+    return Session().client("devicefarm").get_paginator("list_unique_problems")
 ```
 
 Boto3 documentation:
@@ -493,6 +567,8 @@ Arguments for `ListUniqueProblemsPaginator.paginate` method:
 `ListUniqueProblemsPaginator.paginate` returns
 `_PageIterator`\[[ListUniqueProblemsResultTypeDef](./type_defs.md#listuniqueproblemsresulttypedef)\].
 
+<a id="listuploadspaginator"></a>
+
 ## ListUploadsPaginator
 
 Type annotations for
@@ -501,10 +577,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListUploadsPaginator
 
 def get_list_uploads_paginator() -> ListUploadsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_uploads")
+    return Session().client("devicefarm").get_paginator("list_uploads")
 ```
 
 Boto3 documentation:
@@ -520,6 +598,8 @@ Arguments for `ListUploadsPaginator.paginate` method:
 `ListUploadsPaginator.paginate` returns
 `_PageIterator`\[[ListUploadsResultTypeDef](./type_defs.md#listuploadsresulttypedef)\].
 
+<a id="listvpceconfigurationspaginator"></a>
+
 ## ListVPCEConfigurationsPaginator
 
 Type annotations for
@@ -528,10 +608,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_devicefarm.paginator import ListVPCEConfigurationsPaginator
 
 def get_list_vpce_configurations_paginator() -> ListVPCEConfigurationsPaginator:
-    return boto3.client("devicefarm").get_paginator("list_vpce_configurations")
+    return Session().client("devicefarm").get_paginator("list_vpce_configurations")
 ```
 
 Boto3 documentation:

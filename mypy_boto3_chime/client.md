@@ -1,3 +1,5 @@
+<a id="chimeclient-for-boto3-chime-module"></a>
+
 # ChimeClient for boto3 Chime module
 
 > [Index](..) > [Chime](.) > ChimeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
 type annotations stubs module
-[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [ChimeClient for boto3 Chime module](#chimeclient-for-boto3-chime-module)
   - [ChimeClient](#chimeclient)
@@ -206,6 +208,8 @@ type annotations stubs module
     - [update_voice_connector_group](#update_voice_connector_group)
     - [get_paginator](#get_paginator)
 
+<a id="chimeclient"></a>
+
 ## ChimeClient
 
 Type annotations for `boto3.client("chime")`
@@ -213,14 +217,17 @@ Type annotations for `boto3.client("chime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_chime.client import ChimeClient
 
 def get_chime_client() -> ChimeClient:
-    return boto3.client("chime")
+    return Session().client("chime")
 ```
 
 Boto3 documentation:
 [Chime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -249,7 +256,11 @@ Exceptions:
 - `Exceptions.UnauthorizedClientException`
 - `Exceptions.UnprocessableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -261,6 +272,8 @@ Boto3 documentation:
 [Chime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_phone_number_with_user"></a>
 
 ### associate_phone_number_with_user
 
@@ -283,6 +296,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_phone_numbers_with_voice_connector"></a>
+
 ### associate_phone_numbers_with_voice_connector
 
 Associates phone numbers with the specified Amazon Chime Voice Connector.
@@ -304,6 +319,8 @@ Keyword-only arguments:
 
 Returns
 [AssociatePhoneNumbersWithVoiceConnectorResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorresponsetypedef).
+
+<a id="associate_phone_numbers_with_voice_connector_group"></a>
 
 ### associate_phone_numbers_with_voice_connector_group
 
@@ -328,6 +345,8 @@ Keyword-only arguments:
 Returns
 [AssociatePhoneNumbersWithVoiceConnectorGroupResponseTypeDef](./type_defs.md#associatephonenumberswithvoiceconnectorgroupresponsetypedef).
 
+<a id="associate_signin_delegate_groups_with_account"></a>
+
 ### associate_signin_delegate_groups_with_account
 
 Associates the specified sign-in delegate groups with the specified Amazon
@@ -351,6 +370,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="batch_create_attendee"></a>
+
 ### batch_create_attendee
 
 Creates up to 100 new attendees for an active Amazon Chime SDK meeting.
@@ -372,6 +393,8 @@ Keyword-only arguments:
 
 Returns
 [BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
+
+<a id="batch_create_channel_membership"></a>
 
 ### batch_create_channel_membership
 
@@ -395,6 +418,8 @@ Keyword-only arguments:
 
 Returns
 [BatchCreateChannelMembershipResponseTypeDef](./type_defs.md#batchcreatechannelmembershipresponsetypedef).
+
+<a id="batch_create_room_membership"></a>
 
 ### batch_create_room_membership
 
@@ -420,6 +445,8 @@ Keyword-only arguments:
 Returns
 [BatchCreateRoomMembershipResponseTypeDef](./type_defs.md#batchcreateroommembershipresponsetypedef).
 
+<a id="batch_delete_phone_number"></a>
+
 ### batch_delete_phone_number
 
 Moves phone numbers into the **Deletion queue**.
@@ -438,6 +465,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeletePhoneNumberResponseTypeDef](./type_defs.md#batchdeletephonenumberresponsetypedef).
+
+<a id="batch_suspend_user"></a>
 
 ### batch_suspend_user
 
@@ -458,6 +487,8 @@ Keyword-only arguments:
 
 Returns
 [BatchSuspendUserResponseTypeDef](./type_defs.md#batchsuspenduserresponsetypedef).
+
+<a id="batch_unsuspend_user"></a>
 
 ### batch_unsuspend_user
 
@@ -480,6 +511,8 @@ Keyword-only arguments:
 Returns
 [BatchUnsuspendUserResponseTypeDef](./type_defs.md#batchunsuspenduserresponsetypedef).
 
+<a id="batch_update_phone_number"></a>
+
 ### batch_update_phone_number
 
 Updates phone number product types or calling names.
@@ -500,6 +533,8 @@ Keyword-only arguments:
 
 Returns
 [BatchUpdatePhoneNumberResponseTypeDef](./type_defs.md#batchupdatephonenumberresponsetypedef).
+
+<a id="batch_update_user"></a>
 
 ### batch_update_user
 
@@ -524,6 +559,8 @@ Keyword-only arguments:
 Returns
 [BatchUpdateUserResponseTypeDef](./type_defs.md#batchupdateuserresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -538,6 +575,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_account"></a>
 
 ### create_account
 
@@ -557,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
+
+<a id="create_app_instance"></a>
 
 ### create_app_instance
 
@@ -580,6 +621,8 @@ Keyword-only arguments:
 Returns
 [CreateAppInstanceResponseTypeDef](./type_defs.md#createappinstanceresponsetypedef).
 
+<a id="create_app_instance_admin"></a>
+
 ### create_app_instance_admin
 
 Promotes an `AppInstanceUser` to an `AppInstanceAdmin`.
@@ -599,6 +642,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAppInstanceAdminResponseTypeDef](./type_defs.md#createappinstanceadminresponsetypedef).
+
+<a id="create_app_instance_user"></a>
 
 ### create_app_instance_user
 
@@ -624,6 +669,8 @@ Keyword-only arguments:
 Returns
 [CreateAppInstanceUserResponseTypeDef](./type_defs.md#createappinstanceuserresponsetypedef).
 
+<a id="create_attendee"></a>
+
 ### create_attendee
 
 Creates a new attendee for an active Amazon Chime SDK meeting.
@@ -645,6 +692,8 @@ Keyword-only arguments:
 Returns
 [CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
 
+<a id="create_bot"></a>
+
 ### create_bot
 
 Creates a bot for an Amazon Chime Enterprise account.
@@ -664,6 +713,8 @@ Keyword-only arguments:
 - `Domain`: `str`
 
 Returns [CreateBotResponseTypeDef](./type_defs.md#createbotresponsetypedef).
+
+<a id="create_channel"></a>
 
 ### create_channel
 
@@ -691,6 +742,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
+<a id="create_channel_ban"></a>
+
 ### create_channel_ban
 
 Permanently bans a member from a channel.
@@ -711,6 +764,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelBanResponseTypeDef](./type_defs.md#createchannelbanresponsetypedef).
+
+<a id="create_channel_membership"></a>
 
 ### create_channel_membership
 
@@ -735,6 +790,8 @@ Keyword-only arguments:
 Returns
 [CreateChannelMembershipResponseTypeDef](./type_defs.md#createchannelmembershipresponsetypedef).
 
+<a id="create_channel_moderator"></a>
+
 ### create_channel_moderator
 
 Creates a new `ChannelModerator`.
@@ -755,6 +812,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelModeratorResponseTypeDef](./type_defs.md#createchannelmoderatorresponsetypedef).
+
+<a id="create_media_capture_pipeline"></a>
 
 ### create_media_capture_pipeline
 
@@ -786,6 +845,8 @@ Keyword-only arguments:
 Returns
 [CreateMediaCapturePipelineResponseTypeDef](./type_defs.md#createmediacapturepipelineresponsetypedef).
 
+<a id="create_meeting"></a>
+
 ### create_meeting
 
 Creates a new Amazon Chime SDK meeting in the specified media Region with no
@@ -812,6 +873,8 @@ Keyword-only arguments:
 Returns
 [CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
 
+<a id="create_meeting_dial_out"></a>
+
 ### create_meeting_dial_out
 
 Uses the join token and call metadata in a meeting request (From number, To
@@ -835,6 +898,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMeetingDialOutResponseTypeDef](./type_defs.md#createmeetingdialoutresponsetypedef).
+
+<a id="create_meeting_with_attendees"></a>
 
 ### create_meeting_with_attendees
 
@@ -865,6 +930,8 @@ Keyword-only arguments:
 Returns
 [CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
 
+<a id="create_phone_number_order"></a>
+
 ### create_phone_number_order
 
 Creates an order for phone numbers to be provisioned.
@@ -886,6 +953,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePhoneNumberOrderResponseTypeDef](./type_defs.md#createphonenumberorderresponsetypedef).
+
+<a id="create_proxy_session"></a>
 
 ### create_proxy_session
 
@@ -917,6 +986,8 @@ Keyword-only arguments:
 Returns
 [CreateProxySessionResponseTypeDef](./type_defs.md#createproxysessionresponsetypedef).
 
+<a id="create_room"></a>
+
 ### create_room
 
 Creates a chat room for the specified Amazon Chime Enterprise account.
@@ -936,6 +1007,8 @@ Keyword-only arguments:
 - `ClientRequestToken`: `str`
 
 Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
+
+<a id="create_room_membership"></a>
 
 ### create_room_membership
 
@@ -958,6 +1031,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRoomMembershipResponseTypeDef](./type_defs.md#createroommembershipresponsetypedef).
+
+<a id="create_sip_media_application"></a>
 
 ### create_sip_media_application
 
@@ -983,6 +1058,8 @@ Keyword-only arguments:
 Returns
 [CreateSipMediaApplicationResponseTypeDef](./type_defs.md#createsipmediaapplicationresponsetypedef).
 
+<a id="create_sip_media_application_call"></a>
+
 ### create_sip_media_application_call
 
 Creates an outbound call to a phone number from the phone number specified in
@@ -1007,6 +1084,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSipMediaApplicationCallResponseTypeDef](./type_defs.md#createsipmediaapplicationcallresponsetypedef).
+
+<a id="create_sip_rule"></a>
 
 ### create_sip_rule
 
@@ -1035,6 +1114,8 @@ Keyword-only arguments:
 Returns
 [CreateSipRuleResponseTypeDef](./type_defs.md#createsipruleresponsetypedef).
 
+<a id="create_user"></a>
+
 ### create_user
 
 Creates a user under the specified Amazon Chime account.
@@ -1055,6 +1136,8 @@ Keyword-only arguments:
 - `UserType`: [UserTypeType](./literals.md#usertypetype)
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+
+<a id="create_voice_connector"></a>
 
 ### create_voice_connector
 
@@ -1077,6 +1160,8 @@ Keyword-only arguments:
 
 Returns
 [CreateVoiceConnectorResponseTypeDef](./type_defs.md#createvoiceconnectorresponsetypedef).
+
+<a id="create_voice_connector_group"></a>
 
 ### create_voice_connector_group
 
@@ -1101,6 +1186,8 @@ Keyword-only arguments:
 Returns
 [CreateVoiceConnectorGroupResponseTypeDef](./type_defs.md#createvoiceconnectorgroupresponsetypedef).
 
+<a id="delete_account"></a>
+
 ### delete_account
 
 Deletes the specified Amazon Chime account.
@@ -1119,6 +1206,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_app_instance"></a>
+
 ### delete_app_instance
 
 Deletes an `AppInstance` and all associated data asynchronously.
@@ -1134,6 +1223,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
+
+<a id="delete_app_instance_admin"></a>
 
 ### delete_app_instance_admin
 
@@ -1152,6 +1243,8 @@ Keyword-only arguments:
 - `AppInstanceAdminArn`: `str` *(required)*
 - `AppInstanceArn`: `str` *(required)*
 
+<a id="delete_app_instance_streaming_configurations"></a>
+
 ### delete_app_instance_streaming_configurations
 
 Deletes the streaming configurations of an `AppInstance` .
@@ -1169,6 +1262,8 @@ Keyword-only arguments:
 
 - `AppInstanceArn`: `str` *(required)*
 
+<a id="delete_app_instance_user"></a>
+
 ### delete_app_instance_user
 
 Deletes an `AppInstanceUser` .
@@ -1184,6 +1279,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppInstanceUserArn`: `str` *(required)*
+
+<a id="delete_attendee"></a>
 
 ### delete_attendee
 
@@ -1203,6 +1300,8 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
 
+<a id="delete_channel"></a>
+
 ### delete_channel
 
 Immediately makes a channel and its memberships inaccessible and marks them for
@@ -1220,6 +1319,8 @@ Keyword-only arguments:
 
 - `ChannelArn`: `str` *(required)*
 - `ChimeBearer`: `str`
+
+<a id="delete_channel_ban"></a>
 
 ### delete_channel_ban
 
@@ -1239,6 +1340,8 @@ Keyword-only arguments:
 - `MemberArn`: `str` *(required)*
 - `ChimeBearer`: `str`
 
+<a id="delete_channel_membership"></a>
+
 ### delete_channel_membership
 
 Removes a member from a channel.
@@ -1256,6 +1359,8 @@ Keyword-only arguments:
 - `ChannelArn`: `str` *(required)*
 - `MemberArn`: `str` *(required)*
 - `ChimeBearer`: `str`
+
+<a id="delete_channel_message"></a>
 
 ### delete_channel_message
 
@@ -1275,6 +1380,8 @@ Keyword-only arguments:
 - `MessageId`: `str` *(required)*
 - `ChimeBearer`: `str`
 
+<a id="delete_channel_moderator"></a>
+
 ### delete_channel_moderator
 
 Deletes a channel moderator.
@@ -1292,6 +1399,8 @@ Keyword-only arguments:
 - `ChannelArn`: `str` *(required)*
 - `ChannelModeratorArn`: `str` *(required)*
 - `ChimeBearer`: `str`
+
+<a id="delete_events_configuration"></a>
 
 ### delete_events_configuration
 
@@ -1311,6 +1420,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `BotId`: `str` *(required)*
 
+<a id="delete_media_capture_pipeline"></a>
+
 ### delete_media_capture_pipeline
 
 Deletes the media capture pipeline.
@@ -1328,6 +1439,8 @@ Keyword-only arguments:
 
 - `MediaPipelineId`: `str` *(required)*
 
+<a id="delete_meeting"></a>
+
 ### delete_meeting
 
 Deletes the specified Amazon Chime SDK meeting.
@@ -1344,6 +1457,8 @@ Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 
+<a id="delete_phone_number"></a>
+
 ### delete_phone_number
 
 Moves the specified phone number into the **Deletion queue**.
@@ -1359,6 +1474,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PhoneNumberId`: `str` *(required)*
+
+<a id="delete_proxy_session"></a>
 
 ### delete_proxy_session
 
@@ -1378,6 +1495,8 @@ Keyword-only arguments:
 - `VoiceConnectorId`: `str` *(required)*
 - `ProxySessionId`: `str` *(required)*
 
+<a id="delete_room"></a>
+
 ### delete_room
 
 Deletes a chat room in an Amazon Chime Enterprise account.
@@ -1394,6 +1513,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `RoomId`: `str` *(required)*
+
+<a id="delete_room_membership"></a>
 
 ### delete_room_membership
 
@@ -1413,6 +1534,8 @@ Keyword-only arguments:
 - `RoomId`: `str` *(required)*
 - `MemberId`: `str` *(required)*
 
+<a id="delete_sip_media_application"></a>
+
 ### delete_sip_media_application
 
 Deletes a SIP media application.
@@ -1430,6 +1553,8 @@ Keyword-only arguments:
 
 - `SipMediaApplicationId`: `str` *(required)*
 
+<a id="delete_sip_rule"></a>
+
 ### delete_sip_rule
 
 Deletes a SIP rule.
@@ -1446,6 +1571,8 @@ Keyword-only arguments:
 
 - `SipRuleId`: `str` *(required)*
 
+<a id="delete_voice_connector"></a>
+
 ### delete_voice_connector
 
 Deletes the specified Amazon Chime Voice Connector.
@@ -1461,6 +1588,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
+
+<a id="delete_voice_connector_emergency_calling_configuration"></a>
 
 ### delete_voice_connector_emergency_calling_configuration
 
@@ -1481,6 +1610,8 @@ Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
+<a id="delete_voice_connector_group"></a>
+
 ### delete_voice_connector_group
 
 Deletes the specified Amazon Chime Voice Connector group.
@@ -1497,6 +1628,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorGroupId`: `str` *(required)*
+
+<a id="delete_voice_connector_origination"></a>
 
 ### delete_voice_connector_origination
 
@@ -1516,6 +1649,8 @@ Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
+<a id="delete_voice_connector_proxy"></a>
+
 ### delete_voice_connector_proxy
 
 Deletes the proxy configuration from the specified Amazon Chime Voice
@@ -1533,6 +1668,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
+
+<a id="delete_voice_connector_streaming_configuration"></a>
 
 ### delete_voice_connector_streaming_configuration
 
@@ -1552,6 +1689,8 @@ Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
 
+<a id="delete_voice_connector_termination"></a>
+
 ### delete_voice_connector_termination
 
 Deletes the termination settings for the specified Amazon Chime Voice
@@ -1569,6 +1708,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `VoiceConnectorId`: `str` *(required)*
+
+<a id="delete_voice_connector_termination_credentials"></a>
 
 ### delete_voice_connector_termination_credentials
 
@@ -1589,6 +1730,8 @@ Keyword-only arguments:
 - `VoiceConnectorId`: `str` *(required)*
 - `Usernames`: `Sequence`\[`str`\] *(required)*
 
+<a id="describe_app_instance"></a>
+
 ### describe_app_instance
 
 Returns the full details of an `AppInstance` .
@@ -1607,6 +1750,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppInstanceResponseTypeDef](./type_defs.md#describeappinstanceresponsetypedef).
+
+<a id="describe_app_instance_admin"></a>
 
 ### describe_app_instance_admin
 
@@ -1629,6 +1774,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppInstanceAdminResponseTypeDef](./type_defs.md#describeappinstanceadminresponsetypedef).
 
+<a id="describe_app_instance_user"></a>
+
 ### describe_app_instance_user
 
 Returns the full details of an `AppInstanceUser` .
@@ -1647,6 +1794,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppInstanceUserResponseTypeDef](./type_defs.md#describeappinstanceuserresponsetypedef).
+
+<a id="describe_channel"></a>
 
 ### describe_channel
 
@@ -1667,6 +1816,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+
+<a id="describe_channel_ban"></a>
 
 ### describe_channel_ban
 
@@ -1689,6 +1840,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelBanResponseTypeDef](./type_defs.md#describechannelbanresponsetypedef).
 
+<a id="describe_channel_membership"></a>
+
 ### describe_channel_membership
 
 Returns the full details of a user's channel membership.
@@ -1710,6 +1863,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelMembershipResponseTypeDef](./type_defs.md#describechannelmembershipresponsetypedef).
+
+<a id="describe_channel_membership_for_app_instance_user"></a>
 
 ### describe_channel_membership_for_app_instance_user
 
@@ -1735,6 +1890,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelMembershipForAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmembershipforappinstanceuserresponsetypedef).
 
+<a id="describe_channel_moderated_by_app_instance_user"></a>
+
 ### describe_channel_moderated_by_app_instance_user
 
 Returns the full details of a channel moderated by the specified
@@ -1758,6 +1915,8 @@ Keyword-only arguments:
 Returns
 [DescribeChannelModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#describechannelmoderatedbyappinstanceuserresponsetypedef).
 
+<a id="describe_channel_moderator"></a>
+
 ### describe_channel_moderator
 
 Returns the full details of a single ChannelModerator.
@@ -1778,6 +1937,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelModeratorResponseTypeDef](./type_defs.md#describechannelmoderatorresponsetypedef).
+
+<a id="disassociate_phone_number_from_user"></a>
 
 ### disassociate_phone_number_from_user
 
@@ -1800,6 +1961,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_phone_numbers_from_voice_connector"></a>
+
 ### disassociate_phone_numbers_from_voice_connector
 
 Disassociates the specified phone numbers from the specified Amazon Chime Voice
@@ -1821,6 +1984,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociatePhoneNumbersFromVoiceConnectorResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorresponsetypedef).
+
+<a id="disassociate_phone_numbers_from_voice_connector_group"></a>
 
 ### disassociate_phone_numbers_from_voice_connector_group
 
@@ -1845,6 +2010,8 @@ Keyword-only arguments:
 Returns
 [DisassociatePhoneNumbersFromVoiceConnectorGroupResponseTypeDef](./type_defs.md#disassociatephonenumbersfromvoiceconnectorgroupresponsetypedef).
 
+<a id="disassociate_signin_delegate_groups_from_account"></a>
+
 ### disassociate_signin_delegate_groups_from_account
 
 Disassociates the specified sign-in delegate groups from the specified Amazon
@@ -1867,6 +2034,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1884,6 +2053,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_account"></a>
 
 ### get_account
 
@@ -1903,6 +2074,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 
 Returns [GetAccountResponseTypeDef](./type_defs.md#getaccountresponsetypedef).
+
+<a id="get_account_settings"></a>
 
 ### get_account_settings
 
@@ -1924,6 +2097,8 @@ Keyword-only arguments:
 Returns
 [GetAccountSettingsResponseTypeDef](./type_defs.md#getaccountsettingsresponsetypedef).
 
+<a id="get_app_instance_retention_settings"></a>
+
 ### get_app_instance_retention_settings
 
 Gets the retention settings for an `AppInstance` .
@@ -1944,6 +2119,8 @@ Keyword-only arguments:
 Returns
 [GetAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#getappinstanceretentionsettingsresponsetypedef).
 
+<a id="get_app_instance_streaming_configurations"></a>
+
 ### get_app_instance_streaming_configurations
 
 Gets the streaming settings for an `AppInstance` .
@@ -1963,6 +2140,8 @@ Keyword-only arguments:
 
 Returns
 [GetAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#getappinstancestreamingconfigurationsresponsetypedef).
+
+<a id="get_attendee"></a>
 
 ### get_attendee
 
@@ -1985,6 +2164,8 @@ Keyword-only arguments:
 Returns
 [GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
 
+<a id="get_bot"></a>
+
 ### get_bot
 
 Retrieves details for the specified bot, such as bot email address, bot type,
@@ -2004,6 +2185,8 @@ Keyword-only arguments:
 - `BotId`: `str` *(required)*
 
 Returns [GetBotResponseTypeDef](./type_defs.md#getbotresponsetypedef).
+
+<a id="get_channel_message"></a>
 
 ### get_channel_message
 
@@ -2026,6 +2209,8 @@ Keyword-only arguments:
 Returns
 [GetChannelMessageResponseTypeDef](./type_defs.md#getchannelmessageresponsetypedef).
 
+<a id="get_events_configuration"></a>
+
 ### get_events_configuration
 
 Gets details for an events configuration that allows a bot to receive outgoing
@@ -2047,6 +2232,8 @@ Keyword-only arguments:
 Returns
 [GetEventsConfigurationResponseTypeDef](./type_defs.md#geteventsconfigurationresponsetypedef).
 
+<a id="get_global_settings"></a>
+
 ### get_global_settings
 
 Retrieves global settings for the administrator's AWS account, such as Amazon
@@ -2059,6 +2246,8 @@ Boto3 documentation:
 
 Returns
 [GetGlobalSettingsResponseTypeDef](./type_defs.md#getglobalsettingsresponsetypedef).
+
+<a id="get_media_capture_pipeline"></a>
 
 ### get_media_capture_pipeline
 
@@ -2079,6 +2268,8 @@ Keyword-only arguments:
 Returns
 [GetMediaCapturePipelineResponseTypeDef](./type_defs.md#getmediacapturepipelineresponsetypedef).
 
+<a id="get_meeting"></a>
+
 ### get_meeting
 
 Gets the Amazon Chime SDK meeting details for the specified meeting ID.
@@ -2097,6 +2288,8 @@ Keyword-only arguments:
 
 Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
 
+<a id="get_messaging_session_endpoint"></a>
+
 ### get_messaging_session_endpoint
 
 The details of the endpoint for the messaging session.
@@ -2109,6 +2302,8 @@ Boto3 documentation:
 
 Returns
 [GetMessagingSessionEndpointResponseTypeDef](./type_defs.md#getmessagingsessionendpointresponsetypedef).
+
+<a id="get_phone_number"></a>
 
 ### get_phone_number
 
@@ -2129,6 +2324,8 @@ Keyword-only arguments:
 
 Returns
 [GetPhoneNumberResponseTypeDef](./type_defs.md#getphonenumberresponsetypedef).
+
+<a id="get_phone_number_order"></a>
 
 ### get_phone_number_order
 
@@ -2151,6 +2348,8 @@ Keyword-only arguments:
 Returns
 [GetPhoneNumberOrderResponseTypeDef](./type_defs.md#getphonenumberorderresponsetypedef).
 
+<a id="get_phone_number_settings"></a>
+
 ### get_phone_number_settings
 
 Retrieves the phone number settings for the administrator's AWS account, such
@@ -2163,6 +2362,8 @@ Boto3 documentation:
 
 Returns
 [GetPhoneNumberSettingsResponseTypeDef](./type_defs.md#getphonenumbersettingsresponsetypedef).
+
+<a id="get_proxy_session"></a>
 
 ### get_proxy_session
 
@@ -2185,6 +2386,8 @@ Keyword-only arguments:
 Returns
 [GetProxySessionResponseTypeDef](./type_defs.md#getproxysessionresponsetypedef).
 
+<a id="get_retention_settings"></a>
+
 ### get_retention_settings
 
 Gets the retention settings for the specified Amazon Chime Enterprise account.
@@ -2203,6 +2406,8 @@ Keyword-only arguments:
 
 Returns
 [GetRetentionSettingsResponseTypeDef](./type_defs.md#getretentionsettingsresponsetypedef).
+
+<a id="get_room"></a>
 
 ### get_room
 
@@ -2224,6 +2429,8 @@ Keyword-only arguments:
 
 Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
 
+<a id="get_sip_media_application"></a>
+
 ### get_sip_media_application
 
 Retrieves the information for a SIP media application, including name, AWS
@@ -2243,6 +2450,8 @@ Keyword-only arguments:
 
 Returns
 [GetSipMediaApplicationResponseTypeDef](./type_defs.md#getsipmediaapplicationresponsetypedef).
+
+<a id="get_sip_media_application_logging_configuration"></a>
 
 ### get_sip_media_application_logging_configuration
 
@@ -2264,6 +2473,8 @@ Keyword-only arguments:
 Returns
 [GetSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#getsipmediaapplicationloggingconfigurationresponsetypedef).
 
+<a id="get_sip_rule"></a>
+
 ### get_sip_rule
 
 Retrieves the details of a SIP rule, such as the rule ID, name, triggers, and
@@ -2282,6 +2493,8 @@ Keyword-only arguments:
 - `SipRuleId`: `str` *(required)*
 
 Returns [GetSipRuleResponseTypeDef](./type_defs.md#getsipruleresponsetypedef).
+
+<a id="get_user"></a>
 
 ### get_user
 
@@ -2302,6 +2515,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+
+<a id="get_user_settings"></a>
 
 ### get_user_settings
 
@@ -2324,6 +2539,8 @@ Keyword-only arguments:
 Returns
 [GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
 
+<a id="get_voice_connector"></a>
+
 ### get_voice_connector
 
 Retrieves details for the specified Amazon Chime Voice Connector, such as
@@ -2343,6 +2560,8 @@ Keyword-only arguments:
 
 Returns
 [GetVoiceConnectorResponseTypeDef](./type_defs.md#getvoiceconnectorresponsetypedef).
+
+<a id="get_voice_connector_emergency_calling_configuration"></a>
 
 ### get_voice_connector_emergency_calling_configuration
 
@@ -2366,6 +2585,8 @@ Keyword-only arguments:
 Returns
 [GetVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
+<a id="get_voice_connector_group"></a>
+
 ### get_voice_connector_group
 
 Retrieves details for the specified Amazon Chime Voice Connector group, such as
@@ -2385,6 +2606,8 @@ Keyword-only arguments:
 
 Returns
 [GetVoiceConnectorGroupResponseTypeDef](./type_defs.md#getvoiceconnectorgroupresponsetypedef).
+
+<a id="get_voice_connector_logging_configuration"></a>
 
 ### get_voice_connector_logging_configuration
 
@@ -2407,6 +2630,8 @@ Keyword-only arguments:
 Returns
 [GetVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorloggingconfigurationresponsetypedef).
 
+<a id="get_voice_connector_origination"></a>
+
 ### get_voice_connector_origination
 
 Retrieves origination setting details for the specified Amazon Chime Voice
@@ -2428,6 +2653,8 @@ Keyword-only arguments:
 Returns
 [GetVoiceConnectorOriginationResponseTypeDef](./type_defs.md#getvoiceconnectororiginationresponsetypedef).
 
+<a id="get_voice_connector_proxy"></a>
+
 ### get_voice_connector_proxy
 
 Gets the proxy configuration details for the specified Amazon Chime Voice
@@ -2447,6 +2674,8 @@ Keyword-only arguments:
 
 Returns
 [GetVoiceConnectorProxyResponseTypeDef](./type_defs.md#getvoiceconnectorproxyresponsetypedef).
+
+<a id="get_voice_connector_streaming_configuration"></a>
 
 ### get_voice_connector_streaming_configuration
 
@@ -2469,6 +2698,8 @@ Keyword-only arguments:
 Returns
 [GetVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#getvoiceconnectorstreamingconfigurationresponsetypedef).
 
+<a id="get_voice_connector_termination"></a>
+
 ### get_voice_connector_termination
 
 Retrieves termination setting details for the specified Amazon Chime Voice
@@ -2490,6 +2721,8 @@ Keyword-only arguments:
 Returns
 [GetVoiceConnectorTerminationResponseTypeDef](./type_defs.md#getvoiceconnectorterminationresponsetypedef).
 
+<a id="get_voice_connector_termination_health"></a>
+
 ### get_voice_connector_termination_health
 
 Retrieves information about the last time a SIP `OPTIONS` ping was received
@@ -2510,6 +2743,8 @@ Keyword-only arguments:
 
 Returns
 [GetVoiceConnectorTerminationHealthResponseTypeDef](./type_defs.md#getvoiceconnectorterminationhealthresponsetypedef).
+
+<a id="invite_users"></a>
 
 ### invite_users
 
@@ -2533,6 +2768,8 @@ Keyword-only arguments:
 Returns
 [InviteUsersResponseTypeDef](./type_defs.md#inviteusersresponsetypedef).
 
+<a id="list_accounts"></a>
+
 ### list_accounts
 
 Lists the Amazon Chime accounts under the administrator's AWS account.
@@ -2555,6 +2792,8 @@ Keyword-only arguments:
 Returns
 [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
 
+<a id="list_app_instance_admins"></a>
+
 ### list_app_instance_admins
 
 Returns a list of the administrators in the `AppInstance` .
@@ -2575,6 +2814,8 @@ Keyword-only arguments:
 
 Returns
 [ListAppInstanceAdminsResponseTypeDef](./type_defs.md#listappinstanceadminsresponsetypedef).
+
+<a id="list_app_instance_users"></a>
 
 ### list_app_instance_users
 
@@ -2597,6 +2838,8 @@ Keyword-only arguments:
 Returns
 [ListAppInstanceUsersResponseTypeDef](./type_defs.md#listappinstanceusersresponsetypedef).
 
+<a id="list_app_instances"></a>
+
 ### list_app_instances
 
 Lists all Amazon Chime `AppInstance` s created under a single AWS account.
@@ -2617,6 +2860,8 @@ Keyword-only arguments:
 Returns
 [ListAppInstancesResponseTypeDef](./type_defs.md#listappinstancesresponsetypedef).
 
+<a id="list_attendee_tags"></a>
+
 ### list_attendee_tags
 
 Lists the tags applied to an Amazon Chime SDK attendee resource.
@@ -2636,6 +2881,8 @@ Keyword-only arguments:
 
 Returns
 [ListAttendeeTagsResponseTypeDef](./type_defs.md#listattendeetagsresponsetypedef).
+
+<a id="list_attendees"></a>
 
 ### list_attendees
 
@@ -2658,6 +2905,8 @@ Keyword-only arguments:
 Returns
 [ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
 
+<a id="list_bots"></a>
+
 ### list_bots
 
 Lists the bots associated with the administrator's Amazon Chime Enterprise
@@ -2678,6 +2927,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+
+<a id="list_channel_bans"></a>
 
 ### list_channel_bans
 
@@ -2700,6 +2951,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelBansResponseTypeDef](./type_defs.md#listchannelbansresponsetypedef).
+
+<a id="list_channel_memberships"></a>
 
 ### list_channel_memberships
 
@@ -2724,6 +2977,8 @@ Keyword-only arguments:
 Returns
 [ListChannelMembershipsResponseTypeDef](./type_defs.md#listchannelmembershipsresponsetypedef).
 
+<a id="list_channel_memberships_for_app_instance_user"></a>
+
 ### list_channel_memberships_for_app_instance_user
 
 Lists all channels that a particular `AppInstanceUser` is a part of.
@@ -2746,6 +3001,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelMembershipsForAppInstanceUserResponseTypeDef](./type_defs.md#listchannelmembershipsforappinstanceuserresponsetypedef).
+
+<a id="list_channel_messages"></a>
 
 ### list_channel_messages
 
@@ -2772,6 +3029,8 @@ Keyword-only arguments:
 Returns
 [ListChannelMessagesResponseTypeDef](./type_defs.md#listchannelmessagesresponsetypedef).
 
+<a id="list_channel_moderators"></a>
+
 ### list_channel_moderators
 
 Lists all the moderators for a channel.
@@ -2793,6 +3052,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelModeratorsResponseTypeDef](./type_defs.md#listchannelmoderatorsresponsetypedef).
+
+<a id="list_channels"></a>
 
 ### list_channels
 
@@ -2817,6 +3078,8 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
+<a id="list_channels_moderated_by_app_instance_user"></a>
+
 ### list_channels_moderated_by_app_instance_user
 
 A list of the channels moderated by an `AppInstanceUser` .
@@ -2840,6 +3103,8 @@ Keyword-only arguments:
 Returns
 [ListChannelsModeratedByAppInstanceUserResponseTypeDef](./type_defs.md#listchannelsmoderatedbyappinstanceuserresponsetypedef).
 
+<a id="list_media_capture_pipelines"></a>
+
 ### list_media_capture_pipelines
 
 Returns a list of media capture pipelines.
@@ -2861,6 +3126,8 @@ Keyword-only arguments:
 Returns
 [ListMediaCapturePipelinesResponseTypeDef](./type_defs.md#listmediacapturepipelinesresponsetypedef).
 
+<a id="list_meeting_tags"></a>
+
 ### list_meeting_tags
 
 Lists the tags applied to an Amazon Chime SDK meeting resource.
@@ -2879,6 +3146,8 @@ Keyword-only arguments:
 
 Returns
 [ListMeetingTagsResponseTypeDef](./type_defs.md#listmeetingtagsresponsetypedef).
+
+<a id="list_meetings"></a>
 
 ### list_meetings
 
@@ -2900,6 +3169,8 @@ Keyword-only arguments:
 Returns
 [ListMeetingsResponseTypeDef](./type_defs.md#listmeetingsresponsetypedef).
 
+<a id="list_phone_number_orders"></a>
+
 ### list_phone_number_orders
 
 Lists the phone number orders for the administrator's Amazon Chime account.
@@ -2919,6 +3190,8 @@ Keyword-only arguments:
 
 Returns
 [ListPhoneNumberOrdersResponseTypeDef](./type_defs.md#listphonenumberordersresponsetypedef).
+
+<a id="list_phone_numbers"></a>
 
 ### list_phone_numbers
 
@@ -2947,6 +3220,8 @@ Keyword-only arguments:
 Returns
 [ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
 
+<a id="list_proxy_sessions"></a>
+
 ### list_proxy_sessions
 
 Lists the proxy sessions for the specified Amazon Chime Voice Connector.
@@ -2968,6 +3243,8 @@ Keyword-only arguments:
 
 Returns
 [ListProxySessionsResponseTypeDef](./type_defs.md#listproxysessionsresponsetypedef).
+
+<a id="list_room_memberships"></a>
 
 ### list_room_memberships
 
@@ -2992,6 +3269,8 @@ Keyword-only arguments:
 Returns
 [ListRoomMembershipsResponseTypeDef](./type_defs.md#listroommembershipsresponsetypedef).
 
+<a id="list_rooms"></a>
+
 ### list_rooms
 
 Lists the room details for the specified Amazon Chime Enterprise account.
@@ -3012,6 +3291,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListRoomsResponseTypeDef](./type_defs.md#listroomsresponsetypedef).
+
+<a id="list_sip_media_applications"></a>
 
 ### list_sip_media_applications
 
@@ -3034,6 +3315,8 @@ Keyword-only arguments:
 Returns
 [ListSipMediaApplicationsResponseTypeDef](./type_defs.md#listsipmediaapplicationsresponsetypedef).
 
+<a id="list_sip_rules"></a>
+
 ### list_sip_rules
 
 Lists the SIP rules under the administrator's AWS account.
@@ -3054,6 +3337,8 @@ Keyword-only arguments:
 
 Returns
 [ListSipRulesResponseTypeDef](./type_defs.md#listsiprulesresponsetypedef).
+
+<a id="list_supported_phone_number_countries"></a>
 
 ### list_supported_phone_number_countries
 
@@ -3077,6 +3362,8 @@ Keyword-only arguments:
 Returns
 [ListSupportedPhoneNumberCountriesResponseTypeDef](./type_defs.md#listsupportedphonenumbercountriesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags applied to an Amazon Chime SDK meeting resource.
@@ -3095,6 +3382,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_users"></a>
 
 ### list_users
 
@@ -3118,6 +3407,8 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
+<a id="list_voice_connector_groups"></a>
+
 ### list_voice_connector_groups
 
 Lists the Amazon Chime Voice Connector groups for the administrator's AWS
@@ -3140,6 +3431,8 @@ Keyword-only arguments:
 Returns
 [ListVoiceConnectorGroupsResponseTypeDef](./type_defs.md#listvoiceconnectorgroupsresponsetypedef).
 
+<a id="list_voice_connector_termination_credentials"></a>
+
 ### list_voice_connector_termination_credentials
 
 Lists the SIP credentials for the specified Amazon Chime Voice Connector.
@@ -3159,6 +3452,8 @@ Keyword-only arguments:
 
 Returns
 [ListVoiceConnectorTerminationCredentialsResponseTypeDef](./type_defs.md#listvoiceconnectorterminationcredentialsresponsetypedef).
+
+<a id="list_voice_connectors"></a>
 
 ### list_voice_connectors
 
@@ -3180,6 +3475,8 @@ Keyword-only arguments:
 Returns
 [ListVoiceConnectorsResponseTypeDef](./type_defs.md#listvoiceconnectorsresponsetypedef).
 
+<a id="logout_user"></a>
+
 ### logout_user
 
 Logs out the specified user from all of the devices they are currently logged
@@ -3199,6 +3496,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_app_instance_retention_settings"></a>
 
 ### put_app_instance_retention_settings
 
@@ -3223,6 +3522,8 @@ Keyword-only arguments:
 Returns
 [PutAppInstanceRetentionSettingsResponseTypeDef](./type_defs.md#putappinstanceretentionsettingsresponsetypedef).
 
+<a id="put_app_instance_streaming_configurations"></a>
+
 ### put_app_instance_streaming_configurations
 
 The data streaming configurations of an `AppInstance` .
@@ -3245,6 +3546,8 @@ Keyword-only arguments:
 
 Returns
 [PutAppInstanceStreamingConfigurationsResponseTypeDef](./type_defs.md#putappinstancestreamingconfigurationsresponsetypedef).
+
+<a id="put_events_configuration"></a>
 
 ### put_events_configuration
 
@@ -3269,6 +3572,8 @@ Keyword-only arguments:
 Returns
 [PutEventsConfigurationResponseTypeDef](./type_defs.md#puteventsconfigurationresponsetypedef).
 
+<a id="put_retention_settings"></a>
+
 ### put_retention_settings
 
 Puts retention settings for the specified Amazon Chime Enterprise account.
@@ -3291,6 +3596,8 @@ Keyword-only arguments:
 Returns
 [PutRetentionSettingsResponseTypeDef](./type_defs.md#putretentionsettingsresponsetypedef).
 
+<a id="put_sip_media_application_logging_configuration"></a>
+
 ### put_sip_media_application_logging_configuration
 
 Updates the logging configuration for the specified SIP media application.
@@ -3312,6 +3619,8 @@ Keyword-only arguments:
 
 Returns
 [PutSipMediaApplicationLoggingConfigurationResponseTypeDef](./type_defs.md#putsipmediaapplicationloggingconfigurationresponsetypedef).
+
+<a id="put_voice_connector_emergency_calling_configuration"></a>
 
 ### put_voice_connector_emergency_calling_configuration
 
@@ -3338,6 +3647,8 @@ Keyword-only arguments:
 Returns
 [PutVoiceConnectorEmergencyCallingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectoremergencycallingconfigurationresponsetypedef).
 
+<a id="put_voice_connector_logging_configuration"></a>
+
 ### put_voice_connector_logging_configuration
 
 Adds a logging configuration for the specified Amazon Chime Voice Connector.
@@ -3361,6 +3672,8 @@ Keyword-only arguments:
 Returns
 [PutVoiceConnectorLoggingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorloggingconfigurationresponsetypedef).
 
+<a id="put_voice_connector_origination"></a>
+
 ### put_voice_connector_origination
 
 Adds origination settings for the specified Amazon Chime Voice Connector.
@@ -3382,6 +3695,8 @@ Keyword-only arguments:
 
 Returns
 [PutVoiceConnectorOriginationResponseTypeDef](./type_defs.md#putvoiceconnectororiginationresponsetypedef).
+
+<a id="put_voice_connector_proxy"></a>
 
 ### put_voice_connector_proxy
 
@@ -3407,6 +3722,8 @@ Keyword-only arguments:
 Returns
 [PutVoiceConnectorProxyResponseTypeDef](./type_defs.md#putvoiceconnectorproxyresponsetypedef).
 
+<a id="put_voice_connector_streaming_configuration"></a>
+
 ### put_voice_connector_streaming_configuration
 
 Adds a streaming configuration for the specified Amazon Chime Voice Connector.
@@ -3430,6 +3747,8 @@ Keyword-only arguments:
 Returns
 [PutVoiceConnectorStreamingConfigurationResponseTypeDef](./type_defs.md#putvoiceconnectorstreamingconfigurationresponsetypedef).
 
+<a id="put_voice_connector_termination"></a>
+
 ### put_voice_connector_termination
 
 Adds termination settings for the specified Amazon Chime Voice Connector.
@@ -3452,6 +3771,8 @@ Keyword-only arguments:
 Returns
 [PutVoiceConnectorTerminationResponseTypeDef](./type_defs.md#putvoiceconnectorterminationresponsetypedef).
 
+<a id="put_voice_connector_termination_credentials"></a>
+
 ### put_voice_connector_termination_credentials
 
 Adds termination SIP credentials for the specified Amazon Chime Voice
@@ -3471,6 +3792,8 @@ Keyword-only arguments:
 - `VoiceConnectorId`: `str` *(required)*
 - `Credentials`:
   `Sequence`\[[CredentialTypeDef](./type_defs.md#credentialtypedef)\]
+
+<a id="redact_channel_message"></a>
 
 ### redact_channel_message
 
@@ -3493,6 +3816,8 @@ Keyword-only arguments:
 Returns
 [RedactChannelMessageResponseTypeDef](./type_defs.md#redactchannelmessageresponsetypedef).
 
+<a id="redact_conversation_message"></a>
+
 ### redact_conversation_message
 
 Redacts the specified message from the specified Amazon Chime conversation.
@@ -3514,6 +3839,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="redact_room_message"></a>
+
 ### redact_room_message
 
 Redacts the specified message from the specified Amazon Chime channel.
@@ -3534,6 +3861,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="regenerate_security_token"></a>
+
 ### regenerate_security_token
 
 Regenerates the security token for a bot.
@@ -3553,6 +3882,8 @@ Keyword-only arguments:
 
 Returns
 [RegenerateSecurityTokenResponseTypeDef](./type_defs.md#regeneratesecuritytokenresponsetypedef).
+
+<a id="reset_personal_pin"></a>
 
 ### reset_personal_pin
 
@@ -3575,6 +3906,8 @@ Keyword-only arguments:
 Returns
 [ResetPersonalPINResponseTypeDef](./type_defs.md#resetpersonalpinresponsetypedef).
 
+<a id="restore_phone_number"></a>
+
 ### restore_phone_number
 
 Moves a phone number from the **Deletion queue** back into the phone number
@@ -3594,6 +3927,8 @@ Keyword-only arguments:
 
 Returns
 [RestorePhoneNumberResponseTypeDef](./type_defs.md#restorephonenumberresponsetypedef).
+
+<a id="search_available_phone_numbers"></a>
 
 ### search_available_phone_numbers
 
@@ -3621,6 +3956,8 @@ Keyword-only arguments:
 
 Returns
 [SearchAvailablePhoneNumbersResponseTypeDef](./type_defs.md#searchavailablephonenumbersresponsetypedef).
+
+<a id="send_channel_message"></a>
 
 ### send_channel_message
 
@@ -3650,6 +3987,8 @@ Keyword-only arguments:
 Returns
 [SendChannelMessageResponseTypeDef](./type_defs.md#sendchannelmessageresponsetypedef).
 
+<a id="start_meeting_transcription"></a>
+
 ### start_meeting_transcription
 
 Starts transcription for the specified `meetingId` .
@@ -3672,6 +4011,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_meeting_transcription"></a>
+
 ### stop_meeting_transcription
 
 Stops transcription for the specified `meetingId` .
@@ -3689,6 +4030,8 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_attendee"></a>
 
 ### tag_attendee
 
@@ -3708,6 +4051,8 @@ Keyword-only arguments:
 - `AttendeeId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="tag_meeting"></a>
+
 ### tag_meeting
 
 Applies the specified tags to the specified Amazon Chime SDK meeting.
@@ -3725,6 +4070,8 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies the specified tags to the specified Amazon Chime SDK meeting resource.
@@ -3741,6 +4088,8 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="untag_attendee"></a>
 
 ### untag_attendee
 
@@ -3760,6 +4109,8 @@ Keyword-only arguments:
 - `AttendeeId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="untag_meeting"></a>
+
 ### untag_meeting
 
 Untags the specified tags from the specified Amazon Chime SDK meeting.
@@ -3777,6 +4128,8 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Untags the specified tags from the specified Amazon Chime SDK meeting resource.
@@ -3793,6 +4146,8 @@ Keyword-only arguments:
 
 - `ResourceARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_account"></a>
 
 ### update_account
 
@@ -3815,6 +4170,8 @@ Keyword-only arguments:
 Returns
 [UpdateAccountResponseTypeDef](./type_defs.md#updateaccountresponsetypedef).
 
+<a id="update_account_settings"></a>
+
 ### update_account_settings
 
 Updates the settings for the specified Amazon Chime account.
@@ -3834,6 +4191,8 @@ Keyword-only arguments:
   [AccountSettingsTypeDef](./type_defs.md#accountsettingstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_app_instance"></a>
 
 ### update_app_instance
 
@@ -3856,6 +4215,8 @@ Keyword-only arguments:
 Returns
 [UpdateAppInstanceResponseTypeDef](./type_defs.md#updateappinstanceresponsetypedef).
 
+<a id="update_app_instance_user"></a>
+
 ### update_app_instance_user
 
 Updates the details of an `AppInstanceUser`.
@@ -3877,6 +4238,8 @@ Keyword-only arguments:
 Returns
 [UpdateAppInstanceUserResponseTypeDef](./type_defs.md#updateappinstanceuserresponsetypedef).
 
+<a id="update_bot"></a>
+
 ### update_bot
 
 Updates the status of the specified bot, such as starting or stopping the bot
@@ -3897,6 +4260,8 @@ Keyword-only arguments:
 - `Disabled`: `bool`
 
 Returns [UpdateBotResponseTypeDef](./type_defs.md#updatebotresponsetypedef).
+
+<a id="update_channel"></a>
 
 ### update_channel
 
@@ -3921,6 +4286,8 @@ Keyword-only arguments:
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
+<a id="update_channel_message"></a>
+
 ### update_channel_message
 
 Updates the content of a message.
@@ -3944,6 +4311,8 @@ Keyword-only arguments:
 Returns
 [UpdateChannelMessageResponseTypeDef](./type_defs.md#updatechannelmessageresponsetypedef).
 
+<a id="update_channel_read_marker"></a>
+
 ### update_channel_read_marker
 
 The details of the time when a user last read messages in a channel.
@@ -3964,6 +4333,8 @@ Keyword-only arguments:
 Returns
 [UpdateChannelReadMarkerResponseTypeDef](./type_defs.md#updatechannelreadmarkerresponsetypedef).
 
+<a id="update_global_settings"></a>
+
 ### update_global_settings
 
 Updates global settings for the administrator's AWS account, such as Amazon
@@ -3983,6 +4354,8 @@ Keyword-only arguments:
   [BusinessCallingSettingsTypeDef](./type_defs.md#businesscallingsettingstypedef)
 - `VoiceConnector`:
   [VoiceConnectorSettingsTypeDef](./type_defs.md#voiceconnectorsettingstypedef)
+
+<a id="update_phone_number"></a>
 
 ### update_phone_number
 
@@ -4007,6 +4380,8 @@ Keyword-only arguments:
 Returns
 [UpdatePhoneNumberResponseTypeDef](./type_defs.md#updatephonenumberresponsetypedef).
 
+<a id="update_phone_number_settings"></a>
+
 ### update_phone_number_settings
 
 Updates the phone number settings for the administrator's AWS account, such as
@@ -4024,6 +4399,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CallingName`: `str` *(required)*
+
+<a id="update_proxy_session"></a>
 
 ### update_proxy_session
 
@@ -4048,6 +4425,8 @@ Keyword-only arguments:
 Returns
 [UpdateProxySessionResponseTypeDef](./type_defs.md#updateproxysessionresponsetypedef).
 
+<a id="update_room"></a>
+
 ### update_room
 
 Updates room details, such as the room name, for a room in an Amazon Chime
@@ -4068,6 +4447,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns [UpdateRoomResponseTypeDef](./type_defs.md#updateroomresponsetypedef).
+
+<a id="update_room_membership"></a>
 
 ### update_room_membership
 
@@ -4092,6 +4473,8 @@ Keyword-only arguments:
 Returns
 [UpdateRoomMembershipResponseTypeDef](./type_defs.md#updateroommembershipresponsetypedef).
 
+<a id="update_sip_media_application"></a>
+
 ### update_sip_media_application
 
 Updates the details of the specified SIP media application.
@@ -4114,6 +4497,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSipMediaApplicationResponseTypeDef](./type_defs.md#updatesipmediaapplicationresponsetypedef).
+
+<a id="update_sip_media_application_call"></a>
 
 ### update_sip_media_application_call
 
@@ -4138,6 +4523,8 @@ Keyword-only arguments:
 Returns
 [UpdateSipMediaApplicationCallResponseTypeDef](./type_defs.md#updatesipmediaapplicationcallresponsetypedef).
 
+<a id="update_sip_rule"></a>
+
 ### update_sip_rule
 
 Updates the details of the specified SIP rule.
@@ -4160,6 +4547,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSipRuleResponseTypeDef](./type_defs.md#updatesipruleresponsetypedef).
+
+<a id="update_user"></a>
 
 ### update_user
 
@@ -4184,6 +4573,8 @@ Keyword-only arguments:
 
 Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 
+<a id="update_user_settings"></a>
+
 ### update_user_settings
 
 Updates the settings for the specified user, such as phone number settings.
@@ -4202,6 +4593,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `UserSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
   *(required)*
+
+<a id="update_voice_connector"></a>
 
 ### update_voice_connector
 
@@ -4223,6 +4616,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVoiceConnectorResponseTypeDef](./type_defs.md#updatevoiceconnectorresponsetypedef).
+
+<a id="update_voice_connector_group"></a>
 
 ### update_voice_connector_group
 
@@ -4248,6 +4643,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVoiceConnectorGroupResponseTypeDef](./type_defs.md#updatevoiceconnectorgroupresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

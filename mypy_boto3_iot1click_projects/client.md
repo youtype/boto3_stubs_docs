@@ -1,3 +1,5 @@
+<a id="iot1clickprojectsclient-for-boto3-iot1clickprojects-module"></a>
+
 # IoT1ClickProjectsClient for boto3 IoT1ClickProjects module
 
 > [Index](..) > [IoT1ClickProjects](.) > IoT1ClickProjectsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoT1ClickProjects](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects)
 type annotations stubs module
-[mypy_boto3_iot1click_projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
+[mypy-boto3-iot1click-projects](https://pypi.org/project/mypy-boto3-iot1click-projects/).
 
 - [IoT1ClickProjectsClient for boto3 IoT1ClickProjects module](#iot1clickprojectsclient-for-boto3-iot1clickprojects-module)
   - [IoT1ClickProjectsClient](#iot1clickprojectsclient)
@@ -32,6 +34,8 @@ type annotations stubs module
     - [update_project](#update_project)
     - [get_paginator](#get_paginator)
 
+<a id="iot1clickprojectsclient"></a>
+
 ## IoT1ClickProjectsClient
 
 Type annotations for `boto3.client("iot1click-projects")`
@@ -39,14 +43,17 @@ Type annotations for `boto3.client("iot1click-projects")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iot1click_projects.client import IoT1ClickProjectsClient
 
 def get_iot1click-projects_client() -> IoT1ClickProjectsClient:
-    return boto3.client("iot1click-projects")
+    return Session().client("iot1click-projects")
 ```
 
 Boto3 documentation:
 [IoT1ClickProjects.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [IoT1ClickProjects.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-projects.html#IoT1ClickProjects.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_device_with_placement"></a>
 
 ### associate_device_with_placement
 
@@ -104,6 +117,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -118,6 +133,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_placement"></a>
 
 ### create_placement
 
@@ -139,6 +156,8 @@ Keyword-only arguments:
 - `attributes`: `Mapping`\[`str`, `str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_project"></a>
 
 ### create_project
 
@@ -163,6 +182,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_placement"></a>
+
 ### delete_placement
 
 Deletes a placement.
@@ -183,6 +204,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes a project.
@@ -201,6 +224,8 @@ Keyword-only arguments:
 - `projectName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_placement"></a>
 
 ### describe_placement
 
@@ -223,6 +248,8 @@ Keyword-only arguments:
 Returns
 [DescribePlacementResponseTypeDef](./type_defs.md#describeplacementresponsetypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Returns an object describing a project.
@@ -242,6 +269,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+
+<a id="disassociate_device_from_placement"></a>
 
 ### disassociate_device_from_placement
 
@@ -264,6 +293,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -282,6 +313,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_devices_in_placement"></a>
 
 ### get_devices_in_placement
 
@@ -303,6 +336,8 @@ Keyword-only arguments:
 
 Returns
 [GetDevicesInPlacementResponseTypeDef](./type_defs.md#getdevicesinplacementresponsetypedef).
+
+<a id="list_placements"></a>
 
 ### list_placements
 
@@ -326,6 +361,8 @@ Keyword-only arguments:
 Returns
 [ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Lists the AWS IoT 1-Click project(s) associated with your AWS account and
@@ -346,6 +383,8 @@ Keyword-only arguments:
 
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -368,6 +407,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Creates or modifies tags for a resource.
@@ -386,6 +427,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -406,6 +449,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_placement"></a>
 
 ### update_placement
 
@@ -428,6 +473,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_project"></a>
+
 ### update_project
 
 Updates a project associated with your AWS account and region.
@@ -449,6 +496,8 @@ Keyword-only arguments:
   [PlacementTemplateTypeDef](./type_defs.md#placementtemplatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

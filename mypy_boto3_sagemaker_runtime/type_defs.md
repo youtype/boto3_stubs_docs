@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sagemakerruntime-module"></a>
+
 # Typed dictionaries for boto3 SageMakerRuntime module
 
 > [Index](..) > [SageMakerRuntime](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
+[mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 - [Typed dictionaries for boto3 SageMakerRuntime module](#typed-dictionaries-for-boto3-sagemakerruntime-module)
   - [InvokeEndpointAsyncInputRequestTypeDef](#invokeendpointasyncinputrequesttypedef)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [InvokeEndpointInputRequestTypeDef](#invokeendpointinputrequesttypedef)
   - [InvokeEndpointOutputTypeDef](#invokeendpointoutputtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="invokeendpointasyncinputrequesttypedef"></a>
 
 ## InvokeEndpointAsyncInputRequestTypeDef
 
@@ -33,6 +37,8 @@ Optional fields:
 - `InferenceId`: `str`
 - `RequestTTLSeconds`: `int`
 
+<a id="invokeendpointasyncoutputtypedef"></a>
+
 ## InvokeEndpointAsyncOutputTypeDef
 
 ```python
@@ -45,6 +51,8 @@ Required fields:
 - `OutputLocation`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="invokeendpointinputrequesttypedef"></a>
 
 ## InvokeEndpointInputRequestTypeDef
 
@@ -67,6 +75,8 @@ Optional fields:
 - `TargetContainerHostname`: `str`
 - `InferenceId`: `str`
 
+<a id="invokeendpointoutputtypedef"></a>
+
 ## InvokeEndpointOutputTypeDef
 
 ```python
@@ -81,6 +91,8 @@ Required fields:
 - `CustomAttributes`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

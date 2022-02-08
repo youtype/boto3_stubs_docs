@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-iot1clickdevicesservice-module"></a>
+
 # Paginators for boto3 IoT1ClickDevicesService module
 
 > [Index](..) > [IoT1ClickDevicesService](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
-[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 - [Paginators for boto3 IoT1ClickDevicesService module](#paginators-for-boto3-iot1clickdevicesservice-module)
   - [ListDeviceEventsPaginator](#listdeviceeventspaginator)
   - [ListDevicesPaginator](#listdevicespaginator)
+
+<a id="listdeviceeventspaginator"></a>
 
 ## ListDeviceEventsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot1click_devices.paginator import ListDeviceEventsPaginator
 
 def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
-    return boto3.client("iot1click-devices").get_paginator("list_device_events")
+    return Session().client("iot1click-devices").get_paginator("list_device_events")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListDeviceEventsPaginator.paginate` method:
 `ListDeviceEventsPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
 
+<a id="listdevicespaginator"></a>
+
 ## ListDevicesPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot1click_devices.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
-    return boto3.client("iot1click-devices").get_paginator("list_devices")
+    return Session().client("iot1click-devices").get_paginator("list_devices")
 ```
 
 Boto3 documentation:

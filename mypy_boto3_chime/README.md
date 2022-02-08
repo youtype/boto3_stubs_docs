@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-chime-module"></a>
+
 # Type annotations for boto3 Chime module
 
 > [Index](..) > Chime
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
 type annotations stubs module
-[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[chime]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[chime]'
+
+# standalone installation
 pip install mypy-boto3-chime
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-chime
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="chimeclient"></a>
+
 ## ChimeClient
 
 Type annotations for `boto3.client("chime")` as [ChimeClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_chime.client import ChimeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -226,6 +240,8 @@ from mypy_boto3_chime.client import ChimeClient
 - [update_voice_connector](./client.md#update_voice_connector)
 - [update_voice_connector_group](./client.md#update_voice_connector_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ChimeClient [exceptions](./client.md#exceptions)
@@ -243,6 +259,8 @@ ChimeClient [exceptions](./client.md#exceptions)
 - UnauthorizedClientException
 - UnprocessableEntityException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -251,11 +269,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_chime.paginators import ListAccountsPaginator, ...
+from mypy_boto3_chime.paginator import ListAccountsPaginator, ...
 ```
 
 - [ListAccountsPaginator](./paginators.md#listaccountspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -322,6 +342,8 @@ from mypy_boto3_chime.literals import AccountStatusType, ...
 - [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

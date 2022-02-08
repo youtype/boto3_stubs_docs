@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-appregistry-module"></a>
+
 # Typed dictionaries for boto3 AppRegistry module
 
 > [Index](..) > [AppRegistry](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
-[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 - [Typed dictionaries for boto3 AppRegistry module](#typed-dictionaries-for-boto3-appregistry-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
@@ -60,6 +62,8 @@ type annotations stubs module
   - [UpdateAttributeGroupRequestRequestTypeDef](#updateattributegrouprequestrequesttypedef)
   - [UpdateAttributeGroupResponseTypeDef](#updateattributegroupresponsetypedef)
 
+<a id="applicationsummarytypedef"></a>
+
 ## ApplicationSummaryTypeDef
 
 ```python
@@ -74,6 +78,8 @@ Optional fields:
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
+
+<a id="applicationtypedef"></a>
 
 ## ApplicationTypeDef
 
@@ -91,6 +97,8 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="associateattributegrouprequestrequesttypedef"></a>
+
 ## AssociateAttributeGroupRequestRequestTypeDef
 
 ```python
@@ -101,6 +109,8 @@ Required fields:
 
 - `application`: `str`
 - `attributeGroup`: `str`
+
+<a id="associateattributegroupresponsetypedef"></a>
 
 ## AssociateAttributeGroupResponseTypeDef
 
@@ -115,6 +125,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateresourcerequestrequesttypedef"></a>
+
 ## AssociateResourceRequestRequestTypeDef
 
 ```python
@@ -128,6 +140,8 @@ Required fields:
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
 
+<a id="associateresourceresponsetypedef"></a>
+
 ## AssociateResourceResponseTypeDef
 
 ```python
@@ -140,6 +154,8 @@ Required fields:
 - `resourceArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="attributegroupsummarytypedef"></a>
 
 ## AttributeGroupSummaryTypeDef
 
@@ -155,6 +171,8 @@ Optional fields:
 - `description`: `str`
 - `creationTime`: `datetime`
 - `lastUpdateTime`: `datetime`
+
+<a id="attributegrouptypedef"></a>
 
 ## AttributeGroupTypeDef
 
@@ -172,6 +190,8 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="createapplicationrequestrequesttypedef"></a>
+
 ## CreateApplicationRequestRequestTypeDef
 
 ```python
@@ -188,6 +208,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createapplicationresponsetypedef"></a>
+
 ## CreateApplicationResponseTypeDef
 
 ```python
@@ -199,6 +221,8 @@ Required fields:
 - `application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createattributegrouprequestrequesttypedef"></a>
 
 ## CreateAttributeGroupRequestRequestTypeDef
 
@@ -217,6 +241,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createattributegroupresponsetypedef"></a>
+
 ## CreateAttributeGroupResponseTypeDef
 
 ```python
@@ -230,6 +256,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapplicationrequestrequesttypedef"></a>
+
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python
@@ -239,6 +267,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteApplicationReq
 Required fields:
 
 - `application`: `str`
+
+<a id="deleteapplicationresponsetypedef"></a>
 
 ## DeleteApplicationResponseTypeDef
 
@@ -253,6 +283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteattributegrouprequestrequesttypedef"></a>
+
 ## DeleteAttributeGroupRequestRequestTypeDef
 
 ```python
@@ -262,6 +294,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import DeleteAttributeGroup
 Required fields:
 
 - `attributeGroup`: `str`
+
+<a id="deleteattributegroupresponsetypedef"></a>
 
 ## DeleteAttributeGroupResponseTypeDef
 
@@ -276,6 +310,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateattributegrouprequestrequesttypedef"></a>
+
 ## DisassociateAttributeGroupRequestRequestTypeDef
 
 ```python
@@ -286,6 +322,8 @@ Required fields:
 
 - `application`: `str`
 - `attributeGroup`: `str`
+
+<a id="disassociateattributegroupresponsetypedef"></a>
 
 ## DisassociateAttributeGroupResponseTypeDef
 
@@ -300,6 +338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateresourcerequestrequesttypedef"></a>
+
 ## DisassociateResourceRequestRequestTypeDef
 
 ```python
@@ -312,6 +352,8 @@ Required fields:
 - `resourceType`: `Literal['CFN_STACK']` (see
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
+
+<a id="disassociateresourceresponsetypedef"></a>
 
 ## DisassociateResourceResponseTypeDef
 
@@ -326,6 +368,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapplicationrequestrequesttypedef"></a>
+
 ## GetApplicationRequestRequestTypeDef
 
 ```python
@@ -335,6 +379,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import GetApplicationReques
 Required fields:
 
 - `application`: `str`
+
+<a id="getapplicationresponsetypedef"></a>
 
 ## GetApplicationResponseTypeDef
 
@@ -356,6 +402,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getassociatedresourcerequestrequesttypedef"></a>
+
 ## GetAssociatedResourceRequestRequestTypeDef
 
 ```python
@@ -369,6 +417,8 @@ Required fields:
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
 
+<a id="getassociatedresourceresponsetypedef"></a>
+
 ## GetAssociatedResourceResponseTypeDef
 
 ```python
@@ -381,6 +431,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getattributegrouprequestrequesttypedef"></a>
+
 ## GetAttributeGroupRequestRequestTypeDef
 
 ```python
@@ -390,6 +442,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import GetAttributeGroupReq
 Required fields:
 
 - `attributeGroup`: `str`
+
+<a id="getattributegroupresponsetypedef"></a>
 
 ## GetAttributeGroupResponseTypeDef
 
@@ -410,6 +464,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="integrationstypedef"></a>
+
 ## IntegrationsTypeDef
 
 ```python
@@ -419,6 +475,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import IntegrationsTypeDef
 Optional fields:
 
 - `resourceGroup`: [ResourceGroupTypeDef](./type_defs.md#resourcegrouptypedef)
+
+<a id="listapplicationsrequestrequesttypedef"></a>
 
 ## ListApplicationsRequestRequestTypeDef
 
@@ -430,6 +488,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listapplicationsresponsetypedef"></a>
 
 ## ListApplicationsResponseTypeDef
 
@@ -444,6 +504,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociatedattributegroupsrequestrequesttypedef"></a>
 
 ## ListAssociatedAttributeGroupsRequestRequestTypeDef
 
@@ -460,6 +522,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassociatedattributegroupsresponsetypedef"></a>
+
 ## ListAssociatedAttributeGroupsResponseTypeDef
 
 ```python
@@ -472,6 +536,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociatedresourcesrequestrequesttypedef"></a>
 
 ## ListAssociatedResourcesRequestRequestTypeDef
 
@@ -488,6 +554,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassociatedresourcesresponsetypedef"></a>
+
 ## ListAssociatedResourcesResponseTypeDef
 
 ```python
@@ -502,6 +570,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listattributegroupsrequestrequesttypedef"></a>
+
 ## ListAttributeGroupsRequestRequestTypeDef
 
 ```python
@@ -512,6 +582,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listattributegroupsresponsetypedef"></a>
 
 ## ListAttributeGroupsResponseTypeDef
 
@@ -527,6 +599,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -536,6 +610,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ListTagsForResourceR
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -549,6 +625,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -560,6 +638,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="resourcegrouptypedef"></a>
 
 ## ResourceGroupTypeDef
 
@@ -573,6 +653,8 @@ Optional fields:
 - `arn`: `str`
 - `errorMessage`: `str`
 
+<a id="resourceinfotypedef"></a>
+
 ## ResourceInfoTypeDef
 
 ```python
@@ -584,6 +666,8 @@ Optional fields:
 - `name`: `str`
 - `arn`: `str`
 
+<a id="resourceintegrationstypedef"></a>
+
 ## ResourceIntegrationsTypeDef
 
 ```python
@@ -593,6 +677,8 @@ from mypy_boto3_servicecatalog_appregistry.type_defs import ResourceIntegrations
 Optional fields:
 
 - `resourceGroup`: [ResourceGroupTypeDef](./type_defs.md#resourcegrouptypedef)
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -608,6 +694,8 @@ Optional fields:
 - `integrations`:
   [ResourceIntegrationsTypeDef](./type_defs.md#resourceintegrationstypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -622,6 +710,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="syncresourcerequestrequesttypedef"></a>
+
 ## SyncResourceRequestRequestTypeDef
 
 ```python
@@ -633,6 +723,8 @@ Required fields:
 - `resourceType`: `Literal['CFN_STACK']` (see
   [ResourceTypeType](./literals.md#resourcetypetype))
 - `resource`: `str`
+
+<a id="syncresourceresponsetypedef"></a>
 
 ## SyncResourceResponseTypeDef
 
@@ -648,6 +740,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -659,6 +753,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -669,6 +765,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 
@@ -685,6 +783,8 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 
+<a id="updateapplicationresponsetypedef"></a>
+
 ## UpdateApplicationResponseTypeDef
 
 ```python
@@ -696,6 +796,8 @@ Required fields:
 - `application`: [ApplicationTypeDef](./type_defs.md#applicationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateattributegrouprequestrequesttypedef"></a>
 
 ## UpdateAttributeGroupRequestRequestTypeDef
 
@@ -712,6 +814,8 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 - `attributes`: `str`
+
+<a id="updateattributegroupresponsetypedef"></a>
 
 ## UpdateAttributeGroupResponseTypeDef
 

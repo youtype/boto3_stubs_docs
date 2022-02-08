@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-medialive-module"></a>
+
 # Literals for boto3 MediaLive module
 
 > [Index](..) > [MediaLive](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module
-[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 - [Literals for boto3 MediaLive module](#literals-for-boto3-medialive-module)
   - [AacCodingModeType](#aaccodingmodetype)
@@ -286,6 +288,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="aaccodingmodetype"></a>
+
 ## AacCodingModeType
 
 ```python
@@ -300,6 +304,8 @@ Values:
 - `CODING_MODE_2_0`
 - `CODING_MODE_5_1`
 
+<a id="aacinputtypetype"></a>
+
 ## AacInputTypeType
 
 ```python
@@ -310,6 +316,8 @@ Values:
 
 - `BROADCASTER_MIXED_AD`
 - `NORMAL`
+
+<a id="aacprofiletype"></a>
 
 ## AacProfileType
 
@@ -323,6 +331,8 @@ Values:
 - `HEV2`
 - `LC`
 
+<a id="aacratecontrolmodetype"></a>
+
 ## AacRateControlModeType
 
 ```python
@@ -333,6 +343,8 @@ Values:
 
 - `CBR`
 - `VBR`
+
+<a id="aacrawformattype"></a>
 
 ## AacRawFormatType
 
@@ -345,6 +357,8 @@ Values:
 - `LATM_LOAS`
 - `NONE`
 
+<a id="aacspectype"></a>
+
 ## AacSpecType
 
 ```python
@@ -355,6 +369,8 @@ Values:
 
 - `MPEG2`
 - `MPEG4`
+
+<a id="aacvbrqualitytype"></a>
 
 ## AacVbrQualityType
 
@@ -368,6 +384,8 @@ Values:
 - `LOW`
 - `MEDIUM_HIGH`
 - `MEDIUM_LOW`
+
+<a id="ac3bitstreammodetype"></a>
 
 ## Ac3BitstreamModeType
 
@@ -386,6 +404,8 @@ Values:
 - `VISUALLY_IMPAIRED`
 - `VOICE_OVER`
 
+<a id="ac3codingmodetype"></a>
+
 ## Ac3CodingModeType
 
 ```python
@@ -399,6 +419,8 @@ Values:
 - `CODING_MODE_2_0`
 - `CODING_MODE_3_2_LFE`
 
+<a id="ac3drcprofiletype"></a>
+
 ## Ac3DrcProfileType
 
 ```python
@@ -409,6 +431,8 @@ Values:
 
 - `FILM_STANDARD`
 - `NONE`
+
+<a id="ac3lfefiltertype"></a>
 
 ## Ac3LfeFilterType
 
@@ -421,6 +445,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="ac3metadatacontroltype"></a>
+
 ## Ac3MetadataControlType
 
 ```python
@@ -432,6 +458,8 @@ Values:
 - `FOLLOW_INPUT`
 - `USE_CONFIGURED`
 
+<a id="acceptheadertype"></a>
+
 ## AcceptHeaderType
 
 ```python
@@ -441,6 +469,8 @@ from mypy_boto3_medialive.literals import AcceptHeaderType
 Values:
 
 - `image/jpeg`
+
+<a id="afdsignalingtype"></a>
 
 ## AfdSignalingType
 
@@ -454,6 +484,8 @@ Values:
 - `FIXED`
 - `NONE`
 
+<a id="audiodescriptionaudiotypecontroltype"></a>
+
 ## AudioDescriptionAudioTypeControlType
 
 ```python
@@ -464,6 +496,8 @@ Values:
 
 - `FOLLOW_INPUT`
 - `USE_CONFIGURED`
+
+<a id="audiodescriptionlanguagecodecontroltype"></a>
 
 ## AudioDescriptionLanguageCodeControlType
 
@@ -476,6 +510,8 @@ Values:
 - `FOLLOW_INPUT`
 - `USE_CONFIGURED`
 
+<a id="audiolanguageselectionpolicytype"></a>
+
 ## AudioLanguageSelectionPolicyType
 
 ```python
@@ -487,6 +523,8 @@ Values:
 - `LOOSE`
 - `STRICT`
 
+<a id="audionormalizationalgorithmcontroltype"></a>
+
 ## AudioNormalizationAlgorithmControlType
 
 ```python
@@ -496,6 +534,8 @@ from mypy_boto3_medialive.literals import AudioNormalizationAlgorithmControlType
 Values:
 
 - `CORRECT_AUDIO`
+
+<a id="audionormalizationalgorithmtype"></a>
 
 ## AudioNormalizationAlgorithmType
 
@@ -508,6 +548,8 @@ Values:
 - `ITU_1770_1`
 - `ITU_1770_2`
 
+<a id="audioonlyhlssegmenttypetype"></a>
+
 ## AudioOnlyHlsSegmentTypeType
 
 ```python
@@ -518,6 +560,8 @@ Values:
 
 - `AAC`
 - `FMP4`
+
+<a id="audioonlyhlstracktypetype"></a>
 
 ## AudioOnlyHlsTrackTypeType
 
@@ -532,6 +576,8 @@ Values:
 - `ALTERNATE_AUDIO_NOT_AUTO_SELECT`
 - `AUDIO_ONLY_VARIANT_STREAM`
 
+<a id="audiotypetype"></a>
+
 ## AudioTypeType
 
 ```python
@@ -545,6 +591,8 @@ Values:
 - `UNDEFINED`
 - `VISUAL_IMPAIRED_COMMENTARY`
 
+<a id="authenticationschemetype"></a>
+
 ## AuthenticationSchemeType
 
 ```python
@@ -555,6 +603,8 @@ Values:
 
 - `AKAMAI`
 - `COMMON`
+
+<a id="availblankingstatetype"></a>
 
 ## AvailBlankingStateType
 
@@ -567,6 +617,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="blackoutslatenetworkendblackouttype"></a>
+
 ## BlackoutSlateNetworkEndBlackoutType
 
 ```python
@@ -578,6 +630,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="blackoutslatestatetype"></a>
+
 ## BlackoutSlateStateType
 
 ```python
@@ -588,6 +642,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="burninalignmenttype"></a>
 
 ## BurnInAlignmentType
 
@@ -601,6 +657,8 @@ Values:
 - `LEFT`
 - `SMART`
 
+<a id="burninbackgroundcolortype"></a>
+
 ## BurnInBackgroundColorType
 
 ```python
@@ -612,6 +670,8 @@ Values:
 - `BLACK`
 - `NONE`
 - `WHITE`
+
+<a id="burninfontcolortype"></a>
 
 ## BurnInFontColorType
 
@@ -628,6 +688,8 @@ Values:
 - `WHITE`
 - `YELLOW`
 
+<a id="burninoutlinecolortype"></a>
+
 ## BurnInOutlineColorType
 
 ```python
@@ -643,6 +705,8 @@ Values:
 - `WHITE`
 - `YELLOW`
 
+<a id="burninshadowcolortype"></a>
+
 ## BurnInShadowColorType
 
 ```python
@@ -655,6 +719,8 @@ Values:
 - `NONE`
 - `WHITE`
 
+<a id="burninteletextgridcontroltype"></a>
+
 ## BurnInTeletextGridControlType
 
 ```python
@@ -665,6 +731,8 @@ Values:
 
 - `FIXED`
 - `SCALED`
+
+<a id="cdiinputresolutiontype"></a>
 
 ## CdiInputResolutionType
 
@@ -679,6 +747,8 @@ Values:
 - `SD`
 - `UHD`
 
+<a id="channelclasstype"></a>
+
 ## ChannelClassType
 
 ```python
@@ -690,6 +760,8 @@ Values:
 - `SINGLE_PIPELINE`
 - `STANDARD`
 
+<a id="channelcreatedwaitername"></a>
+
 ## ChannelCreatedWaiterName
 
 ```python
@@ -699,6 +771,8 @@ from mypy_boto3_medialive.literals import ChannelCreatedWaiterName
 Values:
 
 - `channel_created`
+
+<a id="channeldeletedwaitername"></a>
 
 ## ChannelDeletedWaiterName
 
@@ -710,6 +784,8 @@ Values:
 
 - `channel_deleted`
 
+<a id="channelrunningwaitername"></a>
+
 ## ChannelRunningWaiterName
 
 ```python
@@ -719,6 +795,8 @@ from mypy_boto3_medialive.literals import ChannelRunningWaiterName
 Values:
 
 - `channel_running`
+
+<a id="channelstatetype"></a>
 
 ## ChannelStateType
 
@@ -740,6 +818,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="channelstoppedwaitername"></a>
+
 ## ChannelStoppedWaiterName
 
 ```python
@@ -749,6 +829,8 @@ from mypy_boto3_medialive.literals import ChannelStoppedWaiterName
 Values:
 
 - `channel_stopped`
+
+<a id="contenttypetype"></a>
 
 ## ContentTypeType
 
@@ -760,6 +842,8 @@ Values:
 
 - `image/jpeg`
 
+<a id="describeschedulepaginatorname"></a>
+
 ## DescribeSchedulePaginatorName
 
 ```python
@@ -769,6 +853,8 @@ from mypy_boto3_medialive.literals import DescribeSchedulePaginatorName
 Values:
 
 - `describe_schedule`
+
+<a id="devicesettingssyncstatetype"></a>
 
 ## DeviceSettingsSyncStateType
 
@@ -781,6 +867,8 @@ Values:
 - `SYNCED`
 - `SYNCING`
 
+<a id="deviceupdatestatustype"></a>
+
 ## DeviceUpdateStatusType
 
 ```python
@@ -791,6 +879,8 @@ Values:
 
 - `NOT_UP_TO_DATE`
 - `UP_TO_DATE`
+
+<a id="dvbsdtoutputsdttype"></a>
 
 ## DvbSdtOutputSdtType
 
@@ -805,6 +895,8 @@ Values:
 - `SDT_MANUAL`
 - `SDT_NONE`
 
+<a id="dvbsubdestinationalignmenttype"></a>
+
 ## DvbSubDestinationAlignmentType
 
 ```python
@@ -817,6 +909,8 @@ Values:
 - `LEFT`
 - `SMART`
 
+<a id="dvbsubdestinationbackgroundcolortype"></a>
+
 ## DvbSubDestinationBackgroundColorType
 
 ```python
@@ -828,6 +922,8 @@ Values:
 - `BLACK`
 - `NONE`
 - `WHITE`
+
+<a id="dvbsubdestinationfontcolortype"></a>
 
 ## DvbSubDestinationFontColorType
 
@@ -844,6 +940,8 @@ Values:
 - `WHITE`
 - `YELLOW`
 
+<a id="dvbsubdestinationoutlinecolortype"></a>
+
 ## DvbSubDestinationOutlineColorType
 
 ```python
@@ -859,6 +957,8 @@ Values:
 - `WHITE`
 - `YELLOW`
 
+<a id="dvbsubdestinationshadowcolortype"></a>
+
 ## DvbSubDestinationShadowColorType
 
 ```python
@@ -871,6 +971,8 @@ Values:
 - `NONE`
 - `WHITE`
 
+<a id="dvbsubdestinationteletextgridcontroltype"></a>
+
 ## DvbSubDestinationTeletextGridControlType
 
 ```python
@@ -881,6 +983,8 @@ Values:
 
 - `FIXED`
 - `SCALED`
+
+<a id="dvbsubocrlanguagetype"></a>
 
 ## DvbSubOcrLanguageType
 
@@ -897,6 +1001,8 @@ Values:
 - `POR`
 - `SPA`
 
+<a id="eac3attenuationcontroltype"></a>
+
 ## Eac3AttenuationControlType
 
 ```python
@@ -907,6 +1013,8 @@ Values:
 
 - `ATTENUATE_3_DB`
 - `NONE`
+
+<a id="eac3bitstreammodetype"></a>
 
 ## Eac3BitstreamModeType
 
@@ -922,6 +1030,8 @@ Values:
 - `HEARING_IMPAIRED`
 - `VISUALLY_IMPAIRED`
 
+<a id="eac3codingmodetype"></a>
+
 ## Eac3CodingModeType
 
 ```python
@@ -934,6 +1044,8 @@ Values:
 - `CODING_MODE_2_0`
 - `CODING_MODE_3_2`
 
+<a id="eac3dcfiltertype"></a>
+
 ## Eac3DcFilterType
 
 ```python
@@ -944,6 +1056,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="eac3drclinetype"></a>
 
 ## Eac3DrcLineType
 
@@ -960,6 +1074,8 @@ Values:
 - `NONE`
 - `SPEECH`
 
+<a id="eac3drcrftype"></a>
+
 ## Eac3DrcRfType
 
 ```python
@@ -975,6 +1091,8 @@ Values:
 - `NONE`
 - `SPEECH`
 
+<a id="eac3lfecontroltype"></a>
+
 ## Eac3LfeControlType
 
 ```python
@@ -985,6 +1103,8 @@ Values:
 
 - `LFE`
 - `NO_LFE`
+
+<a id="eac3lfefiltertype"></a>
 
 ## Eac3LfeFilterType
 
@@ -997,6 +1117,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="eac3metadatacontroltype"></a>
+
 ## Eac3MetadataControlType
 
 ```python
@@ -1007,6 +1129,8 @@ Values:
 
 - `FOLLOW_INPUT`
 - `USE_CONFIGURED`
+
+<a id="eac3passthroughcontroltype"></a>
 
 ## Eac3PassthroughControlType
 
@@ -1019,6 +1143,8 @@ Values:
 - `NO_PASSTHROUGH`
 - `WHEN_POSSIBLE`
 
+<a id="eac3phasecontroltype"></a>
+
 ## Eac3PhaseControlType
 
 ```python
@@ -1029,6 +1155,8 @@ Values:
 
 - `NO_SHIFT`
 - `SHIFT_90_DEGREES`
+
+<a id="eac3stereodownmixtype"></a>
 
 ## Eac3StereoDownmixType
 
@@ -1043,6 +1171,8 @@ Values:
 - `LT_RT`
 - `NOT_INDICATED`
 
+<a id="eac3surroundexmodetype"></a>
+
 ## Eac3SurroundExModeType
 
 ```python
@@ -1054,6 +1184,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 - `NOT_INDICATED`
+
+<a id="eac3surroundmodetype"></a>
 
 ## Eac3SurroundModeType
 
@@ -1067,6 +1199,8 @@ Values:
 - `ENABLED`
 - `NOT_INDICATED`
 
+<a id="ebuttddestinationstylecontroltype"></a>
+
 ## EbuTtDDestinationStyleControlType
 
 ```python
@@ -1077,6 +1211,8 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+<a id="ebuttdfilllinegapcontroltype"></a>
 
 ## EbuTtDFillLineGapControlType
 
@@ -1089,6 +1225,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="embeddedconvert608to708type"></a>
+
 ## EmbeddedConvert608To708Type
 
 ```python
@@ -1099,6 +1237,8 @@ Values:
 
 - `DISABLED`
 - `UPCONVERT`
+
+<a id="embeddedscte20detectiontype"></a>
 
 ## EmbeddedScte20DetectionType
 
@@ -1111,6 +1251,8 @@ Values:
 - `AUTO`
 - `OFF`
 
+<a id="featureactivationsinputpreparescheduleactionstype"></a>
+
 ## FeatureActivationsInputPrepareScheduleActionsType
 
 ```python
@@ -1122,6 +1264,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="fecoutputincludefectype"></a>
+
 ## FecOutputIncludeFecType
 
 ```python
@@ -1132,6 +1276,8 @@ Values:
 
 - `COLUMN`
 - `COLUMN_AND_ROW`
+
+<a id="fixedafdtype"></a>
 
 ## FixedAfdType
 
@@ -1153,6 +1299,8 @@ Values:
 - `AFD_1110`
 - `AFD_1111`
 
+<a id="fmp4nielsenid3behaviortype"></a>
+
 ## Fmp4NielsenId3BehaviorType
 
 ```python
@@ -1163,6 +1311,8 @@ Values:
 
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
+
+<a id="fmp4timedmetadatabehaviortype"></a>
 
 ## Fmp4TimedMetadataBehaviorType
 
@@ -1175,6 +1325,8 @@ Values:
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
 
+<a id="followpointtype"></a>
+
 ## FollowPointType
 
 ```python
@@ -1185,6 +1337,8 @@ Values:
 
 - `END`
 - `START`
+
+<a id="framecaptureintervalunittype"></a>
 
 ## FrameCaptureIntervalUnitType
 
@@ -1197,6 +1351,8 @@ Values:
 - `MILLISECONDS`
 - `SECONDS`
 
+<a id="globalconfigurationinputendactiontype"></a>
+
 ## GlobalConfigurationInputEndActionType
 
 ```python
@@ -1207,6 +1363,8 @@ Values:
 
 - `NONE`
 - `SWITCH_AND_LOOP_INPUTS`
+
+<a id="globalconfigurationlowframerateinputstype"></a>
 
 ## GlobalConfigurationLowFramerateInputsType
 
@@ -1219,6 +1377,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="globalconfigurationoutputlockingmodetype"></a>
+
 ## GlobalConfigurationOutputLockingModeType
 
 ```python
@@ -1230,6 +1390,8 @@ Values:
 - `EPOCH_LOCKING`
 - `PIPELINE_LOCKING`
 
+<a id="globalconfigurationoutputtimingsourcetype"></a>
+
 ## GlobalConfigurationOutputTimingSourceType
 
 ```python
@@ -1240,6 +1402,8 @@ Values:
 
 - `INPUT_CLOCK`
 - `SYSTEM_CLOCK`
+
+<a id="h264adaptivequantizationtype"></a>
 
 ## H264AdaptiveQuantizationType
 
@@ -1257,6 +1421,8 @@ Values:
 - `MEDIUM`
 - `OFF`
 
+<a id="h264colormetadatatype"></a>
+
 ## H264ColorMetadataType
 
 ```python
@@ -1267,6 +1433,8 @@ Values:
 
 - `IGNORE`
 - `INSERT`
+
+<a id="h264entropyencodingtype"></a>
 
 ## H264EntropyEncodingType
 
@@ -1279,6 +1447,8 @@ Values:
 - `CABAC`
 - `CAVLC`
 
+<a id="h264flickeraqtype"></a>
+
 ## H264FlickerAqType
 
 ```python
@@ -1289,6 +1459,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="h264forcefieldpicturestype"></a>
 
 ## H264ForceFieldPicturesType
 
@@ -1301,6 +1473,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="h264frameratecontroltype"></a>
+
 ## H264FramerateControlType
 
 ```python
@@ -1311,6 +1485,8 @@ Values:
 
 - `INITIALIZE_FROM_SOURCE`
 - `SPECIFIED`
+
+<a id="h264gopbreferencetype"></a>
 
 ## H264GopBReferenceType
 
@@ -1323,6 +1499,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="h264gopsizeunitstype"></a>
+
 ## H264GopSizeUnitsType
 
 ```python
@@ -1333,6 +1511,8 @@ Values:
 
 - `FRAMES`
 - `SECONDS`
+
+<a id="h264leveltype"></a>
 
 ## H264LevelType
 
@@ -1360,6 +1540,8 @@ Values:
 - `H264_LEVEL_5_2`
 - `H264_LEVEL_AUTO`
 
+<a id="h264lookaheadratecontroltype"></a>
+
 ## H264LookAheadRateControlType
 
 ```python
@@ -1372,6 +1554,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="h264parcontroltype"></a>
+
 ## H264ParControlType
 
 ```python
@@ -1382,6 +1566,8 @@ Values:
 
 - `INITIALIZE_FROM_SOURCE`
 - `SPECIFIED`
+
+<a id="h264profiletype"></a>
 
 ## H264ProfileType
 
@@ -1398,6 +1584,8 @@ Values:
 - `HIGH_422_10BIT`
 - `MAIN`
 
+<a id="h264qualityleveltype"></a>
+
 ## H264QualityLevelType
 
 ```python
@@ -1408,6 +1596,8 @@ Values:
 
 - `ENHANCED_QUALITY`
 - `STANDARD_QUALITY`
+
+<a id="h264ratecontrolmodetype"></a>
 
 ## H264RateControlModeType
 
@@ -1422,6 +1612,8 @@ Values:
 - `QVBR`
 - `VBR`
 
+<a id="h264scantypetype"></a>
+
 ## H264ScanTypeType
 
 ```python
@@ -1432,6 +1624,8 @@ Values:
 
 - `INTERLACED`
 - `PROGRESSIVE`
+
+<a id="h264scenechangedetecttype"></a>
 
 ## H264SceneChangeDetectType
 
@@ -1444,6 +1638,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="h264spatialaqtype"></a>
+
 ## H264SpatialAqType
 
 ```python
@@ -1454,6 +1650,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="h264subgoplengthtype"></a>
 
 ## H264SubGopLengthType
 
@@ -1466,6 +1664,8 @@ Values:
 - `DYNAMIC`
 - `FIXED`
 
+<a id="h264syntaxtype"></a>
+
 ## H264SyntaxType
 
 ```python
@@ -1476,6 +1676,8 @@ Values:
 
 - `DEFAULT`
 - `RP2027`
+
+<a id="h264temporalaqtype"></a>
 
 ## H264TemporalAqType
 
@@ -1488,6 +1690,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="h264timecodeinsertionbehaviortype"></a>
+
 ## H264TimecodeInsertionBehaviorType
 
 ```python
@@ -1498,6 +1702,8 @@ Values:
 
 - `DISABLED`
 - `PIC_TIMING_SEI`
+
+<a id="h265adaptivequantizationtype"></a>
 
 ## H265AdaptiveQuantizationType
 
@@ -1515,6 +1721,8 @@ Values:
 - `MEDIUM`
 - `OFF`
 
+<a id="h265alternativetransferfunctiontype"></a>
+
 ## H265AlternativeTransferFunctionType
 
 ```python
@@ -1525,6 +1733,8 @@ Values:
 
 - `INSERT`
 - `OMIT`
+
+<a id="h265colormetadatatype"></a>
 
 ## H265ColorMetadataType
 
@@ -1537,6 +1747,8 @@ Values:
 - `IGNORE`
 - `INSERT`
 
+<a id="h265flickeraqtype"></a>
+
 ## H265FlickerAqType
 
 ```python
@@ -1548,6 +1760,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="h265gopsizeunitstype"></a>
+
 ## H265GopSizeUnitsType
 
 ```python
@@ -1558,6 +1772,8 @@ Values:
 
 - `FRAMES`
 - `SECONDS`
+
+<a id="h265leveltype"></a>
 
 ## H265LevelType
 
@@ -1582,6 +1798,8 @@ Values:
 - `H265_LEVEL_6_2`
 - `H265_LEVEL_AUTO`
 
+<a id="h265lookaheadratecontroltype"></a>
+
 ## H265LookAheadRateControlType
 
 ```python
@@ -1594,6 +1812,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="h265profiletype"></a>
+
 ## H265ProfileType
 
 ```python
@@ -1604,6 +1824,8 @@ Values:
 
 - `MAIN`
 - `MAIN_10BIT`
+
+<a id="h265ratecontrolmodetype"></a>
 
 ## H265RateControlModeType
 
@@ -1617,6 +1839,8 @@ Values:
 - `MULTIPLEX`
 - `QVBR`
 
+<a id="h265scantypetype"></a>
+
 ## H265ScanTypeType
 
 ```python
@@ -1627,6 +1851,8 @@ Values:
 
 - `INTERLACED`
 - `PROGRESSIVE`
+
+<a id="h265scenechangedetecttype"></a>
 
 ## H265SceneChangeDetectType
 
@@ -1639,6 +1865,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="h265tiertype"></a>
+
 ## H265TierType
 
 ```python
@@ -1650,6 +1878,8 @@ Values:
 - `HIGH`
 - `MAIN`
 
+<a id="h265timecodeinsertionbehaviortype"></a>
+
 ## H265TimecodeInsertionBehaviorType
 
 ```python
@@ -1660,6 +1890,8 @@ Values:
 
 - `DISABLED`
 - `PIC_TIMING_SEI`
+
+<a id="hlsadmarkerstype"></a>
 
 ## HlsAdMarkersType
 
@@ -1673,6 +1905,8 @@ Values:
 - `ELEMENTAL`
 - `ELEMENTAL_SCTE35`
 
+<a id="hlsakamaihttptransfermodetype"></a>
+
 ## HlsAkamaiHttpTransferModeType
 
 ```python
@@ -1683,6 +1917,8 @@ Values:
 
 - `CHUNKED`
 - `NON_CHUNKED`
+
+<a id="hlscaptionlanguagesettingtype"></a>
 
 ## HlsCaptionLanguageSettingType
 
@@ -1696,6 +1932,8 @@ Values:
 - `NONE`
 - `OMIT`
 
+<a id="hlsclientcachetype"></a>
+
 ## HlsClientCacheType
 
 ```python
@@ -1706,6 +1944,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="hlscodecspecificationtype"></a>
 
 ## HlsCodecSpecificationType
 
@@ -1718,6 +1958,8 @@ Values:
 - `RFC_4281`
 - `RFC_6381`
 
+<a id="hlsdirectorystructuretype"></a>
+
 ## HlsDirectoryStructureType
 
 ```python
@@ -1728,6 +1970,8 @@ Values:
 
 - `SINGLE_DIRECTORY`
 - `SUBDIRECTORY_PER_STREAM`
+
+<a id="hlsdiscontinuitytagstype"></a>
 
 ## HlsDiscontinuityTagsType
 
@@ -1740,6 +1984,8 @@ Values:
 - `INSERT`
 - `NEVER_INSERT`
 
+<a id="hlsencryptiontypetype"></a>
+
 ## HlsEncryptionTypeType
 
 ```python
@@ -1750,6 +1996,8 @@ Values:
 
 - `AES128`
 - `SAMPLE_AES`
+
+<a id="hlsh265packagingtypetype"></a>
 
 ## HlsH265PackagingTypeType
 
@@ -1762,6 +2010,8 @@ Values:
 - `HEV1`
 - `HVC1`
 
+<a id="hlsid3segmenttaggingstatetype"></a>
+
 ## HlsId3SegmentTaggingStateType
 
 ```python
@@ -1772,6 +2022,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="hlsincompletesegmentbehaviortype"></a>
 
 ## HlsIncompleteSegmentBehaviorType
 
@@ -1784,6 +2036,8 @@ Values:
 - `AUTO`
 - `SUPPRESS`
 
+<a id="hlsivinmanifesttype"></a>
+
 ## HlsIvInManifestType
 
 ```python
@@ -1794,6 +2048,8 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+<a id="hlsivsourcetype"></a>
 
 ## HlsIvSourceType
 
@@ -1806,6 +2062,8 @@ Values:
 - `EXPLICIT`
 - `FOLLOWS_SEGMENT_NUMBER`
 
+<a id="hlsmanifestcompressiontype"></a>
+
 ## HlsManifestCompressionType
 
 ```python
@@ -1816,6 +2074,8 @@ Values:
 
 - `GZIP`
 - `NONE`
+
+<a id="hlsmanifestdurationformattype"></a>
 
 ## HlsManifestDurationFormatType
 
@@ -1828,6 +2088,8 @@ Values:
 - `FLOATING_POINT`
 - `INTEGER`
 
+<a id="hlsmediastorestorageclasstype"></a>
+
 ## HlsMediaStoreStorageClassType
 
 ```python
@@ -1837,6 +2099,8 @@ from mypy_boto3_medialive.literals import HlsMediaStoreStorageClassType
 Values:
 
 - `TEMPORAL`
+
+<a id="hlsmodetype"></a>
 
 ## HlsModeType
 
@@ -1848,6 +2112,8 @@ Values:
 
 - `LIVE`
 - `VOD`
+
+<a id="hlsoutputselectiontype"></a>
 
 ## HlsOutputSelectionType
 
@@ -1861,6 +2127,8 @@ Values:
 - `SEGMENTS_ONLY`
 - `VARIANT_MANIFESTS_AND_SEGMENTS`
 
+<a id="hlsprogramdatetimeclocktype"></a>
+
 ## HlsProgramDateTimeClockType
 
 ```python
@@ -1871,6 +2139,8 @@ Values:
 
 - `INITIALIZE_FROM_OUTPUT_TIMECODE`
 - `SYSTEM_CLOCK`
+
+<a id="hlsprogramdatetimetype"></a>
 
 ## HlsProgramDateTimeType
 
@@ -1883,6 +2153,8 @@ Values:
 - `EXCLUDE`
 - `INCLUDE`
 
+<a id="hlsredundantmanifesttype"></a>
+
 ## HlsRedundantManifestType
 
 ```python
@@ -1893,6 +2165,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="hlsscte35sourcetypetype"></a>
 
 ## HlsScte35SourceTypeType
 
@@ -1905,6 +2179,8 @@ Values:
 - `MANIFEST`
 - `SEGMENTS`
 
+<a id="hlssegmentationmodetype"></a>
+
 ## HlsSegmentationModeType
 
 ```python
@@ -1916,6 +2192,8 @@ Values:
 - `USE_INPUT_SEGMENTATION`
 - `USE_SEGMENT_DURATION`
 
+<a id="hlsstreaminfresolutiontype"></a>
+
 ## HlsStreamInfResolutionType
 
 ```python
@@ -1926,6 +2204,8 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+<a id="hlstimedmetadataid3frametype"></a>
 
 ## HlsTimedMetadataId3FrameType
 
@@ -1939,6 +2219,8 @@ Values:
 - `PRIV`
 - `TDRL`
 
+<a id="hlstsfilemodetype"></a>
+
 ## HlsTsFileModeType
 
 ```python
@@ -1949,6 +2231,8 @@ Values:
 
 - `SEGMENTED_FILES`
 - `SINGLE_FILE`
+
+<a id="hlswebdavhttptransfermodetype"></a>
 
 ## HlsWebdavHttpTransferModeType
 
@@ -1961,6 +2245,8 @@ Values:
 - `CHUNKED`
 - `NON_CHUNKED`
 
+<a id="iframeonlyplaylisttypetype"></a>
+
 ## IFrameOnlyPlaylistTypeType
 
 ```python
@@ -1972,6 +2258,8 @@ Values:
 - `DISABLED`
 - `STANDARD`
 
+<a id="inputattachedwaitername"></a>
+
 ## InputAttachedWaiterName
 
 ```python
@@ -1981,6 +2269,8 @@ from mypy_boto3_medialive.literals import InputAttachedWaiterName
 Values:
 
 - `input_attached`
+
+<a id="inputclasstype"></a>
 
 ## InputClassType
 
@@ -1992,6 +2282,8 @@ Values:
 
 - `SINGLE_PIPELINE`
 - `STANDARD`
+
+<a id="inputcodectype"></a>
 
 ## InputCodecType
 
@@ -2005,6 +2297,8 @@ Values:
 - `HEVC`
 - `MPEG2`
 
+<a id="inputdeblockfiltertype"></a>
+
 ## InputDeblockFilterType
 
 ```python
@@ -2016,6 +2310,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="inputdeletedwaitername"></a>
+
 ## InputDeletedWaiterName
 
 ```python
@@ -2025,6 +2321,8 @@ from mypy_boto3_medialive.literals import InputDeletedWaiterName
 Values:
 
 - `input_deleted`
+
+<a id="inputdenoisefiltertype"></a>
 
 ## InputDenoiseFilterType
 
@@ -2037,6 +2335,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="inputdetachedwaitername"></a>
+
 ## InputDetachedWaiterName
 
 ```python
@@ -2046,6 +2346,8 @@ from mypy_boto3_medialive.literals import InputDetachedWaiterName
 Values:
 
 - `input_detached`
+
+<a id="inputdeviceactiveinputtype"></a>
 
 ## InputDeviceActiveInputType
 
@@ -2057,6 +2359,8 @@ Values:
 
 - `HDMI`
 - `SDI`
+
+<a id="inputdeviceconfiguredinputtype"></a>
 
 ## InputDeviceConfiguredInputType
 
@@ -2070,6 +2374,8 @@ Values:
 - `HDMI`
 - `SDI`
 
+<a id="inputdeviceconnectionstatetype"></a>
+
 ## InputDeviceConnectionStateType
 
 ```python
@@ -2080,6 +2386,8 @@ Values:
 
 - `CONNECTED`
 - `DISCONNECTED`
+
+<a id="inputdeviceipschemetype"></a>
 
 ## InputDeviceIpSchemeType
 
@@ -2092,6 +2400,8 @@ Values:
 - `DHCP`
 - `STATIC`
 
+<a id="inputdevicescantypetype"></a>
+
 ## InputDeviceScanTypeType
 
 ```python
@@ -2102,6 +2412,8 @@ Values:
 
 - `INTERLACED`
 - `PROGRESSIVE`
+
+<a id="inputdevicestatetype"></a>
 
 ## InputDeviceStateType
 
@@ -2114,6 +2426,8 @@ Values:
 - `IDLE`
 - `STREAMING`
 
+<a id="inputdevicetransfertypetype"></a>
+
 ## InputDeviceTransferTypeType
 
 ```python
@@ -2125,6 +2439,8 @@ Values:
 - `INCOMING`
 - `OUTGOING`
 
+<a id="inputdevicetypetype"></a>
+
 ## InputDeviceTypeType
 
 ```python
@@ -2134,6 +2450,8 @@ from mypy_boto3_medialive.literals import InputDeviceTypeType
 Values:
 
 - `HD`
+
+<a id="inputfiltertype"></a>
 
 ## InputFilterType
 
@@ -2147,6 +2465,8 @@ Values:
 - `DISABLED`
 - `FORCED`
 
+<a id="inputlossactionforhlsouttype"></a>
+
 ## InputLossActionForHlsOutType
 
 ```python
@@ -2157,6 +2477,8 @@ Values:
 
 - `EMIT_OUTPUT`
 - `PAUSE_OUTPUT`
+
+<a id="inputlossactionformssmoothouttype"></a>
 
 ## InputLossActionForMsSmoothOutType
 
@@ -2169,6 +2491,8 @@ Values:
 - `EMIT_OUTPUT`
 - `PAUSE_OUTPUT`
 
+<a id="inputlossactionforrtmpouttype"></a>
+
 ## InputLossActionForRtmpOutType
 
 ```python
@@ -2179,6 +2503,8 @@ Values:
 
 - `EMIT_OUTPUT`
 - `PAUSE_OUTPUT`
+
+<a id="inputlossactionforudpouttype"></a>
 
 ## InputLossActionForUdpOutType
 
@@ -2192,6 +2518,8 @@ Values:
 - `DROP_TS`
 - `EMIT_PROGRAM`
 
+<a id="inputlossimagetypetype"></a>
+
 ## InputLossImageTypeType
 
 ```python
@@ -2202,6 +2530,8 @@ Values:
 
 - `COLOR`
 - `SLATE`
+
+<a id="inputmaximumbitratetype"></a>
 
 ## InputMaximumBitrateType
 
@@ -2215,6 +2545,8 @@ Values:
 - `MAX_20_MBPS`
 - `MAX_50_MBPS`
 
+<a id="inputpreferencetype"></a>
+
 ## InputPreferenceType
 
 ```python
@@ -2225,6 +2557,8 @@ Values:
 
 - `EQUAL_INPUT_PREFERENCE`
 - `PRIMARY_INPUT_PREFERRED`
+
+<a id="inputresolutiontype"></a>
 
 ## InputResolutionType
 
@@ -2237,6 +2571,8 @@ Values:
 - `HD`
 - `SD`
 - `UHD`
+
+<a id="inputsecuritygroupstatetype"></a>
 
 ## InputSecurityGroupStateType
 
@@ -2251,6 +2587,8 @@ Values:
 - `IN_USE`
 - `UPDATING`
 
+<a id="inputsourceendbehaviortype"></a>
+
 ## InputSourceEndBehaviorType
 
 ```python
@@ -2262,6 +2600,8 @@ Values:
 - `CONTINUE`
 - `LOOP`
 
+<a id="inputsourcetypetype"></a>
+
 ## InputSourceTypeType
 
 ```python
@@ -2272,6 +2612,8 @@ Values:
 
 - `DYNAMIC`
 - `STATIC`
+
+<a id="inputstatetype"></a>
 
 ## InputStateType
 
@@ -2287,6 +2629,8 @@ Values:
 - `DELETING`
 - `DETACHED`
 
+<a id="inputtimecodesourcetype"></a>
+
 ## InputTimecodeSourceType
 
 ```python
@@ -2297,6 +2641,8 @@ Values:
 
 - `EMBEDDED`
 - `ZEROBASED`
+
+<a id="inputtypetype"></a>
 
 ## InputTypeType
 
@@ -2317,6 +2663,8 @@ Values:
 - `UDP_PUSH`
 - `URL_PULL`
 
+<a id="lastframeclippingbehaviortype"></a>
+
 ## LastFrameClippingBehaviorType
 
 ```python
@@ -2328,6 +2676,8 @@ Values:
 - `EXCLUDE_LAST_FRAME`
 - `INCLUDE_LAST_FRAME`
 
+<a id="listchannelspaginatorname"></a>
+
 ## ListChannelsPaginatorName
 
 ```python
@@ -2337,6 +2687,8 @@ from mypy_boto3_medialive.literals import ListChannelsPaginatorName
 Values:
 
 - `list_channels`
+
+<a id="listinputdevicetransferspaginatorname"></a>
 
 ## ListInputDeviceTransfersPaginatorName
 
@@ -2348,6 +2700,8 @@ Values:
 
 - `list_input_device_transfers`
 
+<a id="listinputdevicespaginatorname"></a>
+
 ## ListInputDevicesPaginatorName
 
 ```python
@@ -2357,6 +2711,8 @@ from mypy_boto3_medialive.literals import ListInputDevicesPaginatorName
 Values:
 
 - `list_input_devices`
+
+<a id="listinputsecuritygroupspaginatorname"></a>
 
 ## ListInputSecurityGroupsPaginatorName
 
@@ -2368,6 +2724,8 @@ Values:
 
 - `list_input_security_groups`
 
+<a id="listinputspaginatorname"></a>
+
 ## ListInputsPaginatorName
 
 ```python
@@ -2377,6 +2735,8 @@ from mypy_boto3_medialive.literals import ListInputsPaginatorName
 Values:
 
 - `list_inputs`
+
+<a id="listmultiplexprogramspaginatorname"></a>
 
 ## ListMultiplexProgramsPaginatorName
 
@@ -2388,6 +2748,8 @@ Values:
 
 - `list_multiplex_programs`
 
+<a id="listmultiplexespaginatorname"></a>
+
 ## ListMultiplexesPaginatorName
 
 ```python
@@ -2397,6 +2759,8 @@ from mypy_boto3_medialive.literals import ListMultiplexesPaginatorName
 Values:
 
 - `list_multiplexes`
+
+<a id="listofferingspaginatorname"></a>
 
 ## ListOfferingsPaginatorName
 
@@ -2408,6 +2772,8 @@ Values:
 
 - `list_offerings`
 
+<a id="listreservationspaginatorname"></a>
+
 ## ListReservationsPaginatorName
 
 ```python
@@ -2417,6 +2783,8 @@ from mypy_boto3_medialive.literals import ListReservationsPaginatorName
 Values:
 
 - `list_reservations`
+
+<a id="logleveltype"></a>
 
 ## LogLevelType
 
@@ -2432,6 +2800,8 @@ Values:
 - `INFO`
 - `WARNING`
 
+<a id="m2tsabsentinputaudiobehaviortype"></a>
+
 ## M2tsAbsentInputAudioBehaviorType
 
 ```python
@@ -2442,6 +2812,8 @@ Values:
 
 - `DROP`
 - `ENCODE_SILENCE`
+
+<a id="m2tsaribcaptionspidcontroltype"></a>
 
 ## M2tsAribCaptionsPidControlType
 
@@ -2454,6 +2826,8 @@ Values:
 - `AUTO`
 - `USE_CONFIGURED`
 
+<a id="m2tsaribtype"></a>
+
 ## M2tsAribType
 
 ```python
@@ -2464,6 +2838,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="m2tsaudiobuffermodeltype"></a>
 
 ## M2tsAudioBufferModelType
 
@@ -2476,6 +2852,8 @@ Values:
 - `ATSC`
 - `DVB`
 
+<a id="m2tsaudiointervaltype"></a>
+
 ## M2tsAudioIntervalType
 
 ```python
@@ -2486,6 +2864,8 @@ Values:
 
 - `VIDEO_AND_FIXED_INTERVALS`
 - `VIDEO_INTERVAL`
+
+<a id="m2tsaudiostreamtypetype"></a>
 
 ## M2tsAudioStreamTypeType
 
@@ -2498,6 +2878,8 @@ Values:
 - `ATSC`
 - `DVB`
 
+<a id="m2tsbuffermodeltype"></a>
+
 ## M2tsBufferModelType
 
 ```python
@@ -2508,6 +2890,8 @@ Values:
 
 - `MULTIPLEX`
 - `NONE`
+
+<a id="m2tsccdescriptortype"></a>
 
 ## M2tsCcDescriptorType
 
@@ -2520,6 +2904,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="m2tsebifcontroltype"></a>
+
 ## M2tsEbifControlType
 
 ```python
@@ -2530,6 +2916,8 @@ Values:
 
 - `NONE`
 - `PASSTHROUGH`
+
+<a id="m2tsebpplacementtype"></a>
 
 ## M2tsEbpPlacementType
 
@@ -2542,6 +2930,8 @@ Values:
 - `VIDEO_AND_AUDIO_PIDS`
 - `VIDEO_PID`
 
+<a id="m2tsesrateinpestype"></a>
+
 ## M2tsEsRateInPesType
 
 ```python
@@ -2552,6 +2942,8 @@ Values:
 
 - `EXCLUDE`
 - `INCLUDE`
+
+<a id="m2tsklvtype"></a>
 
 ## M2tsKlvType
 
@@ -2564,6 +2956,8 @@ Values:
 - `NONE`
 - `PASSTHROUGH`
 
+<a id="m2tsnielsenid3behaviortype"></a>
+
 ## M2tsNielsenId3BehaviorType
 
 ```python
@@ -2574,6 +2968,8 @@ Values:
 
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
+
+<a id="m2tspcrcontroltype"></a>
 
 ## M2tsPcrControlType
 
@@ -2586,6 +2982,8 @@ Values:
 - `CONFIGURED_PCR_PERIOD`
 - `PCR_EVERY_PES_PACKET`
 
+<a id="m2tsratemodetype"></a>
+
 ## M2tsRateModeType
 
 ```python
@@ -2597,6 +2995,8 @@ Values:
 - `CBR`
 - `VBR`
 
+<a id="m2tsscte35controltype"></a>
+
 ## M2tsScte35ControlType
 
 ```python
@@ -2607,6 +3007,8 @@ Values:
 
 - `NONE`
 - `PASSTHROUGH`
+
+<a id="m2tssegmentationmarkerstype"></a>
 
 ## M2tsSegmentationMarkersType
 
@@ -2623,6 +3025,8 @@ Values:
 - `RAI_ADAPT`
 - `RAI_SEGSTART`
 
+<a id="m2tssegmentationstyletype"></a>
+
 ## M2tsSegmentationStyleType
 
 ```python
@@ -2633,6 +3037,8 @@ Values:
 
 - `MAINTAIN_CADENCE`
 - `RESET_CADENCE`
+
+<a id="m2tstimedmetadatabehaviortype"></a>
 
 ## M2tsTimedMetadataBehaviorType
 
@@ -2645,6 +3051,8 @@ Values:
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
 
+<a id="m3u8nielsenid3behaviortype"></a>
+
 ## M3u8NielsenId3BehaviorType
 
 ```python
@@ -2655,6 +3063,8 @@ Values:
 
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
+
+<a id="m3u8pcrcontroltype"></a>
 
 ## M3u8PcrControlType
 
@@ -2667,6 +3077,8 @@ Values:
 - `CONFIGURED_PCR_PERIOD`
 - `PCR_EVERY_PES_PACKET`
 
+<a id="m3u8scte35behaviortype"></a>
+
 ## M3u8Scte35BehaviorType
 
 ```python
@@ -2677,6 +3089,8 @@ Values:
 
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
+
+<a id="m3u8timedmetadatabehaviortype"></a>
 
 ## M3u8TimedMetadataBehaviorType
 
@@ -2689,6 +3103,8 @@ Values:
 - `NO_PASSTHROUGH`
 - `PASSTHROUGH`
 
+<a id="motiongraphicsinsertiontype"></a>
+
 ## MotionGraphicsInsertionType
 
 ```python
@@ -2700,6 +3116,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="mp2codingmodetype"></a>
+
 ## Mp2CodingModeType
 
 ```python
@@ -2710,6 +3128,8 @@ Values:
 
 - `CODING_MODE_1_0`
 - `CODING_MODE_2_0`
+
+<a id="mpeg2adaptivequantizationtype"></a>
 
 ## Mpeg2AdaptiveQuantizationType
 
@@ -2725,6 +3145,8 @@ Values:
 - `MEDIUM`
 - `OFF`
 
+<a id="mpeg2colormetadatatype"></a>
+
 ## Mpeg2ColorMetadataType
 
 ```python
@@ -2735,6 +3157,8 @@ Values:
 
 - `IGNORE`
 - `INSERT`
+
+<a id="mpeg2colorspacetype"></a>
 
 ## Mpeg2ColorSpaceType
 
@@ -2747,6 +3171,8 @@ Values:
 - `AUTO`
 - `PASSTHROUGH`
 
+<a id="mpeg2displayratiotype"></a>
+
 ## Mpeg2DisplayRatioType
 
 ```python
@@ -2757,6 +3183,8 @@ Values:
 
 - `DISPLAYRATIO16X9`
 - `DISPLAYRATIO4X3`
+
+<a id="mpeg2gopsizeunitstype"></a>
 
 ## Mpeg2GopSizeUnitsType
 
@@ -2769,6 +3197,8 @@ Values:
 - `FRAMES`
 - `SECONDS`
 
+<a id="mpeg2scantypetype"></a>
+
 ## Mpeg2ScanTypeType
 
 ```python
@@ -2779,6 +3209,8 @@ Values:
 
 - `INTERLACED`
 - `PROGRESSIVE`
+
+<a id="mpeg2subgoplengthtype"></a>
 
 ## Mpeg2SubGopLengthType
 
@@ -2791,6 +3223,8 @@ Values:
 - `DYNAMIC`
 - `FIXED`
 
+<a id="mpeg2timecodeinsertionbehaviortype"></a>
+
 ## Mpeg2TimecodeInsertionBehaviorType
 
 ```python
@@ -2801,6 +3235,8 @@ Values:
 
 - `DISABLED`
 - `GOP_TIMECODE`
+
+<a id="mssmoothh265packagingtypetype"></a>
 
 ## MsSmoothH265PackagingTypeType
 
@@ -2813,6 +3249,8 @@ Values:
 - `HEV1`
 - `HVC1`
 
+<a id="multiplexcreatedwaitername"></a>
+
 ## MultiplexCreatedWaiterName
 
 ```python
@@ -2822,6 +3260,8 @@ from mypy_boto3_medialive.literals import MultiplexCreatedWaiterName
 Values:
 
 - `multiplex_created`
+
+<a id="multiplexdeletedwaitername"></a>
 
 ## MultiplexDeletedWaiterName
 
@@ -2833,6 +3273,8 @@ Values:
 
 - `multiplex_deleted`
 
+<a id="multiplexrunningwaitername"></a>
+
 ## MultiplexRunningWaiterName
 
 ```python
@@ -2842,6 +3284,8 @@ from mypy_boto3_medialive.literals import MultiplexRunningWaiterName
 Values:
 
 - `multiplex_running`
+
+<a id="multiplexstatetype"></a>
 
 ## MultiplexStateType
 
@@ -2861,6 +3305,8 @@ Values:
 - `STARTING`
 - `STOPPING`
 
+<a id="multiplexstoppedwaitername"></a>
+
 ## MultiplexStoppedWaiterName
 
 ```python
@@ -2870,6 +3316,8 @@ from mypy_boto3_medialive.literals import MultiplexStoppedWaiterName
 Values:
 
 - `multiplex_stopped`
+
+<a id="networkinputservervalidationtype"></a>
 
 ## NetworkInputServerValidationType
 
@@ -2882,6 +3330,8 @@ Values:
 - `CHECK_CRYPTOGRAPHY_AND_VALIDATE_NAME`
 - `CHECK_CRYPTOGRAPHY_ONLY`
 
+<a id="nielsenpcmtoid3taggingstatetype"></a>
+
 ## NielsenPcmToId3TaggingStateType
 
 ```python
@@ -2892,6 +3342,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="nielsenwatermarkscbetstepasidetype"></a>
 
 ## NielsenWatermarksCbetStepasideType
 
@@ -2904,6 +3356,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="nielsenwatermarksdistributiontypestype"></a>
+
 ## NielsenWatermarksDistributionTypesType
 
 ```python
@@ -2915,6 +3369,8 @@ Values:
 - `FINAL_DISTRIBUTOR`
 - `PROGRAM_CONTENT`
 
+<a id="offeringdurationunitstype"></a>
+
 ## OfferingDurationUnitsType
 
 ```python
@@ -2925,6 +3381,8 @@ Values:
 
 - `MONTHS`
 
+<a id="offeringtypetype"></a>
+
 ## OfferingTypeType
 
 ```python
@@ -2934,6 +3392,8 @@ from mypy_boto3_medialive.literals import OfferingTypeType
 Values:
 
 - `NO_UPFRONT`
+
+<a id="pipelineidtype"></a>
 
 ## PipelineIdType
 
@@ -2946,6 +3406,8 @@ Values:
 - `PIPELINE_0`
 - `PIPELINE_1`
 
+<a id="preferredchannelpipelinetype"></a>
+
 ## PreferredChannelPipelineType
 
 ```python
@@ -2957,6 +3419,8 @@ Values:
 - `CURRENTLY_ACTIVE`
 - `PIPELINE_0`
 - `PIPELINE_1`
+
+<a id="reservationcodectype"></a>
 
 ## ReservationCodecType
 
@@ -2972,6 +3436,8 @@ Values:
 - `LINK`
 - `MPEG2`
 
+<a id="reservationmaximumbitratetype"></a>
+
 ## ReservationMaximumBitrateType
 
 ```python
@@ -2984,6 +3450,8 @@ Values:
 - `MAX_20_MBPS`
 - `MAX_50_MBPS`
 
+<a id="reservationmaximumframeratetype"></a>
+
 ## ReservationMaximumFramerateType
 
 ```python
@@ -2994,6 +3462,8 @@ Values:
 
 - `MAX_30_FPS`
 - `MAX_60_FPS`
+
+<a id="reservationresolutiontype"></a>
 
 ## ReservationResolutionType
 
@@ -3008,6 +3478,8 @@ Values:
 - `SD`
 - `UHD`
 
+<a id="reservationresourcetypetype"></a>
+
 ## ReservationResourceTypeType
 
 ```python
@@ -3020,6 +3492,8 @@ Values:
 - `INPUT`
 - `MULTIPLEX`
 - `OUTPUT`
+
+<a id="reservationspecialfeaturetype"></a>
 
 ## ReservationSpecialFeatureType
 
@@ -3034,6 +3508,8 @@ Values:
 - `MGHD`
 - `MGUHD`
 
+<a id="reservationstatetype"></a>
+
 ## ReservationStateType
 
 ```python
@@ -3047,6 +3523,8 @@ Values:
 - `DELETED`
 - `EXPIRED`
 
+<a id="reservationvideoqualitytype"></a>
+
 ## ReservationVideoQualityType
 
 ```python
@@ -3059,6 +3537,8 @@ Values:
 - `PREMIUM`
 - `STANDARD`
 
+<a id="rtmpadmarkerstype"></a>
+
 ## RtmpAdMarkersType
 
 ```python
@@ -3068,6 +3548,8 @@ from mypy_boto3_medialive.literals import RtmpAdMarkersType
 Values:
 
 - `ON_CUE_POINT_SCTE35`
+
+<a id="rtmpcachefullbehaviortype"></a>
 
 ## RtmpCacheFullBehaviorType
 
@@ -3079,6 +3561,8 @@ Values:
 
 - `DISCONNECT_IMMEDIATELY`
 - `WAIT_FOR_SERVER`
+
+<a id="rtmpcaptiondatatype"></a>
 
 ## RtmpCaptionDataType
 
@@ -3092,6 +3576,8 @@ Values:
 - `FIELD1_608`
 - `FIELD1_AND_FIELD2_608`
 
+<a id="rtmpoutputcertificatemodetype"></a>
+
 ## RtmpOutputCertificateModeType
 
 ```python
@@ -3102,6 +3588,8 @@ Values:
 
 - `SELF_SIGNED`
 - `VERIFY_AUTHENTICITY`
+
+<a id="s3cannedacltype"></a>
 
 ## S3CannedAclType
 
@@ -3116,6 +3604,8 @@ Values:
 - `BUCKET_OWNER_READ`
 - `PUBLIC_READ`
 
+<a id="scte20convert608to708type"></a>
+
 ## Scte20Convert608To708Type
 
 ```python
@@ -3126,6 +3616,8 @@ Values:
 
 - `DISABLED`
 - `UPCONVERT`
+
+<a id="scte27ocrlanguagetype"></a>
 
 ## Scte27OcrLanguageType
 
@@ -3142,6 +3634,8 @@ Values:
 - `POR`
 - `SPA`
 
+<a id="scte35aposnoregionalblackoutbehaviortype"></a>
+
 ## Scte35AposNoRegionalBlackoutBehaviorType
 
 ```python
@@ -3152,6 +3646,8 @@ Values:
 
 - `FOLLOW`
 - `IGNORE`
+
+<a id="scte35aposwebdeliveryallowedbehaviortype"></a>
 
 ## Scte35AposWebDeliveryAllowedBehaviorType
 
@@ -3164,6 +3660,8 @@ Values:
 - `FOLLOW`
 - `IGNORE`
 
+<a id="scte35archiveallowedflagtype"></a>
+
 ## Scte35ArchiveAllowedFlagType
 
 ```python
@@ -3174,6 +3672,8 @@ Values:
 
 - `ARCHIVE_ALLOWED`
 - `ARCHIVE_NOT_ALLOWED`
+
+<a id="scte35devicerestrictionstype"></a>
 
 ## Scte35DeviceRestrictionsType
 
@@ -3188,6 +3688,8 @@ Values:
 - `RESTRICT_GROUP1`
 - `RESTRICT_GROUP2`
 
+<a id="scte35noregionalblackoutflagtype"></a>
+
 ## Scte35NoRegionalBlackoutFlagType
 
 ```python
@@ -3198,6 +3700,8 @@ Values:
 
 - `NO_REGIONAL_BLACKOUT`
 - `REGIONAL_BLACKOUT`
+
+<a id="scte35segmentationcancelindicatortype"></a>
 
 ## Scte35SegmentationCancelIndicatorType
 
@@ -3210,6 +3714,8 @@ Values:
 - `SEGMENTATION_EVENT_CANCELED`
 - `SEGMENTATION_EVENT_NOT_CANCELED`
 
+<a id="scte35spliceinsertnoregionalblackoutbehaviortype"></a>
+
 ## Scte35SpliceInsertNoRegionalBlackoutBehaviorType
 
 ```python
@@ -3220,6 +3726,8 @@ Values:
 
 - `FOLLOW`
 - `IGNORE`
+
+<a id="scte35spliceinsertwebdeliveryallowedbehaviortype"></a>
 
 ## Scte35SpliceInsertWebDeliveryAllowedBehaviorType
 
@@ -3232,6 +3740,8 @@ Values:
 - `FOLLOW`
 - `IGNORE`
 
+<a id="scte35webdeliveryallowedflagtype"></a>
+
 ## Scte35WebDeliveryAllowedFlagType
 
 ```python
@@ -3242,6 +3752,8 @@ Values:
 
 - `WEB_DELIVERY_ALLOWED`
 - `WEB_DELIVERY_NOT_ALLOWED`
+
+<a id="smoothgroupaudioonlytimecodecontroltype"></a>
 
 ## SmoothGroupAudioOnlyTimecodeControlType
 
@@ -3254,6 +3766,8 @@ Values:
 - `PASSTHROUGH`
 - `USE_CONFIGURED_CLOCK`
 
+<a id="smoothgroupcertificatemodetype"></a>
+
 ## SmoothGroupCertificateModeType
 
 ```python
@@ -3264,6 +3778,8 @@ Values:
 
 - `SELF_SIGNED`
 - `VERIFY_AUTHENTICITY`
+
+<a id="smoothgroupeventidmodetype"></a>
 
 ## SmoothGroupEventIdModeType
 
@@ -3277,6 +3793,8 @@ Values:
 - `USE_CONFIGURED`
 - `USE_TIMESTAMP`
 
+<a id="smoothgroupeventstopbehaviortype"></a>
+
 ## SmoothGroupEventStopBehaviorType
 
 ```python
@@ -3288,6 +3806,8 @@ Values:
 - `NONE`
 - `SEND_EOS`
 
+<a id="smoothgroupsegmentationmodetype"></a>
+
 ## SmoothGroupSegmentationModeType
 
 ```python
@@ -3298,6 +3818,8 @@ Values:
 
 - `USE_INPUT_SEGMENTATION`
 - `USE_SEGMENT_DURATION`
+
+<a id="smoothgroupsparsetracktypetype"></a>
 
 ## SmoothGroupSparseTrackTypeType
 
@@ -3311,6 +3833,8 @@ Values:
 - `SCTE_35`
 - `SCTE_35_WITHOUT_SEGMENTATION`
 
+<a id="smoothgroupstreammanifestbehaviortype"></a>
+
 ## SmoothGroupStreamManifestBehaviorType
 
 ```python
@@ -3321,6 +3845,8 @@ Values:
 
 - `DO_NOT_SEND`
 - `SEND`
+
+<a id="smoothgrouptimestampoffsetmodetype"></a>
 
 ## SmoothGroupTimestampOffsetModeType
 
@@ -3333,6 +3859,8 @@ Values:
 - `USE_CONFIGURED_OFFSET`
 - `USE_EVENT_START_DATE`
 
+<a id="smpte2038datapreferencetype"></a>
+
 ## Smpte2038DataPreferenceType
 
 ```python
@@ -3343,6 +3871,8 @@ Values:
 
 - `IGNORE`
 - `PREFER`
+
+<a id="temporalfilterpostfiltersharpeningtype"></a>
 
 ## TemporalFilterPostFilterSharpeningType
 
@@ -3355,6 +3885,8 @@ Values:
 - `AUTO`
 - `DISABLED`
 - `ENABLED`
+
+<a id="temporalfilterstrengthtype"></a>
 
 ## TemporalFilterStrengthType
 
@@ -3382,6 +3914,8 @@ Values:
 - `STRENGTH_8`
 - `STRENGTH_9`
 
+<a id="timecodeconfigsourcetype"></a>
+
 ## TimecodeConfigSourceType
 
 ```python
@@ -3394,6 +3928,8 @@ Values:
 - `SYSTEMCLOCK`
 - `ZEROBASED`
 
+<a id="ttmldestinationstylecontroltype"></a>
+
 ## TtmlDestinationStyleControlType
 
 ```python
@@ -3404,6 +3940,8 @@ Values:
 
 - `PASSTHROUGH`
 - `USE_CONFIGURED`
+
+<a id="udptimedmetadataid3frametype"></a>
 
 ## UdpTimedMetadataId3FrameType
 
@@ -3417,6 +3955,8 @@ Values:
 - `PRIV`
 - `TDRL`
 
+<a id="videodescriptionrespondtoafdtype"></a>
+
 ## VideoDescriptionRespondToAfdType
 
 ```python
@@ -3429,6 +3969,8 @@ Values:
 - `PASSTHROUGH`
 - `RESPOND`
 
+<a id="videodescriptionscalingbehaviortype"></a>
+
 ## VideoDescriptionScalingBehaviorType
 
 ```python
@@ -3439,6 +3981,8 @@ Values:
 
 - `DEFAULT`
 - `STRETCH_TO_OUTPUT`
+
+<a id="videoselectorcolorspacetype"></a>
 
 ## VideoSelectorColorSpaceType
 
@@ -3454,6 +3998,8 @@ Values:
 - `REC_601`
 - `REC_709`
 
+<a id="videoselectorcolorspaceusagetype"></a>
+
 ## VideoSelectorColorSpaceUsageType
 
 ```python
@@ -3464,6 +4010,8 @@ Values:
 
 - `FALLBACK`
 - `FORCE`
+
+<a id="wavcodingmodetype"></a>
 
 ## WavCodingModeType
 
@@ -3478,6 +4026,8 @@ Values:
 - `CODING_MODE_4_0`
 - `CODING_MODE_8_0`
 
+<a id="webvttdestinationstylecontroltype"></a>
+
 ## WebvttDestinationStyleControlType
 
 ```python
@@ -3488,6 +4038,8 @@ Values:
 
 - `NO_STYLE_DATA`
 - `PASSTHROUGH`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -3797,6 +4349,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -3815,6 +4369,8 @@ Values:
 - `list_multiplexes`
 - `list_offerings`
 - `list_reservations`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

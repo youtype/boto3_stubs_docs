@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-managedblockchain-module"></a>
+
 # Type annotations for boto3 ManagedBlockchain module
 
 > [Index](..) > ManagedBlockchain
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ManagedBlockchain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/managedblockchain.html#ManagedBlockchain)
 type annotations stubs module
-[mypy_boto3_managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
+[mypy-boto3-managedblockchain](https://pypi.org/project/mypy-boto3-managedblockchain/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[managedblockchain]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[managedblockchain]'
+
+# standalone installation
 pip install mypy-boto3-managedblockchain
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-managedblockchain
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="managedblockchainclient"></a>
 
 ## ManagedBlockchainClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -58,6 +72,8 @@ from mypy_boto3_managedblockchain.client import ManagedBlockchainClient
 - [update_node](./client.md#update_node)
 - [vote_on_proposal](./client.md#vote_on_proposal)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ManagedBlockchainClient [exceptions](./client.md#exceptions)
@@ -73,6 +89,8 @@ ManagedBlockchainClient [exceptions](./client.md#exceptions)
 - ResourceNotReadyException
 - ThrottlingException
 - TooManyTagsException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -95,6 +113,8 @@ from mypy_boto3_managedblockchain.literals import EditionType, ...
 - [ThresholdComparatorType](./literals.md#thresholdcomparatortype)
 - [VoteValueType](./literals.md#votevaluetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="mwaaclient-for-boto3-mwaa-module"></a>
+
 # MWAAClient for boto3 MWAA module
 
 > [Index](..) > [MWAA](.) > MWAAClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MWAA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA)
 type annotations stubs module
-[mypy_boto3_mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
+[mypy-boto3-mwaa](https://pypi.org/project/mypy-boto3-mwaa/).
 
 - [MWAAClient for boto3 MWAA module](#mwaaclient-for-boto3-mwaa-module)
   - [MWAAClient](#mwaaclient)
@@ -27,6 +29,8 @@ type annotations stubs module
     - [update_environment](#update_environment)
     - [get_paginator](#get_paginator)
 
+<a id="mwaaclient"></a>
+
 ## MWAAClient
 
 Type annotations for `boto3.client("mwaa")`
@@ -34,14 +38,17 @@ Type annotations for `boto3.client("mwaa")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mwaa.client import MWAAClient
 
 def get_mwaa_client() -> MWAAClient:
-    return boto3.client("mwaa")
+    return Session().client("mwaa")
 ```
 
 Boto3 documentation:
 [MWAA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -63,7 +70,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -75,6 +86,8 @@ Boto3 documentation:
 [MWAA.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mwaa.html#MWAA.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -90,6 +103,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_cli_token"></a>
 
 ### create_cli_token
 
@@ -109,6 +124,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCliTokenResponseTypeDef](./type_defs.md#createclitokenresponsetypedef).
+
+<a id="create_environment"></a>
 
 ### create_environment
 
@@ -152,6 +169,8 @@ Keyword-only arguments:
 Returns
 [CreateEnvironmentOutputTypeDef](./type_defs.md#createenvironmentoutputtypedef).
 
+<a id="create_web_login_token"></a>
+
 ### create_web_login_token
 
 Creates a web login token for the Airflow Web UI.
@@ -171,6 +190,8 @@ Keyword-only arguments:
 Returns
 [CreateWebLoginTokenResponseTypeDef](./type_defs.md#createweblogintokenresponsetypedef).
 
+<a id="delete_environment"></a>
+
 ### delete_environment
 
 Deletes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
@@ -188,6 +209,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -207,6 +230,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_environment"></a>
+
 ### get_environment
 
 Describes an Amazon Managed Workflows for Apache Airflow (MWAA) environment.
@@ -225,6 +250,8 @@ Keyword-only arguments:
 
 Returns
 [GetEnvironmentOutputTypeDef](./type_defs.md#getenvironmentoutputtypedef).
+
+<a id="list_environments"></a>
 
 ### list_environments
 
@@ -246,6 +273,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentsOutputTypeDef](./type_defs.md#listenvironmentsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the key-value tag pairs associated to the Amazon Managed Workflows for
@@ -265,6 +294,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="publish_metrics"></a>
 
 ### publish_metrics
 
@@ -287,6 +318,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates key-value tag pairs to your Amazon Managed Workflows for Apache
@@ -307,6 +340,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes key-value tag pairs associated to your Amazon Managed Workflows for
@@ -326,6 +361,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_environment"></a>
 
 ### update_environment
 
@@ -365,6 +402,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEnvironmentOutputTypeDef](./type_defs.md#updateenvironmentoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

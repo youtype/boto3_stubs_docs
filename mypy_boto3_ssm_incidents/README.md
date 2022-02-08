@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ssmincidents-module"></a>
+
 # Type annotations for boto3 SSMIncidents module
 
 > [Index](..) > SSMIncidents
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
-[mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ssm-incidents]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ssm-incidents]'
+
+# standalone installation
 pip install mypy-boto3-ssm-incidents
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-ssm-incidents
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ssmincidentsclient"></a>
+
 ## SSMIncidentsClient
 
 Type annotations for `boto3.client("ssm-incidents")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_ssm_incidents.client import SSMIncidentsClient
 - [update_response_plan](./client.md#update_response_plan)
 - [update_timeline_event](./client.md#update_timeline_event)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SSMIncidentsClient [exceptions](./client.md#exceptions)
@@ -81,6 +97,8 @@ SSMIncidentsClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -89,7 +107,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm_incidents.paginators import GetResourcePoliciesPaginator, ...
+from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator, ...
 ```
 
 - [GetResourcePoliciesPaginator](./paginators.md#getresourcepoliciespaginator)
@@ -99,6 +117,8 @@ from mypy_boto3_ssm_incidents.paginators import GetResourcePoliciesPaginator, ..
 - [ListResponsePlansPaginator](./paginators.md#listresponseplanspaginator)
 - [ListTimelineEventsPaginator](./paginators.md#listtimelineeventspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -107,11 +127,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm_incidents.waiters import WaitForReplicationSetActiveWaiter, ...
+from mypy_boto3_ssm_incidents.waiter import WaitForReplicationSetActiveWaiter, ...
 ```
 
 - [WaitForReplicationSetActiveWaiter](./waiters.md#waitforreplicationsetactivewaiter)
 - [WaitForReplicationSetDeletedWaiter](./waiters.md#waitforreplicationsetdeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -141,6 +163,8 @@ from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName, 
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

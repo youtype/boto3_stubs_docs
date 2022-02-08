@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-workdocs-module"></a>
+
 # Typed dictionaries for boto3 WorkDocs module
 
 > [Index](..) > [WorkDocs](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
-[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [Typed dictionaries for boto3 WorkDocs module](#typed-dictionaries-for-boto3-workdocs-module)
   - [AbortDocumentVersionUploadRequestRequestTypeDef](#abortdocumentversionuploadrequestrequesttypedef)
@@ -98,6 +100,8 @@ type annotations stubs module
   - [UserStorageMetadataTypeDef](#userstoragemetadatatypedef)
   - [UserTypeDef](#usertypedef)
 
+<a id="abortdocumentversionuploadrequestrequesttypedef"></a>
+
 ## AbortDocumentVersionUploadRequestRequestTypeDef
 
 ```python
@@ -113,6 +117,8 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
+<a id="activateuserrequestrequesttypedef"></a>
+
 ## ActivateUserRequestRequestTypeDef
 
 ```python
@@ -127,6 +133,8 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
+<a id="activateuserresponsetypedef"></a>
+
 ## ActivateUserResponseTypeDef
 
 ```python
@@ -138,6 +146,8 @@ Required fields:
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="activitytypedef"></a>
 
 ## ActivityTypeDef
 
@@ -160,6 +170,8 @@ Optional fields:
 - `CommentMetadata`:
   [CommentMetadataTypeDef](./type_defs.md#commentmetadatatypedef)
 
+<a id="addresourcepermissionsrequestrequesttypedef"></a>
+
 ## AddResourcePermissionsRequestRequestTypeDef
 
 ```python
@@ -178,6 +190,8 @@ Optional fields:
 - `NotificationOptions`:
   [NotificationOptionsTypeDef](./type_defs.md#notificationoptionstypedef)
 
+<a id="addresourcepermissionsresponsetypedef"></a>
+
 ## AddResourcePermissionsResponseTypeDef
 
 ```python
@@ -190,6 +204,8 @@ Required fields:
   `List`\[[ShareResultTypeDef](./type_defs.md#shareresulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="commentmetadatatypedef"></a>
 
 ## CommentMetadataTypeDef
 
@@ -204,6 +220,8 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `CommentStatus`: [CommentStatusTypeType](./literals.md#commentstatustypetype)
 - `RecipientId`: `str`
+
+<a id="commenttypedef"></a>
 
 ## CommentTypeDef
 
@@ -227,6 +245,8 @@ Optional fields:
   [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
 - `RecipientId`: `str`
 
+<a id="createcommentrequestrequesttypedef"></a>
+
 ## CreateCommentRequestRequestTypeDef
 
 ```python
@@ -248,6 +268,8 @@ Optional fields:
   [CommentVisibilityTypeType](./literals.md#commentvisibilitytypetype)
 - `NotifyCollaborators`: `bool`
 
+<a id="createcommentresponsetypedef"></a>
+
 ## CreateCommentResponseTypeDef
 
 ```python
@@ -259,6 +281,8 @@ Required fields:
 - `Comment`: [CommentTypeDef](./type_defs.md#commenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcustommetadatarequestrequesttypedef"></a>
 
 ## CreateCustomMetadataRequestRequestTypeDef
 
@@ -276,6 +300,8 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `VersionId`: `str`
 
+<a id="createfolderrequestrequesttypedef"></a>
+
 ## CreateFolderRequestRequestTypeDef
 
 ```python
@@ -291,6 +317,8 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `Name`: `str`
 
+<a id="createfolderresponsetypedef"></a>
+
 ## CreateFolderResponseTypeDef
 
 ```python
@@ -302,6 +330,8 @@ Required fields:
 - `Metadata`: [FolderMetadataTypeDef](./type_defs.md#foldermetadatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlabelsrequestrequesttypedef"></a>
 
 ## CreateLabelsRequestRequestTypeDef
 
@@ -318,6 +348,8 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
+<a id="createnotificationsubscriptionrequestrequesttypedef"></a>
+
 ## CreateNotificationSubscriptionRequestRequestTypeDef
 
 ```python
@@ -333,6 +365,8 @@ Required fields:
 - `SubscriptionType`: `Literal['ALL']` (see
   [SubscriptionTypeType](./literals.md#subscriptiontypetype))
 
+<a id="createnotificationsubscriptionresponsetypedef"></a>
+
 ## CreateNotificationSubscriptionResponseTypeDef
 
 ```python
@@ -344,6 +378,8 @@ Required fields:
 - `Subscription`: [SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserrequestrequesttypedef"></a>
 
 ## CreateUserRequestRequestTypeDef
 
@@ -367,6 +403,8 @@ Optional fields:
   [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
 - `AuthenticationToken`: `str`
 
+<a id="createuserresponsetypedef"></a>
+
 ## CreateUserResponseTypeDef
 
 ```python
@@ -378,6 +416,8 @@ Required fields:
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deactivateuserrequestrequesttypedef"></a>
 
 ## DeactivateUserRequestRequestTypeDef
 
@@ -392,6 +432,8 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="deletecommentrequestrequesttypedef"></a>
 
 ## DeleteCommentRequestRequestTypeDef
 
@@ -408,6 +450,8 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="deletecustommetadatarequestrequesttypedef"></a>
 
 ## DeleteCustomMetadataRequestRequestTypeDef
 
@@ -426,6 +470,8 @@ Optional fields:
 - `Keys`: `Sequence`\[`str`\]
 - `DeleteAll`: `bool`
 
+<a id="deletedocumentrequestrequesttypedef"></a>
+
 ## DeleteDocumentRequestRequestTypeDef
 
 ```python
@@ -439,6 +485,8 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="deletefoldercontentsrequestrequesttypedef"></a>
 
 ## DeleteFolderContentsRequestRequestTypeDef
 
@@ -454,6 +502,8 @@ Optional fields:
 
 - `AuthenticationToken`: `str`
 
+<a id="deletefolderrequestrequesttypedef"></a>
+
 ## DeleteFolderRequestRequestTypeDef
 
 ```python
@@ -467,6 +517,8 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="deletelabelsrequestrequesttypedef"></a>
 
 ## DeleteLabelsRequestRequestTypeDef
 
@@ -484,6 +536,8 @@ Optional fields:
 - `Labels`: `Sequence`\[`str`\]
 - `DeleteAll`: `bool`
 
+<a id="deletenotificationsubscriptionrequestrequesttypedef"></a>
+
 ## DeleteNotificationSubscriptionRequestRequestTypeDef
 
 ```python
@@ -494,6 +548,8 @@ Required fields:
 
 - `SubscriptionId`: `str`
 - `OrganizationId`: `str`
+
+<a id="deleteuserrequestrequesttypedef"></a>
 
 ## DeleteUserRequestRequestTypeDef
 
@@ -508,6 +564,8 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="describeactivitiesrequestrequesttypedef"></a>
 
 ## DescribeActivitiesRequestRequestTypeDef
 
@@ -528,6 +586,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="describeactivitiesresponsetypedef"></a>
+
 ## DescribeActivitiesResponseTypeDef
 
 ```python
@@ -540,6 +600,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecommentsrequestrequesttypedef"></a>
 
 ## DescribeCommentsRequestRequestTypeDef
 
@@ -558,6 +620,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="describecommentsresponsetypedef"></a>
+
 ## DescribeCommentsResponseTypeDef
 
 ```python
@@ -570,6 +634,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedocumentversionsrequestrequesttypedef"></a>
 
 ## DescribeDocumentVersionsRequestRequestTypeDef
 
@@ -589,6 +655,8 @@ Optional fields:
 - `Include`: `str`
 - `Fields`: `str`
 
+<a id="describedocumentversionsresponsetypedef"></a>
+
 ## DescribeDocumentVersionsResponseTypeDef
 
 ```python
@@ -602,6 +670,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describefoldercontentsrequestrequesttypedef"></a>
 
 ## DescribeFolderContentsRequestRequestTypeDef
 
@@ -623,6 +693,8 @@ Optional fields:
 - `Type`: [FolderContentTypeType](./literals.md#foldercontenttypetype)
 - `Include`: `str`
 
+<a id="describefoldercontentsresponsetypedef"></a>
+
 ## DescribeFolderContentsResponseTypeDef
 
 ```python
@@ -638,6 +710,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describegroupsrequestrequesttypedef"></a>
 
 ## DescribeGroupsRequestRequestTypeDef
 
@@ -656,6 +730,8 @@ Optional fields:
 - `Marker`: `str`
 - `Limit`: `int`
 
+<a id="describegroupsresponsetypedef"></a>
+
 ## DescribeGroupsResponseTypeDef
 
 ```python
@@ -669,6 +745,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describenotificationsubscriptionsrequestrequesttypedef"></a>
 
 ## DescribeNotificationSubscriptionsRequestRequestTypeDef
 
@@ -685,6 +763,8 @@ Optional fields:
 - `Marker`: `str`
 - `Limit`: `int`
 
+<a id="describenotificationsubscriptionsresponsetypedef"></a>
+
 ## DescribeNotificationSubscriptionsResponseTypeDef
 
 ```python
@@ -698,6 +778,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeresourcepermissionsrequestrequesttypedef"></a>
 
 ## DescribeResourcePermissionsRequestRequestTypeDef
 
@@ -716,6 +798,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="describeresourcepermissionsresponsetypedef"></a>
+
 ## DescribeResourcePermissionsResponseTypeDef
 
 ```python
@@ -728,6 +812,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describerootfoldersrequestrequesttypedef"></a>
 
 ## DescribeRootFoldersRequestRequestTypeDef
 
@@ -744,6 +830,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="describerootfoldersresponsetypedef"></a>
+
 ## DescribeRootFoldersResponseTypeDef
 
 ```python
@@ -757,6 +845,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeusersrequestrequesttypedef"></a>
 
 ## DescribeUsersRequestRequestTypeDef
 
@@ -777,6 +867,8 @@ Optional fields:
 - `Limit`: `int`
 - `Fields`: `str`
 
+<a id="describeusersresponsetypedef"></a>
+
 ## DescribeUsersResponseTypeDef
 
 ```python
@@ -790,6 +882,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="documentmetadatatypedef"></a>
 
 ## DocumentMetadataTypeDef
 
@@ -808,6 +902,8 @@ Optional fields:
   [DocumentVersionMetadataTypeDef](./type_defs.md#documentversionmetadatatypedef)
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 - `Labels`: `List`\[`str`\]
+
+<a id="documentversionmetadatatypedef"></a>
 
 ## DocumentVersionMetadataTypeDef
 
@@ -835,6 +931,8 @@ Optional fields:
   `Dict`\[[DocumentSourceTypeType](./literals.md#documentsourcetypetype),
   `str`\]
 
+<a id="foldermetadatatypedef"></a>
+
 ## FolderMetadataTypeDef
 
 ```python
@@ -855,6 +953,8 @@ Optional fields:
 - `Size`: `int`
 - `LatestVersionSize`: `int`
 
+<a id="getcurrentuserrequestrequesttypedef"></a>
+
 ## GetCurrentUserRequestRequestTypeDef
 
 ```python
@@ -864,6 +964,8 @@ from mypy_boto3_workdocs.type_defs import GetCurrentUserRequestRequestTypeDef
 Required fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="getcurrentuserresponsetypedef"></a>
 
 ## GetCurrentUserResponseTypeDef
 
@@ -876,6 +978,8 @@ Required fields:
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdocumentpathrequestrequesttypedef"></a>
 
 ## GetDocumentPathRequestRequestTypeDef
 
@@ -894,6 +998,8 @@ Optional fields:
 - `Fields`: `str`
 - `Marker`: `str`
 
+<a id="getdocumentpathresponsetypedef"></a>
+
 ## GetDocumentPathResponseTypeDef
 
 ```python
@@ -905,6 +1011,8 @@ Required fields:
 - `Path`: [ResourcePathTypeDef](./type_defs.md#resourcepathtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdocumentrequestrequesttypedef"></a>
 
 ## GetDocumentRequestRequestTypeDef
 
@@ -921,6 +1029,8 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `IncludeCustomMetadata`: `bool`
 
+<a id="getdocumentresponsetypedef"></a>
+
 ## GetDocumentResponseTypeDef
 
 ```python
@@ -933,6 +1043,8 @@ Required fields:
 - `CustomMetadata`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdocumentversionrequestrequesttypedef"></a>
 
 ## GetDocumentVersionRequestRequestTypeDef
 
@@ -951,6 +1063,8 @@ Optional fields:
 - `Fields`: `str`
 - `IncludeCustomMetadata`: `bool`
 
+<a id="getdocumentversionresponsetypedef"></a>
+
 ## GetDocumentVersionResponseTypeDef
 
 ```python
@@ -964,6 +1078,8 @@ Required fields:
 - `CustomMetadata`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfolderpathrequestrequesttypedef"></a>
 
 ## GetFolderPathRequestRequestTypeDef
 
@@ -982,6 +1098,8 @@ Optional fields:
 - `Fields`: `str`
 - `Marker`: `str`
 
+<a id="getfolderpathresponsetypedef"></a>
+
 ## GetFolderPathResponseTypeDef
 
 ```python
@@ -993,6 +1111,8 @@ Required fields:
 - `Path`: [ResourcePathTypeDef](./type_defs.md#resourcepathtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfolderrequestrequesttypedef"></a>
 
 ## GetFolderRequestRequestTypeDef
 
@@ -1009,6 +1129,8 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `IncludeCustomMetadata`: `bool`
 
+<a id="getfolderresponsetypedef"></a>
+
 ## GetFolderResponseTypeDef
 
 ```python
@@ -1021,6 +1143,8 @@ Required fields:
 - `CustomMetadata`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourcesrequestrequesttypedef"></a>
 
 ## GetResourcesRequestRequestTypeDef
 
@@ -1036,6 +1160,8 @@ Optional fields:
   [ResourceCollectionTypeType](./literals.md#resourcecollectiontypetype))
 - `Limit`: `int`
 - `Marker`: `str`
+
+<a id="getresourcesresponsetypedef"></a>
 
 ## GetResourcesResponseTypeDef
 
@@ -1053,6 +1179,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupmetadatatypedef"></a>
+
 ## GroupMetadataTypeDef
 
 ```python
@@ -1063,6 +1191,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Name`: `str`
+
+<a id="initiatedocumentversionuploadrequestrequesttypedef"></a>
 
 ## InitiateDocumentVersionUploadRequestRequestTypeDef
 
@@ -1084,6 +1214,8 @@ Optional fields:
 - `ContentType`: `str`
 - `DocumentSizeInBytes`: `int`
 
+<a id="initiatedocumentversionuploadresponsetypedef"></a>
+
 ## InitiateDocumentVersionUploadResponseTypeDef
 
 ```python
@@ -1098,6 +1230,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationoptionstypedef"></a>
+
 ## NotificationOptionsTypeDef
 
 ```python
@@ -1108,6 +1242,8 @@ Optional fields:
 
 - `SendEmail`: `bool`
 - `EmailMessage`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1121,6 +1257,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="participantstypedef"></a>
+
 ## ParticipantsTypeDef
 
 ```python
@@ -1133,6 +1271,8 @@ Optional fields:
 - `Groups`:
   `List`\[[GroupMetadataTypeDef](./type_defs.md#groupmetadatatypedef)\]
 
+<a id="permissioninfotypedef"></a>
+
 ## PermissionInfoTypeDef
 
 ```python
@@ -1143,6 +1283,8 @@ Optional fields:
 
 - `Role`: [RoleTypeType](./literals.md#roletypetype)
 - `Type`: [RolePermissionTypeType](./literals.md#rolepermissiontypetype)
+
+<a id="principaltypedef"></a>
 
 ## PrincipalTypeDef
 
@@ -1157,6 +1299,8 @@ Optional fields:
 - `Roles`:
   `List`\[[PermissionInfoTypeDef](./type_defs.md#permissioninfotypedef)\]
 
+<a id="removeallresourcepermissionsrequestrequesttypedef"></a>
+
 ## RemoveAllResourcePermissionsRequestRequestTypeDef
 
 ```python
@@ -1170,6 +1314,8 @@ Required fields:
 Optional fields:
 
 - `AuthenticationToken`: `str`
+
+<a id="removeresourcepermissionrequestrequesttypedef"></a>
 
 ## RemoveResourcePermissionRequestRequestTypeDef
 
@@ -1187,6 +1333,8 @@ Optional fields:
 - `AuthenticationToken`: `str`
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 
+<a id="resourcemetadatatypedef"></a>
+
 ## ResourceMetadataTypeDef
 
 ```python
@@ -1203,6 +1351,8 @@ Optional fields:
 - `Owner`: [UserMetadataTypeDef](./type_defs.md#usermetadatatypedef)
 - `ParentId`: `str`
 
+<a id="resourcepathcomponenttypedef"></a>
+
 ## ResourcePathComponentTypeDef
 
 ```python
@@ -1214,6 +1364,8 @@ Optional fields:
 - `Id`: `str`
 - `Name`: `str`
 
+<a id="resourcepathtypedef"></a>
+
 ## ResourcePathTypeDef
 
 ```python
@@ -1224,6 +1376,8 @@ Optional fields:
 
 - `Components`:
   `List`\[[ResourcePathComponentTypeDef](./type_defs.md#resourcepathcomponenttypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1239,6 +1393,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="shareprincipaltypedef"></a>
+
 ## SharePrincipalTypeDef
 
 ```python
@@ -1250,6 +1406,8 @@ Required fields:
 - `Id`: `str`
 - `Type`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `Role`: [RoleTypeType](./literals.md#roletypetype)
+
+<a id="shareresulttypedef"></a>
 
 ## ShareResultTypeDef
 
@@ -1266,6 +1424,8 @@ Optional fields:
 - `ShareId`: `str`
 - `StatusMessage`: `str`
 
+<a id="storageruletypetypedef"></a>
+
 ## StorageRuleTypeTypeDef
 
 ```python
@@ -1276,6 +1436,8 @@ Optional fields:
 
 - `StorageAllocatedInBytes`: `int`
 - `StorageType`: [StorageTypeType](./literals.md#storagetypetype)
+
+<a id="subscriptiontypedef"></a>
 
 ## SubscriptionTypeDef
 
@@ -1289,6 +1451,8 @@ Optional fields:
 - `EndPoint`: `str`
 - `Protocol`: `Literal['HTTPS']` (see
   [SubscriptionProtocolTypeType](./literals.md#subscriptionprotocoltypetype))
+
+<a id="updatedocumentrequestrequesttypedef"></a>
 
 ## UpdateDocumentRequestRequestTypeDef
 
@@ -1307,6 +1471,8 @@ Optional fields:
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 
+<a id="updatedocumentversionrequestrequesttypedef"></a>
+
 ## UpdateDocumentVersionRequestRequestTypeDef
 
 ```python
@@ -1324,6 +1490,8 @@ Optional fields:
 - `VersionStatus`: `Literal['ACTIVE']` (see
   [DocumentVersionStatusType](./literals.md#documentversionstatustype))
 
+<a id="updatefolderrequestrequesttypedef"></a>
+
 ## UpdateFolderRequestRequestTypeDef
 
 ```python
@@ -1340,6 +1508,8 @@ Optional fields:
 - `Name`: `str`
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
+
+<a id="updateuserrequestrequesttypedef"></a>
 
 ## UpdateUserRequestRequestTypeDef
 
@@ -1364,6 +1534,8 @@ Optional fields:
 - `GrantPoweruserPrivileges`:
   [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
 
+<a id="updateuserresponsetypedef"></a>
+
 ## UpdateUserResponseTypeDef
 
 ```python
@@ -1376,6 +1548,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="uploadmetadatatypedef"></a>
+
 ## UploadMetadataTypeDef
 
 ```python
@@ -1386,6 +1560,8 @@ Optional fields:
 
 - `UploadUrl`: `str`
 - `SignedHeaders`: `Dict`\[`str`, `str`\]
+
+<a id="usermetadatatypedef"></a>
 
 ## UserMetadataTypeDef
 
@@ -1401,6 +1577,8 @@ Optional fields:
 - `Surname`: `str`
 - `EmailAddress`: `str`
 
+<a id="userstoragemetadatatypedef"></a>
+
 ## UserStorageMetadataTypeDef
 
 ```python
@@ -1412,6 +1590,8 @@ Optional fields:
 - `StorageUtilizedInBytes`: `int`
 - `StorageRule`:
   [StorageRuleTypeTypeDef](./type_defs.md#storageruletypetypedef)
+
+<a id="usertypedef"></a>
 
 ## UserTypeDef
 

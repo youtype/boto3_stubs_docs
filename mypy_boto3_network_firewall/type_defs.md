@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-networkfirewall-module"></a>
+
 # Typed dictionaries for boto3 NetworkFirewall module
 
 > [Index](..) > [NetworkFirewall](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
-[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [Typed dictionaries for boto3 NetworkFirewall module](#typed-dictionaries-for-boto3-networkfirewall-module)
   - [ActionDefinitionTypeDef](#actiondefinitiontypedef)
@@ -107,6 +109,8 @@ type annotations stubs module
   - [UpdateSubnetChangeProtectionRequestRequestTypeDef](#updatesubnetchangeprotectionrequestrequesttypedef)
   - [UpdateSubnetChangeProtectionResponseTypeDef](#updatesubnetchangeprotectionresponsetypedef)
 
+<a id="actiondefinitiontypedef"></a>
+
 ## ActionDefinitionTypeDef
 
 ```python
@@ -118,6 +122,8 @@ Optional fields:
 - `PublishMetricAction`:
   [PublishMetricActionTypeDef](./type_defs.md#publishmetricactiontypedef)
 
+<a id="addresstypedef"></a>
+
 ## AddressTypeDef
 
 ```python
@@ -127,6 +133,8 @@ from mypy_boto3_network_firewall.type_defs import AddressTypeDef
 Required fields:
 
 - `AddressDefinition`: `str`
+
+<a id="associatefirewallpolicyrequestrequesttypedef"></a>
 
 ## AssociateFirewallPolicyRequestRequestTypeDef
 
@@ -144,6 +152,8 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 
+<a id="associatefirewallpolicyresponsetypedef"></a>
+
 ## AssociateFirewallPolicyResponseTypeDef
 
 ```python
@@ -158,6 +168,8 @@ Required fields:
 - `UpdateToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associatesubnetsrequestrequesttypedef"></a>
 
 ## AssociateSubnetsRequestRequestTypeDef
 
@@ -176,6 +188,8 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 
+<a id="associatesubnetsresponsetypedef"></a>
+
 ## AssociateSubnetsResponseTypeDef
 
 ```python
@@ -192,6 +206,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="attachmenttypedef"></a>
+
 ## AttachmentTypeDef
 
 ```python
@@ -203,6 +219,8 @@ Optional fields:
 - `SubnetId`: `str`
 - `EndpointId`: `str`
 - `Status`: [AttachmentStatusType](./literals.md#attachmentstatustype)
+
+<a id="createfirewallpolicyrequestrequesttypedef"></a>
 
 ## CreateFirewallPolicyRequestRequestTypeDef
 
@@ -222,6 +240,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
+<a id="createfirewallpolicyresponsetypedef"></a>
+
 ## CreateFirewallPolicyResponseTypeDef
 
 ```python
@@ -235,6 +255,8 @@ Required fields:
   [FirewallPolicyResponseTypeDef](./type_defs.md#firewallpolicyresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfirewallrequestrequesttypedef"></a>
 
 ## CreateFirewallRequestRequestTypeDef
 
@@ -258,6 +280,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createfirewallresponsetypedef"></a>
+
 ## CreateFirewallResponseTypeDef
 
 ```python
@@ -271,6 +295,8 @@ Required fields:
   [FirewallStatusTypeDef](./type_defs.md#firewallstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulegrouprequestrequesttypedef"></a>
 
 ## CreateRuleGroupRequestRequestTypeDef
 
@@ -292,6 +318,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DryRun`: `bool`
 
+<a id="createrulegroupresponsetypedef"></a>
+
 ## CreateRuleGroupResponseTypeDef
 
 ```python
@@ -306,6 +334,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customactiontypedef"></a>
+
 ## CustomActionTypeDef
 
 ```python
@@ -318,6 +348,8 @@ Required fields:
 - `ActionDefinition`:
   [ActionDefinitionTypeDef](./type_defs.md#actiondefinitiontypedef)
 
+<a id="deletefirewallpolicyrequestrequesttypedef"></a>
+
 ## DeleteFirewallPolicyRequestRequestTypeDef
 
 ```python
@@ -328,6 +360,8 @@ Optional fields:
 
 - `FirewallPolicyName`: `str`
 - `FirewallPolicyArn`: `str`
+
+<a id="deletefirewallpolicyresponsetypedef"></a>
 
 ## DeleteFirewallPolicyResponseTypeDef
 
@@ -342,6 +376,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefirewallrequestrequesttypedef"></a>
+
 ## DeleteFirewallRequestRequestTypeDef
 
 ```python
@@ -352,6 +388,8 @@ Optional fields:
 
 - `FirewallName`: `str`
 - `FirewallArn`: `str`
+
+<a id="deletefirewallresponsetypedef"></a>
 
 ## DeleteFirewallResponseTypeDef
 
@@ -367,6 +405,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
 ## DeleteResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -376,6 +416,8 @@ from mypy_boto3_network_firewall.type_defs import DeleteResourcePolicyRequestReq
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="deleterulegrouprequestrequesttypedef"></a>
 
 ## DeleteRuleGroupRequestRequestTypeDef
 
@@ -388,6 +430,8 @@ Optional fields:
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
 - `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+
+<a id="deleterulegroupresponsetypedef"></a>
 
 ## DeleteRuleGroupResponseTypeDef
 
@@ -402,6 +446,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefirewallpolicyrequestrequesttypedef"></a>
+
 ## DescribeFirewallPolicyRequestRequestTypeDef
 
 ```python
@@ -412,6 +458,8 @@ Optional fields:
 
 - `FirewallPolicyName`: `str`
 - `FirewallPolicyArn`: `str`
+
+<a id="describefirewallpolicyresponsetypedef"></a>
 
 ## DescribeFirewallPolicyResponseTypeDef
 
@@ -429,6 +477,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefirewallrequestrequesttypedef"></a>
+
 ## DescribeFirewallRequestRequestTypeDef
 
 ```python
@@ -439,6 +489,8 @@ Optional fields:
 
 - `FirewallName`: `str`
 - `FirewallArn`: `str`
+
+<a id="describefirewallresponsetypedef"></a>
 
 ## DescribeFirewallResponseTypeDef
 
@@ -455,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloggingconfigurationrequestrequesttypedef"></a>
+
 ## DescribeLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -465,6 +519,8 @@ Optional fields:
 
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
+
+<a id="describeloggingconfigurationresponsetypedef"></a>
 
 ## DescribeLoggingConfigurationResponseTypeDef
 
@@ -480,6 +536,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresourcepolicyrequestrequesttypedef"></a>
+
 ## DescribeResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -489,6 +547,8 @@ from mypy_boto3_network_firewall.type_defs import DescribeResourcePolicyRequestR
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="describeresourcepolicyresponsetypedef"></a>
 
 ## DescribeResourcePolicyResponseTypeDef
 
@@ -502,6 +562,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerulegroupmetadatarequestrequesttypedef"></a>
+
 ## DescribeRuleGroupMetadataRequestRequestTypeDef
 
 ```python
@@ -513,6 +575,8 @@ Optional fields:
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
 - `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+
+<a id="describerulegroupmetadataresponsetypedef"></a>
 
 ## DescribeRuleGroupMetadataResponseTypeDef
 
@@ -532,6 +596,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerulegrouprequestrequesttypedef"></a>
+
 ## DescribeRuleGroupRequestRequestTypeDef
 
 ```python
@@ -543,6 +609,8 @@ Optional fields:
 - `RuleGroupName`: `str`
 - `RuleGroupArn`: `str`
 - `Type`: [RuleGroupTypeType](./literals.md#rulegrouptypetype)
+
+<a id="describerulegroupresponsetypedef"></a>
 
 ## DescribeRuleGroupResponseTypeDef
 
@@ -559,6 +627,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dimensiontypedef"></a>
+
 ## DimensionTypeDef
 
 ```python
@@ -568,6 +638,8 @@ from mypy_boto3_network_firewall.type_defs import DimensionTypeDef
 Required fields:
 
 - `Value`: `str`
+
+<a id="disassociatesubnetsrequestrequesttypedef"></a>
 
 ## DisassociateSubnetsRequestRequestTypeDef
 
@@ -585,6 +657,8 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 
+<a id="disassociatesubnetsresponsetypedef"></a>
+
 ## DisassociateSubnetsResponseTypeDef
 
 ```python
@@ -601,6 +675,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="firewallmetadatatypedef"></a>
+
 ## FirewallMetadataTypeDef
 
 ```python
@@ -612,6 +688,8 @@ Optional fields:
 - `FirewallName`: `str`
 - `FirewallArn`: `str`
 
+<a id="firewallpolicymetadatatypedef"></a>
+
 ## FirewallPolicyMetadataTypeDef
 
 ```python
@@ -622,6 +700,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
+
+<a id="firewallpolicyresponsetypedef"></a>
 
 ## FirewallPolicyResponseTypeDef
 
@@ -644,6 +724,8 @@ Optional fields:
 - `ConsumedStatelessRuleCapacity`: `int`
 - `ConsumedStatefulRuleCapacity`: `int`
 - `NumberOfAssociations`: `int`
+
+<a id="firewallpolicytypedef"></a>
 
 ## FirewallPolicyTypeDef
 
@@ -668,6 +750,8 @@ Optional fields:
 - `StatefulEngineOptions`:
   [StatefulEngineOptionsTypeDef](./type_defs.md#statefulengineoptionstypedef)
 
+<a id="firewallstatustypedef"></a>
+
 ## FirewallStatusTypeDef
 
 ```python
@@ -684,6 +768,8 @@ Optional fields:
 
 - `SyncStates`: `Dict`\[`str`,
   [SyncStateTypeDef](./type_defs.md#syncstatetypedef)\]
+
+<a id="firewalltypedef"></a>
 
 ## FirewallTypeDef
 
@@ -709,6 +795,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="headertypedef"></a>
+
 ## HeaderTypeDef
 
 ```python
@@ -726,6 +814,8 @@ Required fields:
 - `Destination`: `str`
 - `DestinationPort`: `str`
 
+<a id="ipsettypedef"></a>
+
 ## IPSetTypeDef
 
 ```python
@@ -735,6 +825,8 @@ from mypy_boto3_network_firewall.type_defs import IPSetTypeDef
 Required fields:
 
 - `Definition`: `Sequence`\[`str`\]
+
+<a id="listfirewallpoliciesrequestrequesttypedef"></a>
 
 ## ListFirewallPoliciesRequestRequestTypeDef
 
@@ -746,6 +838,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listfirewallpoliciesresponsetypedef"></a>
 
 ## ListFirewallPoliciesResponseTypeDef
 
@@ -761,6 +855,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfirewallsrequestrequesttypedef"></a>
+
 ## ListFirewallsRequestRequestTypeDef
 
 ```python
@@ -772,6 +868,8 @@ Optional fields:
 - `NextToken`: `str`
 - `VpcIds`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
+
+<a id="listfirewallsresponsetypedef"></a>
 
 ## ListFirewallsResponseTypeDef
 
@@ -787,6 +885,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulegroupsrequestrequesttypedef"></a>
+
 ## ListRuleGroupsRequestRequestTypeDef
 
 ```python
@@ -798,6 +898,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Scope`: [ResourceManagedStatusType](./literals.md#resourcemanagedstatustype)
+
+<a id="listrulegroupsresponsetypedef"></a>
 
 ## ListRuleGroupsResponseTypeDef
 
@@ -812,6 +914,8 @@ Required fields:
   `List`\[[RuleGroupMetadataTypeDef](./type_defs.md#rulegroupmetadatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -828,6 +932,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -840,6 +946,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="logdestinationconfigtypedef"></a>
 
 ## LogDestinationConfigTypeDef
 
@@ -854,6 +962,8 @@ Required fields:
   [LogDestinationTypeType](./literals.md#logdestinationtypetype)
 - `LogDestination`: `Dict`\[`str`, `str`\]
 
+<a id="loggingconfigurationtypedef"></a>
+
 ## LoggingConfigurationTypeDef
 
 ```python
@@ -864,6 +974,8 @@ Required fields:
 
 - `LogDestinationConfigs`:
   `List`\[[LogDestinationConfigTypeDef](./type_defs.md#logdestinationconfigtypedef)\]
+
+<a id="matchattributestypedef"></a>
 
 ## MatchAttributesTypeDef
 
@@ -883,6 +995,8 @@ Optional fields:
 - `TCPFlags`:
   `Sequence`\[[TCPFlagFieldTypeDef](./type_defs.md#tcpflagfieldtypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -894,6 +1008,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="perobjectstatustypedef"></a>
 
 ## PerObjectStatusTypeDef
 
@@ -907,6 +1023,8 @@ Optional fields:
   [PerObjectSyncStatusType](./literals.md#perobjectsyncstatustype)
 - `UpdateToken`: `str`
 
+<a id="portrangetypedef"></a>
+
 ## PortRangeTypeDef
 
 ```python
@@ -918,6 +1036,8 @@ Required fields:
 - `FromPort`: `int`
 - `ToPort`: `int`
 
+<a id="portsettypedef"></a>
+
 ## PortSetTypeDef
 
 ```python
@@ -927,6 +1047,8 @@ from mypy_boto3_network_firewall.type_defs import PortSetTypeDef
 Optional fields:
 
 - `Definition`: `Sequence`\[`str`\]
+
+<a id="publishmetricactiontypedef"></a>
 
 ## PublishMetricActionTypeDef
 
@@ -939,6 +1061,8 @@ Required fields:
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
+<a id="putresourcepolicyrequestrequesttypedef"></a>
+
 ## PutResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -949,6 +1073,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Policy`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -964,6 +1090,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="ruledefinitiontypedef"></a>
+
 ## RuleDefinitionTypeDef
 
 ```python
@@ -976,6 +1104,8 @@ Required fields:
   [MatchAttributesTypeDef](./type_defs.md#matchattributestypedef)
 - `Actions`: `Sequence`\[`str`\]
 
+<a id="rulegroupmetadatatypedef"></a>
+
 ## RuleGroupMetadataTypeDef
 
 ```python
@@ -986,6 +1116,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
+
+<a id="rulegroupresponsetypedef"></a>
 
 ## RuleGroupResponseTypeDef
 
@@ -1009,6 +1141,8 @@ Optional fields:
 - `ConsumedCapacity`: `int`
 - `NumberOfAssociations`: `int`
 
+<a id="rulegrouptypedef"></a>
+
 ## RuleGroupTypeDef
 
 ```python
@@ -1025,6 +1159,8 @@ Optional fields:
 - `StatefulRuleOptions`:
   [StatefulRuleOptionsTypeDef](./type_defs.md#statefulruleoptionstypedef)
 
+<a id="ruleoptiontypedef"></a>
+
 ## RuleOptionTypeDef
 
 ```python
@@ -1039,6 +1175,8 @@ Optional fields:
 
 - `Settings`: `Sequence`\[`str`\]
 
+<a id="rulevariablestypedef"></a>
+
 ## RuleVariablesTypeDef
 
 ```python
@@ -1050,6 +1188,8 @@ Optional fields:
 - `IPSets`: `Mapping`\[`str`, [IPSetTypeDef](./type_defs.md#ipsettypedef)\]
 - `PortSets`: `Mapping`\[`str`,
   [PortSetTypeDef](./type_defs.md#portsettypedef)\]
+
+<a id="rulessourcelisttypedef"></a>
 
 ## RulesSourceListTypeDef
 
@@ -1063,6 +1203,8 @@ Required fields:
 - `TargetTypes`: `Sequence`\[[TargetTypeType](./literals.md#targettypetype)\]
 - `GeneratedRulesType`:
   [GeneratedRulesTypeType](./literals.md#generatedrulestypetype)
+
+<a id="rulessourcetypedef"></a>
 
 ## RulesSourceTypeDef
 
@@ -1080,6 +1222,8 @@ Optional fields:
 - `StatelessRulesAndCustomActions`:
   [StatelessRulesAndCustomActionsTypeDef](./type_defs.md#statelessrulesandcustomactionstypedef)
 
+<a id="statefulengineoptionstypedef"></a>
+
 ## StatefulEngineOptionsTypeDef
 
 ```python
@@ -1089,6 +1233,8 @@ from mypy_boto3_network_firewall.type_defs import StatefulEngineOptionsTypeDef
 Optional fields:
 
 - `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
+
+<a id="statefulrulegroupoverridetypedef"></a>
 
 ## StatefulRuleGroupOverrideTypeDef
 
@@ -1100,6 +1246,8 @@ Optional fields:
 
 - `Action`: `Literal['DROP_TO_ALERT']` (see
   [OverrideActionType](./literals.md#overrideactiontype))
+
+<a id="statefulrulegroupreferencetypedef"></a>
 
 ## StatefulRuleGroupReferenceTypeDef
 
@@ -1117,6 +1265,8 @@ Optional fields:
 - `Override`:
   [StatefulRuleGroupOverrideTypeDef](./type_defs.md#statefulrulegroupoverridetypedef)
 
+<a id="statefulruleoptionstypedef"></a>
+
 ## StatefulRuleOptionsTypeDef
 
 ```python
@@ -1126,6 +1276,8 @@ from mypy_boto3_network_firewall.type_defs import StatefulRuleOptionsTypeDef
 Optional fields:
 
 - `RuleOrder`: [RuleOrderType](./literals.md#ruleordertype)
+
+<a id="statefulruletypedef"></a>
 
 ## StatefulRuleTypeDef
 
@@ -1140,6 +1292,8 @@ Required fields:
 - `RuleOptions`:
   `Sequence`\[[RuleOptionTypeDef](./type_defs.md#ruleoptiontypedef)\]
 
+<a id="statelessrulegroupreferencetypedef"></a>
+
 ## StatelessRuleGroupReferenceTypeDef
 
 ```python
@@ -1150,6 +1304,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Priority`: `int`
+
+<a id="statelessruletypedef"></a>
 
 ## StatelessRuleTypeDef
 
@@ -1162,6 +1318,8 @@ Required fields:
 - `RuleDefinition`:
   [RuleDefinitionTypeDef](./type_defs.md#ruledefinitiontypedef)
 - `Priority`: `int`
+
+<a id="statelessrulesandcustomactionstypedef"></a>
 
 ## StatelessRulesAndCustomActionsTypeDef
 
@@ -1179,6 +1337,8 @@ Optional fields:
 - `CustomActions`:
   `Sequence`\[[CustomActionTypeDef](./type_defs.md#customactiontypedef)\]
 
+<a id="subnetmappingtypedef"></a>
+
 ## SubnetMappingTypeDef
 
 ```python
@@ -1188,6 +1348,8 @@ from mypy_boto3_network_firewall.type_defs import SubnetMappingTypeDef
 Required fields:
 
 - `SubnetId`: `str`
+
+<a id="syncstatetypedef"></a>
 
 ## SyncStateTypeDef
 
@@ -1200,6 +1362,8 @@ Optional fields:
 - `Attachment`: [AttachmentTypeDef](./type_defs.md#attachmenttypedef)
 - `Config`: `Dict`\[`str`,
   [PerObjectStatusTypeDef](./type_defs.md#perobjectstatustypedef)\]
+
+<a id="tcpflagfieldtypedef"></a>
 
 ## TCPFlagFieldTypeDef
 
@@ -1215,6 +1379,8 @@ Optional fields:
 
 - `Masks`: `Sequence`\[[TCPFlagType](./literals.md#tcpflagtype)\]
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1225,6 +1391,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1237,6 +1405,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1247,6 +1417,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatefirewalldeleteprotectionrequestrequesttypedef"></a>
 
 ## UpdateFirewallDeleteProtectionRequestRequestTypeDef
 
@@ -1264,6 +1436,8 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 
+<a id="updatefirewalldeleteprotectionresponsetypedef"></a>
+
 ## UpdateFirewallDeleteProtectionResponseTypeDef
 
 ```python
@@ -1279,6 +1453,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatefirewalldescriptionrequestrequesttypedef"></a>
+
 ## UpdateFirewallDescriptionRequestRequestTypeDef
 
 ```python
@@ -1291,6 +1467,8 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 - `Description`: `str`
+
+<a id="updatefirewalldescriptionresponsetypedef"></a>
 
 ## UpdateFirewallDescriptionResponseTypeDef
 
@@ -1306,6 +1484,8 @@ Required fields:
 - `UpdateToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefirewallpolicychangeprotectionrequestrequesttypedef"></a>
 
 ## UpdateFirewallPolicyChangeProtectionRequestRequestTypeDef
 
@@ -1323,6 +1503,8 @@ Optional fields:
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
 
+<a id="updatefirewallpolicychangeprotectionresponsetypedef"></a>
+
 ## UpdateFirewallPolicyChangeProtectionResponseTypeDef
 
 ```python
@@ -1337,6 +1519,8 @@ Required fields:
 - `FirewallPolicyChangeProtection`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefirewallpolicyrequestrequesttypedef"></a>
 
 ## UpdateFirewallPolicyRequestRequestTypeDef
 
@@ -1357,6 +1541,8 @@ Optional fields:
 - `Description`: `str`
 - `DryRun`: `bool`
 
+<a id="updatefirewallpolicyresponsetypedef"></a>
+
 ## UpdateFirewallPolicyResponseTypeDef
 
 ```python
@@ -1371,6 +1557,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateloggingconfigurationrequestrequesttypedef"></a>
+
 ## UpdateLoggingConfigurationRequestRequestTypeDef
 
 ```python
@@ -1383,6 +1571,8 @@ Optional fields:
 - `FirewallName`: `str`
 - `LoggingConfiguration`:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
+
+<a id="updateloggingconfigurationresponsetypedef"></a>
 
 ## UpdateLoggingConfigurationResponseTypeDef
 
@@ -1398,6 +1588,8 @@ Required fields:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterulegrouprequestrequesttypedef"></a>
 
 ## UpdateRuleGroupRequestRequestTypeDef
 
@@ -1419,6 +1611,8 @@ Optional fields:
 - `Description`: `str`
 - `DryRun`: `bool`
 
+<a id="updaterulegroupresponsetypedef"></a>
+
 ## UpdateRuleGroupResponseTypeDef
 
 ```python
@@ -1432,6 +1626,8 @@ Required fields:
   [RuleGroupResponseTypeDef](./type_defs.md#rulegroupresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesubnetchangeprotectionrequestrequesttypedef"></a>
 
 ## UpdateSubnetChangeProtectionRequestRequestTypeDef
 
@@ -1448,6 +1644,8 @@ Optional fields:
 - `UpdateToken`: `str`
 - `FirewallArn`: `str`
 - `FirewallName`: `str`
+
+<a id="updatesubnetchangeprotectionresponsetypedef"></a>
 
 ## UpdateSubnetChangeProtectionResponseTypeDef
 

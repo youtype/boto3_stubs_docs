@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-pi-module"></a>
+
 # Typed dictionaries for boto3 PI module
 
 > [Index](..) > [PI](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
 type annotations stubs module
-[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 - [Typed dictionaries for boto3 PI module](#typed-dictionaries-for-boto3-pi-module)
   - [DataPointTypeDef](#datapointtypedef)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [ResponseResourceMetricKeyTypeDef](#responseresourcemetrickeytypedef)
   - [ResponseResourceMetricTypeDef](#responseresourcemetrictypedef)
 
+<a id="datapointtypedef"></a>
+
 ## DataPointTypeDef
 
 ```python
@@ -45,6 +49,8 @@ Required fields:
 
 - `Timestamp`: `datetime`
 - `Value`: `float`
+
+<a id="describedimensionkeysrequestrequesttypedef"></a>
 
 ## DescribeDimensionKeysRequestRequestTypeDef
 
@@ -70,6 +76,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describedimensionkeysresponsetypedef"></a>
+
 ## DescribeDimensionKeysResponseTypeDef
 
 ```python
@@ -88,6 +96,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dimensiondetailtypedef"></a>
+
 ## DimensionDetailTypeDef
 
 ```python
@@ -97,6 +107,8 @@ from mypy_boto3_pi.type_defs import DimensionDetailTypeDef
 Optional fields:
 
 - `Identifier`: `str`
+
+<a id="dimensiongroupdetailtypedef"></a>
 
 ## DimensionGroupDetailTypeDef
 
@@ -109,6 +121,8 @@ Optional fields:
 - `Group`: `str`
 - `Dimensions`:
   `List`\[[DimensionDetailTypeDef](./type_defs.md#dimensiondetailtypedef)\]
+
+<a id="dimensiongrouptypedef"></a>
 
 ## DimensionGroupTypeDef
 
@@ -125,6 +139,8 @@ Optional fields:
 - `Dimensions`: `Sequence`\[`str`\]
 - `Limit`: `int`
 
+<a id="dimensionkeydescriptiontypedef"></a>
+
 ## DimensionKeyDescriptionTypeDef
 
 ```python
@@ -138,6 +154,8 @@ Optional fields:
 - `AdditionalMetrics`: `Dict`\[`str`, `float`\]
 - `Partitions`: `List`\[`float`\]
 
+<a id="dimensionkeydetailtypedef"></a>
+
 ## DimensionKeyDetailTypeDef
 
 ```python
@@ -150,6 +168,8 @@ Optional fields:
 - `Dimension`: `str`
 - `Status`: [DetailStatusType](./literals.md#detailstatustype)
 
+<a id="featuremetadatatypedef"></a>
+
 ## FeatureMetadataTypeDef
 
 ```python
@@ -159,6 +179,8 @@ from mypy_boto3_pi.type_defs import FeatureMetadataTypeDef
 Optional fields:
 
 - `Status`: [FeatureStatusType](./literals.md#featurestatustype)
+
+<a id="getdimensionkeydetailsrequestrequesttypedef"></a>
 
 ## GetDimensionKeyDetailsRequestRequestTypeDef
 
@@ -177,6 +199,8 @@ Optional fields:
 
 - `RequestedDimensions`: `Sequence`\[`str`\]
 
+<a id="getdimensionkeydetailsresponsetypedef"></a>
+
 ## GetDimensionKeyDetailsResponseTypeDef
 
 ```python
@@ -190,6 +214,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcemetadatarequestrequesttypedef"></a>
+
 ## GetResourceMetadataRequestRequestTypeDef
 
 ```python
@@ -200,6 +226,8 @@ Required fields:
 
 - `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype)
 - `Identifier`: `str`
+
+<a id="getresourcemetadataresponsetypedef"></a>
 
 ## GetResourceMetadataResponseTypeDef
 
@@ -214,6 +242,8 @@ Required fields:
   [FeatureMetadataTypeDef](./type_defs.md#featuremetadatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourcemetricsrequestrequesttypedef"></a>
 
 ## GetResourceMetricsRequestRequestTypeDef
 
@@ -236,6 +266,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getresourcemetricsresponsetypedef"></a>
+
 ## GetResourceMetricsResponseTypeDef
 
 ```python
@@ -252,6 +284,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listavailableresourcedimensionsrequestrequesttypedef"></a>
 
 ## ListAvailableResourceDimensionsRequestRequestTypeDef
 
@@ -270,6 +304,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listavailableresourcedimensionsresponsetypedef"></a>
+
 ## ListAvailableResourceDimensionsResponseTypeDef
 
 ```python
@@ -283,6 +319,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listavailableresourcemetricsrequestrequesttypedef"></a>
 
 ## ListAvailableResourceMetricsRequestRequestTypeDef
 
@@ -301,6 +339,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listavailableresourcemetricsresponsetypedef"></a>
+
 ## ListAvailableResourceMetricsResponseTypeDef
 
 ```python
@@ -315,6 +355,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricdimensiongroupstypedef"></a>
+
 ## MetricDimensionGroupsTypeDef
 
 ```python
@@ -327,6 +369,8 @@ Optional fields:
 - `Groups`:
   `List`\[[DimensionGroupDetailTypeDef](./type_defs.md#dimensiongroupdetailtypedef)\]
 
+<a id="metrickeydatapointstypedef"></a>
+
 ## MetricKeyDataPointsTypeDef
 
 ```python
@@ -338,6 +382,8 @@ Optional fields:
 - `Key`:
   [ResponseResourceMetricKeyTypeDef](./type_defs.md#responseresourcemetrickeytypedef)
 - `DataPoints`: `List`\[[DataPointTypeDef](./type_defs.md#datapointtypedef)\]
+
+<a id="metricquerytypedef"></a>
 
 ## MetricQueryTypeDef
 
@@ -354,6 +400,8 @@ Optional fields:
 - `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - `Filter`: `Mapping`\[`str`, `str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -368,6 +416,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="responsepartitionkeytypedef"></a>
+
 ## ResponsePartitionKeyTypeDef
 
 ```python
@@ -377,6 +427,8 @@ from mypy_boto3_pi.type_defs import ResponsePartitionKeyTypeDef
 Required fields:
 
 - `Dimensions`: `Dict`\[`str`, `str`\]
+
+<a id="responseresourcemetrickeytypedef"></a>
 
 ## ResponseResourceMetricKeyTypeDef
 
@@ -391,6 +443,8 @@ Required fields:
 Optional fields:
 
 - `Dimensions`: `Dict`\[`str`, `str`\]
+
+<a id="responseresourcemetrictypedef"></a>
 
 ## ResponseResourceMetricTypeDef
 

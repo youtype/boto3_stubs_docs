@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-autoscalingplans-module"></a>
+
 # Paginators for boto3 AutoScalingPlans module
 
 > [Index](..) > [AutoScalingPlans](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
-[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 - [Paginators for boto3 AutoScalingPlans module](#paginators-for-boto3-autoscalingplans-module)
   - [DescribeScalingPlanResourcesPaginator](#describescalingplanresourcespaginator)
   - [DescribeScalingPlansPaginator](#describescalingplanspaginator)
+
+<a id="describescalingplanresourcespaginator"></a>
 
 ## DescribeScalingPlanResourcesPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlanResourcesPaginator
 
 def get_describe_scaling_plan_resources_paginator() -> DescribeScalingPlanResourcesPaginator:
-    return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")
+    return Session().client("autoscaling-plans").get_paginator("describe_scaling_plan_resources")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `DescribeScalingPlanResourcesPaginator.paginate` method:
 `DescribeScalingPlanResourcesPaginator.paginate` returns
 `_PageIterator`\[[DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef)\].
 
+<a id="describescalingplanspaginator"></a>
+
 ## DescribeScalingPlansPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlansPaginator
 
 def get_describe_scaling_plans_paginator() -> DescribeScalingPlansPaginator:
-    return boto3.client("autoscaling-plans").get_paginator("describe_scaling_plans")
+    return Session().client("autoscaling-plans").get_paginator("describe_scaling_plans")
 ```
 
 Boto3 documentation:

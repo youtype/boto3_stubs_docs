@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-pinpoint-module"></a>
+
 # Type annotations for boto3 Pinpoint module
 
 > [Index](..) > Pinpoint
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
-[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+[mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[pinpoint]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[pinpoint]'
+
+# standalone installation
 pip install mypy-boto3-pinpoint
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-pinpoint
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="pinpointclient"></a>
 
 ## PinpointClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_pinpoint.client import PinpointClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -154,6 +168,8 @@ from mypy_boto3_pinpoint.client import PinpointClient
 - [update_voice_template](./client.md#update_voice_template)
 - [verify_otp_message](./client.md#verify_otp_message)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PinpointClient [exceptions](./client.md#exceptions)
@@ -167,6 +183,8 @@ PinpointClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - PayloadTooLargeException
 - TooManyRequestsException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -204,6 +222,8 @@ from mypy_boto3_pinpoint.literals import ActionType, ...
 - [TemplateTypeType](./literals.md#templatetypetype)
 - [TypeType](./literals.md#typetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

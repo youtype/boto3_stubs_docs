@@ -1,3 +1,5 @@
+<a id="guarddutyclient-for-boto3-guardduty-module"></a>
+
 # GuardDutyClient for boto3 GuardDuty module
 
 > [Index](..) > [GuardDuty](.) > GuardDutyClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
-[mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+[mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 - [GuardDutyClient for boto3 GuardDuty module](#guarddutyclient-for-boto3-guardduty-module)
   - [GuardDutyClient](#guarddutyclient)
@@ -74,6 +76,8 @@ type annotations stubs module
     - [update_threat_intel_set](#update_threat_intel_set)
     - [get_paginator](#get_paginator)
 
+<a id="guarddutyclient"></a>
+
 ## GuardDutyClient
 
 Type annotations for `boto3.client("guardduty")`
@@ -81,14 +85,17 @@ Type annotations for `boto3.client("guardduty")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_guardduty.client import GuardDutyClient
 
 def get_guardduty_client() -> GuardDutyClient:
-    return boto3.client("guardduty")
+    return Session().client("guardduty")
 ```
 
 Boto3 documentation:
 [GuardDuty.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -108,7 +115,11 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.InternalServerErrorException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -120,6 +131,8 @@ Boto3 documentation:
 [GuardDuty.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_invitation"></a>
 
 ### accept_invitation
 
@@ -141,6 +154,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="archive_findings"></a>
+
 ### archive_findings
 
 Archives GuardDuty findings that are specified by the list of finding IDs.
@@ -160,6 +175,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -174,6 +191,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_detector"></a>
 
 ### create_detector
 
@@ -199,6 +218,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDetectorResponseTypeDef](./type_defs.md#createdetectorresponsetypedef).
+
+<a id="create_filter"></a>
 
 ### create_filter
 
@@ -227,6 +248,8 @@ Keyword-only arguments:
 Returns
 [CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
 
+<a id="create_ip_set"></a>
+
 ### create_ip_set
 
 Creates a new IPSet, which is called a trusted IP list in the console user
@@ -253,6 +276,8 @@ Keyword-only arguments:
 Returns
 [CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
 
+<a id="create_members"></a>
+
 ### create_members
 
 .
@@ -274,6 +299,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
+
+<a id="create_publishing_destination"></a>
 
 ### create_publishing_destination
 
@@ -301,6 +328,8 @@ Keyword-only arguments:
 Returns
 [CreatePublishingDestinationResponseTypeDef](./type_defs.md#createpublishingdestinationresponsetypedef).
 
+<a id="create_sample_findings"></a>
+
 ### create_sample_findings
 
 Generates example findings of types specified by the list of finding types.
@@ -319,6 +348,8 @@ Keyword-only arguments:
 - `FindingTypes`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_threat_intel_set"></a>
 
 ### create_threat_intel_set
 
@@ -347,6 +378,8 @@ Keyword-only arguments:
 Returns
 [CreateThreatIntelSetResponseTypeDef](./type_defs.md#createthreatintelsetresponsetypedef).
 
+<a id="decline_invitations"></a>
+
 ### decline_invitations
 
 Declines invitations sent to the current member account by Amazon Web Services
@@ -367,6 +400,8 @@ Keyword-only arguments:
 Returns
 [DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
+<a id="delete_detector"></a>
+
 ### delete_detector
 
 Deletes an Amazon GuardDuty detector that is specified by the detector ID.
@@ -384,6 +419,8 @@ Keyword-only arguments:
 - `DetectorId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_filter"></a>
 
 ### delete_filter
 
@@ -403,6 +440,8 @@ Keyword-only arguments:
 - `FilterName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_invitations"></a>
 
 ### delete_invitations
 
@@ -424,6 +463,8 @@ Keyword-only arguments:
 Returns
 [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
+<a id="delete_ip_set"></a>
+
 ### delete_ip_set
 
 Deletes the IPSet specified by the `ipSetId`.
@@ -442,6 +483,8 @@ Keyword-only arguments:
 - `IpSetId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_members"></a>
 
 ### delete_members
 
@@ -464,6 +507,8 @@ Keyword-only arguments:
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
 
+<a id="delete_publishing_destination"></a>
+
 ### delete_publishing_destination
 
 Deletes the publishing definition with the specified `destinationId` .
@@ -483,6 +528,8 @@ Keyword-only arguments:
 - `DestinationId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_threat_intel_set"></a>
 
 ### delete_threat_intel_set
 
@@ -504,6 +551,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_organization_configuration"></a>
+
 ### describe_organization_configuration
 
 Returns information about the account selected as the delegated administrator
@@ -524,6 +573,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+
+<a id="describe_publishing_destination"></a>
 
 ### describe_publishing_destination
 
@@ -547,6 +598,8 @@ Keyword-only arguments:
 Returns
 [DescribePublishingDestinationResponseTypeDef](./type_defs.md#describepublishingdestinationresponsetypedef).
 
+<a id="disable_organization_admin_account"></a>
+
 ### disable_organization_admin_account
 
 Disables an Amazon Web Services account within the Organization as the
@@ -567,6 +620,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_from_master_account"></a>
+
 ### disassociate_from_master_account
 
 Disassociates the current GuardDuty member account from its administrator
@@ -586,6 +641,8 @@ Keyword-only arguments:
 - `DetectorId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_members"></a>
 
 ### disassociate_members
 
@@ -608,6 +665,8 @@ Keyword-only arguments:
 Returns
 [DisassociateMembersResponseTypeDef](./type_defs.md#disassociatemembersresponsetypedef).
 
+<a id="enable_organization_admin_account"></a>
+
 ### enable_organization_admin_account
 
 Enables an Amazon Web Services account within the organization as the GuardDuty
@@ -628,6 +687,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -645,6 +706,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_detector"></a>
 
 ### get_detector
 
@@ -665,6 +728,8 @@ Keyword-only arguments:
 Returns
 [GetDetectorResponseTypeDef](./type_defs.md#getdetectorresponsetypedef).
 
+<a id="get_filter"></a>
+
 ### get_filter
 
 Returns the details of the filter specified by the filter name.
@@ -683,6 +748,8 @@ Keyword-only arguments:
 - `FilterName`: `str` *(required)*
 
 Returns [GetFilterResponseTypeDef](./type_defs.md#getfilterresponsetypedef).
+
+<a id="get_findings"></a>
 
 ### get_findings
 
@@ -704,6 +771,8 @@ Keyword-only arguments:
 
 Returns
 [GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
+
+<a id="get_findings_statistics"></a>
 
 ### get_findings_statistics
 
@@ -730,6 +799,8 @@ Keyword-only arguments:
 Returns
 [GetFindingsStatisticsResponseTypeDef](./type_defs.md#getfindingsstatisticsresponsetypedef).
 
+<a id="get_invitations_count"></a>
+
 ### get_invitations_count
 
 Returns the count of all GuardDuty membership invitations that were sent to the
@@ -742,6 +813,8 @@ Boto3 documentation:
 
 Returns
 [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
+
+<a id="get_ip_set"></a>
 
 ### get_ip_set
 
@@ -761,6 +834,8 @@ Keyword-only arguments:
 - `IpSetId`: `str` *(required)*
 
 Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+
+<a id="get_master_account"></a>
 
 ### get_master_account
 
@@ -782,6 +857,8 @@ Keyword-only arguments:
 Returns
 [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
 
+<a id="get_member_detectors"></a>
+
 ### get_member_detectors
 
 Describes which data sources are enabled for the member account's detector.
@@ -801,6 +878,8 @@ Keyword-only arguments:
 
 Returns
 [GetMemberDetectorsResponseTypeDef](./type_defs.md#getmemberdetectorsresponsetypedef).
+
+<a id="get_members"></a>
 
 ### get_members
 
@@ -822,6 +901,8 @@ Keyword-only arguments:
 
 Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
+<a id="get_threat_intel_set"></a>
+
 ### get_threat_intel_set
 
 Retrieves the ThreatIntelSet that is specified by the ThreatIntelSet ID.
@@ -841,6 +922,8 @@ Keyword-only arguments:
 
 Returns
 [GetThreatIntelSetResponseTypeDef](./type_defs.md#getthreatintelsetresponsetypedef).
+
+<a id="get_usage_statistics"></a>
 
 ### get_usage_statistics
 
@@ -869,6 +952,8 @@ Keyword-only arguments:
 Returns
 [GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
 
+<a id="invite_members"></a>
+
 ### invite_members
 
 Invites other Amazon Web Services accounts (created as members of the current
@@ -894,6 +979,8 @@ Keyword-only arguments:
 Returns
 [InviteMembersResponseTypeDef](./type_defs.md#invitemembersresponsetypedef).
 
+<a id="list_detectors"></a>
+
 ### list_detectors
 
 Lists detectorIds of all the existing Amazon GuardDuty detector resources.
@@ -913,6 +1000,8 @@ Keyword-only arguments:
 
 Returns
 [ListDetectorsResponseTypeDef](./type_defs.md#listdetectorsresponsetypedef).
+
+<a id="list_filters"></a>
 
 ### list_filters
 
@@ -934,6 +1023,8 @@ Keyword-only arguments:
 
 Returns
 [ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+
+<a id="list_findings"></a>
 
 ### list_findings
 
@@ -959,6 +1050,8 @@ Keyword-only arguments:
 Returns
 [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
+<a id="list_invitations"></a>
+
 ### list_invitations
 
 Lists all GuardDuty membership invitations that were sent to the current Amazon
@@ -980,6 +1073,8 @@ Keyword-only arguments:
 Returns
 [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
+<a id="list_ip_sets"></a>
+
 ### list_ip_sets
 
 Lists the IPSets of the GuardDuty service specified by the detector ID.
@@ -999,6 +1094,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+
+<a id="list_members"></a>
 
 ### list_members
 
@@ -1023,6 +1120,8 @@ Keyword-only arguments:
 Returns
 [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
+<a id="list_organization_admin_accounts"></a>
+
 ### list_organization_admin_accounts
 
 Lists the accounts configured as GuardDuty delegated administrators.
@@ -1043,6 +1142,8 @@ Keyword-only arguments:
 
 Returns
 [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
+
+<a id="list_publishing_destinations"></a>
 
 ### list_publishing_destinations
 
@@ -1067,6 +1168,8 @@ Keyword-only arguments:
 Returns
 [ListPublishingDestinationsResponseTypeDef](./type_defs.md#listpublishingdestinationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists tags for a resource.
@@ -1085,6 +1188,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_threat_intel_sets"></a>
 
 ### list_threat_intel_sets
 
@@ -1108,6 +1213,8 @@ Keyword-only arguments:
 Returns
 [ListThreatIntelSetsResponseTypeDef](./type_defs.md#listthreatintelsetsresponsetypedef).
 
+<a id="start_monitoring_members"></a>
+
 ### start_monitoring_members
 
 Turns on GuardDuty monitoring of the specified member accounts.
@@ -1128,6 +1235,8 @@ Keyword-only arguments:
 
 Returns
 [StartMonitoringMembersResponseTypeDef](./type_defs.md#startmonitoringmembersresponsetypedef).
+
+<a id="stop_monitoring_members"></a>
 
 ### stop_monitoring_members
 
@@ -1150,6 +1259,8 @@ Keyword-only arguments:
 Returns
 [StopMonitoringMembersResponseTypeDef](./type_defs.md#stopmonitoringmembersresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to a resource.
@@ -1168,6 +1279,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="unarchive_findings"></a>
 
 ### unarchive_findings
 
@@ -1188,6 +1301,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -1206,6 +1321,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_detector"></a>
 
 ### update_detector
 
@@ -1229,6 +1346,8 @@ Keyword-only arguments:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_filter"></a>
 
 ### update_filter
 
@@ -1255,6 +1374,8 @@ Keyword-only arguments:
 Returns
 [UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef).
 
+<a id="update_findings_feedback"></a>
+
 ### update_findings_feedback
 
 Marks the specified GuardDuty findings as useful or not useful.
@@ -1277,6 +1398,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_ip_set"></a>
+
 ### update_ip_set
 
 Updates the IPSet specified by the IPSet ID.
@@ -1298,6 +1421,8 @@ Keyword-only arguments:
 - `Activate`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_member_detectors"></a>
 
 ### update_member_detectors
 
@@ -1322,6 +1447,8 @@ Keyword-only arguments:
 Returns
 [UpdateMemberDetectorsResponseTypeDef](./type_defs.md#updatememberdetectorsresponsetypedef).
 
+<a id="update_organization_configuration"></a>
+
 ### update_organization_configuration
 
 Updates the delegated administrator account with the values provided.
@@ -1343,6 +1470,8 @@ Keyword-only arguments:
   [OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_publishing_destination"></a>
 
 ### update_publishing_destination
 
@@ -1367,6 +1496,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_threat_intel_set"></a>
+
 ### update_threat_intel_set
 
 Updates the ThreatIntelSet specified by the ThreatIntelSet ID.
@@ -1389,6 +1520,8 @@ Keyword-only arguments:
 - `Activate`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

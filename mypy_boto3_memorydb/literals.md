@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-memorydb-module"></a>
+
 # Literals for boto3 MemoryDB module
 
 > [Index](..) > [MemoryDB](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
 type annotations stubs module
-[mypy_boto3_memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
+[mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 - [Literals for boto3 MemoryDB module](#literals-for-boto3-memorydb-module)
   - [AZStatusType](#azstatustype)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ServiceUpdateTypeType](#serviceupdatetypetype)
   - [SourceTypeType](#sourcetypetype)
   - [ServiceName](#servicename)
+
+<a id="azstatustype"></a>
 
 ## AZStatusType
 
@@ -27,6 +31,8 @@ Values:
 - `multiaz`
 - `singleaz`
 
+<a id="authenticationtypetype"></a>
+
 ## AuthenticationTypeType
 
 ```python
@@ -38,6 +44,8 @@ Values:
 - `no-password`
 - `password`
 
+<a id="inputauthenticationtypetype"></a>
+
 ## InputAuthenticationTypeType
 
 ```python
@@ -47,6 +55,8 @@ from mypy_boto3_memorydb.literals import InputAuthenticationTypeType
 Values:
 
 - `password`
+
+<a id="serviceupdatestatustype"></a>
 
 ## ServiceUpdateStatusType
 
@@ -61,6 +71,8 @@ Values:
 - `in-progress`
 - `scheduled`
 
+<a id="serviceupdatetypetype"></a>
+
 ## ServiceUpdateTypeType
 
 ```python
@@ -70,6 +82,8 @@ from mypy_boto3_memorydb.literals import ServiceUpdateTypeType
 Values:
 
 - `security-update`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -85,6 +99,8 @@ Values:
 - `parameter-group`
 - `subnet-group`
 - `user`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

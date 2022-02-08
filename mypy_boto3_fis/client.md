@@ -1,3 +1,5 @@
+<a id="fisclient-for-boto3-fis-module"></a>
+
 # FISClient for boto3 FIS module
 
 > [Index](..) > [FIS](.) > FISClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
 type annotations stubs module
-[mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
+[mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
 
 - [FISClient for boto3 FIS module](#fisclient-for-boto3-fis-module)
   - [FISClient](#fisclient)
@@ -31,6 +33,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_experiment_template](#update_experiment_template)
 
+<a id="fisclient"></a>
+
 ## FISClient
 
 Type annotations for `boto3.client("fis")`
@@ -38,14 +42,17 @@ Type annotations for `boto3.client("fis")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_fis.client import FISClient
 
 def get_fis_client() -> FISClient:
-    return boto3.client("fis")
+    return Session().client("fis")
 ```
 
 Boto3 documentation:
 [FIS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -67,7 +74,11 @@ Exceptions:
 - `Exceptions.ServiceQuotaExceededException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -79,6 +90,8 @@ Boto3 documentation:
 [FIS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -94,6 +107,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_experiment_template"></a>
 
 ### create_experiment_template
 
@@ -125,6 +140,8 @@ Keyword-only arguments:
 Returns
 [CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
 
+<a id="delete_experiment_template"></a>
+
 ### delete_experiment_template
 
 Deletes the specified experiment template.
@@ -144,6 +161,8 @@ Keyword-only arguments:
 Returns
 [DeleteExperimentTemplateResponseTypeDef](./type_defs.md#deleteexperimenttemplateresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -162,6 +181,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_action"></a>
+
 ### get_action
 
 Gets information about the specified FIS action.
@@ -179,6 +200,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns [GetActionResponseTypeDef](./type_defs.md#getactionresponsetypedef).
+
+<a id="get_experiment"></a>
 
 ### get_experiment
 
@@ -199,6 +222,8 @@ Keyword-only arguments:
 Returns
 [GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
 
+<a id="get_experiment_template"></a>
+
 ### get_experiment_template
 
 Gets information about the specified experiment template.
@@ -218,6 +243,8 @@ Keyword-only arguments:
 Returns
 [GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
 
+<a id="get_target_resource_type"></a>
+
 ### get_target_resource_type
 
 Gets information about the specified resource type.
@@ -236,6 +263,8 @@ Keyword-only arguments:
 
 Returns
 [GetTargetResourceTypeResponseTypeDef](./type_defs.md#gettargetresourcetyperesponsetypedef).
+
+<a id="list_actions"></a>
 
 ### list_actions
 
@@ -257,6 +286,8 @@ Keyword-only arguments:
 Returns
 [ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
 
+<a id="list_experiment_templates"></a>
+
 ### list_experiment_templates
 
 Lists your experiment templates.
@@ -276,6 +307,8 @@ Keyword-only arguments:
 
 Returns
 [ListExperimentTemplatesResponseTypeDef](./type_defs.md#listexperimenttemplatesresponsetypedef).
+
+<a id="list_experiments"></a>
 
 ### list_experiments
 
@@ -297,6 +330,8 @@ Keyword-only arguments:
 Returns
 [ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for the specified resource.
@@ -315,6 +350,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_target_resource_types"></a>
 
 ### list_target_resource_types
 
@@ -335,6 +372,8 @@ Keyword-only arguments:
 
 Returns
 [ListTargetResourceTypesResponseTypeDef](./type_defs.md#listtargetresourcetypesresponsetypedef).
+
+<a id="start_experiment"></a>
 
 ### start_experiment
 
@@ -357,6 +396,8 @@ Keyword-only arguments:
 Returns
 [StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
 
+<a id="stop_experiment"></a>
+
 ### stop_experiment
 
 Stops the specified experiment.
@@ -375,6 +416,8 @@ Keyword-only arguments:
 
 Returns
 [StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -395,6 +438,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the specified resource.
@@ -413,6 +458,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_experiment_template"></a>
 
 ### update_experiment_template
 

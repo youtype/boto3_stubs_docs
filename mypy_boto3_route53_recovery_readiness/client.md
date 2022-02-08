@@ -1,3 +1,5 @@
+<a id="route53recoveryreadinessclient-for-boto3-route53recoveryreadiness-module"></a>
+
 # Route53RecoveryReadinessClient for boto3 Route53RecoveryReadiness module
 
 > [Index](..) > [Route53RecoveryReadiness](.) > Route53RecoveryReadinessClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
 type annotations stubs module
-[mypy_boto3_route53_recovery_readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
+[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 - [Route53RecoveryReadinessClient for boto3 Route53RecoveryReadiness module](#route53recoveryreadinessclient-for-boto3-route53recoveryreadiness-module)
   - [Route53RecoveryReadinessClient](#route53recoveryreadinessclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [update_resource_set](#update_resource_set)
     - [get_paginator](#get_paginator)
 
+<a id="route53recoveryreadinessclient"></a>
+
 ## Route53RecoveryReadinessClient
 
 Type annotations for `boto3.client("route53-recovery-readiness")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("route53-recovery-readiness")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_route53_recovery_readiness.client import Route53RecoveryReadinessClient
 
 def get_route53-recovery-readiness_client() -> Route53RecoveryReadinessClient:
-    return boto3.client("route53-recovery-readiness")
+    return Session().client("route53-recovery-readiness")
 ```
 
 Boto3 documentation:
 [Route53RecoveryReadiness.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -99,6 +110,8 @@ Boto3 documentation:
 [Route53RecoveryReadiness.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -115,6 +128,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_cell"></a>
 
 ### create_cell
 
@@ -137,6 +152,8 @@ Keyword-only arguments:
 
 Returns [CreateCellResponseTypeDef](./type_defs.md#createcellresponsetypedef).
 
+<a id="create_cross_account_authorization"></a>
+
 ### create_cross_account_authorization
 
 Creates a cross-account readiness authorization.
@@ -157,6 +174,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCrossAccountAuthorizationResponseTypeDef](./type_defs.md#createcrossaccountauthorizationresponsetypedef).
+
+<a id="create_readiness_check"></a>
 
 ### create_readiness_check
 
@@ -180,6 +199,8 @@ Keyword-only arguments:
 Returns
 [CreateReadinessCheckResponseTypeDef](./type_defs.md#createreadinesscheckresponsetypedef).
 
+<a id="create_recovery_group"></a>
+
 ### create_recovery_group
 
 Creates a recovery group in an account.
@@ -201,6 +222,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRecoveryGroupResponseTypeDef](./type_defs.md#createrecoverygroupresponsetypedef).
+
+<a id="create_resource_set"></a>
 
 ### create_resource_set
 
@@ -226,6 +249,8 @@ Keyword-only arguments:
 Returns
 [CreateResourceSetResponseTypeDef](./type_defs.md#createresourcesetresponsetypedef).
 
+<a id="delete_cell"></a>
+
 ### delete_cell
 
 Delete a cell.
@@ -242,6 +267,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CellName`: `str` *(required)*
+
+<a id="delete_cross_account_authorization"></a>
 
 ### delete_cross_account_authorization
 
@@ -263,6 +290,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_readiness_check"></a>
+
 ### delete_readiness_check
 
 Deletes a readiness check.
@@ -279,6 +308,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReadinessCheckName`: `str` *(required)*
+
+<a id="delete_recovery_group"></a>
 
 ### delete_recovery_group
 
@@ -297,6 +328,8 @@ Keyword-only arguments:
 
 - `RecoveryGroupName`: `str` *(required)*
 
+<a id="delete_resource_set"></a>
+
 ### delete_resource_set
 
 Deletes a resource set.
@@ -313,6 +346,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceSetName`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -332,6 +367,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_architecture_recommendations"></a>
 
 ### get_architecture_recommendations
 
@@ -357,6 +394,8 @@ Keyword-only arguments:
 Returns
 [GetArchitectureRecommendationsResponseTypeDef](./type_defs.md#getarchitecturerecommendationsresponsetypedef).
 
+<a id="get_cell"></a>
+
 ### get_cell
 
 Gets information about a cell including cell name, cell Amazon Resource Name
@@ -377,6 +416,8 @@ Keyword-only arguments:
 - `CellName`: `str` *(required)*
 
 Returns [GetCellResponseTypeDef](./type_defs.md#getcellresponsetypedef).
+
+<a id="get_cell_readiness_summary"></a>
 
 ### get_cell_readiness_summary
 
@@ -400,6 +441,8 @@ Keyword-only arguments:
 Returns
 [GetCellReadinessSummaryResponseTypeDef](./type_defs.md#getcellreadinesssummaryresponsetypedef).
 
+<a id="get_readiness_check"></a>
+
 ### get_readiness_check
 
 Gets details about a readiness check.
@@ -419,6 +462,8 @@ Keyword-only arguments:
 
 Returns
 [GetReadinessCheckResponseTypeDef](./type_defs.md#getreadinesscheckresponsetypedef).
+
+<a id="get_readiness_check_resource_status"></a>
 
 ### get_readiness_check_resource_status
 
@@ -444,6 +489,8 @@ Keyword-only arguments:
 Returns
 [GetReadinessCheckResourceStatusResponseTypeDef](./type_defs.md#getreadinesscheckresourcestatusresponsetypedef).
 
+<a id="get_readiness_check_status"></a>
+
 ### get_readiness_check_status
 
 Gets the readiness status for an individual readiness check.
@@ -466,6 +513,8 @@ Keyword-only arguments:
 Returns
 [GetReadinessCheckStatusResponseTypeDef](./type_defs.md#getreadinesscheckstatusresponsetypedef).
 
+<a id="get_recovery_group"></a>
+
 ### get_recovery_group
 
 Gets details about a recovery group, including a list of the cells that are
@@ -486,6 +535,8 @@ Keyword-only arguments:
 
 Returns
 [GetRecoveryGroupResponseTypeDef](./type_defs.md#getrecoverygroupresponsetypedef).
+
+<a id="get_recovery_group_readiness_summary"></a>
 
 ### get_recovery_group_readiness_summary
 
@@ -510,6 +561,8 @@ Keyword-only arguments:
 Returns
 [GetRecoveryGroupReadinessSummaryResponseTypeDef](./type_defs.md#getrecoverygroupreadinesssummaryresponsetypedef).
 
+<a id="get_resource_set"></a>
+
 ### get_resource_set
 
 Displays the details about a resource set, including a list of the resources in
@@ -531,6 +584,8 @@ Keyword-only arguments:
 Returns
 [GetResourceSetResponseTypeDef](./type_defs.md#getresourcesetresponsetypedef).
 
+<a id="list_cells"></a>
+
 ### list_cells
 
 Lists the cells for an account.
@@ -550,6 +605,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef).
+
+<a id="list_cross_account_authorizations"></a>
 
 ### list_cross_account_authorizations
 
@@ -574,6 +631,8 @@ Keyword-only arguments:
 Returns
 [ListCrossAccountAuthorizationsResponseTypeDef](./type_defs.md#listcrossaccountauthorizationsresponsetypedef).
 
+<a id="list_readiness_checks"></a>
+
 ### list_readiness_checks
 
 Lists the readiness checks for an account.
@@ -594,6 +653,8 @@ Keyword-only arguments:
 
 Returns
 [ListReadinessChecksResponseTypeDef](./type_defs.md#listreadinesschecksresponsetypedef).
+
+<a id="list_recovery_groups"></a>
 
 ### list_recovery_groups
 
@@ -616,6 +677,8 @@ Keyword-only arguments:
 Returns
 [ListRecoveryGroupsResponseTypeDef](./type_defs.md#listrecoverygroupsresponsetypedef).
 
+<a id="list_resource_sets"></a>
+
 ### list_resource_sets
 
 Lists the resource sets in an account.
@@ -636,6 +699,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourceSetsResponseTypeDef](./type_defs.md#listresourcesetsresponsetypedef).
+
+<a id="list_rules"></a>
 
 ### list_rules
 
@@ -659,6 +724,8 @@ Keyword-only arguments:
 
 Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
+<a id="list_tags_for_resources"></a>
+
 ### list_tags_for_resources
 
 Lists the tags for a resource.
@@ -678,6 +745,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourcesResponseTypeDef](./type_defs.md#listtagsforresourcesresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -699,6 +768,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from a resource.
@@ -716,6 +787,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_cell"></a>
 
 ### update_cell
 
@@ -738,6 +811,8 @@ Keyword-only arguments:
 
 Returns [UpdateCellResponseTypeDef](./type_defs.md#updatecellresponsetypedef).
 
+<a id="update_readiness_check"></a>
+
 ### update_readiness_check
 
 Updates a readiness check.
@@ -759,6 +834,8 @@ Keyword-only arguments:
 Returns
 [UpdateReadinessCheckResponseTypeDef](./type_defs.md#updatereadinesscheckresponsetypedef).
 
+<a id="update_recovery_group"></a>
+
 ### update_recovery_group
 
 Updates a recovery group.
@@ -779,6 +856,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRecoveryGroupResponseTypeDef](./type_defs.md#updaterecoverygroupresponsetypedef).
+
+<a id="update_resource_set"></a>
 
 ### update_resource_set
 
@@ -802,6 +881,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateResourceSetResponseTypeDef](./type_defs.md#updateresourcesetresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

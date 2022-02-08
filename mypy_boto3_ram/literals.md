@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ram-module"></a>
+
 # Literals for boto3 RAM module
 
 > [Index](..) > [RAM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ram.html#RAM)
 type annotations stubs module
-[mypy_boto3_ram](https://pypi.org/project/mypy-boto3-ram/).
+[mypy-boto3-ram](https://pypi.org/project/mypy-boto3-ram/).
 
 - [Literals for boto3 RAM module](#literals-for-boto3-ram-module)
   - [GetResourcePoliciesPaginatorName](#getresourcepoliciespaginatorname)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="getresourcepoliciespaginatorname"></a>
+
 ## GetResourcePoliciesPaginatorName
 
 ```python
@@ -35,6 +39,8 @@ from mypy_boto3_ram.literals import GetResourcePoliciesPaginatorName
 Values:
 
 - `get_resource_policies`
+
+<a id="getresourceshareassociationspaginatorname"></a>
 
 ## GetResourceShareAssociationsPaginatorName
 
@@ -46,6 +52,8 @@ Values:
 
 - `get_resource_share_associations`
 
+<a id="getresourceshareinvitationspaginatorname"></a>
+
 ## GetResourceShareInvitationsPaginatorName
 
 ```python
@@ -55,6 +63,8 @@ from mypy_boto3_ram.literals import GetResourceShareInvitationsPaginatorName
 Values:
 
 - `get_resource_share_invitations`
+
+<a id="getresourcesharespaginatorname"></a>
 
 ## GetResourceSharesPaginatorName
 
@@ -66,6 +76,8 @@ Values:
 
 - `get_resource_shares`
 
+<a id="listprincipalspaginatorname"></a>
+
 ## ListPrincipalsPaginatorName
 
 ```python
@@ -75,6 +87,8 @@ from mypy_boto3_ram.literals import ListPrincipalsPaginatorName
 Values:
 
 - `list_principals`
+
+<a id="listresourcespaginatorname"></a>
 
 ## ListResourcesPaginatorName
 
@@ -86,6 +100,8 @@ Values:
 
 - `list_resources`
 
+<a id="resourceownertype"></a>
+
 ## ResourceOwnerType
 
 ```python
@@ -96,6 +112,8 @@ Values:
 
 - `OTHER-ACCOUNTS`
 - `SELF`
+
+<a id="resourceregionscopefiltertype"></a>
 
 ## ResourceRegionScopeFilterType
 
@@ -109,6 +127,8 @@ Values:
 - `GLOBAL`
 - `REGIONAL`
 
+<a id="resourceregionscopetype"></a>
+
 ## ResourceRegionScopeType
 
 ```python
@@ -119,6 +139,8 @@ Values:
 
 - `GLOBAL`
 - `REGIONAL`
+
+<a id="resourceshareassociationstatustype"></a>
 
 ## ResourceShareAssociationStatusType
 
@@ -134,6 +156,8 @@ Values:
 - `DISASSOCIATING`
 - `FAILED`
 
+<a id="resourceshareassociationtypetype"></a>
+
 ## ResourceShareAssociationTypeType
 
 ```python
@@ -144,6 +168,8 @@ Values:
 
 - `PRINCIPAL`
 - `RESOURCE`
+
+<a id="resourcesharefeaturesettype"></a>
 
 ## ResourceShareFeatureSetType
 
@@ -157,6 +183,8 @@ Values:
 - `PROMOTING_TO_STANDARD`
 - `STANDARD`
 
+<a id="resourceshareinvitationstatustype"></a>
+
 ## ResourceShareInvitationStatusType
 
 ```python
@@ -169,6 +197,8 @@ Values:
 - `EXPIRED`
 - `PENDING`
 - `REJECTED`
+
+<a id="resourcesharestatustype"></a>
 
 ## ResourceShareStatusType
 
@@ -184,6 +214,8 @@ Values:
 - `FAILED`
 - `PENDING`
 
+<a id="resourcestatustype"></a>
+
 ## ResourceStatusType
 
 ```python
@@ -197,6 +229,8 @@ Values:
 - `PENDING`
 - `UNAVAILABLE`
 - `ZONAL_RESOURCE_INACCESSIBLE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -505,6 +539,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

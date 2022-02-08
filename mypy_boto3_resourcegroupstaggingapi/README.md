@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-resourcegroupstaggingapi-module"></a>
+
 # Type annotations for boto3 ResourceGroupsTaggingAPI module
 
 > [Index](..) > ResourceGroupsTaggingAPI
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
-[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+[mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[resourcegroupstaggingapi]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[resourcegroupstaggingapi]'
+
+# standalone installation
 pip install mypy-boto3-resourcegroupstaggingapi
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-resourcegroupstaggingapi
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="resourcegroupstaggingapiclient"></a>
+
 ## ResourceGroupsTaggingAPIClient
 
 Type annotations for `boto3.client("resourcegroupstaggingapi")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -45,6 +59,8 @@ from mypy_boto3_resourcegroupstaggingapi.client import ResourceGroupsTaggingAPIC
 - [tag_resources](./client.md#tag_resources)
 - [untag_resources](./client.md#untag_resources)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
@@ -57,6 +73,8 @@ ResourceGroupsTaggingAPIClient [exceptions](./client.md#exceptions)
 - PaginationTokenExpiredException
 - ThrottledException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -65,13 +83,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_resourcegroupstaggingapi.paginators import GetComplianceSummaryPaginator, ...
+from mypy_boto3_resourcegroupstaggingapi.paginator import GetComplianceSummaryPaginator, ...
 ```
 
 - [GetComplianceSummaryPaginator](./paginators.md#getcompliancesummarypaginator)
 - [GetResourcesPaginator](./paginators.md#getresourcespaginator)
 - [GetTagKeysPaginator](./paginators.md#gettagkeyspaginator)
 - [GetTagValuesPaginator](./paginators.md#gettagvaluespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -92,6 +112,8 @@ from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCodeType, ...
 - [TargetIdTypeType](./literals.md#targetidtypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

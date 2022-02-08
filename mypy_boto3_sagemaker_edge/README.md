@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sagemakeredgemanager-module"></a>
+
 # Type annotations for boto3 SagemakerEdgeManager module
 
 > [Index](..) > SagemakerEdgeManager
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
 type annotations stubs module
-[mypy_boto3_sagemaker_edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
+[mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sagemaker-edge]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sagemaker-edge]'
+
+# standalone installation
 pip install mypy-boto3-sagemaker-edge
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-sagemaker-edge
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="sagemakeredgemanagerclient"></a>
 
 ## SagemakerEdgeManagerClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_sagemaker_edge.client import SagemakerEdgeManagerClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -37,12 +51,16 @@ from mypy_boto3_sagemaker_edge.client import SagemakerEdgeManagerClient
 - [get_device_registration](./client.md#get_device_registration)
 - [send_heartbeat](./client.md#send_heartbeat)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SagemakerEdgeManagerClient [exceptions](./client.md#exceptions)
 
 - ClientError
 - InternalServiceException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -55,6 +73,8 @@ from mypy_boto3_sagemaker_edge.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

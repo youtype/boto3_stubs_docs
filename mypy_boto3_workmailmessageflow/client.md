@@ -1,3 +1,5 @@
+<a id="workmailmessageflowclient-for-boto3-workmailmessageflow-module"></a>
+
 # WorkMailMessageFlowClient for boto3 WorkMailMessageFlow module
 
 > [Index](..) > [WorkMailMessageFlow](.) > WorkMailMessageFlowClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module
-[mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
+[mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 - [WorkMailMessageFlowClient for boto3 WorkMailMessageFlow module](#workmailmessageflowclient-for-boto3-workmailmessageflow-module)
   - [WorkMailMessageFlowClient](#workmailmessageflowclient)
@@ -17,6 +19,8 @@ type annotations stubs module
     - [get_raw_message_content](#get_raw_message_content)
     - [put_raw_message_content](#put_raw_message_content)
 
+<a id="workmailmessageflowclient"></a>
+
 ## WorkMailMessageFlowClient
 
 Type annotations for `boto3.client("workmailmessageflow")`
@@ -24,14 +28,17 @@ Type annotations for `boto3.client("workmailmessageflow")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 
 def get_workmailmessageflow_client() -> WorkMailMessageFlowClient:
-    return boto3.client("workmailmessageflow")
+    return Session().client("workmailmessageflow")
 ```
 
 Boto3 documentation:
 [WorkMailMessageFlow.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -53,7 +60,11 @@ Exceptions:
 - `Exceptions.MessageRejected`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -65,6 +76,8 @@ Boto3 documentation:
 [WorkMailMessageFlow.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -80,6 +93,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -100,6 +115,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_raw_message_content"></a>
+
 ### get_raw_message_content
 
 Retrieves the raw content of an in-transit email message, in MIME format.
@@ -119,6 +136,8 @@ Keyword-only arguments:
 
 Returns
 [GetRawMessageContentResponseTypeDef](./type_defs.md#getrawmessagecontentresponsetypedef).
+
+<a id="put_raw_message_content"></a>
 
 ### put_raw_message_content
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ecr-module"></a>
+
 # Literals for boto3 ECR module
 
 > [Index](..) > [ECR](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecr.html#ECR)
 type annotations stubs module
-[mypy_boto3_ecr](https://pypi.org/project/mypy-boto3-ecr/).
+[mypy-boto3-ecr](https://pypi.org/project/mypy-boto3-ecr/).
 
 - [Literals for boto3 ECR module](#literals-for-boto3-ecr-module)
   - [DescribeImageScanFindingsPaginatorName](#describeimagescanfindingspaginatorname)
@@ -36,6 +38,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="describeimagescanfindingspaginatorname"></a>
+
 ## DescribeImageScanFindingsPaginatorName
 
 ```python
@@ -45,6 +49,8 @@ from mypy_boto3_ecr.literals import DescribeImageScanFindingsPaginatorName
 Values:
 
 - `describe_image_scan_findings`
+
+<a id="describeimagespaginatorname"></a>
 
 ## DescribeImagesPaginatorName
 
@@ -56,6 +62,8 @@ Values:
 
 - `describe_images`
 
+<a id="describepullthroughcacherulespaginatorname"></a>
+
 ## DescribePullThroughCacheRulesPaginatorName
 
 ```python
@@ -65,6 +73,8 @@ from mypy_boto3_ecr.literals import DescribePullThroughCacheRulesPaginatorName
 Values:
 
 - `describe_pull_through_cache_rules`
+
+<a id="describerepositoriespaginatorname"></a>
 
 ## DescribeRepositoriesPaginatorName
 
@@ -76,6 +86,8 @@ Values:
 
 - `describe_repositories`
 
+<a id="encryptiontypetype"></a>
+
 ## EncryptionTypeType
 
 ```python
@@ -86,6 +98,8 @@ Values:
 
 - `AES256`
 - `KMS`
+
+<a id="findingseveritytype"></a>
 
 ## FindingSeverityType
 
@@ -102,6 +116,8 @@ Values:
 - `MEDIUM`
 - `UNDEFINED`
 
+<a id="getlifecyclepolicypreviewpaginatorname"></a>
+
 ## GetLifecyclePolicyPreviewPaginatorName
 
 ```python
@@ -112,6 +128,8 @@ Values:
 
 - `get_lifecycle_policy_preview`
 
+<a id="imageactiontypetype"></a>
+
 ## ImageActionTypeType
 
 ```python
@@ -121,6 +139,8 @@ from mypy_boto3_ecr.literals import ImageActionTypeType
 Values:
 
 - `EXPIRE`
+
+<a id="imagefailurecodetype"></a>
 
 ## ImageFailureCodeType
 
@@ -138,6 +158,8 @@ Values:
 - `KmsError`
 - `MissingDigestAndTag`
 
+<a id="imagescancompletewaitername"></a>
+
 ## ImageScanCompleteWaiterName
 
 ```python
@@ -147,6 +169,8 @@ from mypy_boto3_ecr.literals import ImageScanCompleteWaiterName
 Values:
 
 - `image_scan_complete`
+
+<a id="imagetagmutabilitytype"></a>
 
 ## ImageTagMutabilityType
 
@@ -159,6 +183,8 @@ Values:
 - `IMMUTABLE`
 - `MUTABLE`
 
+<a id="layeravailabilitytype"></a>
+
 ## LayerAvailabilityType
 
 ```python
@@ -169,6 +195,8 @@ Values:
 
 - `AVAILABLE`
 - `UNAVAILABLE`
+
+<a id="layerfailurecodetype"></a>
 
 ## LayerFailureCodeType
 
@@ -181,6 +209,8 @@ Values:
 - `InvalidLayerDigest`
 - `MissingLayerDigest`
 
+<a id="lifecyclepolicypreviewcompletewaitername"></a>
+
 ## LifecyclePolicyPreviewCompleteWaiterName
 
 ```python
@@ -190,6 +220,8 @@ from mypy_boto3_ecr.literals import LifecyclePolicyPreviewCompleteWaiterName
 Values:
 
 - `lifecycle_policy_preview_complete`
+
+<a id="lifecyclepolicypreviewstatustype"></a>
 
 ## LifecyclePolicyPreviewStatusType
 
@@ -204,6 +236,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="listimagespaginatorname"></a>
+
 ## ListImagesPaginatorName
 
 ```python
@@ -213,6 +247,8 @@ from mypy_boto3_ecr.literals import ListImagesPaginatorName
 Values:
 
 - `list_images`
+
+<a id="replicationstatustype"></a>
 
 ## ReplicationStatusType
 
@@ -226,6 +262,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="repositoryfiltertypetype"></a>
+
 ## RepositoryFilterTypeType
 
 ```python
@@ -235,6 +273,8 @@ from mypy_boto3_ecr.literals import RepositoryFilterTypeType
 Values:
 
 - `PREFIX_MATCH`
+
+<a id="scanfrequencytype"></a>
 
 ## ScanFrequencyType
 
@@ -247,6 +287,8 @@ Values:
 - `CONTINUOUS_SCAN`
 - `MANUAL`
 - `SCAN_ON_PUSH`
+
+<a id="scanstatustype"></a>
 
 ## ScanStatusType
 
@@ -265,6 +307,8 @@ Values:
 - `SCAN_ELIGIBILITY_EXPIRED`
 - `UNSUPPORTED_IMAGE`
 
+<a id="scantypetype"></a>
+
 ## ScanTypeType
 
 ```python
@@ -276,6 +320,8 @@ Values:
 - `BASIC`
 - `ENHANCED`
 
+<a id="scanningconfigurationfailurecodetype"></a>
+
 ## ScanningConfigurationFailureCodeType
 
 ```python
@@ -286,6 +332,8 @@ Values:
 
 - `REPOSITORY_NOT_FOUND`
 
+<a id="scanningrepositoryfiltertypetype"></a>
+
 ## ScanningRepositoryFilterTypeType
 
 ```python
@@ -295,6 +343,8 @@ from mypy_boto3_ecr.literals import ScanningRepositoryFilterTypeType
 Values:
 
 - `WILDCARD`
+
+<a id="tagstatustype"></a>
 
 ## TagStatusType
 
@@ -307,6 +357,8 @@ Values:
 - `ANY`
 - `TAGGED`
 - `UNTAGGED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -616,6 +668,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -630,6 +684,8 @@ Values:
 - `describe_repositories`
 - `get_lifecycle_policy_preview`
 - `list_images`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

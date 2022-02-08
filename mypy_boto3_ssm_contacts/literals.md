@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ssmcontacts-module"></a>
+
 # Literals for boto3 SSMContacts module
 
 > [Index](..) > [SSMContacts](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
 type annotations stubs module
-[mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
+[mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 - [Literals for boto3 SSMContacts module](#literals-for-boto3-ssmcontacts-module)
   - [AcceptCodeValidationType](#acceptcodevalidationtype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="acceptcodevalidationtype"></a>
+
 ## AcceptCodeValidationType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 
 - `ENFORCE`
 - `IGNORE`
+
+<a id="accepttypetype"></a>
 
 ## AcceptTypeType
 
@@ -45,6 +51,8 @@ Values:
 - `DELIVERED`
 - `READ`
 
+<a id="activationstatustype"></a>
+
 ## ActivationStatusType
 
 ```python
@@ -55,6 +63,8 @@ Values:
 
 - `ACTIVATED`
 - `NOT_ACTIVATED`
+
+<a id="channeltypetype"></a>
 
 ## ChannelTypeType
 
@@ -68,6 +78,8 @@ Values:
 - `SMS`
 - `VOICE`
 
+<a id="contacttypetype"></a>
+
 ## ContactTypeType
 
 ```python
@@ -79,6 +91,8 @@ Values:
 - `ESCALATION`
 - `PERSONAL`
 
+<a id="listcontactchannelspaginatorname"></a>
+
 ## ListContactChannelsPaginatorName
 
 ```python
@@ -88,6 +102,8 @@ from mypy_boto3_ssm_contacts.literals import ListContactChannelsPaginatorName
 Values:
 
 - `list_contact_channels`
+
+<a id="listcontactspaginatorname"></a>
 
 ## ListContactsPaginatorName
 
@@ -99,6 +115,8 @@ Values:
 
 - `list_contacts`
 
+<a id="listengagementspaginatorname"></a>
+
 ## ListEngagementsPaginatorName
 
 ```python
@@ -108,6 +126,8 @@ from mypy_boto3_ssm_contacts.literals import ListEngagementsPaginatorName
 Values:
 
 - `list_engagements`
+
+<a id="listpagereceiptspaginatorname"></a>
 
 ## ListPageReceiptsPaginatorName
 
@@ -119,6 +139,8 @@ Values:
 
 - `list_page_receipts`
 
+<a id="listpagesbycontactpaginatorname"></a>
+
 ## ListPagesByContactPaginatorName
 
 ```python
@@ -129,6 +151,8 @@ Values:
 
 - `list_pages_by_contact`
 
+<a id="listpagesbyengagementpaginatorname"></a>
+
 ## ListPagesByEngagementPaginatorName
 
 ```python
@@ -138,6 +162,8 @@ from mypy_boto3_ssm_contacts.literals import ListPagesByEngagementPaginatorName
 Values:
 
 - `list_pages_by_engagement`
+
+<a id="receipttypetype"></a>
 
 ## ReceiptTypeType
 
@@ -152,6 +178,8 @@ Values:
 - `READ`
 - `SENT`
 - `STOP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -460,6 +488,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

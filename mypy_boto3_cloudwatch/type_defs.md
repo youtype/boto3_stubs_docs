@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudwatch-module"></a>
+
 # Typed dictionaries for boto3 CloudWatch module
 
 > [Index](..) > [CloudWatch](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
-[mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 - [Typed dictionaries for boto3 CloudWatch module](#typed-dictionaries-for-boto3-cloudwatch-module)
   - [AlarmHistoryItemTypeDef](#alarmhistoryitemtypedef)
@@ -103,6 +105,8 @@ type annotations stubs module
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="alarmhistoryitemtypedef"></a>
+
 ## AlarmHistoryItemTypeDef
 
 ```python
@@ -118,6 +122,8 @@ Optional fields:
 - `HistorySummary`: `str`
 - `HistoryData`: `str`
 
+<a id="anomalydetectorconfigurationtypedef"></a>
+
 ## AnomalyDetectorConfigurationTypeDef
 
 ```python
@@ -128,6 +134,8 @@ Optional fields:
 
 - `ExcludedTimeRanges`: `List`\[[RangeTypeDef](./type_defs.md#rangetypedef)\]
 - `MetricTimezone`: `str`
+
+<a id="anomalydetectortypedef"></a>
 
 ## AnomalyDetectorTypeDef
 
@@ -149,6 +157,8 @@ Optional fields:
   [SingleMetricAnomalyDetectorTypeDef](./type_defs.md#singlemetricanomalydetectortypedef)
 - `MetricMathAnomalyDetector`:
   [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
+
+<a id="compositealarmtypedef"></a>
 
 ## CompositeAlarmTypeDef
 
@@ -172,6 +182,8 @@ Optional fields:
 - `StateUpdatedTimestamp`: `datetime`
 - `StateValue`: [StateValueType](./literals.md#statevaluetype)
 
+<a id="dashboardentrytypedef"></a>
+
 ## DashboardEntryTypeDef
 
 ```python
@@ -185,6 +197,8 @@ Optional fields:
 - `LastModified`: `datetime`
 - `Size`: `int`
 
+<a id="dashboardvalidationmessagetypedef"></a>
+
 ## DashboardValidationMessageTypeDef
 
 ```python
@@ -195,6 +209,8 @@ Optional fields:
 
 - `DataPath`: `str`
 - `Message`: `str`
+
+<a id="datapointtypedef"></a>
 
 ## DatapointTypeDef
 
@@ -213,6 +229,8 @@ Optional fields:
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `ExtendedStatistics`: `Dict`\[`str`, `float`\]
 
+<a id="deletealarmsinputrequesttypedef"></a>
+
 ## DeleteAlarmsInputRequestTypeDef
 
 ```python
@@ -222,6 +240,8 @@ from mypy_boto3_cloudwatch.type_defs import DeleteAlarmsInputRequestTypeDef
 Required fields:
 
 - `AlarmNames`: `Sequence`\[`str`\]
+
+<a id="deleteanomalydetectorinputrequesttypedef"></a>
 
 ## DeleteAnomalyDetectorInputRequestTypeDef
 
@@ -241,6 +261,8 @@ Optional fields:
 - `MetricMathAnomalyDetector`:
   [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
+<a id="deletedashboardsinputrequesttypedef"></a>
+
 ## DeleteDashboardsInputRequestTypeDef
 
 ```python
@@ -251,6 +273,8 @@ Required fields:
 
 - `DashboardNames`: `Sequence`\[`str`\]
 
+<a id="deleteinsightrulesinputrequesttypedef"></a>
+
 ## DeleteInsightRulesInputRequestTypeDef
 
 ```python
@@ -260,6 +284,8 @@ from mypy_boto3_cloudwatch.type_defs import DeleteInsightRulesInputRequestTypeDe
 Required fields:
 
 - `RuleNames`: `Sequence`\[`str`\]
+
+<a id="deleteinsightrulesoutputtypedef"></a>
 
 ## DeleteInsightRulesOutputTypeDef
 
@@ -274,6 +300,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemetricstreaminputrequesttypedef"></a>
+
 ## DeleteMetricStreamInputRequestTypeDef
 
 ```python
@@ -283,6 +311,8 @@ from mypy_boto3_cloudwatch.type_defs import DeleteMetricStreamInputRequestTypeDe
 Required fields:
 
 - `Name`: `str`
+
+<a id="describealarmhistoryinputalarmtypedef"></a>
 
 ## DescribeAlarmHistoryInputAlarmTypeDef
 
@@ -299,6 +329,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 - `ScanBy`: [ScanByType](./literals.md#scanbytype)
+
+<a id="describealarmhistoryinputrequesttypedef"></a>
 
 ## DescribeAlarmHistoryInputRequestTypeDef
 
@@ -317,6 +349,8 @@ Optional fields:
 - `NextToken`: `str`
 - `ScanBy`: [ScanByType](./literals.md#scanbytype)
 
+<a id="describealarmhistoryoutputtypedef"></a>
+
 ## DescribeAlarmHistoryOutputTypeDef
 
 ```python
@@ -330,6 +364,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describealarmsformetricinputrequesttypedef"></a>
 
 ## DescribeAlarmsForMetricInputRequestTypeDef
 
@@ -351,6 +387,8 @@ Optional fields:
 - `Period`: `int`
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
+<a id="describealarmsformetricoutputtypedef"></a>
+
 ## DescribeAlarmsForMetricOutputTypeDef
 
 ```python
@@ -363,6 +401,8 @@ Required fields:
   `List`\[[MetricAlarmTypeDef](./type_defs.md#metricalarmtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describealarmsinputrequesttypedef"></a>
 
 ## DescribeAlarmsInputRequestTypeDef
 
@@ -382,6 +422,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
+<a id="describealarmsoutputtypedef"></a>
+
 ## DescribeAlarmsOutputTypeDef
 
 ```python
@@ -397,6 +439,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeanomalydetectorsinputrequesttypedef"></a>
 
 ## DescribeAnomalyDetectorsInputRequestTypeDef
 
@@ -415,6 +459,8 @@ Optional fields:
 - `AnomalyDetectorTypes`:
   `Sequence`\[[AnomalyDetectorTypeType](./literals.md#anomalydetectortypetype)\]
 
+<a id="describeanomalydetectorsoutputtypedef"></a>
+
 ## DescribeAnomalyDetectorsOutputTypeDef
 
 ```python
@@ -429,6 +475,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinsightrulesinputrequesttypedef"></a>
+
 ## DescribeInsightRulesInputRequestTypeDef
 
 ```python
@@ -439,6 +487,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeinsightrulesoutputtypedef"></a>
 
 ## DescribeInsightRulesOutputTypeDef
 
@@ -454,6 +504,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dimensionfiltertypedef"></a>
+
 ## DimensionFilterTypeDef
 
 ```python
@@ -468,6 +520,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="dimensiontypedef"></a>
+
 ## DimensionTypeDef
 
 ```python
@@ -479,6 +533,8 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="disablealarmactionsinputrequesttypedef"></a>
+
 ## DisableAlarmActionsInputRequestTypeDef
 
 ```python
@@ -489,6 +545,8 @@ Required fields:
 
 - `AlarmNames`: `Sequence`\[`str`\]
 
+<a id="disableinsightrulesinputrequesttypedef"></a>
+
 ## DisableInsightRulesInputRequestTypeDef
 
 ```python
@@ -498,6 +556,8 @@ from mypy_boto3_cloudwatch.type_defs import DisableInsightRulesInputRequestTypeD
 Required fields:
 
 - `RuleNames`: `Sequence`\[`str`\]
+
+<a id="disableinsightrulesoutputtypedef"></a>
 
 ## DisableInsightRulesOutputTypeDef
 
@@ -512,6 +572,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="enablealarmactionsinputrequesttypedef"></a>
+
 ## EnableAlarmActionsInputRequestTypeDef
 
 ```python
@@ -522,6 +584,8 @@ Required fields:
 
 - `AlarmNames`: `Sequence`\[`str`\]
 
+<a id="enableinsightrulesinputrequesttypedef"></a>
+
 ## EnableInsightRulesInputRequestTypeDef
 
 ```python
@@ -531,6 +595,8 @@ from mypy_boto3_cloudwatch.type_defs import EnableInsightRulesInputRequestTypeDe
 Required fields:
 
 - `RuleNames`: `Sequence`\[`str`\]
+
+<a id="enableinsightrulesoutputtypedef"></a>
 
 ## EnableInsightRulesOutputTypeDef
 
@@ -545,6 +611,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdashboardinputrequesttypedef"></a>
+
 ## GetDashboardInputRequestTypeDef
 
 ```python
@@ -554,6 +622,8 @@ from mypy_boto3_cloudwatch.type_defs import GetDashboardInputRequestTypeDef
 Required fields:
 
 - `DashboardName`: `str`
+
+<a id="getdashboardoutputtypedef"></a>
 
 ## GetDashboardOutputTypeDef
 
@@ -568,6 +638,8 @@ Required fields:
 - `DashboardName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinsightrulereportinputrequesttypedef"></a>
 
 ## GetInsightRuleReportInputRequestTypeDef
 
@@ -588,6 +660,8 @@ Optional fields:
 - `Metrics`: `Sequence`\[`str`\]
 - `OrderBy`: `str`
 
+<a id="getinsightrulereportoutputtypedef"></a>
+
 ## GetInsightRuleReportOutputTypeDef
 
 ```python
@@ -606,6 +680,8 @@ Required fields:
   `List`\[[InsightRuleMetricDatapointTypeDef](./type_defs.md#insightrulemetricdatapointtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmetricdatainputrequesttypedef"></a>
 
 ## GetMetricDataInputRequestTypeDef
 
@@ -627,6 +703,8 @@ Optional fields:
 - `MaxDatapoints`: `int`
 - `LabelOptions`: [LabelOptionsTypeDef](./type_defs.md#labeloptionstypedef)
 
+<a id="getmetricdataoutputtypedef"></a>
+
 ## GetMetricDataOutputTypeDef
 
 ```python
@@ -641,6 +719,8 @@ Required fields:
 - `Messages`: `List`\[[MessageDataTypeDef](./type_defs.md#messagedatatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmetricstatisticsinputmetrictypedef"></a>
 
 ## GetMetricStatisticsInputMetricTypeDef
 
@@ -661,6 +741,8 @@ Optional fields:
 - `Statistics`: `Sequence`\[[StatisticType](./literals.md#statistictype)\]
 - `ExtendedStatistics`: `Sequence`\[`str`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
+
+<a id="getmetricstatisticsinputrequesttypedef"></a>
 
 ## GetMetricStatisticsInputRequestTypeDef
 
@@ -684,6 +766,8 @@ Optional fields:
 - `ExtendedStatistics`: `Sequence`\[`str`\]
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 
+<a id="getmetricstatisticsoutputtypedef"></a>
+
 ## GetMetricStatisticsOutputTypeDef
 
 ```python
@@ -697,6 +781,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmetricstreaminputrequesttypedef"></a>
+
 ## GetMetricStreamInputRequestTypeDef
 
 ```python
@@ -706,6 +792,8 @@ from mypy_boto3_cloudwatch.type_defs import GetMetricStreamInputRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getmetricstreamoutputtypedef"></a>
 
 ## GetMetricStreamOutputTypeDef
 
@@ -731,6 +819,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmetricwidgetimageinputrequesttypedef"></a>
+
 ## GetMetricWidgetImageInputRequestTypeDef
 
 ```python
@@ -745,6 +835,8 @@ Optional fields:
 
 - `OutputFormat`: `str`
 
+<a id="getmetricwidgetimageoutputtypedef"></a>
+
 ## GetMetricWidgetImageOutputTypeDef
 
 ```python
@@ -757,6 +849,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="insightrulecontributordatapointtypedef"></a>
+
 ## InsightRuleContributorDatapointTypeDef
 
 ```python
@@ -767,6 +861,8 @@ Required fields:
 
 - `Timestamp`: `datetime`
 - `ApproximateValue`: `float`
+
+<a id="insightrulecontributortypedef"></a>
 
 ## InsightRuleContributorTypeDef
 
@@ -780,6 +876,8 @@ Required fields:
 - `ApproximateAggregateValue`: `float`
 - `Datapoints`:
   `List`\[[InsightRuleContributorDatapointTypeDef](./type_defs.md#insightrulecontributordatapointtypedef)\]
+
+<a id="insightrulemetricdatapointtypedef"></a>
 
 ## InsightRuleMetricDatapointTypeDef
 
@@ -801,6 +899,8 @@ Optional fields:
 - `Minimum`: `float`
 - `Maximum`: `float`
 
+<a id="insightruletypedef"></a>
+
 ## InsightRuleTypeDef
 
 ```python
@@ -814,6 +914,8 @@ Required fields:
 - `Schema`: `str`
 - `Definition`: `str`
 
+<a id="labeloptionstypedef"></a>
+
 ## LabelOptionsTypeDef
 
 ```python
@@ -823,6 +925,8 @@ from mypy_boto3_cloudwatch.type_defs import LabelOptionsTypeDef
 Optional fields:
 
 - `Timezone`: `str`
+
+<a id="listdashboardsinputrequesttypedef"></a>
 
 ## ListDashboardsInputRequestTypeDef
 
@@ -834,6 +938,8 @@ Optional fields:
 
 - `DashboardNamePrefix`: `str`
 - `NextToken`: `str`
+
+<a id="listdashboardsoutputtypedef"></a>
 
 ## ListDashboardsOutputTypeDef
 
@@ -849,6 +955,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmetricstreamsinputrequesttypedef"></a>
+
 ## ListMetricStreamsInputRequestTypeDef
 
 ```python
@@ -859,6 +967,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listmetricstreamsoutputtypedef"></a>
 
 ## ListMetricStreamsOutputTypeDef
 
@@ -873,6 +983,8 @@ Required fields:
   `List`\[[MetricStreamEntryTypeDef](./type_defs.md#metricstreamentrytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmetricsinputrequesttypedef"></a>
 
 ## ListMetricsInputRequestTypeDef
 
@@ -890,6 +1002,8 @@ Optional fields:
 - `RecentlyActive`: `Literal['PT3H']` (see
   [RecentlyActiveType](./literals.md#recentlyactivetype))
 
+<a id="listmetricsoutputtypedef"></a>
+
 ## ListMetricsOutputTypeDef
 
 ```python
@@ -903,6 +1017,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -912,6 +1028,8 @@ from mypy_boto3_cloudwatch.type_defs import ListTagsForResourceInputRequestTypeD
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -925,6 +1043,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="messagedatatypedef"></a>
+
 ## MessageDataTypeDef
 
 ```python
@@ -935,6 +1055,8 @@ Optional fields:
 
 - `Code`: `str`
 - `Value`: `str`
+
+<a id="metricalarmtypedef"></a>
 
 ## MetricAlarmTypeDef
 
@@ -974,6 +1096,8 @@ Optional fields:
   `List`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
 - `ThresholdMetricId`: `str`
 
+<a id="metricdataquerytypedef"></a>
+
 ## MetricDataQueryTypeDef
 
 ```python
@@ -993,6 +1117,8 @@ Optional fields:
 - `Period`: `int`
 - `AccountId`: `str`
 
+<a id="metricdataresulttypedef"></a>
+
 ## MetricDataResultTypeDef
 
 ```python
@@ -1007,6 +1133,8 @@ Optional fields:
 - `Values`: `List`\[`float`\]
 - `StatusCode`: [StatusCodeType](./literals.md#statuscodetype)
 - `Messages`: `List`\[[MessageDataTypeDef](./type_defs.md#messagedatatypedef)\]
+
+<a id="metricdatumtypedef"></a>
 
 ## MetricDatumTypeDef
 
@@ -1030,6 +1158,8 @@ Optional fields:
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
 - `StorageResolution`: `int`
 
+<a id="metricmathanomalydetectortypedef"></a>
+
 ## MetricMathAnomalyDetectorTypeDef
 
 ```python
@@ -1040,6 +1170,8 @@ Optional fields:
 
 - `MetricDataQueries`:
   `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
+
+<a id="metricstattypedef"></a>
 
 ## MetricStatTypeDef
 
@@ -1056,6 +1188,8 @@ Required fields:
 Optional fields:
 
 - `Unit`: [StandardUnitType](./literals.md#standardunittype)
+
+<a id="metricstreamentrytypedef"></a>
 
 ## MetricStreamEntryTypeDef
 
@@ -1074,6 +1208,8 @@ Optional fields:
 - `OutputFormat`:
   [MetricStreamOutputFormatType](./literals.md#metricstreamoutputformattype)
 
+<a id="metricstreamfiltertypedef"></a>
+
 ## MetricStreamFilterTypeDef
 
 ```python
@@ -1083,6 +1219,8 @@ from mypy_boto3_cloudwatch.type_defs import MetricStreamFilterTypeDef
 Optional fields:
 
 - `Namespace`: `str`
+
+<a id="metrictypedef"></a>
 
 ## MetricTypeDef
 
@@ -1097,6 +1235,8 @@ Optional fields:
 - `Dimensions`:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1108,6 +1248,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="partialfailuretypedef"></a>
 
 ## PartialFailureTypeDef
 
@@ -1121,6 +1263,8 @@ Optional fields:
 - `ExceptionType`: `str`
 - `FailureCode`: `str`
 - `FailureDescription`: `str`
+
+<a id="putanomalydetectorinputrequesttypedef"></a>
 
 ## PutAnomalyDetectorInputRequestTypeDef
 
@@ -1142,6 +1286,8 @@ Optional fields:
 - `MetricMathAnomalyDetector`:
   [MetricMathAnomalyDetectorTypeDef](./type_defs.md#metricmathanomalydetectortypedef)
 
+<a id="putcompositealarminputrequesttypedef"></a>
+
 ## PutCompositeAlarmInputRequestTypeDef
 
 ```python
@@ -1162,6 +1308,8 @@ Optional fields:
 - `OKActions`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putdashboardinputrequesttypedef"></a>
+
 ## PutDashboardInputRequestTypeDef
 
 ```python
@@ -1172,6 +1320,8 @@ Required fields:
 
 - `DashboardName`: `str`
 - `DashboardBody`: `str`
+
+<a id="putdashboardoutputtypedef"></a>
 
 ## PutDashboardOutputTypeDef
 
@@ -1185,6 +1335,8 @@ Required fields:
   `List`\[[DashboardValidationMessageTypeDef](./type_defs.md#dashboardvalidationmessagetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putinsightruleinputrequesttypedef"></a>
 
 ## PutInsightRuleInputRequestTypeDef
 
@@ -1201,6 +1353,8 @@ Optional fields:
 
 - `RuleState`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="putmetricalarminputmetrictypedef"></a>
 
 ## PutMetricAlarmInputMetricTypeDef
 
@@ -1236,6 +1390,8 @@ Optional fields:
   `Sequence`\[[MetricDataQueryTypeDef](./type_defs.md#metricdataquerytypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
+
+<a id="putmetricalarminputrequesttypedef"></a>
 
 ## PutMetricAlarmInputRequestTypeDef
 
@@ -1274,6 +1430,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
+<a id="putmetricdatainputrequesttypedef"></a>
+
 ## PutMetricDataInputRequestTypeDef
 
 ```python
@@ -1285,6 +1443,8 @@ Required fields:
 - `Namespace`: `str`
 - `MetricData`:
   `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
+
+<a id="putmetricstreaminputrequesttypedef"></a>
 
 ## PutMetricStreamInputRequestTypeDef
 
@@ -1308,6 +1468,8 @@ Optional fields:
   `Sequence`\[[MetricStreamFilterTypeDef](./type_defs.md#metricstreamfiltertypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putmetricstreamoutputtypedef"></a>
+
 ## PutMetricStreamOutputTypeDef
 
 ```python
@@ -1320,6 +1482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rangetypedef"></a>
+
 ## RangeTypeDef
 
 ```python
@@ -1330,6 +1494,8 @@ Required fields:
 
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1345,6 +1511,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="serviceresourcealarmrequesttypedef"></a>
+
 ## ServiceResourceAlarmRequestTypeDef
 
 ```python
@@ -1354,6 +1522,8 @@ from mypy_boto3_cloudwatch.type_defs import ServiceResourceAlarmRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="serviceresourcemetricrequesttypedef"></a>
 
 ## ServiceResourceMetricRequestTypeDef
 
@@ -1365,6 +1535,8 @@ Required fields:
 
 - `namespace`: `str`
 - `name`: `str`
+
+<a id="setalarmstateinputalarmtypedef"></a>
 
 ## SetAlarmStateInputAlarmTypeDef
 
@@ -1380,6 +1552,8 @@ Required fields:
 Optional fields:
 
 - `StateReasonData`: `str`
+
+<a id="setalarmstateinputrequesttypedef"></a>
 
 ## SetAlarmStateInputRequestTypeDef
 
@@ -1397,6 +1571,8 @@ Optional fields:
 
 - `StateReasonData`: `str`
 
+<a id="singlemetricanomalydetectortypedef"></a>
+
 ## SingleMetricAnomalyDetectorTypeDef
 
 ```python
@@ -1411,6 +1587,8 @@ Optional fields:
   `Sequence`\[[DimensionTypeDef](./type_defs.md#dimensiontypedef)\]
 - `Stat`: `str`
 
+<a id="startmetricstreamsinputrequesttypedef"></a>
+
 ## StartMetricStreamsInputRequestTypeDef
 
 ```python
@@ -1420,6 +1598,8 @@ from mypy_boto3_cloudwatch.type_defs import StartMetricStreamsInputRequestTypeDe
 Required fields:
 
 - `Names`: `Sequence`\[`str`\]
+
+<a id="statisticsettypedef"></a>
 
 ## StatisticSetTypeDef
 
@@ -1434,6 +1614,8 @@ Required fields:
 - `Minimum`: `float`
 - `Maximum`: `float`
 
+<a id="stopmetricstreamsinputrequesttypedef"></a>
+
 ## StopMetricStreamsInputRequestTypeDef
 
 ```python
@@ -1443,6 +1625,8 @@ from mypy_boto3_cloudwatch.type_defs import StopMetricStreamsInputRequestTypeDef
 Required fields:
 
 - `Names`: `Sequence`\[`str`\]
+
+<a id="tagresourceinputrequesttypedef"></a>
 
 ## TagResourceInputRequestTypeDef
 
@@ -1455,6 +1639,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1466,6 +1652,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -1476,6 +1664,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

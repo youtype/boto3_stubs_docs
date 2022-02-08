@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-sagemaker-module"></a>
+
 # Waiters for boto3 SageMaker module
 
 > [Index](..) > [SageMaker](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
-[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [Waiters for boto3 SageMaker module](#waiters-for-boto3-sagemaker-module)
   - [EndpointDeletedWaiter](#endpointdeletedwaiter)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [TrainingJobCompletedOrStoppedWaiter](#trainingjobcompletedorstoppedwaiter)
   - [TransformJobCompletedOrStoppedWaiter](#transformjobcompletedorstoppedwaiter)
 
+<a id="endpointdeletedwaiter"></a>
+
 ## EndpointDeletedWaiter
 
 Type annotations for
@@ -30,10 +34,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import EndpointDeletedWaiter
 
 def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
-    return boto3.client("sagemaker").get_waiter("endpoint_deleted")
+    return Session().client("sagemaker").get_waiter("endpoint_deleted")
 ```
 
 Boto3 documentation:
@@ -44,6 +50,8 @@ Arguments for `EndpointDeletedWaiter.wait` method:
 - `EndpointName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="endpointinservicewaiter"></a>
+
 ## EndpointInServiceWaiter
 
 Type annotations for
@@ -52,10 +60,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import EndpointInServiceWaiter
 
 def get_endpoint_in_service_waiter() -> EndpointInServiceWaiter:
-    return boto3.client("sagemaker").get_waiter("endpoint_in_service")
+    return Session().client("sagemaker").get_waiter("endpoint_in_service")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `EndpointInServiceWaiter.wait` method:
 - `EndpointName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imagecreatedwaiter"></a>
+
 ## ImageCreatedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("image_created")`.
@@ -73,10 +85,12 @@ Type annotations for `boto3.client("sagemaker").get_waiter("image_created")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import ImageCreatedWaiter
 
 def get_image_created_waiter() -> ImageCreatedWaiter:
-    return boto3.client("sagemaker").get_waiter("image_created")
+    return Session().client("sagemaker").get_waiter("image_created")
 ```
 
 Boto3 documentation:
@@ -87,6 +101,8 @@ Arguments for `ImageCreatedWaiter.wait` method:
 - `ImageName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imagedeletedwaiter"></a>
+
 ## ImageDeletedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("image_deleted")`.
@@ -94,10 +110,12 @@ Type annotations for `boto3.client("sagemaker").get_waiter("image_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import ImageDeletedWaiter
 
 def get_image_deleted_waiter() -> ImageDeletedWaiter:
-    return boto3.client("sagemaker").get_waiter("image_deleted")
+    return Session().client("sagemaker").get_waiter("image_deleted")
 ```
 
 Boto3 documentation:
@@ -108,6 +126,8 @@ Arguments for `ImageDeletedWaiter.wait` method:
 - `ImageName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imageupdatedwaiter"></a>
+
 ## ImageUpdatedWaiter
 
 Type annotations for `boto3.client("sagemaker").get_waiter("image_updated")`.
@@ -115,10 +135,12 @@ Type annotations for `boto3.client("sagemaker").get_waiter("image_updated")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import ImageUpdatedWaiter
 
 def get_image_updated_waiter() -> ImageUpdatedWaiter:
-    return boto3.client("sagemaker").get_waiter("image_updated")
+    return Session().client("sagemaker").get_waiter("image_updated")
 ```
 
 Boto3 documentation:
@@ -129,6 +151,8 @@ Arguments for `ImageUpdatedWaiter.wait` method:
 - `ImageName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imageversioncreatedwaiter"></a>
+
 ## ImageVersionCreatedWaiter
 
 Type annotations for
@@ -137,10 +161,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import ImageVersionCreatedWaiter
 
 def get_image_version_created_waiter() -> ImageVersionCreatedWaiter:
-    return boto3.client("sagemaker").get_waiter("image_version_created")
+    return Session().client("sagemaker").get_waiter("image_version_created")
 ```
 
 Boto3 documentation:
@@ -152,6 +178,8 @@ Arguments for `ImageVersionCreatedWaiter.wait` method:
 - `Version`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="imageversiondeletedwaiter"></a>
+
 ## ImageVersionDeletedWaiter
 
 Type annotations for
@@ -160,10 +188,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import ImageVersionDeletedWaiter
 
 def get_image_version_deleted_waiter() -> ImageVersionDeletedWaiter:
-    return boto3.client("sagemaker").get_waiter("image_version_deleted")
+    return Session().client("sagemaker").get_waiter("image_version_deleted")
 ```
 
 Boto3 documentation:
@@ -175,6 +205,8 @@ Arguments for `ImageVersionDeletedWaiter.wait` method:
 - `Version`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="notebookinstancedeletedwaiter"></a>
+
 ## NotebookInstanceDeletedWaiter
 
 Type annotations for
@@ -183,10 +215,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import NotebookInstanceDeletedWaiter
 
 def get_notebook_instance_deleted_waiter() -> NotebookInstanceDeletedWaiter:
-    return boto3.client("sagemaker").get_waiter("notebook_instance_deleted")
+    return Session().client("sagemaker").get_waiter("notebook_instance_deleted")
 ```
 
 Boto3 documentation:
@@ -197,6 +231,8 @@ Arguments for `NotebookInstanceDeletedWaiter.wait` method:
 - `NotebookInstanceName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="notebookinstanceinservicewaiter"></a>
+
 ## NotebookInstanceInServiceWaiter
 
 Type annotations for
@@ -205,10 +241,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import NotebookInstanceInServiceWaiter
 
 def get_notebook_instance_in_service_waiter() -> NotebookInstanceInServiceWaiter:
-    return boto3.client("sagemaker").get_waiter("notebook_instance_in_service")
+    return Session().client("sagemaker").get_waiter("notebook_instance_in_service")
 ```
 
 Boto3 documentation:
@@ -219,6 +257,8 @@ Arguments for `NotebookInstanceInServiceWaiter.wait` method:
 - `NotebookInstanceName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="notebookinstancestoppedwaiter"></a>
+
 ## NotebookInstanceStoppedWaiter
 
 Type annotations for
@@ -227,10 +267,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import NotebookInstanceStoppedWaiter
 
 def get_notebook_instance_stopped_waiter() -> NotebookInstanceStoppedWaiter:
-    return boto3.client("sagemaker").get_waiter("notebook_instance_stopped")
+    return Session().client("sagemaker").get_waiter("notebook_instance_stopped")
 ```
 
 Boto3 documentation:
@@ -241,6 +283,8 @@ Arguments for `NotebookInstanceStoppedWaiter.wait` method:
 - `NotebookInstanceName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="processingjobcompletedorstoppedwaiter"></a>
+
 ## ProcessingJobCompletedOrStoppedWaiter
 
 Type annotations for
@@ -249,10 +293,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import ProcessingJobCompletedOrStoppedWaiter
 
 def get_processing_job_completed_or_stopped_waiter() -> ProcessingJobCompletedOrStoppedWaiter:
-    return boto3.client("sagemaker").get_waiter("processing_job_completed_or_stopped")
+    return Session().client("sagemaker").get_waiter("processing_job_completed_or_stopped")
 ```
 
 Boto3 documentation:
@@ -263,6 +309,8 @@ Arguments for `ProcessingJobCompletedOrStoppedWaiter.wait` method:
 - `ProcessingJobName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="trainingjobcompletedorstoppedwaiter"></a>
+
 ## TrainingJobCompletedOrStoppedWaiter
 
 Type annotations for
@@ -271,10 +319,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import TrainingJobCompletedOrStoppedWaiter
 
 def get_training_job_completed_or_stopped_waiter() -> TrainingJobCompletedOrStoppedWaiter:
-    return boto3.client("sagemaker").get_waiter("training_job_completed_or_stopped")
+    return Session().client("sagemaker").get_waiter("training_job_completed_or_stopped")
 ```
 
 Boto3 documentation:
@@ -285,6 +335,8 @@ Arguments for `TrainingJobCompletedOrStoppedWaiter.wait` method:
 - `TrainingJobName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="transformjobcompletedorstoppedwaiter"></a>
+
 ## TransformJobCompletedOrStoppedWaiter
 
 Type annotations for
@@ -293,10 +345,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sagemaker.waiter import TransformJobCompletedOrStoppedWaiter
 
 def get_transform_job_completed_or_stopped_waiter() -> TransformJobCompletedOrStoppedWaiter:
-    return boto3.client("sagemaker").get_waiter("transform_job_completed_or_stopped")
+    return Session().client("sagemaker").get_waiter("transform_job_completed_or_stopped")
 ```
 
 Boto3 documentation:

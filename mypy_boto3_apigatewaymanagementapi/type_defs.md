@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-apigatewaymanagementapi-module"></a>
+
 # Typed dictionaries for boto3 ApiGatewayManagementApi module
 
 > [Index](..) > [ApiGatewayManagementApi](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
 type annotations stubs module
-[mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
+[mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 - [Typed dictionaries for boto3 ApiGatewayManagementApi module](#typed-dictionaries-for-boto3-apigatewaymanagementapi-module)
   - [DeleteConnectionRequestRequestTypeDef](#deleteconnectionrequestrequesttypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [IdentityTypeDef](#identitytypedef)
   - [PostToConnectionRequestRequestTypeDef](#posttoconnectionrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="deleteconnectionrequestrequesttypedef"></a>
 
 ## DeleteConnectionRequestRequestTypeDef
 
@@ -25,6 +29,8 @@ Required fields:
 
 - `ConnectionId`: `str`
 
+<a id="getconnectionrequestrequesttypedef"></a>
+
 ## GetConnectionRequestRequestTypeDef
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_apigatewaymanagementapi.type_defs import GetConnectionRequestReq
 Required fields:
 
 - `ConnectionId`: `str`
+
+<a id="getconnectionresponsetypedef"></a>
 
 ## GetConnectionResponseTypeDef
 
@@ -49,6 +57,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identitytypedef"></a>
+
 ## IdentityTypeDef
 
 ```python
@@ -60,6 +70,8 @@ Required fields:
 - `SourceIp`: `str`
 - `UserAgent`: `str`
 
+<a id="posttoconnectionrequestrequesttypedef"></a>
+
 ## PostToConnectionRequestRequestTypeDef
 
 ```python
@@ -70,6 +82,8 @@ Required fields:
 
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ConnectionId`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

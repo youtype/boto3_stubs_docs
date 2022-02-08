@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-simpledb-module"></a>
+
 # Literals for boto3 SimpleDB module
 
 > [Index](..) > [SimpleDB](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [SimpleDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sdb.html#SimpleDB)
 type annotations stubs module
-[mypy_boto3_sdb](https://pypi.org/project/mypy-boto3-sdb/).
+[mypy-boto3-sdb](https://pypi.org/project/mypy-boto3-sdb/).
 
 - [Literals for boto3 SimpleDB module](#literals-for-boto3-simpledb-module)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [SelectPaginatorName](#selectpaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listdomainspaginatorname"></a>
 
 ## ListDomainsPaginatorName
 
@@ -23,6 +27,8 @@ Values:
 
 - `list_domains`
 
+<a id="selectpaginatorname"></a>
+
 ## SelectPaginatorName
 
 ```python
@@ -32,6 +38,8 @@ from mypy_boto3_sdb.literals import SelectPaginatorName
 Values:
 
 - `select`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -340,6 +348,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

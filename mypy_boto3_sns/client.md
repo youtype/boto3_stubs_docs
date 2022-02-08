@@ -1,3 +1,5 @@
+<a id="snsclient-for-boto3-sns-module"></a>
+
 # SNSClient for boto3 SNS module
 
 > [Index](..) > [SNS](.) > SNSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module
-[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [SNSClient for boto3 SNS module](#snsclient-for-boto3-sns-module)
   - [SNSClient](#snsclient)
@@ -56,6 +58,8 @@ type annotations stubs module
     - [verify_sms_sandbox_phone_number](#verify_sms_sandbox_phone_number)
     - [get_paginator](#get_paginator)
 
+<a id="snsclient"></a>
+
 ## SNSClient
 
 Type annotations for `boto3.client("sns")`
@@ -63,14 +67,17 @@ Type annotations for `boto3.client("sns")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sns.client import SNSClient
 
 def get_sns_client() -> SNSClient:
-    return boto3.client("sns")
+    return Session().client("sns")
 ```
 
 Boto3 documentation:
 [SNS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -120,7 +127,11 @@ Exceptions:
 - `Exceptions.ValidationException`
 - `Exceptions.VerificationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -132,6 +143,8 @@ Boto3 documentation:
 [SNS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_permission"></a>
 
 ### add_permission
 
@@ -153,6 +166,8 @@ Keyword-only arguments:
 - `AWSAccountId`: `Sequence`\[`str`\] *(required)*
 - `ActionName`: `Sequence`\[`str`\] *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -167,6 +182,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="check_if_phone_number_is_opted_out"></a>
 
 ### check_if_phone_number_is_opted_out
 
@@ -189,6 +206,8 @@ Keyword-only arguments:
 Returns
 [CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef).
 
+<a id="confirm_subscription"></a>
+
 ### confirm_subscription
 
 Verifies an endpoint owner's intent to receive messages by validating the token
@@ -210,6 +229,8 @@ Keyword-only arguments:
 
 Returns
 [ConfirmSubscriptionResponseTypeDef](./type_defs.md#confirmsubscriptionresponsetypedef).
+
+<a id="create_platform_application"></a>
 
 ### create_platform_application
 
@@ -234,6 +255,8 @@ Keyword-only arguments:
 Returns
 [CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef).
 
+<a id="create_platform_endpoint"></a>
+
 ### create_platform_endpoint
 
 Creates an endpoint for a device and mobile app on one of the supported push
@@ -257,6 +280,8 @@ Keyword-only arguments:
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
+<a id="create_sms_sandbox_phone_number"></a>
+
 ### create_sms_sandbox_phone_number
 
 Adds a destination phone number to an Amazon Web Services account in the SMS
@@ -279,6 +304,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_topic"></a>
+
 ### create_topic
 
 Creates a topic to which notifications can be published.
@@ -300,6 +327,8 @@ Keyword-only arguments:
 Returns
 [CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef).
 
+<a id="delete_endpoint"></a>
+
 ### delete_endpoint
 
 Deletes the endpoint for a device and mobile app from Amazon SNS.
@@ -315,6 +344,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
+
+<a id="delete_platform_application"></a>
 
 ### delete_platform_application
 
@@ -332,6 +363,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
+
+<a id="delete_sms_sandbox_phone_number"></a>
 
 ### delete_sms_sandbox_phone_number
 
@@ -353,6 +386,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_topic"></a>
+
 ### delete_topic
 
 Deletes a topic and all its subscriptions.
@@ -368,6 +403,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -386,6 +423,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_endpoint_attributes"></a>
 
 ### get_endpoint_attributes
 
@@ -406,6 +445,8 @@ Keyword-only arguments:
 
 Returns
 [GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef).
+
+<a id="get_platform_application_attributes"></a>
 
 ### get_platform_application_attributes
 
@@ -428,6 +469,8 @@ Keyword-only arguments:
 Returns
 [GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef).
 
+<a id="get_sms_attributes"></a>
+
 ### get_sms_attributes
 
 Returns the settings for sending SMS messages from your Amazon Web Services
@@ -448,6 +491,8 @@ Keyword-only arguments:
 Returns
 [GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
 
+<a id="get_sms_sandbox_account_status"></a>
+
 ### get_sms_sandbox_account_status
 
 Retrieves the SMS sandbox status for the calling Amazon Web Services account in
@@ -461,6 +506,8 @@ Boto3 documentation:
 
 Returns
 [GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef).
+
+<a id="get_subscription_attributes"></a>
 
 ### get_subscription_attributes
 
@@ -481,6 +528,8 @@ Keyword-only arguments:
 Returns
 [GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef).
 
+<a id="get_topic_attributes"></a>
+
 ### get_topic_attributes
 
 Returns all of the properties of a topic.
@@ -499,6 +548,8 @@ Keyword-only arguments:
 
 Returns
 [GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef).
+
+<a id="list_endpoints_by_platform_application"></a>
 
 ### list_endpoints_by_platform_application
 
@@ -522,6 +573,8 @@ Keyword-only arguments:
 Returns
 [ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef).
 
+<a id="list_origination_numbers"></a>
+
 ### list_origination_numbers
 
 Lists the calling Amazon Web Services account's dedicated origination numbers
@@ -543,6 +596,8 @@ Keyword-only arguments:
 Returns
 [ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef).
 
+<a id="list_phone_numbers_opted_out"></a>
+
 ### list_phone_numbers_opted_out
 
 Returns a list of phone numbers that are opted out, meaning you cannot send SMS
@@ -563,6 +618,8 @@ Keyword-only arguments:
 Returns
 [ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef).
 
+<a id="list_platform_applications"></a>
+
 ### list_platform_applications
 
 Lists the platform application objects for the supported push notification
@@ -582,6 +639,8 @@ Keyword-only arguments:
 
 Returns
 [ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef).
+
+<a id="list_sms_sandbox_phone_numbers"></a>
 
 ### list_sms_sandbox_phone_numbers
 
@@ -605,6 +664,8 @@ Keyword-only arguments:
 Returns
 [ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef).
 
+<a id="list_subscriptions"></a>
+
 ### list_subscriptions
 
 Returns a list of the requester's subscriptions.
@@ -623,6 +684,8 @@ Keyword-only arguments:
 
 Returns
 [ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef).
+
+<a id="list_subscriptions_by_topic"></a>
 
 ### list_subscriptions_by_topic
 
@@ -644,6 +707,8 @@ Keyword-only arguments:
 Returns
 [ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List all tags added to the specified Amazon SNS topic.
@@ -663,6 +728,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_topics"></a>
+
 ### list_topics
 
 Returns a list of the requester's topics.
@@ -680,6 +747,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef).
+
+<a id="opt_in_phone_number"></a>
 
 ### opt_in_phone_number
 
@@ -699,6 +768,8 @@ Keyword-only arguments:
 - `phoneNumber`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="publish"></a>
 
 ### publish
 
@@ -729,6 +800,8 @@ Keyword-only arguments:
 
 Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
+<a id="publish_batch"></a>
+
 ### publish_batch
 
 Publishes up to ten messages to the specified topic.
@@ -751,6 +824,8 @@ Keyword-only arguments:
 Returns
 [PublishBatchResponseTypeDef](./type_defs.md#publishbatchresponsetypedef).
 
+<a id="remove_permission"></a>
+
 ### remove_permission
 
 Removes a statement from a topic's access control policy.
@@ -767,6 +842,8 @@ Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 - `Label`: `str` *(required)*
+
+<a id="set_endpoint_attributes"></a>
 
 ### set_endpoint_attributes
 
@@ -785,6 +862,8 @@ Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 - `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="set_platform_application_attributes"></a>
 
 ### set_platform_application_attributes
 
@@ -805,6 +884,8 @@ Keyword-only arguments:
 - `PlatformApplicationArn`: `str` *(required)*
 - `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="set_sms_attributes"></a>
+
 ### set_sms_attributes
 
 Use this request to set the default settings for sending SMS messages and
@@ -823,6 +904,8 @@ Keyword-only arguments:
 - `attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_subscription_attributes"></a>
 
 ### set_subscription_attributes
 
@@ -843,6 +926,8 @@ Keyword-only arguments:
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`
 
+<a id="set_topic_attributes"></a>
+
 ### set_topic_attributes
 
 Allows a topic owner to set an attribute of the topic to a new value.
@@ -860,6 +945,8 @@ Keyword-only arguments:
 - `TopicArn`: `str` *(required)*
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`
+
+<a id="subscribe"></a>
 
 ### subscribe
 
@@ -883,6 +970,8 @@ Keyword-only arguments:
 
 Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add tags to the specified Amazon SNS topic.
@@ -902,6 +991,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="unsubscribe"></a>
+
 ### unsubscribe
 
 Deletes a subscription.
@@ -917,6 +1008,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -936,6 +1029,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="verify_sms_sandbox_phone_number"></a>
 
 ### verify_sms_sandbox_phone_number
 
@@ -957,6 +1052,8 @@ Keyword-only arguments:
 - `OneTimePassword`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

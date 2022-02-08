@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codecommit-module"></a>
+
 # Type annotations for boto3 CodeCommit module
 
 > [Index](..) > CodeCommit
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
-[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+[mypy-boto3-codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codecommit]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codecommit]'
+
+# standalone installation
 pip install mypy-boto3-codecommit
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-codecommit
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codecommitclient"></a>
+
 ## CodeCommitClient
 
 Type annotations for `boto3.client("codecommit")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codecommit.client import CodeCommitClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -113,6 +127,8 @@ from mypy_boto3_codecommit.client import CodeCommitClient
 - [update_pull_request_title](./client.md#update_pull_request_title)
 - [update_repository_description](./client.md#update_repository_description)
 - [update_repository_name](./client.md#update_repository_name)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -305,6 +321,8 @@ CodeCommitClient [exceptions](./client.md#exceptions)
 - TitleRequiredException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -313,7 +331,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codecommit.paginators import DescribePullRequestEventsPaginator, ...
+from mypy_boto3_codecommit.paginator import DescribePullRequestEventsPaginator, ...
 ```
 
 - [DescribePullRequestEventsPaginator](./paginators.md#describepullrequesteventspaginator)
@@ -323,6 +341,8 @@ from mypy_boto3_codecommit.paginators import DescribePullRequestEventsPaginator,
 - [ListBranchesPaginator](./paginators.md#listbranchespaginator)
 - [ListPullRequestsPaginator](./paginators.md#listpullrequestspaginator)
 - [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -358,6 +378,8 @@ from mypy_boto3_codecommit.literals import ApprovalStateType, ...
 - [SortByEnumType](./literals.md#sortbyenumtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-docdb-module"></a>
+
 # Typed dictionaries for boto3 DocDB module
 
 > [Index](..) > [DocDB](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
 type annotations stubs module
-[mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
+[mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 - [Typed dictionaries for boto3 DocDB module](#typed-dictionaries-for-boto3-docdb-module)
   - [AddSourceIdentifierToSubscriptionMessageRequestTypeDef](#addsourceidentifiertosubscriptionmessagerequesttypedef)
@@ -145,6 +147,8 @@ type annotations stubs module
   - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addsourceidentifiertosubscriptionmessagerequesttypedef"></a>
+
 ## AddSourceIdentifierToSubscriptionMessageRequestTypeDef
 
 ```python
@@ -155,6 +159,8 @@ Required fields:
 
 - `SubscriptionName`: `str`
 - `SourceIdentifier`: `str`
+
+<a id="addsourceidentifiertosubscriptionresulttypedef"></a>
 
 ## AddSourceIdentifierToSubscriptionResultTypeDef
 
@@ -169,6 +175,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addtagstoresourcemessagerequesttypedef"></a>
+
 ## AddTagsToResourceMessageRequestTypeDef
 
 ```python
@@ -179,6 +187,8 @@ Required fields:
 
 - `ResourceName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="applypendingmaintenanceactionmessagerequesttypedef"></a>
 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
@@ -191,6 +201,8 @@ Required fields:
 - `ResourceIdentifier`: `str`
 - `ApplyAction`: `str`
 - `OptInType`: `str`
+
+<a id="applypendingmaintenanceactionresulttypedef"></a>
 
 ## ApplyPendingMaintenanceActionResultTypeDef
 
@@ -205,6 +217,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="availabilityzonetypedef"></a>
+
 ## AvailabilityZoneTypeDef
 
 ```python
@@ -214,6 +228,8 @@ from mypy_boto3_docdb.type_defs import AvailabilityZoneTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="certificatemessagetypedef"></a>
 
 ## CertificateMessageTypeDef
 
@@ -228,6 +244,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="certificatetypedef"></a>
 
 ## CertificateTypeDef
 
@@ -244,6 +262,8 @@ Optional fields:
 - `ValidTill`: `datetime`
 - `CertificateArn`: `str`
 
+<a id="cloudwatchlogsexportconfigurationtypedef"></a>
+
 ## CloudwatchLogsExportConfigurationTypeDef
 
 ```python
@@ -254,6 +274,8 @@ Optional fields:
 
 - `EnableLogTypes`: `Sequence`\[`str`\]
 - `DisableLogTypes`: `Sequence`\[`str`\]
+
+<a id="copydbclusterparametergroupmessagerequesttypedef"></a>
 
 ## CopyDBClusterParameterGroupMessageRequestTypeDef
 
@@ -271,6 +293,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="copydbclusterparametergroupresulttypedef"></a>
+
 ## CopyDBClusterParameterGroupResultTypeDef
 
 ```python
@@ -283,6 +307,8 @@ Required fields:
   [DBClusterParameterGroupTypeDef](./type_defs.md#dbclusterparametergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="copydbclustersnapshotmessagerequesttypedef"></a>
 
 ## CopyDBClusterSnapshotMessageRequestTypeDef
 
@@ -303,6 +329,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `SourceRegion`: `str`
 
+<a id="copydbclustersnapshotresulttypedef"></a>
+
 ## CopyDBClusterSnapshotResultTypeDef
 
 ```python
@@ -315,6 +343,8 @@ Required fields:
   [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdbclustermessagerequesttypedef"></a>
 
 ## CreateDBClusterMessageRequestTypeDef
 
@@ -349,6 +379,8 @@ Optional fields:
 - `GlobalClusterIdentifier`: `str`
 - `SourceRegion`: `str`
 
+<a id="createdbclusterparametergroupmessagerequesttypedef"></a>
+
 ## CreateDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
@@ -365,6 +397,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdbclusterparametergroupresulttypedef"></a>
+
 ## CreateDBClusterParameterGroupResultTypeDef
 
 ```python
@@ -378,6 +412,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdbclusterresulttypedef"></a>
+
 ## CreateDBClusterResultTypeDef
 
 ```python
@@ -389,6 +425,8 @@ Required fields:
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdbclustersnapshotmessagerequesttypedef"></a>
 
 ## CreateDBClusterSnapshotMessageRequestTypeDef
 
@@ -405,6 +443,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdbclustersnapshotresulttypedef"></a>
+
 ## CreateDBClusterSnapshotResultTypeDef
 
 ```python
@@ -417,6 +457,8 @@ Required fields:
   [DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdbinstancemessagerequesttypedef"></a>
 
 ## CreateDBInstanceMessageRequestTypeDef
 
@@ -439,6 +481,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `PromotionTier`: `int`
 
+<a id="createdbinstanceresulttypedef"></a>
+
 ## CreateDBInstanceResultTypeDef
 
 ```python
@@ -450,6 +494,8 @@ Required fields:
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdbsubnetgroupmessagerequesttypedef"></a>
 
 ## CreateDBSubnetGroupMessageRequestTypeDef
 
@@ -467,6 +513,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdbsubnetgroupresulttypedef"></a>
+
 ## CreateDBSubnetGroupResultTypeDef
 
 ```python
@@ -478,6 +526,8 @@ Required fields:
 - `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createeventsubscriptionmessagerequesttypedef"></a>
 
 ## CreateEventSubscriptionMessageRequestTypeDef
 
@@ -498,6 +548,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createeventsubscriptionresulttypedef"></a>
+
 ## CreateEventSubscriptionResultTypeDef
 
 ```python
@@ -510,6 +562,8 @@ Required fields:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createglobalclustermessagerequesttypedef"></a>
 
 ## CreateGlobalClusterMessageRequestTypeDef
 
@@ -530,6 +584,8 @@ Optional fields:
 - `DatabaseName`: `str`
 - `StorageEncrypted`: `bool`
 
+<a id="createglobalclusterresulttypedef"></a>
+
 ## CreateGlobalClusterResultTypeDef
 
 ```python
@@ -541,6 +597,8 @@ Required fields:
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dbclustermembertypedef"></a>
 
 ## DBClusterMemberTypeDef
 
@@ -555,6 +613,8 @@ Optional fields:
 - `DBClusterParameterGroupStatus`: `str`
 - `PromotionTier`: `int`
 
+<a id="dbclustermessagetypedef"></a>
+
 ## DBClusterMessageTypeDef
 
 ```python
@@ -567,6 +627,8 @@ Required fields:
 - `DBClusters`: `List`\[[DBClusterTypeDef](./type_defs.md#dbclustertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dbclusterparametergroupdetailstypedef"></a>
 
 ## DBClusterParameterGroupDetailsTypeDef
 
@@ -581,6 +643,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dbclusterparametergroupnamemessagetypedef"></a>
+
 ## DBClusterParameterGroupNameMessageTypeDef
 
 ```python
@@ -592,6 +656,8 @@ Required fields:
 - `DBClusterParameterGroupName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dbclusterparametergrouptypedef"></a>
 
 ## DBClusterParameterGroupTypeDef
 
@@ -605,6 +671,8 @@ Optional fields:
 - `DBParameterGroupFamily`: `str`
 - `Description`: `str`
 - `DBClusterParameterGroupArn`: `str`
+
+<a id="dbclusterparametergroupsmessagetypedef"></a>
 
 ## DBClusterParameterGroupsMessageTypeDef
 
@@ -620,6 +688,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dbclusterroletypedef"></a>
+
 ## DBClusterRoleTypeDef
 
 ```python
@@ -630,6 +700,8 @@ Optional fields:
 
 - `RoleArn`: `str`
 - `Status`: `str`
+
+<a id="dbclustersnapshotattributetypedef"></a>
 
 ## DBClusterSnapshotAttributeTypeDef
 
@@ -642,6 +714,8 @@ Optional fields:
 - `AttributeName`: `str`
 - `AttributeValues`: `List`\[`str`\]
 
+<a id="dbclustersnapshotattributesresulttypedef"></a>
+
 ## DBClusterSnapshotAttributesResultTypeDef
 
 ```python
@@ -653,6 +727,8 @@ Optional fields:
 - `DBClusterSnapshotIdentifier`: `str`
 - `DBClusterSnapshotAttributes`:
   `List`\[[DBClusterSnapshotAttributeTypeDef](./type_defs.md#dbclustersnapshotattributetypedef)\]
+
+<a id="dbclustersnapshotmessagetypedef"></a>
 
 ## DBClusterSnapshotMessageTypeDef
 
@@ -667,6 +743,8 @@ Required fields:
   `List`\[[DBClusterSnapshotTypeDef](./type_defs.md#dbclustersnapshottypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dbclustersnapshottypedef"></a>
 
 ## DBClusterSnapshotTypeDef
 
@@ -693,6 +771,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `DBClusterSnapshotArn`: `str`
 - `SourceDBClusterSnapshotArn`: `str`
+
+<a id="dbclustertypedef"></a>
 
 ## DBClusterTypeDef
 
@@ -737,6 +817,8 @@ Optional fields:
 - `EnabledCloudwatchLogsExports`: `List`\[`str`\]
 - `DeletionProtection`: `bool`
 
+<a id="dbengineversionmessagetypedef"></a>
+
 ## DBEngineVersionMessageTypeDef
 
 ```python
@@ -750,6 +832,8 @@ Required fields:
   `List`\[[DBEngineVersionTypeDef](./type_defs.md#dbengineversiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dbengineversiontypedef"></a>
 
 ## DBEngineVersionTypeDef
 
@@ -769,6 +853,8 @@ Optional fields:
 - `ExportableLogTypes`: `List`\[`str`\]
 - `SupportsLogExportsToCloudwatchLogs`: `bool`
 
+<a id="dbinstancemessagetypedef"></a>
+
 ## DBInstanceMessageTypeDef
 
 ```python
@@ -783,6 +869,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dbinstancestatusinfotypedef"></a>
+
 ## DBInstanceStatusInfoTypeDef
 
 ```python
@@ -795,6 +883,8 @@ Optional fields:
 - `Normal`: `bool`
 - `Status`: `str`
 - `Message`: `str`
+
+<a id="dbinstancetypedef"></a>
 
 ## DBInstanceTypeDef
 
@@ -834,6 +924,8 @@ Optional fields:
 - `DBInstanceArn`: `str`
 - `EnabledCloudwatchLogsExports`: `List`\[`str`\]
 
+<a id="dbsubnetgroupmessagetypedef"></a>
+
 ## DBSubnetGroupMessageTypeDef
 
 ```python
@@ -847,6 +939,8 @@ Required fields:
   `List`\[[DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dbsubnetgrouptypedef"></a>
 
 ## DBSubnetGroupTypeDef
 
@@ -863,6 +957,8 @@ Optional fields:
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `DBSubnetGroupArn`: `str`
 
+<a id="deletedbclustermessagerequesttypedef"></a>
+
 ## DeleteDBClusterMessageRequestTypeDef
 
 ```python
@@ -878,6 +974,8 @@ Optional fields:
 - `SkipFinalSnapshot`: `bool`
 - `FinalDBSnapshotIdentifier`: `str`
 
+<a id="deletedbclusterparametergroupmessagerequesttypedef"></a>
+
 ## DeleteDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
@@ -887,6 +985,8 @@ from mypy_boto3_docdb.type_defs import DeleteDBClusterParameterGroupMessageReque
 Required fields:
 
 - `DBClusterParameterGroupName`: `str`
+
+<a id="deletedbclusterresulttypedef"></a>
 
 ## DeleteDBClusterResultTypeDef
 
@@ -900,6 +1000,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedbclustersnapshotmessagerequesttypedef"></a>
+
 ## DeleteDBClusterSnapshotMessageRequestTypeDef
 
 ```python
@@ -909,6 +1011,8 @@ from mypy_boto3_docdb.type_defs import DeleteDBClusterSnapshotMessageRequestType
 Required fields:
 
 - `DBClusterSnapshotIdentifier`: `str`
+
+<a id="deletedbclustersnapshotresulttypedef"></a>
 
 ## DeleteDBClusterSnapshotResultTypeDef
 
@@ -923,6 +1027,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedbinstancemessagerequesttypedef"></a>
+
 ## DeleteDBInstanceMessageRequestTypeDef
 
 ```python
@@ -932,6 +1038,8 @@ from mypy_boto3_docdb.type_defs import DeleteDBInstanceMessageRequestTypeDef
 Required fields:
 
 - `DBInstanceIdentifier`: `str`
+
+<a id="deletedbinstanceresulttypedef"></a>
 
 ## DeleteDBInstanceResultTypeDef
 
@@ -945,6 +1053,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedbsubnetgroupmessagerequesttypedef"></a>
+
 ## DeleteDBSubnetGroupMessageRequestTypeDef
 
 ```python
@@ -955,6 +1065,8 @@ Required fields:
 
 - `DBSubnetGroupName`: `str`
 
+<a id="deleteeventsubscriptionmessagerequesttypedef"></a>
+
 ## DeleteEventSubscriptionMessageRequestTypeDef
 
 ```python
@@ -964,6 +1076,8 @@ from mypy_boto3_docdb.type_defs import DeleteEventSubscriptionMessageRequestType
 Required fields:
 
 - `SubscriptionName`: `str`
+
+<a id="deleteeventsubscriptionresulttypedef"></a>
 
 ## DeleteEventSubscriptionResultTypeDef
 
@@ -978,6 +1092,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteglobalclustermessagerequesttypedef"></a>
+
 ## DeleteGlobalClusterMessageRequestTypeDef
 
 ```python
@@ -987,6 +1103,8 @@ from mypy_boto3_docdb.type_defs import DeleteGlobalClusterMessageRequestTypeDef
 Required fields:
 
 - `GlobalClusterIdentifier`: `str`
+
+<a id="deleteglobalclusterresulttypedef"></a>
 
 ## DeleteGlobalClusterResultTypeDef
 
@@ -999,6 +1117,8 @@ Required fields:
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecertificatesmessagerequesttypedef"></a>
 
 ## DescribeCertificatesMessageRequestTypeDef
 
@@ -1013,6 +1133,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describedbclusterparametergroupsmessagerequesttypedef"></a>
+
 ## DescribeDBClusterParameterGroupsMessageRequestTypeDef
 
 ```python
@@ -1025,6 +1147,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describedbclusterparametersmessagerequesttypedef"></a>
 
 ## DescribeDBClusterParametersMessageRequestTypeDef
 
@@ -1043,6 +1167,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describedbclustersnapshotattributesmessagerequesttypedef"></a>
+
 ## DescribeDBClusterSnapshotAttributesMessageRequestTypeDef
 
 ```python
@@ -1052,6 +1178,8 @@ from mypy_boto3_docdb.type_defs import DescribeDBClusterSnapshotAttributesMessag
 Required fields:
 
 - `DBClusterSnapshotIdentifier`: `str`
+
+<a id="describedbclustersnapshotattributesresulttypedef"></a>
 
 ## DescribeDBClusterSnapshotAttributesResultTypeDef
 
@@ -1065,6 +1193,8 @@ Required fields:
   [DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedbclustersnapshotsmessagerequesttypedef"></a>
 
 ## DescribeDBClusterSnapshotsMessageRequestTypeDef
 
@@ -1083,6 +1213,8 @@ Optional fields:
 - `IncludeShared`: `bool`
 - `IncludePublic`: `bool`
 
+<a id="describedbclustersmessagerequesttypedef"></a>
+
 ## DescribeDBClustersMessageRequestTypeDef
 
 ```python
@@ -1095,6 +1227,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describedbengineversionsmessagerequesttypedef"></a>
 
 ## DescribeDBEngineVersionsMessageRequestTypeDef
 
@@ -1114,6 +1248,8 @@ Optional fields:
 - `ListSupportedCharacterSets`: `bool`
 - `ListSupportedTimezones`: `bool`
 
+<a id="describedbinstancesmessagerequesttypedef"></a>
+
 ## DescribeDBInstancesMessageRequestTypeDef
 
 ```python
@@ -1127,6 +1263,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describedbsubnetgroupsmessagerequesttypedef"></a>
+
 ## DescribeDBSubnetGroupsMessageRequestTypeDef
 
 ```python
@@ -1139,6 +1277,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeenginedefaultclusterparametersmessagerequesttypedef"></a>
 
 ## DescribeEngineDefaultClusterParametersMessageRequestTypeDef
 
@@ -1156,6 +1296,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeenginedefaultclusterparametersresulttypedef"></a>
+
 ## DescribeEngineDefaultClusterParametersResultTypeDef
 
 ```python
@@ -1169,6 +1311,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventcategoriesmessagerequesttypedef"></a>
+
 ## DescribeEventCategoriesMessageRequestTypeDef
 
 ```python
@@ -1179,6 +1323,8 @@ Optional fields:
 
 - `SourceType`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="describeeventsubscriptionsmessagerequesttypedef"></a>
 
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
@@ -1192,6 +1338,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeeventsmessagerequesttypedef"></a>
 
 ## DescribeEventsMessageRequestTypeDef
 
@@ -1211,6 +1359,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeglobalclustersmessagerequesttypedef"></a>
+
 ## DescribeGlobalClustersMessageRequestTypeDef
 
 ```python
@@ -1223,6 +1373,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeorderabledbinstanceoptionsmessagerequesttypedef"></a>
 
 ## DescribeOrderableDBInstanceOptionsMessageRequestTypeDef
 
@@ -1244,6 +1396,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describependingmaintenanceactionsmessagerequesttypedef"></a>
+
 ## DescribePendingMaintenanceActionsMessageRequestTypeDef
 
 ```python
@@ -1257,6 +1411,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -1268,6 +1424,8 @@ Optional fields:
 - `Address`: `str`
 - `Port`: `int`
 - `HostedZoneId`: `str`
+
+<a id="enginedefaultstypedef"></a>
 
 ## EngineDefaultsTypeDef
 
@@ -1281,6 +1439,8 @@ Optional fields:
 - `Marker`: `str`
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
+<a id="eventcategoriesmaptypedef"></a>
+
 ## EventCategoriesMapTypeDef
 
 ```python
@@ -1291,6 +1451,8 @@ Optional fields:
 
 - `SourceType`: `str`
 - `EventCategories`: `List`\[`str`\]
+
+<a id="eventcategoriesmessagetypedef"></a>
 
 ## EventCategoriesMessageTypeDef
 
@@ -1304,6 +1466,8 @@ Required fields:
   `List`\[[EventCategoriesMapTypeDef](./type_defs.md#eventcategoriesmaptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="eventsubscriptiontypedef"></a>
 
 ## EventSubscriptionTypeDef
 
@@ -1324,6 +1488,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `EventSubscriptionArn`: `str`
 
+<a id="eventsubscriptionsmessagetypedef"></a>
+
 ## EventSubscriptionsMessageTypeDef
 
 ```python
@@ -1337,6 +1503,8 @@ Required fields:
   `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -1353,6 +1521,8 @@ Optional fields:
 - `Date`: `datetime`
 - `SourceArn`: `str`
 
+<a id="eventsmessagetypedef"></a>
+
 ## EventsMessageTypeDef
 
 ```python
@@ -1366,6 +1536,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="failoverdbclustermessagerequesttypedef"></a>
+
 ## FailoverDBClusterMessageRequestTypeDef
 
 ```python
@@ -1376,6 +1548,8 @@ Optional fields:
 
 - `DBClusterIdentifier`: `str`
 - `TargetDBInstanceIdentifier`: `str`
+
+<a id="failoverdbclusterresulttypedef"></a>
 
 ## FailoverDBClusterResultTypeDef
 
@@ -1389,6 +1563,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1399,6 +1575,8 @@ Required fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="globalclustermembertypedef"></a>
 
 ## GlobalClusterMemberTypeDef
 
@@ -1411,6 +1589,8 @@ Optional fields:
 - `DBClusterArn`: `str`
 - `Readers`: `List`\[`str`\]
 - `IsWriter`: `bool`
+
+<a id="globalclustertypedef"></a>
 
 ## GlobalClusterTypeDef
 
@@ -1432,6 +1612,8 @@ Optional fields:
 - `GlobalClusterMembers`:
   `List`\[[GlobalClusterMemberTypeDef](./type_defs.md#globalclustermembertypedef)\]
 
+<a id="globalclustersmessagetypedef"></a>
+
 ## GlobalClustersMessageTypeDef
 
 ```python
@@ -1446,6 +1628,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcemessagerequesttypedef"></a>
+
 ## ListTagsForResourceMessageRequestTypeDef
 
 ```python
@@ -1459,6 +1643,8 @@ Required fields:
 Optional fields:
 
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="modifydbclustermessagerequesttypedef"></a>
 
 ## ModifyDBClusterMessageRequestTypeDef
 
@@ -1486,6 +1672,8 @@ Optional fields:
 - `EngineVersion`: `str`
 - `DeletionProtection`: `bool`
 
+<a id="modifydbclusterparametergroupmessagerequesttypedef"></a>
+
 ## ModifyDBClusterParameterGroupMessageRequestTypeDef
 
 ```python
@@ -1498,6 +1686,8 @@ Required fields:
 - `Parameters`:
   `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
+<a id="modifydbclusterresulttypedef"></a>
+
 ## ModifyDBClusterResultTypeDef
 
 ```python
@@ -1509,6 +1699,8 @@ Required fields:
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifydbclustersnapshotattributemessagerequesttypedef"></a>
 
 ## ModifyDBClusterSnapshotAttributeMessageRequestTypeDef
 
@@ -1526,6 +1718,8 @@ Optional fields:
 - `ValuesToAdd`: `Sequence`\[`str`\]
 - `ValuesToRemove`: `Sequence`\[`str`\]
 
+<a id="modifydbclustersnapshotattributeresulttypedef"></a>
+
 ## ModifyDBClusterSnapshotAttributeResultTypeDef
 
 ```python
@@ -1538,6 +1732,8 @@ Required fields:
   [DBClusterSnapshotAttributesResultTypeDef](./type_defs.md#dbclustersnapshotattributesresulttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifydbinstancemessagerequesttypedef"></a>
 
 ## ModifyDBInstanceMessageRequestTypeDef
 
@@ -1559,6 +1755,8 @@ Optional fields:
 - `CACertificateIdentifier`: `str`
 - `PromotionTier`: `int`
 
+<a id="modifydbinstanceresulttypedef"></a>
+
 ## ModifyDBInstanceResultTypeDef
 
 ```python
@@ -1570,6 +1768,8 @@ Required fields:
 - `DBInstance`: [DBInstanceTypeDef](./type_defs.md#dbinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifydbsubnetgroupmessagerequesttypedef"></a>
 
 ## ModifyDBSubnetGroupMessageRequestTypeDef
 
@@ -1586,6 +1786,8 @@ Optional fields:
 
 - `DBSubnetGroupDescription`: `str`
 
+<a id="modifydbsubnetgroupresulttypedef"></a>
+
 ## ModifyDBSubnetGroupResultTypeDef
 
 ```python
@@ -1597,6 +1799,8 @@ Required fields:
 - `DBSubnetGroup`: [DBSubnetGroupTypeDef](./type_defs.md#dbsubnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyeventsubscriptionmessagerequesttypedef"></a>
 
 ## ModifyEventSubscriptionMessageRequestTypeDef
 
@@ -1615,6 +1819,8 @@ Optional fields:
 - `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
+<a id="modifyeventsubscriptionresulttypedef"></a>
+
 ## ModifyEventSubscriptionResultTypeDef
 
 ```python
@@ -1627,6 +1833,8 @@ Required fields:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyglobalclustermessagerequesttypedef"></a>
 
 ## ModifyGlobalClusterMessageRequestTypeDef
 
@@ -1643,6 +1851,8 @@ Optional fields:
 - `NewGlobalClusterIdentifier`: `str`
 - `DeletionProtection`: `bool`
 
+<a id="modifyglobalclusterresulttypedef"></a>
+
 ## ModifyGlobalClusterResultTypeDef
 
 ```python
@@ -1654,6 +1864,8 @@ Required fields:
 - `GlobalCluster`: [GlobalClusterTypeDef](./type_defs.md#globalclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="orderabledbinstanceoptiontypedef"></a>
 
 ## OrderableDBInstanceOptionTypeDef
 
@@ -1671,6 +1883,8 @@ Optional fields:
   `List`\[[AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)\]
 - `Vpc`: `bool`
 
+<a id="orderabledbinstanceoptionsmessagetypedef"></a>
+
 ## OrderableDBInstanceOptionsMessageTypeDef
 
 ```python
@@ -1685,6 +1899,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1696,6 +1912,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parametertypedef"></a>
 
 ## ParameterTypeDef
 
@@ -1716,6 +1934,8 @@ Optional fields:
 - `MinimumEngineVersion`: `str`
 - `ApplyMethod`: [ApplyMethodType](./literals.md#applymethodtype)
 
+<a id="pendingcloudwatchlogsexportstypedef"></a>
+
 ## PendingCloudwatchLogsExportsTypeDef
 
 ```python
@@ -1726,6 +1946,8 @@ Optional fields:
 
 - `LogTypesToEnable`: `List`\[`str`\]
 - `LogTypesToDisable`: `List`\[`str`\]
+
+<a id="pendingmaintenanceactiontypedef"></a>
 
 ## PendingMaintenanceActionTypeDef
 
@@ -1742,6 +1964,8 @@ Optional fields:
 - `CurrentApplyDate`: `datetime`
 - `Description`: `str`
 
+<a id="pendingmaintenanceactionsmessagetypedef"></a>
+
 ## PendingMaintenanceActionsMessageTypeDef
 
 ```python
@@ -1755,6 +1979,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="pendingmodifiedvaluestypedef"></a>
 
 ## PendingModifiedValuesTypeDef
 
@@ -1780,6 +2006,8 @@ Optional fields:
 - `PendingCloudwatchLogsExports`:
   [PendingCloudwatchLogsExportsTypeDef](./type_defs.md#pendingcloudwatchlogsexportstypedef)
 
+<a id="rebootdbinstancemessagerequesttypedef"></a>
+
 ## RebootDBInstanceMessageRequestTypeDef
 
 ```python
@@ -1794,6 +2022,8 @@ Optional fields:
 
 - `ForceFailover`: `bool`
 
+<a id="rebootdbinstanceresulttypedef"></a>
+
 ## RebootDBInstanceResultTypeDef
 
 ```python
@@ -1806,6 +2036,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removefromglobalclustermessagerequesttypedef"></a>
+
 ## RemoveFromGlobalClusterMessageRequestTypeDef
 
 ```python
@@ -1816,6 +2048,8 @@ Required fields:
 
 - `GlobalClusterIdentifier`: `str`
 - `DbClusterIdentifier`: `str`
+
+<a id="removefromglobalclusterresulttypedef"></a>
 
 ## RemoveFromGlobalClusterResultTypeDef
 
@@ -1829,6 +2063,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removesourceidentifierfromsubscriptionmessagerequesttypedef"></a>
+
 ## RemoveSourceIdentifierFromSubscriptionMessageRequestTypeDef
 
 ```python
@@ -1839,6 +2075,8 @@ Required fields:
 
 - `SubscriptionName`: `str`
 - `SourceIdentifier`: `str`
+
+<a id="removesourceidentifierfromsubscriptionresulttypedef"></a>
 
 ## RemoveSourceIdentifierFromSubscriptionResultTypeDef
 
@@ -1853,6 +2091,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removetagsfromresourcemessagerequesttypedef"></a>
+
 ## RemoveTagsFromResourceMessageRequestTypeDef
 
 ```python
@@ -1863,6 +2103,8 @@ Required fields:
 
 - `ResourceName`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="resetdbclusterparametergroupmessagerequesttypedef"></a>
 
 ## ResetDBClusterParameterGroupMessageRequestTypeDef
 
@@ -1880,6 +2122,8 @@ Optional fields:
 - `Parameters`:
   `Sequence`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 
+<a id="resourcependingmaintenanceactionstypedef"></a>
+
 ## ResourcePendingMaintenanceActionsTypeDef
 
 ```python
@@ -1891,6 +2135,8 @@ Optional fields:
 - `ResourceIdentifier`: `str`
 - `PendingMaintenanceActionDetails`:
   `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1905,6 +2151,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="restoredbclusterfromsnapshotmessagerequesttypedef"></a>
 
 ## RestoreDBClusterFromSnapshotMessageRequestTypeDef
 
@@ -1930,6 +2178,8 @@ Optional fields:
 - `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 
+<a id="restoredbclusterfromsnapshotresulttypedef"></a>
+
 ## RestoreDBClusterFromSnapshotResultTypeDef
 
 ```python
@@ -1941,6 +2191,8 @@ Required fields:
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="restoredbclustertopointintimemessagerequesttypedef"></a>
 
 ## RestoreDBClusterToPointInTimeMessageRequestTypeDef
 
@@ -1965,6 +2217,8 @@ Optional fields:
 - `EnableCloudwatchLogsExports`: `Sequence`\[`str`\]
 - `DeletionProtection`: `bool`
 
+<a id="restoredbclustertopointintimeresulttypedef"></a>
+
 ## RestoreDBClusterToPointInTimeResultTypeDef
 
 ```python
@@ -1977,6 +2231,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startdbclustermessagerequesttypedef"></a>
+
 ## StartDBClusterMessageRequestTypeDef
 
 ```python
@@ -1986,6 +2242,8 @@ from mypy_boto3_docdb.type_defs import StartDBClusterMessageRequestTypeDef
 Required fields:
 
 - `DBClusterIdentifier`: `str`
+
+<a id="startdbclusterresulttypedef"></a>
 
 ## StartDBClusterResultTypeDef
 
@@ -1999,6 +2257,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopdbclustermessagerequesttypedef"></a>
+
 ## StopDBClusterMessageRequestTypeDef
 
 ```python
@@ -2008,6 +2268,8 @@ from mypy_boto3_docdb.type_defs import StopDBClusterMessageRequestTypeDef
 Required fields:
 
 - `DBClusterIdentifier`: `str`
+
+<a id="stopdbclusterresulttypedef"></a>
 
 ## StopDBClusterResultTypeDef
 
@@ -2020,6 +2282,8 @@ Required fields:
 - `DBCluster`: [DBClusterTypeDef](./type_defs.md#dbclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="subnettypedef"></a>
 
 ## SubnetTypeDef
 
@@ -2034,6 +2298,8 @@ Optional fields:
   [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - `SubnetStatus`: `str`
 
+<a id="taglistmessagetypedef"></a>
+
 ## TagListMessageTypeDef
 
 ```python
@@ -2046,6 +2312,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2056,6 +2324,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="upgradetargettypedef"></a>
 
 ## UpgradeTargetTypeDef
 
@@ -2071,6 +2341,8 @@ Optional fields:
 - `AutoUpgrade`: `bool`
 - `IsMajorVersionUpgrade`: `bool`
 
+<a id="vpcsecuritygroupmembershiptypedef"></a>
+
 ## VpcSecurityGroupMembershipTypeDef
 
 ```python
@@ -2081,6 +2353,8 @@ Optional fields:
 
 - `VpcSecurityGroupId`: `str`
 - `Status`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

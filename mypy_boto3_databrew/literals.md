@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-gluedatabrew-module"></a>
+
 # Literals for boto3 GlueDataBrew module
 
 > [Index](..) > [GlueDataBrew](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
-[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Literals for boto3 GlueDataBrew module](#literals-for-boto3-gluedatabrew-module)
   - [AnalyticsModeType](#analyticsmodetype)
@@ -38,6 +40,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="analyticsmodetype"></a>
+
 ## AnalyticsModeType
 
 ```python
@@ -48,6 +52,8 @@ Values:
 
 - `DISABLE`
 - `ENABLE`
+
+<a id="compressionformattype"></a>
 
 ## CompressionFormatType
 
@@ -67,6 +73,8 @@ Values:
 - `ZLIB`
 - `ZSTD`
 
+<a id="databaseoutputmodetype"></a>
+
 ## DatabaseOutputModeType
 
 ```python
@@ -76,6 +84,8 @@ from mypy_boto3_databrew.literals import DatabaseOutputModeType
 Values:
 
 - `NEW_TABLE`
+
+<a id="encryptionmodetype"></a>
 
 ## EncryptionModeType
 
@@ -87,6 +97,8 @@ Values:
 
 - `SSE-KMS`
 - `SSE-S3`
+
+<a id="inputformattype"></a>
 
 ## InputFormatType
 
@@ -100,6 +112,8 @@ Values:
 - `EXCEL`
 - `JSON`
 - `PARQUET`
+
+<a id="jobrunstatetype"></a>
 
 ## JobRunStateType
 
@@ -117,6 +131,8 @@ Values:
 - `SUCCEEDED`
 - `TIMEOUT`
 
+<a id="jobtypetype"></a>
+
 ## JobTypeType
 
 ```python
@@ -128,6 +144,8 @@ Values:
 - `PROFILE`
 - `RECIPE`
 
+<a id="listdatasetspaginatorname"></a>
+
 ## ListDatasetsPaginatorName
 
 ```python
@@ -137,6 +155,8 @@ from mypy_boto3_databrew.literals import ListDatasetsPaginatorName
 Values:
 
 - `list_datasets`
+
+<a id="listjobrunspaginatorname"></a>
 
 ## ListJobRunsPaginatorName
 
@@ -148,6 +168,8 @@ Values:
 
 - `list_job_runs`
 
+<a id="listjobspaginatorname"></a>
+
 ## ListJobsPaginatorName
 
 ```python
@@ -157,6 +179,8 @@ from mypy_boto3_databrew.literals import ListJobsPaginatorName
 Values:
 
 - `list_jobs`
+
+<a id="listprojectspaginatorname"></a>
 
 ## ListProjectsPaginatorName
 
@@ -168,6 +192,8 @@ Values:
 
 - `list_projects`
 
+<a id="listrecipeversionspaginatorname"></a>
+
 ## ListRecipeVersionsPaginatorName
 
 ```python
@@ -177,6 +203,8 @@ from mypy_boto3_databrew.literals import ListRecipeVersionsPaginatorName
 Values:
 
 - `list_recipe_versions`
+
+<a id="listrecipespaginatorname"></a>
 
 ## ListRecipesPaginatorName
 
@@ -188,6 +216,8 @@ Values:
 
 - `list_recipes`
 
+<a id="listrulesetspaginatorname"></a>
+
 ## ListRulesetsPaginatorName
 
 ```python
@@ -198,6 +228,8 @@ Values:
 
 - `list_rulesets`
 
+<a id="listschedulespaginatorname"></a>
+
 ## ListSchedulesPaginatorName
 
 ```python
@@ -207,6 +239,8 @@ from mypy_boto3_databrew.literals import ListSchedulesPaginatorName
 Values:
 
 - `list_schedules`
+
+<a id="logsubscriptiontype"></a>
 
 ## LogSubscriptionType
 
@@ -219,6 +253,8 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
+<a id="ordertype"></a>
+
 ## OrderType
 
 ```python
@@ -230,6 +266,8 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="orderedbytype"></a>
+
 ## OrderedByType
 
 ```python
@@ -239,6 +277,8 @@ from mypy_boto3_databrew.literals import OrderedByType
 Values:
 
 - `LAST_MODIFIED_DATE`
+
+<a id="outputformattype"></a>
 
 ## OutputFormatType
 
@@ -257,6 +297,8 @@ Values:
 - `TABLEAUHYPER`
 - `XML`
 
+<a id="parametertypetype"></a>
+
 ## ParameterTypeType
 
 ```python
@@ -269,6 +311,8 @@ Values:
 - `Number`
 - `String`
 
+<a id="samplemodetype"></a>
+
 ## SampleModeType
 
 ```python
@@ -279,6 +323,8 @@ Values:
 
 - `CUSTOM_ROWS`
 - `FULL_DATASET`
+
+<a id="sampletypetype"></a>
 
 ## SampleTypeType
 
@@ -291,6 +337,8 @@ Values:
 - `FIRST_N`
 - `LAST_N`
 - `RANDOM`
+
+<a id="sessionstatustype"></a>
 
 ## SessionStatusType
 
@@ -311,6 +359,8 @@ Values:
 - `TERMINATING`
 - `UPDATING`
 
+<a id="sourcetype"></a>
+
 ## SourceType
 
 ```python
@@ -322,6 +372,8 @@ Values:
 - `DATA-CATALOG`
 - `DATABASE`
 - `S3`
+
+<a id="thresholdtypetype"></a>
 
 ## ThresholdTypeType
 
@@ -336,6 +388,8 @@ Values:
 - `LESS_THAN`
 - `LESS_THAN_OR_EQUAL`
 
+<a id="thresholdunittype"></a>
+
 ## ThresholdUnitType
 
 ```python
@@ -347,6 +401,8 @@ Values:
 - `COUNT`
 - `PERCENTAGE`
 
+<a id="validationmodetype"></a>
+
 ## ValidationModeType
 
 ```python
@@ -356,6 +412,8 @@ from mypy_boto3_databrew.literals import ValidationModeType
 Values:
 
 - `CHECK_ALL`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -664,6 +722,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

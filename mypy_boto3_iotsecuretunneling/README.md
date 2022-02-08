@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotsecuretunneling-module"></a>
+
 # Type annotations for boto3 IoTSecureTunneling module
 
 > [Index](..) > IoTSecureTunneling
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTSecureTunneling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsecuretunneling.html#IoTSecureTunneling)
 type annotations stubs module
-[mypy_boto3_iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
+[mypy-boto3-iotsecuretunneling](https://pypi.org/project/mypy-boto3-iotsecuretunneling/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotsecuretunneling]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotsecuretunneling]'
+
+# standalone installation
 pip install mypy-boto3-iotsecuretunneling
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iotsecuretunneling
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="iotsecuretunnelingclient"></a>
 
 ## IoTSecureTunnelingClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -42,6 +56,8 @@ from mypy_boto3_iotsecuretunneling.client import IoTSecureTunnelingClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTSecureTunnelingClient [exceptions](./client.md#exceptions)
@@ -49,6 +65,8 @@ IoTSecureTunnelingClient [exceptions](./client.md#exceptions)
 - ClientError
 - LimitExceededException
 - ResourceNotFoundException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -63,6 +81,8 @@ from mypy_boto3_iotsecuretunneling.literals import ConnectionStatusType, ...
 - [ConnectionStatusType](./literals.md#connectionstatustype)
 - [TunnelStatusType](./literals.md#tunnelstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

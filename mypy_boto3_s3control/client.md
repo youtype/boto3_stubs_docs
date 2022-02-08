@@ -1,3 +1,5 @@
+<a id="s3controlclient-for-boto3-s3control-module"></a>
+
 # S3ControlClient for boto3 S3Control module
 
 > [Index](..) > [S3Control](.) > S3ControlClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
 type annotations stubs module
-[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [S3ControlClient for boto3 S3Control module](#s3controlclient-for-boto3-s3control-module)
   - [S3ControlClient](#s3controlclient)
@@ -73,6 +75,8 @@ type annotations stubs module
     - [update_job_status](#update_job_status)
     - [get_paginator](#get_paginator)
 
+<a id="s3controlclient"></a>
+
 ## S3ControlClient
 
 Type annotations for `boto3.client("s3control")`
@@ -80,14 +84,17 @@ Type annotations for `boto3.client("s3control")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_s3control.client import S3ControlClient
 
 def get_s3control_client() -> S3ControlClient:
-    return boto3.client("s3control")
+    return Session().client("s3control")
 ```
 
 Boto3 documentation:
 [S3Control.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -117,7 +124,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -129,6 +140,8 @@ Boto3 documentation:
 [S3Control.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -144,6 +157,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_access_point"></a>
 
 ### create_access_point
 
@@ -170,6 +185,8 @@ Keyword-only arguments:
 Returns
 [CreateAccessPointResultTypeDef](./type_defs.md#createaccesspointresulttypedef).
 
+<a id="create_access_point_for_object_lambda"></a>
+
 ### create_access_point_for_object_lambda
 
 Creates an Object Lambda Access Point.
@@ -193,6 +210,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAccessPointForObjectLambdaResultTypeDef](./type_defs.md#createaccesspointforobjectlambdaresulttypedef).
+
+<a id="create_bucket"></a>
 
 ### create_bucket
 
@@ -221,6 +240,8 @@ Keyword-only arguments:
 - `OutpostId`: `str`
 
 Returns [CreateBucketResultTypeDef](./type_defs.md#createbucketresulttypedef).
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -252,6 +273,8 @@ Keyword-only arguments:
 
 Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
+<a id="create_multi_region_access_point"></a>
+
 ### create_multi_region_access_point
 
 Creates a Multi-Region Access Point and associates it with the specified
@@ -277,6 +300,8 @@ Keyword-only arguments:
 Returns
 [CreateMultiRegionAccessPointResultTypeDef](./type_defs.md#createmultiregionaccesspointresulttypedef).
 
+<a id="delete_access_point"></a>
+
 ### delete_access_point
 
 Deletes the specified access point.
@@ -293,6 +318,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
+
+<a id="delete_access_point_for_object_lambda"></a>
 
 ### delete_access_point_for_object_lambda
 
@@ -312,6 +339,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
 
+<a id="delete_access_point_policy"></a>
+
 ### delete_access_point_policy
 
 Deletes the access point policy for the specified access point.
@@ -329,6 +358,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
+
+<a id="delete_access_point_policy_for_object_lambda"></a>
 
 ### delete_access_point_policy_for_object_lambda
 
@@ -349,6 +380,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
 
+<a id="delete_bucket"></a>
+
 ### delete_bucket
 
 .
@@ -365,6 +398,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
+
+<a id="delete_bucket_lifecycle_configuration"></a>
 
 ### delete_bucket_lifecycle_configuration
 
@@ -384,6 +419,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 
+<a id="delete_bucket_policy"></a>
+
 ### delete_bucket_policy
 
 .
@@ -401,6 +438,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 
+<a id="delete_bucket_tagging"></a>
+
 ### delete_bucket_tagging
 
 .
@@ -417,6 +456,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
+
+<a id="delete_job_tagging"></a>
 
 ### delete_job_tagging
 
@@ -436,6 +477,8 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_multi_region_access_point"></a>
 
 ### delete_multi_region_access_point
 
@@ -461,6 +504,8 @@ Keyword-only arguments:
 Returns
 [DeleteMultiRegionAccessPointResultTypeDef](./type_defs.md#deletemultiregionaccesspointresulttypedef).
 
+<a id="delete_public_access_block"></a>
+
 ### delete_public_access_block
 
 Removes the `PublicAccessBlock` configuration for an Amazon Web Services
@@ -479,6 +524,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
+<a id="delete_storage_lens_configuration"></a>
+
 ### delete_storage_lens_configuration
 
 Deletes the Amazon S3 Storage Lens configuration.
@@ -496,6 +543,8 @@ Keyword-only arguments:
 
 - `ConfigId`: `str` *(required)*
 - `AccountId`: `str` *(required)*
+
+<a id="delete_storage_lens_configuration_tagging"></a>
 
 ### delete_storage_lens_configuration_tagging
 
@@ -517,6 +566,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_job"></a>
+
 ### describe_job
 
 Retrieves the configuration parameters and status for a Batch Operations job.
@@ -535,6 +586,8 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns [DescribeJobResultTypeDef](./type_defs.md#describejobresulttypedef).
+
+<a id="describe_multi_region_access_point_operation"></a>
 
 ### describe_multi_region_access_point_operation
 
@@ -559,6 +612,8 @@ Keyword-only arguments:
 Returns
 [DescribeMultiRegionAccessPointOperationResultTypeDef](./type_defs.md#describemultiregionaccesspointoperationresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -576,6 +631,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_access_point"></a>
 
 ### get_access_point
 
@@ -596,6 +653,8 @@ Keyword-only arguments:
 
 Returns
 [GetAccessPointResultTypeDef](./type_defs.md#getaccesspointresulttypedef).
+
+<a id="get_access_point_configuration_for_object_lambda"></a>
 
 ### get_access_point_configuration_for_object_lambda
 
@@ -618,6 +677,8 @@ Keyword-only arguments:
 
 Returns
 [GetAccessPointConfigurationForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresulttypedef).
+
+<a id="get_access_point_for_object_lambda"></a>
 
 ### get_access_point_for_object_lambda
 
@@ -642,6 +703,8 @@ Keyword-only arguments:
 Returns
 [GetAccessPointForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointforobjectlambdaresulttypedef).
 
+<a id="get_access_point_policy"></a>
+
 ### get_access_point_policy
 
 Returns the access point policy associated with the specified access point.
@@ -662,6 +725,8 @@ Keyword-only arguments:
 
 Returns
 [GetAccessPointPolicyResultTypeDef](./type_defs.md#getaccesspointpolicyresulttypedef).
+
+<a id="get_access_point_policy_for_object_lambda"></a>
 
 ### get_access_point_policy_for_object_lambda
 
@@ -684,6 +749,8 @@ Keyword-only arguments:
 Returns
 [GetAccessPointPolicyForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicyforobjectlambdaresulttypedef).
 
+<a id="get_access_point_policy_status"></a>
+
 ### get_access_point_policy_status
 
 Indicates whether the specified access point currently has a policy that allows
@@ -705,6 +772,8 @@ Keyword-only arguments:
 
 Returns
 [GetAccessPointPolicyStatusResultTypeDef](./type_defs.md#getaccesspointpolicystatusresulttypedef).
+
+<a id="get_access_point_policy_status_for_object_lambda"></a>
 
 ### get_access_point_policy_status_for_object_lambda
 
@@ -729,6 +798,8 @@ Keyword-only arguments:
 Returns
 [GetAccessPointPolicyStatusForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointpolicystatusforobjectlambdaresulttypedef).
 
+<a id="get_bucket"></a>
+
 ### get_bucket
 
 Gets an Amazon S3 on Outposts bucket.
@@ -747,6 +818,8 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 
 Returns [GetBucketResultTypeDef](./type_defs.md#getbucketresulttypedef).
+
+<a id="get_bucket_lifecycle_configuration"></a>
 
 ### get_bucket_lifecycle_configuration
 
@@ -769,6 +842,8 @@ Keyword-only arguments:
 Returns
 [GetBucketLifecycleConfigurationResultTypeDef](./type_defs.md#getbucketlifecycleconfigurationresulttypedef).
 
+<a id="get_bucket_policy"></a>
+
 ### get_bucket_policy
 
 .
@@ -788,6 +863,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketPolicyResultTypeDef](./type_defs.md#getbucketpolicyresulttypedef).
+
+<a id="get_bucket_tagging"></a>
 
 ### get_bucket_tagging
 
@@ -809,6 +886,8 @@ Keyword-only arguments:
 Returns
 [GetBucketTaggingResultTypeDef](./type_defs.md#getbuckettaggingresulttypedef).
 
+<a id="get_job_tagging"></a>
+
 ### get_job_tagging
 
 Returns the tags on an S3 Batch Operations job.
@@ -828,6 +907,8 @@ Keyword-only arguments:
 
 Returns
 [GetJobTaggingResultTypeDef](./type_defs.md#getjobtaggingresulttypedef).
+
+<a id="get_multi_region_access_point"></a>
 
 ### get_multi_region_access_point
 
@@ -851,6 +932,8 @@ Keyword-only arguments:
 Returns
 [GetMultiRegionAccessPointResultTypeDef](./type_defs.md#getmultiregionaccesspointresulttypedef).
 
+<a id="get_multi_region_access_point_policy"></a>
+
 ### get_multi_region_access_point_policy
 
 Returns the access control policy of the specified Multi-Region Access Point.
@@ -871,6 +954,8 @@ Keyword-only arguments:
 
 Returns
 [GetMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicyresulttypedef).
+
+<a id="get_multi_region_access_point_policy_status"></a>
 
 ### get_multi_region_access_point_policy_status
 
@@ -894,6 +979,8 @@ Keyword-only arguments:
 Returns
 [GetMultiRegionAccessPointPolicyStatusResultTypeDef](./type_defs.md#getmultiregionaccesspointpolicystatusresulttypedef).
 
+<a id="get_public_access_block"></a>
+
 ### get_public_access_block
 
 Retrieves the `PublicAccessBlock` configuration for an Amazon Web Services
@@ -914,6 +1001,8 @@ Keyword-only arguments:
 
 Returns
 [GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
+
+<a id="get_storage_lens_configuration"></a>
 
 ### get_storage_lens_configuration
 
@@ -936,6 +1025,8 @@ Keyword-only arguments:
 Returns
 [GetStorageLensConfigurationResultTypeDef](./type_defs.md#getstoragelensconfigurationresulttypedef).
 
+<a id="get_storage_lens_configuration_tagging"></a>
+
 ### get_storage_lens_configuration_tagging
 
 Gets the tags of Amazon S3 Storage Lens configuration.
@@ -956,6 +1047,8 @@ Keyword-only arguments:
 
 Returns
 [GetStorageLensConfigurationTaggingResultTypeDef](./type_defs.md#getstoragelensconfigurationtaggingresulttypedef).
+
+<a id="list_access_points"></a>
 
 ### list_access_points
 
@@ -980,6 +1073,8 @@ Keyword-only arguments:
 Returns
 [ListAccessPointsResultTypeDef](./type_defs.md#listaccesspointsresulttypedef).
 
+<a id="list_access_points_for_object_lambda"></a>
+
 ### list_access_points_for_object_lambda
 
 Returns a list of the access points associated with the Object Lambda Access
@@ -1003,6 +1098,8 @@ Keyword-only arguments:
 Returns
 [ListAccessPointsForObjectLambdaResultTypeDef](./type_defs.md#listaccesspointsforobjectlambdaresulttypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Lists current S3 Batch Operations jobs and jobs that have ended within the last
@@ -1024,6 +1121,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
+
+<a id="list_multi_region_access_points"></a>
 
 ### list_multi_region_access_points
 
@@ -1048,6 +1147,8 @@ Keyword-only arguments:
 Returns
 [ListMultiRegionAccessPointsResultTypeDef](./type_defs.md#listmultiregionaccesspointsresulttypedef).
 
+<a id="list_regional_buckets"></a>
+
 ### list_regional_buckets
 
 Returns a list of all Outposts buckets in an Outpost that are owned by the
@@ -1071,6 +1172,8 @@ Keyword-only arguments:
 Returns
 [ListRegionalBucketsResultTypeDef](./type_defs.md#listregionalbucketsresulttypedef).
 
+<a id="list_storage_lens_configurations"></a>
+
 ### list_storage_lens_configurations
 
 Gets a list of Amazon S3 Storage Lens configurations.
@@ -1091,6 +1194,8 @@ Keyword-only arguments:
 
 Returns
 [ListStorageLensConfigurationsResultTypeDef](./type_defs.md#liststoragelensconfigurationsresulttypedef).
+
+<a id="put_access_point_configuration_for_object_lambda"></a>
 
 ### put_access_point_configuration_for_object_lambda
 
@@ -1114,6 +1219,8 @@ Keyword-only arguments:
   [ObjectLambdaConfigurationTypeDef](./type_defs.md#objectlambdaconfigurationtypedef)
   *(required)*
 
+<a id="put_access_point_policy"></a>
+
 ### put_access_point_policy
 
 Associates an access policy with the specified access point.
@@ -1133,6 +1240,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Policy`: `str` *(required)*
 
+<a id="put_access_point_policy_for_object_lambda"></a>
+
 ### put_access_point_policy_for_object_lambda
 
 Creates or replaces resource policy for an Object Lambda Access Point.
@@ -1151,6 +1260,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Name`: `str` *(required)*
 - `Policy`: `str` *(required)*
+
+<a id="put_bucket_lifecycle_configuration"></a>
 
 ### put_bucket_lifecycle_configuration
 
@@ -1172,6 +1283,8 @@ Keyword-only arguments:
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 
+<a id="put_bucket_policy"></a>
+
 ### put_bucket_policy
 
 .
@@ -1191,6 +1304,8 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 
+<a id="put_bucket_tagging"></a>
+
 ### put_bucket_tagging
 
 .
@@ -1208,6 +1323,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `Bucket`: `str` *(required)*
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
+
+<a id="put_job_tagging"></a>
 
 ### put_job_tagging
 
@@ -1229,6 +1346,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_multi_region_access_point_policy"></a>
 
 ### put_multi_region_access_point_policy
 
@@ -1255,6 +1374,8 @@ Keyword-only arguments:
 Returns
 [PutMultiRegionAccessPointPolicyResultTypeDef](./type_defs.md#putmultiregionaccesspointpolicyresulttypedef).
 
+<a id="put_public_access_block"></a>
+
 ### put_public_access_block
 
 Creates or modifies the `PublicAccessBlock` configuration for an Amazon Web
@@ -1275,6 +1396,8 @@ Keyword-only arguments:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
   *(required)*
 - `AccountId`: `str` *(required)*
+
+<a id="put_storage_lens_configuration"></a>
 
 ### put_storage_lens_configuration
 
@@ -1299,6 +1422,8 @@ Keyword-only arguments:
 - `Tags`:
   `Sequence`\[[StorageLensTagTypeDef](./type_defs.md#storagelenstagtypedef)\]
 
+<a id="put_storage_lens_configuration_tagging"></a>
+
 ### put_storage_lens_configuration_tagging
 
 Put or replace tags on an existing Amazon S3 Storage Lens configuration.
@@ -1322,6 +1447,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_job_priority"></a>
+
 ### update_job_priority
 
 Updates an existing S3 Batch Operations job's priority.
@@ -1342,6 +1469,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateJobPriorityResultTypeDef](./type_defs.md#updatejobpriorityresulttypedef).
+
+<a id="update_job_status"></a>
 
 ### update_job_status
 
@@ -1365,6 +1494,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateJobStatusResultTypeDef](./type_defs.md#updatejobstatusresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

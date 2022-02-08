@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codecommit-module"></a>
+
 # Typed dictionaries for boto3 CodeCommit module
 
 > [Index](..) > [CodeCommit](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeCommit](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codecommit.html#CodeCommit)
 type annotations stubs module
-[mypy_boto3_codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
+[mypy-boto3-codecommit](https://pypi.org/project/mypy-boto3-codecommit/).
 
 - [Typed dictionaries for boto3 CodeCommit module](#typed-dictionaries-for-boto3-codecommit-module)
   - [ApprovalRuleEventMetadataTypeDef](#approvalruleeventmetadatatypedef)
@@ -210,6 +212,8 @@ type annotations stubs module
   - [UpdateRepositoryNameInputRequestTypeDef](#updaterepositorynameinputrequesttypedef)
   - [UserInfoTypeDef](#userinfotypedef)
 
+<a id="approvalruleeventmetadatatypedef"></a>
+
 ## ApprovalRuleEventMetadataTypeDef
 
 ```python
@@ -222,6 +226,8 @@ Optional fields:
 - `approvalRuleId`: `str`
 - `approvalRuleContent`: `str`
 
+<a id="approvalruleoverriddeneventmetadatatypedef"></a>
+
 ## ApprovalRuleOverriddenEventMetadataTypeDef
 
 ```python
@@ -232,6 +238,8 @@ Optional fields:
 
 - `revisionId`: `str`
 - `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
+
+<a id="approvalruletemplatetypedef"></a>
 
 ## ApprovalRuleTemplateTypeDef
 
@@ -249,6 +257,8 @@ Optional fields:
 - `lastModifiedDate`: `datetime`
 - `creationDate`: `datetime`
 - `lastModifiedUser`: `str`
+
+<a id="approvalruletypedef"></a>
 
 ## ApprovalRuleTypeDef
 
@@ -268,6 +278,8 @@ Optional fields:
 - `originApprovalRuleTemplate`:
   [OriginApprovalRuleTemplateTypeDef](./type_defs.md#originapprovalruletemplatetypedef)
 
+<a id="approvalstatechangedeventmetadatatypedef"></a>
+
 ## ApprovalStateChangedEventMetadataTypeDef
 
 ```python
@@ -278,6 +290,8 @@ Optional fields:
 
 - `revisionId`: `str`
 - `approvalStatus`: [ApprovalStateType](./literals.md#approvalstatetype)
+
+<a id="approvaltypedef"></a>
 
 ## ApprovalTypeDef
 
@@ -290,6 +304,8 @@ Optional fields:
 - `userArn`: `str`
 - `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
 
+<a id="associateapprovalruletemplatewithrepositoryinputrequesttypedef"></a>
+
 ## AssociateApprovalRuleTemplateWithRepositoryInputRequestTypeDef
 
 ```python
@@ -300,6 +316,8 @@ Required fields:
 
 - `approvalRuleTemplateName`: `str`
 - `repositoryName`: `str`
+
+<a id="batchassociateapprovalruletemplatewithrepositorieserrortypedef"></a>
 
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesErrorTypeDef
 
@@ -313,6 +331,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchassociateapprovalruletemplatewithrepositoriesinputrequesttypedef"></a>
+
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesInputRequestTypeDef
 
 ```python
@@ -323,6 +343,8 @@ Required fields:
 
 - `approvalRuleTemplateName`: `str`
 - `repositoryNames`: `Sequence`\[`str`\]
+
+<a id="batchassociateapprovalruletemplatewithrepositoriesoutputtypedef"></a>
 
 ## BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef
 
@@ -338,6 +360,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdescribemergeconflictserrortypedef"></a>
+
 ## BatchDescribeMergeConflictsErrorTypeDef
 
 ```python
@@ -349,6 +373,8 @@ Required fields:
 - `filePath`: `str`
 - `exceptionName`: `str`
 - `message`: `str`
+
+<a id="batchdescribemergeconflictsinputrequesttypedef"></a>
 
 ## BatchDescribeMergeConflictsInputRequestTypeDef
 
@@ -375,6 +401,8 @@ Optional fields:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `nextToken`: `str`
 
+<a id="batchdescribemergeconflictsoutputtypedef"></a>
+
 ## BatchDescribeMergeConflictsOutputTypeDef
 
 ```python
@@ -393,6 +421,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdisassociateapprovalruletemplatefromrepositorieserrortypedef"></a>
+
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesErrorTypeDef
 
 ```python
@@ -405,6 +435,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchdisassociateapprovalruletemplatefromrepositoriesinputrequesttypedef"></a>
+
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesInputRequestTypeDef
 
 ```python
@@ -415,6 +447,8 @@ Required fields:
 
 - `approvalRuleTemplateName`: `str`
 - `repositoryNames`: `Sequence`\[`str`\]
+
+<a id="batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef"></a>
 
 ## BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef
 
@@ -430,6 +464,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetcommitserrortypedef"></a>
+
 ## BatchGetCommitsErrorTypeDef
 
 ```python
@@ -442,6 +478,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 
+<a id="batchgetcommitsinputrequesttypedef"></a>
+
 ## BatchGetCommitsInputRequestTypeDef
 
 ```python
@@ -452,6 +490,8 @@ Required fields:
 
 - `commitIds`: `Sequence`\[`str`\]
 - `repositoryName`: `str`
+
+<a id="batchgetcommitsoutputtypedef"></a>
 
 ## BatchGetCommitsOutputTypeDef
 
@@ -467,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetrepositoriesinputrequesttypedef"></a>
+
 ## BatchGetRepositoriesInputRequestTypeDef
 
 ```python
@@ -476,6 +518,8 @@ from mypy_boto3_codecommit.type_defs import BatchGetRepositoriesInputRequestType
 Required fields:
 
 - `repositoryNames`: `Sequence`\[`str`\]
+
+<a id="batchgetrepositoriesoutputtypedef"></a>
 
 ## BatchGetRepositoriesOutputTypeDef
 
@@ -491,6 +535,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="blobmetadatatypedef"></a>
+
 ## BlobMetadataTypeDef
 
 ```python
@@ -503,6 +549,8 @@ Optional fields:
 - `path`: `str`
 - `mode`: `str`
 
+<a id="branchinfotypedef"></a>
+
 ## BranchInfoTypeDef
 
 ```python
@@ -513,6 +561,8 @@ Optional fields:
 
 - `branchName`: `str`
 - `commitId`: `str`
+
+<a id="commenttypedef"></a>
 
 ## CommentTypeDef
 
@@ -533,6 +583,8 @@ Optional fields:
 - `callerReactions`: `List`\[`str`\]
 - `reactionCounts`: `Dict`\[`str`, `int`\]
 
+<a id="commentsforcomparedcommittypedef"></a>
+
 ## CommentsForComparedCommitTypeDef
 
 ```python
@@ -548,6 +600,8 @@ Optional fields:
 - `afterBlobId`: `str`
 - `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `comments`: `List`\[[CommentTypeDef](./type_defs.md#commenttypedef)\]
+
+<a id="commentsforpullrequesttypedef"></a>
 
 ## CommentsForPullRequestTypeDef
 
@@ -566,6 +620,8 @@ Optional fields:
 - `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `comments`: `List`\[[CommentTypeDef](./type_defs.md#commenttypedef)\]
 
+<a id="committypedef"></a>
+
 ## CommitTypeDef
 
 ```python
@@ -581,6 +637,8 @@ Optional fields:
 - `author`: [UserInfoTypeDef](./type_defs.md#userinfotypedef)
 - `committer`: [UserInfoTypeDef](./type_defs.md#userinfotypedef)
 - `additionalData`: `str`
+
+<a id="conflictmetadatatypedef"></a>
 
 ## ConflictMetadataTypeDef
 
@@ -602,6 +660,8 @@ Optional fields:
 - `mergeOperations`:
   [MergeOperationsTypeDef](./type_defs.md#mergeoperationstypedef)
 
+<a id="conflictresolutiontypedef"></a>
+
 ## ConflictResolutionTypeDef
 
 ```python
@@ -617,6 +677,8 @@ Optional fields:
 - `setFileModes`:
   `Sequence`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
+<a id="conflicttypedef"></a>
+
 ## ConflictTypeDef
 
 ```python
@@ -628,6 +690,8 @@ Optional fields:
 - `conflictMetadata`:
   [ConflictMetadataTypeDef](./type_defs.md#conflictmetadatatypedef)
 - `mergeHunks`: `List`\[[MergeHunkTypeDef](./type_defs.md#mergehunktypedef)\]
+
+<a id="createapprovalruletemplateinputrequesttypedef"></a>
 
 ## CreateApprovalRuleTemplateInputRequestTypeDef
 
@@ -644,6 +708,8 @@ Optional fields:
 
 - `approvalRuleTemplateDescription`: `str`
 
+<a id="createapprovalruletemplateoutputtypedef"></a>
+
 ## CreateApprovalRuleTemplateOutputTypeDef
 
 ```python
@@ -657,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createbranchinputrequesttypedef"></a>
+
 ## CreateBranchInputRequestTypeDef
 
 ```python
@@ -668,6 +736,8 @@ Required fields:
 - `repositoryName`: `str`
 - `branchName`: `str`
 - `commitId`: `str`
+
+<a id="createcommitinputrequesttypedef"></a>
 
 ## CreateCommitInputRequestTypeDef
 
@@ -694,6 +764,8 @@ Optional fields:
 - `setFileModes`:
   `Sequence`\[[SetFileModeEntryTypeDef](./type_defs.md#setfilemodeentrytypedef)\]
 
+<a id="createcommitoutputtypedef"></a>
+
 ## CreateCommitOutputTypeDef
 
 ```python
@@ -713,6 +785,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpullrequestapprovalruleinputrequesttypedef"></a>
+
 ## CreatePullRequestApprovalRuleInputRequestTypeDef
 
 ```python
@@ -725,6 +799,8 @@ Required fields:
 - `approvalRuleName`: `str`
 - `approvalRuleContent`: `str`
 
+<a id="createpullrequestapprovalruleoutputtypedef"></a>
+
 ## CreatePullRequestApprovalRuleOutputTypeDef
 
 ```python
@@ -736,6 +812,8 @@ Required fields:
 - `approvalRule`: [ApprovalRuleTypeDef](./type_defs.md#approvalruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpullrequestinputrequesttypedef"></a>
 
 ## CreatePullRequestInputRequestTypeDef
 
@@ -753,6 +831,8 @@ Optional fields:
 - `description`: `str`
 - `clientRequestToken`: `str`
 
+<a id="createpullrequestoutputtypedef"></a>
+
 ## CreatePullRequestOutputTypeDef
 
 ```python
@@ -764,6 +844,8 @@ Required fields:
 - `pullRequest`: [PullRequestTypeDef](./type_defs.md#pullrequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrepositoryinputrequesttypedef"></a>
 
 ## CreateRepositoryInputRequestTypeDef
 
@@ -780,6 +862,8 @@ Optional fields:
 - `repositoryDescription`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createrepositoryoutputtypedef"></a>
+
 ## CreateRepositoryOutputTypeDef
 
 ```python
@@ -792,6 +876,8 @@ Required fields:
   [RepositoryMetadataTypeDef](./type_defs.md#repositorymetadatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createunreferencedmergecommitinputrequesttypedef"></a>
 
 ## CreateUnreferencedMergeCommitInputRequestTypeDef
 
@@ -820,6 +906,8 @@ Optional fields:
 - `conflictResolution`:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
+<a id="createunreferencedmergecommitoutputtypedef"></a>
+
 ## CreateUnreferencedMergeCommitOutputTypeDef
 
 ```python
@@ -833,6 +921,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapprovalruletemplateinputrequesttypedef"></a>
+
 ## DeleteApprovalRuleTemplateInputRequestTypeDef
 
 ```python
@@ -842,6 +932,8 @@ from mypy_boto3_codecommit.type_defs import DeleteApprovalRuleTemplateInputReque
 Required fields:
 
 - `approvalRuleTemplateName`: `str`
+
+<a id="deleteapprovalruletemplateoutputtypedef"></a>
 
 ## DeleteApprovalRuleTemplateOutputTypeDef
 
@@ -855,6 +947,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebranchinputrequesttypedef"></a>
+
 ## DeleteBranchInputRequestTypeDef
 
 ```python
@@ -865,6 +959,8 @@ Required fields:
 
 - `repositoryName`: `str`
 - `branchName`: `str`
+
+<a id="deletebranchoutputtypedef"></a>
 
 ## DeleteBranchOutputTypeDef
 
@@ -878,6 +974,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecommentcontentinputrequesttypedef"></a>
+
 ## DeleteCommentContentInputRequestTypeDef
 
 ```python
@@ -887,6 +985,8 @@ from mypy_boto3_codecommit.type_defs import DeleteCommentContentInputRequestType
 Required fields:
 
 - `commentId`: `str`
+
+<a id="deletecommentcontentoutputtypedef"></a>
 
 ## DeleteCommentContentOutputTypeDef
 
@@ -900,6 +1000,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletefileentrytypedef"></a>
+
 ## DeleteFileEntryTypeDef
 
 ```python
@@ -909,6 +1011,8 @@ from mypy_boto3_codecommit.type_defs import DeleteFileEntryTypeDef
 Required fields:
 
 - `filePath`: `str`
+
+<a id="deletefileinputrequesttypedef"></a>
 
 ## DeleteFileInputRequestTypeDef
 
@@ -930,6 +1034,8 @@ Optional fields:
 - `name`: `str`
 - `email`: `str`
 
+<a id="deletefileoutputtypedef"></a>
+
 ## DeleteFileOutputTypeDef
 
 ```python
@@ -945,6 +1051,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepullrequestapprovalruleinputrequesttypedef"></a>
+
 ## DeletePullRequestApprovalRuleInputRequestTypeDef
 
 ```python
@@ -955,6 +1063,8 @@ Required fields:
 
 - `pullRequestId`: `str`
 - `approvalRuleName`: `str`
+
+<a id="deletepullrequestapprovalruleoutputtypedef"></a>
 
 ## DeletePullRequestApprovalRuleOutputTypeDef
 
@@ -968,6 +1078,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterepositoryinputrequesttypedef"></a>
+
 ## DeleteRepositoryInputRequestTypeDef
 
 ```python
@@ -977,6 +1089,8 @@ from mypy_boto3_codecommit.type_defs import DeleteRepositoryInputRequestTypeDef
 Required fields:
 
 - `repositoryName`: `str`
+
+<a id="deleterepositoryoutputtypedef"></a>
 
 ## DeleteRepositoryOutputTypeDef
 
@@ -989,6 +1103,8 @@ Required fields:
 - `repositoryId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemergeconflictsinputrequesttypedef"></a>
 
 ## DescribeMergeConflictsInputRequestTypeDef
 
@@ -1014,6 +1130,8 @@ Optional fields:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `nextToken`: `str`
 
+<a id="describemergeconflictsoutputtypedef"></a>
+
 ## DescribeMergeConflictsOutputTypeDef
 
 ```python
@@ -1031,6 +1149,8 @@ Required fields:
 - `baseCommitId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describepullrequesteventsinputrequesttypedef"></a>
 
 ## DescribePullRequestEventsInputRequestTypeDef
 
@@ -1050,6 +1170,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describepullrequesteventsoutputtypedef"></a>
+
 ## DescribePullRequestEventsOutputTypeDef
 
 ```python
@@ -1064,6 +1186,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="differencetypedef"></a>
+
 ## DifferenceTypeDef
 
 ```python
@@ -1076,6 +1200,8 @@ Optional fields:
 - `afterBlob`: [BlobMetadataTypeDef](./type_defs.md#blobmetadatatypedef)
 - `changeType`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 
+<a id="disassociateapprovalruletemplatefromrepositoryinputrequesttypedef"></a>
+
 ## DisassociateApprovalRuleTemplateFromRepositoryInputRequestTypeDef
 
 ```python
@@ -1086,6 +1212,8 @@ Required fields:
 
 - `approvalRuleTemplateName`: `str`
 - `repositoryName`: `str`
+
+<a id="evaluatepullrequestapprovalrulesinputrequesttypedef"></a>
 
 ## EvaluatePullRequestApprovalRulesInputRequestTypeDef
 
@@ -1098,6 +1226,8 @@ Required fields:
 - `pullRequestId`: `str`
 - `revisionId`: `str`
 
+<a id="evaluatepullrequestapprovalrulesoutputtypedef"></a>
+
 ## EvaluatePullRequestApprovalRulesOutputTypeDef
 
 ```python
@@ -1109,6 +1239,8 @@ Required fields:
 - `evaluation`: [EvaluationTypeDef](./type_defs.md#evaluationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="evaluationtypedef"></a>
 
 ## EvaluationTypeDef
 
@@ -1123,6 +1255,8 @@ Optional fields:
 - `approvalRulesSatisfied`: `List`\[`str`\]
 - `approvalRulesNotSatisfied`: `List`\[`str`\]
 
+<a id="filemetadatatypedef"></a>
+
 ## FileMetadataTypeDef
 
 ```python
@@ -1134,6 +1268,8 @@ Optional fields:
 - `absolutePath`: `str`
 - `blobId`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
+
+<a id="filemodestypedef"></a>
 
 ## FileModesTypeDef
 
@@ -1147,6 +1283,8 @@ Optional fields:
 - `destination`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 - `base`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
+<a id="filesizestypedef"></a>
+
 ## FileSizesTypeDef
 
 ```python
@@ -1158,6 +1296,8 @@ Optional fields:
 - `source`: `int`
 - `destination`: `int`
 - `base`: `int`
+
+<a id="filetypedef"></a>
 
 ## FileTypeDef
 
@@ -1172,6 +1312,8 @@ Optional fields:
 - `relativePath`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
+<a id="foldertypedef"></a>
+
 ## FolderTypeDef
 
 ```python
@@ -1184,6 +1326,8 @@ Optional fields:
 - `absolutePath`: `str`
 - `relativePath`: `str`
 
+<a id="getapprovalruletemplateinputrequesttypedef"></a>
+
 ## GetApprovalRuleTemplateInputRequestTypeDef
 
 ```python
@@ -1193,6 +1337,8 @@ from mypy_boto3_codecommit.type_defs import GetApprovalRuleTemplateInputRequestT
 Required fields:
 
 - `approvalRuleTemplateName`: `str`
+
+<a id="getapprovalruletemplateoutputtypedef"></a>
 
 ## GetApprovalRuleTemplateOutputTypeDef
 
@@ -1207,6 +1353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getblobinputrequesttypedef"></a>
+
 ## GetBlobInputRequestTypeDef
 
 ```python
@@ -1217,6 +1365,8 @@ Required fields:
 
 - `repositoryName`: `str`
 - `blobId`: `str`
+
+<a id="getbloboutputtypedef"></a>
 
 ## GetBlobOutputTypeDef
 
@@ -1230,6 +1380,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbranchinputrequesttypedef"></a>
+
 ## GetBranchInputRequestTypeDef
 
 ```python
@@ -1240,6 +1392,8 @@ Optional fields:
 
 - `repositoryName`: `str`
 - `branchName`: `str`
+
+<a id="getbranchoutputtypedef"></a>
 
 ## GetBranchOutputTypeDef
 
@@ -1253,6 +1407,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcommentinputrequesttypedef"></a>
+
 ## GetCommentInputRequestTypeDef
 
 ```python
@@ -1262,6 +1418,8 @@ from mypy_boto3_codecommit.type_defs import GetCommentInputRequestTypeDef
 Required fields:
 
 - `commentId`: `str`
+
+<a id="getcommentoutputtypedef"></a>
 
 ## GetCommentOutputTypeDef
 
@@ -1274,6 +1432,8 @@ Required fields:
 - `comment`: [CommentTypeDef](./type_defs.md#commenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcommentreactionsinputrequesttypedef"></a>
 
 ## GetCommentReactionsInputRequestTypeDef
 
@@ -1291,6 +1451,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getcommentreactionsoutputtypedef"></a>
+
 ## GetCommentReactionsOutputTypeDef
 
 ```python
@@ -1304,6 +1466,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcommentsforcomparedcommitinputrequesttypedef"></a>
 
 ## GetCommentsForComparedCommitInputRequestTypeDef
 
@@ -1322,6 +1486,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getcommentsforcomparedcommitoutputtypedef"></a>
+
 ## GetCommentsForComparedCommitOutputTypeDef
 
 ```python
@@ -1335,6 +1501,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcommentsforpullrequestinputrequesttypedef"></a>
 
 ## GetCommentsForPullRequestInputRequestTypeDef
 
@@ -1354,6 +1522,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getcommentsforpullrequestoutputtypedef"></a>
+
 ## GetCommentsForPullRequestOutputTypeDef
 
 ```python
@@ -1368,6 +1538,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcommitinputrequesttypedef"></a>
+
 ## GetCommitInputRequestTypeDef
 
 ```python
@@ -1378,6 +1550,8 @@ Required fields:
 
 - `repositoryName`: `str`
 - `commitId`: `str`
+
+<a id="getcommitoutputtypedef"></a>
 
 ## GetCommitOutputTypeDef
 
@@ -1390,6 +1564,8 @@ Required fields:
 - `commit`: [CommitTypeDef](./type_defs.md#committypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdifferencesinputrequesttypedef"></a>
 
 ## GetDifferencesInputRequestTypeDef
 
@@ -1410,6 +1586,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getdifferencesoutputtypedef"></a>
+
 ## GetDifferencesOutputTypeDef
 
 ```python
@@ -1423,6 +1601,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfileinputrequesttypedef"></a>
 
 ## GetFileInputRequestTypeDef
 
@@ -1438,6 +1618,8 @@ Required fields:
 Optional fields:
 
 - `commitSpecifier`: `str`
+
+<a id="getfileoutputtypedef"></a>
 
 ## GetFileOutputTypeDef
 
@@ -1456,6 +1638,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfolderinputrequesttypedef"></a>
+
 ## GetFolderInputRequestTypeDef
 
 ```python
@@ -1470,6 +1654,8 @@ Required fields:
 Optional fields:
 
 - `commitSpecifier`: `str`
+
+<a id="getfolderoutputtypedef"></a>
 
 ## GetFolderOutputTypeDef
 
@@ -1490,6 +1676,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmergecommitinputrequesttypedef"></a>
+
 ## GetMergeCommitInputRequestTypeDef
 
 ```python
@@ -1509,6 +1697,8 @@ Optional fields:
 - `conflictResolutionStrategy`:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 
+<a id="getmergecommitoutputtypedef"></a>
+
 ## GetMergeCommitOutputTypeDef
 
 ```python
@@ -1523,6 +1713,8 @@ Required fields:
 - `mergedCommitId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmergeconflictsinputrequesttypedef"></a>
 
 ## GetMergeConflictsInputRequestTypeDef
 
@@ -1547,6 +1739,8 @@ Optional fields:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 - `nextToken`: `str`
 
+<a id="getmergeconflictsoutputtypedef"></a>
+
 ## GetMergeConflictsOutputTypeDef
 
 ```python
@@ -1564,6 +1758,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmergeoptionsinputrequesttypedef"></a>
 
 ## GetMergeOptionsInputRequestTypeDef
 
@@ -1584,6 +1780,8 @@ Optional fields:
 - `conflictResolutionStrategy`:
   [ConflictResolutionStrategyTypeEnumType](./literals.md#conflictresolutionstrategytypeenumtype)
 
+<a id="getmergeoptionsoutputtypedef"></a>
+
 ## GetMergeOptionsOutputTypeDef
 
 ```python
@@ -1600,6 +1798,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpullrequestapprovalstatesinputrequesttypedef"></a>
+
 ## GetPullRequestApprovalStatesInputRequestTypeDef
 
 ```python
@@ -1610,6 +1810,8 @@ Required fields:
 
 - `pullRequestId`: `str`
 - `revisionId`: `str`
+
+<a id="getpullrequestapprovalstatesoutputtypedef"></a>
 
 ## GetPullRequestApprovalStatesOutputTypeDef
 
@@ -1623,6 +1825,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpullrequestinputrequesttypedef"></a>
+
 ## GetPullRequestInputRequestTypeDef
 
 ```python
@@ -1632,6 +1836,8 @@ from mypy_boto3_codecommit.type_defs import GetPullRequestInputRequestTypeDef
 Required fields:
 
 - `pullRequestId`: `str`
+
+<a id="getpullrequestoutputtypedef"></a>
 
 ## GetPullRequestOutputTypeDef
 
@@ -1645,6 +1851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpullrequestoverridestateinputrequesttypedef"></a>
+
 ## GetPullRequestOverrideStateInputRequestTypeDef
 
 ```python
@@ -1655,6 +1863,8 @@ Required fields:
 
 - `pullRequestId`: `str`
 - `revisionId`: `str`
+
+<a id="getpullrequestoverridestateoutputtypedef"></a>
 
 ## GetPullRequestOverrideStateOutputTypeDef
 
@@ -1669,6 +1879,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrepositoryinputrequesttypedef"></a>
+
 ## GetRepositoryInputRequestTypeDef
 
 ```python
@@ -1678,6 +1890,8 @@ from mypy_boto3_codecommit.type_defs import GetRepositoryInputRequestTypeDef
 Required fields:
 
 - `repositoryName`: `str`
+
+<a id="getrepositoryoutputtypedef"></a>
 
 ## GetRepositoryOutputTypeDef
 
@@ -1692,6 +1906,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrepositorytriggersinputrequesttypedef"></a>
+
 ## GetRepositoryTriggersInputRequestTypeDef
 
 ```python
@@ -1701,6 +1917,8 @@ from mypy_boto3_codecommit.type_defs import GetRepositoryTriggersInputRequestTyp
 Required fields:
 
 - `repositoryName`: `str`
+
+<a id="getrepositorytriggersoutputtypedef"></a>
 
 ## GetRepositoryTriggersOutputTypeDef
 
@@ -1716,6 +1934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="isbinaryfiletypedef"></a>
+
 ## IsBinaryFileTypeDef
 
 ```python
@@ -1728,6 +1948,8 @@ Optional fields:
 - `destination`: `bool`
 - `base`: `bool`
 
+<a id="listapprovalruletemplatesinputrequesttypedef"></a>
+
 ## ListApprovalRuleTemplatesInputRequestTypeDef
 
 ```python
@@ -1738,6 +1960,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listapprovalruletemplatesoutputtypedef"></a>
 
 ## ListApprovalRuleTemplatesOutputTypeDef
 
@@ -1751,6 +1975,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociatedapprovalruletemplatesforrepositoryinputrequesttypedef"></a>
 
 ## ListAssociatedApprovalRuleTemplatesForRepositoryInputRequestTypeDef
 
@@ -1767,6 +1993,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listassociatedapprovalruletemplatesforrepositoryoutputtypedef"></a>
+
 ## ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef
 
 ```python
@@ -1779,6 +2007,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbranchesinputrequesttypedef"></a>
 
 ## ListBranchesInputRequestTypeDef
 
@@ -1794,6 +2024,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listbranchesoutputtypedef"></a>
+
 ## ListBranchesOutputTypeDef
 
 ```python
@@ -1806,6 +2038,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpullrequestsinputrequesttypedef"></a>
 
 ## ListPullRequestsInputRequestTypeDef
 
@@ -1825,6 +2059,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listpullrequestsoutputtypedef"></a>
+
 ## ListPullRequestsOutputTypeDef
 
 ```python
@@ -1837,6 +2073,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrepositoriesforapprovalruletemplateinputrequesttypedef"></a>
 
 ## ListRepositoriesForApprovalRuleTemplateInputRequestTypeDef
 
@@ -1853,6 +2091,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listrepositoriesforapprovalruletemplateoutputtypedef"></a>
+
 ## ListRepositoriesForApprovalRuleTemplateOutputTypeDef
 
 ```python
@@ -1866,6 +2106,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrepositoriesinputrequesttypedef"></a>
+
 ## ListRepositoriesInputRequestTypeDef
 
 ```python
@@ -1877,6 +2119,8 @@ Optional fields:
 - `nextToken`: `str`
 - `sortBy`: [SortByEnumType](./literals.md#sortbyenumtype)
 - `order`: [OrderEnumType](./literals.md#orderenumtype)
+
+<a id="listrepositoriesoutputtypedef"></a>
 
 ## ListRepositoriesOutputTypeDef
 
@@ -1892,6 +2136,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -1906,6 +2152,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listtagsforresourceoutputtypedef"></a>
+
 ## ListTagsForResourceOutputTypeDef
 
 ```python
@@ -1919,6 +2167,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="locationtypedef"></a>
+
 ## LocationTypeDef
 
 ```python
@@ -1931,6 +2181,8 @@ Optional fields:
 - `filePosition`: `int`
 - `relativeFileVersion`:
   [RelativeFileVersionEnumType](./literals.md#relativefileversionenumtype)
+
+<a id="mergebranchesbyfastforwardinputrequesttypedef"></a>
 
 ## MergeBranchesByFastForwardInputRequestTypeDef
 
@@ -1948,6 +2200,8 @@ Optional fields:
 
 - `targetBranch`: `str`
 
+<a id="mergebranchesbyfastforwardoutputtypedef"></a>
+
 ## MergeBranchesByFastForwardOutputTypeDef
 
 ```python
@@ -1960,6 +2214,8 @@ Required fields:
 - `treeId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mergebranchesbysquashinputrequesttypedef"></a>
 
 ## MergeBranchesBySquashInputRequestTypeDef
 
@@ -1987,6 +2243,8 @@ Optional fields:
 - `conflictResolution`:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
+<a id="mergebranchesbysquashoutputtypedef"></a>
+
 ## MergeBranchesBySquashOutputTypeDef
 
 ```python
@@ -1999,6 +2257,8 @@ Required fields:
 - `treeId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mergebranchesbythreewayinputrequesttypedef"></a>
 
 ## MergeBranchesByThreeWayInputRequestTypeDef
 
@@ -2026,6 +2286,8 @@ Optional fields:
 - `conflictResolution`:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
+<a id="mergebranchesbythreewayoutputtypedef"></a>
+
 ## MergeBranchesByThreeWayOutputTypeDef
 
 ```python
@@ -2039,6 +2301,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="mergehunkdetailtypedef"></a>
+
 ## MergeHunkDetailTypeDef
 
 ```python
@@ -2050,6 +2314,8 @@ Optional fields:
 - `startLine`: `int`
 - `endLine`: `int`
 - `hunkContent`: `str`
+
+<a id="mergehunktypedef"></a>
 
 ## MergeHunkTypeDef
 
@@ -2065,6 +2331,8 @@ Optional fields:
   [MergeHunkDetailTypeDef](./type_defs.md#mergehunkdetailtypedef)
 - `base`: [MergeHunkDetailTypeDef](./type_defs.md#mergehunkdetailtypedef)
 
+<a id="mergemetadatatypedef"></a>
+
 ## MergeMetadataTypeDef
 
 ```python
@@ -2079,6 +2347,8 @@ Optional fields:
 - `mergeOption`:
   [MergeOptionTypeEnumType](./literals.md#mergeoptiontypeenumtype)
 
+<a id="mergeoperationstypedef"></a>
+
 ## MergeOperationsTypeDef
 
 ```python
@@ -2089,6 +2359,8 @@ Optional fields:
 
 - `source`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
 - `destination`: [ChangeTypeEnumType](./literals.md#changetypeenumtype)
+
+<a id="mergepullrequestbyfastforwardinputrequesttypedef"></a>
 
 ## MergePullRequestByFastForwardInputRequestTypeDef
 
@@ -2105,6 +2377,8 @@ Optional fields:
 
 - `sourceCommitId`: `str`
 
+<a id="mergepullrequestbyfastforwardoutputtypedef"></a>
+
 ## MergePullRequestByFastForwardOutputTypeDef
 
 ```python
@@ -2116,6 +2390,8 @@ Required fields:
 - `pullRequest`: [PullRequestTypeDef](./type_defs.md#pullrequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mergepullrequestbysquashinputrequesttypedef"></a>
 
 ## MergePullRequestBySquashInputRequestTypeDef
 
@@ -2142,6 +2418,8 @@ Optional fields:
 - `conflictResolution`:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
+<a id="mergepullrequestbysquashoutputtypedef"></a>
+
 ## MergePullRequestBySquashOutputTypeDef
 
 ```python
@@ -2153,6 +2431,8 @@ Required fields:
 - `pullRequest`: [PullRequestTypeDef](./type_defs.md#pullrequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mergepullrequestbythreewayinputrequesttypedef"></a>
 
 ## MergePullRequestByThreeWayInputRequestTypeDef
 
@@ -2179,6 +2459,8 @@ Optional fields:
 - `conflictResolution`:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
 
+<a id="mergepullrequestbythreewayoutputtypedef"></a>
+
 ## MergePullRequestByThreeWayOutputTypeDef
 
 ```python
@@ -2190,6 +2472,8 @@ Required fields:
 - `pullRequest`: [PullRequestTypeDef](./type_defs.md#pullrequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="objecttypestypedef"></a>
 
 ## ObjectTypesTypeDef
 
@@ -2203,6 +2487,8 @@ Optional fields:
 - `destination`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
 - `base`: [ObjectTypeEnumType](./literals.md#objecttypeenumtype)
 
+<a id="originapprovalruletemplatetypedef"></a>
+
 ## OriginApprovalRuleTemplateTypeDef
 
 ```python
@@ -2213,6 +2499,8 @@ Optional fields:
 
 - `approvalRuleTemplateId`: `str`
 - `approvalRuleTemplateName`: `str`
+
+<a id="overridepullrequestapprovalrulesinputrequesttypedef"></a>
 
 ## OverridePullRequestApprovalRulesInputRequestTypeDef
 
@@ -2226,6 +2514,8 @@ Required fields:
 - `revisionId`: `str`
 - `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2237,6 +2527,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="postcommentforcomparedcommitinputrequesttypedef"></a>
 
 ## PostCommentForComparedCommitInputRequestTypeDef
 
@@ -2256,6 +2548,8 @@ Optional fields:
 - `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `clientRequestToken`: `str`
 
+<a id="postcommentforcomparedcommitoutputtypedef"></a>
+
 ## PostCommentForComparedCommitOutputTypeDef
 
 ```python
@@ -2273,6 +2567,8 @@ Required fields:
 - `comment`: [CommentTypeDef](./type_defs.md#commenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="postcommentforpullrequestinputrequesttypedef"></a>
 
 ## PostCommentForPullRequestInputRequestTypeDef
 
@@ -2293,6 +2589,8 @@ Optional fields:
 - `location`: [LocationTypeDef](./type_defs.md#locationtypedef)
 - `clientRequestToken`: `str`
 
+<a id="postcommentforpullrequestoutputtypedef"></a>
+
 ## PostCommentForPullRequestOutputTypeDef
 
 ```python
@@ -2312,6 +2610,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="postcommentreplyinputrequesttypedef"></a>
+
 ## PostCommentReplyInputRequestTypeDef
 
 ```python
@@ -2327,6 +2627,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 
+<a id="postcommentreplyoutputtypedef"></a>
+
 ## PostCommentReplyOutputTypeDef
 
 ```python
@@ -2338,6 +2640,8 @@ Required fields:
 - `comment`: [CommentTypeDef](./type_defs.md#commenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="pullrequestcreatedeventmetadatatypedef"></a>
 
 ## PullRequestCreatedEventMetadataTypeDef
 
@@ -2351,6 +2655,8 @@ Optional fields:
 - `sourceCommitId`: `str`
 - `destinationCommitId`: `str`
 - `mergeBase`: `str`
+
+<a id="pullrequesteventtypedef"></a>
 
 ## PullRequestEventTypeDef
 
@@ -2380,6 +2686,8 @@ Optional fields:
 - `approvalRuleOverriddenEventMetadata`:
   [ApprovalRuleOverriddenEventMetadataTypeDef](./type_defs.md#approvalruleoverriddeneventmetadatatypedef)
 
+<a id="pullrequestmergedstatechangedeventmetadatatypedef"></a>
+
 ## PullRequestMergedStateChangedEventMetadataTypeDef
 
 ```python
@@ -2391,6 +2699,8 @@ Optional fields:
 - `repositoryName`: `str`
 - `destinationReference`: `str`
 - `mergeMetadata`: [MergeMetadataTypeDef](./type_defs.md#mergemetadatatypedef)
+
+<a id="pullrequestsourcereferenceupdatedeventmetadatatypedef"></a>
 
 ## PullRequestSourceReferenceUpdatedEventMetadataTypeDef
 
@@ -2405,6 +2715,8 @@ Optional fields:
 - `afterCommitId`: `str`
 - `mergeBase`: `str`
 
+<a id="pullrequeststatuschangedeventmetadatatypedef"></a>
+
 ## PullRequestStatusChangedEventMetadataTypeDef
 
 ```python
@@ -2415,6 +2727,8 @@ Optional fields:
 
 - `pullRequestStatus`:
   [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
+
+<a id="pullrequesttargettypedef"></a>
 
 ## PullRequestTargetTypeDef
 
@@ -2431,6 +2745,8 @@ Optional fields:
 - `sourceCommit`: `str`
 - `mergeBase`: `str`
 - `mergeMetadata`: [MergeMetadataTypeDef](./type_defs.md#mergemetadatatypedef)
+
+<a id="pullrequesttypedef"></a>
 
 ## PullRequestTypeDef
 
@@ -2455,6 +2771,8 @@ Optional fields:
 - `approvalRules`:
   `List`\[[ApprovalRuleTypeDef](./type_defs.md#approvalruletypedef)\]
 
+<a id="putcommentreactioninputrequesttypedef"></a>
+
 ## PutCommentReactionInputRequestTypeDef
 
 ```python
@@ -2465,6 +2783,8 @@ Required fields:
 
 - `commentId`: `str`
 - `reactionValue`: `str`
+
+<a id="putfileentrytypedef"></a>
 
 ## PutFileEntryTypeDef
 
@@ -2482,6 +2802,8 @@ Optional fields:
 - `fileContent`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `sourceFile`:
   [SourceFileSpecifierTypeDef](./type_defs.md#sourcefilespecifiertypedef)
+
+<a id="putfileinputrequesttypedef"></a>
 
 ## PutFileInputRequestTypeDef
 
@@ -2504,6 +2826,8 @@ Optional fields:
 - `name`: `str`
 - `email`: `str`
 
+<a id="putfileoutputtypedef"></a>
+
 ## PutFileOutputTypeDef
 
 ```python
@@ -2518,6 +2842,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putrepositorytriggersinputrequesttypedef"></a>
+
 ## PutRepositoryTriggersInputRequestTypeDef
 
 ```python
@@ -2530,6 +2856,8 @@ Required fields:
 - `triggers`:
   `Sequence`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
 
+<a id="putrepositorytriggersoutputtypedef"></a>
+
 ## PutRepositoryTriggersOutputTypeDef
 
 ```python
@@ -2541,6 +2869,8 @@ Required fields:
 - `configurationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="reactionforcommenttypedef"></a>
 
 ## ReactionForCommentTypeDef
 
@@ -2555,6 +2885,8 @@ Optional fields:
 - `reactionUsers`: `List`\[`str`\]
 - `reactionsFromDeletedUsersCount`: `int`
 
+<a id="reactionvalueformatstypedef"></a>
+
 ## ReactionValueFormatsTypeDef
 
 ```python
@@ -2566,6 +2898,8 @@ Optional fields:
 - `emoji`: `str`
 - `shortCode`: `str`
 - `unicode`: `str`
+
+<a id="replacecontententrytypedef"></a>
 
 ## ReplaceContentEntryTypeDef
 
@@ -2583,6 +2917,8 @@ Optional fields:
 
 - `content`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
+
+<a id="repositorymetadatatypedef"></a>
 
 ## RepositoryMetadataTypeDef
 
@@ -2603,6 +2939,8 @@ Optional fields:
 - `cloneUrlSsh`: `str`
 - `Arn`: `str`
 
+<a id="repositorynameidpairtypedef"></a>
+
 ## RepositoryNameIdPairTypeDef
 
 ```python
@@ -2614,6 +2952,8 @@ Optional fields:
 - `repositoryName`: `str`
 - `repositoryId`: `str`
 
+<a id="repositorytriggerexecutionfailuretypedef"></a>
+
 ## RepositoryTriggerExecutionFailureTypeDef
 
 ```python
@@ -2624,6 +2964,8 @@ Optional fields:
 
 - `trigger`: `str`
 - `failureMessage`: `str`
+
+<a id="repositorytriggertypedef"></a>
 
 ## RepositoryTriggerTypeDef
 
@@ -2643,6 +2985,8 @@ Optional fields:
 - `customData`: `str`
 - `branches`: `List`\[`str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2657,6 +3001,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="setfilemodeentrytypedef"></a>
+
 ## SetFileModeEntryTypeDef
 
 ```python
@@ -2667,6 +3013,8 @@ Required fields:
 
 - `filePath`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
+
+<a id="sourcefilespecifiertypedef"></a>
 
 ## SourceFileSpecifierTypeDef
 
@@ -2682,6 +3030,8 @@ Optional fields:
 
 - `isMove`: `bool`
 
+<a id="submoduletypedef"></a>
+
 ## SubModuleTypeDef
 
 ```python
@@ -2693,6 +3043,8 @@ Optional fields:
 - `commitId`: `str`
 - `absolutePath`: `str`
 - `relativePath`: `str`
+
+<a id="symboliclinktypedef"></a>
 
 ## SymbolicLinkTypeDef
 
@@ -2707,6 +3059,8 @@ Optional fields:
 - `relativePath`: `str`
 - `fileMode`: [FileModeTypeEnumType](./literals.md#filemodetypeenumtype)
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -2717,6 +3071,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="targettypedef"></a>
 
 ## TargetTypeDef
 
@@ -2733,6 +3089,8 @@ Optional fields:
 
 - `destinationReference`: `str`
 
+<a id="testrepositorytriggersinputrequesttypedef"></a>
+
 ## TestRepositoryTriggersInputRequestTypeDef
 
 ```python
@@ -2744,6 +3102,8 @@ Required fields:
 - `repositoryName`: `str`
 - `triggers`:
   `Sequence`\[[RepositoryTriggerTypeDef](./type_defs.md#repositorytriggertypedef)\]
+
+<a id="testrepositorytriggersoutputtypedef"></a>
 
 ## TestRepositoryTriggersOutputTypeDef
 
@@ -2759,6 +3119,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -2769,6 +3131,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapprovalruletemplatecontentinputrequesttypedef"></a>
 
 ## UpdateApprovalRuleTemplateContentInputRequestTypeDef
 
@@ -2785,6 +3149,8 @@ Optional fields:
 
 - `existingRuleContentSha256`: `str`
 
+<a id="updateapprovalruletemplatecontentoutputtypedef"></a>
+
 ## UpdateApprovalRuleTemplateContentOutputTypeDef
 
 ```python
@@ -2798,6 +3164,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapprovalruletemplatedescriptioninputrequesttypedef"></a>
+
 ## UpdateApprovalRuleTemplateDescriptionInputRequestTypeDef
 
 ```python
@@ -2808,6 +3176,8 @@ Required fields:
 
 - `approvalRuleTemplateName`: `str`
 - `approvalRuleTemplateDescription`: `str`
+
+<a id="updateapprovalruletemplatedescriptionoutputtypedef"></a>
 
 ## UpdateApprovalRuleTemplateDescriptionOutputTypeDef
 
@@ -2822,6 +3192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapprovalruletemplatenameinputrequesttypedef"></a>
+
 ## UpdateApprovalRuleTemplateNameInputRequestTypeDef
 
 ```python
@@ -2832,6 +3204,8 @@ Required fields:
 
 - `oldApprovalRuleTemplateName`: `str`
 - `newApprovalRuleTemplateName`: `str`
+
+<a id="updateapprovalruletemplatenameoutputtypedef"></a>
 
 ## UpdateApprovalRuleTemplateNameOutputTypeDef
 
@@ -2846,6 +3220,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatecommentinputrequesttypedef"></a>
+
 ## UpdateCommentInputRequestTypeDef
 
 ```python
@@ -2856,6 +3232,8 @@ Required fields:
 
 - `commentId`: `str`
 - `content`: `str`
+
+<a id="updatecommentoutputtypedef"></a>
 
 ## UpdateCommentOutputTypeDef
 
@@ -2869,6 +3247,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedefaultbranchinputrequesttypedef"></a>
+
 ## UpdateDefaultBranchInputRequestTypeDef
 
 ```python
@@ -2879,6 +3259,8 @@ Required fields:
 
 - `repositoryName`: `str`
 - `defaultBranchName`: `str`
+
+<a id="updatepullrequestapprovalrulecontentinputrequesttypedef"></a>
 
 ## UpdatePullRequestApprovalRuleContentInputRequestTypeDef
 
@@ -2896,6 +3278,8 @@ Optional fields:
 
 - `existingRuleContentSha256`: `str`
 
+<a id="updatepullrequestapprovalrulecontentoutputtypedef"></a>
+
 ## UpdatePullRequestApprovalRuleContentOutputTypeDef
 
 ```python
@@ -2907,6 +3291,8 @@ Required fields:
 - `approvalRule`: [ApprovalRuleTypeDef](./type_defs.md#approvalruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepullrequestapprovalstateinputrequesttypedef"></a>
 
 ## UpdatePullRequestApprovalStateInputRequestTypeDef
 
@@ -2920,6 +3306,8 @@ Required fields:
 - `revisionId`: `str`
 - `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
 
+<a id="updatepullrequestdescriptioninputrequesttypedef"></a>
+
 ## UpdatePullRequestDescriptionInputRequestTypeDef
 
 ```python
@@ -2930,6 +3318,8 @@ Required fields:
 
 - `pullRequestId`: `str`
 - `description`: `str`
+
+<a id="updatepullrequestdescriptionoutputtypedef"></a>
 
 ## UpdatePullRequestDescriptionOutputTypeDef
 
@@ -2943,6 +3333,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatepullrequeststatusinputrequesttypedef"></a>
+
 ## UpdatePullRequestStatusInputRequestTypeDef
 
 ```python
@@ -2954,6 +3346,8 @@ Required fields:
 - `pullRequestId`: `str`
 - `pullRequestStatus`:
   [PullRequestStatusEnumType](./literals.md#pullrequeststatusenumtype)
+
+<a id="updatepullrequeststatusoutputtypedef"></a>
 
 ## UpdatePullRequestStatusOutputTypeDef
 
@@ -2967,6 +3361,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatepullrequesttitleinputrequesttypedef"></a>
+
 ## UpdatePullRequestTitleInputRequestTypeDef
 
 ```python
@@ -2977,6 +3373,8 @@ Required fields:
 
 - `pullRequestId`: `str`
 - `title`: `str`
+
+<a id="updatepullrequesttitleoutputtypedef"></a>
 
 ## UpdatePullRequestTitleOutputTypeDef
 
@@ -2989,6 +3387,8 @@ Required fields:
 - `pullRequest`: [PullRequestTypeDef](./type_defs.md#pullrequesttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterepositorydescriptioninputrequesttypedef"></a>
 
 ## UpdateRepositoryDescriptionInputRequestTypeDef
 
@@ -3004,6 +3404,8 @@ Optional fields:
 
 - `repositoryDescription`: `str`
 
+<a id="updaterepositorynameinputrequesttypedef"></a>
+
 ## UpdateRepositoryNameInputRequestTypeDef
 
 ```python
@@ -3014,6 +3416,8 @@ Required fields:
 
 - `oldName`: `str`
 - `newName`: `str`
+
+<a id="userinfotypedef"></a>
 
 ## UserInfoTypeDef
 

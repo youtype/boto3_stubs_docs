@@ -1,3 +1,5 @@
+<a id="supportclient-for-boto3-support-module"></a>
+
 # SupportClient for boto3 Support module
 
 > [Index](..) > [Support](.) > SupportClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Support](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support)
 type annotations stubs module
-[mypy_boto3_support](https://pypi.org/project/mypy-boto3-support/).
+[mypy-boto3-support](https://pypi.org/project/mypy-boto3-support/).
 
 - [SupportClient for boto3 Support module](#supportclient-for-boto3-support-module)
   - [SupportClient](#supportclient)
@@ -30,6 +32,8 @@ type annotations stubs module
     - [resolve_case](#resolve_case)
     - [get_paginator](#get_paginator)
 
+<a id="supportclient"></a>
+
 ## SupportClient
 
 Type annotations for `boto3.client("support")`
@@ -37,14 +41,17 @@ Type annotations for `boto3.client("support")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_support.client import SupportClient
 
 def get_support_client() -> SupportClient:
-    return boto3.client("support")
+    return Session().client("support")
 ```
 
 Boto3 documentation:
 [Support.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -71,7 +78,11 @@ Exceptions:
 - `Exceptions.DescribeAttachmentLimitExceeded`
 - `Exceptions.InternalServerError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -83,6 +94,8 @@ Boto3 documentation:
 [Support.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/support.html#Support.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_attachments_to_set"></a>
 
 ### add_attachments_to_set
 
@@ -105,6 +118,8 @@ Keyword-only arguments:
 
 Returns
 [AddAttachmentsToSetResponseTypeDef](./type_defs.md#addattachmentstosetresponsetypedef).
+
+<a id="add_communication_to_case"></a>
 
 ### add_communication_to_case
 
@@ -129,6 +144,8 @@ Keyword-only arguments:
 Returns
 [AddCommunicationToCaseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -143,6 +160,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_case"></a>
 
 ### create_case
 
@@ -170,6 +189,8 @@ Keyword-only arguments:
 
 Returns [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef).
 
+<a id="describe_attachment"></a>
+
 ### describe_attachment
 
 Returns the attachment that has the specified ID.
@@ -188,6 +209,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef).
+
+<a id="describe_cases"></a>
 
 ### describe_cases
 
@@ -216,6 +239,8 @@ Keyword-only arguments:
 Returns
 [DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef).
 
+<a id="describe_communications"></a>
+
 ### describe_communications
 
 Returns communications and attachments for one or more support cases.
@@ -239,6 +264,8 @@ Keyword-only arguments:
 Returns
 [DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef).
 
+<a id="describe_services"></a>
+
 ### describe_services
 
 Returns the current list of Amazon Web Services services and a list of service
@@ -260,6 +287,8 @@ Keyword-only arguments:
 Returns
 [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
+<a id="describe_severity_levels"></a>
+
 ### describe_severity_levels
 
 Returns the list of severity levels that you can assign to a support case.
@@ -278,6 +307,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSeverityLevelsResponseTypeDef](./type_defs.md#describeseveritylevelsresponsetypedef).
+
+<a id="describe_trusted_advisor_check_refresh_statuses"></a>
 
 ### describe_trusted_advisor_check_refresh_statuses
 
@@ -301,6 +332,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
 
+<a id="describe_trusted_advisor_check_result"></a>
+
 ### describe_trusted_advisor_check_result
 
 Returns the results of the Trusted Advisor check that has the specified check
@@ -323,6 +356,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorCheckResultResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponsetypedef).
 
+<a id="describe_trusted_advisor_check_summaries"></a>
+
 ### describe_trusted_advisor_check_summaries
 
 Returns the results for the Trusted Advisor check summaries for the check IDs
@@ -343,6 +378,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef).
+
+<a id="describe_trusted_advisor_checks"></a>
 
 ### describe_trusted_advisor_checks
 
@@ -365,6 +402,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorChecksResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -382,6 +421,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="refresh_trusted_advisor_check"></a>
 
 ### refresh_trusted_advisor_check
 
@@ -403,6 +444,8 @@ Keyword-only arguments:
 Returns
 [RefreshTrustedAdvisorCheckResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponsetypedef).
 
+<a id="resolve_case"></a>
+
 ### resolve_case
 
 Resolves a support case.
@@ -421,6 +464,8 @@ Keyword-only arguments:
 
 Returns
 [ResolveCaseResponseTypeDef](./type_defs.md#resolvecaseresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

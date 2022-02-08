@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sagemakerfeaturestoreruntime-module"></a>
+
 # Typed dictionaries for boto3 SageMakerFeatureStoreRuntime module
 
 > [Index](..) > [SageMakerFeatureStoreRuntime](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMakerFeatureStoreRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime.html#SageMakerFeatureStoreRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_featurestore_runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
+[mypy-boto3-sagemaker-featurestore-runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
 - [Typed dictionaries for boto3 SageMakerFeatureStoreRuntime module](#typed-dictionaries-for-boto3-sagemakerfeaturestoreruntime-module)
   - [BatchGetRecordErrorTypeDef](#batchgetrecorderrortypedef)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [PutRecordRequestRequestTypeDef](#putrecordrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
+<a id="batchgetrecorderrortypedef"></a>
+
 ## BatchGetRecordErrorTypeDef
 
 ```python
@@ -32,6 +36,8 @@ Required fields:
 - `RecordIdentifierValueAsString`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="batchgetrecordidentifiertypedef"></a>
 
 ## BatchGetRecordIdentifierTypeDef
 
@@ -48,6 +54,8 @@ Optional fields:
 
 - `FeatureNames`: `Sequence`\[`str`\]
 
+<a id="batchgetrecordrequestrequesttypedef"></a>
+
 ## BatchGetRecordRequestRequestTypeDef
 
 ```python
@@ -58,6 +66,8 @@ Required fields:
 
 - `Identifiers`:
   `Sequence`\[[BatchGetRecordIdentifierTypeDef](./type_defs.md#batchgetrecordidentifiertypedef)\]
+
+<a id="batchgetrecordresponsetypedef"></a>
 
 ## BatchGetRecordResponseTypeDef
 
@@ -76,6 +86,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetrecordresultdetailtypedef"></a>
+
 ## BatchGetRecordResultDetailTypeDef
 
 ```python
@@ -87,6 +99,8 @@ Required fields:
 - `FeatureGroupName`: `str`
 - `RecordIdentifierValueAsString`: `str`
 - `Record`: `List`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
+
+<a id="deleterecordrequestrequesttypedef"></a>
 
 ## DeleteRecordRequestRequestTypeDef
 
@@ -100,6 +114,8 @@ Required fields:
 - `RecordIdentifierValueAsString`: `str`
 - `EventTime`: `str`
 
+<a id="featurevaluetypedef"></a>
+
 ## FeatureValueTypeDef
 
 ```python
@@ -110,6 +126,8 @@ Required fields:
 
 - `FeatureName`: `str`
 - `ValueAsString`: `str`
+
+<a id="getrecordrequestrequesttypedef"></a>
 
 ## GetRecordRequestRequestTypeDef
 
@@ -126,6 +144,8 @@ Optional fields:
 
 - `FeatureNames`: `Sequence`\[`str`\]
 
+<a id="getrecordresponsetypedef"></a>
+
 ## GetRecordResponseTypeDef
 
 ```python
@@ -138,6 +158,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putrecordrequestrequesttypedef"></a>
+
 ## PutRecordRequestRequestTypeDef
 
 ```python
@@ -149,6 +171,8 @@ Required fields:
 - `FeatureGroupName`: `str`
 - `Record`:
   `Sequence`\[[FeatureValueTypeDef](./type_defs.md#featurevaluetypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

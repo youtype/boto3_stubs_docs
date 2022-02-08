@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mediastore-module"></a>
+
 # Literals for boto3 MediaStore module
 
 > [Index](..) > [MediaStore](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
-[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+[mypy-boto3-mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [Literals for boto3 MediaStore module](#literals-for-boto3-mediastore-module)
   - [ContainerLevelMetricsType](#containerlevelmetricstype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [MethodNameType](#methodnametype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="containerlevelmetricstype"></a>
 
 ## ContainerLevelMetricsType
 
@@ -25,6 +29,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="containerstatustype"></a>
 
 ## ContainerStatusType
 
@@ -38,6 +44,8 @@ Values:
 - `CREATING`
 - `DELETING`
 
+<a id="listcontainerspaginatorname"></a>
+
 ## ListContainersPaginatorName
 
 ```python
@@ -47,6 +55,8 @@ from mypy_boto3_mediastore.literals import ListContainersPaginatorName
 Values:
 
 - `list_containers`
+
+<a id="methodnametype"></a>
 
 ## MethodNameType
 
@@ -60,6 +70,8 @@ Values:
 - `GET`
 - `HEAD`
 - `PUT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -368,6 +380,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

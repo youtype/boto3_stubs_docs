@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudtrail-module"></a>
+
 # Literals for boto3 CloudTrail module
 
 > [Index](..) > [CloudTrail](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
-[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [Literals for boto3 CloudTrail module](#literals-for-boto3-cloudtrail-module)
   - [EventCategoryType](#eventcategorytype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="eventcategorytype"></a>
+
 ## EventCategoryType
 
 ```python
@@ -30,6 +34,8 @@ from mypy_boto3_cloudtrail.literals import EventCategoryType
 Values:
 
 - `insight`
+
+<a id="eventdatastorestatustype"></a>
 
 ## EventDataStoreStatusType
 
@@ -43,6 +49,8 @@ Values:
 - `ENABLED`
 - `PENDING_DELETION`
 
+<a id="insighttypetype"></a>
+
 ## InsightTypeType
 
 ```python
@@ -54,6 +62,8 @@ Values:
 - `ApiCallRateInsight`
 - `ApiErrorRateInsight`
 
+<a id="listpublickeyspaginatorname"></a>
+
 ## ListPublicKeysPaginatorName
 
 ```python
@@ -63,6 +73,8 @@ from mypy_boto3_cloudtrail.literals import ListPublicKeysPaginatorName
 Values:
 
 - `list_public_keys`
+
+<a id="listtagspaginatorname"></a>
 
 ## ListTagsPaginatorName
 
@@ -74,6 +86,8 @@ Values:
 
 - `list_tags`
 
+<a id="listtrailspaginatorname"></a>
+
 ## ListTrailsPaginatorName
 
 ```python
@@ -83,6 +97,8 @@ from mypy_boto3_cloudtrail.literals import ListTrailsPaginatorName
 Values:
 
 - `list_trails`
+
+<a id="lookupattributekeytype"></a>
 
 ## LookupAttributeKeyType
 
@@ -101,6 +117,8 @@ Values:
 - `ResourceType`
 - `Username`
 
+<a id="lookupeventspaginatorname"></a>
+
 ## LookupEventsPaginatorName
 
 ```python
@@ -110,6 +128,8 @@ from mypy_boto3_cloudtrail.literals import LookupEventsPaginatorName
 Values:
 
 - `lookup_events`
+
+<a id="querystatustype"></a>
 
 ## QueryStatusType
 
@@ -125,6 +145,8 @@ Values:
 - `QUEUED`
 - `RUNNING`
 
+<a id="readwritetypetype"></a>
+
 ## ReadWriteTypeType
 
 ```python
@@ -136,6 +158,8 @@ Values:
 - `All`
 - `ReadOnly`
 - `WriteOnly`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -444,6 +468,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

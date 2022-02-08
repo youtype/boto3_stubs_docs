@@ -1,3 +1,5 @@
+<a id="sesclient-for-boto3-ses-module"></a>
+
 # SESClient for boto3 SES module
 
 > [Index](..) > [SES](.) > SESClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
 type annotations stubs module
-[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+[mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [SESClient for boto3 SES module](#sesclient-for-boto3-ses-module)
   - [SESClient](#sesclient)
@@ -88,6 +90,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="sesclient"></a>
+
 ## SESClient
 
 Type annotations for `boto3.client("ses")`
@@ -95,14 +99,17 @@ Type annotations for `boto3.client("ses")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ses.client import SESClient
 
 def get_ses_client() -> SESClient:
-    return boto3.client("ses")
+    return Session().client("ses")
 ```
 
 Boto3 documentation:
 [SES.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -154,7 +161,11 @@ Exceptions:
 - `Exceptions.TrackingOptionsAlreadyExistsException`
 - `Exceptions.TrackingOptionsDoesNotExistException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -166,6 +177,8 @@ Boto3 documentation:
 [SES.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -181,6 +194,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="clone_receipt_rule_set"></a>
 
 ### clone_receipt_rule_set
 
@@ -201,6 +216,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_configuration_set"></a>
+
 ### create_configuration_set
 
 Creates a configuration set.
@@ -220,6 +237,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_configuration_set_event_destination"></a>
 
 ### create_configuration_set_event_destination
 
@@ -243,6 +262,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_configuration_set_tracking_options"></a>
+
 ### create_configuration_set_tracking_options
 
 Creates an association between a configuration set and a custom domain for open
@@ -264,6 +285,8 @@ Keyword-only arguments:
   [TrackingOptionsTypeDef](./type_defs.md#trackingoptionstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_custom_verification_email_template"></a>
 
 ### create_custom_verification_email_template
 
@@ -287,6 +310,8 @@ Keyword-only arguments:
 - `SuccessRedirectionURL`: `str` *(required)*
 - `FailureRedirectionURL`: `str` *(required)*
 
+<a id="create_receipt_filter"></a>
+
 ### create_receipt_filter
 
 Creates a new IP address filter.
@@ -305,6 +330,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_receipt_rule"></a>
 
 ### create_receipt_rule
 
@@ -326,6 +353,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_receipt_rule_set"></a>
+
 ### create_receipt_rule_set
 
 Creates an empty receipt rule set.
@@ -343,6 +372,8 @@ Keyword-only arguments:
 - `RuleSetName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_template"></a>
 
 ### create_template
 
@@ -362,6 +393,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_configuration_set"></a>
+
 ### delete_configuration_set
 
 Deletes a configuration set.
@@ -379,6 +412,8 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_configuration_set_event_destination"></a>
 
 ### delete_configuration_set_event_destination
 
@@ -400,6 +435,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_configuration_set_tracking_options"></a>
+
 ### delete_configuration_set_tracking_options
 
 Deletes an association between a configuration set and a custom domain for open
@@ -420,6 +457,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_custom_verification_email_template"></a>
+
 ### delete_custom_verification_email_template
 
 Deletes an existing custom verification email template.
@@ -436,6 +475,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TemplateName`: `str` *(required)*
+
+<a id="delete_identity"></a>
 
 ### delete_identity
 
@@ -455,6 +496,8 @@ Keyword-only arguments:
 - `Identity`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_identity_policy"></a>
 
 ### delete_identity_policy
 
@@ -476,6 +519,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_receipt_filter"></a>
+
 ### delete_receipt_filter
 
 Deletes the specified IP address filter.
@@ -493,6 +538,8 @@ Keyword-only arguments:
 - `FilterName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_receipt_rule"></a>
 
 ### delete_receipt_rule
 
@@ -513,6 +560,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_receipt_rule_set"></a>
+
 ### delete_receipt_rule_set
 
 Deletes the specified receipt rule set and all of the receipt rules it
@@ -532,6 +581,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_template"></a>
+
 ### delete_template
 
 Deletes an email template.
@@ -550,6 +601,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_verified_email_address"></a>
+
 ### delete_verified_email_address
 
 Deprecated.
@@ -567,6 +620,8 @@ Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
 
+<a id="describe_active_receipt_rule_set"></a>
+
 ### describe_active_receipt_rule_set
 
 Returns the metadata and receipt rules for the receipt rule set that is
@@ -580,6 +635,8 @@ Boto3 documentation:
 
 Returns
 [DescribeActiveReceiptRuleSetResponseTypeDef](./type_defs.md#describeactivereceiptrulesetresponsetypedef).
+
+<a id="describe_configuration_set"></a>
 
 ### describe_configuration_set
 
@@ -602,6 +659,8 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationSetResponseTypeDef](./type_defs.md#describeconfigurationsetresponsetypedef).
 
+<a id="describe_receipt_rule"></a>
+
 ### describe_receipt_rule
 
 Returns the details of the specified receipt rule.
@@ -622,6 +681,8 @@ Keyword-only arguments:
 Returns
 [DescribeReceiptRuleResponseTypeDef](./type_defs.md#describereceiptruleresponsetypedef).
 
+<a id="describe_receipt_rule_set"></a>
+
 ### describe_receipt_rule_set
 
 Returns the details of the specified receipt rule set.
@@ -641,6 +702,8 @@ Keyword-only arguments:
 Returns
 [DescribeReceiptRuleSetResponseTypeDef](./type_defs.md#describereceiptrulesetresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -659,6 +722,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_sending_enabled"></a>
+
 ### get_account_sending_enabled
 
 Returns the email sending status of the Amazon SES account for the current
@@ -671,6 +736,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountSendingEnabledResponseTypeDef](./type_defs.md#getaccountsendingenabledresponsetypedef).
+
+<a id="get_custom_verification_email_template"></a>
 
 ### get_custom_verification_email_template
 
@@ -693,6 +760,8 @@ Keyword-only arguments:
 Returns
 [GetCustomVerificationEmailTemplateResponseTypeDef](./type_defs.md#getcustomverificationemailtemplateresponsetypedef).
 
+<a id="get_identity_dkim_attributes"></a>
+
 ### get_identity_dkim_attributes
 
 Returns the current status of Easy DKIM signing for an entity.
@@ -711,6 +780,8 @@ Keyword-only arguments:
 
 Returns
 [GetIdentityDkimAttributesResponseTypeDef](./type_defs.md#getidentitydkimattributesresponsetypedef).
+
+<a id="get_identity_mail_from_domain_attributes"></a>
 
 ### get_identity_mail_from_domain_attributes
 
@@ -733,6 +804,8 @@ Keyword-only arguments:
 Returns
 [GetIdentityMailFromDomainAttributesResponseTypeDef](./type_defs.md#getidentitymailfromdomainattributesresponsetypedef).
 
+<a id="get_identity_notification_attributes"></a>
+
 ### get_identity_notification_attributes
 
 Given a list of verified identities (email addresses and/or domains), returns a
@@ -754,6 +827,8 @@ Keyword-only arguments:
 Returns
 [GetIdentityNotificationAttributesResponseTypeDef](./type_defs.md#getidentitynotificationattributesresponsetypedef).
 
+<a id="get_identity_policies"></a>
+
 ### get_identity_policies
 
 Returns the requested sending authorization policies for the given identity (an
@@ -774,6 +849,8 @@ Keyword-only arguments:
 
 Returns
 [GetIdentityPoliciesResponseTypeDef](./type_defs.md#getidentitypoliciesresponsetypedef).
+
+<a id="get_identity_verification_attributes"></a>
 
 ### get_identity_verification_attributes
 
@@ -797,6 +874,8 @@ Keyword-only arguments:
 Returns
 [GetIdentityVerificationAttributesResponseTypeDef](./type_defs.md#getidentityverificationattributesresponsetypedef).
 
+<a id="get_send_quota"></a>
+
 ### get_send_quota
 
 Provides the sending limits for the Amazon SES account.
@@ -809,6 +888,8 @@ Boto3 documentation:
 Returns
 [GetSendQuotaResponseTypeDef](./type_defs.md#getsendquotaresponsetypedef).
 
+<a id="get_send_statistics"></a>
+
 ### get_send_statistics
 
 Provides sending statistics for the current AWS Region.
@@ -820,6 +901,8 @@ Boto3 documentation:
 
 Returns
 [GetSendStatisticsResponseTypeDef](./type_defs.md#getsendstatisticsresponsetypedef).
+
+<a id="get_template"></a>
 
 ### get_template
 
@@ -840,6 +923,8 @@ Keyword-only arguments:
 
 Returns
 [GetTemplateResponseTypeDef](./type_defs.md#gettemplateresponsetypedef).
+
+<a id="list_configuration_sets"></a>
 
 ### list_configuration_sets
 
@@ -862,6 +947,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef).
 
+<a id="list_custom_verification_email_templates"></a>
+
 ### list_custom_verification_email_templates
 
 Lists the existing custom verification email templates for your account in the
@@ -883,6 +970,8 @@ Keyword-only arguments:
 
 Returns
 [ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef).
+
+<a id="list_identities"></a>
 
 ### list_identities
 
@@ -907,6 +996,8 @@ Keyword-only arguments:
 Returns
 [ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
 
+<a id="list_identity_policies"></a>
+
 ### list_identity_policies
 
 Returns a list of sending authorization policies that are attached to the given
@@ -927,6 +1018,8 @@ Keyword-only arguments:
 Returns
 [ListIdentityPoliciesResponseTypeDef](./type_defs.md#listidentitypoliciesresponsetypedef).
 
+<a id="list_receipt_filters"></a>
+
 ### list_receipt_filters
 
 Lists the IP address filters associated with your AWS account in the current
@@ -939,6 +1032,8 @@ Boto3 documentation:
 
 Returns
 [ListReceiptFiltersResponseTypeDef](./type_defs.md#listreceiptfiltersresponsetypedef).
+
+<a id="list_receipt_rule_sets"></a>
 
 ### list_receipt_rule_sets
 
@@ -959,6 +1054,8 @@ Keyword-only arguments:
 
 Returns
 [ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef).
+
+<a id="list_templates"></a>
 
 ### list_templates
 
@@ -981,6 +1078,8 @@ Keyword-only arguments:
 Returns
 [ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
 
+<a id="list_verified_email_addresses"></a>
+
 ### list_verified_email_addresses
 
 Deprecated.
@@ -993,6 +1092,8 @@ Boto3 documentation:
 
 Returns
 [ListVerifiedEmailAddressesResponseTypeDef](./type_defs.md#listverifiedemailaddressesresponsetypedef).
+
+<a id="put_configuration_set_delivery_options"></a>
 
 ### put_configuration_set_delivery_options
 
@@ -1015,6 +1116,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_identity_policy"></a>
+
 ### put_identity_policy
 
 Adds or updates a sending authorization policy for the specified identity (an
@@ -1036,6 +1139,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="reorder_receipt_rule_set"></a>
+
 ### reorder_receipt_rule_set
 
 Reorders the receipt rules within a receipt rule set.
@@ -1054,6 +1159,8 @@ Keyword-only arguments:
 - `RuleNames`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_bounce"></a>
 
 ### send_bounce
 
@@ -1080,6 +1187,8 @@ Keyword-only arguments:
 - `BounceSenderArn`: `str`
 
 Returns [SendBounceResponseTypeDef](./type_defs.md#sendbounceresponsetypedef).
+
+<a id="send_bulk_templated_email"></a>
 
 ### send_bulk_templated_email
 
@@ -1113,6 +1222,8 @@ Keyword-only arguments:
 Returns
 [SendBulkTemplatedEmailResponseTypeDef](./type_defs.md#sendbulktemplatedemailresponsetypedef).
 
+<a id="send_custom_verification_email"></a>
+
 ### send_custom_verification_email
 
 Adds an email address to the list of identities for your Amazon SES account in
@@ -1135,6 +1246,8 @@ Keyword-only arguments:
 
 Returns
 [SendCustomVerificationEmailResponseTypeDef](./type_defs.md#sendcustomverificationemailresponsetypedef).
+
+<a id="send_email"></a>
 
 ### send_email
 
@@ -1163,6 +1276,8 @@ Keyword-only arguments:
 
 Returns [SendEmailResponseTypeDef](./type_defs.md#sendemailresponsetypedef).
 
+<a id="send_raw_email"></a>
+
 ### send_raw_email
 
 Composes an email message and immediately queues it for sending.
@@ -1189,6 +1304,8 @@ Keyword-only arguments:
 
 Returns
 [SendRawEmailResponseTypeDef](./type_defs.md#sendrawemailresponsetypedef).
+
+<a id="send_templated_email"></a>
 
 ### send_templated_email
 
@@ -1221,6 +1338,8 @@ Keyword-only arguments:
 Returns
 [SendTemplatedEmailResponseTypeDef](./type_defs.md#sendtemplatedemailresponsetypedef).
 
+<a id="set_active_receipt_rule_set"></a>
+
 ### set_active_receipt_rule_set
 
 Sets the specified receipt rule set as the active receipt rule set.
@@ -1238,6 +1357,8 @@ Keyword-only arguments:
 - `RuleSetName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_identity_dkim_enabled"></a>
 
 ### set_identity_dkim_enabled
 
@@ -1257,6 +1378,8 @@ Keyword-only arguments:
 - `DkimEnabled`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_identity_feedback_forwarding_enabled"></a>
 
 ### set_identity_feedback_forwarding_enabled
 
@@ -1278,6 +1401,8 @@ Keyword-only arguments:
 - `ForwardingEnabled`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_identity_headers_in_notifications_enabled"></a>
 
 ### set_identity_headers_in_notifications_enabled
 
@@ -1303,6 +1428,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="set_identity_mail_from_domain"></a>
+
 ### set_identity_mail_from_domain
 
 Enables or disables the custom MAIL FROM domain setup for a verified identity
@@ -1325,6 +1452,8 @@ Keyword-only arguments:
   [BehaviorOnMXFailureType](./literals.md#behavioronmxfailuretype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="set_identity_notification_topic"></a>
 
 ### set_identity_notification_topic
 
@@ -1349,6 +1478,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="set_receipt_rule_position"></a>
+
 ### set_receipt_rule_position
 
 Sets the position of the specified receipt rule in the receipt rule set.
@@ -1368,6 +1499,8 @@ Keyword-only arguments:
 - `After`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="test_render_template"></a>
 
 ### test_render_template
 
@@ -1390,6 +1523,8 @@ Keyword-only arguments:
 Returns
 [TestRenderTemplateResponseTypeDef](./type_defs.md#testrendertemplateresponsetypedef).
 
+<a id="update_account_sending_enabled"></a>
+
 ### update_account_sending_enabled
 
 Enables or disables email sending across your entire Amazon SES account in the
@@ -1407,6 +1542,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Enabled`: `bool`
+
+<a id="update_configuration_set_event_destination"></a>
 
 ### update_configuration_set_event_destination
 
@@ -1430,6 +1567,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_configuration_set_reputation_metrics_enabled"></a>
+
 ### update_configuration_set_reputation_metrics_enabled
 
 Enables or disables the publishing of reputation metrics for emails sent using
@@ -1450,6 +1589,8 @@ Keyword-only arguments:
 - `ConfigurationSetName`: `str` *(required)*
 - `Enabled`: `bool` *(required)*
 
+<a id="update_configuration_set_sending_enabled"></a>
+
 ### update_configuration_set_sending_enabled
 
 Enables or disables email sending for messages sent using a specific
@@ -1468,6 +1609,8 @@ Keyword-only arguments:
 
 - `ConfigurationSetName`: `str` *(required)*
 - `Enabled`: `bool` *(required)*
+
+<a id="update_configuration_set_tracking_options"></a>
 
 ### update_configuration_set_tracking_options
 
@@ -1491,6 +1634,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_custom_verification_email_template"></a>
+
 ### update_custom_verification_email_template
 
 Updates an existing custom verification email template.
@@ -1513,6 +1658,8 @@ Keyword-only arguments:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="update_receipt_rule"></a>
+
 ### update_receipt_rule
 
 Updates a receipt rule.
@@ -1532,6 +1679,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_template"></a>
+
 ### update_template
 
 Updates an email template.
@@ -1549,6 +1698,8 @@ Keyword-only arguments:
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="verify_domain_dkim"></a>
 
 ### verify_domain_dkim
 
@@ -1568,6 +1719,8 @@ Keyword-only arguments:
 
 Returns
 [VerifyDomainDkimResponseTypeDef](./type_defs.md#verifydomaindkimresponsetypedef).
+
+<a id="verify_domain_identity"></a>
 
 ### verify_domain_identity
 
@@ -1589,6 +1742,8 @@ Keyword-only arguments:
 Returns
 [VerifyDomainIdentityResponseTypeDef](./type_defs.md#verifydomainidentityresponsetypedef).
 
+<a id="verify_email_address"></a>
+
 ### verify_email_address
 
 Deprecated.
@@ -1604,6 +1759,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EmailAddress`: `str` *(required)*
+
+<a id="verify_email_identity"></a>
 
 ### verify_email_identity
 
@@ -1624,6 +1781,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("ses").get_paginator` method with overloads.
@@ -1638,6 +1797,8 @@ Type annotations for `boto3.client("ses").get_paginator` method with overloads.
   [ListReceiptRuleSetsPaginator](./paginators.md#listreceiptrulesetspaginator)
 - `client.get_paginator("list_templates")` ->
   [ListTemplatesPaginator](./paginators.md#listtemplatespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

@@ -1,3 +1,5 @@
+<a id="iotsitewiseclient-for-boto3-iotsitewise-module"></a>
+
 # IoTSiteWiseClient for boto3 IoTSiteWise module
 
 > [Index](..) > [IoTSiteWise](.) > IoTSiteWiseClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
-[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [IoTSiteWiseClient for boto3 IoTSiteWise module](#iotsitewiseclient-for-boto3-iotsitewise-module)
   - [IoTSiteWiseClient](#iotsitewiseclient)
@@ -82,6 +84,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="iotsitewiseclient"></a>
+
 ## IoTSiteWiseClient
 
 Type annotations for `boto3.client("iotsitewise")`
@@ -89,14 +93,17 @@ Type annotations for `boto3.client("iotsitewise")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotsitewise.client import IoTSiteWiseClient
 
 def get_iotsitewise_client() -> IoTSiteWiseClient:
-    return boto3.client("iotsitewise")
+    return Session().client("iotsitewise")
 ```
 
 Boto3 documentation:
 [IoTSiteWise.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -124,7 +131,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -136,6 +147,8 @@ Boto3 documentation:
 [IoTSiteWise.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_assets"></a>
 
 ### associate_assets
 
@@ -157,6 +170,8 @@ Keyword-only arguments:
 - `childAssetId`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="associate_time_series_to_asset_property"></a>
+
 ### associate_time_series_to_asset_property
 
 Associates a time series (data stream) with an asset property.
@@ -176,6 +191,8 @@ Keyword-only arguments:
 - `assetId`: `str` *(required)*
 - `propertyId`: `str` *(required)*
 - `clientToken`: `str`
+
+<a id="batch_associate_project_assets"></a>
 
 ### batch_associate_project_assets
 
@@ -199,6 +216,8 @@ Keyword-only arguments:
 Returns
 [BatchAssociateProjectAssetsResponseTypeDef](./type_defs.md#batchassociateprojectassetsresponsetypedef).
 
+<a id="batch_disassociate_project_assets"></a>
+
 ### batch_disassociate_project_assets
 
 Disassociates a group (batch) of assets from an IoT SiteWise Monitor project.
@@ -220,6 +239,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDisassociateProjectAssetsResponseTypeDef](./type_defs.md#batchdisassociateprojectassetsresponsetypedef).
+
+<a id="batch_put_asset_property_value"></a>
 
 ### batch_put_asset_property_value
 
@@ -243,6 +264,8 @@ Keyword-only arguments:
 Returns
 [BatchPutAssetPropertyValueResponseTypeDef](./type_defs.md#batchputassetpropertyvalueresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -257,6 +280,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_access_policy"></a>
 
 ### create_access_policy
 
@@ -286,6 +311,8 @@ Keyword-only arguments:
 Returns
 [CreateAccessPolicyResponseTypeDef](./type_defs.md#createaccesspolicyresponsetypedef).
 
+<a id="create_asset"></a>
+
 ### create_asset
 
 Creates an asset from an existing asset model.
@@ -307,6 +334,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
+
+<a id="create_asset_model"></a>
 
 ### create_asset_model
 
@@ -336,6 +365,8 @@ Keyword-only arguments:
 Returns
 [CreateAssetModelResponseTypeDef](./type_defs.md#createassetmodelresponsetypedef).
 
+<a id="create_dashboard"></a>
+
 ### create_dashboard
 
 Creates a dashboard in an IoT SiteWise Monitor project.
@@ -360,6 +391,8 @@ Keyword-only arguments:
 Returns
 [CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
 
+<a id="create_gateway"></a>
+
 ### create_gateway
 
 Creates a gateway, which is a virtual or edge device that delivers industrial
@@ -382,6 +415,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGatewayResponseTypeDef](./type_defs.md#creategatewayresponsetypedef).
+
+<a id="create_portal"></a>
 
 ### create_portal
 
@@ -411,6 +446,8 @@ Keyword-only arguments:
 Returns
 [CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates a project in the specified portal.
@@ -434,6 +471,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
+<a id="delete_access_policy"></a>
+
 ### delete_access_policy
 
 Deletes an access policy that grants the specified identity access to the
@@ -453,6 +492,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_asset"></a>
 
 ### delete_asset
 
@@ -474,6 +515,8 @@ Keyword-only arguments:
 Returns
 [DeleteAssetResponseTypeDef](./type_defs.md#deleteassetresponsetypedef).
 
+<a id="delete_asset_model"></a>
+
 ### delete_asset_model
 
 Deletes an asset model.
@@ -494,6 +537,8 @@ Keyword-only arguments:
 Returns
 [DeleteAssetModelResponseTypeDef](./type_defs.md#deleteassetmodelresponsetypedef).
 
+<a id="delete_dashboard"></a>
+
 ### delete_dashboard
 
 Deletes a dashboard from IoT SiteWise Monitor.
@@ -513,6 +558,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_gateway"></a>
+
 ### delete_gateway
 
 Deletes a gateway from IoT SiteWise.
@@ -528,6 +575,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `gatewayId`: `str` *(required)*
+
+<a id="delete_portal"></a>
 
 ### delete_portal
 
@@ -549,6 +598,8 @@ Keyword-only arguments:
 Returns
 [DeletePortalResponseTypeDef](./type_defs.md#deleteportalresponsetypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes a project from IoT SiteWise Monitor.
@@ -568,6 +619,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_time_series"></a>
+
 ### delete_time_series
 
 Deletes a time series (data stream).
@@ -586,6 +639,8 @@ Keyword-only arguments:
 - `assetId`: `str`
 - `propertyId`: `str`
 - `clientToken`: `str`
+
+<a id="describe_access_policy"></a>
 
 ### describe_access_policy
 
@@ -608,6 +663,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccessPolicyResponseTypeDef](./type_defs.md#describeaccesspolicyresponsetypedef).
 
+<a id="describe_asset"></a>
+
 ### describe_asset
 
 Retrieves information about an asset.
@@ -627,6 +684,8 @@ Keyword-only arguments:
 Returns
 [DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
 
+<a id="describe_asset_model"></a>
+
 ### describe_asset_model
 
 Retrieves information about an asset model.
@@ -645,6 +704,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAssetModelResponseTypeDef](./type_defs.md#describeassetmodelresponsetypedef).
+
+<a id="describe_asset_property"></a>
 
 ### describe_asset_property
 
@@ -667,6 +728,8 @@ Keyword-only arguments:
 Returns
 [DescribeAssetPropertyResponseTypeDef](./type_defs.md#describeassetpropertyresponsetypedef).
 
+<a id="describe_dashboard"></a>
+
 ### describe_dashboard
 
 Retrieves information about a dashboard.
@@ -686,6 +749,8 @@ Keyword-only arguments:
 Returns
 [DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
 
+<a id="describe_default_encryption_configuration"></a>
+
 ### describe_default_encryption_configuration
 
 Retrieves information about the default encryption configuration for the Amazon
@@ -699,6 +764,8 @@ Boto3 documentation:
 
 Returns
 [DescribeDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#describedefaultencryptionconfigurationresponsetypedef).
+
+<a id="describe_gateway"></a>
 
 ### describe_gateway
 
@@ -718,6 +785,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGatewayResponseTypeDef](./type_defs.md#describegatewayresponsetypedef).
+
+<a id="describe_gateway_capability_configuration"></a>
 
 ### describe_gateway_capability_configuration
 
@@ -740,6 +809,8 @@ Keyword-only arguments:
 Returns
 [DescribeGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#describegatewaycapabilityconfigurationresponsetypedef).
 
+<a id="describe_logging_options"></a>
+
 ### describe_logging_options
 
 Retrieves the current IoT SiteWise logging options.
@@ -752,6 +823,8 @@ Boto3 documentation:
 
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
+
+<a id="describe_portal"></a>
 
 ### describe_portal
 
@@ -772,6 +845,8 @@ Keyword-only arguments:
 Returns
 [DescribePortalResponseTypeDef](./type_defs.md#describeportalresponsetypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Retrieves information about a project.
@@ -791,6 +866,8 @@ Keyword-only arguments:
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
+<a id="describe_storage_configuration"></a>
+
 ### describe_storage_configuration
 
 Retrieves information about the storage configuration for IoT SiteWise.
@@ -803,6 +880,8 @@ Boto3 documentation:
 
 Returns
 [DescribeStorageConfigurationResponseTypeDef](./type_defs.md#describestorageconfigurationresponsetypedef).
+
+<a id="describe_time_series"></a>
 
 ### describe_time_series
 
@@ -825,6 +904,8 @@ Keyword-only arguments:
 Returns
 [DescribeTimeSeriesResponseTypeDef](./type_defs.md#describetimeseriesresponsetypedef).
 
+<a id="disassociate_assets"></a>
+
 ### disassociate_assets
 
 Disassociates a child asset from the given parent asset through a hierarchy
@@ -844,6 +925,8 @@ Keyword-only arguments:
 - `hierarchyId`: `str` *(required)*
 - `childAssetId`: `str` *(required)*
 - `clientToken`: `str`
+
+<a id="disassociate_time_series_from_asset_property"></a>
 
 ### disassociate_time_series_from_asset_property
 
@@ -866,6 +949,8 @@ Keyword-only arguments:
 - `propertyId`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -884,6 +969,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_asset_property_aggregates"></a>
 
 ### get_asset_property_aggregates
 
@@ -917,6 +1004,8 @@ Keyword-only arguments:
 Returns
 [GetAssetPropertyAggregatesResponseTypeDef](./type_defs.md#getassetpropertyaggregatesresponsetypedef).
 
+<a id="get_asset_property_value"></a>
+
 ### get_asset_property_value
 
 Gets an asset property's current value.
@@ -938,6 +1027,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssetPropertyValueResponseTypeDef](./type_defs.md#getassetpropertyvalueresponsetypedef).
+
+<a id="get_asset_property_value_history"></a>
 
 ### get_asset_property_value_history
 
@@ -966,6 +1057,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssetPropertyValueHistoryResponseTypeDef](./type_defs.md#getassetpropertyvaluehistoryresponsetypedef).
+
+<a id="get_interpolated_asset_property_values"></a>
 
 ### get_interpolated_asset_property_values
 
@@ -1000,6 +1093,8 @@ Keyword-only arguments:
 Returns
 [GetInterpolatedAssetPropertyValuesResponseTypeDef](./type_defs.md#getinterpolatedassetpropertyvaluesresponsetypedef).
 
+<a id="list_access_policies"></a>
+
 ### list_access_policies
 
 Retrieves a paginated list of access policies for an identity (an Amazon Web
@@ -1027,6 +1122,8 @@ Keyword-only arguments:
 Returns
 [ListAccessPoliciesResponseTypeDef](./type_defs.md#listaccesspoliciesresponsetypedef).
 
+<a id="list_asset_models"></a>
+
 ### list_asset_models
 
 Retrieves a paginated list of summaries of all asset models.
@@ -1046,6 +1143,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssetModelsResponseTypeDef](./type_defs.md#listassetmodelsresponsetypedef).
+
+<a id="list_asset_relationships"></a>
 
 ### list_asset_relationships
 
@@ -1071,6 +1170,8 @@ Keyword-only arguments:
 Returns
 [ListAssetRelationshipsResponseTypeDef](./type_defs.md#listassetrelationshipsresponsetypedef).
 
+<a id="list_assets"></a>
+
 ### list_assets
 
 Retrieves a paginated list of asset summaries.
@@ -1091,6 +1192,8 @@ Keyword-only arguments:
 - `filter`: [ListAssetsFilterType](./literals.md#listassetsfiltertype)
 
 Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
+
+<a id="list_associated_assets"></a>
 
 ### list_associated_assets
 
@@ -1117,6 +1220,8 @@ Keyword-only arguments:
 Returns
 [ListAssociatedAssetsResponseTypeDef](./type_defs.md#listassociatedassetsresponsetypedef).
 
+<a id="list_dashboards"></a>
+
 ### list_dashboards
 
 Retrieves a paginated list of dashboards for an IoT SiteWise Monitor project.
@@ -1138,6 +1243,8 @@ Keyword-only arguments:
 Returns
 [ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
 
+<a id="list_gateways"></a>
+
 ### list_gateways
 
 Retrieves a paginated list of gateways.
@@ -1158,6 +1265,8 @@ Keyword-only arguments:
 Returns
 [ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
 
+<a id="list_portals"></a>
+
 ### list_portals
 
 Retrieves a paginated list of IoT SiteWise Monitor portals.
@@ -1177,6 +1286,8 @@ Keyword-only arguments:
 
 Returns
 [ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
+
+<a id="list_project_assets"></a>
 
 ### list_project_assets
 
@@ -1200,6 +1311,8 @@ Keyword-only arguments:
 Returns
 [ListProjectAssetsResponseTypeDef](./type_defs.md#listprojectassetsresponsetypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Retrieves a paginated list of projects for an IoT SiteWise Monitor portal.
@@ -1221,6 +1334,8 @@ Keyword-only arguments:
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the list of tags for an IoT SiteWise resource.
@@ -1240,6 +1355,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_time_series"></a>
 
 ### list_time_series
 
@@ -1265,6 +1382,8 @@ Keyword-only arguments:
 Returns
 [ListTimeSeriesResponseTypeDef](./type_defs.md#listtimeseriesresponsetypedef).
 
+<a id="put_default_encryption_configuration"></a>
+
 ### put_default_encryption_configuration
 
 Sets the default encryption configuration for the Amazon Web Services account.
@@ -1287,6 +1406,8 @@ Keyword-only arguments:
 Returns
 [PutDefaultEncryptionConfigurationResponseTypeDef](./type_defs.md#putdefaultencryptionconfigurationresponsetypedef).
 
+<a id="put_logging_options"></a>
+
 ### put_logging_options
 
 Sets logging options for IoT SiteWise.
@@ -1305,6 +1426,8 @@ Keyword-only arguments:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_storage_configuration"></a>
 
 ### put_storage_configuration
 
@@ -1332,6 +1455,8 @@ Keyword-only arguments:
 Returns
 [PutStorageConfigurationResponseTypeDef](./type_defs.md#putstorageconfigurationresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to an IoT SiteWise resource.
@@ -1351,6 +1476,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from an IoT SiteWise resource.
@@ -1369,6 +1496,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_access_policy"></a>
 
 ### update_access_policy
 
@@ -1396,6 +1525,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_asset"></a>
+
 ### update_asset
 
 Updates an asset's name.
@@ -1416,6 +1547,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
+
+<a id="update_asset_model"></a>
 
 ### update_asset_model
 
@@ -1445,6 +1578,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssetModelResponseTypeDef](./type_defs.md#updateassetmodelresponsetypedef).
 
+<a id="update_asset_property"></a>
+
 ### update_asset_property
 
 Updates an asset property's alias and notification state.
@@ -1466,6 +1601,8 @@ Keyword-only arguments:
 - `propertyNotificationState`:
   [PropertyNotificationStateType](./literals.md#propertynotificationstatetype)
 - `clientToken`: `str`
+
+<a id="update_dashboard"></a>
 
 ### update_dashboard
 
@@ -1489,6 +1626,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_gateway"></a>
+
 ### update_gateway
 
 Updates a gateway's name.
@@ -1505,6 +1644,8 @@ Keyword-only arguments:
 
 - `gatewayId`: `str` *(required)*
 - `gatewayName`: `str` *(required)*
+
+<a id="update_gateway_capability_configuration"></a>
 
 ### update_gateway_capability_configuration
 
@@ -1528,6 +1669,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGatewayCapabilityConfigurationResponseTypeDef](./type_defs.md#updategatewaycapabilityconfigurationresponsetypedef).
+
+<a id="update_portal"></a>
 
 ### update_portal
 
@@ -1556,6 +1699,8 @@ Keyword-only arguments:
 Returns
 [UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
 
+<a id="update_project"></a>
+
 ### update_project
 
 Updates an IoT SiteWise Monitor project.
@@ -1576,6 +1721,8 @@ Keyword-only arguments:
 - `clientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1610,6 +1757,8 @@ overloads.
   [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 - `client.get_paginator("list_time_series")` ->
   [ListTimeSeriesPaginator](./paginators.md#listtimeseriespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

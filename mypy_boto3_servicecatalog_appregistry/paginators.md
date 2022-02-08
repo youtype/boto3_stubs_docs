@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-appregistry-module"></a>
+
 # Paginators for boto3 AppRegistry module
 
 > [Index](..) > [AppRegistry](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
-[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 - [Paginators for boto3 AppRegistry module](#paginators-for-boto3-appregistry-module)
   - [ListApplicationsPaginator](#listapplicationspaginator)
   - [ListAssociatedAttributeGroupsPaginator](#listassociatedattributegroupspaginator)
   - [ListAssociatedResourcesPaginator](#listassociatedresourcespaginator)
   - [ListAttributeGroupsPaginator](#listattributegroupspaginator)
+
+<a id="listapplicationspaginator"></a>
 
 ## ListApplicationsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
-    return boto3.client("servicecatalog-appregistry").get_paginator("list_applications")
+    return Session().client("servicecatalog-appregistry").get_paginator("list_applications")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListApplicationsPaginator.paginate` method:
 `ListApplicationsPaginator.paginate` returns
 `_PageIterator`\[[ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef)\].
 
+<a id="listassociatedattributegroupspaginator"></a>
+
 ## ListAssociatedAttributeGroupsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedAttributeGroupsPaginator
 
 def get_list_associated_attribute_groups_paginator() -> ListAssociatedAttributeGroupsPaginator:
-    return boto3.client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")
+    return Session().client("servicecatalog-appregistry").get_paginator("list_associated_attribute_groups")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ListAssociatedAttributeGroupsPaginator.paginate` method:
 `ListAssociatedAttributeGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListAssociatedAttributeGroupsResponseTypeDef](./type_defs.md#listassociatedattributegroupsresponsetypedef)\].
 
+<a id="listassociatedresourcespaginator"></a>
+
 ## ListAssociatedResourcesPaginator
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog_appregistry.paginator import ListAssociatedResourcesPaginator
 
 def get_list_associated_resources_paginator() -> ListAssociatedResourcesPaginator:
-    return boto3.client("servicecatalog-appregistry").get_paginator("list_associated_resources")
+    return Session().client("servicecatalog-appregistry").get_paginator("list_associated_resources")
 ```
 
 Boto3 documentation:
@@ -90,6 +104,8 @@ Arguments for `ListAssociatedResourcesPaginator.paginate` method:
 `ListAssociatedResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListAssociatedResourcesResponseTypeDef](./type_defs.md#listassociatedresourcesresponsetypedef)\].
 
+<a id="listattributegroupspaginator"></a>
+
 ## ListAttributeGroupsPaginator
 
 Type annotations for
@@ -98,10 +114,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog_appregistry.paginator import ListAttributeGroupsPaginator
 
 def get_list_attribute_groups_paginator() -> ListAttributeGroupsPaginator:
-    return boto3.client("servicecatalog-appregistry").get_paginator("list_attribute_groups")
+    return Session().client("servicecatalog-appregistry").get_paginator("list_attribute_groups")
 ```
 
 Boto3 documentation:

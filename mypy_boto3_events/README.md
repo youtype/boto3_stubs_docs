@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-eventbridge-module"></a>
+
 # Type annotations for boto3 EventBridge module
 
 > [Index](..) > EventBridge
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
 type annotations stubs module
-[mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
+[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[events]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[events]'
+
+# standalone installation
 pip install mypy-boto3-events
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-events
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="eventbridgeclient"></a>
+
 ## EventBridgeClient
 
 Type annotations for `boto3.client("events")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_events.client import EventBridgeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -88,6 +102,8 @@ from mypy_boto3_events.client import EventBridgeClient
 - [update_archive](./client.md#update_archive)
 - [update_connection](./client.md#update_connection)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 EventBridgeClient [exceptions](./client.md#exceptions)
@@ -105,6 +121,8 @@ EventBridgeClient [exceptions](./client.md#exceptions)
 - ResourceAlreadyExistsException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -113,12 +131,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_events.paginators import ListRuleNamesByTargetPaginator, ...
+from mypy_boto3_events.paginator import ListRuleNamesByTargetPaginator, ...
 ```
 
 - [ListRuleNamesByTargetPaginator](./paginators.md#listrulenamesbytargetpaginator)
 - [ListRulesPaginator](./paginators.md#listrulespaginator)
 - [ListTargetsByRulePaginator](./paginators.md#listtargetsbyrulepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -149,6 +169,8 @@ from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
 - [RuleStateType](./literals.md#rulestatetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-swf-module"></a>
+
 # Paginators for boto3 SWF module
 
 > [Index](..) > [SWF](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SWF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/swf.html#SWF)
 type annotations stubs module
-[mypy_boto3_swf](https://pypi.org/project/mypy-boto3-swf/).
+[mypy-boto3-swf](https://pypi.org/project/mypy-boto3-swf/).
 
 - [Paginators for boto3 SWF module](#paginators-for-boto3-swf-module)
   - [GetWorkflowExecutionHistoryPaginator](#getworkflowexecutionhistorypaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListWorkflowTypesPaginator](#listworkflowtypespaginator)
   - [PollForDecisionTaskPaginator](#pollfordecisiontaskpaginator)
 
+<a id="getworkflowexecutionhistorypaginator"></a>
+
 ## GetWorkflowExecutionHistoryPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import GetWorkflowExecutionHistoryPaginator
 
 def get_get_workflow_execution_history_paginator() -> GetWorkflowExecutionHistoryPaginator:
-    return boto3.client("swf").get_paginator("get_workflow_execution_history")
+    return Session().client("swf").get_paginator("get_workflow_execution_history")
 ```
 
 Boto3 documentation:
@@ -46,6 +52,8 @@ Arguments for `GetWorkflowExecutionHistoryPaginator.paginate` method:
 `GetWorkflowExecutionHistoryPaginator.paginate` returns
 `_PageIterator`\[[HistoryTypeDef](./type_defs.md#historytypedef)\].
 
+<a id="listactivitytypespaginator"></a>
+
 ## ListActivityTypesPaginator
 
 Type annotations for
@@ -54,10 +62,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import ListActivityTypesPaginator
 
 def get_list_activity_types_paginator() -> ListActivityTypesPaginator:
-    return boto3.client("swf").get_paginator("list_activity_types")
+    return Session().client("swf").get_paginator("list_activity_types")
 ```
 
 Boto3 documentation:
@@ -76,6 +86,8 @@ Arguments for `ListActivityTypesPaginator.paginate` method:
 `ListActivityTypesPaginator.paginate` returns
 `_PageIterator`\[[ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef)\].
 
+<a id="listclosedworkflowexecutionspaginator"></a>
+
 ## ListClosedWorkflowExecutionsPaginator
 
 Type annotations for
@@ -84,10 +96,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import ListClosedWorkflowExecutionsPaginator
 
 def get_list_closed_workflow_executions_paginator() -> ListClosedWorkflowExecutionsPaginator:
-    return boto3.client("swf").get_paginator("list_closed_workflow_executions")
+    return Session().client("swf").get_paginator("list_closed_workflow_executions")
 ```
 
 Boto3 documentation:
@@ -114,6 +128,8 @@ Arguments for `ListClosedWorkflowExecutionsPaginator.paginate` method:
 `ListClosedWorkflowExecutionsPaginator.paginate` returns
 `_PageIterator`\[[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef)\].
 
+<a id="listdomainspaginator"></a>
+
 ## ListDomainsPaginator
 
 Type annotations for `boto3.client("swf").get_paginator("list_domains")`.
@@ -121,10 +137,12 @@ Type annotations for `boto3.client("swf").get_paginator("list_domains")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
-    return boto3.client("swf").get_paginator("list_domains")
+    return Session().client("swf").get_paginator("list_domains")
 ```
 
 Boto3 documentation:
@@ -141,6 +159,8 @@ Arguments for `ListDomainsPaginator.paginate` method:
 `ListDomainsPaginator.paginate` returns
 `_PageIterator`\[[DomainInfosTypeDef](./type_defs.md#domaininfostypedef)\].
 
+<a id="listopenworkflowexecutionspaginator"></a>
+
 ## ListOpenWorkflowExecutionsPaginator
 
 Type annotations for
@@ -149,10 +169,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import ListOpenWorkflowExecutionsPaginator
 
 def get_list_open_workflow_executions_paginator() -> ListOpenWorkflowExecutionsPaginator:
-    return boto3.client("swf").get_paginator("list_open_workflow_executions")
+    return Session().client("swf").get_paginator("list_open_workflow_executions")
 ```
 
 Boto3 documentation:
@@ -176,6 +198,8 @@ Arguments for `ListOpenWorkflowExecutionsPaginator.paginate` method:
 `ListOpenWorkflowExecutionsPaginator.paginate` returns
 `_PageIterator`\[[WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef)\].
 
+<a id="listworkflowtypespaginator"></a>
+
 ## ListWorkflowTypesPaginator
 
 Type annotations for
@@ -184,10 +208,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import ListWorkflowTypesPaginator
 
 def get_list_workflow_types_paginator() -> ListWorkflowTypesPaginator:
-    return boto3.client("swf").get_paginator("list_workflow_types")
+    return Session().client("swf").get_paginator("list_workflow_types")
 ```
 
 Boto3 documentation:
@@ -206,6 +232,8 @@ Arguments for `ListWorkflowTypesPaginator.paginate` method:
 `ListWorkflowTypesPaginator.paginate` returns
 `_PageIterator`\[[WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef)\].
 
+<a id="pollfordecisiontaskpaginator"></a>
+
 ## PollForDecisionTaskPaginator
 
 Type annotations for
@@ -214,10 +242,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_swf.paginator import PollForDecisionTaskPaginator
 
 def get_poll_for_decision_task_paginator() -> PollForDecisionTaskPaginator:
-    return boto3.client("swf").get_paginator("poll_for_decision_task")
+    return Session().client("swf").get_paginator("poll_for_decision_task")
 ```
 
 Boto3 documentation:

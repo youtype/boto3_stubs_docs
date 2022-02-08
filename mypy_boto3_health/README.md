@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-health-module"></a>
+
 # Type annotations for boto3 Health module
 
 > [Index](..) > Health
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
 type annotations stubs module
-[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[health]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[health]'
+
+# standalone installation
 pip install mypy-boto3-health
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-health
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="healthclient"></a>
+
 ## HealthClient
 
 Type annotations for `boto3.client("health")` as [HealthClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_health.client import HealthClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -49,6 +63,8 @@ from mypy_boto3_health.client import HealthClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 HealthClient [exceptions](./client.md#exceptions)
@@ -58,6 +74,8 @@ HealthClient [exceptions](./client.md#exceptions)
 - InvalidPaginationToken
 - UnsupportedLocale
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -66,7 +84,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_health.paginators import DescribeAffectedAccountsForOrganizationPaginator, ...
+from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator, ...
 ```
 
 - [DescribeAffectedAccountsForOrganizationPaginator](./paginators.md#describeaffectedaccountsfororganizationpaginator)
@@ -76,6 +94,8 @@ from mypy_boto3_health.paginators import DescribeAffectedAccountsForOrganization
 - [DescribeEventTypesPaginator](./paginators.md#describeeventtypespaginator)
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - [DescribeEventsForOrganizationPaginator](./paginators.md#describeeventsfororganizationpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -101,6 +121,8 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 - [eventTypeCategoryType](./literals.md#eventtypecategorytype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

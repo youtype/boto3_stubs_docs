@@ -1,3 +1,5 @@
+<a id="connectparticipantclient-for-boto3-connectparticipant-module"></a>
+
 # ConnectParticipantClient for boto3 ConnectParticipant module
 
 > [Index](..) > [ConnectParticipant](.) > ConnectParticipantClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectParticipant](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant)
 type annotations stubs module
-[mypy_boto3_connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
+[mypy-boto3-connectparticipant](https://pypi.org/project/mypy-boto3-connectparticipant/).
 
 - [ConnectParticipantClient for boto3 ConnectParticipant module](#connectparticipantclient-for-boto3-connectparticipant-module)
   - [ConnectParticipantClient](#connectparticipantclient)
@@ -23,6 +25,8 @@ type annotations stubs module
     - [send_message](#send_message)
     - [start_attachment_upload](#start_attachment_upload)
 
+<a id="connectparticipantclient"></a>
+
 ## ConnectParticipantClient
 
 Type annotations for `boto3.client("connectparticipant")`
@@ -30,14 +34,17 @@ Type annotations for `boto3.client("connectparticipant")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_connectparticipant.client import ConnectParticipantClient
 
 def get_connectparticipant_client() -> ConnectParticipantClient:
-    return boto3.client("connectparticipant")
+    return Session().client("connectparticipant")
 ```
 
 Boto3 documentation:
 [ConnectParticipant.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -61,7 +68,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -73,6 +84,8 @@ Boto3 documentation:
 [ConnectParticipant.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connectparticipant.html#ConnectParticipant.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -88,6 +101,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_attachment_upload"></a>
 
 ### complete_attachment_upload
 
@@ -110,6 +125,8 @@ Keyword-only arguments:
 - `ConnectionToken`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_participant_connection"></a>
 
 ### create_participant_connection
 
@@ -134,6 +151,8 @@ Keyword-only arguments:
 Returns
 [CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
 
+<a id="disconnect_participant"></a>
+
 ### disconnect_participant
 
 Disconnects a participant.
@@ -154,6 +173,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -172,6 +193,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_attachment"></a>
 
 ### get_attachment
 
@@ -193,6 +216,8 @@ Keyword-only arguments:
 
 Returns
 [GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef).
+
+<a id="get_transcript"></a>
 
 ### get_transcript
 
@@ -220,6 +245,8 @@ Keyword-only arguments:
 Returns
 [GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef).
 
+<a id="send_event"></a>
+
 ### send_event
 
 Sends an event.
@@ -240,6 +267,8 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
+
+<a id="send_message"></a>
 
 ### send_message
 
@@ -262,6 +291,8 @@ Keyword-only arguments:
 
 Returns
 [SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef).
+
+<a id="start_attachment_upload"></a>
 
 ### start_attachment_upload
 

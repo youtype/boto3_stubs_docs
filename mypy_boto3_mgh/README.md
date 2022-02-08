@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-migrationhub-module"></a>
+
 # Type annotations for boto3 MigrationHub module
 
 > [Index](..) > MigrationHub
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
-[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mgh]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mgh]'
+
+# standalone installation
 pip install mypy-boto3-mgh
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mgh
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="migrationhubclient"></a>
+
 ## MigrationHubClient
 
 Type annotations for `boto3.client("mgh")` as [MigrationHubClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mgh.client import MigrationHubClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -53,6 +67,8 @@ from mypy_boto3_mgh.client import MigrationHubClient
 - [notify_migration_task_state](./client.md#notify_migration_task_state)
 - [put_resource_attributes](./client.md#put_resource_attributes)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MigrationHubClient [exceptions](./client.md#exceptions)
@@ -69,6 +85,8 @@ MigrationHubClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - UnauthorizedOperation
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -77,7 +95,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mgh.paginators import ListApplicationStatesPaginator, ...
+from mypy_boto3_mgh.paginator import ListApplicationStatesPaginator, ...
 ```
 
 - [ListApplicationStatesPaginator](./paginators.md#listapplicationstatespaginator)
@@ -85,6 +103,8 @@ from mypy_boto3_mgh.paginators import ListApplicationStatesPaginator, ...
 - [ListDiscoveredResourcesPaginator](./paginators.md#listdiscoveredresourcespaginator)
 - [ListMigrationTasksPaginator](./paginators.md#listmigrationtaskspaginator)
 - [ListProgressUpdateStreamsPaginator](./paginators.md#listprogressupdatestreamspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -106,6 +126,8 @@ from mypy_boto3_mgh.literals import ApplicationStatusType, ...
 - [StatusType](./literals.md#statustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

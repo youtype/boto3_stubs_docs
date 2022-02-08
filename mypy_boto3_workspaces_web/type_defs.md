@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-workspacesweb-module"></a>
+
 # Typed dictionaries for boto3 WorkSpacesWeb module
 
 > [Index](..) > [WorkSpacesWeb](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
 type annotations stubs module
-[mypy_boto3_workspaces_web](https://pypi.org/project/mypy-boto3-workspaces-web/).
+[mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
 - [Typed dictionaries for boto3 WorkSpacesWeb module](#typed-dictionaries-for-boto3-workspacesweb-module)
   - [AssociateBrowserSettingsRequestRequestTypeDef](#associatebrowsersettingsrequestrequesttypedef)
@@ -101,6 +103,8 @@ type annotations stubs module
   - [UserSettingsSummaryTypeDef](#usersettingssummarytypedef)
   - [UserSettingsTypeDef](#usersettingstypedef)
 
+<a id="associatebrowsersettingsrequestrequesttypedef"></a>
+
 ## AssociateBrowserSettingsRequestRequestTypeDef
 
 ```python
@@ -111,6 +115,8 @@ Required fields:
 
 - `browserSettingsArn`: `str`
 - `portalArn`: `str`
+
+<a id="associatebrowsersettingsresponsetypedef"></a>
 
 ## AssociateBrowserSettingsResponseTypeDef
 
@@ -125,6 +131,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatenetworksettingsrequestrequesttypedef"></a>
+
 ## AssociateNetworkSettingsRequestRequestTypeDef
 
 ```python
@@ -135,6 +143,8 @@ Required fields:
 
 - `networkSettingsArn`: `str`
 - `portalArn`: `str`
+
+<a id="associatenetworksettingsresponsetypedef"></a>
 
 ## AssociateNetworkSettingsResponseTypeDef
 
@@ -149,6 +159,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatetruststorerequestrequesttypedef"></a>
+
 ## AssociateTrustStoreRequestRequestTypeDef
 
 ```python
@@ -159,6 +171,8 @@ Required fields:
 
 - `portalArn`: `str`
 - `trustStoreArn`: `str`
+
+<a id="associatetruststoreresponsetypedef"></a>
 
 ## AssociateTrustStoreResponseTypeDef
 
@@ -173,6 +187,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateusersettingsrequestrequesttypedef"></a>
+
 ## AssociateUserSettingsRequestRequestTypeDef
 
 ```python
@@ -183,6 +199,8 @@ Required fields:
 
 - `portalArn`: `str`
 - `userSettingsArn`: `str`
+
+<a id="associateusersettingsresponsetypedef"></a>
 
 ## AssociateUserSettingsResponseTypeDef
 
@@ -197,6 +215,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="browsersettingssummarytypedef"></a>
+
 ## BrowserSettingsSummaryTypeDef
 
 ```python
@@ -206,6 +226,8 @@ from mypy_boto3_workspaces_web.type_defs import BrowserSettingsSummaryTypeDef
 Optional fields:
 
 - `browserSettingsArn`: `str`
+
+<a id="browsersettingstypedef"></a>
 
 ## BrowserSettingsTypeDef
 
@@ -222,6 +244,8 @@ Optional fields:
 - `associatedPortalArns`: `List`\[`str`\]
 - `browserPolicy`: `str`
 
+<a id="certificatesummarytypedef"></a>
+
 ## CertificateSummaryTypeDef
 
 ```python
@@ -235,6 +259,8 @@ Optional fields:
 - `notValidBefore`: `datetime`
 - `subject`: `str`
 - `thumbprint`: `str`
+
+<a id="certificatetypedef"></a>
 
 ## CertificateTypeDef
 
@@ -250,6 +276,8 @@ Optional fields:
 - `notValidBefore`: `datetime`
 - `subject`: `str`
 - `thumbprint`: `str`
+
+<a id="createbrowsersettingsrequestrequesttypedef"></a>
 
 ## CreateBrowserSettingsRequestRequestTypeDef
 
@@ -268,6 +296,8 @@ Optional fields:
 - `customerManagedKey`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createbrowsersettingsresponsetypedef"></a>
+
 ## CreateBrowserSettingsResponseTypeDef
 
 ```python
@@ -279,6 +309,8 @@ Required fields:
 - `browserSettingsArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createidentityproviderrequestrequesttypedef"></a>
 
 ## CreateIdentityProviderRequestRequestTypeDef
 
@@ -298,6 +330,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="createidentityproviderresponsetypedef"></a>
+
 ## CreateIdentityProviderResponseTypeDef
 
 ```python
@@ -309,6 +343,8 @@ Required fields:
 - `identityProviderArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createnetworksettingsrequestrequesttypedef"></a>
 
 ## CreateNetworkSettingsRequestRequestTypeDef
 
@@ -327,6 +363,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createnetworksettingsresponsetypedef"></a>
+
 ## CreateNetworkSettingsResponseTypeDef
 
 ```python
@@ -338,6 +376,8 @@ Required fields:
 - `networkSettingsArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createportalrequestrequesttypedef"></a>
 
 ## CreatePortalRequestRequestTypeDef
 
@@ -353,6 +393,8 @@ Optional fields:
 - `displayName`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createportalresponsetypedef"></a>
+
 ## CreatePortalResponseTypeDef
 
 ```python
@@ -365,6 +407,8 @@ Required fields:
 - `portalEndpoint`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtruststorerequestrequesttypedef"></a>
 
 ## CreateTrustStoreRequestRequestTypeDef
 
@@ -382,6 +426,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtruststoreresponsetypedef"></a>
+
 ## CreateTrustStoreResponseTypeDef
 
 ```python
@@ -393,6 +439,8 @@ Required fields:
 - `trustStoreArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createusersettingsrequestrequesttypedef"></a>
 
 ## CreateUserSettingsRequestRequestTypeDef
 
@@ -413,6 +461,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createusersettingsresponsetypedef"></a>
+
 ## CreateUserSettingsResponseTypeDef
 
 ```python
@@ -425,6 +475,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebrowsersettingsrequestrequesttypedef"></a>
+
 ## DeleteBrowserSettingsRequestRequestTypeDef
 
 ```python
@@ -434,6 +486,8 @@ from mypy_boto3_workspaces_web.type_defs import DeleteBrowserSettingsRequestRequ
 Required fields:
 
 - `browserSettingsArn`: `str`
+
+<a id="deleteidentityproviderrequestrequesttypedef"></a>
 
 ## DeleteIdentityProviderRequestRequestTypeDef
 
@@ -445,6 +499,8 @@ Required fields:
 
 - `identityProviderArn`: `str`
 
+<a id="deletenetworksettingsrequestrequesttypedef"></a>
+
 ## DeleteNetworkSettingsRequestRequestTypeDef
 
 ```python
@@ -454,6 +510,8 @@ from mypy_boto3_workspaces_web.type_defs import DeleteNetworkSettingsRequestRequ
 Required fields:
 
 - `networkSettingsArn`: `str`
+
+<a id="deleteportalrequestrequesttypedef"></a>
 
 ## DeletePortalRequestRequestTypeDef
 
@@ -465,6 +523,8 @@ Required fields:
 
 - `portalArn`: `str`
 
+<a id="deletetruststorerequestrequesttypedef"></a>
+
 ## DeleteTrustStoreRequestRequestTypeDef
 
 ```python
@@ -474,6 +534,8 @@ from mypy_boto3_workspaces_web.type_defs import DeleteTrustStoreRequestRequestTy
 Required fields:
 
 - `trustStoreArn`: `str`
+
+<a id="deleteusersettingsrequestrequesttypedef"></a>
 
 ## DeleteUserSettingsRequestRequestTypeDef
 
@@ -485,6 +547,8 @@ Required fields:
 
 - `userSettingsArn`: `str`
 
+<a id="disassociatebrowsersettingsrequestrequesttypedef"></a>
+
 ## DisassociateBrowserSettingsRequestRequestTypeDef
 
 ```python
@@ -494,6 +558,8 @@ from mypy_boto3_workspaces_web.type_defs import DisassociateBrowserSettingsReque
 Required fields:
 
 - `portalArn`: `str`
+
+<a id="disassociatenetworksettingsrequestrequesttypedef"></a>
 
 ## DisassociateNetworkSettingsRequestRequestTypeDef
 
@@ -505,6 +571,8 @@ Required fields:
 
 - `portalArn`: `str`
 
+<a id="disassociatetruststorerequestrequesttypedef"></a>
+
 ## DisassociateTrustStoreRequestRequestTypeDef
 
 ```python
@@ -514,6 +582,8 @@ from mypy_boto3_workspaces_web.type_defs import DisassociateTrustStoreRequestReq
 Required fields:
 
 - `portalArn`: `str`
+
+<a id="disassociateusersettingsrequestrequesttypedef"></a>
 
 ## DisassociateUserSettingsRequestRequestTypeDef
 
@@ -525,6 +595,8 @@ Required fields:
 
 - `portalArn`: `str`
 
+<a id="getbrowsersettingsrequestrequesttypedef"></a>
+
 ## GetBrowserSettingsRequestRequestTypeDef
 
 ```python
@@ -534,6 +606,8 @@ from mypy_boto3_workspaces_web.type_defs import GetBrowserSettingsRequestRequest
 Required fields:
 
 - `browserSettingsArn`: `str`
+
+<a id="getbrowsersettingsresponsetypedef"></a>
 
 ## GetBrowserSettingsResponseTypeDef
 
@@ -548,6 +622,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getidentityproviderrequestrequesttypedef"></a>
+
 ## GetIdentityProviderRequestRequestTypeDef
 
 ```python
@@ -557,6 +633,8 @@ from mypy_boto3_workspaces_web.type_defs import GetIdentityProviderRequestReques
 Required fields:
 
 - `identityProviderArn`: `str`
+
+<a id="getidentityproviderresponsetypedef"></a>
 
 ## GetIdentityProviderResponseTypeDef
 
@@ -571,6 +649,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnetworksettingsrequestrequesttypedef"></a>
+
 ## GetNetworkSettingsRequestRequestTypeDef
 
 ```python
@@ -580,6 +660,8 @@ from mypy_boto3_workspaces_web.type_defs import GetNetworkSettingsRequestRequest
 Required fields:
 
 - `networkSettingsArn`: `str`
+
+<a id="getnetworksettingsresponsetypedef"></a>
 
 ## GetNetworkSettingsResponseTypeDef
 
@@ -594,6 +676,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getportalrequestrequesttypedef"></a>
+
 ## GetPortalRequestRequestTypeDef
 
 ```python
@@ -603,6 +687,8 @@ from mypy_boto3_workspaces_web.type_defs import GetPortalRequestRequestTypeDef
 Required fields:
 
 - `portalArn`: `str`
+
+<a id="getportalresponsetypedef"></a>
 
 ## GetPortalResponseTypeDef
 
@@ -616,6 +702,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getportalserviceprovidermetadatarequestrequesttypedef"></a>
+
 ## GetPortalServiceProviderMetadataRequestRequestTypeDef
 
 ```python
@@ -625,6 +713,8 @@ from mypy_boto3_workspaces_web.type_defs import GetPortalServiceProviderMetadata
 Required fields:
 
 - `portalArn`: `str`
+
+<a id="getportalserviceprovidermetadataresponsetypedef"></a>
 
 ## GetPortalServiceProviderMetadataResponseTypeDef
 
@@ -639,6 +729,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettruststorecertificaterequestrequesttypedef"></a>
+
 ## GetTrustStoreCertificateRequestRequestTypeDef
 
 ```python
@@ -649,6 +741,8 @@ Required fields:
 
 - `thumbprint`: `str`
 - `trustStoreArn`: `str`
+
+<a id="gettruststorecertificateresponsetypedef"></a>
 
 ## GetTrustStoreCertificateResponseTypeDef
 
@@ -663,6 +757,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettruststorerequestrequesttypedef"></a>
+
 ## GetTrustStoreRequestRequestTypeDef
 
 ```python
@@ -672,6 +768,8 @@ from mypy_boto3_workspaces_web.type_defs import GetTrustStoreRequestRequestTypeD
 Required fields:
 
 - `trustStoreArn`: `str`
+
+<a id="gettruststoreresponsetypedef"></a>
 
 ## GetTrustStoreResponseTypeDef
 
@@ -685,6 +783,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getusersettingsrequestrequesttypedef"></a>
+
 ## GetUserSettingsRequestRequestTypeDef
 
 ```python
@@ -694,6 +794,8 @@ from mypy_boto3_workspaces_web.type_defs import GetUserSettingsRequestRequestTyp
 Required fields:
 
 - `userSettingsArn`: `str`
+
+<a id="getusersettingsresponsetypedef"></a>
 
 ## GetUserSettingsResponseTypeDef
 
@@ -707,6 +809,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identityprovidersummarytypedef"></a>
+
 ## IdentityProviderSummaryTypeDef
 
 ```python
@@ -719,6 +823,8 @@ Optional fields:
 - `identityProviderName`: `str`
 - `identityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+
+<a id="identityprovidertypedef"></a>
 
 ## IdentityProviderTypeDef
 
@@ -737,6 +843,8 @@ Optional fields:
 - `identityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 
+<a id="listbrowsersettingsrequestrequesttypedef"></a>
+
 ## ListBrowserSettingsRequestRequestTypeDef
 
 ```python
@@ -747,6 +855,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listbrowsersettingsresponsetypedef"></a>
 
 ## ListBrowserSettingsResponseTypeDef
 
@@ -761,6 +871,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listidentityprovidersrequestrequesttypedef"></a>
 
 ## ListIdentityProvidersRequestRequestTypeDef
 
@@ -777,6 +889,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listidentityprovidersresponsetypedef"></a>
+
 ## ListIdentityProvidersResponseTypeDef
 
 ```python
@@ -791,6 +905,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listnetworksettingsrequestrequesttypedef"></a>
+
 ## ListNetworkSettingsRequestRequestTypeDef
 
 ```python
@@ -801,6 +917,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listnetworksettingsresponsetypedef"></a>
 
 ## ListNetworkSettingsResponseTypeDef
 
@@ -816,6 +934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listportalsrequestrequesttypedef"></a>
+
 ## ListPortalsRequestRequestTypeDef
 
 ```python
@@ -826,6 +946,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listportalsresponsetypedef"></a>
 
 ## ListPortalsResponseTypeDef
 
@@ -841,6 +963,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -850,6 +974,8 @@ from mypy_boto3_workspaces_web.type_defs import ListTagsForResourceRequestReques
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -862,6 +988,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtruststorecertificatesrequestrequesttypedef"></a>
 
 ## ListTrustStoreCertificatesRequestRequestTypeDef
 
@@ -878,6 +1006,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listtruststorecertificatesresponsetypedef"></a>
+
 ## ListTrustStoreCertificatesResponseTypeDef
 
 ```python
@@ -893,6 +1023,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtruststoresrequestrequesttypedef"></a>
+
 ## ListTrustStoresRequestRequestTypeDef
 
 ```python
@@ -903,6 +1035,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listtruststoresresponsetypedef"></a>
 
 ## ListTrustStoresResponseTypeDef
 
@@ -918,6 +1052,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listusersettingsrequestrequesttypedef"></a>
+
 ## ListUserSettingsRequestRequestTypeDef
 
 ```python
@@ -928,6 +1064,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listusersettingsresponsetypedef"></a>
 
 ## ListUserSettingsResponseTypeDef
 
@@ -943,6 +1081,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="networksettingssummarytypedef"></a>
+
 ## NetworkSettingsSummaryTypeDef
 
 ```python
@@ -953,6 +1093,8 @@ Optional fields:
 
 - `networkSettingsArn`: `str`
 - `vpcId`: `str`
+
+<a id="networksettingstypedef"></a>
 
 ## NetworkSettingsTypeDef
 
@@ -970,6 +1112,8 @@ Optional fields:
 - `securityGroupIds`: `List`\[`str`\]
 - `subnetIds`: `List`\[`str`\]
 - `vpcId`: `str`
+
+<a id="portalsummarytypedef"></a>
 
 ## PortalSummaryTypeDef
 
@@ -992,6 +1136,8 @@ Optional fields:
   [RendererTypeType](./literals.md#renderertypetype))
 - `trustStoreArn`: `str`
 - `userSettingsArn`: `str`
+
+<a id="portaltypedef"></a>
 
 ## PortalTypeDef
 
@@ -1016,6 +1162,8 @@ Optional fields:
 - `trustStoreArn`: `str`
 - `userSettingsArn`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1029,6 +1177,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1045,6 +1195,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1056,6 +1208,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="truststoresummarytypedef"></a>
+
 ## TrustStoreSummaryTypeDef
 
 ```python
@@ -1065,6 +1219,8 @@ from mypy_boto3_workspaces_web.type_defs import TrustStoreSummaryTypeDef
 Optional fields:
 
 - `trustStoreArn`: `str`
+
+<a id="truststoretypedef"></a>
 
 ## TrustStoreTypeDef
 
@@ -1077,6 +1233,8 @@ Optional fields:
 - `associatedPortalArns`: `List`\[`str`\]
 - `trustStoreArn`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1087,6 +1245,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatebrowsersettingsrequestrequesttypedef"></a>
 
 ## UpdateBrowserSettingsRequestRequestTypeDef
 
@@ -1103,6 +1263,8 @@ Optional fields:
 - `browserPolicy`: `str`
 - `clientToken`: `str`
 
+<a id="updatebrowsersettingsresponsetypedef"></a>
+
 ## UpdateBrowserSettingsResponseTypeDef
 
 ```python
@@ -1115,6 +1277,8 @@ Required fields:
   [BrowserSettingsTypeDef](./type_defs.md#browsersettingstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateidentityproviderrequestrequesttypedef"></a>
 
 ## UpdateIdentityProviderRequestRequestTypeDef
 
@@ -1134,6 +1298,8 @@ Optional fields:
 - `identityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 
+<a id="updateidentityproviderresponsetypedef"></a>
+
 ## UpdateIdentityProviderResponseTypeDef
 
 ```python
@@ -1146,6 +1312,8 @@ Required fields:
   [IdentityProviderTypeDef](./type_defs.md#identityprovidertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatenetworksettingsrequestrequesttypedef"></a>
 
 ## UpdateNetworkSettingsRequestRequestTypeDef
 
@@ -1164,6 +1332,8 @@ Optional fields:
 - `subnetIds`: `Sequence`\[`str`\]
 - `vpcId`: `str`
 
+<a id="updatenetworksettingsresponsetypedef"></a>
+
 ## UpdateNetworkSettingsResponseTypeDef
 
 ```python
@@ -1176,6 +1346,8 @@ Required fields:
   [NetworkSettingsTypeDef](./type_defs.md#networksettingstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateportalrequestrequesttypedef"></a>
 
 ## UpdatePortalRequestRequestTypeDef
 
@@ -1191,6 +1363,8 @@ Optional fields:
 
 - `displayName`: `str`
 
+<a id="updateportalresponsetypedef"></a>
+
 ## UpdatePortalResponseTypeDef
 
 ```python
@@ -1202,6 +1376,8 @@ Required fields:
 - `portal`: [PortalTypeDef](./type_defs.md#portaltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetruststorerequestrequesttypedef"></a>
 
 ## UpdateTrustStoreRequestRequestTypeDef
 
@@ -1220,6 +1396,8 @@ Optional fields:
 - `certificatesToDelete`: `Sequence`\[`str`\]
 - `clientToken`: `str`
 
+<a id="updatetruststoreresponsetypedef"></a>
+
 ## UpdateTrustStoreResponseTypeDef
 
 ```python
@@ -1231,6 +1409,8 @@ Required fields:
 - `trustStoreArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateusersettingsrequestrequesttypedef"></a>
 
 ## UpdateUserSettingsRequestRequestTypeDef
 
@@ -1251,6 +1431,8 @@ Optional fields:
 - `printAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
 - `uploadAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
 
+<a id="updateusersettingsresponsetypedef"></a>
+
 ## UpdateUserSettingsResponseTypeDef
 
 ```python
@@ -1262,6 +1444,8 @@ Required fields:
 - `userSettings`: [UserSettingsTypeDef](./type_defs.md#usersettingstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="usersettingssummarytypedef"></a>
 
 ## UserSettingsSummaryTypeDef
 
@@ -1277,6 +1461,8 @@ Optional fields:
 - `printAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
 - `uploadAllowed`: [EnabledTypeType](./literals.md#enabledtypetype)
 - `userSettingsArn`: `str`
+
+<a id="usersettingstypedef"></a>
 
 ## UserSettingsTypeDef
 

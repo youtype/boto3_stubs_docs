@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-elastictranscoder-module"></a>
+
 # Typed dictionaries for boto3 ElasticTranscoder module
 
 > [Index](..) > [ElasticTranscoder](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticTranscoder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastictranscoder.html#ElasticTranscoder)
 type annotations stubs module
-[mypy_boto3_elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
+[mypy-boto3-elastictranscoder](https://pypi.org/project/mypy-boto3-elastictranscoder/).
 
 - [Typed dictionaries for boto3 ElasticTranscoder module](#typed-dictionaries-for-boto3-elastictranscoder-module)
   - [ArtworkTypeDef](#artworktypedef)
@@ -74,6 +76,8 @@ type annotations stubs module
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WarningTypeDef](#warningtypedef)
 
+<a id="artworktypedef"></a>
+
 ## ArtworkTypeDef
 
 ```python
@@ -90,6 +94,8 @@ Optional fields:
 - `AlbumArtFormat`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
+<a id="audiocodecoptionstypedef"></a>
+
 ## AudioCodecOptionsTypeDef
 
 ```python
@@ -102,6 +108,8 @@ Optional fields:
 - `BitDepth`: `str`
 - `BitOrder`: `str`
 - `Signed`: `str`
+
+<a id="audioparameterstypedef"></a>
 
 ## AudioParametersTypeDef
 
@@ -119,6 +127,8 @@ Optional fields:
 - `CodecOptions`:
   [AudioCodecOptionsTypeDef](./type_defs.md#audiocodecoptionstypedef)
 
+<a id="canceljobrequestrequesttypedef"></a>
+
 ## CancelJobRequestRequestTypeDef
 
 ```python
@@ -128,6 +138,8 @@ from mypy_boto3_elastictranscoder.type_defs import CancelJobRequestRequestTypeDe
 Required fields:
 
 - `Id`: `str`
+
+<a id="captionformattypedef"></a>
 
 ## CaptionFormatTypeDef
 
@@ -140,6 +152,8 @@ Optional fields:
 - `Format`: `str`
 - `Pattern`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
+
+<a id="captionsourcetypedef"></a>
 
 ## CaptionSourceTypeDef
 
@@ -155,6 +169,8 @@ Optional fields:
 - `Label`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
+<a id="captionstypedef"></a>
+
 ## CaptionsTypeDef
 
 ```python
@@ -169,6 +185,8 @@ Optional fields:
 - `CaptionFormats`:
   `Sequence`\[[CaptionFormatTypeDef](./type_defs.md#captionformattypedef)\]
 
+<a id="cliptypedef"></a>
+
 ## ClipTypeDef
 
 ```python
@@ -178,6 +196,8 @@ from mypy_boto3_elastictranscoder.type_defs import ClipTypeDef
 Optional fields:
 
 - `TimeSpan`: [TimeSpanTypeDef](./type_defs.md#timespantypedef)
+
+<a id="createjoboutputtypedef"></a>
 
 ## CreateJobOutputTypeDef
 
@@ -200,6 +220,8 @@ Optional fields:
 - `Captions`: [CaptionsTypeDef](./type_defs.md#captionstypedef)
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 
+<a id="createjobplaylisttypedef"></a>
+
 ## CreateJobPlaylistTypeDef
 
 ```python
@@ -214,6 +236,8 @@ Optional fields:
 - `HlsContentProtection`:
   [HlsContentProtectionTypeDef](./type_defs.md#hlscontentprotectiontypedef)
 - `PlayReadyDrm`: [PlayReadyDrmTypeDef](./type_defs.md#playreadydrmtypedef)
+
+<a id="createjobrequestrequesttypedef"></a>
 
 ## CreateJobRequestRequestTypeDef
 
@@ -237,6 +261,8 @@ Optional fields:
   `Sequence`\[[CreateJobPlaylistTypeDef](./type_defs.md#createjobplaylisttypedef)\]
 - `UserMetadata`: `Mapping`\[`str`, `str`\]
 
+<a id="createjobresponsetypedef"></a>
+
 ## CreateJobResponseTypeDef
 
 ```python
@@ -248,6 +274,8 @@ Required fields:
 - `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpipelinerequestrequesttypedef"></a>
 
 ## CreatePipelineRequestRequestTypeDef
 
@@ -271,6 +299,8 @@ Optional fields:
 - `ThumbnailConfig`:
   [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
+<a id="createpipelineresponsetypedef"></a>
+
 ## CreatePipelineResponseTypeDef
 
 ```python
@@ -283,6 +313,8 @@ Required fields:
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpresetrequestrequesttypedef"></a>
 
 ## CreatePresetRequestRequestTypeDef
 
@@ -302,6 +334,8 @@ Optional fields:
 - `Audio`: [AudioParametersTypeDef](./type_defs.md#audioparameterstypedef)
 - `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
 
+<a id="createpresetresponsetypedef"></a>
+
 ## CreatePresetResponseTypeDef
 
 ```python
@@ -315,6 +349,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepipelinerequestrequesttypedef"></a>
+
 ## DeletePipelineRequestRequestTypeDef
 
 ```python
@@ -325,6 +361,8 @@ Required fields:
 
 - `Id`: `str`
 
+<a id="deletepresetrequestrequesttypedef"></a>
+
 ## DeletePresetRequestRequestTypeDef
 
 ```python
@@ -334,6 +372,8 @@ from mypy_boto3_elastictranscoder.type_defs import DeletePresetRequestRequestTyp
 Required fields:
 
 - `Id`: `str`
+
+<a id="detectedpropertiestypedef"></a>
 
 ## DetectedPropertiesTypeDef
 
@@ -349,6 +389,8 @@ Optional fields:
 - `FileSize`: `int`
 - `DurationMillis`: `int`
 
+<a id="encryptiontypedef"></a>
+
 ## EncryptionTypeDef
 
 ```python
@@ -361,6 +403,8 @@ Optional fields:
 - `Key`: `str`
 - `KeyMd5`: `str`
 - `InitializationVector`: `str`
+
+<a id="hlscontentprotectiontypedef"></a>
 
 ## HlsContentProtectionTypeDef
 
@@ -377,6 +421,8 @@ Optional fields:
 - `LicenseAcquisitionUrl`: `str`
 - `KeyStoragePolicy`: `str`
 
+<a id="inputcaptionstypedef"></a>
+
 ## InputCaptionsTypeDef
 
 ```python
@@ -389,6 +435,8 @@ Optional fields:
 - `CaptionSources`:
   `Sequence`\[[CaptionSourceTypeDef](./type_defs.md#captionsourcetypedef)\]
 
+<a id="jobalbumarttypedef"></a>
+
 ## JobAlbumArtTypeDef
 
 ```python
@@ -399,6 +447,8 @@ Optional fields:
 
 - `MergePolicy`: `str`
 - `Artwork`: `Sequence`\[[ArtworkTypeDef](./type_defs.md#artworktypedef)\]
+
+<a id="jobinputtypedef"></a>
 
 ## JobInputTypeDef
 
@@ -419,6 +469,8 @@ Optional fields:
 - `InputCaptions`: [InputCaptionsTypeDef](./type_defs.md#inputcaptionstypedef)
 - `DetectedProperties`:
   [DetectedPropertiesTypeDef](./type_defs.md#detectedpropertiestypedef)
+
+<a id="joboutputtypedef"></a>
 
 ## JobOutputTypeDef
 
@@ -451,6 +503,8 @@ Optional fields:
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
 - `AppliedColorSpaceConversion`: `str`
 
+<a id="jobtypedef"></a>
+
 ## JobTypeDef
 
 ```python
@@ -472,6 +526,8 @@ Optional fields:
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 - `Timing`: [TimingTypeDef](./type_defs.md#timingtypedef)
 
+<a id="jobwatermarktypedef"></a>
+
 ## JobWatermarkTypeDef
 
 ```python
@@ -483,6 +539,8 @@ Optional fields:
 - `PresetWatermarkId`: `str`
 - `InputKey`: `str`
 - `Encryption`: [EncryptionTypeDef](./type_defs.md#encryptiontypedef)
+
+<a id="listjobsbypipelinerequestrequesttypedef"></a>
 
 ## ListJobsByPipelineRequestRequestTypeDef
 
@@ -499,6 +557,8 @@ Optional fields:
 - `Ascending`: `str`
 - `PageToken`: `str`
 
+<a id="listjobsbypipelineresponsetypedef"></a>
+
 ## ListJobsByPipelineResponseTypeDef
 
 ```python
@@ -511,6 +571,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listjobsbystatusrequestrequesttypedef"></a>
 
 ## ListJobsByStatusRequestRequestTypeDef
 
@@ -527,6 +589,8 @@ Optional fields:
 - `Ascending`: `str`
 - `PageToken`: `str`
 
+<a id="listjobsbystatusresponsetypedef"></a>
+
 ## ListJobsByStatusResponseTypeDef
 
 ```python
@@ -540,6 +604,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpipelinesrequestrequesttypedef"></a>
+
 ## ListPipelinesRequestRequestTypeDef
 
 ```python
@@ -550,6 +616,8 @@ Optional fields:
 
 - `Ascending`: `str`
 - `PageToken`: `str`
+
+<a id="listpipelinesresponsetypedef"></a>
 
 ## ListPipelinesResponseTypeDef
 
@@ -564,6 +632,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpresetsrequestrequesttypedef"></a>
+
 ## ListPresetsRequestRequestTypeDef
 
 ```python
@@ -574,6 +644,8 @@ Optional fields:
 
 - `Ascending`: `str`
 - `PageToken`: `str`
+
+<a id="listpresetsresponsetypedef"></a>
 
 ## ListPresetsResponseTypeDef
 
@@ -588,6 +660,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationstypedef"></a>
+
 ## NotificationsTypeDef
 
 ```python
@@ -601,6 +675,8 @@ Optional fields:
 - `Warning`: `str`
 - `Error`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -612,6 +688,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissiontypedef"></a>
 
 ## PermissionTypeDef
 
@@ -625,6 +703,8 @@ Optional fields:
 - `Grantee`: `str`
 - `Access`: `Sequence`\[`str`\]
 
+<a id="pipelineoutputconfigtypedef"></a>
+
 ## PipelineOutputConfigTypeDef
 
 ```python
@@ -637,6 +717,8 @@ Optional fields:
 - `StorageClass`: `str`
 - `Permissions`:
   `Sequence`\[[PermissionTypeDef](./type_defs.md#permissiontypedef)\]
+
+<a id="pipelinetypedef"></a>
 
 ## PipelineTypeDef
 
@@ -660,6 +742,8 @@ Optional fields:
 - `ThumbnailConfig`:
   [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
+<a id="playreadydrmtypedef"></a>
+
 ## PlayReadyDrmTypeDef
 
 ```python
@@ -674,6 +758,8 @@ Optional fields:
 - `KeyId`: `str`
 - `InitializationVector`: `str`
 - `LicenseAcquisitionUrl`: `str`
+
+<a id="playlisttypedef"></a>
 
 ## PlaylistTypeDef
 
@@ -692,6 +778,8 @@ Optional fields:
 - `Status`: `str`
 - `StatusDetail`: `str`
 
+<a id="presettypedef"></a>
+
 ## PresetTypeDef
 
 ```python
@@ -709,6 +797,8 @@ Optional fields:
 - `Video`: [VideoParametersTypeDef](./type_defs.md#videoparameterstypedef)
 - `Thumbnails`: [ThumbnailsTypeDef](./type_defs.md#thumbnailstypedef)
 - `Type`: `str`
+
+<a id="presetwatermarktypedef"></a>
 
 ## PresetWatermarkTypeDef
 
@@ -729,6 +819,8 @@ Optional fields:
 - `Opacity`: `str`
 - `Target`: `str`
 
+<a id="readjobrequestrequesttypedef"></a>
+
 ## ReadJobRequestRequestTypeDef
 
 ```python
@@ -738,6 +830,8 @@ from mypy_boto3_elastictranscoder.type_defs import ReadJobRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="readjobresponsetypedef"></a>
 
 ## ReadJobResponseTypeDef
 
@@ -751,6 +845,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="readpipelinerequestrequesttypedef"></a>
+
 ## ReadPipelineRequestRequestTypeDef
 
 ```python
@@ -760,6 +856,8 @@ from mypy_boto3_elastictranscoder.type_defs import ReadPipelineRequestRequestTyp
 Required fields:
 
 - `Id`: `str`
+
+<a id="readpipelineresponsetypedef"></a>
 
 ## ReadPipelineResponseTypeDef
 
@@ -774,6 +872,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="readpresetrequestrequesttypedef"></a>
+
 ## ReadPresetRequestRequestTypeDef
 
 ```python
@@ -783,6 +883,8 @@ from mypy_boto3_elastictranscoder.type_defs import ReadPresetRequestRequestTypeD
 Required fields:
 
 - `Id`: `str`
+
+<a id="readpresetresponsetypedef"></a>
 
 ## ReadPresetResponseTypeDef
 
@@ -795,6 +897,8 @@ Required fields:
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -810,6 +914,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="testrolerequestrequesttypedef"></a>
+
 ## TestRoleRequestRequestTypeDef
 
 ```python
@@ -823,6 +929,8 @@ Required fields:
 - `OutputBucket`: `str`
 - `Topics`: `Sequence`\[`str`\]
 
+<a id="testroleresponsetypedef"></a>
+
 ## TestRoleResponseTypeDef
 
 ```python
@@ -835,6 +943,8 @@ Required fields:
 - `Messages`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="thumbnailstypedef"></a>
 
 ## ThumbnailsTypeDef
 
@@ -853,6 +963,8 @@ Optional fields:
 - `SizingPolicy`: `str`
 - `PaddingPolicy`: `str`
 
+<a id="timespantypedef"></a>
+
 ## TimeSpanTypeDef
 
 ```python
@@ -863,6 +975,8 @@ Optional fields:
 
 - `StartTime`: `str`
 - `Duration`: `str`
+
+<a id="timingtypedef"></a>
 
 ## TimingTypeDef
 
@@ -876,6 +990,8 @@ Optional fields:
 - `StartTimeMillis`: `int`
 - `FinishTimeMillis`: `int`
 
+<a id="updatepipelinenotificationsrequestrequesttypedef"></a>
+
 ## UpdatePipelineNotificationsRequestRequestTypeDef
 
 ```python
@@ -886,6 +1002,8 @@ Required fields:
 
 - `Id`: `str`
 - `Notifications`: [NotificationsTypeDef](./type_defs.md#notificationstypedef)
+
+<a id="updatepipelinenotificationsresponsetypedef"></a>
 
 ## UpdatePipelineNotificationsResponseTypeDef
 
@@ -898,6 +1016,8 @@ Required fields:
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepipelinerequestrequesttypedef"></a>
 
 ## UpdatePipelineRequestRequestTypeDef
 
@@ -921,6 +1041,8 @@ Optional fields:
 - `ThumbnailConfig`:
   [PipelineOutputConfigTypeDef](./type_defs.md#pipelineoutputconfigtypedef)
 
+<a id="updatepipelineresponsetypedef"></a>
+
 ## UpdatePipelineResponseTypeDef
 
 ```python
@@ -934,6 +1056,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatepipelinestatusrequestrequesttypedef"></a>
+
 ## UpdatePipelineStatusRequestRequestTypeDef
 
 ```python
@@ -944,6 +1068,8 @@ Required fields:
 
 - `Id`: `str`
 - `Status`: `str`
+
+<a id="updatepipelinestatusresponsetypedef"></a>
 
 ## UpdatePipelineStatusResponseTypeDef
 
@@ -956,6 +1082,8 @@ Required fields:
 - `Pipeline`: [PipelineTypeDef](./type_defs.md#pipelinetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="videoparameterstypedef"></a>
 
 ## VideoParametersTypeDef
 
@@ -982,6 +1110,8 @@ Optional fields:
 - `Watermarks`:
   `Sequence`\[[PresetWatermarkTypeDef](./type_defs.md#presetwatermarktypedef)\]
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -992,6 +1122,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="warningtypedef"></a>
 
 ## WarningTypeDef
 

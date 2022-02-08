@@ -1,3 +1,5 @@
+<a id="acmclient-for-boto3-acm-module"></a>
+
 # ACMClient for boto3 ACM module
 
 > [Index](..) > [ACM](.) > ACMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ACM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM)
 type annotations stubs module
-[mypy_boto3_acm](https://pypi.org/project/mypy-boto3-acm/).
+[mypy-boto3-acm](https://pypi.org/project/mypy-boto3-acm/).
 
 - [ACMClient for boto3 ACM module](#acmclient-for-boto3-acm-module)
   - [ACMClient](#acmclient)
@@ -32,6 +34,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="acmclient"></a>
+
 ## ACMClient
 
 Type annotations for `boto3.client("acm")`
@@ -39,14 +43,17 @@ Type annotations for `boto3.client("acm")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_acm.client import ACMClient
 
 def get_acm_client() -> ACMClient:
-    return boto3.client("acm")
+    return Session().client("acm")
 ```
 
 Boto3 documentation:
 [ACM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -80,7 +87,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -92,6 +103,8 @@ Boto3 documentation:
 [ACM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm.html#ACM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_certificate"></a>
 
 ### add_tags_to_certificate
 
@@ -110,6 +123,8 @@ Keyword-only arguments:
 - `CertificateArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -124,6 +139,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_certificate"></a>
 
 ### delete_certificate
 
@@ -140,6 +157,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
+
+<a id="describe_certificate"></a>
 
 ### describe_certificate
 
@@ -159,6 +178,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
+
+<a id="export_certificate"></a>
 
 ### export_certificate
 
@@ -182,6 +203,8 @@ Keyword-only arguments:
 Returns
 [ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -200,6 +223,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_configuration"></a>
+
 ### get_account_configuration
 
 Returns the account configuration options associated with an Amazon Web
@@ -212,6 +237,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef).
+
+<a id="get_certificate"></a>
 
 ### get_certificate
 
@@ -231,6 +258,8 @@ Keyword-only arguments:
 
 Returns
 [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
+
+<a id="import_certificate"></a>
 
 ### import_certificate
 
@@ -258,6 +287,8 @@ Keyword-only arguments:
 Returns
 [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
 
+<a id="list_certificates"></a>
+
 ### list_certificates
 
 Retrieves a list of certificate ARNs and domain names.
@@ -281,6 +312,8 @@ Keyword-only arguments:
 Returns
 [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
 
+<a id="list_tags_for_certificate"></a>
+
 ### list_tags_for_certificate
 
 Lists the tags that have been applied to the ACM certificate.
@@ -300,6 +333,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef).
 
+<a id="put_account_configuration"></a>
+
 ### put_account_configuration
 
 Adds or modifies account-level configurations in ACM.
@@ -318,6 +353,8 @@ Keyword-only arguments:
 - `ExpiryEvents`:
   [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 
+<a id="remove_tags_from_certificate"></a>
+
 ### remove_tags_from_certificate
 
 Remove one or more tags from an ACM certificate.
@@ -335,6 +372,8 @@ Keyword-only arguments:
 - `CertificateArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="renew_certificate"></a>
+
 ### renew_certificate
 
 Renews an eligible ACM certificate.
@@ -350,6 +389,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
+
+<a id="request_certificate"></a>
 
 ### request_certificate
 
@@ -380,6 +421,8 @@ Keyword-only arguments:
 Returns
 [RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).
 
+<a id="resend_validation_email"></a>
+
 ### resend_validation_email
 
 Resends the email that requests domain ownership validation.
@@ -397,6 +440,8 @@ Keyword-only arguments:
 - `CertificateArn`: `str` *(required)*
 - `Domain`: `str` *(required)*
 - `ValidationDomain`: `str` *(required)*
+
+<a id="update_certificate_options"></a>
 
 ### update_certificate_options
 
@@ -417,12 +462,16 @@ Keyword-only arguments:
   [CertificateOptionsTypeDef](./type_defs.md#certificateoptionstypedef)
   *(required)*
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("acm").get_paginator` method with overloads.
 
 - `client.get_paginator("list_certificates")` ->
   [ListCertificatesPaginator](./paginators.md#listcertificatespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

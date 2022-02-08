@@ -1,3 +1,5 @@
+<a id="ioteventsclient-for-boto3-iotevents-module"></a>
+
 # IoTEventsClient for boto3 IoTEvents module
 
 > [Index](..) > [IoTEvents](.) > IoTEventsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
-[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+[mypy-boto3-iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [IoTEventsClient for boto3 IoTEvents module](#ioteventsclient-for-boto3-iotevents-module)
   - [IoTEventsClient](#ioteventsclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [update_detector_model](#update_detector_model)
     - [update_input](#update_input)
 
+<a id="ioteventsclient"></a>
+
 ## IoTEventsClient
 
 Type annotations for `boto3.client("iotevents")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("iotevents")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iotevents.client import IoTEventsClient
 
 def get_iotevents_client() -> IoTEventsClient:
-    return boto3.client("iotevents")
+    return Session().client("iotevents")
 ```
 
 Boto3 documentation:
 [IoTEvents.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -82,7 +89,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -94,6 +105,8 @@ Boto3 documentation:
 [IoTEvents.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -109,6 +122,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_alarm_model"></a>
 
 ### create_alarm_model
 
@@ -141,6 +156,8 @@ Keyword-only arguments:
 Returns
 [CreateAlarmModelResponseTypeDef](./type_defs.md#createalarmmodelresponsetypedef).
 
+<a id="create_detector_model"></a>
+
 ### create_detector_model
 
 Creates a detector model.
@@ -169,6 +186,8 @@ Keyword-only arguments:
 Returns
 [CreateDetectorModelResponseTypeDef](./type_defs.md#createdetectormodelresponsetypedef).
 
+<a id="create_input"></a>
+
 ### create_input
 
 Creates an input.
@@ -192,6 +211,8 @@ Keyword-only arguments:
 Returns
 [CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
+<a id="delete_alarm_model"></a>
+
 ### delete_alarm_model
 
 Deletes an alarm model.
@@ -209,6 +230,8 @@ Keyword-only arguments:
 - `alarmModelName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_detector_model"></a>
 
 ### delete_detector_model
 
@@ -228,6 +251,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_input"></a>
+
 ### delete_input
 
 Deletes an input.
@@ -245,6 +270,8 @@ Keyword-only arguments:
 - `inputName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_alarm_model"></a>
 
 ### describe_alarm_model
 
@@ -265,6 +292,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAlarmModelResponseTypeDef](./type_defs.md#describealarmmodelresponsetypedef).
+
+<a id="describe_detector_model"></a>
 
 ### describe_detector_model
 
@@ -287,6 +316,8 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorModelResponseTypeDef](./type_defs.md#describedetectormodelresponsetypedef).
 
+<a id="describe_detector_model_analysis"></a>
+
 ### describe_detector_model_analysis
 
 Retrieves runtime information about a detector model analysis.
@@ -307,6 +338,8 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorModelAnalysisResponseTypeDef](./type_defs.md#describedetectormodelanalysisresponsetypedef).
 
+<a id="describe_input"></a>
+
 ### describe_input
 
 Describes an input.
@@ -326,6 +359,8 @@ Keyword-only arguments:
 Returns
 [DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
+<a id="describe_logging_options"></a>
+
 ### describe_logging_options
 
 Retrieves the current settings of the AWS IoT Events logging options.
@@ -338,6 +373,8 @@ Boto3 documentation:
 
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -356,6 +393,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_detector_model_analysis_results"></a>
 
 ### get_detector_model_analysis_results
 
@@ -379,6 +418,8 @@ Keyword-only arguments:
 Returns
 [GetDetectorModelAnalysisResultsResponseTypeDef](./type_defs.md#getdetectormodelanalysisresultsresponsetypedef).
 
+<a id="list_alarm_model_versions"></a>
+
 ### list_alarm_model_versions
 
 Lists all the versions of an alarm model.
@@ -401,6 +442,8 @@ Keyword-only arguments:
 Returns
 [ListAlarmModelVersionsResponseTypeDef](./type_defs.md#listalarmmodelversionsresponsetypedef).
 
+<a id="list_alarm_models"></a>
+
 ### list_alarm_models
 
 Lists the alarm models that you created.
@@ -420,6 +463,8 @@ Keyword-only arguments:
 
 Returns
 [ListAlarmModelsResponseTypeDef](./type_defs.md#listalarmmodelsresponsetypedef).
+
+<a id="list_detector_model_versions"></a>
 
 ### list_detector_model_versions
 
@@ -443,6 +488,8 @@ Keyword-only arguments:
 Returns
 [ListDetectorModelVersionsResponseTypeDef](./type_defs.md#listdetectormodelversionsresponsetypedef).
 
+<a id="list_detector_models"></a>
+
 ### list_detector_models
 
 Lists the detector models you have created.
@@ -462,6 +509,8 @@ Keyword-only arguments:
 
 Returns
 [ListDetectorModelsResponseTypeDef](./type_defs.md#listdetectormodelsresponsetypedef).
+
+<a id="list_input_routings"></a>
 
 ### list_input_routings
 
@@ -485,6 +534,8 @@ Keyword-only arguments:
 Returns
 [ListInputRoutingsResponseTypeDef](./type_defs.md#listinputroutingsresponsetypedef).
 
+<a id="list_inputs"></a>
+
 ### list_inputs
 
 Lists the inputs you have created.
@@ -503,6 +554,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -523,6 +576,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_logging_options"></a>
+
 ### put_logging_options
 
 Sets or updates the AWS IoT Events logging options.
@@ -539,6 +594,8 @@ Keyword-only arguments:
 
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
+
+<a id="start_detector_model_analysis"></a>
 
 ### start_detector_model_analysis
 
@@ -562,6 +619,8 @@ Keyword-only arguments:
 Returns
 [StartDetectorModelAnalysisResponseTypeDef](./type_defs.md#startdetectormodelanalysisresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds to or modifies the tags of the given resource.
@@ -581,6 +640,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the given tags (metadata) from the resource.
@@ -599,6 +660,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_alarm_model"></a>
 
 ### update_alarm_model
 
@@ -629,6 +692,8 @@ Keyword-only arguments:
 Returns
 [UpdateAlarmModelResponseTypeDef](./type_defs.md#updatealarmmodelresponsetypedef).
 
+<a id="update_detector_model"></a>
+
 ### update_detector_model
 
 Updates a detector model.
@@ -654,6 +719,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDetectorModelResponseTypeDef](./type_defs.md#updatedetectormodelresponsetypedef).
+
+<a id="update_input"></a>
 
 ### update_input
 

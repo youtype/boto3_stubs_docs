@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-inspector-module"></a>
+
 # Literals for boto3 Inspector module
 
 > [Index](..) > [Inspector](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module
-[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [Literals for boto3 Inspector module](#literals-for-boto3-inspector-module)
   - [AgentHealthCodeType](#agenthealthcodetype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="agenthealthcodetype"></a>
+
 ## AgentHealthCodeType
 
 ```python
@@ -50,6 +54,8 @@ Values:
 - `UNHEALTHY`
 - `UNKNOWN`
 
+<a id="agenthealthtype"></a>
+
 ## AgentHealthType
 
 ```python
@@ -61,6 +67,8 @@ Values:
 - `HEALTHY`
 - `UNHEALTHY`
 - `UNKNOWN`
+
+<a id="assessmentrunnotificationsnsstatuscodetype"></a>
 
 ## AssessmentRunNotificationSnsStatusCodeType
 
@@ -74,6 +82,8 @@ Values:
 - `INTERNAL_ERROR`
 - `SUCCESS`
 - `TOPIC_DOES_NOT_EXIST`
+
+<a id="assessmentrunstatetype"></a>
 
 ## AssessmentRunStateType
 
@@ -97,6 +107,8 @@ Values:
 - `START_EVALUATING_RULES_PENDING`
 - `STOP_DATA_COLLECTION_PENDING`
 
+<a id="assettypetype"></a>
+
 ## AssetTypeType
 
 ```python
@@ -106,6 +118,8 @@ from mypy_boto3_inspector.literals import AssetTypeType
 Values:
 
 - `ec2-instance`
+
+<a id="faileditemerrorcodetype"></a>
 
 ## FailedItemErrorCodeType
 
@@ -122,6 +136,8 @@ Values:
 - `ITEM_DOES_NOT_EXIST`
 - `LIMIT_EXCEEDED`
 
+<a id="inspectoreventtype"></a>
+
 ## InspectorEventType
 
 ```python
@@ -136,6 +152,8 @@ Values:
 - `FINDING_REPORTED`
 - `OTHER`
 
+<a id="listassessmentrunagentspaginatorname"></a>
+
 ## ListAssessmentRunAgentsPaginatorName
 
 ```python
@@ -145,6 +163,8 @@ from mypy_boto3_inspector.literals import ListAssessmentRunAgentsPaginatorName
 Values:
 
 - `list_assessment_run_agents`
+
+<a id="listassessmentrunspaginatorname"></a>
 
 ## ListAssessmentRunsPaginatorName
 
@@ -156,6 +176,8 @@ Values:
 
 - `list_assessment_runs`
 
+<a id="listassessmenttargetspaginatorname"></a>
+
 ## ListAssessmentTargetsPaginatorName
 
 ```python
@@ -165,6 +187,8 @@ from mypy_boto3_inspector.literals import ListAssessmentTargetsPaginatorName
 Values:
 
 - `list_assessment_targets`
+
+<a id="listassessmenttemplatespaginatorname"></a>
 
 ## ListAssessmentTemplatesPaginatorName
 
@@ -176,6 +200,8 @@ Values:
 
 - `list_assessment_templates`
 
+<a id="listeventsubscriptionspaginatorname"></a>
+
 ## ListEventSubscriptionsPaginatorName
 
 ```python
@@ -185,6 +211,8 @@ from mypy_boto3_inspector.literals import ListEventSubscriptionsPaginatorName
 Values:
 
 - `list_event_subscriptions`
+
+<a id="listexclusionspaginatorname"></a>
 
 ## ListExclusionsPaginatorName
 
@@ -196,6 +224,8 @@ Values:
 
 - `list_exclusions`
 
+<a id="listfindingspaginatorname"></a>
+
 ## ListFindingsPaginatorName
 
 ```python
@@ -205,6 +235,8 @@ from mypy_boto3_inspector.literals import ListFindingsPaginatorName
 Values:
 
 - `list_findings`
+
+<a id="listrulespackagespaginatorname"></a>
 
 ## ListRulesPackagesPaginatorName
 
@@ -216,6 +248,8 @@ Values:
 
 - `list_rules_packages`
 
+<a id="localetype"></a>
+
 ## LocaleType
 
 ```python
@@ -226,6 +260,8 @@ Values:
 
 - `EN_US`
 
+<a id="previewagentspaginatorname"></a>
+
 ## PreviewAgentsPaginatorName
 
 ```python
@@ -235,6 +271,8 @@ from mypy_boto3_inspector.literals import PreviewAgentsPaginatorName
 Values:
 
 - `preview_agents`
+
+<a id="previewstatustype"></a>
 
 ## PreviewStatusType
 
@@ -247,6 +285,8 @@ Values:
 - `COMPLETED`
 - `WORK_IN_PROGRESS`
 
+<a id="reportfileformattype"></a>
+
 ## ReportFileFormatType
 
 ```python
@@ -257,6 +297,8 @@ Values:
 
 - `HTML`
 - `PDF`
+
+<a id="reportstatustype"></a>
 
 ## ReportStatusType
 
@@ -270,6 +312,8 @@ Values:
 - `FAILED`
 - `WORK_IN_PROGRESS`
 
+<a id="reporttypetype"></a>
+
 ## ReportTypeType
 
 ```python
@@ -281,6 +325,8 @@ Values:
 - `FINDING`
 - `FULL`
 
+<a id="scopetypetype"></a>
+
 ## ScopeTypeType
 
 ```python
@@ -291,6 +337,8 @@ Values:
 
 - `INSTANCE_ID`
 - `RULES_PACKAGE_ARN`
+
+<a id="severitytype"></a>
 
 ## SeverityType
 
@@ -306,6 +354,8 @@ Values:
 - `Medium`
 - `Undefined`
 
+<a id="stopactiontype"></a>
+
 ## StopActionType
 
 ```python
@@ -316,6 +366,8 @@ Values:
 
 - `SKIP_EVALUATION`
 - `START_EVALUATION`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -624,6 +676,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

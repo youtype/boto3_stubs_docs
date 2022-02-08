@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-kinesisanalyticsv2-module"></a>
+
 # Paginators for boto3 KinesisAnalyticsV2 module
 
 > [Index](..) > [KinesisAnalyticsV2](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
-[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+[mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [Paginators for boto3 KinesisAnalyticsV2 module](#paginators-for-boto3-kinesisanalyticsv2-module)
   - [ListApplicationSnapshotsPaginator](#listapplicationsnapshotspaginator)
   - [ListApplicationsPaginator](#listapplicationspaginator)
+
+<a id="listapplicationsnapshotspaginator"></a>
 
 ## ListApplicationSnapshotsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationSnapshotsPaginator
 
 def get_list_application_snapshots_paginator() -> ListApplicationSnapshotsPaginator:
-    return boto3.client("kinesisanalyticsv2").get_paginator("list_application_snapshots")
+    return Session().client("kinesisanalyticsv2").get_paginator("list_application_snapshots")
 ```
 
 Boto3 documentation:
@@ -37,6 +43,8 @@ Arguments for `ListApplicationSnapshotsPaginator.paginate` method:
 `ListApplicationSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef)\].
 
+<a id="listapplicationspaginator"></a>
+
 ## ListApplicationsPaginator
 
 Type annotations for
@@ -45,10 +53,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kinesisanalyticsv2.paginator import ListApplicationsPaginator
 
 def get_list_applications_paginator() -> ListApplicationsPaginator:
-    return boto3.client("kinesisanalyticsv2").get_paginator("list_applications")
+    return Session().client("kinesisanalyticsv2").get_paginator("list_applications")
 ```
 
 Boto3 documentation:

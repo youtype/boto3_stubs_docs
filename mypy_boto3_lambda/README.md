@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lambda-module"></a>
+
 # Type annotations for boto3 Lambda module
 
 > [Index](..) > Lambda
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Lambda](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda)
 type annotations stubs module
-[mypy_boto3_lambda](https://pypi.org/project/mypy-boto3-lambda/).
+[mypy-boto3-lambda](https://pypi.org/project/mypy-boto3-lambda/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lambda]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lambda]'
+
+# standalone installation
 pip install mypy-boto3-lambda
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-lambda
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="lambdaclient"></a>
+
 ## LambdaClient
 
 Type annotations for `boto3.client("lambda")` as [LambdaClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lambda.client import LambdaClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -96,6 +110,8 @@ from mypy_boto3_lambda.client import LambdaClient
 - [update_function_configuration](./client.md#update_function_configuration)
 - [update_function_event_invoke_config](./client.md#update_function_event_invoke_config)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LambdaClient [exceptions](./client.md#exceptions)
@@ -136,6 +152,8 @@ LambdaClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnsupportedMediaTypeException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -144,7 +162,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.paginators import ListAliasesPaginator, ...
+from mypy_boto3_lambda.paginator import ListAliasesPaginator, ...
 ```
 
 - [ListAliasesPaginator](./paginators.md#listaliasespaginator)
@@ -158,6 +176,8 @@ from mypy_boto3_lambda.paginators import ListAliasesPaginator, ...
 - [ListProvisionedConcurrencyConfigsPaginator](./paginators.md#listprovisionedconcurrencyconfigspaginator)
 - [ListVersionsByFunctionPaginator](./paginators.md#listversionsbyfunctionpaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -166,12 +186,14 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_lambda.waiters import FunctionActiveWaiter, ...
+from mypy_boto3_lambda.waiter import FunctionActiveWaiter, ...
 ```
 
 - [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
 - [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
 - [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -216,6 +238,8 @@ from mypy_boto3_lambda.literals import ArchitectureType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

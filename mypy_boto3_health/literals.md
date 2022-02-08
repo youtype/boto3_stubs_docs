@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-health-module"></a>
+
 # Literals for boto3 Health module
 
 > [Index](..) > [Health](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
 type annotations stubs module
-[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 - [Literals for boto3 Health module](#literals-for-boto3-health-module)
   - [DescribeAffectedAccountsForOrganizationPaginatorName](#describeaffectedaccountsfororganizationpaginatorname)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describeaffectedaccountsfororganizationpaginatorname"></a>
+
 ## DescribeAffectedAccountsForOrganizationPaginatorName
 
 ```python
@@ -32,6 +36,8 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 Values:
 
 - `describe_affected_accounts_for_organization`
+
+<a id="describeaffectedentitiesfororganizationpaginatorname"></a>
 
 ## DescribeAffectedEntitiesForOrganizationPaginatorName
 
@@ -43,6 +49,8 @@ Values:
 
 - `describe_affected_entities_for_organization`
 
+<a id="describeaffectedentitiespaginatorname"></a>
+
 ## DescribeAffectedEntitiesPaginatorName
 
 ```python
@@ -52,6 +60,8 @@ from mypy_boto3_health.literals import DescribeAffectedEntitiesPaginatorName
 Values:
 
 - `describe_affected_entities`
+
+<a id="describeeventaggregatespaginatorname"></a>
 
 ## DescribeEventAggregatesPaginatorName
 
@@ -63,6 +73,8 @@ Values:
 
 - `describe_event_aggregates`
 
+<a id="describeeventtypespaginatorname"></a>
+
 ## DescribeEventTypesPaginatorName
 
 ```python
@@ -72,6 +84,8 @@ from mypy_boto3_health.literals import DescribeEventTypesPaginatorName
 Values:
 
 - `describe_event_types`
+
+<a id="describeeventsfororganizationpaginatorname"></a>
 
 ## DescribeEventsForOrganizationPaginatorName
 
@@ -83,6 +97,8 @@ Values:
 
 - `describe_events_for_organization`
 
+<a id="describeeventspaginatorname"></a>
+
 ## DescribeEventsPaginatorName
 
 ```python
@@ -92,6 +108,8 @@ from mypy_boto3_health.literals import DescribeEventsPaginatorName
 Values:
 
 - `describe_events`
+
+<a id="entitystatuscodetype"></a>
 
 ## entityStatusCodeType
 
@@ -105,6 +123,8 @@ Values:
 - `UNIMPAIRED`
 - `UNKNOWN`
 
+<a id="eventaggregatefieldtype"></a>
+
 ## eventAggregateFieldType
 
 ```python
@@ -114,6 +134,8 @@ from mypy_boto3_health.literals import eventAggregateFieldType
 Values:
 
 - `eventTypeCategory`
+
+<a id="eventscopecodetype"></a>
 
 ## eventScopeCodeType
 
@@ -127,6 +149,8 @@ Values:
 - `NONE`
 - `PUBLIC`
 
+<a id="eventstatuscodetype"></a>
+
 ## eventStatusCodeType
 
 ```python
@@ -138,6 +162,8 @@ Values:
 - `closed`
 - `open`
 - `upcoming`
+
+<a id="eventtypecategorytype"></a>
 
 ## eventTypeCategoryType
 
@@ -151,6 +177,8 @@ Values:
 - `investigation`
 - `issue`
 - `scheduledChange`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -459,6 +487,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-s3-module"></a>
+
 # Typed dictionaries for boto3 S3 module
 
 > [Index](..) > [S3](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
 type annotations stubs module
-[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [Typed dictionaries for boto3 S3 module](#typed-dictionaries-for-boto3-s3-module)
   - [AbortIncompleteMultipartUploadTypeDef](#abortincompletemultipartuploadtypedef)
@@ -383,6 +385,8 @@ type annotations stubs module
   - [WebsiteConfigurationTypeDef](#websiteconfigurationtypedef)
   - [WriteGetObjectResponseRequestRequestTypeDef](#writegetobjectresponserequestrequesttypedef)
 
+<a id="abortincompletemultipartuploadtypedef"></a>
+
 ## AbortIncompleteMultipartUploadTypeDef
 
 ```python
@@ -392,6 +396,8 @@ from mypy_boto3_s3.type_defs import AbortIncompleteMultipartUploadTypeDef
 Optional fields:
 
 - `DaysAfterInitiation`: `int`
+
+<a id="abortmultipartuploadoutputtypedef"></a>
 
 ## AbortMultipartUploadOutputTypeDef
 
@@ -406,6 +412,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="abortmultipartuploadrequestmultipartuploadtypedef"></a>
+
 ## AbortMultipartUploadRequestMultipartUploadTypeDef
 
 ```python
@@ -417,6 +425,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
+
+<a id="abortmultipartuploadrequestrequesttypedef"></a>
 
 ## AbortMultipartUploadRequestRequestTypeDef
 
@@ -436,6 +446,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="accelerateconfigurationtypedef"></a>
+
 ## AccelerateConfigurationTypeDef
 
 ```python
@@ -446,6 +458,8 @@ Optional fields:
 
 - `Status`:
   [BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype)
+
+<a id="accesscontrolpolicytypedef"></a>
 
 ## AccessControlPolicyTypeDef
 
@@ -458,6 +472,8 @@ Optional fields:
 - `Grants`: `Sequence`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
+<a id="accesscontroltranslationtypedef"></a>
+
 ## AccessControlTranslationTypeDef
 
 ```python
@@ -469,6 +485,8 @@ Required fields:
 - `Owner`: `Literal['Destination']` (see
   [OwnerOverrideType](./literals.md#owneroverridetype))
 
+<a id="analyticsandoperatortypedef"></a>
+
 ## AnalyticsAndOperatorTypeDef
 
 ```python
@@ -479,6 +497,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="analyticsconfigurationtypedef"></a>
 
 ## AnalyticsConfigurationTypeDef
 
@@ -496,6 +516,8 @@ Optional fields:
 
 - `Filter`: [AnalyticsFilterTypeDef](./type_defs.md#analyticsfiltertypedef)
 
+<a id="analyticsexportdestinationtypedef"></a>
+
 ## AnalyticsExportDestinationTypeDef
 
 ```python
@@ -506,6 +528,8 @@ Required fields:
 
 - `S3BucketDestination`:
   [AnalyticsS3BucketDestinationTypeDef](./type_defs.md#analyticss3bucketdestinationtypedef)
+
+<a id="analyticsfiltertypedef"></a>
 
 ## AnalyticsFilterTypeDef
 
@@ -519,6 +543,8 @@ Optional fields:
 - `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
   [AnalyticsAndOperatorTypeDef](./type_defs.md#analyticsandoperatortypedef)
+
+<a id="analyticss3bucketdestinationtypedef"></a>
 
 ## AnalyticsS3BucketDestinationTypeDef
 
@@ -536,6 +562,8 @@ Optional fields:
 
 - `BucketAccountId`: `str`
 - `Prefix`: `str`
+
+<a id="bucketcopyrequesttypedef"></a>
 
 ## BucketCopyRequestTypeDef
 
@@ -555,6 +583,8 @@ Optional fields:
 - `SourceClient`: `BaseClient`
 - `Config`: `TransferConfig`
 
+<a id="bucketdownloadfilerequesttypedef"></a>
+
 ## BucketDownloadFileRequestTypeDef
 
 ```python
@@ -571,6 +601,8 @@ Optional fields:
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
+
+<a id="bucketdownloadfileobjrequesttypedef"></a>
 
 ## BucketDownloadFileobjRequestTypeDef
 
@@ -589,6 +621,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="bucketlifecycleconfigurationtypedef"></a>
+
 ## BucketLifecycleConfigurationTypeDef
 
 ```python
@@ -599,6 +633,8 @@ Required fields:
 
 - `Rules`:
   `Sequence`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
+
+<a id="bucketloggingstatustypedef"></a>
 
 ## BucketLoggingStatusTypeDef
 
@@ -611,6 +647,8 @@ Optional fields:
 - `LoggingEnabled`:
   [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 
+<a id="bucketobjectrequesttypedef"></a>
+
 ## BucketObjectRequestTypeDef
 
 ```python
@@ -620,6 +658,8 @@ from mypy_boto3_s3.type_defs import BucketObjectRequestTypeDef
 Required fields:
 
 - `key`: `str`
+
+<a id="buckettypedef"></a>
 
 ## BucketTypeDef
 
@@ -631,6 +671,8 @@ Optional fields:
 
 - `Name`: `str`
 - `CreationDate`: `datetime`
+
+<a id="bucketuploadfilerequesttypedef"></a>
 
 ## BucketUploadFileRequestTypeDef
 
@@ -649,6 +691,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="bucketuploadfileobjrequesttypedef"></a>
+
 ## BucketUploadFileobjRequestTypeDef
 
 ```python
@@ -666,6 +710,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="corsconfigurationtypedef"></a>
+
 ## CORSConfigurationTypeDef
 
 ```python
@@ -675,6 +721,8 @@ from mypy_boto3_s3.type_defs import CORSConfigurationTypeDef
 Required fields:
 
 - `CORSRules`: `Sequence`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
+
+<a id="corsruletypedef"></a>
 
 ## CORSRuleTypeDef
 
@@ -694,6 +742,8 @@ Optional fields:
 - `ExposeHeaders`: `List`\[`str`\]
 - `MaxAgeSeconds`: `int`
 
+<a id="csvinputtypedef"></a>
+
 ## CSVInputTypeDef
 
 ```python
@@ -710,6 +760,8 @@ Optional fields:
 - `QuoteCharacter`: `str`
 - `AllowQuotedRecordDelimiter`: `bool`
 
+<a id="csvoutputtypedef"></a>
+
 ## CSVOutputTypeDef
 
 ```python
@@ -723,6 +775,8 @@ Optional fields:
 - `RecordDelimiter`: `str`
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
+
+<a id="clientcopyrequesttypedef"></a>
 
 ## ClientCopyRequestTypeDef
 
@@ -743,6 +797,8 @@ Optional fields:
 - `SourceClient`: `BaseClient`
 - `Config`: `TransferConfig`
 
+<a id="clientdownloadfilerequesttypedef"></a>
+
 ## ClientDownloadFileRequestTypeDef
 
 ```python
@@ -760,6 +816,8 @@ Optional fields:
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
+
+<a id="clientdownloadfileobjrequesttypedef"></a>
 
 ## ClientDownloadFileobjRequestTypeDef
 
@@ -779,6 +837,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="clientgeneratepresignedpostrequesttypedef"></a>
+
 ## ClientGeneratePresignedPostRequestTypeDef
 
 ```python
@@ -795,6 +855,8 @@ Optional fields:
 - `Fields`: `Dict`\[`str`, `Any`\]
 - `Conditions`: `List`\[`Any`\]
 - `ExpiresIn`: `int`
+
+<a id="clientuploadfilerequesttypedef"></a>
 
 ## ClientUploadFileRequestTypeDef
 
@@ -814,6 +876,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="clientuploadfileobjrequesttypedef"></a>
+
 ## ClientUploadFileobjRequestTypeDef
 
 ```python
@@ -832,6 +896,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="cloudfunctionconfigurationtypedef"></a>
+
 ## CloudFunctionConfigurationTypeDef
 
 ```python
@@ -846,6 +912,8 @@ Optional fields:
 - `CloudFunction`: `str`
 - `InvocationRole`: `str`
 
+<a id="commonprefixtypedef"></a>
+
 ## CommonPrefixTypeDef
 
 ```python
@@ -855,6 +923,8 @@ from mypy_boto3_s3.type_defs import CommonPrefixTypeDef
 Optional fields:
 
 - `Prefix`: `str`
+
+<a id="completemultipartuploadoutputtypedef"></a>
 
 ## CompleteMultipartUploadOutputTypeDef
 
@@ -879,6 +949,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="completemultipartuploadrequestmultipartuploadtypedef"></a>
+
 ## CompleteMultipartUploadRequestMultipartUploadTypeDef
 
 ```python
@@ -892,6 +964,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
+
+<a id="completemultipartuploadrequestrequesttypedef"></a>
 
 ## CompleteMultipartUploadRequestRequestTypeDef
 
@@ -913,6 +987,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="completedmultipartuploadtypedef"></a>
+
 ## CompletedMultipartUploadTypeDef
 
 ```python
@@ -923,6 +999,8 @@ Optional fields:
 
 - `Parts`:
   `Sequence`\[[CompletedPartTypeDef](./type_defs.md#completedparttypedef)\]
+
+<a id="completedparttypedef"></a>
 
 ## CompletedPartTypeDef
 
@@ -935,6 +1013,8 @@ Optional fields:
 - `ETag`: `str`
 - `PartNumber`: `int`
 
+<a id="conditiontypedef"></a>
+
 ## ConditionTypeDef
 
 ```python
@@ -945,6 +1025,8 @@ Optional fields:
 
 - `HttpErrorCodeReturnedEquals`: `str`
 - `KeyPrefixEquals`: `str`
+
+<a id="copyobjectoutputtypedef"></a>
 
 ## CopyObjectOutputTypeDef
 
@@ -970,6 +1052,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="copyobjectrequestobjectsummarytypedef"></a>
 
 ## CopyObjectRequestObjectSummaryTypeDef
 
@@ -1026,6 +1110,8 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
+<a id="copyobjectrequestobjecttypedef"></a>
+
 ## CopyObjectRequestObjectTypeDef
 
 ```python
@@ -1080,6 +1166,8 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
+
+<a id="copyobjectrequestrequesttypedef"></a>
 
 ## CopyObjectRequestRequestTypeDef
 
@@ -1139,6 +1227,8 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
+<a id="copyobjectresulttypedef"></a>
+
 ## CopyObjectResultTypeDef
 
 ```python
@@ -1150,6 +1240,8 @@ Optional fields:
 - `ETag`: `str`
 - `LastModified`: `datetime`
 
+<a id="copypartresulttypedef"></a>
+
 ## CopyPartResultTypeDef
 
 ```python
@@ -1160,6 +1252,8 @@ Optional fields:
 
 - `ETag`: `str`
 - `LastModified`: `datetime`
+
+<a id="copysourcetypedef"></a>
 
 ## CopySourceTypeDef
 
@@ -1176,6 +1270,8 @@ Optional fields:
 
 - `VersionId`: `str`
 
+<a id="createbucketconfigurationtypedef"></a>
+
 ## CreateBucketConfigurationTypeDef
 
 ```python
@@ -1186,6 +1282,8 @@ Optional fields:
 
 - `LocationConstraint`:
   [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
+
+<a id="createbucketoutputtypedef"></a>
 
 ## CreateBucketOutputTypeDef
 
@@ -1198,6 +1296,8 @@ Required fields:
 - `Location`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbucketrequestbuckettypedef"></a>
 
 ## CreateBucketRequestBucketTypeDef
 
@@ -1217,6 +1317,8 @@ Optional fields:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 - `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
+
+<a id="createbucketrequestrequesttypedef"></a>
 
 ## CreateBucketRequestRequestTypeDef
 
@@ -1241,6 +1343,8 @@ Optional fields:
 - `ObjectLockEnabledForBucket`: `bool`
 - `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
+<a id="createbucketrequestserviceresourcetypedef"></a>
+
 ## CreateBucketRequestServiceResourceTypeDef
 
 ```python
@@ -1263,6 +1367,8 @@ Optional fields:
 - `GrantWriteACP`: `str`
 - `ObjectLockEnabledForBucket`: `bool`
 - `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
+
+<a id="createmultipartuploadoutputtypedef"></a>
 
 ## CreateMultipartUploadOutputTypeDef
 
@@ -1288,6 +1394,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmultipartuploadrequestobjectsummarytypedef"></a>
 
 ## CreateMultipartUploadRequestObjectSummaryTypeDef
 
@@ -1328,6 +1436,8 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
+<a id="createmultipartuploadrequestobjecttypedef"></a>
+
 ## CreateMultipartUploadRequestObjectTypeDef
 
 ```python
@@ -1366,6 +1476,8 @@ Optional fields:
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
+
+<a id="createmultipartuploadrequestrequesttypedef"></a>
 
 ## CreateMultipartUploadRequestRequestTypeDef
 
@@ -1411,6 +1523,8 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
+<a id="defaultretentiontypedef"></a>
+
 ## DefaultRetentionTypeDef
 
 ```python
@@ -1423,6 +1537,8 @@ Optional fields:
   [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
 - `Days`: `int`
 - `Years`: `int`
+
+<a id="deletebucketanalyticsconfigurationrequestrequesttypedef"></a>
 
 ## DeleteBucketAnalyticsConfigurationRequestRequestTypeDef
 
@@ -1439,6 +1555,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketcorsrequestbucketcorstypedef"></a>
+
 ## DeleteBucketCorsRequestBucketCorsTypeDef
 
 ```python
@@ -1448,6 +1566,8 @@ from mypy_boto3_s3.type_defs import DeleteBucketCorsRequestBucketCorsTypeDef
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebucketcorsrequestrequesttypedef"></a>
 
 ## DeleteBucketCorsRequestRequestTypeDef
 
@@ -1463,6 +1583,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketencryptionrequestrequesttypedef"></a>
+
 ## DeleteBucketEncryptionRequestRequestTypeDef
 
 ```python
@@ -1477,6 +1599,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketintelligenttieringconfigurationrequestrequesttypedef"></a>
+
 ## DeleteBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
 ```python
@@ -1487,6 +1611,8 @@ Required fields:
 
 - `Bucket`: `str`
 - `Id`: `str`
+
+<a id="deletebucketinventoryconfigurationrequestrequesttypedef"></a>
 
 ## DeleteBucketInventoryConfigurationRequestRequestTypeDef
 
@@ -1503,6 +1629,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketlifecyclerequestbucketlifecycleconfigurationtypedef"></a>
+
 ## DeleteBucketLifecycleRequestBucketLifecycleConfigurationTypeDef
 
 ```python
@@ -1513,6 +1641,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketlifecyclerequestbucketlifecycletypedef"></a>
+
 ## DeleteBucketLifecycleRequestBucketLifecycleTypeDef
 
 ```python
@@ -1522,6 +1652,8 @@ from mypy_boto3_s3.type_defs import DeleteBucketLifecycleRequestBucketLifecycleT
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebucketlifecyclerequestrequesttypedef"></a>
 
 ## DeleteBucketLifecycleRequestRequestTypeDef
 
@@ -1536,6 +1668,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebucketmetricsconfigurationrequestrequesttypedef"></a>
 
 ## DeleteBucketMetricsConfigurationRequestRequestTypeDef
 
@@ -1552,6 +1686,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketownershipcontrolsrequestrequesttypedef"></a>
+
 ## DeleteBucketOwnershipControlsRequestRequestTypeDef
 
 ```python
@@ -1566,6 +1702,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketpolicyrequestbucketpolicytypedef"></a>
+
 ## DeleteBucketPolicyRequestBucketPolicyTypeDef
 
 ```python
@@ -1575,6 +1713,8 @@ from mypy_boto3_s3.type_defs import DeleteBucketPolicyRequestBucketPolicyTypeDef
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebucketpolicyrequestrequesttypedef"></a>
 
 ## DeleteBucketPolicyRequestRequestTypeDef
 
@@ -1590,6 +1730,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketreplicationrequestrequesttypedef"></a>
+
 ## DeleteBucketReplicationRequestRequestTypeDef
 
 ```python
@@ -1604,6 +1746,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketrequestbuckettypedef"></a>
+
 ## DeleteBucketRequestBucketTypeDef
 
 ```python
@@ -1613,6 +1757,8 @@ from mypy_boto3_s3.type_defs import DeleteBucketRequestBucketTypeDef
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebucketrequestrequesttypedef"></a>
 
 ## DeleteBucketRequestRequestTypeDef
 
@@ -1628,6 +1774,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebuckettaggingrequestbuckettaggingtypedef"></a>
+
 ## DeleteBucketTaggingRequestBucketTaggingTypeDef
 
 ```python
@@ -1637,6 +1785,8 @@ from mypy_boto3_s3.type_defs import DeleteBucketTaggingRequestBucketTaggingTypeD
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebuckettaggingrequestrequesttypedef"></a>
 
 ## DeleteBucketTaggingRequestRequestTypeDef
 
@@ -1652,6 +1802,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletebucketwebsiterequestbucketwebsitetypedef"></a>
+
 ## DeleteBucketWebsiteRequestBucketWebsiteTypeDef
 
 ```python
@@ -1661,6 +1813,8 @@ from mypy_boto3_s3.type_defs import DeleteBucketWebsiteRequestBucketWebsiteTypeD
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletebucketwebsiterequestrequesttypedef"></a>
 
 ## DeleteBucketWebsiteRequestRequestTypeDef
 
@@ -1676,6 +1830,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletemarkerentrytypedef"></a>
+
 ## DeleteMarkerEntryTypeDef
 
 ```python
@@ -1690,6 +1846,8 @@ Optional fields:
 - `IsLatest`: `bool`
 - `LastModified`: `datetime`
 
+<a id="deletemarkerreplicationtypedef"></a>
+
 ## DeleteMarkerReplicationTypeDef
 
 ```python
@@ -1700,6 +1858,8 @@ Optional fields:
 
 - `Status`:
   [DeleteMarkerReplicationStatusType](./literals.md#deletemarkerreplicationstatustype)
+
+<a id="deleteobjectoutputtypedef"></a>
 
 ## DeleteObjectOutputTypeDef
 
@@ -1716,6 +1876,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteobjectrequestobjectsummarytypedef"></a>
+
 ## DeleteObjectRequestObjectSummaryTypeDef
 
 ```python
@@ -1730,6 +1892,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
+
+<a id="deleteobjectrequestobjecttypedef"></a>
 
 ## DeleteObjectRequestObjectTypeDef
 
@@ -1746,6 +1910,8 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
+<a id="deleteobjectrequestobjectversiontypedef"></a>
+
 ## DeleteObjectRequestObjectVersionTypeDef
 
 ```python
@@ -1759,6 +1925,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
+
+<a id="deleteobjectrequestrequesttypedef"></a>
 
 ## DeleteObjectRequestRequestTypeDef
 
@@ -1780,6 +1948,8 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
+<a id="deleteobjecttaggingoutputtypedef"></a>
+
 ## DeleteObjectTaggingOutputTypeDef
 
 ```python
@@ -1791,6 +1961,8 @@ Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteobjecttaggingrequestrequesttypedef"></a>
 
 ## DeleteObjectTaggingRequestRequestTypeDef
 
@@ -1808,6 +1980,8 @@ Optional fields:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="deleteobjectsoutputtypedef"></a>
+
 ## DeleteObjectsOutputTypeDef
 
 ```python
@@ -1823,6 +1997,8 @@ Required fields:
 - `Errors`: `List`\[[ErrorTypeDef](./type_defs.md#errortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteobjectsrequestbuckettypedef"></a>
 
 ## DeleteObjectsRequestBucketTypeDef
 
@@ -1841,6 +2017,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
+
+<a id="deleteobjectsrequestrequesttypedef"></a>
 
 ## DeleteObjectsRequestRequestTypeDef
 
@@ -1861,6 +2039,8 @@ Optional fields:
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
 
+<a id="deletepublicaccessblockrequestrequesttypedef"></a>
+
 ## DeletePublicAccessBlockRequestRequestTypeDef
 
 ```python
@@ -1874,6 +2054,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="deletetypedef"></a>
 
 ## DeleteTypeDef
 
@@ -1890,6 +2072,8 @@ Optional fields:
 
 - `Quiet`: `bool`
 
+<a id="deletedobjecttypedef"></a>
+
 ## DeletedObjectTypeDef
 
 ```python
@@ -1902,6 +2086,8 @@ Optional fields:
 - `VersionId`: `str`
 - `DeleteMarker`: `bool`
 - `DeleteMarkerVersionId`: `str`
+
+<a id="destinationtypedef"></a>
 
 ## DestinationTypeDef
 
@@ -1925,6 +2111,8 @@ Optional fields:
   [ReplicationTimeTypeDef](./type_defs.md#replicationtimetypedef)
 - `Metrics`: [MetricsTypeDef](./type_defs.md#metricstypedef)
 
+<a id="encryptionconfigurationtypedef"></a>
+
 ## EncryptionConfigurationTypeDef
 
 ```python
@@ -1934,6 +2122,8 @@ from mypy_boto3_s3.type_defs import EncryptionConfigurationTypeDef
 Optional fields:
 
 - `ReplicaKmsKeyID`: `str`
+
+<a id="encryptiontypedef"></a>
 
 ## EncryptionTypeDef
 
@@ -1951,6 +2141,8 @@ Optional fields:
 - `KMSKeyId`: `str`
 - `KMSContext`: `str`
 
+<a id="errordocumentresponsemetadatatypedef"></a>
+
 ## ErrorDocumentResponseMetadataTypeDef
 
 ```python
@@ -1963,6 +2155,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="errordocumenttypedef"></a>
+
 ## ErrorDocumentTypeDef
 
 ```python
@@ -1972,6 +2166,8 @@ from mypy_boto3_s3.type_defs import ErrorDocumentTypeDef
 Required fields:
 
 - `Key`: `str`
+
+<a id="errortypedef"></a>
 
 ## ErrorTypeDef
 
@@ -1986,6 +2182,8 @@ Optional fields:
 - `Code`: `str`
 - `Message`: `str`
 
+<a id="existingobjectreplicationtypedef"></a>
+
 ## ExistingObjectReplicationTypeDef
 
 ```python
@@ -1997,6 +2195,8 @@ Required fields:
 - `Status`:
   [ExistingObjectReplicationStatusType](./literals.md#existingobjectreplicationstatustype)
 
+<a id="filterruletypedef"></a>
+
 ## FilterRuleTypeDef
 
 ```python
@@ -2007,6 +2207,8 @@ Optional fields:
 
 - `Name`: [FilterRuleNameType](./literals.md#filterrulenametype)
 - `Value`: `str`
+
+<a id="getbucketaccelerateconfigurationoutputtypedef"></a>
 
 ## GetBucketAccelerateConfigurationOutputTypeDef
 
@@ -2020,6 +2222,8 @@ Required fields:
   [BucketAccelerateStatusType](./literals.md#bucketacceleratestatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketaccelerateconfigurationrequestrequesttypedef"></a>
 
 ## GetBucketAccelerateConfigurationRequestRequestTypeDef
 
@@ -2035,6 +2239,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketacloutputtypedef"></a>
+
 ## GetBucketAclOutputTypeDef
 
 ```python
@@ -2047,6 +2253,8 @@ Required fields:
 - `Grants`: `List`\[[GrantTypeDef](./type_defs.md#granttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketaclrequestrequesttypedef"></a>
 
 ## GetBucketAclRequestRequestTypeDef
 
@@ -2062,6 +2270,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketanalyticsconfigurationoutputtypedef"></a>
+
 ## GetBucketAnalyticsConfigurationOutputTypeDef
 
 ```python
@@ -2074,6 +2284,8 @@ Required fields:
   [AnalyticsConfigurationTypeDef](./type_defs.md#analyticsconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketanalyticsconfigurationrequestrequesttypedef"></a>
 
 ## GetBucketAnalyticsConfigurationRequestRequestTypeDef
 
@@ -2090,6 +2302,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketcorsoutputtypedef"></a>
+
 ## GetBucketCorsOutputTypeDef
 
 ```python
@@ -2101,6 +2315,8 @@ Required fields:
 - `CORSRules`: `List`\[[CORSRuleTypeDef](./type_defs.md#corsruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketcorsrequestrequesttypedef"></a>
 
 ## GetBucketCorsRequestRequestTypeDef
 
@@ -2116,6 +2332,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketencryptionoutputtypedef"></a>
+
 ## GetBucketEncryptionOutputTypeDef
 
 ```python
@@ -2128,6 +2346,8 @@ Required fields:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketencryptionrequestrequesttypedef"></a>
 
 ## GetBucketEncryptionRequestRequestTypeDef
 
@@ -2143,6 +2363,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketintelligenttieringconfigurationoutputtypedef"></a>
+
 ## GetBucketIntelligentTieringConfigurationOutputTypeDef
 
 ```python
@@ -2156,6 +2378,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketintelligenttieringconfigurationrequestrequesttypedef"></a>
+
 ## GetBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
 ```python
@@ -2166,6 +2390,8 @@ Required fields:
 
 - `Bucket`: `str`
 - `Id`: `str`
+
+<a id="getbucketinventoryconfigurationoutputtypedef"></a>
 
 ## GetBucketInventoryConfigurationOutputTypeDef
 
@@ -2179,6 +2405,8 @@ Required fields:
   [InventoryConfigurationTypeDef](./type_defs.md#inventoryconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketinventoryconfigurationrequestrequesttypedef"></a>
 
 ## GetBucketInventoryConfigurationRequestRequestTypeDef
 
@@ -2195,6 +2423,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketlifecycleconfigurationoutputtypedef"></a>
+
 ## GetBucketLifecycleConfigurationOutputTypeDef
 
 ```python
@@ -2207,6 +2437,8 @@ Required fields:
   `List`\[[LifecycleRuleTypeDef](./type_defs.md#lifecycleruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketlifecycleconfigurationrequestrequesttypedef"></a>
 
 ## GetBucketLifecycleConfigurationRequestRequestTypeDef
 
@@ -2222,6 +2454,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketlifecycleoutputtypedef"></a>
+
 ## GetBucketLifecycleOutputTypeDef
 
 ```python
@@ -2233,6 +2467,8 @@ Required fields:
 - `Rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketlifecyclerequestrequesttypedef"></a>
 
 ## GetBucketLifecycleRequestRequestTypeDef
 
@@ -2248,6 +2484,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketlocationoutputtypedef"></a>
+
 ## GetBucketLocationOutputTypeDef
 
 ```python
@@ -2260,6 +2498,8 @@ Required fields:
   [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketlocationrequestrequesttypedef"></a>
 
 ## GetBucketLocationRequestRequestTypeDef
 
@@ -2275,6 +2515,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketloggingoutputtypedef"></a>
+
 ## GetBucketLoggingOutputTypeDef
 
 ```python
@@ -2287,6 +2529,8 @@ Required fields:
   [LoggingEnabledTypeDef](./type_defs.md#loggingenabledtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketloggingrequestrequesttypedef"></a>
 
 ## GetBucketLoggingRequestRequestTypeDef
 
@@ -2302,6 +2546,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketmetricsconfigurationoutputtypedef"></a>
+
 ## GetBucketMetricsConfigurationOutputTypeDef
 
 ```python
@@ -2314,6 +2560,8 @@ Required fields:
   [MetricsConfigurationTypeDef](./type_defs.md#metricsconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketmetricsconfigurationrequestrequesttypedef"></a>
 
 ## GetBucketMetricsConfigurationRequestRequestTypeDef
 
@@ -2330,6 +2578,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketnotificationconfigurationrequestrequesttypedef"></a>
+
 ## GetBucketNotificationConfigurationRequestRequestTypeDef
 
 ```python
@@ -2344,6 +2594,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketownershipcontrolsoutputtypedef"></a>
+
 ## GetBucketOwnershipControlsOutputTypeDef
 
 ```python
@@ -2356,6 +2608,8 @@ Required fields:
   [OwnershipControlsTypeDef](./type_defs.md#ownershipcontrolstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketownershipcontrolsrequestrequesttypedef"></a>
 
 ## GetBucketOwnershipControlsRequestRequestTypeDef
 
@@ -2371,6 +2625,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketpolicyoutputtypedef"></a>
+
 ## GetBucketPolicyOutputTypeDef
 
 ```python
@@ -2382,6 +2638,8 @@ Required fields:
 - `Policy`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketpolicyrequestrequesttypedef"></a>
 
 ## GetBucketPolicyRequestRequestTypeDef
 
@@ -2397,6 +2655,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketpolicystatusoutputtypedef"></a>
+
 ## GetBucketPolicyStatusOutputTypeDef
 
 ```python
@@ -2408,6 +2668,8 @@ Required fields:
 - `PolicyStatus`: [PolicyStatusTypeDef](./type_defs.md#policystatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketpolicystatusrequestrequesttypedef"></a>
 
 ## GetBucketPolicyStatusRequestRequestTypeDef
 
@@ -2423,6 +2685,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketreplicationoutputtypedef"></a>
+
 ## GetBucketReplicationOutputTypeDef
 
 ```python
@@ -2435,6 +2699,8 @@ Required fields:
   [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketreplicationrequestrequesttypedef"></a>
 
 ## GetBucketReplicationRequestRequestTypeDef
 
@@ -2450,6 +2716,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketrequestpaymentoutputtypedef"></a>
+
 ## GetBucketRequestPaymentOutputTypeDef
 
 ```python
@@ -2461,6 +2729,8 @@ Required fields:
 - `Payer`: [PayerType](./literals.md#payertype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbucketrequestpaymentrequestrequesttypedef"></a>
 
 ## GetBucketRequestPaymentRequestRequestTypeDef
 
@@ -2476,6 +2746,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbuckettaggingoutputtypedef"></a>
+
 ## GetBucketTaggingOutputTypeDef
 
 ```python
@@ -2487,6 +2759,8 @@ Required fields:
 - `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getbuckettaggingrequestrequesttypedef"></a>
 
 ## GetBucketTaggingRequestRequestTypeDef
 
@@ -2502,6 +2776,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="getbucketversioningoutputtypedef"></a>
+
 ## GetBucketVersioningOutputTypeDef
 
 ```python
@@ -2516,6 +2792,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketversioningrequestrequesttypedef"></a>
+
 ## GetBucketVersioningRequestRequestTypeDef
 
 ```python
@@ -2529,6 +2807,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="getbucketwebsiteoutputtypedef"></a>
 
 ## GetBucketWebsiteOutputTypeDef
 
@@ -2547,6 +2827,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbucketwebsiterequestrequesttypedef"></a>
+
 ## GetBucketWebsiteRequestRequestTypeDef
 
 ```python
@@ -2560,6 +2842,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="getobjectacloutputtypedef"></a>
 
 ## GetObjectAclOutputTypeDef
 
@@ -2575,6 +2859,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getobjectaclrequestrequesttypedef"></a>
 
 ## GetObjectAclRequestRequestTypeDef
 
@@ -2594,6 +2880,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="getobjectlegalholdoutputtypedef"></a>
+
 ## GetObjectLegalHoldOutputTypeDef
 
 ```python
@@ -2606,6 +2894,8 @@ Required fields:
   [ObjectLockLegalHoldTypeDef](./type_defs.md#objectlocklegalholdtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getobjectlegalholdrequestrequesttypedef"></a>
 
 ## GetObjectLegalHoldRequestRequestTypeDef
 
@@ -2625,6 +2915,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="getobjectlockconfigurationoutputtypedef"></a>
+
 ## GetObjectLockConfigurationOutputTypeDef
 
 ```python
@@ -2637,6 +2929,8 @@ Required fields:
   [ObjectLockConfigurationTypeDef](./type_defs.md#objectlockconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getobjectlockconfigurationrequestrequesttypedef"></a>
 
 ## GetObjectLockConfigurationRequestRequestTypeDef
 
@@ -2651,6 +2945,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="getobjectoutputtypedef"></a>
 
 ## GetObjectOutputTypeDef
 
@@ -2699,6 +2995,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getobjectrequestobjectsummarytypedef"></a>
+
 ## GetObjectRequestObjectSummaryTypeDef
 
 ```python
@@ -2726,6 +3024,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
+
+<a id="getobjectrequestobjecttypedef"></a>
 
 ## GetObjectRequestObjectTypeDef
 
@@ -2755,6 +3055,8 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
+<a id="getobjectrequestobjectversiontypedef"></a>
+
 ## GetObjectRequestObjectVersionTypeDef
 
 ```python
@@ -2781,6 +3083,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
+
+<a id="getobjectrequestrequesttypedef"></a>
 
 ## GetObjectRequestRequestTypeDef
 
@@ -2815,6 +3119,8 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
+<a id="getobjectretentionoutputtypedef"></a>
+
 ## GetObjectRetentionOutputTypeDef
 
 ```python
@@ -2827,6 +3133,8 @@ Required fields:
   [ObjectLockRetentionTypeDef](./type_defs.md#objectlockretentiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getobjectretentionrequestrequesttypedef"></a>
 
 ## GetObjectRetentionRequestRequestTypeDef
 
@@ -2846,6 +3154,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="getobjecttaggingoutputtypedef"></a>
+
 ## GetObjectTaggingOutputTypeDef
 
 ```python
@@ -2858,6 +3168,8 @@ Required fields:
 - `TagSet`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getobjecttaggingrequestrequesttypedef"></a>
 
 ## GetObjectTaggingRequestRequestTypeDef
 
@@ -2877,6 +3189,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 
+<a id="getobjecttorrentoutputtypedef"></a>
+
 ## GetObjectTorrentOutputTypeDef
 
 ```python
@@ -2890,6 +3204,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getobjecttorrentrequestrequesttypedef"></a>
 
 ## GetObjectTorrentRequestRequestTypeDef
 
@@ -2908,6 +3224,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="getpublicaccessblockoutputtypedef"></a>
+
 ## GetPublicAccessBlockOutputTypeDef
 
 ```python
@@ -2920,6 +3238,8 @@ Required fields:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpublicaccessblockrequestrequesttypedef"></a>
 
 ## GetPublicAccessBlockRequestRequestTypeDef
 
@@ -2935,6 +3255,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="glacierjobparameterstypedef"></a>
+
 ## GlacierJobParametersTypeDef
 
 ```python
@@ -2944,6 +3266,8 @@ from mypy_boto3_s3.type_defs import GlacierJobParametersTypeDef
 Required fields:
 
 - `Tier`: [TierType](./literals.md#tiertype)
+
+<a id="granttypedef"></a>
 
 ## GrantTypeDef
 
@@ -2955,6 +3279,8 @@ Optional fields:
 
 - `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
 - `Permission`: [PermissionType](./literals.md#permissiontype)
+
+<a id="granteetypedef"></a>
 
 ## GranteeTypeDef
 
@@ -2973,6 +3299,8 @@ Optional fields:
 - `ID`: `str`
 - `URI`: `str`
 
+<a id="headbucketrequestrequesttypedef"></a>
+
 ## HeadBucketRequestRequestTypeDef
 
 ```python
@@ -2986,6 +3314,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="headobjectoutputtypedef"></a>
 
 ## HeadObjectOutputTypeDef
 
@@ -3032,6 +3362,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="headobjectrequestobjectversiontypedef"></a>
+
 ## HeadObjectRequestObjectVersionTypeDef
 
 ```python
@@ -3052,6 +3384,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
+
+<a id="headobjectrequestrequesttypedef"></a>
 
 ## HeadObjectRequestRequestTypeDef
 
@@ -3080,6 +3414,8 @@ Optional fields:
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
 
+<a id="indexdocumentresponsemetadatatypedef"></a>
+
 ## IndexDocumentResponseMetadataTypeDef
 
 ```python
@@ -3092,6 +3428,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="indexdocumenttypedef"></a>
+
 ## IndexDocumentTypeDef
 
 ```python
@@ -3101,6 +3439,8 @@ from mypy_boto3_s3.type_defs import IndexDocumentTypeDef
 Required fields:
 
 - `Suffix`: `str`
+
+<a id="initiatorresponsemetadatatypedef"></a>
 
 ## InitiatorResponseMetadataTypeDef
 
@@ -3115,6 +3455,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="initiatortypedef"></a>
+
 ## InitiatorTypeDef
 
 ```python
@@ -3125,6 +3467,8 @@ Optional fields:
 
 - `ID`: `str`
 - `DisplayName`: `str`
+
+<a id="inputserializationtypedef"></a>
 
 ## InputSerializationTypeDef
 
@@ -3139,6 +3483,8 @@ Optional fields:
 - `JSON`: [JSONInputTypeDef](./type_defs.md#jsoninputtypedef)
 - `Parquet`: `Mapping`\[`str`, `Any`\]
 
+<a id="intelligenttieringandoperatortypedef"></a>
+
 ## IntelligentTieringAndOperatorTypeDef
 
 ```python
@@ -3149,6 +3495,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="intelligenttieringconfigurationtypedef"></a>
 
 ## IntelligentTieringConfigurationTypeDef
 
@@ -3168,6 +3516,8 @@ Optional fields:
 - `Filter`:
   [IntelligentTieringFilterTypeDef](./type_defs.md#intelligenttieringfiltertypedef)
 
+<a id="intelligenttieringfiltertypedef"></a>
+
 ## IntelligentTieringFilterTypeDef
 
 ```python
@@ -3180,6 +3530,8 @@ Optional fields:
 - `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
   [IntelligentTieringAndOperatorTypeDef](./type_defs.md#intelligenttieringandoperatortypedef)
+
+<a id="inventoryconfigurationtypedef"></a>
 
 ## InventoryConfigurationTypeDef
 
@@ -3204,6 +3556,8 @@ Optional fields:
 - `OptionalFields`:
   `List`\[[InventoryOptionalFieldType](./literals.md#inventoryoptionalfieldtype)\]
 
+<a id="inventorydestinationtypedef"></a>
+
 ## InventoryDestinationTypeDef
 
 ```python
@@ -3214,6 +3568,8 @@ Required fields:
 
 - `S3BucketDestination`:
   [InventoryS3BucketDestinationTypeDef](./type_defs.md#inventorys3bucketdestinationtypedef)
+
+<a id="inventoryencryptiontypedef"></a>
 
 ## InventoryEncryptionTypeDef
 
@@ -3226,6 +3582,8 @@ Optional fields:
 - `SSES3`: `Dict`\[`str`, `Any`\]
 - `SSEKMS`: [SSEKMSTypeDef](./type_defs.md#ssekmstypedef)
 
+<a id="inventoryfiltertypedef"></a>
+
 ## InventoryFilterTypeDef
 
 ```python
@@ -3235,6 +3593,8 @@ from mypy_boto3_s3.type_defs import InventoryFilterTypeDef
 Required fields:
 
 - `Prefix`: `str`
+
+<a id="inventorys3bucketdestinationtypedef"></a>
 
 ## InventoryS3BucketDestinationTypeDef
 
@@ -3254,6 +3614,8 @@ Optional fields:
 - `Encryption`:
   [InventoryEncryptionTypeDef](./type_defs.md#inventoryencryptiontypedef)
 
+<a id="inventoryscheduletypedef"></a>
+
 ## InventoryScheduleTypeDef
 
 ```python
@@ -3263,6 +3625,8 @@ from mypy_boto3_s3.type_defs import InventoryScheduleTypeDef
 Required fields:
 
 - `Frequency`: [InventoryFrequencyType](./literals.md#inventoryfrequencytype)
+
+<a id="jsoninputtypedef"></a>
 
 ## JSONInputTypeDef
 
@@ -3274,6 +3638,8 @@ Optional fields:
 
 - `Type`: [JSONTypeType](./literals.md#jsontypetype)
 
+<a id="jsonoutputtypedef"></a>
+
 ## JSONOutputTypeDef
 
 ```python
@@ -3283,6 +3649,8 @@ from mypy_boto3_s3.type_defs import JSONOutputTypeDef
 Optional fields:
 
 - `RecordDelimiter`: `str`
+
+<a id="lambdafunctionconfigurationtypedef"></a>
 
 ## LambdaFunctionConfigurationTypeDef
 
@@ -3301,6 +3669,8 @@ Optional fields:
 - `Filter`:
   [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
 
+<a id="lifecycleconfigurationtypedef"></a>
+
 ## LifecycleConfigurationTypeDef
 
 ```python
@@ -3310,6 +3680,8 @@ from mypy_boto3_s3.type_defs import LifecycleConfigurationTypeDef
 Required fields:
 
 - `Rules`: `Sequence`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
+
+<a id="lifecycleexpirationtypedef"></a>
 
 ## LifecycleExpirationTypeDef
 
@@ -3323,6 +3695,8 @@ Optional fields:
 - `Days`: `int`
 - `ExpiredObjectDeleteMarker`: `bool`
 
+<a id="lifecycleruleandoperatortypedef"></a>
+
 ## LifecycleRuleAndOperatorTypeDef
 
 ```python
@@ -3335,6 +3709,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ObjectSizeGreaterThan`: `int`
 - `ObjectSizeLessThan`: `int`
+
+<a id="lifecyclerulefiltertypedef"></a>
 
 ## LifecycleRuleFilterTypeDef
 
@@ -3350,6 +3726,8 @@ Optional fields:
 - `ObjectSizeLessThan`: `int`
 - `And`:
   [LifecycleRuleAndOperatorTypeDef](./type_defs.md#lifecycleruleandoperatortypedef)
+
+<a id="lifecycleruletypedef"></a>
 
 ## LifecycleRuleTypeDef
 
@@ -3378,6 +3756,8 @@ Optional fields:
 - `AbortIncompleteMultipartUpload`:
   [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
+<a id="listbucketanalyticsconfigurationsoutputtypedef"></a>
+
 ## ListBucketAnalyticsConfigurationsOutputTypeDef
 
 ```python
@@ -3394,6 +3774,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbucketanalyticsconfigurationsrequestrequesttypedef"></a>
+
 ## ListBucketAnalyticsConfigurationsRequestRequestTypeDef
 
 ```python
@@ -3408,6 +3790,8 @@ Optional fields:
 
 - `ContinuationToken`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="listbucketintelligenttieringconfigurationsoutputtypedef"></a>
 
 ## ListBucketIntelligentTieringConfigurationsOutputTypeDef
 
@@ -3425,6 +3809,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbucketintelligenttieringconfigurationsrequestrequesttypedef"></a>
+
 ## ListBucketIntelligentTieringConfigurationsRequestRequestTypeDef
 
 ```python
@@ -3438,6 +3824,8 @@ Required fields:
 Optional fields:
 
 - `ContinuationToken`: `str`
+
+<a id="listbucketinventoryconfigurationsoutputtypedef"></a>
 
 ## ListBucketInventoryConfigurationsOutputTypeDef
 
@@ -3455,6 +3843,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbucketinventoryconfigurationsrequestrequesttypedef"></a>
+
 ## ListBucketInventoryConfigurationsRequestRequestTypeDef
 
 ```python
@@ -3469,6 +3859,8 @@ Optional fields:
 
 - `ContinuationToken`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="listbucketmetricsconfigurationsoutputtypedef"></a>
 
 ## ListBucketMetricsConfigurationsOutputTypeDef
 
@@ -3486,6 +3878,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbucketmetricsconfigurationsrequestrequesttypedef"></a>
+
 ## ListBucketMetricsConfigurationsRequestRequestTypeDef
 
 ```python
@@ -3501,6 +3895,8 @@ Optional fields:
 - `ContinuationToken`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="listbucketsoutputtypedef"></a>
+
 ## ListBucketsOutputTypeDef
 
 ```python
@@ -3513,6 +3909,8 @@ Required fields:
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmultipartuploadsoutputtypedef"></a>
 
 ## ListMultipartUploadsOutputTypeDef
 
@@ -3540,6 +3938,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmultipartuploadsrequestrequesttypedef"></a>
+
 ## ListMultipartUploadsRequestRequestTypeDef
 
 ```python
@@ -3560,6 +3960,8 @@ Optional fields:
 - `Prefix`: `str`
 - `UploadIdMarker`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="listobjectversionsoutputtypedef"></a>
 
 ## ListObjectVersionsOutputTypeDef
 
@@ -3589,6 +3991,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listobjectversionsrequestrequesttypedef"></a>
+
 ## ListObjectVersionsRequestRequestTypeDef
 
 ```python
@@ -3609,6 +4013,8 @@ Optional fields:
 - `Prefix`: `str`
 - `VersionIdMarker`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="listobjectsoutputtypedef"></a>
 
 ## ListObjectsOutputTypeDef
 
@@ -3633,6 +4039,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listobjectsrequestrequesttypedef"></a>
+
 ## ListObjectsRequestRequestTypeDef
 
 ```python
@@ -3654,6 +4062,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
+
+<a id="listobjectsv2outputtypedef"></a>
 
 ## ListObjectsV2OutputTypeDef
 
@@ -3680,6 +4090,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listobjectsv2requestrequesttypedef"></a>
+
 ## ListObjectsV2RequestRequestTypeDef
 
 ```python
@@ -3703,6 +4115,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
+
+<a id="listpartsoutputtypedef"></a>
 
 ## ListPartsOutputTypeDef
 
@@ -3730,6 +4144,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpartsrequestrequesttypedef"></a>
+
 ## ListPartsRequestRequestTypeDef
 
 ```python
@@ -3750,6 +4166,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="loggingenabledresponsemetadatatypedef"></a>
+
 ## LoggingEnabledResponseMetadataTypeDef
 
 ```python
@@ -3764,6 +4182,8 @@ Required fields:
 - `TargetPrefix`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="loggingenabledtypedef"></a>
 
 ## LoggingEnabledTypeDef
 
@@ -3781,6 +4201,8 @@ Optional fields:
 - `TargetGrants`:
   `List`\[[TargetGrantTypeDef](./type_defs.md#targetgranttypedef)\]
 
+<a id="metadataentrytypedef"></a>
+
 ## MetadataEntryTypeDef
 
 ```python
@@ -3791,6 +4213,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="metricsandoperatortypedef"></a>
 
 ## MetricsAndOperatorTypeDef
 
@@ -3803,6 +4227,8 @@ Optional fields:
 - `Prefix`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AccessPointArn`: `str`
+
+<a id="metricsconfigurationtypedef"></a>
 
 ## MetricsConfigurationTypeDef
 
@@ -3818,6 +4244,8 @@ Optional fields:
 
 - `Filter`: [MetricsFilterTypeDef](./type_defs.md#metricsfiltertypedef)
 
+<a id="metricsfiltertypedef"></a>
+
 ## MetricsFilterTypeDef
 
 ```python
@@ -3830,6 +4258,8 @@ Optional fields:
 - `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `AccessPointArn`: `str`
 - `And`: [MetricsAndOperatorTypeDef](./type_defs.md#metricsandoperatortypedef)
+
+<a id="metricstypedef"></a>
 
 ## MetricsTypeDef
 
@@ -3846,6 +4276,8 @@ Optional fields:
 - `EventThreshold`:
   [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 
+<a id="multipartuploadpartrequesttypedef"></a>
+
 ## MultipartUploadPartRequestTypeDef
 
 ```python
@@ -3855,6 +4287,8 @@ from mypy_boto3_s3.type_defs import MultipartUploadPartRequestTypeDef
 Required fields:
 
 - `part_number`: `str`
+
+<a id="multipartuploadtypedef"></a>
 
 ## MultipartUploadTypeDef
 
@@ -3871,6 +4305,8 @@ Optional fields:
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
 
+<a id="noncurrentversionexpirationtypedef"></a>
+
 ## NoncurrentVersionExpirationTypeDef
 
 ```python
@@ -3881,6 +4317,8 @@ Optional fields:
 
 - `NoncurrentDays`: `int`
 - `NewerNoncurrentVersions`: `int`
+
+<a id="noncurrentversiontransitiontypedef"></a>
 
 ## NoncurrentVersionTransitionTypeDef
 
@@ -3894,6 +4332,8 @@ Optional fields:
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 - `NewerNoncurrentVersions`: `int`
+
+<a id="notificationconfigurationdeprecatedresponsemetadatatypedef"></a>
 
 ## NotificationConfigurationDeprecatedResponseMetadataTypeDef
 
@@ -3912,6 +4352,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationconfigurationdeprecatedtypedef"></a>
+
 ## NotificationConfigurationDeprecatedTypeDef
 
 ```python
@@ -3927,6 +4369,8 @@ Optional fields:
 - `CloudFunctionConfiguration`:
   [CloudFunctionConfigurationTypeDef](./type_defs.md#cloudfunctionconfigurationtypedef)
 
+<a id="notificationconfigurationfiltertypedef"></a>
+
 ## NotificationConfigurationFilterTypeDef
 
 ```python
@@ -3936,6 +4380,8 @@ from mypy_boto3_s3.type_defs import NotificationConfigurationFilterTypeDef
 Optional fields:
 
 - `Key`: [S3KeyFilterTypeDef](./type_defs.md#s3keyfiltertypedef)
+
+<a id="notificationconfigurationresponsemetadatatypedef"></a>
 
 ## NotificationConfigurationResponseMetadataTypeDef
 
@@ -3955,6 +4401,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationconfigurationtypedef"></a>
+
 ## NotificationConfigurationTypeDef
 
 ```python
@@ -3970,6 +4418,8 @@ Optional fields:
 - `LambdaFunctionConfigurations`:
   `Sequence`\[[LambdaFunctionConfigurationTypeDef](./type_defs.md#lambdafunctionconfigurationtypedef)\]
 - `EventBridgeConfiguration`: `Mapping`\[`str`, `Any`\]
+
+<a id="objectcopyrequesttypedef"></a>
 
 ## ObjectCopyRequestTypeDef
 
@@ -3988,6 +4438,8 @@ Optional fields:
 - `SourceClient`: `BaseClient`
 - `Config`: `TransferConfig`
 
+<a id="objectdownloadfilerequesttypedef"></a>
+
 ## ObjectDownloadFileRequestTypeDef
 
 ```python
@@ -4003,6 +4455,8 @@ Optional fields:
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
+
+<a id="objectdownloadfileobjrequesttypedef"></a>
 
 ## ObjectDownloadFileobjRequestTypeDef
 
@@ -4020,6 +4474,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="objectidentifiertypedef"></a>
+
 ## ObjectIdentifierTypeDef
 
 ```python
@@ -4034,6 +4490,8 @@ Optional fields:
 
 - `VersionId`: `str`
 
+<a id="objectlockconfigurationtypedef"></a>
+
 ## ObjectLockConfigurationTypeDef
 
 ```python
@@ -4046,6 +4504,8 @@ Optional fields:
   [ObjectLockEnabledType](./literals.md#objectlockenabledtype))
 - `Rule`: [ObjectLockRuleTypeDef](./type_defs.md#objectlockruletypedef)
 
+<a id="objectlocklegalholdtypedef"></a>
+
 ## ObjectLockLegalHoldTypeDef
 
 ```python
@@ -4056,6 +4516,8 @@ Optional fields:
 
 - `Status`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
+
+<a id="objectlockretentiontypedef"></a>
 
 ## ObjectLockRetentionTypeDef
 
@@ -4069,6 +4531,8 @@ Optional fields:
   [ObjectLockRetentionModeType](./literals.md#objectlockretentionmodetype)
 - `RetainUntilDate`: `datetime`
 
+<a id="objectlockruletypedef"></a>
+
 ## ObjectLockRuleTypeDef
 
 ```python
@@ -4080,6 +4544,8 @@ Optional fields:
 - `DefaultRetention`:
   [DefaultRetentionTypeDef](./type_defs.md#defaultretentiontypedef)
 
+<a id="objectmultipartuploadrequesttypedef"></a>
+
 ## ObjectMultipartUploadRequestTypeDef
 
 ```python
@@ -4089,6 +4555,8 @@ from mypy_boto3_s3.type_defs import ObjectMultipartUploadRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="objectsummarymultipartuploadrequesttypedef"></a>
 
 ## ObjectSummaryMultipartUploadRequestTypeDef
 
@@ -4100,6 +4568,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="objectsummaryversionrequesttypedef"></a>
+
 ## ObjectSummaryVersionRequestTypeDef
 
 ```python
@@ -4109,6 +4579,8 @@ from mypy_boto3_s3.type_defs import ObjectSummaryVersionRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="objecttypedef"></a>
 
 ## ObjectTypeDef
 
@@ -4126,6 +4598,8 @@ Optional fields:
   [ObjectStorageClassType](./literals.md#objectstorageclasstype)
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
+<a id="objectuploadfilerequesttypedef"></a>
+
 ## ObjectUploadFileRequestTypeDef
 
 ```python
@@ -4141,6 +4615,8 @@ Optional fields:
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
+
+<a id="objectuploadfileobjrequesttypedef"></a>
 
 ## ObjectUploadFileobjRequestTypeDef
 
@@ -4158,6 +4634,8 @@ Optional fields:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="objectversionrequesttypedef"></a>
+
 ## ObjectVersionRequestTypeDef
 
 ```python
@@ -4167,6 +4645,8 @@ from mypy_boto3_s3.type_defs import ObjectVersionRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="objectversiontypedef"></a>
 
 ## ObjectVersionTypeDef
 
@@ -4186,6 +4666,8 @@ Optional fields:
 - `LastModified`: `datetime`
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 
+<a id="outputlocationtypedef"></a>
+
 ## OutputLocationTypeDef
 
 ```python
@@ -4195,6 +4677,8 @@ from mypy_boto3_s3.type_defs import OutputLocationTypeDef
 Optional fields:
 
 - `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="outputserializationtypedef"></a>
 
 ## OutputSerializationTypeDef
 
@@ -4206,6 +4690,8 @@ Optional fields:
 
 - `CSV`: [CSVOutputTypeDef](./type_defs.md#csvoutputtypedef)
 - `JSON`: [JSONOutputTypeDef](./type_defs.md#jsonoutputtypedef)
+
+<a id="ownerresponsemetadatatypedef"></a>
 
 ## OwnerResponseMetadataTypeDef
 
@@ -4220,6 +4706,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ownertypedef"></a>
+
 ## OwnerTypeDef
 
 ```python
@@ -4231,6 +4719,8 @@ Optional fields:
 - `DisplayName`: `str`
 - `ID`: `str`
 
+<a id="ownershipcontrolsruletypedef"></a>
+
 ## OwnershipControlsRuleTypeDef
 
 ```python
@@ -4240,6 +4730,8 @@ from mypy_boto3_s3.type_defs import OwnershipControlsRuleTypeDef
 Required fields:
 
 - `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
+
+<a id="ownershipcontrolstypedef"></a>
 
 ## OwnershipControlsTypeDef
 
@@ -4252,6 +4744,8 @@ Required fields:
 - `Rules`:
   `List`\[[OwnershipControlsRuleTypeDef](./type_defs.md#ownershipcontrolsruletypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -4263,6 +4757,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parttypedef"></a>
 
 ## PartTypeDef
 
@@ -4277,6 +4773,8 @@ Optional fields:
 - `ETag`: `str`
 - `Size`: `int`
 
+<a id="policystatustypedef"></a>
+
 ## PolicyStatusTypeDef
 
 ```python
@@ -4287,6 +4785,8 @@ Optional fields:
 
 - `IsPublic`: `bool`
 
+<a id="progresseventtypedef"></a>
+
 ## ProgressEventTypeDef
 
 ```python
@@ -4296,6 +4796,8 @@ from mypy_boto3_s3.type_defs import ProgressEventTypeDef
 Optional fields:
 
 - `Details`: [ProgressTypeDef](./type_defs.md#progresstypedef)
+
+<a id="progresstypedef"></a>
 
 ## ProgressTypeDef
 
@@ -4309,6 +4811,8 @@ Optional fields:
 - `BytesProcessed`: `int`
 - `BytesReturned`: `int`
 
+<a id="publicaccessblockconfigurationtypedef"></a>
+
 ## PublicAccessBlockConfigurationTypeDef
 
 ```python
@@ -4321,6 +4825,8 @@ Optional fields:
 - `IgnorePublicAcls`: `bool`
 - `BlockPublicPolicy`: `bool`
 - `RestrictPublicBuckets`: `bool`
+
+<a id="putbucketaccelerateconfigurationrequestrequesttypedef"></a>
 
 ## PutBucketAccelerateConfigurationRequestRequestTypeDef
 
@@ -4337,6 +4843,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketaclrequestbucketacltypedef"></a>
 
 ## PutBucketAclRequestBucketAclTypeDef
 
@@ -4355,6 +4863,8 @@ Optional fields:
 - `GrantWrite`: `str`
 - `GrantWriteACP`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketaclrequestrequesttypedef"></a>
 
 ## PutBucketAclRequestRequestTypeDef
 
@@ -4378,6 +4888,8 @@ Optional fields:
 - `GrantWriteACP`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketanalyticsconfigurationrequestrequesttypedef"></a>
+
 ## PutBucketAnalyticsConfigurationRequestRequestTypeDef
 
 ```python
@@ -4395,6 +4907,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketcorsrequestbucketcorstypedef"></a>
+
 ## PutBucketCorsRequestBucketCorsTypeDef
 
 ```python
@@ -4409,6 +4923,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketcorsrequestrequesttypedef"></a>
 
 ## PutBucketCorsRequestRequestTypeDef
 
@@ -4425,6 +4941,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketencryptionrequestrequesttypedef"></a>
 
 ## PutBucketEncryptionRequestRequestTypeDef
 
@@ -4443,6 +4961,8 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketintelligenttieringconfigurationrequestrequesttypedef"></a>
+
 ## PutBucketIntelligentTieringConfigurationRequestRequestTypeDef
 
 ```python
@@ -4455,6 +4975,8 @@ Required fields:
 - `Id`: `str`
 - `IntelligentTieringConfiguration`:
   [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
+
+<a id="putbucketinventoryconfigurationrequestrequesttypedef"></a>
 
 ## PutBucketInventoryConfigurationRequestRequestTypeDef
 
@@ -4473,6 +4995,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketlifecycleconfigurationrequestbucketlifecycleconfigurationtypedef"></a>
+
 ## PutBucketLifecycleConfigurationRequestBucketLifecycleConfigurationTypeDef
 
 ```python
@@ -4484,6 +5008,8 @@ Optional fields:
 - `LifecycleConfiguration`:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketlifecycleconfigurationrequestrequesttypedef"></a>
 
 ## PutBucketLifecycleConfigurationRequestRequestTypeDef
 
@@ -4501,6 +5027,8 @@ Optional fields:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketlifecyclerequestbucketlifecycletypedef"></a>
+
 ## PutBucketLifecycleRequestBucketLifecycleTypeDef
 
 ```python
@@ -4512,6 +5040,8 @@ Optional fields:
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketlifecyclerequestrequesttypedef"></a>
 
 ## PutBucketLifecycleRequestRequestTypeDef
 
@@ -4529,6 +5059,8 @@ Optional fields:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketloggingrequestbucketloggingtypedef"></a>
+
 ## PutBucketLoggingRequestBucketLoggingTypeDef
 
 ```python
@@ -4543,6 +5075,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketloggingrequestrequesttypedef"></a>
 
 ## PutBucketLoggingRequestRequestTypeDef
 
@@ -4559,6 +5093,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketmetricsconfigurationrequestrequesttypedef"></a>
 
 ## PutBucketMetricsConfigurationRequestRequestTypeDef
 
@@ -4577,6 +5113,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketnotificationconfigurationrequestbucketnotificationtypedef"></a>
+
 ## PutBucketNotificationConfigurationRequestBucketNotificationTypeDef
 
 ```python
@@ -4592,6 +5130,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 - `SkipDestinationValidation`: `bool`
+
+<a id="putbucketnotificationconfigurationrequestrequesttypedef"></a>
 
 ## PutBucketNotificationConfigurationRequestRequestTypeDef
 
@@ -4610,6 +5150,8 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `SkipDestinationValidation`: `bool`
 
+<a id="putbucketnotificationrequestrequesttypedef"></a>
+
 ## PutBucketNotificationRequestRequestTypeDef
 
 ```python
@@ -4625,6 +5167,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketownershipcontrolsrequestrequesttypedef"></a>
 
 ## PutBucketOwnershipControlsRequestRequestTypeDef
 
@@ -4643,6 +5187,8 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketpolicyrequestbucketpolicytypedef"></a>
+
 ## PutBucketPolicyRequestBucketPolicyTypeDef
 
 ```python
@@ -4657,6 +5203,8 @@ Optional fields:
 
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketpolicyrequestrequesttypedef"></a>
 
 ## PutBucketPolicyRequestRequestTypeDef
 
@@ -4673,6 +5221,8 @@ Optional fields:
 
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketreplicationrequestrequesttypedef"></a>
 
 ## PutBucketReplicationRequestRequestTypeDef
 
@@ -4691,6 +5241,8 @@ Optional fields:
 - `Token`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketrequestpaymentrequestbucketrequestpaymenttypedef"></a>
+
 ## PutBucketRequestPaymentRequestBucketRequestPaymentTypeDef
 
 ```python
@@ -4705,6 +5257,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketrequestpaymentrequestrequesttypedef"></a>
 
 ## PutBucketRequestPaymentRequestRequestTypeDef
 
@@ -4722,6 +5276,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbuckettaggingrequestbuckettaggingtypedef"></a>
+
 ## PutBucketTaggingRequestBucketTaggingTypeDef
 
 ```python
@@ -4735,6 +5291,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbuckettaggingrequestrequesttypedef"></a>
 
 ## PutBucketTaggingRequestRequestTypeDef
 
@@ -4751,6 +5309,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketversioningrequestbucketversioningtypedef"></a>
+
 ## PutBucketVersioningRequestBucketVersioningTypeDef
 
 ```python
@@ -4766,6 +5326,8 @@ Optional fields:
 
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketversioningrequestrequesttypedef"></a>
 
 ## PutBucketVersioningRequestRequestTypeDef
 
@@ -4784,6 +5346,8 @@ Optional fields:
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putbucketwebsiterequestbucketwebsitetypedef"></a>
+
 ## PutBucketWebsiteRequestBucketWebsiteTypeDef
 
 ```python
@@ -4798,6 +5362,8 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
+
+<a id="putbucketwebsiterequestrequesttypedef"></a>
 
 ## PutBucketWebsiteRequestRequestTypeDef
 
@@ -4815,6 +5381,8 @@ Optional fields:
 
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjectacloutputtypedef"></a>
+
 ## PutObjectAclOutputTypeDef
 
 ```python
@@ -4827,6 +5395,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putobjectaclrequestobjectacltypedef"></a>
 
 ## PutObjectAclRequestObjectAclTypeDef
 
@@ -4848,6 +5418,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="putobjectaclrequestrequesttypedef"></a>
 
 ## PutObjectAclRequestRequestTypeDef
 
@@ -4875,6 +5447,8 @@ Optional fields:
 - `VersionId`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjectlegalholdoutputtypedef"></a>
+
 ## PutObjectLegalHoldOutputTypeDef
 
 ```python
@@ -4887,6 +5461,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putobjectlegalholdrequestrequesttypedef"></a>
 
 ## PutObjectLegalHoldRequestRequestTypeDef
 
@@ -4909,6 +5485,8 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjectlockconfigurationoutputtypedef"></a>
+
 ## PutObjectLockConfigurationOutputTypeDef
 
 ```python
@@ -4921,6 +5499,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putobjectlockconfigurationrequestrequesttypedef"></a>
 
 ## PutObjectLockConfigurationRequestRequestTypeDef
 
@@ -4941,6 +5521,8 @@ Optional fields:
 - `Token`: `str`
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="putobjectoutputtypedef"></a>
 
 ## PutObjectOutputTypeDef
 
@@ -4964,6 +5546,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putobjectrequestbuckettypedef"></a>
 
 ## PutObjectRequestBucketTypeDef
 
@@ -5011,6 +5595,8 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjectrequestobjectsummarytypedef"></a>
+
 ## PutObjectRequestObjectSummaryTypeDef
 
 ```python
@@ -5053,6 +5639,8 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjectrequestobjecttypedef"></a>
+
 ## PutObjectRequestObjectTypeDef
 
 ```python
@@ -5094,6 +5682,8 @@ Optional fields:
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
+
+<a id="putobjectrequestrequesttypedef"></a>
 
 ## PutObjectRequestRequestTypeDef
 
@@ -5142,6 +5732,8 @@ Optional fields:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjectretentionoutputtypedef"></a>
+
 ## PutObjectRetentionOutputTypeDef
 
 ```python
@@ -5154,6 +5746,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putobjectretentionrequestrequesttypedef"></a>
 
 ## PutObjectRetentionRequestRequestTypeDef
 
@@ -5177,6 +5771,8 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="putobjecttaggingoutputtypedef"></a>
+
 ## PutObjectTaggingOutputTypeDef
 
 ```python
@@ -5188,6 +5784,8 @@ Required fields:
 - `VersionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putobjecttaggingrequestrequesttypedef"></a>
 
 ## PutObjectTaggingRequestRequestTypeDef
 
@@ -5209,6 +5807,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 
+<a id="putpublicaccessblockrequestrequesttypedef"></a>
+
 ## PutPublicAccessBlockRequestRequestTypeDef
 
 ```python
@@ -5226,6 +5826,8 @@ Optional fields:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="queueconfigurationdeprecatedtypedef"></a>
+
 ## QueueConfigurationDeprecatedTypeDef
 
 ```python
@@ -5238,6 +5840,8 @@ Optional fields:
 - `Event`: [EventType](./literals.md#eventtype)
 - `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 - `Queue`: `str`
+
+<a id="queueconfigurationtypedef"></a>
 
 ## QueueConfigurationTypeDef
 
@@ -5256,6 +5860,8 @@ Optional fields:
 - `Filter`:
   [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
 
+<a id="recordseventtypedef"></a>
+
 ## RecordsEventTypeDef
 
 ```python
@@ -5265,6 +5871,8 @@ from mypy_boto3_s3.type_defs import RecordsEventTypeDef
 Optional fields:
 
 - `Payload`: `bytes`
+
+<a id="redirectallrequeststoresponsemetadatatypedef"></a>
 
 ## RedirectAllRequestsToResponseMetadataTypeDef
 
@@ -5278,6 +5886,8 @@ Required fields:
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="redirectallrequeststotypedef"></a>
 
 ## RedirectAllRequestsToTypeDef
 
@@ -5293,6 +5903,8 @@ Optional fields:
 
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 
+<a id="redirecttypedef"></a>
+
 ## RedirectTypeDef
 
 ```python
@@ -5307,6 +5919,8 @@ Optional fields:
 - `ReplaceKeyPrefixWith`: `str`
 - `ReplaceKeyWith`: `str`
 
+<a id="replicamodificationstypedef"></a>
+
 ## ReplicaModificationsTypeDef
 
 ```python
@@ -5317,6 +5931,8 @@ Required fields:
 
 - `Status`:
   [ReplicaModificationsStatusType](./literals.md#replicamodificationsstatustype)
+
+<a id="replicationconfigurationtypedef"></a>
 
 ## ReplicationConfigurationTypeDef
 
@@ -5330,6 +5946,8 @@ Required fields:
 - `Rules`:
   `List`\[[ReplicationRuleTypeDef](./type_defs.md#replicationruletypedef)\]
 
+<a id="replicationruleandoperatortypedef"></a>
+
 ## ReplicationRuleAndOperatorTypeDef
 
 ```python
@@ -5340,6 +5958,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="replicationrulefiltertypedef"></a>
 
 ## ReplicationRuleFilterTypeDef
 
@@ -5353,6 +5973,8 @@ Optional fields:
 - `Tag`: [TagTypeDef](./type_defs.md#tagtypedef)
 - `And`:
   [ReplicationRuleAndOperatorTypeDef](./type_defs.md#replicationruleandoperatortypedef)
+
+<a id="replicationruletypedef"></a>
 
 ## ReplicationRuleTypeDef
 
@@ -5380,6 +6002,8 @@ Optional fields:
 - `DeleteMarkerReplication`:
   [DeleteMarkerReplicationTypeDef](./type_defs.md#deletemarkerreplicationtypedef)
 
+<a id="replicationtimetypedef"></a>
+
 ## ReplicationTimeTypeDef
 
 ```python
@@ -5393,6 +6017,8 @@ Required fields:
 - `Time`:
   [ReplicationTimeValueTypeDef](./type_defs.md#replicationtimevaluetypedef)
 
+<a id="replicationtimevaluetypedef"></a>
+
 ## ReplicationTimeValueTypeDef
 
 ```python
@@ -5402,6 +6028,8 @@ from mypy_boto3_s3.type_defs import ReplicationTimeValueTypeDef
 Optional fields:
 
 - `Minutes`: `int`
+
+<a id="requestpaymentconfigurationtypedef"></a>
 
 ## RequestPaymentConfigurationTypeDef
 
@@ -5413,6 +6041,8 @@ Required fields:
 
 - `Payer`: [PayerType](./literals.md#payertype)
 
+<a id="requestprogresstypedef"></a>
+
 ## RequestProgressTypeDef
 
 ```python
@@ -5422,6 +6052,8 @@ from mypy_boto3_s3.type_defs import RequestProgressTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -5437,6 +6069,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restoreobjectoutputtypedef"></a>
+
 ## RestoreObjectOutputTypeDef
 
 ```python
@@ -5450,6 +6084,8 @@ Required fields:
 - `RestoreOutputPath`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="restoreobjectrequestobjectsummarytypedef"></a>
 
 ## RestoreObjectRequestObjectSummaryTypeDef
 
@@ -5466,6 +6102,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="restoreobjectrequestobjecttypedef"></a>
+
 ## RestoreObjectRequestObjectTypeDef
 
 ```python
@@ -5480,6 +6118,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
+
+<a id="restoreobjectrequestrequesttypedef"></a>
 
 ## RestoreObjectRequestRequestTypeDef
 
@@ -5501,6 +6141,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="restorerequesttypedef"></a>
+
 ## RestoreRequestTypeDef
 
 ```python
@@ -5521,6 +6163,8 @@ Optional fields:
 - `OutputLocation`:
   [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
+<a id="routingruletypedef"></a>
+
 ## RoutingRuleTypeDef
 
 ```python
@@ -5534,6 +6178,8 @@ Required fields:
 Optional fields:
 
 - `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
+
+<a id="ruletypedef"></a>
 
 ## RuleTypeDef
 
@@ -5559,6 +6205,8 @@ Optional fields:
 - `AbortIncompleteMultipartUpload`:
   [AbortIncompleteMultipartUploadTypeDef](./type_defs.md#abortincompletemultipartuploadtypedef)
 
+<a id="s3keyfiltertypedef"></a>
+
 ## S3KeyFilterTypeDef
 
 ```python
@@ -5569,6 +6217,8 @@ Optional fields:
 
 - `FilterRules`:
   `List`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
+
+<a id="s3locationtypedef"></a>
 
 ## S3LocationTypeDef
 
@@ -5592,6 +6242,8 @@ Optional fields:
   `Sequence`\[[MetadataEntryTypeDef](./type_defs.md#metadataentrytypedef)\]
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 
+<a id="ssekmstypedef"></a>
+
 ## SSEKMSTypeDef
 
 ```python
@@ -5601,6 +6253,8 @@ from mypy_boto3_s3.type_defs import SSEKMSTypeDef
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="scanrangetypedef"></a>
 
 ## ScanRangeTypeDef
 
@@ -5612,6 +6266,8 @@ Optional fields:
 
 - `Start`: `int`
 - `End`: `int`
+
+<a id="selectobjectcontenteventstreamtypedef"></a>
 
 ## SelectObjectContentEventStreamTypeDef
 
@@ -5627,6 +6283,8 @@ Optional fields:
 - `Cont`: `Dict`\[`str`, `Any`\]
 - `End`: `Dict`\[`str`, `Any`\]
 
+<a id="selectobjectcontentoutputtypedef"></a>
+
 ## SelectObjectContentOutputTypeDef
 
 ```python
@@ -5639,6 +6297,8 @@ Required fields:
   [SelectObjectContentEventStreamTypeDef](./type_defs.md#selectobjectcontenteventstreamtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="selectobjectcontentrequestrequesttypedef"></a>
 
 ## SelectObjectContentRequestRequestTypeDef
 
@@ -5668,6 +6328,8 @@ Optional fields:
 - `ScanRange`: [ScanRangeTypeDef](./type_defs.md#scanrangetypedef)
 - `ExpectedBucketOwner`: `str`
 
+<a id="selectparameterstypedef"></a>
+
 ## SelectParametersTypeDef
 
 ```python
@@ -5684,6 +6346,8 @@ Required fields:
 - `OutputSerialization`:
   [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
 
+<a id="serversideencryptionbydefaulttypedef"></a>
+
 ## ServerSideEncryptionByDefaultTypeDef
 
 ```python
@@ -5699,6 +6363,8 @@ Optional fields:
 
 - `KMSMasterKeyID`: `str`
 
+<a id="serversideencryptionconfigurationtypedef"></a>
+
 ## ServerSideEncryptionConfigurationTypeDef
 
 ```python
@@ -5709,6 +6375,8 @@ Required fields:
 
 - `Rules`:
   `List`\[[ServerSideEncryptionRuleTypeDef](./type_defs.md#serversideencryptionruletypedef)\]
+
+<a id="serversideencryptionruletypedef"></a>
 
 ## ServerSideEncryptionRuleTypeDef
 
@@ -5722,6 +6390,8 @@ Optional fields:
   [ServerSideEncryptionByDefaultTypeDef](./type_defs.md#serversideencryptionbydefaulttypedef)
 - `BucketKeyEnabled`: `bool`
 
+<a id="serviceresourcebucketaclrequesttypedef"></a>
+
 ## ServiceResourceBucketAclRequestTypeDef
 
 ```python
@@ -5731,6 +6401,8 @@ from mypy_boto3_s3.type_defs import ServiceResourceBucketAclRequestTypeDef
 Required fields:
 
 - `bucket_name`: `str`
+
+<a id="serviceresourcebucketcorsrequesttypedef"></a>
 
 ## ServiceResourceBucketCorsRequestTypeDef
 
@@ -5742,6 +6414,8 @@ Required fields:
 
 - `bucket_name`: `str`
 
+<a id="serviceresourcebucketlifecycleconfigurationrequesttypedef"></a>
+
 ## ServiceResourceBucketLifecycleConfigurationRequestTypeDef
 
 ```python
@@ -5751,6 +6425,8 @@ from mypy_boto3_s3.type_defs import ServiceResourceBucketLifecycleConfigurationR
 Required fields:
 
 - `bucket_name`: `str`
+
+<a id="serviceresourcebucketlifecyclerequesttypedef"></a>
 
 ## ServiceResourceBucketLifecycleRequestTypeDef
 
@@ -5762,6 +6438,8 @@ Required fields:
 
 - `bucket_name`: `str`
 
+<a id="serviceresourcebucketloggingrequesttypedef"></a>
+
 ## ServiceResourceBucketLoggingRequestTypeDef
 
 ```python
@@ -5771,6 +6449,8 @@ from mypy_boto3_s3.type_defs import ServiceResourceBucketLoggingRequestTypeDef
 Required fields:
 
 - `bucket_name`: `str`
+
+<a id="serviceresourcebucketnotificationrequesttypedef"></a>
 
 ## ServiceResourceBucketNotificationRequestTypeDef
 
@@ -5782,6 +6462,8 @@ Required fields:
 
 - `bucket_name`: `str`
 
+<a id="serviceresourcebucketpolicyrequesttypedef"></a>
+
 ## ServiceResourceBucketPolicyRequestTypeDef
 
 ```python
@@ -5791,6 +6473,8 @@ from mypy_boto3_s3.type_defs import ServiceResourceBucketPolicyRequestTypeDef
 Required fields:
 
 - `bucket_name`: `str`
+
+<a id="serviceresourcebucketrequestpaymentrequesttypedef"></a>
 
 ## ServiceResourceBucketRequestPaymentRequestTypeDef
 
@@ -5802,6 +6486,8 @@ Required fields:
 
 - `bucket_name`: `str`
 
+<a id="serviceresourcebucketrequesttypedef"></a>
+
 ## ServiceResourceBucketRequestTypeDef
 
 ```python
@@ -5811,6 +6497,8 @@ from mypy_boto3_s3.type_defs import ServiceResourceBucketRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="serviceresourcebuckettaggingrequesttypedef"></a>
 
 ## ServiceResourceBucketTaggingRequestTypeDef
 
@@ -5822,6 +6510,8 @@ Required fields:
 
 - `bucket_name`: `str`
 
+<a id="serviceresourcebucketversioningrequesttypedef"></a>
+
 ## ServiceResourceBucketVersioningRequestTypeDef
 
 ```python
@@ -5832,6 +6522,8 @@ Required fields:
 
 - `bucket_name`: `str`
 
+<a id="serviceresourcebucketwebsiterequesttypedef"></a>
+
 ## ServiceResourceBucketWebsiteRequestTypeDef
 
 ```python
@@ -5841,6 +6533,8 @@ from mypy_boto3_s3.type_defs import ServiceResourceBucketWebsiteRequestTypeDef
 Required fields:
 
 - `bucket_name`: `str`
+
+<a id="serviceresourcemultipartuploadpartrequesttypedef"></a>
 
 ## ServiceResourceMultipartUploadPartRequestTypeDef
 
@@ -5855,6 +6549,8 @@ Required fields:
 - `multipart_upload_id`: `str`
 - `part_number`: `str`
 
+<a id="serviceresourcemultipartuploadrequesttypedef"></a>
+
 ## ServiceResourceMultipartUploadRequestTypeDef
 
 ```python
@@ -5867,6 +6563,8 @@ Required fields:
 - `object_key`: `str`
 - `id`: `str`
 
+<a id="serviceresourceobjectaclrequesttypedef"></a>
+
 ## ServiceResourceObjectAclRequestTypeDef
 
 ```python
@@ -5877,6 +6575,8 @@ Required fields:
 
 - `bucket_name`: `str`
 - `object_key`: `str`
+
+<a id="serviceresourceobjectrequesttypedef"></a>
 
 ## ServiceResourceObjectRequestTypeDef
 
@@ -5889,6 +6589,8 @@ Required fields:
 - `bucket_name`: `str`
 - `key`: `str`
 
+<a id="serviceresourceobjectsummaryrequesttypedef"></a>
+
 ## ServiceResourceObjectSummaryRequestTypeDef
 
 ```python
@@ -5899,6 +6601,8 @@ Required fields:
 
 - `bucket_name`: `str`
 - `key`: `str`
+
+<a id="serviceresourceobjectversionrequesttypedef"></a>
 
 ## ServiceResourceObjectVersionRequestTypeDef
 
@@ -5911,6 +6615,8 @@ Required fields:
 - `bucket_name`: `str`
 - `object_key`: `str`
 - `id`: `str`
+
+<a id="sourceselectioncriteriatypedef"></a>
 
 ## SourceSelectionCriteriaTypeDef
 
@@ -5925,6 +6631,8 @@ Optional fields:
 - `ReplicaModifications`:
   [ReplicaModificationsTypeDef](./type_defs.md#replicamodificationstypedef)
 
+<a id="ssekmsencryptedobjectstypedef"></a>
+
 ## SseKmsEncryptedObjectsTypeDef
 
 ```python
@@ -5936,6 +6644,8 @@ Required fields:
 - `Status`:
   [SseKmsEncryptedObjectsStatusType](./literals.md#ssekmsencryptedobjectsstatustype)
 
+<a id="statseventtypedef"></a>
+
 ## StatsEventTypeDef
 
 ```python
@@ -5945,6 +6655,8 @@ from mypy_boto3_s3.type_defs import StatsEventTypeDef
 Optional fields:
 
 - `Details`: [StatsTypeDef](./type_defs.md#statstypedef)
+
+<a id="statstypedef"></a>
 
 ## StatsTypeDef
 
@@ -5957,6 +6669,8 @@ Optional fields:
 - `BytesScanned`: `int`
 - `BytesProcessed`: `int`
 - `BytesReturned`: `int`
+
+<a id="storageclassanalysisdataexporttypedef"></a>
 
 ## StorageClassAnalysisDataExportTypeDef
 
@@ -5971,6 +6685,8 @@ Required fields:
 - `Destination`:
   [AnalyticsExportDestinationTypeDef](./type_defs.md#analyticsexportdestinationtypedef)
 
+<a id="storageclassanalysistypedef"></a>
+
 ## StorageClassAnalysisTypeDef
 
 ```python
@@ -5981,6 +6697,8 @@ Optional fields:
 
 - `DataExport`:
   [StorageClassAnalysisDataExportTypeDef](./type_defs.md#storageclassanalysisdataexporttypedef)
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -5993,6 +6711,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="taggingtypedef"></a>
+
 ## TaggingTypeDef
 
 ```python
@@ -6002,6 +6722,8 @@ from mypy_boto3_s3.type_defs import TaggingTypeDef
 Required fields:
 
 - `TagSet`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="targetgranttypedef"></a>
 
 ## TargetGrantTypeDef
 
@@ -6015,6 +6737,8 @@ Optional fields:
 - `Permission`:
   [BucketLogsPermissionType](./literals.md#bucketlogspermissiontype)
 
+<a id="tieringtypedef"></a>
+
 ## TieringTypeDef
 
 ```python
@@ -6026,6 +6750,8 @@ Required fields:
 - `Days`: `int`
 - `AccessTier`:
   [IntelligentTieringAccessTierType](./literals.md#intelligenttieringaccesstiertype)
+
+<a id="topicconfigurationdeprecatedtypedef"></a>
 
 ## TopicConfigurationDeprecatedTypeDef
 
@@ -6039,6 +6765,8 @@ Optional fields:
 - `Events`: `List`\[[EventType](./literals.md#eventtype)\]
 - `Event`: [EventType](./literals.md#eventtype)
 - `Topic`: `str`
+
+<a id="topicconfigurationtypedef"></a>
 
 ## TopicConfigurationTypeDef
 
@@ -6057,6 +6785,8 @@ Optional fields:
 - `Filter`:
   [NotificationConfigurationFilterTypeDef](./type_defs.md#notificationconfigurationfiltertypedef)
 
+<a id="transitiontypedef"></a>
+
 ## TransitionTypeDef
 
 ```python
@@ -6069,6 +6799,8 @@ Optional fields:
 - `Days`: `int`
 - `StorageClass`:
   [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
+
+<a id="uploadpartcopyoutputtypedef"></a>
 
 ## UploadPartCopyOutputTypeDef
 
@@ -6091,6 +6823,8 @@ Required fields:
   [RequestChargedType](./literals.md#requestchargedtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="uploadpartcopyrequestmultipartuploadparttypedef"></a>
 
 ## UploadPartCopyRequestMultipartUploadPartTypeDef
 
@@ -6119,6 +6853,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
+
+<a id="uploadpartcopyrequestrequesttypedef"></a>
 
 ## UploadPartCopyRequestRequestTypeDef
 
@@ -6153,6 +6889,8 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `ExpectedSourceBucketOwner`: `str`
 
+<a id="uploadpartoutputtypedef"></a>
+
 ## UploadPartOutputTypeDef
 
 ```python
@@ -6173,6 +6911,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="uploadpartrequestmultipartuploadparttypedef"></a>
+
 ## UploadPartRequestMultipartUploadPartTypeDef
 
 ```python
@@ -6190,6 +6930,8 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
+
+<a id="uploadpartrequestrequesttypedef"></a>
 
 ## UploadPartRequestRequestTypeDef
 
@@ -6216,6 +6958,8 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
+<a id="versioningconfigurationtypedef"></a>
+
 ## VersioningConfigurationTypeDef
 
 ```python
@@ -6228,6 +6972,8 @@ Optional fields:
 - `Status`:
   [BucketVersioningStatusType](./literals.md#bucketversioningstatustype)
 
+<a id="waiterconfigtypedef"></a>
+
 ## WaiterConfigTypeDef
 
 ```python
@@ -6238,6 +6984,8 @@ Optional fields:
 
 - `Delay`: `int`
 - `MaxAttempts`: `int`
+
+<a id="websiteconfigurationtypedef"></a>
 
 ## WebsiteConfigurationTypeDef
 
@@ -6253,6 +7001,8 @@ Optional fields:
   [RedirectAllRequestsToTypeDef](./type_defs.md#redirectallrequeststotypedef)
 - `RoutingRules`:
   `Sequence`\[[RoutingRuleTypeDef](./type_defs.md#routingruletypedef)\]
+
+<a id="writegetobjectresponserequestrequesttypedef"></a>
 
 ## WriteGetObjectResponseRequestRequestTypeDef
 

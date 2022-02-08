@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-datasync-module"></a>
+
 # Typed dictionaries for boto3 DataSync module
 
 > [Index](..) > [DataSync](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
 type annotations stubs module
-[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [Typed dictionaries for boto3 DataSync module](#typed-dictionaries-for-boto3-datasync-module)
   - [AgentListEntryTypeDef](#agentlistentrytypedef)
@@ -97,6 +99,8 @@ type annotations stubs module
   - [UpdateTaskExecutionRequestRequestTypeDef](#updatetaskexecutionrequestrequesttypedef)
   - [UpdateTaskRequestRequestTypeDef](#updatetaskrequestrequesttypedef)
 
+<a id="agentlistentrytypedef"></a>
+
 ## AgentListEntryTypeDef
 
 ```python
@@ -109,6 +113,8 @@ Optional fields:
 - `Name`: `str`
 - `Status`: [AgentStatusType](./literals.md#agentstatustype)
 
+<a id="canceltaskexecutionrequestrequesttypedef"></a>
+
 ## CancelTaskExecutionRequestRequestTypeDef
 
 ```python
@@ -118,6 +124,8 @@ from mypy_boto3_datasync.type_defs import CancelTaskExecutionRequestRequestTypeD
 Required fields:
 
 - `TaskExecutionArn`: `str`
+
+<a id="createagentrequestrequesttypedef"></a>
 
 ## CreateAgentRequestRequestTypeDef
 
@@ -138,6 +146,8 @@ Optional fields:
 - `SubnetArns`: `Sequence`\[`str`\]
 - `SecurityGroupArns`: `Sequence`\[`str`\]
 
+<a id="createagentresponsetypedef"></a>
+
 ## CreateAgentResponseTypeDef
 
 ```python
@@ -149,6 +159,8 @@ Required fields:
 - `AgentArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationefsrequestrequesttypedef"></a>
 
 ## CreateLocationEfsRequestRequestTypeDef
 
@@ -167,6 +179,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocationefsresponsetypedef"></a>
+
 ## CreateLocationEfsResponseTypeDef
 
 ```python
@@ -178,6 +192,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationfsxlustrerequestrequesttypedef"></a>
 
 ## CreateLocationFsxLustreRequestRequestTypeDef
 
@@ -196,6 +212,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocationfsxlustreresponsetypedef"></a>
+
 ## CreateLocationFsxLustreResponseTypeDef
 
 ```python
@@ -207,6 +225,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationfsxwindowsrequestrequesttypedef"></a>
 
 ## CreateLocationFsxWindowsRequestRequestTypeDef
 
@@ -228,6 +248,8 @@ Optional fields:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 - `Domain`: `str`
 
+<a id="createlocationfsxwindowsresponsetypedef"></a>
+
 ## CreateLocationFsxWindowsResponseTypeDef
 
 ```python
@@ -239,6 +261,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationhdfsrequestrequesttypedef"></a>
 
 ## CreateLocationHdfsRequestRequestTypeDef
 
@@ -269,6 +293,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocationhdfsresponsetypedef"></a>
+
 ## CreateLocationHdfsResponseTypeDef
 
 ```python
@@ -280,6 +306,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationnfsrequestrequesttypedef"></a>
 
 ## CreateLocationNfsRequestRequestTypeDef
 
@@ -300,6 +328,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocationnfsresponsetypedef"></a>
+
 ## CreateLocationNfsResponseTypeDef
 
 ```python
@@ -311,6 +341,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationobjectstoragerequestrequesttypedef"></a>
 
 ## CreateLocationObjectStorageRequestRequestTypeDef
 
@@ -335,6 +367,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocationobjectstorageresponsetypedef"></a>
+
 ## CreateLocationObjectStorageResponseTypeDef
 
 ```python
@@ -346,6 +380,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocations3requestrequesttypedef"></a>
 
 ## CreateLocationS3RequestRequestTypeDef
 
@@ -366,6 +402,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocations3responsetypedef"></a>
+
 ## CreateLocationS3ResponseTypeDef
 
 ```python
@@ -377,6 +415,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlocationsmbrequestrequesttypedef"></a>
 
 ## CreateLocationSmbRequestRequestTypeDef
 
@@ -400,6 +440,8 @@ Optional fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="createlocationsmbresponsetypedef"></a>
+
 ## CreateLocationSmbResponseTypeDef
 
 ```python
@@ -411,6 +453,8 @@ Required fields:
 - `LocationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtaskrequestrequesttypedef"></a>
 
 ## CreateTaskRequestRequestTypeDef
 
@@ -436,6 +480,8 @@ Optional fields:
 - `Includes`:
   `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
+<a id="createtaskresponsetypedef"></a>
+
 ## CreateTaskResponseTypeDef
 
 ```python
@@ -448,6 +494,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteagentrequestrequesttypedef"></a>
+
 ## DeleteAgentRequestRequestTypeDef
 
 ```python
@@ -457,6 +505,8 @@ from mypy_boto3_datasync.type_defs import DeleteAgentRequestRequestTypeDef
 Required fields:
 
 - `AgentArn`: `str`
+
+<a id="deletelocationrequestrequesttypedef"></a>
 
 ## DeleteLocationRequestRequestTypeDef
 
@@ -468,6 +518,8 @@ Required fields:
 
 - `LocationArn`: `str`
 
+<a id="deletetaskrequestrequesttypedef"></a>
+
 ## DeleteTaskRequestRequestTypeDef
 
 ```python
@@ -478,6 +530,8 @@ Required fields:
 
 - `TaskArn`: `str`
 
+<a id="describeagentrequestrequesttypedef"></a>
+
 ## DescribeAgentRequestRequestTypeDef
 
 ```python
@@ -487,6 +541,8 @@ from mypy_boto3_datasync.type_defs import DescribeAgentRequestRequestTypeDef
 Required fields:
 
 - `AgentArn`: `str`
+
+<a id="describeagentresponsetypedef"></a>
 
 ## DescribeAgentResponseTypeDef
 
@@ -507,6 +563,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationefsrequestrequesttypedef"></a>
+
 ## DescribeLocationEfsRequestRequestTypeDef
 
 ```python
@@ -516,6 +574,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationEfsRequestRequestTypeD
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationefsresponsetypedef"></a>
 
 ## DescribeLocationEfsResponseTypeDef
 
@@ -532,6 +592,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationfsxlustrerequestrequesttypedef"></a>
+
 ## DescribeLocationFsxLustreRequestRequestTypeDef
 
 ```python
@@ -541,6 +603,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationFsxLustreRequestReques
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationfsxlustreresponsetypedef"></a>
 
 ## DescribeLocationFsxLustreResponseTypeDef
 
@@ -557,6 +621,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationfsxwindowsrequestrequesttypedef"></a>
+
 ## DescribeLocationFsxWindowsRequestRequestTypeDef
 
 ```python
@@ -566,6 +632,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationFsxWindowsRequestReque
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationfsxwindowsresponsetypedef"></a>
 
 ## DescribeLocationFsxWindowsResponseTypeDef
 
@@ -584,6 +652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationhdfsrequestrequesttypedef"></a>
+
 ## DescribeLocationHdfsRequestRequestTypeDef
 
 ```python
@@ -593,6 +663,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationHdfsRequestRequestType
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationhdfsresponsetypedef"></a>
 
 ## DescribeLocationHdfsResponseTypeDef
 
@@ -620,6 +692,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationnfsrequestrequesttypedef"></a>
+
 ## DescribeLocationNfsRequestRequestTypeDef
 
 ```python
@@ -629,6 +703,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationNfsRequestRequestTypeD
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationnfsresponsetypedef"></a>
 
 ## DescribeLocationNfsResponseTypeDef
 
@@ -647,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationobjectstoragerequestrequesttypedef"></a>
+
 ## DescribeLocationObjectStorageRequestRequestTypeDef
 
 ```python
@@ -656,6 +734,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationObjectStorageRequestRe
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationobjectstorageresponsetypedef"></a>
 
 ## DescribeLocationObjectStorageResponseTypeDef
 
@@ -676,6 +756,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocations3requestrequesttypedef"></a>
+
 ## DescribeLocationS3RequestRequestTypeDef
 
 ```python
@@ -685,6 +767,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationS3RequestRequestTypeDe
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocations3responsetypedef"></a>
 
 ## DescribeLocationS3ResponseTypeDef
 
@@ -703,6 +787,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelocationsmbrequestrequesttypedef"></a>
+
 ## DescribeLocationSmbRequestRequestTypeDef
 
 ```python
@@ -712,6 +798,8 @@ from mypy_boto3_datasync.type_defs import DescribeLocationSmbRequestRequestTypeD
 Required fields:
 
 - `LocationArn`: `str`
+
+<a id="describelocationsmbresponsetypedef"></a>
 
 ## DescribeLocationSmbResponseTypeDef
 
@@ -732,6 +820,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetaskexecutionrequestrequesttypedef"></a>
+
 ## DescribeTaskExecutionRequestRequestTypeDef
 
 ```python
@@ -741,6 +831,8 @@ from mypy_boto3_datasync.type_defs import DescribeTaskExecutionRequestRequestTyp
 Required fields:
 
 - `TaskExecutionArn`: `str`
+
+<a id="describetaskexecutionresponsetypedef"></a>
 
 ## DescribeTaskExecutionResponseTypeDef
 
@@ -766,6 +858,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetaskrequestrequesttypedef"></a>
+
 ## DescribeTaskRequestRequestTypeDef
 
 ```python
@@ -775,6 +869,8 @@ from mypy_boto3_datasync.type_defs import DescribeTaskRequestRequestTypeDef
 Required fields:
 
 - `TaskArn`: `str`
+
+<a id="describetaskresponsetypedef"></a>
 
 ## DescribeTaskResponseTypeDef
 
@@ -803,6 +899,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ec2configtypedef"></a>
+
 ## Ec2ConfigTypeDef
 
 ```python
@@ -813,6 +911,8 @@ Required fields:
 
 - `SubnetArn`: `str`
 - `SecurityGroupArns`: `Sequence`\[`str`\]
+
+<a id="filterruletypedef"></a>
 
 ## FilterRuleTypeDef
 
@@ -826,6 +926,8 @@ Optional fields:
   [FilterTypeType](./literals.md#filtertypetype))
 - `Value`: `str`
 
+<a id="hdfsnamenodetypedef"></a>
+
 ## HdfsNameNodeTypeDef
 
 ```python
@@ -837,6 +939,8 @@ Required fields:
 - `Hostname`: `str`
 - `Port`: `int`
 
+<a id="listagentsrequestrequesttypedef"></a>
+
 ## ListAgentsRequestRequestTypeDef
 
 ```python
@@ -847,6 +951,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listagentsresponsetypedef"></a>
 
 ## ListAgentsResponseTypeDef
 
@@ -862,6 +968,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlocationsrequestrequesttypedef"></a>
+
 ## ListLocationsRequestRequestTypeDef
 
 ```python
@@ -874,6 +982,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`:
   `Sequence`\[[LocationFilterTypeDef](./type_defs.md#locationfiltertypedef)\]
+
+<a id="listlocationsresponsetypedef"></a>
 
 ## ListLocationsResponseTypeDef
 
@@ -888,6 +998,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -904,6 +1016,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -917,6 +1031,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtaskexecutionsrequestrequesttypedef"></a>
+
 ## ListTaskExecutionsRequestRequestTypeDef
 
 ```python
@@ -928,6 +1044,8 @@ Optional fields:
 - `TaskArn`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listtaskexecutionsresponsetypedef"></a>
 
 ## ListTaskExecutionsResponseTypeDef
 
@@ -943,6 +1061,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtasksrequestrequesttypedef"></a>
+
 ## ListTasksRequestRequestTypeDef
 
 ```python
@@ -955,6 +1075,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Filters`:
   `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
+
+<a id="listtasksresponsetypedef"></a>
 
 ## ListTasksResponseTypeDef
 
@@ -970,6 +1092,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="locationfiltertypedef"></a>
+
 ## LocationFilterTypeDef
 
 ```python
@@ -982,6 +1106,8 @@ Required fields:
 - `Values`: `Sequence`\[`str`\]
 - `Operator`: [OperatorType](./literals.md#operatortype)
 
+<a id="locationlistentrytypedef"></a>
+
 ## LocationListEntryTypeDef
 
 ```python
@@ -993,6 +1119,8 @@ Optional fields:
 - `LocationArn`: `str`
 - `LocationUri`: `str`
 
+<a id="nfsmountoptionstypedef"></a>
+
 ## NfsMountOptionsTypeDef
 
 ```python
@@ -1003,6 +1131,8 @@ Optional fields:
 
 - `Version`: [NfsVersionType](./literals.md#nfsversiontype)
 
+<a id="onpremconfigtypedef"></a>
+
 ## OnPremConfigTypeDef
 
 ```python
@@ -1012,6 +1142,8 @@ from mypy_boto3_datasync.type_defs import OnPremConfigTypeDef
 Required fields:
 
 - `AgentArns`: `Sequence`\[`str`\]
+
+<a id="optionstypedef"></a>
 
 ## OptionsTypeDef
 
@@ -1039,6 +1171,8 @@ Optional fields:
 - `SecurityDescriptorCopyFlags`:
   [SmbSecurityDescriptorCopyFlagsType](./literals.md#smbsecuritydescriptorcopyflagstype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1050,6 +1184,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="privatelinkconfigtypedef"></a>
 
 ## PrivateLinkConfigTypeDef
 
@@ -1064,6 +1200,8 @@ Optional fields:
 - `SubnetArns`: `List`\[`str`\]
 - `SecurityGroupArns`: `List`\[`str`\]
 
+<a id="qopconfigurationtypedef"></a>
+
 ## QopConfigurationTypeDef
 
 ```python
@@ -1075,6 +1213,8 @@ Optional fields:
 - `RpcProtection`: [HdfsRpcProtectionType](./literals.md#hdfsrpcprotectiontype)
 - `DataTransferProtection`:
   [HdfsDataTransferProtectionType](./literals.md#hdfsdatatransferprotectiontype)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1090,6 +1230,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3configtypedef"></a>
+
 ## S3ConfigTypeDef
 
 ```python
@@ -1100,6 +1242,8 @@ Required fields:
 
 - `BucketAccessRoleArn`: `str`
 
+<a id="smbmountoptionstypedef"></a>
+
 ## SmbMountOptionsTypeDef
 
 ```python
@@ -1109,6 +1253,8 @@ from mypy_boto3_datasync.type_defs import SmbMountOptionsTypeDef
 Optional fields:
 
 - `Version`: [SmbVersionType](./literals.md#smbversiontype)
+
+<a id="starttaskexecutionrequestrequesttypedef"></a>
 
 ## StartTaskExecutionRequestRequestTypeDef
 
@@ -1128,6 +1274,8 @@ Optional fields:
 - `Excludes`:
   `Sequence`\[[FilterRuleTypeDef](./type_defs.md#filterruletypedef)\]
 
+<a id="starttaskexecutionresponsetypedef"></a>
+
 ## StartTaskExecutionResponseTypeDef
 
 ```python
@@ -1139,6 +1287,8 @@ Required fields:
 - `TaskExecutionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="taglistentrytypedef"></a>
 
 ## TagListEntryTypeDef
 
@@ -1154,6 +1304,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1166,6 +1318,8 @@ Required fields:
 - `Tags`:
   `Sequence`\[[TagListEntryTypeDef](./type_defs.md#taglistentrytypedef)\]
 
+<a id="taskexecutionlistentrytypedef"></a>
+
 ## TaskExecutionListEntryTypeDef
 
 ```python
@@ -1176,6 +1330,8 @@ Optional fields:
 
 - `TaskExecutionArn`: `str`
 - `Status`: [TaskExecutionStatusType](./literals.md#taskexecutionstatustype)
+
+<a id="taskexecutionresultdetailtypedef"></a>
 
 ## TaskExecutionResultDetailTypeDef
 
@@ -1195,6 +1351,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorDetail`: `str`
 
+<a id="taskfiltertypedef"></a>
+
 ## TaskFilterTypeDef
 
 ```python
@@ -1206,6 +1364,8 @@ Required fields:
 - `Name`: [TaskFilterNameType](./literals.md#taskfilternametype)
 - `Values`: `Sequence`\[`str`\]
 - `Operator`: [OperatorType](./literals.md#operatortype)
+
+<a id="tasklistentrytypedef"></a>
 
 ## TaskListEntryTypeDef
 
@@ -1219,6 +1379,8 @@ Optional fields:
 - `Status`: [TaskStatusType](./literals.md#taskstatustype)
 - `Name`: `str`
 
+<a id="taskscheduletypedef"></a>
+
 ## TaskScheduleTypeDef
 
 ```python
@@ -1228,6 +1390,8 @@ from mypy_boto3_datasync.type_defs import TaskScheduleTypeDef
 Required fields:
 
 - `ScheduleExpression`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1239,6 +1403,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Keys`: `Sequence`\[`str`\]
+
+<a id="updateagentrequestrequesttypedef"></a>
 
 ## UpdateAgentRequestRequestTypeDef
 
@@ -1253,6 +1419,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updatelocationhdfsrequestrequesttypedef"></a>
 
 ## UpdateLocationHdfsRequestRequestTypeDef
 
@@ -1282,6 +1450,8 @@ Optional fields:
 - `KerberosKrb5Conf`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `AgentArns`: `Sequence`\[`str`\]
 
+<a id="updatelocationnfsrequestrequesttypedef"></a>
+
 ## UpdateLocationNfsRequestRequestTypeDef
 
 ```python
@@ -1298,6 +1468,8 @@ Optional fields:
 - `OnPremConfig`: [OnPremConfigTypeDef](./type_defs.md#onpremconfigtypedef)
 - `MountOptions`:
   [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
+
+<a id="updatelocationobjectstoragerequestrequesttypedef"></a>
 
 ## UpdateLocationObjectStorageRequestRequestTypeDef
 
@@ -1319,6 +1491,8 @@ Optional fields:
 - `SecretKey`: `str`
 - `AgentArns`: `Sequence`\[`str`\]
 
+<a id="updatelocationsmbrequestrequesttypedef"></a>
+
 ## UpdateLocationSmbRequestRequestTypeDef
 
 ```python
@@ -1339,6 +1513,8 @@ Optional fields:
 - `MountOptions`:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 
+<a id="updatetaskexecutionrequestrequesttypedef"></a>
+
 ## UpdateTaskExecutionRequestRequestTypeDef
 
 ```python
@@ -1349,6 +1525,8 @@ Required fields:
 
 - `TaskExecutionArn`: `str`
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef)
+
+<a id="updatetaskrequestrequesttypedef"></a>
 
 ## UpdateTaskRequestRequestTypeDef
 

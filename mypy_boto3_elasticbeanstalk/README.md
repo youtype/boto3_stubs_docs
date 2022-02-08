@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-elasticbeanstalk-module"></a>
+
 # Type annotations for boto3 ElasticBeanstalk module
 
 > [Index](..) > ElasticBeanstalk
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
-[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[elasticbeanstalk]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[elasticbeanstalk]'
+
+# standalone installation
 pip install mypy-boto3-elasticbeanstalk
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-elasticbeanstalk
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="elasticbeanstalkclient"></a>
+
 ## ElasticBeanstalkClient
 
 Type annotations for `boto3.client("elasticbeanstalk")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -86,6 +100,8 @@ from mypy_boto3_elasticbeanstalk.client import ElasticBeanstalkClient
 - [update_tags_for_resource](./client.md#update_tags_for_resource)
 - [validate_configuration_settings](./client.md#validate_configuration_settings)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ElasticBeanstalkClient [exceptions](./client.md#exceptions)
@@ -111,6 +127,8 @@ ElasticBeanstalkClient [exceptions](./client.md#exceptions)
 - TooManyPlatformsException
 - TooManyTagsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -119,7 +137,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticbeanstalk.paginators import DescribeApplicationVersionsPaginator, ...
+from mypy_boto3_elasticbeanstalk.paginator import DescribeApplicationVersionsPaginator, ...
 ```
 
 - [DescribeApplicationVersionsPaginator](./paginators.md#describeapplicationversionspaginator)
@@ -127,6 +145,8 @@ from mypy_boto3_elasticbeanstalk.paginators import DescribeApplicationVersionsPa
 - [DescribeEnvironmentsPaginator](./paginators.md#describeenvironmentspaginator)
 - [DescribeEventsPaginator](./paginators.md#describeeventspaginator)
 - [ListPlatformVersionsPaginator](./paginators.md#listplatformversionspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -136,12 +156,14 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticbeanstalk.waiters import EnvironmentExistsWaiter, ...
+from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter, ...
 ```
 
 - [EnvironmentExistsWaiter](./waiters.md#environmentexistswaiter)
 - [EnvironmentTerminatedWaiter](./waiters.md#environmentterminatedwaiter)
 - [EnvironmentUpdatedWaiter](./waiters.md#environmentupdatedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -183,6 +205,8 @@ from mypy_boto3_elasticbeanstalk.literals import ActionHistoryStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="organizationsclient-for-boto3-organizations-module"></a>
+
 # OrganizationsClient for boto3 Organizations module
 
 > [Index](..) > [Organizations](.) > OrganizationsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
 type annotations stubs module
-[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [OrganizationsClient for boto3 Organizations module](#organizationsclient-for-boto3-organizations-module)
   - [OrganizationsClient](#organizationsclient)
@@ -67,6 +69,8 @@ type annotations stubs module
     - [update_policy](#update_policy)
     - [get_paginator](#get_paginator)
 
+<a id="organizationsclient"></a>
+
 ## OrganizationsClient
 
 Type annotations for `boto3.client("organizations")`
@@ -74,14 +78,17 @@ Type annotations for `boto3.client("organizations")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_organizations.client import OrganizationsClient
 
 def get_organizations_client() -> OrganizationsClient:
-    return boto3.client("organizations")
+    return Session().client("organizations")
 ```
 
 Boto3 documentation:
 [Organizations.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -143,7 +150,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnsupportedAPIEndpointException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -155,6 +166,8 @@ Boto3 documentation:
 [Organizations.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_handshake"></a>
 
 ### accept_handshake
 
@@ -176,6 +189,8 @@ Keyword-only arguments:
 Returns
 [AcceptHandshakeResponseTypeDef](./type_defs.md#accepthandshakeresponsetypedef).
 
+<a id="attach_policy"></a>
+
 ### attach_policy
 
 Attaches a policy to a root, an organizational unit (OU), or an individual
@@ -194,6 +209,8 @@ Keyword-only arguments:
 - `PolicyId`: `str` *(required)*
 - `TargetId`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -208,6 +225,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_handshake"></a>
 
 ### cancel_handshake
 
@@ -227,6 +246,8 @@ Keyword-only arguments:
 
 Returns
 [CancelHandshakeResponseTypeDef](./type_defs.md#cancelhandshakeresponsetypedef).
+
+<a id="create_account"></a>
 
 ### create_account
 
@@ -252,6 +273,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAccountResponseTypeDef](./type_defs.md#createaccountresponsetypedef).
+
+<a id="create_gov_cloud_account"></a>
 
 ### create_gov_cloud_account
 
@@ -279,6 +302,8 @@ Keyword-only arguments:
 Returns
 [CreateGovCloudAccountResponseTypeDef](./type_defs.md#creategovcloudaccountresponsetypedef).
 
+<a id="create_organization"></a>
+
 ### create_organization
 
 Creates an AWS organization.
@@ -299,6 +324,8 @@ Keyword-only arguments:
 
 Returns
 [CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
+
+<a id="create_organizational_unit"></a>
 
 ### create_organizational_unit
 
@@ -321,6 +348,8 @@ Keyword-only arguments:
 
 Returns
 [CreateOrganizationalUnitResponseTypeDef](./type_defs.md#createorganizationalunitresponsetypedef).
+
+<a id="create_policy"></a>
 
 ### create_policy
 
@@ -346,6 +375,8 @@ Keyword-only arguments:
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
 
+<a id="decline_handshake"></a>
+
 ### decline_handshake
 
 Declines a handshake request.
@@ -365,6 +396,8 @@ Keyword-only arguments:
 Returns
 [DeclineHandshakeResponseTypeDef](./type_defs.md#declinehandshakeresponsetypedef).
 
+<a id="delete_organization"></a>
+
 ### delete_organization
 
 Deletes the organization.
@@ -374,6 +407,8 @@ method.
 
 Boto3 documentation:
 [Organizations.Client.delete_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.delete_organization)
+
+<a id="delete_organizational_unit"></a>
 
 ### delete_organizational_unit
 
@@ -392,6 +427,8 @@ Keyword-only arguments:
 
 - `OrganizationalUnitId`: `str` *(required)*
 
+<a id="delete_policy"></a>
+
 ### delete_policy
 
 Deletes the specified policy from your organization.
@@ -407,6 +444,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
+
+<a id="deregister_delegated_administrator"></a>
 
 ### deregister_delegated_administrator
 
@@ -427,6 +466,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `ServicePrincipal`: `str` *(required)*
 
+<a id="describe_account"></a>
+
 ### describe_account
 
 Retrieves AWS Organizations-related information about the specified account.
@@ -445,6 +486,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAccountResponseTypeDef](./type_defs.md#describeaccountresponsetypedef).
+
+<a id="describe_create_account_status"></a>
 
 ### describe_create_account_status
 
@@ -465,6 +508,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCreateAccountStatusResponseTypeDef](./type_defs.md#describecreateaccountstatusresponsetypedef).
+
+<a id="describe_effective_policy"></a>
 
 ### describe_effective_policy
 
@@ -489,6 +534,8 @@ Keyword-only arguments:
 Returns
 [DescribeEffectivePolicyResponseTypeDef](./type_defs.md#describeeffectivepolicyresponsetypedef).
 
+<a id="describe_handshake"></a>
+
 ### describe_handshake
 
 Retrieves information about a previously requested handshake.
@@ -508,6 +555,8 @@ Keyword-only arguments:
 Returns
 [DescribeHandshakeResponseTypeDef](./type_defs.md#describehandshakeresponsetypedef).
 
+<a id="describe_organization"></a>
+
 ### describe_organization
 
 Retrieves information about the organization that the user's account belongs
@@ -521,6 +570,8 @@ Boto3 documentation:
 
 Returns
 [DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
+
+<a id="describe_organizational_unit"></a>
 
 ### describe_organizational_unit
 
@@ -542,6 +593,8 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationalUnitResponseTypeDef](./type_defs.md#describeorganizationalunitresponsetypedef).
 
+<a id="describe_policy"></a>
+
 ### describe_policy
 
 Retrieves information about a policy.
@@ -561,6 +614,8 @@ Keyword-only arguments:
 Returns
 [DescribePolicyResponseTypeDef](./type_defs.md#describepolicyresponsetypedef).
 
+<a id="detach_policy"></a>
+
 ### detach_policy
 
 Detaches a policy from a target root, organizational unit (OU), or account.
@@ -577,6 +632,8 @@ Keyword-only arguments:
 
 - `PolicyId`: `str` *(required)*
 - `TargetId`: `str` *(required)*
+
+<a id="disable_aws_service_access"></a>
 
 ### disable_aws_service_access
 
@@ -595,6 +652,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServicePrincipal`: `str` *(required)*
+
+<a id="disable_policy_type"></a>
 
 ### disable_policy_type
 
@@ -617,6 +676,8 @@ Keyword-only arguments:
 Returns
 [DisablePolicyTypeResponseTypeDef](./type_defs.md#disablepolicytyperesponsetypedef).
 
+<a id="enable_all_features"></a>
+
 ### enable_all_features
 
 Enables all features in an organization.
@@ -629,6 +690,8 @@ Boto3 documentation:
 
 Returns
 [EnableAllFeaturesResponseTypeDef](./type_defs.md#enableallfeaturesresponsetypedef).
+
+<a id="enable_aws_service_access"></a>
 
 ### enable_aws_service_access
 
@@ -647,6 +710,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServicePrincipal`: `str` *(required)*
+
+<a id="enable_policy_type"></a>
 
 ### enable_policy_type
 
@@ -668,6 +733,8 @@ Keyword-only arguments:
 Returns
 [EnablePolicyTypeResponseTypeDef](./type_defs.md#enablepolicytyperesponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -686,6 +753,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="invite_account_to_organization"></a>
 
 ### invite_account_to_organization
 
@@ -711,6 +780,8 @@ Keyword-only arguments:
 Returns
 [InviteAccountToOrganizationResponseTypeDef](./type_defs.md#inviteaccounttoorganizationresponsetypedef).
 
+<a id="leave_organization"></a>
+
 ### leave_organization
 
 Removes a member account from its parent organization.
@@ -719,6 +790,8 @@ Type annotations for `boto3.client("organizations").leave_organization` method.
 
 Boto3 documentation:
 [Organizations.Client.leave_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations.Client.leave_organization)
+
+<a id="list_accounts"></a>
 
 ### list_accounts
 
@@ -739,6 +812,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef).
+
+<a id="list_accounts_for_parent"></a>
 
 ### list_accounts_for_parent
 
@@ -763,6 +838,8 @@ Keyword-only arguments:
 Returns
 [ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef).
 
+<a id="list_aws_service_access_for_organization"></a>
+
 ### list_aws_service_access_for_organization
 
 Returns a list of the AWS services that you enabled to integrate with your
@@ -786,6 +863,8 @@ Keyword-only arguments:
 Returns
 [ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef).
 
+<a id="list_children"></a>
+
 ### list_children
 
 Lists all of the organizational units (OUs) or accounts that are contained in
@@ -808,6 +887,8 @@ Keyword-only arguments:
 
 Returns
 [ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef).
+
+<a id="list_create_account_status"></a>
 
 ### list_create_account_status
 
@@ -833,6 +914,8 @@ Keyword-only arguments:
 Returns
 [ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef).
 
+<a id="list_delegated_administrators"></a>
+
 ### list_delegated_administrators
 
 Lists the AWS accounts that are designated as delegated administrators in this
@@ -855,6 +938,8 @@ Keyword-only arguments:
 
 Returns
 [ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef).
+
+<a id="list_delegated_services_for_account"></a>
 
 ### list_delegated_services_for_account
 
@@ -879,6 +964,8 @@ Keyword-only arguments:
 Returns
 [ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef).
 
+<a id="list_handshakes_for_account"></a>
+
 ### list_handshakes_for_account
 
 Lists the current handshakes that are associated with the account of the
@@ -901,6 +988,8 @@ Keyword-only arguments:
 
 Returns
 [ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef).
+
+<a id="list_handshakes_for_organization"></a>
 
 ### list_handshakes_for_organization
 
@@ -925,6 +1014,8 @@ Keyword-only arguments:
 Returns
 [ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef).
 
+<a id="list_organizational_units_for_parent"></a>
+
 ### list_organizational_units_for_parent
 
 Lists the organizational units (OUs) in a parent organizational unit or root.
@@ -946,6 +1037,8 @@ Keyword-only arguments:
 
 Returns
 [ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef).
+
+<a id="list_parents"></a>
 
 ### list_parents
 
@@ -969,6 +1062,8 @@ Keyword-only arguments:
 Returns
 [ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef).
 
+<a id="list_policies"></a>
+
 ### list_policies
 
 Retrieves the list of all policies in an organization of a specified type.
@@ -989,6 +1084,8 @@ Keyword-only arguments:
 
 Returns
 [ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+
+<a id="list_policies_for_target"></a>
 
 ### list_policies_for_target
 
@@ -1014,6 +1111,8 @@ Keyword-only arguments:
 Returns
 [ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef).
 
+<a id="list_roots"></a>
+
 ### list_roots
 
 Lists the roots that are defined in the current organization.
@@ -1032,6 +1131,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1053,6 +1154,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_targets_for_policy"></a>
 
 ### list_targets_for_policy
 
@@ -1077,6 +1180,8 @@ Keyword-only arguments:
 Returns
 [ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef).
 
+<a id="move_account"></a>
+
 ### move_account
 
 Moves an account from its current source parent root or organizational unit
@@ -1095,6 +1200,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `SourceParentId`: `str` *(required)*
 - `DestinationParentId`: `str` *(required)*
+
+<a id="register_delegated_administrator"></a>
 
 ### register_delegated_administrator
 
@@ -1115,6 +1222,8 @@ Keyword-only arguments:
 - `AccountId`: `str` *(required)*
 - `ServicePrincipal`: `str` *(required)*
 
+<a id="remove_account_from_organization"></a>
+
 ### remove_account_from_organization
 
 Removes the specified account from the organization.
@@ -1131,6 +1240,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1149,6 +1260,8 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes any tags with the specified keys from the specified resource.
@@ -1165,6 +1278,8 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_organizational_unit"></a>
 
 ### update_organizational_unit
 
@@ -1187,6 +1302,8 @@ Keyword-only arguments:
 Returns
 [UpdateOrganizationalUnitResponseTypeDef](./type_defs.md#updateorganizationalunitresponsetypedef).
 
+<a id="update_policy"></a>
+
 ### update_policy
 
 Updates an existing policy with a new name, description, or content.
@@ -1208,6 +1325,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePolicyResponseTypeDef](./type_defs.md#updatepolicyresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

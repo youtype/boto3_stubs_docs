@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-globalaccelerator-module"></a>
+
 # Literals for boto3 GlobalAccelerator module
 
 > [Index](..) > [GlobalAccelerator](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
-[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Literals for boto3 GlobalAccelerator module](#literals-for-boto3-globalaccelerator-module)
   - [AcceleratorStatusType](#acceleratorstatustype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="acceleratorstatustype"></a>
+
 ## AcceleratorStatusType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 
 - `DEPLOYED`
 - `IN_PROGRESS`
+
+<a id="byoipcidrstatetype"></a>
 
 ## ByoipCidrStateType
 
@@ -60,6 +66,8 @@ Values:
 - `PENDING_WITHDRAWING`
 - `READY`
 
+<a id="clientaffinitytype"></a>
+
 ## ClientAffinityType
 
 ```python
@@ -70,6 +78,8 @@ Values:
 
 - `NONE`
 - `SOURCE_IP`
+
+<a id="customroutingacceleratorstatustype"></a>
 
 ## CustomRoutingAcceleratorStatusType
 
@@ -82,6 +92,8 @@ Values:
 - `DEPLOYED`
 - `IN_PROGRESS`
 
+<a id="customroutingdestinationtrafficstatetype"></a>
+
 ## CustomRoutingDestinationTrafficStateType
 
 ```python
@@ -93,6 +105,8 @@ Values:
 - `ALLOW`
 - `DENY`
 
+<a id="customroutingprotocoltype"></a>
+
 ## CustomRoutingProtocolType
 
 ```python
@@ -103,6 +117,8 @@ Values:
 
 - `TCP`
 - `UDP`
+
+<a id="healthcheckprotocoltype"></a>
 
 ## HealthCheckProtocolType
 
@@ -116,6 +132,8 @@ Values:
 - `HTTPS`
 - `TCP`
 
+<a id="healthstatetype"></a>
+
 ## HealthStateType
 
 ```python
@@ -128,6 +146,8 @@ Values:
 - `INITIAL`
 - `UNHEALTHY`
 
+<a id="ipaddresstypetype"></a>
+
 ## IpAddressTypeType
 
 ```python
@@ -137,6 +157,8 @@ from mypy_boto3_globalaccelerator.literals import IpAddressTypeType
 Values:
 
 - `IPV4`
+
+<a id="listacceleratorspaginatorname"></a>
 
 ## ListAcceleratorsPaginatorName
 
@@ -148,6 +170,8 @@ Values:
 
 - `list_accelerators`
 
+<a id="listbyoipcidrspaginatorname"></a>
+
 ## ListByoipCidrsPaginatorName
 
 ```python
@@ -157,6 +181,8 @@ from mypy_boto3_globalaccelerator.literals import ListByoipCidrsPaginatorName
 Values:
 
 - `list_byoip_cidrs`
+
+<a id="listcustomroutingacceleratorspaginatorname"></a>
 
 ## ListCustomRoutingAcceleratorsPaginatorName
 
@@ -168,6 +194,8 @@ Values:
 
 - `list_custom_routing_accelerators`
 
+<a id="listcustomroutinglistenerspaginatorname"></a>
+
 ## ListCustomRoutingListenersPaginatorName
 
 ```python
@@ -177,6 +205,8 @@ from mypy_boto3_globalaccelerator.literals import ListCustomRoutingListenersPagi
 Values:
 
 - `list_custom_routing_listeners`
+
+<a id="listcustomroutingportmappingsbydestinationpaginatorname"></a>
 
 ## ListCustomRoutingPortMappingsByDestinationPaginatorName
 
@@ -188,6 +218,8 @@ Values:
 
 - `list_custom_routing_port_mappings_by_destination`
 
+<a id="listcustomroutingportmappingspaginatorname"></a>
+
 ## ListCustomRoutingPortMappingsPaginatorName
 
 ```python
@@ -197,6 +229,8 @@ from mypy_boto3_globalaccelerator.literals import ListCustomRoutingPortMappingsP
 Values:
 
 - `list_custom_routing_port_mappings`
+
+<a id="listendpointgroupspaginatorname"></a>
 
 ## ListEndpointGroupsPaginatorName
 
@@ -208,6 +242,8 @@ Values:
 
 - `list_endpoint_groups`
 
+<a id="listlistenerspaginatorname"></a>
+
 ## ListListenersPaginatorName
 
 ```python
@@ -217,6 +253,8 @@ from mypy_boto3_globalaccelerator.literals import ListListenersPaginatorName
 Values:
 
 - `list_listeners`
+
+<a id="protocoltype"></a>
 
 ## ProtocolType
 
@@ -228,6 +266,8 @@ Values:
 
 - `TCP`
 - `UDP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -536,6 +576,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-polly-module"></a>
+
 # Typed dictionaries for boto3 Polly module
 
 > [Index](..) > [Polly](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Polly](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/polly.html#Polly)
 type annotations stubs module
-[mypy_boto3_polly](https://pypi.org/project/mypy-boto3-polly/).
+[mypy-boto3-polly](https://pypi.org/project/mypy-boto3-polly/).
 
 - [Typed dictionaries for boto3 Polly module](#typed-dictionaries-for-boto3-polly-module)
   - [DeleteLexiconInputRequestTypeDef](#deletelexiconinputrequesttypedef)
@@ -32,6 +34,8 @@ type annotations stubs module
   - [SynthesizeSpeechOutputTypeDef](#synthesizespeechoutputtypedef)
   - [VoiceTypeDef](#voicetypedef)
 
+<a id="deletelexiconinputrequesttypedef"></a>
+
 ## DeleteLexiconInputRequestTypeDef
 
 ```python
@@ -41,6 +45,8 @@ from mypy_boto3_polly.type_defs import DeleteLexiconInputRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describevoicesinputrequesttypedef"></a>
 
 ## DescribeVoicesInputRequestTypeDef
 
@@ -55,6 +61,8 @@ Optional fields:
 - `IncludeAdditionalLanguageCodes`: `bool`
 - `NextToken`: `str`
 
+<a id="describevoicesoutputtypedef"></a>
+
 ## DescribeVoicesOutputTypeDef
 
 ```python
@@ -68,6 +76,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlexiconinputrequesttypedef"></a>
+
 ## GetLexiconInputRequestTypeDef
 
 ```python
@@ -77,6 +87,8 @@ from mypy_boto3_polly.type_defs import GetLexiconInputRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getlexiconoutputtypedef"></a>
 
 ## GetLexiconOutputTypeDef
 
@@ -92,6 +104,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getspeechsynthesistaskinputrequesttypedef"></a>
+
 ## GetSpeechSynthesisTaskInputRequestTypeDef
 
 ```python
@@ -101,6 +115,8 @@ from mypy_boto3_polly.type_defs import GetSpeechSynthesisTaskInputRequestTypeDef
 Required fields:
 
 - `TaskId`: `str`
+
+<a id="getspeechsynthesistaskoutputtypedef"></a>
 
 ## GetSpeechSynthesisTaskOutputTypeDef
 
@@ -113,6 +129,8 @@ Required fields:
 - `SynthesisTask`: [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="lexiconattributestypedef"></a>
 
 ## LexiconAttributesTypeDef
 
@@ -129,6 +147,8 @@ Optional fields:
 - `LexemesCount`: `int`
 - `Size`: `int`
 
+<a id="lexicondescriptiontypedef"></a>
+
 ## LexiconDescriptionTypeDef
 
 ```python
@@ -141,6 +161,8 @@ Optional fields:
 - `Attributes`:
   [LexiconAttributesTypeDef](./type_defs.md#lexiconattributestypedef)
 
+<a id="lexicontypedef"></a>
+
 ## LexiconTypeDef
 
 ```python
@@ -152,6 +174,8 @@ Optional fields:
 - `Content`: `str`
 - `Name`: `str`
 
+<a id="listlexiconsinputrequesttypedef"></a>
+
 ## ListLexiconsInputRequestTypeDef
 
 ```python
@@ -161,6 +185,8 @@ from mypy_boto3_polly.type_defs import ListLexiconsInputRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listlexiconsoutputtypedef"></a>
 
 ## ListLexiconsOutputTypeDef
 
@@ -176,6 +202,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listspeechsynthesistasksinputrequesttypedef"></a>
+
 ## ListSpeechSynthesisTasksInputRequestTypeDef
 
 ```python
@@ -187,6 +215,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Status`: [TaskStatusType](./literals.md#taskstatustype)
+
+<a id="listspeechsynthesistasksoutputtypedef"></a>
 
 ## ListSpeechSynthesisTasksOutputTypeDef
 
@@ -202,6 +232,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -214,6 +246,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putlexiconinputrequesttypedef"></a>
+
 ## PutLexiconInputRequestTypeDef
 
 ```python
@@ -224,6 +258,8 @@ Required fields:
 
 - `Name`: `str`
 - `Content`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -238,6 +274,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startspeechsynthesistaskinputrequesttypedef"></a>
 
 ## StartSpeechSynthesisTaskInputRequestTypeDef
 
@@ -264,6 +302,8 @@ Optional fields:
   `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
+<a id="startspeechsynthesistaskoutputtypedef"></a>
+
 ## StartSpeechSynthesisTaskOutputTypeDef
 
 ```python
@@ -275,6 +315,8 @@ Required fields:
 - `SynthesisTask`: [SynthesisTaskTypeDef](./type_defs.md#synthesistasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="synthesistasktypedef"></a>
 
 ## SynthesisTaskTypeDef
 
@@ -301,6 +343,8 @@ Optional fields:
 - `VoiceId`: [VoiceIdType](./literals.md#voiceidtype)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 
+<a id="synthesizespeechinputrequesttypedef"></a>
+
 ## SynthesizeSpeechInputRequestTypeDef
 
 ```python
@@ -323,6 +367,8 @@ Optional fields:
   `Sequence`\[[SpeechMarkTypeType](./literals.md#speechmarktypetype)\]
 - `TextType`: [TextTypeType](./literals.md#texttypetype)
 
+<a id="synthesizespeechoutputtypedef"></a>
+
 ## SynthesizeSpeechOutputTypeDef
 
 ```python
@@ -336,6 +382,8 @@ Required fields:
 - `RequestCharacters`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="voicetypedef"></a>
 
 ## VoiceTypeDef
 

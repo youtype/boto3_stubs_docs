@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kinesisvideoarchivedmedia-module"></a>
+
 # Typed dictionaries for boto3 KinesisVideoArchivedMedia module
 
 > [Index](..) > [KinesisVideoArchivedMedia](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
+[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 - [Typed dictionaries for boto3 KinesisVideoArchivedMedia module](#typed-dictionaries-for-boto3-kinesisvideoarchivedmedia-module)
   - [ClipFragmentSelectorTypeDef](#clipfragmentselectortypedef)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TimestampRangeTypeDef](#timestamprangetypedef)
 
+<a id="clipfragmentselectortypedef"></a>
+
 ## ClipFragmentSelectorTypeDef
 
 ```python
@@ -43,6 +47,8 @@ Required fields:
 - `TimestampRange`:
   [ClipTimestampRangeTypeDef](./type_defs.md#cliptimestamprangetypedef)
 
+<a id="cliptimestamprangetypedef"></a>
+
 ## ClipTimestampRangeTypeDef
 
 ```python
@@ -53,6 +59,8 @@ Required fields:
 
 - `StartTimestamp`: `Union`\[`datetime`, `str`\]
 - `EndTimestamp`: `Union`\[`datetime`, `str`\]
+
+<a id="dashfragmentselectortypedef"></a>
 
 ## DASHFragmentSelectorTypeDef
 
@@ -67,6 +75,8 @@ Optional fields:
 - `TimestampRange`:
   [DASHTimestampRangeTypeDef](./type_defs.md#dashtimestamprangetypedef)
 
+<a id="dashtimestamprangetypedef"></a>
+
 ## DASHTimestampRangeTypeDef
 
 ```python
@@ -77,6 +87,8 @@ Optional fields:
 
 - `StartTimestamp`: `Union`\[`datetime`, `str`\]
 - `EndTimestamp`: `Union`\[`datetime`, `str`\]
+
+<a id="fragmentselectortypedef"></a>
 
 ## FragmentSelectorTypeDef
 
@@ -91,6 +103,8 @@ Required fields:
 - `TimestampRange`:
   [TimestampRangeTypeDef](./type_defs.md#timestamprangetypedef)
 
+<a id="fragmenttypedef"></a>
+
 ## FragmentTypeDef
 
 ```python
@@ -104,6 +118,8 @@ Optional fields:
 - `ProducerTimestamp`: `datetime`
 - `ServerTimestamp`: `datetime`
 - `FragmentLengthInMilliseconds`: `int`
+
+<a id="getclipinputrequesttypedef"></a>
 
 ## GetClipInputRequestTypeDef
 
@@ -121,6 +137,8 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
+<a id="getclipoutputtypedef"></a>
+
 ## GetClipOutputTypeDef
 
 ```python
@@ -133,6 +151,8 @@ Required fields:
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdashstreamingsessionurlinputrequesttypedef"></a>
 
 ## GetDASHStreamingSessionURLInputRequestTypeDef
 
@@ -154,6 +174,8 @@ Optional fields:
 - `Expires`: `int`
 - `MaxManifestFragmentResults`: `int`
 
+<a id="getdashstreamingsessionurloutputtypedef"></a>
+
 ## GetDASHStreamingSessionURLOutputTypeDef
 
 ```python
@@ -165,6 +187,8 @@ Required fields:
 - `DASHStreamingSessionURL`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gethlsstreamingsessionurlinputrequesttypedef"></a>
 
 ## GetHLSStreamingSessionURLInputRequestTypeDef
 
@@ -187,6 +211,8 @@ Optional fields:
 - `Expires`: `int`
 - `MaxMediaPlaylistFragmentResults`: `int`
 
+<a id="gethlsstreamingsessionurloutputtypedef"></a>
+
 ## GetHLSStreamingSessionURLOutputTypeDef
 
 ```python
@@ -198,6 +224,8 @@ Required fields:
 - `HLSStreamingSessionURL`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmediaforfragmentlistinputrequesttypedef"></a>
 
 ## GetMediaForFragmentListInputRequestTypeDef
 
@@ -214,6 +242,8 @@ Optional fields:
 - `StreamName`: `str`
 - `StreamARN`: `str`
 
+<a id="getmediaforfragmentlistoutputtypedef"></a>
+
 ## GetMediaForFragmentListOutputTypeDef
 
 ```python
@@ -226,6 +256,8 @@ Required fields:
 - `Payload`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="hlsfragmentselectortypedef"></a>
 
 ## HLSFragmentSelectorTypeDef
 
@@ -240,6 +272,8 @@ Optional fields:
 - `TimestampRange`:
   [HLSTimestampRangeTypeDef](./type_defs.md#hlstimestamprangetypedef)
 
+<a id="hlstimestamprangetypedef"></a>
+
 ## HLSTimestampRangeTypeDef
 
 ```python
@@ -250,6 +284,8 @@ Optional fields:
 
 - `StartTimestamp`: `Union`\[`datetime`, `str`\]
 - `EndTimestamp`: `Union`\[`datetime`, `str`\]
+
+<a id="listfragmentsinputrequesttypedef"></a>
 
 ## ListFragmentsInputRequestTypeDef
 
@@ -266,6 +302,8 @@ Optional fields:
 - `FragmentSelector`:
   [FragmentSelectorTypeDef](./type_defs.md#fragmentselectortypedef)
 
+<a id="listfragmentsoutputtypedef"></a>
+
 ## ListFragmentsOutputTypeDef
 
 ```python
@@ -279,6 +317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -290,6 +330,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -304,6 +346,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="timestamprangetypedef"></a>
 
 ## TimestampRangeTypeDef
 

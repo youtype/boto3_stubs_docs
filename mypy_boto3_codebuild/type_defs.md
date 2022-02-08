@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codebuild-module"></a>
+
 # Typed dictionaries for boto3 CodeBuild module
 
 > [Index](..) > [CodeBuild](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
-[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [Typed dictionaries for boto3 CodeBuild module](#typed-dictionaries-for-boto3-codebuild-module)
   - [BatchDeleteBuildsInputRequestTypeDef](#batchdeletebuildsinputrequesttypedef)
@@ -146,6 +148,8 @@ type annotations stubs module
   - [WebhookFilterTypeDef](#webhookfiltertypedef)
   - [WebhookTypeDef](#webhooktypedef)
 
+<a id="batchdeletebuildsinputrequesttypedef"></a>
+
 ## BatchDeleteBuildsInputRequestTypeDef
 
 ```python
@@ -155,6 +159,8 @@ from mypy_boto3_codebuild.type_defs import BatchDeleteBuildsInputRequestTypeDef
 Required fields:
 
 - `ids`: `Sequence`\[`str`\]
+
+<a id="batchdeletebuildsoutputtypedef"></a>
 
 ## BatchDeleteBuildsOutputTypeDef
 
@@ -170,6 +176,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetbuildbatchesinputrequesttypedef"></a>
+
 ## BatchGetBuildBatchesInputRequestTypeDef
 
 ```python
@@ -179,6 +187,8 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildBatchesInputRequestTypeD
 Required fields:
 
 - `ids`: `Sequence`\[`str`\]
+
+<a id="batchgetbuildbatchesoutputtypedef"></a>
 
 ## BatchGetBuildBatchesOutputTypeDef
 
@@ -194,6 +204,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetbuildsinputrequesttypedef"></a>
+
 ## BatchGetBuildsInputRequestTypeDef
 
 ```python
@@ -203,6 +215,8 @@ from mypy_boto3_codebuild.type_defs import BatchGetBuildsInputRequestTypeDef
 Required fields:
 
 - `ids`: `Sequence`\[`str`\]
+
+<a id="batchgetbuildsoutputtypedef"></a>
 
 ## BatchGetBuildsOutputTypeDef
 
@@ -217,6 +231,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetprojectsinputrequesttypedef"></a>
+
 ## BatchGetProjectsInputRequestTypeDef
 
 ```python
@@ -226,6 +242,8 @@ from mypy_boto3_codebuild.type_defs import BatchGetProjectsInputRequestTypeDef
 Required fields:
 
 - `names`: `Sequence`\[`str`\]
+
+<a id="batchgetprojectsoutputtypedef"></a>
 
 ## BatchGetProjectsOutputTypeDef
 
@@ -240,6 +258,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetreportgroupsinputrequesttypedef"></a>
+
 ## BatchGetReportGroupsInputRequestTypeDef
 
 ```python
@@ -249,6 +269,8 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportGroupsInputRequestTypeD
 Required fields:
 
 - `reportGroupArns`: `Sequence`\[`str`\]
+
+<a id="batchgetreportgroupsoutputtypedef"></a>
 
 ## BatchGetReportGroupsOutputTypeDef
 
@@ -264,6 +286,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetreportsinputrequesttypedef"></a>
+
 ## BatchGetReportsInputRequestTypeDef
 
 ```python
@@ -273,6 +297,8 @@ from mypy_boto3_codebuild.type_defs import BatchGetReportsInputRequestTypeDef
 Required fields:
 
 - `reportArns`: `Sequence`\[`str`\]
+
+<a id="batchgetreportsoutputtypedef"></a>
 
 ## BatchGetReportsOutputTypeDef
 
@@ -287,6 +313,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchrestrictionstypedef"></a>
+
 ## BatchRestrictionsTypeDef
 
 ```python
@@ -297,6 +325,8 @@ Optional fields:
 
 - `maximumBuildsAllowed`: `int`
 - `computeTypesAllowed`: `List`\[`str`\]
+
+<a id="buildartifactstypedef"></a>
 
 ## BuildArtifactsTypeDef
 
@@ -315,6 +345,8 @@ Optional fields:
 - `bucketOwnerAccess`:
   [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
+<a id="buildbatchfiltertypedef"></a>
+
 ## BuildBatchFilterTypeDef
 
 ```python
@@ -324,6 +356,8 @@ from mypy_boto3_codebuild.type_defs import BuildBatchFilterTypeDef
 Optional fields:
 
 - `status`: [StatusTypeType](./literals.md#statustypetype)
+
+<a id="buildbatchphasetypedef"></a>
 
 ## BuildBatchPhaseTypeDef
 
@@ -340,6 +374,8 @@ Optional fields:
 - `durationInSeconds`: `int`
 - `contexts`:
   `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
+
+<a id="buildbatchtypedef"></a>
 
 ## BuildBatchTypeDef
 
@@ -388,6 +424,8 @@ Optional fields:
   `List`\[[BuildGroupTypeDef](./type_defs.md#buildgrouptypedef)\]
 - `debugSessionEnabled`: `bool`
 
+<a id="buildgrouptypedef"></a>
+
 ## BuildGroupTypeDef
 
 ```python
@@ -404,6 +442,8 @@ Optional fields:
 - `priorBuildSummaryList`:
   `List`\[[BuildSummaryTypeDef](./type_defs.md#buildsummarytypedef)\]
 
+<a id="buildnotdeletedtypedef"></a>
+
 ## BuildNotDeletedTypeDef
 
 ```python
@@ -414,6 +454,8 @@ Optional fields:
 
 - `id`: `str`
 - `statusCode`: `str`
+
+<a id="buildphasetypedef"></a>
 
 ## BuildPhaseTypeDef
 
@@ -431,6 +473,8 @@ Optional fields:
 - `contexts`:
   `List`\[[PhaseContextTypeDef](./type_defs.md#phasecontexttypedef)\]
 
+<a id="buildstatusconfigtypedef"></a>
+
 ## BuildStatusConfigTypeDef
 
 ```python
@@ -441,6 +485,8 @@ Optional fields:
 
 - `context`: `str`
 - `targetUrl`: `str`
+
+<a id="buildsummarytypedef"></a>
 
 ## BuildSummaryTypeDef
 
@@ -457,6 +503,8 @@ Optional fields:
   [ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)
 - `secondaryArtifacts`:
   `List`\[[ResolvedArtifactTypeDef](./type_defs.md#resolvedartifacttypedef)\]
+
+<a id="buildtypedef"></a>
 
 ## BuildTypeDef
 
@@ -506,6 +554,8 @@ Optional fields:
 - `debugSession`: [DebugSessionTypeDef](./type_defs.md#debugsessiontypedef)
 - `buildBatchArn`: `str`
 
+<a id="cloudwatchlogsconfigtypedef"></a>
+
 ## CloudWatchLogsConfigTypeDef
 
 ```python
@@ -521,6 +571,8 @@ Optional fields:
 - `groupName`: `str`
 - `streamName`: `str`
 
+<a id="codecoveragereportsummarytypedef"></a>
+
 ## CodeCoverageReportSummaryTypeDef
 
 ```python
@@ -535,6 +587,8 @@ Optional fields:
 - `branchCoveragePercentage`: `float`
 - `branchesCovered`: `int`
 - `branchesMissed`: `int`
+
+<a id="codecoveragetypedef"></a>
 
 ## CodeCoverageTypeDef
 
@@ -554,6 +608,8 @@ Optional fields:
 - `branchesCovered`: `int`
 - `branchesMissed`: `int`
 - `expired`: `datetime`
+
+<a id="createprojectinputrequesttypedef"></a>
 
 ## CreateProjectInputRequestTypeDef
 
@@ -595,6 +651,8 @@ Optional fields:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
+<a id="createprojectoutputtypedef"></a>
+
 ## CreateProjectOutputTypeDef
 
 ```python
@@ -606,6 +664,8 @@ Required fields:
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreportgroupinputrequesttypedef"></a>
 
 ## CreateReportGroupInputRequestTypeDef
 
@@ -624,6 +684,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createreportgroupoutputtypedef"></a>
+
 ## CreateReportGroupOutputTypeDef
 
 ```python
@@ -635,6 +697,8 @@ Required fields:
 - `reportGroup`: [ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwebhookinputrequesttypedef"></a>
 
 ## CreateWebhookInputRequestTypeDef
 
@@ -653,6 +717,8 @@ Optional fields:
   `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
+<a id="createwebhookoutputtypedef"></a>
+
 ## CreateWebhookOutputTypeDef
 
 ```python
@@ -665,6 +731,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="debugsessiontypedef"></a>
+
 ## DebugSessionTypeDef
 
 ```python
@@ -676,6 +744,8 @@ Optional fields:
 - `sessionEnabled`: `bool`
 - `sessionTarget`: `str`
 
+<a id="deletebuildbatchinputrequesttypedef"></a>
+
 ## DeleteBuildBatchInputRequestTypeDef
 
 ```python
@@ -685,6 +755,8 @@ from mypy_boto3_codebuild.type_defs import DeleteBuildBatchInputRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="deletebuildbatchoutputtypedef"></a>
 
 ## DeleteBuildBatchOutputTypeDef
 
@@ -701,6 +773,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectinputrequesttypedef"></a>
+
 ## DeleteProjectInputRequestTypeDef
 
 ```python
@@ -710,6 +784,8 @@ from mypy_boto3_codebuild.type_defs import DeleteProjectInputRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="deletereportgroupinputrequesttypedef"></a>
 
 ## DeleteReportGroupInputRequestTypeDef
 
@@ -725,6 +801,8 @@ Optional fields:
 
 - `deleteReports`: `bool`
 
+<a id="deletereportinputrequesttypedef"></a>
+
 ## DeleteReportInputRequestTypeDef
 
 ```python
@@ -734,6 +812,8 @@ from mypy_boto3_codebuild.type_defs import DeleteReportInputRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleteresourcepolicyinputrequesttypedef"></a>
 
 ## DeleteResourcePolicyInputRequestTypeDef
 
@@ -745,6 +825,8 @@ Required fields:
 
 - `resourceArn`: `str`
 
+<a id="deletesourcecredentialsinputrequesttypedef"></a>
+
 ## DeleteSourceCredentialsInputRequestTypeDef
 
 ```python
@@ -754,6 +836,8 @@ from mypy_boto3_codebuild.type_defs import DeleteSourceCredentialsInputRequestTy
 Required fields:
 
 - `arn`: `str`
+
+<a id="deletesourcecredentialsoutputtypedef"></a>
 
 ## DeleteSourceCredentialsOutputTypeDef
 
@@ -767,6 +851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletewebhookinputrequesttypedef"></a>
+
 ## DeleteWebhookInputRequestTypeDef
 
 ```python
@@ -776,6 +862,8 @@ from mypy_boto3_codebuild.type_defs import DeleteWebhookInputRequestTypeDef
 Required fields:
 
 - `projectName`: `str`
+
+<a id="describecodecoveragesinputrequesttypedef"></a>
 
 ## DescribeCodeCoveragesInputRequestTypeDef
 
@@ -797,6 +885,8 @@ Optional fields:
 - `minLineCoveragePercentage`: `float`
 - `maxLineCoveragePercentage`: `float`
 
+<a id="describecodecoveragesoutputtypedef"></a>
+
 ## DescribeCodeCoveragesOutputTypeDef
 
 ```python
@@ -810,6 +900,8 @@ Required fields:
   `List`\[[CodeCoverageTypeDef](./type_defs.md#codecoveragetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetestcasesinputrequesttypedef"></a>
 
 ## DescribeTestCasesInputRequestTypeDef
 
@@ -827,6 +919,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filter`: [TestCaseFilterTypeDef](./type_defs.md#testcasefiltertypedef)
 
+<a id="describetestcasesoutputtypedef"></a>
+
 ## DescribeTestCasesOutputTypeDef
 
 ```python
@@ -840,6 +934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="environmentimagetypedef"></a>
+
 ## EnvironmentImageTypeDef
 
 ```python
@@ -851,6 +947,8 @@ Optional fields:
 - `name`: `str`
 - `description`: `str`
 - `versions`: `List`\[`str`\]
+
+<a id="environmentlanguagetypedef"></a>
 
 ## EnvironmentLanguageTypeDef
 
@@ -864,6 +962,8 @@ Optional fields:
 - `images`:
   `List`\[[EnvironmentImageTypeDef](./type_defs.md#environmentimagetypedef)\]
 
+<a id="environmentplatformtypedef"></a>
+
 ## EnvironmentPlatformTypeDef
 
 ```python
@@ -875,6 +975,8 @@ Optional fields:
 - `platform`: [PlatformTypeType](./literals.md#platformtypetype)
 - `languages`:
   `List`\[[EnvironmentLanguageTypeDef](./type_defs.md#environmentlanguagetypedef)\]
+
+<a id="environmentvariabletypedef"></a>
 
 ## EnvironmentVariableTypeDef
 
@@ -892,6 +994,8 @@ Optional fields:
 - `type`:
   [EnvironmentVariableTypeType](./literals.md#environmentvariabletypetype)
 
+<a id="exportedenvironmentvariabletypedef"></a>
+
 ## ExportedEnvironmentVariableTypeDef
 
 ```python
@@ -902,6 +1006,8 @@ Optional fields:
 
 - `name`: `str`
 - `value`: `str`
+
+<a id="getreportgrouptrendinputrequesttypedef"></a>
 
 ## GetReportGroupTrendInputRequestTypeDef
 
@@ -919,6 +1025,8 @@ Optional fields:
 
 - `numOfReports`: `int`
 
+<a id="getreportgrouptrendoutputtypedef"></a>
+
 ## GetReportGroupTrendOutputTypeDef
 
 ```python
@@ -934,6 +1042,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcepolicyinputrequesttypedef"></a>
+
 ## GetResourcePolicyInputRequestTypeDef
 
 ```python
@@ -943,6 +1053,8 @@ from mypy_boto3_codebuild.type_defs import GetResourcePolicyInputRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="getresourcepolicyoutputtypedef"></a>
 
 ## GetResourcePolicyOutputTypeDef
 
@@ -956,6 +1068,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gitsubmodulesconfigtypedef"></a>
+
 ## GitSubmodulesConfigTypeDef
 
 ```python
@@ -965,6 +1079,8 @@ from mypy_boto3_codebuild.type_defs import GitSubmodulesConfigTypeDef
 Required fields:
 
 - `fetchSubmodules`: `bool`
+
+<a id="importsourcecredentialsinputrequesttypedef"></a>
 
 ## ImportSourceCredentialsInputRequestTypeDef
 
@@ -983,6 +1099,8 @@ Optional fields:
 - `username`: `str`
 - `shouldOverwrite`: `bool`
 
+<a id="importsourcecredentialsoutputtypedef"></a>
+
 ## ImportSourceCredentialsOutputTypeDef
 
 ```python
@@ -995,6 +1113,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="invalidateprojectcacheinputrequesttypedef"></a>
+
 ## InvalidateProjectCacheInputRequestTypeDef
 
 ```python
@@ -1004,6 +1124,8 @@ from mypy_boto3_codebuild.type_defs import InvalidateProjectCacheInputRequestTyp
 Required fields:
 
 - `projectName`: `str`
+
+<a id="listbuildbatchesforprojectinputrequesttypedef"></a>
 
 ## ListBuildBatchesForProjectInputRequestTypeDef
 
@@ -1019,6 +1141,8 @@ Optional fields:
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
 
+<a id="listbuildbatchesforprojectoutputtypedef"></a>
+
 ## ListBuildBatchesForProjectOutputTypeDef
 
 ```python
@@ -1031,6 +1155,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbuildbatchesinputrequesttypedef"></a>
 
 ## ListBuildBatchesInputRequestTypeDef
 
@@ -1045,6 +1171,8 @@ Optional fields:
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
 
+<a id="listbuildbatchesoutputtypedef"></a>
+
 ## ListBuildBatchesOutputTypeDef
 
 ```python
@@ -1057,6 +1185,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbuildsforprojectinputrequesttypedef"></a>
 
 ## ListBuildsForProjectInputRequestTypeDef
 
@@ -1073,6 +1203,8 @@ Optional fields:
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
 
+<a id="listbuildsforprojectoutputtypedef"></a>
+
 ## ListBuildsForProjectOutputTypeDef
 
 ```python
@@ -1086,6 +1218,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbuildsinputrequesttypedef"></a>
+
 ## ListBuildsInputRequestTypeDef
 
 ```python
@@ -1096,6 +1230,8 @@ Optional fields:
 
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
+
+<a id="listbuildsoutputtypedef"></a>
 
 ## ListBuildsOutputTypeDef
 
@@ -1110,6 +1246,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcuratedenvironmentimagesoutputtypedef"></a>
+
 ## ListCuratedEnvironmentImagesOutputTypeDef
 
 ```python
@@ -1123,6 +1261,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsinputrequesttypedef"></a>
+
 ## ListProjectsInputRequestTypeDef
 
 ```python
@@ -1134,6 +1274,8 @@ Optional fields:
 - `sortBy`: [ProjectSortByTypeType](./literals.md#projectsortbytypetype)
 - `sortOrder`: [SortOrderTypeType](./literals.md#sortordertypetype)
 - `nextToken`: `str`
+
+<a id="listprojectsoutputtypedef"></a>
 
 ## ListProjectsOutputTypeDef
 
@@ -1147,6 +1289,8 @@ Required fields:
 - `projects`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreportgroupsinputrequesttypedef"></a>
 
 ## ListReportGroupsInputRequestTypeDef
 
@@ -1162,6 +1306,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listreportgroupsoutputtypedef"></a>
+
 ## ListReportGroupsOutputTypeDef
 
 ```python
@@ -1174,6 +1320,8 @@ Required fields:
 - `reportGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreportsforreportgroupinputrequesttypedef"></a>
 
 ## ListReportsForReportGroupInputRequestTypeDef
 
@@ -1192,6 +1340,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
+<a id="listreportsforreportgroupoutputtypedef"></a>
+
 ## ListReportsForReportGroupOutputTypeDef
 
 ```python
@@ -1204,6 +1354,8 @@ Required fields:
 - `reports`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreportsinputrequesttypedef"></a>
 
 ## ListReportsInputRequestTypeDef
 
@@ -1218,6 +1370,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
+<a id="listreportsoutputtypedef"></a>
+
 ## ListReportsOutputTypeDef
 
 ```python
@@ -1230,6 +1384,8 @@ Required fields:
 - `reports`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsharedprojectsinputrequesttypedef"></a>
 
 ## ListSharedProjectsInputRequestTypeDef
 
@@ -1245,6 +1401,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listsharedprojectsoutputtypedef"></a>
+
 ## ListSharedProjectsOutputTypeDef
 
 ```python
@@ -1257,6 +1415,8 @@ Required fields:
 - `projects`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsharedreportgroupsinputrequesttypedef"></a>
 
 ## ListSharedReportGroupsInputRequestTypeDef
 
@@ -1272,6 +1432,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listsharedreportgroupsoutputtypedef"></a>
+
 ## ListSharedReportGroupsOutputTypeDef
 
 ```python
@@ -1284,6 +1446,8 @@ Required fields:
 - `reportGroups`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsourcecredentialsoutputtypedef"></a>
 
 ## ListSourceCredentialsOutputTypeDef
 
@@ -1298,6 +1462,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logsconfigtypedef"></a>
+
 ## LogsConfigTypeDef
 
 ```python
@@ -1309,6 +1475,8 @@ Optional fields:
 - `cloudWatchLogs`:
   [CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef)
 - `s3Logs`: [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)
+
+<a id="logslocationtypedef"></a>
 
 ## LogsLocationTypeDef
 
@@ -1328,6 +1496,8 @@ Optional fields:
   [CloudWatchLogsConfigTypeDef](./type_defs.md#cloudwatchlogsconfigtypedef)
 - `s3Logs`: [S3LogsConfigTypeDef](./type_defs.md#s3logsconfigtypedef)
 
+<a id="networkinterfacetypedef"></a>
+
 ## NetworkInterfaceTypeDef
 
 ```python
@@ -1338,6 +1508,8 @@ Optional fields:
 
 - `subnetId`: `str`
 - `networkInterfaceId`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1351,6 +1523,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="phasecontexttypedef"></a>
+
 ## PhaseContextTypeDef
 
 ```python
@@ -1361,6 +1535,8 @@ Optional fields:
 
 - `statusCode`: `str`
 - `message`: `str`
+
+<a id="projectartifactstypedef"></a>
 
 ## ProjectArtifactsTypeDef
 
@@ -1385,6 +1561,8 @@ Optional fields:
 - `bucketOwnerAccess`:
   [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
+<a id="projectbadgetypedef"></a>
+
 ## ProjectBadgeTypeDef
 
 ```python
@@ -1395,6 +1573,8 @@ Optional fields:
 
 - `badgeEnabled`: `bool`
 - `badgeRequestUrl`: `str`
+
+<a id="projectbuildbatchconfigtypedef"></a>
 
 ## ProjectBuildBatchConfigTypeDef
 
@@ -1412,6 +1592,8 @@ Optional fields:
 - `batchReportMode`:
   [BatchReportModeTypeType](./literals.md#batchreportmodetypetype)
 
+<a id="projectcachetypedef"></a>
+
 ## ProjectCacheTypeDef
 
 ```python
@@ -1426,6 +1608,8 @@ Optional fields:
 
 - `location`: `str`
 - `modes`: `List`\[[CacheModeType](./literals.md#cachemodetype)\]
+
+<a id="projectenvironmenttypedef"></a>
 
 ## ProjectEnvironmentTypeDef
 
@@ -1450,6 +1634,8 @@ Optional fields:
 - `imagePullCredentialsType`:
   [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
 
+<a id="projectfilesystemlocationtypedef"></a>
+
 ## ProjectFileSystemLocationTypeDef
 
 ```python
@@ -1464,6 +1650,8 @@ Optional fields:
 - `mountPoint`: `str`
 - `identifier`: `str`
 - `mountOptions`: `str`
+
+<a id="projectsourcetypedef"></a>
 
 ## ProjectSourceTypeDef
 
@@ -1489,6 +1677,8 @@ Optional fields:
 - `insecureSsl`: `bool`
 - `sourceIdentifier`: `str`
 
+<a id="projectsourceversiontypedef"></a>
+
 ## ProjectSourceVersionTypeDef
 
 ```python
@@ -1499,6 +1689,8 @@ Required fields:
 
 - `sourceIdentifier`: `str`
 - `sourceVersion`: `str`
+
+<a id="projecttypedef"></a>
 
 ## ProjectTypeDef
 
@@ -1545,6 +1737,8 @@ Optional fields:
 - `publicProjectAlias`: `str`
 - `resourceAccessRole`: `str`
 
+<a id="putresourcepolicyinputrequesttypedef"></a>
+
 ## PutResourcePolicyInputRequestTypeDef
 
 ```python
@@ -1555,6 +1749,8 @@ Required fields:
 
 - `policy`: `str`
 - `resourceArn`: `str`
+
+<a id="putresourcepolicyoutputtypedef"></a>
 
 ## PutResourcePolicyOutputTypeDef
 
@@ -1568,6 +1764,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registrycredentialtypedef"></a>
+
 ## RegistryCredentialTypeDef
 
 ```python
@@ -1579,6 +1777,8 @@ Required fields:
 - `credential`: `str`
 - `credentialProvider`: `Literal['SECRETS_MANAGER']` (see
   [CredentialProviderTypeType](./literals.md#credentialprovidertypetype))
+
+<a id="reportexportconfigtypedef"></a>
 
 ## ReportExportConfigTypeDef
 
@@ -1593,6 +1793,8 @@ Optional fields:
 - `s3Destination`:
   [S3ReportExportConfigTypeDef](./type_defs.md#s3reportexportconfigtypedef)
 
+<a id="reportfiltertypedef"></a>
+
 ## ReportFilterTypeDef
 
 ```python
@@ -1602,6 +1804,8 @@ from mypy_boto3_codebuild.type_defs import ReportFilterTypeDef
 Optional fields:
 
 - `status`: [ReportStatusTypeType](./literals.md#reportstatustypetype)
+
+<a id="reportgrouptrendstatstypedef"></a>
 
 ## ReportGroupTrendStatsTypeDef
 
@@ -1614,6 +1818,8 @@ Optional fields:
 - `average`: `str`
 - `max`: `str`
 - `min`: `str`
+
+<a id="reportgrouptypedef"></a>
 
 ## ReportGroupTypeDef
 
@@ -1633,6 +1839,8 @@ Optional fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `status`:
   [ReportGroupStatusTypeType](./literals.md#reportgroupstatustypetype)
+
+<a id="reporttypedef"></a>
 
 ## ReportTypeDef
 
@@ -1658,6 +1866,8 @@ Optional fields:
 - `codeCoverageSummary`:
   [CodeCoverageReportSummaryTypeDef](./type_defs.md#codecoveragereportsummarytypedef)
 
+<a id="reportwithrawdatatypedef"></a>
+
 ## ReportWithRawDataTypeDef
 
 ```python
@@ -1668,6 +1878,8 @@ Optional fields:
 
 - `reportArn`: `str`
 - `data`: `str`
+
+<a id="resolvedartifacttypedef"></a>
 
 ## ResolvedArtifactTypeDef
 
@@ -1680,6 +1892,8 @@ Optional fields:
 - `type`: [ArtifactsTypeType](./literals.md#artifactstypetype)
 - `location`: `str`
 - `identifier`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1695,6 +1909,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retrybuildbatchinputrequesttypedef"></a>
+
 ## RetryBuildBatchInputRequestTypeDef
 
 ```python
@@ -1706,6 +1922,8 @@ Optional fields:
 - `id`: `str`
 - `idempotencyToken`: `str`
 - `retryType`: [RetryBuildBatchTypeType](./literals.md#retrybuildbatchtypetype)
+
+<a id="retrybuildbatchoutputtypedef"></a>
 
 ## RetryBuildBatchOutputTypeDef
 
@@ -1719,6 +1937,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="retrybuildinputrequesttypedef"></a>
+
 ## RetryBuildInputRequestTypeDef
 
 ```python
@@ -1729,6 +1949,8 @@ Optional fields:
 
 - `id`: `str`
 - `idempotencyToken`: `str`
+
+<a id="retrybuildoutputtypedef"></a>
 
 ## RetryBuildOutputTypeDef
 
@@ -1741,6 +1963,8 @@ Required fields:
 - `build`: [BuildTypeDef](./type_defs.md#buildtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="s3logsconfigtypedef"></a>
 
 ## S3LogsConfigTypeDef
 
@@ -1759,6 +1983,8 @@ Optional fields:
 - `bucketOwnerAccess`:
   [BucketOwnerAccessType](./literals.md#bucketowneraccesstype)
 
+<a id="s3reportexportconfigtypedef"></a>
+
 ## S3ReportExportConfigTypeDef
 
 ```python
@@ -1773,6 +1999,8 @@ Optional fields:
 - `packaging`: [ReportPackagingTypeType](./literals.md#reportpackagingtypetype)
 - `encryptionKey`: `str`
 - `encryptionDisabled`: `bool`
+
+<a id="sourceauthtypedef"></a>
 
 ## SourceAuthTypeDef
 
@@ -1789,6 +2017,8 @@ Optional fields:
 
 - `resource`: `str`
 
+<a id="sourcecredentialsinfotypedef"></a>
+
 ## SourceCredentialsInfoTypeDef
 
 ```python
@@ -1800,6 +2030,8 @@ Optional fields:
 - `arn`: `str`
 - `serverType`: [ServerTypeType](./literals.md#servertypetype)
 - `authType`: [AuthTypeType](./literals.md#authtypetype)
+
+<a id="startbuildbatchinputrequesttypedef"></a>
 
 ## StartBuildBatchInputRequestTypeDef
 
@@ -1854,6 +2086,8 @@ Optional fields:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `debugSessionEnabled`: `bool`
 
+<a id="startbuildbatchoutputtypedef"></a>
+
 ## StartBuildBatchOutputTypeDef
 
 ```python
@@ -1865,6 +2099,8 @@ Required fields:
 - `buildBatch`: [BuildBatchTypeDef](./type_defs.md#buildbatchtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startbuildinputrequesttypedef"></a>
 
 ## StartBuildInputRequestTypeDef
 
@@ -1919,6 +2155,8 @@ Optional fields:
   [ImagePullCredentialsTypeType](./literals.md#imagepullcredentialstypetype)
 - `debugSessionEnabled`: `bool`
 
+<a id="startbuildoutputtypedef"></a>
+
 ## StartBuildOutputTypeDef
 
 ```python
@@ -1931,6 +2169,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopbuildbatchinputrequesttypedef"></a>
+
 ## StopBuildBatchInputRequestTypeDef
 
 ```python
@@ -1940,6 +2180,8 @@ from mypy_boto3_codebuild.type_defs import StopBuildBatchInputRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="stopbuildbatchoutputtypedef"></a>
 
 ## StopBuildBatchOutputTypeDef
 
@@ -1953,6 +2195,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopbuildinputrequesttypedef"></a>
+
 ## StopBuildInputRequestTypeDef
 
 ```python
@@ -1962,6 +2206,8 @@ from mypy_boto3_codebuild.type_defs import StopBuildInputRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="stopbuildoutputtypedef"></a>
 
 ## StopBuildOutputTypeDef
 
@@ -1975,6 +2221,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1986,6 +2234,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="testcasefiltertypedef"></a>
+
 ## TestCaseFilterTypeDef
 
 ```python
@@ -1996,6 +2246,8 @@ Optional fields:
 
 - `status`: `str`
 - `keyword`: `str`
+
+<a id="testcasetypedef"></a>
 
 ## TestCaseTypeDef
 
@@ -2014,6 +2266,8 @@ Optional fields:
 - `message`: `str`
 - `expired`: `datetime`
 
+<a id="testreportsummarytypedef"></a>
+
 ## TestReportSummaryTypeDef
 
 ```python
@@ -2025,6 +2279,8 @@ Required fields:
 - `total`: `int`
 - `statusCounts`: `Dict`\[`str`, `int`\]
 - `durationInNanoSeconds`: `int`
+
+<a id="updateprojectinputrequesttypedef"></a>
 
 ## UpdateProjectInputRequestTypeDef
 
@@ -2066,6 +2322,8 @@ Optional fields:
   [ProjectBuildBatchConfigTypeDef](./type_defs.md#projectbuildbatchconfigtypedef)
 - `concurrentBuildLimit`: `int`
 
+<a id="updateprojectoutputtypedef"></a>
+
 ## UpdateProjectOutputTypeDef
 
 ```python
@@ -2077,6 +2335,8 @@ Required fields:
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectvisibilityinputrequesttypedef"></a>
 
 ## UpdateProjectVisibilityInputRequestTypeDef
 
@@ -2094,6 +2354,8 @@ Optional fields:
 
 - `resourceAccessRole`: `str`
 
+<a id="updateprojectvisibilityoutputtypedef"></a>
+
 ## UpdateProjectVisibilityOutputTypeDef
 
 ```python
@@ -2108,6 +2370,8 @@ Required fields:
   [ProjectVisibilityTypeType](./literals.md#projectvisibilitytypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatereportgroupinputrequesttypedef"></a>
 
 ## UpdateReportGroupInputRequestTypeDef
 
@@ -2125,6 +2389,8 @@ Optional fields:
   [ReportExportConfigTypeDef](./type_defs.md#reportexportconfigtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="updatereportgroupoutputtypedef"></a>
+
 ## UpdateReportGroupOutputTypeDef
 
 ```python
@@ -2136,6 +2402,8 @@ Required fields:
 - `reportGroup`: [ReportGroupTypeDef](./type_defs.md#reportgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatewebhookinputrequesttypedef"></a>
 
 ## UpdateWebhookInputRequestTypeDef
 
@@ -2155,6 +2423,8 @@ Optional fields:
   `Sequence`\[`Sequence`\[[WebhookFilterTypeDef](./type_defs.md#webhookfiltertypedef)\]\]
 - `buildType`: [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 
+<a id="updatewebhookoutputtypedef"></a>
+
 ## UpdateWebhookOutputTypeDef
 
 ```python
@@ -2167,6 +2437,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="vpcconfigtypedef"></a>
+
 ## VpcConfigTypeDef
 
 ```python
@@ -2178,6 +2450,8 @@ Optional fields:
 - `vpcId`: `str`
 - `subnets`: `List`\[`str`\]
 - `securityGroupIds`: `List`\[`str`\]
+
+<a id="webhookfiltertypedef"></a>
 
 ## WebhookFilterTypeDef
 
@@ -2193,6 +2467,8 @@ Required fields:
 Optional fields:
 
 - `excludeMatchedPattern`: `bool`
+
+<a id="webhooktypedef"></a>
 
 ## WebhookTypeDef
 

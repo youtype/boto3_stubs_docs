@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-machinelearning-module"></a>
+
 # Literals for boto3 MachineLearning module
 
 > [Index](..) > [MachineLearning](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
-[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [Literals for boto3 MachineLearning module](#literals-for-boto3-machinelearning-module)
   - [AlgorithmType](#algorithmtype)
@@ -31,6 +33,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="algorithmtype"></a>
+
 ## AlgorithmType
 
 ```python
@@ -41,6 +45,8 @@ Values:
 
 - `sgd`
 
+<a id="batchpredictionavailablewaitername"></a>
+
 ## BatchPredictionAvailableWaiterName
 
 ```python
@@ -50,6 +56,8 @@ from mypy_boto3_machinelearning.literals import BatchPredictionAvailableWaiterNa
 Values:
 
 - `batch_prediction_available`
+
+<a id="batchpredictionfiltervariabletype"></a>
 
 ## BatchPredictionFilterVariableType
 
@@ -68,6 +76,8 @@ Values:
 - `Name`
 - `Status`
 
+<a id="datasourceavailablewaitername"></a>
+
 ## DataSourceAvailableWaiterName
 
 ```python
@@ -77,6 +87,8 @@ from mypy_boto3_machinelearning.literals import DataSourceAvailableWaiterName
 Values:
 
 - `data_source_available`
+
+<a id="datasourcefiltervariabletype"></a>
 
 ## DataSourceFilterVariableType
 
@@ -93,6 +105,8 @@ Values:
 - `Name`
 - `Status`
 
+<a id="describebatchpredictionspaginatorname"></a>
+
 ## DescribeBatchPredictionsPaginatorName
 
 ```python
@@ -102,6 +116,8 @@ from mypy_boto3_machinelearning.literals import DescribeBatchPredictionsPaginato
 Values:
 
 - `describe_batch_predictions`
+
+<a id="describedatasourcespaginatorname"></a>
 
 ## DescribeDataSourcesPaginatorName
 
@@ -113,6 +129,8 @@ Values:
 
 - `describe_data_sources`
 
+<a id="describeevaluationspaginatorname"></a>
+
 ## DescribeEvaluationsPaginatorName
 
 ```python
@@ -122,6 +140,8 @@ from mypy_boto3_machinelearning.literals import DescribeEvaluationsPaginatorName
 Values:
 
 - `describe_evaluations`
+
+<a id="describemlmodelspaginatorname"></a>
 
 ## DescribeMLModelsPaginatorName
 
@@ -133,6 +153,8 @@ Values:
 
 - `describe_ml_models`
 
+<a id="detailsattributestype"></a>
+
 ## DetailsAttributesType
 
 ```python
@@ -143,6 +165,8 @@ Values:
 
 - `Algorithm`
 - `PredictiveModelType`
+
+<a id="entitystatustype"></a>
 
 ## EntityStatusType
 
@@ -158,6 +182,8 @@ Values:
 - `INPROGRESS`
 - `PENDING`
 
+<a id="evaluationavailablewaitername"></a>
+
 ## EvaluationAvailableWaiterName
 
 ```python
@@ -167,6 +193,8 @@ from mypy_boto3_machinelearning.literals import EvaluationAvailableWaiterName
 Values:
 
 - `evaluation_available`
+
+<a id="evaluationfiltervariabletype"></a>
 
 ## EvaluationFilterVariableType
 
@@ -185,6 +213,8 @@ Values:
 - `Name`
 - `Status`
 
+<a id="mlmodelavailablewaitername"></a>
+
 ## MLModelAvailableWaiterName
 
 ```python
@@ -194,6 +224,8 @@ from mypy_boto3_machinelearning.literals import MLModelAvailableWaiterName
 Values:
 
 - `ml_model_available`
+
+<a id="mlmodelfiltervariabletype"></a>
 
 ## MLModelFilterVariableType
 
@@ -214,6 +246,8 @@ Values:
 - `TrainingDataSourceId`
 - `TrainingDataURI`
 
+<a id="mlmodeltypetype"></a>
+
 ## MLModelTypeType
 
 ```python
@@ -225,6 +259,8 @@ Values:
 - `BINARY`
 - `MULTICLASS`
 - `REGRESSION`
+
+<a id="realtimeendpointstatustype"></a>
 
 ## RealtimeEndpointStatusType
 
@@ -239,6 +275,8 @@ Values:
 - `READY`
 - `UPDATING`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -249,6 +287,8 @@ Values:
 
 - `asc`
 - `dsc`
+
+<a id="taggableresourcetypetype"></a>
 
 ## TaggableResourceTypeType
 
@@ -262,6 +302,8 @@ Values:
 - `DataSource`
 - `Evaluation`
 - `MLModel`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -571,6 +613,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -583,6 +627,8 @@ Values:
 - `describe_data_sources`
 - `describe_evaluations`
 - `describe_ml_models`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

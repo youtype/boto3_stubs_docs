@@ -1,3 +1,5 @@
+<a id="fmsclient-for-boto3-fms-module"></a>
+
 # FMSClient for boto3 FMS module
 
 > [Index](..) > [FMS](.) > FMSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
 type annotations stubs module
-[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 - [FMSClient for boto3 FMS module](#fmsclient-for-boto3-fms-module)
   - [FMSClient](#fmsclient)
@@ -42,6 +44,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="fmsclient"></a>
+
 ## FMSClient
 
 Type annotations for `boto3.client("fms")`
@@ -49,14 +53,17 @@ Type annotations for `boto3.client("fms")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_fms.client import FMSClient
 
 def get_fms_client() -> FMSClient:
-    return boto3.client("fms")
+    return Session().client("fms")
 ```
 
 Boto3 documentation:
 [FMS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -80,7 +87,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -92,6 +103,8 @@ Boto3 documentation:
 [FMS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_admin_account"></a>
 
 ### associate_admin_account
 
@@ -109,6 +122,8 @@ Keyword-only arguments:
 
 - `AdminAccount`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -123,6 +138,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_apps_list"></a>
 
 ### delete_apps_list
 
@@ -140,6 +157,8 @@ Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 
+<a id="delete_notification_channel"></a>
+
 ### delete_notification_channel
 
 Deletes an Firewall Manager association with the IAM role and the Amazon Simple
@@ -150,6 +169,8 @@ Type annotations for `boto3.client("fms").delete_notification_channel` method.
 
 Boto3 documentation:
 [FMS.Client.delete_notification_channel](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.delete_notification_channel)
+
+<a id="delete_policy"></a>
 
 ### delete_policy
 
@@ -168,6 +189,8 @@ Keyword-only arguments:
 - `PolicyId`: `str` *(required)*
 - `DeleteAllPolicyResources`: `bool`
 
+<a id="delete_protocols_list"></a>
+
 ### delete_protocols_list
 
 Permanently deletes an Firewall Manager protocols list.
@@ -184,6 +207,8 @@ Keyword-only arguments:
 
 - `ListId`: `str` *(required)*
 
+<a id="disassociate_admin_account"></a>
+
 ### disassociate_admin_account
 
 Disassociates the account that has been set as the Firewall Manager
@@ -193,6 +218,8 @@ Type annotations for `boto3.client("fms").disassociate_admin_account` method.
 
 Boto3 documentation:
 [FMS.Client.disassociate_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS.Client.disassociate_admin_account)
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -212,6 +239,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_admin_account"></a>
+
 ### get_admin_account
 
 Returns the Organizations account that is associated with Firewall Manager as
@@ -224,6 +253,8 @@ Boto3 documentation:
 
 Returns
 [GetAdminAccountResponseTypeDef](./type_defs.md#getadminaccountresponsetypedef).
+
+<a id="get_apps_list"></a>
 
 ### get_apps_list
 
@@ -245,6 +276,8 @@ Keyword-only arguments:
 Returns
 [GetAppsListResponseTypeDef](./type_defs.md#getappslistresponsetypedef).
 
+<a id="get_compliance_detail"></a>
+
 ### get_compliance_detail
 
 Returns detailed compliance information about the specified member account.
@@ -265,6 +298,8 @@ Keyword-only arguments:
 Returns
 [GetComplianceDetailResponseTypeDef](./type_defs.md#getcompliancedetailresponsetypedef).
 
+<a id="get_notification_channel"></a>
+
 ### get_notification_channel
 
 Information about the Amazon Simple Notification Service (SNS) topic that is
@@ -277,6 +312,8 @@ Boto3 documentation:
 
 Returns
 [GetNotificationChannelResponseTypeDef](./type_defs.md#getnotificationchannelresponsetypedef).
+
+<a id="get_policy"></a>
 
 ### get_policy
 
@@ -295,6 +332,8 @@ Keyword-only arguments:
 - `PolicyId`: `str` *(required)*
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="get_protection_status"></a>
 
 ### get_protection_status
 
@@ -321,6 +360,8 @@ Keyword-only arguments:
 Returns
 [GetProtectionStatusResponseTypeDef](./type_defs.md#getprotectionstatusresponsetypedef).
 
+<a id="get_protocols_list"></a>
+
 ### get_protocols_list
 
 Returns information about the specified Firewall Manager protocols list.
@@ -340,6 +381,8 @@ Keyword-only arguments:
 
 Returns
 [GetProtocolsListResponseTypeDef](./type_defs.md#getprotocolslistresponsetypedef).
+
+<a id="get_violation_details"></a>
 
 ### get_violation_details
 
@@ -364,6 +407,8 @@ Keyword-only arguments:
 Returns
 [GetViolationDetailsResponseTypeDef](./type_defs.md#getviolationdetailsresponsetypedef).
 
+<a id="list_apps_lists"></a>
+
 ### list_apps_lists
 
 Returns an array of `AppsListDataSummary` objects.
@@ -384,6 +429,8 @@ Keyword-only arguments:
 
 Returns
 [ListAppsListsResponseTypeDef](./type_defs.md#listappslistsresponsetypedef).
+
+<a id="list_compliance_status"></a>
 
 ### list_compliance_status
 
@@ -406,6 +453,8 @@ Keyword-only arguments:
 Returns
 [ListComplianceStatusResponseTypeDef](./type_defs.md#listcompliancestatusresponsetypedef).
 
+<a id="list_member_accounts"></a>
+
 ### list_member_accounts
 
 Returns a `MemberAccounts` object that lists the member accounts in the
@@ -427,6 +476,8 @@ Keyword-only arguments:
 Returns
 [ListMemberAccountsResponseTypeDef](./type_defs.md#listmemberaccountsresponsetypedef).
 
+<a id="list_policies"></a>
+
 ### list_policies
 
 Returns an array of `PolicySummary` objects.
@@ -446,6 +497,8 @@ Keyword-only arguments:
 
 Returns
 [ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
+
+<a id="list_protocols_lists"></a>
 
 ### list_protocols_lists
 
@@ -468,6 +521,8 @@ Keyword-only arguments:
 Returns
 [ListProtocolsListsResponseTypeDef](./type_defs.md#listprotocolslistsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the list of tags for the specified Amazon Web Services resource.
@@ -486,6 +541,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_apps_list"></a>
 
 ### put_apps_list
 
@@ -508,6 +565,8 @@ Keyword-only arguments:
 Returns
 [PutAppsListResponseTypeDef](./type_defs.md#putappslistresponsetypedef).
 
+<a id="put_notification_channel"></a>
+
 ### put_notification_channel
 
 Designates the IAM role and Amazon Simple Notification Service (SNS) topic that
@@ -525,6 +584,8 @@ Keyword-only arguments:
 
 - `SnsTopicArn`: `str` *(required)*
 - `SnsRoleName`: `str` *(required)*
+
+<a id="put_policy"></a>
 
 ### put_policy
 
@@ -544,6 +605,8 @@ Keyword-only arguments:
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
+
+<a id="put_protocols_list"></a>
 
 ### put_protocols_list
 
@@ -567,6 +630,8 @@ Keyword-only arguments:
 Returns
 [PutProtocolsListResponseTypeDef](./type_defs.md#putprotocolslistresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to an Amazon Web Services resource.
@@ -586,6 +651,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from an Amazon Web Services resource.
@@ -604,6 +671,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

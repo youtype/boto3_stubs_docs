@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sso-module"></a>
+
 # Typed dictionaries for boto3 SSO module
 
 > [Index](..) > [SSO](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSO](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso.html#SSO)
 type annotations stubs module
-[mypy_boto3_sso](https://pypi.org/project/mypy-boto3-sso/).
+[mypy-boto3-sso](https://pypi.org/project/mypy-boto3-sso/).
 
 - [Typed dictionaries for boto3 SSO module](#typed-dictionaries-for-boto3-sso-module)
   - [AccountInfoTypeDef](#accountinfotypedef)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [RoleCredentialsTypeDef](#rolecredentialstypedef)
   - [RoleInfoTypeDef](#roleinfotypedef)
 
+<a id="accountinfotypedef"></a>
+
 ## AccountInfoTypeDef
 
 ```python
@@ -32,6 +36,8 @@ Optional fields:
 - `accountId`: `str`
 - `accountName`: `str`
 - `emailAddress`: `str`
+
+<a id="getrolecredentialsrequestrequesttypedef"></a>
 
 ## GetRoleCredentialsRequestRequestTypeDef
 
@@ -45,6 +51,8 @@ Required fields:
 - `accountId`: `str`
 - `accessToken`: `str`
 
+<a id="getrolecredentialsresponsetypedef"></a>
+
 ## GetRoleCredentialsResponseTypeDef
 
 ```python
@@ -57,6 +65,8 @@ Required fields:
   [RoleCredentialsTypeDef](./type_defs.md#rolecredentialstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccountrolesrequestrequesttypedef"></a>
 
 ## ListAccountRolesRequestRequestTypeDef
 
@@ -74,6 +84,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listaccountrolesresponsetypedef"></a>
+
 ## ListAccountRolesResponseTypeDef
 
 ```python
@@ -86,6 +98,8 @@ Required fields:
 - `roleList`: `List`\[[RoleInfoTypeDef](./type_defs.md#roleinfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccountsrequestrequesttypedef"></a>
 
 ## ListAccountsRequestRequestTypeDef
 
@@ -102,6 +116,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listaccountsresponsetypedef"></a>
+
 ## ListAccountsResponseTypeDef
 
 ```python
@@ -116,6 +132,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logoutrequestrequesttypedef"></a>
+
 ## LogoutRequestRequestTypeDef
 
 ```python
@@ -125,6 +143,8 @@ from mypy_boto3_sso.type_defs import LogoutRequestRequestTypeDef
 Required fields:
 
 - `accessToken`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -137,6 +157,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -152,6 +174,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rolecredentialstypedef"></a>
+
 ## RoleCredentialsTypeDef
 
 ```python
@@ -164,6 +188,8 @@ Optional fields:
 - `secretAccessKey`: `str`
 - `sessionToken`: `str`
 - `expiration`: `int`
+
+<a id="roleinfotypedef"></a>
 
 ## RoleInfoTypeDef
 

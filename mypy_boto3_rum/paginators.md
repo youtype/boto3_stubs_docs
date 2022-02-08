@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloudwatchrum-module"></a>
+
 # Paginators for boto3 CloudWatchRUM module
 
 > [Index](..) > [CloudWatchRUM](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
 type annotations stubs module
-[mypy_boto3_rum](https://pypi.org/project/mypy-boto3-rum/).
+[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 - [Paginators for boto3 CloudWatchRUM module](#paginators-for-boto3-cloudwatchrum-module)
   - [GetAppMonitorDataPaginator](#getappmonitordatapaginator)
   - [ListAppMonitorsPaginator](#listappmonitorspaginator)
+
+<a id="getappmonitordatapaginator"></a>
 
 ## GetAppMonitorDataPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rum.paginator import GetAppMonitorDataPaginator
 
 def get_get_app_monitor_data_paginator() -> GetAppMonitorDataPaginator:
-    return boto3.client("rum").get_paginator("get_app_monitor_data")
+    return Session().client("rum").get_paginator("get_app_monitor_data")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `GetAppMonitorDataPaginator.paginate` method:
 `GetAppMonitorDataPaginator.paginate` returns
 `_PageIterator`\[[GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef)\].
 
+<a id="listappmonitorspaginator"></a>
+
 ## ListAppMonitorsPaginator
 
 Type annotations for `boto3.client("rum").get_paginator("list_app_monitors")`.
@@ -47,10 +55,12 @@ Type annotations for `boto3.client("rum").get_paginator("list_app_monitors")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rum.paginator import ListAppMonitorsPaginator
 
 def get_list_app_monitors_paginator() -> ListAppMonitorsPaginator:
-    return boto3.client("rum").get_paginator("list_app_monitors")
+    return Session().client("rum").get_paginator("list_app_monitors")
 ```
 
 Boto3 documentation:

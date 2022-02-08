@@ -1,3 +1,5 @@
+<a id="cloudhsmv2client-for-boto3-cloudhsmv2-module"></a>
+
 # CloudHSMV2Client for boto3 CloudHSMV2 module
 
 > [Index](..) > [CloudHSMV2](.) > CloudHSMV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudHSMV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2)
 type annotations stubs module
-[mypy_boto3_cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
+[mypy-boto3-cloudhsmv2](https://pypi.org/project/mypy-boto3-cloudhsmv2/).
 
 - [CloudHSMV2Client for boto3 CloudHSMV2 module](#cloudhsmv2client-for-boto3-cloudhsmv2-module)
   - [CloudHSMV2Client](#cloudhsmv2client)
@@ -31,6 +33,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="cloudhsmv2client"></a>
+
 ## CloudHSMV2Client
 
 Type annotations for `boto3.client("cloudhsmv2")`
@@ -38,14 +42,17 @@ Type annotations for `boto3.client("cloudhsmv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudhsmv2.client import CloudHSMV2Client
 
 def get_cloudhsmv2_client() -> CloudHSMV2Client:
-    return boto3.client("cloudhsmv2")
+    return Session().client("cloudhsmv2")
 ```
 
 Boto3 documentation:
 [CloudHSMV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.CloudHsmServiceException`
 - `Exceptions.CloudHsmTagException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [CloudHSMV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsmv2.html#CloudHSMV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -96,6 +109,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_backup_to_region"></a>
 
 ### copy_backup_to_region
 
@@ -117,6 +132,8 @@ Keyword-only arguments:
 
 Returns
 [CopyBackupToRegionResponseTypeDef](./type_defs.md#copybackuptoregionresponsetypedef).
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -142,6 +159,8 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
+<a id="create_hsm"></a>
+
 ### create_hsm
 
 Creates a new hardware security module (HSM) in the specified AWS CloudHSM
@@ -163,6 +182,8 @@ Keyword-only arguments:
 
 Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
+<a id="delete_backup"></a>
+
 ### delete_backup
 
 Deletes a specified AWS CloudHSM backup.
@@ -182,6 +203,8 @@ Keyword-only arguments:
 Returns
 [DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
+<a id="delete_cluster"></a>
+
 ### delete_cluster
 
 Deletes the specified AWS CloudHSM cluster.
@@ -200,6 +223,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+
+<a id="delete_hsm"></a>
 
 ### delete_hsm
 
@@ -221,6 +246,8 @@ Keyword-only arguments:
 - `EniIp`: `str`
 
 Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
+
+<a id="describe_backups"></a>
 
 ### describe_backups
 
@@ -244,6 +271,8 @@ Keyword-only arguments:
 Returns
 [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
+<a id="describe_clusters"></a>
+
 ### describe_clusters
 
 Gets information about AWS CloudHSM clusters.
@@ -265,6 +294,8 @@ Keyword-only arguments:
 Returns
 [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -283,6 +314,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="initialize_cluster"></a>
 
 ### initialize_cluster
 
@@ -306,6 +339,8 @@ Keyword-only arguments:
 Returns
 [InitializeClusterResponseTypeDef](./type_defs.md#initializeclusterresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Gets a list of tags for the specified AWS CloudHSM cluster.
@@ -325,6 +360,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+
+<a id="modify_backup_attributes"></a>
 
 ### modify_backup_attributes
 
@@ -346,6 +383,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyBackupAttributesResponseTypeDef](./type_defs.md#modifybackupattributesresponsetypedef).
+
+<a id="modify_cluster"></a>
 
 ### modify_cluster
 
@@ -369,6 +408,8 @@ Keyword-only arguments:
 Returns
 [ModifyClusterResponseTypeDef](./type_defs.md#modifyclusterresponsetypedef).
 
+<a id="restore_backup"></a>
+
 ### restore_backup
 
 Restores a specified AWS CloudHSM backup that is in the `PENDING_DELETION`
@@ -389,6 +430,8 @@ Keyword-only arguments:
 Returns
 [RestoreBackupResponseTypeDef](./type_defs.md#restorebackupresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or overwrites one or more tags for the specified AWS CloudHSM cluster.
@@ -408,6 +451,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tag or tags from the specified AWS CloudHSM cluster.
@@ -426,6 +471,8 @@ Keyword-only arguments:
 - `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

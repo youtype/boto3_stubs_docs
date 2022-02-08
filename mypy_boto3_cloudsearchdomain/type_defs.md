@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudsearchdomain-module"></a>
+
 # Typed dictionaries for boto3 CloudSearchDomain module
 
 > [Index](..) > [CloudSearchDomain](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudSearchDomain](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearchdomain.html#CloudSearchDomain)
 type annotations stubs module
-[mypy_boto3_cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
+[mypy-boto3-cloudsearchdomain](https://pypi.org/project/mypy-boto3-cloudsearchdomain/).
 
 - [Typed dictionaries for boto3 CloudSearchDomain module](#typed-dictionaries-for-boto3-cloudsearchdomain-module)
   - [BucketInfoTypeDef](#bucketinfotypedef)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [UploadDocumentsRequestRequestTypeDef](#uploaddocumentsrequestrequesttypedef)
   - [UploadDocumentsResponseTypeDef](#uploaddocumentsresponsetypedef)
 
+<a id="bucketinfotypedef"></a>
+
 ## BucketInfoTypeDef
 
 ```python
@@ -35,6 +39,8 @@ from mypy_boto3_cloudsearchdomain.type_defs import BucketInfoTypeDef
 Optional fields:
 
 - `buckets`: `List`\[[BucketTypeDef](./type_defs.md#buckettypedef)\]
+
+<a id="buckettypedef"></a>
 
 ## BucketTypeDef
 
@@ -47,6 +53,8 @@ Optional fields:
 - `value`: `str`
 - `count`: `int`
 
+<a id="documentservicewarningtypedef"></a>
+
 ## DocumentServiceWarningTypeDef
 
 ```python
@@ -56,6 +64,8 @@ from mypy_boto3_cloudsearchdomain.type_defs import DocumentServiceWarningTypeDef
 Optional fields:
 
 - `message`: `str`
+
+<a id="fieldstatstypedef"></a>
 
 ## FieldStatsTypeDef
 
@@ -74,6 +84,8 @@ Optional fields:
 - `mean`: `str`
 - `stddev`: `float`
 
+<a id="hittypedef"></a>
+
 ## HitTypeDef
 
 ```python
@@ -86,6 +98,8 @@ Optional fields:
 - `fields`: `Dict`\[`str`, `List`\[`str`\]\]
 - `exprs`: `Dict`\[`str`, `str`\]
 - `highlights`: `Dict`\[`str`, `str`\]
+
+<a id="hitstypedef"></a>
 
 ## HitsTypeDef
 
@@ -100,6 +114,8 @@ Optional fields:
 - `cursor`: `str`
 - `hit`: `List`\[[HitTypeDef](./type_defs.md#hittypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -113,6 +129,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="searchrequestrequesttypedef"></a>
 
 ## SearchRequestRequestTypeDef
 
@@ -140,6 +158,8 @@ Optional fields:
 - `start`: `int`
 - `stats`: `str`
 
+<a id="searchresponsetypedef"></a>
+
 ## SearchResponseTypeDef
 
 ```python
@@ -157,6 +177,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchstatustypedef"></a>
+
 ## SearchStatusTypeDef
 
 ```python
@@ -167,6 +189,8 @@ Optional fields:
 
 - `timems`: `int`
 - `rid`: `str`
+
+<a id="suggestmodeltypedef"></a>
 
 ## SuggestModelTypeDef
 
@@ -180,6 +204,8 @@ Optional fields:
 - `found`: `int`
 - `suggestions`:
   `List`\[[SuggestionMatchTypeDef](./type_defs.md#suggestionmatchtypedef)\]
+
+<a id="suggestrequestrequesttypedef"></a>
 
 ## SuggestRequestRequestTypeDef
 
@@ -196,6 +222,8 @@ Optional fields:
 
 - `size`: `int`
 
+<a id="suggestresponsetypedef"></a>
+
 ## SuggestResponseTypeDef
 
 ```python
@@ -209,6 +237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="suggeststatustypedef"></a>
+
 ## SuggestStatusTypeDef
 
 ```python
@@ -219,6 +249,8 @@ Optional fields:
 
 - `timems`: `int`
 - `rid`: `str`
+
+<a id="suggestionmatchtypedef"></a>
 
 ## SuggestionMatchTypeDef
 
@@ -232,6 +264,8 @@ Optional fields:
 - `score`: `int`
 - `id`: `str`
 
+<a id="uploaddocumentsrequestrequesttypedef"></a>
+
 ## UploadDocumentsRequestRequestTypeDef
 
 ```python
@@ -242,6 +276,8 @@ Required fields:
 
 - `documents`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `contentType`: [ContentTypeType](./literals.md#contenttypetype)
+
+<a id="uploaddocumentsresponsetypedef"></a>
 
 ## UploadDocumentsResponseTypeDef
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-chime-module"></a>
+
 # Literals for boto3 Chime module
 
 > [Index](..) > [Chime](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Chime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime.html#Chime)
 type annotations stubs module
-[mypy_boto3_chime](https://pypi.org/project/mypy-boto3-chime/).
+[mypy-boto3-chime](https://pypi.org/project/mypy-boto3-chime/).
 
 - [Literals for boto3 Chime module](#literals-for-boto3-chime-module)
   - [AccountStatusType](#accountstatustype)
@@ -64,6 +66,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accountstatustype"></a>
+
 ## AccountStatusType
 
 ```python
@@ -74,6 +78,8 @@ Values:
 
 - `Active`
 - `Suspended`
+
+<a id="accounttypetype"></a>
 
 ## AccountTypeType
 
@@ -88,6 +94,8 @@ Values:
 - `EnterpriseOIDC`
 - `Team`
 
+<a id="appinstancedatatypetype"></a>
+
 ## AppInstanceDataTypeType
 
 ```python
@@ -98,6 +106,8 @@ Values:
 
 - `Channel`
 - `ChannelMessage`
+
+<a id="artifactsstatetype"></a>
 
 ## ArtifactsStateType
 
@@ -110,6 +120,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="audiomuxtypetype"></a>
+
 ## AudioMuxTypeType
 
 ```python
@@ -121,6 +133,8 @@ Values:
 - `AudioOnly`
 - `AudioWithActiveSpeakerVideo`
 
+<a id="bottypetype"></a>
+
 ## BotTypeType
 
 ```python
@@ -130,6 +144,8 @@ from mypy_boto3_chime.literals import BotTypeType
 Values:
 
 - `ChatBot`
+
+<a id="callingnamestatustype"></a>
 
 ## CallingNameStatusType
 
@@ -144,6 +160,8 @@ Values:
 - `UpdateInProgress`
 - `UpdateSucceeded`
 
+<a id="capabilitytype"></a>
+
 ## CapabilityType
 
 ```python
@@ -154,6 +172,8 @@ Values:
 
 - `SMS`
 - `Voice`
+
+<a id="channelmembershiptypetype"></a>
 
 ## ChannelMembershipTypeType
 
@@ -166,6 +186,8 @@ Values:
 - `DEFAULT`
 - `HIDDEN`
 
+<a id="channelmessagepersistencetypetype"></a>
+
 ## ChannelMessagePersistenceTypeType
 
 ```python
@@ -176,6 +198,8 @@ Values:
 
 - `NON_PERSISTENT`
 - `PERSISTENT`
+
+<a id="channelmessagetypetype"></a>
 
 ## ChannelMessageTypeType
 
@@ -188,6 +212,8 @@ Values:
 - `CONTROL`
 - `STANDARD`
 
+<a id="channelmodetype"></a>
+
 ## ChannelModeType
 
 ```python
@@ -198,6 +224,8 @@ Values:
 
 - `RESTRICTED`
 - `UNRESTRICTED`
+
+<a id="channelprivacytype"></a>
 
 ## ChannelPrivacyType
 
@@ -210,6 +238,8 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
+<a id="contentmuxtypetype"></a>
+
 ## ContentMuxTypeType
 
 ```python
@@ -219,6 +249,8 @@ from mypy_boto3_chime.literals import ContentMuxTypeType
 Values:
 
 - `ContentOnly`
+
+<a id="emailstatustype"></a>
 
 ## EmailStatusType
 
@@ -231,6 +263,8 @@ Values:
 - `Failed`
 - `NotSent`
 - `Sent`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -256,6 +290,8 @@ Values:
 - `Unprocessable`
 - `VoiceConnectorGroupAssociationsExist`
 
+<a id="geomatchleveltype"></a>
+
 ## GeoMatchLevelType
 
 ```python
@@ -266,6 +302,8 @@ Values:
 
 - `AreaCode`
 - `Country`
+
+<a id="invitestatustype"></a>
 
 ## InviteStatusType
 
@@ -278,6 +316,8 @@ Values:
 - `Accepted`
 - `Failed`
 - `Pending`
+
+<a id="licensetype"></a>
 
 ## LicenseType
 
@@ -292,6 +332,8 @@ Values:
 - `Pro`
 - `ProTrial`
 
+<a id="listaccountspaginatorname"></a>
+
 ## ListAccountsPaginatorName
 
 ```python
@@ -301,6 +343,8 @@ from mypy_boto3_chime.literals import ListAccountsPaginatorName
 Values:
 
 - `list_accounts`
+
+<a id="listuserspaginatorname"></a>
 
 ## ListUsersPaginatorName
 
@@ -312,6 +356,8 @@ Values:
 
 - `list_users`
 
+<a id="mediapipelinesinktypetype"></a>
+
 ## MediaPipelineSinkTypeType
 
 ```python
@@ -322,6 +368,8 @@ Values:
 
 - `S3Bucket`
 
+<a id="mediapipelinesourcetypetype"></a>
+
 ## MediaPipelineSourceTypeType
 
 ```python
@@ -331,6 +379,8 @@ from mypy_boto3_chime.literals import MediaPipelineSourceTypeType
 Values:
 
 - `ChimeSdkMeeting`
+
+<a id="mediapipelinestatustype"></a>
 
 ## MediaPipelineStatusType
 
@@ -346,6 +396,8 @@ Values:
 - `Stopped`
 - `Stopping`
 
+<a id="membertypetype"></a>
+
 ## MemberTypeType
 
 ```python
@@ -357,6 +409,8 @@ Values:
 - `Bot`
 - `User`
 - `Webhook`
+
+<a id="notificationtargettype"></a>
 
 ## NotificationTargetType
 
@@ -370,6 +424,8 @@ Values:
 - `SNS`
 - `SQS`
 
+<a id="numberselectionbehaviortype"></a>
+
 ## NumberSelectionBehaviorType
 
 ```python
@@ -380,6 +436,8 @@ Values:
 
 - `AvoidSticky`
 - `PreferSticky`
+
+<a id="orderedphonenumberstatustype"></a>
 
 ## OrderedPhoneNumberStatusType
 
@@ -393,6 +451,8 @@ Values:
 - `Failed`
 - `Processing`
 
+<a id="originationrouteprotocoltype"></a>
+
 ## OriginationRouteProtocolType
 
 ```python
@@ -403,6 +463,8 @@ Values:
 
 - `TCP`
 - `UDP`
+
+<a id="phonenumberassociationnametype"></a>
 
 ## PhoneNumberAssociationNameType
 
@@ -418,6 +480,8 @@ Values:
 - `VoiceConnectorGroupId`
 - `VoiceConnectorId`
 
+<a id="phonenumberorderstatustype"></a>
+
 ## PhoneNumberOrderStatusType
 
 ```python
@@ -431,6 +495,8 @@ Values:
 - `Processing`
 - `Successful`
 
+<a id="phonenumberproducttypetype"></a>
+
 ## PhoneNumberProductTypeType
 
 ```python
@@ -442,6 +508,8 @@ Values:
 - `BusinessCalling`
 - `SipMediaApplicationDialIn`
 - `VoiceConnector`
+
+<a id="phonenumberstatustype"></a>
 
 ## PhoneNumberStatusType
 
@@ -460,6 +528,8 @@ Values:
 - `ReleaseInProgress`
 - `Unassigned`
 
+<a id="phonenumbertypetype"></a>
+
 ## PhoneNumberTypeType
 
 ```python
@@ -470,6 +540,8 @@ Values:
 
 - `Local`
 - `TollFree`
+
+<a id="proxysessionstatustype"></a>
 
 ## ProxySessionStatusType
 
@@ -483,6 +555,8 @@ Values:
 - `InProgress`
 - `Open`
 
+<a id="registrationstatustype"></a>
+
 ## RegistrationStatusType
 
 ```python
@@ -495,6 +569,8 @@ Values:
 - `Suspended`
 - `Unregistered`
 
+<a id="roommembershiproletype"></a>
+
 ## RoomMembershipRoleType
 
 ```python
@@ -505,6 +581,8 @@ Values:
 
 - `Administrator`
 - `Member`
+
+<a id="sipruletriggertypetype"></a>
 
 ## SipRuleTriggerTypeType
 
@@ -517,6 +595,8 @@ Values:
 - `RequestUriHostname`
 - `ToPhoneNumber`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -528,6 +608,8 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="transcribecontentidentificationtypetype"></a>
+
 ## TranscribeContentIdentificationTypeType
 
 ```python
@@ -538,6 +620,8 @@ Values:
 
 - `PII`
 
+<a id="transcribecontentredactiontypetype"></a>
+
 ## TranscribeContentRedactionTypeType
 
 ```python
@@ -547,6 +631,8 @@ from mypy_boto3_chime.literals import TranscribeContentRedactionTypeType
 Values:
 
 - `PII`
+
+<a id="transcribelanguagecodetype"></a>
 
 ## TranscribeLanguageCodeType
 
@@ -569,6 +655,8 @@ Values:
 - `pt-BR`
 - `zh-CN`
 
+<a id="transcribemedicalcontentidentificationtypetype"></a>
+
 ## TranscribeMedicalContentIdentificationTypeType
 
 ```python
@@ -579,6 +667,8 @@ Values:
 
 - `PHI`
 
+<a id="transcribemedicallanguagecodetype"></a>
+
 ## TranscribeMedicalLanguageCodeType
 
 ```python
@@ -588,6 +678,8 @@ from mypy_boto3_chime.literals import TranscribeMedicalLanguageCodeType
 Values:
 
 - `en-US`
+
+<a id="transcribemedicalregiontype"></a>
 
 ## TranscribeMedicalRegionType
 
@@ -605,6 +697,8 @@ Values:
 - `us-east-2`
 - `us-west-2`
 
+<a id="transcribemedicalspecialtytype"></a>
+
 ## TranscribeMedicalSpecialtyType
 
 ```python
@@ -620,6 +714,8 @@ Values:
 - `RADIOLOGY`
 - `UROLOGY`
 
+<a id="transcribemedicaltypetype"></a>
+
 ## TranscribeMedicalTypeType
 
 ```python
@@ -630,6 +726,8 @@ Values:
 
 - `CONVERSATION`
 - `DICTATION`
+
+<a id="transcribepartialresultsstabilitytype"></a>
 
 ## TranscribePartialResultsStabilityType
 
@@ -642,6 +740,8 @@ Values:
 - `high`
 - `low`
 - `medium`
+
+<a id="transcriberegiontype"></a>
 
 ## TranscribeRegionType
 
@@ -664,6 +764,8 @@ Values:
 - `us-east-2`
 - `us-west-2`
 
+<a id="transcribevocabularyfiltermethodtype"></a>
+
 ## TranscribeVocabularyFilterMethodType
 
 ```python
@@ -676,6 +778,8 @@ Values:
 - `remove`
 - `tag`
 
+<a id="usertypetype"></a>
+
 ## UserTypeType
 
 ```python
@@ -687,6 +791,8 @@ Values:
 - `PrivateUser`
 - `SharedDevice`
 
+<a id="videomuxtypetype"></a>
+
 ## VideoMuxTypeType
 
 ```python
@@ -696,6 +802,8 @@ from mypy_boto3_chime.literals import VideoMuxTypeType
 Values:
 
 - `VideoOnly`
+
+<a id="voiceconnectorawsregiontype"></a>
 
 ## VoiceConnectorAwsRegionType
 
@@ -707,6 +815,8 @@ Values:
 
 - `us-east-1`
 - `us-west-2`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1015,6 +1125,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

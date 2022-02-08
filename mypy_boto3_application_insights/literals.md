@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-applicationinsights-module"></a>
+
 # Literals for boto3 ApplicationInsights module
 
 > [Index](..) > [ApplicationInsights](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationInsights](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-insights.html#ApplicationInsights)
 type annotations stubs module
-[mypy_boto3_application_insights](https://pypi.org/project/mypy-boto3-application-insights/).
+[mypy-boto3-application-insights](https://pypi.org/project/mypy-boto3-application-insights/).
 
 - [Literals for boto3 ApplicationInsights module](#literals-for-boto3-applicationinsights-module)
   - [CloudWatchEventSourceType](#cloudwatcheventsourcetype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [TierType](#tiertype)
   - [ServiceName](#servicename)
 
+<a id="cloudwatcheventsourcetype"></a>
+
 ## CloudWatchEventSourceType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 - `EC2`
 - `HEALTH`
 - `RDS`
+
+<a id="configurationeventresourcetypetype"></a>
 
 ## ConfigurationEventResourceTypeType
 
@@ -47,6 +53,8 @@ Values:
 - `CLOUDWATCH_LOG`
 - `SSM_ASSOCIATION`
 
+<a id="configurationeventstatustype"></a>
+
 ## ConfigurationEventStatusType
 
 ```python
@@ -59,6 +67,8 @@ Values:
 - `INFO`
 - `WARN`
 
+<a id="discoverytypetype"></a>
+
 ## DiscoveryTypeType
 
 ```python
@@ -70,6 +80,8 @@ Values:
 - `ACCOUNT_BASED`
 - `RESOURCE_GROUP_BASED`
 
+<a id="feedbackkeytype"></a>
+
 ## FeedbackKeyType
 
 ```python
@@ -79,6 +91,8 @@ from mypy_boto3_application_insights.literals import FeedbackKeyType
 Values:
 
 - `INSIGHTS_FEEDBACK`
+
+<a id="feedbackvaluetype"></a>
 
 ## FeedbackValueType
 
@@ -92,6 +106,8 @@ Values:
 - `NOT_USEFUL`
 - `USEFUL`
 
+<a id="logfiltertype"></a>
+
 ## LogFilterType
 
 ```python
@@ -104,6 +120,8 @@ Values:
 - `INFO`
 - `WARN`
 
+<a id="ostypetype"></a>
+
 ## OsTypeType
 
 ```python
@@ -114,6 +132,8 @@ Values:
 
 - `LINUX`
 - `WINDOWS`
+
+<a id="severityleveltype"></a>
 
 ## SeverityLevelType
 
@@ -127,6 +147,8 @@ Values:
 - `Low`
 - `Medium`
 
+<a id="statustype"></a>
+
 ## StatusType
 
 ```python
@@ -139,6 +161,8 @@ Values:
 - `PENDING`
 - `RECURRING`
 - `RESOLVED`
+
+<a id="tiertype"></a>
 
 ## TierType
 
@@ -166,6 +190,8 @@ Values:
 - `SQL_SERVER`
 - `SQL_SERVER_ALWAYSON_AVAILABILITY_GROUP`
 - `SQL_SERVER_FAILOVER_CLUSTER_INSTANCE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

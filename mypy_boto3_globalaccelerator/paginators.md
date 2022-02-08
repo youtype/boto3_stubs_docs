@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-globalaccelerator-module"></a>
+
 # Paginators for boto3 GlobalAccelerator module
 
 > [Index](..) > [GlobalAccelerator](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
-[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Paginators for boto3 GlobalAccelerator module](#paginators-for-boto3-globalaccelerator-module)
   - [ListAcceleratorsPaginator](#listacceleratorspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListEndpointGroupsPaginator](#listendpointgroupspaginator)
   - [ListListenersPaginator](#listlistenerspaginator)
 
+<a id="listacceleratorspaginator"></a>
+
 ## ListAcceleratorsPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListAcceleratorsPaginator
 
 def get_list_accelerators_paginator() -> ListAcceleratorsPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_accelerators")
+    return Session().client("globalaccelerator").get_paginator("list_accelerators")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `ListAcceleratorsPaginator.paginate` method:
 `ListAcceleratorsPaginator.paginate` returns
 `_PageIterator`\[[ListAcceleratorsResponseTypeDef](./type_defs.md#listacceleratorsresponsetypedef)\].
 
+<a id="listbyoipcidrspaginator"></a>
+
 ## ListByoipCidrsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListByoipCidrsPaginator
 
 def get_list_byoip_cidrs_paginator() -> ListByoipCidrsPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_byoip_cidrs")
+    return Session().client("globalaccelerator").get_paginator("list_byoip_cidrs")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListByoipCidrsPaginator.paginate` method:
 `ListByoipCidrsPaginator.paginate` returns
 `_PageIterator`\[[ListByoipCidrsResponseTypeDef](./type_defs.md#listbyoipcidrsresponsetypedef)\].
 
+<a id="listcustomroutingacceleratorspaginator"></a>
+
 ## ListCustomRoutingAcceleratorsPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingAcceleratorsPaginator
 
 def get_list_custom_routing_accelerators_paginator() -> ListCustomRoutingAcceleratorsPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_custom_routing_accelerators")
+    return Session().client("globalaccelerator").get_paginator("list_custom_routing_accelerators")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListCustomRoutingAcceleratorsPaginator.paginate` method:
 `ListCustomRoutingAcceleratorsPaginator.paginate` returns
 `_PageIterator`\[[ListCustomRoutingAcceleratorsResponseTypeDef](./type_defs.md#listcustomroutingacceleratorsresponsetypedef)\].
 
+<a id="listcustomroutinglistenerspaginator"></a>
+
 ## ListCustomRoutingListenersPaginator
 
 Type annotations for
@@ -100,10 +116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingListenersPaginator
 
 def get_list_custom_routing_listeners_paginator() -> ListCustomRoutingListenersPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_custom_routing_listeners")
+    return Session().client("globalaccelerator").get_paginator("list_custom_routing_listeners")
 ```
 
 Boto3 documentation:
@@ -118,6 +136,8 @@ Arguments for `ListCustomRoutingListenersPaginator.paginate` method:
 `ListCustomRoutingListenersPaginator.paginate` returns
 `_PageIterator`\[[ListCustomRoutingListenersResponseTypeDef](./type_defs.md#listcustomroutinglistenersresponsetypedef)\].
 
+<a id="listcustomroutingportmappingspaginator"></a>
+
 ## ListCustomRoutingPortMappingsPaginator
 
 Type annotations for
@@ -126,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappingsPaginator
 
 def get_list_custom_routing_port_mappings_paginator() -> ListCustomRoutingPortMappingsPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")
+    return Session().client("globalaccelerator").get_paginator("list_custom_routing_port_mappings")
 ```
 
 Boto3 documentation:
@@ -145,6 +167,8 @@ Arguments for `ListCustomRoutingPortMappingsPaginator.paginate` method:
 `ListCustomRoutingPortMappingsPaginator.paginate` returns
 `_PageIterator`\[[ListCustomRoutingPortMappingsResponseTypeDef](./type_defs.md#listcustomroutingportmappingsresponsetypedef)\].
 
+<a id="listcustomroutingportmappingsbydestinationpaginator"></a>
+
 ## ListCustomRoutingPortMappingsByDestinationPaginator
 
 Type annotations for
@@ -153,10 +177,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListCustomRoutingPortMappingsByDestinationPaginator
 
 def get_list_custom_routing_port_mappings_by_destination_paginator() -> ListCustomRoutingPortMappingsByDestinationPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")
+    return Session().client("globalaccelerator").get_paginator("list_custom_routing_port_mappings_by_destination")
 ```
 
 Boto3 documentation:
@@ -173,6 +199,8 @@ method:
 `ListCustomRoutingPortMappingsByDestinationPaginator.paginate` returns
 `_PageIterator`\[[ListCustomRoutingPortMappingsByDestinationResponseTypeDef](./type_defs.md#listcustomroutingportmappingsbydestinationresponsetypedef)\].
 
+<a id="listendpointgroupspaginator"></a>
+
 ## ListEndpointGroupsPaginator
 
 Type annotations for
@@ -181,10 +209,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListEndpointGroupsPaginator
 
 def get_list_endpoint_groups_paginator() -> ListEndpointGroupsPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_endpoint_groups")
+    return Session().client("globalaccelerator").get_paginator("list_endpoint_groups")
 ```
 
 Boto3 documentation:
@@ -199,6 +229,8 @@ Arguments for `ListEndpointGroupsPaginator.paginate` method:
 `ListEndpointGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListEndpointGroupsResponseTypeDef](./type_defs.md#listendpointgroupsresponsetypedef)\].
 
+<a id="listlistenerspaginator"></a>
+
 ## ListListenersPaginator
 
 Type annotations for
@@ -207,10 +239,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_globalaccelerator.paginator import ListListenersPaginator
 
 def get_list_listeners_paginator() -> ListListenersPaginator:
-    return boto3.client("globalaccelerator").get_paginator("list_listeners")
+    return Session().client("globalaccelerator").get_paginator("list_listeners")
 ```
 
 Boto3 documentation:

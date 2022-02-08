@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-imagebuilder-module"></a>
+
 # Typed dictionaries for boto3 imagebuilder module
 
 > [Index](..) > [imagebuilder](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [imagebuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/imagebuilder.html#imagebuilder)
 type annotations stubs module
-[mypy_boto3_imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
+[mypy-boto3-imagebuilder](https://pypi.org/project/mypy-boto3-imagebuilder/).
 
 - [Typed dictionaries for boto3 imagebuilder module](#typed-dictionaries-for-boto3-imagebuilder-module)
   - [AdditionalInstanceConfigurationTypeDef](#additionalinstanceconfigurationtypedef)
@@ -150,6 +152,8 @@ type annotations stubs module
   - [UpdateInfrastructureConfigurationRequestRequestTypeDef](#updateinfrastructureconfigurationrequestrequesttypedef)
   - [UpdateInfrastructureConfigurationResponseTypeDef](#updateinfrastructureconfigurationresponsetypedef)
 
+<a id="additionalinstanceconfigurationtypedef"></a>
+
 ## AdditionalInstanceConfigurationTypeDef
 
 ```python
@@ -161,6 +165,8 @@ Optional fields:
 - `systemsManagerAgent`:
   [SystemsManagerAgentTypeDef](./type_defs.md#systemsmanageragenttypedef)
 - `userDataOverride`: `str`
+
+<a id="amidistributionconfigurationtypedef"></a>
 
 ## AmiDistributionConfigurationTypeDef
 
@@ -178,6 +184,8 @@ Optional fields:
 - `launchPermission`:
   [LaunchPermissionConfigurationTypeDef](./type_defs.md#launchpermissionconfigurationtypedef)
 
+<a id="amitypedef"></a>
+
 ## AmiTypeDef
 
 ```python
@@ -193,6 +201,8 @@ Optional fields:
 - `state`: [ImageStateTypeDef](./type_defs.md#imagestatetypedef)
 - `accountId`: `str`
 
+<a id="cancelimagecreationrequestrequesttypedef"></a>
+
 ## CancelImageCreationRequestRequestTypeDef
 
 ```python
@@ -203,6 +213,8 @@ Required fields:
 
 - `imageBuildVersionArn`: `str`
 - `clientToken`: `str`
+
+<a id="cancelimagecreationresponsetypedef"></a>
 
 ## CancelImageCreationResponseTypeDef
 
@@ -218,6 +230,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="componentconfigurationtypedef"></a>
+
 ## ComponentConfigurationTypeDef
 
 ```python
@@ -232,6 +246,8 @@ Optional fields:
 
 - `parameters`:
   `Sequence`\[[ComponentParameterTypeDef](./type_defs.md#componentparametertypedef)\]
+
+<a id="componentparameterdetailtypedef"></a>
 
 ## ComponentParameterDetailTypeDef
 
@@ -249,6 +265,8 @@ Optional fields:
 - `defaultValue`: `List`\[`str`\]
 - `description`: `str`
 
+<a id="componentparametertypedef"></a>
+
 ## ComponentParameterTypeDef
 
 ```python
@@ -259,6 +277,8 @@ Required fields:
 
 - `name`: `str`
 - `value`: `Sequence`\[`str`\]
+
+<a id="componentstatetypedef"></a>
 
 ## ComponentStateTypeDef
 
@@ -271,6 +291,8 @@ Optional fields:
 - `status`: `Literal['DEPRECATED']` (see
   [ComponentStatusType](./literals.md#componentstatustype))
 - `reason`: `str`
+
+<a id="componentsummarytypedef"></a>
 
 ## ComponentSummaryTypeDef
 
@@ -292,6 +314,8 @@ Optional fields:
 - `changeDescription`: `str`
 - `dateCreated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="componenttypedef"></a>
 
 ## ComponentTypeDef
 
@@ -319,6 +343,8 @@ Optional fields:
 - `dateCreated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="componentversiontypedef"></a>
+
 ## ComponentVersionTypeDef
 
 ```python
@@ -337,6 +363,8 @@ Optional fields:
 - `owner`: `str`
 - `dateCreated`: `str`
 
+<a id="containerdistributionconfigurationtypedef"></a>
+
 ## ContainerDistributionConfigurationTypeDef
 
 ```python
@@ -352,6 +380,8 @@ Optional fields:
 
 - `description`: `str`
 - `containerTags`: `Sequence`\[`str`\]
+
+<a id="containerrecipesummarytypedef"></a>
 
 ## ContainerRecipeSummaryTypeDef
 
@@ -370,6 +400,8 @@ Optional fields:
 - `parentImage`: `str`
 - `dateCreated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="containerrecipetypedef"></a>
 
 ## ContainerRecipeTypeDef
 
@@ -401,6 +433,8 @@ Optional fields:
 - `targetRepository`:
   [TargetContainerRepositoryTypeDef](./type_defs.md#targetcontainerrepositorytypedef)
 
+<a id="containertypedef"></a>
+
 ## ContainerTypeDef
 
 ```python
@@ -411,6 +445,8 @@ Optional fields:
 
 - `region`: `str`
 - `imageUris`: `List`\[`str`\]
+
+<a id="createcomponentrequestrequesttypedef"></a>
 
 ## CreateComponentRequestRequestTypeDef
 
@@ -435,6 +471,8 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcomponentresponsetypedef"></a>
+
 ## CreateComponentResponseTypeDef
 
 ```python
@@ -448,6 +486,8 @@ Required fields:
 - `componentBuildVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcontainerreciperequestrequesttypedef"></a>
 
 ## CreateContainerRecipeRequestRequestTypeDef
 
@@ -481,6 +521,8 @@ Optional fields:
 - `workingDirectory`: `str`
 - `kmsKeyId`: `str`
 
+<a id="createcontainerreciperesponsetypedef"></a>
+
 ## CreateContainerRecipeResponseTypeDef
 
 ```python
@@ -494,6 +536,8 @@ Required fields:
 - `containerRecipeArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdistributionconfigurationrequestrequesttypedef"></a>
 
 ## CreateDistributionConfigurationRequestRequestTypeDef
 
@@ -513,6 +557,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createdistributionconfigurationresponsetypedef"></a>
+
 ## CreateDistributionConfigurationResponseTypeDef
 
 ```python
@@ -526,6 +572,8 @@ Required fields:
 - `distributionConfigurationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimagepipelinerequestrequesttypedef"></a>
 
 ## CreateImagePipelineRequestRequestTypeDef
 
@@ -552,6 +600,8 @@ Optional fields:
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createimagepipelineresponsetypedef"></a>
+
 ## CreateImagePipelineResponseTypeDef
 
 ```python
@@ -565,6 +615,8 @@ Required fields:
 - `imagePipelineArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimagereciperequestrequesttypedef"></a>
 
 ## CreateImageRecipeRequestRequestTypeDef
 
@@ -591,6 +643,8 @@ Optional fields:
 - `additionalInstanceConfiguration`:
   [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
 
+<a id="createimagereciperesponsetypedef"></a>
+
 ## CreateImageRecipeResponseTypeDef
 
 ```python
@@ -604,6 +658,8 @@ Required fields:
 - `imageRecipeArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createimagerequestrequesttypedef"></a>
 
 ## CreateImageRequestRequestTypeDef
 
@@ -626,6 +682,8 @@ Optional fields:
 - `enhancedImageMetadataEnabled`: `bool`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createimageresponsetypedef"></a>
+
 ## CreateImageResponseTypeDef
 
 ```python
@@ -639,6 +697,8 @@ Required fields:
 - `imageBuildVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinfrastructureconfigurationrequestrequesttypedef"></a>
 
 ## CreateInfrastructureConfigurationRequestRequestTypeDef
 
@@ -667,6 +727,8 @@ Optional fields:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createinfrastructureconfigurationresponsetypedef"></a>
+
 ## CreateInfrastructureConfigurationResponseTypeDef
 
 ```python
@@ -681,6 +743,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecomponentrequestrequesttypedef"></a>
+
 ## DeleteComponentRequestRequestTypeDef
 
 ```python
@@ -690,6 +754,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteComponentRequestRequestTypeD
 Required fields:
 
 - `componentBuildVersionArn`: `str`
+
+<a id="deletecomponentresponsetypedef"></a>
 
 ## DeleteComponentResponseTypeDef
 
@@ -704,6 +770,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecontainerreciperequestrequesttypedef"></a>
+
 ## DeleteContainerRecipeRequestRequestTypeDef
 
 ```python
@@ -713,6 +781,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteContainerRecipeRequestReques
 Required fields:
 
 - `containerRecipeArn`: `str`
+
+<a id="deletecontainerreciperesponsetypedef"></a>
 
 ## DeleteContainerRecipeResponseTypeDef
 
@@ -727,6 +797,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedistributionconfigurationrequestrequesttypedef"></a>
+
 ## DeleteDistributionConfigurationRequestRequestTypeDef
 
 ```python
@@ -736,6 +808,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteDistributionConfigurationReq
 Required fields:
 
 - `distributionConfigurationArn`: `str`
+
+<a id="deletedistributionconfigurationresponsetypedef"></a>
 
 ## DeleteDistributionConfigurationResponseTypeDef
 
@@ -750,6 +824,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteimagepipelinerequestrequesttypedef"></a>
+
 ## DeleteImagePipelineRequestRequestTypeDef
 
 ```python
@@ -759,6 +835,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteImagePipelineRequestRequestT
 Required fields:
 
 - `imagePipelineArn`: `str`
+
+<a id="deleteimagepipelineresponsetypedef"></a>
 
 ## DeleteImagePipelineResponseTypeDef
 
@@ -773,6 +851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteimagereciperequestrequesttypedef"></a>
+
 ## DeleteImageRecipeRequestRequestTypeDef
 
 ```python
@@ -782,6 +862,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteImageRecipeRequestRequestTyp
 Required fields:
 
 - `imageRecipeArn`: `str`
+
+<a id="deleteimagereciperesponsetypedef"></a>
 
 ## DeleteImageRecipeResponseTypeDef
 
@@ -796,6 +878,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteimagerequestrequesttypedef"></a>
+
 ## DeleteImageRequestRequestTypeDef
 
 ```python
@@ -805,6 +889,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteImageRequestRequestTypeDef
 Required fields:
 
 - `imageBuildVersionArn`: `str`
+
+<a id="deleteimageresponsetypedef"></a>
 
 ## DeleteImageResponseTypeDef
 
@@ -819,6 +905,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteinfrastructureconfigurationrequestrequesttypedef"></a>
+
 ## DeleteInfrastructureConfigurationRequestRequestTypeDef
 
 ```python
@@ -828,6 +916,8 @@ from mypy_boto3_imagebuilder.type_defs import DeleteInfrastructureConfigurationR
 Required fields:
 
 - `infrastructureConfigurationArn`: `str`
+
+<a id="deleteinfrastructureconfigurationresponsetypedef"></a>
 
 ## DeleteInfrastructureConfigurationResponseTypeDef
 
@@ -841,6 +931,8 @@ Required fields:
 - `infrastructureConfigurationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="distributionconfigurationsummarytypedef"></a>
 
 ## DistributionConfigurationSummaryTypeDef
 
@@ -857,6 +949,8 @@ Optional fields:
 - `dateUpdated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 - `regions`: `List`\[`str`\]
+
+<a id="distributionconfigurationtypedef"></a>
 
 ## DistributionConfigurationTypeDef
 
@@ -878,6 +972,8 @@ Optional fields:
 - `dateCreated`: `str`
 - `dateUpdated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="distributiontypedef"></a>
 
 ## DistributionTypeDef
 
@@ -901,6 +997,8 @@ Optional fields:
 - `s3ExportConfiguration`:
   [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
 
+<a id="ebsinstanceblockdevicespecificationtypedef"></a>
+
 ## EbsInstanceBlockDeviceSpecificationTypeDef
 
 ```python
@@ -918,6 +1016,8 @@ Optional fields:
 - `volumeType`: [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
 - `throughput`: `int`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -929,6 +1029,8 @@ Optional fields:
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
 
+<a id="getcomponentpolicyrequestrequesttypedef"></a>
+
 ## GetComponentPolicyRequestRequestTypeDef
 
 ```python
@@ -938,6 +1040,8 @@ from mypy_boto3_imagebuilder.type_defs import GetComponentPolicyRequestRequestTy
 Required fields:
 
 - `componentArn`: `str`
+
+<a id="getcomponentpolicyresponsetypedef"></a>
 
 ## GetComponentPolicyResponseTypeDef
 
@@ -952,6 +1056,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcomponentrequestrequesttypedef"></a>
+
 ## GetComponentRequestRequestTypeDef
 
 ```python
@@ -961,6 +1067,8 @@ from mypy_boto3_imagebuilder.type_defs import GetComponentRequestRequestTypeDef
 Required fields:
 
 - `componentBuildVersionArn`: `str`
+
+<a id="getcomponentresponsetypedef"></a>
 
 ## GetComponentResponseTypeDef
 
@@ -975,6 +1083,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontainerrecipepolicyrequestrequesttypedef"></a>
+
 ## GetContainerRecipePolicyRequestRequestTypeDef
 
 ```python
@@ -984,6 +1094,8 @@ from mypy_boto3_imagebuilder.type_defs import GetContainerRecipePolicyRequestReq
 Required fields:
 
 - `containerRecipeArn`: `str`
+
+<a id="getcontainerrecipepolicyresponsetypedef"></a>
 
 ## GetContainerRecipePolicyResponseTypeDef
 
@@ -998,6 +1110,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontainerreciperequestrequesttypedef"></a>
+
 ## GetContainerRecipeRequestRequestTypeDef
 
 ```python
@@ -1007,6 +1121,8 @@ from mypy_boto3_imagebuilder.type_defs import GetContainerRecipeRequestRequestTy
 Required fields:
 
 - `containerRecipeArn`: `str`
+
+<a id="getcontainerreciperesponsetypedef"></a>
 
 ## GetContainerRecipeResponseTypeDef
 
@@ -1022,6 +1138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdistributionconfigurationrequestrequesttypedef"></a>
+
 ## GetDistributionConfigurationRequestRequestTypeDef
 
 ```python
@@ -1031,6 +1149,8 @@ from mypy_boto3_imagebuilder.type_defs import GetDistributionConfigurationReques
 Required fields:
 
 - `distributionConfigurationArn`: `str`
+
+<a id="getdistributionconfigurationresponsetypedef"></a>
 
 ## GetDistributionConfigurationResponseTypeDef
 
@@ -1046,6 +1166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimagepipelinerequestrequesttypedef"></a>
+
 ## GetImagePipelineRequestRequestTypeDef
 
 ```python
@@ -1055,6 +1177,8 @@ from mypy_boto3_imagebuilder.type_defs import GetImagePipelineRequestRequestType
 Required fields:
 
 - `imagePipelineArn`: `str`
+
+<a id="getimagepipelineresponsetypedef"></a>
 
 ## GetImagePipelineResponseTypeDef
 
@@ -1069,6 +1193,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimagepolicyrequestrequesttypedef"></a>
+
 ## GetImagePolicyRequestRequestTypeDef
 
 ```python
@@ -1078,6 +1204,8 @@ from mypy_boto3_imagebuilder.type_defs import GetImagePolicyRequestRequestTypeDe
 Required fields:
 
 - `imageArn`: `str`
+
+<a id="getimagepolicyresponsetypedef"></a>
 
 ## GetImagePolicyResponseTypeDef
 
@@ -1092,6 +1220,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimagerecipepolicyrequestrequesttypedef"></a>
+
 ## GetImageRecipePolicyRequestRequestTypeDef
 
 ```python
@@ -1101,6 +1231,8 @@ from mypy_boto3_imagebuilder.type_defs import GetImageRecipePolicyRequestRequest
 Required fields:
 
 - `imageRecipeArn`: `str`
+
+<a id="getimagerecipepolicyresponsetypedef"></a>
 
 ## GetImageRecipePolicyResponseTypeDef
 
@@ -1115,6 +1247,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimagereciperequestrequesttypedef"></a>
+
 ## GetImageRecipeRequestRequestTypeDef
 
 ```python
@@ -1124,6 +1258,8 @@ from mypy_boto3_imagebuilder.type_defs import GetImageRecipeRequestRequestTypeDe
 Required fields:
 
 - `imageRecipeArn`: `str`
+
+<a id="getimagereciperesponsetypedef"></a>
 
 ## GetImageRecipeResponseTypeDef
 
@@ -1138,6 +1274,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimagerequestrequesttypedef"></a>
+
 ## GetImageRequestRequestTypeDef
 
 ```python
@@ -1147,6 +1285,8 @@ from mypy_boto3_imagebuilder.type_defs import GetImageRequestRequestTypeDef
 Required fields:
 
 - `imageBuildVersionArn`: `str`
+
+<a id="getimageresponsetypedef"></a>
 
 ## GetImageResponseTypeDef
 
@@ -1161,6 +1301,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinfrastructureconfigurationrequestrequesttypedef"></a>
+
 ## GetInfrastructureConfigurationRequestRequestTypeDef
 
 ```python
@@ -1170,6 +1312,8 @@ from mypy_boto3_imagebuilder.type_defs import GetInfrastructureConfigurationRequ
 Required fields:
 
 - `infrastructureConfigurationArn`: `str`
+
+<a id="getinfrastructureconfigurationresponsetypedef"></a>
 
 ## GetInfrastructureConfigurationResponseTypeDef
 
@@ -1185,6 +1329,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="imagepackagetypedef"></a>
+
 ## ImagePackageTypeDef
 
 ```python
@@ -1195,6 +1341,8 @@ Optional fields:
 
 - `packageName`: `str`
 - `packageVersion`: `str`
+
+<a id="imagepipelinetypedef"></a>
 
 ## ImagePipelineTypeDef
 
@@ -1223,6 +1371,8 @@ Optional fields:
 - `dateNextRun`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="imagerecipesummarytypedef"></a>
+
 ## ImageRecipeSummaryTypeDef
 
 ```python
@@ -1238,6 +1388,8 @@ Optional fields:
 - `parentImage`: `str`
 - `dateCreated`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="imagerecipetypedef"></a>
 
 ## ImageRecipeTypeDef
 
@@ -1265,6 +1417,8 @@ Optional fields:
 - `additionalInstanceConfiguration`:
   [AdditionalInstanceConfigurationTypeDef](./type_defs.md#additionalinstanceconfigurationtypedef)
 
+<a id="imagestatetypedef"></a>
+
 ## ImageStateTypeDef
 
 ```python
@@ -1275,6 +1429,8 @@ Optional fields:
 
 - `status`: [ImageStatusType](./literals.md#imagestatustype)
 - `reason`: `str`
+
+<a id="imagesummarytypedef"></a>
 
 ## ImageSummaryTypeDef
 
@@ -1298,6 +1454,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `buildType`: [BuildTypeType](./literals.md#buildtypetype)
 
+<a id="imagetestsconfigurationtypedef"></a>
+
 ## ImageTestsConfigurationTypeDef
 
 ```python
@@ -1308,6 +1466,8 @@ Optional fields:
 
 - `imageTestsEnabled`: `bool`
 - `timeoutMinutes`: `int`
+
+<a id="imagetypedef"></a>
 
 ## ImageTypeDef
 
@@ -1342,6 +1502,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `buildType`: [BuildTypeType](./literals.md#buildtypetype)
 
+<a id="imageversiontypedef"></a>
+
 ## ImageVersionTypeDef
 
 ```python
@@ -1359,6 +1521,8 @@ Optional fields:
 - `owner`: `str`
 - `dateCreated`: `str`
 - `buildType`: [BuildTypeType](./literals.md#buildtypetype)
+
+<a id="importcomponentrequestrequesttypedef"></a>
 
 ## ImportComponentRequestRequestTypeDef
 
@@ -1385,6 +1549,8 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="importcomponentresponsetypedef"></a>
+
 ## ImportComponentResponseTypeDef
 
 ```python
@@ -1398,6 +1564,8 @@ Required fields:
 - `componentBuildVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importvmimagerequestrequesttypedef"></a>
 
 ## ImportVmImageRequestRequestTypeDef
 
@@ -1419,6 +1587,8 @@ Optional fields:
 - `osVersion`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="importvmimageresponsetypedef"></a>
+
 ## ImportVmImageResponseTypeDef
 
 ```python
@@ -1432,6 +1602,8 @@ Required fields:
 - `clientToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="infrastructureconfigurationsummarytypedef"></a>
 
 ## InfrastructureConfigurationSummaryTypeDef
 
@@ -1450,6 +1622,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `instanceTypes`: `List`\[`str`\]
 - `instanceProfileName`: `str`
+
+<a id="infrastructureconfigurationtypedef"></a>
 
 ## InfrastructureConfigurationTypeDef
 
@@ -1477,6 +1651,8 @@ Optional fields:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="instanceblockdevicemappingtypedef"></a>
+
 ## InstanceBlockDeviceMappingTypeDef
 
 ```python
@@ -1491,6 +1667,8 @@ Optional fields:
 - `virtualName`: `str`
 - `noDevice`: `str`
 
+<a id="instanceconfigurationtypedef"></a>
+
 ## InstanceConfigurationTypeDef
 
 ```python
@@ -1503,6 +1681,8 @@ Optional fields:
 - `blockDeviceMappings`:
   `Sequence`\[[InstanceBlockDeviceMappingTypeDef](./type_defs.md#instanceblockdevicemappingtypedef)\]
 
+<a id="instancemetadataoptionstypedef"></a>
+
 ## InstanceMetadataOptionsTypeDef
 
 ```python
@@ -1513,6 +1693,8 @@ Optional fields:
 
 - `httpTokens`: `str`
 - `httpPutResponseHopLimit`: `int`
+
+<a id="launchpermissionconfigurationtypedef"></a>
 
 ## LaunchPermissionConfigurationTypeDef
 
@@ -1526,6 +1708,8 @@ Optional fields:
 - `userGroups`: `Sequence`\[`str`\]
 - `organizationArns`: `Sequence`\[`str`\]
 - `organizationalUnitArns`: `Sequence`\[`str`\]
+
+<a id="launchtemplateconfigurationtypedef"></a>
 
 ## LaunchTemplateConfigurationTypeDef
 
@@ -1542,6 +1726,8 @@ Optional fields:
 - `accountId`: `str`
 - `setDefaultVersion`: `bool`
 
+<a id="listcomponentbuildversionsrequestrequesttypedef"></a>
+
 ## ListComponentBuildVersionsRequestRequestTypeDef
 
 ```python
@@ -1556,6 +1742,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcomponentbuildversionsresponsetypedef"></a>
 
 ## ListComponentBuildVersionsResponseTypeDef
 
@@ -1572,6 +1760,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcomponentsrequestrequesttypedef"></a>
+
 ## ListComponentsRequestRequestTypeDef
 
 ```python
@@ -1585,6 +1775,8 @@ Optional fields:
 - `byName`: `bool`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcomponentsresponsetypedef"></a>
 
 ## ListComponentsResponseTypeDef
 
@@ -1601,6 +1793,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontainerrecipesrequestrequesttypedef"></a>
+
 ## ListContainerRecipesRequestRequestTypeDef
 
 ```python
@@ -1613,6 +1807,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcontainerrecipesresponsetypedef"></a>
 
 ## ListContainerRecipesResponseTypeDef
 
@@ -1629,6 +1825,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdistributionconfigurationsrequestrequesttypedef"></a>
+
 ## ListDistributionConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1640,6 +1838,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listdistributionconfigurationsresponsetypedef"></a>
 
 ## ListDistributionConfigurationsResponseTypeDef
 
@@ -1655,6 +1855,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listimagebuildversionsrequestrequesttypedef"></a>
 
 ## ListImageBuildVersionsRequestRequestTypeDef
 
@@ -1672,6 +1874,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listimagebuildversionsresponsetypedef"></a>
+
 ## ListImageBuildVersionsResponseTypeDef
 
 ```python
@@ -1686,6 +1890,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listimagepackagesrequestrequesttypedef"></a>
 
 ## ListImagePackagesRequestRequestTypeDef
 
@@ -1702,6 +1908,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listimagepackagesresponsetypedef"></a>
+
 ## ListImagePackagesResponseTypeDef
 
 ```python
@@ -1716,6 +1924,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listimagepipelineimagesrequestrequesttypedef"></a>
 
 ## ListImagePipelineImagesRequestRequestTypeDef
 
@@ -1733,6 +1943,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listimagepipelineimagesresponsetypedef"></a>
+
 ## ListImagePipelineImagesResponseTypeDef
 
 ```python
@@ -1748,6 +1960,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listimagepipelinesrequestrequesttypedef"></a>
+
 ## ListImagePipelinesRequestRequestTypeDef
 
 ```python
@@ -1759,6 +1973,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listimagepipelinesresponsetypedef"></a>
 
 ## ListImagePipelinesResponseTypeDef
 
@@ -1775,6 +1991,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listimagerecipesrequestrequesttypedef"></a>
+
 ## ListImageRecipesRequestRequestTypeDef
 
 ```python
@@ -1787,6 +2005,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listimagerecipesresponsetypedef"></a>
 
 ## ListImageRecipesResponseTypeDef
 
@@ -1803,6 +2023,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listimagesrequestrequesttypedef"></a>
+
 ## ListImagesRequestRequestTypeDef
 
 ```python
@@ -1817,6 +2039,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `includeDeprecated`: `bool`
+
+<a id="listimagesresponsetypedef"></a>
 
 ## ListImagesResponseTypeDef
 
@@ -1833,6 +2057,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinfrastructureconfigurationsrequestrequesttypedef"></a>
+
 ## ListInfrastructureConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1844,6 +2070,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listinfrastructureconfigurationsresponsetypedef"></a>
 
 ## ListInfrastructureConfigurationsResponseTypeDef
 
@@ -1860,6 +2088,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1869,6 +2099,8 @@ from mypy_boto3_imagebuilder.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1882,6 +2114,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loggingtypedef"></a>
+
 ## LoggingTypeDef
 
 ```python
@@ -1891,6 +2125,8 @@ from mypy_boto3_imagebuilder.type_defs import LoggingTypeDef
 Optional fields:
 
 - `s3Logs`: [S3LogsTypeDef](./type_defs.md#s3logstypedef)
+
+<a id="outputresourcestypedef"></a>
 
 ## OutputResourcesTypeDef
 
@@ -1903,6 +2139,8 @@ Optional fields:
 - `amis`: `List`\[[AmiTypeDef](./type_defs.md#amitypedef)\]
 - `containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
 
+<a id="putcomponentpolicyrequestrequesttypedef"></a>
+
 ## PutComponentPolicyRequestRequestTypeDef
 
 ```python
@@ -1913,6 +2151,8 @@ Required fields:
 
 - `componentArn`: `str`
 - `policy`: `str`
+
+<a id="putcomponentpolicyresponsetypedef"></a>
 
 ## PutComponentPolicyResponseTypeDef
 
@@ -1927,6 +2167,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putcontainerrecipepolicyrequestrequesttypedef"></a>
+
 ## PutContainerRecipePolicyRequestRequestTypeDef
 
 ```python
@@ -1937,6 +2179,8 @@ Required fields:
 
 - `containerRecipeArn`: `str`
 - `policy`: `str`
+
+<a id="putcontainerrecipepolicyresponsetypedef"></a>
 
 ## PutContainerRecipePolicyResponseTypeDef
 
@@ -1951,6 +2195,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putimagepolicyrequestrequesttypedef"></a>
+
 ## PutImagePolicyRequestRequestTypeDef
 
 ```python
@@ -1961,6 +2207,8 @@ Required fields:
 
 - `imageArn`: `str`
 - `policy`: `str`
+
+<a id="putimagepolicyresponsetypedef"></a>
 
 ## PutImagePolicyResponseTypeDef
 
@@ -1975,6 +2223,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putimagerecipepolicyrequestrequesttypedef"></a>
+
 ## PutImageRecipePolicyRequestRequestTypeDef
 
 ```python
@@ -1985,6 +2235,8 @@ Required fields:
 
 - `imageRecipeArn`: `str`
 - `policy`: `str`
+
+<a id="putimagerecipepolicyresponsetypedef"></a>
 
 ## PutImageRecipePolicyResponseTypeDef
 
@@ -1999,6 +2251,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2012,6 +2266,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3exportconfigurationtypedef"></a>
 
 ## S3ExportConfigurationTypeDef
 
@@ -2029,6 +2285,8 @@ Optional fields:
 
 - `s3Prefix`: `str`
 
+<a id="s3logstypedef"></a>
+
 ## S3LogsTypeDef
 
 ```python
@@ -2039,6 +2297,8 @@ Optional fields:
 
 - `s3BucketName`: `str`
 - `s3KeyPrefix`: `str`
+
+<a id="scheduletypedef"></a>
 
 ## ScheduleTypeDef
 
@@ -2053,6 +2313,8 @@ Optional fields:
 - `pipelineExecutionStartCondition`:
   [PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype)
 
+<a id="startimagepipelineexecutionrequestrequesttypedef"></a>
+
 ## StartImagePipelineExecutionRequestRequestTypeDef
 
 ```python
@@ -2063,6 +2325,8 @@ Required fields:
 
 - `imagePipelineArn`: `str`
 - `clientToken`: `str`
+
+<a id="startimagepipelineexecutionresponsetypedef"></a>
 
 ## StartImagePipelineExecutionResponseTypeDef
 
@@ -2078,6 +2342,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="systemsmanageragenttypedef"></a>
+
 ## SystemsManagerAgentTypeDef
 
 ```python
@@ -2087,6 +2353,8 @@ from mypy_boto3_imagebuilder.type_defs import SystemsManagerAgentTypeDef
 Optional fields:
 
 - `uninstallAfterBuild`: `bool`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2098,6 +2366,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="targetcontainerrepositorytypedef"></a>
 
 ## TargetContainerRepositoryTypeDef
 
@@ -2111,6 +2381,8 @@ Required fields:
   [ContainerRepositoryServiceType](./literals.md#containerrepositoryservicetype))
 - `repositoryName`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2121,6 +2393,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedistributionconfigurationrequestrequesttypedef"></a>
 
 ## UpdateDistributionConfigurationRequestRequestTypeDef
 
@@ -2139,6 +2413,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="updatedistributionconfigurationresponsetypedef"></a>
+
 ## UpdateDistributionConfigurationResponseTypeDef
 
 ```python
@@ -2152,6 +2428,8 @@ Required fields:
 - `distributionConfigurationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateimagepipelinerequestrequesttypedef"></a>
 
 ## UpdateImagePipelineRequestRequestTypeDef
 
@@ -2177,6 +2455,8 @@ Optional fields:
 - `schedule`: [ScheduleTypeDef](./type_defs.md#scheduletypedef)
 - `status`: [PipelineStatusType](./literals.md#pipelinestatustype)
 
+<a id="updateimagepipelineresponsetypedef"></a>
+
 ## UpdateImagePipelineResponseTypeDef
 
 ```python
@@ -2190,6 +2470,8 @@ Required fields:
 - `imagePipelineArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateinfrastructureconfigurationrequestrequesttypedef"></a>
 
 ## UpdateInfrastructureConfigurationRequestRequestTypeDef
 
@@ -2216,6 +2498,8 @@ Optional fields:
 - `resourceTags`: `Mapping`\[`str`, `str`\]
 - `instanceMetadataOptions`:
   [InstanceMetadataOptionsTypeDef](./type_defs.md#instancemetadataoptionstypedef)
+
+<a id="updateinfrastructureconfigurationresponsetypedef"></a>
 
 ## UpdateInfrastructureConfigurationResponseTypeDef
 

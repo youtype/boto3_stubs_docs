@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-directoryservice-module"></a>
+
 # Typed dictionaries for boto3 DirectoryService module
 
 > [Index](..) > [DirectoryService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
 type annotations stubs module
-[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 - [Typed dictionaries for boto3 DirectoryService module](#typed-dictionaries-for-boto3-directoryservice-module)
   - [AcceptSharedDirectoryRequestRequestTypeDef](#acceptshareddirectoryrequestrequesttypedef)
@@ -140,6 +142,8 @@ type annotations stubs module
   - [VerifyTrustRequestRequestTypeDef](#verifytrustrequestrequesttypedef)
   - [VerifyTrustResultTypeDef](#verifytrustresulttypedef)
 
+<a id="acceptshareddirectoryrequestrequesttypedef"></a>
+
 ## AcceptSharedDirectoryRequestRequestTypeDef
 
 ```python
@@ -149,6 +153,8 @@ from mypy_boto3_ds.type_defs import AcceptSharedDirectoryRequestRequestTypeDef
 Required fields:
 
 - `SharedDirectoryId`: `str`
+
+<a id="acceptshareddirectoryresulttypedef"></a>
 
 ## AcceptSharedDirectoryResultTypeDef
 
@@ -162,6 +168,8 @@ Required fields:
   [SharedDirectoryTypeDef](./type_defs.md#shareddirectorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="addiproutesrequestrequesttypedef"></a>
 
 ## AddIpRoutesRequestRequestTypeDef
 
@@ -178,6 +186,8 @@ Optional fields:
 
 - `UpdateSecurityGroupForDirectoryControllers`: `bool`
 
+<a id="addregionrequestrequesttypedef"></a>
+
 ## AddRegionRequestRequestTypeDef
 
 ```python
@@ -191,6 +201,8 @@ Required fields:
 - `VPCSettings`:
   [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
 
+<a id="addtagstoresourcerequestrequesttypedef"></a>
+
 ## AddTagsToResourceRequestRequestTypeDef
 
 ```python
@@ -201,6 +213,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="attributetypedef"></a>
 
 ## AttributeTypeDef
 
@@ -213,6 +227,8 @@ Optional fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="cancelschemaextensionrequestrequesttypedef"></a>
+
 ## CancelSchemaExtensionRequestRequestTypeDef
 
 ```python
@@ -223,6 +239,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `SchemaExtensionId`: `str`
+
+<a id="certificateinfotypedef"></a>
 
 ## CertificateInfoTypeDef
 
@@ -237,6 +255,8 @@ Optional fields:
 - `State`: [CertificateStateType](./literals.md#certificatestatetype)
 - `ExpiryDateTime`: `datetime`
 - `Type`: [CertificateTypeType](./literals.md#certificatetypetype)
+
+<a id="certificatetypedef"></a>
 
 ## CertificateTypeDef
 
@@ -256,6 +276,8 @@ Optional fields:
 - `ClientCertAuthSettings`:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
+<a id="clientauthenticationsettinginfotypedef"></a>
+
 ## ClientAuthenticationSettingInfoTypeDef
 
 ```python
@@ -270,6 +292,8 @@ Optional fields:
   [ClientAuthenticationStatusType](./literals.md#clientauthenticationstatustype)
 - `LastUpdatedDateTime`: `datetime`
 
+<a id="clientcertauthsettingstypedef"></a>
+
 ## ClientCertAuthSettingsTypeDef
 
 ```python
@@ -279,6 +303,8 @@ from mypy_boto3_ds.type_defs import ClientCertAuthSettingsTypeDef
 Optional fields:
 
 - `OCSPUrl`: `str`
+
+<a id="computertypedef"></a>
 
 ## ComputerTypeDef
 
@@ -293,6 +319,8 @@ Optional fields:
 - `ComputerAttributes`:
   `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
+<a id="conditionalforwardertypedef"></a>
+
 ## ConditionalForwarderTypeDef
 
 ```python
@@ -305,6 +333,8 @@ Optional fields:
 - `DnsIpAddrs`: `List`\[`str`\]
 - `ReplicationScope`: `Literal['Domain']` (see
   [ReplicationScopeType](./literals.md#replicationscopetype))
+
+<a id="connectdirectoryrequestrequesttypedef"></a>
 
 ## ConnectDirectoryRequestRequestTypeDef
 
@@ -326,6 +356,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="connectdirectoryresulttypedef"></a>
+
 ## ConnectDirectoryResultTypeDef
 
 ```python
@@ -338,6 +370,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createaliasrequestrequesttypedef"></a>
+
 ## CreateAliasRequestRequestTypeDef
 
 ```python
@@ -348,6 +382,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `Alias`: `str`
+
+<a id="createaliasresulttypedef"></a>
 
 ## CreateAliasResultTypeDef
 
@@ -361,6 +397,8 @@ Required fields:
 - `Alias`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcomputerrequestrequesttypedef"></a>
 
 ## CreateComputerRequestRequestTypeDef
 
@@ -380,6 +418,8 @@ Optional fields:
 - `ComputerAttributes`:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 
+<a id="createcomputerresulttypedef"></a>
+
 ## CreateComputerResultTypeDef
 
 ```python
@@ -392,6 +432,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createconditionalforwarderrequestrequesttypedef"></a>
+
 ## CreateConditionalForwarderRequestRequestTypeDef
 
 ```python
@@ -403,6 +445,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `RemoteDomainName`: `str`
 - `DnsIpAddrs`: `Sequence`\[`str`\]
+
+<a id="createdirectoryrequestrequesttypedef"></a>
 
 ## CreateDirectoryRequestRequestTypeDef
 
@@ -424,6 +468,8 @@ Optional fields:
   [DirectoryVpcSettingsTypeDef](./type_defs.md#directoryvpcsettingstypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdirectoryresulttypedef"></a>
+
 ## CreateDirectoryResultTypeDef
 
 ```python
@@ -436,6 +482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createlogsubscriptionrequestrequesttypedef"></a>
+
 ## CreateLogSubscriptionRequestRequestTypeDef
 
 ```python
@@ -446,6 +494,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `LogGroupName`: `str`
+
+<a id="createmicrosoftadrequestrequesttypedef"></a>
 
 ## CreateMicrosoftADRequestRequestTypeDef
 
@@ -467,6 +517,8 @@ Optional fields:
 - `Edition`: [DirectoryEditionType](./literals.md#directoryeditiontype)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmicrosoftadresulttypedef"></a>
+
 ## CreateMicrosoftADResultTypeDef
 
 ```python
@@ -478,6 +530,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsnapshotrequestrequesttypedef"></a>
 
 ## CreateSnapshotRequestRequestTypeDef
 
@@ -493,6 +547,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="createsnapshotresulttypedef"></a>
+
 ## CreateSnapshotResultTypeDef
 
 ```python
@@ -504,6 +560,8 @@ Required fields:
 - `SnapshotId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtrustrequestrequesttypedef"></a>
 
 ## CreateTrustRequestRequestTypeDef
 
@@ -524,6 +582,8 @@ Optional fields:
 - `ConditionalForwarderIpAddrs`: `Sequence`\[`str`\]
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
+<a id="createtrustresulttypedef"></a>
+
 ## CreateTrustResultTypeDef
 
 ```python
@@ -536,6 +596,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconditionalforwarderrequestrequesttypedef"></a>
+
 ## DeleteConditionalForwarderRequestRequestTypeDef
 
 ```python
@@ -547,6 +609,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `RemoteDomainName`: `str`
 
+<a id="deletedirectoryrequestrequesttypedef"></a>
+
 ## DeleteDirectoryRequestRequestTypeDef
 
 ```python
@@ -556,6 +620,8 @@ from mypy_boto3_ds.type_defs import DeleteDirectoryRequestRequestTypeDef
 Required fields:
 
 - `DirectoryId`: `str`
+
+<a id="deletedirectoryresulttypedef"></a>
 
 ## DeleteDirectoryResultTypeDef
 
@@ -569,6 +635,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletelogsubscriptionrequestrequesttypedef"></a>
+
 ## DeleteLogSubscriptionRequestRequestTypeDef
 
 ```python
@@ -579,6 +647,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 
+<a id="deletesnapshotrequestrequesttypedef"></a>
+
 ## DeleteSnapshotRequestRequestTypeDef
 
 ```python
@@ -588,6 +658,8 @@ from mypy_boto3_ds.type_defs import DeleteSnapshotRequestRequestTypeDef
 Required fields:
 
 - `SnapshotId`: `str`
+
+<a id="deletesnapshotresulttypedef"></a>
 
 ## DeleteSnapshotResultTypeDef
 
@@ -600,6 +672,8 @@ Required fields:
 - `SnapshotId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletetrustrequestrequesttypedef"></a>
 
 ## DeleteTrustRequestRequestTypeDef
 
@@ -615,6 +689,8 @@ Optional fields:
 
 - `DeleteAssociatedConditionalForwarder`: `bool`
 
+<a id="deletetrustresulttypedef"></a>
+
 ## DeleteTrustResultTypeDef
 
 ```python
@@ -627,6 +703,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deregistercertificaterequestrequesttypedef"></a>
+
 ## DeregisterCertificateRequestRequestTypeDef
 
 ```python
@@ -637,6 +715,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `CertificateId`: `str`
+
+<a id="deregistereventtopicrequestrequesttypedef"></a>
 
 ## DeregisterEventTopicRequestRequestTypeDef
 
@@ -649,6 +729,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `TopicName`: `str`
 
+<a id="describecertificaterequestrequesttypedef"></a>
+
 ## DescribeCertificateRequestRequestTypeDef
 
 ```python
@@ -659,6 +741,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `CertificateId`: `str`
+
+<a id="describecertificateresulttypedef"></a>
 
 ## DescribeCertificateResultTypeDef
 
@@ -671,6 +755,8 @@ Required fields:
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeclientauthenticationsettingsrequestrequesttypedef"></a>
 
 ## DescribeClientAuthenticationSettingsRequestRequestTypeDef
 
@@ -689,6 +775,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describeclientauthenticationsettingsresulttypedef"></a>
+
 ## DescribeClientAuthenticationSettingsResultTypeDef
 
 ```python
@@ -702,6 +790,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeconditionalforwardersrequestrequesttypedef"></a>
 
 ## DescribeConditionalForwardersRequestRequestTypeDef
 
@@ -717,6 +807,8 @@ Optional fields:
 
 - `RemoteDomainNames`: `Sequence`\[`str`\]
 
+<a id="describeconditionalforwardersresulttypedef"></a>
+
 ## DescribeConditionalForwardersResultTypeDef
 
 ```python
@@ -730,6 +822,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedirectoriesrequestrequesttypedef"></a>
+
 ## DescribeDirectoriesRequestRequestTypeDef
 
 ```python
@@ -741,6 +835,8 @@ Optional fields:
 - `DirectoryIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="describedirectoriesresulttypedef"></a>
 
 ## DescribeDirectoriesResultTypeDef
 
@@ -755,6 +851,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedomaincontrollersrequestrequesttypedef"></a>
 
 ## DescribeDomainControllersRequestRequestTypeDef
 
@@ -772,6 +870,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describedomaincontrollersresulttypedef"></a>
+
 ## DescribeDomainControllersResultTypeDef
 
 ```python
@@ -786,6 +886,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventtopicsrequestrequesttypedef"></a>
+
 ## DescribeEventTopicsRequestRequestTypeDef
 
 ```python
@@ -796,6 +898,8 @@ Optional fields:
 
 - `DirectoryId`: `str`
 - `TopicNames`: `Sequence`\[`str`\]
+
+<a id="describeeventtopicsresulttypedef"></a>
 
 ## DescribeEventTopicsResultTypeDef
 
@@ -809,6 +913,8 @@ Required fields:
   `List`\[[EventTopicTypeDef](./type_defs.md#eventtopictypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeldapssettingsrequestrequesttypedef"></a>
 
 ## DescribeLDAPSSettingsRequestRequestTypeDef
 
@@ -827,6 +933,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describeldapssettingsresulttypedef"></a>
+
 ## DescribeLDAPSSettingsResultTypeDef
 
 ```python
@@ -840,6 +948,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeregionsrequestrequesttypedef"></a>
 
 ## DescribeRegionsRequestRequestTypeDef
 
@@ -856,6 +966,8 @@ Optional fields:
 - `RegionName`: `str`
 - `NextToken`: `str`
 
+<a id="describeregionsresulttypedef"></a>
+
 ## DescribeRegionsResultTypeDef
 
 ```python
@@ -869,6 +981,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeshareddirectoriesrequestrequesttypedef"></a>
 
 ## DescribeSharedDirectoriesRequestRequestTypeDef
 
@@ -886,6 +1000,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describeshareddirectoriesresulttypedef"></a>
+
 ## DescribeSharedDirectoriesResultTypeDef
 
 ```python
@@ -900,6 +1016,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesnapshotsrequestrequesttypedef"></a>
+
 ## DescribeSnapshotsRequestRequestTypeDef
 
 ```python
@@ -912,6 +1030,8 @@ Optional fields:
 - `SnapshotIds`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="describesnapshotsresulttypedef"></a>
 
 ## DescribeSnapshotsResultTypeDef
 
@@ -926,6 +1046,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrustsrequestrequesttypedef"></a>
+
 ## DescribeTrustsRequestRequestTypeDef
 
 ```python
@@ -939,6 +1061,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describetrustsresulttypedef"></a>
+
 ## DescribeTrustsResultTypeDef
 
 ```python
@@ -951,6 +1075,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="directoryconnectsettingsdescriptiontypedef"></a>
 
 ## DirectoryConnectSettingsDescriptionTypeDef
 
@@ -967,6 +1093,8 @@ Optional fields:
 - `AvailabilityZones`: `List`\[`str`\]
 - `ConnectIps`: `List`\[`str`\]
 
+<a id="directoryconnectsettingstypedef"></a>
+
 ## DirectoryConnectSettingsTypeDef
 
 ```python
@@ -979,6 +1107,8 @@ Required fields:
 - `SubnetIds`: `Sequence`\[`str`\]
 - `CustomerDnsIps`: `Sequence`\[`str`\]
 - `CustomerUserName`: `str`
+
+<a id="directorydescriptiontypedef"></a>
 
 ## DirectoryDescriptionTypeDef
 
@@ -1018,6 +1148,8 @@ Optional fields:
   [OwnerDirectoryDescriptionTypeDef](./type_defs.md#ownerdirectorydescriptiontypedef)
 - `RegionsInfo`: [RegionsInfoTypeDef](./type_defs.md#regionsinfotypedef)
 
+<a id="directorylimitstypedef"></a>
+
 ## DirectoryLimitsTypeDef
 
 ```python
@@ -1036,6 +1168,8 @@ Optional fields:
 - `ConnectedDirectoriesCurrentCount`: `int`
 - `ConnectedDirectoriesLimitReached`: `bool`
 
+<a id="directoryvpcsettingsdescriptiontypedef"></a>
+
 ## DirectoryVpcSettingsDescriptionTypeDef
 
 ```python
@@ -1049,6 +1183,8 @@ Optional fields:
 - `SecurityGroupId`: `str`
 - `AvailabilityZones`: `List`\[`str`\]
 
+<a id="directoryvpcsettingstypedef"></a>
+
 ## DirectoryVpcSettingsTypeDef
 
 ```python
@@ -1059,6 +1195,8 @@ Required fields:
 
 - `VpcId`: `str`
 - `SubnetIds`: `Sequence`\[`str`\]
+
+<a id="disableclientauthenticationrequestrequesttypedef"></a>
 
 ## DisableClientAuthenticationRequestRequestTypeDef
 
@@ -1072,6 +1210,8 @@ Required fields:
 - `Type`: `Literal['SmartCard']` (see
   [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
 
+<a id="disableldapsrequestrequesttypedef"></a>
+
 ## DisableLDAPSRequestRequestTypeDef
 
 ```python
@@ -1084,6 +1224,8 @@ Required fields:
 - `Type`: `Literal['Client']` (see
   [LDAPSTypeType](./literals.md#ldapstypetype))
 
+<a id="disableradiusrequestrequesttypedef"></a>
+
 ## DisableRadiusRequestRequestTypeDef
 
 ```python
@@ -1093,6 +1235,8 @@ from mypy_boto3_ds.type_defs import DisableRadiusRequestRequestTypeDef
 Required fields:
 
 - `DirectoryId`: `str`
+
+<a id="disablessorequestrequesttypedef"></a>
 
 ## DisableSsoRequestRequestTypeDef
 
@@ -1108,6 +1252,8 @@ Optional fields:
 
 - `UserName`: `str`
 - `Password`: `str`
+
+<a id="domaincontrollertypedef"></a>
 
 ## DomainControllerTypeDef
 
@@ -1129,6 +1275,8 @@ Optional fields:
 - `LaunchTime`: `datetime`
 - `StatusLastUpdatedDateTime`: `datetime`
 
+<a id="enableclientauthenticationrequestrequesttypedef"></a>
+
 ## EnableClientAuthenticationRequestRequestTypeDef
 
 ```python
@@ -1140,6 +1288,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `Type`: `Literal['SmartCard']` (see
   [ClientAuthenticationTypeType](./literals.md#clientauthenticationtypetype))
+
+<a id="enableldapsrequestrequesttypedef"></a>
 
 ## EnableLDAPSRequestRequestTypeDef
 
@@ -1153,6 +1303,8 @@ Required fields:
 - `Type`: `Literal['Client']` (see
   [LDAPSTypeType](./literals.md#ldapstypetype))
 
+<a id="enableradiusrequestrequesttypedef"></a>
+
 ## EnableRadiusRequestRequestTypeDef
 
 ```python
@@ -1164,6 +1316,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `RadiusSettings`:
   [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
+
+<a id="enablessorequestrequesttypedef"></a>
 
 ## EnableSsoRequestRequestTypeDef
 
@@ -1180,6 +1334,8 @@ Optional fields:
 - `UserName`: `str`
 - `Password`: `str`
 
+<a id="eventtopictypedef"></a>
+
 ## EventTopicTypeDef
 
 ```python
@@ -1194,6 +1350,8 @@ Optional fields:
 - `CreatedDateTime`: `datetime`
 - `Status`: [TopicStatusType](./literals.md#topicstatustype)
 
+<a id="getdirectorylimitsresulttypedef"></a>
+
 ## GetDirectoryLimitsResultTypeDef
 
 ```python
@@ -1207,6 +1365,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsnapshotlimitsrequestrequesttypedef"></a>
+
 ## GetSnapshotLimitsRequestRequestTypeDef
 
 ```python
@@ -1216,6 +1376,8 @@ from mypy_boto3_ds.type_defs import GetSnapshotLimitsRequestRequestTypeDef
 Required fields:
 
 - `DirectoryId`: `str`
+
+<a id="getsnapshotlimitsresulttypedef"></a>
 
 ## GetSnapshotLimitsResultTypeDef
 
@@ -1229,6 +1391,8 @@ Required fields:
   [SnapshotLimitsTypeDef](./type_defs.md#snapshotlimitstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="iprouteinfotypedef"></a>
 
 ## IpRouteInfoTypeDef
 
@@ -1246,6 +1410,8 @@ Optional fields:
 - `IpRouteStatusReason`: `str`
 - `Description`: `str`
 
+<a id="iproutetypedef"></a>
+
 ## IpRouteTypeDef
 
 ```python
@@ -1256,6 +1422,8 @@ Optional fields:
 
 - `CidrIp`: `str`
 - `Description`: `str`
+
+<a id="ldapssettinginfotypedef"></a>
 
 ## LDAPSSettingInfoTypeDef
 
@@ -1268,6 +1436,8 @@ Optional fields:
 - `LDAPSStatus`: [LDAPSStatusType](./literals.md#ldapsstatustype)
 - `LDAPSStatusReason`: `str`
 - `LastUpdatedDateTime`: `datetime`
+
+<a id="listcertificatesrequestrequesttypedef"></a>
 
 ## ListCertificatesRequestRequestTypeDef
 
@@ -1284,6 +1454,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listcertificatesresulttypedef"></a>
+
 ## ListCertificatesResultTypeDef
 
 ```python
@@ -1297,6 +1469,8 @@ Required fields:
   `List`\[[CertificateInfoTypeDef](./type_defs.md#certificateinfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listiproutesrequestrequesttypedef"></a>
 
 ## ListIpRoutesRequestRequestTypeDef
 
@@ -1313,6 +1487,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listiproutesresulttypedef"></a>
+
 ## ListIpRoutesResultTypeDef
 
 ```python
@@ -1327,6 +1503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlogsubscriptionsrequestrequesttypedef"></a>
+
 ## ListLogSubscriptionsRequestRequestTypeDef
 
 ```python
@@ -1338,6 +1516,8 @@ Optional fields:
 - `DirectoryId`: `str`
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="listlogsubscriptionsresulttypedef"></a>
 
 ## ListLogSubscriptionsResultTypeDef
 
@@ -1352,6 +1532,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listschemaextensionsrequestrequesttypedef"></a>
 
 ## ListSchemaExtensionsRequestRequestTypeDef
 
@@ -1368,6 +1550,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listschemaextensionsresulttypedef"></a>
+
 ## ListSchemaExtensionsResultTypeDef
 
 ```python
@@ -1381,6 +1565,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -1397,6 +1583,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listtagsforresourceresulttypedef"></a>
+
 ## ListTagsForResourceResultTypeDef
 
 ```python
@@ -1410,6 +1598,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logsubscriptiontypedef"></a>
+
 ## LogSubscriptionTypeDef
 
 ```python
@@ -1421,6 +1611,8 @@ Optional fields:
 - `DirectoryId`: `str`
 - `LogGroupName`: `str`
 - `SubscriptionCreatedDateTime`: `datetime`
+
+<a id="ownerdirectorydescriptiontypedef"></a>
 
 ## OwnerDirectoryDescriptionTypeDef
 
@@ -1439,6 +1631,8 @@ Optional fields:
   [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
 - `RadiusStatus`: [RadiusStatusType](./literals.md#radiusstatustype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1450,6 +1644,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="radiussettingstypedef"></a>
 
 ## RadiusSettingsTypeDef
 
@@ -1468,6 +1664,8 @@ Optional fields:
   [RadiusAuthenticationProtocolType](./literals.md#radiusauthenticationprotocoltype)
 - `DisplayLabel`: `str`
 - `UseSameUsername`: `bool`
+
+<a id="regiondescriptiontypedef"></a>
 
 ## RegionDescriptionTypeDef
 
@@ -1488,6 +1686,8 @@ Optional fields:
 - `StatusLastUpdatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
 
+<a id="regionsinfotypedef"></a>
+
 ## RegionsInfoTypeDef
 
 ```python
@@ -1498,6 +1698,8 @@ Optional fields:
 
 - `PrimaryRegion`: `str`
 - `AdditionalRegions`: `List`\[`str`\]
+
+<a id="registercertificaterequestrequesttypedef"></a>
 
 ## RegisterCertificateRequestRequestTypeDef
 
@@ -1516,6 +1718,8 @@ Optional fields:
 - `ClientCertAuthSettings`:
   [ClientCertAuthSettingsTypeDef](./type_defs.md#clientcertauthsettingstypedef)
 
+<a id="registercertificateresulttypedef"></a>
+
 ## RegisterCertificateResultTypeDef
 
 ```python
@@ -1528,6 +1732,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registereventtopicrequestrequesttypedef"></a>
+
 ## RegisterEventTopicRequestRequestTypeDef
 
 ```python
@@ -1539,6 +1745,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `TopicName`: `str`
 
+<a id="rejectshareddirectoryrequestrequesttypedef"></a>
+
 ## RejectSharedDirectoryRequestRequestTypeDef
 
 ```python
@@ -1548,6 +1756,8 @@ from mypy_boto3_ds.type_defs import RejectSharedDirectoryRequestRequestTypeDef
 Required fields:
 
 - `SharedDirectoryId`: `str`
+
+<a id="rejectshareddirectoryresulttypedef"></a>
 
 ## RejectSharedDirectoryResultTypeDef
 
@@ -1561,6 +1771,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeiproutesrequestrequesttypedef"></a>
+
 ## RemoveIpRoutesRequestRequestTypeDef
 
 ```python
@@ -1572,6 +1784,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `CidrIps`: `Sequence`\[`str`\]
 
+<a id="removeregionrequestrequesttypedef"></a>
+
 ## RemoveRegionRequestRequestTypeDef
 
 ```python
@@ -1581,6 +1795,8 @@ from mypy_boto3_ds.type_defs import RemoveRegionRequestRequestTypeDef
 Required fields:
 
 - `DirectoryId`: `str`
+
+<a id="removetagsfromresourcerequestrequesttypedef"></a>
 
 ## RemoveTagsFromResourceRequestRequestTypeDef
 
@@ -1593,6 +1809,8 @@ Required fields:
 - `ResourceId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="resetuserpasswordrequestrequesttypedef"></a>
+
 ## ResetUserPasswordRequestRequestTypeDef
 
 ```python
@@ -1604,6 +1822,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `UserName`: `str`
 - `NewPassword`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1619,6 +1839,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restorefromsnapshotrequestrequesttypedef"></a>
+
 ## RestoreFromSnapshotRequestRequestTypeDef
 
 ```python
@@ -1628,6 +1850,8 @@ from mypy_boto3_ds.type_defs import RestoreFromSnapshotRequestRequestTypeDef
 Required fields:
 
 - `SnapshotId`: `str`
+
+<a id="schemaextensioninfotypedef"></a>
 
 ## SchemaExtensionInfoTypeDef
 
@@ -1646,6 +1870,8 @@ Optional fields:
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
 
+<a id="sharedirectoryrequestrequesttypedef"></a>
+
 ## ShareDirectoryRequestRequestTypeDef
 
 ```python
@@ -1662,6 +1888,8 @@ Optional fields:
 
 - `ShareNotes`: `str`
 
+<a id="sharedirectoryresulttypedef"></a>
+
 ## ShareDirectoryResultTypeDef
 
 ```python
@@ -1674,6 +1902,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="sharetargettypedef"></a>
+
 ## ShareTargetTypeDef
 
 ```python
@@ -1685,6 +1915,8 @@ Required fields:
 - `Id`: `str`
 - `Type`: `Literal['ACCOUNT']` (see
   [TargetTypeType](./literals.md#targettypetype))
+
+<a id="shareddirectorytypedef"></a>
 
 ## SharedDirectoryTypeDef
 
@@ -1704,6 +1936,8 @@ Optional fields:
 - `CreatedDateTime`: `datetime`
 - `LastUpdatedDateTime`: `datetime`
 
+<a id="snapshotlimitstypedef"></a>
+
 ## SnapshotLimitsTypeDef
 
 ```python
@@ -1715,6 +1949,8 @@ Optional fields:
 - `ManualSnapshotsLimit`: `int`
 - `ManualSnapshotsCurrentCount`: `int`
 - `ManualSnapshotsLimitReached`: `bool`
+
+<a id="snapshottypedef"></a>
 
 ## SnapshotTypeDef
 
@@ -1731,6 +1967,8 @@ Optional fields:
 - `Status`: [SnapshotStatusType](./literals.md#snapshotstatustype)
 - `StartTime`: `datetime`
 
+<a id="startschemaextensionrequestrequesttypedef"></a>
+
 ## StartSchemaExtensionRequestRequestTypeDef
 
 ```python
@@ -1744,6 +1982,8 @@ Required fields:
 - `LdifContent`: `str`
 - `Description`: `str`
 
+<a id="startschemaextensionresulttypedef"></a>
+
 ## StartSchemaExtensionResultTypeDef
 
 ```python
@@ -1756,6 +1996,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1766,6 +2008,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="trusttypedef"></a>
 
 ## TrustTypeDef
 
@@ -1787,6 +2031,8 @@ Optional fields:
 - `TrustStateReason`: `str`
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
+<a id="unsharedirectoryrequestrequesttypedef"></a>
+
 ## UnshareDirectoryRequestRequestTypeDef
 
 ```python
@@ -1797,6 +2043,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `UnshareTarget`: [UnshareTargetTypeDef](./type_defs.md#unsharetargettypedef)
+
+<a id="unsharedirectoryresulttypedef"></a>
 
 ## UnshareDirectoryResultTypeDef
 
@@ -1810,6 +2058,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="unsharetargettypedef"></a>
+
 ## UnshareTargetTypeDef
 
 ```python
@@ -1821,6 +2071,8 @@ Required fields:
 - `Id`: `str`
 - `Type`: `Literal['ACCOUNT']` (see
   [TargetTypeType](./literals.md#targettypetype))
+
+<a id="updateconditionalforwarderrequestrequesttypedef"></a>
 
 ## UpdateConditionalForwarderRequestRequestTypeDef
 
@@ -1834,6 +2086,8 @@ Required fields:
 - `RemoteDomainName`: `str`
 - `DnsIpAddrs`: `Sequence`\[`str`\]
 
+<a id="updatenumberofdomaincontrollersrequestrequesttypedef"></a>
+
 ## UpdateNumberOfDomainControllersRequestRequestTypeDef
 
 ```python
@@ -1844,6 +2098,8 @@ Required fields:
 
 - `DirectoryId`: `str`
 - `DesiredNumber`: `int`
+
+<a id="updateradiusrequestrequesttypedef"></a>
 
 ## UpdateRadiusRequestRequestTypeDef
 
@@ -1856,6 +2112,8 @@ Required fields:
 - `DirectoryId`: `str`
 - `RadiusSettings`:
   [RadiusSettingsTypeDef](./type_defs.md#radiussettingstypedef)
+
+<a id="updatetrustrequestrequesttypedef"></a>
 
 ## UpdateTrustRequestRequestTypeDef
 
@@ -1871,6 +2129,8 @@ Optional fields:
 
 - `SelectiveAuth`: [SelectiveAuthType](./literals.md#selectiveauthtype)
 
+<a id="updatetrustresulttypedef"></a>
+
 ## UpdateTrustResultTypeDef
 
 ```python
@@ -1884,6 +2144,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="verifytrustrequestrequesttypedef"></a>
+
 ## VerifyTrustRequestRequestTypeDef
 
 ```python
@@ -1893,6 +2155,8 @@ from mypy_boto3_ds.type_defs import VerifyTrustRequestRequestTypeDef
 Required fields:
 
 - `TrustId`: `str`
+
+<a id="verifytrustresulttypedef"></a>
 
 ## VerifyTrustResultTypeDef
 

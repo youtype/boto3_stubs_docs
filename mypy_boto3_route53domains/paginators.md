@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-route53domains-module"></a>
+
 # Paginators for boto3 Route53Domains module
 
 > [Index](..) > [Route53Domains](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [Route53Domains](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53domains.html#Route53Domains)
 type annotations stubs module
-[mypy_boto3_route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
+[mypy-boto3-route53domains](https://pypi.org/project/mypy-boto3-route53domains/).
 
 - [Paginators for boto3 Route53Domains module](#paginators-for-boto3-route53domains-module)
   - [ListDomainsPaginator](#listdomainspaginator)
   - [ListOperationsPaginator](#listoperationspaginator)
   - [ListPricesPaginator](#listpricespaginator)
   - [ViewBillingPaginator](#viewbillingpaginator)
+
+<a id="listdomainspaginator"></a>
 
 ## ListDomainsPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53domains.paginator import ListDomainsPaginator
 
 def get_list_domains_paginator() -> ListDomainsPaginator:
-    return boto3.client("route53domains").get_paginator("list_domains")
+    return Session().client("route53domains").get_paginator("list_domains")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ListDomainsPaginator.paginate` method:
 `ListDomainsPaginator.paginate` returns
 `_PageIterator`\[[ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef)\].
 
+<a id="listoperationspaginator"></a>
+
 ## ListOperationsPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53domains.paginator import ListOperationsPaginator
 
 def get_list_operations_paginator() -> ListOperationsPaginator:
-    return boto3.client("route53domains").get_paginator("list_operations")
+    return Session().client("route53domains").get_paginator("list_operations")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListOperationsPaginator.paginate` method:
 `ListOperationsPaginator.paginate` returns
 `_PageIterator`\[[ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef)\].
 
+<a id="listpricespaginator"></a>
+
 ## ListPricesPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53domains.paginator import ListPricesPaginator
 
 def get_list_prices_paginator() -> ListPricesPaginator:
-    return boto3.client("route53domains").get_paginator("list_prices")
+    return Session().client("route53domains").get_paginator("list_prices")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListPricesPaginator.paginate` method:
 `ListPricesPaginator.paginate` returns
 `_PageIterator`\[[ListPricesResponseTypeDef](./type_defs.md#listpricesresponsetypedef)\].
 
+<a id="viewbillingpaginator"></a>
+
 ## ViewBillingPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53domains.paginator import ViewBillingPaginator
 
 def get_view_billing_paginator() -> ViewBillingPaginator:
-    return boto3.client("route53domains").get_paginator("view_billing")
+    return Session().client("route53domains").get_paginator("view_billing")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-batch-module"></a>
+
 # Paginators for boto3 Batch module
 
 > [Index](..) > [Batch](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
 type annotations stubs module
-[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [Paginators for boto3 Batch module](#paginators-for-boto3-batch-module)
   - [DescribeComputeEnvironmentsPaginator](#describecomputeenvironmentspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [DescribeJobQueuesPaginator](#describejobqueuespaginator)
   - [ListJobsPaginator](#listjobspaginator)
   - [ListSchedulingPoliciesPaginator](#listschedulingpoliciespaginator)
+
+<a id="describecomputeenvironmentspaginator"></a>
 
 ## DescribeComputeEnvironmentsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_batch.paginator import DescribeComputeEnvironmentsPaginator
 
 def get_describe_compute_environments_paginator() -> DescribeComputeEnvironmentsPaginator:
-    return boto3.client("batch").get_paginator("describe_compute_environments")
+    return Session().client("batch").get_paginator("describe_compute_environments")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `DescribeComputeEnvironmentsPaginator.paginate` method:
 `DescribeComputeEnvironmentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef)\].
 
+<a id="describejobdefinitionspaginator"></a>
+
 ## DescribeJobDefinitionsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_batch.paginator import DescribeJobDefinitionsPaginator
 
 def get_describe_job_definitions_paginator() -> DescribeJobDefinitionsPaginator:
-    return boto3.client("batch").get_paginator("describe_job_definitions")
+    return Session().client("batch").get_paginator("describe_job_definitions")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `DescribeJobDefinitionsPaginator.paginate` method:
 `DescribeJobDefinitionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef)\].
 
+<a id="describejobqueuespaginator"></a>
+
 ## DescribeJobQueuesPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_batch.paginator import DescribeJobQueuesPaginator
 
 def get_describe_job_queues_paginator() -> DescribeJobQueuesPaginator:
-    return boto3.client("batch").get_paginator("describe_job_queues")
+    return Session().client("batch").get_paginator("describe_job_queues")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `DescribeJobQueuesPaginator.paginate` method:
 `DescribeJobQueuesPaginator.paginate` returns
 `_PageIterator`\[[DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("batch").get_paginator("list_jobs")`.
@@ -101,10 +117,12 @@ Type annotations for `boto3.client("batch").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_batch.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("batch").get_paginator("list_jobs")
+    return Session().client("batch").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:
@@ -124,6 +142,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
+<a id="listschedulingpoliciespaginator"></a>
+
 ## ListSchedulingPoliciesPaginator
 
 Type annotations for
@@ -132,10 +152,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_batch.paginator import ListSchedulingPoliciesPaginator
 
 def get_list_scheduling_policies_paginator() -> ListSchedulingPoliciesPaginator:
-    return boto3.client("batch").get_paginator("list_scheduling_policies")
+    return Session().client("batch").get_paginator("list_scheduling_policies")
 ```
 
 Boto3 documentation:

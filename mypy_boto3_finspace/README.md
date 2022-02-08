@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-finspace-module"></a>
+
 # Type annotations for boto3 finspace module
 
 > [Index](..) > finspace
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
 type annotations stubs module
-[mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
+[mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[finspace]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[finspace]'
+
+# standalone installation
 pip install mypy-boto3-finspace
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-finspace
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="finspaceclient"></a>
 
 ## finspaceClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_finspace.client import finspaceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -43,6 +57,8 @@ from mypy_boto3_finspace.client import finspaceClient
 - [untag_resource](./client.md#untag_resource)
 - [update_environment](./client.md#update_environment)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 finspaceClient [exceptions](./client.md#exceptions)
@@ -57,6 +73,8 @@ finspaceClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -70,6 +88,8 @@ from mypy_boto3_finspace.literals import EnvironmentStatusType, ...
 - [EnvironmentStatusType](./literals.md#environmentstatustype)
 - [FederationModeType](./literals.md#federationmodetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

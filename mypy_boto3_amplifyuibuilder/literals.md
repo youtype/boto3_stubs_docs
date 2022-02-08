@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-amplifyuibuilder-module"></a>
+
 # Literals for boto3 AmplifyUIBuilder module
 
 > [Index](..) > [AmplifyUIBuilder](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
 type annotations stubs module
-[mypy_boto3_amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
+[mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 - [Literals for boto3 AmplifyUIBuilder module](#literals-for-boto3-amplifyuibuilder-module)
   - [ListComponentsPaginatorName](#listcomponentspaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [TokenProvidersType](#tokenproviderstype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listcomponentspaginatorname"></a>
 
 ## ListComponentsPaginatorName
 
@@ -25,6 +29,8 @@ Values:
 
 - `list_components`
 
+<a id="listthemespaginatorname"></a>
+
 ## ListThemesPaginatorName
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_amplifyuibuilder.literals import ListThemesPaginatorName
 Values:
 
 - `list_themes`
+
+<a id="sortdirectiontype"></a>
 
 ## SortDirectionType
 
@@ -46,6 +54,8 @@ Values:
 - `ASC`
 - `DESC`
 
+<a id="tokenproviderstype"></a>
+
 ## TokenProvidersType
 
 ```python
@@ -55,6 +65,8 @@ from mypy_boto3_amplifyuibuilder.literals import TokenProvidersType
 Values:
 
 - `figma`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -363,6 +375,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

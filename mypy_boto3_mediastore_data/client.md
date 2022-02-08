@@ -1,3 +1,5 @@
+<a id="mediastoredataclient-for-boto3-mediastoredata-module"></a>
+
 # MediaStoreDataClient for boto3 MediaStoreData module
 
 > [Index](..) > [MediaStoreData](.) > MediaStoreDataClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
-[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+[mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [MediaStoreDataClient for boto3 MediaStoreData module](#mediastoredataclient-for-boto3-mediastoredata-module)
   - [MediaStoreDataClient](#mediastoredataclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [put_object](#put_object)
     - [get_paginator](#get_paginator)
 
+<a id="mediastoredataclient"></a>
+
 ## MediaStoreDataClient
 
 Type annotations for `boto3.client("mediastore-data")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("mediastore-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediastore_data.client import MediaStoreDataClient
 
 def get_mediastore-data_client() -> MediaStoreDataClient:
-    return boto3.client("mediastore-data")
+    return Session().client("mediastore-data")
 ```
 
 Boto3 documentation:
 [MediaStoreData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -57,7 +64,11 @@ Exceptions:
 - `Exceptions.ObjectNotFoundException`
 - `Exceptions.RequestedRangeNotSatisfiableException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -69,6 +80,8 @@ Boto3 documentation:
 [MediaStoreData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -84,6 +97,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_object"></a>
 
 ### delete_object
 
@@ -102,6 +117,8 @@ Keyword-only arguments:
 - `Path`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_object"></a>
 
 ### describe_object
 
@@ -122,6 +139,8 @@ Keyword-only arguments:
 Returns
 [DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -141,6 +160,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_object"></a>
+
 ### get_object
 
 Downloads the object at the specified path.
@@ -159,6 +180,8 @@ Keyword-only arguments:
 - `Range`: `str`
 
 Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
+
+<a id="list_items"></a>
 
 ### list_items
 
@@ -180,6 +203,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
+
+<a id="put_object"></a>
 
 ### put_object
 
@@ -205,6 +230,8 @@ Keyword-only arguments:
   [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
 
 Returns [PutObjectResponseTypeDef](./type_defs.md#putobjectresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

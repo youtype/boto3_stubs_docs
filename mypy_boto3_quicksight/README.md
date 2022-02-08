@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-quicksight-module"></a>
+
 # Type annotations for boto3 QuickSight module
 
 > [Index](..) > QuickSight
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
-[mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[quicksight]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[quicksight]'
+
+# standalone installation
 pip install mypy-boto3-quicksight
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-quicksight
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="quicksightclient"></a>
+
 ## QuickSightClient
 
 Type annotations for `boto3.client("quicksight")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_quicksight.client import QuickSightClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -152,6 +166,8 @@ from mypy_boto3_quicksight.client import QuickSightClient
 - [update_theme_permissions](./client.md#update_theme_permissions)
 - [update_user](./client.md#update_user)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 QuickSightClient [exceptions](./client.md#exceptions)
@@ -176,6 +192,8 @@ QuickSightClient [exceptions](./client.md#exceptions)
 - UnsupportedPricingPlanException
 - UnsupportedUserEditionException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -184,7 +202,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_quicksight.paginators import ListAnalysesPaginator, ...
+from mypy_boto3_quicksight.paginator import ListAnalysesPaginator, ...
 ```
 
 - [ListAnalysesPaginator](./paginators.md#listanalysespaginator)
@@ -201,6 +219,8 @@ from mypy_boto3_quicksight.paginators import ListAnalysesPaginator, ...
 - [ListThemesPaginator](./paginators.md#listthemespaginator)
 - [SearchAnalysesPaginator](./paginators.md#searchanalysespaginator)
 - [SearchDashboardsPaginator](./paginators.md#searchdashboardspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -269,6 +289,8 @@ from mypy_boto3_quicksight.literals import AnalysisErrorTypeType, ...
 - [UserRoleType](./literals.md#userroletype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

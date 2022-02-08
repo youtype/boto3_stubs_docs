@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-eventbridge-module"></a>
+
 # Literals for boto3 EventBridge module
 
 > [Index](..) > [EventBridge](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
 type annotations stubs module
-[mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
+[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 - [Literals for boto3 EventBridge module](#literals-for-boto3-eventbridge-module)
   - [ApiDestinationHttpMethodType](#apidestinationhttpmethodtype)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="apidestinationhttpmethodtype"></a>
+
 ## ApiDestinationHttpMethodType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 - `POST`
 - `PUT`
 
+<a id="apidestinationstatetype"></a>
+
 ## ApiDestinationStateType
 
 ```python
@@ -54,6 +60,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="archivestatetype"></a>
 
 ## ArchiveStateType
 
@@ -70,6 +78,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="assignpubliciptype"></a>
+
 ## AssignPublicIpType
 
 ```python
@@ -80,6 +90,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="connectionauthorizationtypetype"></a>
 
 ## ConnectionAuthorizationTypeType
 
@@ -93,6 +105,8 @@ Values:
 - `BASIC`
 - `OAUTH_CLIENT_CREDENTIALS`
 
+<a id="connectionoauthhttpmethodtype"></a>
+
 ## ConnectionOAuthHttpMethodType
 
 ```python
@@ -104,6 +118,8 @@ Values:
 - `GET`
 - `POST`
 - `PUT`
+
+<a id="connectionstatetype"></a>
 
 ## ConnectionStateType
 
@@ -121,6 +137,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="eventsourcestatetype"></a>
+
 ## EventSourceStateType
 
 ```python
@@ -132,6 +150,8 @@ Values:
 - `ACTIVE`
 - `DELETED`
 - `PENDING`
+
+<a id="launchtypetype"></a>
 
 ## LaunchTypeType
 
@@ -145,6 +165,8 @@ Values:
 - `EXTERNAL`
 - `FARGATE`
 
+<a id="listrulenamesbytargetpaginatorname"></a>
+
 ## ListRuleNamesByTargetPaginatorName
 
 ```python
@@ -154,6 +176,8 @@ from mypy_boto3_events.literals import ListRuleNamesByTargetPaginatorName
 Values:
 
 - `list_rule_names_by_target`
+
+<a id="listrulespaginatorname"></a>
 
 ## ListRulesPaginatorName
 
@@ -165,6 +189,8 @@ Values:
 
 - `list_rules`
 
+<a id="listtargetsbyrulepaginatorname"></a>
+
 ## ListTargetsByRulePaginatorName
 
 ```python
@@ -174,6 +200,8 @@ from mypy_boto3_events.literals import ListTargetsByRulePaginatorName
 Values:
 
 - `list_targets_by_rule`
+
+<a id="placementconstrainttypetype"></a>
 
 ## PlacementConstraintTypeType
 
@@ -185,6 +213,8 @@ Values:
 
 - `distinctInstance`
 - `memberOf`
+
+<a id="placementstrategytypetype"></a>
 
 ## PlacementStrategyTypeType
 
@@ -198,6 +228,8 @@ Values:
 - `random`
 - `spread`
 
+<a id="propagatetagstype"></a>
+
 ## PropagateTagsType
 
 ```python
@@ -207,6 +239,8 @@ from mypy_boto3_events.literals import PropagateTagsType
 Values:
 
 - `TASK_DEFINITION`
+
+<a id="replaystatetype"></a>
 
 ## ReplayStateType
 
@@ -223,6 +257,8 @@ Values:
 - `RUNNING`
 - `STARTING`
 
+<a id="rulestatetype"></a>
+
 ## RuleStateType
 
 ```python
@@ -233,6 +269,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -541,6 +579,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

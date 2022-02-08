@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-alexaforbusiness-module"></a>
+
 # Typed dictionaries for boto3 AlexaForBusiness module
 
 > [Index](..) > [AlexaForBusiness](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
-[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 - [Typed dictionaries for boto3 AlexaForBusiness module](#typed-dictionaries-for-boto3-alexaforbusiness-module)
   - [AddressBookDataTypeDef](#addressbookdatatypedef)
@@ -207,6 +209,8 @@ type annotations stubs module
   - [UpdateSkillGroupRequestRequestTypeDef](#updateskillgrouprequestrequesttypedef)
   - [UserDataTypeDef](#userdatatypedef)
 
+<a id="addressbookdatatypedef"></a>
+
 ## AddressBookDataTypeDef
 
 ```python
@@ -218,6 +222,8 @@ Optional fields:
 - `AddressBookArn`: `str`
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="addressbooktypedef"></a>
 
 ## AddressBookTypeDef
 
@@ -231,6 +237,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
+<a id="approveskillrequestrequesttypedef"></a>
+
 ## ApproveSkillRequestRequestTypeDef
 
 ```python
@@ -240,6 +248,8 @@ from mypy_boto3_alexaforbusiness.type_defs import ApproveSkillRequestRequestType
 Required fields:
 
 - `SkillId`: `str`
+
+<a id="associatecontactwithaddressbookrequestrequesttypedef"></a>
 
 ## AssociateContactWithAddressBookRequestRequestTypeDef
 
@@ -252,6 +262,8 @@ Required fields:
 - `ContactArn`: `str`
 - `AddressBookArn`: `str`
 
+<a id="associatedevicewithnetworkprofilerequestrequesttypedef"></a>
+
 ## AssociateDeviceWithNetworkProfileRequestRequestTypeDef
 
 ```python
@@ -262,6 +274,8 @@ Required fields:
 
 - `DeviceArn`: `str`
 - `NetworkProfileArn`: `str`
+
+<a id="associatedevicewithroomrequestrequesttypedef"></a>
 
 ## AssociateDeviceWithRoomRequestRequestTypeDef
 
@@ -274,6 +288,8 @@ Optional fields:
 - `DeviceArn`: `str`
 - `RoomArn`: `str`
 
+<a id="associateskillgroupwithroomrequestrequesttypedef"></a>
+
 ## AssociateSkillGroupWithRoomRequestRequestTypeDef
 
 ```python
@@ -284,6 +300,8 @@ Optional fields:
 
 - `SkillGroupArn`: `str`
 - `RoomArn`: `str`
+
+<a id="associateskillwithskillgrouprequestrequesttypedef"></a>
 
 ## AssociateSkillWithSkillGroupRequestRequestTypeDef
 
@@ -299,6 +317,8 @@ Optional fields:
 
 - `SkillGroupArn`: `str`
 
+<a id="associateskillwithusersrequestrequesttypedef"></a>
+
 ## AssociateSkillWithUsersRequestRequestTypeDef
 
 ```python
@@ -308,6 +328,8 @@ from mypy_boto3_alexaforbusiness.type_defs import AssociateSkillWithUsersRequest
 Required fields:
 
 - `SkillId`: `str`
+
+<a id="audiotypedef"></a>
 
 ## AudioTypeDef
 
@@ -320,6 +342,8 @@ Required fields:
 - `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
 - `Location`: `str`
 
+<a id="businessreportcontentrangetypedef"></a>
+
 ## BusinessReportContentRangeTypeDef
 
 ```python
@@ -331,6 +355,8 @@ Required fields:
 - `Interval`:
   [BusinessReportIntervalType](./literals.md#businessreportintervaltype)
 
+<a id="businessreportrecurrencetypedef"></a>
+
 ## BusinessReportRecurrenceTypeDef
 
 ```python
@@ -340,6 +366,8 @@ from mypy_boto3_alexaforbusiness.type_defs import BusinessReportRecurrenceTypeDe
 Optional fields:
 
 - `StartDate`: `str`
+
+<a id="businessreports3locationtypedef"></a>
 
 ## BusinessReportS3LocationTypeDef
 
@@ -351,6 +379,8 @@ Optional fields:
 
 - `Path`: `str`
 - `BucketName`: `str`
+
+<a id="businessreportscheduletypedef"></a>
 
 ## BusinessReportScheduleTypeDef
 
@@ -372,6 +402,8 @@ Optional fields:
 - `LastBusinessReport`:
   [BusinessReportTypeDef](./type_defs.md#businessreporttypedef)
 
+<a id="businessreporttypedef"></a>
+
 ## BusinessReportTypeDef
 
 ```python
@@ -388,6 +420,8 @@ Optional fields:
 - `DeliveryTime`: `datetime`
 - `DownloadUrl`: `str`
 
+<a id="categorytypedef"></a>
+
 ## CategoryTypeDef
 
 ```python
@@ -399,6 +433,8 @@ Optional fields:
 - `CategoryId`: `int`
 - `CategoryName`: `str`
 
+<a id="conferencepreferencetypedef"></a>
+
 ## ConferencePreferenceTypeDef
 
 ```python
@@ -408,6 +444,8 @@ from mypy_boto3_alexaforbusiness.type_defs import ConferencePreferenceTypeDef
 Optional fields:
 
 - `DefaultConferenceProviderArn`: `str`
+
+<a id="conferenceprovidertypedef"></a>
 
 ## ConferenceProviderTypeDef
 
@@ -425,6 +463,8 @@ Optional fields:
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 - `MeetingSetting`:
   [MeetingSettingTypeDef](./type_defs.md#meetingsettingtypedef)
+
+<a id="contactdatatypedef"></a>
 
 ## ContactDataTypeDef
 
@@ -444,6 +484,8 @@ Optional fields:
 - `SipAddresses`:
   `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
+<a id="contacttypedef"></a>
+
 ## ContactTypeDef
 
 ```python
@@ -462,6 +504,8 @@ Optional fields:
 - `SipAddresses`:
   `List`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
+<a id="contenttypedef"></a>
+
 ## ContentTypeDef
 
 ```python
@@ -473,6 +517,8 @@ Optional fields:
 - `TextList`: `Sequence`\[[TextTypeDef](./type_defs.md#texttypedef)\]
 - `SsmlList`: `Sequence`\[[SsmlTypeDef](./type_defs.md#ssmltypedef)\]
 - `AudioList`: `Sequence`\[[AudioTypeDef](./type_defs.md#audiotypedef)\]
+
+<a id="createaddressbookrequestrequesttypedef"></a>
 
 ## CreateAddressBookRequestRequestTypeDef
 
@@ -490,6 +536,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createaddressbookresponsetypedef"></a>
+
 ## CreateAddressBookResponseTypeDef
 
 ```python
@@ -501,6 +549,8 @@ Required fields:
 - `AddressBookArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbusinessreportschedulerequestrequesttypedef"></a>
 
 ## CreateBusinessReportScheduleRequestRequestTypeDef
 
@@ -524,6 +574,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createbusinessreportscheduleresponsetypedef"></a>
+
 ## CreateBusinessReportScheduleResponseTypeDef
 
 ```python
@@ -535,6 +587,8 @@ Required fields:
 - `ScheduleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createconferenceproviderrequestrequesttypedef"></a>
 
 ## CreateConferenceProviderRequestRequestTypeDef
 
@@ -557,6 +611,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createconferenceproviderresponsetypedef"></a>
+
 ## CreateConferenceProviderResponseTypeDef
 
 ```python
@@ -568,6 +624,8 @@ Required fields:
 - `ConferenceProviderArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcontactrequestrequesttypedef"></a>
 
 ## CreateContactRequestRequestTypeDef
 
@@ -591,6 +649,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcontactresponsetypedef"></a>
+
 ## CreateContactResponseTypeDef
 
 ```python
@@ -602,6 +662,8 @@ Required fields:
 - `ContactArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createendofmeetingremindertypedef"></a>
 
 ## CreateEndOfMeetingReminderTypeDef
 
@@ -615,6 +677,8 @@ Required fields:
 - `ReminderType`:
   [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
+
+<a id="creategatewaygrouprequestrequesttypedef"></a>
 
 ## CreateGatewayGroupRequestRequestTypeDef
 
@@ -632,6 +696,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creategatewaygroupresponsetypedef"></a>
+
 ## CreateGatewayGroupResponseTypeDef
 
 ```python
@@ -644,6 +710,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createinstantbookingtypedef"></a>
+
 ## CreateInstantBookingTypeDef
 
 ```python
@@ -654,6 +722,8 @@ Required fields:
 
 - `DurationInMinutes`: `int`
 - `Enabled`: `bool`
+
+<a id="createmeetingroomconfigurationtypedef"></a>
 
 ## CreateMeetingRoomConfigurationTypeDef
 
@@ -670,6 +740,8 @@ Optional fields:
   [CreateInstantBookingTypeDef](./type_defs.md#createinstantbookingtypedef)
 - `RequireCheckIn`:
   [CreateRequireCheckInTypeDef](./type_defs.md#createrequirecheckintypedef)
+
+<a id="createnetworkprofilerequestrequesttypedef"></a>
 
 ## CreateNetworkProfileRequestRequestTypeDef
 
@@ -696,6 +768,8 @@ Optional fields:
 - `TrustAnchors`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createnetworkprofileresponsetypedef"></a>
+
 ## CreateNetworkProfileResponseTypeDef
 
 ```python
@@ -707,6 +781,8 @@ Required fields:
 - `NetworkProfileArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprofilerequestrequesttypedef"></a>
 
 ## CreateProfileRequestRequestTypeDef
 
@@ -735,6 +811,8 @@ Optional fields:
   [CreateMeetingRoomConfigurationTypeDef](./type_defs.md#createmeetingroomconfigurationtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createprofileresponsetypedef"></a>
+
 ## CreateProfileResponseTypeDef
 
 ```python
@@ -747,6 +825,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrequirecheckintypedef"></a>
+
 ## CreateRequireCheckInTypeDef
 
 ```python
@@ -757,6 +837,8 @@ Required fields:
 
 - `ReleaseAfterMinutes`: `int`
 - `Enabled`: `bool`
+
+<a id="createroomrequestrequesttypedef"></a>
 
 ## CreateRoomRequestRequestTypeDef
 
@@ -776,6 +858,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createroomresponsetypedef"></a>
+
 ## CreateRoomResponseTypeDef
 
 ```python
@@ -787,6 +871,8 @@ Required fields:
 - `RoomArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createskillgrouprequestrequesttypedef"></a>
 
 ## CreateSkillGroupRequestRequestTypeDef
 
@@ -804,6 +890,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createskillgroupresponsetypedef"></a>
+
 ## CreateSkillGroupResponseTypeDef
 
 ```python
@@ -815,6 +903,8 @@ Required fields:
 - `SkillGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserrequestrequesttypedef"></a>
 
 ## CreateUserRequestRequestTypeDef
 
@@ -834,6 +924,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createuserresponsetypedef"></a>
+
 ## CreateUserResponseTypeDef
 
 ```python
@@ -846,6 +938,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteaddressbookrequestrequesttypedef"></a>
+
 ## DeleteAddressBookRequestRequestTypeDef
 
 ```python
@@ -855,6 +949,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeleteAddressBookRequestReques
 Required fields:
 
 - `AddressBookArn`: `str`
+
+<a id="deletebusinessreportschedulerequestrequesttypedef"></a>
 
 ## DeleteBusinessReportScheduleRequestRequestTypeDef
 
@@ -866,6 +962,8 @@ Required fields:
 
 - `ScheduleArn`: `str`
 
+<a id="deleteconferenceproviderrequestrequesttypedef"></a>
+
 ## DeleteConferenceProviderRequestRequestTypeDef
 
 ```python
@@ -875,6 +973,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeleteConferenceProviderReques
 Required fields:
 
 - `ConferenceProviderArn`: `str`
+
+<a id="deletecontactrequestrequesttypedef"></a>
 
 ## DeleteContactRequestRequestTypeDef
 
@@ -886,6 +986,8 @@ Required fields:
 
 - `ContactArn`: `str`
 
+<a id="deletedevicerequestrequesttypedef"></a>
+
 ## DeleteDeviceRequestRequestTypeDef
 
 ```python
@@ -895,6 +997,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeleteDeviceRequestRequestType
 Required fields:
 
 - `DeviceArn`: `str`
+
+<a id="deletedeviceusagedatarequestrequesttypedef"></a>
 
 ## DeleteDeviceUsageDataRequestRequestTypeDef
 
@@ -908,6 +1012,8 @@ Required fields:
 - `DeviceUsageType`: `Literal['VOICE']` (see
   [DeviceUsageTypeType](./literals.md#deviceusagetypetype))
 
+<a id="deletegatewaygrouprequestrequesttypedef"></a>
+
 ## DeleteGatewayGroupRequestRequestTypeDef
 
 ```python
@@ -917,6 +1023,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeleteGatewayGroupRequestReque
 Required fields:
 
 - `GatewayGroupArn`: `str`
+
+<a id="deletenetworkprofilerequestrequesttypedef"></a>
 
 ## DeleteNetworkProfileRequestRequestTypeDef
 
@@ -928,6 +1036,8 @@ Required fields:
 
 - `NetworkProfileArn`: `str`
 
+<a id="deleteprofilerequestrequesttypedef"></a>
+
 ## DeleteProfileRequestRequestTypeDef
 
 ```python
@@ -938,6 +1048,8 @@ Optional fields:
 
 - `ProfileArn`: `str`
 
+<a id="deleteroomrequestrequesttypedef"></a>
+
 ## DeleteRoomRequestRequestTypeDef
 
 ```python
@@ -947,6 +1059,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeleteRoomRequestRequestTypeDe
 Optional fields:
 
 - `RoomArn`: `str`
+
+<a id="deleteroomskillparameterrequestrequesttypedef"></a>
 
 ## DeleteRoomSkillParameterRequestRequestTypeDef
 
@@ -963,6 +1077,8 @@ Optional fields:
 
 - `RoomArn`: `str`
 
+<a id="deleteskillauthorizationrequestrequesttypedef"></a>
+
 ## DeleteSkillAuthorizationRequestRequestTypeDef
 
 ```python
@@ -977,6 +1093,8 @@ Optional fields:
 
 - `RoomArn`: `str`
 
+<a id="deleteskillgrouprequestrequesttypedef"></a>
+
 ## DeleteSkillGroupRequestRequestTypeDef
 
 ```python
@@ -986,6 +1104,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DeleteSkillGroupRequestRequest
 Optional fields:
 
 - `SkillGroupArn`: `str`
+
+<a id="deleteuserrequestrequesttypedef"></a>
 
 ## DeleteUserRequestRequestTypeDef
 
@@ -1001,6 +1121,8 @@ Optional fields:
 
 - `UserArn`: `str`
 
+<a id="developerinfotypedef"></a>
+
 ## DeveloperInfoTypeDef
 
 ```python
@@ -1013,6 +1135,8 @@ Optional fields:
 - `PrivacyPolicy`: `str`
 - `Email`: `str`
 - `Url`: `str`
+
+<a id="devicedatatypedef"></a>
 
 ## DeviceDataTypeDef
 
@@ -1037,6 +1161,8 @@ Optional fields:
   [DeviceStatusInfoTypeDef](./type_defs.md#devicestatusinfotypedef)
 - `CreatedTime`: `datetime`
 
+<a id="deviceeventtypedef"></a>
+
 ## DeviceEventTypeDef
 
 ```python
@@ -1048,6 +1174,8 @@ Optional fields:
 - `Type`: [DeviceEventTypeType](./literals.md#deviceeventtypetype)
 - `Value`: `str`
 - `Timestamp`: `datetime`
+
+<a id="devicenetworkprofileinfotypedef"></a>
 
 ## DeviceNetworkProfileInfoTypeDef
 
@@ -1061,6 +1189,8 @@ Optional fields:
 - `CertificateArn`: `str`
 - `CertificateExpirationTime`: `datetime`
 
+<a id="devicestatusdetailtypedef"></a>
+
 ## DeviceStatusDetailTypeDef
 
 ```python
@@ -1072,6 +1202,8 @@ Optional fields:
 - `Feature`: [FeatureType](./literals.md#featuretype)
 - `Code`:
   [DeviceStatusDetailCodeType](./literals.md#devicestatusdetailcodetype)
+
+<a id="devicestatusinfotypedef"></a>
 
 ## DeviceStatusInfoTypeDef
 
@@ -1086,6 +1218,8 @@ Optional fields:
 - `ConnectionStatus`:
   [ConnectionStatusType](./literals.md#connectionstatustype)
 - `ConnectionStatusUpdatedTime`: `datetime`
+
+<a id="devicetypedef"></a>
 
 ## DeviceTypeDef
 
@@ -1108,6 +1242,8 @@ Optional fields:
 - `NetworkProfileInfo`:
   [DeviceNetworkProfileInfoTypeDef](./type_defs.md#devicenetworkprofileinfotypedef)
 
+<a id="disassociatecontactfromaddressbookrequestrequesttypedef"></a>
+
 ## DisassociateContactFromAddressBookRequestRequestTypeDef
 
 ```python
@@ -1119,6 +1255,8 @@ Required fields:
 - `ContactArn`: `str`
 - `AddressBookArn`: `str`
 
+<a id="disassociatedevicefromroomrequestrequesttypedef"></a>
+
 ## DisassociateDeviceFromRoomRequestRequestTypeDef
 
 ```python
@@ -1128,6 +1266,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DisassociateDeviceFromRoomRequ
 Optional fields:
 
 - `DeviceArn`: `str`
+
+<a id="disassociateskillfromskillgrouprequestrequesttypedef"></a>
 
 ## DisassociateSkillFromSkillGroupRequestRequestTypeDef
 
@@ -1143,6 +1283,8 @@ Optional fields:
 
 - `SkillGroupArn`: `str`
 
+<a id="disassociateskillfromusersrequestrequesttypedef"></a>
+
 ## DisassociateSkillFromUsersRequestRequestTypeDef
 
 ```python
@@ -1152,6 +1294,8 @@ from mypy_boto3_alexaforbusiness.type_defs import DisassociateSkillFromUsersRequ
 Required fields:
 
 - `SkillId`: `str`
+
+<a id="disassociateskillgroupfromroomrequestrequesttypedef"></a>
 
 ## DisassociateSkillGroupFromRoomRequestRequestTypeDef
 
@@ -1163,6 +1307,8 @@ Optional fields:
 
 - `SkillGroupArn`: `str`
 - `RoomArn`: `str`
+
+<a id="endofmeetingremindertypedef"></a>
 
 ## EndOfMeetingReminderTypeDef
 
@@ -1177,6 +1323,8 @@ Optional fields:
   [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1188,6 +1336,8 @@ Required fields:
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="forgetsmarthomeappliancesrequestrequesttypedef"></a>
+
 ## ForgetSmartHomeAppliancesRequestRequestTypeDef
 
 ```python
@@ -1197,6 +1347,8 @@ from mypy_boto3_alexaforbusiness.type_defs import ForgetSmartHomeAppliancesReque
 Required fields:
 
 - `RoomArn`: `str`
+
+<a id="gatewaygroupsummarytypedef"></a>
 
 ## GatewayGroupSummaryTypeDef
 
@@ -1210,6 +1362,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
+<a id="gatewaygrouptypedef"></a>
+
 ## GatewayGroupTypeDef
 
 ```python
@@ -1221,6 +1375,8 @@ Optional fields:
 - `Arn`: `str`
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="gatewaysummarytypedef"></a>
 
 ## GatewaySummaryTypeDef
 
@@ -1236,6 +1392,8 @@ Optional fields:
 - `GatewayGroupArn`: `str`
 - `SoftwareVersion`: `str`
 
+<a id="gatewaytypedef"></a>
+
 ## GatewayTypeDef
 
 ```python
@@ -1250,6 +1408,8 @@ Optional fields:
 - `GatewayGroupArn`: `str`
 - `SoftwareVersion`: `str`
 
+<a id="getaddressbookrequestrequesttypedef"></a>
+
 ## GetAddressBookRequestRequestTypeDef
 
 ```python
@@ -1259,6 +1419,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetAddressBookRequestRequestTy
 Required fields:
 
 - `AddressBookArn`: `str`
+
+<a id="getaddressbookresponsetypedef"></a>
 
 ## GetAddressBookResponseTypeDef
 
@@ -1271,6 +1433,8 @@ Required fields:
 - `AddressBook`: [AddressBookTypeDef](./type_defs.md#addressbooktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getconferencepreferenceresponsetypedef"></a>
 
 ## GetConferencePreferenceResponseTypeDef
 
@@ -1285,6 +1449,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconferenceproviderrequestrequesttypedef"></a>
+
 ## GetConferenceProviderRequestRequestTypeDef
 
 ```python
@@ -1294,6 +1460,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetConferenceProviderRequestRe
 Required fields:
 
 - `ConferenceProviderArn`: `str`
+
+<a id="getconferenceproviderresponsetypedef"></a>
 
 ## GetConferenceProviderResponseTypeDef
 
@@ -1308,6 +1476,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontactrequestrequesttypedef"></a>
+
 ## GetContactRequestRequestTypeDef
 
 ```python
@@ -1317,6 +1487,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetContactRequestRequestTypeDe
 Required fields:
 
 - `ContactArn`: `str`
+
+<a id="getcontactresponsetypedef"></a>
 
 ## GetContactResponseTypeDef
 
@@ -1330,6 +1502,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicerequestrequesttypedef"></a>
+
 ## GetDeviceRequestRequestTypeDef
 
 ```python
@@ -1339,6 +1513,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetDeviceRequestRequestTypeDef
 Optional fields:
 
 - `DeviceArn`: `str`
+
+<a id="getdeviceresponsetypedef"></a>
 
 ## GetDeviceResponseTypeDef
 
@@ -1352,6 +1528,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgatewaygrouprequestrequesttypedef"></a>
+
 ## GetGatewayGroupRequestRequestTypeDef
 
 ```python
@@ -1361,6 +1539,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetGatewayGroupRequestRequestT
 Required fields:
 
 - `GatewayGroupArn`: `str`
+
+<a id="getgatewaygroupresponsetypedef"></a>
 
 ## GetGatewayGroupResponseTypeDef
 
@@ -1374,6 +1554,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgatewayrequestrequesttypedef"></a>
+
 ## GetGatewayRequestRequestTypeDef
 
 ```python
@@ -1383,6 +1565,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetGatewayRequestRequestTypeDe
 Required fields:
 
 - `GatewayArn`: `str`
+
+<a id="getgatewayresponsetypedef"></a>
 
 ## GetGatewayResponseTypeDef
 
@@ -1395,6 +1579,8 @@ Required fields:
 - `Gateway`: [GatewayTypeDef](./type_defs.md#gatewaytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinvitationconfigurationresponsetypedef"></a>
 
 ## GetInvitationConfigurationResponseTypeDef
 
@@ -1410,6 +1596,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnetworkprofilerequestrequesttypedef"></a>
+
 ## GetNetworkProfileRequestRequestTypeDef
 
 ```python
@@ -1419,6 +1607,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetNetworkProfileRequestReques
 Required fields:
 
 - `NetworkProfileArn`: `str`
+
+<a id="getnetworkprofileresponsetypedef"></a>
 
 ## GetNetworkProfileResponseTypeDef
 
@@ -1433,6 +1623,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getprofilerequestrequesttypedef"></a>
+
 ## GetProfileRequestRequestTypeDef
 
 ```python
@@ -1442,6 +1634,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetProfileRequestRequestTypeDe
 Optional fields:
 
 - `ProfileArn`: `str`
+
+<a id="getprofileresponsetypedef"></a>
 
 ## GetProfileResponseTypeDef
 
@@ -1455,6 +1649,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getroomrequestrequesttypedef"></a>
+
 ## GetRoomRequestRequestTypeDef
 
 ```python
@@ -1464,6 +1660,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetRoomRequestRequestTypeDef
 Optional fields:
 
 - `RoomArn`: `str`
+
+<a id="getroomresponsetypedef"></a>
 
 ## GetRoomResponseTypeDef
 
@@ -1476,6 +1674,8 @@ Required fields:
 - `Room`: [RoomTypeDef](./type_defs.md#roomtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getroomskillparameterrequestrequesttypedef"></a>
 
 ## GetRoomSkillParameterRequestRequestTypeDef
 
@@ -1492,6 +1692,8 @@ Optional fields:
 
 - `RoomArn`: `str`
 
+<a id="getroomskillparameterresponsetypedef"></a>
+
 ## GetRoomSkillParameterResponseTypeDef
 
 ```python
@@ -1505,6 +1707,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getskillgrouprequestrequesttypedef"></a>
+
 ## GetSkillGroupRequestRequestTypeDef
 
 ```python
@@ -1514,6 +1718,8 @@ from mypy_boto3_alexaforbusiness.type_defs import GetSkillGroupRequestRequestTyp
 Optional fields:
 
 - `SkillGroupArn`: `str`
+
+<a id="getskillgroupresponsetypedef"></a>
 
 ## GetSkillGroupResponseTypeDef
 
@@ -1527,6 +1733,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ipdialintypedef"></a>
+
 ## IPDialInTypeDef
 
 ```python
@@ -1537,6 +1745,8 @@ Required fields:
 
 - `Endpoint`: `str`
 - `CommsProtocol`: [CommsProtocolType](./literals.md#commsprotocoltype)
+
+<a id="instantbookingtypedef"></a>
 
 ## InstantBookingTypeDef
 
@@ -1549,6 +1759,8 @@ Optional fields:
 - `DurationInMinutes`: `int`
 - `Enabled`: `bool`
 
+<a id="listbusinessreportschedulesrequestrequesttypedef"></a>
+
 ## ListBusinessReportSchedulesRequestRequestTypeDef
 
 ```python
@@ -1559,6 +1771,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listbusinessreportschedulesresponsetypedef"></a>
 
 ## ListBusinessReportSchedulesResponseTypeDef
 
@@ -1574,6 +1788,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listconferenceprovidersrequestrequesttypedef"></a>
+
 ## ListConferenceProvidersRequestRequestTypeDef
 
 ```python
@@ -1584,6 +1800,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listconferenceprovidersresponsetypedef"></a>
 
 ## ListConferenceProvidersResponseTypeDef
 
@@ -1598,6 +1816,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdeviceeventsrequestrequesttypedef"></a>
 
 ## ListDeviceEventsRequestRequestTypeDef
 
@@ -1615,6 +1835,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdeviceeventsresponsetypedef"></a>
+
 ## ListDeviceEventsResponseTypeDef
 
 ```python
@@ -1629,6 +1851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgatewaygroupsrequestrequesttypedef"></a>
+
 ## ListGatewayGroupsRequestRequestTypeDef
 
 ```python
@@ -1639,6 +1863,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listgatewaygroupsresponsetypedef"></a>
 
 ## ListGatewayGroupsResponseTypeDef
 
@@ -1654,6 +1880,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgatewaysrequestrequesttypedef"></a>
+
 ## ListGatewaysRequestRequestTypeDef
 
 ```python
@@ -1665,6 +1893,8 @@ Optional fields:
 - `GatewayGroupArn`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listgatewaysresponsetypedef"></a>
 
 ## ListGatewaysResponseTypeDef
 
@@ -1679,6 +1909,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listskillsrequestrequesttypedef"></a>
 
 ## ListSkillsRequestRequestTypeDef
 
@@ -1695,6 +1927,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listskillsresponsetypedef"></a>
+
 ## ListSkillsResponseTypeDef
 
 ```python
@@ -1709,6 +1943,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listskillsstorecategoriesrequestrequesttypedef"></a>
+
 ## ListSkillsStoreCategoriesRequestRequestTypeDef
 
 ```python
@@ -1719,6 +1955,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listskillsstorecategoriesresponsetypedef"></a>
 
 ## ListSkillsStoreCategoriesResponseTypeDef
 
@@ -1732,6 +1970,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listskillsstoreskillsbycategoryrequestrequesttypedef"></a>
 
 ## ListSkillsStoreSkillsByCategoryRequestRequestTypeDef
 
@@ -1748,6 +1988,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listskillsstoreskillsbycategoryresponsetypedef"></a>
+
 ## ListSkillsStoreSkillsByCategoryResponseTypeDef
 
 ```python
@@ -1761,6 +2003,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsmarthomeappliancesrequestrequesttypedef"></a>
 
 ## ListSmartHomeAppliancesRequestRequestTypeDef
 
@@ -1777,6 +2021,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listsmarthomeappliancesresponsetypedef"></a>
+
 ## ListSmartHomeAppliancesResponseTypeDef
 
 ```python
@@ -1790,6 +2036,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsrequestrequesttypedef"></a>
 
 ## ListTagsRequestRequestTypeDef
 
@@ -1806,6 +2054,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsresponsetypedef"></a>
+
 ## ListTagsResponseTypeDef
 
 ```python
@@ -1818,6 +2068,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="meetingroomconfigurationtypedef"></a>
 
 ## MeetingRoomConfigurationTypeDef
 
@@ -1835,6 +2087,8 @@ Optional fields:
 - `RequireCheckIn`:
   [RequireCheckInTypeDef](./type_defs.md#requirecheckintypedef)
 
+<a id="meetingsettingtypedef"></a>
+
 ## MeetingSettingTypeDef
 
 ```python
@@ -1844,6 +2098,8 @@ from mypy_boto3_alexaforbusiness.type_defs import MeetingSettingTypeDef
 Required fields:
 
 - `RequirePin`: [RequirePinType](./literals.md#requirepintype)
+
+<a id="networkprofiledatatypedef"></a>
 
 ## NetworkProfileDataTypeDef
 
@@ -1862,6 +2118,8 @@ Optional fields:
 - `EapMethod`: `Literal['EAP_TLS']` (see
   [NetworkEapMethodType](./literals.md#networkeapmethodtype))
 - `CertificateAuthorityArn`: `str`
+
+<a id="networkprofiletypedef"></a>
 
 ## NetworkProfileTypeDef
 
@@ -1884,6 +2142,8 @@ Optional fields:
 - `CertificateAuthorityArn`: `str`
 - `TrustAnchors`: `List`\[`str`\]
 
+<a id="pstndialintypedef"></a>
+
 ## PSTNDialInTypeDef
 
 ```python
@@ -1897,6 +2157,8 @@ Required fields:
 - `OneClickIdDelay`: `str`
 - `OneClickPinDelay`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1909,6 +2171,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="phonenumbertypedef"></a>
+
 ## PhoneNumberTypeDef
 
 ```python
@@ -1919,6 +2183,8 @@ Required fields:
 
 - `Number`: `str`
 - `Type`: [PhoneNumberTypeType](./literals.md#phonenumbertypetype)
+
+<a id="profiledatatypedef"></a>
 
 ## ProfileDataTypeDef
 
@@ -1937,6 +2203,8 @@ Optional fields:
 - `TemperatureUnit`: [TemperatureUnitType](./literals.md#temperatureunittype)
 - `WakeWord`: [WakeWordType](./literals.md#wakewordtype)
 - `Locale`: `str`
+
+<a id="profiletypedef"></a>
 
 ## ProfileTypeDef
 
@@ -1963,6 +2231,8 @@ Optional fields:
 - `MeetingRoomConfiguration`:
   [MeetingRoomConfigurationTypeDef](./type_defs.md#meetingroomconfigurationtypedef)
 
+<a id="putconferencepreferencerequestrequesttypedef"></a>
+
 ## PutConferencePreferenceRequestRequestTypeDef
 
 ```python
@@ -1973,6 +2243,8 @@ Required fields:
 
 - `ConferencePreference`:
   [ConferencePreferenceTypeDef](./type_defs.md#conferencepreferencetypedef)
+
+<a id="putinvitationconfigurationrequestrequesttypedef"></a>
 
 ## PutInvitationConfigurationRequestRequestTypeDef
 
@@ -1988,6 +2260,8 @@ Optional fields:
 
 - `ContactEmail`: `str`
 - `PrivateSkillIds`: `Sequence`\[`str`\]
+
+<a id="putroomskillparameterrequestrequesttypedef"></a>
 
 ## PutRoomSkillParameterRequestRequestTypeDef
 
@@ -2005,6 +2279,8 @@ Optional fields:
 
 - `RoomArn`: `str`
 
+<a id="putskillauthorizationrequestrequesttypedef"></a>
+
 ## PutSkillAuthorizationRequestRequestTypeDef
 
 ```python
@@ -2019,6 +2295,8 @@ Required fields:
 Optional fields:
 
 - `RoomArn`: `str`
+
+<a id="registeravsdevicerequestrequesttypedef"></a>
 
 ## RegisterAVSDeviceRequestRequestTypeDef
 
@@ -2039,6 +2317,8 @@ Optional fields:
 - `RoomArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="registeravsdeviceresponsetypedef"></a>
+
 ## RegisterAVSDeviceResponseTypeDef
 
 ```python
@@ -2051,6 +2331,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rejectskillrequestrequesttypedef"></a>
+
 ## RejectSkillRequestRequestTypeDef
 
 ```python
@@ -2060,6 +2342,8 @@ from mypy_boto3_alexaforbusiness.type_defs import RejectSkillRequestRequestTypeD
 Required fields:
 
 - `SkillId`: `str`
+
+<a id="requirecheckintypedef"></a>
 
 ## RequireCheckInTypeDef
 
@@ -2072,6 +2356,8 @@ Optional fields:
 - `ReleaseAfterMinutes`: `int`
 - `Enabled`: `bool`
 
+<a id="resolveroomrequestrequesttypedef"></a>
+
 ## ResolveRoomRequestRequestTypeDef
 
 ```python
@@ -2082,6 +2368,8 @@ Required fields:
 
 - `UserId`: `str`
 - `SkillId`: `str`
+
+<a id="resolveroomresponsetypedef"></a>
 
 ## ResolveRoomResponseTypeDef
 
@@ -2098,6 +2386,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2112,6 +2402,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="revokeinvitationrequestrequesttypedef"></a>
+
 ## RevokeInvitationRequestRequestTypeDef
 
 ```python
@@ -2122,6 +2414,8 @@ Optional fields:
 
 - `UserArn`: `str`
 - `EnrollmentId`: `str`
+
+<a id="roomdatatypedef"></a>
 
 ## RoomDataTypeDef
 
@@ -2138,6 +2432,8 @@ Optional fields:
 - `ProfileArn`: `str`
 - `ProfileName`: `str`
 
+<a id="roomskillparametertypedef"></a>
+
 ## RoomSkillParameterTypeDef
 
 ```python
@@ -2148,6 +2444,8 @@ Required fields:
 
 - `ParameterKey`: `str`
 - `ParameterValue`: `str`
+
+<a id="roomtypedef"></a>
 
 ## RoomTypeDef
 
@@ -2163,6 +2461,8 @@ Optional fields:
 - `ProviderCalendarId`: `str`
 - `ProfileArn`: `str`
 
+<a id="searchaddressbooksrequestrequesttypedef"></a>
+
 ## SearchAddressBooksRequestRequestTypeDef
 
 ```python
@@ -2175,6 +2475,8 @@ Optional fields:
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="searchaddressbooksresponsetypedef"></a>
 
 ## SearchAddressBooksResponseTypeDef
 
@@ -2191,6 +2493,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchcontactsrequestrequesttypedef"></a>
+
 ## SearchContactsRequestRequestTypeDef
 
 ```python
@@ -2203,6 +2507,8 @@ Optional fields:
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="searchcontactsresponsetypedef"></a>
 
 ## SearchContactsResponseTypeDef
 
@@ -2218,6 +2524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchdevicesrequestrequesttypedef"></a>
+
 ## SearchDevicesRequestRequestTypeDef
 
 ```python
@@ -2230,6 +2538,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+
+<a id="searchdevicesresponsetypedef"></a>
 
 ## SearchDevicesResponseTypeDef
 
@@ -2245,6 +2555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchnetworkprofilesrequestrequesttypedef"></a>
+
 ## SearchNetworkProfilesRequestRequestTypeDef
 
 ```python
@@ -2257,6 +2569,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+
+<a id="searchnetworkprofilesresponsetypedef"></a>
 
 ## SearchNetworkProfilesResponseTypeDef
 
@@ -2273,6 +2587,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchprofilesrequestrequesttypedef"></a>
+
 ## SearchProfilesRequestRequestTypeDef
 
 ```python
@@ -2285,6 +2601,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+
+<a id="searchprofilesresponsetypedef"></a>
 
 ## SearchProfilesResponseTypeDef
 
@@ -2300,6 +2618,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchroomsrequestrequesttypedef"></a>
+
 ## SearchRoomsRequestRequestTypeDef
 
 ```python
@@ -2312,6 +2632,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+
+<a id="searchroomsresponsetypedef"></a>
 
 ## SearchRoomsResponseTypeDef
 
@@ -2327,6 +2649,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchskillgroupsrequestrequesttypedef"></a>
+
 ## SearchSkillGroupsRequestRequestTypeDef
 
 ```python
@@ -2339,6 +2663,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+
+<a id="searchskillgroupsresponsetypedef"></a>
 
 ## SearchSkillGroupsResponseTypeDef
 
@@ -2355,6 +2681,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="searchusersrequestrequesttypedef"></a>
+
 ## SearchUsersRequestRequestTypeDef
 
 ```python
@@ -2367,6 +2695,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `SortCriteria`: `Sequence`\[[SortTypeDef](./type_defs.md#sorttypedef)\]
+
+<a id="searchusersresponsetypedef"></a>
 
 ## SearchUsersResponseTypeDef
 
@@ -2381,6 +2711,8 @@ Required fields:
 - `TotalCount`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendannouncementrequestrequesttypedef"></a>
 
 ## SendAnnouncementRequestRequestTypeDef
 
@@ -2398,6 +2730,8 @@ Optional fields:
 
 - `TimeToLiveInSeconds`: `int`
 
+<a id="sendannouncementresponsetypedef"></a>
+
 ## SendAnnouncementResponseTypeDef
 
 ```python
@@ -2410,6 +2744,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="sendinvitationrequestrequesttypedef"></a>
+
 ## SendInvitationRequestRequestTypeDef
 
 ```python
@@ -2419,6 +2755,8 @@ from mypy_boto3_alexaforbusiness.type_defs import SendInvitationRequestRequestTy
 Optional fields:
 
 - `UserArn`: `str`
+
+<a id="sipaddresstypedef"></a>
 
 ## SipAddressTypeDef
 
@@ -2430,6 +2768,8 @@ Required fields:
 
 - `Uri`: `str`
 - `Type`: `Literal['WORK']` (see [SipTypeType](./literals.md#siptypetype))
+
+<a id="skilldetailstypedef"></a>
 
 ## SkillDetailsTypeDef
 
@@ -2450,6 +2790,8 @@ Optional fields:
 - `Reviews`: `Dict`\[`str`, `str`\]
 - `DeveloperInfo`: [DeveloperInfoTypeDef](./type_defs.md#developerinfotypedef)
 
+<a id="skillgroupdatatypedef"></a>
+
 ## SkillGroupDataTypeDef
 
 ```python
@@ -2462,6 +2804,8 @@ Optional fields:
 - `SkillGroupName`: `str`
 - `Description`: `str`
 
+<a id="skillgrouptypedef"></a>
+
 ## SkillGroupTypeDef
 
 ```python
@@ -2473,6 +2817,8 @@ Optional fields:
 - `SkillGroupArn`: `str`
 - `SkillGroupName`: `str`
 - `Description`: `str`
+
+<a id="skillsummarytypedef"></a>
 
 ## SkillSummaryTypeDef
 
@@ -2487,6 +2833,8 @@ Optional fields:
 - `SupportsLinking`: `bool`
 - `EnablementType`: [EnablementTypeType](./literals.md#enablementtypetype)
 - `SkillType`: [SkillTypeType](./literals.md#skilltypetype)
+
+<a id="skillsstoreskilltypedef"></a>
 
 ## SkillsStoreSkillTypeDef
 
@@ -2504,6 +2852,8 @@ Optional fields:
 - `SkillDetails`: [SkillDetailsTypeDef](./type_defs.md#skilldetailstypedef)
 - `SupportsLinking`: `bool`
 
+<a id="smarthomeappliancetypedef"></a>
+
 ## SmartHomeApplianceTypeDef
 
 ```python
@@ -2516,6 +2866,8 @@ Optional fields:
 - `Description`: `str`
 - `ManufacturerName`: `str`
 
+<a id="sorttypedef"></a>
+
 ## SortTypeDef
 
 ```python
@@ -2527,6 +2879,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: [SortValueType](./literals.md#sortvaluetype)
 
+<a id="ssmltypedef"></a>
+
 ## SsmlTypeDef
 
 ```python
@@ -2537,6 +2891,8 @@ Required fields:
 
 - `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
 - `Value`: `str`
+
+<a id="startdevicesyncrequestrequesttypedef"></a>
 
 ## StartDeviceSyncRequestRequestTypeDef
 
@@ -2553,6 +2909,8 @@ Optional fields:
 - `RoomArn`: `str`
 - `DeviceArn`: `str`
 
+<a id="startsmarthomeappliancediscoveryrequestrequesttypedef"></a>
+
 ## StartSmartHomeApplianceDiscoveryRequestRequestTypeDef
 
 ```python
@@ -2562,6 +2920,8 @@ from mypy_boto3_alexaforbusiness.type_defs import StartSmartHomeApplianceDiscove
 Required fields:
 
 - `RoomArn`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2574,6 +2934,8 @@ Required fields:
 - `Arn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2584,6 +2946,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="texttypedef"></a>
 
 ## TextTypeDef
 
@@ -2596,6 +2960,8 @@ Required fields:
 - `Locale`: `Literal['en-US']` (see [LocaleType](./literals.md#localetype))
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2606,6 +2972,8 @@ Required fields:
 
 - `Arn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateaddressbookrequestrequesttypedef"></a>
 
 ## UpdateAddressBookRequestRequestTypeDef
 
@@ -2621,6 +2989,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="updatebusinessreportschedulerequestrequesttypedef"></a>
 
 ## UpdateBusinessReportScheduleRequestRequestTypeDef
 
@@ -2641,6 +3011,8 @@ Optional fields:
 - `Recurrence`:
   [BusinessReportRecurrenceTypeDef](./type_defs.md#businessreportrecurrencetypedef)
 
+<a id="updateconferenceproviderrequestrequesttypedef"></a>
+
 ## UpdateConferenceProviderRequestRequestTypeDef
 
 ```python
@@ -2659,6 +3031,8 @@ Optional fields:
 
 - `IPDialIn`: [IPDialInTypeDef](./type_defs.md#ipdialintypedef)
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
+
+<a id="updatecontactrequestrequesttypedef"></a>
 
 ## UpdateContactRequestRequestTypeDef
 
@@ -2681,6 +3055,8 @@ Optional fields:
 - `SipAddresses`:
   `Sequence`\[[SipAddressTypeDef](./type_defs.md#sipaddresstypedef)\]
 
+<a id="updatedevicerequestrequesttypedef"></a>
+
 ## UpdateDeviceRequestRequestTypeDef
 
 ```python
@@ -2691,6 +3067,8 @@ Optional fields:
 
 - `DeviceArn`: `str`
 - `DeviceName`: `str`
+
+<a id="updateendofmeetingremindertypedef"></a>
 
 ## UpdateEndOfMeetingReminderTypeDef
 
@@ -2704,6 +3082,8 @@ Optional fields:
 - `ReminderType`:
   [EndOfMeetingReminderTypeType](./literals.md#endofmeetingremindertypetype)
 - `Enabled`: `bool`
+
+<a id="updategatewaygrouprequestrequesttypedef"></a>
 
 ## UpdateGatewayGroupRequestRequestTypeDef
 
@@ -2719,6 +3099,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="updategatewayrequestrequesttypedef"></a>
 
 ## UpdateGatewayRequestRequestTypeDef
 
@@ -2736,6 +3118,8 @@ Optional fields:
 - `Description`: `str`
 - `SoftwareVersion`: `str`
 
+<a id="updateinstantbookingtypedef"></a>
+
 ## UpdateInstantBookingTypeDef
 
 ```python
@@ -2746,6 +3130,8 @@ Optional fields:
 
 - `DurationInMinutes`: `int`
 - `Enabled`: `bool`
+
+<a id="updatemeetingroomconfigurationtypedef"></a>
 
 ## UpdateMeetingRoomConfigurationTypeDef
 
@@ -2762,6 +3148,8 @@ Optional fields:
   [UpdateInstantBookingTypeDef](./type_defs.md#updateinstantbookingtypedef)
 - `RequireCheckIn`:
   [UpdateRequireCheckInTypeDef](./type_defs.md#updaterequirecheckintypedef)
+
+<a id="updatenetworkprofilerequestrequesttypedef"></a>
 
 ## UpdateNetworkProfileRequestRequestTypeDef
 
@@ -2781,6 +3169,8 @@ Optional fields:
 - `NextPassword`: `str`
 - `CertificateAuthorityArn`: `str`
 - `TrustAnchors`: `Sequence`\[`str`\]
+
+<a id="updateprofilerequestrequesttypedef"></a>
 
 ## UpdateProfileRequestRequestTypeDef
 
@@ -2806,6 +3196,8 @@ Optional fields:
 - `MeetingRoomConfiguration`:
   [UpdateMeetingRoomConfigurationTypeDef](./type_defs.md#updatemeetingroomconfigurationtypedef)
 
+<a id="updaterequirecheckintypedef"></a>
+
 ## UpdateRequireCheckInTypeDef
 
 ```python
@@ -2816,6 +3208,8 @@ Optional fields:
 
 - `ReleaseAfterMinutes`: `int`
 - `Enabled`: `bool`
+
+<a id="updateroomrequestrequesttypedef"></a>
 
 ## UpdateRoomRequestRequestTypeDef
 
@@ -2831,6 +3225,8 @@ Optional fields:
 - `ProviderCalendarId`: `str`
 - `ProfileArn`: `str`
 
+<a id="updateskillgrouprequestrequesttypedef"></a>
+
 ## UpdateSkillGroupRequestRequestTypeDef
 
 ```python
@@ -2842,6 +3238,8 @@ Optional fields:
 - `SkillGroupArn`: `str`
 - `SkillGroupName`: `str`
 - `Description`: `str`
+
+<a id="userdatatypedef"></a>
 
 ## UserDataTypeDef
 

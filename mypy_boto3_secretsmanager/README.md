@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-secretsmanager-module"></a>
+
 # Type annotations for boto3 SecretsManager module
 
 > [Index](..) > SecretsManager
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
-[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[secretsmanager]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[secretsmanager]'
+
+# standalone installation
 pip install mypy-boto3-secretsmanager
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-secretsmanager
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="secretsmanagerclient"></a>
+
 ## SecretsManagerClient
 
 Type annotations for `boto3.client("secretsmanager")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_secretsmanager.client import SecretsManagerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -59,6 +73,8 @@ from mypy_boto3_secretsmanager.client import SecretsManagerClient
 - [update_secret_version_stage](./client.md#update_secret_version_stage)
 - [validate_resource_policy](./client.md#validate_resource_policy)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SecretsManagerClient [exceptions](./client.md#exceptions)
@@ -77,6 +93,8 @@ SecretsManagerClient [exceptions](./client.md#exceptions)
 - ResourceExistsException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -85,10 +103,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_secretsmanager.paginators import ListSecretsPaginator, ...
+from mypy_boto3_secretsmanager.paginator import ListSecretsPaginator, ...
 ```
 
 - [ListSecretsPaginator](./paginators.md#listsecretspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -106,6 +126,8 @@ from mypy_boto3_secretsmanager.literals import FilterNameStringTypeType, ...
 - [StatusTypeType](./literals.md#statustypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

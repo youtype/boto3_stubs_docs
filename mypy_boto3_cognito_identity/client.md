@@ -1,3 +1,5 @@
+<a id="cognitoidentityclient-for-boto3-cognitoidentity-module"></a>
+
 # CognitoIdentityClient for boto3 CognitoIdentity module
 
 > [Index](..) > [CognitoIdentity](.) > CognitoIdentityClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
-[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+[mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 - [CognitoIdentityClient for boto3 CognitoIdentity module](#cognitoidentityclient-for-boto3-cognitoidentity-module)
   - [CognitoIdentityClient](#cognitoidentityclient)
@@ -39,6 +41,8 @@ type annotations stubs module
     - [update_identity_pool](#update_identity_pool)
     - [get_paginator](#get_paginator)
 
+<a id="cognitoidentityclient"></a>
+
 ## CognitoIdentityClient
 
 Type annotations for `boto3.client("cognito-identity")`
@@ -46,14 +50,17 @@ Type annotations for `boto3.client("cognito-identity")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 
 def get_cognito-identity_client() -> CognitoIdentityClient:
-    return boto3.client("cognito-identity")
+    return Session().client("cognito-identity")
 ```
 
 Boto3 documentation:
 [CognitoIdentity.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -82,7 +89,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -94,6 +105,8 @@ Boto3 documentation:
 [CognitoIdentity.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -109,6 +122,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_identity_pool"></a>
 
 ### create_identity_pool
 
@@ -138,6 +153,8 @@ Keyword-only arguments:
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
+<a id="delete_identities"></a>
+
 ### delete_identities
 
 Deletes identities from an identity pool.
@@ -158,6 +175,8 @@ Keyword-only arguments:
 Returns
 [DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef).
 
+<a id="delete_identity_pool"></a>
+
 ### delete_identity_pool
 
 Deletes an identity pool.
@@ -174,6 +193,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
+
+<a id="describe_identity"></a>
 
 ### describe_identity
 
@@ -196,6 +217,8 @@ Keyword-only arguments:
 Returns
 [IdentityDescriptionResponseMetadataTypeDef](./type_defs.md#identitydescriptionresponsemetadatatypedef).
 
+<a id="describe_identity_pool"></a>
+
 ### describe_identity_pool
 
 Gets details about a particular identity pool, including the pool name, ID
@@ -216,6 +239,8 @@ Keyword-only arguments:
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -234,6 +259,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_credentials_for_identity"></a>
 
 ### get_credentials_for_identity
 
@@ -257,6 +284,8 @@ Keyword-only arguments:
 Returns
 [GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef).
 
+<a id="get_id"></a>
+
 ### get_id
 
 Generates (or retrieves) a Cognito ID.
@@ -276,6 +305,8 @@ Keyword-only arguments:
 - `Logins`: `Mapping`\[`str`, `str`\]
 
 Returns [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef).
+
+<a id="get_identity_pool_roles"></a>
 
 ### get_identity_pool_roles
 
@@ -297,6 +328,8 @@ Keyword-only arguments:
 Returns
 [GetIdentityPoolRolesResponseTypeDef](./type_defs.md#getidentitypoolrolesresponsetypedef).
 
+<a id="get_open_id_token"></a>
+
 ### get_open_id_token
 
 Gets an OpenID token, using a known Cognito ID.
@@ -317,6 +350,8 @@ Keyword-only arguments:
 
 Returns
 [GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef).
+
+<a id="get_open_id_token_for_developer_identity"></a>
 
 ### get_open_id_token_for_developer_identity
 
@@ -344,6 +379,8 @@ Keyword-only arguments:
 Returns
 [GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef).
 
+<a id="get_principal_tag_attribute_map"></a>
+
 ### get_principal_tag_attribute_map
 
 Use `GetPrincipalTagAttributeMap` to list all mappings between `PrincipalTags`
@@ -365,6 +402,8 @@ Keyword-only arguments:
 
 Returns
 [GetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponsetypedef).
+
+<a id="list_identities"></a>
 
 ### list_identities
 
@@ -388,6 +427,8 @@ Keyword-only arguments:
 Returns
 [ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
 
+<a id="list_identity_pools"></a>
+
 ### list_identity_pools
 
 Lists all of the Cognito identity pools registered for your account.
@@ -409,6 +450,8 @@ Keyword-only arguments:
 Returns
 [ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags that are assigned to an Amazon Cognito identity pool.
@@ -428,6 +471,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="lookup_developer_identity"></a>
 
 ### lookup_developer_identity
 
@@ -455,6 +500,8 @@ Keyword-only arguments:
 Returns
 [LookupDeveloperIdentityResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponsetypedef).
 
+<a id="merge_developer_identities"></a>
+
 ### merge_developer_identities
 
 Merges two users having different `IdentityId` s, existing in the same identity
@@ -479,6 +526,8 @@ Keyword-only arguments:
 Returns
 [MergeDeveloperIdentitiesResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponsetypedef).
 
+<a id="set_identity_pool_roles"></a>
+
 ### set_identity_pool_roles
 
 Sets the roles for an identity pool.
@@ -498,6 +547,8 @@ Keyword-only arguments:
 - `Roles`: `Mapping`\[`str`, `str`\] *(required)*
 - `RoleMappings`: `Mapping`\[`str`,
   [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
+
+<a id="set_principal_tag_attribute_map"></a>
 
 ### set_principal_tag_attribute_map
 
@@ -523,6 +574,8 @@ Keyword-only arguments:
 Returns
 [SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns a set of tags to the specified Amazon Cognito identity pool.
@@ -541,6 +594,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="unlink_developer_identity"></a>
 
 ### unlink_developer_identity
 
@@ -562,6 +617,8 @@ Keyword-only arguments:
 - `DeveloperProviderName`: `str` *(required)*
 - `DeveloperUserIdentifier`: `str` *(required)*
 
+<a id="unlink_identity"></a>
+
 ### unlink_identity
 
 Unlinks a federated identity from an existing account.
@@ -579,6 +636,8 @@ Keyword-only arguments:
 - `IdentityId`: `str` *(required)*
 - `Logins`: `Mapping`\[`str`, `str`\] *(required)*
 - `LoginsToRemove`: `Sequence`\[`str`\] *(required)*
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -598,6 +657,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_identity_pool"></a>
 
 ### update_identity_pool
 
@@ -627,6 +688,8 @@ Keyword-only arguments:
 - `IdentityPoolTags`: `Mapping`\[`str`, `str`\]
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-snowdevicemanagement-module"></a>
+
 # Paginators for boto3 SnowDeviceManagement module
 
 > [Index](..) > [SnowDeviceManagement](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [SnowDeviceManagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/snow-device-management.html#SnowDeviceManagement)
 type annotations stubs module
-[mypy_boto3_snow_device_management](https://pypi.org/project/mypy-boto3-snow-device-management/).
+[mypy-boto3-snow-device-management](https://pypi.org/project/mypy-boto3-snow-device-management/).
 
 - [Paginators for boto3 SnowDeviceManagement module](#paginators-for-boto3-snowdevicemanagement-module)
   - [ListDeviceResourcesPaginator](#listdeviceresourcespaginator)
   - [ListDevicesPaginator](#listdevicespaginator)
   - [ListExecutionsPaginator](#listexecutionspaginator)
   - [ListTasksPaginator](#listtaskspaginator)
+
+<a id="listdeviceresourcespaginator"></a>
 
 ## ListDeviceResourcesPaginator
 
@@ -21,10 +25,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snow_device_management.paginator import ListDeviceResourcesPaginator
 
 def get_list_device_resources_paginator() -> ListDeviceResourcesPaginator:
-    return boto3.client("snow-device-management").get_paginator("list_device_resources")
+    return Session().client("snow-device-management").get_paginator("list_device_resources")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListDeviceResourcesPaginator.paginate` method:
 `ListDeviceResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef)\].
 
+<a id="listdevicespaginator"></a>
+
 ## ListDevicesPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snow_device_management.paginator import ListDevicesPaginator
 
 def get_list_devices_paginator() -> ListDevicesPaginator:
-    return boto3.client("snow-device-management").get_paginator("list_devices")
+    return Session().client("snow-device-management").get_paginator("list_devices")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListDevicesPaginator.paginate` method:
 `ListDevicesPaginator.paginate` returns
 `_PageIterator`\[[ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef)\].
 
+<a id="listexecutionspaginator"></a>
+
 ## ListExecutionsPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snow_device_management.paginator import ListExecutionsPaginator
 
 def get_list_executions_paginator() -> ListExecutionsPaginator:
-    return boto3.client("snow-device-management").get_paginator("list_executions")
+    return Session().client("snow-device-management").get_paginator("list_executions")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListExecutionsPaginator.paginate` method:
 `ListExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef)\].
 
+<a id="listtaskspaginator"></a>
+
 ## ListTasksPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_snow_device_management.paginator import ListTasksPaginator
 
 def get_list_tasks_paginator() -> ListTasksPaginator:
-    return boto3.client("snow-device-management").get_paginator("list_tasks")
+    return Session().client("snow-device-management").get_paginator("list_tasks")
 ```
 
 Boto3 documentation:

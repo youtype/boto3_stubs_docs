@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-amplify-module"></a>
+
 # Typed dictionaries for boto3 Amplify module
 
 > [Index](..) > [Amplify](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
 type annotations stubs module
-[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+[mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [Typed dictionaries for boto3 Amplify module](#typed-dictionaries-for-boto3-amplify-module)
   - [AppTypeDef](#apptypedef)
@@ -97,6 +99,8 @@ type annotations stubs module
   - [UpdateWebhookResultTypeDef](#updatewebhookresulttypedef)
   - [WebhookTypeDef](#webhooktypedef)
 
+<a id="apptypedef"></a>
+
 ## AppTypeDef
 
 ```python
@@ -135,6 +139,8 @@ Optional fields:
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 
+<a id="artifacttypedef"></a>
+
 ## ArtifactTypeDef
 
 ```python
@@ -145,6 +151,8 @@ Required fields:
 
 - `artifactFileName`: `str`
 - `artifactId`: `str`
+
+<a id="autobranchcreationconfigtypedef"></a>
 
 ## AutoBranchCreationConfigTypeDef
 
@@ -165,6 +173,8 @@ Optional fields:
 - `enablePullRequestPreview`: `bool`
 - `pullRequestEnvironmentName`: `str`
 
+<a id="backendenvironmenttypedef"></a>
+
 ## BackendEnvironmentTypeDef
 
 ```python
@@ -182,6 +192,8 @@ Optional fields:
 
 - `stackName`: `str`
 - `deploymentArtifacts`: `str`
+
+<a id="branchtypedef"></a>
 
 ## BranchTypeDef
 
@@ -222,6 +234,8 @@ Optional fields:
 - `sourceBranch`: `str`
 - `backendEnvironmentArn`: `str`
 
+<a id="createapprequestrequesttypedef"></a>
+
 ## CreateAppRequestRequestTypeDef
 
 ```python
@@ -255,6 +269,8 @@ Optional fields:
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
 
+<a id="createappresulttypedef"></a>
+
 ## CreateAppResultTypeDef
 
 ```python
@@ -266,6 +282,8 @@ Required fields:
 - `app`: [AppTypeDef](./type_defs.md#apptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbackendenvironmentrequestrequesttypedef"></a>
 
 ## CreateBackendEnvironmentRequestRequestTypeDef
 
@@ -283,6 +301,8 @@ Optional fields:
 - `stackName`: `str`
 - `deploymentArtifacts`: `str`
 
+<a id="createbackendenvironmentresulttypedef"></a>
+
 ## CreateBackendEnvironmentResultTypeDef
 
 ```python
@@ -295,6 +315,8 @@ Required fields:
   [BackendEnvironmentTypeDef](./type_defs.md#backendenvironmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbranchrequestrequesttypedef"></a>
 
 ## CreateBranchRequestRequestTypeDef
 
@@ -326,6 +348,8 @@ Optional fields:
 - `pullRequestEnvironmentName`: `str`
 - `backendEnvironmentArn`: `str`
 
+<a id="createbranchresulttypedef"></a>
+
 ## CreateBranchResultTypeDef
 
 ```python
@@ -337,6 +361,8 @@ Required fields:
 - `branch`: [BranchTypeDef](./type_defs.md#branchtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdeploymentrequestrequesttypedef"></a>
 
 ## CreateDeploymentRequestRequestTypeDef
 
@@ -353,6 +379,8 @@ Optional fields:
 
 - `fileMap`: `Mapping`\[`str`, `str`\]
 
+<a id="createdeploymentresulttypedef"></a>
+
 ## CreateDeploymentResultTypeDef
 
 ```python
@@ -366,6 +394,8 @@ Required fields:
 - `zipUploadUrl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdomainassociationrequestrequesttypedef"></a>
 
 ## CreateDomainAssociationRequestRequestTypeDef
 
@@ -386,6 +416,8 @@ Optional fields:
 - `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 
+<a id="createdomainassociationresulttypedef"></a>
+
 ## CreateDomainAssociationResultTypeDef
 
 ```python
@@ -398,6 +430,8 @@ Required fields:
   [DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createwebhookrequestrequesttypedef"></a>
 
 ## CreateWebhookRequestRequestTypeDef
 
@@ -414,6 +448,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="createwebhookresulttypedef"></a>
+
 ## CreateWebhookResultTypeDef
 
 ```python
@@ -425,6 +461,8 @@ Required fields:
 - `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customruletypedef"></a>
 
 ## CustomRuleTypeDef
 
@@ -442,6 +480,8 @@ Optional fields:
 - `status`: `str`
 - `condition`: `str`
 
+<a id="deleteapprequestrequesttypedef"></a>
+
 ## DeleteAppRequestRequestTypeDef
 
 ```python
@@ -451,6 +491,8 @@ from mypy_boto3_amplify.type_defs import DeleteAppRequestRequestTypeDef
 Required fields:
 
 - `appId`: `str`
+
+<a id="deleteappresulttypedef"></a>
 
 ## DeleteAppResultTypeDef
 
@@ -464,6 +506,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebackendenvironmentrequestrequesttypedef"></a>
+
 ## DeleteBackendEnvironmentRequestRequestTypeDef
 
 ```python
@@ -474,6 +518,8 @@ Required fields:
 
 - `appId`: `str`
 - `environmentName`: `str`
+
+<a id="deletebackendenvironmentresulttypedef"></a>
 
 ## DeleteBackendEnvironmentResultTypeDef
 
@@ -488,6 +534,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebranchrequestrequesttypedef"></a>
+
 ## DeleteBranchRequestRequestTypeDef
 
 ```python
@@ -498,6 +546,8 @@ Required fields:
 
 - `appId`: `str`
 - `branchName`: `str`
+
+<a id="deletebranchresulttypedef"></a>
 
 ## DeleteBranchResultTypeDef
 
@@ -511,6 +561,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedomainassociationrequestrequesttypedef"></a>
+
 ## DeleteDomainAssociationRequestRequestTypeDef
 
 ```python
@@ -521,6 +573,8 @@ Required fields:
 
 - `appId`: `str`
 - `domainName`: `str`
+
+<a id="deletedomainassociationresulttypedef"></a>
 
 ## DeleteDomainAssociationResultTypeDef
 
@@ -535,6 +589,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletejobrequestrequesttypedef"></a>
+
 ## DeleteJobRequestRequestTypeDef
 
 ```python
@@ -546,6 +602,8 @@ Required fields:
 - `appId`: `str`
 - `branchName`: `str`
 - `jobId`: `str`
+
+<a id="deletejobresulttypedef"></a>
 
 ## DeleteJobResultTypeDef
 
@@ -559,6 +617,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletewebhookrequestrequesttypedef"></a>
+
 ## DeleteWebhookRequestRequestTypeDef
 
 ```python
@@ -568,6 +628,8 @@ from mypy_boto3_amplify.type_defs import DeleteWebhookRequestRequestTypeDef
 Required fields:
 
 - `webhookId`: `str`
+
+<a id="deletewebhookresulttypedef"></a>
 
 ## DeleteWebhookResultTypeDef
 
@@ -580,6 +642,8 @@ Required fields:
 - `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="domainassociationtypedef"></a>
 
 ## DomainAssociationTypeDef
 
@@ -602,6 +666,8 @@ Optional fields:
 - `autoSubDomainIAMRole`: `str`
 - `certificateVerificationDNSRecord`: `str`
 
+<a id="generateaccesslogsrequestrequesttypedef"></a>
+
 ## GenerateAccessLogsRequestRequestTypeDef
 
 ```python
@@ -618,6 +684,8 @@ Optional fields:
 - `startTime`: `Union`\[`datetime`, `str`\]
 - `endTime`: `Union`\[`datetime`, `str`\]
 
+<a id="generateaccesslogsresulttypedef"></a>
+
 ## GenerateAccessLogsResultTypeDef
 
 ```python
@@ -630,6 +698,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapprequestrequesttypedef"></a>
+
 ## GetAppRequestRequestTypeDef
 
 ```python
@@ -639,6 +709,8 @@ from mypy_boto3_amplify.type_defs import GetAppRequestRequestTypeDef
 Required fields:
 
 - `appId`: `str`
+
+<a id="getappresulttypedef"></a>
 
 ## GetAppResultTypeDef
 
@@ -652,6 +724,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getartifacturlrequestrequesttypedef"></a>
+
 ## GetArtifactUrlRequestRequestTypeDef
 
 ```python
@@ -661,6 +735,8 @@ from mypy_boto3_amplify.type_defs import GetArtifactUrlRequestRequestTypeDef
 Required fields:
 
 - `artifactId`: `str`
+
+<a id="getartifacturlresulttypedef"></a>
 
 ## GetArtifactUrlResultTypeDef
 
@@ -675,6 +751,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbackendenvironmentrequestrequesttypedef"></a>
+
 ## GetBackendEnvironmentRequestRequestTypeDef
 
 ```python
@@ -685,6 +763,8 @@ Required fields:
 
 - `appId`: `str`
 - `environmentName`: `str`
+
+<a id="getbackendenvironmentresulttypedef"></a>
 
 ## GetBackendEnvironmentResultTypeDef
 
@@ -699,6 +779,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbranchrequestrequesttypedef"></a>
+
 ## GetBranchRequestRequestTypeDef
 
 ```python
@@ -709,6 +791,8 @@ Required fields:
 
 - `appId`: `str`
 - `branchName`: `str`
+
+<a id="getbranchresulttypedef"></a>
 
 ## GetBranchResultTypeDef
 
@@ -722,6 +806,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdomainassociationrequestrequesttypedef"></a>
+
 ## GetDomainAssociationRequestRequestTypeDef
 
 ```python
@@ -732,6 +818,8 @@ Required fields:
 
 - `appId`: `str`
 - `domainName`: `str`
+
+<a id="getdomainassociationresulttypedef"></a>
 
 ## GetDomainAssociationResultTypeDef
 
@@ -746,6 +834,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobrequestrequesttypedef"></a>
+
 ## GetJobRequestRequestTypeDef
 
 ```python
@@ -757,6 +847,8 @@ Required fields:
 - `appId`: `str`
 - `branchName`: `str`
 - `jobId`: `str`
+
+<a id="getjobresulttypedef"></a>
 
 ## GetJobResultTypeDef
 
@@ -770,6 +862,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getwebhookrequestrequesttypedef"></a>
+
 ## GetWebhookRequestRequestTypeDef
 
 ```python
@@ -779,6 +873,8 @@ from mypy_boto3_amplify.type_defs import GetWebhookRequestRequestTypeDef
 Required fields:
 
 - `webhookId`: `str`
+
+<a id="getwebhookresulttypedef"></a>
 
 ## GetWebhookResultTypeDef
 
@@ -791,6 +887,8 @@ Required fields:
 - `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="jobsummarytypedef"></a>
 
 ## JobSummaryTypeDef
 
@@ -813,6 +911,8 @@ Optional fields:
 
 - `endTime`: `datetime`
 
+<a id="jobtypedef"></a>
+
 ## JobTypeDef
 
 ```python
@@ -824,6 +924,8 @@ Required fields:
 - `summary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
 - `steps`: `List`\[[StepTypeDef](./type_defs.md#steptypedef)\]
 
+<a id="listappsrequestrequesttypedef"></a>
+
 ## ListAppsRequestRequestTypeDef
 
 ```python
@@ -834,6 +936,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listappsresulttypedef"></a>
 
 ## ListAppsResultTypeDef
 
@@ -847,6 +951,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listartifactsrequestrequesttypedef"></a>
 
 ## ListArtifactsRequestRequestTypeDef
 
@@ -865,6 +971,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listartifactsresulttypedef"></a>
+
 ## ListArtifactsResultTypeDef
 
 ```python
@@ -877,6 +985,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbackendenvironmentsrequestrequesttypedef"></a>
 
 ## ListBackendEnvironmentsRequestRequestTypeDef
 
@@ -894,6 +1004,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listbackendenvironmentsresulttypedef"></a>
+
 ## ListBackendEnvironmentsResultTypeDef
 
 ```python
@@ -907,6 +1019,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listbranchesrequestrequesttypedef"></a>
 
 ## ListBranchesRequestRequestTypeDef
 
@@ -923,6 +1037,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listbranchesresulttypedef"></a>
+
 ## ListBranchesResultTypeDef
 
 ```python
@@ -935,6 +1051,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdomainassociationsrequestrequesttypedef"></a>
 
 ## ListDomainAssociationsRequestRequestTypeDef
 
@@ -951,6 +1069,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listdomainassociationsresulttypedef"></a>
+
 ## ListDomainAssociationsResultTypeDef
 
 ```python
@@ -964,6 +1084,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listjobsrequestrequesttypedef"></a>
 
 ## ListJobsRequestRequestTypeDef
 
@@ -981,6 +1103,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listjobsresulttypedef"></a>
+
 ## ListJobsResultTypeDef
 
 ```python
@@ -995,6 +1119,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1004,6 +1130,8 @@ from mypy_boto3_amplify.type_defs import ListTagsForResourceRequestRequestTypeDe
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1016,6 +1144,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listwebhooksrequestrequesttypedef"></a>
 
 ## ListWebhooksRequestRequestTypeDef
 
@@ -1032,6 +1162,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listwebhooksresulttypedef"></a>
+
 ## ListWebhooksResultTypeDef
 
 ```python
@@ -1045,6 +1177,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1056,6 +1190,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="productionbranchtypedef"></a>
 
 ## ProductionBranchTypeDef
 
@@ -1070,6 +1206,8 @@ Optional fields:
 - `thumbnailUrl`: `str`
 - `branchName`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1083,6 +1221,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startdeploymentrequestrequesttypedef"></a>
 
 ## StartDeploymentRequestRequestTypeDef
 
@@ -1100,6 +1240,8 @@ Optional fields:
 - `jobId`: `str`
 - `sourceUrl`: `str`
 
+<a id="startdeploymentresulttypedef"></a>
+
 ## StartDeploymentResultTypeDef
 
 ```python
@@ -1111,6 +1253,8 @@ Required fields:
 - `jobSummary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startjobrequestrequesttypedef"></a>
 
 ## StartJobRequestRequestTypeDef
 
@@ -1132,6 +1276,8 @@ Optional fields:
 - `commitMessage`: `str`
 - `commitTime`: `Union`\[`datetime`, `str`\]
 
+<a id="startjobresulttypedef"></a>
+
 ## StartJobResultTypeDef
 
 ```python
@@ -1143,6 +1289,8 @@ Required fields:
 - `jobSummary`: [JobSummaryTypeDef](./type_defs.md#jobsummarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="steptypedef"></a>
 
 ## StepTypeDef
 
@@ -1167,6 +1315,8 @@ Optional fields:
 - `statusReason`: `str`
 - `context`: `str`
 
+<a id="stopjobrequestrequesttypedef"></a>
+
 ## StopJobRequestRequestTypeDef
 
 ```python
@@ -1178,6 +1328,8 @@ Required fields:
 - `appId`: `str`
 - `branchName`: `str`
 - `jobId`: `str`
+
+<a id="stopjobresulttypedef"></a>
 
 ## StopJobResultTypeDef
 
@@ -1191,6 +1343,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="subdomainsettingtypedef"></a>
+
 ## SubDomainSettingTypeDef
 
 ```python
@@ -1201,6 +1355,8 @@ Required fields:
 
 - `prefix`: `str`
 - `branchName`: `str`
+
+<a id="subdomaintypedef"></a>
 
 ## SubDomainTypeDef
 
@@ -1215,6 +1371,8 @@ Required fields:
 - `verified`: `bool`
 - `dnsRecord`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1226,6 +1384,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1236,6 +1396,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapprequestrequesttypedef"></a>
 
 ## UpdateAppRequestRequestTypeDef
 
@@ -1270,6 +1432,8 @@ Optional fields:
 - `oauthToken`: `str`
 - `accessToken`: `str`
 
+<a id="updateappresulttypedef"></a>
+
 ## UpdateAppResultTypeDef
 
 ```python
@@ -1281,6 +1445,8 @@ Required fields:
 - `app`: [AppTypeDef](./type_defs.md#apptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatebranchrequestrequesttypedef"></a>
 
 ## UpdateBranchRequestRequestTypeDef
 
@@ -1311,6 +1477,8 @@ Optional fields:
 - `pullRequestEnvironmentName`: `str`
 - `backendEnvironmentArn`: `str`
 
+<a id="updatebranchresulttypedef"></a>
+
 ## UpdateBranchResultTypeDef
 
 ```python
@@ -1322,6 +1490,8 @@ Required fields:
 - `branch`: [BranchTypeDef](./type_defs.md#branchtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedomainassociationrequestrequesttypedef"></a>
 
 ## UpdateDomainAssociationRequestRequestTypeDef
 
@@ -1342,6 +1512,8 @@ Optional fields:
 - `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 
+<a id="updatedomainassociationresulttypedef"></a>
+
 ## UpdateDomainAssociationResultTypeDef
 
 ```python
@@ -1354,6 +1526,8 @@ Required fields:
   [DomainAssociationTypeDef](./type_defs.md#domainassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatewebhookrequestrequesttypedef"></a>
 
 ## UpdateWebhookRequestRequestTypeDef
 
@@ -1370,6 +1544,8 @@ Optional fields:
 - `branchName`: `str`
 - `description`: `str`
 
+<a id="updatewebhookresulttypedef"></a>
+
 ## UpdateWebhookResultTypeDef
 
 ```python
@@ -1381,6 +1557,8 @@ Required fields:
 - `webhook`: [WebhookTypeDef](./type_defs.md#webhooktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="webhooktypedef"></a>
 
 ## WebhookTypeDef
 

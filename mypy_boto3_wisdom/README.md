@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-connectwisdomservice-module"></a>
+
 # Type annotations for boto3 ConnectWisdomService module
 
 > [Index](..) > ConnectWisdomService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
 type annotations stubs module
-[mypy_boto3_wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[wisdom]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[wisdom]'
+
+# standalone installation
 pip install mypy-boto3-wisdom
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-wisdom
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="connectwisdomserviceclient"></a>
+
 ## ConnectWisdomServiceClient
 
 Type annotations for `boto3.client("wisdom")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -68,6 +82,8 @@ from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
 - [update_content](./client.md#update_content)
 - [update_knowledge_base_template_uri](./client.md#update_knowledge_base_template_uri)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ConnectWisdomServiceClient [exceptions](./client.md#exceptions)
@@ -81,6 +97,8 @@ ConnectWisdomServiceClient [exceptions](./client.md#exceptions)
 - TooManyTagsException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -89,7 +107,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_wisdom.paginators import ListAssistantAssociationsPaginator, ...
+from mypy_boto3_wisdom.paginator import ListAssistantAssociationsPaginator, ...
 ```
 
 - [ListAssistantAssociationsPaginator](./paginators.md#listassistantassociationspaginator)
@@ -99,6 +117,8 @@ from mypy_boto3_wisdom.paginators import ListAssistantAssociationsPaginator, ...
 - [QueryAssistantPaginator](./paginators.md#queryassistantpaginator)
 - [SearchContentPaginator](./paginators.md#searchcontentpaginator)
 - [SearchSessionsPaginator](./paginators.md#searchsessionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -128,6 +148,8 @@ from mypy_boto3_wisdom.literals import AssistantStatusType, ...
 - [SearchSessionsPaginatorName](./literals.md#searchsessionspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

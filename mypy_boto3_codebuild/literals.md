@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codebuild-module"></a>
+
 # Literals for boto3 CodeBuild module
 
 > [Index](..) > [CodeBuild](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
-[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [Literals for boto3 CodeBuild module](#literals-for-boto3-codebuild-module)
   - [ArtifactNamespaceType](#artifactnamespacetype)
@@ -61,6 +63,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="artifactnamespacetype"></a>
+
 ## ArtifactNamespaceType
 
 ```python
@@ -72,6 +76,8 @@ Values:
 - `BUILD_ID`
 - `NONE`
 
+<a id="artifactpackagingtype"></a>
+
 ## ArtifactPackagingType
 
 ```python
@@ -82,6 +88,8 @@ Values:
 
 - `NONE`
 - `ZIP`
+
+<a id="artifactstypetype"></a>
 
 ## ArtifactsTypeType
 
@@ -95,6 +103,8 @@ Values:
 - `NO_ARTIFACTS`
 - `S3`
 
+<a id="authtypetype"></a>
+
 ## AuthTypeType
 
 ```python
@@ -107,6 +117,8 @@ Values:
 - `OAUTH`
 - `PERSONAL_ACCESS_TOKEN`
 
+<a id="batchreportmodetypetype"></a>
+
 ## BatchReportModeTypeType
 
 ```python
@@ -117,6 +129,8 @@ Values:
 
 - `REPORT_AGGREGATED_BATCH`
 - `REPORT_INDIVIDUAL_BUILDS`
+
+<a id="bucketowneraccesstype"></a>
 
 ## BucketOwnerAccessType
 
@@ -129,6 +143,8 @@ Values:
 - `FULL`
 - `NONE`
 - `READ_ONLY`
+
+<a id="buildbatchphasetypetype"></a>
 
 ## BuildBatchPhaseTypeType
 
@@ -145,6 +161,8 @@ Values:
 - `STOPPED`
 - `SUBMITTED`
 - `SUCCEEDED`
+
+<a id="buildphasetypetype"></a>
 
 ## BuildPhaseTypeType
 
@@ -166,6 +184,8 @@ Values:
 - `SUBMITTED`
 - `UPLOAD_ARTIFACTS`
 
+<a id="cachemodetype"></a>
+
 ## CacheModeType
 
 ```python
@@ -178,6 +198,8 @@ Values:
 - `LOCAL_DOCKER_LAYER_CACHE`
 - `LOCAL_SOURCE_CACHE`
 
+<a id="cachetypetype"></a>
+
 ## CacheTypeType
 
 ```python
@@ -189,6 +211,8 @@ Values:
 - `LOCAL`
 - `NO_CACHE`
 - `S3`
+
+<a id="computetypetype"></a>
 
 ## ComputeTypeType
 
@@ -203,6 +227,8 @@ Values:
 - `BUILD_GENERAL1_MEDIUM`
 - `BUILD_GENERAL1_SMALL`
 
+<a id="credentialprovidertypetype"></a>
+
 ## CredentialProviderTypeType
 
 ```python
@@ -212,6 +238,8 @@ from mypy_boto3_codebuild.literals import CredentialProviderTypeType
 Values:
 
 - `SECRETS_MANAGER`
+
+<a id="describecodecoveragespaginatorname"></a>
 
 ## DescribeCodeCoveragesPaginatorName
 
@@ -223,6 +251,8 @@ Values:
 
 - `describe_code_coverages`
 
+<a id="describetestcasespaginatorname"></a>
+
 ## DescribeTestCasesPaginatorName
 
 ```python
@@ -232,6 +262,8 @@ from mypy_boto3_codebuild.literals import DescribeTestCasesPaginatorName
 Values:
 
 - `describe_test_cases`
+
+<a id="environmenttypetype"></a>
 
 ## EnvironmentTypeType
 
@@ -247,6 +279,8 @@ Values:
 - `WINDOWS_CONTAINER`
 - `WINDOWS_SERVER_2019_CONTAINER`
 
+<a id="environmentvariabletypetype"></a>
+
 ## EnvironmentVariableTypeType
 
 ```python
@@ -259,6 +293,8 @@ Values:
 - `PLAINTEXT`
 - `SECRETS_MANAGER`
 
+<a id="filesystemtypetype"></a>
+
 ## FileSystemTypeType
 
 ```python
@@ -268,6 +304,8 @@ from mypy_boto3_codebuild.literals import FileSystemTypeType
 Values:
 
 - `EFS`
+
+<a id="imagepullcredentialstypetype"></a>
 
 ## ImagePullCredentialsTypeType
 
@@ -279,6 +317,8 @@ Values:
 
 - `CODEBUILD`
 - `SERVICE_ROLE`
+
+<a id="languagetypetype"></a>
 
 ## LanguageTypeType
 
@@ -299,6 +339,8 @@ Values:
 - `PYTHON`
 - `RUBY`
 
+<a id="listbuildbatchesforprojectpaginatorname"></a>
+
 ## ListBuildBatchesForProjectPaginatorName
 
 ```python
@@ -308,6 +350,8 @@ from mypy_boto3_codebuild.literals import ListBuildBatchesForProjectPaginatorNam
 Values:
 
 - `list_build_batches_for_project`
+
+<a id="listbuildbatchespaginatorname"></a>
 
 ## ListBuildBatchesPaginatorName
 
@@ -319,6 +363,8 @@ Values:
 
 - `list_build_batches`
 
+<a id="listbuildsforprojectpaginatorname"></a>
+
 ## ListBuildsForProjectPaginatorName
 
 ```python
@@ -328,6 +374,8 @@ from mypy_boto3_codebuild.literals import ListBuildsForProjectPaginatorName
 Values:
 
 - `list_builds_for_project`
+
+<a id="listbuildspaginatorname"></a>
 
 ## ListBuildsPaginatorName
 
@@ -339,6 +387,8 @@ Values:
 
 - `list_builds`
 
+<a id="listprojectspaginatorname"></a>
+
 ## ListProjectsPaginatorName
 
 ```python
@@ -348,6 +398,8 @@ from mypy_boto3_codebuild.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="listreportgroupspaginatorname"></a>
 
 ## ListReportGroupsPaginatorName
 
@@ -359,6 +411,8 @@ Values:
 
 - `list_report_groups`
 
+<a id="listreportsforreportgrouppaginatorname"></a>
+
 ## ListReportsForReportGroupPaginatorName
 
 ```python
@@ -368,6 +422,8 @@ from mypy_boto3_codebuild.literals import ListReportsForReportGroupPaginatorName
 Values:
 
 - `list_reports_for_report_group`
+
+<a id="listreportspaginatorname"></a>
 
 ## ListReportsPaginatorName
 
@@ -379,6 +435,8 @@ Values:
 
 - `list_reports`
 
+<a id="listsharedprojectspaginatorname"></a>
+
 ## ListSharedProjectsPaginatorName
 
 ```python
@@ -388,6 +446,8 @@ from mypy_boto3_codebuild.literals import ListSharedProjectsPaginatorName
 Values:
 
 - `list_shared_projects`
+
+<a id="listsharedreportgroupspaginatorname"></a>
 
 ## ListSharedReportGroupsPaginatorName
 
@@ -399,6 +459,8 @@ Values:
 
 - `list_shared_report_groups`
 
+<a id="logsconfigstatustypetype"></a>
+
 ## LogsConfigStatusTypeType
 
 ```python
@@ -409,6 +471,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="platformtypetype"></a>
 
 ## PlatformTypeType
 
@@ -423,6 +487,8 @@ Values:
 - `UBUNTU`
 - `WINDOWS_SERVER`
 
+<a id="projectsortbytypetype"></a>
+
 ## ProjectSortByTypeType
 
 ```python
@@ -435,6 +501,8 @@ Values:
 - `LAST_MODIFIED_TIME`
 - `NAME`
 
+<a id="projectvisibilitytypetype"></a>
+
 ## ProjectVisibilityTypeType
 
 ```python
@@ -445,6 +513,8 @@ Values:
 
 - `PRIVATE`
 - `PUBLIC_READ`
+
+<a id="reportcodecoveragesortbytypetype"></a>
 
 ## ReportCodeCoverageSortByTypeType
 
@@ -457,6 +527,8 @@ Values:
 - `FILE_PATH`
 - `LINE_COVERAGE_PERCENTAGE`
 
+<a id="reportexportconfigtypetype"></a>
+
 ## ReportExportConfigTypeType
 
 ```python
@@ -467,6 +539,8 @@ Values:
 
 - `NO_EXPORT`
 - `S3`
+
+<a id="reportgroupsortbytypetype"></a>
 
 ## ReportGroupSortByTypeType
 
@@ -480,6 +554,8 @@ Values:
 - `LAST_MODIFIED_TIME`
 - `NAME`
 
+<a id="reportgroupstatustypetype"></a>
+
 ## ReportGroupStatusTypeType
 
 ```python
@@ -490,6 +566,8 @@ Values:
 
 - `ACTIVE`
 - `DELETING`
+
+<a id="reportgrouptrendfieldtypetype"></a>
 
 ## ReportGroupTrendFieldTypeType
 
@@ -509,6 +587,8 @@ Values:
 - `PASS_RATE`
 - `TOTAL`
 
+<a id="reportpackagingtypetype"></a>
+
 ## ReportPackagingTypeType
 
 ```python
@@ -519,6 +599,8 @@ Values:
 
 - `NONE`
 - `ZIP`
+
+<a id="reportstatustypetype"></a>
 
 ## ReportStatusTypeType
 
@@ -534,6 +616,8 @@ Values:
 - `INCOMPLETE`
 - `SUCCEEDED`
 
+<a id="reporttypetype"></a>
+
 ## ReportTypeType
 
 ```python
@@ -545,6 +629,8 @@ Values:
 - `CODE_COVERAGE`
 - `TEST`
 
+<a id="retrybuildbatchtypetype"></a>
+
 ## RetryBuildBatchTypeType
 
 ```python
@@ -555,6 +641,8 @@ Values:
 
 - `RETRY_ALL_BUILDS`
 - `RETRY_FAILED_BUILDS`
+
+<a id="servertypetype"></a>
 
 ## ServerTypeType
 
@@ -568,6 +656,8 @@ Values:
 - `GITHUB`
 - `GITHUB_ENTERPRISE`
 
+<a id="sharedresourcesortbytypetype"></a>
+
 ## SharedResourceSortByTypeType
 
 ```python
@@ -578,6 +668,8 @@ Values:
 
 - `ARN`
 - `MODIFIED_TIME`
+
+<a id="sortordertypetype"></a>
 
 ## SortOrderTypeType
 
@@ -590,6 +682,8 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="sourceauthtypetype"></a>
+
 ## SourceAuthTypeType
 
 ```python
@@ -599,6 +693,8 @@ from mypy_boto3_codebuild.literals import SourceAuthTypeType
 Values:
 
 - `OAUTH`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -616,6 +712,8 @@ Values:
 - `NO_SOURCE`
 - `S3`
 
+<a id="statustypetype"></a>
+
 ## StatusTypeType
 
 ```python
@@ -631,6 +729,8 @@ Values:
 - `SUCCEEDED`
 - `TIMED_OUT`
 
+<a id="webhookbuildtypetype"></a>
+
 ## WebhookBuildTypeType
 
 ```python
@@ -641,6 +741,8 @@ Values:
 
 - `BUILD`
 - `BUILD_BATCH`
+
+<a id="webhookfiltertypetype"></a>
 
 ## WebhookFilterTypeType
 
@@ -656,6 +758,8 @@ Values:
 - `EVENT`
 - `FILE_PATH`
 - `HEAD_REF`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -964,6 +1068,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

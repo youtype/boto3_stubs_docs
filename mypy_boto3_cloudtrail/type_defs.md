@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudtrail-module"></a>
+
 # Typed dictionaries for boto3 CloudTrail module
 
 > [Index](..) > [CloudTrail](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudTrail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudtrail.html#CloudTrail)
 type annotations stubs module
-[mypy_boto3_cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
+[mypy-boto3-cloudtrail](https://pypi.org/project/mypy-boto3-cloudtrail/).
 
 - [Typed dictionaries for boto3 CloudTrail module](#typed-dictionaries-for-boto3-cloudtrail-module)
   - [AddTagsRequestRequestTypeDef](#addtagsrequestrequesttypedef)
@@ -80,6 +82,8 @@ type annotations stubs module
   - [UpdateTrailRequestRequestTypeDef](#updatetrailrequestrequesttypedef)
   - [UpdateTrailResponseTypeDef](#updatetrailresponsetypedef)
 
+<a id="addtagsrequestrequesttypedef"></a>
+
 ## AddTagsRequestRequestTypeDef
 
 ```python
@@ -90,6 +94,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="advancedeventselectortypedef"></a>
 
 ## AdvancedEventSelectorTypeDef
 
@@ -105,6 +111,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="advancedfieldselectortypedef"></a>
 
 ## AdvancedFieldSelectorTypeDef
 
@@ -125,6 +133,8 @@ Optional fields:
 - `NotStartsWith`: `Sequence`\[`str`\]
 - `NotEndsWith`: `Sequence`\[`str`\]
 
+<a id="cancelqueryrequestrequesttypedef"></a>
+
 ## CancelQueryRequestRequestTypeDef
 
 ```python
@@ -135,6 +145,8 @@ Required fields:
 
 - `EventDataStore`: `str`
 - `QueryId`: `str`
+
+<a id="cancelqueryresponsetypedef"></a>
 
 ## CancelQueryResponseTypeDef
 
@@ -148,6 +160,8 @@ Required fields:
 - `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createeventdatastorerequestrequesttypedef"></a>
 
 ## CreateEventDataStoreRequestRequestTypeDef
 
@@ -168,6 +182,8 @@ Optional fields:
 - `RetentionPeriod`: `int`
 - `TerminationProtectionEnabled`: `bool`
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createeventdatastoreresponsetypedef"></a>
 
 ## CreateEventDataStoreResponseTypeDef
 
@@ -191,6 +207,8 @@ Required fields:
 - `UpdatedTimestamp`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtrailrequestrequesttypedef"></a>
 
 ## CreateTrailRequestRequestTypeDef
 
@@ -216,6 +234,8 @@ Optional fields:
 - `IsOrganizationTrail`: `bool`
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtrailresponsetypedef"></a>
+
 ## CreateTrailResponseTypeDef
 
 ```python
@@ -240,6 +260,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dataresourcetypedef"></a>
+
 ## DataResourceTypeDef
 
 ```python
@@ -251,6 +273,8 @@ Optional fields:
 - `Type`: `str`
 - `Values`: `List`\[`str`\]
 
+<a id="deleteeventdatastorerequestrequesttypedef"></a>
+
 ## DeleteEventDataStoreRequestRequestTypeDef
 
 ```python
@@ -260,6 +284,8 @@ from mypy_boto3_cloudtrail.type_defs import DeleteEventDataStoreRequestRequestTy
 Required fields:
 
 - `EventDataStore`: `str`
+
+<a id="deletetrailrequestrequesttypedef"></a>
 
 ## DeleteTrailRequestRequestTypeDef
 
@@ -271,6 +297,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="describequeryrequestrequesttypedef"></a>
+
 ## DescribeQueryRequestRequestTypeDef
 
 ```python
@@ -281,6 +309,8 @@ Required fields:
 
 - `EventDataStore`: `str`
 - `QueryId`: `str`
+
+<a id="describequeryresponsetypedef"></a>
 
 ## DescribeQueryResponseTypeDef
 
@@ -299,6 +329,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetrailsrequestrequesttypedef"></a>
+
 ## DescribeTrailsRequestRequestTypeDef
 
 ```python
@@ -309,6 +341,8 @@ Optional fields:
 
 - `trailNameList`: `Sequence`\[`str`\]
 - `includeShadowTrails`: `bool`
+
+<a id="describetrailsresponsetypedef"></a>
 
 ## DescribeTrailsResponseTypeDef
 
@@ -321,6 +355,8 @@ Required fields:
 - `trailList`: `List`\[[TrailTypeDef](./type_defs.md#trailtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="eventdatastoretypedef"></a>
 
 ## EventDataStoreTypeDef
 
@@ -342,6 +378,8 @@ Optional fields:
 - `CreatedTimestamp`: `datetime`
 - `UpdatedTimestamp`: `datetime`
 
+<a id="eventselectortypedef"></a>
+
 ## EventSelectorTypeDef
 
 ```python
@@ -355,6 +393,8 @@ Optional fields:
 - `DataResources`:
   `List`\[[DataResourceTypeDef](./type_defs.md#dataresourcetypedef)\]
 - `ExcludeManagementEventSources`: `List`\[`str`\]
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -374,6 +414,8 @@ Optional fields:
 - `Resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 - `CloudTrailEvent`: `str`
 
+<a id="geteventdatastorerequestrequesttypedef"></a>
+
 ## GetEventDataStoreRequestRequestTypeDef
 
 ```python
@@ -383,6 +425,8 @@ from mypy_boto3_cloudtrail.type_defs import GetEventDataStoreRequestRequestTypeD
 Required fields:
 
 - `EventDataStore`: `str`
+
+<a id="geteventdatastoreresponsetypedef"></a>
 
 ## GetEventDataStoreResponseTypeDef
 
@@ -406,6 +450,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventselectorsrequestrequesttypedef"></a>
+
 ## GetEventSelectorsRequestRequestTypeDef
 
 ```python
@@ -415,6 +461,8 @@ from mypy_boto3_cloudtrail.type_defs import GetEventSelectorsRequestRequestTypeD
 Required fields:
 
 - `TrailName`: `str`
+
+<a id="geteventselectorsresponsetypedef"></a>
 
 ## GetEventSelectorsResponseTypeDef
 
@@ -432,6 +480,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinsightselectorsrequestrequesttypedef"></a>
+
 ## GetInsightSelectorsRequestRequestTypeDef
 
 ```python
@@ -441,6 +491,8 @@ from mypy_boto3_cloudtrail.type_defs import GetInsightSelectorsRequestRequestTyp
 Required fields:
 
 - `TrailName`: `str`
+
+<a id="getinsightselectorsresponsetypedef"></a>
 
 ## GetInsightSelectorsResponseTypeDef
 
@@ -455,6 +507,8 @@ Required fields:
   `List`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getqueryresultsrequestrequesttypedef"></a>
 
 ## GetQueryResultsRequestRequestTypeDef
 
@@ -471,6 +525,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxQueryResults`: `int`
+
+<a id="getqueryresultsresponsetypedef"></a>
 
 ## GetQueryResultsResponseTypeDef
 
@@ -489,6 +545,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettrailrequestrequesttypedef"></a>
+
 ## GetTrailRequestRequestTypeDef
 
 ```python
@@ -498,6 +556,8 @@ from mypy_boto3_cloudtrail.type_defs import GetTrailRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="gettrailresponsetypedef"></a>
 
 ## GetTrailResponseTypeDef
 
@@ -511,6 +571,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettrailstatusrequestrequesttypedef"></a>
+
 ## GetTrailStatusRequestRequestTypeDef
 
 ```python
@@ -520,6 +582,8 @@ from mypy_boto3_cloudtrail.type_defs import GetTrailStatusRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="gettrailstatusresponsetypedef"></a>
 
 ## GetTrailStatusResponseTypeDef
 
@@ -549,6 +613,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="insightselectortypedef"></a>
+
 ## InsightSelectorTypeDef
 
 ```python
@@ -558,6 +624,8 @@ from mypy_boto3_cloudtrail.type_defs import InsightSelectorTypeDef
 Optional fields:
 
 - `InsightType`: [InsightTypeType](./literals.md#insighttypetype)
+
+<a id="listeventdatastoresrequestrequesttypedef"></a>
 
 ## ListEventDataStoresRequestRequestTypeDef
 
@@ -569,6 +637,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listeventdatastoresresponsetypedef"></a>
 
 ## ListEventDataStoresResponseTypeDef
 
@@ -584,6 +654,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpublickeysrequestrequesttypedef"></a>
+
 ## ListPublicKeysRequestRequestTypeDef
 
 ```python
@@ -595,6 +667,8 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `NextToken`: `str`
+
+<a id="listpublickeysresponsetypedef"></a>
 
 ## ListPublicKeysResponseTypeDef
 
@@ -609,6 +683,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listqueriesrequestrequesttypedef"></a>
 
 ## ListQueriesRequestRequestTypeDef
 
@@ -628,6 +704,8 @@ Optional fields:
 - `EndTime`: `Union`\[`datetime`, `str`\]
 - `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
 
+<a id="listqueriesresponsetypedef"></a>
+
 ## ListQueriesResponseTypeDef
 
 ```python
@@ -640,6 +718,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsrequestrequesttypedef"></a>
 
 ## ListTagsRequestRequestTypeDef
 
@@ -655,6 +735,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsresponsetypedef"></a>
+
 ## ListTagsResponseTypeDef
 
 ```python
@@ -669,6 +751,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtrailsrequestrequesttypedef"></a>
+
 ## ListTrailsRequestRequestTypeDef
 
 ```python
@@ -678,6 +762,8 @@ from mypy_boto3_cloudtrail.type_defs import ListTrailsRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listtrailsresponsetypedef"></a>
 
 ## ListTrailsResponseTypeDef
 
@@ -692,6 +778,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="lookupattributetypedef"></a>
+
 ## LookupAttributeTypeDef
 
 ```python
@@ -703,6 +791,8 @@ Required fields:
 - `AttributeKey`:
   [LookupAttributeKeyType](./literals.md#lookupattributekeytype)
 - `AttributeValue`: `str`
+
+<a id="lookupeventsrequestrequesttypedef"></a>
 
 ## LookupEventsRequestRequestTypeDef
 
@@ -721,6 +811,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="lookupeventsresponsetypedef"></a>
+
 ## LookupEventsResponseTypeDef
 
 ```python
@@ -734,6 +826,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -745,6 +839,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="publickeytypedef"></a>
 
 ## PublicKeyTypeDef
 
@@ -758,6 +854,8 @@ Optional fields:
 - `ValidityStartTime`: `datetime`
 - `ValidityEndTime`: `datetime`
 - `Fingerprint`: `str`
+
+<a id="puteventselectorsrequestrequesttypedef"></a>
 
 ## PutEventSelectorsRequestRequestTypeDef
 
@@ -776,6 +874,8 @@ Optional fields:
 - `AdvancedEventSelectors`:
   `Sequence`\[[AdvancedEventSelectorTypeDef](./type_defs.md#advancedeventselectortypedef)\]
 
+<a id="puteventselectorsresponsetypedef"></a>
+
 ## PutEventSelectorsResponseTypeDef
 
 ```python
@@ -792,6 +892,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putinsightselectorsrequestrequesttypedef"></a>
+
 ## PutInsightSelectorsRequestRequestTypeDef
 
 ```python
@@ -803,6 +905,8 @@ Required fields:
 - `TrailName`: `str`
 - `InsightSelectors`:
   `Sequence`\[[InsightSelectorTypeDef](./type_defs.md#insightselectortypedef)\]
+
+<a id="putinsightselectorsresponsetypedef"></a>
 
 ## PutInsightSelectorsResponseTypeDef
 
@@ -818,6 +922,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="querystatisticsfordescribequerytypedef"></a>
+
 ## QueryStatisticsForDescribeQueryTypeDef
 
 ```python
@@ -831,6 +937,8 @@ Optional fields:
 - `ExecutionTimeInMillis`: `int`
 - `CreationTime`: `datetime`
 
+<a id="querystatisticstypedef"></a>
+
 ## QueryStatisticsTypeDef
 
 ```python
@@ -841,6 +949,8 @@ Optional fields:
 
 - `ResultsCount`: `int`
 - `TotalResultsCount`: `int`
+
+<a id="querytypedef"></a>
 
 ## QueryTypeDef
 
@@ -854,6 +964,8 @@ Optional fields:
 - `QueryStatus`: [QueryStatusType](./literals.md#querystatustype)
 - `CreationTime`: `datetime`
 
+<a id="removetagsrequestrequesttypedef"></a>
+
 ## RemoveTagsRequestRequestTypeDef
 
 ```python
@@ -864,6 +976,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `TagsList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="resourcetagtypedef"></a>
 
 ## ResourceTagTypeDef
 
@@ -876,6 +990,8 @@ Optional fields:
 - `ResourceId`: `str`
 - `TagsList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="resourcetypedef"></a>
+
 ## ResourceTypeDef
 
 ```python
@@ -886,6 +1002,8 @@ Optional fields:
 
 - `ResourceType`: `str`
 - `ResourceName`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -901,6 +1019,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restoreeventdatastorerequestrequesttypedef"></a>
+
 ## RestoreEventDataStoreRequestRequestTypeDef
 
 ```python
@@ -910,6 +1030,8 @@ from mypy_boto3_cloudtrail.type_defs import RestoreEventDataStoreRequestRequestT
 Required fields:
 
 - `EventDataStore`: `str`
+
+<a id="restoreeventdatastoreresponsetypedef"></a>
 
 ## RestoreEventDataStoreResponseTypeDef
 
@@ -933,6 +1055,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startloggingrequestrequesttypedef"></a>
+
 ## StartLoggingRequestRequestTypeDef
 
 ```python
@@ -943,6 +1067,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="startqueryrequestrequesttypedef"></a>
+
 ## StartQueryRequestRequestTypeDef
 
 ```python
@@ -952,6 +1078,8 @@ from mypy_boto3_cloudtrail.type_defs import StartQueryRequestRequestTypeDef
 Required fields:
 
 - `QueryStatement`: `str`
+
+<a id="startqueryresponsetypedef"></a>
 
 ## StartQueryResponseTypeDef
 
@@ -965,6 +1093,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stoploggingrequestrequesttypedef"></a>
+
 ## StopLoggingRequestRequestTypeDef
 
 ```python
@@ -974,6 +1104,8 @@ from mypy_boto3_cloudtrail.type_defs import StopLoggingRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -989,6 +1121,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="trailinfotypedef"></a>
+
 ## TrailInfoTypeDef
 
 ```python
@@ -1000,6 +1134,8 @@ Optional fields:
 - `TrailARN`: `str`
 - `Name`: `str`
 - `HomeRegion`: `str`
+
+<a id="trailtypedef"></a>
 
 ## TrailTypeDef
 
@@ -1026,6 +1162,8 @@ Optional fields:
 - `HasInsightSelectors`: `bool`
 - `IsOrganizationTrail`: `bool`
 
+<a id="updateeventdatastorerequestrequesttypedef"></a>
+
 ## UpdateEventDataStoreRequestRequestTypeDef
 
 ```python
@@ -1045,6 +1183,8 @@ Optional fields:
 - `OrganizationEnabled`: `bool`
 - `RetentionPeriod`: `int`
 - `TerminationProtectionEnabled`: `bool`
+
+<a id="updateeventdatastoreresponsetypedef"></a>
 
 ## UpdateEventDataStoreResponseTypeDef
 
@@ -1068,6 +1208,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatetrailrequestrequesttypedef"></a>
+
 ## UpdateTrailRequestRequestTypeDef
 
 ```python
@@ -1090,6 +1232,8 @@ Optional fields:
 - `CloudWatchLogsRoleArn`: `str`
 - `KmsKeyId`: `str`
 - `IsOrganizationTrail`: `bool`
+
+<a id="updatetrailresponsetypedef"></a>
 
 ## UpdateTrailResponseTypeDef
 

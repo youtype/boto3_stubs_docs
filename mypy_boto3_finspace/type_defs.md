@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-finspace-module"></a>
+
 # Typed dictionaries for boto3 finspace module
 
 > [Index](..) > [finspace](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
 type annotations stubs module
-[mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
+[mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 - [Typed dictionaries for boto3 finspace module](#typed-dictionaries-for-boto3-finspace-module)
   - [CreateEnvironmentRequestRequestTypeDef](#createenvironmentrequestrequesttypedef)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateEnvironmentRequestRequestTypeDef](#updateenvironmentrequestrequesttypedef)
   - [UpdateEnvironmentResponseTypeDef](#updateenvironmentresponsetypedef)
+
+<a id="createenvironmentrequestrequesttypedef"></a>
 
 ## CreateEnvironmentRequestRequestTypeDef
 
@@ -48,6 +52,8 @@ Optional fields:
   [SuperuserParametersTypeDef](./type_defs.md#superuserparameterstypedef)
 - `dataBundles`: `Sequence`\[`str`\]
 
+<a id="createenvironmentresponsetypedef"></a>
+
 ## CreateEnvironmentResponseTypeDef
 
 ```python
@@ -62,6 +68,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteenvironmentrequestrequesttypedef"></a>
+
 ## DeleteEnvironmentRequestRequestTypeDef
 
 ```python
@@ -71,6 +79,8 @@ from mypy_boto3_finspace.type_defs import DeleteEnvironmentRequestRequestTypeDef
 Required fields:
 
 - `environmentId`: `str`
+
+<a id="environmenttypedef"></a>
 
 ## EnvironmentTypeDef
 
@@ -94,6 +104,8 @@ Optional fields:
 - `federationParameters`:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
 
+<a id="federationparameterstypedef"></a>
+
 ## FederationParametersTypeDef
 
 ```python
@@ -109,6 +121,8 @@ Optional fields:
 - `federationProviderName`: `str`
 - `attributeMap`: `Mapping`\[`str`, `str`\]
 
+<a id="getenvironmentrequestrequesttypedef"></a>
+
 ## GetEnvironmentRequestRequestTypeDef
 
 ```python
@@ -118,6 +132,8 @@ from mypy_boto3_finspace.type_defs import GetEnvironmentRequestRequestTypeDef
 Required fields:
 
 - `environmentId`: `str`
+
+<a id="getenvironmentresponsetypedef"></a>
 
 ## GetEnvironmentResponseTypeDef
 
@@ -131,6 +147,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listenvironmentsrequestrequesttypedef"></a>
+
 ## ListEnvironmentsRequestRequestTypeDef
 
 ```python
@@ -141,6 +159,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listenvironmentsresponsetypedef"></a>
 
 ## ListEnvironmentsResponseTypeDef
 
@@ -156,6 +176,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -165,6 +187,8 @@ from mypy_boto3_finspace.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -177,6 +201,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -192,6 +218,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="superuserparameterstypedef"></a>
+
 ## SuperuserParametersTypeDef
 
 ```python
@@ -204,6 +232,8 @@ Required fields:
 - `firstName`: `str`
 - `lastName`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -215,6 +245,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -225,6 +257,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateenvironmentrequestrequesttypedef"></a>
 
 ## UpdateEnvironmentRequestRequestTypeDef
 
@@ -243,6 +277,8 @@ Optional fields:
 - `federationMode`: [FederationModeType](./literals.md#federationmodetype)
 - `federationParameters`:
   [FederationParametersTypeDef](./type_defs.md#federationparameterstypedef)
+
+<a id="updateenvironmentresponsetypedef"></a>
 
 ## UpdateEnvironmentResponseTypeDef
 

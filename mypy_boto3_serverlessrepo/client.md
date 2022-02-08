@@ -1,3 +1,5 @@
+<a id="serverlessapplicationrepositoryclient-for-boto3-serverlessapplicationrepository-module"></a>
+
 # ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module
 
 > [Index](..) > [ServerlessApplicationRepository](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
-[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 - [ServerlessApplicationRepositoryClient for boto3 ServerlessApplicationRepository module](#serverlessapplicationrepositoryclient-for-boto3-serverlessapplicationrepository-module)
   - [ServerlessApplicationRepositoryClient](#serverlessapplicationrepositoryclient)
@@ -31,6 +33,8 @@ type annotations stubs module
     - [update_application](#update_application)
     - [get_paginator](#get_paginator)
 
+<a id="serverlessapplicationrepositoryclient"></a>
+
 ## ServerlessApplicationRepositoryClient
 
 Type annotations for `boto3.client("serverlessrepo")`
@@ -38,14 +42,17 @@ Type annotations for `boto3.client("serverlessrepo")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_serverlessrepo.client import ServerlessApplicationRepositoryClient
 
 def get_serverlessrepo_client() -> ServerlessApplicationRepositoryClient:
-    return boto3.client("serverlessrepo")
+    return Session().client("serverlessrepo")
 ```
 
 Boto3 documentation:
 [ServerlessApplicationRepository.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [ServerlessApplicationRepository.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -96,6 +109,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -132,6 +147,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="create_application_version"></a>
+
 ### create_application_version
 
 Creates an application version.
@@ -156,6 +173,8 @@ Keyword-only arguments:
 
 Returns
 [CreateApplicationVersionResponseTypeDef](./type_defs.md#createapplicationversionresponsetypedef).
+
+<a id="create_cloud_formation_change_set"></a>
 
 ### create_cloud_formation_change_set
 
@@ -191,6 +210,8 @@ Keyword-only arguments:
 Returns
 [CreateCloudFormationChangeSetResponseTypeDef](./type_defs.md#createcloudformationchangesetresponsetypedef).
 
+<a id="create_cloud_formation_template"></a>
+
 ### create_cloud_formation_template
 
 Creates an AWS CloudFormation template.
@@ -212,6 +233,8 @@ Keyword-only arguments:
 Returns
 [CreateCloudFormationTemplateResponseTypeDef](./type_defs.md#createcloudformationtemplateresponsetypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes the specified application.
@@ -228,6 +251,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -247,6 +272,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_application"></a>
 
 ### get_application
 
@@ -268,6 +295,8 @@ Keyword-only arguments:
 Returns
 [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
 
+<a id="get_application_policy"></a>
+
 ### get_application_policy
 
 Retrieves the policy for the application.
@@ -287,6 +316,8 @@ Keyword-only arguments:
 
 Returns
 [GetApplicationPolicyResponseTypeDef](./type_defs.md#getapplicationpolicyresponsetypedef).
+
+<a id="get_cloud_formation_template"></a>
 
 ### get_cloud_formation_template
 
@@ -308,6 +339,8 @@ Keyword-only arguments:
 
 Returns
 [GetCloudFormationTemplateResponseTypeDef](./type_defs.md#getcloudformationtemplateresponsetypedef).
+
+<a id="list_application_dependencies"></a>
 
 ### list_application_dependencies
 
@@ -332,6 +365,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationDependenciesResponseTypeDef](./type_defs.md#listapplicationdependenciesresponsetypedef).
 
+<a id="list_application_versions"></a>
+
 ### list_application_versions
 
 Lists versions for the specified application.
@@ -354,6 +389,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
 
+<a id="list_applications"></a>
+
 ### list_applications
 
 Lists applications owned by the requester.
@@ -373,6 +410,8 @@ Keyword-only arguments:
 
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
+
+<a id="put_application_policy"></a>
 
 ### put_application_policy
 
@@ -397,6 +436,8 @@ Keyword-only arguments:
 Returns
 [PutApplicationPolicyResponseTypeDef](./type_defs.md#putapplicationpolicyresponsetypedef).
 
+<a id="unshare_application"></a>
+
 ### unshare_application
 
 Unshares an application from an AWS Organization.
@@ -414,6 +455,8 @@ Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -440,6 +483,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

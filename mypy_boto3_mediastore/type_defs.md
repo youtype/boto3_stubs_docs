@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mediastore-module"></a>
+
 # Typed dictionaries for boto3 MediaStore module
 
 > [Index](..) > [MediaStore](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
-[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+[mypy-boto3-mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [Typed dictionaries for boto3 MediaStore module](#typed-dictionaries-for-boto3-mediastore-module)
   - [ContainerTypeDef](#containertypedef)
@@ -45,6 +47,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
 
+<a id="containertypedef"></a>
+
 ## ContainerTypeDef
 
 ```python
@@ -59,6 +63,8 @@ Optional fields:
 - `Name`: `str`
 - `Status`: [ContainerStatusType](./literals.md#containerstatustype)
 - `AccessLoggingEnabled`: `bool`
+
+<a id="corsruletypedef"></a>
 
 ## CorsRuleTypeDef
 
@@ -77,6 +83,8 @@ Optional fields:
 - `MaxAgeSeconds`: `int`
 - `ExposeHeaders`: `List`\[`str`\]
 
+<a id="createcontainerinputrequesttypedef"></a>
+
 ## CreateContainerInputRequestTypeDef
 
 ```python
@@ -91,6 +99,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcontaineroutputtypedef"></a>
+
 ## CreateContainerOutputTypeDef
 
 ```python
@@ -103,6 +113,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecontainerinputrequesttypedef"></a>
+
 ## DeleteContainerInputRequestTypeDef
 
 ```python
@@ -112,6 +124,8 @@ from mypy_boto3_mediastore.type_defs import DeleteContainerInputRequestTypeDef
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="deletecontainerpolicyinputrequesttypedef"></a>
 
 ## DeleteContainerPolicyInputRequestTypeDef
 
@@ -123,6 +137,8 @@ Required fields:
 
 - `ContainerName`: `str`
 
+<a id="deletecorspolicyinputrequesttypedef"></a>
+
 ## DeleteCorsPolicyInputRequestTypeDef
 
 ```python
@@ -132,6 +148,8 @@ from mypy_boto3_mediastore.type_defs import DeleteCorsPolicyInputRequestTypeDef
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="deletelifecyclepolicyinputrequesttypedef"></a>
 
 ## DeleteLifecyclePolicyInputRequestTypeDef
 
@@ -143,6 +161,8 @@ Required fields:
 
 - `ContainerName`: `str`
 
+<a id="deletemetricpolicyinputrequesttypedef"></a>
+
 ## DeleteMetricPolicyInputRequestTypeDef
 
 ```python
@@ -153,6 +173,8 @@ Required fields:
 
 - `ContainerName`: `str`
 
+<a id="describecontainerinputrequesttypedef"></a>
+
 ## DescribeContainerInputRequestTypeDef
 
 ```python
@@ -162,6 +184,8 @@ from mypy_boto3_mediastore.type_defs import DescribeContainerInputRequestTypeDef
 Optional fields:
 
 - `ContainerName`: `str`
+
+<a id="describecontaineroutputtypedef"></a>
 
 ## DescribeContainerOutputTypeDef
 
@@ -175,6 +199,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontainerpolicyinputrequesttypedef"></a>
+
 ## GetContainerPolicyInputRequestTypeDef
 
 ```python
@@ -184,6 +210,8 @@ from mypy_boto3_mediastore.type_defs import GetContainerPolicyInputRequestTypeDe
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="getcontainerpolicyoutputtypedef"></a>
 
 ## GetContainerPolicyOutputTypeDef
 
@@ -197,6 +225,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcorspolicyinputrequesttypedef"></a>
+
 ## GetCorsPolicyInputRequestTypeDef
 
 ```python
@@ -206,6 +236,8 @@ from mypy_boto3_mediastore.type_defs import GetCorsPolicyInputRequestTypeDef
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="getcorspolicyoutputtypedef"></a>
 
 ## GetCorsPolicyOutputTypeDef
 
@@ -219,6 +251,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlifecyclepolicyinputrequesttypedef"></a>
+
 ## GetLifecyclePolicyInputRequestTypeDef
 
 ```python
@@ -228,6 +262,8 @@ from mypy_boto3_mediastore.type_defs import GetLifecyclePolicyInputRequestTypeDe
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="getlifecyclepolicyoutputtypedef"></a>
 
 ## GetLifecyclePolicyOutputTypeDef
 
@@ -241,6 +277,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmetricpolicyinputrequesttypedef"></a>
+
 ## GetMetricPolicyInputRequestTypeDef
 
 ```python
@@ -250,6 +288,8 @@ from mypy_boto3_mediastore.type_defs import GetMetricPolicyInputRequestTypeDef
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="getmetricpolicyoutputtypedef"></a>
 
 ## GetMetricPolicyOutputTypeDef
 
@@ -263,6 +303,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontainersinputrequesttypedef"></a>
+
 ## ListContainersInputRequestTypeDef
 
 ```python
@@ -273,6 +315,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listcontainersoutputtypedef"></a>
 
 ## ListContainersOutputTypeDef
 
@@ -287,6 +331,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -296,6 +342,8 @@ from mypy_boto3_mediastore.type_defs import ListTagsForResourceInputRequestTypeD
 Required fields:
 
 - `Resource`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -309,6 +357,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricpolicyruletypedef"></a>
+
 ## MetricPolicyRuleTypeDef
 
 ```python
@@ -319,6 +369,8 @@ Required fields:
 
 - `ObjectGroup`: `str`
 - `ObjectGroupName`: `str`
+
+<a id="metricpolicytypedef"></a>
 
 ## MetricPolicyTypeDef
 
@@ -336,6 +388,8 @@ Optional fields:
 - `MetricPolicyRules`:
   `List`\[[MetricPolicyRuleTypeDef](./type_defs.md#metricpolicyruletypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -348,6 +402,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putcontainerpolicyinputrequesttypedef"></a>
+
 ## PutContainerPolicyInputRequestTypeDef
 
 ```python
@@ -358,6 +414,8 @@ Required fields:
 
 - `ContainerName`: `str`
 - `Policy`: `str`
+
+<a id="putcorspolicyinputrequesttypedef"></a>
 
 ## PutCorsPolicyInputRequestTypeDef
 
@@ -370,6 +428,8 @@ Required fields:
 - `ContainerName`: `str`
 - `CorsPolicy`: `Sequence`\[[CorsRuleTypeDef](./type_defs.md#corsruletypedef)\]
 
+<a id="putlifecyclepolicyinputrequesttypedef"></a>
+
 ## PutLifecyclePolicyInputRequestTypeDef
 
 ```python
@@ -381,6 +441,8 @@ Required fields:
 - `ContainerName`: `str`
 - `LifecyclePolicy`: `str`
 
+<a id="putmetricpolicyinputrequesttypedef"></a>
+
 ## PutMetricPolicyInputRequestTypeDef
 
 ```python
@@ -391,6 +453,8 @@ Required fields:
 
 - `ContainerName`: `str`
 - `MetricPolicy`: [MetricPolicyTypeDef](./type_defs.md#metricpolicytypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -406,6 +470,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="startaccesslogginginputrequesttypedef"></a>
+
 ## StartAccessLoggingInputRequestTypeDef
 
 ```python
@@ -415,6 +481,8 @@ from mypy_boto3_mediastore.type_defs import StartAccessLoggingInputRequestTypeDe
 Required fields:
 
 - `ContainerName`: `str`
+
+<a id="stopaccesslogginginputrequesttypedef"></a>
 
 ## StopAccessLoggingInputRequestTypeDef
 
@@ -426,6 +494,8 @@ Required fields:
 
 - `ContainerName`: `str`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -436,6 +506,8 @@ Required fields:
 
 - `Resource`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -450,6 +522,8 @@ Required fields:
 Optional fields:
 
 - `Value`: `str`
+
+<a id="untagresourceinputrequesttypedef"></a>
 
 ## UntagResourceInputRequestTypeDef
 

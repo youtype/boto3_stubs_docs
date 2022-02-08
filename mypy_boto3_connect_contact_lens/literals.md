@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-connectcontactlens-module"></a>
+
 # Literals for boto3 ConnectContactLens module
 
 > [Index](..) > [ConnectContactLens](.) > Literals
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [ConnectContactLens](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect-contact-lens.html#ConnectContactLens)
 type annotations stubs module
-[mypy_boto3_connect_contact_lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
+[mypy-boto3-connect-contact-lens](https://pypi.org/project/mypy-boto3-connect-contact-lens/).
 
 - [Literals for boto3 ConnectContactLens module](#literals-for-boto3-connectcontactlens-module)
   - [SentimentValueType](#sentimentvaluetype)
   - [ServiceName](#servicename)
+
+<a id="sentimentvaluetype"></a>
 
 ## SentimentValueType
 
@@ -22,6 +26,8 @@ Values:
 - `NEGATIVE`
 - `NEUTRAL`
 - `POSITIVE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

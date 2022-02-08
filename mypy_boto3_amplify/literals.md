@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-amplify-module"></a>
+
 # Literals for boto3 Amplify module
 
 > [Index](..) > [Amplify](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
 type annotations stubs module
-[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+[mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [Literals for boto3 Amplify module](#literals-for-boto3-amplify-module)
   - [DomainStatusType](#domainstatustype)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [StageType](#stagetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="domainstatustype"></a>
 
 ## DomainStatusType
 
@@ -37,6 +41,8 @@ Values:
 - `REQUESTING_CERTIFICATE`
 - `UPDATING`
 
+<a id="jobstatustype"></a>
+
 ## JobStatusType
 
 ```python
@@ -53,6 +59,8 @@ Values:
 - `RUNNING`
 - `SUCCEED`
 
+<a id="jobtypetype"></a>
+
 ## JobTypeType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 - `RETRY`
 - `WEB_HOOK`
 
+<a id="listappspaginatorname"></a>
+
 ## ListAppsPaginatorName
 
 ```python
@@ -75,6 +85,8 @@ from mypy_boto3_amplify.literals import ListAppsPaginatorName
 Values:
 
 - `list_apps`
+
+<a id="listbranchespaginatorname"></a>
 
 ## ListBranchesPaginatorName
 
@@ -86,6 +98,8 @@ Values:
 
 - `list_branches`
 
+<a id="listdomainassociationspaginatorname"></a>
+
 ## ListDomainAssociationsPaginatorName
 
 ```python
@@ -95,6 +109,8 @@ from mypy_boto3_amplify.literals import ListDomainAssociationsPaginatorName
 Values:
 
 - `list_domain_associations`
+
+<a id="listjobspaginatorname"></a>
 
 ## ListJobsPaginatorName
 
@@ -106,6 +122,8 @@ Values:
 
 - `list_jobs`
 
+<a id="platformtype"></a>
+
 ## PlatformType
 
 ```python
@@ -115,6 +133,8 @@ from mypy_boto3_amplify.literals import PlatformType
 Values:
 
 - `WEB`
+
+<a id="stagetype"></a>
 
 ## StageType
 
@@ -129,6 +149,8 @@ Values:
 - `EXPERIMENTAL`
 - `PRODUCTION`
 - `PULL_REQUEST`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -437,6 +459,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

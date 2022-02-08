@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-marketplacemetering-module"></a>
+
 # Type annotations for boto3 MarketplaceMetering module
 
 > [Index](..) > MarketplaceMetering
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
-[mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
+[mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[meteringmarketplace]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[meteringmarketplace]'
+
+# standalone installation
 pip install mypy-boto3-meteringmarketplace
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-meteringmarketplace
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="marketplacemeteringclient"></a>
 
 ## MarketplaceMeteringClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [batch_meter_usage](./client.md#batch_meter_usage)
@@ -38,6 +52,8 @@ from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
 - [meter_usage](./client.md#meter_usage)
 - [register_usage](./client.md#register_usage)
 - [resolve_customer](./client.md#resolve_customer)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -62,6 +78,8 @@ MarketplaceMeteringClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - TimestampOutOfBoundsException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -74,6 +92,8 @@ from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatusType,
 
 - [UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

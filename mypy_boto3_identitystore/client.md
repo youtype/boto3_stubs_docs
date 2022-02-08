@@ -1,3 +1,5 @@
+<a id="identitystoreclient-for-boto3-identitystore-module"></a>
+
 # IdentityStoreClient for boto3 IdentityStore module
 
 > [Index](..) > [IdentityStore](.) > IdentityStoreClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module
-[mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+[mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 - [IdentityStoreClient for boto3 IdentityStore module](#identitystoreclient-for-boto3-identitystore-module)
   - [IdentityStoreClient](#identitystoreclient)
@@ -19,6 +21,8 @@ type annotations stubs module
     - [list_groups](#list_groups)
     - [list_users](#list_users)
 
+<a id="identitystoreclient"></a>
+
 ## IdentityStoreClient
 
 Type annotations for `boto3.client("identitystore")`
@@ -26,14 +30,17 @@ Type annotations for `boto3.client("identitystore")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_identitystore.client import IdentityStoreClient
 
 def get_identitystore_client() -> IdentityStoreClient:
-    return boto3.client("identitystore")
+    return Session().client("identitystore")
 ```
 
 Boto3 documentation:
 [IdentityStore.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [IdentityStore.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_group"></a>
 
 ### describe_group
 
@@ -105,6 +120,8 @@ Keyword-only arguments:
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
+<a id="describe_user"></a>
+
 ### describe_user
 
 Retrieves the user metadata and attributes from `UserId` in an identity store.
@@ -125,6 +142,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -143,6 +162,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_groups"></a>
 
 ### list_groups
 
@@ -165,6 +186,8 @@ Keyword-only arguments:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+<a id="list_users"></a>
 
 ### list_users
 

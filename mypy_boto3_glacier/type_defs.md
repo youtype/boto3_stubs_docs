@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-glacier-module"></a>
+
 # Typed dictionaries for boto3 Glacier module
 
 > [Index](..) > [Glacier](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
 type annotations stubs module
-[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [Typed dictionaries for boto3 Glacier module](#typed-dictionaries-for-boto3-glacier-module)
   - [AbortMultipartUploadInputRequestTypeDef](#abortmultipartuploadinputrequesttypedef)
@@ -112,6 +114,8 @@ type annotations stubs module
   - [VaultNotificationConfigTypeDef](#vaultnotificationconfigtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="abortmultipartuploadinputrequesttypedef"></a>
+
 ## AbortMultipartUploadInputRequestTypeDef
 
 ```python
@@ -124,6 +128,8 @@ Required fields:
 - `vaultName`: `str`
 - `uploadId`: `str`
 
+<a id="abortvaultlockinputrequesttypedef"></a>
+
 ## AbortVaultLockInputRequestTypeDef
 
 ```python
@@ -135,6 +141,8 @@ Required fields:
 - `accountId`: `str`
 - `vaultName`: `str`
 
+<a id="accountvaultrequesttypedef"></a>
+
 ## AccountVaultRequestTypeDef
 
 ```python
@@ -144,6 +152,8 @@ from mypy_boto3_glacier.type_defs import AccountVaultRequestTypeDef
 Required fields:
 
 - `name`: `str`
+
+<a id="addtagstovaultinputrequesttypedef"></a>
 
 ## AddTagsToVaultInputRequestTypeDef
 
@@ -160,6 +170,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="archivecreationoutputtypedef"></a>
+
 ## ArchiveCreationOutputTypeDef
 
 ```python
@@ -173,6 +185,8 @@ Required fields:
 - `archiveId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="csvinputtypedef"></a>
 
 ## CSVInputTypeDef
 
@@ -189,6 +203,8 @@ Optional fields:
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
 
+<a id="csvoutputtypedef"></a>
+
 ## CSVOutputTypeDef
 
 ```python
@@ -203,6 +219,8 @@ Optional fields:
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
 
+<a id="completemultipartuploadinputmultipartuploadtypedef"></a>
+
 ## CompleteMultipartUploadInputMultipartUploadTypeDef
 
 ```python
@@ -213,6 +231,8 @@ Optional fields:
 
 - `archiveSize`: `str`
 - `checksum`: `str`
+
+<a id="completemultipartuploadinputrequesttypedef"></a>
 
 ## CompleteMultipartUploadInputRequestTypeDef
 
@@ -231,6 +251,8 @@ Optional fields:
 - `archiveSize`: `str`
 - `checksum`: `str`
 
+<a id="completevaultlockinputrequesttypedef"></a>
+
 ## CompleteVaultLockInputRequestTypeDef
 
 ```python
@@ -243,6 +265,8 @@ Required fields:
 - `vaultName`: `str`
 - `lockId`: `str`
 
+<a id="createvaultinputaccounttypedef"></a>
+
 ## CreateVaultInputAccountTypeDef
 
 ```python
@@ -252,6 +276,8 @@ from mypy_boto3_glacier.type_defs import CreateVaultInputAccountTypeDef
 Required fields:
 
 - `vaultName`: `str`
+
+<a id="createvaultinputrequesttypedef"></a>
 
 ## CreateVaultInputRequestTypeDef
 
@@ -264,6 +290,8 @@ Required fields:
 - `accountId`: `str`
 - `vaultName`: `str`
 
+<a id="createvaultinputserviceresourcetypedef"></a>
+
 ## CreateVaultInputServiceResourceTypeDef
 
 ```python
@@ -274,6 +302,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="createvaultoutputtypedef"></a>
 
 ## CreateVaultOutputTypeDef
 
@@ -287,6 +317,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dataretrievalpolicytypedef"></a>
+
 ## DataRetrievalPolicyTypeDef
 
 ```python
@@ -298,6 +330,8 @@ Optional fields:
 - `Rules`:
   `List`\[[DataRetrievalRuleTypeDef](./type_defs.md#dataretrievalruletypedef)\]
 
+<a id="dataretrievalruletypedef"></a>
+
 ## DataRetrievalRuleTypeDef
 
 ```python
@@ -308,6 +342,8 @@ Optional fields:
 
 - `Strategy`: `str`
 - `BytesPerHour`: `int`
+
+<a id="deletearchiveinputrequesttypedef"></a>
 
 ## DeleteArchiveInputRequestTypeDef
 
@@ -321,6 +357,8 @@ Required fields:
 - `vaultName`: `str`
 - `archiveId`: `str`
 
+<a id="deletevaultaccesspolicyinputrequesttypedef"></a>
+
 ## DeleteVaultAccessPolicyInputRequestTypeDef
 
 ```python
@@ -331,6 +369,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="deletevaultinputrequesttypedef"></a>
 
 ## DeleteVaultInputRequestTypeDef
 
@@ -343,6 +383,8 @@ Required fields:
 - `accountId`: `str`
 - `vaultName`: `str`
 
+<a id="deletevaultnotificationsinputrequesttypedef"></a>
+
 ## DeleteVaultNotificationsInputRequestTypeDef
 
 ```python
@@ -353,6 +395,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="describejobinputrequesttypedef"></a>
 
 ## DescribeJobInputRequestTypeDef
 
@@ -366,6 +410,8 @@ Required fields:
 - `vaultName`: `str`
 - `jobId`: `str`
 
+<a id="describevaultinputrequesttypedef"></a>
+
 ## DescribeVaultInputRequestTypeDef
 
 ```python
@@ -376,6 +422,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="describevaultoutputresponsemetadatatypedef"></a>
 
 ## DescribeVaultOutputResponseMetadataTypeDef
 
@@ -394,6 +442,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevaultoutputtypedef"></a>
+
 ## DescribeVaultOutputTypeDef
 
 ```python
@@ -409,6 +459,8 @@ Optional fields:
 - `NumberOfArchives`: `int`
 - `SizeInBytes`: `int`
 
+<a id="encryptiontypedef"></a>
+
 ## EncryptionTypeDef
 
 ```python
@@ -421,6 +473,8 @@ Optional fields:
 - `KMSKeyId`: `str`
 - `KMSContext`: `str`
 
+<a id="getdataretrievalpolicyinputrequesttypedef"></a>
+
 ## GetDataRetrievalPolicyInputRequestTypeDef
 
 ```python
@@ -430,6 +484,8 @@ from mypy_boto3_glacier.type_defs import GetDataRetrievalPolicyInputRequestTypeD
 Required fields:
 
 - `accountId`: `str`
+
+<a id="getdataretrievalpolicyoutputtypedef"></a>
 
 ## GetDataRetrievalPolicyOutputTypeDef
 
@@ -444,6 +500,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjoboutputinputjobtypedef"></a>
+
 ## GetJobOutputInputJobTypeDef
 
 ```python
@@ -453,6 +511,8 @@ from mypy_boto3_glacier.type_defs import GetJobOutputInputJobTypeDef
 Optional fields:
 
 - `range`: `str`
+
+<a id="getjoboutputinputrequesttypedef"></a>
 
 ## GetJobOutputInputRequestTypeDef
 
@@ -469,6 +529,8 @@ Required fields:
 Optional fields:
 
 - `range`: `str`
+
+<a id="getjoboutputoutputtypedef"></a>
 
 ## GetJobOutputOutputTypeDef
 
@@ -488,6 +550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvaultaccesspolicyinputrequesttypedef"></a>
+
 ## GetVaultAccessPolicyInputRequestTypeDef
 
 ```python
@@ -498,6 +562,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="getvaultaccesspolicyoutputtypedef"></a>
 
 ## GetVaultAccessPolicyOutputTypeDef
 
@@ -511,6 +577,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvaultlockinputrequesttypedef"></a>
+
 ## GetVaultLockInputRequestTypeDef
 
 ```python
@@ -521,6 +589,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="getvaultlockoutputtypedef"></a>
 
 ## GetVaultLockOutputTypeDef
 
@@ -537,6 +607,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvaultnotificationsinputrequesttypedef"></a>
+
 ## GetVaultNotificationsInputRequestTypeDef
 
 ```python
@@ -547,6 +619,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="getvaultnotificationsoutputtypedef"></a>
 
 ## GetVaultNotificationsOutputTypeDef
 
@@ -560,6 +634,8 @@ Required fields:
   [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="glacierjobdescriptionresponsemetadatatypedef"></a>
 
 ## GlacierJobDescriptionResponseMetadataTypeDef
 
@@ -596,6 +672,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="glacierjobdescriptiontypedef"></a>
+
 ## GlacierJobDescriptionTypeDef
 
 ```python
@@ -629,6 +707,8 @@ Optional fields:
 - `OutputLocation`:
   [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
+<a id="granttypedef"></a>
+
 ## GrantTypeDef
 
 ```python
@@ -639,6 +719,8 @@ Optional fields:
 
 - `Grantee`: [GranteeTypeDef](./type_defs.md#granteetypedef)
 - `Permission`: [PermissionType](./literals.md#permissiontype)
+
+<a id="granteetypedef"></a>
 
 ## GranteeTypeDef
 
@@ -657,6 +739,8 @@ Optional fields:
 - `ID`: `str`
 - `EmailAddress`: `str`
 
+<a id="initiatejobinputarchivetypedef"></a>
+
 ## InitiateJobInputArchiveTypeDef
 
 ```python
@@ -666,6 +750,8 @@ from mypy_boto3_glacier.type_defs import InitiateJobInputArchiveTypeDef
 Optional fields:
 
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
+
+<a id="initiatejobinputrequesttypedef"></a>
 
 ## InitiateJobInputRequestTypeDef
 
@@ -682,6 +768,8 @@ Optional fields:
 
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
+<a id="initiatejobinputvaulttypedef"></a>
+
 ## InitiateJobInputVaultTypeDef
 
 ```python
@@ -691,6 +779,8 @@ from mypy_boto3_glacier.type_defs import InitiateJobInputVaultTypeDef
 Optional fields:
 
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
+
+<a id="initiatejoboutputtypedef"></a>
 
 ## InitiateJobOutputTypeDef
 
@@ -705,6 +795,8 @@ Required fields:
 - `jobOutputPath`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="initiatemultipartuploadinputrequesttypedef"></a>
 
 ## InitiateMultipartUploadInputRequestTypeDef
 
@@ -722,6 +814,8 @@ Optional fields:
 - `archiveDescription`: `str`
 - `partSize`: `str`
 
+<a id="initiatemultipartuploadinputvaulttypedef"></a>
+
 ## InitiateMultipartUploadInputVaultTypeDef
 
 ```python
@@ -732,6 +826,8 @@ Optional fields:
 
 - `archiveDescription`: `str`
 - `partSize`: `str`
+
+<a id="initiatemultipartuploadoutputtypedef"></a>
 
 ## InitiateMultipartUploadOutputTypeDef
 
@@ -745,6 +841,8 @@ Required fields:
 - `uploadId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="initiatevaultlockinputrequesttypedef"></a>
 
 ## InitiateVaultLockInputRequestTypeDef
 
@@ -761,6 +859,8 @@ Optional fields:
 
 - `policy`: [VaultLockPolicyTypeDef](./type_defs.md#vaultlockpolicytypedef)
 
+<a id="initiatevaultlockoutputtypedef"></a>
+
 ## InitiateVaultLockOutputTypeDef
 
 ```python
@@ -773,6 +873,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputserializationtypedef"></a>
+
 ## InputSerializationTypeDef
 
 ```python
@@ -782,6 +884,8 @@ from mypy_boto3_glacier.type_defs import InputSerializationTypeDef
 Optional fields:
 
 - `csv`: [CSVInputTypeDef](./type_defs.md#csvinputtypedef)
+
+<a id="inventoryretrievaljobdescriptionresponsemetadatatypedef"></a>
 
 ## InventoryRetrievalJobDescriptionResponseMetadataTypeDef
 
@@ -799,6 +903,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inventoryretrievaljobdescriptiontypedef"></a>
+
 ## InventoryRetrievalJobDescriptionTypeDef
 
 ```python
@@ -813,6 +919,8 @@ Optional fields:
 - `Limit`: `str`
 - `Marker`: `str`
 
+<a id="inventoryretrievaljobinputtypedef"></a>
+
 ## InventoryRetrievalJobInputTypeDef
 
 ```python
@@ -825,6 +933,8 @@ Optional fields:
 - `EndDate`: `str`
 - `Limit`: `str`
 - `Marker`: `str`
+
+<a id="jobparameterstypedef"></a>
 
 ## JobParametersTypeDef
 
@@ -848,6 +958,8 @@ Optional fields:
 - `OutputLocation`:
   [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
+<a id="listjobsinputrequesttypedef"></a>
+
 ## ListJobsInputRequestTypeDef
 
 ```python
@@ -866,6 +978,8 @@ Optional fields:
 - `statuscode`: `str`
 - `completed`: `str`
 
+<a id="listjobsoutputtypedef"></a>
+
 ## ListJobsOutputTypeDef
 
 ```python
@@ -879,6 +993,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmultipartuploadsinputrequesttypedef"></a>
 
 ## ListMultipartUploadsInputRequestTypeDef
 
@@ -896,6 +1012,8 @@ Optional fields:
 - `marker`: `str`
 - `limit`: `str`
 
+<a id="listmultipartuploadsoutputtypedef"></a>
+
 ## ListMultipartUploadsOutputTypeDef
 
 ```python
@@ -910,6 +1028,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpartsinputmultipartuploadtypedef"></a>
+
 ## ListPartsInputMultipartUploadTypeDef
 
 ```python
@@ -920,6 +1040,8 @@ Optional fields:
 
 - `marker`: `str`
 - `limit`: `str`
+
+<a id="listpartsinputrequesttypedef"></a>
 
 ## ListPartsInputRequestTypeDef
 
@@ -937,6 +1059,8 @@ Optional fields:
 
 - `marker`: `str`
 - `limit`: `str`
+
+<a id="listpartsoutputtypedef"></a>
 
 ## ListPartsOutputTypeDef
 
@@ -957,6 +1081,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprovisionedcapacityinputrequesttypedef"></a>
+
 ## ListProvisionedCapacityInputRequestTypeDef
 
 ```python
@@ -966,6 +1092,8 @@ from mypy_boto3_glacier.type_defs import ListProvisionedCapacityInputRequestType
 Required fields:
 
 - `accountId`: `str`
+
+<a id="listprovisionedcapacityoutputtypedef"></a>
 
 ## ListProvisionedCapacityOutputTypeDef
 
@@ -980,6 +1108,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforvaultinputrequesttypedef"></a>
+
 ## ListTagsForVaultInputRequestTypeDef
 
 ```python
@@ -990,6 +1120,8 @@ Required fields:
 
 - `accountId`: `str`
 - `vaultName`: `str`
+
+<a id="listtagsforvaultoutputtypedef"></a>
 
 ## ListTagsForVaultOutputTypeDef
 
@@ -1002,6 +1134,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listvaultsinputrequesttypedef"></a>
 
 ## ListVaultsInputRequestTypeDef
 
@@ -1018,6 +1152,8 @@ Optional fields:
 - `marker`: `str`
 - `limit`: `str`
 
+<a id="listvaultsoutputtypedef"></a>
+
 ## ListVaultsOutputTypeDef
 
 ```python
@@ -1032,6 +1168,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="outputlocationresponsemetadatatypedef"></a>
+
 ## OutputLocationResponseMetadataTypeDef
 
 ```python
@@ -1044,6 +1182,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="outputlocationtypedef"></a>
+
 ## OutputLocationTypeDef
 
 ```python
@@ -1054,6 +1194,8 @@ Optional fields:
 
 - `S3`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
+<a id="outputserializationtypedef"></a>
+
 ## OutputSerializationTypeDef
 
 ```python
@@ -1063,6 +1205,8 @@ from mypy_boto3_glacier.type_defs import OutputSerializationTypeDef
 Optional fields:
 
 - `csv`: [CSVOutputTypeDef](./type_defs.md#csvoutputtypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1076,6 +1220,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="partlistelementtypedef"></a>
+
 ## PartListElementTypeDef
 
 ```python
@@ -1086,6 +1232,8 @@ Optional fields:
 
 - `RangeInBytes`: `str`
 - `SHA256TreeHash`: `str`
+
+<a id="provisionedcapacitydescriptiontypedef"></a>
 
 ## ProvisionedCapacityDescriptionTypeDef
 
@@ -1099,6 +1247,8 @@ Optional fields:
 - `StartDate`: `str`
 - `ExpirationDate`: `str`
 
+<a id="purchaseprovisionedcapacityinputrequesttypedef"></a>
+
 ## PurchaseProvisionedCapacityInputRequestTypeDef
 
 ```python
@@ -1108,6 +1258,8 @@ from mypy_boto3_glacier.type_defs import PurchaseProvisionedCapacityInputRequest
 Required fields:
 
 - `accountId`: `str`
+
+<a id="purchaseprovisionedcapacityoutputtypedef"></a>
 
 ## PurchaseProvisionedCapacityOutputTypeDef
 
@@ -1120,6 +1272,8 @@ Required fields:
 - `capacityId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="removetagsfromvaultinputrequesttypedef"></a>
 
 ## RemoveTagsFromVaultInputRequestTypeDef
 
@@ -1136,6 +1290,8 @@ Optional fields:
 
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1149,6 +1305,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3locationtypedef"></a>
 
 ## S3LocationTypeDef
 
@@ -1166,6 +1324,8 @@ Optional fields:
 - `Tagging`: `Dict`\[`str`, `str`\]
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
+
+<a id="selectparametersresponsemetadatatypedef"></a>
 
 ## SelectParametersResponseMetadataTypeDef
 
@@ -1185,6 +1345,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="selectparameterstypedef"></a>
+
 ## SelectParametersTypeDef
 
 ```python
@@ -1201,6 +1363,8 @@ Optional fields:
 - `OutputSerialization`:
   [OutputSerializationTypeDef](./type_defs.md#outputserializationtypedef)
 
+<a id="serviceresourceaccountrequesttypedef"></a>
+
 ## ServiceResourceAccountRequestTypeDef
 
 ```python
@@ -1210,6 +1374,8 @@ from mypy_boto3_glacier.type_defs import ServiceResourceAccountRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="serviceresourcearchiverequesttypedef"></a>
 
 ## ServiceResourceArchiveRequestTypeDef
 
@@ -1223,6 +1389,8 @@ Required fields:
 - `vault_name`: `str`
 - `id`: `str`
 
+<a id="serviceresourcejobrequesttypedef"></a>
+
 ## ServiceResourceJobRequestTypeDef
 
 ```python
@@ -1234,6 +1402,8 @@ Required fields:
 - `account_id`: `str`
 - `vault_name`: `str`
 - `id`: `str`
+
+<a id="serviceresourcemultipartuploadrequesttypedef"></a>
 
 ## ServiceResourceMultipartUploadRequestTypeDef
 
@@ -1247,6 +1417,8 @@ Required fields:
 - `vault_name`: `str`
 - `id`: `str`
 
+<a id="serviceresourcenotificationrequesttypedef"></a>
+
 ## ServiceResourceNotificationRequestTypeDef
 
 ```python
@@ -1258,6 +1430,8 @@ Required fields:
 - `account_id`: `str`
 - `vault_name`: `str`
 
+<a id="serviceresourcevaultrequesttypedef"></a>
+
 ## ServiceResourceVaultRequestTypeDef
 
 ```python
@@ -1268,6 +1442,8 @@ Required fields:
 
 - `account_id`: `str`
 - `name`: `str`
+
+<a id="setdataretrievalpolicyinputrequesttypedef"></a>
 
 ## SetDataRetrievalPolicyInputRequestTypeDef
 
@@ -1284,6 +1460,8 @@ Optional fields:
 - `Policy`:
   [DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef)
 
+<a id="setvaultaccesspolicyinputrequesttypedef"></a>
+
 ## SetVaultAccessPolicyInputRequestTypeDef
 
 ```python
@@ -1299,6 +1477,8 @@ Optional fields:
 
 - `policy`: [VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef)
 
+<a id="setvaultnotificationsinputnotificationtypedef"></a>
+
 ## SetVaultNotificationsInputNotificationTypeDef
 
 ```python
@@ -1309,6 +1489,8 @@ Optional fields:
 
 - `vaultNotificationConfig`:
   [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
+
+<a id="setvaultnotificationsinputrequesttypedef"></a>
 
 ## SetVaultNotificationsInputRequestTypeDef
 
@@ -1325,6 +1507,8 @@ Optional fields:
 
 - `vaultNotificationConfig`:
   [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
+
+<a id="uploadarchiveinputrequesttypedef"></a>
 
 ## UploadArchiveInputRequestTypeDef
 
@@ -1343,6 +1527,8 @@ Optional fields:
 - `checksum`: `str`
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="uploadarchiveinputvaulttypedef"></a>
+
 ## UploadArchiveInputVaultTypeDef
 
 ```python
@@ -1354,6 +1540,8 @@ Optional fields:
 - `archiveDescription`: `str`
 - `checksum`: `str`
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="uploadlistelementtypedef"></a>
 
 ## UploadListElementTypeDef
 
@@ -1369,6 +1557,8 @@ Optional fields:
 - `PartSizeInBytes`: `int`
 - `CreationDate`: `str`
 
+<a id="uploadmultipartpartinputmultipartuploadtypedef"></a>
+
 ## UploadMultipartPartInputMultipartUploadTypeDef
 
 ```python
@@ -1380,6 +1570,8 @@ Optional fields:
 - `checksum`: `str`
 - `range`: `str`
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="uploadmultipartpartinputrequesttypedef"></a>
 
 ## UploadMultipartPartInputRequestTypeDef
 
@@ -1399,6 +1591,8 @@ Optional fields:
 - `range`: `str`
 - `body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="uploadmultipartpartoutputtypedef"></a>
+
 ## UploadMultipartPartOutputTypeDef
 
 ```python
@@ -1411,6 +1605,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="vaultaccesspolicytypedef"></a>
+
 ## VaultAccessPolicyTypeDef
 
 ```python
@@ -1420,6 +1616,8 @@ from mypy_boto3_glacier.type_defs import VaultAccessPolicyTypeDef
 Optional fields:
 
 - `Policy`: `str`
+
+<a id="vaultarchiverequesttypedef"></a>
 
 ## VaultArchiveRequestTypeDef
 
@@ -1431,6 +1629,8 @@ Required fields:
 
 - `id`: `str`
 
+<a id="vaultjobrequesttypedef"></a>
+
 ## VaultJobRequestTypeDef
 
 ```python
@@ -1440,6 +1640,8 @@ from mypy_boto3_glacier.type_defs import VaultJobRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="vaultlockpolicytypedef"></a>
 
 ## VaultLockPolicyTypeDef
 
@@ -1451,6 +1653,8 @@ Optional fields:
 
 - `Policy`: `str`
 
+<a id="vaultmultipartuploadrequesttypedef"></a>
+
 ## VaultMultipartUploadRequestTypeDef
 
 ```python
@@ -1460,6 +1664,8 @@ from mypy_boto3_glacier.type_defs import VaultMultipartUploadRequestTypeDef
 Required fields:
 
 - `id`: `str`
+
+<a id="vaultnotificationconfigtypedef"></a>
 
 ## VaultNotificationConfigTypeDef
 
@@ -1471,6 +1677,8 @@ Optional fields:
 
 - `SNSTopic`: `str`
 - `Events`: `List`\[`str`\]
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

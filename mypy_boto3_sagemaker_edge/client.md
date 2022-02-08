@@ -1,3 +1,5 @@
+<a id="sagemakeredgemanagerclient-for-boto3-sagemakeredgemanager-module"></a>
+
 # SagemakerEdgeManagerClient for boto3 SagemakerEdgeManager module
 
 > [Index](..) > [SagemakerEdgeManager](.) > SagemakerEdgeManagerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SagemakerEdgeManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager)
 type annotations stubs module
-[mypy_boto3_sagemaker_edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
+[mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
 - [SagemakerEdgeManagerClient for boto3 SagemakerEdgeManager module](#sagemakeredgemanagerclient-for-boto3-sagemakeredgemanager-module)
   - [SagemakerEdgeManagerClient](#sagemakeredgemanagerclient)
@@ -17,6 +19,8 @@ type annotations stubs module
     - [get_device_registration](#get_device_registration)
     - [send_heartbeat](#send_heartbeat)
 
+<a id="sagemakeredgemanagerclient"></a>
+
 ## SagemakerEdgeManagerClient
 
 Type annotations for `boto3.client("sagemaker-edge")`
@@ -24,14 +28,17 @@ Type annotations for `boto3.client("sagemaker-edge")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sagemaker_edge.client import SagemakerEdgeManagerClient
 
 def get_sagemaker-edge_client() -> SagemakerEdgeManagerClient:
-    return boto3.client("sagemaker-edge")
+    return Session().client("sagemaker-edge")
 ```
 
 Boto3 documentation:
 [SagemakerEdgeManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -50,7 +57,11 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.InternalServiceException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -62,6 +73,8 @@ Boto3 documentation:
 [SagemakerEdgeManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-edge.html#SagemakerEdgeManager.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -77,6 +90,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -96,6 +111,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_device_registration"></a>
 
 ### get_device_registration
 
@@ -117,6 +134,8 @@ Keyword-only arguments:
 
 Returns
 [GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef).
+
+<a id="send_heartbeat"></a>
 
 ### send_heartbeat
 

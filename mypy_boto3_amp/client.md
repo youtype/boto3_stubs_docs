@@ -1,3 +1,5 @@
+<a id="prometheusserviceclient-for-boto3-prometheusservice-module"></a>
+
 # PrometheusServiceClient for boto3 PrometheusService module
 
 > [Index](..) > [PrometheusService](.) > PrometheusServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
 type annotations stubs module
-[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 - [PrometheusServiceClient for boto3 PrometheusService module](#prometheusserviceclient-for-boto3-prometheusservice-module)
   - [PrometheusServiceClient](#prometheusserviceclient)
@@ -34,6 +36,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="prometheusserviceclient"></a>
+
 ## PrometheusServiceClient
 
 Type annotations for `boto3.client("amp")`
@@ -41,14 +45,17 @@ Type annotations for `boto3.client("amp")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_amp.client import PrometheusServiceClient
 
 def get_amp_client() -> PrometheusServiceClient:
-    return boto3.client("amp")
+    return Session().client("amp")
 ```
 
 Boto3 documentation:
 [PrometheusService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -73,7 +80,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -85,6 +96,8 @@ Boto3 documentation:
 [PrometheusService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -100,6 +113,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_alert_manager_definition"></a>
 
 ### create_alert_manager_definition
 
@@ -122,6 +137,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAlertManagerDefinitionResponseTypeDef](./type_defs.md#createalertmanagerdefinitionresponsetypedef).
+
+<a id="create_rule_groups_namespace"></a>
 
 ### create_rule_groups_namespace
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 Returns
 [CreateRuleGroupsNamespaceResponseTypeDef](./type_defs.md#createrulegroupsnamespaceresponsetypedef).
 
+<a id="create_workspace"></a>
+
 ### create_workspace
 
 Creates a new AMP workspace.
@@ -167,6 +186,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
+<a id="delete_alert_manager_definition"></a>
+
 ### delete_alert_manager_definition
 
 Deletes an alert manager definition.
@@ -184,6 +205,8 @@ Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
+
+<a id="delete_rule_groups_namespace"></a>
 
 ### delete_rule_groups_namespace
 
@@ -203,6 +226,8 @@ Keyword-only arguments:
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
 
+<a id="delete_workspace"></a>
+
 ### delete_workspace
 
 Deletes an AMP workspace.
@@ -219,6 +244,8 @@ Keyword-only arguments:
 
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
+
+<a id="describe_alert_manager_definition"></a>
 
 ### describe_alert_manager_definition
 
@@ -239,6 +266,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAlertManagerDefinitionResponseTypeDef](./type_defs.md#describealertmanagerdefinitionresponsetypedef).
+
+<a id="describe_rule_groups_namespace"></a>
 
 ### describe_rule_groups_namespace
 
@@ -261,6 +290,8 @@ Keyword-only arguments:
 Returns
 [DescribeRuleGroupsNamespaceResponseTypeDef](./type_defs.md#describerulegroupsnamespaceresponsetypedef).
 
+<a id="describe_workspace"></a>
+
 ### describe_workspace
 
 Describes an existing AMP workspace.
@@ -280,6 +311,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -297,6 +330,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_rule_groups_namespaces"></a>
 
 ### list_rule_groups_namespaces
 
@@ -320,6 +355,8 @@ Keyword-only arguments:
 Returns
 [ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags you have assigned to the resource.
@@ -338,6 +375,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_workspaces"></a>
 
 ### list_workspaces
 
@@ -360,6 +399,8 @@ Keyword-only arguments:
 Returns
 [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
 
+<a id="put_alert_manager_definition"></a>
+
 ### put_alert_manager_definition
 
 Update an alert manager definition.
@@ -380,6 +421,8 @@ Keyword-only arguments:
 
 Returns
 [PutAlertManagerDefinitionResponseTypeDef](./type_defs.md#putalertmanagerdefinitionresponsetypedef).
+
+<a id="put_rule_groups_namespace"></a>
 
 ### put_rule_groups_namespace
 
@@ -403,6 +446,8 @@ Keyword-only arguments:
 Returns
 [PutRuleGroupsNamespaceResponseTypeDef](./type_defs.md#putrulegroupsnamespaceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Creates tags for the specified resource.
@@ -421,6 +466,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -441,6 +488,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_workspace_alias"></a>
+
 ### update_workspace_alias
 
 Updates an AMP workspace alias.
@@ -459,6 +508,8 @@ Keyword-only arguments:
 - `alias`: `str`
 - `clientToken`: `str`
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("amp").get_paginator` method with overloads.
@@ -467,6 +518,8 @@ Type annotations for `boto3.client("amp").get_paginator` method with overloads.
   [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
 - `client.get_paginator("list_workspaces")` ->
   [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

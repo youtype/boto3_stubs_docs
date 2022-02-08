@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-elasticbeanstalk-module"></a>
+
 # Waiters for boto3 ElasticBeanstalk module
 
 > [Index](..) > [ElasticBeanstalk](.) > Waiters
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
-[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Waiters for boto3 ElasticBeanstalk module](#waiters-for-boto3-elasticbeanstalk-module)
   - [EnvironmentExistsWaiter](#environmentexistswaiter)
   - [EnvironmentTerminatedWaiter](#environmentterminatedwaiter)
   - [EnvironmentUpdatedWaiter](#environmentupdatedwaiter)
+
+<a id="environmentexistswaiter"></a>
 
 ## EnvironmentExistsWaiter
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentExistsWaiter
 
 def get_environment_exists_waiter() -> EnvironmentExistsWaiter:
-    return boto3.client("elasticbeanstalk").get_waiter("environment_exists")
+    return Session().client("elasticbeanstalk").get_waiter("environment_exists")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `EnvironmentExistsWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="environmentterminatedwaiter"></a>
+
 ## EnvironmentTerminatedWaiter
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentTerminatedWaiter
 
 def get_environment_terminated_waiter() -> EnvironmentTerminatedWaiter:
-    return boto3.client("elasticbeanstalk").get_waiter("environment_terminated")
+    return Session().client("elasticbeanstalk").get_waiter("environment_terminated")
 ```
 
 Boto3 documentation:
@@ -70,6 +80,8 @@ Arguments for `EnvironmentTerminatedWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="environmentupdatedwaiter"></a>
+
 ## EnvironmentUpdatedWaiter
 
 Type annotations for
@@ -78,10 +90,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticbeanstalk.waiter import EnvironmentUpdatedWaiter
 
 def get_environment_updated_waiter() -> EnvironmentUpdatedWaiter:
-    return boto3.client("elasticbeanstalk").get_waiter("environment_updated")
+    return Session().client("elasticbeanstalk").get_waiter("environment_updated")
 ```
 
 Boto3 documentation:

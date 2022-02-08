@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-devicefarm-module"></a>
+
 # Typed dictionaries for boto3 DeviceFarm module
 
 > [Index](..) > [DeviceFarm](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DeviceFarm](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devicefarm.html#DeviceFarm)
 type annotations stubs module
-[mypy_boto3_devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
+[mypy-boto3-devicefarm](https://pypi.org/project/mypy-boto3-devicefarm/).
 
 - [Typed dictionaries for boto3 DeviceFarm module](#typed-dictionaries-for-boto3-devicefarm-module)
   - [AccountSettingsTypeDef](#accountsettingstypedef)
@@ -202,6 +204,8 @@ type annotations stubs module
   - [UploadTypeDef](#uploadtypedef)
   - [VPCEConfigurationTypeDef](#vpceconfigurationtypedef)
 
+<a id="accountsettingstypedef"></a>
+
 ## AccountSettingsTypeDef
 
 ```python
@@ -221,6 +225,8 @@ Optional fields:
 - `defaultJobTimeoutMinutes`: `int`
 - `skipAppResign`: `bool`
 
+<a id="artifacttypedef"></a>
+
 ## ArtifactTypeDef
 
 ```python
@@ -235,6 +241,8 @@ Optional fields:
 - `extension`: `str`
 - `url`: `str`
 
+<a id="cputypedef"></a>
+
 ## CPUTypeDef
 
 ```python
@@ -246,6 +254,8 @@ Optional fields:
 - `frequency`: `str`
 - `architecture`: `str`
 - `clock`: `float`
+
+<a id="counterstypedef"></a>
 
 ## CountersTypeDef
 
@@ -262,6 +272,8 @@ Optional fields:
 - `errored`: `int`
 - `stopped`: `int`
 - `skipped`: `int`
+
+<a id="createdevicepoolrequestrequesttypedef"></a>
 
 ## CreateDevicePoolRequestRequestTypeDef
 
@@ -280,6 +292,8 @@ Optional fields:
 - `description`: `str`
 - `maxDevices`: `int`
 
+<a id="createdevicepoolresulttypedef"></a>
+
 ## CreateDevicePoolResultTypeDef
 
 ```python
@@ -291,6 +305,8 @@ Required fields:
 - `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createinstanceprofilerequestrequesttypedef"></a>
 
 ## CreateInstanceProfileRequestRequestTypeDef
 
@@ -309,6 +325,8 @@ Optional fields:
 - `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
 - `rebootAfterUse`: `bool`
 
+<a id="createinstanceprofileresulttypedef"></a>
+
 ## CreateInstanceProfileResultTypeDef
 
 ```python
@@ -321,6 +339,8 @@ Required fields:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createnetworkprofilerequestrequesttypedef"></a>
 
 ## CreateNetworkProfileRequestRequestTypeDef
 
@@ -346,6 +366,8 @@ Optional fields:
 - `uplinkLossPercent`: `int`
 - `downlinkLossPercent`: `int`
 
+<a id="createnetworkprofileresulttypedef"></a>
+
 ## CreateNetworkProfileResultTypeDef
 
 ```python
@@ -358,6 +380,8 @@ Required fields:
   [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -373,6 +397,8 @@ Optional fields:
 
 - `defaultJobTimeoutMinutes`: `int`
 
+<a id="createprojectresulttypedef"></a>
+
 ## CreateProjectResultTypeDef
 
 ```python
@@ -385,6 +411,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createremoteaccesssessionconfigurationtypedef"></a>
+
 ## CreateRemoteAccessSessionConfigurationTypeDef
 
 ```python
@@ -395,6 +423,8 @@ Optional fields:
 
 - `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
 - `vpceConfigurationArns`: `Sequence`\[`str`\]
+
+<a id="createremoteaccesssessionrequestrequesttypedef"></a>
 
 ## CreateRemoteAccessSessionRequestRequestTypeDef
 
@@ -421,6 +451,8 @@ Optional fields:
 - `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
 - `skipAppResign`: `bool`
 
+<a id="createremoteaccesssessionresulttypedef"></a>
+
 ## CreateRemoteAccessSessionResultTypeDef
 
 ```python
@@ -433,6 +465,8 @@ Required fields:
   [RemoteAccessSessionTypeDef](./type_defs.md#remoteaccesssessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtestgridprojectrequestrequesttypedef"></a>
 
 ## CreateTestGridProjectRequestRequestTypeDef
 
@@ -450,6 +484,8 @@ Optional fields:
 - `vpcConfig`:
   [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 
+<a id="createtestgridprojectresulttypedef"></a>
+
 ## CreateTestGridProjectResultTypeDef
 
 ```python
@@ -463,6 +499,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createtestgridurlrequestrequesttypedef"></a>
+
 ## CreateTestGridUrlRequestRequestTypeDef
 
 ```python
@@ -473,6 +511,8 @@ Required fields:
 
 - `projectArn`: `str`
 - `expiresInSeconds`: `int`
+
+<a id="createtestgridurlresulttypedef"></a>
 
 ## CreateTestGridUrlResultTypeDef
 
@@ -486,6 +526,8 @@ Required fields:
 - `expires`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuploadrequestrequesttypedef"></a>
 
 ## CreateUploadRequestRequestTypeDef
 
@@ -503,6 +545,8 @@ Optional fields:
 
 - `contentType`: `str`
 
+<a id="createuploadresulttypedef"></a>
+
 ## CreateUploadResultTypeDef
 
 ```python
@@ -514,6 +558,8 @@ Required fields:
 - `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createvpceconfigurationrequestrequesttypedef"></a>
 
 ## CreateVPCEConfigurationRequestRequestTypeDef
 
@@ -531,6 +577,8 @@ Optional fields:
 
 - `vpceConfigurationDescription`: `str`
 
+<a id="createvpceconfigurationresulttypedef"></a>
+
 ## CreateVPCEConfigurationResultTypeDef
 
 ```python
@@ -544,6 +592,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customerartifactpathstypedef"></a>
+
 ## CustomerArtifactPathsTypeDef
 
 ```python
@@ -556,6 +606,8 @@ Optional fields:
 - `androidPaths`: `Sequence`\[`str`\]
 - `deviceHostPaths`: `Sequence`\[`str`\]
 
+<a id="deletedevicepoolrequestrequesttypedef"></a>
+
 ## DeleteDevicePoolRequestRequestTypeDef
 
 ```python
@@ -565,6 +617,8 @@ from mypy_boto3_devicefarm.type_defs import DeleteDevicePoolRequestRequestTypeDe
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleteinstanceprofilerequestrequesttypedef"></a>
 
 ## DeleteInstanceProfileRequestRequestTypeDef
 
@@ -576,6 +630,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deletenetworkprofilerequestrequesttypedef"></a>
+
 ## DeleteNetworkProfileRequestRequestTypeDef
 
 ```python
@@ -585,6 +641,8 @@ from mypy_boto3_devicefarm.type_defs import DeleteNetworkProfileRequestRequestTy
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleteprojectrequestrequesttypedef"></a>
 
 ## DeleteProjectRequestRequestTypeDef
 
@@ -596,6 +654,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deleteremoteaccesssessionrequestrequesttypedef"></a>
+
 ## DeleteRemoteAccessSessionRequestRequestTypeDef
 
 ```python
@@ -605,6 +665,8 @@ from mypy_boto3_devicefarm.type_defs import DeleteRemoteAccessSessionRequestRequ
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleterunrequestrequesttypedef"></a>
 
 ## DeleteRunRequestRequestTypeDef
 
@@ -616,6 +678,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deletetestgridprojectrequestrequesttypedef"></a>
+
 ## DeleteTestGridProjectRequestRequestTypeDef
 
 ```python
@@ -625,6 +689,8 @@ from mypy_boto3_devicefarm.type_defs import DeleteTestGridProjectRequestRequestT
 Required fields:
 
 - `projectArn`: `str`
+
+<a id="deleteuploadrequestrequesttypedef"></a>
 
 ## DeleteUploadRequestRequestTypeDef
 
@@ -636,6 +702,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deletevpceconfigurationrequestrequesttypedef"></a>
+
 ## DeleteVPCEConfigurationRequestRequestTypeDef
 
 ```python
@@ -645,6 +713,8 @@ from mypy_boto3_devicefarm.type_defs import DeleteVPCEConfigurationRequestReques
 Required fields:
 
 - `arn`: `str`
+
+<a id="devicefiltertypedef"></a>
 
 ## DeviceFilterTypeDef
 
@@ -658,6 +728,8 @@ Required fields:
   [DeviceFilterAttributeType](./literals.md#devicefilterattributetype)
 - `operator`: [RuleOperatorType](./literals.md#ruleoperatortype)
 - `values`: `List`\[`str`\]
+
+<a id="deviceinstancetypedef"></a>
 
 ## DeviceInstanceTypeDef
 
@@ -675,6 +747,8 @@ Optional fields:
 - `instanceProfile`:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 
+<a id="deviceminutestypedef"></a>
+
 ## DeviceMinutesTypeDef
 
 ```python
@@ -686,6 +760,8 @@ Optional fields:
 - `total`: `float`
 - `metered`: `float`
 - `unmetered`: `float`
+
+<a id="devicepoolcompatibilityresulttypedef"></a>
 
 ## DevicePoolCompatibilityResultTypeDef
 
@@ -699,6 +775,8 @@ Optional fields:
 - `compatible`: `bool`
 - `incompatibilityMessages`:
   `List`\[[IncompatibilityMessageTypeDef](./type_defs.md#incompatibilitymessagetypedef)\]
+
+<a id="devicepooltypedef"></a>
 
 ## DevicePoolTypeDef
 
@@ -715,6 +793,8 @@ Optional fields:
 - `rules`: `List`\[[RuleTypeDef](./type_defs.md#ruletypedef)\]
 - `maxDevices`: `int`
 
+<a id="deviceselectionconfigurationtypedef"></a>
+
 ## DeviceSelectionConfigurationTypeDef
 
 ```python
@@ -726,6 +806,8 @@ Required fields:
 - `filters`:
   `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `maxDevices`: `int`
+
+<a id="deviceselectionresulttypedef"></a>
 
 ## DeviceSelectionResultTypeDef
 
@@ -739,6 +821,8 @@ Optional fields:
   `List`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
 - `matchedDevicesCount`: `int`
 - `maxDevices`: `int`
+
+<a id="devicetypedef"></a>
 
 ## DeviceTypeDef
 
@@ -772,6 +856,8 @@ Optional fields:
 - `availability`:
   [DeviceAvailabilityType](./literals.md#deviceavailabilitytype)
 
+<a id="executionconfigurationtypedef"></a>
+
 ## ExecutionConfigurationTypeDef
 
 ```python
@@ -786,6 +872,8 @@ Optional fields:
 - `videoCapture`: `bool`
 - `skipAppResign`: `bool`
 
+<a id="getaccountsettingsresulttypedef"></a>
+
 ## GetAccountSettingsResultTypeDef
 
 ```python
@@ -799,6 +887,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeviceinstancerequestrequesttypedef"></a>
+
 ## GetDeviceInstanceRequestRequestTypeDef
 
 ```python
@@ -808,6 +898,8 @@ from mypy_boto3_devicefarm.type_defs import GetDeviceInstanceRequestRequestTypeD
 Required fields:
 
 - `arn`: `str`
+
+<a id="getdeviceinstanceresulttypedef"></a>
 
 ## GetDeviceInstanceResultTypeDef
 
@@ -821,6 +913,8 @@ Required fields:
   [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdevicepoolcompatibilityrequestrequesttypedef"></a>
 
 ## GetDevicePoolCompatibilityRequestRequestTypeDef
 
@@ -840,6 +934,8 @@ Optional fields:
 - `configuration`:
   [ScheduleRunConfigurationTypeDef](./type_defs.md#schedulerunconfigurationtypedef)
 
+<a id="getdevicepoolcompatibilityresulttypedef"></a>
+
 ## GetDevicePoolCompatibilityResultTypeDef
 
 ```python
@@ -855,6 +951,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicepoolrequestrequesttypedef"></a>
+
 ## GetDevicePoolRequestRequestTypeDef
 
 ```python
@@ -864,6 +962,8 @@ from mypy_boto3_devicefarm.type_defs import GetDevicePoolRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getdevicepoolresulttypedef"></a>
 
 ## GetDevicePoolResultTypeDef
 
@@ -877,6 +977,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicerequestrequesttypedef"></a>
+
 ## GetDeviceRequestRequestTypeDef
 
 ```python
@@ -886,6 +988,8 @@ from mypy_boto3_devicefarm.type_defs import GetDeviceRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getdeviceresulttypedef"></a>
 
 ## GetDeviceResultTypeDef
 
@@ -899,6 +1003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinstanceprofilerequestrequesttypedef"></a>
+
 ## GetInstanceProfileRequestRequestTypeDef
 
 ```python
@@ -908,6 +1014,8 @@ from mypy_boto3_devicefarm.type_defs import GetInstanceProfileRequestRequestType
 Required fields:
 
 - `arn`: `str`
+
+<a id="getinstanceprofileresulttypedef"></a>
 
 ## GetInstanceProfileResultTypeDef
 
@@ -922,6 +1030,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobrequestrequesttypedef"></a>
+
 ## GetJobRequestRequestTypeDef
 
 ```python
@@ -931,6 +1041,8 @@ from mypy_boto3_devicefarm.type_defs import GetJobRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getjobresulttypedef"></a>
 
 ## GetJobResultTypeDef
 
@@ -944,6 +1056,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnetworkprofilerequestrequesttypedef"></a>
+
 ## GetNetworkProfileRequestRequestTypeDef
 
 ```python
@@ -953,6 +1067,8 @@ from mypy_boto3_devicefarm.type_defs import GetNetworkProfileRequestRequestTypeD
 Required fields:
 
 - `arn`: `str`
+
+<a id="getnetworkprofileresulttypedef"></a>
 
 ## GetNetworkProfileResultTypeDef
 
@@ -967,6 +1083,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getofferingstatusrequestrequesttypedef"></a>
+
 ## GetOfferingStatusRequestRequestTypeDef
 
 ```python
@@ -976,6 +1094,8 @@ from mypy_boto3_devicefarm.type_defs import GetOfferingStatusRequestRequestTypeD
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="getofferingstatusresulttypedef"></a>
 
 ## GetOfferingStatusResultTypeDef
 
@@ -993,6 +1113,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getprojectrequestrequesttypedef"></a>
+
 ## GetProjectRequestRequestTypeDef
 
 ```python
@@ -1002,6 +1124,8 @@ from mypy_boto3_devicefarm.type_defs import GetProjectRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getprojectresulttypedef"></a>
 
 ## GetProjectResultTypeDef
 
@@ -1015,6 +1139,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getremoteaccesssessionrequestrequesttypedef"></a>
+
 ## GetRemoteAccessSessionRequestRequestTypeDef
 
 ```python
@@ -1024,6 +1150,8 @@ from mypy_boto3_devicefarm.type_defs import GetRemoteAccessSessionRequestRequest
 Required fields:
 
 - `arn`: `str`
+
+<a id="getremoteaccesssessionresulttypedef"></a>
 
 ## GetRemoteAccessSessionResultTypeDef
 
@@ -1038,6 +1166,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrunrequestrequesttypedef"></a>
+
 ## GetRunRequestRequestTypeDef
 
 ```python
@@ -1047,6 +1177,8 @@ from mypy_boto3_devicefarm.type_defs import GetRunRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getrunresulttypedef"></a>
 
 ## GetRunResultTypeDef
 
@@ -1060,6 +1192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsuiterequestrequesttypedef"></a>
+
 ## GetSuiteRequestRequestTypeDef
 
 ```python
@@ -1069,6 +1203,8 @@ from mypy_boto3_devicefarm.type_defs import GetSuiteRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getsuiteresulttypedef"></a>
 
 ## GetSuiteResultTypeDef
 
@@ -1082,6 +1218,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettestgridprojectrequestrequesttypedef"></a>
+
 ## GetTestGridProjectRequestRequestTypeDef
 
 ```python
@@ -1091,6 +1229,8 @@ from mypy_boto3_devicefarm.type_defs import GetTestGridProjectRequestRequestType
 Required fields:
 
 - `projectArn`: `str`
+
+<a id="gettestgridprojectresulttypedef"></a>
 
 ## GetTestGridProjectResultTypeDef
 
@@ -1105,6 +1245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettestgridsessionrequestrequesttypedef"></a>
+
 ## GetTestGridSessionRequestRequestTypeDef
 
 ```python
@@ -1116,6 +1258,8 @@ Optional fields:
 - `projectArn`: `str`
 - `sessionId`: `str`
 - `sessionArn`: `str`
+
+<a id="gettestgridsessionresulttypedef"></a>
 
 ## GetTestGridSessionResultTypeDef
 
@@ -1130,6 +1274,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettestrequestrequesttypedef"></a>
+
 ## GetTestRequestRequestTypeDef
 
 ```python
@@ -1139,6 +1285,8 @@ from mypy_boto3_devicefarm.type_defs import GetTestRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="gettestresulttypedef"></a>
 
 ## GetTestResultTypeDef
 
@@ -1152,6 +1300,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getuploadrequestrequesttypedef"></a>
+
 ## GetUploadRequestRequestTypeDef
 
 ```python
@@ -1161,6 +1311,8 @@ from mypy_boto3_devicefarm.type_defs import GetUploadRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getuploadresulttypedef"></a>
 
 ## GetUploadResultTypeDef
 
@@ -1174,6 +1326,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvpceconfigurationrequestrequesttypedef"></a>
+
 ## GetVPCEConfigurationRequestRequestTypeDef
 
 ```python
@@ -1183,6 +1337,8 @@ from mypy_boto3_devicefarm.type_defs import GetVPCEConfigurationRequestRequestTy
 Required fields:
 
 - `arn`: `str`
+
+<a id="getvpceconfigurationresulttypedef"></a>
 
 ## GetVPCEConfigurationResultTypeDef
 
@@ -1197,6 +1353,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="incompatibilitymessagetypedef"></a>
+
 ## IncompatibilityMessageTypeDef
 
 ```python
@@ -1207,6 +1365,8 @@ Optional fields:
 
 - `message`: `str`
 - `type`: [DeviceAttributeType](./literals.md#deviceattributetype)
+
+<a id="installtoremoteaccesssessionrequestrequesttypedef"></a>
 
 ## InstallToRemoteAccessSessionRequestRequestTypeDef
 
@@ -1219,6 +1379,8 @@ Required fields:
 - `remoteAccessSessionArn`: `str`
 - `appArn`: `str`
 
+<a id="installtoremoteaccesssessionresulttypedef"></a>
+
 ## InstallToRemoteAccessSessionResultTypeDef
 
 ```python
@@ -1230,6 +1392,8 @@ Required fields:
 - `appUpload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="instanceprofiletypedef"></a>
 
 ## InstanceProfileTypeDef
 
@@ -1245,6 +1409,8 @@ Optional fields:
 - `rebootAfterUse`: `bool`
 - `name`: `str`
 - `description`: `str`
+
+<a id="jobtypedef"></a>
 
 ## JobTypeDef
 
@@ -1270,6 +1436,8 @@ Optional fields:
 - `videoEndpoint`: `str`
 - `videoCapture`: `bool`
 
+<a id="listartifactsrequestrequesttypedef"></a>
+
 ## ListArtifactsRequestRequestTypeDef
 
 ```python
@@ -1285,6 +1453,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listartifactsresulttypedef"></a>
+
 ## ListArtifactsResultTypeDef
 
 ```python
@@ -1298,6 +1468,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdeviceinstancesrequestrequesttypedef"></a>
+
 ## ListDeviceInstancesRequestRequestTypeDef
 
 ```python
@@ -1308,6 +1480,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listdeviceinstancesresulttypedef"></a>
 
 ## ListDeviceInstancesResultTypeDef
 
@@ -1322,6 +1496,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdevicepoolsrequestrequesttypedef"></a>
 
 ## ListDevicePoolsRequestRequestTypeDef
 
@@ -1338,6 +1514,8 @@ Optional fields:
 - `type`: [DevicePoolTypeType](./literals.md#devicepooltypetype)
 - `nextToken`: `str`
 
+<a id="listdevicepoolsresulttypedef"></a>
+
 ## ListDevicePoolsResultTypeDef
 
 ```python
@@ -1352,6 +1530,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdevicesrequestrequesttypedef"></a>
+
 ## ListDevicesRequestRequestTypeDef
 
 ```python
@@ -1364,6 +1544,8 @@ Optional fields:
 - `nextToken`: `str`
 - `filters`:
   `Sequence`\[[DeviceFilterTypeDef](./type_defs.md#devicefiltertypedef)\]
+
+<a id="listdevicesresulttypedef"></a>
 
 ## ListDevicesResultTypeDef
 
@@ -1378,6 +1560,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinstanceprofilesrequestrequesttypedef"></a>
+
 ## ListInstanceProfilesRequestRequestTypeDef
 
 ```python
@@ -1388,6 +1572,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listinstanceprofilesresulttypedef"></a>
 
 ## ListInstanceProfilesResultTypeDef
 
@@ -1403,6 +1589,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listjobsrequestrequesttypedef"></a>
+
 ## ListJobsRequestRequestTypeDef
 
 ```python
@@ -1417,6 +1605,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listjobsresulttypedef"></a>
+
 ## ListJobsResultTypeDef
 
 ```python
@@ -1429,6 +1619,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnetworkprofilesrequestrequesttypedef"></a>
 
 ## ListNetworkProfilesRequestRequestTypeDef
 
@@ -1445,6 +1637,8 @@ Optional fields:
 - `type`: [NetworkProfileTypeType](./literals.md#networkprofiletypetype)
 - `nextToken`: `str`
 
+<a id="listnetworkprofilesresulttypedef"></a>
+
 ## ListNetworkProfilesResultTypeDef
 
 ```python
@@ -1459,6 +1653,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listofferingpromotionsrequestrequesttypedef"></a>
+
 ## ListOfferingPromotionsRequestRequestTypeDef
 
 ```python
@@ -1468,6 +1664,8 @@ from mypy_boto3_devicefarm.type_defs import ListOfferingPromotionsRequestRequest
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listofferingpromotionsresulttypedef"></a>
 
 ## ListOfferingPromotionsResultTypeDef
 
@@ -1483,6 +1681,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listofferingtransactionsrequestrequesttypedef"></a>
+
 ## ListOfferingTransactionsRequestRequestTypeDef
 
 ```python
@@ -1492,6 +1692,8 @@ from mypy_boto3_devicefarm.type_defs import ListOfferingTransactionsRequestReque
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listofferingtransactionsresulttypedef"></a>
 
 ## ListOfferingTransactionsResultTypeDef
 
@@ -1507,6 +1709,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listofferingsrequestrequesttypedef"></a>
+
 ## ListOfferingsRequestRequestTypeDef
 
 ```python
@@ -1516,6 +1720,8 @@ from mypy_boto3_devicefarm.type_defs import ListOfferingsRequestRequestTypeDef
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listofferingsresulttypedef"></a>
 
 ## ListOfferingsResultTypeDef
 
@@ -1530,6 +1736,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -1540,6 +1748,8 @@ Optional fields:
 
 - `arn`: `str`
 - `nextToken`: `str`
+
+<a id="listprojectsresulttypedef"></a>
 
 ## ListProjectsResultTypeDef
 
@@ -1553,6 +1763,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listremoteaccesssessionsrequestrequesttypedef"></a>
 
 ## ListRemoteAccessSessionsRequestRequestTypeDef
 
@@ -1568,6 +1780,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listremoteaccesssessionsresulttypedef"></a>
+
 ## ListRemoteAccessSessionsResultTypeDef
 
 ```python
@@ -1581,6 +1795,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrunsrequestrequesttypedef"></a>
 
 ## ListRunsRequestRequestTypeDef
 
@@ -1596,6 +1812,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listrunsresulttypedef"></a>
+
 ## ListRunsResultTypeDef
 
 ```python
@@ -1608,6 +1826,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsamplesrequestrequesttypedef"></a>
 
 ## ListSamplesRequestRequestTypeDef
 
@@ -1623,6 +1843,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listsamplesresulttypedef"></a>
+
 ## ListSamplesResultTypeDef
 
 ```python
@@ -1635,6 +1857,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsuitesrequestrequesttypedef"></a>
 
 ## ListSuitesRequestRequestTypeDef
 
@@ -1650,6 +1874,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listsuitesresulttypedef"></a>
+
 ## ListSuitesResultTypeDef
 
 ```python
@@ -1663,6 +1889,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1672,6 +1900,8 @@ from mypy_boto3_devicefarm.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1685,6 +1915,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtestgridprojectsrequestrequesttypedef"></a>
+
 ## ListTestGridProjectsRequestRequestTypeDef
 
 ```python
@@ -1695,6 +1927,8 @@ Optional fields:
 
 - `maxResult`: `int`
 - `nextToken`: `str`
+
+<a id="listtestgridprojectsresulttypedef"></a>
 
 ## ListTestGridProjectsResultTypeDef
 
@@ -1709,6 +1943,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtestgridsessionactionsrequestrequesttypedef"></a>
 
 ## ListTestGridSessionActionsRequestRequestTypeDef
 
@@ -1725,6 +1961,8 @@ Optional fields:
 - `maxResult`: `int`
 - `nextToken`: `str`
 
+<a id="listtestgridsessionactionsresulttypedef"></a>
+
 ## ListTestGridSessionActionsResultTypeDef
 
 ```python
@@ -1738,6 +1976,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtestgridsessionartifactsrequestrequesttypedef"></a>
 
 ## ListTestGridSessionArtifactsRequestRequestTypeDef
 
@@ -1756,6 +1996,8 @@ Optional fields:
 - `maxResult`: `int`
 - `nextToken`: `str`
 
+<a id="listtestgridsessionartifactsresulttypedef"></a>
+
 ## ListTestGridSessionArtifactsResultTypeDef
 
 ```python
@@ -1769,6 +2011,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtestgridsessionsrequestrequesttypedef"></a>
 
 ## ListTestGridSessionsRequestRequestTypeDef
 
@@ -1791,6 +2035,8 @@ Optional fields:
 - `maxResult`: `int`
 - `nextToken`: `str`
 
+<a id="listtestgridsessionsresulttypedef"></a>
+
 ## ListTestGridSessionsResultTypeDef
 
 ```python
@@ -1804,6 +2050,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtestsrequestrequesttypedef"></a>
 
 ## ListTestsRequestRequestTypeDef
 
@@ -1819,6 +2067,8 @@ Optional fields:
 
 - `nextToken`: `str`
 
+<a id="listtestsresulttypedef"></a>
+
 ## ListTestsResultTypeDef
 
 ```python
@@ -1831,6 +2081,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listuniqueproblemsrequestrequesttypedef"></a>
 
 ## ListUniqueProblemsRequestRequestTypeDef
 
@@ -1845,6 +2097,8 @@ Required fields:
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listuniqueproblemsresulttypedef"></a>
 
 ## ListUniqueProblemsResultTypeDef
 
@@ -1861,6 +2115,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listuploadsrequestrequesttypedef"></a>
+
 ## ListUploadsRequestRequestTypeDef
 
 ```python
@@ -1876,6 +2132,8 @@ Optional fields:
 - `type`: [UploadTypeType](./literals.md#uploadtypetype)
 - `nextToken`: `str`
 
+<a id="listuploadsresulttypedef"></a>
+
 ## ListUploadsResultTypeDef
 
 ```python
@@ -1889,6 +2147,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listvpceconfigurationsrequestrequesttypedef"></a>
+
 ## ListVPCEConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1899,6 +2159,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listvpceconfigurationsresulttypedef"></a>
 
 ## ListVPCEConfigurationsResultTypeDef
 
@@ -1914,6 +2176,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="locationtypedef"></a>
+
 ## LocationTypeDef
 
 ```python
@@ -1924,6 +2188,8 @@ Required fields:
 
 - `latitude`: `float`
 - `longitude`: `float`
+
+<a id="monetaryamounttypedef"></a>
 
 ## MonetaryAmountTypeDef
 
@@ -1936,6 +2202,8 @@ Optional fields:
 - `amount`: `float`
 - `currencyCode`: `Literal['USD']` (see
   [CurrencyCodeType](./literals.md#currencycodetype))
+
+<a id="networkprofiletypedef"></a>
 
 ## NetworkProfileTypeDef
 
@@ -1958,6 +2226,8 @@ Optional fields:
 - `uplinkLossPercent`: `int`
 - `downlinkLossPercent`: `int`
 
+<a id="offeringpromotiontypedef"></a>
+
 ## OfferingPromotionTypeDef
 
 ```python
@@ -1968,6 +2238,8 @@ Optional fields:
 
 - `id`: `str`
 - `description`: `str`
+
+<a id="offeringstatustypedef"></a>
 
 ## OfferingStatusTypeDef
 
@@ -1983,6 +2255,8 @@ Optional fields:
 - `quantity`: `int`
 - `effectiveOn`: `datetime`
 
+<a id="offeringtransactiontypedef"></a>
+
 ## OfferingTransactionTypeDef
 
 ```python
@@ -1997,6 +2271,8 @@ Optional fields:
 - `offeringPromotionId`: `str`
 - `createdOn`: `datetime`
 - `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
+
+<a id="offeringtypedef"></a>
 
 ## OfferingTypeDef
 
@@ -2014,6 +2290,8 @@ Optional fields:
 - `recurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2026,6 +2304,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="problemdetailtypedef"></a>
+
 ## ProblemDetailTypeDef
 
 ```python
@@ -2036,6 +2316,8 @@ Optional fields:
 
 - `arn`: `str`
 - `name`: `str`
+
+<a id="problemtypedef"></a>
 
 ## ProblemTypeDef
 
@@ -2053,6 +2335,8 @@ Optional fields:
 - `result`: [ExecutionResultType](./literals.md#executionresulttype)
 - `message`: `str`
 
+<a id="projecttypedef"></a>
+
 ## ProjectTypeDef
 
 ```python
@@ -2065,6 +2349,8 @@ Optional fields:
 - `name`: `str`
 - `defaultJobTimeoutMinutes`: `int`
 - `created`: `datetime`
+
+<a id="purchaseofferingrequestrequesttypedef"></a>
 
 ## PurchaseOfferingRequestRequestTypeDef
 
@@ -2081,6 +2367,8 @@ Optional fields:
 
 - `offeringPromotionId`: `str`
 
+<a id="purchaseofferingresulttypedef"></a>
+
 ## PurchaseOfferingResultTypeDef
 
 ```python
@@ -2093,6 +2381,8 @@ Required fields:
   [OfferingTransactionTypeDef](./type_defs.md#offeringtransactiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="radiostypedef"></a>
 
 ## RadiosTypeDef
 
@@ -2107,6 +2397,8 @@ Optional fields:
 - `nfc`: `bool`
 - `gps`: `bool`
 
+<a id="recurringchargetypedef"></a>
+
 ## RecurringChargeTypeDef
 
 ```python
@@ -2118,6 +2410,8 @@ Optional fields:
 - `cost`: [MonetaryAmountTypeDef](./type_defs.md#monetaryamounttypedef)
 - `frequency`: `Literal['MONTHLY']` (see
   [RecurringChargeFrequencyType](./literals.md#recurringchargefrequencytype))
+
+<a id="remoteaccesssessiontypedef"></a>
 
 ## RemoteAccessSessionTypeDef
 
@@ -2149,6 +2443,8 @@ Optional fields:
 - `interactionMode`: [InteractionModeType](./literals.md#interactionmodetype)
 - `skipAppResign`: `bool`
 
+<a id="renewofferingrequestrequesttypedef"></a>
+
 ## RenewOfferingRequestRequestTypeDef
 
 ```python
@@ -2159,6 +2455,8 @@ Required fields:
 
 - `offeringId`: `str`
 - `quantity`: `int`
+
+<a id="renewofferingresulttypedef"></a>
 
 ## RenewOfferingResultTypeDef
 
@@ -2173,6 +2471,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resolutiontypedef"></a>
+
 ## ResolutionTypeDef
 
 ```python
@@ -2183,6 +2483,8 @@ Optional fields:
 
 - `width`: `int`
 - `height`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2198,6 +2500,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="ruletypedef"></a>
+
 ## RuleTypeDef
 
 ```python
@@ -2209,6 +2513,8 @@ Optional fields:
 - `attribute`: [DeviceAttributeType](./literals.md#deviceattributetype)
 - `operator`: [RuleOperatorType](./literals.md#ruleoperatortype)
 - `value`: `str`
+
+<a id="runtypedef"></a>
 
 ## RunTypeDef
 
@@ -2254,6 +2560,8 @@ Optional fields:
 - `deviceSelectionResult`:
   [DeviceSelectionResultTypeDef](./type_defs.md#deviceselectionresulttypedef)
 
+<a id="sampletypedef"></a>
+
 ## SampleTypeDef
 
 ```python
@@ -2265,6 +2573,8 @@ Optional fields:
 - `arn`: `str`
 - `type`: [SampleTypeType](./literals.md#sampletypetype)
 - `url`: `str`
+
+<a id="schedulerunconfigurationtypedef"></a>
 
 ## ScheduleRunConfigurationTypeDef
 
@@ -2284,6 +2594,8 @@ Optional fields:
 - `radios`: [RadiosTypeDef](./type_defs.md#radiostypedef)
 - `auxiliaryApps`: `Sequence`\[`str`\]
 - `billingMethod`: [BillingMethodType](./literals.md#billingmethodtype)
+
+<a id="schedulerunrequestrequesttypedef"></a>
 
 ## ScheduleRunRequestRequestTypeDef
 
@@ -2308,6 +2620,8 @@ Optional fields:
 - `executionConfiguration`:
   [ExecutionConfigurationTypeDef](./type_defs.md#executionconfigurationtypedef)
 
+<a id="schedulerunresulttypedef"></a>
+
 ## ScheduleRunResultTypeDef
 
 ```python
@@ -2319,6 +2633,8 @@ Required fields:
 - `run`: [RunTypeDef](./type_defs.md#runtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="scheduleruntesttypedef"></a>
 
 ## ScheduleRunTestTypeDef
 
@@ -2337,6 +2653,8 @@ Optional fields:
 - `filter`: `str`
 - `parameters`: `Mapping`\[`str`, `str`\]
 
+<a id="stopjobrequestrequesttypedef"></a>
+
 ## StopJobRequestRequestTypeDef
 
 ```python
@@ -2346,6 +2664,8 @@ from mypy_boto3_devicefarm.type_defs import StopJobRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="stopjobresulttypedef"></a>
 
 ## StopJobResultTypeDef
 
@@ -2359,6 +2679,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopremoteaccesssessionrequestrequesttypedef"></a>
+
 ## StopRemoteAccessSessionRequestRequestTypeDef
 
 ```python
@@ -2368,6 +2690,8 @@ from mypy_boto3_devicefarm.type_defs import StopRemoteAccessSessionRequestReques
 Required fields:
 
 - `arn`: `str`
+
+<a id="stopremoteaccesssessionresulttypedef"></a>
 
 ## StopRemoteAccessSessionResultTypeDef
 
@@ -2382,6 +2706,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stoprunrequestrequesttypedef"></a>
+
 ## StopRunRequestRequestTypeDef
 
 ```python
@@ -2391,6 +2717,8 @@ from mypy_boto3_devicefarm.type_defs import StopRunRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="stoprunresulttypedef"></a>
 
 ## StopRunResultTypeDef
 
@@ -2403,6 +2731,8 @@ Required fields:
 - `run`: [RunTypeDef](./type_defs.md#runtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="suitetypedef"></a>
 
 ## SuiteTypeDef
 
@@ -2424,6 +2754,8 @@ Optional fields:
 - `message`: `str`
 - `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2435,6 +2767,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2445,6 +2779,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="testgridprojecttypedef"></a>
 
 ## TestGridProjectTypeDef
 
@@ -2461,6 +2797,8 @@ Optional fields:
   [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 - `created`: `datetime`
 
+<a id="testgridsessionactiontypedef"></a>
+
 ## TestGridSessionActionTypeDef
 
 ```python
@@ -2475,6 +2813,8 @@ Optional fields:
 - `statusCode`: `str`
 - `requestMethod`: `str`
 
+<a id="testgridsessionartifacttypedef"></a>
+
 ## TestGridSessionArtifactTypeDef
 
 ```python
@@ -2487,6 +2827,8 @@ Optional fields:
 - `type`:
   [TestGridSessionArtifactTypeType](./literals.md#testgridsessionartifacttypetype)
 - `url`: `str`
+
+<a id="testgridsessiontypedef"></a>
 
 ## TestGridSessionTypeDef
 
@@ -2504,6 +2846,8 @@ Optional fields:
 - `billingMinutes`: `float`
 - `seleniumProperties`: `str`
 
+<a id="testgridvpcconfigtypedef"></a>
+
 ## TestGridVpcConfigTypeDef
 
 ```python
@@ -2515,6 +2859,8 @@ Required fields:
 - `securityGroupIds`: `Sequence`\[`str`\]
 - `subnetIds`: `Sequence`\[`str`\]
 - `vpcId`: `str`
+
+<a id="testtypedef"></a>
 
 ## TestTypeDef
 
@@ -2536,6 +2882,8 @@ Optional fields:
 - `message`: `str`
 - `deviceMinutes`: [DeviceMinutesTypeDef](./type_defs.md#deviceminutestypedef)
 
+<a id="trialminutestypedef"></a>
+
 ## TrialMinutesTypeDef
 
 ```python
@@ -2546,6 +2894,8 @@ Optional fields:
 
 - `total`: `float`
 - `remaining`: `float`
+
+<a id="uniqueproblemtypedef"></a>
 
 ## UniqueProblemTypeDef
 
@@ -2558,6 +2908,8 @@ Optional fields:
 - `message`: `str`
 - `problems`: `List`\[[ProblemTypeDef](./type_defs.md#problemtypedef)\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2568,6 +2920,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedeviceinstancerequestrequesttypedef"></a>
 
 ## UpdateDeviceInstanceRequestRequestTypeDef
 
@@ -2584,6 +2938,8 @@ Optional fields:
 - `profileArn`: `str`
 - `labels`: `Sequence`\[`str`\]
 
+<a id="updatedeviceinstanceresulttypedef"></a>
+
 ## UpdateDeviceInstanceResultTypeDef
 
 ```python
@@ -2596,6 +2952,8 @@ Required fields:
   [DeviceInstanceTypeDef](./type_defs.md#deviceinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedevicepoolrequestrequesttypedef"></a>
 
 ## UpdateDevicePoolRequestRequestTypeDef
 
@@ -2615,6 +2973,8 @@ Optional fields:
 - `maxDevices`: `int`
 - `clearMaxDevices`: `bool`
 
+<a id="updatedevicepoolresulttypedef"></a>
+
 ## UpdateDevicePoolResultTypeDef
 
 ```python
@@ -2626,6 +2986,8 @@ Required fields:
 - `devicePool`: [DevicePoolTypeDef](./type_defs.md#devicepooltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateinstanceprofilerequestrequesttypedef"></a>
 
 ## UpdateInstanceProfileRequestRequestTypeDef
 
@@ -2645,6 +3007,8 @@ Optional fields:
 - `excludeAppPackagesFromCleanup`: `Sequence`\[`str`\]
 - `rebootAfterUse`: `bool`
 
+<a id="updateinstanceprofileresulttypedef"></a>
+
 ## UpdateInstanceProfileResultTypeDef
 
 ```python
@@ -2657,6 +3021,8 @@ Required fields:
   [InstanceProfileTypeDef](./type_defs.md#instanceprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatenetworkprofilerequestrequesttypedef"></a>
 
 ## UpdateNetworkProfileRequestRequestTypeDef
 
@@ -2682,6 +3048,8 @@ Optional fields:
 - `uplinkLossPercent`: `int`
 - `downlinkLossPercent`: `int`
 
+<a id="updatenetworkprofileresulttypedef"></a>
+
 ## UpdateNetworkProfileResultTypeDef
 
 ```python
@@ -2694,6 +3062,8 @@ Required fields:
   [NetworkProfileTypeDef](./type_defs.md#networkprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectrequestrequesttypedef"></a>
 
 ## UpdateProjectRequestRequestTypeDef
 
@@ -2710,6 +3080,8 @@ Optional fields:
 - `name`: `str`
 - `defaultJobTimeoutMinutes`: `int`
 
+<a id="updateprojectresulttypedef"></a>
+
 ## UpdateProjectResultTypeDef
 
 ```python
@@ -2721,6 +3093,8 @@ Required fields:
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetestgridprojectrequestrequesttypedef"></a>
 
 ## UpdateTestGridProjectRequestRequestTypeDef
 
@@ -2739,6 +3113,8 @@ Optional fields:
 - `vpcConfig`:
   [TestGridVpcConfigTypeDef](./type_defs.md#testgridvpcconfigtypedef)
 
+<a id="updatetestgridprojectresulttypedef"></a>
+
 ## UpdateTestGridProjectResultTypeDef
 
 ```python
@@ -2751,6 +3127,8 @@ Required fields:
   [TestGridProjectTypeDef](./type_defs.md#testgridprojecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateuploadrequestrequesttypedef"></a>
 
 ## UpdateUploadRequestRequestTypeDef
 
@@ -2768,6 +3146,8 @@ Optional fields:
 - `contentType`: `str`
 - `editContent`: `bool`
 
+<a id="updateuploadresulttypedef"></a>
+
 ## UpdateUploadResultTypeDef
 
 ```python
@@ -2779,6 +3159,8 @@ Required fields:
 - `upload`: [UploadTypeDef](./type_defs.md#uploadtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatevpceconfigurationrequestrequesttypedef"></a>
 
 ## UpdateVPCEConfigurationRequestRequestTypeDef
 
@@ -2797,6 +3179,8 @@ Optional fields:
 - `serviceDnsName`: `str`
 - `vpceConfigurationDescription`: `str`
 
+<a id="updatevpceconfigurationresulttypedef"></a>
+
 ## UpdateVPCEConfigurationResultTypeDef
 
 ```python
@@ -2809,6 +3193,8 @@ Required fields:
   [VPCEConfigurationTypeDef](./type_defs.md#vpceconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="uploadtypedef"></a>
 
 ## UploadTypeDef
 
@@ -2828,6 +3214,8 @@ Optional fields:
 - `contentType`: `str`
 - `message`: `str`
 - `category`: [UploadCategoryType](./literals.md#uploadcategorytype)
+
+<a id="vpceconfigurationtypedef"></a>
 
 ## VPCEConfigurationTypeDef
 

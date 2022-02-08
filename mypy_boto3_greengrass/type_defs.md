@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-greengrass-module"></a>
+
 # Typed dictionaries for boto3 Greengrass module
 
 > [Index](..) > [Greengrass](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
-[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [Typed dictionaries for boto3 Greengrass module](#typed-dictionaries-for-boto3-greengrass-module)
   - [AssociateRoleToGroupRequestRequestTypeDef](#associateroletogrouprequestrequesttypedef)
@@ -216,6 +218,8 @@ type annotations stubs module
   - [UpdateThingRuntimeConfigurationRequestRequestTypeDef](#updatethingruntimeconfigurationrequestrequesttypedef)
   - [VersionInformationTypeDef](#versioninformationtypedef)
 
+<a id="associateroletogrouprequestrequesttypedef"></a>
+
 ## AssociateRoleToGroupRequestRequestTypeDef
 
 ```python
@@ -226,6 +230,8 @@ Required fields:
 
 - `GroupId`: `str`
 - `RoleArn`: `str`
+
+<a id="associateroletogroupresponsetypedef"></a>
 
 ## AssociateRoleToGroupResponseTypeDef
 
@@ -239,6 +245,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateserviceroletoaccountrequestrequesttypedef"></a>
+
 ## AssociateServiceRoleToAccountRequestRequestTypeDef
 
 ```python
@@ -248,6 +256,8 @@ from mypy_boto3_greengrass.type_defs import AssociateServiceRoleToAccountRequest
 Required fields:
 
 - `RoleArn`: `str`
+
+<a id="associateserviceroletoaccountresponsetypedef"></a>
 
 ## AssociateServiceRoleToAccountResponseTypeDef
 
@@ -261,6 +271,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="bulkdeploymentmetricstypedef"></a>
+
 ## BulkDeploymentMetricsTypeDef
 
 ```python
@@ -272,6 +284,8 @@ Optional fields:
 - `InvalidInputRecords`: `int`
 - `RecordsProcessed`: `int`
 - `RetryAttempts`: `int`
+
+<a id="bulkdeploymentresulttypedef"></a>
 
 ## BulkDeploymentResultTypeDef
 
@@ -291,6 +305,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `GroupArn`: `str`
 
+<a id="bulkdeploymenttypedef"></a>
+
 ## BulkDeploymentTypeDef
 
 ```python
@@ -302,6 +318,8 @@ Optional fields:
 - `BulkDeploymentArn`: `str`
 - `BulkDeploymentId`: `str`
 - `CreatedAt`: `str`
+
+<a id="connectivityinfotypedef"></a>
 
 ## ConnectivityInfoTypeDef
 
@@ -316,6 +334,8 @@ Optional fields:
 - `Metadata`: `str`
 - `PortNumber`: `int`
 
+<a id="connectordefinitionversiontypedef"></a>
+
 ## ConnectorDefinitionVersionTypeDef
 
 ```python
@@ -326,6 +346,8 @@ Optional fields:
 
 - `Connectors`:
   `Sequence`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
+
+<a id="connectortypedef"></a>
 
 ## ConnectorTypeDef
 
@@ -342,6 +364,8 @@ Optional fields:
 
 - `Parameters`: `Mapping`\[`str`, `str`\]
 
+<a id="coredefinitionversiontypedef"></a>
+
 ## CoreDefinitionVersionTypeDef
 
 ```python
@@ -351,6 +375,8 @@ from mypy_boto3_greengrass.type_defs import CoreDefinitionVersionTypeDef
 Optional fields:
 
 - `Cores`: `Sequence`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
+
+<a id="coretypedef"></a>
 
 ## CoreTypeDef
 
@@ -368,6 +394,8 @@ Optional fields:
 
 - `SyncShadow`: `bool`
 
+<a id="createconnectordefinitionrequestrequesttypedef"></a>
+
 ## CreateConnectorDefinitionRequestRequestTypeDef
 
 ```python
@@ -381,6 +409,8 @@ Optional fields:
   [ConnectorDefinitionVersionTypeDef](./type_defs.md#connectordefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createconnectordefinitionresponsetypedef"></a>
 
 ## CreateConnectorDefinitionResponseTypeDef
 
@@ -400,6 +430,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createconnectordefinitionversionrequestrequesttypedef"></a>
+
 ## CreateConnectorDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -416,6 +448,8 @@ Optional fields:
 - `Connectors`:
   `Sequence`\[[ConnectorTypeDef](./type_defs.md#connectortypedef)\]
 
+<a id="createconnectordefinitionversionresponsetypedef"></a>
+
 ## CreateConnectorDefinitionVersionResponseTypeDef
 
 ```python
@@ -431,6 +465,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createcoredefinitionrequestrequesttypedef"></a>
+
 ## CreateCoreDefinitionRequestRequestTypeDef
 
 ```python
@@ -444,6 +480,8 @@ Optional fields:
   [CoreDefinitionVersionTypeDef](./type_defs.md#coredefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createcoredefinitionresponsetypedef"></a>
 
 ## CreateCoreDefinitionResponseTypeDef
 
@@ -463,6 +501,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createcoredefinitionversionrequestrequesttypedef"></a>
+
 ## CreateCoreDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -478,6 +518,8 @@ Optional fields:
 - `AmznClientToken`: `str`
 - `Cores`: `Sequence`\[[CoreTypeDef](./type_defs.md#coretypedef)\]
 
+<a id="createcoredefinitionversionresponsetypedef"></a>
+
 ## CreateCoreDefinitionVersionResponseTypeDef
 
 ```python
@@ -492,6 +534,8 @@ Required fields:
 - `Version`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdeploymentrequestrequesttypedef"></a>
 
 ## CreateDeploymentRequestRequestTypeDef
 
@@ -510,6 +554,8 @@ Optional fields:
 - `DeploymentId`: `str`
 - `GroupVersionId`: `str`
 
+<a id="createdeploymentresponsetypedef"></a>
+
 ## CreateDeploymentResponseTypeDef
 
 ```python
@@ -522,6 +568,8 @@ Required fields:
 - `DeploymentId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdevicedefinitionrequestrequesttypedef"></a>
 
 ## CreateDeviceDefinitionRequestRequestTypeDef
 
@@ -536,6 +584,8 @@ Optional fields:
   [DeviceDefinitionVersionTypeDef](./type_defs.md#devicedefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createdevicedefinitionresponsetypedef"></a>
 
 ## CreateDeviceDefinitionResponseTypeDef
 
@@ -555,6 +605,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdevicedefinitionversionrequestrequesttypedef"></a>
+
 ## CreateDeviceDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -569,6 +621,8 @@ Optional fields:
 
 - `AmznClientToken`: `str`
 - `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+
+<a id="createdevicedefinitionversionresponsetypedef"></a>
 
 ## CreateDeviceDefinitionVersionResponseTypeDef
 
@@ -585,6 +639,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfunctiondefinitionrequestrequesttypedef"></a>
+
 ## CreateFunctionDefinitionRequestRequestTypeDef
 
 ```python
@@ -598,6 +654,8 @@ Optional fields:
   [FunctionDefinitionVersionTypeDef](./type_defs.md#functiondefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createfunctiondefinitionresponsetypedef"></a>
 
 ## CreateFunctionDefinitionResponseTypeDef
 
@@ -617,6 +675,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfunctiondefinitionversionrequestrequesttypedef"></a>
+
 ## CreateFunctionDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -634,6 +694,8 @@ Optional fields:
   [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
 - `Functions`: `Sequence`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
 
+<a id="createfunctiondefinitionversionresponsetypedef"></a>
+
 ## CreateFunctionDefinitionVersionResponseTypeDef
 
 ```python
@@ -649,6 +711,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="creategroupcertificateauthorityrequestrequesttypedef"></a>
+
 ## CreateGroupCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -663,6 +727,8 @@ Optional fields:
 
 - `AmznClientToken`: `str`
 
+<a id="creategroupcertificateauthorityresponsetypedef"></a>
+
 ## CreateGroupCertificateAuthorityResponseTypeDef
 
 ```python
@@ -674,6 +740,8 @@ Required fields:
 - `GroupCertificateAuthorityArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategrouprequestrequesttypedef"></a>
 
 ## CreateGroupRequestRequestTypeDef
 
@@ -690,6 +758,8 @@ Optional fields:
 - `AmznClientToken`: `str`
 - `InitialVersion`: [GroupVersionTypeDef](./type_defs.md#groupversiontypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="creategroupresponsetypedef"></a>
 
 ## CreateGroupResponseTypeDef
 
@@ -708,6 +778,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategroupversionrequestrequesttypedef"></a>
 
 ## CreateGroupVersionRequestRequestTypeDef
 
@@ -730,6 +802,8 @@ Optional fields:
 - `ResourceDefinitionVersionArn`: `str`
 - `SubscriptionDefinitionVersionArn`: `str`
 
+<a id="creategroupversionresponsetypedef"></a>
+
 ## CreateGroupVersionResponseTypeDef
 
 ```python
@@ -745,6 +819,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createloggerdefinitionrequestrequesttypedef"></a>
+
 ## CreateLoggerDefinitionRequestRequestTypeDef
 
 ```python
@@ -758,6 +834,8 @@ Optional fields:
   [LoggerDefinitionVersionTypeDef](./type_defs.md#loggerdefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createloggerdefinitionresponsetypedef"></a>
 
 ## CreateLoggerDefinitionResponseTypeDef
 
@@ -777,6 +855,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createloggerdefinitionversionrequestrequesttypedef"></a>
+
 ## CreateLoggerDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -791,6 +871,8 @@ Optional fields:
 
 - `AmznClientToken`: `str`
 - `Loggers`: `Sequence`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+
+<a id="createloggerdefinitionversionresponsetypedef"></a>
 
 ## CreateLoggerDefinitionVersionResponseTypeDef
 
@@ -807,6 +889,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createresourcedefinitionrequestrequesttypedef"></a>
+
 ## CreateResourceDefinitionRequestRequestTypeDef
 
 ```python
@@ -820,6 +904,8 @@ Optional fields:
   [ResourceDefinitionVersionTypeDef](./type_defs.md#resourcedefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createresourcedefinitionresponsetypedef"></a>
 
 ## CreateResourceDefinitionResponseTypeDef
 
@@ -839,6 +925,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createresourcedefinitionversionrequestrequesttypedef"></a>
+
 ## CreateResourceDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -854,6 +942,8 @@ Optional fields:
 - `AmznClientToken`: `str`
 - `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
 
+<a id="createresourcedefinitionversionresponsetypedef"></a>
+
 ## CreateResourceDefinitionVersionResponseTypeDef
 
 ```python
@@ -868,6 +958,8 @@ Required fields:
 - `Version`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsoftwareupdatejobrequestrequesttypedef"></a>
 
 ## CreateSoftwareUpdateJobRequestRequestTypeDef
 
@@ -892,6 +984,8 @@ Optional fields:
 - `UpdateAgentLogLevel`:
   [UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype)
 
+<a id="createsoftwareupdatejobresponsetypedef"></a>
+
 ## CreateSoftwareUpdateJobResponseTypeDef
 
 ```python
@@ -906,6 +1000,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsubscriptiondefinitionrequestrequesttypedef"></a>
+
 ## CreateSubscriptionDefinitionRequestRequestTypeDef
 
 ```python
@@ -919,6 +1015,8 @@ Optional fields:
   [SubscriptionDefinitionVersionTypeDef](./type_defs.md#subscriptiondefinitionversiontypedef)
 - `Name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createsubscriptiondefinitionresponsetypedef"></a>
 
 ## CreateSubscriptionDefinitionResponseTypeDef
 
@@ -938,6 +1036,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsubscriptiondefinitionversionrequestrequesttypedef"></a>
+
 ## CreateSubscriptionDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -954,6 +1054,8 @@ Optional fields:
 - `Subscriptions`:
   `Sequence`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
 
+<a id="createsubscriptiondefinitionversionresponsetypedef"></a>
+
 ## CreateSubscriptionDefinitionVersionResponseTypeDef
 
 ```python
@@ -968,6 +1070,8 @@ Required fields:
 - `Version`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="definitioninformationtypedef"></a>
 
 ## DefinitionInformationTypeDef
 
@@ -986,6 +1090,8 @@ Optional fields:
 - `Name`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="deleteconnectordefinitionrequestrequesttypedef"></a>
+
 ## DeleteConnectorDefinitionRequestRequestTypeDef
 
 ```python
@@ -995,6 +1101,8 @@ from mypy_boto3_greengrass.type_defs import DeleteConnectorDefinitionRequestRequ
 Required fields:
 
 - `ConnectorDefinitionId`: `str`
+
+<a id="deletecoredefinitionrequestrequesttypedef"></a>
 
 ## DeleteCoreDefinitionRequestRequestTypeDef
 
@@ -1006,6 +1114,8 @@ Required fields:
 
 - `CoreDefinitionId`: `str`
 
+<a id="deletedevicedefinitionrequestrequesttypedef"></a>
+
 ## DeleteDeviceDefinitionRequestRequestTypeDef
 
 ```python
@@ -1015,6 +1125,8 @@ from mypy_boto3_greengrass.type_defs import DeleteDeviceDefinitionRequestRequest
 Required fields:
 
 - `DeviceDefinitionId`: `str`
+
+<a id="deletefunctiondefinitionrequestrequesttypedef"></a>
 
 ## DeleteFunctionDefinitionRequestRequestTypeDef
 
@@ -1026,6 +1138,8 @@ Required fields:
 
 - `FunctionDefinitionId`: `str`
 
+<a id="deletegrouprequestrequesttypedef"></a>
+
 ## DeleteGroupRequestRequestTypeDef
 
 ```python
@@ -1035,6 +1149,8 @@ from mypy_boto3_greengrass.type_defs import DeleteGroupRequestRequestTypeDef
 Required fields:
 
 - `GroupId`: `str`
+
+<a id="deleteloggerdefinitionrequestrequesttypedef"></a>
 
 ## DeleteLoggerDefinitionRequestRequestTypeDef
 
@@ -1046,6 +1162,8 @@ Required fields:
 
 - `LoggerDefinitionId`: `str`
 
+<a id="deleteresourcedefinitionrequestrequesttypedef"></a>
+
 ## DeleteResourceDefinitionRequestRequestTypeDef
 
 ```python
@@ -1056,6 +1174,8 @@ Required fields:
 
 - `ResourceDefinitionId`: `str`
 
+<a id="deletesubscriptiondefinitionrequestrequesttypedef"></a>
+
 ## DeleteSubscriptionDefinitionRequestRequestTypeDef
 
 ```python
@@ -1065,6 +1185,8 @@ from mypy_boto3_greengrass.type_defs import DeleteSubscriptionDefinitionRequestR
 Required fields:
 
 - `SubscriptionDefinitionId`: `str`
+
+<a id="deploymenttypedef"></a>
 
 ## DeploymentTypeDef
 
@@ -1080,6 +1202,8 @@ Optional fields:
 - `DeploymentType`: [DeploymentTypeType](./literals.md#deploymenttypetype)
 - `GroupArn`: `str`
 
+<a id="devicedefinitionversiontypedef"></a>
+
 ## DeviceDefinitionVersionTypeDef
 
 ```python
@@ -1089,6 +1213,8 @@ from mypy_boto3_greengrass.type_defs import DeviceDefinitionVersionTypeDef
 Optional fields:
 
 - `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
+
+<a id="devicetypedef"></a>
 
 ## DeviceTypeDef
 
@@ -1106,6 +1232,8 @@ Optional fields:
 
 - `SyncShadow`: `bool`
 
+<a id="disassociaterolefromgrouprequestrequesttypedef"></a>
+
 ## DisassociateRoleFromGroupRequestRequestTypeDef
 
 ```python
@@ -1115,6 +1243,8 @@ from mypy_boto3_greengrass.type_defs import DisassociateRoleFromGroupRequestRequ
 Required fields:
 
 - `GroupId`: `str`
+
+<a id="disassociaterolefromgroupresponsetypedef"></a>
 
 ## DisassociateRoleFromGroupResponseTypeDef
 
@@ -1128,6 +1258,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateservicerolefromaccountresponsetypedef"></a>
+
 ## DisassociateServiceRoleFromAccountResponseTypeDef
 
 ```python
@@ -1140,6 +1272,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="errordetailtypedef"></a>
+
 ## ErrorDetailTypeDef
 
 ```python
@@ -1150,6 +1284,8 @@ Optional fields:
 
 - `DetailedErrorCode`: `str`
 - `DetailedErrorMessage`: `str`
+
+<a id="functionconfigurationenvironmenttypedef"></a>
 
 ## FunctionConfigurationEnvironmentTypeDef
 
@@ -1165,6 +1301,8 @@ Optional fields:
 - `ResourceAccessPolicies`:
   `Sequence`\[[ResourceAccessPolicyTypeDef](./type_defs.md#resourceaccesspolicytypedef)\]
 - `Variables`: `Mapping`\[`str`, `str`\]
+
+<a id="functionconfigurationtypedef"></a>
 
 ## FunctionConfigurationTypeDef
 
@@ -1183,6 +1321,8 @@ Optional fields:
 - `Pinned`: `bool`
 - `Timeout`: `int`
 
+<a id="functiondefaultconfigtypedef"></a>
+
 ## FunctionDefaultConfigTypeDef
 
 ```python
@@ -1193,6 +1333,8 @@ Optional fields:
 
 - `Execution`:
   [FunctionDefaultExecutionConfigTypeDef](./type_defs.md#functiondefaultexecutionconfigtypedef)
+
+<a id="functiondefaultexecutionconfigtypedef"></a>
 
 ## FunctionDefaultExecutionConfigTypeDef
 
@@ -1207,6 +1349,8 @@ Optional fields:
 - `RunAs`:
   [FunctionRunAsConfigTypeDef](./type_defs.md#functionrunasconfigtypedef)
 
+<a id="functiondefinitionversiontypedef"></a>
+
 ## FunctionDefinitionVersionTypeDef
 
 ```python
@@ -1218,6 +1362,8 @@ Optional fields:
 - `DefaultConfig`:
   [FunctionDefaultConfigTypeDef](./type_defs.md#functiondefaultconfigtypedef)
 - `Functions`: `Sequence`\[[FunctionTypeDef](./type_defs.md#functiontypedef)\]
+
+<a id="functionexecutionconfigtypedef"></a>
 
 ## FunctionExecutionConfigTypeDef
 
@@ -1232,6 +1378,8 @@ Optional fields:
 - `RunAs`:
   [FunctionRunAsConfigTypeDef](./type_defs.md#functionrunasconfigtypedef)
 
+<a id="functionrunasconfigtypedef"></a>
+
 ## FunctionRunAsConfigTypeDef
 
 ```python
@@ -1242,6 +1390,8 @@ Optional fields:
 
 - `Gid`: `int`
 - `Uid`: `int`
+
+<a id="functiontypedef"></a>
 
 ## FunctionTypeDef
 
@@ -1259,6 +1409,8 @@ Optional fields:
 - `FunctionConfiguration`:
   [FunctionConfigurationTypeDef](./type_defs.md#functionconfigurationtypedef)
 
+<a id="getassociatedrolerequestrequesttypedef"></a>
+
 ## GetAssociatedRoleRequestRequestTypeDef
 
 ```python
@@ -1268,6 +1420,8 @@ from mypy_boto3_greengrass.type_defs import GetAssociatedRoleRequestRequestTypeD
 Required fields:
 
 - `GroupId`: `str`
+
+<a id="getassociatedroleresponsetypedef"></a>
 
 ## GetAssociatedRoleResponseTypeDef
 
@@ -1282,6 +1436,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbulkdeploymentstatusrequestrequesttypedef"></a>
+
 ## GetBulkDeploymentStatusRequestRequestTypeDef
 
 ```python
@@ -1291,6 +1447,8 @@ from mypy_boto3_greengrass.type_defs import GetBulkDeploymentStatusRequestReques
 Required fields:
 
 - `BulkDeploymentId`: `str`
+
+<a id="getbulkdeploymentstatusresponsetypedef"></a>
 
 ## GetBulkDeploymentStatusResponseTypeDef
 
@@ -1312,6 +1470,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectivityinforequestrequesttypedef"></a>
+
 ## GetConnectivityInfoRequestRequestTypeDef
 
 ```python
@@ -1321,6 +1481,8 @@ from mypy_boto3_greengrass.type_defs import GetConnectivityInfoRequestRequestTyp
 Required fields:
 
 - `ThingName`: `str`
+
+<a id="getconnectivityinforesponsetypedef"></a>
 
 ## GetConnectivityInfoResponseTypeDef
 
@@ -1336,6 +1498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectordefinitionrequestrequesttypedef"></a>
+
 ## GetConnectorDefinitionRequestRequestTypeDef
 
 ```python
@@ -1345,6 +1509,8 @@ from mypy_boto3_greengrass.type_defs import GetConnectorDefinitionRequestRequest
 Required fields:
 
 - `ConnectorDefinitionId`: `str`
+
+<a id="getconnectordefinitionresponsetypedef"></a>
 
 ## GetConnectorDefinitionResponseTypeDef
 
@@ -1365,6 +1531,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectordefinitionversionrequestrequesttypedef"></a>
+
 ## GetConnectorDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1379,6 +1547,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getconnectordefinitionversionresponsetypedef"></a>
 
 ## GetConnectorDefinitionVersionResponseTypeDef
 
@@ -1398,6 +1568,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcoredefinitionrequestrequesttypedef"></a>
+
 ## GetCoreDefinitionRequestRequestTypeDef
 
 ```python
@@ -1407,6 +1579,8 @@ from mypy_boto3_greengrass.type_defs import GetCoreDefinitionRequestRequestTypeD
 Required fields:
 
 - `CoreDefinitionId`: `str`
+
+<a id="getcoredefinitionresponsetypedef"></a>
 
 ## GetCoreDefinitionResponseTypeDef
 
@@ -1427,6 +1601,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcoredefinitionversionrequestrequesttypedef"></a>
+
 ## GetCoreDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1437,6 +1613,8 @@ Required fields:
 
 - `CoreDefinitionId`: `str`
 - `CoreDefinitionVersionId`: `str`
+
+<a id="getcoredefinitionversionresponsetypedef"></a>
 
 ## GetCoreDefinitionVersionResponseTypeDef
 
@@ -1456,6 +1634,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeploymentstatusrequestrequesttypedef"></a>
+
 ## GetDeploymentStatusRequestRequestTypeDef
 
 ```python
@@ -1466,6 +1646,8 @@ Required fields:
 
 - `DeploymentId`: `str`
 - `GroupId`: `str`
+
+<a id="getdeploymentstatusresponsetypedef"></a>
 
 ## GetDeploymentStatusResponseTypeDef
 
@@ -1484,6 +1666,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicedefinitionrequestrequesttypedef"></a>
+
 ## GetDeviceDefinitionRequestRequestTypeDef
 
 ```python
@@ -1493,6 +1677,8 @@ from mypy_boto3_greengrass.type_defs import GetDeviceDefinitionRequestRequestTyp
 Required fields:
 
 - `DeviceDefinitionId`: `str`
+
+<a id="getdevicedefinitionresponsetypedef"></a>
 
 ## GetDeviceDefinitionResponseTypeDef
 
@@ -1513,6 +1699,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdevicedefinitionversionrequestrequesttypedef"></a>
+
 ## GetDeviceDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1527,6 +1715,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getdevicedefinitionversionresponsetypedef"></a>
 
 ## GetDeviceDefinitionVersionResponseTypeDef
 
@@ -1546,6 +1736,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfunctiondefinitionrequestrequesttypedef"></a>
+
 ## GetFunctionDefinitionRequestRequestTypeDef
 
 ```python
@@ -1555,6 +1747,8 @@ from mypy_boto3_greengrass.type_defs import GetFunctionDefinitionRequestRequestT
 Required fields:
 
 - `FunctionDefinitionId`: `str`
+
+<a id="getfunctiondefinitionresponsetypedef"></a>
 
 ## GetFunctionDefinitionResponseTypeDef
 
@@ -1575,6 +1769,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfunctiondefinitionversionrequestrequesttypedef"></a>
+
 ## GetFunctionDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1589,6 +1785,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getfunctiondefinitionversionresponsetypedef"></a>
 
 ## GetFunctionDefinitionVersionResponseTypeDef
 
@@ -1608,6 +1806,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgroupcertificateauthorityrequestrequesttypedef"></a>
+
 ## GetGroupCertificateAuthorityRequestRequestTypeDef
 
 ```python
@@ -1618,6 +1818,8 @@ Required fields:
 
 - `CertificateAuthorityId`: `str`
 - `GroupId`: `str`
+
+<a id="getgroupcertificateauthorityresponsetypedef"></a>
 
 ## GetGroupCertificateAuthorityResponseTypeDef
 
@@ -1633,6 +1835,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgroupcertificateconfigurationrequestrequesttypedef"></a>
+
 ## GetGroupCertificateConfigurationRequestRequestTypeDef
 
 ```python
@@ -1642,6 +1846,8 @@ from mypy_boto3_greengrass.type_defs import GetGroupCertificateConfigurationRequ
 Required fields:
 
 - `GroupId`: `str`
+
+<a id="getgroupcertificateconfigurationresponsetypedef"></a>
 
 ## GetGroupCertificateConfigurationResponseTypeDef
 
@@ -1657,6 +1863,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgrouprequestrequesttypedef"></a>
+
 ## GetGroupRequestRequestTypeDef
 
 ```python
@@ -1666,6 +1874,8 @@ from mypy_boto3_greengrass.type_defs import GetGroupRequestRequestTypeDef
 Required fields:
 
 - `GroupId`: `str`
+
+<a id="getgroupresponsetypedef"></a>
 
 ## GetGroupResponseTypeDef
 
@@ -1686,6 +1896,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgroupversionrequestrequesttypedef"></a>
+
 ## GetGroupVersionRequestRequestTypeDef
 
 ```python
@@ -1696,6 +1908,8 @@ Required fields:
 
 - `GroupId`: `str`
 - `GroupVersionId`: `str`
+
+<a id="getgroupversionresponsetypedef"></a>
 
 ## GetGroupVersionResponseTypeDef
 
@@ -1713,6 +1927,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getloggerdefinitionrequestrequesttypedef"></a>
+
 ## GetLoggerDefinitionRequestRequestTypeDef
 
 ```python
@@ -1722,6 +1938,8 @@ from mypy_boto3_greengrass.type_defs import GetLoggerDefinitionRequestRequestTyp
 Required fields:
 
 - `LoggerDefinitionId`: `str`
+
+<a id="getloggerdefinitionresponsetypedef"></a>
 
 ## GetLoggerDefinitionResponseTypeDef
 
@@ -1742,6 +1960,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getloggerdefinitionversionrequestrequesttypedef"></a>
+
 ## GetLoggerDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1756,6 +1976,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getloggerdefinitionversionresponsetypedef"></a>
 
 ## GetLoggerDefinitionVersionResponseTypeDef
 
@@ -1774,6 +1996,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcedefinitionrequestrequesttypedef"></a>
+
 ## GetResourceDefinitionRequestRequestTypeDef
 
 ```python
@@ -1783,6 +2007,8 @@ from mypy_boto3_greengrass.type_defs import GetResourceDefinitionRequestRequestT
 Required fields:
 
 - `ResourceDefinitionId`: `str`
+
+<a id="getresourcedefinitionresponsetypedef"></a>
 
 ## GetResourceDefinitionResponseTypeDef
 
@@ -1803,6 +2029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcedefinitionversionrequestrequesttypedef"></a>
+
 ## GetResourceDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1813,6 +2041,8 @@ Required fields:
 
 - `ResourceDefinitionId`: `str`
 - `ResourceDefinitionVersionId`: `str`
+
+<a id="getresourcedefinitionversionresponsetypedef"></a>
 
 ## GetResourceDefinitionVersionResponseTypeDef
 
@@ -1831,6 +2061,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserviceroleforaccountresponsetypedef"></a>
+
 ## GetServiceRoleForAccountResponseTypeDef
 
 ```python
@@ -1844,6 +2076,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsubscriptiondefinitionrequestrequesttypedef"></a>
+
 ## GetSubscriptionDefinitionRequestRequestTypeDef
 
 ```python
@@ -1853,6 +2087,8 @@ from mypy_boto3_greengrass.type_defs import GetSubscriptionDefinitionRequestRequ
 Required fields:
 
 - `SubscriptionDefinitionId`: `str`
+
+<a id="getsubscriptiondefinitionresponsetypedef"></a>
 
 ## GetSubscriptionDefinitionResponseTypeDef
 
@@ -1873,6 +2109,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsubscriptiondefinitionversionrequestrequesttypedef"></a>
+
 ## GetSubscriptionDefinitionVersionRequestRequestTypeDef
 
 ```python
@@ -1887,6 +2125,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="getsubscriptiondefinitionversionresponsetypedef"></a>
 
 ## GetSubscriptionDefinitionVersionResponseTypeDef
 
@@ -1906,6 +2146,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getthingruntimeconfigurationrequestrequesttypedef"></a>
+
 ## GetThingRuntimeConfigurationRequestRequestTypeDef
 
 ```python
@@ -1915,6 +2157,8 @@ from mypy_boto3_greengrass.type_defs import GetThingRuntimeConfigurationRequestR
 Required fields:
 
 - `ThingName`: `str`
+
+<a id="getthingruntimeconfigurationresponsetypedef"></a>
 
 ## GetThingRuntimeConfigurationResponseTypeDef
 
@@ -1929,6 +2173,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupcertificateauthoritypropertiestypedef"></a>
+
 ## GroupCertificateAuthorityPropertiesTypeDef
 
 ```python
@@ -1939,6 +2185,8 @@ Optional fields:
 
 - `GroupCertificateAuthorityArn`: `str`
 - `GroupCertificateAuthorityId`: `str`
+
+<a id="groupinformationtypedef"></a>
 
 ## GroupInformationTypeDef
 
@@ -1956,6 +2204,8 @@ Optional fields:
 - `LatestVersionArn`: `str`
 - `Name`: `str`
 
+<a id="groupownersettingtypedef"></a>
+
 ## GroupOwnerSettingTypeDef
 
 ```python
@@ -1966,6 +2216,8 @@ Optional fields:
 
 - `AutoAddGroupOwner`: `bool`
 - `GroupOwner`: `str`
+
+<a id="groupversiontypedef"></a>
 
 ## GroupVersionTypeDef
 
@@ -1983,6 +2235,8 @@ Optional fields:
 - `ResourceDefinitionVersionArn`: `str`
 - `SubscriptionDefinitionVersionArn`: `str`
 
+<a id="listbulkdeploymentdetailedreportsrequestrequesttypedef"></a>
+
 ## ListBulkDeploymentDetailedReportsRequestRequestTypeDef
 
 ```python
@@ -1998,6 +2252,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listbulkdeploymentdetailedreportsresponsetypedef"></a>
+
 ## ListBulkDeploymentDetailedReportsResponseTypeDef
 
 ```python
@@ -2012,6 +2268,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbulkdeploymentsrequestrequesttypedef"></a>
+
 ## ListBulkDeploymentsRequestRequestTypeDef
 
 ```python
@@ -2022,6 +2280,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listbulkdeploymentsresponsetypedef"></a>
 
 ## ListBulkDeploymentsResponseTypeDef
 
@@ -2036,6 +2296,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listconnectordefinitionversionsrequestrequesttypedef"></a>
 
 ## ListConnectorDefinitionVersionsRequestRequestTypeDef
 
@@ -2052,6 +2314,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listconnectordefinitionversionsresponsetypedef"></a>
+
 ## ListConnectorDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2066,6 +2330,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listconnectordefinitionsrequestrequesttypedef"></a>
+
 ## ListConnectorDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2076,6 +2342,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listconnectordefinitionsresponsetypedef"></a>
 
 ## ListConnectorDefinitionsResponseTypeDef
 
@@ -2090,6 +2358,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcoredefinitionversionsrequestrequesttypedef"></a>
 
 ## ListCoreDefinitionVersionsRequestRequestTypeDef
 
@@ -2106,6 +2376,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listcoredefinitionversionsresponsetypedef"></a>
+
 ## ListCoreDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2120,6 +2392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcoredefinitionsrequestrequesttypedef"></a>
+
 ## ListCoreDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2130,6 +2404,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listcoredefinitionsresponsetypedef"></a>
 
 ## ListCoreDefinitionsResponseTypeDef
 
@@ -2144,6 +2420,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdeploymentsrequestrequesttypedef"></a>
 
 ## ListDeploymentsRequestRequestTypeDef
 
@@ -2160,6 +2438,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listdeploymentsresponsetypedef"></a>
+
 ## ListDeploymentsResponseTypeDef
 
 ```python
@@ -2173,6 +2453,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdevicedefinitionversionsrequestrequesttypedef"></a>
 
 ## ListDeviceDefinitionVersionsRequestRequestTypeDef
 
@@ -2189,6 +2471,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listdevicedefinitionversionsresponsetypedef"></a>
+
 ## ListDeviceDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2203,6 +2487,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdevicedefinitionsrequestrequesttypedef"></a>
+
 ## ListDeviceDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2213,6 +2499,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listdevicedefinitionsresponsetypedef"></a>
 
 ## ListDeviceDefinitionsResponseTypeDef
 
@@ -2227,6 +2515,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfunctiondefinitionversionsrequestrequesttypedef"></a>
 
 ## ListFunctionDefinitionVersionsRequestRequestTypeDef
 
@@ -2243,6 +2533,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listfunctiondefinitionversionsresponsetypedef"></a>
+
 ## ListFunctionDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2257,6 +2549,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfunctiondefinitionsrequestrequesttypedef"></a>
+
 ## ListFunctionDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2267,6 +2561,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listfunctiondefinitionsresponsetypedef"></a>
 
 ## ListFunctionDefinitionsResponseTypeDef
 
@@ -2282,6 +2578,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgroupcertificateauthoritiesrequestrequesttypedef"></a>
+
 ## ListGroupCertificateAuthoritiesRequestRequestTypeDef
 
 ```python
@@ -2291,6 +2589,8 @@ from mypy_boto3_greengrass.type_defs import ListGroupCertificateAuthoritiesReque
 Required fields:
 
 - `GroupId`: `str`
+
+<a id="listgroupcertificateauthoritiesresponsetypedef"></a>
 
 ## ListGroupCertificateAuthoritiesResponseTypeDef
 
@@ -2304,6 +2604,8 @@ Required fields:
   `List`\[[GroupCertificateAuthorityPropertiesTypeDef](./type_defs.md#groupcertificateauthoritypropertiestypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgroupversionsrequestrequesttypedef"></a>
 
 ## ListGroupVersionsRequestRequestTypeDef
 
@@ -2320,6 +2622,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listgroupversionsresponsetypedef"></a>
+
 ## ListGroupVersionsResponseTypeDef
 
 ```python
@@ -2334,6 +2638,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgroupsrequestrequesttypedef"></a>
+
 ## ListGroupsRequestRequestTypeDef
 
 ```python
@@ -2344,6 +2650,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listgroupsresponsetypedef"></a>
 
 ## ListGroupsResponseTypeDef
 
@@ -2358,6 +2666,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listloggerdefinitionversionsrequestrequesttypedef"></a>
 
 ## ListLoggerDefinitionVersionsRequestRequestTypeDef
 
@@ -2374,6 +2684,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listloggerdefinitionversionsresponsetypedef"></a>
+
 ## ListLoggerDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2388,6 +2700,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listloggerdefinitionsrequestrequesttypedef"></a>
+
 ## ListLoggerDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2398,6 +2712,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listloggerdefinitionsresponsetypedef"></a>
 
 ## ListLoggerDefinitionsResponseTypeDef
 
@@ -2412,6 +2728,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcedefinitionversionsrequestrequesttypedef"></a>
 
 ## ListResourceDefinitionVersionsRequestRequestTypeDef
 
@@ -2428,6 +2746,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listresourcedefinitionversionsresponsetypedef"></a>
+
 ## ListResourceDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2442,6 +2762,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresourcedefinitionsrequestrequesttypedef"></a>
+
 ## ListResourceDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2452,6 +2774,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listresourcedefinitionsresponsetypedef"></a>
 
 ## ListResourceDefinitionsResponseTypeDef
 
@@ -2466,6 +2790,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsubscriptiondefinitionversionsrequestrequesttypedef"></a>
 
 ## ListSubscriptionDefinitionVersionsRequestRequestTypeDef
 
@@ -2482,6 +2808,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="listsubscriptiondefinitionversionsresponsetypedef"></a>
+
 ## ListSubscriptionDefinitionVersionsResponseTypeDef
 
 ```python
@@ -2496,6 +2824,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsubscriptiondefinitionsrequestrequesttypedef"></a>
+
 ## ListSubscriptionDefinitionsRequestRequestTypeDef
 
 ```python
@@ -2506,6 +2836,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="listsubscriptiondefinitionsresponsetypedef"></a>
 
 ## ListSubscriptionDefinitionsResponseTypeDef
 
@@ -2521,6 +2853,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2530,6 +2864,8 @@ from mypy_boto3_greengrass.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2543,6 +2879,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="localdeviceresourcedatatypedef"></a>
+
 ## LocalDeviceResourceDataTypeDef
 
 ```python
@@ -2554,6 +2892,8 @@ Optional fields:
 - `GroupOwnerSetting`:
   [GroupOwnerSettingTypeDef](./type_defs.md#groupownersettingtypedef)
 - `SourcePath`: `str`
+
+<a id="localvolumeresourcedatatypedef"></a>
 
 ## LocalVolumeResourceDataTypeDef
 
@@ -2568,6 +2908,8 @@ Optional fields:
   [GroupOwnerSettingTypeDef](./type_defs.md#groupownersettingtypedef)
 - `SourcePath`: `str`
 
+<a id="loggerdefinitionversiontypedef"></a>
+
 ## LoggerDefinitionVersionTypeDef
 
 ```python
@@ -2577,6 +2919,8 @@ from mypy_boto3_greengrass.type_defs import LoggerDefinitionVersionTypeDef
 Optional fields:
 
 - `Loggers`: `Sequence`\[[LoggerTypeDef](./type_defs.md#loggertypedef)\]
+
+<a id="loggertypedef"></a>
 
 ## LoggerTypeDef
 
@@ -2595,6 +2939,8 @@ Optional fields:
 
 - `Space`: `int`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2606,6 +2952,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="resetdeploymentsrequestrequesttypedef"></a>
 
 ## ResetDeploymentsRequestRequestTypeDef
 
@@ -2622,6 +2970,8 @@ Optional fields:
 - `AmznClientToken`: `str`
 - `Force`: `bool`
 
+<a id="resetdeploymentsresponsetypedef"></a>
+
 ## ResetDeploymentsResponseTypeDef
 
 ```python
@@ -2634,6 +2984,8 @@ Required fields:
 - `DeploymentId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resourceaccesspolicytypedef"></a>
 
 ## ResourceAccessPolicyTypeDef
 
@@ -2648,6 +3000,8 @@ Required fields:
 Optional fields:
 
 - `Permission`: [PermissionType](./literals.md#permissiontype)
+
+<a id="resourcedatacontainertypedef"></a>
 
 ## ResourceDataContainerTypeDef
 
@@ -2668,6 +3022,8 @@ Optional fields:
 - `SecretsManagerSecretResourceData`:
   [SecretsManagerSecretResourceDataTypeDef](./type_defs.md#secretsmanagersecretresourcedatatypedef)
 
+<a id="resourcedefinitionversiontypedef"></a>
+
 ## ResourceDefinitionVersionTypeDef
 
 ```python
@@ -2677,6 +3033,8 @@ from mypy_boto3_greengrass.type_defs import ResourceDefinitionVersionTypeDef
 Optional fields:
 
 - `Resources`: `Sequence`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+
+<a id="resourcedownloadownersettingtypedef"></a>
 
 ## ResourceDownloadOwnerSettingTypeDef
 
@@ -2688,6 +3046,8 @@ Required fields:
 
 - `GroupOwner`: `str`
 - `GroupPermission`: [PermissionType](./literals.md#permissiontype)
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -2701,6 +3061,8 @@ Required fields:
 - `Name`: `str`
 - `ResourceDataContainer`:
   [ResourceDataContainerTypeDef](./type_defs.md#resourcedatacontainertypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2716,6 +3078,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="runtimeconfigurationtypedef"></a>
+
 ## RuntimeConfigurationTypeDef
 
 ```python
@@ -2726,6 +3090,8 @@ Optional fields:
 
 - `TelemetryConfiguration`:
   [TelemetryConfigurationTypeDef](./type_defs.md#telemetryconfigurationtypedef)
+
+<a id="s3machinelearningmodelresourcedatatypedef"></a>
 
 ## S3MachineLearningModelResourceDataTypeDef
 
@@ -2740,6 +3106,8 @@ Optional fields:
   [ResourceDownloadOwnerSettingTypeDef](./type_defs.md#resourcedownloadownersettingtypedef)
 - `S3Uri`: `str`
 
+<a id="sagemakermachinelearningmodelresourcedatatypedef"></a>
+
 ## SageMakerMachineLearningModelResourceDataTypeDef
 
 ```python
@@ -2753,6 +3121,8 @@ Optional fields:
   [ResourceDownloadOwnerSettingTypeDef](./type_defs.md#resourcedownloadownersettingtypedef)
 - `SageMakerJobArn`: `str`
 
+<a id="secretsmanagersecretresourcedatatypedef"></a>
+
 ## SecretsManagerSecretResourceDataTypeDef
 
 ```python
@@ -2763,6 +3133,8 @@ Optional fields:
 
 - `ARN`: `str`
 - `AdditionalStagingLabelsToDownload`: `Sequence`\[`str`\]
+
+<a id="startbulkdeploymentrequestrequesttypedef"></a>
 
 ## StartBulkDeploymentRequestRequestTypeDef
 
@@ -2780,6 +3152,8 @@ Optional fields:
 - `AmznClientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="startbulkdeploymentresponsetypedef"></a>
+
 ## StartBulkDeploymentResponseTypeDef
 
 ```python
@@ -2793,6 +3167,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopbulkdeploymentrequestrequesttypedef"></a>
+
 ## StopBulkDeploymentRequestRequestTypeDef
 
 ```python
@@ -2802,6 +3178,8 @@ from mypy_boto3_greengrass.type_defs import StopBulkDeploymentRequestRequestType
 Required fields:
 
 - `BulkDeploymentId`: `str`
+
+<a id="subscriptiondefinitionversiontypedef"></a>
 
 ## SubscriptionDefinitionVersionTypeDef
 
@@ -2813,6 +3191,8 @@ Optional fields:
 
 - `Subscriptions`:
   `Sequence`\[[SubscriptionTypeDef](./type_defs.md#subscriptiontypedef)\]
+
+<a id="subscriptiontypedef"></a>
 
 ## SubscriptionTypeDef
 
@@ -2827,6 +3207,8 @@ Required fields:
 - `Subject`: `str`
 - `Target`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2840,6 +3222,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="telemetryconfigurationtypedef"></a>
 
 ## TelemetryConfigurationTypeDef
 
@@ -2856,6 +3240,8 @@ Optional fields:
 - `ConfigurationSyncStatus`:
   [ConfigurationSyncStatusType](./literals.md#configurationsyncstatustype)
 
+<a id="telemetryconfigurationupdatetypedef"></a>
+
 ## TelemetryConfigurationUpdateTypeDef
 
 ```python
@@ -2865,6 +3251,8 @@ from mypy_boto3_greengrass.type_defs import TelemetryConfigurationUpdateTypeDef
 Required fields:
 
 - `Telemetry`: [TelemetryType](./literals.md#telemetrytype)
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -2876,6 +3264,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateconnectivityinforequestrequesttypedef"></a>
 
 ## UpdateConnectivityInfoRequestRequestTypeDef
 
@@ -2892,6 +3282,8 @@ Optional fields:
 - `ConnectivityInfo`:
   `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
 
+<a id="updateconnectivityinforesponsetypedef"></a>
+
 ## UpdateConnectivityInfoResponseTypeDef
 
 ```python
@@ -2904,6 +3296,8 @@ Required fields:
 - `Version`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateconnectordefinitionrequestrequesttypedef"></a>
 
 ## UpdateConnectorDefinitionRequestRequestTypeDef
 
@@ -2919,6 +3313,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="updatecoredefinitionrequestrequesttypedef"></a>
+
 ## UpdateCoreDefinitionRequestRequestTypeDef
 
 ```python
@@ -2932,6 +3328,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updatedevicedefinitionrequestrequesttypedef"></a>
 
 ## UpdateDeviceDefinitionRequestRequestTypeDef
 
@@ -2947,6 +3345,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="updatefunctiondefinitionrequestrequesttypedef"></a>
+
 ## UpdateFunctionDefinitionRequestRequestTypeDef
 
 ```python
@@ -2960,6 +3360,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updategroupcertificateconfigurationrequestrequesttypedef"></a>
 
 ## UpdateGroupCertificateConfigurationRequestRequestTypeDef
 
@@ -2975,6 +3377,8 @@ Optional fields:
 
 - `CertificateExpiryInMilliseconds`: `str`
 
+<a id="updategroupcertificateconfigurationresponsetypedef"></a>
+
 ## UpdateGroupCertificateConfigurationResponseTypeDef
 
 ```python
@@ -2988,6 +3392,8 @@ Required fields:
 - `GroupId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategrouprequestrequesttypedef"></a>
 
 ## UpdateGroupRequestRequestTypeDef
 
@@ -3003,6 +3409,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="updateloggerdefinitionrequestrequesttypedef"></a>
+
 ## UpdateLoggerDefinitionRequestRequestTypeDef
 
 ```python
@@ -3016,6 +3424,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updateresourcedefinitionrequestrequesttypedef"></a>
 
 ## UpdateResourceDefinitionRequestRequestTypeDef
 
@@ -3031,6 +3441,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="updatesubscriptiondefinitionrequestrequesttypedef"></a>
+
 ## UpdateSubscriptionDefinitionRequestRequestTypeDef
 
 ```python
@@ -3044,6 +3456,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updatethingruntimeconfigurationrequestrequesttypedef"></a>
 
 ## UpdateThingRuntimeConfigurationRequestRequestTypeDef
 
@@ -3059,6 +3473,8 @@ Optional fields:
 
 - `TelemetryConfiguration`:
   [TelemetryConfigurationUpdateTypeDef](./type_defs.md#telemetryconfigurationupdatetypedef)
+
+<a id="versioninformationtypedef"></a>
 
 ## VersionInformationTypeDef
 

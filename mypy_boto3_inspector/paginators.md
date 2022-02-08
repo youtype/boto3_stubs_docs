@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-inspector-module"></a>
+
 # Paginators for boto3 Inspector module
 
 > [Index](..) > [Inspector](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module
-[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 - [Paginators for boto3 Inspector module](#paginators-for-boto3-inspector-module)
   - [ListAssessmentRunAgentsPaginator](#listassessmentrunagentspaginator)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ListRulesPackagesPaginator](#listrulespackagespaginator)
   - [PreviewAgentsPaginator](#previewagentspaginator)
 
+<a id="listassessmentrunagentspaginator"></a>
+
 ## ListAssessmentRunAgentsPaginator
 
 Type annotations for
@@ -26,10 +30,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListAssessmentRunAgentsPaginator
 
 def get_list_assessment_run_agents_paginator() -> ListAssessmentRunAgentsPaginator:
-    return boto3.client("inspector").get_paginator("list_assessment_run_agents")
+    return Session().client("inspector").get_paginator("list_assessment_run_agents")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `ListAssessmentRunAgentsPaginator.paginate` method:
 `ListAssessmentRunAgentsPaginator.paginate` returns
 `_PageIterator`\[[ListAssessmentRunAgentsResponseTypeDef](./type_defs.md#listassessmentrunagentsresponsetypedef)\].
 
+<a id="listassessmentrunspaginator"></a>
+
 ## ListAssessmentRunsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListAssessmentRunsPaginator
 
 def get_list_assessment_runs_paginator() -> ListAssessmentRunsPaginator:
-    return boto3.client("inspector").get_paginator("list_assessment_runs")
+    return Session().client("inspector").get_paginator("list_assessment_runs")
 ```
 
 Boto3 documentation:
@@ -73,6 +83,8 @@ Arguments for `ListAssessmentRunsPaginator.paginate` method:
 `ListAssessmentRunsPaginator.paginate` returns
 `_PageIterator`\[[ListAssessmentRunsResponseTypeDef](./type_defs.md#listassessmentrunsresponsetypedef)\].
 
+<a id="listassessmenttargetspaginator"></a>
+
 ## ListAssessmentTargetsPaginator
 
 Type annotations for
@@ -81,10 +93,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListAssessmentTargetsPaginator
 
 def get_list_assessment_targets_paginator() -> ListAssessmentTargetsPaginator:
-    return boto3.client("inspector").get_paginator("list_assessment_targets")
+    return Session().client("inspector").get_paginator("list_assessment_targets")
 ```
 
 Boto3 documentation:
@@ -100,6 +114,8 @@ Arguments for `ListAssessmentTargetsPaginator.paginate` method:
 `ListAssessmentTargetsPaginator.paginate` returns
 `_PageIterator`\[[ListAssessmentTargetsResponseTypeDef](./type_defs.md#listassessmenttargetsresponsetypedef)\].
 
+<a id="listassessmenttemplatespaginator"></a>
+
 ## ListAssessmentTemplatesPaginator
 
 Type annotations for
@@ -108,10 +124,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListAssessmentTemplatesPaginator
 
 def get_list_assessment_templates_paginator() -> ListAssessmentTemplatesPaginator:
-    return boto3.client("inspector").get_paginator("list_assessment_templates")
+    return Session().client("inspector").get_paginator("list_assessment_templates")
 ```
 
 Boto3 documentation:
@@ -128,6 +146,8 @@ Arguments for `ListAssessmentTemplatesPaginator.paginate` method:
 `ListAssessmentTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListAssessmentTemplatesResponseTypeDef](./type_defs.md#listassessmenttemplatesresponsetypedef)\].
 
+<a id="listeventsubscriptionspaginator"></a>
+
 ## ListEventSubscriptionsPaginator
 
 Type annotations for
@@ -136,10 +156,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListEventSubscriptionsPaginator
 
 def get_list_event_subscriptions_paginator() -> ListEventSubscriptionsPaginator:
-    return boto3.client("inspector").get_paginator("list_event_subscriptions")
+    return Session().client("inspector").get_paginator("list_event_subscriptions")
 ```
 
 Boto3 documentation:
@@ -154,6 +176,8 @@ Arguments for `ListEventSubscriptionsPaginator.paginate` method:
 `ListEventSubscriptionsPaginator.paginate` returns
 `_PageIterator`\[[ListEventSubscriptionsResponseTypeDef](./type_defs.md#listeventsubscriptionsresponsetypedef)\].
 
+<a id="listexclusionspaginator"></a>
+
 ## ListExclusionsPaginator
 
 Type annotations for
@@ -162,10 +186,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListExclusionsPaginator
 
 def get_list_exclusions_paginator() -> ListExclusionsPaginator:
-    return boto3.client("inspector").get_paginator("list_exclusions")
+    return Session().client("inspector").get_paginator("list_exclusions")
 ```
 
 Boto3 documentation:
@@ -180,6 +206,8 @@ Arguments for `ListExclusionsPaginator.paginate` method:
 `ListExclusionsPaginator.paginate` returns
 `_PageIterator`\[[ListExclusionsResponseTypeDef](./type_defs.md#listexclusionsresponsetypedef)\].
 
+<a id="listfindingspaginator"></a>
+
 ## ListFindingsPaginator
 
 Type annotations for
@@ -188,10 +216,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListFindingsPaginator
 
 def get_list_findings_paginator() -> ListFindingsPaginator:
-    return boto3.client("inspector").get_paginator("list_findings")
+    return Session().client("inspector").get_paginator("list_findings")
 ```
 
 Boto3 documentation:
@@ -207,6 +237,8 @@ Arguments for `ListFindingsPaginator.paginate` method:
 `ListFindingsPaginator.paginate` returns
 `_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
+<a id="listrulespackagespaginator"></a>
+
 ## ListRulesPackagesPaginator
 
 Type annotations for
@@ -215,10 +247,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import ListRulesPackagesPaginator
 
 def get_list_rules_packages_paginator() -> ListRulesPackagesPaginator:
-    return boto3.client("inspector").get_paginator("list_rules_packages")
+    return Session().client("inspector").get_paginator("list_rules_packages")
 ```
 
 Boto3 documentation:
@@ -232,6 +266,8 @@ Arguments for `ListRulesPackagesPaginator.paginate` method:
 `ListRulesPackagesPaginator.paginate` returns
 `_PageIterator`\[[ListRulesPackagesResponseTypeDef](./type_defs.md#listrulespackagesresponsetypedef)\].
 
+<a id="previewagentspaginator"></a>
+
 ## PreviewAgentsPaginator
 
 Type annotations for
@@ -240,10 +276,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_inspector.paginator import PreviewAgentsPaginator
 
 def get_preview_agents_paginator() -> PreviewAgentsPaginator:
-    return boto3.client("inspector").get_paginator("preview_agents")
+    return Session().client("inspector").get_paginator("preview_agents")
 ```
 
 Boto3 documentation:

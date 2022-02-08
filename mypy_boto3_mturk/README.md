@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mturk-module"></a>
+
 # Type annotations for boto3 MTurk module
 
 > [Index](..) > MTurk
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MTurk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mturk.html#MTurk)
 type annotations stubs module
-[mypy_boto3_mturk](https://pypi.org/project/mypy-boto3-mturk/).
+[mypy-boto3-mturk](https://pypi.org/project/mypy-boto3-mturk/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mturk]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mturk]'
+
+# standalone installation
 pip install mypy-boto3-mturk
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mturk
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mturkclient"></a>
+
 ## MTurkClient
 
 Type annotations for `boto3.client("mturk")` as [MTurkClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mturk.client import MTurkClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -75,6 +89,8 @@ from mypy_boto3_mturk.client import MTurkClient
 - [update_notification_settings](./client.md#update_notification_settings)
 - [update_qualification_type](./client.md#update_qualification_type)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MTurkClient [exceptions](./client.md#exceptions)
@@ -82,6 +98,8 @@ MTurkClient [exceptions](./client.md#exceptions)
 - ClientError
 - RequestError
 - ServiceFault
+
+<a id="paginators"></a>
 
 ## Paginators
 
@@ -91,7 +109,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mturk.paginators import ListAssignmentsForHITPaginator, ...
+from mypy_boto3_mturk.paginator import ListAssignmentsForHITPaginator, ...
 ```
 
 - [ListAssignmentsForHITPaginator](./paginators.md#listassignmentsforhitpaginator)
@@ -103,6 +121,8 @@ from mypy_boto3_mturk.paginators import ListAssignmentsForHITPaginator, ...
 - [ListReviewableHITsPaginator](./paginators.md#listreviewablehitspaginator)
 - [ListWorkerBlocksPaginator](./paginators.md#listworkerblockspaginator)
 - [ListWorkersWithQualificationTypePaginator](./paginators.md#listworkerswithqualificationtypepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -138,6 +158,8 @@ from mypy_boto3_mturk.literals import AssignmentStatusType, ...
 - [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

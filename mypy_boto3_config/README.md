@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-configservice-module"></a>
+
 # Type annotations for boto3 ConfigService module
 
 > [Index](..) > ConfigService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module
-[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[config]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[config]'
+
+# standalone installation
 pip install mypy-boto3-config
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-config
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="configserviceclient"></a>
+
 ## ConfigServiceClient
 
 Type annotations for `boto3.client("config")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_config.client import ConfigServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -123,6 +137,8 @@ from mypy_boto3_config.client import ConfigServiceClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ConfigServiceClient [exceptions](./client.md#exceptions)
@@ -182,6 +198,8 @@ ConfigServiceClient [exceptions](./client.md#exceptions)
 - TooManyTagsException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -190,7 +208,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_config.paginators import DescribeAggregateComplianceByConfigRulesPaginator, ...
+from mypy_boto3_config.paginator import DescribeAggregateComplianceByConfigRulesPaginator, ...
 ```
 
 - [DescribeAggregateComplianceByConfigRulesPaginator](./paginators.md#describeaggregatecompliancebyconfigrulespaginator)
@@ -223,6 +241,8 @@ from mypy_boto3_config.paginators import DescribeAggregateComplianceByConfigRule
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
 - [SelectAggregateResourceConfigPaginator](./paginators.md#selectaggregateresourceconfigpaginator)
 - [SelectResourceConfigPaginator](./paginators.md#selectresourceconfigpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -293,6 +313,8 @@ from mypy_boto3_config.literals import AggregateConformancePackComplianceSummary
 - [SelectResourceConfigPaginatorName](./literals.md#selectresourceconfigpaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

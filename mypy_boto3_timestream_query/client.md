@@ -1,3 +1,5 @@
+<a id="timestreamqueryclient-for-boto3-timestreamquery-module"></a>
+
 # TimestreamQueryClient for boto3 TimestreamQuery module
 
 > [Index](..) > [TimestreamQuery](.) > TimestreamQueryClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
-[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [TimestreamQueryClient for boto3 TimestreamQuery module](#timestreamqueryclient-for-boto3-timestreamquery-module)
   - [TimestreamQueryClient](#timestreamqueryclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [update_scheduled_query](#update_scheduled_query)
     - [get_paginator](#get_paginator)
 
+<a id="timestreamqueryclient"></a>
+
 ## TimestreamQueryClient
 
 Type annotations for `boto3.client("timestream-query")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("timestream-query")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_timestream_query.client import TimestreamQueryClient
 
 def get_timestream-query_client() -> TimestreamQueryClient:
-    return boto3.client("timestream-query")
+    return Session().client("timestream-query")
 ```
 
 Boto3 documentation:
 [TimestreamQuery.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -70,7 +77,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -82,6 +93,8 @@ Boto3 documentation:
 [TimestreamQuery.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -97,6 +110,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_query"></a>
 
 ### cancel_query
 
@@ -116,6 +131,8 @@ Keyword-only arguments:
 
 Returns
 [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
+
+<a id="create_scheduled_query"></a>
 
 ### create_scheduled_query
 
@@ -154,6 +171,8 @@ Keyword-only arguments:
 Returns
 [CreateScheduledQueryResponseTypeDef](./type_defs.md#createscheduledqueryresponsetypedef).
 
+<a id="delete_scheduled_query"></a>
+
 ### delete_scheduled_query
 
 Deletes a given scheduled query.
@@ -171,6 +190,8 @@ Keyword-only arguments:
 
 - `ScheduledQueryArn`: `str` *(required)*
 
+<a id="describe_endpoints"></a>
+
 ### describe_endpoints
 
 DescribeEndpoints returns a list of available endpoints to make Timestream API
@@ -184,6 +205,8 @@ Boto3 documentation:
 
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
+
+<a id="describe_scheduled_query"></a>
 
 ### describe_scheduled_query
 
@@ -205,6 +228,8 @@ Keyword-only arguments:
 Returns
 [DescribeScheduledQueryResponseTypeDef](./type_defs.md#describescheduledqueryresponsetypedef).
 
+<a id="execute_scheduled_query"></a>
+
 ### execute_scheduled_query
 
 You can use this API to run a scheduled query manually.
@@ -224,6 +249,8 @@ Keyword-only arguments:
 - `InvocationTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `ClientToken`: `str`
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -242,6 +269,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_scheduled_queries"></a>
 
 ### list_scheduled_queries
 
@@ -263,6 +292,8 @@ Keyword-only arguments:
 
 Returns
 [ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -286,6 +317,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="prepare_query"></a>
+
 ### prepare_query
 
 A synchronous operation that allows you to submit a query with parameters to be
@@ -306,6 +339,8 @@ Keyword-only arguments:
 
 Returns
 [PrepareQueryResponseTypeDef](./type_defs.md#preparequeryresponsetypedef).
+
+<a id="query"></a>
 
 ### query
 
@@ -329,6 +364,8 @@ Keyword-only arguments:
 
 Returns [QueryResponseTypeDef](./type_defs.md#queryresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associate a set of tags with a Timestream resource.
@@ -347,6 +384,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -367,6 +406,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_scheduled_query"></a>
+
 ### update_scheduled_query
 
 Update a scheduled query.
@@ -385,6 +426,8 @@ Keyword-only arguments:
 - `ScheduledQueryArn`: `str` *(required)*
 - `State`: [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
   *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

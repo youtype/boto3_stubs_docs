@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-auditmanager-module"></a>
+
 # Type annotations for boto3 AuditManager module
 
 > [Index](..) > AuditManager
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
-[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[auditmanager]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[auditmanager]'
+
+# standalone installation
 pip install mypy-boto3-auditmanager
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-auditmanager
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="auditmanagerclient"></a>
 
 ## AuditManagerClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_auditmanager.client import AuditManagerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -96,6 +110,8 @@ from mypy_boto3_auditmanager.client import AuditManagerClient
 - [update_settings](./client.md#update_settings)
 - [validate_assessment_report_integrity](./client.md#validate_assessment_report_integrity)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AuditManagerClient [exceptions](./client.md#exceptions)
@@ -105,6 +121,8 @@ AuditManagerClient [exceptions](./client.md#exceptions)
 - InternalServerException
 - ResourceNotFoundException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -138,6 +156,8 @@ from mypy_boto3_auditmanager.literals import AccountStatusType, ...
 - [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

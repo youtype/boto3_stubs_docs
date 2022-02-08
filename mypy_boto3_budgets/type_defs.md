@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-budgets-module"></a>
+
 # Typed dictionaries for boto3 Budgets module
 
 > [Index](..) > [Budgets](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module
-[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 - [Typed dictionaries for boto3 Budgets module](#typed-dictionaries-for-boto3-budgets-module)
   - [ActionHistoryDetailsTypeDef](#actionhistorydetailstypedef)
@@ -64,6 +66,8 @@ type annotations stubs module
   - [UpdateNotificationRequestRequestTypeDef](#updatenotificationrequestrequesttypedef)
   - [UpdateSubscriberRequestRequestTypeDef](#updatesubscriberrequestrequesttypedef)
 
+<a id="actionhistorydetailstypedef"></a>
+
 ## ActionHistoryDetailsTypeDef
 
 ```python
@@ -74,6 +78,8 @@ Required fields:
 
 - `Message`: `str`
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
+
+<a id="actionhistorytypedef"></a>
 
 ## ActionHistoryTypeDef
 
@@ -89,6 +95,8 @@ Required fields:
 - `ActionHistoryDetails`:
   [ActionHistoryDetailsTypeDef](./type_defs.md#actionhistorydetailstypedef)
 
+<a id="actionthresholdtypedef"></a>
+
 ## ActionThresholdTypeDef
 
 ```python
@@ -99,6 +107,8 @@ Required fields:
 
 - `ActionThresholdValue`: `float`
 - `ActionThresholdType`: [ThresholdTypeType](./literals.md#thresholdtypetype)
+
+<a id="actiontypedef"></a>
 
 ## ActionTypeDef
 
@@ -122,6 +132,8 @@ Required fields:
 - `Subscribers`:
   `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
+<a id="budgetperformancehistorytypedef"></a>
+
 ## BudgetPerformanceHistoryTypeDef
 
 ```python
@@ -137,6 +149,8 @@ Optional fields:
 - `TimeUnit`: [TimeUnitType](./literals.md#timeunittype)
 - `BudgetedAndActualAmountsList`:
   `List`\[[BudgetedAndActualAmountsTypeDef](./type_defs.md#budgetedandactualamountstypedef)\]
+
+<a id="budgettypedef"></a>
 
 ## BudgetTypeDef
 
@@ -162,6 +176,8 @@ Optional fields:
   [CalculatedSpendTypeDef](./type_defs.md#calculatedspendtypedef)
 - `LastUpdatedTime`: `Union`\[`datetime`, `str`\]
 
+<a id="budgetedandactualamountstypedef"></a>
+
 ## BudgetedAndActualAmountsTypeDef
 
 ```python
@@ -173,6 +189,8 @@ Optional fields:
 - `BudgetedAmount`: [SpendTypeDef](./type_defs.md#spendtypedef)
 - `ActualAmount`: [SpendTypeDef](./type_defs.md#spendtypedef)
 - `TimePeriod`: [TimePeriodTypeDef](./type_defs.md#timeperiodtypedef)
+
+<a id="calculatedspendtypedef"></a>
 
 ## CalculatedSpendTypeDef
 
@@ -187,6 +205,8 @@ Required fields:
 Optional fields:
 
 - `ForecastedSpend`: [SpendTypeDef](./type_defs.md#spendtypedef)
+
+<a id="costtypestypedef"></a>
 
 ## CostTypesTypeDef
 
@@ -207,6 +227,8 @@ Optional fields:
 - `IncludeSupport`: `bool`
 - `IncludeDiscount`: `bool`
 - `UseAmortized`: `bool`
+
+<a id="createbudgetactionrequestrequesttypedef"></a>
 
 ## CreateBudgetActionRequestRequestTypeDef
 
@@ -229,6 +251,8 @@ Required fields:
 - `Subscribers`:
   `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
+<a id="createbudgetactionresponsetypedef"></a>
+
 ## CreateBudgetActionResponseTypeDef
 
 ```python
@@ -242,6 +266,8 @@ Required fields:
 - `ActionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbudgetrequestrequesttypedef"></a>
 
 ## CreateBudgetRequestRequestTypeDef
 
@@ -259,6 +285,8 @@ Optional fields:
 - `NotificationsWithSubscribers`:
   `Sequence`\[[NotificationWithSubscribersTypeDef](./type_defs.md#notificationwithsubscriberstypedef)\]
 
+<a id="createnotificationrequestrequesttypedef"></a>
+
 ## CreateNotificationRequestRequestTypeDef
 
 ```python
@@ -273,6 +301,8 @@ Required fields:
 - `Subscribers`:
   `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
+<a id="createsubscriberrequestrequesttypedef"></a>
+
 ## CreateSubscriberRequestRequestTypeDef
 
 ```python
@@ -285,6 +315,8 @@ Required fields:
 - `BudgetName`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+
+<a id="definitiontypedef"></a>
 
 ## DefinitionTypeDef
 
@@ -301,6 +333,8 @@ Optional fields:
 - `SsmActionDefinition`:
   [SsmActionDefinitionTypeDef](./type_defs.md#ssmactiondefinitiontypedef)
 
+<a id="deletebudgetactionrequestrequesttypedef"></a>
+
 ## DeleteBudgetActionRequestRequestTypeDef
 
 ```python
@@ -312,6 +346,8 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `ActionId`: `str`
+
+<a id="deletebudgetactionresponsetypedef"></a>
 
 ## DeleteBudgetActionResponseTypeDef
 
@@ -327,6 +363,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebudgetrequestrequesttypedef"></a>
+
 ## DeleteBudgetRequestRequestTypeDef
 
 ```python
@@ -337,6 +375,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `BudgetName`: `str`
+
+<a id="deletenotificationrequestrequesttypedef"></a>
 
 ## DeleteNotificationRequestRequestTypeDef
 
@@ -350,6 +390,8 @@ Required fields:
 - `BudgetName`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 
+<a id="deletesubscriberrequestrequesttypedef"></a>
+
 ## DeleteSubscriberRequestRequestTypeDef
 
 ```python
@@ -362,6 +404,8 @@ Required fields:
 - `BudgetName`: `str`
 - `Notification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `Subscriber`: [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+
+<a id="describebudgetactionhistoriesrequestrequesttypedef"></a>
 
 ## DescribeBudgetActionHistoriesRequestRequestTypeDef
 
@@ -381,6 +425,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describebudgetactionhistoriesresponsetypedef"></a>
+
 ## DescribeBudgetActionHistoriesResponseTypeDef
 
 ```python
@@ -395,6 +441,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebudgetactionrequestrequesttypedef"></a>
+
 ## DescribeBudgetActionRequestRequestTypeDef
 
 ```python
@@ -406,6 +454,8 @@ Required fields:
 - `AccountId`: `str`
 - `BudgetName`: `str`
 - `ActionId`: `str`
+
+<a id="describebudgetactionresponsetypedef"></a>
 
 ## DescribeBudgetActionResponseTypeDef
 
@@ -420,6 +470,8 @@ Required fields:
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describebudgetactionsforaccountrequestrequesttypedef"></a>
 
 ## DescribeBudgetActionsForAccountRequestRequestTypeDef
 
@@ -436,6 +488,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describebudgetactionsforaccountresponsetypedef"></a>
+
 ## DescribeBudgetActionsForAccountResponseTypeDef
 
 ```python
@@ -448,6 +502,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describebudgetactionsforbudgetrequestrequesttypedef"></a>
 
 ## DescribeBudgetActionsForBudgetRequestRequestTypeDef
 
@@ -465,6 +521,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describebudgetactionsforbudgetresponsetypedef"></a>
+
 ## DescribeBudgetActionsForBudgetResponseTypeDef
 
 ```python
@@ -477,6 +535,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describebudgetperformancehistoryrequestrequesttypedef"></a>
 
 ## DescribeBudgetPerformanceHistoryRequestRequestTypeDef
 
@@ -495,6 +555,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describebudgetperformancehistoryresponsetypedef"></a>
+
 ## DescribeBudgetPerformanceHistoryResponseTypeDef
 
 ```python
@@ -509,6 +571,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebudgetrequestrequesttypedef"></a>
+
 ## DescribeBudgetRequestRequestTypeDef
 
 ```python
@@ -519,6 +583,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `BudgetName`: `str`
+
+<a id="describebudgetresponsetypedef"></a>
 
 ## DescribeBudgetResponseTypeDef
 
@@ -531,6 +597,8 @@ Required fields:
 - `Budget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describebudgetsrequestrequesttypedef"></a>
 
 ## DescribeBudgetsRequestRequestTypeDef
 
@@ -547,6 +615,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describebudgetsresponsetypedef"></a>
+
 ## DescribeBudgetsResponseTypeDef
 
 ```python
@@ -559,6 +629,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describenotificationsforbudgetrequestrequesttypedef"></a>
 
 ## DescribeNotificationsForBudgetRequestRequestTypeDef
 
@@ -576,6 +648,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describenotificationsforbudgetresponsetypedef"></a>
+
 ## DescribeNotificationsForBudgetResponseTypeDef
 
 ```python
@@ -589,6 +663,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesubscribersfornotificationrequestrequesttypedef"></a>
 
 ## DescribeSubscribersForNotificationRequestRequestTypeDef
 
@@ -607,6 +683,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describesubscribersfornotificationresponsetypedef"></a>
+
 ## DescribeSubscribersForNotificationResponseTypeDef
 
 ```python
@@ -621,6 +699,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="executebudgetactionrequestrequesttypedef"></a>
+
 ## ExecuteBudgetActionRequestRequestTypeDef
 
 ```python
@@ -633,6 +713,8 @@ Required fields:
 - `BudgetName`: `str`
 - `ActionId`: `str`
 - `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
+
+<a id="executebudgetactionresponsetypedef"></a>
 
 ## ExecuteBudgetActionResponseTypeDef
 
@@ -649,6 +731,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="iamactiondefinitiontypedef"></a>
+
 ## IamActionDefinitionTypeDef
 
 ```python
@@ -664,6 +748,8 @@ Optional fields:
 - `Roles`: `Sequence`\[`str`\]
 - `Groups`: `Sequence`\[`str`\]
 - `Users`: `Sequence`\[`str`\]
+
+<a id="notificationtypedef"></a>
 
 ## NotificationTypeDef
 
@@ -685,6 +771,8 @@ Optional fields:
 - `NotificationState`:
   [NotificationStateType](./literals.md#notificationstatetype)
 
+<a id="notificationwithsubscriberstypedef"></a>
+
 ## NotificationWithSubscribersTypeDef
 
 ```python
@@ -697,6 +785,8 @@ Required fields:
 - `Subscribers`:
   `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -708,6 +798,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -723,6 +815,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scpactiondefinitiontypedef"></a>
+
 ## ScpActionDefinitionTypeDef
 
 ```python
@@ -734,6 +828,8 @@ Required fields:
 - `PolicyId`: `str`
 - `TargetIds`: `Sequence`\[`str`\]
 
+<a id="spendtypedef"></a>
+
 ## SpendTypeDef
 
 ```python
@@ -744,6 +840,8 @@ Required fields:
 
 - `Amount`: `str`
 - `Unit`: `str`
+
+<a id="ssmactiondefinitiontypedef"></a>
 
 ## SsmActionDefinitionTypeDef
 
@@ -757,6 +855,8 @@ Required fields:
 - `Region`: `str`
 - `InstanceIds`: `Sequence`\[`str`\]
 
+<a id="subscribertypedef"></a>
+
 ## SubscriberTypeDef
 
 ```python
@@ -769,6 +869,8 @@ Required fields:
   [SubscriptionTypeType](./literals.md#subscriptiontypetype)
 - `Address`: `str`
 
+<a id="timeperiodtypedef"></a>
+
 ## TimePeriodTypeDef
 
 ```python
@@ -779,6 +881,8 @@ Optional fields:
 
 - `Start`: `Union`\[`datetime`, `str`\]
 - `End`: `Union`\[`datetime`, `str`\]
+
+<a id="updatebudgetactionrequestrequesttypedef"></a>
 
 ## UpdateBudgetActionRequestRequestTypeDef
 
@@ -804,6 +908,8 @@ Optional fields:
 - `Subscribers`:
   `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
+<a id="updatebudgetactionresponsetypedef"></a>
+
 ## UpdateBudgetActionResponseTypeDef
 
 ```python
@@ -819,6 +925,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatebudgetrequestrequesttypedef"></a>
+
 ## UpdateBudgetRequestRequestTypeDef
 
 ```python
@@ -829,6 +937,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `NewBudget`: [BudgetTypeDef](./type_defs.md#budgettypedef)
+
+<a id="updatenotificationrequestrequesttypedef"></a>
 
 ## UpdateNotificationRequestRequestTypeDef
 
@@ -842,6 +952,8 @@ Required fields:
 - `BudgetName`: `str`
 - `OldNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
 - `NewNotification`: [NotificationTypeDef](./type_defs.md#notificationtypedef)
+
+<a id="updatesubscriberrequestrequesttypedef"></a>
 
 ## UpdateSubscriberRequestRequestTypeDef
 

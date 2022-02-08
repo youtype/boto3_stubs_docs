@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-workmailmessageflow-module"></a>
+
 # Type annotations for boto3 WorkMailMessageFlow module
 
 > [Index](..) > WorkMailMessageFlow
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module
-[mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
+[mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[workmailmessageflow]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[workmailmessageflow]'
+
+# standalone installation
 pip install mypy-boto3-workmailmessageflow
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-workmailmessageflow
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="workmailmessageflowclient"></a>
 
 ## WorkMailMessageFlowClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -36,6 +50,8 @@ from mypy_boto3_workmailmessageflow.client import WorkMailMessageFlowClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_raw_message_content](./client.md#get_raw_message_content)
 - [put_raw_message_content](./client.md#put_raw_message_content)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -46,6 +62,8 @@ WorkMailMessageFlowClient [exceptions](./client.md#exceptions)
 - MessageFrozen
 - MessageRejected
 - ResourceNotFoundException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -58,6 +76,8 @@ from mypy_boto3_workmailmessageflow.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

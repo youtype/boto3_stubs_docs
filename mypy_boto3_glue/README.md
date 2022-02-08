@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-glue-module"></a>
+
 # Type annotations for boto3 Glue module
 
 > [Index](..) > Glue
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module
-[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[glue]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[glue]'
+
+# standalone installation
 pip install mypy-boto3-glue
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-glue
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="glueclient"></a>
+
 ## GlueClient
 
 Type annotations for `boto3.client("glue")` as [GlueClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_glue.client import GlueClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -205,6 +219,8 @@ from mypy_boto3_glue.client import GlueClient
 - [update_user_defined_function](./client.md#update_user_defined_function)
 - [update_workflow](./client.md#update_workflow)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GlueClient [exceptions](./client.md#exceptions)
@@ -239,6 +255,8 @@ GlueClient [exceptions](./client.md#exceptions)
 - ValidationException
 - VersionMismatchException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -247,7 +265,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_glue.paginators import GetClassifiersPaginator, ...
+from mypy_boto3_glue.paginator import GetClassifiersPaginator, ...
 ```
 
 - [GetClassifiersPaginator](./paginators.md#getclassifierspaginator)
@@ -269,6 +287,8 @@ from mypy_boto3_glue.paginators import GetClassifiersPaginator, ...
 - [ListRegistriesPaginator](./paginators.md#listregistriespaginator)
 - [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -353,6 +373,8 @@ from mypy_boto3_glue.literals import BackfillErrorCodeType, ...
 - [WorkflowRunStatusType](./literals.md#workflowrunstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

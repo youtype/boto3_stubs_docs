@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-computeoptimizer-module"></a>
+
 # Typed dictionaries for boto3 ComputeOptimizer module
 
 > [Index](..) > [ComputeOptimizer](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ComputeOptimizer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/compute-optimizer.html#ComputeOptimizer)
 type annotations stubs module
-[mypy_boto3_compute_optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
+[mypy-boto3-compute-optimizer](https://pypi.org/project/mypy-boto3-compute-optimizer/).
 
 - [Typed dictionaries for boto3 ComputeOptimizer module](#typed-dictionaries-for-boto3-computeoptimizer-module)
   - [AccountEnrollmentStatusTypeDef](#accountenrollmentstatustypedef)
@@ -81,6 +83,8 @@ type annotations stubs module
   - [VolumeRecommendationOptionTypeDef](#volumerecommendationoptiontypedef)
   - [VolumeRecommendationTypeDef](#volumerecommendationtypedef)
 
+<a id="accountenrollmentstatustypedef"></a>
+
 ## AccountEnrollmentStatusTypeDef
 
 ```python
@@ -94,6 +98,8 @@ Optional fields:
 - `statusReason`: `str`
 - `lastUpdatedTimestamp`: `datetime`
 
+<a id="autoscalinggroupconfigurationtypedef"></a>
+
 ## AutoScalingGroupConfigurationTypeDef
 
 ```python
@@ -106,6 +112,8 @@ Optional fields:
 - `minSize`: `int`
 - `maxSize`: `int`
 - `instanceType`: `str`
+
+<a id="autoscalinggrouprecommendationoptiontypedef"></a>
 
 ## AutoScalingGroupRecommendationOptionTypeDef
 
@@ -124,6 +132,8 @@ Optional fields:
 - `savingsOpportunity`:
   [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 - `migrationEffort`: [MigrationEffortType](./literals.md#migrationefforttype)
+
+<a id="autoscalinggrouprecommendationtypedef"></a>
 
 ## AutoScalingGroupRecommendationTypeDef
 
@@ -152,6 +162,8 @@ Optional fields:
 - `inferredWorkloadTypes`:
   `List`\[[InferredWorkloadTypeType](./literals.md#inferredworkloadtypetype)\]
 
+<a id="currentperformanceriskratingstypedef"></a>
+
 ## CurrentPerformanceRiskRatingsTypeDef
 
 ```python
@@ -164,6 +176,8 @@ Optional fields:
 - `medium`: `int`
 - `low`: `int`
 - `veryLow`: `int`
+
+<a id="deleterecommendationpreferencesrequestrequesttypedef"></a>
 
 ## DeleteRecommendationPreferencesRequestRequestTypeDef
 
@@ -181,6 +195,8 @@ Optional fields:
 
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 
+<a id="describerecommendationexportjobsrequestrequesttypedef"></a>
+
 ## DescribeRecommendationExportJobsRequestRequestTypeDef
 
 ```python
@@ -193,6 +209,8 @@ Optional fields:
 - `filters`: `Sequence`\[[JobFilterTypeDef](./type_defs.md#jobfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describerecommendationexportjobsresponsetypedef"></a>
 
 ## DescribeRecommendationExportJobsResponseTypeDef
 
@@ -208,6 +226,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ebsfiltertypedef"></a>
+
 ## EBSFilterTypeDef
 
 ```python
@@ -220,6 +240,8 @@ Optional fields:
   [EBSFilterNameType](./literals.md#ebsfilternametype))
 - `values`: `Sequence`\[`str`\]
 
+<a id="ebsutilizationmetrictypedef"></a>
+
 ## EBSUtilizationMetricTypeDef
 
 ```python
@@ -231,6 +253,8 @@ Optional fields:
 - `name`: [EBSMetricNameType](./literals.md#ebsmetricnametype)
 - `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
+
+<a id="effectiverecommendationpreferencestypedef"></a>
 
 ## EffectiveRecommendationPreferencesTypeDef
 
@@ -247,6 +271,8 @@ Optional fields:
 - `inferredWorkloadTypes`:
   [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
+<a id="enrollmentfiltertypedef"></a>
+
 ## EnrollmentFilterTypeDef
 
 ```python
@@ -259,6 +285,8 @@ Optional fields:
   [EnrollmentFilterNameType](./literals.md#enrollmentfilternametype))
 - `values`: `Sequence`\[`str`\]
 
+<a id="estimatedmonthlysavingstypedef"></a>
+
 ## EstimatedMonthlySavingsTypeDef
 
 ```python
@@ -269,6 +297,8 @@ Optional fields:
 
 - `currency`: [CurrencyType](./literals.md#currencytype)
 - `value`: `float`
+
+<a id="exportautoscalinggrouprecommendationsrequestrequesttypedef"></a>
 
 ## ExportAutoScalingGroupRecommendationsRequestRequestTypeDef
 
@@ -293,6 +323,8 @@ Optional fields:
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
+<a id="exportautoscalinggrouprecommendationsresponsetypedef"></a>
+
 ## ExportAutoScalingGroupRecommendationsResponseTypeDef
 
 ```python
@@ -306,6 +338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="exportdestinationtypedef"></a>
+
 ## ExportDestinationTypeDef
 
 ```python
@@ -315,6 +349,8 @@ from mypy_boto3_compute_optimizer.type_defs import ExportDestinationTypeDef
 Optional fields:
 
 - `s3`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+
+<a id="exportebsvolumerecommendationsrequestrequesttypedef"></a>
 
 ## ExportEBSVolumeRecommendationsRequestRequestTypeDef
 
@@ -337,6 +373,8 @@ Optional fields:
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
 
+<a id="exportebsvolumerecommendationsresponsetypedef"></a>
+
 ## ExportEBSVolumeRecommendationsResponseTypeDef
 
 ```python
@@ -349,6 +387,8 @@ Required fields:
 - `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="exportec2instancerecommendationsrequestrequesttypedef"></a>
 
 ## ExportEC2InstanceRecommendationsRequestRequestTypeDef
 
@@ -373,6 +413,8 @@ Optional fields:
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
+<a id="exportec2instancerecommendationsresponsetypedef"></a>
+
 ## ExportEC2InstanceRecommendationsResponseTypeDef
 
 ```python
@@ -385,6 +427,8 @@ Required fields:
 - `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="exportlambdafunctionrecommendationsrequestrequesttypedef"></a>
 
 ## ExportLambdaFunctionRecommendationsRequestRequestTypeDef
 
@@ -408,6 +452,8 @@ Optional fields:
   [FileFormatType](./literals.md#fileformattype))
 - `includeMemberAccounts`: `bool`
 
+<a id="exportlambdafunctionrecommendationsresponsetypedef"></a>
+
 ## ExportLambdaFunctionRecommendationsResponseTypeDef
 
 ```python
@@ -421,6 +467,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -431,6 +479,8 @@ Optional fields:
 
 - `name`: [FilterNameType](./literals.md#filternametype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="getautoscalinggrouprecommendationsrequestrequesttypedef"></a>
 
 ## GetAutoScalingGroupRecommendationsRequestRequestTypeDef
 
@@ -448,6 +498,8 @@ Optional fields:
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
+<a id="getautoscalinggrouprecommendationsresponsetypedef"></a>
+
 ## GetAutoScalingGroupRecommendationsResponseTypeDef
 
 ```python
@@ -464,6 +516,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getebsvolumerecommendationsrequestrequesttypedef"></a>
+
 ## GetEBSVolumeRecommendationsRequestRequestTypeDef
 
 ```python
@@ -477,6 +531,8 @@ Optional fields:
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[EBSFilterTypeDef](./type_defs.md#ebsfiltertypedef)\]
 - `accountIds`: `Sequence`\[`str`\]
+
+<a id="getebsvolumerecommendationsresponsetypedef"></a>
 
 ## GetEBSVolumeRecommendationsResponseTypeDef
 
@@ -494,6 +550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getec2instancerecommendationsrequestrequesttypedef"></a>
+
 ## GetEC2InstanceRecommendationsRequestRequestTypeDef
 
 ```python
@@ -510,6 +568,8 @@ Optional fields:
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
+<a id="getec2instancerecommendationsresponsetypedef"></a>
+
 ## GetEC2InstanceRecommendationsResponseTypeDef
 
 ```python
@@ -525,6 +585,8 @@ Required fields:
   `List`\[[GetRecommendationErrorTypeDef](./type_defs.md#getrecommendationerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getec2recommendationprojectedmetricsrequestrequesttypedef"></a>
 
 ## GetEC2RecommendationProjectedMetricsRequestRequestTypeDef
 
@@ -545,6 +607,8 @@ Optional fields:
 - `recommendationPreferences`:
   [RecommendationPreferencesTypeDef](./type_defs.md#recommendationpreferencestypedef)
 
+<a id="getec2recommendationprojectedmetricsresponsetypedef"></a>
+
 ## GetEC2RecommendationProjectedMetricsResponseTypeDef
 
 ```python
@@ -558,6 +622,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteffectiverecommendationpreferencesrequestrequesttypedef"></a>
+
 ## GetEffectiveRecommendationPreferencesRequestRequestTypeDef
 
 ```python
@@ -567,6 +633,8 @@ from mypy_boto3_compute_optimizer.type_defs import GetEffectiveRecommendationPre
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="geteffectiverecommendationpreferencesresponsetypedef"></a>
 
 ## GetEffectiveRecommendationPreferencesResponseTypeDef
 
@@ -580,6 +648,8 @@ Required fields:
   [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getenrollmentstatusresponsetypedef"></a>
 
 ## GetEnrollmentStatusResponseTypeDef
 
@@ -597,6 +667,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getenrollmentstatusesfororganizationrequestrequesttypedef"></a>
+
 ## GetEnrollmentStatusesForOrganizationRequestRequestTypeDef
 
 ```python
@@ -609,6 +681,8 @@ Optional fields:
   `Sequence`\[[EnrollmentFilterTypeDef](./type_defs.md#enrollmentfiltertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getenrollmentstatusesfororganizationresponsetypedef"></a>
 
 ## GetEnrollmentStatusesForOrganizationResponseTypeDef
 
@@ -623,6 +697,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlambdafunctionrecommendationsrequestrequesttypedef"></a>
 
 ## GetLambdaFunctionRecommendationsRequestRequestTypeDef
 
@@ -639,6 +715,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getlambdafunctionrecommendationsresponsetypedef"></a>
+
 ## GetLambdaFunctionRecommendationsResponseTypeDef
 
 ```python
@@ -653,6 +731,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecommendationerrortypedef"></a>
+
 ## GetRecommendationErrorTypeDef
 
 ```python
@@ -664,6 +744,8 @@ Optional fields:
 - `identifier`: `str`
 - `code`: `str`
 - `message`: `str`
+
+<a id="getrecommendationpreferencesrequestrequesttypedef"></a>
 
 ## GetRecommendationPreferencesRequestRequestTypeDef
 
@@ -681,6 +763,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getrecommendationpreferencesresponsetypedef"></a>
+
 ## GetRecommendationPreferencesResponseTypeDef
 
 ```python
@@ -695,6 +779,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecommendationsummariesrequestrequesttypedef"></a>
+
 ## GetRecommendationSummariesRequestRequestTypeDef
 
 ```python
@@ -706,6 +792,8 @@ Optional fields:
 - `accountIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getrecommendationsummariesresponsetypedef"></a>
 
 ## GetRecommendationSummariesResponseTypeDef
 
@@ -720,6 +808,8 @@ Required fields:
   `List`\[[RecommendationSummaryTypeDef](./type_defs.md#recommendationsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="instancerecommendationoptiontypedef"></a>
 
 ## InstanceRecommendationOptionTypeDef
 
@@ -739,6 +829,8 @@ Optional fields:
 - `savingsOpportunity`:
   [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 - `migrationEffort`: [MigrationEffortType](./literals.md#migrationefforttype)
+
+<a id="instancerecommendationtypedef"></a>
 
 ## InstanceRecommendationTypeDef
 
@@ -770,6 +862,8 @@ Optional fields:
 - `inferredWorkloadTypes`:
   `List`\[[InferredWorkloadTypeType](./literals.md#inferredworkloadtypetype)\]
 
+<a id="jobfiltertypedef"></a>
+
 ## JobFilterTypeDef
 
 ```python
@@ -780,6 +874,8 @@ Optional fields:
 
 - `name`: [JobFilterNameType](./literals.md#jobfilternametype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="lambdafunctionmemoryprojectedmetrictypedef"></a>
 
 ## LambdaFunctionMemoryProjectedMetricTypeDef
 
@@ -794,6 +890,8 @@ Optional fields:
 - `statistic`:
   [LambdaFunctionMemoryMetricStatisticType](./literals.md#lambdafunctionmemorymetricstatistictype)
 - `value`: `float`
+
+<a id="lambdafunctionmemoryrecommendationoptiontypedef"></a>
 
 ## LambdaFunctionMemoryRecommendationOptionTypeDef
 
@@ -810,6 +908,8 @@ Optional fields:
 - `savingsOpportunity`:
   [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
 
+<a id="lambdafunctionrecommendationfiltertypedef"></a>
+
 ## LambdaFunctionRecommendationFilterTypeDef
 
 ```python
@@ -821,6 +921,8 @@ Optional fields:
 - `name`:
   [LambdaFunctionRecommendationFilterNameType](./literals.md#lambdafunctionrecommendationfilternametype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="lambdafunctionrecommendationtypedef"></a>
 
 ## LambdaFunctionRecommendationTypeDef
 
@@ -848,6 +950,8 @@ Optional fields:
 - `currentPerformanceRisk`:
   [CurrentPerformanceRiskType](./literals.md#currentperformancerisktype)
 
+<a id="lambdafunctionutilizationmetrictypedef"></a>
+
 ## LambdaFunctionUtilizationMetricTypeDef
 
 ```python
@@ -862,6 +966,8 @@ Optional fields:
   [LambdaFunctionMetricStatisticType](./literals.md#lambdafunctionmetricstatistictype)
 - `value`: `float`
 
+<a id="projectedmetrictypedef"></a>
+
 ## ProjectedMetricTypeDef
 
 ```python
@@ -873,6 +979,8 @@ Optional fields:
 - `name`: [MetricNameType](./literals.md#metricnametype)
 - `timestamps`: `List`\[`datetime`\]
 - `values`: `List`\[`float`\]
+
+<a id="putrecommendationpreferencesrequestrequesttypedef"></a>
 
 ## PutRecommendationPreferencesRequestRequestTypeDef
 
@@ -892,6 +1000,8 @@ Optional fields:
 - `inferredWorkloadTypes`:
   [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
+<a id="reasoncodesummarytypedef"></a>
+
 ## ReasonCodeSummaryTypeDef
 
 ```python
@@ -902,6 +1012,8 @@ Optional fields:
 
 - `name`: [FindingReasonCodeType](./literals.md#findingreasoncodetype)
 - `value`: `float`
+
+<a id="recommendationexportjobtypedef"></a>
 
 ## RecommendationExportJobTypeDef
 
@@ -920,6 +1032,8 @@ Optional fields:
 - `lastUpdatedTimestamp`: `datetime`
 - `failureReason`: `str`
 
+<a id="recommendationpreferencesdetailtypedef"></a>
+
 ## RecommendationPreferencesDetailTypeDef
 
 ```python
@@ -935,6 +1049,8 @@ Optional fields:
 - `inferredWorkloadTypes`:
   [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
+<a id="recommendationpreferencestypedef"></a>
+
 ## RecommendationPreferencesTypeDef
 
 ```python
@@ -945,6 +1061,8 @@ Optional fields:
 
 - `cpuVendorArchitectures`:
   `Sequence`\[[CpuVendorArchitectureType](./literals.md#cpuvendorarchitecturetype)\]
+
+<a id="recommendationsourcetypedef"></a>
 
 ## RecommendationSourceTypeDef
 
@@ -957,6 +1075,8 @@ Optional fields:
 - `recommendationSourceArn`: `str`
 - `recommendationSourceType`:
   [RecommendationSourceTypeType](./literals.md#recommendationsourcetypetype)
+
+<a id="recommendationsummarytypedef"></a>
 
 ## RecommendationSummaryTypeDef
 
@@ -975,6 +1095,8 @@ Optional fields:
 - `currentPerformanceRiskRatings`:
   [CurrentPerformanceRiskRatingsTypeDef](./type_defs.md#currentperformanceriskratingstypedef)
 
+<a id="recommendedoptionprojectedmetrictypedef"></a>
+
 ## RecommendedOptionProjectedMetricTypeDef
 
 ```python
@@ -987,6 +1109,8 @@ Optional fields:
 - `rank`: `int`
 - `projectedMetrics`:
   `List`\[[ProjectedMetricTypeDef](./type_defs.md#projectedmetrictypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1002,6 +1126,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3destinationconfigtypedef"></a>
+
 ## S3DestinationConfigTypeDef
 
 ```python
@@ -1012,6 +1138,8 @@ Optional fields:
 
 - `bucket`: `str`
 - `keyPrefix`: `str`
+
+<a id="s3destinationtypedef"></a>
 
 ## S3DestinationTypeDef
 
@@ -1025,6 +1153,8 @@ Optional fields:
 - `key`: `str`
 - `metadataKey`: `str`
 
+<a id="savingsopportunitytypedef"></a>
+
 ## SavingsOpportunityTypeDef
 
 ```python
@@ -1037,6 +1167,8 @@ Optional fields:
 - `estimatedMonthlySavings`:
   [EstimatedMonthlySavingsTypeDef](./type_defs.md#estimatedmonthlysavingstypedef)
 
+<a id="scopetypedef"></a>
+
 ## ScopeTypeDef
 
 ```python
@@ -1047,6 +1179,8 @@ Optional fields:
 
 - `name`: [ScopeNameType](./literals.md#scopenametype)
 - `value`: `str`
+
+<a id="summarytypedef"></a>
 
 ## SummaryTypeDef
 
@@ -1060,6 +1194,8 @@ Optional fields:
 - `value`: `float`
 - `reasonCodeSummaries`:
   `List`\[[ReasonCodeSummaryTypeDef](./type_defs.md#reasoncodesummarytypedef)\]
+
+<a id="updateenrollmentstatusrequestrequesttypedef"></a>
 
 ## UpdateEnrollmentStatusRequestRequestTypeDef
 
@@ -1075,6 +1211,8 @@ Optional fields:
 
 - `includeMemberAccounts`: `bool`
 
+<a id="updateenrollmentstatusresponsetypedef"></a>
+
 ## UpdateEnrollmentStatusResponseTypeDef
 
 ```python
@@ -1088,6 +1226,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="utilizationmetrictypedef"></a>
+
 ## UtilizationMetricTypeDef
 
 ```python
@@ -1099,6 +1239,8 @@ Optional fields:
 - `name`: [MetricNameType](./literals.md#metricnametype)
 - `statistic`: [MetricStatisticType](./literals.md#metricstatistictype)
 - `value`: `float`
+
+<a id="volumeconfigurationtypedef"></a>
 
 ## VolumeConfigurationTypeDef
 
@@ -1115,6 +1257,8 @@ Optional fields:
 - `volumeBaselineThroughput`: `int`
 - `volumeBurstThroughput`: `int`
 
+<a id="volumerecommendationoptiontypedef"></a>
+
 ## VolumeRecommendationOptionTypeDef
 
 ```python
@@ -1129,6 +1273,8 @@ Optional fields:
 - `rank`: `int`
 - `savingsOpportunity`:
   [SavingsOpportunityTypeDef](./type_defs.md#savingsopportunitytypedef)
+
+<a id="volumerecommendationtypedef"></a>
 
 ## VolumeRecommendationTypeDef
 

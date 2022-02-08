@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codestar-module"></a>
+
 # Type annotations for boto3 CodeStar module
 
 > [Index](..) > CodeStar
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
 type annotations stubs module
-[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codestar]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codestar]'
+
+# standalone installation
 pip install mypy-boto3-codestar
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-codestar
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codestarclient"></a>
+
 ## CodeStarClient
 
 Type annotations for `boto3.client("codestar")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codestar.client import CodeStarClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -55,6 +69,8 @@ from mypy_boto3_codestar.client import CodeStarClient
 - [update_team_member](./client.md#update_team_member)
 - [update_user_profile](./client.md#update_user_profile)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodeStarClient [exceptions](./client.md#exceptions)
@@ -74,6 +90,8 @@ CodeStarClient [exceptions](./client.md#exceptions)
 - UserProfileNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -82,13 +100,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codestar.paginators import ListProjectsPaginator, ...
+from mypy_boto3_codestar.paginator import ListProjectsPaginator, ...
 ```
 
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
 - [ListTeamMembersPaginator](./paginators.md#listteammemberspaginator)
 - [ListUserProfilesPaginator](./paginators.md#listuserprofilespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -106,6 +126,8 @@ from mypy_boto3_codestar.literals import ListProjectsPaginatorName, ...
 - [ListUserProfilesPaginatorName](./literals.md#listuserprofilespaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

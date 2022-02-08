@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-directoryservice-module"></a>
+
 # Type annotations for boto3 DirectoryService module
 
 > [Index](..) > DirectoryService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DirectoryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ds.html#DirectoryService)
 type annotations stubs module
-[mypy_boto3_ds](https://pypi.org/project/mypy-boto3-ds/).
+[mypy-boto3-ds](https://pypi.org/project/mypy-boto3-ds/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ds]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ds]'
+
+# standalone installation
 pip install mypy-boto3-ds
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-ds
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="directoryserviceclient"></a>
+
 ## DirectoryServiceClient
 
 Type annotations for `boto3.client("ds")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ds.client import DirectoryServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -100,6 +114,8 @@ from mypy_boto3_ds.client import DirectoryServiceClient
 - [update_trust](./client.md#update_trust)
 - [verify_trust](./client.md#verify_trust)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DirectoryServiceClient [exceptions](./client.md#exceptions)
@@ -140,6 +156,8 @@ DirectoryServiceClient [exceptions](./client.md#exceptions)
 - UnsupportedOperationException
 - UserDoesNotExistException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -148,7 +166,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ds.paginators import DescribeDirectoriesPaginator, ...
+from mypy_boto3_ds.paginator import DescribeDirectoriesPaginator, ...
 ```
 
 - [DescribeDirectoriesPaginator](./paginators.md#describedirectoriespaginator)
@@ -160,6 +178,8 @@ from mypy_boto3_ds.paginators import DescribeDirectoriesPaginator, ...
 - [ListLogSubscriptionsPaginator](./paginators.md#listlogsubscriptionspaginator)
 - [ListSchemaExtensionsPaginator](./paginators.md#listschemaextensionspaginator)
 - [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -209,6 +229,8 @@ from mypy_boto3_ds.literals import CertificateStateType, ...
 - [TrustTypeType](./literals.md#trusttypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

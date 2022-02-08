@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-migrationhubconfig-module"></a>
+
 # Type annotations for boto3 MigrationHubConfig module
 
 > [Index](..) > MigrationHubConfig
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module
-[mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
+[mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[migrationhub-config]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[migrationhub-config]'
+
+# standalone installation
 pip install mypy-boto3-migrationhub-config
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-migrationhub-config
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="migrationhubconfigclient"></a>
 
 ## MigrationHubConfigClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -37,6 +51,8 @@ from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_home_region](./client.md#get_home_region)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -50,6 +66,8 @@ MigrationHubConfigClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - ThrottlingException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -62,6 +80,8 @@ from mypy_boto3_migrationhub_config.literals import TargetTypeType, ...
 
 - [TargetTypeType](./literals.md#targettypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

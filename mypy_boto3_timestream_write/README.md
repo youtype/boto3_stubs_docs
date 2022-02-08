@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-timestreamwrite-module"></a>
+
 # Type annotations for boto3 TimestreamWrite module
 
 > [Index](..) > TimestreamWrite
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
-[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+[mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[timestream-write]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[timestream-write]'
+
+# standalone installation
 pip install mypy-boto3-timestream-write
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-timestream-write
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="timestreamwriteclient"></a>
 
 ## TimestreamWriteClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_timestream_write.client import TimestreamWriteClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_timestream_write.client import TimestreamWriteClient
 - [update_table](./client.md#update_table)
 - [write_records](./client.md#write_records)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 TimestreamWriteClient [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ TimestreamWriteClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -81,6 +99,8 @@ from mypy_boto3_timestream_write.literals import DimensionValueTypeType, ...
 - [TableStatusType](./literals.md#tablestatustype)
 - [TimeUnitType](./literals.md#timeunittype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

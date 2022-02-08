@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sesv2-module"></a>
+
 # Typed dictionaries for boto3 SESV2 module
 
 > [Index](..) > [SESV2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
 type annotations stubs module
-[mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+[mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 - [Typed dictionaries for boto3 SESV2 module](#typed-dictionaries-for-boto3-sesv2-module)
   - [AccountDetailsTypeDef](#accountdetailstypedef)
@@ -192,6 +194,8 @@ type annotations stubs module
   - [UpdateEmailTemplateRequestRequestTypeDef](#updateemailtemplaterequestrequesttypedef)
   - [VolumeStatisticsTypeDef](#volumestatisticstypedef)
 
+<a id="accountdetailstypedef"></a>
+
 ## AccountDetailsTypeDef
 
 ```python
@@ -207,6 +211,8 @@ Optional fields:
 - `AdditionalContactEmailAddresses`: `List`\[`str`\]
 - `ReviewDetails`: [ReviewDetailsTypeDef](./type_defs.md#reviewdetailstypedef)
 
+<a id="blacklistentrytypedef"></a>
+
 ## BlacklistEntryTypeDef
 
 ```python
@@ -219,6 +225,8 @@ Optional fields:
 - `ListingTime`: `datetime`
 - `Description`: `str`
 
+<a id="bodytypedef"></a>
+
 ## BodyTypeDef
 
 ```python
@@ -230,6 +238,8 @@ Optional fields:
 - `Text`: [ContentTypeDef](./type_defs.md#contenttypedef)
 - `Html`: [ContentTypeDef](./type_defs.md#contenttypedef)
 
+<a id="bulkemailcontenttypedef"></a>
+
 ## BulkEmailContentTypeDef
 
 ```python
@@ -239,6 +249,8 @@ from mypy_boto3_sesv2.type_defs import BulkEmailContentTypeDef
 Optional fields:
 
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
+
+<a id="bulkemailentryresulttypedef"></a>
 
 ## BulkEmailEntryResultTypeDef
 
@@ -251,6 +263,8 @@ Optional fields:
 - `Status`: [BulkEmailStatusType](./literals.md#bulkemailstatustype)
 - `Error`: `str`
 - `MessageId`: `str`
+
+<a id="bulkemailentrytypedef"></a>
 
 ## BulkEmailEntryTypeDef
 
@@ -269,6 +283,8 @@ Optional fields:
 - `ReplacementEmailContent`:
   [ReplacementEmailContentTypeDef](./type_defs.md#replacementemailcontenttypedef)
 
+<a id="cloudwatchdestinationtypedef"></a>
+
 ## CloudWatchDestinationTypeDef
 
 ```python
@@ -279,6 +295,8 @@ Required fields:
 
 - `DimensionConfigurations`:
   `Sequence`\[[CloudWatchDimensionConfigurationTypeDef](./type_defs.md#cloudwatchdimensionconfigurationtypedef)\]
+
+<a id="cloudwatchdimensionconfigurationtypedef"></a>
 
 ## CloudWatchDimensionConfigurationTypeDef
 
@@ -293,6 +311,8 @@ Required fields:
   [DimensionValueSourceType](./literals.md#dimensionvaluesourcetype)
 - `DefaultDimensionValue`: `str`
 
+<a id="contactlistdestinationtypedef"></a>
+
 ## ContactListDestinationTypeDef
 
 ```python
@@ -305,6 +325,8 @@ Required fields:
 - `ContactListImportAction`:
   [ContactListImportActionType](./literals.md#contactlistimportactiontype)
 
+<a id="contactlisttypedef"></a>
+
 ## ContactListTypeDef
 
 ```python
@@ -315,6 +337,8 @@ Optional fields:
 
 - `ContactListName`: `str`
 - `LastUpdatedTimestamp`: `datetime`
+
+<a id="contacttypedef"></a>
 
 ## ContactTypeDef
 
@@ -332,6 +356,8 @@ Optional fields:
 - `UnsubscribeAll`: `bool`
 - `LastUpdatedTimestamp`: `datetime`
 
+<a id="contenttypedef"></a>
+
 ## ContentTypeDef
 
 ```python
@@ -346,6 +372,8 @@ Optional fields:
 
 - `Charset`: `str`
 
+<a id="createconfigurationseteventdestinationrequestrequesttypedef"></a>
+
 ## CreateConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
@@ -358,6 +386,8 @@ Required fields:
 - `EventDestinationName`: `str`
 - `EventDestination`:
   [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
+
+<a id="createconfigurationsetrequestrequesttypedef"></a>
 
 ## CreateConfigurationSetRequestRequestTypeDef
 
@@ -383,6 +413,8 @@ Optional fields:
 - `SuppressionOptions`:
   [SuppressionOptionsTypeDef](./type_defs.md#suppressionoptionstypedef)
 
+<a id="createcontactlistrequestrequesttypedef"></a>
+
 ## CreateContactListRequestRequestTypeDef
 
 ```python
@@ -398,6 +430,8 @@ Optional fields:
 - `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createcontactrequestrequesttypedef"></a>
 
 ## CreateContactRequestRequestTypeDef
 
@@ -417,6 +451,8 @@ Optional fields:
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
+<a id="createcustomverificationemailtemplaterequestrequesttypedef"></a>
+
 ## CreateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -432,6 +468,8 @@ Required fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="creatededicatedippoolrequestrequesttypedef"></a>
+
 ## CreateDedicatedIpPoolRequestRequestTypeDef
 
 ```python
@@ -445,6 +483,8 @@ Required fields:
 Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createdeliverabilitytestreportrequestrequesttypedef"></a>
 
 ## CreateDeliverabilityTestReportRequestRequestTypeDef
 
@@ -462,6 +502,8 @@ Optional fields:
 - `ReportName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdeliverabilitytestreportresponsetypedef"></a>
+
 ## CreateDeliverabilityTestReportResponseTypeDef
 
 ```python
@@ -476,6 +518,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createemailidentitypolicyrequestrequesttypedef"></a>
+
 ## CreateEmailIdentityPolicyRequestRequestTypeDef
 
 ```python
@@ -487,6 +531,8 @@ Required fields:
 - `EmailIdentity`: `str`
 - `PolicyName`: `str`
 - `Policy`: `str`
+
+<a id="createemailidentityrequestrequesttypedef"></a>
 
 ## CreateEmailIdentityRequestRequestTypeDef
 
@@ -505,6 +551,8 @@ Optional fields:
   [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
 - `ConfigurationSetName`: `str`
 
+<a id="createemailidentityresponsetypedef"></a>
+
 ## CreateEmailIdentityResponseTypeDef
 
 ```python
@@ -520,6 +568,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createemailtemplaterequestrequesttypedef"></a>
+
 ## CreateEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -531,6 +581,8 @@ Required fields:
 - `TemplateName`: `str`
 - `TemplateContent`:
   [EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef)
+
+<a id="createimportjobrequestrequesttypedef"></a>
 
 ## CreateImportJobRequestRequestTypeDef
 
@@ -545,6 +597,8 @@ Required fields:
 - `ImportDataSource`:
   [ImportDataSourceTypeDef](./type_defs.md#importdatasourcetypedef)
 
+<a id="createimportjobresponsetypedef"></a>
+
 ## CreateImportJobResponseTypeDef
 
 ```python
@@ -556,6 +610,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customverificationemailtemplatemetadatatypedef"></a>
 
 ## CustomVerificationEmailTemplateMetadataTypeDef
 
@@ -571,6 +627,8 @@ Optional fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="dailyvolumetypedef"></a>
+
 ## DailyVolumeTypeDef
 
 ```python
@@ -584,6 +642,8 @@ Optional fields:
   [VolumeStatisticsTypeDef](./type_defs.md#volumestatisticstypedef)
 - `DomainIspPlacements`:
   `List`\[[DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef)\]
+
+<a id="dedicatediptypedef"></a>
 
 ## DedicatedIpTypeDef
 
@@ -601,6 +661,8 @@ Optional fields:
 
 - `PoolName`: `str`
 
+<a id="deleteconfigurationseteventdestinationrequestrequesttypedef"></a>
+
 ## DeleteConfigurationSetEventDestinationRequestRequestTypeDef
 
 ```python
@@ -612,6 +674,8 @@ Required fields:
 - `ConfigurationSetName`: `str`
 - `EventDestinationName`: `str`
 
+<a id="deleteconfigurationsetrequestrequesttypedef"></a>
+
 ## DeleteConfigurationSetRequestRequestTypeDef
 
 ```python
@@ -622,6 +686,8 @@ Required fields:
 
 - `ConfigurationSetName`: `str`
 
+<a id="deletecontactlistrequestrequesttypedef"></a>
+
 ## DeleteContactListRequestRequestTypeDef
 
 ```python
@@ -631,6 +697,8 @@ from mypy_boto3_sesv2.type_defs import DeleteContactListRequestRequestTypeDef
 Required fields:
 
 - `ContactListName`: `str`
+
+<a id="deletecontactrequestrequesttypedef"></a>
 
 ## DeleteContactRequestRequestTypeDef
 
@@ -643,6 +711,8 @@ Required fields:
 - `ContactListName`: `str`
 - `EmailAddress`: `str`
 
+<a id="deletecustomverificationemailtemplaterequestrequesttypedef"></a>
+
 ## DeleteCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -653,6 +723,8 @@ Required fields:
 
 - `TemplateName`: `str`
 
+<a id="deletededicatedippoolrequestrequesttypedef"></a>
+
 ## DeleteDedicatedIpPoolRequestRequestTypeDef
 
 ```python
@@ -662,6 +734,8 @@ from mypy_boto3_sesv2.type_defs import DeleteDedicatedIpPoolRequestRequestTypeDe
 Required fields:
 
 - `PoolName`: `str`
+
+<a id="deleteemailidentitypolicyrequestrequesttypedef"></a>
 
 ## DeleteEmailIdentityPolicyRequestRequestTypeDef
 
@@ -674,6 +748,8 @@ Required fields:
 - `EmailIdentity`: `str`
 - `PolicyName`: `str`
 
+<a id="deleteemailidentityrequestrequesttypedef"></a>
+
 ## DeleteEmailIdentityRequestRequestTypeDef
 
 ```python
@@ -683,6 +759,8 @@ from mypy_boto3_sesv2.type_defs import DeleteEmailIdentityRequestRequestTypeDef
 Required fields:
 
 - `EmailIdentity`: `str`
+
+<a id="deleteemailtemplaterequestrequesttypedef"></a>
 
 ## DeleteEmailTemplateRequestRequestTypeDef
 
@@ -694,6 +772,8 @@ Required fields:
 
 - `TemplateName`: `str`
 
+<a id="deletesuppresseddestinationrequestrequesttypedef"></a>
+
 ## DeleteSuppressedDestinationRequestRequestTypeDef
 
 ```python
@@ -703,6 +783,8 @@ from mypy_boto3_sesv2.type_defs import DeleteSuppressedDestinationRequestRequest
 Required fields:
 
 - `EmailAddress`: `str`
+
+<a id="deliverabilitytestreporttypedef"></a>
 
 ## DeliverabilityTestReportTypeDef
 
@@ -720,6 +802,8 @@ Optional fields:
 - `DeliverabilityTestStatus`:
   [DeliverabilityTestStatusType](./literals.md#deliverabilityteststatustype)
 
+<a id="deliveryoptionstypedef"></a>
+
 ## DeliveryOptionsTypeDef
 
 ```python
@@ -730,6 +814,8 @@ Optional fields:
 
 - `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 - `SendingPoolName`: `str`
+
+<a id="destinationtypedef"></a>
 
 ## DestinationTypeDef
 
@@ -742,6 +828,8 @@ Optional fields:
 - `ToAddresses`: `Sequence`\[`str`\]
 - `CcAddresses`: `Sequence`\[`str`\]
 - `BccAddresses`: `Sequence`\[`str`\]
+
+<a id="dkimattributestypedef"></a>
 
 ## DkimAttributesTypeDef
 
@@ -762,6 +850,8 @@ Optional fields:
   [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
 - `LastKeyGenerationTimestamp`: `datetime`
 
+<a id="dkimsigningattributestypedef"></a>
+
 ## DkimSigningAttributesTypeDef
 
 ```python
@@ -774,6 +864,8 @@ Optional fields:
 - `DomainSigningPrivateKey`: `str`
 - `NextSigningKeyLength`:
   [DkimSigningKeyLengthType](./literals.md#dkimsigningkeylengthtype)
+
+<a id="domaindeliverabilitycampaigntypedef"></a>
 
 ## DomainDeliverabilityCampaignTypeDef
 
@@ -798,6 +890,8 @@ Optional fields:
 - `ProjectedVolume`: `int`
 - `Esps`: `List`\[`str`\]
 
+<a id="domaindeliverabilitytrackingoptiontypedef"></a>
+
 ## DomainDeliverabilityTrackingOptionTypeDef
 
 ```python
@@ -810,6 +904,8 @@ Optional fields:
 - `SubscriptionStartDate`: `datetime`
 - `InboxPlacementTrackingOption`:
   [InboxPlacementTrackingOptionTypeDef](./type_defs.md#inboxplacementtrackingoptiontypedef)
+
+<a id="domainispplacementtypedef"></a>
 
 ## DomainIspPlacementTypeDef
 
@@ -825,6 +921,8 @@ Optional fields:
 - `InboxPercentage`: `float`
 - `SpamPercentage`: `float`
 
+<a id="emailcontenttypedef"></a>
+
 ## EmailContentTypeDef
 
 ```python
@@ -836,6 +934,8 @@ Optional fields:
 - `Simple`: [MessageTypeDef](./type_defs.md#messagetypedef)
 - `Raw`: [RawMessageTypeDef](./type_defs.md#rawmessagetypedef)
 - `Template`: [TemplateTypeDef](./type_defs.md#templatetypedef)
+
+<a id="emailtemplatecontenttypedef"></a>
 
 ## EmailTemplateContentTypeDef
 
@@ -849,6 +949,8 @@ Optional fields:
 - `Text`: `str`
 - `Html`: `str`
 
+<a id="emailtemplatemetadatatypedef"></a>
+
 ## EmailTemplateMetadataTypeDef
 
 ```python
@@ -859,6 +961,8 @@ Optional fields:
 
 - `TemplateName`: `str`
 - `CreatedTimestamp`: `datetime`
+
+<a id="eventdestinationdefinitiontypedef"></a>
 
 ## EventDestinationDefinitionTypeDef
 
@@ -879,6 +983,8 @@ Optional fields:
   [SnsDestinationTypeDef](./type_defs.md#snsdestinationtypedef)
 - `PinpointDestination`:
   [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
+
+<a id="eventdestinationtypedef"></a>
 
 ## EventDestinationTypeDef
 
@@ -903,6 +1009,8 @@ Optional fields:
 - `PinpointDestination`:
   [PinpointDestinationTypeDef](./type_defs.md#pinpointdestinationtypedef)
 
+<a id="failureinfotypedef"></a>
+
 ## FailureInfoTypeDef
 
 ```python
@@ -913,6 +1021,8 @@ Optional fields:
 
 - `FailedRecordsS3Url`: `str`
 - `ErrorMessage`: `str`
+
+<a id="getaccountresponsetypedef"></a>
 
 ## GetAccountResponseTypeDef
 
@@ -933,6 +1043,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getblacklistreportsrequestrequesttypedef"></a>
+
 ## GetBlacklistReportsRequestRequestTypeDef
 
 ```python
@@ -942,6 +1054,8 @@ from mypy_boto3_sesv2.type_defs import GetBlacklistReportsRequestRequestTypeDef
 Required fields:
 
 - `BlacklistItemNames`: `Sequence`\[`str`\]
+
+<a id="getblacklistreportsresponsetypedef"></a>
 
 ## GetBlacklistReportsResponseTypeDef
 
@@ -956,6 +1070,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconfigurationseteventdestinationsrequestrequesttypedef"></a>
+
 ## GetConfigurationSetEventDestinationsRequestRequestTypeDef
 
 ```python
@@ -965,6 +1081,8 @@ from mypy_boto3_sesv2.type_defs import GetConfigurationSetEventDestinationsReque
 Required fields:
 
 - `ConfigurationSetName`: `str`
+
+<a id="getconfigurationseteventdestinationsresponsetypedef"></a>
 
 ## GetConfigurationSetEventDestinationsResponseTypeDef
 
@@ -979,6 +1097,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconfigurationsetrequestrequesttypedef"></a>
+
 ## GetConfigurationSetRequestRequestTypeDef
 
 ```python
@@ -988,6 +1108,8 @@ from mypy_boto3_sesv2.type_defs import GetConfigurationSetRequestRequestTypeDef
 Required fields:
 
 - `ConfigurationSetName`: `str`
+
+<a id="getconfigurationsetresponsetypedef"></a>
 
 ## GetConfigurationSetResponseTypeDef
 
@@ -1012,6 +1134,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontactlistrequestrequesttypedef"></a>
+
 ## GetContactListRequestRequestTypeDef
 
 ```python
@@ -1021,6 +1145,8 @@ from mypy_boto3_sesv2.type_defs import GetContactListRequestRequestTypeDef
 Required fields:
 
 - `ContactListName`: `str`
+
+<a id="getcontactlistresponsetypedef"></a>
 
 ## GetContactListResponseTypeDef
 
@@ -1039,6 +1165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontactrequestrequesttypedef"></a>
+
 ## GetContactRequestRequestTypeDef
 
 ```python
@@ -1049,6 +1177,8 @@ Required fields:
 
 - `ContactListName`: `str`
 - `EmailAddress`: `str`
+
+<a id="getcontactresponsetypedef"></a>
 
 ## GetContactResponseTypeDef
 
@@ -1071,6 +1201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcustomverificationemailtemplaterequestrequesttypedef"></a>
+
 ## GetCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -1080,6 +1212,8 @@ from mypy_boto3_sesv2.type_defs import GetCustomVerificationEmailTemplateRequest
 Required fields:
 
 - `TemplateName`: `str`
+
+<a id="getcustomverificationemailtemplateresponsetypedef"></a>
 
 ## GetCustomVerificationEmailTemplateResponseTypeDef
 
@@ -1098,6 +1232,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdedicatediprequestrequesttypedef"></a>
+
 ## GetDedicatedIpRequestRequestTypeDef
 
 ```python
@@ -1107,6 +1243,8 @@ from mypy_boto3_sesv2.type_defs import GetDedicatedIpRequestRequestTypeDef
 Required fields:
 
 - `Ip`: `str`
+
+<a id="getdedicatedipresponsetypedef"></a>
 
 ## GetDedicatedIpResponseTypeDef
 
@@ -1120,6 +1258,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdedicatedipsrequestrequesttypedef"></a>
+
 ## GetDedicatedIpsRequestRequestTypeDef
 
 ```python
@@ -1131,6 +1271,8 @@ Optional fields:
 - `PoolName`: `str`
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="getdedicatedipsresponsetypedef"></a>
 
 ## GetDedicatedIpsResponseTypeDef
 
@@ -1145,6 +1287,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdeliverabilitydashboardoptionsresponsetypedef"></a>
 
 ## GetDeliverabilityDashboardOptionsResponseTypeDef
 
@@ -1165,6 +1309,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeliverabilitytestreportrequestrequesttypedef"></a>
+
 ## GetDeliverabilityTestReportRequestRequestTypeDef
 
 ```python
@@ -1174,6 +1320,8 @@ from mypy_boto3_sesv2.type_defs import GetDeliverabilityTestReportRequestRequest
 Required fields:
 
 - `ReportId`: `str`
+
+<a id="getdeliverabilitytestreportresponsetypedef"></a>
 
 ## GetDeliverabilityTestReportResponseTypeDef
 
@@ -1194,6 +1342,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdomaindeliverabilitycampaignrequestrequesttypedef"></a>
+
 ## GetDomainDeliverabilityCampaignRequestRequestTypeDef
 
 ```python
@@ -1203,6 +1353,8 @@ from mypy_boto3_sesv2.type_defs import GetDomainDeliverabilityCampaignRequestReq
 Required fields:
 
 - `CampaignId`: `str`
+
+<a id="getdomaindeliverabilitycampaignresponsetypedef"></a>
 
 ## GetDomainDeliverabilityCampaignResponseTypeDef
 
@@ -1217,6 +1369,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdomainstatisticsreportrequestrequesttypedef"></a>
+
 ## GetDomainStatisticsReportRequestRequestTypeDef
 
 ```python
@@ -1228,6 +1382,8 @@ Required fields:
 - `Domain`: `str`
 - `StartDate`: `Union`\[`datetime`, `str`\]
 - `EndDate`: `Union`\[`datetime`, `str`\]
+
+<a id="getdomainstatisticsreportresponsetypedef"></a>
 
 ## GetDomainStatisticsReportResponseTypeDef
 
@@ -1243,6 +1399,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getemailidentitypoliciesrequestrequesttypedef"></a>
+
 ## GetEmailIdentityPoliciesRequestRequestTypeDef
 
 ```python
@@ -1252,6 +1410,8 @@ from mypy_boto3_sesv2.type_defs import GetEmailIdentityPoliciesRequestRequestTyp
 Required fields:
 
 - `EmailIdentity`: `str`
+
+<a id="getemailidentitypoliciesresponsetypedef"></a>
 
 ## GetEmailIdentityPoliciesResponseTypeDef
 
@@ -1265,6 +1425,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getemailidentityrequestrequesttypedef"></a>
+
 ## GetEmailIdentityRequestRequestTypeDef
 
 ```python
@@ -1274,6 +1436,8 @@ from mypy_boto3_sesv2.type_defs import GetEmailIdentityRequestRequestTypeDef
 Required fields:
 
 - `EmailIdentity`: `str`
+
+<a id="getemailidentityresponsetypedef"></a>
 
 ## GetEmailIdentityResponseTypeDef
 
@@ -1296,6 +1460,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getemailtemplaterequestrequesttypedef"></a>
+
 ## GetEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -1305,6 +1471,8 @@ from mypy_boto3_sesv2.type_defs import GetEmailTemplateRequestRequestTypeDef
 Required fields:
 
 - `TemplateName`: `str`
+
+<a id="getemailtemplateresponsetypedef"></a>
 
 ## GetEmailTemplateResponseTypeDef
 
@@ -1320,6 +1488,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimportjobrequestrequesttypedef"></a>
+
 ## GetImportJobRequestRequestTypeDef
 
 ```python
@@ -1329,6 +1499,8 @@ from mypy_boto3_sesv2.type_defs import GetImportJobRequestRequestTypeDef
 Required fields:
 
 - `JobId`: `str`
+
+<a id="getimportjobresponsetypedef"></a>
 
 ## GetImportJobResponseTypeDef
 
@@ -1352,6 +1524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsuppresseddestinationrequestrequesttypedef"></a>
+
 ## GetSuppressedDestinationRequestRequestTypeDef
 
 ```python
@@ -1361,6 +1535,8 @@ from mypy_boto3_sesv2.type_defs import GetSuppressedDestinationRequestRequestTyp
 Required fields:
 
 - `EmailAddress`: `str`
+
+<a id="getsuppresseddestinationresponsetypedef"></a>
 
 ## GetSuppressedDestinationResponseTypeDef
 
@@ -1375,6 +1551,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identityinfotypedef"></a>
+
 ## IdentityInfoTypeDef
 
 ```python
@@ -1387,6 +1565,8 @@ Optional fields:
 - `IdentityName`: `str`
 - `SendingEnabled`: `bool`
 
+<a id="importdatasourcetypedef"></a>
+
 ## ImportDataSourceTypeDef
 
 ```python
@@ -1397,6 +1577,8 @@ Required fields:
 
 - `S3Url`: `str`
 - `DataFormat`: [DataFormatType](./literals.md#dataformattype)
+
+<a id="importdestinationtypedef"></a>
 
 ## ImportDestinationTypeDef
 
@@ -1410,6 +1592,8 @@ Optional fields:
   [SuppressionListDestinationTypeDef](./type_defs.md#suppressionlistdestinationtypedef)
 - `ContactListDestination`:
   [ContactListDestinationTypeDef](./type_defs.md#contactlistdestinationtypedef)
+
+<a id="importjobsummarytypedef"></a>
 
 ## ImportJobSummaryTypeDef
 
@@ -1425,6 +1609,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `CreatedTimestamp`: `datetime`
 
+<a id="inboxplacementtrackingoptiontypedef"></a>
+
 ## InboxPlacementTrackingOptionTypeDef
 
 ```python
@@ -1435,6 +1621,8 @@ Optional fields:
 
 - `Global`: `bool`
 - `TrackedIsps`: `List`\[`str`\]
+
+<a id="ispplacementtypedef"></a>
 
 ## IspPlacementTypeDef
 
@@ -1448,6 +1636,8 @@ Optional fields:
 - `PlacementStatistics`:
   [PlacementStatisticsTypeDef](./type_defs.md#placementstatisticstypedef)
 
+<a id="kinesisfirehosedestinationtypedef"></a>
+
 ## KinesisFirehoseDestinationTypeDef
 
 ```python
@@ -1459,6 +1649,8 @@ Required fields:
 - `IamRoleArn`: `str`
 - `DeliveryStreamArn`: `str`
 
+<a id="listconfigurationsetsrequestrequesttypedef"></a>
+
 ## ListConfigurationSetsRequestRequestTypeDef
 
 ```python
@@ -1469,6 +1661,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listconfigurationsetsresponsetypedef"></a>
 
 ## ListConfigurationSetsResponseTypeDef
 
@@ -1483,6 +1677,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontactlistsrequestrequesttypedef"></a>
+
 ## ListContactListsRequestRequestTypeDef
 
 ```python
@@ -1493,6 +1689,8 @@ Optional fields:
 
 - `PageSize`: `int`
 - `NextToken`: `str`
+
+<a id="listcontactlistsresponsetypedef"></a>
 
 ## ListContactListsResponseTypeDef
 
@@ -1508,6 +1706,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcontactsfiltertypedef"></a>
+
 ## ListContactsFilterTypeDef
 
 ```python
@@ -1519,6 +1719,8 @@ Optional fields:
 - `FilteredStatus`:
   [SubscriptionStatusType](./literals.md#subscriptionstatustype)
 - `TopicFilter`: [TopicFilterTypeDef](./type_defs.md#topicfiltertypedef)
+
+<a id="listcontactsrequestrequesttypedef"></a>
 
 ## ListContactsRequestRequestTypeDef
 
@@ -1537,6 +1739,8 @@ Optional fields:
 - `PageSize`: `int`
 - `NextToken`: `str`
 
+<a id="listcontactsresponsetypedef"></a>
+
 ## ListContactsResponseTypeDef
 
 ```python
@@ -1550,6 +1754,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcustomverificationemailtemplatesrequestrequesttypedef"></a>
+
 ## ListCustomVerificationEmailTemplatesRequestRequestTypeDef
 
 ```python
@@ -1560,6 +1766,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listcustomverificationemailtemplatesresponsetypedef"></a>
 
 ## ListCustomVerificationEmailTemplatesResponseTypeDef
 
@@ -1575,6 +1783,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdedicatedippoolsrequestrequesttypedef"></a>
+
 ## ListDedicatedIpPoolsRequestRequestTypeDef
 
 ```python
@@ -1585,6 +1795,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listdedicatedippoolsresponsetypedef"></a>
 
 ## ListDedicatedIpPoolsResponseTypeDef
 
@@ -1599,6 +1811,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdeliverabilitytestreportsrequestrequesttypedef"></a>
+
 ## ListDeliverabilityTestReportsRequestRequestTypeDef
 
 ```python
@@ -1609,6 +1823,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listdeliverabilitytestreportsresponsetypedef"></a>
 
 ## ListDeliverabilityTestReportsResponseTypeDef
 
@@ -1623,6 +1839,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdomaindeliverabilitycampaignsrequestrequesttypedef"></a>
 
 ## ListDomainDeliverabilityCampaignsRequestRequestTypeDef
 
@@ -1641,6 +1859,8 @@ Optional fields:
 - `NextToken`: `str`
 - `PageSize`: `int`
 
+<a id="listdomaindeliverabilitycampaignsresponsetypedef"></a>
+
 ## ListDomainDeliverabilityCampaignsResponseTypeDef
 
 ```python
@@ -1655,6 +1875,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listemailidentitiesrequestrequesttypedef"></a>
+
 ## ListEmailIdentitiesRequestRequestTypeDef
 
 ```python
@@ -1665,6 +1887,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listemailidentitiesresponsetypedef"></a>
 
 ## ListEmailIdentitiesResponseTypeDef
 
@@ -1680,6 +1904,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listemailtemplatesrequestrequesttypedef"></a>
+
 ## ListEmailTemplatesRequestRequestTypeDef
 
 ```python
@@ -1690,6 +1916,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listemailtemplatesresponsetypedef"></a>
 
 ## ListEmailTemplatesResponseTypeDef
 
@@ -1705,6 +1933,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listimportjobsrequestrequesttypedef"></a>
+
 ## ListImportJobsRequestRequestTypeDef
 
 ```python
@@ -1717,6 +1947,8 @@ Optional fields:
   [ImportDestinationTypeType](./literals.md#importdestinationtypetype)
 - `NextToken`: `str`
 - `PageSize`: `int`
+
+<a id="listimportjobsresponsetypedef"></a>
 
 ## ListImportJobsResponseTypeDef
 
@@ -1732,6 +1964,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmanagementoptionstypedef"></a>
+
 ## ListManagementOptionsTypeDef
 
 ```python
@@ -1745,6 +1979,8 @@ Required fields:
 Optional fields:
 
 - `TopicName`: `str`
+
+<a id="listsuppresseddestinationsrequestrequesttypedef"></a>
 
 ## ListSuppressedDestinationsRequestRequestTypeDef
 
@@ -1761,6 +1997,8 @@ Optional fields:
 - `NextToken`: `str`
 - `PageSize`: `int`
 
+<a id="listsuppresseddestinationsresponsetypedef"></a>
+
 ## ListSuppressedDestinationsResponseTypeDef
 
 ```python
@@ -1775,6 +2013,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1784,6 +2024,8 @@ from mypy_boto3_sesv2.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1796,6 +2038,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mailfromattributestypedef"></a>
 
 ## MailFromAttributesTypeDef
 
@@ -1811,6 +2055,8 @@ Required fields:
 - `BehaviorOnMxFailure`:
   [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
 
+<a id="messagetagtypedef"></a>
+
 ## MessageTagTypeDef
 
 ```python
@@ -1822,6 +2068,8 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="messagetypedef"></a>
+
 ## MessageTypeDef
 
 ```python
@@ -1832,6 +2080,8 @@ Required fields:
 
 - `Subject`: [ContentTypeDef](./type_defs.md#contenttypedef)
 - `Body`: [BodyTypeDef](./type_defs.md#bodytypedef)
+
+<a id="overallvolumetypedef"></a>
 
 ## OverallVolumeTypeDef
 
@@ -1847,6 +2097,8 @@ Optional fields:
 - `DomainIspPlacements`:
   `List`\[[DomainIspPlacementTypeDef](./type_defs.md#domainispplacementtypedef)\]
 
+<a id="pinpointdestinationtypedef"></a>
+
 ## PinpointDestinationTypeDef
 
 ```python
@@ -1856,6 +2108,8 @@ from mypy_boto3_sesv2.type_defs import PinpointDestinationTypeDef
 Optional fields:
 
 - `ApplicationArn`: `str`
+
+<a id="placementstatisticstypedef"></a>
 
 ## PlacementStatisticsTypeDef
 
@@ -1871,6 +2125,8 @@ Optional fields:
 - `SpfPercentage`: `float`
 - `DkimPercentage`: `float`
 
+<a id="putaccountdedicatedipwarmupattributesrequestrequesttypedef"></a>
+
 ## PutAccountDedicatedIpWarmupAttributesRequestRequestTypeDef
 
 ```python
@@ -1880,6 +2136,8 @@ from mypy_boto3_sesv2.type_defs import PutAccountDedicatedIpWarmupAttributesRequ
 Optional fields:
 
 - `AutoWarmupEnabled`: `bool`
+
+<a id="putaccountdetailsrequestrequesttypedef"></a>
 
 ## PutAccountDetailsRequestRequestTypeDef
 
@@ -1899,6 +2157,8 @@ Optional fields:
 - `AdditionalContactEmailAddresses`: `Sequence`\[`str`\]
 - `ProductionAccessEnabled`: `bool`
 
+<a id="putaccountsendingattributesrequestrequesttypedef"></a>
+
 ## PutAccountSendingAttributesRequestRequestTypeDef
 
 ```python
@@ -1908,6 +2168,8 @@ from mypy_boto3_sesv2.type_defs import PutAccountSendingAttributesRequestRequest
 Optional fields:
 
 - `SendingEnabled`: `bool`
+
+<a id="putaccountsuppressionattributesrequestrequesttypedef"></a>
 
 ## PutAccountSuppressionAttributesRequestRequestTypeDef
 
@@ -1919,6 +2181,8 @@ Optional fields:
 
 - `SuppressedReasons`:
   `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+
+<a id="putconfigurationsetdeliveryoptionsrequestrequesttypedef"></a>
 
 ## PutConfigurationSetDeliveryOptionsRequestRequestTypeDef
 
@@ -1935,6 +2199,8 @@ Optional fields:
 - `TlsPolicy`: [TlsPolicyType](./literals.md#tlspolicytype)
 - `SendingPoolName`: `str`
 
+<a id="putconfigurationsetreputationoptionsrequestrequesttypedef"></a>
+
 ## PutConfigurationSetReputationOptionsRequestRequestTypeDef
 
 ```python
@@ -1949,6 +2215,8 @@ Optional fields:
 
 - `ReputationMetricsEnabled`: `bool`
 
+<a id="putconfigurationsetsendingoptionsrequestrequesttypedef"></a>
+
 ## PutConfigurationSetSendingOptionsRequestRequestTypeDef
 
 ```python
@@ -1962,6 +2230,8 @@ Required fields:
 Optional fields:
 
 - `SendingEnabled`: `bool`
+
+<a id="putconfigurationsetsuppressionoptionsrequestrequesttypedef"></a>
 
 ## PutConfigurationSetSuppressionOptionsRequestRequestTypeDef
 
@@ -1978,6 +2248,8 @@ Optional fields:
 - `SuppressedReasons`:
   `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
 
+<a id="putconfigurationsettrackingoptionsrequestrequesttypedef"></a>
+
 ## PutConfigurationSetTrackingOptionsRequestRequestTypeDef
 
 ```python
@@ -1992,6 +2264,8 @@ Optional fields:
 
 - `CustomRedirectDomain`: `str`
 
+<a id="putdedicatedipinpoolrequestrequesttypedef"></a>
+
 ## PutDedicatedIpInPoolRequestRequestTypeDef
 
 ```python
@@ -2003,6 +2277,8 @@ Required fields:
 - `Ip`: `str`
 - `DestinationPoolName`: `str`
 
+<a id="putdedicatedipwarmupattributesrequestrequesttypedef"></a>
+
 ## PutDedicatedIpWarmupAttributesRequestRequestTypeDef
 
 ```python
@@ -2013,6 +2289,8 @@ Required fields:
 
 - `Ip`: `str`
 - `WarmupPercentage`: `int`
+
+<a id="putdeliverabilitydashboardoptionrequestrequesttypedef"></a>
 
 ## PutDeliverabilityDashboardOptionRequestRequestTypeDef
 
@@ -2029,6 +2307,8 @@ Optional fields:
 - `SubscribedDomains`:
   `Sequence`\[[DomainDeliverabilityTrackingOptionTypeDef](./type_defs.md#domaindeliverabilitytrackingoptiontypedef)\]
 
+<a id="putemailidentityconfigurationsetattributesrequestrequesttypedef"></a>
+
 ## PutEmailIdentityConfigurationSetAttributesRequestRequestTypeDef
 
 ```python
@@ -2043,6 +2323,8 @@ Optional fields:
 
 - `ConfigurationSetName`: `str`
 
+<a id="putemailidentitydkimattributesrequestrequesttypedef"></a>
+
 ## PutEmailIdentityDkimAttributesRequestRequestTypeDef
 
 ```python
@@ -2056,6 +2338,8 @@ Required fields:
 Optional fields:
 
 - `SigningEnabled`: `bool`
+
+<a id="putemailidentitydkimsigningattributesrequestrequesttypedef"></a>
 
 ## PutEmailIdentityDkimSigningAttributesRequestRequestTypeDef
 
@@ -2074,6 +2358,8 @@ Optional fields:
 - `SigningAttributes`:
   [DkimSigningAttributesTypeDef](./type_defs.md#dkimsigningattributestypedef)
 
+<a id="putemailidentitydkimsigningattributesresponsetypedef"></a>
+
 ## PutEmailIdentityDkimSigningAttributesResponseTypeDef
 
 ```python
@@ -2086,6 +2372,8 @@ Required fields:
 - `DkimTokens`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putemailidentityfeedbackattributesrequestrequesttypedef"></a>
 
 ## PutEmailIdentityFeedbackAttributesRequestRequestTypeDef
 
@@ -2100,6 +2388,8 @@ Required fields:
 Optional fields:
 
 - `EmailForwardingEnabled`: `bool`
+
+<a id="putemailidentitymailfromattributesrequestrequesttypedef"></a>
 
 ## PutEmailIdentityMailFromAttributesRequestRequestTypeDef
 
@@ -2117,6 +2407,8 @@ Optional fields:
 - `BehaviorOnMxFailure`:
   [BehaviorOnMxFailureType](./literals.md#behavioronmxfailuretype)
 
+<a id="putsuppresseddestinationrequestrequesttypedef"></a>
+
 ## PutSuppressedDestinationRequestRequestTypeDef
 
 ```python
@@ -2129,6 +2421,8 @@ Required fields:
 - `Reason`:
   [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
 
+<a id="rawmessagetypedef"></a>
+
 ## RawMessageTypeDef
 
 ```python
@@ -2138,6 +2432,8 @@ from mypy_boto3_sesv2.type_defs import RawMessageTypeDef
 Required fields:
 
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="replacementemailcontenttypedef"></a>
 
 ## ReplacementEmailContentTypeDef
 
@@ -2150,6 +2446,8 @@ Optional fields:
 - `ReplacementTemplate`:
   [ReplacementTemplateTypeDef](./type_defs.md#replacementtemplatetypedef)
 
+<a id="replacementtemplatetypedef"></a>
+
 ## ReplacementTemplateTypeDef
 
 ```python
@@ -2159,6 +2457,8 @@ from mypy_boto3_sesv2.type_defs import ReplacementTemplateTypeDef
 Optional fields:
 
 - `ReplacementTemplateData`: `str`
+
+<a id="reputationoptionstypedef"></a>
 
 ## ReputationOptionsTypeDef
 
@@ -2170,6 +2470,8 @@ Optional fields:
 
 - `ReputationMetricsEnabled`: `bool`
 - `LastFreshStart`: `Union`\[`datetime`, `str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2185,6 +2487,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="reviewdetailstypedef"></a>
+
 ## ReviewDetailsTypeDef
 
 ```python
@@ -2195,6 +2499,8 @@ Optional fields:
 
 - `Status`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `CaseId`: `str`
+
+<a id="sendbulkemailrequestrequesttypedef"></a>
 
 ## SendBulkEmailRequestRequestTypeDef
 
@@ -2220,6 +2526,8 @@ Optional fields:
   `Sequence`\[[MessageTagTypeDef](./type_defs.md#messagetagtypedef)\]
 - `ConfigurationSetName`: `str`
 
+<a id="sendbulkemailresponsetypedef"></a>
+
 ## SendBulkEmailResponseTypeDef
 
 ```python
@@ -2232,6 +2540,8 @@ Required fields:
   `List`\[[BulkEmailEntryResultTypeDef](./type_defs.md#bulkemailentryresulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendcustomverificationemailrequestrequesttypedef"></a>
 
 ## SendCustomVerificationEmailRequestRequestTypeDef
 
@@ -2248,6 +2558,8 @@ Optional fields:
 
 - `ConfigurationSetName`: `str`
 
+<a id="sendcustomverificationemailresponsetypedef"></a>
+
 ## SendCustomVerificationEmailResponseTypeDef
 
 ```python
@@ -2259,6 +2571,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendemailrequestrequesttypedef"></a>
 
 ## SendEmailRequestRequestTypeDef
 
@@ -2284,6 +2598,8 @@ Optional fields:
 - `ListManagementOptions`:
   [ListManagementOptionsTypeDef](./type_defs.md#listmanagementoptionstypedef)
 
+<a id="sendemailresponsetypedef"></a>
+
 ## SendEmailResponseTypeDef
 
 ```python
@@ -2295,6 +2611,8 @@ Required fields:
 - `MessageId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendquotatypedef"></a>
 
 ## SendQuotaTypeDef
 
@@ -2308,6 +2626,8 @@ Optional fields:
 - `MaxSendRate`: `float`
 - `SentLast24Hours`: `float`
 
+<a id="sendingoptionstypedef"></a>
+
 ## SendingOptionsTypeDef
 
 ```python
@@ -2317,6 +2637,8 @@ from mypy_boto3_sesv2.type_defs import SendingOptionsTypeDef
 Optional fields:
 
 - `SendingEnabled`: `bool`
+
+<a id="snsdestinationtypedef"></a>
 
 ## SnsDestinationTypeDef
 
@@ -2328,6 +2650,8 @@ Required fields:
 
 - `TopicArn`: `str`
 
+<a id="suppresseddestinationattributestypedef"></a>
+
 ## SuppressedDestinationAttributesTypeDef
 
 ```python
@@ -2338,6 +2662,8 @@ Optional fields:
 
 - `MessageId`: `str`
 - `FeedbackId`: `str`
+
+<a id="suppresseddestinationsummarytypedef"></a>
 
 ## SuppressedDestinationSummaryTypeDef
 
@@ -2351,6 +2677,8 @@ Required fields:
 - `Reason`:
   [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
 - `LastUpdateTime`: `datetime`
+
+<a id="suppresseddestinationtypedef"></a>
 
 ## SuppressedDestinationTypeDef
 
@@ -2370,6 +2698,8 @@ Optional fields:
 - `Attributes`:
   [SuppressedDestinationAttributesTypeDef](./type_defs.md#suppresseddestinationattributestypedef)
 
+<a id="suppressionattributestypedef"></a>
+
 ## SuppressionAttributesTypeDef
 
 ```python
@@ -2380,6 +2710,8 @@ Optional fields:
 
 - `SuppressedReasons`:
   `List`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+
+<a id="suppressionlistdestinationtypedef"></a>
 
 ## SuppressionListDestinationTypeDef
 
@@ -2392,6 +2724,8 @@ Required fields:
 - `SuppressionListImportAction`:
   [SuppressionListImportActionType](./literals.md#suppressionlistimportactiontype)
 
+<a id="suppressionoptionstypedef"></a>
+
 ## SuppressionOptionsTypeDef
 
 ```python
@@ -2402,6 +2736,8 @@ Optional fields:
 
 - `SuppressedReasons`:
   `Sequence`\[[SuppressionListReasonType](./literals.md#suppressionlistreasontype)\]
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2414,6 +2750,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2424,6 +2762,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="templatetypedef"></a>
 
 ## TemplateTypeDef
 
@@ -2437,6 +2777,8 @@ Optional fields:
 - `TemplateArn`: `str`
 - `TemplateData`: `str`
 
+<a id="testrenderemailtemplaterequestrequesttypedef"></a>
+
 ## TestRenderEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -2447,6 +2789,8 @@ Required fields:
 
 - `TemplateName`: `str`
 - `TemplateData`: `str`
+
+<a id="testrenderemailtemplateresponsetypedef"></a>
 
 ## TestRenderEmailTemplateResponseTypeDef
 
@@ -2460,6 +2804,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="topicfiltertypedef"></a>
+
 ## TopicFilterTypeDef
 
 ```python
@@ -2470,6 +2816,8 @@ Optional fields:
 
 - `TopicName`: `str`
 - `UseDefaultIfPreferenceUnavailable`: `bool`
+
+<a id="topicpreferencetypedef"></a>
 
 ## TopicPreferenceTypeDef
 
@@ -2482,6 +2830,8 @@ Required fields:
 - `TopicName`: `str`
 - `SubscriptionStatus`:
   [SubscriptionStatusType](./literals.md#subscriptionstatustype)
+
+<a id="topictypedef"></a>
 
 ## TopicTypeDef
 
@@ -2500,6 +2850,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="trackingoptionstypedef"></a>
+
 ## TrackingOptionsTypeDef
 
 ```python
@@ -2509,6 +2861,8 @@ from mypy_boto3_sesv2.type_defs import TrackingOptionsTypeDef
 Required fields:
 
 - `CustomRedirectDomain`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -2520,6 +2874,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateconfigurationseteventdestinationrequestrequesttypedef"></a>
 
 ## UpdateConfigurationSetEventDestinationRequestRequestTypeDef
 
@@ -2533,6 +2889,8 @@ Required fields:
 - `EventDestinationName`: `str`
 - `EventDestination`:
   [EventDestinationDefinitionTypeDef](./type_defs.md#eventdestinationdefinitiontypedef)
+
+<a id="updatecontactlistrequestrequesttypedef"></a>
 
 ## UpdateContactListRequestRequestTypeDef
 
@@ -2548,6 +2906,8 @@ Optional fields:
 
 - `Topics`: `Sequence`\[[TopicTypeDef](./type_defs.md#topictypedef)\]
 - `Description`: `str`
+
+<a id="updatecontactrequestrequesttypedef"></a>
 
 ## UpdateContactRequestRequestTypeDef
 
@@ -2567,6 +2927,8 @@ Optional fields:
 - `UnsubscribeAll`: `bool`
 - `AttributesData`: `str`
 
+<a id="updatecustomverificationemailtemplaterequestrequesttypedef"></a>
+
 ## UpdateCustomVerificationEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -2582,6 +2944,8 @@ Required fields:
 - `SuccessRedirectionURL`: `str`
 - `FailureRedirectionURL`: `str`
 
+<a id="updateemailidentitypolicyrequestrequesttypedef"></a>
+
 ## UpdateEmailIdentityPolicyRequestRequestTypeDef
 
 ```python
@@ -2594,6 +2958,8 @@ Required fields:
 - `PolicyName`: `str`
 - `Policy`: `str`
 
+<a id="updateemailtemplaterequestrequesttypedef"></a>
+
 ## UpdateEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -2605,6 +2971,8 @@ Required fields:
 - `TemplateName`: `str`
 - `TemplateContent`:
   [EmailTemplateContentTypeDef](./type_defs.md#emailtemplatecontenttypedef)
+
+<a id="volumestatisticstypedef"></a>
 
 ## VolumeStatisticsTypeDef
 

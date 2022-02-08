@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-dlm-module"></a>
+
 # Type annotations for boto3 DLM module
 
 > [Index](..) > DLM
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
 type annotations stubs module
-[mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
+[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[dlm]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[dlm]'
+
+# standalone installation
 pip install mypy-boto3-dlm
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-dlm
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="dlmclient"></a>
+
 ## DLMClient
 
 Type annotations for `boto3.client("dlm")` as [DLMClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_dlm.client import DLMClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -42,6 +56,8 @@ from mypy_boto3_dlm.client import DLMClient
 - [untag_resource](./client.md#untag_resource)
 - [update_lifecycle_policy](./client.md#update_lifecycle_policy)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DLMClient [exceptions](./client.md#exceptions)
@@ -51,6 +67,8 @@ DLMClient [exceptions](./client.md#exceptions)
 - InvalidRequestException
 - LimitExceededException
 - ResourceNotFoundException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -73,6 +91,8 @@ from mypy_boto3_dlm.literals import EventSourceValuesType, ...
 - [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 - [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-organizations-module"></a>
+
 # Paginators for boto3 Organizations module
 
 > [Index](..) > [Organizations](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Organizations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/organizations.html#Organizations)
 type annotations stubs module
-[mypy_boto3_organizations](https://pypi.org/project/mypy-boto3-organizations/).
+[mypy-boto3-organizations](https://pypi.org/project/mypy-boto3-organizations/).
 
 - [Paginators for boto3 Organizations module](#paginators-for-boto3-organizations-module)
   - [ListAWSServiceAccessForOrganizationPaginator](#listawsserviceaccessfororganizationpaginator)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
   - [ListTargetsForPolicyPaginator](#listtargetsforpolicypaginator)
 
+<a id="listawsserviceaccessfororganizationpaginator"></a>
+
 ## ListAWSServiceAccessForOrganizationPaginator
 
 Type annotations for
@@ -33,10 +37,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListAWSServiceAccessForOrganizationPaginator
 
 def get_list_aws_service_access_for_organization_paginator() -> ListAWSServiceAccessForOrganizationPaginator:
-    return boto3.client("organizations").get_paginator("list_aws_service_access_for_organization")
+    return Session().client("organizations").get_paginator("list_aws_service_access_for_organization")
 ```
 
 Boto3 documentation:
@@ -50,6 +56,8 @@ Arguments for `ListAWSServiceAccessForOrganizationPaginator.paginate` method:
 `ListAWSServiceAccessForOrganizationPaginator.paginate` returns
 `_PageIterator`\[[ListAWSServiceAccessForOrganizationResponseTypeDef](./type_defs.md#listawsserviceaccessfororganizationresponsetypedef)\].
 
+<a id="listaccountspaginator"></a>
+
 ## ListAccountsPaginator
 
 Type annotations for
@@ -58,10 +66,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListAccountsPaginator
 
 def get_list_accounts_paginator() -> ListAccountsPaginator:
-    return boto3.client("organizations").get_paginator("list_accounts")
+    return Session().client("organizations").get_paginator("list_accounts")
 ```
 
 Boto3 documentation:
@@ -75,6 +85,8 @@ Arguments for `ListAccountsPaginator.paginate` method:
 `ListAccountsPaginator.paginate` returns
 `_PageIterator`\[[ListAccountsResponseTypeDef](./type_defs.md#listaccountsresponsetypedef)\].
 
+<a id="listaccountsforparentpaginator"></a>
+
 ## ListAccountsForParentPaginator
 
 Type annotations for
@@ -83,10 +95,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListAccountsForParentPaginator
 
 def get_list_accounts_for_parent_paginator() -> ListAccountsForParentPaginator:
-    return boto3.client("organizations").get_paginator("list_accounts_for_parent")
+    return Session().client("organizations").get_paginator("list_accounts_for_parent")
 ```
 
 Boto3 documentation:
@@ -101,6 +115,8 @@ Arguments for `ListAccountsForParentPaginator.paginate` method:
 `ListAccountsForParentPaginator.paginate` returns
 `_PageIterator`\[[ListAccountsForParentResponseTypeDef](./type_defs.md#listaccountsforparentresponsetypedef)\].
 
+<a id="listchildrenpaginator"></a>
+
 ## ListChildrenPaginator
 
 Type annotations for
@@ -109,10 +125,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListChildrenPaginator
 
 def get_list_children_paginator() -> ListChildrenPaginator:
-    return boto3.client("organizations").get_paginator("list_children")
+    return Session().client("organizations").get_paginator("list_children")
 ```
 
 Boto3 documentation:
@@ -128,6 +146,8 @@ Arguments for `ListChildrenPaginator.paginate` method:
 `ListChildrenPaginator.paginate` returns
 `_PageIterator`\[[ListChildrenResponseTypeDef](./type_defs.md#listchildrenresponsetypedef)\].
 
+<a id="listcreateaccountstatuspaginator"></a>
+
 ## ListCreateAccountStatusPaginator
 
 Type annotations for
@@ -136,10 +156,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListCreateAccountStatusPaginator
 
 def get_list_create_account_status_paginator() -> ListCreateAccountStatusPaginator:
-    return boto3.client("organizations").get_paginator("list_create_account_status")
+    return Session().client("organizations").get_paginator("list_create_account_status")
 ```
 
 Boto3 documentation:
@@ -155,6 +177,8 @@ Arguments for `ListCreateAccountStatusPaginator.paginate` method:
 `ListCreateAccountStatusPaginator.paginate` returns
 `_PageIterator`\[[ListCreateAccountStatusResponseTypeDef](./type_defs.md#listcreateaccountstatusresponsetypedef)\].
 
+<a id="listdelegatedadministratorspaginator"></a>
+
 ## ListDelegatedAdministratorsPaginator
 
 Type annotations for
@@ -163,10 +187,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListDelegatedAdministratorsPaginator
 
 def get_list_delegated_administrators_paginator() -> ListDelegatedAdministratorsPaginator:
-    return boto3.client("organizations").get_paginator("list_delegated_administrators")
+    return Session().client("organizations").get_paginator("list_delegated_administrators")
 ```
 
 Boto3 documentation:
@@ -181,6 +207,8 @@ Arguments for `ListDelegatedAdministratorsPaginator.paginate` method:
 `ListDelegatedAdministratorsPaginator.paginate` returns
 `_PageIterator`\[[ListDelegatedAdministratorsResponseTypeDef](./type_defs.md#listdelegatedadministratorsresponsetypedef)\].
 
+<a id="listdelegatedservicesforaccountpaginator"></a>
+
 ## ListDelegatedServicesForAccountPaginator
 
 Type annotations for
@@ -189,10 +217,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListDelegatedServicesForAccountPaginator
 
 def get_list_delegated_services_for_account_paginator() -> ListDelegatedServicesForAccountPaginator:
-    return boto3.client("organizations").get_paginator("list_delegated_services_for_account")
+    return Session().client("organizations").get_paginator("list_delegated_services_for_account")
 ```
 
 Boto3 documentation:
@@ -207,6 +237,8 @@ Arguments for `ListDelegatedServicesForAccountPaginator.paginate` method:
 `ListDelegatedServicesForAccountPaginator.paginate` returns
 `_PageIterator`\[[ListDelegatedServicesForAccountResponseTypeDef](./type_defs.md#listdelegatedservicesforaccountresponsetypedef)\].
 
+<a id="listhandshakesforaccountpaginator"></a>
+
 ## ListHandshakesForAccountPaginator
 
 Type annotations for
@@ -215,10 +247,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListHandshakesForAccountPaginator
 
 def get_list_handshakes_for_account_paginator() -> ListHandshakesForAccountPaginator:
-    return boto3.client("organizations").get_paginator("list_handshakes_for_account")
+    return Session().client("organizations").get_paginator("list_handshakes_for_account")
 ```
 
 Boto3 documentation:
@@ -233,6 +267,8 @@ Arguments for `ListHandshakesForAccountPaginator.paginate` method:
 `ListHandshakesForAccountPaginator.paginate` returns
 `_PageIterator`\[[ListHandshakesForAccountResponseTypeDef](./type_defs.md#listhandshakesforaccountresponsetypedef)\].
 
+<a id="listhandshakesfororganizationpaginator"></a>
+
 ## ListHandshakesForOrganizationPaginator
 
 Type annotations for
@@ -241,10 +277,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListHandshakesForOrganizationPaginator
 
 def get_list_handshakes_for_organization_paginator() -> ListHandshakesForOrganizationPaginator:
-    return boto3.client("organizations").get_paginator("list_handshakes_for_organization")
+    return Session().client("organizations").get_paginator("list_handshakes_for_organization")
 ```
 
 Boto3 documentation:
@@ -259,6 +297,8 @@ Arguments for `ListHandshakesForOrganizationPaginator.paginate` method:
 `ListHandshakesForOrganizationPaginator.paginate` returns
 `_PageIterator`\[[ListHandshakesForOrganizationResponseTypeDef](./type_defs.md#listhandshakesfororganizationresponsetypedef)\].
 
+<a id="listorganizationalunitsforparentpaginator"></a>
+
 ## ListOrganizationalUnitsForParentPaginator
 
 Type annotations for
@@ -267,10 +307,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListOrganizationalUnitsForParentPaginator
 
 def get_list_organizational_units_for_parent_paginator() -> ListOrganizationalUnitsForParentPaginator:
-    return boto3.client("organizations").get_paginator("list_organizational_units_for_parent")
+    return Session().client("organizations").get_paginator("list_organizational_units_for_parent")
 ```
 
 Boto3 documentation:
@@ -285,6 +327,8 @@ Arguments for `ListOrganizationalUnitsForParentPaginator.paginate` method:
 `ListOrganizationalUnitsForParentPaginator.paginate` returns
 `_PageIterator`\[[ListOrganizationalUnitsForParentResponseTypeDef](./type_defs.md#listorganizationalunitsforparentresponsetypedef)\].
 
+<a id="listparentspaginator"></a>
+
 ## ListParentsPaginator
 
 Type annotations for
@@ -293,10 +337,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListParentsPaginator
 
 def get_list_parents_paginator() -> ListParentsPaginator:
-    return boto3.client("organizations").get_paginator("list_parents")
+    return Session().client("organizations").get_paginator("list_parents")
 ```
 
 Boto3 documentation:
@@ -311,6 +357,8 @@ Arguments for `ListParentsPaginator.paginate` method:
 `ListParentsPaginator.paginate` returns
 `_PageIterator`\[[ListParentsResponseTypeDef](./type_defs.md#listparentsresponsetypedef)\].
 
+<a id="listpoliciespaginator"></a>
+
 ## ListPoliciesPaginator
 
 Type annotations for
@@ -319,10 +367,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListPoliciesPaginator
 
 def get_list_policies_paginator() -> ListPoliciesPaginator:
-    return boto3.client("organizations").get_paginator("list_policies")
+    return Session().client("organizations").get_paginator("list_policies")
 ```
 
 Boto3 documentation:
@@ -337,6 +387,8 @@ Arguments for `ListPoliciesPaginator.paginate` method:
 `ListPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
+<a id="listpoliciesfortargetpaginator"></a>
+
 ## ListPoliciesForTargetPaginator
 
 Type annotations for
@@ -345,10 +397,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListPoliciesForTargetPaginator
 
 def get_list_policies_for_target_paginator() -> ListPoliciesForTargetPaginator:
-    return boto3.client("organizations").get_paginator("list_policies_for_target")
+    return Session().client("organizations").get_paginator("list_policies_for_target")
 ```
 
 Boto3 documentation:
@@ -364,6 +418,8 @@ Arguments for `ListPoliciesForTargetPaginator.paginate` method:
 `ListPoliciesForTargetPaginator.paginate` returns
 `_PageIterator`\[[ListPoliciesForTargetResponseTypeDef](./type_defs.md#listpoliciesfortargetresponsetypedef)\].
 
+<a id="listrootspaginator"></a>
+
 ## ListRootsPaginator
 
 Type annotations for
@@ -372,10 +428,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListRootsPaginator
 
 def get_list_roots_paginator() -> ListRootsPaginator:
-    return boto3.client("organizations").get_paginator("list_roots")
+    return Session().client("organizations").get_paginator("list_roots")
 ```
 
 Boto3 documentation:
@@ -389,6 +447,8 @@ Arguments for `ListRootsPaginator.paginate` method:
 `ListRootsPaginator.paginate` returns
 `_PageIterator`\[[ListRootsResponseTypeDef](./type_defs.md#listrootsresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -397,10 +457,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("organizations").get_paginator("list_tags_for_resource")
+    return Session().client("organizations").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -415,6 +477,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="listtargetsforpolicypaginator"></a>
+
 ## ListTargetsForPolicyPaginator
 
 Type annotations for
@@ -423,10 +487,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_organizations.paginator import ListTargetsForPolicyPaginator
 
 def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
-    return boto3.client("organizations").get_paginator("list_targets_for_policy")
+    return Session().client("organizations").get_paginator("list_targets_for_policy")
 ```
 
 Boto3 documentation:

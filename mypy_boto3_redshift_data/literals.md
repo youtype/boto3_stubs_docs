@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-redshiftdataapiservice-module"></a>
+
 # Literals for boto3 RedshiftDataAPIService module
 
 > [Index](..) > [RedshiftDataAPIService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
-[mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
+[mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [Literals for boto3 RedshiftDataAPIService module](#literals-for-boto3-redshiftdataapiservice-module)
   - [DescribeTablePaginatorName](#describetablepaginatorname)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describetablepaginatorname"></a>
+
 ## DescribeTablePaginatorName
 
 ```python
@@ -28,6 +32,8 @@ from mypy_boto3_redshift_data.literals import DescribeTablePaginatorName
 Values:
 
 - `describe_table`
+
+<a id="getstatementresultpaginatorname"></a>
 
 ## GetStatementResultPaginatorName
 
@@ -39,6 +45,8 @@ Values:
 
 - `get_statement_result`
 
+<a id="listdatabasespaginatorname"></a>
+
 ## ListDatabasesPaginatorName
 
 ```python
@@ -48,6 +56,8 @@ from mypy_boto3_redshift_data.literals import ListDatabasesPaginatorName
 Values:
 
 - `list_databases`
+
+<a id="listschemaspaginatorname"></a>
 
 ## ListSchemasPaginatorName
 
@@ -59,6 +69,8 @@ Values:
 
 - `list_schemas`
 
+<a id="liststatementspaginatorname"></a>
+
 ## ListStatementsPaginatorName
 
 ```python
@@ -69,6 +81,8 @@ Values:
 
 - `list_statements`
 
+<a id="listtablespaginatorname"></a>
+
 ## ListTablesPaginatorName
 
 ```python
@@ -78,6 +92,8 @@ from mypy_boto3_redshift_data.literals import ListTablesPaginatorName
 Values:
 
 - `list_tables`
+
+<a id="statementstatusstringtype"></a>
 
 ## StatementStatusStringType
 
@@ -94,6 +110,8 @@ Values:
 - `STARTED`
 - `SUBMITTED`
 
+<a id="statusstringtype"></a>
+
 ## StatusStringType
 
 ```python
@@ -109,6 +127,8 @@ Values:
 - `PICKED`
 - `STARTED`
 - `SUBMITTED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -417,6 +437,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

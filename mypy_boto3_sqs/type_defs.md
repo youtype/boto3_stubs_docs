@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sqs-module"></a>
+
 # Typed dictionaries for boto3 SQS module
 
 > [Index](..) > [SQS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
 type annotations stubs module
-[mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
+[mypy-boto3-sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 - [Typed dictionaries for boto3 SQS module](#typed-dictionaries-for-boto3-sqs-module)
   - [AddPermissionRequestQueueTypeDef](#addpermissionrequestqueuetypedef)
@@ -66,6 +68,8 @@ type annotations stubs module
   - [TagQueueRequestRequestTypeDef](#tagqueuerequestrequesttypedef)
   - [UntagQueueRequestRequestTypeDef](#untagqueuerequestrequesttypedef)
 
+<a id="addpermissionrequestqueuetypedef"></a>
+
 ## AddPermissionRequestQueueTypeDef
 
 ```python
@@ -77,6 +81,8 @@ Required fields:
 - `Label`: `str`
 - `AWSAccountIds`: `Sequence`\[`str`\]
 - `Actions`: `Sequence`\[`str`\]
+
+<a id="addpermissionrequestrequesttypedef"></a>
 
 ## AddPermissionRequestRequestTypeDef
 
@@ -90,6 +96,8 @@ Required fields:
 - `Label`: `str`
 - `AWSAccountIds`: `Sequence`\[`str`\]
 - `Actions`: `Sequence`\[`str`\]
+
+<a id="batchresulterrorentrytypedef"></a>
 
 ## BatchResultErrorEntryTypeDef
 
@@ -107,6 +115,8 @@ Optional fields:
 
 - `Message`: `str`
 
+<a id="changemessagevisibilitybatchrequestentrytypedef"></a>
+
 ## ChangeMessageVisibilityBatchRequestEntryTypeDef
 
 ```python
@@ -122,6 +132,8 @@ Optional fields:
 
 - `VisibilityTimeout`: `int`
 
+<a id="changemessagevisibilitybatchrequestqueuetypedef"></a>
+
 ## ChangeMessageVisibilityBatchRequestQueueTypeDef
 
 ```python
@@ -132,6 +144,8 @@ Required fields:
 
 - `Entries`:
   `Sequence`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
+
+<a id="changemessagevisibilitybatchrequestrequesttypedef"></a>
 
 ## ChangeMessageVisibilityBatchRequestRequestTypeDef
 
@@ -145,6 +159,8 @@ Required fields:
 - `Entries`:
   `Sequence`\[[ChangeMessageVisibilityBatchRequestEntryTypeDef](./type_defs.md#changemessagevisibilitybatchrequestentrytypedef)\]
 
+<a id="changemessagevisibilitybatchresultentrytypedef"></a>
+
 ## ChangeMessageVisibilityBatchResultEntryTypeDef
 
 ```python
@@ -154,6 +170,8 @@ from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityBatchResultEntryType
 Required fields:
 
 - `Id`: `str`
+
+<a id="changemessagevisibilitybatchresulttypedef"></a>
 
 ## ChangeMessageVisibilityBatchResultTypeDef
 
@@ -170,6 +188,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="changemessagevisibilityrequestmessagetypedef"></a>
+
 ## ChangeMessageVisibilityRequestMessageTypeDef
 
 ```python
@@ -179,6 +199,8 @@ from mypy_boto3_sqs.type_defs import ChangeMessageVisibilityRequestMessageTypeDe
 Required fields:
 
 - `VisibilityTimeout`: `int`
+
+<a id="changemessagevisibilityrequestrequesttypedef"></a>
 
 ## ChangeMessageVisibilityRequestRequestTypeDef
 
@@ -191,6 +213,8 @@ Required fields:
 - `QueueUrl`: `str`
 - `ReceiptHandle`: `str`
 - `VisibilityTimeout`: `int`
+
+<a id="createqueuerequestrequesttypedef"></a>
 
 ## CreateQueueRequestRequestTypeDef
 
@@ -209,6 +233,8 @@ Optional fields:
   `str`\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createqueuerequestserviceresourcetypedef"></a>
+
 ## CreateQueueRequestServiceResourceTypeDef
 
 ```python
@@ -226,6 +252,8 @@ Optional fields:
   `str`\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createqueueresulttypedef"></a>
+
 ## CreateQueueResultTypeDef
 
 ```python
@@ -238,6 +266,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemessagebatchrequestentrytypedef"></a>
+
 ## DeleteMessageBatchRequestEntryTypeDef
 
 ```python
@@ -249,6 +279,8 @@ Required fields:
 - `Id`: `str`
 - `ReceiptHandle`: `str`
 
+<a id="deletemessagebatchrequestqueuetypedef"></a>
+
 ## DeleteMessageBatchRequestQueueTypeDef
 
 ```python
@@ -259,6 +291,8 @@ Required fields:
 
 - `Entries`:
   `Sequence`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
+
+<a id="deletemessagebatchrequestrequesttypedef"></a>
 
 ## DeleteMessageBatchRequestRequestTypeDef
 
@@ -272,6 +306,8 @@ Required fields:
 - `Entries`:
   `Sequence`\[[DeleteMessageBatchRequestEntryTypeDef](./type_defs.md#deletemessagebatchrequestentrytypedef)\]
 
+<a id="deletemessagebatchresultentrytypedef"></a>
+
 ## DeleteMessageBatchResultEntryTypeDef
 
 ```python
@@ -281,6 +317,8 @@ from mypy_boto3_sqs.type_defs import DeleteMessageBatchResultEntryTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="deletemessagebatchresulttypedef"></a>
 
 ## DeleteMessageBatchResultTypeDef
 
@@ -297,6 +335,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemessagerequestrequesttypedef"></a>
+
 ## DeleteMessageRequestRequestTypeDef
 
 ```python
@@ -308,6 +348,8 @@ Required fields:
 - `QueueUrl`: `str`
 - `ReceiptHandle`: `str`
 
+<a id="deletequeuerequestrequesttypedef"></a>
+
 ## DeleteQueueRequestRequestTypeDef
 
 ```python
@@ -317,6 +359,8 @@ from mypy_boto3_sqs.type_defs import DeleteQueueRequestRequestTypeDef
 Required fields:
 
 - `QueueUrl`: `str`
+
+<a id="getqueueattributesrequestrequesttypedef"></a>
 
 ## GetQueueAttributesRequestRequestTypeDef
 
@@ -333,6 +377,8 @@ Optional fields:
 - `AttributeNames`:
   `Sequence`\[[QueueAttributeNameType](./literals.md#queueattributenametype)\]
 
+<a id="getqueueattributesresulttypedef"></a>
+
 ## GetQueueAttributesResultTypeDef
 
 ```python
@@ -346,6 +392,8 @@ Required fields:
   `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getqueueurlrequestrequesttypedef"></a>
 
 ## GetQueueUrlRequestRequestTypeDef
 
@@ -361,6 +409,8 @@ Optional fields:
 
 - `QueueOwnerAWSAccountId`: `str`
 
+<a id="getqueueurlrequestserviceresourcetypedef"></a>
+
 ## GetQueueUrlRequestServiceResourceTypeDef
 
 ```python
@@ -375,6 +425,8 @@ Optional fields:
 
 - `QueueOwnerAWSAccountId`: `str`
 
+<a id="getqueueurlresulttypedef"></a>
+
 ## GetQueueUrlResultTypeDef
 
 ```python
@@ -386,6 +438,8 @@ Required fields:
 - `QueueUrl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdeadlettersourcequeuesrequestrequesttypedef"></a>
 
 ## ListDeadLetterSourceQueuesRequestRequestTypeDef
 
@@ -402,6 +456,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdeadlettersourcequeuesresulttypedef"></a>
+
 ## ListDeadLetterSourceQueuesResultTypeDef
 
 ```python
@@ -415,6 +471,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listqueuetagsrequestrequesttypedef"></a>
+
 ## ListQueueTagsRequestRequestTypeDef
 
 ```python
@@ -424,6 +482,8 @@ from mypy_boto3_sqs.type_defs import ListQueueTagsRequestRequestTypeDef
 Required fields:
 
 - `QueueUrl`: `str`
+
+<a id="listqueuetagsresulttypedef"></a>
 
 ## ListQueueTagsResultTypeDef
 
@@ -437,6 +497,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listqueuesrequestrequesttypedef"></a>
+
 ## ListQueuesRequestRequestTypeDef
 
 ```python
@@ -448,6 +510,8 @@ Optional fields:
 - `QueueNamePrefix`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listqueuesresulttypedef"></a>
 
 ## ListQueuesResultTypeDef
 
@@ -461,6 +525,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="messageattributevaluetypedef"></a>
 
 ## MessageAttributeValueTypeDef
 
@@ -479,6 +545,8 @@ Optional fields:
 - `StringListValues`: `List`\[`str`\]
 - `BinaryListValues`: `List`\[`bytes`\]
 
+<a id="messagesystemattributevaluetypedef"></a>
+
 ## MessageSystemAttributeValueTypeDef
 
 ```python
@@ -496,6 +564,8 @@ Optional fields:
 - `StringListValues`: `Sequence`\[`str`\]
 - `BinaryListValues`: `Sequence`\[`Union`\[`bytes`, `IO`\[`bytes`\],
   `StreamingBody`\]\]
+
+<a id="messagetypedef"></a>
 
 ## MessageTypeDef
 
@@ -516,6 +586,8 @@ Optional fields:
 - `MessageAttributes`: `Dict`\[`str`,
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -528,6 +600,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="purgequeuerequestrequesttypedef"></a>
+
 ## PurgeQueueRequestRequestTypeDef
 
 ```python
@@ -538,6 +612,8 @@ Required fields:
 
 - `QueueUrl`: `str`
 
+<a id="queuemessagerequesttypedef"></a>
+
 ## QueueMessageRequestTypeDef
 
 ```python
@@ -547,6 +623,8 @@ from mypy_boto3_sqs.type_defs import QueueMessageRequestTypeDef
 Required fields:
 
 - `receipt_handle`: `str`
+
+<a id="receivemessagerequestqueuetypedef"></a>
 
 ## ReceiveMessageRequestQueueTypeDef
 
@@ -563,6 +641,8 @@ Optional fields:
 - `VisibilityTimeout`: `int`
 - `WaitTimeSeconds`: `int`
 - `ReceiveRequestAttemptId`: `str`
+
+<a id="receivemessagerequestrequesttypedef"></a>
 
 ## ReceiveMessageRequestRequestTypeDef
 
@@ -584,6 +664,8 @@ Optional fields:
 - `WaitTimeSeconds`: `int`
 - `ReceiveRequestAttemptId`: `str`
 
+<a id="receivemessageresulttypedef"></a>
+
 ## ReceiveMessageResultTypeDef
 
 ```python
@@ -596,6 +678,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removepermissionrequestqueuetypedef"></a>
+
 ## RemovePermissionRequestQueueTypeDef
 
 ```python
@@ -605,6 +689,8 @@ from mypy_boto3_sqs.type_defs import RemovePermissionRequestQueueTypeDef
 Required fields:
 
 - `Label`: `str`
+
+<a id="removepermissionrequestrequesttypedef"></a>
 
 ## RemovePermissionRequestRequestTypeDef
 
@@ -616,6 +702,8 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Label`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -630,6 +718,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sendmessagebatchrequestentrytypedef"></a>
 
 ## SendMessageBatchRequestEntryTypeDef
 
@@ -653,6 +743,8 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
+<a id="sendmessagebatchrequestqueuetypedef"></a>
+
 ## SendMessageBatchRequestQueueTypeDef
 
 ```python
@@ -663,6 +755,8 @@ Required fields:
 
 - `Entries`:
   `Sequence`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
+
+<a id="sendmessagebatchrequestrequesttypedef"></a>
 
 ## SendMessageBatchRequestRequestTypeDef
 
@@ -675,6 +769,8 @@ Required fields:
 - `QueueUrl`: `str`
 - `Entries`:
   `Sequence`\[[SendMessageBatchRequestEntryTypeDef](./type_defs.md#sendmessagebatchrequestentrytypedef)\]
+
+<a id="sendmessagebatchresultentrytypedef"></a>
 
 ## SendMessageBatchResultEntryTypeDef
 
@@ -694,6 +790,8 @@ Optional fields:
 - `MD5OfMessageSystemAttributes`: `str`
 - `SequenceNumber`: `str`
 
+<a id="sendmessagebatchresulttypedef"></a>
+
 ## SendMessageBatchResultTypeDef
 
 ```python
@@ -708,6 +806,8 @@ Required fields:
   `List`\[[BatchResultErrorEntryTypeDef](./type_defs.md#batchresulterrorentrytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendmessagerequestqueuetypedef"></a>
 
 ## SendMessageRequestQueueTypeDef
 
@@ -729,6 +829,8 @@ Optional fields:
   [MessageSystemAttributeValueTypeDef](./type_defs.md#messagesystemattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
+
+<a id="sendmessagerequestrequesttypedef"></a>
 
 ## SendMessageRequestRequestTypeDef
 
@@ -752,6 +854,8 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
+<a id="sendmessageresulttypedef"></a>
+
 ## SendMessageResultTypeDef
 
 ```python
@@ -768,6 +872,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="serviceresourcemessagerequesttypedef"></a>
+
 ## ServiceResourceMessageRequestTypeDef
 
 ```python
@@ -779,6 +885,8 @@ Required fields:
 - `queue_url`: `str`
 - `receipt_handle`: `str`
 
+<a id="serviceresourcequeuerequesttypedef"></a>
+
 ## ServiceResourceQueueRequestTypeDef
 
 ```python
@@ -788,6 +896,8 @@ from mypy_boto3_sqs.type_defs import ServiceResourceQueueRequestTypeDef
 Required fields:
 
 - `url`: `str`
+
+<a id="setqueueattributesrequestqueuetypedef"></a>
 
 ## SetQueueAttributesRequestQueueTypeDef
 
@@ -800,6 +910,8 @@ Required fields:
 - `Attributes`:
   `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
+
+<a id="setqueueattributesrequestrequesttypedef"></a>
 
 ## SetQueueAttributesRequestRequestTypeDef
 
@@ -814,6 +926,8 @@ Required fields:
   `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\]
 
+<a id="tagqueuerequestrequesttypedef"></a>
+
 ## TagQueueRequestRequestTypeDef
 
 ```python
@@ -824,6 +938,8 @@ Required fields:
 
 - `QueueUrl`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="untagqueuerequestrequesttypedef"></a>
 
 ## UntagQueueRequestRequestTypeDef
 

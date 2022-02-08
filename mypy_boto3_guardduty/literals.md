@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-guardduty-module"></a>
+
 # Literals for boto3 GuardDuty module
 
 > [Index](..) > [GuardDuty](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
-[mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+[mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 - [Literals for boto3 GuardDuty module](#literals-for-boto3-guardduty-module)
   - [AdminStatusType](#adminstatustype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="adminstatustype"></a>
+
 ## AdminStatusType
 
 ```python
@@ -46,6 +50,8 @@ Values:
 - `DISABLE_IN_PROGRESS`
 - `ENABLED`
 
+<a id="datasourcestatustype"></a>
+
 ## DataSourceStatusType
 
 ```python
@@ -56,6 +62,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="datasourcetype"></a>
 
 ## DataSourceType
 
@@ -71,6 +79,8 @@ Values:
 - `KUBERNETES_AUDIT_LOGS`
 - `S3_LOGS`
 
+<a id="destinationtypetype"></a>
+
 ## DestinationTypeType
 
 ```python
@@ -80,6 +90,8 @@ from mypy_boto3_guardduty.literals import DestinationTypeType
 Values:
 
 - `S3`
+
+<a id="detectorstatustype"></a>
 
 ## DetectorStatusType
 
@@ -92,6 +104,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="feedbacktype"></a>
+
 ## FeedbackType
 
 ```python
@@ -103,6 +117,8 @@ Values:
 - `NOT_USEFUL`
 - `USEFUL`
 
+<a id="filteractiontype"></a>
+
 ## FilterActionType
 
 ```python
@@ -113,6 +129,8 @@ Values:
 
 - `ARCHIVE`
 - `NOOP`
+
+<a id="findingpublishingfrequencytype"></a>
 
 ## FindingPublishingFrequencyType
 
@@ -126,6 +144,8 @@ Values:
 - `ONE_HOUR`
 - `SIX_HOURS`
 
+<a id="findingstatistictypetype"></a>
+
 ## FindingStatisticTypeType
 
 ```python
@@ -135,6 +155,8 @@ from mypy_boto3_guardduty.literals import FindingStatisticTypeType
 Values:
 
 - `COUNT_BY_SEVERITY`
+
+<a id="ipsetformattype"></a>
 
 ## IpSetFormatType
 
@@ -150,6 +172,8 @@ Values:
 - `PROOF_POINT`
 - `STIX`
 - `TXT`
+
+<a id="ipsetstatustype"></a>
 
 ## IpSetStatusType
 
@@ -167,6 +191,8 @@ Values:
 - `ERROR`
 - `INACTIVE`
 
+<a id="listdetectorspaginatorname"></a>
+
 ## ListDetectorsPaginatorName
 
 ```python
@@ -176,6 +202,8 @@ from mypy_boto3_guardduty.literals import ListDetectorsPaginatorName
 Values:
 
 - `list_detectors`
+
+<a id="listfilterspaginatorname"></a>
 
 ## ListFiltersPaginatorName
 
@@ -187,6 +215,8 @@ Values:
 
 - `list_filters`
 
+<a id="listfindingspaginatorname"></a>
+
 ## ListFindingsPaginatorName
 
 ```python
@@ -196,6 +226,8 @@ from mypy_boto3_guardduty.literals import ListFindingsPaginatorName
 Values:
 
 - `list_findings`
+
+<a id="listipsetspaginatorname"></a>
 
 ## ListIPSetsPaginatorName
 
@@ -207,6 +239,8 @@ Values:
 
 - `list_ip_sets`
 
+<a id="listinvitationspaginatorname"></a>
+
 ## ListInvitationsPaginatorName
 
 ```python
@@ -216,6 +250,8 @@ from mypy_boto3_guardduty.literals import ListInvitationsPaginatorName
 Values:
 
 - `list_invitations`
+
+<a id="listmemberspaginatorname"></a>
 
 ## ListMembersPaginatorName
 
@@ -227,6 +263,8 @@ Values:
 
 - `list_members`
 
+<a id="listorganizationadminaccountspaginatorname"></a>
+
 ## ListOrganizationAdminAccountsPaginatorName
 
 ```python
@@ -236,6 +274,8 @@ from mypy_boto3_guardduty.literals import ListOrganizationAdminAccountsPaginator
 Values:
 
 - `list_organization_admin_accounts`
+
+<a id="listthreatintelsetspaginatorname"></a>
 
 ## ListThreatIntelSetsPaginatorName
 
@@ -247,6 +287,8 @@ Values:
 
 - `list_threat_intel_sets`
 
+<a id="orderbytype"></a>
+
 ## OrderByType
 
 ```python
@@ -257,6 +299,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="publishingstatustype"></a>
 
 ## PublishingStatusType
 
@@ -270,6 +314,8 @@ Values:
 - `PUBLISHING`
 - `STOPPED`
 - `UNABLE_TO_PUBLISH_FIX_DESTINATION_PROPERTY`
+
+<a id="threatintelsetformattype"></a>
 
 ## ThreatIntelSetFormatType
 
@@ -285,6 +331,8 @@ Values:
 - `PROOF_POINT`
 - `STIX`
 - `TXT`
+
+<a id="threatintelsetstatustype"></a>
 
 ## ThreatIntelSetStatusType
 
@@ -302,6 +350,8 @@ Values:
 - `ERROR`
 - `INACTIVE`
 
+<a id="usagestatistictypetype"></a>
+
 ## UsageStatisticTypeType
 
 ```python
@@ -314,6 +364,8 @@ Values:
 - `SUM_BY_DATA_SOURCE`
 - `SUM_BY_RESOURCE`
 - `TOP_RESOURCES`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -622,6 +674,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

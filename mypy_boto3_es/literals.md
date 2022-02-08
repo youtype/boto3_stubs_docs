@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-elasticsearchservice-module"></a>
+
 # Literals for boto3 ElasticsearchService module
 
 > [Index](..) > [ElasticsearchService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
-[mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
+[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 - [Literals for boto3 ElasticsearchService module](#literals-for-boto3-elasticsearchservice-module)
   - [AutoTuneDesiredStateType](#autotunedesiredstatetype)
@@ -41,6 +43,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="autotunedesiredstatetype"></a>
+
 ## AutoTuneDesiredStateType
 
 ```python
@@ -51,6 +55,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="autotunestatetype"></a>
 
 ## AutoTuneStateType
 
@@ -70,6 +76,8 @@ Values:
 - `ENABLED`
 - `ERROR`
 
+<a id="autotunetypetype"></a>
+
 ## AutoTuneTypeType
 
 ```python
@@ -79,6 +87,8 @@ from mypy_boto3_es.literals import AutoTuneTypeType
 Values:
 
 - `SCHEDULED_ACTION`
+
+<a id="deploymentstatustype"></a>
 
 ## DeploymentStatusType
 
@@ -94,6 +104,8 @@ Values:
 - `NOT_ELIGIBLE`
 - `PENDING_UPDATE`
 
+<a id="describepackagesfilternametype"></a>
+
 ## DescribePackagesFilterNameType
 
 ```python
@@ -106,6 +118,8 @@ Values:
 - `PackageName`
 - `PackageStatus`
 
+<a id="describereservedelasticsearchinstanceofferingspaginatorname"></a>
+
 ## DescribeReservedElasticsearchInstanceOfferingsPaginatorName
 
 ```python
@@ -116,6 +130,8 @@ Values:
 
 - `describe_reserved_elasticsearch_instance_offerings`
 
+<a id="describereservedelasticsearchinstancespaginatorname"></a>
+
 ## DescribeReservedElasticsearchInstancesPaginatorName
 
 ```python
@@ -125,6 +141,8 @@ from mypy_boto3_es.literals import DescribeReservedElasticsearchInstancesPaginat
 Values:
 
 - `describe_reserved_elasticsearch_instances`
+
+<a id="domainpackagestatustype"></a>
 
 ## DomainPackageStatusType
 
@@ -139,6 +157,8 @@ Values:
 - `ASSOCIATION_FAILED`
 - `DISSOCIATING`
 - `DISSOCIATION_FAILED`
+
+<a id="espartitioninstancetypetype"></a>
 
 ## ESPartitionInstanceTypeType
 
@@ -207,6 +227,8 @@ Values:
 - `ultrawarm1.large.elasticsearch`
 - `ultrawarm1.medium.elasticsearch`
 
+<a id="eswarmpartitioninstancetypetype"></a>
+
 ## ESWarmPartitionInstanceTypeType
 
 ```python
@@ -217,6 +239,8 @@ Values:
 
 - `ultrawarm1.large.elasticsearch`
 - `ultrawarm1.medium.elasticsearch`
+
+<a id="enginetypetype"></a>
 
 ## EngineTypeType
 
@@ -229,6 +253,8 @@ Values:
 - `Elasticsearch`
 - `OpenSearch`
 
+<a id="getupgradehistorypaginatorname"></a>
+
 ## GetUpgradeHistoryPaginatorName
 
 ```python
@@ -238,6 +264,8 @@ from mypy_boto3_es.literals import GetUpgradeHistoryPaginatorName
 Values:
 
 - `get_upgrade_history`
+
+<a id="inboundcrossclustersearchconnectionstatuscodetype"></a>
 
 ## InboundCrossClusterSearchConnectionStatusCodeType
 
@@ -254,6 +282,8 @@ Values:
 - `REJECTED`
 - `REJECTING`
 
+<a id="listelasticsearchinstancetypespaginatorname"></a>
+
 ## ListElasticsearchInstanceTypesPaginatorName
 
 ```python
@@ -264,6 +294,8 @@ Values:
 
 - `list_elasticsearch_instance_types`
 
+<a id="listelasticsearchversionspaginatorname"></a>
+
 ## ListElasticsearchVersionsPaginatorName
 
 ```python
@@ -273,6 +305,8 @@ from mypy_boto3_es.literals import ListElasticsearchVersionsPaginatorName
 Values:
 
 - `list_elasticsearch_versions`
+
+<a id="logtypetype"></a>
 
 ## LogTypeType
 
@@ -287,6 +321,8 @@ Values:
 - `INDEX_SLOW_LOGS`
 - `SEARCH_SLOW_LOGS`
 
+<a id="optionstatetype"></a>
+
 ## OptionStateType
 
 ```python
@@ -298,6 +334,8 @@ Values:
 - `Active`
 - `Processing`
 - `RequiresIndexDocuments`
+
+<a id="outboundcrossclustersearchconnectionstatuscodetype"></a>
 
 ## OutboundCrossClusterSearchConnectionStatusCodeType
 
@@ -316,6 +354,8 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
+<a id="overallchangestatustype"></a>
+
 ## OverallChangeStatusType
 
 ```python
@@ -328,6 +368,8 @@ Values:
 - `FAILED`
 - `PENDING`
 - `PROCESSING`
+
+<a id="packagestatustype"></a>
 
 ## PackageStatusType
 
@@ -346,6 +388,8 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
+<a id="packagetypetype"></a>
+
 ## PackageTypeType
 
 ```python
@@ -355,6 +399,8 @@ from mypy_boto3_es.literals import PackageTypeType
 Values:
 
 - `TXT-DICTIONARY`
+
+<a id="reservedelasticsearchinstancepaymentoptiontype"></a>
 
 ## ReservedElasticsearchInstancePaymentOptionType
 
@@ -368,6 +414,8 @@ Values:
 - `NO_UPFRONT`
 - `PARTIAL_UPFRONT`
 
+<a id="rollbackondisabletype"></a>
+
 ## RollbackOnDisableType
 
 ```python
@@ -379,6 +427,8 @@ Values:
 - `DEFAULT_ROLLBACK`
 - `NO_ROLLBACK`
 
+<a id="scheduledautotuneactiontypetype"></a>
+
 ## ScheduledAutoTuneActionTypeType
 
 ```python
@@ -389,6 +439,8 @@ Values:
 
 - `JVM_HEAP_SIZE_TUNING`
 - `JVM_YOUNG_GEN_TUNING`
+
+<a id="scheduledautotuneseveritytypetype"></a>
 
 ## ScheduledAutoTuneSeverityTypeType
 
@@ -402,6 +454,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="tlssecuritypolicytype"></a>
+
 ## TLSSecurityPolicyType
 
 ```python
@@ -413,6 +467,8 @@ Values:
 - `Policy-Min-TLS-1-0-2019-07`
 - `Policy-Min-TLS-1-2-2019-07`
 
+<a id="timeunittype"></a>
+
 ## TimeUnitType
 
 ```python
@@ -422,6 +478,8 @@ from mypy_boto3_es.literals import TimeUnitType
 Values:
 
 - `HOURS`
+
+<a id="upgradestatustype"></a>
 
 ## UpgradeStatusType
 
@@ -436,6 +494,8 @@ Values:
 - `SUCCEEDED`
 - `SUCCEEDED_WITH_ISSUES`
 
+<a id="upgradesteptype"></a>
+
 ## UpgradeStepType
 
 ```python
@@ -448,6 +508,8 @@ Values:
 - `SNAPSHOT`
 - `UPGRADE`
 
+<a id="volumetypetype"></a>
+
 ## VolumeTypeType
 
 ```python
@@ -459,6 +521,8 @@ Values:
 - `gp2`
 - `io1`
 - `standard`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -767,6 +831,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

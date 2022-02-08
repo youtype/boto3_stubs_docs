@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-timestreamquery-module"></a>
+
 # Literals for boto3 TimestreamQuery module
 
 > [Index](..) > [TimestreamQuery](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
-[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Literals for boto3 TimestreamQuery module](#literals-for-boto3-timestreamquery-module)
   - [DimensionValueTypeType](#dimensionvaluetypetype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="dimensionvaluetypetype"></a>
+
 ## DimensionValueTypeType
 
 ```python
@@ -30,6 +34,8 @@ from mypy_boto3_timestream_query.literals import DimensionValueTypeType
 Values:
 
 - `VARCHAR`
+
+<a id="listscheduledqueriespaginatorname"></a>
 
 ## ListScheduledQueriesPaginatorName
 
@@ -41,6 +47,8 @@ Values:
 
 - `list_scheduled_queries`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -50,6 +58,8 @@ from mypy_boto3_timestream_query.literals import ListTagsForResourcePaginatorNam
 Values:
 
 - `list_tags_for_resource`
+
+<a id="measurevaluetypetype"></a>
 
 ## MeasureValueTypeType
 
@@ -65,6 +75,8 @@ Values:
 - `MULTI`
 - `VARCHAR`
 
+<a id="querypaginatorname"></a>
+
 ## QueryPaginatorName
 
 ```python
@@ -74,6 +86,8 @@ from mypy_boto3_timestream_query.literals import QueryPaginatorName
 Values:
 
 - `query`
+
+<a id="s3encryptionoptiontype"></a>
 
 ## S3EncryptionOptionType
 
@@ -85,6 +99,8 @@ Values:
 
 - `SSE_KMS`
 - `SSE_S3`
+
+<a id="scalarmeasurevaluetypetype"></a>
 
 ## ScalarMeasureValueTypeType
 
@@ -98,6 +114,8 @@ Values:
 - `BOOLEAN`
 - `DOUBLE`
 - `VARCHAR`
+
+<a id="scalartypetype"></a>
 
 ## ScalarTypeType
 
@@ -119,6 +137,8 @@ Values:
 - `UNKNOWN`
 - `VARCHAR`
 
+<a id="scheduledqueryrunstatustype"></a>
+
 ## ScheduledQueryRunStatusType
 
 ```python
@@ -132,6 +152,8 @@ Values:
 - `MANUAL_TRIGGER_FAILURE`
 - `MANUAL_TRIGGER_SUCCESS`
 
+<a id="scheduledquerystatetype"></a>
+
 ## ScheduledQueryStateType
 
 ```python
@@ -142,6 +164,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -450,6 +474,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

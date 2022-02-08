@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-glacier-module"></a>
+
 # Type annotations for boto3 Glacier module
 
 > [Index](..) > Glacier
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
 type annotations stubs module
-[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[glacier]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[glacier]'
+
+# standalone installation
 pip install mypy-boto3-glacier
 ```
 
@@ -23,6 +33,8 @@ pip install mypy-boto3-glacier
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="glacierclient"></a>
+
 ## GlacierClient
 
 Type annotations for `boto3.client("glacier")` as [GlacierClient](./client.md)
@@ -32,6 +44,8 @@ Can be used directly:
 ```python
 from mypy_boto3_glacier.client import GlacierClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -74,6 +88,8 @@ from mypy_boto3_glacier.client import GlacierClient
 - [upload_archive](./client.md#upload_archive)
 - [upload_multipart_part](./client.md#upload_multipart_part)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GlacierClient [exceptions](./client.md#exceptions)
@@ -88,6 +104,8 @@ GlacierClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceUnavailableException
 
+<a id="glacierserviceresource"></a>
+
 ## GlacierServiceResource
 
 Type annotations for `boto3.resource("glacier")` as
@@ -98,6 +116,8 @@ Can be used directly:
 ```python
 from mypy_boto3_glacier.service_resource import GlacierServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -110,6 +130,8 @@ from mypy_boto3_glacier.service_resource import ServiceResourceVaultsCollection,
 ```
 
 - [ServiceResourceVaultsCollection](./service_resource.md#glacierserviceresourcevaults)
+
+<a id="resources"></a>
 
 ### Resources
 
@@ -128,6 +150,8 @@ from mypy_boto3_glacier.service_resource import Account, ...
 - [Notification](./service_resource.md#notification)
 - [Vault](./service_resource.md#vault)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -136,13 +160,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.paginators import ListJobsPaginator, ...
+from mypy_boto3_glacier.paginator import ListJobsPaginator, ...
 ```
 
 - [ListJobsPaginator](./paginators.md#listjobspaginator)
 - [ListMultipartUploadsPaginator](./paginators.md#listmultipartuploadspaginator)
 - [ListPartsPaginator](./paginators.md#listpartspaginator)
 - [ListVaultsPaginator](./paginators.md#listvaultspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -152,11 +178,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_glacier.waiters import VaultExistsWaiter, ...
+from mypy_boto3_glacier.waiter import VaultExistsWaiter, ...
 ```
 
 - [VaultExistsWaiter](./waiters.md#vaultexistswaiter)
 - [VaultNotExistsWaiter](./waiters.md#vaultnotexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -187,6 +215,8 @@ from mypy_boto3_glacier.literals import ActionCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

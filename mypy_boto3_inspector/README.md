@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-inspector-module"></a>
+
 # Type annotations for boto3 Inspector module
 
 > [Index](..) > Inspector
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Inspector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector.html#Inspector)
 type annotations stubs module
-[mypy_boto3_inspector](https://pypi.org/project/mypy-boto3-inspector/).
+[mypy-boto3-inspector](https://pypi.org/project/mypy-boto3-inspector/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[inspector]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[inspector]'
+
+# standalone installation
 pip install mypy-boto3-inspector
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-inspector
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="inspectorclient"></a>
+
 ## InspectorClient
 
 Type annotations for `boto3.client("inspector")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_inspector.client import InspectorClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -74,6 +88,8 @@ from mypy_boto3_inspector.client import InspectorClient
 - [unsubscribe_from_event](./client.md#unsubscribe_from_event)
 - [update_assessment_target](./client.md#update_assessment_target)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 InspectorClient [exceptions](./client.md#exceptions)
@@ -91,6 +107,8 @@ InspectorClient [exceptions](./client.md#exceptions)
 - ServiceTemporarilyUnavailableException
 - UnsupportedFeatureException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -99,7 +117,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_inspector.paginators import ListAssessmentRunAgentsPaginator, ...
+from mypy_boto3_inspector.paginator import ListAssessmentRunAgentsPaginator, ...
 ```
 
 - [ListAssessmentRunAgentsPaginator](./paginators.md#listassessmentrunagentspaginator)
@@ -111,6 +129,8 @@ from mypy_boto3_inspector.paginators import ListAssessmentRunAgentsPaginator, ..
 - [ListFindingsPaginator](./paginators.md#listfindingspaginator)
 - [ListRulesPackagesPaginator](./paginators.md#listrulespackagespaginator)
 - [PreviewAgentsPaginator](./paginators.md#previewagentspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -148,6 +168,8 @@ from mypy_boto3_inspector.literals import AgentHealthCodeType, ...
 - [StopActionType](./literals.md#stopactiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

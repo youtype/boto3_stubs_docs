@@ -1,3 +1,5 @@
+<a id="accountclient-for-boto3-account-module"></a>
+
 # AccountClient for boto3 Account module
 
 > [Index](..) > [Account](.) > AccountClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
 type annotations stubs module
-[mypy_boto3_account](https://pypi.org/project/mypy-boto3-account/).
+[mypy-boto3-account](https://pypi.org/project/mypy-boto3-account/).
 
 - [AccountClient for boto3 Account module](#accountclient-for-boto3-account-module)
   - [AccountClient](#accountclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [get_alternate_contact](#get_alternate_contact)
     - [put_alternate_contact](#put_alternate_contact)
 
+<a id="accountclient"></a>
+
 ## AccountClient
 
 Type annotations for `boto3.client("account")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("account")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_account.client import AccountClient
 
 def get_account_client() -> AccountClient:
-    return boto3.client("account")
+    return Session().client("account")
 ```
 
 Boto3 documentation:
 [Account.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -55,7 +62,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -67,6 +78,8 @@ Boto3 documentation:
 [Account.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -82,6 +95,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_alternate_contact"></a>
 
 ### delete_alternate_contact
 
@@ -102,6 +117,8 @@ Keyword-only arguments:
   *(required)*
 - `AccountId`: `str`
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -119,6 +136,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_alternate_contact"></a>
 
 ### get_alternate_contact
 
@@ -142,6 +161,8 @@ Keyword-only arguments:
 
 Returns
 [GetAlternateContactResponseTypeDef](./type_defs.md#getalternatecontactresponsetypedef).
+
+<a id="put_alternate_contact"></a>
 
 ### put_alternate_contact
 

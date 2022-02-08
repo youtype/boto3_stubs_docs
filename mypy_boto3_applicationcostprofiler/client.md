@@ -1,3 +1,5 @@
+<a id="applicationcostprofilerclient-for-boto3-applicationcostprofiler-module"></a>
+
 # ApplicationCostProfilerClient for boto3 ApplicationCostProfiler module
 
 > [Index](..) > [ApplicationCostProfiler](.) > ApplicationCostProfilerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
 type annotations stubs module
-[mypy_boto3_applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
+[mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
 
 - [ApplicationCostProfilerClient for boto3 ApplicationCostProfiler module](#applicationcostprofilerclient-for-boto3-applicationcostprofiler-module)
   - [ApplicationCostProfilerClient](#applicationcostprofilerclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [update_report_definition](#update_report_definition)
     - [get_paginator](#get_paginator)
 
+<a id="applicationcostprofilerclient"></a>
+
 ## ApplicationCostProfilerClient
 
 Type annotations for `boto3.client("applicationcostprofiler")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("applicationcostprofiler")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_applicationcostprofiler.client import ApplicationCostProfilerClient
 
 def get_applicationcostprofiler_client() -> ApplicationCostProfilerClient:
-    return boto3.client("applicationcostprofiler")
+    return Session().client("applicationcostprofiler")
 ```
 
 Boto3 documentation:
 [ApplicationCostProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -59,7 +66,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -72,6 +83,8 @@ Boto3 documentation:
 [ApplicationCostProfiler.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -88,6 +101,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="delete_report_definition"></a>
 
 ### delete_report_definition
 
@@ -109,6 +124,8 @@ Keyword-only arguments:
 Returns
 [DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -127,6 +144,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_report_definition"></a>
 
 ### get_report_definition
 
@@ -148,6 +167,8 @@ Keyword-only arguments:
 
 Returns
 [GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef).
+
+<a id="import_application_usage"></a>
 
 ### import_application_usage
 
@@ -171,6 +192,8 @@ Keyword-only arguments:
 Returns
 [ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef).
 
+<a id="list_report_definitions"></a>
+
 ### list_report_definitions
 
 Retrieves a list of all reports and their configurations for your AWS account.
@@ -191,6 +214,8 @@ Keyword-only arguments:
 
 Returns
 [ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef).
+
+<a id="put_report_definition"></a>
 
 ### put_report_definition
 
@@ -218,6 +243,8 @@ Keyword-only arguments:
 Returns
 [PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef).
 
+<a id="update_report_definition"></a>
+
 ### update_report_definition
 
 Updates existing report in AWS Application Cost Profiler.
@@ -243,6 +270,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateReportDefinitionResultTypeDef](./type_defs.md#updatereportdefinitionresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

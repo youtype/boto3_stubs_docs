@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-lexruntimeservice-module"></a>
+
 # Typed dictionaries for boto3 LexRuntimeService module
 
 > [Index](..) > [LexRuntimeService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexRuntimeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-runtime.html#LexRuntimeService)
 type annotations stubs module
-[mypy_boto3_lex_runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
+[mypy-boto3-lex-runtime](https://pypi.org/project/mypy-boto3-lex-runtime/).
 
 - [Typed dictionaries for boto3 LexRuntimeService module](#typed-dictionaries-for-boto3-lexruntimeservice-module)
   - [ActiveContextTimeToLiveTypeDef](#activecontexttimetolivetypedef)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SentimentResponseTypeDef](#sentimentresponsetypedef)
 
+<a id="activecontexttimetolivetypedef"></a>
+
 ## ActiveContextTimeToLiveTypeDef
 
 ```python
@@ -40,6 +44,8 @@ Optional fields:
 
 - `timeToLiveInSeconds`: `int`
 - `turnsToLive`: `int`
+
+<a id="activecontexttypedef"></a>
 
 ## ActiveContextTypeDef
 
@@ -54,6 +60,8 @@ Required fields:
   [ActiveContextTimeToLiveTypeDef](./type_defs.md#activecontexttimetolivetypedef)
 - `parameters`: `Dict`\[`str`, `str`\]
 
+<a id="buttontypedef"></a>
+
 ## ButtonTypeDef
 
 ```python
@@ -64,6 +72,8 @@ Required fields:
 
 - `text`: `str`
 - `value`: `str`
+
+<a id="deletesessionrequestrequesttypedef"></a>
 
 ## DeleteSessionRequestRequestTypeDef
 
@@ -76,6 +86,8 @@ Required fields:
 - `botName`: `str`
 - `botAlias`: `str`
 - `userId`: `str`
+
+<a id="deletesessionresponsetypedef"></a>
 
 ## DeleteSessionResponseTypeDef
 
@@ -91,6 +103,8 @@ Required fields:
 - `sessionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dialogactiontypedef"></a>
 
 ## DialogActionTypeDef
 
@@ -112,6 +126,8 @@ Optional fields:
 - `message`: `str`
 - `messageFormat`: [MessageFormatTypeType](./literals.md#messageformattypetype)
 
+<a id="genericattachmenttypedef"></a>
+
 ## GenericAttachmentTypeDef
 
 ```python
@@ -125,6 +141,8 @@ Optional fields:
 - `attachmentLinkUrl`: `str`
 - `imageUrl`: `str`
 - `buttons`: `List`\[[ButtonTypeDef](./type_defs.md#buttontypedef)\]
+
+<a id="getsessionrequestrequesttypedef"></a>
 
 ## GetSessionRequestRequestTypeDef
 
@@ -141,6 +159,8 @@ Required fields:
 Optional fields:
 
 - `checkpointLabelFilter`: `str`
+
+<a id="getsessionresponsetypedef"></a>
 
 ## GetSessionResponseTypeDef
 
@@ -160,6 +180,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="intentconfidencetypedef"></a>
+
 ## IntentConfidenceTypeDef
 
 ```python
@@ -169,6 +191,8 @@ from mypy_boto3_lex_runtime.type_defs import IntentConfidenceTypeDef
 Optional fields:
 
 - `score`: `float`
+
+<a id="intentsummarytypedef"></a>
 
 ## IntentSummaryTypeDef
 
@@ -192,6 +216,8 @@ Optional fields:
   [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - `slotToElicit`: `str`
 
+<a id="postcontentrequestrequesttypedef"></a>
+
 ## PostContentRequestRequestTypeDef
 
 ```python
@@ -212,6 +238,8 @@ Optional fields:
 - `requestAttributes`: `str`
 - `accept`: `str`
 - `activeContexts`: `str`
+
+<a id="postcontentresponsetypedef"></a>
 
 ## PostContentResponseTypeDef
 
@@ -242,6 +270,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="posttextrequestrequesttypedef"></a>
+
 ## PostTextRequestRequestTypeDef
 
 ```python
@@ -261,6 +291,8 @@ Optional fields:
 - `requestAttributes`: `Mapping`\[`str`, `str`\]
 - `activeContexts`:
   `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+
+<a id="posttextresponsetypedef"></a>
 
 ## PostTextResponseTypeDef
 
@@ -291,6 +323,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="predictedintenttypedef"></a>
+
 ## PredictedIntentTypeDef
 
 ```python
@@ -303,6 +337,8 @@ Optional fields:
 - `nluIntentConfidence`:
   [IntentConfidenceTypeDef](./type_defs.md#intentconfidencetypedef)
 - `slots`: `Dict`\[`str`, `str`\]
+
+<a id="putsessionrequestrequesttypedef"></a>
 
 ## PutSessionRequestRequestTypeDef
 
@@ -325,6 +361,8 @@ Optional fields:
 - `accept`: `str`
 - `activeContexts`:
   `Sequence`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
+
+<a id="putsessionresponsetypedef"></a>
 
 ## PutSessionResponseTypeDef
 
@@ -349,6 +387,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsecardtypedef"></a>
+
 ## ResponseCardTypeDef
 
 ```python
@@ -363,6 +403,8 @@ Optional fields:
 - `genericAttachments`:
   `List`\[[GenericAttachmentTypeDef](./type_defs.md#genericattachmenttypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -376,6 +418,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sentimentresponsetypedef"></a>
 
 ## SentimentResponseTypeDef
 

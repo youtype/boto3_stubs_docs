@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-braket-module"></a>
+
 # Literals for boto3 Braket module
 
 > [Index](..) > [Braket](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module
-[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+[mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 - [Literals for boto3 Braket module](#literals-for-boto3-braket-module)
   - [CancellationStatusType](#cancellationstatustype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="cancellationstatustype"></a>
+
 ## CancellationStatusType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `CANCELLED`
 - `CANCELLING`
 
+<a id="compressiontypetype"></a>
+
 ## CompressionTypeType
 
 ```python
@@ -45,6 +51,8 @@ Values:
 
 - `GZIP`
 - `NONE`
+
+<a id="devicestatustype"></a>
 
 ## DeviceStatusType
 
@@ -58,6 +66,8 @@ Values:
 - `ONLINE`
 - `RETIRED`
 
+<a id="devicetypetype"></a>
+
 ## DeviceTypeType
 
 ```python
@@ -68,6 +78,8 @@ Values:
 
 - `QPU`
 - `SIMULATOR`
+
+<a id="instancetypetype"></a>
 
 ## InstanceTypeType
 
@@ -117,6 +129,8 @@ Values:
 - `ml.p3dn.24xlarge`
 - `ml.p4d.24xlarge`
 
+<a id="jobeventtypetype"></a>
+
 ## JobEventTypeType
 
 ```python
@@ -137,6 +151,8 @@ Values:
 - `UPLOADING_RESULTS`
 - `WAITING_FOR_PRIORITY`
 
+<a id="jobprimarystatustype"></a>
+
 ## JobPrimaryStatusType
 
 ```python
@@ -151,6 +167,8 @@ Values:
 - `FAILED`
 - `QUEUED`
 - `RUNNING`
+
+<a id="quantumtaskstatustype"></a>
 
 ## QuantumTaskStatusType
 
@@ -168,6 +186,8 @@ Values:
 - `QUEUED`
 - `RUNNING`
 
+<a id="searchdevicespaginatorname"></a>
+
 ## SearchDevicesPaginatorName
 
 ```python
@@ -177,6 +197,8 @@ from mypy_boto3_braket.literals import SearchDevicesPaginatorName
 Values:
 
 - `search_devices`
+
+<a id="searchjobsfilteroperatortype"></a>
 
 ## SearchJobsFilterOperatorType
 
@@ -194,6 +216,8 @@ Values:
 - `LT`
 - `LTE`
 
+<a id="searchjobspaginatorname"></a>
+
 ## SearchJobsPaginatorName
 
 ```python
@@ -203,6 +227,8 @@ from mypy_boto3_braket.literals import SearchJobsPaginatorName
 Values:
 
 - `search_jobs`
+
+<a id="searchquantumtasksfilteroperatortype"></a>
 
 ## SearchQuantumTasksFilterOperatorType
 
@@ -219,6 +245,8 @@ Values:
 - `LT`
 - `LTE`
 
+<a id="searchquantumtaskspaginatorname"></a>
+
 ## SearchQuantumTasksPaginatorName
 
 ```python
@@ -228,6 +256,8 @@ from mypy_boto3_braket.literals import SearchQuantumTasksPaginatorName
 Values:
 
 - `search_quantum_tasks`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -536,6 +566,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

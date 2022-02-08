@@ -1,3 +1,5 @@
+<a id="lookoutforvisionclient-for-boto3-lookoutforvision-module"></a>
+
 # LookoutforVisionClient for boto3 LookoutforVision module
 
 > [Index](..) > [LookoutforVision](.) > LookoutforVisionClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
-[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 - [LookoutforVisionClient for boto3 LookoutforVision module](#lookoutforvisionclient-for-boto3-lookoutforvision-module)
   - [LookoutforVisionClient](#lookoutforvisionclient)
@@ -38,6 +40,8 @@ type annotations stubs module
     - [update_dataset_entries](#update_dataset_entries)
     - [get_paginator](#get_paginator)
 
+<a id="lookoutforvisionclient"></a>
+
 ## LookoutforVisionClient
 
 Type annotations for `boto3.client("lookoutvision")`
@@ -45,14 +49,17 @@ Type annotations for `boto3.client("lookoutvision")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 
 def get_lookoutvision_client() -> LookoutforVisionClient:
-    return boto3.client("lookoutvision")
+    return Session().client("lookoutvision")
 ```
 
 Boto3 documentation:
 [LookoutforVision.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -77,7 +84,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -89,6 +100,8 @@ Boto3 documentation:
 [LookoutforVision.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -104,6 +117,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_dataset"></a>
 
 ### create_dataset
 
@@ -126,6 +141,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
+
+<a id="create_model"></a>
 
 ### create_model
 
@@ -153,6 +170,8 @@ Keyword-only arguments:
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates an empty Amazon Lookout for Vision project.
@@ -173,6 +192,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
+<a id="delete_dataset"></a>
+
 ### delete_dataset
 
 Deletes an existing Amazon Lookout for Vision `dataset` .
@@ -192,6 +213,8 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_model"></a>
 
 ### delete_model
 
@@ -214,6 +237,8 @@ Keyword-only arguments:
 Returns
 [DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes an Amazon Lookout for Vision project.
@@ -233,6 +258,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
+
+<a id="describe_dataset"></a>
 
 ### describe_dataset
 
@@ -254,6 +281,8 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
+<a id="describe_model"></a>
+
 ### describe_model
 
 Describes a version of an Amazon Lookout for Vision model.
@@ -273,6 +302,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
+
+<a id="describe_model_packaging_job"></a>
 
 ### describe_model_packaging_job
 
@@ -295,6 +326,8 @@ Keyword-only arguments:
 Returns
 [DescribeModelPackagingJobResponseTypeDef](./type_defs.md#describemodelpackagingjobresponsetypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Describes an Amazon Lookout for Vision project.
@@ -313,6 +346,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
+
+<a id="detect_anomalies"></a>
 
 ### detect_anomalies
 
@@ -336,6 +371,8 @@ Keyword-only arguments:
 Returns
 [DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -354,6 +391,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_dataset_entries"></a>
 
 ### list_dataset_entries
 
@@ -383,6 +422,8 @@ Keyword-only arguments:
 Returns
 [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
+<a id="list_model_packaging_jobs"></a>
+
 ### list_model_packaging_jobs
 
 Lists the model packaging jobs created for an Amazon Lookout for Vision
@@ -406,6 +447,8 @@ Keyword-only arguments:
 Returns
 [ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef).
 
+<a id="list_models"></a>
+
 ### list_models
 
 Lists the versions of a model in an Amazon Lookout for Vision project.
@@ -426,6 +469,8 @@ Keyword-only arguments:
 
 Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Lists the Amazon Lookout for Vision projects in your AWS account.
@@ -445,6 +490,8 @@ Keyword-only arguments:
 
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -467,6 +514,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="start_model"></a>
+
 ### start_model
 
 Starts the running of the version of an Amazon Lookout for Vision model.
@@ -487,6 +536,8 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
+
+<a id="start_model_packaging_job"></a>
 
 ### start_model_packaging_job
 
@@ -515,6 +566,8 @@ Keyword-only arguments:
 Returns
 [StartModelPackagingJobResponseTypeDef](./type_defs.md#startmodelpackagingjobresponsetypedef).
 
+<a id="stop_model"></a>
+
 ### stop_model
 
 Stops the hosting of a running model.
@@ -535,6 +588,8 @@ Keyword-only arguments:
 
 Returns [StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more key-value tags to an Amazon Lookout for Vision model.
@@ -554,6 +609,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from an Amazon Lookout for Vision model.
@@ -572,6 +629,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_dataset_entries"></a>
 
 ### update_dataset_entries
 
@@ -595,6 +654,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDatasetEntriesResponseTypeDef](./type_defs.md#updatedatasetentriesresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

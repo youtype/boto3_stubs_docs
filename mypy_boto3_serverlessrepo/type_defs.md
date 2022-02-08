@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-serverlessapplicationrepository-module"></a>
+
 # Typed dictionaries for boto3 ServerlessApplicationRepository module
 
 > [Index](..) > [ServerlessApplicationRepository](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServerlessApplicationRepository](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/serverlessrepo.html#ServerlessApplicationRepository)
 type annotations stubs module
-[mypy_boto3_serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
+[mypy-boto3-serverlessrepo](https://pypi.org/project/mypy-boto3-serverlessrepo/).
 
 - [Typed dictionaries for boto3 ServerlessApplicationRepository module](#typed-dictionaries-for-boto3-serverlessapplicationrepository-module)
   - [ApplicationDependencySummaryTypeDef](#applicationdependencysummarytypedef)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [VersionSummaryTypeDef](#versionsummarytypedef)
   - [VersionTypeDef](#versiontypedef)
 
+<a id="applicationdependencysummarytypedef"></a>
+
 ## ApplicationDependencySummaryTypeDef
 
 ```python
@@ -57,6 +61,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `SemanticVersion`: `str`
+
+<a id="applicationpolicystatementtypedef"></a>
 
 ## ApplicationPolicyStatementTypeDef
 
@@ -73,6 +79,8 @@ Optional fields:
 
 - `PrincipalOrgIDs`: `List`\[`str`\]
 - `StatementId`: `str`
+
+<a id="applicationsummarytypedef"></a>
 
 ## ApplicationSummaryTypeDef
 
@@ -93,6 +101,8 @@ Optional fields:
 - `HomePageUrl`: `str`
 - `Labels`: `List`\[`str`\]
 - `SpdxLicenseId`: `str`
+
+<a id="createapplicationrequestrequesttypedef"></a>
 
 ## CreateApplicationRequestRequestTypeDef
 
@@ -121,6 +131,8 @@ Optional fields:
 - `TemplateBody`: `str`
 - `TemplateUrl`: `str`
 
+<a id="createapplicationresponsetypedef"></a>
+
 ## CreateApplicationResponseTypeDef
 
 ```python
@@ -145,6 +157,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createapplicationversionrequestrequesttypedef"></a>
+
 ## CreateApplicationVersionRequestRequestTypeDef
 
 ```python
@@ -162,6 +176,8 @@ Optional fields:
 - `SourceCodeUrl`: `str`
 - `TemplateBody`: `str`
 - `TemplateUrl`: `str`
+
+<a id="createapplicationversionresponsetypedef"></a>
 
 ## CreateApplicationVersionResponseTypeDef
 
@@ -184,6 +200,8 @@ Required fields:
 - `TemplateUrl`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcloudformationchangesetrequestrequesttypedef"></a>
 
 ## CreateCloudFormationChangeSetRequestRequestTypeDef
 
@@ -212,6 +230,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TemplateId`: `str`
 
+<a id="createcloudformationchangesetresponsetypedef"></a>
+
 ## CreateCloudFormationChangeSetResponseTypeDef
 
 ```python
@@ -227,6 +247,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createcloudformationtemplaterequestrequesttypedef"></a>
+
 ## CreateCloudFormationTemplateRequestRequestTypeDef
 
 ```python
@@ -240,6 +262,8 @@ Required fields:
 Optional fields:
 
 - `SemanticVersion`: `str`
+
+<a id="createcloudformationtemplateresponsetypedef"></a>
 
 ## CreateCloudFormationTemplateResponseTypeDef
 
@@ -259,6 +283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapplicationrequestrequesttypedef"></a>
+
 ## DeleteApplicationRequestRequestTypeDef
 
 ```python
@@ -269,6 +295,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 
+<a id="getapplicationpolicyrequestrequesttypedef"></a>
+
 ## GetApplicationPolicyRequestRequestTypeDef
 
 ```python
@@ -278,6 +306,8 @@ from mypy_boto3_serverlessrepo.type_defs import GetApplicationPolicyRequestReque
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getapplicationpolicyresponsetypedef"></a>
 
 ## GetApplicationPolicyResponseTypeDef
 
@@ -292,6 +322,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapplicationrequestrequesttypedef"></a>
+
 ## GetApplicationRequestRequestTypeDef
 
 ```python
@@ -305,6 +337,8 @@ Required fields:
 Optional fields:
 
 - `SemanticVersion`: `str`
+
+<a id="getapplicationresponsetypedef"></a>
 
 ## GetApplicationResponseTypeDef
 
@@ -330,6 +364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcloudformationtemplaterequestrequesttypedef"></a>
+
 ## GetCloudFormationTemplateRequestRequestTypeDef
 
 ```python
@@ -340,6 +376,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `TemplateId`: `str`
+
+<a id="getcloudformationtemplateresponsetypedef"></a>
 
 ## GetCloudFormationTemplateResponseTypeDef
 
@@ -359,6 +397,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listapplicationdependenciesrequestrequesttypedef"></a>
+
 ## ListApplicationDependenciesRequestRequestTypeDef
 
 ```python
@@ -375,6 +415,8 @@ Optional fields:
 - `NextToken`: `str`
 - `SemanticVersion`: `str`
 
+<a id="listapplicationdependenciesresponsetypedef"></a>
+
 ## ListApplicationDependenciesResponseTypeDef
 
 ```python
@@ -388,6 +430,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listapplicationversionsrequestrequesttypedef"></a>
 
 ## ListApplicationVersionsRequestRequestTypeDef
 
@@ -404,6 +448,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `NextToken`: `str`
 
+<a id="listapplicationversionsresponsetypedef"></a>
+
 ## ListApplicationVersionsResponseTypeDef
 
 ```python
@@ -418,6 +464,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listapplicationsrequestrequesttypedef"></a>
+
 ## ListApplicationsRequestRequestTypeDef
 
 ```python
@@ -428,6 +476,8 @@ Optional fields:
 
 - `MaxItems`: `int`
 - `NextToken`: `str`
+
+<a id="listapplicationsresponsetypedef"></a>
 
 ## ListApplicationsResponseTypeDef
 
@@ -443,6 +493,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -454,6 +506,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parameterdefinitiontypedef"></a>
 
 ## ParameterDefinitionTypeDef
 
@@ -480,6 +534,8 @@ Optional fields:
 - `NoEcho`: `bool`
 - `Type`: `str`
 
+<a id="parametervaluetypedef"></a>
+
 ## ParameterValueTypeDef
 
 ```python
@@ -490,6 +546,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="putapplicationpolicyrequestrequesttypedef"></a>
 
 ## PutApplicationPolicyRequestRequestTypeDef
 
@@ -503,6 +561,8 @@ Required fields:
 - `Statements`:
   `Sequence`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
 
+<a id="putapplicationpolicyresponsetypedef"></a>
+
 ## PutApplicationPolicyResponseTypeDef
 
 ```python
@@ -515,6 +575,8 @@ Required fields:
   `List`\[[ApplicationPolicyStatementTypeDef](./type_defs.md#applicationpolicystatementtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -530,6 +592,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rollbackconfigurationtypedef"></a>
+
 ## RollbackConfigurationTypeDef
 
 ```python
@@ -542,6 +606,8 @@ Optional fields:
 - `RollbackTriggers`:
   `Sequence`\[[RollbackTriggerTypeDef](./type_defs.md#rollbacktriggertypedef)\]
 
+<a id="rollbacktriggertypedef"></a>
+
 ## RollbackTriggerTypeDef
 
 ```python
@@ -552,6 +618,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Type`: `str`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -564,6 +632,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="unshareapplicationrequestrequesttypedef"></a>
+
 ## UnshareApplicationRequestRequestTypeDef
 
 ```python
@@ -574,6 +644,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `OrganizationId`: `str`
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 
@@ -593,6 +665,8 @@ Optional fields:
 - `Labels`: `Sequence`\[`str`\]
 - `ReadmeBody`: `str`
 - `ReadmeUrl`: `str`
+
+<a id="updateapplicationresponsetypedef"></a>
 
 ## UpdateApplicationResponseTypeDef
 
@@ -618,6 +692,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="versionsummarytypedef"></a>
+
 ## VersionSummaryTypeDef
 
 ```python
@@ -633,6 +709,8 @@ Required fields:
 Optional fields:
 
 - `SourceCodeUrl`: `str`
+
+<a id="versiontypedef"></a>
 
 ## VersionTypeDef
 

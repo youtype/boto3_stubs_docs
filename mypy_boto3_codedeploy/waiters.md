@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-codedeploy-module"></a>
+
 # Waiters for boto3 CodeDeploy module
 
 > [Index](..) > [CodeDeploy](.) > Waiters
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [CodeDeploy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codedeploy.html#CodeDeploy)
 type annotations stubs module
-[mypy_boto3_codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
+[mypy-boto3-codedeploy](https://pypi.org/project/mypy-boto3-codedeploy/).
 
 - [Waiters for boto3 CodeDeploy module](#waiters-for-boto3-codedeploy-module)
   - [DeploymentSuccessfulWaiter](#deploymentsuccessfulwaiter)
+
+<a id="deploymentsuccessfulwaiter"></a>
 
 ## DeploymentSuccessfulWaiter
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codedeploy.waiter import DeploymentSuccessfulWaiter
 
 def get_deployment_successful_waiter() -> DeploymentSuccessfulWaiter:
-    return boto3.client("codedeploy").get_waiter("deployment_successful")
+    return Session().client("codedeploy").get_waiter("deployment_successful")
 ```
 
 Boto3 documentation:

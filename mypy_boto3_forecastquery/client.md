@@ -1,3 +1,5 @@
+<a id="forecastqueryserviceclient-for-boto3-forecastqueryservice-module"></a>
+
 # ForecastQueryServiceClient for boto3 ForecastQueryService module
 
 > [Index](..) > [ForecastQueryService](.) > ForecastQueryServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
 type annotations stubs module
-[mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
+[mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 - [ForecastQueryServiceClient for boto3 ForecastQueryService module](#forecastqueryserviceclient-for-boto3-forecastqueryservice-module)
   - [ForecastQueryServiceClient](#forecastqueryserviceclient)
@@ -16,6 +18,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [query_forecast](#query_forecast)
 
+<a id="forecastqueryserviceclient"></a>
+
 ## ForecastQueryServiceClient
 
 Type annotations for `boto3.client("forecastquery")`
@@ -23,14 +27,17 @@ Type annotations for `boto3.client("forecastquery")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_forecastquery.client import ForecastQueryServiceClient
 
 def get_forecastquery_client() -> ForecastQueryServiceClient:
-    return boto3.client("forecastquery")
+    return Session().client("forecastquery")
 ```
 
 Boto3 documentation:
 [ForecastQueryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -53,7 +60,11 @@ Exceptions:
 - `Exceptions.ResourceInUseException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -65,6 +76,8 @@ Boto3 documentation:
 [ForecastQueryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -80,6 +93,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -99,6 +114,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="query_forecast"></a>
 
 ### query_forecast
 

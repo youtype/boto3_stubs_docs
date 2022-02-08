@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-forecastservice-module"></a>
+
 # Typed dictionaries for boto3 ForecastService module
 
 > [Index](..) > [ForecastService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ForecastService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecast.html#ForecastService)
 type annotations stubs module
-[mypy_boto3_forecast](https://pypi.org/project/mypy-boto3-forecast/).
+[mypy-boto3-forecast](https://pypi.org/project/mypy-boto3-forecast/).
 
 - [Typed dictionaries for boto3 ForecastService module](#typed-dictionaries-for-boto3-forecastservice-module)
   - [AdditionalDatasetTypeDef](#additionaldatasettypedef)
@@ -130,6 +132,8 @@ type annotations stubs module
   - [WeightedQuantileLossTypeDef](#weightedquantilelosstypedef)
   - [WindowSummaryTypeDef](#windowsummarytypedef)
 
+<a id="additionaldatasettypedef"></a>
+
 ## AdditionalDatasetTypeDef
 
 ```python
@@ -144,6 +148,8 @@ Optional fields:
 
 - `Configuration`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
+<a id="attributeconfigtypedef"></a>
+
 ## AttributeConfigTypeDef
 
 ```python
@@ -155,6 +161,8 @@ Required fields:
 - `AttributeName`: `str`
 - `Transformations`: `Mapping`\[`str`, `str`\]
 
+<a id="categoricalparameterrangetypedef"></a>
+
 ## CategoricalParameterRangeTypeDef
 
 ```python
@@ -165,6 +173,8 @@ Required fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="continuousparameterrangetypedef"></a>
 
 ## ContinuousParameterRangeTypeDef
 
@@ -181,6 +191,8 @@ Required fields:
 Optional fields:
 
 - `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
+
+<a id="createautopredictorrequestrequesttypedef"></a>
 
 ## CreateAutoPredictorRequestRequestTypeDef
 
@@ -207,6 +219,8 @@ Optional fields:
 - `ExplainPredictor`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createautopredictorresponsetypedef"></a>
+
 ## CreateAutoPredictorResponseTypeDef
 
 ```python
@@ -218,6 +232,8 @@ Required fields:
 - `PredictorArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetgrouprequestrequesttypedef"></a>
 
 ## CreateDatasetGroupRequestRequestTypeDef
 
@@ -235,6 +251,8 @@ Optional fields:
 - `DatasetArns`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdatasetgroupresponsetypedef"></a>
+
 ## CreateDatasetGroupResponseTypeDef
 
 ```python
@@ -246,6 +264,8 @@ Required fields:
 - `DatasetGroupArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetimportjobrequestrequesttypedef"></a>
 
 ## CreateDatasetImportJobRequestRequestTypeDef
 
@@ -267,6 +287,8 @@ Optional fields:
 - `GeolocationFormat`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdatasetimportjobresponsetypedef"></a>
+
 ## CreateDatasetImportJobResponseTypeDef
 
 ```python
@@ -278,6 +300,8 @@ Required fields:
 - `DatasetImportJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDatasetRequestRequestTypeDef
 
@@ -299,6 +323,8 @@ Optional fields:
   [EncryptionConfigTypeDef](./type_defs.md#encryptionconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -310,6 +336,8 @@ Required fields:
 - `DatasetArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createexplainabilityexportrequestrequesttypedef"></a>
 
 ## CreateExplainabilityExportRequestRequestTypeDef
 
@@ -328,6 +356,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createexplainabilityexportresponsetypedef"></a>
+
 ## CreateExplainabilityExportResponseTypeDef
 
 ```python
@@ -339,6 +369,8 @@ Required fields:
 - `ExplainabilityExportArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createexplainabilityrequestrequesttypedef"></a>
 
 ## CreateExplainabilityRequestRequestTypeDef
 
@@ -362,6 +394,8 @@ Optional fields:
 - `EndDateTime`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createexplainabilityresponsetypedef"></a>
+
 ## CreateExplainabilityResponseTypeDef
 
 ```python
@@ -373,6 +407,8 @@ Required fields:
 - `ExplainabilityArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createforecastexportjobrequestrequesttypedef"></a>
 
 ## CreateForecastExportJobRequestRequestTypeDef
 
@@ -391,6 +427,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createforecastexportjobresponsetypedef"></a>
+
 ## CreateForecastExportJobResponseTypeDef
 
 ```python
@@ -402,6 +440,8 @@ Required fields:
 - `ForecastExportJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createforecastrequestrequesttypedef"></a>
 
 ## CreateForecastRequestRequestTypeDef
 
@@ -419,6 +459,8 @@ Optional fields:
 - `ForecastTypes`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createforecastresponsetypedef"></a>
+
 ## CreateForecastResponseTypeDef
 
 ```python
@@ -430,6 +472,8 @@ Required fields:
 - `ForecastArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpredictorbacktestexportjobrequestrequesttypedef"></a>
 
 ## CreatePredictorBacktestExportJobRequestRequestTypeDef
 
@@ -448,6 +492,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createpredictorbacktestexportjobresponsetypedef"></a>
+
 ## CreatePredictorBacktestExportJobResponseTypeDef
 
 ```python
@@ -459,6 +505,8 @@ Required fields:
 - `PredictorBacktestExportJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpredictorrequestrequesttypedef"></a>
 
 ## CreatePredictorRequestRequestTypeDef
 
@@ -494,6 +542,8 @@ Optional fields:
 - `OptimizationMetric`:
   [OptimizationMetricType](./literals.md#optimizationmetrictype)
 
+<a id="createpredictorresponsetypedef"></a>
+
 ## CreatePredictorResponseTypeDef
 
 ```python
@@ -505,6 +555,8 @@ Required fields:
 - `PredictorArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dataconfigtypedef"></a>
 
 ## DataConfigTypeDef
 
@@ -523,6 +575,8 @@ Optional fields:
 - `AdditionalDatasets`:
   `Sequence`\[[AdditionalDatasetTypeDef](./type_defs.md#additionaldatasettypedef)\]
 
+<a id="datadestinationtypedef"></a>
+
 ## DataDestinationTypeDef
 
 ```python
@@ -533,6 +587,8 @@ Required fields:
 
 - `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
 
+<a id="datasourcetypedef"></a>
+
 ## DataSourceTypeDef
 
 ```python
@@ -542,6 +598,8 @@ from mypy_boto3_forecast.type_defs import DataSourceTypeDef
 Required fields:
 
 - `S3Config`: [S3ConfigTypeDef](./type_defs.md#s3configtypedef)
+
+<a id="datasetgroupsummarytypedef"></a>
 
 ## DatasetGroupSummaryTypeDef
 
@@ -555,6 +613,8 @@ Optional fields:
 - `DatasetGroupName`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+
+<a id="datasetimportjobsummarytypedef"></a>
 
 ## DatasetImportJobSummaryTypeDef
 
@@ -572,6 +632,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="datasetsummarytypedef"></a>
+
 ## DatasetSummaryTypeDef
 
 ```python
@@ -587,6 +649,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="deletedatasetgrouprequestrequesttypedef"></a>
+
 ## DeleteDatasetGroupRequestRequestTypeDef
 
 ```python
@@ -596,6 +660,8 @@ from mypy_boto3_forecast.type_defs import DeleteDatasetGroupRequestRequestTypeDe
 Required fields:
 
 - `DatasetGroupArn`: `str`
+
+<a id="deletedatasetimportjobrequestrequesttypedef"></a>
 
 ## DeleteDatasetImportJobRequestRequestTypeDef
 
@@ -607,6 +673,8 @@ Required fields:
 
 - `DatasetImportJobArn`: `str`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -616,6 +684,8 @@ from mypy_boto3_forecast.type_defs import DeleteDatasetRequestRequestTypeDef
 Required fields:
 
 - `DatasetArn`: `str`
+
+<a id="deleteexplainabilityexportrequestrequesttypedef"></a>
 
 ## DeleteExplainabilityExportRequestRequestTypeDef
 
@@ -627,6 +697,8 @@ Required fields:
 
 - `ExplainabilityExportArn`: `str`
 
+<a id="deleteexplainabilityrequestrequesttypedef"></a>
+
 ## DeleteExplainabilityRequestRequestTypeDef
 
 ```python
@@ -636,6 +708,8 @@ from mypy_boto3_forecast.type_defs import DeleteExplainabilityRequestRequestType
 Required fields:
 
 - `ExplainabilityArn`: `str`
+
+<a id="deleteforecastexportjobrequestrequesttypedef"></a>
 
 ## DeleteForecastExportJobRequestRequestTypeDef
 
@@ -647,6 +721,8 @@ Required fields:
 
 - `ForecastExportJobArn`: `str`
 
+<a id="deleteforecastrequestrequesttypedef"></a>
+
 ## DeleteForecastRequestRequestTypeDef
 
 ```python
@@ -656,6 +732,8 @@ from mypy_boto3_forecast.type_defs import DeleteForecastRequestRequestTypeDef
 Required fields:
 
 - `ForecastArn`: `str`
+
+<a id="deletepredictorbacktestexportjobrequestrequesttypedef"></a>
 
 ## DeletePredictorBacktestExportJobRequestRequestTypeDef
 
@@ -667,6 +745,8 @@ Required fields:
 
 - `PredictorBacktestExportJobArn`: `str`
 
+<a id="deletepredictorrequestrequesttypedef"></a>
+
 ## DeletePredictorRequestRequestTypeDef
 
 ```python
@@ -676,6 +756,8 @@ from mypy_boto3_forecast.type_defs import DeletePredictorRequestRequestTypeDef
 Required fields:
 
 - `PredictorArn`: `str`
+
+<a id="deleteresourcetreerequestrequesttypedef"></a>
 
 ## DeleteResourceTreeRequestRequestTypeDef
 
@@ -687,6 +769,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 
+<a id="describeautopredictorrequestrequesttypedef"></a>
+
 ## DescribeAutoPredictorRequestRequestTypeDef
 
 ```python
@@ -696,6 +780,8 @@ from mypy_boto3_forecast.type_defs import DescribeAutoPredictorRequestRequestTyp
 Required fields:
 
 - `PredictorArn`: `str`
+
+<a id="describeautopredictorresponsetypedef"></a>
 
 ## DescribeAutoPredictorResponseTypeDef
 
@@ -729,6 +815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetgrouprequestrequesttypedef"></a>
+
 ## DescribeDatasetGroupRequestRequestTypeDef
 
 ```python
@@ -738,6 +826,8 @@ from mypy_boto3_forecast.type_defs import DescribeDatasetGroupRequestRequestType
 Required fields:
 
 - `DatasetGroupArn`: `str`
+
+<a id="describedatasetgroupresponsetypedef"></a>
 
 ## DescribeDatasetGroupResponseTypeDef
 
@@ -757,6 +847,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetimportjobrequestrequesttypedef"></a>
+
 ## DescribeDatasetImportJobRequestRequestTypeDef
 
 ```python
@@ -766,6 +858,8 @@ from mypy_boto3_forecast.type_defs import DescribeDatasetImportJobRequestRequest
 Required fields:
 
 - `DatasetImportJobArn`: `str`
+
+<a id="describedatasetimportjobresponsetypedef"></a>
 
 ## DescribeDatasetImportJobResponseTypeDef
 
@@ -794,6 +888,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -803,6 +899,8 @@ from mypy_boto3_forecast.type_defs import DescribeDatasetRequestRequestTypeDef
 Required fields:
 
 - `DatasetArn`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -826,6 +924,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexplainabilityexportrequestrequesttypedef"></a>
+
 ## DescribeExplainabilityExportRequestRequestTypeDef
 
 ```python
@@ -835,6 +935,8 @@ from mypy_boto3_forecast.type_defs import DescribeExplainabilityExportRequestReq
 Required fields:
 
 - `ExplainabilityExportArn`: `str`
+
+<a id="describeexplainabilityexportresponsetypedef"></a>
 
 ## DescribeExplainabilityExportResponseTypeDef
 
@@ -856,6 +958,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexplainabilityrequestrequesttypedef"></a>
+
 ## DescribeExplainabilityRequestRequestTypeDef
 
 ```python
@@ -865,6 +969,8 @@ from mypy_boto3_forecast.type_defs import DescribeExplainabilityRequestRequestTy
 Required fields:
 
 - `ExplainabilityArn`: `str`
+
+<a id="describeexplainabilityresponsetypedef"></a>
 
 ## DescribeExplainabilityResponseTypeDef
 
@@ -892,6 +998,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeforecastexportjobrequestrequesttypedef"></a>
+
 ## DescribeForecastExportJobRequestRequestTypeDef
 
 ```python
@@ -901,6 +1009,8 @@ from mypy_boto3_forecast.type_defs import DescribeForecastExportJobRequestReques
 Required fields:
 
 - `ForecastExportJobArn`: `str`
+
+<a id="describeforecastexportjobresponsetypedef"></a>
 
 ## DescribeForecastExportJobResponseTypeDef
 
@@ -922,6 +1032,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeforecastrequestrequesttypedef"></a>
+
 ## DescribeForecastRequestRequestTypeDef
 
 ```python
@@ -931,6 +1043,8 @@ from mypy_boto3_forecast.type_defs import DescribeForecastRequestRequestTypeDef
 Required fields:
 
 - `ForecastArn`: `str`
+
+<a id="describeforecastresponsetypedef"></a>
 
 ## DescribeForecastResponseTypeDef
 
@@ -953,6 +1067,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepredictorbacktestexportjobrequestrequesttypedef"></a>
+
 ## DescribePredictorBacktestExportJobRequestRequestTypeDef
 
 ```python
@@ -962,6 +1078,8 @@ from mypy_boto3_forecast.type_defs import DescribePredictorBacktestExportJobRequ
 Required fields:
 
 - `PredictorBacktestExportJobArn`: `str`
+
+<a id="describepredictorbacktestexportjobresponsetypedef"></a>
 
 ## DescribePredictorBacktestExportJobResponseTypeDef
 
@@ -983,6 +1101,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepredictorrequestrequesttypedef"></a>
+
 ## DescribePredictorRequestRequestTypeDef
 
 ```python
@@ -992,6 +1112,8 @@ from mypy_boto3_forecast.type_defs import DescribePredictorRequestRequestTypeDef
 Required fields:
 
 - `PredictorArn`: `str`
+
+<a id="describepredictorresponsetypedef"></a>
 
 ## DescribePredictorResponseTypeDef
 
@@ -1036,6 +1158,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="encryptionconfigtypedef"></a>
+
 ## EncryptionConfigTypeDef
 
 ```python
@@ -1046,6 +1170,8 @@ Required fields:
 
 - `RoleArn`: `str`
 - `KMSKeyArn`: `str`
+
+<a id="errormetrictypedef"></a>
 
 ## ErrorMetricTypeDef
 
@@ -1061,6 +1187,8 @@ Optional fields:
 - `MASE`: `float`
 - `MAPE`: `float`
 
+<a id="evaluationparameterstypedef"></a>
+
 ## EvaluationParametersTypeDef
 
 ```python
@@ -1071,6 +1199,8 @@ Optional fields:
 
 - `NumberOfBacktestWindows`: `int`
 - `BackTestWindowOffset`: `int`
+
+<a id="evaluationresulttypedef"></a>
 
 ## EvaluationResultTypeDef
 
@@ -1084,6 +1214,8 @@ Optional fields:
 - `TestWindows`:
   `List`\[[WindowSummaryTypeDef](./type_defs.md#windowsummarytypedef)\]
 
+<a id="explainabilityconfigtypedef"></a>
+
 ## ExplainabilityConfigTypeDef
 
 ```python
@@ -1096,6 +1228,8 @@ Required fields:
   [TimeSeriesGranularityType](./literals.md#timeseriesgranularitytype)
 - `TimePointGranularity`:
   [TimePointGranularityType](./literals.md#timepointgranularitytype)
+
+<a id="explainabilityexportsummarytypedef"></a>
 
 ## ExplainabilityExportSummaryTypeDef
 
@@ -1114,6 +1248,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="explainabilityinfotypedef"></a>
+
 ## ExplainabilityInfoTypeDef
 
 ```python
@@ -1124,6 +1260,8 @@ Optional fields:
 
 - `ExplainabilityArn`: `str`
 - `Status`: `str`
+
+<a id="explainabilitysummarytypedef"></a>
 
 ## ExplainabilitySummaryTypeDef
 
@@ -1143,6 +1281,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="featurizationconfigtypedef"></a>
+
 ## FeaturizationConfigTypeDef
 
 ```python
@@ -1159,6 +1299,8 @@ Optional fields:
 - `Featurizations`:
   `Sequence`\[[FeaturizationTypeDef](./type_defs.md#featurizationtypedef)\]
 
+<a id="featurizationmethodtypedef"></a>
+
 ## FeaturizationMethodTypeDef
 
 ```python
@@ -1173,6 +1315,8 @@ Required fields:
 Optional fields:
 
 - `FeaturizationMethodParameters`: `Mapping`\[`str`, `str`\]
+
+<a id="featurizationtypedef"></a>
 
 ## FeaturizationTypeDef
 
@@ -1189,6 +1333,8 @@ Optional fields:
 - `FeaturizationPipeline`:
   `Sequence`\[[FeaturizationMethodTypeDef](./type_defs.md#featurizationmethodtypedef)\]
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1201,6 +1347,8 @@ Required fields:
 - `Value`: `str`
 - `Condition`:
   [FilterConditionStringType](./literals.md#filterconditionstringtype)
+
+<a id="forecastexportjobsummarytypedef"></a>
 
 ## ForecastExportJobSummaryTypeDef
 
@@ -1218,6 +1366,8 @@ Optional fields:
 - `Message`: `str`
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
+
+<a id="forecastsummarytypedef"></a>
 
 ## ForecastSummaryTypeDef
 
@@ -1237,6 +1387,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="getaccuracymetricsrequestrequesttypedef"></a>
+
 ## GetAccuracyMetricsRequestRequestTypeDef
 
 ```python
@@ -1246,6 +1398,8 @@ from mypy_boto3_forecast.type_defs import GetAccuracyMetricsRequestRequestTypeDe
 Required fields:
 
 - `PredictorArn`: `str`
+
+<a id="getaccuracymetricsresponsetypedef"></a>
 
 ## GetAccuracyMetricsResponseTypeDef
 
@@ -1265,6 +1419,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="hyperparametertuningjobconfigtypedef"></a>
+
 ## HyperParameterTuningJobConfigTypeDef
 
 ```python
@@ -1275,6 +1431,8 @@ Optional fields:
 
 - `ParameterRanges`:
   [ParameterRangesTypeDef](./type_defs.md#parameterrangestypedef)
+
+<a id="inputdataconfigtypedef"></a>
 
 ## InputDataConfigTypeDef
 
@@ -1290,6 +1448,8 @@ Optional fields:
 
 - `SupplementaryFeatures`:
   `Sequence`\[[SupplementaryFeatureTypeDef](./type_defs.md#supplementaryfeaturetypedef)\]
+
+<a id="integerparameterrangetypedef"></a>
 
 ## IntegerParameterRangeTypeDef
 
@@ -1307,6 +1467,8 @@ Optional fields:
 
 - `ScalingType`: [ScalingTypeType](./literals.md#scalingtypetype)
 
+<a id="listdatasetgroupsrequestrequesttypedef"></a>
+
 ## ListDatasetGroupsRequestRequestTypeDef
 
 ```python
@@ -1317,6 +1479,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdatasetgroupsresponsetypedef"></a>
 
 ## ListDatasetGroupsResponseTypeDef
 
@@ -1332,6 +1496,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetimportjobsrequestrequesttypedef"></a>
+
 ## ListDatasetImportJobsRequestRequestTypeDef
 
 ```python
@@ -1343,6 +1509,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listdatasetimportjobsresponsetypedef"></a>
 
 ## ListDatasetImportJobsResponseTypeDef
 
@@ -1358,6 +1526,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetsrequestrequesttypedef"></a>
+
 ## ListDatasetsRequestRequestTypeDef
 
 ```python
@@ -1368,6 +1538,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDatasetsResponseTypeDef
 
@@ -1383,6 +1555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listexplainabilitiesrequestrequesttypedef"></a>
+
 ## ListExplainabilitiesRequestRequestTypeDef
 
 ```python
@@ -1394,6 +1568,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listexplainabilitiesresponsetypedef"></a>
 
 ## ListExplainabilitiesResponseTypeDef
 
@@ -1409,6 +1585,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listexplainabilityexportsrequestrequesttypedef"></a>
+
 ## ListExplainabilityExportsRequestRequestTypeDef
 
 ```python
@@ -1420,6 +1598,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listexplainabilityexportsresponsetypedef"></a>
 
 ## ListExplainabilityExportsResponseTypeDef
 
@@ -1435,6 +1615,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listforecastexportjobsrequestrequesttypedef"></a>
+
 ## ListForecastExportJobsRequestRequestTypeDef
 
 ```python
@@ -1446,6 +1628,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listforecastexportjobsresponsetypedef"></a>
 
 ## ListForecastExportJobsResponseTypeDef
 
@@ -1461,6 +1645,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listforecastsrequestrequesttypedef"></a>
+
 ## ListForecastsRequestRequestTypeDef
 
 ```python
@@ -1472,6 +1658,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listforecastsresponsetypedef"></a>
 
 ## ListForecastsResponseTypeDef
 
@@ -1487,6 +1675,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpredictorbacktestexportjobsrequestrequesttypedef"></a>
+
 ## ListPredictorBacktestExportJobsRequestRequestTypeDef
 
 ```python
@@ -1498,6 +1688,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listpredictorbacktestexportjobsresponsetypedef"></a>
 
 ## ListPredictorBacktestExportJobsResponseTypeDef
 
@@ -1513,6 +1705,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpredictorsrequestrequesttypedef"></a>
+
 ## ListPredictorsRequestRequestTypeDef
 
 ```python
@@ -1524,6 +1718,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listpredictorsresponsetypedef"></a>
 
 ## ListPredictorsResponseTypeDef
 
@@ -1539,6 +1735,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1548,6 +1746,8 @@ from mypy_boto3_forecast.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1560,6 +1760,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="metricstypedef"></a>
 
 ## MetricsTypeDef
 
@@ -1576,6 +1778,8 @@ Optional fields:
   `List`\[[ErrorMetricTypeDef](./type_defs.md#errormetrictypedef)\]
 - `AverageWeightedQuantileLoss`: `float`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1587,6 +1791,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parameterrangestypedef"></a>
 
 ## ParameterRangesTypeDef
 
@@ -1602,6 +1808,8 @@ Optional fields:
   `Sequence`\[[ContinuousParameterRangeTypeDef](./type_defs.md#continuousparameterrangetypedef)\]
 - `IntegerParameterRanges`:
   `Sequence`\[[IntegerParameterRangeTypeDef](./type_defs.md#integerparameterrangetypedef)\]
+
+<a id="predictorbacktestexportjobsummarytypedef"></a>
 
 ## PredictorBacktestExportJobSummaryTypeDef
 
@@ -1620,6 +1828,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="predictorexecutiondetailstypedef"></a>
+
 ## PredictorExecutionDetailsTypeDef
 
 ```python
@@ -1630,6 +1840,8 @@ Optional fields:
 
 - `PredictorExecutions`:
   `List`\[[PredictorExecutionTypeDef](./type_defs.md#predictorexecutiontypedef)\]
+
+<a id="predictorexecutiontypedef"></a>
 
 ## PredictorExecutionTypeDef
 
@@ -1642,6 +1854,8 @@ Optional fields:
 - `AlgorithmArn`: `str`
 - `TestWindows`:
   `List`\[[TestWindowSummaryTypeDef](./type_defs.md#testwindowsummarytypedef)\]
+
+<a id="predictorsummarytypedef"></a>
 
 ## PredictorSummaryTypeDef
 
@@ -1662,6 +1876,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModificationTime`: `datetime`
 
+<a id="referencepredictorsummarytypedef"></a>
+
 ## ReferencePredictorSummaryTypeDef
 
 ```python
@@ -1672,6 +1888,8 @@ Optional fields:
 
 - `Arn`: `str`
 - `State`: [StateType](./literals.md#statetype)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1686,6 +1904,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3configtypedef"></a>
 
 ## S3ConfigTypeDef
 
@@ -1702,6 +1922,8 @@ Optional fields:
 
 - `KMSKeyArn`: `str`
 
+<a id="schemaattributetypedef"></a>
+
 ## SchemaAttributeTypeDef
 
 ```python
@@ -1713,6 +1935,8 @@ Optional fields:
 - `AttributeName`: `str`
 - `AttributeType`: [AttributeTypeType](./literals.md#attributetypetype)
 
+<a id="schematypedef"></a>
+
 ## SchemaTypeDef
 
 ```python
@@ -1723,6 +1947,8 @@ Optional fields:
 
 - `Attributes`:
   `Sequence`\[[SchemaAttributeTypeDef](./type_defs.md#schemaattributetypedef)\]
+
+<a id="statisticstypedef"></a>
 
 ## StatisticsTypeDef
 
@@ -1745,6 +1971,8 @@ Optional fields:
 - `CountNullLong`: `int`
 - `CountNanLong`: `int`
 
+<a id="stopresourcerequestrequesttypedef"></a>
+
 ## StopResourceRequestRequestTypeDef
 
 ```python
@@ -1754,6 +1982,8 @@ from mypy_boto3_forecast.type_defs import StopResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="supplementaryfeaturetypedef"></a>
 
 ## SupplementaryFeatureTypeDef
 
@@ -1766,6 +1996,8 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1777,6 +2009,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1787,6 +2021,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="testwindowsummarytypedef"></a>
 
 ## TestWindowSummaryTypeDef
 
@@ -1801,6 +2037,8 @@ Optional fields:
 - `Status`: `str`
 - `Message`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1811,6 +2049,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatasetgrouprequestrequesttypedef"></a>
 
 ## UpdateDatasetGroupRequestRequestTypeDef
 
@@ -1823,6 +2063,8 @@ Required fields:
 - `DatasetGroupArn`: `str`
 - `DatasetArns`: `Sequence`\[`str`\]
 
+<a id="weightedquantilelosstypedef"></a>
+
 ## WeightedQuantileLossTypeDef
 
 ```python
@@ -1833,6 +2075,8 @@ Optional fields:
 
 - `Quantile`: `float`
 - `LossValue`: `float`
+
+<a id="windowsummarytypedef"></a>
 
 ## WindowSummaryTypeDef
 

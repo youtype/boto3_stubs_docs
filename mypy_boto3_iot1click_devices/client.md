@@ -1,3 +1,5 @@
+<a id="iot1clickdevicesserviceclient-for-boto3-iot1clickdevicesservice-module"></a>
+
 # IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module
 
 > [Index](..) > [IoT1ClickDevicesService](.) > IoT1ClickDevicesServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoT1ClickDevicesService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService)
 type annotations stubs module
-[mypy_boto3_iot1click_devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
+[mypy-boto3-iot1click-devices](https://pypi.org/project/mypy-boto3-iot1click-devices/).
 
 - [IoT1ClickDevicesServiceClient for boto3 IoT1ClickDevicesService module](#iot1clickdevicesserviceclient-for-boto3-iot1clickdevicesservice-module)
   - [IoT1ClickDevicesServiceClient](#iot1clickdevicesserviceclient)
@@ -29,6 +31,8 @@ type annotations stubs module
     - [update_device_state](#update_device_state)
     - [get_paginator](#get_paginator)
 
+<a id="iot1clickdevicesserviceclient"></a>
+
 ## IoT1ClickDevicesServiceClient
 
 Type annotations for `boto3.client("iot1click-devices")`
@@ -36,14 +40,17 @@ Type annotations for `boto3.client("iot1click-devices")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iot1click_devices.client import IoT1ClickDevicesServiceClient
 
 def get_iot1click-devices_client() -> IoT1ClickDevicesServiceClient:
-    return boto3.client("iot1click-devices")
+    return Session().client("iot1click-devices")
 ```
 
 Boto3 documentation:
 [IoT1ClickDevicesService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -68,7 +75,11 @@ Exceptions:
 - `Exceptions.ResourceConflictException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -80,6 +91,8 @@ Boto3 documentation:
 [IoT1ClickDevicesService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot1click-devices.html#IoT1ClickDevicesService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -95,6 +108,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="claim_devices_by_claim_code"></a>
 
 ### claim_devices_by_claim_code
 
@@ -117,6 +132,8 @@ Keyword-only arguments:
 Returns
 [ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef).
 
+<a id="describe_device"></a>
+
 ### describe_device
 
 Given a device ID, returns a DescribeDeviceResponse object describing the
@@ -137,6 +154,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
+
+<a id="finalize_device_claim"></a>
 
 ### finalize_device_claim
 
@@ -159,6 +178,8 @@ Keyword-only arguments:
 Returns
 [FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -177,6 +198,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_device_methods"></a>
 
 ### get_device_methods
 
@@ -198,6 +221,8 @@ Keyword-only arguments:
 Returns
 [GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef).
 
+<a id="initiate_device_claim"></a>
+
 ### initiate_device_claim
 
 Given a device ID, initiates a claim request for the associated device.
@@ -217,6 +242,8 @@ Keyword-only arguments:
 
 Returns
 [InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef).
+
+<a id="invoke_device_method"></a>
 
 ### invoke_device_method
 
@@ -240,6 +267,8 @@ Keyword-only arguments:
 
 Returns
 [InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef).
+
+<a id="list_device_events"></a>
 
 ### list_device_events
 
@@ -266,6 +295,8 @@ Keyword-only arguments:
 Returns
 [ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
+<a id="list_devices"></a>
+
 ### list_devices
 
 Lists the 1-Click compatible devices associated with your AWS account.
@@ -287,6 +318,8 @@ Keyword-only arguments:
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags associated with the specified resource ARN.
@@ -307,6 +340,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or updates the tags associated with the resource ARN.
@@ -323,6 +358,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="unclaim_device"></a>
 
 ### unclaim_device
 
@@ -343,6 +380,8 @@ Keyword-only arguments:
 Returns
 [UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Using tag keys, deletes the tags (key/value pairs) associated with the
@@ -360,6 +399,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_device_state"></a>
 
 ### update_device_state
 
@@ -381,6 +422,8 @@ Keyword-only arguments:
 - `Enabled`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotdeviceadvisor-module"></a>
+
 # Typed dictionaries for boto3 IoTDeviceAdvisor module
 
 > [Index](..) > [IoTDeviceAdvisor](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
-[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+[mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [Typed dictionaries for boto3 IoTDeviceAdvisor module](#typed-dictionaries-for-boto3-iotdeviceadvisor-module)
   - [CreateSuiteDefinitionRequestRequestTypeDef](#createsuitedefinitionrequestrequesttypedef)
@@ -42,6 +44,8 @@ type annotations stubs module
   - [UpdateSuiteDefinitionRequestRequestTypeDef](#updatesuitedefinitionrequestrequesttypedef)
   - [UpdateSuiteDefinitionResponseTypeDef](#updatesuitedefinitionresponsetypedef)
 
+<a id="createsuitedefinitionrequestrequesttypedef"></a>
+
 ## CreateSuiteDefinitionRequestRequestTypeDef
 
 ```python
@@ -53,6 +57,8 @@ Optional fields:
 - `suiteDefinitionConfiguration`:
   [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createsuitedefinitionresponsetypedef"></a>
 
 ## CreateSuiteDefinitionResponseTypeDef
 
@@ -69,6 +75,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesuitedefinitionrequestrequesttypedef"></a>
+
 ## DeleteSuiteDefinitionRequestRequestTypeDef
 
 ```python
@@ -78,6 +86,8 @@ from mypy_boto3_iotdeviceadvisor.type_defs import DeleteSuiteDefinitionRequestRe
 Required fields:
 
 - `suiteDefinitionId`: `str`
+
+<a id="deviceundertesttypedef"></a>
 
 ## DeviceUnderTestTypeDef
 
@@ -90,6 +100,8 @@ Optional fields:
 - `thingArn`: `str`
 - `certificateArn`: `str`
 
+<a id="getendpointrequestrequesttypedef"></a>
+
 ## GetEndpointRequestRequestTypeDef
 
 ```python
@@ -100,6 +112,8 @@ Optional fields:
 
 - `thingArn`: `str`
 - `certificateArn`: `str`
+
+<a id="getendpointresponsetypedef"></a>
 
 ## GetEndpointResponseTypeDef
 
@@ -112,6 +126,8 @@ Required fields:
 - `endpoint`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsuitedefinitionrequestrequesttypedef"></a>
 
 ## GetSuiteDefinitionRequestRequestTypeDef
 
@@ -126,6 +142,8 @@ Required fields:
 Optional fields:
 
 - `suiteDefinitionVersion`: `str`
+
+<a id="getsuitedefinitionresponsetypedef"></a>
 
 ## GetSuiteDefinitionResponseTypeDef
 
@@ -147,6 +165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsuiterunreportrequestrequesttypedef"></a>
+
 ## GetSuiteRunReportRequestRequestTypeDef
 
 ```python
@@ -157,6 +177,8 @@ Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteRunId`: `str`
+
+<a id="getsuiterunreportresponsetypedef"></a>
 
 ## GetSuiteRunReportResponseTypeDef
 
@@ -170,6 +192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsuiterunrequestrequesttypedef"></a>
+
 ## GetSuiteRunRequestRequestTypeDef
 
 ```python
@@ -180,6 +204,8 @@ Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteRunId`: `str`
+
+<a id="getsuiterunresponsetypedef"></a>
 
 ## GetSuiteRunResponseTypeDef
 
@@ -204,6 +230,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupresulttypedef"></a>
+
 ## GroupResultTypeDef
 
 ```python
@@ -216,6 +244,8 @@ Optional fields:
 - `groupName`: `str`
 - `tests`: `List`\[[TestCaseRunTypeDef](./type_defs.md#testcaseruntypedef)\]
 
+<a id="listsuitedefinitionsrequestrequesttypedef"></a>
+
 ## ListSuiteDefinitionsRequestRequestTypeDef
 
 ```python
@@ -226,6 +256,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listsuitedefinitionsresponsetypedef"></a>
 
 ## ListSuiteDefinitionsResponseTypeDef
 
@@ -241,6 +273,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsuiterunsrequestrequesttypedef"></a>
+
 ## ListSuiteRunsRequestRequestTypeDef
 
 ```python
@@ -253,6 +287,8 @@ Optional fields:
 - `suiteDefinitionVersion`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listsuiterunsresponsetypedef"></a>
 
 ## ListSuiteRunsResponseTypeDef
 
@@ -268,6 +304,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -277,6 +315,8 @@ from mypy_boto3_iotdeviceadvisor.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -289,6 +329,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -303,6 +345,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startsuiterunrequestrequesttypedef"></a>
 
 ## StartSuiteRunRequestRequestTypeDef
 
@@ -321,6 +365,8 @@ Optional fields:
   [SuiteRunConfigurationTypeDef](./type_defs.md#suiterunconfigurationtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="startsuiterunresponsetypedef"></a>
+
 ## StartSuiteRunResponseTypeDef
 
 ```python
@@ -335,6 +381,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopsuiterunrequestrequesttypedef"></a>
+
 ## StopSuiteRunRequestRequestTypeDef
 
 ```python
@@ -345,6 +393,8 @@ Required fields:
 
 - `suiteDefinitionId`: `str`
 - `suiteRunId`: `str`
+
+<a id="suitedefinitionconfigurationtypedef"></a>
 
 ## SuiteDefinitionConfigurationTypeDef
 
@@ -361,6 +411,8 @@ Optional fields:
 - `rootGroup`: `str`
 - `devicePermissionRoleArn`: `str`
 
+<a id="suitedefinitioninformationtypedef"></a>
+
 ## SuiteDefinitionInformationTypeDef
 
 ```python
@@ -376,6 +428,8 @@ Optional fields:
 - `intendedForQualification`: `bool`
 - `createdAt`: `datetime`
 
+<a id="suiterunconfigurationtypedef"></a>
+
 ## SuiteRunConfigurationTypeDef
 
 ```python
@@ -388,6 +442,8 @@ Optional fields:
   [DeviceUnderTestTypeDef](./type_defs.md#deviceundertesttypedef)
 - `selectedTestList`: `List`\[`str`\]
 - `parallelRun`: `bool`
+
+<a id="suiteruninformationtypedef"></a>
 
 ## SuiteRunInformationTypeDef
 
@@ -408,6 +464,8 @@ Optional fields:
 - `passed`: `int`
 - `failed`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -418,6 +476,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="testcaseruntypedef"></a>
 
 ## TestCaseRunTypeDef
 
@@ -437,6 +497,8 @@ Optional fields:
 - `warnings`: `str`
 - `failure`: `str`
 
+<a id="testresulttypedef"></a>
+
 ## TestResultTypeDef
 
 ```python
@@ -446,6 +508,8 @@ from mypy_boto3_iotdeviceadvisor.type_defs import TestResultTypeDef
 Optional fields:
 
 - `groups`: `List`\[[GroupResultTypeDef](./type_defs.md#groupresulttypedef)\]
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -457,6 +521,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatesuitedefinitionrequestrequesttypedef"></a>
 
 ## UpdateSuiteDefinitionRequestRequestTypeDef
 
@@ -472,6 +538,8 @@ Optional fields:
 
 - `suiteDefinitionConfiguration`:
   [SuiteDefinitionConfigurationTypeDef](./type_defs.md#suitedefinitionconfigurationtypedef)
+
+<a id="updatesuitedefinitionresponsetypedef"></a>
 
 ## UpdateSuiteDefinitionResponseTypeDef
 

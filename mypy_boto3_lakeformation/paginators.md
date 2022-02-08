@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-lakeformation-module"></a>
+
 # Paginators for boto3 LakeFormation module
 
 > [Index](..) > [LakeFormation](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
-[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [Paginators for boto3 LakeFormation module](#paginators-for-boto3-lakeformation-module)
   - [GetWorkUnitsPaginator](#getworkunitspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListLFTagsPaginator](#listlftagspaginator)
   - [SearchDatabasesByLFTagsPaginator](#searchdatabasesbylftagspaginator)
   - [SearchTablesByLFTagsPaginator](#searchtablesbylftagspaginator)
+
+<a id="getworkunitspaginator"></a>
 
 ## GetWorkUnitsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lakeformation.paginator import GetWorkUnitsPaginator
 
 def get_get_work_units_paginator() -> GetWorkUnitsPaginator:
-    return boto3.client("lakeformation").get_paginator("get_work_units")
+    return Session().client("lakeformation").get_paginator("get_work_units")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `GetWorkUnitsPaginator.paginate` method:
 `GetWorkUnitsPaginator.paginate` returns
 `_PageIterator`\[[GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef)\].
 
+<a id="listdatacellsfilterpaginator"></a>
+
 ## ListDataCellsFilterPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lakeformation.paginator import ListDataCellsFilterPaginator
 
 def get_list_data_cells_filter_paginator() -> ListDataCellsFilterPaginator:
-    return boto3.client("lakeformation").get_paginator("list_data_cells_filter")
+    return Session().client("lakeformation").get_paginator("list_data_cells_filter")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListDataCellsFilterPaginator.paginate` method:
 `ListDataCellsFilterPaginator.paginate` returns
 `_PageIterator`\[[ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef)\].
 
+<a id="listlftagspaginator"></a>
+
 ## ListLFTagsPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lakeformation.paginator import ListLFTagsPaginator
 
 def get_list_lf_tags_paginator() -> ListLFTagsPaginator:
-    return boto3.client("lakeformation").get_paginator("list_lf_tags")
+    return Session().client("lakeformation").get_paginator("list_lf_tags")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `ListLFTagsPaginator.paginate` method:
 `ListLFTagsPaginator.paginate` returns
 `_PageIterator`\[[ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef)\].
 
+<a id="searchdatabasesbylftagspaginator"></a>
+
 ## SearchDatabasesByLFTagsPaginator
 
 Type annotations for
@@ -102,10 +118,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lakeformation.paginator import SearchDatabasesByLFTagsPaginator
 
 def get_search_databases_by_lf_tags_paginator() -> SearchDatabasesByLFTagsPaginator:
-    return boto3.client("lakeformation").get_paginator("search_databases_by_lf_tags")
+    return Session().client("lakeformation").get_paginator("search_databases_by_lf_tags")
 ```
 
 Boto3 documentation:
@@ -122,6 +140,8 @@ Arguments for `SearchDatabasesByLFTagsPaginator.paginate` method:
 `SearchDatabasesByLFTagsPaginator.paginate` returns
 `_PageIterator`\[[SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef)\].
 
+<a id="searchtablesbylftagspaginator"></a>
+
 ## SearchTablesByLFTagsPaginator
 
 Type annotations for
@@ -130,10 +150,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_lakeformation.paginator import SearchTablesByLFTagsPaginator
 
 def get_search_tables_by_lf_tags_paginator() -> SearchTablesByLFTagsPaginator:
-    return boto3.client("lakeformation").get_paginator("search_tables_by_lf_tags")
+    return Session().client("lakeformation").get_paginator("search_tables_by_lf_tags")
 ```
 
 Boto3 documentation:

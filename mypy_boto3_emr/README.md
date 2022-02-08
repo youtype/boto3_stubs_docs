@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-emr-module"></a>
+
 # Type annotations for boto3 EMR module
 
 > [Index](..) > EMR
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module
-[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[emr]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[emr]'
+
+# standalone installation
 pip install mypy-boto3-emr
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-emr
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="emrclient"></a>
+
 ## EMRClient
 
 Type annotations for `boto3.client("emr")` as [EMRClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_emr.client import EMRClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -90,6 +104,8 @@ from mypy_boto3_emr.client import EMRClient
 - [update_studio](./client.md#update_studio)
 - [update_studio_session_mapping](./client.md#update_studio_session_mapping)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 EMRClient [exceptions](./client.md#exceptions)
@@ -99,6 +115,8 @@ EMRClient [exceptions](./client.md#exceptions)
 - InternalServerException
 - InvalidRequestException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -107,7 +125,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.paginators import ListBootstrapActionsPaginator, ...
+from mypy_boto3_emr.paginator import ListBootstrapActionsPaginator, ...
 ```
 
 - [ListBootstrapActionsPaginator](./paginators.md#listbootstrapactionspaginator)
@@ -121,6 +139,8 @@ from mypy_boto3_emr.paginators import ListBootstrapActionsPaginator, ...
 - [ListStudioSessionMappingsPaginator](./paginators.md#liststudiosessionmappingspaginator)
 - [ListStudiosPaginator](./paginators.md#liststudiospaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -129,12 +149,14 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_emr.waiters import ClusterRunningWaiter, ...
+from mypy_boto3_emr.waiter import ClusterRunningWaiter, ...
 ```
 
 - [ClusterRunningWaiter](./waiters.md#clusterrunningwaiter)
 - [ClusterTerminatedWaiter](./waiters.md#clusterterminatedwaiter)
 - [StepCompleteWaiter](./waiters.md#stepcompletewaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -201,6 +223,8 @@ from mypy_boto3_emr.literals import ActionOnFailureType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-medialive-module"></a>
+
 # Waiters for boto3 MediaLive module
 
 > [Index](..) > [MediaLive](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaLive](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/medialive.html#MediaLive)
 type annotations stubs module
-[mypy_boto3_medialive](https://pypi.org/project/mypy-boto3-medialive/).
+[mypy-boto3-medialive](https://pypi.org/project/mypy-boto3-medialive/).
 
 - [Waiters for boto3 MediaLive module](#waiters-for-boto3-medialive-module)
   - [ChannelCreatedWaiter](#channelcreatedwaiter)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [MultiplexRunningWaiter](#multiplexrunningwaiter)
   - [MultiplexStoppedWaiter](#multiplexstoppedwaiter)
 
+<a id="channelcreatedwaiter"></a>
+
 ## ChannelCreatedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_created")`.
@@ -27,10 +31,12 @@ Type annotations for `boto3.client("medialive").get_waiter("channel_created")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import ChannelCreatedWaiter
 
 def get_channel_created_waiter() -> ChannelCreatedWaiter:
-    return boto3.client("medialive").get_waiter("channel_created")
+    return Session().client("medialive").get_waiter("channel_created")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ChannelCreatedWaiter.wait` method:
 - `ChannelId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="channeldeletedwaiter"></a>
+
 ## ChannelDeletedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_deleted")`.
@@ -48,10 +56,12 @@ Type annotations for `boto3.client("medialive").get_waiter("channel_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import ChannelDeletedWaiter
 
 def get_channel_deleted_waiter() -> ChannelDeletedWaiter:
-    return boto3.client("medialive").get_waiter("channel_deleted")
+    return Session().client("medialive").get_waiter("channel_deleted")
 ```
 
 Boto3 documentation:
@@ -62,6 +72,8 @@ Arguments for `ChannelDeletedWaiter.wait` method:
 - `ChannelId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="channelrunningwaiter"></a>
+
 ## ChannelRunningWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_running")`.
@@ -69,10 +81,12 @@ Type annotations for `boto3.client("medialive").get_waiter("channel_running")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import ChannelRunningWaiter
 
 def get_channel_running_waiter() -> ChannelRunningWaiter:
-    return boto3.client("medialive").get_waiter("channel_running")
+    return Session().client("medialive").get_waiter("channel_running")
 ```
 
 Boto3 documentation:
@@ -83,6 +97,8 @@ Arguments for `ChannelRunningWaiter.wait` method:
 - `ChannelId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="channelstoppedwaiter"></a>
+
 ## ChannelStoppedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("channel_stopped")`.
@@ -90,10 +106,12 @@ Type annotations for `boto3.client("medialive").get_waiter("channel_stopped")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import ChannelStoppedWaiter
 
 def get_channel_stopped_waiter() -> ChannelStoppedWaiter:
-    return boto3.client("medialive").get_waiter("channel_stopped")
+    return Session().client("medialive").get_waiter("channel_stopped")
 ```
 
 Boto3 documentation:
@@ -104,6 +122,8 @@ Arguments for `ChannelStoppedWaiter.wait` method:
 - `ChannelId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="inputattachedwaiter"></a>
+
 ## InputAttachedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("input_attached")`.
@@ -111,10 +131,12 @@ Type annotations for `boto3.client("medialive").get_waiter("input_attached")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import InputAttachedWaiter
 
 def get_input_attached_waiter() -> InputAttachedWaiter:
-    return boto3.client("medialive").get_waiter("input_attached")
+    return Session().client("medialive").get_waiter("input_attached")
 ```
 
 Boto3 documentation:
@@ -125,6 +147,8 @@ Arguments for `InputAttachedWaiter.wait` method:
 - `InputId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="inputdeletedwaiter"></a>
+
 ## InputDeletedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("input_deleted")`.
@@ -132,10 +156,12 @@ Type annotations for `boto3.client("medialive").get_waiter("input_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import InputDeletedWaiter
 
 def get_input_deleted_waiter() -> InputDeletedWaiter:
-    return boto3.client("medialive").get_waiter("input_deleted")
+    return Session().client("medialive").get_waiter("input_deleted")
 ```
 
 Boto3 documentation:
@@ -146,6 +172,8 @@ Arguments for `InputDeletedWaiter.wait` method:
 - `InputId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="inputdetachedwaiter"></a>
+
 ## InputDetachedWaiter
 
 Type annotations for `boto3.client("medialive").get_waiter("input_detached")`.
@@ -153,10 +181,12 @@ Type annotations for `boto3.client("medialive").get_waiter("input_detached")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import InputDetachedWaiter
 
 def get_input_detached_waiter() -> InputDetachedWaiter:
-    return boto3.client("medialive").get_waiter("input_detached")
+    return Session().client("medialive").get_waiter("input_detached")
 ```
 
 Boto3 documentation:
@@ -167,6 +197,8 @@ Arguments for `InputDetachedWaiter.wait` method:
 - `InputId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="multiplexcreatedwaiter"></a>
+
 ## MultiplexCreatedWaiter
 
 Type annotations for
@@ -175,10 +207,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import MultiplexCreatedWaiter
 
 def get_multiplex_created_waiter() -> MultiplexCreatedWaiter:
-    return boto3.client("medialive").get_waiter("multiplex_created")
+    return Session().client("medialive").get_waiter("multiplex_created")
 ```
 
 Boto3 documentation:
@@ -189,6 +223,8 @@ Arguments for `MultiplexCreatedWaiter.wait` method:
 - `MultiplexId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="multiplexdeletedwaiter"></a>
+
 ## MultiplexDeletedWaiter
 
 Type annotations for
@@ -197,10 +233,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import MultiplexDeletedWaiter
 
 def get_multiplex_deleted_waiter() -> MultiplexDeletedWaiter:
-    return boto3.client("medialive").get_waiter("multiplex_deleted")
+    return Session().client("medialive").get_waiter("multiplex_deleted")
 ```
 
 Boto3 documentation:
@@ -211,6 +249,8 @@ Arguments for `MultiplexDeletedWaiter.wait` method:
 - `MultiplexId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="multiplexrunningwaiter"></a>
+
 ## MultiplexRunningWaiter
 
 Type annotations for
@@ -219,10 +259,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import MultiplexRunningWaiter
 
 def get_multiplex_running_waiter() -> MultiplexRunningWaiter:
-    return boto3.client("medialive").get_waiter("multiplex_running")
+    return Session().client("medialive").get_waiter("multiplex_running")
 ```
 
 Boto3 documentation:
@@ -233,6 +275,8 @@ Arguments for `MultiplexRunningWaiter.wait` method:
 - `MultiplexId`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="multiplexstoppedwaiter"></a>
+
 ## MultiplexStoppedWaiter
 
 Type annotations for
@@ -241,10 +285,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_medialive.waiter import MultiplexStoppedWaiter
 
 def get_multiplex_stopped_waiter() -> MultiplexStoppedWaiter:
-    return boto3.client("medialive").get_waiter("multiplex_stopped")
+    return Session().client("medialive").get_waiter("multiplex_stopped")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cloudwatch-module"></a>
+
 # Type annotations for boto3 CloudWatch module
 
 > [Index](..) > CloudWatch
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CloudWatch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudwatch.html#CloudWatch)
 type annotations stubs module
-[mypy_boto3_cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
+[mypy-boto3-cloudwatch](https://pypi.org/project/mypy-boto3-cloudwatch/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cloudwatch]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cloudwatch]'
+
+# standalone installation
 pip install mypy-boto3-cloudwatch
 ```
 
@@ -23,6 +33,8 @@ pip install mypy-boto3-cloudwatch
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cloudwatchclient"></a>
+
 ## CloudWatchClient
 
 Type annotations for `boto3.client("cloudwatch")` as
@@ -33,6 +45,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloudwatch.client import CloudWatchClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -78,6 +92,8 @@ from mypy_boto3_cloudwatch.client import CloudWatchClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CloudWatchClient [exceptions](./client.md#exceptions)
@@ -97,6 +113,8 @@ CloudWatchClient [exceptions](./client.md#exceptions)
 - ResourceNotFound
 - ResourceNotFoundException
 
+<a id="cloudwatchserviceresource"></a>
+
 ## CloudWatchServiceResource
 
 Type annotations for `boto3.resource("cloudwatch")` as
@@ -107,6 +125,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cloudwatch.service_resource import CloudWatchServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -120,6 +140,8 @@ from mypy_boto3_cloudwatch.service_resource import ServiceResourceAlarmsCollecti
 
 - [ServiceResourceAlarmsCollection](./service_resource.md#cloudwatchserviceresourcealarms)
 - [ServiceResourceMetricsCollection](./service_resource.md#cloudwatchserviceresourcemetrics)
+
+<a id="resources"></a>
 
 ### Resources
 
@@ -135,6 +157,8 @@ from mypy_boto3_cloudwatch.service_resource import Alarm, ...
 - [Alarm](./service_resource.md#alarm)
 - [Metric](./service_resource.md#metric)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -143,7 +167,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.paginators import DescribeAlarmHistoryPaginator, ...
+from mypy_boto3_cloudwatch.paginator import DescribeAlarmHistoryPaginator, ...
 ```
 
 - [DescribeAlarmHistoryPaginator](./paginators.md#describealarmhistorypaginator)
@@ -151,6 +175,8 @@ from mypy_boto3_cloudwatch.paginators import DescribeAlarmHistoryPaginator, ...
 - [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
 - [ListDashboardsPaginator](./paginators.md#listdashboardspaginator)
 - [ListMetricsPaginator](./paginators.md#listmetricspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -160,11 +186,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cloudwatch.waiters import AlarmExistsWaiter, ...
+from mypy_boto3_cloudwatch.waiter import AlarmExistsWaiter, ...
 ```
 
 - [AlarmExistsWaiter](./waiters.md#alarmexistswaiter)
 - [CompositeAlarmExistsWaiter](./waiters.md#compositealarmexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -198,6 +226,8 @@ from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

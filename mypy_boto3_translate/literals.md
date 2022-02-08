@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-translate-module"></a>
+
 # Literals for boto3 Translate module
 
 > [Index](..) > [Translate](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module
-[mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
+[mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 - [Literals for boto3 Translate module](#literals-for-boto3-translate-module)
   - [DirectionalityType](#directionalitytype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="directionalitytype"></a>
+
 ## DirectionalityType
 
 ```python
@@ -31,6 +35,8 @@ Values:
 - `MULTI`
 - `UNI`
 
+<a id="encryptionkeytypetype"></a>
+
 ## EncryptionKeyTypeType
 
 ```python
@@ -40,6 +46,8 @@ from mypy_boto3_translate.literals import EncryptionKeyTypeType
 Values:
 
 - `KMS`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -57,6 +65,8 @@ Values:
 - `STOPPED`
 - `SUBMITTED`
 
+<a id="listterminologiespaginatorname"></a>
+
 ## ListTerminologiesPaginatorName
 
 ```python
@@ -67,6 +77,8 @@ Values:
 
 - `list_terminologies`
 
+<a id="mergestrategytype"></a>
+
 ## MergeStrategyType
 
 ```python
@@ -76,6 +88,8 @@ from mypy_boto3_translate.literals import MergeStrategyType
 Values:
 
 - `OVERWRITE`
+
+<a id="paralleldataformattype"></a>
 
 ## ParallelDataFormatType
 
@@ -88,6 +102,8 @@ Values:
 - `CSV`
 - `TMX`
 - `TSV`
+
+<a id="paralleldatastatustype"></a>
 
 ## ParallelDataStatusType
 
@@ -103,6 +119,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="profanitytype"></a>
+
 ## ProfanityType
 
 ```python
@@ -112,6 +130,8 @@ from mypy_boto3_translate.literals import ProfanityType
 Values:
 
 - `MASK`
+
+<a id="terminologydataformattype"></a>
 
 ## TerminologyDataFormatType
 
@@ -124,6 +144,8 @@ Values:
 - `CSV`
 - `TMX`
 - `TSV`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -432,6 +454,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

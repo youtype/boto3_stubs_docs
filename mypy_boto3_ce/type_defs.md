@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-costexplorer-module"></a>
+
 # Typed dictionaries for boto3 CostExplorer module
 
 > [Index](..) > [CostExplorer](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CostExplorer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer)
 type annotations stubs module
-[mypy_boto3_ce](https://pypi.org/project/mypy-boto3-ce/).
+[mypy-boto3-ce](https://pypi.org/project/mypy-boto3-ce/).
 
 - [Typed dictionaries for boto3 CostExplorer module](#typed-dictionaries-for-boto3-costexplorer-module)
   - [AnomalyDateIntervalTypeDef](#anomalydateintervaltypedef)
@@ -145,6 +147,8 @@ type annotations stubs module
   - [UpdateCostCategoryDefinitionResponseTypeDef](#updatecostcategorydefinitionresponsetypedef)
   - [UtilizationByTimeTypeDef](#utilizationbytimetypedef)
 
+<a id="anomalydateintervaltypedef"></a>
+
 ## AnomalyDateIntervalTypeDef
 
 ```python
@@ -158,6 +162,8 @@ Required fields:
 Optional fields:
 
 - `EndDate`: `str`
+
+<a id="anomalymonitortypedef"></a>
 
 ## AnomalyMonitorTypeDef
 
@@ -181,6 +187,8 @@ Optional fields:
 - `MonitorSpecification`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `DimensionalValueCount`: `int`
 
+<a id="anomalyscoretypedef"></a>
+
 ## AnomalyScoreTypeDef
 
 ```python
@@ -191,6 +199,8 @@ Required fields:
 
 - `MaxScore`: `float`
 - `CurrentScore`: `float`
+
+<a id="anomalysubscriptiontypedef"></a>
 
 ## AnomalySubscriptionTypeDef
 
@@ -213,6 +223,8 @@ Optional fields:
 - `SubscriptionArn`: `str`
 - `AccountId`: `str`
 
+<a id="anomalytypedef"></a>
+
 ## AnomalyTypeDef
 
 ```python
@@ -234,6 +246,8 @@ Optional fields:
 - `RootCauses`: `List`\[[RootCauseTypeDef](./type_defs.md#rootcausetypedef)\]
 - `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
 
+<a id="costcategoryinheritedvaluedimensiontypedef"></a>
+
 ## CostCategoryInheritedValueDimensionTypeDef
 
 ```python
@@ -246,6 +260,8 @@ Optional fields:
   [CostCategoryInheritedValueDimensionNameType](./literals.md#costcategoryinheritedvaluedimensionnametype)
 - `DimensionKey`: `str`
 
+<a id="costcategoryprocessingstatustypedef"></a>
+
 ## CostCategoryProcessingStatusTypeDef
 
 ```python
@@ -257,6 +273,8 @@ Optional fields:
 - `Component`: `Literal['COST_EXPLORER']` (see
   [CostCategoryStatusComponentType](./literals.md#costcategorystatuscomponenttype))
 - `Status`: [CostCategoryStatusType](./literals.md#costcategorystatustype)
+
+<a id="costcategoryreferencetypedef"></a>
 
 ## CostCategoryReferenceTypeDef
 
@@ -276,6 +294,8 @@ Optional fields:
 - `Values`: `List`\[`str`\]
 - `DefaultValue`: `str`
 
+<a id="costcategoryruletypedef"></a>
+
 ## CostCategoryRuleTypeDef
 
 ```python
@@ -290,6 +310,8 @@ Optional fields:
   [CostCategoryInheritedValueDimensionTypeDef](./type_defs.md#costcategoryinheritedvaluedimensiontypedef)
 - `Type`: [CostCategoryRuleTypeType](./literals.md#costcategoryruletypetype)
 
+<a id="costcategorysplitchargeruleparametertypedef"></a>
+
 ## CostCategorySplitChargeRuleParameterTypeDef
 
 ```python
@@ -301,6 +323,8 @@ Required fields:
 - `Type`: `Literal['ALLOCATION_PERCENTAGES']` (see
   [CostCategorySplitChargeRuleParameterTypeType](./literals.md#costcategorysplitchargeruleparametertypetype))
 - `Values`: `Sequence`\[`str`\]
+
+<a id="costcategorysplitchargeruletypedef"></a>
 
 ## CostCategorySplitChargeRuleTypeDef
 
@@ -319,6 +343,8 @@ Optional fields:
 
 - `Parameters`:
   `Sequence`\[[CostCategorySplitChargeRuleParameterTypeDef](./type_defs.md#costcategorysplitchargeruleparametertypedef)\]
+
+<a id="costcategorytypedef"></a>
 
 ## CostCategoryTypeDef
 
@@ -345,6 +371,8 @@ Optional fields:
   `List`\[[CostCategoryProcessingStatusTypeDef](./type_defs.md#costcategoryprocessingstatustypedef)\]
 - `DefaultValue`: `str`
 
+<a id="costcategoryvaluestypedef"></a>
+
 ## CostCategoryValuesTypeDef
 
 ```python
@@ -357,6 +385,8 @@ Optional fields:
 - `Values`: `Sequence`\[`str`\]
 - `MatchOptions`:
   `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
+
+<a id="coveragebytimetypedef"></a>
 
 ## CoverageByTimeTypeDef
 
@@ -371,6 +401,8 @@ Optional fields:
   `List`\[[ReservationCoverageGroupTypeDef](./type_defs.md#reservationcoveragegrouptypedef)\]
 - `Total`: [CoverageTypeDef](./type_defs.md#coveragetypedef)
 
+<a id="coveragecosttypedef"></a>
+
 ## CoverageCostTypeDef
 
 ```python
@@ -380,6 +412,8 @@ from mypy_boto3_ce.type_defs import CoverageCostTypeDef
 Optional fields:
 
 - `OnDemandCost`: `str`
+
+<a id="coveragehourstypedef"></a>
 
 ## CoverageHoursTypeDef
 
@@ -394,6 +428,8 @@ Optional fields:
 - `TotalRunningHours`: `str`
 - `CoverageHoursPercentage`: `str`
 
+<a id="coveragenormalizedunitstypedef"></a>
+
 ## CoverageNormalizedUnitsTypeDef
 
 ```python
@@ -406,6 +442,8 @@ Optional fields:
 - `ReservedNormalizedUnits`: `str`
 - `TotalRunningNormalizedUnits`: `str`
 - `CoverageNormalizedUnitsPercentage`: `str`
+
+<a id="coveragetypedef"></a>
 
 ## CoverageTypeDef
 
@@ -420,6 +458,8 @@ Optional fields:
   [CoverageNormalizedUnitsTypeDef](./type_defs.md#coveragenormalizedunitstypedef)
 - `CoverageCost`: [CoverageCostTypeDef](./type_defs.md#coveragecosttypedef)
 
+<a id="createanomalymonitorrequestrequesttypedef"></a>
+
 ## CreateAnomalyMonitorRequestRequestTypeDef
 
 ```python
@@ -430,6 +470,8 @@ Required fields:
 
 - `AnomalyMonitor`:
   [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef)
+
+<a id="createanomalymonitorresponsetypedef"></a>
 
 ## CreateAnomalyMonitorResponseTypeDef
 
@@ -443,6 +485,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createanomalysubscriptionrequestrequesttypedef"></a>
+
 ## CreateAnomalySubscriptionRequestRequestTypeDef
 
 ```python
@@ -453,6 +497,8 @@ Required fields:
 
 - `AnomalySubscription`:
   [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
+
+<a id="createanomalysubscriptionresponsetypedef"></a>
 
 ## CreateAnomalySubscriptionResponseTypeDef
 
@@ -465,6 +511,8 @@ Required fields:
 - `SubscriptionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcostcategorydefinitionrequestrequesttypedef"></a>
 
 ## CreateCostCategoryDefinitionRequestRequestTypeDef
 
@@ -486,6 +534,8 @@ Optional fields:
 - `SplitChargeRules`:
   `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
+<a id="createcostcategorydefinitionresponsetypedef"></a>
+
 ## CreateCostCategoryDefinitionResponseTypeDef
 
 ```python
@@ -498,6 +548,8 @@ Required fields:
 - `EffectiveStart`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="currentinstancetypedef"></a>
 
 ## CurrentInstanceTypeDef
 
@@ -521,6 +573,8 @@ Optional fields:
 - `MonthlyCost`: `str`
 - `CurrencyCode`: `str`
 
+<a id="dateintervaltypedef"></a>
+
 ## DateIntervalTypeDef
 
 ```python
@@ -532,6 +586,8 @@ Required fields:
 - `Start`: `str`
 - `End`: `str`
 
+<a id="deleteanomalymonitorrequestrequesttypedef"></a>
+
 ## DeleteAnomalyMonitorRequestRequestTypeDef
 
 ```python
@@ -541,6 +597,8 @@ from mypy_boto3_ce.type_defs import DeleteAnomalyMonitorRequestRequestTypeDef
 Required fields:
 
 - `MonitorArn`: `str`
+
+<a id="deleteanomalysubscriptionrequestrequesttypedef"></a>
 
 ## DeleteAnomalySubscriptionRequestRequestTypeDef
 
@@ -552,6 +610,8 @@ Required fields:
 
 - `SubscriptionArn`: `str`
 
+<a id="deletecostcategorydefinitionrequestrequesttypedef"></a>
+
 ## DeleteCostCategoryDefinitionRequestRequestTypeDef
 
 ```python
@@ -561,6 +621,8 @@ from mypy_boto3_ce.type_defs import DeleteCostCategoryDefinitionRequestRequestTy
 Required fields:
 
 - `CostCategoryArn`: `str`
+
+<a id="deletecostcategorydefinitionresponsetypedef"></a>
 
 ## DeleteCostCategoryDefinitionResponseTypeDef
 
@@ -574,6 +636,8 @@ Required fields:
 - `EffectiveEnd`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecostcategorydefinitionrequestrequesttypedef"></a>
 
 ## DescribeCostCategoryDefinitionRequestRequestTypeDef
 
@@ -589,6 +653,8 @@ Optional fields:
 
 - `EffectiveOn`: `str`
 
+<a id="describecostcategorydefinitionresponsetypedef"></a>
+
 ## DescribeCostCategoryDefinitionResponseTypeDef
 
 ```python
@@ -600,6 +666,8 @@ Required fields:
 - `CostCategory`: [CostCategoryTypeDef](./type_defs.md#costcategorytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dimensionvaluestypedef"></a>
 
 ## DimensionValuesTypeDef
 
@@ -614,6 +682,8 @@ Optional fields:
 - `MatchOptions`:
   `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
 
+<a id="dimensionvalueswithattributestypedef"></a>
+
 ## DimensionValuesWithAttributesTypeDef
 
 ```python
@@ -624,6 +694,8 @@ Optional fields:
 
 - `Value`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
+
+<a id="diskresourceutilizationtypedef"></a>
 
 ## DiskResourceUtilizationTypeDef
 
@@ -638,6 +710,8 @@ Optional fields:
 - `DiskReadBytesPerSecond`: `str`
 - `DiskWriteBytesPerSecond`: `str`
 
+<a id="ebsresourceutilizationtypedef"></a>
+
 ## EBSResourceUtilizationTypeDef
 
 ```python
@@ -650,6 +724,8 @@ Optional fields:
 - `EbsWriteOpsPerSecond`: `str`
 - `EbsReadBytesPerSecond`: `str`
 - `EbsWriteBytesPerSecond`: `str`
+
+<a id="ec2instancedetailstypedef"></a>
 
 ## EC2InstanceDetailsTypeDef
 
@@ -667,6 +743,8 @@ Optional fields:
 - `Tenancy`: `str`
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
+
+<a id="ec2resourcedetailstypedef"></a>
 
 ## EC2ResourceDetailsTypeDef
 
@@ -686,6 +764,8 @@ Optional fields:
 - `Storage`: `str`
 - `Vcpu`: `str`
 
+<a id="ec2resourceutilizationtypedef"></a>
+
 ## EC2ResourceUtilizationTypeDef
 
 ```python
@@ -704,6 +784,8 @@ Optional fields:
 - `NetworkResourceUtilization`:
   [NetworkResourceUtilizationTypeDef](./type_defs.md#networkresourceutilizationtypedef)
 
+<a id="ec2specificationtypedef"></a>
+
 ## EC2SpecificationTypeDef
 
 ```python
@@ -713,6 +795,8 @@ from mypy_boto3_ce.type_defs import EC2SpecificationTypeDef
 Optional fields:
 
 - `OfferingClass`: [OfferingClassType](./literals.md#offeringclasstype)
+
+<a id="esinstancedetailstypedef"></a>
 
 ## ESInstanceDetailsTypeDef
 
@@ -728,6 +812,8 @@ Optional fields:
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
 
+<a id="elasticacheinstancedetailstypedef"></a>
+
 ## ElastiCacheInstanceDetailsTypeDef
 
 ```python
@@ -742,6 +828,8 @@ Optional fields:
 - `ProductDescription`: `str`
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
+
+<a id="expressiontypedef"></a>
 
 ## ExpressionTypeDef
 
@@ -759,6 +847,8 @@ Optional fields:
 - `CostCategories`:
   [CostCategoryValuesTypeDef](./type_defs.md#costcategoryvaluestypedef)
 
+<a id="forecastresulttypedef"></a>
+
 ## ForecastResultTypeDef
 
 ```python
@@ -771,6 +861,8 @@ Optional fields:
 - `MeanValue`: `str`
 - `PredictionIntervalLowerBound`: `str`
 - `PredictionIntervalUpperBound`: `str`
+
+<a id="getanomaliesrequestrequesttypedef"></a>
 
 ## GetAnomaliesRequestRequestTypeDef
 
@@ -792,6 +884,8 @@ Optional fields:
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getanomaliesresponsetypedef"></a>
+
 ## GetAnomaliesResponseTypeDef
 
 ```python
@@ -805,6 +899,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getanomalymonitorsrequestrequesttypedef"></a>
+
 ## GetAnomalyMonitorsRequestRequestTypeDef
 
 ```python
@@ -816,6 +912,8 @@ Optional fields:
 - `MonitorArnList`: `Sequence`\[`str`\]
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
+
+<a id="getanomalymonitorsresponsetypedef"></a>
 
 ## GetAnomalyMonitorsResponseTypeDef
 
@@ -831,6 +929,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getanomalysubscriptionsrequestrequesttypedef"></a>
+
 ## GetAnomalySubscriptionsRequestRequestTypeDef
 
 ```python
@@ -843,6 +943,8 @@ Optional fields:
 - `MonitorArn`: `str`
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
+
+<a id="getanomalysubscriptionsresponsetypedef"></a>
 
 ## GetAnomalySubscriptionsResponseTypeDef
 
@@ -857,6 +959,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcostandusagerequestrequesttypedef"></a>
 
 ## GetCostAndUsageRequestRequestTypeDef
 
@@ -877,6 +981,8 @@ Optional fields:
   `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
+<a id="getcostandusageresponsetypedef"></a>
+
 ## GetCostAndUsageResponseTypeDef
 
 ```python
@@ -894,6 +1000,8 @@ Required fields:
   `List`\[[DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcostandusagewithresourcesrequestrequesttypedef"></a>
 
 ## GetCostAndUsageWithResourcesRequestRequestTypeDef
 
@@ -914,6 +1022,8 @@ Optional fields:
   `Sequence`\[[GroupDefinitionTypeDef](./type_defs.md#groupdefinitiontypedef)\]
 - `NextPageToken`: `str`
 
+<a id="getcostandusagewithresourcesresponsetypedef"></a>
+
 ## GetCostAndUsageWithResourcesResponseTypeDef
 
 ```python
@@ -931,6 +1041,8 @@ Required fields:
   `List`\[[DimensionValuesWithAttributesTypeDef](./type_defs.md#dimensionvalueswithattributestypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcostcategoriesrequestrequesttypedef"></a>
 
 ## GetCostCategoriesRequestRequestTypeDef
 
@@ -952,6 +1064,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
+<a id="getcostcategoriesresponsetypedef"></a>
+
 ## GetCostCategoriesResponseTypeDef
 
 ```python
@@ -967,6 +1081,8 @@ Required fields:
 - `TotalSize`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcostforecastrequestrequesttypedef"></a>
 
 ## GetCostForecastRequestRequestTypeDef
 
@@ -985,6 +1101,8 @@ Optional fields:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `PredictionIntervalLevel`: `int`
 
+<a id="getcostforecastresponsetypedef"></a>
+
 ## GetCostForecastResponseTypeDef
 
 ```python
@@ -998,6 +1116,8 @@ Required fields:
   `List`\[[ForecastResultTypeDef](./type_defs.md#forecastresulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdimensionvaluesrequestrequesttypedef"></a>
 
 ## GetDimensionValuesRequestRequestTypeDef
 
@@ -1020,6 +1140,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
+<a id="getdimensionvaluesresponsetypedef"></a>
+
 ## GetDimensionValuesResponseTypeDef
 
 ```python
@@ -1035,6 +1157,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getreservationcoveragerequestrequesttypedef"></a>
 
 ## GetReservationCoverageRequestRequestTypeDef
 
@@ -1057,6 +1181,8 @@ Optional fields:
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 - `MaxResults`: `int`
 
+<a id="getreservationcoverageresponsetypedef"></a>
+
 ## GetReservationCoverageResponseTypeDef
 
 ```python
@@ -1071,6 +1197,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getreservationpurchaserecommendationrequestrequesttypedef"></a>
 
 ## GetReservationPurchaseRecommendationRequestRequestTypeDef
 
@@ -1096,6 +1224,8 @@ Optional fields:
 - `PageSize`: `int`
 - `NextPageToken`: `str`
 
+<a id="getreservationpurchaserecommendationresponsetypedef"></a>
+
 ## GetReservationPurchaseRecommendationResponseTypeDef
 
 ```python
@@ -1111,6 +1241,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getreservationutilizationrequestrequesttypedef"></a>
 
 ## GetReservationUtilizationRequestRequestTypeDef
 
@@ -1132,6 +1264,8 @@ Optional fields:
 - `NextPageToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getreservationutilizationresponsetypedef"></a>
+
 ## GetReservationUtilizationResponseTypeDef
 
 ```python
@@ -1147,6 +1281,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrightsizingrecommendationrequestrequesttypedef"></a>
 
 ## GetRightsizingRecommendationRequestRequestTypeDef
 
@@ -1165,6 +1301,8 @@ Optional fields:
   [RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef)
 - `PageSize`: `int`
 - `NextPageToken`: `str`
+
+<a id="getrightsizingrecommendationresponsetypedef"></a>
 
 ## GetRightsizingRecommendationResponseTypeDef
 
@@ -1185,6 +1323,8 @@ Required fields:
   [RightsizingRecommendationConfigurationTypeDef](./type_defs.md#rightsizingrecommendationconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsavingsplanscoveragerequestrequesttypedef"></a>
 
 ## GetSavingsPlansCoverageRequestRequestTypeDef
 
@@ -1207,6 +1347,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
+<a id="getsavingsplanscoverageresponsetypedef"></a>
+
 ## GetSavingsPlansCoverageResponseTypeDef
 
 ```python
@@ -1220,6 +1362,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsavingsplanspurchaserecommendationrequestrequesttypedef"></a>
 
 ## GetSavingsPlansPurchaseRecommendationRequestRequestTypeDef
 
@@ -1243,6 +1387,8 @@ Optional fields:
 - `PageSize`: `int`
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 
+<a id="getsavingsplanspurchaserecommendationresponsetypedef"></a>
+
 ## GetSavingsPlansPurchaseRecommendationResponseTypeDef
 
 ```python
@@ -1258,6 +1404,8 @@ Required fields:
 - `NextPageToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsavingsplansutilizationdetailsrequestrequesttypedef"></a>
 
 ## GetSavingsPlansUtilizationDetailsRequestRequestTypeDef
 
@@ -1278,6 +1426,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
+<a id="getsavingsplansutilizationdetailsresponsetypedef"></a>
+
 ## GetSavingsPlansUtilizationDetailsResponseTypeDef
 
 ```python
@@ -1295,6 +1445,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsavingsplansutilizationrequestrequesttypedef"></a>
+
 ## GetSavingsPlansUtilizationRequestRequestTypeDef
 
 ```python
@@ -1311,6 +1463,8 @@ Optional fields:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `SortBy`: [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 
+<a id="getsavingsplansutilizationresponsetypedef"></a>
+
 ## GetSavingsPlansUtilizationResponseTypeDef
 
 ```python
@@ -1325,6 +1479,8 @@ Required fields:
   [SavingsPlansUtilizationAggregatesTypeDef](./type_defs.md#savingsplansutilizationaggregatestypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettagsrequestrequesttypedef"></a>
 
 ## GetTagsRequestRequestTypeDef
 
@@ -1346,6 +1502,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextPageToken`: `str`
 
+<a id="gettagsresponsetypedef"></a>
+
 ## GetTagsResponseTypeDef
 
 ```python
@@ -1360,6 +1518,8 @@ Required fields:
 - `TotalSize`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getusageforecastrequestrequesttypedef"></a>
 
 ## GetUsageForecastRequestRequestTypeDef
 
@@ -1378,6 +1538,8 @@ Optional fields:
 - `Filter`: [ExpressionTypeDef](./type_defs.md#expressiontypedef)
 - `PredictionIntervalLevel`: `int`
 
+<a id="getusageforecastresponsetypedef"></a>
+
 ## GetUsageForecastResponseTypeDef
 
 ```python
@@ -1392,6 +1554,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupdefinitiontypedef"></a>
+
 ## GroupDefinitionTypeDef
 
 ```python
@@ -1402,6 +1566,8 @@ Optional fields:
 
 - `Type`: [GroupDefinitionTypeType](./literals.md#groupdefinitiontypetype)
 - `Key`: `str`
+
+<a id="grouptypedef"></a>
 
 ## GroupTypeDef
 
@@ -1414,6 +1580,8 @@ Optional fields:
 - `Keys`: `List`\[`str`\]
 - `Metrics`: `Dict`\[`str`,
   [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)\]
+
+<a id="impacttypedef"></a>
 
 ## ImpactTypeDef
 
@@ -1428,6 +1596,8 @@ Required fields:
 Optional fields:
 
 - `TotalImpact`: `float`
+
+<a id="instancedetailstypedef"></a>
 
 ## InstanceDetailsTypeDef
 
@@ -1448,6 +1618,8 @@ Optional fields:
 - `ESInstanceDetails`:
   [ESInstanceDetailsTypeDef](./type_defs.md#esinstancedetailstypedef)
 
+<a id="listcostcategorydefinitionsrequestrequesttypedef"></a>
+
 ## ListCostCategoryDefinitionsRequestRequestTypeDef
 
 ```python
@@ -1459,6 +1631,8 @@ Optional fields:
 - `EffectiveOn`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listcostcategorydefinitionsresponsetypedef"></a>
 
 ## ListCostCategoryDefinitionsResponseTypeDef
 
@@ -1474,6 +1648,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metricvaluetypedef"></a>
+
 ## MetricValueTypeDef
 
 ```python
@@ -1485,6 +1661,8 @@ Optional fields:
 - `Amount`: `str`
 - `Unit`: `str`
 
+<a id="modifyrecommendationdetailtypedef"></a>
+
 ## ModifyRecommendationDetailTypeDef
 
 ```python
@@ -1495,6 +1673,8 @@ Optional fields:
 
 - `TargetInstances`:
   `List`\[[TargetInstanceTypeDef](./type_defs.md#targetinstancetypedef)\]
+
+<a id="networkresourceutilizationtypedef"></a>
 
 ## NetworkResourceUtilizationTypeDef
 
@@ -1509,6 +1689,8 @@ Optional fields:
 - `NetworkPacketsInPerSecond`: `str`
 - `NetworkPacketsOutPerSecond`: `str`
 
+<a id="provideanomalyfeedbackrequestrequesttypedef"></a>
+
 ## ProvideAnomalyFeedbackRequestRequestTypeDef
 
 ```python
@@ -1519,6 +1701,8 @@ Required fields:
 
 - `AnomalyId`: `str`
 - `Feedback`: [AnomalyFeedbackTypeType](./literals.md#anomalyfeedbacktypetype)
+
+<a id="provideanomalyfeedbackresponsetypedef"></a>
 
 ## ProvideAnomalyFeedbackResponseTypeDef
 
@@ -1531,6 +1715,8 @@ Required fields:
 - `AnomalyId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="rdsinstancedetailstypedef"></a>
 
 ## RDSInstanceDetailsTypeDef
 
@@ -1550,6 +1736,8 @@ Optional fields:
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
 
+<a id="redshiftinstancedetailstypedef"></a>
+
 ## RedshiftInstanceDetailsTypeDef
 
 ```python
@@ -1563,6 +1751,8 @@ Optional fields:
 - `Region`: `str`
 - `CurrentGeneration`: `bool`
 - `SizeFlexEligible`: `bool`
+
+<a id="reservationaggregatestypedef"></a>
 
 ## ReservationAggregatesTypeDef
 
@@ -1590,6 +1780,8 @@ Optional fields:
 - `RealizedSavings`: `str`
 - `UnrealizedSavings`: `str`
 
+<a id="reservationcoveragegrouptypedef"></a>
+
 ## ReservationCoverageGroupTypeDef
 
 ```python
@@ -1600,6 +1792,8 @@ Optional fields:
 
 - `Attributes`: `Dict`\[`str`, `str`\]
 - `Coverage`: [CoverageTypeDef](./type_defs.md#coveragetypedef)
+
+<a id="reservationpurchaserecommendationdetailtypedef"></a>
 
 ## ReservationPurchaseRecommendationDetailTypeDef
 
@@ -1630,6 +1824,8 @@ Optional fields:
 - `UpfrontCost`: `str`
 - `RecurringStandardMonthlyCost`: `str`
 
+<a id="reservationpurchaserecommendationmetadatatypedef"></a>
+
 ## ReservationPurchaseRecommendationMetadataTypeDef
 
 ```python
@@ -1640,6 +1836,8 @@ Optional fields:
 
 - `RecommendationId`: `str`
 - `GenerationTimestamp`: `str`
+
+<a id="reservationpurchaserecommendationsummarytypedef"></a>
 
 ## ReservationPurchaseRecommendationSummaryTypeDef
 
@@ -1652,6 +1850,8 @@ Optional fields:
 - `TotalEstimatedMonthlySavingsAmount`: `str`
 - `TotalEstimatedMonthlySavingsPercentage`: `str`
 - `CurrencyCode`: `str`
+
+<a id="reservationpurchaserecommendationtypedef"></a>
 
 ## ReservationPurchaseRecommendationTypeDef
 
@@ -1673,6 +1873,8 @@ Optional fields:
 - `RecommendationSummary`:
   [ReservationPurchaseRecommendationSummaryTypeDef](./type_defs.md#reservationpurchaserecommendationsummarytypedef)
 
+<a id="reservationutilizationgrouptypedef"></a>
+
 ## ReservationUtilizationGroupTypeDef
 
 ```python
@@ -1687,6 +1889,8 @@ Optional fields:
 - `Utilization`:
   [ReservationAggregatesTypeDef](./type_defs.md#reservationaggregatestypedef)
 
+<a id="resourcedetailstypedef"></a>
+
 ## ResourceDetailsTypeDef
 
 ```python
@@ -1698,6 +1902,8 @@ Optional fields:
 - `EC2ResourceDetails`:
   [EC2ResourceDetailsTypeDef](./type_defs.md#ec2resourcedetailstypedef)
 
+<a id="resourceutilizationtypedef"></a>
+
 ## ResourceUtilizationTypeDef
 
 ```python
@@ -1708,6 +1914,8 @@ Optional fields:
 
 - `EC2ResourceUtilization`:
   [EC2ResourceUtilizationTypeDef](./type_defs.md#ec2resourceutilizationtypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1723,6 +1931,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultbytimetypedef"></a>
+
 ## ResultByTimeTypeDef
 
 ```python
@@ -1737,6 +1947,8 @@ Optional fields:
 - `Groups`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
 - `Estimated`: `bool`
 
+<a id="rightsizingrecommendationconfigurationtypedef"></a>
+
 ## RightsizingRecommendationConfigurationTypeDef
 
 ```python
@@ -1748,6 +1960,8 @@ Required fields:
 - `RecommendationTarget`:
   [RecommendationTargetType](./literals.md#recommendationtargettype)
 - `BenefitsConsidered`: `bool`
+
+<a id="rightsizingrecommendationmetadatatypedef"></a>
 
 ## RightsizingRecommendationMetadataTypeDef
 
@@ -1763,6 +1977,8 @@ Optional fields:
   [LookbackPeriodInDaysType](./literals.md#lookbackperiodindaystype)
 - `AdditionalMetadata`: `str`
 
+<a id="rightsizingrecommendationsummarytypedef"></a>
+
 ## RightsizingRecommendationSummaryTypeDef
 
 ```python
@@ -1775,6 +1991,8 @@ Optional fields:
 - `EstimatedTotalMonthlySavingsAmount`: `str`
 - `SavingsCurrencyCode`: `str`
 - `SavingsPercentage`: `str`
+
+<a id="rightsizingrecommendationtypedef"></a>
 
 ## RightsizingRecommendationTypeDef
 
@@ -1795,6 +2013,8 @@ Optional fields:
 - `FindingReasonCodes`:
   `List`\[[FindingReasonCodeType](./literals.md#findingreasoncodetype)\]
 
+<a id="rootcausetypedef"></a>
+
 ## RootCauseTypeDef
 
 ```python
@@ -1808,6 +2028,8 @@ Optional fields:
 - `LinkedAccount`: `str`
 - `UsageType`: `str`
 
+<a id="savingsplansamortizedcommitmenttypedef"></a>
+
 ## SavingsPlansAmortizedCommitmentTypeDef
 
 ```python
@@ -1819,6 +2041,8 @@ Optional fields:
 - `AmortizedRecurringCommitment`: `str`
 - `AmortizedUpfrontCommitment`: `str`
 - `TotalAmortizedCommitment`: `str`
+
+<a id="savingsplanscoveragedatatypedef"></a>
 
 ## SavingsPlansCoverageDataTypeDef
 
@@ -1833,6 +2057,8 @@ Optional fields:
 - `TotalCost`: `str`
 - `CoveragePercentage`: `str`
 
+<a id="savingsplanscoveragetypedef"></a>
+
 ## SavingsPlansCoverageTypeDef
 
 ```python
@@ -1846,6 +2072,8 @@ Optional fields:
   [SavingsPlansCoverageDataTypeDef](./type_defs.md#savingsplanscoveragedatatypedef)
 - `TimePeriod`: [DateIntervalTypeDef](./type_defs.md#dateintervaltypedef)
 
+<a id="savingsplansdetailstypedef"></a>
+
 ## SavingsPlansDetailsTypeDef
 
 ```python
@@ -1857,6 +2085,8 @@ Optional fields:
 - `Region`: `str`
 - `InstanceFamily`: `str`
 - `OfferingId`: `str`
+
+<a id="savingsplanspurchaserecommendationdetailtypedef"></a>
 
 ## SavingsPlansPurchaseRecommendationDetailTypeDef
 
@@ -1884,6 +2114,8 @@ Optional fields:
 - `CurrentMaximumHourlyOnDemandSpend`: `str`
 - `CurrentAverageHourlyOnDemandSpend`: `str`
 
+<a id="savingsplanspurchaserecommendationmetadatatypedef"></a>
+
 ## SavingsPlansPurchaseRecommendationMetadataTypeDef
 
 ```python
@@ -1895,6 +2127,8 @@ Optional fields:
 - `RecommendationId`: `str`
 - `GenerationTimestamp`: `str`
 - `AdditionalMetadata`: `str`
+
+<a id="savingsplanspurchaserecommendationsummarytypedef"></a>
 
 ## SavingsPlansPurchaseRecommendationSummaryTypeDef
 
@@ -1916,6 +2150,8 @@ Optional fields:
 - `EstimatedMonthlySavingsAmount`: `str`
 - `EstimatedOnDemandCostWithCurrentCommitment`: `str`
 
+<a id="savingsplanspurchaserecommendationtypedef"></a>
+
 ## SavingsPlansPurchaseRecommendationTypeDef
 
 ```python
@@ -1936,6 +2172,8 @@ Optional fields:
 - `SavingsPlansPurchaseRecommendationSummary`:
   [SavingsPlansPurchaseRecommendationSummaryTypeDef](./type_defs.md#savingsplanspurchaserecommendationsummarytypedef)
 
+<a id="savingsplanssavingstypedef"></a>
+
 ## SavingsPlansSavingsTypeDef
 
 ```python
@@ -1946,6 +2184,8 @@ Optional fields:
 
 - `NetSavings`: `str`
 - `OnDemandCostEquivalent`: `str`
+
+<a id="savingsplansutilizationaggregatestypedef"></a>
 
 ## SavingsPlansUtilizationAggregatesTypeDef
 
@@ -1964,6 +2204,8 @@ Optional fields:
   [SavingsPlansSavingsTypeDef](./type_defs.md#savingsplanssavingstypedef)
 - `AmortizedCommitment`:
   [SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef)
+
+<a id="savingsplansutilizationbytimetypedef"></a>
 
 ## SavingsPlansUtilizationByTimeTypeDef
 
@@ -1984,6 +2226,8 @@ Optional fields:
 - `AmortizedCommitment`:
   [SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef)
 
+<a id="savingsplansutilizationdetailtypedef"></a>
+
 ## SavingsPlansUtilizationDetailTypeDef
 
 ```python
@@ -2001,6 +2245,8 @@ Optional fields:
 - `AmortizedCommitment`:
   [SavingsPlansAmortizedCommitmentTypeDef](./type_defs.md#savingsplansamortizedcommitmenttypedef)
 
+<a id="savingsplansutilizationtypedef"></a>
+
 ## SavingsPlansUtilizationTypeDef
 
 ```python
@@ -2014,6 +2260,8 @@ Optional fields:
 - `UnusedCommitment`: `str`
 - `UtilizationPercentage`: `str`
 
+<a id="servicespecificationtypedef"></a>
+
 ## ServiceSpecificationTypeDef
 
 ```python
@@ -2024,6 +2272,8 @@ Optional fields:
 
 - `EC2Specification`:
   [EC2SpecificationTypeDef](./type_defs.md#ec2specificationtypedef)
+
+<a id="sortdefinitiontypedef"></a>
 
 ## SortDefinitionTypeDef
 
@@ -2039,6 +2289,8 @@ Optional fields:
 
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
 
+<a id="subscribertypedef"></a>
+
 ## SubscriberTypeDef
 
 ```python
@@ -2050,6 +2302,8 @@ Optional fields:
 - `Address`: `str`
 - `Type`: [SubscriberTypeType](./literals.md#subscribertypetype)
 - `Status`: [SubscriberStatusType](./literals.md#subscriberstatustype)
+
+<a id="tagvaluestypedef"></a>
 
 ## TagValuesTypeDef
 
@@ -2063,6 +2317,8 @@ Optional fields:
 - `Values`: `Sequence`\[`str`\]
 - `MatchOptions`:
   `Sequence`\[[MatchOptionType](./literals.md#matchoptiontype)\]
+
+<a id="targetinstancetypedef"></a>
 
 ## TargetInstanceTypeDef
 
@@ -2083,6 +2339,8 @@ Optional fields:
 - `PlatformDifferences`:
   `List`\[[PlatformDifferenceType](./literals.md#platformdifferencetype)\]
 
+<a id="terminaterecommendationdetailtypedef"></a>
+
 ## TerminateRecommendationDetailTypeDef
 
 ```python
@@ -2093,6 +2351,8 @@ Optional fields:
 
 - `EstimatedMonthlySavings`: `str`
 - `CurrencyCode`: `str`
+
+<a id="totalimpactfiltertypedef"></a>
 
 ## TotalImpactFilterTypeDef
 
@@ -2109,6 +2369,8 @@ Optional fields:
 
 - `EndValue`: `float`
 
+<a id="updateanomalymonitorrequestrequesttypedef"></a>
+
 ## UpdateAnomalyMonitorRequestRequestTypeDef
 
 ```python
@@ -2123,6 +2385,8 @@ Optional fields:
 
 - `MonitorName`: `str`
 
+<a id="updateanomalymonitorresponsetypedef"></a>
+
 ## UpdateAnomalyMonitorResponseTypeDef
 
 ```python
@@ -2134,6 +2398,8 @@ Required fields:
 - `MonitorArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateanomalysubscriptionrequestrequesttypedef"></a>
 
 ## UpdateAnomalySubscriptionRequestRequestTypeDef
 
@@ -2155,6 +2421,8 @@ Optional fields:
   `Sequence`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 - `SubscriptionName`: `str`
 
+<a id="updateanomalysubscriptionresponsetypedef"></a>
+
 ## UpdateAnomalySubscriptionResponseTypeDef
 
 ```python
@@ -2166,6 +2434,8 @@ Required fields:
 - `SubscriptionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecostcategorydefinitionrequestrequesttypedef"></a>
 
 ## UpdateCostCategoryDefinitionRequestRequestTypeDef
 
@@ -2187,6 +2457,8 @@ Optional fields:
 - `SplitChargeRules`:
   `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
 
+<a id="updatecostcategorydefinitionresponsetypedef"></a>
+
 ## UpdateCostCategoryDefinitionResponseTypeDef
 
 ```python
@@ -2199,6 +2471,8 @@ Required fields:
 - `EffectiveStart`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="utilizationbytimetypedef"></a>
 
 ## UtilizationByTimeTypeDef
 

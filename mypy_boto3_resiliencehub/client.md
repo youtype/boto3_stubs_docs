@@ -1,3 +1,5 @@
+<a id="resiliencehubclient-for-boto3-resiliencehub-module"></a>
+
 # ResilienceHubClient for boto3 ResilienceHub module
 
 > [Index](..) > [ResilienceHub](.) > ResilienceHubClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
 type annotations stubs module
-[mypy_boto3_resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 - [ResilienceHubClient for boto3 ResilienceHub module](#resiliencehubclient-for-boto3-resiliencehub-module)
   - [ResilienceHubClient](#resiliencehubclient)
@@ -54,6 +56,8 @@ type annotations stubs module
     - [update_app](#update_app)
     - [update_resiliency_policy](#update_resiliency_policy)
 
+<a id="resiliencehubclient"></a>
+
 ## ResilienceHubClient
 
 Type annotations for `boto3.client("resiliencehub")`
@@ -61,14 +65,17 @@ Type annotations for `boto3.client("resiliencehub")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_resiliencehub.client import ResilienceHubClient
 
 def get_resiliencehub_client() -> ResilienceHubClient:
-    return boto3.client("resiliencehub")
+    return Session().client("resiliencehub")
 ```
 
 Boto3 documentation:
 [ResilienceHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -93,7 +100,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -105,6 +116,8 @@ Boto3 documentation:
 [ResilienceHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_draft_app_version_resource_mappings"></a>
 
 ### add_draft_app_version_resource_mappings
 
@@ -129,6 +142,8 @@ Keyword-only arguments:
 Returns
 [AddDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#adddraftappversionresourcemappingsresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -143,6 +158,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_app"></a>
 
 ### create_app
 
@@ -165,6 +182,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
+
+<a id="create_recommendation_template"></a>
 
 ### create_recommendation_template
 
@@ -193,6 +212,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRecommendationTemplateResponseTypeDef](./type_defs.md#createrecommendationtemplateresponsetypedef).
+
+<a id="create_resiliency_policy"></a>
 
 ### create_resiliency_policy
 
@@ -223,6 +244,8 @@ Keyword-only arguments:
 Returns
 [CreateResiliencyPolicyResponseTypeDef](./type_defs.md#createresiliencypolicyresponsetypedef).
 
+<a id="delete_app"></a>
+
 ### delete_app
 
 Deletes an AWS Resilience Hub application.
@@ -242,6 +265,8 @@ Keyword-only arguments:
 - `forceDelete`: `bool`
 
 Returns [DeleteAppResponseTypeDef](./type_defs.md#deleteappresponsetypedef).
+
+<a id="delete_app_assessment"></a>
 
 ### delete_app_assessment
 
@@ -264,6 +289,8 @@ Keyword-only arguments:
 Returns
 [DeleteAppAssessmentResponseTypeDef](./type_defs.md#deleteappassessmentresponsetypedef).
 
+<a id="delete_recommendation_template"></a>
+
 ### delete_recommendation_template
 
 Deletes a recommendation template.
@@ -284,6 +311,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRecommendationTemplateResponseTypeDef](./type_defs.md#deleterecommendationtemplateresponsetypedef).
+
+<a id="delete_resiliency_policy"></a>
 
 ### delete_resiliency_policy
 
@@ -306,6 +335,8 @@ Keyword-only arguments:
 Returns
 [DeleteResiliencyPolicyResponseTypeDef](./type_defs.md#deleteresiliencypolicyresponsetypedef).
 
+<a id="describe_app"></a>
+
 ### describe_app
 
 Describes an AWS Resilience Hub application.
@@ -324,6 +355,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppResponseTypeDef](./type_defs.md#describeappresponsetypedef).
+
+<a id="describe_app_assessment"></a>
 
 ### describe_app_assessment
 
@@ -344,6 +377,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAppAssessmentResponseTypeDef](./type_defs.md#describeappassessmentresponsetypedef).
+
+<a id="describe_app_version_resources_resolution_status"></a>
 
 ### describe_app_version_resources_resolution_status
 
@@ -369,6 +404,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppVersionResourcesResolutionStatusResponseTypeDef](./type_defs.md#describeappversionresourcesresolutionstatusresponsetypedef).
 
+<a id="describe_app_version_template"></a>
+
 ### describe_app_version_template
 
 Describes details about an AWS Resilience Hub See also:
@@ -391,6 +428,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppVersionTemplateResponseTypeDef](./type_defs.md#describeappversiontemplateresponsetypedef).
 
+<a id="describe_draft_app_version_resources_import_status"></a>
+
 ### describe_draft_app_version_resources_import_status
 
 Describes the status of importing resources to an application version.
@@ -412,6 +451,8 @@ Keyword-only arguments:
 Returns
 [DescribeDraftAppVersionResourcesImportStatusResponseTypeDef](./type_defs.md#describedraftappversionresourcesimportstatusresponsetypedef).
 
+<a id="describe_resiliency_policy"></a>
+
 ### describe_resiliency_policy
 
 Describes a specified resiliency policy for an AWS Resilience Hub application.
@@ -432,6 +473,8 @@ Keyword-only arguments:
 Returns
 [DescribeResiliencyPolicyResponseTypeDef](./type_defs.md#describeresiliencypolicyresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -450,6 +493,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_resources_to_draft_app_version"></a>
 
 ### import_resources_to_draft_app_version
 
@@ -473,6 +518,8 @@ Keyword-only arguments:
 Returns
 [ImportResourcesToDraftAppVersionResponseTypeDef](./type_defs.md#importresourcestodraftappversionresponsetypedef).
 
+<a id="list_alarm_recommendations"></a>
+
 ### list_alarm_recommendations
 
 Lists the alarm recommendations for a AWS Resilience Hub application.
@@ -494,6 +541,8 @@ Keyword-only arguments:
 
 Returns
 [ListAlarmRecommendationsResponseTypeDef](./type_defs.md#listalarmrecommendationsresponsetypedef).
+
+<a id="list_app_assessments"></a>
 
 ### list_app_assessments
 
@@ -524,6 +573,8 @@ Keyword-only arguments:
 Returns
 [ListAppAssessmentsResponseTypeDef](./type_defs.md#listappassessmentsresponsetypedef).
 
+<a id="list_app_component_compliances"></a>
+
 ### list_app_component_compliances
 
 Lists the compliances for an AWS Resilience Hub component.
@@ -545,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [ListAppComponentCompliancesResponseTypeDef](./type_defs.md#listappcomponentcompliancesresponsetypedef).
+
+<a id="list_app_component_recommendations"></a>
 
 ### list_app_component_recommendations
 
@@ -568,6 +621,8 @@ Keyword-only arguments:
 Returns
 [ListAppComponentRecommendationsResponseTypeDef](./type_defs.md#listappcomponentrecommendationsresponsetypedef).
 
+<a id="list_app_version_resource_mappings"></a>
+
 ### list_app_version_resource_mappings
 
 Lists how the resources in an application version are mapped/sourced from.
@@ -590,6 +645,8 @@ Keyword-only arguments:
 
 Returns
 [ListAppVersionResourceMappingsResponseTypeDef](./type_defs.md#listappversionresourcemappingsresponsetypedef).
+
+<a id="list_app_version_resources"></a>
 
 ### list_app_version_resources
 
@@ -615,6 +672,8 @@ Keyword-only arguments:
 Returns
 [ListAppVersionResourcesResponseTypeDef](./type_defs.md#listappversionresourcesresponsetypedef).
 
+<a id="list_app_versions"></a>
+
 ### list_app_versions
 
 Lists the different versions for the Resilience Hub applications.
@@ -636,6 +695,8 @@ Keyword-only arguments:
 Returns
 [ListAppVersionsResponseTypeDef](./type_defs.md#listappversionsresponsetypedef).
 
+<a id="list_apps"></a>
+
 ### list_apps
 
 Lists your Resilience Hub applications.
@@ -656,6 +717,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
+
+<a id="list_recommendation_templates"></a>
 
 ### list_recommendation_templates
 
@@ -684,6 +747,8 @@ Keyword-only arguments:
 Returns
 [ListRecommendationTemplatesResponseTypeDef](./type_defs.md#listrecommendationtemplatesresponsetypedef).
 
+<a id="list_resiliency_policies"></a>
+
 ### list_resiliency_policies
 
 Lists the resiliency policies for the Resilience Hub applications.
@@ -705,6 +770,8 @@ Keyword-only arguments:
 
 Returns
 [ListResiliencyPoliciesResponseTypeDef](./type_defs.md#listresiliencypoliciesresponsetypedef).
+
+<a id="list_sop_recommendations"></a>
 
 ### list_sop_recommendations
 
@@ -729,6 +796,8 @@ Keyword-only arguments:
 Returns
 [ListSopRecommendationsResponseTypeDef](./type_defs.md#listsoprecommendationsresponsetypedef).
 
+<a id="list_suggested_resiliency_policies"></a>
+
 ### list_suggested_resiliency_policies
 
 Lists the suggested resiliency policies for the Resilience Hub applications.
@@ -750,6 +819,8 @@ Keyword-only arguments:
 Returns
 [ListSuggestedResiliencyPoliciesResponseTypeDef](./type_defs.md#listsuggestedresiliencypoliciesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for your resources in your Resilience Hub applications.
@@ -769,6 +840,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_test_recommendations"></a>
 
 ### list_test_recommendations
 
@@ -791,6 +864,8 @@ Keyword-only arguments:
 
 Returns
 [ListTestRecommendationsResponseTypeDef](./type_defs.md#listtestrecommendationsresponsetypedef).
+
+<a id="list_unsupported_app_version_resources"></a>
 
 ### list_unsupported_app_version_resources
 
@@ -816,6 +891,8 @@ Keyword-only arguments:
 Returns
 [ListUnsupportedAppVersionResourcesResponseTypeDef](./type_defs.md#listunsupportedappversionresourcesresponsetypedef).
 
+<a id="publish_app_version"></a>
+
 ### publish_app_version
 
 Publishes a new version of a specific Resilience Hub application.
@@ -835,6 +912,8 @@ Keyword-only arguments:
 
 Returns
 [PublishAppVersionResponseTypeDef](./type_defs.md#publishappversionresponsetypedef).
+
+<a id="put_draft_app_version_template"></a>
 
 ### put_draft_app_version_template
 
@@ -856,6 +935,8 @@ Keyword-only arguments:
 
 Returns
 [PutDraftAppVersionTemplateResponseTypeDef](./type_defs.md#putdraftappversiontemplateresponsetypedef).
+
+<a id="remove_draft_app_version_resource_mappings"></a>
 
 ### remove_draft_app_version_resource_mappings
 
@@ -882,6 +963,8 @@ Keyword-only arguments:
 Returns
 [RemoveDraftAppVersionResourceMappingsResponseTypeDef](./type_defs.md#removedraftappversionresourcemappingsresponsetypedef).
 
+<a id="resolve_app_version_resources"></a>
+
 ### resolve_app_version_resources
 
 Resolves the resources for an application version.
@@ -902,6 +985,8 @@ Keyword-only arguments:
 
 Returns
 [ResolveAppVersionResourcesResponseTypeDef](./type_defs.md#resolveappversionresourcesresponsetypedef).
+
+<a id="start_app_assessment"></a>
 
 ### start_app_assessment
 
@@ -927,6 +1012,8 @@ Keyword-only arguments:
 Returns
 [StartAppAssessmentResponseTypeDef](./type_defs.md#startappassessmentresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies one or more tags to a resource.
@@ -946,6 +1033,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from a resource.
@@ -964,6 +1053,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_app"></a>
 
 ### update_app
 
@@ -985,6 +1076,8 @@ Keyword-only arguments:
 - `policyArn`: `str`
 
 Returns [UpdateAppResponseTypeDef](./type_defs.md#updateappresponsetypedef).
+
+<a id="update_resiliency_policy"></a>
 
 ### update_resiliency_policy
 

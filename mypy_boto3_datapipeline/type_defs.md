@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-datapipeline-module"></a>
+
 # Typed dictionaries for boto3 DataPipeline module
 
 > [Index](..) > [DataPipeline](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataPipeline](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datapipeline.html#DataPipeline)
 type annotations stubs module
-[mypy_boto3_datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
+[mypy-boto3-datapipeline](https://pypi.org/project/mypy-boto3-datapipeline/).
 
 - [Typed dictionaries for boto3 DataPipeline module](#typed-dictionaries-for-boto3-datapipeline-module)
   - [ActivatePipelineInputRequestTypeDef](#activatepipelineinputrequesttypedef)
@@ -57,6 +59,8 @@ type annotations stubs module
   - [ValidationErrorTypeDef](#validationerrortypedef)
   - [ValidationWarningTypeDef](#validationwarningtypedef)
 
+<a id="activatepipelineinputrequesttypedef"></a>
+
 ## ActivatePipelineInputRequestTypeDef
 
 ```python
@@ -73,6 +77,8 @@ Optional fields:
   `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 - `startTimestamp`: `Union`\[`datetime`, `str`\]
 
+<a id="addtagsinputrequesttypedef"></a>
+
 ## AddTagsInputRequestTypeDef
 
 ```python
@@ -83,6 +89,8 @@ Required fields:
 
 - `pipelineId`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createpipelineinputrequesttypedef"></a>
 
 ## CreatePipelineInputRequestTypeDef
 
@@ -100,6 +108,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createpipelineoutputtypedef"></a>
+
 ## CreatePipelineOutputTypeDef
 
 ```python
@@ -111,6 +121,8 @@ Required fields:
 - `pipelineId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deactivatepipelineinputrequesttypedef"></a>
 
 ## DeactivatePipelineInputRequestTypeDef
 
@@ -126,6 +138,8 @@ Optional fields:
 
 - `cancelActive`: `bool`
 
+<a id="deletepipelineinputrequesttypedef"></a>
+
 ## DeletePipelineInputRequestTypeDef
 
 ```python
@@ -135,6 +149,8 @@ from mypy_boto3_datapipeline.type_defs import DeletePipelineInputRequestTypeDef
 Required fields:
 
 - `pipelineId`: `str`
+
+<a id="describeobjectsinputrequesttypedef"></a>
 
 ## DescribeObjectsInputRequestTypeDef
 
@@ -152,6 +168,8 @@ Optional fields:
 - `evaluateExpressions`: `bool`
 - `marker`: `str`
 
+<a id="describeobjectsoutputtypedef"></a>
+
 ## DescribeObjectsOutputTypeDef
 
 ```python
@@ -167,6 +185,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepipelinesinputrequesttypedef"></a>
+
 ## DescribePipelinesInputRequestTypeDef
 
 ```python
@@ -176,6 +196,8 @@ from mypy_boto3_datapipeline.type_defs import DescribePipelinesInputRequestTypeD
 Required fields:
 
 - `pipelineIds`: `Sequence`\[`str`\]
+
+<a id="describepipelinesoutputtypedef"></a>
 
 ## DescribePipelinesOutputTypeDef
 
@@ -190,6 +212,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="evaluateexpressioninputrequesttypedef"></a>
+
 ## EvaluateExpressionInputRequestTypeDef
 
 ```python
@@ -202,6 +226,8 @@ Required fields:
 - `objectId`: `str`
 - `expression`: `str`
 
+<a id="evaluateexpressionoutputtypedef"></a>
+
 ## EvaluateExpressionOutputTypeDef
 
 ```python
@@ -213,6 +239,8 @@ Required fields:
 - `evaluatedExpression`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="fieldtypedef"></a>
 
 ## FieldTypeDef
 
@@ -229,6 +257,8 @@ Optional fields:
 - `stringValue`: `str`
 - `refValue`: `str`
 
+<a id="getpipelinedefinitioninputrequesttypedef"></a>
+
 ## GetPipelineDefinitionInputRequestTypeDef
 
 ```python
@@ -242,6 +272,8 @@ Required fields:
 Optional fields:
 
 - `version`: `str`
+
+<a id="getpipelinedefinitionoutputtypedef"></a>
 
 ## GetPipelineDefinitionOutputTypeDef
 
@@ -260,6 +292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instanceidentitytypedef"></a>
+
 ## InstanceIdentityTypeDef
 
 ```python
@@ -271,6 +305,8 @@ Optional fields:
 - `document`: `str`
 - `signature`: `str`
 
+<a id="listpipelinesinputrequesttypedef"></a>
+
 ## ListPipelinesInputRequestTypeDef
 
 ```python
@@ -280,6 +316,8 @@ from mypy_boto3_datapipeline.type_defs import ListPipelinesInputRequestTypeDef
 Optional fields:
 
 - `marker`: `str`
+
+<a id="listpipelinesoutputtypedef"></a>
 
 ## ListPipelinesOutputTypeDef
 
@@ -296,6 +334,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="operatortypedef"></a>
+
 ## OperatorTypeDef
 
 ```python
@@ -306,6 +346,8 @@ Optional fields:
 
 - `type`: [OperatorTypeType](./literals.md#operatortypetype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -319,6 +361,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parameterattributetypedef"></a>
+
 ## ParameterAttributeTypeDef
 
 ```python
@@ -329,6 +373,8 @@ Required fields:
 
 - `key`: `str`
 - `stringValue`: `str`
+
+<a id="parameterobjecttypedef"></a>
 
 ## ParameterObjectTypeDef
 
@@ -342,6 +388,8 @@ Required fields:
 - `attributes`:
   `List`\[[ParameterAttributeTypeDef](./type_defs.md#parameterattributetypedef)\]
 
+<a id="parametervaluetypedef"></a>
+
 ## ParameterValueTypeDef
 
 ```python
@@ -352,6 +400,8 @@ Required fields:
 
 - `id`: `str`
 - `stringValue`: `str`
+
+<a id="pipelinedescriptiontypedef"></a>
 
 ## PipelineDescriptionTypeDef
 
@@ -370,6 +420,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="pipelineidnametypedef"></a>
+
 ## PipelineIdNameTypeDef
 
 ```python
@@ -380,6 +432,8 @@ Optional fields:
 
 - `id`: `str`
 - `name`: `str`
+
+<a id="pipelineobjecttypedef"></a>
 
 ## PipelineObjectTypeDef
 
@@ -392,6 +446,8 @@ Required fields:
 - `id`: `str`
 - `name`: `str`
 - `fields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+
+<a id="pollfortaskinputrequesttypedef"></a>
 
 ## PollForTaskInputRequestTypeDef
 
@@ -409,6 +465,8 @@ Optional fields:
 - `instanceIdentity`:
   [InstanceIdentityTypeDef](./type_defs.md#instanceidentitytypedef)
 
+<a id="pollfortaskoutputtypedef"></a>
+
 ## PollForTaskOutputTypeDef
 
 ```python
@@ -420,6 +478,8 @@ Required fields:
 - `taskObject`: [TaskObjectTypeDef](./type_defs.md#taskobjecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putpipelinedefinitioninputrequesttypedef"></a>
 
 ## PutPipelineDefinitionInputRequestTypeDef
 
@@ -440,6 +500,8 @@ Optional fields:
 - `parameterValues`:
   `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
+<a id="putpipelinedefinitionoutputtypedef"></a>
+
 ## PutPipelineDefinitionOutputTypeDef
 
 ```python
@@ -455,6 +517,8 @@ Required fields:
 - `errored`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="queryobjectsinputrequesttypedef"></a>
 
 ## QueryObjectsInputRequestTypeDef
 
@@ -473,6 +537,8 @@ Optional fields:
 - `marker`: `str`
 - `limit`: `int`
 
+<a id="queryobjectsoutputtypedef"></a>
+
 ## QueryObjectsOutputTypeDef
 
 ```python
@@ -487,6 +553,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="querytypedef"></a>
+
 ## QueryTypeDef
 
 ```python
@@ -496,6 +564,8 @@ from mypy_boto3_datapipeline.type_defs import QueryTypeDef
 Optional fields:
 
 - `selectors`: `Sequence`\[[SelectorTypeDef](./type_defs.md#selectortypedef)\]
+
+<a id="removetagsinputrequesttypedef"></a>
 
 ## RemoveTagsInputRequestTypeDef
 
@@ -507,6 +577,8 @@ Required fields:
 
 - `pipelineId`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="reporttaskprogressinputrequesttypedef"></a>
 
 ## ReportTaskProgressInputRequestTypeDef
 
@@ -522,6 +594,8 @@ Optional fields:
 
 - `fields`: `Sequence`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
 
+<a id="reporttaskprogressoutputtypedef"></a>
+
 ## ReportTaskProgressOutputTypeDef
 
 ```python
@@ -533,6 +607,8 @@ Required fields:
 - `canceled`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="reporttaskrunnerheartbeatinputrequesttypedef"></a>
 
 ## ReportTaskRunnerHeartbeatInputRequestTypeDef
 
@@ -549,6 +625,8 @@ Optional fields:
 - `workerGroup`: `str`
 - `hostname`: `str`
 
+<a id="reporttaskrunnerheartbeatoutputtypedef"></a>
+
 ## ReportTaskRunnerHeartbeatOutputTypeDef
 
 ```python
@@ -560,6 +638,8 @@ Required fields:
 - `terminate`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -575,6 +655,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="selectortypedef"></a>
+
 ## SelectorTypeDef
 
 ```python
@@ -585,6 +667,8 @@ Optional fields:
 
 - `fieldName`: `str`
 - `operator`: [OperatorTypeDef](./type_defs.md#operatortypedef)
+
+<a id="setstatusinputrequesttypedef"></a>
 
 ## SetStatusInputRequestTypeDef
 
@@ -597,6 +681,8 @@ Required fields:
 - `pipelineId`: `str`
 - `objectIds`: `Sequence`\[`str`\]
 - `status`: `str`
+
+<a id="settaskstatusinputrequesttypedef"></a>
 
 ## SetTaskStatusInputRequestTypeDef
 
@@ -615,6 +701,8 @@ Optional fields:
 - `errorMessage`: `str`
 - `errorStackTrace`: `str`
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -625,6 +713,8 @@ Required fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="taskobjecttypedef"></a>
 
 ## TaskObjectTypeDef
 
@@ -639,6 +729,8 @@ Optional fields:
 - `attemptId`: `str`
 - `objects`: `Dict`\[`str`,
   [PipelineObjectTypeDef](./type_defs.md#pipelineobjecttypedef)\]
+
+<a id="validatepipelinedefinitioninputrequesttypedef"></a>
 
 ## ValidatePipelineDefinitionInputRequestTypeDef
 
@@ -659,6 +751,8 @@ Optional fields:
 - `parameterValues`:
   `Sequence`\[[ParameterValueTypeDef](./type_defs.md#parametervaluetypedef)\]
 
+<a id="validatepipelinedefinitionoutputtypedef"></a>
+
 ## ValidatePipelineDefinitionOutputTypeDef
 
 ```python
@@ -675,6 +769,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="validationerrortypedef"></a>
+
 ## ValidationErrorTypeDef
 
 ```python
@@ -685,6 +781,8 @@ Optional fields:
 
 - `id`: `str`
 - `errors`: `List`\[`str`\]
+
+<a id="validationwarningtypedef"></a>
 
 ## ValidationWarningTypeDef
 

@@ -1,3 +1,5 @@
+<a id="machinelearningclient-for-boto3-machinelearning-module"></a>
+
 # MachineLearningClient for boto3 MachineLearning module
 
 > [Index](..) > [MachineLearning](.) > MachineLearningClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
-[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [MachineLearningClient for boto3 MachineLearning module](#machinelearningclient-for-boto3-machinelearning-module)
   - [MachineLearningClient](#machinelearningclient)
@@ -45,6 +47,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="machinelearningclient"></a>
+
 ## MachineLearningClient
 
 Type annotations for `boto3.client("machinelearning")`
@@ -52,14 +56,17 @@ Type annotations for `boto3.client("machinelearning")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_machinelearning.client import MachineLearningClient
 
 def get_machinelearning_client() -> MachineLearningClient:
-    return boto3.client("machinelearning")
+    return Session().client("machinelearning")
 ```
 
 Boto3 documentation:
 [MachineLearning.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -85,7 +92,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TagLimitExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -97,6 +108,8 @@ Boto3 documentation:
 [MachineLearning.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags"></a>
 
 ### add_tags
 
@@ -120,6 +133,8 @@ Keyword-only arguments:
 
 Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -134,6 +149,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_batch_prediction"></a>
 
 ### create_batch_prediction
 
@@ -158,6 +175,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBatchPredictionOutputTypeDef](./type_defs.md#createbatchpredictionoutputtypedef).
+
+<a id="create_data_source_from_rds"></a>
 
 ### create_data_source_from_rds
 
@@ -186,6 +205,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceFromRDSOutputTypeDef](./type_defs.md#createdatasourcefromrdsoutputtypedef).
 
+<a id="create_data_source_from_redshift"></a>
+
 ### create_data_source_from_redshift
 
 Creates a `DataSource` from a database hosted on an Amazon Redshift cluster.
@@ -211,6 +232,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceFromRedshiftOutputTypeDef](./type_defs.md#createdatasourcefromredshiftoutputtypedef).
 
+<a id="create_data_source_from_s3"></a>
+
 ### create_data_source_from_s3
 
 Creates a `DataSource` object.
@@ -235,6 +258,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceFromS3OutputTypeDef](./type_defs.md#createdatasourcefroms3outputtypedef).
 
+<a id="create_evaluation"></a>
+
 ### create_evaluation
 
 Creates a new `Evaluation` of an `MLModel`.
@@ -257,6 +282,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEvaluationOutputTypeDef](./type_defs.md#createevaluationoutputtypedef).
+
+<a id="create_ml_model"></a>
 
 ### create_ml_model
 
@@ -284,6 +311,8 @@ Keyword-only arguments:
 Returns
 [CreateMLModelOutputTypeDef](./type_defs.md#createmlmodeloutputtypedef).
 
+<a id="create_realtime_endpoint"></a>
+
 ### create_realtime_endpoint
 
 Creates a real-time endpoint for the `MLModel`.
@@ -303,6 +332,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRealtimeEndpointOutputTypeDef](./type_defs.md#createrealtimeendpointoutputtypedef).
+
+<a id="delete_batch_prediction"></a>
 
 ### delete_batch_prediction
 
@@ -324,6 +355,8 @@ Keyword-only arguments:
 Returns
 [DeleteBatchPredictionOutputTypeDef](./type_defs.md#deletebatchpredictionoutputtypedef).
 
+<a id="delete_data_source"></a>
+
 ### delete_data_source
 
 Assigns the DELETED status to a `DataSource` , rendering it unusable.
@@ -343,6 +376,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDataSourceOutputTypeDef](./type_defs.md#deletedatasourceoutputtypedef).
+
+<a id="delete_evaluation"></a>
 
 ### delete_evaluation
 
@@ -364,6 +399,8 @@ Keyword-only arguments:
 Returns
 [DeleteEvaluationOutputTypeDef](./type_defs.md#deleteevaluationoutputtypedef).
 
+<a id="delete_ml_model"></a>
+
 ### delete_ml_model
 
 Assigns the `DELETED` status to an `MLModel` , rendering it unusable.
@@ -382,6 +419,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteMLModelOutputTypeDef](./type_defs.md#deletemlmodeloutputtypedef).
+
+<a id="delete_realtime_endpoint"></a>
 
 ### delete_realtime_endpoint
 
@@ -402,6 +441,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRealtimeEndpointOutputTypeDef](./type_defs.md#deleterealtimeendpointoutputtypedef).
+
+<a id="delete_tags"></a>
 
 ### delete_tags
 
@@ -424,6 +465,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [DeleteTagsOutputTypeDef](./type_defs.md#deletetagsoutputtypedef).
+
+<a id="describe_batch_predictions"></a>
 
 ### describe_batch_predictions
 
@@ -457,6 +500,8 @@ Keyword-only arguments:
 Returns
 [DescribeBatchPredictionsOutputTypeDef](./type_defs.md#describebatchpredictionsoutputtypedef).
 
+<a id="describe_data_sources"></a>
+
 ### describe_data_sources
 
 Returns a list of `DataSource` that match the search criteria in the request.
@@ -487,6 +532,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataSourcesOutputTypeDef](./type_defs.md#describedatasourcesoutputtypedef).
+
+<a id="describe_evaluations"></a>
 
 ### describe_evaluations
 
@@ -520,6 +567,8 @@ Keyword-only arguments:
 Returns
 [DescribeEvaluationsOutputTypeDef](./type_defs.md#describeevaluationsoutputtypedef).
 
+<a id="describe_ml_models"></a>
+
 ### describe_ml_models
 
 Returns a list of `MLModel` that match the search criteria in the request.
@@ -551,6 +600,8 @@ Keyword-only arguments:
 Returns
 [DescribeMLModelsOutputTypeDef](./type_defs.md#describemlmodelsoutputtypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Describes one or more of the tags for your Amazon ML object.
@@ -572,6 +623,8 @@ Keyword-only arguments:
 
 Returns [DescribeTagsOutputTypeDef](./type_defs.md#describetagsoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -590,6 +643,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_batch_prediction"></a>
 
 ### get_batch_prediction
 
@@ -612,6 +667,8 @@ Keyword-only arguments:
 Returns
 [GetBatchPredictionOutputTypeDef](./type_defs.md#getbatchpredictionoutputtypedef).
 
+<a id="get_data_source"></a>
+
 ### get_data_source
 
 Returns a `DataSource` that includes metadata and data file information, as
@@ -633,6 +690,8 @@ Keyword-only arguments:
 Returns
 [GetDataSourceOutputTypeDef](./type_defs.md#getdatasourceoutputtypedef).
 
+<a id="get_evaluation"></a>
+
 ### get_evaluation
 
 Returns an `Evaluation` that includes metadata as well as the current status of
@@ -652,6 +711,8 @@ Keyword-only arguments:
 
 Returns
 [GetEvaluationOutputTypeDef](./type_defs.md#getevaluationoutputtypedef).
+
+<a id="get_ml_model"></a>
 
 ### get_ml_model
 
@@ -673,6 +734,8 @@ Keyword-only arguments:
 
 Returns [GetMLModelOutputTypeDef](./type_defs.md#getmlmodeloutputtypedef).
 
+<a id="predict"></a>
+
 ### predict
 
 Generates a prediction for the observation using the specified `ML Model` .
@@ -692,6 +755,8 @@ Keyword-only arguments:
 - `PredictEndpoint`: `str` *(required)*
 
 Returns [PredictOutputTypeDef](./type_defs.md#predictoutputtypedef).
+
+<a id="update_batch_prediction"></a>
 
 ### update_batch_prediction
 
@@ -714,6 +779,8 @@ Keyword-only arguments:
 Returns
 [UpdateBatchPredictionOutputTypeDef](./type_defs.md#updatebatchpredictionoutputtypedef).
 
+<a id="update_data_source"></a>
+
 ### update_data_source
 
 Updates the `DataSourceName` of a `DataSource` .
@@ -734,6 +801,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDataSourceOutputTypeDef](./type_defs.md#updatedatasourceoutputtypedef).
+
+<a id="update_evaluation"></a>
 
 ### update_evaluation
 
@@ -756,6 +825,8 @@ Keyword-only arguments:
 Returns
 [UpdateEvaluationOutputTypeDef](./type_defs.md#updateevaluationoutputtypedef).
 
+<a id="update_ml_model"></a>
+
 ### update_ml_model
 
 Updates the `MLModelName` and the `ScoreThreshold` of an `MLModel` .
@@ -777,6 +848,8 @@ Keyword-only arguments:
 Returns
 [UpdateMLModelOutputTypeDef](./type_defs.md#updatemlmodeloutputtypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("machinelearning").get_paginator` method
@@ -790,6 +863,8 @@ with overloads.
   [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
 - `client.get_paginator("describe_ml_models")` ->
   [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

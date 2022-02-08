@@ -1,3 +1,5 @@
+<a id="networkfirewallclient-for-boto3-networkfirewall-module"></a>
+
 # NetworkFirewallClient for boto3 NetworkFirewall module
 
 > [Index](..) > [NetworkFirewall](.) > NetworkFirewallClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NetworkFirewall](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall)
 type annotations stubs module
-[mypy_boto3_network_firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
+[mypy-boto3-network-firewall](https://pypi.org/project/mypy-boto3-network-firewall/).
 
 - [NetworkFirewallClient for boto3 NetworkFirewall module](#networkfirewallclient-for-boto3-networkfirewall-module)
   - [NetworkFirewallClient](#networkfirewallclient)
@@ -46,6 +48,8 @@ type annotations stubs module
     - [update_subnet_change_protection](#update_subnet_change_protection)
     - [get_paginator](#get_paginator)
 
+<a id="networkfirewallclient"></a>
+
 ## NetworkFirewallClient
 
 Type annotations for `boto3.client("network-firewall")`
@@ -53,14 +57,17 @@ Type annotations for `boto3.client("network-firewall")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_network_firewall.client import NetworkFirewallClient
 
 def get_network-firewall_client() -> NetworkFirewallClient:
-    return boto3.client("network-firewall")
+    return Session().client("network-firewall")
 ```
 
 Boto3 documentation:
 [NetworkFirewall.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -90,7 +97,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -102,6 +113,8 @@ Boto3 documentation:
 [NetworkFirewall.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/network-firewall.html#NetworkFirewall.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_firewall_policy"></a>
 
 ### associate_firewall_policy
 
@@ -125,6 +138,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateFirewallPolicyResponseTypeDef](./type_defs.md#associatefirewallpolicyresponsetypedef).
+
+<a id="associate_subnets"></a>
 
 ### associate_subnets
 
@@ -151,6 +166,8 @@ Keyword-only arguments:
 Returns
 [AssociateSubnetsResponseTypeDef](./type_defs.md#associatesubnetsresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -165,6 +182,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_firewall"></a>
 
 ### create_firewall
 
@@ -196,6 +215,8 @@ Keyword-only arguments:
 Returns
 [CreateFirewallResponseTypeDef](./type_defs.md#createfirewallresponsetypedef).
 
+<a id="create_firewall_policy"></a>
+
 ### create_firewall_policy
 
 Creates the firewall policy for the firewall according to the specifications.
@@ -220,6 +241,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFirewallPolicyResponseTypeDef](./type_defs.md#createfirewallpolicyresponsetypedef).
+
+<a id="create_rule_group"></a>
 
 ### create_rule_group
 
@@ -249,6 +272,8 @@ Keyword-only arguments:
 Returns
 [CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
 
+<a id="delete_firewall"></a>
+
 ### delete_firewall
 
 Deletes the specified Firewall and its FirewallStatus.
@@ -268,6 +293,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFirewallResponseTypeDef](./type_defs.md#deletefirewallresponsetypedef).
+
+<a id="delete_firewall_policy"></a>
 
 ### delete_firewall_policy
 
@@ -290,6 +317,8 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallPolicyResponseTypeDef](./type_defs.md#deletefirewallpolicyresponsetypedef).
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Deletes a resource policy that you created in a PutResourcePolicy request.
@@ -308,6 +337,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_rule_group"></a>
 
 ### delete_rule_group
 
@@ -331,6 +362,8 @@ Keyword-only arguments:
 Returns
 [DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
 
+<a id="describe_firewall"></a>
+
 ### describe_firewall
 
 Returns the data objects for the specified firewall.
@@ -351,6 +384,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFirewallResponseTypeDef](./type_defs.md#describefirewallresponsetypedef).
+
+<a id="describe_firewall_policy"></a>
 
 ### describe_firewall_policy
 
@@ -373,6 +408,8 @@ Keyword-only arguments:
 Returns
 [DescribeFirewallPolicyResponseTypeDef](./type_defs.md#describefirewallpolicyresponsetypedef).
 
+<a id="describe_logging_configuration"></a>
+
 ### describe_logging_configuration
 
 Returns the logging configuration for the specified firewall.
@@ -394,6 +431,8 @@ Keyword-only arguments:
 Returns
 [DescribeLoggingConfigurationResponseTypeDef](./type_defs.md#describeloggingconfigurationresponsetypedef).
 
+<a id="describe_resource_policy"></a>
+
 ### describe_resource_policy
 
 Retrieves a resource policy that you created in a PutResourcePolicy request.
@@ -413,6 +452,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
+
+<a id="describe_rule_group"></a>
 
 ### describe_rule_group
 
@@ -435,6 +476,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRuleGroupResponseTypeDef](./type_defs.md#describerulegroupresponsetypedef).
+
+<a id="describe_rule_group_metadata"></a>
 
 ### describe_rule_group_metadata
 
@@ -459,6 +502,8 @@ Keyword-only arguments:
 Returns
 [DescribeRuleGroupMetadataResponseTypeDef](./type_defs.md#describerulegroupmetadataresponsetypedef).
 
+<a id="disassociate_subnets"></a>
+
 ### disassociate_subnets
 
 Removes the specified subnet associations from the firewall.
@@ -482,6 +527,8 @@ Keyword-only arguments:
 Returns
 [DisassociateSubnetsResponseTypeDef](./type_defs.md#disassociatesubnetsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -500,6 +547,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_firewall_policies"></a>
 
 ### list_firewall_policies
 
@@ -522,6 +571,8 @@ Keyword-only arguments:
 Returns
 [ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef).
 
+<a id="list_firewalls"></a>
+
 ### list_firewalls
 
 Retrieves the metadata for the firewalls that you have defined.
@@ -542,6 +593,8 @@ Keyword-only arguments:
 
 Returns
 [ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef).
+
+<a id="list_rule_groups"></a>
 
 ### list_rule_groups
 
@@ -565,6 +618,8 @@ Keyword-only arguments:
 Returns
 [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the tags associated with the specified resource.
@@ -587,6 +642,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_resource_policy"></a>
+
 ### put_resource_policy
 
 Creates or updates an AWS Identity and Access Management policy for your rule
@@ -608,6 +665,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -627,6 +686,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the tags with the specified keys from the specified resource.
@@ -645,6 +706,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_firewall_delete_protection"></a>
 
 ### update_firewall_delete_protection
 
@@ -670,6 +733,8 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallDeleteProtectionResponseTypeDef](./type_defs.md#updatefirewalldeleteprotectionresponsetypedef).
 
+<a id="update_firewall_description"></a>
+
 ### update_firewall_description
 
 Modifies the description for the specified firewall.
@@ -692,6 +757,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFirewallDescriptionResponseTypeDef](./type_defs.md#updatefirewalldescriptionresponsetypedef).
+
+<a id="update_firewall_policy"></a>
 
 ### update_firewall_policy
 
@@ -719,6 +786,8 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallPolicyResponseTypeDef](./type_defs.md#updatefirewallpolicyresponsetypedef).
 
+<a id="update_firewall_policy_change_protection"></a>
+
 ### update_firewall_policy_change_protection
 
 Modifies the flag, `ChangeProtection` , which indicates whether it is possible
@@ -744,6 +813,8 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallPolicyChangeProtectionResponseTypeDef](./type_defs.md#updatefirewallpolicychangeprotectionresponsetypedef).
 
+<a id="update_logging_configuration"></a>
+
 ### update_logging_configuration
 
 Sets the logging configuration for the specified firewall.
@@ -766,6 +837,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateLoggingConfigurationResponseTypeDef](./type_defs.md#updateloggingconfigurationresponsetypedef).
+
+<a id="update_rule_group"></a>
 
 ### update_rule_group
 
@@ -794,6 +867,8 @@ Keyword-only arguments:
 Returns
 [UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
 
+<a id="update_subnet_change_protection"></a>
+
 ### update_subnet_change_protection
 
 See also: \[AWS API
@@ -818,6 +893,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSubnetChangeProtectionResponseTypeDef](./type_defs.md#updatesubnetchangeprotectionresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

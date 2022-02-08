@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-frauddetector-module"></a>
+
 # Typed dictionaries for boto3 FraudDetector module
 
 > [Index](..) > [FraudDetector](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
-[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+[mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 - [Typed dictionaries for boto3 FraudDetector module](#typed-dictionaries-for-boto3-frauddetector-module)
   - [BatchCreateVariableErrorTypeDef](#batchcreatevariableerrortypedef)
@@ -160,6 +162,8 @@ type annotations stubs module
   - [VariableImportanceMetricsTypeDef](#variableimportancemetricstypedef)
   - [VariableTypeDef](#variabletypedef)
 
+<a id="batchcreatevariableerrortypedef"></a>
+
 ## BatchCreateVariableErrorTypeDef
 
 ```python
@@ -171,6 +175,8 @@ Optional fields:
 - `name`: `str`
 - `code`: `int`
 - `message`: `str`
+
+<a id="batchcreatevariablerequestrequesttypedef"></a>
 
 ## BatchCreateVariableRequestRequestTypeDef
 
@@ -187,6 +193,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="batchcreatevariableresulttypedef"></a>
+
 ## BatchCreateVariableResultTypeDef
 
 ```python
@@ -200,6 +208,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetvariableerrortypedef"></a>
+
 ## BatchGetVariableErrorTypeDef
 
 ```python
@@ -212,6 +222,8 @@ Optional fields:
 - `code`: `int`
 - `message`: `str`
 
+<a id="batchgetvariablerequestrequesttypedef"></a>
+
 ## BatchGetVariableRequestRequestTypeDef
 
 ```python
@@ -221,6 +233,8 @@ from mypy_boto3_frauddetector.type_defs import BatchGetVariableRequestRequestTyp
 Required fields:
 
 - `names`: `Sequence`\[`str`\]
+
+<a id="batchgetvariableresulttypedef"></a>
 
 ## BatchGetVariableResultTypeDef
 
@@ -235,6 +249,8 @@ Required fields:
   `List`\[[BatchGetVariableErrorTypeDef](./type_defs.md#batchgetvariableerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchimporttypedef"></a>
 
 ## BatchImportTypeDef
 
@@ -257,6 +273,8 @@ Optional fields:
 - `processedRecordsCount`: `int`
 - `failedRecordsCount`: `int`
 - `totalRecordsCount`: `int`
+
+<a id="batchpredictiontypedef"></a>
 
 ## BatchPredictionTypeDef
 
@@ -282,6 +300,8 @@ Optional fields:
 - `processedRecordsCount`: `int`
 - `totalRecordsCount`: `int`
 
+<a id="cancelbatchimportjobrequestrequesttypedef"></a>
+
 ## CancelBatchImportJobRequestRequestTypeDef
 
 ```python
@@ -292,6 +312,8 @@ Required fields:
 
 - `jobId`: `str`
 
+<a id="cancelbatchpredictionjobrequestrequesttypedef"></a>
+
 ## CancelBatchPredictionJobRequestRequestTypeDef
 
 ```python
@@ -301,6 +323,8 @@ from mypy_boto3_frauddetector.type_defs import CancelBatchPredictionJobRequestRe
 Required fields:
 
 - `jobId`: `str`
+
+<a id="createbatchimportjobrequestrequesttypedef"></a>
 
 ## CreateBatchImportJobRequestRequestTypeDef
 
@@ -319,6 +343,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createbatchpredictionjobrequestrequesttypedef"></a>
 
 ## CreateBatchPredictionJobRequestRequestTypeDef
 
@@ -339,6 +365,8 @@ Optional fields:
 
 - `detectorVersion`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createdetectorversionrequestrequesttypedef"></a>
 
 ## CreateDetectorVersionRequestRequestTypeDef
 
@@ -361,6 +389,8 @@ Optional fields:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdetectorversionresulttypedef"></a>
+
 ## CreateDetectorVersionResultTypeDef
 
 ```python
@@ -375,6 +405,8 @@ Required fields:
   [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmodelrequestrequesttypedef"></a>
 
 ## CreateModelRequestRequestTypeDef
 
@@ -392,6 +424,8 @@ Optional fields:
 
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createmodelversionrequestrequesttypedef"></a>
 
 ## CreateModelVersionRequestRequestTypeDef
 
@@ -416,6 +450,8 @@ Optional fields:
   [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmodelversionresulttypedef"></a>
+
 ## CreateModelVersionResultTypeDef
 
 ```python
@@ -430,6 +466,8 @@ Required fields:
 - `status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulerequestrequesttypedef"></a>
 
 ## CreateRuleRequestRequestTypeDef
 
@@ -451,6 +489,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createruleresulttypedef"></a>
+
 ## CreateRuleResultTypeDef
 
 ```python
@@ -462,6 +502,8 @@ Required fields:
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createvariablerequestrequesttypedef"></a>
 
 ## CreateVariableRequestRequestTypeDef
 
@@ -482,6 +524,8 @@ Optional fields:
 - `variableType`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="datavalidationmetricstypedef"></a>
+
 ## DataValidationMetricsTypeDef
 
 ```python
@@ -495,6 +539,8 @@ Optional fields:
 - `fieldLevelMessages`:
   `List`\[[FieldValidationMessageTypeDef](./type_defs.md#fieldvalidationmessagetypedef)\]
 
+<a id="deletebatchimportjobrequestrequesttypedef"></a>
+
 ## DeleteBatchImportJobRequestRequestTypeDef
 
 ```python
@@ -504,6 +550,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteBatchImportJobRequestReques
 Required fields:
 
 - `jobId`: `str`
+
+<a id="deletebatchpredictionjobrequestrequesttypedef"></a>
 
 ## DeleteBatchPredictionJobRequestRequestTypeDef
 
@@ -515,6 +563,8 @@ Required fields:
 
 - `jobId`: `str`
 
+<a id="deletedetectorrequestrequesttypedef"></a>
+
 ## DeleteDetectorRequestRequestTypeDef
 
 ```python
@@ -524,6 +574,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteDetectorRequestRequestTypeD
 Required fields:
 
 - `detectorId`: `str`
+
+<a id="deletedetectorversionrequestrequesttypedef"></a>
 
 ## DeleteDetectorVersionRequestRequestTypeDef
 
@@ -536,6 +588,8 @@ Required fields:
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
 
+<a id="deleteentitytyperequestrequesttypedef"></a>
+
 ## DeleteEntityTypeRequestRequestTypeDef
 
 ```python
@@ -545,6 +599,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteEntityTypeRequestRequestTyp
 Required fields:
 
 - `name`: `str`
+
+<a id="deleteeventrequestrequesttypedef"></a>
 
 ## DeleteEventRequestRequestTypeDef
 
@@ -561,6 +617,8 @@ Optional fields:
 
 - `deleteAuditHistory`: `bool`
 
+<a id="deleteeventtyperequestrequesttypedef"></a>
+
 ## DeleteEventTypeRequestRequestTypeDef
 
 ```python
@@ -571,6 +629,8 @@ Required fields:
 
 - `name`: `str`
 
+<a id="deleteeventsbyeventtyperequestrequesttypedef"></a>
+
 ## DeleteEventsByEventTypeRequestRequestTypeDef
 
 ```python
@@ -580,6 +640,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteEventsByEventTypeRequestReq
 Required fields:
 
 - `eventTypeName`: `str`
+
+<a id="deleteeventsbyeventtyperesulttypedef"></a>
 
 ## DeleteEventsByEventTypeResultTypeDef
 
@@ -594,6 +656,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteexternalmodelrequestrequesttypedef"></a>
+
 ## DeleteExternalModelRequestRequestTypeDef
 
 ```python
@@ -603,6 +667,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteExternalModelRequestRequest
 Required fields:
 
 - `modelEndpoint`: `str`
+
+<a id="deletelabelrequestrequesttypedef"></a>
 
 ## DeleteLabelRequestRequestTypeDef
 
@@ -614,6 +680,8 @@ Required fields:
 
 - `name`: `str`
 
+<a id="deletemodelrequestrequesttypedef"></a>
+
 ## DeleteModelRequestRequestTypeDef
 
 ```python
@@ -624,6 +692,8 @@ Required fields:
 
 - `modelId`: `str`
 - `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
+
+<a id="deletemodelversionrequestrequesttypedef"></a>
 
 ## DeleteModelVersionRequestRequestTypeDef
 
@@ -637,6 +707,8 @@ Required fields:
 - `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
 
+<a id="deleteoutcomerequestrequesttypedef"></a>
+
 ## DeleteOutcomeRequestRequestTypeDef
 
 ```python
@@ -646,6 +718,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteOutcomeRequestRequestTypeDe
 Required fields:
 
 - `name`: `str`
+
+<a id="deleterulerequestrequesttypedef"></a>
 
 ## DeleteRuleRequestRequestTypeDef
 
@@ -657,6 +731,8 @@ Required fields:
 
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
 
+<a id="deletevariablerequestrequesttypedef"></a>
+
 ## DeleteVariableRequestRequestTypeDef
 
 ```python
@@ -666,6 +742,8 @@ from mypy_boto3_frauddetector.type_defs import DeleteVariableRequestRequestTypeD
 Required fields:
 
 - `name`: `str`
+
+<a id="describedetectorrequestrequesttypedef"></a>
 
 ## DescribeDetectorRequestRequestTypeDef
 
@@ -681,6 +759,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="describedetectorresulttypedef"></a>
 
 ## DescribeDetectorResultTypeDef
 
@@ -698,6 +778,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemodelversionsrequestrequesttypedef"></a>
+
 ## DescribeModelVersionsRequestRequestTypeDef
 
 ```python
@@ -712,6 +794,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describemodelversionsresulttypedef"></a>
+
 ## DescribeModelVersionsResultTypeDef
 
 ```python
@@ -725,6 +809,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detectortypedef"></a>
 
 ## DetectorTypeDef
 
@@ -741,6 +827,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="detectorversionsummarytypedef"></a>
+
 ## DetectorVersionSummaryTypeDef
 
 ```python
@@ -755,6 +843,8 @@ Optional fields:
 - `description`: `str`
 - `lastUpdatedTime`: `str`
 
+<a id="entitytypedef"></a>
+
 ## EntityTypeDef
 
 ```python
@@ -765,6 +855,8 @@ Required fields:
 
 - `entityType`: `str`
 - `entityId`: `str`
+
+<a id="entitytypetypedef"></a>
 
 ## EntityTypeTypeDef
 
@@ -780,6 +872,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="evaluatedexternalmodeltypedef"></a>
+
 ## EvaluatedExternalModelTypeDef
 
 ```python
@@ -792,6 +886,8 @@ Optional fields:
 - `useEventVariables`: `bool`
 - `inputVariables`: `Dict`\[`str`, `str`\]
 - `outputVariables`: `Dict`\[`str`, `str`\]
+
+<a id="evaluatedmodelversiontypedef"></a>
 
 ## EvaluatedModelVersionTypeDef
 
@@ -806,6 +902,8 @@ Optional fields:
 - `modelType`: `str`
 - `evaluations`:
   `List`\[[ModelVersionEvaluationTypeDef](./type_defs.md#modelversionevaluationtypedef)\]
+
+<a id="evaluatedruletypedef"></a>
 
 ## EvaluatedRuleTypeDef
 
@@ -823,6 +921,8 @@ Optional fields:
 - `evaluated`: `bool`
 - `matched`: `bool`
 
+<a id="eventpredictionsummarytypedef"></a>
+
 ## EventPredictionSummaryTypeDef
 
 ```python
@@ -837,6 +937,8 @@ Optional fields:
 - `predictionTimestamp`: `str`
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -853,6 +955,8 @@ Optional fields:
 - `currentLabel`: `str`
 - `labelTimestamp`: `str`
 - `entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
+
+<a id="eventtypetypedef"></a>
 
 ## EventTypeTypeDef
 
@@ -874,6 +978,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="eventvariablesummarytypedef"></a>
+
 ## EventVariableSummaryTypeDef
 
 ```python
@@ -886,6 +992,8 @@ Optional fields:
 - `value`: `str`
 - `source`: `str`
 
+<a id="externaleventsdetailtypedef"></a>
+
 ## ExternalEventsDetailTypeDef
 
 ```python
@@ -896,6 +1004,8 @@ Required fields:
 
 - `dataLocation`: `str`
 - `dataAccessRoleArn`: `str`
+
+<a id="externalmodeloutputstypedef"></a>
 
 ## ExternalModelOutputsTypeDef
 
@@ -909,6 +1019,8 @@ Optional fields:
   [ExternalModelSummaryTypeDef](./type_defs.md#externalmodelsummarytypedef)
 - `outputs`: `Dict`\[`str`, `str`\]
 
+<a id="externalmodelsummarytypedef"></a>
+
 ## ExternalModelSummaryTypeDef
 
 ```python
@@ -920,6 +1032,8 @@ Optional fields:
 - `modelEndpoint`: `str`
 - `modelSource`: `Literal['SAGEMAKER']` (see
   [ModelSourceType](./literals.md#modelsourcetype))
+
+<a id="externalmodeltypedef"></a>
 
 ## ExternalModelTypeDef
 
@@ -943,6 +1057,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="fieldvalidationmessagetypedef"></a>
+
 ## FieldValidationMessageTypeDef
 
 ```python
@@ -957,6 +1073,8 @@ Optional fields:
 - `content`: `str`
 - `type`: `str`
 
+<a id="filevalidationmessagetypedef"></a>
+
 ## FileValidationMessageTypeDef
 
 ```python
@@ -969,6 +1087,8 @@ Optional fields:
 - `content`: `str`
 - `type`: `str`
 
+<a id="filterconditiontypedef"></a>
+
 ## FilterConditionTypeDef
 
 ```python
@@ -978,6 +1098,8 @@ from mypy_boto3_frauddetector.type_defs import FilterConditionTypeDef
 Optional fields:
 
 - `value`: `str`
+
+<a id="getbatchimportjobsrequestrequesttypedef"></a>
 
 ## GetBatchImportJobsRequestRequestTypeDef
 
@@ -990,6 +1112,8 @@ Optional fields:
 - `jobId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="getbatchimportjobsresulttypedef"></a>
 
 ## GetBatchImportJobsResultTypeDef
 
@@ -1005,6 +1129,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbatchpredictionjobsrequestrequesttypedef"></a>
+
 ## GetBatchPredictionJobsRequestRequestTypeDef
 
 ```python
@@ -1016,6 +1142,8 @@ Optional fields:
 - `jobId`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="getbatchpredictionjobsresulttypedef"></a>
 
 ## GetBatchPredictionJobsResultTypeDef
 
@@ -1031,6 +1159,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeleteeventsbyeventtypestatusrequestrequesttypedef"></a>
+
 ## GetDeleteEventsByEventTypeStatusRequestRequestTypeDef
 
 ```python
@@ -1040,6 +1170,8 @@ from mypy_boto3_frauddetector.type_defs import GetDeleteEventsByEventTypeStatusR
 Required fields:
 
 - `eventTypeName`: `str`
+
+<a id="getdeleteeventsbyeventtypestatusresulttypedef"></a>
 
 ## GetDeleteEventsByEventTypeStatusResultTypeDef
 
@@ -1055,6 +1187,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdetectorversionrequestrequesttypedef"></a>
+
 ## GetDetectorVersionRequestRequestTypeDef
 
 ```python
@@ -1065,6 +1199,8 @@ Required fields:
 
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
+
+<a id="getdetectorversionresulttypedef"></a>
 
 ## GetDetectorVersionResultTypeDef
 
@@ -1091,6 +1227,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdetectorsrequestrequesttypedef"></a>
+
 ## GetDetectorsRequestRequestTypeDef
 
 ```python
@@ -1102,6 +1240,8 @@ Optional fields:
 - `detectorId`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getdetectorsresulttypedef"></a>
 
 ## GetDetectorsResultTypeDef
 
@@ -1116,6 +1256,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getentitytypesrequestrequesttypedef"></a>
+
 ## GetEntityTypesRequestRequestTypeDef
 
 ```python
@@ -1127,6 +1269,8 @@ Optional fields:
 - `name`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getentitytypesresulttypedef"></a>
 
 ## GetEntityTypesResultTypeDef
 
@@ -1142,6 +1286,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventpredictionmetadatarequestrequesttypedef"></a>
+
 ## GetEventPredictionMetadataRequestRequestTypeDef
 
 ```python
@@ -1155,6 +1301,8 @@ Required fields:
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
 - `predictionTimestamp`: `str`
+
+<a id="geteventpredictionmetadataresulttypedef"></a>
 
 ## GetEventPredictionMetadataResultTypeDef
 
@@ -1187,6 +1335,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventpredictionrequestrequesttypedef"></a>
+
 ## GetEventPredictionRequestRequestTypeDef
 
 ```python
@@ -1208,6 +1358,8 @@ Optional fields:
 - `externalModelEndpointDataBlobs`: `Mapping`\[`str`,
   [ModelEndpointDataBlobTypeDef](./type_defs.md#modelendpointdatablobtypedef)\]
 
+<a id="geteventpredictionresulttypedef"></a>
+
 ## GetEventPredictionResultTypeDef
 
 ```python
@@ -1225,6 +1377,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventrequestrequesttypedef"></a>
+
 ## GetEventRequestRequestTypeDef
 
 ```python
@@ -1235,6 +1389,8 @@ Required fields:
 
 - `eventId`: `str`
 - `eventTypeName`: `str`
+
+<a id="geteventresulttypedef"></a>
 
 ## GetEventResultTypeDef
 
@@ -1248,6 +1404,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventtypesrequestrequesttypedef"></a>
+
 ## GetEventTypesRequestRequestTypeDef
 
 ```python
@@ -1259,6 +1417,8 @@ Optional fields:
 - `name`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="geteventtypesresulttypedef"></a>
 
 ## GetEventTypesResultTypeDef
 
@@ -1273,6 +1433,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getexternalmodelsrequestrequesttypedef"></a>
+
 ## GetExternalModelsRequestRequestTypeDef
 
 ```python
@@ -1284,6 +1446,8 @@ Optional fields:
 - `modelEndpoint`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getexternalmodelsresulttypedef"></a>
 
 ## GetExternalModelsResultTypeDef
 
@@ -1299,6 +1463,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getkmsencryptionkeyresulttypedef"></a>
+
 ## GetKMSEncryptionKeyResultTypeDef
 
 ```python
@@ -1311,6 +1477,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlabelsrequestrequesttypedef"></a>
+
 ## GetLabelsRequestRequestTypeDef
 
 ```python
@@ -1322,6 +1490,8 @@ Optional fields:
 - `name`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getlabelsresulttypedef"></a>
 
 ## GetLabelsResultTypeDef
 
@@ -1336,6 +1506,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmodelversionrequestrequesttypedef"></a>
+
 ## GetModelVersionRequestRequestTypeDef
 
 ```python
@@ -1347,6 +1519,8 @@ Required fields:
 - `modelId`: `str`
 - `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `modelVersionNumber`: `str`
+
+<a id="getmodelversionresulttypedef"></a>
 
 ## GetModelVersionResultTypeDef
 
@@ -1372,6 +1546,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmodelsrequestrequesttypedef"></a>
+
 ## GetModelsRequestRequestTypeDef
 
 ```python
@@ -1384,6 +1560,8 @@ Optional fields:
 - `modelType`: [ModelTypeEnumType](./literals.md#modeltypeenumtype)
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getmodelsresulttypedef"></a>
 
 ## GetModelsResultTypeDef
 
@@ -1398,6 +1576,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getoutcomesrequestrequesttypedef"></a>
+
 ## GetOutcomesRequestRequestTypeDef
 
 ```python
@@ -1409,6 +1589,8 @@ Optional fields:
 - `name`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getoutcomesresulttypedef"></a>
 
 ## GetOutcomesResultTypeDef
 
@@ -1422,6 +1604,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrulesrequestrequesttypedef"></a>
 
 ## GetRulesRequestRequestTypeDef
 
@@ -1440,6 +1624,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="getrulesresulttypedef"></a>
+
 ## GetRulesResultTypeDef
 
 ```python
@@ -1454,6 +1640,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvariablesrequestrequesttypedef"></a>
+
 ## GetVariablesRequestRequestTypeDef
 
 ```python
@@ -1465,6 +1653,8 @@ Optional fields:
 - `name`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="getvariablesresulttypedef"></a>
 
 ## GetVariablesResultTypeDef
 
@@ -1478,6 +1668,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ingestedeventstatisticstypedef"></a>
 
 ## IngestedEventStatisticsTypeDef
 
@@ -1493,6 +1685,8 @@ Optional fields:
 - `mostRecentEvent`: `str`
 - `lastUpdatedTime`: `str`
 
+<a id="ingestedeventsdetailtypedef"></a>
+
 ## IngestedEventsDetailTypeDef
 
 ```python
@@ -1503,6 +1697,8 @@ Required fields:
 
 - `ingestedEventsTimeWindow`:
   [IngestedEventsTimeWindowTypeDef](./type_defs.md#ingestedeventstimewindowtypedef)
+
+<a id="ingestedeventstimewindowtypedef"></a>
 
 ## IngestedEventsTimeWindowTypeDef
 
@@ -1515,6 +1711,8 @@ Required fields:
 - `startTime`: `str`
 - `endTime`: `str`
 
+<a id="kmskeytypedef"></a>
+
 ## KMSKeyTypeDef
 
 ```python
@@ -1524,6 +1722,8 @@ from mypy_boto3_frauddetector.type_defs import KMSKeyTypeDef
 Optional fields:
 
 - `kmsEncryptionKeyArn`: `str`
+
+<a id="labelschematypedef"></a>
 
 ## LabelSchemaTypeDef
 
@@ -1540,6 +1740,8 @@ Optional fields:
 - `unlabeledEventsTreatment`:
   [UnlabeledEventsTreatmentType](./literals.md#unlabeledeventstreatmenttype)
 
+<a id="labeltypedef"></a>
+
 ## LabelTypeDef
 
 ```python
@@ -1553,6 +1755,8 @@ Optional fields:
 - `lastUpdatedTime`: `str`
 - `createdTime`: `str`
 - `arn`: `str`
+
+<a id="listeventpredictionsrequestrequesttypedef"></a>
 
 ## ListEventPredictionsRequestRequestTypeDef
 
@@ -1572,6 +1776,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listeventpredictionsresulttypedef"></a>
+
 ## ListEventPredictionsResultTypeDef
 
 ```python
@@ -1585,6 +1791,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -1601,6 +1809,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listtagsforresourceresulttypedef"></a>
+
 ## ListTagsForResourceResultTypeDef
 
 ```python
@@ -1614,6 +1824,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logoddsmetrictypedef"></a>
+
 ## LogOddsMetricTypeDef
 
 ```python
@@ -1625,6 +1837,8 @@ Required fields:
 - `variableName`: `str`
 - `variableType`: `str`
 - `variableImportance`: `float`
+
+<a id="metricdatapointtypedef"></a>
 
 ## MetricDataPointTypeDef
 
@@ -1639,6 +1853,8 @@ Optional fields:
 - `tpr`: `float`
 - `threshold`: `float`
 
+<a id="modelendpointdatablobtypedef"></a>
+
 ## ModelEndpointDataBlobTypeDef
 
 ```python
@@ -1649,6 +1865,8 @@ Optional fields:
 
 - `byteBuffer`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `contentType`: `str`
+
+<a id="modelinputconfigurationtypedef"></a>
 
 ## ModelInputConfigurationTypeDef
 
@@ -1667,6 +1885,8 @@ Optional fields:
 - `jsonInputTemplate`: `str`
 - `csvInputTemplate`: `str`
 
+<a id="modeloutputconfigurationtypedef"></a>
+
 ## ModelOutputConfigurationTypeDef
 
 ```python
@@ -1683,6 +1903,8 @@ Optional fields:
 - `jsonKeyToVariableMap`: `Dict`\[`str`, `str`\]
 - `csvIndexToVariableMap`: `Dict`\[`str`, `str`\]
 
+<a id="modelscorestypedef"></a>
+
 ## ModelScoresTypeDef
 
 ```python
@@ -1693,6 +1915,8 @@ Optional fields:
 
 - `modelVersion`: [ModelVersionTypeDef](./type_defs.md#modelversiontypedef)
 - `scores`: `Dict`\[`str`, `float`\]
+
+<a id="modeltypedef"></a>
 
 ## ModelTypeDef
 
@@ -1709,6 +1933,8 @@ Optional fields:
 - `createdTime`: `str`
 - `lastUpdatedTime`: `str`
 - `arn`: `str`
+
+<a id="modelversiondetailtypedef"></a>
 
 ## ModelVersionDetailTypeDef
 
@@ -1736,6 +1962,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="modelversionevaluationtypedef"></a>
+
 ## ModelVersionEvaluationTypeDef
 
 ```python
@@ -1748,6 +1976,8 @@ Optional fields:
 - `evaluationScore`: `str`
 - `predictionExplanations`:
   [PredictionExplanationsTypeDef](./type_defs.md#predictionexplanationstypedef)
+
+<a id="modelversiontypedef"></a>
 
 ## ModelVersionTypeDef
 
@@ -1765,6 +1995,8 @@ Optional fields:
 
 - `arn`: `str`
 
+<a id="outcometypedef"></a>
+
 ## OutcomeTypeDef
 
 ```python
@@ -1779,6 +2011,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="predictionexplanationstypedef"></a>
+
 ## PredictionExplanationsTypeDef
 
 ```python
@@ -1790,6 +2024,8 @@ Optional fields:
 - `variableImpactExplanations`:
   `List`\[[VariableImpactExplanationTypeDef](./type_defs.md#variableimpactexplanationtypedef)\]
 
+<a id="predictiontimerangetypedef"></a>
+
 ## PredictionTimeRangeTypeDef
 
 ```python
@@ -1800,6 +2036,8 @@ Required fields:
 
 - `startTime`: `str`
 - `endTime`: `str`
+
+<a id="putdetectorrequestrequesttypedef"></a>
 
 ## PutDetectorRequestRequestTypeDef
 
@@ -1817,6 +2055,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putentitytyperequestrequesttypedef"></a>
+
 ## PutEntityTypeRequestRequestTypeDef
 
 ```python
@@ -1831,6 +2071,8 @@ Optional fields:
 
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="puteventtyperequestrequesttypedef"></a>
 
 ## PutEventTypeRequestRequestTypeDef
 
@@ -1850,6 +2092,8 @@ Optional fields:
 - `labels`: `Sequence`\[`str`\]
 - `eventIngestion`: [EventIngestionType](./literals.md#eventingestiontype)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="putexternalmodelrequestrequesttypedef"></a>
 
 ## PutExternalModelRequestRequestTypeDef
 
@@ -1874,6 +2118,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putkmsencryptionkeyrequestrequesttypedef"></a>
+
 ## PutKMSEncryptionKeyRequestRequestTypeDef
 
 ```python
@@ -1883,6 +2129,8 @@ from mypy_boto3_frauddetector.type_defs import PutKMSEncryptionKeyRequestRequest
 Required fields:
 
 - `kmsEncryptionKeyArn`: `str`
+
+<a id="putlabelrequestrequesttypedef"></a>
 
 ## PutLabelRequestRequestTypeDef
 
@@ -1899,6 +2147,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putoutcomerequestrequesttypedef"></a>
+
 ## PutOutcomeRequestRequestTypeDef
 
 ```python
@@ -1914,6 +2164,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1927,6 +2179,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="ruledetailtypedef"></a>
 
 ## RuleDetailTypeDef
 
@@ -1948,6 +2202,8 @@ Optional fields:
 - `createdTime`: `str`
 - `arn`: `str`
 
+<a id="ruleresulttypedef"></a>
+
 ## RuleResultTypeDef
 
 ```python
@@ -1958,6 +2214,8 @@ Optional fields:
 
 - `ruleId`: `str`
 - `outcomes`: `List`\[`str`\]
+
+<a id="ruletypedef"></a>
 
 ## RuleTypeDef
 
@@ -1970,6 +2228,8 @@ Required fields:
 - `detectorId`: `str`
 - `ruleId`: `str`
 - `ruleVersion`: `str`
+
+<a id="sendeventrequestrequesttypedef"></a>
 
 ## SendEventRequestRequestTypeDef
 
@@ -1990,6 +2250,8 @@ Optional fields:
 - `assignedLabel`: `str`
 - `labelTimestamp`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2000,6 +2262,8 @@ Required fields:
 
 - `resourceARN`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2012,6 +2276,8 @@ Required fields:
 - `key`: `str`
 - `value`: `str`
 
+<a id="trainingdataschematypedef"></a>
+
 ## TrainingDataSchemaTypeDef
 
 ```python
@@ -2022,6 +2288,8 @@ Required fields:
 
 - `modelVariables`: `Sequence`\[`str`\]
 - `labelSchema`: [LabelSchemaTypeDef](./type_defs.md#labelschematypedef)
+
+<a id="trainingmetricstypedef"></a>
 
 ## TrainingMetricsTypeDef
 
@@ -2034,6 +2302,8 @@ Optional fields:
 - `auc`: `float`
 - `metricDataPoints`:
   `List`\[[MetricDataPointTypeDef](./type_defs.md#metricdatapointtypedef)\]
+
+<a id="trainingresulttypedef"></a>
 
 ## TrainingResultTypeDef
 
@@ -2050,6 +2320,8 @@ Optional fields:
 - `variableImportanceMetrics`:
   [VariableImportanceMetricsTypeDef](./type_defs.md#variableimportancemetricstypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2060,6 +2332,8 @@ Required fields:
 
 - `resourceARN`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedetectorversionmetadatarequestrequesttypedef"></a>
 
 ## UpdateDetectorVersionMetadataRequestRequestTypeDef
 
@@ -2072,6 +2346,8 @@ Required fields:
 - `detectorId`: `str`
 - `detectorVersionId`: `str`
 - `description`: `str`
+
+<a id="updatedetectorversionrequestrequesttypedef"></a>
 
 ## UpdateDetectorVersionRequestRequestTypeDef
 
@@ -2094,6 +2370,8 @@ Optional fields:
 - `ruleExecutionMode`:
   [RuleExecutionModeType](./literals.md#ruleexecutionmodetype)
 
+<a id="updatedetectorversionstatusrequestrequesttypedef"></a>
+
 ## UpdateDetectorVersionStatusRequestRequestTypeDef
 
 ```python
@@ -2107,6 +2385,8 @@ Required fields:
 - `status`:
   [DetectorVersionStatusType](./literals.md#detectorversionstatustype)
 
+<a id="updateeventlabelrequestrequesttypedef"></a>
+
 ## UpdateEventLabelRequestRequestTypeDef
 
 ```python
@@ -2119,6 +2399,8 @@ Required fields:
 - `eventTypeName`: `str`
 - `assignedLabel`: `str`
 - `labelTimestamp`: `str`
+
+<a id="updatemodelrequestrequesttypedef"></a>
 
 ## UpdateModelRequestRequestTypeDef
 
@@ -2134,6 +2416,8 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
+
+<a id="updatemodelversionrequestrequesttypedef"></a>
 
 ## UpdateModelVersionRequestRequestTypeDef
 
@@ -2155,6 +2439,8 @@ Optional fields:
   [IngestedEventsDetailTypeDef](./type_defs.md#ingestedeventsdetailtypedef)
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="updatemodelversionresulttypedef"></a>
+
 ## UpdateModelVersionResultTypeDef
 
 ```python
@@ -2170,6 +2456,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatemodelversionstatusrequestrequesttypedef"></a>
+
 ## UpdateModelVersionStatusRequestRequestTypeDef
 
 ```python
@@ -2183,6 +2471,8 @@ Required fields:
 - `modelVersionNumber`: `str`
 - `status`: [ModelVersionStatusType](./literals.md#modelversionstatustype)
 
+<a id="updaterulemetadatarequestrequesttypedef"></a>
+
 ## UpdateRuleMetadataRequestRequestTypeDef
 
 ```python
@@ -2193,6 +2483,8 @@ Required fields:
 
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
 - `description`: `str`
+
+<a id="updateruleversionrequestrequesttypedef"></a>
 
 ## UpdateRuleVersionRequestRequestTypeDef
 
@@ -2213,6 +2505,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="updateruleversionresulttypedef"></a>
+
 ## UpdateRuleVersionResultTypeDef
 
 ```python
@@ -2224,6 +2518,8 @@ Required fields:
 - `rule`: [RuleTypeDef](./type_defs.md#ruletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatevariablerequestrequesttypedef"></a>
 
 ## UpdateVariableRequestRequestTypeDef
 
@@ -2241,6 +2537,8 @@ Optional fields:
 - `description`: `str`
 - `variableType`: `str`
 
+<a id="variableentrytypedef"></a>
+
 ## VariableEntryTypeDef
 
 ```python
@@ -2256,6 +2554,8 @@ Optional fields:
 - `description`: `str`
 - `variableType`: `str`
 
+<a id="variableimpactexplanationtypedef"></a>
+
 ## VariableImpactExplanationTypeDef
 
 ```python
@@ -2268,6 +2568,8 @@ Optional fields:
 - `relativeImpact`: `str`
 - `logOddsImpact`: `float`
 
+<a id="variableimportancemetricstypedef"></a>
+
 ## VariableImportanceMetricsTypeDef
 
 ```python
@@ -2278,6 +2580,8 @@ Optional fields:
 
 - `logOddsMetrics`:
   `List`\[[LogOddsMetricTypeDef](./type_defs.md#logoddsmetrictypedef)\]
+
+<a id="variabletypedef"></a>
 
 ## VariableTypeDef
 

@@ -1,3 +1,5 @@
+<a id="dataexchangeclient-for-boto3-dataexchange-module"></a>
+
 # DataExchangeClient for boto3 DataExchange module
 
 > [Index](..) > [DataExchange](.) > DataExchangeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
-[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [DataExchangeClient for boto3 DataExchange module](#dataexchangeclient-for-boto3-dataexchange-module)
   - [DataExchangeClient](#dataexchangeclient)
@@ -44,6 +46,8 @@ type annotations stubs module
     - [update_revision](#update_revision)
     - [get_paginator](#get_paginator)
 
+<a id="dataexchangeclient"></a>
+
 ## DataExchangeClient
 
 Type annotations for `boto3.client("dataexchange")`
@@ -51,14 +55,17 @@ Type annotations for `boto3.client("dataexchange")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_dataexchange.client import DataExchangeClient
 
 def get_dataexchange_client() -> DataExchangeClient:
-    return boto3.client("dataexchange")
+    return Session().client("dataexchange")
 ```
 
 Boto3 documentation:
 [DataExchange.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -83,7 +90,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -95,6 +106,8 @@ Boto3 documentation:
 [DataExchange.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -111,6 +124,8 @@ Arguments:
 
 Returns `bool`.
 
+<a id="cancel_job"></a>
+
 ### cancel_job
 
 This operation cancels a job.
@@ -126,6 +141,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `JobId`: `str` *(required)*
+
+<a id="create_data_set"></a>
 
 ### create_data_set
 
@@ -149,6 +166,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
+<a id="create_event_action"></a>
+
 ### create_event_action
 
 This operation creates an event action.
@@ -169,6 +188,8 @@ Keyword-only arguments:
 Returns
 [CreateEventActionResponseTypeDef](./type_defs.md#createeventactionresponsetypedef).
 
+<a id="create_job"></a>
+
 ### create_job
 
 This operation creates a job.
@@ -188,6 +209,8 @@ Keyword-only arguments:
 - `Type`: [TypeType](./literals.md#typetype) *(required)*
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
+
+<a id="create_revision"></a>
 
 ### create_revision
 
@@ -210,6 +233,8 @@ Keyword-only arguments:
 Returns
 [CreateRevisionResponseTypeDef](./type_defs.md#createrevisionresponsetypedef).
 
+<a id="delete_asset"></a>
+
 ### delete_asset
 
 This operation deletes an asset.
@@ -228,6 +253,8 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
 
+<a id="delete_data_set"></a>
+
 ### delete_data_set
 
 This operation deletes a data set.
@@ -243,6 +270,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
+
+<a id="delete_event_action"></a>
 
 ### delete_event_action
 
@@ -260,6 +289,8 @@ Keyword-only arguments:
 
 - `EventActionId`: `str` *(required)*
 
+<a id="delete_revision"></a>
+
 ### delete_revision
 
 This operation deletes a revision.
@@ -276,6 +307,8 @@ Keyword-only arguments:
 
 - `DataSetId`: `str` *(required)*
 - `RevisionId`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -295,6 +328,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_asset"></a>
 
 ### get_asset
 
@@ -316,6 +351,8 @@ Keyword-only arguments:
 
 Returns [GetAssetResponseTypeDef](./type_defs.md#getassetresponsetypedef).
 
+<a id="get_data_set"></a>
+
 ### get_data_set
 
 This operation returns information about a data set.
@@ -333,6 +370,8 @@ Keyword-only arguments:
 - `DataSetId`: `str` *(required)*
 
 Returns [GetDataSetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
+
+<a id="get_event_action"></a>
 
 ### get_event_action
 
@@ -353,6 +392,8 @@ Keyword-only arguments:
 Returns
 [GetEventActionResponseTypeDef](./type_defs.md#geteventactionresponsetypedef).
 
+<a id="get_job"></a>
+
 ### get_job
 
 This operation returns information about a job.
@@ -370,6 +411,8 @@ Keyword-only arguments:
 - `JobId`: `str` *(required)*
 
 Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+
+<a id="get_revision"></a>
 
 ### get_revision
 
@@ -390,6 +433,8 @@ Keyword-only arguments:
 
 Returns
 [GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
+
+<a id="list_data_set_revisions"></a>
 
 ### list_data_set_revisions
 
@@ -414,6 +459,8 @@ Keyword-only arguments:
 Returns
 [ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef).
 
+<a id="list_data_sets"></a>
+
 ### list_data_sets
 
 This operation lists your data sets.
@@ -434,6 +481,8 @@ Keyword-only arguments:
 
 Returns
 [ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+<a id="list_event_actions"></a>
 
 ### list_event_actions
 
@@ -456,6 +505,8 @@ Keyword-only arguments:
 Returns
 [ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 This operation lists your jobs sorted by CreatedAt in descending order.
@@ -476,6 +527,8 @@ Keyword-only arguments:
 - `RevisionId`: `str`
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+
+<a id="list_revision_assets"></a>
 
 ### list_revision_assets
 
@@ -501,6 +554,8 @@ Keyword-only arguments:
 Returns
 [ListRevisionAssetsResponseTypeDef](./type_defs.md#listrevisionassetsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 This operation lists the tags on the resource.
@@ -520,6 +575,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="send_api_asset"></a>
 
 ### send_api_asset
 
@@ -547,6 +604,8 @@ Keyword-only arguments:
 Returns
 [SendApiAssetResponseTypeDef](./type_defs.md#sendapiassetresponsetypedef).
 
+<a id="start_job"></a>
+
 ### start_job
 
 This operation starts a job.
@@ -565,6 +624,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 This operation tags a resource.
@@ -582,6 +643,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 This operation removes one or more tags from a resource.
@@ -598,6 +661,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_asset"></a>
 
 ### update_asset
 
@@ -621,6 +686,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssetResponseTypeDef](./type_defs.md#updateassetresponsetypedef).
 
+<a id="update_data_set"></a>
+
 ### update_data_set
 
 This operation updates a data set.
@@ -642,6 +709,8 @@ Keyword-only arguments:
 Returns
 [UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
+<a id="update_event_action"></a>
+
 ### update_event_action
 
 This operation updates the event action.
@@ -661,6 +730,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateEventActionResponseTypeDef](./type_defs.md#updateeventactionresponsetypedef).
+
+<a id="update_revision"></a>
 
 ### update_revision
 
@@ -683,6 +754,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRevisionResponseTypeDef](./type_defs.md#updaterevisionresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

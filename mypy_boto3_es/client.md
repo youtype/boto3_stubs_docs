@@ -1,3 +1,5 @@
+<a id="elasticsearchserviceclient-for-boto3-elasticsearchservice-module"></a>
+
 # ElasticsearchServiceClient for boto3 ElasticsearchService module
 
 > [Index](..) > [ElasticsearchService](.) > ElasticsearchServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticsearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService)
 type annotations stubs module
-[mypy_boto3_es](https://pypi.org/project/mypy-boto3-es/).
+[mypy-boto3-es](https://pypi.org/project/mypy-boto3-es/).
 
 - [ElasticsearchServiceClient for boto3 ElasticsearchService module](#elasticsearchserviceclient-for-boto3-elasticsearchservice-module)
   - [ElasticsearchServiceClient](#elasticsearchserviceclient)
@@ -57,6 +59,8 @@ type annotations stubs module
     - [upgrade_elasticsearch_domain](#upgrade_elasticsearch_domain)
     - [get_paginator](#get_paginator)
 
+<a id="elasticsearchserviceclient"></a>
+
 ## ElasticsearchServiceClient
 
 Type annotations for `boto3.client("es")`
@@ -64,14 +68,17 @@ Type annotations for `boto3.client("es")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_es.client import ElasticsearchServiceClient
 
 def get_es_client() -> ElasticsearchServiceClient:
-    return boto3.client("es")
+    return Session().client("es")
 ```
 
 Boto3 documentation:
 [ElasticsearchService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -100,7 +107,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -112,6 +123,8 @@ Boto3 documentation:
 [ElasticsearchService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_inbound_cross_cluster_search_connection"></a>
 
 ### accept_inbound_cross_cluster_search_connection
 
@@ -134,6 +147,8 @@ Keyword-only arguments:
 Returns
 [AcceptInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#acceptinboundcrossclustersearchconnectionresponsetypedef).
 
+<a id="add_tags"></a>
+
 ### add_tags
 
 Attaches tags to an existing Elasticsearch domain.
@@ -150,6 +165,8 @@ Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="associate_package"></a>
 
 ### associate_package
 
@@ -171,6 +188,8 @@ Keyword-only arguments:
 Returns
 [AssociatePackageResponseTypeDef](./type_defs.md#associatepackageresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -185,6 +204,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_elasticsearch_service_software_update"></a>
 
 ### cancel_elasticsearch_service_software_update
 
@@ -205,6 +226,8 @@ Keyword-only arguments:
 
 Returns
 [CancelElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#cancelelasticsearchservicesoftwareupdateresponsetypedef).
+
+<a id="create_elasticsearch_domain"></a>
 
 ### create_elasticsearch_domain
 
@@ -249,6 +272,8 @@ Keyword-only arguments:
 Returns
 [CreateElasticsearchDomainResponseTypeDef](./type_defs.md#createelasticsearchdomainresponsetypedef).
 
+<a id="create_outbound_cross_cluster_search_connection"></a>
+
 ### create_outbound_cross_cluster_search_connection
 
 Creates a new cross-cluster search connection from a source domain to a
@@ -276,6 +301,8 @@ Keyword-only arguments:
 Returns
 [CreateOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#createoutboundcrossclustersearchconnectionresponsetypedef).
 
+<a id="create_package"></a>
+
 ### create_package
 
 Create a package for use with Amazon ES domains.
@@ -300,6 +327,8 @@ Keyword-only arguments:
 Returns
 [CreatePackageResponseTypeDef](./type_defs.md#createpackageresponsetypedef).
 
+<a id="delete_elasticsearch_domain"></a>
+
 ### delete_elasticsearch_domain
 
 Permanently deletes the specified Elasticsearch domain and all of its data.
@@ -319,6 +348,8 @@ Keyword-only arguments:
 Returns
 [DeleteElasticsearchDomainResponseTypeDef](./type_defs.md#deleteelasticsearchdomainresponsetypedef).
 
+<a id="delete_elasticsearch_service_role"></a>
+
 ### delete_elasticsearch_service_role
 
 Deletes the service-linked role that Elasticsearch Service uses to manage and
@@ -329,6 +360,8 @@ method.
 
 Boto3 documentation:
 [ElasticsearchService.Client.delete_elasticsearch_service_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.delete_elasticsearch_service_role)
+
+<a id="delete_inbound_cross_cluster_search_connection"></a>
 
 ### delete_inbound_cross_cluster_search_connection
 
@@ -351,6 +384,8 @@ Keyword-only arguments:
 Returns
 [DeleteInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteinboundcrossclustersearchconnectionresponsetypedef).
 
+<a id="delete_outbound_cross_cluster_search_connection"></a>
+
 ### delete_outbound_cross_cluster_search_connection
 
 Allows the source domain owner to delete an existing outbound cross-cluster
@@ -372,6 +407,8 @@ Keyword-only arguments:
 Returns
 [DeleteOutboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#deleteoutboundcrossclustersearchconnectionresponsetypedef).
 
+<a id="delete_package"></a>
+
 ### delete_package
 
 Delete the package.
@@ -390,6 +427,8 @@ Keyword-only arguments:
 
 Returns
 [DeletePackageResponseTypeDef](./type_defs.md#deletepackageresponsetypedef).
+
+<a id="describe_domain_auto_tunes"></a>
 
 ### describe_domain_auto_tunes
 
@@ -413,6 +452,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
 
+<a id="describe_domain_change_progress"></a>
+
 ### describe_domain_change_progress
 
 Returns information about the current blue/green deployment happening on a
@@ -435,6 +476,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef).
 
+<a id="describe_elasticsearch_domain"></a>
+
 ### describe_elasticsearch_domain
 
 Returns domain configuration information about the specified Elasticsearch
@@ -454,6 +497,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeElasticsearchDomainResponseTypeDef](./type_defs.md#describeelasticsearchdomainresponsetypedef).
+
+<a id="describe_elasticsearch_domain_config"></a>
 
 ### describe_elasticsearch_domain_config
 
@@ -477,6 +522,8 @@ Keyword-only arguments:
 Returns
 [DescribeElasticsearchDomainConfigResponseTypeDef](./type_defs.md#describeelasticsearchdomainconfigresponsetypedef).
 
+<a id="describe_elasticsearch_domains"></a>
+
 ### describe_elasticsearch_domains
 
 Returns domain configuration information about the specified Elasticsearch
@@ -497,6 +544,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeElasticsearchDomainsResponseTypeDef](./type_defs.md#describeelasticsearchdomainsresponsetypedef).
+
+<a id="describe_elasticsearch_instance_type_limits"></a>
 
 ### describe_elasticsearch_instance_type_limits
 
@@ -523,6 +572,8 @@ Keyword-only arguments:
 Returns
 [DescribeElasticsearchInstanceTypeLimitsResponseTypeDef](./type_defs.md#describeelasticsearchinstancetypelimitsresponsetypedef).
 
+<a id="describe_inbound_cross_cluster_search_connections"></a>
+
 ### describe_inbound_cross_cluster_search_connections
 
 Lists all the inbound cross-cluster search connections for a destination
@@ -546,6 +597,8 @@ Keyword-only arguments:
 Returns
 [DescribeInboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeinboundcrossclustersearchconnectionsresponsetypedef).
 
+<a id="describe_outbound_cross_cluster_search_connections"></a>
+
 ### describe_outbound_cross_cluster_search_connections
 
 Lists all the outbound cross-cluster search connections for a source domain.
@@ -567,6 +620,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOutboundCrossClusterSearchConnectionsResponseTypeDef](./type_defs.md#describeoutboundcrossclustersearchconnectionsresponsetypedef).
+
+<a id="describe_packages"></a>
 
 ### describe_packages
 
@@ -590,6 +645,8 @@ Keyword-only arguments:
 Returns
 [DescribePackagesResponseTypeDef](./type_defs.md#describepackagesresponsetypedef).
 
+<a id="describe_reserved_elasticsearch_instance_offerings"></a>
+
 ### describe_reserved_elasticsearch_instance_offerings
 
 Lists available reserved Elasticsearch instance offerings.
@@ -611,6 +668,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReservedElasticsearchInstanceOfferingsResponseTypeDef](./type_defs.md#describereservedelasticsearchinstanceofferingsresponsetypedef).
+
+<a id="describe_reserved_elasticsearch_instances"></a>
 
 ### describe_reserved_elasticsearch_instances
 
@@ -634,6 +693,8 @@ Keyword-only arguments:
 Returns
 [DescribeReservedElasticsearchInstancesResponseTypeDef](./type_defs.md#describereservedelasticsearchinstancesresponsetypedef).
 
+<a id="dissociate_package"></a>
+
 ### dissociate_package
 
 Dissociates a package from the Amazon ES domain.
@@ -654,6 +715,8 @@ Keyword-only arguments:
 Returns
 [DissociatePackageResponseTypeDef](./type_defs.md#dissociatepackageresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -671,6 +734,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_compatible_elasticsearch_versions"></a>
 
 ### get_compatible_elasticsearch_versions
 
@@ -691,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [GetCompatibleElasticsearchVersionsResponseTypeDef](./type_defs.md#getcompatibleelasticsearchversionsresponsetypedef).
+
+<a id="get_package_version_history"></a>
 
 ### get_package_version_history
 
@@ -714,6 +781,8 @@ Keyword-only arguments:
 Returns
 [GetPackageVersionHistoryResponseTypeDef](./type_defs.md#getpackageversionhistoryresponsetypedef).
 
+<a id="get_upgrade_history"></a>
+
 ### get_upgrade_history
 
 Retrieves the complete history of the last 10 upgrades that were performed on
@@ -736,6 +805,8 @@ Keyword-only arguments:
 Returns
 [GetUpgradeHistoryResponseTypeDef](./type_defs.md#getupgradehistoryresponsetypedef).
 
+<a id="get_upgrade_status"></a>
+
 ### get_upgrade_status
 
 Retrieves the latest status of the last upgrade or upgrade eligibility check
@@ -755,6 +826,8 @@ Keyword-only arguments:
 
 Returns
 [GetUpgradeStatusResponseTypeDef](./type_defs.md#getupgradestatusresponsetypedef).
+
+<a id="list_domain_names"></a>
 
 ### list_domain_names
 
@@ -776,6 +849,8 @@ Keyword-only arguments:
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 
+<a id="list_domains_for_package"></a>
+
 ### list_domains_for_package
 
 Lists all Amazon ES domains associated with the package.
@@ -796,6 +871,8 @@ Keyword-only arguments:
 
 Returns
 [ListDomainsForPackageResponseTypeDef](./type_defs.md#listdomainsforpackageresponsetypedef).
+
+<a id="list_elasticsearch_instance_types"></a>
 
 ### list_elasticsearch_instance_types
 
@@ -822,6 +899,8 @@ Keyword-only arguments:
 Returns
 [ListElasticsearchInstanceTypesResponseTypeDef](./type_defs.md#listelasticsearchinstancetypesresponsetypedef).
 
+<a id="list_elasticsearch_versions"></a>
+
 ### list_elasticsearch_versions
 
 List all supported Elasticsearch versions See also:
@@ -842,6 +921,8 @@ Keyword-only arguments:
 
 Returns
 [ListElasticsearchVersionsResponseTypeDef](./type_defs.md#listelasticsearchversionsresponsetypedef).
+
+<a id="list_packages_for_domain"></a>
 
 ### list_packages_for_domain
 
@@ -864,6 +945,8 @@ Keyword-only arguments:
 Returns
 [ListPackagesForDomainResponseTypeDef](./type_defs.md#listpackagesfordomainresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Returns all tags for the given Elasticsearch domain.
@@ -881,6 +964,8 @@ Keyword-only arguments:
 - `ARN`: `str` *(required)*
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+
+<a id="purchase_reserved_elasticsearch_instance_offering"></a>
 
 ### purchase_reserved_elasticsearch_instance_offering
 
@@ -904,6 +989,8 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedElasticsearchInstanceOfferingResponseTypeDef](./type_defs.md#purchasereservedelasticsearchinstanceofferingresponsetypedef).
 
+<a id="reject_inbound_cross_cluster_search_connection"></a>
+
 ### reject_inbound_cross_cluster_search_connection
 
 Allows the destination domain owner to reject an inbound cross-cluster search
@@ -925,6 +1012,8 @@ Keyword-only arguments:
 Returns
 [RejectInboundCrossClusterSearchConnectionResponseTypeDef](./type_defs.md#rejectinboundcrossclustersearchconnectionresponsetypedef).
 
+<a id="remove_tags"></a>
+
 ### remove_tags
 
 Removes the specified set of tags from the specified Elasticsearch domain.
@@ -941,6 +1030,8 @@ Keyword-only arguments:
 
 - `ARN`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="start_elasticsearch_service_software_update"></a>
 
 ### start_elasticsearch_service_software_update
 
@@ -961,6 +1052,8 @@ Keyword-only arguments:
 
 Returns
 [StartElasticsearchServiceSoftwareUpdateResponseTypeDef](./type_defs.md#startelasticsearchservicesoftwareupdateresponsetypedef).
+
+<a id="update_elasticsearch_domain_config"></a>
 
 ### update_elasticsearch_domain_config
 
@@ -1006,6 +1099,8 @@ Keyword-only arguments:
 Returns
 [UpdateElasticsearchDomainConfigResponseTypeDef](./type_defs.md#updateelasticsearchdomainconfigresponsetypedef).
 
+<a id="update_package"></a>
+
 ### update_package
 
 Updates a package for use with Amazon ES domains.
@@ -1029,6 +1124,8 @@ Keyword-only arguments:
 Returns
 [UpdatePackageResponseTypeDef](./type_defs.md#updatepackageresponsetypedef).
 
+<a id="upgrade_elasticsearch_domain"></a>
+
 ### upgrade_elasticsearch_domain
 
 Allows you to either upgrade your domain or perform an Upgrade eligibility
@@ -1050,6 +1147,8 @@ Keyword-only arguments:
 
 Returns
 [UpgradeElasticsearchDomainResponseTypeDef](./type_defs.md#upgradeelasticsearchdomainresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

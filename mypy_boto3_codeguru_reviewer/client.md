@@ -1,3 +1,5 @@
+<a id="codegurureviewerclient-for-boto3-codegurureviewer-module"></a>
+
 # CodeGuruReviewerClient for boto3 CodeGuruReviewer module
 
 > [Index](..) > [CodeGuruReviewer](.) > CodeGuruReviewerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeGuruReviewer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer)
 type annotations stubs module
-[mypy_boto3_codeguru_reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
+[mypy-boto3-codeguru-reviewer](https://pypi.org/project/mypy-boto3-codeguru-reviewer/).
 
 - [CodeGuruReviewerClient for boto3 CodeGuruReviewer module](#codegurureviewerclient-for-boto3-codegurureviewer-module)
   - [CodeGuruReviewerClient](#codegurureviewerclient)
@@ -31,6 +33,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="codegurureviewerclient"></a>
+
 ## CodeGuruReviewerClient
 
 Type annotations for `boto3.client("codeguru-reviewer")`
@@ -38,14 +42,17 @@ Type annotations for `boto3.client("codeguru-reviewer")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codeguru_reviewer.client import CodeGuruReviewerClient
 
 def get_codeguru-reviewer_client() -> CodeGuruReviewerClient:
-    return boto3.client("codeguru-reviewer")
+    return Session().client("codeguru-reviewer")
 ```
 
 Boto3 documentation:
 [CodeGuruReviewer.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -70,7 +77,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -82,6 +93,8 @@ Boto3 documentation:
 [CodeGuruReviewer.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguru-reviewer.html#CodeGuruReviewer.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_repository"></a>
 
 ### associate_repository
 
@@ -107,6 +120,8 @@ Keyword-only arguments:
 Returns
 [AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -121,6 +136,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_code_review"></a>
 
 ### create_code_review
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 Returns
 [CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef).
 
+<a id="describe_code_review"></a>
+
 ### describe_code_review
 
 .
@@ -165,6 +184,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef).
+
+<a id="describe_recommendation_feedback"></a>
 
 ### describe_recommendation_feedback
 
@@ -188,6 +209,8 @@ Keyword-only arguments:
 Returns
 [DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef).
 
+<a id="describe_repository_association"></a>
+
 ### describe_repository_association
 
 .
@@ -207,6 +230,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef).
+
+<a id="disassociate_repository"></a>
 
 ### disassociate_repository
 
@@ -228,6 +253,8 @@ Keyword-only arguments:
 Returns
 [DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -246,6 +273,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_code_reviews"></a>
 
 ### list_code_reviews
 
@@ -273,6 +302,8 @@ Keyword-only arguments:
 Returns
 [ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef).
 
+<a id="list_recommendation_feedback"></a>
+
 ### list_recommendation_feedback
 
 .
@@ -297,6 +328,8 @@ Keyword-only arguments:
 Returns
 [ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
 
+<a id="list_recommendations"></a>
+
 ### list_recommendations
 
 .
@@ -318,6 +351,8 @@ Keyword-only arguments:
 
 Returns
 [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
+
+<a id="list_repository_associations"></a>
 
 ### list_repository_associations
 
@@ -346,6 +381,8 @@ Keyword-only arguments:
 Returns
 [ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 .
@@ -365,6 +402,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_recommendation_feedback"></a>
 
 ### put_recommendation_feedback
 
@@ -388,6 +427,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 .
@@ -406,6 +447,8 @@ Keyword-only arguments:
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -426,6 +469,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("codeguru-reviewer").get_paginator` method
@@ -433,6 +478,8 @@ with overloads.
 
 - `client.get_paginator("list_repository_associations")` ->
   [ListRepositoryAssociationsPaginator](./paginators.md#listrepositoryassociationspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

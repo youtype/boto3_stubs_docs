@@ -1,3 +1,5 @@
+<a id="ecsclient-for-boto3-ecs-module"></a>
+
 # ECSClient for boto3 ECS module
 
 > [Index](..) > [ECS](.) > ECSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module
-[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [ECSClient for boto3 ECS module](#ecsclient-for-boto3-ecs-module)
   - [ECSClient](#ecsclient)
@@ -69,6 +71,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="ecsclient"></a>
+
 ## ECSClient
 
 Type annotations for `boto3.client("ecs")`
@@ -76,14 +80,17 @@ Type annotations for `boto3.client("ecs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ecs.client import ECSClient
 
 def get_ecs_client() -> ECSClient:
-    return boto3.client("ecs")
+    return Session().client("ecs")
 ```
 
 Boto3 documentation:
 [ECS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -125,7 +132,11 @@ Exceptions:
 - `Exceptions.UnsupportedFeatureException`
 - `Exceptions.UpdateInProgressException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -137,6 +148,8 @@ Boto3 documentation:
 [ECS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -152,6 +165,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_capacity_provider"></a>
 
 ### create_capacity_provider
 
@@ -175,6 +190,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCapacityProviderResponseTypeDef](./type_defs.md#createcapacityproviderresponsetypedef).
+
+<a id="create_cluster"></a>
 
 ### create_cluster
 
@@ -202,6 +219,8 @@ Keyword-only arguments:
 
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
+
+<a id="create_service"></a>
 
 ### create_service
 
@@ -253,6 +272,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
+<a id="create_task_set"></a>
+
 ### create_task_set
 
 Create a task set in the specified cluster and service.
@@ -288,6 +309,8 @@ Keyword-only arguments:
 Returns
 [CreateTaskSetResponseTypeDef](./type_defs.md#createtasksetresponsetypedef).
 
+<a id="delete_account_setting"></a>
+
 ### delete_account_setting
 
 Disables an account setting for a specified IAM user, IAM role, or the root
@@ -308,6 +331,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteAccountSettingResponseTypeDef](./type_defs.md#deleteaccountsettingresponsetypedef).
+
+<a id="delete_attributes"></a>
 
 ### delete_attributes
 
@@ -331,6 +356,8 @@ Keyword-only arguments:
 Returns
 [DeleteAttributesResponseTypeDef](./type_defs.md#deleteattributesresponsetypedef).
 
+<a id="delete_capacity_provider"></a>
+
 ### delete_capacity_provider
 
 Deletes the specified capacity provider.
@@ -350,6 +377,8 @@ Keyword-only arguments:
 Returns
 [DeleteCapacityProviderResponseTypeDef](./type_defs.md#deletecapacityproviderresponsetypedef).
 
+<a id="delete_cluster"></a>
+
 ### delete_cluster
 
 Deletes the specified cluster.
@@ -368,6 +397,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
+
+<a id="delete_service"></a>
 
 ### delete_service
 
@@ -389,6 +420,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
+
+<a id="delete_task_set"></a>
 
 ### delete_task_set
 
@@ -412,6 +445,8 @@ Keyword-only arguments:
 Returns
 [DeleteTaskSetResponseTypeDef](./type_defs.md#deletetasksetresponsetypedef).
 
+<a id="deregister_container_instance"></a>
+
 ### deregister_container_instance
 
 Deregisters an Amazon ECS container instance from the specified cluster.
@@ -434,6 +469,8 @@ Keyword-only arguments:
 Returns
 [DeregisterContainerInstanceResponseTypeDef](./type_defs.md#deregistercontainerinstanceresponsetypedef).
 
+<a id="deregister_task_definition"></a>
+
 ### deregister_task_definition
 
 Deregisters the specified task definition by family and revision.
@@ -452,6 +489,8 @@ Keyword-only arguments:
 
 Returns
 [DeregisterTaskDefinitionResponseTypeDef](./type_defs.md#deregistertaskdefinitionresponsetypedef).
+
+<a id="describe_capacity_providers"></a>
 
 ### describe_capacity_providers
 
@@ -476,6 +515,8 @@ Keyword-only arguments:
 Returns
 [DescribeCapacityProvidersResponseTypeDef](./type_defs.md#describecapacityprovidersresponsetypedef).
 
+<a id="describe_clusters"></a>
+
 ### describe_clusters
 
 Describes one or more of your clusters.
@@ -495,6 +536,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
+
+<a id="describe_container_instances"></a>
 
 ### describe_container_instances
 
@@ -518,6 +561,8 @@ Keyword-only arguments:
 Returns
 [DescribeContainerInstancesResponseTypeDef](./type_defs.md#describecontainerinstancesresponsetypedef).
 
+<a id="describe_services"></a>
+
 ### describe_services
 
 Describes the specified services running in your cluster.
@@ -540,6 +585,8 @@ Keyword-only arguments:
 Returns
 [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
+<a id="describe_task_definition"></a>
+
 ### describe_task_definition
 
 Describes a task definition.
@@ -560,6 +607,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTaskDefinitionResponseTypeDef](./type_defs.md#describetaskdefinitionresponsetypedef).
+
+<a id="describe_task_sets"></a>
 
 ### describe_task_sets
 
@@ -584,6 +633,8 @@ Keyword-only arguments:
 Returns
 [DescribeTaskSetsResponseTypeDef](./type_defs.md#describetasksetsresponsetypedef).
 
+<a id="describe_tasks"></a>
+
 ### describe_tasks
 
 Describes a specified task or tasks.
@@ -606,6 +657,8 @@ Keyword-only arguments:
 Returns
 [DescribeTasksResponseTypeDef](./type_defs.md#describetasksresponsetypedef).
 
+<a id="discover_poll_endpoint"></a>
+
 ### discover_poll_endpoint
 
 .
@@ -625,6 +678,8 @@ Keyword-only arguments:
 
 Returns
 [DiscoverPollEndpointResponseTypeDef](./type_defs.md#discoverpollendpointresponsetypedef).
+
+<a id="execute_command"></a>
 
 ### execute_command
 
@@ -649,6 +704,8 @@ Keyword-only arguments:
 Returns
 [ExecuteCommandResponseTypeDef](./type_defs.md#executecommandresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -666,6 +723,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_account_settings"></a>
 
 ### list_account_settings
 
@@ -690,6 +749,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccountSettingsResponseTypeDef](./type_defs.md#listaccountsettingsresponsetypedef).
+
+<a id="list_attributes"></a>
 
 ### list_attributes
 
@@ -717,6 +778,8 @@ Keyword-only arguments:
 Returns
 [ListAttributesResponseTypeDef](./type_defs.md#listattributesresponsetypedef).
 
+<a id="list_clusters"></a>
+
 ### list_clusters
 
 Returns a list of existing clusters.
@@ -736,6 +799,8 @@ Keyword-only arguments:
 
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
+
+<a id="list_container_instances"></a>
 
 ### list_container_instances
 
@@ -761,6 +826,8 @@ Keyword-only arguments:
 Returns
 [ListContainerInstancesResponseTypeDef](./type_defs.md#listcontainerinstancesresponsetypedef).
 
+<a id="list_services"></a>
+
 ### list_services
 
 Returns a list of services.
@@ -785,6 +852,8 @@ Keyword-only arguments:
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for an Amazon ECS resource.
@@ -803,6 +872,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_task_definition_families"></a>
 
 ### list_task_definition_families
 
@@ -828,6 +899,8 @@ Keyword-only arguments:
 Returns
 [ListTaskDefinitionFamiliesResponseTypeDef](./type_defs.md#listtaskdefinitionfamiliesresponsetypedef).
 
+<a id="list_task_definitions"></a>
+
 ### list_task_definitions
 
 Returns a list of task definitions that are registered to your account.
@@ -850,6 +923,8 @@ Keyword-only arguments:
 
 Returns
 [ListTaskDefinitionsResponseTypeDef](./type_defs.md#listtaskdefinitionsresponsetypedef).
+
+<a id="list_tasks"></a>
 
 ### list_tasks
 
@@ -877,6 +952,8 @@ Keyword-only arguments:
 
 Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
 
+<a id="put_account_setting"></a>
+
 ### put_account_setting
 
 Modifies an account setting.
@@ -897,6 +974,8 @@ Keyword-only arguments:
 
 Returns
 [PutAccountSettingResponseTypeDef](./type_defs.md#putaccountsettingresponsetypedef).
+
+<a id="put_account_setting_default"></a>
 
 ### put_account_setting_default
 
@@ -919,6 +998,8 @@ Keyword-only arguments:
 Returns
 [PutAccountSettingDefaultResponseTypeDef](./type_defs.md#putaccountsettingdefaultresponsetypedef).
 
+<a id="put_attributes"></a>
+
 ### put_attributes
 
 Create or update an attribute on an Amazon ECS resource.
@@ -940,6 +1021,8 @@ Keyword-only arguments:
 
 Returns
 [PutAttributesResponseTypeDef](./type_defs.md#putattributesresponsetypedef).
+
+<a id="put_cluster_capacity_providers"></a>
 
 ### put_cluster_capacity_providers
 
@@ -965,6 +1048,8 @@ Keyword-only arguments:
 
 Returns
 [PutClusterCapacityProvidersResponseTypeDef](./type_defs.md#putclustercapacityprovidersresponsetypedef).
+
+<a id="register_container_instance"></a>
 
 ### register_container_instance
 
@@ -995,6 +1080,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterContainerInstanceResponseTypeDef](./type_defs.md#registercontainerinstanceresponsetypedef).
+
+<a id="register_task_definition"></a>
 
 ### register_task_definition
 
@@ -1040,6 +1127,8 @@ Keyword-only arguments:
 Returns
 [RegisterTaskDefinitionResponseTypeDef](./type_defs.md#registertaskdefinitionresponsetypedef).
 
+<a id="run_task"></a>
+
 ### run_task
 
 Starts a new task using the specified task definition.
@@ -1078,6 +1167,8 @@ Keyword-only arguments:
 
 Returns [RunTaskResponseTypeDef](./type_defs.md#runtaskresponsetypedef).
 
+<a id="start_task"></a>
+
 ### start_task
 
 Starts a new task from the specified task definition on the specified container
@@ -1109,6 +1200,8 @@ Keyword-only arguments:
 
 Returns [StartTaskResponseTypeDef](./type_defs.md#starttaskresponsetypedef).
 
+<a id="stop_task"></a>
+
 ### stop_task
 
 Stops a running task.
@@ -1128,6 +1221,8 @@ Keyword-only arguments:
 - `reason`: `str`
 
 Returns [StopTaskResponseTypeDef](./type_defs.md#stoptaskresponsetypedef).
+
+<a id="submit_attachment_state_changes"></a>
 
 ### submit_attachment_state_changes
 
@@ -1151,6 +1246,8 @@ Keyword-only arguments:
 
 Returns
 [SubmitAttachmentStateChangesResponseTypeDef](./type_defs.md#submitattachmentstatechangesresponsetypedef).
+
+<a id="submit_container_state_change"></a>
 
 ### submit_container_state_change
 
@@ -1179,6 +1276,8 @@ Keyword-only arguments:
 
 Returns
 [SubmitContainerStateChangeResponseTypeDef](./type_defs.md#submitcontainerstatechangeresponsetypedef).
+
+<a id="submit_task_state_change"></a>
 
 ### submit_task_state_change
 
@@ -1211,6 +1310,8 @@ Keyword-only arguments:
 Returns
 [SubmitTaskStateChangeResponseTypeDef](./type_defs.md#submittaskstatechangeresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
@@ -1230,6 +1331,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -1248,6 +1351,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_capacity_provider"></a>
 
 ### update_capacity_provider
 
@@ -1270,6 +1375,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateCapacityProviderResponseTypeDef](./type_defs.md#updatecapacityproviderresponsetypedef).
+
+<a id="update_cluster"></a>
 
 ### update_cluster
 
@@ -1294,6 +1401,8 @@ Keyword-only arguments:
 Returns
 [UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
 
+<a id="update_cluster_settings"></a>
+
 ### update_cluster_settings
 
 Modifies the settings to use for a cluster.
@@ -1316,6 +1425,8 @@ Keyword-only arguments:
 Returns
 [UpdateClusterSettingsResponseTypeDef](./type_defs.md#updateclustersettingsresponsetypedef).
 
+<a id="update_container_agent"></a>
+
 ### update_container_agent
 
 Updates the Amazon ECS container agent on a specified container instance.
@@ -1335,6 +1446,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateContainerAgentResponseTypeDef](./type_defs.md#updatecontaineragentresponsetypedef).
+
+<a id="update_container_instances_state"></a>
 
 ### update_container_instances_state
 
@@ -1359,6 +1472,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateContainerInstancesStateResponseTypeDef](./type_defs.md#updatecontainerinstancesstateresponsetypedef).
+
+<a id="update_service"></a>
 
 ### update_service
 
@@ -1396,6 +1511,8 @@ Keyword-only arguments:
 Returns
 [UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).
 
+<a id="update_service_primary_task_set"></a>
+
 ### update_service_primary_task_set
 
 Modifies which task set in a service is the primary task set.
@@ -1417,6 +1534,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateServicePrimaryTaskSetResponseTypeDef](./type_defs.md#updateserviceprimarytasksetresponsetypedef).
+
+<a id="update_task_set"></a>
 
 ### update_task_set
 
@@ -1440,6 +1559,8 @@ Keyword-only arguments:
 Returns
 [UpdateTaskSetResponseTypeDef](./type_defs.md#updatetasksetresponsetypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("ecs").get_paginator` method with overloads.
@@ -1460,6 +1581,8 @@ Type annotations for `boto3.client("ecs").get_paginator` method with overloads.
   [ListTaskDefinitionsPaginator](./paginators.md#listtaskdefinitionspaginator)
 - `client.get_paginator("list_tasks")` ->
   [ListTasksPaginator](./paginators.md#listtaskspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

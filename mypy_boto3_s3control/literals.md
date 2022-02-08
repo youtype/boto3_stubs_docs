@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-s3control-module"></a>
+
 # Literals for boto3 S3Control module
 
 > [Index](..) > [S3Control](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3Control](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3control.html#S3Control)
 type annotations stubs module
-[mypy_boto3_s3control](https://pypi.org/project/mypy-boto3-s3control/).
+[mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
 - [Literals for boto3 S3Control module](#literals-for-boto3-s3control-module)
   - [AsyncOperationNameType](#asyncoperationnametype)
@@ -40,6 +42,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="asyncoperationnametype"></a>
+
 ## AsyncOperationNameType
 
 ```python
@@ -51,6 +55,8 @@ Values:
 - `CreateMultiRegionAccessPoint`
 - `DeleteMultiRegionAccessPoint`
 - `PutMultiRegionAccessPointPolicy`
+
+<a id="bucketcannedacltype"></a>
 
 ## BucketCannedACLType
 
@@ -64,6 +70,8 @@ Values:
 - `private`
 - `public-read`
 - `public-read-write`
+
+<a id="bucketlocationconstrainttype"></a>
 
 ## BucketLocationConstraintType
 
@@ -85,6 +93,8 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="expirationstatustype"></a>
+
 ## ExpirationStatusType
 
 ```python
@@ -96,6 +106,8 @@ Values:
 - `Disabled`
 - `Enabled`
 
+<a id="formattype"></a>
+
 ## FormatType
 
 ```python
@@ -106,6 +118,8 @@ Values:
 
 - `CSV`
 - `Parquet`
+
+<a id="jobmanifestfieldnametype"></a>
 
 ## JobManifestFieldNameType
 
@@ -120,6 +134,8 @@ Values:
 - `Key`
 - `VersionId`
 
+<a id="jobmanifestformattype"></a>
+
 ## JobManifestFormatType
 
 ```python
@@ -131,6 +147,8 @@ Values:
 - `S3BatchOperations_CSV_20180820`
 - `S3InventoryReport_CSV_20161130`
 
+<a id="jobreportformattype"></a>
+
 ## JobReportFormatType
 
 ```python
@@ -140,6 +158,8 @@ from mypy_boto3_s3control.literals import JobReportFormatType
 Values:
 
 - `Report_CSV_20180820`
+
+<a id="jobreportscopetype"></a>
 
 ## JobReportScopeType
 
@@ -151,6 +171,8 @@ Values:
 
 - `AllTasks`
 - `FailedTasksOnly`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -174,6 +196,8 @@ Values:
 - `Ready`
 - `Suspended`
 
+<a id="listaccesspointsforobjectlambdapaginatorname"></a>
+
 ## ListAccessPointsForObjectLambdaPaginatorName
 
 ```python
@@ -183,6 +207,8 @@ from mypy_boto3_s3control.literals import ListAccessPointsForObjectLambdaPaginat
 Values:
 
 - `list_access_points_for_object_lambda`
+
+<a id="multiregionaccesspointstatustype"></a>
 
 ## MultiRegionAccessPointStatusType
 
@@ -199,6 +225,8 @@ Values:
 - `PARTIALLY_DELETED`
 - `READY`
 
+<a id="networkorigintype"></a>
+
 ## NetworkOriginType
 
 ```python
@@ -209,6 +237,8 @@ Values:
 
 - `Internet`
 - `VPC`
+
+<a id="objectlambdaallowedfeaturetype"></a>
 
 ## ObjectLambdaAllowedFeatureType
 
@@ -221,6 +251,8 @@ Values:
 - `GetObject-PartNumber`
 - `GetObject-Range`
 
+<a id="objectlambdatransformationconfigurationactiontype"></a>
+
 ## ObjectLambdaTransformationConfigurationActionType
 
 ```python
@@ -230,6 +262,8 @@ from mypy_boto3_s3control.literals import ObjectLambdaTransformationConfiguratio
 Values:
 
 - `GetObject`
+
+<a id="operationnametype"></a>
 
 ## OperationNameType
 
@@ -248,6 +282,8 @@ Values:
 - `S3PutObjectRetention`
 - `S3PutObjectTagging`
 
+<a id="outputschemaversiontype"></a>
+
 ## OutputSchemaVersionType
 
 ```python
@@ -257,6 +293,8 @@ from mypy_boto3_s3control.literals import OutputSchemaVersionType
 Values:
 
 - `V_1`
+
+<a id="requestedjobstatustype"></a>
 
 ## RequestedJobStatusType
 
@@ -268,6 +306,8 @@ Values:
 
 - `Cancelled`
 - `Ready`
+
+<a id="s3cannedaccesscontrollisttype"></a>
 
 ## S3CannedAccessControlListType
 
@@ -285,6 +325,8 @@ Values:
 - `public-read`
 - `public-read-write`
 
+<a id="s3glacierjobtiertype"></a>
+
 ## S3GlacierJobTierType
 
 ```python
@@ -295,6 +337,8 @@ Values:
 
 - `BULK`
 - `STANDARD`
+
+<a id="s3granteetypeidentifiertype"></a>
 
 ## S3GranteeTypeIdentifierType
 
@@ -308,6 +352,8 @@ Values:
 - `id`
 - `uri`
 
+<a id="s3metadatadirectivetype"></a>
+
 ## S3MetadataDirectiveType
 
 ```python
@@ -318,6 +364,8 @@ Values:
 
 - `COPY`
 - `REPLACE`
+
+<a id="s3objectlocklegalholdstatustype"></a>
 
 ## S3ObjectLockLegalHoldStatusType
 
@@ -330,6 +378,8 @@ Values:
 - `OFF`
 - `ON`
 
+<a id="s3objectlockmodetype"></a>
+
 ## S3ObjectLockModeType
 
 ```python
@@ -341,6 +391,8 @@ Values:
 - `COMPLIANCE`
 - `GOVERNANCE`
 
+<a id="s3objectlockretentionmodetype"></a>
+
 ## S3ObjectLockRetentionModeType
 
 ```python
@@ -351,6 +403,8 @@ Values:
 
 - `COMPLIANCE`
 - `GOVERNANCE`
+
+<a id="s3permissiontype"></a>
 
 ## S3PermissionType
 
@@ -366,6 +420,8 @@ Values:
 - `WRITE`
 - `WRITE_ACP`
 
+<a id="s3ssealgorithmtype"></a>
+
 ## S3SSEAlgorithmType
 
 ```python
@@ -376,6 +432,8 @@ Values:
 
 - `AES256`
 - `KMS`
+
+<a id="s3storageclasstype"></a>
 
 ## S3StorageClassType
 
@@ -392,6 +450,8 @@ Values:
 - `STANDARD`
 - `STANDARD_IA`
 
+<a id="transitionstorageclasstype"></a>
+
 ## TransitionStorageClassType
 
 ```python
@@ -405,6 +465,8 @@ Values:
 - `INTELLIGENT_TIERING`
 - `ONEZONE_IA`
 - `STANDARD_IA`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -713,6 +775,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

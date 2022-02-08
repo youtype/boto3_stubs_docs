@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-connect-module"></a>
+
 # Type annotations for boto3 Connect module
 
 > [Index](..) > Connect
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
 type annotations stubs module
-[mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
+[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[connect]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[connect]'
+
+# standalone installation
 pip install mypy-boto3-connect
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-connect
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="connectclient"></a>
+
 ## ConnectClient
 
 Type annotations for `boto3.client("connect")` as [ConnectClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_connect.client import ConnectClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -170,6 +184,8 @@ from mypy_boto3_connect.client import ConnectClient
 - [update_user_routing_profile](./client.md#update_user_routing_profile)
 - [update_user_security_profiles](./client.md#update_user_security_profiles)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ConnectClient [exceptions](./client.md#exceptions)
@@ -195,6 +211,8 @@ ConnectClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - UserNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -203,7 +221,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_connect.paginators import GetMetricDataPaginator, ...
+from mypy_boto3_connect.paginator import GetMetricDataPaginator, ...
 ```
 
 - [GetMetricDataPaginator](./paginators.md#getmetricdatapaginator)
@@ -235,6 +253,8 @@ from mypy_boto3_connect.paginators import GetMetricDataPaginator, ...
 - [ListUserHierarchyGroupsPaginator](./paginators.md#listuserhierarchygroupspaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
 - [SearchVocabulariesPaginator](./paginators.md#searchvocabulariespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -314,6 +334,8 @@ from mypy_boto3_connect.literals import AgentStatusStateType, ...
 - [VoiceRecordingTrackType](./literals.md#voicerecordingtracktype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

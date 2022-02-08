@@ -1,3 +1,5 @@
+<a id="macie2client-for-boto3-macie2-module"></a>
+
 # Macie2Client for boto3 Macie2 module
 
 > [Index](..) > [Macie2](.) > Macie2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
 type annotations stubs module
-[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Macie2Client for boto3 Macie2 module](#macie2client-for-boto3-macie2-module)
   - [Macie2Client](#macie2client)
@@ -73,6 +75,8 @@ type annotations stubs module
     - [update_organization_configuration](#update_organization_configuration)
     - [get_paginator](#get_paginator)
 
+<a id="macie2client"></a>
+
 ## Macie2Client
 
 Type annotations for `boto3.client("macie2")`
@@ -80,14 +84,17 @@ Type annotations for `boto3.client("macie2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_macie2.client import Macie2Client
 
 def get_macie2_client() -> Macie2Client:
-    return boto3.client("macie2")
+    return Session().client("macie2")
 ```
 
 Boto3 documentation:
 [Macie2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -112,7 +119,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -124,6 +135,8 @@ Boto3 documentation:
 [Macie2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_invitation"></a>
 
 ### accept_invitation
 
@@ -146,6 +159,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="batch_get_custom_data_identifiers"></a>
+
 ### batch_get_custom_data_identifiers
 
 Retrieves information about one or more custom data identifiers.
@@ -166,6 +181,8 @@ Keyword-only arguments:
 Returns
 [BatchGetCustomDataIdentifiersResponseTypeDef](./type_defs.md#batchgetcustomdataidentifiersresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -180,6 +197,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_classification_job"></a>
 
 ### create_classification_job
 
@@ -214,6 +233,8 @@ Keyword-only arguments:
 Returns
 [CreateClassificationJobResponseTypeDef](./type_defs.md#createclassificationjobresponsetypedef).
 
+<a id="create_custom_data_identifier"></a>
+
 ### create_custom_data_identifier
 
 Creates and defines the criteria and other settings for a custom data
@@ -244,6 +265,8 @@ Keyword-only arguments:
 Returns
 [CreateCustomDataIdentifierResponseTypeDef](./type_defs.md#createcustomdataidentifierresponsetypedef).
 
+<a id="create_findings_filter"></a>
+
 ### create_findings_filter
 
 Creates and defines the criteria and other settings for a findings filter.
@@ -271,6 +294,8 @@ Keyword-only arguments:
 Returns
 [CreateFindingsFilterResponseTypeDef](./type_defs.md#createfindingsfilterresponsetypedef).
 
+<a id="create_invitations"></a>
+
 ### create_invitations
 
 Sends an Amazon Macie membership invitation to one or more accounts.
@@ -291,6 +316,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInvitationsResponseTypeDef](./type_defs.md#createinvitationsresponsetypedef).
+
+<a id="create_member"></a>
 
 ### create_member
 
@@ -313,6 +340,8 @@ Keyword-only arguments:
 Returns
 [CreateMemberResponseTypeDef](./type_defs.md#creatememberresponsetypedef).
 
+<a id="create_sample_findings"></a>
+
 ### create_sample_findings
 
 Creates sample findings.
@@ -331,6 +360,8 @@ Keyword-only arguments:
   `Sequence`\[[FindingTypeType](./literals.md#findingtypetype)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="decline_invitations"></a>
 
 ### decline_invitations
 
@@ -352,6 +383,8 @@ Keyword-only arguments:
 Returns
 [DeclineInvitationsResponseTypeDef](./type_defs.md#declineinvitationsresponsetypedef).
 
+<a id="delete_custom_data_identifier"></a>
+
 ### delete_custom_data_identifier
 
 Soft deletes a custom data identifier.
@@ -371,6 +404,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_findings_filter"></a>
+
 ### delete_findings_filter
 
 Deletes a findings filter.
@@ -388,6 +423,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_invitations"></a>
 
 ### delete_invitations
 
@@ -409,6 +446,8 @@ Keyword-only arguments:
 Returns
 [DeleteInvitationsResponseTypeDef](./type_defs.md#deleteinvitationsresponsetypedef).
 
+<a id="delete_member"></a>
+
 ### delete_member
 
 Deletes the association between an Amazon Macie administrator account and an
@@ -427,6 +466,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_buckets"></a>
 
 ### describe_buckets
 
@@ -453,6 +494,8 @@ Keyword-only arguments:
 Returns
 [DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef).
 
+<a id="describe_classification_job"></a>
+
 ### describe_classification_job
 
 Retrieves the status and settings for a classification job.
@@ -473,6 +516,8 @@ Keyword-only arguments:
 Returns
 [DescribeClassificationJobResponseTypeDef](./type_defs.md#describeclassificationjobresponsetypedef).
 
+<a id="describe_organization_configuration"></a>
+
 ### describe_organization_configuration
 
 Retrieves the Amazon Macie configuration settings for an organization in
@@ -487,6 +532,8 @@ Boto3 documentation:
 Returns
 [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
+<a id="disable_macie"></a>
+
 ### disable_macie
 
 Disables Amazon Macie and deletes all settings and resources for a Macie
@@ -498,6 +545,8 @@ Boto3 documentation:
 [Macie2.Client.disable_macie](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disable_macie)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disable_organization_admin_account"></a>
 
 ### disable_organization_admin_account
 
@@ -519,6 +568,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_from_administrator_account"></a>
+
 ### disassociate_from_administrator_account
 
 Disassociates a member account from its Amazon Macie administrator account.
@@ -530,6 +581,8 @@ Boto3 documentation:
 [Macie2.Client.disassociate_from_administrator_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_administrator_account)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_from_master_account"></a>
 
 ### disassociate_from_master_account
 
@@ -543,6 +596,8 @@ Boto3 documentation:
 [Macie2.Client.disassociate_from_master_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2.Client.disassociate_from_master_account)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_member"></a>
 
 ### disassociate_member
 
@@ -561,6 +616,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="enable_macie"></a>
 
 ### enable_macie
 
@@ -584,6 +641,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="enable_organization_admin_account"></a>
+
 ### enable_organization_admin_account
 
 Designates an account as the delegated Amazon Macie administrator account for
@@ -605,6 +664,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -623,6 +684,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_administrator_account"></a>
+
 ### get_administrator_account
 
 Retrieves information about the Amazon Macie administrator account for an
@@ -635,6 +698,8 @@ Boto3 documentation:
 
 Returns
 [GetAdministratorAccountResponseTypeDef](./type_defs.md#getadministratoraccountresponsetypedef).
+
+<a id="get_bucket_statistics"></a>
 
 ### get_bucket_statistics
 
@@ -656,6 +721,8 @@ Keyword-only arguments:
 Returns
 [GetBucketStatisticsResponseTypeDef](./type_defs.md#getbucketstatisticsresponsetypedef).
 
+<a id="get_classification_export_configuration"></a>
+
 ### get_classification_export_configuration
 
 Retrieves the configuration settings for storing data classification results.
@@ -668,6 +735,8 @@ Boto3 documentation:
 
 Returns
 [GetClassificationExportConfigurationResponseTypeDef](./type_defs.md#getclassificationexportconfigurationresponsetypedef).
+
+<a id="get_custom_data_identifier"></a>
 
 ### get_custom_data_identifier
 
@@ -688,6 +757,8 @@ Keyword-only arguments:
 
 Returns
 [GetCustomDataIdentifierResponseTypeDef](./type_defs.md#getcustomdataidentifierresponsetypedef).
+
+<a id="get_finding_statistics"></a>
 
 ### get_finding_statistics
 
@@ -713,6 +784,8 @@ Keyword-only arguments:
 Returns
 [GetFindingStatisticsResponseTypeDef](./type_defs.md#getfindingstatisticsresponsetypedef).
 
+<a id="get_findings"></a>
+
 ### get_findings
 
 Retrieves the details of one or more findings.
@@ -733,6 +806,8 @@ Keyword-only arguments:
 Returns
 [GetFindingsResponseTypeDef](./type_defs.md#getfindingsresponsetypedef).
 
+<a id="get_findings_filter"></a>
+
 ### get_findings_filter
 
 Retrieves the criteria and other settings for a findings filter.
@@ -752,6 +827,8 @@ Keyword-only arguments:
 Returns
 [GetFindingsFilterResponseTypeDef](./type_defs.md#getfindingsfilterresponsetypedef).
 
+<a id="get_findings_publication_configuration"></a>
+
 ### get_findings_publication_configuration
 
 Retrieves the configuration settings for publishing findings to Security Hub.
@@ -764,6 +841,8 @@ Boto3 documentation:
 
 Returns
 [GetFindingsPublicationConfigurationResponseTypeDef](./type_defs.md#getfindingspublicationconfigurationresponsetypedef).
+
+<a id="get_invitations_count"></a>
 
 ### get_invitations_count
 
@@ -778,6 +857,8 @@ Boto3 documentation:
 Returns
 [GetInvitationsCountResponseTypeDef](./type_defs.md#getinvitationscountresponsetypedef).
 
+<a id="get_macie_session"></a>
+
 ### get_macie_session
 
 Retrieves the current status and configuration settings for an Amazon Macie
@@ -791,6 +872,8 @@ Boto3 documentation:
 Returns
 [GetMacieSessionResponseTypeDef](./type_defs.md#getmaciesessionresponsetypedef).
 
+<a id="get_master_account"></a>
+
 ### get_master_account
 
 (Deprecated) Retrieves information about the Amazon Macie administrator account
@@ -803,6 +886,8 @@ Boto3 documentation:
 
 Returns
 [GetMasterAccountResponseTypeDef](./type_defs.md#getmasteraccountresponsetypedef).
+
+<a id="get_member"></a>
 
 ### get_member
 
@@ -822,6 +907,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
+
+<a id="get_usage_statistics"></a>
 
 ### get_usage_statistics
 
@@ -848,6 +935,8 @@ Keyword-only arguments:
 Returns
 [GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef).
 
+<a id="get_usage_totals"></a>
+
 ### get_usage_totals
 
 Retrieves (queries) aggregated usage data for an account.
@@ -866,6 +955,8 @@ Keyword-only arguments:
 
 Returns
 [GetUsageTotalsResponseTypeDef](./type_defs.md#getusagetotalsresponsetypedef).
+
+<a id="list_classification_jobs"></a>
 
 ### list_classification_jobs
 
@@ -891,6 +982,8 @@ Keyword-only arguments:
 Returns
 [ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef).
 
+<a id="list_custom_data_identifiers"></a>
+
 ### list_custom_data_identifiers
 
 Retrieves a subset of information about all the custom data identifiers for an
@@ -912,6 +1005,8 @@ Keyword-only arguments:
 
 Returns
 [ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef).
+
+<a id="list_findings"></a>
 
 ### list_findings
 
@@ -936,6 +1031,8 @@ Keyword-only arguments:
 Returns
 [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
+<a id="list_findings_filters"></a>
+
 ### list_findings_filters
 
 Retrieves a subset of information about all the findings filters for an
@@ -956,6 +1053,8 @@ Keyword-only arguments:
 
 Returns
 [ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef).
+
+<a id="list_invitations"></a>
 
 ### list_invitations
 
@@ -978,6 +1077,8 @@ Keyword-only arguments:
 Returns
 [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
+<a id="list_managed_data_identifiers"></a>
+
 ### list_managed_data_identifiers
 
 Retrieves information about all the managed data identifiers that Amazon Macie
@@ -998,6 +1099,8 @@ Keyword-only arguments:
 
 Returns
 [ListManagedDataIdentifiersResponseTypeDef](./type_defs.md#listmanageddataidentifiersresponsetypedef).
+
+<a id="list_members"></a>
 
 ### list_members
 
@@ -1021,6 +1124,8 @@ Keyword-only arguments:
 Returns
 [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
+<a id="list_organization_admin_accounts"></a>
+
 ### list_organization_admin_accounts
 
 Retrieves information about the delegated Amazon Macie administrator account
@@ -1043,6 +1148,8 @@ Keyword-only arguments:
 Returns
 [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the tags (keys and values) that are associated with a classification
@@ -1062,6 +1169,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_classification_export_configuration"></a>
 
 ### put_classification_export_configuration
 
@@ -1086,6 +1195,8 @@ Keyword-only arguments:
 Returns
 [PutClassificationExportConfigurationResponseTypeDef](./type_defs.md#putclassificationexportconfigurationresponsetypedef).
 
+<a id="put_findings_publication_configuration"></a>
+
 ### put_findings_publication_configuration
 
 Updates the configuration settings for publishing findings to Security Hub.
@@ -1106,6 +1217,8 @@ Keyword-only arguments:
   [SecurityHubConfigurationTypeDef](./type_defs.md#securityhubconfigurationtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="search_resources"></a>
 
 ### search_resources
 
@@ -1132,6 +1245,8 @@ Keyword-only arguments:
 Returns
 [SearchResourcesResponseTypeDef](./type_defs.md#searchresourcesresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or updates one or more tags (keys and values) that are associated with a
@@ -1151,6 +1266,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="test_custom_data_identifier"></a>
 
 ### test_custom_data_identifier
 
@@ -1176,6 +1293,8 @@ Keyword-only arguments:
 Returns
 [TestCustomDataIdentifierResponseTypeDef](./type_defs.md#testcustomdataidentifierresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags (keys and values) from a classification job, custom
@@ -1196,6 +1315,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_classification_job"></a>
+
 ### update_classification_job
 
 Changes the status of a classification job.
@@ -1214,6 +1335,8 @@ Keyword-only arguments:
 - `jobStatus`: [JobStatusType](./literals.md#jobstatustype) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_findings_filter"></a>
 
 ### update_findings_filter
 
@@ -1241,6 +1364,8 @@ Keyword-only arguments:
 Returns
 [UpdateFindingsFilterResponseTypeDef](./type_defs.md#updatefindingsfilterresponsetypedef).
 
+<a id="update_macie_session"></a>
+
 ### update_macie_session
 
 Suspends or re-enables Amazon Macie, or updates the configuration settings for
@@ -1262,6 +1387,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_member_session"></a>
+
 ### update_member_session
 
 Enables an Amazon Macie administrator to suspend or re-enable Macie for a
@@ -1282,6 +1409,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_organization_configuration"></a>
+
 ### update_organization_configuration
 
 Updates the Amazon Macie configuration settings for an organization in
@@ -1301,6 +1430,8 @@ Keyword-only arguments:
 - `autoEnable`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

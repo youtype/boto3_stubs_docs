@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-dlm-module"></a>
+
 # Literals for boto3 DLM module
 
 > [Index](..) > [DLM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DLM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dlm.html#DLM)
 type annotations stubs module
-[mypy_boto3_dlm](https://pypi.org/project/mypy-boto3-dlm/).
+[mypy-boto3-dlm](https://pypi.org/project/mypy-boto3-dlm/).
 
 - [Literals for boto3 DLM module](#literals-for-boto3-dlm-module)
   - [EventSourceValuesType](#eventsourcevaluestype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [SettablePolicyStateValuesType](#settablepolicystatevaluestype)
   - [ServiceName](#servicename)
 
+<a id="eventsourcevaluestype"></a>
+
 ## EventSourceValuesType
 
 ```python
@@ -30,6 +34,8 @@ Values:
 
 - `MANAGED_CWE`
 
+<a id="eventtypevaluestype"></a>
+
 ## EventTypeValuesType
 
 ```python
@@ -39,6 +45,8 @@ from mypy_boto3_dlm.literals import EventTypeValuesType
 Values:
 
 - `shareSnapshot`
+
+<a id="gettablepolicystatevaluestype"></a>
 
 ## GettablePolicyStateValuesType
 
@@ -52,6 +60,8 @@ Values:
 - `ENABLED`
 - `ERROR`
 
+<a id="intervalunitvaluestype"></a>
+
 ## IntervalUnitValuesType
 
 ```python
@@ -61,6 +71,8 @@ from mypy_boto3_dlm.literals import IntervalUnitValuesType
 Values:
 
 - `HOURS`
+
+<a id="locationvaluestype"></a>
 
 ## LocationValuesType
 
@@ -72,6 +84,8 @@ Values:
 
 - `CLOUD`
 - `OUTPOST_LOCAL`
+
+<a id="policytypevaluestype"></a>
 
 ## PolicyTypeValuesType
 
@@ -85,6 +99,8 @@ Values:
 - `EVENT_BASED_POLICY`
 - `IMAGE_MANAGEMENT`
 
+<a id="resourcelocationvaluestype"></a>
+
 ## ResourceLocationValuesType
 
 ```python
@@ -96,6 +112,8 @@ Values:
 - `CLOUD`
 - `OUTPOST`
 
+<a id="resourcetypevaluestype"></a>
+
 ## ResourceTypeValuesType
 
 ```python
@@ -106,6 +124,8 @@ Values:
 
 - `INSTANCE`
 - `VOLUME`
+
+<a id="retentionintervalunitvaluestype"></a>
 
 ## RetentionIntervalUnitValuesType
 
@@ -120,6 +140,8 @@ Values:
 - `WEEKS`
 - `YEARS`
 
+<a id="settablepolicystatevaluestype"></a>
+
 ## SettablePolicyStateValuesType
 
 ```python
@@ -130,6 +152,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

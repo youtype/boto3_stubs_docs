@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-iotthingsgraph-module"></a>
+
 # Paginators for boto3 IoTThingsGraph module
 
 > [Index](..) > [IoTThingsGraph](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTThingsGraph](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotthingsgraph.html#IoTThingsGraph)
 type annotations stubs module
-[mypy_boto3_iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
+[mypy-boto3-iotthingsgraph](https://pypi.org/project/mypy-boto3-iotthingsgraph/).
 
 - [Paginators for boto3 IoTThingsGraph module](#paginators-for-boto3-iotthingsgraph-module)
   - [GetFlowTemplateRevisionsPaginator](#getflowtemplaterevisionspaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [SearchSystemTemplatesPaginator](#searchsystemtemplatespaginator)
   - [SearchThingsPaginator](#searchthingspaginator)
 
+<a id="getflowtemplaterevisionspaginator"></a>
+
 ## GetFlowTemplateRevisionsPaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import GetFlowTemplateRevisionsPaginator
 
 def get_get_flow_template_revisions_paginator() -> GetFlowTemplateRevisionsPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("get_flow_template_revisions")
+    return Session().client("iotthingsgraph").get_paginator("get_flow_template_revisions")
 ```
 
 Boto3 documentation:
@@ -45,6 +51,8 @@ Arguments for `GetFlowTemplateRevisionsPaginator.paginate` method:
 `GetFlowTemplateRevisionsPaginator.paginate` returns
 `_PageIterator`\[[GetFlowTemplateRevisionsResponseTypeDef](./type_defs.md#getflowtemplaterevisionsresponsetypedef)\].
 
+<a id="getsystemtemplaterevisionspaginator"></a>
+
 ## GetSystemTemplateRevisionsPaginator
 
 Type annotations for
@@ -53,10 +61,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import GetSystemTemplateRevisionsPaginator
 
 def get_get_system_template_revisions_paginator() -> GetSystemTemplateRevisionsPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("get_system_template_revisions")
+    return Session().client("iotthingsgraph").get_paginator("get_system_template_revisions")
 ```
 
 Boto3 documentation:
@@ -71,6 +81,8 @@ Arguments for `GetSystemTemplateRevisionsPaginator.paginate` method:
 `GetSystemTemplateRevisionsPaginator.paginate` returns
 `_PageIterator`\[[GetSystemTemplateRevisionsResponseTypeDef](./type_defs.md#getsystemtemplaterevisionsresponsetypedef)\].
 
+<a id="listflowexecutionmessagespaginator"></a>
+
 ## ListFlowExecutionMessagesPaginator
 
 Type annotations for
@@ -79,10 +91,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import ListFlowExecutionMessagesPaginator
 
 def get_list_flow_execution_messages_paginator() -> ListFlowExecutionMessagesPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("list_flow_execution_messages")
+    return Session().client("iotthingsgraph").get_paginator("list_flow_execution_messages")
 ```
 
 Boto3 documentation:
@@ -97,6 +111,8 @@ Arguments for `ListFlowExecutionMessagesPaginator.paginate` method:
 `ListFlowExecutionMessagesPaginator.paginate` returns
 `_PageIterator`\[[ListFlowExecutionMessagesResponseTypeDef](./type_defs.md#listflowexecutionmessagesresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -105,10 +121,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("iotthingsgraph").get_paginator("list_tags_for_resource")
+    return Session().client("iotthingsgraph").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -123,6 +141,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="searchentitiespaginator"></a>
+
 ## SearchEntitiesPaginator
 
 Type annotations for
@@ -131,10 +151,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import SearchEntitiesPaginator
 
 def get_search_entities_paginator() -> SearchEntitiesPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("search_entities")
+    return Session().client("iotthingsgraph").get_paginator("search_entities")
 ```
 
 Boto3 documentation:
@@ -153,6 +175,8 @@ Arguments for `SearchEntitiesPaginator.paginate` method:
 `SearchEntitiesPaginator.paginate` returns
 `_PageIterator`\[[SearchEntitiesResponseTypeDef](./type_defs.md#searchentitiesresponsetypedef)\].
 
+<a id="searchflowexecutionspaginator"></a>
+
 ## SearchFlowExecutionsPaginator
 
 Type annotations for
@@ -161,10 +185,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import SearchFlowExecutionsPaginator
 
 def get_search_flow_executions_paginator() -> SearchFlowExecutionsPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("search_flow_executions")
+    return Session().client("iotthingsgraph").get_paginator("search_flow_executions")
 ```
 
 Boto3 documentation:
@@ -182,6 +208,8 @@ Arguments for `SearchFlowExecutionsPaginator.paginate` method:
 `SearchFlowExecutionsPaginator.paginate` returns
 `_PageIterator`\[[SearchFlowExecutionsResponseTypeDef](./type_defs.md#searchflowexecutionsresponsetypedef)\].
 
+<a id="searchflowtemplatespaginator"></a>
+
 ## SearchFlowTemplatesPaginator
 
 Type annotations for
@@ -190,10 +218,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import SearchFlowTemplatesPaginator
 
 def get_search_flow_templates_paginator() -> SearchFlowTemplatesPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("search_flow_templates")
+    return Session().client("iotthingsgraph").get_paginator("search_flow_templates")
 ```
 
 Boto3 documentation:
@@ -209,6 +239,8 @@ Arguments for `SearchFlowTemplatesPaginator.paginate` method:
 `SearchFlowTemplatesPaginator.paginate` returns
 `_PageIterator`\[[SearchFlowTemplatesResponseTypeDef](./type_defs.md#searchflowtemplatesresponsetypedef)\].
 
+<a id="searchsysteminstancespaginator"></a>
+
 ## SearchSystemInstancesPaginator
 
 Type annotations for
@@ -217,10 +249,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import SearchSystemInstancesPaginator
 
 def get_search_system_instances_paginator() -> SearchSystemInstancesPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("search_system_instances")
+    return Session().client("iotthingsgraph").get_paginator("search_system_instances")
 ```
 
 Boto3 documentation:
@@ -236,6 +270,8 @@ Arguments for `SearchSystemInstancesPaginator.paginate` method:
 `SearchSystemInstancesPaginator.paginate` returns
 `_PageIterator`\[[SearchSystemInstancesResponseTypeDef](./type_defs.md#searchsysteminstancesresponsetypedef)\].
 
+<a id="searchsystemtemplatespaginator"></a>
+
 ## SearchSystemTemplatesPaginator
 
 Type annotations for
@@ -244,10 +280,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import SearchSystemTemplatesPaginator
 
 def get_search_system_templates_paginator() -> SearchSystemTemplatesPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("search_system_templates")
+    return Session().client("iotthingsgraph").get_paginator("search_system_templates")
 ```
 
 Boto3 documentation:
@@ -263,6 +301,8 @@ Arguments for `SearchSystemTemplatesPaginator.paginate` method:
 `SearchSystemTemplatesPaginator.paginate` returns
 `_PageIterator`\[[SearchSystemTemplatesResponseTypeDef](./type_defs.md#searchsystemtemplatesresponsetypedef)\].
 
+<a id="searchthingspaginator"></a>
+
 ## SearchThingsPaginator
 
 Type annotations for
@@ -271,10 +311,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotthingsgraph.paginator import SearchThingsPaginator
 
 def get_search_things_paginator() -> SearchThingsPaginator:
-    return boto3.client("iotthingsgraph").get_paginator("search_things")
+    return Session().client("iotthingsgraph").get_paginator("search_things")
 ```
 
 Boto3 documentation:

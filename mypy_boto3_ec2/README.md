@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ec2-module"></a>
+
 # Type annotations for boto3 EC2 module
 
 > [Index](..) > EC2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
 type annotations stubs module
-[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ec2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ec2]'
+
+# standalone installation
 pip install mypy-boto3-ec2
 ```
 
@@ -23,6 +33,8 @@ pip install mypy-boto3-ec2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ec2client"></a>
+
 ## EC2Client
 
 Type annotations for `boto3.client("ec2")` as [EC2Client](./client.md)
@@ -32,6 +44,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ec2.client import EC2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -562,11 +576,15 @@ from mypy_boto3_ec2.client import EC2Client
 - [update_security_group_rule_descriptions_ingress](./client.md#update_security_group_rule_descriptions_ingress)
 - [withdraw_byoip_cidr](./client.md#withdraw_byoip_cidr)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 EC2Client [exceptions](./client.md#exceptions)
 
 - ClientError
+
+<a id="ec2serviceresource"></a>
 
 ## EC2ServiceResource
 
@@ -578,6 +596,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ec2.service_resource import EC2ServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -606,6 +626,8 @@ from mypy_boto3_ec2.service_resource import ServiceResourceClassicAddressesColle
 - [ServiceResourceVpcAddressesCollection](./service_resource.md#ec2serviceresourcevpc_addresses)
 - [ServiceResourceVpcPeeringConnectionsCollection](./service_resource.md#ec2serviceresourcevpc_peering_connections)
 - [ServiceResourceVpcsCollection](./service_resource.md#ec2serviceresourcevpcs)
+
+<a id="resources"></a>
 
 ### Resources
 
@@ -640,6 +662,8 @@ from mypy_boto3_ec2.service_resource import ClassicAddress, ...
 - [VpcPeeringConnection](./service_resource.md#vpcpeeringconnection)
 - [VpcAddress](./service_resource.md#vpcaddress)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -648,7 +672,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.paginators import DescribeAddressesAttributePaginator, ...
+from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator, ...
 ```
 
 - [DescribeAddressesAttributePaginator](./paginators.md#describeaddressesattributepaginator)
@@ -772,6 +796,8 @@ from mypy_boto3_ec2.paginators import DescribeAddressesAttributePaginator, ...
 - [SearchLocalGatewayRoutesPaginator](./paginators.md#searchlocalgatewayroutespaginator)
 - [SearchTransitGatewayMulticastGroupsPaginator](./paginators.md#searchtransitgatewaymulticastgroupspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -780,7 +806,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2.waiters import BundleTaskCompleteWaiter, ...
+from mypy_boto3_ec2.waiter import BundleTaskCompleteWaiter, ...
 ```
 
 - [BundleTaskCompleteWaiter](./waiters.md#bundletaskcompletewaiter)
@@ -816,6 +842,8 @@ from mypy_boto3_ec2.waiters import BundleTaskCompleteWaiter, ...
 - [VpcPeeringConnectionExistsWaiter](./waiters.md#vpcpeeringconnectionexistswaiter)
 - [VpnConnectionAvailableWaiter](./waiters.md#vpnconnectionavailablewaiter)
 - [VpnConnectionDeletedWaiter](./waiters.md#vpnconnectiondeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -1253,6 +1281,8 @@ from mypy_boto3_ec2.literals import AcceleratorManufacturerType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

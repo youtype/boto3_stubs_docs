@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotsitewise-module"></a>
+
 # Literals for boto3 IoTSiteWise module
 
 > [Index](..) > [IoTSiteWise](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTSiteWise](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotsitewise.html#IoTSiteWise)
 type annotations stubs module
-[mypy_boto3_iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
+[mypy-boto3-iotsitewise](https://pypi.org/project/mypy-boto3-iotsitewise/).
 
 - [Literals for boto3 IoTSiteWise module](#literals-for-boto3-iotsitewise-module)
   - [AggregateTypeType](#aggregatetypetype)
@@ -63,6 +65,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="aggregatetypetype"></a>
+
 ## AggregateTypeType
 
 ```python
@@ -78,6 +82,8 @@ Values:
 - `STANDARD_DEVIATION`
 - `SUM`
 
+<a id="assetactivewaitername"></a>
+
 ## AssetActiveWaiterName
 
 ```python
@@ -87,6 +93,8 @@ from mypy_boto3_iotsitewise.literals import AssetActiveWaiterName
 Values:
 
 - `asset_active`
+
+<a id="asseterrorcodetype"></a>
 
 ## AssetErrorCodeType
 
@@ -98,6 +106,8 @@ Values:
 
 - `INTERNAL_FAILURE`
 
+<a id="assetmodelactivewaitername"></a>
+
 ## AssetModelActiveWaiterName
 
 ```python
@@ -108,6 +118,8 @@ Values:
 
 - `asset_model_active`
 
+<a id="assetmodelnotexistswaitername"></a>
+
 ## AssetModelNotExistsWaiterName
 
 ```python
@@ -117,6 +129,8 @@ from mypy_boto3_iotsitewise.literals import AssetModelNotExistsWaiterName
 Values:
 
 - `asset_model_not_exists`
+
+<a id="assetmodelstatetype"></a>
 
 ## AssetModelStateType
 
@@ -133,6 +147,8 @@ Values:
 - `PROPAGATING`
 - `UPDATING`
 
+<a id="assetnotexistswaitername"></a>
+
 ## AssetNotExistsWaiterName
 
 ```python
@@ -143,6 +159,8 @@ Values:
 
 - `asset_not_exists`
 
+<a id="assetrelationshiptypetype"></a>
+
 ## AssetRelationshipTypeType
 
 ```python
@@ -152,6 +170,8 @@ from mypy_boto3_iotsitewise.literals import AssetRelationshipTypeType
 Values:
 
 - `HIERARCHY`
+
+<a id="assetstatetype"></a>
 
 ## AssetStateType
 
@@ -167,6 +187,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="authmodetype"></a>
+
 ## AuthModeType
 
 ```python
@@ -177,6 +199,8 @@ Values:
 
 - `IAM`
 - `SSO`
+
+<a id="batchputassetpropertyvalueerrorcodetype"></a>
 
 ## BatchPutAssetPropertyValueErrorCodeType
 
@@ -196,6 +220,8 @@ Values:
 - `ThrottlingException`
 - `TimestampOutOfRangeException`
 
+<a id="capabilitysyncstatustype"></a>
+
 ## CapabilitySyncStatusType
 
 ```python
@@ -209,6 +235,8 @@ Values:
 - `SYNC_FAILED`
 - `UNKNOWN`
 
+<a id="computelocationtype"></a>
+
 ## ComputeLocationType
 
 ```python
@@ -219,6 +247,8 @@ Values:
 
 - `CLOUD`
 - `EDGE`
+
+<a id="configurationstatetype"></a>
 
 ## ConfigurationStateType
 
@@ -232,6 +262,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
+<a id="detailederrorcodetype"></a>
+
 ## DetailedErrorCodeType
 
 ```python
@@ -242,6 +274,8 @@ Values:
 
 - `INCOMPATIBLE_COMPUTE_LOCATION`
 - `INCOMPATIBLE_FORWARDING_CONFIGURATION`
+
+<a id="disassociateddatastoragestatetype"></a>
 
 ## DisassociatedDataStorageStateType
 
@@ -254,6 +288,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="encryptiontypetype"></a>
+
 ## EncryptionTypeType
 
 ```python
@@ -264,6 +300,8 @@ Values:
 
 - `KMS_BASED_ENCRYPTION`
 - `SITEWISE_DEFAULT_ENCRYPTION`
+
+<a id="errorcodetype"></a>
 
 ## ErrorCodeType
 
@@ -276,6 +314,8 @@ Values:
 - `INTERNAL_FAILURE`
 - `VALIDATION_ERROR`
 
+<a id="forwardingconfigstatetype"></a>
+
 ## ForwardingConfigStateType
 
 ```python
@@ -287,6 +327,8 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="getassetpropertyaggregatespaginatorname"></a>
+
 ## GetAssetPropertyAggregatesPaginatorName
 
 ```python
@@ -296,6 +338,8 @@ from mypy_boto3_iotsitewise.literals import GetAssetPropertyAggregatesPaginatorN
 Values:
 
 - `get_asset_property_aggregates`
+
+<a id="getassetpropertyvaluehistorypaginatorname"></a>
 
 ## GetAssetPropertyValueHistoryPaginatorName
 
@@ -307,6 +351,8 @@ Values:
 
 - `get_asset_property_value_history`
 
+<a id="getinterpolatedassetpropertyvaluespaginatorname"></a>
+
 ## GetInterpolatedAssetPropertyValuesPaginatorName
 
 ```python
@@ -316,6 +362,8 @@ from mypy_boto3_iotsitewise.literals import GetInterpolatedAssetPropertyValuesPa
 Values:
 
 - `get_interpolated_asset_property_values`
+
+<a id="identitytypetype"></a>
 
 ## IdentityTypeType
 
@@ -329,6 +377,8 @@ Values:
 - `IAM`
 - `USER`
 
+<a id="imagefiletypetype"></a>
+
 ## ImageFileTypeType
 
 ```python
@@ -338,6 +388,8 @@ from mypy_boto3_iotsitewise.literals import ImageFileTypeType
 Values:
 
 - `PNG`
+
+<a id="listaccesspoliciespaginatorname"></a>
 
 ## ListAccessPoliciesPaginatorName
 
@@ -349,6 +401,8 @@ Values:
 
 - `list_access_policies`
 
+<a id="listassetmodelspaginatorname"></a>
+
 ## ListAssetModelsPaginatorName
 
 ```python
@@ -359,6 +413,8 @@ Values:
 
 - `list_asset_models`
 
+<a id="listassetrelationshipspaginatorname"></a>
+
 ## ListAssetRelationshipsPaginatorName
 
 ```python
@@ -368,6 +424,8 @@ from mypy_boto3_iotsitewise.literals import ListAssetRelationshipsPaginatorName
 Values:
 
 - `list_asset_relationships`
+
+<a id="listassetsfiltertype"></a>
 
 ## ListAssetsFilterType
 
@@ -380,6 +438,8 @@ Values:
 - `ALL`
 - `TOP_LEVEL`
 
+<a id="listassetspaginatorname"></a>
+
 ## ListAssetsPaginatorName
 
 ```python
@@ -389,6 +449,8 @@ from mypy_boto3_iotsitewise.literals import ListAssetsPaginatorName
 Values:
 
 - `list_assets`
+
+<a id="listassociatedassetspaginatorname"></a>
 
 ## ListAssociatedAssetsPaginatorName
 
@@ -400,6 +462,8 @@ Values:
 
 - `list_associated_assets`
 
+<a id="listdashboardspaginatorname"></a>
+
 ## ListDashboardsPaginatorName
 
 ```python
@@ -409,6 +473,8 @@ from mypy_boto3_iotsitewise.literals import ListDashboardsPaginatorName
 Values:
 
 - `list_dashboards`
+
+<a id="listgatewayspaginatorname"></a>
 
 ## ListGatewaysPaginatorName
 
@@ -420,6 +486,8 @@ Values:
 
 - `list_gateways`
 
+<a id="listportalspaginatorname"></a>
+
 ## ListPortalsPaginatorName
 
 ```python
@@ -429,6 +497,8 @@ from mypy_boto3_iotsitewise.literals import ListPortalsPaginatorName
 Values:
 
 - `list_portals`
+
+<a id="listprojectassetspaginatorname"></a>
 
 ## ListProjectAssetsPaginatorName
 
@@ -440,6 +510,8 @@ Values:
 
 - `list_project_assets`
 
+<a id="listprojectspaginatorname"></a>
+
 ## ListProjectsPaginatorName
 
 ```python
@@ -449,6 +521,8 @@ from mypy_boto3_iotsitewise.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="listtimeseriespaginatorname"></a>
 
 ## ListTimeSeriesPaginatorName
 
@@ -460,6 +534,8 @@ Values:
 
 - `list_time_series`
 
+<a id="listtimeseriestypetype"></a>
+
 ## ListTimeSeriesTypeType
 
 ```python
@@ -470,6 +546,8 @@ Values:
 
 - `ASSOCIATED`
 - `DISASSOCIATED`
+
+<a id="loggingleveltype"></a>
 
 ## LoggingLevelType
 
@@ -483,6 +561,8 @@ Values:
 - `INFO`
 - `OFF`
 
+<a id="monitorerrorcodetype"></a>
+
 ## MonitorErrorCodeType
 
 ```python
@@ -495,6 +575,8 @@ Values:
 - `LIMIT_EXCEEDED`
 - `VALIDATION_ERROR`
 
+<a id="permissiontype"></a>
+
 ## PermissionType
 
 ```python
@@ -506,6 +588,8 @@ Values:
 - `ADMINISTRATOR`
 - `VIEWER`
 
+<a id="portalactivewaitername"></a>
+
 ## PortalActiveWaiterName
 
 ```python
@@ -516,6 +600,8 @@ Values:
 
 - `portal_active`
 
+<a id="portalnotexistswaitername"></a>
+
 ## PortalNotExistsWaiterName
 
 ```python
@@ -525,6 +611,8 @@ from mypy_boto3_iotsitewise.literals import PortalNotExistsWaiterName
 Values:
 
 - `portal_not_exists`
+
+<a id="portalstatetype"></a>
 
 ## PortalStateType
 
@@ -540,6 +628,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="propertydatatypetype"></a>
+
 ## PropertyDataTypeType
 
 ```python
@@ -554,6 +644,8 @@ Values:
 - `STRING`
 - `STRUCT`
 
+<a id="propertynotificationstatetype"></a>
+
 ## PropertyNotificationStateType
 
 ```python
@@ -564,6 +656,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="qualitytype"></a>
 
 ## QualityType
 
@@ -577,6 +671,8 @@ Values:
 - `GOOD`
 - `UNCERTAIN`
 
+<a id="resourcetypetype"></a>
+
 ## ResourceTypeType
 
 ```python
@@ -587,6 +683,8 @@ Values:
 
 - `PORTAL`
 - `PROJECT`
+
+<a id="storagetypetype"></a>
 
 ## StorageTypeType
 
@@ -599,6 +697,8 @@ Values:
 - `MULTI_LAYER_STORAGE`
 - `SITEWISE_DEFAULT_STORAGE`
 
+<a id="timeorderingtype"></a>
+
 ## TimeOrderingType
 
 ```python
@@ -609,6 +709,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="traversaldirectiontype"></a>
 
 ## TraversalDirectionType
 
@@ -621,6 +723,8 @@ Values:
 - `CHILD`
 - `PARENT`
 
+<a id="traversaltypetype"></a>
+
 ## TraversalTypeType
 
 ```python
@@ -630,6 +734,8 @@ from mypy_boto3_iotsitewise.literals import TraversalTypeType
 Values:
 
 - `PATH_TO_ROOT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -939,6 +1045,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -961,6 +1069,8 @@ Values:
 - `list_project_assets`
 - `list_projects`
 - `list_time_series`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

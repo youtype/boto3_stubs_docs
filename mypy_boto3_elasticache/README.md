@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-elasticache-module"></a>
+
 # Type annotations for boto3 ElastiCache module
 
 > [Index](..) > ElastiCache
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
-[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[elasticache]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[elasticache]'
+
+# standalone installation
 pip install mypy-boto3-elasticache
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-elasticache
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="elasticacheclient"></a>
+
 ## ElastiCacheClient
 
 Type annotations for `boto3.client("elasticache")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_elasticache.client import ElastiCacheClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -104,6 +118,8 @@ from mypy_boto3_elasticache.client import ElastiCacheClient
 - [start_migration](./client.md#start_migration)
 - [test_failover](./client.md#test_failover)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ElastiCacheClient [exceptions](./client.md#exceptions)
@@ -177,6 +193,8 @@ ElastiCacheClient [exceptions](./client.md#exceptions)
 - UserNotFoundFault
 - UserQuotaExceededFault
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -185,7 +203,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticache.paginators import DescribeCacheClustersPaginator, ...
+from mypy_boto3_elasticache.paginator import DescribeCacheClustersPaginator, ...
 ```
 
 - [DescribeCacheClustersPaginator](./paginators.md#describecacheclusterspaginator)
@@ -206,6 +224,8 @@ from mypy_boto3_elasticache.paginators import DescribeCacheClustersPaginator, ..
 - [DescribeUserGroupsPaginator](./paginators.md#describeusergroupspaginator)
 - [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -214,13 +234,15 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_elasticache.waiters import CacheClusterAvailableWaiter, ...
+from mypy_boto3_elasticache.waiter import CacheClusterAvailableWaiter, ...
 ```
 
 - [CacheClusterAvailableWaiter](./waiters.md#cacheclusteravailablewaiter)
 - [CacheClusterDeletedWaiter](./waiters.md#cacheclusterdeletedwaiter)
 - [ReplicationGroupAvailableWaiter](./waiters.md#replicationgroupavailablewaiter)
 - [ReplicationGroupDeletedWaiter](./waiters.md#replicationgroupdeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -278,6 +300,8 @@ from mypy_boto3_elasticache.literals import AZModeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

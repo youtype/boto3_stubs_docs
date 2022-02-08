@@ -1,3 +1,5 @@
+<a id="groundstationclient-for-boto3-groundstation-module"></a>
+
 # GroundStationClient for boto3 GroundStation module
 
 > [Index](..) > [GroundStation](.) > GroundStationClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
-[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [GroundStationClient for boto3 GroundStation module](#groundstationclient-for-boto3-groundstation-module)
   - [GroundStationClient](#groundstationclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [update_mission_profile](#update_mission_profile)
     - [get_paginator](#get_paginator)
 
+<a id="groundstationclient"></a>
+
 ## GroundStationClient
 
 Type annotations for `boto3.client("groundstation")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("groundstation")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_groundstation.client import GroundStationClient
 
 def get_groundstation_client() -> GroundStationClient:
-    return boto3.client("groundstation")
+    return Session().client("groundstation")
 ```
 
 Boto3 documentation:
 [GroundStation.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -77,7 +84,11 @@ Exceptions:
 - `Exceptions.ResourceLimitExceededException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -89,6 +100,8 @@ Boto3 documentation:
 [GroundStation.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -104,6 +117,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_contact"></a>
 
 ### cancel_contact
 
@@ -122,6 +137,8 @@ Keyword-only arguments:
 - `contactId`: `str` *(required)*
 
 Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
+
+<a id="create_config"></a>
 
 ### create_config
 
@@ -143,6 +160,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\]
 
 Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
+
+<a id="create_dataflow_endpoint_group"></a>
 
 ### create_dataflow_endpoint_group
 
@@ -167,6 +186,8 @@ Keyword-only arguments:
 
 Returns
 [DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
+
+<a id="create_mission_profile"></a>
 
 ### create_mission_profile
 
@@ -194,6 +215,8 @@ Keyword-only arguments:
 Returns
 [MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
+<a id="delete_config"></a>
+
 ### delete_config
 
 Deletes a `Config` .
@@ -215,6 +238,8 @@ Keyword-only arguments:
 
 Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
 
+<a id="delete_dataflow_endpoint_group"></a>
+
 ### delete_dataflow_endpoint_group
 
 Deletes a dataflow endpoint group.
@@ -234,6 +259,8 @@ Keyword-only arguments:
 
 Returns
 [DataflowEndpointGroupIdResponseTypeDef](./type_defs.md#dataflowendpointgroupidresponsetypedef).
+
+<a id="delete_mission_profile"></a>
 
 ### delete_mission_profile
 
@@ -255,6 +282,8 @@ Keyword-only arguments:
 Returns
 [MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
 
+<a id="describe_contact"></a>
+
 ### describe_contact
 
 Describes an existing contact.
@@ -274,6 +303,8 @@ Keyword-only arguments:
 Returns
 [DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -292,6 +323,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_config"></a>
 
 ### get_config
 
@@ -314,6 +347,8 @@ Keyword-only arguments:
 
 Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
+<a id="get_dataflow_endpoint_group"></a>
+
 ### get_dataflow_endpoint_group
 
 Returns the dataflow endpoint group.
@@ -333,6 +368,8 @@ Keyword-only arguments:
 
 Returns
 [GetDataflowEndpointGroupResponseTypeDef](./type_defs.md#getdataflowendpointgroupresponsetypedef).
+
+<a id="get_minute_usage"></a>
 
 ### get_minute_usage
 
@@ -354,6 +391,8 @@ Keyword-only arguments:
 Returns
 [GetMinuteUsageResponseTypeDef](./type_defs.md#getminuteusageresponsetypedef).
 
+<a id="get_mission_profile"></a>
+
 ### get_mission_profile
 
 Returns a mission profile.
@@ -374,6 +413,8 @@ Keyword-only arguments:
 Returns
 [GetMissionProfileResponseTypeDef](./type_defs.md#getmissionprofileresponsetypedef).
 
+<a id="get_satellite"></a>
+
 ### get_satellite
 
 Returns a satellite.
@@ -392,6 +433,8 @@ Keyword-only arguments:
 
 Returns
 [GetSatelliteResponseTypeDef](./type_defs.md#getsatelliteresponsetypedef).
+
+<a id="list_configs"></a>
 
 ### list_configs
 
@@ -412,6 +455,8 @@ Keyword-only arguments:
 
 Returns
 [ListConfigsResponseTypeDef](./type_defs.md#listconfigsresponsetypedef).
+
+<a id="list_contacts"></a>
 
 ### list_contacts
 
@@ -441,6 +486,8 @@ Keyword-only arguments:
 Returns
 [ListContactsResponseTypeDef](./type_defs.md#listcontactsresponsetypedef).
 
+<a id="list_dataflow_endpoint_groups"></a>
+
 ### list_dataflow_endpoint_groups
 
 Returns a list of `DataflowEndpoint` groups.
@@ -461,6 +508,8 @@ Keyword-only arguments:
 
 Returns
 [ListDataflowEndpointGroupsResponseTypeDef](./type_defs.md#listdataflowendpointgroupsresponsetypedef).
+
+<a id="list_ground_stations"></a>
 
 ### list_ground_stations
 
@@ -484,6 +533,8 @@ Keyword-only arguments:
 Returns
 [ListGroundStationsResponseTypeDef](./type_defs.md#listgroundstationsresponsetypedef).
 
+<a id="list_mission_profiles"></a>
+
 ### list_mission_profiles
 
 Returns a list of mission profiles.
@@ -505,6 +556,8 @@ Keyword-only arguments:
 Returns
 [ListMissionProfilesResponseTypeDef](./type_defs.md#listmissionprofilesresponsetypedef).
 
+<a id="list_satellites"></a>
+
 ### list_satellites
 
 Returns a list of satellites.
@@ -525,6 +578,8 @@ Keyword-only arguments:
 Returns
 [ListSatellitesResponseTypeDef](./type_defs.md#listsatellitesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags for a specified resource.
@@ -544,6 +599,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="reserve_contact"></a>
 
 ### reserve_contact
 
@@ -568,6 +625,8 @@ Keyword-only arguments:
 
 Returns [ContactIdResponseTypeDef](./type_defs.md#contactidresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns a tag to a resource.
@@ -587,6 +646,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deassigns a resource tag.
@@ -605,6 +666,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_config"></a>
 
 ### update_config
 
@@ -629,6 +692,8 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 
 Returns [ConfigIdResponseTypeDef](./type_defs.md#configidresponsetypedef).
+
+<a id="update_mission_profile"></a>
 
 ### update_mission_profile
 
@@ -655,6 +720,8 @@ Keyword-only arguments:
 
 Returns
 [MissionProfileIdResponseTypeDef](./type_defs.md#missionprofileidresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

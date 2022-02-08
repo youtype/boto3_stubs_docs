@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mediatailor-module"></a>
+
 # Literals for boto3 MediaTailor module
 
 > [Index](..) > [MediaTailor](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
-[mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+[mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 - [Literals for boto3 MediaTailor module](#literals-for-boto3-mediatailor-module)
   - [AccessTypeType](#accesstypetype)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accesstypetype"></a>
+
 ## AccessTypeType
 
 ```python
@@ -38,6 +42,8 @@ Values:
 
 - `S3_SIGV4`
 - `SECRETS_MANAGER_ACCESS_TOKEN`
+
+<a id="channelstatetype"></a>
 
 ## ChannelStateType
 
@@ -50,6 +56,8 @@ Values:
 - `RUNNING`
 - `STOPPED`
 
+<a id="getchannelschedulepaginatorname"></a>
+
 ## GetChannelSchedulePaginatorName
 
 ```python
@@ -59,6 +67,8 @@ from mypy_boto3_mediatailor.literals import GetChannelSchedulePaginatorName
 Values:
 
 - `get_channel_schedule`
+
+<a id="listalertspaginatorname"></a>
 
 ## ListAlertsPaginatorName
 
@@ -70,6 +80,8 @@ Values:
 
 - `list_alerts`
 
+<a id="listchannelspaginatorname"></a>
+
 ## ListChannelsPaginatorName
 
 ```python
@@ -79,6 +91,8 @@ from mypy_boto3_mediatailor.literals import ListChannelsPaginatorName
 Values:
 
 - `list_channels`
+
+<a id="listplaybackconfigurationspaginatorname"></a>
 
 ## ListPlaybackConfigurationsPaginatorName
 
@@ -90,6 +104,8 @@ Values:
 
 - `list_playback_configurations`
 
+<a id="listprefetchschedulespaginatorname"></a>
+
 ## ListPrefetchSchedulesPaginatorName
 
 ```python
@@ -99,6 +115,8 @@ from mypy_boto3_mediatailor.literals import ListPrefetchSchedulesPaginatorName
 Values:
 
 - `list_prefetch_schedules`
+
+<a id="listsourcelocationspaginatorname"></a>
 
 ## ListSourceLocationsPaginatorName
 
@@ -110,6 +128,8 @@ Values:
 
 - `list_source_locations`
 
+<a id="listvodsourcespaginatorname"></a>
+
 ## ListVodSourcesPaginatorName
 
 ```python
@@ -120,6 +140,8 @@ Values:
 
 - `list_vod_sources`
 
+<a id="messagetypetype"></a>
+
 ## MessageTypeType
 
 ```python
@@ -129,6 +151,8 @@ from mypy_boto3_mediatailor.literals import MessageTypeType
 Values:
 
 - `SPLICE_INSERT`
+
+<a id="modetype"></a>
 
 ## ModeType
 
@@ -141,6 +165,8 @@ Values:
 - `BEHIND_LIVE_EDGE`
 - `OFF`
 
+<a id="operatortype"></a>
+
 ## OperatorType
 
 ```python
@@ -150,6 +176,8 @@ from mypy_boto3_mediatailor.literals import OperatorType
 Values:
 
 - `EQUALS`
+
+<a id="originmanifesttypetype"></a>
 
 ## OriginManifestTypeType
 
@@ -162,6 +190,8 @@ Values:
 - `MULTI_PERIOD`
 - `SINGLE_PERIOD`
 
+<a id="playbackmodetype"></a>
+
 ## PlaybackModeType
 
 ```python
@@ -172,6 +202,8 @@ Values:
 
 - `LINEAR`
 - `LOOP`
+
+<a id="relativepositiontype"></a>
 
 ## RelativePositionType
 
@@ -184,6 +216,8 @@ Values:
 - `AFTER_PROGRAM`
 - `BEFORE_PROGRAM`
 
+<a id="scheduleentrytypetype"></a>
+
 ## ScheduleEntryTypeType
 
 ```python
@@ -195,6 +229,8 @@ Values:
 - `FILLER_SLATE`
 - `PROGRAM`
 
+<a id="typetype"></a>
+
 ## TypeType
 
 ```python
@@ -205,6 +241,8 @@ Values:
 
 - `DASH`
 - `HLS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -513,6 +551,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

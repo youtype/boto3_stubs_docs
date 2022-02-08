@@ -1,3 +1,5 @@
+<a id="mobileclient-for-boto3-mobile-module"></a>
+
 # MobileClient for boto3 Mobile module
 
 > [Index](..) > [Mobile](.) > MobileClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Mobile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile)
 type annotations stubs module
-[mypy_boto3_mobile](https://pypi.org/project/mypy-boto3-mobile/).
+[mypy-boto3-mobile](https://pypi.org/project/mypy-boto3-mobile/).
 
 - [MobileClient for boto3 Mobile module](#mobileclient-for-boto3-mobile-module)
   - [MobileClient](#mobileclient)
@@ -25,6 +27,8 @@ type annotations stubs module
     - [update_project](#update_project)
     - [get_paginator](#get_paginator)
 
+<a id="mobileclient"></a>
+
 ## MobileClient
 
 Type annotations for `boto3.client("mobile")`
@@ -32,14 +36,17 @@ Type annotations for `boto3.client("mobile")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mobile.client import MobileClient
 
 def get_mobile_client() -> MobileClient:
-    return boto3.client("mobile")
+    return Session().client("mobile")
 ```
 
 Boto3 documentation:
 [Mobile.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -77,6 +88,8 @@ Boto3 documentation:
 [Mobile.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mobile.html#Mobile.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_project"></a>
 
 ### create_project
 
@@ -115,6 +130,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectResultTypeDef](./type_defs.md#createprojectresulttypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Delets a project in AWS Mobile Hub.
@@ -133,6 +150,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteProjectResultTypeDef](./type_defs.md#deleteprojectresulttypedef).
+
+<a id="describe_bundle"></a>
 
 ### describe_bundle
 
@@ -153,6 +172,8 @@ Keyword-only arguments:
 Returns
 [DescribeBundleResultTypeDef](./type_defs.md#describebundleresulttypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Gets details about a project in AWS Mobile Hub.
@@ -172,6 +193,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectResultTypeDef](./type_defs.md#describeprojectresulttypedef).
+
+<a id="export_bundle"></a>
 
 ### export_bundle
 
@@ -194,6 +217,8 @@ Keyword-only arguments:
 
 Returns [ExportBundleResultTypeDef](./type_defs.md#exportbundleresulttypedef).
 
+<a id="export_project"></a>
+
 ### export_project
 
 Exports project configuration to a snapshot which can be downloaded and shared.
@@ -213,6 +238,8 @@ Keyword-only arguments:
 Returns
 [ExportProjectResultTypeDef](./type_defs.md#exportprojectresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -230,6 +257,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_bundles"></a>
 
 ### list_bundles
 
@@ -250,6 +279,8 @@ Keyword-only arguments:
 
 Returns [ListBundlesResultTypeDef](./type_defs.md#listbundlesresulttypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Lists projects in AWS Mobile Hub.
@@ -268,6 +299,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef).
+
+<a id="update_project"></a>
 
 ### update_project
 
@@ -288,6 +321,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProjectResultTypeDef](./type_defs.md#updateprojectresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

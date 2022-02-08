@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-datasync-module"></a>
+
 # Paginators for boto3 DataSync module
 
 > [Index](..) > [DataSync](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
 type annotations stubs module
-[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [Paginators for boto3 DataSync module](#paginators-for-boto3-datasync-module)
   - [ListAgentsPaginator](#listagentspaginator)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ListTaskExecutionsPaginator](#listtaskexecutionspaginator)
   - [ListTasksPaginator](#listtaskspaginator)
 
+<a id="listagentspaginator"></a>
+
 ## ListAgentsPaginator
 
 Type annotations for `boto3.client("datasync").get_paginator("list_agents")`.
@@ -21,10 +25,12 @@ Type annotations for `boto3.client("datasync").get_paginator("list_agents")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datasync.paginator import ListAgentsPaginator
 
 def get_list_agents_paginator() -> ListAgentsPaginator:
-    return boto3.client("datasync").get_paginator("list_agents")
+    return Session().client("datasync").get_paginator("list_agents")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListAgentsPaginator.paginate` method:
 `ListAgentsPaginator.paginate` returns
 `_PageIterator`\[[ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef)\].
 
+<a id="listlocationspaginator"></a>
+
 ## ListLocationsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datasync.paginator import ListLocationsPaginator
 
 def get_list_locations_paginator() -> ListLocationsPaginator:
-    return boto3.client("datasync").get_paginator("list_locations")
+    return Session().client("datasync").get_paginator("list_locations")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListLocationsPaginator.paginate` method:
 `ListLocationsPaginator.paginate` returns
 `_PageIterator`\[[ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -73,10 +85,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datasync.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("datasync").get_paginator("list_tags_for_resource")
+    return Session().client("datasync").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -91,6 +105,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="listtaskexecutionspaginator"></a>
+
 ## ListTaskExecutionsPaginator
 
 Type annotations for
@@ -99,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datasync.paginator import ListTaskExecutionsPaginator
 
 def get_list_task_executions_paginator() -> ListTaskExecutionsPaginator:
-    return boto3.client("datasync").get_paginator("list_task_executions")
+    return Session().client("datasync").get_paginator("list_task_executions")
 ```
 
 Boto3 documentation:
@@ -117,6 +135,8 @@ Arguments for `ListTaskExecutionsPaginator.paginate` method:
 `ListTaskExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef)\].
 
+<a id="listtaskspaginator"></a>
+
 ## ListTasksPaginator
 
 Type annotations for `boto3.client("datasync").get_paginator("list_tasks")`.
@@ -124,10 +144,12 @@ Type annotations for `boto3.client("datasync").get_paginator("list_tasks")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_datasync.paginator import ListTasksPaginator
 
 def get_list_tasks_paginator() -> ListTasksPaginator:
-    return boto3.client("datasync").get_paginator("list_tasks")
+    return Session().client("datasync").get_paginator("list_tasks")
 ```
 
 Boto3 documentation:

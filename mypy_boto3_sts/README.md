@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sts-module"></a>
+
 # Type annotations for boto3 STS module
 
 > [Index](..) > STS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [STS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sts.html#STS)
 type annotations stubs module
-[mypy_boto3_sts](https://pypi.org/project/mypy-boto3-sts/).
+[mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sts]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sts]'
+
+# standalone installation
 pip install mypy-boto3-sts
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-sts
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="stsclient"></a>
+
 ## STSClient
 
 Type annotations for `boto3.client("sts")` as [STSClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sts.client import STSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -42,6 +56,8 @@ from mypy_boto3_sts.client import STSClient
 - [get_federation_token](./client.md#get_federation_token)
 - [get_session_token](./client.md#get_session_token)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 STSClient [exceptions](./client.md#exceptions)
@@ -56,6 +72,8 @@ STSClient [exceptions](./client.md#exceptions)
 - PackedPolicyTooLargeException
 - RegionDisabledException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -67,6 +85,8 @@ from mypy_boto3_sts.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

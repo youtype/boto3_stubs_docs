@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-waf-module"></a>
+
 # Literals for boto3 WAF module
 
 > [Index](..) > [WAF](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
 type annotations stubs module
-[mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
+[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 - [Literals for boto3 WAF module](#literals-for-boto3-waf-module)
   - [ChangeActionType](#changeactiontype)
@@ -41,6 +43,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="changeactiontype"></a>
+
 ## ChangeActionType
 
 ```python
@@ -51,6 +55,8 @@ Values:
 
 - `DELETE`
 - `INSERT`
+
+<a id="changetokenstatustype"></a>
 
 ## ChangeTokenStatusType
 
@@ -63,6 +69,8 @@ Values:
 - `INSYNC`
 - `PENDING`
 - `PROVISIONED`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -79,6 +87,8 @@ Values:
 - `LT`
 - `NE`
 
+<a id="geomatchconstrainttypetype"></a>
+
 ## GeoMatchConstraintTypeType
 
 ```python
@@ -88,6 +98,8 @@ from mypy_boto3_waf.literals import GeoMatchConstraintTypeType
 Values:
 
 - `Country`
+
+<a id="geomatchconstraintvaluetype"></a>
 
 ## GeoMatchConstraintValueType
 
@@ -347,6 +359,8 @@ Values:
 - `ZM`
 - `ZW`
 
+<a id="getratebasedrulemanagedkeyspaginatorname"></a>
+
 ## GetRateBasedRuleManagedKeysPaginatorName
 
 ```python
@@ -356,6 +370,8 @@ from mypy_boto3_waf.literals import GetRateBasedRuleManagedKeysPaginatorName
 Values:
 
 - `get_rate_based_rule_managed_keys`
+
+<a id="ipsetdescriptortypetype"></a>
 
 ## IPSetDescriptorTypeType
 
@@ -368,6 +384,8 @@ Values:
 - `IPV4`
 - `IPV6`
 
+<a id="listactivatedrulesinrulegrouppaginatorname"></a>
+
 ## ListActivatedRulesInRuleGroupPaginatorName
 
 ```python
@@ -377,6 +395,8 @@ from mypy_boto3_waf.literals import ListActivatedRulesInRuleGroupPaginatorName
 Values:
 
 - `list_activated_rules_in_rule_group`
+
+<a id="listbytematchsetspaginatorname"></a>
 
 ## ListByteMatchSetsPaginatorName
 
@@ -388,6 +408,8 @@ Values:
 
 - `list_byte_match_sets`
 
+<a id="listgeomatchsetspaginatorname"></a>
+
 ## ListGeoMatchSetsPaginatorName
 
 ```python
@@ -397,6 +419,8 @@ from mypy_boto3_waf.literals import ListGeoMatchSetsPaginatorName
 Values:
 
 - `list_geo_match_sets`
+
+<a id="listipsetspaginatorname"></a>
 
 ## ListIPSetsPaginatorName
 
@@ -408,6 +432,8 @@ Values:
 
 - `list_ip_sets`
 
+<a id="listloggingconfigurationspaginatorname"></a>
+
 ## ListLoggingConfigurationsPaginatorName
 
 ```python
@@ -417,6 +443,8 @@ from mypy_boto3_waf.literals import ListLoggingConfigurationsPaginatorName
 Values:
 
 - `list_logging_configurations`
+
+<a id="listratebasedrulespaginatorname"></a>
 
 ## ListRateBasedRulesPaginatorName
 
@@ -428,6 +456,8 @@ Values:
 
 - `list_rate_based_rules`
 
+<a id="listregexmatchsetspaginatorname"></a>
+
 ## ListRegexMatchSetsPaginatorName
 
 ```python
@@ -437,6 +467,8 @@ from mypy_boto3_waf.literals import ListRegexMatchSetsPaginatorName
 Values:
 
 - `list_regex_match_sets`
+
+<a id="listregexpatternsetspaginatorname"></a>
 
 ## ListRegexPatternSetsPaginatorName
 
@@ -448,6 +480,8 @@ Values:
 
 - `list_regex_pattern_sets`
 
+<a id="listrulegroupspaginatorname"></a>
+
 ## ListRuleGroupsPaginatorName
 
 ```python
@@ -457,6 +491,8 @@ from mypy_boto3_waf.literals import ListRuleGroupsPaginatorName
 Values:
 
 - `list_rule_groups`
+
+<a id="listrulespaginatorname"></a>
 
 ## ListRulesPaginatorName
 
@@ -468,6 +504,8 @@ Values:
 
 - `list_rules`
 
+<a id="listsizeconstraintsetspaginatorname"></a>
+
 ## ListSizeConstraintSetsPaginatorName
 
 ```python
@@ -477,6 +515,8 @@ from mypy_boto3_waf.literals import ListSizeConstraintSetsPaginatorName
 Values:
 
 - `list_size_constraint_sets`
+
+<a id="listsqlinjectionmatchsetspaginatorname"></a>
 
 ## ListSqlInjectionMatchSetsPaginatorName
 
@@ -488,6 +528,8 @@ Values:
 
 - `list_sql_injection_match_sets`
 
+<a id="listsubscribedrulegroupspaginatorname"></a>
+
 ## ListSubscribedRuleGroupsPaginatorName
 
 ```python
@@ -497,6 +539,8 @@ from mypy_boto3_waf.literals import ListSubscribedRuleGroupsPaginatorName
 Values:
 
 - `list_subscribed_rule_groups`
+
+<a id="listwebaclspaginatorname"></a>
 
 ## ListWebACLsPaginatorName
 
@@ -508,6 +552,8 @@ Values:
 
 - `list_web_acls`
 
+<a id="listxssmatchsetspaginatorname"></a>
+
 ## ListXssMatchSetsPaginatorName
 
 ```python
@@ -517,6 +563,8 @@ from mypy_boto3_waf.literals import ListXssMatchSetsPaginatorName
 Values:
 
 - `list_xss_match_sets`
+
+<a id="matchfieldtypetype"></a>
 
 ## MatchFieldTypeType
 
@@ -534,6 +582,8 @@ Values:
 - `SINGLE_QUERY_ARG`
 - `URI`
 
+<a id="positionalconstrainttype"></a>
+
 ## PositionalConstraintType
 
 ```python
@@ -547,6 +597,8 @@ Values:
 - `ENDS_WITH`
 - `EXACTLY`
 - `STARTS_WITH`
+
+<a id="predicatetypetype"></a>
 
 ## PredicateTypeType
 
@@ -564,6 +616,8 @@ Values:
 - `SqlInjectionMatch`
 - `XssMatch`
 
+<a id="ratekeytype"></a>
+
 ## RateKeyType
 
 ```python
@@ -573,6 +627,8 @@ from mypy_boto3_waf.literals import RateKeyType
 Values:
 
 - `IP`
+
+<a id="texttransformationtype"></a>
 
 ## TextTransformationType
 
@@ -589,6 +645,8 @@ Values:
 - `NONE`
 - `URL_DECODE`
 
+<a id="wafactiontypetype"></a>
+
 ## WafActionTypeType
 
 ```python
@@ -601,6 +659,8 @@ Values:
 - `BLOCK`
 - `COUNT`
 
+<a id="wafoverrideactiontypetype"></a>
+
 ## WafOverrideActionTypeType
 
 ```python
@@ -611,6 +671,8 @@ Values:
 
 - `COUNT`
 - `NONE`
+
+<a id="wafruletypetype"></a>
 
 ## WafRuleTypeType
 
@@ -623,6 +685,8 @@ Values:
 - `GROUP`
 - `RATE_BASED`
 - `REGULAR`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -931,6 +995,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

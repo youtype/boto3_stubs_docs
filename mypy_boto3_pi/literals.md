@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-pi-module"></a>
+
 # Literals for boto3 PI module
 
 > [Index](..) > [PI](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [PI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI)
 type annotations stubs module
-[mypy_boto3_pi](https://pypi.org/project/mypy-boto3-pi/).
+[mypy-boto3-pi](https://pypi.org/project/mypy-boto3-pi/).
 
 - [Literals for boto3 PI module](#literals-for-boto3-pi-module)
   - [DetailStatusType](#detailstatustype)
   - [FeatureStatusType](#featurestatustype)
   - [ServiceTypeType](#servicetypetype)
   - [ServiceName](#servicename)
+
+<a id="detailstatustype"></a>
 
 ## DetailStatusType
 
@@ -24,6 +28,8 @@ Values:
 - `AVAILABLE`
 - `PROCESSING`
 - `UNAVAILABLE`
+
+<a id="featurestatustype"></a>
 
 ## FeatureStatusType
 
@@ -40,6 +46,8 @@ Values:
 - `UNKNOWN`
 - `UNSUPPORTED`
 
+<a id="servicetypetype"></a>
+
 ## ServiceTypeType
 
 ```python
@@ -50,6 +58,8 @@ Values:
 
 - `DOCDB`
 - `RDS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

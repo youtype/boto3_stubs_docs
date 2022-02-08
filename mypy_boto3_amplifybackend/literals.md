@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-amplifybackend-module"></a>
+
 # Literals for boto3 AmplifyBackend module
 
 > [Index](..) > [AmplifyBackend](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AmplifyBackend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifybackend.html#AmplifyBackend)
 type annotations stubs module
-[mypy_boto3_amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
+[mypy-boto3-amplifybackend](https://pypi.org/project/mypy-boto3-amplifybackend/).
 
 - [Literals for boto3 AmplifyBackend module](#literals-for-boto3-amplifybackend-module)
   - [AdditionalConstraintsElementType](#additionalconstraintselementtype)
@@ -28,6 +30,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="additionalconstraintselementtype"></a>
+
 ## AdditionalConstraintsElementType
 
 ```python
@@ -41,6 +45,8 @@ Values:
 - `REQUIRE_SYMBOL`
 - `REQUIRE_UPPERCASE`
 
+<a id="authresourcestype"></a>
+
 ## AuthResourcesType
 
 ```python
@@ -51,6 +57,8 @@ Values:
 
 - `IDENTITY_POOL_AND_USER_POOL`
 - `USER_POOL_ONLY`
+
+<a id="authenticatedelementtype"></a>
 
 ## AuthenticatedElementType
 
@@ -64,6 +72,8 @@ Values:
 - `DELETE`
 - `READ`
 
+<a id="deliverymethodtype"></a>
+
 ## DeliveryMethodType
 
 ```python
@@ -75,6 +85,8 @@ Values:
 - `EMAIL`
 - `SMS`
 
+<a id="listbackendjobspaginatorname"></a>
+
 ## ListBackendJobsPaginatorName
 
 ```python
@@ -84,6 +96,8 @@ from mypy_boto3_amplifybackend.literals import ListBackendJobsPaginatorName
 Values:
 
 - `list_backend_jobs`
+
+<a id="mfamodetype"></a>
 
 ## MFAModeType
 
@@ -97,6 +111,8 @@ Values:
 - `ON`
 - `OPTIONAL`
 
+<a id="mfatypeselementtype"></a>
+
 ## MfaTypesElementType
 
 ```python
@@ -107,6 +123,8 @@ Values:
 
 - `SMS`
 - `TOTP`
+
+<a id="modetype"></a>
 
 ## ModeType
 
@@ -121,6 +139,8 @@ Values:
 - `AWS_IAM`
 - `OPENID_CONNECT`
 
+<a id="oauthgranttypetype"></a>
+
 ## OAuthGrantTypeType
 
 ```python
@@ -131,6 +151,8 @@ Values:
 
 - `CODE`
 - `IMPLICIT`
+
+<a id="oauthscopeselementtype"></a>
 
 ## OAuthScopesElementType
 
@@ -145,6 +167,8 @@ Values:
 - `OPENID`
 - `PHONE`
 - `PROFILE`
+
+<a id="requiredsignupattributeselementtype"></a>
 
 ## RequiredSignUpAttributesElementType
 
@@ -172,6 +196,8 @@ Values:
 - `WEBSITE`
 - `ZONE_INFO`
 
+<a id="resolutionstrategytype"></a>
+
 ## ResolutionStrategyType
 
 ```python
@@ -185,6 +211,8 @@ Values:
 - `NONE`
 - `OPTIMISTIC_CONCURRENCY`
 
+<a id="servicenametype"></a>
+
 ## ServiceNameType
 
 ```python
@@ -195,6 +223,8 @@ Values:
 
 - `S3`
 
+<a id="servicetype"></a>
+
 ## ServiceType
 
 ```python
@@ -204,6 +234,8 @@ from mypy_boto3_amplifybackend.literals import ServiceType
 Values:
 
 - `COGNITO`
+
+<a id="signinmethodtype"></a>
 
 ## SignInMethodType
 
@@ -218,6 +250,8 @@ Values:
 - `PHONE_NUMBER`
 - `USERNAME`
 
+<a id="statustype"></a>
+
 ## StatusType
 
 ```python
@@ -228,6 +262,8 @@ Values:
 
 - `LATEST`
 - `STALE`
+
+<a id="unauthenticatedelementtype"></a>
 
 ## UnAuthenticatedElementType
 
@@ -240,6 +276,8 @@ Values:
 - `CREATE_AND_UPDATE`
 - `DELETE`
 - `READ`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -548,6 +586,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

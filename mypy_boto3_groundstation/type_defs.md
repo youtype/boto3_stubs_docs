@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-groundstation-module"></a>
+
 # Typed dictionaries for boto3 GroundStation module
 
 > [Index](..) > [GroundStation](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
-[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Typed dictionaries for boto3 GroundStation module](#typed-dictionaries-for-boto3-groundstation-module)
   - [AntennaDemodDecodeDetailsTypeDef](#antennademoddecodedetailstypedef)
@@ -85,6 +87,8 @@ type annotations stubs module
   - [UplinkEchoConfigTypeDef](#uplinkechoconfigtypedef)
   - [UplinkSpectrumConfigTypeDef](#uplinkspectrumconfigtypedef)
 
+<a id="antennademoddecodedetailstypedef"></a>
+
 ## AntennaDemodDecodeDetailsTypeDef
 
 ```python
@@ -94,6 +98,8 @@ from mypy_boto3_groundstation.type_defs import AntennaDemodDecodeDetailsTypeDef
 Optional fields:
 
 - `outputNode`: `str`
+
+<a id="antennadownlinkconfigtypedef"></a>
 
 ## AntennaDownlinkConfigTypeDef
 
@@ -105,6 +111,8 @@ Required fields:
 
 - `spectrumConfig`:
   [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
+
+<a id="antennadownlinkdemoddecodeconfigtypedef"></a>
 
 ## AntennaDownlinkDemodDecodeConfigTypeDef
 
@@ -119,6 +127,8 @@ Required fields:
   [DemodulationConfigTypeDef](./type_defs.md#demodulationconfigtypedef)
 - `spectrumConfig`:
   [SpectrumConfigTypeDef](./type_defs.md#spectrumconfigtypedef)
+
+<a id="antennauplinkconfigtypedef"></a>
 
 ## AntennaUplinkConfigTypeDef
 
@@ -136,6 +146,8 @@ Optional fields:
 
 - `transmitDisabled`: `bool`
 
+<a id="cancelcontactrequestrequesttypedef"></a>
+
 ## CancelContactRequestRequestTypeDef
 
 ```python
@@ -145,6 +157,8 @@ from mypy_boto3_groundstation.type_defs import CancelContactRequestRequestTypeDe
 Required fields:
 
 - `contactId`: `str`
+
+<a id="configdetailstypedef"></a>
 
 ## ConfigDetailsTypeDef
 
@@ -161,6 +175,8 @@ Optional fields:
 - `s3RecordingDetails`:
   [S3RecordingDetailsTypeDef](./type_defs.md#s3recordingdetailstypedef)
 
+<a id="configidresponsetypedef"></a>
+
 ## ConfigIdResponseTypeDef
 
 ```python
@@ -176,6 +192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="configlistitemtypedef"></a>
+
 ## ConfigListItemTypeDef
 
 ```python
@@ -189,6 +207,8 @@ Optional fields:
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `name`: `str`
+
+<a id="configtypedatatypedef"></a>
 
 ## ConfigTypeDataTypeDef
 
@@ -213,6 +233,8 @@ Optional fields:
 - `uplinkEchoConfig`:
   [UplinkEchoConfigTypeDef](./type_defs.md#uplinkechoconfigtypedef)
 
+<a id="contactdatatypedef"></a>
+
 ## ContactDataTypeDef
 
 ```python
@@ -235,6 +257,8 @@ Optional fields:
 - `startTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="contactidresponsetypedef"></a>
+
 ## ContactIdResponseTypeDef
 
 ```python
@@ -246,6 +270,8 @@ Required fields:
 - `contactId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createconfigrequestrequesttypedef"></a>
 
 ## CreateConfigRequestRequestTypeDef
 
@@ -262,6 +288,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createdataflowendpointgrouprequestrequesttypedef"></a>
+
 ## CreateDataflowEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -276,6 +304,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createmissionprofilerequestrequesttypedef"></a>
 
 ## CreateMissionProfileRequestRequestTypeDef
 
@@ -296,6 +326,8 @@ Optional fields:
 - `contactPrePassDurationSeconds`: `int`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="dataflowdetailtypedef"></a>
+
 ## DataflowDetailTypeDef
 
 ```python
@@ -307,6 +339,8 @@ Optional fields:
 - `destination`: [DestinationTypeDef](./type_defs.md#destinationtypedef)
 - `errorMessage`: `str`
 - `source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
+
+<a id="dataflowendpointconfigtypedef"></a>
 
 ## DataflowEndpointConfigTypeDef
 
@@ -322,6 +356,8 @@ Optional fields:
 
 - `dataflowEndpointRegion`: `str`
 
+<a id="dataflowendpointgroupidresponsetypedef"></a>
+
 ## DataflowEndpointGroupIdResponseTypeDef
 
 ```python
@@ -334,6 +370,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dataflowendpointlistitemtypedef"></a>
+
 ## DataflowEndpointListItemTypeDef
 
 ```python
@@ -344,6 +382,8 @@ Optional fields:
 
 - `dataflowEndpointGroupArn`: `str`
 - `dataflowEndpointGroupId`: `str`
+
+<a id="dataflowendpointtypedef"></a>
 
 ## DataflowEndpointTypeDef
 
@@ -358,6 +398,8 @@ Optional fields:
 - `name`: `str`
 - `status`: [EndpointStatusType](./literals.md#endpointstatustype)
 
+<a id="decodeconfigtypedef"></a>
+
 ## DecodeConfigTypeDef
 
 ```python
@@ -367,6 +409,8 @@ from mypy_boto3_groundstation.type_defs import DecodeConfigTypeDef
 Required fields:
 
 - `unvalidatedJSON`: `str`
+
+<a id="deleteconfigrequestrequesttypedef"></a>
 
 ## DeleteConfigRequestRequestTypeDef
 
@@ -380,6 +424,8 @@ Required fields:
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 
+<a id="deletedataflowendpointgrouprequestrequesttypedef"></a>
+
 ## DeleteDataflowEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -389,6 +435,8 @@ from mypy_boto3_groundstation.type_defs import DeleteDataflowEndpointGroupReques
 Required fields:
 
 - `dataflowEndpointGroupId`: `str`
+
+<a id="deletemissionprofilerequestrequesttypedef"></a>
 
 ## DeleteMissionProfileRequestRequestTypeDef
 
@@ -400,6 +448,8 @@ Required fields:
 
 - `missionProfileId`: `str`
 
+<a id="demodulationconfigtypedef"></a>
+
 ## DemodulationConfigTypeDef
 
 ```python
@@ -410,6 +460,8 @@ Required fields:
 
 - `unvalidatedJSON`: `str`
 
+<a id="describecontactrequestrequesttypedef"></a>
+
 ## DescribeContactRequestRequestTypeDef
 
 ```python
@@ -419,6 +471,8 @@ from mypy_boto3_groundstation.type_defs import DescribeContactRequestRequestType
 Required fields:
 
 - `contactId`: `str`
+
+<a id="describecontactresponsetypedef"></a>
 
 ## DescribeContactResponseTypeDef
 
@@ -446,6 +500,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationtypedef"></a>
+
 ## DestinationTypeDef
 
 ```python
@@ -460,6 +516,8 @@ Optional fields:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `dataflowDestinationRegion`: `str`
 
+<a id="eirptypedef"></a>
+
 ## EirpTypeDef
 
 ```python
@@ -471,6 +529,8 @@ Required fields:
 - `units`: `Literal['dBW']` (see [EirpUnitsType](./literals.md#eirpunitstype))
 - `value`: `float`
 
+<a id="elevationtypedef"></a>
+
 ## ElevationTypeDef
 
 ```python
@@ -481,6 +541,8 @@ Required fields:
 
 - `unit`: [AngleUnitsType](./literals.md#angleunitstype)
 - `value`: `float`
+
+<a id="endpointdetailstypedef"></a>
 
 ## EndpointDetailsTypeDef
 
@@ -494,6 +556,8 @@ Optional fields:
 - `securityDetails`:
   [SecurityDetailsTypeDef](./type_defs.md#securitydetailstypedef)
 
+<a id="frequencybandwidthtypedef"></a>
+
 ## FrequencyBandwidthTypeDef
 
 ```python
@@ -504,6 +568,8 @@ Required fields:
 
 - `units`: [BandwidthUnitsType](./literals.md#bandwidthunitstype)
 - `value`: `float`
+
+<a id="frequencytypedef"></a>
 
 ## FrequencyTypeDef
 
@@ -516,6 +582,8 @@ Required fields:
 - `units`: [FrequencyUnitsType](./literals.md#frequencyunitstype)
 - `value`: `float`
 
+<a id="getconfigrequestrequesttypedef"></a>
+
 ## GetConfigRequestRequestTypeDef
 
 ```python
@@ -527,6 +595,8 @@ Required fields:
 - `configId`: `str`
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
+
+<a id="getconfigresponsetypedef"></a>
 
 ## GetConfigResponseTypeDef
 
@@ -546,6 +616,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdataflowendpointgrouprequestrequesttypedef"></a>
+
 ## GetDataflowEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -555,6 +627,8 @@ from mypy_boto3_groundstation.type_defs import GetDataflowEndpointGroupRequestRe
 Required fields:
 
 - `dataflowEndpointGroupId`: `str`
+
+<a id="getdataflowendpointgroupresponsetypedef"></a>
 
 ## GetDataflowEndpointGroupResponseTypeDef
 
@@ -572,6 +646,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getminuteusagerequestrequesttypedef"></a>
+
 ## GetMinuteUsageRequestRequestTypeDef
 
 ```python
@@ -582,6 +658,8 @@ Required fields:
 
 - `month`: `int`
 - `year`: `int`
+
+<a id="getminuteusageresponsetypedef"></a>
 
 ## GetMinuteUsageResponseTypeDef
 
@@ -599,6 +677,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmissionprofilerequestrequesttypedef"></a>
+
 ## GetMissionProfileRequestRequestTypeDef
 
 ```python
@@ -608,6 +688,8 @@ from mypy_boto3_groundstation.type_defs import GetMissionProfileRequestRequestTy
 Required fields:
 
 - `missionProfileId`: `str`
+
+<a id="getmissionprofileresponsetypedef"></a>
 
 ## GetMissionProfileResponseTypeDef
 
@@ -630,6 +712,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsatelliterequestrequesttypedef"></a>
+
 ## GetSatelliteRequestRequestTypeDef
 
 ```python
@@ -639,6 +723,8 @@ from mypy_boto3_groundstation.type_defs import GetSatelliteRequestRequestTypeDef
 Required fields:
 
 - `satelliteId`: `str`
+
+<a id="getsatelliteresponsetypedef"></a>
 
 ## GetSatelliteResponseTypeDef
 
@@ -655,6 +741,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groundstationdatatypedef"></a>
+
 ## GroundStationDataTypeDef
 
 ```python
@@ -667,6 +755,8 @@ Optional fields:
 - `groundStationName`: `str`
 - `region`: `str`
 
+<a id="listconfigsrequestrequesttypedef"></a>
+
 ## ListConfigsRequestRequestTypeDef
 
 ```python
@@ -677,6 +767,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listconfigsresponsetypedef"></a>
 
 ## ListConfigsResponseTypeDef
 
@@ -691,6 +783,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontactsrequestrequesttypedef"></a>
 
 ## ListContactsRequestRequestTypeDef
 
@@ -713,6 +807,8 @@ Optional fields:
 - `nextToken`: `str`
 - `satelliteArn`: `str`
 
+<a id="listcontactsresponsetypedef"></a>
+
 ## ListContactsResponseTypeDef
 
 ```python
@@ -727,6 +823,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdataflowendpointgroupsrequestrequesttypedef"></a>
+
 ## ListDataflowEndpointGroupsRequestRequestTypeDef
 
 ```python
@@ -737,6 +835,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listdataflowendpointgroupsresponsetypedef"></a>
 
 ## ListDataflowEndpointGroupsResponseTypeDef
 
@@ -752,6 +852,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgroundstationsrequestrequesttypedef"></a>
+
 ## ListGroundStationsRequestRequestTypeDef
 
 ```python
@@ -763,6 +865,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `satelliteId`: `str`
+
+<a id="listgroundstationsresponsetypedef"></a>
 
 ## ListGroundStationsResponseTypeDef
 
@@ -778,6 +882,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmissionprofilesrequestrequesttypedef"></a>
+
 ## ListMissionProfilesRequestRequestTypeDef
 
 ```python
@@ -788,6 +894,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listmissionprofilesresponsetypedef"></a>
 
 ## ListMissionProfilesResponseTypeDef
 
@@ -803,6 +911,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsatellitesrequestrequesttypedef"></a>
+
 ## ListSatellitesRequestRequestTypeDef
 
 ```python
@@ -813,6 +923,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listsatellitesresponsetypedef"></a>
 
 ## ListSatellitesResponseTypeDef
 
@@ -828,6 +940,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -837,6 +951,8 @@ from mypy_boto3_groundstation.type_defs import ListTagsForResourceRequestRequest
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -850,6 +966,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="missionprofileidresponsetypedef"></a>
+
 ## MissionProfileIdResponseTypeDef
 
 ```python
@@ -861,6 +979,8 @@ Required fields:
 - `missionProfileId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="missionprofilelistitemtypedef"></a>
 
 ## MissionProfileListItemTypeDef
 
@@ -875,6 +995,8 @@ Optional fields:
 - `name`: `str`
 - `region`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -886,6 +1008,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="reservecontactrequestrequesttypedef"></a>
 
 ## ReserveContactRequestRequestTypeDef
 
@@ -905,6 +1029,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -918,6 +1044,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3recordingconfigtypedef"></a>
 
 ## S3RecordingConfigTypeDef
 
@@ -934,6 +1062,8 @@ Optional fields:
 
 - `prefix`: `str`
 
+<a id="s3recordingdetailstypedef"></a>
+
 ## S3RecordingDetailsTypeDef
 
 ```python
@@ -944,6 +1074,8 @@ Optional fields:
 
 - `bucketArn`: `str`
 - `keyTemplate`: `str`
+
+<a id="satellitelistitemtypedef"></a>
 
 ## SatelliteListItemTypeDef
 
@@ -958,6 +1090,8 @@ Optional fields:
 - `satelliteArn`: `str`
 - `satelliteId`: `str`
 
+<a id="securitydetailstypedef"></a>
+
 ## SecurityDetailsTypeDef
 
 ```python
@@ -970,6 +1104,8 @@ Required fields:
 - `securityGroupIds`: `Sequence`\[`str`\]
 - `subnetIds`: `Sequence`\[`str`\]
 
+<a id="socketaddresstypedef"></a>
+
 ## SocketAddressTypeDef
 
 ```python
@@ -980,6 +1116,8 @@ Required fields:
 
 - `name`: `str`
 - `port`: `int`
+
+<a id="sourcetypedef"></a>
 
 ## SourceTypeDef
 
@@ -994,6 +1132,8 @@ Optional fields:
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `dataflowSourceRegion`: `str`
+
+<a id="spectrumconfigtypedef"></a>
 
 ## SpectrumConfigTypeDef
 
@@ -1011,6 +1151,8 @@ Optional fields:
 
 - `polarization`: [PolarizationType](./literals.md#polarizationtype)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1022,6 +1164,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="trackingconfigtypedef"></a>
+
 ## TrackingConfigTypeDef
 
 ```python
@@ -1031,6 +1175,8 @@ from mypy_boto3_groundstation.type_defs import TrackingConfigTypeDef
 Required fields:
 
 - `autotrack`: [CriticalityType](./literals.md#criticalitytype)
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -1042,6 +1188,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateconfigrequestrequesttypedef"></a>
 
 ## UpdateConfigRequestRequestTypeDef
 
@@ -1056,6 +1204,8 @@ Required fields:
 - `configType`:
   [ConfigCapabilityTypeType](./literals.md#configcapabilitytypetype)
 - `name`: `str`
+
+<a id="updatemissionprofilerequestrequesttypedef"></a>
 
 ## UpdateMissionProfileRequestRequestTypeDef
 
@@ -1076,6 +1226,8 @@ Optional fields:
 - `name`: `str`
 - `trackingConfigArn`: `str`
 
+<a id="uplinkechoconfigtypedef"></a>
+
 ## UplinkEchoConfigTypeDef
 
 ```python
@@ -1086,6 +1238,8 @@ Required fields:
 
 - `antennaUplinkConfigArn`: `str`
 - `enabled`: `bool`
+
+<a id="uplinkspectrumconfigtypedef"></a>
 
 ## UplinkSpectrumConfigTypeDef
 

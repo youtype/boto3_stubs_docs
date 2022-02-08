@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-backup-module"></a>
+
 # Type annotations for boto3 Backup module
 
 > [Index](..) > Backup
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
 type annotations stubs module
-[mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
+[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[backup]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[backup]'
+
+# standalone installation
 pip install mypy-boto3-backup
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-backup
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="backupclient"></a>
+
 ## BackupClient
 
 Type annotations for `boto3.client("backup")` as [BackupClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_backup.client import BackupClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -100,6 +114,8 @@ from mypy_boto3_backup.client import BackupClient
 - [update_region_settings](./client.md#update_region_settings)
 - [update_report_plan](./client.md#update_report_plan)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 BackupClient [exceptions](./client.md#exceptions)
@@ -115,6 +131,8 @@ BackupClient [exceptions](./client.md#exceptions)
 - MissingParameterValueException
 - ResourceNotFoundException
 - ServiceUnavailableException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -134,6 +152,8 @@ from mypy_boto3_backup.literals import BackupJobStateType, ...
 - [RestoreJobStatusType](./literals.md#restorejobstatustype)
 - [StorageClassType](./literals.md#storageclasstype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

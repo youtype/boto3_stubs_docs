@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-nimblestudio-module"></a>
+
 # Typed dictionaries for boto3 NimbleStudio module
 
 > [Index](..) > [NimbleStudio](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [NimbleStudio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/nimble.html#NimbleStudio)
 type annotations stubs module
-[mypy_boto3_nimble](https://pypi.org/project/mypy-boto3-nimble/).
+[mypy-boto3-nimble](https://pypi.org/project/mypy-boto3-nimble/).
 
 - [Typed dictionaries for boto3 NimbleStudio module](#typed-dictionaries-for-boto3-nimblestudio-module)
   - [AcceptEulasRequestRequestTypeDef](#accepteulasrequestrequesttypedef)
@@ -131,6 +133,8 @@ type annotations stubs module
   - [ValidationResultTypeDef](#validationresulttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accepteulasrequestrequesttypedef"></a>
+
 ## AcceptEulasRequestRequestTypeDef
 
 ```python
@@ -146,6 +150,8 @@ Optional fields:
 - `clientToken`: `str`
 - `eulaIds`: `Sequence`\[`str`\]
 
+<a id="accepteulasresponsetypedef"></a>
+
 ## AcceptEulasResponseTypeDef
 
 ```python
@@ -159,6 +165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="activedirectorycomputerattributetypedef"></a>
+
 ## ActiveDirectoryComputerAttributeTypeDef
 
 ```python
@@ -169,6 +177,8 @@ Optional fields:
 
 - `name`: `str`
 - `value`: `str`
+
+<a id="activedirectoryconfigurationtypedef"></a>
 
 ## ActiveDirectoryConfigurationTypeDef
 
@@ -183,6 +193,8 @@ Optional fields:
 - `directoryId`: `str`
 - `organizationalUnitDistinguishedName`: `str`
 
+<a id="computefarmconfigurationtypedef"></a>
+
 ## ComputeFarmConfigurationTypeDef
 
 ```python
@@ -193,6 +205,8 @@ Optional fields:
 
 - `activeDirectoryUser`: `str`
 - `endpoint`: `str`
+
+<a id="createlaunchprofilerequestrequesttypedef"></a>
 
 ## CreateLaunchProfileRequestRequestTypeDef
 
@@ -216,6 +230,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createlaunchprofileresponsetypedef"></a>
+
 ## CreateLaunchProfileResponseTypeDef
 
 ```python
@@ -227,6 +243,8 @@ Required fields:
 - `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreamingimagerequestrequesttypedef"></a>
 
 ## CreateStreamingImageRequestRequestTypeDef
 
@@ -246,6 +264,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstreamingimageresponsetypedef"></a>
+
 ## CreateStreamingImageResponseTypeDef
 
 ```python
@@ -258,6 +278,8 @@ Required fields:
   [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreamingsessionrequestrequesttypedef"></a>
 
 ## CreateStreamingSessionRequestRequestTypeDef
 
@@ -279,6 +301,8 @@ Optional fields:
 - `streamingImageId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstreamingsessionresponsetypedef"></a>
+
 ## CreateStreamingSessionResponseTypeDef
 
 ```python
@@ -290,6 +314,8 @@ Required fields:
 - `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreamingsessionstreamrequestrequesttypedef"></a>
 
 ## CreateStreamingSessionStreamRequestRequestTypeDef
 
@@ -307,6 +333,8 @@ Optional fields:
 - `clientToken`: `str`
 - `expirationInSeconds`: `int`
 
+<a id="createstreamingsessionstreamresponsetypedef"></a>
+
 ## CreateStreamingSessionStreamResponseTypeDef
 
 ```python
@@ -319,6 +347,8 @@ Required fields:
   [StreamingSessionStreamTypeDef](./type_defs.md#streamingsessionstreamtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstudiocomponentrequestrequesttypedef"></a>
 
 ## CreateStudioComponentRequestRequestTypeDef
 
@@ -347,6 +377,8 @@ Optional fields:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstudiocomponentresponsetypedef"></a>
+
 ## CreateStudioComponentResponseTypeDef
 
 ```python
@@ -359,6 +391,8 @@ Required fields:
   [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstudiorequestrequesttypedef"></a>
 
 ## CreateStudioRequestRequestTypeDef
 
@@ -380,6 +414,8 @@ Optional fields:
   [StudioEncryptionConfigurationTypeDef](./type_defs.md#studioencryptionconfigurationtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstudioresponsetypedef"></a>
+
 ## CreateStudioResponseTypeDef
 
 ```python
@@ -391,6 +427,8 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletelaunchprofilememberrequestrequesttypedef"></a>
 
 ## DeleteLaunchProfileMemberRequestRequestTypeDef
 
@@ -408,6 +446,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletelaunchprofilerequestrequesttypedef"></a>
+
 ## DeleteLaunchProfileRequestRequestTypeDef
 
 ```python
@@ -423,6 +463,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletelaunchprofileresponsetypedef"></a>
+
 ## DeleteLaunchProfileResponseTypeDef
 
 ```python
@@ -434,6 +476,8 @@ Required fields:
 - `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletestreamingimagerequestrequesttypedef"></a>
 
 ## DeleteStreamingImageRequestRequestTypeDef
 
@@ -450,6 +494,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletestreamingimageresponsetypedef"></a>
+
 ## DeleteStreamingImageResponseTypeDef
 
 ```python
@@ -462,6 +508,8 @@ Required fields:
   [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletestreamingsessionrequestrequesttypedef"></a>
 
 ## DeleteStreamingSessionRequestRequestTypeDef
 
@@ -478,6 +526,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletestreamingsessionresponsetypedef"></a>
+
 ## DeleteStreamingSessionResponseTypeDef
 
 ```python
@@ -489,6 +539,8 @@ Required fields:
 - `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletestudiocomponentrequestrequesttypedef"></a>
 
 ## DeleteStudioComponentRequestRequestTypeDef
 
@@ -505,6 +557,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletestudiocomponentresponsetypedef"></a>
+
 ## DeleteStudioComponentResponseTypeDef
 
 ```python
@@ -517,6 +571,8 @@ Required fields:
   [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletestudiomemberrequestrequesttypedef"></a>
 
 ## DeleteStudioMemberRequestRequestTypeDef
 
@@ -533,6 +589,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletestudiorequestrequesttypedef"></a>
+
 ## DeleteStudioRequestRequestTypeDef
 
 ```python
@@ -547,6 +605,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deletestudioresponsetypedef"></a>
+
 ## DeleteStudioResponseTypeDef
 
 ```python
@@ -558,6 +618,8 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="eulaacceptancetypedef"></a>
 
 ## EulaAcceptanceTypeDef
 
@@ -573,6 +635,8 @@ Optional fields:
 - `eulaAcceptanceId`: `str`
 - `eulaId`: `str`
 
+<a id="eulatypedef"></a>
+
 ## EulaTypeDef
 
 ```python
@@ -587,6 +651,8 @@ Optional fields:
 - `name`: `str`
 - `updatedAt`: `datetime`
 
+<a id="geteularequestrequesttypedef"></a>
+
 ## GetEulaRequestRequestTypeDef
 
 ```python
@@ -596,6 +662,8 @@ from mypy_boto3_nimble.type_defs import GetEulaRequestRequestTypeDef
 Required fields:
 
 - `eulaId`: `str`
+
+<a id="geteularesponsetypedef"></a>
 
 ## GetEulaResponseTypeDef
 
@@ -609,6 +677,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlaunchprofiledetailsrequestrequesttypedef"></a>
+
 ## GetLaunchProfileDetailsRequestRequestTypeDef
 
 ```python
@@ -619,6 +689,8 @@ Required fields:
 
 - `launchProfileId`: `str`
 - `studioId`: `str`
+
+<a id="getlaunchprofiledetailsresponsetypedef"></a>
 
 ## GetLaunchProfileDetailsResponseTypeDef
 
@@ -636,6 +708,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlaunchprofileinitializationrequestrequesttypedef"></a>
+
 ## GetLaunchProfileInitializationRequestRequestTypeDef
 
 ```python
@@ -650,6 +724,8 @@ Required fields:
 - `platform`: `str`
 - `studioId`: `str`
 
+<a id="getlaunchprofileinitializationresponsetypedef"></a>
+
 ## GetLaunchProfileInitializationResponseTypeDef
 
 ```python
@@ -663,6 +739,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlaunchprofilememberrequestrequesttypedef"></a>
+
 ## GetLaunchProfileMemberRequestRequestTypeDef
 
 ```python
@@ -674,6 +752,8 @@ Required fields:
 - `launchProfileId`: `str`
 - `principalId`: `str`
 - `studioId`: `str`
+
+<a id="getlaunchprofilememberresponsetypedef"></a>
 
 ## GetLaunchProfileMemberResponseTypeDef
 
@@ -688,6 +768,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlaunchprofilerequestrequesttypedef"></a>
+
 ## GetLaunchProfileRequestRequestTypeDef
 
 ```python
@@ -698,6 +780,8 @@ Required fields:
 
 - `launchProfileId`: `str`
 - `studioId`: `str`
+
+<a id="getlaunchprofileresponsetypedef"></a>
 
 ## GetLaunchProfileResponseTypeDef
 
@@ -711,6 +795,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamingimagerequestrequesttypedef"></a>
+
 ## GetStreamingImageRequestRequestTypeDef
 
 ```python
@@ -721,6 +807,8 @@ Required fields:
 
 - `streamingImageId`: `str`
 - `studioId`: `str`
+
+<a id="getstreamingimageresponsetypedef"></a>
 
 ## GetStreamingImageResponseTypeDef
 
@@ -735,6 +823,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamingsessionrequestrequesttypedef"></a>
+
 ## GetStreamingSessionRequestRequestTypeDef
 
 ```python
@@ -745,6 +835,8 @@ Required fields:
 
 - `sessionId`: `str`
 - `studioId`: `str`
+
+<a id="getstreamingsessionresponsetypedef"></a>
 
 ## GetStreamingSessionResponseTypeDef
 
@@ -758,6 +850,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamingsessionstreamrequestrequesttypedef"></a>
+
 ## GetStreamingSessionStreamRequestRequestTypeDef
 
 ```python
@@ -769,6 +863,8 @@ Required fields:
 - `sessionId`: `str`
 - `streamId`: `str`
 - `studioId`: `str`
+
+<a id="getstreamingsessionstreamresponsetypedef"></a>
 
 ## GetStreamingSessionStreamResponseTypeDef
 
@@ -783,6 +879,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstudiocomponentrequestrequesttypedef"></a>
+
 ## GetStudioComponentRequestRequestTypeDef
 
 ```python
@@ -793,6 +891,8 @@ Required fields:
 
 - `studioComponentId`: `str`
 - `studioId`: `str`
+
+<a id="getstudiocomponentresponsetypedef"></a>
 
 ## GetStudioComponentResponseTypeDef
 
@@ -807,6 +907,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstudiomemberrequestrequesttypedef"></a>
+
 ## GetStudioMemberRequestRequestTypeDef
 
 ```python
@@ -817,6 +919,8 @@ Required fields:
 
 - `principalId`: `str`
 - `studioId`: `str`
+
+<a id="getstudiomemberresponsetypedef"></a>
 
 ## GetStudioMemberResponseTypeDef
 
@@ -830,6 +934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstudiorequestrequesttypedef"></a>
+
 ## GetStudioRequestRequestTypeDef
 
 ```python
@@ -839,6 +945,8 @@ from mypy_boto3_nimble.type_defs import GetStudioRequestRequestTypeDef
 Required fields:
 
 - `studioId`: `str`
+
+<a id="getstudioresponsetypedef"></a>
 
 ## GetStudioResponseTypeDef
 
@@ -851,6 +959,8 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="launchprofileinitializationactivedirectorytypedef"></a>
 
 ## LaunchProfileInitializationActiveDirectoryTypeDef
 
@@ -869,6 +979,8 @@ Optional fields:
 - `studioComponentId`: `str`
 - `studioComponentName`: `str`
 
+<a id="launchprofileinitializationscripttypedef"></a>
+
 ## LaunchProfileInitializationScriptTypeDef
 
 ```python
@@ -880,6 +992,8 @@ Optional fields:
 - `script`: `str`
 - `studioComponentId`: `str`
 - `studioComponentName`: `str`
+
+<a id="launchprofileinitializationtypedef"></a>
 
 ## LaunchProfileInitializationTypeDef
 
@@ -903,6 +1017,8 @@ Optional fields:
 - `userInitializationScripts`:
   `List`\[[LaunchProfileInitializationScriptTypeDef](./type_defs.md#launchprofileinitializationscripttypedef)\]
 
+<a id="launchprofilemembershiptypedef"></a>
+
 ## LaunchProfileMembershipTypeDef
 
 ```python
@@ -916,6 +1032,8 @@ Optional fields:
   [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype))
 - `principalId`: `str`
 - `sid`: `str`
+
+<a id="launchprofiletypedef"></a>
 
 ## LaunchProfileTypeDef
 
@@ -946,6 +1064,8 @@ Optional fields:
 - `validationResults`:
   `List`\[[ValidationResultTypeDef](./type_defs.md#validationresulttypedef)\]
 
+<a id="licenseserviceconfigurationtypedef"></a>
+
 ## LicenseServiceConfigurationTypeDef
 
 ```python
@@ -955,6 +1075,8 @@ from mypy_boto3_nimble.type_defs import LicenseServiceConfigurationTypeDef
 Optional fields:
 
 - `endpoint`: `str`
+
+<a id="listeulaacceptancesrequestrequesttypedef"></a>
 
 ## ListEulaAcceptancesRequestRequestTypeDef
 
@@ -971,6 +1093,8 @@ Optional fields:
 - `eulaIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
 
+<a id="listeulaacceptancesresponsetypedef"></a>
+
 ## ListEulaAcceptancesResponseTypeDef
 
 ```python
@@ -985,6 +1109,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeulasrequestrequesttypedef"></a>
+
 ## ListEulasRequestRequestTypeDef
 
 ```python
@@ -995,6 +1121,8 @@ Optional fields:
 
 - `eulaIds`: `Sequence`\[`str`\]
 - `nextToken`: `str`
+
+<a id="listeulasresponsetypedef"></a>
 
 ## ListEulasResponseTypeDef
 
@@ -1008,6 +1136,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlaunchprofilemembersrequestrequesttypedef"></a>
 
 ## ListLaunchProfileMembersRequestRequestTypeDef
 
@@ -1025,6 +1155,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listlaunchprofilemembersresponsetypedef"></a>
+
 ## ListLaunchProfileMembersResponseTypeDef
 
 ```python
@@ -1038,6 +1170,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlaunchprofilesrequestrequesttypedef"></a>
 
 ## ListLaunchProfilesRequestRequestTypeDef
 
@@ -1057,6 +1191,8 @@ Optional fields:
 - `states`:
   `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
 
+<a id="listlaunchprofilesresponsetypedef"></a>
+
 ## ListLaunchProfilesResponseTypeDef
 
 ```python
@@ -1070,6 +1206,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststreamingimagesrequestrequesttypedef"></a>
 
 ## ListStreamingImagesRequestRequestTypeDef
 
@@ -1086,6 +1224,8 @@ Optional fields:
 - `nextToken`: `str`
 - `owner`: `str`
 
+<a id="liststreamingimagesresponsetypedef"></a>
+
 ## ListStreamingImagesResponseTypeDef
 
 ```python
@@ -1099,6 +1239,8 @@ Required fields:
   `List`\[[StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststreamingsessionsrequestrequesttypedef"></a>
 
 ## ListStreamingSessionsRequestRequestTypeDef
 
@@ -1117,6 +1259,8 @@ Optional fields:
 - `ownedBy`: `str`
 - `sessionIds`: `str`
 
+<a id="liststreamingsessionsresponsetypedef"></a>
+
 ## ListStreamingSessionsResponseTypeDef
 
 ```python
@@ -1130,6 +1274,8 @@ Required fields:
   `List`\[[StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststudiocomponentsrequestrequesttypedef"></a>
 
 ## ListStudioComponentsRequestRequestTypeDef
 
@@ -1150,6 +1296,8 @@ Optional fields:
 - `types`:
   `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
 
+<a id="liststudiocomponentsresponsetypedef"></a>
+
 ## ListStudioComponentsResponseTypeDef
 
 ```python
@@ -1163,6 +1311,8 @@ Required fields:
   `List`\[[StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststudiomembersrequestrequesttypedef"></a>
 
 ## ListStudioMembersRequestRequestTypeDef
 
@@ -1179,6 +1329,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="liststudiomembersresponsetypedef"></a>
+
 ## ListStudioMembersResponseTypeDef
 
 ```python
@@ -1193,6 +1345,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststudiosrequestrequesttypedef"></a>
+
 ## ListStudiosRequestRequestTypeDef
 
 ```python
@@ -1202,6 +1356,8 @@ from mypy_boto3_nimble.type_defs import ListStudiosRequestRequestTypeDef
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="liststudiosresponsetypedef"></a>
 
 ## ListStudiosResponseTypeDef
 
@@ -1216,6 +1372,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1225,6 +1383,8 @@ from mypy_boto3_nimble.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1238,6 +1398,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="newlaunchprofilemembertypedef"></a>
+
 ## NewLaunchProfileMemberTypeDef
 
 ```python
@@ -1249,6 +1411,8 @@ Required fields:
 - `persona`: `Literal['USER']` (see
   [LaunchProfilePersonaType](./literals.md#launchprofilepersonatype))
 - `principalId`: `str`
+
+<a id="newstudiomembertypedef"></a>
 
 ## NewStudioMemberTypeDef
 
@@ -1262,6 +1426,8 @@ Required fields:
   [StudioPersonaType](./literals.md#studiopersonatype))
 - `principalId`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1273,6 +1439,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putlaunchprofilemembersrequestrequesttypedef"></a>
 
 ## PutLaunchProfileMembersRequestRequestTypeDef
 
@@ -1292,6 +1460,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="putstudiomembersrequestrequesttypedef"></a>
+
 ## PutStudioMembersRequestRequestTypeDef
 
 ```python
@@ -1309,6 +1479,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1323,6 +1495,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="scriptparameterkeyvaluetypedef"></a>
+
 ## ScriptParameterKeyValueTypeDef
 
 ```python
@@ -1333,6 +1507,8 @@ Optional fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="sharedfilesystemconfigurationtypedef"></a>
 
 ## SharedFileSystemConfigurationTypeDef
 
@@ -1347,6 +1523,8 @@ Optional fields:
 - `linuxMountPoint`: `str`
 - `shareName`: `str`
 - `windowsMountDrive`: `str`
+
+<a id="startstreamingsessionrequestrequesttypedef"></a>
 
 ## StartStreamingSessionRequestRequestTypeDef
 
@@ -1363,6 +1541,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="startstreamingsessionresponsetypedef"></a>
+
 ## StartStreamingSessionResponseTypeDef
 
 ```python
@@ -1374,6 +1554,8 @@ Required fields:
 - `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startstudiossoconfigurationrepairrequestrequesttypedef"></a>
 
 ## StartStudioSSOConfigurationRepairRequestRequestTypeDef
 
@@ -1389,6 +1571,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="startstudiossoconfigurationrepairresponsetypedef"></a>
+
 ## StartStudioSSOConfigurationRepairResponseTypeDef
 
 ```python
@@ -1400,6 +1584,8 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stopstreamingsessionrequestrequesttypedef"></a>
 
 ## StopStreamingSessionRequestRequestTypeDef
 
@@ -1416,6 +1602,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="stopstreamingsessionresponsetypedef"></a>
+
 ## StopStreamingSessionResponseTypeDef
 
 ```python
@@ -1427,6 +1615,8 @@ Required fields:
 - `session`: [StreamingSessionTypeDef](./type_defs.md#streamingsessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="streamconfigurationcreatetypedef"></a>
 
 ## StreamConfigurationCreateTypeDef
 
@@ -1449,6 +1639,8 @@ Optional fields:
 - `sessionStorage`:
   [StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef)
 
+<a id="streamconfigurationsessionstoragetypedef"></a>
+
 ## StreamConfigurationSessionStorageTypeDef
 
 ```python
@@ -1464,6 +1656,8 @@ Optional fields:
 
 - `root`:
   [StreamingSessionStorageRootTypeDef](./type_defs.md#streamingsessionstorageroottypedef)
+
+<a id="streamconfigurationtypedef"></a>
 
 ## StreamConfigurationTypeDef
 
@@ -1486,6 +1680,8 @@ Optional fields:
 - `sessionStorage`:
   [StreamConfigurationSessionStorageTypeDef](./type_defs.md#streamconfigurationsessionstoragetypedef)
 
+<a id="streamingimageencryptionconfigurationtypedef"></a>
+
 ## StreamingImageEncryptionConfigurationTypeDef
 
 ```python
@@ -1500,6 +1696,8 @@ Required fields:
 Optional fields:
 
 - `keyArn`: `str`
+
+<a id="streamingimagetypedef"></a>
 
 ## StreamingImageTypeDef
 
@@ -1525,6 +1723,8 @@ Optional fields:
 - `streamingImageId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="streamingsessionstorageroottypedef"></a>
+
 ## StreamingSessionStorageRootTypeDef
 
 ```python
@@ -1535,6 +1735,8 @@ Optional fields:
 
 - `linux`: `str`
 - `windows`: `str`
+
+<a id="streamingsessionstreamtypedef"></a>
 
 ## StreamingSessionStreamTypeDef
 
@@ -1554,6 +1756,8 @@ Optional fields:
   [StreamingSessionStreamStatusCodeType](./literals.md#streamingsessionstreamstatuscodetype)
 - `streamId`: `str`
 - `url`: `str`
+
+<a id="streamingsessiontypedef"></a>
 
 ## StreamingSessionTypeDef
 
@@ -1585,6 +1789,8 @@ Optional fields:
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
 
+<a id="studiocomponentconfigurationtypedef"></a>
+
 ## StudioComponentConfigurationTypeDef
 
 ```python
@@ -1602,6 +1808,8 @@ Optional fields:
 - `sharedFileSystemConfiguration`:
   [SharedFileSystemConfigurationTypeDef](./type_defs.md#sharedfilesystemconfigurationtypedef)
 
+<a id="studiocomponentinitializationscripttypedef"></a>
+
 ## StudioComponentInitializationScriptTypeDef
 
 ```python
@@ -1616,6 +1824,8 @@ Optional fields:
 - `runContext`:
   [StudioComponentInitializationScriptRunContextType](./literals.md#studiocomponentinitializationscriptruncontexttype)
 - `script`: `str`
+
+<a id="studiocomponentsummarytypedef"></a>
 
 ## StudioComponentSummaryTypeDef
 
@@ -1635,6 +1845,8 @@ Optional fields:
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
+
+<a id="studiocomponenttypedef"></a>
 
 ## StudioComponentTypeDef
 
@@ -1668,6 +1880,8 @@ Optional fields:
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
 
+<a id="studioencryptionconfigurationtypedef"></a>
+
 ## StudioEncryptionConfigurationTypeDef
 
 ```python
@@ -1683,6 +1897,8 @@ Optional fields:
 
 - `keyArn`: `str`
 
+<a id="studiomembershiptypedef"></a>
+
 ## StudioMembershipTypeDef
 
 ```python
@@ -1696,6 +1912,8 @@ Optional fields:
   [StudioPersonaType](./literals.md#studiopersonatype))
 - `principalId`: `str`
 - `sid`: `str`
+
+<a id="studiotypedef"></a>
 
 ## StudioTypeDef
 
@@ -1723,6 +1941,8 @@ Optional fields:
 - `updatedAt`: `datetime`
 - `userRoleArn`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1737,6 +1957,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1747,6 +1969,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatelaunchprofilememberrequestrequesttypedef"></a>
 
 ## UpdateLaunchProfileMemberRequestRequestTypeDef
 
@@ -1766,6 +1990,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="updatelaunchprofilememberresponsetypedef"></a>
+
 ## UpdateLaunchProfileMemberResponseTypeDef
 
 ```python
@@ -1778,6 +2004,8 @@ Required fields:
   [LaunchProfileMembershipTypeDef](./type_defs.md#launchprofilemembershiptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatelaunchprofilerequestrequesttypedef"></a>
 
 ## UpdateLaunchProfileRequestRequestTypeDef
 
@@ -1800,6 +2028,8 @@ Optional fields:
   [StreamConfigurationCreateTypeDef](./type_defs.md#streamconfigurationcreatetypedef)
 - `studioComponentIds`: `Sequence`\[`str`\]
 
+<a id="updatelaunchprofileresponsetypedef"></a>
+
 ## UpdateLaunchProfileResponseTypeDef
 
 ```python
@@ -1811,6 +2041,8 @@ Required fields:
 - `launchProfile`: [LaunchProfileTypeDef](./type_defs.md#launchprofiletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatestreamingimagerequestrequesttypedef"></a>
 
 ## UpdateStreamingImageRequestRequestTypeDef
 
@@ -1829,6 +2061,8 @@ Optional fields:
 - `description`: `str`
 - `name`: `str`
 
+<a id="updatestreamingimageresponsetypedef"></a>
+
 ## UpdateStreamingImageResponseTypeDef
 
 ```python
@@ -1841,6 +2075,8 @@ Required fields:
   [StreamingImageTypeDef](./type_defs.md#streamingimagetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatestudiocomponentrequestrequesttypedef"></a>
 
 ## UpdateStudioComponentRequestRequestTypeDef
 
@@ -1869,6 +2105,8 @@ Optional fields:
   [StudioComponentSubtypeType](./literals.md#studiocomponentsubtypetype)
 - `type`: [StudioComponentTypeType](./literals.md#studiocomponenttypetype)
 
+<a id="updatestudiocomponentresponsetypedef"></a>
+
 ## UpdateStudioComponentResponseTypeDef
 
 ```python
@@ -1881,6 +2119,8 @@ Required fields:
   [StudioComponentTypeDef](./type_defs.md#studiocomponenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatestudiorequestrequesttypedef"></a>
 
 ## UpdateStudioRequestRequestTypeDef
 
@@ -1899,6 +2139,8 @@ Optional fields:
 - `displayName`: `str`
 - `userRoleArn`: `str`
 
+<a id="updatestudioresponsetypedef"></a>
+
 ## UpdateStudioResponseTypeDef
 
 ```python
@@ -1910,6 +2152,8 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="validationresulttypedef"></a>
 
 ## ValidationResultTypeDef
 
@@ -1926,6 +2170,8 @@ Required fields:
 - `statusMessage`: `str`
 - `type`:
   [LaunchProfileValidationTypeType](./literals.md#launchprofilevalidationtypetype)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

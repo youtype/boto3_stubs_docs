@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-docdb-module"></a>
+
 # Literals for boto3 DocDB module
 
 > [Index](..) > [DocDB](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DocDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/docdb.html#DocDB)
 type annotations stubs module
-[mypy_boto3_docdb](https://pypi.org/project/mypy-boto3-docdb/).
+[mypy-boto3-docdb](https://pypi.org/project/mypy-boto3-docdb/).
 
 - [Literals for boto3 DocDB module](#literals-for-boto3-docdb-module)
   - [ApplyMethodType](#applymethodtype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="applymethodtype"></a>
+
 ## ApplyMethodType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 - `immediate`
 - `pending-reboot`
 
+<a id="dbinstanceavailablewaitername"></a>
+
 ## DBInstanceAvailableWaiterName
 
 ```python
@@ -49,6 +55,8 @@ from mypy_boto3_docdb.literals import DBInstanceAvailableWaiterName
 Values:
 
 - `db_instance_available`
+
+<a id="dbinstancedeletedwaitername"></a>
 
 ## DBInstanceDeletedWaiterName
 
@@ -60,6 +68,8 @@ Values:
 
 - `db_instance_deleted`
 
+<a id="describecertificatespaginatorname"></a>
+
 ## DescribeCertificatesPaginatorName
 
 ```python
@@ -69,6 +79,8 @@ from mypy_boto3_docdb.literals import DescribeCertificatesPaginatorName
 Values:
 
 - `describe_certificates`
+
+<a id="describedbclusterparametergroupspaginatorname"></a>
 
 ## DescribeDBClusterParameterGroupsPaginatorName
 
@@ -80,6 +92,8 @@ Values:
 
 - `describe_db_cluster_parameter_groups`
 
+<a id="describedbclusterparameterspaginatorname"></a>
+
 ## DescribeDBClusterParametersPaginatorName
 
 ```python
@@ -89,6 +103,8 @@ from mypy_boto3_docdb.literals import DescribeDBClusterParametersPaginatorName
 Values:
 
 - `describe_db_cluster_parameters`
+
+<a id="describedbclustersnapshotspaginatorname"></a>
 
 ## DescribeDBClusterSnapshotsPaginatorName
 
@@ -100,6 +116,8 @@ Values:
 
 - `describe_db_cluster_snapshots`
 
+<a id="describedbclusterspaginatorname"></a>
+
 ## DescribeDBClustersPaginatorName
 
 ```python
@@ -109,6 +127,8 @@ from mypy_boto3_docdb.literals import DescribeDBClustersPaginatorName
 Values:
 
 - `describe_db_clusters`
+
+<a id="describedbengineversionspaginatorname"></a>
 
 ## DescribeDBEngineVersionsPaginatorName
 
@@ -120,6 +140,8 @@ Values:
 
 - `describe_db_engine_versions`
 
+<a id="describedbinstancespaginatorname"></a>
+
 ## DescribeDBInstancesPaginatorName
 
 ```python
@@ -129,6 +151,8 @@ from mypy_boto3_docdb.literals import DescribeDBInstancesPaginatorName
 Values:
 
 - `describe_db_instances`
+
+<a id="describedbsubnetgroupspaginatorname"></a>
 
 ## DescribeDBSubnetGroupsPaginatorName
 
@@ -140,6 +164,8 @@ Values:
 
 - `describe_db_subnet_groups`
 
+<a id="describeeventsubscriptionspaginatorname"></a>
+
 ## DescribeEventSubscriptionsPaginatorName
 
 ```python
@@ -149,6 +175,8 @@ from mypy_boto3_docdb.literals import DescribeEventSubscriptionsPaginatorName
 Values:
 
 - `describe_event_subscriptions`
+
+<a id="describeeventspaginatorname"></a>
 
 ## DescribeEventsPaginatorName
 
@@ -160,6 +188,8 @@ Values:
 
 - `describe_events`
 
+<a id="describeglobalclusterspaginatorname"></a>
+
 ## DescribeGlobalClustersPaginatorName
 
 ```python
@@ -169,6 +199,8 @@ from mypy_boto3_docdb.literals import DescribeGlobalClustersPaginatorName
 Values:
 
 - `describe_global_clusters`
+
+<a id="describeorderabledbinstanceoptionspaginatorname"></a>
 
 ## DescribeOrderableDBInstanceOptionsPaginatorName
 
@@ -180,6 +212,8 @@ Values:
 
 - `describe_orderable_db_instance_options`
 
+<a id="describependingmaintenanceactionspaginatorname"></a>
+
 ## DescribePendingMaintenanceActionsPaginatorName
 
 ```python
@@ -189,6 +223,8 @@ from mypy_boto3_docdb.literals import DescribePendingMaintenanceActionsPaginator
 Values:
 
 - `describe_pending_maintenance_actions`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -204,6 +240,8 @@ Values:
 - `db-parameter-group`
 - `db-security-group`
 - `db-snapshot`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -513,6 +551,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -534,6 +574,8 @@ Values:
 - `describe_global_clusters`
 - `describe_orderable_db_instance_options`
 - `describe_pending_maintenance_actions`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

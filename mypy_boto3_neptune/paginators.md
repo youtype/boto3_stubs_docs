@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-neptune-module"></a>
+
 # Paginators for boto3 Neptune module
 
 > [Index](..) > [Neptune](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Neptune](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/neptune.html#Neptune)
 type annotations stubs module
-[mypy_boto3_neptune](https://pypi.org/project/mypy-boto3-neptune/).
+[mypy-boto3-neptune](https://pypi.org/project/mypy-boto3-neptune/).
 
 - [Paginators for boto3 Neptune module](#paginators-for-boto3-neptune-module)
   - [DescribeDBClusterEndpointsPaginator](#describedbclusterendpointspaginator)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [DescribeOrderableDBInstanceOptionsPaginator](#describeorderabledbinstanceoptionspaginator)
   - [DescribePendingMaintenanceActionsPaginator](#describependingmaintenanceactionspaginator)
 
+<a id="describedbclusterendpointspaginator"></a>
+
 ## DescribeDBClusterEndpointsPaginator
 
 Type annotations for
@@ -32,10 +36,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBClusterEndpointsPaginator
 
 def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_cluster_endpoints")
+    return Session().client("neptune").get_paginator("describe_db_cluster_endpoints")
 ```
 
 Boto3 documentation:
@@ -52,6 +58,8 @@ Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
 `DescribeDBClusterEndpointsPaginator.paginate` returns
 `_PageIterator`\[[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef)\].
 
+<a id="describedbclusterparametergroupspaginator"></a>
+
 ## DescribeDBClusterParameterGroupsPaginator
 
 Type annotations for
@@ -60,10 +68,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBClusterParameterGroupsPaginator
 
 def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterParameterGroupsPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_cluster_parameter_groups")
+    return Session().client("neptune").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
 Boto3 documentation:
@@ -79,6 +89,8 @@ Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
 `DescribeDBClusterParameterGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef)\].
 
+<a id="describedbclusterparameterspaginator"></a>
+
 ## DescribeDBClusterParametersPaginator
 
 Type annotations for
@@ -87,10 +99,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBClusterParametersPaginator
 
 def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParametersPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_cluster_parameters")
+    return Session().client("neptune").get_paginator("describe_db_cluster_parameters")
 ```
 
 Boto3 documentation:
@@ -107,6 +121,8 @@ Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
 `DescribeDBClusterParametersPaginator.paginate` returns
 `_PageIterator`\[[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)\].
 
+<a id="describedbclustersnapshotspaginator"></a>
+
 ## DescribeDBClusterSnapshotsPaginator
 
 Type annotations for
@@ -115,10 +131,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBClusterSnapshotsPaginator
 
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_cluster_snapshots")
+    return Session().client("neptune").get_paginator("describe_db_cluster_snapshots")
 ```
 
 Boto3 documentation:
@@ -138,6 +156,8 @@ Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
 `DescribeDBClusterSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)\].
 
+<a id="describedbclusterspaginator"></a>
+
 ## DescribeDBClustersPaginator
 
 Type annotations for
@@ -146,10 +166,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBClustersPaginator
 
 def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_clusters")
+    return Session().client("neptune").get_paginator("describe_db_clusters")
 ```
 
 Boto3 documentation:
@@ -165,6 +187,8 @@ Arguments for `DescribeDBClustersPaginator.paginate` method:
 `DescribeDBClustersPaginator.paginate` returns
 `_PageIterator`\[[DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)\].
 
+<a id="describedbengineversionspaginator"></a>
+
 ## DescribeDBEngineVersionsPaginator
 
 Type annotations for
@@ -173,10 +197,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBEngineVersionsPaginator
 
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_engine_versions")
+    return Session().client("neptune").get_paginator("describe_db_engine_versions")
 ```
 
 Boto3 documentation:
@@ -197,6 +223,8 @@ Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
 `DescribeDBEngineVersionsPaginator.paginate` returns
 `_PageIterator`\[[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)\].
 
+<a id="describedbinstancespaginator"></a>
+
 ## DescribeDBInstancesPaginator
 
 Type annotations for
@@ -205,10 +233,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBInstancesPaginator
 
 def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_instances")
+    return Session().client("neptune").get_paginator("describe_db_instances")
 ```
 
 Boto3 documentation:
@@ -224,6 +254,8 @@ Arguments for `DescribeDBInstancesPaginator.paginate` method:
 `DescribeDBInstancesPaginator.paginate` returns
 `_PageIterator`\[[DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef)\].
 
+<a id="describedbparametergroupspaginator"></a>
+
 ## DescribeDBParameterGroupsPaginator
 
 Type annotations for
@@ -232,10 +264,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBParameterGroupsPaginator
 
 def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_parameter_groups")
+    return Session().client("neptune").get_paginator("describe_db_parameter_groups")
 ```
 
 Boto3 documentation:
@@ -251,6 +285,8 @@ Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
 `DescribeDBParameterGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef)\].
 
+<a id="describedbparameterspaginator"></a>
+
 ## DescribeDBParametersPaginator
 
 Type annotations for
@@ -259,10 +295,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBParametersPaginator
 
 def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_parameters")
+    return Session().client("neptune").get_paginator("describe_db_parameters")
 ```
 
 Boto3 documentation:
@@ -279,6 +317,8 @@ Arguments for `DescribeDBParametersPaginator.paginate` method:
 `DescribeDBParametersPaginator.paginate` returns
 `_PageIterator`\[[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef)\].
 
+<a id="describedbsubnetgroupspaginator"></a>
+
 ## DescribeDBSubnetGroupsPaginator
 
 Type annotations for
@@ -287,10 +327,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeDBSubnetGroupsPaginator
 
 def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator:
-    return boto3.client("neptune").get_paginator("describe_db_subnet_groups")
+    return Session().client("neptune").get_paginator("describe_db_subnet_groups")
 ```
 
 Boto3 documentation:
@@ -306,6 +348,8 @@ Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
 `DescribeDBSubnetGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef)\].
 
+<a id="describeenginedefaultparameterspaginator"></a>
+
 ## DescribeEngineDefaultParametersPaginator
 
 Type annotations for
@@ -314,10 +358,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeEngineDefaultParametersPaginator
 
 def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultParametersPaginator:
-    return boto3.client("neptune").get_paginator("describe_engine_default_parameters")
+    return Session().client("neptune").get_paginator("describe_engine_default_parameters")
 ```
 
 Boto3 documentation:
@@ -333,6 +379,8 @@ Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 `DescribeEngineDefaultParametersPaginator.paginate` returns
 `_PageIterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
 
+<a id="describeeventsubscriptionspaginator"></a>
+
 ## DescribeEventSubscriptionsPaginator
 
 Type annotations for
@@ -341,10 +389,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
-    return boto3.client("neptune").get_paginator("describe_event_subscriptions")
+    return Session().client("neptune").get_paginator("describe_event_subscriptions")
 ```
 
 Boto3 documentation:
@@ -360,6 +410,8 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 `DescribeEventSubscriptionsPaginator.paginate` returns
 `_PageIterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
+<a id="describeeventspaginator"></a>
+
 ## DescribeEventsPaginator
 
 Type annotations for
@@ -368,10 +420,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
-    return boto3.client("neptune").get_paginator("describe_events")
+    return Session().client("neptune").get_paginator("describe_events")
 ```
 
 Boto3 documentation:
@@ -392,6 +446,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 `DescribeEventsPaginator.paginate` returns
 `_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
+<a id="describeorderabledbinstanceoptionspaginator"></a>
+
 ## DescribeOrderableDBInstanceOptionsPaginator
 
 Type annotations for
@@ -400,10 +456,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribeOrderableDBInstanceOptionsPaginator
 
 def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableDBInstanceOptionsPaginator:
-    return boto3.client("neptune").get_paginator("describe_orderable_db_instance_options")
+    return Session().client("neptune").get_paginator("describe_orderable_db_instance_options")
 ```
 
 Boto3 documentation:
@@ -423,6 +481,8 @@ Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
 `DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
 `_PageIterator`\[[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)\].
 
+<a id="describependingmaintenanceactionspaginator"></a>
+
 ## DescribePendingMaintenanceActionsPaginator
 
 Type annotations for
@@ -431,10 +491,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_neptune.paginator import DescribePendingMaintenanceActionsPaginator
 
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
-    return boto3.client("neptune").get_paginator("describe_pending_maintenance_actions")
+    return Session().client("neptune").get_paginator("describe_pending_maintenance_actions")
 ```
 
 Boto3 documentation:

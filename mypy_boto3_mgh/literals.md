@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-migrationhub-module"></a>
+
 # Literals for boto3 MigrationHub module
 
 > [Index](..) > [MigrationHub](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
-[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [Literals for boto3 MigrationHub module](#literals-for-boto3-migrationhub-module)
   - [ApplicationStatusType](#applicationstatustype)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="applicationstatustype"></a>
+
 ## ApplicationStatusType
 
 ```python
@@ -31,6 +35,8 @@ Values:
 - `IN_PROGRESS`
 - `NOT_STARTED`
 
+<a id="listapplicationstatespaginatorname"></a>
+
 ## ListApplicationStatesPaginatorName
 
 ```python
@@ -40,6 +46,8 @@ from mypy_boto3_mgh.literals import ListApplicationStatesPaginatorName
 Values:
 
 - `list_application_states`
+
+<a id="listcreatedartifactspaginatorname"></a>
 
 ## ListCreatedArtifactsPaginatorName
 
@@ -51,6 +59,8 @@ Values:
 
 - `list_created_artifacts`
 
+<a id="listdiscoveredresourcespaginatorname"></a>
+
 ## ListDiscoveredResourcesPaginatorName
 
 ```python
@@ -60,6 +70,8 @@ from mypy_boto3_mgh.literals import ListDiscoveredResourcesPaginatorName
 Values:
 
 - `list_discovered_resources`
+
+<a id="listmigrationtaskspaginatorname"></a>
 
 ## ListMigrationTasksPaginatorName
 
@@ -71,6 +83,8 @@ Values:
 
 - `list_migration_tasks`
 
+<a id="listprogressupdatestreamspaginatorname"></a>
+
 ## ListProgressUpdateStreamsPaginatorName
 
 ```python
@@ -80,6 +94,8 @@ from mypy_boto3_mgh.literals import ListProgressUpdateStreamsPaginatorName
 Values:
 
 - `list_progress_update_streams`
+
+<a id="resourceattributetypetype"></a>
 
 ## ResourceAttributeTypeType
 
@@ -100,6 +116,8 @@ Values:
 - `VM_NAME`
 - `VM_PATH`
 
+<a id="statustype"></a>
+
 ## StatusType
 
 ```python
@@ -112,6 +130,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `NOT_STARTED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -420,6 +440,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

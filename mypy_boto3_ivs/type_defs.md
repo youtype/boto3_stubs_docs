@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ivs-module"></a>
+
 # Typed dictionaries for boto3 IVS module
 
 > [Index](..) > [IVS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IVS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ivs.html#IVS)
 type annotations stubs module
-[mypy_boto3_ivs](https://pypi.org/project/mypy-boto3-ivs/).
+[mypy-boto3-ivs](https://pypi.org/project/mypy-boto3-ivs/).
 
 - [Typed dictionaries for boto3 IVS module](#typed-dictionaries-for-boto3-ivs-module)
   - [AudioConfigurationTypeDef](#audioconfigurationtypedef)
@@ -80,6 +82,8 @@ type annotations stubs module
   - [UpdateChannelResponseTypeDef](#updatechannelresponsetypedef)
   - [VideoConfigurationTypeDef](#videoconfigurationtypedef)
 
+<a id="audioconfigurationtypedef"></a>
+
 ## AudioConfigurationTypeDef
 
 ```python
@@ -93,6 +97,8 @@ Optional fields:
 - `sampleRate`: `int`
 - `targetBitrate`: `int`
 
+<a id="batcherrortypedef"></a>
+
 ## BatchErrorTypeDef
 
 ```python
@@ -105,6 +111,8 @@ Optional fields:
 - `code`: `str`
 - `message`: `str`
 
+<a id="batchgetchannelrequestrequesttypedef"></a>
+
 ## BatchGetChannelRequestRequestTypeDef
 
 ```python
@@ -114,6 +122,8 @@ from mypy_boto3_ivs.type_defs import BatchGetChannelRequestRequestTypeDef
 Required fields:
 
 - `arns`: `Sequence`\[`str`\]
+
+<a id="batchgetchannelresponsetypedef"></a>
 
 ## BatchGetChannelResponseTypeDef
 
@@ -128,6 +138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetstreamkeyrequestrequesttypedef"></a>
+
 ## BatchGetStreamKeyRequestRequestTypeDef
 
 ```python
@@ -137,6 +149,8 @@ from mypy_boto3_ivs.type_defs import BatchGetStreamKeyRequestRequestTypeDef
 Required fields:
 
 - `arns`: `Sequence`\[`str`\]
+
+<a id="batchgetstreamkeyresponsetypedef"></a>
 
 ## BatchGetStreamKeyResponseTypeDef
 
@@ -150,6 +164,8 @@ Required fields:
 - `streamKeys`: `List`\[[StreamKeyTypeDef](./type_defs.md#streamkeytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="channelsummarytypedef"></a>
 
 ## ChannelSummaryTypeDef
 
@@ -165,6 +181,8 @@ Optional fields:
 - `name`: `str`
 - `recordingConfigurationArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="channeltypedef"></a>
 
 ## ChannelTypeDef
 
@@ -184,6 +202,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
+<a id="createchannelrequestrequesttypedef"></a>
+
 ## CreateChannelRequestRequestTypeDef
 
 ```python
@@ -199,6 +219,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
+<a id="createchannelresponsetypedef"></a>
+
 ## CreateChannelResponseTypeDef
 
 ```python
@@ -211,6 +233,8 @@ Required fields:
 - `streamKey`: [StreamKeyTypeDef](./type_defs.md#streamkeytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrecordingconfigurationrequestrequesttypedef"></a>
 
 ## CreateRecordingConfigurationRequestRequestTypeDef
 
@@ -230,6 +254,8 @@ Optional fields:
 - `thumbnailConfiguration`:
   [ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef)
 
+<a id="createrecordingconfigurationresponsetypedef"></a>
+
 ## CreateRecordingConfigurationResponseTypeDef
 
 ```python
@@ -242,6 +268,8 @@ Required fields:
   [RecordingConfigurationTypeDef](./type_defs.md#recordingconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreamkeyrequestrequesttypedef"></a>
 
 ## CreateStreamKeyRequestRequestTypeDef
 
@@ -257,6 +285,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstreamkeyresponsetypedef"></a>
+
 ## CreateStreamKeyResponseTypeDef
 
 ```python
@@ -269,6 +299,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletechannelrequestrequesttypedef"></a>
+
 ## DeleteChannelRequestRequestTypeDef
 
 ```python
@@ -278,6 +310,8 @@ from mypy_boto3_ivs.type_defs import DeleteChannelRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="deleteplaybackkeypairrequestrequesttypedef"></a>
 
 ## DeletePlaybackKeyPairRequestRequestTypeDef
 
@@ -289,6 +323,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deleterecordingconfigurationrequestrequesttypedef"></a>
+
 ## DeleteRecordingConfigurationRequestRequestTypeDef
 
 ```python
@@ -299,6 +335,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deletestreamkeyrequestrequesttypedef"></a>
+
 ## DeleteStreamKeyRequestRequestTypeDef
 
 ```python
@@ -308,6 +346,8 @@ from mypy_boto3_ivs.type_defs import DeleteStreamKeyRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="destinationconfigurationtypedef"></a>
 
 ## DestinationConfigurationTypeDef
 
@@ -320,6 +360,8 @@ Optional fields:
 - `s3`:
   [S3DestinationConfigurationTypeDef](./type_defs.md#s3destinationconfigurationtypedef)
 
+<a id="getchannelrequestrequesttypedef"></a>
+
 ## GetChannelRequestRequestTypeDef
 
 ```python
@@ -329,6 +371,8 @@ from mypy_boto3_ivs.type_defs import GetChannelRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getchannelresponsetypedef"></a>
 
 ## GetChannelResponseTypeDef
 
@@ -342,6 +386,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getplaybackkeypairrequestrequesttypedef"></a>
+
 ## GetPlaybackKeyPairRequestRequestTypeDef
 
 ```python
@@ -351,6 +397,8 @@ from mypy_boto3_ivs.type_defs import GetPlaybackKeyPairRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getplaybackkeypairresponsetypedef"></a>
 
 ## GetPlaybackKeyPairResponseTypeDef
 
@@ -364,6 +412,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecordingconfigurationrequestrequesttypedef"></a>
+
 ## GetRecordingConfigurationRequestRequestTypeDef
 
 ```python
@@ -373,6 +423,8 @@ from mypy_boto3_ivs.type_defs import GetRecordingConfigurationRequestRequestType
 Required fields:
 
 - `arn`: `str`
+
+<a id="getrecordingconfigurationresponsetypedef"></a>
 
 ## GetRecordingConfigurationResponseTypeDef
 
@@ -387,6 +439,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamkeyrequestrequesttypedef"></a>
+
 ## GetStreamKeyRequestRequestTypeDef
 
 ```python
@@ -396,6 +450,8 @@ from mypy_boto3_ivs.type_defs import GetStreamKeyRequestRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="getstreamkeyresponsetypedef"></a>
 
 ## GetStreamKeyResponseTypeDef
 
@@ -409,6 +465,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstreamrequestrequesttypedef"></a>
+
 ## GetStreamRequestRequestTypeDef
 
 ```python
@@ -418,6 +476,8 @@ from mypy_boto3_ivs.type_defs import GetStreamRequestRequestTypeDef
 Required fields:
 
 - `channelArn`: `str`
+
+<a id="getstreamresponsetypedef"></a>
 
 ## GetStreamResponseTypeDef
 
@@ -430,6 +490,8 @@ Required fields:
 - `stream`: [StreamTypeDef](./type_defs.md#streamtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getstreamsessionrequestrequesttypedef"></a>
 
 ## GetStreamSessionRequestRequestTypeDef
 
@@ -445,6 +507,8 @@ Optional fields:
 
 - `streamId`: `str`
 
+<a id="getstreamsessionresponsetypedef"></a>
+
 ## GetStreamSessionResponseTypeDef
 
 ```python
@@ -456,6 +520,8 @@ Required fields:
 - `streamSession`: [StreamSessionTypeDef](./type_defs.md#streamsessiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importplaybackkeypairrequestrequesttypedef"></a>
 
 ## ImportPlaybackKeyPairRequestRequestTypeDef
 
@@ -472,6 +538,8 @@ Optional fields:
 - `name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="importplaybackkeypairresponsetypedef"></a>
+
 ## ImportPlaybackKeyPairResponseTypeDef
 
 ```python
@@ -483,6 +551,8 @@ Required fields:
 - `keyPair`: [PlaybackKeyPairTypeDef](./type_defs.md#playbackkeypairtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ingestconfigurationtypedef"></a>
 
 ## IngestConfigurationTypeDef
 
@@ -497,6 +567,8 @@ Optional fields:
 - `video`:
   [VideoConfigurationTypeDef](./type_defs.md#videoconfigurationtypedef)
 
+<a id="listchannelsrequestrequesttypedef"></a>
+
 ## ListChannelsRequestRequestTypeDef
 
 ```python
@@ -509,6 +581,8 @@ Optional fields:
 - `filterByRecordingConfigurationArn`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listchannelsresponsetypedef"></a>
 
 ## ListChannelsResponseTypeDef
 
@@ -524,6 +598,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listplaybackkeypairsrequestrequesttypedef"></a>
+
 ## ListPlaybackKeyPairsRequestRequestTypeDef
 
 ```python
@@ -534,6 +610,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listplaybackkeypairsresponsetypedef"></a>
 
 ## ListPlaybackKeyPairsResponseTypeDef
 
@@ -549,6 +627,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrecordingconfigurationsrequestrequesttypedef"></a>
+
 ## ListRecordingConfigurationsRequestRequestTypeDef
 
 ```python
@@ -559,6 +639,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listrecordingconfigurationsresponsetypedef"></a>
 
 ## ListRecordingConfigurationsResponseTypeDef
 
@@ -573,6 +655,8 @@ Required fields:
   `List`\[[RecordingConfigurationSummaryTypeDef](./type_defs.md#recordingconfigurationsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststreamkeysrequestrequesttypedef"></a>
 
 ## ListStreamKeysRequestRequestTypeDef
 
@@ -589,6 +673,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="liststreamkeysresponsetypedef"></a>
+
 ## ListStreamKeysResponseTypeDef
 
 ```python
@@ -602,6 +688,8 @@ Required fields:
   `List`\[[StreamKeySummaryTypeDef](./type_defs.md#streamkeysummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststreamsessionsrequestrequesttypedef"></a>
 
 ## ListStreamSessionsRequestRequestTypeDef
 
@@ -618,6 +706,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="liststreamsessionsresponsetypedef"></a>
+
 ## ListStreamSessionsResponseTypeDef
 
 ```python
@@ -632,6 +722,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststreamsrequestrequesttypedef"></a>
+
 ## ListStreamsRequestRequestTypeDef
 
 ```python
@@ -643,6 +735,8 @@ Optional fields:
 - `filterBy`: [StreamFiltersTypeDef](./type_defs.md#streamfilterstypedef)
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="liststreamsresponsetypedef"></a>
 
 ## ListStreamsResponseTypeDef
 
@@ -658,6 +752,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -667,6 +763,8 @@ from mypy_boto3_ivs.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -680,6 +778,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -692,6 +792,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="playbackkeypairsummarytypedef"></a>
+
 ## PlaybackKeyPairSummaryTypeDef
 
 ```python
@@ -703,6 +805,8 @@ Optional fields:
 - `arn`: `str`
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="playbackkeypairtypedef"></a>
 
 ## PlaybackKeyPairTypeDef
 
@@ -717,6 +821,8 @@ Optional fields:
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="putmetadatarequestrequesttypedef"></a>
+
 ## PutMetadataRequestRequestTypeDef
 
 ```python
@@ -727,6 +833,8 @@ Required fields:
 
 - `channelArn`: `str`
 - `metadata`: `str`
+
+<a id="recordingconfigurationsummarytypedef"></a>
 
 ## RecordingConfigurationSummaryTypeDef
 
@@ -746,6 +854,8 @@ Optional fields:
 
 - `name`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="recordingconfigurationtypedef"></a>
 
 ## RecordingConfigurationTypeDef
 
@@ -768,6 +878,8 @@ Optional fields:
 - `thumbnailConfiguration`:
   [ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -782,6 +894,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3destinationconfigurationtypedef"></a>
+
 ## S3DestinationConfigurationTypeDef
 
 ```python
@@ -792,6 +906,8 @@ Required fields:
 
 - `bucketName`: `str`
 
+<a id="stopstreamrequestrequesttypedef"></a>
+
 ## StopStreamRequestRequestTypeDef
 
 ```python
@@ -801,6 +917,8 @@ from mypy_boto3_ivs.type_defs import StopStreamRequestRequestTypeDef
 Required fields:
 
 - `channelArn`: `str`
+
+<a id="streameventtypedef"></a>
 
 ## StreamEventTypeDef
 
@@ -814,6 +932,8 @@ Optional fields:
 - `name`: `str`
 - `type`: `str`
 
+<a id="streamfilterstypedef"></a>
+
 ## StreamFiltersTypeDef
 
 ```python
@@ -823,6 +943,8 @@ from mypy_boto3_ivs.type_defs import StreamFiltersTypeDef
 Optional fields:
 
 - `health`: [StreamHealthType](./literals.md#streamhealthtype)
+
+<a id="streamkeysummarytypedef"></a>
 
 ## StreamKeySummaryTypeDef
 
@@ -835,6 +957,8 @@ Optional fields:
 - `arn`: `str`
 - `channelArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="streamkeytypedef"></a>
 
 ## StreamKeyTypeDef
 
@@ -849,6 +973,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `value`: `str`
 
+<a id="streamsessionsummarytypedef"></a>
+
 ## StreamSessionSummaryTypeDef
 
 ```python
@@ -861,6 +987,8 @@ Optional fields:
 - `hasErrorEvent`: `bool`
 - `startTime`: `datetime`
 - `streamId`: `str`
+
+<a id="streamsessiontypedef"></a>
 
 ## StreamSessionTypeDef
 
@@ -881,6 +1009,8 @@ Optional fields:
 - `truncatedEvents`:
   `List`\[[StreamEventTypeDef](./type_defs.md#streameventtypedef)\]
 
+<a id="streamsummarytypedef"></a>
+
 ## StreamSummaryTypeDef
 
 ```python
@@ -895,6 +1025,8 @@ Optional fields:
 - `state`: [StreamStateType](./literals.md#streamstatetype)
 - `streamId`: `str`
 - `viewerCount`: `int`
+
+<a id="streamtypedef"></a>
 
 ## StreamTypeDef
 
@@ -912,6 +1044,8 @@ Optional fields:
 - `streamId`: `str`
 - `viewerCount`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -922,6 +1056,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="thumbnailconfigurationtypedef"></a>
 
 ## ThumbnailConfigurationTypeDef
 
@@ -934,6 +1070,8 @@ Optional fields:
 - `recordingMode`: [RecordingModeType](./literals.md#recordingmodetype)
 - `targetIntervalSeconds`: `int`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -944,6 +1082,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatechannelrequestrequesttypedef"></a>
 
 ## UpdateChannelRequestRequestTypeDef
 
@@ -963,6 +1103,8 @@ Optional fields:
 - `recordingConfigurationArn`: `str`
 - `type`: [ChannelTypeType](./literals.md#channeltypetype)
 
+<a id="updatechannelresponsetypedef"></a>
+
 ## UpdateChannelResponseTypeDef
 
 ```python
@@ -974,6 +1116,8 @@ Required fields:
 - `channel`: [ChannelTypeDef](./type_defs.md#channeltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="videoconfigurationtypedef"></a>
 
 ## VideoConfigurationTypeDef
 

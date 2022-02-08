@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-databasemigrationservice-module"></a>
+
 # Waiters for boto3 DatabaseMigrationService module
 
 > [Index](..) > [DatabaseMigrationService](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
-[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [Waiters for boto3 DatabaseMigrationService module](#waiters-for-boto3-databasemigrationservice-module)
   - [EndpointDeletedWaiter](#endpointdeletedwaiter)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ReplicationTaskStoppedWaiter](#replicationtaskstoppedwaiter)
   - [TestConnectionSucceedsWaiter](#testconnectionsucceedswaiter)
 
+<a id="endpointdeletedwaiter"></a>
+
 ## EndpointDeletedWaiter
 
 Type annotations for `boto3.client("dms").get_waiter("endpoint_deleted")`.
@@ -24,10 +28,12 @@ Type annotations for `boto3.client("dms").get_waiter("endpoint_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import EndpointDeletedWaiter
 
 def get_endpoint_deleted_waiter() -> EndpointDeletedWaiter:
-    return boto3.client("dms").get_waiter("endpoint_deleted")
+    return Session().client("dms").get_waiter("endpoint_deleted")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `EndpointDeletedWaiter.wait` method:
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="replicationinstanceavailablewaiter"></a>
+
 ## ReplicationInstanceAvailableWaiter
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import ReplicationInstanceAvailableWaiter
 
 def get_replication_instance_available_waiter() -> ReplicationInstanceAvailableWaiter:
-    return boto3.client("dms").get_waiter("replication_instance_available")
+    return Session().client("dms").get_waiter("replication_instance_available")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ReplicationInstanceAvailableWaiter.wait` method:
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="replicationinstancedeletedwaiter"></a>
+
 ## ReplicationInstanceDeletedWaiter
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import ReplicationInstanceDeletedWaiter
 
 def get_replication_instance_deleted_waiter() -> ReplicationInstanceDeletedWaiter:
-    return boto3.client("dms").get_waiter("replication_instance_deleted")
+    return Session().client("dms").get_waiter("replication_instance_deleted")
 ```
 
 Boto3 documentation:
@@ -88,6 +102,8 @@ Arguments for `ReplicationInstanceDeletedWaiter.wait` method:
 - `Marker`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="replicationtaskdeletedwaiter"></a>
+
 ## ReplicationTaskDeletedWaiter
 
 Type annotations for
@@ -96,10 +112,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import ReplicationTaskDeletedWaiter
 
 def get_replication_task_deleted_waiter() -> ReplicationTaskDeletedWaiter:
-    return boto3.client("dms").get_waiter("replication_task_deleted")
+    return Session().client("dms").get_waiter("replication_task_deleted")
 ```
 
 Boto3 documentation:
@@ -113,6 +131,8 @@ Arguments for `ReplicationTaskDeletedWaiter.wait` method:
 - `WithoutSettings`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="replicationtaskreadywaiter"></a>
+
 ## ReplicationTaskReadyWaiter
 
 Type annotations for
@@ -121,10 +141,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import ReplicationTaskReadyWaiter
 
 def get_replication_task_ready_waiter() -> ReplicationTaskReadyWaiter:
-    return boto3.client("dms").get_waiter("replication_task_ready")
+    return Session().client("dms").get_waiter("replication_task_ready")
 ```
 
 Boto3 documentation:
@@ -138,6 +160,8 @@ Arguments for `ReplicationTaskReadyWaiter.wait` method:
 - `WithoutSettings`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="replicationtaskrunningwaiter"></a>
+
 ## ReplicationTaskRunningWaiter
 
 Type annotations for
@@ -146,10 +170,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import ReplicationTaskRunningWaiter
 
 def get_replication_task_running_waiter() -> ReplicationTaskRunningWaiter:
-    return boto3.client("dms").get_waiter("replication_task_running")
+    return Session().client("dms").get_waiter("replication_task_running")
 ```
 
 Boto3 documentation:
@@ -163,6 +189,8 @@ Arguments for `ReplicationTaskRunningWaiter.wait` method:
 - `WithoutSettings`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="replicationtaskstoppedwaiter"></a>
+
 ## ReplicationTaskStoppedWaiter
 
 Type annotations for
@@ -171,10 +199,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import ReplicationTaskStoppedWaiter
 
 def get_replication_task_stopped_waiter() -> ReplicationTaskStoppedWaiter:
-    return boto3.client("dms").get_waiter("replication_task_stopped")
+    return Session().client("dms").get_waiter("replication_task_stopped")
 ```
 
 Boto3 documentation:
@@ -188,6 +218,8 @@ Arguments for `ReplicationTaskStoppedWaiter.wait` method:
 - `WithoutSettings`: `bool`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="testconnectionsucceedswaiter"></a>
+
 ## TestConnectionSucceedsWaiter
 
 Type annotations for
@@ -196,10 +228,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dms.waiter import TestConnectionSucceedsWaiter
 
 def get_test_connection_succeeds_waiter() -> TestConnectionSucceedsWaiter:
-    return boto3.client("dms").get_waiter("test_connection_succeeds")
+    return Session().client("dms").get_waiter("test_connection_succeeds")
 ```
 
 Boto3 documentation:

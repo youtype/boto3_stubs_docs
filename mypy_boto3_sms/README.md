@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sms-module"></a>
+
 # Type annotations for boto3 SMS module
 
 > [Index](..) > SMS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
 type annotations stubs module
-[mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
+[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sms]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sms]'
+
+# standalone installation
 pip install mypy-boto3-sms
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-sms
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="smsclient"></a>
+
 ## SMSClient
 
 Type annotations for `boto3.client("sms")` as [SMSClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sms.client import SMSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -71,6 +85,8 @@ from mypy_boto3_sms.client import SMSClient
 - [update_app](./client.md#update_app)
 - [update_replication_job](./client.md#update_replication_job)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SMSClient [exceptions](./client.md#exceptions)
@@ -89,6 +105,8 @@ SMSClient [exceptions](./client.md#exceptions)
 - TemporarilyUnavailableException
 - UnauthorizedOperationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -97,7 +115,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sms.paginators import GetConnectorsPaginator, ...
+from mypy_boto3_sms.paginator import GetConnectorsPaginator, ...
 ```
 
 - [GetConnectorsPaginator](./paginators.md#getconnectorspaginator)
@@ -105,6 +123,8 @@ from mypy_boto3_sms.paginators import GetConnectorsPaginator, ...
 - [GetReplicationRunsPaginator](./paginators.md#getreplicationrunspaginator)
 - [GetServersPaginator](./paginators.md#getserverspaginator)
 - [ListAppsPaginator](./paginators.md#listappspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -142,6 +162,8 @@ from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType, ...
 - [VmManagerTypeType](./literals.md#vmmanagertypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

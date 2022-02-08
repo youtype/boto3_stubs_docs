@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-synthetics-module"></a>
+
 # Typed dictionaries for boto3 Synthetics module
 
 > [Index](..) > [Synthetics](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
-[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+[mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 - [Typed dictionaries for boto3 Synthetics module](#typed-dictionaries-for-boto3-synthetics-module)
   - [ArtifactConfigInputTypeDef](#artifactconfiginputtypedef)
@@ -52,6 +54,8 @@ type annotations stubs module
   - [VpcConfigInputTypeDef](#vpcconfiginputtypedef)
   - [VpcConfigOutputTypeDef](#vpcconfigoutputtypedef)
 
+<a id="artifactconfiginputtypedef"></a>
+
 ## ArtifactConfigInputTypeDef
 
 ```python
@@ -63,6 +67,8 @@ Optional fields:
 - `S3Encryption`:
   [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
 
+<a id="artifactconfigoutputtypedef"></a>
+
 ## ArtifactConfigOutputTypeDef
 
 ```python
@@ -73,6 +79,8 @@ Optional fields:
 
 - `S3Encryption`:
   [S3EncryptionConfigTypeDef](./type_defs.md#s3encryptionconfigtypedef)
+
+<a id="basescreenshottypedef"></a>
 
 ## BaseScreenshotTypeDef
 
@@ -87,6 +95,8 @@ Required fields:
 Optional fields:
 
 - `IgnoreCoordinates`: `List`\[`str`\]
+
+<a id="canarycodeinputtypedef"></a>
 
 ## CanaryCodeInputTypeDef
 
@@ -105,6 +115,8 @@ Optional fields:
 - `S3Version`: `str`
 - `ZipFile`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="canarycodeoutputtypedef"></a>
+
 ## CanaryCodeOutputTypeDef
 
 ```python
@@ -116,6 +128,8 @@ Optional fields:
 - `SourceLocationArn`: `str`
 - `Handler`: `str`
 
+<a id="canarylastruntypedef"></a>
+
 ## CanaryLastRunTypeDef
 
 ```python
@@ -126,6 +140,8 @@ Optional fields:
 
 - `CanaryName`: `str`
 - `LastRun`: [CanaryRunTypeDef](./type_defs.md#canaryruntypedef)
+
+<a id="canaryrunconfiginputtypedef"></a>
 
 ## CanaryRunConfigInputTypeDef
 
@@ -140,6 +156,8 @@ Optional fields:
 - `ActiveTracing`: `bool`
 - `EnvironmentVariables`: `Mapping`\[`str`, `str`\]
 
+<a id="canaryrunconfigoutputtypedef"></a>
+
 ## CanaryRunConfigOutputTypeDef
 
 ```python
@@ -151,6 +169,8 @@ Optional fields:
 - `TimeoutInSeconds`: `int`
 - `MemoryInMB`: `int`
 - `ActiveTracing`: `bool`
+
+<a id="canaryrunstatustypedef"></a>
 
 ## CanaryRunStatusTypeDef
 
@@ -165,6 +185,8 @@ Optional fields:
 - `StateReasonCode`:
   [CanaryRunStateReasonCodeType](./literals.md#canaryrunstatereasoncodetype)
 
+<a id="canaryruntimelinetypedef"></a>
+
 ## CanaryRunTimelineTypeDef
 
 ```python
@@ -175,6 +197,8 @@ Optional fields:
 
 - `Started`: `datetime`
 - `Completed`: `datetime`
+
+<a id="canaryruntypedef"></a>
 
 ## CanaryRunTypeDef
 
@@ -191,6 +215,8 @@ Optional fields:
   [CanaryRunTimelineTypeDef](./type_defs.md#canaryruntimelinetypedef)
 - `ArtifactS3Location`: `str`
 
+<a id="canaryscheduleinputtypedef"></a>
+
 ## CanaryScheduleInputTypeDef
 
 ```python
@@ -205,6 +231,8 @@ Optional fields:
 
 - `DurationInSeconds`: `int`
 
+<a id="canaryscheduleoutputtypedef"></a>
+
 ## CanaryScheduleOutputTypeDef
 
 ```python
@@ -215,6 +243,8 @@ Optional fields:
 
 - `Expression`: `str`
 - `DurationInSeconds`: `int`
+
+<a id="canarystatustypedef"></a>
 
 ## CanaryStatusTypeDef
 
@@ -229,6 +259,8 @@ Optional fields:
 - `StateReasonCode`: `Literal['INVALID_PERMISSIONS']` (see
   [CanaryStateReasonCodeType](./literals.md#canarystatereasoncodetype))
 
+<a id="canarytimelinetypedef"></a>
+
 ## CanaryTimelineTypeDef
 
 ```python
@@ -241,6 +273,8 @@ Optional fields:
 - `LastModified`: `datetime`
 - `LastStarted`: `datetime`
 - `LastStopped`: `datetime`
+
+<a id="canarytypedef"></a>
 
 ## CanaryTypeDef
 
@@ -272,6 +306,8 @@ Optional fields:
 - `ArtifactConfig`:
   [ArtifactConfigOutputTypeDef](./type_defs.md#artifactconfigoutputtypedef)
 
+<a id="createcanaryrequestrequesttypedef"></a>
+
 ## CreateCanaryRequestRequestTypeDef
 
 ```python
@@ -299,6 +335,8 @@ Optional fields:
 - `ArtifactConfig`:
   [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
 
+<a id="createcanaryresponsetypedef"></a>
+
 ## CreateCanaryResponseTypeDef
 
 ```python
@@ -311,6 +349,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecanaryrequestrequesttypedef"></a>
+
 ## DeleteCanaryRequestRequestTypeDef
 
 ```python
@@ -320,6 +360,8 @@ from mypy_boto3_synthetics.type_defs import DeleteCanaryRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describecanarieslastrunrequestrequesttypedef"></a>
 
 ## DescribeCanariesLastRunRequestRequestTypeDef
 
@@ -331,6 +373,9 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
+
+<a id="describecanarieslastrunresponsetypedef"></a>
 
 ## DescribeCanariesLastRunResponseTypeDef
 
@@ -346,6 +391,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecanariesrequestrequesttypedef"></a>
+
 ## DescribeCanariesRequestRequestTypeDef
 
 ```python
@@ -356,6 +403,9 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
+
+<a id="describecanariesresponsetypedef"></a>
 
 ## DescribeCanariesResponseTypeDef
 
@@ -370,6 +420,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeruntimeversionsrequestrequesttypedef"></a>
+
 ## DescribeRuntimeVersionsRequestRequestTypeDef
 
 ```python
@@ -380,6 +432,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeruntimeversionsresponsetypedef"></a>
 
 ## DescribeRuntimeVersionsResponseTypeDef
 
@@ -395,6 +449,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcanaryrequestrequesttypedef"></a>
+
 ## GetCanaryRequestRequestTypeDef
 
 ```python
@@ -404,6 +460,8 @@ from mypy_boto3_synthetics.type_defs import GetCanaryRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getcanaryresponsetypedef"></a>
 
 ## GetCanaryResponseTypeDef
 
@@ -416,6 +474,8 @@ Required fields:
 - `Canary`: [CanaryTypeDef](./type_defs.md#canarytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcanaryrunsrequestrequesttypedef"></a>
 
 ## GetCanaryRunsRequestRequestTypeDef
 
@@ -432,6 +492,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getcanaryrunsresponsetypedef"></a>
+
 ## GetCanaryRunsResponseTypeDef
 
 ```python
@@ -445,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -454,6 +518,8 @@ from mypy_boto3_synthetics.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -466,6 +532,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -481,6 +549,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="runtimeversiontypedef"></a>
+
 ## RuntimeVersionTypeDef
 
 ```python
@@ -494,6 +564,8 @@ Optional fields:
 - `ReleaseDate`: `datetime`
 - `DeprecationDate`: `datetime`
 
+<a id="s3encryptionconfigtypedef"></a>
+
 ## S3EncryptionConfigTypeDef
 
 ```python
@@ -505,6 +577,8 @@ Optional fields:
 - `EncryptionMode`: [EncryptionModeType](./literals.md#encryptionmodetype)
 - `KmsKeyArn`: `str`
 
+<a id="startcanaryrequestrequesttypedef"></a>
+
 ## StartCanaryRequestRequestTypeDef
 
 ```python
@@ -515,6 +589,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="stopcanaryrequestrequesttypedef"></a>
+
 ## StopCanaryRequestRequestTypeDef
 
 ```python
@@ -524,6 +600,8 @@ from mypy_boto3_synthetics.type_defs import StopCanaryRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -536,6 +614,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -546,6 +626,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatecanaryrequestrequesttypedef"></a>
 
 ## UpdateCanaryRequestRequestTypeDef
 
@@ -575,6 +657,8 @@ Optional fields:
 - `ArtifactConfig`:
   [ArtifactConfigInputTypeDef](./type_defs.md#artifactconfiginputtypedef)
 
+<a id="visualreferenceinputtypedef"></a>
+
 ## VisualReferenceInputTypeDef
 
 ```python
@@ -590,6 +674,8 @@ Optional fields:
 - `BaseScreenshots`:
   `Sequence`\[[BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)\]
 
+<a id="visualreferenceoutputtypedef"></a>
+
 ## VisualReferenceOutputTypeDef
 
 ```python
@@ -602,6 +688,8 @@ Optional fields:
   `List`\[[BaseScreenshotTypeDef](./type_defs.md#basescreenshottypedef)\]
 - `BaseCanaryRunId`: `str`
 
+<a id="vpcconfiginputtypedef"></a>
+
 ## VpcConfigInputTypeDef
 
 ```python
@@ -612,6 +700,8 @@ Optional fields:
 
 - `SubnetIds`: `Sequence`\[`str`\]
 - `SecurityGroupIds`: `Sequence`\[`str`\]
+
+<a id="vpcconfigoutputtypedef"></a>
 
 ## VpcConfigOutputTypeDef
 

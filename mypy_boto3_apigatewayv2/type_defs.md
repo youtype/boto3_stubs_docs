@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-apigatewayv2-module"></a>
+
 # Typed dictionaries for boto3 ApiGatewayV2 module
 
 > [Index](..) > [ApiGatewayV2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
-[mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
+[mypy-boto3-apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 - [Typed dictionaries for boto3 ApiGatewayV2 module](#typed-dictionaries-for-boto3-apigatewayv2-module)
   - [AccessLogSettingsTypeDef](#accesslogsettingstypedef)
@@ -158,6 +160,8 @@ type annotations stubs module
   - [UpdateVpcLinkResponseTypeDef](#updatevpclinkresponsetypedef)
   - [VpcLinkTypeDef](#vpclinktypedef)
 
+<a id="accesslogsettingstypedef"></a>
+
 ## AccessLogSettingsTypeDef
 
 ```python
@@ -168,6 +172,8 @@ Optional fields:
 
 - `DestinationArn`: `str`
 - `Format`: `str`
+
+<a id="apimappingtypedef"></a>
 
 ## ApiMappingTypeDef
 
@@ -184,6 +190,8 @@ Optional fields:
 
 - `ApiMappingId`: `str`
 - `ApiMappingKey`: `str`
+
+<a id="apitypedef"></a>
 
 ## ApiTypeDef
 
@@ -213,6 +221,8 @@ Optional fields:
 - `Version`: `str`
 - `Warnings`: `List`\[`str`\]
 
+<a id="authorizertypedef"></a>
+
 ## AuthorizerTypeDef
 
 ```python
@@ -237,6 +247,8 @@ Optional fields:
 - `JwtConfiguration`:
   [JWTConfigurationTypeDef](./type_defs.md#jwtconfigurationtypedef)
 
+<a id="corstypedef"></a>
+
 ## CorsTypeDef
 
 ```python
@@ -251,6 +263,8 @@ Optional fields:
 - `AllowOrigins`: `Sequence`\[`str`\]
 - `ExposeHeaders`: `Sequence`\[`str`\]
 - `MaxAge`: `int`
+
+<a id="createapimappingrequestrequesttypedef"></a>
 
 ## CreateApiMappingRequestRequestTypeDef
 
@@ -268,6 +282,8 @@ Optional fields:
 
 - `ApiMappingKey`: `str`
 
+<a id="createapimappingresponsetypedef"></a>
+
 ## CreateApiMappingResponseTypeDef
 
 ```python
@@ -282,6 +298,8 @@ Required fields:
 - `Stage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createapirequestrequesttypedef"></a>
 
 ## CreateApiRequestRequestTypeDef
 
@@ -307,6 +325,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `Target`: `str`
 - `Version`: `str`
+
+<a id="createapiresponsetypedef"></a>
 
 ## CreateApiResponseTypeDef
 
@@ -335,6 +355,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createauthorizerrequestrequesttypedef"></a>
+
 ## CreateAuthorizerRequestRequestTypeDef
 
 ```python
@@ -359,6 +381,8 @@ Optional fields:
 - `JwtConfiguration`:
   [JWTConfigurationTypeDef](./type_defs.md#jwtconfigurationtypedef)
 
+<a id="createauthorizerresponsetypedef"></a>
+
 ## CreateAuthorizerResponseTypeDef
 
 ```python
@@ -382,6 +406,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdeploymentrequestrequesttypedef"></a>
+
 ## CreateDeploymentRequestRequestTypeDef
 
 ```python
@@ -396,6 +422,8 @@ Optional fields:
 
 - `Description`: `str`
 - `StageName`: `str`
+
+<a id="createdeploymentresponsetypedef"></a>
 
 ## CreateDeploymentResponseTypeDef
 
@@ -415,6 +443,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdomainnamerequestrequesttypedef"></a>
+
 ## CreateDomainNameRequestRequestTypeDef
 
 ```python
@@ -433,6 +463,8 @@ Optional fields:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createdomainnameresponsetypedef"></a>
+
 ## CreateDomainNameResponseTypeDef
 
 ```python
@@ -450,6 +482,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createintegrationrequestrequesttypedef"></a>
 
 ## CreateIntegrationRequestRequestTypeDef
 
@@ -483,6 +517,8 @@ Optional fields:
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
 
+<a id="createintegrationresponserequestrequesttypedef"></a>
+
 ## CreateIntegrationResponseRequestRequestTypeDef
 
 ```python
@@ -503,6 +539,8 @@ Optional fields:
 - `ResponseTemplates`: `Mapping`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
 
+<a id="createintegrationresponseresponsetypedef"></a>
+
 ## CreateIntegrationResponseResponseTypeDef
 
 ```python
@@ -520,6 +558,8 @@ Required fields:
 - `TemplateSelectionExpression`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createintegrationresulttypedef"></a>
 
 ## CreateIntegrationResultTypeDef
 
@@ -554,6 +594,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createmodelrequestrequesttypedef"></a>
+
 ## CreateModelRequestRequestTypeDef
 
 ```python
@@ -571,6 +613,8 @@ Optional fields:
 - `ContentType`: `str`
 - `Description`: `str`
 
+<a id="createmodelresponsetypedef"></a>
+
 ## CreateModelResponseTypeDef
 
 ```python
@@ -586,6 +630,8 @@ Required fields:
 - `Schema`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrouterequestrequesttypedef"></a>
 
 ## CreateRouteRequestRequestTypeDef
 
@@ -613,6 +659,8 @@ Optional fields:
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
 
+<a id="createrouteresponserequestrequesttypedef"></a>
+
 ## CreateRouteResponseRequestRequestTypeDef
 
 ```python
@@ -632,6 +680,8 @@ Optional fields:
 - `ResponseParameters`: `Mapping`\[`str`,
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 
+<a id="createrouteresponseresponsetypedef"></a>
+
 ## CreateRouteResponseResponseTypeDef
 
 ```python
@@ -648,6 +698,8 @@ Required fields:
 - `RouteResponseKey`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrouteresulttypedef"></a>
 
 ## CreateRouteResultTypeDef
 
@@ -675,6 +727,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createstagerequestrequesttypedef"></a>
+
 ## CreateStageRequestRequestTypeDef
 
 ```python
@@ -700,6 +754,8 @@ Optional fields:
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)\]
 - `StageVariables`: `Mapping`\[`str`, `str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createstageresponsetypedef"></a>
 
 ## CreateStageResponseTypeDef
 
@@ -729,6 +785,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createvpclinkrequestrequesttypedef"></a>
+
 ## CreateVpcLinkRequestRequestTypeDef
 
 ```python
@@ -744,6 +802,8 @@ Optional fields:
 
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createvpclinkresponsetypedef"></a>
 
 ## CreateVpcLinkResponseTypeDef
 
@@ -766,6 +826,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteaccesslogsettingsrequestrequesttypedef"></a>
+
 ## DeleteAccessLogSettingsRequestRequestTypeDef
 
 ```python
@@ -776,6 +838,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `StageName`: `str`
+
+<a id="deleteapimappingrequestrequesttypedef"></a>
 
 ## DeleteApiMappingRequestRequestTypeDef
 
@@ -788,6 +852,8 @@ Required fields:
 - `ApiMappingId`: `str`
 - `DomainName`: `str`
 
+<a id="deleteapirequestrequesttypedef"></a>
+
 ## DeleteApiRequestRequestTypeDef
 
 ```python
@@ -797,6 +863,8 @@ from mypy_boto3_apigatewayv2.type_defs import DeleteApiRequestRequestTypeDef
 Required fields:
 
 - `ApiId`: `str`
+
+<a id="deleteauthorizerrequestrequesttypedef"></a>
 
 ## DeleteAuthorizerRequestRequestTypeDef
 
@@ -809,6 +877,8 @@ Required fields:
 - `ApiId`: `str`
 - `AuthorizerId`: `str`
 
+<a id="deletecorsconfigurationrequestrequesttypedef"></a>
+
 ## DeleteCorsConfigurationRequestRequestTypeDef
 
 ```python
@@ -818,6 +888,8 @@ from mypy_boto3_apigatewayv2.type_defs import DeleteCorsConfigurationRequestRequ
 Required fields:
 
 - `ApiId`: `str`
+
+<a id="deletedeploymentrequestrequesttypedef"></a>
 
 ## DeleteDeploymentRequestRequestTypeDef
 
@@ -830,6 +902,8 @@ Required fields:
 - `ApiId`: `str`
 - `DeploymentId`: `str`
 
+<a id="deletedomainnamerequestrequesttypedef"></a>
+
 ## DeleteDomainNameRequestRequestTypeDef
 
 ```python
@@ -839,6 +913,8 @@ from mypy_boto3_apigatewayv2.type_defs import DeleteDomainNameRequestRequestType
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="deleteintegrationrequestrequesttypedef"></a>
 
 ## DeleteIntegrationRequestRequestTypeDef
 
@@ -850,6 +926,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `IntegrationId`: `str`
+
+<a id="deleteintegrationresponserequestrequesttypedef"></a>
 
 ## DeleteIntegrationResponseRequestRequestTypeDef
 
@@ -863,6 +941,8 @@ Required fields:
 - `IntegrationId`: `str`
 - `IntegrationResponseId`: `str`
 
+<a id="deletemodelrequestrequesttypedef"></a>
+
 ## DeleteModelRequestRequestTypeDef
 
 ```python
@@ -873,6 +953,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `ModelId`: `str`
+
+<a id="deleterouterequestparameterrequestrequesttypedef"></a>
 
 ## DeleteRouteRequestParameterRequestRequestTypeDef
 
@@ -886,6 +968,8 @@ Required fields:
 - `RequestParameterKey`: `str`
 - `RouteId`: `str`
 
+<a id="deleterouterequestrequesttypedef"></a>
+
 ## DeleteRouteRequestRequestTypeDef
 
 ```python
@@ -896,6 +980,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `RouteId`: `str`
+
+<a id="deleterouteresponserequestrequesttypedef"></a>
 
 ## DeleteRouteResponseRequestRequestTypeDef
 
@@ -909,6 +995,8 @@ Required fields:
 - `RouteId`: `str`
 - `RouteResponseId`: `str`
 
+<a id="deleteroutesettingsrequestrequesttypedef"></a>
+
 ## DeleteRouteSettingsRequestRequestTypeDef
 
 ```python
@@ -921,6 +1009,8 @@ Required fields:
 - `RouteKey`: `str`
 - `StageName`: `str`
 
+<a id="deletestagerequestrequesttypedef"></a>
+
 ## DeleteStageRequestRequestTypeDef
 
 ```python
@@ -932,6 +1022,8 @@ Required fields:
 - `ApiId`: `str`
 - `StageName`: `str`
 
+<a id="deletevpclinkrequestrequesttypedef"></a>
+
 ## DeleteVpcLinkRequestRequestTypeDef
 
 ```python
@@ -941,6 +1033,8 @@ from mypy_boto3_apigatewayv2.type_defs import DeleteVpcLinkRequestRequestTypeDef
 Required fields:
 
 - `VpcLinkId`: `str`
+
+<a id="deploymenttypedef"></a>
 
 ## DeploymentTypeDef
 
@@ -957,6 +1051,8 @@ Optional fields:
   [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `DeploymentStatusMessage`: `str`
 - `Description`: `str`
+
+<a id="domainnameconfigurationtypedef"></a>
 
 ## DomainNameConfigurationTypeDef
 
@@ -978,6 +1074,8 @@ Optional fields:
 - `SecurityPolicy`: [SecurityPolicyType](./literals.md#securitypolicytype)
 - `OwnershipVerificationCertificateArn`: `str`
 
+<a id="domainnametypedef"></a>
+
 ## DomainNameTypeDef
 
 ```python
@@ -996,6 +1094,8 @@ Optional fields:
 - `MutualTlsAuthentication`:
   [MutualTlsAuthenticationTypeDef](./type_defs.md#mutualtlsauthenticationtypedef)
 - `Tags`: `Dict`\[`str`, `str`\]
+
+<a id="exportapirequestrequesttypedef"></a>
 
 ## ExportApiRequestRequestTypeDef
 
@@ -1016,6 +1116,8 @@ Optional fields:
 - `IncludeExtensions`: `bool`
 - `StageName`: `str`
 
+<a id="exportapiresponsetypedef"></a>
+
 ## ExportApiResponseTypeDef
 
 ```python
@@ -1028,6 +1130,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapimappingrequestrequesttypedef"></a>
+
 ## GetApiMappingRequestRequestTypeDef
 
 ```python
@@ -1038,6 +1142,8 @@ Required fields:
 
 - `ApiMappingId`: `str`
 - `DomainName`: `str`
+
+<a id="getapimappingresponsetypedef"></a>
 
 ## GetApiMappingResponseTypeDef
 
@@ -1054,6 +1160,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapimappingsrequestrequesttypedef"></a>
+
 ## GetApiMappingsRequestRequestTypeDef
 
 ```python
@@ -1069,6 +1177,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getapimappingsresponsetypedef"></a>
+
 ## GetApiMappingsResponseTypeDef
 
 ```python
@@ -1082,6 +1192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapirequestrequesttypedef"></a>
+
 ## GetApiRequestRequestTypeDef
 
 ```python
@@ -1091,6 +1203,8 @@ from mypy_boto3_apigatewayv2.type_defs import GetApiRequestRequestTypeDef
 Required fields:
 
 - `ApiId`: `str`
+
+<a id="getapiresponsetypedef"></a>
 
 ## GetApiResponseTypeDef
 
@@ -1119,6 +1233,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapisrequestrequesttypedef"></a>
+
 ## GetApisRequestRequestTypeDef
 
 ```python
@@ -1129,6 +1245,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="getapisresponsetypedef"></a>
 
 ## GetApisResponseTypeDef
 
@@ -1143,6 +1261,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getauthorizerrequestrequesttypedef"></a>
+
 ## GetAuthorizerRequestRequestTypeDef
 
 ```python
@@ -1153,6 +1273,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `AuthorizerId`: `str`
+
+<a id="getauthorizerresponsetypedef"></a>
 
 ## GetAuthorizerResponseTypeDef
 
@@ -1177,6 +1299,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getauthorizersrequestrequesttypedef"></a>
+
 ## GetAuthorizersRequestRequestTypeDef
 
 ```python
@@ -1192,6 +1316,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getauthorizersresponsetypedef"></a>
+
 ## GetAuthorizersResponseTypeDef
 
 ```python
@@ -1205,6 +1331,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeploymentrequestrequesttypedef"></a>
+
 ## GetDeploymentRequestRequestTypeDef
 
 ```python
@@ -1215,6 +1343,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `DeploymentId`: `str`
+
+<a id="getdeploymentresponsetypedef"></a>
 
 ## GetDeploymentResponseTypeDef
 
@@ -1234,6 +1364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeploymentsrequestrequesttypedef"></a>
+
 ## GetDeploymentsRequestRequestTypeDef
 
 ```python
@@ -1249,6 +1381,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getdeploymentsresponsetypedef"></a>
+
 ## GetDeploymentsResponseTypeDef
 
 ```python
@@ -1262,6 +1396,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdomainnamerequestrequesttypedef"></a>
+
 ## GetDomainNameRequestRequestTypeDef
 
 ```python
@@ -1271,6 +1407,8 @@ from mypy_boto3_apigatewayv2.type_defs import GetDomainNameRequestRequestTypeDef
 Required fields:
 
 - `DomainName`: `str`
+
+<a id="getdomainnameresponsetypedef"></a>
 
 ## GetDomainNameResponseTypeDef
 
@@ -1290,6 +1428,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdomainnamesrequestrequesttypedef"></a>
+
 ## GetDomainNamesRequestRequestTypeDef
 
 ```python
@@ -1300,6 +1440,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="getdomainnamesresponsetypedef"></a>
 
 ## GetDomainNamesResponseTypeDef
 
@@ -1314,6 +1456,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getintegrationrequestrequesttypedef"></a>
+
 ## GetIntegrationRequestRequestTypeDef
 
 ```python
@@ -1324,6 +1468,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `IntegrationId`: `str`
+
+<a id="getintegrationresponserequestrequesttypedef"></a>
 
 ## GetIntegrationResponseRequestRequestTypeDef
 
@@ -1336,6 +1482,8 @@ Required fields:
 - `ApiId`: `str`
 - `IntegrationId`: `str`
 - `IntegrationResponseId`: `str`
+
+<a id="getintegrationresponseresponsetypedef"></a>
 
 ## GetIntegrationResponseResponseTypeDef
 
@@ -1355,6 +1503,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getintegrationresponsesrequestrequesttypedef"></a>
+
 ## GetIntegrationResponsesRequestRequestTypeDef
 
 ```python
@@ -1371,6 +1521,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getintegrationresponsesresponsetypedef"></a>
+
 ## GetIntegrationResponsesResponseTypeDef
 
 ```python
@@ -1384,6 +1536,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getintegrationresulttypedef"></a>
 
 ## GetIntegrationResultTypeDef
 
@@ -1418,6 +1572,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getintegrationsrequestrequesttypedef"></a>
+
 ## GetIntegrationsRequestRequestTypeDef
 
 ```python
@@ -1433,6 +1589,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getintegrationsresponsetypedef"></a>
+
 ## GetIntegrationsResponseTypeDef
 
 ```python
@@ -1446,6 +1604,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmodelrequestrequesttypedef"></a>
+
 ## GetModelRequestRequestTypeDef
 
 ```python
@@ -1456,6 +1616,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `ModelId`: `str`
+
+<a id="getmodelresponsetypedef"></a>
 
 ## GetModelResponseTypeDef
 
@@ -1473,6 +1635,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmodeltemplaterequestrequesttypedef"></a>
+
 ## GetModelTemplateRequestRequestTypeDef
 
 ```python
@@ -1483,6 +1647,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `ModelId`: `str`
+
+<a id="getmodeltemplateresponsetypedef"></a>
 
 ## GetModelTemplateResponseTypeDef
 
@@ -1495,6 +1661,8 @@ Required fields:
 - `Value`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmodelsrequestrequesttypedef"></a>
 
 ## GetModelsRequestRequestTypeDef
 
@@ -1511,6 +1679,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getmodelsresponsetypedef"></a>
+
 ## GetModelsResponseTypeDef
 
 ```python
@@ -1524,6 +1694,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrouterequestrequesttypedef"></a>
+
 ## GetRouteRequestRequestTypeDef
 
 ```python
@@ -1534,6 +1706,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `RouteId`: `str`
+
+<a id="getrouteresponserequestrequesttypedef"></a>
 
 ## GetRouteResponseRequestRequestTypeDef
 
@@ -1546,6 +1720,8 @@ Required fields:
 - `ApiId`: `str`
 - `RouteId`: `str`
 - `RouteResponseId`: `str`
+
+<a id="getrouteresponseresponsetypedef"></a>
 
 ## GetRouteResponseResponseTypeDef
 
@@ -1564,6 +1740,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrouteresponsesrequestrequesttypedef"></a>
+
 ## GetRouteResponsesRequestRequestTypeDef
 
 ```python
@@ -1580,6 +1758,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getrouteresponsesresponsetypedef"></a>
+
 ## GetRouteResponsesResponseTypeDef
 
 ```python
@@ -1593,6 +1773,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrouteresulttypedef"></a>
 
 ## GetRouteResultTypeDef
 
@@ -1620,6 +1802,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getroutesrequestrequesttypedef"></a>
+
 ## GetRoutesRequestRequestTypeDef
 
 ```python
@@ -1635,6 +1819,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getroutesresponsetypedef"></a>
+
 ## GetRoutesResponseTypeDef
 
 ```python
@@ -1648,6 +1834,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstagerequestrequesttypedef"></a>
+
 ## GetStageRequestRequestTypeDef
 
 ```python
@@ -1658,6 +1846,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `StageName`: `str`
+
+<a id="getstageresponsetypedef"></a>
 
 ## GetStageResponseTypeDef
 
@@ -1687,6 +1877,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstagesrequestrequesttypedef"></a>
+
 ## GetStagesRequestRequestTypeDef
 
 ```python
@@ -1702,6 +1894,8 @@ Optional fields:
 - `MaxResults`: `str`
 - `NextToken`: `str`
 
+<a id="getstagesresponsetypedef"></a>
+
 ## GetStagesResponseTypeDef
 
 ```python
@@ -1715,6 +1909,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettagsrequestrequesttypedef"></a>
+
 ## GetTagsRequestRequestTypeDef
 
 ```python
@@ -1724,6 +1920,8 @@ from mypy_boto3_apigatewayv2.type_defs import GetTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="gettagsresponsetypedef"></a>
 
 ## GetTagsResponseTypeDef
 
@@ -1737,6 +1935,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvpclinkrequestrequesttypedef"></a>
+
 ## GetVpcLinkRequestRequestTypeDef
 
 ```python
@@ -1746,6 +1946,8 @@ from mypy_boto3_apigatewayv2.type_defs import GetVpcLinkRequestRequestTypeDef
 Required fields:
 
 - `VpcLinkId`: `str`
+
+<a id="getvpclinkresponsetypedef"></a>
 
 ## GetVpcLinkResponseTypeDef
 
@@ -1768,6 +1970,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvpclinksrequestrequesttypedef"></a>
+
 ## GetVpcLinksRequestRequestTypeDef
 
 ```python
@@ -1778,6 +1982,8 @@ Optional fields:
 
 - `MaxResults`: `str`
 - `NextToken`: `str`
+
+<a id="getvpclinksresponsetypedef"></a>
 
 ## GetVpcLinksResponseTypeDef
 
@@ -1791,6 +1997,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importapirequestrequesttypedef"></a>
 
 ## ImportApiRequestRequestTypeDef
 
@@ -1806,6 +2014,8 @@ Optional fields:
 
 - `Basepath`: `str`
 - `FailOnWarnings`: `bool`
+
+<a id="importapiresponsetypedef"></a>
 
 ## ImportApiResponseTypeDef
 
@@ -1834,6 +2044,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="integrationresponsetypedef"></a>
+
 ## IntegrationResponseTypeDef
 
 ```python
@@ -1852,6 +2064,8 @@ Optional fields:
 - `ResponseParameters`: `Dict`\[`str`, `str`\]
 - `ResponseTemplates`: `Dict`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
+
+<a id="integrationtypedef"></a>
 
 ## IntegrationTypeDef
 
@@ -1884,6 +2098,8 @@ Optional fields:
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigTypeDef](./type_defs.md#tlsconfigtypedef)
 
+<a id="jwtconfigurationtypedef"></a>
+
 ## JWTConfigurationTypeDef
 
 ```python
@@ -1894,6 +2110,8 @@ Optional fields:
 
 - `Audience`: `Sequence`\[`str`\]
 - `Issuer`: `str`
+
+<a id="modeltypedef"></a>
 
 ## ModelTypeDef
 
@@ -1912,6 +2130,8 @@ Optional fields:
 - `ModelId`: `str`
 - `Schema`: `str`
 
+<a id="mutualtlsauthenticationinputtypedef"></a>
+
 ## MutualTlsAuthenticationInputTypeDef
 
 ```python
@@ -1922,6 +2142,8 @@ Optional fields:
 
 - `TruststoreUri`: `str`
 - `TruststoreVersion`: `str`
+
+<a id="mutualtlsauthenticationtypedef"></a>
 
 ## MutualTlsAuthenticationTypeDef
 
@@ -1935,6 +2157,8 @@ Optional fields:
 - `TruststoreVersion`: `str`
 - `TruststoreWarnings`: `List`\[`str`\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1947,6 +2171,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parameterconstraintstypedef"></a>
+
 ## ParameterConstraintsTypeDef
 
 ```python
@@ -1956,6 +2182,8 @@ from mypy_boto3_apigatewayv2.type_defs import ParameterConstraintsTypeDef
 Optional fields:
 
 - `Required`: `bool`
+
+<a id="reimportapirequestrequesttypedef"></a>
 
 ## ReimportApiRequestRequestTypeDef
 
@@ -1972,6 +2200,8 @@ Optional fields:
 
 - `Basepath`: `str`
 - `FailOnWarnings`: `bool`
+
+<a id="reimportapiresponsetypedef"></a>
 
 ## ReimportApiResponseTypeDef
 
@@ -2000,6 +2230,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resetauthorizerscacherequestrequesttypedef"></a>
+
 ## ResetAuthorizersCacheRequestRequestTypeDef
 
 ```python
@@ -2010,6 +2242,8 @@ Required fields:
 
 - `ApiId`: `str`
 - `StageName`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2024,6 +2258,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="routeresponsetypedef"></a>
 
 ## RouteResponseTypeDef
 
@@ -2043,6 +2279,8 @@ Optional fields:
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteResponseId`: `str`
 
+<a id="routesettingstypedef"></a>
+
 ## RouteSettingsTypeDef
 
 ```python
@@ -2056,6 +2294,8 @@ Optional fields:
 - `LoggingLevel`: [LoggingLevelType](./literals.md#loggingleveltype)
 - `ThrottlingBurstLimit`: `int`
 - `ThrottlingRateLimit`: `float`
+
+<a id="routetypedef"></a>
 
 ## RouteTypeDef
 
@@ -2083,6 +2323,8 @@ Optional fields:
 - `RouteId`: `str`
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
+
+<a id="stagetypedef"></a>
 
 ## StageTypeDef
 
@@ -2113,6 +2355,8 @@ Optional fields:
 - `StageVariables`: `Dict`\[`str`, `str`\]
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2127,6 +2371,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="tlsconfiginputtypedef"></a>
+
 ## TlsConfigInputTypeDef
 
 ```python
@@ -2136,6 +2382,8 @@ from mypy_boto3_apigatewayv2.type_defs import TlsConfigInputTypeDef
 Optional fields:
 
 - `ServerNameToVerify`: `str`
+
+<a id="tlsconfigtypedef"></a>
 
 ## TlsConfigTypeDef
 
@@ -2147,6 +2395,8 @@ Optional fields:
 
 - `ServerNameToVerify`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2157,6 +2407,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapimappingrequestrequesttypedef"></a>
 
 ## UpdateApiMappingRequestRequestTypeDef
 
@@ -2175,6 +2427,8 @@ Optional fields:
 - `ApiMappingKey`: `str`
 - `Stage`: `str`
 
+<a id="updateapimappingresponsetypedef"></a>
+
 ## UpdateApiMappingResponseTypeDef
 
 ```python
@@ -2189,6 +2443,8 @@ Required fields:
 - `Stage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateapirequestrequesttypedef"></a>
 
 ## UpdateApiRequestRequestTypeDef
 
@@ -2213,6 +2469,8 @@ Optional fields:
 - `RouteSelectionExpression`: `str`
 - `Target`: `str`
 - `Version`: `str`
+
+<a id="updateapiresponsetypedef"></a>
 
 ## UpdateApiResponseTypeDef
 
@@ -2241,6 +2499,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateauthorizerrequestrequesttypedef"></a>
+
 ## UpdateAuthorizerRequestRequestTypeDef
 
 ```python
@@ -2266,6 +2526,8 @@ Optional fields:
   [JWTConfigurationTypeDef](./type_defs.md#jwtconfigurationtypedef)
 - `Name`: `str`
 
+<a id="updateauthorizerresponsetypedef"></a>
+
 ## UpdateAuthorizerResponseTypeDef
 
 ```python
@@ -2289,6 +2551,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedeploymentrequestrequesttypedef"></a>
+
 ## UpdateDeploymentRequestRequestTypeDef
 
 ```python
@@ -2303,6 +2567,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updatedeploymentresponsetypedef"></a>
 
 ## UpdateDeploymentResponseTypeDef
 
@@ -2322,6 +2588,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedomainnamerequestrequesttypedef"></a>
+
 ## UpdateDomainNameRequestRequestTypeDef
 
 ```python
@@ -2338,6 +2606,8 @@ Optional fields:
   `Sequence`\[[DomainNameConfigurationTypeDef](./type_defs.md#domainnameconfigurationtypedef)\]
 - `MutualTlsAuthentication`:
   [MutualTlsAuthenticationInputTypeDef](./type_defs.md#mutualtlsauthenticationinputtypedef)
+
+<a id="updatedomainnameresponsetypedef"></a>
 
 ## UpdateDomainNameResponseTypeDef
 
@@ -2356,6 +2626,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateintegrationrequestrequesttypedef"></a>
 
 ## UpdateIntegrationRequestRequestTypeDef
 
@@ -2390,6 +2662,8 @@ Optional fields:
 - `TimeoutInMillis`: `int`
 - `TlsConfig`: [TlsConfigInputTypeDef](./type_defs.md#tlsconfiginputtypedef)
 
+<a id="updateintegrationresponserequestrequesttypedef"></a>
+
 ## UpdateIntegrationResponseRequestRequestTypeDef
 
 ```python
@@ -2411,6 +2685,8 @@ Optional fields:
 - `ResponseTemplates`: `Mapping`\[`str`, `str`\]
 - `TemplateSelectionExpression`: `str`
 
+<a id="updateintegrationresponseresponsetypedef"></a>
+
 ## UpdateIntegrationResponseResponseTypeDef
 
 ```python
@@ -2428,6 +2704,8 @@ Required fields:
 - `TemplateSelectionExpression`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateintegrationresulttypedef"></a>
 
 ## UpdateIntegrationResultTypeDef
 
@@ -2462,6 +2740,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatemodelrequestrequesttypedef"></a>
+
 ## UpdateModelRequestRequestTypeDef
 
 ```python
@@ -2480,6 +2760,8 @@ Optional fields:
 - `Name`: `str`
 - `Schema`: `str`
 
+<a id="updatemodelresponsetypedef"></a>
+
 ## UpdateModelResponseTypeDef
 
 ```python
@@ -2495,6 +2777,8 @@ Required fields:
 - `Schema`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterouterequestrequesttypedef"></a>
 
 ## UpdateRouteRequestRequestTypeDef
 
@@ -2523,6 +2807,8 @@ Optional fields:
 - `RouteResponseSelectionExpression`: `str`
 - `Target`: `str`
 
+<a id="updaterouteresponserequestrequesttypedef"></a>
+
 ## UpdateRouteResponseRequestRequestTypeDef
 
 ```python
@@ -2543,6 +2829,8 @@ Optional fields:
   [ParameterConstraintsTypeDef](./type_defs.md#parameterconstraintstypedef)\]
 - `RouteResponseKey`: `str`
 
+<a id="updaterouteresponseresponsetypedef"></a>
+
 ## UpdateRouteResponseResponseTypeDef
 
 ```python
@@ -2559,6 +2847,8 @@ Required fields:
 - `RouteResponseKey`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterouteresulttypedef"></a>
 
 ## UpdateRouteResultTypeDef
 
@@ -2586,6 +2876,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatestagerequestrequesttypedef"></a>
+
 ## UpdateStageRequestRequestTypeDef
 
 ```python
@@ -2610,6 +2902,8 @@ Optional fields:
 - `RouteSettings`: `Mapping`\[`str`,
   [RouteSettingsTypeDef](./type_defs.md#routesettingstypedef)\]
 - `StageVariables`: `Mapping`\[`str`, `str`\]
+
+<a id="updatestageresponsetypedef"></a>
 
 ## UpdateStageResponseTypeDef
 
@@ -2639,6 +2933,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatevpclinkrequestrequesttypedef"></a>
+
 ## UpdateVpcLinkRequestRequestTypeDef
 
 ```python
@@ -2652,6 +2948,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updatevpclinkresponsetypedef"></a>
 
 ## UpdateVpcLinkResponseTypeDef
 
@@ -2673,6 +2971,8 @@ Required fields:
   [VpcLinkVersionType](./literals.md#vpclinkversiontype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vpclinktypedef"></a>
 
 ## VpcLinkTypeDef
 

@@ -1,3 +1,5 @@
+<a id="redshiftdataapiserviceclient-for-boto3-redshiftdataapiservice-module"></a>
+
 # RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module
 
 > [Index](..) > [RedshiftDataAPIService](.) > RedshiftDataAPIServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RedshiftDataAPIService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService)
 type annotations stubs module
-[mypy_boto3_redshift_data](https://pypi.org/project/mypy-boto3-redshift-data/).
+[mypy-boto3-redshift-data](https://pypi.org/project/mypy-boto3-redshift-data/).
 
 - [RedshiftDataAPIServiceClient for boto3 RedshiftDataAPIService module](#redshiftdataapiserviceclient-for-boto3-redshiftdataapiservice-module)
   - [RedshiftDataAPIServiceClient](#redshiftdataapiserviceclient)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [list_tables](#list_tables)
     - [get_paginator](#get_paginator)
 
+<a id="redshiftdataapiserviceclient"></a>
+
 ## RedshiftDataAPIServiceClient
 
 Type annotations for `boto3.client("redshift-data")`
@@ -33,14 +37,17 @@ Type annotations for `boto3.client("redshift-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_redshift_data.client import RedshiftDataAPIServiceClient
 
 def get_redshift-data_client() -> RedshiftDataAPIServiceClient:
-    return boto3.client("redshift-data")
+    return Session().client("redshift-data")
 ```
 
 Boto3 documentation:
 [RedshiftDataAPIService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -65,7 +72,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -77,6 +88,8 @@ Boto3 documentation:
 [RedshiftDataAPIService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift-data.html#RedshiftDataAPIService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_execute_statement"></a>
 
 ### batch_execute_statement
 
@@ -105,6 +118,8 @@ Keyword-only arguments:
 Returns
 [BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -119,6 +134,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_statement"></a>
 
 ### cancel_statement
 
@@ -139,6 +156,8 @@ Keyword-only arguments:
 Returns
 [CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef).
 
+<a id="describe_statement"></a>
+
 ### describe_statement
 
 Describes the details about a specific instance when a query was run by the
@@ -158,6 +177,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef).
+
+<a id="describe_table"></a>
 
 ### describe_table
 
@@ -185,6 +206,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
+
+<a id="execute_statement"></a>
 
 ### execute_statement
 
@@ -214,6 +237,8 @@ Keyword-only arguments:
 Returns
 [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -232,6 +257,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_statement_result"></a>
 
 ### get_statement_result
 
@@ -253,6 +280,8 @@ Keyword-only arguments:
 
 Returns
 [GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef).
+
+<a id="list_databases"></a>
 
 ### list_databases
 
@@ -277,6 +306,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
+
+<a id="list_schemas"></a>
 
 ### list_schemas
 
@@ -304,6 +335,8 @@ Keyword-only arguments:
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
+<a id="list_statements"></a>
+
 ### list_statements
 
 List of SQL statements.
@@ -326,6 +359,8 @@ Keyword-only arguments:
 
 Returns
 [ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
+
+<a id="list_tables"></a>
 
 ### list_tables
 
@@ -352,6 +387,8 @@ Keyword-only arguments:
 - `TablePattern`: `str`
 
 Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

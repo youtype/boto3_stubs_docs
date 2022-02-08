@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-databasemigrationservice-module"></a>
+
 # Typed dictionaries for boto3 DatabaseMigrationService module
 
 > [Index](..) > [DatabaseMigrationService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
-[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [Typed dictionaries for boto3 DatabaseMigrationService module](#typed-dictionaries-for-boto3-databasemigrationservice-module)
   - [AccountQuotaTypeDef](#accountquotatypedef)
@@ -166,6 +168,8 @@ type annotations stubs module
   - [VpcSecurityGroupMembershipTypeDef](#vpcsecuritygroupmembershiptypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accountquotatypedef"></a>
+
 ## AccountQuotaTypeDef
 
 ```python
@@ -178,6 +182,8 @@ Optional fields:
 - `Used`: `int`
 - `Max`: `int`
 
+<a id="addtagstoresourcemessagerequesttypedef"></a>
+
 ## AddTagsToResourceMessageRequestTypeDef
 
 ```python
@@ -188,6 +194,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="applypendingmaintenanceactionmessagerequesttypedef"></a>
 
 ## ApplyPendingMaintenanceActionMessageRequestTypeDef
 
@@ -200,6 +208,8 @@ Required fields:
 - `ReplicationInstanceArn`: `str`
 - `ApplyAction`: `str`
 - `OptInType`: `str`
+
+<a id="applypendingmaintenanceactionresponsetypedef"></a>
 
 ## ApplyPendingMaintenanceActionResponseTypeDef
 
@@ -214,6 +224,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="availabilityzonetypedef"></a>
+
 ## AvailabilityZoneTypeDef
 
 ```python
@@ -224,6 +236,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="cancelreplicationtaskassessmentrunmessagerequesttypedef"></a>
+
 ## CancelReplicationTaskAssessmentRunMessageRequestTypeDef
 
 ```python
@@ -233,6 +247,8 @@ from mypy_boto3_dms.type_defs import CancelReplicationTaskAssessmentRunMessageRe
 Required fields:
 
 - `ReplicationTaskAssessmentRunArn`: `str`
+
+<a id="cancelreplicationtaskassessmentrunresponsetypedef"></a>
 
 ## CancelReplicationTaskAssessmentRunResponseTypeDef
 
@@ -246,6 +262,8 @@ Required fields:
   [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="certificatetypedef"></a>
 
 ## CertificateTypeDef
 
@@ -266,6 +284,8 @@ Optional fields:
 - `SigningAlgorithm`: `str`
 - `KeyLength`: `int`
 
+<a id="connectiontypedef"></a>
+
 ## ConnectionTypeDef
 
 ```python
@@ -280,6 +300,8 @@ Optional fields:
 - `LastFailureMessage`: `str`
 - `EndpointIdentifier`: `str`
 - `ReplicationInstanceIdentifier`: `str`
+
+<a id="createendpointmessagerequesttypedef"></a>
 
 ## CreateEndpointMessageRequestTypeDef
 
@@ -341,6 +363,8 @@ Optional fields:
 - `GcpMySQLSettings`:
   [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
+<a id="createendpointresponsetypedef"></a>
+
 ## CreateEndpointResponseTypeDef
 
 ```python
@@ -352,6 +376,8 @@ Required fields:
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createeventsubscriptionmessagerequesttypedef"></a>
 
 ## CreateEventSubscriptionMessageRequestTypeDef
 
@@ -372,6 +398,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createeventsubscriptionresponsetypedef"></a>
+
 ## CreateEventSubscriptionResponseTypeDef
 
 ```python
@@ -384,6 +412,8 @@ Required fields:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreplicationinstancemessagerequesttypedef"></a>
 
 ## CreateReplicationInstanceMessageRequestTypeDef
 
@@ -412,6 +442,8 @@ Optional fields:
 - `DnsNameServers`: `str`
 - `ResourceIdentifier`: `str`
 
+<a id="createreplicationinstanceresponsetypedef"></a>
+
 ## CreateReplicationInstanceResponseTypeDef
 
 ```python
@@ -424,6 +456,8 @@ Required fields:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreplicationsubnetgroupmessagerequesttypedef"></a>
 
 ## CreateReplicationSubnetGroupMessageRequestTypeDef
 
@@ -441,6 +475,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createreplicationsubnetgroupresponsetypedef"></a>
+
 ## CreateReplicationSubnetGroupResponseTypeDef
 
 ```python
@@ -453,6 +489,8 @@ Required fields:
   [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreplicationtaskmessagerequesttypedef"></a>
 
 ## CreateReplicationTaskMessageRequestTypeDef
 
@@ -480,6 +518,8 @@ Optional fields:
 - `TaskData`: `str`
 - `ResourceIdentifier`: `str`
 
+<a id="createreplicationtaskresponsetypedef"></a>
+
 ## CreateReplicationTaskResponseTypeDef
 
 ```python
@@ -493,6 +533,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecertificatemessagerequesttypedef"></a>
+
 ## DeleteCertificateMessageRequestTypeDef
 
 ```python
@@ -502,6 +544,8 @@ from mypy_boto3_dms.type_defs import DeleteCertificateMessageRequestTypeDef
 Required fields:
 
 - `CertificateArn`: `str`
+
+<a id="deletecertificateresponsetypedef"></a>
 
 ## DeleteCertificateResponseTypeDef
 
@@ -515,6 +559,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteconnectionmessagerequesttypedef"></a>
+
 ## DeleteConnectionMessageRequestTypeDef
 
 ```python
@@ -525,6 +571,8 @@ Required fields:
 
 - `EndpointArn`: `str`
 - `ReplicationInstanceArn`: `str`
+
+<a id="deleteconnectionresponsetypedef"></a>
 
 ## DeleteConnectionResponseTypeDef
 
@@ -538,6 +586,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteendpointmessagerequesttypedef"></a>
+
 ## DeleteEndpointMessageRequestTypeDef
 
 ```python
@@ -547,6 +597,8 @@ from mypy_boto3_dms.type_defs import DeleteEndpointMessageRequestTypeDef
 Required fields:
 
 - `EndpointArn`: `str`
+
+<a id="deleteendpointresponsetypedef"></a>
 
 ## DeleteEndpointResponseTypeDef
 
@@ -560,6 +612,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteeventsubscriptionmessagerequesttypedef"></a>
+
 ## DeleteEventSubscriptionMessageRequestTypeDef
 
 ```python
@@ -569,6 +623,8 @@ from mypy_boto3_dms.type_defs import DeleteEventSubscriptionMessageRequestTypeDe
 Required fields:
 
 - `SubscriptionName`: `str`
+
+<a id="deleteeventsubscriptionresponsetypedef"></a>
 
 ## DeleteEventSubscriptionResponseTypeDef
 
@@ -583,6 +639,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletereplicationinstancemessagerequesttypedef"></a>
+
 ## DeleteReplicationInstanceMessageRequestTypeDef
 
 ```python
@@ -592,6 +650,8 @@ from mypy_boto3_dms.type_defs import DeleteReplicationInstanceMessageRequestType
 Required fields:
 
 - `ReplicationInstanceArn`: `str`
+
+<a id="deletereplicationinstanceresponsetypedef"></a>
 
 ## DeleteReplicationInstanceResponseTypeDef
 
@@ -606,6 +666,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletereplicationsubnetgroupmessagerequesttypedef"></a>
+
 ## DeleteReplicationSubnetGroupMessageRequestTypeDef
 
 ```python
@@ -616,6 +678,8 @@ Required fields:
 
 - `ReplicationSubnetGroupIdentifier`: `str`
 
+<a id="deletereplicationtaskassessmentrunmessagerequesttypedef"></a>
+
 ## DeleteReplicationTaskAssessmentRunMessageRequestTypeDef
 
 ```python
@@ -625,6 +689,8 @@ from mypy_boto3_dms.type_defs import DeleteReplicationTaskAssessmentRunMessageRe
 Required fields:
 
 - `ReplicationTaskAssessmentRunArn`: `str`
+
+<a id="deletereplicationtaskassessmentrunresponsetypedef"></a>
 
 ## DeleteReplicationTaskAssessmentRunResponseTypeDef
 
@@ -639,6 +705,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletereplicationtaskmessagerequesttypedef"></a>
+
 ## DeleteReplicationTaskMessageRequestTypeDef
 
 ```python
@@ -648,6 +716,8 @@ from mypy_boto3_dms.type_defs import DeleteReplicationTaskMessageRequestTypeDef
 Required fields:
 
 - `ReplicationTaskArn`: `str`
+
+<a id="deletereplicationtaskresponsetypedef"></a>
 
 ## DeleteReplicationTaskResponseTypeDef
 
@@ -662,6 +732,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaccountattributesresponsetypedef"></a>
+
 ## DescribeAccountAttributesResponseTypeDef
 
 ```python
@@ -675,6 +747,8 @@ Required fields:
 - `UniqueAccountIdentifier`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeapplicableindividualassessmentsmessagerequesttypedef"></a>
 
 ## DescribeApplicableIndividualAssessmentsMessageRequestTypeDef
 
@@ -693,6 +767,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeapplicableindividualassessmentsresponsetypedef"></a>
+
 ## DescribeApplicableIndividualAssessmentsResponseTypeDef
 
 ```python
@@ -706,6 +782,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecertificatesmessagerequesttypedef"></a>
+
 ## DescribeCertificatesMessageRequestTypeDef
 
 ```python
@@ -717,6 +795,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describecertificatesresponsetypedef"></a>
 
 ## DescribeCertificatesResponseTypeDef
 
@@ -732,6 +812,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconnectionsmessagerequesttypedef"></a>
+
 ## DescribeConnectionsMessageRequestTypeDef
 
 ```python
@@ -743,6 +825,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeconnectionsresponsetypedef"></a>
 
 ## DescribeConnectionsResponseTypeDef
 
@@ -757,6 +841,8 @@ Required fields:
   `List`\[[ConnectionTypeDef](./type_defs.md#connectiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeendpointsettingsmessagerequesttypedef"></a>
 
 ## DescribeEndpointSettingsMessageRequestTypeDef
 
@@ -773,6 +859,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeendpointsettingsresponsetypedef"></a>
+
 ## DescribeEndpointSettingsResponseTypeDef
 
 ```python
@@ -787,6 +875,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointtypesmessagerequesttypedef"></a>
+
 ## DescribeEndpointTypesMessageRequestTypeDef
 
 ```python
@@ -798,6 +888,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeendpointtypesresponsetypedef"></a>
 
 ## DescribeEndpointTypesResponseTypeDef
 
@@ -813,6 +905,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointsmessagerequesttypedef"></a>
+
 ## DescribeEndpointsMessageRequestTypeDef
 
 ```python
@@ -824,6 +918,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeendpointsresponsetypedef"></a>
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -838,6 +934,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventcategoriesmessagerequesttypedef"></a>
+
 ## DescribeEventCategoriesMessageRequestTypeDef
 
 ```python
@@ -848,6 +946,8 @@ Optional fields:
 
 - `SourceType`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="describeeventcategoriesresponsetypedef"></a>
 
 ## DescribeEventCategoriesResponseTypeDef
 
@@ -862,6 +962,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventsubscriptionsmessagerequesttypedef"></a>
+
 ## DescribeEventSubscriptionsMessageRequestTypeDef
 
 ```python
@@ -874,6 +976,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeeventsubscriptionsresponsetypedef"></a>
 
 ## DescribeEventSubscriptionsResponseTypeDef
 
@@ -888,6 +992,8 @@ Required fields:
   `List`\[[EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventsmessagerequesttypedef"></a>
 
 ## DescribeEventsMessageRequestTypeDef
 
@@ -908,6 +1014,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeeventsresponsetypedef"></a>
+
 ## DescribeEventsResponseTypeDef
 
 ```python
@@ -921,6 +1029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorderablereplicationinstancesmessagerequesttypedef"></a>
+
 ## DescribeOrderableReplicationInstancesMessageRequestTypeDef
 
 ```python
@@ -931,6 +1041,8 @@ Optional fields:
 
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeorderablereplicationinstancesresponsetypedef"></a>
 
 ## DescribeOrderableReplicationInstancesResponseTypeDef
 
@@ -946,6 +1058,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describependingmaintenanceactionsmessagerequesttypedef"></a>
+
 ## DescribePendingMaintenanceActionsMessageRequestTypeDef
 
 ```python
@@ -958,6 +1072,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `Marker`: `str`
 - `MaxRecords`: `int`
+
+<a id="describependingmaintenanceactionsresponsetypedef"></a>
 
 ## DescribePendingMaintenanceActionsResponseTypeDef
 
@@ -973,6 +1089,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerefreshschemasstatusmessagerequesttypedef"></a>
+
 ## DescribeRefreshSchemasStatusMessageRequestTypeDef
 
 ```python
@@ -982,6 +1100,8 @@ from mypy_boto3_dms.type_defs import DescribeRefreshSchemasStatusMessageRequestT
 Required fields:
 
 - `EndpointArn`: `str`
+
+<a id="describerefreshschemasstatusresponsetypedef"></a>
 
 ## DescribeRefreshSchemasStatusResponseTypeDef
 
@@ -995,6 +1115,8 @@ Required fields:
   [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describereplicationinstancetasklogsmessagerequesttypedef"></a>
 
 ## DescribeReplicationInstanceTaskLogsMessageRequestTypeDef
 
@@ -1011,6 +1133,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describereplicationinstancetasklogsresponsetypedef"></a>
+
 ## DescribeReplicationInstanceTaskLogsResponseTypeDef
 
 ```python
@@ -1026,6 +1150,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationinstancesmessagerequesttypedef"></a>
+
 ## DescribeReplicationInstancesMessageRequestTypeDef
 
 ```python
@@ -1037,6 +1163,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describereplicationinstancesresponsetypedef"></a>
 
 ## DescribeReplicationInstancesResponseTypeDef
 
@@ -1052,6 +1180,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationsubnetgroupsmessagerequesttypedef"></a>
+
 ## DescribeReplicationSubnetGroupsMessageRequestTypeDef
 
 ```python
@@ -1063,6 +1193,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describereplicationsubnetgroupsresponsetypedef"></a>
 
 ## DescribeReplicationSubnetGroupsResponseTypeDef
 
@@ -1078,6 +1210,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationtaskassessmentresultsmessagerequesttypedef"></a>
+
 ## DescribeReplicationTaskAssessmentResultsMessageRequestTypeDef
 
 ```python
@@ -1089,6 +1223,8 @@ Optional fields:
 - `ReplicationTaskArn`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describereplicationtaskassessmentresultsresponsetypedef"></a>
 
 ## DescribeReplicationTaskAssessmentResultsResponseTypeDef
 
@@ -1105,6 +1241,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationtaskassessmentrunsmessagerequesttypedef"></a>
+
 ## DescribeReplicationTaskAssessmentRunsMessageRequestTypeDef
 
 ```python
@@ -1116,6 +1254,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describereplicationtaskassessmentrunsresponsetypedef"></a>
 
 ## DescribeReplicationTaskAssessmentRunsResponseTypeDef
 
@@ -1131,6 +1271,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationtaskindividualassessmentsmessagerequesttypedef"></a>
+
 ## DescribeReplicationTaskIndividualAssessmentsMessageRequestTypeDef
 
 ```python
@@ -1142,6 +1284,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describereplicationtaskindividualassessmentsresponsetypedef"></a>
 
 ## DescribeReplicationTaskIndividualAssessmentsResponseTypeDef
 
@@ -1157,6 +1301,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationtasksmessagerequesttypedef"></a>
+
 ## DescribeReplicationTasksMessageRequestTypeDef
 
 ```python
@@ -1169,6 +1315,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `WithoutSettings`: `bool`
+
+<a id="describereplicationtasksresponsetypedef"></a>
 
 ## DescribeReplicationTasksResponseTypeDef
 
@@ -1183,6 +1331,8 @@ Required fields:
   `List`\[[ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeschemasmessagerequesttypedef"></a>
 
 ## DescribeSchemasMessageRequestTypeDef
 
@@ -1199,6 +1349,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeschemasresponsetypedef"></a>
+
 ## DescribeSchemasResponseTypeDef
 
 ```python
@@ -1211,6 +1363,8 @@ Required fields:
 - `Schemas`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetablestatisticsmessagerequesttypedef"></a>
 
 ## DescribeTableStatisticsMessageRequestTypeDef
 
@@ -1228,6 +1382,8 @@ Optional fields:
 - `Marker`: `str`
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
+<a id="describetablestatisticsresponsetypedef"></a>
+
 ## DescribeTableStatisticsResponseTypeDef
 
 ```python
@@ -1243,6 +1399,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dmstransfersettingstypedef"></a>
+
 ## DmsTransferSettingsTypeDef
 
 ```python
@@ -1253,6 +1411,8 @@ Optional fields:
 
 - `ServiceAccessRoleArn`: `str`
 - `BucketName`: `str`
+
+<a id="docdbsettingstypedef"></a>
 
 ## DocDbSettingsTypeDef
 
@@ -1274,6 +1434,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="dynamodbsettingstypedef"></a>
+
 ## DynamoDbSettingsTypeDef
 
 ```python
@@ -1283,6 +1445,8 @@ from mypy_boto3_dms.type_defs import DynamoDbSettingsTypeDef
 Required fields:
 
 - `ServiceAccessRoleArn`: `str`
+
+<a id="elasticsearchsettingstypedef"></a>
 
 ## ElasticsearchSettingsTypeDef
 
@@ -1299,6 +1463,8 @@ Optional fields:
 
 - `FullLoadErrorPercentage`: `int`
 - `ErrorRetryDuration`: `int`
+
+<a id="endpointsettingtypedef"></a>
 
 ## EndpointSettingTypeDef
 
@@ -1318,6 +1484,8 @@ Optional fields:
 - `IntValueMin`: `int`
 - `IntValueMax`: `int`
 - `DefaultValue`: `str`
+
+<a id="endpointtypedef"></a>
 
 ## EndpointTypeDef
 
@@ -1377,6 +1545,8 @@ Optional fields:
 - `GcpMySQLSettings`:
   [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
+<a id="eventcategorygrouptypedef"></a>
+
 ## EventCategoryGroupTypeDef
 
 ```python
@@ -1387,6 +1557,8 @@ Optional fields:
 
 - `SourceType`: `str`
 - `EventCategories`: `List`\[`str`\]
+
+<a id="eventsubscriptiontypedef"></a>
 
 ## EventSubscriptionTypeDef
 
@@ -1406,6 +1578,8 @@ Optional fields:
 - `EventCategoriesList`: `List`\[`str`\]
 - `Enabled`: `bool`
 
+<a id="eventtypedef"></a>
+
 ## EventTypeDef
 
 ```python
@@ -1421,6 +1595,8 @@ Optional fields:
 - `EventCategories`: `List`\[`str`\]
 - `Date`: `datetime`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1431,6 +1607,8 @@ Required fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="gcpmysqlsettingstypedef"></a>
 
 ## GcpMySQLSettingsTypeDef
 
@@ -1455,6 +1633,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="ibmdb2settingstypedef"></a>
+
 ## IBMDb2SettingsTypeDef
 
 ```python
@@ -1474,6 +1654,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="importcertificatemessagerequesttypedef"></a>
+
 ## ImportCertificateMessageRequestTypeDef
 
 ```python
@@ -1490,6 +1672,8 @@ Optional fields:
 - `CertificateWallet`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="importcertificateresponsetypedef"></a>
+
 ## ImportCertificateResponseTypeDef
 
 ```python
@@ -1501,6 +1685,8 @@ Required fields:
 - `Certificate`: [CertificateTypeDef](./type_defs.md#certificatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="kafkasettingstypedef"></a>
 
 ## KafkaSettingsTypeDef
 
@@ -1531,6 +1717,8 @@ Optional fields:
 - `SaslPassword`: `str`
 - `NoHexPrefix`: `bool`
 
+<a id="kinesissettingstypedef"></a>
+
 ## KinesisSettingsTypeDef
 
 ```python
@@ -1551,6 +1739,8 @@ Optional fields:
 - `IncludeNullAndEmpty`: `bool`
 - `NoHexPrefix`: `bool`
 
+<a id="listtagsforresourcemessagerequesttypedef"></a>
+
 ## ListTagsForResourceMessageRequestTypeDef
 
 ```python
@@ -1561,6 +1751,8 @@ Optional fields:
 
 - `ResourceArn`: `str`
 - `ResourceArnList`: `Sequence`\[`str`\]
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1573,6 +1765,8 @@ Required fields:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="microsoftsqlserversettingstypedef"></a>
 
 ## MicrosoftSQLServerSettingsTypeDef
 
@@ -1596,6 +1790,8 @@ Optional fields:
 - `UseThirdPartyBackupDevice`: `bool`
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
+
+<a id="modifyendpointmessagerequesttypedef"></a>
 
 ## ModifyEndpointMessageRequestTypeDef
 
@@ -1656,6 +1852,8 @@ Optional fields:
 - `GcpMySQLSettings`:
   [GcpMySQLSettingsTypeDef](./type_defs.md#gcpmysqlsettingstypedef)
 
+<a id="modifyendpointresponsetypedef"></a>
+
 ## ModifyEndpointResponseTypeDef
 
 ```python
@@ -1667,6 +1865,8 @@ Required fields:
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyeventsubscriptionmessagerequesttypedef"></a>
 
 ## ModifyEventSubscriptionMessageRequestTypeDef
 
@@ -1685,6 +1885,8 @@ Optional fields:
 - `EventCategories`: `Sequence`\[`str`\]
 - `Enabled`: `bool`
 
+<a id="modifyeventsubscriptionresponsetypedef"></a>
+
 ## ModifyEventSubscriptionResponseTypeDef
 
 ```python
@@ -1697,6 +1899,8 @@ Required fields:
   [EventSubscriptionTypeDef](./type_defs.md#eventsubscriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyreplicationinstancemessagerequesttypedef"></a>
 
 ## ModifyReplicationInstanceMessageRequestTypeDef
 
@@ -1721,6 +1925,8 @@ Optional fields:
 - `AutoMinorVersionUpgrade`: `bool`
 - `ReplicationInstanceIdentifier`: `str`
 
+<a id="modifyreplicationinstanceresponsetypedef"></a>
+
 ## ModifyReplicationInstanceResponseTypeDef
 
 ```python
@@ -1733,6 +1939,8 @@ Required fields:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyreplicationsubnetgroupmessagerequesttypedef"></a>
 
 ## ModifyReplicationSubnetGroupMessageRequestTypeDef
 
@@ -1749,6 +1957,8 @@ Optional fields:
 
 - `ReplicationSubnetGroupDescription`: `str`
 
+<a id="modifyreplicationsubnetgroupresponsetypedef"></a>
+
 ## ModifyReplicationSubnetGroupResponseTypeDef
 
 ```python
@@ -1761,6 +1971,8 @@ Required fields:
   [ReplicationSubnetGroupTypeDef](./type_defs.md#replicationsubnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyreplicationtaskmessagerequesttypedef"></a>
 
 ## ModifyReplicationTaskMessageRequestTypeDef
 
@@ -1784,6 +1996,8 @@ Optional fields:
 - `CdcStopPosition`: `str`
 - `TaskData`: `str`
 
+<a id="modifyreplicationtaskresponsetypedef"></a>
+
 ## ModifyReplicationTaskResponseTypeDef
 
 ```python
@@ -1796,6 +2010,8 @@ Required fields:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mongodbsettingstypedef"></a>
 
 ## MongoDbSettingsTypeDef
 
@@ -1821,6 +2037,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="movereplicationtaskmessagerequesttypedef"></a>
+
 ## MoveReplicationTaskMessageRequestTypeDef
 
 ```python
@@ -1831,6 +2049,8 @@ Required fields:
 
 - `ReplicationTaskArn`: `str`
 - `TargetReplicationInstanceArn`: `str`
+
+<a id="movereplicationtaskresponsetypedef"></a>
 
 ## MoveReplicationTaskResponseTypeDef
 
@@ -1844,6 +2064,8 @@ Required fields:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mysqlsettingstypedef"></a>
 
 ## MySQLSettingsTypeDef
 
@@ -1868,6 +2090,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="neptunesettingstypedef"></a>
+
 ## NeptuneSettingsTypeDef
 
 ```python
@@ -1886,6 +2110,8 @@ Optional fields:
 - `MaxFileSize`: `int`
 - `MaxRetryCount`: `int`
 - `IamAuthEnabled`: `bool`
+
+<a id="oraclesettingstypedef"></a>
 
 ## OracleSettingsTypeDef
 
@@ -1937,6 +2163,8 @@ Optional fields:
 - `SecretsManagerOracleAsmAccessRoleArn`: `str`
 - `SecretsManagerOracleAsmSecretId`: `str`
 
+<a id="orderablereplicationinstancetypedef"></a>
+
 ## OrderableReplicationInstanceTypeDef
 
 ```python
@@ -1956,6 +2184,8 @@ Optional fields:
 - `ReleaseStatus`: `Literal['beta']` (see
   [ReleaseStatusValuesType](./literals.md#releasestatusvaluestype))
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1967,6 +2197,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pendingmaintenanceactiontypedef"></a>
 
 ## PendingMaintenanceActionTypeDef
 
@@ -1982,6 +2214,8 @@ Optional fields:
 - `OptInStatus`: `str`
 - `CurrentApplyDate`: `datetime`
 - `Description`: `str`
+
+<a id="postgresqlsettingstypedef"></a>
 
 ## PostgreSQLSettingsTypeDef
 
@@ -2010,6 +2244,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="rebootreplicationinstancemessagerequesttypedef"></a>
+
 ## RebootReplicationInstanceMessageRequestTypeDef
 
 ```python
@@ -2025,6 +2261,8 @@ Optional fields:
 - `ForceFailover`: `bool`
 - `ForcePlannedFailover`: `bool`
 
+<a id="rebootreplicationinstanceresponsetypedef"></a>
+
 ## RebootReplicationInstanceResponseTypeDef
 
 ```python
@@ -2037,6 +2275,8 @@ Required fields:
   [ReplicationInstanceTypeDef](./type_defs.md#replicationinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="redissettingstypedef"></a>
 
 ## RedisSettingsTypeDef
 
@@ -2057,6 +2297,8 @@ Optional fields:
 - `AuthUserName`: `str`
 - `AuthPassword`: `str`
 - `SslCaCertificateArn`: `str`
+
+<a id="redshiftsettingstypedef"></a>
 
 ## RedshiftSettingsTypeDef
 
@@ -2098,6 +2340,8 @@ Optional fields:
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
 
+<a id="refreshschemasmessagerequesttypedef"></a>
+
 ## RefreshSchemasMessageRequestTypeDef
 
 ```python
@@ -2108,6 +2352,8 @@ Required fields:
 
 - `EndpointArn`: `str`
 - `ReplicationInstanceArn`: `str`
+
+<a id="refreshschemasresponsetypedef"></a>
 
 ## RefreshSchemasResponseTypeDef
 
@@ -2121,6 +2367,8 @@ Required fields:
   [RefreshSchemasStatusTypeDef](./type_defs.md#refreshschemasstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="refreshschemasstatustypedef"></a>
 
 ## RefreshSchemasStatusTypeDef
 
@@ -2136,6 +2384,8 @@ Optional fields:
   [RefreshSchemasStatusTypeValueType](./literals.md#refreshschemasstatustypevaluetype)
 - `LastRefreshDate`: `datetime`
 - `LastFailureMessage`: `str`
+
+<a id="reloadtablesmessagerequesttypedef"></a>
 
 ## ReloadTablesMessageRequestTypeDef
 
@@ -2153,6 +2403,8 @@ Optional fields:
 
 - `ReloadOption`: [ReloadOptionValueType](./literals.md#reloadoptionvaluetype)
 
+<a id="reloadtablesresponsetypedef"></a>
+
 ## ReloadTablesResponseTypeDef
 
 ```python
@@ -2165,6 +2417,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removetagsfromresourcemessagerequesttypedef"></a>
+
 ## RemoveTagsFromResourceMessageRequestTypeDef
 
 ```python
@@ -2175,6 +2429,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="replicationinstancetasklogtypedef"></a>
 
 ## ReplicationInstanceTaskLogTypeDef
 
@@ -2187,6 +2443,8 @@ Optional fields:
 - `ReplicationTaskName`: `str`
 - `ReplicationTaskArn`: `str`
 - `ReplicationInstanceTaskLogSize`: `int`
+
+<a id="replicationinstancetypedef"></a>
 
 ## ReplicationInstanceTypeDef
 
@@ -2223,6 +2481,8 @@ Optional fields:
 - `FreeUntil`: `datetime`
 - `DnsNameServers`: `str`
 
+<a id="replicationpendingmodifiedvaluestypedef"></a>
+
 ## ReplicationPendingModifiedValuesTypeDef
 
 ```python
@@ -2235,6 +2495,8 @@ Optional fields:
 - `AllocatedStorage`: `int`
 - `MultiAZ`: `bool`
 - `EngineVersion`: `str`
+
+<a id="replicationsubnetgrouptypedef"></a>
 
 ## ReplicationSubnetGroupTypeDef
 
@@ -2249,6 +2511,8 @@ Optional fields:
 - `VpcId`: `str`
 - `SubnetGroupStatus`: `str`
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
+
+<a id="replicationtaskassessmentresulttypedef"></a>
 
 ## ReplicationTaskAssessmentResultTypeDef
 
@@ -2266,6 +2530,8 @@ Optional fields:
 - `AssessmentResults`: `str`
 - `S3ObjectUrl`: `str`
 
+<a id="replicationtaskassessmentrunprogresstypedef"></a>
+
 ## ReplicationTaskAssessmentRunProgressTypeDef
 
 ```python
@@ -2276,6 +2542,8 @@ Optional fields:
 
 - `IndividualAssessmentCount`: `int`
 - `IndividualAssessmentCompletedCount`: `int`
+
+<a id="replicationtaskassessmentruntypedef"></a>
 
 ## ReplicationTaskAssessmentRunTypeDef
 
@@ -2299,6 +2567,8 @@ Optional fields:
 - `ResultKmsKeyArn`: `str`
 - `AssessmentRunName`: `str`
 
+<a id="replicationtaskindividualassessmenttypedef"></a>
+
 ## ReplicationTaskIndividualAssessmentTypeDef
 
 ```python
@@ -2312,6 +2582,8 @@ Optional fields:
 - `IndividualAssessmentName`: `str`
 - `Status`: `str`
 - `ReplicationTaskIndividualAssessmentStartDate`: `datetime`
+
+<a id="replicationtaskstatstypedef"></a>
 
 ## ReplicationTaskStatsTypeDef
 
@@ -2332,6 +2604,8 @@ Optional fields:
 - `StopDate`: `datetime`
 - `FullLoadStartDate`: `datetime`
 - `FullLoadFinishDate`: `datetime`
+
+<a id="replicationtasktypedef"></a>
 
 ## ReplicationTaskTypeDef
 
@@ -2363,6 +2637,8 @@ Optional fields:
 - `TaskData`: `str`
 - `TargetReplicationInstanceArn`: `str`
 
+<a id="resourcependingmaintenanceactionstypedef"></a>
+
 ## ResourcePendingMaintenanceActionsTypeDef
 
 ```python
@@ -2374,6 +2650,8 @@ Optional fields:
 - `ResourceIdentifier`: `str`
 - `PendingMaintenanceActionDetails`:
   `List`\[[PendingMaintenanceActionTypeDef](./type_defs.md#pendingmaintenanceactiontypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2388,6 +2666,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3settingstypedef"></a>
 
 ## S3SettingsTypeDef
 
@@ -2442,6 +2722,8 @@ Optional fields:
 - `Rfc4180`: `bool`
 - `DatePartitionTimezone`: `str`
 
+<a id="startreplicationtaskassessmentmessagerequesttypedef"></a>
+
 ## StartReplicationTaskAssessmentMessageRequestTypeDef
 
 ```python
@@ -2451,6 +2733,8 @@ from mypy_boto3_dms.type_defs import StartReplicationTaskAssessmentMessageReques
 Required fields:
 
 - `ReplicationTaskArn`: `str`
+
+<a id="startreplicationtaskassessmentresponsetypedef"></a>
 
 ## StartReplicationTaskAssessmentResponseTypeDef
 
@@ -2464,6 +2748,8 @@ Required fields:
   [ReplicationTaskTypeDef](./type_defs.md#replicationtasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startreplicationtaskassessmentrunmessagerequesttypedef"></a>
 
 ## StartReplicationTaskAssessmentRunMessageRequestTypeDef
 
@@ -2486,6 +2772,8 @@ Optional fields:
 - `IncludeOnly`: `Sequence`\[`str`\]
 - `Exclude`: `Sequence`\[`str`\]
 
+<a id="startreplicationtaskassessmentrunresponsetypedef"></a>
+
 ## StartReplicationTaskAssessmentRunResponseTypeDef
 
 ```python
@@ -2498,6 +2786,8 @@ Required fields:
   [ReplicationTaskAssessmentRunTypeDef](./type_defs.md#replicationtaskassessmentruntypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startreplicationtaskmessagerequesttypedef"></a>
 
 ## StartReplicationTaskMessageRequestTypeDef
 
@@ -2517,6 +2807,8 @@ Optional fields:
 - `CdcStartPosition`: `str`
 - `CdcStopPosition`: `str`
 
+<a id="startreplicationtaskresponsetypedef"></a>
+
 ## StartReplicationTaskResponseTypeDef
 
 ```python
@@ -2530,6 +2822,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopreplicationtaskmessagerequesttypedef"></a>
+
 ## StopReplicationTaskMessageRequestTypeDef
 
 ```python
@@ -2539,6 +2833,8 @@ from mypy_boto3_dms.type_defs import StopReplicationTaskMessageRequestTypeDef
 Required fields:
 
 - `ReplicationTaskArn`: `str`
+
+<a id="stopreplicationtaskresponsetypedef"></a>
 
 ## StopReplicationTaskResponseTypeDef
 
@@ -2553,6 +2849,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="subnettypedef"></a>
+
 ## SubnetTypeDef
 
 ```python
@@ -2565,6 +2863,8 @@ Optional fields:
 - `SubnetAvailabilityZone`:
   [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - `SubnetStatus`: `str`
+
+<a id="supportedendpointtypetypedef"></a>
 
 ## SupportedEndpointTypeTypeDef
 
@@ -2581,6 +2881,8 @@ Optional fields:
 - `ReplicationInstanceEngineMinimumVersion`: `str`
 - `EngineDisplayName`: `str`
 
+<a id="sybasesettingstypedef"></a>
+
 ## SybaseSettingsTypeDef
 
 ```python
@@ -2596,6 +2898,8 @@ Optional fields:
 - `Username`: `str`
 - `SecretsManagerAccessRoleArn`: `str`
 - `SecretsManagerSecretId`: `str`
+
+<a id="tablestatisticstypedef"></a>
 
 ## TableStatisticsTypeDef
 
@@ -2625,6 +2929,8 @@ Optional fields:
 - `ValidationState`: `str`
 - `ValidationStateDetails`: `str`
 
+<a id="tabletoreloadtypedef"></a>
+
 ## TableToReloadTypeDef
 
 ```python
@@ -2635,6 +2941,8 @@ Required fields:
 
 - `SchemaName`: `str`
 - `TableName`: `str`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2648,6 +2956,8 @@ Optional fields:
 - `Value`: `str`
 - `ResourceArn`: `str`
 
+<a id="testconnectionmessagerequesttypedef"></a>
+
 ## TestConnectionMessageRequestTypeDef
 
 ```python
@@ -2658,6 +2968,8 @@ Required fields:
 
 - `ReplicationInstanceArn`: `str`
 - `EndpointArn`: `str`
+
+<a id="testconnectionresponsetypedef"></a>
 
 ## TestConnectionResponseTypeDef
 
@@ -2671,6 +2983,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="vpcsecuritygroupmembershiptypedef"></a>
+
 ## VpcSecurityGroupMembershipTypeDef
 
 ```python
@@ -2681,6 +2995,8 @@ Optional fields:
 
 - `VpcSecurityGroupId`: `str`
 - `Status`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

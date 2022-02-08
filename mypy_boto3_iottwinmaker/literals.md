@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iottwinmaker-module"></a>
+
 # Literals for boto3 IoTTwinMaker module
 
 > [Index](..) > [IoTTwinMaker](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
 type annotations stubs module
-[mypy_boto3_iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 - [Literals for boto3 IoTTwinMaker module](#literals-for-boto3-iottwinmaker-module)
   - [ComponentUpdateTypeType](#componentupdatetypetype)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [TypeType](#typetype)
   - [ServiceName](#servicename)
 
+<a id="componentupdatetypetype"></a>
+
 ## ComponentUpdateTypeType
 
 ```python
@@ -31,6 +35,8 @@ Values:
 - `DELETE`
 - `UPDATE`
 
+<a id="errorcodetype"></a>
+
 ## ErrorCodeType
 
 ```python
@@ -42,6 +48,8 @@ Values:
 - `INTERNAL_FAILURE`
 - `VALIDATION_ERROR`
 
+<a id="interpolationtypetype"></a>
+
 ## InterpolationTypeType
 
 ```python
@@ -51,6 +59,8 @@ from mypy_boto3_iottwinmaker.literals import InterpolationTypeType
 Values:
 
 - `LINEAR`
+
+<a id="orderbytimetype"></a>
 
 ## OrderByTimeType
 
@@ -63,6 +73,8 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="parententityupdatetypetype"></a>
+
 ## ParentEntityUpdateTypeType
 
 ```python
@@ -73,6 +85,8 @@ Values:
 
 - `DELETE`
 - `UPDATE`
+
+<a id="propertyupdatetypetype"></a>
 
 ## PropertyUpdateTypeType
 
@@ -85,6 +99,8 @@ Values:
 - `DELETE`
 - `UPDATE`
 
+<a id="scopetype"></a>
+
 ## ScopeType
 
 ```python
@@ -95,6 +111,8 @@ Values:
 
 - `ENTITY`
 - `WORKSPACE`
+
+<a id="statetype"></a>
 
 ## StateType
 
@@ -109,6 +127,8 @@ Values:
 - `DELETING`
 - `ERROR`
 - `UPDATING`
+
+<a id="typetype"></a>
 
 ## TypeType
 
@@ -126,6 +146,8 @@ Values:
 - `MAP`
 - `RELATIONSHIP`
 - `STRING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

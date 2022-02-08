@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-rdsdataservice-module"></a>
+
 # Typed dictionaries for boto3 RDSDataService module
 
 > [Index](..) > [RDSDataService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
-[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+[mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 - [Typed dictionaries for boto3 RDSDataService module](#typed-dictionaries-for-boto3-rdsdataservice-module)
   - [ArrayValueTypeDef](#arrayvaluetypedef)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [UpdateResultTypeDef](#updateresulttypedef)
   - [ValueTypeDef](#valuetypedef)
 
+<a id="arrayvaluetypedef"></a>
+
 ## ArrayValueTypeDef
 
 ```python
@@ -48,6 +52,8 @@ Optional fields:
 - `doubleValues`: `Sequence`\[`float`\]
 - `longValues`: `Sequence`\[`int`\]
 - `stringValues`: `Sequence`\[`str`\]
+
+<a id="batchexecutestatementrequestrequesttypedef"></a>
 
 ## BatchExecuteStatementRequestRequestTypeDef
 
@@ -69,6 +75,8 @@ Optional fields:
 - `schema`: `str`
 - `transactionId`: `str`
 
+<a id="batchexecutestatementresponsetypedef"></a>
+
 ## BatchExecuteStatementResponseTypeDef
 
 ```python
@@ -81,6 +89,8 @@ Required fields:
   `List`\[[UpdateResultTypeDef](./type_defs.md#updateresulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="begintransactionrequestrequesttypedef"></a>
 
 ## BeginTransactionRequestRequestTypeDef
 
@@ -98,6 +108,8 @@ Optional fields:
 - `database`: `str`
 - `schema`: `str`
 
+<a id="begintransactionresponsetypedef"></a>
+
 ## BeginTransactionResponseTypeDef
 
 ```python
@@ -109,6 +121,8 @@ Required fields:
 - `transactionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="columnmetadatatypedef"></a>
 
 ## ColumnMetadataTypeDef
 
@@ -133,6 +147,8 @@ Optional fields:
 - `type`: `int`
 - `typeName`: `str`
 
+<a id="committransactionrequestrequesttypedef"></a>
+
 ## CommitTransactionRequestRequestTypeDef
 
 ```python
@@ -145,6 +161,8 @@ Required fields:
 - `secretArn`: `str`
 - `transactionId`: `str`
 
+<a id="committransactionresponsetypedef"></a>
+
 ## CommitTransactionResponseTypeDef
 
 ```python
@@ -156,6 +174,8 @@ Required fields:
 - `transactionStatus`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="executesqlrequestrequesttypedef"></a>
 
 ## ExecuteSqlRequestRequestTypeDef
 
@@ -174,6 +194,8 @@ Optional fields:
 - `database`: `str`
 - `schema`: `str`
 
+<a id="executesqlresponsetypedef"></a>
+
 ## ExecuteSqlResponseTypeDef
 
 ```python
@@ -186,6 +208,8 @@ Required fields:
   `List`\[[SqlStatementResultTypeDef](./type_defs.md#sqlstatementresulttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="executestatementrequestrequesttypedef"></a>
 
 ## ExecuteStatementRequestRequestTypeDef
 
@@ -211,6 +235,8 @@ Optional fields:
 - `schema`: `str`
 - `transactionId`: `str`
 
+<a id="executestatementresponsetypedef"></a>
+
 ## ExecuteStatementResponseTypeDef
 
 ```python
@@ -226,6 +252,8 @@ Required fields:
 - `records`: `List`\[`List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="fieldtypedef"></a>
 
 ## FieldTypeDef
 
@@ -243,6 +271,8 @@ Optional fields:
 - `longValue`: `int`
 - `stringValue`: `str`
 
+<a id="recordtypedef"></a>
+
 ## RecordTypeDef
 
 ```python
@@ -252,6 +282,8 @@ from mypy_boto3_rds_data.type_defs import RecordTypeDef
 Optional fields:
 
 - `values`: `List`\[[ValueTypeDef](./type_defs.md#valuetypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -267,6 +299,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultframetypedef"></a>
+
 ## ResultFrameTypeDef
 
 ```python
@@ -278,6 +312,8 @@ Optional fields:
 - `records`: `List`\[[RecordTypeDef](./type_defs.md#recordtypedef)\]
 - `resultSetMetadata`:
   [ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef)
+
+<a id="resultsetmetadatatypedef"></a>
 
 ## ResultSetMetadataTypeDef
 
@@ -291,6 +327,8 @@ Optional fields:
 - `columnMetadata`:
   `List`\[[ColumnMetadataTypeDef](./type_defs.md#columnmetadatatypedef)\]
 
+<a id="resultsetoptionstypedef"></a>
+
 ## ResultSetOptionsTypeDef
 
 ```python
@@ -301,6 +339,8 @@ Optional fields:
 
 - `decimalReturnType`:
   [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
+
+<a id="rollbacktransactionrequestrequesttypedef"></a>
 
 ## RollbackTransactionRequestRequestTypeDef
 
@@ -314,6 +354,8 @@ Required fields:
 - `secretArn`: `str`
 - `transactionId`: `str`
 
+<a id="rollbacktransactionresponsetypedef"></a>
+
 ## RollbackTransactionResponseTypeDef
 
 ```python
@@ -325,6 +367,8 @@ Required fields:
 - `transactionStatus`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sqlparametertypedef"></a>
 
 ## SqlParameterTypeDef
 
@@ -338,6 +382,8 @@ Optional fields:
 - `typeHint`: [TypeHintType](./literals.md#typehinttype)
 - `value`: [FieldTypeDef](./type_defs.md#fieldtypedef)
 
+<a id="sqlstatementresulttypedef"></a>
+
 ## SqlStatementResultTypeDef
 
 ```python
@@ -349,6 +395,8 @@ Optional fields:
 - `numberOfRecordsUpdated`: `int`
 - `resultFrame`: [ResultFrameTypeDef](./type_defs.md#resultframetypedef)
 
+<a id="structvaluetypedef"></a>
+
 ## StructValueTypeDef
 
 ```python
@@ -359,6 +407,8 @@ Optional fields:
 
 - `attributes`: `List`\[[ValueTypeDef](./type_defs.md#valuetypedef)\]
 
+<a id="updateresulttypedef"></a>
+
 ## UpdateResultTypeDef
 
 ```python
@@ -368,6 +418,8 @@ from mypy_boto3_rds_data.type_defs import UpdateResultTypeDef
 Optional fields:
 
 - `generatedFields`: `List`\[[FieldTypeDef](./type_defs.md#fieldtypedef)\]
+
+<a id="valuetypedef"></a>
 
 ## ValueTypeDef
 

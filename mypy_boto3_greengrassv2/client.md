@@ -1,3 +1,5 @@
+<a id="greengrassv2client-for-boto3-greengrassv2-module"></a>
+
 # GreengrassV2Client for boto3 GreengrassV2 module
 
 > [Index](..) > [GreengrassV2](.) > GreengrassV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
-[mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [GreengrassV2Client for boto3 GreengrassV2 module](#greengrassv2client-for-boto3-greengrassv2-module)
   - [GreengrassV2Client](#greengrassv2client)
@@ -44,6 +46,8 @@ type annotations stubs module
     - [update_connectivity_info](#update_connectivity_info)
     - [get_paginator](#get_paginator)
 
+<a id="greengrassv2client"></a>
+
 ## GreengrassV2Client
 
 Type annotations for `boto3.client("greengrassv2")`
@@ -51,14 +55,17 @@ Type annotations for `boto3.client("greengrassv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_greengrassv2.client import GreengrassV2Client
 
 def get_greengrassv2_client() -> GreengrassV2Client:
-    return boto3.client("greengrassv2")
+    return Session().client("greengrassv2")
 ```
 
 Boto3 documentation:
 [GreengrassV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -84,7 +91,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -96,6 +107,8 @@ Boto3 documentation:
 [GreengrassV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_service_role_to_account"></a>
 
 ### associate_service_role_to_account
 
@@ -117,6 +130,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
+
+<a id="batch_associate_client_device_with_core_device"></a>
 
 ### batch_associate_client_device_with_core_device
 
@@ -141,6 +156,8 @@ Keyword-only arguments:
 Returns
 [BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef](./type_defs.md#batchassociateclientdevicewithcoredeviceresponsetypedef).
 
+<a id="batch_disassociate_client_device_from_core_device"></a>
+
 ### batch_disassociate_client_device_from_core_device
 
 Disassociates a list of client devices from a core device.
@@ -164,6 +181,8 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef](./type_defs.md#batchdisassociateclientdevicefromcoredeviceresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -178,6 +197,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_deployment"></a>
 
 ### cancel_deployment
 
@@ -197,6 +218,8 @@ Keyword-only arguments:
 
 Returns
 [CancelDeploymentResponseTypeDef](./type_defs.md#canceldeploymentresponsetypedef).
+
+<a id="create_component_version"></a>
 
 ### create_component_version
 
@@ -221,6 +244,8 @@ Keyword-only arguments:
 
 Returns
 [CreateComponentVersionResponseTypeDef](./type_defs.md#createcomponentversionresponsetypedef).
+
+<a id="create_deployment"></a>
 
 ### create_deployment
 
@@ -251,6 +276,8 @@ Keyword-only arguments:
 Returns
 [CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
+<a id="delete_component"></a>
+
 ### delete_component
 
 Deletes a version of a component from IoT Greengrass.
@@ -267,6 +294,8 @@ Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
+<a id="delete_core_device"></a>
+
 ### delete_core_device
 
 Deletes a Greengrass core device, which is an IoT thing.
@@ -282,6 +311,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `coreDeviceThingName`: `str` *(required)*
+
+<a id="describe_component"></a>
 
 ### describe_component
 
@@ -302,6 +333,8 @@ Keyword-only arguments:
 Returns
 [DescribeComponentResponseTypeDef](./type_defs.md#describecomponentresponsetypedef).
 
+<a id="disassociate_service_role_from_account"></a>
+
 ### disassociate_service_role_from_account
 
 Disassociates the Greengrass service role from IoT Greengrass for your Amazon
@@ -315,6 +348,8 @@ Boto3 documentation:
 
 Returns
 [DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -334,6 +369,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_component"></a>
 
 ### get_component
 
@@ -356,6 +393,8 @@ Keyword-only arguments:
 Returns
 [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
 
+<a id="get_component_version_artifact"></a>
+
 ### get_component_version_artifact
 
 Gets the pre-signed URL to download a public component artifact.
@@ -377,6 +416,8 @@ Keyword-only arguments:
 Returns
 [GetComponentVersionArtifactResponseTypeDef](./type_defs.md#getcomponentversionartifactresponsetypedef).
 
+<a id="get_connectivity_info"></a>
+
 ### get_connectivity_info
 
 Retrieves connectivity information for a Greengrass core device.
@@ -397,6 +438,8 @@ Keyword-only arguments:
 Returns
 [GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
 
+<a id="get_core_device"></a>
+
 ### get_core_device
 
 Retrieves metadata for a Greengrass core device.
@@ -415,6 +458,8 @@ Keyword-only arguments:
 
 Returns
 [GetCoreDeviceResponseTypeDef](./type_defs.md#getcoredeviceresponsetypedef).
+
+<a id="get_deployment"></a>
 
 ### get_deployment
 
@@ -435,6 +480,8 @@ Keyword-only arguments:
 Returns
 [GetDeploymentResponseTypeDef](./type_defs.md#getdeploymentresponsetypedef).
 
+<a id="get_service_role_for_account"></a>
+
 ### get_service_role_for_account
 
 Gets the service role associated with IoT Greengrass for your Amazon Web
@@ -448,6 +495,8 @@ Boto3 documentation:
 
 Returns
 [GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
+
+<a id="list_client_devices_associated_with_core_device"></a>
 
 ### list_client_devices_associated_with_core_device
 
@@ -473,6 +522,8 @@ Keyword-only arguments:
 Returns
 [ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef).
 
+<a id="list_component_versions"></a>
+
 ### list_component_versions
 
 Retrieves a paginated list of all versions for a component.
@@ -494,6 +545,8 @@ Keyword-only arguments:
 
 Returns
 [ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef).
+
+<a id="list_components"></a>
 
 ### list_components
 
@@ -517,6 +570,8 @@ Keyword-only arguments:
 Returns
 [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
+<a id="list_core_devices"></a>
+
 ### list_core_devices
 
 Retrieves a paginated list of Greengrass core devices.
@@ -538,6 +593,8 @@ Keyword-only arguments:
 
 Returns
 [ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef).
+
+<a id="list_deployments"></a>
 
 ### list_deployments
 
@@ -562,6 +619,8 @@ Keyword-only arguments:
 Returns
 [ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
 
+<a id="list_effective_deployments"></a>
+
 ### list_effective_deployments
 
 Retrieves a paginated list of deployment jobs that IoT Greengrass sends to
@@ -584,6 +643,8 @@ Keyword-only arguments:
 
 Returns
 [ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef).
+
+<a id="list_installed_components"></a>
 
 ### list_installed_components
 
@@ -608,6 +669,8 @@ Keyword-only arguments:
 Returns
 [ListInstalledComponentsResponseTypeDef](./type_defs.md#listinstalledcomponentsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the list of tags for an IoT Greengrass resource.
@@ -627,6 +690,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="resolve_component_candidates"></a>
 
 ### resolve_component_candidates
 
@@ -654,6 +719,8 @@ Keyword-only arguments:
 Returns
 [ResolveComponentCandidatesResponseTypeDef](./type_defs.md#resolvecomponentcandidatesresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to an IoT Greengrass resource.
@@ -673,6 +740,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from an IoT Greengrass resource.
@@ -691,6 +760,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_connectivity_info"></a>
 
 ### update_connectivity_info
 
@@ -714,6 +785,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

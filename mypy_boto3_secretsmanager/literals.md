@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-secretsmanager-module"></a>
+
 # Literals for boto3 SecretsManager module
 
 > [Index](..) > [SecretsManager](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
-[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [Literals for boto3 SecretsManager module](#literals-for-boto3-secretsmanager-module)
   - [FilterNameStringTypeType](#filternamestringtypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [StatusTypeType](#statustypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="filternamestringtypetype"></a>
 
 ## FilterNameStringTypeType
 
@@ -30,6 +34,8 @@ Values:
 - `tag-key`
 - `tag-value`
 
+<a id="listsecretspaginatorname"></a>
+
 ## ListSecretsPaginatorName
 
 ```python
@@ -39,6 +45,8 @@ from mypy_boto3_secretsmanager.literals import ListSecretsPaginatorName
 Values:
 
 - `list_secrets`
+
+<a id="sortordertypetype"></a>
 
 ## SortOrderTypeType
 
@@ -51,6 +59,8 @@ Values:
 - `asc`
 - `desc`
 
+<a id="statustypetype"></a>
+
 ## StatusTypeType
 
 ```python
@@ -62,6 +72,8 @@ Values:
 - `Failed`
 - `InProgress`
 - `InSync`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -370,6 +382,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

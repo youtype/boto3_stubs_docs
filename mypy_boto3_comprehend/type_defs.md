@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-comprehend-module"></a>
+
 # Typed dictionaries for boto3 Comprehend module
 
 > [Index](..) > [Comprehend](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
-[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+[mypy-boto3-comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [Typed dictionaries for boto3 Comprehend module](#typed-dictionaries-for-boto3-comprehend-module)
   - [AugmentedManifestsListItemTypeDef](#augmentedmanifestslistitemtypedef)
@@ -197,6 +199,8 @@ type annotations stubs module
   - [UpdateEndpointRequestRequestTypeDef](#updateendpointrequestrequesttypedef)
   - [VpcConfigTypeDef](#vpcconfigtypedef)
 
+<a id="augmentedmanifestslistitemtypedef"></a>
+
 ## AugmentedManifestsListItemTypeDef
 
 ```python
@@ -216,6 +220,8 @@ Optional fields:
 - `DocumentType`:
   [AugmentedManifestsDocumentTypeFormatType](./literals.md#augmentedmanifestsdocumenttypeformattype)
 
+<a id="batchdetectdominantlanguageitemresulttypedef"></a>
+
 ## BatchDetectDominantLanguageItemResultTypeDef
 
 ```python
@@ -228,6 +234,8 @@ Optional fields:
 - `Languages`:
   `List`\[[DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef)\]
 
+<a id="batchdetectdominantlanguagerequestrequesttypedef"></a>
+
 ## BatchDetectDominantLanguageRequestRequestTypeDef
 
 ```python
@@ -237,6 +245,8 @@ from mypy_boto3_comprehend.type_defs import BatchDetectDominantLanguageRequestRe
 Required fields:
 
 - `TextList`: `Sequence`\[`str`\]
+
+<a id="batchdetectdominantlanguageresponsetypedef"></a>
 
 ## BatchDetectDominantLanguageResponseTypeDef
 
@@ -253,6 +263,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdetectentitiesitemresulttypedef"></a>
+
 ## BatchDetectEntitiesItemResultTypeDef
 
 ```python
@@ -264,6 +276,8 @@ Optional fields:
 - `Index`: `int`
 - `Entities`: `List`\[[EntityTypeDef](./type_defs.md#entitytypedef)\]
 
+<a id="batchdetectentitiesrequestrequesttypedef"></a>
+
 ## BatchDetectEntitiesRequestRequestTypeDef
 
 ```python
@@ -274,6 +288,8 @@ Required fields:
 
 - `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="batchdetectentitiesresponsetypedef"></a>
 
 ## BatchDetectEntitiesResponseTypeDef
 
@@ -290,6 +306,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdetectkeyphrasesitemresulttypedef"></a>
+
 ## BatchDetectKeyPhrasesItemResultTypeDef
 
 ```python
@@ -301,6 +319,8 @@ Optional fields:
 - `Index`: `int`
 - `KeyPhrases`: `List`\[[KeyPhraseTypeDef](./type_defs.md#keyphrasetypedef)\]
 
+<a id="batchdetectkeyphrasesrequestrequesttypedef"></a>
+
 ## BatchDetectKeyPhrasesRequestRequestTypeDef
 
 ```python
@@ -311,6 +331,8 @@ Required fields:
 
 - `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="batchdetectkeyphrasesresponsetypedef"></a>
 
 ## BatchDetectKeyPhrasesResponseTypeDef
 
@@ -327,6 +349,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdetectsentimentitemresulttypedef"></a>
+
 ## BatchDetectSentimentItemResultTypeDef
 
 ```python
@@ -340,6 +364,8 @@ Optional fields:
 - `SentimentScore`:
   [SentimentScoreTypeDef](./type_defs.md#sentimentscoretypedef)
 
+<a id="batchdetectsentimentrequestrequesttypedef"></a>
+
 ## BatchDetectSentimentRequestRequestTypeDef
 
 ```python
@@ -350,6 +376,8 @@ Required fields:
 
 - `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="batchdetectsentimentresponsetypedef"></a>
 
 ## BatchDetectSentimentResponseTypeDef
 
@@ -366,6 +394,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdetectsyntaxitemresulttypedef"></a>
+
 ## BatchDetectSyntaxItemResultTypeDef
 
 ```python
@@ -378,6 +408,8 @@ Optional fields:
 - `SyntaxTokens`:
   `List`\[[SyntaxTokenTypeDef](./type_defs.md#syntaxtokentypedef)\]
 
+<a id="batchdetectsyntaxrequestrequesttypedef"></a>
+
 ## BatchDetectSyntaxRequestRequestTypeDef
 
 ```python
@@ -389,6 +421,8 @@ Required fields:
 - `TextList`: `Sequence`\[`str`\]
 - `LanguageCode`:
   [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+
+<a id="batchdetectsyntaxresponsetypedef"></a>
 
 ## BatchDetectSyntaxResponseTypeDef
 
@@ -405,6 +439,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchitemerrortypedef"></a>
+
 ## BatchItemErrorTypeDef
 
 ```python
@@ -416,6 +452,8 @@ Optional fields:
 - `Index`: `int`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="classifierevaluationmetricstypedef"></a>
 
 ## ClassifierEvaluationMetricsTypeDef
 
@@ -434,6 +472,8 @@ Optional fields:
 - `MicroF1Score`: `float`
 - `HammingLoss`: `float`
 
+<a id="classifiermetadatatypedef"></a>
+
 ## ClassifierMetadataTypeDef
 
 ```python
@@ -448,6 +488,8 @@ Optional fields:
 - `EvaluationMetrics`:
   [ClassifierEvaluationMetricsTypeDef](./type_defs.md#classifierevaluationmetricstypedef)
 
+<a id="classifydocumentrequestrequesttypedef"></a>
+
 ## ClassifyDocumentRequestRequestTypeDef
 
 ```python
@@ -458,6 +500,8 @@ Required fields:
 
 - `Text`: `str`
 - `EndpointArn`: `str`
+
+<a id="classifydocumentresponsetypedef"></a>
 
 ## ClassifyDocumentResponseTypeDef
 
@@ -474,6 +518,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="containspiientitiesrequestrequesttypedef"></a>
+
 ## ContainsPiiEntitiesRequestRequestTypeDef
 
 ```python
@@ -484,6 +530,8 @@ Required fields:
 
 - `Text`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="containspiientitiesresponsetypedef"></a>
 
 ## ContainsPiiEntitiesResponseTypeDef
 
@@ -496,6 +544,8 @@ Required fields:
 - `Labels`: `List`\[[EntityLabelTypeDef](./type_defs.md#entitylabeltypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdocumentclassifierrequestrequesttypedef"></a>
 
 ## CreateDocumentClassifierRequestRequestTypeDef
 
@@ -525,6 +575,8 @@ Optional fields:
 - `ModelKmsKeyId`: `str`
 - `ModelPolicy`: `str`
 
+<a id="createdocumentclassifierresponsetypedef"></a>
+
 ## CreateDocumentClassifierResponseTypeDef
 
 ```python
@@ -536,6 +588,8 @@ Required fields:
 - `DocumentClassifierArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createendpointrequestrequesttypedef"></a>
 
 ## CreateEndpointRequestRequestTypeDef
 
@@ -555,6 +609,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `DataAccessRoleArn`: `str`
 
+<a id="createendpointresponsetypedef"></a>
+
 ## CreateEndpointResponseTypeDef
 
 ```python
@@ -566,6 +622,8 @@ Required fields:
 - `EndpointArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createentityrecognizerrequestrequesttypedef"></a>
 
 ## CreateEntityRecognizerRequestRequestTypeDef
 
@@ -591,6 +649,8 @@ Optional fields:
 - `ModelKmsKeyId`: `str`
 - `ModelPolicy`: `str`
 
+<a id="createentityrecognizerresponsetypedef"></a>
+
 ## CreateEntityRecognizerResponseTypeDef
 
 ```python
@@ -603,6 +663,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedocumentclassifierrequestrequesttypedef"></a>
+
 ## DeleteDocumentClassifierRequestRequestTypeDef
 
 ```python
@@ -612,6 +674,8 @@ from mypy_boto3_comprehend.type_defs import DeleteDocumentClassifierRequestReque
 Required fields:
 
 - `DocumentClassifierArn`: `str`
+
+<a id="deleteendpointrequestrequesttypedef"></a>
 
 ## DeleteEndpointRequestRequestTypeDef
 
@@ -623,6 +687,8 @@ Required fields:
 
 - `EndpointArn`: `str`
 
+<a id="deleteentityrecognizerrequestrequesttypedef"></a>
+
 ## DeleteEntityRecognizerRequestRequestTypeDef
 
 ```python
@@ -632,6 +698,8 @@ from mypy_boto3_comprehend.type_defs import DeleteEntityRecognizerRequestRequest
 Required fields:
 
 - `EntityRecognizerArn`: `str`
+
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
 
 ## DeleteResourcePolicyRequestRequestTypeDef
 
@@ -647,6 +715,8 @@ Optional fields:
 
 - `PolicyRevisionId`: `str`
 
+<a id="describedocumentclassificationjobrequestrequesttypedef"></a>
+
 ## DescribeDocumentClassificationJobRequestRequestTypeDef
 
 ```python
@@ -656,6 +726,8 @@ from mypy_boto3_comprehend.type_defs import DescribeDocumentClassificationJobReq
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describedocumentclassificationjobresponsetypedef"></a>
 
 ## DescribeDocumentClassificationJobResponseTypeDef
 
@@ -670,6 +742,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedocumentclassifierrequestrequesttypedef"></a>
+
 ## DescribeDocumentClassifierRequestRequestTypeDef
 
 ```python
@@ -679,6 +753,8 @@ from mypy_boto3_comprehend.type_defs import DescribeDocumentClassifierRequestReq
 Required fields:
 
 - `DocumentClassifierArn`: `str`
+
+<a id="describedocumentclassifierresponsetypedef"></a>
 
 ## DescribeDocumentClassifierResponseTypeDef
 
@@ -693,6 +769,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedominantlanguagedetectionjobrequestrequesttypedef"></a>
+
 ## DescribeDominantLanguageDetectionJobRequestRequestTypeDef
 
 ```python
@@ -702,6 +780,8 @@ from mypy_boto3_comprehend.type_defs import DescribeDominantLanguageDetectionJob
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describedominantlanguagedetectionjobresponsetypedef"></a>
 
 ## DescribeDominantLanguageDetectionJobResponseTypeDef
 
@@ -716,6 +796,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointrequestrequesttypedef"></a>
+
 ## DescribeEndpointRequestRequestTypeDef
 
 ```python
@@ -725,6 +807,8 @@ from mypy_boto3_comprehend.type_defs import DescribeEndpointRequestRequestTypeDe
 Required fields:
 
 - `EndpointArn`: `str`
+
+<a id="describeendpointresponsetypedef"></a>
 
 ## DescribeEndpointResponseTypeDef
 
@@ -739,6 +823,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeentitiesdetectionjobrequestrequesttypedef"></a>
+
 ## DescribeEntitiesDetectionJobRequestRequestTypeDef
 
 ```python
@@ -748,6 +834,8 @@ from mypy_boto3_comprehend.type_defs import DescribeEntitiesDetectionJobRequestR
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describeentitiesdetectionjobresponsetypedef"></a>
 
 ## DescribeEntitiesDetectionJobResponseTypeDef
 
@@ -762,6 +850,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeentityrecognizerrequestrequesttypedef"></a>
+
 ## DescribeEntityRecognizerRequestRequestTypeDef
 
 ```python
@@ -771,6 +861,8 @@ from mypy_boto3_comprehend.type_defs import DescribeEntityRecognizerRequestReque
 Required fields:
 
 - `EntityRecognizerArn`: `str`
+
+<a id="describeentityrecognizerresponsetypedef"></a>
 
 ## DescribeEntityRecognizerResponseTypeDef
 
@@ -785,6 +877,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventsdetectionjobrequestrequesttypedef"></a>
+
 ## DescribeEventsDetectionJobRequestRequestTypeDef
 
 ```python
@@ -794,6 +888,8 @@ from mypy_boto3_comprehend.type_defs import DescribeEventsDetectionJobRequestReq
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describeeventsdetectionjobresponsetypedef"></a>
 
 ## DescribeEventsDetectionJobResponseTypeDef
 
@@ -808,6 +904,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describekeyphrasesdetectionjobrequestrequesttypedef"></a>
+
 ## DescribeKeyPhrasesDetectionJobRequestRequestTypeDef
 
 ```python
@@ -817,6 +915,8 @@ from mypy_boto3_comprehend.type_defs import DescribeKeyPhrasesDetectionJobReques
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describekeyphrasesdetectionjobresponsetypedef"></a>
 
 ## DescribeKeyPhrasesDetectionJobResponseTypeDef
 
@@ -831,6 +931,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepiientitiesdetectionjobrequestrequesttypedef"></a>
+
 ## DescribePiiEntitiesDetectionJobRequestRequestTypeDef
 
 ```python
@@ -840,6 +942,8 @@ from mypy_boto3_comprehend.type_defs import DescribePiiEntitiesDetectionJobReque
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describepiientitiesdetectionjobresponsetypedef"></a>
 
 ## DescribePiiEntitiesDetectionJobResponseTypeDef
 
@@ -854,6 +958,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresourcepolicyrequestrequesttypedef"></a>
+
 ## DescribeResourcePolicyRequestRequestTypeDef
 
 ```python
@@ -863,6 +969,8 @@ from mypy_boto3_comprehend.type_defs import DescribeResourcePolicyRequestRequest
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="describeresourcepolicyresponsetypedef"></a>
 
 ## DescribeResourcePolicyResponseTypeDef
 
@@ -879,6 +987,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesentimentdetectionjobrequestrequesttypedef"></a>
+
 ## DescribeSentimentDetectionJobRequestRequestTypeDef
 
 ```python
@@ -888,6 +998,8 @@ from mypy_boto3_comprehend.type_defs import DescribeSentimentDetectionJobRequest
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describesentimentdetectionjobresponsetypedef"></a>
 
 ## DescribeSentimentDetectionJobResponseTypeDef
 
@@ -902,6 +1014,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetopicsdetectionjobrequestrequesttypedef"></a>
+
 ## DescribeTopicsDetectionJobRequestRequestTypeDef
 
 ```python
@@ -911,6 +1025,8 @@ from mypy_boto3_comprehend.type_defs import DescribeTopicsDetectionJobRequestReq
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describetopicsdetectionjobresponsetypedef"></a>
 
 ## DescribeTopicsDetectionJobResponseTypeDef
 
@@ -925,6 +1041,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectdominantlanguagerequestrequesttypedef"></a>
+
 ## DetectDominantLanguageRequestRequestTypeDef
 
 ```python
@@ -934,6 +1052,8 @@ from mypy_boto3_comprehend.type_defs import DetectDominantLanguageRequestRequest
 Required fields:
 
 - `Text`: `str`
+
+<a id="detectdominantlanguageresponsetypedef"></a>
 
 ## DetectDominantLanguageResponseTypeDef
 
@@ -947,6 +1067,8 @@ Required fields:
   `List`\[[DominantLanguageTypeDef](./type_defs.md#dominantlanguagetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detectentitiesrequestrequesttypedef"></a>
 
 ## DetectEntitiesRequestRequestTypeDef
 
@@ -963,6 +1085,8 @@ Optional fields:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `EndpointArn`: `str`
 
+<a id="detectentitiesresponsetypedef"></a>
+
 ## DetectEntitiesResponseTypeDef
 
 ```python
@@ -975,6 +1099,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectkeyphrasesrequestrequesttypedef"></a>
+
 ## DetectKeyPhrasesRequestRequestTypeDef
 
 ```python
@@ -985,6 +1111,8 @@ Required fields:
 
 - `Text`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="detectkeyphrasesresponsetypedef"></a>
 
 ## DetectKeyPhrasesResponseTypeDef
 
@@ -998,6 +1126,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectpiientitiesrequestrequesttypedef"></a>
+
 ## DetectPiiEntitiesRequestRequestTypeDef
 
 ```python
@@ -1008,6 +1138,8 @@ Required fields:
 
 - `Text`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="detectpiientitiesresponsetypedef"></a>
 
 ## DetectPiiEntitiesResponseTypeDef
 
@@ -1021,6 +1153,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectsentimentrequestrequesttypedef"></a>
+
 ## DetectSentimentRequestRequestTypeDef
 
 ```python
@@ -1031,6 +1165,8 @@ Required fields:
 
 - `Text`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+<a id="detectsentimentresponsetypedef"></a>
 
 ## DetectSentimentResponseTypeDef
 
@@ -1046,6 +1182,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectsyntaxrequestrequesttypedef"></a>
+
 ## DetectSyntaxRequestRequestTypeDef
 
 ```python
@@ -1057,6 +1195,8 @@ Required fields:
 - `Text`: `str`
 - `LanguageCode`:
   [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+
+<a id="detectsyntaxresponsetypedef"></a>
 
 ## DetectSyntaxResponseTypeDef
 
@@ -1071,6 +1211,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="documentclasstypedef"></a>
+
 ## DocumentClassTypeDef
 
 ```python
@@ -1081,6 +1223,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Score`: `float`
+
+<a id="documentclassificationjobfiltertypedef"></a>
 
 ## DocumentClassificationJobFilterTypeDef
 
@@ -1094,6 +1238,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="documentclassificationjobpropertiestypedef"></a>
 
 ## DocumentClassificationJobPropertiesTypeDef
 
@@ -1119,6 +1265,8 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="documentclassifierfiltertypedef"></a>
+
 ## DocumentClassifierFilterTypeDef
 
 ```python
@@ -1131,6 +1279,8 @@ Optional fields:
 - `DocumentClassifierName`: `str`
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="documentclassifierinputdataconfigtypedef"></a>
 
 ## DocumentClassifierInputDataConfigTypeDef
 
@@ -1148,6 +1298,8 @@ Optional fields:
 - `AugmentedManifests`:
   `Sequence`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
 
+<a id="documentclassifieroutputdataconfigtypedef"></a>
+
 ## DocumentClassifierOutputDataConfigTypeDef
 
 ```python
@@ -1158,6 +1310,8 @@ Optional fields:
 
 - `S3Uri`: `str`
 - `KmsKeyId`: `str`
+
+<a id="documentclassifierpropertiestypedef"></a>
 
 ## DocumentClassifierPropertiesTypeDef
 
@@ -1190,6 +1344,8 @@ Optional fields:
 - `VersionName`: `str`
 - `SourceModelArn`: `str`
 
+<a id="documentclassifiersummarytypedef"></a>
+
 ## DocumentClassifierSummaryTypeDef
 
 ```python
@@ -1204,6 +1360,8 @@ Optional fields:
 - `LatestVersionName`: `str`
 - `LatestVersionStatus`: [ModelStatusType](./literals.md#modelstatustype)
 
+<a id="documentlabeltypedef"></a>
+
 ## DocumentLabelTypeDef
 
 ```python
@@ -1214,6 +1372,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Score`: `float`
+
+<a id="documentreaderconfigtypedef"></a>
 
 ## DocumentReaderConfigTypeDef
 
@@ -1233,6 +1393,8 @@ Optional fields:
 - `FeatureTypes`:
   `List`\[[DocumentReadFeatureTypesType](./literals.md#documentreadfeaturetypestype)\]
 
+<a id="dominantlanguagedetectionjobfiltertypedef"></a>
+
 ## DominantLanguageDetectionJobFilterTypeDef
 
 ```python
@@ -1245,6 +1407,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="dominantlanguagedetectionjobpropertiestypedef"></a>
 
 ## DominantLanguageDetectionJobPropertiesTypeDef
 
@@ -1269,6 +1433,8 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="dominantlanguagetypedef"></a>
+
 ## DominantLanguageTypeDef
 
 ```python
@@ -1279,6 +1445,8 @@ Optional fields:
 
 - `LanguageCode`: `str`
 - `Score`: `float`
+
+<a id="endpointfiltertypedef"></a>
 
 ## EndpointFilterTypeDef
 
@@ -1292,6 +1460,8 @@ Optional fields:
 - `Status`: [EndpointStatusType](./literals.md#endpointstatustype)
 - `CreationTimeBefore`: `Union`\[`datetime`, `str`\]
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="endpointpropertiestypedef"></a>
 
 ## EndpointPropertiesTypeDef
 
@@ -1313,6 +1483,8 @@ Optional fields:
 - `DataAccessRoleArn`: `str`
 - `DesiredDataAccessRoleArn`: `str`
 
+<a id="entitiesdetectionjobfiltertypedef"></a>
+
 ## EntitiesDetectionJobFilterTypeDef
 
 ```python
@@ -1325,6 +1497,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="entitiesdetectionjobpropertiestypedef"></a>
 
 ## EntitiesDetectionJobPropertiesTypeDef
 
@@ -1351,6 +1525,8 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="entitylabeltypedef"></a>
+
 ## EntityLabelTypeDef
 
 ```python
@@ -1361,6 +1537,8 @@ Optional fields:
 
 - `Name`: [PiiEntityTypeType](./literals.md#piientitytypetype)
 - `Score`: `float`
+
+<a id="entityrecognizerannotationstypedef"></a>
 
 ## EntityRecognizerAnnotationsTypeDef
 
@@ -1375,6 +1553,8 @@ Required fields:
 Optional fields:
 
 - `TestS3Uri`: `str`
+
+<a id="entityrecognizerdocumentstypedef"></a>
 
 ## EntityRecognizerDocumentsTypeDef
 
@@ -1391,6 +1571,8 @@ Optional fields:
 - `TestS3Uri`: `str`
 - `InputFormat`: [InputFormatType](./literals.md#inputformattype)
 
+<a id="entityrecognizerentitylisttypedef"></a>
+
 ## EntityRecognizerEntityListTypeDef
 
 ```python
@@ -1400,6 +1582,8 @@ from mypy_boto3_comprehend.type_defs import EntityRecognizerEntityListTypeDef
 Required fields:
 
 - `S3Uri`: `str`
+
+<a id="entityrecognizerevaluationmetricstypedef"></a>
 
 ## EntityRecognizerEvaluationMetricsTypeDef
 
@@ -1413,6 +1597,8 @@ Optional fields:
 - `Recall`: `float`
 - `F1Score`: `float`
 
+<a id="entityrecognizerfiltertypedef"></a>
+
 ## EntityRecognizerFilterTypeDef
 
 ```python
@@ -1425,6 +1611,8 @@ Optional fields:
 - `RecognizerName`: `str`
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="entityrecognizerinputdataconfigtypedef"></a>
 
 ## EntityRecognizerInputDataConfigTypeDef
 
@@ -1450,6 +1638,8 @@ Optional fields:
 - `AugmentedManifests`:
   `Sequence`\[[AugmentedManifestsListItemTypeDef](./type_defs.md#augmentedmanifestslistitemtypedef)\]
 
+<a id="entityrecognizermetadataentitytypeslistitemtypedef"></a>
+
 ## EntityRecognizerMetadataEntityTypesListItemTypeDef
 
 ```python
@@ -1462,6 +1652,8 @@ Optional fields:
 - `EvaluationMetrics`:
   [EntityTypesEvaluationMetricsTypeDef](./type_defs.md#entitytypesevaluationmetricstypedef)
 - `NumberOfTrainMentions`: `int`
+
+<a id="entityrecognizermetadatatypedef"></a>
 
 ## EntityRecognizerMetadataTypeDef
 
@@ -1477,6 +1669,8 @@ Optional fields:
   [EntityRecognizerEvaluationMetricsTypeDef](./type_defs.md#entityrecognizerevaluationmetricstypedef)
 - `EntityTypes`:
   `List`\[[EntityRecognizerMetadataEntityTypesListItemTypeDef](./type_defs.md#entityrecognizermetadataentitytypeslistitemtypedef)\]
+
+<a id="entityrecognizerpropertiestypedef"></a>
 
 ## EntityRecognizerPropertiesTypeDef
 
@@ -1505,6 +1699,8 @@ Optional fields:
 - `VersionName`: `str`
 - `SourceModelArn`: `str`
 
+<a id="entityrecognizersummarytypedef"></a>
+
 ## EntityRecognizerSummaryTypeDef
 
 ```python
@@ -1518,6 +1714,8 @@ Optional fields:
 - `LatestVersionCreatedAt`: `datetime`
 - `LatestVersionName`: `str`
 - `LatestVersionStatus`: [ModelStatusType](./literals.md#modelstatustype)
+
+<a id="entitytypedef"></a>
 
 ## EntityTypeDef
 
@@ -1533,6 +1731,8 @@ Optional fields:
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 
+<a id="entitytypesevaluationmetricstypedef"></a>
+
 ## EntityTypesEvaluationMetricsTypeDef
 
 ```python
@@ -1545,6 +1745,8 @@ Optional fields:
 - `Recall`: `float`
 - `F1Score`: `float`
 
+<a id="entitytypeslistitemtypedef"></a>
+
 ## EntityTypesListItemTypeDef
 
 ```python
@@ -1554,6 +1756,8 @@ from mypy_boto3_comprehend.type_defs import EntityTypesListItemTypeDef
 Required fields:
 
 - `Type`: `str`
+
+<a id="eventsdetectionjobfiltertypedef"></a>
 
 ## EventsDetectionJobFilterTypeDef
 
@@ -1567,6 +1771,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="eventsdetectionjobpropertiestypedef"></a>
 
 ## EventsDetectionJobPropertiesTypeDef
 
@@ -1591,6 +1797,8 @@ Optional fields:
 - `DataAccessRoleArn`: `str`
 - `TargetEventTypes`: `List`\[`str`\]
 
+<a id="importmodelrequestrequesttypedef"></a>
+
 ## ImportModelRequestRequestTypeDef
 
 ```python
@@ -1609,6 +1817,8 @@ Optional fields:
 - `DataAccessRoleArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="importmodelresponsetypedef"></a>
+
 ## ImportModelResponseTypeDef
 
 ```python
@@ -1620,6 +1830,8 @@ Required fields:
 - `ModelArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="inputdataconfigtypedef"></a>
 
 ## InputDataConfigTypeDef
 
@@ -1637,6 +1849,8 @@ Optional fields:
 - `DocumentReaderConfig`:
   [DocumentReaderConfigTypeDef](./type_defs.md#documentreaderconfigtypedef)
 
+<a id="keyphrasetypedef"></a>
+
 ## KeyPhraseTypeDef
 
 ```python
@@ -1650,6 +1864,8 @@ Optional fields:
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
 
+<a id="keyphrasesdetectionjobfiltertypedef"></a>
+
 ## KeyPhrasesDetectionJobFilterTypeDef
 
 ```python
@@ -1662,6 +1878,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="keyphrasesdetectionjobpropertiestypedef"></a>
 
 ## KeyPhrasesDetectionJobPropertiesTypeDef
 
@@ -1687,6 +1905,8 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="listdocumentclassificationjobsrequestrequesttypedef"></a>
+
 ## ListDocumentClassificationJobsRequestRequestTypeDef
 
 ```python
@@ -1699,6 +1919,8 @@ Optional fields:
   [DocumentClassificationJobFilterTypeDef](./type_defs.md#documentclassificationjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdocumentclassificationjobsresponsetypedef"></a>
 
 ## ListDocumentClassificationJobsResponseTypeDef
 
@@ -1714,6 +1936,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdocumentclassifiersummariesrequestrequesttypedef"></a>
+
 ## ListDocumentClassifierSummariesRequestRequestTypeDef
 
 ```python
@@ -1724,6 +1948,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdocumentclassifiersummariesresponsetypedef"></a>
 
 ## ListDocumentClassifierSummariesResponseTypeDef
 
@@ -1739,6 +1965,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdocumentclassifiersrequestrequesttypedef"></a>
+
 ## ListDocumentClassifiersRequestRequestTypeDef
 
 ```python
@@ -1751,6 +1979,8 @@ Optional fields:
   [DocumentClassifierFilterTypeDef](./type_defs.md#documentclassifierfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdocumentclassifiersresponsetypedef"></a>
 
 ## ListDocumentClassifiersResponseTypeDef
 
@@ -1766,6 +1996,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdominantlanguagedetectionjobsrequestrequesttypedef"></a>
+
 ## ListDominantLanguageDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -1778,6 +2010,8 @@ Optional fields:
   [DominantLanguageDetectionJobFilterTypeDef](./type_defs.md#dominantlanguagedetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdominantlanguagedetectionjobsresponsetypedef"></a>
 
 ## ListDominantLanguageDetectionJobsResponseTypeDef
 
@@ -1793,6 +2027,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listendpointsrequestrequesttypedef"></a>
+
 ## ListEndpointsRequestRequestTypeDef
 
 ```python
@@ -1804,6 +2040,8 @@ Optional fields:
 - `Filter`: [EndpointFilterTypeDef](./type_defs.md#endpointfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listendpointsresponsetypedef"></a>
 
 ## ListEndpointsResponseTypeDef
 
@@ -1819,6 +2057,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listentitiesdetectionjobsrequestrequesttypedef"></a>
+
 ## ListEntitiesDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -1831,6 +2071,8 @@ Optional fields:
   [EntitiesDetectionJobFilterTypeDef](./type_defs.md#entitiesdetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listentitiesdetectionjobsresponsetypedef"></a>
 
 ## ListEntitiesDetectionJobsResponseTypeDef
 
@@ -1846,6 +2088,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listentityrecognizersummariesrequestrequesttypedef"></a>
+
 ## ListEntityRecognizerSummariesRequestRequestTypeDef
 
 ```python
@@ -1856,6 +2100,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listentityrecognizersummariesresponsetypedef"></a>
 
 ## ListEntityRecognizerSummariesResponseTypeDef
 
@@ -1871,6 +2117,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listentityrecognizersrequestrequesttypedef"></a>
+
 ## ListEntityRecognizersRequestRequestTypeDef
 
 ```python
@@ -1883,6 +2131,8 @@ Optional fields:
   [EntityRecognizerFilterTypeDef](./type_defs.md#entityrecognizerfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listentityrecognizersresponsetypedef"></a>
 
 ## ListEntityRecognizersResponseTypeDef
 
@@ -1898,6 +2148,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventsdetectionjobsrequestrequesttypedef"></a>
+
 ## ListEventsDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -1910,6 +2162,8 @@ Optional fields:
   [EventsDetectionJobFilterTypeDef](./type_defs.md#eventsdetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listeventsdetectionjobsresponsetypedef"></a>
 
 ## ListEventsDetectionJobsResponseTypeDef
 
@@ -1925,6 +2179,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listkeyphrasesdetectionjobsrequestrequesttypedef"></a>
+
 ## ListKeyPhrasesDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -1937,6 +2193,8 @@ Optional fields:
   [KeyPhrasesDetectionJobFilterTypeDef](./type_defs.md#keyphrasesdetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listkeyphrasesdetectionjobsresponsetypedef"></a>
 
 ## ListKeyPhrasesDetectionJobsResponseTypeDef
 
@@ -1952,6 +2210,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpiientitiesdetectionjobsrequestrequesttypedef"></a>
+
 ## ListPiiEntitiesDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -1964,6 +2224,8 @@ Optional fields:
   [PiiEntitiesDetectionJobFilterTypeDef](./type_defs.md#piientitiesdetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listpiientitiesdetectionjobsresponsetypedef"></a>
 
 ## ListPiiEntitiesDetectionJobsResponseTypeDef
 
@@ -1979,6 +2241,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsentimentdetectionjobsrequestrequesttypedef"></a>
+
 ## ListSentimentDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -1991,6 +2255,8 @@ Optional fields:
   [SentimentDetectionJobFilterTypeDef](./type_defs.md#sentimentdetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listsentimentdetectionjobsresponsetypedef"></a>
 
 ## ListSentimentDetectionJobsResponseTypeDef
 
@@ -2006,6 +2272,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2015,6 +2283,8 @@ from mypy_boto3_comprehend.type_defs import ListTagsForResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2029,6 +2299,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtopicsdetectionjobsrequestrequesttypedef"></a>
+
 ## ListTopicsDetectionJobsRequestRequestTypeDef
 
 ```python
@@ -2041,6 +2313,8 @@ Optional fields:
   [TopicsDetectionJobFilterTypeDef](./type_defs.md#topicsdetectionjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listtopicsdetectionjobsresponsetypedef"></a>
 
 ## ListTopicsDetectionJobsResponseTypeDef
 
@@ -2056,6 +2330,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="outputdataconfigtypedef"></a>
+
 ## OutputDataConfigTypeDef
 
 ```python
@@ -2070,6 +2346,8 @@ Optional fields:
 
 - `KmsKeyId`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2082,6 +2360,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="partofspeechtagtypedef"></a>
+
 ## PartOfSpeechTagTypeDef
 
 ```python
@@ -2092,6 +2372,8 @@ Optional fields:
 
 - `Tag`: [PartOfSpeechTagTypeType](./literals.md#partofspeechtagtypetype)
 - `Score`: `float`
+
+<a id="piientitiesdetectionjobfiltertypedef"></a>
 
 ## PiiEntitiesDetectionJobFilterTypeDef
 
@@ -2105,6 +2387,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="piientitiesdetectionjobpropertiestypedef"></a>
 
 ## PiiEntitiesDetectionJobPropertiesTypeDef
 
@@ -2132,6 +2416,8 @@ Optional fields:
 - `Mode`:
   [PiiEntitiesDetectionModeType](./literals.md#piientitiesdetectionmodetype)
 
+<a id="piientitytypedef"></a>
+
 ## PiiEntityTypeDef
 
 ```python
@@ -2144,6 +2430,8 @@ Optional fields:
 - `Type`: [PiiEntityTypeType](./literals.md#piientitytypetype)
 - `BeginOffset`: `int`
 - `EndOffset`: `int`
+
+<a id="piioutputdataconfigtypedef"></a>
 
 ## PiiOutputDataConfigTypeDef
 
@@ -2158,6 +2446,8 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+<a id="putresourcepolicyrequestrequesttypedef"></a>
 
 ## PutResourcePolicyRequestRequestTypeDef
 
@@ -2174,6 +2464,8 @@ Optional fields:
 
 - `PolicyRevisionId`: `str`
 
+<a id="putresourcepolicyresponsetypedef"></a>
+
 ## PutResourcePolicyResponseTypeDef
 
 ```python
@@ -2185,6 +2477,8 @@ Required fields:
 - `PolicyRevisionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="redactionconfigtypedef"></a>
 
 ## RedactionConfigTypeDef
 
@@ -2200,6 +2494,8 @@ Optional fields:
   [PiiEntitiesDetectionMaskModeType](./literals.md#piientitiesdetectionmaskmodetype)
 - `MaskCharacter`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2214,6 +2510,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="sentimentdetectionjobfiltertypedef"></a>
+
 ## SentimentDetectionJobFilterTypeDef
 
 ```python
@@ -2226,6 +2524,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="sentimentdetectionjobpropertiestypedef"></a>
 
 ## SentimentDetectionJobPropertiesTypeDef
 
@@ -2251,6 +2551,8 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="sentimentscoretypedef"></a>
+
 ## SentimentScoreTypeDef
 
 ```python
@@ -2263,6 +2565,8 @@ Optional fields:
 - `Negative`: `float`
 - `Neutral`: `float`
 - `Mixed`: `float`
+
+<a id="startdocumentclassificationjobrequestrequesttypedef"></a>
 
 ## StartDocumentClassificationJobRequestRequestTypeDef
 
@@ -2287,6 +2591,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startdocumentclassificationjobresponsetypedef"></a>
+
 ## StartDocumentClassificationJobResponseTypeDef
 
 ```python
@@ -2300,6 +2606,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startdominantlanguagedetectionjobrequestrequesttypedef"></a>
 
 ## StartDominantLanguageDetectionJobRequestRequestTypeDef
 
@@ -2323,6 +2631,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startdominantlanguagedetectionjobresponsetypedef"></a>
+
 ## StartDominantLanguageDetectionJobResponseTypeDef
 
 ```python
@@ -2336,6 +2646,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startentitiesdetectionjobrequestrequesttypedef"></a>
 
 ## StartEntitiesDetectionJobRequestRequestTypeDef
 
@@ -2361,6 +2673,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startentitiesdetectionjobresponsetypedef"></a>
+
 ## StartEntitiesDetectionJobResponseTypeDef
 
 ```python
@@ -2374,6 +2688,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="starteventsdetectionjobrequestrequesttypedef"></a>
 
 ## StartEventsDetectionJobRequestRequestTypeDef
 
@@ -2397,6 +2713,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="starteventsdetectionjobresponsetypedef"></a>
+
 ## StartEventsDetectionJobResponseTypeDef
 
 ```python
@@ -2410,6 +2728,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startkeyphrasesdetectionjobrequestrequesttypedef"></a>
 
 ## StartKeyPhrasesDetectionJobRequestRequestTypeDef
 
@@ -2434,6 +2754,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startkeyphrasesdetectionjobresponsetypedef"></a>
+
 ## StartKeyPhrasesDetectionJobResponseTypeDef
 
 ```python
@@ -2447,6 +2769,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startpiientitiesdetectionjobrequestrequesttypedef"></a>
 
 ## StartPiiEntitiesDetectionJobRequestRequestTypeDef
 
@@ -2473,6 +2797,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startpiientitiesdetectionjobresponsetypedef"></a>
+
 ## StartPiiEntitiesDetectionJobResponseTypeDef
 
 ```python
@@ -2486,6 +2812,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startsentimentdetectionjobrequestrequesttypedef"></a>
 
 ## StartSentimentDetectionJobRequestRequestTypeDef
 
@@ -2510,6 +2838,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startsentimentdetectionjobresponsetypedef"></a>
+
 ## StartSentimentDetectionJobResponseTypeDef
 
 ```python
@@ -2523,6 +2853,8 @@ Required fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="starttopicsdetectionjobrequestrequesttypedef"></a>
 
 ## StartTopicsDetectionJobRequestRequestTypeDef
 
@@ -2547,6 +2879,8 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="starttopicsdetectionjobresponsetypedef"></a>
+
 ## StartTopicsDetectionJobResponseTypeDef
 
 ```python
@@ -2561,6 +2895,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopdominantlanguagedetectionjobrequestrequesttypedef"></a>
+
 ## StopDominantLanguageDetectionJobRequestRequestTypeDef
 
 ```python
@@ -2570,6 +2906,8 @@ from mypy_boto3_comprehend.type_defs import StopDominantLanguageDetectionJobRequ
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stopdominantlanguagedetectionjobresponsetypedef"></a>
 
 ## StopDominantLanguageDetectionJobResponseTypeDef
 
@@ -2584,6 +2922,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopentitiesdetectionjobrequestrequesttypedef"></a>
+
 ## StopEntitiesDetectionJobRequestRequestTypeDef
 
 ```python
@@ -2593,6 +2933,8 @@ from mypy_boto3_comprehend.type_defs import StopEntitiesDetectionJobRequestReque
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stopentitiesdetectionjobresponsetypedef"></a>
 
 ## StopEntitiesDetectionJobResponseTypeDef
 
@@ -2607,6 +2949,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopeventsdetectionjobrequestrequesttypedef"></a>
+
 ## StopEventsDetectionJobRequestRequestTypeDef
 
 ```python
@@ -2616,6 +2960,8 @@ from mypy_boto3_comprehend.type_defs import StopEventsDetectionJobRequestRequest
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stopeventsdetectionjobresponsetypedef"></a>
 
 ## StopEventsDetectionJobResponseTypeDef
 
@@ -2630,6 +2976,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopkeyphrasesdetectionjobrequestrequesttypedef"></a>
+
 ## StopKeyPhrasesDetectionJobRequestRequestTypeDef
 
 ```python
@@ -2639,6 +2987,8 @@ from mypy_boto3_comprehend.type_defs import StopKeyPhrasesDetectionJobRequestReq
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stopkeyphrasesdetectionjobresponsetypedef"></a>
 
 ## StopKeyPhrasesDetectionJobResponseTypeDef
 
@@ -2653,6 +3003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stoppiientitiesdetectionjobrequestrequesttypedef"></a>
+
 ## StopPiiEntitiesDetectionJobRequestRequestTypeDef
 
 ```python
@@ -2662,6 +3014,8 @@ from mypy_boto3_comprehend.type_defs import StopPiiEntitiesDetectionJobRequestRe
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stoppiientitiesdetectionjobresponsetypedef"></a>
 
 ## StopPiiEntitiesDetectionJobResponseTypeDef
 
@@ -2676,6 +3030,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopsentimentdetectionjobrequestrequesttypedef"></a>
+
 ## StopSentimentDetectionJobRequestRequestTypeDef
 
 ```python
@@ -2685,6 +3041,8 @@ from mypy_boto3_comprehend.type_defs import StopSentimentDetectionJobRequestRequ
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stopsentimentdetectionjobresponsetypedef"></a>
 
 ## StopSentimentDetectionJobResponseTypeDef
 
@@ -2699,6 +3057,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stoptrainingdocumentclassifierrequestrequesttypedef"></a>
+
 ## StopTrainingDocumentClassifierRequestRequestTypeDef
 
 ```python
@@ -2709,6 +3069,8 @@ Required fields:
 
 - `DocumentClassifierArn`: `str`
 
+<a id="stoptrainingentityrecognizerrequestrequesttypedef"></a>
+
 ## StopTrainingEntityRecognizerRequestRequestTypeDef
 
 ```python
@@ -2718,6 +3080,8 @@ from mypy_boto3_comprehend.type_defs import StopTrainingEntityRecognizerRequestR
 Required fields:
 
 - `EntityRecognizerArn`: `str`
+
+<a id="syntaxtokentypedef"></a>
 
 ## SyntaxTokenTypeDef
 
@@ -2734,6 +3098,8 @@ Optional fields:
 - `PartOfSpeech`:
   [PartOfSpeechTagTypeDef](./type_defs.md#partofspeechtagtypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2744,6 +3110,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2759,6 +3127,8 @@ Optional fields:
 
 - `Value`: `str`
 
+<a id="topicsdetectionjobfiltertypedef"></a>
+
 ## TopicsDetectionJobFilterTypeDef
 
 ```python
@@ -2771,6 +3141,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
 - `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="topicsdetectionjobpropertiestypedef"></a>
 
 ## TopicsDetectionJobPropertiesTypeDef
 
@@ -2796,6 +3168,8 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2806,6 +3180,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateendpointrequestrequesttypedef"></a>
 
 ## UpdateEndpointRequestRequestTypeDef
 
@@ -2822,6 +3198,8 @@ Optional fields:
 - `DesiredModelArn`: `str`
 - `DesiredInferenceUnits`: `int`
 - `DesiredDataAccessRoleArn`: `str`
+
+<a id="vpcconfigtypedef"></a>
 
 ## VpcConfigTypeDef
 

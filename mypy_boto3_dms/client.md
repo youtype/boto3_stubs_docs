@@ -1,3 +1,5 @@
+<a id="databasemigrationserviceclient-for-boto3-databasemigrationservice-module"></a>
+
 # DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module
 
 > [Index](..) > [DatabaseMigrationService](.) > DatabaseMigrationServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
-[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 - [DatabaseMigrationServiceClient for boto3 DatabaseMigrationService module](#databasemigrationserviceclient-for-boto3-databasemigrationservice-module)
   - [DatabaseMigrationServiceClient](#databasemigrationserviceclient)
@@ -72,6 +74,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="databasemigrationserviceclient"></a>
+
 ## DatabaseMigrationServiceClient
 
 Type annotations for `boto3.client("dms")`
@@ -79,14 +83,17 @@ Type annotations for `boto3.client("dms")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 
 def get_dms_client() -> DatabaseMigrationServiceClient:
-    return boto3.client("dms")
+    return Session().client("dms")
 ```
 
 Boto3 documentation:
 [DatabaseMigrationService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -127,7 +134,11 @@ Exceptions:
 - `Exceptions.SubnetAlreadyInUse`
 - `Exceptions.UpgradeDependencyFailureFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -139,6 +150,8 @@ Boto3 documentation:
 [DatabaseMigrationService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_resource"></a>
 
 ### add_tags_to_resource
 
@@ -158,6 +171,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="apply_pending_maintenance_action"></a>
 
 ### apply_pending_maintenance_action
 
@@ -182,6 +197,8 @@ Keyword-only arguments:
 Returns
 [ApplyPendingMaintenanceActionResponseTypeDef](./type_defs.md#applypendingmaintenanceactionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -196,6 +213,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_replication_task_assessment_run"></a>
 
 ### cancel_replication_task_assessment_run
 
@@ -216,6 +235,8 @@ Keyword-only arguments:
 
 Returns
 [CancelReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#cancelreplicationtaskassessmentrunresponsetypedef).
+
+<a id="create_endpoint"></a>
 
 ### create_endpoint
 
@@ -284,6 +305,8 @@ Keyword-only arguments:
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
+<a id="create_event_subscription"></a>
+
 ### create_event_subscription
 
 Creates an DMS event notification subscription.
@@ -308,6 +331,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEventSubscriptionResponseTypeDef](./type_defs.md#createeventsubscriptionresponsetypedef).
+
+<a id="create_replication_instance"></a>
 
 ### create_replication_instance
 
@@ -342,6 +367,8 @@ Keyword-only arguments:
 Returns
 [CreateReplicationInstanceResponseTypeDef](./type_defs.md#createreplicationinstanceresponsetypedef).
 
+<a id="create_replication_subnet_group"></a>
+
 ### create_replication_subnet_group
 
 Creates a replication subnet group given a list of the subnet IDs in a VPC.
@@ -364,6 +391,8 @@ Keyword-only arguments:
 
 Returns
 [CreateReplicationSubnetGroupResponseTypeDef](./type_defs.md#createreplicationsubnetgroupresponsetypedef).
+
+<a id="create_replication_task"></a>
 
 ### create_replication_task
 
@@ -397,6 +426,8 @@ Keyword-only arguments:
 Returns
 [CreateReplicationTaskResponseTypeDef](./type_defs.md#createreplicationtaskresponsetypedef).
 
+<a id="delete_certificate"></a>
+
 ### delete_certificate
 
 Deletes the specified certificate.
@@ -415,6 +446,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteCertificateResponseTypeDef](./type_defs.md#deletecertificateresponsetypedef).
+
+<a id="delete_connection"></a>
 
 ### delete_connection
 
@@ -436,6 +469,8 @@ Keyword-only arguments:
 Returns
 [DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
+<a id="delete_endpoint"></a>
+
 ### delete_endpoint
 
 .
@@ -454,6 +489,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteEndpointResponseTypeDef](./type_defs.md#deleteendpointresponsetypedef).
+
+<a id="delete_event_subscription"></a>
 
 ### delete_event_subscription
 
@@ -474,6 +511,8 @@ Keyword-only arguments:
 Returns
 [DeleteEventSubscriptionResponseTypeDef](./type_defs.md#deleteeventsubscriptionresponsetypedef).
 
+<a id="delete_replication_instance"></a>
+
 ### delete_replication_instance
 
 Deletes the specified replication instance.
@@ -492,6 +531,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteReplicationInstanceResponseTypeDef](./type_defs.md#deletereplicationinstanceresponsetypedef).
+
+<a id="delete_replication_subnet_group"></a>
 
 ### delete_replication_subnet_group
 
@@ -512,6 +553,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_replication_task"></a>
+
 ### delete_replication_task
 
 .
@@ -530,6 +573,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteReplicationTaskResponseTypeDef](./type_defs.md#deletereplicationtaskresponsetypedef).
+
+<a id="delete_replication_task_assessment_run"></a>
 
 ### delete_replication_task_assessment_run
 
@@ -551,6 +596,8 @@ Keyword-only arguments:
 Returns
 [DeleteReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#deletereplicationtaskassessmentrunresponsetypedef).
 
+<a id="describe_account_attributes"></a>
+
 ### describe_account_attributes
 
 Lists all of the DMS attributes for a customer account.
@@ -562,6 +609,8 @@ Boto3 documentation:
 
 Returns
 [DescribeAccountAttributesResponseTypeDef](./type_defs.md#describeaccountattributesresponsetypedef).
+
+<a id="describe_applicable_individual_assessments"></a>
 
 ### describe_applicable_individual_assessments
 
@@ -591,6 +640,8 @@ Keyword-only arguments:
 Returns
 [DescribeApplicableIndividualAssessmentsResponseTypeDef](./type_defs.md#describeapplicableindividualassessmentsresponsetypedef).
 
+<a id="describe_certificates"></a>
+
 ### describe_certificates
 
 Provides a description of the certificate.
@@ -611,6 +662,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCertificatesResponseTypeDef](./type_defs.md#describecertificatesresponsetypedef).
+
+<a id="describe_connections"></a>
 
 ### describe_connections
 
@@ -634,6 +687,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionsResponseTypeDef](./type_defs.md#describeconnectionsresponsetypedef).
 
+<a id="describe_endpoint_settings"></a>
+
 ### describe_endpoint_settings
 
 Returns information about the possible endpoint settings available when you
@@ -656,6 +711,8 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointSettingsResponseTypeDef](./type_defs.md#describeendpointsettingsresponsetypedef).
 
+<a id="describe_endpoint_types"></a>
+
 ### describe_endpoint_types
 
 Returns information about the type of endpoints available.
@@ -676,6 +733,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEndpointTypesResponseTypeDef](./type_defs.md#describeendpointtypesresponsetypedef).
+
+<a id="describe_endpoints"></a>
 
 ### describe_endpoints
 
@@ -698,6 +757,8 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
+<a id="describe_event_categories"></a>
+
 ### describe_event_categories
 
 .
@@ -717,6 +778,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventCategoriesResponseTypeDef](./type_defs.md#describeeventcategoriesresponsetypedef).
+
+<a id="describe_event_subscriptions"></a>
 
 ### describe_event_subscriptions
 
@@ -739,6 +802,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventSubscriptionsResponseTypeDef](./type_defs.md#describeeventsubscriptionsresponsetypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -768,6 +833,8 @@ Keyword-only arguments:
 Returns
 [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
+<a id="describe_orderable_replication_instances"></a>
+
 ### describe_orderable_replication_instances
 
 Returns information about the replication instance types that can be created in
@@ -789,6 +856,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOrderableReplicationInstancesResponseTypeDef](./type_defs.md#describeorderablereplicationinstancesresponsetypedef).
+
+<a id="describe_pending_maintenance_actions"></a>
 
 ### describe_pending_maintenance_actions
 
@@ -814,6 +883,8 @@ Keyword-only arguments:
 Returns
 [DescribePendingMaintenanceActionsResponseTypeDef](./type_defs.md#describependingmaintenanceactionsresponsetypedef).
 
+<a id="describe_refresh_schemas_status"></a>
+
 ### describe_refresh_schemas_status
 
 Returns the status of the RefreshSchemas operation.
@@ -833,6 +904,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRefreshSchemasStatusResponseTypeDef](./type_defs.md#describerefreshschemasstatusresponsetypedef).
+
+<a id="describe_replication_instance_task_logs"></a>
 
 ### describe_replication_instance_task_logs
 
@@ -855,6 +928,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReplicationInstanceTaskLogsResponseTypeDef](./type_defs.md#describereplicationinstancetasklogsresponsetypedef).
+
+<a id="describe_replication_instances"></a>
 
 ### describe_replication_instances
 
@@ -879,6 +954,8 @@ Keyword-only arguments:
 Returns
 [DescribeReplicationInstancesResponseTypeDef](./type_defs.md#describereplicationinstancesresponsetypedef).
 
+<a id="describe_replication_subnet_groups"></a>
+
 ### describe_replication_subnet_groups
 
 Returns information about the replication subnet groups.
@@ -900,6 +977,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReplicationSubnetGroupsResponseTypeDef](./type_defs.md#describereplicationsubnetgroupsresponsetypedef).
+
+<a id="describe_replication_task_assessment_results"></a>
 
 ### describe_replication_task_assessment_results
 
@@ -924,6 +1003,8 @@ Keyword-only arguments:
 Returns
 [DescribeReplicationTaskAssessmentResultsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentresultsresponsetypedef).
 
+<a id="describe_replication_task_assessment_runs"></a>
+
 ### describe_replication_task_assessment_runs
 
 Returns a paginated list of premigration assessment runs based on filter
@@ -947,6 +1028,8 @@ Keyword-only arguments:
 Returns
 [DescribeReplicationTaskAssessmentRunsResponseTypeDef](./type_defs.md#describereplicationtaskassessmentrunsresponsetypedef).
 
+<a id="describe_replication_task_individual_assessments"></a>
+
 ### describe_replication_task_individual_assessments
 
 Returns a paginated list of individual assessments based on filter settings.
@@ -968,6 +1051,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReplicationTaskIndividualAssessmentsResponseTypeDef](./type_defs.md#describereplicationtaskindividualassessmentsresponsetypedef).
+
+<a id="describe_replication_tasks"></a>
 
 ### describe_replication_tasks
 
@@ -991,6 +1076,8 @@ Keyword-only arguments:
 Returns
 [DescribeReplicationTasksResponseTypeDef](./type_defs.md#describereplicationtasksresponsetypedef).
 
+<a id="describe_schemas"></a>
+
 ### describe_schemas
 
 Returns information about the schema for the specified endpoint.
@@ -1011,6 +1098,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSchemasResponseTypeDef](./type_defs.md#describeschemasresponsetypedef).
+
+<a id="describe_table_statistics"></a>
 
 ### describe_table_statistics
 
@@ -1035,6 +1124,8 @@ Keyword-only arguments:
 Returns
 [DescribeTableStatisticsResponseTypeDef](./type_defs.md#describetablestatisticsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1052,6 +1143,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_certificate"></a>
 
 ### import_certificate
 
@@ -1075,6 +1168,8 @@ Keyword-only arguments:
 Returns
 [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 .
@@ -1094,6 +1189,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="modify_endpoint"></a>
 
 ### modify_endpoint
 
@@ -1160,6 +1257,8 @@ Keyword-only arguments:
 Returns
 [ModifyEndpointResponseTypeDef](./type_defs.md#modifyendpointresponsetypedef).
 
+<a id="modify_event_subscription"></a>
+
 ### modify_event_subscription
 
 Modifies an existing DMS event notification subscription.
@@ -1182,6 +1281,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyEventSubscriptionResponseTypeDef](./type_defs.md#modifyeventsubscriptionresponsetypedef).
+
+<a id="modify_replication_instance"></a>
 
 ### modify_replication_instance
 
@@ -1212,6 +1313,8 @@ Keyword-only arguments:
 Returns
 [ModifyReplicationInstanceResponseTypeDef](./type_defs.md#modifyreplicationinstanceresponsetypedef).
 
+<a id="modify_replication_subnet_group"></a>
+
 ### modify_replication_subnet_group
 
 Modifies the settings for the specified replication subnet group.
@@ -1233,6 +1336,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyReplicationSubnetGroupResponseTypeDef](./type_defs.md#modifyreplicationsubnetgroupresponsetypedef).
+
+<a id="modify_replication_task"></a>
 
 ### modify_replication_task
 
@@ -1262,6 +1367,8 @@ Keyword-only arguments:
 Returns
 [ModifyReplicationTaskResponseTypeDef](./type_defs.md#modifyreplicationtaskresponsetypedef).
 
+<a id="move_replication_task"></a>
+
 ### move_replication_task
 
 .
@@ -1281,6 +1388,8 @@ Keyword-only arguments:
 
 Returns
 [MoveReplicationTaskResponseTypeDef](./type_defs.md#movereplicationtaskresponsetypedef).
+
+<a id="reboot_replication_instance"></a>
 
 ### reboot_replication_instance
 
@@ -1303,6 +1412,8 @@ Keyword-only arguments:
 Returns
 [RebootReplicationInstanceResponseTypeDef](./type_defs.md#rebootreplicationinstanceresponsetypedef).
 
+<a id="refresh_schemas"></a>
+
 ### refresh_schemas
 
 Populates the schema for the specified endpoint.
@@ -1322,6 +1433,8 @@ Keyword-only arguments:
 
 Returns
 [RefreshSchemasResponseTypeDef](./type_defs.md#refreshschemasresponsetypedef).
+
+<a id="reload_tables"></a>
 
 ### reload_tables
 
@@ -1346,6 +1459,8 @@ Keyword-only arguments:
 Returns
 [ReloadTablesResponseTypeDef](./type_defs.md#reloadtablesresponsetypedef).
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 .
@@ -1364,6 +1479,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_replication_task"></a>
 
 ### start_replication_task
 
@@ -1390,6 +1507,8 @@ Keyword-only arguments:
 Returns
 [StartReplicationTaskResponseTypeDef](./type_defs.md#startreplicationtaskresponsetypedef).
 
+<a id="start_replication_task_assessment"></a>
+
 ### start_replication_task_assessment
 
 .
@@ -1409,6 +1528,8 @@ Keyword-only arguments:
 
 Returns
 [StartReplicationTaskAssessmentResponseTypeDef](./type_defs.md#startreplicationtaskassessmentresponsetypedef).
+
+<a id="start_replication_task_assessment_run"></a>
 
 ### start_replication_task_assessment_run
 
@@ -1439,6 +1560,8 @@ Keyword-only arguments:
 Returns
 [StartReplicationTaskAssessmentRunResponseTypeDef](./type_defs.md#startreplicationtaskassessmentrunresponsetypedef).
 
+<a id="stop_replication_task"></a>
+
 ### stop_replication_task
 
 .
@@ -1457,6 +1580,8 @@ Keyword-only arguments:
 
 Returns
 [StopReplicationTaskResponseTypeDef](./type_defs.md#stopreplicationtaskresponsetypedef).
+
+<a id="test_connection"></a>
 
 ### test_connection
 
@@ -1477,6 +1602,8 @@ Keyword-only arguments:
 
 Returns
 [TestConnectionResponseTypeDef](./type_defs.md#testconnectionresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1508,6 +1635,8 @@ Type annotations for `boto3.client("dms").get_paginator` method with overloads.
   [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
 - `client.get_paginator("describe_table_statistics")` ->
   [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

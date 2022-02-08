@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-finspace-module"></a>
+
 # Literals for boto3 finspace module
 
 > [Index](..) > [finspace](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [finspace](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace.html#finspace)
 type annotations stubs module
-[mypy_boto3_finspace](https://pypi.org/project/mypy-boto3-finspace/).
+[mypy-boto3-finspace](https://pypi.org/project/mypy-boto3-finspace/).
 
 - [Literals for boto3 finspace module](#literals-for-boto3-finspace-module)
   - [EnvironmentStatusType](#environmentstatustype)
   - [FederationModeType](#federationmodetype)
   - [ServiceName](#servicename)
+
+<a id="environmentstatustype"></a>
 
 ## EnvironmentStatusType
 
@@ -31,6 +35,8 @@ Values:
 - `RETRY_DELETION`
 - `SUSPENDED`
 
+<a id="federationmodetype"></a>
+
 ## FederationModeType
 
 ```python
@@ -41,6 +47,8 @@ Values:
 
 - `FEDERATED`
 - `LOCAL`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="codebuildclient-for-boto3-codebuild-module"></a>
+
 # CodeBuildClient for boto3 CodeBuild module
 
 > [Index](..) > [CodeBuild](.) > CodeBuildClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeBuild](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild)
 type annotations stubs module
-[mypy_boto3_codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
+[mypy-boto3-codebuild](https://pypi.org/project/mypy-boto3-codebuild/).
 
 - [CodeBuildClient for boto3 CodeBuild module](#codebuildclient-for-boto3-codebuild-module)
   - [CodeBuildClient](#codebuildclient)
@@ -61,6 +63,8 @@ type annotations stubs module
     - [update_webhook](#update_webhook)
     - [get_paginator](#get_paginator)
 
+<a id="codebuildclient"></a>
+
 ## CodeBuildClient
 
 Type annotations for `boto3.client("codebuild")`
@@ -68,14 +72,17 @@ Type annotations for `boto3.client("codebuild")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codebuild.client import CodeBuildClient
 
 def get_codebuild_client() -> CodeBuildClient:
-    return boto3.client("codebuild")
+    return Session().client("codebuild")
 ```
 
 Boto3 documentation:
 [CodeBuild.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -98,7 +105,11 @@ Exceptions:
 - `Exceptions.ResourceAlreadyExistsException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -110,6 +121,8 @@ Boto3 documentation:
 [CodeBuild.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codebuild.html#CodeBuild.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_delete_builds"></a>
 
 ### batch_delete_builds
 
@@ -129,6 +142,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteBuildsOutputTypeDef](./type_defs.md#batchdeletebuildsoutputtypedef).
+
+<a id="batch_get_build_batches"></a>
 
 ### batch_get_build_batches
 
@@ -150,6 +165,8 @@ Keyword-only arguments:
 Returns
 [BatchGetBuildBatchesOutputTypeDef](./type_defs.md#batchgetbuildbatchesoutputtypedef).
 
+<a id="batch_get_builds"></a>
+
 ### batch_get_builds
 
 Gets information about one or more builds.
@@ -169,6 +186,8 @@ Keyword-only arguments:
 Returns
 [BatchGetBuildsOutputTypeDef](./type_defs.md#batchgetbuildsoutputtypedef).
 
+<a id="batch_get_projects"></a>
+
 ### batch_get_projects
 
 Gets information about one or more build projects.
@@ -187,6 +206,8 @@ Keyword-only arguments:
 
 Returns
 [BatchGetProjectsOutputTypeDef](./type_defs.md#batchgetprojectsoutputtypedef).
+
+<a id="batch_get_report_groups"></a>
 
 ### batch_get_report_groups
 
@@ -208,6 +229,8 @@ Keyword-only arguments:
 Returns
 [BatchGetReportGroupsOutputTypeDef](./type_defs.md#batchgetreportgroupsoutputtypedef).
 
+<a id="batch_get_reports"></a>
+
 ### batch_get_reports
 
 Returns an array of reports.
@@ -227,6 +250,8 @@ Keyword-only arguments:
 Returns
 [BatchGetReportsOutputTypeDef](./type_defs.md#batchgetreportsoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -241,6 +266,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_project"></a>
 
 ### create_project
 
@@ -291,6 +318,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
+<a id="create_report_group"></a>
+
 ### create_report_group
 
 Creates a report group.
@@ -314,6 +343,8 @@ Keyword-only arguments:
 
 Returns
 [CreateReportGroupOutputTypeDef](./type_defs.md#createreportgroupoutputtypedef).
+
+<a id="create_webhook"></a>
 
 ### create_webhook
 
@@ -340,6 +371,8 @@ Keyword-only arguments:
 Returns
 [CreateWebhookOutputTypeDef](./type_defs.md#createwebhookoutputtypedef).
 
+<a id="delete_build_batch"></a>
+
 ### delete_build_batch
 
 Deletes a batch build.
@@ -359,6 +392,8 @@ Keyword-only arguments:
 Returns
 [DeleteBuildBatchOutputTypeDef](./type_defs.md#deletebuildbatchoutputtypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Deletes a build project.
@@ -377,6 +412,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_report"></a>
+
 ### delete_report
 
 Deletes a report.
@@ -394,6 +431,8 @@ Keyword-only arguments:
 - `arn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_report_group"></a>
 
 ### delete_report_group
 
@@ -414,6 +453,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Deletes a resource policy that is identified by its resource ARN.
@@ -431,6 +472,8 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_source_credentials"></a>
 
 ### delete_source_credentials
 
@@ -452,6 +495,8 @@ Keyword-only arguments:
 Returns
 [DeleteSourceCredentialsOutputTypeDef](./type_defs.md#deletesourcecredentialsoutputtypedef).
 
+<a id="delete_webhook"></a>
+
 ### delete_webhook
 
 For an existing CodeBuild build project that has its source code stored in a
@@ -471,6 +516,8 @@ Keyword-only arguments:
 - `projectName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_code_coverages"></a>
 
 ### describe_code_coverages
 
@@ -499,6 +546,8 @@ Keyword-only arguments:
 Returns
 [DescribeCodeCoveragesOutputTypeDef](./type_defs.md#describecodecoveragesoutputtypedef).
 
+<a id="describe_test_cases"></a>
+
 ### describe_test_cases
 
 Returns a list of details about test cases for a report.
@@ -521,6 +570,8 @@ Keyword-only arguments:
 Returns
 [DescribeTestCasesOutputTypeDef](./type_defs.md#describetestcasesoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -538,6 +589,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_report_group_trend"></a>
 
 ### get_report_group_trend
 
@@ -562,6 +615,8 @@ Keyword-only arguments:
 Returns
 [GetReportGroupTrendOutputTypeDef](./type_defs.md#getreportgrouptrendoutputtypedef).
 
+<a id="get_resource_policy"></a>
+
 ### get_resource_policy
 
 Gets a resource policy that is identified by its resource ARN.
@@ -580,6 +635,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourcePolicyOutputTypeDef](./type_defs.md#getresourcepolicyoutputtypedef).
+
+<a id="import_source_credentials"></a>
 
 ### import_source_credentials
 
@@ -606,6 +663,8 @@ Keyword-only arguments:
 Returns
 [ImportSourceCredentialsOutputTypeDef](./type_defs.md#importsourcecredentialsoutputtypedef).
 
+<a id="invalidate_project_cache"></a>
+
 ### invalidate_project_cache
 
 Resets the cache for a project.
@@ -624,6 +683,8 @@ Keyword-only arguments:
 - `projectName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="list_build_batches"></a>
 
 ### list_build_batches
 
@@ -646,6 +707,8 @@ Keyword-only arguments:
 
 Returns
 [ListBuildBatchesOutputTypeDef](./type_defs.md#listbuildbatchesoutputtypedef).
+
+<a id="list_build_batches_for_project"></a>
 
 ### list_build_batches_for_project
 
@@ -671,6 +734,8 @@ Keyword-only arguments:
 Returns
 [ListBuildBatchesForProjectOutputTypeDef](./type_defs.md#listbuildbatchesforprojectoutputtypedef).
 
+<a id="list_builds"></a>
+
 ### list_builds
 
 Gets a list of build IDs, with each build ID representing a single build.
@@ -689,6 +754,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
+
+<a id="list_builds_for_project"></a>
 
 ### list_builds_for_project
 
@@ -713,6 +780,8 @@ Keyword-only arguments:
 Returns
 [ListBuildsForProjectOutputTypeDef](./type_defs.md#listbuildsforprojectoutputtypedef).
 
+<a id="list_curated_environment_images"></a>
+
 ### list_curated_environment_images
 
 Gets information about Docker images that are managed by CodeBuild.
@@ -725,6 +794,8 @@ Boto3 documentation:
 
 Returns
 [ListCuratedEnvironmentImagesOutputTypeDef](./type_defs.md#listcuratedenvironmentimagesoutputtypedef).
+
+<a id="list_projects"></a>
 
 ### list_projects
 
@@ -746,6 +817,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
+
+<a id="list_report_groups"></a>
 
 ### list_report_groups
 
@@ -771,6 +844,8 @@ Keyword-only arguments:
 Returns
 [ListReportGroupsOutputTypeDef](./type_defs.md#listreportgroupsoutputtypedef).
 
+<a id="list_reports"></a>
+
 ### list_reports
 
 Returns a list of ARNs for the reports in the current Amazon Web Services
@@ -792,6 +867,8 @@ Keyword-only arguments:
 - `filter`: [ReportFilterTypeDef](./type_defs.md#reportfiltertypedef)
 
 Returns [ListReportsOutputTypeDef](./type_defs.md#listreportsoutputtypedef).
+
+<a id="list_reports_for_report_group"></a>
 
 ### list_reports_for_report_group
 
@@ -817,6 +894,8 @@ Keyword-only arguments:
 Returns
 [ListReportsForReportGroupOutputTypeDef](./type_defs.md#listreportsforreportgroupoutputtypedef).
 
+<a id="list_shared_projects"></a>
+
 ### list_shared_projects
 
 Gets a list of projects that are shared with other Amazon Web Services accounts
@@ -840,6 +919,8 @@ Keyword-only arguments:
 
 Returns
 [ListSharedProjectsOutputTypeDef](./type_defs.md#listsharedprojectsoutputtypedef).
+
+<a id="list_shared_report_groups"></a>
 
 ### list_shared_report_groups
 
@@ -866,6 +947,8 @@ Keyword-only arguments:
 Returns
 [ListSharedReportGroupsOutputTypeDef](./type_defs.md#listsharedreportgroupsoutputtypedef).
 
+<a id="list_source_credentials"></a>
+
 ### list_source_credentials
 
 Returns a list of `SourceCredentialsInfo` objects.
@@ -878,6 +961,8 @@ Boto3 documentation:
 
 Returns
 [ListSourceCredentialsOutputTypeDef](./type_defs.md#listsourcecredentialsoutputtypedef).
+
+<a id="put_resource_policy"></a>
 
 ### put_resource_policy
 
@@ -899,6 +984,8 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyOutputTypeDef](./type_defs.md#putresourcepolicyoutputtypedef).
 
+<a id="retry_build"></a>
+
 ### retry_build
 
 Restarts a build.
@@ -917,6 +1004,8 @@ Keyword-only arguments:
 - `idempotencyToken`: `str`
 
 Returns [RetryBuildOutputTypeDef](./type_defs.md#retrybuildoutputtypedef).
+
+<a id="retry_build_batch"></a>
 
 ### retry_build_batch
 
@@ -938,6 +1027,8 @@ Keyword-only arguments:
 
 Returns
 [RetryBuildBatchOutputTypeDef](./type_defs.md#retrybuildbatchoutputtypedef).
+
+<a id="start_build"></a>
 
 ### start_build
 
@@ -996,6 +1087,8 @@ Keyword-only arguments:
 - `debugSessionEnabled`: `bool`
 
 Returns [StartBuildOutputTypeDef](./type_defs.md#startbuildoutputtypedef).
+
+<a id="start_build_batch"></a>
 
 ### start_build_batch
 
@@ -1056,6 +1149,8 @@ Keyword-only arguments:
 Returns
 [StartBuildBatchOutputTypeDef](./type_defs.md#startbuildbatchoutputtypedef).
 
+<a id="stop_build"></a>
+
 ### stop_build
 
 Attempts to stop running a build.
@@ -1073,6 +1168,8 @@ Keyword-only arguments:
 - `id`: `str` *(required)*
 
 Returns [StopBuildOutputTypeDef](./type_defs.md#stopbuildoutputtypedef).
+
+<a id="stop_build_batch"></a>
 
 ### stop_build_batch
 
@@ -1092,6 +1189,8 @@ Keyword-only arguments:
 
 Returns
 [StopBuildBatchOutputTypeDef](./type_defs.md#stopbuildbatchoutputtypedef).
+
+<a id="update_project"></a>
 
 ### update_project
 
@@ -1139,6 +1238,8 @@ Keyword-only arguments:
 Returns
 [UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef).
 
+<a id="update_project_visibility"></a>
+
 ### update_project_visibility
 
 Changes the public visibility for a project.
@@ -1163,6 +1264,8 @@ Keyword-only arguments:
 Returns
 [UpdateProjectVisibilityOutputTypeDef](./type_defs.md#updateprojectvisibilityoutputtypedef).
 
+<a id="update_report_group"></a>
+
 ### update_report_group
 
 Updates a report group.
@@ -1184,6 +1287,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateReportGroupOutputTypeDef](./type_defs.md#updatereportgroupoutputtypedef).
+
+<a id="update_webhook"></a>
 
 ### update_webhook
 
@@ -1208,6 +1313,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWebhookOutputTypeDef](./type_defs.md#updatewebhookoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

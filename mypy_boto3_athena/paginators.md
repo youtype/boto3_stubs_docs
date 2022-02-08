@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-athena-module"></a>
+
 # Paginators for boto3 Athena module
 
 > [Index](..) > [Athena](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module
-[mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
+[mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Paginators for boto3 Athena module](#paginators-for-boto3-athena-module)
   - [GetQueryResultsPaginator](#getqueryresultspaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListTableMetadataPaginator](#listtablemetadatapaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
 
+<a id="getqueryresultspaginator"></a>
+
 ## GetQueryResultsPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import GetQueryResultsPaginator
 
 def get_get_query_results_paginator() -> GetQueryResultsPaginator:
-    return boto3.client("athena").get_paginator("get_query_results")
+    return Session().client("athena").get_paginator("get_query_results")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `GetQueryResultsPaginator.paginate` method:
 `GetQueryResultsPaginator.paginate` returns
 `_PageIterator`\[[GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef)\].
 
+<a id="listdatacatalogspaginator"></a>
+
 ## ListDataCatalogsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import ListDataCatalogsPaginator
 
 def get_list_data_catalogs_paginator() -> ListDataCatalogsPaginator:
-    return boto3.client("athena").get_paginator("list_data_catalogs")
+    return Session().client("athena").get_paginator("list_data_catalogs")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListDataCatalogsPaginator.paginate` method:
 `ListDataCatalogsPaginator.paginate` returns
 `_PageIterator`\[[ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef)\].
 
+<a id="listdatabasespaginator"></a>
+
 ## ListDatabasesPaginator
 
 Type annotations for `boto3.client("athena").get_paginator("list_databases")`.
@@ -74,10 +86,12 @@ Type annotations for `boto3.client("athena").get_paginator("list_databases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import ListDatabasesPaginator
 
 def get_list_databases_paginator() -> ListDatabasesPaginator:
-    return boto3.client("athena").get_paginator("list_databases")
+    return Session().client("athena").get_paginator("list_databases")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListDatabasesPaginator.paginate` method:
 `ListDatabasesPaginator.paginate` returns
 `_PageIterator`\[[ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef)\].
 
+<a id="listnamedqueriespaginator"></a>
+
 ## ListNamedQueriesPaginator
 
 Type annotations for
@@ -100,10 +116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import ListNamedQueriesPaginator
 
 def get_list_named_queries_paginator() -> ListNamedQueriesPaginator:
-    return boto3.client("athena").get_paginator("list_named_queries")
+    return Session().client("athena").get_paginator("list_named_queries")
 ```
 
 Boto3 documentation:
@@ -118,6 +136,8 @@ Arguments for `ListNamedQueriesPaginator.paginate` method:
 `ListNamedQueriesPaginator.paginate` returns
 `_PageIterator`\[[ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef)\].
 
+<a id="listqueryexecutionspaginator"></a>
+
 ## ListQueryExecutionsPaginator
 
 Type annotations for
@@ -126,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import ListQueryExecutionsPaginator
 
 def get_list_query_executions_paginator() -> ListQueryExecutionsPaginator:
-    return boto3.client("athena").get_paginator("list_query_executions")
+    return Session().client("athena").get_paginator("list_query_executions")
 ```
 
 Boto3 documentation:
@@ -144,6 +166,8 @@ Arguments for `ListQueryExecutionsPaginator.paginate` method:
 `ListQueryExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef)\].
 
+<a id="listtablemetadatapaginator"></a>
+
 ## ListTableMetadataPaginator
 
 Type annotations for
@@ -152,10 +176,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import ListTableMetadataPaginator
 
 def get_list_table_metadata_paginator() -> ListTableMetadataPaginator:
-    return boto3.client("athena").get_paginator("list_table_metadata")
+    return Session().client("athena").get_paginator("list_table_metadata")
 ```
 
 Boto3 documentation:
@@ -172,6 +198,8 @@ Arguments for `ListTableMetadataPaginator.paginate` method:
 `ListTableMetadataPaginator.paginate` returns
 `_PageIterator`\[[ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -180,10 +208,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_athena.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("athena").get_paginator("list_tags_for_resource")
+    return Session().client("athena").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

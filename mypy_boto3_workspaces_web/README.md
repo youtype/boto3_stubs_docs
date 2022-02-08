@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-workspacesweb-module"></a>
+
 # Type annotations for boto3 WorkSpacesWeb module
 
 > [Index](..) > WorkSpacesWeb
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
 type annotations stubs module
-[mypy_boto3_workspaces_web](https://pypi.org/project/mypy-boto3-workspaces-web/).
+[mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[workspaces-web]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[workspaces-web]'
+
+# standalone installation
 pip install mypy-boto3-workspaces-web
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-workspaces-web
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="workspaceswebclient"></a>
 
 ## WorkSpacesWebClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_workspaces_web.client import WorkSpacesWebClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -79,6 +93,8 @@ from mypy_boto3_workspaces_web.client import WorkSpacesWebClient
 - [update_trust_store](./client.md#update_trust_store)
 - [update_user_settings](./client.md#update_user_settings)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WorkSpacesWebClient [exceptions](./client.md#exceptions)
@@ -92,6 +108,8 @@ WorkSpacesWebClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - TooManyTagsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -109,6 +127,8 @@ from mypy_boto3_workspaces_web.literals import BrowserTypeType, ...
 - [PortalStatusType](./literals.md#portalstatustype)
 - [RendererTypeType](./literals.md#renderertypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

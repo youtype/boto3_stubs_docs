@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-schemas-module"></a>
+
 # Type annotations for boto3 Schemas module
 
 > [Index](..) > Schemas
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Schemas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/schemas.html#Schemas)
 type annotations stubs module
-[mypy_boto3_schemas](https://pypi.org/project/mypy-boto3-schemas/).
+[mypy-boto3-schemas](https://pypi.org/project/mypy-boto3-schemas/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[schemas]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[schemas]'
+
+# standalone installation
 pip install mypy-boto3-schemas
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-schemas
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="schemasclient"></a>
+
 ## SchemasClient
 
 Type annotations for `boto3.client("schemas")` as [SchemasClient](./client.md)
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_schemas.client import SchemasClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -69,6 +83,8 @@ from mypy_boto3_schemas.client import SchemasClient
 - [update_registry](./client.md#update_registry)
 - [update_schema](./client.md#update_schema)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SchemasClient [exceptions](./client.md#exceptions)
@@ -85,6 +101,8 @@ SchemasClient [exceptions](./client.md#exceptions)
 - TooManyRequestsException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -93,7 +111,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_schemas.paginators import ListDiscoverersPaginator, ...
+from mypy_boto3_schemas.paginator import ListDiscoverersPaginator, ...
 ```
 
 - [ListDiscoverersPaginator](./paginators.md#listdiscovererspaginator)
@@ -101,6 +119,8 @@ from mypy_boto3_schemas.paginators import ListDiscoverersPaginator, ...
 - [ListSchemaVersionsPaginator](./paginators.md#listschemaversionspaginator)
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - [SearchSchemasPaginator](./paginators.md#searchschemaspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -110,10 +130,12 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_schemas.waiters import CodeBindingExistsWaiter, ...
+from mypy_boto3_schemas.waiter import CodeBindingExistsWaiter, ...
 ```
 
 - [CodeBindingExistsWaiter](./waiters.md#codebindingexistswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -137,6 +159,8 @@ from mypy_boto3_schemas.literals import CodeBindingExistsWaiterName, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

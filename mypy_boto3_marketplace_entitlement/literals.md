@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-marketplaceentitlementservice-module"></a>
+
 # Literals for boto3 MarketplaceEntitlementService module
 
 > [Index](..) > [MarketplaceEntitlementService](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module
-[mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
+[mypy-boto3-marketplace-entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 - [Literals for boto3 MarketplaceEntitlementService module](#literals-for-boto3-marketplaceentitlementservice-module)
   - [GetEntitlementFilterNameType](#getentitlementfilternametype)
   - [GetEntitlementsPaginatorName](#getentitlementspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="getentitlementfilternametype"></a>
 
 ## GetEntitlementFilterNameType
 
@@ -24,6 +28,8 @@ Values:
 - `CUSTOMER_IDENTIFIER`
 - `DIMENSION`
 
+<a id="getentitlementspaginatorname"></a>
+
 ## GetEntitlementsPaginatorName
 
 ```python
@@ -33,6 +39,8 @@ from mypy_boto3_marketplace_entitlement.literals import GetEntitlementsPaginator
 Values:
 
 - `get_entitlements`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -341,6 +349,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

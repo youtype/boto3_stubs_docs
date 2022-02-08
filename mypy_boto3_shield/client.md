@@ -1,3 +1,5 @@
+<a id="shieldclient-for-boto3-shield-module"></a>
+
 # ShieldClient for boto3 Shield module
 
 > [Index](..) > [Shield](.) > ShieldClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Shield](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield)
 type annotations stubs module
-[mypy_boto3_shield](https://pypi.org/project/mypy-boto3-shield/).
+[mypy-boto3-shield](https://pypi.org/project/mypy-boto3-shield/).
 
 - [ShieldClient for boto3 Shield module](#shieldclient-for-boto3-shield-module)
   - [ShieldClient](#shieldclient)
@@ -52,6 +54,8 @@ type annotations stubs module
     - [update_subscription](#update_subscription)
     - [get_paginator](#get_paginator)
 
+<a id="shieldclient"></a>
+
 ## ShieldClient
 
 Type annotations for `boto3.client("shield")`
@@ -59,14 +63,17 @@ Type annotations for `boto3.client("shield")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_shield.client import ShieldClient
 
 def get_shield_client() -> ShieldClient:
-    return boto3.client("shield")
+    return Session().client("shield")
 ```
 
 Boto3 documentation:
 [Shield.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -97,7 +104,11 @@ Exceptions:
 - `Exceptions.ResourceAlreadyExistsException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -109,6 +120,8 @@ Boto3 documentation:
 [Shield.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_drt_log_bucket"></a>
 
 ### associate_drt_log_bucket
 
@@ -130,6 +143,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_drt_role"></a>
+
 ### associate_drt_role
 
 Authorizes the Shield Response Team (SRT) using the specified role, to access
@@ -150,6 +165,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_health_check"></a>
+
 ### associate_health_check
 
 Adds health-based detection to the Shield Advanced protection for a resource.
@@ -168,6 +185,8 @@ Keyword-only arguments:
 - `HealthCheckArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_proactive_engagement_details"></a>
 
 ### associate_proactive_engagement_details
 
@@ -191,6 +210,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -205,6 +226,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_protection"></a>
 
 ### create_protection
 
@@ -226,6 +249,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProtectionResponseTypeDef](./type_defs.md#createprotectionresponsetypedef).
+
+<a id="create_protection_group"></a>
 
 ### create_protection_group
 
@@ -256,6 +281,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_subscription"></a>
+
 ### create_subscription
 
 Activates Shield Advanced for an account.
@@ -266,6 +293,8 @@ Boto3 documentation:
 [Shield.Client.create_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.create_subscription)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_protection"></a>
 
 ### delete_protection
 
@@ -285,6 +314,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_protection_group"></a>
+
 ### delete_protection_group
 
 Removes the specified protection group.
@@ -303,6 +334,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_subscription"></a>
+
 ### delete_subscription
 
 Removes Shield Advanced from an account.
@@ -313,6 +346,8 @@ Boto3 documentation:
 [Shield.Client.delete_subscription](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.delete_subscription)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_attack"></a>
 
 ### describe_attack
 
@@ -333,6 +368,8 @@ Keyword-only arguments:
 Returns
 [DescribeAttackResponseTypeDef](./type_defs.md#describeattackresponsetypedef).
 
+<a id="describe_attack_statistics"></a>
+
 ### describe_attack_statistics
 
 Provides information about the number and type of attacks Shield has detected
@@ -348,6 +385,8 @@ Boto3 documentation:
 Returns
 [DescribeAttackStatisticsResponseTypeDef](./type_defs.md#describeattackstatisticsresponsetypedef).
 
+<a id="describe_drt_access"></a>
+
 ### describe_drt_access
 
 Returns the current role and list of Amazon S3 log buckets used by the Shield
@@ -361,6 +400,8 @@ Boto3 documentation:
 
 Returns
 [DescribeDRTAccessResponseTypeDef](./type_defs.md#describedrtaccessresponsetypedef).
+
+<a id="describe_emergency_contact_settings"></a>
 
 ### describe_emergency_contact_settings
 
@@ -376,6 +417,8 @@ Boto3 documentation:
 
 Returns
 [DescribeEmergencyContactSettingsResponseTypeDef](./type_defs.md#describeemergencycontactsettingsresponsetypedef).
+
+<a id="describe_protection"></a>
 
 ### describe_protection
 
@@ -397,6 +440,8 @@ Keyword-only arguments:
 Returns
 [DescribeProtectionResponseTypeDef](./type_defs.md#describeprotectionresponsetypedef).
 
+<a id="describe_protection_group"></a>
+
 ### describe_protection_group
 
 Returns the specification for the specified protection group.
@@ -416,6 +461,8 @@ Keyword-only arguments:
 Returns
 [DescribeProtectionGroupResponseTypeDef](./type_defs.md#describeprotectiongroupresponsetypedef).
 
+<a id="describe_subscription"></a>
+
 ### describe_subscription
 
 Provides details about the Shield Advanced subscription for an account.
@@ -427,6 +474,8 @@ Boto3 documentation:
 
 Returns
 [DescribeSubscriptionResponseTypeDef](./type_defs.md#describesubscriptionresponsetypedef).
+
+<a id="disable_application_layer_automatic_response"></a>
 
 ### disable_application_layer_automatic_response
 
@@ -448,6 +497,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disable_proactive_engagement"></a>
+
 ### disable_proactive_engagement
 
 Removes authorization from the Shield Response Team (SRT) to notify contacts
@@ -460,6 +511,8 @@ Boto3 documentation:
 [Shield.Client.disable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disable_proactive_engagement)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_drt_log_bucket"></a>
 
 ### disassociate_drt_log_bucket
 
@@ -481,6 +534,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_drt_role"></a>
+
 ### disassociate_drt_role
 
 Removes the Shield Response Team's (SRT) access to your Amazon Web Services
@@ -492,6 +547,8 @@ Boto3 documentation:
 [Shield.Client.disassociate_drt_role](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.disassociate_drt_role)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_health_check"></a>
 
 ### disassociate_health_check
 
@@ -512,6 +569,8 @@ Keyword-only arguments:
 - `HealthCheckArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="enable_application_layer_automatic_response"></a>
 
 ### enable_application_layer_automatic_response
 
@@ -535,6 +594,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="enable_proactive_engagement"></a>
+
 ### enable_proactive_engagement
 
 Authorizes the Shield Response Team (SRT) to use email and phone to notify
@@ -548,6 +609,8 @@ Boto3 documentation:
 [Shield.Client.enable_proactive_engagement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/shield.html#Shield.Client.enable_proactive_engagement)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -567,6 +630,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_subscription_state"></a>
+
 ### get_subscription_state
 
 Returns the `SubscriptionState` , either `Active` or `Inactive` .
@@ -578,6 +643,8 @@ Boto3 documentation:
 
 Returns
 [GetSubscriptionStateResponseTypeDef](./type_defs.md#getsubscriptionstateresponsetypedef).
+
+<a id="list_attacks"></a>
 
 ### list_attacks
 
@@ -603,6 +670,8 @@ Keyword-only arguments:
 Returns
 [ListAttacksResponseTypeDef](./type_defs.md#listattacksresponsetypedef).
 
+<a id="list_protection_groups"></a>
+
 ### list_protection_groups
 
 Retrieves the ProtectionGroup objects for the account.
@@ -623,6 +692,8 @@ Keyword-only arguments:
 Returns
 [ListProtectionGroupsResponseTypeDef](./type_defs.md#listprotectiongroupsresponsetypedef).
 
+<a id="list_protections"></a>
+
 ### list_protections
 
 Lists all Protection objects for the account.
@@ -642,6 +713,8 @@ Keyword-only arguments:
 
 Returns
 [ListProtectionsResponseTypeDef](./type_defs.md#listprotectionsresponsetypedef).
+
+<a id="list_resources_in_protection_group"></a>
 
 ### list_resources_in_protection_group
 
@@ -665,6 +738,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesInProtectionGroupResponseTypeDef](./type_defs.md#listresourcesinprotectiongroupresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Gets information about Amazon Web Services tags for a specified Amazon Resource
@@ -685,6 +760,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or updates tags for a resource in Shield.
@@ -704,6 +781,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource in Shield.
@@ -722,6 +801,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application_layer_automatic_response"></a>
 
 ### update_application_layer_automatic_response
 
@@ -745,6 +826,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_emergency_contact_settings"></a>
+
 ### update_emergency_contact_settings
 
 Updates the details of the list of email addresses and phone numbers that the
@@ -767,6 +850,8 @@ Keyword-only arguments:
   `Sequence`\[[EmergencyContactTypeDef](./type_defs.md#emergencycontacttypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_protection_group"></a>
 
 ### update_protection_group
 
@@ -795,6 +880,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_subscription"></a>
+
 ### update_subscription
 
 Updates the details of an existing subscription.
@@ -812,6 +899,8 @@ Keyword-only arguments:
 - `AutoRenew`: [AutoRenewType](./literals.md#autorenewtype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

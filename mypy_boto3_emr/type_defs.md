@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-emr-module"></a>
+
 # Typed dictionaries for boto3 EMR module
 
 > [Index](..) > [EMR](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EMR](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr.html#EMR)
 type annotations stubs module
-[mypy_boto3_emr](https://pypi.org/project/mypy-boto3-emr/).
+[mypy-boto3-emr](https://pypi.org/project/mypy-boto3-emr/).
 
 - [Typed dictionaries for boto3 EMR module](#typed-dictionaries-for-boto3-emr-module)
   - [AddInstanceFleetInputRequestTypeDef](#addinstancefleetinputrequesttypedef)
@@ -186,6 +188,8 @@ type annotations stubs module
   - [VolumeSpecificationTypeDef](#volumespecificationtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addinstancefleetinputrequesttypedef"></a>
+
 ## AddInstanceFleetInputRequestTypeDef
 
 ```python
@@ -197,6 +201,8 @@ Required fields:
 - `ClusterId`: `str`
 - `InstanceFleet`:
   [InstanceFleetConfigTypeDef](./type_defs.md#instancefleetconfigtypedef)
+
+<a id="addinstancefleetoutputtypedef"></a>
 
 ## AddInstanceFleetOutputTypeDef
 
@@ -212,6 +218,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addinstancegroupsinputrequesttypedef"></a>
+
 ## AddInstanceGroupsInputRequestTypeDef
 
 ```python
@@ -223,6 +231,8 @@ Required fields:
 - `InstanceGroups`:
   `Sequence`\[[InstanceGroupConfigTypeDef](./type_defs.md#instancegroupconfigtypedef)\]
 - `JobFlowId`: `str`
+
+<a id="addinstancegroupsoutputtypedef"></a>
 
 ## AddInstanceGroupsOutputTypeDef
 
@@ -238,6 +248,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addjobflowstepsinputrequesttypedef"></a>
+
 ## AddJobFlowStepsInputRequestTypeDef
 
 ```python
@@ -248,6 +260,8 @@ Required fields:
 
 - `JobFlowId`: `str`
 - `Steps`: `Sequence`\[[StepConfigTypeDef](./type_defs.md#stepconfigtypedef)\]
+
+<a id="addjobflowstepsoutputtypedef"></a>
 
 ## AddJobFlowStepsOutputTypeDef
 
@@ -261,6 +275,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addtagsinputrequesttypedef"></a>
+
 ## AddTagsInputRequestTypeDef
 
 ```python
@@ -271,6 +287,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="applicationtypedef"></a>
 
 ## ApplicationTypeDef
 
@@ -284,6 +302,8 @@ Optional fields:
 - `Version`: `str`
 - `Args`: `List`\[`str`\]
 - `AdditionalInfo`: `Dict`\[`str`, `str`\]
+
+<a id="autoscalingpolicydescriptiontypedef"></a>
 
 ## AutoScalingPolicyDescriptionTypeDef
 
@@ -299,6 +319,8 @@ Optional fields:
   [ScalingConstraintsTypeDef](./type_defs.md#scalingconstraintstypedef)
 - `Rules`: `List`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
 
+<a id="autoscalingpolicystatechangereasontypedef"></a>
+
 ## AutoScalingPolicyStateChangeReasonTypeDef
 
 ```python
@@ -310,6 +332,8 @@ Optional fields:
 - `Code`:
   [AutoScalingPolicyStateChangeReasonCodeType](./literals.md#autoscalingpolicystatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="autoscalingpolicystatustypedef"></a>
 
 ## AutoScalingPolicyStatusTypeDef
 
@@ -324,6 +348,8 @@ Optional fields:
 - `StateChangeReason`:
   [AutoScalingPolicyStateChangeReasonTypeDef](./type_defs.md#autoscalingpolicystatechangereasontypedef)
 
+<a id="autoscalingpolicytypedef"></a>
+
 ## AutoScalingPolicyTypeDef
 
 ```python
@@ -337,6 +363,8 @@ Required fields:
 - `Rules`:
   `Sequence`\[[ScalingRuleTypeDef](./type_defs.md#scalingruletypedef)\]
 
+<a id="autoterminationpolicytypedef"></a>
+
 ## AutoTerminationPolicyTypeDef
 
 ```python
@@ -346,6 +374,8 @@ from mypy_boto3_emr.type_defs import AutoTerminationPolicyTypeDef
 Optional fields:
 
 - `IdleTimeout`: `int`
+
+<a id="blockpublicaccessconfigurationmetadatatypedef"></a>
 
 ## BlockPublicAccessConfigurationMetadataTypeDef
 
@@ -357,6 +387,8 @@ Required fields:
 
 - `CreationDateTime`: `datetime`
 - `CreatedByArn`: `str`
+
+<a id="blockpublicaccessconfigurationtypedef"></a>
 
 ## BlockPublicAccessConfigurationTypeDef
 
@@ -373,6 +405,8 @@ Optional fields:
 - `PermittedPublicSecurityGroupRuleRanges`:
   `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
+<a id="bootstrapactionconfigtypedef"></a>
+
 ## BootstrapActionConfigTypeDef
 
 ```python
@@ -385,6 +419,8 @@ Required fields:
 - `ScriptBootstrapAction`:
   [ScriptBootstrapActionConfigTypeDef](./type_defs.md#scriptbootstrapactionconfigtypedef)
 
+<a id="bootstrapactiondetailtypedef"></a>
+
 ## BootstrapActionDetailTypeDef
 
 ```python
@@ -395,6 +431,8 @@ Optional fields:
 
 - `BootstrapActionConfig`:
   [BootstrapActionConfigTypeDef](./type_defs.md#bootstrapactionconfigtypedef)
+
+<a id="cancelstepsinfotypedef"></a>
 
 ## CancelStepsInfoTypeDef
 
@@ -408,6 +446,8 @@ Optional fields:
 - `Status`:
   [CancelStepsRequestStatusType](./literals.md#cancelstepsrequeststatustype)
 - `Reason`: `str`
+
+<a id="cancelstepsinputrequesttypedef"></a>
 
 ## CancelStepsInputRequestTypeDef
 
@@ -425,6 +465,8 @@ Optional fields:
 - `StepCancellationOption`:
   [StepCancellationOptionType](./literals.md#stepcancellationoptiontype)
 
+<a id="cancelstepsoutputtypedef"></a>
+
 ## CancelStepsOutputTypeDef
 
 ```python
@@ -437,6 +479,8 @@ Required fields:
   `List`\[[CancelStepsInfoTypeDef](./type_defs.md#cancelstepsinfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cloudwatchalarmdefinitiontypedef"></a>
 
 ## CloudWatchAlarmDefinitionTypeDef
 
@@ -461,6 +505,8 @@ Optional fields:
 - `Dimensions`:
   `Sequence`\[[MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
+<a id="clusterstatechangereasontypedef"></a>
+
 ## ClusterStateChangeReasonTypeDef
 
 ```python
@@ -472,6 +518,8 @@ Optional fields:
 - `Code`:
   [ClusterStateChangeReasonCodeType](./literals.md#clusterstatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="clusterstatustypedef"></a>
 
 ## ClusterStatusTypeDef
 
@@ -485,6 +533,8 @@ Optional fields:
 - `StateChangeReason`:
   [ClusterStateChangeReasonTypeDef](./type_defs.md#clusterstatechangereasontypedef)
 - `Timeline`: [ClusterTimelineTypeDef](./type_defs.md#clustertimelinetypedef)
+
+<a id="clustersummarytypedef"></a>
 
 ## ClusterSummaryTypeDef
 
@@ -501,6 +551,8 @@ Optional fields:
 - `ClusterArn`: `str`
 - `OutpostArn`: `str`
 
+<a id="clustertimelinetypedef"></a>
+
 ## ClusterTimelineTypeDef
 
 ```python
@@ -512,6 +564,8 @@ Optional fields:
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -560,6 +614,8 @@ Optional fields:
 - `PlacementGroups`:
   `List`\[[PlacementGroupConfigTypeDef](./type_defs.md#placementgroupconfigtypedef)\]
 
+<a id="commandtypedef"></a>
+
 ## CommandTypeDef
 
 ```python
@@ -571,6 +627,8 @@ Optional fields:
 - `Name`: `str`
 - `ScriptPath`: `str`
 - `Args`: `List`\[`str`\]
+
+<a id="computelimitstypedef"></a>
 
 ## ComputeLimitsTypeDef
 
@@ -590,6 +648,8 @@ Optional fields:
 - `MaximumOnDemandCapacityUnits`: `int`
 - `MaximumCoreCapacityUnits`: `int`
 
+<a id="configurationtypedef"></a>
+
 ## ConfigurationTypeDef
 
 ```python
@@ -603,6 +663,8 @@ Optional fields:
   `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `Properties`: `Mapping`\[`str`, `str`\]
 
+<a id="createsecurityconfigurationinputrequesttypedef"></a>
+
 ## CreateSecurityConfigurationInputRequestTypeDef
 
 ```python
@@ -613,6 +675,8 @@ Required fields:
 
 - `Name`: `str`
 - `SecurityConfiguration`: `str`
+
+<a id="createsecurityconfigurationoutputtypedef"></a>
 
 ## CreateSecurityConfigurationOutputTypeDef
 
@@ -626,6 +690,8 @@ Required fields:
 - `CreationDateTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstudioinputrequesttypedef"></a>
 
 ## CreateStudioInputRequestTypeDef
 
@@ -652,6 +718,8 @@ Optional fields:
 - `IdpRelayStateParameterName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createstudiooutputtypedef"></a>
+
 ## CreateStudioOutputTypeDef
 
 ```python
@@ -664,6 +732,8 @@ Required fields:
 - `Url`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstudiosessionmappinginputrequesttypedef"></a>
 
 ## CreateStudioSessionMappingInputRequestTypeDef
 
@@ -682,6 +752,8 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
+<a id="deletesecurityconfigurationinputrequesttypedef"></a>
+
 ## DeleteSecurityConfigurationInputRequestTypeDef
 
 ```python
@@ -692,6 +764,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deletestudioinputrequesttypedef"></a>
+
 ## DeleteStudioInputRequestTypeDef
 
 ```python
@@ -701,6 +775,8 @@ from mypy_boto3_emr.type_defs import DeleteStudioInputRequestTypeDef
 Required fields:
 
 - `StudioId`: `str`
+
+<a id="deletestudiosessionmappinginputrequesttypedef"></a>
 
 ## DeleteStudioSessionMappingInputRequestTypeDef
 
@@ -718,6 +794,8 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
+<a id="describeclusterinputrequesttypedef"></a>
+
 ## DescribeClusterInputRequestTypeDef
 
 ```python
@@ -727,6 +805,8 @@ from mypy_boto3_emr.type_defs import DescribeClusterInputRequestTypeDef
 Required fields:
 
 - `ClusterId`: `str`
+
+<a id="describeclusteroutputtypedef"></a>
 
 ## DescribeClusterOutputTypeDef
 
@@ -739,6 +819,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describejobflowsinputrequesttypedef"></a>
 
 ## DescribeJobFlowsInputRequestTypeDef
 
@@ -754,6 +836,8 @@ Optional fields:
 - `JobFlowStates`:
   `Sequence`\[[JobFlowExecutionStateType](./literals.md#jobflowexecutionstatetype)\]
 
+<a id="describejobflowsoutputtypedef"></a>
+
 ## DescribeJobFlowsOutputTypeDef
 
 ```python
@@ -767,6 +851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describenotebookexecutioninputrequesttypedef"></a>
+
 ## DescribeNotebookExecutionInputRequestTypeDef
 
 ```python
@@ -776,6 +862,8 @@ from mypy_boto3_emr.type_defs import DescribeNotebookExecutionInputRequestTypeDe
 Required fields:
 
 - `NotebookExecutionId`: `str`
+
+<a id="describenotebookexecutionoutputtypedef"></a>
 
 ## DescribeNotebookExecutionOutputTypeDef
 
@@ -790,6 +878,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereleaselabelinputrequesttypedef"></a>
+
 ## DescribeReleaseLabelInputRequestTypeDef
 
 ```python
@@ -801,6 +891,8 @@ Optional fields:
 - `ReleaseLabel`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describereleaselabeloutputtypedef"></a>
 
 ## DescribeReleaseLabelOutputTypeDef
 
@@ -817,6 +909,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesecurityconfigurationinputrequesttypedef"></a>
+
 ## DescribeSecurityConfigurationInputRequestTypeDef
 
 ```python
@@ -826,6 +920,8 @@ from mypy_boto3_emr.type_defs import DescribeSecurityConfigurationInputRequestTy
 Required fields:
 
 - `Name`: `str`
+
+<a id="describesecurityconfigurationoutputtypedef"></a>
 
 ## DescribeSecurityConfigurationOutputTypeDef
 
@@ -841,6 +937,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestepinputrequesttypedef"></a>
+
 ## DescribeStepInputRequestTypeDef
 
 ```python
@@ -851,6 +949,8 @@ Required fields:
 
 - `ClusterId`: `str`
 - `StepId`: `str`
+
+<a id="describestepoutputtypedef"></a>
 
 ## DescribeStepOutputTypeDef
 
@@ -864,6 +964,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestudioinputrequesttypedef"></a>
+
 ## DescribeStudioInputRequestTypeDef
 
 ```python
@@ -873,6 +975,8 @@ from mypy_boto3_emr.type_defs import DescribeStudioInputRequestTypeDef
 Required fields:
 
 - `StudioId`: `str`
+
+<a id="describestudiooutputtypedef"></a>
 
 ## DescribeStudioOutputTypeDef
 
@@ -885,6 +989,8 @@ Required fields:
 - `Studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="ebsblockdeviceconfigtypedef"></a>
 
 ## EbsBlockDeviceConfigTypeDef
 
@@ -901,6 +1007,8 @@ Optional fields:
 
 - `VolumesPerInstance`: `int`
 
+<a id="ebsblockdevicetypedef"></a>
+
 ## EbsBlockDeviceTypeDef
 
 ```python
@@ -912,6 +1020,8 @@ Optional fields:
 - `VolumeSpecification`:
   [VolumeSpecificationTypeDef](./type_defs.md#volumespecificationtypedef)
 - `Device`: `str`
+
+<a id="ebsconfigurationtypedef"></a>
 
 ## EbsConfigurationTypeDef
 
@@ -925,6 +1035,8 @@ Optional fields:
   `Sequence`\[[EbsBlockDeviceConfigTypeDef](./type_defs.md#ebsblockdeviceconfigtypedef)\]
 - `EbsOptimized`: `bool`
 
+<a id="ebsvolumetypedef"></a>
+
 ## EbsVolumeTypeDef
 
 ```python
@@ -935,6 +1047,8 @@ Optional fields:
 
 - `Device`: `str`
 - `VolumeId`: `str`
+
+<a id="ec2instanceattributestypedef"></a>
 
 ## Ec2InstanceAttributesTypeDef
 
@@ -956,6 +1070,8 @@ Optional fields:
 - `AdditionalMasterSecurityGroups`: `List`\[`str`\]
 - `AdditionalSlaveSecurityGroups`: `List`\[`str`\]
 
+<a id="executionengineconfigtypedef"></a>
+
 ## ExecutionEngineConfigTypeDef
 
 ```python
@@ -972,6 +1088,8 @@ Optional fields:
   [ExecutionEngineTypeType](./literals.md#executionenginetypetype))
 - `MasterInstanceSecurityGroupId`: `str`
 
+<a id="failuredetailstypedef"></a>
+
 ## FailureDetailsTypeDef
 
 ```python
@@ -984,6 +1102,8 @@ Optional fields:
 - `Message`: `str`
 - `LogFile`: `str`
 
+<a id="getautoterminationpolicyinputrequesttypedef"></a>
+
 ## GetAutoTerminationPolicyInputRequestTypeDef
 
 ```python
@@ -993,6 +1113,8 @@ from mypy_boto3_emr.type_defs import GetAutoTerminationPolicyInputRequestTypeDef
 Required fields:
 
 - `ClusterId`: `str`
+
+<a id="getautoterminationpolicyoutputtypedef"></a>
 
 ## GetAutoTerminationPolicyOutputTypeDef
 
@@ -1006,6 +1128,8 @@ Required fields:
   [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getblockpublicaccessconfigurationoutputtypedef"></a>
 
 ## GetBlockPublicAccessConfigurationOutputTypeDef
 
@@ -1022,6 +1146,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmanagedscalingpolicyinputrequesttypedef"></a>
+
 ## GetManagedScalingPolicyInputRequestTypeDef
 
 ```python
@@ -1031,6 +1157,8 @@ from mypy_boto3_emr.type_defs import GetManagedScalingPolicyInputRequestTypeDef
 Required fields:
 
 - `ClusterId`: `str`
+
+<a id="getmanagedscalingpolicyoutputtypedef"></a>
 
 ## GetManagedScalingPolicyOutputTypeDef
 
@@ -1044,6 +1172,8 @@ Required fields:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getstudiosessionmappinginputrequesttypedef"></a>
 
 ## GetStudioSessionMappingInputRequestTypeDef
 
@@ -1061,6 +1191,8 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
+<a id="getstudiosessionmappingoutputtypedef"></a>
+
 ## GetStudioSessionMappingOutputTypeDef
 
 ```python
@@ -1073,6 +1205,8 @@ Required fields:
   [SessionMappingDetailTypeDef](./type_defs.md#sessionmappingdetailtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="hadoopjarstepconfigtypedef"></a>
 
 ## HadoopJarStepConfigTypeDef
 
@@ -1090,6 +1224,8 @@ Optional fields:
 - `MainClass`: `str`
 - `Args`: `Sequence`\[`str`\]
 
+<a id="hadoopstepconfigtypedef"></a>
+
 ## HadoopStepConfigTypeDef
 
 ```python
@@ -1102,6 +1238,8 @@ Optional fields:
 - `Properties`: `Dict`\[`str`, `str`\]
 - `MainClass`: `str`
 - `Args`: `List`\[`str`\]
+
+<a id="instancefleetconfigtypedef"></a>
 
 ## InstanceFleetConfigTypeDef
 
@@ -1124,6 +1262,8 @@ Optional fields:
 - `LaunchSpecifications`:
   [InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef)
 
+<a id="instancefleetmodifyconfigtypedef"></a>
+
 ## InstanceFleetModifyConfigTypeDef
 
 ```python
@@ -1139,6 +1279,8 @@ Optional fields:
 - `TargetOnDemandCapacity`: `int`
 - `TargetSpotCapacity`: `int`
 
+<a id="instancefleetprovisioningspecificationstypedef"></a>
+
 ## InstanceFleetProvisioningSpecificationsTypeDef
 
 ```python
@@ -1152,6 +1294,8 @@ Optional fields:
 - `OnDemandSpecification`:
   [OnDemandProvisioningSpecificationTypeDef](./type_defs.md#ondemandprovisioningspecificationtypedef)
 
+<a id="instancefleetstatechangereasontypedef"></a>
+
 ## InstanceFleetStateChangeReasonTypeDef
 
 ```python
@@ -1163,6 +1307,8 @@ Optional fields:
 - `Code`:
   [InstanceFleetStateChangeReasonCodeType](./literals.md#instancefleetstatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="instancefleetstatustypedef"></a>
 
 ## InstanceFleetStatusTypeDef
 
@@ -1178,6 +1324,8 @@ Optional fields:
 - `Timeline`:
   [InstanceFleetTimelineTypeDef](./type_defs.md#instancefleettimelinetypedef)
 
+<a id="instancefleettimelinetypedef"></a>
+
 ## InstanceFleetTimelineTypeDef
 
 ```python
@@ -1189,6 +1337,8 @@ Optional fields:
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
+
+<a id="instancefleettypedef"></a>
 
 ## InstanceFleetTypeDef
 
@@ -1212,6 +1362,8 @@ Optional fields:
   `List`\[[InstanceTypeSpecificationTypeDef](./type_defs.md#instancetypespecificationtypedef)\]
 - `LaunchSpecifications`:
   [InstanceFleetProvisioningSpecificationsTypeDef](./type_defs.md#instancefleetprovisioningspecificationstypedef)
+
+<a id="instancegroupconfigtypedef"></a>
 
 ## InstanceGroupConfigTypeDef
 
@@ -1237,6 +1389,8 @@ Optional fields:
 - `AutoScalingPolicy`:
   [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
 - `CustomAmiId`: `str`
+
+<a id="instancegroupdetailtypedef"></a>
 
 ## InstanceGroupDetailTypeDef
 
@@ -1265,6 +1419,8 @@ Optional fields:
 - `EndDateTime`: `datetime`
 - `CustomAmiId`: `str`
 
+<a id="instancegroupmodifyconfigtypedef"></a>
+
 ## InstanceGroupModifyConfigTypeDef
 
 ```python
@@ -1283,6 +1439,8 @@ Optional fields:
 - `Configurations`:
   `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 
+<a id="instancegroupstatechangereasontypedef"></a>
+
 ## InstanceGroupStateChangeReasonTypeDef
 
 ```python
@@ -1294,6 +1452,8 @@ Optional fields:
 - `Code`:
   [InstanceGroupStateChangeReasonCodeType](./literals.md#instancegroupstatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="instancegroupstatustypedef"></a>
 
 ## InstanceGroupStatusTypeDef
 
@@ -1309,6 +1469,8 @@ Optional fields:
 - `Timeline`:
   [InstanceGroupTimelineTypeDef](./type_defs.md#instancegrouptimelinetypedef)
 
+<a id="instancegrouptimelinetypedef"></a>
+
 ## InstanceGroupTimelineTypeDef
 
 ```python
@@ -1320,6 +1482,8 @@ Optional fields:
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
+
+<a id="instancegrouptypedef"></a>
 
 ## InstanceGroupTypeDef
 
@@ -1354,6 +1518,8 @@ Optional fields:
   [AutoScalingPolicyDescriptionTypeDef](./type_defs.md#autoscalingpolicydescriptiontypedef)
 - `CustomAmiId`: `str`
 
+<a id="instanceresizepolicytypedef"></a>
+
 ## InstanceResizePolicyTypeDef
 
 ```python
@@ -1366,6 +1532,8 @@ Optional fields:
 - `InstancesToProtect`: `List`\[`str`\]
 - `InstanceTerminationTimeout`: `int`
 
+<a id="instancestatechangereasontypedef"></a>
+
 ## InstanceStateChangeReasonTypeDef
 
 ```python
@@ -1377,6 +1545,8 @@ Optional fields:
 - `Code`:
   [InstanceStateChangeReasonCodeType](./literals.md#instancestatechangereasoncodetype)
 - `Message`: `str`
+
+<a id="instancestatustypedef"></a>
 
 ## InstanceStatusTypeDef
 
@@ -1391,6 +1561,8 @@ Optional fields:
   [InstanceStateChangeReasonTypeDef](./type_defs.md#instancestatechangereasontypedef)
 - `Timeline`: [InstanceTimelineTypeDef](./type_defs.md#instancetimelinetypedef)
 
+<a id="instancetimelinetypedef"></a>
+
 ## InstanceTimelineTypeDef
 
 ```python
@@ -1402,6 +1574,8 @@ Optional fields:
 - `CreationDateTime`: `datetime`
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
+
+<a id="instancetypeconfigtypedef"></a>
 
 ## InstanceTypeConfigTypeDef
 
@@ -1424,6 +1598,8 @@ Optional fields:
   `Sequence`\[[ConfigurationTypeDef](./type_defs.md#configurationtypedef)\]
 - `CustomAmiId`: `str`
 
+<a id="instancetypedef"></a>
+
 ## InstanceTypeDef
 
 ```python
@@ -1445,6 +1621,8 @@ Optional fields:
 - `InstanceType`: `str`
 - `EbsVolumes`: `List`\[[EbsVolumeTypeDef](./type_defs.md#ebsvolumetypedef)\]
 
+<a id="instancetypespecificationtypedef"></a>
+
 ## InstanceTypeSpecificationTypeDef
 
 ```python
@@ -1463,6 +1641,8 @@ Optional fields:
   `List`\[[EbsBlockDeviceTypeDef](./type_defs.md#ebsblockdevicetypedef)\]
 - `EbsOptimized`: `bool`
 - `CustomAmiId`: `str`
+
+<a id="jobflowdetailtypedef"></a>
 
 ## JobFlowDetailTypeDef
 
@@ -1495,6 +1675,8 @@ Optional fields:
 - `ScaleDownBehavior`:
   [ScaleDownBehaviorType](./literals.md#scaledownbehaviortype)
 
+<a id="jobflowexecutionstatusdetailtypedef"></a>
+
 ## JobFlowExecutionStatusDetailTypeDef
 
 ```python
@@ -1512,6 +1694,8 @@ Optional fields:
 - `ReadyDateTime`: `datetime`
 - `EndDateTime`: `datetime`
 - `LastStateChangeReason`: `str`
+
+<a id="jobflowinstancesconfigtypedef"></a>
 
 ## JobFlowInstancesConfigTypeDef
 
@@ -1541,6 +1725,8 @@ Optional fields:
 - `AdditionalMasterSecurityGroups`: `Sequence`\[`str`\]
 - `AdditionalSlaveSecurityGroups`: `Sequence`\[`str`\]
 
+<a id="jobflowinstancesdetailtypedef"></a>
+
 ## JobFlowInstancesDetailTypeDef
 
 ```python
@@ -1567,6 +1753,8 @@ Optional fields:
 - `TerminationProtected`: `bool`
 - `HadoopVersion`: `str`
 
+<a id="kerberosattributestypedef"></a>
+
 ## KerberosAttributesTypeDef
 
 ```python
@@ -1584,6 +1772,8 @@ Optional fields:
 - `ADDomainJoinUser`: `str`
 - `ADDomainJoinPassword`: `str`
 
+<a id="keyvaluetypedef"></a>
+
 ## KeyValueTypeDef
 
 ```python
@@ -1594,6 +1784,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="listbootstrapactionsinputrequesttypedef"></a>
 
 ## ListBootstrapActionsInputRequestTypeDef
 
@@ -1609,6 +1801,8 @@ Optional fields:
 
 - `Marker`: `str`
 
+<a id="listbootstrapactionsoutputtypedef"></a>
+
 ## ListBootstrapActionsOutputTypeDef
 
 ```python
@@ -1621,6 +1815,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listclustersinputrequesttypedef"></a>
 
 ## ListClustersInputRequestTypeDef
 
@@ -1636,6 +1832,8 @@ Optional fields:
   `Sequence`\[[ClusterStateType](./literals.md#clusterstatetype)\]
 - `Marker`: `str`
 
+<a id="listclustersoutputtypedef"></a>
+
 ## ListClustersOutputTypeDef
 
 ```python
@@ -1649,6 +1847,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinstancefleetsinputrequesttypedef"></a>
 
 ## ListInstanceFleetsInputRequestTypeDef
 
@@ -1664,6 +1864,8 @@ Optional fields:
 
 - `Marker`: `str`
 
+<a id="listinstancefleetsoutputtypedef"></a>
+
 ## ListInstanceFleetsOutputTypeDef
 
 ```python
@@ -1677,6 +1879,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinstancegroupsinputrequesttypedef"></a>
 
 ## ListInstanceGroupsInputRequestTypeDef
 
@@ -1692,6 +1896,8 @@ Optional fields:
 
 - `Marker`: `str`
 
+<a id="listinstancegroupsoutputtypedef"></a>
+
 ## ListInstanceGroupsOutputTypeDef
 
 ```python
@@ -1705,6 +1911,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinstancesinputrequesttypedef"></a>
 
 ## ListInstancesInputRequestTypeDef
 
@@ -1728,6 +1936,8 @@ Optional fields:
   `Sequence`\[[InstanceStateType](./literals.md#instancestatetype)\]
 - `Marker`: `str`
 
+<a id="listinstancesoutputtypedef"></a>
+
 ## ListInstancesOutputTypeDef
 
 ```python
@@ -1740,6 +1950,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listnotebookexecutionsinputrequesttypedef"></a>
 
 ## ListNotebookExecutionsInputRequestTypeDef
 
@@ -1756,6 +1968,8 @@ Optional fields:
 - `To`: `Union`\[`datetime`, `str`\]
 - `Marker`: `str`
 
+<a id="listnotebookexecutionsoutputtypedef"></a>
+
 ## ListNotebookExecutionsOutputTypeDef
 
 ```python
@@ -1770,6 +1984,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listreleaselabelsinputrequesttypedef"></a>
+
 ## ListReleaseLabelsInputRequestTypeDef
 
 ```python
@@ -1782,6 +1998,8 @@ Optional fields:
   [ReleaseLabelFilterTypeDef](./type_defs.md#releaselabelfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listreleaselabelsoutputtypedef"></a>
 
 ## ListReleaseLabelsOutputTypeDef
 
@@ -1796,6 +2014,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsecurityconfigurationsinputrequesttypedef"></a>
+
 ## ListSecurityConfigurationsInputRequestTypeDef
 
 ```python
@@ -1805,6 +2025,8 @@ from mypy_boto3_emr.type_defs import ListSecurityConfigurationsInputRequestTypeD
 Optional fields:
 
 - `Marker`: `str`
+
+<a id="listsecurityconfigurationsoutputtypedef"></a>
 
 ## ListSecurityConfigurationsOutputTypeDef
 
@@ -1819,6 +2041,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststepsinputrequesttypedef"></a>
 
 ## ListStepsInputRequestTypeDef
 
@@ -1836,6 +2060,8 @@ Optional fields:
 - `StepIds`: `Sequence`\[`str`\]
 - `Marker`: `str`
 
+<a id="liststepsoutputtypedef"></a>
+
 ## ListStepsOutputTypeDef
 
 ```python
@@ -1849,6 +2075,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststudiosessionmappingsinputrequesttypedef"></a>
+
 ## ListStudioSessionMappingsInputRequestTypeDef
 
 ```python
@@ -1860,6 +2088,8 @@ Optional fields:
 - `StudioId`: `str`
 - `IdentityType`: [IdentityTypeType](./literals.md#identitytypetype)
 - `Marker`: `str`
+
+<a id="liststudiosessionmappingsoutputtypedef"></a>
 
 ## ListStudioSessionMappingsOutputTypeDef
 
@@ -1875,6 +2105,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststudiosinputrequesttypedef"></a>
+
 ## ListStudiosInputRequestTypeDef
 
 ```python
@@ -1884,6 +2116,8 @@ from mypy_boto3_emr.type_defs import ListStudiosInputRequestTypeDef
 Optional fields:
 
 - `Marker`: `str`
+
+<a id="liststudiosoutputtypedef"></a>
 
 ## ListStudiosOutputTypeDef
 
@@ -1899,6 +2133,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="managedscalingpolicytypedef"></a>
+
 ## ManagedScalingPolicyTypeDef
 
 ```python
@@ -1908,6 +2144,8 @@ from mypy_boto3_emr.type_defs import ManagedScalingPolicyTypeDef
 Optional fields:
 
 - `ComputeLimits`: [ComputeLimitsTypeDef](./type_defs.md#computelimitstypedef)
+
+<a id="metricdimensiontypedef"></a>
 
 ## MetricDimensionTypeDef
 
@@ -1919,6 +2157,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="modifyclusterinputrequesttypedef"></a>
 
 ## ModifyClusterInputRequestTypeDef
 
@@ -1934,6 +2174,8 @@ Optional fields:
 
 - `StepConcurrencyLevel`: `int`
 
+<a id="modifyclusteroutputtypedef"></a>
+
 ## ModifyClusterOutputTypeDef
 
 ```python
@@ -1945,6 +2187,8 @@ Required fields:
 - `StepConcurrencyLevel`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyinstancefleetinputrequesttypedef"></a>
 
 ## ModifyInstanceFleetInputRequestTypeDef
 
@@ -1958,6 +2202,8 @@ Required fields:
 - `InstanceFleet`:
   [InstanceFleetModifyConfigTypeDef](./type_defs.md#instancefleetmodifyconfigtypedef)
 
+<a id="modifyinstancegroupsinputrequesttypedef"></a>
+
 ## ModifyInstanceGroupsInputRequestTypeDef
 
 ```python
@@ -1969,6 +2215,8 @@ Optional fields:
 - `ClusterId`: `str`
 - `InstanceGroups`:
   `Sequence`\[[InstanceGroupModifyConfigTypeDef](./type_defs.md#instancegroupmodifyconfigtypedef)\]
+
+<a id="notebookexecutionsummarytypedef"></a>
 
 ## NotebookExecutionSummaryTypeDef
 
@@ -1985,6 +2233,8 @@ Optional fields:
   [NotebookExecutionStatusType](./literals.md#notebookexecutionstatustype)
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
+
+<a id="notebookexecutiontypedef"></a>
 
 ## NotebookExecutionTypeDef
 
@@ -2010,6 +2260,8 @@ Optional fields:
 - `NotebookInstanceSecurityGroupId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="ondemandcapacityreservationoptionstypedef"></a>
+
 ## OnDemandCapacityReservationOptionsTypeDef
 
 ```python
@@ -2023,6 +2275,8 @@ Optional fields:
 - `CapacityReservationPreference`:
   [OnDemandCapacityReservationPreferenceType](./literals.md#ondemandcapacityreservationpreferencetype)
 - `CapacityReservationResourceGroupArn`: `str`
+
+<a id="ondemandprovisioningspecificationtypedef"></a>
 
 ## OnDemandProvisioningSpecificationTypeDef
 
@@ -2040,6 +2294,8 @@ Optional fields:
 - `CapacityReservationOptions`:
   [OnDemandCapacityReservationOptionsTypeDef](./type_defs.md#ondemandcapacityreservationoptionstypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2051,6 +2307,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="placementgroupconfigtypedef"></a>
 
 ## PlacementGroupConfigTypeDef
 
@@ -2067,6 +2325,8 @@ Optional fields:
 - `PlacementStrategy`:
   [PlacementGroupStrategyType](./literals.md#placementgroupstrategytype)
 
+<a id="placementtypetypedef"></a>
+
 ## PlacementTypeTypeDef
 
 ```python
@@ -2077,6 +2337,8 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 - `AvailabilityZones`: `List`\[`str`\]
+
+<a id="portrangetypedef"></a>
 
 ## PortRangeTypeDef
 
@@ -2092,6 +2354,8 @@ Optional fields:
 
 - `MaxRange`: `int`
 
+<a id="putautoscalingpolicyinputrequesttypedef"></a>
+
 ## PutAutoScalingPolicyInputRequestTypeDef
 
 ```python
@@ -2104,6 +2368,8 @@ Required fields:
 - `InstanceGroupId`: `str`
 - `AutoScalingPolicy`:
   [AutoScalingPolicyTypeDef](./type_defs.md#autoscalingpolicytypedef)
+
+<a id="putautoscalingpolicyoutputtypedef"></a>
 
 ## PutAutoScalingPolicyOutputTypeDef
 
@@ -2121,6 +2387,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putautoterminationpolicyinputrequesttypedef"></a>
+
 ## PutAutoTerminationPolicyInputRequestTypeDef
 
 ```python
@@ -2136,6 +2404,8 @@ Optional fields:
 - `AutoTerminationPolicy`:
   [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
+<a id="putblockpublicaccessconfigurationinputrequesttypedef"></a>
+
 ## PutBlockPublicAccessConfigurationInputRequestTypeDef
 
 ```python
@@ -2146,6 +2416,8 @@ Required fields:
 
 - `BlockPublicAccessConfiguration`:
   [BlockPublicAccessConfigurationTypeDef](./type_defs.md#blockpublicaccessconfigurationtypedef)
+
+<a id="putmanagedscalingpolicyinputrequesttypedef"></a>
 
 ## PutManagedScalingPolicyInputRequestTypeDef
 
@@ -2159,6 +2431,8 @@ Required fields:
 - `ManagedScalingPolicy`:
   [ManagedScalingPolicyTypeDef](./type_defs.md#managedscalingpolicytypedef)
 
+<a id="releaselabelfiltertypedef"></a>
+
 ## ReleaseLabelFilterTypeDef
 
 ```python
@@ -2169,6 +2443,8 @@ Optional fields:
 
 - `Prefix`: `str`
 - `Application`: `str`
+
+<a id="removeautoscalingpolicyinputrequesttypedef"></a>
 
 ## RemoveAutoScalingPolicyInputRequestTypeDef
 
@@ -2181,6 +2457,8 @@ Required fields:
 - `ClusterId`: `str`
 - `InstanceGroupId`: `str`
 
+<a id="removeautoterminationpolicyinputrequesttypedef"></a>
+
 ## RemoveAutoTerminationPolicyInputRequestTypeDef
 
 ```python
@@ -2190,6 +2468,8 @@ from mypy_boto3_emr.type_defs import RemoveAutoTerminationPolicyInputRequestType
 Required fields:
 
 - `ClusterId`: `str`
+
+<a id="removemanagedscalingpolicyinputrequesttypedef"></a>
 
 ## RemoveManagedScalingPolicyInputRequestTypeDef
 
@@ -2201,6 +2481,8 @@ Required fields:
 
 - `ClusterId`: `str`
 
+<a id="removetagsinputrequesttypedef"></a>
+
 ## RemoveTagsInputRequestTypeDef
 
 ```python
@@ -2211,6 +2493,8 @@ Required fields:
 
 - `ResourceId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2225,6 +2509,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="runjobflowinputrequesttypedef"></a>
 
 ## RunJobFlowInputRequestTypeDef
 
@@ -2277,6 +2563,8 @@ Optional fields:
 - `AutoTerminationPolicy`:
   [AutoTerminationPolicyTypeDef](./type_defs.md#autoterminationpolicytypedef)
 
+<a id="runjobflowoutputtypedef"></a>
+
 ## RunJobFlowOutputTypeDef
 
 ```python
@@ -2289,6 +2577,8 @@ Required fields:
 - `ClusterArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="scalingactiontypedef"></a>
 
 ## ScalingActionTypeDef
 
@@ -2305,6 +2595,8 @@ Optional fields:
 
 - `Market`: [MarketTypeType](./literals.md#markettypetype)
 
+<a id="scalingconstraintstypedef"></a>
+
 ## ScalingConstraintsTypeDef
 
 ```python
@@ -2315,6 +2607,8 @@ Required fields:
 
 - `MinCapacity`: `int`
 - `MaxCapacity`: `int`
+
+<a id="scalingruletypedef"></a>
 
 ## ScalingRuleTypeDef
 
@@ -2332,6 +2626,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="scalingtriggertypedef"></a>
+
 ## ScalingTriggerTypeDef
 
 ```python
@@ -2342,6 +2638,8 @@ Required fields:
 
 - `CloudWatchAlarmDefinition`:
   [CloudWatchAlarmDefinitionTypeDef](./type_defs.md#cloudwatchalarmdefinitiontypedef)
+
+<a id="scriptbootstrapactionconfigtypedef"></a>
 
 ## ScriptBootstrapActionConfigTypeDef
 
@@ -2357,6 +2655,8 @@ Optional fields:
 
 - `Args`: `List`\[`str`\]
 
+<a id="securityconfigurationsummarytypedef"></a>
+
 ## SecurityConfigurationSummaryTypeDef
 
 ```python
@@ -2367,6 +2667,8 @@ Optional fields:
 
 - `Name`: `str`
 - `CreationDateTime`: `datetime`
+
+<a id="sessionmappingdetailtypedef"></a>
 
 ## SessionMappingDetailTypeDef
 
@@ -2384,6 +2686,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="sessionmappingsummarytypedef"></a>
+
 ## SessionMappingSummaryTypeDef
 
 ```python
@@ -2399,6 +2703,8 @@ Optional fields:
 - `SessionPolicyArn`: `str`
 - `CreationTime`: `datetime`
 
+<a id="setterminationprotectioninputrequesttypedef"></a>
+
 ## SetTerminationProtectionInputRequestTypeDef
 
 ```python
@@ -2409,6 +2715,8 @@ Required fields:
 
 - `JobFlowIds`: `Sequence`\[`str`\]
 - `TerminationProtected`: `bool`
+
+<a id="setvisibletoallusersinputrequesttypedef"></a>
 
 ## SetVisibleToAllUsersInputRequestTypeDef
 
@@ -2421,6 +2729,8 @@ Required fields:
 - `JobFlowIds`: `Sequence`\[`str`\]
 - `VisibleToAllUsers`: `bool`
 
+<a id="shrinkpolicytypedef"></a>
+
 ## ShrinkPolicyTypeDef
 
 ```python
@@ -2432,6 +2742,8 @@ Optional fields:
 - `DecommissionTimeout`: `int`
 - `InstanceResizePolicy`:
   [InstanceResizePolicyTypeDef](./type_defs.md#instanceresizepolicytypedef)
+
+<a id="simplescalingpolicyconfigurationtypedef"></a>
 
 ## SimpleScalingPolicyConfigurationTypeDef
 
@@ -2448,6 +2760,8 @@ Optional fields:
 - `AdjustmentType`: [AdjustmentTypeType](./literals.md#adjustmenttypetype)
 - `CoolDown`: `int`
 
+<a id="simplifiedapplicationtypedef"></a>
+
 ## SimplifiedApplicationTypeDef
 
 ```python
@@ -2458,6 +2772,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="spotprovisioningspecificationtypedef"></a>
 
 ## SpotProvisioningSpecificationTypeDef
 
@@ -2476,6 +2792,8 @@ Optional fields:
 - `BlockDurationMinutes`: `int`
 - `AllocationStrategy`: `Literal['capacity-optimized']` (see
   [SpotProvisioningAllocationStrategyType](./literals.md#spotprovisioningallocationstrategytype))
+
+<a id="startnotebookexecutioninputrequesttypedef"></a>
 
 ## StartNotebookExecutionInputRequestTypeDef
 
@@ -2498,6 +2816,8 @@ Optional fields:
 - `NotebookInstanceSecurityGroupId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startnotebookexecutionoutputtypedef"></a>
+
 ## StartNotebookExecutionOutputTypeDef
 
 ```python
@@ -2509,6 +2829,8 @@ Required fields:
 - `NotebookExecutionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stepconfigtypedef"></a>
 
 ## StepConfigTypeDef
 
@@ -2526,6 +2848,8 @@ Optional fields:
 
 - `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 
+<a id="stepdetailtypedef"></a>
+
 ## StepDetailTypeDef
 
 ```python
@@ -2537,6 +2861,8 @@ Required fields:
 - `StepConfig`: [StepConfigTypeDef](./type_defs.md#stepconfigtypedef)
 - `ExecutionStatusDetail`:
   [StepExecutionStatusDetailTypeDef](./type_defs.md#stepexecutionstatusdetailtypedef)
+
+<a id="stepexecutionstatusdetailtypedef"></a>
 
 ## StepExecutionStatusDetailTypeDef
 
@@ -2555,6 +2881,8 @@ Optional fields:
 - `EndDateTime`: `datetime`
 - `LastStateChangeReason`: `str`
 
+<a id="stepstatechangereasontypedef"></a>
+
 ## StepStateChangeReasonTypeDef
 
 ```python
@@ -2566,6 +2894,8 @@ Optional fields:
 - `Code`: `Literal['NONE']` (see
   [StepStateChangeReasonCodeType](./literals.md#stepstatechangereasoncodetype))
 - `Message`: `str`
+
+<a id="stepstatustypedef"></a>
 
 ## StepStatusTypeDef
 
@@ -2582,6 +2912,8 @@ Optional fields:
   [FailureDetailsTypeDef](./type_defs.md#failuredetailstypedef)
 - `Timeline`: [StepTimelineTypeDef](./type_defs.md#steptimelinetypedef)
 
+<a id="stepsummarytypedef"></a>
+
 ## StepSummaryTypeDef
 
 ```python
@@ -2596,6 +2928,8 @@ Optional fields:
 - `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 - `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
 
+<a id="steptimelinetypedef"></a>
+
 ## StepTimelineTypeDef
 
 ```python
@@ -2607,6 +2941,8 @@ Optional fields:
 - `CreationDateTime`: `datetime`
 - `StartDateTime`: `datetime`
 - `EndDateTime`: `datetime`
+
+<a id="steptypedef"></a>
 
 ## StepTypeDef
 
@@ -2622,6 +2958,8 @@ Optional fields:
 - `ActionOnFailure`: [ActionOnFailureType](./literals.md#actiononfailuretype)
 - `Status`: [StepStatusTypeDef](./type_defs.md#stepstatustypedef)
 
+<a id="stopnotebookexecutioninputrequesttypedef"></a>
+
 ## StopNotebookExecutionInputRequestTypeDef
 
 ```python
@@ -2631,6 +2969,8 @@ from mypy_boto3_emr.type_defs import StopNotebookExecutionInputRequestTypeDef
 Required fields:
 
 - `NotebookExecutionId`: `str`
+
+<a id="studiosummarytypedef"></a>
 
 ## StudioSummaryTypeDef
 
@@ -2647,6 +2987,8 @@ Optional fields:
 - `Url`: `str`
 - `AuthMode`: [AuthModeType](./literals.md#authmodetype)
 - `CreationTime`: `datetime`
+
+<a id="studiotypedef"></a>
 
 ## StudioTypeDef
 
@@ -2674,6 +3016,8 @@ Optional fields:
 - `IdpRelayStateParameterName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="supportedproductconfigtypedef"></a>
+
 ## SupportedProductConfigTypeDef
 
 ```python
@@ -2684,6 +3028,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Args`: `Sequence`\[`str`\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2696,6 +3042,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="terminatejobflowsinputrequesttypedef"></a>
+
 ## TerminateJobFlowsInputRequestTypeDef
 
 ```python
@@ -2705,6 +3053,8 @@ from mypy_boto3_emr.type_defs import TerminateJobFlowsInputRequestTypeDef
 Required fields:
 
 - `JobFlowIds`: `Sequence`\[`str`\]
+
+<a id="updatestudioinputrequesttypedef"></a>
 
 ## UpdateStudioInputRequestTypeDef
 
@@ -2723,6 +3073,8 @@ Optional fields:
 - `SubnetIds`: `Sequence`\[`str`\]
 - `DefaultS3Location`: `str`
 
+<a id="updatestudiosessionmappinginputrequesttypedef"></a>
+
 ## UpdateStudioSessionMappingInputRequestTypeDef
 
 ```python
@@ -2740,6 +3092,8 @@ Optional fields:
 - `IdentityId`: `str`
 - `IdentityName`: `str`
 
+<a id="volumespecificationtypedef"></a>
+
 ## VolumeSpecificationTypeDef
 
 ```python
@@ -2754,6 +3108,8 @@ Required fields:
 Optional fields:
 
 - `Iops`: `int`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

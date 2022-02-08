@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kafkaconnect-module"></a>
+
 # Typed dictionaries for boto3 KafkaConnect module
 
 > [Index](..) > [KafkaConnect](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
 type annotations stubs module
-[mypy_boto3_kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 - [Typed dictionaries for boto3 KafkaConnect module](#typed-dictionaries-for-boto3-kafkaconnect-module)
   - [ApacheKafkaClusterDescriptionTypeDef](#apachekafkaclusterdescriptiontypedef)
@@ -85,6 +87,8 @@ type annotations stubs module
   - [WorkerLogDeliveryDescriptionTypeDef](#workerlogdeliverydescriptiontypedef)
   - [WorkerLogDeliveryTypeDef](#workerlogdeliverytypedef)
 
+<a id="apachekafkaclusterdescriptiontypedef"></a>
+
 ## ApacheKafkaClusterDescriptionTypeDef
 
 ```python
@@ -96,6 +100,8 @@ Optional fields:
 - `bootstrapServers`: `str`
 - `vpc`: [VpcDescriptionTypeDef](./type_defs.md#vpcdescriptiontypedef)
 
+<a id="apachekafkaclustertypedef"></a>
+
 ## ApacheKafkaClusterTypeDef
 
 ```python
@@ -106,6 +112,8 @@ Required fields:
 
 - `bootstrapServers`: `str`
 - `vpc`: [VpcTypeDef](./type_defs.md#vpctypedef)
+
+<a id="autoscalingdescriptiontypedef"></a>
 
 ## AutoScalingDescriptionTypeDef
 
@@ -122,6 +130,8 @@ Optional fields:
   [ScaleInPolicyDescriptionTypeDef](./type_defs.md#scaleinpolicydescriptiontypedef)
 - `scaleOutPolicy`:
   [ScaleOutPolicyDescriptionTypeDef](./type_defs.md#scaleoutpolicydescriptiontypedef)
+
+<a id="autoscalingtypedef"></a>
 
 ## AutoScalingTypeDef
 
@@ -141,6 +151,8 @@ Optional fields:
 - `scaleOutPolicy`:
   [ScaleOutPolicyTypeDef](./type_defs.md#scaleoutpolicytypedef)
 
+<a id="autoscalingupdatetypedef"></a>
+
 ## AutoScalingUpdateTypeDef
 
 ```python
@@ -157,6 +169,8 @@ Required fields:
 - `scaleOutPolicy`:
   [ScaleOutPolicyUpdateTypeDef](./type_defs.md#scaleoutpolicyupdatetypedef)
 
+<a id="capacitydescriptiontypedef"></a>
+
 ## CapacityDescriptionTypeDef
 
 ```python
@@ -170,6 +184,8 @@ Optional fields:
 - `provisionedCapacity`:
   [ProvisionedCapacityDescriptionTypeDef](./type_defs.md#provisionedcapacitydescriptiontypedef)
 
+<a id="capacitytypedef"></a>
+
 ## CapacityTypeDef
 
 ```python
@@ -181,6 +197,8 @@ Optional fields:
 - `autoScaling`: [AutoScalingTypeDef](./type_defs.md#autoscalingtypedef)
 - `provisionedCapacity`:
   [ProvisionedCapacityTypeDef](./type_defs.md#provisionedcapacitytypedef)
+
+<a id="capacityupdatetypedef"></a>
 
 ## CapacityUpdateTypeDef
 
@@ -195,6 +213,8 @@ Optional fields:
 - `provisionedCapacity`:
   [ProvisionedCapacityUpdateTypeDef](./type_defs.md#provisionedcapacityupdatetypedef)
 
+<a id="cloudwatchlogslogdeliverydescriptiontypedef"></a>
+
 ## CloudWatchLogsLogDeliveryDescriptionTypeDef
 
 ```python
@@ -205,6 +225,8 @@ Optional fields:
 
 - `enabled`: `bool`
 - `logGroup`: `str`
+
+<a id="cloudwatchlogslogdeliverytypedef"></a>
 
 ## CloudWatchLogsLogDeliveryTypeDef
 
@@ -219,6 +241,8 @@ Required fields:
 Optional fields:
 
 - `logGroup`: `str`
+
+<a id="connectorsummarytypedef"></a>
 
 ## ConnectorSummaryTypeDef
 
@@ -251,6 +275,8 @@ Optional fields:
 - `workerConfiguration`:
   [WorkerConfigurationDescriptionTypeDef](./type_defs.md#workerconfigurationdescriptiontypedef)
 
+<a id="createconnectorrequestrequesttypedef"></a>
+
 ## CreateConnectorRequestRequestTypeDef
 
 ```python
@@ -278,6 +304,8 @@ Optional fields:
 - `workerConfiguration`:
   [WorkerConfigurationTypeDef](./type_defs.md#workerconfigurationtypedef)
 
+<a id="createconnectorresponsetypedef"></a>
+
 ## CreateConnectorResponseTypeDef
 
 ```python
@@ -291,6 +319,8 @@ Required fields:
 - `connectorState`: [ConnectorStateType](./literals.md#connectorstatetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcustompluginrequestrequesttypedef"></a>
 
 ## CreateCustomPluginRequestRequestTypeDef
 
@@ -310,6 +340,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="createcustompluginresponsetypedef"></a>
+
 ## CreateCustomPluginResponseTypeDef
 
 ```python
@@ -326,6 +358,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createworkerconfigurationrequestrequesttypedef"></a>
+
 ## CreateWorkerConfigurationRequestRequestTypeDef
 
 ```python
@@ -340,6 +374,8 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
+
+<a id="createworkerconfigurationresponsetypedef"></a>
 
 ## CreateWorkerConfigurationResponseTypeDef
 
@@ -357,6 +393,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customplugindescriptiontypedef"></a>
+
 ## CustomPluginDescriptionTypeDef
 
 ```python
@@ -367,6 +405,8 @@ Optional fields:
 
 - `customPluginArn`: `str`
 - `revision`: `int`
+
+<a id="custompluginfiledescriptiontypedef"></a>
 
 ## CustomPluginFileDescriptionTypeDef
 
@@ -379,6 +419,8 @@ Optional fields:
 - `fileMd5`: `str`
 - `fileSize`: `int`
 
+<a id="custompluginlocationdescriptiontypedef"></a>
+
 ## CustomPluginLocationDescriptionTypeDef
 
 ```python
@@ -390,6 +432,8 @@ Optional fields:
 - `s3Location`:
   [S3LocationDescriptionTypeDef](./type_defs.md#s3locationdescriptiontypedef)
 
+<a id="custompluginlocationtypedef"></a>
+
 ## CustomPluginLocationTypeDef
 
 ```python
@@ -399,6 +443,8 @@ from mypy_boto3_kafkaconnect.type_defs import CustomPluginLocationTypeDef
 Required fields:
 
 - `s3Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="custompluginrevisionsummarytypedef"></a>
 
 ## CustomPluginRevisionSummaryTypeDef
 
@@ -418,6 +464,8 @@ Optional fields:
   [CustomPluginLocationDescriptionTypeDef](./type_defs.md#custompluginlocationdescriptiontypedef)
 - `revision`: `int`
 
+<a id="custompluginsummarytypedef"></a>
+
 ## CustomPluginSummaryTypeDef
 
 ```python
@@ -435,6 +483,8 @@ Optional fields:
   [CustomPluginRevisionSummaryTypeDef](./type_defs.md#custompluginrevisionsummarytypedef)
 - `name`: `str`
 
+<a id="customplugintypedef"></a>
+
 ## CustomPluginTypeDef
 
 ```python
@@ -445,6 +495,8 @@ Required fields:
 
 - `customPluginArn`: `str`
 - `revision`: `int`
+
+<a id="deleteconnectorrequestrequesttypedef"></a>
 
 ## DeleteConnectorRequestRequestTypeDef
 
@@ -460,6 +512,8 @@ Optional fields:
 
 - `currentVersion`: `str`
 
+<a id="deleteconnectorresponsetypedef"></a>
+
 ## DeleteConnectorResponseTypeDef
 
 ```python
@@ -473,6 +527,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconnectorrequestrequesttypedef"></a>
+
 ## DescribeConnectorRequestRequestTypeDef
 
 ```python
@@ -482,6 +538,8 @@ from mypy_boto3_kafkaconnect.type_defs import DescribeConnectorRequestRequestTyp
 Required fields:
 
 - `connectorArn`: `str`
+
+<a id="describeconnectorresponsetypedef"></a>
 
 ## DescribeConnectorResponseTypeDef
 
@@ -517,6 +575,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecustompluginrequestrequesttypedef"></a>
+
 ## DescribeCustomPluginRequestRequestTypeDef
 
 ```python
@@ -526,6 +586,8 @@ from mypy_boto3_kafkaconnect.type_defs import DescribeCustomPluginRequestRequest
 Required fields:
 
 - `customPluginArn`: `str`
+
+<a id="describecustompluginresponsetypedef"></a>
 
 ## DescribeCustomPluginResponseTypeDef
 
@@ -546,6 +608,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworkerconfigurationrequestrequesttypedef"></a>
+
 ## DescribeWorkerConfigurationRequestRequestTypeDef
 
 ```python
@@ -555,6 +619,8 @@ from mypy_boto3_kafkaconnect.type_defs import DescribeWorkerConfigurationRequest
 Required fields:
 
 - `workerConfigurationArn`: `str`
+
+<a id="describeworkerconfigurationresponsetypedef"></a>
 
 ## DescribeWorkerConfigurationResponseTypeDef
 
@@ -573,6 +639,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="firehoselogdeliverydescriptiontypedef"></a>
+
 ## FirehoseLogDeliveryDescriptionTypeDef
 
 ```python
@@ -583,6 +651,8 @@ Optional fields:
 
 - `deliveryStream`: `str`
 - `enabled`: `bool`
+
+<a id="firehoselogdeliverytypedef"></a>
 
 ## FirehoseLogDeliveryTypeDef
 
@@ -598,6 +668,8 @@ Optional fields:
 
 - `deliveryStream`: `str`
 
+<a id="kafkaclusterclientauthenticationdescriptiontypedef"></a>
+
 ## KafkaClusterClientAuthenticationDescriptionTypeDef
 
 ```python
@@ -608,6 +680,8 @@ Optional fields:
 
 - `authenticationType`:
   [KafkaClusterClientAuthenticationTypeType](./literals.md#kafkaclusterclientauthenticationtypetype)
+
+<a id="kafkaclusterclientauthenticationtypedef"></a>
 
 ## KafkaClusterClientAuthenticationTypeDef
 
@@ -620,6 +694,8 @@ Required fields:
 - `authenticationType`:
   [KafkaClusterClientAuthenticationTypeType](./literals.md#kafkaclusterclientauthenticationtypetype)
 
+<a id="kafkaclusterdescriptiontypedef"></a>
+
 ## KafkaClusterDescriptionTypeDef
 
 ```python
@@ -630,6 +706,8 @@ Optional fields:
 
 - `apacheKafkaCluster`:
   [ApacheKafkaClusterDescriptionTypeDef](./type_defs.md#apachekafkaclusterdescriptiontypedef)
+
+<a id="kafkaclusterencryptionintransitdescriptiontypedef"></a>
 
 ## KafkaClusterEncryptionInTransitDescriptionTypeDef
 
@@ -642,6 +720,8 @@ Optional fields:
 - `encryptionType`:
   [KafkaClusterEncryptionInTransitTypeType](./literals.md#kafkaclusterencryptionintransittypetype)
 
+<a id="kafkaclusterencryptionintransittypedef"></a>
+
 ## KafkaClusterEncryptionInTransitTypeDef
 
 ```python
@@ -652,6 +732,8 @@ Required fields:
 
 - `encryptionType`:
   [KafkaClusterEncryptionInTransitTypeType](./literals.md#kafkaclusterencryptionintransittypetype)
+
+<a id="kafkaclustertypedef"></a>
 
 ## KafkaClusterTypeDef
 
@@ -664,6 +746,8 @@ Required fields:
 - `apacheKafkaCluster`:
   [ApacheKafkaClusterTypeDef](./type_defs.md#apachekafkaclustertypedef)
 
+<a id="listconnectorsrequestrequesttypedef"></a>
+
 ## ListConnectorsRequestRequestTypeDef
 
 ```python
@@ -675,6 +759,8 @@ Optional fields:
 - `connectorNamePrefix`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listconnectorsresponsetypedef"></a>
 
 ## ListConnectorsResponseTypeDef
 
@@ -690,6 +776,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcustompluginsrequestrequesttypedef"></a>
+
 ## ListCustomPluginsRequestRequestTypeDef
 
 ```python
@@ -700,6 +788,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcustompluginsresponsetypedef"></a>
 
 ## ListCustomPluginsResponseTypeDef
 
@@ -715,6 +805,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkerconfigurationsrequestrequesttypedef"></a>
+
 ## ListWorkerConfigurationsRequestRequestTypeDef
 
 ```python
@@ -725,6 +817,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listworkerconfigurationsresponsetypedef"></a>
 
 ## ListWorkerConfigurationsResponseTypeDef
 
@@ -740,6 +834,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logdeliverydescriptiontypedef"></a>
+
 ## LogDeliveryDescriptionTypeDef
 
 ```python
@@ -751,6 +847,8 @@ Optional fields:
 - `workerLogDelivery`:
   [WorkerLogDeliveryDescriptionTypeDef](./type_defs.md#workerlogdeliverydescriptiontypedef)
 
+<a id="logdeliverytypedef"></a>
+
 ## LogDeliveryTypeDef
 
 ```python
@@ -761,6 +859,8 @@ Required fields:
 
 - `workerLogDelivery`:
   [WorkerLogDeliveryTypeDef](./type_defs.md#workerlogdeliverytypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -774,6 +874,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="plugindescriptiontypedef"></a>
+
 ## PluginDescriptionTypeDef
 
 ```python
@@ -785,6 +887,8 @@ Optional fields:
 - `customPlugin`:
   [CustomPluginDescriptionTypeDef](./type_defs.md#customplugindescriptiontypedef)
 
+<a id="plugintypedef"></a>
+
 ## PluginTypeDef
 
 ```python
@@ -794,6 +898,8 @@ from mypy_boto3_kafkaconnect.type_defs import PluginTypeDef
 Required fields:
 
 - `customPlugin`: [CustomPluginTypeDef](./type_defs.md#customplugintypedef)
+
+<a id="provisionedcapacitydescriptiontypedef"></a>
 
 ## ProvisionedCapacityDescriptionTypeDef
 
@@ -806,6 +912,8 @@ Optional fields:
 - `mcuCount`: `int`
 - `workerCount`: `int`
 
+<a id="provisionedcapacitytypedef"></a>
+
 ## ProvisionedCapacityTypeDef
 
 ```python
@@ -817,6 +925,8 @@ Required fields:
 - `mcuCount`: `int`
 - `workerCount`: `int`
 
+<a id="provisionedcapacityupdatetypedef"></a>
+
 ## ProvisionedCapacityUpdateTypeDef
 
 ```python
@@ -827,6 +937,8 @@ Required fields:
 
 - `mcuCount`: `int`
 - `workerCount`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -842,6 +954,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3locationdescriptiontypedef"></a>
+
 ## S3LocationDescriptionTypeDef
 
 ```python
@@ -853,6 +967,8 @@ Optional fields:
 - `bucketArn`: `str`
 - `fileKey`: `str`
 - `objectVersion`: `str`
+
+<a id="s3locationtypedef"></a>
 
 ## S3LocationTypeDef
 
@@ -869,6 +985,8 @@ Optional fields:
 
 - `objectVersion`: `str`
 
+<a id="s3logdeliverydescriptiontypedef"></a>
+
 ## S3LogDeliveryDescriptionTypeDef
 
 ```python
@@ -880,6 +998,8 @@ Optional fields:
 - `bucket`: `str`
 - `enabled`: `bool`
 - `prefix`: `str`
+
+<a id="s3logdeliverytypedef"></a>
 
 ## S3LogDeliveryTypeDef
 
@@ -896,6 +1016,8 @@ Optional fields:
 - `bucket`: `str`
 - `prefix`: `str`
 
+<a id="scaleinpolicydescriptiontypedef"></a>
+
 ## ScaleInPolicyDescriptionTypeDef
 
 ```python
@@ -905,6 +1027,8 @@ from mypy_boto3_kafkaconnect.type_defs import ScaleInPolicyDescriptionTypeDef
 Optional fields:
 
 - `cpuUtilizationPercentage`: `int`
+
+<a id="scaleinpolicytypedef"></a>
 
 ## ScaleInPolicyTypeDef
 
@@ -916,6 +1040,8 @@ Required fields:
 
 - `cpuUtilizationPercentage`: `int`
 
+<a id="scaleinpolicyupdatetypedef"></a>
+
 ## ScaleInPolicyUpdateTypeDef
 
 ```python
@@ -925,6 +1051,8 @@ from mypy_boto3_kafkaconnect.type_defs import ScaleInPolicyUpdateTypeDef
 Required fields:
 
 - `cpuUtilizationPercentage`: `int`
+
+<a id="scaleoutpolicydescriptiontypedef"></a>
 
 ## ScaleOutPolicyDescriptionTypeDef
 
@@ -936,6 +1064,8 @@ Optional fields:
 
 - `cpuUtilizationPercentage`: `int`
 
+<a id="scaleoutpolicytypedef"></a>
+
 ## ScaleOutPolicyTypeDef
 
 ```python
@@ -946,6 +1076,8 @@ Required fields:
 
 - `cpuUtilizationPercentage`: `int`
 
+<a id="scaleoutpolicyupdatetypedef"></a>
+
 ## ScaleOutPolicyUpdateTypeDef
 
 ```python
@@ -955,6 +1087,8 @@ from mypy_boto3_kafkaconnect.type_defs import ScaleOutPolicyUpdateTypeDef
 Required fields:
 
 - `cpuUtilizationPercentage`: `int`
+
+<a id="updateconnectorrequestrequesttypedef"></a>
 
 ## UpdateConnectorRequestRequestTypeDef
 
@@ -967,6 +1101,8 @@ Required fields:
 - `capacity`: [CapacityUpdateTypeDef](./type_defs.md#capacityupdatetypedef)
 - `connectorArn`: `str`
 - `currentVersion`: `str`
+
+<a id="updateconnectorresponsetypedef"></a>
 
 ## UpdateConnectorResponseTypeDef
 
@@ -981,6 +1117,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="vpcdescriptiontypedef"></a>
+
 ## VpcDescriptionTypeDef
 
 ```python
@@ -991,6 +1129,8 @@ Optional fields:
 
 - `securityGroups`: `List`\[`str`\]
 - `subnets`: `List`\[`str`\]
+
+<a id="vpctypedef"></a>
 
 ## VpcTypeDef
 
@@ -1006,6 +1146,8 @@ Optional fields:
 
 - `securityGroups`: `Sequence`\[`str`\]
 
+<a id="workerconfigurationdescriptiontypedef"></a>
+
 ## WorkerConfigurationDescriptionTypeDef
 
 ```python
@@ -1016,6 +1158,8 @@ Optional fields:
 
 - `revision`: `int`
 - `workerConfigurationArn`: `str`
+
+<a id="workerconfigurationrevisiondescriptiontypedef"></a>
 
 ## WorkerConfigurationRevisionDescriptionTypeDef
 
@@ -1030,6 +1174,8 @@ Optional fields:
 - `propertiesFileContent`: `str`
 - `revision`: `int`
 
+<a id="workerconfigurationrevisionsummarytypedef"></a>
+
 ## WorkerConfigurationRevisionSummaryTypeDef
 
 ```python
@@ -1041,6 +1187,8 @@ Optional fields:
 - `creationTime`: `datetime`
 - `description`: `str`
 - `revision`: `int`
+
+<a id="workerconfigurationsummarytypedef"></a>
 
 ## WorkerConfigurationSummaryTypeDef
 
@@ -1057,6 +1205,8 @@ Optional fields:
 - `name`: `str`
 - `workerConfigurationArn`: `str`
 
+<a id="workerconfigurationtypedef"></a>
+
 ## WorkerConfigurationTypeDef
 
 ```python
@@ -1067,6 +1217,8 @@ Required fields:
 
 - `revision`: `int`
 - `workerConfigurationArn`: `str`
+
+<a id="workerlogdeliverydescriptiontypedef"></a>
 
 ## WorkerLogDeliveryDescriptionTypeDef
 
@@ -1082,6 +1234,8 @@ Optional fields:
   [FirehoseLogDeliveryDescriptionTypeDef](./type_defs.md#firehoselogdeliverydescriptiontypedef)
 - `s3`:
   [S3LogDeliveryDescriptionTypeDef](./type_defs.md#s3logdeliverydescriptiontypedef)
+
+<a id="workerlogdeliverytypedef"></a>
 
 ## WorkerLogDeliveryTypeDef
 

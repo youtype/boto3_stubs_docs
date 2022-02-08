@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-elasticache-module"></a>
+
 # Typed dictionaries for boto3 ElastiCache module
 
 > [Index](..) > [ElastiCache](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
-[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [Typed dictionaries for boto3 ElastiCache module](#typed-dictionaries-for-boto3-elasticache-module)
   - [AddTagsToResourceMessageRequestTypeDef](#addtagstoresourcemessagerequesttypedef)
@@ -194,6 +196,8 @@ type annotations stubs module
   - [UserTypeDef](#usertypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addtagstoresourcemessagerequesttypedef"></a>
+
 ## AddTagsToResourceMessageRequestTypeDef
 
 ```python
@@ -204,6 +208,8 @@ Required fields:
 
 - `ResourceName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="allowednodetypemodificationsmessagetypedef"></a>
 
 ## AllowedNodeTypeModificationsMessageTypeDef
 
@@ -218,6 +224,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="authenticationtypedef"></a>
+
 ## AuthenticationTypeDef
 
 ```python
@@ -228,6 +236,8 @@ Optional fields:
 
 - `Type`: [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - `PasswordCount`: `int`
+
+<a id="authorizecachesecuritygroupingressmessagerequesttypedef"></a>
 
 ## AuthorizeCacheSecurityGroupIngressMessageRequestTypeDef
 
@@ -240,6 +250,8 @@ Required fields:
 - `CacheSecurityGroupName`: `str`
 - `EC2SecurityGroupName`: `str`
 - `EC2SecurityGroupOwnerId`: `str`
+
+<a id="authorizecachesecuritygroupingressresulttypedef"></a>
 
 ## AuthorizeCacheSecurityGroupIngressResultTypeDef
 
@@ -254,6 +266,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="availabilityzonetypedef"></a>
+
 ## AvailabilityZoneTypeDef
 
 ```python
@@ -263,6 +277,8 @@ from mypy_boto3_elasticache.type_defs import AvailabilityZoneTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="batchapplyupdateactionmessagerequesttypedef"></a>
 
 ## BatchApplyUpdateActionMessageRequestTypeDef
 
@@ -279,6 +295,8 @@ Optional fields:
 - `ReplicationGroupIds`: `Sequence`\[`str`\]
 - `CacheClusterIds`: `Sequence`\[`str`\]
 
+<a id="batchstopupdateactionmessagerequesttypedef"></a>
+
 ## BatchStopUpdateActionMessageRequestTypeDef
 
 ```python
@@ -294,6 +312,8 @@ Optional fields:
 - `ReplicationGroupIds`: `Sequence`\[`str`\]
 - `CacheClusterIds`: `Sequence`\[`str`\]
 
+<a id="cacheclustermessagetypedef"></a>
+
 ## CacheClusterMessageTypeDef
 
 ```python
@@ -307,6 +327,8 @@ Required fields:
   `List`\[[CacheClusterTypeDef](./type_defs.md#cacheclustertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cacheclustertypedef"></a>
 
 ## CacheClusterTypeDef
 
@@ -353,6 +375,8 @@ Optional fields:
 - `LogDeliveryConfigurations`:
   `List`\[[LogDeliveryConfigurationTypeDef](./type_defs.md#logdeliveryconfigurationtypedef)\]
 
+<a id="cacheengineversionmessagetypedef"></a>
+
 ## CacheEngineVersionMessageTypeDef
 
 ```python
@@ -367,6 +391,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cacheengineversiontypedef"></a>
+
 ## CacheEngineVersionTypeDef
 
 ```python
@@ -380,6 +406,8 @@ Optional fields:
 - `CacheParameterGroupFamily`: `str`
 - `CacheEngineDescription`: `str`
 - `CacheEngineVersionDescription`: `str`
+
+<a id="cachenodetypedef"></a>
 
 ## CacheNodeTypeDef
 
@@ -397,6 +425,8 @@ Optional fields:
 - `SourceCacheNodeId`: `str`
 - `CustomerAvailabilityZone`: `str`
 - `CustomerOutpostArn`: `str`
+
+<a id="cachenodetypespecificparametertypedef"></a>
 
 ## CacheNodeTypeSpecificParameterTypeDef
 
@@ -417,6 +447,8 @@ Optional fields:
   `List`\[[CacheNodeTypeSpecificValueTypeDef](./type_defs.md#cachenodetypespecificvaluetypedef)\]
 - `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
+<a id="cachenodetypespecificvaluetypedef"></a>
+
 ## CacheNodeTypeSpecificValueTypeDef
 
 ```python
@@ -427,6 +459,8 @@ Optional fields:
 
 - `CacheNodeType`: `str`
 - `Value`: `str`
+
+<a id="cachenodeupdatestatustypedef"></a>
 
 ## CacheNodeUpdateStatusTypeDef
 
@@ -447,6 +481,8 @@ Optional fields:
 - `NodeUpdateInitiatedDate`: `datetime`
 - `NodeUpdateStatusModifiedDate`: `datetime`
 
+<a id="cacheparametergroupdetailstypedef"></a>
+
 ## CacheParameterGroupDetailsTypeDef
 
 ```python
@@ -462,6 +498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cacheparametergroupnamemessagetypedef"></a>
+
 ## CacheParameterGroupNameMessageTypeDef
 
 ```python
@@ -474,6 +512,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cacheparametergroupstatustypedef"></a>
+
 ## CacheParameterGroupStatusTypeDef
 
 ```python
@@ -485,6 +525,8 @@ Optional fields:
 - `CacheParameterGroupName`: `str`
 - `ParameterApplyStatus`: `str`
 - `CacheNodeIdsToReboot`: `List`\[`str`\]
+
+<a id="cacheparametergrouptypedef"></a>
 
 ## CacheParameterGroupTypeDef
 
@@ -500,6 +542,8 @@ Optional fields:
 - `IsGlobal`: `bool`
 - `ARN`: `str`
 
+<a id="cacheparametergroupsmessagetypedef"></a>
+
 ## CacheParameterGroupsMessageTypeDef
 
 ```python
@@ -514,6 +558,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cachesecuritygroupmembershiptypedef"></a>
+
 ## CacheSecurityGroupMembershipTypeDef
 
 ```python
@@ -524,6 +570,8 @@ Optional fields:
 
 - `CacheSecurityGroupName`: `str`
 - `Status`: `str`
+
+<a id="cachesecuritygroupmessagetypedef"></a>
 
 ## CacheSecurityGroupMessageTypeDef
 
@@ -538,6 +586,8 @@ Required fields:
   `List`\[[CacheSecurityGroupTypeDef](./type_defs.md#cachesecuritygrouptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cachesecuritygrouptypedef"></a>
 
 ## CacheSecurityGroupTypeDef
 
@@ -554,6 +604,8 @@ Optional fields:
   `List`\[[EC2SecurityGroupTypeDef](./type_defs.md#ec2securitygrouptypedef)\]
 - `ARN`: `str`
 
+<a id="cachesubnetgroupmessagetypedef"></a>
+
 ## CacheSubnetGroupMessageTypeDef
 
 ```python
@@ -567,6 +619,8 @@ Required fields:
   `List`\[[CacheSubnetGroupTypeDef](./type_defs.md#cachesubnetgrouptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cachesubnetgrouptypedef"></a>
 
 ## CacheSubnetGroupTypeDef
 
@@ -582,6 +636,8 @@ Optional fields:
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `ARN`: `str`
 
+<a id="cloudwatchlogsdestinationdetailstypedef"></a>
+
 ## CloudWatchLogsDestinationDetailsTypeDef
 
 ```python
@@ -591,6 +647,8 @@ from mypy_boto3_elasticache.type_defs import CloudWatchLogsDestinationDetailsTyp
 Optional fields:
 
 - `LogGroup`: `str`
+
+<a id="completemigrationmessagerequesttypedef"></a>
 
 ## CompleteMigrationMessageRequestTypeDef
 
@@ -606,6 +664,8 @@ Optional fields:
 
 - `Force`: `bool`
 
+<a id="completemigrationresponsetypedef"></a>
+
 ## CompleteMigrationResponseTypeDef
 
 ```python
@@ -618,6 +678,8 @@ Required fields:
   [ReplicationGroupTypeDef](./type_defs.md#replicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="configureshardtypedef"></a>
 
 ## ConfigureShardTypeDef
 
@@ -634,6 +696,8 @@ Optional fields:
 
 - `PreferredAvailabilityZones`: `Sequence`\[`str`\]
 - `PreferredOutpostArns`: `Sequence`\[`str`\]
+
+<a id="copysnapshotmessagerequesttypedef"></a>
 
 ## CopySnapshotMessageRequestTypeDef
 
@@ -652,6 +716,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="copysnapshotresulttypedef"></a>
+
 ## CopySnapshotResultTypeDef
 
 ```python
@@ -663,6 +729,8 @@ Required fields:
 - `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcacheclustermessagerequesttypedef"></a>
 
 ## CreateCacheClusterMessageRequestTypeDef
 
@@ -704,6 +772,8 @@ Optional fields:
 - `LogDeliveryConfigurations`:
   `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
+<a id="createcacheclusterresulttypedef"></a>
+
 ## CreateCacheClusterResultTypeDef
 
 ```python
@@ -715,6 +785,8 @@ Required fields:
 - `CacheCluster`: [CacheClusterTypeDef](./type_defs.md#cacheclustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcacheparametergroupmessagerequesttypedef"></a>
 
 ## CreateCacheParameterGroupMessageRequestTypeDef
 
@@ -732,6 +804,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcacheparametergroupresulttypedef"></a>
+
 ## CreateCacheParameterGroupResultTypeDef
 
 ```python
@@ -744,6 +818,8 @@ Required fields:
   [CacheParameterGroupTypeDef](./type_defs.md#cacheparametergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcachesecuritygroupmessagerequesttypedef"></a>
 
 ## CreateCacheSecurityGroupMessageRequestTypeDef
 
@@ -760,6 +836,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcachesecuritygroupresulttypedef"></a>
+
 ## CreateCacheSecurityGroupResultTypeDef
 
 ```python
@@ -772,6 +850,8 @@ Required fields:
   [CacheSecurityGroupTypeDef](./type_defs.md#cachesecuritygrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcachesubnetgroupmessagerequesttypedef"></a>
 
 ## CreateCacheSubnetGroupMessageRequestTypeDef
 
@@ -789,6 +869,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcachesubnetgroupresulttypedef"></a>
+
 ## CreateCacheSubnetGroupResultTypeDef
 
 ```python
@@ -801,6 +883,8 @@ Required fields:
   [CacheSubnetGroupTypeDef](./type_defs.md#cachesubnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createglobalreplicationgroupmessagerequesttypedef"></a>
 
 ## CreateGlobalReplicationGroupMessageRequestTypeDef
 
@@ -817,6 +901,8 @@ Optional fields:
 
 - `GlobalReplicationGroupDescription`: `str`
 
+<a id="createglobalreplicationgroupresulttypedef"></a>
+
 ## CreateGlobalReplicationGroupResultTypeDef
 
 ```python
@@ -829,6 +915,8 @@ Required fields:
   [GlobalReplicationGroupTypeDef](./type_defs.md#globalreplicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreplicationgroupmessagerequesttypedef"></a>
 
 ## CreateReplicationGroupMessageRequestTypeDef
 
@@ -878,6 +966,8 @@ Optional fields:
   `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 - `DataTieringEnabled`: `bool`
 
+<a id="createreplicationgroupresulttypedef"></a>
+
 ## CreateReplicationGroupResultTypeDef
 
 ```python
@@ -890,6 +980,8 @@ Required fields:
   [ReplicationGroupTypeDef](./type_defs.md#replicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsnapshotmessagerequesttypedef"></a>
 
 ## CreateSnapshotMessageRequestTypeDef
 
@@ -908,6 +1000,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createsnapshotresulttypedef"></a>
+
 ## CreateSnapshotResultTypeDef
 
 ```python
@@ -919,6 +1013,8 @@ Required fields:
 - `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createusergroupmessagerequesttypedef"></a>
 
 ## CreateUserGroupMessageRequestTypeDef
 
@@ -935,6 +1031,8 @@ Optional fields:
 
 - `UserIds`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createusermessagerequesttypedef"></a>
 
 ## CreateUserMessageRequestTypeDef
 
@@ -955,6 +1053,8 @@ Optional fields:
 - `NoPasswordRequired`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="customernodeendpointtypedef"></a>
+
 ## CustomerNodeEndpointTypeDef
 
 ```python
@@ -965,6 +1065,8 @@ Optional fields:
 
 - `Address`: `str`
 - `Port`: `int`
+
+<a id="decreasenodegroupsinglobalreplicationgroupmessagerequesttypedef"></a>
 
 ## DecreaseNodeGroupsInGlobalReplicationGroupMessageRequestTypeDef
 
@@ -983,6 +1085,8 @@ Optional fields:
 - `GlobalNodeGroupsToRemove`: `Sequence`\[`str`\]
 - `GlobalNodeGroupsToRetain`: `Sequence`\[`str`\]
 
+<a id="decreasenodegroupsinglobalreplicationgroupresulttypedef"></a>
+
 ## DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef
 
 ```python
@@ -995,6 +1099,8 @@ Required fields:
   [GlobalReplicationGroupTypeDef](./type_defs.md#globalreplicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="decreasereplicacountmessagerequesttypedef"></a>
 
 ## DecreaseReplicaCountMessageRequestTypeDef
 
@@ -1014,6 +1120,8 @@ Optional fields:
   `Sequence`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 - `ReplicasToRemove`: `Sequence`\[`str`\]
 
+<a id="decreasereplicacountresulttypedef"></a>
+
 ## DecreaseReplicaCountResultTypeDef
 
 ```python
@@ -1026,6 +1134,8 @@ Required fields:
   [ReplicationGroupTypeDef](./type_defs.md#replicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletecacheclustermessagerequesttypedef"></a>
 
 ## DeleteCacheClusterMessageRequestTypeDef
 
@@ -1041,6 +1151,8 @@ Optional fields:
 
 - `FinalSnapshotIdentifier`: `str`
 
+<a id="deletecacheclusterresulttypedef"></a>
+
 ## DeleteCacheClusterResultTypeDef
 
 ```python
@@ -1053,6 +1165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecacheparametergroupmessagerequesttypedef"></a>
+
 ## DeleteCacheParameterGroupMessageRequestTypeDef
 
 ```python
@@ -1062,6 +1176,8 @@ from mypy_boto3_elasticache.type_defs import DeleteCacheParameterGroupMessageReq
 Required fields:
 
 - `CacheParameterGroupName`: `str`
+
+<a id="deletecachesecuritygroupmessagerequesttypedef"></a>
 
 ## DeleteCacheSecurityGroupMessageRequestTypeDef
 
@@ -1073,6 +1189,8 @@ Required fields:
 
 - `CacheSecurityGroupName`: `str`
 
+<a id="deletecachesubnetgroupmessagerequesttypedef"></a>
+
 ## DeleteCacheSubnetGroupMessageRequestTypeDef
 
 ```python
@@ -1082,6 +1200,8 @@ from mypy_boto3_elasticache.type_defs import DeleteCacheSubnetGroupMessageReques
 Required fields:
 
 - `CacheSubnetGroupName`: `str`
+
+<a id="deleteglobalreplicationgroupmessagerequesttypedef"></a>
 
 ## DeleteGlobalReplicationGroupMessageRequestTypeDef
 
@@ -1093,6 +1213,8 @@ Required fields:
 
 - `GlobalReplicationGroupId`: `str`
 - `RetainPrimaryReplicationGroup`: `bool`
+
+<a id="deleteglobalreplicationgroupresulttypedef"></a>
 
 ## DeleteGlobalReplicationGroupResultTypeDef
 
@@ -1106,6 +1228,8 @@ Required fields:
   [GlobalReplicationGroupTypeDef](./type_defs.md#globalreplicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletereplicationgroupmessagerequesttypedef"></a>
 
 ## DeleteReplicationGroupMessageRequestTypeDef
 
@@ -1122,6 +1246,8 @@ Optional fields:
 - `RetainPrimaryCluster`: `bool`
 - `FinalSnapshotIdentifier`: `str`
 
+<a id="deletereplicationgroupresulttypedef"></a>
+
 ## DeleteReplicationGroupResultTypeDef
 
 ```python
@@ -1135,6 +1261,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesnapshotmessagerequesttypedef"></a>
+
 ## DeleteSnapshotMessageRequestTypeDef
 
 ```python
@@ -1144,6 +1272,8 @@ from mypy_boto3_elasticache.type_defs import DeleteSnapshotMessageRequestTypeDef
 Required fields:
 
 - `SnapshotName`: `str`
+
+<a id="deletesnapshotresulttypedef"></a>
 
 ## DeleteSnapshotResultTypeDef
 
@@ -1157,6 +1287,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteusergroupmessagerequesttypedef"></a>
+
 ## DeleteUserGroupMessageRequestTypeDef
 
 ```python
@@ -1167,6 +1299,8 @@ Required fields:
 
 - `UserGroupId`: `str`
 
+<a id="deleteusermessagerequesttypedef"></a>
+
 ## DeleteUserMessageRequestTypeDef
 
 ```python
@@ -1176,6 +1310,8 @@ from mypy_boto3_elasticache.type_defs import DeleteUserMessageRequestTypeDef
 Required fields:
 
 - `UserId`: `str`
+
+<a id="describecacheclustersmessagerequesttypedef"></a>
 
 ## DescribeCacheClustersMessageRequestTypeDef
 
@@ -1190,6 +1326,8 @@ Optional fields:
 - `Marker`: `str`
 - `ShowCacheNodeInfo`: `bool`
 - `ShowCacheClustersNotInReplicationGroups`: `bool`
+
+<a id="describecacheengineversionsmessagerequesttypedef"></a>
 
 ## DescribeCacheEngineVersionsMessageRequestTypeDef
 
@@ -1206,6 +1344,8 @@ Optional fields:
 - `Marker`: `str`
 - `DefaultOnly`: `bool`
 
+<a id="describecacheparametergroupsmessagerequesttypedef"></a>
+
 ## DescribeCacheParameterGroupsMessageRequestTypeDef
 
 ```python
@@ -1217,6 +1357,8 @@ Optional fields:
 - `CacheParameterGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describecacheparametersmessagerequesttypedef"></a>
 
 ## DescribeCacheParametersMessageRequestTypeDef
 
@@ -1234,6 +1376,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describecachesecuritygroupsmessagerequesttypedef"></a>
+
 ## DescribeCacheSecurityGroupsMessageRequestTypeDef
 
 ```python
@@ -1246,6 +1390,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describecachesubnetgroupsmessagerequesttypedef"></a>
+
 ## DescribeCacheSubnetGroupsMessageRequestTypeDef
 
 ```python
@@ -1257,6 +1403,8 @@ Optional fields:
 - `CacheSubnetGroupName`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeenginedefaultparametersmessagerequesttypedef"></a>
 
 ## DescribeEngineDefaultParametersMessageRequestTypeDef
 
@@ -1273,6 +1421,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeenginedefaultparametersresulttypedef"></a>
+
 ## DescribeEngineDefaultParametersResultTypeDef
 
 ```python
@@ -1285,6 +1435,8 @@ Required fields:
   [EngineDefaultsTypeDef](./type_defs.md#enginedefaultstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventsmessagerequesttypedef"></a>
 
 ## DescribeEventsMessageRequestTypeDef
 
@@ -1302,6 +1454,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeglobalreplicationgroupsmessagerequesttypedef"></a>
+
 ## DescribeGlobalReplicationGroupsMessageRequestTypeDef
 
 ```python
@@ -1314,6 +1468,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 - `ShowMemberInfo`: `bool`
+
+<a id="describeglobalreplicationgroupsresulttypedef"></a>
 
 ## DescribeGlobalReplicationGroupsResultTypeDef
 
@@ -1329,6 +1485,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationgroupsmessagerequesttypedef"></a>
+
 ## DescribeReplicationGroupsMessageRequestTypeDef
 
 ```python
@@ -1340,6 +1498,8 @@ Optional fields:
 - `ReplicationGroupId`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describereservedcachenodesmessagerequesttypedef"></a>
 
 ## DescribeReservedCacheNodesMessageRequestTypeDef
 
@@ -1358,6 +1518,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describereservedcachenodesofferingsmessagerequesttypedef"></a>
+
 ## DescribeReservedCacheNodesOfferingsMessageRequestTypeDef
 
 ```python
@@ -1374,6 +1536,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeserviceupdatesmessagerequesttypedef"></a>
+
 ## DescribeServiceUpdatesMessageRequestTypeDef
 
 ```python
@@ -1388,6 +1552,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describesnapshotslistmessagetypedef"></a>
+
 ## DescribeSnapshotsListMessageTypeDef
 
 ```python
@@ -1400,6 +1566,8 @@ Required fields:
 - `Snapshots`: `List`\[[SnapshotTypeDef](./type_defs.md#snapshottypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesnapshotsmessagerequesttypedef"></a>
 
 ## DescribeSnapshotsMessageRequestTypeDef
 
@@ -1416,6 +1584,8 @@ Optional fields:
 - `Marker`: `str`
 - `MaxRecords`: `int`
 - `ShowNodeGroupConfig`: `bool`
+
+<a id="describeupdateactionsmessagerequesttypedef"></a>
 
 ## DescribeUpdateActionsMessageRequestTypeDef
 
@@ -1439,6 +1609,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeusergroupsmessagerequesttypedef"></a>
+
 ## DescribeUserGroupsMessageRequestTypeDef
 
 ```python
@@ -1450,6 +1622,8 @@ Optional fields:
 - `UserGroupId`: `str`
 - `MaxRecords`: `int`
 - `Marker`: `str`
+
+<a id="describeusergroupsresulttypedef"></a>
 
 ## DescribeUserGroupsResultTypeDef
 
@@ -1463,6 +1637,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeusersmessagerequesttypedef"></a>
 
 ## DescribeUsersMessageRequestTypeDef
 
@@ -1478,6 +1654,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `Marker`: `str`
 
+<a id="describeusersresulttypedef"></a>
+
 ## DescribeUsersResultTypeDef
 
 ```python
@@ -1490,6 +1668,8 @@ Required fields:
 - `Marker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationdetailstypedef"></a>
 
 ## DestinationDetailsTypeDef
 
@@ -1504,6 +1684,8 @@ Optional fields:
 - `KinesisFirehoseDetails`:
   [KinesisFirehoseDestinationDetailsTypeDef](./type_defs.md#kinesisfirehosedestinationdetailstypedef)
 
+<a id="disassociateglobalreplicationgroupmessagerequesttypedef"></a>
+
 ## DisassociateGlobalReplicationGroupMessageRequestTypeDef
 
 ```python
@@ -1515,6 +1697,8 @@ Required fields:
 - `GlobalReplicationGroupId`: `str`
 - `ReplicationGroupId`: `str`
 - `ReplicationGroupRegion`: `str`
+
+<a id="disassociateglobalreplicationgroupresulttypedef"></a>
 
 ## DisassociateGlobalReplicationGroupResultTypeDef
 
@@ -1529,6 +1713,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ec2securitygrouptypedef"></a>
+
 ## EC2SecurityGroupTypeDef
 
 ```python
@@ -1541,6 +1727,8 @@ Optional fields:
 - `EC2SecurityGroupName`: `str`
 - `EC2SecurityGroupOwnerId`: `str`
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -1551,6 +1739,8 @@ Optional fields:
 
 - `Address`: `str`
 - `Port`: `int`
+
+<a id="enginedefaultstypedef"></a>
 
 ## EngineDefaultsTypeDef
 
@@ -1566,6 +1756,8 @@ Optional fields:
 - `CacheNodeTypeSpecificParameters`:
   `List`\[[CacheNodeTypeSpecificParameterTypeDef](./type_defs.md#cachenodetypespecificparametertypedef)\]
 
+<a id="eventtypedef"></a>
+
 ## EventTypeDef
 
 ```python
@@ -1578,6 +1770,8 @@ Optional fields:
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `Date`: `datetime`
+
+<a id="eventsmessagetypedef"></a>
 
 ## EventsMessageTypeDef
 
@@ -1592,6 +1786,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="failoverglobalreplicationgroupmessagerequesttypedef"></a>
+
 ## FailoverGlobalReplicationGroupMessageRequestTypeDef
 
 ```python
@@ -1603,6 +1799,8 @@ Required fields:
 - `GlobalReplicationGroupId`: `str`
 - `PrimaryRegion`: `str`
 - `PrimaryReplicationGroupId`: `str`
+
+<a id="failoverglobalreplicationgroupresulttypedef"></a>
 
 ## FailoverGlobalReplicationGroupResultTypeDef
 
@@ -1617,6 +1815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1627,6 +1827,8 @@ Required fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="globalnodegrouptypedef"></a>
 
 ## GlobalNodeGroupTypeDef
 
@@ -1639,6 +1841,8 @@ Optional fields:
 - `GlobalNodeGroupId`: `str`
 - `Slots`: `str`
 
+<a id="globalreplicationgroupinfotypedef"></a>
+
 ## GlobalReplicationGroupInfoTypeDef
 
 ```python
@@ -1649,6 +1853,8 @@ Optional fields:
 
 - `GlobalReplicationGroupId`: `str`
 - `GlobalReplicationGroupMemberRole`: `str`
+
+<a id="globalreplicationgroupmembertypedef"></a>
 
 ## GlobalReplicationGroupMemberTypeDef
 
@@ -1664,6 +1870,8 @@ Optional fields:
 - `AutomaticFailover`:
   [AutomaticFailoverStatusType](./literals.md#automaticfailoverstatustype)
 - `Status`: `str`
+
+<a id="globalreplicationgrouptypedef"></a>
 
 ## GlobalReplicationGroupTypeDef
 
@@ -1689,6 +1897,8 @@ Optional fields:
 - `AtRestEncryptionEnabled`: `bool`
 - `ARN`: `str`
 
+<a id="increasenodegroupsinglobalreplicationgroupmessagerequesttypedef"></a>
+
 ## IncreaseNodeGroupsInGlobalReplicationGroupMessageRequestTypeDef
 
 ```python
@@ -1706,6 +1916,8 @@ Optional fields:
 - `RegionalConfigurations`:
   `Sequence`\[[RegionalConfigurationTypeDef](./type_defs.md#regionalconfigurationtypedef)\]
 
+<a id="increasenodegroupsinglobalreplicationgroupresulttypedef"></a>
+
 ## IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef
 
 ```python
@@ -1718,6 +1930,8 @@ Required fields:
   [GlobalReplicationGroupTypeDef](./type_defs.md#globalreplicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="increasereplicacountmessagerequesttypedef"></a>
 
 ## IncreaseReplicaCountMessageRequestTypeDef
 
@@ -1736,6 +1950,8 @@ Optional fields:
 - `ReplicaConfiguration`:
   `Sequence`\[[ConfigureShardTypeDef](./type_defs.md#configureshardtypedef)\]
 
+<a id="increasereplicacountresulttypedef"></a>
+
 ## IncreaseReplicaCountResultTypeDef
 
 ```python
@@ -1749,6 +1965,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="kinesisfirehosedestinationdetailstypedef"></a>
+
 ## KinesisFirehoseDestinationDetailsTypeDef
 
 ```python
@@ -1758,6 +1976,8 @@ from mypy_boto3_elasticache.type_defs import KinesisFirehoseDestinationDetailsTy
 Optional fields:
 
 - `DeliveryStream`: `str`
+
+<a id="listallowednodetypemodificationsmessagerequesttypedef"></a>
 
 ## ListAllowedNodeTypeModificationsMessageRequestTypeDef
 
@@ -1770,6 +1990,8 @@ Optional fields:
 - `CacheClusterId`: `str`
 - `ReplicationGroupId`: `str`
 
+<a id="listtagsforresourcemessagerequesttypedef"></a>
+
 ## ListTagsForResourceMessageRequestTypeDef
 
 ```python
@@ -1779,6 +2001,8 @@ from mypy_boto3_elasticache.type_defs import ListTagsForResourceMessageRequestTy
 Required fields:
 
 - `ResourceName`: `str`
+
+<a id="logdeliveryconfigurationrequesttypedef"></a>
 
 ## LogDeliveryConfigurationRequestTypeDef
 
@@ -1794,6 +2018,8 @@ Optional fields:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
 - `LogFormat`: [LogFormatType](./literals.md#logformattype)
 - `Enabled`: `bool`
+
+<a id="logdeliveryconfigurationtypedef"></a>
 
 ## LogDeliveryConfigurationTypeDef
 
@@ -1811,6 +2037,8 @@ Optional fields:
 - `Status`:
   [LogDeliveryConfigurationStatusType](./literals.md#logdeliveryconfigurationstatustype)
 - `Message`: `str`
+
+<a id="modifycacheclustermessagerequesttypedef"></a>
 
 ## ModifyCacheClusterMessageRequestTypeDef
 
@@ -1846,6 +2074,8 @@ Optional fields:
 - `LogDeliveryConfigurations`:
   `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
+<a id="modifycacheclusterresulttypedef"></a>
+
 ## ModifyCacheClusterResultTypeDef
 
 ```python
@@ -1858,6 +2088,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="modifycacheparametergroupmessagerequesttypedef"></a>
+
 ## ModifyCacheParameterGroupMessageRequestTypeDef
 
 ```python
@@ -1869,6 +2101,8 @@ Required fields:
 - `CacheParameterGroupName`: `str`
 - `ParameterNameValues`:
   `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
+
+<a id="modifycachesubnetgroupmessagerequesttypedef"></a>
 
 ## ModifyCacheSubnetGroupMessageRequestTypeDef
 
@@ -1885,6 +2119,8 @@ Optional fields:
 - `CacheSubnetGroupDescription`: `str`
 - `SubnetIds`: `Sequence`\[`str`\]
 
+<a id="modifycachesubnetgroupresulttypedef"></a>
+
 ## ModifyCacheSubnetGroupResultTypeDef
 
 ```python
@@ -1897,6 +2133,8 @@ Required fields:
   [CacheSubnetGroupTypeDef](./type_defs.md#cachesubnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyglobalreplicationgroupmessagerequesttypedef"></a>
 
 ## ModifyGlobalReplicationGroupMessageRequestTypeDef
 
@@ -1917,6 +2155,8 @@ Optional fields:
 - `GlobalReplicationGroupDescription`: `str`
 - `AutomaticFailoverEnabled`: `bool`
 
+<a id="modifyglobalreplicationgroupresulttypedef"></a>
+
 ## ModifyGlobalReplicationGroupResultTypeDef
 
 ```python
@@ -1929,6 +2169,8 @@ Required fields:
   [GlobalReplicationGroupTypeDef](./type_defs.md#globalreplicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyreplicationgroupmessagerequesttypedef"></a>
 
 ## ModifyReplicationGroupMessageRequestTypeDef
 
@@ -1969,6 +2211,8 @@ Optional fields:
 - `LogDeliveryConfigurations`:
   `Sequence`\[[LogDeliveryConfigurationRequestTypeDef](./type_defs.md#logdeliveryconfigurationrequesttypedef)\]
 
+<a id="modifyreplicationgroupresulttypedef"></a>
+
 ## ModifyReplicationGroupResultTypeDef
 
 ```python
@@ -1981,6 +2225,8 @@ Required fields:
   [ReplicationGroupTypeDef](./type_defs.md#replicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyreplicationgroupshardconfigurationmessagerequesttypedef"></a>
 
 ## ModifyReplicationGroupShardConfigurationMessageRequestTypeDef
 
@@ -2001,6 +2247,8 @@ Optional fields:
 - `NodeGroupsToRemove`: `Sequence`\[`str`\]
 - `NodeGroupsToRetain`: `Sequence`\[`str`\]
 
+<a id="modifyreplicationgroupshardconfigurationresulttypedef"></a>
+
 ## ModifyReplicationGroupShardConfigurationResultTypeDef
 
 ```python
@@ -2013,6 +2261,8 @@ Required fields:
   [ReplicationGroupTypeDef](./type_defs.md#replicationgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyusergroupmessagerequesttypedef"></a>
 
 ## ModifyUserGroupMessageRequestTypeDef
 
@@ -2028,6 +2278,8 @@ Optional fields:
 
 - `UserIdsToAdd`: `Sequence`\[`str`\]
 - `UserIdsToRemove`: `Sequence`\[`str`\]
+
+<a id="modifyusermessagerequesttypedef"></a>
 
 ## ModifyUserMessageRequestTypeDef
 
@@ -2046,6 +2298,8 @@ Optional fields:
 - `Passwords`: `Sequence`\[`str`\]
 - `NoPasswordRequired`: `bool`
 
+<a id="nodegroupconfigurationtypedef"></a>
+
 ## NodeGroupConfigurationTypeDef
 
 ```python
@@ -2062,6 +2316,8 @@ Optional fields:
 - `PrimaryOutpostArn`: `str`
 - `ReplicaOutpostArns`: `List`\[`str`\]
 
+<a id="nodegroupmembertypedef"></a>
+
 ## NodeGroupMemberTypeDef
 
 ```python
@@ -2076,6 +2332,8 @@ Optional fields:
 - `PreferredAvailabilityZone`: `str`
 - `PreferredOutpostArn`: `str`
 - `CurrentRole`: `str`
+
+<a id="nodegroupmemberupdatestatustypedef"></a>
 
 ## NodeGroupMemberUpdateStatusTypeDef
 
@@ -2097,6 +2355,8 @@ Optional fields:
 - `NodeUpdateInitiatedDate`: `datetime`
 - `NodeUpdateStatusModifiedDate`: `datetime`
 
+<a id="nodegrouptypedef"></a>
+
 ## NodeGroupTypeDef
 
 ```python
@@ -2113,6 +2373,8 @@ Optional fields:
 - `NodeGroupMembers`:
   `List`\[[NodeGroupMemberTypeDef](./type_defs.md#nodegroupmembertypedef)\]
 
+<a id="nodegroupupdatestatustypedef"></a>
+
 ## NodeGroupUpdateStatusTypeDef
 
 ```python
@@ -2124,6 +2386,8 @@ Optional fields:
 - `NodeGroupId`: `str`
 - `NodeGroupMemberUpdateStatus`:
   `List`\[[NodeGroupMemberUpdateStatusTypeDef](./type_defs.md#nodegroupmemberupdatestatustypedef)\]
+
+<a id="nodesnapshottypedef"></a>
 
 ## NodeSnapshotTypeDef
 
@@ -2142,6 +2406,8 @@ Optional fields:
 - `CacheNodeCreateTime`: `datetime`
 - `SnapshotCreateTime`: `datetime`
 
+<a id="notificationconfigurationtypedef"></a>
+
 ## NotificationConfigurationTypeDef
 
 ```python
@@ -2152,6 +2418,8 @@ Optional fields:
 
 - `TopicArn`: `str`
 - `TopicStatus`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -2165,6 +2433,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parameternamevaluetypedef"></a>
+
 ## ParameterNameValueTypeDef
 
 ```python
@@ -2175,6 +2445,8 @@ Optional fields:
 
 - `ParameterName`: `str`
 - `ParameterValue`: `str`
+
+<a id="parametertypedef"></a>
 
 ## ParameterTypeDef
 
@@ -2194,6 +2466,8 @@ Optional fields:
 - `MinimumEngineVersion`: `str`
 - `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
+<a id="pendinglogdeliveryconfigurationtypedef"></a>
+
 ## PendingLogDeliveryConfigurationTypeDef
 
 ```python
@@ -2207,6 +2481,8 @@ Optional fields:
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
 - `LogFormat`: [LogFormatType](./literals.md#logformattype)
+
+<a id="pendingmodifiedvaluestypedef"></a>
 
 ## PendingModifiedValuesTypeDef
 
@@ -2225,6 +2501,8 @@ Optional fields:
 - `LogDeliveryConfigurations`:
   `List`\[[PendingLogDeliveryConfigurationTypeDef](./type_defs.md#pendinglogdeliveryconfigurationtypedef)\]
 
+<a id="processedupdateactiontypedef"></a>
+
 ## ProcessedUpdateActionTypeDef
 
 ```python
@@ -2238,6 +2516,8 @@ Optional fields:
 - `ServiceUpdateName`: `str`
 - `UpdateActionStatus`:
   [UpdateActionStatusType](./literals.md#updateactionstatustype)
+
+<a id="purchasereservedcachenodesofferingmessagerequesttypedef"></a>
 
 ## PurchaseReservedCacheNodesOfferingMessageRequestTypeDef
 
@@ -2255,6 +2535,8 @@ Optional fields:
 - `CacheNodeCount`: `int`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="purchasereservedcachenodesofferingresulttypedef"></a>
+
 ## PurchaseReservedCacheNodesOfferingResultTypeDef
 
 ```python
@@ -2268,6 +2550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rebalanceslotsinglobalreplicationgroupmessagerequesttypedef"></a>
+
 ## RebalanceSlotsInGlobalReplicationGroupMessageRequestTypeDef
 
 ```python
@@ -2278,6 +2562,8 @@ Required fields:
 
 - `GlobalReplicationGroupId`: `str`
 - `ApplyImmediately`: `bool`
+
+<a id="rebalanceslotsinglobalreplicationgroupresulttypedef"></a>
 
 ## RebalanceSlotsInGlobalReplicationGroupResultTypeDef
 
@@ -2292,6 +2578,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="rebootcacheclustermessagerequesttypedef"></a>
+
 ## RebootCacheClusterMessageRequestTypeDef
 
 ```python
@@ -2302,6 +2590,8 @@ Required fields:
 
 - `CacheClusterId`: `str`
 - `CacheNodeIdsToReboot`: `Sequence`\[`str`\]
+
+<a id="rebootcacheclusterresulttypedef"></a>
 
 ## RebootCacheClusterResultTypeDef
 
@@ -2315,6 +2605,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="recurringchargetypedef"></a>
+
 ## RecurringChargeTypeDef
 
 ```python
@@ -2325,6 +2617,8 @@ Optional fields:
 
 - `RecurringChargeAmount`: `float`
 - `RecurringChargeFrequency`: `str`
+
+<a id="regionalconfigurationtypedef"></a>
 
 ## RegionalConfigurationTypeDef
 
@@ -2339,6 +2633,8 @@ Required fields:
 - `ReshardingConfiguration`:
   `Sequence`\[[ReshardingConfigurationTypeDef](./type_defs.md#reshardingconfigurationtypedef)\]
 
+<a id="removetagsfromresourcemessagerequesttypedef"></a>
+
 ## RemoveTagsFromResourceMessageRequestTypeDef
 
 ```python
@@ -2349,6 +2645,8 @@ Required fields:
 
 - `ResourceName`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="replicationgroupmessagetypedef"></a>
 
 ## ReplicationGroupMessageTypeDef
 
@@ -2363,6 +2661,8 @@ Required fields:
   `List`\[[ReplicationGroupTypeDef](./type_defs.md#replicationgrouptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="replicationgrouppendingmodifiedvaluestypedef"></a>
 
 ## ReplicationGroupPendingModifiedValuesTypeDef
 
@@ -2383,6 +2683,8 @@ Optional fields:
   [UserGroupsUpdateStatusTypeDef](./type_defs.md#usergroupsupdatestatustypedef)
 - `LogDeliveryConfigurations`:
   `List`\[[PendingLogDeliveryConfigurationTypeDef](./type_defs.md#pendinglogdeliveryconfigurationtypedef)\]
+
+<a id="replicationgrouptypedef"></a>
 
 ## ReplicationGroupTypeDef
 
@@ -2423,6 +2725,8 @@ Optional fields:
 - `ReplicationGroupCreateTime`: `datetime`
 - `DataTiering`: [DataTieringStatusType](./literals.md#datatieringstatustype)
 
+<a id="reservedcachenodemessagetypedef"></a>
+
 ## ReservedCacheNodeMessageTypeDef
 
 ```python
@@ -2436,6 +2740,8 @@ Required fields:
   `List`\[[ReservedCacheNodeTypeDef](./type_defs.md#reservedcachenodetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="reservedcachenodetypedef"></a>
 
 ## ReservedCacheNodeTypeDef
 
@@ -2460,6 +2766,8 @@ Optional fields:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 - `ReservationARN`: `str`
 
+<a id="reservedcachenodesofferingmessagetypedef"></a>
+
 ## ReservedCacheNodesOfferingMessageTypeDef
 
 ```python
@@ -2473,6 +2781,8 @@ Required fields:
   `List`\[[ReservedCacheNodesOfferingTypeDef](./type_defs.md#reservedcachenodesofferingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="reservedcachenodesofferingtypedef"></a>
 
 ## ReservedCacheNodesOfferingTypeDef
 
@@ -2492,6 +2802,8 @@ Optional fields:
 - `RecurringCharges`:
   `List`\[[RecurringChargeTypeDef](./type_defs.md#recurringchargetypedef)\]
 
+<a id="resetcacheparametergroupmessagerequesttypedef"></a>
+
 ## ResetCacheParameterGroupMessageRequestTypeDef
 
 ```python
@@ -2508,6 +2820,8 @@ Optional fields:
 - `ParameterNameValues`:
   `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
+<a id="reshardingconfigurationtypedef"></a>
+
 ## ReshardingConfigurationTypeDef
 
 ```python
@@ -2519,6 +2833,8 @@ Optional fields:
 - `NodeGroupId`: `str`
 - `PreferredAvailabilityZones`: `Sequence`\[`str`\]
 
+<a id="reshardingstatustypedef"></a>
+
 ## ReshardingStatusTypeDef
 
 ```python
@@ -2528,6 +2844,8 @@ from mypy_boto3_elasticache.type_defs import ReshardingStatusTypeDef
 Optional fields:
 
 - `SlotMigration`: [SlotMigrationTypeDef](./type_defs.md#slotmigrationtypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2543,6 +2861,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="revokecachesecuritygroupingressmessagerequesttypedef"></a>
+
 ## RevokeCacheSecurityGroupIngressMessageRequestTypeDef
 
 ```python
@@ -2554,6 +2874,8 @@ Required fields:
 - `CacheSecurityGroupName`: `str`
 - `EC2SecurityGroupName`: `str`
 - `EC2SecurityGroupOwnerId`: `str`
+
+<a id="revokecachesecuritygroupingressresulttypedef"></a>
 
 ## RevokeCacheSecurityGroupIngressResultTypeDef
 
@@ -2568,6 +2890,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="securitygroupmembershiptypedef"></a>
+
 ## SecurityGroupMembershipTypeDef
 
 ```python
@@ -2578,6 +2902,8 @@ Optional fields:
 
 - `SecurityGroupId`: `str`
 - `Status`: `str`
+
+<a id="serviceupdatetypedef"></a>
 
 ## ServiceUpdateTypeDef
 
@@ -2603,6 +2929,8 @@ Optional fields:
 - `AutoUpdateAfterRecommendedApplyByDate`: `bool`
 - `EstimatedUpdateTime`: `str`
 
+<a id="serviceupdatesmessagetypedef"></a>
+
 ## ServiceUpdatesMessageTypeDef
 
 ```python
@@ -2617,6 +2945,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="slotmigrationtypedef"></a>
+
 ## SlotMigrationTypeDef
 
 ```python
@@ -2626,6 +2956,8 @@ from mypy_boto3_elasticache.type_defs import SlotMigrationTypeDef
 Optional fields:
 
 - `ProgressPercentage`: `float`
+
+<a id="snapshottypedef"></a>
 
 ## SnapshotTypeDef
 
@@ -2666,6 +2998,8 @@ Optional fields:
 - `ARN`: `str`
 - `DataTiering`: [DataTieringStatusType](./literals.md#datatieringstatustype)
 
+<a id="startmigrationmessagerequesttypedef"></a>
+
 ## StartMigrationMessageRequestTypeDef
 
 ```python
@@ -2677,6 +3011,8 @@ Required fields:
 - `ReplicationGroupId`: `str`
 - `CustomerNodeEndpointList`:
   `Sequence`\[[CustomerNodeEndpointTypeDef](./type_defs.md#customernodeendpointtypedef)\]
+
+<a id="startmigrationresponsetypedef"></a>
 
 ## StartMigrationResponseTypeDef
 
@@ -2691,6 +3027,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="subnetoutposttypedef"></a>
+
 ## SubnetOutpostTypeDef
 
 ```python
@@ -2700,6 +3038,8 @@ from mypy_boto3_elasticache.type_defs import SubnetOutpostTypeDef
 Optional fields:
 
 - `SubnetOutpostArn`: `str`
+
+<a id="subnettypedef"></a>
 
 ## SubnetTypeDef
 
@@ -2714,6 +3054,8 @@ Optional fields:
   [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 - `SubnetOutpost`: [SubnetOutpostTypeDef](./type_defs.md#subnetoutposttypedef)
 
+<a id="taglistmessagetypedef"></a>
+
 ## TagListMessageTypeDef
 
 ```python
@@ -2726,6 +3068,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2737,6 +3081,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="testfailovermessagerequesttypedef"></a>
+
 ## TestFailoverMessageRequestTypeDef
 
 ```python
@@ -2747,6 +3093,8 @@ Required fields:
 
 - `ReplicationGroupId`: `str`
 - `NodeGroupId`: `str`
+
+<a id="testfailoverresulttypedef"></a>
 
 ## TestFailoverResultTypeDef
 
@@ -2761,6 +3109,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="timerangefiltertypedef"></a>
+
 ## TimeRangeFilterTypeDef
 
 ```python
@@ -2771,6 +3121,8 @@ Optional fields:
 
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `EndTime`: `Union`\[`datetime`, `str`\]
+
+<a id="unprocessedupdateactiontypedef"></a>
 
 ## UnprocessedUpdateActionTypeDef
 
@@ -2786,6 +3138,8 @@ Optional fields:
 - `ErrorType`: `str`
 - `ErrorMessage`: `str`
 
+<a id="updateactionresultsmessagetypedef"></a>
+
 ## UpdateActionResultsMessageTypeDef
 
 ```python
@@ -2800,6 +3154,8 @@ Required fields:
   `List`\[[UnprocessedUpdateActionTypeDef](./type_defs.md#unprocessedupdateactiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateactiontypedef"></a>
 
 ## UpdateActionTypeDef
 
@@ -2833,6 +3189,8 @@ Optional fields:
 - `EstimatedUpdateTime`: `str`
 - `Engine`: `str`
 
+<a id="updateactionsmessagetypedef"></a>
+
 ## UpdateActionsMessageTypeDef
 
 ```python
@@ -2847,6 +3205,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="usergrouppendingchangestypedef"></a>
+
 ## UserGroupPendingChangesTypeDef
 
 ```python
@@ -2857,6 +3217,8 @@ Optional fields:
 
 - `UserIdsToRemove`: `List`\[`str`\]
 - `UserIdsToAdd`: `List`\[`str`\]
+
+<a id="usergroupresponsemetadatatypedef"></a>
 
 ## UserGroupResponseMetadataTypeDef
 
@@ -2878,6 +3240,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="usergrouptypedef"></a>
+
 ## UserGroupTypeDef
 
 ```python
@@ -2896,6 +3260,8 @@ Optional fields:
 - `ReplicationGroups`: `List`\[`str`\]
 - `ARN`: `str`
 
+<a id="usergroupsupdatestatustypedef"></a>
+
 ## UserGroupsUpdateStatusTypeDef
 
 ```python
@@ -2906,6 +3272,8 @@ Optional fields:
 
 - `UserGroupIdsToAdd`: `List`\[`str`\]
 - `UserGroupIdsToRemove`: `List`\[`str`\]
+
+<a id="userresponsemetadatatypedef"></a>
 
 ## UserResponseMetadataTypeDef
 
@@ -2928,6 +3296,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="usertypedef"></a>
+
 ## UserTypeDef
 
 ```python
@@ -2946,6 +3316,8 @@ Optional fields:
 - `Authentication`:
   [AuthenticationTypeDef](./type_defs.md#authenticationtypedef)
 - `ARN`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

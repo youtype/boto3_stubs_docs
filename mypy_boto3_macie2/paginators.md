@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-macie2-module"></a>
+
 # Paginators for boto3 Macie2 module
 
 > [Index](..) > [Macie2](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Macie2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/macie2.html#Macie2)
 type annotations stubs module
-[mypy_boto3_macie2](https://pypi.org/project/mypy-boto3-macie2/).
+[mypy-boto3-macie2](https://pypi.org/project/mypy-boto3-macie2/).
 
 - [Paginators for boto3 Macie2 module](#paginators-for-boto3-macie2-module)
   - [DescribeBucketsPaginator](#describebucketspaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListOrganizationAdminAccountsPaginator](#listorganizationadminaccountspaginator)
   - [SearchResourcesPaginator](#searchresourcespaginator)
 
+<a id="describebucketspaginator"></a>
+
 ## DescribeBucketsPaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import DescribeBucketsPaginator
 
 def get_describe_buckets_paginator() -> DescribeBucketsPaginator:
-    return boto3.client("macie2").get_paginator("describe_buckets")
+    return Session().client("macie2").get_paginator("describe_buckets")
 ```
 
 Boto3 documentation:
@@ -48,6 +54,8 @@ Arguments for `DescribeBucketsPaginator.paginate` method:
 `DescribeBucketsPaginator.paginate` returns
 `_PageIterator`\[[DescribeBucketsResponseTypeDef](./type_defs.md#describebucketsresponsetypedef)\].
 
+<a id="getusagestatisticspaginator"></a>
+
 ## GetUsageStatisticsPaginator
 
 Type annotations for
@@ -56,10 +64,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import GetUsageStatisticsPaginator
 
 def get_get_usage_statistics_paginator() -> GetUsageStatisticsPaginator:
-    return boto3.client("macie2").get_paginator("get_usage_statistics")
+    return Session().client("macie2").get_paginator("get_usage_statistics")
 ```
 
 Boto3 documentation:
@@ -78,6 +88,8 @@ Arguments for `GetUsageStatisticsPaginator.paginate` method:
 `GetUsageStatisticsPaginator.paginate` returns
 `_PageIterator`\[[GetUsageStatisticsResponseTypeDef](./type_defs.md#getusagestatisticsresponsetypedef)\].
 
+<a id="listclassificationjobspaginator"></a>
+
 ## ListClassificationJobsPaginator
 
 Type annotations for
@@ -86,10 +98,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListClassificationJobsPaginator
 
 def get_list_classification_jobs_paginator() -> ListClassificationJobsPaginator:
-    return boto3.client("macie2").get_paginator("list_classification_jobs")
+    return Session().client("macie2").get_paginator("list_classification_jobs")
 ```
 
 Boto3 documentation:
@@ -107,6 +121,8 @@ Arguments for `ListClassificationJobsPaginator.paginate` method:
 `ListClassificationJobsPaginator.paginate` returns
 `_PageIterator`\[[ListClassificationJobsResponseTypeDef](./type_defs.md#listclassificationjobsresponsetypedef)\].
 
+<a id="listcustomdataidentifierspaginator"></a>
+
 ## ListCustomDataIdentifiersPaginator
 
 Type annotations for
@@ -115,10 +131,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListCustomDataIdentifiersPaginator
 
 def get_list_custom_data_identifiers_paginator() -> ListCustomDataIdentifiersPaginator:
-    return boto3.client("macie2").get_paginator("list_custom_data_identifiers")
+    return Session().client("macie2").get_paginator("list_custom_data_identifiers")
 ```
 
 Boto3 documentation:
@@ -132,6 +150,8 @@ Arguments for `ListCustomDataIdentifiersPaginator.paginate` method:
 `ListCustomDataIdentifiersPaginator.paginate` returns
 `_PageIterator`\[[ListCustomDataIdentifiersResponseTypeDef](./type_defs.md#listcustomdataidentifiersresponsetypedef)\].
 
+<a id="listfindingspaginator"></a>
+
 ## ListFindingsPaginator
 
 Type annotations for `boto3.client("macie2").get_paginator("list_findings")`.
@@ -139,10 +159,12 @@ Type annotations for `boto3.client("macie2").get_paginator("list_findings")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListFindingsPaginator
 
 def get_list_findings_paginator() -> ListFindingsPaginator:
-    return boto3.client("macie2").get_paginator("list_findings")
+    return Session().client("macie2").get_paginator("list_findings")
 ```
 
 Boto3 documentation:
@@ -159,6 +181,8 @@ Arguments for `ListFindingsPaginator.paginate` method:
 `ListFindingsPaginator.paginate` returns
 `_PageIterator`\[[ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef)\].
 
+<a id="listfindingsfilterspaginator"></a>
+
 ## ListFindingsFiltersPaginator
 
 Type annotations for
@@ -167,10 +191,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListFindingsFiltersPaginator
 
 def get_list_findings_filters_paginator() -> ListFindingsFiltersPaginator:
-    return boto3.client("macie2").get_paginator("list_findings_filters")
+    return Session().client("macie2").get_paginator("list_findings_filters")
 ```
 
 Boto3 documentation:
@@ -184,6 +210,8 @@ Arguments for `ListFindingsFiltersPaginator.paginate` method:
 `ListFindingsFiltersPaginator.paginate` returns
 `_PageIterator`\[[ListFindingsFiltersResponseTypeDef](./type_defs.md#listfindingsfiltersresponsetypedef)\].
 
+<a id="listinvitationspaginator"></a>
+
 ## ListInvitationsPaginator
 
 Type annotations for
@@ -192,10 +220,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListInvitationsPaginator
 
 def get_list_invitations_paginator() -> ListInvitationsPaginator:
-    return boto3.client("macie2").get_paginator("list_invitations")
+    return Session().client("macie2").get_paginator("list_invitations")
 ```
 
 Boto3 documentation:
@@ -209,6 +239,8 @@ Arguments for `ListInvitationsPaginator.paginate` method:
 `ListInvitationsPaginator.paginate` returns
 `_PageIterator`\[[ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef)\].
 
+<a id="listmemberspaginator"></a>
+
 ## ListMembersPaginator
 
 Type annotations for `boto3.client("macie2").get_paginator("list_members")`.
@@ -216,10 +248,12 @@ Type annotations for `boto3.client("macie2").get_paginator("list_members")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListMembersPaginator
 
 def get_list_members_paginator() -> ListMembersPaginator:
-    return boto3.client("macie2").get_paginator("list_members")
+    return Session().client("macie2").get_paginator("list_members")
 ```
 
 Boto3 documentation:
@@ -234,6 +268,8 @@ Arguments for `ListMembersPaginator.paginate` method:
 `ListMembersPaginator.paginate` returns
 `_PageIterator`\[[ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef)\].
 
+<a id="listorganizationadminaccountspaginator"></a>
+
 ## ListOrganizationAdminAccountsPaginator
 
 Type annotations for
@@ -242,10 +278,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import ListOrganizationAdminAccountsPaginator
 
 def get_list_organization_admin_accounts_paginator() -> ListOrganizationAdminAccountsPaginator:
-    return boto3.client("macie2").get_paginator("list_organization_admin_accounts")
+    return Session().client("macie2").get_paginator("list_organization_admin_accounts")
 ```
 
 Boto3 documentation:
@@ -259,6 +297,8 @@ Arguments for `ListOrganizationAdminAccountsPaginator.paginate` method:
 `ListOrganizationAdminAccountsPaginator.paginate` returns
 `_PageIterator`\[[ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef)\].
 
+<a id="searchresourcespaginator"></a>
+
 ## SearchResourcesPaginator
 
 Type annotations for
@@ -267,10 +307,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_macie2.paginator import SearchResourcesPaginator
 
 def get_search_resources_paginator() -> SearchResourcesPaginator:
-    return boto3.client("macie2").get_paginator("search_resources")
+    return Session().client("macie2").get_paginator("search_resources")
 ```
 
 Boto3 documentation:

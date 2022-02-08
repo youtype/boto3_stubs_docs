@@ -1,3 +1,5 @@
+<a id="greengrassclient-for-boto3-greengrass-module"></a>
+
 # GreengrassClient for boto3 Greengrass module
 
 > [Index](..) > [Greengrass](.) > GreengrassClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
-[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [GreengrassClient for boto3 Greengrass module](#greengrassclient-for-boto3-greengrass-module)
   - [GreengrassClient](#greengrassclient)
@@ -108,6 +110,8 @@ type annotations stubs module
     - [update_thing_runtime_configuration](#update_thing_runtime_configuration)
     - [get_paginator](#get_paginator)
 
+<a id="greengrassclient"></a>
+
 ## GreengrassClient
 
 Type annotations for `boto3.client("greengrass")`
@@ -115,14 +119,17 @@ Type annotations for `boto3.client("greengrass")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_greengrass.client import GreengrassClient
 
 def get_greengrass_client() -> GreengrassClient:
-    return boto3.client("greengrass")
+    return Session().client("greengrass")
 ```
 
 Boto3 documentation:
 [Greengrass.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -142,7 +149,11 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.InternalServerErrorException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -154,6 +165,8 @@ Boto3 documentation:
 [Greengrass.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_role_to_group"></a>
 
 ### associate_role_to_group
 
@@ -176,6 +189,8 @@ Keyword-only arguments:
 Returns
 [AssociateRoleToGroupResponseTypeDef](./type_defs.md#associateroletogroupresponsetypedef).
 
+<a id="associate_service_role_to_account"></a>
+
 ### associate_service_role_to_account
 
 Associates a role with your account.
@@ -196,6 +211,8 @@ Keyword-only arguments:
 Returns
 [AssociateServiceRoleToAccountResponseTypeDef](./type_defs.md#associateserviceroletoaccountresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -210,6 +227,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_connector_definition"></a>
 
 ### create_connector_definition
 
@@ -235,6 +254,8 @@ Keyword-only arguments:
 Returns
 [CreateConnectorDefinitionResponseTypeDef](./type_defs.md#createconnectordefinitionresponsetypedef).
 
+<a id="create_connector_definition_version"></a>
+
 ### create_connector_definition_version
 
 Creates a version of a connector definition which has already been defined.
@@ -257,6 +278,8 @@ Keyword-only arguments:
 
 Returns
 [CreateConnectorDefinitionVersionResponseTypeDef](./type_defs.md#createconnectordefinitionversionresponsetypedef).
+
+<a id="create_core_definition"></a>
 
 ### create_core_definition
 
@@ -282,6 +305,8 @@ Keyword-only arguments:
 Returns
 [CreateCoreDefinitionResponseTypeDef](./type_defs.md#createcoredefinitionresponsetypedef).
 
+<a id="create_core_definition_version"></a>
+
 ### create_core_definition_version
 
 Creates a version of a core definition that has already been defined.
@@ -303,6 +328,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCoreDefinitionVersionResponseTypeDef](./type_defs.md#createcoredefinitionversionresponsetypedef).
+
+<a id="create_deployment"></a>
 
 ### create_deployment
 
@@ -328,6 +355,8 @@ Keyword-only arguments:
 Returns
 [CreateDeploymentResponseTypeDef](./type_defs.md#createdeploymentresponsetypedef).
 
+<a id="create_device_definition"></a>
+
 ### create_device_definition
 
 Creates a device definition.
@@ -352,6 +381,8 @@ Keyword-only arguments:
 Returns
 [CreateDeviceDefinitionResponseTypeDef](./type_defs.md#createdevicedefinitionresponsetypedef).
 
+<a id="create_device_definition_version"></a>
+
 ### create_device_definition_version
 
 Creates a version of a device definition that has already been defined.
@@ -373,6 +404,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDeviceDefinitionVersionResponseTypeDef](./type_defs.md#createdevicedefinitionversionresponsetypedef).
+
+<a id="create_function_definition"></a>
 
 ### create_function_definition
 
@@ -399,6 +432,8 @@ Keyword-only arguments:
 Returns
 [CreateFunctionDefinitionResponseTypeDef](./type_defs.md#createfunctiondefinitionresponsetypedef).
 
+<a id="create_function_definition_version"></a>
+
 ### create_function_definition_version
 
 Creates a version of a Lambda function definition that has already been
@@ -424,6 +459,8 @@ Keyword-only arguments:
 Returns
 [CreateFunctionDefinitionVersionResponseTypeDef](./type_defs.md#createfunctiondefinitionversionresponsetypedef).
 
+<a id="create_group"></a>
+
 ### create_group
 
 Creates a group.
@@ -446,6 +483,8 @@ Keyword-only arguments:
 Returns
 [CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
 
+<a id="create_group_certificate_authority"></a>
+
 ### create_group_certificate_authority
 
 Creates a CA for the group.
@@ -466,6 +505,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGroupCertificateAuthorityResponseTypeDef](./type_defs.md#creategroupcertificateauthorityresponsetypedef).
+
+<a id="create_group_version"></a>
 
 ### create_group_version
 
@@ -494,6 +535,8 @@ Keyword-only arguments:
 Returns
 [CreateGroupVersionResponseTypeDef](./type_defs.md#creategroupversionresponsetypedef).
 
+<a id="create_logger_definition"></a>
+
 ### create_logger_definition
 
 Creates a logger definition.
@@ -518,6 +561,8 @@ Keyword-only arguments:
 Returns
 [CreateLoggerDefinitionResponseTypeDef](./type_defs.md#createloggerdefinitionresponsetypedef).
 
+<a id="create_logger_definition_version"></a>
+
 ### create_logger_definition_version
 
 Creates a version of a logger definition that has already been defined.
@@ -539,6 +584,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLoggerDefinitionVersionResponseTypeDef](./type_defs.md#createloggerdefinitionversionresponsetypedef).
+
+<a id="create_resource_definition"></a>
 
 ### create_resource_definition
 
@@ -565,6 +612,8 @@ Keyword-only arguments:
 Returns
 [CreateResourceDefinitionResponseTypeDef](./type_defs.md#createresourcedefinitionresponsetypedef).
 
+<a id="create_resource_definition_version"></a>
+
 ### create_resource_definition_version
 
 Creates a version of a resource definition that has already been defined.
@@ -586,6 +635,8 @@ Keyword-only arguments:
 
 Returns
 [CreateResourceDefinitionVersionResponseTypeDef](./type_defs.md#createresourcedefinitionversionresponsetypedef).
+
+<a id="create_software_update_job"></a>
 
 ### create_software_update_job
 
@@ -621,6 +672,8 @@ Keyword-only arguments:
 Returns
 [CreateSoftwareUpdateJobResponseTypeDef](./type_defs.md#createsoftwareupdatejobresponsetypedef).
 
+<a id="create_subscription_definition"></a>
+
 ### create_subscription_definition
 
 Creates a subscription definition.
@@ -645,6 +698,8 @@ Keyword-only arguments:
 Returns
 [CreateSubscriptionDefinitionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionresponsetypedef).
 
+<a id="create_subscription_definition_version"></a>
+
 ### create_subscription_definition_version
 
 Creates a version of a subscription definition which has already been defined.
@@ -668,6 +723,8 @@ Keyword-only arguments:
 Returns
 [CreateSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#createsubscriptiondefinitionversionresponsetypedef).
 
+<a id="delete_connector_definition"></a>
+
 ### delete_connector_definition
 
 Deletes a connector definition.
@@ -686,6 +743,8 @@ Keyword-only arguments:
 - `ConnectorDefinitionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_core_definition"></a>
 
 ### delete_core_definition
 
@@ -706,6 +765,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_device_definition"></a>
+
 ### delete_device_definition
 
 Deletes a device definition.
@@ -724,6 +785,8 @@ Keyword-only arguments:
 - `DeviceDefinitionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_function_definition"></a>
 
 ### delete_function_definition
 
@@ -744,6 +807,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_group"></a>
+
 ### delete_group
 
 Deletes a group.
@@ -761,6 +826,8 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_logger_definition"></a>
 
 ### delete_logger_definition
 
@@ -781,6 +848,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_resource_definition"></a>
+
 ### delete_resource_definition
 
 Deletes a resource definition.
@@ -800,6 +869,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_subscription_definition"></a>
+
 ### delete_subscription_definition
 
 Deletes a subscription definition.
@@ -818,6 +889,8 @@ Keyword-only arguments:
 - `SubscriptionDefinitionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_role_from_group"></a>
 
 ### disassociate_role_from_group
 
@@ -839,6 +912,8 @@ Keyword-only arguments:
 Returns
 [DisassociateRoleFromGroupResponseTypeDef](./type_defs.md#disassociaterolefromgroupresponsetypedef).
 
+<a id="disassociate_service_role_from_account"></a>
+
 ### disassociate_service_role_from_account
 
 Disassociates the service role from your account.
@@ -851,6 +926,8 @@ Boto3 documentation:
 
 Returns
 [DisassociateServiceRoleFromAccountResponseTypeDef](./type_defs.md#disassociateservicerolefromaccountresponsetypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -871,6 +948,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_associated_role"></a>
+
 ### get_associated_role
 
 Retrieves the role associated with a particular group.
@@ -889,6 +968,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssociatedRoleResponseTypeDef](./type_defs.md#getassociatedroleresponsetypedef).
+
+<a id="get_bulk_deployment_status"></a>
 
 ### get_bulk_deployment_status
 
@@ -910,6 +991,8 @@ Keyword-only arguments:
 Returns
 [GetBulkDeploymentStatusResponseTypeDef](./type_defs.md#getbulkdeploymentstatusresponsetypedef).
 
+<a id="get_connectivity_info"></a>
+
 ### get_connectivity_info
 
 Retrieves the connectivity information for a core.
@@ -928,6 +1011,8 @@ Keyword-only arguments:
 
 Returns
 [GetConnectivityInfoResponseTypeDef](./type_defs.md#getconnectivityinforesponsetypedef).
+
+<a id="get_connector_definition"></a>
 
 ### get_connector_definition
 
@@ -948,6 +1033,8 @@ Keyword-only arguments:
 
 Returns
 [GetConnectorDefinitionResponseTypeDef](./type_defs.md#getconnectordefinitionresponsetypedef).
+
+<a id="get_connector_definition_version"></a>
 
 ### get_connector_definition_version
 
@@ -972,6 +1059,8 @@ Keyword-only arguments:
 Returns
 [GetConnectorDefinitionVersionResponseTypeDef](./type_defs.md#getconnectordefinitionversionresponsetypedef).
 
+<a id="get_core_definition"></a>
+
 ### get_core_definition
 
 Retrieves information about a core definition version.
@@ -990,6 +1079,8 @@ Keyword-only arguments:
 
 Returns
 [GetCoreDefinitionResponseTypeDef](./type_defs.md#getcoredefinitionresponsetypedef).
+
+<a id="get_core_definition_version"></a>
 
 ### get_core_definition_version
 
@@ -1012,6 +1103,8 @@ Keyword-only arguments:
 Returns
 [GetCoreDefinitionVersionResponseTypeDef](./type_defs.md#getcoredefinitionversionresponsetypedef).
 
+<a id="get_deployment_status"></a>
+
 ### get_deployment_status
 
 Returns the status of a deployment.
@@ -1032,6 +1125,8 @@ Keyword-only arguments:
 Returns
 [GetDeploymentStatusResponseTypeDef](./type_defs.md#getdeploymentstatusresponsetypedef).
 
+<a id="get_device_definition"></a>
+
 ### get_device_definition
 
 Retrieves information about a device definition.
@@ -1050,6 +1145,8 @@ Keyword-only arguments:
 
 Returns
 [GetDeviceDefinitionResponseTypeDef](./type_defs.md#getdevicedefinitionresponsetypedef).
+
+<a id="get_device_definition_version"></a>
 
 ### get_device_definition_version
 
@@ -1073,6 +1170,8 @@ Keyword-only arguments:
 Returns
 [GetDeviceDefinitionVersionResponseTypeDef](./type_defs.md#getdevicedefinitionversionresponsetypedef).
 
+<a id="get_function_definition"></a>
+
 ### get_function_definition
 
 Retrieves information about a Lambda function definition, including its
@@ -1093,6 +1192,8 @@ Keyword-only arguments:
 
 Returns
 [GetFunctionDefinitionResponseTypeDef](./type_defs.md#getfunctiondefinitionresponsetypedef).
+
+<a id="get_function_definition_version"></a>
 
 ### get_function_definition_version
 
@@ -1117,6 +1218,8 @@ Keyword-only arguments:
 Returns
 [GetFunctionDefinitionVersionResponseTypeDef](./type_defs.md#getfunctiondefinitionversionresponsetypedef).
 
+<a id="get_group"></a>
+
 ### get_group
 
 Retrieves information about a group.
@@ -1134,6 +1237,8 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
+
+<a id="get_group_certificate_authority"></a>
 
 ### get_group_certificate_authority
 
@@ -1156,6 +1261,8 @@ Keyword-only arguments:
 Returns
 [GetGroupCertificateAuthorityResponseTypeDef](./type_defs.md#getgroupcertificateauthorityresponsetypedef).
 
+<a id="get_group_certificate_configuration"></a>
+
 ### get_group_certificate_configuration
 
 Retrieves the current configuration for the CA used by the group.
@@ -1175,6 +1282,8 @@ Keyword-only arguments:
 
 Returns
 [GetGroupCertificateConfigurationResponseTypeDef](./type_defs.md#getgroupcertificateconfigurationresponsetypedef).
+
+<a id="get_group_version"></a>
 
 ### get_group_version
 
@@ -1196,6 +1305,8 @@ Keyword-only arguments:
 Returns
 [GetGroupVersionResponseTypeDef](./type_defs.md#getgroupversionresponsetypedef).
 
+<a id="get_logger_definition"></a>
+
 ### get_logger_definition
 
 Retrieves information about a logger definition.
@@ -1214,6 +1325,8 @@ Keyword-only arguments:
 
 Returns
 [GetLoggerDefinitionResponseTypeDef](./type_defs.md#getloggerdefinitionresponsetypedef).
+
+<a id="get_logger_definition_version"></a>
 
 ### get_logger_definition_version
 
@@ -1237,6 +1350,8 @@ Keyword-only arguments:
 Returns
 [GetLoggerDefinitionVersionResponseTypeDef](./type_defs.md#getloggerdefinitionversionresponsetypedef).
 
+<a id="get_resource_definition"></a>
+
 ### get_resource_definition
 
 Retrieves information about a resource definition, including its creation time
@@ -1257,6 +1372,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourceDefinitionResponseTypeDef](./type_defs.md#getresourcedefinitionresponsetypedef).
+
+<a id="get_resource_definition_version"></a>
 
 ### get_resource_definition_version
 
@@ -1280,6 +1397,8 @@ Keyword-only arguments:
 Returns
 [GetResourceDefinitionVersionResponseTypeDef](./type_defs.md#getresourcedefinitionversionresponsetypedef).
 
+<a id="get_service_role_for_account"></a>
+
 ### get_service_role_for_account
 
 Retrieves the service role that is attached to your account.
@@ -1292,6 +1411,8 @@ Boto3 documentation:
 
 Returns
 [GetServiceRoleForAccountResponseTypeDef](./type_defs.md#getserviceroleforaccountresponsetypedef).
+
+<a id="get_subscription_definition"></a>
 
 ### get_subscription_definition
 
@@ -1312,6 +1433,8 @@ Keyword-only arguments:
 
 Returns
 [GetSubscriptionDefinitionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionresponsetypedef).
+
+<a id="get_subscription_definition_version"></a>
 
 ### get_subscription_definition_version
 
@@ -1335,6 +1458,8 @@ Keyword-only arguments:
 Returns
 [GetSubscriptionDefinitionVersionResponseTypeDef](./type_defs.md#getsubscriptiondefinitionversionresponsetypedef).
 
+<a id="get_thing_runtime_configuration"></a>
+
 ### get_thing_runtime_configuration
 
 Get the runtime configuration of a thing.
@@ -1354,6 +1479,8 @@ Keyword-only arguments:
 
 Returns
 [GetThingRuntimeConfigurationResponseTypeDef](./type_defs.md#getthingruntimeconfigurationresponsetypedef).
+
+<a id="list_bulk_deployment_detailed_reports"></a>
 
 ### list_bulk_deployment_detailed_reports
 
@@ -1378,6 +1505,8 @@ Keyword-only arguments:
 Returns
 [ListBulkDeploymentDetailedReportsResponseTypeDef](./type_defs.md#listbulkdeploymentdetailedreportsresponsetypedef).
 
+<a id="list_bulk_deployments"></a>
+
 ### list_bulk_deployments
 
 Returns a list of bulk deployments.
@@ -1397,6 +1526,8 @@ Keyword-only arguments:
 
 Returns
 [ListBulkDeploymentsResponseTypeDef](./type_defs.md#listbulkdeploymentsresponsetypedef).
+
+<a id="list_connector_definition_versions"></a>
 
 ### list_connector_definition_versions
 
@@ -1421,6 +1552,8 @@ Keyword-only arguments:
 Returns
 [ListConnectorDefinitionVersionsResponseTypeDef](./type_defs.md#listconnectordefinitionversionsresponsetypedef).
 
+<a id="list_connector_definitions"></a>
+
 ### list_connector_definitions
 
 Retrieves a list of connector definitions.
@@ -1441,6 +1574,8 @@ Keyword-only arguments:
 
 Returns
 [ListConnectorDefinitionsResponseTypeDef](./type_defs.md#listconnectordefinitionsresponsetypedef).
+
+<a id="list_core_definition_versions"></a>
 
 ### list_core_definition_versions
 
@@ -1464,6 +1599,8 @@ Keyword-only arguments:
 Returns
 [ListCoreDefinitionVersionsResponseTypeDef](./type_defs.md#listcoredefinitionversionsresponsetypedef).
 
+<a id="list_core_definitions"></a>
+
 ### list_core_definitions
 
 Retrieves a list of core definitions.
@@ -1483,6 +1620,8 @@ Keyword-only arguments:
 
 Returns
 [ListCoreDefinitionsResponseTypeDef](./type_defs.md#listcoredefinitionsresponsetypedef).
+
+<a id="list_deployments"></a>
 
 ### list_deployments
 
@@ -1504,6 +1643,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef).
+
+<a id="list_device_definition_versions"></a>
 
 ### list_device_definition_versions
 
@@ -1527,6 +1668,8 @@ Keyword-only arguments:
 Returns
 [ListDeviceDefinitionVersionsResponseTypeDef](./type_defs.md#listdevicedefinitionversionsresponsetypedef).
 
+<a id="list_device_definitions"></a>
+
 ### list_device_definitions
 
 Retrieves a list of device definitions.
@@ -1547,6 +1690,8 @@ Keyword-only arguments:
 
 Returns
 [ListDeviceDefinitionsResponseTypeDef](./type_defs.md#listdevicedefinitionsresponsetypedef).
+
+<a id="list_function_definition_versions"></a>
 
 ### list_function_definition_versions
 
@@ -1570,6 +1715,8 @@ Keyword-only arguments:
 Returns
 [ListFunctionDefinitionVersionsResponseTypeDef](./type_defs.md#listfunctiondefinitionversionsresponsetypedef).
 
+<a id="list_function_definitions"></a>
+
 ### list_function_definitions
 
 Retrieves a list of Lambda function definitions.
@@ -1591,6 +1738,8 @@ Keyword-only arguments:
 Returns
 [ListFunctionDefinitionsResponseTypeDef](./type_defs.md#listfunctiondefinitionsresponsetypedef).
 
+<a id="list_group_certificate_authorities"></a>
+
 ### list_group_certificate_authorities
 
 Retrieves the current CAs for a group.
@@ -1610,6 +1759,8 @@ Keyword-only arguments:
 
 Returns
 [ListGroupCertificateAuthoritiesResponseTypeDef](./type_defs.md#listgroupcertificateauthoritiesresponsetypedef).
+
+<a id="list_group_versions"></a>
 
 ### list_group_versions
 
@@ -1632,6 +1783,8 @@ Keyword-only arguments:
 Returns
 [ListGroupVersionsResponseTypeDef](./type_defs.md#listgroupversionsresponsetypedef).
 
+<a id="list_groups"></a>
+
 ### list_groups
 
 Retrieves a list of groups.
@@ -1650,6 +1803,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+<a id="list_logger_definition_versions"></a>
 
 ### list_logger_definition_versions
 
@@ -1673,6 +1828,8 @@ Keyword-only arguments:
 Returns
 [ListLoggerDefinitionVersionsResponseTypeDef](./type_defs.md#listloggerdefinitionversionsresponsetypedef).
 
+<a id="list_logger_definitions"></a>
+
 ### list_logger_definitions
 
 Retrieves a list of logger definitions.
@@ -1693,6 +1850,8 @@ Keyword-only arguments:
 
 Returns
 [ListLoggerDefinitionsResponseTypeDef](./type_defs.md#listloggerdefinitionsresponsetypedef).
+
+<a id="list_resource_definition_versions"></a>
 
 ### list_resource_definition_versions
 
@@ -1716,6 +1875,8 @@ Keyword-only arguments:
 Returns
 [ListResourceDefinitionVersionsResponseTypeDef](./type_defs.md#listresourcedefinitionversionsresponsetypedef).
 
+<a id="list_resource_definitions"></a>
+
 ### list_resource_definitions
 
 Retrieves a list of resource definitions.
@@ -1736,6 +1897,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourceDefinitionsResponseTypeDef](./type_defs.md#listresourcedefinitionsresponsetypedef).
+
+<a id="list_subscription_definition_versions"></a>
 
 ### list_subscription_definition_versions
 
@@ -1759,6 +1922,8 @@ Keyword-only arguments:
 Returns
 [ListSubscriptionDefinitionVersionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionversionsresponsetypedef).
 
+<a id="list_subscription_definitions"></a>
+
 ### list_subscription_definitions
 
 Retrieves a list of subscription definitions.
@@ -1780,6 +1945,8 @@ Keyword-only arguments:
 Returns
 [ListSubscriptionDefinitionsResponseTypeDef](./type_defs.md#listsubscriptiondefinitionsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves a list of resource tags for a resource arn.
@@ -1799,6 +1966,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="reset_deployments"></a>
 
 ### reset_deployments
 
@@ -1820,6 +1989,8 @@ Keyword-only arguments:
 
 Returns
 [ResetDeploymentsResponseTypeDef](./type_defs.md#resetdeploymentsresponsetypedef).
+
+<a id="start_bulk_deployment"></a>
 
 ### start_bulk_deployment
 
@@ -1843,6 +2014,8 @@ Keyword-only arguments:
 Returns
 [StartBulkDeploymentResponseTypeDef](./type_defs.md#startbulkdeploymentresponsetypedef).
 
+<a id="stop_bulk_deployment"></a>
+
 ### stop_bulk_deployment
 
 Stops the execution of a bulk deployment.
@@ -1861,6 +2034,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to a Greengrass resource.
@@ -1878,6 +2053,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove resource tags from a Greengrass Resource.
@@ -1894,6 +2071,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_connectivity_info"></a>
 
 ### update_connectivity_info
 
@@ -1917,6 +2096,8 @@ Keyword-only arguments:
 Returns
 [UpdateConnectivityInfoResponseTypeDef](./type_defs.md#updateconnectivityinforesponsetypedef).
 
+<a id="update_connector_definition"></a>
+
 ### update_connector_definition
 
 Updates a connector definition.
@@ -1936,6 +2117,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_core_definition"></a>
 
 ### update_core_definition
 
@@ -1957,6 +2140,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_device_definition"></a>
+
 ### update_device_definition
 
 Updates a device definition.
@@ -1976,6 +2161,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_function_definition"></a>
 
 ### update_function_definition
 
@@ -1997,6 +2184,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_group"></a>
+
 ### update_group
 
 Updates a group.
@@ -2015,6 +2204,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_group_certificate_configuration"></a>
 
 ### update_group_certificate_configuration
 
@@ -2037,6 +2228,8 @@ Keyword-only arguments:
 Returns
 [UpdateGroupCertificateConfigurationResponseTypeDef](./type_defs.md#updategroupcertificateconfigurationresponsetypedef).
 
+<a id="update_logger_definition"></a>
+
 ### update_logger_definition
 
 Updates a logger definition.
@@ -2056,6 +2249,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_resource_definition"></a>
 
 ### update_resource_definition
 
@@ -2077,6 +2272,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_subscription_definition"></a>
+
 ### update_subscription_definition
 
 Updates a subscription definition.
@@ -2096,6 +2293,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_thing_runtime_configuration"></a>
 
 ### update_thing_runtime_configuration
 
@@ -2117,6 +2316,8 @@ Keyword-only arguments:
   [TelemetryConfigurationUpdateTypeDef](./type_defs.md#telemetryconfigurationupdatetypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

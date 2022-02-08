@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-gluedatabrew-module"></a>
+
 # Typed dictionaries for boto3 GlueDataBrew module
 
 > [Index](..) > [GlueDataBrew](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
-[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Typed dictionaries for boto3 GlueDataBrew module](#typed-dictionaries-for-boto3-gluedatabrew-module)
   - [AllowedStatisticsTypeDef](#allowedstatisticstypedef)
@@ -143,6 +145,8 @@ type annotations stubs module
   - [ValidationConfigurationTypeDef](#validationconfigurationtypedef)
   - [ViewFrameTypeDef](#viewframetypedef)
 
+<a id="allowedstatisticstypedef"></a>
+
 ## AllowedStatisticsTypeDef
 
 ```python
@@ -152,6 +156,8 @@ from mypy_boto3_databrew.type_defs import AllowedStatisticsTypeDef
 Required fields:
 
 - `Statistics`: `Sequence`\[`str`\]
+
+<a id="batchdeleterecipeversionrequestrequesttypedef"></a>
 
 ## BatchDeleteRecipeVersionRequestRequestTypeDef
 
@@ -163,6 +169,8 @@ Required fields:
 
 - `Name`: `str`
 - `RecipeVersions`: `Sequence`\[`str`\]
+
+<a id="batchdeleterecipeversionresponsetypedef"></a>
 
 ## BatchDeleteRecipeVersionResponseTypeDef
 
@@ -178,6 +186,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="columnselectortypedef"></a>
+
 ## ColumnSelectorTypeDef
 
 ```python
@@ -188,6 +198,8 @@ Optional fields:
 
 - `Regex`: `str`
 - `Name`: `str`
+
+<a id="columnstatisticsconfigurationtypedef"></a>
 
 ## ColumnStatisticsConfigurationTypeDef
 
@@ -205,6 +217,8 @@ Optional fields:
 - `Selectors`:
   `Sequence`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
 
+<a id="conditionexpressiontypedef"></a>
+
 ## ConditionExpressionTypeDef
 
 ```python
@@ -219,6 +233,8 @@ Required fields:
 Optional fields:
 
 - `Value`: `str`
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDatasetRequestRequestTypeDef
 
@@ -238,6 +254,8 @@ Optional fields:
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -249,6 +267,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprofilejobrequestrequesttypedef"></a>
 
 ## CreateProfileJobRequestRequestTypeDef
 
@@ -278,6 +298,8 @@ Optional fields:
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
+<a id="createprofilejobresponsetypedef"></a>
+
 ## CreateProfileJobResponseTypeDef
 
 ```python
@@ -289,6 +311,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -308,6 +332,8 @@ Optional fields:
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createprojectresponsetypedef"></a>
+
 ## CreateProjectResponseTypeDef
 
 ```python
@@ -319,6 +345,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrecipejobrequestrequesttypedef"></a>
 
 ## CreateRecipeJobRequestRequestTypeDef
 
@@ -350,6 +378,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `Timeout`: `int`
 
+<a id="createrecipejobresponsetypedef"></a>
+
 ## CreateRecipeJobResponseTypeDef
 
 ```python
@@ -361,6 +391,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createreciperequestrequesttypedef"></a>
 
 ## CreateRecipeRequestRequestTypeDef
 
@@ -378,6 +410,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createreciperesponsetypedef"></a>
+
 ## CreateRecipeResponseTypeDef
 
 ```python
@@ -389,6 +423,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrulesetrequestrequesttypedef"></a>
 
 ## CreateRulesetRequestRequestTypeDef
 
@@ -407,6 +443,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createrulesetresponsetypedef"></a>
+
 ## CreateRulesetResponseTypeDef
 
 ```python
@@ -418,6 +456,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createschedulerequestrequesttypedef"></a>
 
 ## CreateScheduleRequestRequestTypeDef
 
@@ -435,6 +475,8 @@ Optional fields:
 - `JobNames`: `Sequence`\[`str`\]
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createscheduleresponsetypedef"></a>
+
 ## CreateScheduleResponseTypeDef
 
 ```python
@@ -447,6 +489,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="csvoptionstypedef"></a>
+
 ## CsvOptionsTypeDef
 
 ```python
@@ -458,6 +502,8 @@ Optional fields:
 - `Delimiter`: `str`
 - `HeaderRow`: `bool`
 
+<a id="csvoutputoptionstypedef"></a>
+
 ## CsvOutputOptionsTypeDef
 
 ```python
@@ -467,6 +513,8 @@ from mypy_boto3_databrew.type_defs import CsvOutputOptionsTypeDef
 Optional fields:
 
 - `Delimiter`: `str`
+
+<a id="datacataloginputdefinitiontypedef"></a>
 
 ## DataCatalogInputDefinitionTypeDef
 
@@ -483,6 +531,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="datacatalogoutputtypedef"></a>
 
 ## DataCatalogOutputTypeDef
 
@@ -504,6 +554,8 @@ Optional fields:
   [DatabaseTableOutputOptionsTypeDef](./type_defs.md#databasetableoutputoptionstypedef)
 - `Overwrite`: `bool`
 
+<a id="databaseinputdefinitiontypedef"></a>
+
 ## DatabaseInputDefinitionTypeDef
 
 ```python
@@ -519,6 +571,8 @@ Optional fields:
 - `DatabaseTableName`: `str`
 - `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `QueryString`: `str`
+
+<a id="databaseoutputtypedef"></a>
 
 ## DatabaseOutputTypeDef
 
@@ -537,6 +591,8 @@ Optional fields:
 - `DatabaseOutputMode`: `Literal['NEW_TABLE']` (see
   [DatabaseOutputModeType](./literals.md#databaseoutputmodetype))
 
+<a id="databasetableoutputoptionstypedef"></a>
+
 ## DatabaseTableOutputOptionsTypeDef
 
 ```python
@@ -550,6 +606,8 @@ Required fields:
 Optional fields:
 
 - `TempDirectory`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="datasetparametertypedef"></a>
 
 ## DatasetParameterTypeDef
 
@@ -568,6 +626,8 @@ Optional fields:
   [DatetimeOptionsTypeDef](./type_defs.md#datetimeoptionstypedef)
 - `CreateColumn`: `bool`
 - `Filter`: [FilterExpressionTypeDef](./type_defs.md#filterexpressiontypedef)
+
+<a id="datasettypedef"></a>
 
 ## DatasetTypeDef
 
@@ -594,6 +654,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResourceArn`: `str`
 
+<a id="datetimeoptionstypedef"></a>
+
 ## DatetimeOptionsTypeDef
 
 ```python
@@ -609,6 +671,8 @@ Optional fields:
 - `TimezoneOffset`: `str`
 - `LocaleCode`: `str`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -618,6 +682,8 @@ from mypy_boto3_databrew.type_defs import DeleteDatasetRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletedatasetresponsetypedef"></a>
 
 ## DeleteDatasetResponseTypeDef
 
@@ -631,6 +697,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletejobrequestrequesttypedef"></a>
+
 ## DeleteJobRequestRequestTypeDef
 
 ```python
@@ -640,6 +708,8 @@ from mypy_boto3_databrew.type_defs import DeleteJobRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletejobresponsetypedef"></a>
 
 ## DeleteJobResponseTypeDef
 
@@ -653,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectrequestrequesttypedef"></a>
+
 ## DeleteProjectRequestRequestTypeDef
 
 ```python
@@ -662,6 +734,8 @@ from mypy_boto3_databrew.type_defs import DeleteProjectRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteprojectresponsetypedef"></a>
 
 ## DeleteProjectResponseTypeDef
 
@@ -675,6 +749,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterecipeversionrequestrequesttypedef"></a>
+
 ## DeleteRecipeVersionRequestRequestTypeDef
 
 ```python
@@ -685,6 +761,8 @@ Required fields:
 
 - `Name`: `str`
 - `RecipeVersion`: `str`
+
+<a id="deleterecipeversionresponsetypedef"></a>
 
 ## DeleteRecipeVersionResponseTypeDef
 
@@ -699,6 +777,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterulesetrequestrequesttypedef"></a>
+
 ## DeleteRulesetRequestRequestTypeDef
 
 ```python
@@ -708,6 +788,8 @@ from mypy_boto3_databrew.type_defs import DeleteRulesetRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleterulesetresponsetypedef"></a>
 
 ## DeleteRulesetResponseTypeDef
 
@@ -721,6 +803,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteschedulerequestrequesttypedef"></a>
+
 ## DeleteScheduleRequestRequestTypeDef
 
 ```python
@@ -730,6 +814,8 @@ from mypy_boto3_databrew.type_defs import DeleteScheduleRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletescheduleresponsetypedef"></a>
 
 ## DeleteScheduleResponseTypeDef
 
@@ -743,6 +829,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -752,6 +840,8 @@ from mypy_boto3_databrew.type_defs import DescribeDatasetRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -776,6 +866,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobrequestrequesttypedef"></a>
+
 ## DescribeJobRequestRequestTypeDef
 
 ```python
@@ -785,6 +877,8 @@ from mypy_boto3_databrew.type_defs import DescribeJobRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describejobresponsetypedef"></a>
 
 ## DescribeJobResponseTypeDef
 
@@ -826,6 +920,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describejobrunrequestrequesttypedef"></a>
+
 ## DescribeJobRunRequestRequestTypeDef
 
 ```python
@@ -836,6 +932,8 @@ Required fields:
 
 - `Name`: `str`
 - `RunId`: `str`
+
+<a id="describejobrunresponsetypedef"></a>
 
 ## DescribeJobRunResponseTypeDef
 
@@ -872,6 +970,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectrequestrequesttypedef"></a>
+
 ## DescribeProjectRequestRequestTypeDef
 
 ```python
@@ -881,6 +981,8 @@ from mypy_boto3_databrew.type_defs import DescribeProjectRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describeprojectresponsetypedef"></a>
 
 ## DescribeProjectResponseTypeDef
 
@@ -907,6 +1009,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereciperequestrequesttypedef"></a>
+
 ## DescribeRecipeRequestRequestTypeDef
 
 ```python
@@ -920,6 +1024,8 @@ Required fields:
 Optional fields:
 
 - `RecipeVersion`: `str`
+
+<a id="describereciperesponsetypedef"></a>
 
 ## DescribeRecipeResponseTypeDef
 
@@ -945,6 +1051,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerulesetrequestrequesttypedef"></a>
+
 ## DescribeRulesetRequestRequestTypeDef
 
 ```python
@@ -954,6 +1062,8 @@ from mypy_boto3_databrew.type_defs import DescribeRulesetRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describerulesetresponsetypedef"></a>
 
 ## DescribeRulesetResponseTypeDef
 
@@ -976,6 +1086,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeschedulerequestrequesttypedef"></a>
+
 ## DescribeScheduleRequestRequestTypeDef
 
 ```python
@@ -985,6 +1097,8 @@ from mypy_boto3_databrew.type_defs import DescribeScheduleRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describescheduleresponsetypedef"></a>
 
 ## DescribeScheduleResponseTypeDef
 
@@ -1006,6 +1120,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="entitydetectorconfigurationtypedef"></a>
+
 ## EntityDetectorConfigurationTypeDef
 
 ```python
@@ -1021,6 +1137,8 @@ Optional fields:
 - `AllowedStatistics`:
   `Sequence`\[[AllowedStatisticsTypeDef](./type_defs.md#allowedstatisticstypedef)\]
 
+<a id="exceloptionstypedef"></a>
+
 ## ExcelOptionsTypeDef
 
 ```python
@@ -1032,6 +1150,8 @@ Optional fields:
 - `SheetNames`: `Sequence`\[`str`\]
 - `SheetIndexes`: `Sequence`\[`int`\]
 - `HeaderRow`: `bool`
+
+<a id="fileslimittypedef"></a>
 
 ## FilesLimitTypeDef
 
@@ -1049,6 +1169,8 @@ Optional fields:
   [OrderedByType](./literals.md#orderedbytype))
 - `Order`: [OrderType](./literals.md#ordertype)
 
+<a id="filterexpressiontypedef"></a>
+
 ## FilterExpressionTypeDef
 
 ```python
@@ -1059,6 +1181,8 @@ Required fields:
 
 - `Expression`: `str`
 - `ValuesMap`: `Mapping`\[`str`, `str`\]
+
+<a id="formatoptionstypedef"></a>
 
 ## FormatOptionsTypeDef
 
@@ -1071,6 +1195,8 @@ Optional fields:
 - `Json`: [JsonOptionsTypeDef](./type_defs.md#jsonoptionstypedef)
 - `Excel`: [ExcelOptionsTypeDef](./type_defs.md#exceloptionstypedef)
 - `Csv`: [CsvOptionsTypeDef](./type_defs.md#csvoptionstypedef)
+
+<a id="inputtypedef"></a>
 
 ## InputTypeDef
 
@@ -1086,6 +1212,8 @@ Optional fields:
 - `DatabaseInputDefinition`:
   [DatabaseInputDefinitionTypeDef](./type_defs.md#databaseinputdefinitiontypedef)
 - `Metadata`: [MetadataTypeDef](./type_defs.md#metadatatypedef)
+
+<a id="jobruntypedef"></a>
 
 ## JobRunTypeDef
 
@@ -1118,6 +1246,8 @@ Optional fields:
 - `ValidationConfigurations`:
   `List`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 
+<a id="jobsampletypedef"></a>
+
 ## JobSampleTypeDef
 
 ```python
@@ -1128,6 +1258,8 @@ Optional fields:
 
 - `Mode`: [SampleModeType](./literals.md#samplemodetype)
 - `Size`: `int`
+
+<a id="jobtypedef"></a>
 
 ## JobTypeDef
 
@@ -1169,6 +1301,8 @@ Optional fields:
 - `ValidationConfigurations`:
   `List`\[[ValidationConfigurationTypeDef](./type_defs.md#validationconfigurationtypedef)\]
 
+<a id="jsonoptionstypedef"></a>
+
 ## JsonOptionsTypeDef
 
 ```python
@@ -1178,6 +1312,8 @@ from mypy_boto3_databrew.type_defs import JsonOptionsTypeDef
 Optional fields:
 
 - `MultiLine`: `bool`
+
+<a id="listdatasetsrequestrequesttypedef"></a>
 
 ## ListDatasetsRequestRequestTypeDef
 
@@ -1189,6 +1325,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDatasetsResponseTypeDef
 
@@ -1202,6 +1340,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listjobrunsrequestrequesttypedef"></a>
 
 ## ListJobRunsRequestRequestTypeDef
 
@@ -1218,6 +1358,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listjobrunsresponsetypedef"></a>
+
 ## ListJobRunsResponseTypeDef
 
 ```python
@@ -1230,6 +1372,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listjobsrequestrequesttypedef"></a>
 
 ## ListJobsRequestRequestTypeDef
 
@@ -1244,6 +1388,8 @@ Optional fields:
 - `NextToken`: `str`
 - `ProjectName`: `str`
 
+<a id="listjobsresponsetypedef"></a>
+
 ## ListJobsResponseTypeDef
 
 ```python
@@ -1257,6 +1403,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -1267,6 +1415,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listprojectsresponsetypedef"></a>
 
 ## ListProjectsResponseTypeDef
 
@@ -1280,6 +1430,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecipeversionsrequestrequesttypedef"></a>
 
 ## ListRecipeVersionsRequestRequestTypeDef
 
@@ -1296,6 +1448,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listrecipeversionsresponsetypedef"></a>
+
 ## ListRecipeVersionsResponseTypeDef
 
 ```python
@@ -1309,6 +1463,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrecipesrequestrequesttypedef"></a>
+
 ## ListRecipesRequestRequestTypeDef
 
 ```python
@@ -1320,6 +1476,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `RecipeVersion`: `str`
+
+<a id="listrecipesresponsetypedef"></a>
 
 ## ListRecipesResponseTypeDef
 
@@ -1334,6 +1492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrulesetsrequestrequesttypedef"></a>
+
 ## ListRulesetsRequestRequestTypeDef
 
 ```python
@@ -1345,6 +1505,8 @@ Optional fields:
 - `TargetArn`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listrulesetsresponsetypedef"></a>
 
 ## ListRulesetsResponseTypeDef
 
@@ -1359,6 +1521,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listschedulesrequestrequesttypedef"></a>
+
 ## ListSchedulesRequestRequestTypeDef
 
 ```python
@@ -1370,6 +1534,8 @@ Optional fields:
 - `JobName`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listschedulesresponsetypedef"></a>
 
 ## ListSchedulesResponseTypeDef
 
@@ -1384,6 +1550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1393,6 +1561,8 @@ from mypy_boto3_databrew.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1406,6 +1576,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="metadatatypedef"></a>
+
 ## MetadataTypeDef
 
 ```python
@@ -1416,6 +1588,8 @@ Optional fields:
 
 - `SourceArn`: `str`
 
+<a id="outputformatoptionstypedef"></a>
+
 ## OutputFormatOptionsTypeDef
 
 ```python
@@ -1425,6 +1599,8 @@ from mypy_boto3_databrew.type_defs import OutputFormatOptionsTypeDef
 Optional fields:
 
 - `Csv`: [CsvOutputOptionsTypeDef](./type_defs.md#csvoutputoptionstypedef)
+
+<a id="outputtypedef"></a>
 
 ## OutputTypeDef
 
@@ -1446,6 +1622,8 @@ Optional fields:
 - `FormatOptions`:
   [OutputFormatOptionsTypeDef](./type_defs.md#outputformatoptionstypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1457,6 +1635,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pathoptionstypedef"></a>
 
 ## PathOptionsTypeDef
 
@@ -1471,6 +1651,8 @@ Optional fields:
 - `FilesLimit`: [FilesLimitTypeDef](./type_defs.md#fileslimittypedef)
 - `Parameters`: `Mapping`\[`str`,
   [DatasetParameterTypeDef](./type_defs.md#datasetparametertypedef)\]
+
+<a id="profileconfigurationtypedef"></a>
 
 ## ProfileConfigurationTypeDef
 
@@ -1488,6 +1670,8 @@ Optional fields:
   `Sequence`\[[ColumnStatisticsConfigurationTypeDef](./type_defs.md#columnstatisticsconfigurationtypedef)\]
 - `EntityDetectorConfiguration`:
   [EntityDetectorConfigurationTypeDef](./type_defs.md#entitydetectorconfigurationtypedef)
+
+<a id="projecttypedef"></a>
 
 ## ProjectTypeDef
 
@@ -1515,6 +1699,8 @@ Optional fields:
 - `OpenedBy`: `str`
 - `OpenDate`: `datetime`
 
+<a id="publishreciperequestrequesttypedef"></a>
+
 ## PublishRecipeRequestRequestTypeDef
 
 ```python
@@ -1529,6 +1715,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="publishreciperesponsetypedef"></a>
+
 ## PublishRecipeResponseTypeDef
 
 ```python
@@ -1540,6 +1728,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="recipeactiontypedef"></a>
 
 ## RecipeActionTypeDef
 
@@ -1555,6 +1745,8 @@ Optional fields:
 
 - `Parameters`: `Mapping`\[`str`, `str`\]
 
+<a id="recipereferencetypedef"></a>
+
 ## RecipeReferenceTypeDef
 
 ```python
@@ -1568,6 +1760,8 @@ Required fields:
 Optional fields:
 
 - `RecipeVersion`: `str`
+
+<a id="recipesteptypedef"></a>
 
 ## RecipeStepTypeDef
 
@@ -1583,6 +1777,8 @@ Optional fields:
 
 - `ConditionExpressions`:
   `Sequence`\[[ConditionExpressionTypeDef](./type_defs.md#conditionexpressiontypedef)\]
+
+<a id="recipetypedef"></a>
 
 ## RecipeTypeDef
 
@@ -1609,6 +1805,8 @@ Optional fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `RecipeVersion`: `str`
 
+<a id="recipeversionerrordetailtypedef"></a>
+
 ## RecipeVersionErrorDetailTypeDef
 
 ```python
@@ -1620,6 +1818,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `RecipeVersion`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1634,6 +1834,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="ruletypedef"></a>
 
 ## RuleTypeDef
 
@@ -1653,6 +1855,8 @@ Optional fields:
 - `Threshold`: [ThresholdTypeDef](./type_defs.md#thresholdtypedef)
 - `ColumnSelectors`:
   `Sequence`\[[ColumnSelectorTypeDef](./type_defs.md#columnselectortypedef)\]
+
+<a id="rulesetitemtypedef"></a>
 
 ## RulesetItemTypeDef
 
@@ -1677,6 +1881,8 @@ Optional fields:
 - `RuleCount`: `int`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -1692,6 +1898,8 @@ Optional fields:
 - `Key`: `str`
 - `BucketOwner`: `str`
 
+<a id="s3tableoutputoptionstypedef"></a>
+
 ## S3TableOutputOptionsTypeDef
 
 ```python
@@ -1701,6 +1909,8 @@ from mypy_boto3_databrew.type_defs import S3TableOutputOptionsTypeDef
 Required fields:
 
 - `Location`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
+
+<a id="sampletypedef"></a>
 
 ## SampleTypeDef
 
@@ -1715,6 +1925,8 @@ Required fields:
 Optional fields:
 
 - `Size`: `int`
+
+<a id="scheduletypedef"></a>
 
 ## ScheduleTypeDef
 
@@ -1738,6 +1950,8 @@ Optional fields:
 - `CronExpression`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="sendprojectsessionactionrequestrequesttypedef"></a>
+
 ## SendProjectSessionActionRequestRequestTypeDef
 
 ```python
@@ -1756,6 +1970,8 @@ Optional fields:
 - `ClientSessionId`: `str`
 - `ViewFrame`: [ViewFrameTypeDef](./type_defs.md#viewframetypedef)
 
+<a id="sendprojectsessionactionresponsetypedef"></a>
+
 ## SendProjectSessionActionResponseTypeDef
 
 ```python
@@ -1770,6 +1986,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startjobrunrequestrequesttypedef"></a>
+
 ## StartJobRunRequestRequestTypeDef
 
 ```python
@@ -1779,6 +1997,8 @@ from mypy_boto3_databrew.type_defs import StartJobRunRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="startjobrunresponsetypedef"></a>
 
 ## StartJobRunResponseTypeDef
 
@@ -1791,6 +2011,8 @@ Required fields:
 - `RunId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startprojectsessionrequestrequesttypedef"></a>
 
 ## StartProjectSessionRequestRequestTypeDef
 
@@ -1806,6 +2028,8 @@ Optional fields:
 
 - `AssumeControl`: `bool`
 
+<a id="startprojectsessionresponsetypedef"></a>
+
 ## StartProjectSessionResponseTypeDef
 
 ```python
@@ -1819,6 +2043,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="statisticoverridetypedef"></a>
+
 ## StatisticOverrideTypeDef
 
 ```python
@@ -1829,6 +2055,8 @@ Required fields:
 
 - `Statistic`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
+
+<a id="statisticsconfigurationtypedef"></a>
 
 ## StatisticsConfigurationTypeDef
 
@@ -1842,6 +2070,8 @@ Optional fields:
 - `Overrides`:
   `Sequence`\[[StatisticOverrideTypeDef](./type_defs.md#statisticoverridetypedef)\]
 
+<a id="stopjobrunrequestrequesttypedef"></a>
+
 ## StopJobRunRequestRequestTypeDef
 
 ```python
@@ -1852,6 +2082,8 @@ Required fields:
 
 - `Name`: `str`
 - `RunId`: `str`
+
+<a id="stopjobrunresponsetypedef"></a>
 
 ## StopJobRunResponseTypeDef
 
@@ -1865,6 +2097,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1875,6 +2109,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="thresholdtypedef"></a>
 
 ## ThresholdTypeDef
 
@@ -1891,6 +2127,8 @@ Optional fields:
 - `Type`: [ThresholdTypeType](./literals.md#thresholdtypetype)
 - `Unit`: [ThresholdUnitType](./literals.md#thresholdunittype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1901,6 +2139,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatasetrequestrequesttypedef"></a>
 
 ## UpdateDatasetRequestRequestTypeDef
 
@@ -1919,6 +2159,8 @@ Optional fields:
 - `FormatOptions`: [FormatOptionsTypeDef](./type_defs.md#formatoptionstypedef)
 - `PathOptions`: [PathOptionsTypeDef](./type_defs.md#pathoptionstypedef)
 
+<a id="updatedatasetresponsetypedef"></a>
+
 ## UpdateDatasetResponseTypeDef
 
 ```python
@@ -1930,6 +2172,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprofilejobrequestrequesttypedef"></a>
 
 ## UpdateProfileJobRequestRequestTypeDef
 
@@ -1957,6 +2201,8 @@ Optional fields:
 - `Timeout`: `int`
 - `JobSample`: [JobSampleTypeDef](./type_defs.md#jobsampletypedef)
 
+<a id="updateprofilejobresponsetypedef"></a>
+
 ## UpdateProfileJobResponseTypeDef
 
 ```python
@@ -1968,6 +2214,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectrequestrequesttypedef"></a>
 
 ## UpdateProjectRequestRequestTypeDef
 
@@ -1984,6 +2232,8 @@ Optional fields:
 
 - `Sample`: [SampleTypeDef](./type_defs.md#sampletypedef)
 
+<a id="updateprojectresponsetypedef"></a>
+
 ## UpdateProjectResponseTypeDef
 
 ```python
@@ -1996,6 +2246,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterecipejobrequestrequesttypedef"></a>
 
 ## UpdateRecipeJobRequestRequestTypeDef
 
@@ -2022,6 +2274,8 @@ Optional fields:
   `Sequence`\[[DatabaseOutputTypeDef](./type_defs.md#databaseoutputtypedef)\]
 - `Timeout`: `int`
 
+<a id="updaterecipejobresponsetypedef"></a>
+
 ## UpdateRecipeJobResponseTypeDef
 
 ```python
@@ -2033,6 +2287,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatereciperequestrequesttypedef"></a>
 
 ## UpdateRecipeRequestRequestTypeDef
 
@@ -2049,6 +2305,8 @@ Optional fields:
 - `Description`: `str`
 - `Steps`: `Sequence`\[[RecipeStepTypeDef](./type_defs.md#recipesteptypedef)\]
 
+<a id="updatereciperesponsetypedef"></a>
+
 ## UpdateRecipeResponseTypeDef
 
 ```python
@@ -2060,6 +2318,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterulesetrequestrequesttypedef"></a>
 
 ## UpdateRulesetRequestRequestTypeDef
 
@@ -2076,6 +2336,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updaterulesetresponsetypedef"></a>
+
 ## UpdateRulesetResponseTypeDef
 
 ```python
@@ -2087,6 +2349,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateschedulerequestrequesttypedef"></a>
 
 ## UpdateScheduleRequestRequestTypeDef
 
@@ -2103,6 +2367,8 @@ Optional fields:
 
 - `JobNames`: `Sequence`\[`str`\]
 
+<a id="updatescheduleresponsetypedef"></a>
+
 ## UpdateScheduleResponseTypeDef
 
 ```python
@@ -2114,6 +2380,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="validationconfigurationtypedef"></a>
 
 ## ValidationConfigurationTypeDef
 
@@ -2129,6 +2397,8 @@ Optional fields:
 
 - `ValidationMode`: `Literal['CHECK_ALL']` (see
   [ValidationModeType](./literals.md#validationmodetype))
+
+<a id="viewframetypedef"></a>
 
 ## ViewFrameTypeDef
 

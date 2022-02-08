@@ -1,3 +1,5 @@
+<a id="codeguruprofilerclient-for-boto3-codeguruprofiler-module"></a>
+
 # CodeGuruProfilerClient for boto3 CodeGuruProfiler module
 
 > [Index](..) > [CodeGuruProfiler](.) > CodeGuruProfilerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeGuruProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler)
 type annotations stubs module
-[mypy_boto3_codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
+[mypy-boto3-codeguruprofiler](https://pypi.org/project/mypy-boto3-codeguruprofiler/).
 
 - [CodeGuruProfilerClient for boto3 CodeGuruProfiler module](#codeguruprofilerclient-for-boto3-codeguruprofiler-module)
   - [CodeGuruProfilerClient](#codeguruprofilerclient)
@@ -39,6 +41,8 @@ type annotations stubs module
     - [update_profiling_group](#update_profiling_group)
     - [get_paginator](#get_paginator)
 
+<a id="codeguruprofilerclient"></a>
+
 ## CodeGuruProfilerClient
 
 Type annotations for `boto3.client("codeguruprofiler")`
@@ -46,14 +50,17 @@ Type annotations for `boto3.client("codeguruprofiler")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codeguruprofiler.client import CodeGuruProfilerClient
 
 def get_codeguruprofiler_client() -> CodeGuruProfilerClient:
-    return boto3.client("codeguruprofiler")
+    return Session().client("codeguruprofiler")
 ```
 
 Boto3 documentation:
 [CodeGuruProfiler.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -77,7 +84,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -89,6 +100,8 @@ Boto3 documentation:
 [CodeGuruProfiler.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeguruprofiler.html#CodeGuruProfiler.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_notification_channels"></a>
 
 ### add_notification_channels
 
@@ -111,6 +124,8 @@ Keyword-only arguments:
 
 Returns
 [AddNotificationChannelsResponseTypeDef](./type_defs.md#addnotificationchannelsresponsetypedef).
+
+<a id="batch_get_frame_metric_data"></a>
 
 ### batch_get_frame_metric_data
 
@@ -140,6 +155,8 @@ Keyword-only arguments:
 Returns
 [BatchGetFrameMetricDataResponseTypeDef](./type_defs.md#batchgetframemetricdataresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -154,6 +171,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="configure_agent"></a>
 
 ### configure_agent
 
@@ -176,6 +195,8 @@ Keyword-only arguments:
 
 Returns
 [ConfigureAgentResponseTypeDef](./type_defs.md#configureagentresponsetypedef).
+
+<a id="create_profiling_group"></a>
 
 ### create_profiling_group
 
@@ -202,6 +223,8 @@ Keyword-only arguments:
 Returns
 [CreateProfilingGroupResponseTypeDef](./type_defs.md#createprofilinggroupresponsetypedef).
 
+<a id="delete_profiling_group"></a>
+
 ### delete_profiling_group
 
 Deletes a profiling group.
@@ -220,6 +243,8 @@ Keyword-only arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_profiling_group"></a>
 
 ### describe_profiling_group
 
@@ -241,6 +266,8 @@ Keyword-only arguments:
 Returns
 [DescribeProfilingGroupResponseTypeDef](./type_defs.md#describeprofilinggroupresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -259,6 +286,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_findings_report_account_summary"></a>
 
 ### get_findings_report_account_summary
 
@@ -282,6 +311,8 @@ Keyword-only arguments:
 Returns
 [GetFindingsReportAccountSummaryResponseTypeDef](./type_defs.md#getfindingsreportaccountsummaryresponsetypedef).
 
+<a id="get_notification_configuration"></a>
+
 ### get_notification_configuration
 
 Get the current configuration for anomaly notifications for a profiling group.
@@ -302,6 +333,8 @@ Keyword-only arguments:
 Returns
 [GetNotificationConfigurationResponseTypeDef](./type_defs.md#getnotificationconfigurationresponsetypedef).
 
+<a id="get_policy"></a>
+
 ### get_policy
 
 Returns the JSON-formatted resource-based policy on a profiling group.
@@ -319,6 +352,8 @@ Keyword-only arguments:
 - `profilingGroupName`: `str` *(required)*
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="get_profile"></a>
 
 ### get_profile
 
@@ -343,6 +378,8 @@ Keyword-only arguments:
 
 Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 
+<a id="get_recommendations"></a>
+
 ### get_recommendations
 
 .
@@ -365,6 +402,8 @@ Keyword-only arguments:
 
 Returns
 [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
+
+<a id="list_findings_reports"></a>
 
 ### list_findings_reports
 
@@ -390,6 +429,8 @@ Keyword-only arguments:
 
 Returns
 [ListFindingsReportsResponseTypeDef](./type_defs.md#listfindingsreportsresponsetypedef).
+
+<a id="list_profile_times"></a>
 
 ### list_profile_times
 
@@ -419,6 +460,8 @@ Keyword-only arguments:
 Returns
 [ListProfileTimesResponseTypeDef](./type_defs.md#listprofiletimesresponsetypedef).
 
+<a id="list_profiling_groups"></a>
+
 ### list_profiling_groups
 
 .
@@ -441,6 +484,8 @@ Keyword-only arguments:
 Returns
 [ListProfilingGroupsResponseTypeDef](./type_defs.md#listprofilinggroupsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags that are assigned to a specified resource.
@@ -460,6 +505,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="post_agent_profile"></a>
 
 ### post_agent_profile
 
@@ -483,6 +530,8 @@ Keyword-only arguments:
 - `profileToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_permission"></a>
 
 ### put_permission
 
@@ -508,6 +557,8 @@ Keyword-only arguments:
 Returns
 [PutPermissionResponseTypeDef](./type_defs.md#putpermissionresponsetypedef).
 
+<a id="remove_notification_channel"></a>
+
 ### remove_notification_channel
 
 Remove one anomaly notifications channel for a profiling group.
@@ -528,6 +579,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveNotificationChannelResponseTypeDef](./type_defs.md#removenotificationchannelresponsetypedef).
+
+<a id="remove_permission"></a>
 
 ### remove_permission
 
@@ -552,6 +605,8 @@ Keyword-only arguments:
 Returns
 [RemovePermissionResponseTypeDef](./type_defs.md#removepermissionresponsetypedef).
 
+<a id="submit_feedback"></a>
+
 ### submit_feedback
 
 .
@@ -573,6 +628,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Use to assign one or more tags to a resource.
@@ -592,6 +649,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Use to remove one or more tags from a resource.
@@ -610,6 +669,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_profiling_group"></a>
 
 ### update_profiling_group
 
@@ -633,6 +694,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProfilingGroupResponseTypeDef](./type_defs.md#updateprofilinggroupresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

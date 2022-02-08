@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ec2instanceconnect-module"></a>
+
 # Literals for boto3 EC2InstanceConnect module
 
 > [Index](..) > [EC2InstanceConnect](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
-[mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
+[mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
 - [Literals for boto3 EC2InstanceConnect module](#literals-for-boto3-ec2instanceconnect-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

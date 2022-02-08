@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-apigatewaymanagementapi-module"></a>
+
 # Type annotations for boto3 ApiGatewayManagementApi module
 
 > [Index](..) > ApiGatewayManagementApi
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ApiGatewayManagementApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewaymanagementapi.html#ApiGatewayManagementApi)
 type annotations stubs module
-[mypy_boto3_apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
+[mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[apigatewaymanagementapi]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[apigatewaymanagementapi]'
+
+# standalone installation
 pip install mypy-boto3-apigatewaymanagementapi
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-apigatewaymanagementapi
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="apigatewaymanagementapiclient"></a>
 
 ## ApiGatewayManagementApiClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -37,6 +51,8 @@ from mypy_boto3_apigatewaymanagementapi.client import ApiGatewayManagementApiCli
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_connection](./client.md#get_connection)
 - [post_to_connection](./client.md#post_to_connection)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -47,6 +63,8 @@ ApiGatewayManagementApiClient [exceptions](./client.md#exceptions)
 - GoneException
 - LimitExceededException
 - PayloadTooLargeException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -59,6 +77,8 @@ from mypy_boto3_apigatewaymanagementapi.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

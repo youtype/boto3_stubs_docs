@@ -1,3 +1,5 @@
+<a id="glacierclient-for-boto3-glacier-module"></a>
+
 # GlacierClient for boto3 Glacier module
 
 > [Index](..) > [Glacier](.) > GlacierClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
 type annotations stubs module
-[mypy_boto3_glacier](https://pypi.org/project/mypy-boto3-glacier/).
+[mypy-boto3-glacier](https://pypi.org/project/mypy-boto3-glacier/).
 
 - [GlacierClient for boto3 Glacier module](#glacierclient-for-boto3-glacier-module)
   - [GlacierClient](#glacierclient)
@@ -50,6 +52,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="glacierclient"></a>
+
 ## GlacierClient
 
 Type annotations for `boto3.client("glacier")`
@@ -57,14 +61,17 @@ Type annotations for `boto3.client("glacier")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_glacier.client import GlacierClient
 
 def get_glacier_client() -> GlacierClient:
-    return boto3.client("glacier")
+    return Session().client("glacier")
 ```
 
 Boto3 documentation:
 [Glacier.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -90,7 +97,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceUnavailableException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -102,6 +113,8 @@ Boto3 documentation:
 [Glacier.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="abort_multipart_upload"></a>
 
 ### abort_multipart_upload
 
@@ -121,6 +134,8 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 - `uploadId`: `str` *(required)*
 
+<a id="abort_vault_lock"></a>
+
 ### abort_vault_lock
 
 This operation aborts the vault locking process if the vault lock is not in the
@@ -138,6 +153,8 @@ Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
+
+<a id="add_tags_to_vault"></a>
 
 ### add_tags_to_vault
 
@@ -157,6 +174,8 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -171,6 +190,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_multipart_upload"></a>
 
 ### complete_multipart_upload
 
@@ -198,6 +219,8 @@ Keyword-only arguments:
 Returns
 [ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
+<a id="complete_vault_lock"></a>
+
 ### complete_vault_lock
 
 This operation completes the vault locking process by transitioning the vault
@@ -218,6 +241,8 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 - `lockId`: `str` *(required)*
 
+<a id="create_vault"></a>
+
 ### create_vault
 
 This operation creates a new vault with the specified name.
@@ -237,6 +262,8 @@ Keyword-only arguments:
 
 Returns [CreateVaultOutputTypeDef](./type_defs.md#createvaultoutputtypedef).
 
+<a id="delete_archive"></a>
+
 ### delete_archive
 
 This operation deletes an archive from a vault.
@@ -255,6 +282,8 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 - `archiveId`: `str` *(required)*
 
+<a id="delete_vault"></a>
+
 ### delete_vault
 
 This operation deletes a vault.
@@ -271,6 +300,8 @@ Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
+
+<a id="delete_vault_access_policy"></a>
 
 ### delete_vault_access_policy
 
@@ -290,6 +321,8 @@ Keyword-only arguments:
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 
+<a id="delete_vault_notifications"></a>
+
 ### delete_vault_notifications
 
 This operation deletes the notification configuration set for a vault.
@@ -307,6 +340,8 @@ Keyword-only arguments:
 
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
+
+<a id="describe_job"></a>
 
 ### describe_job
 
@@ -332,6 +367,8 @@ Keyword-only arguments:
 Returns
 [GlacierJobDescriptionResponseMetadataTypeDef](./type_defs.md#glacierjobdescriptionresponsemetadatatypedef).
 
+<a id="describe_vault"></a>
+
 ### describe_vault
 
 This operation returns information about a vault, including the vault's Amazon
@@ -354,6 +391,8 @@ Keyword-only arguments:
 Returns
 [DescribeVaultOutputResponseMetadataTypeDef](./type_defs.md#describevaultoutputresponsemetadatatypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -371,6 +410,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_data_retrieval_policy"></a>
 
 ### get_data_retrieval_policy
 
@@ -393,6 +434,8 @@ Keyword-only arguments:
 Returns
 [GetDataRetrievalPolicyOutputTypeDef](./type_defs.md#getdataretrievalpolicyoutputtypedef).
 
+<a id="get_job_output"></a>
+
 ### get_job_output
 
 This operation downloads the output of the job you initiated using InitiateJob.
@@ -413,6 +456,8 @@ Keyword-only arguments:
 - `range`: `str`
 
 Returns [GetJobOutputOutputTypeDef](./type_defs.md#getjoboutputoutputtypedef).
+
+<a id="get_vault_access_policy"></a>
 
 ### get_vault_access_policy
 
@@ -437,6 +482,8 @@ Keyword-only arguments:
 Returns
 [GetVaultAccessPolicyOutputTypeDef](./type_defs.md#getvaultaccesspolicyoutputtypedef).
 
+<a id="get_vault_lock"></a>
+
 ### get_vault_lock
 
 This operation retrieves the following attributes from the `lock-policy`
@@ -457,6 +504,8 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 
 Returns [GetVaultLockOutputTypeDef](./type_defs.md#getvaultlockoutputtypedef).
+
+<a id="get_vault_notifications"></a>
 
 ### get_vault_notifications
 
@@ -479,6 +528,8 @@ Keyword-only arguments:
 Returns
 [GetVaultNotificationsOutputTypeDef](./type_defs.md#getvaultnotificationsoutputtypedef).
 
+<a id="initiate_job"></a>
+
 ### initiate_job
 
 This operation initiates a job of the specified type, which can be a select, an
@@ -499,6 +550,8 @@ Keyword-only arguments:
 - `jobParameters`: [JobParametersTypeDef](./type_defs.md#jobparameterstypedef)
 
 Returns [InitiateJobOutputTypeDef](./type_defs.md#initiatejoboutputtypedef).
+
+<a id="initiate_multipart_upload"></a>
 
 ### initiate_multipart_upload
 
@@ -523,6 +576,8 @@ Keyword-only arguments:
 Returns
 [InitiateMultipartUploadOutputTypeDef](./type_defs.md#initiatemultipartuploadoutputtypedef).
 
+<a id="initiate_vault_lock"></a>
+
 ### initiate_vault_lock
 
 This operation initiates the vault locking process by doing the following \*
@@ -544,6 +599,8 @@ Keyword-only arguments:
 
 Returns
 [InitiateVaultLockOutputTypeDef](./type_defs.md#initiatevaultlockoutputtypedef).
+
+<a id="list_jobs"></a>
 
 ### list_jobs
 
@@ -569,6 +626,8 @@ Keyword-only arguments:
 
 Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
 
+<a id="list_multipart_uploads"></a>
+
 ### list_multipart_uploads
 
 This operation lists in-progress multipart uploads for the specified vault.
@@ -590,6 +649,8 @@ Keyword-only arguments:
 
 Returns
 [ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef).
+
+<a id="list_parts"></a>
 
 ### list_parts
 
@@ -614,6 +675,8 @@ Keyword-only arguments:
 
 Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
+<a id="list_provisioned_capacity"></a>
+
 ### list_provisioned_capacity
 
 This operation lists the provisioned capacity units for the specified AWS
@@ -635,6 +698,8 @@ Keyword-only arguments:
 Returns
 [ListProvisionedCapacityOutputTypeDef](./type_defs.md#listprovisionedcapacityoutputtypedef).
 
+<a id="list_tags_for_vault"></a>
+
 ### list_tags_for_vault
 
 This operation lists all the tags attached to a vault.
@@ -654,6 +719,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForVaultOutputTypeDef](./type_defs.md#listtagsforvaultoutputtypedef).
+
+<a id="list_vaults"></a>
 
 ### list_vaults
 
@@ -675,6 +742,8 @@ Keyword-only arguments:
 
 Returns [ListVaultsOutputTypeDef](./type_defs.md#listvaultsoutputtypedef).
 
+<a id="purchase_provisioned_capacity"></a>
+
 ### purchase_provisioned_capacity
 
 This operation purchases a provisioned capacity unit for an AWS account.
@@ -695,6 +764,8 @@ Keyword-only arguments:
 Returns
 [PurchaseProvisionedCapacityOutputTypeDef](./type_defs.md#purchaseprovisionedcapacityoutputtypedef).
 
+<a id="remove_tags_from_vault"></a>
+
 ### remove_tags_from_vault
 
 This operation removes one or more tags from the set of tags attached to a
@@ -713,6 +784,8 @@ Keyword-only arguments:
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="set_data_retrieval_policy"></a>
 
 ### set_data_retrieval_policy
 
@@ -734,6 +807,8 @@ Keyword-only arguments:
 - `Policy`:
   [DataRetrievalPolicyTypeDef](./type_defs.md#dataretrievalpolicytypedef)
 
+<a id="set_vault_access_policy"></a>
+
 ### set_vault_access_policy
 
 This operation configures an access policy for a vault and will overwrite an
@@ -752,6 +827,8 @@ Keyword-only arguments:
 - `accountId`: `str` *(required)*
 - `vaultName`: `str` *(required)*
 - `policy`: [VaultAccessPolicyTypeDef](./type_defs.md#vaultaccesspolicytypedef)
+
+<a id="set_vault_notifications"></a>
 
 ### set_vault_notifications
 
@@ -772,6 +849,8 @@ Keyword-only arguments:
 - `vaultName`: `str` *(required)*
 - `vaultNotificationConfig`:
   [VaultNotificationConfigTypeDef](./type_defs.md#vaultnotificationconfigtypedef)
+
+<a id="upload_archive"></a>
 
 ### upload_archive
 
@@ -795,6 +874,8 @@ Keyword-only arguments:
 
 Returns
 [ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
+
+<a id="upload_multipart_part"></a>
 
 ### upload_multipart_part
 
@@ -820,6 +901,8 @@ Keyword-only arguments:
 Returns
 [UploadMultipartPartOutputTypeDef](./type_defs.md#uploadmultipartpartoutputtypedef).
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("glacier").get_paginator` method with
@@ -833,6 +916,8 @@ overloads.
   [ListPartsPaginator](./paginators.md#listpartspaginator)
 - `client.get_paginator("list_vaults")` ->
   [ListVaultsPaginator](./paginators.md#listvaultspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-account-module"></a>
+
 # Typed dictionaries for boto3 Account module
 
 > [Index](..) > [Account](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/account.html#Account)
 type annotations stubs module
-[mypy_boto3_account](https://pypi.org/project/mypy-boto3-account/).
+[mypy-boto3-account](https://pypi.org/project/mypy-boto3-account/).
 
 - [Typed dictionaries for boto3 Account module](#typed-dictionaries-for-boto3-account-module)
   - [AlternateContactTypeDef](#alternatecontacttypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [GetAlternateContactResponseTypeDef](#getalternatecontactresponsetypedef)
   - [PutAlternateContactRequestRequestTypeDef](#putalternatecontactrequestrequesttypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="alternatecontacttypedef"></a>
 
 ## AlternateContactTypeDef
 
@@ -30,6 +34,8 @@ Optional fields:
 - `PhoneNumber`: `str`
 - `Title`: `str`
 
+<a id="deletealternatecontactrequestrequesttypedef"></a>
+
 ## DeleteAlternateContactRequestRequestTypeDef
 
 ```python
@@ -44,6 +50,8 @@ Required fields:
 Optional fields:
 
 - `AccountId`: `str`
+
+<a id="getalternatecontactrequestrequesttypedef"></a>
 
 ## GetAlternateContactRequestRequestTypeDef
 
@@ -60,6 +68,8 @@ Optional fields:
 
 - `AccountId`: `str`
 
+<a id="getalternatecontactresponsetypedef"></a>
+
 ## GetAlternateContactResponseTypeDef
 
 ```python
@@ -72,6 +82,8 @@ Required fields:
   [AlternateContactTypeDef](./type_defs.md#alternatecontacttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putalternatecontactrequestrequesttypedef"></a>
 
 ## PutAlternateContactRequestRequestTypeDef
 
@@ -91,6 +103,8 @@ Required fields:
 Optional fields:
 
 - `AccountId`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

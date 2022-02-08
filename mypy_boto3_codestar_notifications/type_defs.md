@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-codestarnotifications-module"></a>
+
 # Typed dictionaries for boto3 CodeStarNotifications module
 
 > [Index](..) > [CodeStarNotifications](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
-[mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
+[mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 - [Typed dictionaries for boto3 CodeStarNotifications module](#typed-dictionaries-for-boto3-codestarnotifications-module)
   - [CreateNotificationRuleRequestRequestTypeDef](#createnotificationrulerequestrequesttypedef)
@@ -41,6 +43,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateNotificationRuleRequestRequestTypeDef](#updatenotificationrulerequestrequesttypedef)
 
+<a id="createnotificationrulerequestrequesttypedef"></a>
+
 ## CreateNotificationRuleRequestRequestTypeDef
 
 ```python
@@ -62,6 +66,8 @@ Optional fields:
 - `Status`:
   [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 
+<a id="createnotificationruleresulttypedef"></a>
+
 ## CreateNotificationRuleResultTypeDef
 
 ```python
@@ -74,6 +80,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletenotificationrulerequestrequesttypedef"></a>
+
 ## DeleteNotificationRuleRequestRequestTypeDef
 
 ```python
@@ -83,6 +91,8 @@ from mypy_boto3_codestar_notifications.type_defs import DeleteNotificationRuleRe
 Required fields:
 
 - `Arn`: `str`
+
+<a id="deletenotificationruleresulttypedef"></a>
 
 ## DeleteNotificationRuleResultTypeDef
 
@@ -95,6 +105,8 @@ Required fields:
 - `Arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletetargetrequestrequesttypedef"></a>
 
 ## DeleteTargetRequestRequestTypeDef
 
@@ -110,6 +122,8 @@ Optional fields:
 
 - `ForceUnsubscribeAll`: `bool`
 
+<a id="describenotificationrulerequestrequesttypedef"></a>
+
 ## DescribeNotificationRuleRequestRequestTypeDef
 
 ```python
@@ -119,6 +133,8 @@ from mypy_boto3_codestar_notifications.type_defs import DescribeNotificationRule
 Required fields:
 
 - `Arn`: `str`
+
+<a id="describenotificationruleresulttypedef"></a>
 
 ## DescribeNotificationRuleResultTypeDef
 
@@ -145,6 +161,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="eventtypesummarytypedef"></a>
+
 ## EventTypeSummaryTypeDef
 
 ```python
@@ -158,6 +176,8 @@ Optional fields:
 - `EventTypeName`: `str`
 - `ResourceType`: `str`
 
+<a id="listeventtypesfiltertypedef"></a>
+
 ## ListEventTypesFilterTypeDef
 
 ```python
@@ -169,6 +189,8 @@ Required fields:
 - `Name`:
   [ListEventTypesFilterNameType](./literals.md#listeventtypesfilternametype)
 - `Value`: `str`
+
+<a id="listeventtypesrequestrequesttypedef"></a>
 
 ## ListEventTypesRequestRequestTypeDef
 
@@ -182,6 +204,8 @@ Optional fields:
   `Sequence`\[[ListEventTypesFilterTypeDef](./type_defs.md#listeventtypesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listeventtypesresulttypedef"></a>
 
 ## ListEventTypesResultTypeDef
 
@@ -197,6 +221,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listnotificationrulesfiltertypedef"></a>
+
 ## ListNotificationRulesFilterTypeDef
 
 ```python
@@ -208,6 +234,8 @@ Required fields:
 - `Name`:
   [ListNotificationRulesFilterNameType](./literals.md#listnotificationrulesfilternametype)
 - `Value`: `str`
+
+<a id="listnotificationrulesrequestrequesttypedef"></a>
 
 ## ListNotificationRulesRequestRequestTypeDef
 
@@ -221,6 +249,8 @@ Optional fields:
   `Sequence`\[[ListNotificationRulesFilterTypeDef](./type_defs.md#listnotificationrulesfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listnotificationrulesresulttypedef"></a>
 
 ## ListNotificationRulesResultTypeDef
 
@@ -236,6 +266,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -245,6 +277,8 @@ from mypy_boto3_codestar_notifications.type_defs import ListTagsForResourceReque
 Required fields:
 
 - `Arn`: `str`
+
+<a id="listtagsforresourceresulttypedef"></a>
 
 ## ListTagsForResourceResultTypeDef
 
@@ -258,6 +292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtargetsfiltertypedef"></a>
+
 ## ListTargetsFilterTypeDef
 
 ```python
@@ -268,6 +304,8 @@ Required fields:
 
 - `Name`: [ListTargetsFilterNameType](./literals.md#listtargetsfilternametype)
 - `Value`: `str`
+
+<a id="listtargetsrequestrequesttypedef"></a>
 
 ## ListTargetsRequestRequestTypeDef
 
@@ -281,6 +319,8 @@ Optional fields:
   `Sequence`\[[ListTargetsFilterTypeDef](./type_defs.md#listtargetsfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listtargetsresulttypedef"></a>
 
 ## ListTargetsResultTypeDef
 
@@ -296,6 +336,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="notificationrulesummarytypedef"></a>
+
 ## NotificationRuleSummaryTypeDef
 
 ```python
@@ -306,6 +348,8 @@ Optional fields:
 
 - `Id`: `str`
 - `Arn`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -318,6 +362,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -332,6 +378,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="subscriberequestrequesttypedef"></a>
 
 ## SubscribeRequestRequestTypeDef
 
@@ -348,6 +396,8 @@ Optional fields:
 
 - `ClientRequestToken`: `str`
 
+<a id="subscriberesulttypedef"></a>
+
 ## SubscribeResultTypeDef
 
 ```python
@@ -360,6 +410,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -370,6 +422,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tagresourceresulttypedef"></a>
 
 ## TagResourceResultTypeDef
 
@@ -383,6 +437,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="targetsummarytypedef"></a>
+
 ## TargetSummaryTypeDef
 
 ```python
@@ -395,6 +451,8 @@ Optional fields:
 - `TargetType`: `str`
 - `TargetStatus`: [TargetStatusType](./literals.md#targetstatustype)
 
+<a id="targettypedef"></a>
+
 ## TargetTypeDef
 
 ```python
@@ -406,6 +464,8 @@ Optional fields:
 - `TargetType`: `str`
 - `TargetAddress`: `str`
 
+<a id="unsubscriberequestrequesttypedef"></a>
+
 ## UnsubscribeRequestRequestTypeDef
 
 ```python
@@ -416,6 +476,8 @@ Required fields:
 
 - `Arn`: `str`
 - `TargetAddress`: `str`
+
+<a id="unsubscriberesulttypedef"></a>
 
 ## UnsubscribeResultTypeDef
 
@@ -429,6 +491,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -439,6 +503,8 @@ Required fields:
 
 - `Arn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatenotificationrulerequestrequesttypedef"></a>
 
 ## UpdateNotificationRuleRequestRequestTypeDef
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-fis-module"></a>
+
 # Type annotations for boto3 FIS module
 
 > [Index](..) > FIS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [FIS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS)
 type annotations stubs module
-[mypy_boto3_fis](https://pypi.org/project/mypy-boto3-fis/).
+[mypy-boto3-fis](https://pypi.org/project/mypy-boto3-fis/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[fis]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[fis]'
+
+# standalone installation
 pip install mypy-boto3-fis
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-fis
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="fisclient"></a>
+
 ## FISClient
 
 Type annotations for `boto3.client("fis")` as [FISClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_fis.client import FISClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -50,6 +64,8 @@ from mypy_boto3_fis.client import FISClient
 - [untag_resource](./client.md#untag_resource)
 - [update_experiment_template](./client.md#update_experiment_template)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 FISClient [exceptions](./client.md#exceptions)
@@ -59,6 +75,8 @@ FISClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceQuotaExceededException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -73,6 +91,8 @@ from mypy_boto3_fis.literals import ExperimentActionStatusType, ...
 - [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
 - [ExperimentStatusType](./literals.md#experimentstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

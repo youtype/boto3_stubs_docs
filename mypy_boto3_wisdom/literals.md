@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-connectwisdomservice-module"></a>
+
 # Literals for boto3 ConnectWisdomService module
 
 > [Index](..) > [ConnectWisdomService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
 type annotations stubs module
-[mypy_boto3_wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 - [Literals for boto3 ConnectWisdomService module](#literals-for-boto3-connectwisdomservice-module)
   - [AssistantStatusType](#assistantstatustype)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="assistantstatustype"></a>
+
 ## AssistantStatusType
 
 ```python
@@ -42,6 +46,8 @@ Values:
 - `DELETE_IN_PROGRESS`
 - `DELETED`
 
+<a id="assistanttypetype"></a>
+
 ## AssistantTypeType
 
 ```python
@@ -52,6 +58,8 @@ Values:
 
 - `AGENT`
 
+<a id="associationtypetype"></a>
+
 ## AssociationTypeType
 
 ```python
@@ -61,6 +69,8 @@ from mypy_boto3_wisdom.literals import AssociationTypeType
 Values:
 
 - `KNOWLEDGE_BASE`
+
+<a id="contentstatustype"></a>
 
 ## ContentStatusType
 
@@ -78,6 +88,8 @@ Values:
 - `DELETED`
 - `UPDATE_FAILED`
 
+<a id="filterfieldtype"></a>
+
 ## FilterFieldType
 
 ```python
@@ -88,6 +100,8 @@ Values:
 
 - `NAME`
 
+<a id="filteroperatortype"></a>
+
 ## FilterOperatorType
 
 ```python
@@ -97,6 +111,8 @@ from mypy_boto3_wisdom.literals import FilterOperatorType
 Values:
 
 - `EQUALS`
+
+<a id="knowledgebasestatustype"></a>
 
 ## KnowledgeBaseStatusType
 
@@ -113,6 +129,8 @@ Values:
 - `DELETE_IN_PROGRESS`
 - `DELETED`
 
+<a id="knowledgebasetypetype"></a>
+
 ## KnowledgeBaseTypeType
 
 ```python
@@ -124,6 +142,8 @@ Values:
 - `CUSTOM`
 - `EXTERNAL`
 
+<a id="listassistantassociationspaginatorname"></a>
+
 ## ListAssistantAssociationsPaginatorName
 
 ```python
@@ -133,6 +153,8 @@ from mypy_boto3_wisdom.literals import ListAssistantAssociationsPaginatorName
 Values:
 
 - `list_assistant_associations`
+
+<a id="listassistantspaginatorname"></a>
 
 ## ListAssistantsPaginatorName
 
@@ -144,6 +166,8 @@ Values:
 
 - `list_assistants`
 
+<a id="listcontentspaginatorname"></a>
+
 ## ListContentsPaginatorName
 
 ```python
@@ -153,6 +177,8 @@ from mypy_boto3_wisdom.literals import ListContentsPaginatorName
 Values:
 
 - `list_contents`
+
+<a id="listknowledgebasespaginatorname"></a>
 
 ## ListKnowledgeBasesPaginatorName
 
@@ -164,6 +190,8 @@ Values:
 
 - `list_knowledge_bases`
 
+<a id="queryassistantpaginatorname"></a>
+
 ## QueryAssistantPaginatorName
 
 ```python
@@ -173,6 +201,8 @@ from mypy_boto3_wisdom.literals import QueryAssistantPaginatorName
 Values:
 
 - `query_assistant`
+
+<a id="relevanceleveltype"></a>
 
 ## RelevanceLevelType
 
@@ -186,6 +216,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 
+<a id="searchcontentpaginatorname"></a>
+
 ## SearchContentPaginatorName
 
 ```python
@@ -196,6 +228,8 @@ Values:
 
 - `search_content`
 
+<a id="searchsessionspaginatorname"></a>
+
 ## SearchSessionsPaginatorName
 
 ```python
@@ -205,6 +239,8 @@ from mypy_boto3_wisdom.literals import SearchSessionsPaginatorName
 Values:
 
 - `search_sessions`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -513,6 +549,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

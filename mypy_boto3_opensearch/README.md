@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-opensearchservice-module"></a>
+
 # Type annotations for boto3 OpenSearchService module
 
 > [Index](..) > OpenSearchService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [OpenSearchService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opensearch.html#OpenSearchService)
 type annotations stubs module
-[mypy_boto3_opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
+[mypy-boto3-opensearch](https://pypi.org/project/mypy-boto3-opensearch/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[opensearch]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[opensearch]'
+
+# standalone installation
 pip install mypy-boto3-opensearch
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-opensearch
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="opensearchserviceclient"></a>
 
 ## OpenSearchServiceClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_opensearch.client import OpenSearchServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -75,6 +89,8 @@ from mypy_boto3_opensearch.client import OpenSearchServiceClient
 - [update_package](./client.md#update_package)
 - [upgrade_domain](./client.md#upgrade_domain)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 OpenSearchServiceClient [exceptions](./client.md#exceptions)
@@ -91,6 +107,8 @@ OpenSearchServiceClient [exceptions](./client.md#exceptions)
 - ResourceAlreadyExistsException
 - ResourceNotFoundException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -128,6 +146,8 @@ from mypy_boto3_opensearch.literals import AutoTuneDesiredStateType, ...
 - [UpgradeStepType](./literals.md#upgradesteptype)
 - [VolumeTypeType](./literals.md#volumetypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

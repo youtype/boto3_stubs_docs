@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iam-module"></a>
+
 # Literals for boto3 IAM module
 
 > [Index](..) > [IAM](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
 type annotations stubs module
-[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 - [Literals for boto3 IAM module](#literals-for-boto3-iam-module)
   - [AccessAdvisorUsageGranularityTypeType](#accessadvisorusagegranularitytypetype)
@@ -63,6 +65,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="accessadvisorusagegranularitytypetype"></a>
+
 ## AccessAdvisorUsageGranularityTypeType
 
 ```python
@@ -73,6 +77,8 @@ Values:
 
 - `ACTION_LEVEL`
 - `SERVICE_LEVEL`
+
+<a id="contextkeytypeenumtype"></a>
 
 ## ContextKeyTypeEnumType
 
@@ -95,6 +101,8 @@ Values:
 - `string`
 - `stringList`
 
+<a id="deletiontaskstatustypetype"></a>
+
 ## DeletionTaskStatusTypeType
 
 ```python
@@ -107,6 +115,8 @@ Values:
 - `IN_PROGRESS`
 - `NOT_STARTED`
 - `SUCCEEDED`
+
+<a id="entitytypetype"></a>
 
 ## EntityTypeType
 
@@ -122,6 +132,8 @@ Values:
 - `Role`
 - `User`
 
+<a id="getaccountauthorizationdetailspaginatorname"></a>
+
 ## GetAccountAuthorizationDetailsPaginatorName
 
 ```python
@@ -131,6 +143,8 @@ from mypy_boto3_iam.literals import GetAccountAuthorizationDetailsPaginatorName
 Values:
 
 - `get_account_authorization_details`
+
+<a id="getgrouppaginatorname"></a>
 
 ## GetGroupPaginatorName
 
@@ -142,6 +156,8 @@ Values:
 
 - `get_group`
 
+<a id="instanceprofileexistswaitername"></a>
+
 ## InstanceProfileExistsWaiterName
 
 ```python
@@ -151,6 +167,8 @@ from mypy_boto3_iam.literals import InstanceProfileExistsWaiterName
 Values:
 
 - `instance_profile_exists`
+
+<a id="listaccesskeyspaginatorname"></a>
 
 ## ListAccessKeysPaginatorName
 
@@ -162,6 +180,8 @@ Values:
 
 - `list_access_keys`
 
+<a id="listaccountaliasespaginatorname"></a>
+
 ## ListAccountAliasesPaginatorName
 
 ```python
@@ -171,6 +191,8 @@ from mypy_boto3_iam.literals import ListAccountAliasesPaginatorName
 Values:
 
 - `list_account_aliases`
+
+<a id="listattachedgrouppoliciespaginatorname"></a>
 
 ## ListAttachedGroupPoliciesPaginatorName
 
@@ -182,6 +204,8 @@ Values:
 
 - `list_attached_group_policies`
 
+<a id="listattachedrolepoliciespaginatorname"></a>
+
 ## ListAttachedRolePoliciesPaginatorName
 
 ```python
@@ -191,6 +215,8 @@ from mypy_boto3_iam.literals import ListAttachedRolePoliciesPaginatorName
 Values:
 
 - `list_attached_role_policies`
+
+<a id="listattacheduserpoliciespaginatorname"></a>
 
 ## ListAttachedUserPoliciesPaginatorName
 
@@ -202,6 +228,8 @@ Values:
 
 - `list_attached_user_policies`
 
+<a id="listentitiesforpolicypaginatorname"></a>
+
 ## ListEntitiesForPolicyPaginatorName
 
 ```python
@@ -211,6 +239,8 @@ from mypy_boto3_iam.literals import ListEntitiesForPolicyPaginatorName
 Values:
 
 - `list_entities_for_policy`
+
+<a id="listgrouppoliciespaginatorname"></a>
 
 ## ListGroupPoliciesPaginatorName
 
@@ -222,6 +252,8 @@ Values:
 
 - `list_group_policies`
 
+<a id="listgroupsforuserpaginatorname"></a>
+
 ## ListGroupsForUserPaginatorName
 
 ```python
@@ -231,6 +263,8 @@ from mypy_boto3_iam.literals import ListGroupsForUserPaginatorName
 Values:
 
 - `list_groups_for_user`
+
+<a id="listgroupspaginatorname"></a>
 
 ## ListGroupsPaginatorName
 
@@ -242,6 +276,8 @@ Values:
 
 - `list_groups`
 
+<a id="listinstanceprofilesforrolepaginatorname"></a>
+
 ## ListInstanceProfilesForRolePaginatorName
 
 ```python
@@ -251,6 +287,8 @@ from mypy_boto3_iam.literals import ListInstanceProfilesForRolePaginatorName
 Values:
 
 - `list_instance_profiles_for_role`
+
+<a id="listinstanceprofilespaginatorname"></a>
 
 ## ListInstanceProfilesPaginatorName
 
@@ -262,6 +300,8 @@ Values:
 
 - `list_instance_profiles`
 
+<a id="listmfadevicespaginatorname"></a>
+
 ## ListMFADevicesPaginatorName
 
 ```python
@@ -271,6 +311,8 @@ from mypy_boto3_iam.literals import ListMFADevicesPaginatorName
 Values:
 
 - `list_mfa_devices`
+
+<a id="listpoliciespaginatorname"></a>
 
 ## ListPoliciesPaginatorName
 
@@ -282,6 +324,8 @@ Values:
 
 - `list_policies`
 
+<a id="listpolicyversionspaginatorname"></a>
+
 ## ListPolicyVersionsPaginatorName
 
 ```python
@@ -291,6 +335,8 @@ from mypy_boto3_iam.literals import ListPolicyVersionsPaginatorName
 Values:
 
 - `list_policy_versions`
+
+<a id="listrolepoliciespaginatorname"></a>
 
 ## ListRolePoliciesPaginatorName
 
@@ -302,6 +348,8 @@ Values:
 
 - `list_role_policies`
 
+<a id="listrolespaginatorname"></a>
+
 ## ListRolesPaginatorName
 
 ```python
@@ -311,6 +359,8 @@ from mypy_boto3_iam.literals import ListRolesPaginatorName
 Values:
 
 - `list_roles`
+
+<a id="listsshpublickeyspaginatorname"></a>
 
 ## ListSSHPublicKeysPaginatorName
 
@@ -322,6 +372,8 @@ Values:
 
 - `list_ssh_public_keys`
 
+<a id="listservercertificatespaginatorname"></a>
+
 ## ListServerCertificatesPaginatorName
 
 ```python
@@ -331,6 +383,8 @@ from mypy_boto3_iam.literals import ListServerCertificatesPaginatorName
 Values:
 
 - `list_server_certificates`
+
+<a id="listsigningcertificatespaginatorname"></a>
 
 ## ListSigningCertificatesPaginatorName
 
@@ -342,6 +396,8 @@ Values:
 
 - `list_signing_certificates`
 
+<a id="listuserpoliciespaginatorname"></a>
+
 ## ListUserPoliciesPaginatorName
 
 ```python
@@ -351,6 +407,8 @@ from mypy_boto3_iam.literals import ListUserPoliciesPaginatorName
 Values:
 
 - `list_user_policies`
+
+<a id="listusertagspaginatorname"></a>
 
 ## ListUserTagsPaginatorName
 
@@ -362,6 +420,8 @@ Values:
 
 - `list_user_tags`
 
+<a id="listuserspaginatorname"></a>
+
 ## ListUsersPaginatorName
 
 ```python
@@ -371,6 +431,8 @@ from mypy_boto3_iam.literals import ListUsersPaginatorName
 Values:
 
 - `list_users`
+
+<a id="listvirtualmfadevicespaginatorname"></a>
 
 ## ListVirtualMFADevicesPaginatorName
 
@@ -382,6 +444,8 @@ Values:
 
 - `list_virtual_mfa_devices`
 
+<a id="permissionsboundaryattachmenttypetype"></a>
+
 ## PermissionsBoundaryAttachmentTypeType
 
 ```python
@@ -391,6 +455,8 @@ from mypy_boto3_iam.literals import PermissionsBoundaryAttachmentTypeType
 Values:
 
 - `PermissionsBoundaryPolicy`
+
+<a id="policyevaluationdecisiontypetype"></a>
 
 ## PolicyEvaluationDecisionTypeType
 
@@ -404,6 +470,8 @@ Values:
 - `explicitDeny`
 - `implicitDeny`
 
+<a id="policyexistswaitername"></a>
+
 ## PolicyExistsWaiterName
 
 ```python
@@ -413,6 +481,8 @@ from mypy_boto3_iam.literals import PolicyExistsWaiterName
 Values:
 
 - `policy_exists`
+
+<a id="policysourcetypetype"></a>
 
 ## PolicySourceTypeType
 
@@ -430,6 +500,8 @@ Values:
 - `user`
 - `user-managed`
 
+<a id="policyusagetypetype"></a>
+
 ## PolicyUsageTypeType
 
 ```python
@@ -441,6 +513,8 @@ Values:
 - `PermissionsBoundary`
 - `PermissionsPolicy`
 
+<a id="reportformattypetype"></a>
+
 ## ReportFormatTypeType
 
 ```python
@@ -450,6 +524,8 @@ from mypy_boto3_iam.literals import ReportFormatTypeType
 Values:
 
 - `text/csv`
+
+<a id="reportstatetypetype"></a>
 
 ## ReportStateTypeType
 
@@ -463,6 +539,8 @@ Values:
 - `INPROGRESS`
 - `STARTED`
 
+<a id="roleexistswaitername"></a>
+
 ## RoleExistsWaiterName
 
 ```python
@@ -472,6 +550,8 @@ from mypy_boto3_iam.literals import RoleExistsWaiterName
 Values:
 
 - `role_exists`
+
+<a id="simulatecustompolicypaginatorname"></a>
 
 ## SimulateCustomPolicyPaginatorName
 
@@ -483,6 +563,8 @@ Values:
 
 - `simulate_custom_policy`
 
+<a id="simulateprincipalpolicypaginatorname"></a>
+
 ## SimulatePrincipalPolicyPaginatorName
 
 ```python
@@ -493,6 +575,8 @@ Values:
 
 - `simulate_principal_policy`
 
+<a id="userexistswaitername"></a>
+
 ## UserExistsWaiterName
 
 ```python
@@ -502,6 +586,8 @@ from mypy_boto3_iam.literals import UserExistsWaiterName
 Values:
 
 - `user_exists`
+
+<a id="assignmentstatustypetype"></a>
 
 ## assignmentStatusTypeType
 
@@ -515,6 +601,8 @@ Values:
 - `Assigned`
 - `Unassigned`
 
+<a id="encodingtypetype"></a>
+
 ## encodingTypeType
 
 ```python
@@ -526,6 +614,8 @@ Values:
 - `PEM`
 - `SSH`
 
+<a id="globalendpointtokenversiontype"></a>
+
 ## globalEndpointTokenVersionType
 
 ```python
@@ -536,6 +626,8 @@ Values:
 
 - `v1Token`
 - `v2Token`
+
+<a id="jobstatustypetype"></a>
 
 ## jobStatusTypeType
 
@@ -549,6 +641,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="policyownerentitytypetype"></a>
+
 ## policyOwnerEntityTypeType
 
 ```python
@@ -560,6 +654,8 @@ Values:
 - `GROUP`
 - `ROLE`
 - `USER`
+
+<a id="policyscopetypetype"></a>
 
 ## policyScopeTypeType
 
@@ -573,6 +669,8 @@ Values:
 - `AWS`
 - `Local`
 
+<a id="policytypetype"></a>
+
 ## policyTypeType
 
 ```python
@@ -583,6 +681,8 @@ Values:
 
 - `INLINE`
 - `MANAGED`
+
+<a id="sortkeytypetype"></a>
 
 ## sortKeyTypeType
 
@@ -597,6 +697,8 @@ Values:
 - `SERVICE_NAMESPACE_ASCENDING`
 - `SERVICE_NAMESPACE_DESCENDING`
 
+<a id="statustypetype"></a>
+
 ## statusTypeType
 
 ```python
@@ -607,6 +709,8 @@ Values:
 
 - `Active`
 - `Inactive`
+
+<a id="summarykeytypetype"></a>
 
 ## summaryKeyTypeType
 
@@ -642,6 +746,8 @@ Values:
 - `Users`
 - `UsersQuota`
 - `VersionsPerPolicyQuota`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -951,6 +1057,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -986,6 +1094,8 @@ Values:
 - `list_virtual_mfa_devices`
 - `simulate_custom_policy`
 - `simulate_principal_policy`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

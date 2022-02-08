@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-s3outposts-module"></a>
+
 # Typed dictionaries for boto3 S3Outposts module
 
 > [Index](..) > [S3Outposts](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
-[mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+[mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 - [Typed dictionaries for boto3 S3Outposts module](#typed-dictionaries-for-boto3-s3outposts-module)
   - [CreateEndpointRequestRequestTypeDef](#createendpointrequestrequesttypedef)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="createendpointrequestrequesttypedef"></a>
 
 ## CreateEndpointRequestRequestTypeDef
 
@@ -35,6 +39,8 @@ Optional fields:
 - `AccessType`: [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
 - `CustomerOwnedIpv4Pool`: `str`
 
+<a id="createendpointresulttypedef"></a>
+
 ## CreateEndpointResultTypeDef
 
 ```python
@@ -47,6 +53,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteendpointrequestrequesttypedef"></a>
+
 ## DeleteEndpointRequestRequestTypeDef
 
 ```python
@@ -57,6 +65,8 @@ Required fields:
 
 - `EndpointId`: `str`
 - `OutpostId`: `str`
+
+<a id="endpointtypedef"></a>
 
 ## EndpointTypeDef
 
@@ -79,6 +89,8 @@ Optional fields:
 - `AccessType`: [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
 - `CustomerOwnedIpv4Pool`: `str`
 
+<a id="listendpointsrequestrequesttypedef"></a>
+
 ## ListEndpointsRequestRequestTypeDef
 
 ```python
@@ -89,6 +101,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listendpointsresulttypedef"></a>
 
 ## ListEndpointsResultTypeDef
 
@@ -103,6 +117,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="networkinterfacetypedef"></a>
+
 ## NetworkInterfaceTypeDef
 
 ```python
@@ -112,6 +128,8 @@ from mypy_boto3_s3outposts.type_defs import NetworkInterfaceTypeDef
 Optional fields:
 
 - `NetworkInterfaceId`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -124,6 +142,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

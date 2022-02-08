@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-personalizeevents-module"></a>
+
 # Type annotations for boto3 PersonalizeEvents module
 
 > [Index](..) > PersonalizeEvents
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module
-[mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
+[mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[personalize-events]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[personalize-events]'
+
+# standalone installation
 pip install mypy-boto3-personalize-events
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-personalize-events
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="personalizeeventsclient"></a>
 
 ## PersonalizeEventsClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_personalize_events.client import PersonalizeEventsClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -38,6 +52,8 @@ from mypy_boto3_personalize_events.client import PersonalizeEventsClient
 - [put_items](./client.md#put_items)
 - [put_users](./client.md#put_users)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PersonalizeEventsClient [exceptions](./client.md#exceptions)
@@ -46,6 +62,8 @@ PersonalizeEventsClient [exceptions](./client.md#exceptions)
 - InvalidInputException
 - ResourceInUseException
 - ResourceNotFoundException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -58,6 +76,8 @@ from mypy_boto3_personalize_events.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

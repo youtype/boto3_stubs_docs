@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-elasticbeanstalk-module"></a>
+
 # Typed dictionaries for boto3 ElasticBeanstalk module
 
 > [Index](..) > [ElasticBeanstalk](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticBeanstalk](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticbeanstalk.html#ElasticBeanstalk)
 type annotations stubs module
-[mypy_boto3_elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
+[mypy-boto3-elasticbeanstalk](https://pypi.org/project/mypy-boto3-elasticbeanstalk/).
 
 - [Typed dictionaries for boto3 ElasticBeanstalk module](#typed-dictionaries-for-boto3-elasticbeanstalk-module)
   - [AbortEnvironmentUpdateMessageRequestTypeDef](#abortenvironmentupdatemessagerequesttypedef)
@@ -140,6 +142,8 @@ type annotations stubs module
   - [ValidationMessageTypeDef](#validationmessagetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="abortenvironmentupdatemessagerequesttypedef"></a>
+
 ## AbortEnvironmentUpdateMessageRequestTypeDef
 
 ```python
@@ -150,6 +154,8 @@ Optional fields:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="applicationdescriptionmessagetypedef"></a>
 
 ## ApplicationDescriptionMessageTypeDef
 
@@ -163,6 +169,8 @@ Required fields:
   [ApplicationDescriptionTypeDef](./type_defs.md#applicationdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="applicationdescriptiontypedef"></a>
 
 ## ApplicationDescriptionTypeDef
 
@@ -182,6 +190,8 @@ Optional fields:
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
 
+<a id="applicationdescriptionsmessagetypedef"></a>
+
 ## ApplicationDescriptionsMessageTypeDef
 
 ```python
@@ -194,6 +204,8 @@ Required fields:
   `List`\[[ApplicationDescriptionTypeDef](./type_defs.md#applicationdescriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="applicationmetricstypedef"></a>
 
 ## ApplicationMetricsTypeDef
 
@@ -208,6 +220,8 @@ Optional fields:
 - `StatusCodes`: [StatusCodesTypeDef](./type_defs.md#statuscodestypedef)
 - `Latency`: [LatencyTypeDef](./type_defs.md#latencytypedef)
 
+<a id="applicationresourcelifecycleconfigtypedef"></a>
+
 ## ApplicationResourceLifecycleConfigTypeDef
 
 ```python
@@ -219,6 +233,8 @@ Optional fields:
 - `ServiceRole`: `str`
 - `VersionLifecycleConfig`:
   [ApplicationVersionLifecycleConfigTypeDef](./type_defs.md#applicationversionlifecycleconfigtypedef)
+
+<a id="applicationresourcelifecycledescriptionmessagetypedef"></a>
 
 ## ApplicationResourceLifecycleDescriptionMessageTypeDef
 
@@ -234,6 +250,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="applicationversiondescriptionmessagetypedef"></a>
+
 ## ApplicationVersionDescriptionMessageTypeDef
 
 ```python
@@ -246,6 +264,8 @@ Required fields:
   [ApplicationVersionDescriptionTypeDef](./type_defs.md#applicationversiondescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="applicationversiondescriptiontypedef"></a>
 
 ## ApplicationVersionDescriptionTypeDef
 
@@ -268,6 +288,8 @@ Optional fields:
 - `Status`:
   [ApplicationVersionStatusType](./literals.md#applicationversionstatustype)
 
+<a id="applicationversiondescriptionsmessagetypedef"></a>
+
 ## ApplicationVersionDescriptionsMessageTypeDef
 
 ```python
@@ -282,6 +304,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="applicationversionlifecycleconfigtypedef"></a>
+
 ## ApplicationVersionLifecycleConfigTypeDef
 
 ```python
@@ -292,6 +316,8 @@ Optional fields:
 
 - `MaxCountRule`: [MaxCountRuleTypeDef](./type_defs.md#maxcountruletypedef)
 - `MaxAgeRule`: [MaxAgeRuleTypeDef](./type_defs.md#maxageruletypedef)
+
+<a id="applyenvironmentmanagedactionrequestrequesttypedef"></a>
 
 ## ApplyEnvironmentManagedActionRequestRequestTypeDef
 
@@ -308,6 +334,8 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 
+<a id="applyenvironmentmanagedactionresulttypedef"></a>
+
 ## ApplyEnvironmentManagedActionResultTypeDef
 
 ```python
@@ -323,6 +351,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associateenvironmentoperationsrolemessagerequesttypedef"></a>
+
 ## AssociateEnvironmentOperationsRoleMessageRequestTypeDef
 
 ```python
@@ -334,6 +364,8 @@ Required fields:
 - `EnvironmentName`: `str`
 - `OperationsRole`: `str`
 
+<a id="autoscalinggrouptypedef"></a>
+
 ## AutoScalingGroupTypeDef
 
 ```python
@@ -343,6 +375,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import AutoScalingGroupTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="buildconfigurationtypedef"></a>
 
 ## BuildConfigurationTypeDef
 
@@ -361,6 +395,8 @@ Optional fields:
 - `ComputeType`: [ComputeTypeType](./literals.md#computetypetype)
 - `TimeoutInMinutes`: `int`
 
+<a id="buildertypedef"></a>
+
 ## BuilderTypeDef
 
 ```python
@@ -370,6 +406,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import BuilderTypeDef
 Optional fields:
 
 - `ARN`: `str`
+
+<a id="cpuutilizationtypedef"></a>
 
 ## CPUUtilizationTypeDef
 
@@ -388,6 +426,8 @@ Optional fields:
 - `SoftIRQ`: `float`
 - `Privileged`: `float`
 
+<a id="checkdnsavailabilitymessagerequesttypedef"></a>
+
 ## CheckDNSAvailabilityMessageRequestTypeDef
 
 ```python
@@ -397,6 +437,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import CheckDNSAvailabilityMessageReq
 Required fields:
 
 - `CNAMEPrefix`: `str`
+
+<a id="checkdnsavailabilityresultmessagetypedef"></a>
 
 ## CheckDNSAvailabilityResultMessageTypeDef
 
@@ -411,6 +453,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="composeenvironmentsmessagerequesttypedef"></a>
+
 ## ComposeEnvironmentsMessageRequestTypeDef
 
 ```python
@@ -422,6 +466,8 @@ Optional fields:
 - `ApplicationName`: `str`
 - `GroupName`: `str`
 - `VersionLabels`: `Sequence`\[`str`\]
+
+<a id="configurationoptiondescriptiontypedef"></a>
 
 ## ConfigurationOptionDescriptionTypeDef
 
@@ -445,6 +491,8 @@ Optional fields:
 - `Regex`:
   [OptionRestrictionRegexTypeDef](./type_defs.md#optionrestrictionregextypedef)
 
+<a id="configurationoptionsettingtypedef"></a>
+
 ## ConfigurationOptionSettingTypeDef
 
 ```python
@@ -457,6 +505,8 @@ Optional fields:
 - `Namespace`: `str`
 - `OptionName`: `str`
 - `Value`: `str`
+
+<a id="configurationoptionsdescriptiontypedef"></a>
 
 ## ConfigurationOptionsDescriptionTypeDef
 
@@ -472,6 +522,8 @@ Required fields:
   `List`\[[ConfigurationOptionDescriptionTypeDef](./type_defs.md#configurationoptiondescriptiontypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="configurationsettingsdescriptionresponsemetadatatypedef"></a>
 
 ## ConfigurationSettingsDescriptionResponseMetadataTypeDef
 
@@ -496,6 +548,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="configurationsettingsdescriptiontypedef"></a>
+
 ## ConfigurationSettingsDescriptionTypeDef
 
 ```python
@@ -517,6 +571,8 @@ Optional fields:
 - `OptionSettings`:
   `List`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 
+<a id="configurationsettingsdescriptionstypedef"></a>
+
 ## ConfigurationSettingsDescriptionsTypeDef
 
 ```python
@@ -530,6 +586,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="configurationsettingsvalidationmessagestypedef"></a>
+
 ## ConfigurationSettingsValidationMessagesTypeDef
 
 ```python
@@ -542,6 +600,8 @@ Required fields:
   `List`\[[ValidationMessageTypeDef](./type_defs.md#validationmessagetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createapplicationmessagerequesttypedef"></a>
 
 ## CreateApplicationMessageRequestTypeDef
 
@@ -559,6 +619,8 @@ Optional fields:
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createapplicationversionmessagerequesttypedef"></a>
 
 ## CreateApplicationVersionMessageRequestTypeDef
 
@@ -583,6 +645,8 @@ Optional fields:
 - `Process`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createconfigurationtemplatemessagerequesttypedef"></a>
+
 ## CreateConfigurationTemplateMessageRequestTypeDef
 
 ```python
@@ -605,6 +669,8 @@ Optional fields:
 - `OptionSettings`:
   `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createenvironmentmessagerequesttypedef"></a>
 
 ## CreateEnvironmentMessageRequestTypeDef
 
@@ -634,6 +700,8 @@ Optional fields:
   `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 - `OperationsRole`: `str`
 
+<a id="createplatformversionrequestrequesttypedef"></a>
+
 ## CreatePlatformVersionRequestRequestTypeDef
 
 ```python
@@ -654,6 +722,8 @@ Optional fields:
   `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createplatformversionresulttypedef"></a>
+
 ## CreatePlatformVersionResultTypeDef
 
 ```python
@@ -668,6 +738,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createstoragelocationresultmessagetypedef"></a>
+
 ## CreateStorageLocationResultMessageTypeDef
 
 ```python
@@ -680,6 +752,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customamitypedef"></a>
+
 ## CustomAmiTypeDef
 
 ```python
@@ -690,6 +764,8 @@ Optional fields:
 
 - `VirtualizationType`: `str`
 - `ImageId`: `str`
+
+<a id="deleteapplicationmessagerequesttypedef"></a>
 
 ## DeleteApplicationMessageRequestTypeDef
 
@@ -704,6 +780,8 @@ Required fields:
 Optional fields:
 
 - `TerminateEnvByForce`: `bool`
+
+<a id="deleteapplicationversionmessagerequesttypedef"></a>
 
 ## DeleteApplicationVersionMessageRequestTypeDef
 
@@ -720,6 +798,8 @@ Optional fields:
 
 - `DeleteSourceBundle`: `bool`
 
+<a id="deleteconfigurationtemplatemessagerequesttypedef"></a>
+
 ## DeleteConfigurationTemplateMessageRequestTypeDef
 
 ```python
@@ -730,6 +810,8 @@ Required fields:
 
 - `ApplicationName`: `str`
 - `TemplateName`: `str`
+
+<a id="deleteenvironmentconfigurationmessagerequesttypedef"></a>
 
 ## DeleteEnvironmentConfigurationMessageRequestTypeDef
 
@@ -742,6 +824,8 @@ Required fields:
 - `ApplicationName`: `str`
 - `EnvironmentName`: `str`
 
+<a id="deleteplatformversionrequestrequesttypedef"></a>
+
 ## DeletePlatformVersionRequestRequestTypeDef
 
 ```python
@@ -751,6 +835,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import DeletePlatformVersionRequestRe
 Optional fields:
 
 - `PlatformArn`: `str`
+
+<a id="deleteplatformversionresulttypedef"></a>
 
 ## DeletePlatformVersionResultTypeDef
 
@@ -765,6 +851,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deploymenttypedef"></a>
+
 ## DeploymentTypeDef
 
 ```python
@@ -777,6 +865,8 @@ Optional fields:
 - `DeploymentId`: `int`
 - `Status`: `str`
 - `DeploymentTime`: `datetime`
+
+<a id="describeaccountattributesresulttypedef"></a>
 
 ## DescribeAccountAttributesResultTypeDef
 
@@ -791,6 +881,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeapplicationversionsmessagerequesttypedef"></a>
+
 ## DescribeApplicationVersionsMessageRequestTypeDef
 
 ```python
@@ -804,6 +896,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
+<a id="describeapplicationsmessagerequesttypedef"></a>
+
 ## DescribeApplicationsMessageRequestTypeDef
 
 ```python
@@ -813,6 +907,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import DescribeApplicationsMessageReq
 Optional fields:
 
 - `ApplicationNames`: `Sequence`\[`str`\]
+
+<a id="describeconfigurationoptionsmessagerequesttypedef"></a>
 
 ## DescribeConfigurationOptionsMessageRequestTypeDef
 
@@ -830,6 +926,8 @@ Optional fields:
 - `Options`:
   `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
+<a id="describeconfigurationsettingsmessagerequesttypedef"></a>
+
 ## DescribeConfigurationSettingsMessageRequestTypeDef
 
 ```python
@@ -845,6 +943,8 @@ Optional fields:
 - `TemplateName`: `str`
 - `EnvironmentName`: `str`
 
+<a id="describeenvironmenthealthrequestrequesttypedef"></a>
+
 ## DescribeEnvironmentHealthRequestRequestTypeDef
 
 ```python
@@ -857,6 +957,8 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `AttributeNames`:
   `Sequence`\[[EnvironmentHealthAttributeType](./literals.md#environmenthealthattributetype)\]
+
+<a id="describeenvironmenthealthresulttypedef"></a>
 
 ## DescribeEnvironmentHealthResultTypeDef
 
@@ -879,6 +981,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeenvironmentmanagedactionhistoryrequestrequesttypedef"></a>
+
 ## DescribeEnvironmentManagedActionHistoryRequestRequestTypeDef
 
 ```python
@@ -891,6 +995,8 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `NextToken`: `str`
 - `MaxItems`: `int`
+
+<a id="describeenvironmentmanagedactionhistoryresulttypedef"></a>
 
 ## DescribeEnvironmentManagedActionHistoryResultTypeDef
 
@@ -906,6 +1012,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeenvironmentmanagedactionsrequestrequesttypedef"></a>
+
 ## DescribeEnvironmentManagedActionsRequestRequestTypeDef
 
 ```python
@@ -917,6 +1025,8 @@ Optional fields:
 - `EnvironmentName`: `str`
 - `EnvironmentId`: `str`
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
+
+<a id="describeenvironmentmanagedactionsresulttypedef"></a>
 
 ## DescribeEnvironmentManagedActionsResultTypeDef
 
@@ -931,6 +1041,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeenvironmentresourcesmessagerequesttypedef"></a>
+
 ## DescribeEnvironmentResourcesMessageRequestTypeDef
 
 ```python
@@ -941,6 +1053,8 @@ Optional fields:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="describeenvironmentsmessagerequesttypedef"></a>
 
 ## DescribeEnvironmentsMessageRequestTypeDef
 
@@ -958,6 +1072,8 @@ Optional fields:
 - `IncludedDeletedBackTo`: `Union`\[`datetime`, `str`\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
+
+<a id="describeeventsmessagerequesttypedef"></a>
 
 ## DescribeEventsMessageRequestTypeDef
 
@@ -980,6 +1096,8 @@ Optional fields:
 - `MaxRecords`: `int`
 - `NextToken`: `str`
 
+<a id="describeinstanceshealthrequestrequesttypedef"></a>
+
 ## DescribeInstancesHealthRequestRequestTypeDef
 
 ```python
@@ -993,6 +1111,8 @@ Optional fields:
 - `AttributeNames`:
   `Sequence`\[[InstancesHealthAttributeType](./literals.md#instanceshealthattributetype)\]
 - `NextToken`: `str`
+
+<a id="describeinstanceshealthresulttypedef"></a>
 
 ## DescribeInstancesHealthResultTypeDef
 
@@ -1009,6 +1129,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeplatformversionrequestrequesttypedef"></a>
+
 ## DescribePlatformVersionRequestRequestTypeDef
 
 ```python
@@ -1018,6 +1140,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import DescribePlatformVersionRequest
 Optional fields:
 
 - `PlatformArn`: `str`
+
+<a id="describeplatformversionresulttypedef"></a>
 
 ## DescribePlatformVersionResultTypeDef
 
@@ -1032,6 +1156,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateenvironmentoperationsrolemessagerequesttypedef"></a>
+
 ## DisassociateEnvironmentOperationsRoleMessageRequestTypeDef
 
 ```python
@@ -1041,6 +1167,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import DisassociateEnvironmentOperati
 Required fields:
 
 - `EnvironmentName`: `str`
+
+<a id="environmentdescriptionresponsemetadatatypedef"></a>
 
 ## EnvironmentDescriptionResponseMetadataTypeDef
 
@@ -1077,6 +1205,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="environmentdescriptiontypedef"></a>
+
 ## EnvironmentDescriptionTypeDef
 
 ```python
@@ -1110,6 +1240,8 @@ Optional fields:
 - `EnvironmentArn`: `str`
 - `OperationsRole`: `str`
 
+<a id="environmentdescriptionsmessagetypedef"></a>
+
 ## EnvironmentDescriptionsMessageTypeDef
 
 ```python
@@ -1124,6 +1256,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="environmentinfodescriptiontypedef"></a>
+
 ## EnvironmentInfoDescriptionTypeDef
 
 ```python
@@ -1137,6 +1271,8 @@ Optional fields:
 - `SampleTimestamp`: `datetime`
 - `Message`: `str`
 
+<a id="environmentlinktypedef"></a>
+
 ## EnvironmentLinkTypeDef
 
 ```python
@@ -1147,6 +1283,8 @@ Optional fields:
 
 - `LinkName`: `str`
 - `EnvironmentName`: `str`
+
+<a id="environmentresourcedescriptiontypedef"></a>
 
 ## EnvironmentResourceDescriptionTypeDef
 
@@ -1169,6 +1307,8 @@ Optional fields:
 - `Triggers`: `List`\[[TriggerTypeDef](./type_defs.md#triggertypedef)\]
 - `Queues`: `List`\[[QueueTypeDef](./type_defs.md#queuetypedef)\]
 
+<a id="environmentresourcedescriptionsmessagetypedef"></a>
+
 ## EnvironmentResourceDescriptionsMessageTypeDef
 
 ```python
@@ -1182,6 +1322,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="environmentresourcesdescriptiontypedef"></a>
+
 ## EnvironmentResourcesDescriptionTypeDef
 
 ```python
@@ -1192,6 +1334,8 @@ Optional fields:
 
 - `LoadBalancer`:
   [LoadBalancerDescriptionTypeDef](./type_defs.md#loadbalancerdescriptiontypedef)
+
+<a id="environmenttiertypedef"></a>
 
 ## EnvironmentTierTypeDef
 
@@ -1204,6 +1348,8 @@ Optional fields:
 - `Name`: `str`
 - `Type`: `str`
 - `Version`: `str`
+
+<a id="eventdescriptiontypedef"></a>
 
 ## EventDescriptionTypeDef
 
@@ -1223,6 +1369,8 @@ Optional fields:
 - `RequestId`: `str`
 - `Severity`: [EventSeverityType](./literals.md#eventseveritytype)
 
+<a id="eventdescriptionsmessagetypedef"></a>
+
 ## EventDescriptionsMessageTypeDef
 
 ```python
@@ -1236,6 +1384,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="instancehealthsummarytypedef"></a>
 
 ## InstanceHealthSummaryTypeDef
 
@@ -1254,6 +1404,8 @@ Optional fields:
 - `Degraded`: `int`
 - `Severe`: `int`
 
+<a id="instancetypedef"></a>
+
 ## InstanceTypeDef
 
 ```python
@@ -1263,6 +1415,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import InstanceTypeDef
 Optional fields:
 
 - `Id`: `str`
+
+<a id="latencytypedef"></a>
 
 ## LatencyTypeDef
 
@@ -1281,6 +1435,8 @@ Optional fields:
 - `P50`: `float`
 - `P10`: `float`
 
+<a id="launchconfigurationtypedef"></a>
+
 ## LaunchConfigurationTypeDef
 
 ```python
@@ -1291,6 +1447,8 @@ Optional fields:
 
 - `Name`: `str`
 
+<a id="launchtemplatetypedef"></a>
+
 ## LaunchTemplateTypeDef
 
 ```python
@@ -1300,6 +1458,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import LaunchTemplateTypeDef
 Optional fields:
 
 - `Id`: `str`
+
+<a id="listavailablesolutionstacksresultmessagetypedef"></a>
 
 ## ListAvailableSolutionStacksResultMessageTypeDef
 
@@ -1315,6 +1475,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listplatformbranchesrequestrequesttypedef"></a>
+
 ## ListPlatformBranchesRequestRequestTypeDef
 
 ```python
@@ -1327,6 +1489,8 @@ Optional fields:
   `Sequence`\[[SearchFilterTypeDef](./type_defs.md#searchfiltertypedef)\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
+
+<a id="listplatformbranchesresulttypedef"></a>
 
 ## ListPlatformBranchesResultTypeDef
 
@@ -1342,6 +1506,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listplatformversionsrequestrequesttypedef"></a>
+
 ## ListPlatformVersionsRequestRequestTypeDef
 
 ```python
@@ -1354,6 +1520,8 @@ Optional fields:
   `Sequence`\[[PlatformFilterTypeDef](./type_defs.md#platformfiltertypedef)\]
 - `MaxRecords`: `int`
 - `NextToken`: `str`
+
+<a id="listplatformversionsresulttypedef"></a>
 
 ## ListPlatformVersionsResultTypeDef
 
@@ -1369,6 +1537,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcemessagerequesttypedef"></a>
+
 ## ListTagsForResourceMessageRequestTypeDef
 
 ```python
@@ -1378,6 +1548,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import ListTagsForResourceMessageRequ
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listenertypedef"></a>
 
 ## ListenerTypeDef
 
@@ -1389,6 +1561,8 @@ Optional fields:
 
 - `Protocol`: `str`
 - `Port`: `int`
+
+<a id="loadbalancerdescriptiontypedef"></a>
 
 ## LoadBalancerDescriptionTypeDef
 
@@ -1402,6 +1576,8 @@ Optional fields:
 - `Domain`: `str`
 - `Listeners`: `List`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
 
+<a id="loadbalancertypedef"></a>
+
 ## LoadBalancerTypeDef
 
 ```python
@@ -1411,6 +1587,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import LoadBalancerTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="managedactionhistoryitemtypedef"></a>
 
 ## ManagedActionHistoryItemTypeDef
 
@@ -1429,6 +1607,8 @@ Optional fields:
 - `ExecutedTime`: `datetime`
 - `FinishedTime`: `datetime`
 
+<a id="managedactiontypedef"></a>
+
 ## ManagedActionTypeDef
 
 ```python
@@ -1442,6 +1622,8 @@ Optional fields:
 - `ActionType`: [ActionTypeType](./literals.md#actiontypetype)
 - `Status`: [ActionStatusType](./literals.md#actionstatustype)
 - `WindowStartTime`: `datetime`
+
+<a id="maxageruletypedef"></a>
 
 ## MaxAgeRuleTypeDef
 
@@ -1458,6 +1640,8 @@ Optional fields:
 - `MaxAgeInDays`: `int`
 - `DeleteSourceFromS3`: `bool`
 
+<a id="maxcountruletypedef"></a>
+
 ## MaxCountRuleTypeDef
 
 ```python
@@ -1473,6 +1657,8 @@ Optional fields:
 - `MaxCount`: `int`
 - `DeleteSourceFromS3`: `bool`
 
+<a id="optionrestrictionregextypedef"></a>
+
 ## OptionRestrictionRegexTypeDef
 
 ```python
@@ -1483,6 +1669,8 @@ Optional fields:
 
 - `Pattern`: `str`
 - `Label`: `str`
+
+<a id="optionspecificationtypedef"></a>
 
 ## OptionSpecificationTypeDef
 
@@ -1496,6 +1684,8 @@ Optional fields:
 - `Namespace`: `str`
 - `OptionName`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1507,6 +1697,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="platformbranchsummarytypedef"></a>
 
 ## PlatformBranchSummaryTypeDef
 
@@ -1521,6 +1713,8 @@ Optional fields:
 - `LifecycleState`: `str`
 - `BranchOrder`: `int`
 - `SupportedTierList`: `List`\[`str`\]
+
+<a id="platformdescriptiontypedef"></a>
 
 ## PlatformDescriptionTypeDef
 
@@ -1555,6 +1749,8 @@ Optional fields:
 - `PlatformBranchName`: `str`
 - `PlatformBranchLifecycleState`: `str`
 
+<a id="platformfiltertypedef"></a>
+
 ## PlatformFilterTypeDef
 
 ```python
@@ -1567,6 +1763,8 @@ Optional fields:
 - `Operator`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="platformframeworktypedef"></a>
+
 ## PlatformFrameworkTypeDef
 
 ```python
@@ -1578,6 +1776,8 @@ Optional fields:
 - `Name`: `str`
 - `Version`: `str`
 
+<a id="platformprogramminglanguagetypedef"></a>
+
 ## PlatformProgrammingLanguageTypeDef
 
 ```python
@@ -1588,6 +1788,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="platformsummarytypedef"></a>
 
 ## PlatformSummaryTypeDef
 
@@ -1610,6 +1812,8 @@ Optional fields:
 - `PlatformBranchName`: `str`
 - `PlatformBranchLifecycleState`: `str`
 
+<a id="queuetypedef"></a>
+
 ## QueueTypeDef
 
 ```python
@@ -1621,6 +1825,8 @@ Optional fields:
 - `Name`: `str`
 - `URL`: `str`
 
+<a id="rebuildenvironmentmessagerequesttypedef"></a>
+
 ## RebuildEnvironmentMessageRequestTypeDef
 
 ```python
@@ -1631,6 +1837,8 @@ Optional fields:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="requestenvironmentinfomessagerequesttypedef"></a>
 
 ## RequestEnvironmentInfoMessageRequestTypeDef
 
@@ -1647,6 +1855,8 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
+<a id="resourcequotatypedef"></a>
+
 ## ResourceQuotaTypeDef
 
 ```python
@@ -1656,6 +1866,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import ResourceQuotaTypeDef
 Optional fields:
 
 - `Maximum`: `int`
+
+<a id="resourcequotastypedef"></a>
 
 ## ResourceQuotasTypeDef
 
@@ -1676,6 +1888,8 @@ Optional fields:
 - `CustomPlatformQuota`:
   [ResourceQuotaTypeDef](./type_defs.md#resourcequotatypedef)
 
+<a id="resourcetagsdescriptionmessagetypedef"></a>
+
 ## ResourceTagsDescriptionMessageTypeDef
 
 ```python
@@ -1688,6 +1902,8 @@ Required fields:
 - `ResourceTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1703,6 +1919,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restartappservermessagerequesttypedef"></a>
+
 ## RestartAppServerMessageRequestTypeDef
 
 ```python
@@ -1713,6 +1931,8 @@ Optional fields:
 
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
+
+<a id="retrieveenvironmentinfomessagerequesttypedef"></a>
 
 ## RetrieveEnvironmentInfoMessageRequestTypeDef
 
@@ -1729,6 +1949,8 @@ Optional fields:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
+<a id="retrieveenvironmentinforesultmessagetypedef"></a>
+
 ## RetrieveEnvironmentInfoResultMessageTypeDef
 
 ```python
@@ -1742,6 +1964,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -1752,6 +1976,8 @@ Optional fields:
 
 - `S3Bucket`: `str`
 - `S3Key`: `str`
+
+<a id="searchfiltertypedef"></a>
 
 ## SearchFilterTypeDef
 
@@ -1764,6 +1990,8 @@ Optional fields:
 - `Attribute`: `str`
 - `Operator`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="singleinstancehealthtypedef"></a>
 
 ## SingleInstanceHealthTypeDef
 
@@ -1785,6 +2013,8 @@ Optional fields:
 - `AvailabilityZone`: `str`
 - `InstanceType`: `str`
 
+<a id="solutionstackdescriptiontypedef"></a>
+
 ## SolutionStackDescriptionTypeDef
 
 ```python
@@ -1795,6 +2025,8 @@ Optional fields:
 
 - `SolutionStackName`: `str`
 - `PermittedFileTypes`: `List`\[`str`\]
+
+<a id="sourcebuildinformationtypedef"></a>
 
 ## SourceBuildInformationTypeDef
 
@@ -1809,6 +2041,8 @@ Required fields:
   [SourceRepositoryType](./literals.md#sourcerepositorytype)
 - `SourceLocation`: `str`
 
+<a id="sourceconfigurationtypedef"></a>
+
 ## SourceConfigurationTypeDef
 
 ```python
@@ -1819,6 +2053,8 @@ Optional fields:
 
 - `ApplicationName`: `str`
 - `TemplateName`: `str`
+
+<a id="statuscodestypedef"></a>
 
 ## StatusCodesTypeDef
 
@@ -1833,6 +2069,8 @@ Optional fields:
 - `Status4xx`: `int`
 - `Status5xx`: `int`
 
+<a id="swapenvironmentcnamesmessagerequesttypedef"></a>
+
 ## SwapEnvironmentCNAMEsMessageRequestTypeDef
 
 ```python
@@ -1846,6 +2084,8 @@ Optional fields:
 - `DestinationEnvironmentId`: `str`
 - `DestinationEnvironmentName`: `str`
 
+<a id="systemstatustypedef"></a>
+
 ## SystemStatusTypeDef
 
 ```python
@@ -1858,6 +2098,8 @@ Optional fields:
   [CPUUtilizationTypeDef](./type_defs.md#cpuutilizationtypedef)
 - `LoadAverage`: `List`\[`float`\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1868,6 +2110,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="terminateenvironmentmessagerequesttypedef"></a>
 
 ## TerminateEnvironmentMessageRequestTypeDef
 
@@ -1882,6 +2126,8 @@ Optional fields:
 - `TerminateResources`: `bool`
 - `ForceTerminate`: `bool`
 
+<a id="triggertypedef"></a>
+
 ## TriggerTypeDef
 
 ```python
@@ -1891,6 +2137,8 @@ from mypy_boto3_elasticbeanstalk.type_defs import TriggerTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="updateapplicationmessagerequesttypedef"></a>
 
 ## UpdateApplicationMessageRequestTypeDef
 
@@ -1906,6 +2154,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="updateapplicationresourcelifecyclemessagerequesttypedef"></a>
+
 ## UpdateApplicationResourceLifecycleMessageRequestTypeDef
 
 ```python
@@ -1917,6 +2167,8 @@ Required fields:
 - `ApplicationName`: `str`
 - `ResourceLifecycleConfig`:
   [ApplicationResourceLifecycleConfigTypeDef](./type_defs.md#applicationresourcelifecycleconfigtypedef)
+
+<a id="updateapplicationversionmessagerequesttypedef"></a>
 
 ## UpdateApplicationVersionMessageRequestTypeDef
 
@@ -1932,6 +2184,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updateconfigurationtemplatemessagerequesttypedef"></a>
 
 ## UpdateConfigurationTemplateMessageRequestTypeDef
 
@@ -1951,6 +2205,8 @@ Optional fields:
   `Sequence`\[[ConfigurationOptionSettingTypeDef](./type_defs.md#configurationoptionsettingtypedef)\]
 - `OptionsToRemove`:
   `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
+
+<a id="updateenvironmentmessagerequesttypedef"></a>
 
 ## UpdateEnvironmentMessageRequestTypeDef
 
@@ -1975,6 +2231,8 @@ Optional fields:
 - `OptionsToRemove`:
   `Sequence`\[[OptionSpecificationTypeDef](./type_defs.md#optionspecificationtypedef)\]
 
+<a id="updatetagsforresourcemessagerequesttypedef"></a>
+
 ## UpdateTagsForResourceMessageRequestTypeDef
 
 ```python
@@ -1989,6 +2247,8 @@ Optional fields:
 
 - `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TagsToRemove`: `Sequence`\[`str`\]
+
+<a id="validateconfigurationsettingsmessagerequesttypedef"></a>
 
 ## ValidateConfigurationSettingsMessageRequestTypeDef
 
@@ -2007,6 +2267,8 @@ Optional fields:
 - `TemplateName`: `str`
 - `EnvironmentName`: `str`
 
+<a id="validationmessagetypedef"></a>
+
 ## ValidationMessageTypeDef
 
 ```python
@@ -2019,6 +2281,8 @@ Optional fields:
 - `Severity`: [ValidationSeverityType](./literals.md#validationseveritytype)
 - `Namespace`: `str`
 - `OptionName`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

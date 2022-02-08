@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-configservice-module"></a>
+
 # Typed dictionaries for boto3 ConfigService module
 
 > [Index](..) > [ConfigService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConfigService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService)
 type annotations stubs module
-[mypy_boto3_config](https://pypi.org/project/mypy-boto3-config/).
+[mypy-boto3-config](https://pypi.org/project/mypy-boto3-config/).
 
 - [Typed dictionaries for boto3 ConfigService module](#typed-dictionaries-for-boto3-configservice-module)
   - [AccountAggregationSourceTypeDef](#accountaggregationsourcetypedef)
@@ -246,6 +248,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="accountaggregationsourcetypedef"></a>
+
 ## AccountAggregationSourceTypeDef
 
 ```python
@@ -261,6 +265,8 @@ Optional fields:
 - `AllAwsRegions`: `bool`
 - `AwsRegions`: `List`\[`str`\]
 
+<a id="aggregatecompliancebyconfigruletypedef"></a>
+
 ## AggregateComplianceByConfigRuleTypeDef
 
 ```python
@@ -273,6 +279,8 @@ Optional fields:
 - `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
 - `AccountId`: `str`
 - `AwsRegion`: `str`
+
+<a id="aggregatecompliancebyconformancepacktypedef"></a>
 
 ## AggregateComplianceByConformancePackTypeDef
 
@@ -288,6 +296,8 @@ Optional fields:
 - `AccountId`: `str`
 - `AwsRegion`: `str`
 
+<a id="aggregatecompliancecounttypedef"></a>
+
 ## AggregateComplianceCountTypeDef
 
 ```python
@@ -300,6 +310,8 @@ Optional fields:
 - `ComplianceSummary`:
   [ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef)
 
+<a id="aggregateconformancepackcompliancecounttypedef"></a>
+
 ## AggregateConformancePackComplianceCountTypeDef
 
 ```python
@@ -310,6 +322,8 @@ Optional fields:
 
 - `CompliantConformancePackCount`: `int`
 - `NonCompliantConformancePackCount`: `int`
+
+<a id="aggregateconformancepackcompliancefilterstypedef"></a>
 
 ## AggregateConformancePackComplianceFiltersTypeDef
 
@@ -325,6 +339,8 @@ Optional fields:
 - `AccountId`: `str`
 - `AwsRegion`: `str`
 
+<a id="aggregateconformancepackcompliancesummaryfilterstypedef"></a>
+
 ## AggregateConformancePackComplianceSummaryFiltersTypeDef
 
 ```python
@@ -335,6 +351,8 @@ Optional fields:
 
 - `AccountId`: `str`
 - `AwsRegion`: `str`
+
+<a id="aggregateconformancepackcompliancesummarytypedef"></a>
 
 ## AggregateConformancePackComplianceSummaryTypeDef
 
@@ -347,6 +365,8 @@ Optional fields:
 - `ComplianceSummary`:
   [AggregateConformancePackComplianceCountTypeDef](./type_defs.md#aggregateconformancepackcompliancecounttypedef)
 - `GroupName`: `str`
+
+<a id="aggregateconformancepackcompliancetypedef"></a>
 
 ## AggregateConformancePackComplianceTypeDef
 
@@ -361,6 +381,8 @@ Optional fields:
 - `CompliantRuleCount`: `int`
 - `NonCompliantRuleCount`: `int`
 - `TotalRuleCount`: `int`
+
+<a id="aggregateevaluationresulttypedef"></a>
 
 ## AggregateEvaluationResultTypeDef
 
@@ -379,6 +401,8 @@ Optional fields:
 - `AccountId`: `str`
 - `AwsRegion`: `str`
 
+<a id="aggregateresourceidentifiertypedef"></a>
+
 ## AggregateResourceIdentifierTypeDef
 
 ```python
@@ -395,6 +419,8 @@ Required fields:
 Optional fields:
 
 - `ResourceName`: `str`
+
+<a id="aggregatedsourcestatustypedef"></a>
 
 ## AggregatedSourceStatusTypeDef
 
@@ -414,6 +440,8 @@ Optional fields:
 - `LastErrorCode`: `str`
 - `LastErrorMessage`: `str`
 
+<a id="aggregationauthorizationtypedef"></a>
+
 ## AggregationAuthorizationTypeDef
 
 ```python
@@ -426,6 +454,8 @@ Optional fields:
 - `AuthorizedAccountId`: `str`
 - `AuthorizedAwsRegion`: `str`
 - `CreationTime`: `datetime`
+
+<a id="baseconfigurationitemtypedef"></a>
 
 ## BaseConfigurationItemTypeDef
 
@@ -451,6 +481,8 @@ Optional fields:
 - `configuration`: `str`
 - `supplementaryConfiguration`: `Dict`\[`str`, `str`\]
 
+<a id="batchgetaggregateresourceconfigrequestrequesttypedef"></a>
+
 ## BatchGetAggregateResourceConfigRequestRequestTypeDef
 
 ```python
@@ -462,6 +494,8 @@ Required fields:
 - `ConfigurationAggregatorName`: `str`
 - `ResourceIdentifiers`:
   `Sequence`\[[AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)\]
+
+<a id="batchgetaggregateresourceconfigresponsetypedef"></a>
 
 ## BatchGetAggregateResourceConfigResponseTypeDef
 
@@ -478,6 +512,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetresourceconfigrequestrequesttypedef"></a>
+
 ## BatchGetResourceConfigRequestRequestTypeDef
 
 ```python
@@ -488,6 +524,8 @@ Required fields:
 
 - `resourceKeys`:
   `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+
+<a id="batchgetresourceconfigresponsetypedef"></a>
 
 ## BatchGetResourceConfigResponseTypeDef
 
@@ -504,6 +542,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="compliancebyconfigruletypedef"></a>
+
 ## ComplianceByConfigRuleTypeDef
 
 ```python
@@ -514,6 +554,8 @@ Optional fields:
 
 - `ConfigRuleName`: `str`
 - `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
+
+<a id="compliancebyresourcetypedef"></a>
 
 ## ComplianceByResourceTypeDef
 
@@ -527,6 +569,8 @@ Optional fields:
 - `ResourceId`: `str`
 - `Compliance`: [ComplianceTypeDef](./type_defs.md#compliancetypedef)
 
+<a id="compliancecontributorcounttypedef"></a>
+
 ## ComplianceContributorCountTypeDef
 
 ```python
@@ -537,6 +581,8 @@ Optional fields:
 
 - `CappedCount`: `int`
 - `CapExceeded`: `bool`
+
+<a id="compliancesummarybyresourcetypetypedef"></a>
 
 ## ComplianceSummaryByResourceTypeTypeDef
 
@@ -549,6 +595,8 @@ Optional fields:
 - `ResourceType`: `str`
 - `ComplianceSummary`:
   [ComplianceSummaryTypeDef](./type_defs.md#compliancesummarytypedef)
+
+<a id="compliancesummarytypedef"></a>
 
 ## ComplianceSummaryTypeDef
 
@@ -564,6 +612,8 @@ Optional fields:
   [ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef)
 - `ComplianceSummaryTimestamp`: `datetime`
 
+<a id="compliancetypedef"></a>
+
 ## ComplianceTypeDef
 
 ```python
@@ -575,6 +625,8 @@ Optional fields:
 - `ComplianceType`: [ComplianceTypeType](./literals.md#compliancetypetype)
 - `ComplianceContributorCount`:
   [ComplianceContributorCountTypeDef](./type_defs.md#compliancecontributorcounttypedef)
+
+<a id="configexportdeliveryinfotypedef"></a>
 
 ## ConfigExportDeliveryInfoTypeDef
 
@@ -591,6 +643,8 @@ Optional fields:
 - `lastSuccessfulTime`: `datetime`
 - `nextDeliveryTime`: `datetime`
 
+<a id="configrulecompliancefilterstypedef"></a>
+
 ## ConfigRuleComplianceFiltersTypeDef
 
 ```python
@@ -604,6 +658,8 @@ Optional fields:
 - `AccountId`: `str`
 - `AwsRegion`: `str`
 
+<a id="configrulecompliancesummaryfilterstypedef"></a>
+
 ## ConfigRuleComplianceSummaryFiltersTypeDef
 
 ```python
@@ -614,6 +670,8 @@ Optional fields:
 
 - `AccountId`: `str`
 - `AwsRegion`: `str`
+
+<a id="configruleevaluationstatustypedef"></a>
 
 ## ConfigRuleEvaluationStatusTypeDef
 
@@ -635,6 +693,8 @@ Optional fields:
 - `LastErrorCode`: `str`
 - `LastErrorMessage`: `str`
 - `FirstEvaluationStarted`: `bool`
+
+<a id="configruletypedef"></a>
 
 ## ConfigRuleTypeDef
 
@@ -659,6 +719,8 @@ Optional fields:
 - `ConfigRuleState`: [ConfigRuleStateType](./literals.md#configrulestatetype)
 - `CreatedBy`: `str`
 
+<a id="configsnapshotdeliverypropertiestypedef"></a>
+
 ## ConfigSnapshotDeliveryPropertiesTypeDef
 
 ```python
@@ -669,6 +731,8 @@ Optional fields:
 
 - `deliveryFrequency`:
   [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
+
+<a id="configstreamdeliveryinfotypedef"></a>
 
 ## ConfigStreamDeliveryInfoTypeDef
 
@@ -682,6 +746,8 @@ Optional fields:
 - `lastErrorCode`: `str`
 - `lastErrorMessage`: `str`
 - `lastStatusChangeTime`: `datetime`
+
+<a id="configurationaggregatortypedef"></a>
 
 ## ConfigurationAggregatorTypeDef
 
@@ -700,6 +766,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 - `CreatedBy`: `str`
+
+<a id="configurationitemtypedef"></a>
 
 ## ConfigurationItemTypeDef
 
@@ -730,6 +798,8 @@ Optional fields:
 - `configuration`: `str`
 - `supplementaryConfiguration`: `Dict`\[`str`, `str`\]
 
+<a id="configurationrecorderstatustypedef"></a>
+
 ## ConfigurationRecorderStatusTypeDef
 
 ```python
@@ -747,6 +817,8 @@ Optional fields:
 - `lastErrorMessage`: `str`
 - `lastStatusChangeTime`: `datetime`
 
+<a id="configurationrecordertypedef"></a>
+
 ## ConfigurationRecorderTypeDef
 
 ```python
@@ -760,6 +832,8 @@ Optional fields:
 - `recordingGroup`:
   [RecordingGroupTypeDef](./type_defs.md#recordinggrouptypedef)
 
+<a id="conformancepackcompliancefilterstypedef"></a>
+
 ## ConformancePackComplianceFiltersTypeDef
 
 ```python
@@ -772,6 +846,8 @@ Optional fields:
 - `ComplianceType`:
   [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 
+<a id="conformancepackcompliancesummarytypedef"></a>
+
 ## ConformancePackComplianceSummaryTypeDef
 
 ```python
@@ -783,6 +859,8 @@ Required fields:
 - `ConformancePackName`: `str`
 - `ConformancePackComplianceStatus`:
   [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
+
+<a id="conformancepackdetailtypedef"></a>
 
 ## ConformancePackDetailTypeDef
 
@@ -805,6 +883,8 @@ Optional fields:
 - `LastUpdateRequestedTime`: `datetime`
 - `CreatedBy`: `str`
 
+<a id="conformancepackevaluationfilterstypedef"></a>
+
 ## ConformancePackEvaluationFiltersTypeDef
 
 ```python
@@ -818,6 +898,8 @@ Optional fields:
   [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `ResourceType`: `str`
 - `ResourceIds`: `Sequence`\[`str`\]
+
+<a id="conformancepackevaluationresulttypedef"></a>
 
 ## ConformancePackEvaluationResultTypeDef
 
@@ -838,6 +920,8 @@ Optional fields:
 
 - `Annotation`: `str`
 
+<a id="conformancepackinputparametertypedef"></a>
+
 ## ConformancePackInputParameterTypeDef
 
 ```python
@@ -848,6 +932,8 @@ Required fields:
 
 - `ParameterName`: `str`
 - `ParameterValue`: `str`
+
+<a id="conformancepackrulecompliancetypedef"></a>
 
 ## ConformancePackRuleComplianceTypeDef
 
@@ -861,6 +947,8 @@ Optional fields:
 - `ComplianceType`:
   [ConformancePackComplianceTypeType](./literals.md#conformancepackcompliancetypetype)
 - `Controls`: `List`\[`str`\]
+
+<a id="conformancepackstatusdetailtypedef"></a>
 
 ## ConformancePackStatusDetailTypeDef
 
@@ -883,6 +971,8 @@ Optional fields:
 - `ConformancePackStatusReason`: `str`
 - `LastUpdateCompletedTime`: `datetime`
 
+<a id="deleteaggregationauthorizationrequestrequesttypedef"></a>
+
 ## DeleteAggregationAuthorizationRequestRequestTypeDef
 
 ```python
@@ -894,6 +984,8 @@ Required fields:
 - `AuthorizedAccountId`: `str`
 - `AuthorizedAwsRegion`: `str`
 
+<a id="deleteconfigrulerequestrequesttypedef"></a>
+
 ## DeleteConfigRuleRequestRequestTypeDef
 
 ```python
@@ -903,6 +995,8 @@ from mypy_boto3_config.type_defs import DeleteConfigRuleRequestRequestTypeDef
 Required fields:
 
 - `ConfigRuleName`: `str`
+
+<a id="deleteconfigurationaggregatorrequestrequesttypedef"></a>
 
 ## DeleteConfigurationAggregatorRequestRequestTypeDef
 
@@ -914,6 +1008,8 @@ Required fields:
 
 - `ConfigurationAggregatorName`: `str`
 
+<a id="deleteconfigurationrecorderrequestrequesttypedef"></a>
+
 ## DeleteConfigurationRecorderRequestRequestTypeDef
 
 ```python
@@ -923,6 +1019,8 @@ from mypy_boto3_config.type_defs import DeleteConfigurationRecorderRequestReques
 Required fields:
 
 - `ConfigurationRecorderName`: `str`
+
+<a id="deleteconformancepackrequestrequesttypedef"></a>
 
 ## DeleteConformancePackRequestRequestTypeDef
 
@@ -934,6 +1032,8 @@ Required fields:
 
 - `ConformancePackName`: `str`
 
+<a id="deletedeliverychannelrequestrequesttypedef"></a>
+
 ## DeleteDeliveryChannelRequestRequestTypeDef
 
 ```python
@@ -943,6 +1043,8 @@ from mypy_boto3_config.type_defs import DeleteDeliveryChannelRequestRequestTypeD
 Required fields:
 
 - `DeliveryChannelName`: `str`
+
+<a id="deleteevaluationresultsrequestrequesttypedef"></a>
 
 ## DeleteEvaluationResultsRequestRequestTypeDef
 
@@ -954,6 +1056,8 @@ Required fields:
 
 - `ConfigRuleName`: `str`
 
+<a id="deleteorganizationconfigrulerequestrequesttypedef"></a>
+
 ## DeleteOrganizationConfigRuleRequestRequestTypeDef
 
 ```python
@@ -963,6 +1067,8 @@ from mypy_boto3_config.type_defs import DeleteOrganizationConfigRuleRequestReque
 Required fields:
 
 - `OrganizationConfigRuleName`: `str`
+
+<a id="deleteorganizationconformancepackrequestrequesttypedef"></a>
 
 ## DeleteOrganizationConformancePackRequestRequestTypeDef
 
@@ -974,6 +1080,8 @@ Required fields:
 
 - `OrganizationConformancePackName`: `str`
 
+<a id="deletependingaggregationrequestrequestrequesttypedef"></a>
+
 ## DeletePendingAggregationRequestRequestRequestTypeDef
 
 ```python
@@ -984,6 +1092,8 @@ Required fields:
 
 - `RequesterAccountId`: `str`
 - `RequesterAwsRegion`: `str`
+
+<a id="deleteremediationconfigurationrequestrequesttypedef"></a>
 
 ## DeleteRemediationConfigurationRequestRequestTypeDef
 
@@ -999,6 +1109,8 @@ Optional fields:
 
 - `ResourceType`: `str`
 
+<a id="deleteremediationexceptionsrequestrequesttypedef"></a>
+
 ## DeleteRemediationExceptionsRequestRequestTypeDef
 
 ```python
@@ -1010,6 +1122,8 @@ Required fields:
 - `ConfigRuleName`: `str`
 - `ResourceKeys`:
   `Sequence`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+
+<a id="deleteremediationexceptionsresponsetypedef"></a>
 
 ## DeleteRemediationExceptionsResponseTypeDef
 
@@ -1024,6 +1138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourceconfigrequestrequesttypedef"></a>
+
 ## DeleteResourceConfigRequestRequestTypeDef
 
 ```python
@@ -1035,6 +1151,8 @@ Required fields:
 - `ResourceType`: `str`
 - `ResourceId`: `str`
 
+<a id="deleteretentionconfigurationrequestrequesttypedef"></a>
+
 ## DeleteRetentionConfigurationRequestRequestTypeDef
 
 ```python
@@ -1044,6 +1162,8 @@ from mypy_boto3_config.type_defs import DeleteRetentionConfigurationRequestReque
 Required fields:
 
 - `RetentionConfigurationName`: `str`
+
+<a id="deletestoredqueryrequestrequesttypedef"></a>
 
 ## DeleteStoredQueryRequestRequestTypeDef
 
@@ -1055,6 +1175,8 @@ Required fields:
 
 - `QueryName`: `str`
 
+<a id="deliverconfigsnapshotrequestrequesttypedef"></a>
+
 ## DeliverConfigSnapshotRequestRequestTypeDef
 
 ```python
@@ -1064,6 +1186,8 @@ from mypy_boto3_config.type_defs import DeliverConfigSnapshotRequestRequestTypeD
 Required fields:
 
 - `deliveryChannelName`: `str`
+
+<a id="deliverconfigsnapshotresponsetypedef"></a>
 
 ## DeliverConfigSnapshotResponseTypeDef
 
@@ -1076,6 +1200,8 @@ Required fields:
 - `configSnapshotId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deliverychannelstatustypedef"></a>
 
 ## DeliveryChannelStatusTypeDef
 
@@ -1093,6 +1219,8 @@ Optional fields:
 - `configStreamDeliveryInfo`:
   [ConfigStreamDeliveryInfoTypeDef](./type_defs.md#configstreamdeliveryinfotypedef)
 
+<a id="deliverychanneltypedef"></a>
+
 ## DeliveryChannelTypeDef
 
 ```python
@@ -1108,6 +1236,8 @@ Optional fields:
 - `snsTopicARN`: `str`
 - `configSnapshotDeliveryProperties`:
   [ConfigSnapshotDeliveryPropertiesTypeDef](./type_defs.md#configsnapshotdeliverypropertiestypedef)
+
+<a id="describeaggregatecompliancebyconfigrulesrequestrequesttypedef"></a>
 
 ## DescribeAggregateComplianceByConfigRulesRequestRequestTypeDef
 
@@ -1126,6 +1256,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describeaggregatecompliancebyconfigrulesresponsetypedef"></a>
+
 ## DescribeAggregateComplianceByConfigRulesResponseTypeDef
 
 ```python
@@ -1139,6 +1271,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeaggregatecompliancebyconformancepacksrequestrequesttypedef"></a>
 
 ## DescribeAggregateComplianceByConformancePacksRequestRequestTypeDef
 
@@ -1157,6 +1291,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describeaggregatecompliancebyconformancepacksresponsetypedef"></a>
+
 ## DescribeAggregateComplianceByConformancePacksResponseTypeDef
 
 ```python
@@ -1171,6 +1307,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaggregationauthorizationsrequestrequesttypedef"></a>
+
 ## DescribeAggregationAuthorizationsRequestRequestTypeDef
 
 ```python
@@ -1181,6 +1319,8 @@ Optional fields:
 
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeaggregationauthorizationsresponsetypedef"></a>
 
 ## DescribeAggregationAuthorizationsResponseTypeDef
 
@@ -1196,6 +1336,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecompliancebyconfigrulerequestrequesttypedef"></a>
+
 ## DescribeComplianceByConfigRuleRequestRequestTypeDef
 
 ```python
@@ -1208,6 +1350,8 @@ Optional fields:
 - `ComplianceTypes`:
   `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
+
+<a id="describecompliancebyconfigruleresponsetypedef"></a>
 
 ## DescribeComplianceByConfigRuleResponseTypeDef
 
@@ -1222,6 +1366,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecompliancebyresourcerequestrequesttypedef"></a>
 
 ## DescribeComplianceByResourceRequestRequestTypeDef
 
@@ -1238,6 +1384,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describecompliancebyresourceresponsetypedef"></a>
+
 ## DescribeComplianceByResourceResponseTypeDef
 
 ```python
@@ -1252,6 +1400,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigruleevaluationstatusrequestrequesttypedef"></a>
+
 ## DescribeConfigRuleEvaluationStatusRequestRequestTypeDef
 
 ```python
@@ -1263,6 +1413,8 @@ Optional fields:
 - `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="describeconfigruleevaluationstatusresponsetypedef"></a>
 
 ## DescribeConfigRuleEvaluationStatusResponseTypeDef
 
@@ -1278,6 +1430,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigrulesrequestrequesttypedef"></a>
+
 ## DescribeConfigRulesRequestRequestTypeDef
 
 ```python
@@ -1288,6 +1442,8 @@ Optional fields:
 
 - `ConfigRuleNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
+
+<a id="describeconfigrulesresponsetypedef"></a>
 
 ## DescribeConfigRulesResponseTypeDef
 
@@ -1302,6 +1458,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeconfigurationaggregatorsourcesstatusrequestrequesttypedef"></a>
 
 ## DescribeConfigurationAggregatorSourcesStatusRequestRequestTypeDef
 
@@ -1320,6 +1478,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describeconfigurationaggregatorsourcesstatusresponsetypedef"></a>
+
 ## DescribeConfigurationAggregatorSourcesStatusResponseTypeDef
 
 ```python
@@ -1334,6 +1494,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationaggregatorsrequestrequesttypedef"></a>
+
 ## DescribeConfigurationAggregatorsRequestRequestTypeDef
 
 ```python
@@ -1345,6 +1507,8 @@ Optional fields:
 - `ConfigurationAggregatorNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="describeconfigurationaggregatorsresponsetypedef"></a>
 
 ## DescribeConfigurationAggregatorsResponseTypeDef
 
@@ -1360,6 +1524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationrecorderstatusrequestrequesttypedef"></a>
+
 ## DescribeConfigurationRecorderStatusRequestRequestTypeDef
 
 ```python
@@ -1369,6 +1535,8 @@ from mypy_boto3_config.type_defs import DescribeConfigurationRecorderStatusReque
 Optional fields:
 
 - `ConfigurationRecorderNames`: `Sequence`\[`str`\]
+
+<a id="describeconfigurationrecorderstatusresponsetypedef"></a>
 
 ## DescribeConfigurationRecorderStatusResponseTypeDef
 
@@ -1383,6 +1551,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconfigurationrecordersrequestrequesttypedef"></a>
+
 ## DescribeConfigurationRecordersRequestRequestTypeDef
 
 ```python
@@ -1392,6 +1562,8 @@ from mypy_boto3_config.type_defs import DescribeConfigurationRecordersRequestReq
 Optional fields:
 
 - `ConfigurationRecorderNames`: `Sequence`\[`str`\]
+
+<a id="describeconfigurationrecordersresponsetypedef"></a>
 
 ## DescribeConfigurationRecordersResponseTypeDef
 
@@ -1405,6 +1577,8 @@ Required fields:
   `List`\[[ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeconformancepackcompliancerequestrequesttypedef"></a>
 
 ## DescribeConformancePackComplianceRequestRequestTypeDef
 
@@ -1423,6 +1597,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describeconformancepackcomplianceresponsetypedef"></a>
+
 ## DescribeConformancePackComplianceResponseTypeDef
 
 ```python
@@ -1438,6 +1614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconformancepackstatusrequestrequesttypedef"></a>
+
 ## DescribeConformancePackStatusRequestRequestTypeDef
 
 ```python
@@ -1449,6 +1627,8 @@ Optional fields:
 - `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeconformancepackstatusresponsetypedef"></a>
 
 ## DescribeConformancePackStatusResponseTypeDef
 
@@ -1464,6 +1644,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconformancepacksrequestrequesttypedef"></a>
+
 ## DescribeConformancePacksRequestRequestTypeDef
 
 ```python
@@ -1475,6 +1657,8 @@ Optional fields:
 - `ConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeconformancepacksresponsetypedef"></a>
 
 ## DescribeConformancePacksResponseTypeDef
 
@@ -1490,6 +1674,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedeliverychannelstatusrequestrequesttypedef"></a>
+
 ## DescribeDeliveryChannelStatusRequestRequestTypeDef
 
 ```python
@@ -1499,6 +1685,8 @@ from mypy_boto3_config.type_defs import DescribeDeliveryChannelStatusRequestRequ
 Optional fields:
 
 - `DeliveryChannelNames`: `Sequence`\[`str`\]
+
+<a id="describedeliverychannelstatusresponsetypedef"></a>
 
 ## DescribeDeliveryChannelStatusResponseTypeDef
 
@@ -1513,6 +1701,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedeliverychannelsrequestrequesttypedef"></a>
+
 ## DescribeDeliveryChannelsRequestRequestTypeDef
 
 ```python
@@ -1522,6 +1712,8 @@ from mypy_boto3_config.type_defs import DescribeDeliveryChannelsRequestRequestTy
 Optional fields:
 
 - `DeliveryChannelNames`: `Sequence`\[`str`\]
+
+<a id="describedeliverychannelsresponsetypedef"></a>
 
 ## DescribeDeliveryChannelsResponseTypeDef
 
@@ -1536,6 +1728,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconfigrulestatusesrequestrequesttypedef"></a>
+
 ## DescribeOrganizationConfigRuleStatusesRequestRequestTypeDef
 
 ```python
@@ -1547,6 +1741,8 @@ Optional fields:
 - `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeorganizationconfigrulestatusesresponsetypedef"></a>
 
 ## DescribeOrganizationConfigRuleStatusesResponseTypeDef
 
@@ -1562,6 +1758,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconfigrulesrequestrequesttypedef"></a>
+
 ## DescribeOrganizationConfigRulesRequestRequestTypeDef
 
 ```python
@@ -1573,6 +1771,8 @@ Optional fields:
 - `OrganizationConfigRuleNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeorganizationconfigrulesresponsetypedef"></a>
 
 ## DescribeOrganizationConfigRulesResponseTypeDef
 
@@ -1588,6 +1788,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconformancepackstatusesrequestrequesttypedef"></a>
+
 ## DescribeOrganizationConformancePackStatusesRequestRequestTypeDef
 
 ```python
@@ -1599,6 +1801,8 @@ Optional fields:
 - `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeorganizationconformancepackstatusesresponsetypedef"></a>
 
 ## DescribeOrganizationConformancePackStatusesResponseTypeDef
 
@@ -1614,6 +1818,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconformancepacksrequestrequesttypedef"></a>
+
 ## DescribeOrganizationConformancePacksRequestRequestTypeDef
 
 ```python
@@ -1625,6 +1831,8 @@ Optional fields:
 - `OrganizationConformancePackNames`: `Sequence`\[`str`\]
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describeorganizationconformancepacksresponsetypedef"></a>
 
 ## DescribeOrganizationConformancePacksResponseTypeDef
 
@@ -1640,6 +1848,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describependingaggregationrequestsrequestrequesttypedef"></a>
+
 ## DescribePendingAggregationRequestsRequestRequestTypeDef
 
 ```python
@@ -1650,6 +1860,8 @@ Optional fields:
 
 - `Limit`: `int`
 - `NextToken`: `str`
+
+<a id="describependingaggregationrequestsresponsetypedef"></a>
 
 ## DescribePendingAggregationRequestsResponseTypeDef
 
@@ -1665,6 +1877,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeremediationconfigurationsrequestrequesttypedef"></a>
+
 ## DescribeRemediationConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1674,6 +1888,8 @@ from mypy_boto3_config.type_defs import DescribeRemediationConfigurationsRequest
 Required fields:
 
 - `ConfigRuleNames`: `Sequence`\[`str`\]
+
+<a id="describeremediationconfigurationsresponsetypedef"></a>
 
 ## DescribeRemediationConfigurationsResponseTypeDef
 
@@ -1687,6 +1903,8 @@ Required fields:
   `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeremediationexceptionsrequestrequesttypedef"></a>
 
 ## DescribeRemediationExceptionsRequestRequestTypeDef
 
@@ -1705,6 +1923,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describeremediationexceptionsresponsetypedef"></a>
+
 ## DescribeRemediationExceptionsResponseTypeDef
 
 ```python
@@ -1718,6 +1938,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeremediationexecutionstatusrequestrequesttypedef"></a>
 
 ## DescribeRemediationExecutionStatusRequestRequestTypeDef
 
@@ -1736,6 +1958,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="describeremediationexecutionstatusresponsetypedef"></a>
+
 ## DescribeRemediationExecutionStatusResponseTypeDef
 
 ```python
@@ -1750,6 +1974,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeretentionconfigurationsrequestrequesttypedef"></a>
+
 ## DescribeRetentionConfigurationsRequestRequestTypeDef
 
 ```python
@@ -1760,6 +1986,8 @@ Optional fields:
 
 - `RetentionConfigurationNames`: `Sequence`\[`str`\]
 - `NextToken`: `str`
+
+<a id="describeretentionconfigurationsresponsetypedef"></a>
 
 ## DescribeRetentionConfigurationsResponseTypeDef
 
@@ -1775,6 +2003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="evaluationresultidentifiertypedef"></a>
+
 ## EvaluationResultIdentifierTypeDef
 
 ```python
@@ -1787,6 +2017,8 @@ Optional fields:
   [EvaluationResultQualifierTypeDef](./type_defs.md#evaluationresultqualifiertypedef)
 - `OrderingTimestamp`: `datetime`
 
+<a id="evaluationresultqualifiertypedef"></a>
+
 ## EvaluationResultQualifierTypeDef
 
 ```python
@@ -1798,6 +2030,8 @@ Optional fields:
 - `ConfigRuleName`: `str`
 - `ResourceType`: `str`
 - `ResourceId`: `str`
+
+<a id="evaluationresulttypedef"></a>
 
 ## EvaluationResultTypeDef
 
@@ -1814,6 +2048,8 @@ Optional fields:
 - `ConfigRuleInvokedTime`: `datetime`
 - `Annotation`: `str`
 - `ResultToken`: `str`
+
+<a id="evaluationtypedef"></a>
 
 ## EvaluationTypeDef
 
@@ -1832,6 +2068,8 @@ Optional fields:
 
 - `Annotation`: `str`
 
+<a id="executioncontrolstypedef"></a>
+
 ## ExecutionControlsTypeDef
 
 ```python
@@ -1841,6 +2079,8 @@ from mypy_boto3_config.type_defs import ExecutionControlsTypeDef
 Optional fields:
 
 - `SsmControls`: [SsmControlsTypeDef](./type_defs.md#ssmcontrolstypedef)
+
+<a id="externalevaluationtypedef"></a>
 
 ## ExternalEvaluationTypeDef
 
@@ -1859,6 +2099,8 @@ Optional fields:
 
 - `Annotation`: `str`
 
+<a id="faileddeleteremediationexceptionsbatchtypedef"></a>
+
 ## FailedDeleteRemediationExceptionsBatchTypeDef
 
 ```python
@@ -1870,6 +2112,8 @@ Optional fields:
 - `FailureMessage`: `str`
 - `FailedItems`:
   `List`\[[RemediationExceptionResourceKeyTypeDef](./type_defs.md#remediationexceptionresourcekeytypedef)\]
+
+<a id="failedremediationbatchtypedef"></a>
 
 ## FailedRemediationBatchTypeDef
 
@@ -1883,6 +2127,8 @@ Optional fields:
 - `FailedItems`:
   `List`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
 
+<a id="failedremediationexceptionbatchtypedef"></a>
+
 ## FailedRemediationExceptionBatchTypeDef
 
 ```python
@@ -1895,6 +2141,8 @@ Optional fields:
 - `FailedItems`:
   `List`\[[RemediationExceptionTypeDef](./type_defs.md#remediationexceptiontypedef)\]
 
+<a id="fieldinfotypedef"></a>
+
 ## FieldInfoTypeDef
 
 ```python
@@ -1904,6 +2152,8 @@ from mypy_boto3_config.type_defs import FieldInfoTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="getaggregatecompliancedetailsbyconfigrulerequestrequesttypedef"></a>
 
 ## GetAggregateComplianceDetailsByConfigRuleRequestRequestTypeDef
 
@@ -1924,6 +2174,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getaggregatecompliancedetailsbyconfigruleresponsetypedef"></a>
+
 ## GetAggregateComplianceDetailsByConfigRuleResponseTypeDef
 
 ```python
@@ -1937,6 +2189,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getaggregateconfigrulecompliancesummaryrequestrequesttypedef"></a>
 
 ## GetAggregateConfigRuleComplianceSummaryRequestRequestTypeDef
 
@@ -1957,6 +2211,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getaggregateconfigrulecompliancesummaryresponsetypedef"></a>
+
 ## GetAggregateConfigRuleComplianceSummaryResponseTypeDef
 
 ```python
@@ -1971,6 +2227,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getaggregateconformancepackcompliancesummaryrequestrequesttypedef"></a>
 
 ## GetAggregateConformancePackComplianceSummaryRequestRequestTypeDef
 
@@ -1991,6 +2249,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getaggregateconformancepackcompliancesummaryresponsetypedef"></a>
+
 ## GetAggregateConformancePackComplianceSummaryResponseTypeDef
 
 ```python
@@ -2005,6 +2265,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getaggregatediscoveredresourcecountsrequestrequesttypedef"></a>
 
 ## GetAggregateDiscoveredResourceCountsRequestRequestTypeDef
 
@@ -2025,6 +2287,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getaggregatediscoveredresourcecountsresponsetypedef"></a>
+
 ## GetAggregateDiscoveredResourceCountsResponseTypeDef
 
 ```python
@@ -2041,6 +2305,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getaggregateresourceconfigrequestrequesttypedef"></a>
+
 ## GetAggregateResourceConfigRequestRequestTypeDef
 
 ```python
@@ -2052,6 +2318,8 @@ Required fields:
 - `ConfigurationAggregatorName`: `str`
 - `ResourceIdentifier`:
   [AggregateResourceIdentifierTypeDef](./type_defs.md#aggregateresourceidentifiertypedef)
+
+<a id="getaggregateresourceconfigresponsetypedef"></a>
 
 ## GetAggregateResourceConfigResponseTypeDef
 
@@ -2065,6 +2333,8 @@ Required fields:
   [ConfigurationItemTypeDef](./type_defs.md#configurationitemtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcompliancedetailsbyconfigrulerequestrequesttypedef"></a>
 
 ## GetComplianceDetailsByConfigRuleRequestRequestTypeDef
 
@@ -2083,6 +2353,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getcompliancedetailsbyconfigruleresponsetypedef"></a>
+
 ## GetComplianceDetailsByConfigRuleResponseTypeDef
 
 ```python
@@ -2096,6 +2368,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcompliancedetailsbyresourcerequestrequesttypedef"></a>
 
 ## GetComplianceDetailsByResourceRequestRequestTypeDef
 
@@ -2114,6 +2388,8 @@ Optional fields:
   `Sequence`\[[ComplianceTypeType](./literals.md#compliancetypetype)\]
 - `NextToken`: `str`
 
+<a id="getcompliancedetailsbyresourceresponsetypedef"></a>
+
 ## GetComplianceDetailsByResourceResponseTypeDef
 
 ```python
@@ -2128,6 +2404,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcompliancesummarybyconfigruleresponsetypedef"></a>
+
 ## GetComplianceSummaryByConfigRuleResponseTypeDef
 
 ```python
@@ -2141,6 +2419,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcompliancesummarybyresourcetyperequestrequesttypedef"></a>
+
 ## GetComplianceSummaryByResourceTypeRequestRequestTypeDef
 
 ```python
@@ -2150,6 +2430,8 @@ from mypy_boto3_config.type_defs import GetComplianceSummaryByResourceTypeReques
 Optional fields:
 
 - `ResourceTypes`: `Sequence`\[`str`\]
+
+<a id="getcompliancesummarybyresourcetyperesponsetypedef"></a>
 
 ## GetComplianceSummaryByResourceTypeResponseTypeDef
 
@@ -2163,6 +2445,8 @@ Required fields:
   `List`\[[ComplianceSummaryByResourceTypeTypeDef](./type_defs.md#compliancesummarybyresourcetypetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getconformancepackcompliancedetailsrequestrequesttypedef"></a>
 
 ## GetConformancePackComplianceDetailsRequestRequestTypeDef
 
@@ -2181,6 +2465,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getconformancepackcompliancedetailsresponsetypedef"></a>
+
 ## GetConformancePackComplianceDetailsResponseTypeDef
 
 ```python
@@ -2195,6 +2481,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getconformancepackcompliancesummaryrequestrequesttypedef"></a>
 
 ## GetConformancePackComplianceSummaryRequestRequestTypeDef
 
@@ -2211,6 +2499,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getconformancepackcompliancesummaryresponsetypedef"></a>
+
 ## GetConformancePackComplianceSummaryResponseTypeDef
 
 ```python
@@ -2225,6 +2515,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdiscoveredresourcecountsrequestrequesttypedef"></a>
+
 ## GetDiscoveredResourceCountsRequestRequestTypeDef
 
 ```python
@@ -2236,6 +2528,8 @@ Optional fields:
 - `resourceTypes`: `Sequence`\[`str`\]
 - `limit`: `int`
 - `nextToken`: `str`
+
+<a id="getdiscoveredresourcecountsresponsetypedef"></a>
 
 ## GetDiscoveredResourceCountsResponseTypeDef
 
@@ -2251,6 +2545,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getorganizationconfigruledetailedstatusrequestrequesttypedef"></a>
 
 ## GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef
 
@@ -2269,6 +2565,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getorganizationconfigruledetailedstatusresponsetypedef"></a>
+
 ## GetOrganizationConfigRuleDetailedStatusResponseTypeDef
 
 ```python
@@ -2282,6 +2580,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getorganizationconformancepackdetailedstatusrequestrequesttypedef"></a>
 
 ## GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef
 
@@ -2300,6 +2600,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="getorganizationconformancepackdetailedstatusresponsetypedef"></a>
+
 ## GetOrganizationConformancePackDetailedStatusResponseTypeDef
 
 ```python
@@ -2313,6 +2615,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getresourceconfighistoryrequestrequesttypedef"></a>
 
 ## GetResourceConfigHistoryRequestRequestTypeDef
 
@@ -2334,6 +2638,8 @@ Optional fields:
 - `limit`: `int`
 - `nextToken`: `str`
 
+<a id="getresourceconfighistoryresponsetypedef"></a>
+
 ## GetResourceConfigHistoryResponseTypeDef
 
 ```python
@@ -2348,6 +2654,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getstoredqueryrequestrequesttypedef"></a>
+
 ## GetStoredQueryRequestRequestTypeDef
 
 ```python
@@ -2357,6 +2665,8 @@ from mypy_boto3_config.type_defs import GetStoredQueryRequestRequestTypeDef
 Required fields:
 
 - `QueryName`: `str`
+
+<a id="getstoredqueryresponsetypedef"></a>
 
 ## GetStoredQueryResponseTypeDef
 
@@ -2370,6 +2680,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groupedresourcecounttypedef"></a>
+
 ## GroupedResourceCountTypeDef
 
 ```python
@@ -2380,6 +2692,8 @@ Required fields:
 
 - `GroupName`: `str`
 - `ResourceCount`: `int`
+
+<a id="listaggregatediscoveredresourcesrequestrequesttypedef"></a>
 
 ## ListAggregateDiscoveredResourcesRequestRequestTypeDef
 
@@ -2398,6 +2712,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="listaggregatediscoveredresourcesresponsetypedef"></a>
+
 ## ListAggregateDiscoveredResourcesResponseTypeDef
 
 ```python
@@ -2411,6 +2727,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdiscoveredresourcesrequestrequesttypedef"></a>
 
 ## ListDiscoveredResourcesRequestRequestTypeDef
 
@@ -2430,6 +2748,8 @@ Optional fields:
 - `includeDeletedResources`: `bool`
 - `nextToken`: `str`
 
+<a id="listdiscoveredresourcesresponsetypedef"></a>
+
 ## ListDiscoveredResourcesResponseTypeDef
 
 ```python
@@ -2444,6 +2764,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststoredqueriesrequestrequesttypedef"></a>
+
 ## ListStoredQueriesRequestRequestTypeDef
 
 ```python
@@ -2454,6 +2776,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="liststoredqueriesresponsetypedef"></a>
 
 ## ListStoredQueriesResponseTypeDef
 
@@ -2468,6 +2792,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -2484,6 +2810,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -2496,6 +2824,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="memberaccountstatustypedef"></a>
 
 ## MemberAccountStatusTypeDef
 
@@ -2516,6 +2846,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `LastUpdateTime`: `datetime`
 
+<a id="organizationaggregationsourcetypedef"></a>
+
 ## OrganizationAggregationSourceTypeDef
 
 ```python
@@ -2530,6 +2862,8 @@ Optional fields:
 
 - `AwsRegions`: `List`\[`str`\]
 - `AllAwsRegions`: `bool`
+
+<a id="organizationconfigrulestatustypedef"></a>
 
 ## OrganizationConfigRuleStatusTypeDef
 
@@ -2548,6 +2882,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `LastUpdateTime`: `datetime`
+
+<a id="organizationconfigruletypedef"></a>
 
 ## OrganizationConfigRuleTypeDef
 
@@ -2569,6 +2905,8 @@ Optional fields:
 - `ExcludedAccounts`: `List`\[`str`\]
 - `LastUpdateTime`: `datetime`
 
+<a id="organizationconformancepackdetailedstatustypedef"></a>
+
 ## OrganizationConformancePackDetailedStatusTypeDef
 
 ```python
@@ -2588,6 +2926,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `LastUpdateTime`: `datetime`
 
+<a id="organizationconformancepackstatustypedef"></a>
+
 ## OrganizationConformancePackStatusTypeDef
 
 ```python
@@ -2605,6 +2945,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 - `LastUpdateTime`: `datetime`
+
+<a id="organizationconformancepacktypedef"></a>
 
 ## OrganizationConformancePackTypeDef
 
@@ -2625,6 +2967,8 @@ Optional fields:
 - `ConformancePackInputParameters`:
   `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 - `ExcludedAccounts`: `List`\[`str`\]
+
+<a id="organizationcustomrulemetadatatypedef"></a>
 
 ## OrganizationCustomRuleMetadataTypeDef
 
@@ -2649,6 +2993,8 @@ Optional fields:
 - `TagKeyScope`: `str`
 - `TagValueScope`: `str`
 
+<a id="organizationmanagedrulemetadatatypedef"></a>
+
 ## OrganizationManagedRuleMetadataTypeDef
 
 ```python
@@ -2670,6 +3016,8 @@ Optional fields:
 - `TagKeyScope`: `str`
 - `TagValueScope`: `str`
 
+<a id="organizationresourcedetailedstatusfilterstypedef"></a>
+
 ## OrganizationResourceDetailedStatusFiltersTypeDef
 
 ```python
@@ -2681,6 +3029,8 @@ Optional fields:
 - `AccountId`: `str`
 - `Status`:
   [OrganizationResourceDetailedStatusType](./literals.md#organizationresourcedetailedstatustype)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -2694,6 +3044,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="pendingaggregationrequesttypedef"></a>
+
 ## PendingAggregationRequestTypeDef
 
 ```python
@@ -2704,6 +3056,8 @@ Optional fields:
 
 - `RequesterAccountId`: `str`
 - `RequesterAwsRegion`: `str`
+
+<a id="putaggregationauthorizationrequestrequesttypedef"></a>
 
 ## PutAggregationAuthorizationRequestRequestTypeDef
 
@@ -2720,6 +3074,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putaggregationauthorizationresponsetypedef"></a>
+
 ## PutAggregationAuthorizationResponseTypeDef
 
 ```python
@@ -2732,6 +3088,8 @@ Required fields:
   [AggregationAuthorizationTypeDef](./type_defs.md#aggregationauthorizationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putconfigrulerequestrequesttypedef"></a>
 
 ## PutConfigRuleRequestRequestTypeDef
 
@@ -2746,6 +3104,8 @@ Required fields:
 Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="putconfigurationaggregatorrequestrequesttypedef"></a>
 
 ## PutConfigurationAggregatorRequestRequestTypeDef
 
@@ -2765,6 +3125,8 @@ Optional fields:
   [OrganizationAggregationSourceTypeDef](./type_defs.md#organizationaggregationsourcetypedef)
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putconfigurationaggregatorresponsetypedef"></a>
+
 ## PutConfigurationAggregatorResponseTypeDef
 
 ```python
@@ -2778,6 +3140,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putconfigurationrecorderrequestrequesttypedef"></a>
+
 ## PutConfigurationRecorderRequestRequestTypeDef
 
 ```python
@@ -2788,6 +3152,8 @@ Required fields:
 
 - `ConfigurationRecorder`:
   [ConfigurationRecorderTypeDef](./type_defs.md#configurationrecordertypedef)
+
+<a id="putconformancepackrequestrequesttypedef"></a>
 
 ## PutConformancePackRequestRequestTypeDef
 
@@ -2808,6 +3174,8 @@ Optional fields:
 - `ConformancePackInputParameters`:
   `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 
+<a id="putconformancepackresponsetypedef"></a>
+
 ## PutConformancePackResponseTypeDef
 
 ```python
@@ -2820,6 +3188,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putdeliverychannelrequestrequesttypedef"></a>
+
 ## PutDeliveryChannelRequestRequestTypeDef
 
 ```python
@@ -2830,6 +3200,8 @@ Required fields:
 
 - `DeliveryChannel`:
   [DeliveryChannelTypeDef](./type_defs.md#deliverychanneltypedef)
+
+<a id="putevaluationsrequestrequesttypedef"></a>
 
 ## PutEvaluationsRequestRequestTypeDef
 
@@ -2847,6 +3219,8 @@ Optional fields:
   `Sequence`\[[EvaluationTypeDef](./type_defs.md#evaluationtypedef)\]
 - `TestMode`: `bool`
 
+<a id="putevaluationsresponsetypedef"></a>
+
 ## PutEvaluationsResponseTypeDef
 
 ```python
@@ -2860,6 +3234,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putexternalevaluationrequestrequesttypedef"></a>
+
 ## PutExternalEvaluationRequestRequestTypeDef
 
 ```python
@@ -2871,6 +3247,8 @@ Required fields:
 - `ConfigRuleName`: `str`
 - `ExternalEvaluation`:
   [ExternalEvaluationTypeDef](./type_defs.md#externalevaluationtypedef)
+
+<a id="putorganizationconfigrulerequestrequesttypedef"></a>
 
 ## PutOrganizationConfigRuleRequestRequestTypeDef
 
@@ -2890,6 +3268,8 @@ Optional fields:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
 - `ExcludedAccounts`: `Sequence`\[`str`\]
 
+<a id="putorganizationconfigruleresponsetypedef"></a>
+
 ## PutOrganizationConfigRuleResponseTypeDef
 
 ```python
@@ -2901,6 +3281,8 @@ Required fields:
 - `OrganizationConfigRuleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putorganizationconformancepackrequestrequesttypedef"></a>
 
 ## PutOrganizationConformancePackRequestRequestTypeDef
 
@@ -2922,6 +3304,8 @@ Optional fields:
   `Sequence`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 - `ExcludedAccounts`: `Sequence`\[`str`\]
 
+<a id="putorganizationconformancepackresponsetypedef"></a>
+
 ## PutOrganizationConformancePackResponseTypeDef
 
 ```python
@@ -2934,6 +3318,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putremediationconfigurationsrequestrequesttypedef"></a>
+
 ## PutRemediationConfigurationsRequestRequestTypeDef
 
 ```python
@@ -2944,6 +3330,8 @@ Required fields:
 
 - `RemediationConfigurations`:
   `Sequence`\[[RemediationConfigurationTypeDef](./type_defs.md#remediationconfigurationtypedef)\]
+
+<a id="putremediationconfigurationsresponsetypedef"></a>
 
 ## PutRemediationConfigurationsResponseTypeDef
 
@@ -2957,6 +3345,8 @@ Required fields:
   `List`\[[FailedRemediationBatchTypeDef](./type_defs.md#failedremediationbatchtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putremediationexceptionsrequestrequesttypedef"></a>
 
 ## PutRemediationExceptionsRequestRequestTypeDef
 
@@ -2975,6 +3365,8 @@ Optional fields:
 - `Message`: `str`
 - `ExpirationTime`: `Union`\[`datetime`, `str`\]
 
+<a id="putremediationexceptionsresponsetypedef"></a>
+
 ## PutRemediationExceptionsResponseTypeDef
 
 ```python
@@ -2987,6 +3379,8 @@ Required fields:
   `List`\[[FailedRemediationExceptionBatchTypeDef](./type_defs.md#failedremediationexceptionbatchtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putresourceconfigrequestrequesttypedef"></a>
 
 ## PutResourceConfigRequestRequestTypeDef
 
@@ -3006,6 +3400,8 @@ Optional fields:
 - `ResourceName`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="putretentionconfigurationrequestrequesttypedef"></a>
+
 ## PutRetentionConfigurationRequestRequestTypeDef
 
 ```python
@@ -3015,6 +3411,8 @@ from mypy_boto3_config.type_defs import PutRetentionConfigurationRequestRequestT
 Required fields:
 
 - `RetentionPeriodInDays`: `int`
+
+<a id="putretentionconfigurationresponsetypedef"></a>
 
 ## PutRetentionConfigurationResponseTypeDef
 
@@ -3028,6 +3426,8 @@ Required fields:
   [RetentionConfigurationTypeDef](./type_defs.md#retentionconfigurationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putstoredqueryrequestrequesttypedef"></a>
 
 ## PutStoredQueryRequestRequestTypeDef
 
@@ -3043,6 +3443,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="putstoredqueryresponsetypedef"></a>
+
 ## PutStoredQueryResponseTypeDef
 
 ```python
@@ -3055,6 +3457,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="queryinfotypedef"></a>
+
 ## QueryInfoTypeDef
 
 ```python
@@ -3064,6 +3468,8 @@ from mypy_boto3_config.type_defs import QueryInfoTypeDef
 Optional fields:
 
 - `SelectFields`: `List`\[[FieldInfoTypeDef](./type_defs.md#fieldinfotypedef)\]
+
+<a id="recordinggrouptypedef"></a>
 
 ## RecordingGroupTypeDef
 
@@ -3077,6 +3483,8 @@ Optional fields:
 - `includeGlobalResourceTypes`: `bool`
 - `resourceTypes`: `List`\[[ResourceTypeType](./literals.md#resourcetypetype)\]
 
+<a id="relationshiptypedef"></a>
+
 ## RelationshipTypeDef
 
 ```python
@@ -3089,6 +3497,8 @@ Optional fields:
 - `resourceId`: `str`
 - `resourceName`: `str`
 - `relationshipName`: `str`
+
+<a id="remediationconfigurationtypedef"></a>
 
 ## RemediationConfigurationTypeDef
 
@@ -3117,6 +3527,8 @@ Optional fields:
 - `Arn`: `str`
 - `CreatedByService`: `str`
 
+<a id="remediationexceptionresourcekeytypedef"></a>
+
 ## RemediationExceptionResourceKeyTypeDef
 
 ```python
@@ -3127,6 +3539,8 @@ Optional fields:
 
 - `ResourceType`: `str`
 - `ResourceId`: `str`
+
+<a id="remediationexceptiontypedef"></a>
 
 ## RemediationExceptionTypeDef
 
@@ -3145,6 +3559,8 @@ Optional fields:
 - `Message`: `str`
 - `ExpirationTime`: `datetime`
 
+<a id="remediationexecutionstatustypedef"></a>
+
 ## RemediationExecutionStatusTypeDef
 
 ```python
@@ -3161,6 +3577,8 @@ Optional fields:
 - `InvocationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
+<a id="remediationexecutionsteptypedef"></a>
+
 ## RemediationExecutionStepTypeDef
 
 ```python
@@ -3176,6 +3594,8 @@ Optional fields:
 - `StartTime`: `datetime`
 - `StopTime`: `datetime`
 
+<a id="remediationparametervaluetypedef"></a>
+
 ## RemediationParameterValueTypeDef
 
 ```python
@@ -3186,6 +3606,8 @@ Optional fields:
 
 - `ResourceValue`: [ResourceValueTypeDef](./type_defs.md#resourcevaluetypedef)
 - `StaticValue`: [StaticValueTypeDef](./type_defs.md#staticvaluetypedef)
+
+<a id="resourcecountfilterstypedef"></a>
 
 ## ResourceCountFiltersTypeDef
 
@@ -3199,6 +3621,8 @@ Optional fields:
 - `AccountId`: `str`
 - `Region`: `str`
 
+<a id="resourcecounttypedef"></a>
+
 ## ResourceCountTypeDef
 
 ```python
@@ -3209,6 +3633,8 @@ Optional fields:
 
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `count`: `int`
+
+<a id="resourcefilterstypedef"></a>
 
 ## ResourceFiltersTypeDef
 
@@ -3223,6 +3649,8 @@ Optional fields:
 - `ResourceName`: `str`
 - `Region`: `str`
 
+<a id="resourceidentifiertypedef"></a>
+
 ## ResourceIdentifierTypeDef
 
 ```python
@@ -3236,6 +3664,8 @@ Optional fields:
 - `resourceName`: `str`
 - `resourceDeletionTime`: `datetime`
 
+<a id="resourcekeytypedef"></a>
+
 ## ResourceKeyTypeDef
 
 ```python
@@ -3247,6 +3677,8 @@ Required fields:
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `resourceId`: `str`
 
+<a id="resourcevaluetypedef"></a>
+
 ## ResourceValueTypeDef
 
 ```python
@@ -3257,6 +3689,8 @@ Required fields:
 
 - `Value`: `Literal['RESOURCE_ID']` (see
   [ResourceValueTypeType](./literals.md#resourcevaluetypetype))
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -3272,6 +3706,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retentionconfigurationtypedef"></a>
+
 ## RetentionConfigurationTypeDef
 
 ```python
@@ -3282,6 +3718,8 @@ Required fields:
 
 - `Name`: `str`
 - `RetentionPeriodInDays`: `int`
+
+<a id="scopetypedef"></a>
 
 ## ScopeTypeDef
 
@@ -3295,6 +3733,8 @@ Optional fields:
 - `TagKey`: `str`
 - `TagValue`: `str`
 - `ComplianceResourceId`: `str`
+
+<a id="selectaggregateresourceconfigrequestrequesttypedef"></a>
 
 ## SelectAggregateResourceConfigRequestRequestTypeDef
 
@@ -3313,6 +3753,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="selectaggregateresourceconfigresponsetypedef"></a>
+
 ## SelectAggregateResourceConfigResponseTypeDef
 
 ```python
@@ -3326,6 +3768,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="selectresourceconfigrequestrequesttypedef"></a>
 
 ## SelectResourceConfigRequestRequestTypeDef
 
@@ -3342,6 +3786,8 @@ Optional fields:
 - `Limit`: `int`
 - `NextToken`: `str`
 
+<a id="selectresourceconfigresponsetypedef"></a>
+
 ## SelectResourceConfigResponseTypeDef
 
 ```python
@@ -3356,6 +3802,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="sourcedetailtypedef"></a>
+
 ## SourceDetailTypeDef
 
 ```python
@@ -3369,6 +3817,8 @@ Optional fields:
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `MaximumExecutionFrequency`:
   [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
+
+<a id="sourcetypedef"></a>
 
 ## SourceTypeDef
 
@@ -3386,6 +3836,8 @@ Optional fields:
 - `SourceDetails`:
   `List`\[[SourceDetailTypeDef](./type_defs.md#sourcedetailtypedef)\]
 
+<a id="ssmcontrolstypedef"></a>
+
 ## SsmControlsTypeDef
 
 ```python
@@ -3397,6 +3849,8 @@ Optional fields:
 - `ConcurrentExecutionRatePercentage`: `int`
 - `ErrorPercentage`: `int`
 
+<a id="startconfigrulesevaluationrequestrequesttypedef"></a>
+
 ## StartConfigRulesEvaluationRequestRequestTypeDef
 
 ```python
@@ -3407,6 +3861,8 @@ Optional fields:
 
 - `ConfigRuleNames`: `Sequence`\[`str`\]
 
+<a id="startconfigurationrecorderrequestrequesttypedef"></a>
+
 ## StartConfigurationRecorderRequestRequestTypeDef
 
 ```python
@@ -3416,6 +3872,8 @@ from mypy_boto3_config.type_defs import StartConfigurationRecorderRequestRequest
 Required fields:
 
 - `ConfigurationRecorderName`: `str`
+
+<a id="startremediationexecutionrequestrequesttypedef"></a>
 
 ## StartRemediationExecutionRequestRequestTypeDef
 
@@ -3428,6 +3886,8 @@ Required fields:
 - `ConfigRuleName`: `str`
 - `ResourceKeys`:
   `Sequence`\[[ResourceKeyTypeDef](./type_defs.md#resourcekeytypedef)\]
+
+<a id="startremediationexecutionresponsetypedef"></a>
 
 ## StartRemediationExecutionResponseTypeDef
 
@@ -3443,6 +3903,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="staticvaluetypedef"></a>
+
 ## StaticValueTypeDef
 
 ```python
@@ -3452,6 +3914,8 @@ from mypy_boto3_config.type_defs import StaticValueTypeDef
 Required fields:
 
 - `Values`: `List`\[`str`\]
+
+<a id="statusdetailfilterstypedef"></a>
 
 ## StatusDetailFiltersTypeDef
 
@@ -3465,6 +3929,8 @@ Optional fields:
 - `MemberAccountRuleStatus`:
   [MemberAccountRuleStatusType](./literals.md#memberaccountrulestatustype)
 
+<a id="stopconfigurationrecorderrequestrequesttypedef"></a>
+
 ## StopConfigurationRecorderRequestRequestTypeDef
 
 ```python
@@ -3474,6 +3940,8 @@ from mypy_boto3_config.type_defs import StopConfigurationRecorderRequestRequestT
 Required fields:
 
 - `ConfigurationRecorderName`: `str`
+
+<a id="storedquerymetadatatypedef"></a>
 
 ## StoredQueryMetadataTypeDef
 
@@ -3490,6 +3958,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="storedquerytypedef"></a>
 
 ## StoredQueryTypeDef
 
@@ -3508,6 +3978,8 @@ Optional fields:
 - `Description`: `str`
 - `Expression`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -3519,6 +3991,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -3529,6 +4003,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

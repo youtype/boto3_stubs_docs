@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-greengrass-module"></a>
+
 # Literals for boto3 Greengrass module
 
 > [Index](..) > [Greengrass](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Greengrass](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrass.html#Greengrass)
 type annotations stubs module
-[mypy_boto3_greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
+[mypy-boto3-greengrass](https://pypi.org/project/mypy-boto3-greengrass/).
 
 - [Literals for boto3 Greengrass module](#literals-for-boto3-greengrass-module)
   - [BulkDeploymentStatusType](#bulkdeploymentstatustype)
@@ -44,6 +46,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="bulkdeploymentstatustype"></a>
+
 ## BulkDeploymentStatusType
 
 ```python
@@ -59,6 +63,8 @@ Values:
 - `Stopped`
 - `Stopping`
 
+<a id="configurationsyncstatustype"></a>
+
 ## ConfigurationSyncStatusType
 
 ```python
@@ -69,6 +75,8 @@ Values:
 
 - `InSync`
 - `OutOfSync`
+
+<a id="deploymenttypetype"></a>
 
 ## DeploymentTypeType
 
@@ -83,6 +91,8 @@ Values:
 - `Redeployment`
 - `ResetDeployment`
 
+<a id="encodingtypetype"></a>
+
 ## EncodingTypeType
 
 ```python
@@ -93,6 +103,8 @@ Values:
 
 - `binary`
 - `json`
+
+<a id="functionisolationmodetype"></a>
 
 ## FunctionIsolationModeType
 
@@ -105,6 +117,8 @@ Values:
 - `GreengrassContainer`
 - `NoContainer`
 
+<a id="listbulkdeploymentdetailedreportspaginatorname"></a>
+
 ## ListBulkDeploymentDetailedReportsPaginatorName
 
 ```python
@@ -114,6 +128,8 @@ from mypy_boto3_greengrass.literals import ListBulkDeploymentDetailedReportsPagi
 Values:
 
 - `list_bulk_deployment_detailed_reports`
+
+<a id="listbulkdeploymentspaginatorname"></a>
 
 ## ListBulkDeploymentsPaginatorName
 
@@ -125,6 +141,8 @@ Values:
 
 - `list_bulk_deployments`
 
+<a id="listconnectordefinitionversionspaginatorname"></a>
+
 ## ListConnectorDefinitionVersionsPaginatorName
 
 ```python
@@ -134,6 +152,8 @@ from mypy_boto3_greengrass.literals import ListConnectorDefinitionVersionsPagina
 Values:
 
 - `list_connector_definition_versions`
+
+<a id="listconnectordefinitionspaginatorname"></a>
 
 ## ListConnectorDefinitionsPaginatorName
 
@@ -145,6 +165,8 @@ Values:
 
 - `list_connector_definitions`
 
+<a id="listcoredefinitionversionspaginatorname"></a>
+
 ## ListCoreDefinitionVersionsPaginatorName
 
 ```python
@@ -154,6 +176,8 @@ from mypy_boto3_greengrass.literals import ListCoreDefinitionVersionsPaginatorNa
 Values:
 
 - `list_core_definition_versions`
+
+<a id="listcoredefinitionspaginatorname"></a>
 
 ## ListCoreDefinitionsPaginatorName
 
@@ -165,6 +189,8 @@ Values:
 
 - `list_core_definitions`
 
+<a id="listdeploymentspaginatorname"></a>
+
 ## ListDeploymentsPaginatorName
 
 ```python
@@ -174,6 +200,8 @@ from mypy_boto3_greengrass.literals import ListDeploymentsPaginatorName
 Values:
 
 - `list_deployments`
+
+<a id="listdevicedefinitionversionspaginatorname"></a>
 
 ## ListDeviceDefinitionVersionsPaginatorName
 
@@ -185,6 +213,8 @@ Values:
 
 - `list_device_definition_versions`
 
+<a id="listdevicedefinitionspaginatorname"></a>
+
 ## ListDeviceDefinitionsPaginatorName
 
 ```python
@@ -194,6 +224,8 @@ from mypy_boto3_greengrass.literals import ListDeviceDefinitionsPaginatorName
 Values:
 
 - `list_device_definitions`
+
+<a id="listfunctiondefinitionversionspaginatorname"></a>
 
 ## ListFunctionDefinitionVersionsPaginatorName
 
@@ -205,6 +237,8 @@ Values:
 
 - `list_function_definition_versions`
 
+<a id="listfunctiondefinitionspaginatorname"></a>
+
 ## ListFunctionDefinitionsPaginatorName
 
 ```python
@@ -214,6 +248,8 @@ from mypy_boto3_greengrass.literals import ListFunctionDefinitionsPaginatorName
 Values:
 
 - `list_function_definitions`
+
+<a id="listgroupversionspaginatorname"></a>
 
 ## ListGroupVersionsPaginatorName
 
@@ -225,6 +261,8 @@ Values:
 
 - `list_group_versions`
 
+<a id="listgroupspaginatorname"></a>
+
 ## ListGroupsPaginatorName
 
 ```python
@@ -234,6 +272,8 @@ from mypy_boto3_greengrass.literals import ListGroupsPaginatorName
 Values:
 
 - `list_groups`
+
+<a id="listloggerdefinitionversionspaginatorname"></a>
 
 ## ListLoggerDefinitionVersionsPaginatorName
 
@@ -245,6 +285,8 @@ Values:
 
 - `list_logger_definition_versions`
 
+<a id="listloggerdefinitionspaginatorname"></a>
+
 ## ListLoggerDefinitionsPaginatorName
 
 ```python
@@ -254,6 +296,8 @@ from mypy_boto3_greengrass.literals import ListLoggerDefinitionsPaginatorName
 Values:
 
 - `list_logger_definitions`
+
+<a id="listresourcedefinitionversionspaginatorname"></a>
 
 ## ListResourceDefinitionVersionsPaginatorName
 
@@ -265,6 +309,8 @@ Values:
 
 - `list_resource_definition_versions`
 
+<a id="listresourcedefinitionspaginatorname"></a>
+
 ## ListResourceDefinitionsPaginatorName
 
 ```python
@@ -274,6 +320,8 @@ from mypy_boto3_greengrass.literals import ListResourceDefinitionsPaginatorName
 Values:
 
 - `list_resource_definitions`
+
+<a id="listsubscriptiondefinitionversionspaginatorname"></a>
 
 ## ListSubscriptionDefinitionVersionsPaginatorName
 
@@ -285,6 +333,8 @@ Values:
 
 - `list_subscription_definition_versions`
 
+<a id="listsubscriptiondefinitionspaginatorname"></a>
+
 ## ListSubscriptionDefinitionsPaginatorName
 
 ```python
@@ -294,6 +344,8 @@ from mypy_boto3_greengrass.literals import ListSubscriptionDefinitionsPaginatorN
 Values:
 
 - `list_subscription_definitions`
+
+<a id="loggercomponenttype"></a>
 
 ## LoggerComponentType
 
@@ -305,6 +357,8 @@ Values:
 
 - `GreengrassSystem`
 - `Lambda`
+
+<a id="loggerleveltype"></a>
 
 ## LoggerLevelType
 
@@ -320,6 +374,8 @@ Values:
 - `INFO`
 - `WARN`
 
+<a id="loggertypetype"></a>
+
 ## LoggerTypeType
 
 ```python
@@ -330,6 +386,8 @@ Values:
 
 - `AWSCloudWatch`
 - `FileSystem`
+
+<a id="permissiontype"></a>
 
 ## PermissionType
 
@@ -342,6 +400,8 @@ Values:
 - `ro`
 - `rw`
 
+<a id="softwaretoupdatetype"></a>
+
 ## SoftwareToUpdateType
 
 ```python
@@ -353,6 +413,8 @@ Values:
 - `core`
 - `ota_agent`
 
+<a id="telemetrytype"></a>
+
 ## TelemetryType
 
 ```python
@@ -363,6 +425,8 @@ Values:
 
 - `Off`
 - `On`
+
+<a id="updateagentlogleveltype"></a>
 
 ## UpdateAgentLogLevelType
 
@@ -381,6 +445,8 @@ Values:
 - `VERBOSE`
 - `WARN`
 
+<a id="updatetargetsarchitecturetype"></a>
+
 ## UpdateTargetsArchitectureType
 
 ```python
@@ -394,6 +460,8 @@ Values:
 - `armv7l`
 - `x86_64`
 
+<a id="updatetargetsoperatingsystemtype"></a>
+
 ## UpdateTargetsOperatingSystemType
 
 ```python
@@ -406,6 +474,8 @@ Values:
 - `openwrt`
 - `raspbian`
 - `ubuntu`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -714,6 +784,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

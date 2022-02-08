@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-codeartifact-module"></a>
+
 # Type annotations for boto3 CodeArtifact module
 
 > [Index](..) > CodeArtifact
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CodeArtifact](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codeartifact.html#CodeArtifact)
 type annotations stubs module
-[mypy_boto3_codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
+[mypy-boto3-codeartifact](https://pypi.org/project/mypy-boto3-codeartifact/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[codeartifact]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[codeartifact]'
+
+# standalone installation
 pip install mypy-boto3-codeartifact
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-codeartifact
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="codeartifactclient"></a>
+
 ## CodeArtifactClient
 
 Type annotations for `boto3.client("codeartifact")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_codeartifact.client import CodeArtifactClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -71,6 +85,8 @@ from mypy_boto3_codeartifact.client import CodeArtifactClient
 - [update_package_versions_status](./client.md#update_package_versions_status)
 - [update_repository](./client.md#update_repository)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CodeArtifactClient [exceptions](./client.md#exceptions)
@@ -84,6 +100,8 @@ CodeArtifactClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -92,7 +110,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_codeartifact.paginators import ListDomainsPaginator, ...
+from mypy_boto3_codeartifact.paginator import ListDomainsPaginator, ...
 ```
 
 - [ListDomainsPaginator](./paginators.md#listdomainspaginator)
@@ -101,6 +119,8 @@ from mypy_boto3_codeartifact.paginators import ListDomainsPaginator, ...
 - [ListPackagesPaginator](./paginators.md#listpackagespaginator)
 - [ListRepositoriesPaginator](./paginators.md#listrepositoriespaginator)
 - [ListRepositoriesInDomainPaginator](./paginators.md#listrepositoriesindomainpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -127,6 +147,8 @@ from mypy_boto3_codeartifact.literals import DomainStatusType, ...
 - [PackageVersionStatusType](./literals.md#packageversionstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

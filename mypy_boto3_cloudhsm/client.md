@@ -1,3 +1,5 @@
+<a id="cloudhsmclient-for-boto3-cloudhsm-module"></a>
+
 # CloudHSMClient for boto3 CloudHSM module
 
 > [Index](..) > [CloudHSM](.) > CloudHSMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
-[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [CloudHSMClient for boto3 CloudHSM module](#cloudhsmclient-for-boto3-cloudhsm-module)
   - [CloudHSMClient](#cloudhsmclient)
@@ -36,6 +38,8 @@ type annotations stubs module
     - [remove_tags_from_resource](#remove_tags_from_resource)
     - [get_paginator](#get_paginator)
 
+<a id="cloudhsmclient"></a>
+
 ## CloudHSMClient
 
 Type annotations for `boto3.client("cloudhsm")`
@@ -43,14 +47,17 @@ Type annotations for `boto3.client("cloudhsm")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudhsm.client import CloudHSMClient
 
 def get_cloudhsm_client() -> CloudHSMClient:
-    return boto3.client("cloudhsm")
+    return Session().client("cloudhsm")
 ```
 
 Boto3 documentation:
 [CloudHSM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -71,7 +78,11 @@ Exceptions:
 - `Exceptions.CloudHsmServiceException`
 - `Exceptions.InvalidRequestException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -83,6 +94,8 @@ Boto3 documentation:
 [CloudHSM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_resource"></a>
 
 ### add_tags_to_resource
 
@@ -104,6 +117,8 @@ Keyword-only arguments:
 Returns
 [AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -118,6 +133,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_hapg"></a>
 
 ### create_hapg
 
@@ -136,6 +153,8 @@ Keyword-only arguments:
 - `Label`: `str` *(required)*
 
 Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
+
+<a id="create_hsm"></a>
 
 ### create_hsm
 
@@ -163,6 +182,8 @@ Keyword-only arguments:
 
 Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
+<a id="create_luna_client"></a>
+
 ### create_luna_client
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -183,6 +204,8 @@ Keyword-only arguments:
 Returns
 [CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef).
 
+<a id="delete_hapg"></a>
+
 ### delete_hapg
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -201,6 +224,8 @@ Keyword-only arguments:
 
 Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
 
+<a id="delete_hsm"></a>
+
 ### delete_hsm
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -218,6 +243,8 @@ Keyword-only arguments:
 - `HsmArn`: `str` *(required)*
 
 Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
+
+<a id="delete_luna_client"></a>
 
 ### delete_luna_client
 
@@ -238,6 +265,8 @@ Keyword-only arguments:
 Returns
 [DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef).
 
+<a id="describe_hapg"></a>
+
 ### describe_hapg
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -256,6 +285,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef).
+
+<a id="describe_hsm"></a>
 
 ### describe_hsm
 
@@ -277,6 +308,8 @@ Keyword-only arguments:
 Returns
 [DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef).
 
+<a id="describe_luna_client"></a>
+
 ### describe_luna_client
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -297,6 +330,8 @@ Keyword-only arguments:
 Returns
 [DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -314,6 +349,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_config"></a>
 
 ### get_config
 
@@ -336,6 +373,8 @@ Keyword-only arguments:
 
 Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
+<a id="list_available_zones"></a>
+
 ### list_available_zones
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -347,6 +386,8 @@ Boto3 documentation:
 
 Returns
 [ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
+
+<a id="list_hapgs"></a>
 
 ### list_hapgs
 
@@ -366,6 +407,8 @@ Keyword-only arguments:
 
 Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
 
+<a id="list_hsms"></a>
+
 ### list_hsms
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -383,6 +426,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
+
+<a id="list_luna_clients"></a>
 
 ### list_luna_clients
 
@@ -403,6 +448,8 @@ Keyword-only arguments:
 Returns
 [ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -421,6 +468,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="modify_hapg"></a>
 
 ### modify_hapg
 
@@ -441,6 +490,8 @@ Keyword-only arguments:
 - `PartitionSerialList`: `Sequence`\[`str`\]
 
 Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
+
+<a id="modify_hsm"></a>
 
 ### modify_hsm
 
@@ -465,6 +516,8 @@ Keyword-only arguments:
 
 Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
 
+<a id="modify_luna_client"></a>
+
 ### modify_luna_client
 
 This is documentation for **AWS CloudHSM Classic**.
@@ -484,6 +537,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef).
+
+<a id="remove_tags_from_resource"></a>
 
 ### remove_tags_from_resource
 
@@ -505,6 +560,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveTagsFromResourceResponseTypeDef](./type_defs.md#removetagsfromresourceresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

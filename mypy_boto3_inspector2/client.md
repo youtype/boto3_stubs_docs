@@ -1,3 +1,5 @@
+<a id="inspector2client-for-boto3-inspector2-module"></a>
+
 # Inspector2Client for boto3 Inspector2 module
 
 > [Index](..) > [Inspector2](.) > Inspector2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Inspector2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2)
 type annotations stubs module
-[mypy_boto3_inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
+[mypy-boto3-inspector2](https://pypi.org/project/mypy-boto3-inspector2/).
 
 - [Inspector2Client for boto3 Inspector2 module](#inspector2client-for-boto3-inspector2-module)
   - [Inspector2Client](#inspector2client)
@@ -46,6 +48,8 @@ type annotations stubs module
     - [update_organization_configuration](#update_organization_configuration)
     - [get_paginator](#get_paginator)
 
+<a id="inspector2client"></a>
+
 ## Inspector2Client
 
 Type annotations for `boto3.client("inspector2")`
@@ -53,14 +57,17 @@ Type annotations for `boto3.client("inspector2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_inspector2.client import Inspector2Client
 
 def get_inspector2_client() -> Inspector2Client:
-    return boto3.client("inspector2")
+    return Session().client("inspector2")
 ```
 
 Boto3 documentation:
 [Inspector2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [Inspector2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/inspector2.html#Inspector2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_member"></a>
 
 ### associate_member
 
@@ -118,6 +131,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateMemberResponseTypeDef](./type_defs.md#associatememberresponsetypedef).
+
+<a id="batch_get_account_status"></a>
 
 ### batch_get_account_status
 
@@ -140,6 +155,8 @@ Keyword-only arguments:
 Returns
 [BatchGetAccountStatusResponseTypeDef](./type_defs.md#batchgetaccountstatusresponsetypedef).
 
+<a id="batch_get_free_trial_info"></a>
+
 ### batch_get_free_trial_info
 
 Gets free trial status for multiple Amazon Web Services accounts.
@@ -160,6 +177,8 @@ Keyword-only arguments:
 Returns
 [BatchGetFreeTrialInfoResponseTypeDef](./type_defs.md#batchgetfreetrialinforesponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -174,6 +193,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_findings_report"></a>
 
 ### cancel_findings_report
 
@@ -194,6 +215,8 @@ Keyword-only arguments:
 
 Returns
 [CancelFindingsReportResponseTypeDef](./type_defs.md#cancelfindingsreportresponsetypedef).
+
+<a id="create_filter"></a>
 
 ### create_filter
 
@@ -218,6 +241,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFilterResponseTypeDef](./type_defs.md#createfilterresponsetypedef).
+
+<a id="create_findings_report"></a>
 
 ### create_findings_report
 
@@ -244,6 +269,8 @@ Keyword-only arguments:
 Returns
 [CreateFindingsReportResponseTypeDef](./type_defs.md#createfindingsreportresponsetypedef).
 
+<a id="delete_filter"></a>
+
 ### delete_filter
 
 Deletes a filter resource.
@@ -263,6 +290,8 @@ Keyword-only arguments:
 Returns
 [DeleteFilterResponseTypeDef](./type_defs.md#deletefilterresponsetypedef).
 
+<a id="describe_organization_configuration"></a>
+
 ### describe_organization_configuration
 
 Describe Amazon Inspector configuration settings for an Amazon Web Services
@@ -277,6 +306,8 @@ Boto3 documentation:
 
 Returns
 [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
+
+<a id="disable"></a>
 
 ### disable
 
@@ -298,6 +329,8 @@ Keyword-only arguments:
 
 Returns [DisableResponseTypeDef](./type_defs.md#disableresponsetypedef).
 
+<a id="disable_delegated_admin_account"></a>
+
 ### disable_delegated_admin_account
 
 Disables the Amazon Inspector delegated administrator for your organization.
@@ -318,6 +351,8 @@ Keyword-only arguments:
 Returns
 [DisableDelegatedAdminAccountResponseTypeDef](./type_defs.md#disabledelegatedadminaccountresponsetypedef).
 
+<a id="disassociate_member"></a>
+
 ### disassociate_member
 
 Disassociates a member account from an Amazon Inspector delegated
@@ -337,6 +372,8 @@ Keyword-only arguments:
 
 Returns
 [DisassociateMemberResponseTypeDef](./type_defs.md#disassociatememberresponsetypedef).
+
+<a id="enable"></a>
 
 ### enable
 
@@ -360,6 +397,8 @@ Keyword-only arguments:
 
 Returns [EnableResponseTypeDef](./type_defs.md#enableresponsetypedef).
 
+<a id="enable_delegated_admin_account"></a>
+
 ### enable_delegated_admin_account
 
 Enables the Amazon Inspector delegated administrator for your Organizations
@@ -382,6 +421,8 @@ Keyword-only arguments:
 Returns
 [EnableDelegatedAdminAccountResponseTypeDef](./type_defs.md#enabledelegatedadminaccountresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -401,6 +442,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_delegated_admin_account"></a>
+
 ### get_delegated_admin_account
 
 Retrieves information about the Amazon Inspector delegated administrator for
@@ -414,6 +457,8 @@ Boto3 documentation:
 
 Returns
 [GetDelegatedAdminAccountResponseTypeDef](./type_defs.md#getdelegatedadminaccountresponsetypedef).
+
+<a id="get_findings_report_status"></a>
 
 ### get_findings_report_status
 
@@ -435,6 +480,8 @@ Keyword-only arguments:
 Returns
 [GetFindingsReportStatusResponseTypeDef](./type_defs.md#getfindingsreportstatusresponsetypedef).
 
+<a id="get_member"></a>
+
 ### get_member
 
 Gets member information for your organization.
@@ -452,6 +499,8 @@ Keyword-only arguments:
 - `accountId`: `str` *(required)*
 
 Returns [GetMemberResponseTypeDef](./type_defs.md#getmemberresponsetypedef).
+
+<a id="list_account_permissions"></a>
 
 ### list_account_permissions
 
@@ -475,6 +524,8 @@ Keyword-only arguments:
 Returns
 [ListAccountPermissionsResponseTypeDef](./type_defs.md#listaccountpermissionsresponsetypedef).
 
+<a id="list_coverage"></a>
+
 ### list_coverage
 
 Lists coverage details for you environment.
@@ -496,6 +547,8 @@ Keyword-only arguments:
 
 Returns
 [ListCoverageResponseTypeDef](./type_defs.md#listcoverageresponsetypedef).
+
+<a id="list_coverage_statistics"></a>
 
 ### list_coverage_statistics
 
@@ -520,6 +573,8 @@ Keyword-only arguments:
 Returns
 [ListCoverageStatisticsResponseTypeDef](./type_defs.md#listcoveragestatisticsresponsetypedef).
 
+<a id="list_delegated_admin_accounts"></a>
+
 ### list_delegated_admin_accounts
 
 Lists information about the Amazon Inspector delegated administrator of your
@@ -542,6 +597,8 @@ Keyword-only arguments:
 Returns
 [ListDelegatedAdminAccountsResponseTypeDef](./type_defs.md#listdelegatedadminaccountsresponsetypedef).
 
+<a id="list_filters"></a>
+
 ### list_filters
 
 Lists the filters associated with your account.
@@ -563,6 +620,8 @@ Keyword-only arguments:
 
 Returns
 [ListFiltersResponseTypeDef](./type_defs.md#listfiltersresponsetypedef).
+
+<a id="list_finding_aggregations"></a>
 
 ### list_finding_aggregations
 
@@ -591,6 +650,8 @@ Keyword-only arguments:
 Returns
 [ListFindingAggregationsResponseTypeDef](./type_defs.md#listfindingaggregationsresponsetypedef).
 
+<a id="list_findings"></a>
+
 ### list_findings
 
 Lists findings for your environment.
@@ -614,6 +675,8 @@ Keyword-only arguments:
 Returns
 [ListFindingsResponseTypeDef](./type_defs.md#listfindingsresponsetypedef).
 
+<a id="list_members"></a>
+
 ### list_members
 
 List members associated with the Amazon Inspector delegated administrator for
@@ -636,6 +699,8 @@ Keyword-only arguments:
 Returns
 [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags attached to a given resource.
@@ -655,6 +720,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_usage_totals"></a>
 
 ### list_usage_totals
 
@@ -677,6 +744,8 @@ Keyword-only arguments:
 Returns
 [ListUsageTotalsResponseTypeDef](./type_defs.md#listusagetotalsresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to a resource.
@@ -696,6 +765,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a resource.
@@ -714,6 +785,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_filter"></a>
 
 ### update_filter
 
@@ -740,6 +813,8 @@ Keyword-only arguments:
 Returns
 [UpdateFilterResponseTypeDef](./type_defs.md#updatefilterresponsetypedef).
 
+<a id="update_organization_configuration"></a>
+
 ### update_organization_configuration
 
 Updates the configurations for your Amazon Inspector organization.
@@ -760,6 +835,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateOrganizationConfigurationResponseTypeDef](./type_defs.md#updateorganizationconfigurationresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

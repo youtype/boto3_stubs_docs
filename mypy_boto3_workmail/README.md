@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-workmail-module"></a>
+
 # Type annotations for boto3 WorkMail module
 
 > [Index](..) > WorkMail
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
 type annotations stubs module
-[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[workmail]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[workmail]'
+
+# standalone installation
 pip install mypy-boto3-workmail
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-workmail
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="workmailclient"></a>
+
 ## WorkMailClient
 
 Type annotations for `boto3.client("workmail")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_workmail.client import WorkMailClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -105,6 +119,8 @@ from mypy_boto3_workmail.client import WorkMailClient
 - [update_primary_email_address](./client.md#update_primary_email_address)
 - [update_resource](./client.md#update_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WorkMailClient [exceptions](./client.md#exceptions)
@@ -133,6 +149,8 @@ WorkMailClient [exceptions](./client.md#exceptions)
 - TooManyTagsException
 - UnsupportedOperationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -141,7 +159,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_workmail.paginators import ListAliasesPaginator, ...
+from mypy_boto3_workmail.paginator import ListAliasesPaginator, ...
 ```
 
 - [ListAliasesPaginator](./paginators.md#listaliasespaginator)
@@ -152,6 +170,8 @@ from mypy_boto3_workmail.paginators import ListAliasesPaginator, ...
 - [ListResourceDelegatesPaginator](./paginators.md#listresourcedelegatespaginator)
 - [ListResourcesPaginator](./paginators.md#listresourcespaginator)
 - [ListUsersPaginator](./paginators.md#listuserspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -184,6 +204,8 @@ from mypy_boto3_workmail.literals import AccessControlRuleEffectType, ...
 - [UserRoleType](./literals.md#userroletype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

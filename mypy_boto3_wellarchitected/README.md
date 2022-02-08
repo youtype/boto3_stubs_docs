@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-wellarchitected-module"></a>
+
 # Type annotations for boto3 WellArchitected module
 
 > [Index](..) > WellArchitected
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
-[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[wellarchitected]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[wellarchitected]'
+
+# standalone installation
 pip install mypy-boto3-wellarchitected
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-wellarchitected
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="wellarchitectedclient"></a>
 
 ## WellArchitectedClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_wellarchitected.client import WellArchitectedClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -74,6 +88,8 @@ from mypy_boto3_wellarchitected.client import WellArchitectedClient
 - [update_workload_share](./client.md#update_workload_share)
 - [upgrade_lens_review](./client.md#upgrade_lens_review)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WellArchitectedClient [exceptions](./client.md#exceptions)
@@ -86,6 +102,8 @@ WellArchitectedClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -114,6 +132,8 @@ from mypy_boto3_wellarchitected.literals import AnswerReasonType, ...
 - [WorkloadEnvironmentType](./literals.md#workloadenvironmenttype)
 - [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

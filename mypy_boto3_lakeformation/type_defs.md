@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-lakeformation-module"></a>
+
 # Typed dictionaries for boto3 LakeFormation module
 
 > [Index](..) > [LakeFormation](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LakeFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation)
 type annotations stubs module
-[mypy_boto3_lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
+[mypy-boto3-lakeformation](https://pypi.org/project/mypy-boto3-lakeformation/).
 
 - [Typed dictionaries for boto3 LakeFormation module](#typed-dictionaries-for-boto3-lakeformation-module)
   - [AddLFTagsToResourceRequestRequestTypeDef](#addlftagstoresourcerequestrequesttypedef)
@@ -125,6 +127,8 @@ type annotations stubs module
   - [WorkUnitRangeTypeDef](#workunitrangetypedef)
   - [WriteOperationTypeDef](#writeoperationtypedef)
 
+<a id="addlftagstoresourcerequestrequesttypedef"></a>
+
 ## AddLFTagsToResourceRequestRequestTypeDef
 
 ```python
@@ -140,6 +144,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="addlftagstoresourceresponsetypedef"></a>
+
 ## AddLFTagsToResourceResponseTypeDef
 
 ```python
@@ -151,6 +157,8 @@ Required fields:
 - `Failures`: `List`\[[LFTagErrorTypeDef](./type_defs.md#lftagerrortypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="addobjectinputtypedef"></a>
 
 ## AddObjectInputTypeDef
 
@@ -168,6 +176,8 @@ Optional fields:
 
 - `PartitionValues`: `Sequence`\[`str`\]
 
+<a id="auditcontexttypedef"></a>
+
 ## AuditContextTypeDef
 
 ```python
@@ -177,6 +187,8 @@ from mypy_boto3_lakeformation.type_defs import AuditContextTypeDef
 Optional fields:
 
 - `AdditionalAuditContext`: `str`
+
+<a id="batchgrantpermissionsrequestrequesttypedef"></a>
 
 ## BatchGrantPermissionsRequestRequestTypeDef
 
@@ -193,6 +205,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="batchgrantpermissionsresponsetypedef"></a>
+
 ## BatchGrantPermissionsResponseTypeDef
 
 ```python
@@ -206,6 +220,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchpermissionsfailureentrytypedef"></a>
+
 ## BatchPermissionsFailureEntryTypeDef
 
 ```python
@@ -217,6 +233,8 @@ Optional fields:
 - `RequestEntry`:
   [BatchPermissionsRequestEntryTypeDef](./type_defs.md#batchpermissionsrequestentrytypedef)
 - `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
+
+<a id="batchpermissionsrequestentrytypedef"></a>
 
 ## BatchPermissionsRequestEntryTypeDef
 
@@ -237,6 +255,8 @@ Optional fields:
 - `PermissionsWithGrantOption`:
   `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
+<a id="batchrevokepermissionsrequestrequesttypedef"></a>
+
 ## BatchRevokePermissionsRequestRequestTypeDef
 
 ```python
@@ -252,6 +272,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="batchrevokepermissionsresponsetypedef"></a>
+
 ## BatchRevokePermissionsResponseTypeDef
 
 ```python
@@ -265,6 +287,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="canceltransactionrequestrequesttypedef"></a>
+
 ## CancelTransactionRequestRequestTypeDef
 
 ```python
@@ -274,6 +298,8 @@ from mypy_boto3_lakeformation.type_defs import CancelTransactionRequestRequestTy
 Required fields:
 
 - `TransactionId`: `str`
+
+<a id="columnlftagtypedef"></a>
 
 ## ColumnLFTagTypeDef
 
@@ -286,6 +312,8 @@ Optional fields:
 - `Name`: `str`
 - `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
 
+<a id="columnwildcardtypedef"></a>
+
 ## ColumnWildcardTypeDef
 
 ```python
@@ -296,6 +324,8 @@ Optional fields:
 
 - `ExcludedColumnNames`: `Sequence`\[`str`\]
 
+<a id="committransactionrequestrequesttypedef"></a>
+
 ## CommitTransactionRequestRequestTypeDef
 
 ```python
@@ -305,6 +335,8 @@ from mypy_boto3_lakeformation.type_defs import CommitTransactionRequestRequestTy
 Required fields:
 
 - `TransactionId`: `str`
+
+<a id="committransactionresponsetypedef"></a>
 
 ## CommitTransactionResponseTypeDef
 
@@ -319,6 +351,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createdatacellsfilterrequestrequesttypedef"></a>
+
 ## CreateDataCellsFilterRequestRequestTypeDef
 
 ```python
@@ -328,6 +362,8 @@ from mypy_boto3_lakeformation.type_defs import CreateDataCellsFilterRequestReque
 Required fields:
 
 - `TableData`: [DataCellsFilterTypeDef](./type_defs.md#datacellsfiltertypedef)
+
+<a id="createlftagrequestrequesttypedef"></a>
 
 ## CreateLFTagRequestRequestTypeDef
 
@@ -344,6 +380,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="datacellsfilterresourcetypedef"></a>
+
 ## DataCellsFilterResourceTypeDef
 
 ```python
@@ -356,6 +394,8 @@ Optional fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `Name`: `str`
+
+<a id="datacellsfiltertypedef"></a>
 
 ## DataCellsFilterTypeDef
 
@@ -377,6 +417,8 @@ Optional fields:
 - `ColumnWildcard`:
   [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
 
+<a id="datalakeprincipaltypedef"></a>
+
 ## DataLakePrincipalTypeDef
 
 ```python
@@ -386,6 +428,8 @@ from mypy_boto3_lakeformation.type_defs import DataLakePrincipalTypeDef
 Optional fields:
 
 - `DataLakePrincipalIdentifier`: `str`
+
+<a id="datalakesettingstypedef"></a>
 
 ## DataLakeSettingsTypeDef
 
@@ -407,6 +451,8 @@ Optional fields:
   `List`\[[DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)\]
 - `AuthorizedSessionTagValueList`: `List`\[`str`\]
 
+<a id="datalocationresourcetypedef"></a>
+
 ## DataLocationResourceTypeDef
 
 ```python
@@ -420,6 +466,8 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+
+<a id="databaseresourcetypedef"></a>
 
 ## DatabaseResourceTypeDef
 
@@ -435,6 +483,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="deletedatacellsfilterrequestrequesttypedef"></a>
+
 ## DeleteDataCellsFilterRequestRequestTypeDef
 
 ```python
@@ -447,6 +497,8 @@ Optional fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 - `Name`: `str`
+
+<a id="deletelftagrequestrequesttypedef"></a>
 
 ## DeleteLFTagRequestRequestTypeDef
 
@@ -462,6 +514,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="deleteobjectinputtypedef"></a>
+
 ## DeleteObjectInputTypeDef
 
 ```python
@@ -476,6 +530,8 @@ Optional fields:
 
 - `ETag`: `str`
 - `PartitionValues`: `Sequence`\[`str`\]
+
+<a id="deleteobjectsoncancelrequestrequesttypedef"></a>
 
 ## DeleteObjectsOnCancelRequestRequestTypeDef
 
@@ -495,6 +551,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="deregisterresourcerequestrequesttypedef"></a>
+
 ## DeregisterResourceRequestRequestTypeDef
 
 ```python
@@ -505,6 +563,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 
+<a id="describeresourcerequestrequesttypedef"></a>
+
 ## DescribeResourceRequestRequestTypeDef
 
 ```python
@@ -514,6 +574,8 @@ from mypy_boto3_lakeformation.type_defs import DescribeResourceRequestRequestTyp
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="describeresourceresponsetypedef"></a>
 
 ## DescribeResourceResponseTypeDef
 
@@ -527,6 +589,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetransactionrequestrequesttypedef"></a>
+
 ## DescribeTransactionRequestRequestTypeDef
 
 ```python
@@ -536,6 +600,8 @@ from mypy_boto3_lakeformation.type_defs import DescribeTransactionRequestRequest
 Required fields:
 
 - `TransactionId`: `str`
+
+<a id="describetransactionresponsetypedef"></a>
 
 ## DescribeTransactionResponseTypeDef
 
@@ -550,6 +616,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detailsmaptypedef"></a>
+
 ## DetailsMapTypeDef
 
 ```python
@@ -559,6 +627,8 @@ from mypy_boto3_lakeformation.type_defs import DetailsMapTypeDef
 Optional fields:
 
 - `ResourceShare`: `List`\[`str`\]
+
+<a id="errordetailtypedef"></a>
 
 ## ErrorDetailTypeDef
 
@@ -570,6 +640,8 @@ Optional fields:
 
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="executionstatisticstypedef"></a>
 
 ## ExecutionStatisticsTypeDef
 
@@ -583,6 +655,8 @@ Optional fields:
 - `DataScannedBytes`: `int`
 - `WorkUnitsExecutedCount`: `int`
 
+<a id="extendtransactionrequestrequesttypedef"></a>
+
 ## ExtendTransactionRequestRequestTypeDef
 
 ```python
@@ -592,6 +666,8 @@ from mypy_boto3_lakeformation.type_defs import ExtendTransactionRequestRequestTy
 Optional fields:
 
 - `TransactionId`: `str`
+
+<a id="filterconditiontypedef"></a>
 
 ## FilterConditionTypeDef
 
@@ -606,6 +682,8 @@ Optional fields:
   [ComparisonOperatorType](./literals.md#comparisonoperatortype)
 - `StringValueList`: `Sequence`\[`str`\]
 
+<a id="getdatalakesettingsrequestrequesttypedef"></a>
+
 ## GetDataLakeSettingsRequestRequestTypeDef
 
 ```python
@@ -615,6 +693,8 @@ from mypy_boto3_lakeformation.type_defs import GetDataLakeSettingsRequestRequest
 Optional fields:
 
 - `CatalogId`: `str`
+
+<a id="getdatalakesettingsresponsetypedef"></a>
 
 ## GetDataLakeSettingsResponseTypeDef
 
@@ -628,6 +708,8 @@ Required fields:
   [DataLakeSettingsTypeDef](./type_defs.md#datalakesettingstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="geteffectivepermissionsforpathrequestrequesttypedef"></a>
 
 ## GetEffectivePermissionsForPathRequestRequestTypeDef
 
@@ -645,6 +727,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="geteffectivepermissionsforpathresponsetypedef"></a>
+
 ## GetEffectivePermissionsForPathResponseTypeDef
 
 ```python
@@ -658,6 +742,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlftagrequestrequesttypedef"></a>
 
 ## GetLFTagRequestRequestTypeDef
 
@@ -673,6 +759,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="getlftagresponsetypedef"></a>
+
 ## GetLFTagResponseTypeDef
 
 ```python
@@ -687,6 +775,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getquerystaterequestrequesttypedef"></a>
+
 ## GetQueryStateRequestRequestTypeDef
 
 ```python
@@ -696,6 +786,8 @@ from mypy_boto3_lakeformation.type_defs import GetQueryStateRequestRequestTypeDe
 Required fields:
 
 - `QueryId`: `str`
+
+<a id="getquerystateresponsetypedef"></a>
 
 ## GetQueryStateResponseTypeDef
 
@@ -710,6 +802,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getquerystatisticsrequestrequesttypedef"></a>
+
 ## GetQueryStatisticsRequestRequestTypeDef
 
 ```python
@@ -719,6 +813,8 @@ from mypy_boto3_lakeformation.type_defs import GetQueryStatisticsRequestRequestT
 Required fields:
 
 - `QueryId`: `str`
+
+<a id="getquerystatisticsresponsetypedef"></a>
 
 ## GetQueryStatisticsResponseTypeDef
 
@@ -736,6 +832,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getresourcelftagsrequestrequesttypedef"></a>
+
 ## GetResourceLFTagsRequestRequestTypeDef
 
 ```python
@@ -750,6 +848,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 - `ShowAssignedLFTags`: `bool`
+
+<a id="getresourcelftagsresponsetypedef"></a>
 
 ## GetResourceLFTagsResponseTypeDef
 
@@ -767,6 +867,8 @@ Required fields:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettableobjectsrequestrequesttypedef"></a>
 
 ## GetTableObjectsRequestRequestTypeDef
 
@@ -788,6 +890,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="gettableobjectsresponsetypedef"></a>
+
 ## GetTableObjectsResponseTypeDef
 
 ```python
@@ -801,6 +905,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettemporarygluepartitioncredentialsrequestrequesttypedef"></a>
 
 ## GetTemporaryGluePartitionCredentialsRequestRequestTypeDef
 
@@ -822,6 +928,8 @@ Optional fields:
 - `DurationSeconds`: `int`
 - `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
 
+<a id="gettemporarygluepartitioncredentialsresponsetypedef"></a>
+
 ## GetTemporaryGluePartitionCredentialsResponseTypeDef
 
 ```python
@@ -836,6 +944,8 @@ Required fields:
 - `Expiration`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gettemporarygluetablecredentialsrequestrequesttypedef"></a>
 
 ## GetTemporaryGlueTableCredentialsRequestRequestTypeDef
 
@@ -855,6 +965,8 @@ Optional fields:
 - `DurationSeconds`: `int`
 - `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
 
+<a id="gettemporarygluetablecredentialsresponsetypedef"></a>
+
 ## GetTemporaryGlueTableCredentialsResponseTypeDef
 
 ```python
@@ -870,6 +982,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getworkunitresultsrequestrequesttypedef"></a>
+
 ## GetWorkUnitResultsRequestRequestTypeDef
 
 ```python
@@ -882,6 +996,8 @@ Required fields:
 - `WorkUnitId`: `int`
 - `WorkUnitToken`: `str`
 
+<a id="getworkunitresultsresponsetypedef"></a>
+
 ## GetWorkUnitResultsResponseTypeDef
 
 ```python
@@ -893,6 +1009,8 @@ Required fields:
 - `ResultStream`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getworkunitsrequestrequesttypedef"></a>
 
 ## GetWorkUnitsRequestRequestTypeDef
 
@@ -909,6 +1027,8 @@ Optional fields:
 - `NextToken`: `str`
 - `PageSize`: `int`
 
+<a id="getworkunitsresponsetypedef"></a>
+
 ## GetWorkUnitsResponseTypeDef
 
 ```python
@@ -923,6 +1043,8 @@ Required fields:
   `List`\[[WorkUnitRangeTypeDef](./type_defs.md#workunitrangetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="grantpermissionsrequestrequesttypedef"></a>
 
 ## GrantPermissionsRequestRequestTypeDef
 
@@ -943,6 +1065,8 @@ Optional fields:
 - `PermissionsWithGrantOption`:
   `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
+<a id="lftagerrortypedef"></a>
+
 ## LFTagErrorTypeDef
 
 ```python
@@ -953,6 +1077,8 @@ Optional fields:
 
 - `LFTag`: [LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)
 - `Error`: [ErrorDetailTypeDef](./type_defs.md#errordetailtypedef)
+
+<a id="lftagkeyresourcetypedef"></a>
 
 ## LFTagKeyResourceTypeDef
 
@@ -969,6 +1095,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="lftagpairtypedef"></a>
+
 ## LFTagPairTypeDef
 
 ```python
@@ -983,6 +1111,8 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+
+<a id="lftagpolicyresourcetypedef"></a>
 
 ## LFTagPolicyResourceTypeDef
 
@@ -999,6 +1129,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="lftagtypedef"></a>
+
 ## LFTagTypeDef
 
 ```python
@@ -1009,6 +1141,8 @@ Required fields:
 
 - `TagKey`: `str`
 - `TagValues`: `Sequence`\[`str`\]
+
+<a id="listdatacellsfilterrequestrequesttypedef"></a>
 
 ## ListDataCellsFilterRequestRequestTypeDef
 
@@ -1021,6 +1155,8 @@ Optional fields:
 - `Table`: [TableResourceTypeDef](./type_defs.md#tableresourcetypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdatacellsfilterresponsetypedef"></a>
 
 ## ListDataCellsFilterResponseTypeDef
 
@@ -1036,6 +1172,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlftagsrequestrequesttypedef"></a>
+
 ## ListLFTagsRequestRequestTypeDef
 
 ```python
@@ -1050,6 +1188,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listlftagsresponsetypedef"></a>
+
 ## ListLFTagsResponseTypeDef
 
 ```python
@@ -1062,6 +1202,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionsrequestrequesttypedef"></a>
 
 ## ListPermissionsRequestRequestTypeDef
 
@@ -1081,6 +1223,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `IncludeRelated`: `str`
 
+<a id="listpermissionsresponsetypedef"></a>
+
 ## ListPermissionsResponseTypeDef
 
 ```python
@@ -1095,6 +1239,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresourcesrequestrequesttypedef"></a>
+
 ## ListResourcesRequestRequestTypeDef
 
 ```python
@@ -1107,6 +1253,8 @@ Optional fields:
   `Sequence`\[[FilterConditionTypeDef](./type_defs.md#filterconditiontypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listresourcesresponsetypedef"></a>
 
 ## ListResourcesResponseTypeDef
 
@@ -1121,6 +1269,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtablestorageoptimizersrequestrequesttypedef"></a>
 
 ## ListTableStorageOptimizersRequestRequestTypeDef
 
@@ -1140,6 +1290,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtablestorageoptimizersresponsetypedef"></a>
+
 ## ListTableStorageOptimizersResponseTypeDef
 
 ```python
@@ -1153,6 +1305,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtransactionsrequestrequesttypedef"></a>
 
 ## ListTransactionsRequestRequestTypeDef
 
@@ -1168,6 +1322,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtransactionsresponsetypedef"></a>
+
 ## ListTransactionsResponseTypeDef
 
 ```python
@@ -1182,6 +1338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1194,6 +1352,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="partitionobjectstypedef"></a>
+
 ## PartitionObjectsTypeDef
 
 ```python
@@ -1205,6 +1365,8 @@ Optional fields:
 - `PartitionValues`: `List`\[`str`\]
 - `Objects`: `List`\[[TableObjectTypeDef](./type_defs.md#tableobjecttypedef)\]
 
+<a id="partitionvaluelisttypedef"></a>
+
 ## PartitionValueListTypeDef
 
 ```python
@@ -1214,6 +1376,8 @@ from mypy_boto3_lakeformation.type_defs import PartitionValueListTypeDef
 Required fields:
 
 - `Values`: `Sequence`\[`str`\]
+
+<a id="planningstatisticstypedef"></a>
 
 ## PlanningStatisticsTypeDef
 
@@ -1228,6 +1392,8 @@ Optional fields:
 - `QueueTimeMillis`: `int`
 - `WorkUnitsGeneratedCount`: `int`
 
+<a id="principalpermissionstypedef"></a>
+
 ## PrincipalPermissionsTypeDef
 
 ```python
@@ -1239,6 +1405,8 @@ Optional fields:
 - `Principal`:
   [DataLakePrincipalTypeDef](./type_defs.md#datalakeprincipaltypedef)
 - `Permissions`: `List`\[[PermissionType](./literals.md#permissiontype)\]
+
+<a id="principalresourcepermissionstypedef"></a>
 
 ## PrincipalResourcePermissionsTypeDef
 
@@ -1256,6 +1424,8 @@ Optional fields:
   `List`\[[PermissionType](./literals.md#permissiontype)\]
 - `AdditionalDetails`: [DetailsMapTypeDef](./type_defs.md#detailsmaptypedef)
 
+<a id="putdatalakesettingsrequestrequesttypedef"></a>
+
 ## PutDataLakeSettingsRequestRequestTypeDef
 
 ```python
@@ -1270,6 +1440,8 @@ Required fields:
 Optional fields:
 
 - `CatalogId`: `str`
+
+<a id="queryplanningcontexttypedef"></a>
 
 ## QueryPlanningContextTypeDef
 
@@ -1288,6 +1460,8 @@ Optional fields:
 - `QueryParameters`: `Mapping`\[`str`, `str`\]
 - `TransactionId`: `str`
 
+<a id="registerresourcerequestrequesttypedef"></a>
+
 ## RegisterResourceRequestRequestTypeDef
 
 ```python
@@ -1302,6 +1476,8 @@ Optional fields:
 
 - `UseServiceLinkedRole`: `bool`
 - `RoleArn`: `str`
+
+<a id="removelftagsfromresourcerequestrequesttypedef"></a>
 
 ## RemoveLFTagsFromResourceRequestRequestTypeDef
 
@@ -1318,6 +1494,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="removelftagsfromresourceresponsetypedef"></a>
+
 ## RemoveLFTagsFromResourceResponseTypeDef
 
 ```python
@@ -1330,6 +1508,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resourceinfotypedef"></a>
+
 ## ResourceInfoTypeDef
 
 ```python
@@ -1341,6 +1521,8 @@ Optional fields:
 - `ResourceArn`: `str`
 - `RoleArn`: `str`
 - `LastModified`: `datetime`
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -1363,6 +1545,8 @@ Optional fields:
 - `LFTagPolicy`:
   [LFTagPolicyResourceTypeDef](./type_defs.md#lftagpolicyresourcetypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1376,6 +1560,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="revokepermissionsrequestrequesttypedef"></a>
 
 ## RevokePermissionsRequestRequestTypeDef
 
@@ -1396,6 +1582,8 @@ Optional fields:
 - `PermissionsWithGrantOption`:
   `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
 
+<a id="rowfiltertypedef"></a>
+
 ## RowFilterTypeDef
 
 ```python
@@ -1406,6 +1594,8 @@ Optional fields:
 
 - `FilterExpression`: `str`
 - `AllRowsWildcard`: `Mapping`\[`str`, `Any`\]
+
+<a id="searchdatabasesbylftagsrequestrequesttypedef"></a>
 
 ## SearchDatabasesByLFTagsRequestRequestTypeDef
 
@@ -1423,6 +1613,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `CatalogId`: `str`
 
+<a id="searchdatabasesbylftagsresponsetypedef"></a>
+
 ## SearchDatabasesByLFTagsResponseTypeDef
 
 ```python
@@ -1436,6 +1628,8 @@ Required fields:
   `List`\[[TaggedDatabaseTypeDef](./type_defs.md#taggeddatabasetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchtablesbylftagsrequestrequesttypedef"></a>
 
 ## SearchTablesByLFTagsRequestRequestTypeDef
 
@@ -1453,6 +1647,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `CatalogId`: `str`
 
+<a id="searchtablesbylftagsresponsetypedef"></a>
+
 ## SearchTablesByLFTagsResponseTypeDef
 
 ```python
@@ -1467,6 +1663,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startqueryplanningrequestrequesttypedef"></a>
+
 ## StartQueryPlanningRequestRequestTypeDef
 
 ```python
@@ -1478,6 +1676,8 @@ Required fields:
 - `QueryPlanningContext`:
   [QueryPlanningContextTypeDef](./type_defs.md#queryplanningcontexttypedef)
 - `QueryString`: `str`
+
+<a id="startqueryplanningresponsetypedef"></a>
 
 ## StartQueryPlanningResponseTypeDef
 
@@ -1491,6 +1691,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="starttransactionrequestrequesttypedef"></a>
+
 ## StartTransactionRequestRequestTypeDef
 
 ```python
@@ -1500,6 +1702,8 @@ from mypy_boto3_lakeformation.type_defs import StartTransactionRequestRequestTyp
 Optional fields:
 
 - `TransactionType`: [TransactionTypeType](./literals.md#transactiontypetype)
+
+<a id="starttransactionresponsetypedef"></a>
 
 ## StartTransactionResponseTypeDef
 
@@ -1512,6 +1716,8 @@ Required fields:
 - `TransactionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="storageoptimizertypedef"></a>
 
 ## StorageOptimizerTypeDef
 
@@ -1527,6 +1733,8 @@ Optional fields:
 - `Warnings`: `str`
 - `LastRunDetails`: `str`
 
+<a id="tableobjecttypedef"></a>
+
 ## TableObjectTypeDef
 
 ```python
@@ -1538,6 +1746,8 @@ Optional fields:
 - `Uri`: `str`
 - `ETag`: `str`
 - `Size`: `int`
+
+<a id="tableresourcetypedef"></a>
 
 ## TableResourceTypeDef
 
@@ -1554,6 +1764,8 @@ Optional fields:
 - `CatalogId`: `str`
 - `Name`: `str`
 - `TableWildcard`: `Mapping`\[`str`, `Any`\]
+
+<a id="tablewithcolumnsresourcetypedef"></a>
 
 ## TableWithColumnsResourceTypeDef
 
@@ -1573,6 +1785,8 @@ Optional fields:
 - `ColumnWildcard`:
   [ColumnWildcardTypeDef](./type_defs.md#columnwildcardtypedef)
 
+<a id="taggeddatabasetypedef"></a>
+
 ## TaggedDatabaseTypeDef
 
 ```python
@@ -1583,6 +1797,8 @@ Optional fields:
 
 - `Database`: [DatabaseResourceTypeDef](./type_defs.md#databaseresourcetypedef)
 - `LFTags`: `List`\[[LFTagPairTypeDef](./type_defs.md#lftagpairtypedef)\]
+
+<a id="taggedtabletypedef"></a>
 
 ## TaggedTableTypeDef
 
@@ -1600,6 +1816,8 @@ Optional fields:
 - `LFTagsOnColumns`:
   `List`\[[ColumnLFTagTypeDef](./type_defs.md#columnlftagtypedef)\]
 
+<a id="transactiondescriptiontypedef"></a>
+
 ## TransactionDescriptionTypeDef
 
 ```python
@@ -1613,6 +1831,8 @@ Optional fields:
   [TransactionStatusType](./literals.md#transactionstatustype)
 - `TransactionStartTime`: `datetime`
 - `TransactionEndTime`: `datetime`
+
+<a id="updatelftagrequestrequesttypedef"></a>
 
 ## UpdateLFTagRequestRequestTypeDef
 
@@ -1630,6 +1850,8 @@ Optional fields:
 - `TagValuesToDelete`: `Sequence`\[`str`\]
 - `TagValuesToAdd`: `Sequence`\[`str`\]
 
+<a id="updateresourcerequestrequesttypedef"></a>
+
 ## UpdateResourceRequestRequestTypeDef
 
 ```python
@@ -1640,6 +1862,8 @@ Required fields:
 
 - `RoleArn`: `str`
 - `ResourceArn`: `str`
+
+<a id="updatetableobjectsrequestrequesttypedef"></a>
 
 ## UpdateTableObjectsRequestRequestTypeDef
 
@@ -1659,6 +1883,8 @@ Optional fields:
 - `CatalogId`: `str`
 - `TransactionId`: `str`
 
+<a id="updatetablestorageoptimizerrequestrequesttypedef"></a>
+
 ## UpdateTableStorageOptimizerRequestRequestTypeDef
 
 ```python
@@ -1677,6 +1903,8 @@ Optional fields:
 
 - `CatalogId`: `str`
 
+<a id="updatetablestorageoptimizerresponsetypedef"></a>
+
 ## UpdateTableStorageOptimizerResponseTypeDef
 
 ```python
@@ -1688,6 +1916,8 @@ Required fields:
 - `Result`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="virtualobjecttypedef"></a>
 
 ## VirtualObjectTypeDef
 
@@ -1703,6 +1933,8 @@ Optional fields:
 
 - `ETag`: `str`
 
+<a id="workunitrangetypedef"></a>
+
 ## WorkUnitRangeTypeDef
 
 ```python
@@ -1714,6 +1946,8 @@ Required fields:
 - `WorkUnitIdMax`: `int`
 - `WorkUnitIdMin`: `int`
 - `WorkUnitToken`: `str`
+
+<a id="writeoperationtypedef"></a>
 
 ## WriteOperationTypeDef
 

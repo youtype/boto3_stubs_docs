@@ -1,3 +1,5 @@
+<a id="workspaceswebclient-for-boto3-workspacesweb-module"></a>
+
 # WorkSpacesWebClient for boto3 WorkSpacesWeb module
 
 > [Index](..) > [WorkSpacesWeb](.) > WorkSpacesWebClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkSpacesWeb](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb)
 type annotations stubs module
-[mypy_boto3_workspaces_web](https://pypi.org/project/mypy-boto3-workspaces-web/).
+[mypy-boto3-workspaces-web](https://pypi.org/project/mypy-boto3-workspaces-web/).
 
 - [WorkSpacesWebClient for boto3 WorkSpacesWeb module](#workspaceswebclient-for-boto3-workspacesweb-module)
   - [WorkSpacesWebClient](#workspaceswebclient)
@@ -59,6 +61,8 @@ type annotations stubs module
     - [update_trust_store](#update_trust_store)
     - [update_user_settings](#update_user_settings)
 
+<a id="workspaceswebclient"></a>
+
 ## WorkSpacesWebClient
 
 Type annotations for `boto3.client("workspaces-web")`
@@ -66,14 +70,17 @@ Type annotations for `boto3.client("workspaces-web")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_workspaces_web.client import WorkSpacesWebClient
 
 def get_workspaces-web_client() -> WorkSpacesWebClient:
-    return boto3.client("workspaces-web")
+    return Session().client("workspaces-web")
 ```
 
 Boto3 documentation:
 [WorkSpacesWeb.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -99,7 +106,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -111,6 +122,8 @@ Boto3 documentation:
 [WorkSpacesWeb.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces-web.html#WorkSpacesWeb.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_browser_settings"></a>
 
 ### associate_browser_settings
 
@@ -133,6 +146,8 @@ Keyword-only arguments:
 Returns
 [AssociateBrowserSettingsResponseTypeDef](./type_defs.md#associatebrowsersettingsresponsetypedef).
 
+<a id="associate_network_settings"></a>
+
 ### associate_network_settings
 
 Associates a network settings resource with a web portal.
@@ -153,6 +168,8 @@ Keyword-only arguments:
 
 Returns
 [AssociateNetworkSettingsResponseTypeDef](./type_defs.md#associatenetworksettingsresponsetypedef).
+
+<a id="associate_trust_store"></a>
 
 ### associate_trust_store
 
@@ -175,6 +192,8 @@ Keyword-only arguments:
 Returns
 [AssociateTrustStoreResponseTypeDef](./type_defs.md#associatetruststoreresponsetypedef).
 
+<a id="associate_user_settings"></a>
+
 ### associate_user_settings
 
 Associates a user settings resource with a web portal.
@@ -196,6 +215,8 @@ Keyword-only arguments:
 Returns
 [AssociateUserSettingsResponseTypeDef](./type_defs.md#associateusersettingsresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -210,6 +231,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_browser_settings"></a>
 
 ### create_browser_settings
 
@@ -234,6 +257,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBrowserSettingsResponseTypeDef](./type_defs.md#createbrowsersettingsresponsetypedef).
+
+<a id="create_identity_provider"></a>
 
 ### create_identity_provider
 
@@ -262,6 +287,8 @@ Keyword-only arguments:
 Returns
 [CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
 
+<a id="create_network_settings"></a>
+
 ### create_network_settings
 
 Creates a network settings resource that can be associated with a web portal.
@@ -286,6 +313,8 @@ Keyword-only arguments:
 Returns
 [CreateNetworkSettingsResponseTypeDef](./type_defs.md#createnetworksettingsresponsetypedef).
 
+<a id="create_portal"></a>
+
 ### create_portal
 
 Creates a web portal.
@@ -309,6 +338,8 @@ Keyword-only arguments:
 Returns
 [CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
 
+<a id="create_trust_store"></a>
+
 ### create_trust_store
 
 Creates a trust store that can be associated with a web portal.
@@ -331,6 +362,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTrustStoreResponseTypeDef](./type_defs.md#createtruststoreresponsetypedef).
+
+<a id="create_user_settings"></a>
 
 ### create_user_settings
 
@@ -360,6 +393,8 @@ Keyword-only arguments:
 Returns
 [CreateUserSettingsResponseTypeDef](./type_defs.md#createusersettingsresponsetypedef).
 
+<a id="delete_browser_settings"></a>
+
 ### delete_browser_settings
 
 Deletes browser settings.
@@ -378,6 +413,8 @@ Keyword-only arguments:
 - `browserSettingsArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_identity_provider"></a>
 
 ### delete_identity_provider
 
@@ -398,6 +435,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_network_settings"></a>
+
 ### delete_network_settings
 
 Deletes network settings.
@@ -417,6 +456,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_portal"></a>
+
 ### delete_portal
 
 Deletes a web portal.
@@ -434,6 +475,8 @@ Keyword-only arguments:
 - `portalArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_trust_store"></a>
 
 ### delete_trust_store
 
@@ -454,6 +497,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_user_settings"></a>
+
 ### delete_user_settings
 
 Deletes user settings.
@@ -472,6 +517,8 @@ Keyword-only arguments:
 - `userSettingsArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_browser_settings"></a>
 
 ### disassociate_browser_settings
 
@@ -492,6 +539,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_network_settings"></a>
+
 ### disassociate_network_settings
 
 Disassociates network settings from a web portal.
@@ -510,6 +559,8 @@ Keyword-only arguments:
 - `portalArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_trust_store"></a>
 
 ### disassociate_trust_store
 
@@ -530,6 +581,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_user_settings"></a>
+
 ### disassociate_user_settings
 
 Disassociates user settings from a web portal.
@@ -549,6 +602,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -567,6 +622,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_browser_settings"></a>
 
 ### get_browser_settings
 
@@ -588,6 +645,8 @@ Keyword-only arguments:
 Returns
 [GetBrowserSettingsResponseTypeDef](./type_defs.md#getbrowsersettingsresponsetypedef).
 
+<a id="get_identity_provider"></a>
+
 ### get_identity_provider
 
 Gets the identity provider.
@@ -607,6 +666,8 @@ Keyword-only arguments:
 
 Returns
 [GetIdentityProviderResponseTypeDef](./type_defs.md#getidentityproviderresponsetypedef).
+
+<a id="get_network_settings"></a>
 
 ### get_network_settings
 
@@ -628,6 +689,8 @@ Keyword-only arguments:
 Returns
 [GetNetworkSettingsResponseTypeDef](./type_defs.md#getnetworksettingsresponsetypedef).
 
+<a id="get_portal"></a>
+
 ### get_portal
 
 Gets the web portal.
@@ -645,6 +708,8 @@ Keyword-only arguments:
 - `portalArn`: `str` *(required)*
 
 Returns [GetPortalResponseTypeDef](./type_defs.md#getportalresponsetypedef).
+
+<a id="get_portal_service_provider_metadata"></a>
 
 ### get_portal_service_provider_metadata
 
@@ -666,6 +731,8 @@ Keyword-only arguments:
 Returns
 [GetPortalServiceProviderMetadataResponseTypeDef](./type_defs.md#getportalserviceprovidermetadataresponsetypedef).
 
+<a id="get_trust_store"></a>
+
 ### get_trust_store
 
 Gets the trust store.
@@ -684,6 +751,8 @@ Keyword-only arguments:
 
 Returns
 [GetTrustStoreResponseTypeDef](./type_defs.md#gettruststoreresponsetypedef).
+
+<a id="get_trust_store_certificate"></a>
 
 ### get_trust_store_certificate
 
@@ -706,6 +775,8 @@ Keyword-only arguments:
 Returns
 [GetTrustStoreCertificateResponseTypeDef](./type_defs.md#gettruststorecertificateresponsetypedef).
 
+<a id="get_user_settings"></a>
+
 ### get_user_settings
 
 Gets user settings.
@@ -724,6 +795,8 @@ Keyword-only arguments:
 
 Returns
 [GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
+
+<a id="list_browser_settings"></a>
 
 ### list_browser_settings
 
@@ -745,6 +818,8 @@ Keyword-only arguments:
 
 Returns
 [ListBrowserSettingsResponseTypeDef](./type_defs.md#listbrowsersettingsresponsetypedef).
+
+<a id="list_identity_providers"></a>
 
 ### list_identity_providers
 
@@ -768,6 +843,8 @@ Keyword-only arguments:
 Returns
 [ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef).
 
+<a id="list_network_settings"></a>
+
 ### list_network_settings
 
 Retrieves a list of network settings.
@@ -789,6 +866,8 @@ Keyword-only arguments:
 Returns
 [ListNetworkSettingsResponseTypeDef](./type_defs.md#listnetworksettingsresponsetypedef).
 
+<a id="list_portals"></a>
+
 ### list_portals
 
 Retrieves a list or web portals.
@@ -809,6 +888,8 @@ Keyword-only arguments:
 Returns
 [ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves a list of tags for a resource.
@@ -828,6 +909,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_trust_store_certificates"></a>
 
 ### list_trust_store_certificates
 
@@ -851,6 +934,8 @@ Keyword-only arguments:
 Returns
 [ListTrustStoreCertificatesResponseTypeDef](./type_defs.md#listtruststorecertificatesresponsetypedef).
 
+<a id="list_trust_stores"></a>
+
 ### list_trust_stores
 
 Retrieves a list of trust stores.
@@ -870,6 +955,8 @@ Keyword-only arguments:
 
 Returns
 [ListTrustStoresResponseTypeDef](./type_defs.md#listtruststoresresponsetypedef).
+
+<a id="list_user_settings"></a>
 
 ### list_user_settings
 
@@ -892,6 +979,8 @@ Keyword-only arguments:
 Returns
 [ListUserSettingsResponseTypeDef](./type_defs.md#listusersettingsresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or overwrites one or more tags for the specified resource.
@@ -912,6 +1001,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified resource.
@@ -930,6 +1021,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_browser_settings"></a>
 
 ### update_browser_settings
 
@@ -952,6 +1045,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBrowserSettingsResponseTypeDef](./type_defs.md#updatebrowsersettingsresponsetypedef).
+
+<a id="update_identity_provider"></a>
 
 ### update_identity_provider
 
@@ -978,6 +1073,8 @@ Keyword-only arguments:
 Returns
 [UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
 
+<a id="update_network_settings"></a>
+
 ### update_network_settings
 
 Updates network settings.
@@ -1002,6 +1099,8 @@ Keyword-only arguments:
 Returns
 [UpdateNetworkSettingsResponseTypeDef](./type_defs.md#updatenetworksettingsresponsetypedef).
 
+<a id="update_portal"></a>
+
 ### update_portal
 
 Updates a web portal.
@@ -1021,6 +1120,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
+
+<a id="update_trust_store"></a>
 
 ### update_trust_store
 
@@ -1045,6 +1146,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTrustStoreResponseTypeDef](./type_defs.md#updatetruststoreresponsetypedef).
+
+<a id="update_user_settings"></a>
 
 ### update_user_settings
 

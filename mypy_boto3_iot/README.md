@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iot-module"></a>
+
 # Type annotations for boto3 IoT module
 
 > [Index](..) > IoT
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
 type annotations stubs module
-[mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
+[mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iot]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iot]'
+
+# standalone installation
 pip install mypy-boto3-iot
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-iot
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iotclient"></a>
+
 ## IoTClient
 
 Type annotations for `boto3.client("iot")` as [IoTClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iot.client import IoTClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -272,6 +286,8 @@ from mypy_boto3_iot.client import IoTClient
 - [update_topic_rule_destination](./client.md#update_topic_rule_destination)
 - [validate_security_profile_behaviors](./client.md#validate_security_profile_behaviors)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTClient [exceptions](./client.md#exceptions)
@@ -309,6 +325,8 @@ IoTClient [exceptions](./client.md#exceptions)
 - VersionConflictException
 - VersionsLimitExceededException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -317,7 +335,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iot.paginators import GetBehaviorModelTrainingSummariesPaginator, ...
+from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator, ...
 ```
 
 - [GetBehaviorModelTrainingSummariesPaginator](./paginators.md#getbehaviormodeltrainingsummariespaginator)
@@ -374,6 +392,8 @@ from mypy_boto3_iot.paginators import GetBehaviorModelTrainingSummariesPaginator
 - [ListTopicRulesPaginator](./paginators.md#listtopicrulespaginator)
 - [ListV2LoggingLevelsPaginator](./paginators.md#listv2logginglevelspaginator)
 - [ListViolationEventsPaginator](./paginators.md#listviolationeventspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -507,6 +527,8 @@ from mypy_boto3_iot.literals import AbortActionType, ...
 - [ViolationEventTypeType](./literals.md#violationeventtypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-braket-module"></a>
+
 # Type annotations for boto3 Braket module
 
 > [Index](..) > Braket
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
 type annotations stubs module
-[mypy_boto3_braket](https://pypi.org/project/mypy-boto3-braket/).
+[mypy-boto3-braket](https://pypi.org/project/mypy-boto3-braket/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[braket]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[braket]'
+
+# standalone installation
 pip install mypy-boto3-braket
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-braket
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="braketclient"></a>
+
 ## BraketClient
 
 Type annotations for `boto3.client("braket")` as [BraketClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_braket.client import BraketClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -49,6 +63,8 @@ from mypy_boto3_braket.client import BraketClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 BraketClient [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ BraketClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -72,12 +90,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_braket.paginators import SearchDevicesPaginator, ...
+from mypy_boto3_braket.paginator import SearchDevicesPaginator, ...
 ```
 
 - [SearchDevicesPaginator](./paginators.md#searchdevicespaginator)
 - [SearchJobsPaginator](./paginators.md#searchjobspaginator)
 - [SearchQuantumTasksPaginator](./paginators.md#searchquantumtaskspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -104,6 +124,8 @@ from mypy_boto3_braket.literals import CancellationStatusType, ...
 - [SearchQuantumTasksPaginatorName](./literals.md#searchquantumtaskspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

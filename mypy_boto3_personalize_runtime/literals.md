@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-personalizeruntime-module"></a>
+
 # Literals for boto3 PersonalizeRuntime module
 
 > [Index](..) > [PersonalizeRuntime](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module
-[mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
+[mypy-boto3-personalize-runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 - [Literals for boto3 PersonalizeRuntime module](#literals-for-boto3-personalizeruntime-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

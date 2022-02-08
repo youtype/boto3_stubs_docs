@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ssmcontacts-module"></a>
+
 # Paginators for boto3 SSMContacts module
 
 > [Index](..) > [SSMContacts](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
 type annotations stubs module
-[mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
+[mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 - [Paginators for boto3 SSMContacts module](#paginators-for-boto3-ssmcontacts-module)
   - [ListContactChannelsPaginator](#listcontactchannelspaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ListPagesByContactPaginator](#listpagesbycontactpaginator)
   - [ListPagesByEngagementPaginator](#listpagesbyengagementpaginator)
 
+<a id="listcontactchannelspaginator"></a>
+
 ## ListContactChannelsPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator
 
 def get_list_contact_channels_paginator() -> ListContactChannelsPaginator:
-    return boto3.client("ssm-contacts").get_paginator("list_contact_channels")
+    return Session().client("ssm-contacts").get_paginator("list_contact_channels")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ListContactChannelsPaginator.paginate` method:
 `ListContactChannelsPaginator.paginate` returns
 `_PageIterator`\[[ListContactChannelsResultTypeDef](./type_defs.md#listcontactchannelsresulttypedef)\].
 
+<a id="listcontactspaginator"></a>
+
 ## ListContactsPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_contacts.paginator import ListContactsPaginator
 
 def get_list_contacts_paginator() -> ListContactsPaginator:
-    return boto3.client("ssm-contacts").get_paginator("list_contacts")
+    return Session().client("ssm-contacts").get_paginator("list_contacts")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `ListContactsPaginator.paginate` method:
 `ListContactsPaginator.paginate` returns
 `_PageIterator`\[[ListContactsResultTypeDef](./type_defs.md#listcontactsresulttypedef)\].
 
+<a id="listengagementspaginator"></a>
+
 ## ListEngagementsPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_contacts.paginator import ListEngagementsPaginator
 
 def get_list_engagements_paginator() -> ListEngagementsPaginator:
-    return boto3.client("ssm-contacts").get_paginator("list_engagements")
+    return Session().client("ssm-contacts").get_paginator("list_engagements")
 ```
 
 Boto3 documentation:
@@ -95,6 +109,8 @@ Arguments for `ListEngagementsPaginator.paginate` method:
 `ListEngagementsPaginator.paginate` returns
 `_PageIterator`\[[ListEngagementsResultTypeDef](./type_defs.md#listengagementsresulttypedef)\].
 
+<a id="listpagereceiptspaginator"></a>
+
 ## ListPageReceiptsPaginator
 
 Type annotations for
@@ -103,10 +119,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_contacts.paginator import ListPageReceiptsPaginator
 
 def get_list_page_receipts_paginator() -> ListPageReceiptsPaginator:
-    return boto3.client("ssm-contacts").get_paginator("list_page_receipts")
+    return Session().client("ssm-contacts").get_paginator("list_page_receipts")
 ```
 
 Boto3 documentation:
@@ -121,6 +139,8 @@ Arguments for `ListPageReceiptsPaginator.paginate` method:
 `ListPageReceiptsPaginator.paginate` returns
 `_PageIterator`\[[ListPageReceiptsResultTypeDef](./type_defs.md#listpagereceiptsresulttypedef)\].
 
+<a id="listpagesbycontactpaginator"></a>
+
 ## ListPagesByContactPaginator
 
 Type annotations for
@@ -129,10 +149,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_contacts.paginator import ListPagesByContactPaginator
 
 def get_list_pages_by_contact_paginator() -> ListPagesByContactPaginator:
-    return boto3.client("ssm-contacts").get_paginator("list_pages_by_contact")
+    return Session().client("ssm-contacts").get_paginator("list_pages_by_contact")
 ```
 
 Boto3 documentation:
@@ -147,6 +169,8 @@ Arguments for `ListPagesByContactPaginator.paginate` method:
 `ListPagesByContactPaginator.paginate` returns
 `_PageIterator`\[[ListPagesByContactResultTypeDef](./type_defs.md#listpagesbycontactresulttypedef)\].
 
+<a id="listpagesbyengagementpaginator"></a>
+
 ## ListPagesByEngagementPaginator
 
 Type annotations for
@@ -155,10 +179,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_contacts.paginator import ListPagesByEngagementPaginator
 
 def get_list_pages_by_engagement_paginator() -> ListPagesByEngagementPaginator:
-    return boto3.client("ssm-contacts").get_paginator("list_pages_by_engagement")
+    return Session().client("ssm-contacts").get_paginator("list_pages_by_engagement")
 ```
 
 Boto3 documentation:

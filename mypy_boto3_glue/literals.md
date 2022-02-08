@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-glue-module"></a>
+
 # Literals for boto3 Glue module
 
 > [Index](..) > [Glue](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Glue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue)
 type annotations stubs module
-[mypy_boto3_glue](https://pypi.org/project/mypy-boto3-glue/).
+[mypy-boto3-glue](https://pypi.org/project/mypy-boto3-glue/).
 
 - [Literals for boto3 Glue module](#literals-for-boto3-glue-module)
   - [BackfillErrorCodeType](#backfillerrorcodetype)
@@ -82,6 +84,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="backfillerrorcodetype"></a>
+
 ## BackfillErrorCodeType
 
 ```python
@@ -96,6 +100,8 @@ Values:
 - `MISSING_PARTITION_VALUE_ERROR`
 - `UNSUPPORTED_PARTITION_CHARACTER_ERROR`
 
+<a id="blueprintrunstatetype"></a>
+
 ## BlueprintRunStateType
 
 ```python
@@ -108,6 +114,8 @@ Values:
 - `ROLLING_BACK`
 - `RUNNING`
 - `SUCCEEDED`
+
+<a id="blueprintstatustype"></a>
 
 ## BlueprintStatusType
 
@@ -122,6 +130,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="catalogencryptionmodetype"></a>
+
 ## CatalogEncryptionModeType
 
 ```python
@@ -133,6 +143,8 @@ Values:
 - `DISABLED`
 - `SSE-KMS`
 
+<a id="cloudwatchencryptionmodetype"></a>
+
 ## CloudWatchEncryptionModeType
 
 ```python
@@ -143,6 +155,8 @@ Values:
 
 - `DISABLED`
 - `SSE-KMS`
+
+<a id="columnstatisticstypetype"></a>
 
 ## ColumnStatisticsTypeType
 
@@ -160,6 +174,8 @@ Values:
 - `LONG`
 - `STRING`
 
+<a id="comparatortype"></a>
+
 ## ComparatorType
 
 ```python
@@ -173,6 +189,8 @@ Values:
 - `GREATER_THAN_EQUALS`
 - `LESS_THAN`
 - `LESS_THAN_EQUALS`
+
+<a id="compatibilitytype"></a>
 
 ## CompatibilityType
 
@@ -190,6 +208,8 @@ Values:
 - `FULL`
 - `FULL_ALL`
 - `NONE`
+
+<a id="connectionpropertykeytype"></a>
 
 ## ConnectionPropertyKeyType
 
@@ -230,6 +250,8 @@ Values:
 - `SKIP_CUSTOM_JDBC_CERT_VALIDATION`
 - `USERNAME`
 
+<a id="connectiontypetype"></a>
+
 ## ConnectionTypeType
 
 ```python
@@ -246,6 +268,8 @@ Values:
 - `NETWORK`
 - `SFTP`
 
+<a id="crawlstatetype"></a>
+
 ## CrawlStateType
 
 ```python
@@ -260,6 +284,8 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
+<a id="crawlerlineagesettingstype"></a>
+
 ## CrawlerLineageSettingsType
 
 ```python
@@ -270,6 +296,8 @@ Values:
 
 - `DISABLE`
 - `ENABLE`
+
+<a id="crawlerstatetype"></a>
 
 ## CrawlerStateType
 
@@ -283,6 +311,8 @@ Values:
 - `RUNNING`
 - `STOPPING`
 
+<a id="csvheaderoptiontype"></a>
+
 ## CsvHeaderOptionType
 
 ```python
@@ -294,6 +324,8 @@ Values:
 - `ABSENT`
 - `PRESENT`
 - `UNKNOWN`
+
+<a id="dataformattype"></a>
 
 ## DataFormatType
 
@@ -307,6 +339,8 @@ Values:
 - `JSON`
 - `PROTOBUF`
 
+<a id="deletebehaviortype"></a>
+
 ## DeleteBehaviorType
 
 ```python
@@ -319,6 +353,8 @@ Values:
 - `DEPRECATE_IN_DATABASE`
 - `LOG`
 
+<a id="enablehybridvaluestype"></a>
+
 ## EnableHybridValuesType
 
 ```python
@@ -329,6 +365,8 @@ Values:
 
 - `FALSE`
 - `TRUE`
+
+<a id="existconditiontype"></a>
 
 ## ExistConditionType
 
@@ -342,6 +380,8 @@ Values:
 - `NONE`
 - `NOT_EXIST`
 
+<a id="getclassifierspaginatorname"></a>
+
 ## GetClassifiersPaginatorName
 
 ```python
@@ -351,6 +391,8 @@ from mypy_boto3_glue.literals import GetClassifiersPaginatorName
 Values:
 
 - `get_classifiers`
+
+<a id="getconnectionspaginatorname"></a>
 
 ## GetConnectionsPaginatorName
 
@@ -362,6 +404,8 @@ Values:
 
 - `get_connections`
 
+<a id="getcrawlermetricspaginatorname"></a>
+
 ## GetCrawlerMetricsPaginatorName
 
 ```python
@@ -371,6 +415,8 @@ from mypy_boto3_glue.literals import GetCrawlerMetricsPaginatorName
 Values:
 
 - `get_crawler_metrics`
+
+<a id="getcrawlerspaginatorname"></a>
 
 ## GetCrawlersPaginatorName
 
@@ -382,6 +428,8 @@ Values:
 
 - `get_crawlers`
 
+<a id="getdatabasespaginatorname"></a>
+
 ## GetDatabasesPaginatorName
 
 ```python
@@ -391,6 +439,8 @@ from mypy_boto3_glue.literals import GetDatabasesPaginatorName
 Values:
 
 - `get_databases`
+
+<a id="getdevendpointspaginatorname"></a>
 
 ## GetDevEndpointsPaginatorName
 
@@ -402,6 +452,8 @@ Values:
 
 - `get_dev_endpoints`
 
+<a id="getjobrunspaginatorname"></a>
+
 ## GetJobRunsPaginatorName
 
 ```python
@@ -411,6 +463,8 @@ from mypy_boto3_glue.literals import GetJobRunsPaginatorName
 Values:
 
 - `get_job_runs`
+
+<a id="getjobspaginatorname"></a>
 
 ## GetJobsPaginatorName
 
@@ -422,6 +476,8 @@ Values:
 
 - `get_jobs`
 
+<a id="getpartitionindexespaginatorname"></a>
+
 ## GetPartitionIndexesPaginatorName
 
 ```python
@@ -431,6 +487,8 @@ from mypy_boto3_glue.literals import GetPartitionIndexesPaginatorName
 Values:
 
 - `get_partition_indexes`
+
+<a id="getpartitionspaginatorname"></a>
 
 ## GetPartitionsPaginatorName
 
@@ -442,6 +500,8 @@ Values:
 
 - `get_partitions`
 
+<a id="getresourcepoliciespaginatorname"></a>
+
 ## GetResourcePoliciesPaginatorName
 
 ```python
@@ -451,6 +511,8 @@ from mypy_boto3_glue.literals import GetResourcePoliciesPaginatorName
 Values:
 
 - `get_resource_policies`
+
+<a id="getsecurityconfigurationspaginatorname"></a>
 
 ## GetSecurityConfigurationsPaginatorName
 
@@ -462,6 +524,8 @@ Values:
 
 - `get_security_configurations`
 
+<a id="gettableversionspaginatorname"></a>
+
 ## GetTableVersionsPaginatorName
 
 ```python
@@ -471,6 +535,8 @@ from mypy_boto3_glue.literals import GetTableVersionsPaginatorName
 Values:
 
 - `get_table_versions`
+
+<a id="gettablespaginatorname"></a>
 
 ## GetTablesPaginatorName
 
@@ -482,6 +548,8 @@ Values:
 
 - `get_tables`
 
+<a id="gettriggerspaginatorname"></a>
+
 ## GetTriggersPaginatorName
 
 ```python
@@ -491,6 +559,8 @@ from mypy_boto3_glue.literals import GetTriggersPaginatorName
 Values:
 
 - `get_triggers`
+
+<a id="getuserdefinedfunctionspaginatorname"></a>
 
 ## GetUserDefinedFunctionsPaginatorName
 
@@ -502,6 +572,8 @@ Values:
 
 - `get_user_defined_functions`
 
+<a id="jobbookmarksencryptionmodetype"></a>
+
 ## JobBookmarksEncryptionModeType
 
 ```python
@@ -512,6 +584,8 @@ Values:
 
 - `CSE-KMS`
 - `DISABLED`
+
+<a id="jobrunstatetype"></a>
 
 ## JobRunStateType
 
@@ -529,6 +603,8 @@ Values:
 - `SUCCEEDED`
 - `TIMEOUT`
 
+<a id="languagetype"></a>
+
 ## LanguageType
 
 ```python
@@ -539,6 +615,8 @@ Values:
 
 - `PYTHON`
 - `SCALA`
+
+<a id="lastcrawlstatustype"></a>
 
 ## LastCrawlStatusType
 
@@ -552,6 +630,8 @@ Values:
 - `FAILED`
 - `SUCCEEDED`
 
+<a id="listregistriespaginatorname"></a>
+
 ## ListRegistriesPaginatorName
 
 ```python
@@ -561,6 +641,8 @@ from mypy_boto3_glue.literals import ListRegistriesPaginatorName
 Values:
 
 - `list_registries`
+
+<a id="listschemaversionspaginatorname"></a>
 
 ## ListSchemaVersionsPaginatorName
 
@@ -572,6 +654,8 @@ Values:
 
 - `list_schema_versions`
 
+<a id="listschemaspaginatorname"></a>
+
 ## ListSchemasPaginatorName
 
 ```python
@@ -582,6 +666,8 @@ Values:
 
 - `list_schemas`
 
+<a id="logicaloperatortype"></a>
+
 ## LogicalOperatorType
 
 ```python
@@ -591,6 +677,8 @@ from mypy_boto3_glue.literals import LogicalOperatorType
 Values:
 
 - `EQUALS`
+
+<a id="logicaltype"></a>
 
 ## LogicalType
 
@@ -603,6 +691,8 @@ Values:
 - `AND`
 - `ANY`
 
+<a id="mluserdataencryptionmodestringtype"></a>
+
 ## MLUserDataEncryptionModeStringType
 
 ```python
@@ -613,6 +703,8 @@ Values:
 
 - `DISABLED`
 - `SSE-KMS`
+
+<a id="nodetypetype"></a>
 
 ## NodeTypeType
 
@@ -626,6 +718,8 @@ Values:
 - `JOB`
 - `TRIGGER`
 
+<a id="partitionindexstatustype"></a>
+
 ## PartitionIndexStatusType
 
 ```python
@@ -638,6 +732,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+
+<a id="permissiontype"></a>
 
 ## PermissionType
 
@@ -657,6 +753,8 @@ Values:
 - `INSERT`
 - `SELECT`
 
+<a id="permissiontypetype"></a>
+
 ## PermissionTypeType
 
 ```python
@@ -667,6 +765,8 @@ Values:
 
 - `CELL_FILTER_PERMISSION`
 - `COLUMN_PERMISSION`
+
+<a id="principaltypetype"></a>
 
 ## PrincipalTypeType
 
@@ -680,6 +780,8 @@ Values:
 - `ROLE`
 - `USER`
 
+<a id="recrawlbehaviortype"></a>
+
 ## RecrawlBehaviorType
 
 ```python
@@ -692,6 +794,8 @@ Values:
 - `CRAWL_EVERYTHING`
 - `CRAWL_NEW_FOLDERS_ONLY`
 
+<a id="registrystatustype"></a>
+
 ## RegistryStatusType
 
 ```python
@@ -703,6 +807,8 @@ Values:
 - `AVAILABLE`
 - `DELETING`
 
+<a id="resourcesharetypetype"></a>
+
 ## ResourceShareTypeType
 
 ```python
@@ -713,6 +819,8 @@ Values:
 
 - `ALL`
 - `FOREIGN`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -726,6 +834,8 @@ Values:
 - `FILE`
 - `JAR`
 
+<a id="s3encryptionmodetype"></a>
+
 ## S3EncryptionModeType
 
 ```python
@@ -737,6 +847,8 @@ Values:
 - `DISABLED`
 - `SSE-KMS`
 - `SSE-S3`
+
+<a id="schedulestatetype"></a>
 
 ## ScheduleStateType
 
@@ -750,6 +862,8 @@ Values:
 - `SCHEDULED`
 - `TRANSITIONING`
 
+<a id="schemadifftypetype"></a>
+
 ## SchemaDiffTypeType
 
 ```python
@@ -759,6 +873,8 @@ from mypy_boto3_glue.literals import SchemaDiffTypeType
 Values:
 
 - `SYNTAX_DIFF`
+
+<a id="schemastatustype"></a>
 
 ## SchemaStatusType
 
@@ -771,6 +887,8 @@ Values:
 - `AVAILABLE`
 - `DELETING`
 - `PENDING`
+
+<a id="schemaversionstatustype"></a>
 
 ## SchemaVersionStatusType
 
@@ -785,6 +903,8 @@ Values:
 - `FAILURE`
 - `PENDING`
 
+<a id="sortdirectiontypetype"></a>
+
 ## SortDirectionTypeType
 
 ```python
@@ -795,6 +915,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="sorttype"></a>
 
 ## SortType
 
@@ -807,6 +929,8 @@ Values:
 - `ASC`
 - `DESC`
 
+<a id="taskrunsortcolumntypetype"></a>
+
 ## TaskRunSortColumnTypeType
 
 ```python
@@ -818,6 +942,8 @@ Values:
 - `STARTED`
 - `STATUS`
 - `TASK_RUN_TYPE`
+
+<a id="taskstatustypetype"></a>
 
 ## TaskStatusTypeType
 
@@ -835,6 +961,8 @@ Values:
 - `SUCCEEDED`
 - `TIMEOUT`
 
+<a id="tasktypetype"></a>
+
 ## TaskTypeType
 
 ```python
@@ -848,6 +976,8 @@ Values:
 - `FIND_MATCHES`
 - `IMPORT_LABELS`
 - `LABELING_SET_GENERATION`
+
+<a id="transformsortcolumntypetype"></a>
 
 ## TransformSortColumnTypeType
 
@@ -863,6 +993,8 @@ Values:
 - `STATUS`
 - `TRANSFORM_TYPE`
 
+<a id="transformstatustypetype"></a>
+
 ## TransformStatusTypeType
 
 ```python
@@ -875,6 +1007,8 @@ Values:
 - `NOT_READY`
 - `READY`
 
+<a id="transformtypetype"></a>
+
 ## TransformTypeType
 
 ```python
@@ -884,6 +1018,8 @@ from mypy_boto3_glue.literals import TransformTypeType
 Values:
 
 - `FIND_MATCHES`
+
+<a id="triggerstatetype"></a>
 
 ## TriggerStateType
 
@@ -902,6 +1038,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="triggertypetype"></a>
+
 ## TriggerTypeType
 
 ```python
@@ -915,6 +1053,8 @@ Values:
 - `ON_DEMAND`
 - `SCHEDULED`
 
+<a id="updatebehaviortype"></a>
+
 ## UpdateBehaviorType
 
 ```python
@@ -925,6 +1065,8 @@ Values:
 
 - `LOG`
 - `UPDATE_IN_DATABASE`
+
+<a id="workertypetype"></a>
 
 ## WorkerTypeType
 
@@ -937,6 +1079,8 @@ Values:
 - `G.1X`
 - `G.2X`
 - `Standard`
+
+<a id="workflowrunstatustype"></a>
 
 ## WorkflowRunStatusType
 
@@ -951,6 +1095,8 @@ Values:
 - `RUNNING`
 - `STOPPED`
 - `STOPPING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1259,6 +1405,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

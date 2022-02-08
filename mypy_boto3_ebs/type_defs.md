@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ebs-module"></a>
+
 # Typed dictionaries for boto3 EBS module
 
 > [Index](..) > [EBS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EBS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ebs.html#EBS)
 type annotations stubs module
-[mypy_boto3_ebs](https://pypi.org/project/mypy-boto3-ebs/).
+[mypy-boto3-ebs](https://pypi.org/project/mypy-boto3-ebs/).
 
 - [Typed dictionaries for boto3 EBS module](#typed-dictionaries-for-boto3-ebs-module)
   - [BlockTypeDef](#blocktypedef)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [StartSnapshotResponseTypeDef](#startsnapshotresponsetypedef)
   - [TagTypeDef](#tagtypedef)
 
+<a id="blocktypedef"></a>
+
 ## BlockTypeDef
 
 ```python
@@ -35,6 +39,8 @@ Optional fields:
 
 - `BlockIndex`: `int`
 - `BlockToken`: `str`
+
+<a id="changedblocktypedef"></a>
 
 ## ChangedBlockTypeDef
 
@@ -47,6 +53,8 @@ Optional fields:
 - `BlockIndex`: `int`
 - `FirstBlockToken`: `str`
 - `SecondBlockToken`: `str`
+
+<a id="completesnapshotrequestrequesttypedef"></a>
 
 ## CompleteSnapshotRequestRequestTypeDef
 
@@ -67,6 +75,8 @@ Optional fields:
 - `ChecksumAggregationMethod`: `Literal['LINEAR']` (see
   [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype))
 
+<a id="completesnapshotresponsetypedef"></a>
+
 ## CompleteSnapshotResponseTypeDef
 
 ```python
@@ -79,6 +89,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsnapshotblockrequestrequesttypedef"></a>
+
 ## GetSnapshotBlockRequestRequestTypeDef
 
 ```python
@@ -90,6 +102,8 @@ Required fields:
 - `SnapshotId`: `str`
 - `BlockIndex`: `int`
 - `BlockToken`: `str`
+
+<a id="getsnapshotblockresponsetypedef"></a>
 
 ## GetSnapshotBlockResponseTypeDef
 
@@ -106,6 +120,8 @@ Required fields:
   [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype))
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listchangedblocksrequestrequesttypedef"></a>
 
 ## ListChangedBlocksRequestRequestTypeDef
 
@@ -124,6 +140,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `StartingBlockIndex`: `int`
 
+<a id="listchangedblocksresponsetypedef"></a>
+
 ## ListChangedBlocksResponseTypeDef
 
 ```python
@@ -141,6 +159,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsnapshotblocksrequestrequesttypedef"></a>
+
 ## ListSnapshotBlocksRequestRequestTypeDef
 
 ```python
@@ -157,6 +177,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `StartingBlockIndex`: `int`
 
+<a id="listsnapshotblocksresponsetypedef"></a>
+
 ## ListSnapshotBlocksResponseTypeDef
 
 ```python
@@ -172,6 +194,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putsnapshotblockrequestrequesttypedef"></a>
 
 ## PutSnapshotBlockRequestRequestTypeDef
 
@@ -193,6 +217,8 @@ Optional fields:
 
 - `Progress`: `int`
 
+<a id="putsnapshotblockresponsetypedef"></a>
+
 ## PutSnapshotBlockResponseTypeDef
 
 ```python
@@ -207,6 +233,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -220,6 +248,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startsnapshotrequestrequesttypedef"></a>
 
 ## StartSnapshotRequestRequestTypeDef
 
@@ -241,6 +271,8 @@ Optional fields:
 - `KmsKeyArn`: `str`
 - `Timeout`: `int`
 
+<a id="startsnapshotresponsetypedef"></a>
+
 ## StartSnapshotResponseTypeDef
 
 ```python
@@ -261,6 +293,8 @@ Required fields:
 - `KmsKeyArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 

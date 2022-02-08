@@ -1,3 +1,5 @@
+<a id="servicecatalogclient-for-boto3-servicecatalog-module"></a>
+
 # ServiceCatalogClient for boto3 ServiceCatalog module
 
 > [Index](..) > [ServiceCatalog](.) > ServiceCatalogClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
-[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+[mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [ServiceCatalogClient for boto3 ServiceCatalog module](#servicecatalogclient-for-boto3-servicecatalog-module)
   - [ServiceCatalogClient](#servicecatalogclient)
@@ -103,6 +105,8 @@ type annotations stubs module
     - [update_tag_option](#update_tag_option)
     - [get_paginator](#get_paginator)
 
+<a id="servicecatalogclient"></a>
+
 ## ServiceCatalogClient
 
 Type annotations for `boto3.client("servicecatalog")`
@@ -110,14 +114,17 @@ Type annotations for `boto3.client("servicecatalog")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_servicecatalog.client import ServiceCatalogClient
 
 def get_servicecatalog_client() -> ServiceCatalogClient:
-    return boto3.client("servicecatalog")
+    return Session().client("servicecatalog")
 ```
 
 Boto3 documentation:
 [ServiceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -143,7 +150,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TagOptionNotMigratedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -155,6 +166,8 @@ Boto3 documentation:
 [ServiceCatalog.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_portfolio_share"></a>
 
 ### accept_portfolio_share
 
@@ -178,6 +191,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_budget_with_resource"></a>
+
 ### associate_budget_with_resource
 
 Associates the specified budget with the specified resource.
@@ -197,6 +212,8 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_principal_with_portfolio"></a>
 
 ### associate_principal_with_portfolio
 
@@ -221,6 +238,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_product_with_portfolio"></a>
+
 ### associate_product_with_portfolio
 
 Associates the specified product with the specified portfolio.
@@ -242,6 +261,8 @@ Keyword-only arguments:
 - `SourcePortfolioId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_service_action_with_provisioning_artifact"></a>
 
 ### associate_service_action_with_provisioning_artifact
 
@@ -266,6 +287,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_tag_option_with_resource"></a>
+
 ### associate_tag_option_with_resource
 
 Associate the specified TagOption with the specified portfolio or product.
@@ -285,6 +308,8 @@ Keyword-only arguments:
 - `TagOptionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="batch_associate_service_action_with_provisioning_artifact"></a>
 
 ### batch_associate_service_action_with_provisioning_artifact
 
@@ -309,6 +334,8 @@ Keyword-only arguments:
 
 Returns
 [BatchAssociateServiceActionWithProvisioningArtifactOutputTypeDef](./type_defs.md#batchassociateserviceactionwithprovisioningartifactoutputtypedef).
+
+<a id="batch_disassociate_service_action_from_provisioning_artifact"></a>
 
 ### batch_disassociate_service_action_from_provisioning_artifact
 
@@ -335,6 +362,8 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateServiceActionFromProvisioningArtifactOutputTypeDef](./type_defs.md#batchdisassociateserviceactionfromprovisioningartifactoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -349,6 +378,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="copy_product"></a>
 
 ### copy_product
 
@@ -379,6 +410,8 @@ Keyword-only arguments:
 
 Returns [CopyProductOutputTypeDef](./type_defs.md#copyproductoutputtypedef).
 
+<a id="create_constraint"></a>
+
 ### create_constraint
 
 Creates a constraint.
@@ -404,6 +437,8 @@ Keyword-only arguments:
 Returns
 [CreateConstraintOutputTypeDef](./type_defs.md#createconstraintoutputtypedef).
 
+<a id="create_portfolio"></a>
+
 ### create_portfolio
 
 Creates a portfolio.
@@ -427,6 +462,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePortfolioOutputTypeDef](./type_defs.md#createportfoliooutputtypedef).
+
+<a id="create_portfolio_share"></a>
 
 ### create_portfolio_share
 
@@ -452,6 +489,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePortfolioShareOutputTypeDef](./type_defs.md#createportfolioshareoutputtypedef).
+
+<a id="create_product"></a>
 
 ### create_product
 
@@ -484,6 +523,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProductOutputTypeDef](./type_defs.md#createproductoutputtypedef).
+
+<a id="create_provisioned_product_plan"></a>
 
 ### create_provisioned_product_plan
 
@@ -518,6 +559,8 @@ Keyword-only arguments:
 Returns
 [CreateProvisionedProductPlanOutputTypeDef](./type_defs.md#createprovisionedproductplanoutputtypedef).
 
+<a id="create_provisioning_artifact"></a>
+
 ### create_provisioning_artifact
 
 Creates a provisioning artifact (also known as a version) for the specified
@@ -543,6 +586,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProvisioningArtifactOutputTypeDef](./type_defs.md#createprovisioningartifactoutputtypedef).
+
+<a id="create_service_action"></a>
 
 ### create_service_action
 
@@ -573,6 +618,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceActionOutputTypeDef](./type_defs.md#createserviceactionoutputtypedef).
 
+<a id="create_tag_option"></a>
+
 ### create_tag_option
 
 Creates a TagOption.
@@ -593,6 +640,8 @@ Keyword-only arguments:
 Returns
 [CreateTagOptionOutputTypeDef](./type_defs.md#createtagoptionoutputtypedef).
 
+<a id="delete_constraint"></a>
+
 ### delete_constraint
 
 Deletes the specified constraint.
@@ -612,6 +661,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_portfolio"></a>
+
 ### delete_portfolio
 
 Deletes the specified portfolio.
@@ -630,6 +681,8 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_portfolio_share"></a>
 
 ### delete_portfolio_share
 
@@ -656,6 +709,8 @@ Keyword-only arguments:
 Returns
 [DeletePortfolioShareOutputTypeDef](./type_defs.md#deleteportfolioshareoutputtypedef).
 
+<a id="delete_product"></a>
+
 ### delete_product
 
 Deletes the specified product.
@@ -674,6 +729,8 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_provisioned_product_plan"></a>
 
 ### delete_provisioned_product_plan
 
@@ -695,6 +752,8 @@ Keyword-only arguments:
 - `IgnoreErrors`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_provisioning_artifact"></a>
 
 ### delete_provisioning_artifact
 
@@ -718,6 +777,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_service_action"></a>
+
 ### delete_service_action
 
 Deletes a self-service action.
@@ -738,6 +799,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_tag_option"></a>
+
 ### delete_tag_option
 
 Deletes the specified TagOption.
@@ -755,6 +818,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_constraint"></a>
 
 ### describe_constraint
 
@@ -777,6 +842,8 @@ Keyword-only arguments:
 Returns
 [DescribeConstraintOutputTypeDef](./type_defs.md#describeconstraintoutputtypedef).
 
+<a id="describe_copy_product_status"></a>
+
 ### describe_copy_product_status
 
 Gets the status of the specified copy product operation.
@@ -797,6 +864,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCopyProductStatusOutputTypeDef](./type_defs.md#describecopyproductstatusoutputtypedef).
+
+<a id="describe_portfolio"></a>
 
 ### describe_portfolio
 
@@ -819,6 +888,8 @@ Keyword-only arguments:
 Returns
 [DescribePortfolioOutputTypeDef](./type_defs.md#describeportfoliooutputtypedef).
 
+<a id="describe_portfolio_share_status"></a>
+
 ### describe_portfolio_share_status
 
 Gets the status of the specified portfolio share operation.
@@ -838,6 +909,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePortfolioShareStatusOutputTypeDef](./type_defs.md#describeportfoliosharestatusoutputtypedef).
+
+<a id="describe_portfolio_shares"></a>
 
 ### describe_portfolio_shares
 
@@ -865,6 +938,8 @@ Keyword-only arguments:
 Returns
 [DescribePortfolioSharesOutputTypeDef](./type_defs.md#describeportfoliosharesoutputtypedef).
 
+<a id="describe_product"></a>
+
 ### describe_product
 
 Gets information about the specified product.
@@ -885,6 +960,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProductOutputTypeDef](./type_defs.md#describeproductoutputtypedef).
+
+<a id="describe_product_as_admin"></a>
 
 ### describe_product_as_admin
 
@@ -909,6 +986,8 @@ Keyword-only arguments:
 Returns
 [DescribeProductAsAdminOutputTypeDef](./type_defs.md#describeproductasadminoutputtypedef).
 
+<a id="describe_product_view"></a>
+
 ### describe_product_view
 
 Gets information about the specified product.
@@ -929,6 +1008,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProductViewOutputTypeDef](./type_defs.md#describeproductviewoutputtypedef).
+
+<a id="describe_provisioned_product"></a>
 
 ### describe_provisioned_product
 
@@ -952,6 +1033,8 @@ Keyword-only arguments:
 Returns
 [DescribeProvisionedProductOutputTypeDef](./type_defs.md#describeprovisionedproductoutputtypedef).
 
+<a id="describe_provisioned_product_plan"></a>
+
 ### describe_provisioned_product_plan
 
 Gets information about the resource changes for the specified plan.
@@ -974,6 +1057,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProvisionedProductPlanOutputTypeDef](./type_defs.md#describeprovisionedproductplanoutputtypedef).
+
+<a id="describe_provisioning_artifact"></a>
 
 ### describe_provisioning_artifact
 
@@ -1000,6 +1085,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProvisioningArtifactOutputTypeDef](./type_defs.md#describeprovisioningartifactoutputtypedef).
+
+<a id="describe_provisioning_parameters"></a>
 
 ### describe_provisioning_parameters
 
@@ -1028,6 +1115,8 @@ Keyword-only arguments:
 Returns
 [DescribeProvisioningParametersOutputTypeDef](./type_defs.md#describeprovisioningparametersoutputtypedef).
 
+<a id="describe_record"></a>
+
 ### describe_record
 
 Gets information about the specified request operation.
@@ -1050,6 +1139,8 @@ Keyword-only arguments:
 Returns
 [DescribeRecordOutputTypeDef](./type_defs.md#describerecordoutputtypedef).
 
+<a id="describe_service_action"></a>
+
 ### describe_service_action
 
 Describes a self-service action.
@@ -1070,6 +1161,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeServiceActionOutputTypeDef](./type_defs.md#describeserviceactionoutputtypedef).
+
+<a id="describe_service_action_execution_parameters"></a>
 
 ### describe_service_action_execution_parameters
 
@@ -1095,6 +1188,8 @@ Keyword-only arguments:
 Returns
 [DescribeServiceActionExecutionParametersOutputTypeDef](./type_defs.md#describeserviceactionexecutionparametersoutputtypedef).
 
+<a id="describe_tag_option"></a>
+
 ### describe_tag_option
 
 Gets information about the specified TagOption.
@@ -1115,6 +1210,8 @@ Keyword-only arguments:
 Returns
 [DescribeTagOptionOutputTypeDef](./type_defs.md#describetagoptionoutputtypedef).
 
+<a id="disable_aws_organizations_access"></a>
+
 ### disable_aws_organizations_access
 
 Disable portfolio sharing through AWS Organizations feature.
@@ -1126,6 +1223,8 @@ Boto3 documentation:
 [ServiceCatalog.Client.disable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.disable_aws_organizations_access)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_budget_from_resource"></a>
 
 ### disassociate_budget_from_resource
 
@@ -1146,6 +1245,8 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_principal_from_portfolio"></a>
 
 ### disassociate_principal_from_portfolio
 
@@ -1168,6 +1269,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_product_from_portfolio"></a>
+
 ### disassociate_product_from_portfolio
 
 Disassociates the specified product from the specified portfolio.
@@ -1188,6 +1291,8 @@ Keyword-only arguments:
 - `AcceptLanguage`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_service_action_from_provisioning_artifact"></a>
 
 ### disassociate_service_action_from_provisioning_artifact
 
@@ -1213,6 +1318,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_tag_option_from_resource"></a>
+
 ### disassociate_tag_option_from_resource
 
 Disassociates the specified TagOption from the specified resource.
@@ -1233,6 +1340,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="enable_aws_organizations_access"></a>
+
 ### enable_aws_organizations_access
 
 Enable portfolio sharing feature through AWS Organizations.
@@ -1244,6 +1353,8 @@ Boto3 documentation:
 [ServiceCatalog.Client.enable_aws_organizations_access](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog.Client.enable_aws_organizations_access)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="execute_provisioned_product_plan"></a>
 
 ### execute_provisioned_product_plan
 
@@ -1267,6 +1378,8 @@ Keyword-only arguments:
 
 Returns
 [ExecuteProvisionedProductPlanOutputTypeDef](./type_defs.md#executeprovisionedproductplanoutputtypedef).
+
+<a id="execute_provisioned_product_service_action"></a>
 
 ### execute_provisioned_product_service_action
 
@@ -1293,6 +1406,8 @@ Keyword-only arguments:
 Returns
 [ExecuteProvisionedProductServiceActionOutputTypeDef](./type_defs.md#executeprovisionedproductserviceactionoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1312,6 +1427,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_aws_organizations_access_status"></a>
+
 ### get_aws_organizations_access_status
 
 Get the Access Status for AWS Organization portfolio share feature.
@@ -1324,6 +1441,8 @@ Boto3 documentation:
 
 Returns
 [GetAWSOrganizationsAccessStatusOutputTypeDef](./type_defs.md#getawsorganizationsaccessstatusoutputtypedef).
+
+<a id="get_provisioned_product_outputs"></a>
 
 ### get_provisioned_product_outputs
 
@@ -1352,6 +1471,8 @@ Keyword-only arguments:
 Returns
 [GetProvisionedProductOutputsOutputTypeDef](./type_defs.md#getprovisionedproductoutputsoutputtypedef).
 
+<a id="import_as_provisioned_product"></a>
+
 ### import_as_provisioned_product
 
 Requests the import of a resource as a Service Catalog provisioned product that
@@ -1378,6 +1499,8 @@ Keyword-only arguments:
 Returns
 [ImportAsProvisionedProductOutputTypeDef](./type_defs.md#importasprovisionedproductoutputtypedef).
 
+<a id="list_accepted_portfolio_shares"></a>
+
 ### list_accepted_portfolio_shares
 
 Lists all portfolios for which sharing was accepted by this account.
@@ -1402,6 +1525,8 @@ Keyword-only arguments:
 Returns
 [ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef).
 
+<a id="list_budgets_for_resource"></a>
+
 ### list_budgets_for_resource
 
 Lists all the budgets associated to the specified resource.
@@ -1424,6 +1549,8 @@ Keyword-only arguments:
 
 Returns
 [ListBudgetsForResourceOutputTypeDef](./type_defs.md#listbudgetsforresourceoutputtypedef).
+
+<a id="list_constraints_for_portfolio"></a>
 
 ### list_constraints_for_portfolio
 
@@ -1449,6 +1576,8 @@ Keyword-only arguments:
 Returns
 [ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef).
 
+<a id="list_launch_paths"></a>
+
 ### list_launch_paths
 
 Lists the paths to the specified product.
@@ -1470,6 +1599,8 @@ Keyword-only arguments:
 
 Returns
 [ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef).
+
+<a id="list_organization_portfolio_access"></a>
 
 ### list_organization_portfolio_access
 
@@ -1497,6 +1628,8 @@ Keyword-only arguments:
 Returns
 [ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef).
 
+<a id="list_portfolio_access"></a>
+
 ### list_portfolio_access
 
 Lists the account IDs that have access to the specified portfolio.
@@ -1521,6 +1654,8 @@ Keyword-only arguments:
 Returns
 [ListPortfolioAccessOutputTypeDef](./type_defs.md#listportfolioaccessoutputtypedef).
 
+<a id="list_portfolios"></a>
+
 ### list_portfolios
 
 Lists all portfolios in the catalog.
@@ -1541,6 +1676,8 @@ Keyword-only arguments:
 
 Returns
 [ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef).
+
+<a id="list_portfolios_for_product"></a>
 
 ### list_portfolios_for_product
 
@@ -1565,6 +1702,8 @@ Keyword-only arguments:
 Returns
 [ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef).
 
+<a id="list_principals_for_portfolio"></a>
+
 ### list_principals_for_portfolio
 
 Lists all principal ARNs associated with the specified portfolio.
@@ -1587,6 +1726,8 @@ Keyword-only arguments:
 
 Returns
 [ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef).
+
+<a id="list_provisioned_product_plans"></a>
 
 ### list_provisioned_product_plans
 
@@ -1614,6 +1755,8 @@ Keyword-only arguments:
 Returns
 [ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef).
 
+<a id="list_provisioning_artifacts"></a>
+
 ### list_provisioning_artifacts
 
 Lists all provisioning artifacts (also known as versions) for the specified
@@ -1635,6 +1778,8 @@ Keyword-only arguments:
 
 Returns
 [ListProvisioningArtifactsOutputTypeDef](./type_defs.md#listprovisioningartifactsoutputtypedef).
+
+<a id="list_provisioning_artifacts_for_service_action"></a>
 
 ### list_provisioning_artifacts_for_service_action
 
@@ -1660,6 +1805,8 @@ Keyword-only arguments:
 
 Returns
 [ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef).
+
+<a id="list_record_history"></a>
 
 ### list_record_history
 
@@ -1687,6 +1834,8 @@ Keyword-only arguments:
 Returns
 [ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef).
 
+<a id="list_resources_for_tag_option"></a>
+
 ### list_resources_for_tag_option
 
 Lists the resources associated with the specified TagOption.
@@ -1710,6 +1859,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef).
 
+<a id="list_service_actions"></a>
+
 ### list_service_actions
 
 Lists all self-service actions.
@@ -1731,6 +1882,8 @@ Keyword-only arguments:
 
 Returns
 [ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef).
+
+<a id="list_service_actions_for_provisioning_artifact"></a>
 
 ### list_service_actions_for_provisioning_artifact
 
@@ -1758,6 +1911,8 @@ Keyword-only arguments:
 Returns
 [ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef).
 
+<a id="list_stack_instances_for_provisioned_product"></a>
+
 ### list_stack_instances_for_provisioned_product
 
 Returns summary information about stack instances that are associated with the
@@ -1783,6 +1938,8 @@ Keyword-only arguments:
 Returns
 [ListStackInstancesForProvisionedProductOutputTypeDef](./type_defs.md#liststackinstancesforprovisionedproductoutputtypedef).
 
+<a id="list_tag_options"></a>
+
 ### list_tag_options
 
 Lists the specified TagOptions or all TagOptions.
@@ -1804,6 +1961,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef).
+
+<a id="provision_product"></a>
 
 ### provision_product
 
@@ -1838,6 +1997,8 @@ Keyword-only arguments:
 Returns
 [ProvisionProductOutputTypeDef](./type_defs.md#provisionproductoutputtypedef).
 
+<a id="reject_portfolio_share"></a>
+
 ### reject_portfolio_share
 
 Rejects an offer to share the specified portfolio.
@@ -1859,6 +2020,8 @@ Keyword-only arguments:
   [PortfolioShareTypeType](./literals.md#portfoliosharetypetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="scan_provisioned_products"></a>
 
 ### scan_provisioned_products
 
@@ -1883,6 +2046,8 @@ Keyword-only arguments:
 
 Returns
 [ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef).
+
+<a id="search_products"></a>
 
 ### search_products
 
@@ -1909,6 +2074,8 @@ Keyword-only arguments:
 
 Returns
 [SearchProductsOutputTypeDef](./type_defs.md#searchproductsoutputtypedef).
+
+<a id="search_products_as_admin"></a>
 
 ### search_products_as_admin
 
@@ -1941,6 +2108,8 @@ Keyword-only arguments:
 Returns
 [SearchProductsAsAdminOutputTypeDef](./type_defs.md#searchproductsasadminoutputtypedef).
 
+<a id="search_provisioned_products"></a>
+
 ### search_provisioned_products
 
 Gets information about the provisioned products that meet the specified
@@ -1971,6 +2140,8 @@ Keyword-only arguments:
 Returns
 [SearchProvisionedProductsOutputTypeDef](./type_defs.md#searchprovisionedproductsoutputtypedef).
 
+<a id="terminate_provisioned_product"></a>
+
 ### terminate_provisioned_product
 
 Terminates the specified provisioned product.
@@ -1996,6 +2167,8 @@ Keyword-only arguments:
 Returns
 [TerminateProvisionedProductOutputTypeDef](./type_defs.md#terminateprovisionedproductoutputtypedef).
 
+<a id="update_constraint"></a>
+
 ### update_constraint
 
 Updates the specified constraint.
@@ -2017,6 +2190,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConstraintOutputTypeDef](./type_defs.md#updateconstraintoutputtypedef).
+
+<a id="update_portfolio"></a>
 
 ### update_portfolio
 
@@ -2043,6 +2218,8 @@ Keyword-only arguments:
 Returns
 [UpdatePortfolioOutputTypeDef](./type_defs.md#updateportfoliooutputtypedef).
 
+<a id="update_portfolio_share"></a>
+
 ### update_portfolio_share
 
 Updates the specified portfolio share.
@@ -2067,6 +2244,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePortfolioShareOutputTypeDef](./type_defs.md#updateportfolioshareoutputtypedef).
+
+<a id="update_product"></a>
 
 ### update_product
 
@@ -2096,6 +2275,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProductOutputTypeDef](./type_defs.md#updateproductoutputtypedef).
+
+<a id="update_provisioned_product"></a>
 
 ### update_provisioned_product
 
@@ -2131,6 +2312,8 @@ Keyword-only arguments:
 Returns
 [UpdateProvisionedProductOutputTypeDef](./type_defs.md#updateprovisionedproductoutputtypedef).
 
+<a id="update_provisioned_product_properties"></a>
+
 ### update_provisioned_product_properties
 
 Requests updates to the properties of the specified provisioned product.
@@ -2155,6 +2338,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateProvisionedProductPropertiesOutputTypeDef](./type_defs.md#updateprovisionedproductpropertiesoutputtypedef).
+
+<a id="update_provisioning_artifact"></a>
 
 ### update_provisioning_artifact
 
@@ -2184,6 +2369,8 @@ Keyword-only arguments:
 Returns
 [UpdateProvisioningArtifactOutputTypeDef](./type_defs.md#updateprovisioningartifactoutputtypedef).
 
+<a id="update_service_action"></a>
+
 ### update_service_action
 
 Updates a self-service action.
@@ -2210,6 +2397,8 @@ Keyword-only arguments:
 Returns
 [UpdateServiceActionOutputTypeDef](./type_defs.md#updateserviceactionoutputtypedef).
 
+<a id="update_tag_option"></a>
+
 ### update_tag_option
 
 Updates the specified TagOption.
@@ -2230,6 +2419,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTagOptionOutputTypeDef](./type_defs.md#updatetagoptionoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

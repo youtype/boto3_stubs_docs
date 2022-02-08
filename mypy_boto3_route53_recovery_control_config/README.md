@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-route53recoverycontrolconfig-module"></a>
+
 # Type annotations for boto3 Route53RecoveryControlConfig module
 
 > [Index](..) > Route53RecoveryControlConfig
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
 type annotations stubs module
-[mypy_boto3_route53_recovery_control_config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
+[mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[route53-recovery-control-config]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[route53-recovery-control-config]'
+
+# standalone installation
 pip install mypy-boto3-route53-recovery-control-config
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-route53-recovery-control-config
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="route53recoverycontrolconfigclient"></a>
+
 ## Route53RecoveryControlConfigClient
 
 Type annotations for `boto3.client("route53-recovery-control-config")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_route53_recovery_control_config.client import Route53RecoveryControlConfigClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -60,6 +74,8 @@ from mypy_boto3_route53_recovery_control_config.client import Route53RecoveryCon
 - [update_routing_control](./client.md#update_routing_control)
 - [update_safety_rule](./client.md#update_safety_rule)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Route53RecoveryControlConfigClient [exceptions](./client.md#exceptions)
@@ -73,6 +89,8 @@ Route53RecoveryControlConfigClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -81,7 +99,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_route53_recovery_control_config.waiters import ClusterCreatedWaiter, ...
+from mypy_boto3_route53_recovery_control_config.waiter import ClusterCreatedWaiter, ...
 ```
 
 - [ClusterCreatedWaiter](./waiters.md#clustercreatedwaiter)
@@ -90,6 +108,8 @@ from mypy_boto3_route53_recovery_control_config.waiters import ClusterCreatedWai
 - [ControlPanelDeletedWaiter](./waiters.md#controlpaneldeletedwaiter)
 - [RoutingControlCreatedWaiter](./waiters.md#routingcontrolcreatedwaiter)
 - [RoutingControlDeletedWaiter](./waiters.md#routingcontroldeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -111,6 +131,8 @@ from mypy_boto3_route53_recovery_control_config.literals import ClusterCreatedWa
 - [StatusType](./literals.md#statustype)
 - [ServiceName](./literals.md#servicename)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

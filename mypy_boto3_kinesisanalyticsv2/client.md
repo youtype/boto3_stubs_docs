@@ -1,3 +1,5 @@
+<a id="kinesisanalyticsv2client-for-boto3-kinesisanalyticsv2-module"></a>
+
 # KinesisAnalyticsV2Client for boto3 KinesisAnalyticsV2 module
 
 > [Index](..) > [KinesisAnalyticsV2](.) > KinesisAnalyticsV2Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
-[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+[mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [KinesisAnalyticsV2Client for boto3 KinesisAnalyticsV2 module](#kinesisanalyticsv2client-for-boto3-kinesisanalyticsv2-module)
   - [KinesisAnalyticsV2Client](#kinesisanalyticsv2client)
@@ -47,6 +49,8 @@ type annotations stubs module
     - [update_application_maintenance_configuration](#update_application_maintenance_configuration)
     - [get_paginator](#get_paginator)
 
+<a id="kinesisanalyticsv2client"></a>
+
 ## KinesisAnalyticsV2Client
 
 Type annotations for `boto3.client("kinesisanalyticsv2")`
@@ -54,14 +58,17 @@ Type annotations for `boto3.client("kinesisanalyticsv2")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesisanalyticsv2.client import KinesisAnalyticsV2Client
 
 def get_kinesisanalyticsv2_client() -> KinesisAnalyticsV2Client:
-    return boto3.client("kinesisanalyticsv2")
+    return Session().client("kinesisanalyticsv2")
 ```
 
 Boto3 documentation:
 [KinesisAnalyticsV2.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -92,7 +99,11 @@ Exceptions:
 - `Exceptions.UnableToDetectSchemaException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -104,6 +115,8 @@ Boto3 documentation:
 [KinesisAnalyticsV2.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_application_cloud_watch_logging_option"></a>
 
 ### add_application_cloud_watch_logging_option
 
@@ -132,6 +145,8 @@ Keyword-only arguments:
 Returns
 [AddApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionresponsetypedef).
 
+<a id="add_application_input"></a>
+
 ### add_application_input
 
 Adds a streaming source to your SQL-based Kinesis Data Analytics application.
@@ -153,6 +168,8 @@ Keyword-only arguments:
 
 Returns
 [AddApplicationInputResponseTypeDef](./type_defs.md#addapplicationinputresponsetypedef).
+
+<a id="add_application_input_processing_configuration"></a>
 
 ### add_application_input_processing_configuration
 
@@ -181,6 +198,8 @@ Keyword-only arguments:
 Returns
 [AddApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationresponsetypedef).
 
+<a id="add_application_output"></a>
+
 ### add_application_output
 
 Adds an external destination to your SQL-based Kinesis Data Analytics
@@ -203,6 +222,8 @@ Keyword-only arguments:
 
 Returns
 [AddApplicationOutputResponseTypeDef](./type_defs.md#addapplicationoutputresponsetypedef).
+
+<a id="add_application_reference_data_source"></a>
 
 ### add_application_reference_data_source
 
@@ -230,6 +251,8 @@ Keyword-only arguments:
 Returns
 [AddApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#addapplicationreferencedatasourceresponsetypedef).
 
+<a id="add_application_vpc_configuration"></a>
+
 ### add_application_vpc_configuration
 
 Adds a Virtual Private Cloud (VPC) configuration to the application.
@@ -255,6 +278,8 @@ Keyword-only arguments:
 Returns
 [AddApplicationVpcConfigurationResponseTypeDef](./type_defs.md#addapplicationvpcconfigurationresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -269,6 +294,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -300,6 +327,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="create_application_presigned_url"></a>
+
 ### create_application_presigned_url
 
 Creates and returns a URL that you can use to connect to an application's
@@ -323,6 +352,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationPresignedUrlResponseTypeDef](./type_defs.md#createapplicationpresignedurlresponsetypedef).
 
+<a id="create_application_snapshot"></a>
+
 ### create_application_snapshot
 
 Creates a snapshot of the application's state data.
@@ -343,6 +374,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes the specified application.
@@ -362,6 +395,8 @@ Keyword-only arguments:
 - `CreateTimestamp`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_application_cloud_watch_logging_option"></a>
 
 ### delete_application_cloud_watch_logging_option
 
@@ -388,6 +423,8 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionresponsetypedef).
 
+<a id="delete_application_input_processing_configuration"></a>
+
 ### delete_application_input_processing_configuration
 
 Deletes an InputProcessingConfiguration from an input.
@@ -411,6 +448,8 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationresponsetypedef).
 
+<a id="delete_application_output"></a>
+
 ### delete_application_output
 
 Deletes the output destination configuration from your SQL-based Kinesis Data
@@ -433,6 +472,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteApplicationOutputResponseTypeDef](./type_defs.md#deleteapplicationoutputresponsetypedef).
+
+<a id="delete_application_reference_data_source"></a>
 
 ### delete_application_reference_data_source
 
@@ -458,6 +499,8 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#deleteapplicationreferencedatasourceresponsetypedef).
 
+<a id="delete_application_snapshot"></a>
+
 ### delete_application_snapshot
 
 Deletes a snapshot of application state.
@@ -478,6 +521,8 @@ Keyword-only arguments:
 - `SnapshotCreationTimestamp`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_application_vpc_configuration"></a>
 
 ### delete_application_vpc_configuration
 
@@ -503,6 +548,8 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationVpcConfigurationResponseTypeDef](./type_defs.md#deleteapplicationvpcconfigurationresponsetypedef).
 
+<a id="describe_application"></a>
+
 ### describe_application
 
 Returns information about a specific Kinesis Data Analytics application.
@@ -523,6 +570,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
+
+<a id="describe_application_snapshot"></a>
 
 ### describe_application_snapshot
 
@@ -545,6 +594,8 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationSnapshotResponseTypeDef](./type_defs.md#describeapplicationsnapshotresponsetypedef).
 
+<a id="describe_application_version"></a>
+
 ### describe_application_version
 
 Provides a detailed description of a specified version of the application.
@@ -565,6 +616,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationVersionResponseTypeDef](./type_defs.md#describeapplicationversionresponsetypedef).
+
+<a id="discover_input_schema"></a>
 
 ### discover_input_schema
 
@@ -595,6 +648,8 @@ Keyword-only arguments:
 Returns
 [DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -613,6 +668,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_application_snapshots"></a>
 
 ### list_application_snapshots
 
@@ -635,6 +692,8 @@ Keyword-only arguments:
 
 Returns
 [ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef).
+
+<a id="list_application_versions"></a>
 
 ### list_application_versions
 
@@ -659,6 +718,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
 
+<a id="list_applications"></a>
+
 ### list_applications
 
 Returns a list of Kinesis Data Analytics applications in your account.
@@ -680,6 +741,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the list of key-value tags assigned to the application.
@@ -699,6 +762,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="rollback_application"></a>
 
 ### rollback_application
 
@@ -721,6 +786,8 @@ Keyword-only arguments:
 Returns
 [RollbackApplicationResponseTypeDef](./type_defs.md#rollbackapplicationresponsetypedef).
 
+<a id="start_application"></a>
+
 ### start_application
 
 Starts the specified Kinesis Data Analytics application.
@@ -742,6 +809,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_application"></a>
+
 ### stop_application
 
 Stops the application from processing data.
@@ -762,6 +831,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more key-value tags to a Kinesis Data Analytics application.
@@ -780,6 +851,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -800,6 +873,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -830,6 +905,8 @@ Keyword-only arguments:
 Returns
 [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
+<a id="update_application_maintenance_configuration"></a>
+
 ### update_application_maintenance_configuration
 
 Updates the maintenance configuration of the Kinesis Data Analytics
@@ -854,6 +931,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateApplicationMaintenanceConfigurationResponseTypeDef](./type_defs.md#updateapplicationmaintenanceconfigurationresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

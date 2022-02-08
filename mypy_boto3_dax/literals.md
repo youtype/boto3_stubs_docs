@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-dax-module"></a>
+
 # Literals for boto3 DAX module
 
 > [Index](..) > [DAX](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
 type annotations stubs module
-[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 - [Literals for boto3 DAX module](#literals-for-boto3-dax-module)
   - [ChangeTypeType](#changetypetype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="changetypetype"></a>
+
 ## ChangeTypeType
 
 ```python
@@ -34,6 +38,8 @@ Values:
 
 - `IMMEDIATE`
 - `REQUIRES_REBOOT`
+
+<a id="clusterendpointencryptiontypetype"></a>
 
 ## ClusterEndpointEncryptionTypeType
 
@@ -46,6 +52,8 @@ Values:
 - `NONE`
 - `TLS`
 
+<a id="describeclusterspaginatorname"></a>
+
 ## DescribeClustersPaginatorName
 
 ```python
@@ -55,6 +63,8 @@ from mypy_boto3_dax.literals import DescribeClustersPaginatorName
 Values:
 
 - `describe_clusters`
+
+<a id="describedefaultparameterspaginatorname"></a>
 
 ## DescribeDefaultParametersPaginatorName
 
@@ -66,6 +76,8 @@ Values:
 
 - `describe_default_parameters`
 
+<a id="describeeventspaginatorname"></a>
+
 ## DescribeEventsPaginatorName
 
 ```python
@@ -75,6 +87,8 @@ from mypy_boto3_dax.literals import DescribeEventsPaginatorName
 Values:
 
 - `describe_events`
+
+<a id="describeparametergroupspaginatorname"></a>
 
 ## DescribeParameterGroupsPaginatorName
 
@@ -86,6 +100,8 @@ Values:
 
 - `describe_parameter_groups`
 
+<a id="describeparameterspaginatorname"></a>
+
 ## DescribeParametersPaginatorName
 
 ```python
@@ -96,6 +112,8 @@ Values:
 
 - `describe_parameters`
 
+<a id="describesubnetgroupspaginatorname"></a>
+
 ## DescribeSubnetGroupsPaginatorName
 
 ```python
@@ -105,6 +123,8 @@ from mypy_boto3_dax.literals import DescribeSubnetGroupsPaginatorName
 Values:
 
 - `describe_subnet_groups`
+
+<a id="ismodifiabletype"></a>
 
 ## IsModifiableType
 
@@ -118,6 +138,8 @@ Values:
 - `FALSE`
 - `TRUE`
 
+<a id="listtagspaginatorname"></a>
+
 ## ListTagsPaginatorName
 
 ```python
@@ -127,6 +149,8 @@ from mypy_boto3_dax.literals import ListTagsPaginatorName
 Values:
 
 - `list_tags`
+
+<a id="parametertypetype"></a>
 
 ## ParameterTypeType
 
@@ -138,6 +162,8 @@ Values:
 
 - `DEFAULT`
 - `NODE_TYPE_SPECIFIC`
+
+<a id="ssestatustype"></a>
 
 ## SSEStatusType
 
@@ -152,6 +178,8 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
+<a id="sourcetypetype"></a>
+
 ## SourceTypeType
 
 ```python
@@ -163,6 +191,8 @@ Values:
 - `CLUSTER`
 - `PARAMETER_GROUP`
 - `SUBNET_GROUP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -471,6 +501,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="workmailclient-for-boto3-workmail-module"></a>
+
 # WorkMailClient for boto3 WorkMail module
 
 > [Index](..) > [WorkMail](.) > WorkMailClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
 type annotations stubs module
-[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 - [WorkMailClient for boto3 WorkMail module](#workmailclient-for-boto3-workmail-module)
   - [WorkMailClient](#workmailclient)
@@ -84,6 +86,8 @@ type annotations stubs module
     - [update_resource](#update_resource)
     - [get_paginator](#get_paginator)
 
+<a id="workmailclient"></a>
+
 ## WorkMailClient
 
 Type annotations for `boto3.client("workmail")`
@@ -91,14 +95,17 @@ Type annotations for `boto3.client("workmail")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_workmail.client import WorkMailClient
 
 def get_workmail_client() -> WorkMailClient:
-    return boto3.client("workmail")
+    return Session().client("workmail")
 ```
 
 Boto3 documentation:
 [WorkMail.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -138,7 +145,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -150,6 +161,8 @@ Boto3 documentation:
 [WorkMail.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_delegate_to_resource"></a>
 
 ### associate_delegate_to_resource
 
@@ -172,6 +185,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_member_to_group"></a>
+
 ### associate_member_to_group
 
 Adds a member (user or group) to the group's set.
@@ -193,6 +208,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -207,6 +224,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_mailbox_export_job"></a>
 
 ### cancel_mailbox_export_job
 
@@ -229,6 +248,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_alias"></a>
+
 ### create_alias
 
 Adds an alias to the set of a given member (user or group) of Amazon WorkMail.
@@ -248,6 +269,8 @@ Keyword-only arguments:
 - `Alias`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_group"></a>
 
 ### create_group
 
@@ -269,6 +292,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+
+<a id="create_mobile_device_access_rule"></a>
 
 ### create_mobile_device_access_rule
 
@@ -305,6 +330,8 @@ Keyword-only arguments:
 Returns
 [CreateMobileDeviceAccessRuleResponseTypeDef](./type_defs.md#createmobiledeviceaccessruleresponsetypedef).
 
+<a id="create_organization"></a>
+
 ### create_organization
 
 Creates a new Amazon WorkMail organization.
@@ -329,6 +356,8 @@ Keyword-only arguments:
 Returns
 [CreateOrganizationResponseTypeDef](./type_defs.md#createorganizationresponsetypedef).
 
+<a id="create_resource"></a>
+
 ### create_resource
 
 Creates a new Amazon WorkMail resource.
@@ -349,6 +378,8 @@ Keyword-only arguments:
 
 Returns
 [CreateResourceResponseTypeDef](./type_defs.md#createresourceresponsetypedef).
+
+<a id="create_user"></a>
 
 ### create_user
 
@@ -372,6 +403,8 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
+<a id="delete_access_control_rule"></a>
+
 ### delete_access_control_rule
 
 Deletes an access control rule for the specified WorkMail organization.
@@ -391,6 +424,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_alias"></a>
 
 ### delete_alias
 
@@ -412,6 +447,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_email_monitoring_configuration"></a>
+
 ### delete_email_monitoring_configuration
 
 Deletes the email monitoring configuration for a specified organization.
@@ -431,6 +468,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_group"></a>
+
 ### delete_group
 
 Deletes a group from Amazon WorkMail.
@@ -449,6 +488,8 @@ Keyword-only arguments:
 - `GroupId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_mailbox_permissions"></a>
 
 ### delete_mailbox_permissions
 
@@ -470,6 +511,8 @@ Keyword-only arguments:
 - `GranteeId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_mobile_device_access_override"></a>
 
 ### delete_mobile_device_access_override
 
@@ -493,6 +536,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_mobile_device_access_rule"></a>
+
 ### delete_mobile_device_access_rule
 
 Deletes a mobile device access rule for the specified Amazon WorkMail
@@ -513,6 +558,8 @@ Keyword-only arguments:
 - `MobileDeviceAccessRuleId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_organization"></a>
 
 ### delete_organization
 
@@ -536,6 +583,8 @@ Keyword-only arguments:
 Returns
 [DeleteOrganizationResponseTypeDef](./type_defs.md#deleteorganizationresponsetypedef).
 
+<a id="delete_resource"></a>
+
 ### delete_resource
 
 Deletes the specified resource.
@@ -554,6 +603,8 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_retention_policy"></a>
 
 ### delete_retention_policy
 
@@ -574,6 +625,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Deletes a user from Amazon WorkMail and all subsequent systems.
@@ -592,6 +645,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_from_work_mail"></a>
 
 ### deregister_from_work_mail
 
@@ -613,6 +668,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_mail_domain"></a>
+
 ### deregister_mail_domain
 
 Removes a domain from Amazon WorkMail, stops email routing to WorkMail, and
@@ -632,6 +689,8 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_email_monitoring_configuration"></a>
 
 ### describe_email_monitoring_configuration
 
@@ -654,6 +713,8 @@ Keyword-only arguments:
 Returns
 [DescribeEmailMonitoringConfigurationResponseTypeDef](./type_defs.md#describeemailmonitoringconfigurationresponsetypedef).
 
+<a id="describe_group"></a>
+
 ### describe_group
 
 Returns the data available for the group.
@@ -674,6 +735,8 @@ Keyword-only arguments:
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
+<a id="describe_inbound_dmarc_settings"></a>
+
 ### describe_inbound_dmarc_settings
 
 Lists the settings in a DMARC policy for a specified organization.
@@ -693,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInboundDmarcSettingsResponseTypeDef](./type_defs.md#describeinbounddmarcsettingsresponsetypedef).
+
+<a id="describe_mailbox_export_job"></a>
 
 ### describe_mailbox_export_job
 
@@ -715,6 +780,8 @@ Keyword-only arguments:
 Returns
 [DescribeMailboxExportJobResponseTypeDef](./type_defs.md#describemailboxexportjobresponsetypedef).
 
+<a id="describe_organization"></a>
+
 ### describe_organization
 
 Provides more information regarding a given organization based on its
@@ -734,6 +801,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOrganizationResponseTypeDef](./type_defs.md#describeorganizationresponsetypedef).
+
+<a id="describe_resource"></a>
 
 ### describe_resource
 
@@ -755,6 +824,8 @@ Keyword-only arguments:
 Returns
 [DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
+<a id="describe_user"></a>
+
 ### describe_user
 
 Provides information regarding the user.
@@ -774,6 +845,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+
+<a id="disassociate_delegate_from_resource"></a>
 
 ### disassociate_delegate_from_resource
 
@@ -796,6 +869,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_member_from_group"></a>
+
 ### disassociate_member_from_group
 
 Removes a member from a group.
@@ -817,6 +892,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -834,6 +911,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_access_control_effect"></a>
 
 ### get_access_control_effect
 
@@ -859,6 +938,8 @@ Keyword-only arguments:
 Returns
 [GetAccessControlEffectResponseTypeDef](./type_defs.md#getaccesscontroleffectresponsetypedef).
 
+<a id="get_default_retention_policy"></a>
+
 ### get_default_retention_policy
 
 Gets the default retention policy details for the specified organization.
@@ -878,6 +959,8 @@ Keyword-only arguments:
 
 Returns
 [GetDefaultRetentionPolicyResponseTypeDef](./type_defs.md#getdefaultretentionpolicyresponsetypedef).
+
+<a id="get_mail_domain"></a>
 
 ### get_mail_domain
 
@@ -900,6 +983,8 @@ Keyword-only arguments:
 Returns
 [GetMailDomainResponseTypeDef](./type_defs.md#getmaildomainresponsetypedef).
 
+<a id="get_mailbox_details"></a>
+
 ### get_mailbox_details
 
 Requests a user's mailbox details for a specified organization and user.
@@ -919,6 +1004,8 @@ Keyword-only arguments:
 
 Returns
 [GetMailboxDetailsResponseTypeDef](./type_defs.md#getmailboxdetailsresponsetypedef).
+
+<a id="get_mobile_device_access_effect"></a>
 
 ### get_mobile_device_access_effect
 
@@ -945,6 +1032,8 @@ Keyword-only arguments:
 Returns
 [GetMobileDeviceAccessEffectResponseTypeDef](./type_defs.md#getmobiledeviceaccesseffectresponsetypedef).
 
+<a id="get_mobile_device_access_override"></a>
+
 ### get_mobile_device_access_override
 
 Gets the mobile device access override for the given WorkMail organization,
@@ -968,6 +1057,8 @@ Keyword-only arguments:
 Returns
 [GetMobileDeviceAccessOverrideResponseTypeDef](./type_defs.md#getmobiledeviceaccessoverrideresponsetypedef).
 
+<a id="list_access_control_rules"></a>
+
 ### list_access_control_rules
 
 Lists the access control rules for the specified organization.
@@ -987,6 +1078,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccessControlRulesResponseTypeDef](./type_defs.md#listaccesscontrolrulesresponsetypedef).
+
+<a id="list_aliases"></a>
 
 ### list_aliases
 
@@ -1010,6 +1103,8 @@ Keyword-only arguments:
 Returns
 [ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
+<a id="list_group_members"></a>
+
 ### list_group_members
 
 Returns an overview of the members of a group.
@@ -1032,6 +1127,8 @@ Keyword-only arguments:
 Returns
 [ListGroupMembersResponseTypeDef](./type_defs.md#listgroupmembersresponsetypedef).
 
+<a id="list_groups"></a>
+
 ### list_groups
 
 Returns summaries of the organization's groups.
@@ -1051,6 +1148,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+<a id="list_mail_domains"></a>
 
 ### list_mail_domains
 
@@ -1072,6 +1171,8 @@ Keyword-only arguments:
 
 Returns
 [ListMailDomainsResponseTypeDef](./type_defs.md#listmaildomainsresponsetypedef).
+
+<a id="list_mailbox_export_jobs"></a>
 
 ### list_mailbox_export_jobs
 
@@ -1096,6 +1197,8 @@ Keyword-only arguments:
 Returns
 [ListMailboxExportJobsResponseTypeDef](./type_defs.md#listmailboxexportjobsresponsetypedef).
 
+<a id="list_mailbox_permissions"></a>
+
 ### list_mailbox_permissions
 
 Lists the mailbox permissions associated with a user, group, or resource
@@ -1119,6 +1222,8 @@ Keyword-only arguments:
 
 Returns
 [ListMailboxPermissionsResponseTypeDef](./type_defs.md#listmailboxpermissionsresponsetypedef).
+
+<a id="list_mobile_device_access_overrides"></a>
 
 ### list_mobile_device_access_overrides
 
@@ -1145,6 +1250,8 @@ Keyword-only arguments:
 Returns
 [ListMobileDeviceAccessOverridesResponseTypeDef](./type_defs.md#listmobiledeviceaccessoverridesresponsetypedef).
 
+<a id="list_mobile_device_access_rules"></a>
+
 ### list_mobile_device_access_rules
 
 Lists the mobile device access rules for the specified Amazon WorkMail
@@ -1166,6 +1273,8 @@ Keyword-only arguments:
 Returns
 [ListMobileDeviceAccessRulesResponseTypeDef](./type_defs.md#listmobiledeviceaccessrulesresponsetypedef).
 
+<a id="list_organizations"></a>
+
 ### list_organizations
 
 Returns summaries of the customer's organizations.
@@ -1185,6 +1294,8 @@ Keyword-only arguments:
 
 Returns
 [ListOrganizationsResponseTypeDef](./type_defs.md#listorganizationsresponsetypedef).
+
+<a id="list_resource_delegates"></a>
 
 ### list_resource_delegates
 
@@ -1208,6 +1319,8 @@ Keyword-only arguments:
 Returns
 [ListResourceDelegatesResponseTypeDef](./type_defs.md#listresourcedelegatesresponsetypedef).
 
+<a id="list_resources"></a>
+
 ### list_resources
 
 Returns summaries of the organization's resources.
@@ -1229,6 +1342,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags applied to an Amazon WorkMail organization resource.
@@ -1247,6 +1362,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_users"></a>
 
 ### list_users
 
@@ -1267,6 +1384,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+
+<a id="put_access_control_rule"></a>
 
 ### put_access_control_rule
 
@@ -1297,6 +1416,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_email_monitoring_configuration"></a>
+
 ### put_email_monitoring_configuration
 
 Creates or updates the email monitoring configuration for a specified
@@ -1319,6 +1440,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_inbound_dmarc_settings"></a>
+
 ### put_inbound_dmarc_settings
 
 Enables or disables a DMARC policy for a given organization.
@@ -1338,6 +1461,8 @@ Keyword-only arguments:
 - `Enforced`: `bool` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_mailbox_permissions"></a>
 
 ### put_mailbox_permissions
 
@@ -1361,6 +1486,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_mobile_device_access_override"></a>
 
 ### put_mobile_device_access_override
 
@@ -1388,6 +1515,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_retention_policy"></a>
+
 ### put_retention_policy
 
 Puts a retention policy to the specified organization.
@@ -1412,6 +1541,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="register_mail_domain"></a>
+
 ### register_mail_domain
 
 Registers a new domain in Amazon WorkMail and SES, and configures it for use by
@@ -1432,6 +1563,8 @@ Keyword-only arguments:
 - `ClientToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="register_to_work_mail"></a>
 
 ### register_to_work_mail
 
@@ -1454,6 +1587,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="reset_password"></a>
+
 ### reset_password
 
 Allows the administrator to reset the password for a user.
@@ -1473,6 +1608,8 @@ Keyword-only arguments:
 - `Password`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_mailbox_export_job"></a>
 
 ### start_mailbox_export_job
 
@@ -1503,6 +1640,8 @@ Keyword-only arguments:
 Returns
 [StartMailboxExportJobResponseTypeDef](./type_defs.md#startmailboxexportjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies the specified tags to the specified Amazon WorkMail organization
@@ -1522,6 +1661,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -1543,6 +1684,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_default_mail_domain"></a>
+
 ### update_default_mail_domain
 
 Updates the default mail domain for an organization.
@@ -1563,6 +1706,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_mailbox_quota"></a>
+
 ### update_mailbox_quota
 
 Updates a user's current mailbox quota for a specified organization and user.
@@ -1582,6 +1727,8 @@ Keyword-only arguments:
 - `MailboxQuota`: `int` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_mobile_device_access_rule"></a>
 
 ### update_mobile_device_access_rule
 
@@ -1617,6 +1764,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_primary_email_address"></a>
+
 ### update_primary_email_address
 
 Updates the primary email for a user, group, or resource.
@@ -1637,6 +1786,8 @@ Keyword-only arguments:
 - `Email`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_resource"></a>
 
 ### update_resource
 
@@ -1659,6 +1810,8 @@ Keyword-only arguments:
   [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

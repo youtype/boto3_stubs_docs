@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-savingsplans-module"></a>
+
 # Typed dictionaries for boto3 SavingsPlans module
 
 > [Index](..) > [SavingsPlans](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
-[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+[mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 - [Typed dictionaries for boto3 SavingsPlans module](#typed-dictionaries-for-boto3-savingsplans-module)
   - [CreateSavingsPlanRequestRequestTypeDef](#createsavingsplanrequestrequesttypedef)
@@ -37,6 +39,8 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="createsavingsplanrequestrequesttypedef"></a>
+
 ## CreateSavingsPlanRequestRequestTypeDef
 
 ```python
@@ -55,6 +59,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createsavingsplanresponsetypedef"></a>
+
 ## CreateSavingsPlanResponseTypeDef
 
 ```python
@@ -67,6 +73,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletequeuedsavingsplanrequestrequesttypedef"></a>
+
 ## DeleteQueuedSavingsPlanRequestRequestTypeDef
 
 ```python
@@ -76,6 +84,8 @@ from mypy_boto3_savingsplans.type_defs import DeleteQueuedSavingsPlanRequestRequ
 Required fields:
 
 - `savingsPlanId`: `str`
+
+<a id="describesavingsplanratesrequestrequesttypedef"></a>
 
 ## DescribeSavingsPlanRatesRequestRequestTypeDef
 
@@ -94,6 +104,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describesavingsplanratesresponsetypedef"></a>
+
 ## DescribeSavingsPlanRatesResponseTypeDef
 
 ```python
@@ -108,6 +120,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesavingsplansofferingratesrequestrequesttypedef"></a>
 
 ## DescribeSavingsPlansOfferingRatesRequestRequestTypeDef
 
@@ -133,6 +147,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describesavingsplansofferingratesresponsetypedef"></a>
+
 ## DescribeSavingsPlansOfferingRatesResponseTypeDef
 
 ```python
@@ -146,6 +162,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesavingsplansofferingsrequestrequesttypedef"></a>
 
 ## DescribeSavingsPlansOfferingsRequestRequestTypeDef
 
@@ -174,6 +192,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="describesavingsplansofferingsresponsetypedef"></a>
+
 ## DescribeSavingsPlansOfferingsResponseTypeDef
 
 ```python
@@ -187,6 +207,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesavingsplansrequestrequesttypedef"></a>
 
 ## DescribeSavingsPlansRequestRequestTypeDef
 
@@ -205,6 +227,8 @@ Optional fields:
 - `filters`:
   `Sequence`\[[SavingsPlanFilterTypeDef](./type_defs.md#savingsplanfiltertypedef)\]
 
+<a id="describesavingsplansresponsetypedef"></a>
+
 ## DescribeSavingsPlansResponseTypeDef
 
 ```python
@@ -219,6 +243,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -228,6 +254,8 @@ from mypy_boto3_savingsplans.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -240,6 +268,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="parentsavingsplanofferingtypedef"></a>
 
 ## ParentSavingsPlanOfferingTypeDef
 
@@ -257,6 +287,8 @@ Optional fields:
 - `currency`: [CurrencyCodeType](./literals.md#currencycodetype)
 - `planDescription`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -271,6 +303,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="savingsplanfiltertypedef"></a>
+
 ## SavingsPlanFilterTypeDef
 
 ```python
@@ -282,6 +316,8 @@ Optional fields:
 - `name`:
   [SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype)
 - `values`: `Sequence`\[`str`\]
+
+<a id="savingsplanofferingfilterelementtypedef"></a>
 
 ## SavingsPlanOfferingFilterElementTypeDef
 
@@ -295,6 +331,8 @@ Optional fields:
   [SavingsPlanOfferingFilterAttributeType](./literals.md#savingsplanofferingfilterattributetype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="savingsplanofferingpropertytypedef"></a>
+
 ## SavingsPlanOfferingPropertyTypeDef
 
 ```python
@@ -306,6 +344,8 @@ Optional fields:
 - `name`:
   [SavingsPlanOfferingPropertyKeyType](./literals.md#savingsplanofferingpropertykeytype)
 - `value`: `str`
+
+<a id="savingsplanofferingratefilterelementtypedef"></a>
 
 ## SavingsPlanOfferingRateFilterElementTypeDef
 
@@ -319,6 +359,8 @@ Optional fields:
   [SavingsPlanRateFilterAttributeType](./literals.md#savingsplanratefilterattributetype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="savingsplanofferingratepropertytypedef"></a>
+
 ## SavingsPlanOfferingRatePropertyTypeDef
 
 ```python
@@ -329,6 +371,8 @@ Optional fields:
 
 - `name`: `str`
 - `value`: `str`
+
+<a id="savingsplanofferingratetypedef"></a>
 
 ## SavingsPlanOfferingRateTypeDef
 
@@ -350,6 +394,8 @@ Optional fields:
 - `operation`: `str`
 - `properties`:
   `List`\[[SavingsPlanOfferingRatePropertyTypeDef](./type_defs.md#savingsplanofferingratepropertytypedef)\]
+
+<a id="savingsplanofferingtypedef"></a>
 
 ## SavingsPlanOfferingTypeDef
 
@@ -374,6 +420,8 @@ Optional fields:
 - `properties`:
   `List`\[[SavingsPlanOfferingPropertyTypeDef](./type_defs.md#savingsplanofferingpropertytypedef)\]
 
+<a id="savingsplanratefiltertypedef"></a>
+
 ## SavingsPlanRateFilterTypeDef
 
 ```python
@@ -386,6 +434,8 @@ Optional fields:
   [SavingsPlanRateFilterNameType](./literals.md#savingsplanratefilternametype)
 - `values`: `Sequence`\[`str`\]
 
+<a id="savingsplanratepropertytypedef"></a>
+
 ## SavingsPlanRatePropertyTypeDef
 
 ```python
@@ -397,6 +447,8 @@ Optional fields:
 - `name`:
   [SavingsPlanRatePropertyKeyType](./literals.md#savingsplanratepropertykeytype)
 - `value`: `str`
+
+<a id="savingsplanratetypedef"></a>
 
 ## SavingsPlanRateTypeDef
 
@@ -417,6 +469,8 @@ Optional fields:
 - `operation`: `str`
 - `properties`:
   `List`\[[SavingsPlanRatePropertyTypeDef](./type_defs.md#savingsplanratepropertytypedef)\]
+
+<a id="savingsplantypedef"></a>
 
 ## SavingsPlanTypeDef
 
@@ -447,6 +501,8 @@ Optional fields:
 - `termDurationInSeconds`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -457,6 +513,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

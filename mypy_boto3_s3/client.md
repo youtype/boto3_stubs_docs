@@ -1,3 +1,5 @@
+<a id="s3client-for-boto3-s3-module"></a>
+
 # S3Client for boto3 S3 module
 
 > [Index](..) > [S3](.) > S3Client
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3)
 type annotations stubs module
-[mypy_boto3_s3](https://pypi.org/project/mypy-boto3-s3/).
+[mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
 - [S3Client for boto3 S3 module](#s3client-for-boto3-s3-module)
   - [S3Client](#s3client)
@@ -119,6 +121,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="s3client"></a>
+
 ## S3Client
 
 Type annotations for `boto3.client("s3")`
@@ -126,14 +130,17 @@ Type annotations for `boto3.client("s3")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_s3.client import S3Client
 
 def get_s3_client() -> S3Client:
-    return boto3.client("s3")
+    return Session().client("s3")
 ```
 
 Boto3 documentation:
 [S3.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -159,7 +166,11 @@ Exceptions:
 - `Exceptions.ObjectAlreadyInActiveTierError`
 - `Exceptions.ObjectNotInActiveTierError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -171,6 +182,8 @@ Boto3 documentation:
 [S3.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="abort_multipart_upload"></a>
 
 ### abort_multipart_upload
 
@@ -196,6 +209,8 @@ Keyword-only arguments:
 Returns
 [AbortMultipartUploadOutputTypeDef](./type_defs.md#abortmultipartuploadoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -210,6 +225,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_multipart_upload"></a>
 
 ### complete_multipart_upload
 
@@ -237,6 +254,8 @@ Keyword-only arguments:
 Returns
 [CompleteMultipartUploadOutputTypeDef](./type_defs.md#completemultipartuploadoutputtypedef).
 
+<a id="copy"></a>
+
 ### copy
 
 Copy an object from one S3 location to another.
@@ -259,6 +278,8 @@ Arguments:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `SourceClient`: `BaseClient`
 - `Config`: `TransferConfig`
+
+<a id="copy_object"></a>
 
 ### copy_object
 
@@ -323,6 +344,8 @@ Keyword-only arguments:
 
 Returns [CopyObjectOutputTypeDef](./type_defs.md#copyobjectoutputtypedef).
 
+<a id="create_bucket"></a>
+
 ### create_bucket
 
 Creates a new S3 bucket.
@@ -350,6 +373,8 @@ Keyword-only arguments:
 - `ObjectOwnership`: [ObjectOwnershipType](./literals.md#objectownershiptype)
 
 Returns [CreateBucketOutputTypeDef](./type_defs.md#createbucketoutputtypedef).
+
+<a id="create_multipart_upload"></a>
 
 ### create_multipart_upload
 
@@ -401,6 +426,8 @@ Keyword-only arguments:
 Returns
 [CreateMultipartUploadOutputTypeDef](./type_defs.md#createmultipartuploadoutputtypedef).
 
+<a id="delete_bucket"></a>
+
 ### delete_bucket
 
 Deletes the S3 bucket.
@@ -417,6 +444,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="delete_bucket_analytics_configuration"></a>
 
 ### delete_bucket_analytics_configuration
 
@@ -438,6 +467,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="delete_bucket_cors"></a>
+
 ### delete_bucket_cors
 
 Deletes the `cors` configuration information set for the bucket.
@@ -454,6 +485,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="delete_bucket_encryption"></a>
 
 ### delete_bucket_encryption
 
@@ -473,6 +506,8 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="delete_bucket_intelligent_tiering_configuration"></a>
+
 ### delete_bucket_intelligent_tiering_configuration
 
 Deletes the S3 Intelligent-Tiering configuration from the specified bucket.
@@ -490,6 +525,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Id`: `str` *(required)*
+
+<a id="delete_bucket_inventory_configuration"></a>
 
 ### delete_bucket_inventory_configuration
 
@@ -511,6 +548,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="delete_bucket_lifecycle"></a>
+
 ### delete_bucket_lifecycle
 
 Deletes the lifecycle configuration from the specified bucket.
@@ -527,6 +566,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="delete_bucket_metrics_configuration"></a>
 
 ### delete_bucket_metrics_configuration
 
@@ -548,6 +589,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="delete_bucket_ownership_controls"></a>
+
 ### delete_bucket_ownership_controls
 
 Removes `OwnershipControls` for an Amazon S3 bucket.
@@ -565,6 +608,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="delete_bucket_policy"></a>
 
 ### delete_bucket_policy
 
@@ -584,6 +629,8 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="delete_bucket_replication"></a>
+
 ### delete_bucket_replication
 
 Deletes the replication configuration from the bucket.
@@ -600,6 +647,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="delete_bucket_tagging"></a>
 
 ### delete_bucket_tagging
 
@@ -618,6 +667,8 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="delete_bucket_website"></a>
+
 ### delete_bucket_website
 
 This action removes the website configuration for a bucket.
@@ -634,6 +685,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="delete_object"></a>
 
 ### delete_object
 
@@ -661,6 +714,8 @@ Keyword-only arguments:
 
 Returns [DeleteObjectOutputTypeDef](./type_defs.md#deleteobjectoutputtypedef).
 
+<a id="delete_object_tagging"></a>
+
 ### delete_object_tagging
 
 Removes the entire tag set from the specified object.
@@ -682,6 +737,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteObjectTaggingOutputTypeDef](./type_defs.md#deleteobjecttaggingoutputtypedef).
+
+<a id="delete_objects"></a>
 
 ### delete_objects
 
@@ -709,6 +766,8 @@ Keyword-only arguments:
 Returns
 [DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
 
+<a id="delete_public_access_block"></a>
+
 ### delete_public_access_block
 
 Removes the `PublicAccessBlock` configuration for an Amazon S3 bucket.
@@ -725,6 +784,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="download_file"></a>
 
 ### download_file
 
@@ -747,6 +808,8 @@ Arguments:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="download_fileobj"></a>
+
 ### download_fileobj
 
 Download an object from S3 to a file-like object.
@@ -767,6 +830,8 @@ Arguments:
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
+
+<a id="generate_presigned_post"></a>
 
 ### generate_presigned_post
 
@@ -790,6 +855,8 @@ Arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -807,6 +874,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_bucket_accelerate_configuration"></a>
 
 ### get_bucket_accelerate_configuration
 
@@ -831,6 +900,8 @@ Keyword-only arguments:
 Returns
 [GetBucketAccelerateConfigurationOutputTypeDef](./type_defs.md#getbucketaccelerateconfigurationoutputtypedef).
 
+<a id="get_bucket_acl"></a>
+
 ### get_bucket_acl
 
 This implementation of the `GET` action uses the `acl` subresource to return
@@ -850,6 +921,8 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns [GetBucketAclOutputTypeDef](./type_defs.md#getbucketacloutputtypedef).
+
+<a id="get_bucket_analytics_configuration"></a>
 
 ### get_bucket_analytics_configuration
 
@@ -874,6 +947,8 @@ Keyword-only arguments:
 Returns
 [GetBucketAnalyticsConfigurationOutputTypeDef](./type_defs.md#getbucketanalyticsconfigurationoutputtypedef).
 
+<a id="get_bucket_cors"></a>
+
 ### get_bucket_cors
 
 Returns the cors configuration information set for the bucket.
@@ -893,6 +968,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketCorsOutputTypeDef](./type_defs.md#getbucketcorsoutputtypedef).
+
+<a id="get_bucket_encryption"></a>
 
 ### get_bucket_encryption
 
@@ -914,6 +991,8 @@ Keyword-only arguments:
 Returns
 [GetBucketEncryptionOutputTypeDef](./type_defs.md#getbucketencryptionoutputtypedef).
 
+<a id="get_bucket_intelligent_tiering_configuration"></a>
+
 ### get_bucket_intelligent_tiering_configuration
 
 Gets the S3 Intelligent-Tiering configuration from the specified bucket.
@@ -934,6 +1013,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketIntelligentTieringConfigurationOutputTypeDef](./type_defs.md#getbucketintelligenttieringconfigurationoutputtypedef).
+
+<a id="get_bucket_inventory_configuration"></a>
 
 ### get_bucket_inventory_configuration
 
@@ -958,6 +1039,8 @@ Keyword-only arguments:
 Returns
 [GetBucketInventoryConfigurationOutputTypeDef](./type_defs.md#getbucketinventoryconfigurationoutputtypedef).
 
+<a id="get_bucket_lifecycle"></a>
+
 ### get_bucket_lifecycle
 
 .
@@ -977,6 +1060,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketLifecycleOutputTypeDef](./type_defs.md#getbucketlifecycleoutputtypedef).
+
+<a id="get_bucket_lifecycle_configuration"></a>
 
 ### get_bucket_lifecycle_configuration
 
@@ -999,6 +1084,8 @@ Keyword-only arguments:
 Returns
 [GetBucketLifecycleConfigurationOutputTypeDef](./type_defs.md#getbucketlifecycleconfigurationoutputtypedef).
 
+<a id="get_bucket_location"></a>
+
 ### get_bucket_location
 
 Returns the Region the bucket resides in.
@@ -1018,6 +1105,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketLocationOutputTypeDef](./type_defs.md#getbucketlocationoutputtypedef).
+
+<a id="get_bucket_logging"></a>
 
 ### get_bucket_logging
 
@@ -1039,6 +1128,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketLoggingOutputTypeDef](./type_defs.md#getbucketloggingoutputtypedef).
+
+<a id="get_bucket_metrics_configuration"></a>
 
 ### get_bucket_metrics_configuration
 
@@ -1063,6 +1154,8 @@ Keyword-only arguments:
 Returns
 [GetBucketMetricsConfigurationOutputTypeDef](./type_defs.md#getbucketmetricsconfigurationoutputtypedef).
 
+<a id="get_bucket_notification"></a>
+
 ### get_bucket_notification
 
 No longer used, see
@@ -1085,6 +1178,8 @@ Keyword-only arguments:
 Returns
 [NotificationConfigurationDeprecatedResponseMetadataTypeDef](./type_defs.md#notificationconfigurationdeprecatedresponsemetadatatypedef).
 
+<a id="get_bucket_notification_configuration"></a>
+
 ### get_bucket_notification_configuration
 
 Returns the notification configuration of a bucket.
@@ -1106,6 +1201,8 @@ Keyword-only arguments:
 Returns
 [NotificationConfigurationResponseMetadataTypeDef](./type_defs.md#notificationconfigurationresponsemetadatatypedef).
 
+<a id="get_bucket_ownership_controls"></a>
+
 ### get_bucket_ownership_controls
 
 Retrieves `OwnershipControls` for an Amazon S3 bucket.
@@ -1126,6 +1223,8 @@ Keyword-only arguments:
 Returns
 [GetBucketOwnershipControlsOutputTypeDef](./type_defs.md#getbucketownershipcontrolsoutputtypedef).
 
+<a id="get_bucket_policy"></a>
+
 ### get_bucket_policy
 
 Returns the policy of a specified bucket.
@@ -1145,6 +1244,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketPolicyOutputTypeDef](./type_defs.md#getbucketpolicyoutputtypedef).
+
+<a id="get_bucket_policy_status"></a>
 
 ### get_bucket_policy_status
 
@@ -1167,6 +1268,8 @@ Keyword-only arguments:
 Returns
 [GetBucketPolicyStatusOutputTypeDef](./type_defs.md#getbucketpolicystatusoutputtypedef).
 
+<a id="get_bucket_replication"></a>
+
 ### get_bucket_replication
 
 Returns the replication configuration of a bucket.
@@ -1186,6 +1289,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketReplicationOutputTypeDef](./type_defs.md#getbucketreplicationoutputtypedef).
+
+<a id="get_bucket_request_payment"></a>
 
 ### get_bucket_request_payment
 
@@ -1207,6 +1312,8 @@ Keyword-only arguments:
 Returns
 [GetBucketRequestPaymentOutputTypeDef](./type_defs.md#getbucketrequestpaymentoutputtypedef).
 
+<a id="get_bucket_tagging"></a>
+
 ### get_bucket_tagging
 
 Returns the tag set associated with the bucket.
@@ -1226,6 +1333,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketTaggingOutputTypeDef](./type_defs.md#getbuckettaggingoutputtypedef).
+
+<a id="get_bucket_versioning"></a>
 
 ### get_bucket_versioning
 
@@ -1247,6 +1356,8 @@ Keyword-only arguments:
 Returns
 [GetBucketVersioningOutputTypeDef](./type_defs.md#getbucketversioningoutputtypedef).
 
+<a id="get_bucket_website"></a>
+
 ### get_bucket_website
 
 Returns the website configuration for a bucket.
@@ -1266,6 +1377,8 @@ Keyword-only arguments:
 
 Returns
 [GetBucketWebsiteOutputTypeDef](./type_defs.md#getbucketwebsiteoutputtypedef).
+
+<a id="get_object"></a>
 
 ### get_object
 
@@ -1305,6 +1418,8 @@ Keyword-only arguments:
 
 Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
+<a id="get_object_acl"></a>
+
 ### get_object_acl
 
 Returns the access control list (ACL) of an object.
@@ -1327,6 +1442,8 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns [GetObjectAclOutputTypeDef](./type_defs.md#getobjectacloutputtypedef).
+
+<a id="get_object_legal_hold"></a>
 
 ### get_object_legal_hold
 
@@ -1352,6 +1469,8 @@ Keyword-only arguments:
 Returns
 [GetObjectLegalHoldOutputTypeDef](./type_defs.md#getobjectlegalholdoutputtypedef).
 
+<a id="get_object_lock_configuration"></a>
+
 ### get_object_lock_configuration
 
 Gets the Object Lock configuration for a bucket.
@@ -1371,6 +1490,8 @@ Keyword-only arguments:
 
 Returns
 [GetObjectLockConfigurationOutputTypeDef](./type_defs.md#getobjectlockconfigurationoutputtypedef).
+
+<a id="get_object_retention"></a>
 
 ### get_object_retention
 
@@ -1396,6 +1517,8 @@ Keyword-only arguments:
 Returns
 [GetObjectRetentionOutputTypeDef](./type_defs.md#getobjectretentionoutputtypedef).
 
+<a id="get_object_tagging"></a>
+
 ### get_object_tagging
 
 Returns the tag-set of an object.
@@ -1420,6 +1543,8 @@ Keyword-only arguments:
 Returns
 [GetObjectTaggingOutputTypeDef](./type_defs.md#getobjecttaggingoutputtypedef).
 
+<a id="get_object_torrent"></a>
+
 ### get_object_torrent
 
 Returns torrent files from a bucket.
@@ -1443,6 +1568,8 @@ Keyword-only arguments:
 Returns
 [GetObjectTorrentOutputTypeDef](./type_defs.md#getobjecttorrentoutputtypedef).
 
+<a id="get_public_access_block"></a>
+
 ### get_public_access_block
 
 Retrieves the `PublicAccessBlock` configuration for an Amazon S3 bucket.
@@ -1463,6 +1590,8 @@ Keyword-only arguments:
 Returns
 [GetPublicAccessBlockOutputTypeDef](./type_defs.md#getpublicaccessblockoutputtypedef).
 
+<a id="head_bucket"></a>
+
 ### head_bucket
 
 This action is useful to determine if a bucket exists and you have permission
@@ -1480,6 +1609,8 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="head_object"></a>
 
 ### head_object
 
@@ -1514,6 +1645,8 @@ Keyword-only arguments:
 
 Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).
 
+<a id="list_bucket_analytics_configurations"></a>
+
 ### list_bucket_analytics_configurations
 
 Lists the analytics configurations for the bucket.
@@ -1536,6 +1669,8 @@ Keyword-only arguments:
 Returns
 [ListBucketAnalyticsConfigurationsOutputTypeDef](./type_defs.md#listbucketanalyticsconfigurationsoutputtypedef).
 
+<a id="list_bucket_intelligent_tiering_configurations"></a>
+
 ### list_bucket_intelligent_tiering_configurations
 
 Lists the S3 Intelligent-Tiering configuration from the specified bucket.
@@ -1556,6 +1691,8 @@ Keyword-only arguments:
 
 Returns
 [ListBucketIntelligentTieringConfigurationsOutputTypeDef](./type_defs.md#listbucketintelligenttieringconfigurationsoutputtypedef).
+
+<a id="list_bucket_inventory_configurations"></a>
 
 ### list_bucket_inventory_configurations
 
@@ -1579,6 +1716,8 @@ Keyword-only arguments:
 Returns
 [ListBucketInventoryConfigurationsOutputTypeDef](./type_defs.md#listbucketinventoryconfigurationsoutputtypedef).
 
+<a id="list_bucket_metrics_configurations"></a>
+
 ### list_bucket_metrics_configurations
 
 Lists the metrics configurations for the bucket.
@@ -1601,6 +1740,8 @@ Keyword-only arguments:
 Returns
 [ListBucketMetricsConfigurationsOutputTypeDef](./type_defs.md#listbucketmetricsconfigurationsoutputtypedef).
 
+<a id="list_buckets"></a>
+
 ### list_buckets
 
 Returns a list of all buckets owned by the authenticated sender of the request.
@@ -1611,6 +1752,8 @@ Boto3 documentation:
 [S3.Client.list_buckets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.list_buckets)
 
 Returns [ListBucketsOutputTypeDef](./type_defs.md#listbucketsoutputtypedef).
+
+<a id="list_multipart_uploads"></a>
 
 ### list_multipart_uploads
 
@@ -1639,6 +1782,8 @@ Keyword-only arguments:
 Returns
 [ListMultipartUploadsOutputTypeDef](./type_defs.md#listmultipartuploadsoutputtypedef).
 
+<a id="list_object_versions"></a>
+
 ### list_object_versions
 
 Returns metadata about all versions of the objects in a bucket.
@@ -1666,6 +1811,8 @@ Keyword-only arguments:
 Returns
 [ListObjectVersionsOutputTypeDef](./type_defs.md#listobjectversionsoutputtypedef).
 
+<a id="list_objects"></a>
+
 ### list_objects
 
 Returns some or all (up to 1,000) of the objects in a bucket.
@@ -1692,6 +1839,8 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns [ListObjectsOutputTypeDef](./type_defs.md#listobjectsoutputtypedef).
+
+<a id="list_objects_v2"></a>
 
 ### list_objects_v2
 
@@ -1723,6 +1872,8 @@ Keyword-only arguments:
 Returns
 [ListObjectsV2OutputTypeDef](./type_defs.md#listobjectsv2outputtypedef).
 
+<a id="list_parts"></a>
+
 ### list_parts
 
 Lists the parts that have been uploaded for a specific multipart upload.
@@ -1748,6 +1899,8 @@ Keyword-only arguments:
 
 Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
+<a id="put_bucket_accelerate_configuration"></a>
+
 ### put_bucket_accelerate_configuration
 
 Sets the accelerate configuration of an existing bucket.
@@ -1768,6 +1921,8 @@ Keyword-only arguments:
   [AccelerateConfigurationTypeDef](./type_defs.md#accelerateconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_acl"></a>
 
 ### put_bucket_acl
 
@@ -1794,6 +1949,8 @@ Keyword-only arguments:
 - `GrantWriteACP`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_analytics_configuration"></a>
+
 ### put_bucket_analytics_configuration
 
 Sets an analytics configuration for the bucket (specified by the analytics
@@ -1817,6 +1974,8 @@ Keyword-only arguments:
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_cors"></a>
+
 ### put_bucket_cors
 
 Sets the `cors` configuration for your bucket.
@@ -1836,6 +1995,8 @@ Keyword-only arguments:
   [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_encryption"></a>
 
 ### put_bucket_encryption
 
@@ -1859,6 +2020,8 @@ Keyword-only arguments:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_intelligent_tiering_configuration"></a>
+
 ### put_bucket_intelligent_tiering_configuration
 
 Puts a S3 Intelligent-Tiering configuration to the specified bucket.
@@ -1879,6 +2042,8 @@ Keyword-only arguments:
 - `IntelligentTieringConfiguration`:
   [IntelligentTieringConfigurationTypeDef](./type_defs.md#intelligenttieringconfigurationtypedef)
   *(required)*
+
+<a id="put_bucket_inventory_configuration"></a>
 
 ### put_bucket_inventory_configuration
 
@@ -1903,6 +2068,8 @@ Keyword-only arguments:
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_lifecycle"></a>
+
 ### put_bucket_lifecycle
 
 .
@@ -1921,6 +2088,8 @@ Keyword-only arguments:
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_lifecycle_configuration"></a>
 
 ### put_bucket_lifecycle_configuration
 
@@ -1943,6 +2112,8 @@ Keyword-only arguments:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_logging"></a>
+
 ### put_bucket_logging
 
 Set the logging parameters for a bucket and to specify permissions for who can
@@ -1963,6 +2134,8 @@ Keyword-only arguments:
   [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_metrics_configuration"></a>
 
 ### put_bucket_metrics_configuration
 
@@ -1987,6 +2160,8 @@ Keyword-only arguments:
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_notification"></a>
+
 ### put_bucket_notification
 
 No longer used, see the
@@ -2008,6 +2183,8 @@ Keyword-only arguments:
   [NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_notification_configuration"></a>
 
 ### put_bucket_notification_configuration
 
@@ -2031,6 +2208,8 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 - `SkipDestinationValidation`: `bool`
 
+<a id="put_bucket_ownership_controls"></a>
+
 ### put_bucket_ownership_controls
 
 Creates or modifies `OwnershipControls` for an Amazon S3 bucket.
@@ -2052,6 +2231,8 @@ Keyword-only arguments:
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_policy"></a>
+
 ### put_bucket_policy
 
 Applies an Amazon S3 bucket policy to an Amazon S3 bucket.
@@ -2070,6 +2251,8 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_replication"></a>
 
 ### put_bucket_replication
 
@@ -2092,6 +2275,8 @@ Keyword-only arguments:
 - `Token`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_request_payment"></a>
+
 ### put_bucket_request_payment
 
 Sets the request payment configuration for a bucket.
@@ -2112,6 +2297,8 @@ Keyword-only arguments:
   *(required)*
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_tagging"></a>
+
 ### put_bucket_tagging
 
 Sets the tags for a bucket.
@@ -2129,6 +2316,8 @@ Keyword-only arguments:
 - `Bucket`: `str` *(required)*
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_bucket_versioning"></a>
 
 ### put_bucket_versioning
 
@@ -2151,6 +2340,8 @@ Keyword-only arguments:
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
 
+<a id="put_bucket_website"></a>
+
 ### put_bucket_website
 
 Sets the configuration of the website that is specified in the `website`
@@ -2171,6 +2362,8 @@ Keyword-only arguments:
   [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
+
+<a id="put_object"></a>
 
 ### put_object
 
@@ -2224,6 +2417,8 @@ Keyword-only arguments:
 
 Returns [PutObjectOutputTypeDef](./type_defs.md#putobjectoutputtypedef).
 
+<a id="put_object_acl"></a>
+
 ### put_object_acl
 
 Uses the `acl` subresource to set the access control list (ACL) permissions for
@@ -2256,6 +2451,8 @@ Keyword-only arguments:
 
 Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
 
+<a id="put_object_legal_hold"></a>
+
 ### put_object_legal_hold
 
 Applies a Legal Hold configuration to the specified object.
@@ -2283,6 +2480,8 @@ Keyword-only arguments:
 Returns
 [PutObjectLegalHoldOutputTypeDef](./type_defs.md#putobjectlegalholdoutputtypedef).
 
+<a id="put_object_lock_configuration"></a>
+
 ### put_object_lock_configuration
 
 Places an Object Lock configuration on the specified bucket.
@@ -2308,6 +2507,8 @@ Keyword-only arguments:
 
 Returns
 [PutObjectLockConfigurationOutputTypeDef](./type_defs.md#putobjectlockconfigurationoutputtypedef).
+
+<a id="put_object_retention"></a>
 
 ### put_object_retention
 
@@ -2337,6 +2538,8 @@ Keyword-only arguments:
 Returns
 [PutObjectRetentionOutputTypeDef](./type_defs.md#putobjectretentionoutputtypedef).
 
+<a id="put_object_tagging"></a>
+
 ### put_object_tagging
 
 Sets the supplied tag-set to an object that already exists in a bucket.
@@ -2363,6 +2566,8 @@ Keyword-only arguments:
 Returns
 [PutObjectTaggingOutputTypeDef](./type_defs.md#putobjecttaggingoutputtypedef).
 
+<a id="put_public_access_block"></a>
+
 ### put_public_access_block
 
 Creates or modifies the `PublicAccessBlock` configuration for an Amazon S3
@@ -2384,6 +2589,8 @@ Keyword-only arguments:
   *(required)*
 - `ContentMD5`: `str`
 - `ExpectedBucketOwner`: `str`
+
+<a id="restore_object"></a>
 
 ### restore_object
 
@@ -2411,6 +2618,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreObjectOutputTypeDef](./type_defs.md#restoreobjectoutputtypedef).
+
+<a id="select_object_content"></a>
 
 ### select_object_content
 
@@ -2449,6 +2658,8 @@ Keyword-only arguments:
 Returns
 [SelectObjectContentOutputTypeDef](./type_defs.md#selectobjectcontentoutputtypedef).
 
+<a id="upload_file"></a>
+
 ### upload_file
 
 Upload a file to an S3 object.
@@ -2470,6 +2681,8 @@ Arguments:
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
 
+<a id="upload_fileobj"></a>
+
 ### upload_fileobj
 
 Upload a file-like object to S3.
@@ -2490,6 +2703,8 @@ Arguments:
 - `ExtraArgs`: `Dict`\[`str`, `Any`\]
 - `Callback`: `Callable`\[`...`, `Any`\]
 - `Config`: `TransferConfig`
+
+<a id="upload_part"></a>
 
 ### upload_part
 
@@ -2520,6 +2735,8 @@ Keyword-only arguments:
 - `ExpectedBucketOwner`: `str`
 
 Returns [UploadPartOutputTypeDef](./type_defs.md#uploadpartoutputtypedef).
+
+<a id="upload_part_copy"></a>
 
 ### upload_part_copy
 
@@ -2559,6 +2776,8 @@ Keyword-only arguments:
 
 Returns
 [UploadPartCopyOutputTypeDef](./type_defs.md#uploadpartcopyoutputtypedef).
+
+<a id="write_get_object_response"></a>
 
 ### write_get_object_response
 
@@ -2616,6 +2835,8 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `BucketKeyEnabled`: `bool`
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("s3").get_paginator` method with overloads.
@@ -2630,6 +2851,8 @@ Type annotations for `boto3.client("s3").get_paginator` method with overloads.
   [ListObjectsV2Paginator](./paginators.md#listobjectsv2paginator)
 - `client.get_paginator("list_parts")` ->
   [ListPartsPaginator](./paginators.md#listpartspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

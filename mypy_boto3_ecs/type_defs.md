@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ecs-module"></a>
+
 # Typed dictionaries for boto3 ECS module
 
 > [Index](..) > [ECS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ECS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ecs.html#ECS)
 type annotations stubs module
-[mypy_boto3_ecs](https://pypi.org/project/mypy-boto3-ecs/).
+[mypy-boto3-ecs](https://pypi.org/project/mypy-boto3-ecs/).
 
 - [Typed dictionaries for boto3 ECS module](#typed-dictionaries-for-boto3-ecs-module)
   - [AttachmentStateChangeTypeDef](#attachmentstatechangetypedef)
@@ -194,6 +196,8 @@ type annotations stubs module
   - [VolumeTypeDef](#volumetypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="attachmentstatechangetypedef"></a>
+
 ## AttachmentStateChangeTypeDef
 
 ```python
@@ -204,6 +208,8 @@ Required fields:
 
 - `attachmentArn`: `str`
 - `status`: `str`
+
+<a id="attachmenttypedef"></a>
 
 ## AttachmentTypeDef
 
@@ -218,6 +224,8 @@ Optional fields:
 - `status`: `str`
 - `details`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
+
+<a id="attributetypedef"></a>
 
 ## AttributeTypeDef
 
@@ -236,6 +244,8 @@ Optional fields:
   [TargetTypeType](./literals.md#targettypetype))
 - `targetId`: `str`
 
+<a id="autoscalinggroupprovidertypedef"></a>
+
 ## AutoScalingGroupProviderTypeDef
 
 ```python
@@ -253,6 +263,8 @@ Optional fields:
 - `managedTerminationProtection`:
   [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
 
+<a id="autoscalinggroupproviderupdatetypedef"></a>
+
 ## AutoScalingGroupProviderUpdateTypeDef
 
 ```python
@@ -265,6 +277,8 @@ Optional fields:
   [ManagedScalingTypeDef](./type_defs.md#managedscalingtypedef)
 - `managedTerminationProtection`:
   [ManagedTerminationProtectionType](./literals.md#managedterminationprotectiontype)
+
+<a id="awsvpcconfigurationtypedef"></a>
 
 ## AwsVpcConfigurationTypeDef
 
@@ -281,6 +295,8 @@ Optional fields:
 - `securityGroups`: `Sequence`\[`str`\]
 - `assignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
 
+<a id="capacityproviderstrategyitemtypedef"></a>
+
 ## CapacityProviderStrategyItemTypeDef
 
 ```python
@@ -295,6 +311,8 @@ Optional fields:
 
 - `weight`: `int`
 - `base`: `int`
+
+<a id="capacityprovidertypedef"></a>
 
 ## CapacityProviderTypeDef
 
@@ -315,6 +333,8 @@ Optional fields:
 - `updateStatusReason`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="clusterconfigurationtypedef"></a>
+
 ## ClusterConfigurationTypeDef
 
 ```python
@@ -325,6 +345,8 @@ Optional fields:
 
 - `executeCommandConfiguration`:
   [ExecuteCommandConfigurationTypeDef](./type_defs.md#executecommandconfigurationtypedef)
+
+<a id="clustersettingtypedef"></a>
 
 ## ClusterSettingTypeDef
 
@@ -337,6 +359,8 @@ Optional fields:
 - `name`: `Literal['containerInsights']` (see
   [ClusterSettingNameType](./literals.md#clustersettingnametype))
 - `value`: `str`
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -366,6 +390,8 @@ Optional fields:
 - `attachments`:
   `List`\[[AttachmentTypeDef](./type_defs.md#attachmenttypedef)\]
 - `attachmentsStatus`: `str`
+
+<a id="containerdefinitiontypedef"></a>
 
 ## ContainerDefinitionTypeDef
 
@@ -427,6 +453,8 @@ Optional fields:
 - `firelensConfiguration`:
   [FirelensConfigurationTypeDef](./type_defs.md#firelensconfigurationtypedef)
 
+<a id="containerdependencytypedef"></a>
+
 ## ContainerDependencyTypeDef
 
 ```python
@@ -437,6 +465,8 @@ Required fields:
 
 - `containerName`: `str`
 - `condition`: [ContainerConditionType](./literals.md#containerconditiontype)
+
+<a id="containerinstancehealthstatustypedef"></a>
 
 ## ContainerInstanceHealthStatusTypeDef
 
@@ -450,6 +480,8 @@ Optional fields:
   [InstanceHealthCheckStateType](./literals.md#instancehealthcheckstatetype)
 - `details`:
   `List`\[[InstanceHealthCheckResultTypeDef](./type_defs.md#instancehealthcheckresulttypedef)\]
+
+<a id="containerinstancetypedef"></a>
 
 ## ContainerInstanceTypeDef
 
@@ -483,6 +515,8 @@ Optional fields:
 - `healthStatus`:
   [ContainerInstanceHealthStatusTypeDef](./type_defs.md#containerinstancehealthstatustypedef)
 
+<a id="containeroverridetypedef"></a>
+
 ## ContainerOverrideTypeDef
 
 ```python
@@ -503,6 +537,8 @@ Optional fields:
 - `resourceRequirements`:
   `List`\[[ResourceRequirementTypeDef](./type_defs.md#resourcerequirementtypedef)\]
 
+<a id="containerstatechangetypedef"></a>
+
 ## ContainerStateChangeTypeDef
 
 ```python
@@ -519,6 +555,8 @@ Optional fields:
   `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 - `reason`: `str`
 - `status`: `str`
+
+<a id="containertypedef"></a>
 
 ## ContainerTypeDef
 
@@ -549,6 +587,8 @@ Optional fields:
 - `memoryReservation`: `str`
 - `gpuIds`: `List`\[`str`\]
 
+<a id="createcapacityproviderrequestrequesttypedef"></a>
+
 ## CreateCapacityProviderRequestRequestTypeDef
 
 ```python
@@ -565,6 +605,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcapacityproviderresponsetypedef"></a>
+
 ## CreateCapacityProviderResponseTypeDef
 
 ```python
@@ -577,6 +619,8 @@ Required fields:
   [CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createclusterrequestrequesttypedef"></a>
 
 ## CreateClusterRequestRequestTypeDef
 
@@ -596,6 +640,8 @@ Optional fields:
 - `defaultCapacityProviderStrategy`:
   `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -607,6 +653,8 @@ Required fields:
 - `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createservicerequestrequesttypedef"></a>
 
 ## CreateServiceRequestRequestTypeDef
 
@@ -651,6 +699,8 @@ Optional fields:
 - `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `enableExecuteCommand`: `bool`
 
+<a id="createserviceresponsetypedef"></a>
+
 ## CreateServiceResponseTypeDef
 
 ```python
@@ -662,6 +712,8 @@ Required fields:
 - `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtasksetrequestrequesttypedef"></a>
 
 ## CreateTaskSetRequestRequestTypeDef
 
@@ -692,6 +744,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtasksetresponsetypedef"></a>
+
 ## CreateTaskSetResponseTypeDef
 
 ```python
@@ -703,6 +757,8 @@ Required fields:
 - `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteaccountsettingrequestrequesttypedef"></a>
 
 ## DeleteAccountSettingRequestRequestTypeDef
 
@@ -718,6 +774,8 @@ Optional fields:
 
 - `principalArn`: `str`
 
+<a id="deleteaccountsettingresponsetypedef"></a>
+
 ## DeleteAccountSettingResponseTypeDef
 
 ```python
@@ -729,6 +787,8 @@ Required fields:
 - `setting`: [SettingTypeDef](./type_defs.md#settingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteattributesrequestrequesttypedef"></a>
 
 ## DeleteAttributesRequestRequestTypeDef
 
@@ -745,6 +805,8 @@ Optional fields:
 
 - `cluster`: `str`
 
+<a id="deleteattributesresponsetypedef"></a>
+
 ## DeleteAttributesResponseTypeDef
 
 ```python
@@ -757,6 +819,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecapacityproviderrequestrequesttypedef"></a>
+
 ## DeleteCapacityProviderRequestRequestTypeDef
 
 ```python
@@ -766,6 +830,8 @@ from mypy_boto3_ecs.type_defs import DeleteCapacityProviderRequestRequestTypeDef
 Required fields:
 
 - `capacityProvider`: `str`
+
+<a id="deletecapacityproviderresponsetypedef"></a>
 
 ## DeleteCapacityProviderResponseTypeDef
 
@@ -780,6 +846,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteclusterrequestrequesttypedef"></a>
+
 ## DeleteClusterRequestRequestTypeDef
 
 ```python
@@ -789,6 +857,8 @@ from mypy_boto3_ecs.type_defs import DeleteClusterRequestRequestTypeDef
 Required fields:
 
 - `cluster`: `str`
+
+<a id="deleteclusterresponsetypedef"></a>
 
 ## DeleteClusterResponseTypeDef
 
@@ -801,6 +871,8 @@ Required fields:
 - `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteservicerequestrequesttypedef"></a>
 
 ## DeleteServiceRequestRequestTypeDef
 
@@ -817,6 +889,8 @@ Optional fields:
 - `cluster`: `str`
 - `force`: `bool`
 
+<a id="deleteserviceresponsetypedef"></a>
+
 ## DeleteServiceResponseTypeDef
 
 ```python
@@ -828,6 +902,8 @@ Required fields:
 - `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletetasksetrequestrequesttypedef"></a>
 
 ## DeleteTaskSetRequestRequestTypeDef
 
@@ -845,6 +921,8 @@ Optional fields:
 
 - `force`: `bool`
 
+<a id="deletetasksetresponsetypedef"></a>
+
 ## DeleteTaskSetResponseTypeDef
 
 ```python
@@ -857,6 +935,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deploymentcircuitbreakertypedef"></a>
+
 ## DeploymentCircuitBreakerTypeDef
 
 ```python
@@ -867,6 +947,8 @@ Required fields:
 
 - `enable`: `bool`
 - `rollback`: `bool`
+
+<a id="deploymentconfigurationtypedef"></a>
 
 ## DeploymentConfigurationTypeDef
 
@@ -881,6 +963,8 @@ Optional fields:
 - `maximumPercent`: `int`
 - `minimumHealthyPercent`: `int`
 
+<a id="deploymentcontrollertypedef"></a>
+
 ## DeploymentControllerTypeDef
 
 ```python
@@ -891,6 +975,8 @@ Required fields:
 
 - `type`:
   [DeploymentControllerTypeType](./literals.md#deploymentcontrollertypetype)
+
+<a id="deploymenttypedef"></a>
 
 ## DeploymentTypeDef
 
@@ -920,6 +1006,8 @@ Optional fields:
   [DeploymentRolloutStateType](./literals.md#deploymentrolloutstatetype)
 - `rolloutStateReason`: `str`
 
+<a id="deregistercontainerinstancerequestrequesttypedef"></a>
+
 ## DeregisterContainerInstanceRequestRequestTypeDef
 
 ```python
@@ -935,6 +1023,8 @@ Optional fields:
 - `cluster`: `str`
 - `force`: `bool`
 
+<a id="deregistercontainerinstanceresponsetypedef"></a>
+
 ## DeregisterContainerInstanceResponseTypeDef
 
 ```python
@@ -948,6 +1038,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deregistertaskdefinitionrequestrequesttypedef"></a>
+
 ## DeregisterTaskDefinitionRequestRequestTypeDef
 
 ```python
@@ -957,6 +1049,8 @@ from mypy_boto3_ecs.type_defs import DeregisterTaskDefinitionRequestRequestTypeD
 Required fields:
 
 - `taskDefinition`: `str`
+
+<a id="deregistertaskdefinitionresponsetypedef"></a>
 
 ## DeregisterTaskDefinitionResponseTypeDef
 
@@ -971,6 +1065,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecapacityprovidersrequestrequesttypedef"></a>
+
 ## DescribeCapacityProvidersRequestRequestTypeDef
 
 ```python
@@ -984,6 +1080,8 @@ Optional fields:
   [CapacityProviderFieldType](./literals.md#capacityproviderfieldtype))\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describecapacityprovidersresponsetypedef"></a>
 
 ## DescribeCapacityProvidersResponseTypeDef
 
@@ -1000,6 +1098,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclustersrequestrequesttypedef"></a>
+
 ## DescribeClustersRequestRequestTypeDef
 
 ```python
@@ -1010,6 +1110,8 @@ Optional fields:
 
 - `clusters`: `Sequence`\[`str`\]
 - `include`: `Sequence`\[[ClusterFieldType](./literals.md#clusterfieldtype)\]
+
+<a id="describeclustersresponsetypedef"></a>
 
 ## DescribeClustersResponseTypeDef
 
@@ -1023,6 +1125,8 @@ Required fields:
 - `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describecontainerinstancesrequestrequesttypedef"></a>
 
 ## DescribeContainerInstancesRequestRequestTypeDef
 
@@ -1040,6 +1144,8 @@ Optional fields:
 - `include`:
   `Sequence`\[[ContainerInstanceFieldType](./literals.md#containerinstancefieldtype)\]
 
+<a id="describecontainerinstancesresponsetypedef"></a>
+
 ## DescribeContainerInstancesResponseTypeDef
 
 ```python
@@ -1053,6 +1159,8 @@ Required fields:
 - `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeservicesrequestrequesttypedef"></a>
 
 ## DescribeServicesRequestRequestTypeDef
 
@@ -1070,6 +1178,8 @@ Optional fields:
 - `include`: `Sequence`\[`Literal['TAGS']` (see
   [ServiceFieldType](./literals.md#servicefieldtype))\]
 
+<a id="describeservicesresponsetypedef"></a>
+
 ## DescribeServicesResponseTypeDef
 
 ```python
@@ -1082,6 +1192,8 @@ Required fields:
 - `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetaskdefinitionrequestrequesttypedef"></a>
 
 ## DescribeTaskDefinitionRequestRequestTypeDef
 
@@ -1098,6 +1210,8 @@ Optional fields:
 - `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskDefinitionFieldType](./literals.md#taskdefinitionfieldtype))\]
 
+<a id="describetaskdefinitionresponsetypedef"></a>
+
 ## DescribeTaskDefinitionResponseTypeDef
 
 ```python
@@ -1111,6 +1225,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetasksetsrequestrequesttypedef"></a>
 
 ## DescribeTaskSetsRequestRequestTypeDef
 
@@ -1129,6 +1245,8 @@ Optional fields:
 - `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskSetFieldType](./literals.md#tasksetfieldtype))\]
 
+<a id="describetasksetsresponsetypedef"></a>
+
 ## DescribeTaskSetsResponseTypeDef
 
 ```python
@@ -1141,6 +1259,8 @@ Required fields:
 - `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetasksrequestrequesttypedef"></a>
 
 ## DescribeTasksRequestRequestTypeDef
 
@@ -1158,6 +1278,8 @@ Optional fields:
 - `include`: `Sequence`\[`Literal['TAGS']` (see
   [TaskFieldType](./literals.md#taskfieldtype))\]
 
+<a id="describetasksresponsetypedef"></a>
+
 ## DescribeTasksResponseTypeDef
 
 ```python
@@ -1170,6 +1292,8 @@ Required fields:
 - `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="devicetypedef"></a>
 
 ## DeviceTypeDef
 
@@ -1187,6 +1311,8 @@ Optional fields:
 - `permissions`:
   `List`\[[DeviceCgroupPermissionType](./literals.md#devicecgrouppermissiontype)\]
 
+<a id="discoverpollendpointrequestrequesttypedef"></a>
+
 ## DiscoverPollEndpointRequestRequestTypeDef
 
 ```python
@@ -1197,6 +1323,8 @@ Optional fields:
 
 - `containerInstance`: `str`
 - `cluster`: `str`
+
+<a id="discoverpollendpointresponsetypedef"></a>
 
 ## DiscoverPollEndpointResponseTypeDef
 
@@ -1210,6 +1338,8 @@ Required fields:
 - `telemetryEndpoint`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dockervolumeconfigurationtypedef"></a>
 
 ## DockerVolumeConfigurationTypeDef
 
@@ -1225,6 +1355,8 @@ Optional fields:
 - `driverOpts`: `Dict`\[`str`, `str`\]
 - `labels`: `Dict`\[`str`, `str`\]
 
+<a id="efsauthorizationconfigtypedef"></a>
+
 ## EFSAuthorizationConfigTypeDef
 
 ```python
@@ -1236,6 +1368,8 @@ Optional fields:
 - `accessPointId`: `str`
 - `iam`:
   [EFSAuthorizationConfigIAMType](./literals.md#efsauthorizationconfigiamtype)
+
+<a id="efsvolumeconfigurationtypedef"></a>
 
 ## EFSVolumeConfigurationTypeDef
 
@@ -1256,6 +1390,8 @@ Optional fields:
 - `authorizationConfig`:
   [EFSAuthorizationConfigTypeDef](./type_defs.md#efsauthorizationconfigtypedef)
 
+<a id="environmentfiletypedef"></a>
+
 ## EnvironmentFileTypeDef
 
 ```python
@@ -1268,6 +1404,8 @@ Required fields:
 - `type`: `Literal['s3']` (see
   [EnvironmentFileTypeType](./literals.md#environmentfiletypetype))
 
+<a id="ephemeralstoragetypedef"></a>
+
 ## EphemeralStorageTypeDef
 
 ```python
@@ -1277,6 +1415,8 @@ from mypy_boto3_ecs.type_defs import EphemeralStorageTypeDef
 Required fields:
 
 - `sizeInGiB`: `int`
+
+<a id="executecommandconfigurationtypedef"></a>
 
 ## ExecuteCommandConfigurationTypeDef
 
@@ -1292,6 +1432,8 @@ Optional fields:
 - `logConfiguration`:
   [ExecuteCommandLogConfigurationTypeDef](./type_defs.md#executecommandlogconfigurationtypedef)
 
+<a id="executecommandlogconfigurationtypedef"></a>
+
 ## ExecuteCommandLogConfigurationTypeDef
 
 ```python
@@ -1305,6 +1447,8 @@ Optional fields:
 - `s3BucketName`: `str`
 - `s3EncryptionEnabled`: `bool`
 - `s3KeyPrefix`: `str`
+
+<a id="executecommandrequestrequesttypedef"></a>
 
 ## ExecuteCommandRequestRequestTypeDef
 
@@ -1323,6 +1467,8 @@ Optional fields:
 - `cluster`: `str`
 - `container`: `str`
 
+<a id="executecommandresponsetypedef"></a>
+
 ## ExecuteCommandResponseTypeDef
 
 ```python
@@ -1340,6 +1486,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="fsxwindowsfileserverauthorizationconfigtypedef"></a>
+
 ## FSxWindowsFileServerAuthorizationConfigTypeDef
 
 ```python
@@ -1350,6 +1498,8 @@ Required fields:
 
 - `credentialsParameter`: `str`
 - `domain`: `str`
+
+<a id="fsxwindowsfileservervolumeconfigurationtypedef"></a>
 
 ## FSxWindowsFileServerVolumeConfigurationTypeDef
 
@@ -1364,6 +1514,8 @@ Required fields:
 - `authorizationConfig`:
   [FSxWindowsFileServerAuthorizationConfigTypeDef](./type_defs.md#fsxwindowsfileserverauthorizationconfigtypedef)
 
+<a id="failuretypedef"></a>
+
 ## FailureTypeDef
 
 ```python
@@ -1375,6 +1527,8 @@ Optional fields:
 - `arn`: `str`
 - `reason`: `str`
 - `detail`: `str`
+
+<a id="firelensconfigurationtypedef"></a>
 
 ## FirelensConfigurationTypeDef
 
@@ -1390,6 +1544,8 @@ Required fields:
 Optional fields:
 
 - `options`: `Dict`\[`str`, `str`\]
+
+<a id="healthchecktypedef"></a>
 
 ## HealthCheckTypeDef
 
@@ -1408,6 +1564,8 @@ Optional fields:
 - `retries`: `int`
 - `startPeriod`: `int`
 
+<a id="hostentrytypedef"></a>
+
 ## HostEntryTypeDef
 
 ```python
@@ -1419,6 +1577,8 @@ Required fields:
 - `hostname`: `str`
 - `ipAddress`: `str`
 
+<a id="hostvolumepropertiestypedef"></a>
+
 ## HostVolumePropertiesTypeDef
 
 ```python
@@ -1428,6 +1588,8 @@ from mypy_boto3_ecs.type_defs import HostVolumePropertiesTypeDef
 Optional fields:
 
 - `sourcePath`: `str`
+
+<a id="inferenceacceleratoroverridetypedef"></a>
 
 ## InferenceAcceleratorOverrideTypeDef
 
@@ -1440,6 +1602,8 @@ Optional fields:
 - `deviceName`: `str`
 - `deviceType`: `str`
 
+<a id="inferenceacceleratortypedef"></a>
+
 ## InferenceAcceleratorTypeDef
 
 ```python
@@ -1450,6 +1614,8 @@ Required fields:
 
 - `deviceName`: `str`
 - `deviceType`: `str`
+
+<a id="instancehealthcheckresulttypedef"></a>
 
 ## InstanceHealthCheckResultTypeDef
 
@@ -1466,6 +1632,8 @@ Optional fields:
 - `lastUpdated`: `datetime`
 - `lastStatusChange`: `datetime`
 
+<a id="kernelcapabilitiestypedef"></a>
+
 ## KernelCapabilitiesTypeDef
 
 ```python
@@ -1477,6 +1645,8 @@ Optional fields:
 - `add`: `List`\[`str`\]
 - `drop`: `List`\[`str`\]
 
+<a id="keyvaluepairtypedef"></a>
+
 ## KeyValuePairTypeDef
 
 ```python
@@ -1487,6 +1657,8 @@ Optional fields:
 
 - `name`: `str`
 - `value`: `str`
+
+<a id="linuxparameterstypedef"></a>
 
 ## LinuxParametersTypeDef
 
@@ -1505,6 +1677,8 @@ Optional fields:
 - `maxSwap`: `int`
 - `swappiness`: `int`
 
+<a id="listaccountsettingsrequestrequesttypedef"></a>
+
 ## ListAccountSettingsRequestRequestTypeDef
 
 ```python
@@ -1520,6 +1694,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listaccountsettingsresponsetypedef"></a>
+
 ## ListAccountSettingsResponseTypeDef
 
 ```python
@@ -1532,6 +1708,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listattributesrequestrequesttypedef"></a>
 
 ## ListAttributesRequestRequestTypeDef
 
@@ -1552,6 +1730,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listattributesresponsetypedef"></a>
+
 ## ListAttributesResponseTypeDef
 
 ```python
@@ -1565,6 +1745,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listclustersrequestrequesttypedef"></a>
+
 ## ListClustersRequestRequestTypeDef
 
 ```python
@@ -1575,6 +1757,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listclustersresponsetypedef"></a>
 
 ## ListClustersResponseTypeDef
 
@@ -1588,6 +1772,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcontainerinstancesrequestrequesttypedef"></a>
 
 ## ListContainerInstancesRequestRequestTypeDef
 
@@ -1604,6 +1790,8 @@ Optional fields:
 - `status`:
   [ContainerInstanceStatusType](./literals.md#containerinstancestatustype)
 
+<a id="listcontainerinstancesresponsetypedef"></a>
+
 ## ListContainerInstancesResponseTypeDef
 
 ```python
@@ -1616,6 +1804,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listservicesrequestrequesttypedef"></a>
 
 ## ListServicesRequestRequestTypeDef
 
@@ -1632,6 +1822,8 @@ Optional fields:
 - `schedulingStrategy`:
   [SchedulingStrategyType](./literals.md#schedulingstrategytype)
 
+<a id="listservicesresponsetypedef"></a>
+
 ## ListServicesResponseTypeDef
 
 ```python
@@ -1645,6 +1837,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1654,6 +1848,8 @@ from mypy_boto3_ecs.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1666,6 +1862,8 @@ Required fields:
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtaskdefinitionfamiliesrequestrequesttypedef"></a>
 
 ## ListTaskDefinitionFamiliesRequestRequestTypeDef
 
@@ -1681,6 +1879,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listtaskdefinitionfamiliesresponsetypedef"></a>
+
 ## ListTaskDefinitionFamiliesResponseTypeDef
 
 ```python
@@ -1693,6 +1893,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtaskdefinitionsrequestrequesttypedef"></a>
 
 ## ListTaskDefinitionsRequestRequestTypeDef
 
@@ -1708,6 +1910,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 
+<a id="listtaskdefinitionsresponsetypedef"></a>
+
 ## ListTaskDefinitionsResponseTypeDef
 
 ```python
@@ -1720,6 +1924,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtasksrequestrequesttypedef"></a>
 
 ## ListTasksRequestRequestTypeDef
 
@@ -1739,6 +1945,8 @@ Optional fields:
 - `desiredStatus`: [DesiredStatusType](./literals.md#desiredstatustype)
 - `launchType`: [LaunchTypeType](./literals.md#launchtypetype)
 
+<a id="listtasksresponsetypedef"></a>
+
 ## ListTasksResponseTypeDef
 
 ```python
@@ -1752,6 +1960,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loadbalancertypedef"></a>
+
 ## LoadBalancerTypeDef
 
 ```python
@@ -1764,6 +1974,8 @@ Optional fields:
 - `loadBalancerName`: `str`
 - `containerName`: `str`
 - `containerPort`: `int`
+
+<a id="logconfigurationtypedef"></a>
 
 ## LogConfigurationTypeDef
 
@@ -1779,6 +1991,8 @@ Optional fields:
 
 - `options`: `Dict`\[`str`, `str`\]
 - `secretOptions`: `List`\[[SecretTypeDef](./type_defs.md#secrettypedef)\]
+
+<a id="managedagentstatechangetypedef"></a>
 
 ## ManagedAgentStateChangeTypeDef
 
@@ -1797,6 +2011,8 @@ Optional fields:
 
 - `reason`: `str`
 
+<a id="managedagenttypedef"></a>
+
 ## ManagedAgentTypeDef
 
 ```python
@@ -1810,6 +2026,8 @@ Optional fields:
   [ManagedAgentNameType](./literals.md#managedagentnametype))
 - `reason`: `str`
 - `lastStatus`: `str`
+
+<a id="managedscalingtypedef"></a>
 
 ## ManagedScalingTypeDef
 
@@ -1825,6 +2043,8 @@ Optional fields:
 - `maximumScalingStepSize`: `int`
 - `instanceWarmupPeriod`: `int`
 
+<a id="mountpointtypedef"></a>
+
 ## MountPointTypeDef
 
 ```python
@@ -1836,6 +2056,8 @@ Optional fields:
 - `sourceVolume`: `str`
 - `containerPath`: `str`
 - `readOnly`: `bool`
+
+<a id="networkbindingtypedef"></a>
 
 ## NetworkBindingTypeDef
 
@@ -1850,6 +2072,8 @@ Optional fields:
 - `hostPort`: `int`
 - `protocol`: [TransportProtocolType](./literals.md#transportprotocoltype)
 
+<a id="networkconfigurationtypedef"></a>
+
 ## NetworkConfigurationTypeDef
 
 ```python
@@ -1860,6 +2084,8 @@ Optional fields:
 
 - `awsvpcConfiguration`:
   [AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef)
+
+<a id="networkinterfacetypedef"></a>
 
 ## NetworkInterfaceTypeDef
 
@@ -1873,6 +2099,8 @@ Optional fields:
 - `privateIpv4Address`: `str`
 - `ipv6Address`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1884,6 +2112,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="placementconstrainttypedef"></a>
 
 ## PlacementConstraintTypeDef
 
@@ -1897,6 +2127,8 @@ Optional fields:
   [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
 - `expression`: `str`
 
+<a id="placementstrategytypedef"></a>
+
 ## PlacementStrategyTypeDef
 
 ```python
@@ -1907,6 +2139,8 @@ Optional fields:
 
 - `type`: [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
 - `field`: `str`
+
+<a id="platformdevicetypedef"></a>
 
 ## PlatformDeviceTypeDef
 
@@ -1920,6 +2154,8 @@ Required fields:
 - `type`: `Literal['GPU']` (see
   [PlatformDeviceTypeType](./literals.md#platformdevicetypetype))
 
+<a id="portmappingtypedef"></a>
+
 ## PortMappingTypeDef
 
 ```python
@@ -1931,6 +2167,8 @@ Optional fields:
 - `containerPort`: `int`
 - `hostPort`: `int`
 - `protocol`: [TransportProtocolType](./literals.md#transportprotocoltype)
+
+<a id="proxyconfigurationtypedef"></a>
 
 ## ProxyConfigurationTypeDef
 
@@ -1949,6 +2187,8 @@ Optional fields:
 - `properties`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
 
+<a id="putaccountsettingdefaultrequestrequesttypedef"></a>
+
 ## PutAccountSettingDefaultRequestRequestTypeDef
 
 ```python
@@ -1959,6 +2199,8 @@ Required fields:
 
 - `name`: [SettingNameType](./literals.md#settingnametype)
 - `value`: `str`
+
+<a id="putaccountsettingdefaultresponsetypedef"></a>
 
 ## PutAccountSettingDefaultResponseTypeDef
 
@@ -1971,6 +2213,8 @@ Required fields:
 - `setting`: [SettingTypeDef](./type_defs.md#settingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putaccountsettingrequestrequesttypedef"></a>
 
 ## PutAccountSettingRequestRequestTypeDef
 
@@ -1987,6 +2231,8 @@ Optional fields:
 
 - `principalArn`: `str`
 
+<a id="putaccountsettingresponsetypedef"></a>
+
 ## PutAccountSettingResponseTypeDef
 
 ```python
@@ -1998,6 +2244,8 @@ Required fields:
 - `setting`: [SettingTypeDef](./type_defs.md#settingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putattributesrequestrequesttypedef"></a>
 
 ## PutAttributesRequestRequestTypeDef
 
@@ -2014,6 +2262,8 @@ Optional fields:
 
 - `cluster`: `str`
 
+<a id="putattributesresponsetypedef"></a>
+
 ## PutAttributesResponseTypeDef
 
 ```python
@@ -2025,6 +2275,8 @@ Required fields:
 - `attributes`: `List`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putclustercapacityprovidersrequestrequesttypedef"></a>
 
 ## PutClusterCapacityProvidersRequestRequestTypeDef
 
@@ -2039,6 +2291,8 @@ Required fields:
 - `defaultCapacityProviderStrategy`:
   `Sequence`\[[CapacityProviderStrategyItemTypeDef](./type_defs.md#capacityproviderstrategyitemtypedef)\]
 
+<a id="putclustercapacityprovidersresponsetypedef"></a>
+
 ## PutClusterCapacityProvidersResponseTypeDef
 
 ```python
@@ -2050,6 +2304,8 @@ Required fields:
 - `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registercontainerinstancerequestrequesttypedef"></a>
 
 ## RegisterContainerInstanceRequestRequestTypeDef
 
@@ -2072,6 +2328,8 @@ Optional fields:
   `Sequence`\[[PlatformDeviceTypeDef](./type_defs.md#platformdevicetypedef)\]
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="registercontainerinstanceresponsetypedef"></a>
+
 ## RegisterContainerInstanceResponseTypeDef
 
 ```python
@@ -2084,6 +2342,8 @@ Required fields:
   [ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registertaskdefinitionrequestrequesttypedef"></a>
 
 ## RegisterTaskDefinitionRequestRequestTypeDef
 
@@ -2121,6 +2381,8 @@ Optional fields:
 - `runtimePlatform`:
   [RuntimePlatformTypeDef](./type_defs.md#runtimeplatformtypedef)
 
+<a id="registertaskdefinitionresponsetypedef"></a>
+
 ## RegisterTaskDefinitionResponseTypeDef
 
 ```python
@@ -2135,6 +2397,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="repositorycredentialstypedef"></a>
+
 ## RepositoryCredentialsTypeDef
 
 ```python
@@ -2144,6 +2408,8 @@ from mypy_boto3_ecs.type_defs import RepositoryCredentialsTypeDef
 Required fields:
 
 - `credentialsParameter`: `str`
+
+<a id="resourcerequirementtypedef"></a>
 
 ## ResourceRequirementTypeDef
 
@@ -2155,6 +2421,8 @@ Required fields:
 
 - `value`: `str`
 - `type`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -2171,6 +2439,8 @@ Optional fields:
 - `integerValue`: `int`
 - `stringSetValue`: `List`\[`str`\]
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2184,6 +2454,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="runtaskrequestrequesttypedef"></a>
 
 ## RunTaskRequestRequestTypeDef
 
@@ -2218,6 +2490,8 @@ Optional fields:
 - `startedBy`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="runtaskresponsetypedef"></a>
+
 ## RunTaskResponseTypeDef
 
 ```python
@@ -2231,6 +2505,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="runtimeplatformtypedef"></a>
+
 ## RuntimePlatformTypeDef
 
 ```python
@@ -2241,6 +2517,8 @@ Optional fields:
 
 - `cpuArchitecture`: [CPUArchitectureType](./literals.md#cpuarchitecturetype)
 - `operatingSystemFamily`: [OSFamilyType](./literals.md#osfamilytype)
+
+<a id="scaletypedef"></a>
 
 ## ScaleTypeDef
 
@@ -2254,6 +2532,8 @@ Optional fields:
 - `unit`: `Literal['PERCENT']` (see
   [ScaleUnitType](./literals.md#scaleunittype))
 
+<a id="secrettypedef"></a>
+
 ## SecretTypeDef
 
 ```python
@@ -2264,6 +2544,8 @@ Required fields:
 
 - `name`: `str`
 - `valueFrom`: `str`
+
+<a id="serviceeventtypedef"></a>
 
 ## ServiceEventTypeDef
 
@@ -2277,6 +2559,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `message`: `str`
 
+<a id="serviceregistrytypedef"></a>
+
 ## ServiceRegistryTypeDef
 
 ```python
@@ -2289,6 +2573,8 @@ Optional fields:
 - `port`: `int`
 - `containerName`: `str`
 - `containerPort`: `int`
+
+<a id="servicetypedef"></a>
 
 ## ServiceTypeDef
 
@@ -2340,6 +2626,8 @@ Optional fields:
 - `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
 - `enableExecuteCommand`: `bool`
 
+<a id="sessiontypedef"></a>
+
 ## SessionTypeDef
 
 ```python
@@ -2352,6 +2640,8 @@ Optional fields:
 - `streamUrl`: `str`
 - `tokenValue`: `str`
 
+<a id="settingtypedef"></a>
+
 ## SettingTypeDef
 
 ```python
@@ -2363,6 +2653,8 @@ Optional fields:
 - `name`: [SettingNameType](./literals.md#settingnametype)
 - `value`: `str`
 - `principalArn`: `str`
+
+<a id="starttaskrequestrequesttypedef"></a>
 
 ## StartTaskRequestRequestTypeDef
 
@@ -2389,6 +2681,8 @@ Optional fields:
 - `startedBy`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="starttaskresponsetypedef"></a>
+
 ## StartTaskResponseTypeDef
 
 ```python
@@ -2401,6 +2695,8 @@ Required fields:
 - `failures`: `List`\[[FailureTypeDef](./type_defs.md#failuretypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stoptaskrequestrequesttypedef"></a>
 
 ## StopTaskRequestRequestTypeDef
 
@@ -2417,6 +2713,8 @@ Optional fields:
 - `cluster`: `str`
 - `reason`: `str`
 
+<a id="stoptaskresponsetypedef"></a>
+
 ## StopTaskResponseTypeDef
 
 ```python
@@ -2428,6 +2726,8 @@ Required fields:
 - `task`: [TaskTypeDef](./type_defs.md#tasktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="submitattachmentstatechangesrequestrequesttypedef"></a>
 
 ## SubmitAttachmentStateChangesRequestRequestTypeDef
 
@@ -2444,6 +2744,8 @@ Optional fields:
 
 - `cluster`: `str`
 
+<a id="submitattachmentstatechangesresponsetypedef"></a>
+
 ## SubmitAttachmentStateChangesResponseTypeDef
 
 ```python
@@ -2455,6 +2757,8 @@ Required fields:
 - `acknowledgment`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="submitcontainerstatechangerequestrequesttypedef"></a>
 
 ## SubmitContainerStateChangeRequestRequestTypeDef
 
@@ -2474,6 +2778,8 @@ Optional fields:
 - `networkBindings`:
   `Sequence`\[[NetworkBindingTypeDef](./type_defs.md#networkbindingtypedef)\]
 
+<a id="submitcontainerstatechangeresponsetypedef"></a>
+
 ## SubmitContainerStateChangeResponseTypeDef
 
 ```python
@@ -2485,6 +2791,8 @@ Required fields:
 - `acknowledgment`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="submittaskstatechangerequestrequesttypedef"></a>
 
 ## SubmitTaskStateChangeRequestRequestTypeDef
 
@@ -2508,6 +2816,8 @@ Optional fields:
 - `pullStoppedAt`: `Union`\[`datetime`, `str`\]
 - `executionStoppedAt`: `Union`\[`datetime`, `str`\]
 
+<a id="submittaskstatechangeresponsetypedef"></a>
+
 ## SubmitTaskStateChangeResponseTypeDef
 
 ```python
@@ -2520,6 +2830,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="systemcontroltypedef"></a>
+
 ## SystemControlTypeDef
 
 ```python
@@ -2530,6 +2842,8 @@ Optional fields:
 
 - `namespace`: `str`
 - `value`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -2542,6 +2856,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -2552,6 +2868,8 @@ Optional fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="taskdefinitionplacementconstrainttypedef"></a>
 
 ## TaskDefinitionPlacementConstraintTypeDef
 
@@ -2564,6 +2882,8 @@ Optional fields:
 - `type`: `Literal['memberOf']` (see
   [TaskDefinitionPlacementConstraintTypeType](./literals.md#taskdefinitionplacementconstrainttypetype))
 - `expression`: `str`
+
+<a id="taskdefinitiontypedef"></a>
 
 ## TaskDefinitionTypeDef
 
@@ -2607,6 +2927,8 @@ Optional fields:
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
+<a id="taskoverridetypedef"></a>
+
 ## TaskOverrideTypeDef
 
 ```python
@@ -2625,6 +2947,8 @@ Optional fields:
 - `taskRoleArn`: `str`
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
+
+<a id="tasksettypedef"></a>
 
 ## TaskSetTypeDef
 
@@ -2662,6 +2986,8 @@ Optional fields:
 - `stabilityStatus`: [StabilityStatusType](./literals.md#stabilitystatustype)
 - `stabilityStatusAt`: `datetime`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tasktypedef"></a>
 
 ## TaskTypeDef
 
@@ -2711,6 +3037,8 @@ Optional fields:
 - `ephemeralStorage`:
   [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
+<a id="tmpfstypedef"></a>
+
 ## TmpfsTypeDef
 
 ```python
@@ -2726,6 +3054,8 @@ Optional fields:
 
 - `mountOptions`: `List`\[`str`\]
 
+<a id="ulimittypedef"></a>
+
 ## UlimitTypeDef
 
 ```python
@@ -2738,6 +3068,8 @@ Required fields:
 - `softLimit`: `int`
 - `hardLimit`: `int`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2748,6 +3080,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatecapacityproviderrequestrequesttypedef"></a>
 
 ## UpdateCapacityProviderRequestRequestTypeDef
 
@@ -2761,6 +3095,8 @@ Required fields:
 - `autoScalingGroupProvider`:
   [AutoScalingGroupProviderUpdateTypeDef](./type_defs.md#autoscalinggroupproviderupdatetypedef)
 
+<a id="updatecapacityproviderresponsetypedef"></a>
+
 ## UpdateCapacityProviderResponseTypeDef
 
 ```python
@@ -2773,6 +3109,8 @@ Required fields:
   [CapacityProviderTypeDef](./type_defs.md#capacityprovidertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclusterrequestrequesttypedef"></a>
 
 ## UpdateClusterRequestRequestTypeDef
 
@@ -2791,6 +3129,8 @@ Optional fields:
 - `configuration`:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 
+<a id="updateclusterresponsetypedef"></a>
+
 ## UpdateClusterResponseTypeDef
 
 ```python
@@ -2802,6 +3142,8 @@ Required fields:
 - `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclustersettingsrequestrequesttypedef"></a>
 
 ## UpdateClusterSettingsRequestRequestTypeDef
 
@@ -2815,6 +3157,8 @@ Required fields:
 - `settings`:
   `Sequence`\[[ClusterSettingTypeDef](./type_defs.md#clustersettingtypedef)\]
 
+<a id="updateclustersettingsresponsetypedef"></a>
+
 ## UpdateClusterSettingsResponseTypeDef
 
 ```python
@@ -2826,6 +3170,8 @@ Required fields:
 - `cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecontaineragentrequestrequesttypedef"></a>
 
 ## UpdateContainerAgentRequestRequestTypeDef
 
@@ -2841,6 +3187,8 @@ Optional fields:
 
 - `cluster`: `str`
 
+<a id="updatecontaineragentresponsetypedef"></a>
+
 ## UpdateContainerAgentResponseTypeDef
 
 ```python
@@ -2853,6 +3201,8 @@ Required fields:
   [ContainerInstanceTypeDef](./type_defs.md#containerinstancetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecontainerinstancesstaterequestrequesttypedef"></a>
 
 ## UpdateContainerInstancesStateRequestRequestTypeDef
 
@@ -2870,6 +3220,8 @@ Optional fields:
 
 - `cluster`: `str`
 
+<a id="updatecontainerinstancesstateresponsetypedef"></a>
+
 ## UpdateContainerInstancesStateResponseTypeDef
 
 ```python
@@ -2884,6 +3236,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateserviceprimarytasksetrequestrequesttypedef"></a>
+
 ## UpdateServicePrimaryTaskSetRequestRequestTypeDef
 
 ```python
@@ -2896,6 +3250,8 @@ Required fields:
 - `service`: `str`
 - `primaryTaskSet`: `str`
 
+<a id="updateserviceprimarytasksetresponsetypedef"></a>
+
 ## UpdateServicePrimaryTaskSetResponseTypeDef
 
 ```python
@@ -2907,6 +3263,8 @@ Required fields:
 - `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateservicerequestrequesttypedef"></a>
 
 ## UpdateServiceRequestRequestTypeDef
 
@@ -2938,6 +3296,8 @@ Optional fields:
 - `healthCheckGracePeriodSeconds`: `int`
 - `enableExecuteCommand`: `bool`
 
+<a id="updateserviceresponsetypedef"></a>
+
 ## UpdateServiceResponseTypeDef
 
 ```python
@@ -2949,6 +3309,8 @@ Required fields:
 - `service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetasksetrequestrequesttypedef"></a>
 
 ## UpdateTaskSetRequestRequestTypeDef
 
@@ -2963,6 +3325,8 @@ Required fields:
 - `taskSet`: `str`
 - `scale`: [ScaleTypeDef](./type_defs.md#scaletypedef)
 
+<a id="updatetasksetresponsetypedef"></a>
+
 ## UpdateTaskSetResponseTypeDef
 
 ```python
@@ -2974,6 +3338,8 @@ Required fields:
 - `taskSet`: [TaskSetTypeDef](./type_defs.md#tasksettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="versioninfotypedef"></a>
 
 ## VersionInfoTypeDef
 
@@ -2987,6 +3353,8 @@ Optional fields:
 - `agentHash`: `str`
 - `dockerVersion`: `str`
 
+<a id="volumefromtypedef"></a>
+
 ## VolumeFromTypeDef
 
 ```python
@@ -2997,6 +3365,8 @@ Optional fields:
 
 - `sourceContainer`: `str`
 - `readOnly`: `bool`
+
+<a id="volumetypedef"></a>
 
 ## VolumeTypeDef
 
@@ -3015,6 +3385,8 @@ Optional fields:
   [EFSVolumeConfigurationTypeDef](./type_defs.md#efsvolumeconfigurationtypedef)
 - `fsxWindowsFileServerVolumeConfiguration`:
   [FSxWindowsFileServerVolumeConfigurationTypeDef](./type_defs.md#fsxwindowsfileservervolumeconfigurationtypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

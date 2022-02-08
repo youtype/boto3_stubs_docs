@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-personalize-module"></a>
+
 # Type annotations for boto3 Personalize module
 
 > [Index](..) > Personalize
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
 type annotations stubs module
-[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[personalize]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[personalize]'
+
+# standalone installation
 pip install mypy-boto3-personalize
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-personalize
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="personalizeclient"></a>
+
 ## PersonalizeClient
 
 Type annotations for `boto3.client("personalize")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_personalize.client import PersonalizeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -92,6 +106,8 @@ from mypy_boto3_personalize.client import PersonalizeClient
 - [update_campaign](./client.md#update_campaign)
 - [update_recommender](./client.md#update_recommender)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PersonalizeClient [exceptions](./client.md#exceptions)
@@ -104,6 +120,8 @@ PersonalizeClient [exceptions](./client.md#exceptions)
 - ResourceInUseException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -112,7 +130,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize.paginators import ListBatchInferenceJobsPaginator, ...
+from mypy_boto3_personalize.paginator import ListBatchInferenceJobsPaginator, ...
 ```
 
 - [ListBatchInferenceJobsPaginator](./paginators.md#listbatchinferencejobspaginator)
@@ -129,6 +147,8 @@ from mypy_boto3_personalize.paginators import ListBatchInferenceJobsPaginator, .
 - [ListSchemasPaginator](./paginators.md#listschemaspaginator)
 - [ListSolutionVersionsPaginator](./paginators.md#listsolutionversionspaginator)
 - [ListSolutionsPaginator](./paginators.md#listsolutionspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -161,6 +181,8 @@ from mypy_boto3_personalize.literals import DomainType, ...
 - [TrainingModeType](./literals.md#trainingmodetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

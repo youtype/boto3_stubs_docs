@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-memorydb-module"></a>
+
 # Typed dictionaries for boto3 MemoryDB module
 
 > [Index](..) > [MemoryDB](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
 type annotations stubs module
-[mypy_boto3_memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
+[mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 - [Typed dictionaries for boto3 MemoryDB module](#typed-dictionaries-for-boto3-memorydb-module)
   - [ACLPendingChangesTypeDef](#aclpendingchangestypedef)
@@ -114,6 +116,8 @@ type annotations stubs module
   - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
   - [UserTypeDef](#usertypedef)
 
+<a id="aclpendingchangestypedef"></a>
+
 ## ACLPendingChangesTypeDef
 
 ```python
@@ -124,6 +128,8 @@ Optional fields:
 
 - `UserNamesToRemove`: `List`\[`str`\]
 - `UserNamesToAdd`: `List`\[`str`\]
+
+<a id="acltypedef"></a>
 
 ## ACLTypeDef
 
@@ -142,6 +148,8 @@ Optional fields:
 - `Clusters`: `List`\[`str`\]
 - `ARN`: `str`
 
+<a id="aclsupdatestatustypedef"></a>
+
 ## ACLsUpdateStatusTypeDef
 
 ```python
@@ -151,6 +159,8 @@ from mypy_boto3_memorydb.type_defs import ACLsUpdateStatusTypeDef
 Optional fields:
 
 - `ACLToApply`: `str`
+
+<a id="authenticationmodetypedef"></a>
 
 ## AuthenticationModeTypeDef
 
@@ -164,6 +174,8 @@ Optional fields:
   [InputAuthenticationTypeType](./literals.md#inputauthenticationtypetype))
 - `Passwords`: `Sequence`\[`str`\]
 
+<a id="authenticationtypedef"></a>
+
 ## AuthenticationTypeDef
 
 ```python
@@ -175,6 +187,8 @@ Optional fields:
 - `Type`: [AuthenticationTypeType](./literals.md#authenticationtypetype)
 - `PasswordCount`: `int`
 
+<a id="availabilityzonetypedef"></a>
+
 ## AvailabilityZoneTypeDef
 
 ```python
@@ -184,6 +198,8 @@ from mypy_boto3_memorydb.type_defs import AvailabilityZoneTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="batchupdateclusterrequestrequesttypedef"></a>
 
 ## BatchUpdateClusterRequestRequestTypeDef
 
@@ -200,6 +216,8 @@ Optional fields:
 - `ServiceUpdate`:
   [ServiceUpdateRequestTypeDef](./type_defs.md#serviceupdaterequesttypedef)
 
+<a id="batchupdateclusterresponsetypedef"></a>
+
 ## BatchUpdateClusterResponseTypeDef
 
 ```python
@@ -214,6 +232,8 @@ Required fields:
   `List`\[[UnprocessedClusterTypeDef](./type_defs.md#unprocessedclustertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="clusterconfigurationtypedef"></a>
 
 ## ClusterConfigurationTypeDef
 
@@ -238,6 +258,8 @@ Optional fields:
 - `NumShards`: `int`
 - `Shards`: `List`\[[ShardDetailTypeDef](./type_defs.md#sharddetailtypedef)\]
 
+<a id="clusterpendingupdatestypedef"></a>
+
 ## ClusterPendingUpdatesTypeDef
 
 ```python
@@ -251,6 +273,8 @@ Optional fields:
 - `ACLs`: [ACLsUpdateStatusTypeDef](./type_defs.md#aclsupdatestatustypedef)
 - `ServiceUpdates`:
   `List`\[[PendingModifiedServiceUpdateTypeDef](./type_defs.md#pendingmodifiedserviceupdatetypedef)\]
+
+<a id="clustertypedef"></a>
 
 ## ClusterTypeDef
 
@@ -288,6 +312,8 @@ Optional fields:
 - `ACLName`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
 
+<a id="copysnapshotrequestrequesttypedef"></a>
+
 ## CopySnapshotRequestRequestTypeDef
 
 ```python
@@ -305,6 +331,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="copysnapshotresponsetypedef"></a>
+
 ## CopySnapshotResponseTypeDef
 
 ```python
@@ -316,6 +344,8 @@ Required fields:
 - `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createaclrequestrequesttypedef"></a>
 
 ## CreateACLRequestRequestTypeDef
 
@@ -332,6 +362,8 @@ Optional fields:
 - `UserNames`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createaclresponsetypedef"></a>
+
 ## CreateACLResponseTypeDef
 
 ```python
@@ -343,6 +375,8 @@ Required fields:
 - `ACL`: [ACLTypeDef](./type_defs.md#acltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createclusterrequestrequesttypedef"></a>
 
 ## CreateClusterRequestRequestTypeDef
 
@@ -377,6 +411,8 @@ Optional fields:
 - `EngineVersion`: `str`
 - `AutoMinorVersionUpgrade`: `bool`
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -388,6 +424,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createparametergrouprequestrequesttypedef"></a>
 
 ## CreateParameterGroupRequestRequestTypeDef
 
@@ -405,6 +443,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createparametergroupresponsetypedef"></a>
+
 ## CreateParameterGroupResponseTypeDef
 
 ```python
@@ -417,6 +457,8 @@ Required fields:
   [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsnapshotrequestrequesttypedef"></a>
 
 ## CreateSnapshotRequestRequestTypeDef
 
@@ -434,6 +476,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createsnapshotresponsetypedef"></a>
+
 ## CreateSnapshotResponseTypeDef
 
 ```python
@@ -445,6 +489,8 @@ Required fields:
 - `Snapshot`: [SnapshotTypeDef](./type_defs.md#snapshottypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsubnetgrouprequestrequesttypedef"></a>
 
 ## CreateSubnetGroupRequestRequestTypeDef
 
@@ -462,6 +508,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createsubnetgroupresponsetypedef"></a>
+
 ## CreateSubnetGroupResponseTypeDef
 
 ```python
@@ -473,6 +521,8 @@ Required fields:
 - `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserrequestrequesttypedef"></a>
 
 ## CreateUserRequestRequestTypeDef
 
@@ -491,6 +541,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createuserresponsetypedef"></a>
+
 ## CreateUserResponseTypeDef
 
 ```python
@@ -503,6 +555,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteaclrequestrequesttypedef"></a>
+
 ## DeleteACLRequestRequestTypeDef
 
 ```python
@@ -512,6 +566,8 @@ from mypy_boto3_memorydb.type_defs import DeleteACLRequestRequestTypeDef
 Required fields:
 
 - `ACLName`: `str`
+
+<a id="deleteaclresponsetypedef"></a>
 
 ## DeleteACLResponseTypeDef
 
@@ -524,6 +580,8 @@ Required fields:
 - `ACL`: [ACLTypeDef](./type_defs.md#acltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteclusterrequestrequesttypedef"></a>
 
 ## DeleteClusterRequestRequestTypeDef
 
@@ -539,6 +597,8 @@ Optional fields:
 
 - `FinalSnapshotName`: `str`
 
+<a id="deleteclusterresponsetypedef"></a>
+
 ## DeleteClusterResponseTypeDef
 
 ```python
@@ -551,6 +611,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteparametergrouprequestrequesttypedef"></a>
+
 ## DeleteParameterGroupRequestRequestTypeDef
 
 ```python
@@ -560,6 +622,8 @@ from mypy_boto3_memorydb.type_defs import DeleteParameterGroupRequestRequestType
 Required fields:
 
 - `ParameterGroupName`: `str`
+
+<a id="deleteparametergroupresponsetypedef"></a>
 
 ## DeleteParameterGroupResponseTypeDef
 
@@ -574,6 +638,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesnapshotrequestrequesttypedef"></a>
+
 ## DeleteSnapshotRequestRequestTypeDef
 
 ```python
@@ -583,6 +649,8 @@ from mypy_boto3_memorydb.type_defs import DeleteSnapshotRequestRequestTypeDef
 Required fields:
 
 - `SnapshotName`: `str`
+
+<a id="deletesnapshotresponsetypedef"></a>
 
 ## DeleteSnapshotResponseTypeDef
 
@@ -596,6 +664,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesubnetgrouprequestrequesttypedef"></a>
+
 ## DeleteSubnetGroupRequestRequestTypeDef
 
 ```python
@@ -605,6 +675,8 @@ from mypy_boto3_memorydb.type_defs import DeleteSubnetGroupRequestRequestTypeDef
 Required fields:
 
 - `SubnetGroupName`: `str`
+
+<a id="deletesubnetgroupresponsetypedef"></a>
 
 ## DeleteSubnetGroupResponseTypeDef
 
@@ -618,6 +690,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteuserrequestrequesttypedef"></a>
+
 ## DeleteUserRequestRequestTypeDef
 
 ```python
@@ -627,6 +701,8 @@ from mypy_boto3_memorydb.type_defs import DeleteUserRequestRequestTypeDef
 Required fields:
 
 - `UserName`: `str`
+
+<a id="deleteuserresponsetypedef"></a>
 
 ## DeleteUserResponseTypeDef
 
@@ -640,6 +716,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaclsrequestrequesttypedef"></a>
+
 ## DescribeACLsRequestRequestTypeDef
 
 ```python
@@ -651,6 +729,8 @@ Optional fields:
 - `ACLName`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeaclsresponsetypedef"></a>
 
 ## DescribeACLsResponseTypeDef
 
@@ -665,6 +745,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclustersrequestrequesttypedef"></a>
+
 ## DescribeClustersRequestRequestTypeDef
 
 ```python
@@ -678,6 +760,8 @@ Optional fields:
 - `NextToken`: `str`
 - `ShowShardDetails`: `bool`
 
+<a id="describeclustersresponsetypedef"></a>
+
 ## DescribeClustersResponseTypeDef
 
 ```python
@@ -690,6 +774,8 @@ Required fields:
 - `Clusters`: `List`\[[ClusterTypeDef](./type_defs.md#clustertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeengineversionsrequestrequesttypedef"></a>
 
 ## DescribeEngineVersionsRequestRequestTypeDef
 
@@ -705,6 +791,8 @@ Optional fields:
 - `NextToken`: `str`
 - `DefaultOnly`: `bool`
 
+<a id="describeengineversionsresponsetypedef"></a>
+
 ## DescribeEngineVersionsResponseTypeDef
 
 ```python
@@ -718,6 +806,8 @@ Required fields:
   `List`\[[EngineVersionInfoTypeDef](./type_defs.md#engineversioninfotypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventsrequestrequesttypedef"></a>
 
 ## DescribeEventsRequestRequestTypeDef
 
@@ -735,6 +825,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeeventsresponsetypedef"></a>
+
 ## DescribeEventsResponseTypeDef
 
 ```python
@@ -748,6 +840,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeparametergroupsrequestrequesttypedef"></a>
+
 ## DescribeParameterGroupsRequestRequestTypeDef
 
 ```python
@@ -759,6 +853,8 @@ Optional fields:
 - `ParameterGroupName`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeparametergroupsresponsetypedef"></a>
 
 ## DescribeParameterGroupsResponseTypeDef
 
@@ -773,6 +869,8 @@ Required fields:
   `List`\[[ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeparametersrequestrequesttypedef"></a>
 
 ## DescribeParametersRequestRequestTypeDef
 
@@ -789,6 +887,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeparametersresponsetypedef"></a>
+
 ## DescribeParametersResponseTypeDef
 
 ```python
@@ -801,6 +901,8 @@ Required fields:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeserviceupdatesrequestrequesttypedef"></a>
 
 ## DescribeServiceUpdatesRequestRequestTypeDef
 
@@ -817,6 +919,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeserviceupdatesresponsetypedef"></a>
+
 ## DescribeServiceUpdatesResponseTypeDef
 
 ```python
@@ -830,6 +934,8 @@ Required fields:
   `List`\[[ServiceUpdateTypeDef](./type_defs.md#serviceupdatetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesnapshotsrequestrequesttypedef"></a>
 
 ## DescribeSnapshotsRequestRequestTypeDef
 
@@ -846,6 +952,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `ShowDetail`: `bool`
 
+<a id="describesnapshotsresponsetypedef"></a>
+
 ## DescribeSnapshotsResponseTypeDef
 
 ```python
@@ -859,6 +967,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesubnetgroupsrequestrequesttypedef"></a>
+
 ## DescribeSubnetGroupsRequestRequestTypeDef
 
 ```python
@@ -870,6 +980,8 @@ Optional fields:
 - `SubnetGroupName`: `str`
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describesubnetgroupsresponsetypedef"></a>
 
 ## DescribeSubnetGroupsResponseTypeDef
 
@@ -885,6 +997,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeusersrequestrequesttypedef"></a>
+
 ## DescribeUsersRequestRequestTypeDef
 
 ```python
@@ -897,6 +1011,8 @@ Optional fields:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeusersresponsetypedef"></a>
 
 ## DescribeUsersResponseTypeDef
 
@@ -911,6 +1027,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -921,6 +1039,8 @@ Optional fields:
 
 - `Address`: `str`
 - `Port`: `int`
+
+<a id="engineversioninfotypedef"></a>
 
 ## EngineVersionInfoTypeDef
 
@@ -933,6 +1053,8 @@ Optional fields:
 - `EngineVersion`: `str`
 - `EnginePatchVersion`: `str`
 - `ParameterGroupFamily`: `str`
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -947,6 +1069,8 @@ Optional fields:
 - `Message`: `str`
 - `Date`: `datetime`
 
+<a id="failovershardrequestrequesttypedef"></a>
+
 ## FailoverShardRequestRequestTypeDef
 
 ```python
@@ -957,6 +1081,8 @@ Required fields:
 
 - `ClusterName`: `str`
 - `ShardName`: `str`
+
+<a id="failovershardresponsetypedef"></a>
 
 ## FailoverShardResponseTypeDef
 
@@ -970,6 +1096,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -981,6 +1109,8 @@ Required fields:
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="listallowednodetypeupdatesrequestrequesttypedef"></a>
+
 ## ListAllowedNodeTypeUpdatesRequestRequestTypeDef
 
 ```python
@@ -990,6 +1120,8 @@ from mypy_boto3_memorydb.type_defs import ListAllowedNodeTypeUpdatesRequestReque
 Required fields:
 
 - `ClusterName`: `str`
+
+<a id="listallowednodetypeupdatesresponsetypedef"></a>
 
 ## ListAllowedNodeTypeUpdatesResponseTypeDef
 
@@ -1004,6 +1136,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsrequestrequesttypedef"></a>
+
 ## ListTagsRequestRequestTypeDef
 
 ```python
@@ -1013,6 +1147,8 @@ from mypy_boto3_memorydb.type_defs import ListTagsRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsresponsetypedef"></a>
 
 ## ListTagsResponseTypeDef
 
@@ -1025,6 +1161,8 @@ Required fields:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="nodetypedef"></a>
 
 ## NodeTypeDef
 
@@ -1040,6 +1178,8 @@ Optional fields:
 - `CreateTime`: `datetime`
 - `Endpoint`: [EndpointTypeDef](./type_defs.md#endpointtypedef)
 
+<a id="parametergrouptypedef"></a>
+
 ## ParameterGroupTypeDef
 
 ```python
@@ -1053,6 +1193,8 @@ Optional fields:
 - `Description`: `str`
 - `ARN`: `str`
 
+<a id="parameternamevaluetypedef"></a>
+
 ## ParameterNameValueTypeDef
 
 ```python
@@ -1063,6 +1205,8 @@ Optional fields:
 
 - `ParameterName`: `str`
 - `ParameterValue`: `str`
+
+<a id="parametertypedef"></a>
 
 ## ParameterTypeDef
 
@@ -1079,6 +1223,8 @@ Optional fields:
 - `AllowedValues`: `str`
 - `MinimumEngineVersion`: `str`
 
+<a id="pendingmodifiedserviceupdatetypedef"></a>
+
 ## PendingModifiedServiceUpdateTypeDef
 
 ```python
@@ -1090,6 +1236,8 @@ Optional fields:
 - `ServiceUpdateName`: `str`
 - `Status`: [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 
+<a id="replicaconfigurationrequesttypedef"></a>
+
 ## ReplicaConfigurationRequestTypeDef
 
 ```python
@@ -1099,6 +1247,8 @@ from mypy_boto3_memorydb.type_defs import ReplicaConfigurationRequestTypeDef
 Optional fields:
 
 - `ReplicaCount`: `int`
+
+<a id="resetparametergrouprequestrequesttypedef"></a>
 
 ## ResetParameterGroupRequestRequestTypeDef
 
@@ -1115,6 +1265,8 @@ Optional fields:
 - `AllParameters`: `bool`
 - `ParameterNames`: `Sequence`\[`str`\]
 
+<a id="resetparametergroupresponsetypedef"></a>
+
 ## ResetParameterGroupResponseTypeDef
 
 ```python
@@ -1128,6 +1280,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="reshardingstatustypedef"></a>
+
 ## ReshardingStatusTypeDef
 
 ```python
@@ -1137,6 +1291,8 @@ from mypy_boto3_memorydb.type_defs import ReshardingStatusTypeDef
 Optional fields:
 
 - `SlotMigration`: [SlotMigrationTypeDef](./type_defs.md#slotmigrationtypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1152,6 +1308,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="securitygroupmembershiptypedef"></a>
+
 ## SecurityGroupMembershipTypeDef
 
 ```python
@@ -1163,6 +1321,8 @@ Optional fields:
 - `SecurityGroupId`: `str`
 - `Status`: `str`
 
+<a id="serviceupdaterequesttypedef"></a>
+
 ## ServiceUpdateRequestTypeDef
 
 ```python
@@ -1172,6 +1332,8 @@ from mypy_boto3_memorydb.type_defs import ServiceUpdateRequestTypeDef
 Optional fields:
 
 - `ServiceUpdateNameToApply`: `str`
+
+<a id="serviceupdatetypedef"></a>
 
 ## ServiceUpdateTypeDef
 
@@ -1191,6 +1353,8 @@ Optional fields:
 - `NodesUpdated`: `str`
 - `AutoUpdateStartDate`: `datetime`
 
+<a id="shardconfigurationrequesttypedef"></a>
+
 ## ShardConfigurationRequestTypeDef
 
 ```python
@@ -1200,6 +1364,8 @@ from mypy_boto3_memorydb.type_defs import ShardConfigurationRequestTypeDef
 Optional fields:
 
 - `ShardCount`: `int`
+
+<a id="shardconfigurationtypedef"></a>
 
 ## ShardConfigurationTypeDef
 
@@ -1211,6 +1377,8 @@ Optional fields:
 
 - `Slots`: `str`
 - `ReplicaCount`: `int`
+
+<a id="sharddetailtypedef"></a>
 
 ## ShardDetailTypeDef
 
@@ -1226,6 +1394,8 @@ Optional fields:
 - `Size`: `str`
 - `SnapshotCreationTime`: `datetime`
 
+<a id="shardtypedef"></a>
+
 ## ShardTypeDef
 
 ```python
@@ -1240,6 +1410,8 @@ Optional fields:
 - `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
 - `NumberOfNodes`: `int`
 
+<a id="slotmigrationtypedef"></a>
+
 ## SlotMigrationTypeDef
 
 ```python
@@ -1249,6 +1421,8 @@ from mypy_boto3_memorydb.type_defs import SlotMigrationTypeDef
 Optional fields:
 
 - `ProgressPercentage`: `float`
+
+<a id="snapshottypedef"></a>
 
 ## SnapshotTypeDef
 
@@ -1266,6 +1440,8 @@ Optional fields:
 - `ClusterConfiguration`:
   [ClusterConfigurationTypeDef](./type_defs.md#clusterconfigurationtypedef)
 
+<a id="subnetgrouptypedef"></a>
+
 ## SubnetGroupTypeDef
 
 ```python
@@ -1280,6 +1456,8 @@ Optional fields:
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 - `ARN`: `str`
 
+<a id="subnettypedef"></a>
+
 ## SubnetTypeDef
 
 ```python
@@ -1292,6 +1470,8 @@ Optional fields:
 - `AvailabilityZone`:
   [AvailabilityZoneTypeDef](./type_defs.md#availabilityzonetypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1302,6 +1482,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagresourceresponsetypedef"></a>
 
 ## TagResourceResponseTypeDef
 
@@ -1315,6 +1497,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1325,6 +1509,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="unprocessedclustertypedef"></a>
 
 ## UnprocessedClusterTypeDef
 
@@ -1338,6 +1524,8 @@ Optional fields:
 - `ErrorType`: `str`
 - `ErrorMessage`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1348,6 +1536,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="untagresourceresponsetypedef"></a>
 
 ## UntagResourceResponseTypeDef
 
@@ -1360,6 +1550,8 @@ Required fields:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateaclrequestrequesttypedef"></a>
 
 ## UpdateACLRequestRequestTypeDef
 
@@ -1376,6 +1568,8 @@ Optional fields:
 - `UserNamesToAdd`: `Sequence`\[`str`\]
 - `UserNamesToRemove`: `Sequence`\[`str`\]
 
+<a id="updateaclresponsetypedef"></a>
+
 ## UpdateACLResponseTypeDef
 
 ```python
@@ -1387,6 +1581,8 @@ Required fields:
 - `ACL`: [ACLTypeDef](./type_defs.md#acltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclusterrequestrequesttypedef"></a>
 
 ## UpdateClusterRequestRequestTypeDef
 
@@ -1416,6 +1612,8 @@ Optional fields:
   [ShardConfigurationRequestTypeDef](./type_defs.md#shardconfigurationrequesttypedef)
 - `ACLName`: `str`
 
+<a id="updateclusterresponsetypedef"></a>
+
 ## UpdateClusterResponseTypeDef
 
 ```python
@@ -1427,6 +1625,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateparametergrouprequestrequesttypedef"></a>
 
 ## UpdateParameterGroupRequestRequestTypeDef
 
@@ -1440,6 +1640,8 @@ Required fields:
 - `ParameterNameValues`:
   `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
+<a id="updateparametergroupresponsetypedef"></a>
+
 ## UpdateParameterGroupResponseTypeDef
 
 ```python
@@ -1452,6 +1654,8 @@ Required fields:
   [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesubnetgrouprequestrequesttypedef"></a>
 
 ## UpdateSubnetGroupRequestRequestTypeDef
 
@@ -1468,6 +1672,8 @@ Optional fields:
 - `Description`: `str`
 - `SubnetIds`: `Sequence`\[`str`\]
 
+<a id="updatesubnetgroupresponsetypedef"></a>
+
 ## UpdateSubnetGroupResponseTypeDef
 
 ```python
@@ -1479,6 +1685,8 @@ Required fields:
 - `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateuserrequestrequesttypedef"></a>
 
 ## UpdateUserRequestRequestTypeDef
 
@@ -1496,6 +1704,8 @@ Optional fields:
   [AuthenticationModeTypeDef](./type_defs.md#authenticationmodetypedef)
 - `AccessString`: `str`
 
+<a id="updateuserresponsetypedef"></a>
+
 ## UpdateUserResponseTypeDef
 
 ```python
@@ -1507,6 +1717,8 @@ Required fields:
 - `User`: [UserTypeDef](./type_defs.md#usertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="usertypedef"></a>
 
 ## UserTypeDef
 

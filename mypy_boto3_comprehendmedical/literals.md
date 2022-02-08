@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-comprehendmedical-module"></a>
+
 # Literals for boto3 ComprehendMedical module
 
 > [Index](..) > [ComprehendMedical](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ComprehendMedical](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehendmedical.html#ComprehendMedical)
 type annotations stubs module
-[mypy_boto3_comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
+[mypy-boto3-comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
 - [Literals for boto3 ComprehendMedical module](#literals-for-boto3-comprehendmedical-module)
   - [AttributeNameType](#attributenametype)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [SNOMEDCTTraitNameType](#snomedcttraitnametype)
   - [ServiceName](#servicename)
 
+<a id="attributenametype"></a>
+
 ## AttributeNameType
 
 ```python
@@ -42,6 +46,8 @@ Values:
 - `NEGATION`
 - `SIGN`
 - `SYMPTOM`
+
+<a id="entitysubtypetype"></a>
 
 ## EntitySubTypeType
 
@@ -90,6 +96,8 @@ Values:
 - `TREATMENT_NAME`
 - `URL`
 
+<a id="entitytypetype"></a>
+
 ## EntityTypeType
 
 ```python
@@ -104,6 +112,8 @@ Values:
 - `PROTECTED_HEALTH_INFORMATION`
 - `TEST_TREATMENT_PROCEDURE`
 - `TIME_EXPRESSION`
+
+<a id="icd10cmattributetypetype"></a>
 
 ## ICD10CMAttributeTypeType
 
@@ -121,6 +131,8 @@ Values:
 - `TIME_EXPRESSION`
 - `TIME_TO_DX_NAME`
 
+<a id="icd10cmentitycategorytype"></a>
+
 ## ICD10CMEntityCategoryType
 
 ```python
@@ -130,6 +142,8 @@ from mypy_boto3_comprehendmedical.literals import ICD10CMEntityCategoryType
 Values:
 
 - `MEDICAL_CONDITION`
+
+<a id="icd10cmentitytypetype"></a>
 
 ## ICD10CMEntityTypeType
 
@@ -142,6 +156,8 @@ Values:
 - `DX_NAME`
 - `TIME_EXPRESSION`
 
+<a id="icd10cmrelationshiptypetype"></a>
+
 ## ICD10CMRelationshipTypeType
 
 ```python
@@ -152,6 +168,8 @@ Values:
 
 - `OVERLAP`
 - `SYSTEM_ORGAN_SITE`
+
+<a id="icd10cmtraitnametype"></a>
 
 ## ICD10CMTraitNameType
 
@@ -165,6 +183,8 @@ Values:
 - `NEGATION`
 - `SIGN`
 - `SYMPTOM`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -182,6 +202,8 @@ Values:
 - `STOPPED`
 - `SUBMITTED`
 
+<a id="languagecodetype"></a>
+
 ## LanguageCodeType
 
 ```python
@@ -191,6 +213,8 @@ from mypy_boto3_comprehendmedical.literals import LanguageCodeType
 Values:
 
 - `en`
+
+<a id="relationshiptypetype"></a>
 
 ## RelationshipTypeType
 
@@ -220,6 +244,8 @@ Values:
 - `TEST_VALUE`
 - `WITH_DOSAGE`
 
+<a id="rxnormattributetypetype"></a>
+
 ## RxNormAttributeTypeType
 
 ```python
@@ -236,6 +262,8 @@ Values:
 - `ROUTE_OR_MODE`
 - `STRENGTH`
 
+<a id="rxnormentitycategorytype"></a>
+
 ## RxNormEntityCategoryType
 
 ```python
@@ -245,6 +273,8 @@ from mypy_boto3_comprehendmedical.literals import RxNormEntityCategoryType
 Values:
 
 - `MEDICATION`
+
+<a id="rxnormentitytypetype"></a>
 
 ## RxNormEntityTypeType
 
@@ -257,6 +287,8 @@ Values:
 - `BRAND_NAME`
 - `GENERIC_NAME`
 
+<a id="rxnormtraitnametype"></a>
+
 ## RxNormTraitNameType
 
 ```python
@@ -266,6 +298,8 @@ from mypy_boto3_comprehendmedical.literals import RxNormTraitNameType
 Values:
 
 - `NEGATION`
+
+<a id="snomedctattributetypetype"></a>
 
 ## SNOMEDCTAttributeTypeType
 
@@ -282,6 +316,8 @@ Values:
 - `TEST_UNIT`
 - `TEST_VALUE`
 
+<a id="snomedctentitycategorytype"></a>
+
 ## SNOMEDCTEntityCategoryType
 
 ```python
@@ -293,6 +329,8 @@ Values:
 - `ANATOMY`
 - `MEDICAL_CONDITION`
 - `TEST_TREATMENT_PROCEDURE`
+
+<a id="snomedctentitytypetype"></a>
 
 ## SNOMEDCTEntityTypeType
 
@@ -306,6 +344,8 @@ Values:
 - `PROCEDURE_NAME`
 - `TEST_NAME`
 - `TREATMENT_NAME`
+
+<a id="snomedctrelationshiptypetype"></a>
 
 ## SNOMEDCTRelationshipTypeType
 
@@ -322,6 +362,8 @@ Values:
 - `TEST_UNITS`
 - `TEST_VALUE`
 
+<a id="snomedcttraitnametype"></a>
+
 ## SNOMEDCTTraitNameType
 
 ```python
@@ -334,6 +376,8 @@ Values:
 - `NEGATION`
 - `SIGN`
 - `SYMPTOM`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-autoscaling-module"></a>
+
 # Literals for boto3 AutoScaling module
 
 > [Index](..) > [AutoScaling](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
-[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 - [Literals for boto3 AutoScaling module](#literals-for-boto3-autoscaling-module)
   - [AcceleratorManufacturerType](#acceleratormanufacturertype)
@@ -45,6 +47,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="acceleratormanufacturertype"></a>
+
 ## AcceleratorManufacturerType
 
 ```python
@@ -57,6 +61,8 @@ Values:
 - `amd`
 - `nvidia`
 - `xilinx`
+
+<a id="acceleratornametype"></a>
 
 ## AcceleratorNameType
 
@@ -74,6 +80,8 @@ Values:
 - `v100`
 - `vu9p`
 
+<a id="acceleratortypetype"></a>
+
 ## AcceleratorTypeType
 
 ```python
@@ -85,6 +93,8 @@ Values:
 - `fpga`
 - `gpu`
 - `inference`
+
+<a id="baremetaltype"></a>
 
 ## BareMetalType
 
@@ -98,6 +108,8 @@ Values:
 - `included`
 - `required`
 
+<a id="burstableperformancetype"></a>
+
 ## BurstablePerformanceType
 
 ```python
@@ -109,6 +121,8 @@ Values:
 - `excluded`
 - `included`
 - `required`
+
+<a id="cpumanufacturertype"></a>
 
 ## CpuManufacturerType
 
@@ -122,6 +136,8 @@ Values:
 - `amd`
 - `intel`
 
+<a id="describeautoscalinggroupspaginatorname"></a>
+
 ## DescribeAutoScalingGroupsPaginatorName
 
 ```python
@@ -131,6 +147,8 @@ from mypy_boto3_autoscaling.literals import DescribeAutoScalingGroupsPaginatorNa
 Values:
 
 - `describe_auto_scaling_groups`
+
+<a id="describeautoscalinginstancespaginatorname"></a>
 
 ## DescribeAutoScalingInstancesPaginatorName
 
@@ -142,6 +160,8 @@ Values:
 
 - `describe_auto_scaling_instances`
 
+<a id="describelaunchconfigurationspaginatorname"></a>
+
 ## DescribeLaunchConfigurationsPaginatorName
 
 ```python
@@ -151,6 +171,8 @@ from mypy_boto3_autoscaling.literals import DescribeLaunchConfigurationsPaginato
 Values:
 
 - `describe_launch_configurations`
+
+<a id="describeloadbalancertargetgroupspaginatorname"></a>
 
 ## DescribeLoadBalancerTargetGroupsPaginatorName
 
@@ -162,6 +184,8 @@ Values:
 
 - `describe_load_balancer_target_groups`
 
+<a id="describeloadbalancerspaginatorname"></a>
+
 ## DescribeLoadBalancersPaginatorName
 
 ```python
@@ -171,6 +195,8 @@ from mypy_boto3_autoscaling.literals import DescribeLoadBalancersPaginatorName
 Values:
 
 - `describe_load_balancers`
+
+<a id="describenotificationconfigurationspaginatorname"></a>
 
 ## DescribeNotificationConfigurationsPaginatorName
 
@@ -182,6 +208,8 @@ Values:
 
 - `describe_notification_configurations`
 
+<a id="describepoliciespaginatorname"></a>
+
 ## DescribePoliciesPaginatorName
 
 ```python
@@ -191,6 +219,8 @@ from mypy_boto3_autoscaling.literals import DescribePoliciesPaginatorName
 Values:
 
 - `describe_policies`
+
+<a id="describescalingactivitiespaginatorname"></a>
 
 ## DescribeScalingActivitiesPaginatorName
 
@@ -202,6 +232,8 @@ Values:
 
 - `describe_scaling_activities`
 
+<a id="describescheduledactionspaginatorname"></a>
+
 ## DescribeScheduledActionsPaginatorName
 
 ```python
@@ -212,6 +244,8 @@ Values:
 
 - `describe_scheduled_actions`
 
+<a id="describetagspaginatorname"></a>
+
 ## DescribeTagsPaginatorName
 
 ```python
@@ -221,6 +255,8 @@ from mypy_boto3_autoscaling.literals import DescribeTagsPaginatorName
 Values:
 
 - `describe_tags`
+
+<a id="instancegenerationtype"></a>
 
 ## InstanceGenerationType
 
@@ -233,6 +269,8 @@ Values:
 - `current`
 - `previous`
 
+<a id="instancemetadataendpointstatetype"></a>
+
 ## InstanceMetadataEndpointStateType
 
 ```python
@@ -244,6 +282,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="instancemetadatahttptokensstatetype"></a>
+
 ## InstanceMetadataHttpTokensStateType
 
 ```python
@@ -254,6 +294,8 @@ Values:
 
 - `optional`
 - `required`
+
+<a id="instancerefreshstatustype"></a>
 
 ## InstanceRefreshStatusType
 
@@ -269,6 +311,8 @@ Values:
 - `InProgress`
 - `Pending`
 - `Successful`
+
+<a id="lifecyclestatetype"></a>
 
 ## LifecycleStateType
 
@@ -301,6 +345,8 @@ Values:
 - `Warmed:Terminating:Proceed`
 - `Warmed:Terminating:Wait`
 
+<a id="localstoragetype"></a>
+
 ## LocalStorageType
 
 ```python
@@ -313,6 +359,8 @@ Values:
 - `included`
 - `required`
 
+<a id="localstoragetypetype"></a>
+
 ## LocalStorageTypeType
 
 ```python
@@ -323,6 +371,8 @@ Values:
 
 - `hdd`
 - `ssd`
+
+<a id="metricstatistictype"></a>
 
 ## MetricStatisticType
 
@@ -338,6 +388,8 @@ Values:
 - `SampleCount`
 - `Sum`
 
+<a id="metrictypetype"></a>
+
 ## MetricTypeType
 
 ```python
@@ -350,6 +402,8 @@ Values:
 - `ASGAverageCPUUtilization`
 - `ASGAverageNetworkIn`
 - `ASGAverageNetworkOut`
+
+<a id="predefinedloadmetrictypetype"></a>
 
 ## PredefinedLoadMetricTypeType
 
@@ -364,6 +418,8 @@ Values:
 - `ASGTotalNetworkIn`
 - `ASGTotalNetworkOut`
 
+<a id="predefinedmetricpairtypetype"></a>
+
 ## PredefinedMetricPairTypeType
 
 ```python
@@ -376,6 +432,8 @@ Values:
 - `ASGCPUUtilization`
 - `ASGNetworkIn`
 - `ASGNetworkOut`
+
+<a id="predefinedscalingmetrictypetype"></a>
 
 ## PredefinedScalingMetricTypeType
 
@@ -390,6 +448,8 @@ Values:
 - `ASGAverageNetworkIn`
 - `ASGAverageNetworkOut`
 
+<a id="predictivescalingmaxcapacitybreachbehaviortype"></a>
+
 ## PredictiveScalingMaxCapacityBreachBehaviorType
 
 ```python
@@ -400,6 +460,8 @@ Values:
 
 - `HonorMaxCapacity`
 - `IncreaseMaxCapacity`
+
+<a id="predictivescalingmodetype"></a>
 
 ## PredictiveScalingModeType
 
@@ -412,6 +474,8 @@ Values:
 - `ForecastAndScale`
 - `ForecastOnly`
 
+<a id="refreshstrategytype"></a>
+
 ## RefreshStrategyType
 
 ```python
@@ -421,6 +485,8 @@ from mypy_boto3_autoscaling.literals import RefreshStrategyType
 Values:
 
 - `Rolling`
+
+<a id="scalingactivitystatuscodetype"></a>
 
 ## ScalingActivityStatusCodeType
 
@@ -443,6 +509,8 @@ Values:
 - `WaitingForSpotInstanceId`
 - `WaitingForSpotInstanceRequestId`
 
+<a id="warmpoolstatetype"></a>
+
 ## WarmPoolStateType
 
 ```python
@@ -454,6 +522,8 @@ Values:
 - `Running`
 - `Stopped`
 
+<a id="warmpoolstatustype"></a>
+
 ## WarmPoolStatusType
 
 ```python
@@ -463,6 +533,8 @@ from mypy_boto3_autoscaling.literals import WarmPoolStatusType
 Values:
 
 - `PendingDelete`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -771,6 +843,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

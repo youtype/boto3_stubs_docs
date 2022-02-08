@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-pricing-module"></a>
+
 # Literals for boto3 Pricing module
 
 > [Index](..) > [Pricing](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Pricing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pricing.html#Pricing)
 type annotations stubs module
-[mypy_boto3_pricing](https://pypi.org/project/mypy-boto3-pricing/).
+[mypy-boto3-pricing](https://pypi.org/project/mypy-boto3-pricing/).
 
 - [Literals for boto3 Pricing module](#literals-for-boto3-pricing-module)
   - [DescribeServicesPaginatorName](#describeservicespaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [GetProductsPaginatorName](#getproductspaginatorname)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="describeservicespaginatorname"></a>
 
 ## DescribeServicesPaginatorName
 
@@ -25,6 +29,8 @@ Values:
 
 - `describe_services`
 
+<a id="filtertypetype"></a>
+
 ## FilterTypeType
 
 ```python
@@ -34,6 +40,8 @@ from mypy_boto3_pricing.literals import FilterTypeType
 Values:
 
 - `TERM_MATCH`
+
+<a id="getattributevaluespaginatorname"></a>
 
 ## GetAttributeValuesPaginatorName
 
@@ -45,6 +53,8 @@ Values:
 
 - `get_attribute_values`
 
+<a id="getproductspaginatorname"></a>
+
 ## GetProductsPaginatorName
 
 ```python
@@ -54,6 +64,8 @@ from mypy_boto3_pricing.literals import GetProductsPaginatorName
 Values:
 
 - `get_products`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -362,6 +374,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

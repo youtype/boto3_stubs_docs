@@ -1,3 +1,5 @@
+<a id="dynamodbstreamsclient-for-boto3-dynamodbstreams-module"></a>
+
 # DynamoDBStreamsClient for boto3 DynamoDBStreams module
 
 > [Index](..) > [DynamoDBStreams](.) > DynamoDBStreamsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
-[mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+[mypy-boto3-dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 - [DynamoDBStreamsClient for boto3 DynamoDBStreams module](#dynamodbstreamsclient-for-boto3-dynamodbstreams-module)
   - [DynamoDBStreamsClient](#dynamodbstreamsclient)
@@ -19,6 +21,8 @@ type annotations stubs module
     - [get_shard_iterator](#get_shard_iterator)
     - [list_streams](#list_streams)
 
+<a id="dynamodbstreamsclient"></a>
+
 ## DynamoDBStreamsClient
 
 Type annotations for `boto3.client("dynamodbstreams")`
@@ -26,14 +30,17 @@ Type annotations for `boto3.client("dynamodbstreams")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_dynamodbstreams.client import DynamoDBStreamsClient
 
 def get_dynamodbstreams_client() -> DynamoDBStreamsClient:
-    return boto3.client("dynamodbstreams")
+    return Session().client("dynamodbstreams")
 ```
 
 Boto3 documentation:
 [DynamoDBStreams.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TrimmedDataAccessException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [DynamoDBStreams.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_stream"></a>
 
 ### describe_stream
 
@@ -107,6 +122,8 @@ Keyword-only arguments:
 Returns
 [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -126,6 +143,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_records"></a>
+
 ### get_records
 
 Retrieves the stream records from a given shard.
@@ -144,6 +163,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
+
+<a id="get_shard_iterator"></a>
 
 ### get_shard_iterator
 
@@ -168,6 +189,8 @@ Keyword-only arguments:
 
 Returns
 [GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
+
+<a id="list_streams"></a>
 
 ### list_streams
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mediapackage-module"></a>
+
 # Literals for boto3 MediaPackage module
 
 > [Index](..) > [MediaPackage](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaPackage](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediapackage.html#MediaPackage)
 type annotations stubs module
-[mypy_boto3_mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
+[mypy-boto3-mediapackage](https://pypi.org/project/mypy-boto3-mediapackage/).
 
 - [Literals for boto3 MediaPackage module](#literals-for-boto3-mediapackage-module)
   - [AdMarkersType](#admarkerstype)
@@ -29,6 +31,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="admarkerstype"></a>
+
 ## AdMarkersType
 
 ```python
@@ -41,6 +45,8 @@ Values:
 - `NONE`
 - `PASSTHROUGH`
 - `SCTE35_ENHANCED`
+
+<a id="adtriggerselementtype"></a>
 
 ## AdTriggersElementType
 
@@ -59,6 +65,8 @@ Values:
 - `PROVIDER_PLACEMENT_OPPORTUNITY`
 - `SPLICE_INSERT`
 
+<a id="adsondeliveryrestrictionstype"></a>
+
 ## AdsOnDeliveryRestrictionsType
 
 ```python
@@ -72,6 +80,8 @@ Values:
 - `RESTRICTED`
 - `UNRESTRICTED`
 
+<a id="encryptionmethodtype"></a>
+
 ## EncryptionMethodType
 
 ```python
@@ -83,6 +93,8 @@ Values:
 - `AES_128`
 - `SAMPLE_AES`
 
+<a id="listchannelspaginatorname"></a>
+
 ## ListChannelsPaginatorName
 
 ```python
@@ -92,6 +104,8 @@ from mypy_boto3_mediapackage.literals import ListChannelsPaginatorName
 Values:
 
 - `list_channels`
+
+<a id="listharvestjobspaginatorname"></a>
 
 ## ListHarvestJobsPaginatorName
 
@@ -103,6 +117,8 @@ Values:
 
 - `list_harvest_jobs`
 
+<a id="listoriginendpointspaginatorname"></a>
+
 ## ListOriginEndpointsPaginatorName
 
 ```python
@@ -112,6 +128,8 @@ from mypy_boto3_mediapackage.literals import ListOriginEndpointsPaginatorName
 Values:
 
 - `list_origin_endpoints`
+
+<a id="manifestlayouttype"></a>
 
 ## ManifestLayoutType
 
@@ -124,6 +142,8 @@ Values:
 - `COMPACT`
 - `FULL`
 
+<a id="originationtype"></a>
+
 ## OriginationType
 
 ```python
@@ -135,6 +155,8 @@ Values:
 - `ALLOW`
 - `DENY`
 
+<a id="periodtriggerselementtype"></a>
+
 ## PeriodTriggersElementType
 
 ```python
@@ -144,6 +166,8 @@ from mypy_boto3_mediapackage.literals import PeriodTriggersElementType
 Values:
 
 - `ADS`
+
+<a id="playlisttypetype"></a>
 
 ## PlaylistTypeType
 
@@ -157,6 +181,8 @@ Values:
 - `NONE`
 - `VOD`
 
+<a id="presetspeke20audiotype"></a>
+
 ## PresetSpeke20AudioType
 
 ```python
@@ -166,6 +192,8 @@ from mypy_boto3_mediapackage.literals import PresetSpeke20AudioType
 Values:
 
 - `PRESET-AUDIO-1`
+
+<a id="presetspeke20videotype"></a>
 
 ## PresetSpeke20VideoType
 
@@ -177,6 +205,8 @@ Values:
 
 - `PRESET-VIDEO-1`
 
+<a id="profiletype"></a>
+
 ## ProfileType
 
 ```python
@@ -187,6 +217,8 @@ Values:
 
 - `HBBTV_1_5`
 - `NONE`
+
+<a id="segmenttemplateformattype"></a>
 
 ## SegmentTemplateFormatType
 
@@ -200,6 +232,8 @@ Values:
 - `NUMBER_WITH_TIMELINE`
 - `TIME_WITH_TIMELINE`
 
+<a id="statustype"></a>
+
 ## StatusType
 
 ```python
@@ -211,6 +245,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
+
+<a id="streamordertype"></a>
 
 ## StreamOrderType
 
@@ -224,6 +260,8 @@ Values:
 - `VIDEO_BITRATE_ASCENDING`
 - `VIDEO_BITRATE_DESCENDING`
 
+<a id="utctimingtype"></a>
+
 ## UtcTimingType
 
 ```python
@@ -235,6 +273,8 @@ Values:
 - `HTTP-HEAD`
 - `HTTP-ISO`
 - `NONE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -543,6 +583,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

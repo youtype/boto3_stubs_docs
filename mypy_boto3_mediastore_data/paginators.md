@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-mediastoredata-module"></a>
+
 # Paginators for boto3 MediaStoreData module
 
 > [Index](..) > [MediaStoreData](.) > Paginators
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [MediaStoreData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore-data.html#MediaStoreData)
 type annotations stubs module
-[mypy_boto3_mediastore_data](https://pypi.org/project/mypy-boto3-mediastore-data/).
+[mypy-boto3-mediastore-data](https://pypi.org/project/mypy-boto3-mediastore-data/).
 
 - [Paginators for boto3 MediaStoreData module](#paginators-for-boto3-mediastoredata-module)
   - [ListItemsPaginator](#listitemspaginator)
+
+<a id="listitemspaginator"></a>
 
 ## ListItemsPaginator
 
@@ -18,10 +22,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediastore_data.paginator import ListItemsPaginator
 
 def get_list_items_paginator() -> ListItemsPaginator:
-    return boto3.client("mediastore-data").get_paginator("list_items")
+    return Session().client("mediastore-data").get_paginator("list_items")
 ```
 
 Boto3 documentation:

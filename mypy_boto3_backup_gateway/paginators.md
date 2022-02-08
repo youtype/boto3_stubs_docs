@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-backupgateway-module"></a>
+
 # Paginators for boto3 BackupGateway module
 
 > [Index](..) > [BackupGateway](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
 type annotations stubs module
-[mypy_boto3_backup_gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 - [Paginators for boto3 BackupGateway module](#paginators-for-boto3-backupgateway-module)
   - [ListGatewaysPaginator](#listgatewayspaginator)
   - [ListHypervisorsPaginator](#listhypervisorspaginator)
   - [ListVirtualMachinesPaginator](#listvirtualmachinespaginator)
+
+<a id="listgatewayspaginator"></a>
 
 ## ListGatewaysPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_backup_gateway.paginator import ListGatewaysPaginator
 
 def get_list_gateways_paginator() -> ListGatewaysPaginator:
-    return boto3.client("backup-gateway").get_paginator("list_gateways")
+    return Session().client("backup-gateway").get_paginator("list_gateways")
 ```
 
 Boto3 documentation:
@@ -37,6 +43,8 @@ Arguments for `ListGatewaysPaginator.paginate` method:
 `ListGatewaysPaginator.paginate` returns
 `_PageIterator`\[[ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef)\].
 
+<a id="listhypervisorspaginator"></a>
+
 ## ListHypervisorsPaginator
 
 Type annotations for
@@ -45,10 +53,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_backup_gateway.paginator import ListHypervisorsPaginator
 
 def get_list_hypervisors_paginator() -> ListHypervisorsPaginator:
-    return boto3.client("backup-gateway").get_paginator("list_hypervisors")
+    return Session().client("backup-gateway").get_paginator("list_hypervisors")
 ```
 
 Boto3 documentation:
@@ -62,6 +72,8 @@ Arguments for `ListHypervisorsPaginator.paginate` method:
 `ListHypervisorsPaginator.paginate` returns
 `_PageIterator`\[[ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef)\].
 
+<a id="listvirtualmachinespaginator"></a>
+
 ## ListVirtualMachinesPaginator
 
 Type annotations for
@@ -70,10 +82,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_backup_gateway.paginator import ListVirtualMachinesPaginator
 
 def get_list_virtual_machines_paginator() -> ListVirtualMachinesPaginator:
-    return boto3.client("backup-gateway").get_paginator("list_virtual_machines")
+    return Session().client("backup-gateway").get_paginator("list_virtual_machines")
 ```
 
 Boto3 documentation:

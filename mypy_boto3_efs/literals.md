@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-efs-module"></a>
+
 # Literals for boto3 EFS module
 
 > [Index](..) > [EFS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
 type annotations stubs module
-[mypy_boto3_efs](https://pypi.org/project/mypy-boto3-efs/).
+[mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
 
 - [Literals for boto3 EFS module](#literals-for-boto3-efs-module)
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="describefilesystemspaginatorname"></a>
+
 ## DescribeFileSystemsPaginatorName
 
 ```python
@@ -32,6 +36,8 @@ from mypy_boto3_efs.literals import DescribeFileSystemsPaginatorName
 Values:
 
 - `describe_file_systems`
+
+<a id="describemounttargetspaginatorname"></a>
 
 ## DescribeMountTargetsPaginatorName
 
@@ -43,6 +49,8 @@ Values:
 
 - `describe_mount_targets`
 
+<a id="describetagspaginatorname"></a>
+
 ## DescribeTagsPaginatorName
 
 ```python
@@ -52,6 +60,8 @@ from mypy_boto3_efs.literals import DescribeTagsPaginatorName
 Values:
 
 - `describe_tags`
+
+<a id="lifecyclestatetype"></a>
 
 ## LifeCycleStateType
 
@@ -68,6 +78,8 @@ Values:
 - `error`
 - `updating`
 
+<a id="performancemodetype"></a>
+
 ## PerformanceModeType
 
 ```python
@@ -78,6 +90,8 @@ Values:
 
 - `generalPurpose`
 - `maxIO`
+
+<a id="replicationstatustype"></a>
 
 ## ReplicationStatusType
 
@@ -92,6 +106,8 @@ Values:
 - `ENABLING`
 - `ERROR`
 
+<a id="resourceidtypetype"></a>
+
 ## ResourceIdTypeType
 
 ```python
@@ -103,6 +119,8 @@ Values:
 - `LONG_ID`
 - `SHORT_ID`
 
+<a id="resourcetype"></a>
+
 ## ResourceType
 
 ```python
@@ -113,6 +131,8 @@ Values:
 
 - `FILE_SYSTEM`
 - `MOUNT_TARGET`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -127,6 +147,8 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
+<a id="throughputmodetype"></a>
+
 ## ThroughputModeType
 
 ```python
@@ -137,6 +159,8 @@ Values:
 
 - `bursting`
 - `provisioned`
+
+<a id="transitiontoiarulestype"></a>
 
 ## TransitionToIARulesType
 
@@ -152,6 +176,8 @@ Values:
 - `AFTER_7_DAYS`
 - `AFTER_90_DAYS`
 
+<a id="transitiontoprimarystorageclassrulestype"></a>
+
 ## TransitionToPrimaryStorageClassRulesType
 
 ```python
@@ -161,6 +187,8 @@ from mypy_boto3_efs.literals import TransitionToPrimaryStorageClassRulesType
 Values:
 
 - `AFTER_1_ACCESS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -469,6 +497,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

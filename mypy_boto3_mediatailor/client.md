@@ -1,3 +1,5 @@
+<a id="mediatailorclient-for-boto3-mediatailor-module"></a>
+
 # MediaTailorClient for boto3 MediaTailor module
 
 > [Index](..) > [MediaTailor](.) > MediaTailorClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
-[mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+[mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 - [MediaTailorClient for boto3 MediaTailor module](#mediatailorclient-for-boto3-mediatailor-module)
   - [MediaTailorClient](#mediatailorclient)
@@ -53,6 +55,8 @@ type annotations stubs module
     - [update_vod_source](#update_vod_source)
     - [get_paginator](#get_paginator)
 
+<a id="mediatailorclient"></a>
+
 ## MediaTailorClient
 
 Type annotations for `boto3.client("mediatailor")`
@@ -60,14 +64,17 @@ Type annotations for `boto3.client("mediatailor")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediatailor.client import MediaTailorClient
 
 def get_mediatailor_client() -> MediaTailorClient:
-    return boto3.client("mediatailor")
+    return Session().client("mediatailor")
 ```
 
 Boto3 documentation:
 [MediaTailor.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.BadRequestException`
 - `Exceptions.ClientError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [MediaTailor.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -113,6 +126,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="configure_logs_for_playback_configuration"></a>
 
 ### configure_logs_for_playback_configuration
 
@@ -134,6 +149,8 @@ Keyword-only arguments:
 
 Returns
 [ConfigureLogsForPlaybackConfigurationResponseTypeDef](./type_defs.md#configurelogsforplaybackconfigurationresponsetypedef).
+
+<a id="create_channel"></a>
 
 ### create_channel
 
@@ -160,6 +177,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
+
+<a id="create_prefetch_schedule"></a>
 
 ### create_prefetch_schedule
 
@@ -189,6 +208,8 @@ Keyword-only arguments:
 Returns
 [CreatePrefetchScheduleResponseTypeDef](./type_defs.md#createprefetchscheduleresponsetypedef).
 
+<a id="create_program"></a>
+
 ### create_program
 
 Creates a program.
@@ -214,6 +235,8 @@ Keyword-only arguments:
 
 Returns
 [CreateProgramResponseTypeDef](./type_defs.md#createprogramresponsetypedef).
+
+<a id="create_source_location"></a>
 
 ### create_source_location
 
@@ -245,6 +268,8 @@ Keyword-only arguments:
 Returns
 [CreateSourceLocationResponseTypeDef](./type_defs.md#createsourcelocationresponsetypedef).
 
+<a id="create_vod_source"></a>
+
 ### create_vod_source
 
 Creates name for a specific VOD source in a source location.
@@ -269,6 +294,8 @@ Keyword-only arguments:
 Returns
 [CreateVodSourceResponseTypeDef](./type_defs.md#createvodsourceresponsetypedef).
 
+<a id="delete_channel"></a>
+
 ### delete_channel
 
 Deletes a channel.
@@ -286,6 +313,8 @@ Keyword-only arguments:
 - `ChannelName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_channel_policy"></a>
 
 ### delete_channel_policy
 
@@ -306,6 +335,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_playback_configuration"></a>
+
 ### delete_playback_configuration
 
 Deletes the playback configuration for the specified name.
@@ -324,6 +355,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_prefetch_schedule"></a>
 
 ### delete_prefetch_schedule
 
@@ -345,6 +378,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_program"></a>
+
 ### delete_program
 
 Deletes a specific program on a specific channel.
@@ -363,6 +398,8 @@ Keyword-only arguments:
 - `ProgramName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_source_location"></a>
 
 ### delete_source_location
 
@@ -383,6 +420,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_vod_source"></a>
+
 ### delete_vod_source
 
 Deletes a specific VOD source in a specific source location.
@@ -402,6 +441,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_channel"></a>
+
 ### describe_channel
 
 Describes the properties of a specific channel.
@@ -420,6 +461,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
+
+<a id="describe_program"></a>
 
 ### describe_program
 
@@ -441,6 +484,8 @@ Keyword-only arguments:
 Returns
 [DescribeProgramResponseTypeDef](./type_defs.md#describeprogramresponsetypedef).
 
+<a id="describe_source_location"></a>
+
 ### describe_source_location
 
 Retrieves the properties of the requested source location.
@@ -460,6 +505,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSourceLocationResponseTypeDef](./type_defs.md#describesourcelocationresponsetypedef).
+
+<a id="describe_vod_source"></a>
 
 ### describe_vod_source
 
@@ -481,6 +528,8 @@ Keyword-only arguments:
 Returns
 [DescribeVodSourceResponseTypeDef](./type_defs.md#describevodsourceresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -500,6 +549,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_channel_policy"></a>
+
 ### get_channel_policy
 
 Retrieves information about a channel's IAM policy.
@@ -518,6 +569,8 @@ Keyword-only arguments:
 
 Returns
 [GetChannelPolicyResponseTypeDef](./type_defs.md#getchannelpolicyresponsetypedef).
+
+<a id="get_channel_schedule"></a>
 
 ### get_channel_schedule
 
@@ -541,6 +594,8 @@ Keyword-only arguments:
 Returns
 [GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef).
 
+<a id="get_playback_configuration"></a>
+
 ### get_playback_configuration
 
 Returns the playback configuration for the specified name.
@@ -560,6 +615,8 @@ Keyword-only arguments:
 
 Returns
 [GetPlaybackConfigurationResponseTypeDef](./type_defs.md#getplaybackconfigurationresponsetypedef).
+
+<a id="get_prefetch_schedule"></a>
 
 ### get_prefetch_schedule
 
@@ -583,6 +640,8 @@ Keyword-only arguments:
 Returns
 [GetPrefetchScheduleResponseTypeDef](./type_defs.md#getprefetchscheduleresponsetypedef).
 
+<a id="list_alerts"></a>
+
 ### list_alerts
 
 Returns a list of alerts for the given resource.
@@ -603,6 +662,8 @@ Keyword-only arguments:
 
 Returns [ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef).
 
+<a id="list_channels"></a>
+
 ### list_channels
 
 Retrieves a list of channels that are associated with this account.
@@ -622,6 +683,8 @@ Keyword-only arguments:
 
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
+
+<a id="list_playback_configurations"></a>
 
 ### list_playback_configurations
 
@@ -644,6 +707,8 @@ Keyword-only arguments:
 
 Returns
 [ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef).
+
+<a id="list_prefetch_schedules"></a>
 
 ### list_prefetch_schedules
 
@@ -668,6 +733,8 @@ Keyword-only arguments:
 Returns
 [ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef).
 
+<a id="list_source_locations"></a>
+
 ### list_source_locations
 
 Retrieves a list of source locations.
@@ -688,6 +755,8 @@ Keyword-only arguments:
 
 Returns
 [ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -710,6 +779,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_vod_sources"></a>
+
 ### list_vod_sources
 
 Lists all the VOD sources in a source location.
@@ -731,6 +802,8 @@ Keyword-only arguments:
 Returns
 [ListVodSourcesResponseTypeDef](./type_defs.md#listvodsourcesresponsetypedef).
 
+<a id="put_channel_policy"></a>
+
 ### put_channel_policy
 
 Creates an IAM policy for the channel.
@@ -749,6 +822,8 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_playback_configuration"></a>
 
 ### put_playback_configuration
 
@@ -788,6 +863,8 @@ Keyword-only arguments:
 Returns
 [PutPlaybackConfigurationResponseTypeDef](./type_defs.md#putplaybackconfigurationresponsetypedef).
 
+<a id="start_channel"></a>
+
 ### start_channel
 
 Starts a specific channel.
@@ -805,6 +882,8 @@ Keyword-only arguments:
 - `ChannelName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="stop_channel"></a>
 
 ### stop_channel
 
@@ -824,6 +903,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds tags to the specified playback configuration resource.
@@ -841,6 +922,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the specified playback configuration resource.
@@ -857,6 +940,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_channel"></a>
 
 ### update_channel
 
@@ -880,6 +965,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
+
+<a id="update_source_location"></a>
 
 ### update_source_location
 
@@ -910,6 +997,8 @@ Keyword-only arguments:
 Returns
 [UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef).
 
+<a id="update_vod_source"></a>
+
 ### update_vod_source
 
 Updates a specific VOD source in a specific source location.
@@ -932,6 +1021,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVodSourceResponseTypeDef](./type_defs.md#updatevodsourceresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

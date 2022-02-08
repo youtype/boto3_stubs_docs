@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-appregistry-module"></a>
+
 # Type annotations for boto3 AppRegistry module
 
 > [Index](..) > AppRegistry
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AppRegistry](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog-appregistry.html#AppRegistry)
 type annotations stubs module
-[mypy_boto3_servicecatalog_appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
+[mypy-boto3-servicecatalog-appregistry](https://pypi.org/project/mypy-boto3-servicecatalog-appregistry/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[servicecatalog-appregistry]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[servicecatalog-appregistry]'
+
+# standalone installation
 pip install mypy-boto3-servicecatalog-appregistry
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-servicecatalog-appregistry
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="appregistryclient"></a>
+
 ## AppRegistryClient
 
 Type annotations for `boto3.client("servicecatalog-appregistry")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -58,6 +72,8 @@ from mypy_boto3_servicecatalog_appregistry.client import AppRegistryClient
 - [update_application](./client.md#update_application)
 - [update_attribute_group](./client.md#update_attribute_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AppRegistryClient [exceptions](./client.md#exceptions)
@@ -69,6 +85,8 @@ AppRegistryClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -77,13 +95,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_servicecatalog_appregistry.paginators import ListApplicationsPaginator, ...
+from mypy_boto3_servicecatalog_appregistry.paginator import ListApplicationsPaginator, ...
 ```
 
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
 - [ListAssociatedAttributeGroupsPaginator](./paginators.md#listassociatedattributegroupspaginator)
 - [ListAssociatedResourcesPaginator](./paginators.md#listassociatedresourcespaginator)
 - [ListAttributeGroupsPaginator](./paginators.md#listattributegroupspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -104,6 +124,8 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 - [SyncActionType](./literals.md#syncactiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

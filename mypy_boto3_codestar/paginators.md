@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-codestar-module"></a>
+
 # Paginators for boto3 CodeStar module
 
 > [Index](..) > [CodeStar](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [CodeStar](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar.html#CodeStar)
 type annotations stubs module
-[mypy_boto3_codestar](https://pypi.org/project/mypy-boto3-codestar/).
+[mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
 - [Paginators for boto3 CodeStar module](#paginators-for-boto3-codestar-module)
   - [ListProjectsPaginator](#listprojectspaginator)
   - [ListResourcesPaginator](#listresourcespaginator)
   - [ListTeamMembersPaginator](#listteammemberspaginator)
   - [ListUserProfilesPaginator](#listuserprofilespaginator)
+
+<a id="listprojectspaginator"></a>
 
 ## ListProjectsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for `boto3.client("codestar").get_paginator("list_projects")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codestar.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
-    return boto3.client("codestar").get_paginator("list_projects")
+    return Session().client("codestar").get_paginator("list_projects")
 ```
 
 Boto3 documentation:
@@ -37,6 +43,8 @@ Arguments for `ListProjectsPaginator.paginate` method:
 `ListProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectsResultTypeDef](./type_defs.md#listprojectsresulttypedef)\].
 
+<a id="listresourcespaginator"></a>
+
 ## ListResourcesPaginator
 
 Type annotations for
@@ -45,10 +53,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codestar.paginator import ListResourcesPaginator
 
 def get_list_resources_paginator() -> ListResourcesPaginator:
-    return boto3.client("codestar").get_paginator("list_resources")
+    return Session().client("codestar").get_paginator("list_resources")
 ```
 
 Boto3 documentation:
@@ -63,6 +73,8 @@ Arguments for `ListResourcesPaginator.paginate` method:
 `ListResourcesPaginator.paginate` returns
 `_PageIterator`\[[ListResourcesResultTypeDef](./type_defs.md#listresourcesresulttypedef)\].
 
+<a id="listteammemberspaginator"></a>
+
 ## ListTeamMembersPaginator
 
 Type annotations for
@@ -71,10 +83,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codestar.paginator import ListTeamMembersPaginator
 
 def get_list_team_members_paginator() -> ListTeamMembersPaginator:
-    return boto3.client("codestar").get_paginator("list_team_members")
+    return Session().client("codestar").get_paginator("list_team_members")
 ```
 
 Boto3 documentation:
@@ -89,6 +103,8 @@ Arguments for `ListTeamMembersPaginator.paginate` method:
 `ListTeamMembersPaginator.paginate` returns
 `_PageIterator`\[[ListTeamMembersResultTypeDef](./type_defs.md#listteammembersresulttypedef)\].
 
+<a id="listuserprofilespaginator"></a>
+
 ## ListUserProfilesPaginator
 
 Type annotations for
@@ -97,10 +113,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_codestar.paginator import ListUserProfilesPaginator
 
 def get_list_user_profiles_paginator() -> ListUserProfilesPaginator:
-    return boto3.client("codestar").get_paginator("list_user_profiles")
+    return Session().client("codestar").get_paginator("list_user_profiles")
 ```
 
 Boto3 documentation:

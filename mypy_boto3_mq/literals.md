@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-mq-module"></a>
+
 # Literals for boto3 MQ module
 
 > [Index](..) > [MQ](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MQ](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mq.html#MQ)
 type annotations stubs module
-[mypy_boto3_mq](https://pypi.org/project/mypy-boto3-mq/).
+[mypy-boto3-mq](https://pypi.org/project/mypy-boto3-mq/).
 
 - [Literals for boto3 MQ module](#literals-for-boto3-mq-module)
   - [AuthenticationStrategyType](#authenticationstrategytype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="authenticationstrategytype"></a>
+
 ## AuthenticationStrategyType
 
 ```python
@@ -30,6 +34,8 @@ Values:
 
 - `LDAP`
 - `SIMPLE`
+
+<a id="brokerstatetype"></a>
 
 ## BrokerStateType
 
@@ -45,6 +51,8 @@ Values:
 - `REBOOT_IN_PROGRESS`
 - `RUNNING`
 
+<a id="brokerstoragetypetype"></a>
+
 ## BrokerStorageTypeType
 
 ```python
@@ -55,6 +63,8 @@ Values:
 
 - `EBS`
 - `EFS`
+
+<a id="changetypetype"></a>
 
 ## ChangeTypeType
 
@@ -67,6 +77,8 @@ Values:
 - `CREATE`
 - `DELETE`
 - `UPDATE`
+
+<a id="dayofweektype"></a>
 
 ## DayOfWeekType
 
@@ -84,6 +96,8 @@ Values:
 - `TUESDAY`
 - `WEDNESDAY`
 
+<a id="deploymentmodetype"></a>
+
 ## DeploymentModeType
 
 ```python
@@ -96,6 +110,8 @@ Values:
 - `CLUSTER_MULTI_AZ`
 - `SINGLE_INSTANCE`
 
+<a id="enginetypetype"></a>
+
 ## EngineTypeType
 
 ```python
@@ -107,6 +123,8 @@ Values:
 - `ACTIVEMQ`
 - `RABBITMQ`
 
+<a id="listbrokerspaginatorname"></a>
+
 ## ListBrokersPaginatorName
 
 ```python
@@ -116,6 +134,8 @@ from mypy_boto3_mq.literals import ListBrokersPaginatorName
 Values:
 
 - `list_brokers`
+
+<a id="sanitizationwarningreasontype"></a>
 
 ## SanitizationWarningReasonType
 
@@ -128,6 +148,8 @@ Values:
 - `DISALLOWED_ATTRIBUTE_REMOVED`
 - `DISALLOWED_ELEMENT_REMOVED`
 - `INVALID_ATTRIBUTE_VALUE_REMOVED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -436,6 +458,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

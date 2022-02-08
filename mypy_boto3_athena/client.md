@@ -1,3 +1,5 @@
+<a id="athenaclient-for-boto3-athena-module"></a>
+
 # AthenaClient for boto3 Athena module
 
 > [Index](..) > [Athena](.) > AthenaClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module
-[mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
+[mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [AthenaClient for boto3 Athena module](#athenaclient-for-boto3-athena-module)
   - [AthenaClient](#athenaclient)
@@ -50,6 +52,8 @@ type annotations stubs module
     - [update_work_group](#update_work_group)
     - [get_paginator](#get_paginator)
 
+<a id="athenaclient"></a>
+
 ## AthenaClient
 
 Type annotations for `boto3.client("athena")`
@@ -57,14 +61,17 @@ Type annotations for `boto3.client("athena")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_athena.client import AthenaClient
 
 def get_athena_client() -> AthenaClient:
-    return boto3.client("athena")
+    return Session().client("athena")
 ```
 
 Boto3 documentation:
 [Athena.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -87,7 +94,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -99,6 +110,8 @@ Boto3 documentation:
 [Athena.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_get_named_query"></a>
 
 ### batch_get_named_query
 
@@ -120,6 +133,8 @@ Keyword-only arguments:
 Returns
 [BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef).
 
+<a id="batch_get_query_execution"></a>
+
 ### batch_get_query_execution
 
 Returns the details of a single query execution or a list of up to 50 query
@@ -140,6 +155,8 @@ Keyword-only arguments:
 Returns
 [BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -154,6 +171,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_data_catalog"></a>
 
 ### create_data_catalog
 
@@ -176,6 +195,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_named_query"></a>
 
 ### create_named_query
 
@@ -201,6 +222,8 @@ Keyword-only arguments:
 Returns
 [CreateNamedQueryOutputTypeDef](./type_defs.md#createnamedqueryoutputtypedef).
 
+<a id="create_prepared_statement"></a>
+
 ### create_prepared_statement
 
 Creates a prepared statement for use with SQL queries in Athena.
@@ -221,6 +244,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_work_group"></a>
 
 ### create_work_group
 
@@ -244,6 +269,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_data_catalog"></a>
+
 ### delete_data_catalog
 
 Deletes a data catalog.
@@ -261,6 +288,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_named_query"></a>
 
 ### delete_named_query
 
@@ -280,6 +309,8 @@ Keyword-only arguments:
 - `NamedQueryId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_prepared_statement"></a>
 
 ### delete_prepared_statement
 
@@ -301,6 +332,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_work_group"></a>
+
 ### delete_work_group
 
 Deletes the workgroup with the specified name.
@@ -320,6 +353,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -337,6 +372,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_data_catalog"></a>
 
 ### get_data_catalog
 
@@ -357,6 +394,8 @@ Keyword-only arguments:
 Returns
 [GetDataCatalogOutputTypeDef](./type_defs.md#getdatacatalogoutputtypedef).
 
+<a id="get_database"></a>
+
 ### get_database
 
 Returns a database object for the specified database and data catalog.
@@ -376,6 +415,8 @@ Keyword-only arguments:
 
 Returns [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef).
 
+<a id="get_named_query"></a>
+
 ### get_named_query
 
 Returns information about a single query.
@@ -394,6 +435,8 @@ Keyword-only arguments:
 
 Returns
 [GetNamedQueryOutputTypeDef](./type_defs.md#getnamedqueryoutputtypedef).
+
+<a id="get_prepared_statement"></a>
 
 ### get_prepared_statement
 
@@ -416,6 +459,8 @@ Keyword-only arguments:
 Returns
 [GetPreparedStatementOutputTypeDef](./type_defs.md#getpreparedstatementoutputtypedef).
 
+<a id="get_query_execution"></a>
+
 ### get_query_execution
 
 Returns information about a single execution of a query if you have access to
@@ -435,6 +480,8 @@ Keyword-only arguments:
 
 Returns
 [GetQueryExecutionOutputTypeDef](./type_defs.md#getqueryexecutionoutputtypedef).
+
+<a id="get_query_results"></a>
 
 ### get_query_results
 
@@ -458,6 +505,8 @@ Keyword-only arguments:
 Returns
 [GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef).
 
+<a id="get_table_metadata"></a>
+
 ### get_table_metadata
 
 Returns table metadata for the specified catalog, database, and table.
@@ -479,6 +528,8 @@ Keyword-only arguments:
 Returns
 [GetTableMetadataOutputTypeDef](./type_defs.md#gettablemetadataoutputtypedef).
 
+<a id="get_work_group"></a>
+
 ### get_work_group
 
 Returns information about the workgroup with the specified name.
@@ -496,6 +547,8 @@ Keyword-only arguments:
 - `WorkGroup`: `str` *(required)*
 
 Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
+
+<a id="list_data_catalogs"></a>
 
 ### list_data_catalogs
 
@@ -516,6 +569,8 @@ Keyword-only arguments:
 
 Returns
 [ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef).
+
+<a id="list_databases"></a>
 
 ### list_databases
 
@@ -538,6 +593,8 @@ Keyword-only arguments:
 Returns
 [ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef).
 
+<a id="list_engine_versions"></a>
+
 ### list_engine_versions
 
 Returns a list of engine versions that are available to choose from, including
@@ -558,6 +615,8 @@ Keyword-only arguments:
 
 Returns
 [ListEngineVersionsOutputTypeDef](./type_defs.md#listengineversionsoutputtypedef).
+
+<a id="list_named_queries"></a>
 
 ### list_named_queries
 
@@ -581,6 +640,8 @@ Keyword-only arguments:
 Returns
 [ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef).
 
+<a id="list_prepared_statements"></a>
+
 ### list_prepared_statements
 
 Lists the prepared statements in the specfied workgroup.
@@ -601,6 +662,8 @@ Keyword-only arguments:
 
 Returns
 [ListPreparedStatementsOutputTypeDef](./type_defs.md#listpreparedstatementsoutputtypedef).
+
+<a id="list_query_executions"></a>
 
 ### list_query_executions
 
@@ -623,6 +686,8 @@ Keyword-only arguments:
 
 Returns
 [ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef).
+
+<a id="list_table_metadata"></a>
 
 ### list_table_metadata
 
@@ -647,6 +712,8 @@ Keyword-only arguments:
 Returns
 [ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags associated with an Athena workgroup or data catalog resource.
@@ -668,6 +735,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+<a id="list_work_groups"></a>
+
 ### list_work_groups
 
 Lists available workgroups for the account.
@@ -687,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [ListWorkGroupsOutputTypeDef](./type_defs.md#listworkgroupsoutputtypedef).
+
+<a id="start_query_execution"></a>
 
 ### start_query_execution
 
@@ -713,6 +784,8 @@ Keyword-only arguments:
 Returns
 [StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef).
 
+<a id="stop_query_execution"></a>
+
 ### stop_query_execution
 
 Stops a query execution.
@@ -730,6 +803,8 @@ Keyword-only arguments:
 - `QueryExecutionId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -750,6 +825,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from a data catalog or workgroup resource.
@@ -768,6 +845,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_data_catalog"></a>
 
 ### update_data_catalog
 
@@ -790,6 +869,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_prepared_statement"></a>
+
 ### update_prepared_statement
 
 Updates a prepared statement.
@@ -810,6 +891,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_work_group"></a>
 
 ### update_work_group
 
@@ -832,6 +915,8 @@ Keyword-only arguments:
 - `State`: [WorkGroupStateType](./literals.md#workgroupstatetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

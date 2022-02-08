@@ -1,3 +1,5 @@
+<a id="xrayclient-for-boto3-xray-module"></a>
+
 # XRayClient for boto3 XRay module
 
 > [Index](..) > [XRay](.) > XRayClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [XRay](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay)
 type annotations stubs module
-[mypy_boto3_xray](https://pypi.org/project/mypy-boto3-xray/).
+[mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
 - [XRayClient for boto3 XRay module](#xrayclient-for-boto3-xray-module)
   - [XRayClient](#xrayclient)
@@ -43,6 +45,8 @@ type annotations stubs module
     - [update_sampling_rule](#update_sampling_rule)
     - [get_paginator](#get_paginator)
 
+<a id="xrayclient"></a>
+
 ## XRayClient
 
 Type annotations for `boto3.client("xray")`
@@ -50,14 +54,17 @@ Type annotations for `boto3.client("xray")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_xray.client import XRayClient
 
 def get_xray_client() -> XRayClient:
-    return boto3.client("xray")
+    return Session().client("xray")
 ```
 
 Boto3 documentation:
 [XRay.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -80,7 +87,11 @@ Exceptions:
 - `Exceptions.ThrottledException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -92,6 +103,8 @@ Boto3 documentation:
 [XRay.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/xray.html#XRay.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_get_traces"></a>
 
 ### batch_get_traces
 
@@ -113,6 +126,8 @@ Keyword-only arguments:
 Returns
 [BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -127,6 +142,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_group"></a>
 
 ### create_group
 
@@ -150,6 +167,8 @@ Keyword-only arguments:
 
 Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
 
+<a id="create_sampling_rule"></a>
+
 ### create_sampling_rule
 
 Creates a rule to control sampling behavior for instrumented applications.
@@ -171,6 +190,8 @@ Keyword-only arguments:
 Returns
 [CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef).
 
+<a id="delete_group"></a>
+
 ### delete_group
 
 Deletes a group resource.
@@ -189,6 +210,8 @@ Keyword-only arguments:
 - `GroupARN`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_sampling_rule"></a>
 
 ### delete_sampling_rule
 
@@ -210,6 +233,8 @@ Keyword-only arguments:
 Returns
 [DeleteSamplingRuleResultTypeDef](./type_defs.md#deletesamplingruleresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -228,6 +253,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_encryption_config"></a>
+
 ### get_encryption_config
 
 Retrieves the current encryption configuration for X-Ray data.
@@ -239,6 +266,8 @@ Boto3 documentation:
 
 Returns
 [GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef).
+
+<a id="get_group"></a>
 
 ### get_group
 
@@ -259,6 +288,8 @@ Keyword-only arguments:
 
 Returns [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef).
 
+<a id="get_groups"></a>
+
 ### get_groups
 
 Retrieves all active group details.
@@ -277,6 +308,8 @@ Keyword-only arguments:
 
 Returns [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef).
 
+<a id="get_insight"></a>
+
 ### get_insight
 
 Retrieves the summary information of an insight.
@@ -294,6 +327,8 @@ Keyword-only arguments:
 - `InsightId`: `str` *(required)*
 
 Returns [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef).
+
+<a id="get_insight_events"></a>
 
 ### get_insight_events
 
@@ -317,6 +352,8 @@ Keyword-only arguments:
 Returns
 [GetInsightEventsResultTypeDef](./type_defs.md#getinsighteventsresulttypedef).
 
+<a id="get_insight_impact_graph"></a>
+
 ### get_insight_impact_graph
 
 Retrieves a service graph structure filtered by the specified insight.
@@ -338,6 +375,8 @@ Keyword-only arguments:
 
 Returns
 [GetInsightImpactGraphResultTypeDef](./type_defs.md#getinsightimpactgraphresulttypedef).
+
+<a id="get_insight_summaries"></a>
 
 ### get_insight_summaries
 
@@ -365,6 +404,8 @@ Keyword-only arguments:
 Returns
 [GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef).
 
+<a id="get_sampling_rules"></a>
+
 ### get_sampling_rules
 
 Retrieves all sampling rules.
@@ -383,6 +424,8 @@ Keyword-only arguments:
 
 Returns
 [GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef).
+
+<a id="get_sampling_statistic_summaries"></a>
 
 ### get_sampling_statistic_summaries
 
@@ -403,6 +446,8 @@ Keyword-only arguments:
 
 Returns
 [GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef).
+
+<a id="get_sampling_targets"></a>
 
 ### get_sampling_targets
 
@@ -425,6 +470,8 @@ Keyword-only arguments:
 
 Returns
 [GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef).
+
+<a id="get_service_graph"></a>
 
 ### get_service_graph
 
@@ -449,6 +496,8 @@ Keyword-only arguments:
 
 Returns
 [GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef).
+
+<a id="get_time_series_service_statistics"></a>
 
 ### get_time_series_service_statistics
 
@@ -477,6 +526,8 @@ Keyword-only arguments:
 Returns
 [GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef).
 
+<a id="get_trace_graph"></a>
+
 ### get_trace_graph
 
 Retrieves a service graph for one or more specific trace IDs.
@@ -496,6 +547,8 @@ Keyword-only arguments:
 
 Returns
 [GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef).
+
+<a id="get_trace_summaries"></a>
 
 ### get_trace_summaries
 
@@ -524,6 +577,8 @@ Keyword-only arguments:
 Returns
 [GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags that are applied to the specified Amazon Web Services
@@ -545,6 +600,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_encryption_config"></a>
+
 ### put_encryption_config
 
 Updates the encryption configuration for X-Ray data.
@@ -564,6 +621,8 @@ Keyword-only arguments:
 
 Returns
 [PutEncryptionConfigResultTypeDef](./type_defs.md#putencryptionconfigresulttypedef).
+
+<a id="put_telemetry_records"></a>
 
 ### put_telemetry_records
 
@@ -588,6 +647,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_trace_segments"></a>
+
 ### put_trace_segments
 
 Uploads segment documents to Amazon Web Services X-Ray.
@@ -606,6 +667,8 @@ Keyword-only arguments:
 
 Returns
 [PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -626,6 +689,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from an Amazon Web Services X-Ray group or sampling rule.
@@ -644,6 +709,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_group"></a>
 
 ### update_group
 
@@ -667,6 +734,8 @@ Keyword-only arguments:
 
 Returns [UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef).
 
+<a id="update_sampling_rule"></a>
+
 ### update_sampling_rule
 
 Modifies a sampling rule's configuration.
@@ -687,6 +756,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSamplingRuleResultTypeDef](./type_defs.md#updatesamplingruleresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-emrcontainers-module"></a>
+
 # Literals for boto3 EMRContainers module
 
 > [Index](..) > [EMRContainers](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EMRContainers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/emr-containers.html#EMRContainers)
 type annotations stubs module
-[mypy_boto3_emr_containers](https://pypi.org/project/mypy-boto3-emr-containers/).
+[mypy-boto3-emr-containers](https://pypi.org/project/mypy-boto3-emr-containers/).
 
 - [Literals for boto3 EMRContainers module](#literals-for-boto3-emrcontainers-module)
   - [ContainerProviderTypeType](#containerprovidertypetype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="containerprovidertypetype"></a>
+
 ## ContainerProviderTypeType
 
 ```python
@@ -29,6 +33,8 @@ from mypy_boto3_emr_containers.literals import ContainerProviderTypeType
 Values:
 
 - `EKS`
+
+<a id="endpointstatetype"></a>
 
 ## EndpointStateType
 
@@ -44,6 +50,8 @@ Values:
 - `TERMINATED_WITH_ERRORS`
 - `TERMINATING`
 
+<a id="failurereasontype"></a>
+
 ## FailureReasonType
 
 ```python
@@ -56,6 +64,8 @@ Values:
 - `INTERNAL_ERROR`
 - `USER_ERROR`
 - `VALIDATION_ERROR`
+
+<a id="jobrunstatetype"></a>
 
 ## JobRunStateType
 
@@ -73,6 +83,8 @@ Values:
 - `RUNNING`
 - `SUBMITTED`
 
+<a id="listjobrunspaginatorname"></a>
+
 ## ListJobRunsPaginatorName
 
 ```python
@@ -82,6 +94,8 @@ from mypy_boto3_emr_containers.literals import ListJobRunsPaginatorName
 Values:
 
 - `list_job_runs`
+
+<a id="listmanagedendpointspaginatorname"></a>
 
 ## ListManagedEndpointsPaginatorName
 
@@ -93,6 +107,8 @@ Values:
 
 - `list_managed_endpoints`
 
+<a id="listvirtualclusterspaginatorname"></a>
+
 ## ListVirtualClustersPaginatorName
 
 ```python
@@ -102,6 +118,8 @@ from mypy_boto3_emr_containers.literals import ListVirtualClustersPaginatorName
 Values:
 
 - `list_virtual_clusters`
+
+<a id="persistentappuitype"></a>
 
 ## PersistentAppUIType
 
@@ -113,6 +131,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="virtualclusterstatetype"></a>
 
 ## VirtualClusterStateType
 
@@ -126,6 +146,8 @@ Values:
 - `RUNNING`
 - `TERMINATED`
 - `TERMINATING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -434,6 +456,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

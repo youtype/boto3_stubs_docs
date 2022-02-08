@@ -1,3 +1,5 @@
+<a id="mediastoreclient-for-boto3-mediastore-module"></a>
+
 # MediaStoreClient for boto3 MediaStore module
 
 > [Index](..) > [MediaStore](.) > MediaStoreClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore)
 type annotations stubs module
-[mypy_boto3_mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
+[mypy-boto3-mediastore](https://pypi.org/project/mypy-boto3-mediastore/).
 
 - [MediaStoreClient for boto3 MediaStore module](#mediastoreclient-for-boto3-mediastore-module)
   - [MediaStoreClient](#mediastoreclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="mediastoreclient"></a>
+
 ## MediaStoreClient
 
 Type annotations for `boto3.client("mediastore")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("mediastore")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediastore.client import MediaStoreClient
 
 def get_mediastore_client() -> MediaStoreClient:
-    return boto3.client("mediastore")
+    return Session().client("mediastore")
 ```
 
 Boto3 documentation:
 [MediaStore.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -75,7 +82,11 @@ Exceptions:
 - `Exceptions.LimitExceededException`
 - `Exceptions.PolicyNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -87,6 +98,8 @@ Boto3 documentation:
 [MediaStore.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediastore.html#MediaStore.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -102,6 +115,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_container"></a>
 
 ### create_container
 
@@ -123,6 +138,8 @@ Keyword-only arguments:
 Returns
 [CreateContainerOutputTypeDef](./type_defs.md#createcontaineroutputtypedef).
 
+<a id="delete_container"></a>
+
 ### delete_container
 
 Deletes the specified container.
@@ -140,6 +157,8 @@ Keyword-only arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_container_policy"></a>
 
 ### delete_container_policy
 
@@ -160,6 +179,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_cors_policy"></a>
+
 ### delete_cors_policy
 
 Deletes the cross-origin resource sharing (CORS) configuration information that
@@ -178,6 +199,8 @@ Keyword-only arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_lifecycle_policy"></a>
 
 ### delete_lifecycle_policy
 
@@ -198,6 +221,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_metric_policy"></a>
+
 ### delete_metric_policy
 
 Deletes the metric policy that is associated with the specified container.
@@ -215,6 +240,8 @@ Keyword-only arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_container"></a>
 
 ### describe_container
 
@@ -235,6 +262,8 @@ Keyword-only arguments:
 Returns
 [DescribeContainerOutputTypeDef](./type_defs.md#describecontaineroutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -254,6 +283,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_container_policy"></a>
+
 ### get_container_policy
 
 Retrieves the access policy for the specified container.
@@ -272,6 +303,8 @@ Keyword-only arguments:
 
 Returns
 [GetContainerPolicyOutputTypeDef](./type_defs.md#getcontainerpolicyoutputtypedef).
+
+<a id="get_cors_policy"></a>
 
 ### get_cors_policy
 
@@ -293,6 +326,8 @@ Keyword-only arguments:
 Returns
 [GetCorsPolicyOutputTypeDef](./type_defs.md#getcorspolicyoutputtypedef).
 
+<a id="get_lifecycle_policy"></a>
+
 ### get_lifecycle_policy
 
 Retrieves the object lifecycle policy that is assigned to a container.
@@ -312,6 +347,8 @@ Keyword-only arguments:
 Returns
 [GetLifecyclePolicyOutputTypeDef](./type_defs.md#getlifecyclepolicyoutputtypedef).
 
+<a id="get_metric_policy"></a>
+
 ### get_metric_policy
 
 Returns the metric policy for the specified container.
@@ -330,6 +367,8 @@ Keyword-only arguments:
 
 Returns
 [GetMetricPolicyOutputTypeDef](./type_defs.md#getmetricpolicyoutputtypedef).
+
+<a id="list_containers"></a>
 
 ### list_containers
 
@@ -351,6 +390,8 @@ Keyword-only arguments:
 Returns
 [ListContainersOutputTypeDef](./type_defs.md#listcontainersoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of the tags assigned to the specified container.
@@ -371,6 +412,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+<a id="put_container_policy"></a>
+
 ### put_container_policy
 
 Creates an access policy for the specified container to restrict the users and
@@ -390,6 +433,8 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_cors_policy"></a>
 
 ### put_cors_policy
 
@@ -412,6 +457,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_lifecycle_policy"></a>
+
 ### put_lifecycle_policy
 
 Writes an object lifecycle policy to a container.
@@ -430,6 +477,8 @@ Keyword-only arguments:
 - `LifecyclePolicy`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_metric_policy"></a>
 
 ### put_metric_policy
 
@@ -451,6 +500,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_access_logging"></a>
+
 ### start_access_logging
 
 Starts access logging on the specified container.
@@ -469,6 +520,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_access_logging"></a>
+
 ### stop_access_logging
 
 Stops access logging on the specified container.
@@ -486,6 +539,8 @@ Keyword-only arguments:
 - `ContainerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -506,6 +561,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from the specified container.
@@ -524,6 +581,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

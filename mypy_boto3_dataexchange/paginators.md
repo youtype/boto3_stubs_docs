@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-dataexchange-module"></a>
+
 # Paginators for boto3 DataExchange module
 
 > [Index](..) > [DataExchange](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataExchange](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange)
 type annotations stubs module
-[mypy_boto3_dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
+[mypy-boto3-dataexchange](https://pypi.org/project/mypy-boto3-dataexchange/).
 
 - [Paginators for boto3 DataExchange module](#paginators-for-boto3-dataexchange-module)
   - [ListDataSetRevisionsPaginator](#listdatasetrevisionspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListEventActionsPaginator](#listeventactionspaginator)
   - [ListJobsPaginator](#listjobspaginator)
   - [ListRevisionAssetsPaginator](#listrevisionassetspaginator)
+
+<a id="listdatasetrevisionspaginator"></a>
 
 ## ListDataSetRevisionsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dataexchange.paginator import ListDataSetRevisionsPaginator
 
 def get_list_data_set_revisions_paginator() -> ListDataSetRevisionsPaginator:
-    return boto3.client("dataexchange").get_paginator("list_data_set_revisions")
+    return Session().client("dataexchange").get_paginator("list_data_set_revisions")
 ```
 
 Boto3 documentation:
@@ -40,6 +46,8 @@ Arguments for `ListDataSetRevisionsPaginator.paginate` method:
 `ListDataSetRevisionsPaginator.paginate` returns
 `_PageIterator`\[[ListDataSetRevisionsResponseTypeDef](./type_defs.md#listdatasetrevisionsresponsetypedef)\].
 
+<a id="listdatasetspaginator"></a>
+
 ## ListDataSetsPaginator
 
 Type annotations for
@@ -48,10 +56,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dataexchange.paginator import ListDataSetsPaginator
 
 def get_list_data_sets_paginator() -> ListDataSetsPaginator:
-    return boto3.client("dataexchange").get_paginator("list_data_sets")
+    return Session().client("dataexchange").get_paginator("list_data_sets")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListDataSetsPaginator.paginate` method:
 `ListDataSetsPaginator.paginate` returns
 `_PageIterator`\[[ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
+<a id="listeventactionspaginator"></a>
+
 ## ListEventActionsPaginator
 
 Type annotations for
@@ -74,10 +86,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dataexchange.paginator import ListEventActionsPaginator
 
 def get_list_event_actions_paginator() -> ListEventActionsPaginator:
-    return boto3.client("dataexchange").get_paginator("list_event_actions")
+    return Session().client("dataexchange").get_paginator("list_event_actions")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListEventActionsPaginator.paginate` method:
 `ListEventActionsPaginator.paginate` returns
 `_PageIterator`\[[ListEventActionsResponseTypeDef](./type_defs.md#listeventactionsresponsetypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("dataexchange").get_paginator("list_jobs")`.
@@ -99,10 +115,12 @@ Type annotations for `boto3.client("dataexchange").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dataexchange.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("dataexchange").get_paginator("list_jobs")
+    return Session().client("dataexchange").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:
@@ -118,6 +136,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
+<a id="listrevisionassetspaginator"></a>
+
 ## ListRevisionAssetsPaginator
 
 Type annotations for
@@ -126,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_dataexchange.paginator import ListRevisionAssetsPaginator
 
 def get_list_revision_assets_paginator() -> ListRevisionAssetsPaginator:
-    return boto3.client("dataexchange").get_paginator("list_revision_assets")
+    return Session().client("dataexchange").get_paginator("list_revision_assets")
 ```
 
 Boto3 documentation:

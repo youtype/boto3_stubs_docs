@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotfleethub-module"></a>
+
 # Typed dictionaries for boto3 IoTFleetHub module
 
 > [Index](..) > [IoTFleetHub](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
-[mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+[mypy-boto3-iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 - [Typed dictionaries for boto3 IoTFleetHub module](#typed-dictionaries-for-boto3-iotfleethub-module)
   - [ApplicationSummaryTypeDef](#applicationsummarytypedef)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateApplicationRequestRequestTypeDef](#updateapplicationrequestrequesttypedef)
+
+<a id="applicationsummarytypedef"></a>
 
 ## ApplicationSummaryTypeDef
 
@@ -44,6 +48,8 @@ Optional fields:
 - `applicationState`:
   [ApplicationStateType](./literals.md#applicationstatetype)
 
+<a id="createapplicationrequestrequesttypedef"></a>
+
 ## CreateApplicationRequestRequestTypeDef
 
 ```python
@@ -61,6 +67,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createapplicationresponsetypedef"></a>
+
 ## CreateApplicationResponseTypeDef
 
 ```python
@@ -73,6 +81,8 @@ Required fields:
 - `applicationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteapplicationrequestrequesttypedef"></a>
 
 ## DeleteApplicationRequestRequestTypeDef
 
@@ -88,6 +98,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="describeapplicationrequestrequesttypedef"></a>
+
 ## DescribeApplicationRequestRequestTypeDef
 
 ```python
@@ -97,6 +109,8 @@ from mypy_boto3_iotfleethub.type_defs import DescribeApplicationRequestRequestTy
 Required fields:
 
 - `applicationId`: `str`
+
+<a id="describeapplicationresponsetypedef"></a>
 
 ## DescribeApplicationResponseTypeDef
 
@@ -122,6 +136,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listapplicationsrequestrequesttypedef"></a>
+
 ## ListApplicationsRequestRequestTypeDef
 
 ```python
@@ -131,6 +147,8 @@ from mypy_boto3_iotfleethub.type_defs import ListApplicationsRequestRequestTypeD
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listapplicationsresponsetypedef"></a>
 
 ## ListApplicationsResponseTypeDef
 
@@ -146,6 +164,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -155,6 +175,8 @@ from mypy_boto3_iotfleethub.type_defs import ListTagsForResourceRequestRequestTy
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -168,6 +190,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -179,6 +203,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -194,6 +220,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -205,6 +233,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -215,6 +245,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapplicationrequestrequesttypedef"></a>
 
 ## UpdateApplicationRequestRequestTypeDef
 

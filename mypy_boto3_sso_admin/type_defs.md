@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ssoadmin-module"></a>
+
 # Typed dictionaries for boto3 SSOAdmin module
 
 > [Index](..) > [SSOAdmin](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
-[mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 - [Typed dictionaries for boto3 SSOAdmin module](#typed-dictionaries-for-boto3-ssoadmin-module)
   - [AccessControlAttributeTypeDef](#accesscontrolattributetypedef)
@@ -75,6 +77,8 @@ type annotations stubs module
   - [UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef](#updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef)
   - [UpdatePermissionSetRequestRequestTypeDef](#updatepermissionsetrequestrequesttypedef)
 
+<a id="accesscontrolattributetypedef"></a>
+
 ## AccessControlAttributeTypeDef
 
 ```python
@@ -87,6 +91,8 @@ Required fields:
 - `Value`:
   [AccessControlAttributeValueTypeDef](./type_defs.md#accesscontrolattributevaluetypedef)
 
+<a id="accesscontrolattributevaluetypedef"></a>
+
 ## AccessControlAttributeValueTypeDef
 
 ```python
@@ -96,6 +102,8 @@ from mypy_boto3_sso_admin.type_defs import AccessControlAttributeValueTypeDef
 Required fields:
 
 - `Source`: `Sequence`\[`str`\]
+
+<a id="accountassignmentoperationstatusmetadatatypedef"></a>
 
 ## AccountAssignmentOperationStatusMetadataTypeDef
 
@@ -108,6 +116,8 @@ Optional fields:
 - `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 - `RequestId`: `str`
 - `CreatedDate`: `datetime`
+
+<a id="accountassignmentoperationstatustypedef"></a>
 
 ## AccountAssignmentOperationStatusTypeDef
 
@@ -128,6 +138,8 @@ Optional fields:
 - `PrincipalId`: `str`
 - `CreatedDate`: `datetime`
 
+<a id="accountassignmenttypedef"></a>
+
 ## AccountAssignmentTypeDef
 
 ```python
@@ -141,6 +153,8 @@ Optional fields:
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
+<a id="attachmanagedpolicytopermissionsetrequestrequesttypedef"></a>
+
 ## AttachManagedPolicyToPermissionSetRequestRequestTypeDef
 
 ```python
@@ -153,6 +167,8 @@ Required fields:
 - `PermissionSetArn`: `str`
 - `ManagedPolicyArn`: `str`
 
+<a id="attachedmanagedpolicytypedef"></a>
+
 ## AttachedManagedPolicyTypeDef
 
 ```python
@@ -163,6 +179,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Arn`: `str`
+
+<a id="createaccountassignmentrequestrequesttypedef"></a>
 
 ## CreateAccountAssignmentRequestRequestTypeDef
 
@@ -180,6 +198,8 @@ Required fields:
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
+<a id="createaccountassignmentresponsetypedef"></a>
+
 ## CreateAccountAssignmentResponseTypeDef
 
 ```python
@@ -193,6 +213,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
+
 ## CreateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
@@ -204,6 +226,8 @@ Required fields:
 - `InstanceArn`: `str`
 - `InstanceAccessControlAttributeConfiguration`:
   [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
+
+<a id="createpermissionsetrequestrequesttypedef"></a>
 
 ## CreatePermissionSetRequestRequestTypeDef
 
@@ -223,6 +247,8 @@ Optional fields:
 - `RelayState`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createpermissionsetresponsetypedef"></a>
+
 ## CreatePermissionSetResponseTypeDef
 
 ```python
@@ -234,6 +260,8 @@ Required fields:
 - `PermissionSet`: [PermissionSetTypeDef](./type_defs.md#permissionsettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteaccountassignmentrequestrequesttypedef"></a>
 
 ## DeleteAccountAssignmentRequestRequestTypeDef
 
@@ -251,6 +279,8 @@ Required fields:
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 - `PrincipalId`: `str`
 
+<a id="deleteaccountassignmentresponsetypedef"></a>
+
 ## DeleteAccountAssignmentResponseTypeDef
 
 ```python
@@ -264,6 +294,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteinlinepolicyfrompermissionsetrequestrequesttypedef"></a>
+
 ## DeleteInlinePolicyFromPermissionSetRequestRequestTypeDef
 
 ```python
@@ -275,6 +307,8 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 
+<a id="deleteinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
+
 ## DeleteInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
@@ -284,6 +318,8 @@ from mypy_boto3_sso_admin.type_defs import DeleteInstanceAccessControlAttributeC
 Required fields:
 
 - `InstanceArn`: `str`
+
+<a id="deletepermissionsetrequestrequesttypedef"></a>
 
 ## DeletePermissionSetRequestRequestTypeDef
 
@@ -296,6 +332,8 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 
+<a id="describeaccountassignmentcreationstatusrequestrequesttypedef"></a>
+
 ## DescribeAccountAssignmentCreationStatusRequestRequestTypeDef
 
 ```python
@@ -306,6 +344,8 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `AccountAssignmentCreationRequestId`: `str`
+
+<a id="describeaccountassignmentcreationstatusresponsetypedef"></a>
 
 ## DescribeAccountAssignmentCreationStatusResponseTypeDef
 
@@ -320,6 +360,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaccountassignmentdeletionstatusrequestrequesttypedef"></a>
+
 ## DescribeAccountAssignmentDeletionStatusRequestRequestTypeDef
 
 ```python
@@ -330,6 +372,8 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `AccountAssignmentDeletionRequestId`: `str`
+
+<a id="describeaccountassignmentdeletionstatusresponsetypedef"></a>
 
 ## DescribeAccountAssignmentDeletionStatusResponseTypeDef
 
@@ -344,6 +388,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
+
 ## DescribeInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
@@ -353,6 +399,8 @@ from mypy_boto3_sso_admin.type_defs import DescribeInstanceAccessControlAttribut
 Required fields:
 
 - `InstanceArn`: `str`
+
+<a id="describeinstanceaccesscontrolattributeconfigurationresponsetypedef"></a>
 
 ## DescribeInstanceAccessControlAttributeConfigurationResponseTypeDef
 
@@ -370,6 +418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepermissionsetprovisioningstatusrequestrequesttypedef"></a>
+
 ## DescribePermissionSetProvisioningStatusRequestRequestTypeDef
 
 ```python
@@ -380,6 +430,8 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `ProvisionPermissionSetRequestId`: `str`
+
+<a id="describepermissionsetprovisioningstatusresponsetypedef"></a>
 
 ## DescribePermissionSetProvisioningStatusResponseTypeDef
 
@@ -394,6 +446,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepermissionsetrequestrequesttypedef"></a>
+
 ## DescribePermissionSetRequestRequestTypeDef
 
 ```python
@@ -404,6 +458,8 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
+
+<a id="describepermissionsetresponsetypedef"></a>
 
 ## DescribePermissionSetResponseTypeDef
 
@@ -417,6 +473,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detachmanagedpolicyfrompermissionsetrequestrequesttypedef"></a>
+
 ## DetachManagedPolicyFromPermissionSetRequestRequestTypeDef
 
 ```python
@@ -429,6 +487,8 @@ Required fields:
 - `PermissionSetArn`: `str`
 - `ManagedPolicyArn`: `str`
 
+<a id="getinlinepolicyforpermissionsetrequestrequesttypedef"></a>
+
 ## GetInlinePolicyForPermissionSetRequestRequestTypeDef
 
 ```python
@@ -439,6 +499,8 @@ Required fields:
 
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
+
+<a id="getinlinepolicyforpermissionsetresponsetypedef"></a>
 
 ## GetInlinePolicyForPermissionSetResponseTypeDef
 
@@ -452,6 +514,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instanceaccesscontrolattributeconfigurationtypedef"></a>
+
 ## InstanceAccessControlAttributeConfigurationTypeDef
 
 ```python
@@ -463,6 +527,8 @@ Required fields:
 - `AccessControlAttributes`:
   `Sequence`\[[AccessControlAttributeTypeDef](./type_defs.md#accesscontrolattributetypedef)\]
 
+<a id="instancemetadatatypedef"></a>
+
 ## InstanceMetadataTypeDef
 
 ```python
@@ -473,6 +539,8 @@ Optional fields:
 
 - `InstanceArn`: `str`
 - `IdentityStoreId`: `str`
+
+<a id="listaccountassignmentcreationstatusrequestrequesttypedef"></a>
 
 ## ListAccountAssignmentCreationStatusRequestRequestTypeDef
 
@@ -491,6 +559,8 @@ Optional fields:
 - `Filter`:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
+<a id="listaccountassignmentcreationstatusresponsetypedef"></a>
+
 ## ListAccountAssignmentCreationStatusResponseTypeDef
 
 ```python
@@ -504,6 +574,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccountassignmentdeletionstatusrequestrequesttypedef"></a>
 
 ## ListAccountAssignmentDeletionStatusRequestRequestTypeDef
 
@@ -522,6 +594,8 @@ Optional fields:
 - `Filter`:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
+<a id="listaccountassignmentdeletionstatusresponsetypedef"></a>
+
 ## ListAccountAssignmentDeletionStatusResponseTypeDef
 
 ```python
@@ -535,6 +609,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccountassignmentsrequestrequesttypedef"></a>
 
 ## ListAccountAssignmentsRequestRequestTypeDef
 
@@ -553,6 +629,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listaccountassignmentsresponsetypedef"></a>
+
 ## ListAccountAssignmentsResponseTypeDef
 
 ```python
@@ -566,6 +644,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccountsforprovisionedpermissionsetrequestrequesttypedef"></a>
 
 ## ListAccountsForProvisionedPermissionSetRequestRequestTypeDef
 
@@ -585,6 +665,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listaccountsforprovisionedpermissionsetresponsetypedef"></a>
+
 ## ListAccountsForProvisionedPermissionSetResponseTypeDef
 
 ```python
@@ -598,6 +680,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinstancesrequestrequesttypedef"></a>
+
 ## ListInstancesRequestRequestTypeDef
 
 ```python
@@ -608,6 +692,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listinstancesresponsetypedef"></a>
 
 ## ListInstancesResponseTypeDef
 
@@ -622,6 +708,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmanagedpoliciesinpermissionsetrequestrequesttypedef"></a>
 
 ## ListManagedPoliciesInPermissionSetRequestRequestTypeDef
 
@@ -639,6 +727,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listmanagedpoliciesinpermissionsetresponsetypedef"></a>
+
 ## ListManagedPoliciesInPermissionSetResponseTypeDef
 
 ```python
@@ -652,6 +742,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionsetprovisioningstatusrequestrequesttypedef"></a>
 
 ## ListPermissionSetProvisioningStatusRequestRequestTypeDef
 
@@ -670,6 +762,8 @@ Optional fields:
 - `Filter`:
   [OperationStatusFilterTypeDef](./type_defs.md#operationstatusfiltertypedef)
 
+<a id="listpermissionsetprovisioningstatusresponsetypedef"></a>
+
 ## ListPermissionSetProvisioningStatusResponseTypeDef
 
 ```python
@@ -683,6 +777,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionsetsprovisionedtoaccountrequestrequesttypedef"></a>
 
 ## ListPermissionSetsProvisionedToAccountRequestRequestTypeDef
 
@@ -702,6 +798,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listpermissionsetsprovisionedtoaccountresponsetypedef"></a>
+
 ## ListPermissionSetsProvisionedToAccountResponseTypeDef
 
 ```python
@@ -714,6 +812,8 @@ Required fields:
 - `PermissionSets`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionsetsrequestrequesttypedef"></a>
 
 ## ListPermissionSetsRequestRequestTypeDef
 
@@ -730,6 +830,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listpermissionsetsresponsetypedef"></a>
+
 ## ListPermissionSetsResponseTypeDef
 
 ```python
@@ -742,6 +844,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -758,6 +862,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -771,6 +877,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="operationstatusfiltertypedef"></a>
+
 ## OperationStatusFilterTypeDef
 
 ```python
@@ -780,6 +888,8 @@ from mypy_boto3_sso_admin.type_defs import OperationStatusFilterTypeDef
 Optional fields:
 
 - `Status`: [StatusValuesType](./literals.md#statusvaluestype)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -793,6 +903,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="permissionsetprovisioningstatusmetadatatypedef"></a>
+
 ## PermissionSetProvisioningStatusMetadataTypeDef
 
 ```python
@@ -804,6 +916,8 @@ Optional fields:
 - `Status`: [StatusValuesType](./literals.md#statusvaluestype)
 - `RequestId`: `str`
 - `CreatedDate`: `datetime`
+
+<a id="permissionsetprovisioningstatustypedef"></a>
 
 ## PermissionSetProvisioningStatusTypeDef
 
@@ -820,6 +934,8 @@ Optional fields:
 - `FailureReason`: `str`
 - `CreatedDate`: `datetime`
 
+<a id="permissionsettypedef"></a>
+
 ## PermissionSetTypeDef
 
 ```python
@@ -834,6 +950,8 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `SessionDuration`: `str`
 - `RelayState`: `str`
+
+<a id="provisionpermissionsetrequestrequesttypedef"></a>
 
 ## ProvisionPermissionSetRequestRequestTypeDef
 
@@ -852,6 +970,8 @@ Optional fields:
 
 - `TargetId`: `str`
 
+<a id="provisionpermissionsetresponsetypedef"></a>
+
 ## ProvisionPermissionSetResponseTypeDef
 
 ```python
@@ -865,6 +985,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putinlinepolicytopermissionsetrequestrequesttypedef"></a>
+
 ## PutInlinePolicyToPermissionSetRequestRequestTypeDef
 
 ```python
@@ -876,6 +998,8 @@ Required fields:
 - `InstanceArn`: `str`
 - `PermissionSetArn`: `str`
 - `InlinePolicy`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -891,6 +1015,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -903,6 +1029,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -913,6 +1041,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -926,6 +1056,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="updateinstanceaccesscontrolattributeconfigurationrequestrequesttypedef"></a>
+
 ## UpdateInstanceAccessControlAttributeConfigurationRequestRequestTypeDef
 
 ```python
@@ -937,6 +1069,8 @@ Required fields:
 - `InstanceArn`: `str`
 - `InstanceAccessControlAttributeConfiguration`:
   [InstanceAccessControlAttributeConfigurationTypeDef](./type_defs.md#instanceaccesscontrolattributeconfigurationtypedef)
+
+<a id="updatepermissionsetrequestrequesttypedef"></a>
 
 ## UpdatePermissionSetRequestRequestTypeDef
 

@@ -1,3 +1,5 @@
+<a id="firehoseclient-for-boto3-firehose-module"></a>
+
 # FirehoseClient for boto3 Firehose module
 
 > [Index](..) > [Firehose](.) > FirehoseClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Firehose](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose)
 type annotations stubs module
-[mypy_boto3_firehose](https://pypi.org/project/mypy-boto3-firehose/).
+[mypy-boto3-firehose](https://pypi.org/project/mypy-boto3-firehose/).
 
 - [FirehoseClient for boto3 Firehose module](#firehoseclient-for-boto3-firehose-module)
   - [FirehoseClient](#firehoseclient)
@@ -27,6 +29,8 @@ type annotations stubs module
     - [untag_delivery_stream](#untag_delivery_stream)
     - [update_destination](#update_destination)
 
+<a id="firehoseclient"></a>
+
 ## FirehoseClient
 
 Type annotations for `boto3.client("firehose")`
@@ -34,14 +38,17 @@ Type annotations for `boto3.client("firehose")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_firehose.client import FirehoseClient
 
 def get_firehose_client() -> FirehoseClient:
-    return boto3.client("firehose")
+    return Session().client("firehose")
 ```
 
 Boto3 documentation:
 [Firehose.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -66,7 +73,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceUnavailableException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -78,6 +89,8 @@ Boto3 documentation:
 [Firehose.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/firehose.html#Firehose.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -93,6 +106,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_delivery_stream"></a>
 
 ### create_delivery_stream
 
@@ -134,6 +149,8 @@ Keyword-only arguments:
 Returns
 [CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef).
 
+<a id="delete_delivery_stream"></a>
+
 ### delete_delivery_stream
 
 Deletes a delivery stream and its data.
@@ -152,6 +169,8 @@ Keyword-only arguments:
 - `AllowForceDelete`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_delivery_stream"></a>
 
 ### describe_delivery_stream
 
@@ -175,6 +194,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeliveryStreamOutputTypeDef](./type_defs.md#describedeliverystreamoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -192,6 +213,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_delivery_streams"></a>
 
 ### list_delivery_streams
 
@@ -215,6 +238,8 @@ Keyword-only arguments:
 Returns
 [ListDeliveryStreamsOutputTypeDef](./type_defs.md#listdeliverystreamsoutputtypedef).
 
+<a id="list_tags_for_delivery_stream"></a>
+
 ### list_tags_for_delivery_stream
 
 Lists the tags for the specified delivery stream.
@@ -237,6 +262,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForDeliveryStreamOutputTypeDef](./type_defs.md#listtagsfordeliverystreamoutputtypedef).
 
+<a id="put_record"></a>
+
 ### put_record
 
 Writes a single data record into an Amazon Kinesis Data Firehose delivery
@@ -256,6 +283,8 @@ Keyword-only arguments:
 - `Record`: [RecordTypeDef](./type_defs.md#recordtypedef) *(required)*
 
 Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
+
+<a id="put_record_batch"></a>
 
 ### put_record_batch
 
@@ -279,6 +308,8 @@ Keyword-only arguments:
 Returns
 [PutRecordBatchOutputTypeDef](./type_defs.md#putrecordbatchoutputtypedef).
 
+<a id="start_delivery_stream_encryption"></a>
+
 ### start_delivery_stream_encryption
 
 Enables server-side encryption (SSE) for the delivery stream.
@@ -300,6 +331,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_delivery_stream_encryption"></a>
+
 ### stop_delivery_stream_encryption
 
 Disables server-side encryption (SSE) for the delivery stream.
@@ -318,6 +351,8 @@ Keyword-only arguments:
 - `DeliveryStreamName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_delivery_stream"></a>
 
 ### tag_delivery_stream
 
@@ -338,6 +373,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_delivery_stream"></a>
+
 ### untag_delivery_stream
 
 Removes tags from the specified delivery stream.
@@ -356,6 +393,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_destination"></a>
 
 ### update_destination
 

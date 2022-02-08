@@ -1,3 +1,5 @@
+<a id="kinesisvideoarchivedmediaclient-for-boto3-kinesisvideoarchivedmedia-module"></a>
+
 # KinesisVideoArchivedMediaClient for boto3 KinesisVideoArchivedMedia module
 
 > [Index](..) > [KinesisVideoArchivedMedia](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [KinesisVideoArchivedMedia](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia)
 type annotations stubs module
-[mypy_boto3_kinesis_video_archived_media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
+[mypy-boto3-kinesis-video-archived-media](https://pypi.org/project/mypy-boto3-kinesis-video-archived-media/).
 
 - [KinesisVideoArchivedMediaClient for boto3 KinesisVideoArchivedMedia module](#kinesisvideoarchivedmediaclient-for-boto3-kinesisvideoarchivedmedia-module)
   - [KinesisVideoArchivedMediaClient](#kinesisvideoarchivedmediaclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [list_fragments](#list_fragments)
     - [get_paginator](#get_paginator)
 
+<a id="kinesisvideoarchivedmediaclient"></a>
+
 ## KinesisVideoArchivedMediaClient
 
 Type annotations for `boto3.client("kinesis-video-archived-media")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("kinesis-video-archived-media")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesis_video_archived_media.client import KinesisVideoArchivedMediaClient
 
 def get_kinesis-video-archived-media_client() -> KinesisVideoArchivedMediaClient:
-    return boto3.client("kinesis-video-archived-media")
+    return Session().client("kinesis-video-archived-media")
 ```
 
 Boto3 documentation:
 [KinesisVideoArchivedMedia.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -63,7 +70,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.UnsupportedStreamMediaTypeException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -76,6 +87,8 @@ Boto3 documentation:
 [KinesisVideoArchivedMedia.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-archived-media.html#KinesisVideoArchivedMedia.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -111,6 +126,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_clip"></a>
 
 ### get_clip
 
@@ -135,6 +152,8 @@ Keyword-only arguments:
 - `StreamARN`: `str`
 
 Returns [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef).
+
+<a id="get_dash_streaming_session_url"></a>
 
 ### get_dash_streaming_session_url
 
@@ -168,6 +187,8 @@ Keyword-only arguments:
 Returns
 [GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef).
 
+<a id="get_hls_streaming_session_url"></a>
+
 ### get_hls_streaming_session_url
 
 Retrieves an HTTP Live Streaming (HLS) URL for the stream.
@@ -200,6 +221,8 @@ Keyword-only arguments:
 Returns
 [GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef).
 
+<a id="get_media_for_fragment_list"></a>
+
 ### get_media_for_fragment_list
 
 Gets media for a list of fragments (specified by fragment number) from the
@@ -223,6 +246,8 @@ Keyword-only arguments:
 
 Returns
 [GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef).
+
+<a id="list_fragments"></a>
 
 ### list_fragments
 
@@ -249,6 +274,8 @@ Keyword-only arguments:
 
 Returns
 [ListFragmentsOutputTypeDef](./type_defs.md#listfragmentsoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

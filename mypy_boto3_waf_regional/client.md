@@ -1,3 +1,5 @@
+<a id="wafregionalclient-for-boto3-wafregional-module"></a>
+
 # WAFRegionalClient for boto3 WAFRegional module
 
 > [Index](..) > [WAFRegional](.) > WAFRegionalClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WAFRegional](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional)
 type annotations stubs module
-[mypy_boto3_waf_regional](https://pypi.org/project/mypy-boto3-waf-regional/).
+[mypy-boto3-waf-regional](https://pypi.org/project/mypy-boto3-waf-regional/).
 
 - [WAFRegionalClient for boto3 WAFRegional module](#wafregionalclient-for-boto3-wafregional-module)
   - [WAFRegionalClient](#wafregionalclient)
@@ -96,6 +98,8 @@ type annotations stubs module
     - [update_web_acl](#update_web_acl)
     - [update_xss_match_set](#update_xss_match_set)
 
+<a id="wafregionalclient"></a>
+
 ## WAFRegionalClient
 
 Type annotations for `boto3.client("waf-regional")`
@@ -103,14 +107,17 @@ Type annotations for `boto3.client("waf-regional")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_waf_regional.client import WAFRegionalClient
 
 def get_waf-regional_client() -> WAFRegionalClient:
-    return boto3.client("waf-regional")
+    return Session().client("waf-regional")
 ```
 
 Boto3 documentation:
 [WAFRegional.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -148,7 +155,11 @@ Exceptions:
 - `Exceptions.WAFTagOperationInternalErrorException`
 - `Exceptions.WAFUnavailableEntityException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -160,6 +171,8 @@ Boto3 documentation:
 [WAFRegional.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf-regional.html#WAFRegional.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_web_acl"></a>
 
 ### associate_web_acl
 
@@ -180,6 +193,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -194,6 +209,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_byte_match_set"></a>
 
 ### create_byte_match_set
 
@@ -216,6 +233,8 @@ Keyword-only arguments:
 Returns
 [CreateByteMatchSetResponseTypeDef](./type_defs.md#createbytematchsetresponsetypedef).
 
+<a id="create_geo_match_set"></a>
+
 ### create_geo_match_set
 
 .
@@ -237,6 +256,8 @@ Keyword-only arguments:
 Returns
 [CreateGeoMatchSetResponseTypeDef](./type_defs.md#creategeomatchsetresponsetypedef).
 
+<a id="create_ip_set"></a>
+
 ### create_ip_set
 
 .
@@ -256,6 +277,8 @@ Keyword-only arguments:
 
 Returns
 [CreateIPSetResponseTypeDef](./type_defs.md#createipsetresponsetypedef).
+
+<a id="create_rate_based_rule"></a>
 
 ### create_rate_based_rule
 
@@ -283,6 +306,8 @@ Keyword-only arguments:
 Returns
 [CreateRateBasedRuleResponseTypeDef](./type_defs.md#createratebasedruleresponsetypedef).
 
+<a id="create_regex_match_set"></a>
+
 ### create_regex_match_set
 
 .
@@ -303,6 +328,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRegexMatchSetResponseTypeDef](./type_defs.md#createregexmatchsetresponsetypedef).
+
+<a id="create_regex_pattern_set"></a>
 
 ### create_regex_pattern_set
 
@@ -325,6 +352,8 @@ Keyword-only arguments:
 Returns
 [CreateRegexPatternSetResponseTypeDef](./type_defs.md#createregexpatternsetresponsetypedef).
 
+<a id="create_rule"></a>
+
 ### create_rule
 
 .
@@ -345,6 +374,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
+
+<a id="create_rule_group"></a>
 
 ### create_rule_group
 
@@ -368,6 +399,8 @@ Keyword-only arguments:
 Returns
 [CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
 
+<a id="create_size_constraint_set"></a>
+
 ### create_size_constraint_set
 
 .
@@ -389,6 +422,8 @@ Keyword-only arguments:
 Returns
 [CreateSizeConstraintSetResponseTypeDef](./type_defs.md#createsizeconstraintsetresponsetypedef).
 
+<a id="create_sql_injection_match_set"></a>
+
 ### create_sql_injection_match_set
 
 .
@@ -409,6 +444,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#createsqlinjectionmatchsetresponsetypedef).
+
+<a id="create_web_acl"></a>
 
 ### create_web_acl
 
@@ -434,6 +471,8 @@ Keyword-only arguments:
 Returns
 [CreateWebACLResponseTypeDef](./type_defs.md#createwebaclresponsetypedef).
 
+<a id="create_web_acl_migration_stack"></a>
+
 ### create_web_acl_migration_stack
 
 Creates an AWS CloudFormation WAFV2 template for the specified web ACL in the
@@ -457,6 +496,8 @@ Keyword-only arguments:
 Returns
 [CreateWebACLMigrationStackResponseTypeDef](./type_defs.md#createwebaclmigrationstackresponsetypedef).
 
+<a id="create_xss_match_set"></a>
+
 ### create_xss_match_set
 
 .
@@ -477,6 +518,8 @@ Keyword-only arguments:
 
 Returns
 [CreateXssMatchSetResponseTypeDef](./type_defs.md#createxssmatchsetresponsetypedef).
+
+<a id="delete_byte_match_set"></a>
 
 ### delete_byte_match_set
 
@@ -499,6 +542,8 @@ Keyword-only arguments:
 Returns
 [DeleteByteMatchSetResponseTypeDef](./type_defs.md#deletebytematchsetresponsetypedef).
 
+<a id="delete_geo_match_set"></a>
+
 ### delete_geo_match_set
 
 .
@@ -520,6 +565,8 @@ Keyword-only arguments:
 Returns
 [DeleteGeoMatchSetResponseTypeDef](./type_defs.md#deletegeomatchsetresponsetypedef).
 
+<a id="delete_ip_set"></a>
+
 ### delete_ip_set
 
 .
@@ -540,6 +587,8 @@ Keyword-only arguments:
 Returns
 [DeleteIPSetResponseTypeDef](./type_defs.md#deleteipsetresponsetypedef).
 
+<a id="delete_logging_configuration"></a>
+
 ### delete_logging_configuration
 
 .
@@ -559,6 +608,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_permission_policy"></a>
+
 ### delete_permission_policy
 
 .
@@ -577,6 +628,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_rate_based_rule"></a>
 
 ### delete_rate_based_rule
 
@@ -599,6 +652,8 @@ Keyword-only arguments:
 Returns
 [DeleteRateBasedRuleResponseTypeDef](./type_defs.md#deleteratebasedruleresponsetypedef).
 
+<a id="delete_regex_match_set"></a>
+
 ### delete_regex_match_set
 
 .
@@ -619,6 +674,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRegexMatchSetResponseTypeDef](./type_defs.md#deleteregexmatchsetresponsetypedef).
+
+<a id="delete_regex_pattern_set"></a>
 
 ### delete_regex_pattern_set
 
@@ -641,6 +698,8 @@ Keyword-only arguments:
 Returns
 [DeleteRegexPatternSetResponseTypeDef](./type_defs.md#deleteregexpatternsetresponsetypedef).
 
+<a id="delete_rule"></a>
+
 ### delete_rule
 
 .
@@ -659,6 +718,8 @@ Keyword-only arguments:
 - `ChangeToken`: `str` *(required)*
 
 Returns [DeleteRuleResponseTypeDef](./type_defs.md#deleteruleresponsetypedef).
+
+<a id="delete_rule_group"></a>
 
 ### delete_rule_group
 
@@ -679,6 +740,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
+
+<a id="delete_size_constraint_set"></a>
 
 ### delete_size_constraint_set
 
@@ -701,6 +764,8 @@ Keyword-only arguments:
 Returns
 [DeleteSizeConstraintSetResponseTypeDef](./type_defs.md#deletesizeconstraintsetresponsetypedef).
 
+<a id="delete_sql_injection_match_set"></a>
+
 ### delete_sql_injection_match_set
 
 .
@@ -722,6 +787,8 @@ Keyword-only arguments:
 Returns
 [DeleteSqlInjectionMatchSetResponseTypeDef](./type_defs.md#deletesqlinjectionmatchsetresponsetypedef).
 
+<a id="delete_web_acl"></a>
+
 ### delete_web_acl
 
 .
@@ -741,6 +808,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteWebACLResponseTypeDef](./type_defs.md#deletewebaclresponsetypedef).
+
+<a id="delete_xss_match_set"></a>
 
 ### delete_xss_match_set
 
@@ -763,6 +832,8 @@ Keyword-only arguments:
 Returns
 [DeleteXssMatchSetResponseTypeDef](./type_defs.md#deletexssmatchsetresponsetypedef).
 
+<a id="disassociate_web_acl"></a>
+
 ### disassociate_web_acl
 
 .
@@ -781,6 +852,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -801,6 +874,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_byte_match_set"></a>
+
 ### get_byte_match_set
 
 .
@@ -820,6 +895,8 @@ Keyword-only arguments:
 Returns
 [GetByteMatchSetResponseTypeDef](./type_defs.md#getbytematchsetresponsetypedef).
 
+<a id="get_change_token"></a>
+
 ### get_change_token
 
 .
@@ -831,6 +908,8 @@ Boto3 documentation:
 
 Returns
 [GetChangeTokenResponseTypeDef](./type_defs.md#getchangetokenresponsetypedef).
+
+<a id="get_change_token_status"></a>
 
 ### get_change_token_status
 
@@ -852,6 +931,8 @@ Keyword-only arguments:
 Returns
 [GetChangeTokenStatusResponseTypeDef](./type_defs.md#getchangetokenstatusresponsetypedef).
 
+<a id="get_geo_match_set"></a>
+
 ### get_geo_match_set
 
 .
@@ -871,6 +952,8 @@ Keyword-only arguments:
 Returns
 [GetGeoMatchSetResponseTypeDef](./type_defs.md#getgeomatchsetresponsetypedef).
 
+<a id="get_ip_set"></a>
+
 ### get_ip_set
 
 .
@@ -888,6 +971,8 @@ Keyword-only arguments:
 - `IPSetId`: `str` *(required)*
 
 Returns [GetIPSetResponseTypeDef](./type_defs.md#getipsetresponsetypedef).
+
+<a id="get_logging_configuration"></a>
 
 ### get_logging_configuration
 
@@ -909,6 +994,8 @@ Keyword-only arguments:
 Returns
 [GetLoggingConfigurationResponseTypeDef](./type_defs.md#getloggingconfigurationresponsetypedef).
 
+<a id="get_permission_policy"></a>
+
 ### get_permission_policy
 
 .
@@ -929,6 +1016,8 @@ Keyword-only arguments:
 Returns
 [GetPermissionPolicyResponseTypeDef](./type_defs.md#getpermissionpolicyresponsetypedef).
 
+<a id="get_rate_based_rule"></a>
+
 ### get_rate_based_rule
 
 .
@@ -947,6 +1036,8 @@ Keyword-only arguments:
 
 Returns
 [GetRateBasedRuleResponseTypeDef](./type_defs.md#getratebasedruleresponsetypedef).
+
+<a id="get_rate_based_rule_managed_keys"></a>
 
 ### get_rate_based_rule_managed_keys
 
@@ -969,6 +1060,8 @@ Keyword-only arguments:
 Returns
 [GetRateBasedRuleManagedKeysResponseTypeDef](./type_defs.md#getratebasedrulemanagedkeysresponsetypedef).
 
+<a id="get_regex_match_set"></a>
+
 ### get_regex_match_set
 
 .
@@ -987,6 +1080,8 @@ Keyword-only arguments:
 
 Returns
 [GetRegexMatchSetResponseTypeDef](./type_defs.md#getregexmatchsetresponsetypedef).
+
+<a id="get_regex_pattern_set"></a>
 
 ### get_regex_pattern_set
 
@@ -1008,6 +1103,8 @@ Keyword-only arguments:
 Returns
 [GetRegexPatternSetResponseTypeDef](./type_defs.md#getregexpatternsetresponsetypedef).
 
+<a id="get_rule"></a>
+
 ### get_rule
 
 .
@@ -1025,6 +1122,8 @@ Keyword-only arguments:
 - `RuleId`: `str` *(required)*
 
 Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
+
+<a id="get_rule_group"></a>
 
 ### get_rule_group
 
@@ -1044,6 +1143,8 @@ Keyword-only arguments:
 
 Returns
 [GetRuleGroupResponseTypeDef](./type_defs.md#getrulegroupresponsetypedef).
+
+<a id="get_sampled_requests"></a>
 
 ### get_sampled_requests
 
@@ -1069,6 +1170,8 @@ Keyword-only arguments:
 Returns
 [GetSampledRequestsResponseTypeDef](./type_defs.md#getsampledrequestsresponsetypedef).
 
+<a id="get_size_constraint_set"></a>
+
 ### get_size_constraint_set
 
 .
@@ -1088,6 +1191,8 @@ Keyword-only arguments:
 
 Returns
 [GetSizeConstraintSetResponseTypeDef](./type_defs.md#getsizeconstraintsetresponsetypedef).
+
+<a id="get_sql_injection_match_set"></a>
 
 ### get_sql_injection_match_set
 
@@ -1109,6 +1214,8 @@ Keyword-only arguments:
 Returns
 [GetSqlInjectionMatchSetResponseTypeDef](./type_defs.md#getsqlinjectionmatchsetresponsetypedef).
 
+<a id="get_web_acl"></a>
+
 ### get_web_acl
 
 .
@@ -1126,6 +1233,8 @@ Keyword-only arguments:
 - `WebACLId`: `str` *(required)*
 
 Returns [GetWebACLResponseTypeDef](./type_defs.md#getwebaclresponsetypedef).
+
+<a id="get_web_acl_for_resource"></a>
 
 ### get_web_acl_for_resource
 
@@ -1147,6 +1256,8 @@ Keyword-only arguments:
 Returns
 [GetWebACLForResourceResponseTypeDef](./type_defs.md#getwebaclforresourceresponsetypedef).
 
+<a id="get_xss_match_set"></a>
+
 ### get_xss_match_set
 
 .
@@ -1165,6 +1276,8 @@ Keyword-only arguments:
 
 Returns
 [GetXssMatchSetResponseTypeDef](./type_defs.md#getxssmatchsetresponsetypedef).
+
+<a id="list_activated_rules_in_rule_group"></a>
 
 ### list_activated_rules_in_rule_group
 
@@ -1188,6 +1301,8 @@ Keyword-only arguments:
 Returns
 [ListActivatedRulesInRuleGroupResponseTypeDef](./type_defs.md#listactivatedrulesinrulegroupresponsetypedef).
 
+<a id="list_byte_match_sets"></a>
+
 ### list_byte_match_sets
 
 .
@@ -1209,6 +1324,8 @@ Keyword-only arguments:
 Returns
 [ListByteMatchSetsResponseTypeDef](./type_defs.md#listbytematchsetsresponsetypedef).
 
+<a id="list_geo_match_sets"></a>
+
 ### list_geo_match_sets
 
 .
@@ -1229,6 +1346,8 @@ Keyword-only arguments:
 Returns
 [ListGeoMatchSetsResponseTypeDef](./type_defs.md#listgeomatchsetsresponsetypedef).
 
+<a id="list_ip_sets"></a>
+
 ### list_ip_sets
 
 .
@@ -1247,6 +1366,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [ListIPSetsResponseTypeDef](./type_defs.md#listipsetsresponsetypedef).
+
+<a id="list_logging_configurations"></a>
 
 ### list_logging_configurations
 
@@ -1269,6 +1390,8 @@ Keyword-only arguments:
 Returns
 [ListLoggingConfigurationsResponseTypeDef](./type_defs.md#listloggingconfigurationsresponsetypedef).
 
+<a id="list_rate_based_rules"></a>
+
 ### list_rate_based_rules
 
 .
@@ -1289,6 +1412,8 @@ Keyword-only arguments:
 
 Returns
 [ListRateBasedRulesResponseTypeDef](./type_defs.md#listratebasedrulesresponsetypedef).
+
+<a id="list_regex_match_sets"></a>
 
 ### list_regex_match_sets
 
@@ -1311,6 +1436,8 @@ Keyword-only arguments:
 Returns
 [ListRegexMatchSetsResponseTypeDef](./type_defs.md#listregexmatchsetsresponsetypedef).
 
+<a id="list_regex_pattern_sets"></a>
+
 ### list_regex_pattern_sets
 
 .
@@ -1331,6 +1458,8 @@ Keyword-only arguments:
 
 Returns
 [ListRegexPatternSetsResponseTypeDef](./type_defs.md#listregexpatternsetsresponsetypedef).
+
+<a id="list_resources_for_web_acl"></a>
 
 ### list_resources_for_web_acl
 
@@ -1353,6 +1482,8 @@ Keyword-only arguments:
 Returns
 [ListResourcesForWebACLResponseTypeDef](./type_defs.md#listresourcesforwebaclresponsetypedef).
 
+<a id="list_rule_groups"></a>
+
 ### list_rule_groups
 
 .
@@ -1373,6 +1504,8 @@ Keyword-only arguments:
 Returns
 [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
+<a id="list_rules"></a>
+
 ### list_rules
 
 .
@@ -1391,6 +1524,8 @@ Keyword-only arguments:
 - `Limit`: `int`
 
 Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
+
+<a id="list_size_constraint_sets"></a>
 
 ### list_size_constraint_sets
 
@@ -1413,6 +1548,8 @@ Keyword-only arguments:
 Returns
 [ListSizeConstraintSetsResponseTypeDef](./type_defs.md#listsizeconstraintsetsresponsetypedef).
 
+<a id="list_sql_injection_match_sets"></a>
+
 ### list_sql_injection_match_sets
 
 .
@@ -1434,6 +1571,8 @@ Keyword-only arguments:
 Returns
 [ListSqlInjectionMatchSetsResponseTypeDef](./type_defs.md#listsqlinjectionmatchsetsresponsetypedef).
 
+<a id="list_subscribed_rule_groups"></a>
+
 ### list_subscribed_rule_groups
 
 .
@@ -1454,6 +1593,8 @@ Keyword-only arguments:
 
 Returns
 [ListSubscribedRuleGroupsResponseTypeDef](./type_defs.md#listsubscribedrulegroupsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1477,6 +1618,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_web_acls"></a>
+
 ### list_web_acls
 
 .
@@ -1497,6 +1640,8 @@ Keyword-only arguments:
 Returns
 [ListWebACLsResponseTypeDef](./type_defs.md#listwebaclsresponsetypedef).
 
+<a id="list_xss_match_sets"></a>
+
 ### list_xss_match_sets
 
 .
@@ -1516,6 +1661,8 @@ Keyword-only arguments:
 
 Returns
 [ListXssMatchSetsResponseTypeDef](./type_defs.md#listxssmatchsetsresponsetypedef).
+
+<a id="put_logging_configuration"></a>
 
 ### put_logging_configuration
 
@@ -1539,6 +1686,8 @@ Keyword-only arguments:
 Returns
 [PutLoggingConfigurationResponseTypeDef](./type_defs.md#putloggingconfigurationresponsetypedef).
 
+<a id="put_permission_policy"></a>
+
 ### put_permission_policy
 
 .
@@ -1559,6 +1708,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 .
@@ -1578,6 +1729,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 .
@@ -1596,6 +1749,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_byte_match_set"></a>
 
 ### update_byte_match_set
 
@@ -1621,6 +1776,8 @@ Keyword-only arguments:
 Returns
 [UpdateByteMatchSetResponseTypeDef](./type_defs.md#updatebytematchsetresponsetypedef).
 
+<a id="update_geo_match_set"></a>
+
 ### update_geo_match_set
 
 .
@@ -1645,6 +1802,8 @@ Keyword-only arguments:
 Returns
 [UpdateGeoMatchSetResponseTypeDef](./type_defs.md#updategeomatchsetresponsetypedef).
 
+<a id="update_ip_set"></a>
+
 ### update_ip_set
 
 .
@@ -1667,6 +1826,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateIPSetResponseTypeDef](./type_defs.md#updateipsetresponsetypedef).
+
+<a id="update_rate_based_rule"></a>
 
 ### update_rate_based_rule
 
@@ -1693,6 +1854,8 @@ Keyword-only arguments:
 Returns
 [UpdateRateBasedRuleResponseTypeDef](./type_defs.md#updateratebasedruleresponsetypedef).
 
+<a id="update_regex_match_set"></a>
+
 ### update_regex_match_set
 
 .
@@ -1716,6 +1879,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRegexMatchSetResponseTypeDef](./type_defs.md#updateregexmatchsetresponsetypedef).
+
+<a id="update_regex_pattern_set"></a>
 
 ### update_regex_pattern_set
 
@@ -1741,6 +1906,8 @@ Keyword-only arguments:
 Returns
 [UpdateRegexPatternSetResponseTypeDef](./type_defs.md#updateregexpatternsetresponsetypedef).
 
+<a id="update_rule"></a>
+
 ### update_rule
 
 .
@@ -1762,6 +1929,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [UpdateRuleResponseTypeDef](./type_defs.md#updateruleresponsetypedef).
+
+<a id="update_rule_group"></a>
 
 ### update_rule_group
 
@@ -1785,6 +1954,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
+
+<a id="update_size_constraint_set"></a>
 
 ### update_size_constraint_set
 
@@ -1810,6 +1981,8 @@ Keyword-only arguments:
 Returns
 [UpdateSizeConstraintSetResponseTypeDef](./type_defs.md#updatesizeconstraintsetresponsetypedef).
 
+<a id="update_sql_injection_match_set"></a>
+
 ### update_sql_injection_match_set
 
 .
@@ -1834,6 +2007,8 @@ Keyword-only arguments:
 Returns
 [UpdateSqlInjectionMatchSetResponseTypeDef](./type_defs.md#updatesqlinjectionmatchsetresponsetypedef).
 
+<a id="update_web_acl"></a>
+
 ### update_web_acl
 
 .
@@ -1856,6 +2031,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWebACLResponseTypeDef](./type_defs.md#updatewebaclresponsetypedef).
+
+<a id="update_xss_match_set"></a>
 
 ### update_xss_match_set
 

@@ -1,3 +1,5 @@
+<a id="auditmanagerclient-for-boto3-auditmanager-module"></a>
+
 # AuditManagerClient for boto3 AuditManager module
 
 > [Index](..) > [AuditManager](.) > AuditManagerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AuditManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager)
 type annotations stubs module
-[mypy_boto3_auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
+[mypy-boto3-auditmanager](https://pypi.org/project/mypy-boto3-auditmanager/).
 
 - [AuditManagerClient for boto3 AuditManager module](#auditmanagerclient-for-boto3-auditmanager-module)
   - [AuditManagerClient](#auditmanagerclient)
@@ -76,6 +78,8 @@ type annotations stubs module
     - [update_settings](#update_settings)
     - [validate_assessment_report_integrity](#validate_assessment_report_integrity)
 
+<a id="auditmanagerclient"></a>
+
 ## AuditManagerClient
 
 Type annotations for `boto3.client("auditmanager")`
@@ -83,14 +87,17 @@ Type annotations for `boto3.client("auditmanager")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_auditmanager.client import AuditManagerClient
 
 def get_auditmanager_client() -> AuditManagerClient:
-    return boto3.client("auditmanager")
+    return Session().client("auditmanager")
 ```
 
 Boto3 documentation:
 [AuditManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -112,7 +119,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -124,6 +135,8 @@ Boto3 documentation:
 [AuditManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/auditmanager.html#AuditManager.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_assessment_report_evidence_folder"></a>
 
 ### associate_assessment_report_evidence_folder
 
@@ -146,6 +159,8 @@ Keyword-only arguments:
 - `evidenceFolderId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="batch_associate_assessment_report_evidence"></a>
 
 ### batch_associate_assessment_report_evidence
 
@@ -171,6 +186,8 @@ Keyword-only arguments:
 Returns
 [BatchAssociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchassociateassessmentreportevidenceresponsetypedef).
 
+<a id="batch_create_delegation_by_assessment"></a>
+
 ### batch_create_delegation_by_assessment
 
 Creates a batch of delegations for an assessment in Audit Manager.
@@ -194,6 +211,8 @@ Keyword-only arguments:
 Returns
 [BatchCreateDelegationByAssessmentResponseTypeDef](./type_defs.md#batchcreatedelegationbyassessmentresponsetypedef).
 
+<a id="batch_delete_delegation_by_assessment"></a>
+
 ### batch_delete_delegation_by_assessment
 
 Deletes a batch of delegations for an assessment in Audit Manager.
@@ -214,6 +233,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteDelegationByAssessmentResponseTypeDef](./type_defs.md#batchdeletedelegationbyassessmentresponsetypedef).
+
+<a id="batch_disassociate_assessment_report_evidence"></a>
 
 ### batch_disassociate_assessment_report_evidence
 
@@ -237,6 +258,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDisassociateAssessmentReportEvidenceResponseTypeDef](./type_defs.md#batchdisassociateassessmentreportevidenceresponsetypedef).
+
+<a id="batch_import_evidence_to_assessment_control"></a>
 
 ### batch_import_evidence_to_assessment_control
 
@@ -265,6 +288,8 @@ Keyword-only arguments:
 Returns
 [BatchImportEvidenceToAssessmentControlResponseTypeDef](./type_defs.md#batchimportevidencetoassessmentcontrolresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -279,6 +304,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_assessment"></a>
 
 ### create_assessment
 
@@ -307,6 +334,8 @@ Keyword-only arguments:
 Returns
 [CreateAssessmentResponseTypeDef](./type_defs.md#createassessmentresponsetypedef).
 
+<a id="create_assessment_framework"></a>
+
 ### create_assessment_framework
 
 Creates a custom framework in Audit Manager.
@@ -333,6 +362,8 @@ Keyword-only arguments:
 Returns
 [CreateAssessmentFrameworkResponseTypeDef](./type_defs.md#createassessmentframeworkresponsetypedef).
 
+<a id="create_assessment_report"></a>
+
 ### create_assessment_report
 
 Creates an assessment report for the specified assessment.
@@ -354,6 +385,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAssessmentReportResponseTypeDef](./type_defs.md#createassessmentreportresponsetypedef).
+
+<a id="create_control"></a>
 
 ### create_control
 
@@ -382,6 +415,8 @@ Keyword-only arguments:
 Returns
 [CreateControlResponseTypeDef](./type_defs.md#createcontrolresponsetypedef).
 
+<a id="delete_assessment"></a>
+
 ### delete_assessment
 
 Deletes an assessment in Audit Manager.
@@ -399,6 +434,8 @@ Keyword-only arguments:
 - `assessmentId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_assessment_framework"></a>
 
 ### delete_assessment_framework
 
@@ -418,6 +455,8 @@ Keyword-only arguments:
 - `frameworkId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_assessment_framework_share"></a>
 
 ### delete_assessment_framework_share
 
@@ -440,6 +479,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_assessment_report"></a>
+
 ### delete_assessment_report
 
 Deletes an assessment report from an assessment in Audit Manager.
@@ -460,6 +501,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_control"></a>
+
 ### delete_control
 
 Deletes a custom control in Audit Manager.
@@ -478,6 +521,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_account"></a>
+
 ### deregister_account
 
 Deregisters an account in Audit Manager.
@@ -489,6 +534,8 @@ Boto3 documentation:
 
 Returns
 [DeregisterAccountResponseTypeDef](./type_defs.md#deregisteraccountresponsetypedef).
+
+<a id="deregister_organization_admin_account"></a>
 
 ### deregister_organization_admin_account
 
@@ -509,6 +556,8 @@ Keyword-only arguments:
 - `adminAccountId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_assessment_report_evidence_folder"></a>
 
 ### disassociate_assessment_report_evidence_folder
 
@@ -532,6 +581,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -551,6 +602,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account_status"></a>
+
 ### get_account_status
 
 Returns the registration status of an account in Audit Manager.
@@ -562,6 +615,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountStatusResponseTypeDef](./type_defs.md#getaccountstatusresponsetypedef).
+
+<a id="get_assessment"></a>
 
 ### get_assessment
 
@@ -581,6 +636,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
+
+<a id="get_assessment_framework"></a>
 
 ### get_assessment_framework
 
@@ -602,6 +659,8 @@ Keyword-only arguments:
 Returns
 [GetAssessmentFrameworkResponseTypeDef](./type_defs.md#getassessmentframeworkresponsetypedef).
 
+<a id="get_assessment_report_url"></a>
+
 ### get_assessment_report_url
 
 Returns the URL of an assessment report in Audit Manager.
@@ -622,6 +681,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssessmentReportUrlResponseTypeDef](./type_defs.md#getassessmentreporturlresponsetypedef).
+
+<a id="get_change_logs"></a>
 
 ### get_change_logs
 
@@ -646,6 +707,8 @@ Keyword-only arguments:
 Returns
 [GetChangeLogsResponseTypeDef](./type_defs.md#getchangelogsresponsetypedef).
 
+<a id="get_control"></a>
+
 ### get_control
 
 Returns a control from Audit Manager.
@@ -663,6 +726,8 @@ Keyword-only arguments:
 - `controlId`: `str` *(required)*
 
 Returns [GetControlResponseTypeDef](./type_defs.md#getcontrolresponsetypedef).
+
+<a id="get_delegations"></a>
 
 ### get_delegations
 
@@ -683,6 +748,8 @@ Keyword-only arguments:
 
 Returns
 [GetDelegationsResponseTypeDef](./type_defs.md#getdelegationsresponsetypedef).
+
+<a id="get_evidence"></a>
 
 ### get_evidence
 
@@ -705,6 +772,8 @@ Keyword-only arguments:
 
 Returns
 [GetEvidenceResponseTypeDef](./type_defs.md#getevidenceresponsetypedef).
+
+<a id="get_evidence_by_evidence_folder"></a>
 
 ### get_evidence_by_evidence_folder
 
@@ -730,6 +799,8 @@ Keyword-only arguments:
 Returns
 [GetEvidenceByEvidenceFolderResponseTypeDef](./type_defs.md#getevidencebyevidencefolderresponsetypedef).
 
+<a id="get_evidence_folder"></a>
+
 ### get_evidence_folder
 
 Returns an evidence folder from the specified assessment in Audit Manager.
@@ -750,6 +821,8 @@ Keyword-only arguments:
 
 Returns
 [GetEvidenceFolderResponseTypeDef](./type_defs.md#getevidencefolderresponsetypedef).
+
+<a id="get_evidence_folders_by_assessment"></a>
 
 ### get_evidence_folders_by_assessment
 
@@ -772,6 +845,8 @@ Keyword-only arguments:
 
 Returns
 [GetEvidenceFoldersByAssessmentResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentresponsetypedef).
+
+<a id="get_evidence_folders_by_assessment_control"></a>
 
 ### get_evidence_folders_by_assessment_control
 
@@ -799,6 +874,8 @@ Keyword-only arguments:
 Returns
 [GetEvidenceFoldersByAssessmentControlResponseTypeDef](./type_defs.md#getevidencefoldersbyassessmentcontrolresponsetypedef).
 
+<a id="get_insights"></a>
+
 ### get_insights
 
 Gets the latest analytics data for all your current active assessments.
@@ -810,6 +887,8 @@ Boto3 documentation:
 
 Returns
 [GetInsightsResponseTypeDef](./type_defs.md#getinsightsresponsetypedef).
+
+<a id="get_insights_by_assessment"></a>
 
 ### get_insights_by_assessment
 
@@ -831,6 +910,8 @@ Keyword-only arguments:
 Returns
 [GetInsightsByAssessmentResponseTypeDef](./type_defs.md#getinsightsbyassessmentresponsetypedef).
 
+<a id="get_organization_admin_account"></a>
+
 ### get_organization_admin_account
 
 Returns the name of the delegated Amazon Web Services administrator account for
@@ -845,6 +926,8 @@ Boto3 documentation:
 Returns
 [GetOrganizationAdminAccountResponseTypeDef](./type_defs.md#getorganizationadminaccountresponsetypedef).
 
+<a id="get_services_in_scope"></a>
+
 ### get_services_in_scope
 
 Returns a list of the in-scope Amazon Web Services services for the specified
@@ -858,6 +941,8 @@ Boto3 documentation:
 
 Returns
 [GetServicesInScopeResponseTypeDef](./type_defs.md#getservicesinscoperesponsetypedef).
+
+<a id="get_settings"></a>
 
 ### get_settings
 
@@ -878,6 +963,8 @@ Keyword-only arguments:
 
 Returns
 [GetSettingsResponseTypeDef](./type_defs.md#getsettingsresponsetypedef).
+
+<a id="list_assessment_control_insights_by_control_domain"></a>
 
 ### list_assessment_control_insights_by_control_domain
 
@@ -904,6 +991,8 @@ Keyword-only arguments:
 Returns
 [ListAssessmentControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listassessmentcontrolinsightsbycontroldomainresponsetypedef).
 
+<a id="list_assessment_framework_share_requests"></a>
+
 ### list_assessment_framework_share_requests
 
 Returns a list of sent or received share requests for custom frameworks in
@@ -927,6 +1016,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssessmentFrameworkShareRequestsResponseTypeDef](./type_defs.md#listassessmentframeworksharerequestsresponsetypedef).
+
+<a id="list_assessment_frameworks"></a>
 
 ### list_assessment_frameworks
 
@@ -952,6 +1043,8 @@ Keyword-only arguments:
 Returns
 [ListAssessmentFrameworksResponseTypeDef](./type_defs.md#listassessmentframeworksresponsetypedef).
 
+<a id="list_assessment_reports"></a>
+
 ### list_assessment_reports
 
 Returns a list of assessment reports created in Audit Manager.
@@ -972,6 +1065,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssessmentReportsResponseTypeDef](./type_defs.md#listassessmentreportsresponsetypedef).
+
+<a id="list_assessments"></a>
 
 ### list_assessments
 
@@ -994,6 +1089,8 @@ Keyword-only arguments:
 Returns
 [ListAssessmentsResponseTypeDef](./type_defs.md#listassessmentsresponsetypedef).
 
+<a id="list_control_domain_insights"></a>
+
 ### list_control_domain_insights
 
 Lists the latest analytics data for control domains across all of your active
@@ -1015,6 +1112,8 @@ Keyword-only arguments:
 
 Returns
 [ListControlDomainInsightsResponseTypeDef](./type_defs.md#listcontroldomaininsightsresponsetypedef).
+
+<a id="list_control_domain_insights_by_assessment"></a>
 
 ### list_control_domain_insights_by_assessment
 
@@ -1039,6 +1138,8 @@ Keyword-only arguments:
 Returns
 [ListControlDomainInsightsByAssessmentResponseTypeDef](./type_defs.md#listcontroldomaininsightsbyassessmentresponsetypedef).
 
+<a id="list_control_insights_by_control_domain"></a>
+
 ### list_control_insights_by_control_domain
 
 Lists the latest analytics data for controls within a specific control domain
@@ -1062,6 +1163,8 @@ Keyword-only arguments:
 Returns
 [ListControlInsightsByControlDomainResponseTypeDef](./type_defs.md#listcontrolinsightsbycontroldomainresponsetypedef).
 
+<a id="list_controls"></a>
+
 ### list_controls
 
 Returns a list of controls from Audit Manager.
@@ -1082,6 +1185,8 @@ Keyword-only arguments:
 
 Returns
 [ListControlsResponseTypeDef](./type_defs.md#listcontrolsresponsetypedef).
+
+<a id="list_keywords_for_data_source"></a>
 
 ### list_keywords_for_data_source
 
@@ -1106,6 +1211,8 @@ Keyword-only arguments:
 Returns
 [ListKeywordsForDataSourceResponseTypeDef](./type_defs.md#listkeywordsfordatasourceresponsetypedef).
 
+<a id="list_notifications"></a>
+
 ### list_notifications
 
 Returns a list of all Audit Manager notifications.
@@ -1125,6 +1232,8 @@ Keyword-only arguments:
 
 Returns
 [ListNotificationsResponseTypeDef](./type_defs.md#listnotificationsresponsetypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1146,6 +1255,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="register_account"></a>
+
 ### register_account
 
 Enables Audit Manager for the specified Amazon Web Services account.
@@ -1165,6 +1276,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterAccountResponseTypeDef](./type_defs.md#registeraccountresponsetypedef).
+
+<a id="register_organization_admin_account"></a>
 
 ### register_organization_admin_account
 
@@ -1186,6 +1299,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterOrganizationAdminAccountResponseTypeDef](./type_defs.md#registerorganizationadminaccountresponsetypedef).
+
+<a id="start_assessment_framework_share"></a>
 
 ### start_assessment_framework_share
 
@@ -1210,6 +1325,8 @@ Keyword-only arguments:
 Returns
 [StartAssessmentFrameworkShareResponseTypeDef](./type_defs.md#startassessmentframeworkshareresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags the specified resource in Audit Manager.
@@ -1229,6 +1346,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from a resource in Audit Manager.
@@ -1247,6 +1366,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_assessment"></a>
 
 ### update_assessment
 
@@ -1273,6 +1394,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssessmentResponseTypeDef](./type_defs.md#updateassessmentresponsetypedef).
 
+<a id="update_assessment_control"></a>
+
 ### update_assessment_control
 
 Updates a control within an assessment in Audit Manager.
@@ -1297,6 +1420,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssessmentControlResponseTypeDef](./type_defs.md#updateassessmentcontrolresponsetypedef).
 
+<a id="update_assessment_control_set_status"></a>
+
 ### update_assessment_control_set_status
 
 Updates the status of a control set in an Audit Manager assessment.
@@ -1320,6 +1445,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAssessmentControlSetStatusResponseTypeDef](./type_defs.md#updateassessmentcontrolsetstatusresponsetypedef).
+
+<a id="update_assessment_framework"></a>
 
 ### update_assessment_framework
 
@@ -1347,6 +1474,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssessmentFrameworkResponseTypeDef](./type_defs.md#updateassessmentframeworkresponsetypedef).
 
+<a id="update_assessment_framework_share"></a>
+
 ### update_assessment_framework_share
 
 Updates a share request for a custom framework in Audit Manager.
@@ -1371,6 +1500,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssessmentFrameworkShareResponseTypeDef](./type_defs.md#updateassessmentframeworkshareresponsetypedef).
 
+<a id="update_assessment_status"></a>
+
 ### update_assessment_status
 
 Updates the status of an assessment in Audit Manager.
@@ -1392,6 +1523,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAssessmentStatusResponseTypeDef](./type_defs.md#updateassessmentstatusresponsetypedef).
+
+<a id="update_control"></a>
 
 ### update_control
 
@@ -1420,6 +1553,8 @@ Keyword-only arguments:
 Returns
 [UpdateControlResponseTypeDef](./type_defs.md#updatecontrolresponsetypedef).
 
+<a id="update_settings"></a>
+
 ### update_settings
 
 Updates Audit Manager settings for the current user account.
@@ -1443,6 +1578,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateSettingsResponseTypeDef](./type_defs.md#updatesettingsresponsetypedef).
+
+<a id="validate_assessment_report_integrity"></a>
 
 ### validate_assessment_report_integrity
 

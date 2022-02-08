@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ssmincidents-module"></a>
+
 # Paginators for boto3 SSMIncidents module
 
 > [Index](..) > [SSMIncidents](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
-[mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 - [Paginators for boto3 SSMIncidents module](#paginators-for-boto3-ssmincidents-module)
   - [GetResourcePoliciesPaginator](#getresourcepoliciespaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [ListResponsePlansPaginator](#listresponseplanspaginator)
   - [ListTimelineEventsPaginator](#listtimelineeventspaginator)
 
+<a id="getresourcepoliciespaginator"></a>
+
 ## GetResourcePoliciesPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_incidents.paginator import GetResourcePoliciesPaginator
 
 def get_get_resource_policies_paginator() -> GetResourcePoliciesPaginator:
-    return boto3.client("ssm-incidents").get_paginator("get_resource_policies")
+    return Session().client("ssm-incidents").get_paginator("get_resource_policies")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `GetResourcePoliciesPaginator.paginate` method:
 `GetResourcePoliciesPaginator.paginate` returns
 `_PageIterator`\[[GetResourcePoliciesOutputTypeDef](./type_defs.md#getresourcepoliciesoutputtypedef)\].
 
+<a id="listincidentrecordspaginator"></a>
+
 ## ListIncidentRecordsPaginator
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_incidents.paginator import ListIncidentRecordsPaginator
 
 def get_list_incident_records_paginator() -> ListIncidentRecordsPaginator:
-    return boto3.client("ssm-incidents").get_paginator("list_incident_records")
+    return Session().client("ssm-incidents").get_paginator("list_incident_records")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListIncidentRecordsPaginator.paginate` method:
 `ListIncidentRecordsPaginator.paginate` returns
 `_PageIterator`\[[ListIncidentRecordsOutputTypeDef](./type_defs.md#listincidentrecordsoutputtypedef)\].
 
+<a id="listrelateditemspaginator"></a>
+
 ## ListRelatedItemsPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_incidents.paginator import ListRelatedItemsPaginator
 
 def get_list_related_items_paginator() -> ListRelatedItemsPaginator:
-    return boto3.client("ssm-incidents").get_paginator("list_related_items")
+    return Session().client("ssm-incidents").get_paginator("list_related_items")
 ```
 
 Boto3 documentation:
@@ -93,6 +107,8 @@ Arguments for `ListRelatedItemsPaginator.paginate` method:
 `ListRelatedItemsPaginator.paginate` returns
 `_PageIterator`\[[ListRelatedItemsOutputTypeDef](./type_defs.md#listrelateditemsoutputtypedef)\].
 
+<a id="listreplicationsetspaginator"></a>
+
 ## ListReplicationSetsPaginator
 
 Type annotations for
@@ -101,10 +117,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_incidents.paginator import ListReplicationSetsPaginator
 
 def get_list_replication_sets_paginator() -> ListReplicationSetsPaginator:
-    return boto3.client("ssm-incidents").get_paginator("list_replication_sets")
+    return Session().client("ssm-incidents").get_paginator("list_replication_sets")
 ```
 
 Boto3 documentation:
@@ -118,6 +136,8 @@ Arguments for `ListReplicationSetsPaginator.paginate` method:
 `ListReplicationSetsPaginator.paginate` returns
 `_PageIterator`\[[ListReplicationSetsOutputTypeDef](./type_defs.md#listreplicationsetsoutputtypedef)\].
 
+<a id="listresponseplanspaginator"></a>
+
 ## ListResponsePlansPaginator
 
 Type annotations for
@@ -126,10 +146,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_incidents.paginator import ListResponsePlansPaginator
 
 def get_list_response_plans_paginator() -> ListResponsePlansPaginator:
-    return boto3.client("ssm-incidents").get_paginator("list_response_plans")
+    return Session().client("ssm-incidents").get_paginator("list_response_plans")
 ```
 
 Boto3 documentation:
@@ -143,6 +165,8 @@ Arguments for `ListResponsePlansPaginator.paginate` method:
 `ListResponsePlansPaginator.paginate` returns
 `_PageIterator`\[[ListResponsePlansOutputTypeDef](./type_defs.md#listresponseplansoutputtypedef)\].
 
+<a id="listtimelineeventspaginator"></a>
+
 ## ListTimelineEventsPaginator
 
 Type annotations for
@@ -151,10 +175,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ssm_incidents.paginator import ListTimelineEventsPaginator
 
 def get_list_timeline_events_paginator() -> ListTimelineEventsPaginator:
-    return boto3.client("ssm-incidents").get_paginator("list_timeline_events")
+    return Session().client("ssm-incidents").get_paginator("list_timeline_events")
 ```
 
 Boto3 documentation:

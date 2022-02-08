@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-route53recoverycontrolconfig-module"></a>
+
 # Literals for boto3 Route53RecoveryControlConfig module
 
 > [Index](..) > [Route53RecoveryControlConfig](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryControlConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-control-config.html#Route53RecoveryControlConfig)
 type annotations stubs module
-[mypy_boto3_route53_recovery_control_config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
+[mypy-boto3-route53-recovery-control-config](https://pypi.org/project/mypy-boto3-route53-recovery-control-config/).
 
 - [Literals for boto3 Route53RecoveryControlConfig module](#literals-for-boto3-route53recoverycontrolconfig-module)
   - [ClusterCreatedWaiterName](#clustercreatedwaitername)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [WaiterName](#waitername)
 
+<a id="clustercreatedwaitername"></a>
+
 ## ClusterCreatedWaiterName
 
 ```python
@@ -28,6 +32,8 @@ from mypy_boto3_route53_recovery_control_config.literals import ClusterCreatedWa
 Values:
 
 - `cluster_created`
+
+<a id="clusterdeletedwaitername"></a>
 
 ## ClusterDeletedWaiterName
 
@@ -39,6 +45,8 @@ Values:
 
 - `cluster_deleted`
 
+<a id="controlpanelcreatedwaitername"></a>
+
 ## ControlPanelCreatedWaiterName
 
 ```python
@@ -48,6 +56,8 @@ from mypy_boto3_route53_recovery_control_config.literals import ControlPanelCrea
 Values:
 
 - `control_panel_created`
+
+<a id="controlpaneldeletedwaitername"></a>
 
 ## ControlPanelDeletedWaiterName
 
@@ -59,6 +69,8 @@ Values:
 
 - `control_panel_deleted`
 
+<a id="routingcontrolcreatedwaitername"></a>
+
 ## RoutingControlCreatedWaiterName
 
 ```python
@@ -69,6 +81,8 @@ Values:
 
 - `routing_control_created`
 
+<a id="routingcontroldeletedwaitername"></a>
+
 ## RoutingControlDeletedWaiterName
 
 ```python
@@ -78,6 +92,8 @@ from mypy_boto3_route53_recovery_control_config.literals import RoutingControlDe
 Values:
 
 - `routing_control_deleted`
+
+<a id="ruletypetype"></a>
 
 ## RuleTypeType
 
@@ -91,6 +107,8 @@ Values:
 - `ATLEAST`
 - `OR`
 
+<a id="statustype"></a>
+
 ## StatusType
 
 ```python
@@ -102,6 +120,8 @@ Values:
 - `DEPLOYED`
 - `PENDING`
 - `PENDING_DELETION`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -410,6 +430,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

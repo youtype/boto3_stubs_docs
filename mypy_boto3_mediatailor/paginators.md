@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-mediatailor-module"></a>
+
 # Paginators for boto3 MediaTailor module
 
 > [Index](..) > [MediaTailor](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaTailor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediatailor.html#MediaTailor)
 type annotations stubs module
-[mypy_boto3_mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
+[mypy-boto3-mediatailor](https://pypi.org/project/mypy-boto3-mediatailor/).
 
 - [Paginators for boto3 MediaTailor module](#paginators-for-boto3-mediatailor-module)
   - [GetChannelSchedulePaginator](#getchannelschedulepaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListSourceLocationsPaginator](#listsourcelocationspaginator)
   - [ListVodSourcesPaginator](#listvodsourcespaginator)
 
+<a id="getchannelschedulepaginator"></a>
+
 ## GetChannelSchedulePaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import GetChannelSchedulePaginator
 
 def get_get_channel_schedule_paginator() -> GetChannelSchedulePaginator:
-    return boto3.client("mediatailor").get_paginator("get_channel_schedule")
+    return Session().client("mediatailor").get_paginator("get_channel_schedule")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ Arguments for `GetChannelSchedulePaginator.paginate` method:
 `GetChannelSchedulePaginator.paginate` returns
 `_PageIterator`\[[GetChannelScheduleResponseTypeDef](./type_defs.md#getchannelscheduleresponsetypedef)\].
 
+<a id="listalertspaginator"></a>
+
 ## ListAlertsPaginator
 
 Type annotations for
@@ -51,10 +59,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import ListAlertsPaginator
 
 def get_list_alerts_paginator() -> ListAlertsPaginator:
-    return boto3.client("mediatailor").get_paginator("list_alerts")
+    return Session().client("mediatailor").get_paginator("list_alerts")
 ```
 
 Boto3 documentation:
@@ -69,6 +79,8 @@ Arguments for `ListAlertsPaginator.paginate` method:
 `ListAlertsPaginator.paginate` returns
 `_PageIterator`\[[ListAlertsResponseTypeDef](./type_defs.md#listalertsresponsetypedef)\].
 
+<a id="listchannelspaginator"></a>
+
 ## ListChannelsPaginator
 
 Type annotations for
@@ -77,10 +89,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import ListChannelsPaginator
 
 def get_list_channels_paginator() -> ListChannelsPaginator:
-    return boto3.client("mediatailor").get_paginator("list_channels")
+    return Session().client("mediatailor").get_paginator("list_channels")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `ListChannelsPaginator.paginate` method:
 `ListChannelsPaginator.paginate` returns
 `_PageIterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
+<a id="listplaybackconfigurationspaginator"></a>
+
 ## ListPlaybackConfigurationsPaginator
 
 Type annotations for
@@ -102,10 +118,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import ListPlaybackConfigurationsPaginator
 
 def get_list_playback_configurations_paginator() -> ListPlaybackConfigurationsPaginator:
-    return boto3.client("mediatailor").get_paginator("list_playback_configurations")
+    return Session().client("mediatailor").get_paginator("list_playback_configurations")
 ```
 
 Boto3 documentation:
@@ -119,6 +137,8 @@ Arguments for `ListPlaybackConfigurationsPaginator.paginate` method:
 `ListPlaybackConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListPlaybackConfigurationsResponseTypeDef](./type_defs.md#listplaybackconfigurationsresponsetypedef)\].
 
+<a id="listprefetchschedulespaginator"></a>
+
 ## ListPrefetchSchedulesPaginator
 
 Type annotations for
@@ -127,10 +147,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import ListPrefetchSchedulesPaginator
 
 def get_list_prefetch_schedules_paginator() -> ListPrefetchSchedulesPaginator:
-    return boto3.client("mediatailor").get_paginator("list_prefetch_schedules")
+    return Session().client("mediatailor").get_paginator("list_prefetch_schedules")
 ```
 
 Boto3 documentation:
@@ -146,6 +168,8 @@ Arguments for `ListPrefetchSchedulesPaginator.paginate` method:
 `ListPrefetchSchedulesPaginator.paginate` returns
 `_PageIterator`\[[ListPrefetchSchedulesResponseTypeDef](./type_defs.md#listprefetchschedulesresponsetypedef)\].
 
+<a id="listsourcelocationspaginator"></a>
+
 ## ListSourceLocationsPaginator
 
 Type annotations for
@@ -154,10 +178,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import ListSourceLocationsPaginator
 
 def get_list_source_locations_paginator() -> ListSourceLocationsPaginator:
-    return boto3.client("mediatailor").get_paginator("list_source_locations")
+    return Session().client("mediatailor").get_paginator("list_source_locations")
 ```
 
 Boto3 documentation:
@@ -171,6 +197,8 @@ Arguments for `ListSourceLocationsPaginator.paginate` method:
 `ListSourceLocationsPaginator.paginate` returns
 `_PageIterator`\[[ListSourceLocationsResponseTypeDef](./type_defs.md#listsourcelocationsresponsetypedef)\].
 
+<a id="listvodsourcespaginator"></a>
+
 ## ListVodSourcesPaginator
 
 Type annotations for
@@ -179,10 +207,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_mediatailor.paginator import ListVodSourcesPaginator
 
 def get_list_vod_sources_paginator() -> ListVodSourcesPaginator:
-    return boto3.client("mediatailor").get_paginator("list_vod_sources")
+    return Session().client("mediatailor").get_paginator("list_vod_sources")
 ```
 
 Boto3 documentation:

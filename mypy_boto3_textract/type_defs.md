@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-textract-module"></a>
+
 # Typed dictionaries for boto3 Textract module
 
 > [Index](..) > [Textract](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Textract](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/textract.html#Textract)
 type annotations stubs module
-[mypy_boto3_textract](https://pypi.org/project/mypy-boto3-textract/).
+[mypy-boto3-textract](https://pypi.org/project/mypy-boto3-textract/).
 
 - [Typed dictionaries for boto3 Textract module](#typed-dictionaries-for-boto3-textract-module)
   - [AnalyzeDocumentRequestRequestTypeDef](#analyzedocumentrequestrequesttypedef)
@@ -55,6 +57,8 @@ type annotations stubs module
   - [StartExpenseAnalysisResponseTypeDef](#startexpenseanalysisresponsetypedef)
   - [WarningTypeDef](#warningtypedef)
 
+<a id="analyzedocumentrequestrequesttypedef"></a>
+
 ## AnalyzeDocumentRequestRequestTypeDef
 
 ```python
@@ -71,6 +75,8 @@ Optional fields:
 
 - `HumanLoopConfig`:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
+
+<a id="analyzedocumentresponsetypedef"></a>
 
 ## AnalyzeDocumentResponseTypeDef
 
@@ -89,6 +95,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="analyzeexpenserequestrequesttypedef"></a>
+
 ## AnalyzeExpenseRequestRequestTypeDef
 
 ```python
@@ -98,6 +106,8 @@ from mypy_boto3_textract.type_defs import AnalyzeExpenseRequestRequestTypeDef
 Required fields:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
+
+<a id="analyzeexpenseresponsetypedef"></a>
 
 ## AnalyzeExpenseResponseTypeDef
 
@@ -113,6 +123,8 @@ Required fields:
   `List`\[[ExpenseDocumentTypeDef](./type_defs.md#expensedocumenttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="analyzeiddetectionstypedef"></a>
 
 ## AnalyzeIDDetectionsTypeDef
 
@@ -130,6 +142,8 @@ Optional fields:
   [NormalizedValueTypeDef](./type_defs.md#normalizedvaluetypedef)
 - `Confidence`: `float`
 
+<a id="analyzeidrequestrequesttypedef"></a>
+
 ## AnalyzeIDRequestRequestTypeDef
 
 ```python
@@ -140,6 +154,8 @@ Required fields:
 
 - `DocumentPages`:
   `Sequence`\[[DocumentTypeDef](./type_defs.md#documenttypedef)\]
+
+<a id="analyzeidresponsetypedef"></a>
 
 ## AnalyzeIDResponseTypeDef
 
@@ -156,6 +172,8 @@ Required fields:
 - `AnalyzeIDModelVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="blocktypedef"></a>
 
 ## BlockTypeDef
 
@@ -181,6 +199,8 @@ Optional fields:
 - `SelectionStatus`: [SelectionStatusType](./literals.md#selectionstatustype)
 - `Page`: `int`
 
+<a id="boundingboxtypedef"></a>
+
 ## BoundingBoxTypeDef
 
 ```python
@@ -194,6 +214,8 @@ Optional fields:
 - `Left`: `float`
 - `Top`: `float`
 
+<a id="detectdocumenttextrequestrequesttypedef"></a>
+
 ## DetectDocumentTextRequestRequestTypeDef
 
 ```python
@@ -203,6 +225,8 @@ from mypy_boto3_textract.type_defs import DetectDocumentTextRequestRequestTypeDe
 Required fields:
 
 - `Document`: [DocumentTypeDef](./type_defs.md#documenttypedef)
+
+<a id="detectdocumenttextresponsetypedef"></a>
 
 ## DetectDocumentTextResponseTypeDef
 
@@ -219,6 +243,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="documentlocationtypedef"></a>
+
 ## DocumentLocationTypeDef
 
 ```python
@@ -229,6 +255,8 @@ Optional fields:
 
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
+<a id="documentmetadatatypedef"></a>
+
 ## DocumentMetadataTypeDef
 
 ```python
@@ -238,6 +266,8 @@ from mypy_boto3_textract.type_defs import DocumentMetadataTypeDef
 Optional fields:
 
 - `Pages`: `int`
+
+<a id="documenttypedef"></a>
 
 ## DocumentTypeDef
 
@@ -250,6 +280,8 @@ Optional fields:
 - `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
 
+<a id="expensedetectiontypedef"></a>
+
 ## ExpenseDetectionTypeDef
 
 ```python
@@ -261,6 +293,8 @@ Optional fields:
 - `Text`: `str`
 - `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 - `Confidence`: `float`
+
+<a id="expensedocumenttypedef"></a>
 
 ## ExpenseDocumentTypeDef
 
@@ -275,6 +309,8 @@ Optional fields:
   `List`\[[ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef)\]
 - `LineItemGroups`:
   `List`\[[LineItemGroupTypeDef](./type_defs.md#lineitemgrouptypedef)\]
+
+<a id="expensefieldtypedef"></a>
 
 ## ExpenseFieldTypeDef
 
@@ -291,6 +327,8 @@ Optional fields:
   [ExpenseDetectionTypeDef](./type_defs.md#expensedetectiontypedef)
 - `PageNumber`: `int`
 
+<a id="expensetypetypedef"></a>
+
 ## ExpenseTypeTypeDef
 
 ```python
@@ -302,6 +340,8 @@ Optional fields:
 - `Text`: `str`
 - `Confidence`: `float`
 
+<a id="geometrytypedef"></a>
+
 ## GeometryTypeDef
 
 ```python
@@ -312,6 +352,8 @@ Optional fields:
 
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Polygon`: `List`\[[PointTypeDef](./type_defs.md#pointtypedef)\]
+
+<a id="getdocumentanalysisrequestrequesttypedef"></a>
 
 ## GetDocumentAnalysisRequestRequestTypeDef
 
@@ -327,6 +369,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getdocumentanalysisresponsetypedef"></a>
 
 ## GetDocumentAnalysisResponseTypeDef
 
@@ -347,6 +391,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdocumenttextdetectionrequestrequesttypedef"></a>
+
 ## GetDocumentTextDetectionRequestRequestTypeDef
 
 ```python
@@ -361,6 +407,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getdocumenttextdetectionresponsetypedef"></a>
 
 ## GetDocumentTextDetectionResponseTypeDef
 
@@ -381,6 +429,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getexpenseanalysisrequestrequesttypedef"></a>
+
 ## GetExpenseAnalysisRequestRequestTypeDef
 
 ```python
@@ -395,6 +445,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getexpenseanalysisresponsetypedef"></a>
 
 ## GetExpenseAnalysisResponseTypeDef
 
@@ -416,6 +468,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="humanloopactivationoutputtypedef"></a>
+
 ## HumanLoopActivationOutputTypeDef
 
 ```python
@@ -427,6 +481,8 @@ Optional fields:
 - `HumanLoopArn`: `str`
 - `HumanLoopActivationReasons`: `List`\[`str`\]
 - `HumanLoopActivationConditionsEvaluationResults`: `str`
+
+<a id="humanloopconfigtypedef"></a>
 
 ## HumanLoopConfigTypeDef
 
@@ -444,6 +500,8 @@ Optional fields:
 - `DataAttributes`:
   [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
+<a id="humanloopdataattributestypedef"></a>
+
 ## HumanLoopDataAttributesTypeDef
 
 ```python
@@ -454,6 +512,8 @@ Optional fields:
 
 - `ContentClassifiers`:
   `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+
+<a id="identitydocumentfieldtypedef"></a>
 
 ## IdentityDocumentFieldTypeDef
 
@@ -468,6 +528,8 @@ Optional fields:
 - `ValueDetection`:
   [AnalyzeIDDetectionsTypeDef](./type_defs.md#analyzeiddetectionstypedef)
 
+<a id="identitydocumenttypedef"></a>
+
 ## IdentityDocumentTypeDef
 
 ```python
@@ -480,6 +542,8 @@ Optional fields:
 - `IdentityDocumentFields`:
   `List`\[[IdentityDocumentFieldTypeDef](./type_defs.md#identitydocumentfieldtypedef)\]
 
+<a id="lineitemfieldstypedef"></a>
+
 ## LineItemFieldsTypeDef
 
 ```python
@@ -490,6 +554,8 @@ Optional fields:
 
 - `LineItemExpenseFields`:
   `List`\[[ExpenseFieldTypeDef](./type_defs.md#expensefieldtypedef)\]
+
+<a id="lineitemgrouptypedef"></a>
 
 ## LineItemGroupTypeDef
 
@@ -503,6 +569,8 @@ Optional fields:
 - `LineItems`:
   `List`\[[LineItemFieldsTypeDef](./type_defs.md#lineitemfieldstypedef)\]
 
+<a id="normalizedvaluetypedef"></a>
+
 ## NormalizedValueTypeDef
 
 ```python
@@ -515,6 +583,8 @@ Optional fields:
 - `ValueType`: `Literal['DATE']` (see
   [ValueTypeType](./literals.md#valuetypetype))
 
+<a id="notificationchanneltypedef"></a>
+
 ## NotificationChannelTypeDef
 
 ```python
@@ -525,6 +595,8 @@ Required fields:
 
 - `SNSTopicArn`: `str`
 - `RoleArn`: `str`
+
+<a id="outputconfigtypedef"></a>
 
 ## OutputConfigTypeDef
 
@@ -540,6 +612,8 @@ Optional fields:
 
 - `S3Prefix`: `str`
 
+<a id="pointtypedef"></a>
+
 ## PointTypeDef
 
 ```python
@@ -551,6 +625,8 @@ Optional fields:
 - `X`: `float`
 - `Y`: `float`
 
+<a id="relationshiptypedef"></a>
+
 ## RelationshipTypeDef
 
 ```python
@@ -561,6 +637,8 @@ Optional fields:
 
 - `Type`: [RelationshipTypeType](./literals.md#relationshiptypetype)
 - `Ids`: `List`\[`str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -576,6 +654,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3objecttypedef"></a>
+
 ## S3ObjectTypeDef
 
 ```python
@@ -587,6 +667,8 @@ Optional fields:
 - `Bucket`: `str`
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="startdocumentanalysisrequestrequesttypedef"></a>
 
 ## StartDocumentAnalysisRequestRequestTypeDef
 
@@ -610,6 +692,8 @@ Optional fields:
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `KMSKeyId`: `str`
 
+<a id="startdocumentanalysisresponsetypedef"></a>
+
 ## StartDocumentAnalysisResponseTypeDef
 
 ```python
@@ -621,6 +705,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startdocumenttextdetectionrequestrequesttypedef"></a>
 
 ## StartDocumentTextDetectionRequestRequestTypeDef
 
@@ -642,6 +728,8 @@ Optional fields:
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `KMSKeyId`: `str`
 
+<a id="startdocumenttextdetectionresponsetypedef"></a>
+
 ## StartDocumentTextDetectionResponseTypeDef
 
 ```python
@@ -653,6 +741,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startexpenseanalysisrequestrequesttypedef"></a>
 
 ## StartExpenseAnalysisRequestRequestTypeDef
 
@@ -674,6 +764,8 @@ Optional fields:
 - `OutputConfig`: [OutputConfigTypeDef](./type_defs.md#outputconfigtypedef)
 - `KMSKeyId`: `str`
 
+<a id="startexpenseanalysisresponsetypedef"></a>
+
 ## StartExpenseAnalysisResponseTypeDef
 
 ```python
@@ -685,6 +777,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="warningtypedef"></a>
 
 ## WarningTypeDef
 

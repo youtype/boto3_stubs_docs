@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-opsworks-module"></a>
+
 # Literals for boto3 OpsWorks module
 
 > [Index](..) > [OpsWorks](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [OpsWorks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks)
 type annotations stubs module
-[mypy_boto3_opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
+[mypy-boto3-opsworks](https://pypi.org/project/mypy-boto3-opsworks/).
 
 - [Literals for boto3 OpsWorks module](#literals-for-boto3-opsworks-module)
   - [AppAttributesKeysType](#appattributeskeystype)
@@ -34,6 +36,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="appattributeskeystype"></a>
+
 ## AppAttributesKeysType
 
 ```python
@@ -47,6 +51,8 @@ Values:
 - `DocumentRoot`
 - `RailsEnv`
 
+<a id="appexistswaitername"></a>
+
 ## AppExistsWaiterName
 
 ```python
@@ -56,6 +62,8 @@ from mypy_boto3_opsworks.literals import AppExistsWaiterName
 Values:
 
 - `app_exists`
+
+<a id="apptypetype"></a>
 
 ## AppTypeType
 
@@ -73,6 +81,8 @@ Values:
 - `rails`
 - `static`
 
+<a id="architecturetype"></a>
+
 ## ArchitectureType
 
 ```python
@@ -84,6 +94,8 @@ Values:
 - `i386`
 - `x86_64`
 
+<a id="autoscalingtypetype"></a>
+
 ## AutoScalingTypeType
 
 ```python
@@ -94,6 +106,8 @@ Values:
 
 - `load`
 - `timer`
+
+<a id="cloudwatchlogsencodingtype"></a>
 
 ## CloudWatchLogsEncodingType
 
@@ -196,6 +210,8 @@ Values:
 - `utf_8`
 - `utf_8_sig`
 
+<a id="cloudwatchlogsinitialpositiontype"></a>
+
 ## CloudWatchLogsInitialPositionType
 
 ```python
@@ -207,6 +223,8 @@ Values:
 - `end_of_file`
 - `start_of_file`
 
+<a id="cloudwatchlogstimezonetype"></a>
+
 ## CloudWatchLogsTimeZoneType
 
 ```python
@@ -217,6 +235,8 @@ Values:
 
 - `LOCAL`
 - `UTC`
+
+<a id="deploymentcommandnametype"></a>
 
 ## DeploymentCommandNameType
 
@@ -239,6 +259,8 @@ Values:
 - `update_custom_cookbooks`
 - `update_dependencies`
 
+<a id="deploymentsuccessfulwaitername"></a>
+
 ## DeploymentSuccessfulWaiterName
 
 ```python
@@ -248,6 +270,8 @@ from mypy_boto3_opsworks.literals import DeploymentSuccessfulWaiterName
 Values:
 
 - `deployment_successful`
+
+<a id="describeecsclusterspaginatorname"></a>
 
 ## DescribeEcsClustersPaginatorName
 
@@ -259,6 +283,8 @@ Values:
 
 - `describe_ecs_clusters`
 
+<a id="instanceonlinewaitername"></a>
+
 ## InstanceOnlineWaiterName
 
 ```python
@@ -268,6 +294,8 @@ from mypy_boto3_opsworks.literals import InstanceOnlineWaiterName
 Values:
 
 - `instance_online`
+
+<a id="instanceregisteredwaitername"></a>
 
 ## InstanceRegisteredWaiterName
 
@@ -279,6 +307,8 @@ Values:
 
 - `instance_registered`
 
+<a id="instancestoppedwaitername"></a>
+
 ## InstanceStoppedWaiterName
 
 ```python
@@ -289,6 +319,8 @@ Values:
 
 - `instance_stopped`
 
+<a id="instanceterminatedwaitername"></a>
+
 ## InstanceTerminatedWaiterName
 
 ```python
@@ -298,6 +330,8 @@ from mypy_boto3_opsworks.literals import InstanceTerminatedWaiterName
 Values:
 
 - `instance_terminated`
+
+<a id="layerattributeskeystype"></a>
 
 ## LayerAttributesKeysType
 
@@ -333,6 +367,8 @@ Values:
 - `RubygemsVersion`
 - `RubyVersion`
 
+<a id="layertypetype"></a>
+
 ## LayerTypeType
 
 ```python
@@ -354,6 +390,8 @@ Values:
 - `rails-app`
 - `web`
 
+<a id="rootdevicetypetype"></a>
+
 ## RootDeviceTypeType
 
 ```python
@@ -364,6 +402,8 @@ Values:
 
 - `ebs`
 - `instance-store`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -378,6 +418,8 @@ Values:
 - `s3`
 - `svn`
 
+<a id="stackattributeskeystype"></a>
+
 ## StackAttributesKeysType
 
 ```python
@@ -387,6 +429,8 @@ from mypy_boto3_opsworks.literals import StackAttributesKeysType
 Values:
 
 - `Color`
+
+<a id="virtualizationtypetype"></a>
 
 ## VirtualizationTypeType
 
@@ -399,6 +443,8 @@ Values:
 - `hvm`
 - `paravirtual`
 
+<a id="volumetypetype"></a>
+
 ## VolumeTypeType
 
 ```python
@@ -410,6 +456,8 @@ Values:
 - `gp2`
 - `io1`
 - `standard`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -719,6 +767,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -728,6 +778,8 @@ from mypy_boto3_opsworks.literals import PaginatorName
 Values:
 
 - `describe_ecs_clusters`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

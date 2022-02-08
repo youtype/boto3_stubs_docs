@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-marketplacecommerceanalytics-module"></a>
+
 # Literals for boto3 MarketplaceCommerceAnalytics module
 
 > [Index](..) > [MarketplaceCommerceAnalytics](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module
-[mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
+[mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 - [Literals for boto3 MarketplaceCommerceAnalytics module](#literals-for-boto3-marketplacecommerceanalytics-module)
   - [DataSetTypeType](#datasettypetype)
   - [SupportDataSetTypeType](#supportdatasettypetype)
   - [ServiceName](#servicename)
+
+<a id="datasettypetype"></a>
 
 ## DataSetTypeType
 
@@ -46,6 +50,8 @@ Values:
 - `sales_compensation_billed_revenue`
 - `us_sales_and_use_tax_records`
 
+<a id="supportdatasettypetype"></a>
+
 ## SupportDataSetTypeType
 
 ```python
@@ -56,6 +62,8 @@ Values:
 
 - `customer_support_contacts_data`
 - `test_customer_support_contacts_data`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

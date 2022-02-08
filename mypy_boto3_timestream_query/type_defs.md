@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-timestreamquery-module"></a>
+
 # Typed dictionaries for boto3 TimestreamQuery module
 
 > [Index](..) > [TimestreamQuery](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
-[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Typed dictionaries for boto3 TimestreamQuery module](#typed-dictionaries-for-boto3-timestreamquery-module)
   - [CancelQueryRequestRequestTypeDef](#cancelqueryrequestrequesttypedef)
@@ -60,6 +62,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateScheduledQueryRequestRequestTypeDef](#updatescheduledqueryrequestrequesttypedef)
 
+<a id="cancelqueryrequestrequesttypedef"></a>
+
 ## CancelQueryRequestRequestTypeDef
 
 ```python
@@ -69,6 +73,8 @@ from mypy_boto3_timestream_query.type_defs import CancelQueryRequestRequestTypeD
 Required fields:
 
 - `QueryId`: `str`
+
+<a id="cancelqueryresponsetypedef"></a>
 
 ## CancelQueryResponseTypeDef
 
@@ -81,6 +87,8 @@ Required fields:
 - `CancellationMessage`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="columninfotypedef"></a>
 
 ## ColumnInfoTypeDef
 
@@ -95,6 +103,8 @@ Required fields:
 Optional fields:
 
 - `Name`: `str`
+
+<a id="createscheduledqueryrequestrequesttypedef"></a>
 
 ## CreateScheduledQueryRequestRequestTypeDef
 
@@ -122,6 +132,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `KmsKeyId`: `str`
 
+<a id="createscheduledqueryresponsetypedef"></a>
+
 ## CreateScheduledQueryResponseTypeDef
 
 ```python
@@ -133,6 +145,8 @@ Required fields:
 - `Arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datumtypedef"></a>
 
 ## DatumTypeDef
 
@@ -149,6 +163,8 @@ Optional fields:
 - `RowValue`: [RowTypeDef](./type_defs.md#rowtypedef)
 - `NullValue`: `bool`
 
+<a id="deletescheduledqueryrequestrequesttypedef"></a>
+
 ## DeleteScheduledQueryRequestRequestTypeDef
 
 ```python
@@ -158,6 +174,8 @@ from mypy_boto3_timestream_query.type_defs import DeleteScheduledQueryRequestReq
 Required fields:
 
 - `ScheduledQueryArn`: `str`
+
+<a id="describeendpointsresponsetypedef"></a>
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -171,6 +189,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describescheduledqueryrequestrequesttypedef"></a>
+
 ## DescribeScheduledQueryRequestRequestTypeDef
 
 ```python
@@ -180,6 +200,8 @@ from mypy_boto3_timestream_query.type_defs import DescribeScheduledQueryRequestR
 Required fields:
 
 - `ScheduledQueryArn`: `str`
+
+<a id="describescheduledqueryresponsetypedef"></a>
 
 ## DescribeScheduledQueryResponseTypeDef
 
@@ -194,6 +216,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dimensionmappingtypedef"></a>
+
 ## DimensionMappingTypeDef
 
 ```python
@@ -206,6 +230,8 @@ Required fields:
 - `DimensionValueType`: `Literal['VARCHAR']` (see
   [DimensionValueTypeType](./literals.md#dimensionvaluetypetype))
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -216,6 +242,8 @@ Required fields:
 
 - `Address`: `str`
 - `CachePeriodInMinutes`: `int`
+
+<a id="errorreportconfigurationtypedef"></a>
 
 ## ErrorReportConfigurationTypeDef
 
@@ -228,6 +256,8 @@ Required fields:
 - `S3Configuration`:
   [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
 
+<a id="errorreportlocationtypedef"></a>
+
 ## ErrorReportLocationTypeDef
 
 ```python
@@ -238,6 +268,8 @@ Optional fields:
 
 - `S3ReportLocation`:
   [S3ReportLocationTypeDef](./type_defs.md#s3reportlocationtypedef)
+
+<a id="executescheduledqueryrequestrequesttypedef"></a>
 
 ## ExecuteScheduledQueryRequestRequestTypeDef
 
@@ -254,6 +286,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="executionstatstypedef"></a>
+
 ## ExecutionStatsTypeDef
 
 ```python
@@ -268,6 +302,8 @@ Optional fields:
 - `RecordsIngested`: `int`
 - `QueryResultRows`: `int`
 
+<a id="listscheduledqueriesrequestrequesttypedef"></a>
+
 ## ListScheduledQueriesRequestRequestTypeDef
 
 ```python
@@ -278,6 +314,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listscheduledqueriesresponsetypedef"></a>
 
 ## ListScheduledQueriesResponseTypeDef
 
@@ -292,6 +330,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourcerequestrequesttypedef"></a>
 
 ## ListTagsForResourceRequestRequestTypeDef
 
@@ -308,6 +348,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listtagsforresourceresponsetypedef"></a>
+
 ## ListTagsForResourceResponseTypeDef
 
 ```python
@@ -320,6 +362,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mixedmeasuremappingtypedef"></a>
 
 ## MixedMeasureMappingTypeDef
 
@@ -340,6 +384,8 @@ Optional fields:
 - `MultiMeasureAttributeMappings`:
   `Sequence`\[[MultiMeasureAttributeMappingTypeDef](./type_defs.md#multimeasureattributemappingtypedef)\]
 
+<a id="multimeasureattributemappingtypedef"></a>
+
 ## MultiMeasureAttributeMappingTypeDef
 
 ```python
@@ -356,6 +402,8 @@ Optional fields:
 
 - `TargetMultiMeasureAttributeName`: `str`
 
+<a id="multimeasuremappingstypedef"></a>
+
 ## MultiMeasureMappingsTypeDef
 
 ```python
@@ -371,6 +419,8 @@ Optional fields:
 
 - `TargetMultiMeasureName`: `str`
 
+<a id="notificationconfigurationtypedef"></a>
+
 ## NotificationConfigurationTypeDef
 
 ```python
@@ -381,6 +431,8 @@ Required fields:
 
 - `SnsConfiguration`:
   [SnsConfigurationTypeDef](./type_defs.md#snsconfigurationtypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -394,6 +446,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parametermappingtypedef"></a>
+
 ## ParameterMappingTypeDef
 
 ```python
@@ -404,6 +458,8 @@ Required fields:
 
 - `Name`: `str`
 - `Type`: [TypeTypeDef](./type_defs.md#typetypedef)
+
+<a id="preparequeryrequestrequesttypedef"></a>
 
 ## PrepareQueryRequestRequestTypeDef
 
@@ -418,6 +474,8 @@ Required fields:
 Optional fields:
 
 - `ValidateOnly`: `bool`
+
+<a id="preparequeryresponsetypedef"></a>
 
 ## PrepareQueryResponseTypeDef
 
@@ -435,6 +493,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="queryrequestrequesttypedef"></a>
+
 ## QueryRequestRequestTypeDef
 
 ```python
@@ -450,6 +510,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `NextToken`: `str`
 - `MaxRows`: `int`
+
+<a id="queryresponsetypedef"></a>
 
 ## QueryResponseTypeDef
 
@@ -467,6 +529,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="querystatustypedef"></a>
+
 ## QueryStatusTypeDef
 
 ```python
@@ -478,6 +542,8 @@ Optional fields:
 - `ProgressPercentage`: `float`
 - `CumulativeBytesScanned`: `int`
 - `CumulativeBytesMetered`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -493,6 +559,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="rowtypedef"></a>
+
 ## RowTypeDef
 
 ```python
@@ -502,6 +570,8 @@ from mypy_boto3_timestream_query.type_defs import RowTypeDef
 Required fields:
 
 - `Data`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
+
+<a id="s3configurationtypedef"></a>
 
 ## S3ConfigurationTypeDef
 
@@ -519,6 +589,8 @@ Optional fields:
 - `EncryptionOption`:
   [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
 
+<a id="s3reportlocationtypedef"></a>
+
 ## S3ReportLocationTypeDef
 
 ```python
@@ -530,6 +602,8 @@ Optional fields:
 - `BucketName`: `str`
 - `ObjectKey`: `str`
 
+<a id="scheduleconfigurationtypedef"></a>
+
 ## ScheduleConfigurationTypeDef
 
 ```python
@@ -539,6 +613,8 @@ from mypy_boto3_timestream_query.type_defs import ScheduleConfigurationTypeDef
 Required fields:
 
 - `ScheduleExpression`: `str`
+
+<a id="scheduledquerydescriptiontypedef"></a>
 
 ## ScheduledQueryDescriptionTypeDef
 
@@ -573,6 +649,8 @@ Optional fields:
 - `RecentlyFailedRuns`:
   `List`\[[ScheduledQueryRunSummaryTypeDef](./type_defs.md#scheduledqueryrunsummarytypedef)\]
 
+<a id="scheduledqueryrunsummarytypedef"></a>
+
 ## ScheduledQueryRunSummaryTypeDef
 
 ```python
@@ -590,6 +668,8 @@ Optional fields:
 - `ErrorReportLocation`:
   [ErrorReportLocationTypeDef](./type_defs.md#errorreportlocationtypedef)
 - `FailureReason`: `str`
+
+<a id="scheduledquerytypedef"></a>
 
 ## ScheduledQueryTypeDef
 
@@ -615,6 +695,8 @@ Optional fields:
 - `LastRunStatus`:
   [ScheduledQueryRunStatusType](./literals.md#scheduledqueryrunstatustype)
 
+<a id="selectcolumntypedef"></a>
+
 ## SelectColumnTypeDef
 
 ```python
@@ -629,6 +711,8 @@ Optional fields:
 - `TableName`: `str`
 - `Aliased`: `bool`
 
+<a id="snsconfigurationtypedef"></a>
+
 ## SnsConfigurationTypeDef
 
 ```python
@@ -638,6 +722,8 @@ from mypy_boto3_timestream_query.type_defs import SnsConfigurationTypeDef
 Required fields:
 
 - `TopicArn`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -650,6 +736,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -660,6 +748,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="targetconfigurationtypedef"></a>
 
 ## TargetConfigurationTypeDef
 
@@ -672,6 +762,8 @@ Required fields:
 - `TimestreamConfiguration`:
   [TimestreamConfigurationTypeDef](./type_defs.md#timestreamconfigurationtypedef)
 
+<a id="targetdestinationtypedef"></a>
+
 ## TargetDestinationTypeDef
 
 ```python
@@ -683,6 +775,8 @@ Optional fields:
 - `TimestreamDestination`:
   [TimestreamDestinationTypeDef](./type_defs.md#timestreamdestinationtypedef)
 
+<a id="timeseriesdatapointtypedef"></a>
+
 ## TimeSeriesDataPointTypeDef
 
 ```python
@@ -693,6 +787,8 @@ Required fields:
 
 - `Time`: `str`
 - `Value`: [DatumTypeDef](./type_defs.md#datumtypedef)
+
+<a id="timestreamconfigurationtypedef"></a>
 
 ## TimestreamConfigurationTypeDef
 
@@ -716,6 +812,8 @@ Optional fields:
   `Sequence`\[[MixedMeasureMappingTypeDef](./type_defs.md#mixedmeasuremappingtypedef)\]
 - `MeasureNameColumn`: `str`
 
+<a id="timestreamdestinationtypedef"></a>
+
 ## TimestreamDestinationTypeDef
 
 ```python
@@ -726,6 +824,8 @@ Optional fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
+
+<a id="typetypedef"></a>
 
 ## TypeTypeDef
 
@@ -742,6 +842,8 @@ Optional fields:
 - `RowColumnInfo`:
   `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -752,6 +854,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatescheduledqueryrequestrequesttypedef"></a>
 
 ## UpdateScheduledQueryRequestRequestTypeDef
 

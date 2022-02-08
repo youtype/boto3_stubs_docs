@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lexmodelbuildingservice-module"></a>
+
 # Literals for boto3 LexModelBuildingService module
 
 > [Index](..) > [LexModelBuildingService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LexModelBuildingService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lex-models.html#LexModelBuildingService)
 type annotations stubs module
-[mypy_boto3_lex_models](https://pypi.org/project/mypy-boto3-lex-models/).
+[mypy-boto3-lex-models](https://pypi.org/project/mypy-boto3-lex-models/).
 
 - [Literals for boto3 LexModelBuildingService module](#literals-for-boto3-lexmodelbuildingservice-module)
   - [ChannelStatusType](#channelstatustype)
@@ -44,6 +46,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="channelstatustype"></a>
+
 ## ChannelStatusType
 
 ```python
@@ -55,6 +59,8 @@ Values:
 - `CREATED`
 - `FAILED`
 - `IN_PROGRESS`
+
+<a id="channeltypetype"></a>
 
 ## ChannelTypeType
 
@@ -69,6 +75,8 @@ Values:
 - `Slack`
 - `Twilio-Sms`
 
+<a id="contenttypetype"></a>
+
 ## ContentTypeType
 
 ```python
@@ -81,6 +89,8 @@ Values:
 - `PlainText`
 - `SSML`
 
+<a id="destinationtype"></a>
+
 ## DestinationType
 
 ```python
@@ -91,6 +101,8 @@ Values:
 
 - `CLOUDWATCH_LOGS`
 - `S3`
+
+<a id="exportstatustype"></a>
 
 ## ExportStatusType
 
@@ -104,6 +116,8 @@ Values:
 - `IN_PROGRESS`
 - `READY`
 
+<a id="exporttypetype"></a>
+
 ## ExportTypeType
 
 ```python
@@ -114,6 +128,8 @@ Values:
 
 - `ALEXA_SKILLS_KIT`
 - `LEX`
+
+<a id="fulfillmentactivitytypetype"></a>
 
 ## FulfillmentActivityTypeType
 
@@ -126,6 +142,8 @@ Values:
 - `CodeHook`
 - `ReturnIntent`
 
+<a id="getbotaliasespaginatorname"></a>
+
 ## GetBotAliasesPaginatorName
 
 ```python
@@ -135,6 +153,8 @@ from mypy_boto3_lex_models.literals import GetBotAliasesPaginatorName
 Values:
 
 - `get_bot_aliases`
+
+<a id="getbotchannelassociationspaginatorname"></a>
 
 ## GetBotChannelAssociationsPaginatorName
 
@@ -146,6 +166,8 @@ Values:
 
 - `get_bot_channel_associations`
 
+<a id="getbotversionspaginatorname"></a>
+
 ## GetBotVersionsPaginatorName
 
 ```python
@@ -155,6 +177,8 @@ from mypy_boto3_lex_models.literals import GetBotVersionsPaginatorName
 Values:
 
 - `get_bot_versions`
+
+<a id="getbotspaginatorname"></a>
 
 ## GetBotsPaginatorName
 
@@ -166,6 +190,8 @@ Values:
 
 - `get_bots`
 
+<a id="getbuiltinintentspaginatorname"></a>
+
 ## GetBuiltinIntentsPaginatorName
 
 ```python
@@ -175,6 +201,8 @@ from mypy_boto3_lex_models.literals import GetBuiltinIntentsPaginatorName
 Values:
 
 - `get_builtin_intents`
+
+<a id="getbuiltinslottypespaginatorname"></a>
 
 ## GetBuiltinSlotTypesPaginatorName
 
@@ -186,6 +214,8 @@ Values:
 
 - `get_builtin_slot_types`
 
+<a id="getintentversionspaginatorname"></a>
+
 ## GetIntentVersionsPaginatorName
 
 ```python
@@ -195,6 +225,8 @@ from mypy_boto3_lex_models.literals import GetIntentVersionsPaginatorName
 Values:
 
 - `get_intent_versions`
+
+<a id="getintentspaginatorname"></a>
 
 ## GetIntentsPaginatorName
 
@@ -206,6 +238,8 @@ Values:
 
 - `get_intents`
 
+<a id="getslottypeversionspaginatorname"></a>
+
 ## GetSlotTypeVersionsPaginatorName
 
 ```python
@@ -216,6 +250,8 @@ Values:
 
 - `get_slot_type_versions`
 
+<a id="getslottypespaginatorname"></a>
+
 ## GetSlotTypesPaginatorName
 
 ```python
@@ -225,6 +261,8 @@ from mypy_boto3_lex_models.literals import GetSlotTypesPaginatorName
 Values:
 
 - `get_slot_types`
+
+<a id="importstatustype"></a>
 
 ## ImportStatusType
 
@@ -237,6 +275,8 @@ Values:
 - `COMPLETE`
 - `FAILED`
 - `IN_PROGRESS`
+
+<a id="localetype"></a>
 
 ## LocaleType
 
@@ -260,6 +300,8 @@ Values:
 - `ja-JP`
 - `ko-KR`
 
+<a id="logtypetype"></a>
+
 ## LogTypeType
 
 ```python
@@ -270,6 +312,8 @@ Values:
 
 - `AUDIO`
 - `TEXT`
+
+<a id="mergestrategytype"></a>
 
 ## MergeStrategyType
 
@@ -282,6 +326,8 @@ Values:
 - `FAIL_ON_CONFLICT`
 - `OVERWRITE_LATEST`
 
+<a id="migrationalerttypetype"></a>
+
 ## MigrationAlertTypeType
 
 ```python
@@ -293,6 +339,8 @@ Values:
 - `ERROR`
 - `WARN`
 
+<a id="migrationsortattributetype"></a>
+
 ## MigrationSortAttributeType
 
 ```python
@@ -303,6 +351,8 @@ Values:
 
 - `MIGRATION_DATE_TIME`
 - `V1_BOT_NAME`
+
+<a id="migrationstatustype"></a>
 
 ## MigrationStatusType
 
@@ -316,6 +366,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="migrationstrategytype"></a>
+
 ## MigrationStrategyType
 
 ```python
@@ -326,6 +378,8 @@ Values:
 
 - `CREATE_NEW`
 - `UPDATE_EXISTING`
+
+<a id="obfuscationsettingtype"></a>
 
 ## ObfuscationSettingType
 
@@ -338,6 +392,8 @@ Values:
 - `DEFAULT_OBFUSCATION`
 - `NONE`
 
+<a id="processbehaviortype"></a>
+
 ## ProcessBehaviorType
 
 ```python
@@ -348,6 +404,8 @@ Values:
 
 - `BUILD`
 - `SAVE`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -361,6 +419,8 @@ Values:
 - `INTENT`
 - `SLOT_TYPE`
 
+<a id="slotconstrainttype"></a>
+
 ## SlotConstraintType
 
 ```python
@@ -371,6 +431,8 @@ Values:
 
 - `Optional`
 - `Required`
+
+<a id="slotvalueselectionstrategytype"></a>
 
 ## SlotValueSelectionStrategyType
 
@@ -383,6 +445,8 @@ Values:
 - `ORIGINAL_VALUE`
 - `TOP_RESOLUTION`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -393,6 +457,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -408,6 +474,8 @@ Values:
 - `READY`
 - `READY_BASIC_TESTING`
 
+<a id="statustypetype"></a>
+
 ## StatusTypeType
 
 ```python
@@ -418,6 +486,8 @@ Values:
 
 - `Detected`
 - `Missed`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -726,6 +796,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

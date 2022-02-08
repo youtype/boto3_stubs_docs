@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-databasemigrationservice-module"></a>
+
 # Type annotations for boto3 DatabaseMigrationService module
 
 > [Index](..) > DatabaseMigrationService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [DatabaseMigrationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dms.html#DatabaseMigrationService)
 type annotations stubs module
-[mypy_boto3_dms](https://pypi.org/project/mypy-boto3-dms/).
+[mypy-boto3-dms](https://pypi.org/project/mypy-boto3-dms/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[dms]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[dms]'
+
+# standalone installation
 pip install mypy-boto3-dms
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-dms
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="databasemigrationserviceclient"></a>
+
 ## DatabaseMigrationServiceClient
 
 Type annotations for `boto3.client("dms")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -94,6 +108,8 @@ from mypy_boto3_dms.client import DatabaseMigrationServiceClient
 - [stop_replication_task](./client.md#stop_replication_task)
 - [test_connection](./client.md#test_connection)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
@@ -123,6 +139,8 @@ DatabaseMigrationServiceClient [exceptions](./client.md#exceptions)
 - SubnetAlreadyInUse
 - UpgradeDependencyFailureFault
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -131,7 +149,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.paginators import DescribeCertificatesPaginator, ...
+from mypy_boto3_dms.paginator import DescribeCertificatesPaginator, ...
 ```
 
 - [DescribeCertificatesPaginator](./paginators.md#describecertificatespaginator)
@@ -148,6 +166,8 @@ from mypy_boto3_dms.paginators import DescribeCertificatesPaginator, ...
 - [DescribeSchemasPaginator](./paginators.md#describeschemaspaginator)
 - [DescribeTableStatisticsPaginator](./paginators.md#describetablestatisticspaginator)
 
+<a id="waiters"></a>
+
 ## Waiters
 
 Type annotations for [waiters](./waiters.md) from
@@ -156,7 +176,7 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_dms.waiters import EndpointDeletedWaiter, ...
+from mypy_boto3_dms.waiter import EndpointDeletedWaiter, ...
 ```
 
 - [EndpointDeletedWaiter](./waiters.md#endpointdeletedwaiter)
@@ -167,6 +187,8 @@ from mypy_boto3_dms.waiters import EndpointDeletedWaiter, ...
 - [ReplicationTaskRunningWaiter](./waiters.md#replicationtaskrunningwaiter)
 - [ReplicationTaskStoppedWaiter](./waiters.md#replicationtaskstoppedwaiter)
 - [TestConnectionSucceedsWaiter](./waiters.md#testconnectionsucceedswaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -230,6 +252,8 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

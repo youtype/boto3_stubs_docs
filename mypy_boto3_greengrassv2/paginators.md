@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-greengrassv2-module"></a>
+
 # Paginators for boto3 GreengrassV2 module
 
 > [Index](..) > [GreengrassV2](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
-[mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [Paginators for boto3 GreengrassV2 module](#paginators-for-boto3-greengrassv2-module)
   - [ListClientDevicesAssociatedWithCoreDevicePaginator](#listclientdevicesassociatedwithcoredevicepaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [ListEffectiveDeploymentsPaginator](#listeffectivedeploymentspaginator)
   - [ListInstalledComponentsPaginator](#listinstalledcomponentspaginator)
 
+<a id="listclientdevicesassociatedwithcoredevicepaginator"></a>
+
 ## ListClientDevicesAssociatedWithCoreDevicePaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListClientDevicesAssociatedWithCoreDevicePaginator
 
 def get_list_client_devices_associated_with_core_device_paginator() -> ListClientDevicesAssociatedWithCoreDevicePaginator:
-    return boto3.client("greengrassv2").get_paginator("list_client_devices_associated_with_core_device")
+    return Session().client("greengrassv2").get_paginator("list_client_devices_associated_with_core_device")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ method:
 `ListClientDevicesAssociatedWithCoreDevicePaginator.paginate` returns
 `_PageIterator`\[[ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef](./type_defs.md#listclientdevicesassociatedwithcoredeviceresponsetypedef)\].
 
+<a id="listcomponentversionspaginator"></a>
+
 ## ListComponentVersionsPaginator
 
 Type annotations for
@@ -51,10 +59,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListComponentVersionsPaginator
 
 def get_list_component_versions_paginator() -> ListComponentVersionsPaginator:
-    return boto3.client("greengrassv2").get_paginator("list_component_versions")
+    return Session().client("greengrassv2").get_paginator("list_component_versions")
 ```
 
 Boto3 documentation:
@@ -69,6 +79,8 @@ Arguments for `ListComponentVersionsPaginator.paginate` method:
 `ListComponentVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListComponentVersionsResponseTypeDef](./type_defs.md#listcomponentversionsresponsetypedef)\].
 
+<a id="listcomponentspaginator"></a>
+
 ## ListComponentsPaginator
 
 Type annotations for
@@ -77,10 +89,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListComponentsPaginator
 
 def get_list_components_paginator() -> ListComponentsPaginator:
-    return boto3.client("greengrassv2").get_paginator("list_components")
+    return Session().client("greengrassv2").get_paginator("list_components")
 ```
 
 Boto3 documentation:
@@ -96,6 +110,8 @@ Arguments for `ListComponentsPaginator.paginate` method:
 `ListComponentsPaginator.paginate` returns
 `_PageIterator`\[[ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)\].
 
+<a id="listcoredevicespaginator"></a>
+
 ## ListCoreDevicesPaginator
 
 Type annotations for
@@ -104,10 +120,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListCoreDevicesPaginator
 
 def get_list_core_devices_paginator() -> ListCoreDevicesPaginator:
-    return boto3.client("greengrassv2").get_paginator("list_core_devices")
+    return Session().client("greengrassv2").get_paginator("list_core_devices")
 ```
 
 Boto3 documentation:
@@ -123,6 +141,8 @@ Arguments for `ListCoreDevicesPaginator.paginate` method:
 `ListCoreDevicesPaginator.paginate` returns
 `_PageIterator`\[[ListCoreDevicesResponseTypeDef](./type_defs.md#listcoredevicesresponsetypedef)\].
 
+<a id="listdeploymentspaginator"></a>
+
 ## ListDeploymentsPaginator
 
 Type annotations for
@@ -131,10 +151,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListDeploymentsPaginator
 
 def get_list_deployments_paginator() -> ListDeploymentsPaginator:
-    return boto3.client("greengrassv2").get_paginator("list_deployments")
+    return Session().client("greengrassv2").get_paginator("list_deployments")
 ```
 
 Boto3 documentation:
@@ -151,6 +173,8 @@ Arguments for `ListDeploymentsPaginator.paginate` method:
 `ListDeploymentsPaginator.paginate` returns
 `_PageIterator`\[[ListDeploymentsResponseTypeDef](./type_defs.md#listdeploymentsresponsetypedef)\].
 
+<a id="listeffectivedeploymentspaginator"></a>
+
 ## ListEffectiveDeploymentsPaginator
 
 Type annotations for
@@ -159,10 +183,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListEffectiveDeploymentsPaginator
 
 def get_list_effective_deployments_paginator() -> ListEffectiveDeploymentsPaginator:
-    return boto3.client("greengrassv2").get_paginator("list_effective_deployments")
+    return Session().client("greengrassv2").get_paginator("list_effective_deployments")
 ```
 
 Boto3 documentation:
@@ -177,6 +203,8 @@ Arguments for `ListEffectiveDeploymentsPaginator.paginate` method:
 `ListEffectiveDeploymentsPaginator.paginate` returns
 `_PageIterator`\[[ListEffectiveDeploymentsResponseTypeDef](./type_defs.md#listeffectivedeploymentsresponsetypedef)\].
 
+<a id="listinstalledcomponentspaginator"></a>
+
 ## ListInstalledComponentsPaginator
 
 Type annotations for
@@ -185,10 +213,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_greengrassv2.paginator import ListInstalledComponentsPaginator
 
 def get_list_installed_components_paginator() -> ListInstalledComponentsPaginator:
-    return boto3.client("greengrassv2").get_paginator("list_installed_components")
+    return Session().client("greengrassv2").get_paginator("list_installed_components")
 ```
 
 Boto3 documentation:

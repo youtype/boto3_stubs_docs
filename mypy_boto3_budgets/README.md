@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-budgets-module"></a>
+
 # Type annotations for boto3 Budgets module
 
 > [Index](..) > Budgets
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Budgets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets)
 type annotations stubs module
-[mypy_boto3_budgets](https://pypi.org/project/mypy-boto3-budgets/).
+[mypy-boto3-budgets](https://pypi.org/project/mypy-boto3-budgets/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[budgets]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[budgets]'
+
+# standalone installation
 pip install mypy-boto3-budgets
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-budgets
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="budgetsclient"></a>
+
 ## BudgetsClient
 
 Type annotations for `boto3.client("budgets")` as [BudgetsClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_budgets.client import BudgetsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -58,6 +72,8 @@ from mypy_boto3_budgets.client import BudgetsClient
 - [update_notification](./client.md#update_notification)
 - [update_subscriber](./client.md#update_subscriber)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 BudgetsClient [exceptions](./client.md#exceptions)
@@ -73,6 +89,8 @@ BudgetsClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - ResourceLockedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -81,7 +99,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_budgets.paginators import DescribeBudgetActionHistoriesPaginator, ...
+from mypy_boto3_budgets.paginator import DescribeBudgetActionHistoriesPaginator, ...
 ```
 
 - [DescribeBudgetActionHistoriesPaginator](./paginators.md#describebudgetactionhistoriespaginator)
@@ -91,6 +109,8 @@ from mypy_boto3_budgets.paginators import DescribeBudgetActionHistoriesPaginator
 - [DescribeBudgetsPaginator](./paginators.md#describebudgetspaginator)
 - [DescribeNotificationsForBudgetPaginator](./paginators.md#describenotificationsforbudgetpaginator)
 - [DescribeSubscribersForNotificationPaginator](./paginators.md#describesubscribersfornotificationpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -124,6 +144,8 @@ from mypy_boto3_budgets.literals import ActionStatusType, ...
 - [TimeUnitType](./literals.md#timeunittype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

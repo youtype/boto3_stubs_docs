@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-timestreamwrite-module"></a>
+
 # Literals for boto3 TimestreamWrite module
 
 > [Index](..) > [TimestreamWrite](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
-[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+[mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [Literals for boto3 TimestreamWrite module](#literals-for-boto3-timestreamwrite-module)
   - [DimensionValueTypeType](#dimensionvaluetypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [TableStatusType](#tablestatustype)
   - [TimeUnitType](#timeunittype)
   - [ServiceName](#servicename)
+
+<a id="dimensionvaluetypetype"></a>
 
 ## DimensionValueTypeType
 
@@ -24,6 +28,8 @@ from mypy_boto3_timestream_write.literals import DimensionValueTypeType
 Values:
 
 - `VARCHAR`
+
+<a id="measurevaluetypetype"></a>
 
 ## MeasureValueTypeType
 
@@ -40,6 +46,8 @@ Values:
 - `TIMESTAMP`
 - `VARCHAR`
 
+<a id="s3encryptionoptiontype"></a>
+
 ## S3EncryptionOptionType
 
 ```python
@@ -51,6 +59,8 @@ Values:
 - `SSE_KMS`
 - `SSE_S3`
 
+<a id="tablestatustype"></a>
+
 ## TableStatusType
 
 ```python
@@ -61,6 +71,8 @@ Values:
 
 - `ACTIVE`
 - `DELETING`
+
+<a id="timeunittype"></a>
 
 ## TimeUnitType
 
@@ -74,6 +86,8 @@ Values:
 - `MILLISECONDS`
 - `NANOSECONDS`
 - `SECONDS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

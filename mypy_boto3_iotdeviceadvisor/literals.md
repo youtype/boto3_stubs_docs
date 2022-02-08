@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotdeviceadvisor-module"></a>
+
 # Literals for boto3 IoTDeviceAdvisor module
 
 > [Index](..) > [IoTDeviceAdvisor](.) > Literals
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [IoTDeviceAdvisor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotdeviceadvisor.html#IoTDeviceAdvisor)
 type annotations stubs module
-[mypy_boto3_iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
+[mypy-boto3-iotdeviceadvisor](https://pypi.org/project/mypy-boto3-iotdeviceadvisor/).
 
 - [Literals for boto3 IoTDeviceAdvisor module](#literals-for-boto3-iotdeviceadvisor-module)
   - [StatusType](#statustype)
   - [SuiteRunStatusType](#suiterunstatustype)
   - [ServiceName](#servicename)
+
+<a id="statustype"></a>
 
 ## StatusType
 
@@ -30,6 +34,8 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
+<a id="suiterunstatustype"></a>
+
 ## SuiteRunStatusType
 
 ```python
@@ -47,6 +53,8 @@ Values:
 - `RUNNING`
 - `STOPPED`
 - `STOPPING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-iotevents-module"></a>
+
 # Literals for boto3 IoTEvents module
 
 > [Index](..) > [IoTEvents](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotevents.html#IoTEvents)
 type annotations stubs module
-[mypy_boto3_iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
+[mypy-boto3-iotevents](https://pypi.org/project/mypy-boto3-iotevents/).
 
 - [Literals for boto3 IoTEvents module](#literals-for-boto3-iotevents-module)
   - [AlarmModelVersionStatusType](#alarmmodelversionstatustype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [LoggingLevelType](#loggingleveltype)
   - [PayloadTypeType](#payloadtypetype)
   - [ServiceName](#servicename)
+
+<a id="alarmmodelversionstatustype"></a>
 
 ## AlarmModelVersionStatusType
 
@@ -32,6 +36,8 @@ Values:
 - `FAILED`
 - `INACTIVE`
 
+<a id="analysisresultleveltype"></a>
+
 ## AnalysisResultLevelType
 
 ```python
@@ -44,6 +50,8 @@ Values:
 - `INFO`
 - `WARNING`
 
+<a id="analysisstatustype"></a>
+
 ## AnalysisStatusType
 
 ```python
@@ -55,6 +63,8 @@ Values:
 - `COMPLETE`
 - `FAILED`
 - `RUNNING`
+
+<a id="comparisonoperatortype"></a>
 
 ## ComparisonOperatorType
 
@@ -70,6 +80,8 @@ Values:
 - `LESS`
 - `LESS_OR_EQUAL`
 - `NOT_EQUAL`
+
+<a id="detectormodelversionstatustype"></a>
 
 ## DetectorModelVersionStatusType
 
@@ -87,6 +99,8 @@ Values:
 - `INACTIVE`
 - `PAUSED`
 
+<a id="evaluationmethodtype"></a>
+
 ## EvaluationMethodType
 
 ```python
@@ -97,6 +111,8 @@ Values:
 
 - `BATCH`
 - `SERIAL`
+
+<a id="inputstatustype"></a>
 
 ## InputStatusType
 
@@ -111,6 +127,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="loggingleveltype"></a>
+
 ## LoggingLevelType
 
 ```python
@@ -123,6 +141,8 @@ Values:
 - `ERROR`
 - `INFO`
 
+<a id="payloadtypetype"></a>
+
 ## PayloadTypeType
 
 ```python
@@ -133,6 +153,8 @@ Values:
 
 - `JSON`
 - `STRING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

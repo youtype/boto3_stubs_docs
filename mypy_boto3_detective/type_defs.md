@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-detective-module"></a>
+
 # Typed dictionaries for boto3 Detective module
 
 > [Index](..) > [Detective](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
 type annotations stubs module
-[mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
+[mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
 - [Typed dictionaries for boto3 Detective module](#typed-dictionaries-for-boto3-detective-module)
   - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
@@ -44,6 +46,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateOrganizationConfigurationRequestRequestTypeDef](#updateorganizationconfigurationrequestrequesttypedef)
 
+<a id="acceptinvitationrequestrequesttypedef"></a>
+
 ## AcceptInvitationRequestRequestTypeDef
 
 ```python
@@ -53,6 +57,8 @@ from mypy_boto3_detective.type_defs import AcceptInvitationRequestRequestTypeDef
 Required fields:
 
 - `GraphArn`: `str`
+
+<a id="accounttypedef"></a>
 
 ## AccountTypeDef
 
@@ -64,6 +70,8 @@ Required fields:
 
 - `AccountId`: `str`
 - `EmailAddress`: `str`
+
+<a id="administratortypedef"></a>
 
 ## AdministratorTypeDef
 
@@ -77,6 +85,8 @@ Optional fields:
 - `GraphArn`: `str`
 - `DelegationTime`: `datetime`
 
+<a id="creategraphrequestrequesttypedef"></a>
+
 ## CreateGraphRequestRequestTypeDef
 
 ```python
@@ -86,6 +96,8 @@ from mypy_boto3_detective.type_defs import CreateGraphRequestRequestTypeDef
 Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="creategraphresponsetypedef"></a>
 
 ## CreateGraphResponseTypeDef
 
@@ -98,6 +110,8 @@ Required fields:
 - `GraphArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmembersrequestrequesttypedef"></a>
 
 ## CreateMembersRequestRequestTypeDef
 
@@ -115,6 +129,8 @@ Optional fields:
 - `Message`: `str`
 - `DisableEmailNotification`: `bool`
 
+<a id="createmembersresponsetypedef"></a>
+
 ## CreateMembersResponseTypeDef
 
 ```python
@@ -130,6 +146,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegraphrequestrequesttypedef"></a>
+
 ## DeleteGraphRequestRequestTypeDef
 
 ```python
@@ -139,6 +157,8 @@ from mypy_boto3_detective.type_defs import DeleteGraphRequestRequestTypeDef
 Required fields:
 
 - `GraphArn`: `str`
+
+<a id="deletemembersrequestrequesttypedef"></a>
 
 ## DeleteMembersRequestRequestTypeDef
 
@@ -150,6 +170,8 @@ Required fields:
 
 - `GraphArn`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="deletemembersresponsetypedef"></a>
 
 ## DeleteMembersResponseTypeDef
 
@@ -165,6 +187,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationconfigurationrequestrequesttypedef"></a>
+
 ## DescribeOrganizationConfigurationRequestRequestTypeDef
 
 ```python
@@ -174,6 +198,8 @@ from mypy_boto3_detective.type_defs import DescribeOrganizationConfigurationRequ
 Required fields:
 
 - `GraphArn`: `str`
+
+<a id="describeorganizationconfigurationresponsetypedef"></a>
 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
@@ -187,6 +213,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatemembershiprequestrequesttypedef"></a>
+
 ## DisassociateMembershipRequestRequestTypeDef
 
 ```python
@@ -196,6 +224,8 @@ from mypy_boto3_detective.type_defs import DisassociateMembershipRequestRequestT
 Required fields:
 
 - `GraphArn`: `str`
+
+<a id="enableorganizationadminaccountrequestrequesttypedef"></a>
 
 ## EnableOrganizationAdminAccountRequestRequestTypeDef
 
@@ -207,6 +237,8 @@ Required fields:
 
 - `AccountId`: `str`
 
+<a id="getmembersrequestrequesttypedef"></a>
+
 ## GetMembersRequestRequestTypeDef
 
 ```python
@@ -217,6 +249,8 @@ Required fields:
 
 - `GraphArn`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="getmembersresponsetypedef"></a>
 
 ## GetMembersResponseTypeDef
 
@@ -233,6 +267,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="graphtypedef"></a>
+
 ## GraphTypeDef
 
 ```python
@@ -244,6 +280,8 @@ Optional fields:
 - `Arn`: `str`
 - `CreatedTime`: `datetime`
 
+<a id="listgraphsrequestrequesttypedef"></a>
+
 ## ListGraphsRequestRequestTypeDef
 
 ```python
@@ -254,6 +292,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listgraphsresponsetypedef"></a>
 
 ## ListGraphsResponseTypeDef
 
@@ -268,6 +308,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinvitationsrequestrequesttypedef"></a>
+
 ## ListInvitationsRequestRequestTypeDef
 
 ```python
@@ -278,6 +320,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listinvitationsresponsetypedef"></a>
 
 ## ListInvitationsResponseTypeDef
 
@@ -292,6 +336,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmembersrequestrequesttypedef"></a>
 
 ## ListMembersRequestRequestTypeDef
 
@@ -308,6 +354,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmembersresponsetypedef"></a>
+
 ## ListMembersResponseTypeDef
 
 ```python
@@ -322,6 +370,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listorganizationadminaccountsrequestrequesttypedef"></a>
+
 ## ListOrganizationAdminAccountsRequestRequestTypeDef
 
 ```python
@@ -332,6 +382,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listorganizationadminaccountsresponsetypedef"></a>
 
 ## ListOrganizationAdminAccountsResponseTypeDef
 
@@ -347,6 +399,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -356,6 +410,8 @@ from mypy_boto3_detective.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -368,6 +424,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="memberdetailtypedef"></a>
 
 ## MemberDetailTypeDef
 
@@ -393,6 +451,8 @@ Optional fields:
 - `PercentOfGraphUtilizationUpdatedTime`: `datetime`
 - `InvitationType`: [InvitationTypeType](./literals.md#invitationtypetype)
 
+<a id="rejectinvitationrequestrequesttypedef"></a>
+
 ## RejectInvitationRequestRequestTypeDef
 
 ```python
@@ -402,6 +462,8 @@ from mypy_boto3_detective.type_defs import RejectInvitationRequestRequestTypeDef
 Required fields:
 
 - `GraphArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -417,6 +479,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="startmonitoringmemberrequestrequesttypedef"></a>
+
 ## StartMonitoringMemberRequestRequestTypeDef
 
 ```python
@@ -427,6 +491,8 @@ Required fields:
 
 - `GraphArn`: `str`
 - `AccountId`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -439,6 +505,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="unprocessedaccounttypedef"></a>
+
 ## UnprocessedAccountTypeDef
 
 ```python
@@ -450,6 +518,8 @@ Optional fields:
 - `AccountId`: `str`
 - `Reason`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -460,6 +530,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
 
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 

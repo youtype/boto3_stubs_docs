@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-memorydb-module"></a>
+
 # Type annotations for boto3 MemoryDB module
 
 > [Index](..) > MemoryDB
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MemoryDB](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/memorydb.html#MemoryDB)
 type annotations stubs module
-[mypy_boto3_memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
+[mypy-boto3-memorydb](https://pypi.org/project/mypy-boto3-memorydb/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[memorydb]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[memorydb]'
+
+# standalone installation
 pip install mypy-boto3-memorydb
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-memorydb
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="memorydbclient"></a>
 
 ## MemoryDBClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_memorydb.client import MemoryDBClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -69,6 +83,8 @@ from mypy_boto3_memorydb.client import MemoryDBClient
 - [update_parameter_group](./client.md#update_parameter_group)
 - [update_subnet_group](./client.md#update_subnet_group)
 - [update_user](./client.md#update_user)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -125,6 +141,8 @@ MemoryDBClient [exceptions](./client.md#exceptions)
 - UserNotFoundFault
 - UserQuotaExceededFault
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -142,6 +160,8 @@ from mypy_boto3_memorydb.literals import AZStatusType, ...
 - [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

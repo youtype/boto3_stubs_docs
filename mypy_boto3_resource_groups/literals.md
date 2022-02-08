@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-resourcegroups-module"></a>
+
 # Literals for boto3 ResourceGroups module
 
 > [Index](..) > [ResourceGroups](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
-[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+[mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [Literals for boto3 ResourceGroups module](#literals-for-boto3-resourcegroups-module)
   - [GroupConfigurationStatusType](#groupconfigurationstatustype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="groupconfigurationstatustype"></a>
+
 ## GroupConfigurationStatusType
 
 ```python
@@ -32,6 +36,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATING`
 
+<a id="groupfilternametype"></a>
+
 ## GroupFilterNameType
 
 ```python
@@ -43,6 +49,8 @@ Values:
 - `configuration-type`
 - `resource-type`
 
+<a id="listgroupresourcespaginatorname"></a>
+
 ## ListGroupResourcesPaginatorName
 
 ```python
@@ -53,6 +61,8 @@ Values:
 
 - `list_group_resources`
 
+<a id="listgroupspaginatorname"></a>
+
 ## ListGroupsPaginatorName
 
 ```python
@@ -62,6 +72,8 @@ from mypy_boto3_resource_groups.literals import ListGroupsPaginatorName
 Values:
 
 - `list_groups`
+
+<a id="queryerrorcodetype"></a>
 
 ## QueryErrorCodeType
 
@@ -74,6 +86,8 @@ Values:
 - `CLOUDFORMATION_STACK_INACTIVE`
 - `CLOUDFORMATION_STACK_NOT_EXISTING`
 
+<a id="querytypetype"></a>
+
 ## QueryTypeType
 
 ```python
@@ -85,6 +99,8 @@ Values:
 - `CLOUDFORMATION_STACK_1_0`
 - `TAG_FILTERS_1_0`
 
+<a id="resourcefilternametype"></a>
+
 ## ResourceFilterNameType
 
 ```python
@@ -94,6 +110,8 @@ from mypy_boto3_resource_groups.literals import ResourceFilterNameType
 Values:
 
 - `resource-type`
+
+<a id="resourcestatusvaluetype"></a>
 
 ## ResourceStatusValueType
 
@@ -105,6 +123,8 @@ Values:
 
 - `PENDING`
 
+<a id="searchresourcespaginatorname"></a>
+
 ## SearchResourcesPaginatorName
 
 ```python
@@ -114,6 +134,8 @@ from mypy_boto3_resource_groups.literals import SearchResourcesPaginatorName
 Values:
 
 - `search_resources`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -422,6 +444,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

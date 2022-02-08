@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-globalaccelerator-module"></a>
+
 # Typed dictionaries for boto3 GlobalAccelerator module
 
 > [Index](..) > [GlobalAccelerator](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlobalAccelerator](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/globalaccelerator.html#GlobalAccelerator)
 type annotations stubs module
-[mypy_boto3_globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
+[mypy-boto3-globalaccelerator](https://pypi.org/project/mypy-boto3-globalaccelerator/).
 
 - [Typed dictionaries for boto3 GlobalAccelerator module](#typed-dictionaries-for-boto3-globalaccelerator-module)
   - [AcceleratorAttributesTypeDef](#acceleratorattributestypedef)
@@ -118,6 +120,8 @@ type annotations stubs module
   - [WithdrawByoipCidrRequestRequestTypeDef](#withdrawbyoipcidrrequestrequesttypedef)
   - [WithdrawByoipCidrResponseTypeDef](#withdrawbyoipcidrresponsetypedef)
 
+<a id="acceleratorattributestypedef"></a>
+
 ## AcceleratorAttributesTypeDef
 
 ```python
@@ -129,6 +133,8 @@ Optional fields:
 - `FlowLogsEnabled`: `bool`
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
+
+<a id="acceleratortypedef"></a>
 
 ## AcceleratorTypeDef
 
@@ -149,6 +155,8 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="addcustomroutingendpointsrequestrequesttypedef"></a>
+
 ## AddCustomRoutingEndpointsRequestRequestTypeDef
 
 ```python
@@ -160,6 +168,8 @@ Required fields:
 - `EndpointConfigurations`:
   `Sequence`\[[CustomRoutingEndpointConfigurationTypeDef](./type_defs.md#customroutingendpointconfigurationtypedef)\]
 - `EndpointGroupArn`: `str`
+
+<a id="addcustomroutingendpointsresponsetypedef"></a>
 
 ## AddCustomRoutingEndpointsResponseTypeDef
 
@@ -175,6 +185,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="advertisebyoipcidrrequestrequesttypedef"></a>
+
 ## AdvertiseByoipCidrRequestRequestTypeDef
 
 ```python
@@ -184,6 +196,8 @@ from mypy_boto3_globalaccelerator.type_defs import AdvertiseByoipCidrRequestRequ
 Required fields:
 
 - `Cidr`: `str`
+
+<a id="advertisebyoipcidrresponsetypedef"></a>
 
 ## AdvertiseByoipCidrResponseTypeDef
 
@@ -196,6 +210,8 @@ Required fields:
 - `ByoipCidr`: [ByoipCidrTypeDef](./type_defs.md#byoipcidrtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="allowcustomroutingtrafficrequestrequesttypedef"></a>
 
 ## AllowCustomRoutingTrafficRequestRequestTypeDef
 
@@ -214,6 +230,8 @@ Optional fields:
 - `DestinationPorts`: `Sequence`\[`int`\]
 - `AllowAllTrafficToEndpoint`: `bool`
 
+<a id="byoipcidreventtypedef"></a>
+
 ## ByoipCidrEventTypeDef
 
 ```python
@@ -224,6 +242,8 @@ Optional fields:
 
 - `Message`: `str`
 - `Timestamp`: `datetime`
+
+<a id="byoipcidrtypedef"></a>
 
 ## ByoipCidrTypeDef
 
@@ -238,6 +258,8 @@ Optional fields:
 - `Events`:
   `List`\[[ByoipCidrEventTypeDef](./type_defs.md#byoipcidreventtypedef)\]
 
+<a id="cidrauthorizationcontexttypedef"></a>
+
 ## CidrAuthorizationContextTypeDef
 
 ```python
@@ -248,6 +270,8 @@ Required fields:
 
 - `Message`: `str`
 - `Signature`: `str`
+
+<a id="createacceleratorrequestrequesttypedef"></a>
 
 ## CreateAcceleratorRequestRequestTypeDef
 
@@ -268,6 +292,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createacceleratorresponsetypedef"></a>
+
 ## CreateAcceleratorResponseTypeDef
 
 ```python
@@ -279,6 +305,8 @@ Required fields:
 - `Accelerator`: [AcceleratorTypeDef](./type_defs.md#acceleratortypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcustomroutingacceleratorrequestrequesttypedef"></a>
 
 ## CreateCustomRoutingAcceleratorRequestRequestTypeDef
 
@@ -299,6 +327,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createcustomroutingacceleratorresponsetypedef"></a>
+
 ## CreateCustomRoutingAcceleratorResponseTypeDef
 
 ```python
@@ -311,6 +341,8 @@ Required fields:
   [CustomRoutingAcceleratorTypeDef](./type_defs.md#customroutingacceleratortypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcustomroutingendpointgrouprequestrequesttypedef"></a>
 
 ## CreateCustomRoutingEndpointGroupRequestRequestTypeDef
 
@@ -326,6 +358,8 @@ Required fields:
   `Sequence`\[[CustomRoutingDestinationConfigurationTypeDef](./type_defs.md#customroutingdestinationconfigurationtypedef)\]
 - `IdempotencyToken`: `str`
 
+<a id="createcustomroutingendpointgroupresponsetypedef"></a>
+
 ## CreateCustomRoutingEndpointGroupResponseTypeDef
 
 ```python
@@ -338,6 +372,8 @@ Required fields:
   [CustomRoutingEndpointGroupTypeDef](./type_defs.md#customroutingendpointgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcustomroutinglistenerrequestrequesttypedef"></a>
 
 ## CreateCustomRoutingListenerRequestRequestTypeDef
 
@@ -352,6 +388,8 @@ Required fields:
   `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 - `IdempotencyToken`: `str`
 
+<a id="createcustomroutinglistenerresponsetypedef"></a>
+
 ## CreateCustomRoutingListenerResponseTypeDef
 
 ```python
@@ -364,6 +402,8 @@ Required fields:
   [CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createendpointgrouprequestrequesttypedef"></a>
 
 ## CreateEndpointGroupRequestRequestTypeDef
 
@@ -391,6 +431,8 @@ Optional fields:
 - `PortOverrides`:
   `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
+<a id="createendpointgroupresponsetypedef"></a>
+
 ## CreateEndpointGroupResponseTypeDef
 
 ```python
@@ -402,6 +444,8 @@ Required fields:
 - `EndpointGroup`: [EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlistenerrequestrequesttypedef"></a>
 
 ## CreateListenerRequestRequestTypeDef
 
@@ -421,6 +465,8 @@ Optional fields:
 
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
+<a id="createlistenerresponsetypedef"></a>
+
 ## CreateListenerResponseTypeDef
 
 ```python
@@ -433,6 +479,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="customroutingacceleratorattributestypedef"></a>
+
 ## CustomRoutingAcceleratorAttributesTypeDef
 
 ```python
@@ -444,6 +492,8 @@ Optional fields:
 - `FlowLogsEnabled`: `bool`
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
+
+<a id="customroutingacceleratortypedef"></a>
 
 ## CustomRoutingAcceleratorTypeDef
 
@@ -465,6 +515,8 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="customroutingdestinationconfigurationtypedef"></a>
+
 ## CustomRoutingDestinationConfigurationTypeDef
 
 ```python
@@ -478,6 +530,8 @@ Required fields:
 - `Protocols`:
   `Sequence`\[[CustomRoutingProtocolType](./literals.md#customroutingprotocoltype)\]
 
+<a id="customroutingdestinationdescriptiontypedef"></a>
+
 ## CustomRoutingDestinationDescriptionTypeDef
 
 ```python
@@ -490,6 +544,8 @@ Optional fields:
 - `ToPort`: `int`
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 
+<a id="customroutingendpointconfigurationtypedef"></a>
+
 ## CustomRoutingEndpointConfigurationTypeDef
 
 ```python
@@ -500,6 +556,8 @@ Optional fields:
 
 - `EndpointId`: `str`
 
+<a id="customroutingendpointdescriptiontypedef"></a>
+
 ## CustomRoutingEndpointDescriptionTypeDef
 
 ```python
@@ -509,6 +567,8 @@ from mypy_boto3_globalaccelerator.type_defs import CustomRoutingEndpointDescript
 Optional fields:
 
 - `EndpointId`: `str`
+
+<a id="customroutingendpointgrouptypedef"></a>
 
 ## CustomRoutingEndpointGroupTypeDef
 
@@ -525,6 +585,8 @@ Optional fields:
 - `EndpointDescriptions`:
   `List`\[[CustomRoutingEndpointDescriptionTypeDef](./type_defs.md#customroutingendpointdescriptiontypedef)\]
 
+<a id="customroutinglistenertypedef"></a>
+
 ## CustomRoutingListenerTypeDef
 
 ```python
@@ -536,6 +598,8 @@ Optional fields:
 - `ListenerArn`: `str`
 - `PortRanges`: `List`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
 
+<a id="deleteacceleratorrequestrequesttypedef"></a>
+
 ## DeleteAcceleratorRequestRequestTypeDef
 
 ```python
@@ -545,6 +609,8 @@ from mypy_boto3_globalaccelerator.type_defs import DeleteAcceleratorRequestReque
 Required fields:
 
 - `AcceleratorArn`: `str`
+
+<a id="deletecustomroutingacceleratorrequestrequesttypedef"></a>
 
 ## DeleteCustomRoutingAcceleratorRequestRequestTypeDef
 
@@ -556,6 +622,8 @@ Required fields:
 
 - `AcceleratorArn`: `str`
 
+<a id="deletecustomroutingendpointgrouprequestrequesttypedef"></a>
+
 ## DeleteCustomRoutingEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -565,6 +633,8 @@ from mypy_boto3_globalaccelerator.type_defs import DeleteCustomRoutingEndpointGr
 Required fields:
 
 - `EndpointGroupArn`: `str`
+
+<a id="deletecustomroutinglistenerrequestrequesttypedef"></a>
 
 ## DeleteCustomRoutingListenerRequestRequestTypeDef
 
@@ -576,6 +646,8 @@ Required fields:
 
 - `ListenerArn`: `str`
 
+<a id="deleteendpointgrouprequestrequesttypedef"></a>
+
 ## DeleteEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -586,6 +658,8 @@ Required fields:
 
 - `EndpointGroupArn`: `str`
 
+<a id="deletelistenerrequestrequesttypedef"></a>
+
 ## DeleteListenerRequestRequestTypeDef
 
 ```python
@@ -595,6 +669,8 @@ from mypy_boto3_globalaccelerator.type_defs import DeleteListenerRequestRequestT
 Required fields:
 
 - `ListenerArn`: `str`
+
+<a id="denycustomroutingtrafficrequestrequesttypedef"></a>
 
 ## DenyCustomRoutingTrafficRequestRequestTypeDef
 
@@ -613,6 +689,8 @@ Optional fields:
 - `DestinationPorts`: `Sequence`\[`int`\]
 - `DenyAllTrafficToEndpoint`: `bool`
 
+<a id="deprovisionbyoipcidrrequestrequesttypedef"></a>
+
 ## DeprovisionByoipCidrRequestRequestTypeDef
 
 ```python
@@ -622,6 +700,8 @@ from mypy_boto3_globalaccelerator.type_defs import DeprovisionByoipCidrRequestRe
 Required fields:
 
 - `Cidr`: `str`
+
+<a id="deprovisionbyoipcidrresponsetypedef"></a>
 
 ## DeprovisionByoipCidrResponseTypeDef
 
@@ -635,6 +715,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeacceleratorattributesrequestrequesttypedef"></a>
+
 ## DescribeAcceleratorAttributesRequestRequestTypeDef
 
 ```python
@@ -644,6 +726,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorAttributes
 Required fields:
 
 - `AcceleratorArn`: `str`
+
+<a id="describeacceleratorattributesresponsetypedef"></a>
 
 ## DescribeAcceleratorAttributesResponseTypeDef
 
@@ -658,6 +742,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeacceleratorrequestrequesttypedef"></a>
+
 ## DescribeAcceleratorRequestRequestTypeDef
 
 ```python
@@ -667,6 +753,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeAcceleratorRequestReq
 Required fields:
 
 - `AcceleratorArn`: `str`
+
+<a id="describeacceleratorresponsetypedef"></a>
 
 ## DescribeAcceleratorResponseTypeDef
 
@@ -680,6 +768,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecustomroutingacceleratorattributesrequestrequesttypedef"></a>
+
 ## DescribeCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 
 ```python
@@ -689,6 +779,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAccelera
 Required fields:
 
 - `AcceleratorArn`: `str`
+
+<a id="describecustomroutingacceleratorattributesresponsetypedef"></a>
 
 ## DescribeCustomRoutingAcceleratorAttributesResponseTypeDef
 
@@ -703,6 +795,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecustomroutingacceleratorrequestrequesttypedef"></a>
+
 ## DescribeCustomRoutingAcceleratorRequestRequestTypeDef
 
 ```python
@@ -712,6 +806,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingAccelera
 Required fields:
 
 - `AcceleratorArn`: `str`
+
+<a id="describecustomroutingacceleratorresponsetypedef"></a>
 
 ## DescribeCustomRoutingAcceleratorResponseTypeDef
 
@@ -726,6 +822,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecustomroutingendpointgrouprequestrequesttypedef"></a>
+
 ## DescribeCustomRoutingEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -735,6 +833,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingEndpoint
 Required fields:
 
 - `EndpointGroupArn`: `str`
+
+<a id="describecustomroutingendpointgroupresponsetypedef"></a>
 
 ## DescribeCustomRoutingEndpointGroupResponseTypeDef
 
@@ -749,6 +849,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecustomroutinglistenerrequestrequesttypedef"></a>
+
 ## DescribeCustomRoutingListenerRequestRequestTypeDef
 
 ```python
@@ -758,6 +860,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeCustomRoutingListener
 Required fields:
 
 - `ListenerArn`: `str`
+
+<a id="describecustomroutinglistenerresponsetypedef"></a>
 
 ## DescribeCustomRoutingListenerResponseTypeDef
 
@@ -772,6 +876,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointgrouprequestrequesttypedef"></a>
+
 ## DescribeEndpointGroupRequestRequestTypeDef
 
 ```python
@@ -781,6 +887,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeEndpointGroupRequestR
 Required fields:
 
 - `EndpointGroupArn`: `str`
+
+<a id="describeendpointgroupresponsetypedef"></a>
 
 ## DescribeEndpointGroupResponseTypeDef
 
@@ -794,6 +902,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelistenerrequestrequesttypedef"></a>
+
 ## DescribeListenerRequestRequestTypeDef
 
 ```python
@@ -803,6 +913,8 @@ from mypy_boto3_globalaccelerator.type_defs import DescribeListenerRequestReques
 Required fields:
 
 - `ListenerArn`: `str`
+
+<a id="describelistenerresponsetypedef"></a>
 
 ## DescribeListenerResponseTypeDef
 
@@ -815,6 +927,8 @@ Required fields:
 - `Listener`: [ListenerTypeDef](./type_defs.md#listenertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationportmappingtypedef"></a>
 
 ## DestinationPortMappingTypeDef
 
@@ -837,6 +951,8 @@ Optional fields:
 - `DestinationTrafficState`:
   [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
 
+<a id="endpointconfigurationtypedef"></a>
+
 ## EndpointConfigurationTypeDef
 
 ```python
@@ -848,6 +964,8 @@ Optional fields:
 - `EndpointId`: `str`
 - `Weight`: `int`
 - `ClientIPPreservationEnabled`: `bool`
+
+<a id="endpointdescriptiontypedef"></a>
 
 ## EndpointDescriptionTypeDef
 
@@ -862,6 +980,8 @@ Optional fields:
 - `HealthState`: [HealthStateType](./literals.md#healthstatetype)
 - `HealthReason`: `str`
 - `ClientIPPreservationEnabled`: `bool`
+
+<a id="endpointgrouptypedef"></a>
 
 ## EndpointGroupTypeDef
 
@@ -885,6 +1005,8 @@ Optional fields:
 - `PortOverrides`:
   `List`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
+<a id="ipsettypedef"></a>
+
 ## IpSetTypeDef
 
 ```python
@@ -896,6 +1018,8 @@ Optional fields:
 - `IpFamily`: `str`
 - `IpAddresses`: `List`\[`str`\]
 
+<a id="listacceleratorsrequestrequesttypedef"></a>
+
 ## ListAcceleratorsRequestRequestTypeDef
 
 ```python
@@ -906,6 +1030,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listacceleratorsresponsetypedef"></a>
 
 ## ListAcceleratorsResponseTypeDef
 
@@ -921,6 +1047,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbyoipcidrsrequestrequesttypedef"></a>
+
 ## ListByoipCidrsRequestRequestTypeDef
 
 ```python
@@ -931,6 +1059,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listbyoipcidrsresponsetypedef"></a>
 
 ## ListByoipCidrsResponseTypeDef
 
@@ -945,6 +1075,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcustomroutingacceleratorsrequestrequesttypedef"></a>
+
 ## ListCustomRoutingAcceleratorsRequestRequestTypeDef
 
 ```python
@@ -955,6 +1087,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listcustomroutingacceleratorsresponsetypedef"></a>
 
 ## ListCustomRoutingAcceleratorsResponseTypeDef
 
@@ -969,6 +1103,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcustomroutingendpointgroupsrequestrequesttypedef"></a>
 
 ## ListCustomRoutingEndpointGroupsRequestRequestTypeDef
 
@@ -985,6 +1121,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcustomroutingendpointgroupsresponsetypedef"></a>
+
 ## ListCustomRoutingEndpointGroupsResponseTypeDef
 
 ```python
@@ -998,6 +1136,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcustomroutinglistenersrequestrequesttypedef"></a>
 
 ## ListCustomRoutingListenersRequestRequestTypeDef
 
@@ -1014,6 +1154,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcustomroutinglistenersresponsetypedef"></a>
+
 ## ListCustomRoutingListenersResponseTypeDef
 
 ```python
@@ -1027,6 +1169,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcustomroutingportmappingsbydestinationrequestrequesttypedef"></a>
 
 ## ListCustomRoutingPortMappingsByDestinationRequestRequestTypeDef
 
@@ -1044,6 +1188,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcustomroutingportmappingsbydestinationresponsetypedef"></a>
+
 ## ListCustomRoutingPortMappingsByDestinationResponseTypeDef
 
 ```python
@@ -1057,6 +1203,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcustomroutingportmappingsrequestrequesttypedef"></a>
 
 ## ListCustomRoutingPortMappingsRequestRequestTypeDef
 
@@ -1074,6 +1222,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listcustomroutingportmappingsresponsetypedef"></a>
+
 ## ListCustomRoutingPortMappingsResponseTypeDef
 
 ```python
@@ -1087,6 +1237,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listendpointgroupsrequestrequesttypedef"></a>
 
 ## ListEndpointGroupsRequestRequestTypeDef
 
@@ -1103,6 +1255,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listendpointgroupsresponsetypedef"></a>
+
 ## ListEndpointGroupsResponseTypeDef
 
 ```python
@@ -1116,6 +1270,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlistenersrequestrequesttypedef"></a>
 
 ## ListListenersRequestRequestTypeDef
 
@@ -1132,6 +1288,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listlistenersresponsetypedef"></a>
+
 ## ListListenersResponseTypeDef
 
 ```python
@@ -1145,6 +1303,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1154,6 +1314,8 @@ from mypy_boto3_globalaccelerator.type_defs import ListTagsForResourceRequestReq
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1166,6 +1328,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listenertypedef"></a>
 
 ## ListenerTypeDef
 
@@ -1180,6 +1344,8 @@ Optional fields:
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1191,6 +1357,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="portmappingtypedef"></a>
 
 ## PortMappingTypeDef
 
@@ -1210,6 +1378,8 @@ Optional fields:
 - `DestinationTrafficState`:
   [CustomRoutingDestinationTrafficStateType](./literals.md#customroutingdestinationtrafficstatetype)
 
+<a id="portoverridetypedef"></a>
+
 ## PortOverrideTypeDef
 
 ```python
@@ -1221,6 +1391,8 @@ Optional fields:
 - `ListenerPort`: `int`
 - `EndpointPort`: `int`
 
+<a id="portrangetypedef"></a>
+
 ## PortRangeTypeDef
 
 ```python
@@ -1231,6 +1403,8 @@ Optional fields:
 
 - `FromPort`: `int`
 - `ToPort`: `int`
+
+<a id="provisionbyoipcidrrequestrequesttypedef"></a>
 
 ## ProvisionByoipCidrRequestRequestTypeDef
 
@@ -1244,6 +1418,8 @@ Required fields:
 - `CidrAuthorizationContext`:
   [CidrAuthorizationContextTypeDef](./type_defs.md#cidrauthorizationcontexttypedef)
 
+<a id="provisionbyoipcidrresponsetypedef"></a>
+
 ## ProvisionByoipCidrResponseTypeDef
 
 ```python
@@ -1256,6 +1432,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removecustomroutingendpointsrequestrequesttypedef"></a>
+
 ## RemoveCustomRoutingEndpointsRequestRequestTypeDef
 
 ```python
@@ -1266,6 +1444,8 @@ Required fields:
 
 - `EndpointIds`: `Sequence`\[`str`\]
 - `EndpointGroupArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1281,6 +1461,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="socketaddresstypedef"></a>
+
 ## SocketAddressTypeDef
 
 ```python
@@ -1291,6 +1473,8 @@ Optional fields:
 
 - `IpAddress`: `str`
 - `Port`: `int`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1303,6 +1487,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1314,6 +1500,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1324,6 +1512,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateacceleratorattributesrequestrequesttypedef"></a>
 
 ## UpdateAcceleratorAttributesRequestRequestTypeDef
 
@@ -1341,6 +1531,8 @@ Optional fields:
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
 
+<a id="updateacceleratorattributesresponsetypedef"></a>
+
 ## UpdateAcceleratorAttributesResponseTypeDef
 
 ```python
@@ -1353,6 +1545,8 @@ Required fields:
   [AcceleratorAttributesTypeDef](./type_defs.md#acceleratorattributestypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateacceleratorrequestrequesttypedef"></a>
 
 ## UpdateAcceleratorRequestRequestTypeDef
 
@@ -1371,6 +1565,8 @@ Optional fields:
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `Enabled`: `bool`
 
+<a id="updateacceleratorresponsetypedef"></a>
+
 ## UpdateAcceleratorResponseTypeDef
 
 ```python
@@ -1382,6 +1578,8 @@ Required fields:
 - `Accelerator`: [AcceleratorTypeDef](./type_defs.md#acceleratortypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecustomroutingacceleratorattributesrequestrequesttypedef"></a>
 
 ## UpdateCustomRoutingAcceleratorAttributesRequestRequestTypeDef
 
@@ -1399,6 +1597,8 @@ Optional fields:
 - `FlowLogsS3Bucket`: `str`
 - `FlowLogsS3Prefix`: `str`
 
+<a id="updatecustomroutingacceleratorattributesresponsetypedef"></a>
+
 ## UpdateCustomRoutingAcceleratorAttributesResponseTypeDef
 
 ```python
@@ -1411,6 +1611,8 @@ Required fields:
   [CustomRoutingAcceleratorAttributesTypeDef](./type_defs.md#customroutingacceleratorattributestypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatecustomroutingacceleratorrequestrequesttypedef"></a>
 
 ## UpdateCustomRoutingAcceleratorRequestRequestTypeDef
 
@@ -1429,6 +1631,8 @@ Optional fields:
   [IpAddressTypeType](./literals.md#ipaddresstypetype))
 - `Enabled`: `bool`
 
+<a id="updatecustomroutingacceleratorresponsetypedef"></a>
+
 ## UpdateCustomRoutingAcceleratorResponseTypeDef
 
 ```python
@@ -1442,6 +1646,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatecustomroutinglistenerrequestrequesttypedef"></a>
+
 ## UpdateCustomRoutingListenerRequestRequestTypeDef
 
 ```python
@@ -1453,6 +1659,8 @@ Required fields:
 - `ListenerArn`: `str`
 - `PortRanges`:
   `Sequence`\[[PortRangeTypeDef](./type_defs.md#portrangetypedef)\]
+
+<a id="updatecustomroutinglistenerresponsetypedef"></a>
 
 ## UpdateCustomRoutingListenerResponseTypeDef
 
@@ -1466,6 +1674,8 @@ Required fields:
   [CustomRoutingListenerTypeDef](./type_defs.md#customroutinglistenertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateendpointgrouprequestrequesttypedef"></a>
 
 ## UpdateEndpointGroupRequestRequestTypeDef
 
@@ -1491,6 +1701,8 @@ Optional fields:
 - `PortOverrides`:
   `Sequence`\[[PortOverrideTypeDef](./type_defs.md#portoverridetypedef)\]
 
+<a id="updateendpointgroupresponsetypedef"></a>
+
 ## UpdateEndpointGroupResponseTypeDef
 
 ```python
@@ -1502,6 +1714,8 @@ Required fields:
 - `EndpointGroup`: [EndpointGroupTypeDef](./type_defs.md#endpointgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatelistenerrequestrequesttypedef"></a>
 
 ## UpdateListenerRequestRequestTypeDef
 
@@ -1520,6 +1734,8 @@ Optional fields:
 - `Protocol`: [ProtocolType](./literals.md#protocoltype)
 - `ClientAffinity`: [ClientAffinityType](./literals.md#clientaffinitytype)
 
+<a id="updatelistenerresponsetypedef"></a>
+
 ## UpdateListenerResponseTypeDef
 
 ```python
@@ -1532,6 +1748,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="withdrawbyoipcidrrequestrequesttypedef"></a>
+
 ## WithdrawByoipCidrRequestRequestTypeDef
 
 ```python
@@ -1541,6 +1759,8 @@ from mypy_boto3_globalaccelerator.type_defs import WithdrawByoipCidrRequestReque
 Required fields:
 
 - `Cidr`: `str`
+
+<a id="withdrawbyoipcidrresponsetypedef"></a>
 
 ## WithdrawByoipCidrResponseTypeDef
 

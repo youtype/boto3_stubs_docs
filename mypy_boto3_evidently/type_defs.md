@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudwatchevidently-module"></a>
+
 # Typed dictionaries for boto3 CloudWatchEvidently module
 
 > [Index](..) > [CloudWatchEvidently](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchEvidently](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/evidently.html#CloudWatchEvidently)
 type annotations stubs module
-[mypy_boto3_evidently](https://pypi.org/project/mypy-boto3-evidently/).
+[mypy-boto3-evidently](https://pypi.org/project/mypy-boto3-evidently/).
 
 - [Typed dictionaries for boto3 CloudWatchEvidently module](#typed-dictionaries-for-boto3-cloudwatchevidently-module)
   - [BatchEvaluateFeatureRequestRequestTypeDef](#batchevaluatefeaturerequestrequesttypedef)
@@ -110,6 +112,8 @@ type annotations stubs module
   - [VariationConfigTypeDef](#variationconfigtypedef)
   - [VariationTypeDef](#variationtypedef)
 
+<a id="batchevaluatefeaturerequestrequesttypedef"></a>
+
 ## BatchEvaluateFeatureRequestRequestTypeDef
 
 ```python
@@ -121,6 +125,8 @@ Required fields:
 - `project`: `str`
 - `requests`:
   `Sequence`\[[EvaluationRequestTypeDef](./type_defs.md#evaluationrequesttypedef)\]
+
+<a id="batchevaluatefeatureresponsetypedef"></a>
 
 ## BatchEvaluateFeatureResponseTypeDef
 
@@ -135,6 +141,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cloudwatchlogsdestinationconfigtypedef"></a>
+
 ## CloudWatchLogsDestinationConfigTypeDef
 
 ```python
@@ -145,6 +153,8 @@ Optional fields:
 
 - `logGroup`: `str`
 
+<a id="cloudwatchlogsdestinationtypedef"></a>
+
 ## CloudWatchLogsDestinationTypeDef
 
 ```python
@@ -154,6 +164,8 @@ from mypy_boto3_evidently.type_defs import CloudWatchLogsDestinationTypeDef
 Optional fields:
 
 - `logGroup`: `str`
+
+<a id="createexperimentrequestrequesttypedef"></a>
 
 ## CreateExperimentRequestRequestTypeDef
 
@@ -179,6 +191,8 @@ Optional fields:
 - `samplingRate`: `int`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createexperimentresponsetypedef"></a>
+
 ## CreateExperimentResponseTypeDef
 
 ```python
@@ -190,6 +204,8 @@ Required fields:
 - `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfeaturerequestrequesttypedef"></a>
 
 ## CreateFeatureRequestRequestTypeDef
 
@@ -213,6 +229,8 @@ Optional fields:
   [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createfeatureresponsetypedef"></a>
+
 ## CreateFeatureResponseTypeDef
 
 ```python
@@ -224,6 +242,8 @@ Required fields:
 - `feature`: [FeatureTypeDef](./type_defs.md#featuretypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlaunchrequestrequesttypedef"></a>
 
 ## CreateLaunchRequestRequestTypeDef
 
@@ -248,6 +268,8 @@ Optional fields:
   [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createlaunchresponsetypedef"></a>
+
 ## CreateLaunchResponseTypeDef
 
 ```python
@@ -259,6 +281,8 @@ Required fields:
 - `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectrequestrequesttypedef"></a>
 
 ## CreateProjectRequestRequestTypeDef
 
@@ -277,6 +301,8 @@ Optional fields:
 - `description`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createprojectresponsetypedef"></a>
+
 ## CreateProjectResponseTypeDef
 
 ```python
@@ -289,6 +315,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteexperimentrequestrequesttypedef"></a>
+
 ## DeleteExperimentRequestRequestTypeDef
 
 ```python
@@ -299,6 +327,8 @@ Required fields:
 
 - `experiment`: `str`
 - `project`: `str`
+
+<a id="deletefeaturerequestrequesttypedef"></a>
 
 ## DeleteFeatureRequestRequestTypeDef
 
@@ -311,6 +341,8 @@ Required fields:
 - `feature`: `str`
 - `project`: `str`
 
+<a id="deletelaunchrequestrequesttypedef"></a>
+
 ## DeleteLaunchRequestRequestTypeDef
 
 ```python
@@ -322,6 +354,8 @@ Required fields:
 - `launch`: `str`
 - `project`: `str`
 
+<a id="deleteprojectrequestrequesttypedef"></a>
+
 ## DeleteProjectRequestRequestTypeDef
 
 ```python
@@ -331,6 +365,8 @@ from mypy_boto3_evidently.type_defs import DeleteProjectRequestRequestTypeDef
 Required fields:
 
 - `project`: `str`
+
+<a id="evaluatefeaturerequestrequesttypedef"></a>
 
 ## EvaluateFeatureRequestRequestTypeDef
 
@@ -348,6 +384,8 @@ Optional fields:
 
 - `evaluationContext`: `str`
 
+<a id="evaluatefeatureresponsetypedef"></a>
+
 ## EvaluateFeatureResponseTypeDef
 
 ```python
@@ -363,6 +401,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="evaluationrequesttypedef"></a>
+
 ## EvaluationRequestTypeDef
 
 ```python
@@ -377,6 +417,8 @@ Required fields:
 Optional fields:
 
 - `evaluationContext`: `str`
+
+<a id="evaluationresulttypedef"></a>
 
 ## EvaluationResultTypeDef
 
@@ -397,6 +439,8 @@ Optional fields:
 - `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
 - `variation`: `str`
 
+<a id="evaluationruletypedef"></a>
+
 ## EvaluationRuleTypeDef
 
 ```python
@@ -411,6 +455,8 @@ Optional fields:
 
 - `name`: `str`
 
+<a id="eventtypedef"></a>
+
 ## EventTypeDef
 
 ```python
@@ -423,6 +469,8 @@ Required fields:
 - `timestamp`: `Union`\[`datetime`, `str`\]
 - `type`: [EventTypeType](./literals.md#eventtypetype)
 
+<a id="experimentexecutiontypedef"></a>
+
 ## ExperimentExecutionTypeDef
 
 ```python
@@ -433,6 +481,8 @@ Optional fields:
 
 - `endedTime`: `datetime`
 - `startedTime`: `datetime`
+
+<a id="experimentreporttypedef"></a>
 
 ## ExperimentReportTypeDef
 
@@ -448,6 +498,8 @@ Optional fields:
   [ExperimentReportNameType](./literals.md#experimentreportnametype))
 - `treatmentName`: `str`
 
+<a id="experimentresultsdatatypedef"></a>
+
 ## ExperimentResultsDataTypeDef
 
 ```python
@@ -462,6 +514,8 @@ Optional fields:
 - `treatmentName`: `str`
 - `values`: `List`\[`float`\]
 
+<a id="experimentscheduletypedef"></a>
+
 ## ExperimentScheduleTypeDef
 
 ```python
@@ -471,6 +525,8 @@ from mypy_boto3_evidently.type_defs import ExperimentScheduleTypeDef
 Optional fields:
 
 - `analysisCompleteTime`: `datetime`
+
+<a id="experimenttypedef"></a>
 
 ## ExperimentTypeDef
 
@@ -506,6 +562,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `treatments`: `List`\[[TreatmentTypeDef](./type_defs.md#treatmenttypedef)\]
 
+<a id="featuresummarytypedef"></a>
+
 ## FeatureSummaryTypeDef
 
 ```python
@@ -529,6 +587,8 @@ Optional fields:
   `List`\[[EvaluationRuleTypeDef](./type_defs.md#evaluationruletypedef)\]
 - `project`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="featuretypedef"></a>
 
 ## FeatureTypeDef
 
@@ -558,6 +618,8 @@ Optional fields:
 - `project`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="getexperimentrequestrequesttypedef"></a>
+
 ## GetExperimentRequestRequestTypeDef
 
 ```python
@@ -568,6 +630,8 @@ Required fields:
 
 - `experiment`: `str`
 - `project`: `str`
+
+<a id="getexperimentresponsetypedef"></a>
 
 ## GetExperimentResponseTypeDef
 
@@ -580,6 +644,8 @@ Required fields:
 - `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getexperimentresultsrequestrequesttypedef"></a>
 
 ## GetExperimentResultsRequestRequestTypeDef
 
@@ -606,6 +672,8 @@ Optional fields:
   `Sequence`\[[ExperimentResultRequestTypeType](./literals.md#experimentresultrequesttypetype)\]
 - `startTime`: `Union`\[`datetime`, `str`\]
 
+<a id="getexperimentresultsresponsetypedef"></a>
+
 ## GetExperimentResultsResponseTypeDef
 
 ```python
@@ -622,6 +690,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfeaturerequestrequesttypedef"></a>
+
 ## GetFeatureRequestRequestTypeDef
 
 ```python
@@ -632,6 +702,8 @@ Required fields:
 
 - `feature`: `str`
 - `project`: `str`
+
+<a id="getfeatureresponsetypedef"></a>
 
 ## GetFeatureResponseTypeDef
 
@@ -645,6 +717,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlaunchrequestrequesttypedef"></a>
+
 ## GetLaunchRequestRequestTypeDef
 
 ```python
@@ -655,6 +729,8 @@ Required fields:
 
 - `launch`: `str`
 - `project`: `str`
+
+<a id="getlaunchresponsetypedef"></a>
 
 ## GetLaunchResponseTypeDef
 
@@ -668,6 +744,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getprojectrequestrequesttypedef"></a>
+
 ## GetProjectRequestRequestTypeDef
 
 ```python
@@ -677,6 +755,8 @@ from mypy_boto3_evidently.type_defs import GetProjectRequestRequestTypeDef
 Required fields:
 
 - `project`: `str`
+
+<a id="getprojectresponsetypedef"></a>
 
 ## GetProjectResponseTypeDef
 
@@ -690,6 +770,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="launchexecutiontypedef"></a>
+
 ## LaunchExecutionTypeDef
 
 ```python
@@ -700,6 +782,8 @@ Optional fields:
 
 - `endedTime`: `datetime`
 - `startedTime`: `datetime`
+
+<a id="launchgroupconfigtypedef"></a>
 
 ## LaunchGroupConfigTypeDef
 
@@ -717,6 +801,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="launchgrouptypedef"></a>
+
 ## LaunchGroupTypeDef
 
 ```python
@@ -731,6 +817,8 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
+
+<a id="launchtypedef"></a>
 
 ## LaunchTypeDef
 
@@ -762,6 +850,8 @@ Optional fields:
 - `statusReason`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="listexperimentsrequestrequesttypedef"></a>
+
 ## ListExperimentsRequestRequestTypeDef
 
 ```python
@@ -777,6 +867,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listexperimentsresponsetypedef"></a>
+
 ## ListExperimentsResponseTypeDef
 
 ```python
@@ -790,6 +882,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfeaturesrequestrequesttypedef"></a>
 
 ## ListFeaturesRequestRequestTypeDef
 
@@ -806,6 +900,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listfeaturesresponsetypedef"></a>
+
 ## ListFeaturesResponseTypeDef
 
 ```python
@@ -819,6 +915,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlaunchesrequestrequesttypedef"></a>
 
 ## ListLaunchesRequestRequestTypeDef
 
@@ -835,6 +933,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listlaunchesresponsetypedef"></a>
+
 ## ListLaunchesResponseTypeDef
 
 ```python
@@ -848,6 +948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listprojectsrequestrequesttypedef"></a>
+
 ## ListProjectsRequestRequestTypeDef
 
 ```python
@@ -858,6 +960,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listprojectsresponsetypedef"></a>
 
 ## ListProjectsResponseTypeDef
 
@@ -873,6 +977,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -882,6 +988,8 @@ from mypy_boto3_evidently.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -894,6 +1002,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="metricdefinitionconfigtypedef"></a>
 
 ## MetricDefinitionConfigTypeDef
 
@@ -909,6 +1019,8 @@ Optional fields:
 - `unitLabel`: `str`
 - `valueKey`: `str`
 
+<a id="metricdefinitiontypedef"></a>
+
 ## MetricDefinitionTypeDef
 
 ```python
@@ -922,6 +1034,8 @@ Optional fields:
 - `name`: `str`
 - `unitLabel`: `str`
 - `valueKey`: `str`
+
+<a id="metricgoalconfigtypedef"></a>
 
 ## MetricGoalConfigTypeDef
 
@@ -939,6 +1053,8 @@ Optional fields:
 - `desiredChange`:
   [ChangeDirectionEnumType](./literals.md#changedirectionenumtype)
 
+<a id="metricgoaltypedef"></a>
+
 ## MetricGoalTypeDef
 
 ```python
@@ -955,6 +1071,8 @@ Optional fields:
 - `desiredChange`:
   [ChangeDirectionEnumType](./literals.md#changedirectionenumtype)
 
+<a id="metricmonitorconfigtypedef"></a>
+
 ## MetricMonitorConfigTypeDef
 
 ```python
@@ -965,6 +1083,8 @@ Required fields:
 
 - `metricDefinition`:
   [MetricDefinitionConfigTypeDef](./type_defs.md#metricdefinitionconfigtypedef)
+
+<a id="metricmonitortypedef"></a>
 
 ## MetricMonitorTypeDef
 
@@ -977,6 +1097,8 @@ Required fields:
 - `metricDefinition`:
   [MetricDefinitionTypeDef](./type_defs.md#metricdefinitiontypedef)
 
+<a id="onlineabconfigtypedef"></a>
+
 ## OnlineAbConfigTypeDef
 
 ```python
@@ -987,6 +1109,8 @@ Optional fields:
 
 - `controlTreatmentName`: `str`
 - `treatmentWeights`: `Mapping`\[`str`, `int`\]
+
+<a id="onlineabdefinitiontypedef"></a>
 
 ## OnlineAbDefinitionTypeDef
 
@@ -999,6 +1123,8 @@ Optional fields:
 - `controlTreatmentName`: `str`
 - `treatmentWeights`: `Dict`\[`str`, `int`\]
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1010,6 +1136,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="projectdatadeliveryconfigtypedef"></a>
 
 ## ProjectDataDeliveryConfigTypeDef
 
@@ -1024,6 +1152,8 @@ Optional fields:
 - `s3Destination`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
 
+<a id="projectdatadeliverytypedef"></a>
+
 ## ProjectDataDeliveryTypeDef
 
 ```python
@@ -1035,6 +1165,8 @@ Optional fields:
 - `cloudWatchLogs`:
   [CloudWatchLogsDestinationTypeDef](./type_defs.md#cloudwatchlogsdestinationtypedef)
 - `s3Destination`: [S3DestinationTypeDef](./type_defs.md#s3destinationtypedef)
+
+<a id="projectsummarytypedef"></a>
 
 ## ProjectSummaryTypeDef
 
@@ -1059,6 +1191,8 @@ Optional fields:
 - `featureCount`: `int`
 - `launchCount`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="projecttypedef"></a>
 
 ## ProjectTypeDef
 
@@ -1086,6 +1220,8 @@ Optional fields:
 - `launchCount`: `int`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="putprojecteventsrequestrequesttypedef"></a>
+
 ## PutProjectEventsRequestRequestTypeDef
 
 ```python
@@ -1096,6 +1232,8 @@ Required fields:
 
 - `events`: `Sequence`\[[EventTypeDef](./type_defs.md#eventtypedef)\]
 - `project`: `str`
+
+<a id="putprojecteventsresponsetypedef"></a>
 
 ## PutProjectEventsResponseTypeDef
 
@@ -1111,6 +1249,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putprojecteventsresultentrytypedef"></a>
+
 ## PutProjectEventsResultEntryTypeDef
 
 ```python
@@ -1122,6 +1262,8 @@ Optional fields:
 - `errorCode`: `str`
 - `errorMessage`: `str`
 - `eventId`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1137,6 +1279,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3destinationconfigtypedef"></a>
+
 ## S3DestinationConfigTypeDef
 
 ```python
@@ -1147,6 +1291,8 @@ Optional fields:
 
 - `bucket`: `str`
 - `prefix`: `str`
+
+<a id="s3destinationtypedef"></a>
 
 ## S3DestinationTypeDef
 
@@ -1159,6 +1305,8 @@ Optional fields:
 - `bucket`: `str`
 - `prefix`: `str`
 
+<a id="scheduledsplitconfigtypedef"></a>
+
 ## ScheduledSplitConfigTypeDef
 
 ```python
@@ -1169,6 +1317,8 @@ Required fields:
 
 - `groupWeights`: `Mapping`\[`str`, `int`\]
 - `startTime`: `Union`\[`datetime`, `str`\]
+
+<a id="scheduledsplittypedef"></a>
 
 ## ScheduledSplitTypeDef
 
@@ -1184,6 +1334,8 @@ Optional fields:
 
 - `groupWeights`: `Dict`\[`str`, `int`\]
 
+<a id="scheduledsplitslaunchconfigtypedef"></a>
+
 ## ScheduledSplitsLaunchConfigTypeDef
 
 ```python
@@ -1195,6 +1347,8 @@ Required fields:
 - `steps`:
   `Sequence`\[[ScheduledSplitConfigTypeDef](./type_defs.md#scheduledsplitconfigtypedef)\]
 
+<a id="scheduledsplitslaunchdefinitiontypedef"></a>
+
 ## ScheduledSplitsLaunchDefinitionTypeDef
 
 ```python
@@ -1205,6 +1359,8 @@ Optional fields:
 
 - `steps`:
   `List`\[[ScheduledSplitTypeDef](./type_defs.md#scheduledsplittypedef)\]
+
+<a id="startexperimentrequestrequesttypedef"></a>
 
 ## StartExperimentRequestRequestTypeDef
 
@@ -1218,6 +1374,8 @@ Required fields:
 - `experiment`: `str`
 - `project`: `str`
 
+<a id="startexperimentresponsetypedef"></a>
+
 ## StartExperimentResponseTypeDef
 
 ```python
@@ -1230,6 +1388,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startlaunchrequestrequesttypedef"></a>
+
 ## StartLaunchRequestRequestTypeDef
 
 ```python
@@ -1240,6 +1400,8 @@ Required fields:
 
 - `launch`: `str`
 - `project`: `str`
+
+<a id="startlaunchresponsetypedef"></a>
 
 ## StartLaunchResponseTypeDef
 
@@ -1252,6 +1414,8 @@ Required fields:
 - `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stopexperimentrequestrequesttypedef"></a>
 
 ## StopExperimentRequestRequestTypeDef
 
@@ -1270,6 +1434,8 @@ Optional fields:
   [ExperimentStopDesiredStateType](./literals.md#experimentstopdesiredstatetype)
 - `reason`: `str`
 
+<a id="stopexperimentresponsetypedef"></a>
+
 ## StopExperimentResponseTypeDef
 
 ```python
@@ -1281,6 +1447,8 @@ Required fields:
 - `endedTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="stoplaunchrequestrequesttypedef"></a>
 
 ## StopLaunchRequestRequestTypeDef
 
@@ -1299,6 +1467,8 @@ Optional fields:
   [LaunchStopDesiredStateType](./literals.md#launchstopdesiredstatetype)
 - `reason`: `str`
 
+<a id="stoplaunchresponsetypedef"></a>
+
 ## StopLaunchResponseTypeDef
 
 ```python
@@ -1311,6 +1481,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1321,6 +1493,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="treatmentconfigtypedef"></a>
 
 ## TreatmentConfigTypeDef
 
@@ -1338,6 +1512,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="treatmenttypedef"></a>
+
 ## TreatmentTypeDef
 
 ```python
@@ -1353,6 +1529,8 @@ Optional fields:
 - `description`: `str`
 - `featureVariations`: `Dict`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1363,6 +1541,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateexperimentrequestrequesttypedef"></a>
 
 ## UpdateExperimentRequestRequestTypeDef
 
@@ -1387,6 +1567,8 @@ Optional fields:
 - `treatments`:
   `Sequence`\[[TreatmentConfigTypeDef](./type_defs.md#treatmentconfigtypedef)\]
 
+<a id="updateexperimentresponsetypedef"></a>
+
 ## UpdateExperimentResponseTypeDef
 
 ```python
@@ -1398,6 +1580,8 @@ Required fields:
 - `experiment`: [ExperimentTypeDef](./type_defs.md#experimenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefeaturerequestrequesttypedef"></a>
 
 ## UpdateFeatureRequestRequestTypeDef
 
@@ -1421,6 +1605,8 @@ Optional fields:
   [FeatureEvaluationStrategyType](./literals.md#featureevaluationstrategytype)
 - `removeVariations`: `Sequence`\[`str`\]
 
+<a id="updatefeatureresponsetypedef"></a>
+
 ## UpdateFeatureResponseTypeDef
 
 ```python
@@ -1432,6 +1618,8 @@ Required fields:
 - `feature`: [FeatureTypeDef](./type_defs.md#featuretypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatelaunchrequestrequesttypedef"></a>
 
 ## UpdateLaunchRequestRequestTypeDef
 
@@ -1455,6 +1643,8 @@ Optional fields:
 - `scheduledSplitsConfig`:
   [ScheduledSplitsLaunchConfigTypeDef](./type_defs.md#scheduledsplitslaunchconfigtypedef)
 
+<a id="updatelaunchresponsetypedef"></a>
+
 ## UpdateLaunchResponseTypeDef
 
 ```python
@@ -1466,6 +1656,8 @@ Required fields:
 - `launch`: [LaunchTypeDef](./type_defs.md#launchtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectdatadeliveryrequestrequesttypedef"></a>
 
 ## UpdateProjectDataDeliveryRequestRequestTypeDef
 
@@ -1484,6 +1676,8 @@ Optional fields:
 - `s3Destination`:
   [S3DestinationConfigTypeDef](./type_defs.md#s3destinationconfigtypedef)
 
+<a id="updateprojectdatadeliveryresponsetypedef"></a>
+
 ## UpdateProjectDataDeliveryResponseTypeDef
 
 ```python
@@ -1495,6 +1689,8 @@ Required fields:
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateprojectrequestrequesttypedef"></a>
 
 ## UpdateProjectRequestRequestTypeDef
 
@@ -1510,6 +1706,8 @@ Optional fields:
 
 - `description`: `str`
 
+<a id="updateprojectresponsetypedef"></a>
+
 ## UpdateProjectResponseTypeDef
 
 ```python
@@ -1521,6 +1719,8 @@ Required fields:
 - `project`: [ProjectTypeDef](./type_defs.md#projecttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="variablevaluetypedef"></a>
 
 ## VariableValueTypeDef
 
@@ -1535,6 +1735,8 @@ Optional fields:
 - `longValue`: `int`
 - `stringValue`: `str`
 
+<a id="variationconfigtypedef"></a>
+
 ## VariationConfigTypeDef
 
 ```python
@@ -1545,6 +1747,8 @@ Required fields:
 
 - `name`: `str`
 - `value`: [VariableValueTypeDef](./type_defs.md#variablevaluetypedef)
+
+<a id="variationtypedef"></a>
 
 ## VariationTypeDef
 

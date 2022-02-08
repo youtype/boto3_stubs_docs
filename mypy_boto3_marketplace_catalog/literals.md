@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-marketplacecatalog-module"></a>
+
 # Literals for boto3 MarketplaceCatalog module
 
 > [Index](..) > [MarketplaceCatalog](.) > Literals
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
-[mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
+[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 - [Literals for boto3 MarketplaceCatalog module](#literals-for-boto3-marketplacecatalog-module)
   - [ChangeStatusType](#changestatustype)
   - [FailureCodeType](#failurecodetype)
   - [SortOrderType](#sortordertype)
   - [ServiceName](#servicename)
+
+<a id="changestatustype"></a>
 
 ## ChangeStatusType
 
@@ -27,6 +31,8 @@ Values:
 - `PREPARING`
 - `SUCCEEDED`
 
+<a id="failurecodetype"></a>
+
 ## FailureCodeType
 
 ```python
@@ -38,6 +44,8 @@ Values:
 - `CLIENT_ERROR`
 - `SERVER_FAULT`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -48,6 +56,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

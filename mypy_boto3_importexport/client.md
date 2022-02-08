@@ -1,3 +1,5 @@
+<a id="importexportclient-for-boto3-importexport-module"></a>
+
 # ImportExportClient for boto3 ImportExport module
 
 > [Index](..) > [ImportExport](.) > ImportExportClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ImportExport](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport)
 type annotations stubs module
-[mypy_boto3_importexport](https://pypi.org/project/mypy-boto3-importexport/).
+[mypy-boto3-importexport](https://pypi.org/project/mypy-boto3-importexport/).
 
 - [ImportExportClient for boto3 ImportExport module](#importexportclient-for-boto3-importexport-module)
   - [ImportExportClient](#importexportclient)
@@ -22,6 +24,8 @@ type annotations stubs module
     - [update_job](#update_job)
     - [get_paginator](#get_paginator)
 
+<a id="importexportclient"></a>
+
 ## ImportExportClient
 
 Type annotations for `boto3.client("importexport")`
@@ -29,14 +33,17 @@ Type annotations for `boto3.client("importexport")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_importexport.client import ImportExportClient
 
 def get_importexport_client() -> ImportExportClient:
-    return boto3.client("importexport")
+    return Session().client("importexport")
 ```
 
 Boto3 documentation:
 [ImportExport.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -74,7 +81,11 @@ Exceptions:
 - `Exceptions.UnableToCancelJobIdException`
 - `Exceptions.UnableToUpdateJobIdException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -86,6 +97,8 @@ Boto3 documentation:
 [ImportExport.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/importexport.html#ImportExport.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -101,6 +114,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_job"></a>
 
 ### cancel_job
 
@@ -120,6 +135,8 @@ Keyword-only arguments:
 - `APIVersion`: `str`
 
 Returns [CancelJobOutputTypeDef](./type_defs.md#canceljoboutputtypedef).
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -144,6 +161,8 @@ Keyword-only arguments:
 
 Returns [CreateJobOutputTypeDef](./type_defs.md#createjoboutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -162,6 +181,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_shipping_label"></a>
 
 ### get_shipping_label
 
@@ -194,6 +215,8 @@ Keyword-only arguments:
 Returns
 [GetShippingLabelOutputTypeDef](./type_defs.md#getshippinglabeloutputtypedef).
 
+<a id="get_status"></a>
+
 ### get_status
 
 This operation returns information about a job, including where the job is in
@@ -215,6 +238,8 @@ Keyword-only arguments:
 
 Returns [GetStatusOutputTypeDef](./type_defs.md#getstatusoutputtypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 This operation returns the jobs associated with the requester.
@@ -234,6 +259,8 @@ Keyword-only arguments:
 - `APIVersion`: `str`
 
 Returns [ListJobsOutputTypeDef](./type_defs.md#listjobsoutputtypedef).
+
+<a id="update_job"></a>
 
 ### update_job
 
@@ -257,6 +284,8 @@ Keyword-only arguments:
 - `APIVersion`: `str`
 
 Returns [UpdateJobOutputTypeDef](./type_defs.md#updatejoboutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

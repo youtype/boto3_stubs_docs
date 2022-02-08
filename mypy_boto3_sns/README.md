@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sns-module"></a>
+
 # Type annotations for boto3 SNS module
 
 > [Index](..) > SNS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module
-[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sns]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sns]'
+
+# standalone installation
 pip install mypy-boto3-sns
 ```
 
@@ -22,6 +32,8 @@ pip install mypy-boto3-sns
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="snsclient"></a>
+
 ## SNSClient
 
 Type annotations for `boto3.client("sns")` as [SNSClient](./client.md)
@@ -31,6 +43,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sns.client import SNSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -79,6 +93,8 @@ from mypy_boto3_sns.client import SNSClient
 - [untag_resource](./client.md#untag_resource)
 - [verify_sms_sandbox_phone_number](./client.md#verify_sms_sandbox_phone_number)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SNSClient [exceptions](./client.md#exceptions)
@@ -117,6 +133,8 @@ SNSClient [exceptions](./client.md#exceptions)
 - ValidationException
 - VerificationException
 
+<a id="snsserviceresource"></a>
+
 ## SNSServiceResource
 
 Type annotations for `boto3.resource("sns")` as
@@ -127,6 +145,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sns.service_resource import SNSServiceResource
 ```
+
+<a id="collections"></a>
 
 ### Collections
 
@@ -141,6 +161,8 @@ from mypy_boto3_sns.service_resource import ServiceResourcePlatformApplicationsC
 - [ServiceResourcePlatformApplicationsCollection](./service_resource.md#snsserviceresourceplatform_applications)
 - [ServiceResourceSubscriptionsCollection](./service_resource.md#snsserviceresourcesubscriptions)
 - [ServiceResourceTopicsCollection](./service_resource.md#snsserviceresourcetopics)
+
+<a id="resources"></a>
 
 ### Resources
 
@@ -157,6 +179,8 @@ from mypy_boto3_sns.service_resource import PlatformApplication, ...
 - [Subscription](./service_resource.md#subscription)
 - [Topic](./service_resource.md#topic)
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -165,7 +189,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_sns.paginators import ListEndpointsByPlatformApplicationPaginator, ...
+from mypy_boto3_sns.paginator import ListEndpointsByPlatformApplicationPaginator, ...
 ```
 
 - [ListEndpointsByPlatformApplicationPaginator](./paginators.md#listendpointsbyplatformapplicationpaginator)
@@ -176,6 +200,8 @@ from mypy_boto3_sns.paginators import ListEndpointsByPlatformApplicationPaginato
 - [ListSubscriptionsPaginator](./paginators.md#listsubscriptionspaginator)
 - [ListSubscriptionsByTopicPaginator](./paginators.md#listsubscriptionsbytopicpaginator)
 - [ListTopicsPaginator](./paginators.md#listtopicspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -201,6 +227,8 @@ from mypy_boto3_sns.literals import LanguageCodeStringType, ...
 - [SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

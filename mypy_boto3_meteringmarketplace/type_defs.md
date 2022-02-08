@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-marketplacemetering-module"></a>
+
 # Typed dictionaries for boto3 MarketplaceMetering module
 
 > [Index](..) > [MarketplaceMetering](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
-[mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
+[mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [Typed dictionaries for boto3 MarketplaceMetering module](#typed-dictionaries-for-boto3-marketplacemetering-module)
   - [BatchMeterUsageRequestRequestTypeDef](#batchmeterusagerequestrequesttypedef)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [UsageRecordResultTypeDef](#usagerecordresulttypedef)
   - [UsageRecordTypeDef](#usagerecordtypedef)
 
+<a id="batchmeterusagerequestrequesttypedef"></a>
+
 ## BatchMeterUsageRequestRequestTypeDef
 
 ```python
@@ -33,6 +37,8 @@ Required fields:
 - `UsageRecords`:
   `Sequence`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
 - `ProductCode`: `str`
+
+<a id="batchmeterusageresulttypedef"></a>
 
 ## BatchMeterUsageResultTypeDef
 
@@ -48,6 +54,8 @@ Required fields:
   `List`\[[UsageRecordTypeDef](./type_defs.md#usagerecordtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="meterusagerequestrequesttypedef"></a>
 
 ## MeterUsageRequestRequestTypeDef
 
@@ -68,6 +76,8 @@ Optional fields:
 - `UsageAllocations`:
   `Sequence`\[[UsageAllocationTypeDef](./type_defs.md#usageallocationtypedef)\]
 
+<a id="meterusageresulttypedef"></a>
+
 ## MeterUsageResultTypeDef
 
 ```python
@@ -79,6 +89,8 @@ Required fields:
 - `MeteringRecordId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registerusagerequestrequesttypedef"></a>
 
 ## RegisterUsageRequestRequestTypeDef
 
@@ -95,6 +107,8 @@ Optional fields:
 
 - `Nonce`: `str`
 
+<a id="registerusageresulttypedef"></a>
+
 ## RegisterUsageResultTypeDef
 
 ```python
@@ -108,6 +122,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resolvecustomerrequestrequesttypedef"></a>
+
 ## ResolveCustomerRequestRequestTypeDef
 
 ```python
@@ -117,6 +133,8 @@ from mypy_boto3_meteringmarketplace.type_defs import ResolveCustomerRequestReque
 Required fields:
 
 - `RegistrationToken`: `str`
+
+<a id="resolvecustomerresulttypedef"></a>
 
 ## ResolveCustomerResultTypeDef
 
@@ -132,6 +150,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -146,6 +166,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -156,6 +178,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="usageallocationtypedef"></a>
 
 ## UsageAllocationTypeDef
 
@@ -171,6 +195,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="usagerecordresulttypedef"></a>
+
 ## UsageRecordResultTypeDef
 
 ```python
@@ -183,6 +209,8 @@ Optional fields:
 - `MeteringRecordId`: `str`
 - `Status`:
   [UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype)
+
+<a id="usagerecordtypedef"></a>
 
 ## UsageRecordTypeDef
 

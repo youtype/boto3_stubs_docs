@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-resourcegroups-module"></a>
+
 # Typed dictionaries for boto3 ResourceGroups module
 
 > [Index](..) > [ResourceGroups](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResourceGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resource-groups.html#ResourceGroups)
 type annotations stubs module
-[mypy_boto3_resource_groups](https://pypi.org/project/mypy-boto3-resource-groups/).
+[mypy-boto3-resource-groups](https://pypi.org/project/mypy-boto3-resource-groups/).
 
 - [Typed dictionaries for boto3 ResourceGroups module](#typed-dictionaries-for-boto3-resourcegroups-module)
   - [CreateGroupInputRequestTypeDef](#creategroupinputrequesttypedef)
@@ -57,6 +59,8 @@ type annotations stubs module
   - [UpdateGroupQueryInputRequestTypeDef](#updategroupqueryinputrequesttypedef)
   - [UpdateGroupQueryOutputTypeDef](#updategroupqueryoutputtypedef)
 
+<a id="creategroupinputrequesttypedef"></a>
+
 ## CreateGroupInputRequestTypeDef
 
 ```python
@@ -75,6 +79,8 @@ Optional fields:
 - `Configuration`:
   `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
+<a id="creategroupoutputtypedef"></a>
+
 ## CreateGroupOutputTypeDef
 
 ```python
@@ -91,6 +97,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegroupinputrequesttypedef"></a>
+
 ## DeleteGroupInputRequestTypeDef
 
 ```python
@@ -101,6 +109,8 @@ Optional fields:
 
 - `GroupName`: `str`
 - `Group`: `str`
+
+<a id="deletegroupoutputtypedef"></a>
 
 ## DeleteGroupOutputTypeDef
 
@@ -114,6 +124,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="failedresourcetypedef"></a>
+
 ## FailedResourceTypeDef
 
 ```python
@@ -126,6 +138,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `ErrorCode`: `str`
 
+<a id="getgroupconfigurationinputrequesttypedef"></a>
+
 ## GetGroupConfigurationInputRequestTypeDef
 
 ```python
@@ -135,6 +149,8 @@ from mypy_boto3_resource_groups.type_defs import GetGroupConfigurationInputReque
 Optional fields:
 
 - `Group`: `str`
+
+<a id="getgroupconfigurationoutputtypedef"></a>
 
 ## GetGroupConfigurationOutputTypeDef
 
@@ -149,6 +165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgroupinputrequesttypedef"></a>
+
 ## GetGroupInputRequestTypeDef
 
 ```python
@@ -159,6 +177,8 @@ Optional fields:
 
 - `GroupName`: `str`
 - `Group`: `str`
+
+<a id="getgroupoutputtypedef"></a>
 
 ## GetGroupOutputTypeDef
 
@@ -172,6 +192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgroupqueryinputrequesttypedef"></a>
+
 ## GetGroupQueryInputRequestTypeDef
 
 ```python
@@ -182,6 +204,8 @@ Optional fields:
 
 - `GroupName`: `str`
 - `Group`: `str`
+
+<a id="getgroupqueryoutputtypedef"></a>
 
 ## GetGroupQueryOutputTypeDef
 
@@ -195,6 +219,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettagsinputrequesttypedef"></a>
+
 ## GetTagsInputRequestTypeDef
 
 ```python
@@ -204,6 +230,8 @@ from mypy_boto3_resource_groups.type_defs import GetTagsInputRequestTypeDef
 Required fields:
 
 - `Arn`: `str`
+
+<a id="gettagsoutputtypedef"></a>
 
 ## GetTagsOutputTypeDef
 
@@ -217,6 +245,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="groupconfigurationitemtypedef"></a>
 
 ## GroupConfigurationItemTypeDef
 
@@ -233,6 +263,8 @@ Optional fields:
 - `Parameters`:
   `Sequence`\[[GroupConfigurationParameterTypeDef](./type_defs.md#groupconfigurationparametertypedef)\]
 
+<a id="groupconfigurationparametertypedef"></a>
+
 ## GroupConfigurationParameterTypeDef
 
 ```python
@@ -246,6 +278,8 @@ Required fields:
 Optional fields:
 
 - `Values`: `Sequence`\[`str`\]
+
+<a id="groupconfigurationtypedef"></a>
 
 ## GroupConfigurationTypeDef
 
@@ -263,6 +297,8 @@ Optional fields:
   [GroupConfigurationStatusType](./literals.md#groupconfigurationstatustype)
 - `FailureReason`: `str`
 
+<a id="groupfiltertypedef"></a>
+
 ## GroupFilterTypeDef
 
 ```python
@@ -273,6 +309,8 @@ Required fields:
 
 - `Name`: [GroupFilterNameType](./literals.md#groupfilternametype)
 - `Values`: `Sequence`\[`str`\]
+
+<a id="groupidentifiertypedef"></a>
 
 ## GroupIdentifierTypeDef
 
@@ -285,6 +323,8 @@ Optional fields:
 - `GroupName`: `str`
 - `GroupArn`: `str`
 
+<a id="groupquerytypedef"></a>
+
 ## GroupQueryTypeDef
 
 ```python
@@ -296,6 +336,8 @@ Required fields:
 - `GroupName`: `str`
 - `ResourceQuery`: [ResourceQueryTypeDef](./type_defs.md#resourcequerytypedef)
 
+<a id="groupresourcesinputrequesttypedef"></a>
+
 ## GroupResourcesInputRequestTypeDef
 
 ```python
@@ -306,6 +348,8 @@ Required fields:
 
 - `Group`: `str`
 - `ResourceArns`: `Sequence`\[`str`\]
+
+<a id="groupresourcesoutputtypedef"></a>
 
 ## GroupResourcesOutputTypeDef
 
@@ -323,6 +367,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="grouptypedef"></a>
+
 ## GroupTypeDef
 
 ```python
@@ -337,6 +383,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="listgroupresourcesinputrequesttypedef"></a>
 
 ## ListGroupResourcesInputRequestTypeDef
 
@@ -353,6 +401,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listgroupresourcesitemtypedef"></a>
+
 ## ListGroupResourcesItemTypeDef
 
 ```python
@@ -364,6 +414,8 @@ Optional fields:
 - `Identifier`:
   [ResourceIdentifierTypeDef](./type_defs.md#resourceidentifiertypedef)
 - `Status`: [ResourceStatusTypeDef](./type_defs.md#resourcestatustypedef)
+
+<a id="listgroupresourcesoutputtypedef"></a>
 
 ## ListGroupResourcesOutputTypeDef
 
@@ -383,6 +435,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgroupsinputrequesttypedef"></a>
+
 ## ListGroupsInputRequestTypeDef
 
 ```python
@@ -395,6 +449,8 @@ Optional fields:
   `Sequence`\[[GroupFilterTypeDef](./type_defs.md#groupfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listgroupsoutputtypedef"></a>
 
 ## ListGroupsOutputTypeDef
 
@@ -411,6 +467,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -423,6 +481,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="pendingresourcetypedef"></a>
+
 ## PendingResourceTypeDef
 
 ```python
@@ -432,6 +492,8 @@ from mypy_boto3_resource_groups.type_defs import PendingResourceTypeDef
 Optional fields:
 
 - `ResourceArn`: `str`
+
+<a id="putgroupconfigurationinputrequesttypedef"></a>
 
 ## PutGroupConfigurationInputRequestTypeDef
 
@@ -445,6 +507,8 @@ Optional fields:
 - `Configuration`:
   `Sequence`\[[GroupConfigurationItemTypeDef](./type_defs.md#groupconfigurationitemtypedef)\]
 
+<a id="queryerrortypedef"></a>
+
 ## QueryErrorTypeDef
 
 ```python
@@ -455,6 +519,8 @@ Optional fields:
 
 - `ErrorCode`: [QueryErrorCodeType](./literals.md#queryerrorcodetype)
 - `Message`: `str`
+
+<a id="resourcefiltertypedef"></a>
 
 ## ResourceFilterTypeDef
 
@@ -468,6 +534,8 @@ Required fields:
   [ResourceFilterNameType](./literals.md#resourcefilternametype))
 - `Values`: `Sequence`\[`str`\]
 
+<a id="resourceidentifiertypedef"></a>
+
 ## ResourceIdentifierTypeDef
 
 ```python
@@ -478,6 +546,8 @@ Optional fields:
 
 - `ResourceArn`: `str`
 - `ResourceType`: `str`
+
+<a id="resourcequerytypedef"></a>
 
 ## ResourceQueryTypeDef
 
@@ -490,6 +560,8 @@ Required fields:
 - `Type`: [QueryTypeType](./literals.md#querytypetype)
 - `Query`: `str`
 
+<a id="resourcestatustypedef"></a>
+
 ## ResourceStatusTypeDef
 
 ```python
@@ -500,6 +572,8 @@ Optional fields:
 
 - `Name`: `Literal['PENDING']` (see
   [ResourceStatusValueType](./literals.md#resourcestatusvaluetype))
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -515,6 +589,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="searchresourcesinputrequesttypedef"></a>
+
 ## SearchResourcesInputRequestTypeDef
 
 ```python
@@ -529,6 +605,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="searchresourcesoutputtypedef"></a>
 
 ## SearchResourcesOutputTypeDef
 
@@ -546,6 +624,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="taginputrequesttypedef"></a>
+
 ## TagInputRequestTypeDef
 
 ```python
@@ -556,6 +636,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tagoutputtypedef"></a>
 
 ## TagOutputTypeDef
 
@@ -570,6 +652,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="ungroupresourcesinputrequesttypedef"></a>
+
 ## UngroupResourcesInputRequestTypeDef
 
 ```python
@@ -580,6 +664,8 @@ Required fields:
 
 - `Group`: `str`
 - `ResourceArns`: `Sequence`\[`str`\]
+
+<a id="ungroupresourcesoutputtypedef"></a>
 
 ## UngroupResourcesOutputTypeDef
 
@@ -597,6 +683,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untaginputrequesttypedef"></a>
+
 ## UntagInputRequestTypeDef
 
 ```python
@@ -607,6 +695,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Keys`: `Sequence`\[`str`\]
+
+<a id="untagoutputtypedef"></a>
 
 ## UntagOutputTypeDef
 
@@ -621,6 +711,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updategroupinputrequesttypedef"></a>
+
 ## UpdateGroupInputRequestTypeDef
 
 ```python
@@ -633,6 +725,8 @@ Optional fields:
 - `Group`: `str`
 - `Description`: `str`
 
+<a id="updategroupoutputtypedef"></a>
+
 ## UpdateGroupOutputTypeDef
 
 ```python
@@ -644,6 +738,8 @@ Required fields:
 - `Group`: [GroupTypeDef](./type_defs.md#grouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategroupqueryinputrequesttypedef"></a>
 
 ## UpdateGroupQueryInputRequestTypeDef
 
@@ -659,6 +755,8 @@ Optional fields:
 
 - `GroupName`: `str`
 - `Group`: `str`
+
+<a id="updategroupqueryoutputtypedef"></a>
 
 ## UpdateGroupQueryOutputTypeDef
 

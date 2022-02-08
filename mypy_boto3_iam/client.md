@@ -1,3 +1,5 @@
+<a id="iamclient-for-boto3-iam-module"></a>
+
 # IAMClient for boto3 IAM module
 
 > [Index](..) > [IAM](.) > IAMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IAM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM)
 type annotations stubs module
-[mypy_boto3_iam](https://pypi.org/project/mypy-boto3-iam/).
+[mypy-boto3-iam](https://pypi.org/project/mypy-boto3-iam/).
 
 - [IAMClient for boto3 IAM module](#iamclient-for-boto3-iam-module)
   - [IAMClient](#iamclient)
@@ -175,6 +177,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="iamclient"></a>
+
 ## IAMClient
 
 Type annotations for `boto3.client("iam")`
@@ -182,14 +186,17 @@ Type annotations for `boto3.client("iam")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_iam.client import IAMClient
 
 def get_iam_client() -> IAMClient:
-    return boto3.client("iam")
+    return Session().client("iam")
 ```
 
 Boto3 documentation:
 [IAM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -234,7 +241,11 @@ Exceptions:
 - `Exceptions.UnmodifiableEntityException`
 - `Exceptions.UnrecognizedPublicKeyEncodingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -246,6 +257,8 @@ Boto3 documentation:
 [IAM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_client_id_to_open_id_connect_provider"></a>
 
 ### add_client_id_to_open_id_connect_provider
 
@@ -266,6 +279,8 @@ Keyword-only arguments:
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `ClientID`: `str` *(required)*
 
+<a id="add_role_to_instance_profile"></a>
+
 ### add_role_to_instance_profile
 
 Adds the specified IAM role to the specified instance profile.
@@ -282,6 +297,8 @@ Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `RoleName`: `str` *(required)*
+
+<a id="add_user_to_group"></a>
 
 ### add_user_to_group
 
@@ -300,6 +317,8 @@ Keyword-only arguments:
 - `GroupName`: `str` *(required)*
 - `UserName`: `str` *(required)*
 
+<a id="attach_group_policy"></a>
+
 ### attach_group_policy
 
 Attaches the specified managed policy to the specified IAM group.
@@ -316,6 +335,8 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
+
+<a id="attach_role_policy"></a>
 
 ### attach_role_policy
 
@@ -334,6 +355,8 @@ Keyword-only arguments:
 - `RoleName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
 
+<a id="attach_user_policy"></a>
+
 ### attach_user_policy
 
 Attaches the specified managed policy to the specified user.
@@ -351,6 +374,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -365,6 +390,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="change_password"></a>
 
 ### change_password
 
@@ -382,6 +409,8 @@ Keyword-only arguments:
 
 - `OldPassword`: `str` *(required)*
 - `NewPassword`: `str` *(required)*
+
+<a id="create_access_key"></a>
 
 ### create_access_key
 
@@ -403,6 +432,8 @@ Keyword-only arguments:
 Returns
 [CreateAccessKeyResponseTypeDef](./type_defs.md#createaccesskeyresponsetypedef).
 
+<a id="create_account_alias"></a>
+
 ### create_account_alias
 
 Creates an alias for your Amazon Web Services account.
@@ -418,6 +449,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AccountAlias`: `str` *(required)*
+
+<a id="create_group"></a>
 
 ### create_group
 
@@ -438,6 +471,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+
+<a id="create_instance_profile"></a>
 
 ### create_instance_profile
 
@@ -460,6 +495,8 @@ Keyword-only arguments:
 Returns
 [CreateInstanceProfileResponseTypeDef](./type_defs.md#createinstanceprofileresponsetypedef).
 
+<a id="create_login_profile"></a>
+
 ### create_login_profile
 
 Creates a password for the specified IAM user.
@@ -480,6 +517,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLoginProfileResponseTypeDef](./type_defs.md#createloginprofileresponsetypedef).
+
+<a id="create_open_id_connect_provider"></a>
 
 ### create_open_id_connect_provider
 
@@ -505,6 +544,8 @@ Keyword-only arguments:
 Returns
 [CreateOpenIDConnectProviderResponseTypeDef](./type_defs.md#createopenidconnectproviderresponsetypedef).
 
+<a id="create_policy"></a>
+
 ### create_policy
 
 Creates a new managed policy for your Amazon Web Services account.
@@ -528,6 +569,8 @@ Keyword-only arguments:
 Returns
 [CreatePolicyResponseTypeDef](./type_defs.md#createpolicyresponsetypedef).
 
+<a id="create_policy_version"></a>
+
 ### create_policy_version
 
 Creates a new version of the specified managed policy.
@@ -548,6 +591,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePolicyVersionResponseTypeDef](./type_defs.md#createpolicyversionresponsetypedef).
+
+<a id="create_role"></a>
 
 ### create_role
 
@@ -573,6 +618,8 @@ Keyword-only arguments:
 
 Returns [CreateRoleResponseTypeDef](./type_defs.md#createroleresponsetypedef).
 
+<a id="create_saml_provider"></a>
+
 ### create_saml_provider
 
 Creates an IAM resource that describes an identity provider (IdP) that supports
@@ -595,6 +642,8 @@ Keyword-only arguments:
 Returns
 [CreateSAMLProviderResponseTypeDef](./type_defs.md#createsamlproviderresponsetypedef).
 
+<a id="create_service_linked_role"></a>
+
 ### create_service_linked_role
 
 Creates an IAM role that is linked to a specific Amazon Web Services service.
@@ -615,6 +664,8 @@ Keyword-only arguments:
 
 Returns
 [CreateServiceLinkedRoleResponseTypeDef](./type_defs.md#createservicelinkedroleresponsetypedef).
+
+<a id="create_service_specific_credential"></a>
 
 ### create_service_specific_credential
 
@@ -638,6 +689,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceSpecificCredentialResponseTypeDef](./type_defs.md#createservicespecificcredentialresponsetypedef).
 
+<a id="create_user"></a>
+
 ### create_user
 
 Creates a new IAM user for your Amazon Web Services account.
@@ -658,6 +711,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
+
+<a id="create_virtual_mfa_device"></a>
 
 ### create_virtual_mfa_device
 
@@ -680,6 +735,8 @@ Keyword-only arguments:
 Returns
 [CreateVirtualMFADeviceResponseTypeDef](./type_defs.md#createvirtualmfadeviceresponsetypedef).
 
+<a id="deactivate_mfa_device"></a>
+
 ### deactivate_mfa_device
 
 Deactivates the specified MFA device and removes it from association with the
@@ -698,6 +755,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `SerialNumber`: `str` *(required)*
 
+<a id="delete_access_key"></a>
+
 ### delete_access_key
 
 Deletes the access key pair associated with the specified IAM user.
@@ -715,6 +774,8 @@ Keyword-only arguments:
 - `AccessKeyId`: `str` *(required)*
 - `UserName`: `str`
 
+<a id="delete_account_alias"></a>
+
 ### delete_account_alias
 
 Deletes the specified Amazon Web Services account alias.
@@ -731,6 +792,8 @@ Keyword-only arguments:
 
 - `AccountAlias`: `str` *(required)*
 
+<a id="delete_account_password_policy"></a>
+
 ### delete_account_password_policy
 
 Deletes the password policy for the Amazon Web Services account.
@@ -740,6 +803,8 @@ method.
 
 Boto3 documentation:
 [IAM.Client.delete_account_password_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Client.delete_account_password_policy)
+
+<a id="delete_group"></a>
 
 ### delete_group
 
@@ -756,6 +821,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
+
+<a id="delete_group_policy"></a>
 
 ### delete_group_policy
 
@@ -775,6 +842,8 @@ Keyword-only arguments:
 - `GroupName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
 
+<a id="delete_instance_profile"></a>
+
 ### delete_instance_profile
 
 Deletes the specified instance profile.
@@ -790,6 +859,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
+
+<a id="delete_login_profile"></a>
 
 ### delete_login_profile
 
@@ -809,6 +880,8 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
+<a id="delete_open_id_connect_provider"></a>
+
 ### delete_open_id_connect_provider
 
 Deletes an OpenID Connect identity provider (IdP) resource object in IAM.
@@ -826,6 +899,8 @@ Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 
+<a id="delete_policy"></a>
+
 ### delete_policy
 
 Deletes the specified managed policy.
@@ -841,6 +916,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
+
+<a id="delete_policy_version"></a>
 
 ### delete_policy_version
 
@@ -859,6 +936,8 @@ Keyword-only arguments:
 - `PolicyArn`: `str` *(required)*
 - `VersionId`: `str` *(required)*
 
+<a id="delete_role"></a>
+
 ### delete_role
 
 Deletes the specified role.
@@ -874,6 +953,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
+
+<a id="delete_role_permissions_boundary"></a>
 
 ### delete_role_permissions_boundary
 
@@ -892,6 +973,8 @@ Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
+<a id="delete_role_policy"></a>
+
 ### delete_role_policy
 
 Deletes the specified inline policy that is embedded in the specified IAM role.
@@ -909,6 +992,8 @@ Keyword-only arguments:
 - `RoleName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
 
+<a id="delete_saml_provider"></a>
+
 ### delete_saml_provider
 
 Deletes a SAML provider resource in IAM.
@@ -925,6 +1010,8 @@ Keyword-only arguments:
 
 - `SAMLProviderArn`: `str` *(required)*
 
+<a id="delete_server_certificate"></a>
+
 ### delete_server_certificate
 
 Deletes the specified server certificate.
@@ -940,6 +1027,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
+
+<a id="delete_service_linked_role"></a>
 
 ### delete_service_linked_role
 
@@ -961,6 +1050,8 @@ Keyword-only arguments:
 Returns
 [DeleteServiceLinkedRoleResponseTypeDef](./type_defs.md#deleteservicelinkedroleresponsetypedef).
 
+<a id="delete_service_specific_credential"></a>
+
 ### delete_service_specific_credential
 
 Deletes the specified service-specific credential.
@@ -979,6 +1070,8 @@ Keyword-only arguments:
 - `ServiceSpecificCredentialId`: `str` *(required)*
 - `UserName`: `str`
 
+<a id="delete_signing_certificate"></a>
+
 ### delete_signing_certificate
 
 Deletes a signing certificate associated with the specified IAM user.
@@ -995,6 +1088,8 @@ Keyword-only arguments:
 
 - `CertificateId`: `str` *(required)*
 - `UserName`: `str`
+
+<a id="delete_ssh_public_key"></a>
 
 ### delete_ssh_public_key
 
@@ -1013,6 +1108,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `SSHPublicKeyId`: `str` *(required)*
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Deletes the specified IAM user.
@@ -1028,6 +1125,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
+
+<a id="delete_user_permissions_boundary"></a>
 
 ### delete_user_permissions_boundary
 
@@ -1046,6 +1145,8 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
+<a id="delete_user_policy"></a>
+
 ### delete_user_policy
 
 Deletes the specified inline policy that is embedded in the specified IAM user.
@@ -1063,6 +1164,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
 
+<a id="delete_virtual_mfa_device"></a>
+
 ### delete_virtual_mfa_device
 
 Deletes a virtual MFA device.
@@ -1078,6 +1181,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
+
+<a id="detach_group_policy"></a>
 
 ### detach_group_policy
 
@@ -1096,6 +1201,8 @@ Keyword-only arguments:
 - `GroupName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
 
+<a id="detach_role_policy"></a>
+
 ### detach_role_policy
 
 Removes the specified managed policy from the specified role.
@@ -1113,6 +1220,8 @@ Keyword-only arguments:
 - `RoleName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
 
+<a id="detach_user_policy"></a>
+
 ### detach_user_policy
 
 Removes the specified managed policy from the specified user.
@@ -1129,6 +1238,8 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `PolicyArn`: `str` *(required)*
+
+<a id="enable_mfa_device"></a>
 
 ### enable_mfa_device
 
@@ -1149,6 +1260,8 @@ Keyword-only arguments:
 - `AuthenticationCode1`: `str` *(required)*
 - `AuthenticationCode2`: `str` *(required)*
 
+<a id="generate_credential_report"></a>
+
 ### generate_credential_report
 
 Generates a credential report for the Amazon Web Services account.
@@ -1160,6 +1273,8 @@ Boto3 documentation:
 
 Returns
 [GenerateCredentialReportResponseTypeDef](./type_defs.md#generatecredentialreportresponsetypedef).
+
+<a id="generate_organizations_access_report"></a>
 
 ### generate_organizations_access_report
 
@@ -1182,6 +1297,8 @@ Keyword-only arguments:
 Returns
 [GenerateOrganizationsAccessReportResponseTypeDef](./type_defs.md#generateorganizationsaccessreportresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1199,6 +1316,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="generate_service_last_accessed_details"></a>
 
 ### generate_service_last_accessed_details
 
@@ -1224,6 +1343,8 @@ Keyword-only arguments:
 Returns
 [GenerateServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#generateservicelastaccesseddetailsresponsetypedef).
 
+<a id="get_access_key_last_used"></a>
+
 ### get_access_key_last_used
 
 Retrieves information about when the specified access key was last used.
@@ -1242,6 +1363,8 @@ Keyword-only arguments:
 
 Returns
 [GetAccessKeyLastUsedResponseTypeDef](./type_defs.md#getaccesskeylastusedresponsetypedef).
+
+<a id="get_account_authorization_details"></a>
 
 ### get_account_authorization_details
 
@@ -1266,6 +1389,8 @@ Keyword-only arguments:
 Returns
 [GetAccountAuthorizationDetailsResponseTypeDef](./type_defs.md#getaccountauthorizationdetailsresponsetypedef).
 
+<a id="get_account_password_policy"></a>
+
 ### get_account_password_policy
 
 Retrieves the password policy for the Amazon Web Services account.
@@ -1277,6 +1402,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountPasswordPolicyResponseTypeDef](./type_defs.md#getaccountpasswordpolicyresponsetypedef).
+
+<a id="get_account_summary"></a>
 
 ### get_account_summary
 
@@ -1290,6 +1417,8 @@ Boto3 documentation:
 
 Returns
 [GetAccountSummaryResponseTypeDef](./type_defs.md#getaccountsummaryresponsetypedef).
+
+<a id="get_context_keys_for_custom_policy"></a>
 
 ### get_context_keys_for_custom_policy
 
@@ -1310,6 +1439,8 @@ Keyword-only arguments:
 
 Returns
 [GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
+
+<a id="get_context_keys_for_principal_policy"></a>
 
 ### get_context_keys_for_principal_policy
 
@@ -1333,6 +1464,8 @@ Keyword-only arguments:
 Returns
 [GetContextKeysForPolicyResponseTypeDef](./type_defs.md#getcontextkeysforpolicyresponsetypedef).
 
+<a id="get_credential_report"></a>
+
 ### get_credential_report
 
 Retrieves a credential report for the Amazon Web Services account.
@@ -1344,6 +1477,8 @@ Boto3 documentation:
 
 Returns
 [GetCredentialReportResponseTypeDef](./type_defs.md#getcredentialreportresponsetypedef).
+
+<a id="get_group"></a>
 
 ### get_group
 
@@ -1364,6 +1499,8 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns [GetGroupResponseTypeDef](./type_defs.md#getgroupresponsetypedef).
+
+<a id="get_group_policy"></a>
 
 ### get_group_policy
 
@@ -1386,6 +1523,8 @@ Keyword-only arguments:
 Returns
 [GetGroupPolicyResponseTypeDef](./type_defs.md#getgrouppolicyresponsetypedef).
 
+<a id="get_instance_profile"></a>
+
 ### get_instance_profile
 
 Retrieves information about the specified instance profile, including the
@@ -1406,6 +1545,8 @@ Keyword-only arguments:
 Returns
 [GetInstanceProfileResponseTypeDef](./type_defs.md#getinstanceprofileresponsetypedef).
 
+<a id="get_login_profile"></a>
+
 ### get_login_profile
 
 Retrieves the user name for the specified IAM user.
@@ -1424,6 +1565,8 @@ Keyword-only arguments:
 
 Returns
 [GetLoginProfileResponseTypeDef](./type_defs.md#getloginprofileresponsetypedef).
+
+<a id="get_open_id_connect_provider"></a>
 
 ### get_open_id_connect_provider
 
@@ -1444,6 +1587,8 @@ Keyword-only arguments:
 
 Returns
 [GetOpenIDConnectProviderResponseTypeDef](./type_defs.md#getopenidconnectproviderresponsetypedef).
+
+<a id="get_organizations_access_report"></a>
 
 ### get_organizations_access_report
 
@@ -1469,6 +1614,8 @@ Keyword-only arguments:
 Returns
 [GetOrganizationsAccessReportResponseTypeDef](./type_defs.md#getorganizationsaccessreportresponsetypedef).
 
+<a id="get_policy"></a>
+
 ### get_policy
 
 Retrieves information about the specified managed policy, including the
@@ -1488,6 +1635,8 @@ Keyword-only arguments:
 - `PolicyArn`: `str` *(required)*
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="get_policy_version"></a>
 
 ### get_policy_version
 
@@ -1510,6 +1659,8 @@ Keyword-only arguments:
 Returns
 [GetPolicyVersionResponseTypeDef](./type_defs.md#getpolicyversionresponsetypedef).
 
+<a id="get_role"></a>
+
 ### get_role
 
 Retrieves information about the specified role, including the role's path,
@@ -1529,6 +1680,8 @@ Keyword-only arguments:
 - `RoleName`: `str` *(required)*
 
 Returns [GetRoleResponseTypeDef](./type_defs.md#getroleresponsetypedef).
+
+<a id="get_role_policy"></a>
 
 ### get_role_policy
 
@@ -1551,6 +1704,8 @@ Keyword-only arguments:
 Returns
 [GetRolePolicyResponseTypeDef](./type_defs.md#getrolepolicyresponsetypedef).
 
+<a id="get_saml_provider"></a>
+
 ### get_saml_provider
 
 Returns the SAML provider metadocument that was uploaded when the IAM SAML
@@ -1571,6 +1726,8 @@ Keyword-only arguments:
 Returns
 [GetSAMLProviderResponseTypeDef](./type_defs.md#getsamlproviderresponsetypedef).
 
+<a id="get_server_certificate"></a>
+
 ### get_server_certificate
 
 Retrieves information about the specified server certificate stored in IAM.
@@ -1589,6 +1746,8 @@ Keyword-only arguments:
 
 Returns
 [GetServerCertificateResponseTypeDef](./type_defs.md#getservercertificateresponsetypedef).
+
+<a id="get_service_last_accessed_details"></a>
 
 ### get_service_last_accessed_details
 
@@ -1612,6 +1771,8 @@ Keyword-only arguments:
 
 Returns
 [GetServiceLastAccessedDetailsResponseTypeDef](./type_defs.md#getservicelastaccesseddetailsresponsetypedef).
+
+<a id="get_service_last_accessed_details_with_entities"></a>
 
 ### get_service_last_accessed_details_with_entities
 
@@ -1638,6 +1799,8 @@ Keyword-only arguments:
 Returns
 [GetServiceLastAccessedDetailsWithEntitiesResponseTypeDef](./type_defs.md#getservicelastaccesseddetailswithentitiesresponsetypedef).
 
+<a id="get_service_linked_role_deletion_status"></a>
+
 ### get_service_linked_role_deletion_status
 
 Retrieves the status of your service-linked role deletion.
@@ -1657,6 +1820,8 @@ Keyword-only arguments:
 
 Returns
 [GetServiceLinkedRoleDeletionStatusResponseTypeDef](./type_defs.md#getservicelinkedroledeletionstatusresponsetypedef).
+
+<a id="get_ssh_public_key"></a>
 
 ### get_ssh_public_key
 
@@ -1679,6 +1844,8 @@ Keyword-only arguments:
 Returns
 [GetSSHPublicKeyResponseTypeDef](./type_defs.md#getsshpublickeyresponsetypedef).
 
+<a id="get_user"></a>
+
 ### get_user
 
 Retrieves information about the specified IAM user, including the user's
@@ -1697,6 +1864,8 @@ Keyword-only arguments:
 - `UserName`: `str`
 
 Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
+
+<a id="get_user_policy"></a>
 
 ### get_user_policy
 
@@ -1718,6 +1887,8 @@ Keyword-only arguments:
 
 Returns
 [GetUserPolicyResponseTypeDef](./type_defs.md#getuserpolicyresponsetypedef).
+
+<a id="list_access_keys"></a>
 
 ### list_access_keys
 
@@ -1741,6 +1912,8 @@ Keyword-only arguments:
 Returns
 [ListAccessKeysResponseTypeDef](./type_defs.md#listaccesskeysresponsetypedef).
 
+<a id="list_account_aliases"></a>
+
 ### list_account_aliases
 
 Lists the account alias associated with the Amazon Web Services account (Note:
@@ -1761,6 +1934,8 @@ Keyword-only arguments:
 
 Returns
 [ListAccountAliasesResponseTypeDef](./type_defs.md#listaccountaliasesresponsetypedef).
+
+<a id="list_attached_group_policies"></a>
 
 ### list_attached_group_policies
 
@@ -1784,6 +1959,8 @@ Keyword-only arguments:
 Returns
 [ListAttachedGroupPoliciesResponseTypeDef](./type_defs.md#listattachedgrouppoliciesresponsetypedef).
 
+<a id="list_attached_role_policies"></a>
+
 ### list_attached_role_policies
 
 Lists all managed policies that are attached to the specified IAM role.
@@ -1806,6 +1983,8 @@ Keyword-only arguments:
 Returns
 [ListAttachedRolePoliciesResponseTypeDef](./type_defs.md#listattachedrolepoliciesresponsetypedef).
 
+<a id="list_attached_user_policies"></a>
+
 ### list_attached_user_policies
 
 Lists all managed policies that are attached to the specified IAM user.
@@ -1827,6 +2006,8 @@ Keyword-only arguments:
 
 Returns
 [ListAttachedUserPoliciesResponseTypeDef](./type_defs.md#listattacheduserpoliciesresponsetypedef).
+
+<a id="list_entities_for_policy"></a>
 
 ### list_entities_for_policy
 
@@ -1853,6 +2034,8 @@ Keyword-only arguments:
 Returns
 [ListEntitiesForPolicyResponseTypeDef](./type_defs.md#listentitiesforpolicyresponsetypedef).
 
+<a id="list_group_policies"></a>
+
 ### list_group_policies
 
 Lists the names of the inline policies that are embedded in the specified IAM
@@ -1875,6 +2058,8 @@ Keyword-only arguments:
 Returns
 [ListGroupPoliciesResponseTypeDef](./type_defs.md#listgrouppoliciesresponsetypedef).
 
+<a id="list_groups"></a>
+
 ### list_groups
 
 Lists the IAM groups that have the specified path prefix.
@@ -1894,6 +2079,8 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+<a id="list_groups_for_user"></a>
 
 ### list_groups_for_user
 
@@ -1916,6 +2103,8 @@ Keyword-only arguments:
 Returns
 [ListGroupsForUserResponseTypeDef](./type_defs.md#listgroupsforuserresponsetypedef).
 
+<a id="list_instance_profile_tags"></a>
+
 ### list_instance_profile_tags
 
 Lists the tags that are attached to the specified IAM instance profile.
@@ -1937,6 +2126,8 @@ Keyword-only arguments:
 Returns
 [ListInstanceProfileTagsResponseTypeDef](./type_defs.md#listinstanceprofiletagsresponsetypedef).
 
+<a id="list_instance_profiles"></a>
+
 ### list_instance_profiles
 
 Lists the instance profiles that have the specified path prefix.
@@ -1957,6 +2148,8 @@ Keyword-only arguments:
 
 Returns
 [ListInstanceProfilesResponseTypeDef](./type_defs.md#listinstanceprofilesresponsetypedef).
+
+<a id="list_instance_profiles_for_role"></a>
 
 ### list_instance_profiles_for_role
 
@@ -1980,6 +2173,8 @@ Keyword-only arguments:
 Returns
 [ListInstanceProfilesForRoleResponseTypeDef](./type_defs.md#listinstanceprofilesforroleresponsetypedef).
 
+<a id="list_mfa_device_tags"></a>
+
 ### list_mfa_device_tags
 
 Lists the tags that are attached to the specified IAM virtual multi-factor
@@ -2002,6 +2197,8 @@ Keyword-only arguments:
 Returns
 [ListMFADeviceTagsResponseTypeDef](./type_defs.md#listmfadevicetagsresponsetypedef).
 
+<a id="list_mfa_devices"></a>
+
 ### list_mfa_devices
 
 Lists the MFA devices for an IAM user.
@@ -2022,6 +2219,8 @@ Keyword-only arguments:
 
 Returns
 [ListMFADevicesResponseTypeDef](./type_defs.md#listmfadevicesresponsetypedef).
+
+<a id="list_open_id_connect_provider_tags"></a>
 
 ### list_open_id_connect_provider_tags
 
@@ -2046,6 +2245,8 @@ Keyword-only arguments:
 Returns
 [ListOpenIDConnectProviderTagsResponseTypeDef](./type_defs.md#listopenidconnectprovidertagsresponsetypedef).
 
+<a id="list_open_id_connect_providers"></a>
+
 ### list_open_id_connect_providers
 
 Lists information about the IAM OpenID Connect (OIDC) provider resource objects
@@ -2059,6 +2260,8 @@ Boto3 documentation:
 
 Returns
 [ListOpenIDConnectProvidersResponseTypeDef](./type_defs.md#listopenidconnectprovidersresponsetypedef).
+
+<a id="list_policies"></a>
 
 ### list_policies
 
@@ -2086,6 +2289,8 @@ Keyword-only arguments:
 Returns
 [ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef).
 
+<a id="list_policies_granting_service_access"></a>
+
 ### list_policies_granting_service_access
 
 Retrieves a list of policies that the IAM identity (user, group, or role) can
@@ -2109,6 +2314,8 @@ Keyword-only arguments:
 Returns
 [ListPoliciesGrantingServiceAccessResponseTypeDef](./type_defs.md#listpoliciesgrantingserviceaccessresponsetypedef).
 
+<a id="list_policy_tags"></a>
+
 ### list_policy_tags
 
 Lists the tags that are attached to the specified IAM customer managed policy.
@@ -2129,6 +2336,8 @@ Keyword-only arguments:
 
 Returns
 [ListPolicyTagsResponseTypeDef](./type_defs.md#listpolicytagsresponsetypedef).
+
+<a id="list_policy_versions"></a>
 
 ### list_policy_versions
 
@@ -2152,6 +2361,8 @@ Keyword-only arguments:
 Returns
 [ListPolicyVersionsResponseTypeDef](./type_defs.md#listpolicyversionsresponsetypedef).
 
+<a id="list_role_policies"></a>
+
 ### list_role_policies
 
 Lists the names of the inline policies that are embedded in the specified IAM
@@ -2174,6 +2385,8 @@ Keyword-only arguments:
 Returns
 [ListRolePoliciesResponseTypeDef](./type_defs.md#listrolepoliciesresponsetypedef).
 
+<a id="list_role_tags"></a>
+
 ### list_role_tags
 
 Lists the tags that are attached to the specified role.
@@ -2195,6 +2408,8 @@ Keyword-only arguments:
 Returns
 [ListRoleTagsResponseTypeDef](./type_defs.md#listroletagsresponsetypedef).
 
+<a id="list_roles"></a>
+
 ### list_roles
 
 Lists the IAM roles that have the specified path prefix.
@@ -2214,6 +2429,8 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns [ListRolesResponseTypeDef](./type_defs.md#listrolesresponsetypedef).
+
+<a id="list_saml_provider_tags"></a>
 
 ### list_saml_provider_tags
 
@@ -2237,6 +2454,8 @@ Keyword-only arguments:
 Returns
 [ListSAMLProviderTagsResponseTypeDef](./type_defs.md#listsamlprovidertagsresponsetypedef).
 
+<a id="list_saml_providers"></a>
+
 ### list_saml_providers
 
 Lists the SAML provider resource objects defined in IAM in the account.
@@ -2248,6 +2467,8 @@ Boto3 documentation:
 
 Returns
 [ListSAMLProvidersResponseTypeDef](./type_defs.md#listsamlprovidersresponsetypedef).
+
+<a id="list_server_certificate_tags"></a>
 
 ### list_server_certificate_tags
 
@@ -2269,6 +2490,8 @@ Keyword-only arguments:
 
 Returns
 [ListServerCertificateTagsResponseTypeDef](./type_defs.md#listservercertificatetagsresponsetypedef).
+
+<a id="list_server_certificates"></a>
 
 ### list_server_certificates
 
@@ -2292,6 +2515,8 @@ Keyword-only arguments:
 Returns
 [ListServerCertificatesResponseTypeDef](./type_defs.md#listservercertificatesresponsetypedef).
 
+<a id="list_service_specific_credentials"></a>
+
 ### list_service_specific_credentials
 
 Returns information about the service-specific credentials associated with the
@@ -2313,6 +2538,8 @@ Keyword-only arguments:
 
 Returns
 [ListServiceSpecificCredentialsResponseTypeDef](./type_defs.md#listservicespecificcredentialsresponsetypedef).
+
+<a id="list_signing_certificates"></a>
 
 ### list_signing_certificates
 
@@ -2336,6 +2563,8 @@ Keyword-only arguments:
 Returns
 [ListSigningCertificatesResponseTypeDef](./type_defs.md#listsigningcertificatesresponsetypedef).
 
+<a id="list_ssh_public_keys"></a>
+
 ### list_ssh_public_keys
 
 Returns information about the SSH public keys associated with the specified IAM
@@ -2358,6 +2587,8 @@ Keyword-only arguments:
 Returns
 [ListSSHPublicKeysResponseTypeDef](./type_defs.md#listsshpublickeysresponsetypedef).
 
+<a id="list_user_policies"></a>
+
 ### list_user_policies
 
 Lists the names of the inline policies embedded in the specified IAM user.
@@ -2378,6 +2609,8 @@ Keyword-only arguments:
 
 Returns
 [ListUserPoliciesResponseTypeDef](./type_defs.md#listuserpoliciesresponsetypedef).
+
+<a id="list_user_tags"></a>
 
 ### list_user_tags
 
@@ -2400,6 +2633,8 @@ Keyword-only arguments:
 Returns
 [ListUserTagsResponseTypeDef](./type_defs.md#listusertagsresponsetypedef).
 
+<a id="list_users"></a>
+
 ### list_users
 
 Lists the IAM users that have the specified path prefix.
@@ -2419,6 +2654,8 @@ Keyword-only arguments:
 - `MaxItems`: `int`
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+
+<a id="list_virtual_mfa_devices"></a>
 
 ### list_virtual_mfa_devices
 
@@ -2443,6 +2680,8 @@ Keyword-only arguments:
 Returns
 [ListVirtualMFADevicesResponseTypeDef](./type_defs.md#listvirtualmfadevicesresponsetypedef).
 
+<a id="put_group_policy"></a>
+
 ### put_group_policy
 
 Adds or updates an inline policy document that is embedded in the specified IAM
@@ -2461,6 +2700,8 @@ Keyword-only arguments:
 - `GroupName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
+
+<a id="put_role_permissions_boundary"></a>
 
 ### put_role_permissions_boundary
 
@@ -2481,6 +2722,8 @@ Keyword-only arguments:
 - `RoleName`: `str` *(required)*
 - `PermissionsBoundary`: `str` *(required)*
 
+<a id="put_role_policy"></a>
+
 ### put_role_policy
 
 Adds or updates an inline policy document that is embedded in the specified IAM
@@ -2499,6 +2742,8 @@ Keyword-only arguments:
 - `RoleName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
+
+<a id="put_user_permissions_boundary"></a>
 
 ### put_user_permissions_boundary
 
@@ -2519,6 +2764,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `PermissionsBoundary`: `str` *(required)*
 
+<a id="put_user_policy"></a>
+
 ### put_user_policy
 
 Adds or updates an inline policy document that is embedded in the specified IAM
@@ -2537,6 +2784,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `PolicyName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
+
+<a id="remove_client_id_from_open_id_connect_provider"></a>
 
 ### remove_client_id_from_open_id_connect_provider
 
@@ -2558,6 +2807,8 @@ Keyword-only arguments:
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `ClientID`: `str` *(required)*
 
+<a id="remove_role_from_instance_profile"></a>
+
 ### remove_role_from_instance_profile
 
 Removes the specified IAM role from the specified EC2 instance profile.
@@ -2576,6 +2827,8 @@ Keyword-only arguments:
 - `InstanceProfileName`: `str` *(required)*
 - `RoleName`: `str` *(required)*
 
+<a id="remove_user_from_group"></a>
+
 ### remove_user_from_group
 
 Removes the specified user from the specified group.
@@ -2592,6 +2845,8 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 - `UserName`: `str` *(required)*
+
+<a id="reset_service_specific_credential"></a>
 
 ### reset_service_specific_credential
 
@@ -2614,6 +2869,8 @@ Keyword-only arguments:
 Returns
 [ResetServiceSpecificCredentialResponseTypeDef](./type_defs.md#resetservicespecificcredentialresponsetypedef).
 
+<a id="resync_mfa_device"></a>
+
 ### resync_mfa_device
 
 Synchronizes the specified MFA device with its IAM resource object on the
@@ -2634,6 +2891,8 @@ Keyword-only arguments:
 - `AuthenticationCode1`: `str` *(required)*
 - `AuthenticationCode2`: `str` *(required)*
 
+<a id="set_default_policy_version"></a>
+
 ### set_default_policy_version
 
 Sets the specified version of the specified policy as the policy's default
@@ -2651,6 +2910,8 @@ Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 - `VersionId`: `str` *(required)*
+
+<a id="set_security_token_service_preferences"></a>
 
 ### set_security_token_service_preferences
 
@@ -2671,6 +2932,8 @@ Keyword-only arguments:
 - `GlobalEndpointTokenVersion`:
   [globalEndpointTokenVersionType](./literals.md#globalendpointtokenversiontype)
   *(required)*
+
+<a id="simulate_custom_policy"></a>
 
 ### simulate_custom_policy
 
@@ -2703,6 +2966,8 @@ Keyword-only arguments:
 
 Returns
 [SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
+
+<a id="simulate_principal_policy"></a>
 
 ### simulate_principal_policy
 
@@ -2737,6 +3002,8 @@ Keyword-only arguments:
 Returns
 [SimulatePolicyResponseTypeDef](./type_defs.md#simulatepolicyresponsetypedef).
 
+<a id="tag_instance_profile"></a>
+
 ### tag_instance_profile
 
 Adds one or more tags to an IAM instance profile.
@@ -2753,6 +3020,8 @@ Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="tag_mfa_device"></a>
 
 ### tag_mfa_device
 
@@ -2772,6 +3041,8 @@ Keyword-only arguments:
 - `SerialNumber`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="tag_open_id_connect_provider"></a>
+
 ### tag_open_id_connect_provider
 
 Adds one or more tags to an OpenID Connect (OIDC)-compatible identity provider.
@@ -2788,6 +3059,8 @@ Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="tag_policy"></a>
 
 ### tag_policy
 
@@ -2806,6 +3079,8 @@ Keyword-only arguments:
 - `PolicyArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="tag_role"></a>
+
 ### tag_role
 
 Adds one or more tags to an IAM role.
@@ -2822,6 +3097,8 @@ Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="tag_saml_provider"></a>
 
 ### tag_saml_provider
 
@@ -2841,6 +3118,8 @@ Keyword-only arguments:
 - `SAMLProviderArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="tag_server_certificate"></a>
+
 ### tag_server_certificate
 
 Adds one or more tags to an IAM server certificate.
@@ -2857,6 +3136,8 @@ Keyword-only arguments:
 
 - `ServerCertificateName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="tag_user"></a>
 
 ### tag_user
 
@@ -2875,6 +3156,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="untag_instance_profile"></a>
+
 ### untag_instance_profile
 
 Removes the specified tags from the IAM instance profile.
@@ -2891,6 +3174,8 @@ Keyword-only arguments:
 
 - `InstanceProfileName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="untag_mfa_device"></a>
 
 ### untag_mfa_device
 
@@ -2909,6 +3194,8 @@ Keyword-only arguments:
 
 - `SerialNumber`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="untag_open_id_connect_provider"></a>
 
 ### untag_open_id_connect_provider
 
@@ -2929,6 +3216,8 @@ Keyword-only arguments:
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="untag_policy"></a>
+
 ### untag_policy
 
 Removes the specified tags from the customer managed policy.
@@ -2946,6 +3235,8 @@ Keyword-only arguments:
 - `PolicyArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="untag_role"></a>
+
 ### untag_role
 
 Removes the specified tags from the role.
@@ -2962,6 +3253,8 @@ Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="untag_saml_provider"></a>
 
 ### untag_saml_provider
 
@@ -2981,6 +3274,8 @@ Keyword-only arguments:
 - `SAMLProviderArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="untag_server_certificate"></a>
+
 ### untag_server_certificate
 
 Removes the specified tags from the IAM server certificate.
@@ -2998,6 +3293,8 @@ Keyword-only arguments:
 - `ServerCertificateName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
+<a id="untag_user"></a>
+
 ### untag_user
 
 Removes the specified tags from the user.
@@ -3014,6 +3311,8 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_access_key"></a>
 
 ### update_access_key
 
@@ -3033,6 +3332,8 @@ Keyword-only arguments:
 - `AccessKeyId`: `str` *(required)*
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 - `UserName`: `str`
+
+<a id="update_account_password_policy"></a>
 
 ### update_account_password_policy
 
@@ -3059,6 +3360,8 @@ Keyword-only arguments:
 - `PasswordReusePrevention`: `int`
 - `HardExpiry`: `bool`
 
+<a id="update_assume_role_policy"></a>
+
 ### update_assume_role_policy
 
 Updates the policy that grants an IAM entity permission to assume a role.
@@ -3075,6 +3378,8 @@ Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 - `PolicyDocument`: `str` *(required)*
+
+<a id="update_group"></a>
 
 ### update_group
 
@@ -3094,6 +3399,8 @@ Keyword-only arguments:
 - `NewPath`: `str`
 - `NewGroupName`: `str`
 
+<a id="update_login_profile"></a>
+
 ### update_login_profile
 
 Changes the password for the specified IAM user.
@@ -3111,6 +3418,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `Password`: `str`
 - `PasswordResetRequired`: `bool`
+
+<a id="update_open_id_connect_provider_thumbprint"></a>
 
 ### update_open_id_connect_provider_thumbprint
 
@@ -3130,6 +3439,8 @@ Keyword-only arguments:
 
 - `OpenIDConnectProviderArn`: `str` *(required)*
 - `ThumbprintList`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_role"></a>
 
 ### update_role
 
@@ -3151,6 +3462,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_role_description"></a>
+
 ### update_role_description
 
 Use UpdateRole instead.
@@ -3170,6 +3483,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateRoleDescriptionResponseTypeDef](./type_defs.md#updateroledescriptionresponsetypedef).
+
+<a id="update_saml_provider"></a>
 
 ### update_saml_provider
 
@@ -3191,6 +3506,8 @@ Keyword-only arguments:
 Returns
 [UpdateSAMLProviderResponseTypeDef](./type_defs.md#updatesamlproviderresponsetypedef).
 
+<a id="update_server_certificate"></a>
+
 ### update_server_certificate
 
 Updates the name and/or the path of the specified server certificate stored in
@@ -3209,6 +3526,8 @@ Keyword-only arguments:
 - `ServerCertificateName`: `str` *(required)*
 - `NewPath`: `str`
 - `NewServerCertificateName`: `str`
+
+<a id="update_service_specific_credential"></a>
 
 ### update_service_specific_credential
 
@@ -3229,6 +3548,8 @@ Keyword-only arguments:
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 - `UserName`: `str`
 
+<a id="update_signing_certificate"></a>
+
 ### update_signing_certificate
 
 Changes the status of the specified user signing certificate from active to
@@ -3248,6 +3569,8 @@ Keyword-only arguments:
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 - `UserName`: `str`
 
+<a id="update_ssh_public_key"></a>
+
 ### update_ssh_public_key
 
 Sets the status of an IAM user's SSH public key to active or inactive.
@@ -3266,6 +3589,8 @@ Keyword-only arguments:
 - `SSHPublicKeyId`: `str` *(required)*
 - `Status`: [statusTypeType](./literals.md#statustypetype) *(required)*
 
+<a id="update_user"></a>
+
 ### update_user
 
 Updates the name and/or the path of the specified IAM user.
@@ -3283,6 +3608,8 @@ Keyword-only arguments:
 - `UserName`: `str` *(required)*
 - `NewPath`: `str`
 - `NewUserName`: `str`
+
+<a id="upload_server_certificate"></a>
 
 ### upload_server_certificate
 
@@ -3308,6 +3635,8 @@ Keyword-only arguments:
 Returns
 [UploadServerCertificateResponseTypeDef](./type_defs.md#uploadservercertificateresponsetypedef).
 
+<a id="upload_signing_certificate"></a>
+
 ### upload_signing_certificate
 
 Uploads an X.509 signing certificate and associates it with the specified IAM
@@ -3329,6 +3658,8 @@ Keyword-only arguments:
 Returns
 [UploadSigningCertificateResponseTypeDef](./type_defs.md#uploadsigningcertificateresponsetypedef).
 
+<a id="upload_ssh_public_key"></a>
+
 ### upload_ssh_public_key
 
 Uploads an SSH public key and associates it with the specified IAM user.
@@ -3348,6 +3679,8 @@ Keyword-only arguments:
 
 Returns
 [UploadSSHPublicKeyResponseTypeDef](./type_defs.md#uploadsshpublickeyresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -3407,6 +3740,8 @@ Type annotations for `boto3.client("iam").get_paginator` method with overloads.
   [SimulateCustomPolicyPaginator](./paginators.md#simulatecustompolicypaginator)
 - `client.get_paginator("simulate_principal_policy")` ->
   [SimulatePrincipalPolicyPaginator](./paginators.md#simulateprincipalpolicypaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-securityhub-module"></a>
+
 # Type annotations for boto3 SecurityHub module
 
 > [Index](..) > SecurityHub
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SecurityHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/securityhub.html#SecurityHub)
 type annotations stubs module
-[mypy_boto3_securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
+[mypy-boto3-securityhub](https://pypi.org/project/mypy-boto3-securityhub/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[securityhub]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[securityhub]'
+
+# standalone installation
 pip install mypy-boto3-securityhub
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-securityhub
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="securityhubclient"></a>
+
 ## SecurityHubClient
 
 Type annotations for `boto3.client("securityhub")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_securityhub.client import SecurityHubClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -93,6 +107,8 @@ from mypy_boto3_securityhub.client import SecurityHubClient
 - [update_security_hub_configuration](./client.md#update_security_hub_configuration)
 - [update_standards_control](./client.md#update_standards_control)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SecurityHubClient [exceptions](./client.md#exceptions)
@@ -106,6 +122,8 @@ SecurityHubClient [exceptions](./client.md#exceptions)
 - ResourceConflictException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -114,7 +132,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_securityhub.paginators import DescribeActionTargetsPaginator, ...
+from mypy_boto3_securityhub.paginator import DescribeActionTargetsPaginator, ...
 ```
 
 - [DescribeActionTargetsPaginator](./paginators.md#describeactiontargetspaginator)
@@ -129,6 +147,8 @@ from mypy_boto3_securityhub.paginators import DescribeActionTargetsPaginator, ..
 - [ListInvitationsPaginator](./paginators.md#listinvitationspaginator)
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -178,6 +198,8 @@ from mypy_boto3_securityhub.literals import AdminStatusType, ...
 - [WorkflowStatusType](./literals.md#workflowstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

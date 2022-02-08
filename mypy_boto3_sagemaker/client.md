@@ -1,3 +1,5 @@
+<a id="sagemakerclient-for-boto3-sagemaker-module"></a>
+
 # SageMakerClient for boto3 SageMaker module
 
 > [Index](..) > [SageMaker](.) > SageMakerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker)
 type annotations stubs module
-[mypy_boto3_sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
+[mypy-boto3-sagemaker](https://pypi.org/project/mypy-boto3-sagemaker/).
 
 - [SageMakerClient for boto3 SageMaker module](#sagemakerclient-for-boto3-sagemaker-module)
   - [SageMakerClient](#sagemakerclient)
@@ -268,6 +270,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="sagemakerclient"></a>
+
 ## SageMakerClient
 
 Type annotations for `boto3.client("sagemaker")`
@@ -275,14 +279,17 @@ Type annotations for `boto3.client("sagemaker")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sagemaker.client import SageMakerClient
 
 def get_sagemaker_client() -> SageMakerClient:
-    return boto3.client("sagemaker")
+    return Session().client("sagemaker")
 ```
 
 Boto3 documentation:
 [SageMaker.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -304,7 +311,11 @@ Exceptions:
 - `Exceptions.ResourceLimitExceeded`
 - `Exceptions.ResourceNotFound`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -316,6 +327,8 @@ Boto3 documentation:
 [SageMaker.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_association"></a>
 
 ### add_association
 
@@ -339,6 +352,8 @@ Keyword-only arguments:
 Returns
 [AddAssociationResponseTypeDef](./type_defs.md#addassociationresponsetypedef).
 
+<a id="add_tags"></a>
+
 ### add_tags
 
 Adds or overwrites one or more tags for the specified Amazon SageMaker
@@ -358,6 +373,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns [AddTagsOutputTypeDef](./type_defs.md#addtagsoutputtypedef).
+
+<a id="associate_trial_component"></a>
 
 ### associate_trial_component
 
@@ -380,6 +397,8 @@ Keyword-only arguments:
 Returns
 [AssociateTrialComponentResponseTypeDef](./type_defs.md#associatetrialcomponentresponsetypedef).
 
+<a id="batch_describe_model_package"></a>
+
 ### batch_describe_model_package
 
 This action batch describes a list of versioned model packages See also:
@@ -401,6 +420,8 @@ Keyword-only arguments:
 Returns
 [BatchDescribeModelPackageOutputTypeDef](./type_defs.md#batchdescribemodelpackageoutputtypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -415,6 +436,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_action"></a>
 
 ### create_action
 
@@ -443,6 +466,8 @@ Keyword-only arguments:
 
 Returns
 [CreateActionResponseTypeDef](./type_defs.md#createactionresponsetypedef).
+
+<a id="create_algorithm"></a>
 
 ### create_algorithm
 
@@ -474,6 +499,8 @@ Keyword-only arguments:
 Returns
 [CreateAlgorithmOutputTypeDef](./type_defs.md#createalgorithmoutputtypedef).
 
+<a id="create_app"></a>
+
 ### create_app
 
 Creates a running app for the specified UserProfile.
@@ -497,6 +524,8 @@ Keyword-only arguments:
 
 Returns [CreateAppResponseTypeDef](./type_defs.md#createappresponsetypedef).
 
+<a id="create_app_image_config"></a>
+
 ### create_app_image_config
 
 Creates a configuration for running a SageMaker image as a KernelGateway app.
@@ -519,6 +548,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAppImageConfigResponseTypeDef](./type_defs.md#createappimageconfigresponsetypedef).
+
+<a id="create_artifact"></a>
 
 ### create_artifact
 
@@ -545,6 +576,8 @@ Keyword-only arguments:
 
 Returns
 [CreateArtifactResponseTypeDef](./type_defs.md#createartifactresponsetypedef).
+
+<a id="create_auto_ml_job"></a>
 
 ### create_auto_ml_job
 
@@ -581,6 +614,8 @@ Keyword-only arguments:
 Returns
 [CreateAutoMLJobResponseTypeDef](./type_defs.md#createautomljobresponsetypedef).
 
+<a id="create_code_repository"></a>
+
 ### create_code_repository
 
 Creates a Git repository as a resource in your Amazon SageMaker account.
@@ -601,6 +636,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCodeRepositoryOutputTypeDef](./type_defs.md#createcoderepositoryoutputtypedef).
+
+<a id="create_compilation_job"></a>
 
 ### create_compilation_job
 
@@ -631,6 +668,8 @@ Keyword-only arguments:
 Returns
 [CreateCompilationJobResponseTypeDef](./type_defs.md#createcompilationjobresponsetypedef).
 
+<a id="create_context"></a>
+
 ### create_context
 
 Creates a *context*.
@@ -655,6 +694,8 @@ Keyword-only arguments:
 
 Returns
 [CreateContextResponseTypeDef](./type_defs.md#createcontextresponsetypedef).
+
+<a id="create_data_quality_job_definition"></a>
 
 ### create_data_quality_job_definition
 
@@ -696,6 +737,8 @@ Keyword-only arguments:
 Returns
 [CreateDataQualityJobDefinitionResponseTypeDef](./type_defs.md#createdataqualityjobdefinitionresponsetypedef).
 
+<a id="create_device_fleet"></a>
+
 ### create_device_fleet
 
 Creates a device fleet.
@@ -718,6 +761,8 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EnableIotRoleAlias`: `bool`
+
+<a id="create_domain"></a>
 
 ### create_domain
 
@@ -752,6 +797,8 @@ Keyword-only arguments:
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
+<a id="create_edge_packaging_job"></a>
+
 ### create_edge_packaging_job
 
 Starts a SageMaker Edge Manager model packaging job.
@@ -778,6 +825,8 @@ Keyword-only arguments:
 - `ResourceKey`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="create_endpoint"></a>
+
 ### create_endpoint
 
 .
@@ -800,6 +849,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEndpointOutputTypeDef](./type_defs.md#createendpointoutputtypedef).
+
+<a id="create_endpoint_config"></a>
 
 ### create_endpoint_config
 
@@ -829,6 +880,8 @@ Keyword-only arguments:
 Returns
 [CreateEndpointConfigOutputTypeDef](./type_defs.md#createendpointconfigoutputtypedef).
 
+<a id="create_experiment"></a>
+
 ### create_experiment
 
 Creates an SageMaker *experiment*.
@@ -850,6 +903,8 @@ Keyword-only arguments:
 
 Returns
 [CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
+
+<a id="create_feature_group"></a>
 
 ### create_feature_group
 
@@ -882,6 +937,8 @@ Keyword-only arguments:
 Returns
 [CreateFeatureGroupResponseTypeDef](./type_defs.md#createfeaturegroupresponsetypedef).
 
+<a id="create_flow_definition"></a>
+
 ### create_flow_definition
 
 Creates a flow definition.
@@ -912,6 +969,8 @@ Keyword-only arguments:
 Returns
 [CreateFlowDefinitionResponseTypeDef](./type_defs.md#createflowdefinitionresponsetypedef).
 
+<a id="create_human_task_ui"></a>
+
 ### create_human_task_ui
 
 Defines the settings you will use for the human review workflow user interface.
@@ -933,6 +992,8 @@ Keyword-only arguments:
 
 Returns
 [CreateHumanTaskUiResponseTypeDef](./type_defs.md#createhumantaskuiresponsetypedef).
+
+<a id="create_hyper_parameter_tuning_job"></a>
 
 ### create_hyper_parameter_tuning_job
 
@@ -964,6 +1025,8 @@ Keyword-only arguments:
 Returns
 [CreateHyperParameterTuningJobResponseTypeDef](./type_defs.md#createhyperparametertuningjobresponsetypedef).
 
+<a id="create_image"></a>
+
 ### create_image
 
 Creates a custom SageMaker image.
@@ -987,6 +1050,8 @@ Keyword-only arguments:
 Returns
 [CreateImageResponseTypeDef](./type_defs.md#createimageresponsetypedef).
 
+<a id="create_image_version"></a>
+
 ### create_image_version
 
 Creates a version of the SageMaker image specified by `ImageName`.
@@ -1007,6 +1072,8 @@ Keyword-only arguments:
 
 Returns
 [CreateImageVersionResponseTypeDef](./type_defs.md#createimageversionresponsetypedef).
+
+<a id="create_inference_recommendations_job"></a>
 
 ### create_inference_recommendations_job
 
@@ -1038,6 +1105,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInferenceRecommendationsJobResponseTypeDef](./type_defs.md#createinferencerecommendationsjobresponsetypedef).
+
+<a id="create_labeling_job"></a>
 
 ### create_labeling_job
 
@@ -1074,6 +1143,8 @@ Keyword-only arguments:
 Returns
 [CreateLabelingJobResponseTypeDef](./type_defs.md#createlabelingjobresponsetypedef).
 
+<a id="create_model"></a>
+
 ### create_model
 
 Creates a model in Amazon SageMaker.
@@ -1101,6 +1172,8 @@ Keyword-only arguments:
 - `EnableNetworkIsolation`: `bool`
 
 Returns [CreateModelOutputTypeDef](./type_defs.md#createmodeloutputtypedef).
+
+<a id="create_model_bias_job_definition"></a>
 
 ### create_model_bias_job_definition
 
@@ -1142,6 +1215,8 @@ Keyword-only arguments:
 Returns
 [CreateModelBiasJobDefinitionResponseTypeDef](./type_defs.md#createmodelbiasjobdefinitionresponsetypedef).
 
+<a id="create_model_explainability_job_definition"></a>
+
 ### create_model_explainability_job_definition
 
 Creates the definition for a model explainability job.
@@ -1181,6 +1256,8 @@ Keyword-only arguments:
 
 Returns
 [CreateModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#createmodelexplainabilityjobdefinitionresponsetypedef).
+
+<a id="create_model_package"></a>
 
 ### create_model_package
 
@@ -1227,6 +1304,8 @@ Keyword-only arguments:
 Returns
 [CreateModelPackageOutputTypeDef](./type_defs.md#createmodelpackageoutputtypedef).
 
+<a id="create_model_package_group"></a>
+
 ### create_model_package_group
 
 Creates a model group.
@@ -1248,6 +1327,8 @@ Keyword-only arguments:
 
 Returns
 [CreateModelPackageGroupOutputTypeDef](./type_defs.md#createmodelpackagegroupoutputtypedef).
+
+<a id="create_model_quality_job_definition"></a>
 
 ### create_model_quality_job_definition
 
@@ -1289,6 +1370,8 @@ Keyword-only arguments:
 Returns
 [CreateModelQualityJobDefinitionResponseTypeDef](./type_defs.md#createmodelqualityjobdefinitionresponsetypedef).
 
+<a id="create_monitoring_schedule"></a>
+
 ### create_monitoring_schedule
 
 Creates a schedule that regularly starts Amazon SageMaker Processing Jobs to
@@ -1313,6 +1396,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMonitoringScheduleResponseTypeDef](./type_defs.md#createmonitoringscheduleresponsetypedef).
+
+<a id="create_notebook_instance"></a>
 
 ### create_notebook_instance
 
@@ -1351,6 +1436,8 @@ Keyword-only arguments:
 Returns
 [CreateNotebookInstanceOutputTypeDef](./type_defs.md#createnotebookinstanceoutputtypedef).
 
+<a id="create_notebook_instance_lifecycle_config"></a>
+
 ### create_notebook_instance_lifecycle_config
 
 Creates a lifecycle configuration that you can associate with a notebook
@@ -1375,6 +1462,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#createnotebookinstancelifecycleconfigoutputtypedef).
+
+<a id="create_pipeline"></a>
 
 ### create_pipeline
 
@@ -1405,6 +1494,8 @@ Keyword-only arguments:
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
+<a id="create_presigned_domain_url"></a>
+
 ### create_presigned_domain_url
 
 Creates a URL for a specified UserProfile in a Domain.
@@ -1428,6 +1519,8 @@ Keyword-only arguments:
 Returns
 [CreatePresignedDomainUrlResponseTypeDef](./type_defs.md#createpresigneddomainurlresponsetypedef).
 
+<a id="create_presigned_notebook_instance_url"></a>
+
 ### create_presigned_notebook_instance_url
 
 Returns a URL that you can use to connect to the Jupyter server from a notebook
@@ -1449,6 +1542,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePresignedNotebookInstanceUrlOutputTypeDef](./type_defs.md#createpresignednotebookinstanceurloutputtypedef).
+
+<a id="create_processing_job"></a>
 
 ### create_processing_job
 
@@ -1487,6 +1582,8 @@ Keyword-only arguments:
 Returns
 [CreateProcessingJobResponseTypeDef](./type_defs.md#createprocessingjobresponsetypedef).
 
+<a id="create_project"></a>
+
 ### create_project
 
 Creates a machine learning (ML) project that can contain one or more templates
@@ -1512,6 +1609,8 @@ Keyword-only arguments:
 Returns
 [CreateProjectOutputTypeDef](./type_defs.md#createprojectoutputtypedef).
 
+<a id="create_studio_lifecycle_config"></a>
+
 ### create_studio_lifecycle_config
 
 Creates a new Studio Lifecycle Configuration.
@@ -1536,6 +1635,8 @@ Keyword-only arguments:
 
 Returns
 [CreateStudioLifecycleConfigResponseTypeDef](./type_defs.md#createstudiolifecycleconfigresponsetypedef).
+
+<a id="create_training_job"></a>
 
 ### create_training_job
 
@@ -1592,6 +1693,8 @@ Keyword-only arguments:
 Returns
 [CreateTrainingJobResponseTypeDef](./type_defs.md#createtrainingjobresponsetypedef).
 
+<a id="create_transform_job"></a>
+
 ### create_transform_job
 
 Starts a transform job.
@@ -1630,6 +1733,8 @@ Keyword-only arguments:
 Returns
 [CreateTransformJobResponseTypeDef](./type_defs.md#createtransformjobresponsetypedef).
 
+<a id="create_trial"></a>
+
 ### create_trial
 
 Creates an SageMaker *trial*.
@@ -1653,6 +1758,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTrialResponseTypeDef](./type_defs.md#createtrialresponsetypedef).
+
+<a id="create_trial_component"></a>
 
 ### create_trial_component
 
@@ -1687,6 +1794,8 @@ Keyword-only arguments:
 Returns
 [CreateTrialComponentResponseTypeDef](./type_defs.md#createtrialcomponentresponsetypedef).
 
+<a id="create_user_profile"></a>
+
 ### create_user_profile
 
 Creates a user profile.
@@ -1711,6 +1820,8 @@ Keyword-only arguments:
 Returns
 [CreateUserProfileResponseTypeDef](./type_defs.md#createuserprofileresponsetypedef).
 
+<a id="create_workforce"></a>
+
 ### create_workforce
 
 Use this operation to create a workforce.
@@ -1734,6 +1845,8 @@ Keyword-only arguments:
 
 Returns
 [CreateWorkforceResponseTypeDef](./type_defs.md#createworkforceresponsetypedef).
+
+<a id="create_workteam"></a>
 
 ### create_workteam
 
@@ -1762,6 +1875,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkteamResponseTypeDef](./type_defs.md#createworkteamresponsetypedef).
 
+<a id="delete_action"></a>
+
 ### delete_action
 
 Deletes an action.
@@ -1781,6 +1896,8 @@ Keyword-only arguments:
 Returns
 [DeleteActionResponseTypeDef](./type_defs.md#deleteactionresponsetypedef).
 
+<a id="delete_algorithm"></a>
+
 ### delete_algorithm
 
 Removes the specified algorithm from your account.
@@ -1796,6 +1913,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AlgorithmName`: `str` *(required)*
+
+<a id="delete_app"></a>
 
 ### delete_app
 
@@ -1816,6 +1935,8 @@ Keyword-only arguments:
 - `AppType`: [AppTypeType](./literals.md#apptypetype) *(required)*
 - `AppName`: `str` *(required)*
 
+<a id="delete_app_image_config"></a>
+
 ### delete_app_image_config
 
 Deletes an AppImageConfig.
@@ -1832,6 +1953,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AppImageConfigName`: `str` *(required)*
+
+<a id="delete_artifact"></a>
 
 ### delete_artifact
 
@@ -1853,6 +1976,8 @@ Keyword-only arguments:
 Returns
 [DeleteArtifactResponseTypeDef](./type_defs.md#deleteartifactresponsetypedef).
 
+<a id="delete_association"></a>
+
 ### delete_association
 
 Deletes an association.
@@ -1873,6 +1998,8 @@ Keyword-only arguments:
 Returns
 [DeleteAssociationResponseTypeDef](./type_defs.md#deleteassociationresponsetypedef).
 
+<a id="delete_code_repository"></a>
+
 ### delete_code_repository
 
 Deletes the specified Git repository from your account.
@@ -1888,6 +2015,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CodeRepositoryName`: `str` *(required)*
+
+<a id="delete_context"></a>
 
 ### delete_context
 
@@ -1908,6 +2037,8 @@ Keyword-only arguments:
 Returns
 [DeleteContextResponseTypeDef](./type_defs.md#deletecontextresponsetypedef).
 
+<a id="delete_data_quality_job_definition"></a>
+
 ### delete_data_quality_job_definition
 
 Deletes a data quality monitoring job definition.
@@ -1925,6 +2056,8 @@ Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
+<a id="delete_device_fleet"></a>
+
 ### delete_device_fleet
 
 Deletes a fleet.
@@ -1940,6 +2073,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
+
+<a id="delete_domain"></a>
 
 ### delete_domain
 
@@ -1959,6 +2094,8 @@ Keyword-only arguments:
 - `RetentionPolicy`:
   [RetentionPolicyTypeDef](./type_defs.md#retentionpolicytypedef)
 
+<a id="delete_endpoint"></a>
+
 ### delete_endpoint
 
 Deletes an endpoint.
@@ -1975,6 +2112,8 @@ Keyword-only arguments:
 
 - `EndpointName`: `str` *(required)*
 
+<a id="delete_endpoint_config"></a>
+
 ### delete_endpoint_config
 
 Deletes an endpoint configuration.
@@ -1990,6 +2129,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EndpointConfigName`: `str` *(required)*
+
+<a id="delete_experiment"></a>
 
 ### delete_experiment
 
@@ -2010,6 +2151,8 @@ Keyword-only arguments:
 Returns
 [DeleteExperimentResponseTypeDef](./type_defs.md#deleteexperimentresponsetypedef).
 
+<a id="delete_feature_group"></a>
+
 ### delete_feature_group
 
 Delete the `FeatureGroup` and any data that was written to the `OnlineStore` of
@@ -2026,6 +2169,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FeatureGroupName`: `str` *(required)*
+
+<a id="delete_flow_definition"></a>
 
 ### delete_flow_definition
 
@@ -2044,6 +2189,8 @@ Keyword-only arguments:
 - `FlowDefinitionName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_human_task_ui"></a>
 
 ### delete_human_task_ui
 
@@ -2064,6 +2211,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_image"></a>
+
 ### delete_image
 
 Deletes a SageMaker image and all versions of the image.
@@ -2081,6 +2230,8 @@ Keyword-only arguments:
 - `ImageName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_image_version"></a>
 
 ### delete_image_version
 
@@ -2101,6 +2252,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_model"></a>
+
 ### delete_model
 
 Deletes a model.
@@ -2116,6 +2269,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
+
+<a id="delete_model_bias_job_definition"></a>
 
 ### delete_model_bias_job_definition
 
@@ -2134,6 +2289,8 @@ Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
+<a id="delete_model_explainability_job_definition"></a>
+
 ### delete_model_explainability_job_definition
 
 Deletes an Amazon SageMaker model explainability job definition.
@@ -2151,6 +2308,8 @@ Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
+<a id="delete_model_package"></a>
+
 ### delete_model_package
 
 Deletes a model package.
@@ -2166,6 +2325,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ModelPackageName`: `str` *(required)*
+
+<a id="delete_model_package_group"></a>
 
 ### delete_model_package_group
 
@@ -2184,6 +2345,8 @@ Keyword-only arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
 
+<a id="delete_model_package_group_policy"></a>
+
 ### delete_model_package_group_policy
 
 Deletes a model group resource policy.
@@ -2200,6 +2363,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ModelPackageGroupName`: `str` *(required)*
+
+<a id="delete_model_quality_job_definition"></a>
 
 ### delete_model_quality_job_definition
 
@@ -2218,6 +2383,8 @@ Keyword-only arguments:
 
 - `JobDefinitionName`: `str` *(required)*
 
+<a id="delete_monitoring_schedule"></a>
+
 ### delete_monitoring_schedule
 
 Deletes a monitoring schedule.
@@ -2234,6 +2401,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
+
+<a id="delete_notebook_instance"></a>
 
 ### delete_notebook_instance
 
@@ -2252,6 +2421,8 @@ Keyword-only arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
 
+<a id="delete_notebook_instance_lifecycle_config"></a>
+
 ### delete_notebook_instance_lifecycle_config
 
 Deletes a notebook instance lifecycle configuration.
@@ -2268,6 +2439,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NotebookInstanceLifecycleConfigName`: `str` *(required)*
+
+<a id="delete_pipeline"></a>
 
 ### delete_pipeline
 
@@ -2289,6 +2462,8 @@ Keyword-only arguments:
 Returns
 [DeletePipelineResponseTypeDef](./type_defs.md#deletepipelineresponsetypedef).
 
+<a id="delete_project"></a>
+
 ### delete_project
 
 Delete the specified project.
@@ -2304,6 +2479,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ProjectName`: `str` *(required)*
+
+<a id="delete_studio_lifecycle_config"></a>
 
 ### delete_studio_lifecycle_config
 
@@ -2321,6 +2498,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `StudioLifecycleConfigName`: `str` *(required)*
+
+<a id="delete_tags"></a>
 
 ### delete_tags
 
@@ -2341,6 +2520,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_trial"></a>
+
 ### delete_trial
 
 Deletes the specified trial.
@@ -2359,6 +2540,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTrialResponseTypeDef](./type_defs.md#deletetrialresponsetypedef).
+
+<a id="delete_trial_component"></a>
 
 ### delete_trial_component
 
@@ -2379,6 +2562,8 @@ Keyword-only arguments:
 Returns
 [DeleteTrialComponentResponseTypeDef](./type_defs.md#deletetrialcomponentresponsetypedef).
 
+<a id="delete_user_profile"></a>
+
 ### delete_user_profile
 
 Deletes a user profile.
@@ -2395,6 +2580,8 @@ Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 - `UserProfileName`: `str` *(required)*
+
+<a id="delete_workforce"></a>
 
 ### delete_workforce
 
@@ -2413,6 +2600,8 @@ Keyword-only arguments:
 - `WorkforceName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_workteam"></a>
 
 ### delete_workteam
 
@@ -2433,6 +2622,8 @@ Keyword-only arguments:
 Returns
 [DeleteWorkteamResponseTypeDef](./type_defs.md#deleteworkteamresponsetypedef).
 
+<a id="deregister_devices"></a>
+
 ### deregister_devices
 
 Deregisters the specified devices.
@@ -2449,6 +2640,8 @@ Keyword-only arguments:
 
 - `DeviceFleetName`: `str` *(required)*
 - `DeviceNames`: `Sequence`\[`str`\] *(required)*
+
+<a id="describe_action"></a>
 
 ### describe_action
 
@@ -2469,6 +2662,8 @@ Keyword-only arguments:
 Returns
 [DescribeActionResponseTypeDef](./type_defs.md#describeactionresponsetypedef).
 
+<a id="describe_algorithm"></a>
+
 ### describe_algorithm
 
 Returns a description of the specified algorithm that is in your account.
@@ -2487,6 +2682,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAlgorithmOutputTypeDef](./type_defs.md#describealgorithmoutputtypedef).
+
+<a id="describe_app"></a>
 
 ### describe_app
 
@@ -2510,6 +2707,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppResponseTypeDef](./type_defs.md#describeappresponsetypedef).
 
+<a id="describe_app_image_config"></a>
+
 ### describe_app_image_config
 
 Describes an AppImageConfig.
@@ -2530,6 +2729,8 @@ Keyword-only arguments:
 Returns
 [DescribeAppImageConfigResponseTypeDef](./type_defs.md#describeappimageconfigresponsetypedef).
 
+<a id="describe_artifact"></a>
+
 ### describe_artifact
 
 Describes an artifact.
@@ -2549,6 +2750,8 @@ Keyword-only arguments:
 Returns
 [DescribeArtifactResponseTypeDef](./type_defs.md#describeartifactresponsetypedef).
 
+<a id="describe_auto_ml_job"></a>
+
 ### describe_auto_ml_job
 
 Returns information about an Amazon SageMaker AutoML job.
@@ -2567,6 +2770,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAutoMLJobResponseTypeDef](./type_defs.md#describeautomljobresponsetypedef).
+
+<a id="describe_code_repository"></a>
 
 ### describe_code_repository
 
@@ -2588,6 +2793,8 @@ Keyword-only arguments:
 Returns
 [DescribeCodeRepositoryOutputTypeDef](./type_defs.md#describecoderepositoryoutputtypedef).
 
+<a id="describe_compilation_job"></a>
+
 ### describe_compilation_job
 
 .
@@ -2608,6 +2815,8 @@ Keyword-only arguments:
 Returns
 [DescribeCompilationJobResponseTypeDef](./type_defs.md#describecompilationjobresponsetypedef).
 
+<a id="describe_context"></a>
+
 ### describe_context
 
 Describes a context.
@@ -2626,6 +2835,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeContextResponseTypeDef](./type_defs.md#describecontextresponsetypedef).
+
+<a id="describe_data_quality_job_definition"></a>
 
 ### describe_data_quality_job_definition
 
@@ -2646,6 +2857,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataQualityJobDefinitionResponseTypeDef](./type_defs.md#describedataqualityjobdefinitionresponsetypedef).
+
+<a id="describe_device"></a>
 
 ### describe_device
 
@@ -2668,6 +2881,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
+<a id="describe_device_fleet"></a>
+
 ### describe_device_fleet
 
 A description of the fleet the device belongs to.
@@ -2687,6 +2902,8 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceFleetResponseTypeDef](./type_defs.md#describedevicefleetresponsetypedef).
 
+<a id="describe_domain"></a>
+
 ### describe_domain
 
 The description of the domain.
@@ -2705,6 +2922,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
+
+<a id="describe_edge_packaging_job"></a>
 
 ### describe_edge_packaging_job
 
@@ -2726,6 +2945,8 @@ Keyword-only arguments:
 Returns
 [DescribeEdgePackagingJobResponseTypeDef](./type_defs.md#describeedgepackagingjobresponsetypedef).
 
+<a id="describe_endpoint"></a>
+
 ### describe_endpoint
 
 .
@@ -2744,6 +2965,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEndpointOutputTypeDef](./type_defs.md#describeendpointoutputtypedef).
+
+<a id="describe_endpoint_config"></a>
 
 ### describe_endpoint_config
 
@@ -2765,6 +2988,8 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointConfigOutputTypeDef](./type_defs.md#describeendpointconfigoutputtypedef).
 
+<a id="describe_experiment"></a>
+
 ### describe_experiment
 
 Provides a list of an experiment's properties.
@@ -2783,6 +3008,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExperimentResponseTypeDef](./type_defs.md#describeexperimentresponsetypedef).
+
+<a id="describe_feature_group"></a>
 
 ### describe_feature_group
 
@@ -2804,6 +3031,8 @@ Keyword-only arguments:
 Returns
 [DescribeFeatureGroupResponseTypeDef](./type_defs.md#describefeaturegroupresponsetypedef).
 
+<a id="describe_flow_definition"></a>
+
 ### describe_flow_definition
 
 Returns information about the specified flow definition.
@@ -2823,6 +3052,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFlowDefinitionResponseTypeDef](./type_defs.md#describeflowdefinitionresponsetypedef).
+
+<a id="describe_human_task_ui"></a>
 
 ### describe_human_task_ui
 
@@ -2844,6 +3075,8 @@ Keyword-only arguments:
 Returns
 [DescribeHumanTaskUiResponseTypeDef](./type_defs.md#describehumantaskuiresponsetypedef).
 
+<a id="describe_hyper_parameter_tuning_job"></a>
+
 ### describe_hyper_parameter_tuning_job
 
 Gets a description of a hyperparameter tuning job.
@@ -2864,6 +3097,8 @@ Keyword-only arguments:
 Returns
 [DescribeHyperParameterTuningJobResponseTypeDef](./type_defs.md#describehyperparametertuningjobresponsetypedef).
 
+<a id="describe_image"></a>
+
 ### describe_image
 
 Describes a SageMaker image.
@@ -2882,6 +3117,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeImageResponseTypeDef](./type_defs.md#describeimageresponsetypedef).
+
+<a id="describe_image_version"></a>
 
 ### describe_image_version
 
@@ -2903,6 +3140,8 @@ Keyword-only arguments:
 Returns
 [DescribeImageVersionResponseTypeDef](./type_defs.md#describeimageversionresponsetypedef).
 
+<a id="describe_inference_recommendations_job"></a>
+
 ### describe_inference_recommendations_job
 
 Provides the results of the Inference Recommender job.
@@ -2923,6 +3162,8 @@ Keyword-only arguments:
 Returns
 [DescribeInferenceRecommendationsJobResponseTypeDef](./type_defs.md#describeinferencerecommendationsjobresponsetypedef).
 
+<a id="describe_labeling_job"></a>
+
 ### describe_labeling_job
 
 Gets information about a labeling job.
@@ -2941,6 +3182,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLabelingJobResponseTypeDef](./type_defs.md#describelabelingjobresponsetypedef).
+
+<a id="describe_lineage_group"></a>
 
 ### describe_lineage_group
 
@@ -2961,6 +3204,8 @@ Keyword-only arguments:
 Returns
 [DescribeLineageGroupResponseTypeDef](./type_defs.md#describelineagegroupresponsetypedef).
 
+<a id="describe_model"></a>
+
 ### describe_model
 
 Describes a model that you created using the `CreateModel` API.
@@ -2979,6 +3224,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeModelOutputTypeDef](./type_defs.md#describemodeloutputtypedef).
+
+<a id="describe_model_bias_job_definition"></a>
 
 ### describe_model_bias_job_definition
 
@@ -2999,6 +3246,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeModelBiasJobDefinitionResponseTypeDef](./type_defs.md#describemodelbiasjobdefinitionresponsetypedef).
+
+<a id="describe_model_explainability_job_definition"></a>
 
 ### describe_model_explainability_job_definition
 
@@ -3021,6 +3270,8 @@ Keyword-only arguments:
 Returns
 [DescribeModelExplainabilityJobDefinitionResponseTypeDef](./type_defs.md#describemodelexplainabilityjobdefinitionresponsetypedef).
 
+<a id="describe_model_package"></a>
+
 ### describe_model_package
 
 Returns a description of the specified model package, which is used to create
@@ -3040,6 +3291,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeModelPackageOutputTypeDef](./type_defs.md#describemodelpackageoutputtypedef).
+
+<a id="describe_model_package_group"></a>
 
 ### describe_model_package_group
 
@@ -3061,6 +3314,8 @@ Keyword-only arguments:
 Returns
 [DescribeModelPackageGroupOutputTypeDef](./type_defs.md#describemodelpackagegroupoutputtypedef).
 
+<a id="describe_model_quality_job_definition"></a>
+
 ### describe_model_quality_job_definition
 
 Returns a description of a model quality job definition.
@@ -3080,6 +3335,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeModelQualityJobDefinitionResponseTypeDef](./type_defs.md#describemodelqualityjobdefinitionresponsetypedef).
+
+<a id="describe_monitoring_schedule"></a>
 
 ### describe_monitoring_schedule
 
@@ -3101,6 +3358,8 @@ Keyword-only arguments:
 Returns
 [DescribeMonitoringScheduleResponseTypeDef](./type_defs.md#describemonitoringscheduleresponsetypedef).
 
+<a id="describe_notebook_instance"></a>
+
 ### describe_notebook_instance
 
 Returns information about a notebook instance.
@@ -3120,6 +3379,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNotebookInstanceOutputTypeDef](./type_defs.md#describenotebookinstanceoutputtypedef).
+
+<a id="describe_notebook_instance_lifecycle_config"></a>
 
 ### describe_notebook_instance_lifecycle_config
 
@@ -3141,6 +3402,8 @@ Keyword-only arguments:
 Returns
 [DescribeNotebookInstanceLifecycleConfigOutputTypeDef](./type_defs.md#describenotebookinstancelifecycleconfigoutputtypedef).
 
+<a id="describe_pipeline"></a>
+
 ### describe_pipeline
 
 Describes the details of a pipeline.
@@ -3159,6 +3422,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
+
+<a id="describe_pipeline_definition_for_execution"></a>
 
 ### describe_pipeline_definition_for_execution
 
@@ -3180,6 +3445,8 @@ Keyword-only arguments:
 Returns
 [DescribePipelineDefinitionForExecutionResponseTypeDef](./type_defs.md#describepipelinedefinitionforexecutionresponsetypedef).
 
+<a id="describe_pipeline_execution"></a>
+
 ### describe_pipeline_execution
 
 Describes the details of a pipeline execution.
@@ -3199,6 +3466,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePipelineExecutionResponseTypeDef](./type_defs.md#describepipelineexecutionresponsetypedef).
+
+<a id="describe_processing_job"></a>
 
 ### describe_processing_job
 
@@ -3220,6 +3489,8 @@ Keyword-only arguments:
 Returns
 [DescribeProcessingJobResponseTypeDef](./type_defs.md#describeprocessingjobresponsetypedef).
 
+<a id="describe_project"></a>
+
 ### describe_project
 
 Describes the details of a project.
@@ -3238,6 +3509,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeProjectOutputTypeDef](./type_defs.md#describeprojectoutputtypedef).
+
+<a id="describe_studio_lifecycle_config"></a>
 
 ### describe_studio_lifecycle_config
 
@@ -3259,6 +3532,8 @@ Keyword-only arguments:
 Returns
 [DescribeStudioLifecycleConfigResponseTypeDef](./type_defs.md#describestudiolifecycleconfigresponsetypedef).
 
+<a id="describe_subscribed_workteam"></a>
+
 ### describe_subscribed_workteam
 
 Gets information about a work team provided by a vendor.
@@ -3279,6 +3554,8 @@ Keyword-only arguments:
 Returns
 [DescribeSubscribedWorkteamResponseTypeDef](./type_defs.md#describesubscribedworkteamresponsetypedef).
 
+<a id="describe_training_job"></a>
+
 ### describe_training_job
 
 Returns information about a training job.
@@ -3297,6 +3574,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTrainingJobResponseTypeDef](./type_defs.md#describetrainingjobresponsetypedef).
+
+<a id="describe_transform_job"></a>
 
 ### describe_transform_job
 
@@ -3317,6 +3596,8 @@ Keyword-only arguments:
 Returns
 [DescribeTransformJobResponseTypeDef](./type_defs.md#describetransformjobresponsetypedef).
 
+<a id="describe_trial"></a>
+
 ### describe_trial
 
 Provides a list of a trial's properties.
@@ -3335,6 +3616,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTrialResponseTypeDef](./type_defs.md#describetrialresponsetypedef).
+
+<a id="describe_trial_component"></a>
 
 ### describe_trial_component
 
@@ -3356,6 +3639,8 @@ Keyword-only arguments:
 Returns
 [DescribeTrialComponentResponseTypeDef](./type_defs.md#describetrialcomponentresponsetypedef).
 
+<a id="describe_user_profile"></a>
+
 ### describe_user_profile
 
 Describes a user profile.
@@ -3375,6 +3660,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserProfileResponseTypeDef](./type_defs.md#describeuserprofileresponsetypedef).
+
+<a id="describe_workforce"></a>
 
 ### describe_workforce
 
@@ -3398,6 +3685,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkforceResponseTypeDef](./type_defs.md#describeworkforceresponsetypedef).
 
+<a id="describe_workteam"></a>
+
 ### describe_workteam
 
 Gets information about a specific work team.
@@ -3417,6 +3706,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkteamResponseTypeDef](./type_defs.md#describeworkteamresponsetypedef).
 
+<a id="disable_sagemaker_servicecatalog_portfolio"></a>
+
 ### disable_sagemaker_servicecatalog_portfolio
 
 Disables using Service Catalog in SageMaker.
@@ -3428,6 +3719,8 @@ Boto3 documentation:
 [SageMaker.Client.disable_sagemaker_servicecatalog_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.disable_sagemaker_servicecatalog_portfolio)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_trial_component"></a>
 
 ### disassociate_trial_component
 
@@ -3450,6 +3743,8 @@ Keyword-only arguments:
 Returns
 [DisassociateTrialComponentResponseTypeDef](./type_defs.md#disassociatetrialcomponentresponsetypedef).
 
+<a id="enable_sagemaker_servicecatalog_portfolio"></a>
+
 ### enable_sagemaker_servicecatalog_portfolio
 
 Enables using Service Catalog in SageMaker.
@@ -3461,6 +3756,8 @@ Boto3 documentation:
 [SageMaker.Client.enable_sagemaker_servicecatalog_portfolio](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.enable_sagemaker_servicecatalog_portfolio)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -3479,6 +3776,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_device_fleet_report"></a>
 
 ### get_device_fleet_report
 
@@ -3500,6 +3799,8 @@ Keyword-only arguments:
 Returns
 [GetDeviceFleetReportResponseTypeDef](./type_defs.md#getdevicefleetreportresponsetypedef).
 
+<a id="get_lineage_group_policy"></a>
+
 ### get_lineage_group_policy
 
 The resource policy for the lineage group.
@@ -3519,6 +3820,8 @@ Keyword-only arguments:
 
 Returns
 [GetLineageGroupPolicyResponseTypeDef](./type_defs.md#getlineagegrouppolicyresponsetypedef).
+
+<a id="get_model_package_group_policy"></a>
 
 ### get_model_package_group_policy
 
@@ -3540,6 +3843,8 @@ Keyword-only arguments:
 Returns
 [GetModelPackageGroupPolicyOutputTypeDef](./type_defs.md#getmodelpackagegrouppolicyoutputtypedef).
 
+<a id="get_sagemaker_servicecatalog_portfolio_status"></a>
+
 ### get_sagemaker_servicecatalog_portfolio_status
 
 Gets the status of Service Catalog in SageMaker.
@@ -3553,6 +3858,8 @@ Boto3 documentation:
 
 Returns
 [GetSagemakerServicecatalogPortfolioStatusOutputTypeDef](./type_defs.md#getsagemakerservicecatalogportfoliostatusoutputtypedef).
+
+<a id="get_search_suggestions"></a>
 
 ### get_search_suggestions
 
@@ -3575,6 +3882,8 @@ Keyword-only arguments:
 
 Returns
 [GetSearchSuggestionsResponseTypeDef](./type_defs.md#getsearchsuggestionsresponsetypedef).
+
+<a id="list_actions"></a>
 
 ### list_actions
 
@@ -3602,6 +3911,8 @@ Keyword-only arguments:
 Returns
 [ListActionsResponseTypeDef](./type_defs.md#listactionsresponsetypedef).
 
+<a id="list_algorithms"></a>
+
 ### list_algorithms
 
 Lists the machine learning algorithms that have been created.
@@ -3626,6 +3937,8 @@ Keyword-only arguments:
 
 Returns
 [ListAlgorithmsOutputTypeDef](./type_defs.md#listalgorithmsoutputtypedef).
+
+<a id="list_app_image_configs"></a>
 
 ### list_app_image_configs
 
@@ -3655,6 +3968,8 @@ Keyword-only arguments:
 Returns
 [ListAppImageConfigsResponseTypeDef](./type_defs.md#listappimageconfigsresponsetypedef).
 
+<a id="list_apps"></a>
+
 ### list_apps
 
 Lists apps.
@@ -3678,6 +3993,8 @@ Keyword-only arguments:
 - `UserProfileNameEquals`: `str`
 
 Returns [ListAppsResponseTypeDef](./type_defs.md#listappsresponsetypedef).
+
+<a id="list_artifacts"></a>
 
 ### list_artifacts
 
@@ -3705,6 +4022,8 @@ Keyword-only arguments:
 
 Returns
 [ListArtifactsResponseTypeDef](./type_defs.md#listartifactsresponsetypedef).
+
+<a id="list_associations"></a>
 
 ### list_associations
 
@@ -3736,6 +4055,8 @@ Keyword-only arguments:
 Returns
 [ListAssociationsResponseTypeDef](./type_defs.md#listassociationsresponsetypedef).
 
+<a id="list_auto_ml_jobs"></a>
+
 ### list_auto_ml_jobs
 
 Request a list of jobs.
@@ -3764,6 +4085,8 @@ Keyword-only arguments:
 Returns
 [ListAutoMLJobsResponseTypeDef](./type_defs.md#listautomljobsresponsetypedef).
 
+<a id="list_candidates_for_auto_ml_job"></a>
+
 ### list_candidates_for_auto_ml_job
 
 List the candidates created for the job.
@@ -3789,6 +4112,8 @@ Keyword-only arguments:
 
 Returns
 [ListCandidatesForAutoMLJobResponseTypeDef](./type_defs.md#listcandidatesforautomljobresponsetypedef).
+
+<a id="list_code_repositories"></a>
 
 ### list_code_repositories
 
@@ -3817,6 +4142,8 @@ Keyword-only arguments:
 
 Returns
 [ListCodeRepositoriesOutputTypeDef](./type_defs.md#listcoderepositoriesoutputtypedef).
+
+<a id="list_compilation_jobs"></a>
 
 ### list_compilation_jobs
 
@@ -3848,6 +4175,8 @@ Keyword-only arguments:
 Returns
 [ListCompilationJobsResponseTypeDef](./type_defs.md#listcompilationjobsresponsetypedef).
 
+<a id="list_contexts"></a>
+
 ### list_contexts
 
 Lists the contexts in your account and their properties.
@@ -3873,6 +4202,8 @@ Keyword-only arguments:
 
 Returns
 [ListContextsResponseTypeDef](./type_defs.md#listcontextsresponsetypedef).
+
+<a id="list_data_quality_job_definitions"></a>
 
 ### list_data_quality_job_definitions
 
@@ -3902,6 +4233,8 @@ Keyword-only arguments:
 Returns
 [ListDataQualityJobDefinitionsResponseTypeDef](./type_defs.md#listdataqualityjobdefinitionsresponsetypedef).
 
+<a id="list_device_fleets"></a>
+
 ### list_device_fleets
 
 Returns a list of devices in the fleet.
@@ -3930,6 +4263,8 @@ Keyword-only arguments:
 Returns
 [ListDeviceFleetsResponseTypeDef](./type_defs.md#listdevicefleetsresponsetypedef).
 
+<a id="list_devices"></a>
+
 ### list_devices
 
 A list of devices.
@@ -3953,6 +4288,8 @@ Keyword-only arguments:
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
+<a id="list_domains"></a>
+
 ### list_domains
 
 Lists the domains.
@@ -3972,6 +4309,8 @@ Keyword-only arguments:
 
 Returns
 [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
+
+<a id="list_edge_packaging_jobs"></a>
 
 ### list_edge_packaging_jobs
 
@@ -4005,6 +4344,8 @@ Keyword-only arguments:
 Returns
 [ListEdgePackagingJobsResponseTypeDef](./type_defs.md#listedgepackagingjobsresponsetypedef).
 
+<a id="list_endpoint_configs"></a>
+
 ### list_endpoint_configs
 
 Lists endpoint configurations.
@@ -4030,6 +4371,8 @@ Keyword-only arguments:
 
 Returns
 [ListEndpointConfigsOutputTypeDef](./type_defs.md#listendpointconfigsoutputtypedef).
+
+<a id="list_endpoints"></a>
 
 ### list_endpoints
 
@@ -4059,6 +4402,8 @@ Keyword-only arguments:
 Returns
 [ListEndpointsOutputTypeDef](./type_defs.md#listendpointsoutputtypedef).
 
+<a id="list_experiments"></a>
+
 ### list_experiments
 
 Lists all the experiments in your account.
@@ -4082,6 +4427,8 @@ Keyword-only arguments:
 
 Returns
 [ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
+
+<a id="list_feature_groups"></a>
 
 ### list_feature_groups
 
@@ -4113,6 +4460,8 @@ Keyword-only arguments:
 Returns
 [ListFeatureGroupsResponseTypeDef](./type_defs.md#listfeaturegroupsresponsetypedef).
 
+<a id="list_flow_definitions"></a>
+
 ### list_flow_definitions
 
 Returns information about the flow definitions in your account.
@@ -4136,6 +4485,8 @@ Keyword-only arguments:
 Returns
 [ListFlowDefinitionsResponseTypeDef](./type_defs.md#listflowdefinitionsresponsetypedef).
 
+<a id="list_human_task_uis"></a>
+
 ### list_human_task_uis
 
 Returns information about the human task user interfaces in your account.
@@ -4158,6 +4509,8 @@ Keyword-only arguments:
 
 Returns
 [ListHumanTaskUisResponseTypeDef](./type_defs.md#listhumantaskuisresponsetypedef).
+
+<a id="list_hyper_parameter_tuning_jobs"></a>
 
 ### list_hyper_parameter_tuning_jobs
 
@@ -4191,6 +4544,8 @@ Keyword-only arguments:
 Returns
 [ListHyperParameterTuningJobsResponseTypeDef](./type_defs.md#listhyperparametertuningjobsresponsetypedef).
 
+<a id="list_image_versions"></a>
+
 ### list_image_versions
 
 Lists the versions of a specified image and their properties.
@@ -4219,6 +4574,8 @@ Keyword-only arguments:
 Returns
 [ListImageVersionsResponseTypeDef](./type_defs.md#listimageversionsresponsetypedef).
 
+<a id="list_images"></a>
+
 ### list_images
 
 Lists the images in your account and their properties.
@@ -4244,6 +4601,8 @@ Keyword-only arguments:
 - `SortOrder`: [ImageSortOrderType](./literals.md#imagesortordertype)
 
 Returns [ListImagesResponseTypeDef](./type_defs.md#listimagesresponsetypedef).
+
+<a id="list_inference_recommendations_jobs"></a>
 
 ### list_inference_recommendations_jobs
 
@@ -4276,6 +4635,8 @@ Keyword-only arguments:
 Returns
 [ListInferenceRecommendationsJobsResponseTypeDef](./type_defs.md#listinferencerecommendationsjobsresponsetypedef).
 
+<a id="list_labeling_jobs"></a>
+
 ### list_labeling_jobs
 
 Gets a list of labeling jobs.
@@ -4303,6 +4664,8 @@ Keyword-only arguments:
 
 Returns
 [ListLabelingJobsResponseTypeDef](./type_defs.md#listlabelingjobsresponsetypedef).
+
+<a id="list_labeling_jobs_for_workteam"></a>
 
 ### list_labeling_jobs_for_workteam
 
@@ -4332,6 +4695,8 @@ Keyword-only arguments:
 Returns
 [ListLabelingJobsForWorkteamResponseTypeDef](./type_defs.md#listlabelingjobsforworkteamresponsetypedef).
 
+<a id="list_lineage_groups"></a>
+
 ### list_lineage_groups
 
 A list of lineage groups shared with your Amazon Web Services account.
@@ -4355,6 +4720,8 @@ Keyword-only arguments:
 
 Returns
 [ListLineageGroupsResponseTypeDef](./type_defs.md#listlineagegroupsresponsetypedef).
+
+<a id="list_model_bias_job_definitions"></a>
 
 ### list_model_bias_job_definitions
 
@@ -4384,6 +4751,8 @@ Keyword-only arguments:
 Returns
 [ListModelBiasJobDefinitionsResponseTypeDef](./type_defs.md#listmodelbiasjobdefinitionsresponsetypedef).
 
+<a id="list_model_explainability_job_definitions"></a>
+
 ### list_model_explainability_job_definitions
 
 Lists model explainability job definitions that satisfy various filters.
@@ -4412,6 +4781,8 @@ Keyword-only arguments:
 Returns
 [ListModelExplainabilityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelexplainabilityjobdefinitionsresponsetypedef).
 
+<a id="list_model_metadata"></a>
+
 ### list_model_metadata
 
 Lists the domain, framework, task, and model name of standard machine learning
@@ -4434,6 +4805,8 @@ Keyword-only arguments:
 
 Returns
 [ListModelMetadataResponseTypeDef](./type_defs.md#listmodelmetadataresponsetypedef).
+
+<a id="list_model_package_groups"></a>
 
 ### list_model_package_groups
 
@@ -4461,6 +4834,8 @@ Keyword-only arguments:
 
 Returns
 [ListModelPackageGroupsOutputTypeDef](./type_defs.md#listmodelpackagegroupsoutputtypedef).
+
+<a id="list_model_packages"></a>
 
 ### list_model_packages
 
@@ -4492,6 +4867,8 @@ Keyword-only arguments:
 Returns
 [ListModelPackagesOutputTypeDef](./type_defs.md#listmodelpackagesoutputtypedef).
 
+<a id="list_model_quality_job_definitions"></a>
+
 ### list_model_quality_job_definitions
 
 Gets a list of model quality monitoring job definitions in your account.
@@ -4520,6 +4897,8 @@ Keyword-only arguments:
 Returns
 [ListModelQualityJobDefinitionsResponseTypeDef](./type_defs.md#listmodelqualityjobdefinitionsresponsetypedef).
 
+<a id="list_models"></a>
+
 ### list_models
 
 Lists models created with the `CreateModel` API.
@@ -4543,6 +4922,8 @@ Keyword-only arguments:
 - `CreationTimeAfter`: `Union`\[`datetime`, `str`\]
 
 Returns [ListModelsOutputTypeDef](./type_defs.md#listmodelsoutputtypedef).
+
+<a id="list_monitoring_executions"></a>
 
 ### list_monitoring_executions
 
@@ -4580,6 +4961,8 @@ Keyword-only arguments:
 Returns
 [ListMonitoringExecutionsResponseTypeDef](./type_defs.md#listmonitoringexecutionsresponsetypedef).
 
+<a id="list_monitoring_schedules"></a>
+
 ### list_monitoring_schedules
 
 Returns list of all monitoring schedules.
@@ -4614,6 +4997,8 @@ Keyword-only arguments:
 Returns
 [ListMonitoringSchedulesResponseTypeDef](./type_defs.md#listmonitoringschedulesresponsetypedef).
 
+<a id="list_notebook_instance_lifecycle_configs"></a>
+
 ### list_notebook_instance_lifecycle_configs
 
 Lists notebook instance lifestyle configurations created with the
@@ -4644,6 +5029,8 @@ Keyword-only arguments:
 
 Returns
 [ListNotebookInstanceLifecycleConfigsOutputTypeDef](./type_defs.md#listnotebookinstancelifecycleconfigsoutputtypedef).
+
+<a id="list_notebook_instances"></a>
 
 ### list_notebook_instances
 
@@ -4681,6 +5068,8 @@ Keyword-only arguments:
 Returns
 [ListNotebookInstancesOutputTypeDef](./type_defs.md#listnotebookinstancesoutputtypedef).
 
+<a id="list_pipeline_execution_steps"></a>
+
 ### list_pipeline_execution_steps
 
 Gets a list of `PipeLineExecutionStep` objects.
@@ -4703,6 +5092,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelineExecutionStepsResponseTypeDef](./type_defs.md#listpipelineexecutionstepsresponsetypedef).
+
+<a id="list_pipeline_executions"></a>
 
 ### list_pipeline_executions
 
@@ -4731,6 +5122,8 @@ Keyword-only arguments:
 Returns
 [ListPipelineExecutionsResponseTypeDef](./type_defs.md#listpipelineexecutionsresponsetypedef).
 
+<a id="list_pipeline_parameters_for_execution"></a>
+
 ### list_pipeline_parameters_for_execution
 
 Gets a list of parameters for a pipeline execution.
@@ -4752,6 +5145,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelineParametersForExecutionResponseTypeDef](./type_defs.md#listpipelineparametersforexecutionresponsetypedef).
+
+<a id="list_pipelines"></a>
 
 ### list_pipelines
 
@@ -4777,6 +5172,8 @@ Keyword-only arguments:
 
 Returns
 [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
+
+<a id="list_processing_jobs"></a>
 
 ### list_processing_jobs
 
@@ -4807,6 +5204,8 @@ Keyword-only arguments:
 Returns
 [ListProcessingJobsResponseTypeDef](./type_defs.md#listprocessingjobsresponsetypedef).
 
+<a id="list_projects"></a>
+
 ### list_projects
 
 Gets a list of the projects in an Amazon Web Services account.
@@ -4830,6 +5229,8 @@ Keyword-only arguments:
 - `SortOrder`: [ProjectSortOrderType](./literals.md#projectsortordertype)
 
 Returns [ListProjectsOutputTypeDef](./type_defs.md#listprojectsoutputtypedef).
+
+<a id="list_studio_lifecycle_configs"></a>
 
 ### list_studio_lifecycle_configs
 
@@ -4862,6 +5263,8 @@ Keyword-only arguments:
 Returns
 [ListStudioLifecycleConfigsResponseTypeDef](./type_defs.md#liststudiolifecycleconfigsresponsetypedef).
 
+<a id="list_subscribed_workteams"></a>
+
 ### list_subscribed_workteams
 
 Gets a list of the work teams that you are subscribed to in the Amazon Web
@@ -4885,6 +5288,8 @@ Keyword-only arguments:
 Returns
 [ListSubscribedWorkteamsResponseTypeDef](./type_defs.md#listsubscribedworkteamsresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Returns the tags for the specified Amazon SageMaker resource.
@@ -4904,6 +5309,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
+
+<a id="list_training_jobs"></a>
 
 ### list_training_jobs
 
@@ -4933,6 +5340,8 @@ Keyword-only arguments:
 Returns
 [ListTrainingJobsResponseTypeDef](./type_defs.md#listtrainingjobsresponsetypedef).
 
+<a id="list_training_jobs_for_hyper_parameter_tuning_job"></a>
+
 ### list_training_jobs_for_hyper_parameter_tuning_job
 
 Gets a list of TrainingJobSummary objects that describe the training jobs that
@@ -4960,6 +5369,8 @@ Keyword-only arguments:
 
 Returns
 [ListTrainingJobsForHyperParameterTuningJobResponseTypeDef](./type_defs.md#listtrainingjobsforhyperparametertuningjobresponsetypedef).
+
+<a id="list_transform_jobs"></a>
 
 ### list_transform_jobs
 
@@ -4990,6 +5401,8 @@ Keyword-only arguments:
 Returns
 [ListTransformJobsResponseTypeDef](./type_defs.md#listtransformjobsresponsetypedef).
 
+<a id="list_trial_components"></a>
+
 ### list_trial_components
 
 Lists the trial components in your account.
@@ -5018,6 +5431,8 @@ Keyword-only arguments:
 Returns
 [ListTrialComponentsResponseTypeDef](./type_defs.md#listtrialcomponentsresponsetypedef).
 
+<a id="list_trials"></a>
+
 ### list_trials
 
 Lists the trials in your account.
@@ -5043,6 +5458,8 @@ Keyword-only arguments:
 
 Returns [ListTrialsResponseTypeDef](./type_defs.md#listtrialsresponsetypedef).
 
+<a id="list_user_profiles"></a>
+
 ### list_user_profiles
 
 Lists user profiles.
@@ -5066,6 +5483,8 @@ Keyword-only arguments:
 
 Returns
 [ListUserProfilesResponseTypeDef](./type_defs.md#listuserprofilesresponsetypedef).
+
+<a id="list_workforces"></a>
 
 ### list_workforces
 
@@ -5092,6 +5511,8 @@ Keyword-only arguments:
 Returns
 [ListWorkforcesResponseTypeDef](./type_defs.md#listworkforcesresponsetypedef).
 
+<a id="list_workteams"></a>
+
 ### list_workteams
 
 Gets a list of private work teams that you have defined in a region.
@@ -5116,6 +5537,8 @@ Keyword-only arguments:
 Returns
 [ListWorkteamsResponseTypeDef](./type_defs.md#listworkteamsresponsetypedef).
 
+<a id="put_model_package_group_policy"></a>
+
 ### put_model_package_group_policy
 
 Adds a resouce policy to control access to a model group.
@@ -5136,6 +5559,8 @@ Keyword-only arguments:
 
 Returns
 [PutModelPackageGroupPolicyOutputTypeDef](./type_defs.md#putmodelpackagegrouppolicyoutputtypedef).
+
+<a id="query_lineage"></a>
 
 ### query_lineage
 
@@ -5163,6 +5588,8 @@ Keyword-only arguments:
 Returns
 [QueryLineageResponseTypeDef](./type_defs.md#querylineageresponsetypedef).
 
+<a id="register_devices"></a>
+
 ### register_devices
 
 Register devices.
@@ -5181,6 +5608,8 @@ Keyword-only arguments:
 - `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
   *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="render_ui_template"></a>
 
 ### render_ui_template
 
@@ -5205,6 +5634,8 @@ Keyword-only arguments:
 Returns
 [RenderUiTemplateResponseTypeDef](./type_defs.md#renderuitemplateresponsetypedef).
 
+<a id="retry_pipeline_execution"></a>
+
 ### retry_pipeline_execution
 
 Retry the execution of the pipeline.
@@ -5227,6 +5658,8 @@ Keyword-only arguments:
 
 Returns
 [RetryPipelineExecutionResponseTypeDef](./type_defs.md#retrypipelineexecutionresponsetypedef).
+
+<a id="search"></a>
 
 ### search
 
@@ -5252,6 +5685,8 @@ Keyword-only arguments:
 
 Returns [SearchResponseTypeDef](./type_defs.md#searchresponsetypedef).
 
+<a id="send_pipeline_execution_step_failure"></a>
+
 ### send_pipeline_execution_step_failure
 
 Notifies the pipeline that the execution of a callback step failed, along with
@@ -5274,6 +5709,8 @@ Keyword-only arguments:
 
 Returns
 [SendPipelineExecutionStepFailureResponseTypeDef](./type_defs.md#sendpipelineexecutionstepfailureresponsetypedef).
+
+<a id="send_pipeline_execution_step_success"></a>
 
 ### send_pipeline_execution_step_success
 
@@ -5299,6 +5736,8 @@ Keyword-only arguments:
 Returns
 [SendPipelineExecutionStepSuccessResponseTypeDef](./type_defs.md#sendpipelineexecutionstepsuccessresponsetypedef).
 
+<a id="start_monitoring_schedule"></a>
+
 ### start_monitoring_schedule
 
 Starts a previously stopped monitoring schedule.
@@ -5315,6 +5754,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
+
+<a id="start_notebook_instance"></a>
 
 ### start_notebook_instance
 
@@ -5333,6 +5774,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
+
+<a id="start_pipeline_execution"></a>
 
 ### start_pipeline_execution
 
@@ -5361,6 +5804,8 @@ Keyword-only arguments:
 Returns
 [StartPipelineExecutionResponseTypeDef](./type_defs.md#startpipelineexecutionresponsetypedef).
 
+<a id="stop_auto_ml_job"></a>
+
 ### stop_auto_ml_job
 
 A method for forcing the termination of a running job.
@@ -5376,6 +5821,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `AutoMLJobName`: `str` *(required)*
+
+<a id="stop_compilation_job"></a>
 
 ### stop_compilation_job
 
@@ -5393,6 +5840,8 @@ Keyword-only arguments:
 
 - `CompilationJobName`: `str` *(required)*
 
+<a id="stop_edge_packaging_job"></a>
+
 ### stop_edge_packaging_job
 
 Request to stop an edge packaging job.
@@ -5409,6 +5858,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `EdgePackagingJobName`: `str` *(required)*
+
+<a id="stop_hyper_parameter_tuning_job"></a>
 
 ### stop_hyper_parameter_tuning_job
 
@@ -5428,6 +5879,8 @@ Keyword-only arguments:
 
 - `HyperParameterTuningJobName`: `str` *(required)*
 
+<a id="stop_inference_recommendations_job"></a>
+
 ### stop_inference_recommendations_job
 
 Stops an Inference Recommender job.
@@ -5445,6 +5898,8 @@ Keyword-only arguments:
 
 - `JobName`: `str` *(required)*
 
+<a id="stop_labeling_job"></a>
+
 ### stop_labeling_job
 
 Stops a running labeling job.
@@ -5460,6 +5915,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `LabelingJobName`: `str` *(required)*
+
+<a id="stop_monitoring_schedule"></a>
 
 ### stop_monitoring_schedule
 
@@ -5478,6 +5935,8 @@ Keyword-only arguments:
 
 - `MonitoringScheduleName`: `str` *(required)*
 
+<a id="stop_notebook_instance"></a>
+
 ### stop_notebook_instance
 
 Terminates the ML compute instance.
@@ -5493,6 +5952,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `NotebookInstanceName`: `str` *(required)*
+
+<a id="stop_pipeline_execution"></a>
 
 ### stop_pipeline_execution
 
@@ -5515,6 +5976,8 @@ Keyword-only arguments:
 Returns
 [StopPipelineExecutionResponseTypeDef](./type_defs.md#stoppipelineexecutionresponsetypedef).
 
+<a id="stop_processing_job"></a>
+
 ### stop_processing_job
 
 Stops a processing job.
@@ -5530,6 +5993,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ProcessingJobName`: `str` *(required)*
+
+<a id="stop_training_job"></a>
 
 ### stop_training_job
 
@@ -5547,6 +6012,8 @@ Keyword-only arguments:
 
 - `TrainingJobName`: `str` *(required)*
 
+<a id="stop_transform_job"></a>
+
 ### stop_transform_job
 
 Stops a batch transform job.
@@ -5562,6 +6029,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `TransformJobName`: `str` *(required)*
+
+<a id="update_action"></a>
 
 ### update_action
 
@@ -5586,6 +6055,8 @@ Keyword-only arguments:
 Returns
 [UpdateActionResponseTypeDef](./type_defs.md#updateactionresponsetypedef).
 
+<a id="update_app_image_config"></a>
+
 ### update_app_image_config
 
 Updates the properties of an AppImageConfig.
@@ -5607,6 +6078,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAppImageConfigResponseTypeDef](./type_defs.md#updateappimageconfigresponsetypedef).
+
+<a id="update_artifact"></a>
 
 ### update_artifact
 
@@ -5630,6 +6103,8 @@ Keyword-only arguments:
 Returns
 [UpdateArtifactResponseTypeDef](./type_defs.md#updateartifactresponsetypedef).
 
+<a id="update_code_repository"></a>
+
 ### update_code_repository
 
 Updates the specified Git repository with the specified values.
@@ -5650,6 +6125,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateCodeRepositoryOutputTypeDef](./type_defs.md#updatecoderepositoryoutputtypedef).
+
+<a id="update_context"></a>
 
 ### update_context
 
@@ -5673,6 +6150,8 @@ Keyword-only arguments:
 Returns
 [UpdateContextResponseTypeDef](./type_defs.md#updatecontextresponsetypedef).
 
+<a id="update_device_fleet"></a>
+
 ### update_device_fleet
 
 Updates a fleet of devices.
@@ -5695,6 +6174,8 @@ Keyword-only arguments:
 - `Description`: `str`
 - `EnableIotRoleAlias`: `bool`
 
+<a id="update_devices"></a>
+
 ### update_devices
 
 Updates one or more devices in a fleet.
@@ -5712,6 +6193,8 @@ Keyword-only arguments:
 - `DeviceFleetName`: `str` *(required)*
 - `Devices`: `Sequence`\[[DeviceTypeDef](./type_defs.md#devicetypedef)\]
   *(required)*
+
+<a id="update_domain"></a>
 
 ### update_domain
 
@@ -5735,6 +6218,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDomainResponseTypeDef](./type_defs.md#updatedomainresponsetypedef).
+
+<a id="update_endpoint"></a>
 
 ### update_endpoint
 
@@ -5764,6 +6249,8 @@ Keyword-only arguments:
 Returns
 [UpdateEndpointOutputTypeDef](./type_defs.md#updateendpointoutputtypedef).
 
+<a id="update_endpoint_weights_and_capacities"></a>
+
 ### update_endpoint_weights_and_capacities
 
 Updates variant weight of one or more variants associated with an existing
@@ -5788,6 +6275,8 @@ Keyword-only arguments:
 Returns
 [UpdateEndpointWeightsAndCapacitiesOutputTypeDef](./type_defs.md#updateendpointweightsandcapacitiesoutputtypedef).
 
+<a id="update_experiment"></a>
+
 ### update_experiment
 
 Adds, updates, or removes the description of an experiment.
@@ -5808,6 +6297,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef).
+
+<a id="update_image"></a>
 
 ### update_image
 
@@ -5831,6 +6322,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateImageResponseTypeDef](./type_defs.md#updateimageresponsetypedef).
+
+<a id="update_model_package"></a>
 
 ### update_model_package
 
@@ -5858,6 +6351,8 @@ Keyword-only arguments:
 Returns
 [UpdateModelPackageOutputTypeDef](./type_defs.md#updatemodelpackageoutputtypedef).
 
+<a id="update_monitoring_schedule"></a>
+
 ### update_monitoring_schedule
 
 Updates a previously created schedule.
@@ -5880,6 +6375,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateMonitoringScheduleResponseTypeDef](./type_defs.md#updatemonitoringscheduleresponsetypedef).
+
+<a id="update_notebook_instance"></a>
 
 ### update_notebook_instance
 
@@ -5913,6 +6410,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_notebook_instance_lifecycle_config"></a>
+
 ### update_notebook_instance_lifecycle_config
 
 Updates a notebook instance lifecycle configuration created with the
@@ -5936,6 +6435,8 @@ Keyword-only arguments:
   `Sequence`\[[NotebookInstanceLifecycleHookTypeDef](./type_defs.md#notebookinstancelifecyclehooktypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_pipeline"></a>
 
 ### update_pipeline
 
@@ -5964,6 +6465,8 @@ Keyword-only arguments:
 Returns
 [UpdatePipelineResponseTypeDef](./type_defs.md#updatepipelineresponsetypedef).
 
+<a id="update_pipeline_execution"></a>
+
 ### update_pipeline_execution
 
 Updates a pipeline execution.
@@ -5987,6 +6490,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePipelineExecutionResponseTypeDef](./type_defs.md#updatepipelineexecutionresponsetypedef).
+
+<a id="update_project"></a>
 
 ### update_project
 
@@ -6012,6 +6517,8 @@ Keyword-only arguments:
 Returns
 [UpdateProjectOutputTypeDef](./type_defs.md#updateprojectoutputtypedef).
 
+<a id="update_training_job"></a>
+
 ### update_training_job
 
 Update a model training job to request a new Debugger profiling configuration.
@@ -6035,6 +6542,8 @@ Keyword-only arguments:
 Returns
 [UpdateTrainingJobResponseTypeDef](./type_defs.md#updatetrainingjobresponsetypedef).
 
+<a id="update_trial"></a>
+
 ### update_trial
 
 Updates the display name of a trial.
@@ -6054,6 +6563,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTrialResponseTypeDef](./type_defs.md#updatetrialresponsetypedef).
+
+<a id="update_trial_component"></a>
 
 ### update_trial_component
 
@@ -6088,6 +6599,8 @@ Keyword-only arguments:
 Returns
 [UpdateTrialComponentResponseTypeDef](./type_defs.md#updatetrialcomponentresponsetypedef).
 
+<a id="update_user_profile"></a>
+
 ### update_user_profile
 
 Updates a user profile.
@@ -6108,6 +6621,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateUserProfileResponseTypeDef](./type_defs.md#updateuserprofileresponsetypedef).
+
+<a id="update_workforce"></a>
 
 ### update_workforce
 
@@ -6130,6 +6645,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWorkforceResponseTypeDef](./type_defs.md#updateworkforceresponsetypedef).
+
+<a id="update_workteam"></a>
 
 ### update_workteam
 
@@ -6154,6 +6671,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWorkteamResponseTypeDef](./type_defs.md#updateworkteamresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -6275,6 +6794,8 @@ overloads.
   [ListWorkteamsPaginator](./paginators.md#listworkteamspaginator)
 - `client.get_paginator("search")` ->
   [SearchPaginator](./paginators.md#searchpaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

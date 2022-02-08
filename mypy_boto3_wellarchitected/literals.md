@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-wellarchitected-module"></a>
+
 # Literals for boto3 WellArchitected module
 
 > [Index](..) > [WellArchitected](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
-[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [Literals for boto3 WellArchitected module](#literals-for-boto3-wellarchitected-module)
   - [AnswerReasonType](#answerreasontype)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [WorkloadImprovementStatusType](#workloadimprovementstatustype)
   - [ServiceName](#servicename)
 
+<a id="answerreasontype"></a>
+
 ## AnswerReasonType
 
 ```python
@@ -39,6 +43,8 @@ Values:
 - `NONE`
 - `OTHER`
 - `OUT_OF_SCOPE`
+
+<a id="choicereasontype"></a>
 
 ## ChoiceReasonType
 
@@ -54,6 +60,8 @@ Values:
 - `OTHER`
 - `OUT_OF_SCOPE`
 
+<a id="choicestatustype"></a>
+
 ## ChoiceStatusType
 
 ```python
@@ -65,6 +73,8 @@ Values:
 - `NOT_APPLICABLE`
 - `SELECTED`
 - `UNSELECTED`
+
+<a id="differencestatustype"></a>
 
 ## DifferenceStatusType
 
@@ -78,6 +88,8 @@ Values:
 - `NEW`
 - `UPDATED`
 
+<a id="importlensstatustype"></a>
+
 ## ImportLensStatusType
 
 ```python
@@ -89,6 +101,8 @@ Values:
 - `COMPLETE`
 - `ERROR`
 - `IN_PROGRESS`
+
+<a id="lensstatustype"></a>
 
 ## LensStatusType
 
@@ -104,6 +118,8 @@ Values:
 - `NOT_CURRENT`
 - `UNSHARED`
 
+<a id="lensstatustypetype"></a>
+
 ## LensStatusTypeType
 
 ```python
@@ -115,6 +131,8 @@ Values:
 - `ALL`
 - `DRAFT`
 - `PUBLISHED`
+
+<a id="lenstypetype"></a>
 
 ## LensTypeType
 
@@ -128,6 +146,8 @@ Values:
 - `CUSTOM_SELF`
 - `CUSTOM_SHARED`
 
+<a id="notificationtypetype"></a>
+
 ## NotificationTypeType
 
 ```python
@@ -139,6 +159,8 @@ Values:
 - `LENS_VERSION_DEPRECATED`
 - `LENS_VERSION_UPGRADED`
 
+<a id="permissiontypetype"></a>
+
 ## PermissionTypeType
 
 ```python
@@ -149,6 +171,8 @@ Values:
 
 - `CONTRIBUTOR`
 - `READONLY`
+
+<a id="risktype"></a>
 
 ## RiskType
 
@@ -164,6 +188,8 @@ Values:
 - `NOT_APPLICABLE`
 - `UNANSWERED`
 
+<a id="shareinvitationactiontype"></a>
+
 ## ShareInvitationActionType
 
 ```python
@@ -175,6 +201,8 @@ Values:
 - `ACCEPT`
 - `REJECT`
 
+<a id="shareresourcetypetype"></a>
+
 ## ShareResourceTypeType
 
 ```python
@@ -185,6 +213,8 @@ Values:
 
 - `LENS`
 - `WORKLOAD`
+
+<a id="sharestatustype"></a>
 
 ## ShareStatusType
 
@@ -200,6 +230,8 @@ Values:
 - `REJECTED`
 - `REVOKED`
 
+<a id="workloadenvironmenttype"></a>
+
 ## WorkloadEnvironmentType
 
 ```python
@@ -210,6 +242,8 @@ Values:
 
 - `PREPRODUCTION`
 - `PRODUCTION`
+
+<a id="workloadimprovementstatustype"></a>
 
 ## WorkloadImprovementStatusType
 
@@ -224,6 +258,8 @@ Values:
 - `NOT_APPLICABLE`
 - `NOT_STARTED`
 - `RISK_ACKNOWLEDGED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

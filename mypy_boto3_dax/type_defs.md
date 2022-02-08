@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-dax-module"></a>
+
 # Typed dictionaries for boto3 DAX module
 
 > [Index](..) > [DAX](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DAX](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dax.html#DAX)
 type annotations stubs module
-[mypy_boto3_dax](https://pypi.org/project/mypy-boto3-dax/).
+[mypy-boto3-dax](https://pypi.org/project/mypy-boto3-dax/).
 
 - [Typed dictionaries for boto3 DAX module](#typed-dictionaries-for-boto3-dax-module)
   - [ClusterTypeDef](#clustertypedef)
@@ -69,6 +71,8 @@ type annotations stubs module
   - [UpdateSubnetGroupRequestRequestTypeDef](#updatesubnetgrouprequestrequesttypedef)
   - [UpdateSubnetGroupResponseTypeDef](#updatesubnetgroupresponsetypedef)
 
+<a id="clustertypedef"></a>
+
 ## ClusterTypeDef
 
 ```python
@@ -101,6 +105,8 @@ Optional fields:
 - `ClusterEndpointEncryptionType`:
   [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 
+<a id="createclusterrequestrequesttypedef"></a>
+
 ## CreateClusterRequestRequestTypeDef
 
 ```python
@@ -129,6 +135,8 @@ Optional fields:
 - `ClusterEndpointEncryptionType`:
   [ClusterEndpointEncryptionTypeType](./literals.md#clusterendpointencryptiontypetype)
 
+<a id="createclusterresponsetypedef"></a>
+
 ## CreateClusterResponseTypeDef
 
 ```python
@@ -140,6 +148,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createparametergrouprequestrequesttypedef"></a>
 
 ## CreateParameterGroupRequestRequestTypeDef
 
@@ -155,6 +165,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="createparametergroupresponsetypedef"></a>
+
 ## CreateParameterGroupResponseTypeDef
 
 ```python
@@ -167,6 +179,8 @@ Required fields:
   [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsubnetgrouprequestrequesttypedef"></a>
 
 ## CreateSubnetGroupRequestRequestTypeDef
 
@@ -183,6 +197,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="createsubnetgroupresponsetypedef"></a>
+
 ## CreateSubnetGroupResponseTypeDef
 
 ```python
@@ -194,6 +210,8 @@ Required fields:
 - `SubnetGroup`: [SubnetGroupTypeDef](./type_defs.md#subnetgrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="decreasereplicationfactorrequestrequesttypedef"></a>
 
 ## DecreaseReplicationFactorRequestRequestTypeDef
 
@@ -211,6 +229,8 @@ Optional fields:
 - `AvailabilityZones`: `Sequence`\[`str`\]
 - `NodeIdsToRemove`: `Sequence`\[`str`\]
 
+<a id="decreasereplicationfactorresponsetypedef"></a>
+
 ## DecreaseReplicationFactorResponseTypeDef
 
 ```python
@@ -223,6 +243,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteclusterrequestrequesttypedef"></a>
+
 ## DeleteClusterRequestRequestTypeDef
 
 ```python
@@ -232,6 +254,8 @@ from mypy_boto3_dax.type_defs import DeleteClusterRequestRequestTypeDef
 Required fields:
 
 - `ClusterName`: `str`
+
+<a id="deleteclusterresponsetypedef"></a>
 
 ## DeleteClusterResponseTypeDef
 
@@ -245,6 +269,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteparametergrouprequestrequesttypedef"></a>
+
 ## DeleteParameterGroupRequestRequestTypeDef
 
 ```python
@@ -254,6 +280,8 @@ from mypy_boto3_dax.type_defs import DeleteParameterGroupRequestRequestTypeDef
 Required fields:
 
 - `ParameterGroupName`: `str`
+
+<a id="deleteparametergroupresponsetypedef"></a>
 
 ## DeleteParameterGroupResponseTypeDef
 
@@ -267,6 +295,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesubnetgrouprequestrequesttypedef"></a>
+
 ## DeleteSubnetGroupRequestRequestTypeDef
 
 ```python
@@ -276,6 +306,8 @@ from mypy_boto3_dax.type_defs import DeleteSubnetGroupRequestRequestTypeDef
 Required fields:
 
 - `SubnetGroupName`: `str`
+
+<a id="deletesubnetgroupresponsetypedef"></a>
 
 ## DeleteSubnetGroupResponseTypeDef
 
@@ -289,6 +321,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeclustersrequestrequesttypedef"></a>
+
 ## DescribeClustersRequestRequestTypeDef
 
 ```python
@@ -300,6 +334,8 @@ Optional fields:
 - `ClusterNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeclustersresponsetypedef"></a>
 
 ## DescribeClustersResponseTypeDef
 
@@ -314,6 +350,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedefaultparametersrequestrequesttypedef"></a>
+
 ## DescribeDefaultParametersRequestRequestTypeDef
 
 ```python
@@ -324,6 +362,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describedefaultparametersresponsetypedef"></a>
 
 ## DescribeDefaultParametersResponseTypeDef
 
@@ -337,6 +377,8 @@ Required fields:
 - `Parameters`: `List`\[[ParameterTypeDef](./type_defs.md#parametertypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeventsrequestrequesttypedef"></a>
 
 ## DescribeEventsRequestRequestTypeDef
 
@@ -354,6 +396,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeeventsresponsetypedef"></a>
+
 ## DescribeEventsResponseTypeDef
 
 ```python
@@ -367,6 +411,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeparametergroupsrequestrequesttypedef"></a>
+
 ## DescribeParameterGroupsRequestRequestTypeDef
 
 ```python
@@ -378,6 +424,8 @@ Optional fields:
 - `ParameterGroupNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeparametergroupsresponsetypedef"></a>
 
 ## DescribeParameterGroupsResponseTypeDef
 
@@ -392,6 +440,8 @@ Required fields:
   `List`\[[ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeparametersrequestrequesttypedef"></a>
 
 ## DescribeParametersRequestRequestTypeDef
 
@@ -409,6 +459,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeparametersresponsetypedef"></a>
+
 ## DescribeParametersResponseTypeDef
 
 ```python
@@ -422,6 +474,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesubnetgroupsrequestrequesttypedef"></a>
+
 ## DescribeSubnetGroupsRequestRequestTypeDef
 
 ```python
@@ -433,6 +487,8 @@ Optional fields:
 - `SubnetGroupNames`: `Sequence`\[`str`\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describesubnetgroupsresponsetypedef"></a>
 
 ## DescribeSubnetGroupsResponseTypeDef
 
@@ -448,6 +504,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -459,6 +517,8 @@ Optional fields:
 - `Address`: `str`
 - `Port`: `int`
 - `URL`: `str`
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -472,6 +532,8 @@ Optional fields:
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Message`: `str`
 - `Date`: `datetime`
+
+<a id="increasereplicationfactorrequestrequesttypedef"></a>
 
 ## IncreaseReplicationFactorRequestRequestTypeDef
 
@@ -488,6 +550,8 @@ Optional fields:
 
 - `AvailabilityZones`: `Sequence`\[`str`\]
 
+<a id="increasereplicationfactorresponsetypedef"></a>
+
 ## IncreaseReplicationFactorResponseTypeDef
 
 ```python
@@ -499,6 +563,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsrequestrequesttypedef"></a>
 
 ## ListTagsRequestRequestTypeDef
 
@@ -514,6 +580,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsresponsetypedef"></a>
+
 ## ListTagsResponseTypeDef
 
 ```python
@@ -526,6 +594,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="nodetypedef"></a>
 
 ## NodeTypeDef
 
@@ -542,6 +612,8 @@ Optional fields:
 - `NodeStatus`: `str`
 - `ParameterGroupStatus`: `str`
 
+<a id="nodetypespecificvaluetypedef"></a>
+
 ## NodeTypeSpecificValueTypeDef
 
 ```python
@@ -553,6 +625,8 @@ Optional fields:
 - `NodeType`: `str`
 - `Value`: `str`
 
+<a id="notificationconfigurationtypedef"></a>
+
 ## NotificationConfigurationTypeDef
 
 ```python
@@ -563,6 +637,8 @@ Optional fields:
 
 - `TopicArn`: `str`
 - `TopicStatus`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -576,6 +652,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parametergroupstatustypedef"></a>
+
 ## ParameterGroupStatusTypeDef
 
 ```python
@@ -588,6 +666,8 @@ Optional fields:
 - `ParameterApplyStatus`: `str`
 - `NodeIdsToReboot`: `List`\[`str`\]
 
+<a id="parametergrouptypedef"></a>
+
 ## ParameterGroupTypeDef
 
 ```python
@@ -599,6 +679,8 @@ Optional fields:
 - `ParameterGroupName`: `str`
 - `Description`: `str`
 
+<a id="parameternamevaluetypedef"></a>
+
 ## ParameterNameValueTypeDef
 
 ```python
@@ -609,6 +691,8 @@ Optional fields:
 
 - `ParameterName`: `str`
 - `ParameterValue`: `str`
+
+<a id="parametertypedef"></a>
 
 ## ParameterTypeDef
 
@@ -630,6 +714,8 @@ Optional fields:
 - `IsModifiable`: [IsModifiableType](./literals.md#ismodifiabletype)
 - `ChangeType`: [ChangeTypeType](./literals.md#changetypetype)
 
+<a id="rebootnoderequestrequesttypedef"></a>
+
 ## RebootNodeRequestRequestTypeDef
 
 ```python
@@ -640,6 +726,8 @@ Required fields:
 
 - `ClusterName`: `str`
 - `NodeId`: `str`
+
+<a id="rebootnoderesponsetypedef"></a>
 
 ## RebootNodeResponseTypeDef
 
@@ -652,6 +740,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -667,6 +757,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="ssedescriptiontypedef"></a>
+
 ## SSEDescriptionTypeDef
 
 ```python
@@ -676,6 +768,8 @@ from mypy_boto3_dax.type_defs import SSEDescriptionTypeDef
 Optional fields:
 
 - `Status`: [SSEStatusType](./literals.md#ssestatustype)
+
+<a id="ssespecificationtypedef"></a>
 
 ## SSESpecificationTypeDef
 
@@ -687,6 +781,8 @@ Required fields:
 
 - `Enabled`: `bool`
 
+<a id="securitygroupmembershiptypedef"></a>
+
 ## SecurityGroupMembershipTypeDef
 
 ```python
@@ -697,6 +793,8 @@ Optional fields:
 
 - `SecurityGroupIdentifier`: `str`
 - `Status`: `str`
+
+<a id="subnetgrouptypedef"></a>
 
 ## SubnetGroupTypeDef
 
@@ -711,6 +809,8 @@ Optional fields:
 - `VpcId`: `str`
 - `Subnets`: `List`\[[SubnetTypeDef](./type_defs.md#subnettypedef)\]
 
+<a id="subnettypedef"></a>
+
 ## SubnetTypeDef
 
 ```python
@@ -722,6 +822,8 @@ Optional fields:
 - `SubnetIdentifier`: `str`
 - `SubnetAvailabilityZone`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -732,6 +834,8 @@ Required fields:
 
 - `ResourceName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagresourceresponsetypedef"></a>
 
 ## TagResourceResponseTypeDef
 
@@ -745,6 +849,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -755,6 +861,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -767,6 +875,8 @@ Required fields:
 - `ResourceName`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="untagresourceresponsetypedef"></a>
+
 ## UntagResourceResponseTypeDef
 
 ```python
@@ -778,6 +888,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateclusterrequestrequesttypedef"></a>
 
 ## UpdateClusterRequestRequestTypeDef
 
@@ -798,6 +910,8 @@ Optional fields:
 - `ParameterGroupName`: `str`
 - `SecurityGroupIds`: `Sequence`\[`str`\]
 
+<a id="updateclusterresponsetypedef"></a>
+
 ## UpdateClusterResponseTypeDef
 
 ```python
@@ -809,6 +923,8 @@ Required fields:
 - `Cluster`: [ClusterTypeDef](./type_defs.md#clustertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateparametergrouprequestrequesttypedef"></a>
 
 ## UpdateParameterGroupRequestRequestTypeDef
 
@@ -822,6 +938,8 @@ Required fields:
 - `ParameterNameValues`:
   `Sequence`\[[ParameterNameValueTypeDef](./type_defs.md#parameternamevaluetypedef)\]
 
+<a id="updateparametergroupresponsetypedef"></a>
+
 ## UpdateParameterGroupResponseTypeDef
 
 ```python
@@ -834,6 +952,8 @@ Required fields:
   [ParameterGroupTypeDef](./type_defs.md#parametergrouptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesubnetgrouprequestrequesttypedef"></a>
 
 ## UpdateSubnetGroupRequestRequestTypeDef
 
@@ -849,6 +969,8 @@ Optional fields:
 
 - `Description`: `str`
 - `SubnetIds`: `Sequence`\[`str`\]
+
+<a id="updatesubnetgroupresponsetypedef"></a>
 
 ## UpdateSubnetGroupResponseTypeDef
 

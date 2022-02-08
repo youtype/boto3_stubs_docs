@@ -1,3 +1,5 @@
+<a id="finspacedataclient-for-boto3-finspacedata-module"></a>
+
 # FinSpaceDataClient for boto3 FinSpaceData module
 
 > [Index](..) > [FinSpaceData](.) > FinSpaceDataClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
-[mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
+[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [FinSpaceDataClient for boto3 FinSpaceData module](#finspacedataclient-for-boto3-finspacedata-module)
   - [FinSpaceDataClient](#finspacedataclient)
@@ -30,6 +32,8 @@ type annotations stubs module
     - [update_dataset](#update_dataset)
     - [get_paginator](#get_paginator)
 
+<a id="finspacedataclient"></a>
+
 ## FinSpaceDataClient
 
 Type annotations for `boto3.client("finspace-data")`
@@ -37,14 +41,17 @@ Type annotations for `boto3.client("finspace-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_finspace_data.client import FinSpaceDataClient
 
 def get_finspace-data_client() -> FinSpaceDataClient:
-    return boto3.client("finspace-data")
+    return Session().client("finspace-data")
 ```
 
 Boto3 documentation:
 [FinSpaceData.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -69,7 +76,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -81,6 +92,8 @@ Boto3 documentation:
 [FinSpaceData.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -96,6 +109,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_changeset"></a>
 
 ### create_changeset
 
@@ -119,6 +134,8 @@ Keyword-only arguments:
 
 Returns
 [CreateChangesetResponseTypeDef](./type_defs.md#createchangesetresponsetypedef).
+
+<a id="create_data_view"></a>
 
 ### create_data_view
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDataViewResponseTypeDef](./type_defs.md#createdataviewresponsetypedef).
+
+<a id="create_dataset"></a>
 
 ### create_dataset
 
@@ -176,6 +195,8 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
+<a id="delete_dataset"></a>
+
 ### delete_dataset
 
 Deletes a FinSpace Dataset.
@@ -196,6 +217,8 @@ Keyword-only arguments:
 Returns
 [DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -214,6 +237,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_changeset"></a>
 
 ### get_changeset
 
@@ -235,6 +260,8 @@ Keyword-only arguments:
 Returns
 [GetChangesetResponseTypeDef](./type_defs.md#getchangesetresponsetypedef).
 
+<a id="get_data_view"></a>
+
 ### get_data_view
 
 Gets information about a Dataview.
@@ -255,6 +282,8 @@ Keyword-only arguments:
 Returns
 [GetDataViewResponseTypeDef](./type_defs.md#getdataviewresponsetypedef).
 
+<a id="get_dataset"></a>
+
 ### get_dataset
 
 Returns information about a Dataset.
@@ -272,6 +301,8 @@ Keyword-only arguments:
 - `datasetId`: `str` *(required)*
 
 Returns [GetDatasetResponseTypeDef](./type_defs.md#getdatasetresponsetypedef).
+
+<a id="get_programmatic_access_credentials"></a>
 
 ### get_programmatic_access_credentials
 
@@ -294,6 +325,8 @@ Keyword-only arguments:
 Returns
 [GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef).
 
+<a id="get_working_location"></a>
+
 ### get_working_location
 
 A temporary Amazon S3 location, where you can copy your files from a source
@@ -314,6 +347,8 @@ Keyword-only arguments:
 
 Returns
 [GetWorkingLocationResponseTypeDef](./type_defs.md#getworkinglocationresponsetypedef).
+
+<a id="list_changesets"></a>
 
 ### list_changesets
 
@@ -336,6 +371,8 @@ Keyword-only arguments:
 Returns
 [ListChangesetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
 
+<a id="list_data_views"></a>
+
 ### list_data_views
 
 Lists all available Dataviews for a Dataset.
@@ -357,6 +394,8 @@ Keyword-only arguments:
 Returns
 [ListDataViewsResponseTypeDef](./type_defs.md#listdataviewsresponsetypedef).
 
+<a id="list_datasets"></a>
+
 ### list_datasets
 
 Lists all of the active Datasets that a user has access to.
@@ -376,6 +415,8 @@ Keyword-only arguments:
 
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
+
+<a id="update_changeset"></a>
 
 ### update_changeset
 
@@ -399,6 +440,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateChangesetResponseTypeDef](./type_defs.md#updatechangesetresponsetypedef).
+
+<a id="update_dataset"></a>
 
 ### update_dataset
 
@@ -424,6 +467,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

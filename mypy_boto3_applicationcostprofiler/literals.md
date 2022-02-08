@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-applicationcostprofiler-module"></a>
+
 # Literals for boto3 ApplicationCostProfiler module
 
 > [Index](..) > [ApplicationCostProfiler](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationCostProfiler](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/applicationcostprofiler.html#ApplicationCostProfiler)
 type annotations stubs module
-[mypy_boto3_applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
+[mypy-boto3-applicationcostprofiler](https://pypi.org/project/mypy-boto3-applicationcostprofiler/).
 
 - [Literals for boto3 ApplicationCostProfiler module](#literals-for-boto3-applicationcostprofiler-module)
   - [FormatType](#formattype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [S3BucketRegionType](#s3bucketregiontype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="formattype"></a>
 
 ## FormatType
 
@@ -26,6 +30,8 @@ Values:
 - `CSV`
 - `PARQUET`
 
+<a id="listreportdefinitionspaginatorname"></a>
+
 ## ListReportDefinitionsPaginatorName
 
 ```python
@@ -35,6 +41,8 @@ from mypy_boto3_applicationcostprofiler.literals import ListReportDefinitionsPag
 Values:
 
 - `list_report_definitions`
+
+<a id="reportfrequencytype"></a>
 
 ## ReportFrequencyType
 
@@ -48,6 +56,8 @@ Values:
 - `DAILY`
 - `MONTHLY`
 
+<a id="s3bucketregiontype"></a>
+
 ## S3BucketRegionType
 
 ```python
@@ -60,6 +70,8 @@ Values:
 - `ap-east-1`
 - `eu-south-1`
 - `me-south-1`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -368,6 +380,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

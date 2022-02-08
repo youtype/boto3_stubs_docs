@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appflow-module"></a>
+
 # Literals for boto3 Appflow module
 
 > [Index](..) > [Appflow](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Appflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow)
 type annotations stubs module
-[mypy_boto3_appflow](https://pypi.org/project/mypy-boto3-appflow/).
+[mypy-boto3-appflow](https://pypi.org/project/mypy-boto3-appflow/).
 
 - [Literals for boto3 Appflow module](#literals-for-boto3-appflow-module)
   - [AggregationTypeType](#aggregationtypetype)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
   - [ServiceName](#servicename)
 
+<a id="aggregationtypetype"></a>
+
 ## AggregationTypeType
 
 ```python
@@ -58,6 +62,8 @@ Values:
 - `None`
 - `SingleFile`
 
+<a id="amplitudeconnectoroperatortype"></a>
+
 ## AmplitudeConnectorOperatorType
 
 ```python
@@ -67,6 +73,8 @@ from mypy_boto3_appflow.literals import AmplitudeConnectorOperatorType
 Values:
 
 - `BETWEEN`
+
+<a id="authenticationtypetype"></a>
 
 ## AuthenticationTypeType
 
@@ -81,6 +89,8 @@ Values:
 - `CUSTOM`
 - `OAUTH2`
 
+<a id="connectionmodetype"></a>
+
 ## ConnectionModeType
 
 ```python
@@ -92,6 +102,8 @@ Values:
 - `Private`
 - `Public`
 
+<a id="connectorprovisioningtypetype"></a>
+
 ## ConnectorProvisioningTypeType
 
 ```python
@@ -101,6 +113,8 @@ from mypy_boto3_appflow.literals import ConnectorProvisioningTypeType
 Values:
 
 - `LAMBDA`
+
+<a id="connectortypetype"></a>
 
 ## ConnectorTypeType
 
@@ -134,6 +148,8 @@ Values:
 - `Veeva`
 - `Zendesk`
 
+<a id="datapullmodetype"></a>
+
 ## DataPullModeType
 
 ```python
@@ -144,6 +160,8 @@ Values:
 
 - `Complete`
 - `Incremental`
+
+<a id="datadogconnectoroperatortype"></a>
 
 ## DatadogConnectorOperatorType
 
@@ -169,6 +187,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="dynatraceconnectoroperatortype"></a>
+
 ## DynatraceConnectorOperatorType
 
 ```python
@@ -193,6 +213,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="executionstatustype"></a>
+
 ## ExecutionStatusType
 
 ```python
@@ -205,6 +227,8 @@ Values:
 - `InProgress`
 - `Successful`
 
+<a id="filetypetype"></a>
+
 ## FileTypeType
 
 ```python
@@ -216,6 +240,8 @@ Values:
 - `CSV`
 - `JSON`
 - `PARQUET`
+
+<a id="flowstatustype"></a>
 
 ## FlowStatusType
 
@@ -232,6 +258,8 @@ Values:
 - `Errored`
 - `Suspended`
 
+<a id="googleanalyticsconnectoroperatortype"></a>
+
 ## GoogleAnalyticsConnectorOperatorType
 
 ```python
@@ -242,6 +270,8 @@ Values:
 
 - `BETWEEN`
 - `PROJECTION`
+
+<a id="infornexusconnectoroperatortype"></a>
 
 ## InforNexusConnectorOperatorType
 
@@ -266,6 +296,8 @@ Values:
 - `VALIDATE_NON_NULL`
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
+
+<a id="marketoconnectoroperatortype"></a>
 
 ## MarketoConnectorOperatorType
 
@@ -292,6 +324,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="oauth2granttypetype"></a>
+
 ## OAuth2GrantTypeType
 
 ```python
@@ -302,6 +336,8 @@ Values:
 
 - `AUTHORIZATION_CODE`
 - `CLIENT_CREDENTIALS`
+
+<a id="operatorpropertieskeystype"></a>
 
 ## OperatorPropertiesKeysType
 
@@ -326,6 +362,8 @@ Values:
 - `VALIDATION_ACTION`
 - `VALUE`
 - `VALUES`
+
+<a id="operatortype"></a>
 
 ## OperatorType
 
@@ -357,6 +395,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="operatorstype"></a>
+
 ## OperatorsType
 
 ```python
@@ -387,6 +427,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="prefixformattype"></a>
+
 ## PrefixFormatType
 
 ```python
@@ -401,6 +443,8 @@ Values:
 - `MONTH`
 - `YEAR`
 
+<a id="prefixtypetype"></a>
+
 ## PrefixTypeType
 
 ```python
@@ -412,6 +456,8 @@ Values:
 - `FILENAME`
 - `PATH`
 - `PATH_AND_FILENAME`
+
+<a id="privateconnectionprovisioningfailurecausetype"></a>
 
 ## PrivateConnectionProvisioningFailureCauseType
 
@@ -427,6 +473,8 @@ Values:
 - `INTERNAL_SERVER`
 - `VALIDATION`
 
+<a id="privateconnectionprovisioningstatustype"></a>
+
 ## PrivateConnectionProvisioningStatusType
 
 ```python
@@ -438,6 +486,8 @@ Values:
 - `CREATED`
 - `FAILED`
 - `PENDING`
+
+<a id="s3connectoroperatortype"></a>
 
 ## S3ConnectorOperatorType
 
@@ -468,6 +518,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="s3inputfiletypetype"></a>
+
 ## S3InputFileTypeType
 
 ```python
@@ -478,6 +530,8 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="sapodataconnectoroperatortype"></a>
 
 ## SAPODataConnectorOperatorType
 
@@ -509,6 +563,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="salesforceconnectoroperatortype"></a>
+
 ## SalesforceConnectorOperatorType
 
 ```python
@@ -539,6 +595,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="schedulefrequencytypetype"></a>
+
 ## ScheduleFrequencyTypeType
 
 ```python
@@ -553,6 +611,8 @@ Values:
 - `MONTHLY`
 - `ONCE`
 - `WEEKLY`
+
+<a id="servicenowconnectoroperatortype"></a>
 
 ## ServiceNowConnectorOperatorType
 
@@ -584,6 +644,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="singularconnectoroperatortype"></a>
+
 ## SingularConnectorOperatorType
 
 ```python
@@ -606,6 +668,8 @@ Values:
 - `VALIDATE_NON_NULL`
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
+
+<a id="slackconnectoroperatortype"></a>
 
 ## SlackConnectorOperatorType
 
@@ -635,6 +699,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="tasktypetype"></a>
+
 ## TaskTypeType
 
 ```python
@@ -651,6 +717,8 @@ Values:
 - `Merge`
 - `Truncate`
 - `Validate`
+
+<a id="trendmicroconnectoroperatortype"></a>
 
 ## TrendmicroConnectorOperatorType
 
@@ -675,6 +743,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="triggertypetype"></a>
+
 ## TriggerTypeType
 
 ```python
@@ -686,6 +756,8 @@ Values:
 - `Event`
 - `OnDemand`
 - `Scheduled`
+
+<a id="veevaconnectoroperatortype"></a>
 
 ## VeevaConnectorOperatorType
 
@@ -717,6 +789,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="writeoperationtypetype"></a>
+
 ## WriteOperationTypeType
 
 ```python
@@ -729,6 +803,8 @@ Values:
 - `INSERT`
 - `UPDATE`
 - `UPSERT`
+
+<a id="zendeskconnectoroperatortype"></a>
 
 ## ZendeskConnectorOperatorType
 
@@ -752,6 +828,8 @@ Values:
 - `VALIDATE_NON_NULL`
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

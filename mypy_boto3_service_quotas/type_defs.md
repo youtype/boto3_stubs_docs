@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-servicequotas-module"></a>
+
 # Typed dictionaries for boto3 ServiceQuotas module
 
 > [Index](..) > [ServiceQuotas](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
-[mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+[mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 - [Typed dictionaries for boto3 ServiceQuotas module](#typed-dictionaries-for-boto3-servicequotas-module)
   - [DeleteServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef](#deleteservicequotaincreaserequestfromtemplaterequestrequesttypedef)
@@ -49,6 +51,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="deleteservicequotaincreaserequestfromtemplaterequestrequesttypedef"></a>
+
 ## DeleteServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef
 
 ```python
@@ -61,6 +65,8 @@ Required fields:
 - `QuotaCode`: `str`
 - `AwsRegion`: `str`
 
+<a id="errorreasontypedef"></a>
+
 ## ErrorReasonTypeDef
 
 ```python
@@ -71,6 +77,8 @@ Optional fields:
 
 - `ErrorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ErrorMessage`: `str`
+
+<a id="getawsdefaultservicequotarequestrequesttypedef"></a>
 
 ## GetAWSDefaultServiceQuotaRequestRequestTypeDef
 
@@ -83,6 +91,8 @@ Required fields:
 - `ServiceCode`: `str`
 - `QuotaCode`: `str`
 
+<a id="getawsdefaultservicequotaresponsetypedef"></a>
+
 ## GetAWSDefaultServiceQuotaResponseTypeDef
 
 ```python
@@ -94,6 +104,8 @@ Required fields:
 - `Quota`: [ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getassociationforservicequotatemplateresponsetypedef"></a>
 
 ## GetAssociationForServiceQuotaTemplateResponseTypeDef
 
@@ -108,6 +120,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrequestedservicequotachangerequestrequesttypedef"></a>
+
 ## GetRequestedServiceQuotaChangeRequestRequestTypeDef
 
 ```python
@@ -117,6 +131,8 @@ from mypy_boto3_service_quotas.type_defs import GetRequestedServiceQuotaChangeRe
 Required fields:
 
 - `RequestId`: `str`
+
+<a id="getrequestedservicequotachangeresponsetypedef"></a>
 
 ## GetRequestedServiceQuotaChangeResponseTypeDef
 
@@ -131,6 +147,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicequotaincreaserequestfromtemplaterequestrequesttypedef"></a>
+
 ## GetServiceQuotaIncreaseRequestFromTemplateRequestRequestTypeDef
 
 ```python
@@ -142,6 +160,8 @@ Required fields:
 - `ServiceCode`: `str`
 - `QuotaCode`: `str`
 - `AwsRegion`: `str`
+
+<a id="getservicequotaincreaserequestfromtemplateresponsetypedef"></a>
 
 ## GetServiceQuotaIncreaseRequestFromTemplateResponseTypeDef
 
@@ -156,6 +176,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicequotarequestrequesttypedef"></a>
+
 ## GetServiceQuotaRequestRequestTypeDef
 
 ```python
@@ -166,6 +188,8 @@ Required fields:
 
 - `ServiceCode`: `str`
 - `QuotaCode`: `str`
+
+<a id="getservicequotaresponsetypedef"></a>
 
 ## GetServiceQuotaResponseTypeDef
 
@@ -178,6 +202,8 @@ Required fields:
 - `Quota`: [ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listawsdefaultservicequotasrequestrequesttypedef"></a>
 
 ## ListAWSDefaultServiceQuotasRequestRequestTypeDef
 
@@ -194,6 +220,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listawsdefaultservicequotasresponsetypedef"></a>
+
 ## ListAWSDefaultServiceQuotasResponseTypeDef
 
 ```python
@@ -206,6 +234,8 @@ Required fields:
 - `Quotas`: `List`\[[ServiceQuotaTypeDef](./type_defs.md#servicequotatypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrequestedservicequotachangehistorybyquotarequestrequesttypedef"></a>
 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaRequestRequestTypeDef
 
@@ -224,6 +254,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listrequestedservicequotachangehistorybyquotaresponsetypedef"></a>
+
 ## ListRequestedServiceQuotaChangeHistoryByQuotaResponseTypeDef
 
 ```python
@@ -238,6 +270,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrequestedservicequotachangehistoryrequestrequesttypedef"></a>
+
 ## ListRequestedServiceQuotaChangeHistoryRequestRequestTypeDef
 
 ```python
@@ -250,6 +284,8 @@ Optional fields:
 - `Status`: [RequestStatusType](./literals.md#requeststatustype)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listrequestedservicequotachangehistoryresponsetypedef"></a>
 
 ## ListRequestedServiceQuotaChangeHistoryResponseTypeDef
 
@@ -265,6 +301,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listservicequotaincreaserequestsintemplaterequestrequesttypedef"></a>
+
 ## ListServiceQuotaIncreaseRequestsInTemplateRequestRequestTypeDef
 
 ```python
@@ -277,6 +315,8 @@ Optional fields:
 - `AwsRegion`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listservicequotaincreaserequestsintemplateresponsetypedef"></a>
 
 ## ListServiceQuotaIncreaseRequestsInTemplateResponseTypeDef
 
@@ -291,6 +331,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listservicequotasrequestrequesttypedef"></a>
 
 ## ListServiceQuotasRequestRequestTypeDef
 
@@ -307,6 +349,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listservicequotasresponsetypedef"></a>
+
 ## ListServiceQuotasResponseTypeDef
 
 ```python
@@ -320,6 +364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listservicesrequestrequesttypedef"></a>
+
 ## ListServicesRequestRequestTypeDef
 
 ```python
@@ -330,6 +376,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listservicesresponsetypedef"></a>
 
 ## ListServicesResponseTypeDef
 
@@ -344,6 +392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -353,6 +403,8 @@ from mypy_boto3_service_quotas.type_defs import ListTagsForResourceRequestReques
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -365,6 +417,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="metricinfotypedef"></a>
 
 ## MetricInfoTypeDef
 
@@ -379,6 +433,8 @@ Optional fields:
 - `MetricDimensions`: `Dict`\[`str`, `str`\]
 - `MetricStatisticRecommendation`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -390,6 +446,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putservicequotaincreaserequestintotemplaterequestrequesttypedef"></a>
 
 ## PutServiceQuotaIncreaseRequestIntoTemplateRequestRequestTypeDef
 
@@ -404,6 +462,8 @@ Required fields:
 - `AwsRegion`: `str`
 - `DesiredValue`: `float`
 
+<a id="putservicequotaincreaserequestintotemplateresponsetypedef"></a>
+
 ## PutServiceQuotaIncreaseRequestIntoTemplateResponseTypeDef
 
 ```python
@@ -417,6 +477,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="quotaperiodtypedef"></a>
+
 ## QuotaPeriodTypeDef
 
 ```python
@@ -427,6 +489,8 @@ Optional fields:
 
 - `PeriodValue`: `int`
 - `PeriodUnit`: [PeriodUnitType](./literals.md#periodunittype)
+
+<a id="requestservicequotaincreaserequestrequesttypedef"></a>
 
 ## RequestServiceQuotaIncreaseRequestRequestTypeDef
 
@@ -440,6 +504,8 @@ Required fields:
 - `QuotaCode`: `str`
 - `DesiredValue`: `float`
 
+<a id="requestservicequotaincreaseresponsetypedef"></a>
+
 ## RequestServiceQuotaIncreaseResponseTypeDef
 
 ```python
@@ -452,6 +518,8 @@ Required fields:
   [RequestedServiceQuotaChangeTypeDef](./type_defs.md#requestedservicequotachangetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="requestedservicequotachangetypedef"></a>
 
 ## RequestedServiceQuotaChangeTypeDef
 
@@ -476,6 +544,8 @@ Optional fields:
 - `GlobalQuota`: `bool`
 - `Unit`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -490,6 +560,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="serviceinfotypedef"></a>
+
 ## ServiceInfoTypeDef
 
 ```python
@@ -500,6 +572,8 @@ Optional fields:
 
 - `ServiceCode`: `str`
 - `ServiceName`: `str`
+
+<a id="servicequotaincreaserequestintemplatetypedef"></a>
 
 ## ServiceQuotaIncreaseRequestInTemplateTypeDef
 
@@ -517,6 +591,8 @@ Optional fields:
 - `AwsRegion`: `str`
 - `Unit`: `str`
 - `GlobalQuota`: `bool`
+
+<a id="servicequotatypedef"></a>
 
 ## ServiceQuotaTypeDef
 
@@ -539,6 +615,8 @@ Optional fields:
 - `Period`: [QuotaPeriodTypeDef](./type_defs.md#quotaperiodtypedef)
 - `ErrorReason`: [ErrorReasonTypeDef](./type_defs.md#errorreasontypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -550,6 +628,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -560,6 +640,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

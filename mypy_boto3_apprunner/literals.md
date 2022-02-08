@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-apprunner-module"></a>
+
 # Literals for boto3 AppRunner module
 
 > [Index](..) > [AppRunner](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
 type annotations stubs module
-[mypy_boto3_apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
+[mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 - [Literals for boto3 AppRunner module](#literals-for-boto3-apprunner-module)
   - [AutoScalingConfigurationStatusType](#autoscalingconfigurationstatustype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [SourceCodeVersionTypeType](#sourcecodeversiontypetype)
   - [ServiceName](#servicename)
 
+<a id="autoscalingconfigurationstatustype"></a>
+
 ## AutoScalingConfigurationStatusType
 
 ```python
@@ -33,6 +37,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="certificatevalidationrecordstatustype"></a>
 
 ## CertificateValidationRecordStatusType
 
@@ -46,6 +52,8 @@ Values:
 - `PENDING_VALIDATION`
 - `SUCCESS`
 
+<a id="configurationsourcetype"></a>
+
 ## ConfigurationSourceType
 
 ```python
@@ -56,6 +64,8 @@ Values:
 
 - `API`
 - `REPOSITORY`
+
+<a id="connectionstatustype"></a>
 
 ## ConnectionStatusType
 
@@ -69,6 +79,8 @@ Values:
 - `DELETED`
 - `ERROR`
 - `PENDING_HANDSHAKE`
+
+<a id="customdomainassociationstatustype"></a>
 
 ## CustomDomainAssociationStatusType
 
@@ -86,6 +98,8 @@ Values:
 - `DELETING`
 - `PENDING_CERTIFICATE_DNS_VALIDATION`
 
+<a id="healthcheckprotocoltype"></a>
+
 ## HealthCheckProtocolType
 
 ```python
@@ -97,6 +111,8 @@ Values:
 - `HTTP`
 - `TCP`
 
+<a id="imagerepositorytypetype"></a>
+
 ## ImageRepositoryTypeType
 
 ```python
@@ -107,6 +123,8 @@ Values:
 
 - `ECR`
 - `ECR_PUBLIC`
+
+<a id="operationstatustype"></a>
 
 ## OperationStatusType
 
@@ -124,6 +142,8 @@ Values:
 - `ROLLBACK_SUCCEEDED`
 - `SUCCEEDED`
 
+<a id="operationtypetype"></a>
+
 ## OperationTypeType
 
 ```python
@@ -138,6 +158,8 @@ Values:
 - `RESUME_SERVICE`
 - `START_DEPLOYMENT`
 
+<a id="providertypetype"></a>
+
 ## ProviderTypeType
 
 ```python
@@ -147,6 +169,8 @@ from mypy_boto3_apprunner.literals import ProviderTypeType
 Values:
 
 - `GITHUB`
+
+<a id="runtimetype"></a>
 
 ## RuntimeType
 
@@ -158,6 +182,8 @@ Values:
 
 - `NODEJS_12`
 - `PYTHON_3`
+
+<a id="servicestatustype"></a>
 
 ## ServiceStatusType
 
@@ -174,6 +200,8 @@ Values:
 - `PAUSED`
 - `RUNNING`
 
+<a id="sourcecodeversiontypetype"></a>
+
 ## SourceCodeVersionTypeType
 
 ```python
@@ -183,6 +211,8 @@ from mypy_boto3_apprunner.literals import SourceCodeVersionTypeType
 Values:
 
 - `BRANCH`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

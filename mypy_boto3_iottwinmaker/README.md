@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iottwinmaker-module"></a>
+
 # Type annotations for boto3 IoTTwinMaker module
 
 > [Index](..) > IoTTwinMaker
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTTwinMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iottwinmaker.html#IoTTwinMaker)
 type annotations stubs module
-[mypy_boto3_iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
+[mypy-boto3-iottwinmaker](https://pypi.org/project/mypy-boto3-iottwinmaker/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iottwinmaker]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iottwinmaker]'
+
+# standalone installation
 pip install mypy-boto3-iottwinmaker
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-iottwinmaker
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="iottwinmakerclient"></a>
 
 ## IoTTwinMakerClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iottwinmaker.client import IoTTwinMakerClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -61,6 +75,8 @@ from mypy_boto3_iottwinmaker.client import IoTTwinMakerClient
 - [update_scene](./client.md#update_scene)
 - [update_workspace](./client.md#update_workspace)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTTwinMakerClient [exceptions](./client.md#exceptions)
@@ -76,6 +92,8 @@ IoTTwinMakerClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - TooManyTagsException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -97,6 +115,8 @@ from mypy_boto3_iottwinmaker.literals import ComponentUpdateTypeType, ...
 - [StateType](./literals.md#statetype)
 - [TypeType](./literals.md#typetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-pinpoint-module"></a>
+
 # Typed dictionaries for boto3 Pinpoint module
 
 > [Index](..) > [Pinpoint](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Pinpoint](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint.html#Pinpoint)
 type annotations stubs module
-[mypy_boto3_pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
+[mypy-boto3-pinpoint](https://pypi.org/project/mypy-boto3-pinpoint/).
 
 - [Typed dictionaries for boto3 Pinpoint module](#typed-dictionaries-for-boto3-pinpoint-module)
   - [ADMChannelRequestTypeDef](#admchannelrequesttypedef)
@@ -444,6 +446,8 @@ type annotations stubs module
   - [WriteSegmentRequestTypeDef](#writesegmentrequesttypedef)
   - [WriteTreatmentResourceTypeDef](#writetreatmentresourcetypedef)
 
+<a id="admchannelrequesttypedef"></a>
+
 ## ADMChannelRequestTypeDef
 
 ```python
@@ -458,6 +462,8 @@ Required fields:
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="admchannelresponsetypedef"></a>
 
 ## ADMChannelResponseTypeDef
 
@@ -480,6 +486,8 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `str`
 - `Version`: `int`
+
+<a id="admmessagetypedef"></a>
 
 ## ADMMessageTypeDef
 
@@ -506,6 +514,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="apnschannelrequesttypedef"></a>
+
 ## APNSChannelRequestTypeDef
 
 ```python
@@ -522,6 +532,8 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
+
+<a id="apnschannelresponsetypedef"></a>
 
 ## APNSChannelResponseTypeDef
 
@@ -546,6 +558,8 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `str`
 - `Version`: `int`
+
+<a id="apnsmessagetypedef"></a>
 
 ## APNSMessageTypeDef
 
@@ -574,6 +588,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="apnspushnotificationtemplatetypedef"></a>
+
 ## APNSPushNotificationTemplateTypeDef
 
 ```python
@@ -589,6 +605,8 @@ Optional fields:
 - `Sound`: `str`
 - `Title`: `str`
 - `Url`: `str`
+
+<a id="apnssandboxchannelrequesttypedef"></a>
 
 ## APNSSandboxChannelRequestTypeDef
 
@@ -606,6 +624,8 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
+
+<a id="apnssandboxchannelresponsetypedef"></a>
 
 ## APNSSandboxChannelResponseTypeDef
 
@@ -631,6 +651,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
+<a id="apnsvoipchannelrequesttypedef"></a>
+
 ## APNSVoipChannelRequestTypeDef
 
 ```python
@@ -647,6 +669,8 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
+
+<a id="apnsvoipchannelresponsetypedef"></a>
 
 ## APNSVoipChannelResponseTypeDef
 
@@ -672,6 +696,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
+<a id="apnsvoipsandboxchannelrequesttypedef"></a>
+
 ## APNSVoipSandboxChannelRequestTypeDef
 
 ```python
@@ -688,6 +714,8 @@ Optional fields:
 - `TeamId`: `str`
 - `TokenKey`: `str`
 - `TokenKeyId`: `str`
+
+<a id="apnsvoipsandboxchannelresponsetypedef"></a>
 
 ## APNSVoipSandboxChannelResponseTypeDef
 
@@ -713,6 +741,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
+<a id="activitiesresponsetypedef"></a>
+
 ## ActivitiesResponseTypeDef
 
 ```python
@@ -727,6 +757,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="activityresponsetypedef"></a>
 
 ## ActivityResponseTypeDef
 
@@ -752,6 +784,8 @@ Optional fields:
 - `TimezonesTotalCount`: `int`
 - `TotalEndpointCount`: `int`
 - `TreatmentId`: `str`
+
+<a id="activitytypedef"></a>
 
 ## ActivityTypeDef
 
@@ -780,6 +814,8 @@ Optional fields:
 - `ContactCenter`:
   [ContactCenterActivityTypeDef](./type_defs.md#contactcenteractivitytypedef)
 
+<a id="addressconfigurationtypedef"></a>
+
 ## AddressConfigurationTypeDef
 
 ```python
@@ -794,6 +830,8 @@ Optional fields:
 - `RawContent`: `str`
 - `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `TitleOverride`: `str`
+
+<a id="androidpushnotificationtemplatetypedef"></a>
 
 ## AndroidPushNotificationTemplateTypeDef
 
@@ -813,6 +851,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="applicationdaterangekpiresponsetypedef"></a>
+
 ## ApplicationDateRangeKpiResponseTypeDef
 
 ```python
@@ -831,6 +871,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="applicationresponsetypedef"></a>
+
 ## ApplicationResponseTypeDef
 
 ```python
@@ -846,6 +888,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+
+<a id="applicationsettingsresourcetypedef"></a>
 
 ## ApplicationSettingsResourceTypeDef
 
@@ -864,6 +908,8 @@ Optional fields:
 - `Limits`: [CampaignLimitsTypeDef](./type_defs.md#campaignlimitstypedef)
 - `QuietTime`: [QuietTimeTypeDef](./type_defs.md#quiettimetypedef)
 
+<a id="applicationsresponsetypedef"></a>
+
 ## ApplicationsResponseTypeDef
 
 ```python
@@ -875,6 +921,8 @@ Optional fields:
 - `Item`:
   `List`\[[ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef)\]
 - `NextToken`: `str`
+
+<a id="attributedimensiontypedef"></a>
 
 ## AttributeDimensionTypeDef
 
@@ -889,6 +937,8 @@ Required fields:
 Optional fields:
 
 - `AttributeType`: [AttributeTypeType](./literals.md#attributetypetype)
+
+<a id="attributesresourcetypedef"></a>
 
 ## AttributesResourceTypeDef
 
@@ -905,6 +955,8 @@ Optional fields:
 
 - `Attributes`: `List`\[`str`\]
 
+<a id="baiduchannelrequesttypedef"></a>
+
 ## BaiduChannelRequestTypeDef
 
 ```python
@@ -919,6 +971,8 @@ Required fields:
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="baiduchannelresponsetypedef"></a>
 
 ## BaiduChannelResponseTypeDef
 
@@ -943,6 +997,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
+<a id="baidumessagetypedef"></a>
+
 ## BaiduMessageTypeDef
 
 ```python
@@ -966,6 +1022,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="basekpiresulttypedef"></a>
+
 ## BaseKpiResultTypeDef
 
 ```python
@@ -976,6 +1034,8 @@ Required fields:
 
 - `Rows`: `List`\[[ResultRowTypeDef](./type_defs.md#resultrowtypedef)\]
 
+<a id="campaigncustommessagetypedef"></a>
+
 ## CampaignCustomMessageTypeDef
 
 ```python
@@ -985,6 +1045,8 @@ from mypy_boto3_pinpoint.type_defs import CampaignCustomMessageTypeDef
 Optional fields:
 
 - `Data`: `str`
+
+<a id="campaigndaterangekpiresponsetypedef"></a>
 
 ## CampaignDateRangeKpiResponseTypeDef
 
@@ -1005,6 +1067,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="campaignemailmessagetypedef"></a>
+
 ## CampaignEmailMessageTypeDef
 
 ```python
@@ -1018,6 +1082,8 @@ Optional fields:
 - `HtmlBody`: `str`
 - `Title`: `str`
 
+<a id="campaigneventfiltertypedef"></a>
+
 ## CampaignEventFilterTypeDef
 
 ```python
@@ -1028,6 +1094,8 @@ Required fields:
 
 - `Dimensions`: [EventDimensionsTypeDef](./type_defs.md#eventdimensionstypedef)
 - `FilterType`: [FilterTypeType](./literals.md#filtertypetype)
+
+<a id="campaignhooktypedef"></a>
 
 ## CampaignHookTypeDef
 
@@ -1040,6 +1108,8 @@ Optional fields:
 - `LambdaFunctionName`: `str`
 - `Mode`: [ModeType](./literals.md#modetype)
 - `WebUrl`: `str`
+
+<a id="campaigninappmessagetypedef"></a>
 
 ## CampaignInAppMessageTypeDef
 
@@ -1055,6 +1125,8 @@ Optional fields:
 - `CustomConfig`: `Mapping`\[`str`, `str`\]
 - `Layout`: [LayoutType](./literals.md#layouttype)
 
+<a id="campaignlimitstypedef"></a>
+
 ## CampaignLimitsTypeDef
 
 ```python
@@ -1068,6 +1140,8 @@ Optional fields:
 - `MessagesPerSecond`: `int`
 - `Total`: `int`
 - `Session`: `int`
+
+<a id="campaignresponsetypedef"></a>
 
 ## CampaignResponseTypeDef
 
@@ -1110,6 +1184,8 @@ Optional fields:
 - `Version`: `int`
 - `Priority`: `int`
 
+<a id="campaignsmsmessagetypedef"></a>
+
 ## CampaignSmsMessageTypeDef
 
 ```python
@@ -1125,6 +1201,8 @@ Optional fields:
 - `EntityId`: `str`
 - `TemplateId`: `str`
 
+<a id="campaignstatetypedef"></a>
+
 ## CampaignStateTypeDef
 
 ```python
@@ -1134,6 +1212,8 @@ from mypy_boto3_pinpoint.type_defs import CampaignStateTypeDef
 Optional fields:
 
 - `CampaignStatus`: [CampaignStatusType](./literals.md#campaignstatustype)
+
+<a id="campaignsresponsetypedef"></a>
 
 ## CampaignsResponseTypeDef
 
@@ -1149,6 +1229,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="channelresponsetypedef"></a>
 
 ## ChannelResponseTypeDef
 
@@ -1168,6 +1250,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
+<a id="channelsresponsetypedef"></a>
+
 ## ChannelsResponseTypeDef
 
 ```python
@@ -1178,6 +1262,8 @@ Required fields:
 
 - `Channels`: `Dict`\[`str`,
   [ChannelResponseTypeDef](./type_defs.md#channelresponsetypedef)\]
+
+<a id="conditiontypedef"></a>
 
 ## ConditionTypeDef
 
@@ -1190,6 +1276,8 @@ Optional fields:
 - `Conditions`:
   `Sequence`\[[SimpleConditionTypeDef](./type_defs.md#simpleconditiontypedef)\]
 - `Operator`: [OperatorType](./literals.md#operatortype)
+
+<a id="conditionalsplitactivitytypedef"></a>
 
 ## ConditionalSplitActivityTypeDef
 
@@ -1204,6 +1292,8 @@ Optional fields:
 - `FalseActivity`: `str`
 - `TrueActivity`: `str`
 
+<a id="contactcenteractivitytypedef"></a>
+
 ## ContactCenterActivityTypeDef
 
 ```python
@@ -1213,6 +1303,8 @@ from mypy_boto3_pinpoint.type_defs import ContactCenterActivityTypeDef
 Optional fields:
 
 - `NextActivity`: `str`
+
+<a id="createapprequestrequesttypedef"></a>
 
 ## CreateAppRequestRequestTypeDef
 
@@ -1224,6 +1316,8 @@ Required fields:
 
 - `CreateApplicationRequest`:
   [CreateApplicationRequestTypeDef](./type_defs.md#createapplicationrequesttypedef)
+
+<a id="createappresponsetypedef"></a>
 
 ## CreateAppResponseTypeDef
 
@@ -1237,6 +1331,8 @@ Required fields:
   [ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createapplicationrequesttypedef"></a>
 
 ## CreateApplicationRequestTypeDef
 
@@ -1252,6 +1348,8 @@ Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcampaignrequestrequesttypedef"></a>
+
 ## CreateCampaignRequestRequestTypeDef
 
 ```python
@@ -1263,6 +1361,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `WriteCampaignRequest`:
   [WriteCampaignRequestTypeDef](./type_defs.md#writecampaignrequesttypedef)
+
+<a id="createcampaignresponsetypedef"></a>
 
 ## CreateCampaignResponseTypeDef
 
@@ -1277,6 +1377,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createemailtemplaterequestrequesttypedef"></a>
+
 ## CreateEmailTemplateRequestRequestTypeDef
 
 ```python
@@ -1288,6 +1390,8 @@ Required fields:
 - `EmailTemplateRequest`:
   [EmailTemplateRequestTypeDef](./type_defs.md#emailtemplaterequesttypedef)
 - `TemplateName`: `str`
+
+<a id="createemailtemplateresponsetypedef"></a>
 
 ## CreateEmailTemplateResponseTypeDef
 
@@ -1302,6 +1406,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createexportjobrequestrequesttypedef"></a>
+
 ## CreateExportJobRequestRequestTypeDef
 
 ```python
@@ -1313,6 +1419,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `ExportJobRequest`:
   [ExportJobRequestTypeDef](./type_defs.md#exportjobrequesttypedef)
+
+<a id="createexportjobresponsetypedef"></a>
 
 ## CreateExportJobResponseTypeDef
 
@@ -1327,6 +1435,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createimportjobrequestrequesttypedef"></a>
+
 ## CreateImportJobRequestRequestTypeDef
 
 ```python
@@ -1338,6 +1448,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `ImportJobRequest`:
   [ImportJobRequestTypeDef](./type_defs.md#importjobrequesttypedef)
+
+<a id="createimportjobresponsetypedef"></a>
 
 ## CreateImportJobResponseTypeDef
 
@@ -1352,6 +1464,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createinapptemplaterequestrequesttypedef"></a>
+
 ## CreateInAppTemplateRequestRequestTypeDef
 
 ```python
@@ -1363,6 +1477,8 @@ Required fields:
 - `InAppTemplateRequest`:
   [InAppTemplateRequestTypeDef](./type_defs.md#inapptemplaterequesttypedef)
 - `TemplateName`: `str`
+
+<a id="createinapptemplateresponsetypedef"></a>
 
 ## CreateInAppTemplateResponseTypeDef
 
@@ -1377,6 +1493,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createjourneyrequestrequesttypedef"></a>
+
 ## CreateJourneyRequestRequestTypeDef
 
 ```python
@@ -1388,6 +1506,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `WriteJourneyRequest`:
   [WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef)
+
+<a id="createjourneyresponsetypedef"></a>
 
 ## CreateJourneyResponseTypeDef
 
@@ -1402,6 +1522,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpushtemplaterequestrequesttypedef"></a>
+
 ## CreatePushTemplateRequestRequestTypeDef
 
 ```python
@@ -1413,6 +1535,8 @@ Required fields:
 - `PushNotificationTemplateRequest`:
   [PushNotificationTemplateRequestTypeDef](./type_defs.md#pushnotificationtemplaterequesttypedef)
 - `TemplateName`: `str`
+
+<a id="createpushtemplateresponsetypedef"></a>
 
 ## CreatePushTemplateResponseTypeDef
 
@@ -1427,6 +1551,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrecommenderconfigurationrequestrequesttypedef"></a>
+
 ## CreateRecommenderConfigurationRequestRequestTypeDef
 
 ```python
@@ -1437,6 +1563,8 @@ Required fields:
 
 - `CreateRecommenderConfiguration`:
   [CreateRecommenderConfigurationTypeDef](./type_defs.md#createrecommenderconfigurationtypedef)
+
+<a id="createrecommenderconfigurationresponsetypedef"></a>
 
 ## CreateRecommenderConfigurationResponseTypeDef
 
@@ -1450,6 +1578,8 @@ Required fields:
   [RecommenderConfigurationResponseTypeDef](./type_defs.md#recommenderconfigurationresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrecommenderconfigurationtypedef"></a>
 
 ## CreateRecommenderConfigurationTypeDef
 
@@ -1472,6 +1602,8 @@ Optional fields:
 - `RecommendationsDisplayName`: `str`
 - `RecommendationsPerMessage`: `int`
 
+<a id="createsegmentrequestrequesttypedef"></a>
+
 ## CreateSegmentRequestRequestTypeDef
 
 ```python
@@ -1483,6 +1615,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `WriteSegmentRequest`:
   [WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef)
+
+<a id="createsegmentresponsetypedef"></a>
 
 ## CreateSegmentResponseTypeDef
 
@@ -1497,6 +1631,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsmstemplaterequestrequesttypedef"></a>
+
 ## CreateSmsTemplateRequestRequestTypeDef
 
 ```python
@@ -1508,6 +1644,8 @@ Required fields:
 - `SMSTemplateRequest`:
   [SMSTemplateRequestTypeDef](./type_defs.md#smstemplaterequesttypedef)
 - `TemplateName`: `str`
+
+<a id="createsmstemplateresponsetypedef"></a>
 
 ## CreateSmsTemplateResponseTypeDef
 
@@ -1522,6 +1660,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createtemplatemessagebodytypedef"></a>
+
 ## CreateTemplateMessageBodyTypeDef
 
 ```python
@@ -1533,6 +1673,8 @@ Optional fields:
 - `Arn`: `str`
 - `Message`: `str`
 - `RequestID`: `str`
+
+<a id="createvoicetemplaterequestrequesttypedef"></a>
 
 ## CreateVoiceTemplateRequestRequestTypeDef
 
@@ -1546,6 +1688,8 @@ Required fields:
 - `VoiceTemplateRequest`:
   [VoiceTemplateRequestTypeDef](./type_defs.md#voicetemplaterequesttypedef)
 
+<a id="createvoicetemplateresponsetypedef"></a>
+
 ## CreateVoiceTemplateResponseTypeDef
 
 ```python
@@ -1558,6 +1702,8 @@ Required fields:
   [CreateTemplateMessageBodyTypeDef](./type_defs.md#createtemplatemessagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customdeliveryconfigurationtypedef"></a>
 
 ## CustomDeliveryConfigurationTypeDef
 
@@ -1573,6 +1719,8 @@ Optional fields:
 
 - `EndpointTypes`:
   `Sequence`\[[EndpointTypesElementType](./literals.md#endpointtypeselementtype)\]
+
+<a id="custommessageactivitytypedef"></a>
 
 ## CustomMessageActivityTypeDef
 
@@ -1590,6 +1738,8 @@ Optional fields:
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
+
+<a id="defaultbuttonconfigurationtypedef"></a>
 
 ## DefaultButtonConfigurationTypeDef
 
@@ -1609,6 +1759,8 @@ Optional fields:
 - `Link`: `str`
 - `TextColor`: `str`
 
+<a id="defaultmessagetypedef"></a>
+
 ## DefaultMessageTypeDef
 
 ```python
@@ -1619,6 +1771,8 @@ Optional fields:
 
 - `Body`: `str`
 - `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+<a id="defaultpushnotificationmessagetypedef"></a>
 
 ## DefaultPushNotificationMessageTypeDef
 
@@ -1636,6 +1790,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="defaultpushnotificationtemplatetypedef"></a>
+
 ## DefaultPushNotificationTemplateTypeDef
 
 ```python
@@ -1650,6 +1806,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="deleteadmchannelrequestrequesttypedef"></a>
+
 ## DeleteAdmChannelRequestRequestTypeDef
 
 ```python
@@ -1659,6 +1817,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteAdmChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteadmchannelresponsetypedef"></a>
 
 ## DeleteAdmChannelResponseTypeDef
 
@@ -1673,6 +1833,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapnschannelrequestrequesttypedef"></a>
+
 ## DeleteApnsChannelRequestRequestTypeDef
 
 ```python
@@ -1682,6 +1844,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteApnsChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteapnschannelresponsetypedef"></a>
 
 ## DeleteApnsChannelResponseTypeDef
 
@@ -1696,6 +1860,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapnssandboxchannelrequestrequesttypedef"></a>
+
 ## DeleteApnsSandboxChannelRequestRequestTypeDef
 
 ```python
@@ -1705,6 +1871,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteApnsSandboxChannelRequestRequest
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteapnssandboxchannelresponsetypedef"></a>
 
 ## DeleteApnsSandboxChannelResponseTypeDef
 
@@ -1719,6 +1887,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapnsvoipchannelrequestrequesttypedef"></a>
+
 ## DeleteApnsVoipChannelRequestRequestTypeDef
 
 ```python
@@ -1728,6 +1898,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteApnsVoipChannelRequestRequestTyp
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteapnsvoipchannelresponsetypedef"></a>
 
 ## DeleteApnsVoipChannelResponseTypeDef
 
@@ -1742,6 +1914,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapnsvoipsandboxchannelrequestrequesttypedef"></a>
+
 ## DeleteApnsVoipSandboxChannelRequestRequestTypeDef
 
 ```python
@@ -1751,6 +1925,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteApnsVoipSandboxChannelRequestReq
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteapnsvoipsandboxchannelresponsetypedef"></a>
 
 ## DeleteApnsVoipSandboxChannelResponseTypeDef
 
@@ -1765,6 +1941,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapprequestrequesttypedef"></a>
+
 ## DeleteAppRequestRequestTypeDef
 
 ```python
@@ -1774,6 +1952,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteAppRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteappresponsetypedef"></a>
 
 ## DeleteAppResponseTypeDef
 
@@ -1788,6 +1968,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletebaiduchannelrequestrequesttypedef"></a>
+
 ## DeleteBaiduChannelRequestRequestTypeDef
 
 ```python
@@ -1797,6 +1979,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteBaiduChannelRequestRequestTypeDe
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deletebaiduchannelresponsetypedef"></a>
 
 ## DeleteBaiduChannelResponseTypeDef
 
@@ -1811,6 +1995,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecampaignrequestrequesttypedef"></a>
+
 ## DeleteCampaignRequestRequestTypeDef
 
 ```python
@@ -1821,6 +2007,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `CampaignId`: `str`
+
+<a id="deletecampaignresponsetypedef"></a>
 
 ## DeleteCampaignResponseTypeDef
 
@@ -1835,6 +2023,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteemailchannelrequestrequesttypedef"></a>
+
 ## DeleteEmailChannelRequestRequestTypeDef
 
 ```python
@@ -1844,6 +2034,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteEmailChannelRequestRequestTypeDe
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteemailchannelresponsetypedef"></a>
 
 ## DeleteEmailChannelResponseTypeDef
 
@@ -1857,6 +2049,8 @@ Required fields:
   [EmailChannelResponseTypeDef](./type_defs.md#emailchannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteemailtemplaterequestrequesttypedef"></a>
 
 ## DeleteEmailTemplateRequestRequestTypeDef
 
@@ -1872,6 +2066,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="deleteemailtemplateresponsetypedef"></a>
+
 ## DeleteEmailTemplateResponseTypeDef
 
 ```python
@@ -1884,6 +2080,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteendpointrequestrequesttypedef"></a>
+
 ## DeleteEndpointRequestRequestTypeDef
 
 ```python
@@ -1894,6 +2092,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `EndpointId`: `str`
+
+<a id="deleteendpointresponsetypedef"></a>
 
 ## DeleteEndpointResponseTypeDef
 
@@ -1908,6 +2108,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteeventstreamrequestrequesttypedef"></a>
+
 ## DeleteEventStreamRequestRequestTypeDef
 
 ```python
@@ -1917,6 +2119,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteEventStreamRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deleteeventstreamresponsetypedef"></a>
 
 ## DeleteEventStreamResponseTypeDef
 
@@ -1930,6 +2134,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegcmchannelrequestrequesttypedef"></a>
+
 ## DeleteGcmChannelRequestRequestTypeDef
 
 ```python
@@ -1939,6 +2145,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteGcmChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deletegcmchannelresponsetypedef"></a>
 
 ## DeleteGcmChannelResponseTypeDef
 
@@ -1952,6 +2160,8 @@ Required fields:
   [GCMChannelResponseTypeDef](./type_defs.md#gcmchannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteinapptemplaterequestrequesttypedef"></a>
 
 ## DeleteInAppTemplateRequestRequestTypeDef
 
@@ -1967,6 +2177,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="deleteinapptemplateresponsetypedef"></a>
+
 ## DeleteInAppTemplateResponseTypeDef
 
 ```python
@@ -1979,6 +2191,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletejourneyrequestrequesttypedef"></a>
+
 ## DeleteJourneyRequestRequestTypeDef
 
 ```python
@@ -1989,6 +2203,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `JourneyId`: `str`
+
+<a id="deletejourneyresponsetypedef"></a>
 
 ## DeleteJourneyResponseTypeDef
 
@@ -2002,6 +2218,8 @@ Required fields:
   [JourneyResponseTypeDef](./type_defs.md#journeyresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletepushtemplaterequestrequesttypedef"></a>
 
 ## DeletePushTemplateRequestRequestTypeDef
 
@@ -2017,6 +2235,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="deletepushtemplateresponsetypedef"></a>
+
 ## DeletePushTemplateResponseTypeDef
 
 ```python
@@ -2029,6 +2249,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterecommenderconfigurationrequestrequesttypedef"></a>
+
 ## DeleteRecommenderConfigurationRequestRequestTypeDef
 
 ```python
@@ -2038,6 +2260,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteRecommenderConfigurationRequestR
 Required fields:
 
 - `RecommenderId`: `str`
+
+<a id="deleterecommenderconfigurationresponsetypedef"></a>
 
 ## DeleteRecommenderConfigurationResponseTypeDef
 
@@ -2052,6 +2276,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesegmentrequestrequesttypedef"></a>
+
 ## DeleteSegmentRequestRequestTypeDef
 
 ```python
@@ -2062,6 +2288,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `SegmentId`: `str`
+
+<a id="deletesegmentresponsetypedef"></a>
 
 ## DeleteSegmentResponseTypeDef
 
@@ -2076,6 +2304,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletesmschannelrequestrequesttypedef"></a>
+
 ## DeleteSmsChannelRequestRequestTypeDef
 
 ```python
@@ -2085,6 +2315,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteSmsChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deletesmschannelresponsetypedef"></a>
 
 ## DeleteSmsChannelResponseTypeDef
 
@@ -2098,6 +2330,8 @@ Required fields:
   [SMSChannelResponseTypeDef](./type_defs.md#smschannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletesmstemplaterequestrequesttypedef"></a>
 
 ## DeleteSmsTemplateRequestRequestTypeDef
 
@@ -2113,6 +2347,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="deletesmstemplateresponsetypedef"></a>
+
 ## DeleteSmsTemplateResponseTypeDef
 
 ```python
@@ -2125,6 +2361,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteuserendpointsrequestrequesttypedef"></a>
+
 ## DeleteUserEndpointsRequestRequestTypeDef
 
 ```python
@@ -2135,6 +2373,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `UserId`: `str`
+
+<a id="deleteuserendpointsresponsetypedef"></a>
 
 ## DeleteUserEndpointsResponseTypeDef
 
@@ -2149,6 +2389,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletevoicechannelrequestrequesttypedef"></a>
+
 ## DeleteVoiceChannelRequestRequestTypeDef
 
 ```python
@@ -2158,6 +2400,8 @@ from mypy_boto3_pinpoint.type_defs import DeleteVoiceChannelRequestRequestTypeDe
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="deletevoicechannelresponsetypedef"></a>
 
 ## DeleteVoiceChannelResponseTypeDef
 
@@ -2171,6 +2415,8 @@ Required fields:
   [VoiceChannelResponseTypeDef](./type_defs.md#voicechannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletevoicetemplaterequestrequesttypedef"></a>
 
 ## DeleteVoiceTemplateRequestRequestTypeDef
 
@@ -2186,6 +2432,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="deletevoicetemplateresponsetypedef"></a>
+
 ## DeleteVoiceTemplateResponseTypeDef
 
 ```python
@@ -2197,6 +2445,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="directmessageconfigurationtypedef"></a>
 
 ## DirectMessageConfigurationTypeDef
 
@@ -2218,6 +2468,8 @@ Optional fields:
 - `SMSMessage`: [SMSMessageTypeDef](./type_defs.md#smsmessagetypedef)
 - `VoiceMessage`: [VoiceMessageTypeDef](./type_defs.md#voicemessagetypedef)
 
+<a id="emailchannelrequesttypedef"></a>
+
 ## EmailChannelRequestTypeDef
 
 ```python
@@ -2234,6 +2486,8 @@ Optional fields:
 - `ConfigurationSet`: `str`
 - `Enabled`: `bool`
 - `RoleArn`: `str`
+
+<a id="emailchannelresponsetypedef"></a>
 
 ## EmailChannelResponseTypeDef
 
@@ -2262,6 +2516,8 @@ Optional fields:
 - `RoleArn`: `str`
 - `Version`: `int`
 
+<a id="emailmessageactivitytypedef"></a>
+
 ## EmailMessageActivityTypeDef
 
 ```python
@@ -2275,6 +2531,8 @@ Optional fields:
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
+
+<a id="emailmessagetypedef"></a>
 
 ## EmailMessageTypeDef
 
@@ -2292,6 +2550,8 @@ Optional fields:
 - `SimpleEmail`: [SimpleEmailTypeDef](./type_defs.md#simpleemailtypedef)
 - `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
+<a id="emailtemplaterequesttypedef"></a>
+
 ## EmailTemplateRequestTypeDef
 
 ```python
@@ -2307,6 +2567,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `TextPart`: `str`
+
+<a id="emailtemplateresponsetypedef"></a>
 
 ## EmailTemplateResponseTypeDef
 
@@ -2333,6 +2595,8 @@ Optional fields:
 - `TextPart`: `str`
 - `Version`: `str`
 
+<a id="endpointbatchitemtypedef"></a>
+
 ## EndpointBatchItemTypeDef
 
 ```python
@@ -2355,6 +2619,8 @@ Optional fields:
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
 
+<a id="endpointbatchrequesttypedef"></a>
+
 ## EndpointBatchRequestTypeDef
 
 ```python
@@ -2365,6 +2631,8 @@ Required fields:
 
 - `Item`:
   `Sequence`\[[EndpointBatchItemTypeDef](./type_defs.md#endpointbatchitemtypedef)\]
+
+<a id="endpointdemographictypedef"></a>
 
 ## EndpointDemographicTypeDef
 
@@ -2383,6 +2651,8 @@ Optional fields:
 - `PlatformVersion`: `str`
 - `Timezone`: `str`
 
+<a id="endpointitemresponsetypedef"></a>
+
 ## EndpointItemResponseTypeDef
 
 ```python
@@ -2393,6 +2663,8 @@ Optional fields:
 
 - `Message`: `str`
 - `StatusCode`: `int`
+
+<a id="endpointlocationtypedef"></a>
 
 ## EndpointLocationTypeDef
 
@@ -2408,6 +2680,8 @@ Optional fields:
 - `Longitude`: `float`
 - `PostalCode`: `str`
 - `Region`: `str`
+
+<a id="endpointmessageresulttypedef"></a>
 
 ## EndpointMessageResultTypeDef
 
@@ -2426,6 +2700,8 @@ Optional fields:
 - `MessageId`: `str`
 - `StatusMessage`: `str`
 - `UpdatedToken`: `str`
+
+<a id="endpointrequesttypedef"></a>
 
 ## EndpointRequestTypeDef
 
@@ -2447,6 +2723,8 @@ Optional fields:
 - `OptOut`: `str`
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
+
+<a id="endpointresponsetypedef"></a>
 
 ## EndpointResponseTypeDef
 
@@ -2473,6 +2751,8 @@ Optional fields:
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
 
+<a id="endpointsendconfigurationtypedef"></a>
+
 ## EndpointSendConfigurationTypeDef
 
 ```python
@@ -2487,6 +2767,8 @@ Optional fields:
 - `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `TitleOverride`: `str`
 
+<a id="endpointusertypedef"></a>
+
 ## EndpointUserTypeDef
 
 ```python
@@ -2497,6 +2779,8 @@ Optional fields:
 
 - `UserAttributes`: `Dict`\[`str`, `List`\[`str`\]\]
 - `UserId`: `str`
+
+<a id="endpointsresponsetypedef"></a>
 
 ## EndpointsResponseTypeDef
 
@@ -2509,6 +2793,8 @@ Required fields:
 - `Item`:
   `List`\[[EndpointResponseTypeDef](./type_defs.md#endpointresponsetypedef)\]
 
+<a id="eventconditiontypedef"></a>
+
 ## EventConditionTypeDef
 
 ```python
@@ -2519,6 +2805,8 @@ Optional fields:
 
 - `Dimensions`: [EventDimensionsTypeDef](./type_defs.md#eventdimensionstypedef)
 - `MessageActivity`: `str`
+
+<a id="eventdimensionstypedef"></a>
 
 ## EventDimensionsTypeDef
 
@@ -2534,6 +2822,8 @@ Optional fields:
 - `Metrics`: `Mapping`\[`str`,
   [MetricDimensionTypeDef](./type_defs.md#metricdimensiontypedef)\]
 
+<a id="eventfiltertypedef"></a>
+
 ## EventFilterTypeDef
 
 ```python
@@ -2544,6 +2834,8 @@ Required fields:
 
 - `Dimensions`: [EventDimensionsTypeDef](./type_defs.md#eventdimensionstypedef)
 - `FilterType`: [FilterTypeType](./literals.md#filtertypetype)
+
+<a id="eventitemresponsetypedef"></a>
 
 ## EventItemResponseTypeDef
 
@@ -2556,6 +2848,8 @@ Optional fields:
 - `Message`: `str`
 - `StatusCode`: `int`
 
+<a id="eventstartconditiontypedef"></a>
+
 ## EventStartConditionTypeDef
 
 ```python
@@ -2566,6 +2860,8 @@ Optional fields:
 
 - `EventFilter`: [EventFilterTypeDef](./type_defs.md#eventfiltertypedef)
 - `SegmentId`: `str`
+
+<a id="eventstreamtypedef"></a>
 
 ## EventStreamTypeDef
 
@@ -2584,6 +2880,8 @@ Optional fields:
 - `ExternalId`: `str`
 - `LastModifiedDate`: `str`
 - `LastUpdatedBy`: `str`
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -2607,6 +2905,8 @@ Optional fields:
 - `SdkName`: `str`
 - `Session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
 
+<a id="eventsbatchtypedef"></a>
+
 ## EventsBatchTypeDef
 
 ```python
@@ -2617,6 +2917,8 @@ Required fields:
 
 - `Endpoint`: [PublicEndpointTypeDef](./type_defs.md#publicendpointtypedef)
 - `Events`: `Mapping`\[`str`, [EventTypeDef](./type_defs.md#eventtypedef)\]
+
+<a id="eventsrequesttypedef"></a>
 
 ## EventsRequestTypeDef
 
@@ -2629,6 +2931,8 @@ Required fields:
 - `BatchItem`: `Mapping`\[`str`,
   [EventsBatchTypeDef](./type_defs.md#eventsbatchtypedef)\]
 
+<a id="eventsresponsetypedef"></a>
+
 ## EventsResponseTypeDef
 
 ```python
@@ -2639,6 +2943,8 @@ Optional fields:
 
 - `Results`: `Dict`\[`str`,
   [ItemResponseTypeDef](./type_defs.md#itemresponsetypedef)\]
+
+<a id="exportjobrequesttypedef"></a>
 
 ## ExportJobRequestTypeDef
 
@@ -2656,6 +2962,8 @@ Optional fields:
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
 
+<a id="exportjobresourcetypedef"></a>
+
 ## ExportJobResourceTypeDef
 
 ```python
@@ -2671,6 +2979,8 @@ Optional fields:
 
 - `SegmentId`: `str`
 - `SegmentVersion`: `int`
+
+<a id="exportjobresponsetypedef"></a>
 
 ## ExportJobResponseTypeDef
 
@@ -2698,6 +3008,8 @@ Optional fields:
 - `TotalPieces`: `int`
 - `TotalProcessed`: `int`
 
+<a id="exportjobsresponsetypedef"></a>
+
 ## ExportJobsResponseTypeDef
 
 ```python
@@ -2713,6 +3025,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="gcmchannelrequesttypedef"></a>
+
 ## GCMChannelRequestTypeDef
 
 ```python
@@ -2726,6 +3040,8 @@ Required fields:
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="gcmchannelresponsetypedef"></a>
 
 ## GCMChannelResponseTypeDef
 
@@ -2749,6 +3065,8 @@ Optional fields:
 - `LastModifiedBy`: `str`
 - `LastModifiedDate`: `str`
 - `Version`: `int`
+
+<a id="gcmmessagetypedef"></a>
 
 ## GCMMessageTypeDef
 
@@ -2776,6 +3094,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="gpscoordinatestypedef"></a>
+
 ## GPSCoordinatesTypeDef
 
 ```python
@@ -2786,6 +3106,8 @@ Required fields:
 
 - `Latitude`: `float`
 - `Longitude`: `float`
+
+<a id="gpspointdimensiontypedef"></a>
 
 ## GPSPointDimensionTypeDef
 
@@ -2801,6 +3123,8 @@ Optional fields:
 
 - `RangeInKilometers`: `float`
 
+<a id="getadmchannelrequestrequesttypedef"></a>
+
 ## GetAdmChannelRequestRequestTypeDef
 
 ```python
@@ -2810,6 +3134,8 @@ from mypy_boto3_pinpoint.type_defs import GetAdmChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getadmchannelresponsetypedef"></a>
 
 ## GetAdmChannelResponseTypeDef
 
@@ -2824,6 +3150,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapnschannelrequestrequesttypedef"></a>
+
 ## GetApnsChannelRequestRequestTypeDef
 
 ```python
@@ -2833,6 +3161,8 @@ from mypy_boto3_pinpoint.type_defs import GetApnsChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getapnschannelresponsetypedef"></a>
 
 ## GetApnsChannelResponseTypeDef
 
@@ -2847,6 +3177,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapnssandboxchannelrequestrequesttypedef"></a>
+
 ## GetApnsSandboxChannelRequestRequestTypeDef
 
 ```python
@@ -2856,6 +3188,8 @@ from mypy_boto3_pinpoint.type_defs import GetApnsSandboxChannelRequestRequestTyp
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getapnssandboxchannelresponsetypedef"></a>
 
 ## GetApnsSandboxChannelResponseTypeDef
 
@@ -2870,6 +3204,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapnsvoipchannelrequestrequesttypedef"></a>
+
 ## GetApnsVoipChannelRequestRequestTypeDef
 
 ```python
@@ -2879,6 +3215,8 @@ from mypy_boto3_pinpoint.type_defs import GetApnsVoipChannelRequestRequestTypeDe
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getapnsvoipchannelresponsetypedef"></a>
 
 ## GetApnsVoipChannelResponseTypeDef
 
@@ -2893,6 +3231,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapnsvoipsandboxchannelrequestrequesttypedef"></a>
+
 ## GetApnsVoipSandboxChannelRequestRequestTypeDef
 
 ```python
@@ -2902,6 +3242,8 @@ from mypy_boto3_pinpoint.type_defs import GetApnsVoipSandboxChannelRequestReques
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getapnsvoipsandboxchannelresponsetypedef"></a>
 
 ## GetApnsVoipSandboxChannelResponseTypeDef
 
@@ -2916,6 +3258,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapprequestrequesttypedef"></a>
+
 ## GetAppRequestRequestTypeDef
 
 ```python
@@ -2925,6 +3269,8 @@ from mypy_boto3_pinpoint.type_defs import GetAppRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getappresponsetypedef"></a>
 
 ## GetAppResponseTypeDef
 
@@ -2938,6 +3284,8 @@ Required fields:
   [ApplicationResponseTypeDef](./type_defs.md#applicationresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getapplicationdaterangekpirequestrequesttypedef"></a>
 
 ## GetApplicationDateRangeKpiRequestRequestTypeDef
 
@@ -2957,6 +3305,8 @@ Optional fields:
 - `PageSize`: `str`
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
+<a id="getapplicationdaterangekpiresponsetypedef"></a>
+
 ## GetApplicationDateRangeKpiResponseTypeDef
 
 ```python
@@ -2970,6 +3320,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getapplicationsettingsrequestrequesttypedef"></a>
+
 ## GetApplicationSettingsRequestRequestTypeDef
 
 ```python
@@ -2979,6 +3331,8 @@ from mypy_boto3_pinpoint.type_defs import GetApplicationSettingsRequestRequestTy
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getapplicationsettingsresponsetypedef"></a>
 
 ## GetApplicationSettingsResponseTypeDef
 
@@ -2993,6 +3347,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getappsrequestrequesttypedef"></a>
+
 ## GetAppsRequestRequestTypeDef
 
 ```python
@@ -3003,6 +3359,8 @@ Optional fields:
 
 - `PageSize`: `str`
 - `Token`: `str`
+
+<a id="getappsresponsetypedef"></a>
 
 ## GetAppsResponseTypeDef
 
@@ -3017,6 +3375,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getbaiduchannelrequestrequesttypedef"></a>
+
 ## GetBaiduChannelRequestRequestTypeDef
 
 ```python
@@ -3026,6 +3386,8 @@ from mypy_boto3_pinpoint.type_defs import GetBaiduChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getbaiduchannelresponsetypedef"></a>
 
 ## GetBaiduChannelResponseTypeDef
 
@@ -3039,6 +3401,8 @@ Required fields:
   [BaiduChannelResponseTypeDef](./type_defs.md#baiduchannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcampaignactivitiesrequestrequesttypedef"></a>
 
 ## GetCampaignActivitiesRequestRequestTypeDef
 
@@ -3056,6 +3420,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getcampaignactivitiesresponsetypedef"></a>
+
 ## GetCampaignActivitiesResponseTypeDef
 
 ```python
@@ -3068,6 +3434,8 @@ Required fields:
   [ActivitiesResponseTypeDef](./type_defs.md#activitiesresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcampaigndaterangekpirequestrequesttypedef"></a>
 
 ## GetCampaignDateRangeKpiRequestRequestTypeDef
 
@@ -3088,6 +3456,8 @@ Optional fields:
 - `PageSize`: `str`
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
+<a id="getcampaigndaterangekpiresponsetypedef"></a>
+
 ## GetCampaignDateRangeKpiResponseTypeDef
 
 ```python
@@ -3101,6 +3471,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcampaignrequestrequesttypedef"></a>
+
 ## GetCampaignRequestRequestTypeDef
 
 ```python
@@ -3111,6 +3483,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `CampaignId`: `str`
+
+<a id="getcampaignresponsetypedef"></a>
 
 ## GetCampaignResponseTypeDef
 
@@ -3125,6 +3499,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcampaignversionrequestrequesttypedef"></a>
+
 ## GetCampaignVersionRequestRequestTypeDef
 
 ```python
@@ -3136,6 +3512,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `CampaignId`: `str`
 - `Version`: `str`
+
+<a id="getcampaignversionresponsetypedef"></a>
 
 ## GetCampaignVersionResponseTypeDef
 
@@ -3149,6 +3527,8 @@ Required fields:
   [CampaignResponseTypeDef](./type_defs.md#campaignresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcampaignversionsrequestrequesttypedef"></a>
 
 ## GetCampaignVersionsRequestRequestTypeDef
 
@@ -3166,6 +3546,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getcampaignversionsresponsetypedef"></a>
+
 ## GetCampaignVersionsResponseTypeDef
 
 ```python
@@ -3178,6 +3560,8 @@ Required fields:
   [CampaignsResponseTypeDef](./type_defs.md#campaignsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcampaignsrequestrequesttypedef"></a>
 
 ## GetCampaignsRequestRequestTypeDef
 
@@ -3194,6 +3578,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getcampaignsresponsetypedef"></a>
+
 ## GetCampaignsResponseTypeDef
 
 ```python
@@ -3207,6 +3593,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getchannelsrequestrequesttypedef"></a>
+
 ## GetChannelsRequestRequestTypeDef
 
 ```python
@@ -3216,6 +3604,8 @@ from mypy_boto3_pinpoint.type_defs import GetChannelsRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getchannelsresponsetypedef"></a>
 
 ## GetChannelsResponseTypeDef
 
@@ -3230,6 +3620,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getemailchannelrequestrequesttypedef"></a>
+
 ## GetEmailChannelRequestRequestTypeDef
 
 ```python
@@ -3239,6 +3631,8 @@ from mypy_boto3_pinpoint.type_defs import GetEmailChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getemailchannelresponsetypedef"></a>
 
 ## GetEmailChannelResponseTypeDef
 
@@ -3252,6 +3646,8 @@ Required fields:
   [EmailChannelResponseTypeDef](./type_defs.md#emailchannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getemailtemplaterequestrequesttypedef"></a>
 
 ## GetEmailTemplateRequestRequestTypeDef
 
@@ -3267,6 +3663,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="getemailtemplateresponsetypedef"></a>
+
 ## GetEmailTemplateResponseTypeDef
 
 ```python
@@ -3280,6 +3678,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getendpointrequestrequesttypedef"></a>
+
 ## GetEndpointRequestRequestTypeDef
 
 ```python
@@ -3290,6 +3690,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `EndpointId`: `str`
+
+<a id="getendpointresponsetypedef"></a>
 
 ## GetEndpointResponseTypeDef
 
@@ -3304,6 +3706,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="geteventstreamrequestrequesttypedef"></a>
+
 ## GetEventStreamRequestRequestTypeDef
 
 ```python
@@ -3313,6 +3717,8 @@ from mypy_boto3_pinpoint.type_defs import GetEventStreamRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="geteventstreamresponsetypedef"></a>
 
 ## GetEventStreamResponseTypeDef
 
@@ -3326,6 +3732,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getexportjobrequestrequesttypedef"></a>
+
 ## GetExportJobRequestRequestTypeDef
 
 ```python
@@ -3336,6 +3744,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `JobId`: `str`
+
+<a id="getexportjobresponsetypedef"></a>
 
 ## GetExportJobResponseTypeDef
 
@@ -3349,6 +3759,8 @@ Required fields:
   [ExportJobResponseTypeDef](./type_defs.md#exportjobresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getexportjobsrequestrequesttypedef"></a>
 
 ## GetExportJobsRequestRequestTypeDef
 
@@ -3365,6 +3777,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getexportjobsresponsetypedef"></a>
+
 ## GetExportJobsResponseTypeDef
 
 ```python
@@ -3378,6 +3792,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getgcmchannelrequestrequesttypedef"></a>
+
 ## GetGcmChannelRequestRequestTypeDef
 
 ```python
@@ -3387,6 +3803,8 @@ from mypy_boto3_pinpoint.type_defs import GetGcmChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getgcmchannelresponsetypedef"></a>
 
 ## GetGcmChannelResponseTypeDef
 
@@ -3401,6 +3819,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getimportjobrequestrequesttypedef"></a>
+
 ## GetImportJobRequestRequestTypeDef
 
 ```python
@@ -3411,6 +3831,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `JobId`: `str`
+
+<a id="getimportjobresponsetypedef"></a>
 
 ## GetImportJobResponseTypeDef
 
@@ -3424,6 +3846,8 @@ Required fields:
   [ImportJobResponseTypeDef](./type_defs.md#importjobresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getimportjobsrequestrequesttypedef"></a>
 
 ## GetImportJobsRequestRequestTypeDef
 
@@ -3440,6 +3864,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getimportjobsresponsetypedef"></a>
+
 ## GetImportJobsResponseTypeDef
 
 ```python
@@ -3453,6 +3879,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinappmessagesrequestrequesttypedef"></a>
+
 ## GetInAppMessagesRequestRequestTypeDef
 
 ```python
@@ -3463,6 +3891,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `EndpointId`: `str`
+
+<a id="getinappmessagesresponsetypedef"></a>
 
 ## GetInAppMessagesResponseTypeDef
 
@@ -3476,6 +3906,8 @@ Required fields:
   [InAppMessagesResponseTypeDef](./type_defs.md#inappmessagesresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinapptemplaterequestrequesttypedef"></a>
 
 ## GetInAppTemplateRequestRequestTypeDef
 
@@ -3491,6 +3923,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="getinapptemplateresponsetypedef"></a>
+
 ## GetInAppTemplateResponseTypeDef
 
 ```python
@@ -3503,6 +3937,8 @@ Required fields:
   [InAppTemplateResponseTypeDef](./type_defs.md#inapptemplateresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getjourneydaterangekpirequestrequesttypedef"></a>
 
 ## GetJourneyDateRangeKpiRequestRequestTypeDef
 
@@ -3523,6 +3959,8 @@ Optional fields:
 - `PageSize`: `str`
 - `StartTime`: `Union`\[`datetime`, `str`\]
 
+<a id="getjourneydaterangekpiresponsetypedef"></a>
+
 ## GetJourneyDateRangeKpiResponseTypeDef
 
 ```python
@@ -3535,6 +3973,8 @@ Required fields:
   [JourneyDateRangeKpiResponseTypeDef](./type_defs.md#journeydaterangekpiresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getjourneyexecutionactivitymetricsrequestrequesttypedef"></a>
 
 ## GetJourneyExecutionActivityMetricsRequestRequestTypeDef
 
@@ -3553,6 +3993,8 @@ Optional fields:
 - `NextToken`: `str`
 - `PageSize`: `str`
 
+<a id="getjourneyexecutionactivitymetricsresponsetypedef"></a>
+
 ## GetJourneyExecutionActivityMetricsResponseTypeDef
 
 ```python
@@ -3565,6 +4007,8 @@ Required fields:
   [JourneyExecutionActivityMetricsResponseTypeDef](./type_defs.md#journeyexecutionactivitymetricsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getjourneyexecutionmetricsrequestrequesttypedef"></a>
 
 ## GetJourneyExecutionMetricsRequestRequestTypeDef
 
@@ -3582,6 +4026,8 @@ Optional fields:
 - `NextToken`: `str`
 - `PageSize`: `str`
 
+<a id="getjourneyexecutionmetricsresponsetypedef"></a>
+
 ## GetJourneyExecutionMetricsResponseTypeDef
 
 ```python
@@ -3595,6 +4041,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjourneyrequestrequesttypedef"></a>
+
 ## GetJourneyRequestRequestTypeDef
 
 ```python
@@ -3605,6 +4053,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `JourneyId`: `str`
+
+<a id="getjourneyresponsetypedef"></a>
 
 ## GetJourneyResponseTypeDef
 
@@ -3618,6 +4068,8 @@ Required fields:
   [JourneyResponseTypeDef](./type_defs.md#journeyresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpushtemplaterequestrequesttypedef"></a>
 
 ## GetPushTemplateRequestRequestTypeDef
 
@@ -3633,6 +4085,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="getpushtemplateresponsetypedef"></a>
+
 ## GetPushTemplateResponseTypeDef
 
 ```python
@@ -3646,6 +4100,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecommenderconfigurationrequestrequesttypedef"></a>
+
 ## GetRecommenderConfigurationRequestRequestTypeDef
 
 ```python
@@ -3655,6 +4111,8 @@ from mypy_boto3_pinpoint.type_defs import GetRecommenderConfigurationRequestRequ
 Required fields:
 
 - `RecommenderId`: `str`
+
+<a id="getrecommenderconfigurationresponsetypedef"></a>
 
 ## GetRecommenderConfigurationResponseTypeDef
 
@@ -3669,6 +4127,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getrecommenderconfigurationsrequestrequesttypedef"></a>
+
 ## GetRecommenderConfigurationsRequestRequestTypeDef
 
 ```python
@@ -3679,6 +4139,8 @@ Optional fields:
 
 - `PageSize`: `str`
 - `Token`: `str`
+
+<a id="getrecommenderconfigurationsresponsetypedef"></a>
 
 ## GetRecommenderConfigurationsResponseTypeDef
 
@@ -3692,6 +4154,8 @@ Required fields:
   [ListRecommenderConfigurationsResponseTypeDef](./type_defs.md#listrecommenderconfigurationsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsegmentexportjobsrequestrequesttypedef"></a>
 
 ## GetSegmentExportJobsRequestRequestTypeDef
 
@@ -3709,6 +4173,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getsegmentexportjobsresponsetypedef"></a>
+
 ## GetSegmentExportJobsResponseTypeDef
 
 ```python
@@ -3721,6 +4187,8 @@ Required fields:
   [ExportJobsResponseTypeDef](./type_defs.md#exportjobsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsegmentimportjobsrequestrequesttypedef"></a>
 
 ## GetSegmentImportJobsRequestRequestTypeDef
 
@@ -3738,6 +4206,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getsegmentimportjobsresponsetypedef"></a>
+
 ## GetSegmentImportJobsResponseTypeDef
 
 ```python
@@ -3751,6 +4221,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsegmentrequestrequesttypedef"></a>
+
 ## GetSegmentRequestRequestTypeDef
 
 ```python
@@ -3761,6 +4233,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `SegmentId`: `str`
+
+<a id="getsegmentresponsetypedef"></a>
 
 ## GetSegmentResponseTypeDef
 
@@ -3775,6 +4249,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsegmentversionrequestrequesttypedef"></a>
+
 ## GetSegmentVersionRequestRequestTypeDef
 
 ```python
@@ -3786,6 +4262,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `SegmentId`: `str`
 - `Version`: `str`
+
+<a id="getsegmentversionresponsetypedef"></a>
 
 ## GetSegmentVersionResponseTypeDef
 
@@ -3799,6 +4277,8 @@ Required fields:
   [SegmentResponseTypeDef](./type_defs.md#segmentresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsegmentversionsrequestrequesttypedef"></a>
 
 ## GetSegmentVersionsRequestRequestTypeDef
 
@@ -3816,6 +4296,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getsegmentversionsresponsetypedef"></a>
+
 ## GetSegmentVersionsResponseTypeDef
 
 ```python
@@ -3828,6 +4310,8 @@ Required fields:
   [SegmentsResponseTypeDef](./type_defs.md#segmentsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsegmentsrequestrequesttypedef"></a>
 
 ## GetSegmentsRequestRequestTypeDef
 
@@ -3844,6 +4328,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="getsegmentsresponsetypedef"></a>
+
 ## GetSegmentsResponseTypeDef
 
 ```python
@@ -3857,6 +4343,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsmschannelrequestrequesttypedef"></a>
+
 ## GetSmsChannelRequestRequestTypeDef
 
 ```python
@@ -3866,6 +4354,8 @@ from mypy_boto3_pinpoint.type_defs import GetSmsChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getsmschannelresponsetypedef"></a>
 
 ## GetSmsChannelResponseTypeDef
 
@@ -3879,6 +4369,8 @@ Required fields:
   [SMSChannelResponseTypeDef](./type_defs.md#smschannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsmstemplaterequestrequesttypedef"></a>
 
 ## GetSmsTemplateRequestRequestTypeDef
 
@@ -3894,6 +4386,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="getsmstemplateresponsetypedef"></a>
+
 ## GetSmsTemplateResponseTypeDef
 
 ```python
@@ -3907,6 +4401,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getuserendpointsrequestrequesttypedef"></a>
+
 ## GetUserEndpointsRequestRequestTypeDef
 
 ```python
@@ -3917,6 +4413,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `UserId`: `str`
+
+<a id="getuserendpointsresponsetypedef"></a>
 
 ## GetUserEndpointsResponseTypeDef
 
@@ -3931,6 +4429,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getvoicechannelrequestrequesttypedef"></a>
+
 ## GetVoiceChannelRequestRequestTypeDef
 
 ```python
@@ -3940,6 +4440,8 @@ from mypy_boto3_pinpoint.type_defs import GetVoiceChannelRequestRequestTypeDef
 Required fields:
 
 - `ApplicationId`: `str`
+
+<a id="getvoicechannelresponsetypedef"></a>
 
 ## GetVoiceChannelResponseTypeDef
 
@@ -3953,6 +4455,8 @@ Required fields:
   [VoiceChannelResponseTypeDef](./type_defs.md#voicechannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getvoicetemplaterequestrequesttypedef"></a>
 
 ## GetVoiceTemplateRequestRequestTypeDef
 
@@ -3968,6 +4472,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="getvoicetemplateresponsetypedef"></a>
+
 ## GetVoiceTemplateResponseTypeDef
 
 ```python
@@ -3980,6 +4486,8 @@ Required fields:
   [VoiceTemplateResponseTypeDef](./type_defs.md#voicetemplateresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="holdoutactivitytypedef"></a>
 
 ## HoldoutActivityTypeDef
 
@@ -3994,6 +4502,8 @@ Required fields:
 Optional fields:
 
 - `NextActivity`: `str`
+
+<a id="importjobrequesttypedef"></a>
 
 ## ImportJobRequestTypeDef
 
@@ -4015,6 +4525,8 @@ Optional fields:
 - `SegmentId`: `str`
 - `SegmentName`: `str`
 
+<a id="importjobresourcetypedef"></a>
+
 ## ImportJobResourceTypeDef
 
 ```python
@@ -4034,6 +4546,8 @@ Optional fields:
 - `RegisterEndpoints`: `bool`
 - `SegmentId`: `str`
 - `SegmentName`: `str`
+
+<a id="importjobresponsetypedef"></a>
 
 ## ImportJobResponseTypeDef
 
@@ -4061,6 +4575,8 @@ Optional fields:
 - `TotalPieces`: `int`
 - `TotalProcessed`: `int`
 
+<a id="importjobsresponsetypedef"></a>
+
 ## ImportJobsResponseTypeDef
 
 ```python
@@ -4076,6 +4592,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="inappcampaignscheduletypedef"></a>
+
 ## InAppCampaignScheduleTypeDef
 
 ```python
@@ -4089,6 +4607,8 @@ Optional fields:
   [CampaignEventFilterTypeDef](./type_defs.md#campaigneventfiltertypedef)
 - `QuietTime`: [QuietTimeTypeDef](./type_defs.md#quiettimetypedef)
 
+<a id="inappmessagebodyconfigtypedef"></a>
+
 ## InAppMessageBodyConfigTypeDef
 
 ```python
@@ -4100,6 +4620,8 @@ Required fields:
 - `Alignment`: [AlignmentType](./literals.md#alignmenttype)
 - `Body`: `str`
 - `TextColor`: `str`
+
+<a id="inappmessagebuttontypedef"></a>
 
 ## InAppMessageButtonTypeDef
 
@@ -4118,6 +4640,8 @@ Optional fields:
 - `Web`:
   [OverrideButtonConfigurationTypeDef](./type_defs.md#overridebuttonconfigurationtypedef)
 
+<a id="inappmessagecampaigntypedef"></a>
+
 ## InAppMessageCampaignTypeDef
 
 ```python
@@ -4135,6 +4659,8 @@ Optional fields:
 - `SessionCap`: `int`
 - `TotalCap`: `int`
 - `TreatmentId`: `str`
+
+<a id="inappmessagecontenttypedef"></a>
 
 ## InAppMessageContentTypeDef
 
@@ -4155,6 +4681,8 @@ Optional fields:
 - `SecondaryBtn`:
   [InAppMessageButtonTypeDef](./type_defs.md#inappmessagebuttontypedef)
 
+<a id="inappmessageheaderconfigtypedef"></a>
+
 ## InAppMessageHeaderConfigTypeDef
 
 ```python
@@ -4166,6 +4694,8 @@ Required fields:
 - `Alignment`: [AlignmentType](./literals.md#alignmenttype)
 - `Header`: `str`
 - `TextColor`: `str`
+
+<a id="inappmessagetypedef"></a>
 
 ## InAppMessageTypeDef
 
@@ -4180,6 +4710,8 @@ Optional fields:
 - `CustomConfig`: `Dict`\[`str`, `str`\]
 - `Layout`: [LayoutType](./literals.md#layouttype)
 
+<a id="inappmessagesresponsetypedef"></a>
+
 ## InAppMessagesResponseTypeDef
 
 ```python
@@ -4190,6 +4722,8 @@ Optional fields:
 
 - `InAppMessageCampaigns`:
   `List`\[[InAppMessageCampaignTypeDef](./type_defs.md#inappmessagecampaigntypedef)\]
+
+<a id="inapptemplaterequesttypedef"></a>
 
 ## InAppTemplateRequestTypeDef
 
@@ -4205,6 +4739,8 @@ Optional fields:
 - `Layout`: [LayoutType](./literals.md#layouttype)
 - `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
+
+<a id="inapptemplateresponsetypedef"></a>
 
 ## InAppTemplateResponseTypeDef
 
@@ -4230,6 +4766,8 @@ Optional fields:
 - `TemplateDescription`: `str`
 - `Version`: `str`
 
+<a id="itemresponsetypedef"></a>
+
 ## ItemResponseTypeDef
 
 ```python
@@ -4243,6 +4781,8 @@ Optional fields:
 - `EventsItemResponse`: `Dict`\[`str`,
   [EventItemResponseTypeDef](./type_defs.md#eventitemresponsetypedef)\]
 
+<a id="journeychannelsettingstypedef"></a>
+
 ## JourneyChannelSettingsTypeDef
 
 ```python
@@ -4254,6 +4794,8 @@ Optional fields:
 - `ConnectCampaignArn`: `str`
 - `ConnectCampaignExecutionRoleArn`: `str`
 
+<a id="journeycustommessagetypedef"></a>
+
 ## JourneyCustomMessageTypeDef
 
 ```python
@@ -4263,6 +4805,8 @@ from mypy_boto3_pinpoint.type_defs import JourneyCustomMessageTypeDef
 Optional fields:
 
 - `Data`: `str`
+
+<a id="journeydaterangekpiresponsetypedef"></a>
 
 ## JourneyDateRangeKpiResponseTypeDef
 
@@ -4283,6 +4827,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="journeyemailmessagetypedef"></a>
+
 ## JourneyEmailMessageTypeDef
 
 ```python
@@ -4292,6 +4838,8 @@ from mypy_boto3_pinpoint.type_defs import JourneyEmailMessageTypeDef
 Optional fields:
 
 - `FromAddress`: `str`
+
+<a id="journeyexecutionactivitymetricsresponsetypedef"></a>
 
 ## JourneyExecutionActivityMetricsResponseTypeDef
 
@@ -4308,6 +4856,8 @@ Required fields:
 - `LastEvaluatedTime`: `str`
 - `Metrics`: `Dict`\[`str`, `str`\]
 
+<a id="journeyexecutionmetricsresponsetypedef"></a>
+
 ## JourneyExecutionMetricsResponseTypeDef
 
 ```python
@@ -4320,6 +4870,8 @@ Required fields:
 - `JourneyId`: `str`
 - `LastEvaluatedTime`: `str`
 - `Metrics`: `Dict`\[`str`, `str`\]
+
+<a id="journeylimitstypedef"></a>
 
 ## JourneyLimitsTypeDef
 
@@ -4334,6 +4886,8 @@ Optional fields:
 - `MessagesPerSecond`: `int`
 - `EndpointReentryInterval`: `str`
 
+<a id="journeypushmessagetypedef"></a>
+
 ## JourneyPushMessageTypeDef
 
 ```python
@@ -4343,6 +4897,8 @@ from mypy_boto3_pinpoint.type_defs import JourneyPushMessageTypeDef
 Optional fields:
 
 - `TimeToLive`: `str`
+
+<a id="journeyresponsetypedef"></a>
 
 ## JourneyResponseTypeDef
 
@@ -4377,6 +4933,8 @@ Optional fields:
 - `JourneyChannelSettings`:
   [JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef)
 
+<a id="journeysmsmessagetypedef"></a>
+
 ## JourneySMSMessageTypeDef
 
 ```python
@@ -4391,6 +4949,8 @@ Optional fields:
 - `EntityId`: `str`
 - `TemplateId`: `str`
 
+<a id="journeyscheduletypedef"></a>
+
 ## JourneyScheduleTypeDef
 
 ```python
@@ -4403,6 +4963,8 @@ Optional fields:
 - `StartTime`: `Union`\[`datetime`, `str`\]
 - `Timezone`: `str`
 
+<a id="journeystaterequesttypedef"></a>
+
 ## JourneyStateRequestTypeDef
 
 ```python
@@ -4412,6 +4974,8 @@ from mypy_boto3_pinpoint.type_defs import JourneyStateRequestTypeDef
 Optional fields:
 
 - `State`: [StateType](./literals.md#statetype)
+
+<a id="journeysresponsetypedef"></a>
 
 ## JourneysResponseTypeDef
 
@@ -4428,6 +4992,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listjourneysrequestrequesttypedef"></a>
+
 ## ListJourneysRequestRequestTypeDef
 
 ```python
@@ -4443,6 +5009,8 @@ Optional fields:
 - `PageSize`: `str`
 - `Token`: `str`
 
+<a id="listjourneysresponsetypedef"></a>
+
 ## ListJourneysResponseTypeDef
 
 ```python
@@ -4455,6 +5023,8 @@ Required fields:
   [JourneysResponseTypeDef](./type_defs.md#journeysresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecommenderconfigurationsresponsetypedef"></a>
 
 ## ListRecommenderConfigurationsResponseTypeDef
 
@@ -4471,6 +5041,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -4480,6 +5052,8 @@ from mypy_boto3_pinpoint.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -4492,6 +5066,8 @@ Required fields:
 - `TagsModel`: [TagsModelTypeDef](./type_defs.md#tagsmodeltypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtemplateversionsrequestrequesttypedef"></a>
 
 ## ListTemplateVersionsRequestRequestTypeDef
 
@@ -4509,6 +5085,8 @@ Optional fields:
 - `NextToken`: `str`
 - `PageSize`: `str`
 
+<a id="listtemplateversionsresponsetypedef"></a>
+
 ## ListTemplateVersionsResponseTypeDef
 
 ```python
@@ -4521,6 +5099,8 @@ Required fields:
   [TemplateVersionsResponseTypeDef](./type_defs.md#templateversionsresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtemplatesrequestrequesttypedef"></a>
 
 ## ListTemplatesRequestRequestTypeDef
 
@@ -4535,6 +5115,8 @@ Optional fields:
 - `Prefix`: `str`
 - `TemplateType`: `str`
 
+<a id="listtemplatesresponsetypedef"></a>
+
 ## ListTemplatesResponseTypeDef
 
 ```python
@@ -4548,6 +5130,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="messagebodytypedef"></a>
+
 ## MessageBodyTypeDef
 
 ```python
@@ -4558,6 +5142,8 @@ Optional fields:
 
 - `Message`: `str`
 - `RequestID`: `str`
+
+<a id="messageconfigurationtypedef"></a>
 
 ## MessageConfigurationTypeDef
 
@@ -4581,6 +5167,8 @@ Optional fields:
 - `InAppMessage`:
   [CampaignInAppMessageTypeDef](./type_defs.md#campaigninappmessagetypedef)
 
+<a id="messagerequesttypedef"></a>
+
 ## MessageRequestTypeDef
 
 ```python
@@ -4603,6 +5191,8 @@ Optional fields:
   [TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef)
 - `TraceId`: `str`
 
+<a id="messageresponsetypedef"></a>
+
 ## MessageResponseTypeDef
 
 ```python
@@ -4621,6 +5211,8 @@ Optional fields:
 - `Result`: `Dict`\[`str`,
   [MessageResultTypeDef](./type_defs.md#messageresulttypedef)\]
 
+<a id="messageresulttypedef"></a>
+
 ## MessageResultTypeDef
 
 ```python
@@ -4637,6 +5229,8 @@ Optional fields:
 - `MessageId`: `str`
 - `StatusMessage`: `str`
 - `UpdatedToken`: `str`
+
+<a id="messagetypedef"></a>
 
 ## MessageTypeDef
 
@@ -4659,6 +5253,8 @@ Optional fields:
 - `Title`: `str`
 - `Url`: `str`
 
+<a id="metricdimensiontypedef"></a>
+
 ## MetricDimensionTypeDef
 
 ```python
@@ -4670,6 +5266,8 @@ Required fields:
 - `ComparisonOperator`: `str`
 - `Value`: `float`
 
+<a id="multiconditionalbranchtypedef"></a>
+
 ## MultiConditionalBranchTypeDef
 
 ```python
@@ -4680,6 +5278,8 @@ Optional fields:
 
 - `Condition`: [SimpleConditionTypeDef](./type_defs.md#simpleconditiontypedef)
 - `NextActivity`: `str`
+
+<a id="multiconditionalsplitactivitytypedef"></a>
 
 ## MultiConditionalSplitActivityTypeDef
 
@@ -4694,6 +5294,8 @@ Optional fields:
 - `DefaultActivity`: `str`
 - `EvaluationWaitTime`: [WaitTimeTypeDef](./type_defs.md#waittimetypedef)
 
+<a id="numbervalidaterequesttypedef"></a>
+
 ## NumberValidateRequestTypeDef
 
 ```python
@@ -4704,6 +5306,8 @@ Optional fields:
 
 - `IsoCountryCode`: `str`
 - `PhoneNumber`: `str`
+
+<a id="numbervalidateresponsetypedef"></a>
 
 ## NumberValidateResponseTypeDef
 
@@ -4728,6 +5332,8 @@ Optional fields:
 - `Timezone`: `str`
 - `ZipCode`: `str`
 
+<a id="overridebuttonconfigurationtypedef"></a>
+
 ## OverrideButtonConfigurationTypeDef
 
 ```python
@@ -4742,6 +5348,8 @@ Optional fields:
 
 - `Link`: `str`
 
+<a id="phonenumbervalidaterequestrequesttypedef"></a>
+
 ## PhoneNumberValidateRequestRequestTypeDef
 
 ```python
@@ -4752,6 +5360,8 @@ Required fields:
 
 - `NumberValidateRequest`:
   [NumberValidateRequestTypeDef](./type_defs.md#numbervalidaterequesttypedef)
+
+<a id="phonenumbervalidateresponsetypedef"></a>
 
 ## PhoneNumberValidateResponseTypeDef
 
@@ -4765,6 +5375,8 @@ Required fields:
   [NumberValidateResponseTypeDef](./type_defs.md#numbervalidateresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="publicendpointtypedef"></a>
 
 ## PublicEndpointTypeDef
 
@@ -4787,6 +5399,8 @@ Optional fields:
 - `RequestId`: `str`
 - `User`: [EndpointUserTypeDef](./type_defs.md#endpointusertypedef)
 
+<a id="pushmessageactivitytypedef"></a>
+
 ## PushMessageActivityTypeDef
 
 ```python
@@ -4800,6 +5414,8 @@ Optional fields:
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
+
+<a id="pushnotificationtemplaterequesttypedef"></a>
 
 ## PushNotificationTemplateRequestTypeDef
 
@@ -4823,6 +5439,8 @@ Optional fields:
 - `RecommenderId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
+
+<a id="pushnotificationtemplateresponsetypedef"></a>
 
 ## PushNotificationTemplateResponseTypeDef
 
@@ -4856,6 +5474,8 @@ Optional fields:
 - `TemplateDescription`: `str`
 - `Version`: `str`
 
+<a id="puteventstreamrequestrequesttypedef"></a>
+
 ## PutEventStreamRequestRequestTypeDef
 
 ```python
@@ -4867,6 +5487,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `WriteEventStream`:
   [WriteEventStreamTypeDef](./type_defs.md#writeeventstreamtypedef)
+
+<a id="puteventstreamresponsetypedef"></a>
 
 ## PutEventStreamResponseTypeDef
 
@@ -4880,6 +5502,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="puteventsrequestrequesttypedef"></a>
+
 ## PutEventsRequestRequestTypeDef
 
 ```python
@@ -4890,6 +5514,8 @@ Required fields:
 
 - `ApplicationId`: `str`
 - `EventsRequest`: [EventsRequestTypeDef](./type_defs.md#eventsrequesttypedef)
+
+<a id="puteventsresponsetypedef"></a>
 
 ## PutEventsResponseTypeDef
 
@@ -4904,6 +5530,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="quiettimetypedef"></a>
+
 ## QuietTimeTypeDef
 
 ```python
@@ -4914,6 +5542,8 @@ Optional fields:
 
 - `End`: `str`
 - `Start`: `str`
+
+<a id="randomsplitactivitytypedef"></a>
 
 ## RandomSplitActivityTypeDef
 
@@ -4926,6 +5556,8 @@ Optional fields:
 - `Branches`:
   `Sequence`\[[RandomSplitEntryTypeDef](./type_defs.md#randomsplitentrytypedef)\]
 
+<a id="randomsplitentrytypedef"></a>
+
 ## RandomSplitEntryTypeDef
 
 ```python
@@ -4937,6 +5569,8 @@ Optional fields:
 - `NextActivity`: `str`
 - `Percentage`: `int`
 
+<a id="rawemailtypedef"></a>
+
 ## RawEmailTypeDef
 
 ```python
@@ -4946,6 +5580,8 @@ from mypy_boto3_pinpoint.type_defs import RawEmailTypeDef
 Optional fields:
 
 - `Data`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="recencydimensiontypedef"></a>
 
 ## RecencyDimensionTypeDef
 
@@ -4957,6 +5593,8 @@ Required fields:
 
 - `Duration`: [DurationType](./literals.md#durationtype)
 - `RecencyType`: [RecencyTypeType](./literals.md#recencytypetype)
+
+<a id="recommenderconfigurationresponsetypedef"></a>
 
 ## RecommenderConfigurationResponseTypeDef
 
@@ -4982,6 +5620,8 @@ Optional fields:
 - `RecommendationsDisplayName`: `str`
 - `RecommendationsPerMessage`: `int`
 
+<a id="removeattributesrequestrequesttypedef"></a>
+
 ## RemoveAttributesRequestRequestTypeDef
 
 ```python
@@ -4995,6 +5635,8 @@ Required fields:
 - `UpdateAttributesRequest`:
   [UpdateAttributesRequestTypeDef](./type_defs.md#updateattributesrequesttypedef)
 
+<a id="removeattributesresponsetypedef"></a>
+
 ## RemoveAttributesResponseTypeDef
 
 ```python
@@ -5007,6 +5649,8 @@ Required fields:
   [AttributesResourceTypeDef](./type_defs.md#attributesresourcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -5022,6 +5666,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultrowtypedef"></a>
+
 ## ResultRowTypeDef
 
 ```python
@@ -5035,6 +5681,8 @@ Required fields:
 - `Values`:
   `List`\[[ResultRowValueTypeDef](./type_defs.md#resultrowvaluetypedef)\]
 
+<a id="resultrowvaluetypedef"></a>
+
 ## ResultRowValueTypeDef
 
 ```python
@@ -5047,6 +5695,8 @@ Required fields:
 - `Type`: `str`
 - `Value`: `str`
 
+<a id="smschannelrequesttypedef"></a>
+
 ## SMSChannelRequestTypeDef
 
 ```python
@@ -5058,6 +5708,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `SenderId`: `str`
 - `ShortCode`: `str`
+
+<a id="smschannelresponsetypedef"></a>
 
 ## SMSChannelResponseTypeDef
 
@@ -5085,6 +5737,8 @@ Optional fields:
 - `TransactionalMessagesPerSecond`: `int`
 - `Version`: `int`
 
+<a id="smsmessageactivitytypedef"></a>
+
 ## SMSMessageActivityTypeDef
 
 ```python
@@ -5098,6 +5752,8 @@ Optional fields:
 - `NextActivity`: `str`
 - `TemplateName`: `str`
 - `TemplateVersion`: `str`
+
+<a id="smsmessagetypedef"></a>
 
 ## SMSMessageTypeDef
 
@@ -5117,6 +5773,8 @@ Optional fields:
 - `EntityId`: `str`
 - `TemplateId`: `str`
 
+<a id="smstemplaterequesttypedef"></a>
+
 ## SMSTemplateRequestTypeDef
 
 ```python
@@ -5130,6 +5788,8 @@ Optional fields:
 - `RecommenderId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
+
+<a id="smstemplateresponsetypedef"></a>
 
 ## SMSTemplateResponseTypeDef
 
@@ -5154,6 +5814,8 @@ Optional fields:
 - `TemplateDescription`: `str`
 - `Version`: `str`
 
+<a id="scheduletypedef"></a>
+
 ## ScheduleTypeDef
 
 ```python
@@ -5174,6 +5836,8 @@ Optional fields:
 - `QuietTime`: [QuietTimeTypeDef](./type_defs.md#quiettimetypedef)
 - `Timezone`: `str`
 
+<a id="segmentbehaviorstypedef"></a>
+
 ## SegmentBehaviorsTypeDef
 
 ```python
@@ -5184,6 +5848,8 @@ Optional fields:
 
 - `Recency`: [RecencyDimensionTypeDef](./type_defs.md#recencydimensiontypedef)
 
+<a id="segmentconditiontypedef"></a>
+
 ## SegmentConditionTypeDef
 
 ```python
@@ -5193,6 +5859,8 @@ from mypy_boto3_pinpoint.type_defs import SegmentConditionTypeDef
 Required fields:
 
 - `SegmentId`: `str`
+
+<a id="segmentdemographicstypedef"></a>
 
 ## SegmentDemographicsTypeDef
 
@@ -5208,6 +5876,8 @@ Optional fields:
 - `Make`: [SetDimensionTypeDef](./type_defs.md#setdimensiontypedef)
 - `Model`: [SetDimensionTypeDef](./type_defs.md#setdimensiontypedef)
 - `Platform`: [SetDimensionTypeDef](./type_defs.md#setdimensiontypedef)
+
+<a id="segmentdimensionstypedef"></a>
 
 ## SegmentDimensionsTypeDef
 
@@ -5228,6 +5898,8 @@ Optional fields:
 - `UserAttributes`: `Mapping`\[`str`,
   [AttributeDimensionTypeDef](./type_defs.md#attributedimensiontypedef)\]
 
+<a id="segmentgrouplisttypedef"></a>
+
 ## SegmentGroupListTypeDef
 
 ```python
@@ -5239,6 +5911,8 @@ Optional fields:
 - `Groups`:
   `Sequence`\[[SegmentGroupTypeDef](./type_defs.md#segmentgrouptypedef)\]
 - `Include`: [IncludeType](./literals.md#includetype)
+
+<a id="segmentgrouptypedef"></a>
 
 ## SegmentGroupTypeDef
 
@@ -5254,6 +5928,8 @@ Optional fields:
   `Sequence`\[[SegmentReferenceTypeDef](./type_defs.md#segmentreferencetypedef)\]
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="segmentimportresourcetypedef"></a>
 
 ## SegmentImportResourceTypeDef
 
@@ -5273,6 +5949,8 @@ Optional fields:
 
 - `ChannelCounts`: `Dict`\[`str`, `int`\]
 
+<a id="segmentlocationtypedef"></a>
+
 ## SegmentLocationTypeDef
 
 ```python
@@ -5284,6 +5962,8 @@ Optional fields:
 - `Country`: [SetDimensionTypeDef](./type_defs.md#setdimensiontypedef)
 - `GPSPoint`:
   [GPSPointDimensionTypeDef](./type_defs.md#gpspointdimensiontypedef)
+
+<a id="segmentreferencetypedef"></a>
 
 ## SegmentReferenceTypeDef
 
@@ -5298,6 +5978,8 @@ Required fields:
 Optional fields:
 
 - `Version`: `int`
+
+<a id="segmentresponsetypedef"></a>
 
 ## SegmentResponseTypeDef
 
@@ -5326,6 +6008,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `Version`: `int`
 
+<a id="segmentsresponsetypedef"></a>
+
 ## SegmentsResponseTypeDef
 
 ```python
@@ -5341,6 +6025,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="sendmessagesrequestrequesttypedef"></a>
+
 ## SendMessagesRequestRequestTypeDef
 
 ```python
@@ -5352,6 +6038,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `MessageRequest`:
   [MessageRequestTypeDef](./type_defs.md#messagerequesttypedef)
+
+<a id="sendmessagesresponsetypedef"></a>
 
 ## SendMessagesResponseTypeDef
 
@@ -5365,6 +6053,8 @@ Required fields:
   [MessageResponseTypeDef](./type_defs.md#messageresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendotpmessagerequestparameterstypedef"></a>
 
 ## SendOTPMessageRequestParametersTypeDef
 
@@ -5389,6 +6079,8 @@ Optional fields:
 - `TemplateId`: `str`
 - `ValidityPeriod`: `int`
 
+<a id="sendotpmessagerequestrequesttypedef"></a>
+
 ## SendOTPMessageRequestRequestTypeDef
 
 ```python
@@ -5400,6 +6092,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `SendOTPMessageRequestParameters`:
   [SendOTPMessageRequestParametersTypeDef](./type_defs.md#sendotpmessagerequestparameterstypedef)
+
+<a id="sendotpmessageresponsetypedef"></a>
 
 ## SendOTPMessageResponseTypeDef
 
@@ -5413,6 +6107,8 @@ Required fields:
   [MessageResponseTypeDef](./type_defs.md#messageresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendusersmessagerequesttypedef"></a>
 
 ## SendUsersMessageRequestTypeDef
 
@@ -5434,6 +6130,8 @@ Optional fields:
   [TemplateConfigurationTypeDef](./type_defs.md#templateconfigurationtypedef)
 - `TraceId`: `str`
 
+<a id="sendusersmessageresponsetypedef"></a>
+
 ## SendUsersMessageResponseTypeDef
 
 ```python
@@ -5450,6 +6148,8 @@ Optional fields:
 - `Result`: `Dict`\[`str`, `Dict`\[`str`,
   [EndpointMessageResultTypeDef](./type_defs.md#endpointmessageresulttypedef)\]\]
 
+<a id="sendusersmessagesrequestrequesttypedef"></a>
+
 ## SendUsersMessagesRequestRequestTypeDef
 
 ```python
@@ -5461,6 +6161,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `SendUsersMessageRequest`:
   [SendUsersMessageRequestTypeDef](./type_defs.md#sendusersmessagerequesttypedef)
+
+<a id="sendusersmessagesresponsetypedef"></a>
 
 ## SendUsersMessagesResponseTypeDef
 
@@ -5474,6 +6176,8 @@ Required fields:
   [SendUsersMessageResponseTypeDef](./type_defs.md#sendusersmessageresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sessiontypedef"></a>
 
 ## SessionTypeDef
 
@@ -5491,6 +6195,8 @@ Optional fields:
 - `Duration`: `int`
 - `StopTimestamp`: `str`
 
+<a id="setdimensiontypedef"></a>
+
 ## SetDimensionTypeDef
 
 ```python
@@ -5504,6 +6210,8 @@ Required fields:
 Optional fields:
 
 - `DimensionType`: [DimensionTypeType](./literals.md#dimensiontypetype)
+
+<a id="simpleconditiontypedef"></a>
 
 ## SimpleConditionTypeDef
 
@@ -5520,6 +6228,8 @@ Optional fields:
 - `SegmentDimensions`:
   [SegmentDimensionsTypeDef](./type_defs.md#segmentdimensionstypedef)
 
+<a id="simpleemailparttypedef"></a>
+
 ## SimpleEmailPartTypeDef
 
 ```python
@@ -5530,6 +6240,8 @@ Optional fields:
 
 - `Charset`: `str`
 - `Data`: `str`
+
+<a id="simpleemailtypedef"></a>
 
 ## SimpleEmailTypeDef
 
@@ -5542,6 +6254,8 @@ Optional fields:
 - `HtmlPart`: [SimpleEmailPartTypeDef](./type_defs.md#simpleemailparttypedef)
 - `Subject`: [SimpleEmailPartTypeDef](./type_defs.md#simpleemailparttypedef)
 - `TextPart`: [SimpleEmailPartTypeDef](./type_defs.md#simpleemailparttypedef)
+
+<a id="startconditiontypedef"></a>
 
 ## StartConditionTypeDef
 
@@ -5557,6 +6271,8 @@ Optional fields:
 - `SegmentStartCondition`:
   [SegmentConditionTypeDef](./type_defs.md#segmentconditiontypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -5568,6 +6284,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `TagsModel`: [TagsModelTypeDef](./type_defs.md#tagsmodeltypedef)
 
+<a id="tagsmodeltypedef"></a>
+
 ## TagsModelTypeDef
 
 ```python
@@ -5578,6 +6296,8 @@ Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="templateactiveversionrequesttypedef"></a>
+
 ## TemplateActiveVersionRequestTypeDef
 
 ```python
@@ -5587,6 +6307,8 @@ from mypy_boto3_pinpoint.type_defs import TemplateActiveVersionRequestTypeDef
 Optional fields:
 
 - `Version`: `str`
+
+<a id="templateconfigurationtypedef"></a>
 
 ## TemplateConfigurationTypeDef
 
@@ -5601,6 +6323,8 @@ Optional fields:
 - `SMSTemplate`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 - `VoiceTemplate`: [TemplateTypeDef](./type_defs.md#templatetypedef)
 
+<a id="templatecreatemessagebodytypedef"></a>
+
 ## TemplateCreateMessageBodyTypeDef
 
 ```python
@@ -5612,6 +6336,8 @@ Optional fields:
 - `Arn`: `str`
 - `Message`: `str`
 - `RequestID`: `str`
+
+<a id="templateresponsetypedef"></a>
 
 ## TemplateResponseTypeDef
 
@@ -5634,6 +6360,8 @@ Optional fields:
 - `TemplateDescription`: `str`
 - `Version`: `str`
 
+<a id="templatetypedef"></a>
+
 ## TemplateTypeDef
 
 ```python
@@ -5644,6 +6372,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="templateversionresponsetypedef"></a>
 
 ## TemplateVersionResponseTypeDef
 
@@ -5664,6 +6394,8 @@ Optional fields:
 - `TemplateDescription`: `str`
 - `Version`: `str`
 
+<a id="templateversionsresponsetypedef"></a>
+
 ## TemplateVersionsResponseTypeDef
 
 ```python
@@ -5681,6 +6413,8 @@ Optional fields:
 - `NextToken`: `str`
 - `RequestID`: `str`
 
+<a id="templatesresponsetypedef"></a>
+
 ## TemplatesResponseTypeDef
 
 ```python
@@ -5695,6 +6429,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="treatmentresourcetypedef"></a>
 
 ## TreatmentResourceTypeDef
 
@@ -5720,6 +6456,8 @@ Optional fields:
 - `TreatmentDescription`: `str`
 - `TreatmentName`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -5730,6 +6468,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateadmchannelrequestrequesttypedef"></a>
 
 ## UpdateAdmChannelRequestRequestTypeDef
 
@@ -5742,6 +6482,8 @@ Required fields:
 - `ADMChannelRequest`:
   [ADMChannelRequestTypeDef](./type_defs.md#admchannelrequesttypedef)
 - `ApplicationId`: `str`
+
+<a id="updateadmchannelresponsetypedef"></a>
 
 ## UpdateAdmChannelResponseTypeDef
 
@@ -5756,6 +6498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapnschannelrequestrequesttypedef"></a>
+
 ## UpdateApnsChannelRequestRequestTypeDef
 
 ```python
@@ -5767,6 +6511,8 @@ Required fields:
 - `APNSChannelRequest`:
   [APNSChannelRequestTypeDef](./type_defs.md#apnschannelrequesttypedef)
 - `ApplicationId`: `str`
+
+<a id="updateapnschannelresponsetypedef"></a>
 
 ## UpdateApnsChannelResponseTypeDef
 
@@ -5781,6 +6527,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapnssandboxchannelrequestrequesttypedef"></a>
+
 ## UpdateApnsSandboxChannelRequestRequestTypeDef
 
 ```python
@@ -5792,6 +6540,8 @@ Required fields:
 - `APNSSandboxChannelRequest`:
   [APNSSandboxChannelRequestTypeDef](./type_defs.md#apnssandboxchannelrequesttypedef)
 - `ApplicationId`: `str`
+
+<a id="updateapnssandboxchannelresponsetypedef"></a>
 
 ## UpdateApnsSandboxChannelResponseTypeDef
 
@@ -5806,6 +6556,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapnsvoipchannelrequestrequesttypedef"></a>
+
 ## UpdateApnsVoipChannelRequestRequestTypeDef
 
 ```python
@@ -5817,6 +6569,8 @@ Required fields:
 - `APNSVoipChannelRequest`:
   [APNSVoipChannelRequestTypeDef](./type_defs.md#apnsvoipchannelrequesttypedef)
 - `ApplicationId`: `str`
+
+<a id="updateapnsvoipchannelresponsetypedef"></a>
 
 ## UpdateApnsVoipChannelResponseTypeDef
 
@@ -5831,6 +6585,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapnsvoipsandboxchannelrequestrequesttypedef"></a>
+
 ## UpdateApnsVoipSandboxChannelRequestRequestTypeDef
 
 ```python
@@ -5842,6 +6598,8 @@ Required fields:
 - `APNSVoipSandboxChannelRequest`:
   [APNSVoipSandboxChannelRequestTypeDef](./type_defs.md#apnsvoipsandboxchannelrequesttypedef)
 - `ApplicationId`: `str`
+
+<a id="updateapnsvoipsandboxchannelresponsetypedef"></a>
 
 ## UpdateApnsVoipSandboxChannelResponseTypeDef
 
@@ -5856,6 +6614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateapplicationsettingsrequestrequesttypedef"></a>
+
 ## UpdateApplicationSettingsRequestRequestTypeDef
 
 ```python
@@ -5867,6 +6627,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `WriteApplicationSettingsRequest`:
   [WriteApplicationSettingsRequestTypeDef](./type_defs.md#writeapplicationsettingsrequesttypedef)
+
+<a id="updateapplicationsettingsresponsetypedef"></a>
 
 ## UpdateApplicationSettingsResponseTypeDef
 
@@ -5881,6 +6643,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateattributesrequesttypedef"></a>
+
 ## UpdateAttributesRequestTypeDef
 
 ```python
@@ -5890,6 +6654,8 @@ from mypy_boto3_pinpoint.type_defs import UpdateAttributesRequestTypeDef
 Optional fields:
 
 - `Blacklist`: `Sequence`\[`str`\]
+
+<a id="updatebaiduchannelrequestrequesttypedef"></a>
 
 ## UpdateBaiduChannelRequestRequestTypeDef
 
@@ -5902,6 +6668,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `BaiduChannelRequest`:
   [BaiduChannelRequestTypeDef](./type_defs.md#baiduchannelrequesttypedef)
+
+<a id="updatebaiduchannelresponsetypedef"></a>
 
 ## UpdateBaiduChannelResponseTypeDef
 
@@ -5916,6 +6684,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatecampaignrequestrequesttypedef"></a>
+
 ## UpdateCampaignRequestRequestTypeDef
 
 ```python
@@ -5928,6 +6698,8 @@ Required fields:
 - `CampaignId`: `str`
 - `WriteCampaignRequest`:
   [WriteCampaignRequestTypeDef](./type_defs.md#writecampaignrequesttypedef)
+
+<a id="updatecampaignresponsetypedef"></a>
 
 ## UpdateCampaignResponseTypeDef
 
@@ -5942,6 +6714,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateemailchannelrequestrequesttypedef"></a>
+
 ## UpdateEmailChannelRequestRequestTypeDef
 
 ```python
@@ -5953,6 +6727,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `EmailChannelRequest`:
   [EmailChannelRequestTypeDef](./type_defs.md#emailchannelrequesttypedef)
+
+<a id="updateemailchannelresponsetypedef"></a>
 
 ## UpdateEmailChannelResponseTypeDef
 
@@ -5966,6 +6742,8 @@ Required fields:
   [EmailChannelResponseTypeDef](./type_defs.md#emailchannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateemailtemplaterequestrequesttypedef"></a>
 
 ## UpdateEmailTemplateRequestRequestTypeDef
 
@@ -5984,6 +6762,8 @@ Optional fields:
 - `CreateNewVersion`: `bool`
 - `Version`: `str`
 
+<a id="updateemailtemplateresponsetypedef"></a>
+
 ## UpdateEmailTemplateResponseTypeDef
 
 ```python
@@ -5995,6 +6775,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateendpointrequestrequesttypedef"></a>
 
 ## UpdateEndpointRequestRequestTypeDef
 
@@ -6009,6 +6791,8 @@ Required fields:
 - `EndpointRequest`:
   [EndpointRequestTypeDef](./type_defs.md#endpointrequesttypedef)
 
+<a id="updateendpointresponsetypedef"></a>
+
 ## UpdateEndpointResponseTypeDef
 
 ```python
@@ -6020,6 +6804,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateendpointsbatchrequestrequesttypedef"></a>
 
 ## UpdateEndpointsBatchRequestRequestTypeDef
 
@@ -6033,6 +6819,8 @@ Required fields:
 - `EndpointBatchRequest`:
   [EndpointBatchRequestTypeDef](./type_defs.md#endpointbatchrequesttypedef)
 
+<a id="updateendpointsbatchresponsetypedef"></a>
+
 ## UpdateEndpointsBatchResponseTypeDef
 
 ```python
@@ -6044,6 +6832,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategcmchannelrequestrequesttypedef"></a>
 
 ## UpdateGcmChannelRequestRequestTypeDef
 
@@ -6057,6 +6847,8 @@ Required fields:
 - `GCMChannelRequest`:
   [GCMChannelRequestTypeDef](./type_defs.md#gcmchannelrequesttypedef)
 
+<a id="updategcmchannelresponsetypedef"></a>
+
 ## UpdateGcmChannelResponseTypeDef
 
 ```python
@@ -6069,6 +6861,8 @@ Required fields:
   [GCMChannelResponseTypeDef](./type_defs.md#gcmchannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateinapptemplaterequestrequesttypedef"></a>
 
 ## UpdateInAppTemplateRequestRequestTypeDef
 
@@ -6087,6 +6881,8 @@ Optional fields:
 - `CreateNewVersion`: `bool`
 - `Version`: `str`
 
+<a id="updateinapptemplateresponsetypedef"></a>
+
 ## UpdateInAppTemplateResponseTypeDef
 
 ```python
@@ -6098,6 +6894,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatejourneyrequestrequesttypedef"></a>
 
 ## UpdateJourneyRequestRequestTypeDef
 
@@ -6112,6 +6910,8 @@ Required fields:
 - `WriteJourneyRequest`:
   [WriteJourneyRequestTypeDef](./type_defs.md#writejourneyrequesttypedef)
 
+<a id="updatejourneyresponsetypedef"></a>
+
 ## UpdateJourneyResponseTypeDef
 
 ```python
@@ -6124,6 +6924,8 @@ Required fields:
   [JourneyResponseTypeDef](./type_defs.md#journeyresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatejourneystaterequestrequesttypedef"></a>
 
 ## UpdateJourneyStateRequestRequestTypeDef
 
@@ -6138,6 +6940,8 @@ Required fields:
 - `JourneyStateRequest`:
   [JourneyStateRequestTypeDef](./type_defs.md#journeystaterequesttypedef)
 
+<a id="updatejourneystateresponsetypedef"></a>
+
 ## UpdateJourneyStateResponseTypeDef
 
 ```python
@@ -6150,6 +6954,8 @@ Required fields:
   [JourneyResponseTypeDef](./type_defs.md#journeyresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepushtemplaterequestrequesttypedef"></a>
 
 ## UpdatePushTemplateRequestRequestTypeDef
 
@@ -6168,6 +6974,8 @@ Optional fields:
 - `CreateNewVersion`: `bool`
 - `Version`: `str`
 
+<a id="updatepushtemplateresponsetypedef"></a>
+
 ## UpdatePushTemplateResponseTypeDef
 
 ```python
@@ -6179,6 +6987,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterecommenderconfigurationrequestrequesttypedef"></a>
 
 ## UpdateRecommenderConfigurationRequestRequestTypeDef
 
@@ -6192,6 +7002,8 @@ Required fields:
 - `UpdateRecommenderConfiguration`:
   [UpdateRecommenderConfigurationTypeDef](./type_defs.md#updaterecommenderconfigurationtypedef)
 
+<a id="updaterecommenderconfigurationresponsetypedef"></a>
+
 ## UpdateRecommenderConfigurationResponseTypeDef
 
 ```python
@@ -6204,6 +7016,8 @@ Required fields:
   [RecommenderConfigurationResponseTypeDef](./type_defs.md#recommenderconfigurationresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updaterecommenderconfigurationtypedef"></a>
 
 ## UpdateRecommenderConfigurationTypeDef
 
@@ -6226,6 +7040,8 @@ Optional fields:
 - `RecommendationsDisplayName`: `str`
 - `RecommendationsPerMessage`: `int`
 
+<a id="updatesegmentrequestrequesttypedef"></a>
+
 ## UpdateSegmentRequestRequestTypeDef
 
 ```python
@@ -6238,6 +7054,8 @@ Required fields:
 - `SegmentId`: `str`
 - `WriteSegmentRequest`:
   [WriteSegmentRequestTypeDef](./type_defs.md#writesegmentrequesttypedef)
+
+<a id="updatesegmentresponsetypedef"></a>
 
 ## UpdateSegmentResponseTypeDef
 
@@ -6252,6 +7070,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatesmschannelrequestrequesttypedef"></a>
+
 ## UpdateSmsChannelRequestRequestTypeDef
 
 ```python
@@ -6263,6 +7083,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `SMSChannelRequest`:
   [SMSChannelRequestTypeDef](./type_defs.md#smschannelrequesttypedef)
+
+<a id="updatesmschannelresponsetypedef"></a>
 
 ## UpdateSmsChannelResponseTypeDef
 
@@ -6276,6 +7098,8 @@ Required fields:
   [SMSChannelResponseTypeDef](./type_defs.md#smschannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesmstemplaterequestrequesttypedef"></a>
 
 ## UpdateSmsTemplateRequestRequestTypeDef
 
@@ -6294,6 +7118,8 @@ Optional fields:
 - `CreateNewVersion`: `bool`
 - `Version`: `str`
 
+<a id="updatesmstemplateresponsetypedef"></a>
+
 ## UpdateSmsTemplateResponseTypeDef
 
 ```python
@@ -6305,6 +7131,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetemplateactiveversionrequestrequesttypedef"></a>
 
 ## UpdateTemplateActiveVersionRequestRequestTypeDef
 
@@ -6319,6 +7147,8 @@ Required fields:
 - `TemplateName`: `str`
 - `TemplateType`: `str`
 
+<a id="updatetemplateactiveversionresponsetypedef"></a>
+
 ## UpdateTemplateActiveVersionResponseTypeDef
 
 ```python
@@ -6330,6 +7160,8 @@ Required fields:
 - `MessageBody`: [MessageBodyTypeDef](./type_defs.md#messagebodytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatevoicechannelrequestrequesttypedef"></a>
 
 ## UpdateVoiceChannelRequestRequestTypeDef
 
@@ -6343,6 +7175,8 @@ Required fields:
 - `VoiceChannelRequest`:
   [VoiceChannelRequestTypeDef](./type_defs.md#voicechannelrequesttypedef)
 
+<a id="updatevoicechannelresponsetypedef"></a>
+
 ## UpdateVoiceChannelResponseTypeDef
 
 ```python
@@ -6355,6 +7189,8 @@ Required fields:
   [VoiceChannelResponseTypeDef](./type_defs.md#voicechannelresponsetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatevoicetemplaterequestrequesttypedef"></a>
 
 ## UpdateVoiceTemplateRequestRequestTypeDef
 
@@ -6373,6 +7209,8 @@ Optional fields:
 - `CreateNewVersion`: `bool`
 - `Version`: `str`
 
+<a id="updatevoicetemplateresponsetypedef"></a>
+
 ## UpdateVoiceTemplateResponseTypeDef
 
 ```python
@@ -6385,6 +7223,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="verificationresponsetypedef"></a>
+
 ## VerificationResponseTypeDef
 
 ```python
@@ -6394,6 +7234,8 @@ from mypy_boto3_pinpoint.type_defs import VerificationResponseTypeDef
 Optional fields:
 
 - `Valid`: `bool`
+
+<a id="verifyotpmessagerequestparameterstypedef"></a>
 
 ## VerifyOTPMessageRequestParametersTypeDef
 
@@ -6407,6 +7249,8 @@ Required fields:
 - `Otp`: `str`
 - `ReferenceId`: `str`
 
+<a id="verifyotpmessagerequestrequesttypedef"></a>
+
 ## VerifyOTPMessageRequestRequestTypeDef
 
 ```python
@@ -6418,6 +7262,8 @@ Required fields:
 - `ApplicationId`: `str`
 - `VerifyOTPMessageRequestParameters`:
   [VerifyOTPMessageRequestParametersTypeDef](./type_defs.md#verifyotpmessagerequestparameterstypedef)
+
+<a id="verifyotpmessageresponsetypedef"></a>
 
 ## VerifyOTPMessageResponseTypeDef
 
@@ -6432,6 +7278,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="voicechannelrequesttypedef"></a>
+
 ## VoiceChannelRequestTypeDef
 
 ```python
@@ -6441,6 +7289,8 @@ from mypy_boto3_pinpoint.type_defs import VoiceChannelRequestTypeDef
 Optional fields:
 
 - `Enabled`: `bool`
+
+<a id="voicechannelresponsetypedef"></a>
 
 ## VoiceChannelResponseTypeDef
 
@@ -6464,6 +7314,8 @@ Optional fields:
 - `LastModifiedDate`: `str`
 - `Version`: `int`
 
+<a id="voicemessagetypedef"></a>
+
 ## VoiceMessageTypeDef
 
 ```python
@@ -6477,6 +7329,8 @@ Optional fields:
 - `OriginationNumber`: `str`
 - `Substitutions`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 - `VoiceId`: `str`
+
+<a id="voicetemplaterequesttypedef"></a>
 
 ## VoiceTemplateRequestTypeDef
 
@@ -6492,6 +7346,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `TemplateDescription`: `str`
 - `VoiceId`: `str`
+
+<a id="voicetemplateresponsetypedef"></a>
 
 ## VoiceTemplateResponseTypeDef
 
@@ -6517,6 +7373,8 @@ Optional fields:
 - `Version`: `str`
 - `VoiceId`: `str`
 
+<a id="waitactivitytypedef"></a>
+
 ## WaitActivityTypeDef
 
 ```python
@@ -6528,6 +7386,8 @@ Optional fields:
 - `NextActivity`: `str`
 - `WaitTime`: [WaitTimeTypeDef](./type_defs.md#waittimetypedef)
 
+<a id="waittimetypedef"></a>
+
 ## WaitTimeTypeDef
 
 ```python
@@ -6538,6 +7398,8 @@ Optional fields:
 
 - `WaitFor`: `str`
 - `WaitUntil`: `str`
+
+<a id="writeapplicationsettingsrequesttypedef"></a>
 
 ## WriteApplicationSettingsRequestTypeDef
 
@@ -6552,6 +7414,8 @@ Optional fields:
 - `EventTaggingEnabled`: `bool`
 - `Limits`: [CampaignLimitsTypeDef](./type_defs.md#campaignlimitstypedef)
 - `QuietTime`: [QuietTimeTypeDef](./type_defs.md#quiettimetypedef)
+
+<a id="writecampaignrequesttypedef"></a>
 
 ## WriteCampaignRequestTypeDef
 
@@ -6583,6 +7447,8 @@ Optional fields:
 - `TreatmentName`: `str`
 - `Priority`: `int`
 
+<a id="writeeventstreamtypedef"></a>
+
 ## WriteEventStreamTypeDef
 
 ```python
@@ -6593,6 +7459,8 @@ Required fields:
 
 - `DestinationStreamArn`: `str`
 - `RoleArn`: `str`
+
+<a id="writejourneyrequesttypedef"></a>
 
 ## WriteJourneyRequestTypeDef
 
@@ -6624,6 +7492,8 @@ Optional fields:
 - `JourneyChannelSettings`:
   [JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef)
 
+<a id="writesegmentrequesttypedef"></a>
+
 ## WriteSegmentRequestTypeDef
 
 ```python
@@ -6638,6 +7508,8 @@ Optional fields:
 - `SegmentGroups`:
   [SegmentGroupListTypeDef](./type_defs.md#segmentgrouplisttypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="writetreatmentresourcetypedef"></a>
 
 ## WriteTreatmentResourceTypeDef
 

@@ -1,3 +1,5 @@
+<a id="mediaconvertclient-for-boto3-mediaconvert-module"></a>
+
 # MediaConvertClient for boto3 MediaConvert module
 
 > [Index](..) > [MediaConvert](.) > MediaConvertClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module
-[mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 - [MediaConvertClient for boto3 MediaConvert module](#mediaconvertclient-for-boto3-mediaconvert-module)
   - [MediaConvertClient](#mediaconvertclient)
@@ -44,6 +46,8 @@ type annotations stubs module
     - [update_queue](#update_queue)
     - [get_paginator](#get_paginator)
 
+<a id="mediaconvertclient"></a>
+
 ## MediaConvertClient
 
 Type annotations for `boto3.client("mediaconvert")`
@@ -51,14 +55,17 @@ Type annotations for `boto3.client("mediaconvert")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mediaconvert.client import MediaConvertClient
 
 def get_mediaconvert_client() -> MediaConvertClient:
-    return boto3.client("mediaconvert")
+    return Session().client("mediaconvert")
 ```
 
 Boto3 documentation:
 [MediaConvert.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -82,7 +89,11 @@ Exceptions:
 - `Exceptions.NotFoundException`
 - `Exceptions.TooManyRequestsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -94,6 +105,8 @@ Boto3 documentation:
 [MediaConvert.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_certificate"></a>
 
 ### associate_certificate
 
@@ -115,6 +128,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -129,6 +144,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_job"></a>
 
 ### cancel_job
 
@@ -147,6 +164,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_job"></a>
 
 ### create_job
 
@@ -184,6 +203,8 @@ Keyword-only arguments:
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
+<a id="create_job_template"></a>
+
 ### create_job_template
 
 Create a new job template.
@@ -217,6 +238,8 @@ Keyword-only arguments:
 Returns
 [CreateJobTemplateResponseTypeDef](./type_defs.md#createjobtemplateresponsetypedef).
 
+<a id="create_preset"></a>
+
 ### create_preset
 
 Create a new preset.
@@ -240,6 +263,8 @@ Keyword-only arguments:
 
 Returns
 [CreatePresetResponseTypeDef](./type_defs.md#createpresetresponsetypedef).
+
+<a id="create_queue"></a>
 
 ### create_queue
 
@@ -266,6 +291,8 @@ Keyword-only arguments:
 Returns
 [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
 
+<a id="delete_job_template"></a>
+
 ### delete_job_template
 
 Permanently delete a job template you have created.
@@ -284,6 +311,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_policy"></a>
+
 ### delete_policy
 
 Permanently delete a policy that you created.
@@ -294,6 +323,8 @@ Boto3 documentation:
 [MediaConvert.Client.delete_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.delete_policy)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_preset"></a>
 
 ### delete_preset
 
@@ -313,6 +344,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_queue"></a>
+
 ### delete_queue
 
 Permanently delete a queue you have created.
@@ -330,6 +363,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_endpoints"></a>
 
 ### describe_endpoints
 
@@ -353,6 +388,8 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
+<a id="disassociate_certificate"></a>
+
 ### disassociate_certificate
 
 Removes an association between the Amazon Resource Name (ARN) of an AWS
@@ -374,6 +411,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -393,6 +432,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_job"></a>
+
 ### get_job
 
 Retrieve the JSON for a specific completed transcoding job.
@@ -410,6 +451,8 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 
 Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
+
+<a id="get_job_template"></a>
 
 ### get_job_template
 
@@ -430,6 +473,8 @@ Keyword-only arguments:
 Returns
 [GetJobTemplateResponseTypeDef](./type_defs.md#getjobtemplateresponsetypedef).
 
+<a id="get_policy"></a>
+
 ### get_policy
 
 Retrieve the JSON for your policy.
@@ -440,6 +485,8 @@ Boto3 documentation:
 [MediaConvert.Client.get_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert.Client.get_policy)
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="get_preset"></a>
 
 ### get_preset
 
@@ -459,6 +506,8 @@ Keyword-only arguments:
 
 Returns [GetPresetResponseTypeDef](./type_defs.md#getpresetresponsetypedef).
 
+<a id="get_queue"></a>
+
 ### get_queue
 
 Retrieve the JSON for a specific queue.
@@ -476,6 +525,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns [GetQueueResponseTypeDef](./type_defs.md#getqueueresponsetypedef).
+
+<a id="list_job_templates"></a>
 
 ### list_job_templates
 
@@ -500,6 +551,8 @@ Keyword-only arguments:
 Returns
 [ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Retrieve a JSON array of up to twenty of your most recently created jobs.
@@ -521,6 +574,8 @@ Keyword-only arguments:
 - `Status`: [JobStatusType](./literals.md#jobstatustype)
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
+
+<a id="list_presets"></a>
 
 ### list_presets
 
@@ -545,6 +600,8 @@ Keyword-only arguments:
 Returns
 [ListPresetsResponseTypeDef](./type_defs.md#listpresetsresponsetypedef).
 
+<a id="list_queues"></a>
+
 ### list_queues
 
 Retrieve a JSON array of up to twenty of your queues.
@@ -566,6 +623,8 @@ Keyword-only arguments:
 
 Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieve the tags for a MediaConvert resource.
@@ -586,6 +645,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="put_policy"></a>
+
 ### put_policy
 
 Create or change your policy.
@@ -603,6 +664,8 @@ Keyword-only arguments:
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef) *(required)*
 
 Returns [PutPolicyResponseTypeDef](./type_defs.md#putpolicyresponsetypedef).
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -623,6 +686,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove tags from a MediaConvert queue, preset, or job template.
@@ -641,6 +706,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_job_template"></a>
 
 ### update_job_template
 
@@ -673,6 +740,8 @@ Keyword-only arguments:
 Returns
 [UpdateJobTemplateResponseTypeDef](./type_defs.md#updatejobtemplateresponsetypedef).
 
+<a id="update_preset"></a>
+
 ### update_preset
 
 Modify one of your existing presets.
@@ -694,6 +763,8 @@ Keyword-only arguments:
 
 Returns
 [UpdatePresetResponseTypeDef](./type_defs.md#updatepresetresponsetypedef).
+
+<a id="update_queue"></a>
 
 ### update_queue
 
@@ -717,6 +788,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateQueueResponseTypeDef](./type_defs.md#updatequeueresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

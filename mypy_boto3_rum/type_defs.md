@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudwatchrum-module"></a>
+
 # Typed dictionaries for boto3 CloudWatchRUM module
 
 > [Index](..) > [CloudWatchRUM](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchRUM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rum.html#CloudWatchRUM)
 type annotations stubs module
-[mypy_boto3_rum](https://pypi.org/project/mypy-boto3-rum/).
+[mypy-boto3-rum](https://pypi.org/project/mypy-boto3-rum/).
 
 - [Typed dictionaries for boto3 CloudWatchRUM module](#typed-dictionaries-for-boto3-cloudwatchrum-module)
   - [AppMonitorConfigurationTypeDef](#appmonitorconfigurationtypedef)
@@ -36,6 +38,8 @@ type annotations stubs module
   - [UpdateAppMonitorRequestRequestTypeDef](#updateappmonitorrequestrequesttypedef)
   - [UserDetailsTypeDef](#userdetailstypedef)
 
+<a id="appmonitorconfigurationtypedef"></a>
+
 ## AppMonitorConfigurationTypeDef
 
 ```python
@@ -54,6 +58,8 @@ Optional fields:
 - `SessionSampleRate`: `float`
 - `Telemetries`: `Sequence`\[[TelemetryType](./literals.md#telemetrytype)\]
 
+<a id="appmonitordetailstypedef"></a>
+
 ## AppMonitorDetailsTypeDef
 
 ```python
@@ -65,6 +71,8 @@ Optional fields:
 - `id`: `str`
 - `name`: `str`
 - `version`: `str`
+
+<a id="appmonitorsummarytypedef"></a>
 
 ## AppMonitorSummaryTypeDef
 
@@ -79,6 +87,8 @@ Optional fields:
 - `LastModified`: `str`
 - `Name`: `str`
 - `State`: [StateEnumType](./literals.md#stateenumtype)
+
+<a id="appmonitortypedef"></a>
 
 ## AppMonitorTypeDef
 
@@ -99,6 +109,8 @@ Optional fields:
 - `State`: [StateEnumType](./literals.md#stateenumtype)
 - `Tags`: `Dict`\[`str`, `str`\]
 
+<a id="createappmonitorrequestrequesttypedef"></a>
+
 ## CreateAppMonitorRequestRequestTypeDef
 
 ```python
@@ -117,6 +129,8 @@ Optional fields:
 - `CwLogEnabled`: `bool`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createappmonitorresponsetypedef"></a>
+
 ## CreateAppMonitorResponseTypeDef
 
 ```python
@@ -129,6 +143,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cwlogtypedef"></a>
+
 ## CwLogTypeDef
 
 ```python
@@ -140,6 +156,8 @@ Optional fields:
 - `CwLogEnabled`: `bool`
 - `CwLogGroup`: `str`
 
+<a id="datastoragetypedef"></a>
+
 ## DataStorageTypeDef
 
 ```python
@@ -150,6 +168,8 @@ Optional fields:
 
 - `CwLog`: [CwLogTypeDef](./type_defs.md#cwlogtypedef)
 
+<a id="deleteappmonitorrequestrequesttypedef"></a>
+
 ## DeleteAppMonitorRequestRequestTypeDef
 
 ```python
@@ -159,6 +179,8 @@ from mypy_boto3_rum.type_defs import DeleteAppMonitorRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getappmonitordatarequestrequesttypedef"></a>
 
 ## GetAppMonitorDataRequestRequestTypeDef
 
@@ -178,6 +200,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getappmonitordataresponsetypedef"></a>
+
 ## GetAppMonitorDataResponseTypeDef
 
 ```python
@@ -191,6 +215,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getappmonitorrequestrequesttypedef"></a>
+
 ## GetAppMonitorRequestRequestTypeDef
 
 ```python
@@ -200,6 +226,8 @@ from mypy_boto3_rum.type_defs import GetAppMonitorRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getappmonitorresponsetypedef"></a>
 
 ## GetAppMonitorResponseTypeDef
 
@@ -213,6 +241,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listappmonitorsrequestrequesttypedef"></a>
+
 ## ListAppMonitorsRequestRequestTypeDef
 
 ```python
@@ -223,6 +253,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listappmonitorsresponsetypedef"></a>
 
 ## ListAppMonitorsResponseTypeDef
 
@@ -238,6 +270,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -247,6 +281,8 @@ from mypy_boto3_rum.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -261,6 +297,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -272,6 +310,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putrumeventsrequestrequesttypedef"></a>
 
 ## PutRumEventsRequestRequestTypeDef
 
@@ -288,6 +328,8 @@ Required fields:
 - `RumEvents`: `Sequence`\[[RumEventTypeDef](./type_defs.md#rumeventtypedef)\]
 - `UserDetails`: [UserDetailsTypeDef](./type_defs.md#userdetailstypedef)
 
+<a id="queryfiltertypedef"></a>
+
 ## QueryFilterTypeDef
 
 ```python
@@ -298,6 +340,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -312,6 +356,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="rumeventtypedef"></a>
 
 ## RumEventTypeDef
 
@@ -330,6 +376,8 @@ Optional fields:
 
 - `metadata`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -340,6 +388,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="timerangetypedef"></a>
 
 ## TimeRangeTypeDef
 
@@ -355,6 +405,8 @@ Optional fields:
 
 - `Before`: `int`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -365,6 +417,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateappmonitorrequestrequesttypedef"></a>
 
 ## UpdateAppMonitorRequestRequestTypeDef
 
@@ -382,6 +436,8 @@ Optional fields:
   [AppMonitorConfigurationTypeDef](./type_defs.md#appmonitorconfigurationtypedef)
 - `CwLogEnabled`: `bool`
 - `Domain`: `str`
+
+<a id="userdetailstypedef"></a>
 
 ## UserDetailsTypeDef
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-greengrassv2-module"></a>
+
 # Typed dictionaries for boto3 GreengrassV2 module
 
 > [Index](..) > [GreengrassV2](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GreengrassV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/greengrassv2.html#GreengrassV2)
 type annotations stubs module
-[mypy_boto3_greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
+[mypy-boto3-greengrassv2](https://pypi.org/project/mypy-boto3-greengrassv2/).
 
 - [Typed dictionaries for boto3 GreengrassV2 module](#typed-dictionaries-for-boto3-greengrassv2-module)
   - [AssociateClientDeviceWithCoreDeviceEntryTypeDef](#associateclientdevicewithcoredeviceentrytypedef)
@@ -100,6 +102,8 @@ type annotations stubs module
   - [UpdateConnectivityInfoRequestRequestTypeDef](#updateconnectivityinforequestrequesttypedef)
   - [UpdateConnectivityInfoResponseTypeDef](#updateconnectivityinforesponsetypedef)
 
+<a id="associateclientdevicewithcoredeviceentrytypedef"></a>
+
 ## AssociateClientDeviceWithCoreDeviceEntryTypeDef
 
 ```python
@@ -109,6 +113,8 @@ from mypy_boto3_greengrassv2.type_defs import AssociateClientDeviceWithCoreDevic
 Required fields:
 
 - `thingName`: `str`
+
+<a id="associateclientdevicewithcoredeviceerrorentrytypedef"></a>
 
 ## AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef
 
@@ -122,6 +128,8 @@ Optional fields:
 - `code`: `str`
 - `message`: `str`
 
+<a id="associateserviceroletoaccountrequestrequesttypedef"></a>
+
 ## AssociateServiceRoleToAccountRequestRequestTypeDef
 
 ```python
@@ -131,6 +139,8 @@ from mypy_boto3_greengrassv2.type_defs import AssociateServiceRoleToAccountReque
 Required fields:
 
 - `roleArn`: `str`
+
+<a id="associateserviceroletoaccountresponsetypedef"></a>
 
 ## AssociateServiceRoleToAccountResponseTypeDef
 
@@ -144,6 +154,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="associatedclientdevicetypedef"></a>
+
 ## AssociatedClientDeviceTypeDef
 
 ```python
@@ -154,6 +166,8 @@ Optional fields:
 
 - `thingName`: `str`
 - `associationTimestamp`: `datetime`
+
+<a id="batchassociateclientdevicewithcoredevicerequestrequesttypedef"></a>
 
 ## BatchAssociateClientDeviceWithCoreDeviceRequestRequestTypeDef
 
@@ -170,6 +184,8 @@ Optional fields:
 - `entries`:
   `Sequence`\[[AssociateClientDeviceWithCoreDeviceEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceentrytypedef)\]
 
+<a id="batchassociateclientdevicewithcoredeviceresponsetypedef"></a>
+
 ## BatchAssociateClientDeviceWithCoreDeviceResponseTypeDef
 
 ```python
@@ -182,6 +198,8 @@ Required fields:
   `List`\[[AssociateClientDeviceWithCoreDeviceErrorEntryTypeDef](./type_defs.md#associateclientdevicewithcoredeviceerrorentrytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchdisassociateclientdevicefromcoredevicerequestrequesttypedef"></a>
 
 ## BatchDisassociateClientDeviceFromCoreDeviceRequestRequestTypeDef
 
@@ -198,6 +216,8 @@ Optional fields:
 - `entries`:
   `Sequence`\[[DisassociateClientDeviceFromCoreDeviceEntryTypeDef](./type_defs.md#disassociateclientdevicefromcoredeviceentrytypedef)\]
 
+<a id="batchdisassociateclientdevicefromcoredeviceresponsetypedef"></a>
+
 ## BatchDisassociateClientDeviceFromCoreDeviceResponseTypeDef
 
 ```python
@@ -211,6 +231,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="canceldeploymentrequestrequesttypedef"></a>
+
 ## CancelDeploymentRequestRequestTypeDef
 
 ```python
@@ -220,6 +242,8 @@ from mypy_boto3_greengrassv2.type_defs import CancelDeploymentRequestRequestType
 Required fields:
 
 - `deploymentId`: `str`
+
+<a id="canceldeploymentresponsetypedef"></a>
 
 ## CancelDeploymentResponseTypeDef
 
@@ -232,6 +256,8 @@ Required fields:
 - `message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cloudcomponentstatustypedef"></a>
 
 ## CloudComponentStatusTypeDef
 
@@ -246,6 +272,8 @@ Optional fields:
 - `message`: `str`
 - `errors`: `Dict`\[`str`, `str`\]
 
+<a id="componentcandidatetypedef"></a>
+
 ## ComponentCandidateTypeDef
 
 ```python
@@ -258,6 +286,8 @@ Optional fields:
 - `componentVersion`: `str`
 - `versionRequirements`: `Mapping`\[`str`, `str`\]
 
+<a id="componentconfigurationupdatetypedef"></a>
+
 ## ComponentConfigurationUpdateTypeDef
 
 ```python
@@ -268,6 +298,8 @@ Optional fields:
 
 - `merge`: `str`
 - `reset`: `Sequence`\[`str`\]
+
+<a id="componentdependencyrequirementtypedef"></a>
 
 ## ComponentDependencyRequirementTypeDef
 
@@ -281,6 +313,8 @@ Optional fields:
 - `dependencyType`:
   [ComponentDependencyTypeType](./literals.md#componentdependencytypetype)
 
+<a id="componentdeploymentspecificationtypedef"></a>
+
 ## ComponentDeploymentSpecificationTypeDef
 
 ```python
@@ -293,6 +327,8 @@ Optional fields:
 - `configurationUpdate`:
   [ComponentConfigurationUpdateTypeDef](./type_defs.md#componentconfigurationupdatetypedef)
 - `runWith`: [ComponentRunWithTypeDef](./type_defs.md#componentrunwithtypedef)
+
+<a id="componentlatestversiontypedef"></a>
 
 ## ComponentLatestVersionTypeDef
 
@@ -310,6 +346,8 @@ Optional fields:
 - `platforms`:
   `List`\[[ComponentPlatformTypeDef](./type_defs.md#componentplatformtypedef)\]
 
+<a id="componentplatformtypedef"></a>
+
 ## ComponentPlatformTypeDef
 
 ```python
@@ -320,6 +358,8 @@ Optional fields:
 
 - `name`: `str`
 - `attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="componentrunwithtypedef"></a>
 
 ## ComponentRunWithTypeDef
 
@@ -334,6 +374,8 @@ Optional fields:
   [SystemResourceLimitsTypeDef](./type_defs.md#systemresourcelimitstypedef)
 - `windowsUser`: `str`
 
+<a id="componenttypedef"></a>
+
 ## ComponentTypeDef
 
 ```python
@@ -347,6 +389,8 @@ Optional fields:
 - `latestVersion`:
   [ComponentLatestVersionTypeDef](./type_defs.md#componentlatestversiontypedef)
 
+<a id="componentversionlistitemtypedef"></a>
+
 ## ComponentVersionListItemTypeDef
 
 ```python
@@ -358,6 +402,8 @@ Optional fields:
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `arn`: `str`
+
+<a id="connectivityinfotypedef"></a>
 
 ## ConnectivityInfoTypeDef
 
@@ -372,6 +418,8 @@ Optional fields:
 - `portNumber`: `int`
 - `metadata`: `str`
 
+<a id="coredevicetypedef"></a>
+
 ## CoreDeviceTypeDef
 
 ```python
@@ -383,6 +431,8 @@ Optional fields:
 - `coreDeviceThingName`: `str`
 - `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `lastStatusUpdateTimestamp`: `datetime`
+
+<a id="createcomponentversionrequestrequesttypedef"></a>
 
 ## CreateComponentVersionRequestRequestTypeDef
 
@@ -397,6 +447,8 @@ Optional fields:
   [LambdaFunctionRecipeSourceTypeDef](./type_defs.md#lambdafunctionrecipesourcetypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 - `clientToken`: `str`
+
+<a id="createcomponentversionresponsetypedef"></a>
 
 ## CreateComponentVersionResponseTypeDef
 
@@ -414,6 +466,8 @@ Required fields:
   [CloudComponentStatusTypeDef](./type_defs.md#cloudcomponentstatustypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdeploymentrequestrequesttypedef"></a>
 
 ## CreateDeploymentRequestRequestTypeDef
 
@@ -437,6 +491,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `clientToken`: `str`
 
+<a id="createdeploymentresponsetypedef"></a>
+
 ## CreateDeploymentResponseTypeDef
 
 ```python
@@ -451,6 +507,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecomponentrequestrequesttypedef"></a>
+
 ## DeleteComponentRequestRequestTypeDef
 
 ```python
@@ -461,6 +519,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="deletecoredevicerequestrequesttypedef"></a>
+
 ## DeleteCoreDeviceRequestRequestTypeDef
 
 ```python
@@ -470,6 +530,8 @@ from mypy_boto3_greengrassv2.type_defs import DeleteCoreDeviceRequestRequestType
 Required fields:
 
 - `coreDeviceThingName`: `str`
+
+<a id="deploymentcomponentupdatepolicytypedef"></a>
 
 ## DeploymentComponentUpdatePolicyTypeDef
 
@@ -483,6 +545,8 @@ Optional fields:
 - `action`:
   [DeploymentComponentUpdatePolicyActionType](./literals.md#deploymentcomponentupdatepolicyactiontype)
 
+<a id="deploymentconfigurationvalidationpolicytypedef"></a>
+
 ## DeploymentConfigurationValidationPolicyTypeDef
 
 ```python
@@ -492,6 +556,8 @@ from mypy_boto3_greengrassv2.type_defs import DeploymentConfigurationValidationP
 Optional fields:
 
 - `timeoutInSeconds`: `int`
+
+<a id="deploymentiotjobconfigurationtypedef"></a>
 
 ## DeploymentIoTJobConfigurationTypeDef
 
@@ -508,6 +574,8 @@ Optional fields:
 - `timeoutConfig`:
   [IoTJobTimeoutConfigTypeDef](./type_defs.md#iotjobtimeoutconfigtypedef)
 
+<a id="deploymentpoliciestypedef"></a>
+
 ## DeploymentPoliciesTypeDef
 
 ```python
@@ -522,6 +590,8 @@ Optional fields:
   [DeploymentComponentUpdatePolicyTypeDef](./type_defs.md#deploymentcomponentupdatepolicytypedef)
 - `configurationValidationPolicy`:
   [DeploymentConfigurationValidationPolicyTypeDef](./type_defs.md#deploymentconfigurationvalidationpolicytypedef)
+
+<a id="deploymenttypedef"></a>
 
 ## DeploymentTypeDef
 
@@ -540,6 +610,8 @@ Optional fields:
   [DeploymentStatusType](./literals.md#deploymentstatustype)
 - `isLatestForTarget`: `bool`
 
+<a id="describecomponentrequestrequesttypedef"></a>
+
 ## DescribeComponentRequestRequestTypeDef
 
 ```python
@@ -549,6 +621,8 @@ from mypy_boto3_greengrassv2.type_defs import DescribeComponentRequestRequestTyp
 Required fields:
 
 - `arn`: `str`
+
+<a id="describecomponentresponsetypedef"></a>
 
 ## DescribeComponentResponseTypeDef
 
@@ -572,6 +646,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateclientdevicefromcoredeviceentrytypedef"></a>
+
 ## DisassociateClientDeviceFromCoreDeviceEntryTypeDef
 
 ```python
@@ -581,6 +657,8 @@ from mypy_boto3_greengrassv2.type_defs import DisassociateClientDeviceFromCoreDe
 Required fields:
 
 - `thingName`: `str`
+
+<a id="disassociateclientdevicefromcoredeviceerrorentrytypedef"></a>
 
 ## DisassociateClientDeviceFromCoreDeviceErrorEntryTypeDef
 
@@ -594,6 +672,8 @@ Optional fields:
 - `code`: `str`
 - `message`: `str`
 
+<a id="disassociateservicerolefromaccountresponsetypedef"></a>
+
 ## DisassociateServiceRoleFromAccountResponseTypeDef
 
 ```python
@@ -605,6 +685,8 @@ Required fields:
 - `disassociatedAt`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="effectivedeploymenttypedef"></a>
 
 ## EffectiveDeploymentTypeDef
 
@@ -629,6 +711,8 @@ Optional fields:
 - `description`: `str`
 - `reason`: `str`
 
+<a id="getcomponentrequestrequesttypedef"></a>
+
 ## GetComponentRequestRequestTypeDef
 
 ```python
@@ -643,6 +727,8 @@ Optional fields:
 
 - `recipeOutputFormat`:
   [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
+
+<a id="getcomponentresponsetypedef"></a>
 
 ## GetComponentResponseTypeDef
 
@@ -659,6 +745,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcomponentversionartifactrequestrequesttypedef"></a>
+
 ## GetComponentVersionArtifactRequestRequestTypeDef
 
 ```python
@@ -669,6 +757,8 @@ Required fields:
 
 - `arn`: `str`
 - `artifactName`: `str`
+
+<a id="getcomponentversionartifactresponsetypedef"></a>
 
 ## GetComponentVersionArtifactResponseTypeDef
 
@@ -682,6 +772,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectivityinforequestrequesttypedef"></a>
+
 ## GetConnectivityInfoRequestRequestTypeDef
 
 ```python
@@ -691,6 +783,8 @@ from mypy_boto3_greengrassv2.type_defs import GetConnectivityInfoRequestRequestT
 Required fields:
 
 - `thingName`: `str`
+
+<a id="getconnectivityinforesponsetypedef"></a>
 
 ## GetConnectivityInfoResponseTypeDef
 
@@ -706,6 +800,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcoredevicerequestrequesttypedef"></a>
+
 ## GetCoreDeviceRequestRequestTypeDef
 
 ```python
@@ -715,6 +811,8 @@ from mypy_boto3_greengrassv2.type_defs import GetCoreDeviceRequestRequestTypeDef
 Required fields:
 
 - `coreDeviceThingName`: `str`
+
+<a id="getcoredeviceresponsetypedef"></a>
 
 ## GetCoreDeviceResponseTypeDef
 
@@ -734,6 +832,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdeploymentrequestrequesttypedef"></a>
+
 ## GetDeploymentRequestRequestTypeDef
 
 ```python
@@ -743,6 +843,8 @@ from mypy_boto3_greengrassv2.type_defs import GetDeploymentRequestRequestTypeDef
 Required fields:
 
 - `deploymentId`: `str`
+
+<a id="getdeploymentresponsetypedef"></a>
 
 ## GetDeploymentResponseTypeDef
 
@@ -772,6 +874,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getserviceroleforaccountresponsetypedef"></a>
+
 ## GetServiceRoleForAccountResponseTypeDef
 
 ```python
@@ -784,6 +888,8 @@ Required fields:
 - `roleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="installedcomponenttypedef"></a>
 
 ## InstalledComponentTypeDef
 
@@ -800,6 +906,8 @@ Optional fields:
 - `lifecycleStateDetails`: `str`
 - `isRoot`: `bool`
 
+<a id="iotjobabortconfigtypedef"></a>
+
 ## IoTJobAbortConfigTypeDef
 
 ```python
@@ -810,6 +918,8 @@ Required fields:
 
 - `criteriaList`:
   `Sequence`\[[IoTJobAbortCriteriaTypeDef](./type_defs.md#iotjobabortcriteriatypedef)\]
+
+<a id="iotjobabortcriteriatypedef"></a>
 
 ## IoTJobAbortCriteriaTypeDef
 
@@ -826,6 +936,8 @@ Required fields:
 - `thresholdPercentage`: `float`
 - `minNumberOfExecutedThings`: `int`
 
+<a id="iotjobexecutionsrolloutconfigtypedef"></a>
+
 ## IoTJobExecutionsRolloutConfigTypeDef
 
 ```python
@@ -837,6 +949,8 @@ Optional fields:
 - `exponentialRate`:
   [IoTJobExponentialRolloutRateTypeDef](./type_defs.md#iotjobexponentialrolloutratetypedef)
 - `maximumPerMinute`: `int`
+
+<a id="iotjobexponentialrolloutratetypedef"></a>
 
 ## IoTJobExponentialRolloutRateTypeDef
 
@@ -851,6 +965,8 @@ Required fields:
 - `rateIncreaseCriteria`:
   [IoTJobRateIncreaseCriteriaTypeDef](./type_defs.md#iotjobrateincreasecriteriatypedef)
 
+<a id="iotjobrateincreasecriteriatypedef"></a>
+
 ## IoTJobRateIncreaseCriteriaTypeDef
 
 ```python
@@ -862,6 +978,8 @@ Optional fields:
 - `numberOfNotifiedThings`: `int`
 - `numberOfSucceededThings`: `int`
 
+<a id="iotjobtimeoutconfigtypedef"></a>
+
 ## IoTJobTimeoutConfigTypeDef
 
 ```python
@@ -871,6 +989,8 @@ from mypy_boto3_greengrassv2.type_defs import IoTJobTimeoutConfigTypeDef
 Optional fields:
 
 - `inProgressTimeoutInMinutes`: `int`
+
+<a id="lambdacontainerparamstypedef"></a>
 
 ## LambdaContainerParamsTypeDef
 
@@ -886,6 +1006,8 @@ Optional fields:
   `Sequence`\[[LambdaVolumeMountTypeDef](./type_defs.md#lambdavolumemounttypedef)\]
 - `devices`:
   `Sequence`\[[LambdaDeviceMountTypeDef](./type_defs.md#lambdadevicemounttypedef)\]
+
+<a id="lambdadevicemounttypedef"></a>
 
 ## LambdaDeviceMountTypeDef
 
@@ -903,6 +1025,8 @@ Optional fields:
   [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - `addGroupOwner`: `bool`
 
+<a id="lambdaeventsourcetypedef"></a>
+
 ## LambdaEventSourceTypeDef
 
 ```python
@@ -913,6 +1037,8 @@ Required fields:
 
 - `topic`: `str`
 - `type`: [LambdaEventSourceTypeType](./literals.md#lambdaeventsourcetypetype)
+
+<a id="lambdaexecutionparameterstypedef"></a>
 
 ## LambdaExecutionParametersTypeDef
 
@@ -937,6 +1063,8 @@ Optional fields:
 - `linuxProcessParams`:
   [LambdaLinuxProcessParamsTypeDef](./type_defs.md#lambdalinuxprocessparamstypedef)
 
+<a id="lambdafunctionrecipesourcetypedef"></a>
+
 ## LambdaFunctionRecipeSourceTypeDef
 
 ```python
@@ -958,6 +1086,8 @@ Optional fields:
 - `componentLambdaParameters`:
   [LambdaExecutionParametersTypeDef](./type_defs.md#lambdaexecutionparameterstypedef)
 
+<a id="lambdalinuxprocessparamstypedef"></a>
+
 ## LambdaLinuxProcessParamsTypeDef
 
 ```python
@@ -970,6 +1100,8 @@ Optional fields:
   [LambdaIsolationModeType](./literals.md#lambdaisolationmodetype)
 - `containerParams`:
   [LambdaContainerParamsTypeDef](./type_defs.md#lambdacontainerparamstypedef)
+
+<a id="lambdavolumemounttypedef"></a>
 
 ## LambdaVolumeMountTypeDef
 
@@ -988,6 +1120,8 @@ Optional fields:
   [LambdaFilesystemPermissionType](./literals.md#lambdafilesystempermissiontype)
 - `addGroupOwner`: `bool`
 
+<a id="listclientdevicesassociatedwithcoredevicerequestrequesttypedef"></a>
+
 ## ListClientDevicesAssociatedWithCoreDeviceRequestRequestTypeDef
 
 ```python
@@ -1003,6 +1137,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listclientdevicesassociatedwithcoredeviceresponsetypedef"></a>
+
 ## ListClientDevicesAssociatedWithCoreDeviceResponseTypeDef
 
 ```python
@@ -1016,6 +1152,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcomponentversionsrequestrequesttypedef"></a>
 
 ## ListComponentVersionsRequestRequestTypeDef
 
@@ -1032,6 +1170,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listcomponentversionsresponsetypedef"></a>
+
 ## ListComponentVersionsResponseTypeDef
 
 ```python
@@ -1046,6 +1186,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcomponentsrequestrequesttypedef"></a>
+
 ## ListComponentsRequestRequestTypeDef
 
 ```python
@@ -1058,6 +1200,8 @@ Optional fields:
   [ComponentVisibilityScopeType](./literals.md#componentvisibilityscopetype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcomponentsresponsetypedef"></a>
 
 ## ListComponentsResponseTypeDef
 
@@ -1072,6 +1216,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcoredevicesrequestrequesttypedef"></a>
+
 ## ListCoreDevicesRequestRequestTypeDef
 
 ```python
@@ -1084,6 +1230,8 @@ Optional fields:
 - `status`: [CoreDeviceStatusType](./literals.md#coredevicestatustype)
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listcoredevicesresponsetypedef"></a>
 
 ## ListCoreDevicesResponseTypeDef
 
@@ -1099,6 +1247,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdeploymentsrequestrequesttypedef"></a>
+
 ## ListDeploymentsRequestRequestTypeDef
 
 ```python
@@ -1113,6 +1263,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listdeploymentsresponsetypedef"></a>
+
 ## ListDeploymentsResponseTypeDef
 
 ```python
@@ -1126,6 +1278,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listeffectivedeploymentsrequestrequesttypedef"></a>
 
 ## ListEffectiveDeploymentsRequestRequestTypeDef
 
@@ -1142,6 +1296,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listeffectivedeploymentsresponsetypedef"></a>
+
 ## ListEffectiveDeploymentsResponseTypeDef
 
 ```python
@@ -1155,6 +1311,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinstalledcomponentsrequestrequesttypedef"></a>
 
 ## ListInstalledComponentsRequestRequestTypeDef
 
@@ -1171,6 +1329,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listinstalledcomponentsresponsetypedef"></a>
+
 ## ListInstalledComponentsResponseTypeDef
 
 ```python
@@ -1185,6 +1345,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1194,6 +1356,8 @@ from mypy_boto3_greengrassv2.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1207,6 +1371,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1218,6 +1384,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="resolvecomponentcandidatesrequestrequesttypedef"></a>
 
 ## ResolveComponentCandidatesRequestRequestTypeDef
 
@@ -1232,6 +1400,8 @@ Required fields:
 - `componentCandidates`:
   `Sequence`\[[ComponentCandidateTypeDef](./type_defs.md#componentcandidatetypedef)\]
 
+<a id="resolvecomponentcandidatesresponsetypedef"></a>
+
 ## ResolveComponentCandidatesResponseTypeDef
 
 ```python
@@ -1245,6 +1415,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resolvedcomponentversiontypedef"></a>
+
 ## ResolvedComponentVersionTypeDef
 
 ```python
@@ -1257,6 +1429,8 @@ Optional fields:
 - `componentName`: `str`
 - `componentVersion`: `str`
 - `recipe`: `bytes`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1272,6 +1446,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="systemresourcelimitstypedef"></a>
+
 ## SystemResourceLimitsTypeDef
 
 ```python
@@ -1282,6 +1458,8 @@ Optional fields:
 
 - `memory`: `int`
 - `cpus`: `float`
+
+<a id="tagresourcerequestrequesttypedef"></a>
 
 ## TagResourceRequestRequestTypeDef
 
@@ -1294,6 +1472,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1304,6 +1484,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateconnectivityinforequestrequesttypedef"></a>
 
 ## UpdateConnectivityInfoRequestRequestTypeDef
 
@@ -1316,6 +1498,8 @@ Required fields:
 - `thingName`: `str`
 - `connectivityInfo`:
   `Sequence`\[[ConnectivityInfoTypeDef](./type_defs.md#connectivityinfotypedef)\]
+
+<a id="updateconnectivityinforesponsetypedef"></a>
 
 ## UpdateConnectivityInfoResponseTypeDef
 

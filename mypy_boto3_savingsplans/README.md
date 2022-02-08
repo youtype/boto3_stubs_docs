@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-savingsplans-module"></a>
+
 # Type annotations for boto3 SavingsPlans module
 
 > [Index](..) > SavingsPlans
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SavingsPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/savingsplans.html#SavingsPlans)
 type annotations stubs module
-[mypy_boto3_savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
+[mypy-boto3-savingsplans](https://pypi.org/project/mypy-boto3-savingsplans/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[savingsplans]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[savingsplans]'
+
+# standalone installation
 pip install mypy-boto3-savingsplans
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-savingsplans
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="savingsplansclient"></a>
 
 ## SavingsPlansClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_savingsplans.client import SavingsPlansClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -44,6 +58,8 @@ from mypy_boto3_savingsplans.client import SavingsPlansClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SavingsPlansClient [exceptions](./client.md#exceptions)
@@ -53,6 +69,8 @@ SavingsPlansClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceQuotaExceededException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -78,6 +96,8 @@ from mypy_boto3_savingsplans.literals import CurrencyCodeType, ...
 - [SavingsPlanTypeType](./literals.md#savingsplantypetype)
 - [SavingsPlansFilterNameType](./literals.md#savingsplansfilternametype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

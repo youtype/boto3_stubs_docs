@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-applicationdiscoveryservice-module"></a>
+
 # Paginators for boto3 ApplicationDiscoveryService module
 
 > [Index](..) > [ApplicationDiscoveryService](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
-[mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
+[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 - [Paginators for boto3 ApplicationDiscoveryService module](#paginators-for-boto3-applicationdiscoveryservice-module)
   - [DescribeAgentsPaginator](#describeagentspaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [DescribeTagsPaginator](#describetagspaginator)
   - [ListConfigurationsPaginator](#listconfigurationspaginator)
 
+<a id="describeagentspaginator"></a>
+
 ## DescribeAgentsPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_discovery.paginator import DescribeAgentsPaginator
 
 def get_describe_agents_paginator() -> DescribeAgentsPaginator:
-    return boto3.client("discovery").get_paginator("describe_agents")
+    return Session().client("discovery").get_paginator("describe_agents")
 ```
 
 Boto3 documentation:
@@ -42,6 +48,8 @@ Arguments for `DescribeAgentsPaginator.paginate` method:
 `DescribeAgentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef)\].
 
+<a id="describecontinuousexportspaginator"></a>
+
 ## DescribeContinuousExportsPaginator
 
 Type annotations for
@@ -50,10 +58,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_discovery.paginator import DescribeContinuousExportsPaginator
 
 def get_describe_continuous_exports_paginator() -> DescribeContinuousExportsPaginator:
-    return boto3.client("discovery").get_paginator("describe_continuous_exports")
+    return Session().client("discovery").get_paginator("describe_continuous_exports")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `DescribeContinuousExportsPaginator.paginate` method:
 `DescribeContinuousExportsPaginator.paginate` returns
 `_PageIterator`\[[DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef)\].
 
+<a id="describeexportconfigurationspaginator"></a>
+
 ## DescribeExportConfigurationsPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_discovery.paginator import DescribeExportConfigurationsPaginator
 
 def get_describe_export_configurations_paginator() -> DescribeExportConfigurationsPaginator:
-    return boto3.client("discovery").get_paginator("describe_export_configurations")
+    return Session().client("discovery").get_paginator("describe_export_configurations")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `DescribeExportConfigurationsPaginator.paginate` method:
 `DescribeExportConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef)\].
 
+<a id="describeexporttaskspaginator"></a>
+
 ## DescribeExportTasksPaginator
 
 Type annotations for
@@ -102,10 +118,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_discovery.paginator import DescribeExportTasksPaginator
 
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
-    return boto3.client("discovery").get_paginator("describe_export_tasks")
+    return Session().client("discovery").get_paginator("describe_export_tasks")
 ```
 
 Boto3 documentation:
@@ -122,6 +140,8 @@ Arguments for `DescribeExportTasksPaginator.paginate` method:
 `DescribeExportTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef)\].
 
+<a id="describetagspaginator"></a>
+
 ## DescribeTagsPaginator
 
 Type annotations for
@@ -130,10 +150,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_discovery.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
-    return boto3.client("discovery").get_paginator("describe_tags")
+    return Session().client("discovery").get_paginator("describe_tags")
 ```
 
 Boto3 documentation:
@@ -148,6 +170,8 @@ Arguments for `DescribeTagsPaginator.paginate` method:
 `DescribeTagsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef)\].
 
+<a id="listconfigurationspaginator"></a>
+
 ## ListConfigurationsPaginator
 
 Type annotations for
@@ -156,10 +180,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_discovery.paginator import ListConfigurationsPaginator
 
 def get_list_configurations_paginator() -> ListConfigurationsPaginator:
-    return boto3.client("discovery").get_paginator("list_configurations")
+    return Session().client("discovery").get_paginator("list_configurations")
 ```
 
 Boto3 documentation:

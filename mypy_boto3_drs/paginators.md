@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-drs-module"></a>
+
 # Paginators for boto3 drs module
 
 > [Index](..) > [drs](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
 type annotations stubs module
-[mypy_boto3_drs](https://pypi.org/project/mypy-boto3-drs/).
+[mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
 
 - [Paginators for boto3 drs module](#paginators-for-boto3-drs-module)
   - [DescribeJobLogItemsPaginator](#describejoblogitemspaginator)
@@ -15,6 +17,8 @@ type annotations stubs module
   - [DescribeReplicationConfigurationTemplatesPaginator](#describereplicationconfigurationtemplatespaginator)
   - [DescribeSourceServersPaginator](#describesourceserverspaginator)
 
+<a id="describejoblogitemspaginator"></a>
+
 ## DescribeJobLogItemsPaginator
 
 Type annotations for
@@ -23,10 +27,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_drs.paginator import DescribeJobLogItemsPaginator
 
 def get_describe_job_log_items_paginator() -> DescribeJobLogItemsPaginator:
-    return boto3.client("drs").get_paginator("describe_job_log_items")
+    return Session().client("drs").get_paginator("describe_job_log_items")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `DescribeJobLogItemsPaginator.paginate` method:
 `DescribeJobLogItemsPaginator.paginate` returns
 `_PageIterator`\[[DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef)\].
 
+<a id="describejobspaginator"></a>
+
 ## DescribeJobsPaginator
 
 Type annotations for `boto3.client("drs").get_paginator("describe_jobs")`.
@@ -48,10 +56,12 @@ Type annotations for `boto3.client("drs").get_paginator("describe_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_drs.paginator import DescribeJobsPaginator
 
 def get_describe_jobs_paginator() -> DescribeJobsPaginator:
-    return boto3.client("drs").get_paginator("describe_jobs")
+    return Session().client("drs").get_paginator("describe_jobs")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `DescribeJobsPaginator.paginate` method:
 `DescribeJobsPaginator.paginate` returns
 `_PageIterator`\[[DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef)\].
 
+<a id="describerecoveryinstancespaginator"></a>
+
 ## DescribeRecoveryInstancesPaginator
 
 Type annotations for
@@ -76,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_drs.paginator import DescribeRecoveryInstancesPaginator
 
 def get_describe_recovery_instances_paginator() -> DescribeRecoveryInstancesPaginator:
-    return boto3.client("drs").get_paginator("describe_recovery_instances")
+    return Session().client("drs").get_paginator("describe_recovery_instances")
 ```
 
 Boto3 documentation:
@@ -96,6 +110,8 @@ Arguments for `DescribeRecoveryInstancesPaginator.paginate` method:
 `DescribeRecoveryInstancesPaginator.paginate` returns
 `_PageIterator`\[[DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef)\].
 
+<a id="describerecoverysnapshotspaginator"></a>
+
 ## DescribeRecoverySnapshotsPaginator
 
 Type annotations for
@@ -104,10 +120,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_drs.paginator import DescribeRecoverySnapshotsPaginator
 
 def get_describe_recovery_snapshots_paginator() -> DescribeRecoverySnapshotsPaginator:
-    return boto3.client("drs").get_paginator("describe_recovery_snapshots")
+    return Session().client("drs").get_paginator("describe_recovery_snapshots")
 ```
 
 Boto3 documentation:
@@ -126,6 +144,8 @@ Arguments for `DescribeRecoverySnapshotsPaginator.paginate` method:
 `DescribeRecoverySnapshotsPaginator.paginate` returns
 `_PageIterator`\[[DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef)\].
 
+<a id="describereplicationconfigurationtemplatespaginator"></a>
+
 ## DescribeReplicationConfigurationTemplatesPaginator
 
 Type annotations for
@@ -134,10 +154,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_drs.paginator import DescribeReplicationConfigurationTemplatesPaginator
 
 def get_describe_replication_configuration_templates_paginator() -> DescribeReplicationConfigurationTemplatesPaginator:
-    return boto3.client("drs").get_paginator("describe_replication_configuration_templates")
+    return Session().client("drs").get_paginator("describe_replication_configuration_templates")
 ```
 
 Boto3 documentation:
@@ -153,6 +175,8 @@ method:
 `DescribeReplicationConfigurationTemplatesPaginator.paginate` returns
 `_PageIterator`\[[DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef)\].
 
+<a id="describesourceserverspaginator"></a>
+
 ## DescribeSourceServersPaginator
 
 Type annotations for
@@ -161,10 +185,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_drs.paginator import DescribeSourceServersPaginator
 
 def get_describe_source_servers_paginator() -> DescribeSourceServersPaginator:
-    return boto3.client("drs").get_paginator("describe_source_servers")
+    return Session().client("drs").get_paginator("describe_source_servers")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-athena-module"></a>
+
 # Literals for boto3 Athena module
 
 > [Index](..) > [Athena](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module
-[mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
+[mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Literals for boto3 Athena module](#literals-for-boto3-athena-module)
   - [ColumnNullableType](#columnnullabletype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="columnnullabletype"></a>
+
 ## ColumnNullableType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `NOT_NULL`
 - `NULLABLE`
 - `UNKNOWN`
+
+<a id="datacatalogtypetype"></a>
 
 ## DataCatalogTypeType
 
@@ -48,6 +54,8 @@ Values:
 - `HIVE`
 - `LAMBDA`
 
+<a id="encryptionoptiontype"></a>
+
 ## EncryptionOptionType
 
 ```python
@@ -60,6 +68,8 @@ Values:
 - `SSE_KMS`
 - `SSE_S3`
 
+<a id="getqueryresultspaginatorname"></a>
+
 ## GetQueryResultsPaginatorName
 
 ```python
@@ -69,6 +79,8 @@ from mypy_boto3_athena.literals import GetQueryResultsPaginatorName
 Values:
 
 - `get_query_results`
+
+<a id="listdatacatalogspaginatorname"></a>
 
 ## ListDataCatalogsPaginatorName
 
@@ -80,6 +92,8 @@ Values:
 
 - `list_data_catalogs`
 
+<a id="listdatabasespaginatorname"></a>
+
 ## ListDatabasesPaginatorName
 
 ```python
@@ -89,6 +103,8 @@ from mypy_boto3_athena.literals import ListDatabasesPaginatorName
 Values:
 
 - `list_databases`
+
+<a id="listnamedqueriespaginatorname"></a>
 
 ## ListNamedQueriesPaginatorName
 
@@ -100,6 +116,8 @@ Values:
 
 - `list_named_queries`
 
+<a id="listqueryexecutionspaginatorname"></a>
+
 ## ListQueryExecutionsPaginatorName
 
 ```python
@@ -109,6 +127,8 @@ from mypy_boto3_athena.literals import ListQueryExecutionsPaginatorName
 Values:
 
 - `list_query_executions`
+
+<a id="listtablemetadatapaginatorname"></a>
 
 ## ListTableMetadataPaginatorName
 
@@ -120,6 +140,8 @@ Values:
 
 - `list_table_metadata`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -129,6 +151,8 @@ from mypy_boto3_athena.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="queryexecutionstatetype"></a>
 
 ## QueryExecutionStateType
 
@@ -144,6 +168,8 @@ Values:
 - `RUNNING`
 - `SUCCEEDED`
 
+<a id="statementtypetype"></a>
+
 ## StatementTypeType
 
 ```python
@@ -156,6 +182,8 @@ Values:
 - `DML`
 - `UTILITY`
 
+<a id="workgroupstatetype"></a>
+
 ## WorkGroupStateType
 
 ```python
@@ -166,6 +194,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -474,6 +504,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-signer-module"></a>
+
 # Literals for boto3 signer module
 
 > [Index](..) > [signer](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [signer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/signer.html#signer)
 type annotations stubs module
-[mypy_boto3_signer](https://pypi.org/project/mypy-boto3-signer/).
+[mypy-boto3-signer](https://pypi.org/project/mypy-boto3-signer/).
 
 - [Literals for boto3 signer module](#literals-for-boto3-signer-module)
   - [CategoryType](#categorytype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="categorytype"></a>
+
 ## CategoryType
 
 ```python
@@ -32,6 +36,8 @@ from mypy_boto3_signer.literals import CategoryType
 Values:
 
 - `AWSIoT`
+
+<a id="encryptionalgorithmtype"></a>
 
 ## EncryptionAlgorithmType
 
@@ -44,6 +50,8 @@ Values:
 - `ECDSA`
 - `RSA`
 
+<a id="hashalgorithmtype"></a>
+
 ## HashAlgorithmType
 
 ```python
@@ -54,6 +62,8 @@ Values:
 
 - `SHA1`
 - `SHA256`
+
+<a id="imageformattype"></a>
 
 ## ImageFormatType
 
@@ -67,6 +77,8 @@ Values:
 - `JSONDetached`
 - `JSONEmbedded`
 
+<a id="listsigningjobspaginatorname"></a>
+
 ## ListSigningJobsPaginatorName
 
 ```python
@@ -76,6 +88,8 @@ from mypy_boto3_signer.literals import ListSigningJobsPaginatorName
 Values:
 
 - `list_signing_jobs`
+
+<a id="listsigningplatformspaginatorname"></a>
 
 ## ListSigningPlatformsPaginatorName
 
@@ -87,6 +101,8 @@ Values:
 
 - `list_signing_platforms`
 
+<a id="listsigningprofilespaginatorname"></a>
+
 ## ListSigningProfilesPaginatorName
 
 ```python
@@ -96,6 +112,8 @@ from mypy_boto3_signer.literals import ListSigningProfilesPaginatorName
 Values:
 
 - `list_signing_profiles`
+
+<a id="signingprofilestatustype"></a>
 
 ## SigningProfileStatusType
 
@@ -109,6 +127,8 @@ Values:
 - `Canceled`
 - `Revoked`
 
+<a id="signingstatustype"></a>
+
 ## SigningStatusType
 
 ```python
@@ -121,6 +141,8 @@ Values:
 - `InProgress`
 - `Succeeded`
 
+<a id="successfulsigningjobwaitername"></a>
+
 ## SuccessfulSigningJobWaiterName
 
 ```python
@@ -130,6 +152,8 @@ from mypy_boto3_signer.literals import SuccessfulSigningJobWaiterName
 Values:
 
 - `successful_signing_job`
+
+<a id="validitytypetype"></a>
 
 ## ValidityTypeType
 
@@ -142,6 +166,8 @@ Values:
 - `DAYS`
 - `MONTHS`
 - `YEARS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -451,6 +477,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -462,6 +490,8 @@ Values:
 - `list_signing_jobs`
 - `list_signing_platforms`
 - `list_signing_profiles`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

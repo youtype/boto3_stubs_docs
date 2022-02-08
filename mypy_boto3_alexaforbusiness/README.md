@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-alexaforbusiness-module"></a>
+
 # Type annotations for boto3 AlexaForBusiness module
 
 > [Index](..) > AlexaForBusiness
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
-[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[alexaforbusiness]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[alexaforbusiness]'
+
+# standalone installation
 pip install mypy-boto3-alexaforbusiness
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-alexaforbusiness
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="alexaforbusinessclient"></a>
+
 ## AlexaForBusinessClient
 
 Type annotations for `boto3.client("alexaforbusiness")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -130,6 +144,8 @@ from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
 - [update_room](./client.md#update_room)
 - [update_skill_group](./client.md#update_skill_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AlexaForBusinessClient [exceptions](./client.md#exceptions)
@@ -151,6 +167,8 @@ AlexaForBusinessClient [exceptions](./client.md#exceptions)
 - SkillNotLinkedException
 - UnauthorizedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -159,7 +177,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_alexaforbusiness.paginators import ListBusinessReportSchedulesPaginator, ...
+from mypy_boto3_alexaforbusiness.paginator import ListBusinessReportSchedulesPaginator, ...
 ```
 
 - [ListBusinessReportSchedulesPaginator](./paginators.md#listbusinessreportschedulespaginator)
@@ -175,6 +193,8 @@ from mypy_boto3_alexaforbusiness.paginators import ListBusinessReportSchedulesPa
 - [SearchRoomsPaginator](./paginators.md#searchroomspaginator)
 - [SearchSkillGroupsPaginator](./paginators.md#searchskillgroupspaginator)
 - [SearchUsersPaginator](./paginators.md#searchuserspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -229,6 +249,8 @@ from mypy_boto3_alexaforbusiness.literals import BusinessReportFailureCodeType, 
 - [WakeWordType](./literals.md#wakewordtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

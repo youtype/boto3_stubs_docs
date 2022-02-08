@@ -1,3 +1,5 @@
+<a id="codestarconnectionsclient-for-boto3-codestarconnections-module"></a>
+
 # CodeStarconnectionsClient for boto3 CodeStarconnections module
 
 > [Index](..) > [CodeStarconnections](.) > CodeStarconnectionsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStarconnections](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections)
 type annotations stubs module
-[mypy_boto3_codestar_connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
+[mypy-boto3-codestar-connections](https://pypi.org/project/mypy-boto3-codestar-connections/).
 
 - [CodeStarconnectionsClient for boto3 CodeStarconnections module](#codestarconnectionsclient-for-boto3-codestarconnections-module)
   - [CodeStarconnectionsClient](#codestarconnectionsclient)
@@ -27,6 +29,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_host](#update_host)
 
+<a id="codestarconnectionsclient"></a>
+
 ## CodeStarconnectionsClient
 
 Type annotations for `boto3.client("codestar-connections")`
@@ -34,14 +38,17 @@ Type annotations for `boto3.client("codestar-connections")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_codestar_connections.client import CodeStarconnectionsClient
 
 def get_codestar-connections_client() -> CodeStarconnectionsClient:
-    return boto3.client("codestar-connections")
+    return Session().client("codestar-connections")
 ```
 
 Boto3 documentation:
 [CodeStarconnections.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -64,7 +71,11 @@ Exceptions:
 - `Exceptions.ResourceUnavailableException`
 - `Exceptions.UnsupportedOperationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -76,6 +87,8 @@ Boto3 documentation:
 [CodeStarconnections.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-connections.html#CodeStarconnections.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -92,6 +105,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_connection"></a>
 
 ### create_connection
 
@@ -116,6 +131,8 @@ Keyword-only arguments:
 
 Returns
 [CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef).
+
+<a id="create_host"></a>
 
 ### create_host
 
@@ -142,6 +159,8 @@ Keyword-only arguments:
 
 Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
 
+<a id="delete_connection"></a>
+
 ### delete_connection
 
 The connection to be deleted.
@@ -161,6 +180,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_host"></a>
+
 ### delete_host
 
 The host to be deleted.
@@ -178,6 +199,8 @@ Keyword-only arguments:
 - `HostArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -197,6 +220,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_connection"></a>
 
 ### get_connection
 
@@ -219,6 +244,8 @@ Keyword-only arguments:
 Returns
 [GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef).
 
+<a id="get_host"></a>
+
 ### get_host
 
 Returns the host ARN and details such as status, provider type, endpoint, and,
@@ -237,6 +264,8 @@ Keyword-only arguments:
 - `HostArn`: `str` *(required)*
 
 Returns [GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef).
+
+<a id="list_connections"></a>
 
 ### list_connections
 
@@ -261,6 +290,8 @@ Keyword-only arguments:
 Returns
 [ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef).
 
+<a id="list_hosts"></a>
+
 ### list_hosts
 
 Lists the hosts associated with your account.
@@ -279,6 +310,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -301,6 +334,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds to or modifies the tags of the given resource.
@@ -321,6 +356,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from an AWS resource.
@@ -340,6 +377,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_host"></a>
 
 ### update_host
 

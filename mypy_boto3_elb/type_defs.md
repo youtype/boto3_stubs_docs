@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-elasticloadbalancing-module"></a>
+
 # Typed dictionaries for boto3 ElasticLoadBalancing module
 
 > [Index](..) > [ElasticLoadBalancing](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticLoadBalancing](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elb.html#ElasticLoadBalancing)
 type annotations stubs module
-[mypy_boto3_elb](https://pypi.org/project/mypy-boto3-elb/).
+[mypy-boto3-elb](https://pypi.org/project/mypy-boto3-elb/).
 
 - [Typed dictionaries for boto3 ElasticLoadBalancing module](#typed-dictionaries-for-boto3-elasticloadbalancing-module)
   - [AccessLogTypeDef](#accesslogtypedef)
@@ -84,6 +86,8 @@ type annotations stubs module
   - [TagTypeDef](#tagtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accesslogtypedef"></a>
+
 ## AccessLogTypeDef
 
 ```python
@@ -100,6 +104,8 @@ Optional fields:
 - `EmitInterval`: `int`
 - `S3BucketPrefix`: `str`
 
+<a id="addavailabilityzonesinputrequesttypedef"></a>
+
 ## AddAvailabilityZonesInputRequestTypeDef
 
 ```python
@@ -110,6 +116,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `AvailabilityZones`: `Sequence`\[`str`\]
+
+<a id="addavailabilityzonesoutputtypedef"></a>
 
 ## AddAvailabilityZonesOutputTypeDef
 
@@ -123,6 +131,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addtagsinputrequesttypedef"></a>
+
 ## AddTagsInputRequestTypeDef
 
 ```python
@@ -133,6 +143,8 @@ Required fields:
 
 - `LoadBalancerNames`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="additionalattributetypedef"></a>
 
 ## AdditionalAttributeTypeDef
 
@@ -145,6 +157,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="appcookiestickinesspolicytypedef"></a>
+
 ## AppCookieStickinessPolicyTypeDef
 
 ```python
@@ -156,6 +170,8 @@ Optional fields:
 - `PolicyName`: `str`
 - `CookieName`: `str`
 
+<a id="applysecuritygroupstoloadbalancerinputrequesttypedef"></a>
+
 ## ApplySecurityGroupsToLoadBalancerInputRequestTypeDef
 
 ```python
@@ -166,6 +182,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `SecurityGroups`: `Sequence`\[`str`\]
+
+<a id="applysecuritygroupstoloadbalanceroutputtypedef"></a>
 
 ## ApplySecurityGroupsToLoadBalancerOutputTypeDef
 
@@ -179,6 +197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="attachloadbalancertosubnetsinputrequesttypedef"></a>
+
 ## AttachLoadBalancerToSubnetsInputRequestTypeDef
 
 ```python
@@ -189,6 +209,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `Subnets`: `Sequence`\[`str`\]
+
+<a id="attachloadbalancertosubnetsoutputtypedef"></a>
 
 ## AttachLoadBalancerToSubnetsOutputTypeDef
 
@@ -202,6 +224,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="backendserverdescriptiontypedef"></a>
+
 ## BackendServerDescriptionTypeDef
 
 ```python
@@ -212,6 +236,8 @@ Optional fields:
 
 - `InstancePort`: `int`
 - `PolicyNames`: `List`\[`str`\]
+
+<a id="configurehealthcheckinputrequesttypedef"></a>
 
 ## ConfigureHealthCheckInputRequestTypeDef
 
@@ -224,6 +250,8 @@ Required fields:
 - `LoadBalancerName`: `str`
 - `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
 
+<a id="configurehealthcheckoutputtypedef"></a>
+
 ## ConfigureHealthCheckOutputTypeDef
 
 ```python
@@ -235,6 +263,8 @@ Required fields:
 - `HealthCheck`: [HealthCheckTypeDef](./type_defs.md#healthchecktypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="connectiondrainingtypedef"></a>
 
 ## ConnectionDrainingTypeDef
 
@@ -250,6 +280,8 @@ Optional fields:
 
 - `Timeout`: `int`
 
+<a id="connectionsettingstypedef"></a>
+
 ## ConnectionSettingsTypeDef
 
 ```python
@@ -259,6 +291,8 @@ from mypy_boto3_elb.type_defs import ConnectionSettingsTypeDef
 Required fields:
 
 - `IdleTimeout`: `int`
+
+<a id="createaccesspointinputrequesttypedef"></a>
 
 ## CreateAccessPointInputRequestTypeDef
 
@@ -279,6 +313,8 @@ Optional fields:
 - `Scheme`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createaccesspointoutputtypedef"></a>
+
 ## CreateAccessPointOutputTypeDef
 
 ```python
@@ -291,6 +327,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createappcookiestickinesspolicyinputrequesttypedef"></a>
+
 ## CreateAppCookieStickinessPolicyInputRequestTypeDef
 
 ```python
@@ -302,6 +340,8 @@ Required fields:
 - `LoadBalancerName`: `str`
 - `PolicyName`: `str`
 - `CookieName`: `str`
+
+<a id="createlbcookiestickinesspolicyinputrequesttypedef"></a>
 
 ## CreateLBCookieStickinessPolicyInputRequestTypeDef
 
@@ -318,6 +358,8 @@ Optional fields:
 
 - `CookieExpirationPeriod`: `int`
 
+<a id="createloadbalancerlistenerinputrequesttypedef"></a>
+
 ## CreateLoadBalancerListenerInputRequestTypeDef
 
 ```python
@@ -328,6 +370,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `Listeners`: `Sequence`\[[ListenerTypeDef](./type_defs.md#listenertypedef)\]
+
+<a id="createloadbalancerpolicyinputrequesttypedef"></a>
 
 ## CreateLoadBalancerPolicyInputRequestTypeDef
 
@@ -346,6 +390,8 @@ Optional fields:
 - `PolicyAttributes`:
   `Sequence`\[[PolicyAttributeTypeDef](./type_defs.md#policyattributetypedef)\]
 
+<a id="crosszoneloadbalancingtypedef"></a>
+
 ## CrossZoneLoadBalancingTypeDef
 
 ```python
@@ -356,6 +402,8 @@ Required fields:
 
 - `Enabled`: `bool`
 
+<a id="deleteaccesspointinputrequesttypedef"></a>
+
 ## DeleteAccessPointInputRequestTypeDef
 
 ```python
@@ -365,6 +413,8 @@ from mypy_boto3_elb.type_defs import DeleteAccessPointInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerName`: `str`
+
+<a id="deleteloadbalancerlistenerinputrequesttypedef"></a>
 
 ## DeleteLoadBalancerListenerInputRequestTypeDef
 
@@ -377,6 +427,8 @@ Required fields:
 - `LoadBalancerName`: `str`
 - `LoadBalancerPorts`: `Sequence`\[`int`\]
 
+<a id="deleteloadbalancerpolicyinputrequesttypedef"></a>
+
 ## DeleteLoadBalancerPolicyInputRequestTypeDef
 
 ```python
@@ -388,6 +440,8 @@ Required fields:
 - `LoadBalancerName`: `str`
 - `PolicyName`: `str`
 
+<a id="deregisterendpointsinputrequesttypedef"></a>
+
 ## DeregisterEndPointsInputRequestTypeDef
 
 ```python
@@ -398,6 +452,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+
+<a id="deregisterendpointsoutputtypedef"></a>
 
 ## DeregisterEndPointsOutputTypeDef
 
@@ -411,6 +467,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaccesspointsinputrequesttypedef"></a>
+
 ## DescribeAccessPointsInputRequestTypeDef
 
 ```python
@@ -422,6 +480,8 @@ Optional fields:
 - `LoadBalancerNames`: `Sequence`\[`str`\]
 - `Marker`: `str`
 - `PageSize`: `int`
+
+<a id="describeaccesspointsoutputtypedef"></a>
 
 ## DescribeAccessPointsOutputTypeDef
 
@@ -437,6 +497,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeaccountlimitsinputrequesttypedef"></a>
+
 ## DescribeAccountLimitsInputRequestTypeDef
 
 ```python
@@ -447,6 +509,8 @@ Optional fields:
 
 - `Marker`: `str`
 - `PageSize`: `int`
+
+<a id="describeaccountlimitsoutputtypedef"></a>
 
 ## DescribeAccountLimitsOutputTypeDef
 
@@ -460,6 +524,8 @@ Required fields:
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeendpointstateinputrequesttypedef"></a>
 
 ## DescribeEndPointStateInputRequestTypeDef
 
@@ -475,6 +541,8 @@ Optional fields:
 
 - `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 
+<a id="describeendpointstateoutputtypedef"></a>
+
 ## DescribeEndPointStateOutputTypeDef
 
 ```python
@@ -488,6 +556,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloadbalancerattributesinputrequesttypedef"></a>
+
 ## DescribeLoadBalancerAttributesInputRequestTypeDef
 
 ```python
@@ -497,6 +567,8 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerAttributesInputRequestT
 Required fields:
 
 - `LoadBalancerName`: `str`
+
+<a id="describeloadbalancerattributesoutputtypedef"></a>
 
 ## DescribeLoadBalancerAttributesOutputTypeDef
 
@@ -511,6 +583,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloadbalancerpoliciesinputrequesttypedef"></a>
+
 ## DescribeLoadBalancerPoliciesInputRequestTypeDef
 
 ```python
@@ -521,6 +595,8 @@ Optional fields:
 
 - `LoadBalancerName`: `str`
 - `PolicyNames`: `Sequence`\[`str`\]
+
+<a id="describeloadbalancerpoliciesoutputtypedef"></a>
 
 ## DescribeLoadBalancerPoliciesOutputTypeDef
 
@@ -535,6 +611,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeloadbalancerpolicytypesinputrequesttypedef"></a>
+
 ## DescribeLoadBalancerPolicyTypesInputRequestTypeDef
 
 ```python
@@ -544,6 +622,8 @@ from mypy_boto3_elb.type_defs import DescribeLoadBalancerPolicyTypesInputRequest
 Optional fields:
 
 - `PolicyTypeNames`: `Sequence`\[`str`\]
+
+<a id="describeloadbalancerpolicytypesoutputtypedef"></a>
 
 ## DescribeLoadBalancerPolicyTypesOutputTypeDef
 
@@ -558,6 +638,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetagsinputrequesttypedef"></a>
+
 ## DescribeTagsInputRequestTypeDef
 
 ```python
@@ -567,6 +649,8 @@ from mypy_boto3_elb.type_defs import DescribeTagsInputRequestTypeDef
 Required fields:
 
 - `LoadBalancerNames`: `Sequence`\[`str`\]
+
+<a id="describetagsoutputtypedef"></a>
 
 ## DescribeTagsOutputTypeDef
 
@@ -581,6 +665,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detachloadbalancerfromsubnetsinputrequesttypedef"></a>
+
 ## DetachLoadBalancerFromSubnetsInputRequestTypeDef
 
 ```python
@@ -591,6 +677,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `Subnets`: `Sequence`\[`str`\]
+
+<a id="detachloadbalancerfromsubnetsoutputtypedef"></a>
 
 ## DetachLoadBalancerFromSubnetsOutputTypeDef
 
@@ -603,6 +691,8 @@ Required fields:
 - `Subnets`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="healthchecktypedef"></a>
 
 ## HealthCheckTypeDef
 
@@ -618,6 +708,8 @@ Required fields:
 - `UnhealthyThreshold`: `int`
 - `HealthyThreshold`: `int`
 
+<a id="instancestatetypedef"></a>
+
 ## InstanceStateTypeDef
 
 ```python
@@ -631,6 +723,8 @@ Optional fields:
 - `ReasonCode`: `str`
 - `Description`: `str`
 
+<a id="instancetypedef"></a>
+
 ## InstanceTypeDef
 
 ```python
@@ -640,6 +734,8 @@ from mypy_boto3_elb.type_defs import InstanceTypeDef
 Optional fields:
 
 - `InstanceId`: `str`
+
+<a id="lbcookiestickinesspolicytypedef"></a>
 
 ## LBCookieStickinessPolicyTypeDef
 
@@ -652,6 +748,8 @@ Optional fields:
 - `PolicyName`: `str`
 - `CookieExpirationPeriod`: `int`
 
+<a id="limittypedef"></a>
+
 ## LimitTypeDef
 
 ```python
@@ -663,6 +761,8 @@ Optional fields:
 - `Name`: `str`
 - `Max`: `str`
 
+<a id="listenerdescriptiontypedef"></a>
+
 ## ListenerDescriptionTypeDef
 
 ```python
@@ -673,6 +773,8 @@ Optional fields:
 
 - `Listener`: [ListenerTypeDef](./type_defs.md#listenertypedef)
 - `PolicyNames`: `List`\[`str`\]
+
+<a id="listenertypedef"></a>
 
 ## ListenerTypeDef
 
@@ -691,6 +793,8 @@ Optional fields:
 - `InstanceProtocol`: `str`
 - `SSLCertificateId`: `str`
 
+<a id="loadbalancerattributestypedef"></a>
+
 ## LoadBalancerAttributesTypeDef
 
 ```python
@@ -708,6 +812,8 @@ Optional fields:
   [ConnectionSettingsTypeDef](./type_defs.md#connectionsettingstypedef)
 - `AdditionalAttributes`:
   `List`\[[AdditionalAttributeTypeDef](./type_defs.md#additionalattributetypedef)\]
+
+<a id="loadbalancerdescriptiontypedef"></a>
 
 ## LoadBalancerDescriptionTypeDef
 
@@ -737,6 +843,8 @@ Optional fields:
 - `CreatedTime`: `datetime`
 - `Scheme`: `str`
 
+<a id="modifyloadbalancerattributesinputrequesttypedef"></a>
+
 ## ModifyLoadBalancerAttributesInputRequestTypeDef
 
 ```python
@@ -748,6 +856,8 @@ Required fields:
 - `LoadBalancerName`: `str`
 - `LoadBalancerAttributes`:
   [LoadBalancerAttributesTypeDef](./type_defs.md#loadbalancerattributestypedef)
+
+<a id="modifyloadbalancerattributesoutputtypedef"></a>
 
 ## ModifyLoadBalancerAttributesOutputTypeDef
 
@@ -763,6 +873,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -774,6 +886,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="policiestypedef"></a>
 
 ## PoliciesTypeDef
 
@@ -789,6 +903,8 @@ Optional fields:
   `List`\[[LBCookieStickinessPolicyTypeDef](./type_defs.md#lbcookiestickinesspolicytypedef)\]
 - `OtherPolicies`: `List`\[`str`\]
 
+<a id="policyattributedescriptiontypedef"></a>
+
 ## PolicyAttributeDescriptionTypeDef
 
 ```python
@@ -800,6 +916,8 @@ Optional fields:
 - `AttributeName`: `str`
 - `AttributeValue`: `str`
 
+<a id="policyattributetypedef"></a>
+
 ## PolicyAttributeTypeDef
 
 ```python
@@ -810,6 +928,8 @@ Optional fields:
 
 - `AttributeName`: `str`
 - `AttributeValue`: `str`
+
+<a id="policyattributetypedescriptiontypedef"></a>
 
 ## PolicyAttributeTypeDescriptionTypeDef
 
@@ -825,6 +945,8 @@ Optional fields:
 - `DefaultValue`: `str`
 - `Cardinality`: `str`
 
+<a id="policydescriptiontypedef"></a>
+
 ## PolicyDescriptionTypeDef
 
 ```python
@@ -837,6 +959,8 @@ Optional fields:
 - `PolicyTypeName`: `str`
 - `PolicyAttributeDescriptions`:
   `List`\[[PolicyAttributeDescriptionTypeDef](./type_defs.md#policyattributedescriptiontypedef)\]
+
+<a id="policytypedescriptiontypedef"></a>
 
 ## PolicyTypeDescriptionTypeDef
 
@@ -851,6 +975,8 @@ Optional fields:
 - `PolicyAttributeTypeDescriptions`:
   `List`\[[PolicyAttributeTypeDescriptionTypeDef](./type_defs.md#policyattributetypedescriptiontypedef)\]
 
+<a id="registerendpointsinputrequesttypedef"></a>
+
 ## RegisterEndPointsInputRequestTypeDef
 
 ```python
@@ -861,6 +987,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `Instances`: `Sequence`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
+
+<a id="registerendpointsoutputtypedef"></a>
 
 ## RegisterEndPointsOutputTypeDef
 
@@ -874,6 +1002,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removeavailabilityzonesinputrequesttypedef"></a>
+
 ## RemoveAvailabilityZonesInputRequestTypeDef
 
 ```python
@@ -884,6 +1014,8 @@ Required fields:
 
 - `LoadBalancerName`: `str`
 - `AvailabilityZones`: `Sequence`\[`str`\]
+
+<a id="removeavailabilityzonesoutputtypedef"></a>
 
 ## RemoveAvailabilityZonesOutputTypeDef
 
@@ -897,6 +1029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removetagsinputrequesttypedef"></a>
+
 ## RemoveTagsInputRequestTypeDef
 
 ```python
@@ -907,6 +1041,8 @@ Required fields:
 
 - `LoadBalancerNames`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagKeyOnlyTypeDef](./type_defs.md#tagkeyonlytypedef)\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -922,6 +1058,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="setloadbalancerlistenersslcertificateinputrequesttypedef"></a>
+
 ## SetLoadBalancerListenerSSLCertificateInputRequestTypeDef
 
 ```python
@@ -933,6 +1071,8 @@ Required fields:
 - `LoadBalancerName`: `str`
 - `LoadBalancerPort`: `int`
 - `SSLCertificateId`: `str`
+
+<a id="setloadbalancerpoliciesforbackendserverinputrequesttypedef"></a>
 
 ## SetLoadBalancerPoliciesForBackendServerInputRequestTypeDef
 
@@ -946,6 +1086,8 @@ Required fields:
 - `InstancePort`: `int`
 - `PolicyNames`: `Sequence`\[`str`\]
 
+<a id="setloadbalancerpoliciesoflistenerinputrequesttypedef"></a>
+
 ## SetLoadBalancerPoliciesOfListenerInputRequestTypeDef
 
 ```python
@@ -958,6 +1100,8 @@ Required fields:
 - `LoadBalancerPort`: `int`
 - `PolicyNames`: `Sequence`\[`str`\]
 
+<a id="sourcesecuritygrouptypedef"></a>
+
 ## SourceSecurityGroupTypeDef
 
 ```python
@@ -968,6 +1112,8 @@ Optional fields:
 
 - `OwnerAlias`: `str`
 - `GroupName`: `str`
+
+<a id="tagdescriptiontypedef"></a>
 
 ## TagDescriptionTypeDef
 
@@ -980,6 +1126,8 @@ Optional fields:
 - `LoadBalancerName`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagkeyonlytypedef"></a>
+
 ## TagKeyOnlyTypeDef
 
 ```python
@@ -989,6 +1137,8 @@ from mypy_boto3_elb.type_defs import TagKeyOnlyTypeDef
 Optional fields:
 
 - `Key`: `str`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1003,6 +1153,8 @@ Required fields:
 Optional fields:
 
 - `Value`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

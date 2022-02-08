@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-synthetics-module"></a>
+
 # Type annotations for boto3 Synthetics module
 
 > [Index](..) > Synthetics
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Synthetics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/synthetics.html#Synthetics)
 type annotations stubs module
-[mypy_boto3_synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
+[mypy-boto3-synthetics](https://pypi.org/project/mypy-boto3-synthetics/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[synthetics]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[synthetics]'
+
+# standalone installation
 pip install mypy-boto3-synthetics
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-synthetics
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="syntheticsclient"></a>
 
 ## SyntheticsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_synthetics.client import SyntheticsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -48,6 +62,8 @@ from mypy_boto3_synthetics.client import SyntheticsClient
 - [untag_resource](./client.md#untag_resource)
 - [update_canary](./client.md#update_canary)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SyntheticsClient [exceptions](./client.md#exceptions)
@@ -55,8 +71,11 @@ SyntheticsClient [exceptions](./client.md#exceptions)
 - ClientError
 - ConflictException
 - InternalServerException
+- RequestEntityTooLargeException
 - ResourceNotFoundException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -74,6 +93,8 @@ from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
 - [CanaryStateType](./literals.md#canarystatetype)
 - [EncryptionModeType](./literals.md#encryptionmodetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

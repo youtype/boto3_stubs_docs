@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-waf-module"></a>
+
 # Type annotations for boto3 WAF module
 
 > [Index](..) > WAF
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WAF](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/waf.html#WAF)
 type annotations stubs module
-[mypy_boto3_waf](https://pypi.org/project/mypy-boto3-waf/).
+[mypy-boto3-waf](https://pypi.org/project/mypy-boto3-waf/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[waf]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[waf]'
+
+# standalone installation
 pip install mypy-boto3-waf
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-waf
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="wafclient"></a>
+
 ## WAFClient
 
 Type annotations for `boto3.client("waf")` as [WAFClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_waf.client import WAFClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -113,6 +127,8 @@ from mypy_boto3_waf.client import WAFClient
 - [update_web_acl](./client.md#update_web_acl)
 - [update_xss_match_set](./client.md#update_xss_match_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WAFClient [exceptions](./client.md#exceptions)
@@ -138,6 +154,8 @@ WAFClient [exceptions](./client.md#exceptions)
 - WAFTagOperationException
 - WAFTagOperationInternalErrorException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -146,7 +164,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_waf.paginators import GetRateBasedRuleManagedKeysPaginator, ...
+from mypy_boto3_waf.paginator import GetRateBasedRuleManagedKeysPaginator, ...
 ```
 
 - [GetRateBasedRuleManagedKeysPaginator](./paginators.md#getratebasedrulemanagedkeyspaginator)
@@ -165,6 +183,8 @@ from mypy_boto3_waf.paginators import GetRateBasedRuleManagedKeysPaginator, ...
 - [ListSubscribedRuleGroupsPaginator](./paginators.md#listsubscribedrulegroupspaginator)
 - [ListWebACLsPaginator](./paginators.md#listwebaclspaginator)
 - [ListXssMatchSetsPaginator](./paginators.md#listxssmatchsetspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -208,6 +228,8 @@ from mypy_boto3_waf.literals import ChangeActionType, ...
 - [WafRuleTypeType](./literals.md#wafruletypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

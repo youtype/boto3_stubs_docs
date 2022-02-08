@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-machinelearning-module"></a>
+
 # Type annotations for boto3 MachineLearning module
 
 > [Index](..) > MachineLearning
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
-[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[machinelearning]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[machinelearning]'
+
+# standalone installation
 pip install mypy-boto3-machinelearning
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-machinelearning
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="machinelearningclient"></a>
+
 ## MachineLearningClient
 
 Type annotations for `boto3.client("machinelearning")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_machinelearning.client import MachineLearningClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -67,6 +81,8 @@ from mypy_boto3_machinelearning.client import MachineLearningClient
 - [update_evaluation](./client.md#update_evaluation)
 - [update_ml_model](./client.md#update_ml_model)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MachineLearningClient [exceptions](./client.md#exceptions)
@@ -81,6 +97,8 @@ MachineLearningClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TagLimitExceededException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -89,13 +107,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.paginators import DescribeBatchPredictionsPaginator, ...
+from mypy_boto3_machinelearning.paginator import DescribeBatchPredictionsPaginator, ...
 ```
 
 - [DescribeBatchPredictionsPaginator](./paginators.md#describebatchpredictionspaginator)
 - [DescribeDataSourcesPaginator](./paginators.md#describedatasourcespaginator)
 - [DescribeEvaluationsPaginator](./paginators.md#describeevaluationspaginator)
 - [DescribeMLModelsPaginator](./paginators.md#describemlmodelspaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -105,13 +125,15 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_machinelearning.waiters import BatchPredictionAvailableWaiter, ...
+from mypy_boto3_machinelearning.waiter import BatchPredictionAvailableWaiter, ...
 ```
 
 - [BatchPredictionAvailableWaiter](./waiters.md#batchpredictionavailablewaiter)
 - [DataSourceAvailableWaiter](./waiters.md#datasourceavailablewaiter)
 - [EvaluationAvailableWaiter](./waiters.md#evaluationavailablewaiter)
 - [MLModelAvailableWaiter](./waiters.md#mlmodelavailablewaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -145,6 +167,8 @@ from mypy_boto3_machinelearning.literals import AlgorithmType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

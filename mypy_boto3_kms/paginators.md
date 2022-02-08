@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-kms-module"></a>
+
 # Paginators for boto3 KMS module
 
 > [Index](..) > [KMS](.) > Paginators
@@ -5,13 +7,15 @@
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module
-[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [Paginators for boto3 KMS module](#paginators-for-boto3-kms-module)
   - [ListAliasesPaginator](#listaliasespaginator)
   - [ListGrantsPaginator](#listgrantspaginator)
   - [ListKeyPoliciesPaginator](#listkeypoliciespaginator)
   - [ListKeysPaginator](#listkeyspaginator)
+
+<a id="listaliasespaginator"></a>
 
 ## ListAliasesPaginator
 
@@ -20,10 +24,12 @@ Type annotations for `boto3.client("kms").get_paginator("list_aliases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kms.paginator import ListAliasesPaginator
 
 def get_list_aliases_paginator() -> ListAliasesPaginator:
-    return boto3.client("kms").get_paginator("list_aliases")
+    return Session().client("kms").get_paginator("list_aliases")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListAliasesPaginator.paginate` method:
 `ListAliasesPaginator.paginate` returns
 `_PageIterator`\[[ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef)\].
 
+<a id="listgrantspaginator"></a>
+
 ## ListGrantsPaginator
 
 Type annotations for `boto3.client("kms").get_paginator("list_grants")`.
@@ -45,10 +53,12 @@ Type annotations for `boto3.client("kms").get_paginator("list_grants")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kms.paginator import ListGrantsPaginator
 
 def get_list_grants_paginator() -> ListGrantsPaginator:
-    return boto3.client("kms").get_paginator("list_grants")
+    return Session().client("kms").get_paginator("list_grants")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListGrantsPaginator.paginate` method:
 `ListGrantsPaginator.paginate` returns
 `_PageIterator`\[[ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef)\].
 
+<a id="listkeypoliciespaginator"></a>
+
 ## ListKeyPoliciesPaginator
 
 Type annotations for `boto3.client("kms").get_paginator("list_key_policies")`.
@@ -72,10 +84,12 @@ Type annotations for `boto3.client("kms").get_paginator("list_key_policies")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kms.paginator import ListKeyPoliciesPaginator
 
 def get_list_key_policies_paginator() -> ListKeyPoliciesPaginator:
-    return boto3.client("kms").get_paginator("list_key_policies")
+    return Session().client("kms").get_paginator("list_key_policies")
 ```
 
 Boto3 documentation:
@@ -90,6 +104,8 @@ Arguments for `ListKeyPoliciesPaginator.paginate` method:
 `ListKeyPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef)\].
 
+<a id="listkeyspaginator"></a>
+
 ## ListKeysPaginator
 
 Type annotations for `boto3.client("kms").get_paginator("list_keys")`.
@@ -97,10 +113,12 @@ Type annotations for `boto3.client("kms").get_paginator("list_keys")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kms.paginator import ListKeysPaginator
 
 def get_list_keys_paginator() -> ListKeysPaginator:
-    return boto3.client("kms").get_paginator("list_keys")
+    return Session().client("kms").get_paginator("list_keys")
 ```
 
 Boto3 documentation:

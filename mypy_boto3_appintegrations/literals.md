@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-appintegrationsservice-module"></a>
+
 # Literals for boto3 AppIntegrationsService module
 
 > [Index](..) > [AppIntegrationsService](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [AppIntegrationsService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appintegrations.html#AppIntegrationsService)
 type annotations stubs module
-[mypy_boto3_appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
+[mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [Literals for boto3 AppIntegrationsService module](#literals-for-boto3-appintegrationsservice-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

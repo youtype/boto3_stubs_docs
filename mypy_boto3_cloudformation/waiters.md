@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-cloudformation-module"></a>
+
 # Waiters for boto3 CloudFormation module
 
 > [Index](..) > [CloudFormation](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudFormation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation)
 type annotations stubs module
-[mypy_boto3_cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
+[mypy-boto3-cloudformation](https://pypi.org/project/mypy-boto3-cloudformation/).
 
 - [Waiters for boto3 CloudFormation module](#waiters-for-boto3-cloudformation-module)
   - [ChangeSetCreateCompleteWaiter](#changesetcreatecompletewaiter)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [StackUpdateCompleteWaiter](#stackupdatecompletewaiter)
   - [TypeRegistrationCompleteWaiter](#typeregistrationcompletewaiter)
 
+<a id="changesetcreatecompletewaiter"></a>
+
 ## ChangeSetCreateCompleteWaiter
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import ChangeSetCreateCompleteWaiter
 
 def get_change_set_create_complete_waiter() -> ChangeSetCreateCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("change_set_create_complete")
+    return Session().client("cloudformation").get_waiter("change_set_create_complete")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ChangeSetCreateCompleteWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stackcreatecompletewaiter"></a>
+
 ## StackCreateCompleteWaiter
 
 Type annotations for
@@ -49,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import StackCreateCompleteWaiter
 
 def get_stack_create_complete_waiter() -> StackCreateCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("stack_create_complete")
+    return Session().client("cloudformation").get_waiter("stack_create_complete")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `StackCreateCompleteWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stackdeletecompletewaiter"></a>
+
 ## StackDeleteCompleteWaiter
 
 Type annotations for
@@ -72,10 +84,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import StackDeleteCompleteWaiter
 
 def get_stack_delete_complete_waiter() -> StackDeleteCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("stack_delete_complete")
+    return Session().client("cloudformation").get_waiter("stack_delete_complete")
 ```
 
 Boto3 documentation:
@@ -87,6 +101,8 @@ Arguments for `StackDeleteCompleteWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stackexistswaiter"></a>
+
 ## StackExistsWaiter
 
 Type annotations for
@@ -95,10 +111,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import StackExistsWaiter
 
 def get_stack_exists_waiter() -> StackExistsWaiter:
-    return boto3.client("cloudformation").get_waiter("stack_exists")
+    return Session().client("cloudformation").get_waiter("stack_exists")
 ```
 
 Boto3 documentation:
@@ -110,6 +128,8 @@ Arguments for `StackExistsWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stackimportcompletewaiter"></a>
+
 ## StackImportCompleteWaiter
 
 Type annotations for
@@ -118,10 +138,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import StackImportCompleteWaiter
 
 def get_stack_import_complete_waiter() -> StackImportCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("stack_import_complete")
+    return Session().client("cloudformation").get_waiter("stack_import_complete")
 ```
 
 Boto3 documentation:
@@ -133,6 +155,8 @@ Arguments for `StackImportCompleteWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stackrollbackcompletewaiter"></a>
+
 ## StackRollbackCompleteWaiter
 
 Type annotations for
@@ -141,10 +165,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import StackRollbackCompleteWaiter
 
 def get_stack_rollback_complete_waiter() -> StackRollbackCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("stack_rollback_complete")
+    return Session().client("cloudformation").get_waiter("stack_rollback_complete")
 ```
 
 Boto3 documentation:
@@ -156,6 +182,8 @@ Arguments for `StackRollbackCompleteWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="stackupdatecompletewaiter"></a>
+
 ## StackUpdateCompleteWaiter
 
 Type annotations for
@@ -164,10 +192,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import StackUpdateCompleteWaiter
 
 def get_stack_update_complete_waiter() -> StackUpdateCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("stack_update_complete")
+    return Session().client("cloudformation").get_waiter("stack_update_complete")
 ```
 
 Boto3 documentation:
@@ -179,6 +209,8 @@ Arguments for `StackUpdateCompleteWaiter.wait` method:
 - `NextToken`: `str`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="typeregistrationcompletewaiter"></a>
+
 ## TypeRegistrationCompleteWaiter
 
 Type annotations for
@@ -187,10 +219,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudformation.waiter import TypeRegistrationCompleteWaiter
 
 def get_type_registration_complete_waiter() -> TypeRegistrationCompleteWaiter:
-    return boto3.client("cloudformation").get_waiter("type_registration_complete")
+    return Session().client("cloudformation").get_waiter("type_registration_complete")
 ```
 
 Boto3 documentation:

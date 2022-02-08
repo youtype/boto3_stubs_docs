@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-proton-module"></a>
+
 # Waiters for boto3 Proton module
 
 > [Index](..) > [Proton](.) > Waiters
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
 type annotations stubs module
-[mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
+[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 - [Waiters for boto3 Proton module](#waiters-for-boto3-proton-module)
   - [EnvironmentDeployedWaiter](#environmentdeployedwaiter)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ServiceTemplateVersionRegisteredWaiter](#servicetemplateversionregisteredwaiter)
   - [ServiceUpdatedWaiter](#serviceupdatedwaiter)
 
+<a id="environmentdeployedwaiter"></a>
+
 ## EnvironmentDeployedWaiter
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import EnvironmentDeployedWaiter
 
 def get_environment_deployed_waiter() -> EnvironmentDeployedWaiter:
-    return boto3.client("proton").get_waiter("environment_deployed")
+    return Session().client("proton").get_waiter("environment_deployed")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `EnvironmentDeployedWaiter.wait` method:
 - `name`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="environmenttemplateversionregisteredwaiter"></a>
+
 ## EnvironmentTemplateVersionRegisteredWaiter
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import EnvironmentTemplateVersionRegisteredWaiter
 
 def get_environment_template_version_registered_waiter() -> EnvironmentTemplateVersionRegisteredWaiter:
-    return boto3.client("proton").get_waiter("environment_template_version_registered")
+    return Session().client("proton").get_waiter("environment_template_version_registered")
 ```
 
 Boto3 documentation:
@@ -63,6 +73,8 @@ Arguments for `EnvironmentTemplateVersionRegisteredWaiter.wait` method:
 - `templateName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="servicecreatedwaiter"></a>
+
 ## ServiceCreatedWaiter
 
 Type annotations for `boto3.client("proton").get_waiter("service_created")`.
@@ -70,10 +82,12 @@ Type annotations for `boto3.client("proton").get_waiter("service_created")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import ServiceCreatedWaiter
 
 def get_service_created_waiter() -> ServiceCreatedWaiter:
-    return boto3.client("proton").get_waiter("service_created")
+    return Session().client("proton").get_waiter("service_created")
 ```
 
 Boto3 documentation:
@@ -84,6 +98,8 @@ Arguments for `ServiceCreatedWaiter.wait` method:
 - `name`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="servicedeletedwaiter"></a>
+
 ## ServiceDeletedWaiter
 
 Type annotations for `boto3.client("proton").get_waiter("service_deleted")`.
@@ -91,10 +107,12 @@ Type annotations for `boto3.client("proton").get_waiter("service_deleted")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import ServiceDeletedWaiter
 
 def get_service_deleted_waiter() -> ServiceDeletedWaiter:
-    return boto3.client("proton").get_waiter("service_deleted")
+    return Session().client("proton").get_waiter("service_deleted")
 ```
 
 Boto3 documentation:
@@ -105,6 +123,8 @@ Arguments for `ServiceDeletedWaiter.wait` method:
 - `name`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="serviceinstancedeployedwaiter"></a>
+
 ## ServiceInstanceDeployedWaiter
 
 Type annotations for
@@ -113,10 +133,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import ServiceInstanceDeployedWaiter
 
 def get_service_instance_deployed_waiter() -> ServiceInstanceDeployedWaiter:
-    return boto3.client("proton").get_waiter("service_instance_deployed")
+    return Session().client("proton").get_waiter("service_instance_deployed")
 ```
 
 Boto3 documentation:
@@ -128,6 +150,8 @@ Arguments for `ServiceInstanceDeployedWaiter.wait` method:
 - `serviceName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="servicepipelinedeployedwaiter"></a>
+
 ## ServicePipelineDeployedWaiter
 
 Type annotations for
@@ -136,10 +160,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import ServicePipelineDeployedWaiter
 
 def get_service_pipeline_deployed_waiter() -> ServicePipelineDeployedWaiter:
-    return boto3.client("proton").get_waiter("service_pipeline_deployed")
+    return Session().client("proton").get_waiter("service_pipeline_deployed")
 ```
 
 Boto3 documentation:
@@ -150,6 +176,8 @@ Arguments for `ServicePipelineDeployedWaiter.wait` method:
 - `name`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="servicetemplateversionregisteredwaiter"></a>
+
 ## ServiceTemplateVersionRegisteredWaiter
 
 Type annotations for
@@ -158,10 +186,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import ServiceTemplateVersionRegisteredWaiter
 
 def get_service_template_version_registered_waiter() -> ServiceTemplateVersionRegisteredWaiter:
-    return boto3.client("proton").get_waiter("service_template_version_registered")
+    return Session().client("proton").get_waiter("service_template_version_registered")
 ```
 
 Boto3 documentation:
@@ -174,6 +204,8 @@ Arguments for `ServiceTemplateVersionRegisteredWaiter.wait` method:
 - `templateName`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="serviceupdatedwaiter"></a>
+
 ## ServiceUpdatedWaiter
 
 Type annotations for `boto3.client("proton").get_waiter("service_updated")`.
@@ -181,10 +213,12 @@ Type annotations for `boto3.client("proton").get_waiter("service_updated")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_proton.waiter import ServiceUpdatedWaiter
 
 def get_service_updated_waiter() -> ServiceUpdatedWaiter:
-    return boto3.client("proton").get_waiter("service_updated")
+    return Session().client("proton").get_waiter("service_updated")
 ```
 
 Boto3 documentation:

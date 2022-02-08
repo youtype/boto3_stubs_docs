@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-timestreamwrite-module"></a>
+
 # Typed dictionaries for boto3 TimestreamWrite module
 
 > [Index](..) > [TimestreamWrite](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TimestreamWrite](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-write.html#TimestreamWrite)
 type annotations stubs module
-[mypy_boto3_timestream_write](https://pypi.org/project/mypy-boto3-timestream-write/).
+[mypy-boto3-timestream-write](https://pypi.org/project/mypy-boto3-timestream-write/).
 
 - [Typed dictionaries for boto3 TimestreamWrite module](#typed-dictionaries-for-boto3-timestreamwrite-module)
   - [CreateDatabaseRequestRequestTypeDef](#createdatabaserequestrequesttypedef)
@@ -47,6 +49,8 @@ type annotations stubs module
   - [WriteRecordsRequestRequestTypeDef](#writerecordsrequestrequesttypedef)
   - [WriteRecordsResponseTypeDef](#writerecordsresponsetypedef)
 
+<a id="createdatabaserequestrequesttypedef"></a>
+
 ## CreateDatabaseRequestRequestTypeDef
 
 ```python
@@ -62,6 +66,8 @@ Optional fields:
 - `KmsKeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdatabaseresponsetypedef"></a>
+
 ## CreateDatabaseResponseTypeDef
 
 ```python
@@ -73,6 +79,8 @@ Required fields:
 - `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createtablerequestrequesttypedef"></a>
 
 ## CreateTableRequestRequestTypeDef
 
@@ -93,6 +101,8 @@ Optional fields:
 - `MagneticStoreWriteProperties`:
   [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
+<a id="createtableresponsetypedef"></a>
+
 ## CreateTableResponseTypeDef
 
 ```python
@@ -104,6 +114,8 @@ Required fields:
 - `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="databasetypedef"></a>
 
 ## DatabaseTypeDef
 
@@ -120,6 +132,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastUpdatedTime`: `datetime`
 
+<a id="deletedatabaserequestrequesttypedef"></a>
+
 ## DeleteDatabaseRequestRequestTypeDef
 
 ```python
@@ -129,6 +143,8 @@ from mypy_boto3_timestream_write.type_defs import DeleteDatabaseRequestRequestTy
 Required fields:
 
 - `DatabaseName`: `str`
+
+<a id="deletetablerequestrequesttypedef"></a>
 
 ## DeleteTableRequestRequestTypeDef
 
@@ -141,6 +157,8 @@ Required fields:
 - `DatabaseName`: `str`
 - `TableName`: `str`
 
+<a id="describedatabaserequestrequesttypedef"></a>
+
 ## DescribeDatabaseRequestRequestTypeDef
 
 ```python
@@ -150,6 +168,8 @@ from mypy_boto3_timestream_write.type_defs import DescribeDatabaseRequestRequest
 Required fields:
 
 - `DatabaseName`: `str`
+
+<a id="describedatabaseresponsetypedef"></a>
 
 ## DescribeDatabaseResponseTypeDef
 
@@ -163,6 +183,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeendpointsresponsetypedef"></a>
+
 ## DescribeEndpointsResponseTypeDef
 
 ```python
@@ -175,6 +197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetablerequestrequesttypedef"></a>
+
 ## DescribeTableRequestRequestTypeDef
 
 ```python
@@ -185,6 +209,8 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `TableName`: `str`
+
+<a id="describetableresponsetypedef"></a>
 
 ## DescribeTableResponseTypeDef
 
@@ -197,6 +223,8 @@ Required fields:
 - `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="dimensiontypedef"></a>
 
 ## DimensionTypeDef
 
@@ -214,6 +242,8 @@ Optional fields:
 - `DimensionValueType`: `Literal['VARCHAR']` (see
   [DimensionValueTypeType](./literals.md#dimensionvaluetypetype))
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -225,6 +255,8 @@ Required fields:
 - `Address`: `str`
 - `CachePeriodInMinutes`: `int`
 
+<a id="listdatabasesrequestrequesttypedef"></a>
+
 ## ListDatabasesRequestRequestTypeDef
 
 ```python
@@ -235,6 +267,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdatabasesresponsetypedef"></a>
 
 ## ListDatabasesResponseTypeDef
 
@@ -249,6 +283,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtablesrequestrequesttypedef"></a>
+
 ## ListTablesRequestRequestTypeDef
 
 ```python
@@ -260,6 +296,8 @@ Optional fields:
 - `DatabaseName`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listtablesresponsetypedef"></a>
 
 ## ListTablesResponseTypeDef
 
@@ -274,6 +312,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -283,6 +323,8 @@ from mypy_boto3_timestream_write.type_defs import ListTagsForResourceRequestRequ
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -296,6 +338,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="magneticstorerejecteddatalocationtypedef"></a>
+
 ## MagneticStoreRejectedDataLocationTypeDef
 
 ```python
@@ -306,6 +350,8 @@ Optional fields:
 
 - `S3Configuration`:
   [S3ConfigurationTypeDef](./type_defs.md#s3configurationtypedef)
+
+<a id="magneticstorewritepropertiestypedef"></a>
 
 ## MagneticStoreWritePropertiesTypeDef
 
@@ -322,6 +368,8 @@ Optional fields:
 - `MagneticStoreRejectedDataLocation`:
   [MagneticStoreRejectedDataLocationTypeDef](./type_defs.md#magneticstorerejecteddatalocationtypedef)
 
+<a id="measurevaluetypedef"></a>
+
 ## MeasureValueTypeDef
 
 ```python
@@ -333,6 +381,8 @@ Required fields:
 - `Name`: `str`
 - `Value`: `str`
 - `Type`: [MeasureValueTypeType](./literals.md#measurevaluetypetype)
+
+<a id="recordtypedef"></a>
 
 ## RecordTypeDef
 
@@ -354,6 +404,8 @@ Optional fields:
 - `MeasureValues`:
   `Sequence`\[[MeasureValueTypeDef](./type_defs.md#measurevaluetypedef)\]
 
+<a id="recordsingestedtypedef"></a>
+
 ## RecordsIngestedTypeDef
 
 ```python
@@ -365,6 +417,8 @@ Optional fields:
 - `Total`: `int`
 - `MemoryStore`: `int`
 - `MagneticStore`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -380,6 +434,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retentionpropertiestypedef"></a>
+
 ## RetentionPropertiesTypeDef
 
 ```python
@@ -390,6 +446,8 @@ Required fields:
 
 - `MemoryStoreRetentionPeriodInHours`: `int`
 - `MagneticStoreRetentionPeriodInDays`: `int`
+
+<a id="s3configurationtypedef"></a>
 
 ## S3ConfigurationTypeDef
 
@@ -404,6 +462,8 @@ Optional fields:
 - `EncryptionOption`:
   [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
 - `KmsKeyId`: `str`
+
+<a id="tabletypedef"></a>
 
 ## TableTypeDef
 
@@ -424,6 +484,8 @@ Optional fields:
 - `MagneticStoreWriteProperties`:
   [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -434,6 +496,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -446,6 +510,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -456,6 +522,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatabaserequestrequesttypedef"></a>
 
 ## UpdateDatabaseRequestRequestTypeDef
 
@@ -468,6 +536,8 @@ Required fields:
 - `DatabaseName`: `str`
 - `KmsKeyId`: `str`
 
+<a id="updatedatabaseresponsetypedef"></a>
+
 ## UpdateDatabaseResponseTypeDef
 
 ```python
@@ -479,6 +549,8 @@ Required fields:
 - `Database`: [DatabaseTypeDef](./type_defs.md#databasetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatetablerequestrequesttypedef"></a>
 
 ## UpdateTableRequestRequestTypeDef
 
@@ -498,6 +570,8 @@ Optional fields:
 - `MagneticStoreWriteProperties`:
   [MagneticStoreWritePropertiesTypeDef](./type_defs.md#magneticstorewritepropertiestypedef)
 
+<a id="updatetableresponsetypedef"></a>
+
 ## UpdateTableResponseTypeDef
 
 ```python
@@ -509,6 +583,8 @@ Required fields:
 - `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="writerecordsrequestrequesttypedef"></a>
 
 ## WriteRecordsRequestRequestTypeDef
 
@@ -525,6 +601,8 @@ Required fields:
 Optional fields:
 
 - `CommonAttributes`: [RecordTypeDef](./type_defs.md#recordtypedef)
+
+<a id="writerecordsresponsetypedef"></a>
 
 ## WriteRecordsResponseTypeDef
 

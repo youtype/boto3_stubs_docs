@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-customerprofiles-module"></a>
+
 # Literals for boto3 CustomerProfiles module
 
 > [Index](..) > [CustomerProfiles](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CustomerProfiles](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles)
 type annotations stubs module
-[mypy_boto3_customer_profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
+[mypy-boto3-customer-profiles](https://pypi.org/project/mypy-boto3-customer-profiles/).
 
 - [Literals for boto3 CustomerProfiles module](#literals-for-boto3-customerprofiles-module)
   - [ConflictResolvingModelType](#conflictresolvingmodeltype)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
   - [ServiceName](#servicename)
 
+<a id="conflictresolvingmodeltype"></a>
+
 ## ConflictResolvingModelType
 
 ```python
@@ -38,6 +42,8 @@ Values:
 - `RECENCY`
 - `SOURCE`
 
+<a id="datapullmodetype"></a>
+
 ## DataPullModeType
 
 ```python
@@ -48,6 +54,8 @@ Values:
 
 - `Complete`
 - `Incremental`
+
+<a id="fieldcontenttypetype"></a>
 
 ## FieldContentTypeType
 
@@ -63,6 +71,8 @@ Values:
 - `PHONE_NUMBER`
 - `STRING`
 
+<a id="gendertype"></a>
+
 ## GenderType
 
 ```python
@@ -74,6 +84,8 @@ Values:
 - `FEMALE`
 - `MALE`
 - `UNSPECIFIED`
+
+<a id="identityresolutionjobstatustype"></a>
 
 ## IdentityResolutionJobStatusType
 
@@ -91,6 +103,8 @@ Values:
 - `PENDING`
 - `PREPROCESSING`
 
+<a id="jobscheduledayoftheweektype"></a>
+
 ## JobScheduleDayOfTheWeekType
 
 ```python
@@ -106,6 +120,8 @@ Values:
 - `THURSDAY`
 - `TUESDAY`
 - `WEDNESDAY`
+
+<a id="marketoconnectoroperatortype"></a>
 
 ## MarketoConnectorOperatorType
 
@@ -132,6 +148,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="operatorpropertieskeystype"></a>
+
 ## OperatorPropertiesKeysType
 
 ```python
@@ -155,6 +173,8 @@ Values:
 - `VALUE`
 - `VALUES`
 
+<a id="partytypetype"></a>
+
 ## PartyTypeType
 
 ```python
@@ -166,6 +186,8 @@ Values:
 - `BUSINESS`
 - `INDIVIDUAL`
 - `OTHER`
+
+<a id="s3connectoroperatortype"></a>
 
 ## S3ConnectorOperatorType
 
@@ -195,6 +217,8 @@ Values:
 - `VALIDATE_NON_NULL`
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
+
+<a id="salesforceconnectoroperatortype"></a>
 
 ## SalesforceConnectorOperatorType
 
@@ -226,6 +250,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="servicenowconnectoroperatortype"></a>
+
 ## ServiceNowConnectorOperatorType
 
 ```python
@@ -256,6 +282,8 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="sourceconnectortypetype"></a>
+
 ## SourceConnectorTypeType
 
 ```python
@@ -269,6 +297,8 @@ Values:
 - `Salesforce`
 - `Servicenow`
 - `Zendesk`
+
+<a id="standardidentifiertype"></a>
 
 ## StandardIdentifierType
 
@@ -287,6 +317,8 @@ Values:
 - `SECONDARY`
 - `UNIQUE`
 
+<a id="tasktypetype"></a>
+
 ## TaskTypeType
 
 ```python
@@ -303,6 +335,8 @@ Values:
 - `Truncate`
 - `Validate`
 
+<a id="triggertypetype"></a>
+
 ## TriggerTypeType
 
 ```python
@@ -314,6 +348,8 @@ Values:
 - `Event`
 - `OnDemand`
 - `Scheduled`
+
+<a id="zendeskconnectoroperatortype"></a>
 
 ## ZendeskConnectorOperatorType
 
@@ -337,6 +373,8 @@ Values:
 - `VALIDATE_NON_NULL`
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

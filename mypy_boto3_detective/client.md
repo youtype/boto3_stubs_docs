@@ -1,3 +1,5 @@
+<a id="detectiveclient-for-boto3-detective-module"></a>
+
 # DetectiveClient for boto3 Detective module
 
 > [Index](..) > [Detective](.) > DetectiveClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Detective](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective)
 type annotations stubs module
-[mypy_boto3_detective](https://pypi.org/project/mypy-boto3-detective/).
+[mypy-boto3-detective](https://pypi.org/project/mypy-boto3-detective/).
 
 - [DetectiveClient for boto3 Detective module](#detectiveclient-for-boto3-detective-module)
   - [DetectiveClient](#detectiveclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_organization_configuration](#update_organization_configuration)
 
+<a id="detectiveclient"></a>
+
 ## DetectiveClient
 
 Type annotations for `boto3.client("detective")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("detective")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_detective.client import DetectiveClient
 
 def get_detective_client() -> DetectiveClient:
-    return boto3.client("detective")
+    return Session().client("detective")
 ```
 
 Boto3 documentation:
 [Detective.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -73,7 +80,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -85,6 +96,8 @@ Boto3 documentation:
 [Detective.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_invitation"></a>
 
 ### accept_invitation
 
@@ -103,6 +116,8 @@ Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -117,6 +132,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_graph"></a>
 
 ### create_graph
 
@@ -137,6 +154,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGraphResponseTypeDef](./type_defs.md#creategraphresponsetypedef).
+
+<a id="create_members"></a>
 
 ### create_members
 
@@ -161,6 +180,8 @@ Keyword-only arguments:
 Returns
 [CreateMembersResponseTypeDef](./type_defs.md#createmembersresponsetypedef).
 
+<a id="delete_graph"></a>
+
 ### delete_graph
 
 Disables the specified behavior graph and queues it to be deleted.
@@ -176,6 +197,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
+
+<a id="delete_members"></a>
 
 ### delete_members
 
@@ -196,6 +219,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteMembersResponseTypeDef](./type_defs.md#deletemembersresponsetypedef).
+
+<a id="describe_organization_configuration"></a>
 
 ### describe_organization_configuration
 
@@ -218,6 +243,8 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationConfigurationResponseTypeDef](./type_defs.md#describeorganizationconfigurationresponsetypedef).
 
+<a id="disable_organization_admin_account"></a>
+
 ### disable_organization_admin_account
 
 Removes the Detective administrator account for the organization in the current
@@ -228,6 +255,8 @@ Type annotations for
 
 Boto3 documentation:
 [Detective.Client.disable_organization_admin_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/detective.html#Detective.Client.disable_organization_admin_account)
+
+<a id="disassociate_membership"></a>
 
 ### disassociate_membership
 
@@ -245,6 +274,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
+
+<a id="enable_organization_admin_account"></a>
 
 ### enable_organization_admin_account
 
@@ -264,6 +295,8 @@ Keyword-only arguments:
 
 - `AccountId`: `str` *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -281,6 +314,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_members"></a>
 
 ### get_members
 
@@ -302,6 +337,8 @@ Keyword-only arguments:
 
 Returns [GetMembersResponseTypeDef](./type_defs.md#getmembersresponsetypedef).
 
+<a id="list_graphs"></a>
+
 ### list_graphs
 
 Returns the list of behavior graphs that the calling account is an
@@ -321,6 +358,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListGraphsResponseTypeDef](./type_defs.md#listgraphsresponsetypedef).
+
+<a id="list_invitations"></a>
 
 ### list_invitations
 
@@ -343,6 +382,8 @@ Keyword-only arguments:
 Returns
 [ListInvitationsResponseTypeDef](./type_defs.md#listinvitationsresponsetypedef).
 
+<a id="list_members"></a>
+
 ### list_members
 
 Retrieves the list of member accounts for a behavior graph.
@@ -363,6 +404,8 @@ Keyword-only arguments:
 
 Returns
 [ListMembersResponseTypeDef](./type_defs.md#listmembersresponsetypedef).
+
+<a id="list_organization_admin_accounts"></a>
 
 ### list_organization_admin_accounts
 
@@ -386,6 +429,8 @@ Keyword-only arguments:
 Returns
 [ListOrganizationAdminAccountsResponseTypeDef](./type_defs.md#listorganizationadminaccountsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns the tag values that are assigned to a behavior graph.
@@ -405,6 +450,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="reject_invitation"></a>
+
 ### reject_invitation
 
 Rejects an invitation to contribute the account data to a behavior graph.
@@ -420,6 +467,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GraphArn`: `str` *(required)*
+
+<a id="start_monitoring_member"></a>
 
 ### start_monitoring_member
 
@@ -440,6 +489,8 @@ Keyword-only arguments:
 - `GraphArn`: `str` *(required)*
 - `AccountId`: `str` *(required)*
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies tag values to a behavior graph.
@@ -459,6 +510,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes tags from a behavior graph.
@@ -477,6 +530,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_organization_configuration"></a>
 
 ### update_organization_configuration
 

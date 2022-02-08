@@ -1,3 +1,5 @@
+<a id="appconfigclient-for-boto3-appconfig-module"></a>
+
 # AppConfigClient for boto3 AppConfig module
 
 > [Index](..) > [AppConfig](.) > AppConfigClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig)
 type annotations stubs module
-[mypy_boto3_appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
+[mypy-boto3-appconfig](https://pypi.org/project/mypy-boto3-appconfig/).
 
 - [AppConfigClient for boto3 AppConfig module](#appconfigclient-for-boto3-appconfig-module)
   - [AppConfigClient](#appconfigclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [update_environment](#update_environment)
     - [validate_configuration](#validate_configuration)
 
+<a id="appconfigclient"></a>
+
 ## AppConfigClient
 
 Type annotations for `boto3.client("appconfig")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("appconfig")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appconfig.client import AppConfigClient
 
 def get_appconfig_client() -> AppConfigClient:
-    return boto3.client("appconfig")
+    return Session().client("appconfig")
 ```
 
 Boto3 documentation:
 [AppConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [AppConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appconfig.html#AppConfig.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -113,6 +126,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -134,6 +149,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
+
+<a id="create_configuration_profile"></a>
 
 ### create_configuration_profile
 
@@ -164,6 +181,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
+<a id="create_deployment_strategy"></a>
+
 ### create_deployment_strategy
 
 Creates a deployment strategy that defines important criteria for rolling out
@@ -192,6 +211,8 @@ Keyword-only arguments:
 Returns
 [DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
 
+<a id="create_environment"></a>
+
 ### create_environment
 
 Creates an environment.
@@ -214,6 +235,8 @@ Keyword-only arguments:
 
 Returns
 [EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
+
+<a id="create_hosted_configuration_version"></a>
 
 ### create_hosted_configuration_version
 
@@ -240,6 +263,8 @@ Keyword-only arguments:
 Returns
 [HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes an application.
@@ -255,6 +280,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
+
+<a id="delete_configuration_profile"></a>
 
 ### delete_configuration_profile
 
@@ -274,6 +301,8 @@ Keyword-only arguments:
 - `ApplicationId`: `str` *(required)*
 - `ConfigurationProfileId`: `str` *(required)*
 
+<a id="delete_deployment_strategy"></a>
+
 ### delete_deployment_strategy
 
 Deletes a deployment strategy.
@@ -291,6 +320,8 @@ Keyword-only arguments:
 
 - `DeploymentStrategyId`: `str` *(required)*
 
+<a id="delete_environment"></a>
+
 ### delete_environment
 
 Deletes an environment.
@@ -307,6 +338,8 @@ Keyword-only arguments:
 
 - `ApplicationId`: `str` *(required)*
 - `EnvironmentId`: `str` *(required)*
+
+<a id="delete_hosted_configuration_version"></a>
 
 ### delete_hosted_configuration_version
 
@@ -328,6 +361,8 @@ Keyword-only arguments:
 - `ConfigurationProfileId`: `str` *(required)*
 - `VersionNumber`: `int` *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -345,6 +380,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_application"></a>
 
 ### get_application
 
@@ -364,6 +401,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
+
+<a id="get_configuration"></a>
 
 ### get_configuration
 
@@ -387,6 +426,8 @@ Keyword-only arguments:
 
 Returns [ConfigurationTypeDef](./type_defs.md#configurationtypedef).
 
+<a id="get_configuration_profile"></a>
+
 ### get_configuration_profile
 
 Retrieves information about a configuration profile.
@@ -408,6 +449,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
+<a id="get_deployment"></a>
+
 ### get_deployment
 
 Retrieves information about a configuration deployment.
@@ -427,6 +470,8 @@ Keyword-only arguments:
 - `DeploymentNumber`: `int` *(required)*
 
 Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
+
+<a id="get_deployment_strategy"></a>
 
 ### get_deployment_strategy
 
@@ -448,6 +493,8 @@ Keyword-only arguments:
 Returns
 [DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
 
+<a id="get_environment"></a>
+
 ### get_environment
 
 Retrieves information about an environment.
@@ -467,6 +514,8 @@ Keyword-only arguments:
 
 Returns
 [EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
+
+<a id="get_hosted_configuration_version"></a>
 
 ### get_hosted_configuration_version
 
@@ -490,6 +539,8 @@ Keyword-only arguments:
 Returns
 [HostedConfigurationVersionTypeDef](./type_defs.md#hostedconfigurationversiontypedef).
 
+<a id="list_applications"></a>
+
 ### list_applications
 
 Lists all applications in your Amazon Web Services account.
@@ -508,6 +559,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ApplicationsTypeDef](./type_defs.md#applicationstypedef).
+
+<a id="list_configuration_profiles"></a>
 
 ### list_configuration_profiles
 
@@ -532,6 +585,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationProfilesTypeDef](./type_defs.md#configurationprofilestypedef).
 
+<a id="list_deployment_strategies"></a>
+
 ### list_deployment_strategies
 
 Lists deployment strategies.
@@ -552,6 +607,8 @@ Keyword-only arguments:
 
 Returns
 [DeploymentStrategiesTypeDef](./type_defs.md#deploymentstrategiestypedef).
+
+<a id="list_deployments"></a>
 
 ### list_deployments
 
@@ -574,6 +631,8 @@ Keyword-only arguments:
 
 Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
 
+<a id="list_environments"></a>
+
 ### list_environments
 
 Lists the environments for an application.
@@ -593,6 +652,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [EnvironmentsTypeDef](./type_defs.md#environmentstypedef).
+
+<a id="list_hosted_configuration_versions"></a>
 
 ### list_hosted_configuration_versions
 
@@ -618,6 +679,8 @@ Keyword-only arguments:
 Returns
 [HostedConfigurationVersionsTypeDef](./type_defs.md#hostedconfigurationversionstypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves the list of key-value tags assigned to the resource.
@@ -635,6 +698,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns [ResourceTagsTypeDef](./type_defs.md#resourcetagstypedef).
+
+<a id="start_deployment"></a>
 
 ### start_deployment
 
@@ -660,6 +725,8 @@ Keyword-only arguments:
 
 Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
+<a id="stop_deployment"></a>
+
 ### stop_deployment
 
 Stops a deployment.
@@ -680,6 +747,8 @@ Keyword-only arguments:
 
 Returns [DeploymentTypeDef](./type_defs.md#deploymenttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns metadata to an AppConfig resource.
@@ -697,6 +766,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes a tag key and value from an AppConfig resource.
@@ -713,6 +784,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_application"></a>
 
 ### update_application
 
@@ -734,6 +807,8 @@ Keyword-only arguments:
 
 Returns
 [ApplicationResponseMetadataTypeDef](./type_defs.md#applicationresponsemetadatatypedef).
+
+<a id="update_configuration_profile"></a>
 
 ### update_configuration_profile
 
@@ -761,6 +836,8 @@ Keyword-only arguments:
 Returns
 [ConfigurationProfileTypeDef](./type_defs.md#configurationprofiletypedef).
 
+<a id="update_deployment_strategy"></a>
+
 ### update_deployment_strategy
 
 Updates a deployment strategy.
@@ -786,6 +863,8 @@ Keyword-only arguments:
 Returns
 [DeploymentStrategyResponseMetadataTypeDef](./type_defs.md#deploymentstrategyresponsemetadatatypedef).
 
+<a id="update_environment"></a>
+
 ### update_environment
 
 Updates an environment.
@@ -808,6 +887,8 @@ Keyword-only arguments:
 
 Returns
 [EnvironmentResponseMetadataTypeDef](./type_defs.md#environmentresponsemetadatatypedef).
+
+<a id="validate_configuration"></a>
 
 ### validate_configuration
 

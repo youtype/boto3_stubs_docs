@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-rekognition-module"></a>
+
 # Typed dictionaries for boto3 Rekognition module
 
 > [Index](..) > [Rekognition](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
-[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 - [Typed dictionaries for boto3 Rekognition module](#typed-dictionaries-for-boto3-rekognition-module)
   - [AgeRangeTypeDef](#agerangetypedef)
@@ -215,6 +217,8 @@ type annotations stubs module
   - [VideoTypeDef](#videotypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="agerangetypedef"></a>
+
 ## AgeRangeTypeDef
 
 ```python
@@ -226,6 +230,8 @@ Optional fields:
 - `Low`: `int`
 - `High`: `int`
 
+<a id="assettypedef"></a>
+
 ## AssetTypeDef
 
 ```python
@@ -236,6 +242,8 @@ Optional fields:
 
 - `GroundTruthManifest`:
   [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
+
+<a id="audiometadatatypedef"></a>
 
 ## AudioMetadataTypeDef
 
@@ -250,6 +258,8 @@ Optional fields:
 - `SampleRate`: `int`
 - `NumberOfChannels`: `int`
 
+<a id="beardtypedef"></a>
+
 ## BeardTypeDef
 
 ```python
@@ -261,6 +271,8 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
+<a id="blackframetypedef"></a>
+
 ## BlackFrameTypeDef
 
 ```python
@@ -271,6 +283,8 @@ Optional fields:
 
 - `MaxPixelThreshold`: `float`
 - `MinCoveragePercentage`: `float`
+
+<a id="boundingboxtypedef"></a>
 
 ## BoundingBoxTypeDef
 
@@ -284,6 +298,8 @@ Optional fields:
 - `Height`: `float`
 - `Left`: `float`
 - `Top`: `float`
+
+<a id="celebritydetailtypedef"></a>
 
 ## CelebrityDetailTypeDef
 
@@ -301,6 +317,8 @@ Optional fields:
 - `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 - `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 
+<a id="celebrityrecognitiontypedef"></a>
+
 ## CelebrityRecognitionTypeDef
 
 ```python
@@ -311,6 +329,8 @@ Optional fields:
 
 - `Timestamp`: `int`
 - `Celebrity`: [CelebrityDetailTypeDef](./type_defs.md#celebritydetailtypedef)
+
+<a id="celebritytypedef"></a>
 
 ## CelebrityTypeDef
 
@@ -327,6 +347,8 @@ Optional fields:
 - `MatchConfidence`: `float`
 - `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 
+<a id="comparefacesmatchtypedef"></a>
+
 ## CompareFacesMatchTypeDef
 
 ```python
@@ -337,6 +359,8 @@ Optional fields:
 
 - `Similarity`: `float`
 - `Face`: [ComparedFaceTypeDef](./type_defs.md#comparedfacetypedef)
+
+<a id="comparefacesrequestrequesttypedef"></a>
 
 ## CompareFacesRequestRequestTypeDef
 
@@ -353,6 +377,8 @@ Optional fields:
 
 - `SimilarityThreshold`: `float`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
+
+<a id="comparefacesresponsetypedef"></a>
 
 ## CompareFacesResponseTypeDef
 
@@ -375,6 +401,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="comparedfacetypedef"></a>
+
 ## ComparedFaceTypeDef
 
 ```python
@@ -391,6 +419,8 @@ Optional fields:
 - `Emotions`: `List`\[[EmotionTypeDef](./type_defs.md#emotiontypedef)\]
 - `Smile`: [SmileTypeDef](./type_defs.md#smiletypedef)
 
+<a id="comparedsourceimagefacetypedef"></a>
+
 ## ComparedSourceImageFaceTypeDef
 
 ```python
@@ -401,6 +431,8 @@ Optional fields:
 
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
+
+<a id="contentmoderationdetectiontypedef"></a>
 
 ## ContentModerationDetectionTypeDef
 
@@ -414,6 +446,8 @@ Optional fields:
 - `ModerationLabel`:
   [ModerationLabelTypeDef](./type_defs.md#moderationlabeltypedef)
 
+<a id="coversbodyparttypedef"></a>
+
 ## CoversBodyPartTypeDef
 
 ```python
@@ -424,6 +458,8 @@ Optional fields:
 
 - `Confidence`: `float`
 - `Value`: `bool`
+
+<a id="createcollectionrequestrequesttypedef"></a>
 
 ## CreateCollectionRequestRequestTypeDef
 
@@ -439,6 +475,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createcollectionresponsetypedef"></a>
+
 ## CreateCollectionResponseTypeDef
 
 ```python
@@ -452,6 +490,8 @@ Required fields:
 - `FaceModelVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDatasetRequestRequestTypeDef
 
@@ -468,6 +508,8 @@ Optional fields:
 
 - `DatasetSource`: [DatasetSourceTypeDef](./type_defs.md#datasetsourcetypedef)
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -480,6 +522,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createprojectrequestrequesttypedef"></a>
+
 ## CreateProjectRequestRequestTypeDef
 
 ```python
@@ -489,6 +533,8 @@ from mypy_boto3_rekognition.type_defs import CreateProjectRequestRequestTypeDef
 Required fields:
 
 - `ProjectName`: `str`
+
+<a id="createprojectresponsetypedef"></a>
 
 ## CreateProjectResponseTypeDef
 
@@ -501,6 +547,8 @@ Required fields:
 - `ProjectArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createprojectversionrequestrequesttypedef"></a>
 
 ## CreateProjectVersionRequestRequestTypeDef
 
@@ -521,6 +569,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `KmsKeyId`: `str`
 
+<a id="createprojectversionresponsetypedef"></a>
+
 ## CreateProjectVersionResponseTypeDef
 
 ```python
@@ -532,6 +582,8 @@ Required fields:
 - `ProjectVersionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstreamprocessorrequestrequesttypedef"></a>
 
 ## CreateStreamProcessorRequestRequestTypeDef
 
@@ -554,6 +606,8 @@ Optional fields:
 
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createstreamprocessorresponsetypedef"></a>
+
 ## CreateStreamProcessorResponseTypeDef
 
 ```python
@@ -565,6 +619,8 @@ Required fields:
 - `StreamProcessorArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customlabeltypedef"></a>
 
 ## CustomLabelTypeDef
 
@@ -578,6 +634,8 @@ Optional fields:
 - `Confidence`: `float`
 - `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 
+<a id="datasetchangestypedef"></a>
+
 ## DatasetChangesTypeDef
 
 ```python
@@ -587,6 +645,8 @@ from mypy_boto3_rekognition.type_defs import DatasetChangesTypeDef
 Required fields:
 
 - `GroundTruth`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="datasetdescriptiontypedef"></a>
 
 ## DatasetDescriptionTypeDef
 
@@ -604,6 +664,8 @@ Optional fields:
   [DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype)
 - `DatasetStats`: [DatasetStatsTypeDef](./type_defs.md#datasetstatstypedef)
 
+<a id="datasetlabeldescriptiontypedef"></a>
+
 ## DatasetLabelDescriptionTypeDef
 
 ```python
@@ -616,6 +678,8 @@ Optional fields:
 - `LabelStats`:
   [DatasetLabelStatsTypeDef](./type_defs.md#datasetlabelstatstypedef)
 
+<a id="datasetlabelstatstypedef"></a>
+
 ## DatasetLabelStatsTypeDef
 
 ```python
@@ -626,6 +690,8 @@ Optional fields:
 
 - `EntryCount`: `int`
 - `BoundingBoxCount`: `int`
+
+<a id="datasetmetadatatypedef"></a>
 
 ## DatasetMetadataTypeDef
 
@@ -643,6 +709,8 @@ Optional fields:
 - `StatusMessageCode`:
   [DatasetStatusMessageCodeType](./literals.md#datasetstatusmessagecodetype)
 
+<a id="datasetsourcetypedef"></a>
+
 ## DatasetSourceTypeDef
 
 ```python
@@ -654,6 +722,8 @@ Optional fields:
 - `GroundTruthManifest`:
   [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
 - `DatasetArn`: `str`
+
+<a id="datasetstatstypedef"></a>
 
 ## DatasetStatsTypeDef
 
@@ -668,6 +738,8 @@ Optional fields:
 - `TotalLabels`: `int`
 - `ErrorEntries`: `int`
 
+<a id="deletecollectionrequestrequesttypedef"></a>
+
 ## DeleteCollectionRequestRequestTypeDef
 
 ```python
@@ -677,6 +749,8 @@ from mypy_boto3_rekognition.type_defs import DeleteCollectionRequestRequestTypeD
 Required fields:
 
 - `CollectionId`: `str`
+
+<a id="deletecollectionresponsetypedef"></a>
 
 ## DeleteCollectionResponseTypeDef
 
@@ -690,6 +764,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -699,6 +775,8 @@ from mypy_boto3_rekognition.type_defs import DeleteDatasetRequestRequestTypeDef
 Required fields:
 
 - `DatasetArn`: `str`
+
+<a id="deletefacesrequestrequesttypedef"></a>
 
 ## DeleteFacesRequestRequestTypeDef
 
@@ -710,6 +788,8 @@ Required fields:
 
 - `CollectionId`: `str`
 - `FaceIds`: `Sequence`\[`str`\]
+
+<a id="deletefacesresponsetypedef"></a>
 
 ## DeleteFacesResponseTypeDef
 
@@ -723,6 +803,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectrequestrequesttypedef"></a>
+
 ## DeleteProjectRequestRequestTypeDef
 
 ```python
@@ -732,6 +814,8 @@ from mypy_boto3_rekognition.type_defs import DeleteProjectRequestRequestTypeDef
 Required fields:
 
 - `ProjectArn`: `str`
+
+<a id="deleteprojectresponsetypedef"></a>
 
 ## DeleteProjectResponseTypeDef
 
@@ -745,6 +829,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteprojectversionrequestrequesttypedef"></a>
+
 ## DeleteProjectVersionRequestRequestTypeDef
 
 ```python
@@ -754,6 +840,8 @@ from mypy_boto3_rekognition.type_defs import DeleteProjectVersionRequestRequestT
 Required fields:
 
 - `ProjectVersionArn`: `str`
+
+<a id="deleteprojectversionresponsetypedef"></a>
 
 ## DeleteProjectVersionResponseTypeDef
 
@@ -767,6 +855,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletestreamprocessorrequestrequesttypedef"></a>
+
 ## DeleteStreamProcessorRequestRequestTypeDef
 
 ```python
@@ -777,6 +867,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="describecollectionrequestrequesttypedef"></a>
+
 ## DescribeCollectionRequestRequestTypeDef
 
 ```python
@@ -786,6 +878,8 @@ from mypy_boto3_rekognition.type_defs import DescribeCollectionRequestRequestTyp
 Required fields:
 
 - `CollectionId`: `str`
+
+<a id="describecollectionresponsetypedef"></a>
 
 ## DescribeCollectionResponseTypeDef
 
@@ -802,6 +896,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -811,6 +907,8 @@ from mypy_boto3_rekognition.type_defs import DescribeDatasetRequestRequestTypeDe
 Required fields:
 
 - `DatasetArn`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -824,6 +922,8 @@ Required fields:
   [DatasetDescriptionTypeDef](./type_defs.md#datasetdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeprojectversionsrequestrequesttypedef"></a>
 
 ## DescribeProjectVersionsRequestRequestTypeDef
 
@@ -841,6 +941,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describeprojectversionsresponsetypedef"></a>
+
 ## DescribeProjectVersionsResponseTypeDef
 
 ```python
@@ -855,6 +957,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeprojectsrequestrequesttypedef"></a>
+
 ## DescribeProjectsRequestRequestTypeDef
 
 ```python
@@ -866,6 +970,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `ProjectNames`: `Sequence`\[`str`\]
+
+<a id="describeprojectsresponsetypedef"></a>
 
 ## DescribeProjectsResponseTypeDef
 
@@ -881,6 +987,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestreamprocessorrequestrequesttypedef"></a>
+
 ## DescribeStreamProcessorRequestRequestTypeDef
 
 ```python
@@ -890,6 +998,8 @@ from mypy_boto3_rekognition.type_defs import DescribeStreamProcessorRequestReque
 Required fields:
 
 - `Name`: `str`
+
+<a id="describestreamprocessorresponsetypedef"></a>
 
 ## DescribeStreamProcessorResponseTypeDef
 
@@ -916,6 +1026,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectcustomlabelsrequestrequesttypedef"></a>
+
 ## DetectCustomLabelsRequestRequestTypeDef
 
 ```python
@@ -932,6 +1044,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `MinConfidence`: `float`
 
+<a id="detectcustomlabelsresponsetypedef"></a>
+
 ## DetectCustomLabelsResponseTypeDef
 
 ```python
@@ -944,6 +1058,8 @@ Required fields:
   `List`\[[CustomLabelTypeDef](./type_defs.md#customlabeltypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detectfacesrequestrequesttypedef"></a>
 
 ## DetectFacesRequestRequestTypeDef
 
@@ -958,6 +1074,8 @@ Required fields:
 Optional fields:
 
 - `Attributes`: `Sequence`\[[AttributeType](./literals.md#attributetype)\]
+
+<a id="detectfacesresponsetypedef"></a>
 
 ## DetectFacesResponseTypeDef
 
@@ -974,6 +1092,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectlabelsrequestrequesttypedef"></a>
+
 ## DetectLabelsRequestRequestTypeDef
 
 ```python
@@ -989,6 +1109,8 @@ Optional fields:
 - `MaxLabels`: `int`
 - `MinConfidence`: `float`
 
+<a id="detectlabelsresponsetypedef"></a>
+
 ## DetectLabelsResponseTypeDef
 
 ```python
@@ -1003,6 +1125,8 @@ Required fields:
 - `LabelModelVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="detectmoderationlabelsrequestrequesttypedef"></a>
 
 ## DetectModerationLabelsRequestRequestTypeDef
 
@@ -1020,6 +1144,8 @@ Optional fields:
 - `HumanLoopConfig`:
   [HumanLoopConfigTypeDef](./type_defs.md#humanloopconfigtypedef)
 
+<a id="detectmoderationlabelsresponsetypedef"></a>
+
 ## DetectModerationLabelsResponseTypeDef
 
 ```python
@@ -1036,6 +1162,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectprotectiveequipmentrequestrequesttypedef"></a>
+
 ## DetectProtectiveEquipmentRequestRequestTypeDef
 
 ```python
@@ -1050,6 +1178,8 @@ Optional fields:
 
 - `SummarizationAttributes`:
   [ProtectiveEquipmentSummarizationAttributesTypeDef](./type_defs.md#protectiveequipmentsummarizationattributestypedef)
+
+<a id="detectprotectiveequipmentresponsetypedef"></a>
 
 ## DetectProtectiveEquipmentResponseTypeDef
 
@@ -1067,6 +1197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detecttextfilterstypedef"></a>
+
 ## DetectTextFiltersTypeDef
 
 ```python
@@ -1078,6 +1210,8 @@ Optional fields:
 - `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
   `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
+
+<a id="detecttextrequestrequesttypedef"></a>
 
 ## DetectTextRequestRequestTypeDef
 
@@ -1094,6 +1228,8 @@ Optional fields:
 - `Filters`:
   [DetectTextFiltersTypeDef](./type_defs.md#detecttextfilterstypedef)
 
+<a id="detecttextresponsetypedef"></a>
+
 ## DetectTextResponseTypeDef
 
 ```python
@@ -1108,6 +1244,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="detectionfiltertypedef"></a>
+
 ## DetectionFilterTypeDef
 
 ```python
@@ -1120,6 +1258,8 @@ Optional fields:
 - `MinBoundingBoxHeight`: `float`
 - `MinBoundingBoxWidth`: `float`
 
+<a id="distributedatasetentriesrequestrequesttypedef"></a>
+
 ## DistributeDatasetEntriesRequestRequestTypeDef
 
 ```python
@@ -1131,6 +1271,8 @@ Required fields:
 - `Datasets`:
   `Sequence`\[[DistributeDatasetTypeDef](./type_defs.md#distributedatasettypedef)\]
 
+<a id="distributedatasettypedef"></a>
+
 ## DistributeDatasetTypeDef
 
 ```python
@@ -1140,6 +1282,8 @@ from mypy_boto3_rekognition.type_defs import DistributeDatasetTypeDef
 Required fields:
 
 - `Arn`: `str`
+
+<a id="emotiontypedef"></a>
 
 ## EmotionTypeDef
 
@@ -1151,6 +1295,8 @@ Optional fields:
 
 - `Type`: [EmotionNameType](./literals.md#emotionnametype)
 - `Confidence`: `float`
+
+<a id="equipmentdetectiontypedef"></a>
 
 ## EquipmentDetectionTypeDef
 
@@ -1167,6 +1313,8 @@ Optional fields:
 - `CoversBodyPart`:
   [CoversBodyPartTypeDef](./type_defs.md#coversbodyparttypedef)
 
+<a id="evaluationresulttypedef"></a>
+
 ## EvaluationResultTypeDef
 
 ```python
@@ -1177,6 +1325,8 @@ Optional fields:
 
 - `F1Score`: `float`
 - `Summary`: [SummaryTypeDef](./type_defs.md#summarytypedef)
+
+<a id="eyeopentypedef"></a>
 
 ## EyeOpenTypeDef
 
@@ -1189,6 +1339,8 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
+<a id="eyeglassestypedef"></a>
+
 ## EyeglassesTypeDef
 
 ```python
@@ -1199,6 +1351,8 @@ Optional fields:
 
 - `Value`: `bool`
 - `Confidence`: `float`
+
+<a id="facedetailtypedef"></a>
 
 ## FaceDetailTypeDef
 
@@ -1224,6 +1378,8 @@ Optional fields:
 - `Quality`: [ImageQualityTypeDef](./type_defs.md#imagequalitytypedef)
 - `Confidence`: `float`
 
+<a id="facedetectiontypedef"></a>
+
 ## FaceDetectionTypeDef
 
 ```python
@@ -1234,6 +1390,8 @@ Optional fields:
 
 - `Timestamp`: `int`
 - `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
+
+<a id="facematchtypedef"></a>
 
 ## FaceMatchTypeDef
 
@@ -1246,6 +1404,8 @@ Optional fields:
 - `Similarity`: `float`
 - `Face`: [FaceTypeDef](./type_defs.md#facetypedef)
 
+<a id="facerecordtypedef"></a>
+
 ## FaceRecordTypeDef
 
 ```python
@@ -1257,6 +1417,8 @@ Optional fields:
 - `Face`: [FaceTypeDef](./type_defs.md#facetypedef)
 - `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
+<a id="facesearchsettingstypedef"></a>
+
 ## FaceSearchSettingsTypeDef
 
 ```python
@@ -1267,6 +1429,8 @@ Optional fields:
 
 - `CollectionId`: `str`
 - `FaceMatchThreshold`: `float`
+
+<a id="facetypedef"></a>
 
 ## FaceTypeDef
 
@@ -1283,6 +1447,8 @@ Optional fields:
 - `Confidence`: `float`
 - `IndexFacesModelVersion`: `str`
 
+<a id="gendertypedef"></a>
+
 ## GenderTypeDef
 
 ```python
@@ -1293,6 +1459,8 @@ Optional fields:
 
 - `Value`: [GenderTypeType](./literals.md#gendertypetype)
 - `Confidence`: `float`
+
+<a id="geometrytypedef"></a>
 
 ## GeometryTypeDef
 
@@ -1305,6 +1473,8 @@ Optional fields:
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Polygon`: `List`\[[PointTypeDef](./type_defs.md#pointtypedef)\]
 
+<a id="getcelebrityinforequestrequesttypedef"></a>
+
 ## GetCelebrityInfoRequestRequestTypeDef
 
 ```python
@@ -1314,6 +1484,8 @@ from mypy_boto3_rekognition.type_defs import GetCelebrityInfoRequestRequestTypeD
 Required fields:
 
 - `Id`: `str`
+
+<a id="getcelebrityinforesponsetypedef"></a>
 
 ## GetCelebrityInfoResponseTypeDef
 
@@ -1328,6 +1500,8 @@ Required fields:
 - `KnownGender`: [KnownGenderTypeDef](./type_defs.md#knowngendertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcelebrityrecognitionrequestrequesttypedef"></a>
 
 ## GetCelebrityRecognitionRequestRequestTypeDef
 
@@ -1346,6 +1520,8 @@ Optional fields:
 - `SortBy`:
   [CelebrityRecognitionSortByType](./literals.md#celebrityrecognitionsortbytype)
 
+<a id="getcelebrityrecognitionresponsetypedef"></a>
+
 ## GetCelebrityRecognitionResponseTypeDef
 
 ```python
@@ -1363,6 +1539,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcontentmoderationrequestrequesttypedef"></a>
+
 ## GetContentModerationRequestRequestTypeDef
 
 ```python
@@ -1379,6 +1557,8 @@ Optional fields:
 - `NextToken`: `str`
 - `SortBy`:
   [ContentModerationSortByType](./literals.md#contentmoderationsortbytype)
+
+<a id="getcontentmoderationresponsetypedef"></a>
 
 ## GetContentModerationResponseTypeDef
 
@@ -1398,6 +1578,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfacedetectionrequestrequesttypedef"></a>
+
 ## GetFaceDetectionRequestRequestTypeDef
 
 ```python
@@ -1412,6 +1594,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getfacedetectionresponsetypedef"></a>
 
 ## GetFaceDetectionResponseTypeDef
 
@@ -1430,6 +1614,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfacesearchrequestrequesttypedef"></a>
+
 ## GetFaceSearchRequestRequestTypeDef
 
 ```python
@@ -1445,6 +1631,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `SortBy`: [FaceSearchSortByType](./literals.md#facesearchsortbytype)
+
+<a id="getfacesearchresponsetypedef"></a>
 
 ## GetFaceSearchResponseTypeDef
 
@@ -1462,6 +1650,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlabeldetectionrequestrequesttypedef"></a>
+
 ## GetLabelDetectionRequestRequestTypeDef
 
 ```python
@@ -1477,6 +1667,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `SortBy`: [LabelDetectionSortByType](./literals.md#labeldetectionsortbytype)
+
+<a id="getlabeldetectionresponsetypedef"></a>
 
 ## GetLabelDetectionResponseTypeDef
 
@@ -1496,6 +1688,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpersontrackingrequestrequesttypedef"></a>
+
 ## GetPersonTrackingRequestRequestTypeDef
 
 ```python
@@ -1511,6 +1705,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `SortBy`: [PersonTrackingSortByType](./literals.md#persontrackingsortbytype)
+
+<a id="getpersontrackingresponsetypedef"></a>
 
 ## GetPersonTrackingResponseTypeDef
 
@@ -1529,6 +1725,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsegmentdetectionrequestrequesttypedef"></a>
+
 ## GetSegmentDetectionRequestRequestTypeDef
 
 ```python
@@ -1543,6 +1741,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="getsegmentdetectionresponsetypedef"></a>
 
 ## GetSegmentDetectionResponseTypeDef
 
@@ -1566,6 +1766,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettextdetectionrequestrequesttypedef"></a>
+
 ## GetTextDetectionRequestRequestTypeDef
 
 ```python
@@ -1580,6 +1782,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="gettextdetectionresponsetypedef"></a>
 
 ## GetTextDetectionResponseTypeDef
 
@@ -1599,6 +1803,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="groundtruthmanifesttypedef"></a>
+
 ## GroundTruthManifestTypeDef
 
 ```python
@@ -1608,6 +1814,8 @@ from mypy_boto3_rekognition.type_defs import GroundTruthManifestTypeDef
 Optional fields:
 
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+<a id="humanloopactivationoutputtypedef"></a>
 
 ## HumanLoopActivationOutputTypeDef
 
@@ -1620,6 +1828,8 @@ Optional fields:
 - `HumanLoopArn`: `str`
 - `HumanLoopActivationReasons`: `List`\[`str`\]
 - `HumanLoopActivationConditionsEvaluationResults`: `str`
+
+<a id="humanloopconfigtypedef"></a>
 
 ## HumanLoopConfigTypeDef
 
@@ -1637,6 +1847,8 @@ Optional fields:
 - `DataAttributes`:
   [HumanLoopDataAttributesTypeDef](./type_defs.md#humanloopdataattributestypedef)
 
+<a id="humanloopdataattributestypedef"></a>
+
 ## HumanLoopDataAttributesTypeDef
 
 ```python
@@ -1647,6 +1859,8 @@ Optional fields:
 
 - `ContentClassifiers`:
   `Sequence`\[[ContentClassifierType](./literals.md#contentclassifiertype)\]
+
+<a id="imagequalitytypedef"></a>
 
 ## ImageQualityTypeDef
 
@@ -1659,6 +1873,8 @@ Optional fields:
 - `Brightness`: `float`
 - `Sharpness`: `float`
 
+<a id="imagetypedef"></a>
+
 ## ImageTypeDef
 
 ```python
@@ -1669,6 +1885,8 @@ Optional fields:
 
 - `Bytes`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+<a id="indexfacesrequestrequesttypedef"></a>
 
 ## IndexFacesRequestRequestTypeDef
 
@@ -1689,6 +1907,8 @@ Optional fields:
 - `MaxFaces`: `int`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
+<a id="indexfacesresponsetypedef"></a>
+
 ## IndexFacesResponseTypeDef
 
 ```python
@@ -1707,6 +1927,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instancetypedef"></a>
+
 ## InstanceTypeDef
 
 ```python
@@ -1718,6 +1940,8 @@ Optional fields:
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Confidence`: `float`
 
+<a id="kinesisdatastreamtypedef"></a>
+
 ## KinesisDataStreamTypeDef
 
 ```python
@@ -1727,6 +1951,8 @@ from mypy_boto3_rekognition.type_defs import KinesisDataStreamTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="kinesisvideostreamtypedef"></a>
 
 ## KinesisVideoStreamTypeDef
 
@@ -1738,6 +1964,8 @@ Optional fields:
 
 - `Arn`: `str`
 
+<a id="knowngendertypedef"></a>
+
 ## KnownGenderTypeDef
 
 ```python
@@ -1747,6 +1975,8 @@ from mypy_boto3_rekognition.type_defs import KnownGenderTypeDef
 Optional fields:
 
 - `Type`: [KnownGenderTypeType](./literals.md#knowngendertypetype)
+
+<a id="labeldetectiontypedef"></a>
 
 ## LabelDetectionTypeDef
 
@@ -1758,6 +1988,8 @@ Optional fields:
 
 - `Timestamp`: `int`
 - `Label`: [LabelTypeDef](./type_defs.md#labeltypedef)
+
+<a id="labeltypedef"></a>
 
 ## LabelTypeDef
 
@@ -1772,6 +2004,8 @@ Optional fields:
 - `Instances`: `List`\[[InstanceTypeDef](./type_defs.md#instancetypedef)\]
 - `Parents`: `List`\[[ParentTypeDef](./type_defs.md#parenttypedef)\]
 
+<a id="landmarktypedef"></a>
+
 ## LandmarkTypeDef
 
 ```python
@@ -1784,6 +2018,8 @@ Optional fields:
 - `X`: `float`
 - `Y`: `float`
 
+<a id="listcollectionsrequestrequesttypedef"></a>
+
 ## ListCollectionsRequestRequestTypeDef
 
 ```python
@@ -1794,6 +2030,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listcollectionsresponsetypedef"></a>
 
 ## ListCollectionsResponseTypeDef
 
@@ -1808,6 +2046,8 @@ Required fields:
 - `FaceModelVersions`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatasetentriesrequestrequesttypedef"></a>
 
 ## ListDatasetEntriesRequestRequestTypeDef
 
@@ -1828,6 +2068,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdatasetentriesresponsetypedef"></a>
+
 ## ListDatasetEntriesResponseTypeDef
 
 ```python
@@ -1840,6 +2082,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatasetlabelsrequestrequesttypedef"></a>
 
 ## ListDatasetLabelsRequestRequestTypeDef
 
@@ -1856,6 +2100,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdatasetlabelsresponsetypedef"></a>
+
 ## ListDatasetLabelsResponseTypeDef
 
 ```python
@@ -1869,6 +2115,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfacesrequestrequesttypedef"></a>
 
 ## ListFacesRequestRequestTypeDef
 
@@ -1885,6 +2133,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listfacesresponsetypedef"></a>
+
 ## ListFacesResponseTypeDef
 
 ```python
@@ -1899,6 +2149,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststreamprocessorsrequestrequesttypedef"></a>
+
 ## ListStreamProcessorsRequestRequestTypeDef
 
 ```python
@@ -1909,6 +2161,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="liststreamprocessorsresponsetypedef"></a>
 
 ## ListStreamProcessorsResponseTypeDef
 
@@ -1924,6 +2178,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1933,6 +2189,8 @@ from mypy_boto3_rekognition.type_defs import ListTagsForResourceRequestRequestTy
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1946,6 +2204,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="moderationlabeltypedef"></a>
+
 ## ModerationLabelTypeDef
 
 ```python
@@ -1958,6 +2218,8 @@ Optional fields:
 - `Name`: `str`
 - `ParentName`: `str`
 
+<a id="mouthopentypedef"></a>
+
 ## MouthOpenTypeDef
 
 ```python
@@ -1968,6 +2230,8 @@ Optional fields:
 
 - `Value`: `bool`
 - `Confidence`: `float`
+
+<a id="mustachetypedef"></a>
 
 ## MustacheTypeDef
 
@@ -1980,6 +2244,8 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
+<a id="notificationchanneltypedef"></a>
+
 ## NotificationChannelTypeDef
 
 ```python
@@ -1991,6 +2257,8 @@ Required fields:
 - `SNSTopicArn`: `str`
 - `RoleArn`: `str`
 
+<a id="outputconfigtypedef"></a>
+
 ## OutputConfigTypeDef
 
 ```python
@@ -2001,6 +2269,8 @@ Optional fields:
 
 - `S3Bucket`: `str`
 - `S3KeyPrefix`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -2014,6 +2284,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="parenttypedef"></a>
+
 ## ParentTypeDef
 
 ```python
@@ -2023,6 +2295,8 @@ from mypy_boto3_rekognition.type_defs import ParentTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="persondetailtypedef"></a>
 
 ## PersonDetailTypeDef
 
@@ -2036,6 +2310,8 @@ Optional fields:
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
 - `Face`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
+<a id="persondetectiontypedef"></a>
+
 ## PersonDetectionTypeDef
 
 ```python
@@ -2046,6 +2322,8 @@ Optional fields:
 
 - `Timestamp`: `int`
 - `Person`: [PersonDetailTypeDef](./type_defs.md#persondetailtypedef)
+
+<a id="personmatchtypedef"></a>
 
 ## PersonMatchTypeDef
 
@@ -2059,6 +2337,8 @@ Optional fields:
 - `Person`: [PersonDetailTypeDef](./type_defs.md#persondetailtypedef)
 - `FaceMatches`: `List`\[[FaceMatchTypeDef](./type_defs.md#facematchtypedef)\]
 
+<a id="pointtypedef"></a>
+
 ## PointTypeDef
 
 ```python
@@ -2069,6 +2349,8 @@ Optional fields:
 
 - `X`: `float`
 - `Y`: `float`
+
+<a id="posetypedef"></a>
 
 ## PoseTypeDef
 
@@ -2081,6 +2363,8 @@ Optional fields:
 - `Roll`: `float`
 - `Yaw`: `float`
 - `Pitch`: `float`
+
+<a id="projectdescriptiontypedef"></a>
 
 ## ProjectDescriptionTypeDef
 
@@ -2095,6 +2379,8 @@ Optional fields:
 - `Status`: [ProjectStatusType](./literals.md#projectstatustype)
 - `Datasets`:
   `List`\[[DatasetMetadataTypeDef](./type_defs.md#datasetmetadatatypedef)\]
+
+<a id="projectversiondescriptiontypedef"></a>
 
 ## ProjectVersionDescriptionTypeDef
 
@@ -2122,6 +2408,8 @@ Optional fields:
   [GroundTruthManifestTypeDef](./type_defs.md#groundtruthmanifesttypedef)
 - `KmsKeyId`: `str`
 
+<a id="protectiveequipmentbodyparttypedef"></a>
+
 ## ProtectiveEquipmentBodyPartTypeDef
 
 ```python
@@ -2134,6 +2422,8 @@ Optional fields:
 - `Confidence`: `float`
 - `EquipmentDetections`:
   `List`\[[EquipmentDetectionTypeDef](./type_defs.md#equipmentdetectiontypedef)\]
+
+<a id="protectiveequipmentpersontypedef"></a>
 
 ## ProtectiveEquipmentPersonTypeDef
 
@@ -2149,6 +2439,8 @@ Optional fields:
 - `Confidence`: `float`
 - `Id`: `int`
 
+<a id="protectiveequipmentsummarizationattributestypedef"></a>
+
 ## ProtectiveEquipmentSummarizationAttributesTypeDef
 
 ```python
@@ -2160,6 +2452,8 @@ Required fields:
 - `MinConfidence`: `float`
 - `RequiredEquipmentTypes`:
   `Sequence`\[[ProtectiveEquipmentTypeType](./literals.md#protectiveequipmenttypetype)\]
+
+<a id="protectiveequipmentsummarytypedef"></a>
 
 ## ProtectiveEquipmentSummaryTypeDef
 
@@ -2173,6 +2467,8 @@ Optional fields:
 - `PersonsWithoutRequiredEquipment`: `List`\[`int`\]
 - `PersonsIndeterminate`: `List`\[`int`\]
 
+<a id="recognizecelebritiesrequestrequesttypedef"></a>
+
 ## RecognizeCelebritiesRequestRequestTypeDef
 
 ```python
@@ -2182,6 +2478,8 @@ from mypy_boto3_rekognition.type_defs import RecognizeCelebritiesRequestRequestT
 Required fields:
 
 - `Image`: [ImageTypeDef](./type_defs.md#imagetypedef)
+
+<a id="recognizecelebritiesresponsetypedef"></a>
 
 ## RecognizeCelebritiesResponseTypeDef
 
@@ -2200,6 +2498,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="regionofinteresttypedef"></a>
+
 ## RegionOfInterestTypeDef
 
 ```python
@@ -2209,6 +2509,8 @@ from mypy_boto3_rekognition.type_defs import RegionOfInterestTypeDef
 Optional fields:
 
 - `BoundingBox`: [BoundingBoxTypeDef](./type_defs.md#boundingboxtypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -2224,6 +2526,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3objecttypedef"></a>
+
 ## S3ObjectTypeDef
 
 ```python
@@ -2235,6 +2539,8 @@ Optional fields:
 - `Bucket`: `str`
 - `Name`: `str`
 - `Version`: `str`
+
+<a id="searchfacesbyimagerequestrequesttypedef"></a>
 
 ## SearchFacesByImageRequestRequestTypeDef
 
@@ -2253,6 +2559,8 @@ Optional fields:
 - `FaceMatchThreshold`: `float`
 - `QualityFilter`: [QualityFilterType](./literals.md#qualityfiltertype)
 
+<a id="searchfacesbyimageresponsetypedef"></a>
+
 ## SearchFacesByImageResponseTypeDef
 
 ```python
@@ -2268,6 +2576,8 @@ Required fields:
 - `FaceModelVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchfacesrequestrequesttypedef"></a>
 
 ## SearchFacesRequestRequestTypeDef
 
@@ -2285,6 +2595,8 @@ Optional fields:
 - `MaxFaces`: `int`
 - `FaceMatchThreshold`: `float`
 
+<a id="searchfacesresponsetypedef"></a>
+
 ## SearchFacesResponseTypeDef
 
 ```python
@@ -2298,6 +2610,8 @@ Required fields:
 - `FaceModelVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="segmentdetectiontypedef"></a>
 
 ## SegmentDetectionTypeDef
 
@@ -2321,6 +2635,8 @@ Optional fields:
 - `EndFrameNumber`: `int`
 - `DurationFrames`: `int`
 
+<a id="segmenttypeinfotypedef"></a>
+
 ## SegmentTypeInfoTypeDef
 
 ```python
@@ -2331,6 +2647,8 @@ Optional fields:
 
 - `Type`: [SegmentTypeType](./literals.md#segmenttypetype)
 - `ModelVersion`: `str`
+
+<a id="shotsegmenttypedef"></a>
 
 ## ShotSegmentTypeDef
 
@@ -2343,6 +2661,8 @@ Optional fields:
 - `Index`: `int`
 - `Confidence`: `float`
 
+<a id="smiletypedef"></a>
+
 ## SmileTypeDef
 
 ```python
@@ -2353,6 +2673,8 @@ Optional fields:
 
 - `Value`: `bool`
 - `Confidence`: `float`
+
+<a id="startcelebrityrecognitionrequestrequesttypedef"></a>
 
 ## StartCelebrityRecognitionRequestRequestTypeDef
 
@@ -2371,6 +2693,8 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
+<a id="startcelebrityrecognitionresponsetypedef"></a>
+
 ## StartCelebrityRecognitionResponseTypeDef
 
 ```python
@@ -2382,6 +2706,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startcontentmoderationrequestrequesttypedef"></a>
 
 ## StartContentModerationRequestRequestTypeDef
 
@@ -2401,6 +2727,8 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
+<a id="startcontentmoderationresponsetypedef"></a>
+
 ## StartContentModerationResponseTypeDef
 
 ```python
@@ -2412,6 +2740,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startfacedetectionrequestrequesttypedef"></a>
 
 ## StartFaceDetectionRequestRequestTypeDef
 
@@ -2431,6 +2761,8 @@ Optional fields:
 - `FaceAttributes`: [FaceAttributesType](./literals.md#faceattributestype)
 - `JobTag`: `str`
 
+<a id="startfacedetectionresponsetypedef"></a>
+
 ## StartFaceDetectionResponseTypeDef
 
 ```python
@@ -2442,6 +2774,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startfacesearchrequestrequesttypedef"></a>
 
 ## StartFaceSearchRequestRequestTypeDef
 
@@ -2462,6 +2796,8 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
+<a id="startfacesearchresponsetypedef"></a>
+
 ## StartFaceSearchResponseTypeDef
 
 ```python
@@ -2473,6 +2809,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startlabeldetectionrequestrequesttypedef"></a>
 
 ## StartLabelDetectionRequestRequestTypeDef
 
@@ -2492,6 +2830,8 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
+<a id="startlabeldetectionresponsetypedef"></a>
+
 ## StartLabelDetectionResponseTypeDef
 
 ```python
@@ -2503,6 +2843,8 @@ Required fields:
 - `JobId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startpersontrackingrequestrequesttypedef"></a>
 
 ## StartPersonTrackingRequestRequestTypeDef
 
@@ -2521,6 +2863,8 @@ Optional fields:
   [NotificationChannelTypeDef](./type_defs.md#notificationchanneltypedef)
 - `JobTag`: `str`
 
+<a id="startpersontrackingresponsetypedef"></a>
+
 ## StartPersonTrackingResponseTypeDef
 
 ```python
@@ -2533,6 +2877,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startprojectversionrequestrequesttypedef"></a>
+
 ## StartProjectVersionRequestRequestTypeDef
 
 ```python
@@ -2543,6 +2889,8 @@ Required fields:
 
 - `ProjectVersionArn`: `str`
 - `MinInferenceUnits`: `int`
+
+<a id="startprojectversionresponsetypedef"></a>
 
 ## StartProjectVersionResponseTypeDef
 
@@ -2556,6 +2904,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startsegmentdetectionfilterstypedef"></a>
+
 ## StartSegmentDetectionFiltersTypeDef
 
 ```python
@@ -2568,6 +2918,8 @@ Optional fields:
   [StartTechnicalCueDetectionFilterTypeDef](./type_defs.md#starttechnicalcuedetectionfiltertypedef)
 - `ShotFilter`:
   [StartShotDetectionFilterTypeDef](./type_defs.md#startshotdetectionfiltertypedef)
+
+<a id="startsegmentdetectionrequestrequesttypedef"></a>
 
 ## StartSegmentDetectionRequestRequestTypeDef
 
@@ -2590,6 +2942,8 @@ Optional fields:
 - `Filters`:
   [StartSegmentDetectionFiltersTypeDef](./type_defs.md#startsegmentdetectionfilterstypedef)
 
+<a id="startsegmentdetectionresponsetypedef"></a>
+
 ## StartSegmentDetectionResponseTypeDef
 
 ```python
@@ -2602,6 +2956,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startshotdetectionfiltertypedef"></a>
+
 ## StartShotDetectionFilterTypeDef
 
 ```python
@@ -2612,6 +2968,8 @@ Optional fields:
 
 - `MinSegmentConfidence`: `float`
 
+<a id="startstreamprocessorrequestrequesttypedef"></a>
+
 ## StartStreamProcessorRequestRequestTypeDef
 
 ```python
@@ -2621,6 +2979,8 @@ from mypy_boto3_rekognition.type_defs import StartStreamProcessorRequestRequestT
 Required fields:
 
 - `Name`: `str`
+
+<a id="starttechnicalcuedetectionfiltertypedef"></a>
 
 ## StartTechnicalCueDetectionFilterTypeDef
 
@@ -2633,6 +2993,8 @@ Optional fields:
 - `MinSegmentConfidence`: `float`
 - `BlackFrame`: [BlackFrameTypeDef](./type_defs.md#blackframetypedef)
 
+<a id="starttextdetectionfilterstypedef"></a>
+
 ## StartTextDetectionFiltersTypeDef
 
 ```python
@@ -2644,6 +3006,8 @@ Optional fields:
 - `WordFilter`: [DetectionFilterTypeDef](./type_defs.md#detectionfiltertypedef)
 - `RegionsOfInterest`:
   `Sequence`\[[RegionOfInterestTypeDef](./type_defs.md#regionofinteresttypedef)\]
+
+<a id="starttextdetectionrequestrequesttypedef"></a>
 
 ## StartTextDetectionRequestRequestTypeDef
 
@@ -2664,6 +3028,8 @@ Optional fields:
 - `Filters`:
   [StartTextDetectionFiltersTypeDef](./type_defs.md#starttextdetectionfilterstypedef)
 
+<a id="starttextdetectionresponsetypedef"></a>
+
 ## StartTextDetectionResponseTypeDef
 
 ```python
@@ -2676,6 +3042,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopprojectversionrequestrequesttypedef"></a>
+
 ## StopProjectVersionRequestRequestTypeDef
 
 ```python
@@ -2685,6 +3053,8 @@ from mypy_boto3_rekognition.type_defs import StopProjectVersionRequestRequestTyp
 Required fields:
 
 - `ProjectVersionArn`: `str`
+
+<a id="stopprojectversionresponsetypedef"></a>
 
 ## StopProjectVersionResponseTypeDef
 
@@ -2698,6 +3068,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopstreamprocessorrequestrequesttypedef"></a>
+
 ## StopStreamProcessorRequestRequestTypeDef
 
 ```python
@@ -2707,6 +3079,8 @@ from mypy_boto3_rekognition.type_defs import StopStreamProcessorRequestRequestTy
 Required fields:
 
 - `Name`: `str`
+
+<a id="streamprocessorinputtypedef"></a>
 
 ## StreamProcessorInputTypeDef
 
@@ -2719,6 +3093,8 @@ Optional fields:
 - `KinesisVideoStream`:
   [KinesisVideoStreamTypeDef](./type_defs.md#kinesisvideostreamtypedef)
 
+<a id="streamprocessoroutputtypedef"></a>
+
 ## StreamProcessorOutputTypeDef
 
 ```python
@@ -2730,6 +3106,8 @@ Optional fields:
 - `KinesisDataStream`:
   [KinesisDataStreamTypeDef](./type_defs.md#kinesisdatastreamtypedef)
 
+<a id="streamprocessorsettingstypedef"></a>
+
 ## StreamProcessorSettingsTypeDef
 
 ```python
@@ -2740,6 +3118,8 @@ Optional fields:
 
 - `FaceSearch`:
   [FaceSearchSettingsTypeDef](./type_defs.md#facesearchsettingstypedef)
+
+<a id="streamprocessortypedef"></a>
 
 ## StreamProcessorTypeDef
 
@@ -2753,6 +3133,8 @@ Optional fields:
 - `Status`:
   [StreamProcessorStatusType](./literals.md#streamprocessorstatustype)
 
+<a id="summarytypedef"></a>
+
 ## SummaryTypeDef
 
 ```python
@@ -2762,6 +3144,8 @@ from mypy_boto3_rekognition.type_defs import SummaryTypeDef
 Optional fields:
 
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+<a id="sunglassestypedef"></a>
 
 ## SunglassesTypeDef
 
@@ -2774,6 +3158,8 @@ Optional fields:
 - `Value`: `bool`
 - `Confidence`: `float`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2785,6 +3171,8 @@ Required fields:
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="technicalcuesegmenttypedef"></a>
+
 ## TechnicalCueSegmentTypeDef
 
 ```python
@@ -2795,6 +3183,8 @@ Optional fields:
 
 - `Type`: [TechnicalCueTypeType](./literals.md#technicalcuetypetype)
 - `Confidence`: `float`
+
+<a id="testingdataresulttypedef"></a>
 
 ## TestingDataResultTypeDef
 
@@ -2808,6 +3198,8 @@ Optional fields:
 - `Output`: [TestingDataTypeDef](./type_defs.md#testingdatatypedef)
 - `Validation`: [ValidationDataTypeDef](./type_defs.md#validationdatatypedef)
 
+<a id="testingdatatypedef"></a>
+
 ## TestingDataTypeDef
 
 ```python
@@ -2819,6 +3211,8 @@ Optional fields:
 - `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
 - `AutoCreate`: `bool`
 
+<a id="textdetectionresulttypedef"></a>
+
 ## TextDetectionResultTypeDef
 
 ```python
@@ -2829,6 +3223,8 @@ Optional fields:
 
 - `Timestamp`: `int`
 - `TextDetection`: [TextDetectionTypeDef](./type_defs.md#textdetectiontypedef)
+
+<a id="textdetectiontypedef"></a>
 
 ## TextDetectionTypeDef
 
@@ -2845,6 +3241,8 @@ Optional fields:
 - `Confidence`: `float`
 - `Geometry`: [GeometryTypeDef](./type_defs.md#geometrytypedef)
 
+<a id="trainingdataresulttypedef"></a>
+
 ## TrainingDataResultTypeDef
 
 ```python
@@ -2857,6 +3255,8 @@ Optional fields:
 - `Output`: [TrainingDataTypeDef](./type_defs.md#trainingdatatypedef)
 - `Validation`: [ValidationDataTypeDef](./type_defs.md#validationdatatypedef)
 
+<a id="trainingdatatypedef"></a>
+
 ## TrainingDataTypeDef
 
 ```python
@@ -2866,6 +3266,8 @@ from mypy_boto3_rekognition.type_defs import TrainingDataTypeDef
 Optional fields:
 
 - `Assets`: `Sequence`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
+
+<a id="unindexedfacetypedef"></a>
 
 ## UnindexedFaceTypeDef
 
@@ -2878,6 +3280,8 @@ Optional fields:
 - `Reasons`: `List`\[[ReasonType](./literals.md#reasontype)\]
 - `FaceDetail`: [FaceDetailTypeDef](./type_defs.md#facedetailtypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2888,6 +3292,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatasetentriesrequestrequesttypedef"></a>
 
 ## UpdateDatasetEntriesRequestRequestTypeDef
 
@@ -2900,6 +3306,8 @@ Required fields:
 - `DatasetArn`: `str`
 - `Changes`: [DatasetChangesTypeDef](./type_defs.md#datasetchangestypedef)
 
+<a id="validationdatatypedef"></a>
+
 ## ValidationDataTypeDef
 
 ```python
@@ -2909,6 +3317,8 @@ from mypy_boto3_rekognition.type_defs import ValidationDataTypeDef
 Optional fields:
 
 - `Assets`: `List`\[[AssetTypeDef](./type_defs.md#assettypedef)\]
+
+<a id="videometadatatypedef"></a>
 
 ## VideoMetadataTypeDef
 
@@ -2926,6 +3336,8 @@ Optional fields:
 - `FrameWidth`: `int`
 - `ColorRange`: [VideoColorRangeType](./literals.md#videocolorrangetype)
 
+<a id="videotypedef"></a>
+
 ## VideoTypeDef
 
 ```python
@@ -2935,6 +3347,8 @@ from mypy_boto3_rekognition.type_defs import VideoTypeDef
 Optional fields:
 
 - `S3Object`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

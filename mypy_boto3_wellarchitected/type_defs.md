@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-wellarchitected-module"></a>
+
 # Typed dictionaries for boto3 WellArchitected module
 
 > [Index](..) > [WellArchitected](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WellArchitected](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wellarchitected.html#WellArchitected)
 type annotations stubs module
-[mypy_boto3_wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
+[mypy-boto3-wellarchitected](https://pypi.org/project/mypy-boto3-wellarchitected/).
 
 - [Typed dictionaries for boto3 WellArchitected module](#typed-dictionaries-for-boto3-wellarchitected-module)
   - [AnswerSummaryTypeDef](#answersummarytypedef)
@@ -108,6 +110,8 @@ type annotations stubs module
   - [WorkloadSummaryTypeDef](#workloadsummarytypedef)
   - [WorkloadTypeDef](#workloadtypedef)
 
+<a id="answersummarytypedef"></a>
+
 ## AnswerSummaryTypeDef
 
 ```python
@@ -126,6 +130,8 @@ Optional fields:
 - `IsApplicable`: `bool`
 - `Risk`: [RiskType](./literals.md#risktype)
 - `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
+
+<a id="answertypedef"></a>
 
 ## AnswerTypeDef
 
@@ -151,6 +157,8 @@ Optional fields:
 - `Notes`: `str`
 - `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
+<a id="associatelensesinputrequesttypedef"></a>
+
 ## AssociateLensesInputRequestTypeDef
 
 ```python
@@ -161,6 +169,8 @@ Required fields:
 
 - `WorkloadId`: `str`
 - `LensAliases`: `Sequence`\[`str`\]
+
+<a id="choiceanswersummarytypedef"></a>
 
 ## ChoiceAnswerSummaryTypeDef
 
@@ -173,6 +183,8 @@ Optional fields:
 - `ChoiceId`: `str`
 - `Status`: [ChoiceStatusType](./literals.md#choicestatustype)
 - `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
+
+<a id="choiceanswertypedef"></a>
 
 ## ChoiceAnswerTypeDef
 
@@ -187,6 +199,8 @@ Optional fields:
 - `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
 - `Notes`: `str`
 
+<a id="choicecontenttypedef"></a>
+
 ## ChoiceContentTypeDef
 
 ```python
@@ -197,6 +211,8 @@ Optional fields:
 
 - `DisplayText`: `str`
 - `Url`: `str`
+
+<a id="choiceimprovementplantypedef"></a>
 
 ## ChoiceImprovementPlanTypeDef
 
@@ -209,6 +225,8 @@ Optional fields:
 - `ChoiceId`: `str`
 - `DisplayText`: `str`
 - `ImprovementPlanUrl`: `str`
+
+<a id="choicetypedef"></a>
 
 ## ChoiceTypeDef
 
@@ -226,6 +244,8 @@ Optional fields:
 - `ImprovementPlan`:
   [ChoiceContentTypeDef](./type_defs.md#choicecontenttypedef)
 
+<a id="choiceupdatetypedef"></a>
+
 ## ChoiceUpdateTypeDef
 
 ```python
@@ -241,6 +261,8 @@ Optional fields:
 - `Reason`: [ChoiceReasonType](./literals.md#choicereasontype)
 - `Notes`: `str`
 
+<a id="createlensshareinputrequesttypedef"></a>
+
 ## CreateLensShareInputRequestTypeDef
 
 ```python
@@ -253,6 +275,8 @@ Required fields:
 - `SharedWith`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="createlensshareoutputtypedef"></a>
+
 ## CreateLensShareOutputTypeDef
 
 ```python
@@ -264,6 +288,8 @@ Required fields:
 - `ShareId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlensversioninputrequesttypedef"></a>
 
 ## CreateLensVersionInputRequestTypeDef
 
@@ -281,6 +307,8 @@ Optional fields:
 
 - `IsMajorVersion`: `bool`
 
+<a id="createlensversionoutputtypedef"></a>
+
 ## CreateLensVersionOutputTypeDef
 
 ```python
@@ -294,6 +322,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createmilestoneinputrequesttypedef"></a>
+
 ## CreateMilestoneInputRequestTypeDef
 
 ```python
@@ -305,6 +335,8 @@ Required fields:
 - `WorkloadId`: `str`
 - `MilestoneName`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="createmilestoneoutputtypedef"></a>
 
 ## CreateMilestoneOutputTypeDef
 
@@ -318,6 +350,8 @@ Required fields:
 - `MilestoneNumber`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createworkloadinputrequesttypedef"></a>
 
 ## CreateWorkloadInputRequestTypeDef
 
@@ -347,6 +381,8 @@ Optional fields:
 - `Notes`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createworkloadoutputtypedef"></a>
+
 ## CreateWorkloadOutputTypeDef
 
 ```python
@@ -359,6 +395,8 @@ Required fields:
 - `WorkloadArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createworkloadshareinputrequesttypedef"></a>
 
 ## CreateWorkloadShareInputRequestTypeDef
 
@@ -373,6 +411,8 @@ Required fields:
 - `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
 - `ClientRequestToken`: `str`
 
+<a id="createworkloadshareoutputtypedef"></a>
+
 ## CreateWorkloadShareOutputTypeDef
 
 ```python
@@ -386,6 +426,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletelensinputrequesttypedef"></a>
+
 ## DeleteLensInputRequestTypeDef
 
 ```python
@@ -397,6 +439,8 @@ Required fields:
 - `LensAlias`: `str`
 - `ClientRequestToken`: `str`
 - `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
+
+<a id="deletelensshareinputrequesttypedef"></a>
 
 ## DeleteLensShareInputRequestTypeDef
 
@@ -410,6 +454,8 @@ Required fields:
 - `LensAlias`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="deleteworkloadinputrequesttypedef"></a>
+
 ## DeleteWorkloadInputRequestTypeDef
 
 ```python
@@ -420,6 +466,8 @@ Required fields:
 
 - `WorkloadId`: `str`
 - `ClientRequestToken`: `str`
+
+<a id="deleteworkloadshareinputrequesttypedef"></a>
 
 ## DeleteWorkloadShareInputRequestTypeDef
 
@@ -433,6 +481,8 @@ Required fields:
 - `WorkloadId`: `str`
 - `ClientRequestToken`: `str`
 
+<a id="disassociatelensesinputrequesttypedef"></a>
+
 ## DisassociateLensesInputRequestTypeDef
 
 ```python
@@ -443,6 +493,8 @@ Required fields:
 
 - `WorkloadId`: `str`
 - `LensAliases`: `Sequence`\[`str`\]
+
+<a id="exportlensinputrequesttypedef"></a>
 
 ## ExportLensInputRequestTypeDef
 
@@ -458,6 +510,8 @@ Optional fields:
 
 - `LensVersion`: `str`
 
+<a id="exportlensoutputtypedef"></a>
+
 ## ExportLensOutputTypeDef
 
 ```python
@@ -469,6 +523,8 @@ Required fields:
 - `LensJSON`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getanswerinputrequesttypedef"></a>
 
 ## GetAnswerInputRequestTypeDef
 
@@ -486,6 +542,8 @@ Optional fields:
 
 - `MilestoneNumber`: `int`
 
+<a id="getansweroutputtypedef"></a>
+
 ## GetAnswerOutputTypeDef
 
 ```python
@@ -502,6 +560,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlensinputrequesttypedef"></a>
+
 ## GetLensInputRequestTypeDef
 
 ```python
@@ -516,6 +576,8 @@ Optional fields:
 
 - `LensVersion`: `str`
 
+<a id="getlensoutputtypedef"></a>
+
 ## GetLensOutputTypeDef
 
 ```python
@@ -527,6 +589,8 @@ Required fields:
 - `Lens`: [LensTypeDef](./type_defs.md#lenstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlensreviewinputrequesttypedef"></a>
 
 ## GetLensReviewInputRequestTypeDef
 
@@ -543,6 +607,8 @@ Optional fields:
 
 - `MilestoneNumber`: `int`
 
+<a id="getlensreviewoutputtypedef"></a>
+
 ## GetLensReviewOutputTypeDef
 
 ```python
@@ -556,6 +622,8 @@ Required fields:
 - `LensReview`: [LensReviewTypeDef](./type_defs.md#lensreviewtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getlensreviewreportinputrequesttypedef"></a>
 
 ## GetLensReviewReportInputRequestTypeDef
 
@@ -572,6 +640,8 @@ Optional fields:
 
 - `MilestoneNumber`: `int`
 
+<a id="getlensreviewreportoutputtypedef"></a>
+
 ## GetLensReviewReportOutputTypeDef
 
 ```python
@@ -587,6 +657,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getlensversiondifferenceinputrequesttypedef"></a>
+
 ## GetLensVersionDifferenceInputRequestTypeDef
 
 ```python
@@ -601,6 +673,8 @@ Optional fields:
 
 - `BaseLensVersion`: `str`
 - `TargetLensVersion`: `str`
+
+<a id="getlensversiondifferenceoutputtypedef"></a>
 
 ## GetLensVersionDifferenceOutputTypeDef
 
@@ -620,6 +694,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmilestoneinputrequesttypedef"></a>
+
 ## GetMilestoneInputRequestTypeDef
 
 ```python
@@ -630,6 +706,8 @@ Required fields:
 
 - `WorkloadId`: `str`
 - `MilestoneNumber`: `int`
+
+<a id="getmilestoneoutputtypedef"></a>
 
 ## GetMilestoneOutputTypeDef
 
@@ -644,6 +722,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getworkloadinputrequesttypedef"></a>
+
 ## GetWorkloadInputRequestTypeDef
 
 ```python
@@ -653,6 +733,8 @@ from mypy_boto3_wellarchitected.type_defs import GetWorkloadInputRequestTypeDef
 Required fields:
 
 - `WorkloadId`: `str`
+
+<a id="getworkloadoutputtypedef"></a>
 
 ## GetWorkloadOutputTypeDef
 
@@ -665,6 +747,8 @@ Required fields:
 - `Workload`: [WorkloadTypeDef](./type_defs.md#workloadtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importlensinputrequesttypedef"></a>
 
 ## ImportLensInputRequestTypeDef
 
@@ -682,6 +766,8 @@ Optional fields:
 - `LensAlias`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="importlensoutputtypedef"></a>
+
 ## ImportLensOutputTypeDef
 
 ```python
@@ -694,6 +780,8 @@ Required fields:
 - `Status`: [ImportLensStatusType](./literals.md#importlensstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="improvementsummarytypedef"></a>
 
 ## ImprovementSummaryTypeDef
 
@@ -711,6 +799,8 @@ Optional fields:
 - `ImprovementPlans`:
   `List`\[[ChoiceImprovementPlanTypeDef](./type_defs.md#choiceimprovementplantypedef)\]
 
+<a id="lensreviewreporttypedef"></a>
+
 ## LensReviewReportTypeDef
 
 ```python
@@ -722,6 +812,8 @@ Optional fields:
 - `LensAlias`: `str`
 - `LensArn`: `str`
 - `Base64String`: `str`
+
+<a id="lensreviewsummarytypedef"></a>
 
 ## LensReviewSummaryTypeDef
 
@@ -738,6 +830,8 @@ Optional fields:
 - `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
 - `UpdatedAt`: `datetime`
 - `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
+
+<a id="lensreviewtypedef"></a>
 
 ## LensReviewTypeDef
 
@@ -759,6 +853,8 @@ Optional fields:
 - `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 - `NextToken`: `str`
 
+<a id="lenssharesummarytypedef"></a>
+
 ## LensShareSummaryTypeDef
 
 ```python
@@ -770,6 +866,8 @@ Optional fields:
 - `ShareId`: `str`
 - `SharedWith`: `str`
 - `Status`: [ShareStatusType](./literals.md#sharestatustype)
+
+<a id="lenssummarytypedef"></a>
 
 ## LensSummaryTypeDef
 
@@ -790,6 +888,8 @@ Optional fields:
 - `Owner`: `str`
 - `LensStatus`: [LensStatusType](./literals.md#lensstatustype)
 
+<a id="lenstypedef"></a>
+
 ## LensTypeDef
 
 ```python
@@ -805,6 +905,8 @@ Optional fields:
 - `Owner`: `str`
 - `ShareInvitationId`: `str`
 
+<a id="lensupgradesummarytypedef"></a>
+
 ## LensUpgradeSummaryTypeDef
 
 ```python
@@ -819,6 +921,8 @@ Optional fields:
 - `LensArn`: `str`
 - `CurrentLensVersion`: `str`
 - `LatestLensVersion`: `str`
+
+<a id="listanswersinputrequesttypedef"></a>
 
 ## ListAnswersInputRequestTypeDef
 
@@ -838,6 +942,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listanswersoutputtypedef"></a>
+
 ## ListAnswersOutputTypeDef
 
 ```python
@@ -855,6 +961,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlensreviewimprovementsinputrequesttypedef"></a>
 
 ## ListLensReviewImprovementsInputRequestTypeDef
 
@@ -874,6 +982,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listlensreviewimprovementsoutputtypedef"></a>
+
 ## ListLensReviewImprovementsOutputTypeDef
 
 ```python
@@ -892,6 +1002,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlensreviewsinputrequesttypedef"></a>
+
 ## ListLensReviewsInputRequestTypeDef
 
 ```python
@@ -907,6 +1019,8 @@ Optional fields:
 - `MilestoneNumber`: `int`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listlensreviewsoutputtypedef"></a>
 
 ## ListLensReviewsOutputTypeDef
 
@@ -924,6 +1038,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlenssharesinputrequesttypedef"></a>
+
 ## ListLensSharesInputRequestTypeDef
 
 ```python
@@ -940,6 +1056,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listlenssharesoutputtypedef"></a>
+
 ## ListLensSharesOutputTypeDef
 
 ```python
@@ -953,6 +1071,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listlensesinputrequesttypedef"></a>
 
 ## ListLensesInputRequestTypeDef
 
@@ -968,6 +1088,8 @@ Optional fields:
 - `LensStatus`: [LensStatusTypeType](./literals.md#lensstatustypetype)
 - `LensName`: `str`
 
+<a id="listlensesoutputtypedef"></a>
+
 ## ListLensesOutputTypeDef
 
 ```python
@@ -981,6 +1103,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmilestonesinputrequesttypedef"></a>
 
 ## ListMilestonesInputRequestTypeDef
 
@@ -997,6 +1121,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmilestonesoutputtypedef"></a>
+
 ## ListMilestonesOutputTypeDef
 
 ```python
@@ -1012,6 +1138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listnotificationsinputrequesttypedef"></a>
+
 ## ListNotificationsInputRequestTypeDef
 
 ```python
@@ -1023,6 +1151,8 @@ Optional fields:
 - `WorkloadId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listnotificationsoutputtypedef"></a>
 
 ## ListNotificationsOutputTypeDef
 
@@ -1037,6 +1167,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listshareinvitationsinputrequesttypedef"></a>
 
 ## ListShareInvitationsInputRequestTypeDef
 
@@ -1053,6 +1185,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listshareinvitationsoutputtypedef"></a>
+
 ## ListShareInvitationsOutputTypeDef
 
 ```python
@@ -1067,6 +1201,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -1076,6 +1212,8 @@ from mypy_boto3_wellarchitected.type_defs import ListTagsForResourceInputRequest
 Required fields:
 
 - `WorkloadArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -1088,6 +1226,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listworkloadsharesinputrequesttypedef"></a>
 
 ## ListWorkloadSharesInputRequestTypeDef
 
@@ -1105,6 +1245,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listworkloadsharesoutputtypedef"></a>
+
 ## ListWorkloadSharesOutputTypeDef
 
 ```python
@@ -1120,6 +1262,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkloadsinputrequesttypedef"></a>
+
 ## ListWorkloadsInputRequestTypeDef
 
 ```python
@@ -1131,6 +1275,8 @@ Optional fields:
 - `WorkloadNamePrefix`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listworkloadsoutputtypedef"></a>
 
 ## ListWorkloadsOutputTypeDef
 
@@ -1146,6 +1292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="milestonesummarytypedef"></a>
+
 ## MilestoneSummaryTypeDef
 
 ```python
@@ -1160,6 +1308,8 @@ Optional fields:
 - `WorkloadSummary`:
   [WorkloadSummaryTypeDef](./type_defs.md#workloadsummarytypedef)
 
+<a id="milestonetypedef"></a>
+
 ## MilestoneTypeDef
 
 ```python
@@ -1173,6 +1323,8 @@ Optional fields:
 - `RecordedAt`: `datetime`
 - `Workload`: [WorkloadTypeDef](./type_defs.md#workloadtypedef)
 
+<a id="notificationsummarytypedef"></a>
+
 ## NotificationSummaryTypeDef
 
 ```python
@@ -1184,6 +1336,8 @@ Optional fields:
 - `Type`: [NotificationTypeType](./literals.md#notificationtypetype)
 - `LensUpgradeSummary`:
   [LensUpgradeSummaryTypeDef](./type_defs.md#lensupgradesummarytypedef)
+
+<a id="pillardifferencetypedef"></a>
 
 ## PillarDifferenceTypeDef
 
@@ -1200,6 +1354,8 @@ Optional fields:
 - `QuestionDifferences`:
   `List`\[[QuestionDifferenceTypeDef](./type_defs.md#questiondifferencetypedef)\]
 
+<a id="pillarreviewsummarytypedef"></a>
+
 ## PillarReviewSummaryTypeDef
 
 ```python
@@ -1212,6 +1368,8 @@ Optional fields:
 - `PillarName`: `str`
 - `Notes`: `str`
 - `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
+
+<a id="questiondifferencetypedef"></a>
 
 ## QuestionDifferenceTypeDef
 
@@ -1226,6 +1384,8 @@ Optional fields:
 - `DifferenceStatus`:
   [DifferenceStatusType](./literals.md#differencestatustype)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1239,6 +1399,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="shareinvitationsummarytypedef"></a>
 
 ## ShareInvitationSummaryTypeDef
 
@@ -1259,6 +1421,8 @@ Optional fields:
 - `LensName`: `str`
 - `LensArn`: `str`
 
+<a id="shareinvitationtypedef"></a>
+
 ## ShareInvitationTypeDef
 
 ```python
@@ -1274,6 +1438,8 @@ Optional fields:
 - `LensAlias`: `str`
 - `LensArn`: `str`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -1285,6 +1451,8 @@ Required fields:
 - `WorkloadArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -1295,6 +1463,8 @@ Required fields:
 
 - `WorkloadArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateanswerinputrequesttypedef"></a>
 
 ## UpdateAnswerInputRequestTypeDef
 
@@ -1317,6 +1487,8 @@ Optional fields:
 - `IsApplicable`: `bool`
 - `Reason`: [AnswerReasonType](./literals.md#answerreasontype)
 
+<a id="updateansweroutputtypedef"></a>
+
 ## UpdateAnswerOutputTypeDef
 
 ```python
@@ -1331,6 +1503,8 @@ Required fields:
 - `Answer`: [AnswerTypeDef](./type_defs.md#answertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatelensreviewinputrequesttypedef"></a>
 
 ## UpdateLensReviewInputRequestTypeDef
 
@@ -1348,6 +1522,8 @@ Optional fields:
 - `LensNotes`: `str`
 - `PillarNotes`: `Mapping`\[`str`, `str`\]
 
+<a id="updatelensreviewoutputtypedef"></a>
+
 ## UpdateLensReviewOutputTypeDef
 
 ```python
@@ -1361,6 +1537,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateshareinvitationinputrequesttypedef"></a>
+
 ## UpdateShareInvitationInputRequestTypeDef
 
 ```python
@@ -1372,6 +1550,8 @@ Required fields:
 - `ShareInvitationId`: `str`
 - `ShareInvitationAction`:
   [ShareInvitationActionType](./literals.md#shareinvitationactiontype)
+
+<a id="updateshareinvitationoutputtypedef"></a>
 
 ## UpdateShareInvitationOutputTypeDef
 
@@ -1385,6 +1565,8 @@ Required fields:
   [ShareInvitationTypeDef](./type_defs.md#shareinvitationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkloadinputrequesttypedef"></a>
 
 ## UpdateWorkloadInputRequestTypeDef
 
@@ -1415,6 +1597,8 @@ Optional fields:
 - `ImprovementStatus`:
   [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
 
+<a id="updateworkloadoutputtypedef"></a>
+
 ## UpdateWorkloadOutputTypeDef
 
 ```python
@@ -1426,6 +1610,8 @@ Required fields:
 - `Workload`: [WorkloadTypeDef](./type_defs.md#workloadtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateworkloadshareinputrequesttypedef"></a>
 
 ## UpdateWorkloadShareInputRequestTypeDef
 
@@ -1439,6 +1625,8 @@ Required fields:
 - `WorkloadId`: `str`
 - `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
 
+<a id="updateworkloadshareoutputtypedef"></a>
+
 ## UpdateWorkloadShareOutputTypeDef
 
 ```python
@@ -1451,6 +1639,8 @@ Required fields:
 - `WorkloadShare`: [WorkloadShareTypeDef](./type_defs.md#workloadsharetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="upgradelensreviewinputrequesttypedef"></a>
 
 ## UpgradeLensReviewInputRequestTypeDef
 
@@ -1468,6 +1658,8 @@ Optional fields:
 
 - `ClientRequestToken`: `str`
 
+<a id="versiondifferencestypedef"></a>
+
 ## VersionDifferencesTypeDef
 
 ```python
@@ -1478,6 +1670,8 @@ Optional fields:
 
 - `PillarDifferences`:
   `List`\[[PillarDifferenceTypeDef](./type_defs.md#pillardifferencetypedef)\]
+
+<a id="workloadsharesummarytypedef"></a>
 
 ## WorkloadShareSummaryTypeDef
 
@@ -1491,6 +1685,8 @@ Optional fields:
 - `SharedWith`: `str`
 - `PermissionType`: [PermissionTypeType](./literals.md#permissiontypetype)
 - `Status`: [ShareStatusType](./literals.md#sharestatustype)
+
+<a id="workloadsharetypedef"></a>
 
 ## WorkloadShareTypeDef
 
@@ -1507,6 +1703,8 @@ Optional fields:
 - `Status`: [ShareStatusType](./literals.md#sharestatustype)
 - `WorkloadName`: `str`
 - `WorkloadId`: `str`
+
+<a id="workloadsummarytypedef"></a>
 
 ## WorkloadSummaryTypeDef
 
@@ -1525,6 +1723,8 @@ Optional fields:
 - `RiskCounts`: `Dict`\[[RiskType](./literals.md#risktype), `int`\]
 - `ImprovementStatus`:
   [WorkloadImprovementStatusType](./literals.md#workloadimprovementstatustype)
+
+<a id="workloadtypedef"></a>
 
 ## WorkloadTypeDef
 

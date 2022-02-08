@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-storagegateway-module"></a>
+
 # Type annotations for boto3 StorageGateway module
 
 > [Index](..) > StorageGateway
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [StorageGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/storagegateway.html#StorageGateway)
 type annotations stubs module
-[mypy_boto3_storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
+[mypy-boto3-storagegateway](https://pypi.org/project/mypy-boto3-storagegateway/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[storagegateway]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[storagegateway]'
+
+# standalone installation
 pip install mypy-boto3-storagegateway
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-storagegateway
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="storagegatewayclient"></a>
+
 ## StorageGatewayClient
 
 Type annotations for `boto3.client("storagegateway")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_storagegateway.client import StorageGatewayClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -127,6 +141,8 @@ from mypy_boto3_storagegateway.client import StorageGatewayClient
 - [update_snapshot_schedule](./client.md#update_snapshot_schedule)
 - [update_vtl_device_type](./client.md#update_vtl_device_type)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 StorageGatewayClient [exceptions](./client.md#exceptions)
@@ -136,6 +152,8 @@ StorageGatewayClient [exceptions](./client.md#exceptions)
 - InvalidGatewayRequestException
 - ServiceUnavailableError
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -144,7 +162,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_storagegateway.paginators import DescribeTapeArchivesPaginator, ...
+from mypy_boto3_storagegateway.paginator import DescribeTapeArchivesPaginator, ...
 ```
 
 - [DescribeTapeArchivesPaginator](./paginators.md#describetapearchivespaginator)
@@ -158,6 +176,8 @@ from mypy_boto3_storagegateway.paginators import DescribeTapeArchivesPaginator, 
 - [ListTapePoolsPaginator](./paginators.md#listtapepoolspaginator)
 - [ListTapesPaginator](./paginators.md#listtapespaginator)
 - [ListVolumesPaginator](./paginators.md#listvolumespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -193,6 +213,8 @@ from mypy_boto3_storagegateway.literals import ActiveDirectoryStatusType, ...
 - [TapeStorageClassType](./literals.md#tapestorageclasstype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-transcribeservice-module"></a>
+
 # Literals for boto3 TranscribeService module
 
 > [Index](..) > [TranscribeService](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [TranscribeService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/transcribe.html#TranscribeService)
 type annotations stubs module
-[mypy_boto3_transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
+[mypy-boto3-transcribe](https://pypi.org/project/mypy-boto3-transcribe/).
 
 - [Literals for boto3 TranscribeService module](#literals-for-boto3-transcribeservice-module)
   - [BaseModelNameType](#basemodelnametype)
@@ -30,6 +32,8 @@ type annotations stubs module
   - [VocabularyStateType](#vocabularystatetype)
   - [ServiceName](#servicename)
 
+<a id="basemodelnametype"></a>
+
 ## BaseModelNameType
 
 ```python
@@ -40,6 +44,8 @@ Values:
 
 - `NarrowBand`
 - `WideBand`
+
+<a id="clmlanguagecodetype"></a>
 
 ## CLMLanguageCodeType
 
@@ -55,6 +61,8 @@ Values:
 - `es-US`
 - `hi-IN`
 
+<a id="callanalyticsjobstatustype"></a>
+
 ## CallAnalyticsJobStatusType
 
 ```python
@@ -67,6 +75,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `QUEUED`
+
+<a id="languagecodetype"></a>
 
 ## LanguageCodeType
 
@@ -117,6 +127,8 @@ Values:
 - `zh-CN`
 - `zh-TW`
 
+<a id="mediaformattype"></a>
+
 ## MediaFormatType
 
 ```python
@@ -133,6 +145,8 @@ Values:
 - `wav`
 - `webm`
 
+<a id="medicalcontentidentificationtypetype"></a>
+
 ## MedicalContentIdentificationTypeType
 
 ```python
@@ -142,6 +156,8 @@ from mypy_boto3_transcribe.literals import MedicalContentIdentificationTypeType
 Values:
 
 - `PHI`
+
+<a id="modelstatustype"></a>
 
 ## ModelStatusType
 
@@ -155,6 +171,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 
+<a id="outputlocationtypetype"></a>
+
 ## OutputLocationTypeType
 
 ```python
@@ -166,6 +184,8 @@ Values:
 - `CUSTOMER_BUCKET`
 - `SERVICE_BUCKET`
 
+<a id="participantroletype"></a>
+
 ## ParticipantRoleType
 
 ```python
@@ -176,6 +196,8 @@ Values:
 
 - `AGENT`
 - `CUSTOMER`
+
+<a id="piientitytypetype"></a>
 
 ## PiiEntityTypeType
 
@@ -198,6 +220,8 @@ Values:
 - `PIN`
 - `SSN`
 
+<a id="redactionoutputtype"></a>
+
 ## RedactionOutputType
 
 ```python
@@ -209,6 +233,8 @@ Values:
 - `redacted`
 - `redacted_and_unredacted`
 
+<a id="redactiontypetype"></a>
+
 ## RedactionTypeType
 
 ```python
@@ -218,6 +244,8 @@ from mypy_boto3_transcribe.literals import RedactionTypeType
 Values:
 
 - `PII`
+
+<a id="sentimentvaluetype"></a>
 
 ## SentimentValueType
 
@@ -232,6 +260,8 @@ Values:
 - `NEUTRAL`
 - `POSITIVE`
 
+<a id="specialtytype"></a>
+
 ## SpecialtyType
 
 ```python
@@ -241,6 +271,8 @@ from mypy_boto3_transcribe.literals import SpecialtyType
 Values:
 
 - `PRIMARYCARE`
+
+<a id="subtitleformattype"></a>
 
 ## SubtitleFormatType
 
@@ -253,6 +285,8 @@ Values:
 - `srt`
 - `vtt`
 
+<a id="transcriptfiltertypetype"></a>
+
 ## TranscriptFilterTypeType
 
 ```python
@@ -262,6 +296,8 @@ from mypy_boto3_transcribe.literals import TranscriptFilterTypeType
 Values:
 
 - `EXACT`
+
+<a id="transcriptionjobstatustype"></a>
 
 ## TranscriptionJobStatusType
 
@@ -276,6 +312,8 @@ Values:
 - `IN_PROGRESS`
 - `QUEUED`
 
+<a id="typetype"></a>
+
 ## TypeType
 
 ```python
@@ -286,6 +324,8 @@ Values:
 
 - `CONVERSATION`
 - `DICTATION`
+
+<a id="vocabularyfiltermethodtype"></a>
 
 ## VocabularyFilterMethodType
 
@@ -299,6 +339,8 @@ Values:
 - `remove`
 - `tag`
 
+<a id="vocabularystatetype"></a>
+
 ## VocabularyStateType
 
 ```python
@@ -310,6 +352,8 @@ Values:
 - `FAILED`
 - `PENDING`
 - `READY`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

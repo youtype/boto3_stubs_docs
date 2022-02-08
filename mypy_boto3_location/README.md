@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-locationservice-module"></a>
+
 # Type annotations for boto3 LocationService module
 
 > [Index](..) > LocationService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LocationService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/location.html#LocationService)
 type annotations stubs module
-[mypy_boto3_location](https://pypi.org/project/mypy-boto3-location/).
+[mypy-boto3-location](https://pypi.org/project/mypy-boto3-location/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[location]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[location]'
+
+# standalone installation
 pip install mypy-boto3-location
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-location
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="locationserviceclient"></a>
+
 ## LocationServiceClient
 
 Type annotations for `boto3.client("location")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_location.client import LocationServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -89,6 +103,8 @@ from mypy_boto3_location.client import LocationServiceClient
 - [update_route_calculator](./client.md#update_route_calculator)
 - [update_tracker](./client.md#update_tracker)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LocationServiceClient [exceptions](./client.md#exceptions)
@@ -102,6 +118,8 @@ LocationServiceClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -110,7 +128,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_location.paginators import GetDevicePositionHistoryPaginator, ...
+from mypy_boto3_location.paginator import GetDevicePositionHistoryPaginator, ...
 ```
 
 - [GetDevicePositionHistoryPaginator](./paginators.md#getdevicepositionhistorypaginator)
@@ -122,6 +140,8 @@ from mypy_boto3_location.paginators import GetDevicePositionHistoryPaginator, ..
 - [ListRouteCalculatorsPaginator](./paginators.md#listroutecalculatorspaginator)
 - [ListTrackerConsumersPaginator](./paginators.md#listtrackerconsumerspaginator)
 - [ListTrackersPaginator](./paginators.md#listtrackerspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -153,6 +173,8 @@ from mypy_boto3_location.literals import BatchItemErrorCodeType, ...
 - [VehicleWeightUnitType](./literals.md#vehicleweightunittype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="connectwisdomserviceclient-for-boto3-connectwisdomservice-module"></a>
+
 # ConnectWisdomServiceClient for boto3 ConnectWisdomService module
 
 > [Index](..) > [ConnectWisdomService](.) > ConnectWisdomServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ConnectWisdomService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService)
 type annotations stubs module
-[mypy_boto3_wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
+[mypy-boto3-wisdom](https://pypi.org/project/mypy-boto3-wisdom/).
 
 - [ConnectWisdomServiceClient for boto3 ConnectWisdomService module](#connectwisdomserviceclient-for-boto3-connectwisdomservice-module)
   - [ConnectWisdomServiceClient](#connectwisdomserviceclient)
@@ -47,6 +49,8 @@ type annotations stubs module
     - [update_knowledge_base_template_uri](#update_knowledge_base_template_uri)
     - [get_paginator](#get_paginator)
 
+<a id="connectwisdomserviceclient"></a>
+
 ## ConnectWisdomServiceClient
 
 Type annotations for `boto3.client("wisdom")`
@@ -54,14 +58,17 @@ Type annotations for `boto3.client("wisdom")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_wisdom.client import ConnectWisdomServiceClient
 
 def get_wisdom_client() -> ConnectWisdomServiceClient:
-    return boto3.client("wisdom")
+    return Session().client("wisdom")
 ```
 
 Boto3 documentation:
 [ConnectWisdomService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [ConnectWisdomService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wisdom.html#ConnectWisdomService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -113,6 +126,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_assistant"></a>
 
 ### create_assistant
 
@@ -139,6 +154,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAssistantResponseTypeDef](./type_defs.md#createassistantresponsetypedef).
+
+<a id="create_assistant_association"></a>
 
 ### create_assistant_association
 
@@ -168,6 +185,8 @@ Keyword-only arguments:
 Returns
 [CreateAssistantAssociationResponseTypeDef](./type_defs.md#createassistantassociationresponsetypedef).
 
+<a id="create_content"></a>
+
 ### create_content
 
 Creates Wisdom content.
@@ -193,6 +212,8 @@ Keyword-only arguments:
 
 Returns
 [CreateContentResponseTypeDef](./type_defs.md#createcontentresponsetypedef).
+
+<a id="create_knowledge_base"></a>
 
 ### create_knowledge_base
 
@@ -224,6 +245,8 @@ Keyword-only arguments:
 Returns
 [CreateKnowledgeBaseResponseTypeDef](./type_defs.md#createknowledgebaseresponsetypedef).
 
+<a id="create_session"></a>
+
 ### create_session
 
 Creates a session.
@@ -247,6 +270,8 @@ Keyword-only arguments:
 Returns
 [CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef).
 
+<a id="delete_assistant"></a>
+
 ### delete_assistant
 
 Deletes an assistant.
@@ -264,6 +289,8 @@ Keyword-only arguments:
 - `assistantId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_assistant_association"></a>
 
 ### delete_assistant_association
 
@@ -285,6 +312,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_content"></a>
+
 ### delete_content
 
 Deletes the content.
@@ -304,6 +333,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_knowledge_base"></a>
+
 ### delete_knowledge_base
 
 Deletes the knowledge base.
@@ -321,6 +352,8 @@ Keyword-only arguments:
 - `knowledgeBaseId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -340,6 +373,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_assistant"></a>
+
 ### get_assistant
 
 Retrieves information about an assistant.
@@ -358,6 +393,8 @@ Keyword-only arguments:
 
 Returns
 [GetAssistantResponseTypeDef](./type_defs.md#getassistantresponsetypedef).
+
+<a id="get_assistant_association"></a>
 
 ### get_assistant_association
 
@@ -379,6 +416,8 @@ Keyword-only arguments:
 Returns
 [GetAssistantAssociationResponseTypeDef](./type_defs.md#getassistantassociationresponsetypedef).
 
+<a id="get_content"></a>
+
 ### get_content
 
 Retrieves content, including a pre-signed URL to download the content.
@@ -397,6 +436,8 @@ Keyword-only arguments:
 - `knowledgeBaseId`: `str` *(required)*
 
 Returns [GetContentResponseTypeDef](./type_defs.md#getcontentresponsetypedef).
+
+<a id="get_content_summary"></a>
 
 ### get_content_summary
 
@@ -418,6 +459,8 @@ Keyword-only arguments:
 Returns
 [GetContentSummaryResponseTypeDef](./type_defs.md#getcontentsummaryresponsetypedef).
 
+<a id="get_knowledge_base"></a>
+
 ### get_knowledge_base
 
 Retrieves information about the knowledge base.
@@ -436,6 +479,8 @@ Keyword-only arguments:
 
 Returns
 [GetKnowledgeBaseResponseTypeDef](./type_defs.md#getknowledgebaseresponsetypedef).
+
+<a id="get_recommendations"></a>
 
 ### get_recommendations
 
@@ -459,6 +504,8 @@ Keyword-only arguments:
 Returns
 [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
 
+<a id="get_session"></a>
+
 ### get_session
 
 Retrieves information for a specified session.
@@ -477,6 +524,8 @@ Keyword-only arguments:
 - `sessionId`: `str` *(required)*
 
 Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+
+<a id="list_assistant_associations"></a>
 
 ### list_assistant_associations
 
@@ -500,6 +549,8 @@ Keyword-only arguments:
 Returns
 [ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef).
 
+<a id="list_assistants"></a>
+
 ### list_assistants
 
 Lists information about assistants.
@@ -519,6 +570,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef).
+
+<a id="list_contents"></a>
 
 ### list_contents
 
@@ -541,6 +594,8 @@ Keyword-only arguments:
 Returns
 [ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef).
 
+<a id="list_knowledge_bases"></a>
+
 ### list_knowledge_bases
 
 Lists the knowledge bases.
@@ -561,6 +616,8 @@ Keyword-only arguments:
 Returns
 [ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for the specified resource.
@@ -579,6 +636,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="notify_recommendations_received"></a>
 
 ### notify_recommendations_received
 
@@ -603,6 +662,8 @@ Keyword-only arguments:
 Returns
 [NotifyRecommendationsReceivedResponseTypeDef](./type_defs.md#notifyrecommendationsreceivedresponsetypedef).
 
+<a id="query_assistant"></a>
+
 ### query_assistant
 
 Performs a manual search against the specified assistant.
@@ -625,6 +686,8 @@ Keyword-only arguments:
 Returns
 [QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef).
 
+<a id="remove_knowledge_base_template_uri"></a>
+
 ### remove_knowledge_base_template_uri
 
 Removes a URI template from a knowledge base.
@@ -643,6 +706,8 @@ Keyword-only arguments:
 - `knowledgeBaseId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="search_content"></a>
 
 ### search_content
 
@@ -668,6 +733,8 @@ Keyword-only arguments:
 Returns
 [SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef).
 
+<a id="search_sessions"></a>
+
 ### search_sessions
 
 Searches for sessions.
@@ -692,6 +759,8 @@ Keyword-only arguments:
 Returns
 [SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef).
 
+<a id="start_content_upload"></a>
+
 ### start_content_upload
 
 Get a URL to upload content to a knowledge base.
@@ -712,6 +781,8 @@ Keyword-only arguments:
 Returns
 [StartContentUploadResponseTypeDef](./type_defs.md#startcontentuploadresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -731,6 +802,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the specified resource.
@@ -749,6 +822,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_content"></a>
 
 ### update_content
 
@@ -776,6 +851,8 @@ Keyword-only arguments:
 Returns
 [UpdateContentResponseTypeDef](./type_defs.md#updatecontentresponsetypedef).
 
+<a id="update_knowledge_base_template_uri"></a>
+
 ### update_knowledge_base_template_uri
 
 Updates the template URI of a knowledge base.
@@ -796,6 +873,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateKnowledgeBaseTemplateUriResponseTypeDef](./type_defs.md#updateknowledgebasetemplateuriresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

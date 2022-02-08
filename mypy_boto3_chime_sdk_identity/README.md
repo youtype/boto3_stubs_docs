@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-chimesdkidentity-module"></a>
+
 # Type annotations for boto3 ChimeSDKIdentity module
 
 > [Index](..) > ChimeSDKIdentity
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
 type annotations stubs module
-[mypy_boto3_chime_sdk_identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
+[mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[chime-sdk-identity]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[chime-sdk-identity]'
+
+# standalone installation
 pip install mypy-boto3-chime-sdk-identity
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-chime-sdk-identity
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="chimesdkidentityclient"></a>
 
 ## ChimeSDKIdentityClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_chime_sdk_identity.client import ChimeSDKIdentityClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -59,6 +73,8 @@ from mypy_boto3_chime_sdk_identity.client import ChimeSDKIdentityClient
 - [update_app_instance_user](./client.md#update_app_instance_user)
 - [update_app_instance_user_endpoint](./client.md#update_app_instance_user_endpoint)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ChimeSDKIdentityClient [exceptions](./client.md#exceptions)
@@ -72,6 +88,8 @@ ChimeSDKIdentityClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - ThrottledClientException
 - UnauthorizedClientException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -88,6 +106,8 @@ from mypy_boto3_chime_sdk_identity.literals import AllowMessagesType, ...
 - [EndpointStatusReasonType](./literals.md#endpointstatusreasontype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="honeycodeclient-for-boto3-honeycode-module"></a>
+
 # HoneycodeClient for boto3 Honeycode module
 
 > [Index](..) > [Honeycode](.) > HoneycodeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
-[mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [HoneycodeClient for boto3 Honeycode module](#honeycodeclient-for-boto3-honeycode-module)
   - [HoneycodeClient](#honeycodeclient)
@@ -31,6 +33,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="honeycodeclient"></a>
+
 ## HoneycodeClient
 
 Type annotations for `boto3.client("honeycode")`
@@ -38,14 +42,17 @@ Type annotations for `boto3.client("honeycode")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_honeycode.client import HoneycodeClient
 
 def get_honeycode_client() -> HoneycodeClient:
-    return boto3.client("honeycode")
+    return Session().client("honeycode")
 ```
 
 Boto3 documentation:
 [Honeycode.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -73,7 +80,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -85,6 +96,8 @@ Boto3 documentation:
 [Honeycode.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_create_table_rows"></a>
 
 ### batch_create_table_rows
 
@@ -112,6 +125,8 @@ Keyword-only arguments:
 Returns
 [BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef).
 
+<a id="batch_delete_table_rows"></a>
+
 ### batch_delete_table_rows
 
 The BatchDeleteTableRows API allows you to delete one or more rows from a table
@@ -135,6 +150,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef).
+
+<a id="batch_update_table_rows"></a>
 
 ### batch_update_table_rows
 
@@ -162,6 +179,8 @@ Keyword-only arguments:
 Returns
 [BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef).
 
+<a id="batch_upsert_table_rows"></a>
+
 ### batch_upsert_table_rows
 
 The BatchUpsertTableRows API allows you to upsert one or more rows in a table.
@@ -187,6 +206,8 @@ Keyword-only arguments:
 Returns
 [BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -201,6 +222,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="describe_table_data_import_job"></a>
 
 ### describe_table_data_import_job
 
@@ -225,6 +248,8 @@ Keyword-only arguments:
 Returns
 [DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -242,6 +267,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_screen_data"></a>
 
 ### get_screen_data
 
@@ -268,6 +295,8 @@ Keyword-only arguments:
 
 Returns
 [GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef).
+
+<a id="invoke_screen_automation"></a>
 
 ### invoke_screen_automation
 
@@ -297,6 +326,8 @@ Keyword-only arguments:
 Returns
 [InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef).
 
+<a id="list_table_columns"></a>
+
 ### list_table_columns
 
 The ListTableColumns API allows you to retrieve a list of all the columns in a
@@ -318,6 +349,8 @@ Keyword-only arguments:
 
 Returns
 [ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef).
+
+<a id="list_table_rows"></a>
 
 ### list_table_rows
 
@@ -343,6 +376,8 @@ Keyword-only arguments:
 Returns
 [ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef).
 
+<a id="list_tables"></a>
+
 ### list_tables
 
 The ListTables API allows you to retrieve a list of all the tables in a
@@ -364,6 +399,8 @@ Keyword-only arguments:
 
 Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 The ListTagsForResource API allows you to return a resource's tags.
@@ -382,6 +419,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+
+<a id="query_table_rows"></a>
 
 ### query_table_rows
 
@@ -406,6 +445,8 @@ Keyword-only arguments:
 
 Returns
 [QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef).
+
+<a id="start_table_data_import_job"></a>
 
 ### start_table_data_import_job
 
@@ -437,6 +478,8 @@ Keyword-only arguments:
 Returns
 [StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 The TagResource API allows you to add tags to an ARN-able resource.
@@ -456,6 +499,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 The UntagResource API allows you to removes tags from an ARN-able resource.
@@ -474,6 +519,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

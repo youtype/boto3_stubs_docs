@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-marketplacecommerceanalytics-module"></a>
+
 # Type annotations for boto3 MarketplaceCommerceAnalytics module
 
 > [Index](..) > MarketplaceCommerceAnalytics
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MarketplaceCommerceAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplacecommerceanalytics.html#MarketplaceCommerceAnalytics)
 type annotations stubs module
-[mypy_boto3_marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
+[mypy-boto3-marketplacecommerceanalytics](https://pypi.org/project/mypy-boto3-marketplacecommerceanalytics/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[marketplacecommerceanalytics]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[marketplacecommerceanalytics]'
+
+# standalone installation
 pip install mypy-boto3-marketplacecommerceanalytics
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-marketplacecommerceanalytics
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="marketplacecommerceanalyticsclient"></a>
 
 ## MarketplaceCommerceAnalyticsClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAnalyticsClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -37,12 +51,16 @@ from mypy_boto3_marketplacecommerceanalytics.client import MarketplaceCommerceAn
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [start_support_data_export](./client.md#start_support_data_export)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 MarketplaceCommerceAnalyticsClient [exceptions](./client.md#exceptions)
 
 - ClientError
 - MarketplaceCommerceAnalyticsException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -57,6 +75,8 @@ from mypy_boto3_marketplacecommerceanalytics.literals import DataSetTypeType, ..
 - [DataSetTypeType](./literals.md#datasettypetype)
 - [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-redshift-module"></a>
+
 # Literals for boto3 Redshift module
 
 > [Index](..) > [Redshift](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Redshift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/redshift.html#Redshift)
 type annotations stubs module
-[mypy_boto3_redshift](https://pypi.org/project/mypy-boto3-redshift/).
+[mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
 - [Literals for boto3 Redshift module](#literals-for-boto3-redshift-module)
   - [ActionTypeType](#actiontypetype)
@@ -75,6 +77,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="actiontypetype"></a>
+
 ## ActionTypeType
 
 ```python
@@ -86,6 +90,8 @@ Values:
 - `recommend-node-config`
 - `resize-cluster`
 - `restore-cluster`
+
+<a id="aquaconfigurationstatustype"></a>
 
 ## AquaConfigurationStatusType
 
@@ -99,6 +105,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="aquastatustype"></a>
+
 ## AquaStatusType
 
 ```python
@@ -111,6 +119,8 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="authorizationstatustype"></a>
+
 ## AuthorizationStatusType
 
 ```python
@@ -122,6 +132,8 @@ Values:
 - `Authorized`
 - `Revoking`
 
+<a id="clusteravailablewaitername"></a>
+
 ## ClusterAvailableWaiterName
 
 ```python
@@ -131,6 +143,8 @@ from mypy_boto3_redshift.literals import ClusterAvailableWaiterName
 Values:
 
 - `cluster_available`
+
+<a id="clusterdeletedwaitername"></a>
 
 ## ClusterDeletedWaiterName
 
@@ -142,6 +156,8 @@ Values:
 
 - `cluster_deleted`
 
+<a id="clusterrestoredwaitername"></a>
+
 ## ClusterRestoredWaiterName
 
 ```python
@@ -151,6 +167,8 @@ from mypy_boto3_redshift.literals import ClusterRestoredWaiterName
 Values:
 
 - `cluster_restored`
+
+<a id="datasharestatusforconsumertype"></a>
 
 ## DataShareStatusForConsumerType
 
@@ -162,6 +180,8 @@ Values:
 
 - `ACTIVE`
 - `AVAILABLE`
+
+<a id="datasharestatusforproducertype"></a>
 
 ## DataShareStatusForProducerType
 
@@ -176,6 +196,8 @@ Values:
 - `DEAUTHORIZED`
 - `PENDING_AUTHORIZATION`
 - `REJECTED`
+
+<a id="datasharestatustype"></a>
 
 ## DataShareStatusType
 
@@ -192,6 +214,8 @@ Values:
 - `PENDING_AUTHORIZATION`
 - `REJECTED`
 
+<a id="describeclusterdbrevisionspaginatorname"></a>
+
 ## DescribeClusterDbRevisionsPaginatorName
 
 ```python
@@ -201,6 +225,8 @@ from mypy_boto3_redshift.literals import DescribeClusterDbRevisionsPaginatorName
 Values:
 
 - `describe_cluster_db_revisions`
+
+<a id="describeclusterparametergroupspaginatorname"></a>
 
 ## DescribeClusterParameterGroupsPaginatorName
 
@@ -212,6 +238,8 @@ Values:
 
 - `describe_cluster_parameter_groups`
 
+<a id="describeclusterparameterspaginatorname"></a>
+
 ## DescribeClusterParametersPaginatorName
 
 ```python
@@ -221,6 +249,8 @@ from mypy_boto3_redshift.literals import DescribeClusterParametersPaginatorName
 Values:
 
 - `describe_cluster_parameters`
+
+<a id="describeclustersecuritygroupspaginatorname"></a>
 
 ## DescribeClusterSecurityGroupsPaginatorName
 
@@ -232,6 +262,8 @@ Values:
 
 - `describe_cluster_security_groups`
 
+<a id="describeclustersnapshotspaginatorname"></a>
+
 ## DescribeClusterSnapshotsPaginatorName
 
 ```python
@@ -241,6 +273,8 @@ from mypy_boto3_redshift.literals import DescribeClusterSnapshotsPaginatorName
 Values:
 
 - `describe_cluster_snapshots`
+
+<a id="describeclustersubnetgroupspaginatorname"></a>
 
 ## DescribeClusterSubnetGroupsPaginatorName
 
@@ -252,6 +286,8 @@ Values:
 
 - `describe_cluster_subnet_groups`
 
+<a id="describeclustertrackspaginatorname"></a>
+
 ## DescribeClusterTracksPaginatorName
 
 ```python
@@ -261,6 +297,8 @@ from mypy_boto3_redshift.literals import DescribeClusterTracksPaginatorName
 Values:
 
 - `describe_cluster_tracks`
+
+<a id="describeclusterversionspaginatorname"></a>
 
 ## DescribeClusterVersionsPaginatorName
 
@@ -272,6 +310,8 @@ Values:
 
 - `describe_cluster_versions`
 
+<a id="describeclusterspaginatorname"></a>
+
 ## DescribeClustersPaginatorName
 
 ```python
@@ -281,6 +321,8 @@ from mypy_boto3_redshift.literals import DescribeClustersPaginatorName
 Values:
 
 - `describe_clusters`
+
+<a id="describedatasharesforconsumerpaginatorname"></a>
 
 ## DescribeDataSharesForConsumerPaginatorName
 
@@ -292,6 +334,8 @@ Values:
 
 - `describe_data_shares_for_consumer`
 
+<a id="describedatasharesforproducerpaginatorname"></a>
+
 ## DescribeDataSharesForProducerPaginatorName
 
 ```python
@@ -301,6 +345,8 @@ from mypy_boto3_redshift.literals import DescribeDataSharesForProducerPaginatorN
 Values:
 
 - `describe_data_shares_for_producer`
+
+<a id="describedatasharespaginatorname"></a>
 
 ## DescribeDataSharesPaginatorName
 
@@ -312,6 +358,8 @@ Values:
 
 - `describe_data_shares`
 
+<a id="describedefaultclusterparameterspaginatorname"></a>
+
 ## DescribeDefaultClusterParametersPaginatorName
 
 ```python
@@ -321,6 +369,8 @@ from mypy_boto3_redshift.literals import DescribeDefaultClusterParametersPaginat
 Values:
 
 - `describe_default_cluster_parameters`
+
+<a id="describeendpointaccesspaginatorname"></a>
 
 ## DescribeEndpointAccessPaginatorName
 
@@ -332,6 +382,8 @@ Values:
 
 - `describe_endpoint_access`
 
+<a id="describeendpointauthorizationpaginatorname"></a>
+
 ## DescribeEndpointAuthorizationPaginatorName
 
 ```python
@@ -341,6 +393,8 @@ from mypy_boto3_redshift.literals import DescribeEndpointAuthorizationPaginatorN
 Values:
 
 - `describe_endpoint_authorization`
+
+<a id="describeeventsubscriptionspaginatorname"></a>
 
 ## DescribeEventSubscriptionsPaginatorName
 
@@ -352,6 +406,8 @@ Values:
 
 - `describe_event_subscriptions`
 
+<a id="describeeventspaginatorname"></a>
+
 ## DescribeEventsPaginatorName
 
 ```python
@@ -361,6 +417,8 @@ from mypy_boto3_redshift.literals import DescribeEventsPaginatorName
 Values:
 
 - `describe_events`
+
+<a id="describehsmclientcertificatespaginatorname"></a>
 
 ## DescribeHsmClientCertificatesPaginatorName
 
@@ -372,6 +430,8 @@ Values:
 
 - `describe_hsm_client_certificates`
 
+<a id="describehsmconfigurationspaginatorname"></a>
+
 ## DescribeHsmConfigurationsPaginatorName
 
 ```python
@@ -381,6 +441,8 @@ from mypy_boto3_redshift.literals import DescribeHsmConfigurationsPaginatorName
 Values:
 
 - `describe_hsm_configurations`
+
+<a id="describenodeconfigurationoptionspaginatorname"></a>
 
 ## DescribeNodeConfigurationOptionsPaginatorName
 
@@ -392,6 +454,8 @@ Values:
 
 - `describe_node_configuration_options`
 
+<a id="describeorderableclusteroptionspaginatorname"></a>
+
 ## DescribeOrderableClusterOptionsPaginatorName
 
 ```python
@@ -401,6 +465,8 @@ from mypy_boto3_redshift.literals import DescribeOrderableClusterOptionsPaginato
 Values:
 
 - `describe_orderable_cluster_options`
+
+<a id="describereservednodeexchangestatuspaginatorname"></a>
 
 ## DescribeReservedNodeExchangeStatusPaginatorName
 
@@ -412,6 +478,8 @@ Values:
 
 - `describe_reserved_node_exchange_status`
 
+<a id="describereservednodeofferingspaginatorname"></a>
+
 ## DescribeReservedNodeOfferingsPaginatorName
 
 ```python
@@ -421,6 +489,8 @@ from mypy_boto3_redshift.literals import DescribeReservedNodeOfferingsPaginatorN
 Values:
 
 - `describe_reserved_node_offerings`
+
+<a id="describereservednodespaginatorname"></a>
 
 ## DescribeReservedNodesPaginatorName
 
@@ -432,6 +502,8 @@ Values:
 
 - `describe_reserved_nodes`
 
+<a id="describescheduledactionspaginatorname"></a>
+
 ## DescribeScheduledActionsPaginatorName
 
 ```python
@@ -441,6 +513,8 @@ from mypy_boto3_redshift.literals import DescribeScheduledActionsPaginatorName
 Values:
 
 - `describe_scheduled_actions`
+
+<a id="describesnapshotcopygrantspaginatorname"></a>
 
 ## DescribeSnapshotCopyGrantsPaginatorName
 
@@ -452,6 +526,8 @@ Values:
 
 - `describe_snapshot_copy_grants`
 
+<a id="describesnapshotschedulespaginatorname"></a>
+
 ## DescribeSnapshotSchedulesPaginatorName
 
 ```python
@@ -461,6 +537,8 @@ from mypy_boto3_redshift.literals import DescribeSnapshotSchedulesPaginatorName
 Values:
 
 - `describe_snapshot_schedules`
+
+<a id="describetablerestorestatuspaginatorname"></a>
 
 ## DescribeTableRestoreStatusPaginatorName
 
@@ -472,6 +550,8 @@ Values:
 
 - `describe_table_restore_status`
 
+<a id="describetagspaginatorname"></a>
+
 ## DescribeTagsPaginatorName
 
 ```python
@@ -481,6 +561,8 @@ from mypy_boto3_redshift.literals import DescribeTagsPaginatorName
 Values:
 
 - `describe_tags`
+
+<a id="describeusagelimitspaginatorname"></a>
 
 ## DescribeUsageLimitsPaginatorName
 
@@ -492,6 +574,8 @@ Values:
 
 - `describe_usage_limits`
 
+<a id="getreservednodeexchangeconfigurationoptionspaginatorname"></a>
+
 ## GetReservedNodeExchangeConfigurationOptionsPaginatorName
 
 ```python
@@ -501,6 +585,8 @@ from mypy_boto3_redshift.literals import GetReservedNodeExchangeConfigurationOpt
 Values:
 
 - `get_reserved_node_exchange_configuration_options`
+
+<a id="getreservednodeexchangeofferingspaginatorname"></a>
 
 ## GetReservedNodeExchangeOfferingsPaginatorName
 
@@ -512,6 +598,8 @@ Values:
 
 - `get_reserved_node_exchange_offerings`
 
+<a id="modetype"></a>
+
 ## ModeType
 
 ```python
@@ -522,6 +610,8 @@ Values:
 
 - `high-performance`
 - `standard`
+
+<a id="nodeconfigurationoptionsfilternametype"></a>
 
 ## NodeConfigurationOptionsFilterNameType
 
@@ -535,6 +625,8 @@ Values:
 - `Mode`
 - `NodeType`
 - `NumberOfNodes`
+
+<a id="operatortypetype"></a>
 
 ## OperatorTypeType
 
@@ -552,6 +644,8 @@ Values:
 - `le`
 - `lt`
 
+<a id="parameterapplytypetype"></a>
+
 ## ParameterApplyTypeType
 
 ```python
@@ -562,6 +656,8 @@ Values:
 
 - `dynamic`
 - `static`
+
+<a id="partnerintegrationstatustype"></a>
 
 ## PartnerIntegrationStatusType
 
@@ -576,6 +672,8 @@ Values:
 - `Inactive`
 - `RuntimeFailure`
 
+<a id="reservednodeexchangeactiontypetype"></a>
+
 ## ReservedNodeExchangeActionTypeType
 
 ```python
@@ -586,6 +684,8 @@ Values:
 
 - `resize-cluster`
 - `restore-cluster`
+
+<a id="reservednodeexchangestatustypetype"></a>
 
 ## ReservedNodeExchangeStatusTypeType
 
@@ -602,6 +702,8 @@ Values:
 - `RETRYING`
 - `SUCCEEDED`
 
+<a id="reservednodeofferingtypetype"></a>
+
 ## ReservedNodeOfferingTypeType
 
 ```python
@@ -612,6 +714,8 @@ Values:
 
 - `Regular`
 - `Upgradable`
+
+<a id="schedulestatetype"></a>
 
 ## ScheduleStateType
 
@@ -625,6 +729,8 @@ Values:
 - `FAILED`
 - `MODIFYING`
 
+<a id="scheduledactionfilternametype"></a>
+
 ## ScheduledActionFilterNameType
 
 ```python
@@ -636,6 +742,8 @@ Values:
 - `cluster-identifier`
 - `iam-role`
 
+<a id="scheduledactionstatetype"></a>
+
 ## ScheduledActionStateType
 
 ```python
@@ -646,6 +754,8 @@ Values:
 
 - `ACTIVE`
 - `DISABLED`
+
+<a id="scheduledactiontypevaluestype"></a>
 
 ## ScheduledActionTypeValuesType
 
@@ -659,6 +769,8 @@ Values:
 - `ResizeCluster`
 - `ResumeCluster`
 
+<a id="snapshotattributetosortbytype"></a>
+
 ## SnapshotAttributeToSortByType
 
 ```python
@@ -671,6 +783,8 @@ Values:
 - `SOURCE_TYPE`
 - `TOTAL_SIZE`
 
+<a id="snapshotavailablewaitername"></a>
+
 ## SnapshotAvailableWaiterName
 
 ```python
@@ -680,6 +794,8 @@ from mypy_boto3_redshift.literals import SnapshotAvailableWaiterName
 Values:
 
 - `snapshot_available`
+
+<a id="sortbyordertype"></a>
 
 ## SortByOrderType
 
@@ -691,6 +807,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="sourcetypetype"></a>
 
 ## SourceTypeType
 
@@ -706,6 +824,8 @@ Values:
 - `cluster-snapshot`
 - `scheduled-action`
 
+<a id="tablerestorestatustypetype"></a>
+
 ## TableRestoreStatusTypeType
 
 ```python
@@ -720,6 +840,8 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
+<a id="usagelimitbreachactiontype"></a>
+
 ## UsageLimitBreachActionType
 
 ```python
@@ -732,6 +854,8 @@ Values:
 - `emit-metric`
 - `log`
 
+<a id="usagelimitfeaturetypetype"></a>
+
 ## UsageLimitFeatureTypeType
 
 ```python
@@ -742,6 +866,8 @@ Values:
 
 - `concurrency-scaling`
 - `spectrum`
+
+<a id="usagelimitlimittypetype"></a>
 
 ## UsageLimitLimitTypeType
 
@@ -754,6 +880,8 @@ Values:
 - `data-scanned`
 - `time`
 
+<a id="usagelimitperiodtype"></a>
+
 ## UsageLimitPeriodType
 
 ```python
@@ -765,6 +893,8 @@ Values:
 - `daily`
 - `monthly`
 - `weekly`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -1074,6 +1204,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -1114,6 +1246,8 @@ Values:
 - `describe_usage_limits`
 - `get_reserved_node_exchange_configuration_options`
 - `get_reserved_node_exchange_offerings`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

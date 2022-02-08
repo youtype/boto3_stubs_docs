@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-iotjobsdataplane-module"></a>
+
 # Typed dictionaries for boto3 IoTJobsDataPlane module
 
 > [Index](..) > [IoTJobsDataPlane](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTJobsDataPlane](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot-jobs-data.html#IoTJobsDataPlane)
 type annotations stubs module
-[mypy_boto3_iot_jobs_data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
+[mypy-boto3-iot-jobs-data](https://pypi.org/project/mypy-boto3-iot-jobs-data/).
 
 - [Typed dictionaries for boto3 IoTJobsDataPlane module](#typed-dictionaries-for-boto3-iotjobsdataplane-module)
   - [DescribeJobExecutionRequestRequestTypeDef](#describejobexecutionrequestrequesttypedef)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [StartNextPendingJobExecutionResponseTypeDef](#startnextpendingjobexecutionresponsetypedef)
   - [UpdateJobExecutionRequestRequestTypeDef](#updatejobexecutionrequestrequesttypedef)
   - [UpdateJobExecutionResponseTypeDef](#updatejobexecutionresponsetypedef)
+
+<a id="describejobexecutionrequestrequesttypedef"></a>
 
 ## DescribeJobExecutionRequestRequestTypeDef
 
@@ -37,6 +41,8 @@ Optional fields:
 - `includeJobDocument`: `bool`
 - `executionNumber`: `int`
 
+<a id="describejobexecutionresponsetypedef"></a>
+
 ## DescribeJobExecutionResponseTypeDef
 
 ```python
@@ -49,6 +55,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpendingjobexecutionsrequestrequesttypedef"></a>
+
 ## GetPendingJobExecutionsRequestRequestTypeDef
 
 ```python
@@ -58,6 +66,8 @@ from mypy_boto3_iot_jobs_data.type_defs import GetPendingJobExecutionsRequestReq
 Required fields:
 
 - `thingName`: `str`
+
+<a id="getpendingjobexecutionsresponsetypedef"></a>
 
 ## GetPendingJobExecutionsResponseTypeDef
 
@@ -74,6 +84,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="jobexecutionstatetypedef"></a>
+
 ## JobExecutionStateTypeDef
 
 ```python
@@ -85,6 +97,8 @@ Optional fields:
 - `status`: [JobExecutionStatusType](./literals.md#jobexecutionstatustype)
 - `statusDetails`: `Dict`\[`str`, `str`\]
 - `versionNumber`: `int`
+
+<a id="jobexecutionsummarytypedef"></a>
 
 ## JobExecutionSummaryTypeDef
 
@@ -100,6 +114,8 @@ Optional fields:
 - `lastUpdatedAt`: `int`
 - `versionNumber`: `int`
 - `executionNumber`: `int`
+
+<a id="jobexecutiontypedef"></a>
 
 ## JobExecutionTypeDef
 
@@ -121,6 +137,8 @@ Optional fields:
 - `executionNumber`: `int`
 - `jobDocument`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -134,6 +152,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startnextpendingjobexecutionrequestrequesttypedef"></a>
 
 ## StartNextPendingJobExecutionRequestRequestTypeDef
 
@@ -150,6 +170,8 @@ Optional fields:
 - `statusDetails`: `Mapping`\[`str`, `str`\]
 - `stepTimeoutInMinutes`: `int`
 
+<a id="startnextpendingjobexecutionresponsetypedef"></a>
+
 ## StartNextPendingJobExecutionResponseTypeDef
 
 ```python
@@ -161,6 +183,8 @@ Required fields:
 - `execution`: [JobExecutionTypeDef](./type_defs.md#jobexecutiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatejobexecutionrequestrequesttypedef"></a>
 
 ## UpdateJobExecutionRequestRequestTypeDef
 
@@ -182,6 +206,8 @@ Optional fields:
 - `includeJobExecutionState`: `bool`
 - `includeJobDocument`: `bool`
 - `executionNumber`: `int`
+
+<a id="updatejobexecutionresponsetypedef"></a>
 
 ## UpdateJobExecutionResponseTypeDef
 

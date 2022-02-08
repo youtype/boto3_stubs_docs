@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-rdsdataservice-module"></a>
+
 # Type annotations for boto3 RDSDataService module
 
 > [Index](..) > RDSDataService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
-[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+[mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[rds-data]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[rds-data]'
+
+# standalone installation
 pip install mypy-boto3-rds-data
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-rds-data
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="rdsdataserviceclient"></a>
 
 ## RDSDataServiceClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_rds_data.client import RDSDataServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -41,6 +55,8 @@ from mypy_boto3_rds_data.client import RDSDataServiceClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [rollback_transaction](./client.md#rollback_transaction)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 RDSDataServiceClient [exceptions](./client.md#exceptions)
@@ -52,6 +68,8 @@ RDSDataServiceClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - ServiceUnavailableError
 - StatementTimeoutException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -66,6 +84,8 @@ from mypy_boto3_rds_data.literals import DecimalReturnTypeType, ...
 - [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
 - [TypeHintType](./literals.md#typehinttype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="applicationdiscoveryserviceclient-for-boto3-applicationdiscoveryservice-module"></a>
+
 # ApplicationDiscoveryServiceClient for boto3 ApplicationDiscoveryService module
 
 > [Index](..) > [ApplicationDiscoveryService](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
-[mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
+[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 - [ApplicationDiscoveryServiceClient for boto3 ApplicationDiscoveryService module](#applicationdiscoveryserviceclient-for-boto3-applicationdiscoveryservice-module)
   - [ApplicationDiscoveryServiceClient](#applicationdiscoveryserviceclient)
@@ -42,6 +44,8 @@ type annotations stubs module
     - [update_application](#update_application)
     - [get_paginator](#get_paginator)
 
+<a id="applicationdiscoveryserviceclient"></a>
+
 ## ApplicationDiscoveryServiceClient
 
 Type annotations for `boto3.client("discovery")`
@@ -49,14 +53,17 @@ Type annotations for `boto3.client("discovery")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
 
 def get_discovery_client() -> ApplicationDiscoveryServiceClient:
-    return boto3.client("discovery")
+    return Session().client("discovery")
 ```
 
 Boto3 documentation:
 [ApplicationDiscoveryService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -83,7 +90,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServerInternalErrorException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -95,6 +106,8 @@ Boto3 documentation:
 [ApplicationDiscoveryService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_configuration_items_to_application"></a>
 
 ### associate_configuration_items_to_application
 
@@ -117,6 +130,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="batch_delete_import_data"></a>
+
 ### batch_delete_import_data
 
 Deletes one or more import tasks, each identified by their import ID.
@@ -137,6 +152,8 @@ Keyword-only arguments:
 Returns
 [BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -151,6 +168,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -172,6 +191,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="create_tags"></a>
+
 ### create_tags
 
 Creates one or more tags for configuration items.
@@ -191,6 +212,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_applications"></a>
+
 ### delete_applications
 
 Deletes a list of applications and their associations with configuration items.
@@ -208,6 +231,8 @@ Keyword-only arguments:
 - `configurationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_tags"></a>
 
 ### delete_tags
 
@@ -227,6 +252,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_agents"></a>
 
 ### describe_agents
 
@@ -250,6 +277,8 @@ Keyword-only arguments:
 Returns
 [DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef).
 
+<a id="describe_configurations"></a>
+
 ### describe_configurations
 
 Retrieves attributes for a list of configuration item IDs.
@@ -269,6 +298,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef).
+
+<a id="describe_continuous_exports"></a>
 
 ### describe_continuous_exports
 
@@ -292,6 +323,8 @@ Keyword-only arguments:
 Returns
 [DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef).
 
+<a id="describe_export_configurations"></a>
+
 ### describe_export_configurations
 
 `DescribeExportConfigurations` is deprecated.
@@ -313,6 +346,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef).
+
+<a id="describe_export_tasks"></a>
 
 ### describe_export_tasks
 
@@ -336,6 +371,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
+
+<a id="describe_import_tasks"></a>
 
 ### describe_import_tasks
 
@@ -361,6 +398,8 @@ Keyword-only arguments:
 Returns
 [DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef).
 
+<a id="describe_tags"></a>
+
 ### describe_tags
 
 Retrieves a list of configuration items that have tags as specified by the key-
@@ -383,6 +422,8 @@ Keyword-only arguments:
 Returns
 [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
+<a id="disassociate_configuration_items_from_application"></a>
+
 ### disassociate_configuration_items_from_application
 
 Disassociates one or more configuration items from an application.
@@ -404,6 +445,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="export_configurations"></a>
+
 ### export_configurations
 
 Deprecated.
@@ -415,6 +458,8 @@ Boto3 documentation:
 
 Returns
 [ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -434,6 +479,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_discovery_summary"></a>
+
 ### get_discovery_summary
 
 Retrieves a short summary of discovered assets.
@@ -445,6 +492,8 @@ Boto3 documentation:
 
 Returns
 [GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef).
+
+<a id="list_configurations"></a>
 
 ### list_configurations
 
@@ -473,6 +522,8 @@ Keyword-only arguments:
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
+<a id="list_server_neighbors"></a>
+
 ### list_server_neighbors
 
 Retrieves a list of servers that are one network hop away from a specified
@@ -497,6 +548,8 @@ Keyword-only arguments:
 Returns
 [ListServerNeighborsResponseTypeDef](./type_defs.md#listserverneighborsresponsetypedef).
 
+<a id="start_continuous_export"></a>
+
 ### start_continuous_export
 
 Start the continuous flow of agent's discovered data into Amazon Athena.
@@ -509,6 +562,8 @@ Boto3 documentation:
 
 Returns
 [StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef).
+
+<a id="start_data_collection_by_agent_ids"></a>
 
 ### start_data_collection_by_agent_ids
 
@@ -529,6 +584,8 @@ Keyword-only arguments:
 
 Returns
 [StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef).
+
+<a id="start_export_task"></a>
 
 ### start_export_task
 
@@ -554,6 +611,8 @@ Keyword-only arguments:
 Returns
 [StartExportTaskResponseTypeDef](./type_defs.md#startexporttaskresponsetypedef).
 
+<a id="start_import_task"></a>
+
 ### start_import_task
 
 Starts an import task, which allows you to import details of your on-premises
@@ -578,6 +637,8 @@ Keyword-only arguments:
 Returns
 [StartImportTaskResponseTypeDef](./type_defs.md#startimporttaskresponsetypedef).
 
+<a id="stop_continuous_export"></a>
+
 ### stop_continuous_export
 
 Stop the continuous flow of agent's discovered data into Amazon Athena.
@@ -596,6 +657,8 @@ Keyword-only arguments:
 
 Returns
 [StopContinuousExportResponseTypeDef](./type_defs.md#stopcontinuousexportresponsetypedef).
+
+<a id="stop_data_collection_by_agent_ids"></a>
 
 ### stop_data_collection_by_agent_ids
 
@@ -617,6 +680,8 @@ Keyword-only arguments:
 Returns
 [StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef).
 
+<a id="update_application"></a>
+
 ### update_application
 
 Updates metadata about an application.
@@ -636,6 +701,8 @@ Keyword-only arguments:
 - `description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

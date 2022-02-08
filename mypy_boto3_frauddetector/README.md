@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-frauddetector-module"></a>
+
 # Type annotations for boto3 FraudDetector module
 
 > [Index](..) > FraudDetector
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [FraudDetector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/frauddetector.html#FraudDetector)
 type annotations stubs module
-[mypy_boto3_frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
+[mypy-boto3-frauddetector](https://pypi.org/project/mypy-boto3-frauddetector/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[frauddetector]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[frauddetector]'
+
+# standalone installation
 pip install mypy-boto3-frauddetector
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-frauddetector
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="frauddetectorclient"></a>
 
 ## FraudDetectorClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_frauddetector.client import FraudDetectorClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -103,6 +117,8 @@ from mypy_boto3_frauddetector.client import FraudDetectorClient
 - [update_rule_version](./client.md#update_rule_version)
 - [update_variable](./client.md#update_variable)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 FraudDetectorClient [exceptions](./client.md#exceptions)
@@ -115,6 +131,8 @@ FraudDetectorClient [exceptions](./client.md#exceptions)
 - ResourceUnavailableException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -142,6 +160,8 @@ from mypy_boto3_frauddetector.literals import AsyncJobStatusType, ...
 - [TrainingDataSourceEnumType](./literals.md#trainingdatasourceenumtype)
 - [UnlabeledEventsTreatmentType](./literals.md#unlabeledeventstreatmenttype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

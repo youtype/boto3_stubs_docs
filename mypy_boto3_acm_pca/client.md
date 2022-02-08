@@ -1,3 +1,5 @@
+<a id="acmpcaclient-for-boto3-acmpca-module"></a>
+
 # ACMPCAClient for boto3 ACMPCA module
 
 > [Index](..) > [ACMPCA](.) > ACMPCAClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ACMPCA](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA)
 type annotations stubs module
-[mypy_boto3_acm_pca](https://pypi.org/project/mypy-boto3-acm-pca/).
+[mypy-boto3-acm-pca](https://pypi.org/project/mypy-boto3-acm-pca/).
 
 - [ACMPCAClient for boto3 ACMPCA module](#acmpcaclient-for-boto3-acmpca-module)
   - [ACMPCAClient](#acmpcaclient)
@@ -40,6 +42,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="acmpcaclient"></a>
+
 ## ACMPCAClient
 
 Type annotations for `boto3.client("acm-pca")`
@@ -47,14 +51,17 @@ Type annotations for `boto3.client("acm-pca")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_acm_pca.client import ACMPCAClient
 
 def get_acm-pca_client() -> ACMPCAClient:
-    return boto3.client("acm-pca")
+    return Session().client("acm-pca")
 ```
 
 Boto3 documentation:
 [ACMPCA.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -91,7 +98,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -103,6 +114,8 @@ Boto3 documentation:
 [ACMPCA.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/acm-pca.html#ACMPCA.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -118,6 +131,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_certificate_authority"></a>
 
 ### create_certificate_authority
 
@@ -150,6 +165,8 @@ Keyword-only arguments:
 Returns
 [CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef).
 
+<a id="create_certificate_authority_audit_report"></a>
+
 ### create_certificate_authority_audit_report
 
 Creates an audit report that lists every time that your CA private key is used.
@@ -174,6 +191,8 @@ Keyword-only arguments:
 Returns
 [CreateCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponsetypedef).
 
+<a id="create_permission"></a>
+
 ### create_permission
 
 Grants one or more permissions on a private CA to the AWS Certificate Manager
@@ -195,6 +214,8 @@ Keyword-only arguments:
   *(required)*
 - `SourceAccount`: `str`
 
+<a id="delete_certificate_authority"></a>
+
 ### delete_certificate_authority
 
 Deletes a private certificate authority (CA).
@@ -212,6 +233,8 @@ Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `PermanentDeletionTimeInDays`: `int`
+
+<a id="delete_permission"></a>
 
 ### delete_permission
 
@@ -232,6 +255,8 @@ Keyword-only arguments:
 - `Principal`: `str` *(required)*
 - `SourceAccount`: `str`
 
+<a id="delete_policy"></a>
+
 ### delete_policy
 
 Deletes the resource-based policy attached to a private CA.
@@ -247,6 +272,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
+
+<a id="describe_certificate_authority"></a>
 
 ### describe_certificate_authority
 
@@ -268,6 +295,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCertificateAuthorityResponseTypeDef](./type_defs.md#describecertificateauthorityresponsetypedef).
+
+<a id="describe_certificate_authority_audit_report"></a>
 
 ### describe_certificate_authority_audit_report
 
@@ -293,6 +322,8 @@ Keyword-only arguments:
 Returns
 [DescribeCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -310,6 +341,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_certificate"></a>
 
 ### get_certificate
 
@@ -332,6 +365,8 @@ Keyword-only arguments:
 Returns
 [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
 
+<a id="get_certificate_authority_certificate"></a>
+
 ### get_certificate_authority_certificate
 
 Retrieves the certificate and certificate chain for your private certificate
@@ -352,6 +387,8 @@ Keyword-only arguments:
 
 Returns
 [GetCertificateAuthorityCertificateResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponsetypedef).
+
+<a id="get_certificate_authority_csr"></a>
 
 ### get_certificate_authority_csr
 
@@ -374,6 +411,8 @@ Keyword-only arguments:
 Returns
 [GetCertificateAuthorityCsrResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponsetypedef).
 
+<a id="get_policy"></a>
+
 ### get_policy
 
 Retrieves the resource-based policy attached to a private CA.
@@ -391,6 +430,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
+
+<a id="import_certificate_authority_certificate"></a>
 
 ### import_certificate_authority_certificate
 
@@ -411,6 +452,8 @@ Keyword-only arguments:
 - `Certificate`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
   *(required)*
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="issue_certificate"></a>
 
 ### issue_certificate
 
@@ -441,6 +484,8 @@ Keyword-only arguments:
 Returns
 [IssueCertificateResponseTypeDef](./type_defs.md#issuecertificateresponsetypedef).
 
+<a id="list_certificate_authorities"></a>
+
 ### list_certificate_authorities
 
 Lists the private certificate authorities that you created by using the
@@ -465,6 +510,8 @@ Keyword-only arguments:
 Returns
 [ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef).
 
+<a id="list_permissions"></a>
+
 ### list_permissions
 
 List all permissions on a private CA, if any, granted to the AWS Certificate
@@ -487,6 +534,8 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Lists the tags, if any, that are associated with your private CA or one that
@@ -508,6 +557,8 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
+<a id="put_policy"></a>
+
 ### put_policy
 
 Attaches a resource-based policy to a private CA.
@@ -525,6 +576,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
 
+<a id="restore_certificate_authority"></a>
+
 ### restore_certificate_authority
 
 Restores a certificate authority (CA) that is in the `DELETED` state.
@@ -541,6 +594,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
+
+<a id="revoke_certificate"></a>
 
 ### revoke_certificate
 
@@ -561,6 +616,8 @@ Keyword-only arguments:
 - `RevocationReason`:
   [RevocationReasonType](./literals.md#revocationreasontype) *(required)*
 
+<a id="tag_certificate_authority"></a>
+
 ### tag_certificate_authority
 
 Adds one or more tags to your private CA.
@@ -579,6 +636,8 @@ Keyword-only arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="untag_certificate_authority"></a>
+
 ### untag_certificate_authority
 
 Remove one or more tags from your private CA.
@@ -596,6 +655,8 @@ Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="update_certificate_authority"></a>
 
 ### update_certificate_authority
 
@@ -618,6 +679,8 @@ Keyword-only arguments:
 - `Status`:
   [CertificateAuthorityStatusType](./literals.md#certificateauthoritystatustype)
 
+<a id="get_paginator"></a>
+
 ### get_paginator
 
 Type annotations for `boto3.client("acm-pca").get_paginator` method with
@@ -629,6 +692,8 @@ overloads.
   [ListPermissionsPaginator](./paginators.md#listpermissionspaginator)
 - `client.get_paginator("list_tags")` ->
   [ListTagsPaginator](./paginators.md#listtagspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

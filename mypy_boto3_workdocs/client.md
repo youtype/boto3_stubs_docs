@@ -1,3 +1,5 @@
+<a id="workdocsclient-for-boto3-workdocs-module"></a>
+
 # WorkDocsClient for boto3 WorkDocs module
 
 > [Index](..) > [WorkDocs](.) > WorkDocsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
-[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [WorkDocsClient for boto3 WorkDocs module](#workdocsclient-for-boto3-workdocs-module)
   - [WorkDocsClient](#workdocsclient)
@@ -57,6 +59,8 @@ type annotations stubs module
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
 
+<a id="workdocsclient"></a>
+
 ## WorkDocsClient
 
 Type annotations for `boto3.client("workdocs")`
@@ -64,14 +68,17 @@ Type annotations for `boto3.client("workdocs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_workdocs.client import WorkDocsClient
 
 def get_workdocs_client() -> WorkDocsClient:
-    return boto3.client("workdocs")
+    return Session().client("workdocs")
 ```
 
 Boto3 documentation:
 [WorkDocs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -114,7 +121,11 @@ Exceptions:
 - `Exceptions.UnauthorizedOperationException`
 - `Exceptions.UnauthorizedResourceAccessException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -126,6 +137,8 @@ Boto3 documentation:
 [WorkDocs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="abort_document_version_upload"></a>
 
 ### abort_document_version_upload
 
@@ -147,6 +160,8 @@ Keyword-only arguments:
 - `VersionId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
+<a id="activate_user"></a>
+
 ### activate_user
 
 Activates the specified user.
@@ -166,6 +181,8 @@ Keyword-only arguments:
 
 Returns
 [ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef).
+
+<a id="add_resource_permissions"></a>
 
 ### add_resource_permissions
 
@@ -193,6 +210,8 @@ Keyword-only arguments:
 Returns
 [AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -207,6 +226,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_comment"></a>
 
 ### create_comment
 
@@ -235,6 +256,8 @@ Keyword-only arguments:
 Returns
 [CreateCommentResponseTypeDef](./type_defs.md#createcommentresponsetypedef).
 
+<a id="create_custom_metadata"></a>
+
 ### create_custom_metadata
 
 Adds one or more custom properties to the specified resource (a folder,
@@ -257,6 +280,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="create_folder"></a>
+
 ### create_folder
 
 Creates a folder with the specified name and parent folder.
@@ -277,6 +302,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
+
+<a id="create_labels"></a>
 
 ### create_labels
 
@@ -299,6 +326,8 @@ Keyword-only arguments:
 - `AuthenticationToken`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_notification_subscription"></a>
 
 ### create_notification_subscription
 
@@ -325,6 +354,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNotificationSubscriptionResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponsetypedef).
+
+<a id="create_user"></a>
 
 ### create_user
 
@@ -353,6 +384,8 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
+<a id="deactivate_user"></a>
+
 ### deactivate_user
 
 Deactivates the specified user, which revokes the user's access to Amazon
@@ -370,6 +403,8 @@ Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
+
+<a id="delete_comment"></a>
 
 ### delete_comment
 
@@ -389,6 +424,8 @@ Keyword-only arguments:
 - `VersionId`: `str` *(required)*
 - `CommentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
+
+<a id="delete_custom_metadata"></a>
 
 ### delete_custom_metadata
 
@@ -412,6 +449,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_document"></a>
+
 ### delete_document
 
 Permanently deletes the specified document and its associated metadata.
@@ -428,6 +467,8 @@ Keyword-only arguments:
 
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
+
+<a id="delete_folder"></a>
 
 ### delete_folder
 
@@ -446,6 +487,8 @@ Keyword-only arguments:
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
+<a id="delete_folder_contents"></a>
+
 ### delete_folder_contents
 
 Deletes the contents of the specified folder.
@@ -462,6 +505,8 @@ Keyword-only arguments:
 
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
+
+<a id="delete_labels"></a>
 
 ### delete_labels
 
@@ -484,6 +529,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_notification_subscription"></a>
+
 ### delete_notification_subscription
 
 Deletes the specified subscription from the specified organization.
@@ -502,6 +549,8 @@ Keyword-only arguments:
 - `SubscriptionId`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Deletes the specified user from a Simple AD or Microsoft AD directory.
@@ -518,6 +567,8 @@ Keyword-only arguments:
 
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
+
+<a id="describe_activities"></a>
 
 ### describe_activities
 
@@ -547,6 +598,8 @@ Keyword-only arguments:
 Returns
 [DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef).
 
+<a id="describe_comments"></a>
+
 ### describe_comments
 
 List all the comments for the specified document version.
@@ -569,6 +622,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef).
+
+<a id="describe_document_versions"></a>
 
 ### describe_document_versions
 
@@ -594,6 +649,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef).
+
+<a id="describe_folder_contents"></a>
 
 ### describe_folder_contents
 
@@ -623,6 +680,8 @@ Keyword-only arguments:
 Returns
 [DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef).
 
+<a id="describe_groups"></a>
+
 ### describe_groups
 
 Describes the groups specified by the query.
@@ -646,6 +705,8 @@ Keyword-only arguments:
 Returns
 [DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef).
 
+<a id="describe_notification_subscriptions"></a>
+
 ### describe_notification_subscriptions
 
 Lists the specified notification subscriptions.
@@ -667,6 +728,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef).
+
+<a id="describe_resource_permissions"></a>
 
 ### describe_resource_permissions
 
@@ -692,6 +755,8 @@ Keyword-only arguments:
 Returns
 [DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef).
 
+<a id="describe_root_folders"></a>
+
 ### describe_root_folders
 
 Describes the current user's special folders; the `RootFolder` and the
@@ -713,6 +778,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef).
+
+<a id="describe_users"></a>
 
 ### describe_users
 
@@ -742,6 +809,8 @@ Keyword-only arguments:
 Returns
 [DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -759,6 +828,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_current_user"></a>
 
 ### get_current_user
 
@@ -780,6 +851,8 @@ Keyword-only arguments:
 Returns
 [GetCurrentUserResponseTypeDef](./type_defs.md#getcurrentuserresponsetypedef).
 
+<a id="get_document"></a>
+
 ### get_document
 
 Retrieves details of a document.
@@ -800,6 +873,8 @@ Keyword-only arguments:
 
 Returns
 [GetDocumentResponseTypeDef](./type_defs.md#getdocumentresponsetypedef).
+
+<a id="get_document_path"></a>
 
 ### get_document_path
 
@@ -825,6 +900,8 @@ Keyword-only arguments:
 Returns
 [GetDocumentPathResponseTypeDef](./type_defs.md#getdocumentpathresponsetypedef).
 
+<a id="get_document_version"></a>
+
 ### get_document_version
 
 Retrieves version metadata for the specified document.
@@ -848,6 +925,8 @@ Keyword-only arguments:
 Returns
 [GetDocumentVersionResponseTypeDef](./type_defs.md#getdocumentversionresponsetypedef).
 
+<a id="get_folder"></a>
+
 ### get_folder
 
 Retrieves the metadata of the specified folder.
@@ -867,6 +946,8 @@ Keyword-only arguments:
 - `IncludeCustomMetadata`: `bool`
 
 Returns [GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef).
+
+<a id="get_folder_path"></a>
 
 ### get_folder_path
 
@@ -892,6 +973,8 @@ Keyword-only arguments:
 Returns
 [GetFolderPathResponseTypeDef](./type_defs.md#getfolderpathresponsetypedef).
 
+<a id="get_resources"></a>
+
 ### get_resources
 
 Retrieves a collection of resources, including folders and documents.
@@ -915,6 +998,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourcesResponseTypeDef](./type_defs.md#getresourcesresponsetypedef).
+
+<a id="initiate_document_version_upload"></a>
 
 ### initiate_document_version_upload
 
@@ -943,6 +1028,8 @@ Keyword-only arguments:
 Returns
 [InitiateDocumentVersionUploadResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponsetypedef).
 
+<a id="remove_all_resource_permissions"></a>
+
 ### remove_all_resource_permissions
 
 Removes all the permissions from the specified resource.
@@ -960,6 +1047,8 @@ Keyword-only arguments:
 
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
+
+<a id="remove_resource_permission"></a>
 
 ### remove_resource_permission
 
@@ -981,6 +1070,8 @@ Keyword-only arguments:
 - `AuthenticationToken`: `str`
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 
+<a id="update_document"></a>
+
 ### update_document
 
 Updates the specified attributes of a document.
@@ -1000,6 +1091,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
+
+<a id="update_document_version"></a>
 
 ### update_document_version
 
@@ -1021,6 +1114,8 @@ Keyword-only arguments:
 - `VersionStatus`: `Literal['ACTIVE']` (see
   [DocumentVersionStatusType](./literals.md#documentversionstatustype))
 
+<a id="update_folder"></a>
+
 ### update_folder
 
 Updates the specified attributes of the specified folder.
@@ -1040,6 +1135,8 @@ Keyword-only arguments:
 - `Name`: `str`
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
+
+<a id="update_user"></a>
 
 ### update_user
 
@@ -1069,6 +1166,8 @@ Keyword-only arguments:
   [BooleanEnumTypeType](./literals.md#booleanenumtypetype)
 
 Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

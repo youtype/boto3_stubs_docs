@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-autoscalingplans-module"></a>
+
 # Type annotations for boto3 AutoScalingPlans module
 
 > [Index](..) > AutoScalingPlans
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AutoScalingPlans](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling-plans.html#AutoScalingPlans)
 type annotations stubs module
-[mypy_boto3_autoscaling_plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
+[mypy-boto3-autoscaling-plans](https://pypi.org/project/mypy-boto3-autoscaling-plans/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[autoscaling-plans]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[autoscaling-plans]'
+
+# standalone installation
 pip install mypy-boto3-autoscaling-plans
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-autoscaling-plans
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="autoscalingplansclient"></a>
+
 ## AutoScalingPlansClient
 
 Type annotations for `boto3.client("autoscaling-plans")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -43,6 +57,8 @@ from mypy_boto3_autoscaling_plans.client import AutoScalingPlansClient
 - [get_scaling_plan_resource_forecast_data](./client.md#get_scaling_plan_resource_forecast_data)
 - [update_scaling_plan](./client.md#update_scaling_plan)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AutoScalingPlansClient [exceptions](./client.md#exceptions)
@@ -55,6 +71,8 @@ AutoScalingPlansClient [exceptions](./client.md#exceptions)
 - ObjectNotFoundException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -63,11 +81,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling_plans.paginators import DescribeScalingPlanResourcesPaginator, ...
+from mypy_boto3_autoscaling_plans.paginator import DescribeScalingPlanResourcesPaginator, ...
 ```
 
 - [DescribeScalingPlanResourcesPaginator](./paginators.md#describescalingplanresourcespaginator)
 - [DescribeScalingPlansPaginator](./paginators.md#describescalingplanspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -95,6 +115,8 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 - [ServiceNamespaceType](./literals.md#servicenamespacetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

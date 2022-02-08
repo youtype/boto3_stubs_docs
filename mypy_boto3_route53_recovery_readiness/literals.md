@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-route53recoveryreadiness-module"></a>
+
 # Literals for boto3 Route53RecoveryReadiness module
 
 > [Index](..) > [Route53RecoveryReadiness](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
 type annotations stubs module
-[mypy_boto3_route53_recovery_readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
+[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 - [Literals for boto3 Route53RecoveryReadiness module](#literals-for-boto3-route53recoveryreadiness-module)
   - [GetCellReadinessSummaryPaginatorName](#getcellreadinesssummarypaginatorname)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="getcellreadinesssummarypaginatorname"></a>
+
 ## GetCellReadinessSummaryPaginatorName
 
 ```python
@@ -31,6 +35,8 @@ from mypy_boto3_route53_recovery_readiness.literals import GetCellReadinessSumma
 Values:
 
 - `get_cell_readiness_summary`
+
+<a id="getreadinesscheckresourcestatuspaginatorname"></a>
 
 ## GetReadinessCheckResourceStatusPaginatorName
 
@@ -42,6 +48,8 @@ Values:
 
 - `get_readiness_check_resource_status`
 
+<a id="getreadinesscheckstatuspaginatorname"></a>
+
 ## GetReadinessCheckStatusPaginatorName
 
 ```python
@@ -51,6 +59,8 @@ from mypy_boto3_route53_recovery_readiness.literals import GetReadinessCheckStat
 Values:
 
 - `get_readiness_check_status`
+
+<a id="getrecoverygroupreadinesssummarypaginatorname"></a>
 
 ## GetRecoveryGroupReadinessSummaryPaginatorName
 
@@ -62,6 +72,8 @@ Values:
 
 - `get_recovery_group_readiness_summary`
 
+<a id="listcellspaginatorname"></a>
+
 ## ListCellsPaginatorName
 
 ```python
@@ -71,6 +83,8 @@ from mypy_boto3_route53_recovery_readiness.literals import ListCellsPaginatorNam
 Values:
 
 - `list_cells`
+
+<a id="listcrossaccountauthorizationspaginatorname"></a>
 
 ## ListCrossAccountAuthorizationsPaginatorName
 
@@ -82,6 +96,8 @@ Values:
 
 - `list_cross_account_authorizations`
 
+<a id="listreadinesscheckspaginatorname"></a>
+
 ## ListReadinessChecksPaginatorName
 
 ```python
@@ -91,6 +107,8 @@ from mypy_boto3_route53_recovery_readiness.literals import ListReadinessChecksPa
 Values:
 
 - `list_readiness_checks`
+
+<a id="listrecoverygroupspaginatorname"></a>
 
 ## ListRecoveryGroupsPaginatorName
 
@@ -102,6 +120,8 @@ Values:
 
 - `list_recovery_groups`
 
+<a id="listresourcesetspaginatorname"></a>
+
 ## ListResourceSetsPaginatorName
 
 ```python
@@ -112,6 +132,8 @@ Values:
 
 - `list_resource_sets`
 
+<a id="listrulespaginatorname"></a>
+
 ## ListRulesPaginatorName
 
 ```python
@@ -121,6 +143,8 @@ from mypy_boto3_route53_recovery_readiness.literals import ListRulesPaginatorNam
 Values:
 
 - `list_rules`
+
+<a id="readinesstype"></a>
 
 ## ReadinessType
 
@@ -134,6 +158,8 @@ Values:
 - `NOT_READY`
 - `READY`
 - `UNKNOWN`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -442,6 +468,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

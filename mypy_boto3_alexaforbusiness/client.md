@@ -1,3 +1,5 @@
+<a id="alexaforbusinessclient-for-boto3-alexaforbusiness-module"></a>
+
 # AlexaForBusinessClient for boto3 AlexaForBusiness module
 
 > [Index](..) > [AlexaForBusiness](.) > AlexaForBusinessClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
-[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 - [AlexaForBusinessClient for boto3 AlexaForBusiness module](#alexaforbusinessclient-for-boto3-alexaforbusiness-module)
   - [AlexaForBusinessClient](#alexaforbusinessclient)
@@ -109,6 +111,8 @@ type annotations stubs module
     - [update_skill_group](#update_skill_group)
     - [get_paginator](#get_paginator)
 
+<a id="alexaforbusinessclient"></a>
+
 ## AlexaForBusinessClient
 
 Type annotations for `boto3.client("alexaforbusiness")`
@@ -116,14 +120,17 @@ Type annotations for `boto3.client("alexaforbusiness")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_alexaforbusiness.client import AlexaForBusinessClient
 
 def get_alexaforbusiness_client() -> AlexaForBusinessClient:
-    return boto3.client("alexaforbusiness")
+    return Session().client("alexaforbusiness")
 ```
 
 Boto3 documentation:
 [AlexaForBusiness.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -156,7 +163,11 @@ Exceptions:
 - `Exceptions.SkillNotLinkedException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -168,6 +179,8 @@ Boto3 documentation:
 [AlexaForBusiness.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="approve_skill"></a>
 
 ### approve_skill
 
@@ -186,6 +199,8 @@ Keyword-only arguments:
 - `SkillId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_contact_with_address_book"></a>
 
 ### associate_contact_with_address_book
 
@@ -206,6 +221,8 @@ Keyword-only arguments:
 - `AddressBookArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_device_with_network_profile"></a>
 
 ### associate_device_with_network_profile
 
@@ -228,6 +245,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_device_with_room"></a>
+
 ### associate_device_with_room
 
 Associates a device with a given room.
@@ -247,6 +266,8 @@ Keyword-only arguments:
 - `RoomArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_skill_group_with_room"></a>
 
 ### associate_skill_group_with_room
 
@@ -268,6 +289,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_skill_with_skill_group"></a>
+
 ### associate_skill_with_skill_group
 
 Associates a skill with a skill group.
@@ -288,6 +311,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="associate_skill_with_users"></a>
+
 ### associate_skill_with_users
 
 Makes a private skill available for enrolled users to enable on their devices.
@@ -307,6 +332,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -321,6 +348,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_address_book"></a>
 
 ### create_address_book
 
@@ -344,6 +373,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAddressBookResponseTypeDef](./type_defs.md#createaddressbookresponsetypedef).
+
+<a id="create_business_report_schedule"></a>
 
 ### create_business_report_schedule
 
@@ -377,6 +408,8 @@ Keyword-only arguments:
 Returns
 [CreateBusinessReportScheduleResponseTypeDef](./type_defs.md#createbusinessreportscheduleresponsetypedef).
 
+<a id="create_conference_provider"></a>
+
 ### create_conference_provider
 
 Adds a new conference provider under the user's AWS account.
@@ -406,6 +439,8 @@ Keyword-only arguments:
 Returns
 [CreateConferenceProviderResponseTypeDef](./type_defs.md#createconferenceproviderresponsetypedef).
 
+<a id="create_contact"></a>
+
 ### create_contact
 
 Creates a contact with the specified details.
@@ -434,6 +469,8 @@ Keyword-only arguments:
 Returns
 [CreateContactResponseTypeDef](./type_defs.md#createcontactresponsetypedef).
 
+<a id="create_gateway_group"></a>
+
 ### create_gateway_group
 
 Creates a gateway group with the specified details.
@@ -456,6 +493,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGatewayGroupResponseTypeDef](./type_defs.md#creategatewaygroupresponsetypedef).
+
+<a id="create_network_profile"></a>
 
 ### create_network_profile
 
@@ -488,6 +527,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNetworkProfileResponseTypeDef](./type_defs.md#createnetworkprofileresponsetypedef).
+
+<a id="create_profile"></a>
 
 ### create_profile
 
@@ -524,6 +565,8 @@ Keyword-only arguments:
 Returns
 [CreateProfileResponseTypeDef](./type_defs.md#createprofileresponsetypedef).
 
+<a id="create_room"></a>
+
 ### create_room
 
 Creates a room with the specified details.
@@ -546,6 +589,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CreateRoomResponseTypeDef](./type_defs.md#createroomresponsetypedef).
+
+<a id="create_skill_group"></a>
 
 ### create_skill_group
 
@@ -570,6 +615,8 @@ Keyword-only arguments:
 Returns
 [CreateSkillGroupResponseTypeDef](./type_defs.md#createskillgroupresponsetypedef).
 
+<a id="create_user"></a>
+
 ### create_user
 
 Creates a user.
@@ -593,6 +640,8 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
+<a id="delete_address_book"></a>
+
 ### delete_address_book
 
 Deletes an address book by the address book ARN.
@@ -611,6 +660,8 @@ Keyword-only arguments:
 - `AddressBookArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_business_report_schedule"></a>
 
 ### delete_business_report_schedule
 
@@ -631,6 +682,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_conference_provider"></a>
+
 ### delete_conference_provider
 
 Deletes a conference provider.
@@ -650,6 +703,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_contact"></a>
+
 ### delete_contact
 
 Deletes a contact by the contact ARN.
@@ -668,6 +723,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_device"></a>
+
 ### delete_device
 
 Removes a device from Alexa For Business.
@@ -685,6 +742,8 @@ Keyword-only arguments:
 - `DeviceArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_device_usage_data"></a>
 
 ### delete_device_usage_data
 
@@ -709,6 +768,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_gateway_group"></a>
+
 ### delete_gateway_group
 
 Deletes a gateway group.
@@ -727,6 +788,8 @@ Keyword-only arguments:
 - `GatewayGroupArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_network_profile"></a>
 
 ### delete_network_profile
 
@@ -747,6 +810,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_profile"></a>
+
 ### delete_profile
 
 Deletes a room profile by the profile ARN.
@@ -765,6 +830,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_room"></a>
+
 ### delete_room
 
 Deletes a room by the room ARN.
@@ -782,6 +849,8 @@ Keyword-only arguments:
 - `RoomArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_room_skill_parameter"></a>
 
 ### delete_room_skill_parameter
 
@@ -804,6 +873,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_skill_authorization"></a>
+
 ### delete_skill_authorization
 
 Unlinks a third-party account from a skill.
@@ -824,6 +895,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_skill_group"></a>
+
 ### delete_skill_group
 
 Deletes a skill group by skill group ARN.
@@ -843,6 +916,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Deletes a specified user by user ARN and enrollment ARN.
@@ -861,6 +936,8 @@ Keyword-only arguments:
 - `UserArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_contact_from_address_book"></a>
 
 ### disassociate_contact_from_address_book
 
@@ -883,6 +960,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_device_from_room"></a>
+
 ### disassociate_device_from_room
 
 Disassociates a device from its current room.
@@ -901,6 +980,8 @@ Keyword-only arguments:
 - `DeviceArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_skill_from_skill_group"></a>
 
 ### disassociate_skill_from_skill_group
 
@@ -922,6 +1003,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_skill_from_users"></a>
+
 ### disassociate_skill_from_users
 
 Makes a private skill unavailable for enrolled users and prevents them from
@@ -941,6 +1024,8 @@ Keyword-only arguments:
 - `SkillId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_skill_group_from_room"></a>
 
 ### disassociate_skill_group_from_room
 
@@ -962,6 +1047,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="forget_smart_home_appliances"></a>
+
 ### forget_smart_home_appliances
 
 Forgets smart home appliances associated to a room.
@@ -981,6 +1068,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -999,6 +1088,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_address_book"></a>
 
 ### get_address_book
 
@@ -1020,6 +1111,8 @@ Keyword-only arguments:
 Returns
 [GetAddressBookResponseTypeDef](./type_defs.md#getaddressbookresponsetypedef).
 
+<a id="get_conference_preference"></a>
+
 ### get_conference_preference
 
 Retrieves the existing conference preferences.
@@ -1032,6 +1125,8 @@ Boto3 documentation:
 
 Returns
 [GetConferencePreferenceResponseTypeDef](./type_defs.md#getconferencepreferenceresponsetypedef).
+
+<a id="get_conference_provider"></a>
 
 ### get_conference_provider
 
@@ -1053,6 +1148,8 @@ Keyword-only arguments:
 Returns
 [GetConferenceProviderResponseTypeDef](./type_defs.md#getconferenceproviderresponsetypedef).
 
+<a id="get_contact"></a>
+
 ### get_contact
 
 Gets the contact details by the contact ARN.
@@ -1070,6 +1167,8 @@ Keyword-only arguments:
 - `ContactArn`: `str` *(required)*
 
 Returns [GetContactResponseTypeDef](./type_defs.md#getcontactresponsetypedef).
+
+<a id="get_device"></a>
 
 ### get_device
 
@@ -1089,6 +1188,8 @@ Keyword-only arguments:
 
 Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
+<a id="get_gateway"></a>
+
 ### get_gateway
 
 Retrieves the details of a gateway.
@@ -1106,6 +1207,8 @@ Keyword-only arguments:
 - `GatewayArn`: `str` *(required)*
 
 Returns [GetGatewayResponseTypeDef](./type_defs.md#getgatewayresponsetypedef).
+
+<a id="get_gateway_group"></a>
 
 ### get_gateway_group
 
@@ -1127,6 +1230,8 @@ Keyword-only arguments:
 Returns
 [GetGatewayGroupResponseTypeDef](./type_defs.md#getgatewaygroupresponsetypedef).
 
+<a id="get_invitation_configuration"></a>
+
 ### get_invitation_configuration
 
 Retrieves the configured values for the user enrollment invitation email
@@ -1140,6 +1245,8 @@ Boto3 documentation:
 
 Returns
 [GetInvitationConfigurationResponseTypeDef](./type_defs.md#getinvitationconfigurationresponsetypedef).
+
+<a id="get_network_profile"></a>
 
 ### get_network_profile
 
@@ -1161,6 +1268,8 @@ Keyword-only arguments:
 Returns
 [GetNetworkProfileResponseTypeDef](./type_defs.md#getnetworkprofileresponsetypedef).
 
+<a id="get_profile"></a>
+
 ### get_profile
 
 Gets the details of a room profile by profile ARN.
@@ -1179,6 +1288,8 @@ Keyword-only arguments:
 
 Returns [GetProfileResponseTypeDef](./type_defs.md#getprofileresponsetypedef).
 
+<a id="get_room"></a>
+
 ### get_room
 
 Gets room details by room ARN.
@@ -1196,6 +1307,8 @@ Keyword-only arguments:
 - `RoomArn`: `str`
 
 Returns [GetRoomResponseTypeDef](./type_defs.md#getroomresponsetypedef).
+
+<a id="get_room_skill_parameter"></a>
 
 ### get_room_skill_parameter
 
@@ -1219,6 +1332,8 @@ Keyword-only arguments:
 Returns
 [GetRoomSkillParameterResponseTypeDef](./type_defs.md#getroomskillparameterresponsetypedef).
 
+<a id="get_skill_group"></a>
+
 ### get_skill_group
 
 Gets skill group details by skill group ARN.
@@ -1237,6 +1352,8 @@ Keyword-only arguments:
 
 Returns
 [GetSkillGroupResponseTypeDef](./type_defs.md#getskillgroupresponsetypedef).
+
+<a id="list_business_report_schedules"></a>
 
 ### list_business_report_schedules
 
@@ -1259,6 +1376,8 @@ Keyword-only arguments:
 Returns
 [ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef).
 
+<a id="list_conference_providers"></a>
+
 ### list_conference_providers
 
 Lists conference providers under a specific AWS account.
@@ -1279,6 +1398,8 @@ Keyword-only arguments:
 
 Returns
 [ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef).
+
+<a id="list_device_events"></a>
 
 ### list_device_events
 
@@ -1304,6 +1425,8 @@ Keyword-only arguments:
 Returns
 [ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
+<a id="list_gateway_groups"></a>
+
 ### list_gateway_groups
 
 Retrieves a list of gateway group summaries.
@@ -1325,6 +1448,8 @@ Keyword-only arguments:
 Returns
 [ListGatewayGroupsResponseTypeDef](./type_defs.md#listgatewaygroupsresponsetypedef).
 
+<a id="list_gateways"></a>
+
 ### list_gateways
 
 Retrieves a list of gateway summaries.
@@ -1345,6 +1470,8 @@ Keyword-only arguments:
 
 Returns
 [ListGatewaysResponseTypeDef](./type_defs.md#listgatewaysresponsetypedef).
+
+<a id="list_skills"></a>
 
 ### list_skills
 
@@ -1369,6 +1496,8 @@ Keyword-only arguments:
 
 Returns [ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef).
 
+<a id="list_skills_store_categories"></a>
+
 ### list_skills_store_categories
 
 Lists all categories in the Alexa skill store.
@@ -1389,6 +1518,8 @@ Keyword-only arguments:
 
 Returns
 [ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef).
+
+<a id="list_skills_store_skills_by_category"></a>
 
 ### list_skills_store_skills_by_category
 
@@ -1412,6 +1543,8 @@ Keyword-only arguments:
 Returns
 [ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef).
 
+<a id="list_smart_home_appliances"></a>
+
 ### list_smart_home_appliances
 
 Lists all of the smart home appliances associated with a room.
@@ -1434,6 +1567,8 @@ Keyword-only arguments:
 Returns
 [ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Lists all tags for the specified resource.
@@ -1453,6 +1588,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
+
+<a id="put_conference_preference"></a>
 
 ### put_conference_preference
 
@@ -1476,6 +1613,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_invitation_configuration"></a>
+
 ### put_invitation_configuration
 
 Configures the email template for the user enrollment invitation with the
@@ -1497,6 +1636,8 @@ Keyword-only arguments:
 - `PrivateSkillIds`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_room_skill_parameter"></a>
 
 ### put_room_skill_parameter
 
@@ -1521,6 +1662,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_skill_authorization"></a>
+
 ### put_skill_authorization
 
 Links a user's account to a third-party skill provider.
@@ -1541,6 +1684,8 @@ Keyword-only arguments:
 - `RoomArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="register_avs_device"></a>
 
 ### register_avs_device
 
@@ -1569,6 +1714,8 @@ Keyword-only arguments:
 Returns
 [RegisterAVSDeviceResponseTypeDef](./type_defs.md#registeravsdeviceresponsetypedef).
 
+<a id="reject_skill"></a>
+
 ### reject_skill
 
 Disassociates a skill from the organization under a user's AWS account.
@@ -1586,6 +1733,8 @@ Keyword-only arguments:
 - `SkillId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="resolve_room"></a>
 
 ### resolve_room
 
@@ -1607,6 +1756,8 @@ Keyword-only arguments:
 Returns
 [ResolveRoomResponseTypeDef](./type_defs.md#resolveroomresponsetypedef).
 
+<a id="revoke_invitation"></a>
+
 ### revoke_invitation
 
 Revokes an invitation and invalidates the enrollment URL.
@@ -1626,6 +1777,8 @@ Keyword-only arguments:
 - `EnrollmentId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="search_address_books"></a>
 
 ### search_address_books
 
@@ -1651,6 +1804,8 @@ Keyword-only arguments:
 Returns
 [SearchAddressBooksResponseTypeDef](./type_defs.md#searchaddressbooksresponsetypedef).
 
+<a id="search_contacts"></a>
+
 ### search_contacts
 
 Searches contacts and lists the ones that meet a set of filter and sort
@@ -1674,6 +1829,8 @@ Keyword-only arguments:
 Returns
 [SearchContactsResponseTypeDef](./type_defs.md#searchcontactsresponsetypedef).
 
+<a id="search_devices"></a>
+
 ### search_devices
 
 Searches devices and lists the ones that meet a set of filter criteria.
@@ -1695,6 +1852,8 @@ Keyword-only arguments:
 
 Returns
 [SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
+
+<a id="search_network_profiles"></a>
 
 ### search_network_profiles
 
@@ -1720,6 +1879,8 @@ Keyword-only arguments:
 Returns
 [SearchNetworkProfilesResponseTypeDef](./type_defs.md#searchnetworkprofilesresponsetypedef).
 
+<a id="search_profiles"></a>
+
 ### search_profiles
 
 Searches room profiles and lists the ones that meet a set of filter criteria.
@@ -1742,6 +1903,8 @@ Keyword-only arguments:
 Returns
 [SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef).
 
+<a id="search_rooms"></a>
+
 ### search_rooms
 
 Searches rooms and lists the ones that meet a set of filter and sort criteria.
@@ -1763,6 +1926,8 @@ Keyword-only arguments:
 
 Returns
 [SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef).
+
+<a id="search_skill_groups"></a>
 
 ### search_skill_groups
 
@@ -1788,6 +1953,8 @@ Keyword-only arguments:
 Returns
 [SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef).
 
+<a id="search_users"></a>
+
 ### search_users
 
 Searches users and lists the ones that meet a set of filter and sort criteria.
@@ -1809,6 +1976,8 @@ Keyword-only arguments:
 
 Returns
 [SearchUsersResponseTypeDef](./type_defs.md#searchusersresponsetypedef).
+
+<a id="send_announcement"></a>
 
 ### send_announcement
 
@@ -1835,6 +2004,8 @@ Keyword-only arguments:
 Returns
 [SendAnnouncementResponseTypeDef](./type_defs.md#sendannouncementresponsetypedef).
 
+<a id="send_invitation"></a>
+
 ### send_invitation
 
 Sends an enrollment invitation email with a URL to a user.
@@ -1852,6 +2023,8 @@ Keyword-only arguments:
 - `UserArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_device_sync"></a>
 
 ### start_device_sync
 
@@ -1875,6 +2048,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="start_smart_home_appliance_discovery"></a>
+
 ### start_smart_home_appliance_discovery
 
 Initiates the discovery of any smart home appliances associated with the room.
@@ -1893,6 +2068,8 @@ Keyword-only arguments:
 - `RoomArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1913,6 +2090,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes metadata tags from a specified resource.
@@ -1931,6 +2110,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_address_book"></a>
 
 ### update_address_book
 
@@ -1952,6 +2133,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_business_report_schedule"></a>
 
 ### update_business_report_schedule
 
@@ -1979,6 +2162,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_conference_provider"></a>
+
 ### update_conference_provider
 
 Updates an existing conference provider's settings.
@@ -2004,6 +2189,8 @@ Keyword-only arguments:
 - `PSTNDialIn`: [PSTNDialInTypeDef](./type_defs.md#pstndialintypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_contact"></a>
 
 ### update_contact
 
@@ -2031,6 +2218,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_device"></a>
+
 ### update_device
 
 Updates the device name by device ARN.
@@ -2049,6 +2238,8 @@ Keyword-only arguments:
 - `DeviceName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_gateway"></a>
 
 ### update_gateway
 
@@ -2071,6 +2262,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_gateway_group"></a>
+
 ### update_gateway_group
 
 Updates the details of a gateway group.
@@ -2091,6 +2284,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_network_profile"></a>
 
 ### update_network_profile
 
@@ -2116,6 +2311,8 @@ Keyword-only arguments:
 - `TrustAnchors`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_profile"></a>
 
 ### update_profile
 
@@ -2149,6 +2346,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_room"></a>
+
 ### update_room
 
 Updates room details by room ARN.
@@ -2171,6 +2370,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_skill_group"></a>
+
 ### update_skill_group
 
 Updates skill group details by skill group ARN.
@@ -2191,6 +2392,8 @@ Keyword-only arguments:
 - `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-healthlake-module"></a>
+
 # Type annotations for boto3 HealthLake module
 
 > [Index](..) > HealthLake
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [HealthLake](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/healthlake.html#HealthLake)
 type annotations stubs module
-[mypy_boto3_healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
+[mypy-boto3-healthlake](https://pypi.org/project/mypy-boto3-healthlake/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[healthlake]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[healthlake]'
+
+# standalone installation
 pip install mypy-boto3-healthlake
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-healthlake
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="healthlakeclient"></a>
 
 ## HealthLakeClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_healthlake.client import HealthLakeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -48,6 +62,8 @@ from mypy_boto3_healthlake.client import HealthLakeClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 HealthLakeClient [exceptions](./client.md#exceptions)
@@ -59,6 +75,8 @@ HealthLakeClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -76,6 +94,8 @@ from mypy_boto3_healthlake.literals import CmkTypeType, ...
 - [JobStatusType](./literals.md#jobstatustype)
 - [PreloadDataTypeType](./literals.md#preloaddatatypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

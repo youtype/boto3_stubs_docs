@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-backupgateway-module"></a>
+
 # Typed dictionaries for boto3 BackupGateway module
 
 > [Index](..) > [BackupGateway](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [BackupGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup-gateway.html#BackupGateway)
 type annotations stubs module
-[mypy_boto3_backup_gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
+[mypy-boto3-backup-gateway](https://pypi.org/project/mypy-boto3-backup-gateway/).
 
 - [Typed dictionaries for boto3 BackupGateway module](#typed-dictionaries-for-boto3-backupgateway-module)
   - [AssociateGatewayToServerInputRequestTypeDef](#associategatewaytoserverinputrequesttypedef)
@@ -46,6 +48,8 @@ type annotations stubs module
   - [UpdateHypervisorOutputTypeDef](#updatehypervisoroutputtypedef)
   - [VirtualMachineTypeDef](#virtualmachinetypedef)
 
+<a id="associategatewaytoserverinputrequesttypedef"></a>
+
 ## AssociateGatewayToServerInputRequestTypeDef
 
 ```python
@@ -56,6 +60,8 @@ Required fields:
 
 - `GatewayArn`: `str`
 - `ServerArn`: `str`
+
+<a id="associategatewaytoserveroutputtypedef"></a>
 
 ## AssociateGatewayToServerOutputTypeDef
 
@@ -68,6 +74,8 @@ Required fields:
 - `GatewayArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategatewayinputrequesttypedef"></a>
 
 ## CreateGatewayInputRequestTypeDef
 
@@ -86,6 +94,8 @@ Optional fields:
 
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="creategatewayoutputtypedef"></a>
+
 ## CreateGatewayOutputTypeDef
 
 ```python
@@ -98,6 +108,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletegatewayinputrequesttypedef"></a>
+
 ## DeleteGatewayInputRequestTypeDef
 
 ```python
@@ -107,6 +119,8 @@ from mypy_boto3_backup_gateway.type_defs import DeleteGatewayInputRequestTypeDef
 Required fields:
 
 - `GatewayArn`: `str`
+
+<a id="deletegatewayoutputtypedef"></a>
 
 ## DeleteGatewayOutputTypeDef
 
@@ -120,6 +134,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletehypervisorinputrequesttypedef"></a>
+
 ## DeleteHypervisorInputRequestTypeDef
 
 ```python
@@ -129,6 +145,8 @@ from mypy_boto3_backup_gateway.type_defs import DeleteHypervisorInputRequestType
 Required fields:
 
 - `HypervisorArn`: `str`
+
+<a id="deletehypervisoroutputtypedef"></a>
 
 ## DeleteHypervisorOutputTypeDef
 
@@ -142,6 +160,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociategatewayfromserverinputrequesttypedef"></a>
+
 ## DisassociateGatewayFromServerInputRequestTypeDef
 
 ```python
@@ -151,6 +171,8 @@ from mypy_boto3_backup_gateway.type_defs import DisassociateGatewayFromServerInp
 Required fields:
 
 - `GatewayArn`: `str`
+
+<a id="disassociategatewayfromserveroutputtypedef"></a>
 
 ## DisassociateGatewayFromServerOutputTypeDef
 
@@ -163,6 +185,8 @@ Required fields:
 - `GatewayArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="gatewaytypedef"></a>
 
 ## GatewayTypeDef
 
@@ -179,6 +203,8 @@ Optional fields:
 - `HypervisorId`: `str`
 - `LastSeenTime`: `datetime`
 
+<a id="hypervisortypedef"></a>
+
 ## HypervisorTypeDef
 
 ```python
@@ -192,6 +218,8 @@ Optional fields:
 - `KmsKeyArn`: `str`
 - `Name`: `str`
 - `State`: [HypervisorStateType](./literals.md#hypervisorstatetype)
+
+<a id="importhypervisorconfigurationinputrequesttypedef"></a>
 
 ## ImportHypervisorConfigurationInputRequestTypeDef
 
@@ -211,6 +239,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `Username`: `str`
 
+<a id="importhypervisorconfigurationoutputtypedef"></a>
+
 ## ImportHypervisorConfigurationOutputTypeDef
 
 ```python
@@ -223,6 +253,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listgatewaysinputrequesttypedef"></a>
+
 ## ListGatewaysInputRequestTypeDef
 
 ```python
@@ -233,6 +265,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listgatewaysoutputtypedef"></a>
 
 ## ListGatewaysOutputTypeDef
 
@@ -247,6 +281,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listhypervisorsinputrequesttypedef"></a>
+
 ## ListHypervisorsInputRequestTypeDef
 
 ```python
@@ -257,6 +293,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listhypervisorsoutputtypedef"></a>
 
 ## ListHypervisorsOutputTypeDef
 
@@ -272,6 +310,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -281,6 +321,8 @@ from mypy_boto3_backup_gateway.type_defs import ListTagsForResourceInputRequestT
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -295,6 +337,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listvirtualmachinesinputrequesttypedef"></a>
+
 ## ListVirtualMachinesInputRequestTypeDef
 
 ```python
@@ -305,6 +349,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listvirtualmachinesoutputtypedef"></a>
 
 ## ListVirtualMachinesOutputTypeDef
 
@@ -320,6 +366,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -331,6 +379,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putmaintenancestarttimeinputrequesttypedef"></a>
 
 ## PutMaintenanceStartTimeInputRequestTypeDef
 
@@ -349,6 +399,8 @@ Optional fields:
 - `DayOfMonth`: `int`
 - `DayOfWeek`: `int`
 
+<a id="putmaintenancestarttimeoutputtypedef"></a>
+
 ## PutMaintenanceStartTimeOutputTypeDef
 
 ```python
@@ -360,6 +412,8 @@ Required fields:
 - `GatewayArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -375,6 +429,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -385,6 +441,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagresourceoutputtypedef"></a>
 
 ## TagResourceOutputTypeDef
 
@@ -398,6 +456,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -408,6 +468,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="testhypervisorconfigurationinputrequesttypedef"></a>
 
 ## TestHypervisorConfigurationInputRequestTypeDef
 
@@ -425,6 +487,8 @@ Optional fields:
 - `Password`: `str`
 - `Username`: `str`
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -435,6 +499,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="untagresourceoutputtypedef"></a>
 
 ## UntagResourceOutputTypeDef
 
@@ -447,6 +513,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updategatewayinformationinputrequesttypedef"></a>
 
 ## UpdateGatewayInformationInputRequestTypeDef
 
@@ -462,6 +530,8 @@ Optional fields:
 
 - `GatewayDisplayName`: `str`
 
+<a id="updategatewayinformationoutputtypedef"></a>
+
 ## UpdateGatewayInformationOutputTypeDef
 
 ```python
@@ -473,6 +543,8 @@ Required fields:
 - `GatewayArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatehypervisorinputrequesttypedef"></a>
 
 ## UpdateHypervisorInputRequestTypeDef
 
@@ -490,6 +562,8 @@ Optional fields:
 - `Password`: `str`
 - `Username`: `str`
 
+<a id="updatehypervisoroutputtypedef"></a>
+
 ## UpdateHypervisorOutputTypeDef
 
 ```python
@@ -501,6 +575,8 @@ Required fields:
 - `HypervisorArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="virtualmachinetypedef"></a>
 
 ## VirtualMachineTypeDef
 

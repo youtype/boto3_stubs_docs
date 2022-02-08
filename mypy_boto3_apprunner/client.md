@@ -1,3 +1,5 @@
+<a id="apprunnerclient-for-boto3-apprunner-module"></a>
+
 # AppRunnerClient for boto3 AppRunner module
 
 > [Index](..) > [AppRunner](.) > AppRunnerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppRunner](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner)
 type annotations stubs module
-[mypy_boto3_apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
+[mypy-boto3-apprunner](https://pypi.org/project/mypy-boto3-apprunner/).
 
 - [AppRunnerClient for boto3 AppRunner module](#apprunnerclient-for-boto3-apprunner-module)
   - [AppRunnerClient](#apprunnerclient)
@@ -37,6 +39,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_service](#update_service)
 
+<a id="apprunnerclient"></a>
+
 ## AppRunnerClient
 
 Type annotations for `boto3.client("apprunner")`
@@ -44,14 +48,17 @@ Type annotations for `boto3.client("apprunner")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_apprunner.client import AppRunnerClient
 
 def get_apprunner_client() -> AppRunnerClient:
-    return boto3.client("apprunner")
+    return Session().client("apprunner")
 ```
 
 Boto3 documentation:
 [AppRunner.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -74,7 +81,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -86,6 +97,8 @@ Boto3 documentation:
 [AppRunner.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_custom_domain"></a>
 
 ### associate_custom_domain
 
@@ -110,6 +123,8 @@ Keyword-only arguments:
 Returns
 [AssociateCustomDomainResponseTypeDef](./type_defs.md#associatecustomdomainresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -124,6 +139,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_auto_scaling_configuration"></a>
 
 ### create_auto_scaling_configuration
 
@@ -149,6 +166,8 @@ Keyword-only arguments:
 Returns
 [CreateAutoScalingConfigurationResponseTypeDef](./type_defs.md#createautoscalingconfigurationresponsetypedef).
 
+<a id="create_connection"></a>
+
 ### create_connection
 
 Create an App Runner connection resource.
@@ -170,6 +189,8 @@ Keyword-only arguments:
 
 Returns
 [CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
+
+<a id="create_service"></a>
 
 ### create_service
 
@@ -201,6 +222,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
+<a id="delete_auto_scaling_configuration"></a>
+
 ### delete_auto_scaling_configuration
 
 Delete an App Runner automatic scaling configuration resource.
@@ -221,6 +244,8 @@ Keyword-only arguments:
 Returns
 [DeleteAutoScalingConfigurationResponseTypeDef](./type_defs.md#deleteautoscalingconfigurationresponsetypedef).
 
+<a id="delete_connection"></a>
+
 ### delete_connection
 
 Delete an App Runner connection.
@@ -240,6 +265,8 @@ Keyword-only arguments:
 Returns
 [DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
+<a id="delete_service"></a>
+
 ### delete_service
 
 Delete an App Runner service.
@@ -258,6 +285,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
+
+<a id="describe_auto_scaling_configuration"></a>
 
 ### describe_auto_scaling_configuration
 
@@ -279,6 +308,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAutoScalingConfigurationResponseTypeDef](./type_defs.md#describeautoscalingconfigurationresponsetypedef).
+
+<a id="describe_custom_domains"></a>
 
 ### describe_custom_domains
 
@@ -303,6 +334,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomDomainsResponseTypeDef](./type_defs.md#describecustomdomainsresponsetypedef).
 
+<a id="describe_service"></a>
+
 ### describe_service
 
 Return a full description of an App Runner service.
@@ -321,6 +354,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeServiceResponseTypeDef](./type_defs.md#describeserviceresponsetypedef).
+
+<a id="disassociate_custom_domain"></a>
 
 ### disassociate_custom_domain
 
@@ -343,6 +378,8 @@ Keyword-only arguments:
 Returns
 [DisassociateCustomDomainResponseTypeDef](./type_defs.md#disassociatecustomdomainresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -360,6 +397,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_auto_scaling_configurations"></a>
 
 ### list_auto_scaling_configurations
 
@@ -385,6 +424,8 @@ Keyword-only arguments:
 Returns
 [ListAutoScalingConfigurationsResponseTypeDef](./type_defs.md#listautoscalingconfigurationsresponsetypedef).
 
+<a id="list_connections"></a>
+
 ### list_connections
 
 Returns a list of App Runner connections that are associated with your Amazon
@@ -407,6 +448,8 @@ Keyword-only arguments:
 Returns
 [ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
 
+<a id="list_operations"></a>
+
 ### list_operations
 
 Return a list of operations that occurred on an App Runner service.
@@ -427,6 +470,8 @@ Keyword-only arguments:
 
 Returns
 [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
+
+<a id="list_services"></a>
 
 ### list_services
 
@@ -449,6 +494,8 @@ Keyword-only arguments:
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List tags that are associated with for an App Runner resource.
@@ -467,6 +514,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="pause_service"></a>
 
 ### pause_service
 
@@ -487,6 +536,8 @@ Keyword-only arguments:
 Returns
 [PauseServiceResponseTypeDef](./type_defs.md#pauseserviceresponsetypedef).
 
+<a id="resume_service"></a>
+
 ### resume_service
 
 Resume an active App Runner service.
@@ -505,6 +556,8 @@ Keyword-only arguments:
 
 Returns
 [ResumeServiceResponseTypeDef](./type_defs.md#resumeserviceresponsetypedef).
+
+<a id="start_deployment"></a>
 
 ### start_deployment
 
@@ -526,6 +579,8 @@ Keyword-only arguments:
 Returns
 [StartDeploymentResponseTypeDef](./type_defs.md#startdeploymentresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Add tags to, or update the tag values of, an App Runner resource.
@@ -545,6 +600,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Remove tags from an App Runner resource.
@@ -563,6 +620,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_service"></a>
 
 ### update_service
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-iot-module"></a>
+
 # Paginators for boto3 IoT module
 
 > [Index](..) > [IoT](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoT](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iot.html#IoT)
 type annotations stubs module
-[mypy_boto3_iot](https://pypi.org/project/mypy-boto3-iot/).
+[mypy-boto3-iot](https://pypi.org/project/mypy-boto3-iot/).
 
 - [Paginators for boto3 IoT module](#paginators-for-boto3-iot-module)
   - [GetBehaviorModelTrainingSummariesPaginator](#getbehaviormodeltrainingsummariespaginator)
@@ -63,6 +65,8 @@ type annotations stubs module
   - [ListV2LoggingLevelsPaginator](#listv2logginglevelspaginator)
   - [ListViolationEventsPaginator](#listviolationeventspaginator)
 
+<a id="getbehaviormodeltrainingsummariespaginator"></a>
+
 ## GetBehaviorModelTrainingSummariesPaginator
 
 Type annotations for
@@ -71,10 +75,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import GetBehaviorModelTrainingSummariesPaginator
 
 def get_get_behavior_model_training_summaries_paginator() -> GetBehaviorModelTrainingSummariesPaginator:
-    return boto3.client("iot").get_paginator("get_behavior_model_training_summaries")
+    return Session().client("iot").get_paginator("get_behavior_model_training_summaries")
 ```
 
 Boto3 documentation:
@@ -89,6 +95,8 @@ Arguments for `GetBehaviorModelTrainingSummariesPaginator.paginate` method:
 `GetBehaviorModelTrainingSummariesPaginator.paginate` returns
 `_PageIterator`\[[GetBehaviorModelTrainingSummariesResponseTypeDef](./type_defs.md#getbehaviormodeltrainingsummariesresponsetypedef)\].
 
+<a id="listactiveviolationspaginator"></a>
+
 ## ListActiveViolationsPaginator
 
 Type annotations for
@@ -97,10 +105,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListActiveViolationsPaginator
 
 def get_list_active_violations_paginator() -> ListActiveViolationsPaginator:
-    return boto3.client("iot").get_paginator("list_active_violations")
+    return Session().client("iot").get_paginator("list_active_violations")
 ```
 
 Boto3 documentation:
@@ -121,6 +131,8 @@ Arguments for `ListActiveViolationsPaginator.paginate` method:
 `ListActiveViolationsPaginator.paginate` returns
 `_PageIterator`\[[ListActiveViolationsResponseTypeDef](./type_defs.md#listactiveviolationsresponsetypedef)\].
 
+<a id="listattachedpoliciespaginator"></a>
+
 ## ListAttachedPoliciesPaginator
 
 Type annotations for
@@ -129,10 +141,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAttachedPoliciesPaginator
 
 def get_list_attached_policies_paginator() -> ListAttachedPoliciesPaginator:
-    return boto3.client("iot").get_paginator("list_attached_policies")
+    return Session().client("iot").get_paginator("list_attached_policies")
 ```
 
 Boto3 documentation:
@@ -148,6 +162,8 @@ Arguments for `ListAttachedPoliciesPaginator.paginate` method:
 `ListAttachedPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListAttachedPoliciesResponseTypeDef](./type_defs.md#listattachedpoliciesresponsetypedef)\].
 
+<a id="listauditfindingspaginator"></a>
+
 ## ListAuditFindingsPaginator
 
 Type annotations for
@@ -156,10 +172,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAuditFindingsPaginator
 
 def get_list_audit_findings_paginator() -> ListAuditFindingsPaginator:
-    return boto3.client("iot").get_paginator("list_audit_findings")
+    return Session().client("iot").get_paginator("list_audit_findings")
 ```
 
 Boto3 documentation:
@@ -180,6 +198,8 @@ Arguments for `ListAuditFindingsPaginator.paginate` method:
 `ListAuditFindingsPaginator.paginate` returns
 `_PageIterator`\[[ListAuditFindingsResponseTypeDef](./type_defs.md#listauditfindingsresponsetypedef)\].
 
+<a id="listauditmitigationactionsexecutionspaginator"></a>
+
 ## ListAuditMitigationActionsExecutionsPaginator
 
 Type annotations for
@@ -188,10 +208,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAuditMitigationActionsExecutionsPaginator
 
 def get_list_audit_mitigation_actions_executions_paginator() -> ListAuditMitigationActionsExecutionsPaginator:
-    return boto3.client("iot").get_paginator("list_audit_mitigation_actions_executions")
+    return Session().client("iot").get_paginator("list_audit_mitigation_actions_executions")
 ```
 
 Boto3 documentation:
@@ -209,6 +231,8 @@ Arguments for `ListAuditMitigationActionsExecutionsPaginator.paginate` method:
 `ListAuditMitigationActionsExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListAuditMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listauditmitigationactionsexecutionsresponsetypedef)\].
 
+<a id="listauditmitigationactionstaskspaginator"></a>
+
 ## ListAuditMitigationActionsTasksPaginator
 
 Type annotations for
@@ -217,10 +241,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAuditMitigationActionsTasksPaginator
 
 def get_list_audit_mitigation_actions_tasks_paginator() -> ListAuditMitigationActionsTasksPaginator:
-    return boto3.client("iot").get_paginator("list_audit_mitigation_actions_tasks")
+    return Session().client("iot").get_paginator("list_audit_mitigation_actions_tasks")
 ```
 
 Boto3 documentation:
@@ -240,6 +266,8 @@ Arguments for `ListAuditMitigationActionsTasksPaginator.paginate` method:
 `ListAuditMitigationActionsTasksPaginator.paginate` returns
 `_PageIterator`\[[ListAuditMitigationActionsTasksResponseTypeDef](./type_defs.md#listauditmitigationactionstasksresponsetypedef)\].
 
+<a id="listauditsuppressionspaginator"></a>
+
 ## ListAuditSuppressionsPaginator
 
 Type annotations for
@@ -248,10 +276,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAuditSuppressionsPaginator
 
 def get_list_audit_suppressions_paginator() -> ListAuditSuppressionsPaginator:
-    return boto3.client("iot").get_paginator("list_audit_suppressions")
+    return Session().client("iot").get_paginator("list_audit_suppressions")
 ```
 
 Boto3 documentation:
@@ -269,6 +299,8 @@ Arguments for `ListAuditSuppressionsPaginator.paginate` method:
 `ListAuditSuppressionsPaginator.paginate` returns
 `_PageIterator`\[[ListAuditSuppressionsResponseTypeDef](./type_defs.md#listauditsuppressionsresponsetypedef)\].
 
+<a id="listaudittaskspaginator"></a>
+
 ## ListAuditTasksPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_audit_tasks")`.
@@ -276,10 +308,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_audit_tasks")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAuditTasksPaginator
 
 def get_list_audit_tasks_paginator() -> ListAuditTasksPaginator:
-    return boto3.client("iot").get_paginator("list_audit_tasks")
+    return Session().client("iot").get_paginator("list_audit_tasks")
 ```
 
 Boto3 documentation:
@@ -297,6 +331,8 @@ Arguments for `ListAuditTasksPaginator.paginate` method:
 `ListAuditTasksPaginator.paginate` returns
 `_PageIterator`\[[ListAuditTasksResponseTypeDef](./type_defs.md#listaudittasksresponsetypedef)\].
 
+<a id="listauthorizerspaginator"></a>
+
 ## ListAuthorizersPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_authorizers")`.
@@ -304,10 +340,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_authorizers")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListAuthorizersPaginator
 
 def get_list_authorizers_paginator() -> ListAuthorizersPaginator:
-    return boto3.client("iot").get_paginator("list_authorizers")
+    return Session().client("iot").get_paginator("list_authorizers")
 ```
 
 Boto3 documentation:
@@ -323,6 +361,8 @@ Arguments for `ListAuthorizersPaginator.paginate` method:
 `ListAuthorizersPaginator.paginate` returns
 `_PageIterator`\[[ListAuthorizersResponseTypeDef](./type_defs.md#listauthorizersresponsetypedef)\].
 
+<a id="listbillinggroupspaginator"></a>
+
 ## ListBillingGroupsPaginator
 
 Type annotations for
@@ -331,10 +371,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListBillingGroupsPaginator
 
 def get_list_billing_groups_paginator() -> ListBillingGroupsPaginator:
-    return boto3.client("iot").get_paginator("list_billing_groups")
+    return Session().client("iot").get_paginator("list_billing_groups")
 ```
 
 Boto3 documentation:
@@ -349,6 +391,8 @@ Arguments for `ListBillingGroupsPaginator.paginate` method:
 `ListBillingGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListBillingGroupsResponseTypeDef](./type_defs.md#listbillinggroupsresponsetypedef)\].
 
+<a id="listcacertificatespaginator"></a>
+
 ## ListCACertificatesPaginator
 
 Type annotations for
@@ -357,10 +401,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListCACertificatesPaginator
 
 def get_list_ca_certificates_paginator() -> ListCACertificatesPaginator:
-    return boto3.client("iot").get_paginator("list_ca_certificates")
+    return Session().client("iot").get_paginator("list_ca_certificates")
 ```
 
 Boto3 documentation:
@@ -375,6 +421,8 @@ Arguments for `ListCACertificatesPaginator.paginate` method:
 `ListCACertificatesPaginator.paginate` returns
 `_PageIterator`\[[ListCACertificatesResponseTypeDef](./type_defs.md#listcacertificatesresponsetypedef)\].
 
+<a id="listcertificatespaginator"></a>
+
 ## ListCertificatesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_certificates")`.
@@ -382,10 +430,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_certificates")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListCertificatesPaginator
 
 def get_list_certificates_paginator() -> ListCertificatesPaginator:
-    return boto3.client("iot").get_paginator("list_certificates")
+    return Session().client("iot").get_paginator("list_certificates")
 ```
 
 Boto3 documentation:
@@ -400,6 +450,8 @@ Arguments for `ListCertificatesPaginator.paginate` method:
 `ListCertificatesPaginator.paginate` returns
 `_PageIterator`\[[ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef)\].
 
+<a id="listcertificatesbycapaginator"></a>
+
 ## ListCertificatesByCAPaginator
 
 Type annotations for
@@ -408,10 +460,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListCertificatesByCAPaginator
 
 def get_list_certificates_by_ca_paginator() -> ListCertificatesByCAPaginator:
-    return boto3.client("iot").get_paginator("list_certificates_by_ca")
+    return Session().client("iot").get_paginator("list_certificates_by_ca")
 ```
 
 Boto3 documentation:
@@ -427,6 +481,8 @@ Arguments for `ListCertificatesByCAPaginator.paginate` method:
 `ListCertificatesByCAPaginator.paginate` returns
 `_PageIterator`\[[ListCertificatesByCAResponseTypeDef](./type_defs.md#listcertificatesbycaresponsetypedef)\].
 
+<a id="listcustommetricspaginator"></a>
+
 ## ListCustomMetricsPaginator
 
 Type annotations for
@@ -435,10 +491,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListCustomMetricsPaginator
 
 def get_list_custom_metrics_paginator() -> ListCustomMetricsPaginator:
-    return boto3.client("iot").get_paginator("list_custom_metrics")
+    return Session().client("iot").get_paginator("list_custom_metrics")
 ```
 
 Boto3 documentation:
@@ -452,6 +510,8 @@ Arguments for `ListCustomMetricsPaginator.paginate` method:
 `ListCustomMetricsPaginator.paginate` returns
 `_PageIterator`\[[ListCustomMetricsResponseTypeDef](./type_defs.md#listcustommetricsresponsetypedef)\].
 
+<a id="listdetectmitigationactionsexecutionspaginator"></a>
+
 ## ListDetectMitigationActionsExecutionsPaginator
 
 Type annotations for
@@ -460,10 +520,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListDetectMitigationActionsExecutionsPaginator
 
 def get_list_detect_mitigation_actions_executions_paginator() -> ListDetectMitigationActionsExecutionsPaginator:
-    return boto3.client("iot").get_paginator("list_detect_mitigation_actions_executions")
+    return Session().client("iot").get_paginator("list_detect_mitigation_actions_executions")
 ```
 
 Boto3 documentation:
@@ -482,6 +544,8 @@ Arguments for `ListDetectMitigationActionsExecutionsPaginator.paginate` method:
 `ListDetectMitigationActionsExecutionsPaginator.paginate` returns
 `_PageIterator`\[[ListDetectMitigationActionsExecutionsResponseTypeDef](./type_defs.md#listdetectmitigationactionsexecutionsresponsetypedef)\].
 
+<a id="listdetectmitigationactionstaskspaginator"></a>
+
 ## ListDetectMitigationActionsTasksPaginator
 
 Type annotations for
@@ -490,10 +554,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListDetectMitigationActionsTasksPaginator
 
 def get_list_detect_mitigation_actions_tasks_paginator() -> ListDetectMitigationActionsTasksPaginator:
-    return boto3.client("iot").get_paginator("list_detect_mitigation_actions_tasks")
+    return Session().client("iot").get_paginator("list_detect_mitigation_actions_tasks")
 ```
 
 Boto3 documentation:
@@ -509,6 +575,8 @@ Arguments for `ListDetectMitigationActionsTasksPaginator.paginate` method:
 `ListDetectMitigationActionsTasksPaginator.paginate` returns
 `_PageIterator`\[[ListDetectMitigationActionsTasksResponseTypeDef](./type_defs.md#listdetectmitigationactionstasksresponsetypedef)\].
 
+<a id="listdimensionspaginator"></a>
+
 ## ListDimensionsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_dimensions")`.
@@ -516,10 +584,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_dimensions")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListDimensionsPaginator
 
 def get_list_dimensions_paginator() -> ListDimensionsPaginator:
-    return boto3.client("iot").get_paginator("list_dimensions")
+    return Session().client("iot").get_paginator("list_dimensions")
 ```
 
 Boto3 documentation:
@@ -533,6 +603,8 @@ Arguments for `ListDimensionsPaginator.paginate` method:
 `ListDimensionsPaginator.paginate` returns
 `_PageIterator`\[[ListDimensionsResponseTypeDef](./type_defs.md#listdimensionsresponsetypedef)\].
 
+<a id="listdomainconfigurationspaginator"></a>
+
 ## ListDomainConfigurationsPaginator
 
 Type annotations for
@@ -541,10 +613,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListDomainConfigurationsPaginator
 
 def get_list_domain_configurations_paginator() -> ListDomainConfigurationsPaginator:
-    return boto3.client("iot").get_paginator("list_domain_configurations")
+    return Session().client("iot").get_paginator("list_domain_configurations")
 ```
 
 Boto3 documentation:
@@ -559,6 +633,8 @@ Arguments for `ListDomainConfigurationsPaginator.paginate` method:
 `ListDomainConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListDomainConfigurationsResponseTypeDef](./type_defs.md#listdomainconfigurationsresponsetypedef)\].
 
+<a id="listfleetmetricspaginator"></a>
+
 ## ListFleetMetricsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_fleet_metrics")`.
@@ -566,10 +642,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_fleet_metrics")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListFleetMetricsPaginator
 
 def get_list_fleet_metrics_paginator() -> ListFleetMetricsPaginator:
-    return boto3.client("iot").get_paginator("list_fleet_metrics")
+    return Session().client("iot").get_paginator("list_fleet_metrics")
 ```
 
 Boto3 documentation:
@@ -583,6 +661,8 @@ Arguments for `ListFleetMetricsPaginator.paginate` method:
 `ListFleetMetricsPaginator.paginate` returns
 `_PageIterator`\[[ListFleetMetricsResponseTypeDef](./type_defs.md#listfleetmetricsresponsetypedef)\].
 
+<a id="listindicespaginator"></a>
+
 ## ListIndicesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_indices")`.
@@ -590,10 +670,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_indices")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListIndicesPaginator
 
 def get_list_indices_paginator() -> ListIndicesPaginator:
-    return boto3.client("iot").get_paginator("list_indices")
+    return Session().client("iot").get_paginator("list_indices")
 ```
 
 Boto3 documentation:
@@ -607,6 +689,8 @@ Arguments for `ListIndicesPaginator.paginate` method:
 `ListIndicesPaginator.paginate` returns
 `_PageIterator`\[[ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef)\].
 
+<a id="listjobexecutionsforjobpaginator"></a>
+
 ## ListJobExecutionsForJobPaginator
 
 Type annotations for
@@ -615,10 +699,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListJobExecutionsForJobPaginator
 
 def get_list_job_executions_for_job_paginator() -> ListJobExecutionsForJobPaginator:
-    return boto3.client("iot").get_paginator("list_job_executions_for_job")
+    return Session().client("iot").get_paginator("list_job_executions_for_job")
 ```
 
 Boto3 documentation:
@@ -634,6 +720,8 @@ Arguments for `ListJobExecutionsForJobPaginator.paginate` method:
 `ListJobExecutionsForJobPaginator.paginate` returns
 `_PageIterator`\[[ListJobExecutionsForJobResponseTypeDef](./type_defs.md#listjobexecutionsforjobresponsetypedef)\].
 
+<a id="listjobexecutionsforthingpaginator"></a>
+
 ## ListJobExecutionsForThingPaginator
 
 Type annotations for
@@ -642,10 +730,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListJobExecutionsForThingPaginator
 
 def get_list_job_executions_for_thing_paginator() -> ListJobExecutionsForThingPaginator:
-    return boto3.client("iot").get_paginator("list_job_executions_for_thing")
+    return Session().client("iot").get_paginator("list_job_executions_for_thing")
 ```
 
 Boto3 documentation:
@@ -663,6 +753,8 @@ Arguments for `ListJobExecutionsForThingPaginator.paginate` method:
 `ListJobExecutionsForThingPaginator.paginate` returns
 `_PageIterator`\[[ListJobExecutionsForThingResponseTypeDef](./type_defs.md#listjobexecutionsforthingresponsetypedef)\].
 
+<a id="listjobtemplatespaginator"></a>
+
 ## ListJobTemplatesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_job_templates")`.
@@ -670,10 +762,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_job_templates")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListJobTemplatesPaginator
 
 def get_list_job_templates_paginator() -> ListJobTemplatesPaginator:
-    return boto3.client("iot").get_paginator("list_job_templates")
+    return Session().client("iot").get_paginator("list_job_templates")
 ```
 
 Boto3 documentation:
@@ -687,6 +781,8 @@ Arguments for `ListJobTemplatesPaginator.paginate` method:
 `ListJobTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListJobTemplatesResponseTypeDef](./type_defs.md#listjobtemplatesresponsetypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_jobs")`.
@@ -694,10 +790,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("iot").get_paginator("list_jobs")
+    return Session().client("iot").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:
@@ -716,6 +814,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
+<a id="listmitigationactionspaginator"></a>
+
 ## ListMitigationActionsPaginator
 
 Type annotations for
@@ -724,10 +824,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListMitigationActionsPaginator
 
 def get_list_mitigation_actions_paginator() -> ListMitigationActionsPaginator:
-    return boto3.client("iot").get_paginator("list_mitigation_actions")
+    return Session().client("iot").get_paginator("list_mitigation_actions")
 ```
 
 Boto3 documentation:
@@ -743,6 +845,8 @@ Arguments for `ListMitigationActionsPaginator.paginate` method:
 `ListMitigationActionsPaginator.paginate` returns
 `_PageIterator`\[[ListMitigationActionsResponseTypeDef](./type_defs.md#listmitigationactionsresponsetypedef)\].
 
+<a id="listotaupdatespaginator"></a>
+
 ## ListOTAUpdatesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_ota_updates")`.
@@ -750,10 +854,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_ota_updates")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListOTAUpdatesPaginator
 
 def get_list_ota_updates_paginator() -> ListOTAUpdatesPaginator:
-    return boto3.client("iot").get_paginator("list_ota_updates")
+    return Session().client("iot").get_paginator("list_ota_updates")
 ```
 
 Boto3 documentation:
@@ -768,6 +874,8 @@ Arguments for `ListOTAUpdatesPaginator.paginate` method:
 `ListOTAUpdatesPaginator.paginate` returns
 `_PageIterator`\[[ListOTAUpdatesResponseTypeDef](./type_defs.md#listotaupdatesresponsetypedef)\].
 
+<a id="listoutgoingcertificatespaginator"></a>
+
 ## ListOutgoingCertificatesPaginator
 
 Type annotations for
@@ -776,10 +884,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListOutgoingCertificatesPaginator
 
 def get_list_outgoing_certificates_paginator() -> ListOutgoingCertificatesPaginator:
-    return boto3.client("iot").get_paginator("list_outgoing_certificates")
+    return Session().client("iot").get_paginator("list_outgoing_certificates")
 ```
 
 Boto3 documentation:
@@ -794,6 +904,8 @@ Arguments for `ListOutgoingCertificatesPaginator.paginate` method:
 `ListOutgoingCertificatesPaginator.paginate` returns
 `_PageIterator`\[[ListOutgoingCertificatesResponseTypeDef](./type_defs.md#listoutgoingcertificatesresponsetypedef)\].
 
+<a id="listpoliciespaginator"></a>
+
 ## ListPoliciesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_policies")`.
@@ -801,10 +913,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_policies")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListPoliciesPaginator
 
 def get_list_policies_paginator() -> ListPoliciesPaginator:
-    return boto3.client("iot").get_paginator("list_policies")
+    return Session().client("iot").get_paginator("list_policies")
 ```
 
 Boto3 documentation:
@@ -819,6 +933,8 @@ Arguments for `ListPoliciesPaginator.paginate` method:
 `ListPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListPoliciesResponseTypeDef](./type_defs.md#listpoliciesresponsetypedef)\].
 
+<a id="listpolicyprincipalspaginator"></a>
+
 ## ListPolicyPrincipalsPaginator
 
 Type annotations for
@@ -827,10 +943,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListPolicyPrincipalsPaginator
 
 def get_list_policy_principals_paginator() -> ListPolicyPrincipalsPaginator:
-    return boto3.client("iot").get_paginator("list_policy_principals")
+    return Session().client("iot").get_paginator("list_policy_principals")
 ```
 
 Boto3 documentation:
@@ -846,6 +964,8 @@ Arguments for `ListPolicyPrincipalsPaginator.paginate` method:
 `ListPolicyPrincipalsPaginator.paginate` returns
 `_PageIterator`\[[ListPolicyPrincipalsResponseTypeDef](./type_defs.md#listpolicyprincipalsresponsetypedef)\].
 
+<a id="listprincipalpoliciespaginator"></a>
+
 ## ListPrincipalPoliciesPaginator
 
 Type annotations for
@@ -854,10 +974,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListPrincipalPoliciesPaginator
 
 def get_list_principal_policies_paginator() -> ListPrincipalPoliciesPaginator:
-    return boto3.client("iot").get_paginator("list_principal_policies")
+    return Session().client("iot").get_paginator("list_principal_policies")
 ```
 
 Boto3 documentation:
@@ -873,6 +995,8 @@ Arguments for `ListPrincipalPoliciesPaginator.paginate` method:
 `ListPrincipalPoliciesPaginator.paginate` returns
 `_PageIterator`\[[ListPrincipalPoliciesResponseTypeDef](./type_defs.md#listprincipalpoliciesresponsetypedef)\].
 
+<a id="listprincipalthingspaginator"></a>
+
 ## ListPrincipalThingsPaginator
 
 Type annotations for
@@ -881,10 +1005,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListPrincipalThingsPaginator
 
 def get_list_principal_things_paginator() -> ListPrincipalThingsPaginator:
-    return boto3.client("iot").get_paginator("list_principal_things")
+    return Session().client("iot").get_paginator("list_principal_things")
 ```
 
 Boto3 documentation:
@@ -899,6 +1025,8 @@ Arguments for `ListPrincipalThingsPaginator.paginate` method:
 `ListPrincipalThingsPaginator.paginate` returns
 `_PageIterator`\[[ListPrincipalThingsResponseTypeDef](./type_defs.md#listprincipalthingsresponsetypedef)\].
 
+<a id="listprovisioningtemplateversionspaginator"></a>
+
 ## ListProvisioningTemplateVersionsPaginator
 
 Type annotations for
@@ -907,10 +1035,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListProvisioningTemplateVersionsPaginator
 
 def get_list_provisioning_template_versions_paginator() -> ListProvisioningTemplateVersionsPaginator:
-    return boto3.client("iot").get_paginator("list_provisioning_template_versions")
+    return Session().client("iot").get_paginator("list_provisioning_template_versions")
 ```
 
 Boto3 documentation:
@@ -925,6 +1055,8 @@ Arguments for `ListProvisioningTemplateVersionsPaginator.paginate` method:
 `ListProvisioningTemplateVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListProvisioningTemplateVersionsResponseTypeDef](./type_defs.md#listprovisioningtemplateversionsresponsetypedef)\].
 
+<a id="listprovisioningtemplatespaginator"></a>
+
 ## ListProvisioningTemplatesPaginator
 
 Type annotations for
@@ -933,10 +1065,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListProvisioningTemplatesPaginator
 
 def get_list_provisioning_templates_paginator() -> ListProvisioningTemplatesPaginator:
-    return boto3.client("iot").get_paginator("list_provisioning_templates")
+    return Session().client("iot").get_paginator("list_provisioning_templates")
 ```
 
 Boto3 documentation:
@@ -950,6 +1084,8 @@ Arguments for `ListProvisioningTemplatesPaginator.paginate` method:
 `ListProvisioningTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListProvisioningTemplatesResponseTypeDef](./type_defs.md#listprovisioningtemplatesresponsetypedef)\].
 
+<a id="listrolealiasespaginator"></a>
+
 ## ListRoleAliasesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_role_aliases")`.
@@ -957,10 +1093,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_role_aliases")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListRoleAliasesPaginator
 
 def get_list_role_aliases_paginator() -> ListRoleAliasesPaginator:
-    return boto3.client("iot").get_paginator("list_role_aliases")
+    return Session().client("iot").get_paginator("list_role_aliases")
 ```
 
 Boto3 documentation:
@@ -975,6 +1113,8 @@ Arguments for `ListRoleAliasesPaginator.paginate` method:
 `ListRoleAliasesPaginator.paginate` returns
 `_PageIterator`\[[ListRoleAliasesResponseTypeDef](./type_defs.md#listrolealiasesresponsetypedef)\].
 
+<a id="listscheduledauditspaginator"></a>
+
 ## ListScheduledAuditsPaginator
 
 Type annotations for
@@ -983,10 +1123,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListScheduledAuditsPaginator
 
 def get_list_scheduled_audits_paginator() -> ListScheduledAuditsPaginator:
-    return boto3.client("iot").get_paginator("list_scheduled_audits")
+    return Session().client("iot").get_paginator("list_scheduled_audits")
 ```
 
 Boto3 documentation:
@@ -1000,6 +1142,8 @@ Arguments for `ListScheduledAuditsPaginator.paginate` method:
 `ListScheduledAuditsPaginator.paginate` returns
 `_PageIterator`\[[ListScheduledAuditsResponseTypeDef](./type_defs.md#listscheduledauditsresponsetypedef)\].
 
+<a id="listsecurityprofilespaginator"></a>
+
 ## ListSecurityProfilesPaginator
 
 Type annotations for
@@ -1008,10 +1152,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListSecurityProfilesPaginator
 
 def get_list_security_profiles_paginator() -> ListSecurityProfilesPaginator:
-    return boto3.client("iot").get_paginator("list_security_profiles")
+    return Session().client("iot").get_paginator("list_security_profiles")
 ```
 
 Boto3 documentation:
@@ -1027,6 +1173,8 @@ Arguments for `ListSecurityProfilesPaginator.paginate` method:
 `ListSecurityProfilesPaginator.paginate` returns
 `_PageIterator`\[[ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef)\].
 
+<a id="listsecurityprofilesfortargetpaginator"></a>
+
 ## ListSecurityProfilesForTargetPaginator
 
 Type annotations for
@@ -1035,10 +1183,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListSecurityProfilesForTargetPaginator
 
 def get_list_security_profiles_for_target_paginator() -> ListSecurityProfilesForTargetPaginator:
-    return boto3.client("iot").get_paginator("list_security_profiles_for_target")
+    return Session().client("iot").get_paginator("list_security_profiles_for_target")
 ```
 
 Boto3 documentation:
@@ -1054,6 +1204,8 @@ Arguments for `ListSecurityProfilesForTargetPaginator.paginate` method:
 `ListSecurityProfilesForTargetPaginator.paginate` returns
 `_PageIterator`\[[ListSecurityProfilesForTargetResponseTypeDef](./type_defs.md#listsecurityprofilesfortargetresponsetypedef)\].
 
+<a id="liststreamspaginator"></a>
+
 ## ListStreamsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_streams")`.
@@ -1061,10 +1213,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_streams")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListStreamsPaginator
 
 def get_list_streams_paginator() -> ListStreamsPaginator:
-    return boto3.client("iot").get_paginator("list_streams")
+    return Session().client("iot").get_paginator("list_streams")
 ```
 
 Boto3 documentation:
@@ -1079,6 +1233,8 @@ Arguments for `ListStreamsPaginator.paginate` method:
 `ListStreamsPaginator.paginate` returns
 `_PageIterator`\[[ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -1087,10 +1243,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("iot").get_paginator("list_tags_for_resource")
+    return Session().client("iot").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -1105,6 +1263,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="listtargetsforpolicypaginator"></a>
+
 ## ListTargetsForPolicyPaginator
 
 Type annotations for
@@ -1113,10 +1273,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListTargetsForPolicyPaginator
 
 def get_list_targets_for_policy_paginator() -> ListTargetsForPolicyPaginator:
-    return boto3.client("iot").get_paginator("list_targets_for_policy")
+    return Session().client("iot").get_paginator("list_targets_for_policy")
 ```
 
 Boto3 documentation:
@@ -1131,6 +1293,8 @@ Arguments for `ListTargetsForPolicyPaginator.paginate` method:
 `ListTargetsForPolicyPaginator.paginate` returns
 `_PageIterator`\[[ListTargetsForPolicyResponseTypeDef](./type_defs.md#listtargetsforpolicyresponsetypedef)\].
 
+<a id="listtargetsforsecurityprofilepaginator"></a>
+
 ## ListTargetsForSecurityProfilePaginator
 
 Type annotations for
@@ -1139,10 +1303,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListTargetsForSecurityProfilePaginator
 
 def get_list_targets_for_security_profile_paginator() -> ListTargetsForSecurityProfilePaginator:
-    return boto3.client("iot").get_paginator("list_targets_for_security_profile")
+    return Session().client("iot").get_paginator("list_targets_for_security_profile")
 ```
 
 Boto3 documentation:
@@ -1157,6 +1323,8 @@ Arguments for `ListTargetsForSecurityProfilePaginator.paginate` method:
 `ListTargetsForSecurityProfilePaginator.paginate` returns
 `_PageIterator`\[[ListTargetsForSecurityProfileResponseTypeDef](./type_defs.md#listtargetsforsecurityprofileresponsetypedef)\].
 
+<a id="listthinggroupspaginator"></a>
+
 ## ListThingGroupsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_thing_groups")`.
@@ -1164,10 +1332,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_groups")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingGroupsPaginator
 
 def get_list_thing_groups_paginator() -> ListThingGroupsPaginator:
-    return boto3.client("iot").get_paginator("list_thing_groups")
+    return Session().client("iot").get_paginator("list_thing_groups")
 ```
 
 Boto3 documentation:
@@ -1184,6 +1354,8 @@ Arguments for `ListThingGroupsPaginator.paginate` method:
 `ListThingGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListThingGroupsResponseTypeDef](./type_defs.md#listthinggroupsresponsetypedef)\].
 
+<a id="listthinggroupsforthingpaginator"></a>
+
 ## ListThingGroupsForThingPaginator
 
 Type annotations for
@@ -1192,10 +1364,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingGroupsForThingPaginator
 
 def get_list_thing_groups_for_thing_paginator() -> ListThingGroupsForThingPaginator:
-    return boto3.client("iot").get_paginator("list_thing_groups_for_thing")
+    return Session().client("iot").get_paginator("list_thing_groups_for_thing")
 ```
 
 Boto3 documentation:
@@ -1210,6 +1384,8 @@ Arguments for `ListThingGroupsForThingPaginator.paginate` method:
 `ListThingGroupsForThingPaginator.paginate` returns
 `_PageIterator`\[[ListThingGroupsForThingResponseTypeDef](./type_defs.md#listthinggroupsforthingresponsetypedef)\].
 
+<a id="listthingprincipalspaginator"></a>
+
 ## ListThingPrincipalsPaginator
 
 Type annotations for
@@ -1218,10 +1394,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingPrincipalsPaginator
 
 def get_list_thing_principals_paginator() -> ListThingPrincipalsPaginator:
-    return boto3.client("iot").get_paginator("list_thing_principals")
+    return Session().client("iot").get_paginator("list_thing_principals")
 ```
 
 Boto3 documentation:
@@ -1236,6 +1414,8 @@ Arguments for `ListThingPrincipalsPaginator.paginate` method:
 `ListThingPrincipalsPaginator.paginate` returns
 `_PageIterator`\[[ListThingPrincipalsResponseTypeDef](./type_defs.md#listthingprincipalsresponsetypedef)\].
 
+<a id="listthingregistrationtaskreportspaginator"></a>
+
 ## ListThingRegistrationTaskReportsPaginator
 
 Type annotations for
@@ -1244,10 +1424,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingRegistrationTaskReportsPaginator
 
 def get_list_thing_registration_task_reports_paginator() -> ListThingRegistrationTaskReportsPaginator:
-    return boto3.client("iot").get_paginator("list_thing_registration_task_reports")
+    return Session().client("iot").get_paginator("list_thing_registration_task_reports")
 ```
 
 Boto3 documentation:
@@ -1263,6 +1445,8 @@ Arguments for `ListThingRegistrationTaskReportsPaginator.paginate` method:
 `ListThingRegistrationTaskReportsPaginator.paginate` returns
 `_PageIterator`\[[ListThingRegistrationTaskReportsResponseTypeDef](./type_defs.md#listthingregistrationtaskreportsresponsetypedef)\].
 
+<a id="listthingregistrationtaskspaginator"></a>
+
 ## ListThingRegistrationTasksPaginator
 
 Type annotations for
@@ -1271,10 +1455,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingRegistrationTasksPaginator
 
 def get_list_thing_registration_tasks_paginator() -> ListThingRegistrationTasksPaginator:
-    return boto3.client("iot").get_paginator("list_thing_registration_tasks")
+    return Session().client("iot").get_paginator("list_thing_registration_tasks")
 ```
 
 Boto3 documentation:
@@ -1289,6 +1475,8 @@ Arguments for `ListThingRegistrationTasksPaginator.paginate` method:
 `ListThingRegistrationTasksPaginator.paginate` returns
 `_PageIterator`\[[ListThingRegistrationTasksResponseTypeDef](./type_defs.md#listthingregistrationtasksresponsetypedef)\].
 
+<a id="listthingtypespaginator"></a>
+
 ## ListThingTypesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_thing_types")`.
@@ -1296,10 +1484,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_thing_types")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingTypesPaginator
 
 def get_list_thing_types_paginator() -> ListThingTypesPaginator:
-    return boto3.client("iot").get_paginator("list_thing_types")
+    return Session().client("iot").get_paginator("list_thing_types")
 ```
 
 Boto3 documentation:
@@ -1314,6 +1504,8 @@ Arguments for `ListThingTypesPaginator.paginate` method:
 `ListThingTypesPaginator.paginate` returns
 `_PageIterator`\[[ListThingTypesResponseTypeDef](./type_defs.md#listthingtypesresponsetypedef)\].
 
+<a id="listthingspaginator"></a>
+
 ## ListThingsPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_things")`.
@@ -1321,10 +1513,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_things")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingsPaginator
 
 def get_list_things_paginator() -> ListThingsPaginator:
-    return boto3.client("iot").get_paginator("list_things")
+    return Session().client("iot").get_paginator("list_things")
 ```
 
 Boto3 documentation:
@@ -1342,6 +1536,8 @@ Arguments for `ListThingsPaginator.paginate` method:
 `ListThingsPaginator.paginate` returns
 `_PageIterator`\[[ListThingsResponseTypeDef](./type_defs.md#listthingsresponsetypedef)\].
 
+<a id="listthingsinbillinggrouppaginator"></a>
+
 ## ListThingsInBillingGroupPaginator
 
 Type annotations for
@@ -1350,10 +1546,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingsInBillingGroupPaginator
 
 def get_list_things_in_billing_group_paginator() -> ListThingsInBillingGroupPaginator:
-    return boto3.client("iot").get_paginator("list_things_in_billing_group")
+    return Session().client("iot").get_paginator("list_things_in_billing_group")
 ```
 
 Boto3 documentation:
@@ -1368,6 +1566,8 @@ Arguments for `ListThingsInBillingGroupPaginator.paginate` method:
 `ListThingsInBillingGroupPaginator.paginate` returns
 `_PageIterator`\[[ListThingsInBillingGroupResponseTypeDef](./type_defs.md#listthingsinbillinggroupresponsetypedef)\].
 
+<a id="listthingsinthinggrouppaginator"></a>
+
 ## ListThingsInThingGroupPaginator
 
 Type annotations for
@@ -1376,10 +1576,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListThingsInThingGroupPaginator
 
 def get_list_things_in_thing_group_paginator() -> ListThingsInThingGroupPaginator:
-    return boto3.client("iot").get_paginator("list_things_in_thing_group")
+    return Session().client("iot").get_paginator("list_things_in_thing_group")
 ```
 
 Boto3 documentation:
@@ -1395,6 +1597,8 @@ Arguments for `ListThingsInThingGroupPaginator.paginate` method:
 `ListThingsInThingGroupPaginator.paginate` returns
 `_PageIterator`\[[ListThingsInThingGroupResponseTypeDef](./type_defs.md#listthingsinthinggroupresponsetypedef)\].
 
+<a id="listtopicruledestinationspaginator"></a>
+
 ## ListTopicRuleDestinationsPaginator
 
 Type annotations for
@@ -1403,10 +1607,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListTopicRuleDestinationsPaginator
 
 def get_list_topic_rule_destinations_paginator() -> ListTopicRuleDestinationsPaginator:
-    return boto3.client("iot").get_paginator("list_topic_rule_destinations")
+    return Session().client("iot").get_paginator("list_topic_rule_destinations")
 ```
 
 Boto3 documentation:
@@ -1420,6 +1626,8 @@ Arguments for `ListTopicRuleDestinationsPaginator.paginate` method:
 `ListTopicRuleDestinationsPaginator.paginate` returns
 `_PageIterator`\[[ListTopicRuleDestinationsResponseTypeDef](./type_defs.md#listtopicruledestinationsresponsetypedef)\].
 
+<a id="listtopicrulespaginator"></a>
+
 ## ListTopicRulesPaginator
 
 Type annotations for `boto3.client("iot").get_paginator("list_topic_rules")`.
@@ -1427,10 +1635,12 @@ Type annotations for `boto3.client("iot").get_paginator("list_topic_rules")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListTopicRulesPaginator
 
 def get_list_topic_rules_paginator() -> ListTopicRulesPaginator:
-    return boto3.client("iot").get_paginator("list_topic_rules")
+    return Session().client("iot").get_paginator("list_topic_rules")
 ```
 
 Boto3 documentation:
@@ -1446,6 +1656,8 @@ Arguments for `ListTopicRulesPaginator.paginate` method:
 `ListTopicRulesPaginator.paginate` returns
 `_PageIterator`\[[ListTopicRulesResponseTypeDef](./type_defs.md#listtopicrulesresponsetypedef)\].
 
+<a id="listv2logginglevelspaginator"></a>
+
 ## ListV2LoggingLevelsPaginator
 
 Type annotations for
@@ -1454,10 +1666,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListV2LoggingLevelsPaginator
 
 def get_list_v2_logging_levels_paginator() -> ListV2LoggingLevelsPaginator:
-    return boto3.client("iot").get_paginator("list_v2_logging_levels")
+    return Session().client("iot").get_paginator("list_v2_logging_levels")
 ```
 
 Boto3 documentation:
@@ -1472,6 +1686,8 @@ Arguments for `ListV2LoggingLevelsPaginator.paginate` method:
 `ListV2LoggingLevelsPaginator.paginate` returns
 `_PageIterator`\[[ListV2LoggingLevelsResponseTypeDef](./type_defs.md#listv2logginglevelsresponsetypedef)\].
 
+<a id="listviolationeventspaginator"></a>
+
 ## ListViolationEventsPaginator
 
 Type annotations for
@@ -1480,10 +1696,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iot.paginator import ListViolationEventsPaginator
 
 def get_list_violation_events_paginator() -> ListViolationEventsPaginator:
-    return boto3.client("iot").get_paginator("list_violation_events")
+    return Session().client("iot").get_paginator("list_violation_events")
 ```
 
 Boto3 documentation:

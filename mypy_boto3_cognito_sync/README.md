@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cognitosync-module"></a>
+
 # Type annotations for boto3 CognitoSync module
 
 > [Index](..) > CognitoSync
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CognitoSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-sync.html#CognitoSync)
 type annotations stubs module
-[mypy_boto3_cognito_sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
+[mypy-boto3-cognito-sync](https://pypi.org/project/mypy-boto3-cognito-sync/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cognito-sync]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cognito-sync]'
+
+# standalone installation
 pip install mypy-boto3-cognito-sync
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-cognito-sync
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="cognitosyncclient"></a>
 
 ## CognitoSyncClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cognito_sync.client import CognitoSyncClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -52,6 +66,8 @@ from mypy_boto3_cognito_sync.client import CognitoSyncClient
 - [unsubscribe_from_dataset](./client.md#unsubscribe_from_dataset)
 - [update_records](./client.md#update_records)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CognitoSyncClient [exceptions](./client.md#exceptions)
@@ -71,6 +87,8 @@ CognitoSyncClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TooManyRequestsException
 
+<a id="literals"></a>
+
 ## Literals
 
 Type annotations for [literals](./literals.md) used in methods and schema.
@@ -86,6 +104,8 @@ from mypy_boto3_cognito_sync.literals import BulkPublishStatusType, ...
 - [PlatformType](./literals.md#platformtype)
 - [StreamingStatusType](./literals.md#streamingstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

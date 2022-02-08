@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-prometheusservice-module"></a>
+
 # Type annotations for boto3 PrometheusService module
 
 > [Index](..) > PrometheusService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [PrometheusService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amp.html#PrometheusService)
 type annotations stubs module
-[mypy_boto3_amp](https://pypi.org/project/mypy-boto3-amp/).
+[mypy-boto3-amp](https://pypi.org/project/mypy-boto3-amp/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[amp]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[amp]'
+
+# standalone installation
 pip install mypy-boto3-amp
 ```
 
@@ -20,6 +30,8 @@ pip install mypy-boto3-amp
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="prometheusserviceclient"></a>
+
 ## PrometheusServiceClient
 
 Type annotations for `boto3.client("amp")` as
@@ -30,6 +42,8 @@ Can be used directly:
 ```python
 from mypy_boto3_amp.client import PrometheusServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -56,6 +70,8 @@ from mypy_boto3_amp.client import PrometheusServiceClient
 - [untag_resource](./client.md#untag_resource)
 - [update_workspace_alias](./client.md#update_workspace_alias)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PrometheusServiceClient [exceptions](./client.md#exceptions)
@@ -69,6 +85,8 @@ PrometheusServiceClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -77,11 +95,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.paginators import ListRuleGroupsNamespacesPaginator, ...
+from mypy_boto3_amp.paginator import ListRuleGroupsNamespacesPaginator, ...
 ```
 
 - [ListRuleGroupsNamespacesPaginator](./paginators.md#listrulegroupsnamespacespaginator)
 - [ListWorkspacesPaginator](./paginators.md#listworkspacespaginator)
+
+<a id="waiters"></a>
 
 ## Waiters
 
@@ -91,11 +111,13 @@ Type annotations for [waiters](./waiters.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amp.waiters import WorkspaceActiveWaiter, ...
+from mypy_boto3_amp.waiter import WorkspaceActiveWaiter, ...
 ```
 
 - [WorkspaceActiveWaiter](./waiters.md#workspaceactivewaiter)
 - [WorkspaceDeletedWaiter](./waiters.md#workspacedeletedwaiter)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -117,6 +139,8 @@ from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType, ...
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

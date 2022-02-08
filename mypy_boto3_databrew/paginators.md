@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-gluedatabrew-module"></a>
+
 # Paginators for boto3 GlueDataBrew module
 
 > [Index](..) > [GlueDataBrew](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GlueDataBrew](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/databrew.html#GlueDataBrew)
 type annotations stubs module
-[mypy_boto3_databrew](https://pypi.org/project/mypy-boto3-databrew/).
+[mypy-boto3-databrew](https://pypi.org/project/mypy-boto3-databrew/).
 
 - [Paginators for boto3 GlueDataBrew module](#paginators-for-boto3-gluedatabrew-module)
   - [ListDatasetsPaginator](#listdatasetspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListRulesetsPaginator](#listrulesetspaginator)
   - [ListSchedulesPaginator](#listschedulespaginator)
 
+<a id="listdatasetspaginator"></a>
+
 ## ListDatasetsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_datasets")`.
@@ -24,10 +28,12 @@ Type annotations for `boto3.client("databrew").get_paginator("list_datasets")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
-    return boto3.client("databrew").get_paginator("list_datasets")
+    return Session().client("databrew").get_paginator("list_datasets")
 ```
 
 Boto3 documentation:
@@ -41,6 +47,8 @@ Arguments for `ListDatasetsPaginator.paginate` method:
 `ListDatasetsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
+<a id="listjobrunspaginator"></a>
+
 ## ListJobRunsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_job_runs")`.
@@ -48,10 +56,12 @@ Type annotations for `boto3.client("databrew").get_paginator("list_job_runs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListJobRunsPaginator
 
 def get_list_job_runs_paginator() -> ListJobRunsPaginator:
-    return boto3.client("databrew").get_paginator("list_job_runs")
+    return Session().client("databrew").get_paginator("list_job_runs")
 ```
 
 Boto3 documentation:
@@ -66,6 +76,8 @@ Arguments for `ListJobRunsPaginator.paginate` method:
 `ListJobRunsPaginator.paginate` returns
 `_PageIterator`\[[ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef)\].
 
+<a id="listjobspaginator"></a>
+
 ## ListJobsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_jobs")`.
@@ -73,10 +85,12 @@ Type annotations for `boto3.client("databrew").get_paginator("list_jobs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListJobsPaginator
 
 def get_list_jobs_paginator() -> ListJobsPaginator:
-    return boto3.client("databrew").get_paginator("list_jobs")
+    return Session().client("databrew").get_paginator("list_jobs")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListJobsPaginator.paginate` method:
 `ListJobsPaginator.paginate` returns
 `_PageIterator`\[[ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef)\].
 
+<a id="listprojectspaginator"></a>
+
 ## ListProjectsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_projects")`.
@@ -99,10 +115,12 @@ Type annotations for `boto3.client("databrew").get_paginator("list_projects")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListProjectsPaginator
 
 def get_list_projects_paginator() -> ListProjectsPaginator:
-    return boto3.client("databrew").get_paginator("list_projects")
+    return Session().client("databrew").get_paginator("list_projects")
 ```
 
 Boto3 documentation:
@@ -116,6 +134,8 @@ Arguments for `ListProjectsPaginator.paginate` method:
 `ListProjectsPaginator.paginate` returns
 `_PageIterator`\[[ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef)\].
 
+<a id="listrecipeversionspaginator"></a>
+
 ## ListRecipeVersionsPaginator
 
 Type annotations for
@@ -124,10 +144,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListRecipeVersionsPaginator
 
 def get_list_recipe_versions_paginator() -> ListRecipeVersionsPaginator:
-    return boto3.client("databrew").get_paginator("list_recipe_versions")
+    return Session().client("databrew").get_paginator("list_recipe_versions")
 ```
 
 Boto3 documentation:
@@ -142,6 +164,8 @@ Arguments for `ListRecipeVersionsPaginator.paginate` method:
 `ListRecipeVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListRecipeVersionsResponseTypeDef](./type_defs.md#listrecipeversionsresponsetypedef)\].
 
+<a id="listrecipespaginator"></a>
+
 ## ListRecipesPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_recipes")`.
@@ -149,10 +173,12 @@ Type annotations for `boto3.client("databrew").get_paginator("list_recipes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListRecipesPaginator
 
 def get_list_recipes_paginator() -> ListRecipesPaginator:
-    return boto3.client("databrew").get_paginator("list_recipes")
+    return Session().client("databrew").get_paginator("list_recipes")
 ```
 
 Boto3 documentation:
@@ -167,6 +193,8 @@ Arguments for `ListRecipesPaginator.paginate` method:
 `ListRecipesPaginator.paginate` returns
 `_PageIterator`\[[ListRecipesResponseTypeDef](./type_defs.md#listrecipesresponsetypedef)\].
 
+<a id="listrulesetspaginator"></a>
+
 ## ListRulesetsPaginator
 
 Type annotations for `boto3.client("databrew").get_paginator("list_rulesets")`.
@@ -174,10 +202,12 @@ Type annotations for `boto3.client("databrew").get_paginator("list_rulesets")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListRulesetsPaginator
 
 def get_list_rulesets_paginator() -> ListRulesetsPaginator:
-    return boto3.client("databrew").get_paginator("list_rulesets")
+    return Session().client("databrew").get_paginator("list_rulesets")
 ```
 
 Boto3 documentation:
@@ -192,6 +222,8 @@ Arguments for `ListRulesetsPaginator.paginate` method:
 `ListRulesetsPaginator.paginate` returns
 `_PageIterator`\[[ListRulesetsResponseTypeDef](./type_defs.md#listrulesetsresponsetypedef)\].
 
+<a id="listschedulespaginator"></a>
+
 ## ListSchedulesPaginator
 
 Type annotations for
@@ -200,10 +232,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_databrew.paginator import ListSchedulesPaginator
 
 def get_list_schedules_paginator() -> ListSchedulesPaginator:
-    return boto3.client("databrew").get_paginator("list_schedules")
+    return Session().client("databrew").get_paginator("list_schedules")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="sagemakerruntimeclient-for-boto3-sagemakerruntime-module"></a>
+
 # SageMakerRuntimeClient for boto3 SageMakerRuntime module
 
 > [Index](..) > [SageMakerRuntime](.) > SageMakerRuntimeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
+[mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 - [SageMakerRuntimeClient for boto3 SageMakerRuntime module](#sagemakerruntimeclient-for-boto3-sagemakerruntime-module)
   - [SageMakerRuntimeClient](#sagemakerruntimeclient)
@@ -17,6 +19,8 @@ type annotations stubs module
     - [invoke_endpoint](#invoke_endpoint)
     - [invoke_endpoint_async](#invoke_endpoint_async)
 
+<a id="sagemakerruntimeclient"></a>
+
 ## SageMakerRuntimeClient
 
 Type annotations for `boto3.client("sagemaker-runtime")`
@@ -24,14 +28,17 @@ Type annotations for `boto3.client("sagemaker-runtime")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_sagemaker_runtime.client import SageMakerRuntimeClient
 
 def get_sagemaker-runtime_client() -> SageMakerRuntimeClient:
-    return boto3.client("sagemaker-runtime")
+    return Session().client("sagemaker-runtime")
 ```
 
 Boto3 documentation:
 [SageMakerRuntime.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -55,7 +62,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailable`
 - `Exceptions.ValidationError`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -67,6 +78,8 @@ Boto3 documentation:
 [SageMakerRuntime.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -82,6 +95,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -101,6 +116,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="invoke_endpoint"></a>
 
 ### invoke_endpoint
 
@@ -131,6 +148,8 @@ Keyword-only arguments:
 
 Returns
 [InvokeEndpointOutputTypeDef](./type_defs.md#invokeendpointoutputtypedef).
+
+<a id="invoke_endpoint_async"></a>
 
 ### invoke_endpoint_async
 

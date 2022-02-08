@@ -1,3 +1,5 @@
+<a id="batchclient-for-boto3-batch-module"></a>
+
 # BatchClient for boto3 Batch module
 
 > [Index](..) > [Batch](.) > BatchClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
 type annotations stubs module
-[mypy_boto3_batch](https://pypi.org/project/mypy-boto3-batch/).
+[mypy-boto3-batch](https://pypi.org/project/mypy-boto3-batch/).
 
 - [BatchClient for boto3 Batch module](#batchclient-for-boto3-batch-module)
   - [BatchClient](#batchclient)
@@ -40,6 +42,8 @@ type annotations stubs module
     - [update_scheduling_policy](#update_scheduling_policy)
     - [get_paginator](#get_paginator)
 
+<a id="batchclient"></a>
+
 ## BatchClient
 
 Type annotations for `boto3.client("batch")`
@@ -47,14 +51,17 @@ Type annotations for `boto3.client("batch")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_batch.client import BatchClient
 
 def get_batch_client() -> BatchClient:
-    return boto3.client("batch")
+    return Session().client("batch")
 ```
 
 Boto3 documentation:
 [Batch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -74,7 +81,11 @@ Exceptions:
 - `Exceptions.ClientException`
 - `Exceptions.ServerException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -86,6 +97,8 @@ Boto3 documentation:
 [Batch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -101,6 +114,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_job"></a>
 
 ### cancel_job
 
@@ -120,6 +135,8 @@ Keyword-only arguments:
 - `reason`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_compute_environment"></a>
 
 ### create_compute_environment
 
@@ -147,6 +164,8 @@ Keyword-only arguments:
 Returns
 [CreateComputeEnvironmentResponseTypeDef](./type_defs.md#createcomputeenvironmentresponsetypedef).
 
+<a id="create_job_queue"></a>
+
 ### create_job_queue
 
 Creates an Batch job queue.
@@ -173,6 +192,8 @@ Keyword-only arguments:
 Returns
 [CreateJobQueueResponseTypeDef](./type_defs.md#createjobqueueresponsetypedef).
 
+<a id="create_scheduling_policy"></a>
+
 ### create_scheduling_policy
 
 Creates an Batch scheduling policy.
@@ -195,6 +216,8 @@ Keyword-only arguments:
 Returns
 [CreateSchedulingPolicyResponseTypeDef](./type_defs.md#createschedulingpolicyresponsetypedef).
 
+<a id="delete_compute_environment"></a>
+
 ### delete_compute_environment
 
 Deletes an Batch compute environment.
@@ -212,6 +235,8 @@ Keyword-only arguments:
 - `computeEnvironment`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_job_queue"></a>
 
 ### delete_job_queue
 
@@ -231,6 +256,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_scheduling_policy"></a>
+
 ### delete_scheduling_policy
 
 Deletes the specified scheduling policy.
@@ -249,6 +276,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_job_definition"></a>
+
 ### deregister_job_definition
 
 Deregisters an Batch job definition.
@@ -266,6 +295,8 @@ Keyword-only arguments:
 - `jobDefinition`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_compute_environments"></a>
 
 ### describe_compute_environments
 
@@ -288,6 +319,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeComputeEnvironmentsResponseTypeDef](./type_defs.md#describecomputeenvironmentsresponsetypedef).
+
+<a id="describe_job_definitions"></a>
 
 ### describe_job_definitions
 
@@ -312,6 +345,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobDefinitionsResponseTypeDef](./type_defs.md#describejobdefinitionsresponsetypedef).
 
+<a id="describe_job_queues"></a>
+
 ### describe_job_queues
 
 Describes one or more of your job queues.
@@ -333,6 +368,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobQueuesResponseTypeDef](./type_defs.md#describejobqueuesresponsetypedef).
 
+<a id="describe_jobs"></a>
+
 ### describe_jobs
 
 .
@@ -351,6 +388,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
+
+<a id="describe_scheduling_policies"></a>
 
 ### describe_scheduling_policies
 
@@ -372,6 +411,8 @@ Keyword-only arguments:
 Returns
 [DescribeSchedulingPoliciesResponseTypeDef](./type_defs.md#describeschedulingpoliciesresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -389,6 +430,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_jobs"></a>
 
 ### list_jobs
 
@@ -415,6 +458,8 @@ Keyword-only arguments:
 
 Returns [ListJobsResponseTypeDef](./type_defs.md#listjobsresponsetypedef).
 
+<a id="list_scheduling_policies"></a>
+
 ### list_scheduling_policies
 
 Returns a list of Batch scheduling policies.
@@ -435,6 +480,8 @@ Keyword-only arguments:
 Returns
 [ListSchedulingPoliciesResponseTypeDef](./type_defs.md#listschedulingpoliciesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for an Batch resource.
@@ -453,6 +500,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="register_job_definition"></a>
 
 ### register_job_definition
 
@@ -486,6 +535,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterJobDefinitionResponseTypeDef](./type_defs.md#registerjobdefinitionresponsetypedef).
+
+<a id="submit_job"></a>
 
 ### submit_job
 
@@ -521,6 +572,8 @@ Keyword-only arguments:
 
 Returns [SubmitJobResponseTypeDef](./type_defs.md#submitjobresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
@@ -539,6 +592,8 @@ Keyword-only arguments:
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="terminate_job"></a>
 
 ### terminate_job
 
@@ -559,6 +614,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from an Batch resource.
@@ -577,6 +634,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_compute_environment"></a>
 
 ### update_compute_environment
 
@@ -602,6 +661,8 @@ Keyword-only arguments:
 Returns
 [UpdateComputeEnvironmentResponseTypeDef](./type_defs.md#updatecomputeenvironmentresponsetypedef).
 
+<a id="update_job_queue"></a>
+
 ### update_job_queue
 
 Updates a job queue.
@@ -626,6 +687,8 @@ Keyword-only arguments:
 Returns
 [UpdateJobQueueResponseTypeDef](./type_defs.md#updatejobqueueresponsetypedef).
 
+<a id="update_scheduling_policy"></a>
+
 ### update_scheduling_policy
 
 Updates a scheduling policy.
@@ -645,6 +708,8 @@ Keyword-only arguments:
   [FairsharePolicyTypeDef](./type_defs.md#fairsharepolicytypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

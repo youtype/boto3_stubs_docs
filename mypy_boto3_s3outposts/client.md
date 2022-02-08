@@ -1,3 +1,5 @@
+<a id="s3outpostsclient-for-boto3-s3outposts-module"></a>
+
 # S3OutpostsClient for boto3 S3Outposts module
 
 > [Index](..) > [S3Outposts](.) > S3OutpostsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [S3Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts)
 type annotations stubs module
-[mypy_boto3_s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
+[mypy-boto3-s3outposts](https://pypi.org/project/mypy-boto3-s3outposts/).
 
 - [S3OutpostsClient for boto3 S3Outposts module](#s3outpostsclient-for-boto3-s3outposts-module)
   - [S3OutpostsClient](#s3outpostsclient)
@@ -19,6 +21,8 @@ type annotations stubs module
     - [list_endpoints](#list_endpoints)
     - [get_paginator](#get_paginator)
 
+<a id="s3outpostsclient"></a>
+
 ## S3OutpostsClient
 
 Type annotations for `boto3.client("s3outposts")`
@@ -26,14 +30,17 @@ Type annotations for `boto3.client("s3outposts")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_s3outposts.client import S3OutpostsClient
 
 def get_s3outposts_client() -> S3OutpostsClient:
-    return boto3.client("s3outposts")
+    return Session().client("s3outposts")
 ```
 
 Boto3 documentation:
 [S3Outposts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [S3Outposts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_endpoint"></a>
 
 ### create_endpoint
 
@@ -108,6 +123,8 @@ Keyword-only arguments:
 Returns
 [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef).
 
+<a id="delete_endpoint"></a>
+
 ### delete_endpoint
 
 Amazon S3 on Outposts Access Points simplify managing data access at scale for
@@ -125,6 +142,8 @@ Keyword-only arguments:
 
 - `EndpointId`: `str` *(required)*
 - `OutpostId`: `str` *(required)*
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -144,6 +163,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_endpoints"></a>
 
 ### list_endpoints
 
@@ -165,6 +186,8 @@ Keyword-only arguments:
 
 Returns
 [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-health-module"></a>
+
 # Paginators for boto3 Health module
 
 > [Index](..) > [Health](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Health](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health)
 type annotations stubs module
-[mypy_boto3_health](https://pypi.org/project/mypy-boto3-health/).
+[mypy-boto3-health](https://pypi.org/project/mypy-boto3-health/).
 
 - [Paginators for boto3 Health module](#paginators-for-boto3-health-module)
   - [DescribeAffectedAccountsForOrganizationPaginator](#describeaffectedaccountsfororganizationpaginator)
@@ -16,6 +18,8 @@ type annotations stubs module
   - [DescribeEventsPaginator](#describeeventspaginator)
   - [DescribeEventsForOrganizationPaginator](#describeeventsfororganizationpaginator)
 
+<a id="describeaffectedaccountsfororganizationpaginator"></a>
+
 ## DescribeAffectedAccountsForOrganizationPaginator
 
 Type annotations for
@@ -24,10 +28,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeAffectedAccountsForOrganizationPaginator
 
 def get_describe_affected_accounts_for_organization_paginator() -> DescribeAffectedAccountsForOrganizationPaginator:
-    return boto3.client("health").get_paginator("describe_affected_accounts_for_organization")
+    return Session().client("health").get_paginator("describe_affected_accounts_for_organization")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ method:
 `DescribeAffectedAccountsForOrganizationPaginator.paginate` returns
 `_PageIterator`\[[DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef)\].
 
+<a id="describeaffectedentitiespaginator"></a>
+
 ## DescribeAffectedEntitiesPaginator
 
 Type annotations for
@@ -51,10 +59,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeAffectedEntitiesPaginator
 
 def get_describe_affected_entities_paginator() -> DescribeAffectedEntitiesPaginator:
-    return boto3.client("health").get_paginator("describe_affected_entities")
+    return Session().client("health").get_paginator("describe_affected_entities")
 ```
 
 Boto3 documentation:
@@ -71,6 +81,8 @@ Arguments for `DescribeAffectedEntitiesPaginator.paginate` method:
 `DescribeAffectedEntitiesPaginator.paginate` returns
 `_PageIterator`\[[DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef)\].
 
+<a id="describeaffectedentitiesfororganizationpaginator"></a>
+
 ## DescribeAffectedEntitiesForOrganizationPaginator
 
 Type annotations for
@@ -79,10 +91,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeAffectedEntitiesForOrganizationPaginator
 
 def get_describe_affected_entities_for_organization_paginator() -> DescribeAffectedEntitiesForOrganizationPaginator:
-    return boto3.client("health").get_paginator("describe_affected_entities_for_organization")
+    return Session().client("health").get_paginator("describe_affected_entities_for_organization")
 ```
 
 Boto3 documentation:
@@ -101,6 +115,8 @@ method:
 `DescribeAffectedEntitiesForOrganizationPaginator.paginate` returns
 `_PageIterator`\[[DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef)\].
 
+<a id="describeeventaggregatespaginator"></a>
+
 ## DescribeEventAggregatesPaginator
 
 Type annotations for
@@ -109,10 +125,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeEventAggregatesPaginator
 
 def get_describe_event_aggregates_paginator() -> DescribeEventAggregatesPaginator:
-    return boto3.client("health").get_paginator("describe_event_aggregates")
+    return Session().client("health").get_paginator("describe_event_aggregates")
 ```
 
 Boto3 documentation:
@@ -130,6 +148,8 @@ Arguments for `DescribeEventAggregatesPaginator.paginate` method:
 `DescribeEventAggregatesPaginator.paginate` returns
 `_PageIterator`\[[DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef)\].
 
+<a id="describeeventtypespaginator"></a>
+
 ## DescribeEventTypesPaginator
 
 Type annotations for
@@ -138,10 +158,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeEventTypesPaginator
 
 def get_describe_event_types_paginator() -> DescribeEventTypesPaginator:
-    return boto3.client("health").get_paginator("describe_event_types")
+    return Session().client("health").get_paginator("describe_event_types")
 ```
 
 Boto3 documentation:
@@ -157,6 +179,8 @@ Arguments for `DescribeEventTypesPaginator.paginate` method:
 `DescribeEventTypesPaginator.paginate` returns
 `_PageIterator`\[[DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef)\].
 
+<a id="describeeventspaginator"></a>
+
 ## DescribeEventsPaginator
 
 Type annotations for `boto3.client("health").get_paginator("describe_events")`.
@@ -164,10 +188,12 @@ Type annotations for `boto3.client("health").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
-    return boto3.client("health").get_paginator("describe_events")
+    return Session().client("health").get_paginator("describe_events")
 ```
 
 Boto3 documentation:
@@ -183,6 +209,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 `DescribeEventsPaginator.paginate` returns
 `_PageIterator`\[[DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef)\].
 
+<a id="describeeventsfororganizationpaginator"></a>
+
 ## DescribeEventsForOrganizationPaginator
 
 Type annotations for
@@ -191,10 +219,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_health.paginator import DescribeEventsForOrganizationPaginator
 
 def get_describe_events_for_organization_paginator() -> DescribeEventsForOrganizationPaginator:
-    return boto3.client("health").get_paginator("describe_events_for_organization")
+    return Session().client("health").get_paginator("describe_events_for_organization")
 ```
 
 Boto3 documentation:

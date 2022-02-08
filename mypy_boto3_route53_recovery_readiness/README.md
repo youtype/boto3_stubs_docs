@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-route53recoveryreadiness-module"></a>
+
 # Type annotations for boto3 Route53RecoveryReadiness module
 
 > [Index](..) > Route53RecoveryReadiness
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Route53RecoveryReadiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-readiness.html#Route53RecoveryReadiness)
 type annotations stubs module
-[mypy_boto3_route53_recovery_readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
+[mypy-boto3-route53-recovery-readiness](https://pypi.org/project/mypy-boto3-route53-recovery-readiness/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[route53-recovery-readiness]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[route53-recovery-readiness]'
+
+# standalone installation
 pip install mypy-boto3-route53-recovery-readiness
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-route53-recovery-readiness
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="route53recoveryreadinessclient"></a>
+
 ## Route53RecoveryReadinessClient
 
 Type annotations for `boto3.client("route53-recovery-readiness")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_route53_recovery_readiness.client import Route53RecoveryReadinessClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -69,6 +83,8 @@ from mypy_boto3_route53_recovery_readiness.client import Route53RecoveryReadines
 - [update_recovery_group](./client.md#update_recovery_group)
 - [update_resource_set](./client.md#update_resource_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 Route53RecoveryReadinessClient [exceptions](./client.md#exceptions)
@@ -81,6 +97,8 @@ Route53RecoveryReadinessClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -89,7 +107,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_route53_recovery_readiness.paginators import GetCellReadinessSummaryPaginator, ...
+from mypy_boto3_route53_recovery_readiness.paginator import GetCellReadinessSummaryPaginator, ...
 ```
 
 - [GetCellReadinessSummaryPaginator](./paginators.md#getcellreadinesssummarypaginator)
@@ -102,6 +120,8 @@ from mypy_boto3_route53_recovery_readiness.paginators import GetCellReadinessSum
 - [ListRecoveryGroupsPaginator](./paginators.md#listrecoverygroupspaginator)
 - [ListResourceSetsPaginator](./paginators.md#listresourcesetspaginator)
 - [ListRulesPaginator](./paginators.md#listrulespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -126,6 +146,8 @@ from mypy_boto3_route53_recovery_readiness.literals import GetCellReadinessSumma
 - [ReadinessType](./literals.md#readinesstype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

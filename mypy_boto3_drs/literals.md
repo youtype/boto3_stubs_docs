@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-drs-module"></a>
+
 # Literals for boto3 drs module
 
 > [Index](..) > [drs](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
 type annotations stubs module
-[mypy_boto3_drs](https://pypi.org/project/mypy-boto3-drs/).
+[mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
 
 - [Literals for boto3 drs module](#literals-for-boto3-drs-module)
   - [DataReplicationErrorStringType](#datareplicationerrorstringtype)
@@ -42,6 +44,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="datareplicationerrorstringtype"></a>
+
 ## DataReplicationErrorStringType
 
 ```python
@@ -65,6 +69,8 @@ Values:
 - `SNAPSHOTS_FAILURE`
 - `UNSTABLE_NETWORK`
 
+<a id="datareplicationinitiationstepnametype"></a>
+
 ## DataReplicationInitiationStepNameType
 
 ```python
@@ -85,6 +91,8 @@ Values:
 - `START_DATA_TRANSFER`
 - `WAIT`
 
+<a id="datareplicationinitiationstepstatustype"></a>
+
 ## DataReplicationInitiationStepStatusType
 
 ```python
@@ -98,6 +106,8 @@ Values:
 - `NOT_STARTED`
 - `SKIPPED`
 - `SUCCEEDED`
+
+<a id="datareplicationstatetype"></a>
 
 ## DataReplicationStateType
 
@@ -118,6 +128,8 @@ Values:
 - `STALLED`
 - `STOPPED`
 
+<a id="describejoblogitemspaginatorname"></a>
+
 ## DescribeJobLogItemsPaginatorName
 
 ```python
@@ -127,6 +139,8 @@ from mypy_boto3_drs.literals import DescribeJobLogItemsPaginatorName
 Values:
 
 - `describe_job_log_items`
+
+<a id="describejobspaginatorname"></a>
 
 ## DescribeJobsPaginatorName
 
@@ -138,6 +152,8 @@ Values:
 
 - `describe_jobs`
 
+<a id="describerecoveryinstancespaginatorname"></a>
+
 ## DescribeRecoveryInstancesPaginatorName
 
 ```python
@@ -147,6 +163,8 @@ from mypy_boto3_drs.literals import DescribeRecoveryInstancesPaginatorName
 Values:
 
 - `describe_recovery_instances`
+
+<a id="describerecoverysnapshotspaginatorname"></a>
 
 ## DescribeRecoverySnapshotsPaginatorName
 
@@ -158,6 +176,8 @@ Values:
 
 - `describe_recovery_snapshots`
 
+<a id="describereplicationconfigurationtemplatespaginatorname"></a>
+
 ## DescribeReplicationConfigurationTemplatesPaginatorName
 
 ```python
@@ -168,6 +188,8 @@ Values:
 
 - `describe_replication_configuration_templates`
 
+<a id="describesourceserverspaginatorname"></a>
+
 ## DescribeSourceServersPaginatorName
 
 ```python
@@ -177,6 +199,8 @@ from mypy_boto3_drs.literals import DescribeSourceServersPaginatorName
 Values:
 
 - `describe_source_servers`
+
+<a id="ec2instancestatetype"></a>
 
 ## EC2InstanceStateType
 
@@ -193,6 +217,8 @@ Values:
 - `STOPPED`
 - `STOPPING`
 - `TERMINATED`
+
+<a id="failbackreplicationerrortype"></a>
 
 ## FailbackReplicationErrorType
 
@@ -212,6 +238,8 @@ Values:
 - `NOT_CONVERGING`
 - `UNSTABLE_NETWORK`
 
+<a id="failbackstatetype"></a>
+
 ## FailbackStateType
 
 ```python
@@ -226,6 +254,8 @@ Values:
 - `FAILBACK_NOT_STARTED`
 - `FAILBACK_READY_FOR_LAUNCH`
 
+<a id="initiatedbytype"></a>
+
 ## InitiatedByType
 
 ```python
@@ -239,6 +269,8 @@ Values:
 - `START_DRILL`
 - `START_RECOVERY`
 - `TERMINATE_RECOVERY_INSTANCES`
+
+<a id="joblogeventtype"></a>
 
 ## JobLogEventType
 
@@ -266,6 +298,8 @@ Values:
 - `USING_PREVIOUS_SNAPSHOT`
 - `USING_PREVIOUS_SNAPSHOT_FAILED`
 
+<a id="jobstatustype"></a>
+
 ## JobStatusType
 
 ```python
@@ -278,6 +312,8 @@ Values:
 - `PENDING`
 - `STARTED`
 
+<a id="jobtypetype"></a>
+
 ## JobTypeType
 
 ```python
@@ -288,6 +324,8 @@ Values:
 
 - `LAUNCH`
 - `TERMINATE`
+
+<a id="lastlaunchresulttype"></a>
 
 ## LastLaunchResultType
 
@@ -302,6 +340,8 @@ Values:
 - `PENDING`
 - `SUCCEEDED`
 
+<a id="lastlaunchtypetype"></a>
+
 ## LastLaunchTypeType
 
 ```python
@@ -313,6 +353,8 @@ Values:
 - `DRILL`
 - `RECOVERY`
 
+<a id="launchdispositiontype"></a>
+
 ## LaunchDispositionType
 
 ```python
@@ -323,6 +365,8 @@ Values:
 
 - `STARTED`
 - `STOPPED`
+
+<a id="launchstatustype"></a>
 
 ## LaunchStatusType
 
@@ -338,6 +382,8 @@ Values:
 - `PENDING`
 - `TERMINATED`
 
+<a id="pitpolicyruleunitstype"></a>
+
 ## PITPolicyRuleUnitsType
 
 ```python
@@ -349,6 +395,8 @@ Values:
 - `DAY`
 - `HOUR`
 - `MINUTE`
+
+<a id="recoveryinstancedatareplicationinitiationstepnametype"></a>
 
 ## RecoveryInstanceDataReplicationInitiationStepNameType
 
@@ -366,6 +414,8 @@ Values:
 - `LINK_FAILBACK_CLIENT_WITH_RECOVERY_INSTANCE`
 - `PAIR_AGENT_WITH_REPLICATION_SOFTWARE`
 
+<a id="recoveryinstancedatareplicationinitiationstepstatustype"></a>
+
 ## RecoveryInstanceDataReplicationInitiationStepStatusType
 
 ```python
@@ -379,6 +429,8 @@ Values:
 - `NOT_STARTED`
 - `SKIPPED`
 - `SUCCEEDED`
+
+<a id="recoveryinstancedatareplicationstatetype"></a>
 
 ## RecoveryInstanceDataReplicationStateType
 
@@ -399,6 +451,8 @@ Values:
 - `STALLED`
 - `STOPPED`
 
+<a id="recoverysnapshotsordertype"></a>
+
 ## RecoverySnapshotsOrderType
 
 ```python
@@ -410,6 +464,8 @@ Values:
 - `ASC`
 - `DESC`
 
+<a id="replicationconfigurationdataplaneroutingtype"></a>
+
 ## ReplicationConfigurationDataPlaneRoutingType
 
 ```python
@@ -420,6 +476,8 @@ Values:
 
 - `PRIVATE_IP`
 - `PUBLIC_IP`
+
+<a id="replicationconfigurationdefaultlargestagingdisktypetype"></a>
 
 ## ReplicationConfigurationDefaultLargeStagingDiskTypeType
 
@@ -433,6 +491,8 @@ Values:
 - `GP3`
 - `ST1`
 
+<a id="replicationconfigurationebsencryptiontype"></a>
+
 ## ReplicationConfigurationEbsEncryptionType
 
 ```python
@@ -443,6 +503,8 @@ Values:
 
 - `CUSTOM`
 - `DEFAULT`
+
+<a id="replicationconfigurationreplicateddiskstagingdisktypetype"></a>
 
 ## ReplicationConfigurationReplicatedDiskStagingDiskTypeType
 
@@ -460,6 +522,8 @@ Values:
 - `ST1`
 - `STANDARD`
 
+<a id="targetinstancetyperightsizingmethodtype"></a>
+
 ## TargetInstanceTypeRightSizingMethodType
 
 ```python
@@ -470,6 +534,8 @@ Values:
 
 - `BASIC`
 - `NONE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -778,6 +844,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

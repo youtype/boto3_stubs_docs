@@ -1,3 +1,5 @@
+<a id="cloudwatchlogsclient-for-boto3-cloudwatchlogs-module"></a>
+
 # CloudWatchLogsClient for boto3 CloudWatchLogs module
 
 > [Index](..) > [CloudWatchLogs](.) > CloudWatchLogsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudWatchLogs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs)
 type annotations stubs module
-[mypy_boto3_logs](https://pypi.org/project/mypy-boto3-logs/).
+[mypy-boto3-logs](https://pypi.org/project/mypy-boto3-logs/).
 
 - [CloudWatchLogsClient for boto3 CloudWatchLogs module](#cloudwatchlogsclient-for-boto3-cloudwatchlogs-module)
   - [CloudWatchLogsClient](#cloudwatchlogsclient)
@@ -58,6 +60,8 @@ type annotations stubs module
     - [untag_log_group](#untag_log_group)
     - [get_paginator](#get_paginator)
 
+<a id="cloudwatchlogsclient"></a>
+
 ## CloudWatchLogsClient
 
 Type annotations for `boto3.client("logs")`
@@ -65,14 +69,17 @@ Type annotations for `boto3.client("logs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_logs.client import CloudWatchLogsClient
 
 def get_logs_client() -> CloudWatchLogsClient:
-    return boto3.client("logs")
+    return Session().client("logs")
 ```
 
 Boto3 documentation:
 [CloudWatchLogs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -101,7 +108,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.UnrecognizedClientException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -113,6 +124,8 @@ Boto3 documentation:
 [CloudWatchLogs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/logs.html#CloudWatchLogs.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_kms_key"></a>
 
 ### associate_kms_key
 
@@ -132,6 +145,8 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `kmsKeyId`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -146,6 +161,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_export_task"></a>
 
 ### cancel_export_task
 
@@ -162,6 +179,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
+
+<a id="create_export_task"></a>
 
 ### create_export_task
 
@@ -189,6 +208,8 @@ Keyword-only arguments:
 Returns
 [CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef).
 
+<a id="create_log_group"></a>
+
 ### create_log_group
 
 Creates a log group with the specified name.
@@ -207,6 +228,8 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="create_log_stream"></a>
+
 ### create_log_stream
 
 Creates a log stream for the specified log group.
@@ -223,6 +246,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
+
+<a id="delete_destination"></a>
 
 ### delete_destination
 
@@ -241,6 +266,8 @@ Keyword-only arguments:
 
 - `destinationName`: `str` *(required)*
 
+<a id="delete_log_group"></a>
+
 ### delete_log_group
 
 Deletes the specified log group and permanently deletes all the archived log
@@ -257,6 +284,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
+
+<a id="delete_log_stream"></a>
 
 ### delete_log_stream
 
@@ -276,6 +305,8 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
 
+<a id="delete_metric_filter"></a>
+
 ### delete_metric_filter
 
 Deletes the specified metric filter.
@@ -292,6 +323,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
+
+<a id="delete_query_definition"></a>
 
 ### delete_query_definition
 
@@ -312,6 +345,8 @@ Keyword-only arguments:
 Returns
 [DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef).
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Deletes a resource policy from this account.
@@ -327,6 +362,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `policyName`: `str`
+
+<a id="delete_retention_policy"></a>
 
 ### delete_retention_policy
 
@@ -344,6 +381,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
+<a id="delete_subscription_filter"></a>
+
 ### delete_subscription_filter
 
 Deletes the specified subscription filter.
@@ -360,6 +399,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
+
+<a id="describe_destinations"></a>
 
 ### describe_destinations
 
@@ -381,6 +422,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef).
+
+<a id="describe_export_tasks"></a>
 
 ### describe_export_tasks
 
@@ -405,6 +448,8 @@ Keyword-only arguments:
 Returns
 [DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
 
+<a id="describe_log_groups"></a>
+
 ### describe_log_groups
 
 Lists the specified log groups.
@@ -425,6 +470,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef).
+
+<a id="describe_log_streams"></a>
 
 ### describe_log_streams
 
@@ -450,6 +497,8 @@ Keyword-only arguments:
 Returns
 [DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef).
 
+<a id="describe_metric_filters"></a>
+
 ### describe_metric_filters
 
 Lists the specified metric filters.
@@ -474,6 +523,8 @@ Keyword-only arguments:
 Returns
 [DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef).
 
+<a id="describe_queries"></a>
+
 ### describe_queries
 
 Returns a list of CloudWatch Logs Insights queries that are scheduled,
@@ -497,6 +548,8 @@ Keyword-only arguments:
 Returns
 [DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef).
 
+<a id="describe_query_definitions"></a>
+
 ### describe_query_definitions
 
 This operation returns a paginated list of your saved CloudWatch Logs Insights
@@ -519,6 +572,8 @@ Keyword-only arguments:
 Returns
 [DescribeQueryDefinitionsResponseTypeDef](./type_defs.md#describequerydefinitionsresponsetypedef).
 
+<a id="describe_resource_policies"></a>
+
 ### describe_resource_policies
 
 Lists the resource policies in this account.
@@ -538,6 +593,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef).
+
+<a id="describe_subscription_filters"></a>
 
 ### describe_subscription_filters
 
@@ -562,6 +619,8 @@ Keyword-only arguments:
 Returns
 [DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef).
 
+<a id="disassociate_kms_key"></a>
+
 ### disassociate_kms_key
 
 Disassociates the associated Key Management Service customer master key (CMK)
@@ -578,6 +637,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
+
+<a id="filter_log_events"></a>
 
 ### filter_log_events
 
@@ -606,6 +667,8 @@ Keyword-only arguments:
 Returns
 [FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -623,6 +686,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_log_events"></a>
 
 ### get_log_events
 
@@ -649,6 +714,8 @@ Keyword-only arguments:
 Returns
 [GetLogEventsResponseTypeDef](./type_defs.md#getlogeventsresponsetypedef).
 
+<a id="get_log_group_fields"></a>
+
 ### get_log_group_fields
 
 Returns a list of the fields that are included in log events in the specified
@@ -670,6 +737,8 @@ Keyword-only arguments:
 Returns
 [GetLogGroupFieldsResponseTypeDef](./type_defs.md#getloggroupfieldsresponsetypedef).
 
+<a id="get_log_record"></a>
+
 ### get_log_record
 
 Retrieves all of the fields and values of a single log event.
@@ -688,6 +757,8 @@ Keyword-only arguments:
 
 Returns
 [GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef).
+
+<a id="get_query_results"></a>
 
 ### get_query_results
 
@@ -708,6 +779,8 @@ Keyword-only arguments:
 Returns
 [GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
 
+<a id="list_tags_log_group"></a>
+
 ### list_tags_log_group
 
 Lists the tags for the specified log group.
@@ -726,6 +799,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef).
+
+<a id="put_destination"></a>
 
 ### put_destination
 
@@ -748,6 +823,8 @@ Keyword-only arguments:
 Returns
 [PutDestinationResponseTypeDef](./type_defs.md#putdestinationresponsetypedef).
 
+<a id="put_destination_policy"></a>
+
 ### put_destination_policy
 
 Creates or updates an access policy associated with an existing destination.
@@ -765,6 +842,8 @@ Keyword-only arguments:
 - `destinationName`: `str` *(required)*
 - `accessPolicy`: `str` *(required)*
 - `forceUpdate`: `bool`
+
+<a id="put_log_events"></a>
 
 ### put_log_events
 
@@ -790,6 +869,8 @@ Keyword-only arguments:
 Returns
 [PutLogEventsResponseTypeDef](./type_defs.md#putlogeventsresponsetypedef).
 
+<a id="put_metric_filter"></a>
+
 ### put_metric_filter
 
 Creates or updates a metric filter and associates it with the specified log
@@ -811,6 +892,8 @@ Keyword-only arguments:
 - `metricTransformations`:
   `Sequence`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
   *(required)*
+
+<a id="put_query_definition"></a>
 
 ### put_query_definition
 
@@ -834,6 +917,8 @@ Keyword-only arguments:
 Returns
 [PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef).
 
+<a id="put_resource_policy"></a>
+
 ### put_resource_policy
 
 Creates or updates a resource policy allowing other Amazon Web Services
@@ -855,6 +940,8 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
+<a id="put_retention_policy"></a>
+
 ### put_retention_policy
 
 Sets the retention of the specified log group.
@@ -871,6 +958,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `retentionInDays`: `int` *(required)*
+
+<a id="put_subscription_filter"></a>
 
 ### put_subscription_filter
 
@@ -893,6 +982,8 @@ Keyword-only arguments:
 - `destinationArn`: `str` *(required)*
 - `roleArn`: `str`
 - `distribution`: [DistributionType](./literals.md#distributiontype)
+
+<a id="start_query"></a>
 
 ### start_query
 
@@ -917,6 +1008,8 @@ Keyword-only arguments:
 
 Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
 
+<a id="stop_query"></a>
+
 ### stop_query
 
 Stops a CloudWatch Logs Insights query that is in progress.
@@ -935,6 +1028,8 @@ Keyword-only arguments:
 
 Returns [StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef).
 
+<a id="tag_log_group"></a>
+
 ### tag_log_group
 
 Adds or updates the specified tags for the specified log group.
@@ -951,6 +1046,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="test_metric_filter"></a>
 
 ### test_metric_filter
 
@@ -973,6 +1070,8 @@ Keyword-only arguments:
 Returns
 [TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef).
 
+<a id="untag_log_group"></a>
+
 ### untag_log_group
 
 Removes the specified tags from the specified log group.
@@ -989,6 +1088,8 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 - `tags`: `Sequence`\[`str`\] *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

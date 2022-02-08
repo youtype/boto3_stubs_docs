@@ -1,3 +1,5 @@
+<a id="migrationhubrefactorspacesclient-for-boto3-migrationhubrefactorspaces-module"></a>
+
 # MigrationHubRefactorSpacesClient for boto3 MigrationHubRefactorSpaces module
 
 > [Index](..) > [MigrationHubRefactorSpaces](.) >
@@ -6,7 +8,7 @@
 Auto-generated documentation for
 [MigrationHubRefactorSpaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces)
 type annotations stubs module
-[mypy_boto3_migration_hub_refactor_spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
+[mypy-boto3-migration-hub-refactor-spaces](https://pypi.org/project/mypy-boto3-migration-hub-refactor-spaces/).
 
 - [MigrationHubRefactorSpacesClient for boto3 MigrationHubRefactorSpaces module](#migrationhubrefactorspacesclient-for-boto3-migrationhubrefactorspaces-module)
   - [MigrationHubRefactorSpacesClient](#migrationhubrefactorspacesclient)
@@ -40,6 +42,8 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
+<a id="migrationhubrefactorspacesclient"></a>
+
 ## MigrationHubRefactorSpacesClient
 
 Type annotations for `boto3.client("migration-hub-refactor-spaces")`
@@ -47,14 +51,17 @@ Type annotations for `boto3.client("migration-hub-refactor-spaces")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_migration_hub_refactor_spaces.client import MigrationHubRefactorSpacesClient
 
 def get_migration-hub-refactor-spaces_client() -> MigrationHubRefactorSpacesClient:
-    return boto3.client("migration-hub-refactor-spaces")
+    return Session().client("migration-hub-refactor-spaces")
 ```
 
 Boto3 documentation:
 [MigrationHubRefactorSpaces.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -80,7 +87,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -93,6 +104,8 @@ Boto3 documentation:
 [MigrationHubRefactorSpaces.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migration-hub-refactor-spaces.html#MigrationHubRefactorSpaces.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -109,6 +122,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_application"></a>
 
 ### create_application
 
@@ -138,6 +153,8 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
+<a id="create_environment"></a>
+
 ### create_environment
 
 Creates an Amazon Web Services Migration Hub Refactor Spaces environment.
@@ -162,6 +179,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEnvironmentResponseTypeDef](./type_defs.md#createenvironmentresponsetypedef).
+
+<a id="create_route"></a>
 
 ### create_route
 
@@ -189,6 +208,8 @@ Keyword-only arguments:
 
 Returns
 [CreateRouteResponseTypeDef](./type_defs.md#createrouteresponsetypedef).
+
+<a id="create_service"></a>
 
 ### create_service
 
@@ -222,6 +243,8 @@ Keyword-only arguments:
 Returns
 [CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
+<a id="delete_application"></a>
+
 ### delete_application
 
 Deletes an Amazon Web Services Migration Hub Refactor Spaces application.
@@ -243,6 +266,8 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationResponseTypeDef](./type_defs.md#deleteapplicationresponsetypedef).
 
+<a id="delete_environment"></a>
+
 ### delete_environment
 
 Deletes an Amazon Web Services Migration Hub Refactor Spaces environment.
@@ -263,6 +288,8 @@ Keyword-only arguments:
 Returns
 [DeleteEnvironmentResponseTypeDef](./type_defs.md#deleteenvironmentresponsetypedef).
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Deletes the resource policy set for the environment.
@@ -281,6 +308,8 @@ Keyword-only arguments:
 - `Identifier`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_route"></a>
 
 ### delete_route
 
@@ -304,6 +333,8 @@ Keyword-only arguments:
 Returns
 [DeleteRouteResponseTypeDef](./type_defs.md#deleterouteresponsetypedef).
 
+<a id="delete_service"></a>
+
 ### delete_service
 
 Deletes an Amazon Web Services Migration Hub Refactor Spaces service.
@@ -326,6 +357,8 @@ Keyword-only arguments:
 Returns
 [DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -344,6 +377,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_application"></a>
 
 ### get_application
 
@@ -366,6 +401,8 @@ Keyword-only arguments:
 Returns
 [GetApplicationResponseTypeDef](./type_defs.md#getapplicationresponsetypedef).
 
+<a id="get_environment"></a>
+
 ### get_environment
 
 Gets an Amazon Web Services Migration Hub Refactor Spaces environment.
@@ -385,6 +422,8 @@ Keyword-only arguments:
 
 Returns
 [GetEnvironmentResponseTypeDef](./type_defs.md#getenvironmentresponsetypedef).
+
+<a id="get_resource_policy"></a>
 
 ### get_resource_policy
 
@@ -407,6 +446,8 @@ Keyword-only arguments:
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
+<a id="get_route"></a>
+
 ### get_route
 
 Gets an Amazon Web Services Migration Hub Refactor Spaces route.
@@ -428,6 +469,8 @@ Keyword-only arguments:
 
 Returns [GetRouteResponseTypeDef](./type_defs.md#getrouteresponsetypedef).
 
+<a id="get_service"></a>
+
 ### get_service
 
 Gets an Amazon Web Services Migration Hub Refactor Spaces service.
@@ -448,6 +491,8 @@ Keyword-only arguments:
 - `ServiceIdentifier`: `str` *(required)*
 
 Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
+
+<a id="list_applications"></a>
 
 ### list_applications
 
@@ -472,6 +517,8 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
+<a id="list_environment_vpcs"></a>
+
 ### list_environment_vpcs
 
 Lists all the virtual private clouds (VPCs) that are part of an Amazon Web
@@ -495,6 +542,8 @@ Keyword-only arguments:
 Returns
 [ListEnvironmentVpcsResponseTypeDef](./type_defs.md#listenvironmentvpcsresponsetypedef).
 
+<a id="list_environments"></a>
+
 ### list_environments
 
 Lists Amazon Web Services Migration Hub Refactor Spaces environments owned by a
@@ -516,6 +565,8 @@ Keyword-only arguments:
 
 Returns
 [ListEnvironmentsResponseTypeDef](./type_defs.md#listenvironmentsresponsetypedef).
+
+<a id="list_routes"></a>
 
 ### list_routes
 
@@ -539,6 +590,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListRoutesResponseTypeDef](./type_defs.md#listroutesresponsetypedef).
+
+<a id="list_services"></a>
 
 ### list_services
 
@@ -564,6 +617,8 @@ Keyword-only arguments:
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags of a resource.
@@ -583,6 +638,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="put_resource_policy"></a>
 
 ### put_resource_policy
 
@@ -605,6 +662,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Removes the tags of a given resource.
@@ -625,6 +684,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Adds to or modifies the tags of the given resource.
@@ -644,6 +705,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

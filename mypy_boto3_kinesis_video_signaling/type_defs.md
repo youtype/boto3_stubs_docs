@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module"></a>
+
 # Typed dictionaries for boto3 KinesisVideoSignalingChannels module
 
 > [Index](..) > [KinesisVideoSignalingChannels](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideoSignalingChannels](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis-video-signaling.html#KinesisVideoSignalingChannels)
 type annotations stubs module
-[mypy_boto3_kinesis_video_signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
+[mypy-boto3-kinesis-video-signaling](https://pypi.org/project/mypy-boto3-kinesis-video-signaling/).
 
 - [Typed dictionaries for boto3 KinesisVideoSignalingChannels module](#typed-dictionaries-for-boto3-kinesisvideosignalingchannels-module)
   - [GetIceServerConfigRequestRequestTypeDef](#geticeserverconfigrequestrequesttypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SendAlexaOfferToMasterRequestRequestTypeDef](#sendalexaoffertomasterrequestrequesttypedef)
   - [SendAlexaOfferToMasterResponseTypeDef](#sendalexaoffertomasterresponsetypedef)
+
+<a id="geticeserverconfigrequestrequesttypedef"></a>
 
 ## GetIceServerConfigRequestRequestTypeDef
 
@@ -31,6 +35,8 @@ Optional fields:
 - `Service`: `Literal['TURN']` (see [ServiceType](./literals.md#servicetype))
 - `Username`: `str`
 
+<a id="geticeserverconfigresponsetypedef"></a>
+
 ## GetIceServerConfigResponseTypeDef
 
 ```python
@@ -44,6 +50,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="iceservertypedef"></a>
+
 ## IceServerTypeDef
 
 ```python
@@ -56,6 +64,8 @@ Optional fields:
 - `Username`: `str`
 - `Password`: `str`
 - `Ttl`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -71,6 +81,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="sendalexaoffertomasterrequestrequesttypedef"></a>
+
 ## SendAlexaOfferToMasterRequestRequestTypeDef
 
 ```python
@@ -82,6 +94,8 @@ Required fields:
 - `ChannelARN`: `str`
 - `SenderClientId`: `str`
 - `MessagePayload`: `str`
+
+<a id="sendalexaoffertomasterresponsetypedef"></a>
 
 ## SendAlexaOfferToMasterResponseTypeDef
 

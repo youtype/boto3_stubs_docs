@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-applicationdiscoveryservice-module"></a>
+
 # Type annotations for boto3 ApplicationDiscoveryService module
 
 > [Index](..) > ApplicationDiscoveryService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ApplicationDiscoveryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/discovery.html#ApplicationDiscoveryService)
 type annotations stubs module
-[mypy_boto3_discovery](https://pypi.org/project/mypy-boto3-discovery/).
+[mypy-boto3-discovery](https://pypi.org/project/mypy-boto3-discovery/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[discovery]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[discovery]'
+
+# standalone installation
 pip install mypy-boto3-discovery
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-discovery
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="applicationdiscoveryserviceclient"></a>
+
 ## ApplicationDiscoveryServiceClient
 
 Type annotations for `boto3.client("discovery")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -62,6 +76,8 @@ from mypy_boto3_discovery.client import ApplicationDiscoveryServiceClient
 - [stop_data_collection_by_agent_ids](./client.md#stop_data_collection_by_agent_ids)
 - [update_application](./client.md#update_application)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
@@ -77,6 +93,8 @@ ApplicationDiscoveryServiceClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServerInternalErrorException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -85,7 +103,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_discovery.paginators import DescribeAgentsPaginator, ...
+from mypy_boto3_discovery.paginator import DescribeAgentsPaginator, ...
 ```
 
 - [DescribeAgentsPaginator](./paginators.md#describeagentspaginator)
@@ -94,6 +112,8 @@ from mypy_boto3_discovery.paginators import DescribeAgentsPaginator, ...
 - [DescribeExportTasksPaginator](./paginators.md#describeexporttaskspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
 - [ListConfigurationsPaginator](./paginators.md#listconfigurationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -123,6 +143,8 @@ from mypy_boto3_discovery.literals import AgentStatusType, ...
 - [orderStringType](./literals.md#orderstringtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

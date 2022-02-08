@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-ssmcontacts-module"></a>
+
 # Type annotations for boto3 SSMContacts module
 
 > [Index](..) > SSMContacts
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
 type annotations stubs module
-[mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
+[mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[ssm-contacts]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[ssm-contacts]'
+
+# standalone installation
 pip install mypy-boto3-ssm-contacts
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-ssm-contacts
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="ssmcontactsclient"></a>
+
 ## SSMContactsClient
 
 Type annotations for `boto3.client("ssm-contacts")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_ssm_contacts.client import SSMContactsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -64,6 +78,8 @@ from mypy_boto3_ssm_contacts.client import SSMContactsClient
 - [update_contact](./client.md#update_contact)
 - [update_contact_channel](./client.md#update_contact_channel)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SSMContactsClient [exceptions](./client.md#exceptions)
@@ -78,6 +94,8 @@ SSMContactsClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -86,7 +104,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_ssm_contacts.paginators import ListContactChannelsPaginator, ...
+from mypy_boto3_ssm_contacts.paginator import ListContactChannelsPaginator, ...
 ```
 
 - [ListContactChannelsPaginator](./paginators.md#listcontactchannelspaginator)
@@ -95,6 +113,8 @@ from mypy_boto3_ssm_contacts.paginators import ListContactChannelsPaginator, ...
 - [ListPageReceiptsPaginator](./paginators.md#listpagereceiptspaginator)
 - [ListPagesByContactPaginator](./paginators.md#listpagesbycontactpaginator)
 - [ListPagesByEngagementPaginator](./paginators.md#listpagesbyengagementpaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -120,6 +140,8 @@ from mypy_boto3_ssm_contacts.literals import AcceptCodeValidationType, ...
 - [ReceiptTypeType](./literals.md#receipttypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-kendra-module"></a>
+
 # Type annotations for boto3 kendra module
 
 > [Index](..) > kendra
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
-[mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
+[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[kendra]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[kendra]'
+
+# standalone installation
 pip install mypy-boto3-kendra
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-kendra
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="kendraclient"></a>
+
 ## kendraClient
 
 Type annotations for `boto3.client("kendra")` as [kendraClient](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_kendra.client import kendraClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -89,6 +103,8 @@ from mypy_boto3_kendra.client import kendraClient
 - [update_query_suggestions_config](./client.md#update_query_suggestions_config)
 - [update_thesaurus](./client.md#update_thesaurus)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 kendraClient [exceptions](./client.md#exceptions)
@@ -105,6 +121,8 @@ kendraClient [exceptions](./client.md#exceptions)
 - ServiceQuotaExceededException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -167,6 +185,8 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, .
 - [WarningCodeType](./literals.md#warningcodetype)
 - [WebCrawlerModeType](./literals.md#webcrawlermodetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

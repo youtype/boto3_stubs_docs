@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-cloudfront-module"></a>
+
 # Waiters for boto3 CloudFront module
 
 > [Index](..) > [CloudFront](.) > Waiters
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [CloudFront](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudfront.html#CloudFront)
 type annotations stubs module
-[mypy_boto3_cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
+[mypy-boto3-cloudfront](https://pypi.org/project/mypy-boto3-cloudfront/).
 
 - [Waiters for boto3 CloudFront module](#waiters-for-boto3-cloudfront-module)
   - [DistributionDeployedWaiter](#distributiondeployedwaiter)
   - [InvalidationCompletedWaiter](#invalidationcompletedwaiter)
   - [StreamingDistributionDeployedWaiter](#streamingdistributiondeployedwaiter)
+
+<a id="distributiondeployedwaiter"></a>
 
 ## DistributionDeployedWaiter
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudfront.waiter import DistributionDeployedWaiter
 
 def get_distribution_deployed_waiter() -> DistributionDeployedWaiter:
-    return boto3.client("cloudfront").get_waiter("distribution_deployed")
+    return Session().client("cloudfront").get_waiter("distribution_deployed")
 ```
 
 Boto3 documentation:
@@ -34,6 +40,8 @@ Arguments for `DistributionDeployedWaiter.wait` method:
 - `Id`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="invalidationcompletedwaiter"></a>
+
 ## InvalidationCompletedWaiter
 
 Type annotations for
@@ -42,10 +50,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudfront.waiter import InvalidationCompletedWaiter
 
 def get_invalidation_completed_waiter() -> InvalidationCompletedWaiter:
-    return boto3.client("cloudfront").get_waiter("invalidation_completed")
+    return Session().client("cloudfront").get_waiter("invalidation_completed")
 ```
 
 Boto3 documentation:
@@ -57,6 +67,8 @@ Arguments for `InvalidationCompletedWaiter.wait` method:
 - `Id`: `str` *(required)*
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="streamingdistributiondeployedwaiter"></a>
+
 ## StreamingDistributionDeployedWaiter
 
 Type annotations for
@@ -65,10 +77,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloudfront.waiter import StreamingDistributionDeployedWaiter
 
 def get_streaming_distribution_deployed_waiter() -> StreamingDistributionDeployedWaiter:
-    return boto3.client("cloudfront").get_waiter("streaming_distribution_deployed")
+    return Session().client("cloudfront").get_waiter("streaming_distribution_deployed")
 ```
 
 Boto3 documentation:

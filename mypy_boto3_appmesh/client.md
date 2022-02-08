@@ -1,3 +1,5 @@
+<a id="appmeshclient-for-boto3-appmesh-module"></a>
+
 # AppMeshClient for boto3 AppMesh module
 
 > [Index](..) > [AppMesh](.) > AppMeshClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AppMesh](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh)
 type annotations stubs module
-[mypy_boto3_appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
+[mypy-boto3-appmesh](https://pypi.org/project/mypy-boto3-appmesh/).
 
 - [AppMeshClient for boto3 AppMesh module](#appmeshclient-for-boto3-appmesh-module)
   - [AppMeshClient](#appmeshclient)
@@ -54,6 +56,8 @@ type annotations stubs module
     - [update_virtual_service](#update_virtual_service)
     - [get_paginator](#get_paginator)
 
+<a id="appmeshclient"></a>
+
 ## AppMeshClient
 
 Type annotations for `boto3.client("appmesh")`
@@ -61,14 +65,17 @@ Type annotations for `boto3.client("appmesh")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_appmesh.client import AppMeshClient
 
 def get_appmesh_client() -> AppMeshClient:
-    return boto3.client("appmesh")
+    return Session().client("appmesh")
 ```
 
 Boto3 documentation:
 [AppMesh.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -96,7 +103,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.TooManyTagsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -108,6 +119,8 @@ Boto3 documentation:
 [AppMesh.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appmesh.html#AppMesh.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -123,6 +136,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_gateway_route"></a>
 
 ### create_gateway_route
 
@@ -150,6 +165,8 @@ Keyword-only arguments:
 Returns
 [CreateGatewayRouteOutputTypeDef](./type_defs.md#creategatewayrouteoutputtypedef).
 
+<a id="create_mesh"></a>
+
 ### create_mesh
 
 Creates a service mesh.
@@ -170,6 +187,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns [CreateMeshOutputTypeDef](./type_defs.md#createmeshoutputtypedef).
+
+<a id="create_route"></a>
 
 ### create_route
 
@@ -194,6 +213,8 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[TagRefTypeDef](./type_defs.md#tagreftypedef)\]
 
 Returns [CreateRouteOutputTypeDef](./type_defs.md#createrouteoutputtypedef).
+
+<a id="create_virtual_gateway"></a>
 
 ### create_virtual_gateway
 
@@ -220,6 +241,8 @@ Keyword-only arguments:
 Returns
 [CreateVirtualGatewayOutputTypeDef](./type_defs.md#createvirtualgatewayoutputtypedef).
 
+<a id="create_virtual_node"></a>
+
 ### create_virtual_node
 
 Creates a virtual node within a service mesh.
@@ -244,6 +267,8 @@ Keyword-only arguments:
 
 Returns
 [CreateVirtualNodeOutputTypeDef](./type_defs.md#createvirtualnodeoutputtypedef).
+
+<a id="create_virtual_router"></a>
 
 ### create_virtual_router
 
@@ -270,6 +295,8 @@ Keyword-only arguments:
 Returns
 [CreateVirtualRouterOutputTypeDef](./type_defs.md#createvirtualrouteroutputtypedef).
 
+<a id="create_virtual_service"></a>
+
 ### create_virtual_service
 
 Creates a virtual service within a service mesh.
@@ -295,6 +322,8 @@ Keyword-only arguments:
 Returns
 [CreateVirtualServiceOutputTypeDef](./type_defs.md#createvirtualserviceoutputtypedef).
 
+<a id="delete_gateway_route"></a>
+
 ### delete_gateway_route
 
 Deletes an existing gateway route.
@@ -317,6 +346,8 @@ Keyword-only arguments:
 Returns
 [DeleteGatewayRouteOutputTypeDef](./type_defs.md#deletegatewayrouteoutputtypedef).
 
+<a id="delete_mesh"></a>
+
 ### delete_mesh
 
 Deletes an existing service mesh.
@@ -334,6 +365,8 @@ Keyword-only arguments:
 - `meshName`: `str` *(required)*
 
 Returns [DeleteMeshOutputTypeDef](./type_defs.md#deletemeshoutputtypedef).
+
+<a id="delete_route"></a>
 
 ### delete_route
 
@@ -356,6 +389,8 @@ Keyword-only arguments:
 
 Returns [DeleteRouteOutputTypeDef](./type_defs.md#deleterouteoutputtypedef).
 
+<a id="delete_virtual_gateway"></a>
+
 ### delete_virtual_gateway
 
 Deletes an existing virtual gateway.
@@ -376,6 +411,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteVirtualGatewayOutputTypeDef](./type_defs.md#deletevirtualgatewayoutputtypedef).
+
+<a id="delete_virtual_node"></a>
 
 ### delete_virtual_node
 
@@ -398,6 +435,8 @@ Keyword-only arguments:
 Returns
 [DeleteVirtualNodeOutputTypeDef](./type_defs.md#deletevirtualnodeoutputtypedef).
 
+<a id="delete_virtual_router"></a>
+
 ### delete_virtual_router
 
 Deletes an existing virtual router.
@@ -419,6 +458,8 @@ Keyword-only arguments:
 Returns
 [DeleteVirtualRouterOutputTypeDef](./type_defs.md#deletevirtualrouteroutputtypedef).
 
+<a id="delete_virtual_service"></a>
+
 ### delete_virtual_service
 
 Deletes an existing virtual service.
@@ -439,6 +480,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteVirtualServiceOutputTypeDef](./type_defs.md#deletevirtualserviceoutputtypedef).
+
+<a id="describe_gateway_route"></a>
 
 ### describe_gateway_route
 
@@ -462,6 +505,8 @@ Keyword-only arguments:
 Returns
 [DescribeGatewayRouteOutputTypeDef](./type_defs.md#describegatewayrouteoutputtypedef).
 
+<a id="describe_mesh"></a>
+
 ### describe_mesh
 
 Describes an existing service mesh.
@@ -480,6 +525,8 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns [DescribeMeshOutputTypeDef](./type_defs.md#describemeshoutputtypedef).
+
+<a id="describe_route"></a>
 
 ### describe_route
 
@@ -503,6 +550,8 @@ Keyword-only arguments:
 Returns
 [DescribeRouteOutputTypeDef](./type_defs.md#describerouteoutputtypedef).
 
+<a id="describe_virtual_gateway"></a>
+
 ### describe_virtual_gateway
 
 Describes an existing virtual gateway.
@@ -523,6 +572,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVirtualGatewayOutputTypeDef](./type_defs.md#describevirtualgatewayoutputtypedef).
+
+<a id="describe_virtual_node"></a>
 
 ### describe_virtual_node
 
@@ -545,6 +596,8 @@ Keyword-only arguments:
 Returns
 [DescribeVirtualNodeOutputTypeDef](./type_defs.md#describevirtualnodeoutputtypedef).
 
+<a id="describe_virtual_router"></a>
+
 ### describe_virtual_router
 
 Describes an existing virtual router.
@@ -565,6 +618,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeVirtualRouterOutputTypeDef](./type_defs.md#describevirtualrouteroutputtypedef).
+
+<a id="describe_virtual_service"></a>
 
 ### describe_virtual_service
 
@@ -587,6 +642,8 @@ Keyword-only arguments:
 Returns
 [DescribeVirtualServiceOutputTypeDef](./type_defs.md#describevirtualserviceoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -604,6 +661,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_gateway_routes"></a>
 
 ### list_gateway_routes
 
@@ -629,6 +688,8 @@ Keyword-only arguments:
 Returns
 [ListGatewayRoutesOutputTypeDef](./type_defs.md#listgatewayroutesoutputtypedef).
 
+<a id="list_meshes"></a>
+
 ### list_meshes
 
 Returns a list of existing service meshes.
@@ -647,6 +708,8 @@ Keyword-only arguments:
 - `nextToken`: `str`
 
 Returns [ListMeshesOutputTypeDef](./type_defs.md#listmeshesoutputtypedef).
+
+<a id="list_routes"></a>
 
 ### list_routes
 
@@ -670,6 +733,8 @@ Keyword-only arguments:
 
 Returns [ListRoutesOutputTypeDef](./type_defs.md#listroutesoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 List the tags for an App Mesh resource.
@@ -690,6 +755,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="list_virtual_gateways"></a>
 
 ### list_virtual_gateways
 
@@ -713,6 +780,8 @@ Keyword-only arguments:
 Returns
 [ListVirtualGatewaysOutputTypeDef](./type_defs.md#listvirtualgatewaysoutputtypedef).
 
+<a id="list_virtual_nodes"></a>
+
 ### list_virtual_nodes
 
 Returns a list of existing virtual nodes.
@@ -734,6 +803,8 @@ Keyword-only arguments:
 
 Returns
 [ListVirtualNodesOutputTypeDef](./type_defs.md#listvirtualnodesoutputtypedef).
+
+<a id="list_virtual_routers"></a>
 
 ### list_virtual_routers
 
@@ -757,6 +828,8 @@ Keyword-only arguments:
 Returns
 [ListVirtualRoutersOutputTypeDef](./type_defs.md#listvirtualroutersoutputtypedef).
 
+<a id="list_virtual_services"></a>
+
 ### list_virtual_services
 
 Returns a list of existing virtual services in a service mesh.
@@ -779,6 +852,8 @@ Keyword-only arguments:
 Returns
 [ListVirtualServicesOutputTypeDef](./type_defs.md#listvirtualservicesoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates the specified tags to a resource with the specified `resourceArn`.
@@ -799,6 +874,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes specified tags from a resource.
@@ -817,6 +894,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_gateway_route"></a>
 
 ### update_gateway_route
 
@@ -844,6 +923,8 @@ Keyword-only arguments:
 Returns
 [UpdateGatewayRouteOutputTypeDef](./type_defs.md#updategatewayrouteoutputtypedef).
 
+<a id="update_mesh"></a>
+
 ### update_mesh
 
 Updates an existing service mesh.
@@ -863,6 +944,8 @@ Keyword-only arguments:
 - `spec`: [MeshSpecTypeDef](./type_defs.md#meshspectypedef)
 
 Returns [UpdateMeshOutputTypeDef](./type_defs.md#updatemeshoutputtypedef).
+
+<a id="update_route"></a>
 
 ### update_route
 
@@ -886,6 +969,8 @@ Keyword-only arguments:
 - `meshOwner`: `str`
 
 Returns [UpdateRouteOutputTypeDef](./type_defs.md#updaterouteoutputtypedef).
+
+<a id="update_virtual_gateway"></a>
 
 ### update_virtual_gateway
 
@@ -911,6 +996,8 @@ Keyword-only arguments:
 Returns
 [UpdateVirtualGatewayOutputTypeDef](./type_defs.md#updatevirtualgatewayoutputtypedef).
 
+<a id="update_virtual_node"></a>
+
 ### update_virtual_node
 
 Updates an existing virtual node in a specified service mesh.
@@ -934,6 +1021,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVirtualNodeOutputTypeDef](./type_defs.md#updatevirtualnodeoutputtypedef).
+
+<a id="update_virtual_router"></a>
 
 ### update_virtual_router
 
@@ -959,6 +1048,8 @@ Keyword-only arguments:
 Returns
 [UpdateVirtualRouterOutputTypeDef](./type_defs.md#updatevirtualrouteroutputtypedef).
 
+<a id="update_virtual_service"></a>
+
 ### update_virtual_service
 
 Updates an existing virtual service in a specified service mesh.
@@ -982,6 +1073,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateVirtualServiceOutputTypeDef](./type_defs.md#updatevirtualserviceoutputtypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

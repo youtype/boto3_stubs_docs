@@ -1,3 +1,5 @@
+<a id="eventbridgeclient-for-boto3-eventbridge-module"></a>
+
 # EventBridgeClient for boto3 EventBridge module
 
 > [Index](..) > [EventBridge](.) > EventBridgeClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
 type annotations stubs module
-[mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
+[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 - [EventBridgeClient for boto3 EventBridge module](#eventbridgeclient-for-boto3-eventbridge-module)
   - [EventBridgeClient](#eventbridgeclient)
@@ -67,6 +69,8 @@ type annotations stubs module
     - [update_connection](#update_connection)
     - [get_paginator](#get_paginator)
 
+<a id="eventbridgeclient"></a>
+
 ## EventBridgeClient
 
 Type annotations for `boto3.client("events")`
@@ -74,14 +78,17 @@ Type annotations for `boto3.client("events")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_events.client import EventBridgeClient
 
 def get_events_client() -> EventBridgeClient:
-    return boto3.client("events")
+    return Session().client("events")
 ```
 
 Boto3 documentation:
 [EventBridge.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -110,7 +117,11 @@ Exceptions:
 - `Exceptions.ResourceAlreadyExistsException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -122,6 +133,8 @@ Boto3 documentation:
 [EventBridge.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="activate_event_source"></a>
 
 ### activate_event_source
 
@@ -139,6 +152,8 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -153,6 +168,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_replay"></a>
 
 ### cancel_replay
 
@@ -172,6 +189,8 @@ Keyword-only arguments:
 
 Returns
 [CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef).
+
+<a id="create_api_destination"></a>
 
 ### create_api_destination
 
@@ -200,6 +219,8 @@ Keyword-only arguments:
 Returns
 [CreateApiDestinationResponseTypeDef](./type_defs.md#createapidestinationresponsetypedef).
 
+<a id="create_archive"></a>
+
 ### create_archive
 
 Creates an archive of events with the specified settings.
@@ -222,6 +243,8 @@ Keyword-only arguments:
 
 Returns
 [CreateArchiveResponseTypeDef](./type_defs.md#createarchiveresponsetypedef).
+
+<a id="create_connection"></a>
 
 ### create_connection
 
@@ -249,6 +272,8 @@ Keyword-only arguments:
 Returns
 [CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
+<a id="create_event_bus"></a>
+
 ### create_event_bus
 
 Creates a new event bus within your account.
@@ -269,6 +294,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef).
+
+<a id="create_partner_event_source"></a>
 
 ### create_partner_event_source
 
@@ -291,6 +318,8 @@ Keyword-only arguments:
 Returns
 [CreatePartnerEventSourceResponseTypeDef](./type_defs.md#createpartnereventsourceresponsetypedef).
 
+<a id="deactivate_event_source"></a>
+
 ### deactivate_event_source
 
 You can use this operation to temporarily stop receiving events from the
@@ -307,6 +336,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+
+<a id="deauthorize_connection"></a>
 
 ### deauthorize_connection
 
@@ -327,6 +358,8 @@ Keyword-only arguments:
 Returns
 [DeauthorizeConnectionResponseTypeDef](./type_defs.md#deauthorizeconnectionresponsetypedef).
 
+<a id="delete_api_destination"></a>
+
 ### delete_api_destination
 
 Deletes the specified API destination.
@@ -345,6 +378,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_archive"></a>
+
 ### delete_archive
 
 Deletes the specified archive.
@@ -362,6 +397,8 @@ Keyword-only arguments:
 - `ArchiveName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_connection"></a>
 
 ### delete_connection
 
@@ -382,6 +419,8 @@ Keyword-only arguments:
 Returns
 [DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
+<a id="delete_event_bus"></a>
+
 ### delete_event_bus
 
 Deletes the specified custom event bus or partner event bus.
@@ -397,6 +436,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+
+<a id="delete_partner_event_source"></a>
 
 ### delete_partner_event_source
 
@@ -416,6 +457,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Account`: `str` *(required)*
 
+<a id="delete_rule"></a>
+
 ### delete_rule
 
 Deletes the specified rule.
@@ -433,6 +476,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
 - `Force`: `bool`
+
+<a id="describe_api_destination"></a>
 
 ### describe_api_destination
 
@@ -453,6 +498,8 @@ Keyword-only arguments:
 Returns
 [DescribeApiDestinationResponseTypeDef](./type_defs.md#describeapidestinationresponsetypedef).
 
+<a id="describe_archive"></a>
+
 ### describe_archive
 
 Retrieves details about an archive.
@@ -471,6 +518,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeArchiveResponseTypeDef](./type_defs.md#describearchiveresponsetypedef).
+
+<a id="describe_connection"></a>
 
 ### describe_connection
 
@@ -491,6 +540,8 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionResponseTypeDef](./type_defs.md#describeconnectionresponsetypedef).
 
+<a id="describe_event_bus"></a>
+
 ### describe_event_bus
 
 Displays details about an event bus in your account.
@@ -509,6 +560,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventBusResponseTypeDef](./type_defs.md#describeeventbusresponsetypedef).
+
+<a id="describe_event_source"></a>
 
 ### describe_event_source
 
@@ -529,6 +582,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef).
+
+<a id="describe_partner_event_source"></a>
 
 ### describe_partner_event_source
 
@@ -551,6 +606,8 @@ Keyword-only arguments:
 Returns
 [DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef).
 
+<a id="describe_replay"></a>
+
 ### describe_replay
 
 Retrieves details about a replay.
@@ -569,6 +626,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReplayResponseTypeDef](./type_defs.md#describereplayresponsetypedef).
+
+<a id="describe_rule"></a>
 
 ### describe_rule
 
@@ -590,6 +649,8 @@ Keyword-only arguments:
 Returns
 [DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef).
 
+<a id="disable_rule"></a>
+
 ### disable_rule
 
 Disables the specified rule.
@@ -606,6 +667,8 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
+
+<a id="enable_rule"></a>
 
 ### enable_rule
 
@@ -624,6 +687,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -641,6 +706,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_api_destinations"></a>
 
 ### list_api_destinations
 
@@ -663,6 +730,8 @@ Keyword-only arguments:
 
 Returns
 [ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef).
+
+<a id="list_archives"></a>
 
 ### list_archives
 
@@ -687,6 +756,8 @@ Keyword-only arguments:
 Returns
 [ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef).
 
+<a id="list_connections"></a>
+
 ### list_connections
 
 Retrieves a list of connections from the account.
@@ -708,6 +779,8 @@ Keyword-only arguments:
 
 Returns
 [ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
+
+<a id="list_event_buses"></a>
 
 ### list_event_buses
 
@@ -731,6 +804,8 @@ Keyword-only arguments:
 Returns
 [ListEventBusesResponseTypeDef](./type_defs.md#listeventbusesresponsetypedef).
 
+<a id="list_event_sources"></a>
+
 ### list_event_sources
 
 You can use this to see all the partner event sources that have been shared
@@ -752,6 +827,8 @@ Keyword-only arguments:
 
 Returns
 [ListEventSourcesResponseTypeDef](./type_defs.md#listeventsourcesresponsetypedef).
+
+<a id="list_partner_event_source_accounts"></a>
 
 ### list_partner_event_source_accounts
 
@@ -776,6 +853,8 @@ Keyword-only arguments:
 Returns
 [ListPartnerEventSourceAccountsResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponsetypedef).
 
+<a id="list_partner_event_sources"></a>
+
 ### list_partner_event_sources
 
 An SaaS partner can use this operation to list all the partner event source
@@ -798,6 +877,8 @@ Keyword-only arguments:
 
 Returns
 [ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef).
+
+<a id="list_replays"></a>
 
 ### list_replays
 
@@ -822,6 +903,8 @@ Keyword-only arguments:
 Returns
 [ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef).
 
+<a id="list_rule_names_by_target"></a>
+
 ### list_rule_names_by_target
 
 Lists the rules for the specified target.
@@ -844,6 +927,8 @@ Keyword-only arguments:
 Returns
 [ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef).
 
+<a id="list_rules"></a>
+
 ### list_rules
 
 Lists your Amazon EventBridge rules.
@@ -865,6 +950,8 @@ Keyword-only arguments:
 
 Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Displays the tags associated with an EventBridge resource.
@@ -883,6 +970,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_targets_by_rule"></a>
 
 ### list_targets_by_rule
 
@@ -906,6 +995,8 @@ Keyword-only arguments:
 Returns
 [ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef).
 
+<a id="put_events"></a>
+
 ### put_events
 
 Sends custom events to Amazon EventBridge so that they can be matched to rules.
@@ -925,6 +1016,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
+
+<a id="put_partner_events"></a>
 
 ### put_partner_events
 
@@ -948,6 +1041,8 @@ Keyword-only arguments:
 Returns
 [PutPartnerEventsResponseTypeDef](./type_defs.md#putpartnereventsresponsetypedef).
 
+<a id="put_permission"></a>
+
 ### put_permission
 
 Running `PutPermission` permits the specified Amazon Web Services account or
@@ -969,6 +1064,8 @@ Keyword-only arguments:
 - `StatementId`: `str`
 - `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 - `Policy`: `str`
+
+<a id="put_rule"></a>
 
 ### put_rule
 
@@ -995,6 +1092,8 @@ Keyword-only arguments:
 
 Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
 
+<a id="put_targets"></a>
+
 ### put_targets
 
 Adds the specified targets to the specified rule, or updates the targets if
@@ -1017,6 +1116,8 @@ Keyword-only arguments:
 
 Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 
+<a id="remove_permission"></a>
+
 ### remove_permission
 
 Revokes the permission of another Amazon Web Services account to be able to put
@@ -1035,6 +1136,8 @@ Keyword-only arguments:
 - `StatementId`: `str`
 - `RemoveAllPermissions`: `bool`
 - `EventBusName`: `str`
+
+<a id="remove_targets"></a>
 
 ### remove_targets
 
@@ -1057,6 +1160,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveTargetsResponseTypeDef](./type_defs.md#removetargetsresponsetypedef).
+
+<a id="start_replay"></a>
 
 ### start_replay
 
@@ -1084,6 +1189,8 @@ Keyword-only arguments:
 Returns
 [StartReplayResponseTypeDef](./type_defs.md#startreplayresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns one or more tags (key-value pairs) to the specified EventBridge
@@ -1103,6 +1210,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="test_event_pattern"></a>
 
 ### test_event_pattern
 
@@ -1124,6 +1233,8 @@ Keyword-only arguments:
 Returns
 [TestEventPatternResponseTypeDef](./type_defs.md#testeventpatternresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified EventBridge resource.
@@ -1142,6 +1253,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_api_destination"></a>
 
 ### update_api_destination
 
@@ -1168,6 +1281,8 @@ Keyword-only arguments:
 Returns
 [UpdateApiDestinationResponseTypeDef](./type_defs.md#updateapidestinationresponsetypedef).
 
+<a id="update_archive"></a>
+
 ### update_archive
 
 Updates the specified archive.
@@ -1189,6 +1304,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateArchiveResponseTypeDef](./type_defs.md#updatearchiveresponsetypedef).
+
+<a id="update_connection"></a>
 
 ### update_connection
 
@@ -1213,6 +1330,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

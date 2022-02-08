@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-guardduty-module"></a>
+
 # Type annotations for boto3 GuardDuty module
 
 > [Index](..) > GuardDuty
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
-[mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+[mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[guardduty]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[guardduty]'
+
+# standalone installation
 pip install mypy-boto3-guardduty
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-guardduty
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="guarddutyclient"></a>
+
 ## GuardDutyClient
 
 Type annotations for `boto3.client("guardduty")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_guardduty.client import GuardDutyClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -95,6 +109,8 @@ from mypy_boto3_guardduty.client import GuardDutyClient
 - [update_publishing_destination](./client.md#update_publishing_destination)
 - [update_threat_intel_set](./client.md#update_threat_intel_set)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 GuardDutyClient [exceptions](./client.md#exceptions)
@@ -102,6 +118,8 @@ GuardDutyClient [exceptions](./client.md#exceptions)
 - BadRequestException
 - ClientError
 - InternalServerErrorException
+
+<a id="paginators"></a>
 
 ## Paginators
 
@@ -111,7 +129,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_guardduty.paginators import ListDetectorsPaginator, ...
+from mypy_boto3_guardduty.paginator import ListDetectorsPaginator, ...
 ```
 
 - [ListDetectorsPaginator](./paginators.md#listdetectorspaginator)
@@ -122,6 +140,8 @@ from mypy_boto3_guardduty.paginators import ListDetectorsPaginator, ...
 - [ListMembersPaginator](./paginators.md#listmemberspaginator)
 - [ListOrganizationAdminAccountsPaginator](./paginators.md#listorganizationadminaccountspaginator)
 - [ListThreatIntelSetsPaginator](./paginators.md#listthreatintelsetspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -159,6 +179,8 @@ from mypy_boto3_guardduty.literals import AdminStatusType, ...
 - [UsageStatisticTypeType](./literals.md#usagestatistictypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

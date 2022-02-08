@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-sesv2-module"></a>
+
 # Type annotations for boto3 SESV2 module
 
 > [Index](..) > SESV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
 type annotations stubs module
-[mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+[mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sesv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sesv2]'
+
+# standalone installation
 pip install mypy-boto3-sesv2
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-sesv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="sesv2client"></a>
+
 ## SESV2Client
 
 Type annotations for `boto3.client("sesv2")` as [SESV2Client](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_sesv2.client import SESV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -115,6 +129,8 @@ from mypy_boto3_sesv2.client import SESV2Client
 - [update_email_identity_policy](./client.md#update_email_identity_policy)
 - [update_email_template](./client.md#update_email_template)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 SESV2Client [exceptions](./client.md#exceptions)
@@ -132,6 +148,8 @@ SESV2Client [exceptions](./client.md#exceptions)
 - NotFoundException
 - SendingPausedException
 - TooManyRequestsException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -167,6 +185,8 @@ from mypy_boto3_sesv2.literals import BehaviorOnMxFailureType, ...
 - [TlsPolicyType](./literals.md#tlspolicytype)
 - [WarmupStatusType](./literals.md#warmupstatustype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

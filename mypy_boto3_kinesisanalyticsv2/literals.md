@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kinesisanalyticsv2-module"></a>
+
 # Literals for boto3 KinesisAnalyticsV2 module
 
 > [Index](..) > [KinesisAnalyticsV2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisAnalyticsV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisanalyticsv2.html#KinesisAnalyticsV2)
 type annotations stubs module
-[mypy_boto3_kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
+[mypy-boto3-kinesisanalyticsv2](https://pypi.org/project/mypy-boto3-kinesisanalyticsv2/).
 
 - [Literals for boto3 KinesisAnalyticsV2 module](#literals-for-boto3-kinesisanalyticsv2-module)
   - [ApplicationModeType](#applicationmodetype)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="applicationmodetype"></a>
+
 ## ApplicationModeType
 
 ```python
@@ -36,6 +40,8 @@ Values:
 
 - `INTERACTIVE`
 - `STREAMING`
+
+<a id="applicationrestoretypetype"></a>
 
 ## ApplicationRestoreTypeType
 
@@ -48,6 +54,8 @@ Values:
 - `RESTORE_FROM_CUSTOM_SNAPSHOT`
 - `RESTORE_FROM_LATEST_SNAPSHOT`
 - `SKIP_RESTORE_FROM_SNAPSHOT`
+
+<a id="applicationstatustype"></a>
 
 ## ApplicationStatusType
 
@@ -69,6 +77,8 @@ Values:
 - `STOPPING`
 - `UPDATING`
 
+<a id="artifacttypetype"></a>
+
 ## ArtifactTypeType
 
 ```python
@@ -79,6 +89,8 @@ Values:
 
 - `DEPENDENCY_JAR`
 - `UDF`
+
+<a id="codecontenttypetype"></a>
 
 ## CodeContentTypeType
 
@@ -91,6 +103,8 @@ Values:
 - `PLAINTEXT`
 - `ZIPFILE`
 
+<a id="configurationtypetype"></a>
+
 ## ConfigurationTypeType
 
 ```python
@@ -101,6 +115,8 @@ Values:
 
 - `CUSTOM`
 - `DEFAULT`
+
+<a id="inputstartingpositiontype"></a>
 
 ## InputStartingPositionType
 
@@ -114,6 +130,8 @@ Values:
 - `NOW`
 - `TRIM_HORIZON`
 
+<a id="listapplicationsnapshotspaginatorname"></a>
+
 ## ListApplicationSnapshotsPaginatorName
 
 ```python
@@ -124,6 +142,8 @@ Values:
 
 - `list_application_snapshots`
 
+<a id="listapplicationspaginatorname"></a>
+
 ## ListApplicationsPaginatorName
 
 ```python
@@ -133,6 +153,8 @@ from mypy_boto3_kinesisanalyticsv2.literals import ListApplicationsPaginatorName
 Values:
 
 - `list_applications`
+
+<a id="logleveltype"></a>
 
 ## LogLevelType
 
@@ -147,6 +169,8 @@ Values:
 - `INFO`
 - `WARN`
 
+<a id="metricsleveltype"></a>
+
 ## MetricsLevelType
 
 ```python
@@ -160,6 +184,8 @@ Values:
 - `PARALLELISM`
 - `TASK`
 
+<a id="recordformattypetype"></a>
+
 ## RecordFormatTypeType
 
 ```python
@@ -170,6 +196,8 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="runtimeenvironmenttype"></a>
 
 ## RuntimeEnvironmentType
 
@@ -187,6 +215,8 @@ Values:
 - `ZEPPELIN-FLINK-1_0`
 - `ZEPPELIN-FLINK-2_0`
 
+<a id="snapshotstatustype"></a>
+
 ## SnapshotStatusType
 
 ```python
@@ -200,6 +230,8 @@ Values:
 - `FAILED`
 - `READY`
 
+<a id="urltypetype"></a>
+
 ## UrlTypeType
 
 ```python
@@ -210,6 +242,8 @@ Values:
 
 - `FLINK_DASHBOARD_URL`
 - `ZEPPELIN_UI_URL`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -518,6 +552,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

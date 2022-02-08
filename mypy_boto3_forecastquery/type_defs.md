@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-forecastqueryservice-module"></a>
+
 # Typed dictionaries for boto3 ForecastQueryService module
 
 > [Index](..) > [ForecastQueryService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ForecastQueryService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/forecastquery.html#ForecastQueryService)
 type annotations stubs module
-[mypy_boto3_forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
+[mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 - [Typed dictionaries for boto3 ForecastQueryService module](#typed-dictionaries-for-boto3-forecastqueryservice-module)
   - [DataPointTypeDef](#datapointtypedef)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [QueryForecastRequestRequestTypeDef](#queryforecastrequestrequesttypedef)
   - [QueryForecastResponseTypeDef](#queryforecastresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="datapointtypedef"></a>
 
 ## DataPointTypeDef
 
@@ -25,6 +29,8 @@ Optional fields:
 - `Timestamp`: `str`
 - `Value`: `float`
 
+<a id="forecasttypedef"></a>
+
 ## ForecastTypeDef
 
 ```python
@@ -35,6 +41,8 @@ Optional fields:
 
 - `Predictions`: `Dict`\[`str`,
   `List`\[[DataPointTypeDef](./type_defs.md#datapointtypedef)\]\]
+
+<a id="queryforecastrequestrequesttypedef"></a>
 
 ## QueryForecastRequestRequestTypeDef
 
@@ -53,6 +61,8 @@ Optional fields:
 - `EndDate`: `str`
 - `NextToken`: `str`
 
+<a id="queryforecastresponsetypedef"></a>
+
 ## QueryForecastResponseTypeDef
 
 ```python
@@ -64,6 +74,8 @@ Required fields:
 - `Forecast`: [ForecastTypeDef](./type_defs.md#forecasttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

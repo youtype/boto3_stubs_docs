@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-recyclebin-module"></a>
+
 # Literals for boto3 RecycleBin module
 
 > [Index](..) > [RecycleBin](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rbin.html#RecycleBin)
 type annotations stubs module
-[mypy_boto3_rbin](https://pypi.org/project/mypy-boto3-rbin/).
+[mypy-boto3-rbin](https://pypi.org/project/mypy-boto3-rbin/).
 
 - [Literals for boto3 RecycleBin module](#literals-for-boto3-recyclebin-module)
   - [ListRulesPaginatorName](#listrulespaginatorname)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [RuleStatusType](#rulestatustype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="listrulespaginatorname"></a>
 
 ## ListRulesPaginatorName
 
@@ -24,6 +28,8 @@ from mypy_boto3_rbin.literals import ListRulesPaginatorName
 Values:
 
 - `list_rules`
+
+<a id="resourcetypetype"></a>
 
 ## ResourceTypeType
 
@@ -36,6 +42,8 @@ Values:
 - `EBS_SNAPSHOT`
 - `EC2_IMAGE`
 
+<a id="retentionperiodunittype"></a>
+
 ## RetentionPeriodUnitType
 
 ```python
@@ -45,6 +53,8 @@ from mypy_boto3_rbin.literals import RetentionPeriodUnitType
 Values:
 
 - `DAYS`
+
+<a id="rulestatustype"></a>
 
 ## RuleStatusType
 
@@ -56,6 +66,8 @@ Values:
 
 - `available`
 - `pending`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -364,6 +376,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

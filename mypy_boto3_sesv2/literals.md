@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sesv2-module"></a>
+
 # Literals for boto3 SESV2 module
 
 > [Index](..) > [SESV2](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SESV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sesv2.html#SESV2)
 type annotations stubs module
-[mypy_boto3_sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
+[mypy-boto3-sesv2](https://pypi.org/project/mypy-boto3-sesv2/).
 
 - [Literals for boto3 SESV2 module](#literals-for-boto3-sesv2-module)
   - [BehaviorOnMxFailureType](#behavioronmxfailuretype)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [WarmupStatusType](#warmupstatustype)
   - [ServiceName](#servicename)
 
+<a id="behavioronmxfailuretype"></a>
+
 ## BehaviorOnMxFailureType
 
 ```python
@@ -43,6 +47,8 @@ Values:
 
 - `REJECT_MESSAGE`
 - `USE_DEFAULT_VALUE`
+
+<a id="bulkemailstatustype"></a>
 
 ## BulkEmailStatusType
 
@@ -67,6 +73,8 @@ Values:
 - `TEMPLATE_NOT_FOUND`
 - `TRANSIENT_FAILURE`
 
+<a id="contactlanguagetype"></a>
+
 ## ContactLanguageType
 
 ```python
@@ -77,6 +85,8 @@ Values:
 
 - `EN`
 - `JA`
+
+<a id="contactlistimportactiontype"></a>
 
 ## ContactListImportActionType
 
@@ -89,6 +99,8 @@ Values:
 - `DELETE`
 - `PUT`
 
+<a id="dataformattype"></a>
+
 ## DataFormatType
 
 ```python
@@ -99,6 +111,8 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="deliverabilitydashboardaccountstatustype"></a>
 
 ## DeliverabilityDashboardAccountStatusType
 
@@ -112,6 +126,8 @@ Values:
 - `DISABLED`
 - `PENDING_EXPIRATION`
 
+<a id="deliverabilityteststatustype"></a>
+
 ## DeliverabilityTestStatusType
 
 ```python
@@ -122,6 +138,8 @@ Values:
 
 - `COMPLETED`
 - `IN_PROGRESS`
+
+<a id="dimensionvaluesourcetype"></a>
 
 ## DimensionValueSourceType
 
@@ -135,6 +153,8 @@ Values:
 - `LINK_TAG`
 - `MESSAGE_TAG`
 
+<a id="dkimsigningattributesorigintype"></a>
+
 ## DkimSigningAttributesOriginType
 
 ```python
@@ -146,6 +166,8 @@ Values:
 - `AWS_SES`
 - `EXTERNAL`
 
+<a id="dkimsigningkeylengthtype"></a>
+
 ## DkimSigningKeyLengthType
 
 ```python
@@ -156,6 +178,8 @@ Values:
 
 - `RSA_1024_BIT`
 - `RSA_2048_BIT`
+
+<a id="dkimstatustype"></a>
 
 ## DkimStatusType
 
@@ -170,6 +194,8 @@ Values:
 - `PENDING`
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -190,6 +216,8 @@ Values:
 - `SEND`
 - `SUBSCRIPTION`
 
+<a id="identitytypetype"></a>
+
 ## IdentityTypeType
 
 ```python
@@ -202,6 +230,8 @@ Values:
 - `EMAIL_ADDRESS`
 - `MANAGED_DOMAIN`
 
+<a id="importdestinationtypetype"></a>
+
 ## ImportDestinationTypeType
 
 ```python
@@ -212,6 +242,8 @@ Values:
 
 - `CONTACT_LIST`
 - `SUPPRESSION_LIST`
+
+<a id="jobstatustype"></a>
 
 ## JobStatusType
 
@@ -226,6 +258,8 @@ Values:
 - `FAILED`
 - `PROCESSING`
 
+<a id="mailfromdomainstatustype"></a>
+
 ## MailFromDomainStatusType
 
 ```python
@@ -239,6 +273,8 @@ Values:
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
 
+<a id="mailtypetype"></a>
+
 ## MailTypeType
 
 ```python
@@ -249,6 +285,8 @@ Values:
 
 - `MARKETING`
 - `TRANSACTIONAL`
+
+<a id="reviewstatustype"></a>
 
 ## ReviewStatusType
 
@@ -263,6 +301,8 @@ Values:
 - `GRANTED`
 - `PENDING`
 
+<a id="subscriptionstatustype"></a>
+
 ## SubscriptionStatusType
 
 ```python
@@ -273,6 +313,8 @@ Values:
 
 - `OPT_IN`
 - `OPT_OUT`
+
+<a id="suppressionlistimportactiontype"></a>
 
 ## SuppressionListImportActionType
 
@@ -285,6 +327,8 @@ Values:
 - `DELETE`
 - `PUT`
 
+<a id="suppressionlistreasontype"></a>
+
 ## SuppressionListReasonType
 
 ```python
@@ -295,6 +339,8 @@ Values:
 
 - `BOUNCE`
 - `COMPLAINT`
+
+<a id="tlspolicytype"></a>
 
 ## TlsPolicyType
 
@@ -307,6 +353,8 @@ Values:
 - `OPTIONAL`
 - `REQUIRE`
 
+<a id="warmupstatustype"></a>
+
 ## WarmupStatusType
 
 ```python
@@ -317,6 +365,8 @@ Values:
 
 - `DONE`
 - `IN_PROGRESS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-cloudcontrolapi-module"></a>
+
 # Literals for boto3 CloudControlApi module
 
 > [Index](..) > [CloudControlApi](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudControlApi](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudcontrol.html#CloudControlApi)
 type annotations stubs module
-[mypy_boto3_cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
+[mypy-boto3-cloudcontrol](https://pypi.org/project/mypy-boto3-cloudcontrol/).
 
 - [Literals for boto3 CloudControlApi module](#literals-for-boto3-cloudcontrolapi-module)
   - [HandlerErrorCodeType](#handlererrorcodetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [ResourceRequestSuccessWaiterName](#resourcerequestsuccesswaitername)
   - [ServiceName](#servicename)
   - [WaiterName](#waitername)
+
+<a id="handlererrorcodetype"></a>
 
 ## HandlerErrorCodeType
 
@@ -39,6 +43,8 @@ Values:
 - `ServiceTimeout`
 - `Throttling`
 
+<a id="operationstatustype"></a>
+
 ## OperationStatusType
 
 ```python
@@ -54,6 +60,8 @@ Values:
 - `PENDING`
 - `SUCCESS`
 
+<a id="operationtype"></a>
+
 ## OperationType
 
 ```python
@@ -66,6 +74,8 @@ Values:
 - `DELETE`
 - `UPDATE`
 
+<a id="resourcerequestsuccesswaitername"></a>
+
 ## ResourceRequestSuccessWaiterName
 
 ```python
@@ -75,6 +85,8 @@ from mypy_boto3_cloudcontrol.literals import ResourceRequestSuccessWaiterName
 Values:
 
 - `resource_request_success`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -383,6 +395,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

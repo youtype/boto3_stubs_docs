@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-route53recoverycluster-module"></a>
+
 # Typed dictionaries for boto3 Route53RecoveryCluster module
 
 > [Index](..) > [Route53RecoveryCluster](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53RecoveryCluster](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53-recovery-cluster.html#Route53RecoveryCluster)
 type annotations stubs module
-[mypy_boto3_route53_recovery_cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
+[mypy-boto3-route53-recovery-cluster](https://pypi.org/project/mypy-boto3-route53-recovery-cluster/).
 
 - [Typed dictionaries for boto3 Route53RecoveryCluster module](#typed-dictionaries-for-boto3-route53recoverycluster-module)
   - [GetRoutingControlStateRequestRequestTypeDef](#getroutingcontrolstaterequestrequesttypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [UpdateRoutingControlStateEntryTypeDef](#updateroutingcontrolstateentrytypedef)
   - [UpdateRoutingControlStateRequestRequestTypeDef](#updateroutingcontrolstaterequestrequesttypedef)
   - [UpdateRoutingControlStatesRequestRequestTypeDef](#updateroutingcontrolstatesrequestrequesttypedef)
+
+<a id="getroutingcontrolstaterequestrequesttypedef"></a>
 
 ## GetRoutingControlStateRequestRequestTypeDef
 
@@ -24,6 +28,8 @@ from mypy_boto3_route53_recovery_cluster.type_defs import GetRoutingControlState
 Required fields:
 
 - `RoutingControlArn`: `str`
+
+<a id="getroutingcontrolstateresponsetypedef"></a>
 
 ## GetRoutingControlStateResponseTypeDef
 
@@ -39,6 +45,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -53,6 +61,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="updateroutingcontrolstateentrytypedef"></a>
+
 ## UpdateRoutingControlStateEntryTypeDef
 
 ```python
@@ -65,6 +75,8 @@ Required fields:
 - `RoutingControlState`:
   [RoutingControlStateType](./literals.md#routingcontrolstatetype)
 
+<a id="updateroutingcontrolstaterequestrequesttypedef"></a>
+
 ## UpdateRoutingControlStateRequestRequestTypeDef
 
 ```python
@@ -76,6 +88,8 @@ Required fields:
 - `RoutingControlArn`: `str`
 - `RoutingControlState`:
   [RoutingControlStateType](./literals.md#routingcontrolstatetype)
+
+<a id="updateroutingcontrolstatesrequestrequesttypedef"></a>
 
 ## UpdateRoutingControlStatesRequestRequestTypeDef
 

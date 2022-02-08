@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-chimesdkmessaging-module"></a>
+
 # Type annotations for boto3 ChimeSDKMessaging module
 
 > [Index](..) > ChimeSDKMessaging
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ChimeSDKMessaging](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-messaging.html#ChimeSDKMessaging)
 type annotations stubs module
-[mypy_boto3_chime_sdk_messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
+[mypy-boto3-chime-sdk-messaging](https://pypi.org/project/mypy-boto3-chime-sdk-messaging/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[chime-sdk-messaging]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[chime-sdk-messaging]'
+
+# standalone installation
 pip install mypy-boto3-chime-sdk-messaging
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-chime-sdk-messaging
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="chimesdkmessagingclient"></a>
 
 ## ChimeSDKMessagingClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -80,6 +94,8 @@ from mypy_boto3_chime_sdk_messaging.client import ChimeSDKMessagingClient
 - [update_channel_message](./client.md#update_channel_message)
 - [update_channel_read_marker](./client.md#update_channel_read_marker)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ChimeSDKMessagingClient [exceptions](./client.md#exceptions)
@@ -94,6 +110,8 @@ ChimeSDKMessagingClient [exceptions](./client.md#exceptions)
 - ServiceUnavailableException
 - ThrottledClientException
 - UnauthorizedClientException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -118,6 +136,8 @@ from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType, ...
 - [PushNotificationTypeType](./literals.md#pushnotificationtypetype)
 - [SortOrderType](./literals.md#sortordertype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

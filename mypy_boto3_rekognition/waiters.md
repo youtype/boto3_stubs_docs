@@ -1,3 +1,5 @@
+<a id="waiters-for-boto3-rekognition-module"></a>
+
 # Waiters for boto3 Rekognition module
 
 > [Index](..) > [Rekognition](.) > Waiters
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
-[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 - [Waiters for boto3 Rekognition module](#waiters-for-boto3-rekognition-module)
   - [ProjectVersionRunningWaiter](#projectversionrunningwaiter)
   - [ProjectVersionTrainingCompletedWaiter](#projectversiontrainingcompletedwaiter)
+
+<a id="projectversionrunningwaiter"></a>
 
 ## ProjectVersionRunningWaiter
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rekognition.waiter import ProjectVersionRunningWaiter
 
 def get_project_version_running_waiter() -> ProjectVersionRunningWaiter:
-    return boto3.client("rekognition").get_waiter("project_version_running")
+    return Session().client("rekognition").get_waiter("project_version_running")
 ```
 
 Boto3 documentation:
@@ -36,6 +42,8 @@ Arguments for `ProjectVersionRunningWaiter.wait` method:
 - `MaxResults`: `int`
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
+<a id="projectversiontrainingcompletedwaiter"></a>
+
 ## ProjectVersionTrainingCompletedWaiter
 
 Type annotations for
@@ -44,10 +52,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rekognition.waiter import ProjectVersionTrainingCompletedWaiter
 
 def get_project_version_training_completed_waiter() -> ProjectVersionTrainingCompletedWaiter:
-    return boto3.client("rekognition").get_waiter("project_version_training_completed")
+    return Session().client("rekognition").get_waiter("project_version_training_completed")
 ```
 
 Boto3 documentation:

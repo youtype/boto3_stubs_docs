@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-workdocs-module"></a>
+
 # Literals for boto3 WorkDocs module
 
 > [Index](..) > [WorkDocs](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkDocs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workdocs.html#WorkDocs)
 type annotations stubs module
-[mypy_boto3_workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
+[mypy-boto3-workdocs](https://pypi.org/project/mypy-boto3-workdocs/).
 
 - [Literals for boto3 WorkDocs module](#literals-for-boto3-workdocs-module)
   - [ActivityTypeType](#activitytypetype)
@@ -45,6 +47,8 @@ type annotations stubs module
   - [UserTypeType](#usertypetype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="activitytypetype"></a>
 
 ## ActivityTypeType
 
@@ -88,6 +92,8 @@ Values:
 - `FOLDER_SHARED`
 - `FOLDER_UNSHARED`
 
+<a id="booleanenumtypetype"></a>
+
 ## BooleanEnumTypeType
 
 ```python
@@ -98,6 +104,8 @@ Values:
 
 - `FALSE`
 - `TRUE`
+
+<a id="commentstatustypetype"></a>
 
 ## CommentStatusTypeType
 
@@ -111,6 +119,8 @@ Values:
 - `DRAFT`
 - `PUBLISHED`
 
+<a id="commentvisibilitytypetype"></a>
+
 ## CommentVisibilityTypeType
 
 ```python
@@ -122,6 +132,8 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
+<a id="describeactivitiespaginatorname"></a>
+
 ## DescribeActivitiesPaginatorName
 
 ```python
@@ -131,6 +143,8 @@ from mypy_boto3_workdocs.literals import DescribeActivitiesPaginatorName
 Values:
 
 - `describe_activities`
+
+<a id="describecommentspaginatorname"></a>
 
 ## DescribeCommentsPaginatorName
 
@@ -142,6 +156,8 @@ Values:
 
 - `describe_comments`
 
+<a id="describedocumentversionspaginatorname"></a>
+
 ## DescribeDocumentVersionsPaginatorName
 
 ```python
@@ -151,6 +167,8 @@ from mypy_boto3_workdocs.literals import DescribeDocumentVersionsPaginatorName
 Values:
 
 - `describe_document_versions`
+
+<a id="describefoldercontentspaginatorname"></a>
 
 ## DescribeFolderContentsPaginatorName
 
@@ -162,6 +180,8 @@ Values:
 
 - `describe_folder_contents`
 
+<a id="describegroupspaginatorname"></a>
+
 ## DescribeGroupsPaginatorName
 
 ```python
@@ -171,6 +191,8 @@ from mypy_boto3_workdocs.literals import DescribeGroupsPaginatorName
 Values:
 
 - `describe_groups`
+
+<a id="describenotificationsubscriptionspaginatorname"></a>
 
 ## DescribeNotificationSubscriptionsPaginatorName
 
@@ -182,6 +204,8 @@ Values:
 
 - `describe_notification_subscriptions`
 
+<a id="describeresourcepermissionspaginatorname"></a>
+
 ## DescribeResourcePermissionsPaginatorName
 
 ```python
@@ -191,6 +215,8 @@ from mypy_boto3_workdocs.literals import DescribeResourcePermissionsPaginatorNam
 Values:
 
 - `describe_resource_permissions`
+
+<a id="describerootfolderspaginatorname"></a>
 
 ## DescribeRootFoldersPaginatorName
 
@@ -202,6 +228,8 @@ Values:
 
 - `describe_root_folders`
 
+<a id="describeuserspaginatorname"></a>
+
 ## DescribeUsersPaginatorName
 
 ```python
@@ -211,6 +239,8 @@ from mypy_boto3_workdocs.literals import DescribeUsersPaginatorName
 Values:
 
 - `describe_users`
+
+<a id="documentsourcetypetype"></a>
 
 ## DocumentSourceTypeType
 
@@ -223,6 +253,8 @@ Values:
 - `ORIGINAL`
 - `WITH_COMMENTS`
 
+<a id="documentstatustypetype"></a>
+
 ## DocumentStatusTypeType
 
 ```python
@@ -233,6 +265,8 @@ Values:
 
 - `ACTIVE`
 - `INITIALIZED`
+
+<a id="documentthumbnailtypetype"></a>
 
 ## DocumentThumbnailTypeType
 
@@ -246,6 +280,8 @@ Values:
 - `SMALL`
 - `SMALL_HQ`
 
+<a id="documentversionstatustype"></a>
+
 ## DocumentVersionStatusType
 
 ```python
@@ -255,6 +291,8 @@ from mypy_boto3_workdocs.literals import DocumentVersionStatusType
 Values:
 
 - `ACTIVE`
+
+<a id="foldercontenttypetype"></a>
 
 ## FolderContentTypeType
 
@@ -267,6 +305,8 @@ Values:
 - `ALL`
 - `DOCUMENT`
 - `FOLDER`
+
+<a id="localetypetype"></a>
 
 ## LocaleTypeType
 
@@ -288,6 +328,8 @@ Values:
 - `zh_CN`
 - `zh_TW`
 
+<a id="ordertypetype"></a>
+
 ## OrderTypeType
 
 ```python
@@ -298,6 +340,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="principaltypetype"></a>
 
 ## PrincipalTypeType
 
@@ -313,6 +357,8 @@ Values:
 - `ORGANIZATION`
 - `USER`
 
+<a id="resourcecollectiontypetype"></a>
+
 ## ResourceCollectionTypeType
 
 ```python
@@ -322,6 +368,8 @@ from mypy_boto3_workdocs.literals import ResourceCollectionTypeType
 Values:
 
 - `SHARED_WITH_ME`
+
+<a id="resourcesorttypetype"></a>
 
 ## ResourceSortTypeType
 
@@ -333,6 +381,8 @@ Values:
 
 - `DATE`
 - `NAME`
+
+<a id="resourcestatetypetype"></a>
 
 ## ResourceStateTypeType
 
@@ -347,6 +397,8 @@ Values:
 - `RECYCLING`
 - `RESTORING`
 
+<a id="resourcetypetype"></a>
+
 ## ResourceTypeType
 
 ```python
@@ -358,6 +410,8 @@ Values:
 - `DOCUMENT`
 - `FOLDER`
 
+<a id="rolepermissiontypetype"></a>
+
 ## RolePermissionTypeType
 
 ```python
@@ -368,6 +422,8 @@ Values:
 
 - `DIRECT`
 - `INHERITED`
+
+<a id="roletypetype"></a>
 
 ## RoleTypeType
 
@@ -382,6 +438,8 @@ Values:
 - `OWNER`
 - `VIEWER`
 
+<a id="sharestatustypetype"></a>
+
 ## ShareStatusTypeType
 
 ```python
@@ -392,6 +450,8 @@ Values:
 
 - `FAILURE`
 - `SUCCESS`
+
+<a id="storagetypetype"></a>
 
 ## StorageTypeType
 
@@ -404,6 +464,8 @@ Values:
 - `QUOTA`
 - `UNLIMITED`
 
+<a id="subscriptionprotocoltypetype"></a>
+
 ## SubscriptionProtocolTypeType
 
 ```python
@@ -413,6 +475,8 @@ from mypy_boto3_workdocs.literals import SubscriptionProtocolTypeType
 Values:
 
 - `HTTPS`
+
+<a id="subscriptiontypetype"></a>
 
 ## SubscriptionTypeType
 
@@ -424,6 +488,8 @@ Values:
 
 - `ALL`
 
+<a id="userfiltertypetype"></a>
+
 ## UserFilterTypeType
 
 ```python
@@ -434,6 +500,8 @@ Values:
 
 - `ACTIVE_PENDING`
 - `ALL`
+
+<a id="usersorttypetype"></a>
 
 ## UserSortTypeType
 
@@ -449,6 +517,8 @@ Values:
 - `USER_NAME`
 - `USER_STATUS`
 
+<a id="userstatustypetype"></a>
+
 ## UserStatusTypeType
 
 ```python
@@ -460,6 +530,8 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 - `PENDING`
+
+<a id="usertypetype"></a>
 
 ## UserTypeType
 
@@ -474,6 +546,8 @@ Values:
 - `POWERUSER`
 - `USER`
 - `WORKSPACESUSER`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -782,6 +856,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

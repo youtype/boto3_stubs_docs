@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-servicequotas-module"></a>
+
 # Literals for boto3 ServiceQuotas module
 
 > [Index](..) > [ServiceQuotas](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceQuotas](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/service-quotas.html#ServiceQuotas)
 type annotations stubs module
-[mypy_boto3_service_quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
+[mypy-boto3-service-quotas](https://pypi.org/project/mypy-boto3-service-quotas/).
 
 - [Literals for boto3 ServiceQuotas module](#literals-for-boto3-servicequotas-module)
   - [ErrorCodeType](#errorcodetype)
@@ -21,6 +23,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="errorcodetype"></a>
+
 ## ErrorCodeType
 
 ```python
@@ -34,6 +38,8 @@ Values:
 - `DEPENDENCY_THROTTLING_ERROR`
 - `SERVICE_QUOTA_NOT_AVAILABLE_ERROR`
 
+<a id="listawsdefaultservicequotaspaginatorname"></a>
+
 ## ListAWSDefaultServiceQuotasPaginatorName
 
 ```python
@@ -43,6 +49,8 @@ from mypy_boto3_service_quotas.literals import ListAWSDefaultServiceQuotasPagina
 Values:
 
 - `list_aws_default_service_quotas`
+
+<a id="listrequestedservicequotachangehistorybyquotapaginatorname"></a>
 
 ## ListRequestedServiceQuotaChangeHistoryByQuotaPaginatorName
 
@@ -54,6 +62,8 @@ Values:
 
 - `list_requested_service_quota_change_history_by_quota`
 
+<a id="listrequestedservicequotachangehistorypaginatorname"></a>
+
 ## ListRequestedServiceQuotaChangeHistoryPaginatorName
 
 ```python
@@ -63,6 +73,8 @@ from mypy_boto3_service_quotas.literals import ListRequestedServiceQuotaChangeHi
 Values:
 
 - `list_requested_service_quota_change_history`
+
+<a id="listservicequotaincreaserequestsintemplatepaginatorname"></a>
 
 ## ListServiceQuotaIncreaseRequestsInTemplatePaginatorName
 
@@ -74,6 +86,8 @@ Values:
 
 - `list_service_quota_increase_requests_in_template`
 
+<a id="listservicequotaspaginatorname"></a>
+
 ## ListServiceQuotasPaginatorName
 
 ```python
@@ -84,6 +98,8 @@ Values:
 
 - `list_service_quotas`
 
+<a id="listservicespaginatorname"></a>
+
 ## ListServicesPaginatorName
 
 ```python
@@ -93,6 +109,8 @@ from mypy_boto3_service_quotas.literals import ListServicesPaginatorName
 Values:
 
 - `list_services`
+
+<a id="periodunittype"></a>
 
 ## PeriodUnitType
 
@@ -110,6 +128,8 @@ Values:
 - `SECOND`
 - `WEEK`
 
+<a id="requeststatustype"></a>
+
 ## RequestStatusType
 
 ```python
@@ -124,6 +144,8 @@ Values:
 - `DENIED`
 - `PENDING`
 
+<a id="servicequotatemplateassociationstatustype"></a>
+
 ## ServiceQuotaTemplateAssociationStatusType
 
 ```python
@@ -134,6 +156,8 @@ Values:
 
 - `ASSOCIATED`
 - `DISASSOCIATED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -442,6 +466,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

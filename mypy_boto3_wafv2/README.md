@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-wafv2-module"></a>
+
 # Type annotations for boto3 WAFV2 module
 
 > [Index](..) > WAFV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [WAFV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2)
 type annotations stubs module
-[mypy_boto3_wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
+[mypy-boto3-wafv2](https://pypi.org/project/mypy-boto3-wafv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[wafv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[wafv2]'
+
+# standalone installation
 pip install mypy-boto3-wafv2
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-wafv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="wafv2client"></a>
+
 ## WAFV2Client
 
 Type annotations for `boto3.client("wafv2")` as [WAFV2Client](./client.md)
@@ -27,6 +39,8 @@ Can be used directly:
 ```python
 from mypy_boto3_wafv2.client import WAFV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -79,6 +93,8 @@ from mypy_boto3_wafv2.client import WAFV2Client
 - [update_rule_group](./client.md#update_rule_group)
 - [update_web_acl](./client.md#update_web_acl)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 WAFV2Client [exceptions](./client.md#exceptions)
@@ -101,6 +117,8 @@ WAFV2Client [exceptions](./client.md#exceptions)
 - WAFTagOperationException
 - WAFTagOperationInternalErrorException
 - WAFUnavailableEntityException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -131,6 +149,8 @@ from mypy_boto3_wafv2.literals import ActionValueType, ...
 - [ScopeType](./literals.md#scopetype)
 - [TextTransformationTypeType](./literals.md#texttransformationtypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

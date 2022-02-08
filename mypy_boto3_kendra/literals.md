@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kendra-module"></a>
+
 # Literals for boto3 kendra module
 
 > [Index](..) > [kendra](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
 type annotations stubs module
-[mypy_boto3_kendra](https://pypi.org/project/mypy-boto3-kendra/).
+[mypy-boto3-kendra](https://pypi.org/project/mypy-boto3-kendra/).
 
 - [Literals for boto3 kendra module](#literals-for-boto3-kendra-module)
   - [AdditionalResultAttributeValueTypeType](#additionalresultattributevaluetypetype)
@@ -60,6 +62,8 @@ type annotations stubs module
   - [WebCrawlerModeType](#webcrawlermodetype)
   - [ServiceName](#servicename)
 
+<a id="additionalresultattributevaluetypetype"></a>
+
 ## AdditionalResultAttributeValueTypeType
 
 ```python
@@ -69,6 +73,8 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType
 Values:
 
 - `TEXT_WITH_HIGHLIGHTS_VALUE`
+
+<a id="conditionoperatortype"></a>
 
 ## ConditionOperatorType
 
@@ -90,6 +96,8 @@ Values:
 - `NotEquals`
 - `NotExists`
 
+<a id="confluenceattachmentfieldnametype"></a>
+
 ## ConfluenceAttachmentFieldNameType
 
 ```python
@@ -110,6 +118,8 @@ Values:
 - `URL`
 - `VERSION`
 
+<a id="confluenceblogfieldnametype"></a>
+
 ## ConfluenceBlogFieldNameType
 
 ```python
@@ -127,6 +137,8 @@ Values:
 - `SPACE_NAME`
 - `URL`
 - `VERSION`
+
+<a id="confluencepagefieldnametype"></a>
 
 ## ConfluencePageFieldNameType
 
@@ -149,6 +161,8 @@ Values:
 - `URL`
 - `VERSION`
 
+<a id="confluencespacefieldnametype"></a>
+
 ## ConfluenceSpaceFieldNameType
 
 ```python
@@ -162,6 +176,8 @@ Values:
 - `SPACE_KEY`
 - `URL`
 
+<a id="confluenceversiontype"></a>
+
 ## ConfluenceVersionType
 
 ```python
@@ -172,6 +188,8 @@ Values:
 
 - `CLOUD`
 - `SERVER`
+
+<a id="contenttypetype"></a>
 
 ## ContentTypeType
 
@@ -187,6 +205,8 @@ Values:
 - `PLAIN_TEXT`
 - `PPT`
 
+<a id="datasourcestatustype"></a>
+
 ## DataSourceStatusType
 
 ```python
@@ -200,6 +220,8 @@ Values:
 - `DELETING`
 - `FAILED`
 - `UPDATING`
+
+<a id="datasourcesyncjobstatustype"></a>
 
 ## DataSourceSyncJobStatusType
 
@@ -216,6 +238,8 @@ Values:
 - `SUCCEEDED`
 - `SYNCING`
 - `SYNCING_INDEXING`
+
+<a id="datasourcetypetype"></a>
 
 ## DataSourceTypeType
 
@@ -237,6 +261,8 @@ Values:
 - `WEBCRAWLER`
 - `WORKDOCS`
 
+<a id="databaseenginetypetype"></a>
+
 ## DatabaseEngineTypeType
 
 ```python
@@ -250,6 +276,8 @@ Values:
 - `RDS_MYSQL`
 - `RDS_POSTGRESQL`
 
+<a id="documentattributevaluetypetype"></a>
+
 ## DocumentAttributeValueTypeType
 
 ```python
@@ -262,6 +290,8 @@ Values:
 - `LONG_VALUE`
 - `STRING_LIST_VALUE`
 - `STRING_VALUE`
+
+<a id="documentstatustype"></a>
 
 ## DocumentStatusType
 
@@ -278,6 +308,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATED`
 
+<a id="endpointtypetype"></a>
+
 ## EndpointTypeType
 
 ```python
@@ -287,6 +319,8 @@ from mypy_boto3_kendra.literals import EndpointTypeType
 Values:
 
 - `HOME`
+
+<a id="entitytypetype"></a>
 
 ## EntityTypeType
 
@@ -299,6 +333,8 @@ Values:
 - `GROUP`
 - `USER`
 
+<a id="errorcodetype"></a>
+
 ## ErrorCodeType
 
 ```python
@@ -309,6 +345,8 @@ Values:
 
 - `InternalError`
 - `InvalidRequest`
+
+<a id="experiencestatustype"></a>
 
 ## ExperienceStatusType
 
@@ -323,6 +361,8 @@ Values:
 - `DELETING`
 - `FAILED`
 
+<a id="faqfileformattype"></a>
+
 ## FaqFileFormatType
 
 ```python
@@ -334,6 +374,8 @@ Values:
 - `CSV`
 - `CSV_WITH_HEADER`
 - `JSON`
+
+<a id="faqstatustype"></a>
 
 ## FaqStatusType
 
@@ -349,6 +391,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="highlighttypetype"></a>
+
 ## HighlightTypeType
 
 ```python
@@ -360,6 +404,8 @@ Values:
 - `STANDARD`
 - `THESAURUS_SYNONYM`
 
+<a id="indexeditiontype"></a>
+
 ## IndexEditionType
 
 ```python
@@ -370,6 +416,8 @@ Values:
 
 - `DEVELOPER_EDITION`
 - `ENTERPRISE_EDITION`
+
+<a id="indexstatustype"></a>
 
 ## IndexStatusType
 
@@ -386,6 +434,8 @@ Values:
 - `SYSTEM_UPDATING`
 - `UPDATING`
 
+<a id="intervaltype"></a>
+
 ## IntervalType
 
 ```python
@@ -401,6 +451,8 @@ Values:
 - `TWO_MONTHS_AGO`
 - `TWO_WEEKS_AGO`
 
+<a id="keylocationtype"></a>
+
 ## KeyLocationType
 
 ```python
@@ -411,6 +463,8 @@ Values:
 
 - `SECRET_MANAGER`
 - `URL`
+
+<a id="metrictypetype"></a>
 
 ## MetricTypeType
 
@@ -427,6 +481,8 @@ Values:
 - `QUERIES_BY_ZERO_RESULT_RATE`
 - `TREND_QUERY_DOC_METRICS`
 
+<a id="modetype"></a>
+
 ## ModeType
 
 ```python
@@ -437,6 +493,8 @@ Values:
 
 - `ENABLED`
 - `LEARN_ONLY`
+
+<a id="ordertype"></a>
 
 ## OrderType
 
@@ -449,6 +507,8 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="personatype"></a>
+
 ## PersonaType
 
 ```python
@@ -459,6 +519,8 @@ Values:
 
 - `OWNER`
 - `VIEWER`
+
+<a id="principalmappingstatustype"></a>
 
 ## PrincipalMappingStatusType
 
@@ -474,6 +536,8 @@ Values:
 - `PROCESSING`
 - `SUCCEEDED`
 
+<a id="principaltypetype"></a>
+
 ## PrincipalTypeType
 
 ```python
@@ -484,6 +548,8 @@ Values:
 
 - `GROUP`
 - `USER`
+
+<a id="queryidentifiersenclosingoptiontype"></a>
 
 ## QueryIdentifiersEnclosingOptionType
 
@@ -496,6 +562,8 @@ Values:
 - `DOUBLE_QUOTES`
 - `NONE`
 
+<a id="queryresulttypetype"></a>
+
 ## QueryResultTypeType
 
 ```python
@@ -507,6 +575,8 @@ Values:
 - `ANSWER`
 - `DOCUMENT`
 - `QUESTION_ANSWER`
+
+<a id="querysuggestionsblockliststatustype"></a>
 
 ## QuerySuggestionsBlockListStatusType
 
@@ -523,6 +593,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="querysuggestionsstatustype"></a>
+
 ## QuerySuggestionsStatusType
 
 ```python
@@ -533,6 +605,8 @@ Values:
 
 - `ACTIVE`
 - `UPDATING`
+
+<a id="readaccesstypetype"></a>
 
 ## ReadAccessTypeType
 
@@ -545,6 +619,8 @@ Values:
 - `ALLOW`
 - `DENY`
 
+<a id="relevancetypetype"></a>
+
 ## RelevanceTypeType
 
 ```python
@@ -555,6 +631,8 @@ Values:
 
 - `NOT_RELEVANT`
 - `RELEVANT`
+
+<a id="salesforcechatterfeedincludefiltertypetype"></a>
 
 ## SalesforceChatterFeedIncludeFilterTypeType
 
@@ -567,6 +645,8 @@ Values:
 - `ACTIVE_USER`
 - `STANDARD_USER`
 
+<a id="salesforceknowledgearticlestatetype"></a>
+
 ## SalesforceKnowledgeArticleStateType
 
 ```python
@@ -578,6 +658,8 @@ Values:
 - `ARCHIVED`
 - `DRAFT`
 - `PUBLISHED`
+
+<a id="salesforcestandardobjectnametype"></a>
 
 ## SalesforceStandardObjectNameType
 
@@ -605,6 +687,8 @@ Values:
 - `TASK`
 - `USER`
 
+<a id="scoreconfidencetype"></a>
+
 ## ScoreConfidenceType
 
 ```python
@@ -619,6 +703,8 @@ Values:
 - `NOT_AVAILABLE`
 - `VERY_HIGH`
 
+<a id="servicenowauthenticationtypetype"></a>
+
 ## ServiceNowAuthenticationTypeType
 
 ```python
@@ -630,6 +716,8 @@ Values:
 - `HTTP_BASIC`
 - `OAUTH2`
 
+<a id="servicenowbuildversiontypetype"></a>
+
 ## ServiceNowBuildVersionTypeType
 
 ```python
@@ -640,6 +728,8 @@ Values:
 
 - `LONDON`
 - `OTHERS`
+
+<a id="sharepointversiontype"></a>
 
 ## SharePointVersionType
 
@@ -653,6 +743,8 @@ Values:
 - `SHAREPOINT_2016`
 - `SHAREPOINT_ONLINE`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -663,6 +755,8 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="thesaurusstatustype"></a>
 
 ## ThesaurusStatusType
 
@@ -679,6 +773,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="usercontextpolicytype"></a>
+
 ## UserContextPolicyType
 
 ```python
@@ -689,6 +785,8 @@ Values:
 
 - `ATTRIBUTE_FILTER`
 - `USER_TOKEN`
+
+<a id="usergroupresolutionmodetype"></a>
 
 ## UserGroupResolutionModeType
 
@@ -701,6 +799,8 @@ Values:
 - `AWS_SSO`
 - `NONE`
 
+<a id="warningcodetype"></a>
+
 ## WarningCodeType
 
 ```python
@@ -710,6 +810,8 @@ from mypy_boto3_kendra.literals import WarningCodeType
 Values:
 
 - `QUERY_LANGUAGE_INVALID_SYNTAX`
+
+<a id="webcrawlermodetype"></a>
 
 ## WebCrawlerModeType
 
@@ -722,6 +824,8 @@ Values:
 - `EVERYTHING`
 - `HOST_ONLY`
 - `SUBDOMAINS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

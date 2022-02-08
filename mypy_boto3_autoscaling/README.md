@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-autoscaling-module"></a>
+
 # Type annotations for boto3 AutoScaling module
 
 > [Index](..) > AutoScaling
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/autoscaling.html#AutoScaling)
 type annotations stubs module
-[mypy_boto3_autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
+[mypy-boto3-autoscaling](https://pypi.org/project/mypy-boto3-autoscaling/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[autoscaling]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[autoscaling]'
+
+# standalone installation
 pip install mypy-boto3-autoscaling
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-autoscaling
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="autoscalingclient"></a>
+
 ## AutoScalingClient
 
 Type annotations for `boto3.client("autoscaling")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_autoscaling.client import AutoScalingClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -98,6 +112,8 @@ from mypy_boto3_autoscaling.client import AutoScalingClient
 - [terminate_instance_in_auto_scaling_group](./client.md#terminate_instance_in_auto_scaling_group)
 - [update_auto_scaling_group](./client.md#update_auto_scaling_group)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AutoScalingClient [exceptions](./client.md#exceptions)
@@ -113,6 +129,8 @@ AutoScalingClient [exceptions](./client.md#exceptions)
 - ScalingActivityInProgressFault
 - ServiceLinkedRoleFailure
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -121,7 +139,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_autoscaling.paginators import DescribeAutoScalingGroupsPaginator, ...
+from mypy_boto3_autoscaling.paginator import DescribeAutoScalingGroupsPaginator, ...
 ```
 
 - [DescribeAutoScalingGroupsPaginator](./paginators.md#describeautoscalinggroupspaginator)
@@ -134,6 +152,8 @@ from mypy_boto3_autoscaling.paginators import DescribeAutoScalingGroupsPaginator
 - [DescribeScalingActivitiesPaginator](./paginators.md#describescalingactivitiespaginator)
 - [DescribeScheduledActionsPaginator](./paginators.md#describescheduledactionspaginator)
 - [DescribeTagsPaginator](./paginators.md#describetagspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -181,6 +201,8 @@ from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType, ...
 - [WarmPoolStatusType](./literals.md#warmpoolstatustype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

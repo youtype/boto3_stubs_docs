@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sagemakerruntime-module"></a>
+
 # Literals for boto3 SageMakerRuntime module
 
 > [Index](..) > [SageMakerRuntime](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [SageMakerRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-runtime.html#SageMakerRuntime)
 type annotations stubs module
-[mypy_boto3_sagemaker_runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
+[mypy-boto3-sagemaker-runtime](https://pypi.org/project/mypy-boto3-sagemaker-runtime/).
 
 - [Literals for boto3 SageMakerRuntime module](#literals-for-boto3-sagemakerruntime-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

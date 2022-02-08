@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ssm-module"></a>
+
 # Typed dictionaries for boto3 SSM module
 
 > [Index](..) > [SSM](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
 type annotations stubs module
-[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [Typed dictionaries for boto3 SSM module](#typed-dictionaries-for-boto3-ssm-module)
   - [AccountSharingInfoTypeDef](#accountsharinginfotypedef)
@@ -409,6 +411,8 @@ type annotations stubs module
   - [UpdateServiceSettingRequestRequestTypeDef](#updateservicesettingrequestrequesttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="accountsharinginfotypedef"></a>
+
 ## AccountSharingInfoTypeDef
 
 ```python
@@ -419,6 +423,8 @@ Optional fields:
 
 - `AccountId`: `str`
 - `SharedDocumentVersion`: `str`
+
+<a id="activationtypedef"></a>
 
 ## ActivationTypeDef
 
@@ -439,6 +445,8 @@ Optional fields:
 - `CreatedDate`: `datetime`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="addtagstoresourcerequestrequesttypedef"></a>
+
 ## AddTagsToResourceRequestRequestTypeDef
 
 ```python
@@ -451,6 +459,8 @@ Required fields:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
 - `ResourceId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="associateopsitemrelateditemrequestrequesttypedef"></a>
 
 ## AssociateOpsItemRelatedItemRequestRequestTypeDef
 
@@ -465,6 +475,8 @@ Required fields:
 - `ResourceType`: `str`
 - `ResourceUri`: `str`
 
+<a id="associateopsitemrelateditemresponsetypedef"></a>
+
 ## AssociateOpsItemRelatedItemResponseTypeDef
 
 ```python
@@ -476,6 +488,8 @@ Required fields:
 - `AssociationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associationdescriptiontypedef"></a>
 
 ## AssociationDescriptionTypeDef
 
@@ -515,6 +529,8 @@ Optional fields:
 - `TargetLocations`:
   `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
+<a id="associationexecutionfiltertypedef"></a>
+
 ## AssociationExecutionFilterTypeDef
 
 ```python
@@ -528,6 +544,8 @@ Required fields:
 - `Value`: `str`
 - `Type`:
   [AssociationFilterOperatorTypeType](./literals.md#associationfilteroperatortypetype)
+
+<a id="associationexecutiontargettypedef"></a>
 
 ## AssociationExecutionTargetTypeDef
 
@@ -547,6 +565,8 @@ Optional fields:
 - `LastExecutionDate`: `datetime`
 - `OutputSource`: [OutputSourceTypeDef](./type_defs.md#outputsourcetypedef)
 
+<a id="associationexecutiontargetsfiltertypedef"></a>
+
 ## AssociationExecutionTargetsFilterTypeDef
 
 ```python
@@ -558,6 +578,8 @@ Required fields:
 - `Key`:
   [AssociationExecutionTargetsFilterKeyType](./literals.md#associationexecutiontargetsfilterkeytype)
 - `Value`: `str`
+
+<a id="associationexecutiontypedef"></a>
 
 ## AssociationExecutionTypeDef
 
@@ -576,6 +598,8 @@ Optional fields:
 - `LastExecutionDate`: `datetime`
 - `ResourceCountByStatus`: `str`
 
+<a id="associationfiltertypedef"></a>
+
 ## AssociationFilterTypeDef
 
 ```python
@@ -586,6 +610,8 @@ Required fields:
 
 - `key`: [AssociationFilterKeyType](./literals.md#associationfilterkeytype)
 - `value`: `str`
+
+<a id="associationoverviewtypedef"></a>
 
 ## AssociationOverviewTypeDef
 
@@ -598,6 +624,8 @@ Optional fields:
 - `Status`: `str`
 - `DetailedStatus`: `str`
 - `AssociationStatusAggregatedCount`: `Dict`\[`str`, `int`\]
+
+<a id="associationstatustypedef"></a>
 
 ## AssociationStatusTypeDef
 
@@ -614,6 +642,8 @@ Required fields:
 Optional fields:
 
 - `AdditionalInfo`: `str`
+
+<a id="associationtypedef"></a>
 
 ## AssociationTypeDef
 
@@ -634,6 +664,8 @@ Optional fields:
   [AssociationOverviewTypeDef](./type_defs.md#associationoverviewtypedef)
 - `ScheduleExpression`: `str`
 - `AssociationName`: `str`
+
+<a id="associationversioninfotypedef"></a>
 
 ## AssociationVersionInfoTypeDef
 
@@ -665,6 +697,8 @@ Optional fields:
 - `TargetLocations`:
   `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
+<a id="attachmentcontenttypedef"></a>
+
 ## AttachmentContentTypeDef
 
 ```python
@@ -680,6 +714,8 @@ Optional fields:
   [AttachmentHashTypeType](./literals.md#attachmenthashtypetype))
 - `Url`: `str`
 
+<a id="attachmentinformationtypedef"></a>
+
 ## AttachmentInformationTypeDef
 
 ```python
@@ -689,6 +725,8 @@ from mypy_boto3_ssm.type_defs import AttachmentInformationTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="attachmentssourcetypedef"></a>
 
 ## AttachmentsSourceTypeDef
 
@@ -702,6 +740,8 @@ Optional fields:
 - `Values`: `Sequence`\[`str`\]
 - `Name`: `str`
 
+<a id="automationexecutionfiltertypedef"></a>
+
 ## AutomationExecutionFilterTypeDef
 
 ```python
@@ -713,6 +753,8 @@ Required fields:
 - `Key`:
   [AutomationExecutionFilterKeyType](./literals.md#automationexecutionfilterkeytype)
 - `Values`: `Sequence`\[`str`\]
+
+<a id="automationexecutionmetadatatypedef"></a>
 
 ## AutomationExecutionMetadataTypeDef
 
@@ -753,6 +795,8 @@ Optional fields:
 - `OpsItemId`: `str`
 - `AssociationId`: `str`
 - `ChangeRequestName`: `str`
+
+<a id="automationexecutiontypedef"></a>
 
 ## AutomationExecutionTypeDef
 
@@ -800,6 +844,8 @@ Optional fields:
 - `AssociationId`: `str`
 - `ChangeRequestName`: `str`
 
+<a id="baselineoverridetypedef"></a>
+
 ## BaselineOverrideTypeDef
 
 ```python
@@ -822,6 +868,8 @@ Optional fields:
 - `Sources`:
   `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 
+<a id="cancelcommandrequestrequesttypedef"></a>
+
 ## CancelCommandRequestRequestTypeDef
 
 ```python
@@ -836,6 +884,8 @@ Optional fields:
 
 - `InstanceIds`: `Sequence`\[`str`\]
 
+<a id="cancelmaintenancewindowexecutionrequestrequesttypedef"></a>
+
 ## CancelMaintenanceWindowExecutionRequestRequestTypeDef
 
 ```python
@@ -845,6 +895,8 @@ from mypy_boto3_ssm.type_defs import CancelMaintenanceWindowExecutionRequestRequ
 Required fields:
 
 - `WindowExecutionId`: `str`
+
+<a id="cancelmaintenancewindowexecutionresulttypedef"></a>
 
 ## CancelMaintenanceWindowExecutionResultTypeDef
 
@@ -858,6 +910,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="cloudwatchoutputconfigtypedef"></a>
+
 ## CloudWatchOutputConfigTypeDef
 
 ```python
@@ -869,6 +923,8 @@ Optional fields:
 - `CloudWatchLogGroupName`: `str`
 - `CloudWatchOutputEnabled`: `bool`
 
+<a id="commandfiltertypedef"></a>
+
 ## CommandFilterTypeDef
 
 ```python
@@ -879,6 +935,8 @@ Required fields:
 
 - `key`: [CommandFilterKeyType](./literals.md#commandfilterkeytype)
 - `value`: `str`
+
+<a id="commandinvocationtypedef"></a>
 
 ## CommandInvocationTypeDef
 
@@ -909,6 +967,8 @@ Optional fields:
 - `CloudWatchOutputConfig`:
   [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
 
+<a id="commandplugintypedef"></a>
+
 ## CommandPluginTypeDef
 
 ```python
@@ -929,6 +989,8 @@ Optional fields:
 - `OutputS3Region`: `str`
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
+
+<a id="commandtypedef"></a>
 
 ## CommandTypeDef
 
@@ -965,6 +1027,8 @@ Optional fields:
   [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
 - `TimeoutSeconds`: `int`
 
+<a id="complianceexecutionsummarytypedef"></a>
+
 ## ComplianceExecutionSummaryTypeDef
 
 ```python
@@ -979,6 +1043,8 @@ Optional fields:
 
 - `ExecutionId`: `str`
 - `ExecutionType`: `str`
+
+<a id="complianceitementrytypedef"></a>
 
 ## ComplianceItemEntryTypeDef
 
@@ -996,6 +1062,8 @@ Optional fields:
 - `Id`: `str`
 - `Title`: `str`
 - `Details`: `Mapping`\[`str`, `str`\]
+
+<a id="complianceitemtypedef"></a>
 
 ## ComplianceItemTypeDef
 
@@ -1016,6 +1084,8 @@ Optional fields:
   [ComplianceExecutionSummaryTypeDef](./type_defs.md#complianceexecutionsummarytypedef)
 - `Details`: `Dict`\[`str`, `str`\]
 
+<a id="compliancestringfiltertypedef"></a>
+
 ## ComplianceStringFilterTypeDef
 
 ```python
@@ -1028,6 +1098,8 @@ Optional fields:
 - `Values`: `Sequence`\[`str`\]
 - `Type`:
   [ComplianceQueryOperatorTypeType](./literals.md#compliancequeryoperatortypetype)
+
+<a id="compliancesummaryitemtypedef"></a>
 
 ## ComplianceSummaryItemTypeDef
 
@@ -1043,6 +1115,8 @@ Optional fields:
 - `NonCompliantSummary`:
   [NonCompliantSummaryTypeDef](./type_defs.md#noncompliantsummarytypedef)
 
+<a id="compliantsummarytypedef"></a>
+
 ## CompliantSummaryTypeDef
 
 ```python
@@ -1054,6 +1128,8 @@ Optional fields:
 - `CompliantCount`: `int`
 - `SeveritySummary`:
   [SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef)
+
+<a id="createactivationrequestrequesttypedef"></a>
 
 ## CreateActivationRequestRequestTypeDef
 
@@ -1075,6 +1151,8 @@ Optional fields:
 - `RegistrationMetadata`:
   `Sequence`\[[RegistrationMetadataItemTypeDef](./type_defs.md#registrationmetadataitemtypedef)\]
 
+<a id="createactivationresulttypedef"></a>
+
 ## CreateActivationResultTypeDef
 
 ```python
@@ -1087,6 +1165,8 @@ Required fields:
 - `ActivationCode`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassociationbatchrequestentrytypedef"></a>
 
 ## CreateAssociationBatchRequestEntryTypeDef
 
@@ -1120,6 +1200,8 @@ Optional fields:
 - `TargetLocations`:
   `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
+<a id="createassociationbatchrequestrequesttypedef"></a>
+
 ## CreateAssociationBatchRequestRequestTypeDef
 
 ```python
@@ -1130,6 +1212,8 @@ Required fields:
 
 - `Entries`:
   `Sequence`\[[CreateAssociationBatchRequestEntryTypeDef](./type_defs.md#createassociationbatchrequestentrytypedef)\]
+
+<a id="createassociationbatchresulttypedef"></a>
 
 ## CreateAssociationBatchResultTypeDef
 
@@ -1145,6 +1229,8 @@ Required fields:
   `List`\[[FailedCreateAssociationTypeDef](./type_defs.md#failedcreateassociationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createassociationrequestrequesttypedef"></a>
 
 ## CreateAssociationRequestRequestTypeDef
 
@@ -1178,6 +1264,8 @@ Optional fields:
 - `TargetLocations`:
   `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
+<a id="createassociationresulttypedef"></a>
+
 ## CreateAssociationResultTypeDef
 
 ```python
@@ -1190,6 +1278,8 @@ Required fields:
   [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdocumentrequestrequesttypedef"></a>
 
 ## CreateDocumentRequestRequestTypeDef
 
@@ -1215,6 +1305,8 @@ Optional fields:
 - `TargetType`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createdocumentresulttypedef"></a>
+
 ## CreateDocumentResultTypeDef
 
 ```python
@@ -1227,6 +1319,8 @@ Required fields:
   [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmaintenancewindowrequestrequesttypedef"></a>
 
 ## CreateMaintenanceWindowRequestRequestTypeDef
 
@@ -1252,6 +1346,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createmaintenancewindowresulttypedef"></a>
+
 ## CreateMaintenanceWindowResultTypeDef
 
 ```python
@@ -1263,6 +1359,8 @@ Required fields:
 - `WindowId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createopsitemrequestrequesttypedef"></a>
 
 ## CreateOpsItemRequestRequestTypeDef
 
@@ -1294,6 +1392,8 @@ Optional fields:
 - `PlannedStartTime`: `Union`\[`datetime`, `str`\]
 - `PlannedEndTime`: `Union`\[`datetime`, `str`\]
 
+<a id="createopsitemresponsetypedef"></a>
+
 ## CreateOpsItemResponseTypeDef
 
 ```python
@@ -1305,6 +1405,8 @@ Required fields:
 - `OpsItemId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createopsmetadatarequestrequesttypedef"></a>
 
 ## CreateOpsMetadataRequestRequestTypeDef
 
@@ -1322,6 +1424,8 @@ Optional fields:
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createopsmetadataresulttypedef"></a>
+
 ## CreateOpsMetadataResultTypeDef
 
 ```python
@@ -1333,6 +1437,8 @@ Required fields:
 - `OpsMetadataArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpatchbaselinerequestrequesttypedef"></a>
 
 ## CreatePatchBaselineRequestRequestTypeDef
 
@@ -1363,6 +1469,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createpatchbaselineresulttypedef"></a>
+
 ## CreatePatchBaselineResultTypeDef
 
 ```python
@@ -1374,6 +1482,8 @@ Required fields:
 - `BaselineId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresourcedatasyncrequestrequesttypedef"></a>
 
 ## CreateResourceDataSyncRequestRequestTypeDef
 
@@ -1393,6 +1503,8 @@ Optional fields:
 - `SyncSource`:
   [ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef)
 
+<a id="deleteactivationrequestrequesttypedef"></a>
+
 ## DeleteActivationRequestRequestTypeDef
 
 ```python
@@ -1402,6 +1514,8 @@ from mypy_boto3_ssm.type_defs import DeleteActivationRequestRequestTypeDef
 Required fields:
 
 - `ActivationId`: `str`
+
+<a id="deleteassociationrequestrequesttypedef"></a>
 
 ## DeleteAssociationRequestRequestTypeDef
 
@@ -1414,6 +1528,8 @@ Optional fields:
 - `Name`: `str`
 - `InstanceId`: `str`
 - `AssociationId`: `str`
+
+<a id="deletedocumentrequestrequesttypedef"></a>
 
 ## DeleteDocumentRequestRequestTypeDef
 
@@ -1430,6 +1546,8 @@ Optional fields:
 - `DocumentVersion`: `str`
 - `VersionName`: `str`
 - `Force`: `bool`
+
+<a id="deleteinventoryrequestrequesttypedef"></a>
 
 ## DeleteInventoryRequestRequestTypeDef
 
@@ -1448,6 +1566,8 @@ Optional fields:
 - `DryRun`: `bool`
 - `ClientToken`: `str`
 
+<a id="deleteinventoryresulttypedef"></a>
+
 ## DeleteInventoryResultTypeDef
 
 ```python
@@ -1463,6 +1583,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemaintenancewindowrequestrequesttypedef"></a>
+
 ## DeleteMaintenanceWindowRequestRequestTypeDef
 
 ```python
@@ -1472,6 +1594,8 @@ from mypy_boto3_ssm.type_defs import DeleteMaintenanceWindowRequestRequestTypeDe
 Required fields:
 
 - `WindowId`: `str`
+
+<a id="deletemaintenancewindowresulttypedef"></a>
 
 ## DeleteMaintenanceWindowResultTypeDef
 
@@ -1485,6 +1609,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteopsmetadatarequestrequesttypedef"></a>
+
 ## DeleteOpsMetadataRequestRequestTypeDef
 
 ```python
@@ -1494,6 +1620,8 @@ from mypy_boto3_ssm.type_defs import DeleteOpsMetadataRequestRequestTypeDef
 Required fields:
 
 - `OpsMetadataArn`: `str`
+
+<a id="deleteparameterrequestrequesttypedef"></a>
 
 ## DeleteParameterRequestRequestTypeDef
 
@@ -1505,6 +1633,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deleteparametersrequestrequesttypedef"></a>
+
 ## DeleteParametersRequestRequestTypeDef
 
 ```python
@@ -1514,6 +1644,8 @@ from mypy_boto3_ssm.type_defs import DeleteParametersRequestRequestTypeDef
 Required fields:
 
 - `Names`: `Sequence`\[`str`\]
+
+<a id="deleteparametersresulttypedef"></a>
 
 ## DeleteParametersResultTypeDef
 
@@ -1528,6 +1660,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepatchbaselinerequestrequesttypedef"></a>
+
 ## DeletePatchBaselineRequestRequestTypeDef
 
 ```python
@@ -1537,6 +1671,8 @@ from mypy_boto3_ssm.type_defs import DeletePatchBaselineRequestRequestTypeDef
 Required fields:
 
 - `BaselineId`: `str`
+
+<a id="deletepatchbaselineresulttypedef"></a>
 
 ## DeletePatchBaselineResultTypeDef
 
@@ -1549,6 +1685,8 @@ Required fields:
 - `BaselineId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteresourcedatasyncrequestrequesttypedef"></a>
 
 ## DeleteResourceDataSyncRequestRequestTypeDef
 
@@ -1564,6 +1702,8 @@ Optional fields:
 
 - `SyncType`: `str`
 
+<a id="deregistermanagedinstancerequestrequesttypedef"></a>
+
 ## DeregisterManagedInstanceRequestRequestTypeDef
 
 ```python
@@ -1573,6 +1713,8 @@ from mypy_boto3_ssm.type_defs import DeregisterManagedInstanceRequestRequestType
 Required fields:
 
 - `InstanceId`: `str`
+
+<a id="deregisterpatchbaselineforpatchgrouprequestrequesttypedef"></a>
 
 ## DeregisterPatchBaselineForPatchGroupRequestRequestTypeDef
 
@@ -1584,6 +1726,8 @@ Required fields:
 
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
+
+<a id="deregisterpatchbaselineforpatchgroupresulttypedef"></a>
 
 ## DeregisterPatchBaselineForPatchGroupResultTypeDef
 
@@ -1597,6 +1741,8 @@ Required fields:
 - `PatchGroup`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deregistertargetfrommaintenancewindowrequestrequesttypedef"></a>
 
 ## DeregisterTargetFromMaintenanceWindowRequestRequestTypeDef
 
@@ -1613,6 +1759,8 @@ Optional fields:
 
 - `Safe`: `bool`
 
+<a id="deregistertargetfrommaintenancewindowresulttypedef"></a>
+
 ## DeregisterTargetFromMaintenanceWindowResultTypeDef
 
 ```python
@@ -1626,6 +1774,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deregistertaskfrommaintenancewindowrequestrequesttypedef"></a>
+
 ## DeregisterTaskFromMaintenanceWindowRequestRequestTypeDef
 
 ```python
@@ -1636,6 +1786,8 @@ Required fields:
 
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
+
+<a id="deregistertaskfrommaintenancewindowresulttypedef"></a>
 
 ## DeregisterTaskFromMaintenanceWindowResultTypeDef
 
@@ -1650,6 +1802,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeactivationsfiltertypedef"></a>
+
 ## DescribeActivationsFilterTypeDef
 
 ```python
@@ -1661,6 +1815,8 @@ Optional fields:
 - `FilterKey`:
   [DescribeActivationsFilterKeysType](./literals.md#describeactivationsfilterkeystype)
 - `FilterValues`: `Sequence`\[`str`\]
+
+<a id="describeactivationsrequestrequesttypedef"></a>
 
 ## DescribeActivationsRequestRequestTypeDef
 
@@ -1675,6 +1831,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeactivationsresulttypedef"></a>
+
 ## DescribeActivationsResultTypeDef
 
 ```python
@@ -1688,6 +1846,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeassociationexecutiontargetsrequestrequesttypedef"></a>
 
 ## DescribeAssociationExecutionTargetsRequestRequestTypeDef
 
@@ -1707,6 +1867,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeassociationexecutiontargetsresulttypedef"></a>
+
 ## DescribeAssociationExecutionTargetsResultTypeDef
 
 ```python
@@ -1720,6 +1882,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeassociationexecutionsrequestrequesttypedef"></a>
 
 ## DescribeAssociationExecutionsRequestRequestTypeDef
 
@@ -1738,6 +1902,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeassociationexecutionsresulttypedef"></a>
+
 ## DescribeAssociationExecutionsResultTypeDef
 
 ```python
@@ -1752,6 +1918,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeassociationrequestrequesttypedef"></a>
+
 ## DescribeAssociationRequestRequestTypeDef
 
 ```python
@@ -1764,6 +1932,8 @@ Optional fields:
 - `InstanceId`: `str`
 - `AssociationId`: `str`
 - `AssociationVersion`: `str`
+
+<a id="describeassociationresulttypedef"></a>
 
 ## DescribeAssociationResultTypeDef
 
@@ -1778,6 +1948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeautomationexecutionsrequestrequesttypedef"></a>
+
 ## DescribeAutomationExecutionsRequestRequestTypeDef
 
 ```python
@@ -1790,6 +1962,8 @@ Optional fields:
   `Sequence`\[[AutomationExecutionFilterTypeDef](./type_defs.md#automationexecutionfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeautomationexecutionsresulttypedef"></a>
 
 ## DescribeAutomationExecutionsResultTypeDef
 
@@ -1804,6 +1978,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeautomationstepexecutionsrequestrequesttypedef"></a>
 
 ## DescribeAutomationStepExecutionsRequestRequestTypeDef
 
@@ -1823,6 +1999,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `ReverseOrder`: `bool`
 
+<a id="describeautomationstepexecutionsresulttypedef"></a>
+
 ## DescribeAutomationStepExecutionsResultTypeDef
 
 ```python
@@ -1837,6 +2015,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeavailablepatchesrequestrequesttypedef"></a>
+
 ## DescribeAvailablePatchesRequestRequestTypeDef
 
 ```python
@@ -1850,6 +2030,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeavailablepatchesresulttypedef"></a>
+
 ## DescribeAvailablePatchesResultTypeDef
 
 ```python
@@ -1862,6 +2044,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedocumentpermissionrequestrequesttypedef"></a>
 
 ## DescribeDocumentPermissionRequestRequestTypeDef
 
@@ -1880,6 +2064,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describedocumentpermissionresponsetypedef"></a>
+
 ## DescribeDocumentPermissionResponseTypeDef
 
 ```python
@@ -1894,6 +2080,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedocumentrequestrequesttypedef"></a>
 
 ## DescribeDocumentRequestRequestTypeDef
 
@@ -1910,6 +2098,8 @@ Optional fields:
 - `DocumentVersion`: `str`
 - `VersionName`: `str`
 
+<a id="describedocumentresulttypedef"></a>
+
 ## DescribeDocumentResultTypeDef
 
 ```python
@@ -1922,6 +2112,8 @@ Required fields:
   [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeffectiveinstanceassociationsrequestrequesttypedef"></a>
 
 ## DescribeEffectiveInstanceAssociationsRequestRequestTypeDef
 
@@ -1938,6 +2130,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeeffectiveinstanceassociationsresulttypedef"></a>
+
 ## DescribeEffectiveInstanceAssociationsResultTypeDef
 
 ```python
@@ -1951,6 +2145,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeeffectivepatchesforpatchbaselinerequestrequesttypedef"></a>
 
 ## DescribeEffectivePatchesForPatchBaselineRequestRequestTypeDef
 
@@ -1967,6 +2163,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeeffectivepatchesforpatchbaselineresulttypedef"></a>
+
 ## DescribeEffectivePatchesForPatchBaselineResultTypeDef
 
 ```python
@@ -1980,6 +2178,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstanceassociationsstatusrequestrequesttypedef"></a>
 
 ## DescribeInstanceAssociationsStatusRequestRequestTypeDef
 
@@ -1996,6 +2196,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeinstanceassociationsstatusresulttypedef"></a>
+
 ## DescribeInstanceAssociationsStatusResultTypeDef
 
 ```python
@@ -2009,6 +2211,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstanceinformationrequestrequesttypedef"></a>
 
 ## DescribeInstanceInformationRequestRequestTypeDef
 
@@ -2025,6 +2229,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeinstanceinformationresulttypedef"></a>
+
 ## DescribeInstanceInformationResultTypeDef
 
 ```python
@@ -2038,6 +2244,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancepatchstatesforpatchgrouprequestrequesttypedef"></a>
 
 ## DescribeInstancePatchStatesForPatchGroupRequestRequestTypeDef
 
@@ -2056,6 +2264,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describeinstancepatchstatesforpatchgroupresulttypedef"></a>
+
 ## DescribeInstancePatchStatesForPatchGroupResultTypeDef
 
 ```python
@@ -2069,6 +2279,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancepatchstatesrequestrequesttypedef"></a>
 
 ## DescribeInstancePatchStatesRequestRequestTypeDef
 
@@ -2085,6 +2297,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describeinstancepatchstatesresulttypedef"></a>
+
 ## DescribeInstancePatchStatesResultTypeDef
 
 ```python
@@ -2098,6 +2312,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeinstancepatchesrequestrequesttypedef"></a>
 
 ## DescribeInstancePatchesRequestRequestTypeDef
 
@@ -2116,6 +2332,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="describeinstancepatchesresulttypedef"></a>
+
 ## DescribeInstancePatchesResultTypeDef
 
 ```python
@@ -2130,6 +2348,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinventorydeletionsrequestrequesttypedef"></a>
+
 ## DescribeInventoryDeletionsRequestRequestTypeDef
 
 ```python
@@ -2141,6 +2361,8 @@ Optional fields:
 - `DeletionId`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="describeinventorydeletionsresulttypedef"></a>
 
 ## DescribeInventoryDeletionsResultTypeDef
 
@@ -2155,6 +2377,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowexecutiontaskinvocationsrequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowExecutionTaskInvocationsRequestRequestTypeDef
 
@@ -2174,6 +2398,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowexecutiontaskinvocationsresulttypedef"></a>
+
 ## DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef
 
 ```python
@@ -2187,6 +2413,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowexecutiontasksrequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowExecutionTasksRequestRequestTypeDef
 
@@ -2205,6 +2433,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowexecutiontasksresulttypedef"></a>
+
 ## DescribeMaintenanceWindowExecutionTasksResultTypeDef
 
 ```python
@@ -2218,6 +2448,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowexecutionsrequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowExecutionsRequestRequestTypeDef
 
@@ -2236,6 +2468,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowexecutionsresulttypedef"></a>
+
 ## DescribeMaintenanceWindowExecutionsResultTypeDef
 
 ```python
@@ -2249,6 +2483,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowschedulerequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowScheduleRequestRequestTypeDef
 
@@ -2267,6 +2503,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowscheduleresulttypedef"></a>
+
 ## DescribeMaintenanceWindowScheduleResultTypeDef
 
 ```python
@@ -2280,6 +2518,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowtargetsrequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowTargetsRequestRequestTypeDef
 
@@ -2298,6 +2538,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowtargetsresulttypedef"></a>
+
 ## DescribeMaintenanceWindowTargetsResultTypeDef
 
 ```python
@@ -2311,6 +2553,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowtasksrequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowTasksRequestRequestTypeDef
 
@@ -2329,6 +2573,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowtasksresulttypedef"></a>
+
 ## DescribeMaintenanceWindowTasksResultTypeDef
 
 ```python
@@ -2342,6 +2588,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemaintenancewindowsfortargetrequestrequesttypedef"></a>
 
 ## DescribeMaintenanceWindowsForTargetRequestRequestTypeDef
 
@@ -2360,6 +2608,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describemaintenancewindowsfortargetresulttypedef"></a>
+
 ## DescribeMaintenanceWindowsForTargetResultTypeDef
 
 ```python
@@ -2374,6 +2624,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemaintenancewindowsrequestrequesttypedef"></a>
+
 ## DescribeMaintenanceWindowsRequestRequestTypeDef
 
 ```python
@@ -2386,6 +2638,8 @@ Optional fields:
   `Sequence`\[[MaintenanceWindowFilterTypeDef](./type_defs.md#maintenancewindowfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describemaintenancewindowsresulttypedef"></a>
 
 ## DescribeMaintenanceWindowsResultTypeDef
 
@@ -2401,6 +2655,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeopsitemsrequestrequesttypedef"></a>
+
 ## DescribeOpsItemsRequestRequestTypeDef
 
 ```python
@@ -2413,6 +2669,8 @@ Optional fields:
   `Sequence`\[[OpsItemFilterTypeDef](./type_defs.md#opsitemfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describeopsitemsresponsetypedef"></a>
 
 ## DescribeOpsItemsResponseTypeDef
 
@@ -2427,6 +2685,8 @@ Required fields:
   `List`\[[OpsItemSummaryTypeDef](./type_defs.md#opsitemsummarytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeparametersrequestrequesttypedef"></a>
 
 ## DescribeParametersRequestRequestTypeDef
 
@@ -2443,6 +2703,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describeparametersresulttypedef"></a>
+
 ## DescribeParametersResultTypeDef
 
 ```python
@@ -2457,6 +2719,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepatchbaselinesrequestrequesttypedef"></a>
+
 ## DescribePatchBaselinesRequestRequestTypeDef
 
 ```python
@@ -2469,6 +2733,8 @@ Optional fields:
   `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describepatchbaselinesresulttypedef"></a>
 
 ## DescribePatchBaselinesResultTypeDef
 
@@ -2484,6 +2750,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepatchgroupstaterequestrequesttypedef"></a>
+
 ## DescribePatchGroupStateRequestRequestTypeDef
 
 ```python
@@ -2493,6 +2761,8 @@ from mypy_boto3_ssm.type_defs import DescribePatchGroupStateRequestRequestTypeDe
 Required fields:
 
 - `PatchGroup`: `str`
+
+<a id="describepatchgroupstateresulttypedef"></a>
 
 ## DescribePatchGroupStateResultTypeDef
 
@@ -2517,6 +2787,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepatchgroupsrequestrequesttypedef"></a>
+
 ## DescribePatchGroupsRequestRequestTypeDef
 
 ```python
@@ -2529,6 +2801,8 @@ Optional fields:
 - `Filters`:
   `Sequence`\[[PatchOrchestratorFilterTypeDef](./type_defs.md#patchorchestratorfiltertypedef)\]
 - `NextToken`: `str`
+
+<a id="describepatchgroupsresulttypedef"></a>
 
 ## DescribePatchGroupsResultTypeDef
 
@@ -2543,6 +2817,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describepatchpropertiesrequestrequesttypedef"></a>
 
 ## DescribePatchPropertiesRequestRequestTypeDef
 
@@ -2561,6 +2837,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="describepatchpropertiesresulttypedef"></a>
+
 ## DescribePatchPropertiesResultTypeDef
 
 ```python
@@ -2573,6 +2851,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describesessionsrequestrequesttypedef"></a>
 
 ## DescribeSessionsRequestRequestTypeDef
 
@@ -2591,6 +2871,8 @@ Optional fields:
 - `Filters`:
   `Sequence`\[[SessionFilterTypeDef](./type_defs.md#sessionfiltertypedef)\]
 
+<a id="describesessionsresponsetypedef"></a>
+
 ## DescribeSessionsResponseTypeDef
 
 ```python
@@ -2604,6 +2886,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociateopsitemrelateditemrequestrequesttypedef"></a>
+
 ## DisassociateOpsItemRelatedItemRequestRequestTypeDef
 
 ```python
@@ -2614,6 +2898,8 @@ Required fields:
 
 - `OpsItemId`: `str`
 - `AssociationId`: `str`
+
+<a id="documentdefaultversiondescriptiontypedef"></a>
 
 ## DocumentDefaultVersionDescriptionTypeDef
 
@@ -2626,6 +2912,8 @@ Optional fields:
 - `Name`: `str`
 - `DefaultVersion`: `str`
 - `DefaultVersionName`: `str`
+
+<a id="documentdescriptiontypedef"></a>
 
 ## DocumentDescriptionTypeDef
 
@@ -2670,6 +2958,8 @@ Optional fields:
 - `Category`: `List`\[`str`\]
 - `CategoryEnum`: `List`\[`str`\]
 
+<a id="documentfiltertypedef"></a>
+
 ## DocumentFilterTypeDef
 
 ```python
@@ -2680,6 +2970,8 @@ Required fields:
 
 - `key`: [DocumentFilterKeyType](./literals.md#documentfilterkeytype)
 - `value`: `str`
+
+<a id="documentidentifiertypedef"></a>
 
 ## DocumentIdentifierTypeDef
 
@@ -2706,6 +2998,8 @@ Optional fields:
 - `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `Author`: `str`
 
+<a id="documentkeyvaluesfiltertypedef"></a>
+
 ## DocumentKeyValuesFilterTypeDef
 
 ```python
@@ -2717,6 +3011,8 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="documentmetadataresponseinfotypedef"></a>
+
 ## DocumentMetadataResponseInfoTypeDef
 
 ```python
@@ -2727,6 +3023,8 @@ Optional fields:
 
 - `ReviewerResponse`:
   `List`\[[DocumentReviewerResponseSourceTypeDef](./type_defs.md#documentreviewerresponsesourcetypedef)\]
+
+<a id="documentparametertypedef"></a>
 
 ## DocumentParameterTypeDef
 
@@ -2740,6 +3038,8 @@ Optional fields:
 - `Type`: [DocumentParameterTypeType](./literals.md#documentparametertypetype)
 - `Description`: `str`
 - `DefaultValue`: `str`
+
+<a id="documentrequirestypedef"></a>
 
 ## DocumentRequiresTypeDef
 
@@ -2755,6 +3055,8 @@ Optional fields:
 
 - `Version`: `str`
 
+<a id="documentreviewcommentsourcetypedef"></a>
+
 ## DocumentReviewCommentSourceTypeDef
 
 ```python
@@ -2766,6 +3068,8 @@ Optional fields:
 - `Type`: `Literal['Comment']` (see
   [DocumentReviewCommentTypeType](./literals.md#documentreviewcommenttypetype))
 - `Content`: `str`
+
+<a id="documentreviewerresponsesourcetypedef"></a>
 
 ## DocumentReviewerResponseSourceTypeDef
 
@@ -2782,6 +3086,8 @@ Optional fields:
   `List`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
 - `Reviewer`: `str`
 
+<a id="documentreviewstypedef"></a>
+
 ## DocumentReviewsTypeDef
 
 ```python
@@ -2796,6 +3102,8 @@ Optional fields:
 
 - `Comment`:
   `Sequence`\[[DocumentReviewCommentSourceTypeDef](./type_defs.md#documentreviewcommentsourcetypedef)\]
+
+<a id="documentversioninfotypedef"></a>
 
 ## DocumentVersionInfoTypeDef
 
@@ -2816,6 +3124,8 @@ Optional fields:
 - `StatusInformation`: `str`
 - `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
 
+<a id="effectivepatchtypedef"></a>
+
 ## EffectivePatchTypeDef
 
 ```python
@@ -2826,6 +3136,8 @@ Optional fields:
 
 - `Patch`: [PatchTypeDef](./type_defs.md#patchtypedef)
 - `PatchStatus`: [PatchStatusTypeDef](./type_defs.md#patchstatustypedef)
+
+<a id="failedcreateassociationtypedef"></a>
 
 ## FailedCreateAssociationTypeDef
 
@@ -2840,6 +3152,8 @@ Optional fields:
 - `Message`: `str`
 - `Fault`: [FaultType](./literals.md#faulttype)
 
+<a id="failuredetailstypedef"></a>
+
 ## FailureDetailsTypeDef
 
 ```python
@@ -2852,6 +3166,8 @@ Optional fields:
 - `FailureType`: `str`
 - `Details`: `Dict`\[`str`, `List`\[`str`\]\]
 
+<a id="getautomationexecutionrequestrequesttypedef"></a>
+
 ## GetAutomationExecutionRequestRequestTypeDef
 
 ```python
@@ -2861,6 +3177,8 @@ from mypy_boto3_ssm.type_defs import GetAutomationExecutionRequestRequestTypeDef
 Required fields:
 
 - `AutomationExecutionId`: `str`
+
+<a id="getautomationexecutionresulttypedef"></a>
 
 ## GetAutomationExecutionResultTypeDef
 
@@ -2874,6 +3192,8 @@ Required fields:
   [AutomationExecutionTypeDef](./type_defs.md#automationexecutiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcalendarstaterequestrequesttypedef"></a>
 
 ## GetCalendarStateRequestRequestTypeDef
 
@@ -2889,6 +3209,8 @@ Optional fields:
 
 - `AtTime`: `str`
 
+<a id="getcalendarstateresponsetypedef"></a>
+
 ## GetCalendarStateResponseTypeDef
 
 ```python
@@ -2902,6 +3224,8 @@ Required fields:
 - `NextTransitionTime`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getcommandinvocationrequestrequesttypedef"></a>
 
 ## GetCommandInvocationRequestRequestTypeDef
 
@@ -2917,6 +3241,8 @@ Required fields:
 Optional fields:
 
 - `PluginName`: `str`
+
+<a id="getcommandinvocationresulttypedef"></a>
 
 ## GetCommandInvocationResultTypeDef
 
@@ -2948,6 +3274,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconnectionstatusrequestrequesttypedef"></a>
+
 ## GetConnectionStatusRequestRequestTypeDef
 
 ```python
@@ -2957,6 +3285,8 @@ from mypy_boto3_ssm.type_defs import GetConnectionStatusRequestRequestTypeDef
 Required fields:
 
 - `Target`: `str`
+
+<a id="getconnectionstatusresponsetypedef"></a>
 
 ## GetConnectionStatusResponseTypeDef
 
@@ -2971,6 +3301,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdefaultpatchbaselinerequestrequesttypedef"></a>
+
 ## GetDefaultPatchBaselineRequestRequestTypeDef
 
 ```python
@@ -2980,6 +3312,8 @@ from mypy_boto3_ssm.type_defs import GetDefaultPatchBaselineRequestRequestTypeDe
 Optional fields:
 
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
+
+<a id="getdefaultpatchbaselineresulttypedef"></a>
 
 ## GetDefaultPatchBaselineResultTypeDef
 
@@ -2993,6 +3327,8 @@ Required fields:
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdeployablepatchsnapshotforinstancerequestrequesttypedef"></a>
 
 ## GetDeployablePatchSnapshotForInstanceRequestRequestTypeDef
 
@@ -3010,6 +3346,8 @@ Optional fields:
 - `BaselineOverride`:
   [BaselineOverrideTypeDef](./type_defs.md#baselineoverridetypedef)
 
+<a id="getdeployablepatchsnapshotforinstanceresulttypedef"></a>
+
 ## GetDeployablePatchSnapshotForInstanceResultTypeDef
 
 ```python
@@ -3024,6 +3362,8 @@ Required fields:
 - `Product`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getdocumentrequestrequesttypedef"></a>
 
 ## GetDocumentRequestRequestTypeDef
 
@@ -3040,6 +3380,8 @@ Optional fields:
 - `VersionName`: `str`
 - `DocumentVersion`: `str`
 - `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
+
+<a id="getdocumentresulttypedef"></a>
 
 ## GetDocumentResultTypeDef
 
@@ -3067,6 +3409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinventoryrequestrequesttypedef"></a>
+
 ## GetInventoryRequestRequestTypeDef
 
 ```python
@@ -3084,6 +3428,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getinventoryresulttypedef"></a>
+
 ## GetInventoryResultTypeDef
 
 ```python
@@ -3097,6 +3443,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getinventoryschemarequestrequesttypedef"></a>
 
 ## GetInventorySchemaRequestRequestTypeDef
 
@@ -3112,6 +3460,8 @@ Optional fields:
 - `Aggregator`: `bool`
 - `SubType`: `bool`
 
+<a id="getinventoryschemaresulttypedef"></a>
+
 ## GetInventorySchemaResultTypeDef
 
 ```python
@@ -3126,6 +3476,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaintenancewindowexecutionrequestrequesttypedef"></a>
+
 ## GetMaintenanceWindowExecutionRequestRequestTypeDef
 
 ```python
@@ -3135,6 +3487,8 @@ from mypy_boto3_ssm.type_defs import GetMaintenanceWindowExecutionRequestRequest
 Required fields:
 
 - `WindowExecutionId`: `str`
+
+<a id="getmaintenancewindowexecutionresulttypedef"></a>
 
 ## GetMaintenanceWindowExecutionResultTypeDef
 
@@ -3154,6 +3508,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaintenancewindowexecutiontaskinvocationrequestrequesttypedef"></a>
+
 ## GetMaintenanceWindowExecutionTaskInvocationRequestRequestTypeDef
 
 ```python
@@ -3165,6 +3521,8 @@ Required fields:
 - `WindowExecutionId`: `str`
 - `TaskId`: `str`
 - `InvocationId`: `str`
+
+<a id="getmaintenancewindowexecutiontaskinvocationresulttypedef"></a>
 
 ## GetMaintenanceWindowExecutionTaskInvocationResultTypeDef
 
@@ -3191,6 +3549,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaintenancewindowexecutiontaskrequestrequesttypedef"></a>
+
 ## GetMaintenanceWindowExecutionTaskRequestRequestTypeDef
 
 ```python
@@ -3201,6 +3561,8 @@ Required fields:
 
 - `WindowExecutionId`: `str`
 - `TaskId`: `str`
+
+<a id="getmaintenancewindowexecutiontaskresulttypedef"></a>
 
 ## GetMaintenanceWindowExecutionTaskResultTypeDef
 
@@ -3229,6 +3591,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaintenancewindowrequestrequesttypedef"></a>
+
 ## GetMaintenanceWindowRequestRequestTypeDef
 
 ```python
@@ -3238,6 +3602,8 @@ from mypy_boto3_ssm.type_defs import GetMaintenanceWindowRequestRequestTypeDef
 Required fields:
 
 - `WindowId`: `str`
+
+<a id="getmaintenancewindowresulttypedef"></a>
 
 ## GetMaintenanceWindowResultTypeDef
 
@@ -3265,6 +3631,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaintenancewindowtaskrequestrequesttypedef"></a>
+
 ## GetMaintenanceWindowTaskRequestRequestTypeDef
 
 ```python
@@ -3275,6 +3643,8 @@ Required fields:
 
 - `WindowId`: `str`
 - `WindowTaskId`: `str`
+
+<a id="getmaintenancewindowtaskresulttypedef"></a>
 
 ## GetMaintenanceWindowTaskResultTypeDef
 
@@ -3306,6 +3676,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getopsitemrequestrequesttypedef"></a>
+
 ## GetOpsItemRequestRequestTypeDef
 
 ```python
@@ -3315,6 +3687,8 @@ from mypy_boto3_ssm.type_defs import GetOpsItemRequestRequestTypeDef
 Required fields:
 
 - `OpsItemId`: `str`
+
+<a id="getopsitemresponsetypedef"></a>
 
 ## GetOpsItemResponseTypeDef
 
@@ -3327,6 +3701,8 @@ Required fields:
 - `OpsItem`: [OpsItemTypeDef](./type_defs.md#opsitemtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getopsmetadatarequestrequesttypedef"></a>
 
 ## GetOpsMetadataRequestRequestTypeDef
 
@@ -3343,6 +3719,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getopsmetadataresulttypedef"></a>
+
 ## GetOpsMetadataResultTypeDef
 
 ```python
@@ -3357,6 +3735,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getopssummaryrequestrequesttypedef"></a>
 
 ## GetOpsSummaryRequestRequestTypeDef
 
@@ -3375,6 +3755,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getopssummaryresulttypedef"></a>
+
 ## GetOpsSummaryResultTypeDef
 
 ```python
@@ -3387,6 +3769,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getparameterhistoryrequestrequesttypedef"></a>
 
 ## GetParameterHistoryRequestRequestTypeDef
 
@@ -3404,6 +3788,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getparameterhistoryresulttypedef"></a>
+
 ## GetParameterHistoryResultTypeDef
 
 ```python
@@ -3417,6 +3803,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getparameterrequestrequesttypedef"></a>
 
 ## GetParameterRequestRequestTypeDef
 
@@ -3432,6 +3820,8 @@ Optional fields:
 
 - `WithDecryption`: `bool`
 
+<a id="getparameterresulttypedef"></a>
+
 ## GetParameterResultTypeDef
 
 ```python
@@ -3443,6 +3833,8 @@ Required fields:
 - `Parameter`: [ParameterTypeDef](./type_defs.md#parametertypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getparametersbypathrequestrequesttypedef"></a>
 
 ## GetParametersByPathRequestRequestTypeDef
 
@@ -3463,6 +3855,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getparametersbypathresulttypedef"></a>
+
 ## GetParametersByPathResultTypeDef
 
 ```python
@@ -3475,6 +3869,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getparametersrequestrequesttypedef"></a>
 
 ## GetParametersRequestRequestTypeDef
 
@@ -3490,6 +3886,8 @@ Optional fields:
 
 - `WithDecryption`: `bool`
 
+<a id="getparametersresulttypedef"></a>
+
 ## GetParametersResultTypeDef
 
 ```python
@@ -3502,6 +3900,8 @@ Required fields:
 - `InvalidParameters`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getpatchbaselineforpatchgrouprequestrequesttypedef"></a>
 
 ## GetPatchBaselineForPatchGroupRequestRequestTypeDef
 
@@ -3517,6 +3917,8 @@ Optional fields:
 
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 
+<a id="getpatchbaselineforpatchgroupresulttypedef"></a>
+
 ## GetPatchBaselineForPatchGroupResultTypeDef
 
 ```python
@@ -3531,6 +3933,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpatchbaselinerequestrequesttypedef"></a>
+
 ## GetPatchBaselineRequestRequestTypeDef
 
 ```python
@@ -3540,6 +3944,8 @@ from mypy_boto3_ssm.type_defs import GetPatchBaselineRequestRequestTypeDef
 Required fields:
 
 - `BaselineId`: `str`
+
+<a id="getpatchbaselineresulttypedef"></a>
 
 ## GetPatchBaselineResultTypeDef
 
@@ -3570,6 +3976,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getservicesettingrequestrequesttypedef"></a>
+
 ## GetServiceSettingRequestRequestTypeDef
 
 ```python
@@ -3579,6 +3987,8 @@ from mypy_boto3_ssm.type_defs import GetServiceSettingRequestRequestTypeDef
 Required fields:
 
 - `SettingId`: `str`
+
+<a id="getservicesettingresulttypedef"></a>
 
 ## GetServiceSettingResultTypeDef
 
@@ -3593,6 +4003,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="instanceaggregatedassociationoverviewtypedef"></a>
+
 ## InstanceAggregatedAssociationOverviewTypeDef
 
 ```python
@@ -3603,6 +4015,8 @@ Optional fields:
 
 - `DetailedStatus`: `str`
 - `InstanceAssociationStatusAggregatedCount`: `Dict`\[`str`, `int`\]
+
+<a id="instanceassociationoutputlocationtypedef"></a>
 
 ## InstanceAssociationOutputLocationTypeDef
 
@@ -3615,6 +4029,8 @@ Optional fields:
 - `S3Location`:
   [S3OutputLocationTypeDef](./type_defs.md#s3outputlocationtypedef)
 
+<a id="instanceassociationoutputurltypedef"></a>
+
 ## InstanceAssociationOutputUrlTypeDef
 
 ```python
@@ -3624,6 +4040,8 @@ from mypy_boto3_ssm.type_defs import InstanceAssociationOutputUrlTypeDef
 Optional fields:
 
 - `S3OutputUrl`: [S3OutputUrlTypeDef](./type_defs.md#s3outputurltypedef)
+
+<a id="instanceassociationstatusinfotypedef"></a>
 
 ## InstanceAssociationStatusInfoTypeDef
 
@@ -3647,6 +4065,8 @@ Optional fields:
   [InstanceAssociationOutputUrlTypeDef](./type_defs.md#instanceassociationoutputurltypedef)
 - `AssociationName`: `str`
 
+<a id="instanceassociationtypedef"></a>
+
 ## InstanceAssociationTypeDef
 
 ```python
@@ -3660,6 +4080,8 @@ Optional fields:
 - `Content`: `str`
 - `AssociationVersion`: `str`
 
+<a id="instanceinformationfiltertypedef"></a>
+
 ## InstanceInformationFilterTypeDef
 
 ```python
@@ -3672,6 +4094,8 @@ Required fields:
   [InstanceInformationFilterKeyType](./literals.md#instanceinformationfilterkeytype)
 - `valueSet`: `Sequence`\[`str`\]
 
+<a id="instanceinformationstringfiltertypedef"></a>
+
 ## InstanceInformationStringFilterTypeDef
 
 ```python
@@ -3682,6 +4106,8 @@ Required fields:
 
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="instanceinformationtypedef"></a>
 
 ## InstanceInformationTypeDef
 
@@ -3714,6 +4140,8 @@ Optional fields:
 - `SourceId`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 
+<a id="instancepatchstatefiltertypedef"></a>
+
 ## InstancePatchStateFilterTypeDef
 
 ```python
@@ -3726,6 +4154,8 @@ Required fields:
 - `Values`: `Sequence`\[`str`\]
 - `Type`:
   [InstancePatchStateOperatorTypeType](./literals.md#instancepatchstateoperatortypetype)
+
+<a id="instancepatchstatetypedef"></a>
 
 ## InstancePatchStateTypeDef
 
@@ -3761,6 +4191,8 @@ Optional fields:
 - `SecurityNonCompliantCount`: `int`
 - `OtherNonCompliantCount`: `int`
 
+<a id="inventoryaggregatortypedef"></a>
+
 ## InventoryAggregatorTypeDef
 
 ```python
@@ -3774,6 +4206,8 @@ Optional fields:
   `Sequence`\[[InventoryAggregatorTypeDef](./type_defs.md#inventoryaggregatortypedef)\]
 - `Groups`:
   `Sequence`\[[InventoryGroupTypeDef](./type_defs.md#inventorygrouptypedef)\]
+
+<a id="inventorydeletionstatusitemtypedef"></a>
 
 ## InventoryDeletionStatusItemTypeDef
 
@@ -3793,6 +4227,8 @@ Optional fields:
   [InventoryDeletionSummaryTypeDef](./type_defs.md#inventorydeletionsummarytypedef)
 - `LastStatusUpdateTime`: `datetime`
 
+<a id="inventorydeletionsummaryitemtypedef"></a>
+
 ## InventoryDeletionSummaryItemTypeDef
 
 ```python
@@ -3804,6 +4240,8 @@ Optional fields:
 - `Version`: `str`
 - `Count`: `int`
 - `RemainingCount`: `int`
+
+<a id="inventorydeletionsummarytypedef"></a>
 
 ## InventoryDeletionSummaryTypeDef
 
@@ -3817,6 +4255,8 @@ Optional fields:
 - `RemainingCount`: `int`
 - `SummaryItems`:
   `List`\[[InventoryDeletionSummaryItemTypeDef](./type_defs.md#inventorydeletionsummaryitemtypedef)\]
+
+<a id="inventoryfiltertypedef"></a>
 
 ## InventoryFilterTypeDef
 
@@ -3834,6 +4274,8 @@ Optional fields:
 - `Type`:
   [InventoryQueryOperatorTypeType](./literals.md#inventoryqueryoperatortypetype)
 
+<a id="inventorygrouptypedef"></a>
+
 ## InventoryGroupTypeDef
 
 ```python
@@ -3846,6 +4288,8 @@ Required fields:
 - `Filters`:
   `Sequence`\[[InventoryFilterTypeDef](./type_defs.md#inventoryfiltertypedef)\]
 
+<a id="inventoryitemattributetypedef"></a>
+
 ## InventoryItemAttributeTypeDef
 
 ```python
@@ -3857,6 +4301,8 @@ Required fields:
 - `Name`: `str`
 - `DataType`:
   [InventoryAttributeDataTypeType](./literals.md#inventoryattributedatatypetype)
+
+<a id="inventoryitemschematypedef"></a>
 
 ## InventoryItemSchemaTypeDef
 
@@ -3874,6 +4320,8 @@ Optional fields:
 
 - `Version`: `str`
 - `DisplayName`: `str`
+
+<a id="inventoryitemtypedef"></a>
 
 ## InventoryItemTypeDef
 
@@ -3893,6 +4341,8 @@ Optional fields:
 - `Content`: `Sequence`\[`Mapping`\[`str`, `str`\]\]
 - `Context`: `Mapping`\[`str`, `str`\]
 
+<a id="inventoryresultentitytypedef"></a>
+
 ## InventoryResultEntityTypeDef
 
 ```python
@@ -3904,6 +4354,8 @@ Optional fields:
 - `Id`: `str`
 - `Data`: `Dict`\[`str`,
   [InventoryResultItemTypeDef](./type_defs.md#inventoryresultitemtypedef)\]
+
+<a id="inventoryresultitemtypedef"></a>
 
 ## InventoryResultItemTypeDef
 
@@ -3922,6 +4374,8 @@ Optional fields:
 - `CaptureTime`: `str`
 - `ContentHash`: `str`
 
+<a id="labelparameterversionrequestrequesttypedef"></a>
+
 ## LabelParameterVersionRequestRequestTypeDef
 
 ```python
@@ -3937,6 +4391,8 @@ Optional fields:
 
 - `ParameterVersion`: `int`
 
+<a id="labelparameterversionresulttypedef"></a>
+
 ## LabelParameterVersionResultTypeDef
 
 ```python
@@ -3949,6 +4405,8 @@ Required fields:
 - `ParameterVersion`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listassociationversionsrequestrequesttypedef"></a>
 
 ## ListAssociationVersionsRequestRequestTypeDef
 
@@ -3965,6 +4423,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listassociationversionsresulttypedef"></a>
+
 ## ListAssociationVersionsResultTypeDef
 
 ```python
@@ -3979,6 +4439,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listassociationsrequestrequesttypedef"></a>
+
 ## ListAssociationsRequestRequestTypeDef
 
 ```python
@@ -3991,6 +4453,8 @@ Optional fields:
   `Sequence`\[[AssociationFilterTypeDef](./type_defs.md#associationfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listassociationsresulttypedef"></a>
 
 ## ListAssociationsResultTypeDef
 
@@ -4005,6 +4469,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcommandinvocationsrequestrequesttypedef"></a>
 
 ## ListCommandInvocationsRequestRequestTypeDef
 
@@ -4022,6 +4488,8 @@ Optional fields:
   `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 - `Details`: `bool`
 
+<a id="listcommandinvocationsresulttypedef"></a>
+
 ## ListCommandInvocationsResultTypeDef
 
 ```python
@@ -4035,6 +4503,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcommandsrequestrequesttypedef"></a>
 
 ## ListCommandsRequestRequestTypeDef
 
@@ -4051,6 +4521,8 @@ Optional fields:
 - `Filters`:
   `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 
+<a id="listcommandsresulttypedef"></a>
+
 ## ListCommandsResultTypeDef
 
 ```python
@@ -4063,6 +4535,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listcomplianceitemsrequestrequesttypedef"></a>
 
 ## ListComplianceItemsRequestRequestTypeDef
 
@@ -4079,6 +4553,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listcomplianceitemsresulttypedef"></a>
+
 ## ListComplianceItemsResultTypeDef
 
 ```python
@@ -4093,6 +4569,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcompliancesummariesrequestrequesttypedef"></a>
+
 ## ListComplianceSummariesRequestRequestTypeDef
 
 ```python
@@ -4105,6 +4583,8 @@ Optional fields:
   `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listcompliancesummariesresulttypedef"></a>
 
 ## ListComplianceSummariesResultTypeDef
 
@@ -4119,6 +4599,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdocumentmetadatahistoryrequestrequesttypedef"></a>
 
 ## ListDocumentMetadataHistoryRequestRequestTypeDef
 
@@ -4138,6 +4620,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdocumentmetadatahistoryresponsetypedef"></a>
+
 ## ListDocumentMetadataHistoryResponseTypeDef
 
 ```python
@@ -4155,6 +4639,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdocumentversionsrequestrequesttypedef"></a>
+
 ## ListDocumentVersionsRequestRequestTypeDef
 
 ```python
@@ -4170,6 +4656,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listdocumentversionsresulttypedef"></a>
+
 ## ListDocumentVersionsResultTypeDef
 
 ```python
@@ -4183,6 +4671,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdocumentsrequestrequesttypedef"></a>
 
 ## ListDocumentsRequestRequestTypeDef
 
@@ -4199,6 +4689,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listdocumentsresulttypedef"></a>
+
 ## ListDocumentsResultTypeDef
 
 ```python
@@ -4212,6 +4704,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listinventoryentriesrequestrequesttypedef"></a>
 
 ## ListInventoryEntriesRequestRequestTypeDef
 
@@ -4231,6 +4725,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listinventoryentriesresulttypedef"></a>
+
 ## ListInventoryEntriesResultTypeDef
 
 ```python
@@ -4248,6 +4744,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listopsitemeventsrequestrequesttypedef"></a>
+
 ## ListOpsItemEventsRequestRequestTypeDef
 
 ```python
@@ -4260,6 +4758,8 @@ Optional fields:
   `Sequence`\[[OpsItemEventFilterTypeDef](./type_defs.md#opsitemeventfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listopsitemeventsresponsetypedef"></a>
 
 ## ListOpsItemEventsResponseTypeDef
 
@@ -4275,6 +4775,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listopsitemrelateditemsrequestrequesttypedef"></a>
+
 ## ListOpsItemRelatedItemsRequestRequestTypeDef
 
 ```python
@@ -4288,6 +4790,8 @@ Optional fields:
   `Sequence`\[[OpsItemRelatedItemsFilterTypeDef](./type_defs.md#opsitemrelateditemsfiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listopsitemrelateditemsresponsetypedef"></a>
 
 ## ListOpsItemRelatedItemsResponseTypeDef
 
@@ -4303,6 +4807,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listopsmetadatarequestrequesttypedef"></a>
+
 ## ListOpsMetadataRequestRequestTypeDef
 
 ```python
@@ -4315,6 +4821,8 @@ Optional fields:
   `Sequence`\[[OpsMetadataFilterTypeDef](./type_defs.md#opsmetadatafiltertypedef)\]
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listopsmetadataresulttypedef"></a>
 
 ## ListOpsMetadataResultTypeDef
 
@@ -4330,6 +4838,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresourcecompliancesummariesrequestrequesttypedef"></a>
+
 ## ListResourceComplianceSummariesRequestRequestTypeDef
 
 ```python
@@ -4342,6 +4852,8 @@ Optional fields:
   `Sequence`\[[ComplianceStringFilterTypeDef](./type_defs.md#compliancestringfiltertypedef)\]
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listresourcecompliancesummariesresulttypedef"></a>
 
 ## ListResourceComplianceSummariesResultTypeDef
 
@@ -4357,6 +4869,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresourcedatasyncrequestrequesttypedef"></a>
+
 ## ListResourceDataSyncRequestRequestTypeDef
 
 ```python
@@ -4368,6 +4882,8 @@ Optional fields:
 - `SyncType`: `str`
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listresourcedatasyncresulttypedef"></a>
 
 ## ListResourceDataSyncResultTypeDef
 
@@ -4383,6 +4899,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -4395,6 +4913,8 @@ Required fields:
   [ResourceTypeForTaggingType](./literals.md#resourcetypefortaggingtype)
 - `ResourceId`: `str`
 
+<a id="listtagsforresourceresulttypedef"></a>
+
 ## ListTagsForResourceResultTypeDef
 
 ```python
@@ -4406,6 +4926,8 @@ Required fields:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="logginginfotypedef"></a>
 
 ## LoggingInfoTypeDef
 
@@ -4422,6 +4944,8 @@ Optional fields:
 
 - `S3KeyPrefix`: `str`
 
+<a id="maintenancewindowautomationparameterstypedef"></a>
+
 ## MaintenanceWindowAutomationParametersTypeDef
 
 ```python
@@ -4432,6 +4956,8 @@ Optional fields:
 
 - `DocumentVersion`: `str`
 - `Parameters`: `Dict`\[`str`, `List`\[`str`\]\]
+
+<a id="maintenancewindowexecutiontaskidentitytypedef"></a>
 
 ## MaintenanceWindowExecutionTaskIdentityTypeDef
 
@@ -4451,6 +4977,8 @@ Optional fields:
 - `TaskArn`: `str`
 - `TaskType`:
   [MaintenanceWindowTaskTypeType](./literals.md#maintenancewindowtasktypetype)
+
+<a id="maintenancewindowexecutiontaskinvocationidentitytypedef"></a>
 
 ## MaintenanceWindowExecutionTaskInvocationIdentityTypeDef
 
@@ -4475,6 +5003,8 @@ Optional fields:
 - `OwnerInformation`: `str`
 - `WindowTargetId`: `str`
 
+<a id="maintenancewindowexecutiontypedef"></a>
+
 ## MaintenanceWindowExecutionTypeDef
 
 ```python
@@ -4491,6 +5021,8 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
+<a id="maintenancewindowfiltertypedef"></a>
+
 ## MaintenanceWindowFilterTypeDef
 
 ```python
@@ -4502,6 +5034,8 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="maintenancewindowidentityfortargettypedef"></a>
+
 ## MaintenanceWindowIdentityForTargetTypeDef
 
 ```python
@@ -4512,6 +5046,8 @@ Optional fields:
 
 - `WindowId`: `str`
 - `Name`: `str`
+
+<a id="maintenancewindowidentitytypedef"></a>
 
 ## MaintenanceWindowIdentityTypeDef
 
@@ -4534,6 +5070,8 @@ Optional fields:
 - `StartDate`: `str`
 - `NextExecutionTime`: `str`
 
+<a id="maintenancewindowlambdaparameterstypedef"></a>
+
 ## MaintenanceWindowLambdaParametersTypeDef
 
 ```python
@@ -4545,6 +5083,8 @@ Optional fields:
 - `ClientContext`: `str`
 - `Qualifier`: `str`
 - `Payload`: `bytes`
+
+<a id="maintenancewindowruncommandparameterstypedef"></a>
 
 ## MaintenanceWindowRunCommandParametersTypeDef
 
@@ -4569,6 +5109,8 @@ Optional fields:
 - `ServiceRoleArn`: `str`
 - `TimeoutSeconds`: `int`
 
+<a id="maintenancewindowstepfunctionsparameterstypedef"></a>
+
 ## MaintenanceWindowStepFunctionsParametersTypeDef
 
 ```python
@@ -4579,6 +5121,8 @@ Optional fields:
 
 - `Input`: `str`
 - `Name`: `str`
+
+<a id="maintenancewindowtargettypedef"></a>
 
 ## MaintenanceWindowTargetTypeDef
 
@@ -4597,6 +5141,8 @@ Optional fields:
 - `Name`: `str`
 - `Description`: `str`
 
+<a id="maintenancewindowtaskinvocationparameterstypedef"></a>
+
 ## MaintenanceWindowTaskInvocationParametersTypeDef
 
 ```python
@@ -4614,6 +5160,8 @@ Optional fields:
 - `Lambda`:
   [MaintenanceWindowLambdaParametersTypeDef](./type_defs.md#maintenancewindowlambdaparameterstypedef)
 
+<a id="maintenancewindowtaskparametervalueexpressiontypedef"></a>
+
 ## MaintenanceWindowTaskParameterValueExpressionTypeDef
 
 ```python
@@ -4623,6 +5171,8 @@ from mypy_boto3_ssm.type_defs import MaintenanceWindowTaskParameterValueExpressi
 Optional fields:
 
 - `Values`: `List`\[`str`\]
+
+<a id="maintenancewindowtasktypedef"></a>
 
 ## MaintenanceWindowTaskTypeDef
 
@@ -4650,6 +5200,8 @@ Optional fields:
 - `CutoffBehavior`:
   [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
+<a id="metadatavaluetypedef"></a>
+
 ## MetadataValueTypeDef
 
 ```python
@@ -4659,6 +5211,8 @@ from mypy_boto3_ssm.type_defs import MetadataValueTypeDef
 Optional fields:
 
 - `Value`: `str`
+
+<a id="modifydocumentpermissionrequestrequesttypedef"></a>
 
 ## ModifyDocumentPermissionRequestRequestTypeDef
 
@@ -4678,6 +5232,8 @@ Optional fields:
 - `AccountIdsToRemove`: `Sequence`\[`str`\]
 - `SharedDocumentVersion`: `str`
 
+<a id="noncompliantsummarytypedef"></a>
+
 ## NonCompliantSummaryTypeDef
 
 ```python
@@ -4689,6 +5245,8 @@ Optional fields:
 - `NonCompliantCount`: `int`
 - `SeveritySummary`:
   [SeveritySummaryTypeDef](./type_defs.md#severitysummarytypedef)
+
+<a id="notificationconfigtypedef"></a>
 
 ## NotificationConfigTypeDef
 
@@ -4703,6 +5261,8 @@ Optional fields:
   `List`\[[NotificationEventType](./literals.md#notificationeventtype)\]
 - `NotificationType`:
   [NotificationTypeType](./literals.md#notificationtypetype)
+
+<a id="opsaggregatortypedef"></a>
 
 ## OpsAggregatorTypeDef
 
@@ -4720,6 +5280,8 @@ Optional fields:
 - `Aggregators`:
   `Sequence`\[[OpsAggregatorTypeDef](./type_defs.md#opsaggregatortypedef)\]
 
+<a id="opsentityitemtypedef"></a>
+
 ## OpsEntityItemTypeDef
 
 ```python
@@ -4730,6 +5292,8 @@ Optional fields:
 
 - `CaptureTime`: `str`
 - `Content`: `List`\[`Dict`\[`str`, `str`\]\]
+
+<a id="opsentitytypedef"></a>
 
 ## OpsEntityTypeDef
 
@@ -4742,6 +5306,8 @@ Optional fields:
 - `Id`: `str`
 - `Data`: `Dict`\[`str`,
   [OpsEntityItemTypeDef](./type_defs.md#opsentityitemtypedef)\]
+
+<a id="opsfiltertypedef"></a>
 
 ## OpsFilterTypeDef
 
@@ -4758,6 +5324,8 @@ Optional fields:
 
 - `Type`: [OpsFilterOperatorTypeType](./literals.md#opsfilteroperatortypetype)
 
+<a id="opsitemdatavaluetypedef"></a>
+
 ## OpsItemDataValueTypeDef
 
 ```python
@@ -4768,6 +5336,8 @@ Optional fields:
 
 - `Value`: `str`
 - `Type`: [OpsItemDataTypeType](./literals.md#opsitemdatatypetype)
+
+<a id="opsitemeventfiltertypedef"></a>
 
 ## OpsItemEventFilterTypeDef
 
@@ -4782,6 +5352,8 @@ Required fields:
 - `Values`: `Sequence`\[`str`\]
 - `Operator`: `Literal['Equal']` (see
   [OpsItemEventFilterOperatorType](./literals.md#opsitemeventfilteroperatortype))
+
+<a id="opsitemeventsummarytypedef"></a>
 
 ## OpsItemEventSummaryTypeDef
 
@@ -4799,6 +5371,8 @@ Optional fields:
 - `CreatedBy`: [OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef)
 - `CreatedTime`: `datetime`
 
+<a id="opsitemfiltertypedef"></a>
+
 ## OpsItemFilterTypeDef
 
 ```python
@@ -4812,6 +5386,8 @@ Required fields:
 - `Operator`:
   [OpsItemFilterOperatorType](./literals.md#opsitemfilteroperatortype)
 
+<a id="opsitemidentitytypedef"></a>
+
 ## OpsItemIdentityTypeDef
 
 ```python
@@ -4822,6 +5398,8 @@ Optional fields:
 
 - `Arn`: `str`
 
+<a id="opsitemnotificationtypedef"></a>
+
 ## OpsItemNotificationTypeDef
 
 ```python
@@ -4831,6 +5409,8 @@ from mypy_boto3_ssm.type_defs import OpsItemNotificationTypeDef
 Optional fields:
 
 - `Arn`: `str`
+
+<a id="opsitemrelateditemsummarytypedef"></a>
 
 ## OpsItemRelatedItemSummaryTypeDef
 
@@ -4851,6 +5431,8 @@ Optional fields:
   [OpsItemIdentityTypeDef](./type_defs.md#opsitemidentitytypedef)
 - `LastModifiedTime`: `datetime`
 
+<a id="opsitemrelateditemsfiltertypedef"></a>
+
 ## OpsItemRelatedItemsFilterTypeDef
 
 ```python
@@ -4864,6 +5446,8 @@ Required fields:
 - `Values`: `Sequence`\[`str`\]
 - `Operator`: `Literal['Equal']` (see
   [OpsItemRelatedItemsFilterOperatorType](./literals.md#opsitemrelateditemsfilteroperatortype))
+
+<a id="opsitemsummarytypedef"></a>
 
 ## OpsItemSummaryTypeDef
 
@@ -4891,6 +5475,8 @@ Optional fields:
 - `ActualEndTime`: `datetime`
 - `PlannedStartTime`: `datetime`
 - `PlannedEndTime`: `datetime`
+
+<a id="opsitemtypedef"></a>
 
 ## OpsItemTypeDef
 
@@ -4925,6 +5511,8 @@ Optional fields:
 - `PlannedStartTime`: `datetime`
 - `PlannedEndTime`: `datetime`
 
+<a id="opsmetadatafiltertypedef"></a>
+
 ## OpsMetadataFilterTypeDef
 
 ```python
@@ -4935,6 +5523,8 @@ Required fields:
 
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="opsmetadatatypedef"></a>
 
 ## OpsMetadataTypeDef
 
@@ -4950,6 +5540,8 @@ Optional fields:
 - `LastModifiedUser`: `str`
 - `CreationDate`: `datetime`
 
+<a id="opsresultattributetypedef"></a>
+
 ## OpsResultAttributeTypeDef
 
 ```python
@@ -4959,6 +5551,8 @@ from mypy_boto3_ssm.type_defs import OpsResultAttributeTypeDef
 Required fields:
 
 - `TypeName`: `str`
+
+<a id="outputsourcetypedef"></a>
 
 ## OutputSourceTypeDef
 
@@ -4971,6 +5565,8 @@ Optional fields:
 - `OutputSourceId`: `str`
 - `OutputSourceType`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -4982,6 +5578,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="parameterhistorytypedef"></a>
 
 ## ParameterHistoryTypeDef
 
@@ -5006,6 +5604,8 @@ Optional fields:
   `List`\[[ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef)\]
 - `DataType`: `str`
 
+<a id="parameterinlinepolicytypedef"></a>
+
 ## ParameterInlinePolicyTypeDef
 
 ```python
@@ -5017,6 +5617,8 @@ Optional fields:
 - `PolicyText`: `str`
 - `PolicyType`: `str`
 - `PolicyStatus`: `str`
+
+<a id="parametermetadatatypedef"></a>
 
 ## ParameterMetadataTypeDef
 
@@ -5039,6 +5641,8 @@ Optional fields:
   `List`\[[ParameterInlinePolicyTypeDef](./type_defs.md#parameterinlinepolicytypedef)\]
 - `DataType`: `str`
 
+<a id="parameterstringfiltertypedef"></a>
+
 ## ParameterStringFilterTypeDef
 
 ```python
@@ -5053,6 +5657,8 @@ Optional fields:
 
 - `Option`: `str`
 - `Values`: `Sequence`\[`str`\]
+
+<a id="parametertypedef"></a>
 
 ## ParameterTypeDef
 
@@ -5072,6 +5678,8 @@ Optional fields:
 - `ARN`: `str`
 - `DataType`: `str`
 
+<a id="parametersfiltertypedef"></a>
+
 ## ParametersFilterTypeDef
 
 ```python
@@ -5082,6 +5690,8 @@ Required fields:
 
 - `Key`: [ParametersFilterKeyType](./literals.md#parametersfilterkeytype)
 - `Values`: `Sequence`\[`str`\]
+
+<a id="patchbaselineidentitytypedef"></a>
 
 ## PatchBaselineIdentityTypeDef
 
@@ -5096,6 +5706,8 @@ Optional fields:
 - `OperatingSystem`: [OperatingSystemType](./literals.md#operatingsystemtype)
 - `BaselineDescription`: `str`
 - `DefaultBaseline`: `bool`
+
+<a id="patchcompliancedatatypedef"></a>
 
 ## PatchComplianceDataTypeDef
 
@@ -5117,6 +5729,8 @@ Optional fields:
 
 - `CVEIds`: `str`
 
+<a id="patchfiltergrouptypedef"></a>
+
 ## PatchFilterGroupTypeDef
 
 ```python
@@ -5128,6 +5742,8 @@ Required fields:
 - `PatchFilters`:
   `Sequence`\[[PatchFilterTypeDef](./type_defs.md#patchfiltertypedef)\]
 
+<a id="patchfiltertypedef"></a>
+
 ## PatchFilterTypeDef
 
 ```python
@@ -5138,6 +5754,8 @@ Required fields:
 
 - `Key`: [PatchFilterKeyType](./literals.md#patchfilterkeytype)
 - `Values`: `Sequence`\[`str`\]
+
+<a id="patchgrouppatchbaselinemappingtypedef"></a>
 
 ## PatchGroupPatchBaselineMappingTypeDef
 
@@ -5151,6 +5769,8 @@ Optional fields:
 - `BaselineIdentity`:
   [PatchBaselineIdentityTypeDef](./type_defs.md#patchbaselineidentitytypedef)
 
+<a id="patchorchestratorfiltertypedef"></a>
+
 ## PatchOrchestratorFilterTypeDef
 
 ```python
@@ -5162,6 +5782,8 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="patchrulegrouptypedef"></a>
+
 ## PatchRuleGroupTypeDef
 
 ```python
@@ -5172,6 +5794,8 @@ Required fields:
 
 - `PatchRules`:
   `Sequence`\[[PatchRuleTypeDef](./type_defs.md#patchruletypedef)\]
+
+<a id="patchruletypedef"></a>
 
 ## PatchRuleTypeDef
 
@@ -5192,6 +5816,8 @@ Optional fields:
 - `ApproveUntilDate`: `str`
 - `EnableNonSecurity`: `bool`
 
+<a id="patchsourcetypedef"></a>
+
 ## PatchSourceTypeDef
 
 ```python
@@ -5203,6 +5829,8 @@ Required fields:
 - `Name`: `str`
 - `Products`: `Sequence`\[`str`\]
 - `Configuration`: `str`
+
+<a id="patchstatustypedef"></a>
 
 ## PatchStatusTypeDef
 
@@ -5217,6 +5845,8 @@ Optional fields:
 - `ComplianceLevel`:
   [PatchComplianceLevelType](./literals.md#patchcomplianceleveltype)
 - `ApprovalDate`: `datetime`
+
+<a id="patchtypedef"></a>
 
 ## PatchTypeDef
 
@@ -5250,6 +5880,8 @@ Optional fields:
 - `Severity`: `str`
 - `Repository`: `str`
 
+<a id="progresscounterstypedef"></a>
+
 ## ProgressCountersTypeDef
 
 ```python
@@ -5263,6 +5895,8 @@ Optional fields:
 - `FailedSteps`: `int`
 - `CancelledSteps`: `int`
 - `TimedOutSteps`: `int`
+
+<a id="putcomplianceitemsrequestrequesttypedef"></a>
 
 ## PutComplianceItemsRequestRequestTypeDef
 
@@ -5286,6 +5920,8 @@ Optional fields:
 - `UploadType`:
   [ComplianceUploadTypeType](./literals.md#complianceuploadtypetype)
 
+<a id="putinventoryrequestrequesttypedef"></a>
+
 ## PutInventoryRequestRequestTypeDef
 
 ```python
@@ -5298,6 +5934,8 @@ Required fields:
 - `Items`:
   `Sequence`\[[InventoryItemTypeDef](./type_defs.md#inventoryitemtypedef)\]
 
+<a id="putinventoryresulttypedef"></a>
+
 ## PutInventoryResultTypeDef
 
 ```python
@@ -5309,6 +5947,8 @@ Required fields:
 - `Message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="putparameterrequestrequesttypedef"></a>
 
 ## PutParameterRequestRequestTypeDef
 
@@ -5333,6 +5973,8 @@ Optional fields:
 - `Policies`: `str`
 - `DataType`: `str`
 
+<a id="putparameterresulttypedef"></a>
+
 ## PutParameterResultTypeDef
 
 ```python
@@ -5346,6 +5988,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registerdefaultpatchbaselinerequestrequesttypedef"></a>
+
 ## RegisterDefaultPatchBaselineRequestRequestTypeDef
 
 ```python
@@ -5355,6 +5999,8 @@ from mypy_boto3_ssm.type_defs import RegisterDefaultPatchBaselineRequestRequestT
 Required fields:
 
 - `BaselineId`: `str`
+
+<a id="registerdefaultpatchbaselineresulttypedef"></a>
 
 ## RegisterDefaultPatchBaselineResultTypeDef
 
@@ -5368,6 +6014,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registerpatchbaselineforpatchgrouprequestrequesttypedef"></a>
+
 ## RegisterPatchBaselineForPatchGroupRequestRequestTypeDef
 
 ```python
@@ -5378,6 +6026,8 @@ Required fields:
 
 - `BaselineId`: `str`
 - `PatchGroup`: `str`
+
+<a id="registerpatchbaselineforpatchgroupresulttypedef"></a>
 
 ## RegisterPatchBaselineForPatchGroupResultTypeDef
 
@@ -5391,6 +6041,8 @@ Required fields:
 - `PatchGroup`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registertargetwithmaintenancewindowrequestrequesttypedef"></a>
 
 ## RegisterTargetWithMaintenanceWindowRequestRequestTypeDef
 
@@ -5412,6 +6064,8 @@ Optional fields:
 - `Description`: `str`
 - `ClientToken`: `str`
 
+<a id="registertargetwithmaintenancewindowresulttypedef"></a>
+
 ## RegisterTargetWithMaintenanceWindowResultTypeDef
 
 ```python
@@ -5423,6 +6077,8 @@ Required fields:
 - `WindowTargetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="registertaskwithmaintenancewindowrequestrequesttypedef"></a>
 
 ## RegisterTaskWithMaintenanceWindowRequestRequestTypeDef
 
@@ -5455,6 +6111,8 @@ Optional fields:
 - `CutoffBehavior`:
   [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
+<a id="registertaskwithmaintenancewindowresulttypedef"></a>
+
 ## RegisterTaskWithMaintenanceWindowResultTypeDef
 
 ```python
@@ -5467,6 +6125,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="registrationmetadataitemtypedef"></a>
+
 ## RegistrationMetadataItemTypeDef
 
 ```python
@@ -5478,6 +6138,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="relatedopsitemtypedef"></a>
+
 ## RelatedOpsItemTypeDef
 
 ```python
@@ -5487,6 +6149,8 @@ from mypy_boto3_ssm.type_defs import RelatedOpsItemTypeDef
 Required fields:
 
 - `OpsItemId`: `str`
+
+<a id="removetagsfromresourcerequestrequesttypedef"></a>
 
 ## RemoveTagsFromResourceRequestRequestTypeDef
 
@@ -5501,6 +6165,8 @@ Required fields:
 - `ResourceId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="resetservicesettingrequestrequesttypedef"></a>
+
 ## ResetServiceSettingRequestRequestTypeDef
 
 ```python
@@ -5510,6 +6176,8 @@ from mypy_boto3_ssm.type_defs import ResetServiceSettingRequestRequestTypeDef
 Required fields:
 
 - `SettingId`: `str`
+
+<a id="resetservicesettingresulttypedef"></a>
 
 ## ResetServiceSettingResultTypeDef
 
@@ -5524,6 +6192,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="resolvedtargetstypedef"></a>
+
 ## ResolvedTargetsTypeDef
 
 ```python
@@ -5534,6 +6204,8 @@ Optional fields:
 
 - `ParameterValues`: `List`\[`str`\]
 - `Truncated`: `bool`
+
+<a id="resourcecompliancesummaryitemtypedef"></a>
 
 ## ResourceComplianceSummaryItemTypeDef
 
@@ -5556,6 +6228,8 @@ Optional fields:
 - `NonCompliantSummary`:
   [NonCompliantSummaryTypeDef](./type_defs.md#noncompliantsummarytypedef)
 
+<a id="resourcedatasyncawsorganizationssourcetypedef"></a>
+
 ## ResourceDataSyncAwsOrganizationsSourceTypeDef
 
 ```python
@@ -5571,6 +6245,8 @@ Optional fields:
 - `OrganizationalUnits`:
   `Sequence`\[[ResourceDataSyncOrganizationalUnitTypeDef](./type_defs.md#resourcedatasyncorganizationalunittypedef)\]
 
+<a id="resourcedatasyncdestinationdatasharingtypedef"></a>
+
 ## ResourceDataSyncDestinationDataSharingTypeDef
 
 ```python
@@ -5580,6 +6256,8 @@ from mypy_boto3_ssm.type_defs import ResourceDataSyncDestinationDataSharingTypeD
 Optional fields:
 
 - `DestinationDataSharingType`: `str`
+
+<a id="resourcedatasyncitemtypedef"></a>
 
 ## ResourceDataSyncItemTypeDef
 
@@ -5603,6 +6281,8 @@ Optional fields:
 - `SyncCreatedTime`: `datetime`
 - `LastSyncStatusMessage`: `str`
 
+<a id="resourcedatasyncorganizationalunittypedef"></a>
+
 ## ResourceDataSyncOrganizationalUnitTypeDef
 
 ```python
@@ -5612,6 +6292,8 @@ from mypy_boto3_ssm.type_defs import ResourceDataSyncOrganizationalUnitTypeDef
 Optional fields:
 
 - `OrganizationalUnitId`: `str`
+
+<a id="resourcedatasyncs3destinationtypedef"></a>
 
 ## ResourceDataSyncS3DestinationTypeDef
 
@@ -5633,6 +6315,8 @@ Optional fields:
 - `DestinationDataSharing`:
   [ResourceDataSyncDestinationDataSharingTypeDef](./type_defs.md#resourcedatasyncdestinationdatasharingtypedef)
 
+<a id="resourcedatasyncsourcetypedef"></a>
+
 ## ResourceDataSyncSourceTypeDef
 
 ```python
@@ -5651,6 +6335,8 @@ Optional fields:
 - `IncludeFutureRegions`: `bool`
 - `EnableAllOpsDataSources`: `bool`
 
+<a id="resourcedatasyncsourcewithstatetypedef"></a>
+
 ## ResourceDataSyncSourceWithStateTypeDef
 
 ```python
@@ -5667,6 +6353,8 @@ Optional fields:
 - `State`: `str`
 - `EnableAllOpsDataSources`: `bool`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -5681,6 +6369,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultattributetypedef"></a>
+
 ## ResultAttributeTypeDef
 
 ```python
@@ -5691,6 +6381,8 @@ Required fields:
 
 - `TypeName`: `str`
 
+<a id="resumesessionrequestrequesttypedef"></a>
+
 ## ResumeSessionRequestRequestTypeDef
 
 ```python
@@ -5700,6 +6392,8 @@ from mypy_boto3_ssm.type_defs import ResumeSessionRequestRequestTypeDef
 Required fields:
 
 - `SessionId`: `str`
+
+<a id="resumesessionresponsetypedef"></a>
 
 ## ResumeSessionResponseTypeDef
 
@@ -5715,6 +6409,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="reviewinformationtypedef"></a>
+
 ## ReviewInformationTypeDef
 
 ```python
@@ -5726,6 +6422,8 @@ Optional fields:
 - `ReviewedTime`: `datetime`
 - `Status`: [ReviewStatusType](./literals.md#reviewstatustype)
 - `Reviewer`: `str`
+
+<a id="runbooktypedef"></a>
 
 ## RunbookTypeDef
 
@@ -5748,6 +6446,8 @@ Optional fields:
 - `TargetLocations`:
   `List`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
+<a id="s3outputlocationtypedef"></a>
+
 ## S3OutputLocationTypeDef
 
 ```python
@@ -5760,6 +6460,8 @@ Optional fields:
 - `OutputS3BucketName`: `str`
 - `OutputS3KeyPrefix`: `str`
 
+<a id="s3outputurltypedef"></a>
+
 ## S3OutputUrlTypeDef
 
 ```python
@@ -5769,6 +6471,8 @@ from mypy_boto3_ssm.type_defs import S3OutputUrlTypeDef
 Optional fields:
 
 - `OutputUrl`: `str`
+
+<a id="scheduledwindowexecutiontypedef"></a>
 
 ## ScheduledWindowExecutionTypeDef
 
@@ -5781,6 +6485,8 @@ Optional fields:
 - `WindowId`: `str`
 - `Name`: `str`
 - `ExecutionTime`: `str`
+
+<a id="sendautomationsignalrequestrequesttypedef"></a>
 
 ## SendAutomationSignalRequestRequestTypeDef
 
@@ -5796,6 +6502,8 @@ Required fields:
 Optional fields:
 
 - `Payload`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
+
+<a id="sendcommandrequestrequesttypedef"></a>
 
 ## SendCommandRequestRequestTypeDef
 
@@ -5829,6 +6537,8 @@ Optional fields:
 - `CloudWatchOutputConfig`:
   [CloudWatchOutputConfigTypeDef](./type_defs.md#cloudwatchoutputconfigtypedef)
 
+<a id="sendcommandresulttypedef"></a>
+
 ## SendCommandResultTypeDef
 
 ```python
@@ -5840,6 +6550,8 @@ Required fields:
 - `Command`: [CommandTypeDef](./type_defs.md#commandtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="servicesettingtypedef"></a>
 
 ## ServiceSettingTypeDef
 
@@ -5856,6 +6568,8 @@ Optional fields:
 - `ARN`: `str`
 - `Status`: `str`
 
+<a id="sessionfiltertypedef"></a>
+
 ## SessionFilterTypeDef
 
 ```python
@@ -5867,6 +6581,8 @@ Required fields:
 - `key`: [SessionFilterKeyType](./literals.md#sessionfilterkeytype)
 - `value`: `str`
 
+<a id="sessionmanageroutputurltypedef"></a>
+
 ## SessionManagerOutputUrlTypeDef
 
 ```python
@@ -5877,6 +6593,8 @@ Optional fields:
 
 - `S3OutputUrl`: `str`
 - `CloudWatchOutputUrl`: `str`
+
+<a id="sessiontypedef"></a>
 
 ## SessionTypeDef
 
@@ -5899,6 +6617,8 @@ Optional fields:
   [SessionManagerOutputUrlTypeDef](./type_defs.md#sessionmanageroutputurltypedef)
 - `MaxSessionDuration`: `str`
 
+<a id="severitysummarytypedef"></a>
+
 ## SeveritySummaryTypeDef
 
 ```python
@@ -5914,6 +6634,8 @@ Optional fields:
 - `InformationalCount`: `int`
 - `UnspecifiedCount`: `int`
 
+<a id="startassociationsoncerequestrequesttypedef"></a>
+
 ## StartAssociationsOnceRequestRequestTypeDef
 
 ```python
@@ -5923,6 +6645,8 @@ from mypy_boto3_ssm.type_defs import StartAssociationsOnceRequestRequestTypeDef
 Required fields:
 
 - `AssociationIds`: `Sequence`\[`str`\]
+
+<a id="startautomationexecutionrequestrequesttypedef"></a>
 
 ## StartAutomationExecutionRequestRequestTypeDef
 
@@ -5949,6 +6673,8 @@ Optional fields:
   `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="startautomationexecutionresulttypedef"></a>
+
 ## StartAutomationExecutionResultTypeDef
 
 ```python
@@ -5960,6 +6686,8 @@ Required fields:
 - `AutomationExecutionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startchangerequestexecutionrequestrequesttypedef"></a>
 
 ## StartChangeRequestExecutionRequestRequestTypeDef
 
@@ -5984,6 +6712,8 @@ Optional fields:
 - `ScheduledEndTime`: `Union`\[`datetime`, `str`\]
 - `ChangeDetails`: `str`
 
+<a id="startchangerequestexecutionresulttypedef"></a>
+
 ## StartChangeRequestExecutionResultTypeDef
 
 ```python
@@ -5995,6 +6725,8 @@ Required fields:
 - `AutomationExecutionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startsessionrequestrequesttypedef"></a>
 
 ## StartSessionRequestRequestTypeDef
 
@@ -6012,6 +6744,8 @@ Optional fields:
 - `Reason`: `str`
 - `Parameters`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
+<a id="startsessionresponsetypedef"></a>
+
 ## StartSessionResponseTypeDef
 
 ```python
@@ -6026,6 +6760,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stepexecutionfiltertypedef"></a>
+
 ## StepExecutionFilterTypeDef
 
 ```python
@@ -6036,6 +6772,8 @@ Required fields:
 
 - `Key`: [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - `Values`: `Sequence`\[`str`\]
+
+<a id="stepexecutiontypedef"></a>
 
 ## StepExecutionTypeDef
 
@@ -6071,6 +6809,8 @@ Optional fields:
 - `TargetLocation`:
   [TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)
 
+<a id="stopautomationexecutionrequestrequesttypedef"></a>
+
 ## StopAutomationExecutionRequestRequestTypeDef
 
 ```python
@@ -6085,6 +6825,8 @@ Optional fields:
 
 - `Type`: [StopTypeType](./literals.md#stoptypetype)
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -6095,6 +6837,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="targetlocationtypedef"></a>
 
 ## TargetLocationTypeDef
 
@@ -6110,6 +6854,8 @@ Optional fields:
 - `TargetLocationMaxErrors`: `str`
 - `ExecutionRoleName`: `str`
 
+<a id="targettypedef"></a>
+
 ## TargetTypeDef
 
 ```python
@@ -6121,6 +6867,8 @@ Optional fields:
 - `Key`: `str`
 - `Values`: `Sequence`\[`str`\]
 
+<a id="terminatesessionrequestrequesttypedef"></a>
+
 ## TerminateSessionRequestRequestTypeDef
 
 ```python
@@ -6130,6 +6878,8 @@ from mypy_boto3_ssm.type_defs import TerminateSessionRequestRequestTypeDef
 Required fields:
 
 - `SessionId`: `str`
+
+<a id="terminatesessionresponsetypedef"></a>
 
 ## TerminateSessionResponseTypeDef
 
@@ -6143,6 +6893,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="unlabelparameterversionrequestrequesttypedef"></a>
+
 ## UnlabelParameterVersionRequestRequestTypeDef
 
 ```python
@@ -6154,6 +6906,8 @@ Required fields:
 - `Name`: `str`
 - `ParameterVersion`: `int`
 - `Labels`: `Sequence`\[`str`\]
+
+<a id="unlabelparameterversionresulttypedef"></a>
 
 ## UnlabelParameterVersionResultTypeDef
 
@@ -6167,6 +6921,8 @@ Required fields:
 - `InvalidLabels`: `List`\[`str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateassociationrequestrequesttypedef"></a>
 
 ## UpdateAssociationRequestRequestTypeDef
 
@@ -6201,6 +6957,8 @@ Optional fields:
 - `TargetLocations`:
   `Sequence`\[[TargetLocationTypeDef](./type_defs.md#targetlocationtypedef)\]
 
+<a id="updateassociationresulttypedef"></a>
+
 ## UpdateAssociationResultTypeDef
 
 ```python
@@ -6213,6 +6971,8 @@ Required fields:
   [AssociationDescriptionTypeDef](./type_defs.md#associationdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateassociationstatusrequestrequesttypedef"></a>
 
 ## UpdateAssociationStatusRequestRequestTypeDef
 
@@ -6227,6 +6987,8 @@ Required fields:
 - `AssociationStatus`:
   [AssociationStatusTypeDef](./type_defs.md#associationstatustypedef)
 
+<a id="updateassociationstatusresulttypedef"></a>
+
 ## UpdateAssociationStatusResultTypeDef
 
 ```python
@@ -6240,6 +7002,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedocumentdefaultversionrequestrequesttypedef"></a>
+
 ## UpdateDocumentDefaultVersionRequestRequestTypeDef
 
 ```python
@@ -6250,6 +7014,8 @@ Required fields:
 
 - `Name`: `str`
 - `DocumentVersion`: `str`
+
+<a id="updatedocumentdefaultversionresulttypedef"></a>
 
 ## UpdateDocumentDefaultVersionResultTypeDef
 
@@ -6263,6 +7029,8 @@ Required fields:
   [DocumentDefaultVersionDescriptionTypeDef](./type_defs.md#documentdefaultversiondescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatedocumentmetadatarequestrequesttypedef"></a>
 
 ## UpdateDocumentMetadataRequestRequestTypeDef
 
@@ -6279,6 +7047,8 @@ Required fields:
 Optional fields:
 
 - `DocumentVersion`: `str`
+
+<a id="updatedocumentrequestrequesttypedef"></a>
 
 ## UpdateDocumentRequestRequestTypeDef
 
@@ -6301,6 +7071,8 @@ Optional fields:
 - `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 - `TargetType`: `str`
 
+<a id="updatedocumentresulttypedef"></a>
+
 ## UpdateDocumentResultTypeDef
 
 ```python
@@ -6313,6 +7085,8 @@ Required fields:
   [DocumentDescriptionTypeDef](./type_defs.md#documentdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemaintenancewindowrequestrequesttypedef"></a>
 
 ## UpdateMaintenanceWindowRequestRequestTypeDef
 
@@ -6339,6 +7113,8 @@ Optional fields:
 - `Enabled`: `bool`
 - `Replace`: `bool`
 
+<a id="updatemaintenancewindowresulttypedef"></a>
+
 ## UpdateMaintenanceWindowResultTypeDef
 
 ```python
@@ -6362,6 +7138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatemaintenancewindowtargetrequestrequesttypedef"></a>
+
 ## UpdateMaintenanceWindowTargetRequestRequestTypeDef
 
 ```python
@@ -6381,6 +7159,8 @@ Optional fields:
 - `Description`: `str`
 - `Replace`: `bool`
 
+<a id="updatemaintenancewindowtargetresulttypedef"></a>
+
 ## UpdateMaintenanceWindowTargetResultTypeDef
 
 ```python
@@ -6397,6 +7177,8 @@ Required fields:
 - `Description`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemaintenancewindowtaskrequestrequesttypedef"></a>
 
 ## UpdateMaintenanceWindowTaskRequestRequestTypeDef
 
@@ -6428,6 +7210,8 @@ Optional fields:
 - `CutoffBehavior`:
   [MaintenanceWindowTaskCutoffBehaviorType](./literals.md#maintenancewindowtaskcutoffbehaviortype)
 
+<a id="updatemaintenancewindowtaskresulttypedef"></a>
+
 ## UpdateMaintenanceWindowTaskResultTypeDef
 
 ```python
@@ -6456,6 +7240,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatemanagedinstancerolerequestrequesttypedef"></a>
+
 ## UpdateManagedInstanceRoleRequestRequestTypeDef
 
 ```python
@@ -6466,6 +7252,8 @@ Required fields:
 
 - `InstanceId`: `str`
 - `IamRole`: `str`
+
+<a id="updateopsitemrequestrequesttypedef"></a>
 
 ## UpdateOpsItemRequestRequestTypeDef
 
@@ -6497,6 +7285,8 @@ Optional fields:
 - `PlannedStartTime`: `Union`\[`datetime`, `str`\]
 - `PlannedEndTime`: `Union`\[`datetime`, `str`\]
 
+<a id="updateopsmetadatarequestrequesttypedef"></a>
+
 ## UpdateOpsMetadataRequestRequestTypeDef
 
 ```python
@@ -6513,6 +7303,8 @@ Optional fields:
   [MetadataValueTypeDef](./type_defs.md#metadatavaluetypedef)\]
 - `KeysToDelete`: `Sequence`\[`str`\]
 
+<a id="updateopsmetadataresulttypedef"></a>
+
 ## UpdateOpsMetadataResultTypeDef
 
 ```python
@@ -6524,6 +7316,8 @@ Required fields:
 - `OpsMetadataArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepatchbaselinerequestrequesttypedef"></a>
 
 ## UpdatePatchBaselineRequestRequestTypeDef
 
@@ -6553,6 +7347,8 @@ Optional fields:
   `Sequence`\[[PatchSourceTypeDef](./type_defs.md#patchsourcetypedef)\]
 - `Replace`: `bool`
 
+<a id="updatepatchbaselineresulttypedef"></a>
+
 ## UpdatePatchBaselineResultTypeDef
 
 ```python
@@ -6581,6 +7377,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateresourcedatasyncrequestrequesttypedef"></a>
+
 ## UpdateResourceDataSyncRequestRequestTypeDef
 
 ```python
@@ -6594,6 +7392,8 @@ Required fields:
 - `SyncSource`:
   [ResourceDataSyncSourceTypeDef](./type_defs.md#resourcedatasyncsourcetypedef)
 
+<a id="updateservicesettingrequestrequesttypedef"></a>
+
 ## UpdateServiceSettingRequestRequestTypeDef
 
 ```python
@@ -6604,6 +7404,8 @@ Required fields:
 
 - `SettingId`: `str`
 - `SettingValue`: `str`
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 

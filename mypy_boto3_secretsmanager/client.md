@@ -1,3 +1,5 @@
+<a id="secretsmanagerclient-for-boto3-secretsmanager-module"></a>
+
 # SecretsManagerClient for boto3 SecretsManager module
 
 > [Index](..) > [SecretsManager](.) > SecretsManagerClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SecretsManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager)
 type annotations stubs module
-[mypy_boto3_secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
+[mypy-boto3-secretsmanager](https://pypi.org/project/mypy-boto3-secretsmanager/).
 
 - [SecretsManagerClient for boto3 SecretsManager module](#secretsmanagerclient-for-boto3-secretsmanager-module)
   - [SecretsManagerClient](#secretsmanagerclient)
@@ -38,6 +40,8 @@ type annotations stubs module
     - [validate_resource_policy](#validate_resource_policy)
     - [get_paginator](#get_paginator)
 
+<a id="secretsmanagerclient"></a>
+
 ## SecretsManagerClient
 
 Type annotations for `boto3.client("secretsmanager")`
@@ -45,14 +49,17 @@ Type annotations for `boto3.client("secretsmanager")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_secretsmanager.client import SecretsManagerClient
 
 def get_secretsmanager_client() -> SecretsManagerClient:
-    return boto3.client("secretsmanager")
+    return Session().client("secretsmanager")
 ```
 
 Boto3 documentation:
 [SecretsManager.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -82,7 +89,11 @@ Exceptions:
 - `Exceptions.ResourceExistsException`
 - `Exceptions.ResourceNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -94,6 +105,8 @@ Boto3 documentation:
 [SecretsManager.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/secretsmanager.html#SecretsManager.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -109,6 +122,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_rotate_secret"></a>
 
 ### cancel_rotate_secret
 
@@ -130,6 +145,8 @@ Keyword-only arguments:
 
 Returns
 [CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef).
+
+<a id="create_secret"></a>
 
 ### create_secret
 
@@ -159,6 +176,8 @@ Keyword-only arguments:
 Returns
 [CreateSecretResponseTypeDef](./type_defs.md#createsecretresponsetypedef).
 
+<a id="delete_resource_policy"></a>
+
 ### delete_resource_policy
 
 Deletes the resource-based permission policy attached to the secret.
@@ -178,6 +197,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
+
+<a id="delete_secret"></a>
 
 ### delete_secret
 
@@ -200,6 +221,8 @@ Keyword-only arguments:
 Returns
 [DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef).
 
+<a id="describe_secret"></a>
+
 ### describe_secret
 
 Retrieves the details of a secret.
@@ -219,6 +242,8 @@ Keyword-only arguments:
 Returns
 [DescribeSecretResponseTypeDef](./type_defs.md#describesecretresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -237,6 +262,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_random_password"></a>
 
 ### get_random_password
 
@@ -265,6 +292,8 @@ Keyword-only arguments:
 Returns
 [GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef).
 
+<a id="get_resource_policy"></a>
+
 ### get_resource_policy
 
 Retrieves the JSON text of the resource-based policy document attached to the
@@ -285,6 +314,8 @@ Keyword-only arguments:
 
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
+
+<a id="get_secret_value"></a>
 
 ### get_secret_value
 
@@ -307,6 +338,8 @@ Keyword-only arguments:
 
 Returns
 [GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef).
+
+<a id="list_secret_version_ids"></a>
 
 ### list_secret_version_ids
 
@@ -331,6 +364,8 @@ Keyword-only arguments:
 Returns
 [ListSecretVersionIdsResponseTypeDef](./type_defs.md#listsecretversionidsresponsetypedef).
 
+<a id="list_secrets"></a>
+
 ### list_secrets
 
 .
@@ -353,6 +388,8 @@ Keyword-only arguments:
 Returns
 [ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef).
 
+<a id="put_resource_policy"></a>
+
 ### put_resource_policy
 
 Attaches a resource-based permission policy to a secret.
@@ -374,6 +411,8 @@ Keyword-only arguments:
 
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+
+<a id="put_secret_value"></a>
 
 ### put_secret_value
 
@@ -399,6 +438,8 @@ Keyword-only arguments:
 Returns
 [PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef).
 
+<a id="remove_regions_from_replication"></a>
+
 ### remove_regions_from_replication
 
 For a secret that is replicated to other Regions, deletes the secret replicas
@@ -420,6 +461,8 @@ Keyword-only arguments:
 
 Returns
 [RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef).
+
+<a id="replicate_secret_to_regions"></a>
 
 ### replicate_secret_to_regions
 
@@ -445,6 +488,8 @@ Keyword-only arguments:
 Returns
 [ReplicateSecretToRegionsResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponsetypedef).
 
+<a id="restore_secret"></a>
+
 ### restore_secret
 
 Cancels the scheduled deletion of a secret by removing the `DeletedDate` time
@@ -464,6 +509,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreSecretResponseTypeDef](./type_defs.md#restoresecretresponsetypedef).
+
+<a id="rotate_secret"></a>
 
 ### rotate_secret
 
@@ -489,6 +536,8 @@ Keyword-only arguments:
 Returns
 [RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef).
 
+<a id="stop_replication_to_replica"></a>
+
 ### stop_replication_to_replica
 
 Removes the link between the replica secret and the primary secret and promotes
@@ -510,6 +559,8 @@ Keyword-only arguments:
 Returns
 [StopReplicationToReplicaResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Attaches tags to a secret.
@@ -527,6 +578,8 @@ Keyword-only arguments:
 - `SecretId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes specific tags from a secret.
@@ -543,6 +596,8 @@ Keyword-only arguments:
 
 - `SecretId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_secret"></a>
 
 ### update_secret
 
@@ -568,6 +623,8 @@ Keyword-only arguments:
 Returns
 [UpdateSecretResponseTypeDef](./type_defs.md#updatesecretresponsetypedef).
 
+<a id="update_secret_version_stage"></a>
+
 ### update_secret_version_stage
 
 Modifies the staging labels attached to a version of a secret.
@@ -591,6 +648,8 @@ Keyword-only arguments:
 Returns
 [UpdateSecretVersionStageResponseTypeDef](./type_defs.md#updatesecretversionstageresponsetypedef).
 
+<a id="validate_resource_policy"></a>
+
 ### validate_resource_policy
 
 Validates that a resource policy does not grant a wide range of principals
@@ -612,6 +671,8 @@ Keyword-only arguments:
 
 Returns
 [ValidateResourcePolicyResponseTypeDef](./type_defs.md#validateresourcepolicyresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

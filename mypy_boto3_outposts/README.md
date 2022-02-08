@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-outposts-module"></a>
+
 # Type annotations for boto3 Outposts module
 
 > [Index](..) > Outposts
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Outposts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/outposts.html#Outposts)
 type annotations stubs module
-[mypy_boto3_outposts](https://pypi.org/project/mypy-boto3-outposts/).
+[mypy-boto3-outposts](https://pypi.org/project/mypy-boto3-outposts/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[outposts]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[outposts]'
+
+# standalone installation
 pip install mypy-boto3-outposts
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-outposts
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="outpostsclient"></a>
 
 ## OutpostsClient
 
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_outposts.client import OutpostsClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -58,6 +72,8 @@ from mypy_boto3_outposts.client import OutpostsClient
 - [update_site_address](./client.md#update_site_address)
 - [update_site_rack_physical_properties](./client.md#update_site_rack_physical_properties)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 OutpostsClient [exceptions](./client.md#exceptions)
@@ -69,6 +85,8 @@ OutpostsClient [exceptions](./client.md#exceptions)
 - NotFoundException
 - ServiceQuotaExceededException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -100,6 +118,8 @@ from mypy_boto3_outposts.literals import AddressTypeType, ...
 - [UplinkCountType](./literals.md#uplinkcounttype)
 - [UplinkGbpsType](./literals.md#uplinkgbpstype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-sms-module"></a>
+
 # Literals for boto3 SMS module
 
 > [Index](..) > [SMS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sms.html#SMS)
 type annotations stubs module
-[mypy_boto3_sms](https://pypi.org/project/mypy-boto3-sms/).
+[mypy-boto3-sms](https://pypi.org/project/mypy-boto3-sms/).
 
 - [Literals for boto3 SMS module](#literals-for-boto3-sms-module)
   - [AppLaunchConfigurationStatusType](#applaunchconfigurationstatustype)
@@ -35,6 +37,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="applaunchconfigurationstatustype"></a>
+
 ## AppLaunchConfigurationStatusType
 
 ```python
@@ -45,6 +49,8 @@ Values:
 
 - `CONFIGURED`
 - `NOT_CONFIGURED`
+
+<a id="applaunchstatustype"></a>
 
 ## AppLaunchStatusType
 
@@ -70,6 +76,8 @@ Values:
 - `TERMINATED`
 - `VALIDATION_IN_PROGRESS`
 
+<a id="appreplicationconfigurationstatustype"></a>
+
 ## AppReplicationConfigurationStatusType
 
 ```python
@@ -80,6 +88,8 @@ Values:
 
 - `CONFIGURED`
 - `NOT_CONFIGURED`
+
+<a id="appreplicationstatustype"></a>
 
 ## AppReplicationStatusType
 
@@ -106,6 +116,8 @@ Values:
 - `REPLICATION_STOPPING`
 - `VALIDATION_IN_PROGRESS`
 
+<a id="appstatustype"></a>
+
 ## AppStatusType
 
 ```python
@@ -121,6 +133,8 @@ Values:
 - `DELETING`
 - `UPDATING`
 
+<a id="appvalidationstrategytype"></a>
+
 ## AppValidationStrategyType
 
 ```python
@@ -130,6 +144,8 @@ from mypy_boto3_sms.literals import AppValidationStrategyType
 Values:
 
 - `SSM`
+
+<a id="connectorcapabilitytype"></a>
 
 ## ConnectorCapabilityType
 
@@ -145,6 +161,8 @@ Values:
 - `SNAPSHOT_BATCHING`
 - `VSPHERE`
 
+<a id="connectorstatustype"></a>
+
 ## ConnectorStatusType
 
 ```python
@@ -156,6 +174,8 @@ Values:
 - `HEALTHY`
 - `UNHEALTHY`
 
+<a id="getconnectorspaginatorname"></a>
+
 ## GetConnectorsPaginatorName
 
 ```python
@@ -165,6 +185,8 @@ from mypy_boto3_sms.literals import GetConnectorsPaginatorName
 Values:
 
 - `get_connectors`
+
+<a id="getreplicationjobspaginatorname"></a>
 
 ## GetReplicationJobsPaginatorName
 
@@ -176,6 +198,8 @@ Values:
 
 - `get_replication_jobs`
 
+<a id="getreplicationrunspaginatorname"></a>
+
 ## GetReplicationRunsPaginatorName
 
 ```python
@@ -186,6 +210,8 @@ Values:
 
 - `get_replication_runs`
 
+<a id="getserverspaginatorname"></a>
+
 ## GetServersPaginatorName
 
 ```python
@@ -195,6 +221,8 @@ from mypy_boto3_sms.literals import GetServersPaginatorName
 Values:
 
 - `get_servers`
+
+<a id="licensetypetype"></a>
 
 ## LicenseTypeType
 
@@ -207,6 +235,8 @@ Values:
 - `AWS`
 - `BYOL`
 
+<a id="listappspaginatorname"></a>
+
 ## ListAppsPaginatorName
 
 ```python
@@ -216,6 +246,8 @@ from mypy_boto3_sms.literals import ListAppsPaginatorName
 Values:
 
 - `list_apps`
+
+<a id="outputformattype"></a>
 
 ## OutputFormatType
 
@@ -227,6 +259,8 @@ Values:
 
 - `JSON`
 - `YAML`
+
+<a id="replicationjobstatetype"></a>
 
 ## ReplicationJobStateType
 
@@ -245,6 +279,8 @@ Values:
 - `PAUSED_ON_FAILURE`
 - `PENDING`
 
+<a id="replicationrunstatetype"></a>
+
 ## ReplicationRunStateType
 
 ```python
@@ -261,6 +297,8 @@ Values:
 - `MISSED`
 - `PENDING`
 
+<a id="replicationruntypetype"></a>
+
 ## ReplicationRunTypeType
 
 ```python
@@ -272,6 +310,8 @@ Values:
 - `AUTOMATIC`
 - `ON_DEMAND`
 
+<a id="scripttypetype"></a>
+
 ## ScriptTypeType
 
 ```python
@@ -282,6 +322,8 @@ Values:
 
 - `POWERSHELL_SCRIPT`
 - `SHELL_SCRIPT`
+
+<a id="servercatalogstatustype"></a>
 
 ## ServerCatalogStatusType
 
@@ -297,6 +339,8 @@ Values:
 - `IMPORTING`
 - `NOT_IMPORTED`
 
+<a id="servertypetype"></a>
+
 ## ServerTypeType
 
 ```python
@@ -307,6 +351,8 @@ Values:
 
 - `VIRTUAL_MACHINE`
 
+<a id="servervalidationstrategytype"></a>
+
 ## ServerValidationStrategyType
 
 ```python
@@ -316,6 +362,8 @@ from mypy_boto3_sms.literals import ServerValidationStrategyType
 Values:
 
 - `USERDATA`
+
+<a id="validationstatustype"></a>
 
 ## ValidationStatusType
 
@@ -331,6 +379,8 @@ Values:
 - `READY_FOR_VALIDATION`
 - `SUCCEEDED`
 
+<a id="vmmanagertypetype"></a>
+
 ## VmManagerTypeType
 
 ```python
@@ -342,6 +392,8 @@ Values:
 - `HYPERV-MANAGER`
 - `SCVMM`
 - `VSPHERE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -650,6 +702,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

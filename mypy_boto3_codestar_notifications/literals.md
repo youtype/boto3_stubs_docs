@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-codestarnotifications-module"></a>
+
 # Literals for boto3 CodeStarNotifications module
 
 > [Index](..) > [CodeStarNotifications](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CodeStarNotifications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/codestar-notifications.html#CodeStarNotifications)
 type annotations stubs module
-[mypy_boto3_codestar_notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
+[mypy-boto3-codestar-notifications](https://pypi.org/project/mypy-boto3-codestar-notifications/).
 
 - [Literals for boto3 CodeStarNotifications module](#literals-for-boto3-codestarnotifications-module)
   - [DetailTypeType](#detailtypetype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="detailtypetype"></a>
+
 ## DetailTypeType
 
 ```python
@@ -30,6 +34,8 @@ Values:
 
 - `BASIC`
 - `FULL`
+
+<a id="listeventtypesfilternametype"></a>
 
 ## ListEventTypesFilterNameType
 
@@ -42,6 +48,8 @@ Values:
 - `RESOURCE_TYPE`
 - `SERVICE_NAME`
 
+<a id="listeventtypespaginatorname"></a>
+
 ## ListEventTypesPaginatorName
 
 ```python
@@ -51,6 +59,8 @@ from mypy_boto3_codestar_notifications.literals import ListEventTypesPaginatorNa
 Values:
 
 - `list_event_types`
+
+<a id="listnotificationrulesfilternametype"></a>
 
 ## ListNotificationRulesFilterNameType
 
@@ -65,6 +75,8 @@ Values:
 - `RESOURCE`
 - `TARGET_ADDRESS`
 
+<a id="listnotificationrulespaginatorname"></a>
+
 ## ListNotificationRulesPaginatorName
 
 ```python
@@ -74,6 +86,8 @@ from mypy_boto3_codestar_notifications.literals import ListNotificationRulesPagi
 Values:
 
 - `list_notification_rules`
+
+<a id="listtargetsfilternametype"></a>
 
 ## ListTargetsFilterNameType
 
@@ -87,6 +101,8 @@ Values:
 - `TARGET_STATUS`
 - `TARGET_TYPE`
 
+<a id="listtargetspaginatorname"></a>
+
 ## ListTargetsPaginatorName
 
 ```python
@@ -96,6 +112,8 @@ from mypy_boto3_codestar_notifications.literals import ListTargetsPaginatorName
 Values:
 
 - `list_targets`
+
+<a id="notificationrulestatustype"></a>
 
 ## NotificationRuleStatusType
 
@@ -107,6 +125,8 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="targetstatustype"></a>
 
 ## TargetStatusType
 
@@ -121,6 +141,8 @@ Values:
 - `INACTIVE`
 - `PENDING`
 - `UNREACHABLE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -429,6 +451,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

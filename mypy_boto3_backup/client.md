@@ -1,3 +1,5 @@
+<a id="backupclient-for-boto3-backup-module"></a>
+
 # BackupClient for boto3 Backup module
 
 > [Index](..) > [Backup](.) > BackupClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Backup](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup)
 type annotations stubs module
-[mypy_boto3_backup](https://pypi.org/project/mypy-boto3-backup/).
+[mypy-boto3-backup](https://pypi.org/project/mypy-boto3-backup/).
 
 - [BackupClient for boto3 Backup module](#backupclient-for-boto3-backup-module)
   - [BackupClient](#backupclient)
@@ -81,6 +83,8 @@ type annotations stubs module
     - [update_region_settings](#update_region_settings)
     - [update_report_plan](#update_report_plan)
 
+<a id="backupclient"></a>
+
 ## BackupClient
 
 Type annotations for `boto3.client("backup")`
@@ -88,14 +92,17 @@ Type annotations for `boto3.client("backup")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_backup.client import BackupClient
 
 def get_backup_client() -> BackupClient:
-    return boto3.client("backup")
+    return Session().client("backup")
 ```
 
 Boto3 documentation:
 [Backup.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -123,7 +130,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceUnavailableException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -135,6 +146,8 @@ Boto3 documentation:
 [Backup.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/backup.html#Backup.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -150,6 +163,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_backup_plan"></a>
 
 ### create_backup_plan
 
@@ -173,6 +188,8 @@ Keyword-only arguments:
 Returns
 [CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef).
 
+<a id="create_backup_selection"></a>
+
 ### create_backup_selection
 
 .
@@ -195,6 +212,8 @@ Keyword-only arguments:
 Returns
 [CreateBackupSelectionOutputTypeDef](./type_defs.md#createbackupselectionoutputtypedef).
 
+<a id="create_backup_vault"></a>
+
 ### create_backup_vault
 
 Creates a logical container where backups are stored.
@@ -216,6 +235,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef).
+
+<a id="create_framework"></a>
 
 ### create_framework
 
@@ -241,6 +262,8 @@ Keyword-only arguments:
 
 Returns
 [CreateFrameworkOutputTypeDef](./type_defs.md#createframeworkoutputtypedef).
+
+<a id="create_report_plan"></a>
 
 ### create_report_plan
 
@@ -269,6 +292,8 @@ Keyword-only arguments:
 Returns
 [CreateReportPlanOutputTypeDef](./type_defs.md#createreportplanoutputtypedef).
 
+<a id="delete_backup_plan"></a>
+
 ### delete_backup_plan
 
 Deletes a backup plan.
@@ -288,6 +313,8 @@ Keyword-only arguments:
 Returns
 [DeleteBackupPlanOutputTypeDef](./type_defs.md#deletebackupplanoutputtypedef).
 
+<a id="delete_backup_selection"></a>
+
 ### delete_backup_selection
 
 Deletes the resource selection associated with a backup plan that is specified
@@ -306,6 +333,8 @@ Keyword-only arguments:
 - `BackupPlanId`: `str` *(required)*
 - `SelectionId`: `str` *(required)*
 
+<a id="delete_backup_vault"></a>
+
 ### delete_backup_vault
 
 Deletes the backup vault identified by its name.
@@ -321,6 +350,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
+
+<a id="delete_backup_vault_access_policy"></a>
 
 ### delete_backup_vault_access_policy
 
@@ -339,6 +370,8 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
+<a id="delete_backup_vault_lock_configuration"></a>
+
 ### delete_backup_vault_lock_configuration
 
 Deletes Backup Vault Lock from a backup vault specified by a backup vault name.
@@ -355,6 +388,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
+
+<a id="delete_backup_vault_notifications"></a>
 
 ### delete_backup_vault_notifications
 
@@ -373,6 +408,8 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
+<a id="delete_framework"></a>
+
 ### delete_framework
 
 Deletes the framework specified by a framework name.
@@ -388,6 +425,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `FrameworkName`: `str` *(required)*
+
+<a id="delete_recovery_point"></a>
 
 ### delete_recovery_point
 
@@ -406,6 +445,8 @@ Keyword-only arguments:
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
 
+<a id="delete_report_plan"></a>
+
 ### delete_report_plan
 
 Deletes the report plan specified by a report plan name.
@@ -421,6 +462,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ReportPlanName`: `str` *(required)*
+
+<a id="describe_backup_job"></a>
 
 ### describe_backup_job
 
@@ -441,6 +484,8 @@ Keyword-only arguments:
 Returns
 [DescribeBackupJobOutputTypeDef](./type_defs.md#describebackupjoboutputtypedef).
 
+<a id="describe_backup_vault"></a>
+
 ### describe_backup_vault
 
 Returns metadata about a backup vault specified by its name.
@@ -459,6 +504,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeBackupVaultOutputTypeDef](./type_defs.md#describebackupvaultoutputtypedef).
+
+<a id="describe_copy_job"></a>
 
 ### describe_copy_job
 
@@ -479,6 +526,8 @@ Keyword-only arguments:
 Returns
 [DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef).
 
+<a id="describe_framework"></a>
+
 ### describe_framework
 
 Returns the framework details for the specified `FrameworkName` .
@@ -498,6 +547,8 @@ Keyword-only arguments:
 Returns
 [DescribeFrameworkOutputTypeDef](./type_defs.md#describeframeworkoutputtypedef).
 
+<a id="describe_global_settings"></a>
+
 ### describe_global_settings
 
 Describes whether the Amazon Web Services account is opted in to cross-account
@@ -510,6 +561,8 @@ Boto3 documentation:
 
 Returns
 [DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef).
+
+<a id="describe_protected_resource"></a>
 
 ### describe_protected_resource
 
@@ -533,6 +586,8 @@ Keyword-only arguments:
 Returns
 [DescribeProtectedResourceOutputTypeDef](./type_defs.md#describeprotectedresourceoutputtypedef).
 
+<a id="describe_recovery_point"></a>
+
 ### describe_recovery_point
 
 Returns metadata associated with a recovery point, including ID, status,
@@ -554,6 +609,8 @@ Keyword-only arguments:
 Returns
 [DescribeRecoveryPointOutputTypeDef](./type_defs.md#describerecoverypointoutputtypedef).
 
+<a id="describe_region_settings"></a>
+
 ### describe_region_settings
 
 Returns the current service opt-in settings for the Region.
@@ -565,6 +622,8 @@ Boto3 documentation:
 
 Returns
 [DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
+
+<a id="describe_report_job"></a>
 
 ### describe_report_job
 
@@ -586,6 +645,8 @@ Keyword-only arguments:
 Returns
 [DescribeReportJobOutputTypeDef](./type_defs.md#describereportjoboutputtypedef).
 
+<a id="describe_report_plan"></a>
+
 ### describe_report_plan
 
 Returns a list of all report plans for an Amazon Web Services account and
@@ -606,6 +667,8 @@ Keyword-only arguments:
 Returns
 [DescribeReportPlanOutputTypeDef](./type_defs.md#describereportplanoutputtypedef).
 
+<a id="describe_restore_job"></a>
+
 ### describe_restore_job
 
 Returns metadata associated with a restore job that is specified by a job ID.
@@ -625,6 +688,8 @@ Keyword-only arguments:
 Returns
 [DescribeRestoreJobOutputTypeDef](./type_defs.md#describerestorejoboutputtypedef).
 
+<a id="disassociate_recovery_point"></a>
+
 ### disassociate_recovery_point
 
 Deletes the specified continuous backup recovery point from Backup and releases
@@ -643,6 +708,8 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
+
+<a id="export_backup_plan_template"></a>
 
 ### export_backup_plan_template
 
@@ -664,6 +731,8 @@ Keyword-only arguments:
 Returns
 [ExportBackupPlanTemplateOutputTypeDef](./type_defs.md#exportbackupplantemplateoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -681,6 +750,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_backup_plan"></a>
 
 ### get_backup_plan
 
@@ -702,6 +773,8 @@ Keyword-only arguments:
 Returns
 [GetBackupPlanOutputTypeDef](./type_defs.md#getbackupplanoutputtypedef).
 
+<a id="get_backup_plan_from_json"></a>
+
 ### get_backup_plan_from_json
 
 Returns a valid JSON document specifying a backup plan or an error.
@@ -720,6 +793,8 @@ Keyword-only arguments:
 
 Returns
 [GetBackupPlanFromJSONOutputTypeDef](./type_defs.md#getbackupplanfromjsonoutputtypedef).
+
+<a id="get_backup_plan_from_template"></a>
 
 ### get_backup_plan_from_template
 
@@ -741,6 +816,8 @@ Keyword-only arguments:
 Returns
 [GetBackupPlanFromTemplateOutputTypeDef](./type_defs.md#getbackupplanfromtemplateoutputtypedef).
 
+<a id="get_backup_selection"></a>
+
 ### get_backup_selection
 
 .
@@ -760,6 +837,8 @@ Keyword-only arguments:
 
 Returns
 [GetBackupSelectionOutputTypeDef](./type_defs.md#getbackupselectionoutputtypedef).
+
+<a id="get_backup_vault_access_policy"></a>
 
 ### get_backup_vault_access_policy
 
@@ -782,6 +861,8 @@ Keyword-only arguments:
 Returns
 [GetBackupVaultAccessPolicyOutputTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputtypedef).
 
+<a id="get_backup_vault_notifications"></a>
+
 ### get_backup_vault_notifications
 
 Returns event notifications for the specified backup vault.
@@ -801,6 +882,8 @@ Keyword-only arguments:
 
 Returns
 [GetBackupVaultNotificationsOutputTypeDef](./type_defs.md#getbackupvaultnotificationsoutputtypedef).
+
+<a id="get_recovery_point_restore_metadata"></a>
 
 ### get_recovery_point_restore_metadata
 
@@ -823,6 +906,8 @@ Keyword-only arguments:
 Returns
 [GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef).
 
+<a id="get_supported_resource_types"></a>
+
 ### get_supported_resource_types
 
 Returns the Amazon Web Services resource types supported by Backup.
@@ -835,6 +920,8 @@ Boto3 documentation:
 
 Returns
 [GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef).
+
+<a id="list_backup_jobs"></a>
 
 ### list_backup_jobs
 
@@ -864,6 +951,8 @@ Keyword-only arguments:
 Returns
 [ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef).
 
+<a id="list_backup_plan_templates"></a>
+
 ### list_backup_plan_templates
 
 Returns metadata of your saved backup plan templates, including the template
@@ -885,6 +974,8 @@ Keyword-only arguments:
 
 Returns
 [ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef).
+
+<a id="list_backup_plan_versions"></a>
 
 ### list_backup_plan_versions
 
@@ -909,6 +1000,8 @@ Keyword-only arguments:
 Returns
 [ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef).
 
+<a id="list_backup_plans"></a>
+
 ### list_backup_plans
 
 Returns a list of all active backup plans for an authenticated account.
@@ -929,6 +1022,8 @@ Keyword-only arguments:
 
 Returns
 [ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef).
+
+<a id="list_backup_selections"></a>
 
 ### list_backup_selections
 
@@ -952,6 +1047,8 @@ Keyword-only arguments:
 Returns
 [ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef).
 
+<a id="list_backup_vaults"></a>
+
 ### list_backup_vaults
 
 Returns a list of recovery point storage containers along with information
@@ -972,6 +1069,8 @@ Keyword-only arguments:
 
 Returns
 [ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef).
+
+<a id="list_copy_jobs"></a>
 
 ### list_copy_jobs
 
@@ -999,6 +1098,8 @@ Keyword-only arguments:
 
 Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
 
+<a id="list_frameworks"></a>
+
 ### list_frameworks
 
 Returns a list of all frameworks for an Amazon Web Services account and Amazon
@@ -1019,6 +1120,8 @@ Keyword-only arguments:
 
 Returns
 [ListFrameworksOutputTypeDef](./type_defs.md#listframeworksoutputtypedef).
+
+<a id="list_protected_resources"></a>
 
 ### list_protected_resources
 
@@ -1041,6 +1144,8 @@ Keyword-only arguments:
 
 Returns
 [ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef).
+
+<a id="list_recovery_points_by_backup_vault"></a>
 
 ### list_recovery_points_by_backup_vault
 
@@ -1070,6 +1175,8 @@ Keyword-only arguments:
 Returns
 [ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef).
 
+<a id="list_recovery_points_by_resource"></a>
+
 ### list_recovery_points_by_resource
 
 Returns detailed information about all the recovery points of the type
@@ -1092,6 +1199,8 @@ Keyword-only arguments:
 
 Returns
 [ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef).
+
+<a id="list_report_jobs"></a>
 
 ### list_report_jobs
 
@@ -1117,6 +1226,8 @@ Keyword-only arguments:
 Returns
 [ListReportJobsOutputTypeDef](./type_defs.md#listreportjobsoutputtypedef).
 
+<a id="list_report_plans"></a>
+
 ### list_report_plans
 
 Returns a list of your report plans.
@@ -1136,6 +1247,8 @@ Keyword-only arguments:
 
 Returns
 [ListReportPlansOutputTypeDef](./type_defs.md#listreportplansoutputtypedef).
+
+<a id="list_restore_jobs"></a>
 
 ### list_restore_jobs
 
@@ -1162,6 +1275,8 @@ Keyword-only arguments:
 Returns
 [ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef).
 
+<a id="list_tags"></a>
+
 ### list_tags
 
 Returns a list of key-value pairs assigned to a target recovery point, backup
@@ -1183,6 +1298,8 @@ Keyword-only arguments:
 
 Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
 
+<a id="put_backup_vault_access_policy"></a>
+
 ### put_backup_vault_access_policy
 
 Sets a resource-based policy that is used to manage access permissions on the
@@ -1201,6 +1318,8 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 - `Policy`: `str`
+
+<a id="put_backup_vault_lock_configuration"></a>
 
 ### put_backup_vault_lock_configuration
 
@@ -1223,6 +1342,8 @@ Keyword-only arguments:
 - `MaxRetentionDays`: `int`
 - `ChangeableForDays`: `int`
 
+<a id="put_backup_vault_notifications"></a>
+
 ### put_backup_vault_notifications
 
 Turns on notifications on a backup vault for the specified topic and events.
@@ -1243,6 +1364,8 @@ Keyword-only arguments:
 - `BackupVaultEvents`:
   `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
   *(required)*
+
+<a id="start_backup_job"></a>
 
 ### start_backup_job
 
@@ -1271,6 +1394,8 @@ Keyword-only arguments:
 Returns
 [StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef).
 
+<a id="start_copy_job"></a>
+
 ### start_copy_job
 
 Starts a job to create a one-time copy of the specified resource.
@@ -1294,6 +1419,8 @@ Keyword-only arguments:
 
 Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
 
+<a id="start_report_job"></a>
+
 ### start_report_job
 
 Starts an on-demand report job for the specified report plan.
@@ -1313,6 +1440,8 @@ Keyword-only arguments:
 
 Returns
 [StartReportJobOutputTypeDef](./type_defs.md#startreportjoboutputtypedef).
+
+<a id="start_restore_job"></a>
 
 ### start_restore_job
 
@@ -1337,6 +1466,8 @@ Keyword-only arguments:
 Returns
 [StartRestoreJobOutputTypeDef](./type_defs.md#startrestorejoboutputtypedef).
 
+<a id="stop_backup_job"></a>
+
 ### stop_backup_job
 
 Attempts to cancel a job to create a one-time backup of a resource.
@@ -1352,6 +1483,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `BackupJobId`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -1371,6 +1504,8 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a set of key-value pairs from a recovery point, backup plan, or backup
@@ -1389,6 +1524,8 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 - `TagKeyList`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_backup_plan"></a>
 
 ### update_backup_plan
 
@@ -1411,6 +1548,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef).
+
+<a id="update_framework"></a>
 
 ### update_framework
 
@@ -1436,6 +1575,8 @@ Keyword-only arguments:
 Returns
 [UpdateFrameworkOutputTypeDef](./type_defs.md#updateframeworkoutputtypedef).
 
+<a id="update_global_settings"></a>
+
 ### update_global_settings
 
 Updates whether the Amazon Web Services account is opted in to cross-account
@@ -1452,6 +1593,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `GlobalSettings`: `Mapping`\[`str`, `str`\]
+
+<a id="update_recovery_point_lifecycle"></a>
 
 ### update_recovery_point_lifecycle
 
@@ -1475,6 +1618,8 @@ Keyword-only arguments:
 Returns
 [UpdateRecoveryPointLifecycleOutputTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputtypedef).
 
+<a id="update_region_settings"></a>
+
 ### update_region_settings
 
 Updates the current service opt-in settings for the Region.
@@ -1491,6 +1636,8 @@ Keyword-only arguments:
 
 - `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
 - `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
+
+<a id="update_report_plan"></a>
 
 ### update_report_plan
 

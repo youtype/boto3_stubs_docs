@@ -1,3 +1,5 @@
+<a id="elasticacheclient-for-boto3-elasticache-module"></a>
+
 # ElastiCacheClient for boto3 ElastiCache module
 
 > [Index](..) > [ElastiCache](.) > ElastiCacheClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
-[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [ElastiCacheClient for boto3 ElastiCache module](#elasticacheclient-for-boto3-elasticache-module)
   - [ElastiCacheClient](#elasticacheclient)
@@ -82,6 +84,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="elasticacheclient"></a>
+
 ## ElastiCacheClient
 
 Type annotations for `boto3.client("elasticache")`
@@ -89,14 +93,17 @@ Type annotations for `boto3.client("elasticache")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_elasticache.client import ElastiCacheClient
 
 def get_elasticache_client() -> ElastiCacheClient:
-    return boto3.client("elasticache")
+    return Session().client("elasticache")
 ```
 
 Boto3 documentation:
 [ElastiCache.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -181,7 +188,11 @@ Exceptions:
 - `Exceptions.UserNotFoundFault`
 - `Exceptions.UserQuotaExceededFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -193,6 +204,8 @@ Boto3 documentation:
 [ElastiCache.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_resource"></a>
 
 ### add_tags_to_resource
 
@@ -212,6 +225,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+
+<a id="authorize_cache_security_group_ingress"></a>
 
 ### authorize_cache_security_group_ingress
 
@@ -235,6 +250,8 @@ Keyword-only arguments:
 Returns
 [AuthorizeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#authorizecachesecuritygroupingressresulttypedef).
 
+<a id="batch_apply_update_action"></a>
+
 ### batch_apply_update_action
 
 Apply the service update.
@@ -256,6 +273,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
+
+<a id="batch_stop_update_action"></a>
 
 ### batch_stop_update_action
 
@@ -279,6 +298,8 @@ Keyword-only arguments:
 Returns
 [UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -293,6 +314,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="complete_migration"></a>
 
 ### complete_migration
 
@@ -313,6 +336,8 @@ Keyword-only arguments:
 
 Returns
 [CompleteMigrationResponseTypeDef](./type_defs.md#completemigrationresponsetypedef).
+
+<a id="copy_snapshot"></a>
 
 ### copy_snapshot
 
@@ -335,6 +360,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
+
+<a id="create_cache_cluster"></a>
 
 ### create_cache_cluster
 
@@ -382,6 +409,8 @@ Keyword-only arguments:
 Returns
 [CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef).
 
+<a id="create_cache_parameter_group"></a>
+
 ### create_cache_parameter_group
 
 Creates a new Amazon ElastiCache cache parameter group.
@@ -405,6 +434,8 @@ Keyword-only arguments:
 Returns
 [CreateCacheParameterGroupResultTypeDef](./type_defs.md#createcacheparametergroupresulttypedef).
 
+<a id="create_cache_security_group"></a>
+
 ### create_cache_security_group
 
 Creates a new cache security group.
@@ -426,6 +457,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCacheSecurityGroupResultTypeDef](./type_defs.md#createcachesecuritygroupresulttypedef).
+
+<a id="create_cache_subnet_group"></a>
 
 ### create_cache_subnet_group
 
@@ -450,6 +483,8 @@ Keyword-only arguments:
 Returns
 [CreateCacheSubnetGroupResultTypeDef](./type_defs.md#createcachesubnetgroupresulttypedef).
 
+<a id="create_global_replication_group"></a>
+
 ### create_global_replication_group
 
 Global Datastore for Redis offers fully managed, fast, reliable and secure
@@ -472,6 +507,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGlobalReplicationGroupResultTypeDef](./type_defs.md#createglobalreplicationgroupresulttypedef).
+
+<a id="create_replication_group"></a>
 
 ### create_replication_group
 
@@ -529,6 +566,8 @@ Keyword-only arguments:
 Returns
 [CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef).
 
+<a id="create_snapshot"></a>
+
 ### create_snapshot
 
 Creates a copy of an entire cluster or replication group at a specific moment
@@ -552,6 +591,8 @@ Keyword-only arguments:
 
 Returns
 [CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
+
+<a id="create_user"></a>
 
 ### create_user
 
@@ -578,6 +619,8 @@ Keyword-only arguments:
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
+<a id="create_user_group"></a>
+
 ### create_user_group
 
 For Redis engine version 6.0 onwards: Creates a Redis user group.
@@ -599,6 +642,8 @@ Keyword-only arguments:
 
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
+
+<a id="decrease_node_groups_in_global_replication_group"></a>
 
 ### decrease_node_groups_in_global_replication_group
 
@@ -625,6 +670,8 @@ Keyword-only arguments:
 
 Returns
 [DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupresulttypedef).
+
+<a id="decrease_replica_count"></a>
 
 ### decrease_replica_count
 
@@ -653,6 +700,8 @@ Keyword-only arguments:
 Returns
 [DecreaseReplicaCountResultTypeDef](./type_defs.md#decreasereplicacountresulttypedef).
 
+<a id="delete_cache_cluster"></a>
+
 ### delete_cache_cluster
 
 Deletes a previously provisioned cluster.
@@ -673,6 +722,8 @@ Keyword-only arguments:
 Returns
 [DeleteCacheClusterResultTypeDef](./type_defs.md#deletecacheclusterresulttypedef).
 
+<a id="delete_cache_parameter_group"></a>
+
 ### delete_cache_parameter_group
 
 Deletes the specified cache parameter group.
@@ -689,6 +740,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CacheParameterGroupName`: `str` *(required)*
+
+<a id="delete_cache_security_group"></a>
 
 ### delete_cache_security_group
 
@@ -707,6 +760,8 @@ Keyword-only arguments:
 
 - `CacheSecurityGroupName`: `str` *(required)*
 
+<a id="delete_cache_subnet_group"></a>
+
 ### delete_cache_subnet_group
 
 Deletes a cache subnet group.
@@ -723,6 +778,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `CacheSubnetGroupName`: `str` *(required)*
+
+<a id="delete_global_replication_group"></a>
 
 ### delete_global_replication_group
 
@@ -747,6 +804,8 @@ Keyword-only arguments:
 Returns
 [DeleteGlobalReplicationGroupResultTypeDef](./type_defs.md#deleteglobalreplicationgroupresulttypedef).
 
+<a id="delete_replication_group"></a>
+
 ### delete_replication_group
 
 Deletes an existing replication group.
@@ -769,6 +828,8 @@ Keyword-only arguments:
 Returns
 [DeleteReplicationGroupResultTypeDef](./type_defs.md#deletereplicationgroupresulttypedef).
 
+<a id="delete_snapshot"></a>
+
 ### delete_snapshot
 
 Deletes an existing snapshot.
@@ -787,6 +848,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
+
+<a id="delete_user"></a>
 
 ### delete_user
 
@@ -807,6 +870,8 @@ Keyword-only arguments:
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
+<a id="delete_user_group"></a>
+
 ### delete_user_group
 
 For Redis engine version 6.0 onwards: Deletes a user group.
@@ -825,6 +890,8 @@ Keyword-only arguments:
 
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
+
+<a id="describe_cache_clusters"></a>
 
 ### describe_cache_clusters
 
@@ -852,6 +919,8 @@ Keyword-only arguments:
 Returns
 [CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef).
 
+<a id="describe_cache_engine_versions"></a>
+
 ### describe_cache_engine_versions
 
 Returns a list of the available cache engines and their versions.
@@ -877,6 +946,8 @@ Keyword-only arguments:
 Returns
 [CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef).
 
+<a id="describe_cache_parameter_groups"></a>
+
 ### describe_cache_parameter_groups
 
 Returns a list of cache parameter group descriptions.
@@ -898,6 +969,8 @@ Keyword-only arguments:
 
 Returns
 [CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef).
+
+<a id="describe_cache_parameters"></a>
 
 ### describe_cache_parameters
 
@@ -922,6 +995,8 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef).
 
+<a id="describe_cache_security_groups"></a>
+
 ### describe_cache_security_groups
 
 Returns a list of cache security group descriptions.
@@ -943,6 +1018,8 @@ Keyword-only arguments:
 
 Returns
 [CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef).
+
+<a id="describe_cache_subnet_groups"></a>
 
 ### describe_cache_subnet_groups
 
@@ -966,6 +1043,8 @@ Keyword-only arguments:
 Returns
 [CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef).
 
+<a id="describe_engine_default_parameters"></a>
+
 ### describe_engine_default_parameters
 
 Returns the default engine and system parameter information for the specified
@@ -988,6 +1067,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -1014,6 +1095,8 @@ Keyword-only arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
+<a id="describe_global_replication_groups"></a>
+
 ### describe_global_replication_groups
 
 Returns information about a particular global replication group.
@@ -1037,6 +1120,8 @@ Keyword-only arguments:
 Returns
 [DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef).
 
+<a id="describe_replication_groups"></a>
+
 ### describe_replication_groups
 
 Returns information about a particular replication group.
@@ -1058,6 +1143,8 @@ Keyword-only arguments:
 
 Returns
 [ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef).
+
+<a id="describe_reserved_cache_nodes"></a>
 
 ### describe_reserved_cache_nodes
 
@@ -1087,6 +1174,8 @@ Keyword-only arguments:
 Returns
 [ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef).
 
+<a id="describe_reserved_cache_nodes_offerings"></a>
+
 ### describe_reserved_cache_nodes_offerings
 
 Lists available reserved cache node offerings.
@@ -1113,6 +1202,8 @@ Keyword-only arguments:
 Returns
 [ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef).
 
+<a id="describe_service_updates"></a>
+
 ### describe_service_updates
 
 Returns details of the service updates See also:
@@ -1138,6 +1229,8 @@ Keyword-only arguments:
 Returns
 [ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef).
 
+<a id="describe_snapshots"></a>
+
 ### describe_snapshots
 
 Returns information about cluster or replication group snapshots.
@@ -1162,6 +1255,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef).
+
+<a id="describe_update_actions"></a>
 
 ### describe_update_actions
 
@@ -1196,6 +1291,8 @@ Keyword-only arguments:
 Returns
 [UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef).
 
+<a id="describe_user_groups"></a>
+
 ### describe_user_groups
 
 Returns a list of user groups.
@@ -1216,6 +1313,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef).
+
+<a id="describe_users"></a>
 
 ### describe_users
 
@@ -1240,6 +1339,8 @@ Keyword-only arguments:
 Returns
 [DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
 
+<a id="disassociate_global_replication_group"></a>
+
 ### disassociate_global_replication_group
 
 Remove a secondary cluster from the Global datastore using the Global datastore
@@ -1263,6 +1364,8 @@ Keyword-only arguments:
 Returns
 [DisassociateGlobalReplicationGroupResultTypeDef](./type_defs.md#disassociateglobalreplicationgroupresulttypedef).
 
+<a id="failover_global_replication_group"></a>
+
 ### failover_global_replication_group
 
 Used to failover the primary region to a selected secondary region.
@@ -1285,6 +1388,8 @@ Keyword-only arguments:
 Returns
 [FailoverGlobalReplicationGroupResultTypeDef](./type_defs.md#failoverglobalreplicationgroupresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1303,6 +1408,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="increase_node_groups_in_global_replication_group"></a>
 
 ### increase_node_groups_in_global_replication_group
 
@@ -1330,6 +1437,8 @@ Keyword-only arguments:
 Returns
 [IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupresulttypedef).
 
+<a id="increase_replica_count"></a>
+
 ### increase_replica_count
 
 Dynamically increases the number of replicas in a Redis (cluster mode disabled)
@@ -1356,6 +1465,8 @@ Keyword-only arguments:
 Returns
 [IncreaseReplicaCountResultTypeDef](./type_defs.md#increasereplicacountresulttypedef).
 
+<a id="list_allowed_node_type_modifications"></a>
+
 ### list_allowed_node_type_modifications
 
 Lists all available node types that you can scale your Redis cluster's or
@@ -1378,6 +1489,8 @@ Keyword-only arguments:
 Returns
 [AllowedNodeTypeModificationsMessageTypeDef](./type_defs.md#allowednodetypemodificationsmessagetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags currently on a named resource.
@@ -1396,6 +1509,8 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+
+<a id="modify_cache_cluster"></a>
 
 ### modify_cache_cluster
 
@@ -1437,6 +1552,8 @@ Keyword-only arguments:
 Returns
 [ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef).
 
+<a id="modify_cache_parameter_group"></a>
+
 ### modify_cache_parameter_group
 
 Modifies the parameters of a cache parameter group.
@@ -1460,6 +1577,8 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
+<a id="modify_cache_subnet_group"></a>
+
 ### modify_cache_subnet_group
 
 Modifies an existing cache subnet group.
@@ -1481,6 +1600,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyCacheSubnetGroupResultTypeDef](./type_defs.md#modifycachesubnetgroupresulttypedef).
+
+<a id="modify_global_replication_group"></a>
 
 ### modify_global_replication_group
 
@@ -1507,6 +1628,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyGlobalReplicationGroupResultTypeDef](./type_defs.md#modifyglobalreplicationgroupresulttypedef).
+
+<a id="modify_replication_group"></a>
 
 ### modify_replication_group
 
@@ -1554,6 +1677,8 @@ Keyword-only arguments:
 Returns
 [ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef).
 
+<a id="modify_replication_group_shard_configuration"></a>
+
 ### modify_replication_group_shard_configuration
 
 Modifies a replication group's shards (node groups) by allowing you to add
@@ -1582,6 +1707,8 @@ Keyword-only arguments:
 Returns
 [ModifyReplicationGroupShardConfigurationResultTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationresulttypedef).
 
+<a id="modify_user"></a>
+
 ### modify_user
 
 Changes user password(s) and/or access string.
@@ -1605,6 +1732,8 @@ Keyword-only arguments:
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
+<a id="modify_user_group"></a>
+
 ### modify_user_group
 
 Changes the list of users that belong to the user group.
@@ -1625,6 +1754,8 @@ Keyword-only arguments:
 
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
+
+<a id="purchase_reserved_cache_nodes_offering"></a>
 
 ### purchase_reserved_cache_nodes_offering
 
@@ -1649,6 +1780,8 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedCacheNodesOfferingResultTypeDef](./type_defs.md#purchasereservedcachenodesofferingresulttypedef).
 
+<a id="rebalance_slots_in_global_replication_group"></a>
+
 ### rebalance_slots_in_global_replication_group
 
 Redistribute slots to ensure uniform distribution across existing shards in the
@@ -1672,6 +1805,8 @@ Keyword-only arguments:
 Returns
 [RebalanceSlotsInGlobalReplicationGroupResultTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupresulttypedef).
 
+<a id="reboot_cache_cluster"></a>
+
 ### reboot_cache_cluster
 
 Reboots some, or all, of the cache nodes within a provisioned cluster.
@@ -1692,6 +1827,8 @@ Keyword-only arguments:
 Returns
 [RebootCacheClusterResultTypeDef](./type_defs.md#rebootcacheclusterresulttypedef).
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 Removes the tags identified by the `TagKeys` list from the named resource.
@@ -1711,6 +1848,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+
+<a id="reset_cache_parameter_group"></a>
 
 ### reset_cache_parameter_group
 
@@ -1736,6 +1875,8 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
+<a id="revoke_cache_security_group_ingress"></a>
+
 ### revoke_cache_security_group_ingress
 
 Revokes ingress from a cache security group.
@@ -1757,6 +1898,8 @@ Keyword-only arguments:
 
 Returns
 [RevokeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#revokecachesecuritygroupingressresulttypedef).
+
+<a id="start_migration"></a>
 
 ### start_migration
 
@@ -1780,6 +1923,8 @@ Keyword-only arguments:
 Returns
 [StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
 
+<a id="test_failover"></a>
+
 ### test_failover
 
 Represents the input of a `TestFailover` operation which test automatic
@@ -1800,6 +1945,8 @@ Keyword-only arguments:
 - `NodeGroupId`: `str` *(required)*
 
 Returns [TestFailoverResultTypeDef](./type_defs.md#testfailoverresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -1840,6 +1987,8 @@ overloads.
   [DescribeUserGroupsPaginator](./paginators.md#describeusergroupspaginator)
 - `client.get_paginator("describe_users")` ->
   [DescribeUsersPaginator](./paginators.md#describeuserspaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

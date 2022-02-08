@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-managedgrafana-module"></a>
+
 # Literals for boto3 ManagedGrafana module
 
 > [Index](..) > [ManagedGrafana](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ManagedGrafana](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/grafana.html#ManagedGrafana)
 type annotations stubs module
-[mypy_boto3_grafana](https://pypi.org/project/mypy-boto3-grafana/).
+[mypy-boto3-grafana](https://pypi.org/project/mypy-boto3-grafana/).
 
 - [Literals for boto3 ManagedGrafana module](#literals-for-boto3-managedgrafana-module)
   - [AccountAccessTypeType](#accountaccesstypetype)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="accountaccesstypetype"></a>
+
 ## AccountAccessTypeType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `CURRENT_ACCOUNT`
 - `ORGANIZATION`
 
+<a id="authenticationprovidertypestype"></a>
+
 ## AuthenticationProviderTypesType
 
 ```python
@@ -45,6 +51,8 @@ Values:
 
 - `AWS_SSO`
 - `SAML`
+
+<a id="datasourcetypetype"></a>
 
 ## DataSourceTypeType
 
@@ -61,6 +69,8 @@ Values:
 - `TIMESTREAM`
 - `XRAY`
 
+<a id="licensetypetype"></a>
+
 ## LicenseTypeType
 
 ```python
@@ -72,6 +82,8 @@ Values:
 - `ENTERPRISE`
 - `ENTERPRISE_FREE_TRIAL`
 
+<a id="listpermissionspaginatorname"></a>
+
 ## ListPermissionsPaginatorName
 
 ```python
@@ -81,6 +93,8 @@ from mypy_boto3_grafana.literals import ListPermissionsPaginatorName
 Values:
 
 - `list_permissions`
+
+<a id="listworkspacespaginatorname"></a>
 
 ## ListWorkspacesPaginatorName
 
@@ -92,6 +106,8 @@ Values:
 
 - `list_workspaces`
 
+<a id="notificationdestinationtypetype"></a>
+
 ## NotificationDestinationTypeType
 
 ```python
@@ -101,6 +117,8 @@ from mypy_boto3_grafana.literals import NotificationDestinationTypeType
 Values:
 
 - `SNS`
+
+<a id="permissiontypetype"></a>
 
 ## PermissionTypeType
 
@@ -113,6 +131,8 @@ Values:
 - `CUSTOMER_MANAGED`
 - `SERVICE_MANAGED`
 
+<a id="roletype"></a>
+
 ## RoleType
 
 ```python
@@ -123,6 +143,8 @@ Values:
 
 - `ADMIN`
 - `EDITOR`
+
+<a id="samlconfigurationstatustype"></a>
 
 ## SamlConfigurationStatusType
 
@@ -135,6 +157,8 @@ Values:
 - `CONFIGURED`
 - `NOT_CONFIGURED`
 
+<a id="updateactiontype"></a>
+
 ## UpdateActionType
 
 ```python
@@ -146,6 +170,8 @@ Values:
 - `ADD`
 - `REVOKE`
 
+<a id="usertypetype"></a>
+
 ## UserTypeType
 
 ```python
@@ -156,6 +182,8 @@ Values:
 
 - `SSO_GROUP`
 - `SSO_USER`
+
+<a id="workspacestatustype"></a>
 
 ## WorkspaceStatusType
 
@@ -176,6 +204,8 @@ Values:
 - `UPDATING`
 - `UPGRADE_FAILED`
 - `UPGRADING`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -484,6 +514,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

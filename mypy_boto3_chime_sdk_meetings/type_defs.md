@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-chimesdkmeetings-module"></a>
+
 # Typed dictionaries for boto3 ChimeSDKMeetings module
 
 > [Index](..) > [ChimeSDKMeetings](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKMeetings](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-meetings.html#ChimeSDKMeetings)
 type annotations stubs module
-[mypy_boto3_chime_sdk_meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
+[mypy-boto3-chime-sdk-meetings](https://pypi.org/project/mypy-boto3-chime-sdk-meetings/).
 
 - [Typed dictionaries for boto3 ChimeSDKMeetings module](#typed-dictionaries-for-boto3-chimesdkmeetings-module)
   - [AttendeeTypeDef](#attendeetypedef)
@@ -39,6 +41,8 @@ type annotations stubs module
   - [StopMeetingTranscriptionRequestRequestTypeDef](#stopmeetingtranscriptionrequestrequesttypedef)
   - [TranscriptionConfigurationTypeDef](#transcriptionconfigurationtypedef)
 
+<a id="attendeetypedef"></a>
+
 ## AttendeeTypeDef
 
 ```python
@@ -51,6 +55,8 @@ Optional fields:
 - `AttendeeId`: `str`
 - `JoinToken`: `str`
 
+<a id="audiofeaturestypedef"></a>
+
 ## AudioFeaturesTypeDef
 
 ```python
@@ -61,6 +67,8 @@ Optional fields:
 
 - `EchoReduction`:
   [MeetingFeatureStatusType](./literals.md#meetingfeaturestatustype)
+
+<a id="batchcreateattendeerequestrequesttypedef"></a>
 
 ## BatchCreateAttendeeRequestRequestTypeDef
 
@@ -73,6 +81,8 @@ Required fields:
 - `MeetingId`: `str`
 - `Attendees`:
   `Sequence`\[[CreateAttendeeRequestItemTypeDef](./type_defs.md#createattendeerequestitemtypedef)\]
+
+<a id="batchcreateattendeeresponsetypedef"></a>
 
 ## BatchCreateAttendeeResponseTypeDef
 
@@ -88,6 +98,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createattendeeerrortypedef"></a>
+
 ## CreateAttendeeErrorTypeDef
 
 ```python
@@ -100,6 +112,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
+<a id="createattendeerequestitemtypedef"></a>
+
 ## CreateAttendeeRequestItemTypeDef
 
 ```python
@@ -109,6 +123,8 @@ from mypy_boto3_chime_sdk_meetings.type_defs import CreateAttendeeRequestItemTyp
 Required fields:
 
 - `ExternalUserId`: `str`
+
+<a id="createattendeerequestrequesttypedef"></a>
 
 ## CreateAttendeeRequestRequestTypeDef
 
@@ -121,6 +137,8 @@ Required fields:
 - `MeetingId`: `str`
 - `ExternalUserId`: `str`
 
+<a id="createattendeeresponsetypedef"></a>
+
 ## CreateAttendeeResponseTypeDef
 
 ```python
@@ -132,6 +150,8 @@ Required fields:
 - `Attendee`: [AttendeeTypeDef](./type_defs.md#attendeetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmeetingrequestrequesttypedef"></a>
 
 ## CreateMeetingRequestRequestTypeDef
 
@@ -153,6 +173,8 @@ Optional fields:
 - `MeetingFeatures`:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 
+<a id="createmeetingresponsetypedef"></a>
+
 ## CreateMeetingResponseTypeDef
 
 ```python
@@ -164,6 +186,8 @@ Required fields:
 - `Meeting`: [MeetingTypeDef](./type_defs.md#meetingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmeetingwithattendeesrequestrequesttypedef"></a>
 
 ## CreateMeetingWithAttendeesRequestRequestTypeDef
 
@@ -187,6 +211,8 @@ Optional fields:
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
 
+<a id="createmeetingwithattendeesresponsetypedef"></a>
+
 ## CreateMeetingWithAttendeesResponseTypeDef
 
 ```python
@@ -202,6 +228,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteattendeerequestrequesttypedef"></a>
+
 ## DeleteAttendeeRequestRequestTypeDef
 
 ```python
@@ -213,6 +241,8 @@ Required fields:
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
 
+<a id="deletemeetingrequestrequesttypedef"></a>
+
 ## DeleteMeetingRequestRequestTypeDef
 
 ```python
@@ -222,6 +252,8 @@ from mypy_boto3_chime_sdk_meetings.type_defs import DeleteMeetingRequestRequestT
 Required fields:
 
 - `MeetingId`: `str`
+
+<a id="enginetranscribemedicalsettingstypedef"></a>
 
 ## EngineTranscribeMedicalSettingsTypeDef
 
@@ -244,6 +276,8 @@ Optional fields:
   [TranscribeMedicalRegionType](./literals.md#transcribemedicalregiontype)
 - `ContentIdentificationType`: `Literal['PHI']` (see
   [TranscribeMedicalContentIdentificationTypeType](./literals.md#transcribemedicalcontentidentificationtypetype))
+
+<a id="enginetranscribesettingstypedef"></a>
 
 ## EngineTranscribeSettingsTypeDef
 
@@ -273,6 +307,8 @@ Optional fields:
 - `PiiEntityTypes`: `str`
 - `LanguageModelName`: `str`
 
+<a id="getattendeerequestrequesttypedef"></a>
+
 ## GetAttendeeRequestRequestTypeDef
 
 ```python
@@ -283,6 +319,8 @@ Required fields:
 
 - `MeetingId`: `str`
 - `AttendeeId`: `str`
+
+<a id="getattendeeresponsetypedef"></a>
 
 ## GetAttendeeResponseTypeDef
 
@@ -296,6 +334,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmeetingrequestrequesttypedef"></a>
+
 ## GetMeetingRequestRequestTypeDef
 
 ```python
@@ -305,6 +345,8 @@ from mypy_boto3_chime_sdk_meetings.type_defs import GetMeetingRequestRequestType
 Required fields:
 
 - `MeetingId`: `str`
+
+<a id="getmeetingresponsetypedef"></a>
 
 ## GetMeetingResponseTypeDef
 
@@ -317,6 +359,8 @@ Required fields:
 - `Meeting`: [MeetingTypeDef](./type_defs.md#meetingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listattendeesrequestrequesttypedef"></a>
 
 ## ListAttendeesRequestRequestTypeDef
 
@@ -333,6 +377,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listattendeesresponsetypedef"></a>
+
 ## ListAttendeesResponseTypeDef
 
 ```python
@@ -345,6 +391,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="mediaplacementtypedef"></a>
 
 ## MediaPlacementTypeDef
 
@@ -363,6 +411,8 @@ Optional fields:
 - `ScreenSharingUrl`: `str`
 - `EventIngestionUrl`: `str`
 
+<a id="meetingfeaturesconfigurationtypedef"></a>
+
 ## MeetingFeaturesConfigurationTypeDef
 
 ```python
@@ -372,6 +422,8 @@ from mypy_boto3_chime_sdk_meetings.type_defs import MeetingFeaturesConfiguration
 Optional fields:
 
 - `Audio`: [AudioFeaturesTypeDef](./type_defs.md#audiofeaturestypedef)
+
+<a id="meetingtypedef"></a>
 
 ## MeetingTypeDef
 
@@ -390,6 +442,8 @@ Optional fields:
 - `MeetingFeatures`:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 
+<a id="notificationsconfigurationtypedef"></a>
+
 ## NotificationsConfigurationTypeDef
 
 ```python
@@ -401,6 +455,8 @@ Optional fields:
 - `LambdaFunctionArn`: `str`
 - `SnsTopicArn`: `str`
 - `SqsQueueArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -416,6 +472,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="startmeetingtranscriptionrequestrequesttypedef"></a>
+
 ## StartMeetingTranscriptionRequestRequestTypeDef
 
 ```python
@@ -428,6 +486,8 @@ Required fields:
 - `TranscriptionConfiguration`:
   [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
 
+<a id="stopmeetingtranscriptionrequestrequesttypedef"></a>
+
 ## StopMeetingTranscriptionRequestRequestTypeDef
 
 ```python
@@ -437,6 +497,8 @@ from mypy_boto3_chime_sdk_meetings.type_defs import StopMeetingTranscriptionRequ
 Required fields:
 
 - `MeetingId`: `str`
+
+<a id="transcriptionconfigurationtypedef"></a>
 
 ## TranscriptionConfigurationTypeDef
 

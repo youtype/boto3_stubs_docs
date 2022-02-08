@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-athena-module"></a>
+
 # Typed dictionaries for boto3 Athena module
 
 > [Index](..) > [Athena](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Athena](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena)
 type annotations stubs module
-[mypy_boto3_athena](https://pypi.org/project/mypy-boto3-athena/).
+[mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Typed dictionaries for boto3 Athena module](#typed-dictionaries-for-boto3-athena-module)
   - [AthenaErrorTypeDef](#athenaerrortypedef)
@@ -95,6 +97,8 @@ type annotations stubs module
   - [WorkGroupSummaryTypeDef](#workgroupsummarytypedef)
   - [WorkGroupTypeDef](#workgrouptypedef)
 
+<a id="athenaerrortypedef"></a>
+
 ## AthenaErrorTypeDef
 
 ```python
@@ -105,6 +109,8 @@ Optional fields:
 
 - `ErrorCategory`: `int`
 
+<a id="batchgetnamedqueryinputrequesttypedef"></a>
+
 ## BatchGetNamedQueryInputRequestTypeDef
 
 ```python
@@ -114,6 +120,8 @@ from mypy_boto3_athena.type_defs import BatchGetNamedQueryInputRequestTypeDef
 Required fields:
 
 - `NamedQueryIds`: `Sequence`\[`str`\]
+
+<a id="batchgetnamedqueryoutputtypedef"></a>
 
 ## BatchGetNamedQueryOutputTypeDef
 
@@ -130,6 +138,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchgetqueryexecutioninputrequesttypedef"></a>
+
 ## BatchGetQueryExecutionInputRequestTypeDef
 
 ```python
@@ -139,6 +149,8 @@ from mypy_boto3_athena.type_defs import BatchGetQueryExecutionInputRequestTypeDe
 Required fields:
 
 - `QueryExecutionIds`: `Sequence`\[`str`\]
+
+<a id="batchgetqueryexecutionoutputtypedef"></a>
 
 ## BatchGetQueryExecutionOutputTypeDef
 
@@ -154,6 +166,8 @@ Required fields:
   `List`\[[UnprocessedQueryExecutionIdTypeDef](./type_defs.md#unprocessedqueryexecutionidtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="columninfotypedef"></a>
 
 ## ColumnInfoTypeDef
 
@@ -177,6 +191,8 @@ Optional fields:
 - `Nullable`: [ColumnNullableType](./literals.md#columnnullabletype)
 - `CaseSensitive`: `bool`
 
+<a id="columntypedef"></a>
+
 ## ColumnTypeDef
 
 ```python
@@ -191,6 +207,8 @@ Optional fields:
 
 - `Type`: `str`
 - `Comment`: `str`
+
+<a id="createdatacataloginputrequesttypedef"></a>
 
 ## CreateDataCatalogInputRequestTypeDef
 
@@ -208,6 +226,8 @@ Optional fields:
 - `Description`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createnamedqueryinputrequesttypedef"></a>
 
 ## CreateNamedQueryInputRequestTypeDef
 
@@ -227,6 +247,8 @@ Optional fields:
 - `ClientRequestToken`: `str`
 - `WorkGroup`: `str`
 
+<a id="createnamedqueryoutputtypedef"></a>
+
 ## CreateNamedQueryOutputTypeDef
 
 ```python
@@ -238,6 +260,8 @@ Required fields:
 - `NamedQueryId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpreparedstatementinputrequesttypedef"></a>
 
 ## CreatePreparedStatementInputRequestTypeDef
 
@@ -254,6 +278,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="createworkgroupinputrequesttypedef"></a>
 
 ## CreateWorkGroupInputRequestTypeDef
 
@@ -272,6 +298,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="datacatalogsummarytypedef"></a>
+
 ## DataCatalogSummaryTypeDef
 
 ```python
@@ -282,6 +310,8 @@ Optional fields:
 
 - `CatalogName`: `str`
 - `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype)
+
+<a id="datacatalogtypedef"></a>
 
 ## DataCatalogTypeDef
 
@@ -299,6 +329,8 @@ Optional fields:
 - `Description`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
 
+<a id="databasetypedef"></a>
+
 ## DatabaseTypeDef
 
 ```python
@@ -314,6 +346,8 @@ Optional fields:
 - `Description`: `str`
 - `Parameters`: `Dict`\[`str`, `str`\]
 
+<a id="datumtypedef"></a>
+
 ## DatumTypeDef
 
 ```python
@@ -323,6 +357,8 @@ from mypy_boto3_athena.type_defs import DatumTypeDef
 Optional fields:
 
 - `VarCharValue`: `str`
+
+<a id="deletedatacataloginputrequesttypedef"></a>
 
 ## DeleteDataCatalogInputRequestTypeDef
 
@@ -334,6 +370,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deletenamedqueryinputrequesttypedef"></a>
+
 ## DeleteNamedQueryInputRequestTypeDef
 
 ```python
@@ -343,6 +381,8 @@ from mypy_boto3_athena.type_defs import DeleteNamedQueryInputRequestTypeDef
 Required fields:
 
 - `NamedQueryId`: `str`
+
+<a id="deletepreparedstatementinputrequesttypedef"></a>
 
 ## DeletePreparedStatementInputRequestTypeDef
 
@@ -354,6 +394,8 @@ Required fields:
 
 - `StatementName`: `str`
 - `WorkGroup`: `str`
+
+<a id="deleteworkgroupinputrequesttypedef"></a>
 
 ## DeleteWorkGroupInputRequestTypeDef
 
@@ -368,6 +410,8 @@ Required fields:
 Optional fields:
 
 - `RecursiveDeleteOption`: `bool`
+
+<a id="encryptionconfigurationtypedef"></a>
 
 ## EncryptionConfigurationTypeDef
 
@@ -384,6 +428,8 @@ Optional fields:
 
 - `KmsKey`: `str`
 
+<a id="engineversiontypedef"></a>
+
 ## EngineVersionTypeDef
 
 ```python
@@ -395,6 +441,8 @@ Optional fields:
 - `SelectedEngineVersion`: `str`
 - `EffectiveEngineVersion`: `str`
 
+<a id="getdatacataloginputrequesttypedef"></a>
+
 ## GetDataCatalogInputRequestTypeDef
 
 ```python
@@ -404,6 +452,8 @@ from mypy_boto3_athena.type_defs import GetDataCatalogInputRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getdatacatalogoutputtypedef"></a>
 
 ## GetDataCatalogOutputTypeDef
 
@@ -417,6 +467,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdatabaseinputrequesttypedef"></a>
+
 ## GetDatabaseInputRequestTypeDef
 
 ```python
@@ -427,6 +479,8 @@ Required fields:
 
 - `CatalogName`: `str`
 - `DatabaseName`: `str`
+
+<a id="getdatabaseoutputtypedef"></a>
 
 ## GetDatabaseOutputTypeDef
 
@@ -440,6 +494,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getnamedqueryinputrequesttypedef"></a>
+
 ## GetNamedQueryInputRequestTypeDef
 
 ```python
@@ -449,6 +505,8 @@ from mypy_boto3_athena.type_defs import GetNamedQueryInputRequestTypeDef
 Required fields:
 
 - `NamedQueryId`: `str`
+
+<a id="getnamedqueryoutputtypedef"></a>
 
 ## GetNamedQueryOutputTypeDef
 
@@ -462,6 +520,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpreparedstatementinputrequesttypedef"></a>
+
 ## GetPreparedStatementInputRequestTypeDef
 
 ```python
@@ -472,6 +532,8 @@ Required fields:
 
 - `StatementName`: `str`
 - `WorkGroup`: `str`
+
+<a id="getpreparedstatementoutputtypedef"></a>
 
 ## GetPreparedStatementOutputTypeDef
 
@@ -486,6 +548,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getqueryexecutioninputrequesttypedef"></a>
+
 ## GetQueryExecutionInputRequestTypeDef
 
 ```python
@@ -495,6 +559,8 @@ from mypy_boto3_athena.type_defs import GetQueryExecutionInputRequestTypeDef
 Required fields:
 
 - `QueryExecutionId`: `str`
+
+<a id="getqueryexecutionoutputtypedef"></a>
 
 ## GetQueryExecutionOutputTypeDef
 
@@ -508,6 +574,8 @@ Required fields:
   [QueryExecutionTypeDef](./type_defs.md#queryexecutiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getqueryresultsinputrequesttypedef"></a>
 
 ## GetQueryResultsInputRequestTypeDef
 
@@ -524,6 +592,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getqueryresultsoutputtypedef"></a>
+
 ## GetQueryResultsOutputTypeDef
 
 ```python
@@ -538,6 +608,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettablemetadatainputrequesttypedef"></a>
+
 ## GetTableMetadataInputRequestTypeDef
 
 ```python
@@ -549,6 +621,8 @@ Required fields:
 - `CatalogName`: `str`
 - `DatabaseName`: `str`
 - `TableName`: `str`
+
+<a id="gettablemetadataoutputtypedef"></a>
 
 ## GetTableMetadataOutputTypeDef
 
@@ -562,6 +636,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getworkgroupinputrequesttypedef"></a>
+
 ## GetWorkGroupInputRequestTypeDef
 
 ```python
@@ -571,6 +647,8 @@ from mypy_boto3_athena.type_defs import GetWorkGroupInputRequestTypeDef
 Required fields:
 
 - `WorkGroup`: `str`
+
+<a id="getworkgroupoutputtypedef"></a>
 
 ## GetWorkGroupOutputTypeDef
 
@@ -584,6 +662,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatacatalogsinputrequesttypedef"></a>
+
 ## ListDataCatalogsInputRequestTypeDef
 
 ```python
@@ -594,6 +674,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listdatacatalogsoutputtypedef"></a>
 
 ## ListDataCatalogsOutputTypeDef
 
@@ -608,6 +690,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listdatabasesinputrequesttypedef"></a>
 
 ## ListDatabasesInputRequestTypeDef
 
@@ -624,6 +708,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listdatabasesoutputtypedef"></a>
+
 ## ListDatabasesOutputTypeDef
 
 ```python
@@ -637,6 +723,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listengineversionsinputrequesttypedef"></a>
+
 ## ListEngineVersionsInputRequestTypeDef
 
 ```python
@@ -647,6 +735,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listengineversionsoutputtypedef"></a>
 
 ## ListEngineVersionsOutputTypeDef
 
@@ -662,6 +752,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listnamedqueriesinputrequesttypedef"></a>
+
 ## ListNamedQueriesInputRequestTypeDef
 
 ```python
@@ -673,6 +765,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WorkGroup`: `str`
+
+<a id="listnamedqueriesoutputtypedef"></a>
 
 ## ListNamedQueriesOutputTypeDef
 
@@ -686,6 +780,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpreparedstatementsinputrequesttypedef"></a>
 
 ## ListPreparedStatementsInputRequestTypeDef
 
@@ -702,6 +798,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listpreparedstatementsoutputtypedef"></a>
+
 ## ListPreparedStatementsOutputTypeDef
 
 ```python
@@ -716,6 +814,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listqueryexecutionsinputrequesttypedef"></a>
+
 ## ListQueryExecutionsInputRequestTypeDef
 
 ```python
@@ -727,6 +827,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 - `WorkGroup`: `str`
+
+<a id="listqueryexecutionsoutputtypedef"></a>
 
 ## ListQueryExecutionsOutputTypeDef
 
@@ -740,6 +842,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtablemetadatainputrequesttypedef"></a>
 
 ## ListTableMetadataInputRequestTypeDef
 
@@ -758,6 +862,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtablemetadataoutputtypedef"></a>
+
 ## ListTableMetadataOutputTypeDef
 
 ```python
@@ -771,6 +877,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtagsforresourceinputrequesttypedef"></a>
 
 ## ListTagsForResourceInputRequestTypeDef
 
@@ -787,6 +895,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listtagsforresourceoutputtypedef"></a>
+
 ## ListTagsForResourceOutputTypeDef
 
 ```python
@@ -800,6 +910,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworkgroupsinputrequesttypedef"></a>
+
 ## ListWorkGroupsInputRequestTypeDef
 
 ```python
@@ -810,6 +922,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listworkgroupsoutputtypedef"></a>
 
 ## ListWorkGroupsOutputTypeDef
 
@@ -824,6 +938,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="namedquerytypedef"></a>
 
 ## NamedQueryTypeDef
 
@@ -843,6 +959,8 @@ Optional fields:
 - `NamedQueryId`: `str`
 - `WorkGroup`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -855,6 +973,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="preparedstatementsummarytypedef"></a>
+
 ## PreparedStatementSummaryTypeDef
 
 ```python
@@ -865,6 +985,8 @@ Optional fields:
 
 - `StatementName`: `str`
 - `LastModifiedTime`: `datetime`
+
+<a id="preparedstatementtypedef"></a>
 
 ## PreparedStatementTypeDef
 
@@ -880,6 +1002,8 @@ Optional fields:
 - `Description`: `str`
 - `LastModifiedTime`: `datetime`
 
+<a id="queryexecutioncontexttypedef"></a>
+
 ## QueryExecutionContextTypeDef
 
 ```python
@@ -890,6 +1014,8 @@ Optional fields:
 
 - `Database`: `str`
 - `Catalog`: `str`
+
+<a id="queryexecutionstatisticstypedef"></a>
 
 ## QueryExecutionStatisticsTypeDef
 
@@ -907,6 +1033,8 @@ Optional fields:
 - `QueryPlanningTimeInMillis`: `int`
 - `ServiceProcessingTimeInMillis`: `int`
 
+<a id="queryexecutionstatustypedef"></a>
+
 ## QueryExecutionStatusTypeDef
 
 ```python
@@ -920,6 +1048,8 @@ Optional fields:
 - `SubmissionDateTime`: `datetime`
 - `CompletionDateTime`: `datetime`
 - `AthenaError`: [AthenaErrorTypeDef](./type_defs.md#athenaerrortypedef)
+
+<a id="queryexecutiontypedef"></a>
 
 ## QueryExecutionTypeDef
 
@@ -943,6 +1073,8 @@ Optional fields:
 - `WorkGroup`: `str`
 - `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -957,6 +1089,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="resultconfigurationtypedef"></a>
+
 ## ResultConfigurationTypeDef
 
 ```python
@@ -969,6 +1103,8 @@ Optional fields:
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
+
+<a id="resultconfigurationupdatestypedef"></a>
 
 ## ResultConfigurationUpdatesTypeDef
 
@@ -986,6 +1122,8 @@ Optional fields:
 - `ExpectedBucketOwner`: `str`
 - `RemoveExpectedBucketOwner`: `bool`
 
+<a id="resultsetmetadatatypedef"></a>
+
 ## ResultSetMetadataTypeDef
 
 ```python
@@ -995,6 +1133,8 @@ from mypy_boto3_athena.type_defs import ResultSetMetadataTypeDef
 Optional fields:
 
 - `ColumnInfo`: `List`\[[ColumnInfoTypeDef](./type_defs.md#columninfotypedef)\]
+
+<a id="resultsettypedef"></a>
 
 ## ResultSetTypeDef
 
@@ -1008,6 +1148,8 @@ Optional fields:
 - `ResultSetMetadata`:
   [ResultSetMetadataTypeDef](./type_defs.md#resultsetmetadatatypedef)
 
+<a id="rowtypedef"></a>
+
 ## RowTypeDef
 
 ```python
@@ -1017,6 +1159,8 @@ from mypy_boto3_athena.type_defs import RowTypeDef
 Optional fields:
 
 - `Data`: `List`\[[DatumTypeDef](./type_defs.md#datumtypedef)\]
+
+<a id="startqueryexecutioninputrequesttypedef"></a>
 
 ## StartQueryExecutionInputRequestTypeDef
 
@@ -1037,6 +1181,8 @@ Optional fields:
   [ResultConfigurationTypeDef](./type_defs.md#resultconfigurationtypedef)
 - `WorkGroup`: `str`
 
+<a id="startqueryexecutionoutputtypedef"></a>
+
 ## StartQueryExecutionOutputTypeDef
 
 ```python
@@ -1049,6 +1195,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopqueryexecutioninputrequesttypedef"></a>
+
 ## StopQueryExecutionInputRequestTypeDef
 
 ```python
@@ -1058,6 +1206,8 @@ from mypy_boto3_athena.type_defs import StopQueryExecutionInputRequestTypeDef
 Required fields:
 
 - `QueryExecutionId`: `str`
+
+<a id="tablemetadatatypedef"></a>
 
 ## TableMetadataTypeDef
 
@@ -1078,6 +1228,8 @@ Optional fields:
 - `PartitionKeys`: `List`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `Parameters`: `Dict`\[`str`, `str`\]
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -1089,6 +1241,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1099,6 +1253,8 @@ Optional fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="unprocessednamedqueryidtypedef"></a>
 
 ## UnprocessedNamedQueryIdTypeDef
 
@@ -1112,6 +1268,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
+<a id="unprocessedqueryexecutionidtypedef"></a>
+
 ## UnprocessedQueryExecutionIdTypeDef
 
 ```python
@@ -1124,6 +1282,8 @@ Optional fields:
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
 
+<a id="untagresourceinputrequesttypedef"></a>
+
 ## UntagResourceInputRequestTypeDef
 
 ```python
@@ -1134,6 +1294,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedatacataloginputrequesttypedef"></a>
 
 ## UpdateDataCatalogInputRequestTypeDef
 
@@ -1151,6 +1313,8 @@ Optional fields:
 - `Description`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
 
+<a id="updatepreparedstatementinputrequesttypedef"></a>
+
 ## UpdatePreparedStatementInputRequestTypeDef
 
 ```python
@@ -1166,6 +1330,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updateworkgroupinputrequesttypedef"></a>
 
 ## UpdateWorkGroupInputRequestTypeDef
 
@@ -1184,6 +1350,8 @@ Optional fields:
   [WorkGroupConfigurationUpdatesTypeDef](./type_defs.md#workgroupconfigurationupdatestypedef)
 - `State`: [WorkGroupStateType](./literals.md#workgroupstatetype)
 
+<a id="workgroupconfigurationtypedef"></a>
+
 ## WorkGroupConfigurationTypeDef
 
 ```python
@@ -1199,6 +1367,8 @@ Optional fields:
 - `BytesScannedCutoffPerQuery`: `int`
 - `RequesterPaysEnabled`: `bool`
 - `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
+
+<a id="workgroupconfigurationupdatestypedef"></a>
 
 ## WorkGroupConfigurationUpdatesTypeDef
 
@@ -1217,6 +1387,8 @@ Optional fields:
 - `RequesterPaysEnabled`: `bool`
 - `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
 
+<a id="workgroupsummarytypedef"></a>
+
 ## WorkGroupSummaryTypeDef
 
 ```python
@@ -1230,6 +1402,8 @@ Optional fields:
 - `Description`: `str`
 - `CreationTime`: `datetime`
 - `EngineVersion`: [EngineVersionTypeDef](./type_defs.md#engineversiontypedef)
+
+<a id="workgrouptypedef"></a>
 
 ## WorkGroupTypeDef
 

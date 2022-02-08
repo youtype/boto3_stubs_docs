@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-ec2instanceconnect-module"></a>
+
 # Typed dictionaries for boto3 EC2InstanceConnect module
 
 > [Index](..) > [EC2InstanceConnect](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EC2InstanceConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2-instance-connect.html#EC2InstanceConnect)
 type annotations stubs module
-[mypy_boto3_ec2_instance_connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
+[mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
 - [Typed dictionaries for boto3 EC2InstanceConnect module](#typed-dictionaries-for-boto3-ec2instanceconnect-module)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [SendSSHPublicKeyResponseTypeDef](#sendsshpublickeyresponsetypedef)
   - [SendSerialConsoleSSHPublicKeyRequestRequestTypeDef](#sendserialconsolesshpublickeyrequestrequesttypedef)
   - [SendSerialConsoleSSHPublicKeyResponseTypeDef](#sendserialconsolesshpublickeyresponsetypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -27,6 +31,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sendsshpublickeyrequestrequesttypedef"></a>
 
 ## SendSSHPublicKeyRequestRequestTypeDef
 
@@ -44,6 +50,8 @@ Optional fields:
 
 - `AvailabilityZone`: `str`
 
+<a id="sendsshpublickeyresponsetypedef"></a>
+
 ## SendSSHPublicKeyResponseTypeDef
 
 ```python
@@ -56,6 +64,8 @@ Required fields:
 - `Success`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="sendserialconsolesshpublickeyrequestrequesttypedef"></a>
 
 ## SendSerialConsoleSSHPublicKeyRequestRequestTypeDef
 
@@ -71,6 +81,8 @@ Required fields:
 Optional fields:
 
 - `SerialPort`: `int`
+
+<a id="sendserialconsolesshpublickeyresponsetypedef"></a>
 
 ## SendSerialConsoleSSHPublicKeyResponseTypeDef
 

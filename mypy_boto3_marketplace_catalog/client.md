@@ -1,3 +1,5 @@
+<a id="marketplacecatalogclient-for-boto3-marketplacecatalog-module"></a>
+
 # MarketplaceCatalogClient for boto3 MarketplaceCatalog module
 
 > [Index](..) > [MarketplaceCatalog](.) > MarketplaceCatalogClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MarketplaceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog)
 type annotations stubs module
-[mypy_boto3_marketplace_catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
+[mypy-boto3-marketplace-catalog](https://pypi.org/project/mypy-boto3-marketplace-catalog/).
 
 - [MarketplaceCatalogClient for boto3 MarketplaceCatalog module](#marketplacecatalogclient-for-boto3-marketplacecatalog-module)
   - [MarketplaceCatalogClient](#marketplacecatalogclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [list_entities](#list_entities)
     - [start_change_set](#start_change_set)
 
+<a id="marketplacecatalogclient"></a>
+
 ## MarketplaceCatalogClient
 
 Type annotations for `boto3.client("marketplace-catalog")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("marketplace-catalog")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_marketplace_catalog.client import MarketplaceCatalogClient
 
 def get_marketplace-catalog_client() -> MarketplaceCatalogClient:
-    return boto3.client("marketplace-catalog")
+    return Session().client("marketplace-catalog")
 ```
 
 Boto3 documentation:
 [MarketplaceCatalog.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -61,7 +68,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -73,6 +84,8 @@ Boto3 documentation:
 [MarketplaceCatalog.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-catalog.html#MarketplaceCatalog.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -88,6 +101,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_change_set"></a>
 
 ### cancel_change_set
 
@@ -110,6 +125,8 @@ Keyword-only arguments:
 Returns
 [CancelChangeSetResponseTypeDef](./type_defs.md#cancelchangesetresponsetypedef).
 
+<a id="describe_change_set"></a>
+
 ### describe_change_set
 
 Provides information about a given change set.
@@ -130,6 +147,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeChangeSetResponseTypeDef](./type_defs.md#describechangesetresponsetypedef).
+
+<a id="describe_entity"></a>
 
 ### describe_entity
 
@@ -152,6 +171,8 @@ Keyword-only arguments:
 Returns
 [DescribeEntityResponseTypeDef](./type_defs.md#describeentityresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -170,6 +191,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_change_sets"></a>
 
 ### list_change_sets
 
@@ -196,6 +219,8 @@ Keyword-only arguments:
 Returns
 [ListChangeSetsResponseTypeDef](./type_defs.md#listchangesetsresponsetypedef).
 
+<a id="list_entities"></a>
+
 ### list_entities
 
 Provides the list of entities of a given type.
@@ -220,6 +245,8 @@ Keyword-only arguments:
 
 Returns
 [ListEntitiesResponseTypeDef](./type_defs.md#listentitiesresponsetypedef).
+
+<a id="start_change_set"></a>
 
 ### start_change_set
 

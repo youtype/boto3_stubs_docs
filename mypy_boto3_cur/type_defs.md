@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-costandusagereportservice-module"></a>
+
 # Typed dictionaries for boto3 CostandUsageReportService module
 
 > [Index](..) > [CostandUsageReportService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CostandUsageReportService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cur.html#CostandUsageReportService)
 type annotations stubs module
-[mypy_boto3_cur](https://pypi.org/project/mypy-boto3-cur/).
+[mypy-boto3-cur](https://pypi.org/project/mypy-boto3-cur/).
 
 - [Typed dictionaries for boto3 CostandUsageReportService module](#typed-dictionaries-for-boto3-costandusagereportservice-module)
   - [DeleteReportDefinitionRequestRequestTypeDef](#deletereportdefinitionrequestrequesttypedef)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ReportDefinitionTypeDef](#reportdefinitiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
 
+<a id="deletereportdefinitionrequestrequesttypedef"></a>
+
 ## DeleteReportDefinitionRequestRequestTypeDef
 
 ```python
@@ -27,6 +31,8 @@ from mypy_boto3_cur.type_defs import DeleteReportDefinitionRequestRequestTypeDef
 Optional fields:
 
 - `ReportName`: `str`
+
+<a id="deletereportdefinitionresponsetypedef"></a>
 
 ## DeleteReportDefinitionResponseTypeDef
 
@@ -40,6 +46,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereportdefinitionsrequestrequesttypedef"></a>
+
 ## DescribeReportDefinitionsRequestRequestTypeDef
 
 ```python
@@ -50,6 +58,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="describereportdefinitionsresponsetypedef"></a>
 
 ## DescribeReportDefinitionsResponseTypeDef
 
@@ -65,6 +75,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="modifyreportdefinitionrequestrequesttypedef"></a>
+
 ## ModifyReportDefinitionRequestRequestTypeDef
 
 ```python
@@ -76,6 +88,8 @@ Required fields:
 - `ReportName`: `str`
 - `ReportDefinition`:
   [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -89,6 +103,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="putreportdefinitionrequestrequesttypedef"></a>
+
 ## PutReportDefinitionRequestRequestTypeDef
 
 ```python
@@ -99,6 +115,8 @@ Required fields:
 
 - `ReportDefinition`:
   [ReportDefinitionTypeDef](./type_defs.md#reportdefinitiontypedef)
+
+<a id="reportdefinitiontypedef"></a>
 
 ## ReportDefinitionTypeDef
 
@@ -126,6 +144,8 @@ Optional fields:
 - `ReportVersioning`:
   [ReportVersioningType](./literals.md#reportversioningtype)
 - `BillingViewArn`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

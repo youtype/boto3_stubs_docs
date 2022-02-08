@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-applicationautoscaling-module"></a>
+
 # Literals for boto3 ApplicationAutoScaling module
 
 > [Index](..) > [ApplicationAutoScaling](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ApplicationAutoScaling](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/application-autoscaling.html#ApplicationAutoScaling)
 type annotations stubs module
-[mypy_boto3_application_autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
+[mypy-boto3-application-autoscaling](https://pypi.org/project/mypy-boto3-application-autoscaling/).
 
 - [Literals for boto3 ApplicationAutoScaling module](#literals-for-boto3-applicationautoscaling-module)
   - [AdjustmentTypeType](#adjustmenttypetype)
@@ -23,6 +25,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="adjustmenttypetype"></a>
+
 ## AdjustmentTypeType
 
 ```python
@@ -35,6 +39,8 @@ Values:
 - `ExactCapacity`
 - `PercentChangeInCapacity`
 
+<a id="describescalabletargetspaginatorname"></a>
+
 ## DescribeScalableTargetsPaginatorName
 
 ```python
@@ -44,6 +50,8 @@ from mypy_boto3_application_autoscaling.literals import DescribeScalableTargetsP
 Values:
 
 - `describe_scalable_targets`
+
+<a id="describescalingactivitiespaginatorname"></a>
 
 ## DescribeScalingActivitiesPaginatorName
 
@@ -55,6 +63,8 @@ Values:
 
 - `describe_scaling_activities`
 
+<a id="describescalingpoliciespaginatorname"></a>
+
 ## DescribeScalingPoliciesPaginatorName
 
 ```python
@@ -65,6 +75,8 @@ Values:
 
 - `describe_scaling_policies`
 
+<a id="describescheduledactionspaginatorname"></a>
+
 ## DescribeScheduledActionsPaginatorName
 
 ```python
@@ -74,6 +86,8 @@ from mypy_boto3_application_autoscaling.literals import DescribeScheduledActions
 Values:
 
 - `describe_scheduled_actions`
+
+<a id="metricaggregationtypetype"></a>
 
 ## MetricAggregationTypeType
 
@@ -86,6 +100,8 @@ Values:
 - `Average`
 - `Maximum`
 - `Minimum`
+
+<a id="metricstatistictype"></a>
 
 ## MetricStatisticType
 
@@ -100,6 +116,8 @@ Values:
 - `Minimum`
 - `SampleCount`
 - `Sum`
+
+<a id="metrictypetype"></a>
 
 ## MetricTypeType
 
@@ -131,6 +149,8 @@ Values:
 - `RDSReaderAverageDatabaseConnections`
 - `SageMakerVariantInvocationsPerInstance`
 
+<a id="policytypetype"></a>
+
 ## PolicyTypeType
 
 ```python
@@ -141,6 +161,8 @@ Values:
 
 - `StepScaling`
 - `TargetTrackingScaling`
+
+<a id="scalabledimensiontype"></a>
 
 ## ScalableDimensionType
 
@@ -171,6 +193,8 @@ Values:
 - `rds:cluster:ReadReplicaCount`
 - `sagemaker:variant:DesiredInstanceCount`
 
+<a id="scalingactivitystatuscodetype"></a>
+
 ## ScalingActivityStatusCodeType
 
 ```python
@@ -185,6 +209,8 @@ Values:
 - `Pending`
 - `Successful`
 - `Unfulfilled`
+
+<a id="servicenamespacetype"></a>
 
 ## ServiceNamespaceType
 
@@ -208,6 +234,8 @@ Values:
 - `neptune`
 - `rds`
 - `sagemaker`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -516,6 +544,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

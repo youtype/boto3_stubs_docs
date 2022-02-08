@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-cloud9-module"></a>
+
 # Paginators for boto3 Cloud9 module
 
 > [Index](..) > [Cloud9](.) > Paginators
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [Cloud9](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloud9.html#Cloud9)
 type annotations stubs module
-[mypy_boto3_cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
+[mypy-boto3-cloud9](https://pypi.org/project/mypy-boto3-cloud9/).
 
 - [Paginators for boto3 Cloud9 module](#paginators-for-boto3-cloud9-module)
   - [DescribeEnvironmentMembershipsPaginator](#describeenvironmentmembershipspaginator)
   - [ListEnvironmentsPaginator](#listenvironmentspaginator)
+
+<a id="describeenvironmentmembershipspaginator"></a>
 
 ## DescribeEnvironmentMembershipsPaginator
 
@@ -19,10 +23,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloud9.paginator import DescribeEnvironmentMembershipsPaginator
 
 def get_describe_environment_memberships_paginator() -> DescribeEnvironmentMembershipsPaginator:
-    return boto3.client("cloud9").get_paginator("describe_environment_memberships")
+    return Session().client("cloud9").get_paginator("describe_environment_memberships")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `DescribeEnvironmentMembershipsPaginator.paginate` method:
 `DescribeEnvironmentMembershipsPaginator.paginate` returns
 `_PageIterator`\[[DescribeEnvironmentMembershipsResultTypeDef](./type_defs.md#describeenvironmentmembershipsresulttypedef)\].
 
+<a id="listenvironmentspaginator"></a>
+
 ## ListEnvironmentsPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_cloud9.paginator import ListEnvironmentsPaginator
 
 def get_list_environments_paginator() -> ListEnvironmentsPaginator:
-    return boto3.client("cloud9").get_paginator("list_environments")
+    return Session().client("cloud9").get_paginator("list_environments")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-translate-module"></a>
+
 # Typed dictionaries for boto3 Translate module
 
 > [Index](..) > [Translate](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Translate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/translate.html#Translate)
 type annotations stubs module
-[mypy_boto3_translate](https://pypi.org/project/mypy-boto3-translate/).
+[mypy-boto3-translate](https://pypi.org/project/mypy-boto3-translate/).
 
 - [Typed dictionaries for boto3 Translate module](#typed-dictionaries-for-boto3-translate-module)
   - [AppliedTerminologyTypeDef](#appliedterminologytypedef)
@@ -53,6 +55,8 @@ type annotations stubs module
   - [UpdateParallelDataRequestRequestTypeDef](#updateparalleldatarequestrequesttypedef)
   - [UpdateParallelDataResponseTypeDef](#updateparalleldataresponsetypedef)
 
+<a id="appliedterminologytypedef"></a>
+
 ## AppliedTerminologyTypeDef
 
 ```python
@@ -63,6 +67,8 @@ Optional fields:
 
 - `Name`: `str`
 - `Terms`: `List`\[[TermTypeDef](./type_defs.md#termtypedef)\]
+
+<a id="createparalleldatarequestrequesttypedef"></a>
 
 ## CreateParallelDataRequestRequestTypeDef
 
@@ -82,6 +88,8 @@ Optional fields:
 - `Description`: `str`
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
+<a id="createparalleldataresponsetypedef"></a>
+
 ## CreateParallelDataResponseTypeDef
 
 ```python
@@ -95,6 +103,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteparalleldatarequestrequesttypedef"></a>
+
 ## DeleteParallelDataRequestRequestTypeDef
 
 ```python
@@ -104,6 +114,8 @@ from mypy_boto3_translate.type_defs import DeleteParallelDataRequestRequestTypeD
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteparalleldataresponsetypedef"></a>
 
 ## DeleteParallelDataResponseTypeDef
 
@@ -118,6 +130,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteterminologyrequestrequesttypedef"></a>
+
 ## DeleteTerminologyRequestRequestTypeDef
 
 ```python
@@ -128,6 +142,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="describetexttranslationjobrequestrequesttypedef"></a>
+
 ## DescribeTextTranslationJobRequestRequestTypeDef
 
 ```python
@@ -137,6 +153,8 @@ from mypy_boto3_translate.type_defs import DescribeTextTranslationJobRequestRequ
 Required fields:
 
 - `JobId`: `str`
+
+<a id="describetexttranslationjobresponsetypedef"></a>
 
 ## DescribeTextTranslationJobResponseTypeDef
 
@@ -151,6 +169,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="encryptionkeytypedef"></a>
+
 ## EncryptionKeyTypeDef
 
 ```python
@@ -163,6 +183,8 @@ Required fields:
   [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype))
 - `Id`: `str`
 
+<a id="getparalleldatarequestrequesttypedef"></a>
+
 ## GetParallelDataRequestRequestTypeDef
 
 ```python
@@ -172,6 +194,8 @@ from mypy_boto3_translate.type_defs import GetParallelDataRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getparalleldataresponsetypedef"></a>
 
 ## GetParallelDataResponseTypeDef
 
@@ -192,6 +216,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getterminologyrequestrequesttypedef"></a>
+
 ## GetTerminologyRequestRequestTypeDef
 
 ```python
@@ -206,6 +232,8 @@ Optional fields:
 
 - `TerminologyDataFormat`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
+
+<a id="getterminologyresponsetypedef"></a>
 
 ## GetTerminologyResponseTypeDef
 
@@ -223,6 +251,8 @@ Required fields:
   [TerminologyDataLocationTypeDef](./type_defs.md#terminologydatalocationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="importterminologyrequestrequesttypedef"></a>
 
 ## ImportTerminologyRequestRequestTypeDef
 
@@ -243,6 +273,8 @@ Optional fields:
 - `Description`: `str`
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
+<a id="importterminologyresponsetypedef"></a>
+
 ## ImportTerminologyResponseTypeDef
 
 ```python
@@ -258,6 +290,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="inputdataconfigtypedef"></a>
+
 ## InputDataConfigTypeDef
 
 ```python
@@ -268,6 +302,8 @@ Required fields:
 
 - `S3Uri`: `str`
 - `ContentType`: `str`
+
+<a id="jobdetailstypedef"></a>
 
 ## JobDetailsTypeDef
 
@@ -281,6 +317,8 @@ Optional fields:
 - `DocumentsWithErrorsCount`: `int`
 - `InputDocumentsCount`: `int`
 
+<a id="listparalleldatarequestrequesttypedef"></a>
+
 ## ListParallelDataRequestRequestTypeDef
 
 ```python
@@ -291,6 +329,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listparalleldataresponsetypedef"></a>
 
 ## ListParallelDataResponseTypeDef
 
@@ -306,6 +346,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listterminologiesrequestrequesttypedef"></a>
+
 ## ListTerminologiesRequestRequestTypeDef
 
 ```python
@@ -316,6 +358,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listterminologiesresponsetypedef"></a>
 
 ## ListTerminologiesResponseTypeDef
 
@@ -331,6 +375,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtexttranslationjobsrequestrequesttypedef"></a>
+
 ## ListTextTranslationJobsRequestRequestTypeDef
 
 ```python
@@ -343,6 +389,8 @@ Optional fields:
   [TextTranslationJobFilterTypeDef](./type_defs.md#texttranslationjobfiltertypedef)
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listtexttranslationjobsresponsetypedef"></a>
 
 ## ListTextTranslationJobsResponseTypeDef
 
@@ -358,6 +406,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="outputdataconfigtypedef"></a>
+
 ## OutputDataConfigTypeDef
 
 ```python
@@ -372,6 +422,8 @@ Optional fields:
 
 - `EncryptionKey`: [EncryptionKeyTypeDef](./type_defs.md#encryptionkeytypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -384,6 +436,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="paralleldataconfigtypedef"></a>
+
 ## ParallelDataConfigTypeDef
 
 ```python
@@ -395,6 +449,8 @@ Required fields:
 - `S3Uri`: `str`
 - `Format`: [ParallelDataFormatType](./literals.md#paralleldataformattype)
 
+<a id="paralleldatadatalocationtypedef"></a>
+
 ## ParallelDataDataLocationTypeDef
 
 ```python
@@ -405,6 +461,8 @@ Required fields:
 
 - `RepositoryType`: `str`
 - `Location`: `str`
+
+<a id="paralleldatapropertiestypedef"></a>
 
 ## ParallelDataPropertiesTypeDef
 
@@ -434,6 +492,8 @@ Optional fields:
   [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - `LatestUpdateAttemptAt`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -447,6 +507,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="starttexttranslationjobrequestrequesttypedef"></a>
 
 ## StartTextTranslationJobRequestRequestTypeDef
 
@@ -473,6 +535,8 @@ Optional fields:
 - `Settings`:
   [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
+<a id="starttexttranslationjobresponsetypedef"></a>
+
 ## StartTextTranslationJobResponseTypeDef
 
 ```python
@@ -486,6 +550,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stoptexttranslationjobrequestrequesttypedef"></a>
+
 ## StopTextTranslationJobRequestRequestTypeDef
 
 ```python
@@ -495,6 +561,8 @@ from mypy_boto3_translate.type_defs import StopTextTranslationJobRequestRequestT
 Required fields:
 
 - `JobId`: `str`
+
+<a id="stoptexttranslationjobresponsetypedef"></a>
 
 ## StopTextTranslationJobResponseTypeDef
 
@@ -509,6 +577,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="termtypedef"></a>
+
 ## TermTypeDef
 
 ```python
@@ -520,6 +590,8 @@ Optional fields:
 - `SourceText`: `str`
 - `TargetText`: `str`
 
+<a id="terminologydatalocationtypedef"></a>
+
 ## TerminologyDataLocationTypeDef
 
 ```python
@@ -530,6 +602,8 @@ Required fields:
 
 - `RepositoryType`: `str`
 - `Location`: `str`
+
+<a id="terminologydatatypedef"></a>
 
 ## TerminologyDataTypeDef
 
@@ -546,6 +620,8 @@ Required fields:
 Optional fields:
 
 - `Directionality`: [DirectionalityType](./literals.md#directionalitytype)
+
+<a id="terminologypropertiestypedef"></a>
 
 ## TerminologyPropertiesTypeDef
 
@@ -571,6 +647,8 @@ Optional fields:
 - `Format`:
   [TerminologyDataFormatType](./literals.md#terminologydataformattype)
 
+<a id="texttranslationjobfiltertypedef"></a>
+
 ## TextTranslationJobFilterTypeDef
 
 ```python
@@ -583,6 +661,8 @@ Optional fields:
 - `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
 - `SubmittedBeforeTime`: `Union`\[`datetime`, `str`\]
 - `SubmittedAfterTime`: `Union`\[`datetime`, `str`\]
+
+<a id="texttranslationjobpropertiestypedef"></a>
 
 ## TextTranslationJobPropertiesTypeDef
 
@@ -611,6 +691,8 @@ Optional fields:
 - `Settings`:
   [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
 
+<a id="translatetextrequestrequesttypedef"></a>
+
 ## TranslateTextRequestRequestTypeDef
 
 ```python
@@ -628,6 +710,8 @@ Optional fields:
 - `TerminologyNames`: `Sequence`\[`str`\]
 - `Settings`:
   [TranslationSettingsTypeDef](./type_defs.md#translationsettingstypedef)
+
+<a id="translatetextresponsetypedef"></a>
 
 ## TranslateTextResponseTypeDef
 
@@ -647,6 +731,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="translationsettingstypedef"></a>
+
 ## TranslationSettingsTypeDef
 
 ```python
@@ -657,6 +743,8 @@ Optional fields:
 
 - `Profanity`: `Literal['MASK']` (see
   [ProfanityType](./literals.md#profanitytype))
+
+<a id="updateparalleldatarequestrequesttypedef"></a>
 
 ## UpdateParallelDataRequestRequestTypeDef
 
@@ -674,6 +762,8 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="updateparalleldataresponsetypedef"></a>
 
 ## UpdateParallelDataResponseTypeDef
 

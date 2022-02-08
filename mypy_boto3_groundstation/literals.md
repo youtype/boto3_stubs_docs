@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-groundstation-module"></a>
+
 # Literals for boto3 GroundStation module
 
 > [Index](..) > [GroundStation](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GroundStation](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/groundstation.html#GroundStation)
 type annotations stubs module
-[mypy_boto3_groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
+[mypy-boto3-groundstation](https://pypi.org/project/mypy-boto3-groundstation/).
 
 - [Literals for boto3 GroundStation module](#literals-for-boto3-groundstation-module)
   - [AngleUnitsType](#angleunitstype)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="angleunitstype"></a>
+
 ## AngleUnitsType
 
 ```python
@@ -36,6 +40,8 @@ Values:
 
 - `DEGREE_ANGLE`
 - `RADIAN`
+
+<a id="bandwidthunitstype"></a>
 
 ## BandwidthUnitsType
 
@@ -48,6 +54,8 @@ Values:
 - `GHz`
 - `kHz`
 - `MHz`
+
+<a id="configcapabilitytypetype"></a>
 
 ## ConfigCapabilityTypeType
 
@@ -64,6 +72,8 @@ Values:
 - `s3-recording`
 - `tracking`
 - `uplink-echo`
+
+<a id="contactstatustype"></a>
 
 ## ContactStatusType
 
@@ -87,6 +97,8 @@ Values:
 - `SCHEDULED`
 - `SCHEDULING`
 
+<a id="criticalitytype"></a>
+
 ## CriticalityType
 
 ```python
@@ -99,6 +111,8 @@ Values:
 - `REMOVED`
 - `REQUIRED`
 
+<a id="eirpunitstype"></a>
+
 ## EirpUnitsType
 
 ```python
@@ -108,6 +122,8 @@ from mypy_boto3_groundstation.literals import EirpUnitsType
 Values:
 
 - `dBW`
+
+<a id="endpointstatustype"></a>
 
 ## EndpointStatusType
 
@@ -123,6 +139,8 @@ Values:
 - `deleting`
 - `failed`
 
+<a id="frequencyunitstype"></a>
+
 ## FrequencyUnitsType
 
 ```python
@@ -135,6 +153,8 @@ Values:
 - `kHz`
 - `MHz`
 
+<a id="listconfigspaginatorname"></a>
+
 ## ListConfigsPaginatorName
 
 ```python
@@ -144,6 +164,8 @@ from mypy_boto3_groundstation.literals import ListConfigsPaginatorName
 Values:
 
 - `list_configs`
+
+<a id="listcontactspaginatorname"></a>
 
 ## ListContactsPaginatorName
 
@@ -155,6 +177,8 @@ Values:
 
 - `list_contacts`
 
+<a id="listdataflowendpointgroupspaginatorname"></a>
+
 ## ListDataflowEndpointGroupsPaginatorName
 
 ```python
@@ -164,6 +188,8 @@ from mypy_boto3_groundstation.literals import ListDataflowEndpointGroupsPaginato
 Values:
 
 - `list_dataflow_endpoint_groups`
+
+<a id="listgroundstationspaginatorname"></a>
 
 ## ListGroundStationsPaginatorName
 
@@ -175,6 +201,8 @@ Values:
 
 - `list_ground_stations`
 
+<a id="listmissionprofilespaginatorname"></a>
+
 ## ListMissionProfilesPaginatorName
 
 ```python
@@ -185,6 +213,8 @@ Values:
 
 - `list_mission_profiles`
 
+<a id="listsatellitespaginatorname"></a>
+
 ## ListSatellitesPaginatorName
 
 ```python
@@ -194,6 +224,8 @@ from mypy_boto3_groundstation.literals import ListSatellitesPaginatorName
 Values:
 
 - `list_satellites`
+
+<a id="polarizationtype"></a>
 
 ## PolarizationType
 
@@ -206,6 +238,8 @@ Values:
 - `LEFT_HAND`
 - `NONE`
 - `RIGHT_HAND`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -514,6 +548,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

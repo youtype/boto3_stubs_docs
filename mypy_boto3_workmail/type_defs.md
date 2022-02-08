@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-workmail-module"></a>
+
 # Typed dictionaries for boto3 WorkMail module
 
 > [Index](..) > [WorkMail](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkMail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmail.html#WorkMail)
 type annotations stubs module
-[mypy_boto3_workmail](https://pypi.org/project/mypy-boto3-workmail/).
+[mypy-boto3-workmail](https://pypi.org/project/mypy-boto3-workmail/).
 
 - [Typed dictionaries for boto3 WorkMail module](#typed-dictionaries-for-boto3-workmail-module)
   - [AccessControlRuleTypeDef](#accesscontrolruletypedef)
@@ -131,6 +133,8 @@ type annotations stubs module
   - [UpdateResourceRequestRequestTypeDef](#updateresourcerequestrequesttypedef)
   - [UserTypeDef](#usertypedef)
 
+<a id="accesscontrolruletypedef"></a>
+
 ## AccessControlRuleTypeDef
 
 ```python
@@ -152,6 +156,8 @@ Optional fields:
 - `DateCreated`: `datetime`
 - `DateModified`: `datetime`
 
+<a id="associatedelegatetoresourcerequestrequesttypedef"></a>
+
 ## AssociateDelegateToResourceRequestRequestTypeDef
 
 ```python
@@ -163,6 +169,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `ResourceId`: `str`
 - `EntityId`: `str`
+
+<a id="associatemembertogrouprequestrequesttypedef"></a>
 
 ## AssociateMemberToGroupRequestRequestTypeDef
 
@@ -176,6 +184,8 @@ Required fields:
 - `GroupId`: `str`
 - `MemberId`: `str`
 
+<a id="bookingoptionstypedef"></a>
+
 ## BookingOptionsTypeDef
 
 ```python
@@ -187,6 +197,8 @@ Optional fields:
 - `AutoAcceptRequests`: `bool`
 - `AutoDeclineRecurringRequests`: `bool`
 - `AutoDeclineConflictingRequests`: `bool`
+
+<a id="cancelmailboxexportjobrequestrequesttypedef"></a>
 
 ## CancelMailboxExportJobRequestRequestTypeDef
 
@@ -200,6 +212,8 @@ Required fields:
 - `JobId`: `str`
 - `OrganizationId`: `str`
 
+<a id="createaliasrequestrequesttypedef"></a>
+
 ## CreateAliasRequestRequestTypeDef
 
 ```python
@@ -212,6 +226,8 @@ Required fields:
 - `EntityId`: `str`
 - `Alias`: `str`
 
+<a id="creategrouprequestrequesttypedef"></a>
+
 ## CreateGroupRequestRequestTypeDef
 
 ```python
@@ -222,6 +238,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `Name`: `str`
+
+<a id="creategroupresponsetypedef"></a>
 
 ## CreateGroupResponseTypeDef
 
@@ -234,6 +252,8 @@ Required fields:
 - `GroupId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmobiledeviceaccessrulerequestrequesttypedef"></a>
 
 ## CreateMobileDeviceAccessRuleRequestRequestTypeDef
 
@@ -261,6 +281,8 @@ Optional fields:
 - `DeviceUserAgents`: `Sequence`\[`str`\]
 - `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
+<a id="createmobiledeviceaccessruleresponsetypedef"></a>
+
 ## CreateMobileDeviceAccessRuleResponseTypeDef
 
 ```python
@@ -272,6 +294,8 @@ Required fields:
 - `MobileDeviceAccessRuleId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createorganizationrequestrequesttypedef"></a>
 
 ## CreateOrganizationRequestRequestTypeDef
 
@@ -291,6 +315,8 @@ Optional fields:
 - `KmsKeyArn`: `str`
 - `EnableInteroperability`: `bool`
 
+<a id="createorganizationresponsetypedef"></a>
+
 ## CreateOrganizationResponseTypeDef
 
 ```python
@@ -302,6 +328,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresourcerequestrequesttypedef"></a>
 
 ## CreateResourceRequestRequestTypeDef
 
@@ -315,6 +343,8 @@ Required fields:
 - `Name`: `str`
 - `Type`: [ResourceTypeType](./literals.md#resourcetypetype)
 
+<a id="createresourceresponsetypedef"></a>
+
 ## CreateResourceResponseTypeDef
 
 ```python
@@ -326,6 +356,8 @@ Required fields:
 - `ResourceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserrequestrequesttypedef"></a>
 
 ## CreateUserRequestRequestTypeDef
 
@@ -340,6 +372,8 @@ Required fields:
 - `DisplayName`: `str`
 - `Password`: `str`
 
+<a id="createuserresponsetypedef"></a>
+
 ## CreateUserResponseTypeDef
 
 ```python
@@ -352,6 +386,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="delegatetypedef"></a>
+
 ## DelegateTypeDef
 
 ```python
@@ -363,6 +399,8 @@ Required fields:
 - `Id`: `str`
 - `Type`: [MemberTypeType](./literals.md#membertypetype)
 
+<a id="deleteaccesscontrolrulerequestrequesttypedef"></a>
+
 ## DeleteAccessControlRuleRequestRequestTypeDef
 
 ```python
@@ -373,6 +411,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `Name`: `str`
+
+<a id="deletealiasrequestrequesttypedef"></a>
 
 ## DeleteAliasRequestRequestTypeDef
 
@@ -386,6 +426,8 @@ Required fields:
 - `EntityId`: `str`
 - `Alias`: `str`
 
+<a id="deleteemailmonitoringconfigurationrequestrequesttypedef"></a>
+
 ## DeleteEmailMonitoringConfigurationRequestRequestTypeDef
 
 ```python
@@ -395,6 +437,8 @@ from mypy_boto3_workmail.type_defs import DeleteEmailMonitoringConfigurationRequ
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="deletegrouprequestrequesttypedef"></a>
 
 ## DeleteGroupRequestRequestTypeDef
 
@@ -406,6 +450,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `GroupId`: `str`
+
+<a id="deletemailboxpermissionsrequestrequesttypedef"></a>
 
 ## DeleteMailboxPermissionsRequestRequestTypeDef
 
@@ -419,6 +465,8 @@ Required fields:
 - `EntityId`: `str`
 - `GranteeId`: `str`
 
+<a id="deletemobiledeviceaccessoverriderequestrequesttypedef"></a>
+
 ## DeleteMobileDeviceAccessOverrideRequestRequestTypeDef
 
 ```python
@@ -431,6 +479,8 @@ Required fields:
 - `UserId`: `str`
 - `DeviceId`: `str`
 
+<a id="deletemobiledeviceaccessrulerequestrequesttypedef"></a>
+
 ## DeleteMobileDeviceAccessRuleRequestRequestTypeDef
 
 ```python
@@ -441,6 +491,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `MobileDeviceAccessRuleId`: `str`
+
+<a id="deleteorganizationrequestrequesttypedef"></a>
 
 ## DeleteOrganizationRequestRequestTypeDef
 
@@ -457,6 +509,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="deleteorganizationresponsetypedef"></a>
+
 ## DeleteOrganizationResponseTypeDef
 
 ```python
@@ -470,6 +524,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteresourcerequestrequesttypedef"></a>
+
 ## DeleteResourceRequestRequestTypeDef
 
 ```python
@@ -480,6 +536,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `ResourceId`: `str`
+
+<a id="deleteretentionpolicyrequestrequesttypedef"></a>
 
 ## DeleteRetentionPolicyRequestRequestTypeDef
 
@@ -492,6 +550,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `Id`: `str`
 
+<a id="deleteuserrequestrequesttypedef"></a>
+
 ## DeleteUserRequestRequestTypeDef
 
 ```python
@@ -502,6 +562,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `UserId`: `str`
+
+<a id="deregisterfromworkmailrequestrequesttypedef"></a>
 
 ## DeregisterFromWorkMailRequestRequestTypeDef
 
@@ -514,6 +576,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `EntityId`: `str`
 
+<a id="deregistermaildomainrequestrequesttypedef"></a>
+
 ## DeregisterMailDomainRequestRequestTypeDef
 
 ```python
@@ -525,6 +589,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `DomainName`: `str`
 
+<a id="describeemailmonitoringconfigurationrequestrequesttypedef"></a>
+
 ## DescribeEmailMonitoringConfigurationRequestRequestTypeDef
 
 ```python
@@ -534,6 +600,8 @@ from mypy_boto3_workmail.type_defs import DescribeEmailMonitoringConfigurationRe
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="describeemailmonitoringconfigurationresponsetypedef"></a>
 
 ## DescribeEmailMonitoringConfigurationResponseTypeDef
 
@@ -548,6 +616,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegrouprequestrequesttypedef"></a>
+
 ## DescribeGroupRequestRequestTypeDef
 
 ```python
@@ -558,6 +628,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `GroupId`: `str`
+
+<a id="describegroupresponsetypedef"></a>
 
 ## DescribeGroupResponseTypeDef
 
@@ -576,6 +648,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeinbounddmarcsettingsrequestrequesttypedef"></a>
+
 ## DescribeInboundDmarcSettingsRequestRequestTypeDef
 
 ```python
@@ -585,6 +659,8 @@ from mypy_boto3_workmail.type_defs import DescribeInboundDmarcSettingsRequestReq
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="describeinbounddmarcsettingsresponsetypedef"></a>
 
 ## DescribeInboundDmarcSettingsResponseTypeDef
 
@@ -598,6 +674,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describemailboxexportjobrequestrequesttypedef"></a>
+
 ## DescribeMailboxExportJobRequestRequestTypeDef
 
 ```python
@@ -608,6 +686,8 @@ Required fields:
 
 - `JobId`: `str`
 - `OrganizationId`: `str`
+
+<a id="describemailboxexportjobresponsetypedef"></a>
 
 ## DescribeMailboxExportJobResponseTypeDef
 
@@ -632,6 +712,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeorganizationrequestrequesttypedef"></a>
+
 ## DescribeOrganizationRequestRequestTypeDef
 
 ```python
@@ -641,6 +723,8 @@ from mypy_boto3_workmail.type_defs import DescribeOrganizationRequestRequestType
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="describeorganizationresponsetypedef"></a>
 
 ## DescribeOrganizationResponseTypeDef
 
@@ -662,6 +746,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresourcerequestrequesttypedef"></a>
+
 ## DescribeResourceRequestRequestTypeDef
 
 ```python
@@ -672,6 +758,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `ResourceId`: `str`
+
+<a id="describeresourceresponsetypedef"></a>
 
 ## DescribeResourceResponseTypeDef
 
@@ -693,6 +781,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeuserrequestrequesttypedef"></a>
+
 ## DescribeUserRequestRequestTypeDef
 
 ```python
@@ -703,6 +793,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `UserId`: `str`
+
+<a id="describeuserresponsetypedef"></a>
 
 ## DescribeUserResponseTypeDef
 
@@ -723,6 +815,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disassociatedelegatefromresourcerequestrequesttypedef"></a>
+
 ## DisassociateDelegateFromResourceRequestRequestTypeDef
 
 ```python
@@ -734,6 +828,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `ResourceId`: `str`
 - `EntityId`: `str`
+
+<a id="disassociatememberfromgrouprequestrequesttypedef"></a>
 
 ## DisassociateMemberFromGroupRequestRequestTypeDef
 
@@ -747,6 +843,8 @@ Required fields:
 - `GroupId`: `str`
 - `MemberId`: `str`
 
+<a id="dnsrecordtypedef"></a>
+
 ## DnsRecordTypeDef
 
 ```python
@@ -759,6 +857,8 @@ Optional fields:
 - `Hostname`: `str`
 - `Value`: `str`
 
+<a id="domaintypedef"></a>
+
 ## DomainTypeDef
 
 ```python
@@ -769,6 +869,8 @@ Optional fields:
 
 - `DomainName`: `str`
 - `HostedZoneId`: `str`
+
+<a id="folderconfigurationtypedef"></a>
 
 ## FolderConfigurationTypeDef
 
@@ -785,6 +887,8 @@ Optional fields:
 
 - `Period`: `int`
 
+<a id="getaccesscontroleffectrequestrequesttypedef"></a>
+
 ## GetAccessControlEffectRequestRequestTypeDef
 
 ```python
@@ -797,6 +901,8 @@ Required fields:
 - `IpAddress`: `str`
 - `Action`: `str`
 - `UserId`: `str`
+
+<a id="getaccesscontroleffectresponsetypedef"></a>
 
 ## GetAccessControlEffectResponseTypeDef
 
@@ -812,6 +918,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdefaultretentionpolicyrequestrequesttypedef"></a>
+
 ## GetDefaultRetentionPolicyRequestRequestTypeDef
 
 ```python
@@ -821,6 +929,8 @@ from mypy_boto3_workmail.type_defs import GetDefaultRetentionPolicyRequestReques
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="getdefaultretentionpolicyresponsetypedef"></a>
 
 ## GetDefaultRetentionPolicyResponseTypeDef
 
@@ -838,6 +948,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmaildomainrequestrequesttypedef"></a>
+
 ## GetMailDomainRequestRequestTypeDef
 
 ```python
@@ -848,6 +960,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `DomainName`: `str`
+
+<a id="getmaildomainresponsetypedef"></a>
 
 ## GetMailDomainResponseTypeDef
 
@@ -867,6 +981,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmailboxdetailsrequestrequesttypedef"></a>
+
 ## GetMailboxDetailsRequestRequestTypeDef
 
 ```python
@@ -877,6 +993,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `UserId`: `str`
+
+<a id="getmailboxdetailsresponsetypedef"></a>
 
 ## GetMailboxDetailsResponseTypeDef
 
@@ -890,6 +1008,8 @@ Required fields:
 - `MailboxSize`: `float`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmobiledeviceaccesseffectrequestrequesttypedef"></a>
 
 ## GetMobileDeviceAccessEffectRequestRequestTypeDef
 
@@ -908,6 +1028,8 @@ Optional fields:
 - `DeviceOperatingSystem`: `str`
 - `DeviceUserAgent`: `str`
 
+<a id="getmobiledeviceaccesseffectresponsetypedef"></a>
+
 ## GetMobileDeviceAccessEffectResponseTypeDef
 
 ```python
@@ -923,6 +1045,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmobiledeviceaccessoverriderequestrequesttypedef"></a>
+
 ## GetMobileDeviceAccessOverrideRequestRequestTypeDef
 
 ```python
@@ -934,6 +1058,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `UserId`: `str`
 - `DeviceId`: `str`
+
+<a id="getmobiledeviceaccessoverrideresponsetypedef"></a>
 
 ## GetMobileDeviceAccessOverrideResponseTypeDef
 
@@ -953,6 +1079,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="grouptypedef"></a>
+
 ## GroupTypeDef
 
 ```python
@@ -968,6 +1096,8 @@ Optional fields:
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
+<a id="listaccesscontrolrulesrequestrequesttypedef"></a>
+
 ## ListAccessControlRulesRequestRequestTypeDef
 
 ```python
@@ -977,6 +1107,8 @@ from mypy_boto3_workmail.type_defs import ListAccessControlRulesRequestRequestTy
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="listaccesscontrolrulesresponsetypedef"></a>
 
 ## ListAccessControlRulesResponseTypeDef
 
@@ -990,6 +1122,8 @@ Required fields:
   `List`\[[AccessControlRuleTypeDef](./type_defs.md#accesscontrolruletypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaliasesrequestrequesttypedef"></a>
 
 ## ListAliasesRequestRequestTypeDef
 
@@ -1007,6 +1141,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listaliasesresponsetypedef"></a>
+
 ## ListAliasesResponseTypeDef
 
 ```python
@@ -1019,6 +1155,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgroupmembersrequestrequesttypedef"></a>
 
 ## ListGroupMembersRequestRequestTypeDef
 
@@ -1036,6 +1174,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listgroupmembersresponsetypedef"></a>
+
 ## ListGroupMembersResponseTypeDef
 
 ```python
@@ -1048,6 +1188,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgroupsrequestrequesttypedef"></a>
 
 ## ListGroupsRequestRequestTypeDef
 
@@ -1064,6 +1206,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listgroupsresponsetypedef"></a>
+
 ## ListGroupsResponseTypeDef
 
 ```python
@@ -1076,6 +1220,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmaildomainsrequestrequesttypedef"></a>
 
 ## ListMailDomainsRequestRequestTypeDef
 
@@ -1092,6 +1238,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listmaildomainsresponsetypedef"></a>
+
 ## ListMailDomainsResponseTypeDef
 
 ```python
@@ -1105,6 +1253,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmailboxexportjobsrequestrequesttypedef"></a>
 
 ## ListMailboxExportJobsRequestRequestTypeDef
 
@@ -1121,6 +1271,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmailboxexportjobsresponsetypedef"></a>
+
 ## ListMailboxExportJobsResponseTypeDef
 
 ```python
@@ -1134,6 +1286,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmailboxpermissionsrequestrequesttypedef"></a>
 
 ## ListMailboxPermissionsRequestRequestTypeDef
 
@@ -1151,6 +1305,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmailboxpermissionsresponsetypedef"></a>
+
 ## ListMailboxPermissionsResponseTypeDef
 
 ```python
@@ -1164,6 +1320,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmobiledeviceaccessoverridesrequestrequesttypedef"></a>
 
 ## ListMobileDeviceAccessOverridesRequestRequestTypeDef
 
@@ -1182,6 +1340,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listmobiledeviceaccessoverridesresponsetypedef"></a>
+
 ## ListMobileDeviceAccessOverridesResponseTypeDef
 
 ```python
@@ -1196,6 +1356,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmobiledeviceaccessrulesrequestrequesttypedef"></a>
+
 ## ListMobileDeviceAccessRulesRequestRequestTypeDef
 
 ```python
@@ -1205,6 +1367,8 @@ from mypy_boto3_workmail.type_defs import ListMobileDeviceAccessRulesRequestRequ
 Required fields:
 
 - `OrganizationId`: `str`
+
+<a id="listmobiledeviceaccessrulesresponsetypedef"></a>
 
 ## ListMobileDeviceAccessRulesResponseTypeDef
 
@@ -1219,6 +1383,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listorganizationsrequestrequesttypedef"></a>
+
 ## ListOrganizationsRequestRequestTypeDef
 
 ```python
@@ -1229,6 +1395,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listorganizationsresponsetypedef"></a>
 
 ## ListOrganizationsResponseTypeDef
 
@@ -1243,6 +1411,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcedelegatesrequestrequesttypedef"></a>
 
 ## ListResourceDelegatesRequestRequestTypeDef
 
@@ -1260,6 +1430,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listresourcedelegatesresponsetypedef"></a>
+
 ## ListResourceDelegatesResponseTypeDef
 
 ```python
@@ -1272,6 +1444,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcesrequestrequesttypedef"></a>
 
 ## ListResourcesRequestRequestTypeDef
 
@@ -1288,6 +1462,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listresourcesresponsetypedef"></a>
+
 ## ListResourcesResponseTypeDef
 
 ```python
@@ -1301,6 +1477,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1310,6 +1488,8 @@ from mypy_boto3_workmail.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1322,6 +1502,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listusersrequestrequesttypedef"></a>
 
 ## ListUsersRequestRequestTypeDef
 
@@ -1338,6 +1520,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="listusersresponsetypedef"></a>
+
 ## ListUsersResponseTypeDef
 
 ```python
@@ -1351,6 +1535,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="maildomainsummarytypedef"></a>
+
 ## MailDomainSummaryTypeDef
 
 ```python
@@ -1361,6 +1547,8 @@ Optional fields:
 
 - `DomainName`: `str`
 - `DefaultDomain`: `bool`
+
+<a id="mailboxexportjobtypedef"></a>
 
 ## MailboxExportJobTypeDef
 
@@ -1380,6 +1568,8 @@ Optional fields:
 - `StartTime`: `datetime`
 - `EndTime`: `datetime`
 
+<a id="membertypedef"></a>
+
 ## MemberTypeDef
 
 ```python
@@ -1395,6 +1585,8 @@ Optional fields:
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
+<a id="mobiledeviceaccessmatchedruletypedef"></a>
+
 ## MobileDeviceAccessMatchedRuleTypeDef
 
 ```python
@@ -1405,6 +1597,8 @@ Optional fields:
 
 - `MobileDeviceAccessRuleId`: `str`
 - `Name`: `str`
+
+<a id="mobiledeviceaccessoverridetypedef"></a>
 
 ## MobileDeviceAccessOverrideTypeDef
 
@@ -1421,6 +1615,8 @@ Optional fields:
 - `Description`: `str`
 - `DateCreated`: `datetime`
 - `DateModified`: `datetime`
+
+<a id="mobiledeviceaccessruletypedef"></a>
 
 ## MobileDeviceAccessRuleTypeDef
 
@@ -1446,6 +1642,8 @@ Optional fields:
 - `DateCreated`: `datetime`
 - `DateModified`: `datetime`
 
+<a id="organizationsummarytypedef"></a>
+
 ## OrganizationSummaryTypeDef
 
 ```python
@@ -1460,6 +1658,8 @@ Optional fields:
 - `ErrorMessage`: `str`
 - `State`: `str`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1471,6 +1671,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissiontypedef"></a>
 
 ## PermissionTypeDef
 
@@ -1484,6 +1686,8 @@ Required fields:
 - `GranteeType`: [MemberTypeType](./literals.md#membertypetype)
 - `PermissionValues`:
   `List`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+<a id="putaccesscontrolrulerequestrequesttypedef"></a>
 
 ## PutAccessControlRuleRequestRequestTypeDef
 
@@ -1508,6 +1712,8 @@ Optional fields:
 - `UserIds`: `Sequence`\[`str`\]
 - `NotUserIds`: `Sequence`\[`str`\]
 
+<a id="putemailmonitoringconfigurationrequestrequesttypedef"></a>
+
 ## PutEmailMonitoringConfigurationRequestRequestTypeDef
 
 ```python
@@ -1520,6 +1726,8 @@ Required fields:
 - `RoleArn`: `str`
 - `LogGroupArn`: `str`
 
+<a id="putinbounddmarcsettingsrequestrequesttypedef"></a>
+
 ## PutInboundDmarcSettingsRequestRequestTypeDef
 
 ```python
@@ -1530,6 +1738,8 @@ Required fields:
 
 - `OrganizationId`: `str`
 - `Enforced`: `bool`
+
+<a id="putmailboxpermissionsrequestrequesttypedef"></a>
 
 ## PutMailboxPermissionsRequestRequestTypeDef
 
@@ -1544,6 +1754,8 @@ Required fields:
 - `GranteeId`: `str`
 - `PermissionValues`:
   `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+
+<a id="putmobiledeviceaccessoverriderequestrequesttypedef"></a>
 
 ## PutMobileDeviceAccessOverrideRequestRequestTypeDef
 
@@ -1563,6 +1775,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="putretentionpolicyrequestrequesttypedef"></a>
+
 ## PutRetentionPolicyRequestRequestTypeDef
 
 ```python
@@ -1581,6 +1795,8 @@ Optional fields:
 - `Id`: `str`
 - `Description`: `str`
 
+<a id="registermaildomainrequestrequesttypedef"></a>
+
 ## RegisterMailDomainRequestRequestTypeDef
 
 ```python
@@ -1596,6 +1812,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="registertoworkmailrequestrequesttypedef"></a>
+
 ## RegisterToWorkMailRequestRequestTypeDef
 
 ```python
@@ -1608,6 +1826,8 @@ Required fields:
 - `EntityId`: `str`
 - `Email`: `str`
 
+<a id="resetpasswordrequestrequesttypedef"></a>
+
 ## ResetPasswordRequestRequestTypeDef
 
 ```python
@@ -1619,6 +1839,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `UserId`: `str`
 - `Password`: `str`
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -1636,6 +1858,8 @@ Optional fields:
 - `EnabledDate`: `datetime`
 - `DisabledDate`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1649,6 +1873,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="startmailboxexportjobrequestrequesttypedef"></a>
 
 ## StartMailboxExportJobRequestRequestTypeDef
 
@@ -1670,6 +1896,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="startmailboxexportjobresponsetypedef"></a>
+
 ## StartMailboxExportJobResponseTypeDef
 
 ```python
@@ -1682,6 +1910,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1692,6 +1922,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1704,6 +1936,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1714,6 +1948,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedefaultmaildomainrequestrequesttypedef"></a>
 
 ## UpdateDefaultMailDomainRequestRequestTypeDef
 
@@ -1726,6 +1962,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `DomainName`: `str`
 
+<a id="updatemailboxquotarequestrequesttypedef"></a>
+
 ## UpdateMailboxQuotaRequestRequestTypeDef
 
 ```python
@@ -1737,6 +1975,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `UserId`: `str`
 - `MailboxQuota`: `int`
+
+<a id="updatemobiledeviceaccessrulerequestrequesttypedef"></a>
 
 ## UpdateMobileDeviceAccessRuleRequestRequestTypeDef
 
@@ -1764,6 +2004,8 @@ Optional fields:
 - `DeviceUserAgents`: `Sequence`\[`str`\]
 - `NotDeviceUserAgents`: `Sequence`\[`str`\]
 
+<a id="updateprimaryemailaddressrequestrequesttypedef"></a>
+
 ## UpdatePrimaryEmailAddressRequestRequestTypeDef
 
 ```python
@@ -1775,6 +2017,8 @@ Required fields:
 - `OrganizationId`: `str`
 - `EntityId`: `str`
 - `Email`: `str`
+
+<a id="updateresourcerequestrequesttypedef"></a>
 
 ## UpdateResourceRequestRequestTypeDef
 
@@ -1792,6 +2036,8 @@ Optional fields:
 - `Name`: `str`
 - `BookingOptions`:
   [BookingOptionsTypeDef](./type_defs.md#bookingoptionstypedef)
+
+<a id="usertypedef"></a>
 
 ## UserTypeDef
 

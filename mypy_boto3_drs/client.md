@@ -1,3 +1,5 @@
+<a id="drsclient-for-boto3-drs-module"></a>
+
 # drsClient for boto3 drs module
 
 > [Index](..) > [drs](.) > drsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [drs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs)
 type annotations stubs module
-[mypy_boto3_drs](https://pypi.org/project/mypy-boto3-drs/).
+[mypy-boto3-drs](https://pypi.org/project/mypy-boto3-drs/).
 
 - [drsClient for boto3 drs module](#drsclient-for-boto3-drs-module)
   - [drsClient](#drsclient)
@@ -45,6 +47,8 @@ type annotations stubs module
     - [update_replication_configuration_template](#update_replication_configuration_template)
     - [get_paginator](#get_paginator)
 
+<a id="drsclient"></a>
+
 ## drsClient
 
 Type annotations for `boto3.client("drs")`
@@ -52,14 +56,17 @@ Type annotations for `boto3.client("drs")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_drs.client import drsClient
 
 def get_drs_client() -> drsClient:
-    return boto3.client("drs")
+    return Session().client("drs")
 ```
 
 Boto3 documentation:
 [drs.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -85,7 +92,11 @@ Exceptions:
 - `Exceptions.UninitializedAccountException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -97,6 +108,8 @@ Boto3 documentation:
 [drs.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -112,6 +125,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_replication_configuration_template"></a>
 
 ### create_replication_configuration_template
 
@@ -154,6 +169,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
 
+<a id="delete_job"></a>
+
 ### delete_job
 
 Deletes a single Job by ID.
@@ -172,6 +189,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_recovery_instance"></a>
+
 ### delete_recovery_instance
 
 Deletes a single Recovery Instance by ID.
@@ -187,6 +206,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `recoveryInstanceID`: `str` *(required)*
+
+<a id="delete_replication_configuration_template"></a>
 
 ### delete_replication_configuration_template
 
@@ -208,6 +229,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_source_server"></a>
+
 ### delete_source_server
 
 Deletes a single Source Server by ID.
@@ -225,6 +248,8 @@ Keyword-only arguments:
 - `sourceServerID`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_job_log_items"></a>
 
 ### describe_job_log_items
 
@@ -246,6 +271,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeJobLogItemsResponseTypeDef](./type_defs.md#describejoblogitemsresponsetypedef).
+
+<a id="describe_jobs"></a>
 
 ### describe_jobs
 
@@ -270,6 +297,8 @@ Keyword-only arguments:
 Returns
 [DescribeJobsResponseTypeDef](./type_defs.md#describejobsresponsetypedef).
 
+<a id="describe_recovery_instances"></a>
+
 ### describe_recovery_instances
 
 Lists all Recovery Instances or multiple Recovery Instances by ID.
@@ -292,6 +321,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRecoveryInstancesResponseTypeDef](./type_defs.md#describerecoveryinstancesresponsetypedef).
+
+<a id="describe_recovery_snapshots"></a>
 
 ### describe_recovery_snapshots
 
@@ -318,6 +349,8 @@ Keyword-only arguments:
 Returns
 [DescribeRecoverySnapshotsResponseTypeDef](./type_defs.md#describerecoverysnapshotsresponsetypedef).
 
+<a id="describe_replication_configuration_templates"></a>
+
 ### describe_replication_configuration_templates
 
 Lists all ReplicationConfigurationTemplates, filtered by Source Server IDs.
@@ -339,6 +372,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeReplicationConfigurationTemplatesResponseTypeDef](./type_defs.md#describereplicationconfigurationtemplatesresponsetypedef).
+
+<a id="describe_source_servers"></a>
 
 ### describe_source_servers
 
@@ -363,6 +398,8 @@ Keyword-only arguments:
 Returns
 [DescribeSourceServersResponseTypeDef](./type_defs.md#describesourceserversresponsetypedef).
 
+<a id="disconnect_recovery_instance"></a>
+
 ### disconnect_recovery_instance
 
 Disconnect a Recovery Instance from Elastic Disaster Recovery.
@@ -378,6 +415,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `recoveryInstanceID`: `str` *(required)*
+
+<a id="disconnect_source_server"></a>
 
 ### disconnect_source_server
 
@@ -398,6 +437,8 @@ Keyword-only arguments:
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -415,6 +456,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_failback_replication_configuration"></a>
 
 ### get_failback_replication_configuration
 
@@ -436,6 +479,8 @@ Keyword-only arguments:
 Returns
 [GetFailbackReplicationConfigurationResponseTypeDef](./type_defs.md#getfailbackreplicationconfigurationresponsetypedef).
 
+<a id="get_launch_configuration"></a>
+
 ### get_launch_configuration
 
 Gets a LaunchConfiguration, filtered by Source Server IDs.
@@ -454,6 +499,8 @@ Keyword-only arguments:
 
 Returns
 [LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+
+<a id="get_replication_configuration"></a>
 
 ### get_replication_configuration
 
@@ -475,6 +522,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
+<a id="initialize_service"></a>
+
 ### initialize_service
 
 Initialize Elastic Disaster Recovery.
@@ -485,6 +534,8 @@ Boto3 documentation:
 [drs.Client.initialize_service](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/drs.html#drs.Client.initialize_service)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -504,6 +555,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="retry_data_replication"></a>
 
 ### retry_data_replication
 
@@ -526,6 +579,8 @@ Keyword-only arguments:
 Returns
 [SourceServerResponseMetadataTypeDef](./type_defs.md#sourceserverresponsemetadatatypedef).
 
+<a id="start_failback_launch"></a>
+
 ### start_failback_launch
 
 Initiates a Job for launching the machine that is being failed back to from the
@@ -546,6 +601,8 @@ Keyword-only arguments:
 
 Returns
 [StartFailbackLaunchResponseTypeDef](./type_defs.md#startfailbacklaunchresponsetypedef).
+
+<a id="start_recovery"></a>
 
 ### start_recovery
 
@@ -570,6 +627,8 @@ Keyword-only arguments:
 Returns
 [StartRecoveryResponseTypeDef](./type_defs.md#startrecoveryresponsetypedef).
 
+<a id="stop_failback"></a>
+
 ### stop_failback
 
 Stops the failback process for a specified Recovery Instance.
@@ -585,6 +644,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `recoveryInstanceID`: `str` *(required)*
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -603,6 +664,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="terminate_recovery_instances"></a>
 
 ### terminate_recovery_instances
 
@@ -625,6 +688,8 @@ Keyword-only arguments:
 Returns
 [TerminateRecoveryInstancesResponseTypeDef](./type_defs.md#terminaterecoveryinstancesresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Deletes the specified set of tags from the specified set of Elastic Disaster
@@ -642,6 +707,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_failback_replication_configuration"></a>
 
 ### update_failback_replication_configuration
 
@@ -663,6 +730,8 @@ Keyword-only arguments:
 - `bandwidthThrottling`: `int`
 - `name`: `str`
 - `usePrivateIP`: `bool`
+
+<a id="update_launch_configuration"></a>
 
 ### update_launch_configuration
 
@@ -690,6 +759,8 @@ Keyword-only arguments:
 
 Returns
 [LaunchConfigurationTypeDef](./type_defs.md#launchconfigurationtypedef).
+
+<a id="update_replication_configuration"></a>
 
 ### update_replication_configuration
 
@@ -731,6 +802,8 @@ Keyword-only arguments:
 Returns
 [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef).
 
+<a id="update_replication_configuration_template"></a>
+
 ### update_replication_configuration_template
 
 Updates a ReplicationConfigurationTemplate by ID.
@@ -768,6 +841,8 @@ Keyword-only arguments:
 
 Returns
 [ReplicationConfigurationTemplateResponseMetadataTypeDef](./type_defs.md#replicationconfigurationtemplateresponsemetadatatypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

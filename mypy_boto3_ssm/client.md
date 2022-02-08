@@ -1,3 +1,5 @@
+<a id="ssmclient-for-boto3-ssm-module"></a>
+
 # SSMClient for boto3 SSM module
 
 > [Index](..) > [SSM](.) > SSMClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM)
 type annotations stubs module
-[mypy_boto3_ssm](https://pypi.org/project/mypy-boto3-ssm/).
+[mypy-boto3-ssm](https://pypi.org/project/mypy-boto3-ssm/).
 
 - [SSMClient for boto3 SSM module](#ssmclient-for-boto3-ssm-module)
   - [SSMClient](#ssmclient)
@@ -152,6 +154,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="ssmclient"></a>
+
 ## SSMClient
 
 Type annotations for `boto3.client("ssm")`
@@ -159,14 +163,17 @@ Type annotations for `boto3.client("ssm")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ssm.client import SSMClient
 
 def get_ssm_client() -> SSMClient:
-    return boto3.client("ssm")
+    return Session().client("ssm")
 ```
 
 Boto3 documentation:
 [SSM.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -306,7 +313,11 @@ Exceptions:
 - `Exceptions.UnsupportedParameterType`
 - `Exceptions.UnsupportedPlatformType`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -318,6 +329,8 @@ Boto3 documentation:
 [SSM.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm.html#SSM.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_tags_to_resource"></a>
 
 ### add_tags_to_resource
 
@@ -340,6 +353,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_ops_item_related_item"></a>
 
 ### associate_ops_item_related_item
 
@@ -364,6 +379,8 @@ Keyword-only arguments:
 Returns
 [AssociateOpsItemRelatedItemResponseTypeDef](./type_defs.md#associateopsitemrelateditemresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -378,6 +395,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_command"></a>
 
 ### cancel_command
 
@@ -397,6 +416,8 @@ Keyword-only arguments:
 - `InstanceIds`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="cancel_maintenance_window_execution"></a>
 
 ### cancel_maintenance_window_execution
 
@@ -418,6 +439,8 @@ Keyword-only arguments:
 
 Returns
 [CancelMaintenanceWindowExecutionResultTypeDef](./type_defs.md#cancelmaintenancewindowexecutionresulttypedef).
+
+<a id="create_activation"></a>
 
 ### create_activation
 
@@ -446,6 +469,8 @@ Keyword-only arguments:
 
 Returns
 [CreateActivationResultTypeDef](./type_defs.md#createactivationresulttypedef).
+
+<a id="create_association"></a>
 
 ### create_association
 
@@ -486,6 +511,8 @@ Keyword-only arguments:
 Returns
 [CreateAssociationResultTypeDef](./type_defs.md#createassociationresulttypedef).
 
+<a id="create_association_batch"></a>
+
 ### create_association_batch
 
 Associates the specified Amazon Web Services Systems Manager document (SSM
@@ -507,6 +534,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAssociationBatchResultTypeDef](./type_defs.md#createassociationbatchresulttypedef).
+
+<a id="create_document"></a>
 
 ### create_document
 
@@ -538,6 +567,8 @@ Keyword-only arguments:
 Returns
 [CreateDocumentResultTypeDef](./type_defs.md#createdocumentresulttypedef).
 
+<a id="create_maintenance_window"></a>
+
 ### create_maintenance_window
 
 Creates a new maintenance window.
@@ -567,6 +598,8 @@ Keyword-only arguments:
 
 Returns
 [CreateMaintenanceWindowResultTypeDef](./type_defs.md#createmaintenancewindowresulttypedef).
+
+<a id="create_ops_item"></a>
 
 ### create_ops_item
 
@@ -604,6 +637,8 @@ Keyword-only arguments:
 Returns
 [CreateOpsItemResponseTypeDef](./type_defs.md#createopsitemresponsetypedef).
 
+<a id="create_ops_metadata"></a>
+
 ### create_ops_metadata
 
 If you create a new application in Application Manager, Amazon Web Services
@@ -627,6 +662,8 @@ Keyword-only arguments:
 
 Returns
 [CreateOpsMetadataResultTypeDef](./type_defs.md#createopsmetadataresulttypedef).
+
+<a id="create_patch_baseline"></a>
 
 ### create_patch_baseline
 
@@ -663,6 +700,8 @@ Keyword-only arguments:
 Returns
 [CreatePatchBaselineResultTypeDef](./type_defs.md#createpatchbaselineresulttypedef).
 
+<a id="create_resource_data_sync"></a>
+
 ### create_resource_data_sync
 
 A resource data sync helps you view data from multiple sources in a single
@@ -687,6 +726,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_activation"></a>
+
 ### delete_activation
 
 Deletes an activation.
@@ -704,6 +745,8 @@ Keyword-only arguments:
 - `ActivationId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_association"></a>
 
 ### delete_association
 
@@ -726,6 +769,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_document"></a>
+
 ### delete_document
 
 Deletes the Amazon Web Services Systems Manager document (SSM document) and all
@@ -747,6 +792,8 @@ Keyword-only arguments:
 - `Force`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_inventory"></a>
 
 ### delete_inventory
 
@@ -772,6 +819,8 @@ Keyword-only arguments:
 Returns
 [DeleteInventoryResultTypeDef](./type_defs.md#deleteinventoryresulttypedef).
 
+<a id="delete_maintenance_window"></a>
+
 ### delete_maintenance_window
 
 Deletes a maintenance window.
@@ -791,6 +840,8 @@ Keyword-only arguments:
 Returns
 [DeleteMaintenanceWindowResultTypeDef](./type_defs.md#deletemaintenancewindowresulttypedef).
 
+<a id="delete_ops_metadata"></a>
+
 ### delete_ops_metadata
 
 Delete OpsMetadata related to an application.
@@ -809,6 +860,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_parameter"></a>
+
 ### delete_parameter
 
 Delete a parameter from the system.
@@ -826,6 +879,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_parameters"></a>
 
 ### delete_parameters
 
@@ -846,6 +901,8 @@ Keyword-only arguments:
 Returns
 [DeleteParametersResultTypeDef](./type_defs.md#deleteparametersresulttypedef).
 
+<a id="delete_patch_baseline"></a>
+
 ### delete_patch_baseline
 
 Deletes a patch baseline.
@@ -864,6 +921,8 @@ Keyword-only arguments:
 
 Returns
 [DeletePatchBaselineResultTypeDef](./type_defs.md#deletepatchbaselineresulttypedef).
+
+<a id="delete_resource_data_sync"></a>
 
 ### delete_resource_data_sync
 
@@ -884,6 +943,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="deregister_managed_instance"></a>
+
 ### deregister_managed_instance
 
 Removes the server or virtual machine from the list of registered servers.
@@ -901,6 +962,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="deregister_patch_baseline_for_patch_group"></a>
 
 ### deregister_patch_baseline_for_patch_group
 
@@ -922,6 +985,8 @@ Keyword-only arguments:
 
 Returns
 [DeregisterPatchBaselineForPatchGroupResultTypeDef](./type_defs.md#deregisterpatchbaselineforpatchgroupresulttypedef).
+
+<a id="deregister_target_from_maintenance_window"></a>
 
 ### deregister_target_from_maintenance_window
 
@@ -945,6 +1010,8 @@ Keyword-only arguments:
 Returns
 [DeregisterTargetFromMaintenanceWindowResultTypeDef](./type_defs.md#deregistertargetfrommaintenancewindowresulttypedef).
 
+<a id="deregister_task_from_maintenance_window"></a>
+
 ### deregister_task_from_maintenance_window
 
 Removes a task from a maintenance window.
@@ -965,6 +1032,8 @@ Keyword-only arguments:
 
 Returns
 [DeregisterTaskFromMaintenanceWindowResultTypeDef](./type_defs.md#deregistertaskfrommaintenancewindowresulttypedef).
+
+<a id="describe_activations"></a>
 
 ### describe_activations
 
@@ -991,6 +1060,8 @@ Keyword-only arguments:
 Returns
 [DescribeActivationsResultTypeDef](./type_defs.md#describeactivationsresulttypedef).
 
+<a id="describe_association"></a>
+
 ### describe_association
 
 Describes the association for the specified target or managed node.
@@ -1012,6 +1083,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAssociationResultTypeDef](./type_defs.md#describeassociationresulttypedef).
+
+<a id="describe_association_execution_targets"></a>
 
 ### describe_association_execution_targets
 
@@ -1038,6 +1111,8 @@ Keyword-only arguments:
 Returns
 [DescribeAssociationExecutionTargetsResultTypeDef](./type_defs.md#describeassociationexecutiontargetsresulttypedef).
 
+<a id="describe_association_executions"></a>
+
 ### describe_association_executions
 
 Views all executions for a specific association ID.
@@ -1062,6 +1137,8 @@ Keyword-only arguments:
 Returns
 [DescribeAssociationExecutionsResultTypeDef](./type_defs.md#describeassociationexecutionsresulttypedef).
 
+<a id="describe_automation_executions"></a>
+
 ### describe_automation_executions
 
 Provides details about all active and terminated Automation executions.
@@ -1084,6 +1161,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAutomationExecutionsResultTypeDef](./type_defs.md#describeautomationexecutionsresulttypedef).
+
+<a id="describe_automation_step_executions"></a>
 
 ### describe_automation_step_executions
 
@@ -1111,6 +1190,8 @@ Keyword-only arguments:
 Returns
 [DescribeAutomationStepExecutionsResultTypeDef](./type_defs.md#describeautomationstepexecutionsresulttypedef).
 
+<a id="describe_available_patches"></a>
+
 ### describe_available_patches
 
 Lists all patches eligible to be included in a patch baseline.
@@ -1133,6 +1214,8 @@ Keyword-only arguments:
 Returns
 [DescribeAvailablePatchesResultTypeDef](./type_defs.md#describeavailablepatchesresulttypedef).
 
+<a id="describe_document"></a>
+
 ### describe_document
 
 Describes the specified Amazon Web Services Systems Manager document (SSM
@@ -1154,6 +1237,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDocumentResultTypeDef](./type_defs.md#describedocumentresulttypedef).
+
+<a id="describe_document_permission"></a>
 
 ### describe_document_permission
 
@@ -1180,6 +1265,8 @@ Keyword-only arguments:
 Returns
 [DescribeDocumentPermissionResponseTypeDef](./type_defs.md#describedocumentpermissionresponsetypedef).
 
+<a id="describe_effective_instance_associations"></a>
+
 ### describe_effective_instance_associations
 
 All associations for the managed node(s).
@@ -1201,6 +1288,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEffectiveInstanceAssociationsResultTypeDef](./type_defs.md#describeeffectiveinstanceassociationsresulttypedef).
+
+<a id="describe_effective_patches_for_patch_baseline"></a>
 
 ### describe_effective_patches_for_patch_baseline
 
@@ -1225,6 +1314,8 @@ Keyword-only arguments:
 Returns
 [DescribeEffectivePatchesForPatchBaselineResultTypeDef](./type_defs.md#describeeffectivepatchesforpatchbaselineresulttypedef).
 
+<a id="describe_instance_associations_status"></a>
+
 ### describe_instance_associations_status
 
 The status of the associations for the managed node(s).
@@ -1246,6 +1337,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstanceAssociationsStatusResultTypeDef](./type_defs.md#describeinstanceassociationsstatusresulttypedef).
+
+<a id="describe_instance_information"></a>
 
 ### describe_instance_information
 
@@ -1274,6 +1367,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceInformationResultTypeDef](./type_defs.md#describeinstanceinformationresulttypedef).
 
+<a id="describe_instance_patch_states"></a>
+
 ### describe_instance_patch_states
 
 .
@@ -1295,6 +1390,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstancePatchStatesResultTypeDef](./type_defs.md#describeinstancepatchstatesresulttypedef).
+
+<a id="describe_instance_patch_states_for_patch_group"></a>
 
 ### describe_instance_patch_states_for_patch_group
 
@@ -1320,6 +1417,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstancePatchStatesForPatchGroupResultTypeDef](./type_defs.md#describeinstancepatchstatesforpatchgroupresulttypedef).
 
+<a id="describe_instance_patches"></a>
+
 ### describe_instance_patches
 
 Retrieves information about the patches on the specified managed node and their
@@ -1344,6 +1443,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstancePatchesResultTypeDef](./type_defs.md#describeinstancepatchesresulttypedef).
 
+<a id="describe_inventory_deletions"></a>
+
 ### describe_inventory_deletions
 
 Describes a specific delete inventory operation.
@@ -1364,6 +1465,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInventoryDeletionsResultTypeDef](./type_defs.md#describeinventorydeletionsresulttypedef).
+
+<a id="describe_maintenance_window_execution_task_invocations"></a>
 
 ### describe_maintenance_window_execution_task_invocations
 
@@ -1392,6 +1495,8 @@ Keyword-only arguments:
 Returns
 [DescribeMaintenanceWindowExecutionTaskInvocationsResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontaskinvocationsresulttypedef).
 
+<a id="describe_maintenance_window_execution_tasks"></a>
+
 ### describe_maintenance_window_execution_tasks
 
 For a given maintenance window execution, lists the tasks that were run.
@@ -1416,6 +1521,8 @@ Keyword-only arguments:
 Returns
 [DescribeMaintenanceWindowExecutionTasksResultTypeDef](./type_defs.md#describemaintenancewindowexecutiontasksresulttypedef).
 
+<a id="describe_maintenance_window_executions"></a>
+
 ### describe_maintenance_window_executions
 
 Lists the executions of a maintenance window.
@@ -1439,6 +1546,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMaintenanceWindowExecutionsResultTypeDef](./type_defs.md#describemaintenancewindowexecutionsresulttypedef).
+
+<a id="describe_maintenance_window_schedule"></a>
 
 ### describe_maintenance_window_schedule
 
@@ -1467,6 +1576,8 @@ Keyword-only arguments:
 Returns
 [DescribeMaintenanceWindowScheduleResultTypeDef](./type_defs.md#describemaintenancewindowscheduleresulttypedef).
 
+<a id="describe_maintenance_window_targets"></a>
+
 ### describe_maintenance_window_targets
 
 Lists the targets registered with the maintenance window.
@@ -1490,6 +1601,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMaintenanceWindowTargetsResultTypeDef](./type_defs.md#describemaintenancewindowtargetsresulttypedef).
+
+<a id="describe_maintenance_window_tasks"></a>
 
 ### describe_maintenance_window_tasks
 
@@ -1515,6 +1628,8 @@ Keyword-only arguments:
 Returns
 [DescribeMaintenanceWindowTasksResultTypeDef](./type_defs.md#describemaintenancewindowtasksresulttypedef).
 
+<a id="describe_maintenance_windows"></a>
+
 ### describe_maintenance_windows
 
 Retrieves the maintenance windows in an Amazon Web Services account.
@@ -1536,6 +1651,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMaintenanceWindowsResultTypeDef](./type_defs.md#describemaintenancewindowsresulttypedef).
+
+<a id="describe_maintenance_windows_for_target"></a>
 
 ### describe_maintenance_windows_for_target
 
@@ -1564,6 +1681,8 @@ Keyword-only arguments:
 Returns
 [DescribeMaintenanceWindowsForTargetResultTypeDef](./type_defs.md#describemaintenancewindowsfortargetresulttypedef).
 
+<a id="describe_ops_items"></a>
+
 ### describe_ops_items
 
 Query a set of OpsItems.
@@ -1585,6 +1704,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeOpsItemsResponseTypeDef](./type_defs.md#describeopsitemsresponsetypedef).
+
+<a id="describe_parameters"></a>
 
 ### describe_parameters
 
@@ -1610,6 +1731,8 @@ Keyword-only arguments:
 Returns
 [DescribeParametersResultTypeDef](./type_defs.md#describeparametersresulttypedef).
 
+<a id="describe_patch_baselines"></a>
+
 ### describe_patch_baselines
 
 Lists the patch baselines in your Amazon Web Services account.
@@ -1632,6 +1755,8 @@ Keyword-only arguments:
 Returns
 [DescribePatchBaselinesResultTypeDef](./type_defs.md#describepatchbaselinesresulttypedef).
 
+<a id="describe_patch_group_state"></a>
+
 ### describe_patch_group_state
 
 Returns high-level aggregated patch compliance state information for a patch
@@ -1651,6 +1776,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePatchGroupStateResultTypeDef](./type_defs.md#describepatchgroupstateresulttypedef).
+
+<a id="describe_patch_groups"></a>
 
 ### describe_patch_groups
 
@@ -1673,6 +1800,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePatchGroupsResultTypeDef](./type_defs.md#describepatchgroupsresulttypedef).
+
+<a id="describe_patch_properties"></a>
 
 ### describe_patch_properties
 
@@ -1699,6 +1828,8 @@ Keyword-only arguments:
 Returns
 [DescribePatchPropertiesResultTypeDef](./type_defs.md#describepatchpropertiesresulttypedef).
 
+<a id="describe_sessions"></a>
+
 ### describe_sessions
 
 Retrieves a list of all active sessions (both connected and disconnected) or
@@ -1723,6 +1854,8 @@ Keyword-only arguments:
 Returns
 [DescribeSessionsResponseTypeDef](./type_defs.md#describesessionsresponsetypedef).
 
+<a id="disassociate_ops_item_related_item"></a>
+
 ### disassociate_ops_item_related_item
 
 Deletes the association between an OpsItem and a related item.
@@ -1743,6 +1876,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1760,6 +1895,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_automation_execution"></a>
 
 ### get_automation_execution
 
@@ -1779,6 +1916,8 @@ Keyword-only arguments:
 
 Returns
 [GetAutomationExecutionResultTypeDef](./type_defs.md#getautomationexecutionresulttypedef).
+
+<a id="get_calendar_state"></a>
 
 ### get_calendar_state
 
@@ -1800,6 +1939,8 @@ Keyword-only arguments:
 
 Returns
 [GetCalendarStateResponseTypeDef](./type_defs.md#getcalendarstateresponsetypedef).
+
+<a id="get_command_invocation"></a>
 
 ### get_command_invocation
 
@@ -1823,6 +1964,8 @@ Keyword-only arguments:
 Returns
 [GetCommandInvocationResultTypeDef](./type_defs.md#getcommandinvocationresulttypedef).
 
+<a id="get_connection_status"></a>
+
 ### get_connection_status
 
 Retrieves the Session Manager connection status for a managed node to determine
@@ -1843,6 +1986,8 @@ Keyword-only arguments:
 Returns
 [GetConnectionStatusResponseTypeDef](./type_defs.md#getconnectionstatusresponsetypedef).
 
+<a id="get_default_patch_baseline"></a>
+
 ### get_default_patch_baseline
 
 Retrieves the default patch baseline.
@@ -1861,6 +2006,8 @@ Keyword-only arguments:
 
 Returns
 [GetDefaultPatchBaselineResultTypeDef](./type_defs.md#getdefaultpatchbaselineresulttypedef).
+
+<a id="get_deployable_patch_snapshot_for_instance"></a>
 
 ### get_deployable_patch_snapshot_for_instance
 
@@ -1885,6 +2032,8 @@ Keyword-only arguments:
 Returns
 [GetDeployablePatchSnapshotForInstanceResultTypeDef](./type_defs.md#getdeployablepatchsnapshotforinstanceresulttypedef).
 
+<a id="get_document"></a>
+
 ### get_document
 
 Gets the contents of the specified Amazon Web Services Systems Manager document
@@ -1906,6 +2055,8 @@ Keyword-only arguments:
 - `DocumentFormat`: [DocumentFormatType](./literals.md#documentformattype)
 
 Returns [GetDocumentResultTypeDef](./type_defs.md#getdocumentresulttypedef).
+
+<a id="get_inventory"></a>
 
 ### get_inventory
 
@@ -1932,6 +2083,8 @@ Keyword-only arguments:
 
 Returns [GetInventoryResultTypeDef](./type_defs.md#getinventoryresulttypedef).
 
+<a id="get_inventory_schema"></a>
+
 ### get_inventory_schema
 
 Return a list of inventory type names for the account, or return a list of
@@ -1956,6 +2109,8 @@ Keyword-only arguments:
 Returns
 [GetInventorySchemaResultTypeDef](./type_defs.md#getinventoryschemaresulttypedef).
 
+<a id="get_maintenance_window"></a>
+
 ### get_maintenance_window
 
 Retrieves a maintenance window.
@@ -1974,6 +2129,8 @@ Keyword-only arguments:
 
 Returns
 [GetMaintenanceWindowResultTypeDef](./type_defs.md#getmaintenancewindowresulttypedef).
+
+<a id="get_maintenance_window_execution"></a>
 
 ### get_maintenance_window_execution
 
@@ -1994,6 +2151,8 @@ Keyword-only arguments:
 
 Returns
 [GetMaintenanceWindowExecutionResultTypeDef](./type_defs.md#getmaintenancewindowexecutionresulttypedef).
+
+<a id="get_maintenance_window_execution_task"></a>
 
 ### get_maintenance_window_execution_task
 
@@ -2017,6 +2176,8 @@ Keyword-only arguments:
 Returns
 [GetMaintenanceWindowExecutionTaskResultTypeDef](./type_defs.md#getmaintenancewindowexecutiontaskresulttypedef).
 
+<a id="get_maintenance_window_execution_task_invocation"></a>
+
 ### get_maintenance_window_execution_task_invocation
 
 Retrieves information about a specific task running on a specific target.
@@ -2039,6 +2200,8 @@ Keyword-only arguments:
 Returns
 [GetMaintenanceWindowExecutionTaskInvocationResultTypeDef](./type_defs.md#getmaintenancewindowexecutiontaskinvocationresulttypedef).
 
+<a id="get_maintenance_window_task"></a>
+
 ### get_maintenance_window_task
 
 Lists the tasks in a maintenance window.
@@ -2059,6 +2222,8 @@ Keyword-only arguments:
 Returns
 [GetMaintenanceWindowTaskResultTypeDef](./type_defs.md#getmaintenancewindowtaskresulttypedef).
 
+<a id="get_ops_item"></a>
+
 ### get_ops_item
 
 Get information about an OpsItem by using the ID.
@@ -2076,6 +2241,8 @@ Keyword-only arguments:
 - `OpsItemId`: `str` *(required)*
 
 Returns [GetOpsItemResponseTypeDef](./type_defs.md#getopsitemresponsetypedef).
+
+<a id="get_ops_metadata"></a>
 
 ### get_ops_metadata
 
@@ -2097,6 +2264,8 @@ Keyword-only arguments:
 
 Returns
 [GetOpsMetadataResultTypeDef](./type_defs.md#getopsmetadataresulttypedef).
+
+<a id="get_ops_summary"></a>
 
 ### get_ops_summary
 
@@ -2125,6 +2294,8 @@ Keyword-only arguments:
 Returns
 [GetOpsSummaryResultTypeDef](./type_defs.md#getopssummaryresulttypedef).
 
+<a id="get_parameter"></a>
+
 ### get_parameter
 
 Get information about a single parameter by specifying the parameter name.
@@ -2143,6 +2314,8 @@ Keyword-only arguments:
 - `WithDecryption`: `bool`
 
 Returns [GetParameterResultTypeDef](./type_defs.md#getparameterresulttypedef).
+
+<a id="get_parameter_history"></a>
 
 ### get_parameter_history
 
@@ -2166,6 +2339,8 @@ Keyword-only arguments:
 Returns
 [GetParameterHistoryResultTypeDef](./type_defs.md#getparameterhistoryresulttypedef).
 
+<a id="get_parameters"></a>
+
 ### get_parameters
 
 Get information about one or more parameters by specifying multiple parameter
@@ -2186,6 +2361,8 @@ Keyword-only arguments:
 
 Returns
 [GetParametersResultTypeDef](./type_defs.md#getparametersresulttypedef).
+
+<a id="get_parameters_by_path"></a>
 
 ### get_parameters_by_path
 
@@ -2212,6 +2389,8 @@ Keyword-only arguments:
 Returns
 [GetParametersByPathResultTypeDef](./type_defs.md#getparametersbypathresulttypedef).
 
+<a id="get_patch_baseline"></a>
+
 ### get_patch_baseline
 
 Retrieves information about a patch baseline.
@@ -2230,6 +2409,8 @@ Keyword-only arguments:
 
 Returns
 [GetPatchBaselineResultTypeDef](./type_defs.md#getpatchbaselineresulttypedef).
+
+<a id="get_patch_baseline_for_patch_group"></a>
 
 ### get_patch_baseline_for_patch_group
 
@@ -2252,6 +2433,8 @@ Keyword-only arguments:
 Returns
 [GetPatchBaselineForPatchGroupResultTypeDef](./type_defs.md#getpatchbaselineforpatchgroupresulttypedef).
 
+<a id="get_service_setting"></a>
+
 ### get_service_setting
 
 `ServiceSetting` is an account-level setting for an Amazon Web Services
@@ -2271,6 +2454,8 @@ Keyword-only arguments:
 
 Returns
 [GetServiceSettingResultTypeDef](./type_defs.md#getservicesettingresulttypedef).
+
+<a id="label_parameter_version"></a>
 
 ### label_parameter_version
 
@@ -2294,6 +2479,8 @@ Keyword-only arguments:
 Returns
 [LabelParameterVersionResultTypeDef](./type_defs.md#labelparameterversionresulttypedef).
 
+<a id="list_association_versions"></a>
+
 ### list_association_versions
 
 Retrieves all versions of an association for a specific association ID.
@@ -2314,6 +2501,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssociationVersionsResultTypeDef](./type_defs.md#listassociationversionsresulttypedef).
+
+<a id="list_associations"></a>
 
 ### list_associations
 
@@ -2337,6 +2526,8 @@ Keyword-only arguments:
 
 Returns
 [ListAssociationsResultTypeDef](./type_defs.md#listassociationsresulttypedef).
+
+<a id="list_command_invocations"></a>
 
 ### list_command_invocations
 
@@ -2363,6 +2554,8 @@ Keyword-only arguments:
 Returns
 [ListCommandInvocationsResultTypeDef](./type_defs.md#listcommandinvocationsresulttypedef).
 
+<a id="list_commands"></a>
+
 ### list_commands
 
 Lists the commands requested by users of the Amazon Web Services account.
@@ -2385,6 +2578,8 @@ Keyword-only arguments:
   `Sequence`\[[CommandFilterTypeDef](./type_defs.md#commandfiltertypedef)\]
 
 Returns [ListCommandsResultTypeDef](./type_defs.md#listcommandsresulttypedef).
+
+<a id="list_compliance_items"></a>
 
 ### list_compliance_items
 
@@ -2411,6 +2606,8 @@ Keyword-only arguments:
 Returns
 [ListComplianceItemsResultTypeDef](./type_defs.md#listcomplianceitemsresulttypedef).
 
+<a id="list_compliance_summaries"></a>
+
 ### list_compliance_summaries
 
 Returns a summary count of compliant and non-compliant resources for a
@@ -2433,6 +2630,8 @@ Keyword-only arguments:
 
 Returns
 [ListComplianceSummariesResultTypeDef](./type_defs.md#listcompliancesummariesresulttypedef).
+
+<a id="list_document_metadata_history"></a>
 
 ### list_document_metadata_history
 
@@ -2461,6 +2660,8 @@ Keyword-only arguments:
 Returns
 [ListDocumentMetadataHistoryResponseTypeDef](./type_defs.md#listdocumentmetadatahistoryresponsetypedef).
 
+<a id="list_document_versions"></a>
+
 ### list_document_versions
 
 List all versions for a document.
@@ -2481,6 +2682,8 @@ Keyword-only arguments:
 
 Returns
 [ListDocumentVersionsResultTypeDef](./type_defs.md#listdocumentversionsresulttypedef).
+
+<a id="list_documents"></a>
 
 ### list_documents
 
@@ -2507,6 +2710,8 @@ Keyword-only arguments:
 Returns
 [ListDocumentsResultTypeDef](./type_defs.md#listdocumentsresulttypedef).
 
+<a id="list_inventory_entries"></a>
+
 ### list_inventory_entries
 
 A list of inventory items returned by the request.
@@ -2531,6 +2736,8 @@ Keyword-only arguments:
 Returns
 [ListInventoryEntriesResultTypeDef](./type_defs.md#listinventoryentriesresulttypedef).
 
+<a id="list_ops_item_events"></a>
+
 ### list_ops_item_events
 
 Returns a list of all OpsItem events in the current Amazon Web Services Region
@@ -2553,6 +2760,8 @@ Keyword-only arguments:
 
 Returns
 [ListOpsItemEventsResponseTypeDef](./type_defs.md#listopsitemeventsresponsetypedef).
+
+<a id="list_ops_item_related_items"></a>
 
 ### list_ops_item_related_items
 
@@ -2578,6 +2787,8 @@ Keyword-only arguments:
 Returns
 [ListOpsItemRelatedItemsResponseTypeDef](./type_defs.md#listopsitemrelateditemsresponsetypedef).
 
+<a id="list_ops_metadata"></a>
+
 ### list_ops_metadata
 
 Amazon Web Services Systems Manager calls this API operation when displaying
@@ -2600,6 +2811,8 @@ Keyword-only arguments:
 
 Returns
 [ListOpsMetadataResultTypeDef](./type_defs.md#listopsmetadataresulttypedef).
+
+<a id="list_resource_compliance_summaries"></a>
 
 ### list_resource_compliance_summaries
 
@@ -2624,6 +2837,8 @@ Keyword-only arguments:
 Returns
 [ListResourceComplianceSummariesResultTypeDef](./type_defs.md#listresourcecompliancesummariesresulttypedef).
 
+<a id="list_resource_data_sync"></a>
+
 ### list_resource_data_sync
 
 Lists your resource data sync configurations.
@@ -2644,6 +2859,8 @@ Keyword-only arguments:
 
 Returns
 [ListResourceDataSyncResultTypeDef](./type_defs.md#listresourcedatasyncresulttypedef).
+
+<a id="list_tags_for_resource"></a>
 
 ### list_tags_for_resource
 
@@ -2666,6 +2883,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
+
+<a id="modify_document_permission"></a>
 
 ### modify_document_permission
 
@@ -2691,6 +2910,8 @@ Keyword-only arguments:
 - `SharedDocumentVersion`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="put_compliance_items"></a>
 
 ### put_compliance_items
 
@@ -2722,6 +2943,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_inventory"></a>
+
 ### put_inventory
 
 Bulk update custom inventory items on one or more managed nodes.
@@ -2742,6 +2965,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns [PutInventoryResultTypeDef](./type_defs.md#putinventoryresulttypedef).
+
+<a id="put_parameter"></a>
 
 ### put_parameter
 
@@ -2771,6 +2996,8 @@ Keyword-only arguments:
 
 Returns [PutParameterResultTypeDef](./type_defs.md#putparameterresulttypedef).
 
+<a id="register_default_patch_baseline"></a>
+
 ### register_default_patch_baseline
 
 Defines the default patch baseline for the relevant operating system.
@@ -2790,6 +3017,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterDefaultPatchBaselineResultTypeDef](./type_defs.md#registerdefaultpatchbaselineresulttypedef).
+
+<a id="register_patch_baseline_for_patch_group"></a>
 
 ### register_patch_baseline_for_patch_group
 
@@ -2811,6 +3040,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterPatchBaselineForPatchGroupResultTypeDef](./type_defs.md#registerpatchbaselineforpatchgroupresulttypedef).
+
+<a id="register_target_with_maintenance_window"></a>
 
 ### register_target_with_maintenance_window
 
@@ -2840,6 +3071,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterTargetWithMaintenanceWindowResultTypeDef](./type_defs.md#registertargetwithmaintenancewindowresulttypedef).
+
+<a id="register_task_with_maintenance_window"></a>
 
 ### register_task_with_maintenance_window
 
@@ -2880,6 +3113,8 @@ Keyword-only arguments:
 Returns
 [RegisterTaskWithMaintenanceWindowResultTypeDef](./type_defs.md#registertaskwithmaintenancewindowresulttypedef).
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 Removes tag keys from the specified resource.
@@ -2902,6 +3137,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="reset_service_setting"></a>
+
 ### reset_service_setting
 
 `ServiceSetting` is an account-level setting for an Amazon Web Services
@@ -2922,6 +3159,8 @@ Keyword-only arguments:
 Returns
 [ResetServiceSettingResultTypeDef](./type_defs.md#resetservicesettingresulttypedef).
 
+<a id="resume_session"></a>
+
 ### resume_session
 
 Reconnects a session to a managed node after it has been disconnected.
@@ -2940,6 +3179,8 @@ Keyword-only arguments:
 
 Returns
 [ResumeSessionResponseTypeDef](./type_defs.md#resumesessionresponsetypedef).
+
+<a id="send_automation_signal"></a>
 
 ### send_automation_signal
 
@@ -2961,6 +3202,8 @@ Keyword-only arguments:
 - `Payload`: `Mapping`\[`str`, `Sequence`\[`str`\]\]
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="send_command"></a>
 
 ### send_command
 
@@ -2999,6 +3242,8 @@ Keyword-only arguments:
 
 Returns [SendCommandResultTypeDef](./type_defs.md#sendcommandresulttypedef).
 
+<a id="start_associations_once"></a>
+
 ### start_associations_once
 
 Runs an association immediately and only one time.
@@ -3016,6 +3261,8 @@ Keyword-only arguments:
 - `AssociationIds`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_automation_execution"></a>
 
 ### start_automation_execution
 
@@ -3048,6 +3295,8 @@ Keyword-only arguments:
 Returns
 [StartAutomationExecutionResultTypeDef](./type_defs.md#startautomationexecutionresulttypedef).
 
+<a id="start_change_request_execution"></a>
+
 ### start_change_request_execution
 
 Creates a change request for Change Manager.
@@ -3079,6 +3328,8 @@ Keyword-only arguments:
 Returns
 [StartChangeRequestExecutionResultTypeDef](./type_defs.md#startchangerequestexecutionresulttypedef).
 
+<a id="start_session"></a>
+
 ### start_session
 
 Initiates a connection to a target (for example, a managed node) for a Session
@@ -3102,6 +3353,8 @@ Keyword-only arguments:
 Returns
 [StartSessionResponseTypeDef](./type_defs.md#startsessionresponsetypedef).
 
+<a id="stop_automation_execution"></a>
+
 ### stop_automation_execution
 
 Stop an Automation that is currently running.
@@ -3120,6 +3373,8 @@ Keyword-only arguments:
 - `Type`: [StopTypeType](./literals.md#stoptypetype)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="terminate_session"></a>
 
 ### terminate_session
 
@@ -3141,6 +3396,8 @@ Keyword-only arguments:
 Returns
 [TerminateSessionResponseTypeDef](./type_defs.md#terminatesessionresponsetypedef).
 
+<a id="unlabel_parameter_version"></a>
+
 ### unlabel_parameter_version
 
 Remove a label or labels from a parameter.
@@ -3161,6 +3418,8 @@ Keyword-only arguments:
 
 Returns
 [UnlabelParameterVersionResultTypeDef](./type_defs.md#unlabelparameterversionresulttypedef).
+
+<a id="update_association"></a>
 
 ### update_association
 
@@ -3201,6 +3460,8 @@ Keyword-only arguments:
 Returns
 [UpdateAssociationResultTypeDef](./type_defs.md#updateassociationresulttypedef).
 
+<a id="update_association_status"></a>
+
 ### update_association_status
 
 Updates the status of the Amazon Web Services Systems Manager document (SSM
@@ -3224,6 +3485,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAssociationStatusResultTypeDef](./type_defs.md#updateassociationstatusresulttypedef).
+
+<a id="update_document"></a>
 
 ### update_document
 
@@ -3252,6 +3515,8 @@ Keyword-only arguments:
 Returns
 [UpdateDocumentResultTypeDef](./type_defs.md#updatedocumentresulttypedef).
 
+<a id="update_document_default_version"></a>
+
 ### update_document_default_version
 
 Set the default version of a document.
@@ -3272,6 +3537,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDocumentDefaultVersionResultTypeDef](./type_defs.md#updatedocumentdefaultversionresulttypedef).
+
+<a id="update_document_metadata"></a>
 
 ### update_document_metadata
 
@@ -3294,6 +3561,8 @@ Keyword-only arguments:
 - `DocumentVersion`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_maintenance_window"></a>
 
 ### update_maintenance_window
 
@@ -3326,6 +3595,8 @@ Keyword-only arguments:
 Returns
 [UpdateMaintenanceWindowResultTypeDef](./type_defs.md#updatemaintenancewindowresulttypedef).
 
+<a id="update_maintenance_window_target"></a>
+
 ### update_maintenance_window_target
 
 Modifies the target of an existing maintenance window.
@@ -3351,6 +3622,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateMaintenanceWindowTargetResultTypeDef](./type_defs.md#updatemaintenancewindowtargetresulttypedef).
+
+<a id="update_maintenance_window_task"></a>
 
 ### update_maintenance_window_task
 
@@ -3389,6 +3662,8 @@ Keyword-only arguments:
 Returns
 [UpdateMaintenanceWindowTaskResultTypeDef](./type_defs.md#updatemaintenancewindowtaskresulttypedef).
 
+<a id="update_managed_instance_role"></a>
+
 ### update_managed_instance_role
 
 Changes the Identity and Access Management (IAM) role that is assigned to the
@@ -3408,6 +3683,8 @@ Keyword-only arguments:
 - `IamRole`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_ops_item"></a>
 
 ### update_ops_item
 
@@ -3444,6 +3721,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_ops_metadata"></a>
+
 ### update_ops_metadata
 
 Amazon Web Services Systems Manager calls this API operation when you edit
@@ -3466,6 +3745,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateOpsMetadataResultTypeDef](./type_defs.md#updateopsmetadataresulttypedef).
+
+<a id="update_patch_baseline"></a>
 
 ### update_patch_baseline
 
@@ -3501,6 +3782,8 @@ Keyword-only arguments:
 Returns
 [UpdatePatchBaselineResultTypeDef](./type_defs.md#updatepatchbaselineresulttypedef).
 
+<a id="update_resource_data_sync"></a>
+
 ### update_resource_data_sync
 
 Update a resource data sync.
@@ -3523,6 +3806,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_service_setting"></a>
+
 ### update_service_setting
 
 `ServiceSetting` is an account-level setting for an Amazon Web Services
@@ -3542,6 +3827,8 @@ Keyword-only arguments:
 - `SettingValue`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -3640,6 +3927,8 @@ Type annotations for `boto3.client("ssm").get_paginator` method with overloads.
   [ListResourceComplianceSummariesPaginator](./paginators.md#listresourcecompliancesummariespaginator)
 - `client.get_paginator("list_resource_data_sync")` ->
   [ListResourceDataSyncPaginator](./paginators.md#listresourcedatasyncpaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

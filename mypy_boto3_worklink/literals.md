@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-worklink-module"></a>
+
 # Literals for boto3 WorkLink module
 
 > [Index](..) > [WorkLink](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
 type annotations stubs module
-[mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
+[mypy-boto3-worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 - [Literals for boto3 WorkLink module](#literals-for-boto3-worklink-module)
   - [AuthorizationProviderTypeType](#authorizationprovidertypetype)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [FleetStatusType](#fleetstatustype)
   - [IdentityProviderTypeType](#identityprovidertypetype)
   - [ServiceName](#servicename)
+
+<a id="authorizationprovidertypetype"></a>
 
 ## AuthorizationProviderTypeType
 
@@ -25,6 +29,8 @@ Values:
 
 - `SAML`
 
+<a id="devicestatustype"></a>
+
 ## DeviceStatusType
 
 ```python
@@ -35,6 +41,8 @@ Values:
 
 - `ACTIVE`
 - `SIGNED_OUT`
+
+<a id="domainstatustype"></a>
 
 ## DomainStatusType
 
@@ -53,6 +61,8 @@ Values:
 - `INACTIVE`
 - `PENDING_VALIDATION`
 
+<a id="fleetstatustype"></a>
+
 ## FleetStatusType
 
 ```python
@@ -68,6 +78,8 @@ Values:
 - `FAILED_TO_CREATE`
 - `FAILED_TO_DELETE`
 
+<a id="identityprovidertypetype"></a>
+
 ## IdentityProviderTypeType
 
 ```python
@@ -77,6 +89,8 @@ from mypy_boto3_worklink.literals import IdentityProviderTypeType
 Values:
 
 - `SAML`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

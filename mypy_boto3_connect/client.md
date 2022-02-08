@@ -1,3 +1,5 @@
+<a id="connectclient-for-boto3-connect-module"></a>
+
 # ConnectClient for boto3 Connect module
 
 > [Index](..) > [Connect](.) > ConnectClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Connect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect)
 type annotations stubs module
-[mypy_boto3_connect](https://pypi.org/project/mypy-boto3-connect/).
+[mypy-boto3-connect](https://pypi.org/project/mypy-boto3-connect/).
 
 - [ConnectClient for boto3 Connect module](#connectclient-for-boto3-connect-module)
   - [ConnectClient](#connectclient)
@@ -150,6 +152,8 @@ type annotations stubs module
     - [update_user_security_profiles](#update_user_security_profiles)
     - [get_paginator](#get_paginator)
 
+<a id="connectclient"></a>
+
 ## ConnectClient
 
 Type annotations for `boto3.client("connect")`
@@ -157,14 +161,17 @@ Type annotations for `boto3.client("connect")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_connect.client import ConnectClient
 
 def get_connect_client() -> ConnectClient:
-    return boto3.client("connect")
+    return Session().client("connect")
 ```
 
 Boto3 documentation:
 [Connect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -201,7 +208,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UserNotFoundException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -213,6 +224,8 @@ Boto3 documentation:
 [Connect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_approved_origin"></a>
 
 ### associate_approved_origin
 
@@ -232,6 +245,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Origin`: `str` *(required)*
 
+<a id="associate_bot"></a>
+
 ### associate_bot
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -249,6 +264,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+
+<a id="associate_default_vocabulary"></a>
 
 ### associate_default_vocabulary
 
@@ -272,6 +289,8 @@ Keyword-only arguments:
 - `VocabularyId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_instance_storage_config"></a>
 
 ### associate_instance_storage_config
 
@@ -299,6 +318,8 @@ Keyword-only arguments:
 Returns
 [AssociateInstanceStorageConfigResponseTypeDef](./type_defs.md#associateinstancestorageconfigresponsetypedef).
 
+<a id="associate_lambda_function"></a>
+
 ### associate_lambda_function
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -317,6 +338,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `FunctionArn`: `str` *(required)*
 
+<a id="associate_lex_bot"></a>
+
 ### associate_lex_bot
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -333,6 +356,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef) *(required)*
+
+<a id="associate_queue_quick_connects"></a>
 
 ### associate_queue_quick_connects
 
@@ -352,6 +377,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
 - `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
+
+<a id="associate_routing_profile_queues"></a>
 
 ### associate_routing_profile_queues
 
@@ -374,6 +401,8 @@ Keyword-only arguments:
   `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
+<a id="associate_security_key"></a>
+
 ### associate_security_key
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -394,6 +423,8 @@ Keyword-only arguments:
 Returns
 [AssociateSecurityKeyResponseTypeDef](./type_defs.md#associatesecuritykeyresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -408,6 +439,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_agent_status"></a>
 
 ### create_agent_status
 
@@ -434,6 +467,8 @@ Keyword-only arguments:
 Returns
 [CreateAgentStatusResponseTypeDef](./type_defs.md#createagentstatusresponsetypedef).
 
+<a id="create_contact_flow"></a>
+
 ### create_contact_flow
 
 Creates a contact flow for the specified Amazon Connect instance.
@@ -457,6 +492,8 @@ Keyword-only arguments:
 
 Returns
 [CreateContactFlowResponseTypeDef](./type_defs.md#createcontactflowresponsetypedef).
+
+<a id="create_contact_flow_module"></a>
 
 ### create_contact_flow_module
 
@@ -482,6 +519,8 @@ Keyword-only arguments:
 
 Returns
 [CreateContactFlowModuleResponseTypeDef](./type_defs.md#createcontactflowmoduleresponsetypedef).
+
+<a id="create_hours_of_operation"></a>
 
 ### create_hours_of_operation
 
@@ -510,6 +549,8 @@ Keyword-only arguments:
 Returns
 [CreateHoursOfOperationResponseTypeDef](./type_defs.md#createhoursofoperationresponsetypedef).
 
+<a id="create_instance"></a>
+
 ### create_instance
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -534,6 +575,8 @@ Keyword-only arguments:
 
 Returns
 [CreateInstanceResponseTypeDef](./type_defs.md#createinstanceresponsetypedef).
+
+<a id="create_integration_association"></a>
 
 ### create_integration_association
 
@@ -563,6 +606,8 @@ Keyword-only arguments:
 Returns
 [CreateIntegrationAssociationResponseTypeDef](./type_defs.md#createintegrationassociationresponsetypedef).
 
+<a id="create_queue"></a>
+
 ### create_queue
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -590,6 +635,8 @@ Keyword-only arguments:
 Returns
 [CreateQueueResponseTypeDef](./type_defs.md#createqueueresponsetypedef).
 
+<a id="create_quick_connect"></a>
+
 ### create_quick_connect
 
 Creates a quick connect for the specified Amazon Connect instance.
@@ -614,6 +661,8 @@ Keyword-only arguments:
 
 Returns
 [CreateQuickConnectResponseTypeDef](./type_defs.md#createquickconnectresponsetypedef).
+
+<a id="create_routing_profile"></a>
 
 ### create_routing_profile
 
@@ -643,6 +692,8 @@ Keyword-only arguments:
 Returns
 [CreateRoutingProfileResponseTypeDef](./type_defs.md#createroutingprofileresponsetypedef).
 
+<a id="create_security_profile"></a>
+
 ### create_security_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -666,6 +717,8 @@ Keyword-only arguments:
 Returns
 [CreateSecurityProfileResponseTypeDef](./type_defs.md#createsecurityprofileresponsetypedef).
 
+<a id="create_use_case"></a>
+
 ### create_use_case
 
 Creates a use case for an integration association.
@@ -687,6 +740,8 @@ Keyword-only arguments:
 
 Returns
 [CreateUseCaseResponseTypeDef](./type_defs.md#createusecaseresponsetypedef).
+
+<a id="create_user"></a>
 
 ### create_user
 
@@ -717,6 +772,8 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
+<a id="create_user_hierarchy_group"></a>
+
 ### create_user_hierarchy_group
 
 Creates a new user hierarchy group.
@@ -739,6 +796,8 @@ Keyword-only arguments:
 
 Returns
 [CreateUserHierarchyGroupResponseTypeDef](./type_defs.md#createuserhierarchygroupresponsetypedef).
+
+<a id="create_vocabulary"></a>
 
 ### create_vocabulary
 
@@ -766,6 +825,8 @@ Keyword-only arguments:
 Returns
 [CreateVocabularyResponseTypeDef](./type_defs.md#createvocabularyresponsetypedef).
 
+<a id="delete_contact_flow"></a>
+
 ### delete_contact_flow
 
 Deletes a contact flow for the specified Amazon Connect instance.
@@ -782,6 +843,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
+
+<a id="delete_contact_flow_module"></a>
 
 ### delete_contact_flow_module
 
@@ -803,6 +866,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_hours_of_operation"></a>
+
 ### delete_hours_of_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -821,6 +886,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `HoursOfOperationId`: `str` *(required)*
 
+<a id="delete_instance"></a>
+
 ### delete_instance
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -836,6 +903,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
+
+<a id="delete_integration_association"></a>
 
 ### delete_integration_association
 
@@ -856,6 +925,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `IntegrationAssociationId`: `str` *(required)*
 
+<a id="delete_quick_connect"></a>
+
 ### delete_quick_connect
 
 Deletes a quick connect.
@@ -873,6 +944,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `QuickConnectId`: `str` *(required)*
 
+<a id="delete_security_profile"></a>
+
 ### delete_security_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -889,6 +962,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `SecurityProfileId`: `str` *(required)*
+
+<a id="delete_use_case"></a>
 
 ### delete_use_case
 
@@ -908,6 +983,8 @@ Keyword-only arguments:
 - `IntegrationAssociationId`: `str` *(required)*
 - `UseCaseId`: `str` *(required)*
 
+<a id="delete_user"></a>
+
 ### delete_user
 
 Deletes a user account from the specified Amazon Connect instance.
@@ -924,6 +1001,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `UserId`: `str` *(required)*
+
+<a id="delete_user_hierarchy_group"></a>
 
 ### delete_user_hierarchy_group
 
@@ -942,6 +1021,8 @@ Keyword-only arguments:
 
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+<a id="delete_vocabulary"></a>
 
 ### delete_vocabulary
 
@@ -963,6 +1044,8 @@ Keyword-only arguments:
 Returns
 [DeleteVocabularyResponseTypeDef](./type_defs.md#deletevocabularyresponsetypedef).
 
+<a id="describe_agent_status"></a>
+
 ### describe_agent_status
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -982,6 +1065,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAgentStatusResponseTypeDef](./type_defs.md#describeagentstatusresponsetypedef).
+
+<a id="describe_contact"></a>
 
 ### describe_contact
 
@@ -1003,6 +1088,8 @@ Keyword-only arguments:
 Returns
 [DescribeContactResponseTypeDef](./type_defs.md#describecontactresponsetypedef).
 
+<a id="describe_contact_flow"></a>
+
 ### describe_contact_flow
 
 Describes the specified contact flow.
@@ -1022,6 +1109,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeContactFlowResponseTypeDef](./type_defs.md#describecontactflowresponsetypedef).
+
+<a id="describe_contact_flow_module"></a>
 
 ### describe_contact_flow_module
 
@@ -1044,6 +1133,8 @@ Keyword-only arguments:
 Returns
 [DescribeContactFlowModuleResponseTypeDef](./type_defs.md#describecontactflowmoduleresponsetypedef).
 
+<a id="describe_hours_of_operation"></a>
+
 ### describe_hours_of_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1065,6 +1156,8 @@ Keyword-only arguments:
 Returns
 [DescribeHoursOfOperationResponseTypeDef](./type_defs.md#describehoursofoperationresponsetypedef).
 
+<a id="describe_instance"></a>
+
 ### describe_instance
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1083,6 +1176,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstanceResponseTypeDef](./type_defs.md#describeinstanceresponsetypedef).
+
+<a id="describe_instance_attribute"></a>
 
 ### describe_instance_attribute
 
@@ -1106,6 +1201,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeInstanceAttributeResponseTypeDef](./type_defs.md#describeinstanceattributeresponsetypedef).
+
+<a id="describe_instance_storage_config"></a>
 
 ### describe_instance_storage_config
 
@@ -1131,6 +1228,8 @@ Keyword-only arguments:
 Returns
 [DescribeInstanceStorageConfigResponseTypeDef](./type_defs.md#describeinstancestorageconfigresponsetypedef).
 
+<a id="describe_queue"></a>
+
 ### describe_queue
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1150,6 +1249,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeQueueResponseTypeDef](./type_defs.md#describequeueresponsetypedef).
+
+<a id="describe_quick_connect"></a>
 
 ### describe_quick_connect
 
@@ -1171,6 +1272,8 @@ Keyword-only arguments:
 Returns
 [DescribeQuickConnectResponseTypeDef](./type_defs.md#describequickconnectresponsetypedef).
 
+<a id="describe_routing_profile"></a>
+
 ### describe_routing_profile
 
 Describes the specified routing profile.
@@ -1190,6 +1293,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeRoutingProfileResponseTypeDef](./type_defs.md#describeroutingprofileresponsetypedef).
+
+<a id="describe_security_profile"></a>
 
 ### describe_security_profile
 
@@ -1212,6 +1317,8 @@ Keyword-only arguments:
 Returns
 [DescribeSecurityProfileResponseTypeDef](./type_defs.md#describesecurityprofileresponsetypedef).
 
+<a id="describe_user"></a>
+
 ### describe_user
 
 Describes the specified user account.
@@ -1231,6 +1338,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+
+<a id="describe_user_hierarchy_group"></a>
 
 ### describe_user_hierarchy_group
 
@@ -1253,6 +1362,8 @@ Keyword-only arguments:
 Returns
 [DescribeUserHierarchyGroupResponseTypeDef](./type_defs.md#describeuserhierarchygroupresponsetypedef).
 
+<a id="describe_user_hierarchy_structure"></a>
+
 ### describe_user_hierarchy_structure
 
 Describes the hierarchy structure of the specified Amazon Connect instance.
@@ -1272,6 +1383,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserHierarchyStructureResponseTypeDef](./type_defs.md#describeuserhierarchystructureresponsetypedef).
+
+<a id="describe_vocabulary"></a>
 
 ### describe_vocabulary
 
@@ -1293,6 +1406,8 @@ Keyword-only arguments:
 Returns
 [DescribeVocabularyResponseTypeDef](./type_defs.md#describevocabularyresponsetypedef).
 
+<a id="disassociate_approved_origin"></a>
+
 ### disassociate_approved_origin
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1311,6 +1426,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `Origin`: `str` *(required)*
 
+<a id="disassociate_bot"></a>
+
 ### disassociate_bot
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1328,6 +1445,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `LexBot`: [LexBotTypeDef](./type_defs.md#lexbottypedef)
 - `LexV2Bot`: [LexV2BotTypeDef](./type_defs.md#lexv2bottypedef)
+
+<a id="disassociate_instance_storage_config"></a>
 
 ### disassociate_instance_storage_config
 
@@ -1350,6 +1469,8 @@ Keyword-only arguments:
   [InstanceStorageResourceTypeType](./literals.md#instancestorageresourcetypetype)
   *(required)*
 
+<a id="disassociate_lambda_function"></a>
+
 ### disassociate_lambda_function
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1367,6 +1488,8 @@ Keyword-only arguments:
 
 - `InstanceId`: `str` *(required)*
 - `FunctionArn`: `str` *(required)*
+
+<a id="disassociate_lex_bot"></a>
 
 ### disassociate_lex_bot
 
@@ -1386,6 +1509,8 @@ Keyword-only arguments:
 - `BotName`: `str` *(required)*
 - `LexRegion`: `str` *(required)*
 
+<a id="disassociate_queue_quick_connects"></a>
+
 ### disassociate_queue_quick_connects
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1404,6 +1529,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
 - `QuickConnectIds`: `Sequence`\[`str`\] *(required)*
+
+<a id="disassociate_routing_profile_queues"></a>
 
 ### disassociate_routing_profile_queues
 
@@ -1426,6 +1553,8 @@ Keyword-only arguments:
   `Sequence`\[[RoutingProfileQueueReferenceTypeDef](./type_defs.md#routingprofilequeuereferencetypedef)\]
   *(required)*
 
+<a id="disassociate_security_key"></a>
+
 ### disassociate_security_key
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1444,6 +1573,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `AssociationId`: `str` *(required)*
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1461,6 +1592,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_contact_attributes"></a>
 
 ### get_contact_attributes
 
@@ -1481,6 +1614,8 @@ Keyword-only arguments:
 
 Returns
 [GetContactAttributesResponseTypeDef](./type_defs.md#getcontactattributesresponsetypedef).
+
+<a id="get_current_metric_data"></a>
 
 ### get_current_metric_data
 
@@ -1508,6 +1643,8 @@ Keyword-only arguments:
 Returns
 [GetCurrentMetricDataResponseTypeDef](./type_defs.md#getcurrentmetricdataresponsetypedef).
 
+<a id="get_federation_token"></a>
+
 ### get_federation_token
 
 Retrieves a token for federation.
@@ -1526,6 +1663,8 @@ Keyword-only arguments:
 
 Returns
 [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
+
+<a id="get_metric_data"></a>
 
 ### get_metric_data
 
@@ -1555,6 +1694,8 @@ Keyword-only arguments:
 Returns
 [GetMetricDataResponseTypeDef](./type_defs.md#getmetricdataresponsetypedef).
 
+<a id="list_agent_statuses"></a>
+
 ### list_agent_statuses
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1578,6 +1719,8 @@ Keyword-only arguments:
 Returns
 [ListAgentStatusResponseTypeDef](./type_defs.md#listagentstatusresponsetypedef).
 
+<a id="list_approved_origins"></a>
+
 ### list_approved_origins
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1599,6 +1742,8 @@ Keyword-only arguments:
 Returns
 [ListApprovedOriginsResponseTypeDef](./type_defs.md#listapprovedoriginsresponsetypedef).
 
+<a id="list_bots"></a>
+
 ### list_bots
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1619,6 +1764,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListBotsResponseTypeDef](./type_defs.md#listbotsresponsetypedef).
+
+<a id="list_contact_flow_modules"></a>
 
 ### list_contact_flow_modules
 
@@ -1645,6 +1792,8 @@ Keyword-only arguments:
 Returns
 [ListContactFlowModulesResponseTypeDef](./type_defs.md#listcontactflowmodulesresponsetypedef).
 
+<a id="list_contact_flows"></a>
+
 ### list_contact_flows
 
 Provides information about the contact flows for the specified Amazon Connect
@@ -1668,6 +1817,8 @@ Keyword-only arguments:
 
 Returns
 [ListContactFlowsResponseTypeDef](./type_defs.md#listcontactflowsresponsetypedef).
+
+<a id="list_contact_references"></a>
 
 ### list_contact_references
 
@@ -1693,6 +1844,8 @@ Keyword-only arguments:
 Returns
 [ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef).
 
+<a id="list_default_vocabularies"></a>
+
 ### list_default_vocabularies
 
 Lists the default vocabularies for the specified Amazon Connect instance.
@@ -1717,6 +1870,8 @@ Keyword-only arguments:
 Returns
 [ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef).
 
+<a id="list_hours_of_operations"></a>
+
 ### list_hours_of_operations
 
 Provides information about the hours of operation for the specified Amazon
@@ -1739,6 +1894,8 @@ Keyword-only arguments:
 Returns
 [ListHoursOfOperationsResponseTypeDef](./type_defs.md#listhoursofoperationsresponsetypedef).
 
+<a id="list_instance_attributes"></a>
+
 ### list_instance_attributes
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1759,6 +1916,8 @@ Keyword-only arguments:
 
 Returns
 [ListInstanceAttributesResponseTypeDef](./type_defs.md#listinstanceattributesresponsetypedef).
+
+<a id="list_instance_storage_configs"></a>
 
 ### list_instance_storage_configs
 
@@ -1785,6 +1944,8 @@ Keyword-only arguments:
 Returns
 [ListInstanceStorageConfigsResponseTypeDef](./type_defs.md#listinstancestorageconfigsresponsetypedef).
 
+<a id="list_instances"></a>
+
 ### list_instances
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1804,6 +1965,8 @@ Keyword-only arguments:
 
 Returns
 [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
+
+<a id="list_integration_associations"></a>
 
 ### list_integration_associations
 
@@ -1829,6 +1992,8 @@ Keyword-only arguments:
 Returns
 [ListIntegrationAssociationsResponseTypeDef](./type_defs.md#listintegrationassociationsresponsetypedef).
 
+<a id="list_lambda_functions"></a>
+
 ### list_lambda_functions
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1850,6 +2015,8 @@ Keyword-only arguments:
 Returns
 [ListLambdaFunctionsResponseTypeDef](./type_defs.md#listlambdafunctionsresponsetypedef).
 
+<a id="list_lex_bots"></a>
+
 ### list_lex_bots
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -1870,6 +2037,8 @@ Keyword-only arguments:
 
 Returns
 [ListLexBotsResponseTypeDef](./type_defs.md#listlexbotsresponsetypedef).
+
+<a id="list_phone_numbers"></a>
 
 ### list_phone_numbers
 
@@ -1897,6 +2066,8 @@ Keyword-only arguments:
 Returns
 [ListPhoneNumbersResponseTypeDef](./type_defs.md#listphonenumbersresponsetypedef).
 
+<a id="list_prompts"></a>
+
 ### list_prompts
 
 Provides information about the prompts for the specified Amazon Connect
@@ -1918,6 +2089,8 @@ Keyword-only arguments:
 
 Returns
 [ListPromptsResponseTypeDef](./type_defs.md#listpromptsresponsetypedef).
+
+<a id="list_queue_quick_connects"></a>
 
 ### list_queue_quick_connects
 
@@ -1942,6 +2115,8 @@ Keyword-only arguments:
 Returns
 [ListQueueQuickConnectsResponseTypeDef](./type_defs.md#listqueuequickconnectsresponsetypedef).
 
+<a id="list_queues"></a>
+
 ### list_queues
 
 Provides information about the queues for the specified Amazon Connect
@@ -1963,6 +2138,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListQueuesResponseTypeDef](./type_defs.md#listqueuesresponsetypedef).
+
+<a id="list_quick_connects"></a>
 
 ### list_quick_connects
 
@@ -1988,6 +2165,8 @@ Keyword-only arguments:
 Returns
 [ListQuickConnectsResponseTypeDef](./type_defs.md#listquickconnectsresponsetypedef).
 
+<a id="list_routing_profile_queues"></a>
+
 ### list_routing_profile_queues
 
 Lists the queues associated with a routing profile.
@@ -2011,6 +2190,8 @@ Keyword-only arguments:
 Returns
 [ListRoutingProfileQueuesResponseTypeDef](./type_defs.md#listroutingprofilequeuesresponsetypedef).
 
+<a id="list_routing_profiles"></a>
+
 ### list_routing_profiles
 
 Provides summary information about the routing profiles for the specified
@@ -2033,6 +2214,8 @@ Keyword-only arguments:
 Returns
 [ListRoutingProfilesResponseTypeDef](./type_defs.md#listroutingprofilesresponsetypedef).
 
+<a id="list_security_keys"></a>
+
 ### list_security_keys
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -2053,6 +2236,8 @@ Keyword-only arguments:
 
 Returns
 [ListSecurityKeysResponseTypeDef](./type_defs.md#listsecuritykeysresponsetypedef).
+
+<a id="list_security_profile_permissions"></a>
 
 ### list_security_profile_permissions
 
@@ -2077,6 +2262,8 @@ Keyword-only arguments:
 Returns
 [ListSecurityProfilePermissionsResponseTypeDef](./type_defs.md#listsecurityprofilepermissionsresponsetypedef).
 
+<a id="list_security_profiles"></a>
+
 ### list_security_profiles
 
 Provides summary information about the security profiles for the specified
@@ -2099,6 +2286,8 @@ Keyword-only arguments:
 Returns
 [ListSecurityProfilesResponseTypeDef](./type_defs.md#listsecurityprofilesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags for the specified resource.
@@ -2117,6 +2306,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_use_cases"></a>
 
 ### list_use_cases
 
@@ -2139,6 +2330,8 @@ Keyword-only arguments:
 
 Returns
 [ListUseCasesResponseTypeDef](./type_defs.md#listusecasesresponsetypedef).
+
+<a id="list_user_hierarchy_groups"></a>
 
 ### list_user_hierarchy_groups
 
@@ -2163,6 +2356,8 @@ Keyword-only arguments:
 Returns
 [ListUserHierarchyGroupsResponseTypeDef](./type_defs.md#listuserhierarchygroupsresponsetypedef).
 
+<a id="list_users"></a>
+
 ### list_users
 
 Provides summary information about the users for the specified Amazon Connect
@@ -2184,6 +2379,8 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
+<a id="resume_contact_recording"></a>
+
 ### resume_contact_recording
 
 When a contact is being recorded, and the recording has been suspended using
@@ -2204,6 +2401,8 @@ Keyword-only arguments:
 - `InitialContactId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="search_vocabularies"></a>
 
 ### search_vocabularies
 
@@ -2230,6 +2429,8 @@ Keyword-only arguments:
 
 Returns
 [SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef).
+
+<a id="start_chat_contact"></a>
 
 ### start_chat_contact
 
@@ -2258,6 +2459,8 @@ Keyword-only arguments:
 Returns
 [StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef).
 
+<a id="start_contact_recording"></a>
+
 ### start_contact_recording
 
 Starts recording the contact when the agent joins the call.
@@ -2280,6 +2483,8 @@ Keyword-only arguments:
   *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_contact_streaming"></a>
 
 ### start_contact_streaming
 
@@ -2304,6 +2509,8 @@ Keyword-only arguments:
 
 Returns
 [StartContactStreamingResponseTypeDef](./type_defs.md#startcontactstreamingresponsetypedef).
+
+<a id="start_outbound_voice_contact"></a>
 
 ### start_outbound_voice_contact
 
@@ -2335,6 +2542,8 @@ Keyword-only arguments:
 Returns
 [StartOutboundVoiceContactResponseTypeDef](./type_defs.md#startoutboundvoicecontactresponsetypedef).
 
+<a id="start_task_contact"></a>
+
 ### start_task_contact
 
 Initiates a contact flow to start a new task.
@@ -2363,6 +2572,8 @@ Keyword-only arguments:
 Returns
 [StartTaskContactResponseTypeDef](./type_defs.md#starttaskcontactresponsetypedef).
 
+<a id="stop_contact"></a>
+
 ### stop_contact
 
 Ends the specified contact.
@@ -2381,6 +2592,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="stop_contact_recording"></a>
 
 ### stop_contact_recording
 
@@ -2402,6 +2615,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="stop_contact_streaming"></a>
+
 ### stop_contact_streaming
 
 Ends message streaming on a specified contact.
@@ -2421,6 +2636,8 @@ Keyword-only arguments:
 - `StreamingId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="suspend_contact_recording"></a>
 
 ### suspend_contact_recording
 
@@ -2443,6 +2660,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds the specified tags to the specified resource.
@@ -2460,6 +2679,8 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes the specified tags from the specified resource.
@@ -2476,6 +2697,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_agent_status"></a>
 
 ### update_agent_status
 
@@ -2498,6 +2721,8 @@ Keyword-only arguments:
 - `State`: [AgentStatusStateType](./literals.md#agentstatusstatetype)
 - `DisplayOrder`: `int`
 - `ResetOrderNumber`: `bool`
+
+<a id="update_contact"></a>
 
 ### update_contact
 
@@ -2522,6 +2747,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_contact_attributes"></a>
+
 ### update_contact_attributes
 
 Creates or updates user-defined contact attributes associated with the
@@ -2544,6 +2771,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_contact_flow_content"></a>
+
 ### update_contact_flow_content
 
 Updates the specified contact flow.
@@ -2562,6 +2791,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `ContactFlowId`: `str` *(required)*
 - `Content`: `str` *(required)*
+
+<a id="update_contact_flow_metadata"></a>
 
 ### update_contact_flow_metadata
 
@@ -2585,6 +2816,8 @@ Keyword-only arguments:
 - `ContactFlowState`:
   [ContactFlowStateType](./literals.md#contactflowstatetype)
 
+<a id="update_contact_flow_module_content"></a>
+
 ### update_contact_flow_module_content
 
 Updates specified contact flow module for the specified Amazon Connect
@@ -2606,6 +2839,8 @@ Keyword-only arguments:
 - `Content`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_contact_flow_module_metadata"></a>
 
 ### update_contact_flow_module_metadata
 
@@ -2631,6 +2866,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_contact_flow_name"></a>
+
 ### update_contact_flow_name
 
 The name of the contact flow.
@@ -2649,6 +2886,8 @@ Keyword-only arguments:
 - `ContactFlowId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="update_contact_schedule"></a>
 
 ### update_contact_schedule
 
@@ -2669,6 +2908,8 @@ Keyword-only arguments:
 - `ScheduledTime`: `Union`\[`datetime`, `str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_hours_of_operation"></a>
 
 ### update_hours_of_operation
 
@@ -2693,6 +2934,8 @@ Keyword-only arguments:
 - `Config`:
   `Sequence`\[[HoursOfOperationConfigTypeDef](./type_defs.md#hoursofoperationconfigtypedef)\]
 
+<a id="update_instance_attribute"></a>
+
 ### update_instance_attribute
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -2713,6 +2956,8 @@ Keyword-only arguments:
   [InstanceAttributeTypeType](./literals.md#instanceattributetypetype)
   *(required)*
 - `Value`: `str` *(required)*
+
+<a id="update_instance_storage_config"></a>
 
 ### update_instance_storage_config
 
@@ -2738,6 +2983,8 @@ Keyword-only arguments:
   [InstanceStorageConfigTypeDef](./type_defs.md#instancestorageconfigtypedef)
   *(required)*
 
+<a id="update_queue_hours_of_operation"></a>
+
 ### update_queue_hours_of_operation
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -2756,6 +3003,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
 - `HoursOfOperationId`: `str` *(required)*
+
+<a id="update_queue_max_contacts"></a>
 
 ### update_queue_max_contacts
 
@@ -2776,6 +3025,8 @@ Keyword-only arguments:
 - `QueueId`: `str` *(required)*
 - `MaxContacts`: `int`
 
+<a id="update_queue_name"></a>
+
 ### update_queue_name
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -2794,6 +3045,8 @@ Keyword-only arguments:
 - `QueueId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="update_queue_outbound_caller_config"></a>
 
 ### update_queue_outbound_caller_config
 
@@ -2816,6 +3069,8 @@ Keyword-only arguments:
   [OutboundCallerConfigTypeDef](./type_defs.md#outboundcallerconfigtypedef)
   *(required)*
 
+<a id="update_queue_status"></a>
+
 ### update_queue_status
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -2833,6 +3088,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `QueueId`: `str` *(required)*
 - `Status`: [QueueStatusType](./literals.md#queuestatustype) *(required)*
+
+<a id="update_quick_connect_config"></a>
 
 ### update_quick_connect_config
 
@@ -2855,6 +3112,8 @@ Keyword-only arguments:
   [QuickConnectConfigTypeDef](./type_defs.md#quickconnectconfigtypedef)
   *(required)*
 
+<a id="update_quick_connect_name"></a>
+
 ### update_quick_connect_name
 
 Updates the name and description of a quick connect.
@@ -2874,6 +3133,8 @@ Keyword-only arguments:
 - `QuickConnectId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="update_routing_profile_concurrency"></a>
 
 ### update_routing_profile_concurrency
 
@@ -2897,6 +3158,8 @@ Keyword-only arguments:
   `Sequence`\[[MediaConcurrencyTypeDef](./type_defs.md#mediaconcurrencytypedef)\]
   *(required)*
 
+<a id="update_routing_profile_default_outbound_queue"></a>
+
 ### update_routing_profile_default_outbound_queue
 
 Updates the default outbound queue of a routing profile.
@@ -2915,6 +3178,8 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `RoutingProfileId`: `str` *(required)*
 - `DefaultOutboundQueueId`: `str` *(required)*
+
+<a id="update_routing_profile_name"></a>
 
 ### update_routing_profile_name
 
@@ -2935,6 +3200,8 @@ Keyword-only arguments:
 - `RoutingProfileId`: `str` *(required)*
 - `Name`: `str`
 - `Description`: `str`
+
+<a id="update_routing_profile_queues"></a>
 
 ### update_routing_profile_queues
 
@@ -2957,6 +3224,8 @@ Keyword-only arguments:
   `Sequence`\[[RoutingProfileQueueConfigTypeDef](./type_defs.md#routingprofilequeueconfigtypedef)\]
   *(required)*
 
+<a id="update_security_profile"></a>
+
 ### update_security_profile
 
 This API is in preview release for Amazon Connect and is subject to change.
@@ -2976,6 +3245,8 @@ Keyword-only arguments:
 - `Description`: `str`
 - `Permissions`: `Sequence`\[`str`\]
 
+<a id="update_user_hierarchy"></a>
+
 ### update_user_hierarchy
 
 Assigns the specified hierarchy group to the specified user.
@@ -2993,6 +3264,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 - `HierarchyGroupId`: `str`
+
+<a id="update_user_hierarchy_group_name"></a>
 
 ### update_user_hierarchy_group_name
 
@@ -3012,6 +3285,8 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `HierarchyGroupId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+<a id="update_user_hierarchy_structure"></a>
 
 ### update_user_hierarchy_structure
 
@@ -3034,6 +3309,8 @@ Keyword-only arguments:
   *(required)*
 - `InstanceId`: `str` *(required)*
 
+<a id="update_user_identity_info"></a>
+
 ### update_user_identity_info
 
 Updates the identity information for the specified user.
@@ -3055,6 +3332,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 
+<a id="update_user_phone_config"></a>
+
 ### update_user_phone_config
 
 Updates the phone configuration settings for the specified user.
@@ -3073,6 +3352,8 @@ Keyword-only arguments:
   [UserPhoneConfigTypeDef](./type_defs.md#userphoneconfigtypedef) *(required)*
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+<a id="update_user_routing_profile"></a>
 
 ### update_user_routing_profile
 
@@ -3093,6 +3374,8 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
 
+<a id="update_user_security_profiles"></a>
+
 ### update_user_security_profiles
 
 Assigns the specified security profiles to the specified user.
@@ -3111,6 +3394,8 @@ Keyword-only arguments:
 - `SecurityProfileIds`: `Sequence`\[`str`\] *(required)*
 - `UserId`: `str` *(required)*
 - `InstanceId`: `str` *(required)*
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

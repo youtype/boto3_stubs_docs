@@ -1,3 +1,5 @@
+<a id="worklinkclient-for-boto3-worklink-module"></a>
+
 # WorkLinkClient for boto3 WorkLink module
 
 > [Index](..) > [WorkLink](.) > WorkLinkClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [WorkLink](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink)
 type annotations stubs module
-[mypy_boto3_worklink](https://pypi.org/project/mypy-boto3-worklink/).
+[mypy-boto3-worklink](https://pypi.org/project/mypy-boto3-worklink/).
 
 - [WorkLinkClient for boto3 WorkLink module](#worklinkclient-for-boto3-worklink-module)
   - [WorkLinkClient](#worklinkclient)
@@ -48,6 +50,8 @@ type annotations stubs module
     - [update_fleet_metadata](#update_fleet_metadata)
     - [update_identity_provider_configuration](#update_identity_provider_configuration)
 
+<a id="worklinkclient"></a>
+
 ## WorkLinkClient
 
 Type annotations for `boto3.client("worklink")`
@@ -55,14 +59,17 @@ Type annotations for `boto3.client("worklink")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_worklink.client import WorkLinkClient
 
 def get_worklink_client() -> WorkLinkClient:
-    return boto3.client("worklink")
+    return Session().client("worklink")
 ```
 
 Boto3 documentation:
 [WorkLink.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -86,7 +93,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -98,6 +109,8 @@ Boto3 documentation:
 [WorkLink.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/worklink.html#WorkLink.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_domain"></a>
 
 ### associate_domain
 
@@ -119,6 +132,8 @@ Keyword-only arguments:
 - `DisplayName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_website_authorization_provider"></a>
 
 ### associate_website_authorization_provider
 
@@ -144,6 +159,8 @@ Keyword-only arguments:
 Returns
 [AssociateWebsiteAuthorizationProviderResponseTypeDef](./type_defs.md#associatewebsiteauthorizationproviderresponsetypedef).
 
+<a id="associate_website_certificate_authority"></a>
+
 ### associate_website_certificate_authority
 
 Imports the root certificate of a certificate authority (CA) used to obtain TLS
@@ -167,6 +184,8 @@ Keyword-only arguments:
 Returns
 [AssociateWebsiteCertificateAuthorityResponseTypeDef](./type_defs.md#associatewebsitecertificateauthorityresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -181,6 +200,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_fleet"></a>
 
 ### create_fleet
 
@@ -204,6 +225,8 @@ Keyword-only arguments:
 Returns
 [CreateFleetResponseTypeDef](./type_defs.md#createfleetresponsetypedef).
 
+<a id="delete_fleet"></a>
+
 ### delete_fleet
 
 Deletes a fleet.
@@ -221,6 +244,8 @@ Keyword-only arguments:
 - `FleetArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_audit_stream_configuration"></a>
 
 ### describe_audit_stream_configuration
 
@@ -243,6 +268,8 @@ Keyword-only arguments:
 Returns
 [DescribeAuditStreamConfigurationResponseTypeDef](./type_defs.md#describeauditstreamconfigurationresponsetypedef).
 
+<a id="describe_company_network_configuration"></a>
+
 ### describe_company_network_configuration
 
 Describes the networking configuration to access the internal websites
@@ -264,6 +291,8 @@ Keyword-only arguments:
 Returns
 [DescribeCompanyNetworkConfigurationResponseTypeDef](./type_defs.md#describecompanynetworkconfigurationresponsetypedef).
 
+<a id="describe_device"></a>
+
 ### describe_device
 
 Provides information about a user's device.
@@ -283,6 +312,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
+
+<a id="describe_device_policy_configuration"></a>
 
 ### describe_device_policy_configuration
 
@@ -304,6 +335,8 @@ Keyword-only arguments:
 Returns
 [DescribeDevicePolicyConfigurationResponseTypeDef](./type_defs.md#describedevicepolicyconfigurationresponsetypedef).
 
+<a id="describe_domain"></a>
+
 ### describe_domain
 
 Provides information about the domain.
@@ -323,6 +356,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
+
+<a id="describe_fleet_metadata"></a>
 
 ### describe_fleet_metadata
 
@@ -344,6 +379,8 @@ Keyword-only arguments:
 Returns
 [DescribeFleetMetadataResponseTypeDef](./type_defs.md#describefleetmetadataresponsetypedef).
 
+<a id="describe_identity_provider_configuration"></a>
+
 ### describe_identity_provider_configuration
 
 Describes the identity provider configuration of the specified fleet.
@@ -363,6 +400,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeIdentityProviderConfigurationResponseTypeDef](./type_defs.md#describeidentityproviderconfigurationresponsetypedef).
+
+<a id="describe_website_certificate_authority"></a>
 
 ### describe_website_certificate_authority
 
@@ -385,6 +424,8 @@ Keyword-only arguments:
 Returns
 [DescribeWebsiteCertificateAuthorityResponseTypeDef](./type_defs.md#describewebsitecertificateauthorityresponsetypedef).
 
+<a id="disassociate_domain"></a>
+
 ### disassociate_domain
 
 Disassociates a domain from Amazon WorkLink.
@@ -403,6 +444,8 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="disassociate_website_authorization_provider"></a>
 
 ### disassociate_website_authorization_provider
 
@@ -424,6 +467,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_website_certificate_authority"></a>
+
 ### disassociate_website_certificate_authority
 
 Removes a certificate authority (CA).
@@ -444,6 +489,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -461,6 +508,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_devices"></a>
 
 ### list_devices
 
@@ -483,6 +532,8 @@ Keyword-only arguments:
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
+<a id="list_domains"></a>
+
 ### list_domains
 
 Retrieves a list of domains associated to a specified fleet.
@@ -504,6 +555,8 @@ Keyword-only arguments:
 Returns
 [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
+<a id="list_fleets"></a>
+
 ### list_fleets
 
 Retrieves a list of fleets for the current account and Region.
@@ -523,6 +576,8 @@ Keyword-only arguments:
 
 Returns [ListFleetsResponseTypeDef](./type_defs.md#listfleetsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Retrieves a list of tags for the specified resource.
@@ -541,6 +596,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_website_authorization_providers"></a>
 
 ### list_website_authorization_providers
 
@@ -565,6 +622,8 @@ Keyword-only arguments:
 Returns
 [ListWebsiteAuthorizationProvidersResponseTypeDef](./type_defs.md#listwebsiteauthorizationprovidersresponsetypedef).
 
+<a id="list_website_certificate_authorities"></a>
+
 ### list_website_certificate_authorities
 
 Retrieves a list of certificate authorities added for the current account and
@@ -588,6 +647,8 @@ Keyword-only arguments:
 Returns
 [ListWebsiteCertificateAuthoritiesResponseTypeDef](./type_defs.md#listwebsitecertificateauthoritiesresponsetypedef).
 
+<a id="restore_domain_access"></a>
+
 ### restore_domain_access
 
 Moves a domain to ACTIVE status if it was in the INACTIVE status.
@@ -606,6 +667,8 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="revoke_domain_access"></a>
 
 ### revoke_domain_access
 
@@ -626,6 +689,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="sign_out_user"></a>
+
 ### sign_out_user
 
 Signs the user out from all of their devices.
@@ -644,6 +709,8 @@ Keyword-only arguments:
 - `Username`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_resource"></a>
 
 ### tag_resource
 
@@ -665,6 +732,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from the specified resource.
@@ -683,6 +752,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_audit_stream_configuration"></a>
 
 ### update_audit_stream_configuration
 
@@ -703,6 +774,8 @@ Keyword-only arguments:
 - `AuditStreamArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_company_network_configuration"></a>
 
 ### update_company_network_configuration
 
@@ -726,6 +799,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_device_policy_configuration"></a>
+
 ### update_device_policy_configuration
 
 Updates the device policy configuration for the fleet.
@@ -745,6 +820,8 @@ Keyword-only arguments:
 - `DeviceCaCertificate`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_domain_metadata"></a>
 
 ### update_domain_metadata
 
@@ -766,6 +843,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_fleet_metadata"></a>
+
 ### update_fleet_metadata
 
 Updates fleet metadata, such as DisplayName.
@@ -785,6 +864,8 @@ Keyword-only arguments:
 - `OptimizeForEndUserLocation`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_identity_provider_configuration"></a>
 
 ### update_identity_provider_configuration
 

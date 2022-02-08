@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-marketplacemetering-module"></a>
+
 # Literals for boto3 MarketplaceMetering module
 
 > [Index](..) > [MarketplaceMetering](.) > Literals
@@ -5,11 +7,13 @@
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
-[mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
+[mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [Literals for boto3 MarketplaceMetering module](#literals-for-boto3-marketplacemetering-module)
   - [UsageRecordResultStatusType](#usagerecordresultstatustype)
   - [ServiceName](#servicename)
+
+<a id="usagerecordresultstatustype"></a>
 
 ## UsageRecordResultStatusType
 
@@ -22,6 +26,8 @@ Values:
 - `CustomerNotSubscribed`
 - `DuplicateRecord`
 - `Success`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

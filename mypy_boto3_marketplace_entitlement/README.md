@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-marketplaceentitlementservice-module"></a>
+
 # Type annotations for boto3 MarketplaceEntitlementService module
 
 > [Index](..) > MarketplaceEntitlementService
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module
-[mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
+[mypy-boto3-marketplace-entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[marketplace-entitlement]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[marketplace-entitlement]'
+
+# standalone installation
 pip install mypy-boto3-marketplace-entitlement
 ```
 
@@ -18,6 +28,8 @@ pip install mypy-boto3-marketplace-entitlement
   - [Paginators](#paginators)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="marketplaceentitlementserviceclient"></a>
 
 ## MarketplaceEntitlementServiceClient
 
@@ -30,6 +42,8 @@ Can be used directly:
 from mypy_boto3_marketplace_entitlement.client import MarketplaceEntitlementServiceClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -37,6 +51,8 @@ from mypy_boto3_marketplace_entitlement.client import MarketplaceEntitlementServ
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_entitlements](./client.md#get_entitlements)
 - [get_paginator](./client.md#get_paginator)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -47,6 +63,8 @@ MarketplaceEntitlementServiceClient [exceptions](./client.md#exceptions)
 - InvalidParameterException
 - ThrottlingException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -55,10 +73,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_marketplace_entitlement.paginators import GetEntitlementsPaginator, ...
+from mypy_boto3_marketplace_entitlement.paginator import GetEntitlementsPaginator, ...
 ```
 
 - [GetEntitlementsPaginator](./paginators.md#getentitlementspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -74,6 +94,8 @@ from mypy_boto3_marketplace_entitlement.literals import GetEntitlementFilterName
 - [GetEntitlementsPaginatorName](./literals.md#getentitlementspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

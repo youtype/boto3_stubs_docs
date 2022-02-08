@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-mgn-module"></a>
+
 # Type annotations for boto3 mgn module
 
 > [Index](..) > mgn
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [mgn](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgn.html#mgn)
 type annotations stubs module
-[mypy_boto3_mgn](https://pypi.org/project/mypy-boto3-mgn/).
+[mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[mgn]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[mgn]'
+
+# standalone installation
 pip install mypy-boto3-mgn
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-mgn
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="mgnclient"></a>
+
 ## mgnClient
 
 Type annotations for `boto3.client("mgn")` as [mgnClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_mgn.client import mgnClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -65,6 +79,8 @@ from mypy_boto3_mgn.client import mgnClient
 - [update_replication_configuration_template](./client.md#update_replication_configuration_template)
 - [update_source_server_replication_type](./client.md#update_source_server_replication_type)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 mgnClient [exceptions](./client.md#exceptions)
@@ -79,6 +95,8 @@ mgnClient [exceptions](./client.md#exceptions)
 - UninitializedAccountException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -87,7 +105,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.paginators import DescribeJobLogItemsPaginator, ...
+from mypy_boto3_mgn.paginator import DescribeJobLogItemsPaginator, ...
 ```
 
 - [DescribeJobLogItemsPaginator](./paginators.md#describejoblogitemspaginator)
@@ -95,6 +113,8 @@ from mypy_boto3_mgn.paginators import DescribeJobLogItemsPaginator, ...
 - [DescribeReplicationConfigurationTemplatesPaginator](./paginators.md#describereplicationconfigurationtemplatespaginator)
 - [DescribeSourceServersPaginator](./paginators.md#describesourceserverspaginator)
 - [DescribeVcenterClientsPaginator](./paginators.md#describevcenterclientspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -132,6 +152,8 @@ from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecy
 - [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

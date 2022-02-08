@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-iotanalytics-module"></a>
+
 # Paginators for boto3 IoTAnalytics module
 
 > [Index](..) > [IoTAnalytics](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [IoTAnalytics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotanalytics.html#IoTAnalytics)
 type annotations stubs module
-[mypy_boto3_iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
+[mypy-boto3-iotanalytics](https://pypi.org/project/mypy-boto3-iotanalytics/).
 
 - [Paginators for boto3 IoTAnalytics module](#paginators-for-boto3-iotanalytics-module)
   - [ListChannelsPaginator](#listchannelspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListDatasetsPaginator](#listdatasetspaginator)
   - [ListDatastoresPaginator](#listdatastorespaginator)
   - [ListPipelinesPaginator](#listpipelinespaginator)
+
+<a id="listchannelspaginator"></a>
 
 ## ListChannelsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotanalytics.paginator import ListChannelsPaginator
 
 def get_list_channels_paginator() -> ListChannelsPaginator:
-    return boto3.client("iotanalytics").get_paginator("list_channels")
+    return Session().client("iotanalytics").get_paginator("list_channels")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListChannelsPaginator.paginate` method:
 `ListChannelsPaginator.paginate` returns
 `_PageIterator`\[[ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef)\].
 
+<a id="listdatasetcontentspaginator"></a>
+
 ## ListDatasetContentsPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotanalytics.paginator import ListDatasetContentsPaginator
 
 def get_list_dataset_contents_paginator() -> ListDatasetContentsPaginator:
-    return boto3.client("iotanalytics").get_paginator("list_dataset_contents")
+    return Session().client("iotanalytics").get_paginator("list_dataset_contents")
 ```
 
 Boto3 documentation:
@@ -67,6 +77,8 @@ Arguments for `ListDatasetContentsPaginator.paginate` method:
 `ListDatasetContentsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef)\].
 
+<a id="listdatasetspaginator"></a>
+
 ## ListDatasetsPaginator
 
 Type annotations for
@@ -75,10 +87,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotanalytics.paginator import ListDatasetsPaginator
 
 def get_list_datasets_paginator() -> ListDatasetsPaginator:
-    return boto3.client("iotanalytics").get_paginator("list_datasets")
+    return Session().client("iotanalytics").get_paginator("list_datasets")
 ```
 
 Boto3 documentation:
@@ -92,6 +106,8 @@ Arguments for `ListDatasetsPaginator.paginate` method:
 `ListDatasetsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
 
+<a id="listdatastorespaginator"></a>
+
 ## ListDatastoresPaginator
 
 Type annotations for
@@ -100,10 +116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotanalytics.paginator import ListDatastoresPaginator
 
 def get_list_datastores_paginator() -> ListDatastoresPaginator:
-    return boto3.client("iotanalytics").get_paginator("list_datastores")
+    return Session().client("iotanalytics").get_paginator("list_datastores")
 ```
 
 Boto3 documentation:
@@ -117,6 +135,8 @@ Arguments for `ListDatastoresPaginator.paginate` method:
 `ListDatastoresPaginator.paginate` returns
 `_PageIterator`\[[ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef)\].
 
+<a id="listpipelinespaginator"></a>
+
 ## ListPipelinesPaginator
 
 Type annotations for
@@ -125,10 +145,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_iotanalytics.paginator import ListPipelinesPaginator
 
 def get_list_pipelines_paginator() -> ListPipelinesPaginator:
-    return boto3.client("iotanalytics").get_paginator("list_pipelines")
+    return Session().client("iotanalytics").get_paginator("list_pipelines")
 ```
 
 Boto3 documentation:

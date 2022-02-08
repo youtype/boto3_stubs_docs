@@ -1,3 +1,5 @@
+<a id="marketplacemeteringclient-for-boto3-marketplacemetering-module"></a>
+
 # MarketplaceMeteringClient for boto3 MarketplaceMetering module
 
 > [Index](..) > [MarketplaceMetering](.) > MarketplaceMeteringClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MarketplaceMetering](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering)
 type annotations stubs module
-[mypy_boto3_meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
+[mypy-boto3-meteringmarketplace](https://pypi.org/project/mypy-boto3-meteringmarketplace/).
 
 - [MarketplaceMeteringClient for boto3 MarketplaceMetering module](#marketplacemeteringclient-for-boto3-marketplacemetering-module)
   - [MarketplaceMeteringClient](#marketplacemeteringclient)
@@ -19,6 +21,8 @@ type annotations stubs module
     - [register_usage](#register_usage)
     - [resolve_customer](#resolve_customer)
 
+<a id="marketplacemeteringclient"></a>
+
 ## MarketplaceMeteringClient
 
 Type annotations for `boto3.client("meteringmarketplace")`
@@ -26,14 +30,17 @@ Type annotations for `boto3.client("meteringmarketplace")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_meteringmarketplace.client import MarketplaceMeteringClient
 
 def get_meteringmarketplace_client() -> MarketplaceMeteringClient:
-    return boto3.client("meteringmarketplace")
+    return Session().client("meteringmarketplace")
 ```
 
 Boto3 documentation:
 [MarketplaceMetering.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -68,7 +75,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.TimestampOutOfBoundsException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -80,6 +91,8 @@ Boto3 documentation:
 [MarketplaceMetering.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/meteringmarketplace.html#MarketplaceMetering.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_meter_usage"></a>
 
 ### batch_meter_usage
 
@@ -105,6 +118,8 @@ Keyword-only arguments:
 Returns
 [BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -119,6 +134,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -138,6 +155,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="meter_usage"></a>
 
 ### meter_usage
 
@@ -163,6 +182,8 @@ Keyword-only arguments:
 
 Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
 
+<a id="register_usage"></a>
+
 ### register_usage
 
 Paid container software products sold through AWS Marketplace must integrate
@@ -186,6 +207,8 @@ Keyword-only arguments:
 
 Returns
 [RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef).
+
+<a id="resolve_customer"></a>
 
 ### resolve_customer
 

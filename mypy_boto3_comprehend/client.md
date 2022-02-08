@@ -1,3 +1,5 @@
+<a id="comprehendclient-for-boto3-comprehend-module"></a>
+
 # ComprehendClient for boto3 Comprehend module
 
 > [Index](..) > [Comprehend](.) > ComprehendClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Comprehend](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend)
 type annotations stubs module
-[mypy_boto3_comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
+[mypy-boto3-comprehend](https://pypi.org/project/mypy-boto3-comprehend/).
 
 - [ComprehendClient for boto3 Comprehend module](#comprehendclient-for-boto3-comprehend-module)
   - [ComprehendClient](#comprehendclient)
@@ -83,6 +85,8 @@ type annotations stubs module
     - [update_endpoint](#update_endpoint)
     - [get_paginator](#get_paginator)
 
+<a id="comprehendclient"></a>
+
 ## ComprehendClient
 
 Type annotations for `boto3.client("comprehend")`
@@ -90,14 +94,17 @@ Type annotations for `boto3.client("comprehend")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_comprehend.client import ComprehendClient
 
 def get_comprehend_client() -> ComprehendClient:
-    return boto3.client("comprehend")
+    return Session().client("comprehend")
 ```
 
 Boto3 documentation:
 [Comprehend.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -131,7 +138,11 @@ Exceptions:
 - `Exceptions.TooManyTagsException`
 - `Exceptions.UnsupportedLanguageException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -143,6 +154,8 @@ Boto3 documentation:
 [Comprehend.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_detect_dominant_language"></a>
 
 ### batch_detect_dominant_language
 
@@ -163,6 +176,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDetectDominantLanguageResponseTypeDef](./type_defs.md#batchdetectdominantlanguageresponsetypedef).
+
+<a id="batch_detect_entities"></a>
 
 ### batch_detect_entities
 
@@ -186,6 +201,8 @@ Keyword-only arguments:
 Returns
 [BatchDetectEntitiesResponseTypeDef](./type_defs.md#batchdetectentitiesresponsetypedef).
 
+<a id="batch_detect_key_phrases"></a>
+
 ### batch_detect_key_phrases
 
 Detects the key noun phrases found in a batch of documents.
@@ -207,6 +224,8 @@ Keyword-only arguments:
 
 Returns
 [BatchDetectKeyPhrasesResponseTypeDef](./type_defs.md#batchdetectkeyphrasesresponsetypedef).
+
+<a id="batch_detect_sentiment"></a>
 
 ### batch_detect_sentiment
 
@@ -231,6 +250,8 @@ Keyword-only arguments:
 Returns
 [BatchDetectSentimentResponseTypeDef](./type_defs.md#batchdetectsentimentresponsetypedef).
 
+<a id="batch_detect_syntax"></a>
+
 ### batch_detect_syntax
 
 Inspects the text of a batch of documents for the syntax and part of speech of
@@ -253,6 +274,8 @@ Keyword-only arguments:
 Returns
 [BatchDetectSyntaxResponseTypeDef](./type_defs.md#batchdetectsyntaxresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -267,6 +290,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="classify_document"></a>
 
 ### classify_document
 
@@ -288,6 +313,8 @@ Keyword-only arguments:
 
 Returns
 [ClassifyDocumentResponseTypeDef](./type_defs.md#classifydocumentresponsetypedef).
+
+<a id="contains_pii_entities"></a>
 
 ### contains_pii_entities
 
@@ -311,6 +338,8 @@ Keyword-only arguments:
 
 Returns
 [ContainsPiiEntitiesResponseTypeDef](./type_defs.md#containspiientitiesresponsetypedef).
+
+<a id="create_document_classifier"></a>
 
 ### create_document_classifier
 
@@ -349,6 +378,8 @@ Keyword-only arguments:
 Returns
 [CreateDocumentClassifierResponseTypeDef](./type_defs.md#createdocumentclassifierresponsetypedef).
 
+<a id="create_endpoint"></a>
+
 ### create_endpoint
 
 Creates a model-specific endpoint for synchronous inference for a previously
@@ -374,6 +405,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
+
+<a id="create_entity_recognizer"></a>
 
 ### create_entity_recognizer
 
@@ -408,6 +441,8 @@ Keyword-only arguments:
 Returns
 [CreateEntityRecognizerResponseTypeDef](./type_defs.md#createentityrecognizerresponsetypedef).
 
+<a id="delete_document_classifier"></a>
+
 ### delete_document_classifier
 
 Deletes a previously created document classifier Only those classifiers that
@@ -428,6 +463,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_endpoint"></a>
+
 ### delete_endpoint
 
 Deletes a model-specific endpoint for a previously-trained custom model.
@@ -445,6 +482,8 @@ Keyword-only arguments:
 - `EndpointArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_entity_recognizer"></a>
 
 ### delete_entity_recognizer
 
@@ -464,6 +503,8 @@ Keyword-only arguments:
 - `EntityRecognizerArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_resource_policy"></a>
 
 ### delete_resource_policy
 
@@ -485,6 +526,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_document_classification_job"></a>
+
 ### describe_document_classification_job
 
 Gets the properties associated with a document classification job.
@@ -504,6 +547,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDocumentClassificationJobResponseTypeDef](./type_defs.md#describedocumentclassificationjobresponsetypedef).
+
+<a id="describe_document_classifier"></a>
 
 ### describe_document_classifier
 
@@ -525,6 +570,8 @@ Keyword-only arguments:
 Returns
 [DescribeDocumentClassifierResponseTypeDef](./type_defs.md#describedocumentclassifierresponsetypedef).
 
+<a id="describe_dominant_language_detection_job"></a>
+
 ### describe_dominant_language_detection_job
 
 Gets the properties associated with a dominant language detection job.
@@ -545,6 +592,8 @@ Keyword-only arguments:
 Returns
 [DescribeDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#describedominantlanguagedetectionjobresponsetypedef).
 
+<a id="describe_endpoint"></a>
+
 ### describe_endpoint
 
 Gets the properties associated with a specific endpoint.
@@ -563,6 +612,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef).
+
+<a id="describe_entities_detection_job"></a>
 
 ### describe_entities_detection_job
 
@@ -583,6 +634,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEntitiesDetectionJobResponseTypeDef](./type_defs.md#describeentitiesdetectionjobresponsetypedef).
+
+<a id="describe_entity_recognizer"></a>
 
 ### describe_entity_recognizer
 
@@ -605,6 +658,8 @@ Keyword-only arguments:
 Returns
 [DescribeEntityRecognizerResponseTypeDef](./type_defs.md#describeentityrecognizerresponsetypedef).
 
+<a id="describe_events_detection_job"></a>
+
 ### describe_events_detection_job
 
 Gets the status and details of an events detection job.
@@ -624,6 +679,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeEventsDetectionJobResponseTypeDef](./type_defs.md#describeeventsdetectionjobresponsetypedef).
+
+<a id="describe_key_phrases_detection_job"></a>
 
 ### describe_key_phrases_detection_job
 
@@ -645,6 +702,8 @@ Keyword-only arguments:
 Returns
 [DescribeKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#describekeyphrasesdetectionjobresponsetypedef).
 
+<a id="describe_pii_entities_detection_job"></a>
+
 ### describe_pii_entities_detection_job
 
 Gets the properties associated with a PII entities detection job.
@@ -664,6 +723,8 @@ Keyword-only arguments:
 
 Returns
 [DescribePiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#describepiientitiesdetectionjobresponsetypedef).
+
+<a id="describe_resource_policy"></a>
 
 ### describe_resource_policy
 
@@ -686,6 +747,8 @@ Keyword-only arguments:
 Returns
 [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
 
+<a id="describe_sentiment_detection_job"></a>
+
 ### describe_sentiment_detection_job
 
 Gets the properties associated with a sentiment detection job.
@@ -705,6 +768,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeSentimentDetectionJobResponseTypeDef](./type_defs.md#describesentimentdetectionjobresponsetypedef).
+
+<a id="describe_topics_detection_job"></a>
 
 ### describe_topics_detection_job
 
@@ -726,6 +791,8 @@ Keyword-only arguments:
 Returns
 [DescribeTopicsDetectionJobResponseTypeDef](./type_defs.md#describetopicsdetectionjobresponsetypedef).
 
+<a id="detect_dominant_language"></a>
+
 ### detect_dominant_language
 
 Determines the dominant language of the input text.
@@ -745,6 +812,8 @@ Keyword-only arguments:
 
 Returns
 [DetectDominantLanguageResponseTypeDef](./type_defs.md#detectdominantlanguageresponsetypedef).
+
+<a id="detect_entities"></a>
 
 ### detect_entities
 
@@ -767,6 +836,8 @@ Keyword-only arguments:
 Returns
 [DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
 
+<a id="detect_key_phrases"></a>
+
 ### detect_key_phrases
 
 Detects the key noun phrases found in the text.
@@ -787,6 +858,8 @@ Keyword-only arguments:
 
 Returns
 [DetectKeyPhrasesResponseTypeDef](./type_defs.md#detectkeyphrasesresponsetypedef).
+
+<a id="detect_pii_entities"></a>
 
 ### detect_pii_entities
 
@@ -810,6 +883,8 @@ Keyword-only arguments:
 Returns
 [DetectPiiEntitiesResponseTypeDef](./type_defs.md#detectpiientitiesresponsetypedef).
 
+<a id="detect_sentiment"></a>
+
 ### detect_sentiment
 
 Inspects text and returns an inference of the prevailing sentiment (`POSITIVE`
@@ -832,6 +907,8 @@ Keyword-only arguments:
 Returns
 [DetectSentimentResponseTypeDef](./type_defs.md#detectsentimentresponsetypedef).
 
+<a id="detect_syntax"></a>
+
 ### detect_syntax
 
 Inspects text for syntax and the part of speech of words in the document.
@@ -853,6 +930,8 @@ Keyword-only arguments:
 Returns
 [DetectSyntaxResponseTypeDef](./type_defs.md#detectsyntaxresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -871,6 +950,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_model"></a>
 
 ### import_model
 
@@ -897,6 +978,8 @@ Keyword-only arguments:
 Returns
 [ImportModelResponseTypeDef](./type_defs.md#importmodelresponsetypedef).
 
+<a id="list_document_classification_jobs"></a>
+
 ### list_document_classification_jobs
 
 Gets a list of the documentation classification jobs that you have submitted.
@@ -919,6 +1002,8 @@ Keyword-only arguments:
 
 Returns
 [ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef).
+
+<a id="list_document_classifier_summaries"></a>
 
 ### list_document_classifier_summaries
 
@@ -943,6 +1028,8 @@ Keyword-only arguments:
 Returns
 [ListDocumentClassifierSummariesResponseTypeDef](./type_defs.md#listdocumentclassifiersummariesresponsetypedef).
 
+<a id="list_document_classifiers"></a>
+
 ### list_document_classifiers
 
 Gets a list of the document classifiers that you have created.
@@ -965,6 +1052,8 @@ Keyword-only arguments:
 
 Returns
 [ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef).
+
+<a id="list_dominant_language_detection_jobs"></a>
 
 ### list_dominant_language_detection_jobs
 
@@ -989,6 +1078,8 @@ Keyword-only arguments:
 Returns
 [ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef).
 
+<a id="list_endpoints"></a>
+
 ### list_endpoints
 
 Gets a list of all existing endpoints that you've created.
@@ -1009,6 +1100,8 @@ Keyword-only arguments:
 
 Returns
 [ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef).
+
+<a id="list_entities_detection_jobs"></a>
 
 ### list_entities_detection_jobs
 
@@ -1033,6 +1126,8 @@ Keyword-only arguments:
 Returns
 [ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef).
 
+<a id="list_entity_recognizer_summaries"></a>
+
 ### list_entity_recognizer_summaries
 
 Gets a list of summaries for the entity recognizers that you have created.
@@ -1053,6 +1148,8 @@ Keyword-only arguments:
 
 Returns
 [ListEntityRecognizerSummariesResponseTypeDef](./type_defs.md#listentityrecognizersummariesresponsetypedef).
+
+<a id="list_entity_recognizers"></a>
 
 ### list_entity_recognizers
 
@@ -1078,6 +1175,8 @@ Keyword-only arguments:
 Returns
 [ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef).
 
+<a id="list_events_detection_jobs"></a>
+
 ### list_events_detection_jobs
 
 Gets a list of the events detection jobs that you have submitted.
@@ -1100,6 +1199,8 @@ Keyword-only arguments:
 
 Returns
 [ListEventsDetectionJobsResponseTypeDef](./type_defs.md#listeventsdetectionjobsresponsetypedef).
+
+<a id="list_key_phrases_detection_jobs"></a>
 
 ### list_key_phrases_detection_jobs
 
@@ -1124,6 +1225,8 @@ Keyword-only arguments:
 Returns
 [ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef).
 
+<a id="list_pii_entities_detection_jobs"></a>
+
 ### list_pii_entities_detection_jobs
 
 Gets a list of the PII entity detection jobs that you have submitted.
@@ -1146,6 +1249,8 @@ Keyword-only arguments:
 
 Returns
 [ListPiiEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listpiientitiesdetectionjobsresponsetypedef).
+
+<a id="list_sentiment_detection_jobs"></a>
 
 ### list_sentiment_detection_jobs
 
@@ -1170,6 +1275,8 @@ Keyword-only arguments:
 Returns
 [ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags associated with a given Amazon Comprehend resource.
@@ -1189,6 +1296,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_topics_detection_jobs"></a>
 
 ### list_topics_detection_jobs
 
@@ -1213,6 +1322,8 @@ Keyword-only arguments:
 Returns
 [ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef).
 
+<a id="put_resource_policy"></a>
+
 ### put_resource_policy
 
 Attaches a resource-based policy to a custom model.
@@ -1233,6 +1344,8 @@ Keyword-only arguments:
 
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
+
+<a id="start_document_classification_job"></a>
 
 ### start_document_classification_job
 
@@ -1265,6 +1378,8 @@ Keyword-only arguments:
 Returns
 [StartDocumentClassificationJobResponseTypeDef](./type_defs.md#startdocumentclassificationjobresponsetypedef).
 
+<a id="start_dominant_language_detection_job"></a>
+
 ### start_dominant_language_detection_job
 
 Starts an asynchronous dominant language detection job for a collection of
@@ -1295,6 +1410,8 @@ Keyword-only arguments:
 
 Returns
 [StartDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#startdominantlanguagedetectionjobresponsetypedef).
+
+<a id="start_entities_detection_job"></a>
 
 ### start_entities_detection_job
 
@@ -1329,6 +1446,8 @@ Keyword-only arguments:
 Returns
 [StartEntitiesDetectionJobResponseTypeDef](./type_defs.md#startentitiesdetectionjobresponsetypedef).
 
+<a id="start_events_detection_job"></a>
+
 ### start_events_detection_job
 
 Starts an asynchronous event detection job for a collection of documents.
@@ -1359,6 +1478,8 @@ Keyword-only arguments:
 
 Returns
 [StartEventsDetectionJobResponseTypeDef](./type_defs.md#starteventsdetectionjobresponsetypedef).
+
+<a id="start_key_phrases_detection_job"></a>
 
 ### start_key_phrases_detection_job
 
@@ -1391,6 +1512,8 @@ Keyword-only arguments:
 
 Returns
 [StartKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#startkeyphrasesdetectionjobresponsetypedef).
+
+<a id="start_pii_entities_detection_job"></a>
 
 ### start_pii_entities_detection_job
 
@@ -1427,6 +1550,8 @@ Keyword-only arguments:
 Returns
 [StartPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#startpiientitiesdetectionjobresponsetypedef).
 
+<a id="start_sentiment_detection_job"></a>
+
 ### start_sentiment_detection_job
 
 Starts an asynchronous sentiment detection job for a collection of documents.
@@ -1459,6 +1584,8 @@ Keyword-only arguments:
 Returns
 [StartSentimentDetectionJobResponseTypeDef](./type_defs.md#startsentimentdetectionjobresponsetypedef).
 
+<a id="start_topics_detection_job"></a>
+
 ### start_topics_detection_job
 
 Starts an asynchronous topic detection job.
@@ -1490,6 +1617,8 @@ Keyword-only arguments:
 Returns
 [StartTopicsDetectionJobResponseTypeDef](./type_defs.md#starttopicsdetectionjobresponsetypedef).
 
+<a id="stop_dominant_language_detection_job"></a>
+
 ### stop_dominant_language_detection_job
 
 Stops a dominant language detection job in progress.
@@ -1509,6 +1638,8 @@ Keyword-only arguments:
 
 Returns
 [StopDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#stopdominantlanguagedetectionjobresponsetypedef).
+
+<a id="stop_entities_detection_job"></a>
 
 ### stop_entities_detection_job
 
@@ -1530,6 +1661,8 @@ Keyword-only arguments:
 Returns
 [StopEntitiesDetectionJobResponseTypeDef](./type_defs.md#stopentitiesdetectionjobresponsetypedef).
 
+<a id="stop_events_detection_job"></a>
+
 ### stop_events_detection_job
 
 Stops an events detection job in progress.
@@ -1549,6 +1682,8 @@ Keyword-only arguments:
 
 Returns
 [StopEventsDetectionJobResponseTypeDef](./type_defs.md#stopeventsdetectionjobresponsetypedef).
+
+<a id="stop_key_phrases_detection_job"></a>
 
 ### stop_key_phrases_detection_job
 
@@ -1570,6 +1705,8 @@ Keyword-only arguments:
 Returns
 [StopKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#stopkeyphrasesdetectionjobresponsetypedef).
 
+<a id="stop_pii_entities_detection_job"></a>
+
 ### stop_pii_entities_detection_job
 
 Stops a PII entities detection job in progress.
@@ -1589,6 +1726,8 @@ Keyword-only arguments:
 
 Returns
 [StopPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#stoppiientitiesdetectionjobresponsetypedef).
+
+<a id="stop_sentiment_detection_job"></a>
 
 ### stop_sentiment_detection_job
 
@@ -1610,6 +1749,8 @@ Keyword-only arguments:
 Returns
 [StopSentimentDetectionJobResponseTypeDef](./type_defs.md#stopsentimentdetectionjobresponsetypedef).
 
+<a id="stop_training_document_classifier"></a>
+
 ### stop_training_document_classifier
 
 Stops a document classifier training job while in progress.
@@ -1628,6 +1769,8 @@ Keyword-only arguments:
 - `DocumentClassifierArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="stop_training_entity_recognizer"></a>
 
 ### stop_training_entity_recognizer
 
@@ -1648,6 +1791,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Associates a specific tag with an Amazon Comprehend resource.
@@ -1667,6 +1812,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a specific tag associated with an Amazon Comprehend resource.
@@ -1685,6 +1832,8 @@ Keyword-only arguments:
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_endpoint"></a>
 
 ### update_endpoint
 
@@ -1706,6 +1855,8 @@ Keyword-only arguments:
 - `DesiredDataAccessRoleArn`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

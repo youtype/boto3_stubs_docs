@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-finspacedata-module"></a>
+
 # Type annotations for boto3 FinSpaceData module
 
 > [Index](..) > FinSpaceData
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [FinSpaceData](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData)
 type annotations stubs module
-[mypy_boto3_finspace_data](https://pypi.org/project/mypy-boto3-finspace-data/).
+[mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[finspace-data]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[finspace-data]'
+
+# standalone installation
 pip install mypy-boto3-finspace-data
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-finspace-data
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="finspacedataclient"></a>
+
 ## FinSpaceDataClient
 
 Type annotations for `boto3.client("finspace-data")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_finspace_data.client import FinSpaceDataClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -51,6 +65,8 @@ from mypy_boto3_finspace_data.client import FinSpaceDataClient
 - [update_changeset](./client.md#update_changeset)
 - [update_dataset](./client.md#update_dataset)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 FinSpaceDataClient [exceptions](./client.md#exceptions)
@@ -64,6 +80,8 @@ FinSpaceDataClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -72,12 +90,14 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_finspace_data.paginators import ListChangesetsPaginator, ...
+from mypy_boto3_finspace_data.paginator import ListChangesetsPaginator, ...
 ```
 
 - [ListChangesetsPaginator](./paginators.md#listchangesetspaginator)
 - [ListDataViewsPaginator](./paginators.md#listdataviewspaginator)
 - [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -103,6 +123,8 @@ from mypy_boto3_finspace_data.literals import ChangeTypeType, ...
 - [locationTypeType](./literals.md#locationtypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

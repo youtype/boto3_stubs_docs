@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sns-module"></a>
+
 # Typed dictionaries for boto3 SNS module
 
 > [Index](..) > [SNS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SNS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS)
 type annotations stubs module
-[mypy_boto3_sns](https://pypi.org/project/mypy-boto3-sns/).
+[mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
 - [Typed dictionaries for boto3 SNS module](#typed-dictionaries-for-boto3-sns-module)
   - [AddPermissionInputRequestTypeDef](#addpermissioninputrequesttypedef)
@@ -101,6 +103,8 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [VerifySMSSandboxPhoneNumberInputRequestTypeDef](#verifysmssandboxphonenumberinputrequesttypedef)
 
+<a id="addpermissioninputrequesttypedef"></a>
+
 ## AddPermissionInputRequestTypeDef
 
 ```python
@@ -114,6 +118,8 @@ Required fields:
 - `AWSAccountId`: `Sequence`\[`str`\]
 - `ActionName`: `Sequence`\[`str`\]
 
+<a id="addpermissioninputtopictypedef"></a>
+
 ## AddPermissionInputTopicTypeDef
 
 ```python
@@ -125,6 +131,8 @@ Required fields:
 - `Label`: `str`
 - `AWSAccountId`: `Sequence`\[`str`\]
 - `ActionName`: `Sequence`\[`str`\]
+
+<a id="batchresulterrorentrytypedef"></a>
 
 ## BatchResultErrorEntryTypeDef
 
@@ -142,6 +150,8 @@ Optional fields:
 
 - `Message`: `str`
 
+<a id="checkifphonenumberisoptedoutinputrequesttypedef"></a>
+
 ## CheckIfPhoneNumberIsOptedOutInputRequestTypeDef
 
 ```python
@@ -151,6 +161,8 @@ from mypy_boto3_sns.type_defs import CheckIfPhoneNumberIsOptedOutInputRequestTyp
 Required fields:
 
 - `phoneNumber`: `str`
+
+<a id="checkifphonenumberisoptedoutresponsetypedef"></a>
 
 ## CheckIfPhoneNumberIsOptedOutResponseTypeDef
 
@@ -163,6 +175,8 @@ Required fields:
 - `isOptedOut`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="confirmsubscriptioninputrequesttypedef"></a>
 
 ## ConfirmSubscriptionInputRequestTypeDef
 
@@ -179,6 +193,8 @@ Optional fields:
 
 - `AuthenticateOnUnsubscribe`: `str`
 
+<a id="confirmsubscriptioninputtopictypedef"></a>
+
 ## ConfirmSubscriptionInputTopicTypeDef
 
 ```python
@@ -193,6 +209,8 @@ Optional fields:
 
 - `AuthenticateOnUnsubscribe`: `str`
 
+<a id="confirmsubscriptionresponsetypedef"></a>
+
 ## ConfirmSubscriptionResponseTypeDef
 
 ```python
@@ -204,6 +222,8 @@ Required fields:
 - `SubscriptionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createendpointresponsetypedef"></a>
 
 ## CreateEndpointResponseTypeDef
 
@@ -217,6 +237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createplatformapplicationinputrequesttypedef"></a>
+
 ## CreatePlatformApplicationInputRequestTypeDef
 
 ```python
@@ -228,6 +250,8 @@ Required fields:
 - `Name`: `str`
 - `Platform`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="createplatformapplicationinputserviceresourcetypedef"></a>
 
 ## CreatePlatformApplicationInputServiceResourceTypeDef
 
@@ -241,6 +265,8 @@ Required fields:
 - `Platform`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
 
+<a id="createplatformapplicationresponsetypedef"></a>
+
 ## CreatePlatformApplicationResponseTypeDef
 
 ```python
@@ -252,6 +278,8 @@ Required fields:
 - `PlatformApplicationArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createplatformendpointinputplatformapplicationtypedef"></a>
 
 ## CreatePlatformEndpointInputPlatformApplicationTypeDef
 
@@ -267,6 +295,8 @@ Optional fields:
 
 - `CustomUserData`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="createplatformendpointinputrequesttypedef"></a>
 
 ## CreatePlatformEndpointInputRequestTypeDef
 
@@ -284,6 +314,8 @@ Optional fields:
 - `CustomUserData`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
 
+<a id="createsmssandboxphonenumberinputrequesttypedef"></a>
+
 ## CreateSMSSandboxPhoneNumberInputRequestTypeDef
 
 ```python
@@ -298,6 +330,8 @@ Optional fields:
 
 - `LanguageCode`:
   [LanguageCodeStringType](./literals.md#languagecodestringtype)
+
+<a id="createtopicinputrequesttypedef"></a>
 
 ## CreateTopicInputRequestTypeDef
 
@@ -314,6 +348,8 @@ Optional fields:
 - `Attributes`: `Mapping`\[`str`, `str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtopicinputserviceresourcetypedef"></a>
+
 ## CreateTopicInputServiceResourceTypeDef
 
 ```python
@@ -329,6 +365,8 @@ Optional fields:
 - `Attributes`: `Mapping`\[`str`, `str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createtopicresponsetypedef"></a>
+
 ## CreateTopicResponseTypeDef
 
 ```python
@@ -341,6 +379,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteendpointinputrequesttypedef"></a>
+
 ## DeleteEndpointInputRequestTypeDef
 
 ```python
@@ -350,6 +390,8 @@ from mypy_boto3_sns.type_defs import DeleteEndpointInputRequestTypeDef
 Required fields:
 
 - `EndpointArn`: `str`
+
+<a id="deleteplatformapplicationinputrequesttypedef"></a>
 
 ## DeletePlatformApplicationInputRequestTypeDef
 
@@ -361,6 +403,8 @@ Required fields:
 
 - `PlatformApplicationArn`: `str`
 
+<a id="deletesmssandboxphonenumberinputrequesttypedef"></a>
+
 ## DeleteSMSSandboxPhoneNumberInputRequestTypeDef
 
 ```python
@@ -371,6 +415,8 @@ Required fields:
 
 - `PhoneNumber`: `str`
 
+<a id="deletetopicinputrequesttypedef"></a>
+
 ## DeleteTopicInputRequestTypeDef
 
 ```python
@@ -380,6 +426,8 @@ from mypy_boto3_sns.type_defs import DeleteTopicInputRequestTypeDef
 Required fields:
 
 - `TopicArn`: `str`
+
+<a id="endpointtypedef"></a>
 
 ## EndpointTypeDef
 
@@ -392,6 +440,8 @@ Optional fields:
 - `EndpointArn`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
 
+<a id="getendpointattributesinputrequesttypedef"></a>
+
 ## GetEndpointAttributesInputRequestTypeDef
 
 ```python
@@ -401,6 +451,8 @@ from mypy_boto3_sns.type_defs import GetEndpointAttributesInputRequestTypeDef
 Required fields:
 
 - `EndpointArn`: `str`
+
+<a id="getendpointattributesresponsetypedef"></a>
 
 ## GetEndpointAttributesResponseTypeDef
 
@@ -414,6 +466,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getplatformapplicationattributesinputrequesttypedef"></a>
+
 ## GetPlatformApplicationAttributesInputRequestTypeDef
 
 ```python
@@ -423,6 +477,8 @@ from mypy_boto3_sns.type_defs import GetPlatformApplicationAttributesInputReques
 Required fields:
 
 - `PlatformApplicationArn`: `str`
+
+<a id="getplatformapplicationattributesresponsetypedef"></a>
 
 ## GetPlatformApplicationAttributesResponseTypeDef
 
@@ -436,6 +492,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsmsattributesinputrequesttypedef"></a>
+
 ## GetSMSAttributesInputRequestTypeDef
 
 ```python
@@ -445,6 +503,8 @@ from mypy_boto3_sns.type_defs import GetSMSAttributesInputRequestTypeDef
 Optional fields:
 
 - `attributes`: `Sequence`\[`str`\]
+
+<a id="getsmsattributesresponsetypedef"></a>
 
 ## GetSMSAttributesResponseTypeDef
 
@@ -458,6 +518,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsmssandboxaccountstatusresulttypedef"></a>
+
 ## GetSMSSandboxAccountStatusResultTypeDef
 
 ```python
@@ -470,6 +532,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsubscriptionattributesinputrequesttypedef"></a>
+
 ## GetSubscriptionAttributesInputRequestTypeDef
 
 ```python
@@ -479,6 +543,8 @@ from mypy_boto3_sns.type_defs import GetSubscriptionAttributesInputRequestTypeDe
 Required fields:
 
 - `SubscriptionArn`: `str`
+
+<a id="getsubscriptionattributesresponsetypedef"></a>
 
 ## GetSubscriptionAttributesResponseTypeDef
 
@@ -492,6 +558,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="gettopicattributesinputrequesttypedef"></a>
+
 ## GetTopicAttributesInputRequestTypeDef
 
 ```python
@@ -501,6 +569,8 @@ from mypy_boto3_sns.type_defs import GetTopicAttributesInputRequestTypeDef
 Required fields:
 
 - `TopicArn`: `str`
+
+<a id="gettopicattributesresponsetypedef"></a>
 
 ## GetTopicAttributesResponseTypeDef
 
@@ -513,6 +583,8 @@ Required fields:
 - `Attributes`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listendpointsbyplatformapplicationinputrequesttypedef"></a>
 
 ## ListEndpointsByPlatformApplicationInputRequestTypeDef
 
@@ -528,6 +600,8 @@ Optional fields:
 
 - `NextToken`: `str`
 
+<a id="listendpointsbyplatformapplicationresponsetypedef"></a>
+
 ## ListEndpointsByPlatformApplicationResponseTypeDef
 
 ```python
@@ -541,6 +615,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listoriginationnumbersrequestrequesttypedef"></a>
+
 ## ListOriginationNumbersRequestRequestTypeDef
 
 ```python
@@ -551,6 +627,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listoriginationnumbersresulttypedef"></a>
 
 ## ListOriginationNumbersResultTypeDef
 
@@ -566,6 +644,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listphonenumbersoptedoutinputrequesttypedef"></a>
+
 ## ListPhoneNumbersOptedOutInputRequestTypeDef
 
 ```python
@@ -575,6 +655,8 @@ from mypy_boto3_sns.type_defs import ListPhoneNumbersOptedOutInputRequestTypeDef
 Optional fields:
 
 - `nextToken`: `str`
+
+<a id="listphonenumbersoptedoutresponsetypedef"></a>
 
 ## ListPhoneNumbersOptedOutResponseTypeDef
 
@@ -589,6 +671,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listplatformapplicationsinputrequesttypedef"></a>
+
 ## ListPlatformApplicationsInputRequestTypeDef
 
 ```python
@@ -598,6 +682,8 @@ from mypy_boto3_sns.type_defs import ListPlatformApplicationsInputRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listplatformapplicationsresponsetypedef"></a>
 
 ## ListPlatformApplicationsResponseTypeDef
 
@@ -613,6 +699,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsmssandboxphonenumbersinputrequesttypedef"></a>
+
 ## ListSMSSandboxPhoneNumbersInputRequestTypeDef
 
 ```python
@@ -623,6 +711,8 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+
+<a id="listsmssandboxphonenumbersresulttypedef"></a>
 
 ## ListSMSSandboxPhoneNumbersResultTypeDef
 
@@ -638,6 +728,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsubscriptionsbytopicinputrequesttypedef"></a>
+
 ## ListSubscriptionsByTopicInputRequestTypeDef
 
 ```python
@@ -651,6 +743,8 @@ Required fields:
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listsubscriptionsbytopicresponsetypedef"></a>
 
 ## ListSubscriptionsByTopicResponseTypeDef
 
@@ -666,6 +760,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsubscriptionsinputrequesttypedef"></a>
+
 ## ListSubscriptionsInputRequestTypeDef
 
 ```python
@@ -675,6 +771,8 @@ from mypy_boto3_sns.type_defs import ListSubscriptionsInputRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listsubscriptionsresponsetypedef"></a>
 
 ## ListSubscriptionsResponseTypeDef
 
@@ -690,6 +788,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -699,6 +799,8 @@ from mypy_boto3_sns.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -712,6 +814,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtopicsinputrequesttypedef"></a>
+
 ## ListTopicsInputRequestTypeDef
 
 ```python
@@ -721,6 +825,8 @@ from mypy_boto3_sns.type_defs import ListTopicsInputRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listtopicsresponsetypedef"></a>
 
 ## ListTopicsResponseTypeDef
 
@@ -734,6 +840,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="messageattributevaluetypedef"></a>
 
 ## MessageAttributeValueTypeDef
 
@@ -750,6 +858,8 @@ Optional fields:
 - `StringValue`: `str`
 - `BinaryValue`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
+<a id="optinphonenumberinputrequesttypedef"></a>
+
 ## OptInPhoneNumberInputRequestTypeDef
 
 ```python
@@ -759,6 +869,8 @@ from mypy_boto3_sns.type_defs import OptInPhoneNumberInputRequestTypeDef
 Required fields:
 
 - `phoneNumber`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -771,6 +883,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="phonenumberinformationtypedef"></a>
 
 ## PhoneNumberInformationTypeDef
 
@@ -788,6 +902,8 @@ Optional fields:
 - `NumberCapabilities`:
   `List`\[[NumberCapabilityType](./literals.md#numbercapabilitytype)\]
 
+<a id="platformapplicationtypedef"></a>
+
 ## PlatformApplicationTypeDef
 
 ```python
@@ -798,6 +914,8 @@ Optional fields:
 
 - `PlatformApplicationArn`: `str`
 - `Attributes`: `Dict`\[`str`, `str`\]
+
+<a id="publishbatchinputrequesttypedef"></a>
 
 ## PublishBatchInputRequestTypeDef
 
@@ -810,6 +928,8 @@ Required fields:
 - `TopicArn`: `str`
 - `PublishBatchRequestEntries`:
   `Sequence`\[[PublishBatchRequestEntryTypeDef](./type_defs.md#publishbatchrequestentrytypedef)\]
+
+<a id="publishbatchrequestentrytypedef"></a>
 
 ## PublishBatchRequestEntryTypeDef
 
@@ -831,6 +951,8 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
+<a id="publishbatchresponsetypedef"></a>
+
 ## PublishBatchResponseTypeDef
 
 ```python
@@ -846,6 +968,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="publishbatchresultentrytypedef"></a>
+
 ## PublishBatchResultEntryTypeDef
 
 ```python
@@ -857,6 +981,8 @@ Optional fields:
 - `Id`: `str`
 - `MessageId`: `str`
 - `SequenceNumber`: `str`
+
+<a id="publishinputplatformendpointtypedef"></a>
 
 ## PublishInputPlatformEndpointTypeDef
 
@@ -878,6 +1004,8 @@ Optional fields:
   [MessageAttributeValueTypeDef](./type_defs.md#messageattributevaluetypedef)\]
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
+
+<a id="publishinputrequesttypedef"></a>
 
 ## PublishInputRequestTypeDef
 
@@ -901,6 +1029,8 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
+<a id="publishinputtopictypedef"></a>
+
 ## PublishInputTopicTypeDef
 
 ```python
@@ -922,6 +1052,8 @@ Optional fields:
 - `MessageDeduplicationId`: `str`
 - `MessageGroupId`: `str`
 
+<a id="publishresponsetypedef"></a>
+
 ## PublishResponseTypeDef
 
 ```python
@@ -935,6 +1067,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removepermissioninputrequesttypedef"></a>
+
 ## RemovePermissionInputRequestTypeDef
 
 ```python
@@ -946,6 +1080,8 @@ Required fields:
 - `TopicArn`: `str`
 - `Label`: `str`
 
+<a id="removepermissioninputtopictypedef"></a>
+
 ## RemovePermissionInputTopicTypeDef
 
 ```python
@@ -955,6 +1091,8 @@ from mypy_boto3_sns.type_defs import RemovePermissionInputTopicTypeDef
 Required fields:
 
 - `Label`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -970,6 +1108,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="smssandboxphonenumbertypedef"></a>
+
 ## SMSSandboxPhoneNumberTypeDef
 
 ```python
@@ -982,6 +1122,8 @@ Optional fields:
 - `Status`:
   [SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype)
 
+<a id="serviceresourceplatformapplicationrequesttypedef"></a>
+
 ## ServiceResourcePlatformApplicationRequestTypeDef
 
 ```python
@@ -991,6 +1133,8 @@ from mypy_boto3_sns.type_defs import ServiceResourcePlatformApplicationRequestTy
 Required fields:
 
 - `arn`: `str`
+
+<a id="serviceresourceplatformendpointrequesttypedef"></a>
 
 ## ServiceResourcePlatformEndpointRequestTypeDef
 
@@ -1002,6 +1146,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="serviceresourcesubscriptionrequesttypedef"></a>
+
 ## ServiceResourceSubscriptionRequestTypeDef
 
 ```python
@@ -1011,6 +1157,8 @@ from mypy_boto3_sns.type_defs import ServiceResourceSubscriptionRequestTypeDef
 Required fields:
 
 - `arn`: `str`
+
+<a id="serviceresourcetopicrequesttypedef"></a>
 
 ## ServiceResourceTopicRequestTypeDef
 
@@ -1022,6 +1170,8 @@ Required fields:
 
 - `arn`: `str`
 
+<a id="setendpointattributesinputplatformendpointtypedef"></a>
+
 ## SetEndpointAttributesInputPlatformEndpointTypeDef
 
 ```python
@@ -1031,6 +1181,8 @@ from mypy_boto3_sns.type_defs import SetEndpointAttributesInputPlatformEndpointT
 Required fields:
 
 - `Attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="setendpointattributesinputrequesttypedef"></a>
 
 ## SetEndpointAttributesInputRequestTypeDef
 
@@ -1043,6 +1195,8 @@ Required fields:
 - `EndpointArn`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
 
+<a id="setplatformapplicationattributesinputplatformapplicationtypedef"></a>
+
 ## SetPlatformApplicationAttributesInputPlatformApplicationTypeDef
 
 ```python
@@ -1052,6 +1206,8 @@ from mypy_boto3_sns.type_defs import SetPlatformApplicationAttributesInputPlatfo
 Required fields:
 
 - `Attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="setplatformapplicationattributesinputrequesttypedef"></a>
 
 ## SetPlatformApplicationAttributesInputRequestTypeDef
 
@@ -1064,6 +1220,8 @@ Required fields:
 - `PlatformApplicationArn`: `str`
 - `Attributes`: `Mapping`\[`str`, `str`\]
 
+<a id="setsmsattributesinputrequesttypedef"></a>
+
 ## SetSMSAttributesInputRequestTypeDef
 
 ```python
@@ -1073,6 +1231,8 @@ from mypy_boto3_sns.type_defs import SetSMSAttributesInputRequestTypeDef
 Required fields:
 
 - `attributes`: `Mapping`\[`str`, `str`\]
+
+<a id="setsubscriptionattributesinputrequesttypedef"></a>
 
 ## SetSubscriptionAttributesInputRequestTypeDef
 
@@ -1089,6 +1249,8 @@ Optional fields:
 
 - `AttributeValue`: `str`
 
+<a id="setsubscriptionattributesinputsubscriptiontypedef"></a>
+
 ## SetSubscriptionAttributesInputSubscriptionTypeDef
 
 ```python
@@ -1102,6 +1264,8 @@ Required fields:
 Optional fields:
 
 - `AttributeValue`: `str`
+
+<a id="settopicattributesinputrequesttypedef"></a>
 
 ## SetTopicAttributesInputRequestTypeDef
 
@@ -1118,6 +1282,8 @@ Optional fields:
 
 - `AttributeValue`: `str`
 
+<a id="settopicattributesinputtopictypedef"></a>
+
 ## SetTopicAttributesInputTopicTypeDef
 
 ```python
@@ -1131,6 +1297,8 @@ Required fields:
 Optional fields:
 
 - `AttributeValue`: `str`
+
+<a id="subscribeinputrequesttypedef"></a>
 
 ## SubscribeInputRequestTypeDef
 
@@ -1149,6 +1317,8 @@ Optional fields:
 - `Attributes`: `Mapping`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
+<a id="subscribeinputtopictypedef"></a>
+
 ## SubscribeInputTopicTypeDef
 
 ```python
@@ -1165,6 +1335,8 @@ Optional fields:
 - `Attributes`: `Mapping`\[`str`, `str`\]
 - `ReturnSubscriptionArn`: `bool`
 
+<a id="subscriberesponsetypedef"></a>
+
 ## SubscribeResponseTypeDef
 
 ```python
@@ -1176,6 +1348,8 @@ Required fields:
 - `SubscriptionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="subscriptiontypedef"></a>
 
 ## SubscriptionTypeDef
 
@@ -1191,6 +1365,8 @@ Optional fields:
 - `Endpoint`: `str`
 - `TopicArn`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1201,6 +1377,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1213,6 +1391,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="topictypedef"></a>
+
 ## TopicTypeDef
 
 ```python
@@ -1222,6 +1402,8 @@ from mypy_boto3_sns.type_defs import TopicTypeDef
 Optional fields:
 
 - `TopicArn`: `str`
+
+<a id="unsubscribeinputrequesttypedef"></a>
 
 ## UnsubscribeInputRequestTypeDef
 
@@ -1233,6 +1415,8 @@ Required fields:
 
 - `SubscriptionArn`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1243,6 +1427,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="verifysmssandboxphonenumberinputrequesttypedef"></a>
 
 ## VerifySMSSandboxPhoneNumberInputRequestTypeDef
 

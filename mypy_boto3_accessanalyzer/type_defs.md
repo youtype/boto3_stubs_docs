@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-accessanalyzer-module"></a>
+
 # Typed dictionaries for boto3 AccessAnalyzer module
 
 > [Index](..) > [AccessAnalyzer](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AccessAnalyzer](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/accessanalyzer.html#AccessAnalyzer)
 type annotations stubs module
-[mypy_boto3_accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
+[mypy-boto3-accessanalyzer](https://pypi.org/project/mypy-boto3-accessanalyzer/).
 
 - [Typed dictionaries for boto3 AccessAnalyzer module](#typed-dictionaries-for-boto3-accessanalyzer-module)
   - [AccessPreviewFindingTypeDef](#accesspreviewfindingtypedef)
@@ -104,6 +106,8 @@ type annotations stubs module
   - [ValidatePolicyResponseTypeDef](#validatepolicyresponsetypedef)
   - [VpcConfigurationTypeDef](#vpcconfigurationtypedef)
 
+<a id="accesspreviewfindingtypedef"></a>
+
 ## AccessPreviewFindingTypeDef
 
 ```python
@@ -132,6 +136,8 @@ Optional fields:
 - `sources`:
   `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
 
+<a id="accesspreviewstatusreasontypedef"></a>
+
 ## AccessPreviewStatusReasonTypeDef
 
 ```python
@@ -142,6 +148,8 @@ Required fields:
 
 - `code`:
   [AccessPreviewStatusReasonCodeType](./literals.md#accesspreviewstatusreasoncodetype)
+
+<a id="accesspreviewsummarytypedef"></a>
 
 ## AccessPreviewSummaryTypeDef
 
@@ -160,6 +168,8 @@ Optional fields:
 
 - `statusReason`:
   [AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef)
+
+<a id="accesspreviewtypedef"></a>
 
 ## AccessPreviewTypeDef
 
@@ -181,6 +191,8 @@ Optional fields:
 - `statusReason`:
   [AccessPreviewStatusReasonTypeDef](./type_defs.md#accesspreviewstatusreasontypedef)
 
+<a id="aclgranteetypedef"></a>
+
 ## AclGranteeTypeDef
 
 ```python
@@ -191,6 +203,8 @@ Optional fields:
 
 - `id`: `str`
 - `uri`: `str`
+
+<a id="analyzedresourcesummarytypedef"></a>
 
 ## AnalyzedResourceSummaryTypeDef
 
@@ -203,6 +217,8 @@ Required fields:
 - `resourceArn`: `str`
 - `resourceOwnerAccount`: `str`
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+
+<a id="analyzedresourcetypedef"></a>
 
 ## AnalyzedResourceTypeDef
 
@@ -227,6 +243,8 @@ Optional fields:
 - `sharedVia`: `List`\[`str`\]
 - `status`: [FindingStatusType](./literals.md#findingstatustype)
 
+<a id="analyzersummarytypedef"></a>
+
 ## AnalyzerSummaryTypeDef
 
 ```python
@@ -248,6 +266,8 @@ Optional fields:
 - `statusReason`: [StatusReasonTypeDef](./type_defs.md#statusreasontypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="applyarchiverulerequestrequesttypedef"></a>
+
 ## ApplyArchiveRuleRequestRequestTypeDef
 
 ```python
@@ -263,6 +283,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="archiverulesummarytypedef"></a>
+
 ## ArchiveRuleSummaryTypeDef
 
 ```python
@@ -277,6 +299,8 @@ Required fields:
 - `ruleName`: `str`
 - `updatedAt`: `datetime`
 
+<a id="cancelpolicygenerationrequestrequesttypedef"></a>
+
 ## CancelPolicyGenerationRequestRequestTypeDef
 
 ```python
@@ -286,6 +310,8 @@ from mypy_boto3_accessanalyzer.type_defs import CancelPolicyGenerationRequestReq
 Required fields:
 
 - `jobId`: `str`
+
+<a id="cloudtraildetailstypedef"></a>
 
 ## CloudTrailDetailsTypeDef
 
@@ -303,6 +329,8 @@ Optional fields:
 
 - `endTime`: `Union`\[`datetime`, `str`\]
 
+<a id="cloudtrailpropertiestypedef"></a>
+
 ## CloudTrailPropertiesTypeDef
 
 ```python
@@ -315,6 +343,8 @@ Required fields:
 - `startTime`: `datetime`
 - `trailProperties`:
   `List`\[[TrailPropertiesTypeDef](./type_defs.md#trailpropertiestypedef)\]
+
+<a id="configurationtypedef"></a>
 
 ## ConfigurationTypeDef
 
@@ -335,6 +365,8 @@ Optional fields:
 - `sqsQueue`:
   [SqsQueueConfigurationTypeDef](./type_defs.md#sqsqueueconfigurationtypedef)
 
+<a id="createaccesspreviewrequestrequesttypedef"></a>
+
 ## CreateAccessPreviewRequestRequestTypeDef
 
 ```python
@@ -351,6 +383,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="createaccesspreviewresponsetypedef"></a>
+
 ## CreateAccessPreviewResponseTypeDef
 
 ```python
@@ -362,6 +396,8 @@ Required fields:
 - `id`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createanalyzerrequestrequesttypedef"></a>
 
 ## CreateAnalyzerRequestRequestTypeDef
 
@@ -381,6 +417,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createanalyzerresponsetypedef"></a>
+
 ## CreateAnalyzerResponseTypeDef
 
 ```python
@@ -392,6 +430,8 @@ Required fields:
 - `arn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createarchiverulerequestrequesttypedef"></a>
 
 ## CreateArchiveRuleRequestRequestTypeDef
 
@@ -410,6 +450,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="criteriontypedef"></a>
+
 ## CriterionTypeDef
 
 ```python
@@ -422,6 +464,8 @@ Optional fields:
 - `eq`: `Sequence`\[`str`\]
 - `exists`: `bool`
 - `neq`: `Sequence`\[`str`\]
+
+<a id="deleteanalyzerrequestrequesttypedef"></a>
 
 ## DeleteAnalyzerRequestRequestTypeDef
 
@@ -436,6 +480,8 @@ Required fields:
 Optional fields:
 
 - `clientToken`: `str`
+
+<a id="deletearchiverulerequestrequesttypedef"></a>
 
 ## DeleteArchiveRuleRequestRequestTypeDef
 
@@ -452,6 +498,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="findingsourcedetailtypedef"></a>
+
 ## FindingSourceDetailTypeDef
 
 ```python
@@ -461,6 +509,8 @@ from mypy_boto3_accessanalyzer.type_defs import FindingSourceDetailTypeDef
 Optional fields:
 
 - `accessPointArn`: `str`
+
+<a id="findingsourcetypedef"></a>
 
 ## FindingSourceTypeDef
 
@@ -476,6 +526,8 @@ Optional fields:
 
 - `detail`:
   [FindingSourceDetailTypeDef](./type_defs.md#findingsourcedetailtypedef)
+
+<a id="findingsummarytypedef"></a>
 
 ## FindingSummaryTypeDef
 
@@ -504,6 +556,8 @@ Optional fields:
 - `sources`:
   `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
 
+<a id="findingtypedef"></a>
+
 ## FindingTypeDef
 
 ```python
@@ -531,6 +585,8 @@ Optional fields:
 - `sources`:
   `List`\[[FindingSourceTypeDef](./type_defs.md#findingsourcetypedef)\]
 
+<a id="generatedpolicypropertiestypedef"></a>
+
 ## GeneratedPolicyPropertiesTypeDef
 
 ```python
@@ -546,6 +602,8 @@ Optional fields:
 - `cloudTrailProperties`:
   [CloudTrailPropertiesTypeDef](./type_defs.md#cloudtrailpropertiestypedef)
 - `isComplete`: `bool`
+
+<a id="generatedpolicyresulttypedef"></a>
 
 ## GeneratedPolicyResultTypeDef
 
@@ -563,6 +621,8 @@ Optional fields:
 - `generatedPolicies`:
   `List`\[[GeneratedPolicyTypeDef](./type_defs.md#generatedpolicytypedef)\]
 
+<a id="generatedpolicytypedef"></a>
+
 ## GeneratedPolicyTypeDef
 
 ```python
@@ -572,6 +632,8 @@ from mypy_boto3_accessanalyzer.type_defs import GeneratedPolicyTypeDef
 Required fields:
 
 - `policy`: `str`
+
+<a id="getaccesspreviewrequestrequesttypedef"></a>
 
 ## GetAccessPreviewRequestRequestTypeDef
 
@@ -583,6 +645,8 @@ Required fields:
 
 - `accessPreviewId`: `str`
 - `analyzerArn`: `str`
+
+<a id="getaccesspreviewresponsetypedef"></a>
 
 ## GetAccessPreviewResponseTypeDef
 
@@ -596,6 +660,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getanalyzedresourcerequestrequesttypedef"></a>
+
 ## GetAnalyzedResourceRequestRequestTypeDef
 
 ```python
@@ -606,6 +672,8 @@ Required fields:
 
 - `analyzerArn`: `str`
 - `resourceArn`: `str`
+
+<a id="getanalyzedresourceresponsetypedef"></a>
 
 ## GetAnalyzedResourceResponseTypeDef
 
@@ -619,6 +687,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getanalyzerrequestrequesttypedef"></a>
+
 ## GetAnalyzerRequestRequestTypeDef
 
 ```python
@@ -628,6 +698,8 @@ from mypy_boto3_accessanalyzer.type_defs import GetAnalyzerRequestRequestTypeDef
 Required fields:
 
 - `analyzerName`: `str`
+
+<a id="getanalyzerresponsetypedef"></a>
 
 ## GetAnalyzerResponseTypeDef
 
@@ -641,6 +713,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getarchiverulerequestrequesttypedef"></a>
+
 ## GetArchiveRuleRequestRequestTypeDef
 
 ```python
@@ -651,6 +725,8 @@ Required fields:
 
 - `analyzerName`: `str`
 - `ruleName`: `str`
+
+<a id="getarchiveruleresponsetypedef"></a>
 
 ## GetArchiveRuleResponseTypeDef
 
@@ -665,6 +741,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfindingrequestrequesttypedef"></a>
+
 ## GetFindingRequestRequestTypeDef
 
 ```python
@@ -675,6 +753,8 @@ Required fields:
 
 - `analyzerArn`: `str`
 - `id`: `str`
+
+<a id="getfindingresponsetypedef"></a>
 
 ## GetFindingResponseTypeDef
 
@@ -687,6 +767,8 @@ Required fields:
 - `finding`: [FindingTypeDef](./type_defs.md#findingtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getgeneratedpolicyrequestrequesttypedef"></a>
 
 ## GetGeneratedPolicyRequestRequestTypeDef
 
@@ -703,6 +785,8 @@ Optional fields:
 - `includeResourcePlaceholders`: `bool`
 - `includeServiceLevelTemplate`: `bool`
 
+<a id="getgeneratedpolicyresponsetypedef"></a>
+
 ## GetGeneratedPolicyResponseTypeDef
 
 ```python
@@ -717,6 +801,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="iamroleconfigurationtypedef"></a>
+
 ## IamRoleConfigurationTypeDef
 
 ```python
@@ -726,6 +812,8 @@ from mypy_boto3_accessanalyzer.type_defs import IamRoleConfigurationTypeDef
 Optional fields:
 
 - `trustPolicy`: `str`
+
+<a id="inlinearchiveruletypedef"></a>
 
 ## InlineArchiveRuleTypeDef
 
@@ -738,6 +826,8 @@ Required fields:
 - `filter`: `Mapping`\[`str`,
   [CriterionTypeDef](./type_defs.md#criteriontypedef)\]
 - `ruleName`: `str`
+
+<a id="jobdetailstypedef"></a>
 
 ## JobDetailsTypeDef
 
@@ -756,6 +846,8 @@ Optional fields:
 - `completedOn`: `datetime`
 - `jobError`: [JobErrorTypeDef](./type_defs.md#joberrortypedef)
 
+<a id="joberrortypedef"></a>
+
 ## JobErrorTypeDef
 
 ```python
@@ -766,6 +858,8 @@ Required fields:
 
 - `code`: [JobErrorCodeType](./literals.md#joberrorcodetype)
 - `message`: `str`
+
+<a id="kmsgrantconfigurationtypedef"></a>
 
 ## KmsGrantConfigurationTypeDef
 
@@ -786,6 +880,8 @@ Optional fields:
   [KmsGrantConstraintsTypeDef](./type_defs.md#kmsgrantconstraintstypedef)
 - `retiringPrincipal`: `str`
 
+<a id="kmsgrantconstraintstypedef"></a>
+
 ## KmsGrantConstraintsTypeDef
 
 ```python
@@ -796,6 +892,8 @@ Optional fields:
 
 - `encryptionContextEquals`: `Mapping`\[`str`, `str`\]
 - `encryptionContextSubset`: `Mapping`\[`str`, `str`\]
+
+<a id="kmskeyconfigurationtypedef"></a>
 
 ## KmsKeyConfigurationTypeDef
 
@@ -808,6 +906,8 @@ Optional fields:
 - `grants`:
   `Sequence`\[[KmsGrantConfigurationTypeDef](./type_defs.md#kmsgrantconfigurationtypedef)\]
 - `keyPolicies`: `Mapping`\[`str`, `str`\]
+
+<a id="listaccesspreviewfindingsrequestrequesttypedef"></a>
 
 ## ListAccessPreviewFindingsRequestRequestTypeDef
 
@@ -827,6 +927,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listaccesspreviewfindingsresponsetypedef"></a>
+
 ## ListAccessPreviewFindingsResponseTypeDef
 
 ```python
@@ -840,6 +942,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listaccesspreviewsrequestrequesttypedef"></a>
 
 ## ListAccessPreviewsRequestRequestTypeDef
 
@@ -856,6 +960,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listaccesspreviewsresponsetypedef"></a>
+
 ## ListAccessPreviewsResponseTypeDef
 
 ```python
@@ -869,6 +975,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listanalyzedresourcesrequestrequesttypedef"></a>
 
 ## ListAnalyzedResourcesRequestRequestTypeDef
 
@@ -886,6 +994,8 @@ Optional fields:
 - `nextToken`: `str`
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 
+<a id="listanalyzedresourcesresponsetypedef"></a>
+
 ## ListAnalyzedResourcesResponseTypeDef
 
 ```python
@@ -900,6 +1010,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listanalyzersrequestrequesttypedef"></a>
+
 ## ListAnalyzersRequestRequestTypeDef
 
 ```python
@@ -911,6 +1023,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `type`: [TypeType](./literals.md#typetype)
+
+<a id="listanalyzersresponsetypedef"></a>
 
 ## ListAnalyzersResponseTypeDef
 
@@ -925,6 +1039,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listarchiverulesrequestrequesttypedef"></a>
 
 ## ListArchiveRulesRequestRequestTypeDef
 
@@ -941,6 +1057,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listarchiverulesresponsetypedef"></a>
+
 ## ListArchiveRulesResponseTypeDef
 
 ```python
@@ -954,6 +1072,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfindingsrequestrequesttypedef"></a>
 
 ## ListFindingsRequestRequestTypeDef
 
@@ -973,6 +1093,8 @@ Optional fields:
 - `nextToken`: `str`
 - `sort`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
+<a id="listfindingsresponsetypedef"></a>
+
 ## ListFindingsResponseTypeDef
 
 ```python
@@ -987,6 +1109,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpolicygenerationsrequestrequesttypedef"></a>
+
 ## ListPolicyGenerationsRequestRequestTypeDef
 
 ```python
@@ -998,6 +1122,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `principalArn`: `str`
+
+<a id="listpolicygenerationsresponsetypedef"></a>
 
 ## ListPolicyGenerationsResponseTypeDef
 
@@ -1013,6 +1139,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1022,6 +1150,8 @@ from mypy_boto3_accessanalyzer.type_defs import ListTagsForResourceRequestReques
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1035,6 +1165,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="locationtypedef"></a>
+
 ## LocationTypeDef
 
 ```python
@@ -1045,6 +1177,8 @@ Required fields:
 
 - `path`: `List`\[[PathElementTypeDef](./type_defs.md#pathelementtypedef)\]
 - `span`: [SpanTypeDef](./type_defs.md#spantypedef)
+
+<a id="networkoriginconfigurationtypedef"></a>
 
 ## NetworkOriginConfigurationTypeDef
 
@@ -1058,6 +1192,8 @@ Optional fields:
 - `vpcConfiguration`:
   [VpcConfigurationTypeDef](./type_defs.md#vpcconfigurationtypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -1069,6 +1205,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="pathelementtypedef"></a>
 
 ## PathElementTypeDef
 
@@ -1083,6 +1221,8 @@ Optional fields:
 - `substring`: [SubstringTypeDef](./type_defs.md#substringtypedef)
 - `value`: `str`
 
+<a id="policygenerationdetailstypedef"></a>
+
 ## PolicyGenerationDetailsTypeDef
 
 ```python
@@ -1092,6 +1232,8 @@ from mypy_boto3_accessanalyzer.type_defs import PolicyGenerationDetailsTypeDef
 Required fields:
 
 - `principalArn`: `str`
+
+<a id="policygenerationtypedef"></a>
 
 ## PolicyGenerationTypeDef
 
@@ -1110,6 +1252,8 @@ Optional fields:
 
 - `completedOn`: `datetime`
 
+<a id="positiontypedef"></a>
+
 ## PositionTypeDef
 
 ```python
@@ -1121,6 +1265,8 @@ Required fields:
 - `column`: `int`
 - `line`: `int`
 - `offset`: `int`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1136,6 +1282,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3accesspointconfigurationtypedef"></a>
+
 ## S3AccessPointConfigurationTypeDef
 
 ```python
@@ -1150,6 +1298,8 @@ Optional fields:
 - `publicAccessBlock`:
   [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
 
+<a id="s3bucketaclgrantconfigurationtypedef"></a>
+
 ## S3BucketAclGrantConfigurationTypeDef
 
 ```python
@@ -1160,6 +1310,8 @@ Required fields:
 
 - `grantee`: [AclGranteeTypeDef](./type_defs.md#aclgranteetypedef)
 - `permission`: [AclPermissionType](./literals.md#aclpermissiontype)
+
+<a id="s3bucketconfigurationtypedef"></a>
 
 ## S3BucketConfigurationTypeDef
 
@@ -1177,6 +1329,8 @@ Optional fields:
 - `bucketPublicAccessBlock`:
   [S3PublicAccessBlockConfigurationTypeDef](./type_defs.md#s3publicaccessblockconfigurationtypedef)
 
+<a id="s3publicaccessblockconfigurationtypedef"></a>
+
 ## S3PublicAccessBlockConfigurationTypeDef
 
 ```python
@@ -1187,6 +1341,8 @@ Required fields:
 
 - `ignorePublicAcls`: `bool`
 - `restrictPublicBuckets`: `bool`
+
+<a id="secretsmanagersecretconfigurationtypedef"></a>
 
 ## SecretsManagerSecretConfigurationTypeDef
 
@@ -1199,6 +1355,8 @@ Optional fields:
 - `kmsKeyId`: `str`
 - `secretPolicy`: `str`
 
+<a id="sortcriteriatypedef"></a>
+
 ## SortCriteriaTypeDef
 
 ```python
@@ -1209,6 +1367,8 @@ Optional fields:
 
 - `attributeName`: `str`
 - `orderBy`: [OrderByType](./literals.md#orderbytype)
+
+<a id="spantypedef"></a>
 
 ## SpanTypeDef
 
@@ -1221,6 +1381,8 @@ Required fields:
 - `end`: [PositionTypeDef](./type_defs.md#positiontypedef)
 - `start`: [PositionTypeDef](./type_defs.md#positiontypedef)
 
+<a id="sqsqueueconfigurationtypedef"></a>
+
 ## SqsQueueConfigurationTypeDef
 
 ```python
@@ -1230,6 +1392,8 @@ from mypy_boto3_accessanalyzer.type_defs import SqsQueueConfigurationTypeDef
 Optional fields:
 
 - `queuePolicy`: `str`
+
+<a id="startpolicygenerationrequestrequesttypedef"></a>
 
 ## StartPolicyGenerationRequestRequestTypeDef
 
@@ -1248,6 +1412,8 @@ Optional fields:
 - `cloudTrailDetails`:
   [CloudTrailDetailsTypeDef](./type_defs.md#cloudtraildetailstypedef)
 
+<a id="startpolicygenerationresponsetypedef"></a>
+
 ## StartPolicyGenerationResponseTypeDef
 
 ```python
@@ -1260,6 +1426,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startresourcescanrequestrequesttypedef"></a>
+
 ## StartResourceScanRequestRequestTypeDef
 
 ```python
@@ -1271,6 +1439,8 @@ Required fields:
 - `analyzerArn`: `str`
 - `resourceArn`: `str`
 
+<a id="statusreasontypedef"></a>
+
 ## StatusReasonTypeDef
 
 ```python
@@ -1280,6 +1450,8 @@ from mypy_boto3_accessanalyzer.type_defs import StatusReasonTypeDef
 Required fields:
 
 - `code`: [ReasonCodeType](./literals.md#reasoncodetype)
+
+<a id="substringtypedef"></a>
 
 ## SubstringTypeDef
 
@@ -1292,6 +1464,8 @@ Required fields:
 - `length`: `int`
 - `start`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1302,6 +1476,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="trailpropertiestypedef"></a>
 
 ## TrailPropertiesTypeDef
 
@@ -1318,6 +1494,8 @@ Optional fields:
 - `allRegions`: `bool`
 - `regions`: `List`\[`str`\]
 
+<a id="trailtypedef"></a>
+
 ## TrailTypeDef
 
 ```python
@@ -1333,6 +1511,8 @@ Optional fields:
 - `allRegions`: `bool`
 - `regions`: `Sequence`\[`str`\]
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1343,6 +1523,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatearchiverulerequestrequesttypedef"></a>
 
 ## UpdateArchiveRuleRequestRequestTypeDef
 
@@ -1361,6 +1543,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="updatefindingsrequestrequesttypedef"></a>
+
 ## UpdateFindingsRequestRequestTypeDef
 
 ```python
@@ -1378,6 +1562,8 @@ Optional fields:
 - `ids`: `Sequence`\[`str`\]
 - `resourceArn`: `str`
 
+<a id="validatepolicyfindingtypedef"></a>
+
 ## ValidatePolicyFindingTypeDef
 
 ```python
@@ -1392,6 +1578,8 @@ Required fields:
 - `issueCode`: `str`
 - `learnMoreLink`: `str`
 - `locations`: `List`\[[LocationTypeDef](./type_defs.md#locationtypedef)\]
+
+<a id="validatepolicyrequestrequesttypedef"></a>
 
 ## ValidatePolicyRequestRequestTypeDef
 
@@ -1412,6 +1600,8 @@ Optional fields:
 - `validatePolicyResourceType`:
   [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
 
+<a id="validatepolicyresponsetypedef"></a>
+
 ## ValidatePolicyResponseTypeDef
 
 ```python
@@ -1425,6 +1615,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vpcconfigurationtypedef"></a>
 
 ## VpcConfigurationTypeDef
 

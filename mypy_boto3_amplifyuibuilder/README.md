@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-amplifyuibuilder-module"></a>
+
 # Type annotations for boto3 AmplifyUIBuilder module
 
 > [Index](..) > AmplifyUIBuilder
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [AmplifyUIBuilder](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplifyuibuilder.html#AmplifyUIBuilder)
 type annotations stubs module
-[mypy_boto3_amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
+[mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[amplifyuibuilder]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[amplifyuibuilder]'
+
+# standalone installation
 pip install mypy-boto3-amplifyuibuilder
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-amplifyuibuilder
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="amplifyuibuilderclient"></a>
+
 ## AmplifyUIBuilderClient
 
 Type annotations for `boto3.client("amplifyuibuilder")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -51,6 +65,8 @@ from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
 - [update_component](./client.md#update_component)
 - [update_theme](./client.md#update_theme)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 AmplifyUIBuilderClient [exceptions](./client.md#exceptions)
@@ -62,6 +78,8 @@ AmplifyUIBuilderClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ServiceQuotaExceededException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -70,11 +88,13 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifyuibuilder.paginators import ListComponentsPaginator, ...
+from mypy_boto3_amplifyuibuilder.paginator import ListComponentsPaginator, ...
 ```
 
 - [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - [ListThemesPaginator](./paginators.md#listthemespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -92,6 +112,8 @@ from mypy_boto3_amplifyuibuilder.literals import ListComponentsPaginatorName, ..
 - [TokenProvidersType](./literals.md#tokenproviderstype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

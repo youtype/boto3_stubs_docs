@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-marketplaceentitlementservice-module"></a>
+
 # Typed dictionaries for boto3 MarketplaceEntitlementService module
 
 > [Index](..) > [MarketplaceEntitlementService](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MarketplaceEntitlementService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/marketplace-entitlement.html#MarketplaceEntitlementService)
 type annotations stubs module
-[mypy_boto3_marketplace_entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
+[mypy-boto3-marketplace-entitlement](https://pypi.org/project/mypy-boto3-marketplace-entitlement/).
 
 - [Typed dictionaries for boto3 MarketplaceEntitlementService module](#typed-dictionaries-for-boto3-marketplaceentitlementservice-module)
   - [EntitlementTypeDef](#entitlementtypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [GetEntitlementsResultTypeDef](#getentitlementsresulttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+
+<a id="entitlementtypedef"></a>
 
 ## EntitlementTypeDef
 
@@ -29,6 +33,8 @@ Optional fields:
 - `Value`: [EntitlementValueTypeDef](./type_defs.md#entitlementvaluetypedef)
 - `ExpirationDate`: `datetime`
 
+<a id="entitlementvaluetypedef"></a>
+
 ## EntitlementValueTypeDef
 
 ```python
@@ -41,6 +47,8 @@ Optional fields:
 - `DoubleValue`: `float`
 - `BooleanValue`: `bool`
 - `StringValue`: `str`
+
+<a id="getentitlementsrequestrequesttypedef"></a>
 
 ## GetEntitlementsRequestRequestTypeDef
 
@@ -60,6 +68,8 @@ Optional fields:
 - `NextToken`: `str`
 - `MaxResults`: `int`
 
+<a id="getentitlementsresulttypedef"></a>
+
 ## GetEntitlementsResultTypeDef
 
 ```python
@@ -74,6 +84,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -85,6 +97,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 

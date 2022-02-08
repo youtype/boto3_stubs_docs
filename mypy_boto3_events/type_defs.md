@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-eventbridge-module"></a>
+
 # Typed dictionaries for boto3 EventBridge module
 
 > [Index](..) > [EventBridge](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EventBridge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/events.html#EventBridge)
 type annotations stubs module
-[mypy_boto3_events](https://pypi.org/project/mypy-boto3-events/).
+[mypy-boto3-events](https://pypi.org/project/mypy-boto3-events/).
 
 - [Typed dictionaries for boto3 EventBridge module](#typed-dictionaries-for-boto3-eventbridge-module)
   - [ActivateEventSourceRequestRequestTypeDef](#activateeventsourcerequestrequesttypedef)
@@ -158,6 +160,8 @@ type annotations stubs module
   - [UpdateConnectionRequestRequestTypeDef](#updateconnectionrequestrequesttypedef)
   - [UpdateConnectionResponseTypeDef](#updateconnectionresponsetypedef)
 
+<a id="activateeventsourcerequestrequesttypedef"></a>
+
 ## ActivateEventSourceRequestRequestTypeDef
 
 ```python
@@ -167,6 +171,8 @@ from mypy_boto3_events.type_defs import ActivateEventSourceRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="apidestinationtypedef"></a>
 
 ## ApiDestinationTypeDef
 
@@ -188,6 +194,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 
+<a id="archivetypedef"></a>
+
 ## ArchiveTypeDef
 
 ```python
@@ -205,6 +213,8 @@ Optional fields:
 - `EventCount`: `int`
 - `CreationTime`: `datetime`
 
+<a id="awsvpcconfigurationtypedef"></a>
+
 ## AwsVpcConfigurationTypeDef
 
 ```python
@@ -220,6 +230,8 @@ Optional fields:
 - `SecurityGroups`: `List`\[`str`\]
 - `AssignPublicIp`: [AssignPublicIpType](./literals.md#assignpubliciptype)
 
+<a id="batcharraypropertiestypedef"></a>
+
 ## BatchArrayPropertiesTypeDef
 
 ```python
@@ -229,6 +241,8 @@ from mypy_boto3_events.type_defs import BatchArrayPropertiesTypeDef
 Optional fields:
 
 - `Size`: `int`
+
+<a id="batchparameterstypedef"></a>
 
 ## BatchParametersTypeDef
 
@@ -248,6 +262,8 @@ Optional fields:
 - `RetryStrategy`:
   [BatchRetryStrategyTypeDef](./type_defs.md#batchretrystrategytypedef)
 
+<a id="batchretrystrategytypedef"></a>
+
 ## BatchRetryStrategyTypeDef
 
 ```python
@@ -258,6 +274,8 @@ Optional fields:
 
 - `Attempts`: `int`
 
+<a id="cancelreplayrequestrequesttypedef"></a>
+
 ## CancelReplayRequestRequestTypeDef
 
 ```python
@@ -267,6 +285,8 @@ from mypy_boto3_events.type_defs import CancelReplayRequestRequestTypeDef
 Required fields:
 
 - `ReplayName`: `str`
+
+<a id="cancelreplayresponsetypedef"></a>
 
 ## CancelReplayResponseTypeDef
 
@@ -281,6 +301,8 @@ Required fields:
 - `StateReason`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="capacityproviderstrategyitemtypedef"></a>
 
 ## CapacityProviderStrategyItemTypeDef
 
@@ -297,6 +319,8 @@ Optional fields:
 - `weight`: `int`
 - `base`: `int`
 
+<a id="conditiontypedef"></a>
+
 ## ConditionTypeDef
 
 ```python
@@ -309,6 +333,8 @@ Required fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="connectionapikeyauthresponseparameterstypedef"></a>
+
 ## ConnectionApiKeyAuthResponseParametersTypeDef
 
 ```python
@@ -318,6 +344,8 @@ from mypy_boto3_events.type_defs import ConnectionApiKeyAuthResponseParametersTy
 Optional fields:
 
 - `ApiKeyName`: `str`
+
+<a id="connectionauthresponseparameterstypedef"></a>
 
 ## ConnectionAuthResponseParametersTypeDef
 
@@ -336,6 +364,8 @@ Optional fields:
 - `InvocationHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
+<a id="connectionbasicauthresponseparameterstypedef"></a>
+
 ## ConnectionBasicAuthResponseParametersTypeDef
 
 ```python
@@ -345,6 +375,8 @@ from mypy_boto3_events.type_defs import ConnectionBasicAuthResponseParametersTyp
 Optional fields:
 
 - `Username`: `str`
+
+<a id="connectionbodyparametertypedef"></a>
 
 ## ConnectionBodyParameterTypeDef
 
@@ -358,6 +390,8 @@ Optional fields:
 - `Value`: `str`
 - `IsValueSecret`: `bool`
 
+<a id="connectionheaderparametertypedef"></a>
+
 ## ConnectionHeaderParameterTypeDef
 
 ```python
@@ -369,6 +403,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 - `IsValueSecret`: `bool`
+
+<a id="connectionhttpparameterstypedef"></a>
 
 ## ConnectionHttpParametersTypeDef
 
@@ -385,6 +421,8 @@ Optional fields:
 - `BodyParameters`:
   `Sequence`\[[ConnectionBodyParameterTypeDef](./type_defs.md#connectionbodyparametertypedef)\]
 
+<a id="connectionoauthclientresponseparameterstypedef"></a>
+
 ## ConnectionOAuthClientResponseParametersTypeDef
 
 ```python
@@ -394,6 +432,8 @@ from mypy_boto3_events.type_defs import ConnectionOAuthClientResponseParametersT
 Optional fields:
 
 - `ClientID`: `str`
+
+<a id="connectionoauthresponseparameterstypedef"></a>
 
 ## ConnectionOAuthResponseParametersTypeDef
 
@@ -411,6 +451,8 @@ Optional fields:
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
+<a id="connectionquerystringparametertypedef"></a>
+
 ## ConnectionQueryStringParameterTypeDef
 
 ```python
@@ -422,6 +464,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 - `IsValueSecret`: `bool`
+
+<a id="connectiontypedef"></a>
 
 ## ConnectionTypeDef
 
@@ -440,6 +484,8 @@ Optional fields:
 - `CreationTime`: `datetime`
 - `LastModifiedTime`: `datetime`
 - `LastAuthorizedTime`: `datetime`
+
+<a id="createapidestinationrequestrequesttypedef"></a>
 
 ## CreateApiDestinationRequestRequestTypeDef
 
@@ -460,6 +506,8 @@ Optional fields:
 - `Description`: `str`
 - `InvocationRateLimitPerSecond`: `int`
 
+<a id="createapidestinationresponsetypedef"></a>
+
 ## CreateApiDestinationResponseTypeDef
 
 ```python
@@ -475,6 +523,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createarchiverequestrequesttypedef"></a>
 
 ## CreateArchiveRequestRequestTypeDef
 
@@ -493,6 +543,8 @@ Optional fields:
 - `EventPattern`: `str`
 - `RetentionDays`: `int`
 
+<a id="createarchiveresponsetypedef"></a>
+
 ## CreateArchiveResponseTypeDef
 
 ```python
@@ -508,6 +560,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createconnectionapikeyauthrequestparameterstypedef"></a>
+
 ## CreateConnectionApiKeyAuthRequestParametersTypeDef
 
 ```python
@@ -518,6 +572,8 @@ Required fields:
 
 - `ApiKeyName`: `str`
 - `ApiKeyValue`: `str`
+
+<a id="createconnectionauthrequestparameterstypedef"></a>
 
 ## CreateConnectionAuthRequestParametersTypeDef
 
@@ -536,6 +592,8 @@ Optional fields:
 - `InvocationHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
+<a id="createconnectionbasicauthrequestparameterstypedef"></a>
+
 ## CreateConnectionBasicAuthRequestParametersTypeDef
 
 ```python
@@ -547,6 +605,8 @@ Required fields:
 - `Username`: `str`
 - `Password`: `str`
 
+<a id="createconnectionoauthclientrequestparameterstypedef"></a>
+
 ## CreateConnectionOAuthClientRequestParametersTypeDef
 
 ```python
@@ -557,6 +617,8 @@ Required fields:
 
 - `ClientID`: `str`
 - `ClientSecret`: `str`
+
+<a id="createconnectionoauthrequestparameterstypedef"></a>
 
 ## CreateConnectionOAuthRequestParametersTypeDef
 
@@ -577,6 +639,8 @@ Optional fields:
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
+<a id="createconnectionrequestrequesttypedef"></a>
+
 ## CreateConnectionRequestRequestTypeDef
 
 ```python
@@ -595,6 +659,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="createconnectionresponsetypedef"></a>
+
 ## CreateConnectionResponseTypeDef
 
 ```python
@@ -609,6 +675,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createeventbusrequestrequesttypedef"></a>
 
 ## CreateEventBusRequestRequestTypeDef
 
@@ -625,6 +693,8 @@ Optional fields:
 - `EventSourceName`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createeventbusresponsetypedef"></a>
+
 ## CreateEventBusResponseTypeDef
 
 ```python
@@ -637,6 +707,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpartnereventsourcerequestrequesttypedef"></a>
+
 ## CreatePartnerEventSourceRequestRequestTypeDef
 
 ```python
@@ -647,6 +719,8 @@ Required fields:
 
 - `Name`: `str`
 - `Account`: `str`
+
+<a id="createpartnereventsourceresponsetypedef"></a>
 
 ## CreatePartnerEventSourceResponseTypeDef
 
@@ -660,6 +734,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deactivateeventsourcerequestrequesttypedef"></a>
+
 ## DeactivateEventSourceRequestRequestTypeDef
 
 ```python
@@ -669,6 +745,8 @@ from mypy_boto3_events.type_defs import DeactivateEventSourceRequestRequestTypeD
 Required fields:
 
 - `Name`: `str`
+
+<a id="deadletterconfigtypedef"></a>
 
 ## DeadLetterConfigTypeDef
 
@@ -680,6 +758,8 @@ Optional fields:
 
 - `Arn`: `str`
 
+<a id="deauthorizeconnectionrequestrequesttypedef"></a>
+
 ## DeauthorizeConnectionRequestRequestTypeDef
 
 ```python
@@ -689,6 +769,8 @@ from mypy_boto3_events.type_defs import DeauthorizeConnectionRequestRequestTypeD
 Required fields:
 
 - `Name`: `str`
+
+<a id="deauthorizeconnectionresponsetypedef"></a>
 
 ## DeauthorizeConnectionResponseTypeDef
 
@@ -706,6 +788,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteapidestinationrequestrequesttypedef"></a>
+
 ## DeleteApiDestinationRequestRequestTypeDef
 
 ```python
@@ -715,6 +799,8 @@ from mypy_boto3_events.type_defs import DeleteApiDestinationRequestRequestTypeDe
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletearchiverequestrequesttypedef"></a>
 
 ## DeleteArchiveRequestRequestTypeDef
 
@@ -726,6 +812,8 @@ Required fields:
 
 - `ArchiveName`: `str`
 
+<a id="deleteconnectionrequestrequesttypedef"></a>
+
 ## DeleteConnectionRequestRequestTypeDef
 
 ```python
@@ -735,6 +823,8 @@ from mypy_boto3_events.type_defs import DeleteConnectionRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deleteconnectionresponsetypedef"></a>
 
 ## DeleteConnectionResponseTypeDef
 
@@ -752,6 +842,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteeventbusrequestrequesttypedef"></a>
+
 ## DeleteEventBusRequestRequestTypeDef
 
 ```python
@@ -761,6 +853,8 @@ from mypy_boto3_events.type_defs import DeleteEventBusRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletepartnereventsourcerequestrequesttypedef"></a>
 
 ## DeletePartnerEventSourceRequestRequestTypeDef
 
@@ -772,6 +866,8 @@ Required fields:
 
 - `Name`: `str`
 - `Account`: `str`
+
+<a id="deleterulerequestrequesttypedef"></a>
 
 ## DeleteRuleRequestRequestTypeDef
 
@@ -788,6 +884,8 @@ Optional fields:
 - `EventBusName`: `str`
 - `Force`: `bool`
 
+<a id="describeapidestinationrequestrequesttypedef"></a>
+
 ## DescribeApiDestinationRequestRequestTypeDef
 
 ```python
@@ -797,6 +895,8 @@ from mypy_boto3_events.type_defs import DescribeApiDestinationRequestRequestType
 Required fields:
 
 - `Name`: `str`
+
+<a id="describeapidestinationresponsetypedef"></a>
 
 ## DescribeApiDestinationResponseTypeDef
 
@@ -821,6 +921,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describearchiverequestrequesttypedef"></a>
+
 ## DescribeArchiveRequestRequestTypeDef
 
 ```python
@@ -830,6 +932,8 @@ from mypy_boto3_events.type_defs import DescribeArchiveRequestRequestTypeDef
 Required fields:
 
 - `ArchiveName`: `str`
+
+<a id="describearchiveresponsetypedef"></a>
 
 ## DescribeArchiveResponseTypeDef
 
@@ -853,6 +957,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeconnectionrequestrequesttypedef"></a>
+
 ## DescribeConnectionRequestRequestTypeDef
 
 ```python
@@ -862,6 +968,8 @@ from mypy_boto3_events.type_defs import DescribeConnectionRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describeconnectionresponsetypedef"></a>
 
 ## DescribeConnectionResponseTypeDef
 
@@ -887,6 +995,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventbusrequestrequesttypedef"></a>
+
 ## DescribeEventBusRequestRequestTypeDef
 
 ```python
@@ -896,6 +1006,8 @@ from mypy_boto3_events.type_defs import DescribeEventBusRequestRequestTypeDef
 Optional fields:
 
 - `Name`: `str`
+
+<a id="describeeventbusresponsetypedef"></a>
 
 ## DescribeEventBusResponseTypeDef
 
@@ -911,6 +1023,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventsourcerequestrequesttypedef"></a>
+
 ## DescribeEventSourceRequestRequestTypeDef
 
 ```python
@@ -920,6 +1034,8 @@ from mypy_boto3_events.type_defs import DescribeEventSourceRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describeeventsourceresponsetypedef"></a>
 
 ## DescribeEventSourceResponseTypeDef
 
@@ -938,6 +1054,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepartnereventsourcerequestrequesttypedef"></a>
+
 ## DescribePartnerEventSourceRequestRequestTypeDef
 
 ```python
@@ -947,6 +1065,8 @@ from mypy_boto3_events.type_defs import DescribePartnerEventSourceRequestRequest
 Required fields:
 
 - `Name`: `str`
+
+<a id="describepartnereventsourceresponsetypedef"></a>
 
 ## DescribePartnerEventSourceResponseTypeDef
 
@@ -961,6 +1081,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplayrequestrequesttypedef"></a>
+
 ## DescribeReplayRequestRequestTypeDef
 
 ```python
@@ -970,6 +1092,8 @@ from mypy_boto3_events.type_defs import DescribeReplayRequestRequestTypeDef
 Required fields:
 
 - `ReplayName`: `str`
+
+<a id="describereplayresponsetypedef"></a>
 
 ## DescribeReplayResponseTypeDef
 
@@ -995,6 +1119,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerulerequestrequesttypedef"></a>
+
 ## DescribeRuleRequestRequestTypeDef
 
 ```python
@@ -1008,6 +1134,8 @@ Required fields:
 Optional fields:
 
 - `EventBusName`: `str`
+
+<a id="describeruleresponsetypedef"></a>
 
 ## DescribeRuleResponseTypeDef
 
@@ -1030,6 +1158,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disablerulerequestrequesttypedef"></a>
+
 ## DisableRuleRequestRequestTypeDef
 
 ```python
@@ -1043,6 +1173,8 @@ Required fields:
 Optional fields:
 
 - `EventBusName`: `str`
+
+<a id="ecsparameterstypedef"></a>
 
 ## EcsParametersTypeDef
 
@@ -1075,6 +1207,8 @@ Optional fields:
 - `ReferenceId`: `str`
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="enablerulerequestrequesttypedef"></a>
+
 ## EnableRuleRequestRequestTypeDef
 
 ```python
@@ -1089,6 +1223,8 @@ Optional fields:
 
 - `EventBusName`: `str`
 
+<a id="eventbustypedef"></a>
+
 ## EventBusTypeDef
 
 ```python
@@ -1100,6 +1236,8 @@ Optional fields:
 - `Name`: `str`
 - `Arn`: `str`
 - `Policy`: `str`
+
+<a id="eventsourcetypedef"></a>
 
 ## EventSourceTypeDef
 
@@ -1116,6 +1254,8 @@ Optional fields:
 - `Name`: `str`
 - `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
 
+<a id="httpparameterstypedef"></a>
+
 ## HttpParametersTypeDef
 
 ```python
@@ -1127,6 +1267,8 @@ Optional fields:
 - `PathParameterValues`: `List`\[`str`\]
 - `HeaderParameters`: `Dict`\[`str`, `str`\]
 - `QueryStringParameters`: `Dict`\[`str`, `str`\]
+
+<a id="inputtransformertypedef"></a>
 
 ## InputTransformerTypeDef
 
@@ -1142,6 +1284,8 @@ Optional fields:
 
 - `InputPathsMap`: `Dict`\[`str`, `str`\]
 
+<a id="kinesisparameterstypedef"></a>
+
 ## KinesisParametersTypeDef
 
 ```python
@@ -1151,6 +1295,8 @@ from mypy_boto3_events.type_defs import KinesisParametersTypeDef
 Required fields:
 
 - `PartitionKeyPath`: `str`
+
+<a id="listapidestinationsrequestrequesttypedef"></a>
 
 ## ListApiDestinationsRequestRequestTypeDef
 
@@ -1164,6 +1310,8 @@ Optional fields:
 - `ConnectionArn`: `str`
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="listapidestinationsresponsetypedef"></a>
 
 ## ListApiDestinationsResponseTypeDef
 
@@ -1179,6 +1327,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listarchivesrequestrequesttypedef"></a>
+
 ## ListArchivesRequestRequestTypeDef
 
 ```python
@@ -1193,6 +1343,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listarchivesresponsetypedef"></a>
+
 ## ListArchivesResponseTypeDef
 
 ```python
@@ -1206,6 +1358,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listconnectionsrequestrequesttypedef"></a>
+
 ## ListConnectionsRequestRequestTypeDef
 
 ```python
@@ -1218,6 +1372,8 @@ Optional fields:
 - `ConnectionState`: [ConnectionStateType](./literals.md#connectionstatetype)
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="listconnectionsresponsetypedef"></a>
 
 ## ListConnectionsResponseTypeDef
 
@@ -1233,6 +1389,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventbusesrequestrequesttypedef"></a>
+
 ## ListEventBusesRequestRequestTypeDef
 
 ```python
@@ -1244,6 +1402,8 @@ Optional fields:
 - `NamePrefix`: `str`
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="listeventbusesresponsetypedef"></a>
 
 ## ListEventBusesResponseTypeDef
 
@@ -1258,6 +1418,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventsourcesrequestrequesttypedef"></a>
+
 ## ListEventSourcesRequestRequestTypeDef
 
 ```python
@@ -1269,6 +1431,8 @@ Optional fields:
 - `NamePrefix`: `str`
 - `NextToken`: `str`
 - `Limit`: `int`
+
+<a id="listeventsourcesresponsetypedef"></a>
 
 ## ListEventSourcesResponseTypeDef
 
@@ -1283,6 +1447,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpartnereventsourceaccountsrequestrequesttypedef"></a>
 
 ## ListPartnerEventSourceAccountsRequestRequestTypeDef
 
@@ -1299,6 +1465,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listpartnereventsourceaccountsresponsetypedef"></a>
+
 ## ListPartnerEventSourceAccountsResponseTypeDef
 
 ```python
@@ -1312,6 +1480,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpartnereventsourcesrequestrequesttypedef"></a>
 
 ## ListPartnerEventSourcesRequestRequestTypeDef
 
@@ -1328,6 +1498,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listpartnereventsourcesresponsetypedef"></a>
+
 ## ListPartnerEventSourcesResponseTypeDef
 
 ```python
@@ -1341,6 +1513,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listreplaysrequestrequesttypedef"></a>
 
 ## ListReplaysRequestRequestTypeDef
 
@@ -1356,6 +1530,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listreplaysresponsetypedef"></a>
+
 ## ListReplaysResponseTypeDef
 
 ```python
@@ -1368,6 +1544,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrulenamesbytargetrequestrequesttypedef"></a>
 
 ## ListRuleNamesByTargetRequestRequestTypeDef
 
@@ -1385,6 +1563,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listrulenamesbytargetresponsetypedef"></a>
+
 ## ListRuleNamesByTargetResponseTypeDef
 
 ```python
@@ -1397,6 +1577,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrulesrequestrequesttypedef"></a>
 
 ## ListRulesRequestRequestTypeDef
 
@@ -1411,6 +1593,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listrulesresponsetypedef"></a>
+
 ## ListRulesResponseTypeDef
 
 ```python
@@ -1424,6 +1608,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1433,6 +1619,8 @@ from mypy_boto3_events.type_defs import ListTagsForResourceRequestRequestTypeDef
 Required fields:
 
 - `ResourceARN`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1445,6 +1633,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtargetsbyrulerequestrequesttypedef"></a>
 
 ## ListTargetsByRuleRequestRequestTypeDef
 
@@ -1462,6 +1652,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="listtargetsbyruleresponsetypedef"></a>
+
 ## ListTargetsByRuleResponseTypeDef
 
 ```python
@@ -1475,6 +1667,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="networkconfigurationtypedef"></a>
+
 ## NetworkConfigurationTypeDef
 
 ```python
@@ -1485,6 +1679,8 @@ Optional fields:
 
 - `awsvpcConfiguration`:
   [AwsVpcConfigurationTypeDef](./type_defs.md#awsvpcconfigurationtypedef)
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1497,6 +1693,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="partnereventsourceaccounttypedef"></a>
 
 ## PartnerEventSourceAccountTypeDef
 
@@ -1511,6 +1709,8 @@ Optional fields:
 - `ExpirationTime`: `datetime`
 - `State`: [EventSourceStateType](./literals.md#eventsourcestatetype)
 
+<a id="partnereventsourcetypedef"></a>
+
 ## PartnerEventSourceTypeDef
 
 ```python
@@ -1521,6 +1721,8 @@ Optional fields:
 
 - `Arn`: `str`
 - `Name`: `str`
+
+<a id="placementconstrainttypedef"></a>
 
 ## PlacementConstraintTypeDef
 
@@ -1534,6 +1736,8 @@ Optional fields:
   [PlacementConstraintTypeType](./literals.md#placementconstrainttypetype)
 - `expression`: `str`
 
+<a id="placementstrategytypedef"></a>
+
 ## PlacementStrategyTypeDef
 
 ```python
@@ -1544,6 +1748,8 @@ Optional fields:
 
 - `type`: [PlacementStrategyTypeType](./literals.md#placementstrategytypetype)
 - `field`: `str`
+
+<a id="puteventsrequestentrytypedef"></a>
 
 ## PutEventsRequestEntryTypeDef
 
@@ -1561,6 +1767,8 @@ Optional fields:
 - `EventBusName`: `str`
 - `TraceHeader`: `str`
 
+<a id="puteventsrequestrequesttypedef"></a>
+
 ## PutEventsRequestRequestTypeDef
 
 ```python
@@ -1571,6 +1779,8 @@ Required fields:
 
 - `Entries`:
   `Sequence`\[[PutEventsRequestEntryTypeDef](./type_defs.md#puteventsrequestentrytypedef)\]
+
+<a id="puteventsresponsetypedef"></a>
 
 ## PutEventsResponseTypeDef
 
@@ -1586,6 +1796,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="puteventsresultentrytypedef"></a>
+
 ## PutEventsResultEntryTypeDef
 
 ```python
@@ -1597,6 +1809,8 @@ Optional fields:
 - `EventId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="putpartnereventsrequestentrytypedef"></a>
 
 ## PutPartnerEventsRequestEntryTypeDef
 
@@ -1612,6 +1826,8 @@ Optional fields:
 - `DetailType`: `str`
 - `Detail`: `str`
 
+<a id="putpartnereventsrequestrequesttypedef"></a>
+
 ## PutPartnerEventsRequestRequestTypeDef
 
 ```python
@@ -1622,6 +1838,8 @@ Required fields:
 
 - `Entries`:
   `Sequence`\[[PutPartnerEventsRequestEntryTypeDef](./type_defs.md#putpartnereventsrequestentrytypedef)\]
+
+<a id="putpartnereventsresponsetypedef"></a>
 
 ## PutPartnerEventsResponseTypeDef
 
@@ -1637,6 +1855,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putpartnereventsresultentrytypedef"></a>
+
 ## PutPartnerEventsResultEntryTypeDef
 
 ```python
@@ -1648,6 +1868,8 @@ Optional fields:
 - `EventId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="putpermissionrequestrequesttypedef"></a>
 
 ## PutPermissionRequestRequestTypeDef
 
@@ -1663,6 +1885,8 @@ Optional fields:
 - `StatementId`: `str`
 - `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 - `Policy`: `str`
+
+<a id="putrulerequestrequesttypedef"></a>
 
 ## PutRuleRequestRequestTypeDef
 
@@ -1684,6 +1908,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `EventBusName`: `str`
 
+<a id="putruleresponsetypedef"></a>
+
 ## PutRuleResponseTypeDef
 
 ```python
@@ -1695,6 +1921,8 @@ Required fields:
 - `RuleArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="puttargetsrequestrequesttypedef"></a>
 
 ## PutTargetsRequestRequestTypeDef
 
@@ -1711,6 +1939,8 @@ Optional fields:
 
 - `EventBusName`: `str`
 
+<a id="puttargetsresponsetypedef"></a>
+
 ## PutTargetsResponseTypeDef
 
 ```python
@@ -1725,6 +1955,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="puttargetsresultentrytypedef"></a>
+
 ## PutTargetsResultEntryTypeDef
 
 ```python
@@ -1736,6 +1968,8 @@ Optional fields:
 - `TargetId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="redshiftdataparameterstypedef"></a>
 
 ## RedshiftDataParametersTypeDef
 
@@ -1755,6 +1989,8 @@ Optional fields:
 - `StatementName`: `str`
 - `WithEvent`: `bool`
 
+<a id="removepermissionrequestrequesttypedef"></a>
+
 ## RemovePermissionRequestRequestTypeDef
 
 ```python
@@ -1766,6 +2002,8 @@ Optional fields:
 - `StatementId`: `str`
 - `RemoveAllPermissions`: `bool`
 - `EventBusName`: `str`
+
+<a id="removetargetsrequestrequesttypedef"></a>
 
 ## RemoveTargetsRequestRequestTypeDef
 
@@ -1783,6 +2021,8 @@ Optional fields:
 - `EventBusName`: `str`
 - `Force`: `bool`
 
+<a id="removetargetsresponsetypedef"></a>
+
 ## RemoveTargetsResponseTypeDef
 
 ```python
@@ -1797,6 +2037,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="removetargetsresultentrytypedef"></a>
+
 ## RemoveTargetsResultEntryTypeDef
 
 ```python
@@ -1808,6 +2050,8 @@ Optional fields:
 - `TargetId`: `str`
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
+
+<a id="replaydestinationtypedef"></a>
 
 ## ReplayDestinationTypeDef
 
@@ -1822,6 +2066,8 @@ Required fields:
 Optional fields:
 
 - `FilterArns`: `List`\[`str`\]
+
+<a id="replaytypedef"></a>
 
 ## ReplayTypeDef
 
@@ -1841,6 +2087,8 @@ Optional fields:
 - `ReplayStartTime`: `datetime`
 - `ReplayEndTime`: `datetime`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1855,6 +2103,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retrypolicytypedef"></a>
+
 ## RetryPolicyTypeDef
 
 ```python
@@ -1865,6 +2115,8 @@ Optional fields:
 
 - `MaximumRetryAttempts`: `int`
 - `MaximumEventAgeInSeconds`: `int`
+
+<a id="ruletypedef"></a>
 
 ## RuleTypeDef
 
@@ -1884,6 +2136,8 @@ Optional fields:
 - `ManagedBy`: `str`
 - `EventBusName`: `str`
 
+<a id="runcommandparameterstypedef"></a>
+
 ## RunCommandParametersTypeDef
 
 ```python
@@ -1894,6 +2148,8 @@ Required fields:
 
 - `RunCommandTargets`:
   `List`\[[RunCommandTargetTypeDef](./type_defs.md#runcommandtargettypedef)\]
+
+<a id="runcommandtargettypedef"></a>
 
 ## RunCommandTargetTypeDef
 
@@ -1906,6 +2162,8 @@ Required fields:
 - `Key`: `str`
 - `Values`: `List`\[`str`\]
 
+<a id="sagemakerpipelineparametertypedef"></a>
+
 ## SageMakerPipelineParameterTypeDef
 
 ```python
@@ -1916,6 +2174,8 @@ Required fields:
 
 - `Name`: `str`
 - `Value`: `str`
+
+<a id="sagemakerpipelineparameterstypedef"></a>
 
 ## SageMakerPipelineParametersTypeDef
 
@@ -1928,6 +2188,8 @@ Optional fields:
 - `PipelineParameterList`:
   `List`\[[SageMakerPipelineParameterTypeDef](./type_defs.md#sagemakerpipelineparametertypedef)\]
 
+<a id="sqsparameterstypedef"></a>
+
 ## SqsParametersTypeDef
 
 ```python
@@ -1937,6 +2199,8 @@ from mypy_boto3_events.type_defs import SqsParametersTypeDef
 Optional fields:
 
 - `MessageGroupId`: `str`
+
+<a id="startreplayrequestrequesttypedef"></a>
 
 ## StartReplayRequestRequestTypeDef
 
@@ -1957,6 +2221,8 @@ Optional fields:
 
 - `Description`: `str`
 
+<a id="startreplayresponsetypedef"></a>
+
 ## StartReplayResponseTypeDef
 
 ```python
@@ -1972,6 +2238,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1983,6 +2251,8 @@ Required fields:
 - `ResourceARN`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1993,6 +2263,8 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
+
+<a id="targettypedef"></a>
 
 ## TargetTypeDef
 
@@ -2030,6 +2302,8 @@ Optional fields:
   [DeadLetterConfigTypeDef](./type_defs.md#deadletterconfigtypedef)
 - `RetryPolicy`: [RetryPolicyTypeDef](./type_defs.md#retrypolicytypedef)
 
+<a id="testeventpatternrequestrequesttypedef"></a>
+
 ## TestEventPatternRequestRequestTypeDef
 
 ```python
@@ -2040,6 +2314,8 @@ Required fields:
 
 - `EventPattern`: `str`
 - `Event`: `str`
+
+<a id="testeventpatternresponsetypedef"></a>
 
 ## TestEventPatternResponseTypeDef
 
@@ -2053,6 +2329,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2063,6 +2341,8 @@ Required fields:
 
 - `ResourceARN`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapidestinationrequestrequesttypedef"></a>
 
 ## UpdateApiDestinationRequestRequestTypeDef
 
@@ -2083,6 +2363,8 @@ Optional fields:
   [ApiDestinationHttpMethodType](./literals.md#apidestinationhttpmethodtype)
 - `InvocationRateLimitPerSecond`: `int`
 
+<a id="updateapidestinationresponsetypedef"></a>
+
 ## UpdateApiDestinationResponseTypeDef
 
 ```python
@@ -2098,6 +2380,8 @@ Required fields:
 - `LastModifiedTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatearchiverequestrequesttypedef"></a>
 
 ## UpdateArchiveRequestRequestTypeDef
 
@@ -2115,6 +2399,8 @@ Optional fields:
 - `EventPattern`: `str`
 - `RetentionDays`: `int`
 
+<a id="updatearchiveresponsetypedef"></a>
+
 ## UpdateArchiveResponseTypeDef
 
 ```python
@@ -2130,6 +2416,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateconnectionapikeyauthrequestparameterstypedef"></a>
+
 ## UpdateConnectionApiKeyAuthRequestParametersTypeDef
 
 ```python
@@ -2140,6 +2428,8 @@ Optional fields:
 
 - `ApiKeyName`: `str`
 - `ApiKeyValue`: `str`
+
+<a id="updateconnectionauthrequestparameterstypedef"></a>
 
 ## UpdateConnectionAuthRequestParametersTypeDef
 
@@ -2158,6 +2448,8 @@ Optional fields:
 - `InvocationHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
 
+<a id="updateconnectionbasicauthrequestparameterstypedef"></a>
+
 ## UpdateConnectionBasicAuthRequestParametersTypeDef
 
 ```python
@@ -2169,6 +2461,8 @@ Optional fields:
 - `Username`: `str`
 - `Password`: `str`
 
+<a id="updateconnectionoauthclientrequestparameterstypedef"></a>
+
 ## UpdateConnectionOAuthClientRequestParametersTypeDef
 
 ```python
@@ -2179,6 +2473,8 @@ Optional fields:
 
 - `ClientID`: `str`
 - `ClientSecret`: `str`
+
+<a id="updateconnectionoauthrequestparameterstypedef"></a>
 
 ## UpdateConnectionOAuthRequestParametersTypeDef
 
@@ -2195,6 +2491,8 @@ Optional fields:
   [ConnectionOAuthHttpMethodType](./literals.md#connectionoauthhttpmethodtype)
 - `OAuthHttpParameters`:
   [ConnectionHttpParametersTypeDef](./type_defs.md#connectionhttpparameterstypedef)
+
+<a id="updateconnectionrequestrequesttypedef"></a>
 
 ## UpdateConnectionRequestRequestTypeDef
 
@@ -2213,6 +2511,8 @@ Optional fields:
   [ConnectionAuthorizationTypeType](./literals.md#connectionauthorizationtypetype)
 - `AuthParameters`:
   [UpdateConnectionAuthRequestParametersTypeDef](./type_defs.md#updateconnectionauthrequestparameterstypedef)
+
+<a id="updateconnectionresponsetypedef"></a>
 
 ## UpdateConnectionResponseTypeDef
 

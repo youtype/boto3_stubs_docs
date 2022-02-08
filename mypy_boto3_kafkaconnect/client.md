@@ -1,3 +1,5 @@
+<a id="kafkaconnectclient-for-boto3-kafkaconnect-module"></a>
+
 # KafkaConnectClient for boto3 KafkaConnect module
 
 > [Index](..) > [KafkaConnect](.) > KafkaConnectClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
 type annotations stubs module
-[mypy_boto3_kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 - [KafkaConnectClient for boto3 KafkaConnect module](#kafkaconnectclient-for-boto3-kafkaconnect-module)
   - [KafkaConnectClient](#kafkaconnectclient)
@@ -27,6 +29,8 @@ type annotations stubs module
     - [update_connector](#update_connector)
     - [get_paginator](#get_paginator)
 
+<a id="kafkaconnectclient"></a>
+
 ## KafkaConnectClient
 
 Type annotations for `boto3.client("kafkaconnect")`
@@ -34,14 +38,17 @@ Type annotations for `boto3.client("kafkaconnect")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kafkaconnect.client import KafkaConnectClient
 
 def get_kafkaconnect_client() -> KafkaConnectClient:
-    return boto3.client("kafkaconnect")
+    return Session().client("kafkaconnect")
 ```
 
 Boto3 documentation:
 [KafkaConnect.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -67,7 +74,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -79,6 +90,8 @@ Boto3 documentation:
 [KafkaConnect.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -94,6 +107,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_connector"></a>
 
 ### create_connector
 
@@ -132,6 +147,8 @@ Keyword-only arguments:
 Returns
 [CreateConnectorResponseTypeDef](./type_defs.md#createconnectorresponsetypedef).
 
+<a id="create_custom_plugin"></a>
+
 ### create_custom_plugin
 
 Creates a custom plugin using the specified properties.
@@ -159,6 +176,8 @@ Keyword-only arguments:
 Returns
 [CreateCustomPluginResponseTypeDef](./type_defs.md#createcustompluginresponsetypedef).
 
+<a id="create_worker_configuration"></a>
+
 ### create_worker_configuration
 
 Creates a worker configuration using the specified properties.
@@ -181,6 +200,8 @@ Keyword-only arguments:
 Returns
 [CreateWorkerConfigurationResponseTypeDef](./type_defs.md#createworkerconfigurationresponsetypedef).
 
+<a id="delete_connector"></a>
+
 ### delete_connector
 
 Deletes the specified connector.
@@ -201,6 +222,8 @@ Keyword-only arguments:
 Returns
 [DeleteConnectorResponseTypeDef](./type_defs.md#deleteconnectorresponsetypedef).
 
+<a id="describe_connector"></a>
+
 ### describe_connector
 
 Returns summary information about the connector.
@@ -219,6 +242,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef).
+
+<a id="describe_custom_plugin"></a>
 
 ### describe_custom_plugin
 
@@ -240,6 +265,8 @@ Keyword-only arguments:
 Returns
 [DescribeCustomPluginResponseTypeDef](./type_defs.md#describecustompluginresponsetypedef).
 
+<a id="describe_worker_configuration"></a>
+
 ### describe_worker_configuration
 
 Returns information about a worker configuration.
@@ -260,6 +287,8 @@ Keyword-only arguments:
 Returns
 [DescribeWorkerConfigurationResponseTypeDef](./type_defs.md#describeworkerconfigurationresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -278,6 +307,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_connectors"></a>
 
 ### list_connectors
 
@@ -300,6 +331,8 @@ Keyword-only arguments:
 Returns
 [ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef).
 
+<a id="list_custom_plugins"></a>
+
 ### list_custom_plugins
 
 Returns a list of all of the custom plugins in this account and Region.
@@ -319,6 +352,8 @@ Keyword-only arguments:
 
 Returns
 [ListCustomPluginsResponseTypeDef](./type_defs.md#listcustompluginsresponsetypedef).
+
+<a id="list_worker_configurations"></a>
 
 ### list_worker_configurations
 
@@ -341,6 +376,8 @@ Keyword-only arguments:
 Returns
 [ListWorkerConfigurationsResponseTypeDef](./type_defs.md#listworkerconfigurationsresponsetypedef).
 
+<a id="update_connector"></a>
+
 ### update_connector
 
 Updates the specified connector.
@@ -362,6 +399,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateConnectorResponseTypeDef](./type_defs.md#updateconnectorresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

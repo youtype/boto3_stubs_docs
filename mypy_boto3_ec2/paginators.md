@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ec2-module"></a>
+
 # Paginators for boto3 EC2 module
 
 > [Index](..) > [EC2](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [EC2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2)
 type annotations stubs module
-[mypy_boto3_ec2](https://pypi.org/project/mypy-boto3-ec2/).
+[mypy-boto3-ec2](https://pypi.org/project/mypy-boto3-ec2/).
 
 - [Paginators for boto3 EC2 module](#paginators-for-boto3-ec2-module)
   - [DescribeAddressesAttributePaginator](#describeaddressesattributepaginator)
@@ -129,6 +131,8 @@ type annotations stubs module
   - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
   - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
 
+<a id="describeaddressesattributepaginator"></a>
+
 ## DescribeAddressesAttributePaginator
 
 Type annotations for
@@ -137,10 +141,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeAddressesAttributePaginator
 
 def get_describe_addresses_attribute_paginator() -> DescribeAddressesAttributePaginator:
-    return boto3.client("ec2").get_paginator("describe_addresses_attribute")
+    return Session().client("ec2").get_paginator("describe_addresses_attribute")
 ```
 
 Boto3 documentation:
@@ -158,6 +164,8 @@ Arguments for `DescribeAddressesAttributePaginator.paginate` method:
 `DescribeAddressesAttributePaginator.paginate` returns
 `_PageIterator`\[[DescribeAddressesAttributeResultTypeDef](./type_defs.md#describeaddressesattributeresulttypedef)\].
 
+<a id="describebyoipcidrspaginator"></a>
+
 ## DescribeByoipCidrsPaginator
 
 Type annotations for
@@ -166,10 +174,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeByoipCidrsPaginator
 
 def get_describe_byoip_cidrs_paginator() -> DescribeByoipCidrsPaginator:
-    return boto3.client("ec2").get_paginator("describe_byoip_cidrs")
+    return Session().client("ec2").get_paginator("describe_byoip_cidrs")
 ```
 
 Boto3 documentation:
@@ -184,6 +194,8 @@ Arguments for `DescribeByoipCidrsPaginator.paginate` method:
 `DescribeByoipCidrsPaginator.paginate` returns
 `_PageIterator`\[[DescribeByoipCidrsResultTypeDef](./type_defs.md#describebyoipcidrsresulttypedef)\].
 
+<a id="describecapacityreservationfleetspaginator"></a>
+
 ## DescribeCapacityReservationFleetsPaginator
 
 Type annotations for
@@ -192,10 +204,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeCapacityReservationFleetsPaginator
 
 def get_describe_capacity_reservation_fleets_paginator() -> DescribeCapacityReservationFleetsPaginator:
-    return boto3.client("ec2").get_paginator("describe_capacity_reservation_fleets")
+    return Session().client("ec2").get_paginator("describe_capacity_reservation_fleets")
 ```
 
 Boto3 documentation:
@@ -212,6 +226,8 @@ Arguments for `DescribeCapacityReservationFleetsPaginator.paginate` method:
 `DescribeCapacityReservationFleetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeCapacityReservationFleetsResultTypeDef](./type_defs.md#describecapacityreservationfleetsresulttypedef)\].
 
+<a id="describecapacityreservationspaginator"></a>
+
 ## DescribeCapacityReservationsPaginator
 
 Type annotations for
@@ -220,10 +236,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeCapacityReservationsPaginator
 
 def get_describe_capacity_reservations_paginator() -> DescribeCapacityReservationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_capacity_reservations")
+    return Session().client("ec2").get_paginator("describe_capacity_reservations")
 ```
 
 Boto3 documentation:
@@ -240,6 +258,8 @@ Arguments for `DescribeCapacityReservationsPaginator.paginate` method:
 `DescribeCapacityReservationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeCapacityReservationsResultTypeDef](./type_defs.md#describecapacityreservationsresulttypedef)\].
 
+<a id="describecarriergatewayspaginator"></a>
+
 ## DescribeCarrierGatewaysPaginator
 
 Type annotations for
@@ -248,10 +268,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeCarrierGatewaysPaginator
 
 def get_describe_carrier_gateways_paginator() -> DescribeCarrierGatewaysPaginator:
-    return boto3.client("ec2").get_paginator("describe_carrier_gateways")
+    return Session().client("ec2").get_paginator("describe_carrier_gateways")
 ```
 
 Boto3 documentation:
@@ -268,6 +290,8 @@ Arguments for `DescribeCarrierGatewaysPaginator.paginate` method:
 `DescribeCarrierGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeCarrierGatewaysResultTypeDef](./type_defs.md#describecarriergatewaysresulttypedef)\].
 
+<a id="describeclassiclinkinstancespaginator"></a>
+
 ## DescribeClassicLinkInstancesPaginator
 
 Type annotations for
@@ -276,10 +300,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeClassicLinkInstancesPaginator
 
 def get_describe_classic_link_instances_paginator() -> DescribeClassicLinkInstancesPaginator:
-    return boto3.client("ec2").get_paginator("describe_classic_link_instances")
+    return Session().client("ec2").get_paginator("describe_classic_link_instances")
 ```
 
 Boto3 documentation:
@@ -296,6 +322,8 @@ Arguments for `DescribeClassicLinkInstancesPaginator.paginate` method:
 `DescribeClassicLinkInstancesPaginator.paginate` returns
 `_PageIterator`\[[DescribeClassicLinkInstancesResultTypeDef](./type_defs.md#describeclassiclinkinstancesresulttypedef)\].
 
+<a id="describeclientvpnauthorizationrulespaginator"></a>
+
 ## DescribeClientVpnAuthorizationRulesPaginator
 
 Type annotations for
@@ -304,10 +332,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeClientVpnAuthorizationRulesPaginator
 
 def get_describe_client_vpn_authorization_rules_paginator() -> DescribeClientVpnAuthorizationRulesPaginator:
-    return boto3.client("ec2").get_paginator("describe_client_vpn_authorization_rules")
+    return Session().client("ec2").get_paginator("describe_client_vpn_authorization_rules")
 ```
 
 Boto3 documentation:
@@ -324,6 +354,8 @@ Arguments for `DescribeClientVpnAuthorizationRulesPaginator.paginate` method:
 `DescribeClientVpnAuthorizationRulesPaginator.paginate` returns
 `_PageIterator`\[[DescribeClientVpnAuthorizationRulesResultTypeDef](./type_defs.md#describeclientvpnauthorizationrulesresulttypedef)\].
 
+<a id="describeclientvpnconnectionspaginator"></a>
+
 ## DescribeClientVpnConnectionsPaginator
 
 Type annotations for
@@ -332,10 +364,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeClientVpnConnectionsPaginator
 
 def get_describe_client_vpn_connections_paginator() -> DescribeClientVpnConnectionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_client_vpn_connections")
+    return Session().client("ec2").get_paginator("describe_client_vpn_connections")
 ```
 
 Boto3 documentation:
@@ -352,6 +386,8 @@ Arguments for `DescribeClientVpnConnectionsPaginator.paginate` method:
 `DescribeClientVpnConnectionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeClientVpnConnectionsResultTypeDef](./type_defs.md#describeclientvpnconnectionsresulttypedef)\].
 
+<a id="describeclientvpnendpointspaginator"></a>
+
 ## DescribeClientVpnEndpointsPaginator
 
 Type annotations for
@@ -360,10 +396,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeClientVpnEndpointsPaginator
 
 def get_describe_client_vpn_endpoints_paginator() -> DescribeClientVpnEndpointsPaginator:
-    return boto3.client("ec2").get_paginator("describe_client_vpn_endpoints")
+    return Session().client("ec2").get_paginator("describe_client_vpn_endpoints")
 ```
 
 Boto3 documentation:
@@ -380,6 +418,8 @@ Arguments for `DescribeClientVpnEndpointsPaginator.paginate` method:
 `DescribeClientVpnEndpointsPaginator.paginate` returns
 `_PageIterator`\[[DescribeClientVpnEndpointsResultTypeDef](./type_defs.md#describeclientvpnendpointsresulttypedef)\].
 
+<a id="describeclientvpnroutespaginator"></a>
+
 ## DescribeClientVpnRoutesPaginator
 
 Type annotations for
@@ -388,10 +428,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeClientVpnRoutesPaginator
 
 def get_describe_client_vpn_routes_paginator() -> DescribeClientVpnRoutesPaginator:
-    return boto3.client("ec2").get_paginator("describe_client_vpn_routes")
+    return Session().client("ec2").get_paginator("describe_client_vpn_routes")
 ```
 
 Boto3 documentation:
@@ -408,6 +450,8 @@ Arguments for `DescribeClientVpnRoutesPaginator.paginate` method:
 `DescribeClientVpnRoutesPaginator.paginate` returns
 `_PageIterator`\[[DescribeClientVpnRoutesResultTypeDef](./type_defs.md#describeclientvpnroutesresulttypedef)\].
 
+<a id="describeclientvpntargetnetworkspaginator"></a>
+
 ## DescribeClientVpnTargetNetworksPaginator
 
 Type annotations for
@@ -416,10 +460,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeClientVpnTargetNetworksPaginator
 
 def get_describe_client_vpn_target_networks_paginator() -> DescribeClientVpnTargetNetworksPaginator:
-    return boto3.client("ec2").get_paginator("describe_client_vpn_target_networks")
+    return Session().client("ec2").get_paginator("describe_client_vpn_target_networks")
 ```
 
 Boto3 documentation:
@@ -437,6 +483,8 @@ Arguments for `DescribeClientVpnTargetNetworksPaginator.paginate` method:
 `DescribeClientVpnTargetNetworksPaginator.paginate` returns
 `_PageIterator`\[[DescribeClientVpnTargetNetworksResultTypeDef](./type_defs.md#describeclientvpntargetnetworksresulttypedef)\].
 
+<a id="describecoippoolspaginator"></a>
+
 ## DescribeCoipPoolsPaginator
 
 Type annotations for
@@ -445,10 +493,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeCoipPoolsPaginator
 
 def get_describe_coip_pools_paginator() -> DescribeCoipPoolsPaginator:
-    return boto3.client("ec2").get_paginator("describe_coip_pools")
+    return Session().client("ec2").get_paginator("describe_coip_pools")
 ```
 
 Boto3 documentation:
@@ -465,6 +515,8 @@ Arguments for `DescribeCoipPoolsPaginator.paginate` method:
 `DescribeCoipPoolsPaginator.paginate` returns
 `_PageIterator`\[[DescribeCoipPoolsResultTypeDef](./type_defs.md#describecoippoolsresulttypedef)\].
 
+<a id="describedhcpoptionspaginator"></a>
+
 ## DescribeDhcpOptionsPaginator
 
 Type annotations for
@@ -473,10 +525,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeDhcpOptionsPaginator
 
 def get_describe_dhcp_options_paginator() -> DescribeDhcpOptionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_dhcp_options")
+    return Session().client("ec2").get_paginator("describe_dhcp_options")
 ```
 
 Boto3 documentation:
@@ -493,6 +547,8 @@ Arguments for `DescribeDhcpOptionsPaginator.paginate` method:
 `DescribeDhcpOptionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDhcpOptionsResultTypeDef](./type_defs.md#describedhcpoptionsresulttypedef)\].
 
+<a id="describeegressonlyinternetgatewayspaginator"></a>
+
 ## DescribeEgressOnlyInternetGatewaysPaginator
 
 Type annotations for
@@ -501,10 +557,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeEgressOnlyInternetGatewaysPaginator
 
 def get_describe_egress_only_internet_gateways_paginator() -> DescribeEgressOnlyInternetGatewaysPaginator:
-    return boto3.client("ec2").get_paginator("describe_egress_only_internet_gateways")
+    return Session().client("ec2").get_paginator("describe_egress_only_internet_gateways")
 ```
 
 Boto3 documentation:
@@ -521,6 +579,8 @@ Arguments for `DescribeEgressOnlyInternetGatewaysPaginator.paginate` method:
 `DescribeEgressOnlyInternetGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeEgressOnlyInternetGatewaysResultTypeDef](./type_defs.md#describeegressonlyinternetgatewaysresulttypedef)\].
 
+<a id="describeexportimagetaskspaginator"></a>
+
 ## DescribeExportImageTasksPaginator
 
 Type annotations for
@@ -529,10 +589,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeExportImageTasksPaginator
 
 def get_describe_export_image_tasks_paginator() -> DescribeExportImageTasksPaginator:
-    return boto3.client("ec2").get_paginator("describe_export_image_tasks")
+    return Session().client("ec2").get_paginator("describe_export_image_tasks")
 ```
 
 Boto3 documentation:
@@ -549,6 +611,8 @@ Arguments for `DescribeExportImageTasksPaginator.paginate` method:
 `DescribeExportImageTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
 
+<a id="describefastlaunchimagespaginator"></a>
+
 ## DescribeFastLaunchImagesPaginator
 
 Type annotations for
@@ -557,10 +621,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeFastLaunchImagesPaginator
 
 def get_describe_fast_launch_images_paginator() -> DescribeFastLaunchImagesPaginator:
-    return boto3.client("ec2").get_paginator("describe_fast_launch_images")
+    return Session().client("ec2").get_paginator("describe_fast_launch_images")
 ```
 
 Boto3 documentation:
@@ -577,6 +643,8 @@ Arguments for `DescribeFastLaunchImagesPaginator.paginate` method:
 `DescribeFastLaunchImagesPaginator.paginate` returns
 `_PageIterator`\[[DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef)\].
 
+<a id="describefastsnapshotrestorespaginator"></a>
+
 ## DescribeFastSnapshotRestoresPaginator
 
 Type annotations for
@@ -585,10 +653,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeFastSnapshotRestoresPaginator
 
 def get_describe_fast_snapshot_restores_paginator() -> DescribeFastSnapshotRestoresPaginator:
-    return boto3.client("ec2").get_paginator("describe_fast_snapshot_restores")
+    return Session().client("ec2").get_paginator("describe_fast_snapshot_restores")
 ```
 
 Boto3 documentation:
@@ -604,6 +674,8 @@ Arguments for `DescribeFastSnapshotRestoresPaginator.paginate` method:
 `DescribeFastSnapshotRestoresPaginator.paginate` returns
 `_PageIterator`\[[DescribeFastSnapshotRestoresResultTypeDef](./type_defs.md#describefastsnapshotrestoresresulttypedef)\].
 
+<a id="describefleetspaginator"></a>
+
 ## DescribeFleetsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_fleets")`.
@@ -611,10 +683,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_fleets")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeFleetsPaginator
 
 def get_describe_fleets_paginator() -> DescribeFleetsPaginator:
-    return boto3.client("ec2").get_paginator("describe_fleets")
+    return Session().client("ec2").get_paginator("describe_fleets")
 ```
 
 Boto3 documentation:
@@ -631,6 +705,8 @@ Arguments for `DescribeFleetsPaginator.paginate` method:
 `DescribeFleetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeFleetsResultTypeDef](./type_defs.md#describefleetsresulttypedef)\].
 
+<a id="describeflowlogspaginator"></a>
+
 ## DescribeFlowLogsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_flow_logs")`.
@@ -638,10 +714,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_flow_logs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeFlowLogsPaginator
 
 def get_describe_flow_logs_paginator() -> DescribeFlowLogsPaginator:
-    return boto3.client("ec2").get_paginator("describe_flow_logs")
+    return Session().client("ec2").get_paginator("describe_flow_logs")
 ```
 
 Boto3 documentation:
@@ -658,6 +736,8 @@ Arguments for `DescribeFlowLogsPaginator.paginate` method:
 `DescribeFlowLogsPaginator.paginate` returns
 `_PageIterator`\[[DescribeFlowLogsResultTypeDef](./type_defs.md#describeflowlogsresulttypedef)\].
 
+<a id="describefpgaimagespaginator"></a>
+
 ## DescribeFpgaImagesPaginator
 
 Type annotations for
@@ -666,10 +746,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeFpgaImagesPaginator
 
 def get_describe_fpga_images_paginator() -> DescribeFpgaImagesPaginator:
-    return boto3.client("ec2").get_paginator("describe_fpga_images")
+    return Session().client("ec2").get_paginator("describe_fpga_images")
 ```
 
 Boto3 documentation:
@@ -687,6 +769,8 @@ Arguments for `DescribeFpgaImagesPaginator.paginate` method:
 `DescribeFpgaImagesPaginator.paginate` returns
 `_PageIterator`\[[DescribeFpgaImagesResultTypeDef](./type_defs.md#describefpgaimagesresulttypedef)\].
 
+<a id="describehostreservationofferingspaginator"></a>
+
 ## DescribeHostReservationOfferingsPaginator
 
 Type annotations for
@@ -695,10 +779,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeHostReservationOfferingsPaginator
 
 def get_describe_host_reservation_offerings_paginator() -> DescribeHostReservationOfferingsPaginator:
-    return boto3.client("ec2").get_paginator("describe_host_reservation_offerings")
+    return Session().client("ec2").get_paginator("describe_host_reservation_offerings")
 ```
 
 Boto3 documentation:
@@ -716,6 +802,8 @@ Arguments for `DescribeHostReservationOfferingsPaginator.paginate` method:
 `DescribeHostReservationOfferingsPaginator.paginate` returns
 `_PageIterator`\[[DescribeHostReservationOfferingsResultTypeDef](./type_defs.md#describehostreservationofferingsresulttypedef)\].
 
+<a id="describehostreservationspaginator"></a>
+
 ## DescribeHostReservationsPaginator
 
 Type annotations for
@@ -724,10 +812,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeHostReservationsPaginator
 
 def get_describe_host_reservations_paginator() -> DescribeHostReservationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_host_reservations")
+    return Session().client("ec2").get_paginator("describe_host_reservations")
 ```
 
 Boto3 documentation:
@@ -743,6 +833,8 @@ Arguments for `DescribeHostReservationsPaginator.paginate` method:
 `DescribeHostReservationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeHostReservationsResultTypeDef](./type_defs.md#describehostreservationsresulttypedef)\].
 
+<a id="describehostspaginator"></a>
+
 ## DescribeHostsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_hosts")`.
@@ -750,10 +842,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_hosts")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeHostsPaginator
 
 def get_describe_hosts_paginator() -> DescribeHostsPaginator:
-    return boto3.client("ec2").get_paginator("describe_hosts")
+    return Session().client("ec2").get_paginator("describe_hosts")
 ```
 
 Boto3 documentation:
@@ -769,6 +863,8 @@ Arguments for `DescribeHostsPaginator.paginate` method:
 `DescribeHostsPaginator.paginate` returns
 `_PageIterator`\[[DescribeHostsResultTypeDef](./type_defs.md#describehostsresulttypedef)\].
 
+<a id="describeiaminstanceprofileassociationspaginator"></a>
+
 ## DescribeIamInstanceProfileAssociationsPaginator
 
 Type annotations for
@@ -777,10 +873,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeIamInstanceProfileAssociationsPaginator
 
 def get_describe_iam_instance_profile_associations_paginator() -> DescribeIamInstanceProfileAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_iam_instance_profile_associations")
+    return Session().client("ec2").get_paginator("describe_iam_instance_profile_associations")
 ```
 
 Boto3 documentation:
@@ -797,6 +895,8 @@ method:
 `DescribeIamInstanceProfileAssociationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeIamInstanceProfileAssociationsResultTypeDef](./type_defs.md#describeiaminstanceprofileassociationsresulttypedef)\].
 
+<a id="describeimportimagetaskspaginator"></a>
+
 ## DescribeImportImageTasksPaginator
 
 Type annotations for
@@ -805,10 +905,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeImportImageTasksPaginator
 
 def get_describe_import_image_tasks_paginator() -> DescribeImportImageTasksPaginator:
-    return boto3.client("ec2").get_paginator("describe_import_image_tasks")
+    return Session().client("ec2").get_paginator("describe_import_image_tasks")
 ```
 
 Boto3 documentation:
@@ -825,6 +927,8 @@ Arguments for `DescribeImportImageTasksPaginator.paginate` method:
 `DescribeImportImageTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeImportImageTasksResultTypeDef](./type_defs.md#describeimportimagetasksresulttypedef)\].
 
+<a id="describeimportsnapshottaskspaginator"></a>
+
 ## DescribeImportSnapshotTasksPaginator
 
 Type annotations for
@@ -833,10 +937,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeImportSnapshotTasksPaginator
 
 def get_describe_import_snapshot_tasks_paginator() -> DescribeImportSnapshotTasksPaginator:
-    return boto3.client("ec2").get_paginator("describe_import_snapshot_tasks")
+    return Session().client("ec2").get_paginator("describe_import_snapshot_tasks")
 ```
 
 Boto3 documentation:
@@ -853,6 +959,8 @@ Arguments for `DescribeImportSnapshotTasksPaginator.paginate` method:
 `DescribeImportSnapshotTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeImportSnapshotTasksResultTypeDef](./type_defs.md#describeimportsnapshottasksresulttypedef)\].
 
+<a id="describeinstancecreditspecificationspaginator"></a>
+
 ## DescribeInstanceCreditSpecificationsPaginator
 
 Type annotations for
@@ -861,10 +969,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInstanceCreditSpecificationsPaginator
 
 def get_describe_instance_credit_specifications_paginator() -> DescribeInstanceCreditSpecificationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_instance_credit_specifications")
+    return Session().client("ec2").get_paginator("describe_instance_credit_specifications")
 ```
 
 Boto3 documentation:
@@ -881,6 +991,8 @@ Arguments for `DescribeInstanceCreditSpecificationsPaginator.paginate` method:
 `DescribeInstanceCreditSpecificationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceCreditSpecificationsResultTypeDef](./type_defs.md#describeinstancecreditspecificationsresulttypedef)\].
 
+<a id="describeinstanceeventwindowspaginator"></a>
+
 ## DescribeInstanceEventWindowsPaginator
 
 Type annotations for
@@ -889,10 +1001,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInstanceEventWindowsPaginator
 
 def get_describe_instance_event_windows_paginator() -> DescribeInstanceEventWindowsPaginator:
-    return boto3.client("ec2").get_paginator("describe_instance_event_windows")
+    return Session().client("ec2").get_paginator("describe_instance_event_windows")
 ```
 
 Boto3 documentation:
@@ -909,6 +1023,8 @@ Arguments for `DescribeInstanceEventWindowsPaginator.paginate` method:
 `DescribeInstanceEventWindowsPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceEventWindowsResultTypeDef](./type_defs.md#describeinstanceeventwindowsresulttypedef)\].
 
+<a id="describeinstancestatuspaginator"></a>
+
 ## DescribeInstanceStatusPaginator
 
 Type annotations for
@@ -917,10 +1033,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInstanceStatusPaginator
 
 def get_describe_instance_status_paginator() -> DescribeInstanceStatusPaginator:
-    return boto3.client("ec2").get_paginator("describe_instance_status")
+    return Session().client("ec2").get_paginator("describe_instance_status")
 ```
 
 Boto3 documentation:
@@ -938,6 +1056,8 @@ Arguments for `DescribeInstanceStatusPaginator.paginate` method:
 `DescribeInstanceStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceStatusResultTypeDef](./type_defs.md#describeinstancestatusresulttypedef)\].
 
+<a id="describeinstancetypeofferingspaginator"></a>
+
 ## DescribeInstanceTypeOfferingsPaginator
 
 Type annotations for
@@ -946,10 +1066,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInstanceTypeOfferingsPaginator
 
 def get_describe_instance_type_offerings_paginator() -> DescribeInstanceTypeOfferingsPaginator:
-    return boto3.client("ec2").get_paginator("describe_instance_type_offerings")
+    return Session().client("ec2").get_paginator("describe_instance_type_offerings")
 ```
 
 Boto3 documentation:
@@ -966,6 +1088,8 @@ Arguments for `DescribeInstanceTypeOfferingsPaginator.paginate` method:
 `DescribeInstanceTypeOfferingsPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceTypeOfferingsResultTypeDef](./type_defs.md#describeinstancetypeofferingsresulttypedef)\].
 
+<a id="describeinstancetypespaginator"></a>
+
 ## DescribeInstanceTypesPaginator
 
 Type annotations for
@@ -974,10 +1098,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInstanceTypesPaginator
 
 def get_describe_instance_types_paginator() -> DescribeInstanceTypesPaginator:
-    return boto3.client("ec2").get_paginator("describe_instance_types")
+    return Session().client("ec2").get_paginator("describe_instance_types")
 ```
 
 Boto3 documentation:
@@ -995,6 +1121,8 @@ Arguments for `DescribeInstanceTypesPaginator.paginate` method:
 `DescribeInstanceTypesPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstanceTypesResultTypeDef](./type_defs.md#describeinstancetypesresulttypedef)\].
 
+<a id="describeinstancespaginator"></a>
+
 ## DescribeInstancesPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_instances")`.
@@ -1002,10 +1130,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_instances")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInstancesPaginator
 
 def get_describe_instances_paginator() -> DescribeInstancesPaginator:
-    return boto3.client("ec2").get_paginator("describe_instances")
+    return Session().client("ec2").get_paginator("describe_instances")
 ```
 
 Boto3 documentation:
@@ -1022,6 +1152,8 @@ Arguments for `DescribeInstancesPaginator.paginate` method:
 `DescribeInstancesPaginator.paginate` returns
 `_PageIterator`\[[DescribeInstancesResultTypeDef](./type_defs.md#describeinstancesresulttypedef)\].
 
+<a id="describeinternetgatewayspaginator"></a>
+
 ## DescribeInternetGatewaysPaginator
 
 Type annotations for
@@ -1030,10 +1162,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeInternetGatewaysPaginator
 
 def get_describe_internet_gateways_paginator() -> DescribeInternetGatewaysPaginator:
-    return boto3.client("ec2").get_paginator("describe_internet_gateways")
+    return Session().client("ec2").get_paginator("describe_internet_gateways")
 ```
 
 Boto3 documentation:
@@ -1050,6 +1184,8 @@ Arguments for `DescribeInternetGatewaysPaginator.paginate` method:
 `DescribeInternetGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeInternetGatewaysResultTypeDef](./type_defs.md#describeinternetgatewaysresulttypedef)\].
 
+<a id="describeipampoolspaginator"></a>
+
 ## DescribeIpamPoolsPaginator
 
 Type annotations for
@@ -1058,10 +1194,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeIpamPoolsPaginator
 
 def get_describe_ipam_pools_paginator() -> DescribeIpamPoolsPaginator:
-    return boto3.client("ec2").get_paginator("describe_ipam_pools")
+    return Session().client("ec2").get_paginator("describe_ipam_pools")
 ```
 
 Boto3 documentation:
@@ -1078,6 +1216,8 @@ Arguments for `DescribeIpamPoolsPaginator.paginate` method:
 `DescribeIpamPoolsPaginator.paginate` returns
 `_PageIterator`\[[DescribeIpamPoolsResultTypeDef](./type_defs.md#describeipampoolsresulttypedef)\].
 
+<a id="describeipamscopespaginator"></a>
+
 ## DescribeIpamScopesPaginator
 
 Type annotations for
@@ -1086,10 +1226,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeIpamScopesPaginator
 
 def get_describe_ipam_scopes_paginator() -> DescribeIpamScopesPaginator:
-    return boto3.client("ec2").get_paginator("describe_ipam_scopes")
+    return Session().client("ec2").get_paginator("describe_ipam_scopes")
 ```
 
 Boto3 documentation:
@@ -1106,6 +1248,8 @@ Arguments for `DescribeIpamScopesPaginator.paginate` method:
 `DescribeIpamScopesPaginator.paginate` returns
 `_PageIterator`\[[DescribeIpamScopesResultTypeDef](./type_defs.md#describeipamscopesresulttypedef)\].
 
+<a id="describeipamspaginator"></a>
+
 ## DescribeIpamsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_ipams")`.
@@ -1113,10 +1257,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_ipams")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeIpamsPaginator
 
 def get_describe_ipams_paginator() -> DescribeIpamsPaginator:
-    return boto3.client("ec2").get_paginator("describe_ipams")
+    return Session().client("ec2").get_paginator("describe_ipams")
 ```
 
 Boto3 documentation:
@@ -1133,6 +1279,8 @@ Arguments for `DescribeIpamsPaginator.paginate` method:
 `DescribeIpamsPaginator.paginate` returns
 `_PageIterator`\[[DescribeIpamsResultTypeDef](./type_defs.md#describeipamsresulttypedef)\].
 
+<a id="describeipv6poolspaginator"></a>
+
 ## DescribeIpv6PoolsPaginator
 
 Type annotations for
@@ -1141,10 +1289,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeIpv6PoolsPaginator
 
 def get_describe_ipv6_pools_paginator() -> DescribeIpv6PoolsPaginator:
-    return boto3.client("ec2").get_paginator("describe_ipv6_pools")
+    return Session().client("ec2").get_paginator("describe_ipv6_pools")
 ```
 
 Boto3 documentation:
@@ -1161,6 +1311,8 @@ Arguments for `DescribeIpv6PoolsPaginator.paginate` method:
 `DescribeIpv6PoolsPaginator.paginate` returns
 `_PageIterator`\[[DescribeIpv6PoolsResultTypeDef](./type_defs.md#describeipv6poolsresulttypedef)\].
 
+<a id="describelaunchtemplateversionspaginator"></a>
+
 ## DescribeLaunchTemplateVersionsPaginator
 
 Type annotations for
@@ -1169,10 +1321,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLaunchTemplateVersionsPaginator
 
 def get_describe_launch_template_versions_paginator() -> DescribeLaunchTemplateVersionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_launch_template_versions")
+    return Session().client("ec2").get_paginator("describe_launch_template_versions")
 ```
 
 Boto3 documentation:
@@ -1193,6 +1347,8 @@ Arguments for `DescribeLaunchTemplateVersionsPaginator.paginate` method:
 `DescribeLaunchTemplateVersionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeLaunchTemplateVersionsResultTypeDef](./type_defs.md#describelaunchtemplateversionsresulttypedef)\].
 
+<a id="describelaunchtemplatespaginator"></a>
+
 ## DescribeLaunchTemplatesPaginator
 
 Type annotations for
@@ -1201,10 +1357,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLaunchTemplatesPaginator
 
 def get_describe_launch_templates_paginator() -> DescribeLaunchTemplatesPaginator:
-    return boto3.client("ec2").get_paginator("describe_launch_templates")
+    return Session().client("ec2").get_paginator("describe_launch_templates")
 ```
 
 Boto3 documentation:
@@ -1222,6 +1380,8 @@ Arguments for `DescribeLaunchTemplatesPaginator.paginate` method:
 `DescribeLaunchTemplatesPaginator.paginate` returns
 `_PageIterator`\[[DescribeLaunchTemplatesResultTypeDef](./type_defs.md#describelaunchtemplatesresulttypedef)\].
 
+<a id="describelocalgatewayroutetablevirtualinterfacegroupassociationspaginator"></a>
+
 ## DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
 Type annotations for
@@ -1230,10 +1390,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator
 
 def get_describe_local_gateway_route_table_virtual_interface_group_associations_paginator() -> DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")
+    return Session().client("ec2").get_paginator("describe_local_gateway_route_table_virtual_interface_group_associations")
 ```
 
 Boto3 documentation:
@@ -1254,6 +1416,8 @@ method:
 returns
 `_PageIterator`\[[DescribeLocalGatewayRouteTableVirtualInterfaceGroupAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevirtualinterfacegroupassociationsresulttypedef)\].
 
+<a id="describelocalgatewayroutetablevpcassociationspaginator"></a>
+
 ## DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
 Type annotations for
@@ -1262,10 +1426,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTableVpcAssociationsPaginator
 
 def get_describe_local_gateway_route_table_vpc_associations_paginator() -> DescribeLocalGatewayRouteTableVpcAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")
+    return Session().client("ec2").get_paginator("describe_local_gateway_route_table_vpc_associations")
 ```
 
 Boto3 documentation:
@@ -1283,6 +1449,8 @@ method:
 `DescribeLocalGatewayRouteTableVpcAssociationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeLocalGatewayRouteTableVpcAssociationsResultTypeDef](./type_defs.md#describelocalgatewayroutetablevpcassociationsresulttypedef)\].
 
+<a id="describelocalgatewayroutetablespaginator"></a>
+
 ## DescribeLocalGatewayRouteTablesPaginator
 
 Type annotations for
@@ -1291,10 +1459,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayRouteTablesPaginator
 
 def get_describe_local_gateway_route_tables_paginator() -> DescribeLocalGatewayRouteTablesPaginator:
-    return boto3.client("ec2").get_paginator("describe_local_gateway_route_tables")
+    return Session().client("ec2").get_paginator("describe_local_gateway_route_tables")
 ```
 
 Boto3 documentation:
@@ -1311,6 +1481,8 @@ Arguments for `DescribeLocalGatewayRouteTablesPaginator.paginate` method:
 `DescribeLocalGatewayRouteTablesPaginator.paginate` returns
 `_PageIterator`\[[DescribeLocalGatewayRouteTablesResultTypeDef](./type_defs.md#describelocalgatewayroutetablesresulttypedef)\].
 
+<a id="describelocalgatewayvirtualinterfacegroupspaginator"></a>
+
 ## DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
 Type annotations for
@@ -1319,10 +1491,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfaceGroupsPaginator
 
 def get_describe_local_gateway_virtual_interface_groups_paginator() -> DescribeLocalGatewayVirtualInterfaceGroupsPaginator:
-    return boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")
+    return Session().client("ec2").get_paginator("describe_local_gateway_virtual_interface_groups")
 ```
 
 Boto3 documentation:
@@ -1340,6 +1514,8 @@ method:
 `DescribeLocalGatewayVirtualInterfaceGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeLocalGatewayVirtualInterfaceGroupsResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacegroupsresulttypedef)\].
 
+<a id="describelocalgatewayvirtualinterfacespaginator"></a>
+
 ## DescribeLocalGatewayVirtualInterfacesPaginator
 
 Type annotations for
@@ -1348,10 +1524,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLocalGatewayVirtualInterfacesPaginator
 
 def get_describe_local_gateway_virtual_interfaces_paginator() -> DescribeLocalGatewayVirtualInterfacesPaginator:
-    return boto3.client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")
+    return Session().client("ec2").get_paginator("describe_local_gateway_virtual_interfaces")
 ```
 
 Boto3 documentation:
@@ -1368,6 +1546,8 @@ Arguments for `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` method:
 `DescribeLocalGatewayVirtualInterfacesPaginator.paginate` returns
 `_PageIterator`\[[DescribeLocalGatewayVirtualInterfacesResultTypeDef](./type_defs.md#describelocalgatewayvirtualinterfacesresulttypedef)\].
 
+<a id="describelocalgatewayspaginator"></a>
+
 ## DescribeLocalGatewaysPaginator
 
 Type annotations for
@@ -1376,10 +1556,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeLocalGatewaysPaginator
 
 def get_describe_local_gateways_paginator() -> DescribeLocalGatewaysPaginator:
-    return boto3.client("ec2").get_paginator("describe_local_gateways")
+    return Session().client("ec2").get_paginator("describe_local_gateways")
 ```
 
 Boto3 documentation:
@@ -1396,6 +1578,8 @@ Arguments for `DescribeLocalGatewaysPaginator.paginate` method:
 `DescribeLocalGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeLocalGatewaysResultTypeDef](./type_defs.md#describelocalgatewaysresulttypedef)\].
 
+<a id="describemanagedprefixlistspaginator"></a>
+
 ## DescribeManagedPrefixListsPaginator
 
 Type annotations for
@@ -1404,10 +1588,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeManagedPrefixListsPaginator
 
 def get_describe_managed_prefix_lists_paginator() -> DescribeManagedPrefixListsPaginator:
-    return boto3.client("ec2").get_paginator("describe_managed_prefix_lists")
+    return Session().client("ec2").get_paginator("describe_managed_prefix_lists")
 ```
 
 Boto3 documentation:
@@ -1424,6 +1610,8 @@ Arguments for `DescribeManagedPrefixListsPaginator.paginate` method:
 `DescribeManagedPrefixListsPaginator.paginate` returns
 `_PageIterator`\[[DescribeManagedPrefixListsResultTypeDef](./type_defs.md#describemanagedprefixlistsresulttypedef)\].
 
+<a id="describemovingaddressespaginator"></a>
+
 ## DescribeMovingAddressesPaginator
 
 Type annotations for
@@ -1432,10 +1620,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeMovingAddressesPaginator
 
 def get_describe_moving_addresses_paginator() -> DescribeMovingAddressesPaginator:
-    return boto3.client("ec2").get_paginator("describe_moving_addresses")
+    return Session().client("ec2").get_paginator("describe_moving_addresses")
 ```
 
 Boto3 documentation:
@@ -1452,6 +1642,8 @@ Arguments for `DescribeMovingAddressesPaginator.paginate` method:
 `DescribeMovingAddressesPaginator.paginate` returns
 `_PageIterator`\[[DescribeMovingAddressesResultTypeDef](./type_defs.md#describemovingaddressesresulttypedef)\].
 
+<a id="describenatgatewayspaginator"></a>
+
 ## DescribeNatGatewaysPaginator
 
 Type annotations for
@@ -1460,10 +1652,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNatGatewaysPaginator
 
 def get_describe_nat_gateways_paginator() -> DescribeNatGatewaysPaginator:
-    return boto3.client("ec2").get_paginator("describe_nat_gateways")
+    return Session().client("ec2").get_paginator("describe_nat_gateways")
 ```
 
 Boto3 documentation:
@@ -1480,6 +1674,8 @@ Arguments for `DescribeNatGatewaysPaginator.paginate` method:
 `DescribeNatGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeNatGatewaysResultTypeDef](./type_defs.md#describenatgatewaysresulttypedef)\].
 
+<a id="describenetworkaclspaginator"></a>
+
 ## DescribeNetworkAclsPaginator
 
 Type annotations for
@@ -1488,10 +1684,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkAclsPaginator
 
 def get_describe_network_acls_paginator() -> DescribeNetworkAclsPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_acls")
+    return Session().client("ec2").get_paginator("describe_network_acls")
 ```
 
 Boto3 documentation:
@@ -1508,6 +1706,8 @@ Arguments for `DescribeNetworkAclsPaginator.paginate` method:
 `DescribeNetworkAclsPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkAclsResultTypeDef](./type_defs.md#describenetworkaclsresulttypedef)\].
 
+<a id="describenetworkinsightsaccessscopeanalysespaginator"></a>
+
 ## DescribeNetworkInsightsAccessScopeAnalysesPaginator
 
 Type annotations for
@@ -1516,10 +1716,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopeAnalysesPaginator
 
 def get_describe_network_insights_access_scope_analyses_paginator() -> DescribeNetworkInsightsAccessScopeAnalysesPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_insights_access_scope_analyses")
+    return Session().client("ec2").get_paginator("describe_network_insights_access_scope_analyses")
 ```
 
 Boto3 documentation:
@@ -1540,6 +1742,8 @@ method:
 `DescribeNetworkInsightsAccessScopeAnalysesPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkInsightsAccessScopeAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopeanalysesresulttypedef)\].
 
+<a id="describenetworkinsightsaccessscopespaginator"></a>
+
 ## DescribeNetworkInsightsAccessScopesPaginator
 
 Type annotations for
@@ -1548,10 +1752,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAccessScopesPaginator
 
 def get_describe_network_insights_access_scopes_paginator() -> DescribeNetworkInsightsAccessScopesPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_insights_access_scopes")
+    return Session().client("ec2").get_paginator("describe_network_insights_access_scopes")
 ```
 
 Boto3 documentation:
@@ -1568,6 +1774,8 @@ Arguments for `DescribeNetworkInsightsAccessScopesPaginator.paginate` method:
 `DescribeNetworkInsightsAccessScopesPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkInsightsAccessScopesResultTypeDef](./type_defs.md#describenetworkinsightsaccessscopesresulttypedef)\].
 
+<a id="describenetworkinsightsanalysespaginator"></a>
+
 ## DescribeNetworkInsightsAnalysesPaginator
 
 Type annotations for
@@ -1576,10 +1784,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsAnalysesPaginator
 
 def get_describe_network_insights_analyses_paginator() -> DescribeNetworkInsightsAnalysesPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_insights_analyses")
+    return Session().client("ec2").get_paginator("describe_network_insights_analyses")
 ```
 
 Boto3 documentation:
@@ -1599,6 +1809,8 @@ Arguments for `DescribeNetworkInsightsAnalysesPaginator.paginate` method:
 `DescribeNetworkInsightsAnalysesPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkInsightsAnalysesResultTypeDef](./type_defs.md#describenetworkinsightsanalysesresulttypedef)\].
 
+<a id="describenetworkinsightspathspaginator"></a>
+
 ## DescribeNetworkInsightsPathsPaginator
 
 Type annotations for
@@ -1607,10 +1819,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkInsightsPathsPaginator
 
 def get_describe_network_insights_paths_paginator() -> DescribeNetworkInsightsPathsPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_insights_paths")
+    return Session().client("ec2").get_paginator("describe_network_insights_paths")
 ```
 
 Boto3 documentation:
@@ -1627,6 +1841,8 @@ Arguments for `DescribeNetworkInsightsPathsPaginator.paginate` method:
 `DescribeNetworkInsightsPathsPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkInsightsPathsResultTypeDef](./type_defs.md#describenetworkinsightspathsresulttypedef)\].
 
+<a id="describenetworkinterfacepermissionspaginator"></a>
+
 ## DescribeNetworkInterfacePermissionsPaginator
 
 Type annotations for
@@ -1635,10 +1851,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkInterfacePermissionsPaginator
 
 def get_describe_network_interface_permissions_paginator() -> DescribeNetworkInterfacePermissionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_interface_permissions")
+    return Session().client("ec2").get_paginator("describe_network_interface_permissions")
 ```
 
 Boto3 documentation:
@@ -1654,6 +1872,8 @@ Arguments for `DescribeNetworkInterfacePermissionsPaginator.paginate` method:
 `DescribeNetworkInterfacePermissionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkInterfacePermissionsResultTypeDef](./type_defs.md#describenetworkinterfacepermissionsresulttypedef)\].
 
+<a id="describenetworkinterfacespaginator"></a>
+
 ## DescribeNetworkInterfacesPaginator
 
 Type annotations for
@@ -1662,10 +1882,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeNetworkInterfacesPaginator
 
 def get_describe_network_interfaces_paginator() -> DescribeNetworkInterfacesPaginator:
-    return boto3.client("ec2").get_paginator("describe_network_interfaces")
+    return Session().client("ec2").get_paginator("describe_network_interfaces")
 ```
 
 Boto3 documentation:
@@ -1682,6 +1904,8 @@ Arguments for `DescribeNetworkInterfacesPaginator.paginate` method:
 `DescribeNetworkInterfacesPaginator.paginate` returns
 `_PageIterator`\[[DescribeNetworkInterfacesResultTypeDef](./type_defs.md#describenetworkinterfacesresulttypedef)\].
 
+<a id="describeprefixlistspaginator"></a>
+
 ## DescribePrefixListsPaginator
 
 Type annotations for
@@ -1690,10 +1914,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribePrefixListsPaginator
 
 def get_describe_prefix_lists_paginator() -> DescribePrefixListsPaginator:
-    return boto3.client("ec2").get_paginator("describe_prefix_lists")
+    return Session().client("ec2").get_paginator("describe_prefix_lists")
 ```
 
 Boto3 documentation:
@@ -1710,6 +1936,8 @@ Arguments for `DescribePrefixListsPaginator.paginate` method:
 `DescribePrefixListsPaginator.paginate` returns
 `_PageIterator`\[[DescribePrefixListsResultTypeDef](./type_defs.md#describeprefixlistsresulttypedef)\].
 
+<a id="describeprincipalidformatpaginator"></a>
+
 ## DescribePrincipalIdFormatPaginator
 
 Type annotations for
@@ -1718,10 +1946,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribePrincipalIdFormatPaginator
 
 def get_describe_principal_id_format_paginator() -> DescribePrincipalIdFormatPaginator:
-    return boto3.client("ec2").get_paginator("describe_principal_id_format")
+    return Session().client("ec2").get_paginator("describe_principal_id_format")
 ```
 
 Boto3 documentation:
@@ -1737,6 +1967,8 @@ Arguments for `DescribePrincipalIdFormatPaginator.paginate` method:
 `DescribePrincipalIdFormatPaginator.paginate` returns
 `_PageIterator`\[[DescribePrincipalIdFormatResultTypeDef](./type_defs.md#describeprincipalidformatresulttypedef)\].
 
+<a id="describepublicipv4poolspaginator"></a>
+
 ## DescribePublicIpv4PoolsPaginator
 
 Type annotations for
@@ -1745,10 +1977,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribePublicIpv4PoolsPaginator
 
 def get_describe_public_ipv4_pools_paginator() -> DescribePublicIpv4PoolsPaginator:
-    return boto3.client("ec2").get_paginator("describe_public_ipv4_pools")
+    return Session().client("ec2").get_paginator("describe_public_ipv4_pools")
 ```
 
 Boto3 documentation:
@@ -1764,6 +1998,8 @@ Arguments for `DescribePublicIpv4PoolsPaginator.paginate` method:
 `DescribePublicIpv4PoolsPaginator.paginate` returns
 `_PageIterator`\[[DescribePublicIpv4PoolsResultTypeDef](./type_defs.md#describepublicipv4poolsresulttypedef)\].
 
+<a id="describereplacerootvolumetaskspaginator"></a>
+
 ## DescribeReplaceRootVolumeTasksPaginator
 
 Type annotations for
@@ -1772,10 +2008,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeReplaceRootVolumeTasksPaginator
 
 def get_describe_replace_root_volume_tasks_paginator() -> DescribeReplaceRootVolumeTasksPaginator:
-    return boto3.client("ec2").get_paginator("describe_replace_root_volume_tasks")
+    return Session().client("ec2").get_paginator("describe_replace_root_volume_tasks")
 ```
 
 Boto3 documentation:
@@ -1792,6 +2030,8 @@ Arguments for `DescribeReplaceRootVolumeTasksPaginator.paginate` method:
 `DescribeReplaceRootVolumeTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeReplaceRootVolumeTasksResultTypeDef](./type_defs.md#describereplacerootvolumetasksresulttypedef)\].
 
+<a id="describereservedinstancesmodificationspaginator"></a>
+
 ## DescribeReservedInstancesModificationsPaginator
 
 Type annotations for
@@ -1800,10 +2040,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeReservedInstancesModificationsPaginator
 
 def get_describe_reserved_instances_modifications_paginator() -> DescribeReservedInstancesModificationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_reserved_instances_modifications")
+    return Session().client("ec2").get_paginator("describe_reserved_instances_modifications")
 ```
 
 Boto3 documentation:
@@ -1820,6 +2062,8 @@ method:
 `DescribeReservedInstancesModificationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeReservedInstancesModificationsResultTypeDef](./type_defs.md#describereservedinstancesmodificationsresulttypedef)\].
 
+<a id="describereservedinstancesofferingspaginator"></a>
+
 ## DescribeReservedInstancesOfferingsPaginator
 
 Type annotations for
@@ -1828,10 +2072,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeReservedInstancesOfferingsPaginator
 
 def get_describe_reserved_instances_offerings_paginator() -> DescribeReservedInstancesOfferingsPaginator:
-    return boto3.client("ec2").get_paginator("describe_reserved_instances_offerings")
+    return Session().client("ec2").get_paginator("describe_reserved_instances_offerings")
 ```
 
 Boto3 documentation:
@@ -1860,6 +2106,8 @@ Arguments for `DescribeReservedInstancesOfferingsPaginator.paginate` method:
 `DescribeReservedInstancesOfferingsPaginator.paginate` returns
 `_PageIterator`\[[DescribeReservedInstancesOfferingsResultTypeDef](./type_defs.md#describereservedinstancesofferingsresulttypedef)\].
 
+<a id="describeroutetablespaginator"></a>
+
 ## DescribeRouteTablesPaginator
 
 Type annotations for
@@ -1868,10 +2116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeRouteTablesPaginator
 
 def get_describe_route_tables_paginator() -> DescribeRouteTablesPaginator:
-    return boto3.client("ec2").get_paginator("describe_route_tables")
+    return Session().client("ec2").get_paginator("describe_route_tables")
 ```
 
 Boto3 documentation:
@@ -1888,6 +2138,8 @@ Arguments for `DescribeRouteTablesPaginator.paginate` method:
 `DescribeRouteTablesPaginator.paginate` returns
 `_PageIterator`\[[DescribeRouteTablesResultTypeDef](./type_defs.md#describeroutetablesresulttypedef)\].
 
+<a id="describescheduledinstanceavailabilitypaginator"></a>
+
 ## DescribeScheduledInstanceAvailabilityPaginator
 
 Type annotations for
@@ -1896,10 +2148,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeScheduledInstanceAvailabilityPaginator
 
 def get_describe_scheduled_instance_availability_paginator() -> DescribeScheduledInstanceAvailabilityPaginator:
-    return boto3.client("ec2").get_paginator("describe_scheduled_instance_availability")
+    return Session().client("ec2").get_paginator("describe_scheduled_instance_availability")
 ```
 
 Boto3 documentation:
@@ -1923,6 +2177,8 @@ Arguments for `DescribeScheduledInstanceAvailabilityPaginator.paginate` method:
 `DescribeScheduledInstanceAvailabilityPaginator.paginate` returns
 `_PageIterator`\[[DescribeScheduledInstanceAvailabilityResultTypeDef](./type_defs.md#describescheduledinstanceavailabilityresulttypedef)\].
 
+<a id="describescheduledinstancespaginator"></a>
+
 ## DescribeScheduledInstancesPaginator
 
 Type annotations for
@@ -1931,10 +2187,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeScheduledInstancesPaginator
 
 def get_describe_scheduled_instances_paginator() -> DescribeScheduledInstancesPaginator:
-    return boto3.client("ec2").get_paginator("describe_scheduled_instances")
+    return Session().client("ec2").get_paginator("describe_scheduled_instances")
 ```
 
 Boto3 documentation:
@@ -1953,6 +2211,8 @@ Arguments for `DescribeScheduledInstancesPaginator.paginate` method:
 `DescribeScheduledInstancesPaginator.paginate` returns
 `_PageIterator`\[[DescribeScheduledInstancesResultTypeDef](./type_defs.md#describescheduledinstancesresulttypedef)\].
 
+<a id="describesecuritygrouprulespaginator"></a>
+
 ## DescribeSecurityGroupRulesPaginator
 
 Type annotations for
@@ -1961,10 +2221,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSecurityGroupRulesPaginator
 
 def get_describe_security_group_rules_paginator() -> DescribeSecurityGroupRulesPaginator:
-    return boto3.client("ec2").get_paginator("describe_security_group_rules")
+    return Session().client("ec2").get_paginator("describe_security_group_rules")
 ```
 
 Boto3 documentation:
@@ -1981,6 +2243,8 @@ Arguments for `DescribeSecurityGroupRulesPaginator.paginate` method:
 `DescribeSecurityGroupRulesPaginator.paginate` returns
 `_PageIterator`\[[DescribeSecurityGroupRulesResultTypeDef](./type_defs.md#describesecuritygrouprulesresulttypedef)\].
 
+<a id="describesecuritygroupspaginator"></a>
+
 ## DescribeSecurityGroupsPaginator
 
 Type annotations for
@@ -1989,10 +2253,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSecurityGroupsPaginator
 
 def get_describe_security_groups_paginator() -> DescribeSecurityGroupsPaginator:
-    return boto3.client("ec2").get_paginator("describe_security_groups")
+    return Session().client("ec2").get_paginator("describe_security_groups")
 ```
 
 Boto3 documentation:
@@ -2010,6 +2276,8 @@ Arguments for `DescribeSecurityGroupsPaginator.paginate` method:
 `DescribeSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSecurityGroupsResultTypeDef](./type_defs.md#describesecuritygroupsresulttypedef)\].
 
+<a id="describesnapshottierstatuspaginator"></a>
+
 ## DescribeSnapshotTierStatusPaginator
 
 Type annotations for
@@ -2018,10 +2286,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSnapshotTierStatusPaginator
 
 def get_describe_snapshot_tier_status_paginator() -> DescribeSnapshotTierStatusPaginator:
-    return boto3.client("ec2").get_paginator("describe_snapshot_tier_status")
+    return Session().client("ec2").get_paginator("describe_snapshot_tier_status")
 ```
 
 Boto3 documentation:
@@ -2037,6 +2307,8 @@ Arguments for `DescribeSnapshotTierStatusPaginator.paginate` method:
 `DescribeSnapshotTierStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeSnapshotTierStatusResultTypeDef](./type_defs.md#describesnapshottierstatusresulttypedef)\].
 
+<a id="describesnapshotspaginator"></a>
+
 ## DescribeSnapshotsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_snapshots")`.
@@ -2044,10 +2316,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_snapshots")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSnapshotsPaginator
 
 def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
-    return boto3.client("ec2").get_paginator("describe_snapshots")
+    return Session().client("ec2").get_paginator("describe_snapshots")
 ```
 
 Boto3 documentation:
@@ -2066,6 +2340,8 @@ Arguments for `DescribeSnapshotsPaginator.paginate` method:
 `DescribeSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef)\].
 
+<a id="describespotfleetinstancespaginator"></a>
+
 ## DescribeSpotFleetInstancesPaginator
 
 Type annotations for
@@ -2074,10 +2350,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSpotFleetInstancesPaginator
 
 def get_describe_spot_fleet_instances_paginator() -> DescribeSpotFleetInstancesPaginator:
-    return boto3.client("ec2").get_paginator("describe_spot_fleet_instances")
+    return Session().client("ec2").get_paginator("describe_spot_fleet_instances")
 ```
 
 Boto3 documentation:
@@ -2093,6 +2371,8 @@ Arguments for `DescribeSpotFleetInstancesPaginator.paginate` method:
 `DescribeSpotFleetInstancesPaginator.paginate` returns
 `_PageIterator`\[[DescribeSpotFleetInstancesResponseTypeDef](./type_defs.md#describespotfleetinstancesresponsetypedef)\].
 
+<a id="describespotfleetrequestspaginator"></a>
+
 ## DescribeSpotFleetRequestsPaginator
 
 Type annotations for
@@ -2101,10 +2381,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSpotFleetRequestsPaginator
 
 def get_describe_spot_fleet_requests_paginator() -> DescribeSpotFleetRequestsPaginator:
-    return boto3.client("ec2").get_paginator("describe_spot_fleet_requests")
+    return Session().client("ec2").get_paginator("describe_spot_fleet_requests")
 ```
 
 Boto3 documentation:
@@ -2120,6 +2402,8 @@ Arguments for `DescribeSpotFleetRequestsPaginator.paginate` method:
 `DescribeSpotFleetRequestsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSpotFleetRequestsResponseTypeDef](./type_defs.md#describespotfleetrequestsresponsetypedef)\].
 
+<a id="describespotinstancerequestspaginator"></a>
+
 ## DescribeSpotInstanceRequestsPaginator
 
 Type annotations for
@@ -2128,10 +2412,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSpotInstanceRequestsPaginator
 
 def get_describe_spot_instance_requests_paginator() -> DescribeSpotInstanceRequestsPaginator:
-    return boto3.client("ec2").get_paginator("describe_spot_instance_requests")
+    return Session().client("ec2").get_paginator("describe_spot_instance_requests")
 ```
 
 Boto3 documentation:
@@ -2148,6 +2434,8 @@ Arguments for `DescribeSpotInstanceRequestsPaginator.paginate` method:
 `DescribeSpotInstanceRequestsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSpotInstanceRequestsResultTypeDef](./type_defs.md#describespotinstancerequestsresulttypedef)\].
 
+<a id="describespotpricehistorypaginator"></a>
+
 ## DescribeSpotPriceHistoryPaginator
 
 Type annotations for
@@ -2156,10 +2444,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSpotPriceHistoryPaginator
 
 def get_describe_spot_price_history_paginator() -> DescribeSpotPriceHistoryPaginator:
-    return boto3.client("ec2").get_paginator("describe_spot_price_history")
+    return Session().client("ec2").get_paginator("describe_spot_price_history")
 ```
 
 Boto3 documentation:
@@ -2181,6 +2471,8 @@ Arguments for `DescribeSpotPriceHistoryPaginator.paginate` method:
 `DescribeSpotPriceHistoryPaginator.paginate` returns
 `_PageIterator`\[[DescribeSpotPriceHistoryResultTypeDef](./type_defs.md#describespotpricehistoryresulttypedef)\].
 
+<a id="describestalesecuritygroupspaginator"></a>
+
 ## DescribeStaleSecurityGroupsPaginator
 
 Type annotations for
@@ -2189,10 +2481,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeStaleSecurityGroupsPaginator
 
 def get_describe_stale_security_groups_paginator() -> DescribeStaleSecurityGroupsPaginator:
-    return boto3.client("ec2").get_paginator("describe_stale_security_groups")
+    return Session().client("ec2").get_paginator("describe_stale_security_groups")
 ```
 
 Boto3 documentation:
@@ -2208,6 +2502,8 @@ Arguments for `DescribeStaleSecurityGroupsPaginator.paginate` method:
 `DescribeStaleSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeStaleSecurityGroupsResultTypeDef](./type_defs.md#describestalesecuritygroupsresulttypedef)\].
 
+<a id="describestoreimagetaskspaginator"></a>
+
 ## DescribeStoreImageTasksPaginator
 
 Type annotations for
@@ -2216,10 +2512,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeStoreImageTasksPaginator
 
 def get_describe_store_image_tasks_paginator() -> DescribeStoreImageTasksPaginator:
-    return boto3.client("ec2").get_paginator("describe_store_image_tasks")
+    return Session().client("ec2").get_paginator("describe_store_image_tasks")
 ```
 
 Boto3 documentation:
@@ -2236,6 +2534,8 @@ Arguments for `DescribeStoreImageTasksPaginator.paginate` method:
 `DescribeStoreImageTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeStoreImageTasksResultTypeDef](./type_defs.md#describestoreimagetasksresulttypedef)\].
 
+<a id="describesubnetspaginator"></a>
+
 ## DescribeSubnetsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_subnets")`.
@@ -2243,10 +2543,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_subnets")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeSubnetsPaginator
 
 def get_describe_subnets_paginator() -> DescribeSubnetsPaginator:
-    return boto3.client("ec2").get_paginator("describe_subnets")
+    return Session().client("ec2").get_paginator("describe_subnets")
 ```
 
 Boto3 documentation:
@@ -2263,6 +2565,8 @@ Arguments for `DescribeSubnetsPaginator.paginate` method:
 `DescribeSubnetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSubnetsResultTypeDef](./type_defs.md#describesubnetsresulttypedef)\].
 
+<a id="describetagspaginator"></a>
+
 ## DescribeTagsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_tags")`.
@@ -2270,10 +2574,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_tags")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTagsPaginator
 
 def get_describe_tags_paginator() -> DescribeTagsPaginator:
-    return boto3.client("ec2").get_paginator("describe_tags")
+    return Session().client("ec2").get_paginator("describe_tags")
 ```
 
 Boto3 documentation:
@@ -2289,6 +2595,8 @@ Arguments for `DescribeTagsPaginator.paginate` method:
 `DescribeTagsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef)\].
 
+<a id="describetrafficmirrorfilterspaginator"></a>
+
 ## DescribeTrafficMirrorFiltersPaginator
 
 Type annotations for
@@ -2297,10 +2605,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTrafficMirrorFiltersPaginator
 
 def get_describe_traffic_mirror_filters_paginator() -> DescribeTrafficMirrorFiltersPaginator:
-    return boto3.client("ec2").get_paginator("describe_traffic_mirror_filters")
+    return Session().client("ec2").get_paginator("describe_traffic_mirror_filters")
 ```
 
 Boto3 documentation:
@@ -2317,6 +2627,8 @@ Arguments for `DescribeTrafficMirrorFiltersPaginator.paginate` method:
 `DescribeTrafficMirrorFiltersPaginator.paginate` returns
 `_PageIterator`\[[DescribeTrafficMirrorFiltersResultTypeDef](./type_defs.md#describetrafficmirrorfiltersresulttypedef)\].
 
+<a id="describetrafficmirrorsessionspaginator"></a>
+
 ## DescribeTrafficMirrorSessionsPaginator
 
 Type annotations for
@@ -2325,10 +2637,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTrafficMirrorSessionsPaginator
 
 def get_describe_traffic_mirror_sessions_paginator() -> DescribeTrafficMirrorSessionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_traffic_mirror_sessions")
+    return Session().client("ec2").get_paginator("describe_traffic_mirror_sessions")
 ```
 
 Boto3 documentation:
@@ -2345,6 +2659,8 @@ Arguments for `DescribeTrafficMirrorSessionsPaginator.paginate` method:
 `DescribeTrafficMirrorSessionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTrafficMirrorSessionsResultTypeDef](./type_defs.md#describetrafficmirrorsessionsresulttypedef)\].
 
+<a id="describetrafficmirrortargetspaginator"></a>
+
 ## DescribeTrafficMirrorTargetsPaginator
 
 Type annotations for
@@ -2353,10 +2669,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTrafficMirrorTargetsPaginator
 
 def get_describe_traffic_mirror_targets_paginator() -> DescribeTrafficMirrorTargetsPaginator:
-    return boto3.client("ec2").get_paginator("describe_traffic_mirror_targets")
+    return Session().client("ec2").get_paginator("describe_traffic_mirror_targets")
 ```
 
 Boto3 documentation:
@@ -2373,6 +2691,8 @@ Arguments for `DescribeTrafficMirrorTargetsPaginator.paginate` method:
 `DescribeTrafficMirrorTargetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTrafficMirrorTargetsResultTypeDef](./type_defs.md#describetrafficmirrortargetsresulttypedef)\].
 
+<a id="describetransitgatewayattachmentspaginator"></a>
+
 ## DescribeTransitGatewayAttachmentsPaginator
 
 Type annotations for
@@ -2381,10 +2701,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayAttachmentsPaginator
 
 def get_describe_transit_gateway_attachments_paginator() -> DescribeTransitGatewayAttachmentsPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_attachments")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_attachments")
 ```
 
 Boto3 documentation:
@@ -2401,6 +2723,8 @@ Arguments for `DescribeTransitGatewayAttachmentsPaginator.paginate` method:
 `DescribeTransitGatewayAttachmentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayattachmentsresulttypedef)\].
 
+<a id="describetransitgatewayconnectpeerspaginator"></a>
+
 ## DescribeTransitGatewayConnectPeersPaginator
 
 Type annotations for
@@ -2409,10 +2733,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectPeersPaginator
 
 def get_describe_transit_gateway_connect_peers_paginator() -> DescribeTransitGatewayConnectPeersPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_connect_peers")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_connect_peers")
 ```
 
 Boto3 documentation:
@@ -2429,6 +2755,8 @@ Arguments for `DescribeTransitGatewayConnectPeersPaginator.paginate` method:
 `DescribeTransitGatewayConnectPeersPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayConnectPeersResultTypeDef](./type_defs.md#describetransitgatewayconnectpeersresulttypedef)\].
 
+<a id="describetransitgatewayconnectspaginator"></a>
+
 ## DescribeTransitGatewayConnectsPaginator
 
 Type annotations for
@@ -2437,10 +2765,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayConnectsPaginator
 
 def get_describe_transit_gateway_connects_paginator() -> DescribeTransitGatewayConnectsPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_connects")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_connects")
 ```
 
 Boto3 documentation:
@@ -2457,6 +2787,8 @@ Arguments for `DescribeTransitGatewayConnectsPaginator.paginate` method:
 `DescribeTransitGatewayConnectsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayConnectsResultTypeDef](./type_defs.md#describetransitgatewayconnectsresulttypedef)\].
 
+<a id="describetransitgatewaymulticastdomainspaginator"></a>
+
 ## DescribeTransitGatewayMulticastDomainsPaginator
 
 Type annotations for
@@ -2465,10 +2797,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayMulticastDomainsPaginator
 
 def get_describe_transit_gateway_multicast_domains_paginator() -> DescribeTransitGatewayMulticastDomainsPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_multicast_domains")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_multicast_domains")
 ```
 
 Boto3 documentation:
@@ -2486,6 +2820,8 @@ method:
 `DescribeTransitGatewayMulticastDomainsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayMulticastDomainsResultTypeDef](./type_defs.md#describetransitgatewaymulticastdomainsresulttypedef)\].
 
+<a id="describetransitgatewaypeeringattachmentspaginator"></a>
+
 ## DescribeTransitGatewayPeeringAttachmentsPaginator
 
 Type annotations for
@@ -2494,10 +2830,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayPeeringAttachmentsPaginator
 
 def get_describe_transit_gateway_peering_attachments_paginator() -> DescribeTransitGatewayPeeringAttachmentsPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_peering_attachments")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_peering_attachments")
 ```
 
 Boto3 documentation:
@@ -2515,6 +2853,8 @@ method:
 `DescribeTransitGatewayPeeringAttachmentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayPeeringAttachmentsResultTypeDef](./type_defs.md#describetransitgatewaypeeringattachmentsresulttypedef)\].
 
+<a id="describetransitgatewayroutetablespaginator"></a>
+
 ## DescribeTransitGatewayRouteTablesPaginator
 
 Type annotations for
@@ -2523,10 +2863,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayRouteTablesPaginator
 
 def get_describe_transit_gateway_route_tables_paginator() -> DescribeTransitGatewayRouteTablesPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_route_tables")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_route_tables")
 ```
 
 Boto3 documentation:
@@ -2543,6 +2885,8 @@ Arguments for `DescribeTransitGatewayRouteTablesPaginator.paginate` method:
 `DescribeTransitGatewayRouteTablesPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayRouteTablesResultTypeDef](./type_defs.md#describetransitgatewayroutetablesresulttypedef)\].
 
+<a id="describetransitgatewayvpcattachmentspaginator"></a>
+
 ## DescribeTransitGatewayVpcAttachmentsPaginator
 
 Type annotations for
@@ -2551,10 +2895,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewayVpcAttachmentsPaginator
 
 def get_describe_transit_gateway_vpc_attachments_paginator() -> DescribeTransitGatewayVpcAttachmentsPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")
+    return Session().client("ec2").get_paginator("describe_transit_gateway_vpc_attachments")
 ```
 
 Boto3 documentation:
@@ -2571,6 +2917,8 @@ Arguments for `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` method:
 `DescribeTransitGatewayVpcAttachmentsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewayVpcAttachmentsResultTypeDef](./type_defs.md#describetransitgatewayvpcattachmentsresulttypedef)\].
 
+<a id="describetransitgatewayspaginator"></a>
+
 ## DescribeTransitGatewaysPaginator
 
 Type annotations for
@@ -2579,10 +2927,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTransitGatewaysPaginator
 
 def get_describe_transit_gateways_paginator() -> DescribeTransitGatewaysPaginator:
-    return boto3.client("ec2").get_paginator("describe_transit_gateways")
+    return Session().client("ec2").get_paginator("describe_transit_gateways")
 ```
 
 Boto3 documentation:
@@ -2599,6 +2949,8 @@ Arguments for `DescribeTransitGatewaysPaginator.paginate` method:
 `DescribeTransitGatewaysPaginator.paginate` returns
 `_PageIterator`\[[DescribeTransitGatewaysResultTypeDef](./type_defs.md#describetransitgatewaysresulttypedef)\].
 
+<a id="describetrunkinterfaceassociationspaginator"></a>
+
 ## DescribeTrunkInterfaceAssociationsPaginator
 
 Type annotations for
@@ -2607,10 +2959,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeTrunkInterfaceAssociationsPaginator
 
 def get_describe_trunk_interface_associations_paginator() -> DescribeTrunkInterfaceAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_trunk_interface_associations")
+    return Session().client("ec2").get_paginator("describe_trunk_interface_associations")
 ```
 
 Boto3 documentation:
@@ -2627,6 +2981,8 @@ Arguments for `DescribeTrunkInterfaceAssociationsPaginator.paginate` method:
 `DescribeTrunkInterfaceAssociationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeTrunkInterfaceAssociationsResultTypeDef](./type_defs.md#describetrunkinterfaceassociationsresulttypedef)\].
 
+<a id="describevolumestatuspaginator"></a>
+
 ## DescribeVolumeStatusPaginator
 
 Type annotations for
@@ -2635,10 +2991,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVolumeStatusPaginator
 
 def get_describe_volume_status_paginator() -> DescribeVolumeStatusPaginator:
-    return boto3.client("ec2").get_paginator("describe_volume_status")
+    return Session().client("ec2").get_paginator("describe_volume_status")
 ```
 
 Boto3 documentation:
@@ -2655,6 +3013,8 @@ Arguments for `DescribeVolumeStatusPaginator.paginate` method:
 `DescribeVolumeStatusPaginator.paginate` returns
 `_PageIterator`\[[DescribeVolumeStatusResultTypeDef](./type_defs.md#describevolumestatusresulttypedef)\].
 
+<a id="describevolumespaginator"></a>
+
 ## DescribeVolumesPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_volumes")`.
@@ -2662,10 +3022,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_volumes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVolumesPaginator
 
 def get_describe_volumes_paginator() -> DescribeVolumesPaginator:
-    return boto3.client("ec2").get_paginator("describe_volumes")
+    return Session().client("ec2").get_paginator("describe_volumes")
 ```
 
 Boto3 documentation:
@@ -2682,6 +3044,8 @@ Arguments for `DescribeVolumesPaginator.paginate` method:
 `DescribeVolumesPaginator.paginate` returns
 `_PageIterator`\[[DescribeVolumesResultTypeDef](./type_defs.md#describevolumesresulttypedef)\].
 
+<a id="describevolumesmodificationspaginator"></a>
+
 ## DescribeVolumesModificationsPaginator
 
 Type annotations for
@@ -2690,10 +3054,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVolumesModificationsPaginator
 
 def get_describe_volumes_modifications_paginator() -> DescribeVolumesModificationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_volumes_modifications")
+    return Session().client("ec2").get_paginator("describe_volumes_modifications")
 ```
 
 Boto3 documentation:
@@ -2710,6 +3076,8 @@ Arguments for `DescribeVolumesModificationsPaginator.paginate` method:
 `DescribeVolumesModificationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVolumesModificationsResultTypeDef](./type_defs.md#describevolumesmodificationsresulttypedef)\].
 
+<a id="describevpcclassiclinkdnssupportpaginator"></a>
+
 ## DescribeVpcClassicLinkDnsSupportPaginator
 
 Type annotations for
@@ -2718,10 +3086,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcClassicLinkDnsSupportPaginator
 
 def get_describe_vpc_classic_link_dns_support_paginator() -> DescribeVpcClassicLinkDnsSupportPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_classic_link_dns_support")
+    return Session().client("ec2").get_paginator("describe_vpc_classic_link_dns_support")
 ```
 
 Boto3 documentation:
@@ -2736,6 +3106,8 @@ Arguments for `DescribeVpcClassicLinkDnsSupportPaginator.paginate` method:
 `DescribeVpcClassicLinkDnsSupportPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcClassicLinkDnsSupportResultTypeDef](./type_defs.md#describevpcclassiclinkdnssupportresulttypedef)\].
 
+<a id="describevpcendpointconnectionnotificationspaginator"></a>
+
 ## DescribeVpcEndpointConnectionNotificationsPaginator
 
 Type annotations for
@@ -2744,10 +3116,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionNotificationsPaginator
 
 def get_describe_vpc_endpoint_connection_notifications_paginator() -> DescribeVpcEndpointConnectionNotificationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")
+    return Session().client("ec2").get_paginator("describe_vpc_endpoint_connection_notifications")
 ```
 
 Boto3 documentation:
@@ -2765,6 +3139,8 @@ method:
 `DescribeVpcEndpointConnectionNotificationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcEndpointConnectionNotificationsResultTypeDef](./type_defs.md#describevpcendpointconnectionnotificationsresulttypedef)\].
 
+<a id="describevpcendpointconnectionspaginator"></a>
+
 ## DescribeVpcEndpointConnectionsPaginator
 
 Type annotations for
@@ -2773,10 +3149,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointConnectionsPaginator
 
 def get_describe_vpc_endpoint_connections_paginator() -> DescribeVpcEndpointConnectionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_endpoint_connections")
+    return Session().client("ec2").get_paginator("describe_vpc_endpoint_connections")
 ```
 
 Boto3 documentation:
@@ -2792,6 +3170,8 @@ Arguments for `DescribeVpcEndpointConnectionsPaginator.paginate` method:
 `DescribeVpcEndpointConnectionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcEndpointConnectionsResultTypeDef](./type_defs.md#describevpcendpointconnectionsresulttypedef)\].
 
+<a id="describevpcendpointserviceconfigurationspaginator"></a>
+
 ## DescribeVpcEndpointServiceConfigurationsPaginator
 
 Type annotations for
@@ -2800,10 +3180,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointServiceConfigurationsPaginator
 
 def get_describe_vpc_endpoint_service_configurations_paginator() -> DescribeVpcEndpointServiceConfigurationsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")
+    return Session().client("ec2").get_paginator("describe_vpc_endpoint_service_configurations")
 ```
 
 Boto3 documentation:
@@ -2821,6 +3203,8 @@ method:
 `DescribeVpcEndpointServiceConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcEndpointServiceConfigurationsResultTypeDef](./type_defs.md#describevpcendpointserviceconfigurationsresulttypedef)\].
 
+<a id="describevpcendpointservicepermissionspaginator"></a>
+
 ## DescribeVpcEndpointServicePermissionsPaginator
 
 Type annotations for
@@ -2829,10 +3213,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicePermissionsPaginator
 
 def get_describe_vpc_endpoint_service_permissions_paginator() -> DescribeVpcEndpointServicePermissionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")
+    return Session().client("ec2").get_paginator("describe_vpc_endpoint_service_permissions")
 ```
 
 Boto3 documentation:
@@ -2849,6 +3235,8 @@ Arguments for `DescribeVpcEndpointServicePermissionsPaginator.paginate` method:
 `DescribeVpcEndpointServicePermissionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcEndpointServicePermissionsResultTypeDef](./type_defs.md#describevpcendpointservicepermissionsresulttypedef)\].
 
+<a id="describevpcendpointservicespaginator"></a>
+
 ## DescribeVpcEndpointServicesPaginator
 
 Type annotations for
@@ -2857,10 +3245,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointServicesPaginator
 
 def get_describe_vpc_endpoint_services_paginator() -> DescribeVpcEndpointServicesPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_endpoint_services")
+    return Session().client("ec2").get_paginator("describe_vpc_endpoint_services")
 ```
 
 Boto3 documentation:
@@ -2877,6 +3267,8 @@ Arguments for `DescribeVpcEndpointServicesPaginator.paginate` method:
 `DescribeVpcEndpointServicesPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcEndpointServicesResultTypeDef](./type_defs.md#describevpcendpointservicesresulttypedef)\].
 
+<a id="describevpcendpointspaginator"></a>
+
 ## DescribeVpcEndpointsPaginator
 
 Type annotations for
@@ -2885,10 +3277,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcEndpointsPaginator
 
 def get_describe_vpc_endpoints_paginator() -> DescribeVpcEndpointsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_endpoints")
+    return Session().client("ec2").get_paginator("describe_vpc_endpoints")
 ```
 
 Boto3 documentation:
@@ -2905,6 +3299,8 @@ Arguments for `DescribeVpcEndpointsPaginator.paginate` method:
 `DescribeVpcEndpointsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcEndpointsResultTypeDef](./type_defs.md#describevpcendpointsresulttypedef)\].
 
+<a id="describevpcpeeringconnectionspaginator"></a>
+
 ## DescribeVpcPeeringConnectionsPaginator
 
 Type annotations for
@@ -2913,10 +3309,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcPeeringConnectionsPaginator
 
 def get_describe_vpc_peering_connections_paginator() -> DescribeVpcPeeringConnectionsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpc_peering_connections")
+    return Session().client("ec2").get_paginator("describe_vpc_peering_connections")
 ```
 
 Boto3 documentation:
@@ -2933,6 +3331,8 @@ Arguments for `DescribeVpcPeeringConnectionsPaginator.paginate` method:
 `DescribeVpcPeeringConnectionsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcPeeringConnectionsResultTypeDef](./type_defs.md#describevpcpeeringconnectionsresulttypedef)\].
 
+<a id="describevpcspaginator"></a>
+
 ## DescribeVpcsPaginator
 
 Type annotations for `boto3.client("ec2").get_paginator("describe_vpcs")`.
@@ -2940,10 +3340,12 @@ Type annotations for `boto3.client("ec2").get_paginator("describe_vpcs")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import DescribeVpcsPaginator
 
 def get_describe_vpcs_paginator() -> DescribeVpcsPaginator:
-    return boto3.client("ec2").get_paginator("describe_vpcs")
+    return Session().client("ec2").get_paginator("describe_vpcs")
 ```
 
 Boto3 documentation:
@@ -2960,6 +3362,8 @@ Arguments for `DescribeVpcsPaginator.paginate` method:
 `DescribeVpcsPaginator.paginate` returns
 `_PageIterator`\[[DescribeVpcsResultTypeDef](./type_defs.md#describevpcsresulttypedef)\].
 
+<a id="getassociatedipv6poolcidrspaginator"></a>
+
 ## GetAssociatedIpv6PoolCidrsPaginator
 
 Type annotations for
@@ -2968,10 +3372,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetAssociatedIpv6PoolCidrsPaginator
 
 def get_get_associated_ipv6_pool_cidrs_paginator() -> GetAssociatedIpv6PoolCidrsPaginator:
-    return boto3.client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")
+    return Session().client("ec2").get_paginator("get_associated_ipv6_pool_cidrs")
 ```
 
 Boto3 documentation:
@@ -2987,6 +3393,8 @@ Arguments for `GetAssociatedIpv6PoolCidrsPaginator.paginate` method:
 `GetAssociatedIpv6PoolCidrsPaginator.paginate` returns
 `_PageIterator`\[[GetAssociatedIpv6PoolCidrsResultTypeDef](./type_defs.md#getassociatedipv6poolcidrsresulttypedef)\].
 
+<a id="getgroupsforcapacityreservationpaginator"></a>
+
 ## GetGroupsForCapacityReservationPaginator
 
 Type annotations for
@@ -2995,10 +3403,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetGroupsForCapacityReservationPaginator
 
 def get_get_groups_for_capacity_reservation_paginator() -> GetGroupsForCapacityReservationPaginator:
-    return boto3.client("ec2").get_paginator("get_groups_for_capacity_reservation")
+    return Session().client("ec2").get_paginator("get_groups_for_capacity_reservation")
 ```
 
 Boto3 documentation:
@@ -3014,6 +3424,8 @@ Arguments for `GetGroupsForCapacityReservationPaginator.paginate` method:
 `GetGroupsForCapacityReservationPaginator.paginate` returns
 `_PageIterator`\[[GetGroupsForCapacityReservationResultTypeDef](./type_defs.md#getgroupsforcapacityreservationresulttypedef)\].
 
+<a id="getinstancetypesfrominstancerequirementspaginator"></a>
+
 ## GetInstanceTypesFromInstanceRequirementsPaginator
 
 Type annotations for
@@ -3022,10 +3434,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetInstanceTypesFromInstanceRequirementsPaginator
 
 def get_get_instance_types_from_instance_requirements_paginator() -> GetInstanceTypesFromInstanceRequirementsPaginator:
-    return boto3.client("ec2").get_paginator("get_instance_types_from_instance_requirements")
+    return Session().client("ec2").get_paginator("get_instance_types_from_instance_requirements")
 ```
 
 Boto3 documentation:
@@ -3050,6 +3464,8 @@ method:
 `GetInstanceTypesFromInstanceRequirementsPaginator.paginate` returns
 `_PageIterator`\[[GetInstanceTypesFromInstanceRequirementsResultTypeDef](./type_defs.md#getinstancetypesfrominstancerequirementsresulttypedef)\].
 
+<a id="getipamaddresshistorypaginator"></a>
+
 ## GetIpamAddressHistoryPaginator
 
 Type annotations for
@@ -3058,10 +3474,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetIpamAddressHistoryPaginator
 
 def get_get_ipam_address_history_paginator() -> GetIpamAddressHistoryPaginator:
-    return boto3.client("ec2").get_paginator("get_ipam_address_history")
+    return Session().client("ec2").get_paginator("get_ipam_address_history")
 ```
 
 Boto3 documentation:
@@ -3081,6 +3499,8 @@ Arguments for `GetIpamAddressHistoryPaginator.paginate` method:
 `GetIpamAddressHistoryPaginator.paginate` returns
 `_PageIterator`\[[GetIpamAddressHistoryResultTypeDef](./type_defs.md#getipamaddresshistoryresulttypedef)\].
 
+<a id="getipampoolallocationspaginator"></a>
+
 ## GetIpamPoolAllocationsPaginator
 
 Type annotations for
@@ -3089,10 +3509,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetIpamPoolAllocationsPaginator
 
 def get_get_ipam_pool_allocations_paginator() -> GetIpamPoolAllocationsPaginator:
-    return boto3.client("ec2").get_paginator("get_ipam_pool_allocations")
+    return Session().client("ec2").get_paginator("get_ipam_pool_allocations")
 ```
 
 Boto3 documentation:
@@ -3110,6 +3532,8 @@ Arguments for `GetIpamPoolAllocationsPaginator.paginate` method:
 `GetIpamPoolAllocationsPaginator.paginate` returns
 `_PageIterator`\[[GetIpamPoolAllocationsResultTypeDef](./type_defs.md#getipampoolallocationsresulttypedef)\].
 
+<a id="getipampoolcidrspaginator"></a>
+
 ## GetIpamPoolCidrsPaginator
 
 Type annotations for
@@ -3118,10 +3542,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetIpamPoolCidrsPaginator
 
 def get_get_ipam_pool_cidrs_paginator() -> GetIpamPoolCidrsPaginator:
-    return boto3.client("ec2").get_paginator("get_ipam_pool_cidrs")
+    return Session().client("ec2").get_paginator("get_ipam_pool_cidrs")
 ```
 
 Boto3 documentation:
@@ -3138,6 +3564,8 @@ Arguments for `GetIpamPoolCidrsPaginator.paginate` method:
 `GetIpamPoolCidrsPaginator.paginate` returns
 `_PageIterator`\[[GetIpamPoolCidrsResultTypeDef](./type_defs.md#getipampoolcidrsresulttypedef)\].
 
+<a id="getipamresourcecidrspaginator"></a>
+
 ## GetIpamResourceCidrsPaginator
 
 Type annotations for
@@ -3146,10 +3574,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetIpamResourceCidrsPaginator
 
 def get_get_ipam_resource_cidrs_paginator() -> GetIpamResourceCidrsPaginator:
-    return boto3.client("ec2").get_paginator("get_ipam_resource_cidrs")
+    return Session().client("ec2").get_paginator("get_ipam_resource_cidrs")
 ```
 
 Boto3 documentation:
@@ -3172,6 +3602,8 @@ Arguments for `GetIpamResourceCidrsPaginator.paginate` method:
 `GetIpamResourceCidrsPaginator.paginate` returns
 `_PageIterator`\[[GetIpamResourceCidrsResultTypeDef](./type_defs.md#getipamresourcecidrsresulttypedef)\].
 
+<a id="getmanagedprefixlistassociationspaginator"></a>
+
 ## GetManagedPrefixListAssociationsPaginator
 
 Type annotations for
@@ -3180,10 +3612,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetManagedPrefixListAssociationsPaginator
 
 def get_get_managed_prefix_list_associations_paginator() -> GetManagedPrefixListAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("get_managed_prefix_list_associations")
+    return Session().client("ec2").get_paginator("get_managed_prefix_list_associations")
 ```
 
 Boto3 documentation:
@@ -3199,6 +3633,8 @@ Arguments for `GetManagedPrefixListAssociationsPaginator.paginate` method:
 `GetManagedPrefixListAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetManagedPrefixListAssociationsResultTypeDef](./type_defs.md#getmanagedprefixlistassociationsresulttypedef)\].
 
+<a id="getmanagedprefixlistentriespaginator"></a>
+
 ## GetManagedPrefixListEntriesPaginator
 
 Type annotations for
@@ -3207,10 +3643,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetManagedPrefixListEntriesPaginator
 
 def get_get_managed_prefix_list_entries_paginator() -> GetManagedPrefixListEntriesPaginator:
-    return boto3.client("ec2").get_paginator("get_managed_prefix_list_entries")
+    return Session().client("ec2").get_paginator("get_managed_prefix_list_entries")
 ```
 
 Boto3 documentation:
@@ -3227,6 +3665,8 @@ Arguments for `GetManagedPrefixListEntriesPaginator.paginate` method:
 `GetManagedPrefixListEntriesPaginator.paginate` returns
 `_PageIterator`\[[GetManagedPrefixListEntriesResultTypeDef](./type_defs.md#getmanagedprefixlistentriesresulttypedef)\].
 
+<a id="getspotplacementscorespaginator"></a>
+
 ## GetSpotPlacementScoresPaginator
 
 Type annotations for
@@ -3235,10 +3675,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetSpotPlacementScoresPaginator
 
 def get_get_spot_placement_scores_paginator() -> GetSpotPlacementScoresPaginator:
-    return boto3.client("ec2").get_paginator("get_spot_placement_scores")
+    return Session().client("ec2").get_paginator("get_spot_placement_scores")
 ```
 
 Boto3 documentation:
@@ -3261,6 +3703,8 @@ Arguments for `GetSpotPlacementScoresPaginator.paginate` method:
 `GetSpotPlacementScoresPaginator.paginate` returns
 `_PageIterator`\[[GetSpotPlacementScoresResultTypeDef](./type_defs.md#getspotplacementscoresresulttypedef)\].
 
+<a id="gettransitgatewayattachmentpropagationspaginator"></a>
+
 ## GetTransitGatewayAttachmentPropagationsPaginator
 
 Type annotations for
@@ -3269,10 +3713,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetTransitGatewayAttachmentPropagationsPaginator
 
 def get_get_transit_gateway_attachment_propagations_paginator() -> GetTransitGatewayAttachmentPropagationsPaginator:
-    return boto3.client("ec2").get_paginator("get_transit_gateway_attachment_propagations")
+    return Session().client("ec2").get_paginator("get_transit_gateway_attachment_propagations")
 ```
 
 Boto3 documentation:
@@ -3290,6 +3736,8 @@ method:
 `GetTransitGatewayAttachmentPropagationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayAttachmentPropagationsResultTypeDef](./type_defs.md#gettransitgatewayattachmentpropagationsresulttypedef)\].
 
+<a id="gettransitgatewaymulticastdomainassociationspaginator"></a>
+
 ## GetTransitGatewayMulticastDomainAssociationsPaginator
 
 Type annotations for
@@ -3298,10 +3746,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetTransitGatewayMulticastDomainAssociationsPaginator
 
 def get_get_transit_gateway_multicast_domain_associations_paginator() -> GetTransitGatewayMulticastDomainAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")
+    return Session().client("ec2").get_paginator("get_transit_gateway_multicast_domain_associations")
 ```
 
 Boto3 documentation:
@@ -3319,6 +3769,8 @@ method:
 `GetTransitGatewayMulticastDomainAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayMulticastDomainAssociationsResultTypeDef](./type_defs.md#gettransitgatewaymulticastdomainassociationsresulttypedef)\].
 
+<a id="gettransitgatewayprefixlistreferencespaginator"></a>
+
 ## GetTransitGatewayPrefixListReferencesPaginator
 
 Type annotations for
@@ -3327,10 +3779,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetTransitGatewayPrefixListReferencesPaginator
 
 def get_get_transit_gateway_prefix_list_references_paginator() -> GetTransitGatewayPrefixListReferencesPaginator:
-    return boto3.client("ec2").get_paginator("get_transit_gateway_prefix_list_references")
+    return Session().client("ec2").get_paginator("get_transit_gateway_prefix_list_references")
 ```
 
 Boto3 documentation:
@@ -3347,6 +3801,8 @@ Arguments for `GetTransitGatewayPrefixListReferencesPaginator.paginate` method:
 `GetTransitGatewayPrefixListReferencesPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayPrefixListReferencesResultTypeDef](./type_defs.md#gettransitgatewayprefixlistreferencesresulttypedef)\].
 
+<a id="gettransitgatewayroutetableassociationspaginator"></a>
+
 ## GetTransitGatewayRouteTableAssociationsPaginator
 
 Type annotations for
@@ -3355,10 +3811,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTableAssociationsPaginator
 
 def get_get_transit_gateway_route_table_associations_paginator() -> GetTransitGatewayRouteTableAssociationsPaginator:
-    return boto3.client("ec2").get_paginator("get_transit_gateway_route_table_associations")
+    return Session().client("ec2").get_paginator("get_transit_gateway_route_table_associations")
 ```
 
 Boto3 documentation:
@@ -3376,6 +3834,8 @@ method:
 `GetTransitGatewayRouteTableAssociationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayRouteTableAssociationsResultTypeDef](./type_defs.md#gettransitgatewayroutetableassociationsresulttypedef)\].
 
+<a id="gettransitgatewayroutetablepropagationspaginator"></a>
+
 ## GetTransitGatewayRouteTablePropagationsPaginator
 
 Type annotations for
@@ -3384,10 +3844,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetTransitGatewayRouteTablePropagationsPaginator
 
 def get_get_transit_gateway_route_table_propagations_paginator() -> GetTransitGatewayRouteTablePropagationsPaginator:
-    return boto3.client("ec2").get_paginator("get_transit_gateway_route_table_propagations")
+    return Session().client("ec2").get_paginator("get_transit_gateway_route_table_propagations")
 ```
 
 Boto3 documentation:
@@ -3405,6 +3867,8 @@ method:
 `GetTransitGatewayRouteTablePropagationsPaginator.paginate` returns
 `_PageIterator`\[[GetTransitGatewayRouteTablePropagationsResultTypeDef](./type_defs.md#gettransitgatewayroutetablepropagationsresulttypedef)\].
 
+<a id="getvpnconnectiondevicetypespaginator"></a>
+
 ## GetVpnConnectionDeviceTypesPaginator
 
 Type annotations for
@@ -3413,10 +3877,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import GetVpnConnectionDeviceTypesPaginator
 
 def get_get_vpn_connection_device_types_paginator() -> GetVpnConnectionDeviceTypesPaginator:
-    return boto3.client("ec2").get_paginator("get_vpn_connection_device_types")
+    return Session().client("ec2").get_paginator("get_vpn_connection_device_types")
 ```
 
 Boto3 documentation:
@@ -3431,6 +3897,8 @@ Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
 `GetVpnConnectionDeviceTypesPaginator.paginate` returns
 `_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
 
+<a id="listimagesinrecyclebinpaginator"></a>
+
 ## ListImagesInRecycleBinPaginator
 
 Type annotations for
@@ -3439,10 +3907,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import ListImagesInRecycleBinPaginator
 
 def get_list_images_in_recycle_bin_paginator() -> ListImagesInRecycleBinPaginator:
-    return boto3.client("ec2").get_paginator("list_images_in_recycle_bin")
+    return Session().client("ec2").get_paginator("list_images_in_recycle_bin")
 ```
 
 Boto3 documentation:
@@ -3458,6 +3928,8 @@ Arguments for `ListImagesInRecycleBinPaginator.paginate` method:
 `ListImagesInRecycleBinPaginator.paginate` returns
 `_PageIterator`\[[ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef)\].
 
+<a id="listsnapshotsinrecyclebinpaginator"></a>
+
 ## ListSnapshotsInRecycleBinPaginator
 
 Type annotations for
@@ -3466,10 +3938,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import ListSnapshotsInRecycleBinPaginator
 
 def get_list_snapshots_in_recycle_bin_paginator() -> ListSnapshotsInRecycleBinPaginator:
-    return boto3.client("ec2").get_paginator("list_snapshots_in_recycle_bin")
+    return Session().client("ec2").get_paginator("list_snapshots_in_recycle_bin")
 ```
 
 Boto3 documentation:
@@ -3485,6 +3959,8 @@ Arguments for `ListSnapshotsInRecycleBinPaginator.paginate` method:
 `ListSnapshotsInRecycleBinPaginator.paginate` returns
 `_PageIterator`\[[ListSnapshotsInRecycleBinResultTypeDef](./type_defs.md#listsnapshotsinrecyclebinresulttypedef)\].
 
+<a id="searchlocalgatewayroutespaginator"></a>
+
 ## SearchLocalGatewayRoutesPaginator
 
 Type annotations for
@@ -3493,10 +3969,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import SearchLocalGatewayRoutesPaginator
 
 def get_search_local_gateway_routes_paginator() -> SearchLocalGatewayRoutesPaginator:
-    return boto3.client("ec2").get_paginator("search_local_gateway_routes")
+    return Session().client("ec2").get_paginator("search_local_gateway_routes")
 ```
 
 Boto3 documentation:
@@ -3513,6 +3991,8 @@ Arguments for `SearchLocalGatewayRoutesPaginator.paginate` method:
 `SearchLocalGatewayRoutesPaginator.paginate` returns
 `_PageIterator`\[[SearchLocalGatewayRoutesResultTypeDef](./type_defs.md#searchlocalgatewayroutesresulttypedef)\].
 
+<a id="searchtransitgatewaymulticastgroupspaginator"></a>
+
 ## SearchTransitGatewayMulticastGroupsPaginator
 
 Type annotations for
@@ -3521,10 +4001,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ec2.paginator import SearchTransitGatewayMulticastGroupsPaginator
 
 def get_search_transit_gateway_multicast_groups_paginator() -> SearchTransitGatewayMulticastGroupsPaginator:
-    return boto3.client("ec2").get_paginator("search_transit_gateway_multicast_groups")
+    return Session().client("ec2").get_paginator("search_transit_gateway_multicast_groups")
 ```
 
 Boto3 documentation:

@@ -1,3 +1,5 @@
+<a id="sqsserviceresource-for-boto3-sqs-module"></a>
+
 # SQSServiceResource for boto3 SQS module
 
 > [Index](..) > [SQS](.) > SQSServiceResource
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SQS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS)
 type annotations stubs module
-[mypy_boto3_sqs](https://pypi.org/project/mypy-boto3-sqs/).
+[mypy-boto3-sqs](https://pypi.org/project/mypy-boto3-sqs/).
 
 - [SQSServiceResource for boto3 SQS module](#sqsserviceresource-for-boto3-sqs-module)
   - [SQSServiceResource](#sqsserviceresource)
@@ -26,6 +28,8 @@ type annotations stubs module
     - [Queue collections](#queue-collections)
     - [Queue methods](#queue-methods)
 
+<a id="sqsserviceresource"></a>
+
 ## SQSServiceResource
 
 Type annotations for `boto3.resource("sqs")`, included resources and
@@ -43,13 +47,19 @@ def get_sqs_resource() -> SQSServiceResource:
 Boto3 documentation:
 [SQS.ServiceResource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource)
 
+<a id="attributes"></a>
+
 ## Attributes
 
 - `meta`: [SQSResourceMeta](#sqsresourcemeta)
 
 - `queues`: [ServiceResourceQueuesCollection](#serviceresourcequeuescollection)
 
+<a id="collections"></a>
+
 ## Collections
+
+<a id="serviceresourcequeuescollection"></a>
 
 ### ServiceResourceQueuesCollection
 
@@ -69,7 +79,11 @@ Provides access to [Queue](#queue) resource.
 Boto3 documentation:
 [SQS.ServiceResource.queues](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.queues)
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="sqsserviceresourcemessage-method"></a>
 
 ### SQSServiceResource.Message method
 
@@ -90,6 +104,8 @@ Arguments:
 
 Returns [Message](#message).
 
+<a id="sqsserviceresourcequeue-method"></a>
+
 ### SQSServiceResource.Queue method
 
 Creates a Queue resource.
@@ -107,6 +123,8 @@ Arguments:
 - `url`: `str` *(required)*
 
 Returns [Queue](#queue).
+
+<a id="sqsserviceresourcecreate_queue-method"></a>
 
 ### SQSServiceResource.create_queue method
 
@@ -130,6 +148,8 @@ Keyword-only arguments:
 
 Returns [Queue](#queue).
 
+<a id="sqsserviceresourceget_available_subresources-method"></a>
+
 ### SQSServiceResource.get_available_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
@@ -140,6 +160,8 @@ Boto3 documentation:
 [SQS.ServiceResource.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.get_available_subresources)
 
 Returns `Sequence`\[`str`\].
+
+<a id="sqsserviceresourceget_queue_by_name-method"></a>
 
 ### SQSServiceResource.get_queue_by_name method
 
@@ -160,6 +182,8 @@ Keyword-only arguments:
 
 Returns [Queue](#queue).
 
+<a id="message"></a>
+
 ## Message
 
 Type annotations for `boto3.resource("sqs").Message` class.
@@ -176,6 +200,8 @@ def get_resource() -> Message:
 Boto3 documentation:
 [SQS.Message](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.Message)
 
+<a id="message-attributes"></a>
+
 ### Message attributes
 
 - `message_id`: `str`
@@ -190,7 +216,11 @@ Boto3 documentation:
 - `queue_url`: `str`
 - `receipt_handle`: `str`
 
+<a id="message-methods"></a>
+
 ### Message methods
+
+<a id="messagequeue-method"></a>
 
 #### Message.Queue method
 
@@ -202,6 +232,8 @@ Boto3 documentation:
 [SQS.Message.Queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.Queue)
 
 Returns [Queue](#queue).
+
+<a id="messagechange_visibility-method"></a>
 
 #### Message.change_visibility method
 
@@ -220,6 +252,8 @@ Keyword-only arguments:
 
 - `VisibilityTimeout`: `int` *(required)*
 
+<a id="messagedelete-method"></a>
+
 #### Message.delete method
 
 Deletes the specified message from the specified queue.
@@ -228,6 +262,8 @@ Type annotations for `boto3.resource("sqs").delete` method.
 
 Boto3 documentation:
 [SQS.Message.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.delete)
+
+<a id="messageget_available_subresources-method"></a>
 
 #### Message.get_available_subresources method
 
@@ -239,6 +275,8 @@ Boto3 documentation:
 [SQS.Message.get_available_subresources](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Message.get_available_subresources)
 
 Returns `Sequence`\[`str`\].
+
+<a id="queue"></a>
 
 ## Queue
 
@@ -256,6 +294,8 @@ def get_resource() -> Queue:
 Boto3 documentation:
 [SQS.Queue](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.ServiceResource.Queue)
 
+<a id="queue-attributes"></a>
+
 ### Queue attributes
 
 - `attributes`:
@@ -265,7 +305,11 @@ Boto3 documentation:
 - `dead_letter_source_queues`:
   [QueueDeadLetterSourceQueuesCollection](#queuedeadlettersourcequeuescollection)
 
+<a id="queue-collections"></a>
+
 ### Queue collections
+
+<a id="queuedead_letter_source_queues"></a>
 
 #### Queue.dead_letter_source_queues
 
@@ -287,7 +331,11 @@ Provides access to [Queue](#queue) resource.
 Boto3 documentation:
 [SQS.Queue.QueueDeadLetterSourceQueuesCollection](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.dead_letter_source_queues)
 
+<a id="queue-methods"></a>
+
 ### Queue methods
+
+<a id="queuemessage-method"></a>
 
 #### Queue.Message method
 
@@ -307,6 +355,8 @@ Arguments:
 
 Returns [Message](#message).
 
+<a id="queueadd_permission-method"></a>
+
 #### Queue.add_permission method
 
 Adds a permission to a queue for a specific
@@ -325,6 +375,8 @@ Keyword-only arguments:
 - `Label`: `str` *(required)*
 - `AWSAccountIds`: `Sequence`\[`str`\] *(required)*
 - `Actions`: `Sequence`\[`str`\] *(required)*
+
+<a id="queuechange_message_visibility_batch-method"></a>
 
 #### Queue.change_message_visibility_batch method
 
@@ -348,6 +400,8 @@ Keyword-only arguments:
 Returns
 [ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef).
 
+<a id="queuedelete-method"></a>
+
 #### Queue.delete method
 
 Deletes the queue specified by the `QueueUrl` , regardless of the queue's
@@ -357,6 +411,8 @@ Type annotations for `boto3.resource("sqs").delete` method.
 
 Boto3 documentation:
 [SQS.Queue.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.delete)
+
+<a id="queuedelete_messages-method"></a>
 
 #### Queue.delete_messages method
 
@@ -379,6 +435,8 @@ Keyword-only arguments:
 Returns
 [DeleteMessageBatchResultTypeDef](./type_defs.md#deletemessagebatchresulttypedef).
 
+<a id="queueget_available_subresources-method"></a>
+
 #### Queue.get_available_subresources method
 
 Returns a list of all the available sub-resources for this Resource.
@@ -390,6 +448,8 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
+<a id="queueload-method"></a>
+
 #### Queue.load method
 
 Calls :py:meth:`SQS.Client.get_queue_attributes` to update the attributes of
@@ -400,6 +460,8 @@ Type annotations for `boto3.resource("sqs").load` method.
 Boto3 documentation:
 [SQS.Queue.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.load)
 
+<a id="queuepurge-method"></a>
+
 #### Queue.purge method
 
 Deletes the messages in a queue specified by the `QueueURL` parameter.
@@ -408,6 +470,8 @@ Type annotations for `boto3.resource("sqs").purge` method.
 
 Boto3 documentation:
 [SQS.Queue.purge](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.purge)
+
+<a id="queuereceive_messages-method"></a>
 
 #### Queue.receive_messages method
 
@@ -433,6 +497,8 @@ Keyword-only arguments:
 
 Returns `List`\[[Message](#message)\].
 
+<a id="queuereload-method"></a>
+
 #### Queue.reload method
 
 Calls :py:meth:`SQS.Client.get_queue_attributes` to update the attributes of
@@ -442,6 +508,8 @@ Type annotations for `boto3.resource("sqs").reload` method.
 
 Boto3 documentation:
 [SQS.Queue.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sqs.html#SQS.Queue.reload)
+
+<a id="queueremove_permission-method"></a>
 
 #### Queue.remove_permission method
 
@@ -459,6 +527,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Label`: `str` *(required)*
+
+<a id="queuesend_message-method"></a>
 
 #### Queue.send_message method
 
@@ -486,6 +556,8 @@ Keyword-only arguments:
 
 Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 
+<a id="queuesend_messages-method"></a>
+
 #### Queue.send_messages method
 
 Delivers up to ten messages to the specified queue.
@@ -506,6 +578,8 @@ Keyword-only arguments:
 
 Returns
 [SendMessageBatchResultTypeDef](./type_defs.md#sendmessagebatchresulttypedef).
+
+<a id="queueset_attributes-method"></a>
 
 #### Queue.set_attributes method
 

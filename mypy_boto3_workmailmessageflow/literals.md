@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-workmailmessageflow-module"></a>
+
 # Literals for boto3 WorkMailMessageFlow module
 
 > [Index](..) > [WorkMailMessageFlow](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [WorkMailMessageFlow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workmailmessageflow.html#WorkMailMessageFlow)
 type annotations stubs module
-[mypy_boto3_workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
+[mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 - [Literals for boto3 WorkMailMessageFlow module](#literals-for-boto3-workmailmessageflow-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

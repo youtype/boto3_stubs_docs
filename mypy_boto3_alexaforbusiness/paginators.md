@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-alexaforbusiness-module"></a>
+
 # Paginators for boto3 AlexaForBusiness module
 
 > [Index](..) > [AlexaForBusiness](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [AlexaForBusiness](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/alexaforbusiness.html#AlexaForBusiness)
 type annotations stubs module
-[mypy_boto3_alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
+[mypy-boto3-alexaforbusiness](https://pypi.org/project/mypy-boto3-alexaforbusiness/).
 
 - [Paginators for boto3 AlexaForBusiness module](#paginators-for-boto3-alexaforbusiness-module)
   - [ListBusinessReportSchedulesPaginator](#listbusinessreportschedulespaginator)
@@ -22,6 +24,8 @@ type annotations stubs module
   - [SearchSkillGroupsPaginator](#searchskillgroupspaginator)
   - [SearchUsersPaginator](#searchuserspaginator)
 
+<a id="listbusinessreportschedulespaginator"></a>
+
 ## ListBusinessReportSchedulesPaginator
 
 Type annotations for
@@ -30,10 +34,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListBusinessReportSchedulesPaginator
 
 def get_list_business_report_schedules_paginator() -> ListBusinessReportSchedulesPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_business_report_schedules")
+    return Session().client("alexaforbusiness").get_paginator("list_business_report_schedules")
 ```
 
 Boto3 documentation:
@@ -47,6 +53,8 @@ Arguments for `ListBusinessReportSchedulesPaginator.paginate` method:
 `ListBusinessReportSchedulesPaginator.paginate` returns
 `_PageIterator`\[[ListBusinessReportSchedulesResponseTypeDef](./type_defs.md#listbusinessreportschedulesresponsetypedef)\].
 
+<a id="listconferenceproviderspaginator"></a>
+
 ## ListConferenceProvidersPaginator
 
 Type annotations for
@@ -55,10 +63,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListConferenceProvidersPaginator
 
 def get_list_conference_providers_paginator() -> ListConferenceProvidersPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_conference_providers")
+    return Session().client("alexaforbusiness").get_paginator("list_conference_providers")
 ```
 
 Boto3 documentation:
@@ -72,6 +82,8 @@ Arguments for `ListConferenceProvidersPaginator.paginate` method:
 `ListConferenceProvidersPaginator.paginate` returns
 `_PageIterator`\[[ListConferenceProvidersResponseTypeDef](./type_defs.md#listconferenceprovidersresponsetypedef)\].
 
+<a id="listdeviceeventspaginator"></a>
+
 ## ListDeviceEventsPaginator
 
 Type annotations for
@@ -80,10 +92,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListDeviceEventsPaginator
 
 def get_list_device_events_paginator() -> ListDeviceEventsPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_device_events")
+    return Session().client("alexaforbusiness").get_paginator("list_device_events")
 ```
 
 Boto3 documentation:
@@ -99,6 +113,8 @@ Arguments for `ListDeviceEventsPaginator.paginate` method:
 `ListDeviceEventsPaginator.paginate` returns
 `_PageIterator`\[[ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef)\].
 
+<a id="listskillspaginator"></a>
+
 ## ListSkillsPaginator
 
 Type annotations for
@@ -107,10 +123,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListSkillsPaginator
 
 def get_list_skills_paginator() -> ListSkillsPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_skills")
+    return Session().client("alexaforbusiness").get_paginator("list_skills")
 ```
 
 Boto3 documentation:
@@ -128,6 +146,8 @@ Arguments for `ListSkillsPaginator.paginate` method:
 `ListSkillsPaginator.paginate` returns
 `_PageIterator`\[[ListSkillsResponseTypeDef](./type_defs.md#listskillsresponsetypedef)\].
 
+<a id="listskillsstorecategoriespaginator"></a>
+
 ## ListSkillsStoreCategoriesPaginator
 
 Type annotations for
@@ -136,10 +156,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreCategoriesPaginator
 
 def get_list_skills_store_categories_paginator() -> ListSkillsStoreCategoriesPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_skills_store_categories")
+    return Session().client("alexaforbusiness").get_paginator("list_skills_store_categories")
 ```
 
 Boto3 documentation:
@@ -153,6 +175,8 @@ Arguments for `ListSkillsStoreCategoriesPaginator.paginate` method:
 `ListSkillsStoreCategoriesPaginator.paginate` returns
 `_PageIterator`\[[ListSkillsStoreCategoriesResponseTypeDef](./type_defs.md#listskillsstorecategoriesresponsetypedef)\].
 
+<a id="listskillsstoreskillsbycategorypaginator"></a>
+
 ## ListSkillsStoreSkillsByCategoryPaginator
 
 Type annotations for
@@ -161,10 +185,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListSkillsStoreSkillsByCategoryPaginator
 
 def get_list_skills_store_skills_by_category_paginator() -> ListSkillsStoreSkillsByCategoryPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")
+    return Session().client("alexaforbusiness").get_paginator("list_skills_store_skills_by_category")
 ```
 
 Boto3 documentation:
@@ -179,6 +205,8 @@ Arguments for `ListSkillsStoreSkillsByCategoryPaginator.paginate` method:
 `ListSkillsStoreSkillsByCategoryPaginator.paginate` returns
 `_PageIterator`\[[ListSkillsStoreSkillsByCategoryResponseTypeDef](./type_defs.md#listskillsstoreskillsbycategoryresponsetypedef)\].
 
+<a id="listsmarthomeappliancespaginator"></a>
+
 ## ListSmartHomeAppliancesPaginator
 
 Type annotations for
@@ -187,10 +215,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListSmartHomeAppliancesPaginator
 
 def get_list_smart_home_appliances_paginator() -> ListSmartHomeAppliancesPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_smart_home_appliances")
+    return Session().client("alexaforbusiness").get_paginator("list_smart_home_appliances")
 ```
 
 Boto3 documentation:
@@ -205,6 +235,8 @@ Arguments for `ListSmartHomeAppliancesPaginator.paginate` method:
 `ListSmartHomeAppliancesPaginator.paginate` returns
 `_PageIterator`\[[ListSmartHomeAppliancesResponseTypeDef](./type_defs.md#listsmarthomeappliancesresponsetypedef)\].
 
+<a id="listtagspaginator"></a>
+
 ## ListTagsPaginator
 
 Type annotations for
@@ -213,10 +245,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import ListTagsPaginator
 
 def get_list_tags_paginator() -> ListTagsPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("list_tags")
+    return Session().client("alexaforbusiness").get_paginator("list_tags")
 ```
 
 Boto3 documentation:
@@ -231,6 +265,8 @@ Arguments for `ListTagsPaginator.paginate` method:
 `ListTagsPaginator.paginate` returns
 `_PageIterator`\[[ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef)\].
 
+<a id="searchdevicespaginator"></a>
+
 ## SearchDevicesPaginator
 
 Type annotations for
@@ -239,10 +275,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import SearchDevicesPaginator
 
 def get_search_devices_paginator() -> SearchDevicesPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("search_devices")
+    return Session().client("alexaforbusiness").get_paginator("search_devices")
 ```
 
 Boto3 documentation:
@@ -258,6 +296,8 @@ Arguments for `SearchDevicesPaginator.paginate` method:
 `SearchDevicesPaginator.paginate` returns
 `_PageIterator`\[[SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef)\].
 
+<a id="searchprofilespaginator"></a>
+
 ## SearchProfilesPaginator
 
 Type annotations for
@@ -266,10 +306,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import SearchProfilesPaginator
 
 def get_search_profiles_paginator() -> SearchProfilesPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("search_profiles")
+    return Session().client("alexaforbusiness").get_paginator("search_profiles")
 ```
 
 Boto3 documentation:
@@ -285,6 +327,8 @@ Arguments for `SearchProfilesPaginator.paginate` method:
 `SearchProfilesPaginator.paginate` returns
 `_PageIterator`\[[SearchProfilesResponseTypeDef](./type_defs.md#searchprofilesresponsetypedef)\].
 
+<a id="searchroomspaginator"></a>
+
 ## SearchRoomsPaginator
 
 Type annotations for
@@ -293,10 +337,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import SearchRoomsPaginator
 
 def get_search_rooms_paginator() -> SearchRoomsPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("search_rooms")
+    return Session().client("alexaforbusiness").get_paginator("search_rooms")
 ```
 
 Boto3 documentation:
@@ -312,6 +358,8 @@ Arguments for `SearchRoomsPaginator.paginate` method:
 `SearchRoomsPaginator.paginate` returns
 `_PageIterator`\[[SearchRoomsResponseTypeDef](./type_defs.md#searchroomsresponsetypedef)\].
 
+<a id="searchskillgroupspaginator"></a>
+
 ## SearchSkillGroupsPaginator
 
 Type annotations for
@@ -320,10 +368,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import SearchSkillGroupsPaginator
 
 def get_search_skill_groups_paginator() -> SearchSkillGroupsPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("search_skill_groups")
+    return Session().client("alexaforbusiness").get_paginator("search_skill_groups")
 ```
 
 Boto3 documentation:
@@ -339,6 +389,8 @@ Arguments for `SearchSkillGroupsPaginator.paginate` method:
 `SearchSkillGroupsPaginator.paginate` returns
 `_PageIterator`\[[SearchSkillGroupsResponseTypeDef](./type_defs.md#searchskillgroupsresponsetypedef)\].
 
+<a id="searchuserspaginator"></a>
+
 ## SearchUsersPaginator
 
 Type annotations for
@@ -347,10 +399,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_alexaforbusiness.paginator import SearchUsersPaginator
 
 def get_search_users_paginator() -> SearchUsersPaginator:
-    return boto3.client("alexaforbusiness").get_paginator("search_users")
+    return Session().client("alexaforbusiness").get_paginator("search_users")
 ```
 
 Boto3 documentation:

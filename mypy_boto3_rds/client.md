@@ -1,3 +1,5 @@
+<a id="rdsclient-for-boto3-rds-module"></a>
+
 # RDSClient for boto3 RDS module
 
 > [Index](..) > [RDS](.) > RDSClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
 type annotations stubs module
-[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [RDSClient for boto3 RDS module](#rdsclient-for-boto3-rds-module)
   - [RDSClient](#rdsclient)
@@ -159,6 +161,8 @@ type annotations stubs module
     - [get_paginator](#get_paginator)
     - [get_waiter](#get_waiter)
 
+<a id="rdsclient"></a>
+
 ## RDSClient
 
 Type annotations for `boto3.client("rds")`
@@ -166,14 +170,17 @@ Type annotations for `boto3.client("rds")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_rds.client import RDSClient
 
 def get_rds_client() -> RDSClient:
-    return boto3.client("rds")
+    return Session().client("rds")
 ```
 
 Boto3 documentation:
 [RDS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -312,7 +319,11 @@ Exceptions:
 - `Exceptions.SubscriptionCategoryNotFoundFault`
 - `Exceptions.SubscriptionNotFoundFault`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -324,6 +335,8 @@ Boto3 documentation:
 [RDS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="add_role_to_db_cluster"></a>
 
 ### add_role_to_db_cluster
 
@@ -343,6 +356,8 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `FeatureName`: `str`
 
+<a id="add_role_to_db_instance"></a>
+
 ### add_role_to_db_instance
 
 Associates an Amazon Web Services Identity and Access Management (IAM) role
@@ -361,6 +376,8 @@ Keyword-only arguments:
 - `DBInstanceIdentifier`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `FeatureName`: `str` *(required)*
+
+<a id="add_source_identifier_to_subscription"></a>
 
 ### add_source_identifier_to_subscription
 
@@ -383,6 +400,8 @@ Keyword-only arguments:
 Returns
 [AddSourceIdentifierToSubscriptionResultTypeDef](./type_defs.md#addsourceidentifiertosubscriptionresulttypedef).
 
+<a id="add_tags_to_resource"></a>
+
 ### add_tags_to_resource
 
 Adds metadata tags to an Amazon RDS resource.
@@ -399,6 +418,8 @@ Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="apply_pending_maintenance_action"></a>
 
 ### apply_pending_maintenance_action
 
@@ -422,6 +443,8 @@ Keyword-only arguments:
 
 Returns
 [ApplyPendingMaintenanceActionResultTypeDef](./type_defs.md#applypendingmaintenanceactionresulttypedef).
+
+<a id="authorize_db_security_group_ingress"></a>
 
 ### authorize_db_security_group_ingress
 
@@ -447,6 +470,8 @@ Keyword-only arguments:
 Returns
 [AuthorizeDBSecurityGroupIngressResultTypeDef](./type_defs.md#authorizedbsecuritygroupingressresulttypedef).
 
+<a id="backtrack_db_cluster"></a>
+
 ### backtrack_db_cluster
 
 Backtracks a DB cluster to a specific time, without creating a new DB cluster.
@@ -469,6 +494,8 @@ Keyword-only arguments:
 Returns
 [DBClusterBacktrackResponseMetadataTypeDef](./type_defs.md#dbclusterbacktrackresponsemetadatatypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -483,6 +510,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_export_task"></a>
 
 ### cancel_export_task
 
@@ -502,6 +531,8 @@ Keyword-only arguments:
 
 Returns
 [ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef).
+
+<a id="copy_db_cluster_parameter_group"></a>
 
 ### copy_db_cluster_parameter_group
 
@@ -525,6 +556,8 @@ Keyword-only arguments:
 
 Returns
 [CopyDBClusterParameterGroupResultTypeDef](./type_defs.md#copydbclusterparametergroupresulttypedef).
+
+<a id="copy_db_cluster_snapshot"></a>
 
 ### copy_db_cluster_snapshot
 
@@ -551,6 +584,8 @@ Keyword-only arguments:
 Returns
 [CopyDBClusterSnapshotResultTypeDef](./type_defs.md#copydbclustersnapshotresulttypedef).
 
+<a id="copy_db_parameter_group"></a>
+
 ### copy_db_parameter_group
 
 Copies the specified DB parameter group.
@@ -572,6 +607,8 @@ Keyword-only arguments:
 
 Returns
 [CopyDBParameterGroupResultTypeDef](./type_defs.md#copydbparametergroupresulttypedef).
+
+<a id="copy_db_snapshot"></a>
 
 ### copy_db_snapshot
 
@@ -600,6 +637,8 @@ Keyword-only arguments:
 Returns
 [CopyDBSnapshotResultTypeDef](./type_defs.md#copydbsnapshotresulttypedef).
 
+<a id="copy_option_group"></a>
+
 ### copy_option_group
 
 Copies the specified option group.
@@ -621,6 +660,8 @@ Keyword-only arguments:
 
 Returns
 [CopyOptionGroupResultTypeDef](./type_defs.md#copyoptiongroupresulttypedef).
+
+<a id="create_custom_availability_zone"></a>
 
 ### create_custom_availability_zone
 
@@ -644,6 +685,8 @@ Keyword-only arguments:
 
 Returns
 [CreateCustomAvailabilityZoneResultTypeDef](./type_defs.md#createcustomavailabilityzoneresulttypedef).
+
+<a id="create_custom_db_engine_version"></a>
 
 ### create_custom_db_engine_version
 
@@ -671,6 +714,8 @@ Keyword-only arguments:
 
 Returns
 [DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+
+<a id="create_db_cluster"></a>
 
 ### create_db_cluster
 
@@ -736,6 +781,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterResultTypeDef](./type_defs.md#createdbclusterresulttypedef).
 
+<a id="create_db_cluster_endpoint"></a>
+
 ### create_db_cluster_endpoint
 
 Creates a new custom endpoint and associates it with an Amazon Aurora DB
@@ -761,6 +808,8 @@ Keyword-only arguments:
 Returns
 [DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
 
+<a id="create_db_cluster_parameter_group"></a>
+
 ### create_db_cluster_parameter_group
 
 Creates a new DB cluster parameter group.
@@ -784,6 +833,8 @@ Keyword-only arguments:
 Returns
 [CreateDBClusterParameterGroupResultTypeDef](./type_defs.md#createdbclusterparametergroupresulttypedef).
 
+<a id="create_db_cluster_snapshot"></a>
+
 ### create_db_cluster_snapshot
 
 Creates a snapshot of a DB cluster.
@@ -804,6 +855,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBClusterSnapshotResultTypeDef](./type_defs.md#createdbclustersnapshotresulttypedef).
+
+<a id="create_db_instance"></a>
 
 ### create_db_instance
 
@@ -874,6 +927,8 @@ Keyword-only arguments:
 Returns
 [CreateDBInstanceResultTypeDef](./type_defs.md#createdbinstanceresulttypedef).
 
+<a id="create_db_instance_read_replica"></a>
+
 ### create_db_instance_read_replica
 
 Creates a new DB instance that acts as a read replica for an existing source DB
@@ -929,6 +984,8 @@ Keyword-only arguments:
 Returns
 [CreateDBInstanceReadReplicaResultTypeDef](./type_defs.md#createdbinstancereadreplicaresulttypedef).
 
+<a id="create_db_parameter_group"></a>
+
 ### create_db_parameter_group
 
 Creates a new DB parameter group.
@@ -950,6 +1007,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBParameterGroupResultTypeDef](./type_defs.md#createdbparametergroupresulttypedef).
+
+<a id="create_db_proxy"></a>
 
 ### create_db_proxy
 
@@ -982,6 +1041,8 @@ Keyword-only arguments:
 Returns
 [CreateDBProxyResponseTypeDef](./type_defs.md#createdbproxyresponsetypedef).
 
+<a id="create_db_proxy_endpoint"></a>
+
 ### create_db_proxy_endpoint
 
 Creates a `DBProxyEndpoint`.
@@ -1007,6 +1068,8 @@ Keyword-only arguments:
 Returns
 [CreateDBProxyEndpointResponseTypeDef](./type_defs.md#createdbproxyendpointresponsetypedef).
 
+<a id="create_db_security_group"></a>
+
 ### create_db_security_group
 
 Creates a new DB security group.
@@ -1027,6 +1090,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBSecurityGroupResultTypeDef](./type_defs.md#createdbsecuritygroupresulttypedef).
+
+<a id="create_db_snapshot"></a>
 
 ### create_db_snapshot
 
@@ -1049,6 +1114,8 @@ Keyword-only arguments:
 Returns
 [CreateDBSnapshotResultTypeDef](./type_defs.md#createdbsnapshotresulttypedef).
 
+<a id="create_db_subnet_group"></a>
+
 ### create_db_subnet_group
 
 Creates a new DB subnet group.
@@ -1070,6 +1137,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDBSubnetGroupResultTypeDef](./type_defs.md#createdbsubnetgroupresulttypedef).
+
+<a id="create_event_subscription"></a>
 
 ### create_event_subscription
 
@@ -1095,6 +1164,8 @@ Keyword-only arguments:
 
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
+
+<a id="create_global_cluster"></a>
 
 ### create_global_cluster
 
@@ -1122,6 +1193,8 @@ Keyword-only arguments:
 Returns
 [CreateGlobalClusterResultTypeDef](./type_defs.md#createglobalclusterresulttypedef).
 
+<a id="create_option_group"></a>
+
 ### create_option_group
 
 Creates a new option group.
@@ -1145,6 +1218,8 @@ Keyword-only arguments:
 Returns
 [CreateOptionGroupResultTypeDef](./type_defs.md#createoptiongroupresulttypedef).
 
+<a id="delete_custom_availability_zone"></a>
+
 ### delete_custom_availability_zone
 
 Deletes a custom Availability Zone (AZ).
@@ -1164,6 +1239,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteCustomAvailabilityZoneResultTypeDef](./type_defs.md#deletecustomavailabilityzoneresulttypedef).
+
+<a id="delete_custom_db_engine_version"></a>
 
 ### delete_custom_db_engine_version
 
@@ -1186,6 +1263,8 @@ Keyword-only arguments:
 Returns
 [DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
 
+<a id="delete_db_cluster"></a>
+
 ### delete_db_cluster
 
 The DeleteDBCluster action deletes a previously provisioned DB cluster.
@@ -1207,6 +1286,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBClusterResultTypeDef](./type_defs.md#deletedbclusterresulttypedef).
 
+<a id="delete_db_cluster_endpoint"></a>
+
 ### delete_db_cluster_endpoint
 
 Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.
@@ -1226,6 +1307,8 @@ Keyword-only arguments:
 Returns
 [DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
 
+<a id="delete_db_cluster_parameter_group"></a>
+
 ### delete_db_cluster_parameter_group
 
 Deletes a specified DB cluster parameter group.
@@ -1242,6 +1325,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBClusterParameterGroupName`: `str` *(required)*
+
+<a id="delete_db_cluster_snapshot"></a>
 
 ### delete_db_cluster_snapshot
 
@@ -1261,6 +1346,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDBClusterSnapshotResultTypeDef](./type_defs.md#deletedbclustersnapshotresulttypedef).
+
+<a id="delete_db_instance"></a>
 
 ### delete_db_instance
 
@@ -1284,6 +1371,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBInstanceResultTypeDef](./type_defs.md#deletedbinstanceresulttypedef).
 
+<a id="delete_db_instance_automated_backup"></a>
+
 ### delete_db_instance_automated_backup
 
 Deletes automated backups using the `DbiResourceId` value of the source DB
@@ -1306,6 +1395,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBInstanceAutomatedBackupResultTypeDef](./type_defs.md#deletedbinstanceautomatedbackupresulttypedef).
 
+<a id="delete_db_parameter_group"></a>
+
 ### delete_db_parameter_group
 
 Deletes a specified DB parameter group.
@@ -1321,6 +1412,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBParameterGroupName`: `str` *(required)*
+
+<a id="delete_db_proxy"></a>
 
 ### delete_db_proxy
 
@@ -1341,6 +1434,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBProxyResponseTypeDef](./type_defs.md#deletedbproxyresponsetypedef).
 
+<a id="delete_db_proxy_endpoint"></a>
+
 ### delete_db_proxy_endpoint
 
 Deletes a `DBProxyEndpoint`.
@@ -1360,6 +1455,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBProxyEndpointResponseTypeDef](./type_defs.md#deletedbproxyendpointresponsetypedef).
 
+<a id="delete_db_security_group"></a>
+
 ### delete_db_security_group
 
 Deletes a DB security group.
@@ -1375,6 +1472,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBSecurityGroupName`: `str` *(required)*
+
+<a id="delete_db_snapshot"></a>
 
 ### delete_db_snapshot
 
@@ -1395,6 +1494,8 @@ Keyword-only arguments:
 Returns
 [DeleteDBSnapshotResultTypeDef](./type_defs.md#deletedbsnapshotresulttypedef).
 
+<a id="delete_db_subnet_group"></a>
+
 ### delete_db_subnet_group
 
 Deletes a DB subnet group.
@@ -1410,6 +1511,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DBSubnetGroupName`: `str` *(required)*
+
+<a id="delete_event_subscription"></a>
 
 ### delete_event_subscription
 
@@ -1430,6 +1533,8 @@ Keyword-only arguments:
 Returns
 [DeleteEventSubscriptionResultTypeDef](./type_defs.md#deleteeventsubscriptionresulttypedef).
 
+<a id="delete_global_cluster"></a>
+
 ### delete_global_cluster
 
 Deletes a global database cluster.
@@ -1448,6 +1553,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteGlobalClusterResultTypeDef](./type_defs.md#deleteglobalclusterresulttypedef).
+
+<a id="delete_installation_media"></a>
 
 ### delete_installation_media
 
@@ -1469,6 +1576,8 @@ Keyword-only arguments:
 Returns
 [InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef).
 
+<a id="delete_option_group"></a>
+
 ### delete_option_group
 
 Deletes an existing option group.
@@ -1484,6 +1593,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `OptionGroupName`: `str` *(required)*
+
+<a id="deregister_db_proxy_targets"></a>
 
 ### deregister_db_proxy_targets
 
@@ -1507,6 +1618,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_account_attributes"></a>
+
 ### describe_account_attributes
 
 Lists all of the attributes for a customer account.
@@ -1518,6 +1631,8 @@ Boto3 documentation:
 
 Returns
 [AccountAttributesMessageTypeDef](./type_defs.md#accountattributesmessagetypedef).
+
+<a id="describe_certificates"></a>
 
 ### describe_certificates
 
@@ -1541,6 +1656,8 @@ Keyword-only arguments:
 
 Returns [CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef).
 
+<a id="describe_custom_availability_zones"></a>
+
 ### describe_custom_availability_zones
 
 Returns information about custom Availability Zones (AZs).
@@ -1563,6 +1680,8 @@ Keyword-only arguments:
 
 Returns
 [CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef).
+
+<a id="describe_db_cluster_backtracks"></a>
 
 ### describe_db_cluster_backtracks
 
@@ -1588,6 +1707,8 @@ Keyword-only arguments:
 Returns
 [DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef).
 
+<a id="describe_db_cluster_endpoints"></a>
+
 ### describe_db_cluster_endpoints
 
 Returns information about endpoints for an Amazon Aurora DB cluster.
@@ -1612,6 +1733,8 @@ Keyword-only arguments:
 Returns
 [DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef).
 
+<a id="describe_db_cluster_parameter_groups"></a>
+
 ### describe_db_cluster_parameter_groups
 
 Returns a list of `DBClusterParameterGroup` descriptions.
@@ -1634,6 +1757,8 @@ Keyword-only arguments:
 
 Returns
 [DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef).
+
+<a id="describe_db_cluster_parameters"></a>
 
 ### describe_db_cluster_parameters
 
@@ -1660,6 +1785,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef).
 
+<a id="describe_db_cluster_snapshot_attributes"></a>
+
 ### describe_db_cluster_snapshot_attributes
 
 Returns a list of DB cluster snapshot attribute names and values for a manual
@@ -1680,6 +1807,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDBClusterSnapshotAttributesResultTypeDef](./type_defs.md#describedbclustersnapshotattributesresulttypedef).
+
+<a id="describe_db_cluster_snapshots"></a>
 
 ### describe_db_cluster_snapshots
 
@@ -1708,6 +1837,8 @@ Keyword-only arguments:
 Returns
 [DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef).
 
+<a id="describe_db_clusters"></a>
+
 ### describe_db_clusters
 
 Returns information about Amazon Aurora DB clusters and Multi-AZ DB clusters.
@@ -1729,6 +1860,8 @@ Keyword-only arguments:
 - `IncludeShared`: `bool`
 
 Returns [DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef).
+
+<a id="describe_db_engine_versions"></a>
 
 ### describe_db_engine_versions
 
@@ -1758,6 +1891,8 @@ Keyword-only arguments:
 Returns
 [DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef).
 
+<a id="describe_db_instance_automated_backups"></a>
+
 ### describe_db_instance_automated_backups
 
 Displays backups for both current and deleted instances.
@@ -1783,6 +1918,8 @@ Keyword-only arguments:
 Returns
 [DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef).
 
+<a id="describe_db_instances"></a>
+
 ### describe_db_instances
 
 Returns information about provisioned RDS instances.
@@ -1803,6 +1940,8 @@ Keyword-only arguments:
 - `Marker`: `str`
 
 Returns [DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef).
+
+<a id="describe_db_log_files"></a>
 
 ### describe_db_log_files
 
@@ -1829,6 +1968,8 @@ Keyword-only arguments:
 Returns
 [DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef).
 
+<a id="describe_db_parameter_groups"></a>
+
 ### describe_db_parameter_groups
 
 Returns a list of `DBParameterGroup` descriptions.
@@ -1850,6 +1991,8 @@ Keyword-only arguments:
 
 Returns
 [DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef).
+
+<a id="describe_db_parameters"></a>
 
 ### describe_db_parameters
 
@@ -1874,6 +2017,8 @@ Keyword-only arguments:
 Returns
 [DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef).
 
+<a id="describe_db_proxies"></a>
+
 ### describe_db_proxies
 
 Returns information about DB proxies.
@@ -1895,6 +2040,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef).
+
+<a id="describe_db_proxy_endpoints"></a>
 
 ### describe_db_proxy_endpoints
 
@@ -1918,6 +2065,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef).
+
+<a id="describe_db_proxy_target_groups"></a>
 
 ### describe_db_proxy_target_groups
 
@@ -1944,6 +2093,8 @@ Keyword-only arguments:
 Returns
 [DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef).
 
+<a id="describe_db_proxy_targets"></a>
+
 ### describe_db_proxy_targets
 
 Returns information about `DBProxyTarget` objects.
@@ -1967,6 +2118,8 @@ Keyword-only arguments:
 Returns
 [DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef).
 
+<a id="describe_db_security_groups"></a>
+
 ### describe_db_security_groups
 
 Returns a list of `DBSecurityGroup` descriptions.
@@ -1989,6 +2142,8 @@ Keyword-only arguments:
 Returns
 [DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef).
 
+<a id="describe_db_snapshot_attributes"></a>
+
 ### describe_db_snapshot_attributes
 
 Returns a list of DB snapshot attribute names and values for a manual DB
@@ -2009,6 +2164,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDBSnapshotAttributesResultTypeDef](./type_defs.md#describedbsnapshotattributesresulttypedef).
+
+<a id="describe_db_snapshots"></a>
 
 ### describe_db_snapshots
 
@@ -2036,6 +2193,8 @@ Keyword-only arguments:
 
 Returns [DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef).
 
+<a id="describe_db_subnet_groups"></a>
+
 ### describe_db_subnet_groups
 
 Returns a list of DBSubnetGroup descriptions.
@@ -2057,6 +2216,8 @@ Keyword-only arguments:
 
 Returns
 [DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef).
+
+<a id="describe_engine_default_cluster_parameters"></a>
 
 ### describe_engine_default_cluster_parameters
 
@@ -2082,6 +2243,8 @@ Keyword-only arguments:
 Returns
 [DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef).
 
+<a id="describe_engine_default_parameters"></a>
+
 ### describe_engine_default_parameters
 
 Returns the default engine and system parameter information for the specified
@@ -2106,6 +2269,8 @@ Keyword-only arguments:
 Returns
 [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
+<a id="describe_event_categories"></a>
+
 ### describe_event_categories
 
 .
@@ -2125,6 +2290,8 @@ Keyword-only arguments:
 
 Returns
 [EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
+
+<a id="describe_event_subscriptions"></a>
 
 ### describe_event_subscriptions
 
@@ -2147,6 +2314,8 @@ Keyword-only arguments:
 
 Returns
 [EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
+
+<a id="describe_events"></a>
 
 ### describe_events
 
@@ -2176,6 +2345,8 @@ Keyword-only arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
+<a id="describe_export_tasks"></a>
+
 ### describe_export_tasks
 
 Returns information about a snapshot export to Amazon S3.
@@ -2197,6 +2368,8 @@ Keyword-only arguments:
 - `MaxRecords`: `int`
 
 Returns [ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef).
+
+<a id="describe_global_clusters"></a>
 
 ### describe_global_clusters
 
@@ -2220,6 +2393,8 @@ Keyword-only arguments:
 Returns
 [GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef).
 
+<a id="describe_installation_media"></a>
+
 ### describe_installation_media
 
 Describes the available installation media for a DB engine that requires an on-
@@ -2242,6 +2417,8 @@ Keyword-only arguments:
 
 Returns
 [InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef).
+
+<a id="describe_option_group_options"></a>
 
 ### describe_option_group_options
 
@@ -2267,6 +2444,8 @@ Keyword-only arguments:
 Returns
 [OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef).
 
+<a id="describe_option_groups"></a>
+
 ### describe_option_groups
 
 Describes the available option groups.
@@ -2289,6 +2468,8 @@ Keyword-only arguments:
 - `MajorEngineVersion`: `str`
 
 Returns [OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef).
+
+<a id="describe_orderable_db_instance_options"></a>
 
 ### describe_orderable_db_instance_options
 
@@ -2319,6 +2500,8 @@ Keyword-only arguments:
 Returns
 [OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef).
 
+<a id="describe_pending_maintenance_actions"></a>
+
 ### describe_pending_maintenance_actions
 
 Returns a list of resources (for example, DB instances) that have at least one
@@ -2342,6 +2525,8 @@ Keyword-only arguments:
 
 Returns
 [PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef).
+
+<a id="describe_reserved_db_instances"></a>
 
 ### describe_reserved_db_instances
 
@@ -2374,6 +2559,8 @@ Keyword-only arguments:
 Returns
 [ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef).
 
+<a id="describe_reserved_db_instances_offerings"></a>
+
 ### describe_reserved_db_instances_offerings
 
 Lists available reserved DB instance offerings.
@@ -2402,6 +2589,8 @@ Keyword-only arguments:
 Returns
 [ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef).
 
+<a id="describe_source_regions"></a>
+
 ### describe_source_regions
 
 Returns a list of the source Amazon Web Services Regions where the current
@@ -2426,6 +2615,8 @@ Keyword-only arguments:
 Returns
 [SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef).
 
+<a id="describe_valid_db_instance_modifications"></a>
+
 ### describe_valid_db_instance_modifications
 
 You can call `DescribeValidDBInstanceModifications` to learn what modifications
@@ -2446,6 +2637,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeValidDBInstanceModificationsResultTypeDef](./type_defs.md#describevaliddbinstancemodificationsresulttypedef).
+
+<a id="download_db_log_file_portion"></a>
 
 ### download_db_log_file_portion
 
@@ -2469,6 +2662,8 @@ Keyword-only arguments:
 Returns
 [DownloadDBLogFilePortionDetailsTypeDef](./type_defs.md#downloaddblogfileportiondetailstypedef).
 
+<a id="failover_db_cluster"></a>
+
 ### failover_db_cluster
 
 Forces a failover for a DB cluster.
@@ -2489,6 +2684,8 @@ Keyword-only arguments:
 Returns
 [FailoverDBClusterResultTypeDef](./type_defs.md#failoverdbclusterresulttypedef).
 
+<a id="failover_global_cluster"></a>
+
 ### failover_global_cluster
 
 Initiates the failover process for an Aurora global database ( GlobalCluster ).
@@ -2508,6 +2705,8 @@ Keyword-only arguments:
 
 Returns
 [FailoverGlobalClusterResultTypeDef](./type_defs.md#failoverglobalclusterresulttypedef).
+
+<a id="generate_db_auth_token"></a>
 
 ### generate_db_auth_token
 
@@ -2530,6 +2729,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -2547,6 +2748,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_installation_media"></a>
 
 ### import_installation_media
 
@@ -2572,6 +2775,8 @@ Keyword-only arguments:
 Returns
 [InstallationMediaResponseMetadataTypeDef](./type_defs.md#installationmediaresponsemetadatatypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists all tags on an Amazon RDS resource.
@@ -2590,6 +2795,8 @@ Keyword-only arguments:
 - `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
+
+<a id="modify_certificates"></a>
 
 ### modify_certificates
 
@@ -2612,6 +2819,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyCertificatesResultTypeDef](./type_defs.md#modifycertificatesresulttypedef).
+
+<a id="modify_current_db_cluster_capacity"></a>
 
 ### modify_current_db_cluster_capacity
 
@@ -2636,6 +2845,8 @@ Keyword-only arguments:
 Returns
 [DBClusterCapacityInfoTypeDef](./type_defs.md#dbclustercapacityinfotypedef).
 
+<a id="modify_custom_db_engine_version"></a>
+
 ### modify_custom_db_engine_version
 
 Modifies the status of a custom engine version (CEV).
@@ -2659,6 +2870,8 @@ Keyword-only arguments:
 
 Returns
 [DBEngineVersionResponseMetadataTypeDef](./type_defs.md#dbengineversionresponsemetadatatypedef).
+
+<a id="modify_db_cluster"></a>
 
 ### modify_db_cluster
 
@@ -2714,6 +2927,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBClusterResultTypeDef](./type_defs.md#modifydbclusterresulttypedef).
 
+<a id="modify_db_cluster_endpoint"></a>
+
 ### modify_db_cluster_endpoint
 
 Modifies the properties of an endpoint in an Amazon Aurora DB cluster.
@@ -2735,6 +2950,8 @@ Keyword-only arguments:
 
 Returns
 [DBClusterEndpointResponseMetadataTypeDef](./type_defs.md#dbclusterendpointresponsemetadatatypedef).
+
+<a id="modify_db_cluster_parameter_group"></a>
 
 ### modify_db_cluster_parameter_group
 
@@ -2759,6 +2976,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
+<a id="modify_db_cluster_snapshot_attribute"></a>
+
 ### modify_db_cluster_snapshot_attribute
 
 Adds an attribute and values to, or removes an attribute and values from, a
@@ -2782,6 +3001,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBClusterSnapshotAttributeResultTypeDef](./type_defs.md#modifydbclustersnapshotattributeresulttypedef).
+
+<a id="modify_db_instance"></a>
 
 ### modify_db_instance
 
@@ -2850,6 +3071,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBInstanceResultTypeDef](./type_defs.md#modifydbinstanceresulttypedef).
 
+<a id="modify_db_parameter_group"></a>
+
 ### modify_db_parameter_group
 
 Modifies the parameters of a DB parameter group.
@@ -2871,6 +3094,8 @@ Keyword-only arguments:
 
 Returns
 [DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
+
+<a id="modify_db_proxy"></a>
 
 ### modify_db_proxy
 
@@ -2899,6 +3124,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBProxyResponseTypeDef](./type_defs.md#modifydbproxyresponsetypedef).
 
+<a id="modify_db_proxy_endpoint"></a>
+
 ### modify_db_proxy_endpoint
 
 Changes the settings for an existing DB proxy endpoint.
@@ -2919,6 +3146,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBProxyEndpointResponseTypeDef](./type_defs.md#modifydbproxyendpointresponsetypedef).
+
+<a id="modify_db_proxy_target_group"></a>
 
 ### modify_db_proxy_target_group
 
@@ -2943,6 +3172,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBProxyTargetGroupResponseTypeDef](./type_defs.md#modifydbproxytargetgroupresponsetypedef).
 
+<a id="modify_db_snapshot"></a>
+
 ### modify_db_snapshot
 
 Updates a manual DB snapshot with a new engine version.
@@ -2963,6 +3194,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBSnapshotResultTypeDef](./type_defs.md#modifydbsnapshotresulttypedef).
+
+<a id="modify_db_snapshot_attribute"></a>
 
 ### modify_db_snapshot_attribute
 
@@ -2987,6 +3220,8 @@ Keyword-only arguments:
 Returns
 [ModifyDBSnapshotAttributeResultTypeDef](./type_defs.md#modifydbsnapshotattributeresulttypedef).
 
+<a id="modify_db_subnet_group"></a>
+
 ### modify_db_subnet_group
 
 Modifies an existing DB subnet group.
@@ -3007,6 +3242,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyDBSubnetGroupResultTypeDef](./type_defs.md#modifydbsubnetgroupresulttypedef).
+
+<a id="modify_event_subscription"></a>
 
 ### modify_event_subscription
 
@@ -3031,6 +3268,8 @@ Keyword-only arguments:
 Returns
 [ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
+<a id="modify_global_cluster"></a>
+
 ### modify_global_cluster
 
 Modify a setting for an Amazon Aurora global cluster.
@@ -3053,6 +3292,8 @@ Keyword-only arguments:
 
 Returns
 [ModifyGlobalClusterResultTypeDef](./type_defs.md#modifyglobalclusterresulttypedef).
+
+<a id="modify_option_group"></a>
 
 ### modify_option_group
 
@@ -3077,6 +3318,8 @@ Keyword-only arguments:
 Returns
 [ModifyOptionGroupResultTypeDef](./type_defs.md#modifyoptiongroupresulttypedef).
 
+<a id="promote_read_replica"></a>
+
 ### promote_read_replica
 
 Promotes a read replica DB instance to a standalone DB instance.
@@ -3098,6 +3341,8 @@ Keyword-only arguments:
 Returns
 [PromoteReadReplicaResultTypeDef](./type_defs.md#promotereadreplicaresulttypedef).
 
+<a id="promote_read_replica_db_cluster"></a>
+
 ### promote_read_replica_db_cluster
 
 Promotes a read replica DB cluster to a standalone DB cluster.
@@ -3117,6 +3362,8 @@ Keyword-only arguments:
 
 Returns
 [PromoteReadReplicaDBClusterResultTypeDef](./type_defs.md#promotereadreplicadbclusterresulttypedef).
+
+<a id="purchase_reserved_db_instances_offering"></a>
 
 ### purchase_reserved_db_instances_offering
 
@@ -3141,6 +3388,8 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedDBInstancesOfferingResultTypeDef](./type_defs.md#purchasereserveddbinstancesofferingresulttypedef).
 
+<a id="reboot_db_cluster"></a>
+
 ### reboot_db_cluster
 
 You might need to reboot your DB cluster, usually for maintenance reasons.
@@ -3159,6 +3408,8 @@ Keyword-only arguments:
 
 Returns
 [RebootDBClusterResultTypeDef](./type_defs.md#rebootdbclusterresulttypedef).
+
+<a id="reboot_db_instance"></a>
 
 ### reboot_db_instance
 
@@ -3179,6 +3430,8 @@ Keyword-only arguments:
 
 Returns
 [RebootDBInstanceResultTypeDef](./type_defs.md#rebootdbinstanceresulttypedef).
+
+<a id="register_db_proxy_targets"></a>
 
 ### register_db_proxy_targets
 
@@ -3203,6 +3456,8 @@ Keyword-only arguments:
 Returns
 [RegisterDBProxyTargetsResponseTypeDef](./type_defs.md#registerdbproxytargetsresponsetypedef).
 
+<a id="remove_from_global_cluster"></a>
+
 ### remove_from_global_cluster
 
 Detaches an Aurora secondary cluster from an Aurora global database cluster.
@@ -3223,6 +3478,8 @@ Keyword-only arguments:
 Returns
 [RemoveFromGlobalClusterResultTypeDef](./type_defs.md#removefromglobalclusterresulttypedef).
 
+<a id="remove_role_from_db_cluster"></a>
+
 ### remove_role_from_db_cluster
 
 Removes the asssociation of an Amazon Web Services Identity and Access
@@ -3242,6 +3499,8 @@ Keyword-only arguments:
 - `RoleArn`: `str` *(required)*
 - `FeatureName`: `str`
 
+<a id="remove_role_from_db_instance"></a>
+
 ### remove_role_from_db_instance
 
 Disassociates an Amazon Web Services Identity and Access Management (IAM) role
@@ -3260,6 +3519,8 @@ Keyword-only arguments:
 - `DBInstanceIdentifier`: `str` *(required)*
 - `RoleArn`: `str` *(required)*
 - `FeatureName`: `str` *(required)*
+
+<a id="remove_source_identifier_from_subscription"></a>
 
 ### remove_source_identifier_from_subscription
 
@@ -3283,6 +3544,8 @@ Keyword-only arguments:
 Returns
 [RemoveSourceIdentifierFromSubscriptionResultTypeDef](./type_defs.md#removesourceidentifierfromsubscriptionresulttypedef).
 
+<a id="remove_tags_from_resource"></a>
+
 ### remove_tags_from_resource
 
 Removes metadata tags from an Amazon RDS resource.
@@ -3299,6 +3562,8 @@ Keyword-only arguments:
 
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="reset_db_cluster_parameter_group"></a>
 
 ### reset_db_cluster_parameter_group
 
@@ -3323,6 +3588,8 @@ Keyword-only arguments:
 Returns
 [DBClusterParameterGroupNameMessageTypeDef](./type_defs.md#dbclusterparametergroupnamemessagetypedef).
 
+<a id="reset_db_parameter_group"></a>
+
 ### reset_db_parameter_group
 
 Modifies the parameters of a DB parameter group to the engine/system default
@@ -3345,6 +3612,8 @@ Keyword-only arguments:
 
 Returns
 [DBParameterGroupNameMessageTypeDef](./type_defs.md#dbparametergroupnamemessagetypedef).
+
+<a id="restore_db_cluster_from_s3"></a>
 
 ### restore_db_cluster_from_s3
 
@@ -3396,6 +3665,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBClusterFromS3ResultTypeDef](./type_defs.md#restoredbclusterfroms3resulttypedef).
 
+<a id="restore_db_cluster_from_snapshot"></a>
+
 ### restore_db_cluster_from_snapshot
 
 Creates a new DB cluster from a DB snapshot or DB cluster snapshot.
@@ -3442,6 +3713,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBClusterFromSnapshotResultTypeDef](./type_defs.md#restoredbclusterfromsnapshotresulttypedef).
 
+<a id="restore_db_cluster_to_point_in_time"></a>
+
 ### restore_db_cluster_to_point_in_time
 
 Restores a DB cluster to an arbitrary point in time.
@@ -3486,6 +3759,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreDBClusterToPointInTimeResultTypeDef](./type_defs.md#restoredbclustertopointintimeresulttypedef).
+
+<a id="restore_db_instance_from_db_snapshot"></a>
 
 ### restore_db_instance_from_db_snapshot
 
@@ -3537,6 +3812,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreDBInstanceFromDBSnapshotResultTypeDef](./type_defs.md#restoredbinstancefromdbsnapshotresulttypedef).
+
+<a id="restore_db_instance_from_s3"></a>
 
 ### restore_db_instance_from_s3
 
@@ -3602,6 +3879,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBInstanceFromS3ResultTypeDef](./type_defs.md#restoredbinstancefroms3resulttypedef).
 
+<a id="restore_db_instance_to_point_in_time"></a>
+
 ### restore_db_instance_to_point_in_time
 
 Restores a DB instance to an arbitrary point in time.
@@ -3658,6 +3937,8 @@ Keyword-only arguments:
 Returns
 [RestoreDBInstanceToPointInTimeResultTypeDef](./type_defs.md#restoredbinstancetopointintimeresulttypedef).
 
+<a id="revoke_db_security_group_ingress"></a>
+
 ### revoke_db_security_group_ingress
 
 Revokes ingress from a DBSecurityGroup for previously authorized IP ranges or
@@ -3683,6 +3964,8 @@ Keyword-only arguments:
 Returns
 [RevokeDBSecurityGroupIngressResultTypeDef](./type_defs.md#revokedbsecuritygroupingressresulttypedef).
 
+<a id="start_activity_stream"></a>
+
 ### start_activity_stream
 
 Starts a database activity stream to monitor activity on the database.
@@ -3707,6 +3990,8 @@ Keyword-only arguments:
 Returns
 [StartActivityStreamResponseTypeDef](./type_defs.md#startactivitystreamresponsetypedef).
 
+<a id="start_db_cluster"></a>
+
 ### start_db_cluster
 
 Starts an Amazon Aurora DB cluster that was stopped using the Amazon Web
@@ -3727,6 +4012,8 @@ Keyword-only arguments:
 Returns
 [StartDBClusterResultTypeDef](./type_defs.md#startdbclusterresulttypedef).
 
+<a id="start_db_instance"></a>
+
 ### start_db_instance
 
 Starts an Amazon RDS DB instance that was stopped using the Amazon Web Services
@@ -3746,6 +4033,8 @@ Keyword-only arguments:
 
 Returns
 [StartDBInstanceResultTypeDef](./type_defs.md#startdbinstanceresulttypedef).
+
+<a id="start_db_instance_automated_backups_replication"></a>
 
 ### start_db_instance_automated_backups_replication
 
@@ -3772,6 +4061,8 @@ Keyword-only arguments:
 Returns
 [StartDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#startdbinstanceautomatedbackupsreplicationresulttypedef).
 
+<a id="start_export_task"></a>
+
 ### start_export_task
 
 Starts an export of a snapshot to Amazon S3.
@@ -3797,6 +4088,8 @@ Keyword-only arguments:
 Returns
 [ExportTaskResponseMetadataTypeDef](./type_defs.md#exporttaskresponsemetadatatypedef).
 
+<a id="stop_activity_stream"></a>
+
 ### stop_activity_stream
 
 Stops a database activity stream that was started using the Amazon Web Services
@@ -3819,6 +4112,8 @@ Keyword-only arguments:
 Returns
 [StopActivityStreamResponseTypeDef](./type_defs.md#stopactivitystreamresponsetypedef).
 
+<a id="stop_db_cluster"></a>
+
 ### stop_db_cluster
 
 Stops an Amazon Aurora DB cluster.
@@ -3837,6 +4132,8 @@ Keyword-only arguments:
 
 Returns
 [StopDBClusterResultTypeDef](./type_defs.md#stopdbclusterresulttypedef).
+
+<a id="stop_db_instance"></a>
 
 ### stop_db_instance
 
@@ -3858,6 +4155,8 @@ Keyword-only arguments:
 Returns
 [StopDBInstanceResultTypeDef](./type_defs.md#stopdbinstanceresulttypedef).
 
+<a id="stop_db_instance_automated_backups_replication"></a>
+
 ### stop_db_instance_automated_backups_replication
 
 Stops automated backup replication for a DB instance.
@@ -3877,6 +4176,8 @@ Keyword-only arguments:
 
 Returns
 [StopDBInstanceAutomatedBackupsReplicationResultTypeDef](./type_defs.md#stopdbinstanceautomatedbackupsreplicationresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 
@@ -3954,6 +4255,8 @@ Type annotations for `boto3.client("rds").get_paginator` method with overloads.
   [DescribeSourceRegionsPaginator](./paginators.md#describesourceregionspaginator)
 - `client.get_paginator("download_db_log_file_portion")` ->
   [DownloadDBLogFilePortionPaginator](./paginators.md#downloaddblogfileportionpaginator)
+
+<a id="get_waiter"></a>
 
 ### get_waiter
 

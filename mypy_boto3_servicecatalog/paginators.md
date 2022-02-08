@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-servicecatalog-module"></a>
+
 # Paginators for boto3 ServiceCatalog module
 
 > [Index](..) > [ServiceCatalog](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ServiceCatalog](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/servicecatalog.html#ServiceCatalog)
 type annotations stubs module
-[mypy_boto3_servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
+[mypy-boto3-servicecatalog](https://pypi.org/project/mypy-boto3-servicecatalog/).
 
 - [Paginators for boto3 ServiceCatalog module](#paginators-for-boto3-servicecatalog-module)
   - [ListAcceptedPortfolioSharesPaginator](#listacceptedportfoliosharespaginator)
@@ -25,6 +27,8 @@ type annotations stubs module
   - [ScanProvisionedProductsPaginator](#scanprovisionedproductspaginator)
   - [SearchProductsAsAdminPaginator](#searchproductsasadminpaginator)
 
+<a id="listacceptedportfoliosharespaginator"></a>
+
 ## ListAcceptedPortfolioSharesPaginator
 
 Type annotations for
@@ -33,10 +37,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListAcceptedPortfolioSharesPaginator
 
 def get_list_accepted_portfolio_shares_paginator() -> ListAcceptedPortfolioSharesPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_accepted_portfolio_shares")
+    return Session().client("servicecatalog").get_paginator("list_accepted_portfolio_shares")
 ```
 
 Boto3 documentation:
@@ -53,6 +59,8 @@ Arguments for `ListAcceptedPortfolioSharesPaginator.paginate` method:
 `ListAcceptedPortfolioSharesPaginator.paginate` returns
 `_PageIterator`\[[ListAcceptedPortfolioSharesOutputTypeDef](./type_defs.md#listacceptedportfoliosharesoutputtypedef)\].
 
+<a id="listconstraintsforportfoliopaginator"></a>
+
 ## ListConstraintsForPortfolioPaginator
 
 Type annotations for
@@ -61,10 +69,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListConstraintsForPortfolioPaginator
 
 def get_list_constraints_for_portfolio_paginator() -> ListConstraintsForPortfolioPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_constraints_for_portfolio")
+    return Session().client("servicecatalog").get_paginator("list_constraints_for_portfolio")
 ```
 
 Boto3 documentation:
@@ -81,6 +91,8 @@ Arguments for `ListConstraintsForPortfolioPaginator.paginate` method:
 `ListConstraintsForPortfolioPaginator.paginate` returns
 `_PageIterator`\[[ListConstraintsForPortfolioOutputTypeDef](./type_defs.md#listconstraintsforportfoliooutputtypedef)\].
 
+<a id="listlaunchpathspaginator"></a>
+
 ## ListLaunchPathsPaginator
 
 Type annotations for
@@ -89,10 +101,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListLaunchPathsPaginator
 
 def get_list_launch_paths_paginator() -> ListLaunchPathsPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_launch_paths")
+    return Session().client("servicecatalog").get_paginator("list_launch_paths")
 ```
 
 Boto3 documentation:
@@ -108,6 +122,8 @@ Arguments for `ListLaunchPathsPaginator.paginate` method:
 `ListLaunchPathsPaginator.paginate` returns
 `_PageIterator`\[[ListLaunchPathsOutputTypeDef](./type_defs.md#listlaunchpathsoutputtypedef)\].
 
+<a id="listorganizationportfolioaccesspaginator"></a>
+
 ## ListOrganizationPortfolioAccessPaginator
 
 Type annotations for
@@ -116,10 +132,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListOrganizationPortfolioAccessPaginator
 
 def get_list_organization_portfolio_access_paginator() -> ListOrganizationPortfolioAccessPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_organization_portfolio_access")
+    return Session().client("servicecatalog").get_paginator("list_organization_portfolio_access")
 ```
 
 Boto3 documentation:
@@ -138,6 +156,8 @@ Arguments for `ListOrganizationPortfolioAccessPaginator.paginate` method:
 `ListOrganizationPortfolioAccessPaginator.paginate` returns
 `_PageIterator`\[[ListOrganizationPortfolioAccessOutputTypeDef](./type_defs.md#listorganizationportfolioaccessoutputtypedef)\].
 
+<a id="listportfoliospaginator"></a>
+
 ## ListPortfoliosPaginator
 
 Type annotations for
@@ -146,10 +166,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListPortfoliosPaginator
 
 def get_list_portfolios_paginator() -> ListPortfoliosPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_portfolios")
+    return Session().client("servicecatalog").get_paginator("list_portfolios")
 ```
 
 Boto3 documentation:
@@ -164,6 +186,8 @@ Arguments for `ListPortfoliosPaginator.paginate` method:
 `ListPortfoliosPaginator.paginate` returns
 `_PageIterator`\[[ListPortfoliosOutputTypeDef](./type_defs.md#listportfoliosoutputtypedef)\].
 
+<a id="listportfoliosforproductpaginator"></a>
+
 ## ListPortfoliosForProductPaginator
 
 Type annotations for
@@ -172,10 +196,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListPortfoliosForProductPaginator
 
 def get_list_portfolios_for_product_paginator() -> ListPortfoliosForProductPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_portfolios_for_product")
+    return Session().client("servicecatalog").get_paginator("list_portfolios_for_product")
 ```
 
 Boto3 documentation:
@@ -191,6 +217,8 @@ Arguments for `ListPortfoliosForProductPaginator.paginate` method:
 `ListPortfoliosForProductPaginator.paginate` returns
 `_PageIterator`\[[ListPortfoliosForProductOutputTypeDef](./type_defs.md#listportfoliosforproductoutputtypedef)\].
 
+<a id="listprincipalsforportfoliopaginator"></a>
+
 ## ListPrincipalsForPortfolioPaginator
 
 Type annotations for
@@ -199,10 +227,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListPrincipalsForPortfolioPaginator
 
 def get_list_principals_for_portfolio_paginator() -> ListPrincipalsForPortfolioPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_principals_for_portfolio")
+    return Session().client("servicecatalog").get_paginator("list_principals_for_portfolio")
 ```
 
 Boto3 documentation:
@@ -218,6 +248,8 @@ Arguments for `ListPrincipalsForPortfolioPaginator.paginate` method:
 `ListPrincipalsForPortfolioPaginator.paginate` returns
 `_PageIterator`\[[ListPrincipalsForPortfolioOutputTypeDef](./type_defs.md#listprincipalsforportfoliooutputtypedef)\].
 
+<a id="listprovisionedproductplanspaginator"></a>
+
 ## ListProvisionedProductPlansPaginator
 
 Type annotations for
@@ -226,10 +258,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListProvisionedProductPlansPaginator
 
 def get_list_provisioned_product_plans_paginator() -> ListProvisionedProductPlansPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_provisioned_product_plans")
+    return Session().client("servicecatalog").get_paginator("list_provisioned_product_plans")
 ```
 
 Boto3 documentation:
@@ -247,6 +281,8 @@ Arguments for `ListProvisionedProductPlansPaginator.paginate` method:
 `ListProvisionedProductPlansPaginator.paginate` returns
 `_PageIterator`\[[ListProvisionedProductPlansOutputTypeDef](./type_defs.md#listprovisionedproductplansoutputtypedef)\].
 
+<a id="listprovisioningartifactsforserviceactionpaginator"></a>
+
 ## ListProvisioningArtifactsForServiceActionPaginator
 
 Type annotations for
@@ -255,10 +291,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListProvisioningArtifactsForServiceActionPaginator
 
 def get_list_provisioning_artifacts_for_service_action_paginator() -> ListProvisioningArtifactsForServiceActionPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")
+    return Session().client("servicecatalog").get_paginator("list_provisioning_artifacts_for_service_action")
 ```
 
 Boto3 documentation:
@@ -275,6 +313,8 @@ method:
 `ListProvisioningArtifactsForServiceActionPaginator.paginate` returns
 `_PageIterator`\[[ListProvisioningArtifactsForServiceActionOutputTypeDef](./type_defs.md#listprovisioningartifactsforserviceactionoutputtypedef)\].
 
+<a id="listrecordhistorypaginator"></a>
+
 ## ListRecordHistoryPaginator
 
 Type annotations for
@@ -283,10 +323,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListRecordHistoryPaginator
 
 def get_list_record_history_paginator() -> ListRecordHistoryPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_record_history")
+    return Session().client("servicecatalog").get_paginator("list_record_history")
 ```
 
 Boto3 documentation:
@@ -305,6 +347,8 @@ Arguments for `ListRecordHistoryPaginator.paginate` method:
 `ListRecordHistoryPaginator.paginate` returns
 `_PageIterator`\[[ListRecordHistoryOutputTypeDef](./type_defs.md#listrecordhistoryoutputtypedef)\].
 
+<a id="listresourcesfortagoptionpaginator"></a>
+
 ## ListResourcesForTagOptionPaginator
 
 Type annotations for
@@ -313,10 +357,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListResourcesForTagOptionPaginator
 
 def get_list_resources_for_tag_option_paginator() -> ListResourcesForTagOptionPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_resources_for_tag_option")
+    return Session().client("servicecatalog").get_paginator("list_resources_for_tag_option")
 ```
 
 Boto3 documentation:
@@ -332,6 +378,8 @@ Arguments for `ListResourcesForTagOptionPaginator.paginate` method:
 `ListResourcesForTagOptionPaginator.paginate` returns
 `_PageIterator`\[[ListResourcesForTagOptionOutputTypeDef](./type_defs.md#listresourcesfortagoptionoutputtypedef)\].
 
+<a id="listserviceactionspaginator"></a>
+
 ## ListServiceActionsPaginator
 
 Type annotations for
@@ -340,10 +388,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListServiceActionsPaginator
 
 def get_list_service_actions_paginator() -> ListServiceActionsPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_service_actions")
+    return Session().client("servicecatalog").get_paginator("list_service_actions")
 ```
 
 Boto3 documentation:
@@ -358,6 +408,8 @@ Arguments for `ListServiceActionsPaginator.paginate` method:
 `ListServiceActionsPaginator.paginate` returns
 `_PageIterator`\[[ListServiceActionsOutputTypeDef](./type_defs.md#listserviceactionsoutputtypedef)\].
 
+<a id="listserviceactionsforprovisioningartifactpaginator"></a>
+
 ## ListServiceActionsForProvisioningArtifactPaginator
 
 Type annotations for
@@ -366,10 +418,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListServiceActionsForProvisioningArtifactPaginator
 
 def get_list_service_actions_for_provisioning_artifact_paginator() -> ListServiceActionsForProvisioningArtifactPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")
+    return Session().client("servicecatalog").get_paginator("list_service_actions_for_provisioning_artifact")
 ```
 
 Boto3 documentation:
@@ -387,6 +441,8 @@ method:
 `ListServiceActionsForProvisioningArtifactPaginator.paginate` returns
 `_PageIterator`\[[ListServiceActionsForProvisioningArtifactOutputTypeDef](./type_defs.md#listserviceactionsforprovisioningartifactoutputtypedef)\].
 
+<a id="listtagoptionspaginator"></a>
+
 ## ListTagOptionsPaginator
 
 Type annotations for
@@ -395,10 +451,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ListTagOptionsPaginator
 
 def get_list_tag_options_paginator() -> ListTagOptionsPaginator:
-    return boto3.client("servicecatalog").get_paginator("list_tag_options")
+    return Session().client("servicecatalog").get_paginator("list_tag_options")
 ```
 
 Boto3 documentation:
@@ -414,6 +472,8 @@ Arguments for `ListTagOptionsPaginator.paginate` method:
 `ListTagOptionsPaginator.paginate` returns
 `_PageIterator`\[[ListTagOptionsOutputTypeDef](./type_defs.md#listtagoptionsoutputtypedef)\].
 
+<a id="scanprovisionedproductspaginator"></a>
+
 ## ScanProvisionedProductsPaginator
 
 Type annotations for
@@ -422,10 +482,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import ScanProvisionedProductsPaginator
 
 def get_scan_provisioned_products_paginator() -> ScanProvisionedProductsPaginator:
-    return boto3.client("servicecatalog").get_paginator("scan_provisioned_products")
+    return Session().client("servicecatalog").get_paginator("scan_provisioned_products")
 ```
 
 Boto3 documentation:
@@ -442,6 +504,8 @@ Arguments for `ScanProvisionedProductsPaginator.paginate` method:
 `ScanProvisionedProductsPaginator.paginate` returns
 `_PageIterator`\[[ScanProvisionedProductsOutputTypeDef](./type_defs.md#scanprovisionedproductsoutputtypedef)\].
 
+<a id="searchproductsasadminpaginator"></a>
+
 ## SearchProductsAsAdminPaginator
 
 Type annotations for
@@ -450,10 +514,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_servicecatalog.paginator import SearchProductsAsAdminPaginator
 
 def get_search_products_as_admin_paginator() -> SearchProductsAsAdminPaginator:
-    return boto3.client("servicecatalog").get_paginator("search_products_as_admin")
+    return Session().client("servicecatalog").get_paginator("search_products_as_admin")
 ```
 
 Boto3 documentation:

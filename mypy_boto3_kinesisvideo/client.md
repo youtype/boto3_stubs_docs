@@ -1,3 +1,5 @@
+<a id="kinesisvideoclient-for-boto3-kinesisvideo-module"></a>
+
 # KinesisVideoClient for boto3 KinesisVideo module
 
 > [Index](..) > [KinesisVideo](.) > KinesisVideoClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KinesisVideo](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo)
 type annotations stubs module
-[mypy_boto3_kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
+[mypy-boto3-kinesisvideo](https://pypi.org/project/mypy-boto3-kinesisvideo/).
 
 - [KinesisVideoClient for boto3 KinesisVideo module](#kinesisvideoclient-for-boto3-kinesisvideo-module)
   - [KinesisVideoClient](#kinesisvideoclient)
@@ -35,6 +37,8 @@ type annotations stubs module
     - [update_stream](#update_stream)
     - [get_paginator](#get_paginator)
 
+<a id="kinesisvideoclient"></a>
+
 ## KinesisVideoClient
 
 Type annotations for `boto3.client("kinesisvideo")`
@@ -42,14 +46,17 @@ Type annotations for `boto3.client("kinesisvideo")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_kinesisvideo.client import KinesisVideoClient
 
 def get_kinesisvideo_client() -> KinesisVideoClient:
-    return boto3.client("kinesisvideo")
+    return Session().client("kinesisvideo")
 ```
 
 Boto3 documentation:
 [KinesisVideo.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -80,7 +87,11 @@ Exceptions:
 - `Exceptions.TagsPerResourceExceededLimitException`
 - `Exceptions.VersionMismatchException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -92,6 +103,8 @@ Boto3 documentation:
 [KinesisVideo.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesisvideo.html#KinesisVideo.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -107,6 +120,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_signaling_channel"></a>
 
 ### create_signaling_channel
 
@@ -133,6 +148,8 @@ Keyword-only arguments:
 Returns
 [CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef).
 
+<a id="create_stream"></a>
+
 ### create_stream
 
 Creates a new Kinesis video stream.
@@ -156,6 +173,8 @@ Keyword-only arguments:
 
 Returns [CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef).
 
+<a id="delete_signaling_channel"></a>
+
 ### delete_signaling_channel
 
 Deletes a specified signaling channel.
@@ -176,6 +195,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_stream"></a>
+
 ### delete_stream
 
 Deletes a Kinesis video stream and the data contained in the stream.
@@ -194,6 +215,8 @@ Keyword-only arguments:
 - `CurrentVersion`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_signaling_channel"></a>
 
 ### describe_signaling_channel
 
@@ -216,6 +239,8 @@ Keyword-only arguments:
 Returns
 [DescribeSignalingChannelOutputTypeDef](./type_defs.md#describesignalingchanneloutputtypedef).
 
+<a id="describe_stream"></a>
+
 ### describe_stream
 
 Returns the most current information about the specified stream.
@@ -236,6 +261,8 @@ Keyword-only arguments:
 Returns
 [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -254,6 +281,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_data_endpoint"></a>
 
 ### get_data_endpoint
 
@@ -275,6 +304,8 @@ Keyword-only arguments:
 
 Returns
 [GetDataEndpointOutputTypeDef](./type_defs.md#getdataendpointoutputtypedef).
+
+<a id="get_signaling_channel_endpoint"></a>
 
 ### get_signaling_channel_endpoint
 
@@ -299,6 +330,8 @@ Keyword-only arguments:
 Returns
 [GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef).
 
+<a id="list_signaling_channels"></a>
+
 ### list_signaling_channels
 
 Returns an array of `ChannelInfo` objects.
@@ -322,6 +355,8 @@ Keyword-only arguments:
 Returns
 [ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef).
 
+<a id="list_streams"></a>
+
 ### list_streams
 
 Returns an array of `StreamInfo` objects.
@@ -343,6 +378,8 @@ Keyword-only arguments:
 
 Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags associated with the specified signaling channel.
@@ -363,6 +400,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
+
+<a id="list_tags_for_stream"></a>
 
 ### list_tags_for_stream
 
@@ -386,6 +425,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds one or more tags to a signaling channel.
@@ -404,6 +445,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="tag_stream"></a>
 
 ### tag_stream
 
@@ -425,6 +468,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes one or more tags from a signaling channel.
@@ -443,6 +488,8 @@ Keyword-only arguments:
 - `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_stream"></a>
 
 ### untag_stream
 
@@ -463,6 +510,8 @@ Keyword-only arguments:
 - `StreamName`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_data_retention"></a>
 
 ### update_data_retention
 
@@ -490,6 +539,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_signaling_channel"></a>
+
 ### update_signaling_channel
 
 Updates the existing signaling channel.
@@ -512,6 +563,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_stream"></a>
+
 ### update_stream
 
 Updates stream metadata, such as the device name and media type.
@@ -533,6 +586,8 @@ Keyword-only arguments:
 - `MediaType`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lexruntimev2-module"></a>
+
 # Type annotations for boto3 LexRuntimeV2 module
 
 > [Index](..) > LexRuntimeV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LexRuntimeV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lexv2-runtime.html#LexRuntimeV2)
 type annotations stubs module
-[mypy_boto3_lexv2_runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
+[mypy-boto3-lexv2-runtime](https://pypi.org/project/mypy-boto3-lexv2-runtime/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lexv2-runtime]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lexv2-runtime]'
+
+# standalone installation
 pip install mypy-boto3-lexv2-runtime
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-lexv2-runtime
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="lexruntimev2client"></a>
 
 ## LexRuntimeV2Client
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -39,6 +53,8 @@ from mypy_boto3_lexv2_runtime.client import LexRuntimeV2Client
 - [put_session](./client.md#put_session)
 - [recognize_text](./client.md#recognize_text)
 - [recognize_utterance](./client.md#recognize_utterance)
+
+<a id="exceptions"></a>
 
 ### Exceptions
 
@@ -53,6 +69,8 @@ LexRuntimeV2Client [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ThrottlingException
 - ValidationException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -72,6 +90,8 @@ from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType, ...
 - [ShapeType](./literals.md#shapetype)
 - [StyleTypeType](./literals.md#styletypetype)
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

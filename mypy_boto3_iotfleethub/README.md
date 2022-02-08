@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-iotfleethub-module"></a>
+
 # Type annotations for boto3 IoTFleetHub module
 
 > [Index](..) > IoTFleetHub
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [IoTFleetHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iotfleethub.html#IoTFleetHub)
 type annotations stubs module
-[mypy_boto3_iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
+[mypy-boto3-iotfleethub](https://pypi.org/project/mypy-boto3-iotfleethub/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[iotfleethub]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[iotfleethub]'
+
+# standalone installation
 pip install mypy-boto3-iotfleethub
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-iotfleethub
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="iotfleethubclient"></a>
+
 ## IoTFleetHubClient
 
 Type annotations for `boto3.client("iotfleethub")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_iotfleethub.client import IoTFleetHubClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -45,6 +59,8 @@ from mypy_boto3_iotfleethub.client import IoTFleetHubClient
 - [untag_resource](./client.md#untag_resource)
 - [update_application](./client.md#update_application)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 IoTFleetHubClient [exceptions](./client.md#exceptions)
@@ -57,6 +73,8 @@ IoTFleetHubClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - ThrottlingException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -65,10 +83,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_iotfleethub.paginators import ListApplicationsPaginator, ...
+from mypy_boto3_iotfleethub.paginator import ListApplicationsPaginator, ...
 ```
 
 - [ListApplicationsPaginator](./paginators.md#listapplicationspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -84,6 +104,8 @@ from mypy_boto3_iotfleethub.literals import ApplicationStateType, ...
 - [ListApplicationsPaginatorName](./literals.md#listapplicationspaginatorname)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

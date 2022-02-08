@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-chimesdkidentity-module"></a>
+
 # Literals for boto3 ChimeSDKIdentity module
 
 > [Index](..) > [ChimeSDKIdentity](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ChimeSDKIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/chime-sdk-identity.html#ChimeSDKIdentity)
 type annotations stubs module
-[mypy_boto3_chime_sdk_identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
+[mypy-boto3-chime-sdk-identity](https://pypi.org/project/mypy-boto3-chime-sdk-identity/).
 
 - [Literals for boto3 ChimeSDKIdentity module](#literals-for-boto3-chimesdkidentity-module)
   - [AllowMessagesType](#allowmessagestype)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [EndpointStatusReasonType](#endpointstatusreasontype)
   - [EndpointStatusType](#endpointstatustype)
   - [ServiceName](#servicename)
+
+<a id="allowmessagestype"></a>
 
 ## AllowMessagesType
 
@@ -24,6 +28,8 @@ Values:
 
 - `ALL`
 - `NONE`
+
+<a id="appinstanceuserendpointtypetype"></a>
 
 ## AppInstanceUserEndpointTypeType
 
@@ -37,6 +43,8 @@ Values:
 - `APNS_SANDBOX`
 - `GCM`
 
+<a id="endpointstatusreasontype"></a>
+
 ## EndpointStatusReasonType
 
 ```python
@@ -48,6 +56,8 @@ Values:
 - `INVALID_DEVICE_TOKEN`
 - `INVALID_PINPOINT_ARN`
 
+<a id="endpointstatustype"></a>
+
 ## EndpointStatusType
 
 ```python
@@ -58,6 +68,8 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

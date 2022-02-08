@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-resiliencehub-module"></a>
+
 # Typed dictionaries for boto3 ResilienceHub module
 
 > [Index](..) > [ResilienceHub](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResilienceHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resiliencehub.html#ResilienceHub)
 type annotations stubs module
-[mypy_boto3_resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
+[mypy-boto3-resiliencehub](https://pypi.org/project/mypy-boto3-resiliencehub/).
 
 - [Typed dictionaries for boto3 ResilienceHub module](#typed-dictionaries-for-boto3-resiliencehub-module)
   - [AddDraftAppVersionResourceMappingsRequestRequestTypeDef](#adddraftappversionresourcemappingsrequestrequesttypedef)
@@ -112,6 +114,8 @@ type annotations stubs module
   - [UpdateResiliencyPolicyRequestRequestTypeDef](#updateresiliencypolicyrequestrequesttypedef)
   - [UpdateResiliencyPolicyResponseTypeDef](#updateresiliencypolicyresponsetypedef)
 
+<a id="adddraftappversionresourcemappingsrequestrequesttypedef"></a>
+
 ## AddDraftAppVersionResourceMappingsRequestRequestTypeDef
 
 ```python
@@ -123,6 +127,8 @@ Required fields:
 - `appArn`: `str`
 - `resourceMappings`:
   `Sequence`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
+
+<a id="adddraftappversionresourcemappingsresponsetypedef"></a>
 
 ## AddDraftAppVersionResourceMappingsResponseTypeDef
 
@@ -138,6 +144,8 @@ Required fields:
   `List`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="alarmrecommendationtypedef"></a>
 
 ## AlarmRecommendationTypeDef
 
@@ -159,6 +167,8 @@ Optional fields:
 - `items`:
   `List`\[[RecommendationItemTypeDef](./type_defs.md#recommendationitemtypedef)\]
 - `prerequisite`: `str`
+
+<a id="appassessmentsummarytypedef"></a>
 
 ## AppAssessmentSummaryTypeDef
 
@@ -185,6 +195,8 @@ Optional fields:
 - `message`: `str`
 - `resiliencyScore`: `float`
 - `startTime`: `datetime`
+
+<a id="appassessmenttypedef"></a>
 
 ## AppAssessmentTypeDef
 
@@ -217,6 +229,8 @@ Optional fields:
 - `startTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="appcomponentcompliancetypedef"></a>
+
 ## AppComponentComplianceTypeDef
 
 ```python
@@ -234,6 +248,8 @@ Optional fields:
   [ResiliencyScoreTypeDef](./type_defs.md#resiliencyscoretypedef)
 - `status`: [ComplianceStatusType](./literals.md#compliancestatustype)
 
+<a id="appcomponenttypedef"></a>
+
 ## AppComponentTypeDef
 
 ```python
@@ -244,6 +260,8 @@ Required fields:
 
 - `name`: `str`
 - `type`: `str`
+
+<a id="appsummarytypedef"></a>
 
 ## AppSummaryTypeDef
 
@@ -263,6 +281,8 @@ Optional fields:
   [AppComplianceStatusTypeType](./literals.md#appcompliancestatustypetype)
 - `description`: `str`
 - `resiliencyScore`: `float`
+
+<a id="apptypedef"></a>
 
 ## AppTypeDef
 
@@ -288,6 +308,8 @@ Optional fields:
 - `status`: [AppStatusTypeType](./literals.md#appstatustypetype)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="appversionsummarytypedef"></a>
+
 ## AppVersionSummaryTypeDef
 
 ```python
@@ -297,6 +319,8 @@ from mypy_boto3_resiliencehub.type_defs import AppVersionSummaryTypeDef
 Required fields:
 
 - `appVersion`: `str`
+
+<a id="componentrecommendationtypedef"></a>
 
 ## ComponentRecommendationTypeDef
 
@@ -311,6 +335,8 @@ Required fields:
   `List`\[[ConfigRecommendationTypeDef](./type_defs.md#configrecommendationtypedef)\]
 - `recommendationStatus`:
   [RecommendationComplianceStatusType](./literals.md#recommendationcompliancestatustype)
+
+<a id="configrecommendationtypedef"></a>
 
 ## ConfigRecommendationTypeDef
 
@@ -338,6 +364,8 @@ Optional fields:
   [RecommendationDisruptionComplianceTypeDef](./type_defs.md#recommendationdisruptioncompliancetypedef)\]
 - `suggestedChanges`: `List`\[`str`\]
 
+<a id="costtypedef"></a>
+
 ## CostTypeDef
 
 ```python
@@ -349,6 +377,8 @@ Required fields:
 - `amount`: `float`
 - `currency`: `str`
 - `frequency`: [CostFrequencyType](./literals.md#costfrequencytype)
+
+<a id="createapprequestrequesttypedef"></a>
 
 ## CreateAppRequestRequestTypeDef
 
@@ -367,6 +397,8 @@ Optional fields:
 - `policyArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createappresponsetypedef"></a>
+
 ## CreateAppResponseTypeDef
 
 ```python
@@ -378,6 +410,8 @@ Required fields:
 - `app`: [AppTypeDef](./type_defs.md#apptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrecommendationtemplaterequestrequesttypedef"></a>
 
 ## CreateRecommendationTemplateRequestRequestTypeDef
 
@@ -400,6 +434,8 @@ Optional fields:
   `Sequence`\[[RenderRecommendationTypeType](./literals.md#renderrecommendationtypetype)\]
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createrecommendationtemplateresponsetypedef"></a>
+
 ## CreateRecommendationTemplateResponseTypeDef
 
 ```python
@@ -412,6 +448,8 @@ Required fields:
   [RecommendationTemplateTypeDef](./type_defs.md#recommendationtemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createresiliencypolicyrequestrequesttypedef"></a>
 
 ## CreateResiliencyPolicyRequestRequestTypeDef
 
@@ -434,6 +472,8 @@ Optional fields:
 - `policyDescription`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createresiliencypolicyresponsetypedef"></a>
+
 ## CreateResiliencyPolicyResponseTypeDef
 
 ```python
@@ -445,6 +485,8 @@ Required fields:
 - `policy`: [ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteappassessmentrequestrequesttypedef"></a>
 
 ## DeleteAppAssessmentRequestRequestTypeDef
 
@@ -460,6 +502,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteappassessmentresponsetypedef"></a>
+
 ## DeleteAppAssessmentResponseTypeDef
 
 ```python
@@ -473,6 +517,8 @@ Required fields:
   [AssessmentStatusType](./literals.md#assessmentstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteapprequestrequesttypedef"></a>
 
 ## DeleteAppRequestRequestTypeDef
 
@@ -489,6 +535,8 @@ Optional fields:
 - `clientToken`: `str`
 - `forceDelete`: `bool`
 
+<a id="deleteappresponsetypedef"></a>
+
 ## DeleteAppResponseTypeDef
 
 ```python
@@ -500,6 +548,8 @@ Required fields:
 - `appArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleterecommendationtemplaterequestrequesttypedef"></a>
 
 ## DeleteRecommendationTemplateRequestRequestTypeDef
 
@@ -515,6 +565,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleterecommendationtemplateresponsetypedef"></a>
+
 ## DeleteRecommendationTemplateResponseTypeDef
 
 ```python
@@ -528,6 +580,8 @@ Required fields:
   [RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deleteresiliencypolicyrequestrequesttypedef"></a>
 
 ## DeleteResiliencyPolicyRequestRequestTypeDef
 
@@ -543,6 +597,8 @@ Optional fields:
 
 - `clientToken`: `str`
 
+<a id="deleteresiliencypolicyresponsetypedef"></a>
+
 ## DeleteResiliencyPolicyResponseTypeDef
 
 ```python
@@ -555,6 +611,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappassessmentrequestrequesttypedef"></a>
+
 ## DescribeAppAssessmentRequestRequestTypeDef
 
 ```python
@@ -564,6 +622,8 @@ from mypy_boto3_resiliencehub.type_defs import DescribeAppAssessmentRequestReque
 Required fields:
 
 - `assessmentArn`: `str`
+
+<a id="describeappassessmentresponsetypedef"></a>
 
 ## DescribeAppAssessmentResponseTypeDef
 
@@ -577,6 +637,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeapprequestrequesttypedef"></a>
+
 ## DescribeAppRequestRequestTypeDef
 
 ```python
@@ -586,6 +648,8 @@ from mypy_boto3_resiliencehub.type_defs import DescribeAppRequestRequestTypeDef
 Required fields:
 
 - `appArn`: `str`
+
+<a id="describeappresponsetypedef"></a>
 
 ## DescribeAppResponseTypeDef
 
@@ -598,6 +662,8 @@ Required fields:
 - `app`: [AppTypeDef](./type_defs.md#apptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeappversionresourcesresolutionstatusrequestrequesttypedef"></a>
 
 ## DescribeAppVersionResourcesResolutionStatusRequestRequestTypeDef
 
@@ -613,6 +679,8 @@ Required fields:
 Optional fields:
 
 - `resolutionId`: `str`
+
+<a id="describeappversionresourcesresolutionstatusresponsetypedef"></a>
 
 ## DescribeAppVersionResourcesResolutionStatusResponseTypeDef
 
@@ -631,6 +699,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeappversiontemplaterequestrequesttypedef"></a>
+
 ## DescribeAppVersionTemplateRequestRequestTypeDef
 
 ```python
@@ -641,6 +711,8 @@ Required fields:
 
 - `appArn`: `str`
 - `appVersion`: `str`
+
+<a id="describeappversiontemplateresponsetypedef"></a>
 
 ## DescribeAppVersionTemplateResponseTypeDef
 
@@ -656,6 +728,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedraftappversionresourcesimportstatusrequestrequesttypedef"></a>
+
 ## DescribeDraftAppVersionResourcesImportStatusRequestRequestTypeDef
 
 ```python
@@ -665,6 +739,8 @@ from mypy_boto3_resiliencehub.type_defs import DescribeDraftAppVersionResourcesI
 Required fields:
 
 - `appArn`: `str`
+
+<a id="describedraftappversionresourcesimportstatusresponsetypedef"></a>
 
 ## DescribeDraftAppVersionResourcesImportStatusResponseTypeDef
 
@@ -683,6 +759,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresiliencypolicyrequestrequesttypedef"></a>
+
 ## DescribeResiliencyPolicyRequestRequestTypeDef
 
 ```python
@@ -692,6 +770,8 @@ from mypy_boto3_resiliencehub.type_defs import DescribeResiliencyPolicyRequestRe
 Required fields:
 
 - `policyArn`: `str`
+
+<a id="describeresiliencypolicyresponsetypedef"></a>
 
 ## DescribeResiliencyPolicyResponseTypeDef
 
@@ -704,6 +784,8 @@ Required fields:
 - `policy`: [ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disruptioncompliancetypedef"></a>
 
 ## DisruptionComplianceTypeDef
 
@@ -728,6 +810,8 @@ Optional fields:
 - `rtoDescription`: `str`
 - `rtoReferenceId`: `str`
 
+<a id="failurepolicytypedef"></a>
+
 ## FailurePolicyTypeDef
 
 ```python
@@ -739,6 +823,8 @@ Required fields:
 - `rpoInSecs`: `int`
 - `rtoInSecs`: `int`
 
+<a id="importresourcestodraftappversionrequestrequesttypedef"></a>
+
 ## ImportResourcesToDraftAppVersionRequestRequestTypeDef
 
 ```python
@@ -749,6 +835,8 @@ Required fields:
 
 - `appArn`: `str`
 - `sourceArns`: `Sequence`\[`str`\]
+
+<a id="importresourcestodraftappversionresponsetypedef"></a>
 
 ## ImportResourcesToDraftAppVersionResponseTypeDef
 
@@ -766,6 +854,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listalarmrecommendationsrequestrequesttypedef"></a>
+
 ## ListAlarmRecommendationsRequestRequestTypeDef
 
 ```python
@@ -781,6 +871,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listalarmrecommendationsresponsetypedef"></a>
+
 ## ListAlarmRecommendationsResponseTypeDef
 
 ```python
@@ -794,6 +886,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappassessmentsrequestrequesttypedef"></a>
 
 ## ListAppAssessmentsRequestRequestTypeDef
 
@@ -814,6 +908,8 @@ Optional fields:
 - `nextToken`: `str`
 - `reverseOrder`: `bool`
 
+<a id="listappassessmentsresponsetypedef"></a>
+
 ## ListAppAssessmentsResponseTypeDef
 
 ```python
@@ -827,6 +923,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappcomponentcompliancesrequestrequesttypedef"></a>
 
 ## ListAppComponentCompliancesRequestRequestTypeDef
 
@@ -843,6 +941,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listappcomponentcompliancesresponsetypedef"></a>
+
 ## ListAppComponentCompliancesResponseTypeDef
 
 ```python
@@ -856,6 +956,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappcomponentrecommendationsrequestrequesttypedef"></a>
 
 ## ListAppComponentRecommendationsRequestRequestTypeDef
 
@@ -872,6 +974,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listappcomponentrecommendationsresponsetypedef"></a>
+
 ## ListAppComponentRecommendationsResponseTypeDef
 
 ```python
@@ -885,6 +989,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappversionresourcemappingsrequestrequesttypedef"></a>
 
 ## ListAppVersionResourceMappingsRequestRequestTypeDef
 
@@ -902,6 +1008,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listappversionresourcemappingsresponsetypedef"></a>
+
 ## ListAppVersionResourceMappingsResponseTypeDef
 
 ```python
@@ -915,6 +1023,8 @@ Required fields:
   `List`\[[ResourceMappingTypeDef](./type_defs.md#resourcemappingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappversionresourcesrequestrequesttypedef"></a>
 
 ## ListAppVersionResourcesRequestRequestTypeDef
 
@@ -933,6 +1043,8 @@ Optional fields:
 - `nextToken`: `str`
 - `resolutionId`: `str`
 
+<a id="listappversionresourcesresponsetypedef"></a>
+
 ## ListAppVersionResourcesResponseTypeDef
 
 ```python
@@ -947,6 +1059,8 @@ Required fields:
 - `resolutionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listappversionsrequestrequesttypedef"></a>
 
 ## ListAppVersionsRequestRequestTypeDef
 
@@ -963,6 +1077,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listappversionsresponsetypedef"></a>
+
 ## ListAppVersionsResponseTypeDef
 
 ```python
@@ -977,6 +1093,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listappsrequestrequesttypedef"></a>
+
 ## ListAppsRequestRequestTypeDef
 
 ```python
@@ -989,6 +1107,8 @@ Optional fields:
 - `maxResults`: `int`
 - `name`: `str`
 - `nextToken`: `str`
+
+<a id="listappsresponsetypedef"></a>
 
 ## ListAppsResponseTypeDef
 
@@ -1003,6 +1123,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listrecommendationtemplatesrequestrequesttypedef"></a>
 
 ## ListRecommendationTemplatesRequestRequestTypeDef
 
@@ -1024,6 +1146,8 @@ Optional fields:
 - `status`:
   `Sequence`\[[RecommendationTemplateStatusType](./literals.md#recommendationtemplatestatustype)\]
 
+<a id="listrecommendationtemplatesresponsetypedef"></a>
+
 ## ListRecommendationTemplatesResponseTypeDef
 
 ```python
@@ -1038,6 +1162,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listresiliencypoliciesrequestrequesttypedef"></a>
+
 ## ListResiliencyPoliciesRequestRequestTypeDef
 
 ```python
@@ -1049,6 +1175,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `policyName`: `str`
+
+<a id="listresiliencypoliciesresponsetypedef"></a>
 
 ## ListResiliencyPoliciesResponseTypeDef
 
@@ -1063,6 +1191,8 @@ Required fields:
   `List`\[[ResiliencyPolicyTypeDef](./type_defs.md#resiliencypolicytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsoprecommendationsrequestrequesttypedef"></a>
 
 ## ListSopRecommendationsRequestRequestTypeDef
 
@@ -1079,6 +1209,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listsoprecommendationsresponsetypedef"></a>
+
 ## ListSopRecommendationsResponseTypeDef
 
 ```python
@@ -1093,6 +1225,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsuggestedresiliencypoliciesrequestrequesttypedef"></a>
+
 ## ListSuggestedResiliencyPoliciesRequestRequestTypeDef
 
 ```python
@@ -1103,6 +1237,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listsuggestedresiliencypoliciesresponsetypedef"></a>
 
 ## ListSuggestedResiliencyPoliciesResponseTypeDef
 
@@ -1118,6 +1254,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1127,6 +1265,8 @@ from mypy_boto3_resiliencehub.type_defs import ListTagsForResourceRequestRequest
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1139,6 +1279,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listtestrecommendationsrequestrequesttypedef"></a>
 
 ## ListTestRecommendationsRequestRequestTypeDef
 
@@ -1155,6 +1297,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listtestrecommendationsresponsetypedef"></a>
+
 ## ListTestRecommendationsResponseTypeDef
 
 ```python
@@ -1168,6 +1312,8 @@ Required fields:
   `List`\[[TestRecommendationTypeDef](./type_defs.md#testrecommendationtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listunsupportedappversionresourcesrequestrequesttypedef"></a>
 
 ## ListUnsupportedAppVersionResourcesRequestRequestTypeDef
 
@@ -1186,6 +1332,8 @@ Optional fields:
 - `nextToken`: `str`
 - `resolutionId`: `str`
 
+<a id="listunsupportedappversionresourcesresponsetypedef"></a>
+
 ## ListUnsupportedAppVersionResourcesResponseTypeDef
 
 ```python
@@ -1201,6 +1349,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logicalresourceidtypedef"></a>
+
 ## LogicalResourceIdTypeDef
 
 ```python
@@ -1215,6 +1365,8 @@ Optional fields:
 
 - `logicalStackName`: `str`
 - `resourceGroupName`: `str`
+
+<a id="physicalresourceidtypedef"></a>
 
 ## PhysicalResourceIdTypeDef
 
@@ -1232,6 +1384,8 @@ Optional fields:
 
 - `awsAccountId`: `str`
 - `awsRegion`: `str`
+
+<a id="physicalresourcetypedef"></a>
 
 ## PhysicalResourceTypeDef
 
@@ -1253,6 +1407,8 @@ Optional fields:
   `List`\[[AppComponentTypeDef](./type_defs.md#appcomponenttypedef)\]
 - `resourceName`: `str`
 
+<a id="publishappversionrequestrequesttypedef"></a>
+
 ## PublishAppVersionRequestRequestTypeDef
 
 ```python
@@ -1262,6 +1418,8 @@ from mypy_boto3_resiliencehub.type_defs import PublishAppVersionRequestRequestTy
 Required fields:
 
 - `appArn`: `str`
+
+<a id="publishappversionresponsetypedef"></a>
 
 ## PublishAppVersionResponseTypeDef
 
@@ -1276,6 +1434,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="putdraftappversiontemplaterequestrequesttypedef"></a>
+
 ## PutDraftAppVersionTemplateRequestRequestTypeDef
 
 ```python
@@ -1286,6 +1446,8 @@ Required fields:
 
 - `appArn`: `str`
 - `appTemplateBody`: `str`
+
+<a id="putdraftappversiontemplateresponsetypedef"></a>
 
 ## PutDraftAppVersionTemplateResponseTypeDef
 
@@ -1299,6 +1461,8 @@ Required fields:
 - `appVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="recommendationdisruptioncompliancetypedef"></a>
 
 ## RecommendationDisruptionComplianceTypeDef
 
@@ -1318,6 +1482,8 @@ Optional fields:
 - `expectedRtoDescription`: `str`
 - `expectedRtoInSecs`: `int`
 
+<a id="recommendationitemtypedef"></a>
+
 ## RecommendationItemTypeDef
 
 ```python
@@ -1330,6 +1496,8 @@ Optional fields:
 - `resourceId`: `str`
 - `targetAccountId`: `str`
 - `targetRegion`: `str`
+
+<a id="recommendationtemplatetypedef"></a>
 
 ## RecommendationTemplateTypeDef
 
@@ -1359,6 +1527,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `templatesLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 
+<a id="removedraftappversionresourcemappingsrequestrequesttypedef"></a>
+
 ## RemoveDraftAppVersionResourceMappingsRequestRequestTypeDef
 
 ```python
@@ -1376,6 +1546,8 @@ Optional fields:
 - `resourceGroupNames`: `Sequence`\[`str`\]
 - `resourceNames`: `Sequence`\[`str`\]
 
+<a id="removedraftappversionresourcemappingsresponsetypedef"></a>
+
 ## RemoveDraftAppVersionResourceMappingsResponseTypeDef
 
 ```python
@@ -1388,6 +1560,8 @@ Required fields:
 - `appVersion`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resiliencypolicytypedef"></a>
 
 ## ResiliencyPolicyTypeDef
 
@@ -1410,6 +1584,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
 
+<a id="resiliencyscoretypedef"></a>
+
 ## ResiliencyScoreTypeDef
 
 ```python
@@ -1422,6 +1598,8 @@ Required fields:
   `Dict`\[[DisruptionTypeType](./literals.md#disruptiontypetype), `float`\]
 - `score`: `float`
 
+<a id="resolveappversionresourcesrequestrequesttypedef"></a>
+
 ## ResolveAppVersionResourcesRequestRequestTypeDef
 
 ```python
@@ -1432,6 +1610,8 @@ Required fields:
 
 - `appArn`: `str`
 - `appVersion`: `str`
+
+<a id="resolveappversionresourcesresponsetypedef"></a>
 
 ## ResolveAppVersionResourcesResponseTypeDef
 
@@ -1448,6 +1628,8 @@ Required fields:
   [ResourceResolutionStatusTypeType](./literals.md#resourceresolutionstatustypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="resourcemappingtypedef"></a>
 
 ## ResourceMappingTypeDef
 
@@ -1469,6 +1651,8 @@ Optional fields:
 - `resourceGroupName`: `str`
 - `resourceName`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1483,6 +1667,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3locationtypedef"></a>
+
 ## S3LocationTypeDef
 
 ```python
@@ -1493,6 +1679,8 @@ Optional fields:
 
 - `bucket`: `str`
 - `prefix`: `str`
+
+<a id="soprecommendationtypedef"></a>
 
 ## SopRecommendationTypeDef
 
@@ -1516,6 +1704,8 @@ Optional fields:
 - `name`: `str`
 - `prerequisite`: `str`
 
+<a id="startappassessmentrequestrequesttypedef"></a>
+
 ## StartAppAssessmentRequestRequestTypeDef
 
 ```python
@@ -1533,6 +1723,8 @@ Optional fields:
 - `clientToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="startappassessmentresponsetypedef"></a>
+
 ## StartAppAssessmentResponseTypeDef
 
 ```python
@@ -1545,6 +1737,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1555,6 +1749,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="testrecommendationtypedef"></a>
 
 ## TestRecommendationTypeDef
 
@@ -1579,6 +1775,8 @@ Optional fields:
 - `risk`: [TestRiskType](./literals.md#testrisktype)
 - `type`: [TestTypeType](./literals.md#testtypetype)
 
+<a id="unsupportedresourcetypedef"></a>
+
 ## UnsupportedResourceTypeDef
 
 ```python
@@ -1593,6 +1791,8 @@ Required fields:
   [PhysicalResourceIdTypeDef](./type_defs.md#physicalresourceidtypedef)
 - `resourceType`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1603,6 +1803,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updateapprequestrequesttypedef"></a>
 
 ## UpdateAppRequestRequestTypeDef
 
@@ -1620,6 +1822,8 @@ Optional fields:
 - `description`: `str`
 - `policyArn`: `str`
 
+<a id="updateappresponsetypedef"></a>
+
 ## UpdateAppResponseTypeDef
 
 ```python
@@ -1631,6 +1835,8 @@ Required fields:
 - `app`: [AppTypeDef](./type_defs.md#apptypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateresiliencypolicyrequestrequesttypedef"></a>
 
 ## UpdateResiliencyPolicyRequestRequestTypeDef
 
@@ -1651,6 +1857,8 @@ Optional fields:
 - `policyDescription`: `str`
 - `policyName`: `str`
 - `tier`: [ResiliencyPolicyTierType](./literals.md#resiliencypolicytiertype)
+
+<a id="updateresiliencypolicyresponsetypedef"></a>
 
 ## UpdateResiliencyPolicyResponseTypeDef
 

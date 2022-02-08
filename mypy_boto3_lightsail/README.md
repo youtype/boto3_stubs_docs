@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lightsail-module"></a>
+
 # Type annotations for boto3 Lightsail module
 
 > [Index](..) > Lightsail
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Lightsail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lightsail.html#Lightsail)
 type annotations stubs module
-[mypy_boto3_lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
+[mypy-boto3-lightsail](https://pypi.org/project/mypy-boto3-lightsail/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lightsail]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lightsail]'
+
+# standalone installation
 pip install mypy-boto3-lightsail
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-lightsail
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="lightsailclient"></a>
+
 ## LightsailClient
 
 Type annotations for `boto3.client("lightsail")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lightsail.client import LightsailClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -190,6 +204,8 @@ from mypy_boto3_lightsail.client import LightsailClient
 - [update_relational_database](./client.md#update_relational_database)
 - [update_relational_database_parameters](./client.md#update_relational_database_parameters)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LightsailClient [exceptions](./client.md#exceptions)
@@ -203,6 +219,8 @@ LightsailClient [exceptions](./client.md#exceptions)
 - ServiceException
 - UnauthenticatedException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -211,7 +229,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_lightsail.paginators import GetActiveNamesPaginator, ...
+from mypy_boto3_lightsail.paginator import GetActiveNamesPaginator, ...
 ```
 
 - [GetActiveNamesPaginator](./paginators.md#getactivenamespaginator)
@@ -234,6 +252,8 @@ from mypy_boto3_lightsail.paginators import GetActiveNamesPaginator, ...
 - [GetRelationalDatabaseSnapshotsPaginator](./paginators.md#getrelationaldatabasesnapshotspaginator)
 - [GetRelationalDatabasesPaginator](./paginators.md#getrelationaldatabasespaginator)
 - [GetStaticIpsPaginator](./paginators.md#getstaticipspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -329,6 +349,8 @@ from mypy_boto3_lightsail.literals import AccessDirectionType, ...
 - [TreatMissingDataType](./literals.md#treatmissingdatatype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

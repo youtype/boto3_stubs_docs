@@ -1,3 +1,5 @@
+<a id="migrationhubconfigclient-for-boto3-migrationhubconfig-module"></a>
+
 # MigrationHubConfigClient for boto3 MigrationHubConfig module
 
 > [Index](..) > [MigrationHubConfig](.) > MigrationHubConfigClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHubConfig](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig)
 type annotations stubs module
-[mypy_boto3_migrationhub_config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
+[mypy-boto3-migrationhub-config](https://pypi.org/project/mypy-boto3-migrationhub-config/).
 
 - [MigrationHubConfigClient for boto3 MigrationHubConfig module](#migrationhubconfigclient-for-boto3-migrationhubconfig-module)
   - [MigrationHubConfigClient](#migrationhubconfigclient)
@@ -18,6 +20,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [get_home_region](#get_home_region)
 
+<a id="migrationhubconfigclient"></a>
+
 ## MigrationHubConfigClient
 
 Type annotations for `boto3.client("migrationhub-config")`
@@ -25,14 +29,17 @@ Type annotations for `boto3.client("migrationhub-config")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_migrationhub_config.client import MigrationHubConfigClient
 
 def get_migrationhub-config_client() -> MigrationHubConfigClient:
-    return boto3.client("migrationhub-config")
+    return Session().client("migrationhub-config")
 ```
 
 Boto3 documentation:
 [MigrationHubConfig.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -56,7 +63,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableException`
 - `Exceptions.ThrottlingException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -68,6 +79,8 @@ Boto3 documentation:
 [MigrationHubConfig.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/migrationhub-config.html#MigrationHubConfig.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -83,6 +96,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_home_region_control"></a>
 
 ### create_home_region_control
 
@@ -105,6 +120,8 @@ Keyword-only arguments:
 
 Returns
 [CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef).
+
+<a id="describe_home_region_controls"></a>
 
 ### describe_home_region_controls
 
@@ -130,6 +147,8 @@ Keyword-only arguments:
 Returns
 [DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -148,6 +167,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_home_region"></a>
 
 ### get_home_region
 

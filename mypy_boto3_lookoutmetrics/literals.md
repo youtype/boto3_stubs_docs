@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-lookoutmetrics-module"></a>
+
 # Literals for boto3 LookoutMetrics module
 
 > [Index](..) > [LookoutMetrics](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [LookoutMetrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics)
 type annotations stubs module
-[mypy_boto3_lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
+[mypy-boto3-lookoutmetrics](https://pypi.org/project/mypy-boto3-lookoutmetrics/).
 
 - [Literals for boto3 LookoutMetrics module](#literals-for-boto3-lookoutmetrics-module)
   - [AggregationFunctionType](#aggregationfunctiontype)
@@ -20,6 +22,8 @@ type annotations stubs module
   - [RelationshipTypeType](#relationshiptypetype)
   - [ServiceName](#servicename)
 
+<a id="aggregationfunctiontype"></a>
+
 ## AggregationFunctionType
 
 ```python
@@ -30,6 +34,8 @@ Values:
 
 - `AVG`
 - `SUM`
+
+<a id="alertstatustype"></a>
 
 ## AlertStatusType
 
@@ -42,6 +48,8 @@ Values:
 - `ACTIVE`
 - `INACTIVE`
 
+<a id="alerttypetype"></a>
+
 ## AlertTypeType
 
 ```python
@@ -52,6 +60,8 @@ Values:
 
 - `LAMBDA`
 - `SNS`
+
+<a id="anomalydetectiontaskstatustype"></a>
 
 ## AnomalyDetectionTaskStatusType
 
@@ -67,6 +77,8 @@ Values:
 - `IN_PROGRESS`
 - `PENDING`
 
+<a id="anomalydetectorfailuretypetype"></a>
+
 ## AnomalyDetectorFailureTypeType
 
 ```python
@@ -79,6 +91,8 @@ Values:
 - `BACK_TEST_ACTIVATION_FAILURE`
 - `DEACTIVATION_FAILURE`
 - `DELETION_FAILURE`
+
+<a id="anomalydetectorstatustype"></a>
 
 ## AnomalyDetectorStatusType
 
@@ -100,6 +114,8 @@ Values:
 - `INACTIVE`
 - `LEARNING`
 
+<a id="csvfilecompressiontype"></a>
+
 ## CSVFileCompressionType
 
 ```python
@@ -110,6 +126,8 @@ Values:
 
 - `GZIP`
 - `NONE`
+
+<a id="frequencytype"></a>
 
 ## FrequencyType
 
@@ -124,6 +142,8 @@ Values:
 - `PT1H`
 - `PT5M`
 
+<a id="jsonfilecompressiontype"></a>
+
 ## JsonFileCompressionType
 
 ```python
@@ -135,6 +155,8 @@ Values:
 - `GZIP`
 - `NONE`
 
+<a id="relationshiptypetype"></a>
+
 ## RelationshipTypeType
 
 ```python
@@ -145,6 +167,8 @@ Values:
 
 - `CAUSE_OF_INPUT_ANOMALY_GROUP`
 - `EFFECT_OF_INPUT_ANOMALY_GROUP`
+
+<a id="servicename"></a>
 
 ## ServiceName
 

@@ -1,3 +1,5 @@
+<a id="cloudsearchclient-for-boto3-cloudsearch-module"></a>
+
 # CloudSearchClient for boto3 CloudSearch module
 
 > [Index](..) > [CloudSearch](.) > CloudSearchClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudSearch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch)
 type annotations stubs module
-[mypy_boto3_cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
+[mypy-boto3-cloudsearch](https://pypi.org/project/mypy-boto3-cloudsearch/).
 
 - [CloudSearchClient for boto3 CloudSearch module](#cloudsearchclient-for-boto3-cloudsearch-module)
   - [CloudSearchClient](#cloudsearchclient)
@@ -41,6 +43,8 @@ type annotations stubs module
     - [update_scaling_parameters](#update_scaling_parameters)
     - [update_service_access_policies](#update_service_access_policies)
 
+<a id="cloudsearchclient"></a>
+
 ## CloudSearchClient
 
 Type annotations for `boto3.client("cloudsearch")`
@@ -48,14 +52,17 @@ Type annotations for `boto3.client("cloudsearch")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_cloudsearch.client import CloudSearchClient
 
 def get_cloudsearch_client() -> CloudSearchClient:
-    return boto3.client("cloudsearch")
+    return Session().client("cloudsearch")
 ```
 
 Boto3 documentation:
 [CloudSearch.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -81,7 +88,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -93,6 +104,8 @@ Boto3 documentation:
 [CloudSearch.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudsearch.html#CloudSearch.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="build_suggesters"></a>
 
 ### build_suggesters
 
@@ -113,6 +126,8 @@ Keyword-only arguments:
 Returns
 [BuildSuggestersResponseTypeDef](./type_defs.md#buildsuggestersresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -127,6 +142,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_domain"></a>
 
 ### create_domain
 
@@ -146,6 +163,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
+
+<a id="define_analysis_scheme"></a>
 
 ### define_analysis_scheme
 
@@ -170,6 +189,8 @@ Keyword-only arguments:
 Returns
 [DefineAnalysisSchemeResponseTypeDef](./type_defs.md#defineanalysisschemeresponsetypedef).
 
+<a id="define_expression"></a>
+
 ### define_expression
 
 Configures an ` Expression` for the search domain.
@@ -190,6 +211,8 @@ Keyword-only arguments:
 
 Returns
 [DefineExpressionResponseTypeDef](./type_defs.md#defineexpressionresponsetypedef).
+
+<a id="define_index_field"></a>
 
 ### define_index_field
 
@@ -212,6 +235,8 @@ Keyword-only arguments:
 Returns
 [DefineIndexFieldResponseTypeDef](./type_defs.md#defineindexfieldresponsetypedef).
 
+<a id="define_suggester"></a>
+
 ### define_suggester
 
 Configures a suggester for a domain.
@@ -231,6 +256,8 @@ Keyword-only arguments:
 
 Returns
 [DefineSuggesterResponseTypeDef](./type_defs.md#definesuggesterresponsetypedef).
+
+<a id="delete_analysis_scheme"></a>
 
 ### delete_analysis_scheme
 
@@ -253,6 +280,8 @@ Keyword-only arguments:
 Returns
 [DeleteAnalysisSchemeResponseTypeDef](./type_defs.md#deleteanalysisschemeresponsetypedef).
 
+<a id="delete_domain"></a>
+
 ### delete_domain
 
 Permanently deletes a search domain and all of its data.
@@ -271,6 +300,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDomainResponseTypeDef](./type_defs.md#deletedomainresponsetypedef).
+
+<a id="delete_expression"></a>
 
 ### delete_expression
 
@@ -292,6 +323,8 @@ Keyword-only arguments:
 Returns
 [DeleteExpressionResponseTypeDef](./type_defs.md#deleteexpressionresponsetypedef).
 
+<a id="delete_index_field"></a>
+
 ### delete_index_field
 
 Removes an ` IndexField` from the search domain.
@@ -312,6 +345,8 @@ Keyword-only arguments:
 Returns
 [DeleteIndexFieldResponseTypeDef](./type_defs.md#deleteindexfieldresponsetypedef).
 
+<a id="delete_suggester"></a>
+
 ### delete_suggester
 
 Deletes a suggester.
@@ -331,6 +366,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteSuggesterResponseTypeDef](./type_defs.md#deletesuggesterresponsetypedef).
+
+<a id="describe_analysis_schemes"></a>
 
 ### describe_analysis_schemes
 
@@ -354,6 +391,8 @@ Keyword-only arguments:
 Returns
 [DescribeAnalysisSchemesResponseTypeDef](./type_defs.md#describeanalysisschemesresponsetypedef).
 
+<a id="describe_availability_options"></a>
+
 ### describe_availability_options
 
 Gets the availability options configured for a domain.
@@ -374,6 +413,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAvailabilityOptionsResponseTypeDef](./type_defs.md#describeavailabilityoptionsresponsetypedef).
+
+<a id="describe_domain_endpoint_options"></a>
 
 ### describe_domain_endpoint_options
 
@@ -397,6 +438,8 @@ Keyword-only arguments:
 Returns
 [DescribeDomainEndpointOptionsResponseTypeDef](./type_defs.md#describedomainendpointoptionsresponsetypedef).
 
+<a id="describe_domains"></a>
+
 ### describe_domains
 
 Gets information about the search domains owned by this account.
@@ -415,6 +458,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainsResponseTypeDef](./type_defs.md#describedomainsresponsetypedef).
+
+<a id="describe_expressions"></a>
 
 ### describe_expressions
 
@@ -436,6 +481,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeExpressionsResponseTypeDef](./type_defs.md#describeexpressionsresponsetypedef).
+
+<a id="describe_index_fields"></a>
 
 ### describe_index_fields
 
@@ -459,6 +506,8 @@ Keyword-only arguments:
 Returns
 [DescribeIndexFieldsResponseTypeDef](./type_defs.md#describeindexfieldsresponsetypedef).
 
+<a id="describe_scaling_parameters"></a>
+
 ### describe_scaling_parameters
 
 Gets the scaling parameters configured for a domain.
@@ -478,6 +527,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeScalingParametersResponseTypeDef](./type_defs.md#describescalingparametersresponsetypedef).
+
+<a id="describe_service_access_policies"></a>
 
 ### describe_service_access_policies
 
@@ -501,6 +552,8 @@ Keyword-only arguments:
 Returns
 [DescribeServiceAccessPoliciesResponseTypeDef](./type_defs.md#describeserviceaccesspoliciesresponsetypedef).
 
+<a id="describe_suggesters"></a>
+
 ### describe_suggesters
 
 Gets the suggesters configured for a domain.
@@ -522,6 +575,8 @@ Keyword-only arguments:
 Returns
 [DescribeSuggestersResponseTypeDef](./type_defs.md#describesuggestersresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -540,6 +595,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="index_documents"></a>
 
 ### index_documents
 
@@ -561,6 +618,8 @@ Keyword-only arguments:
 Returns
 [IndexDocumentsResponseTypeDef](./type_defs.md#indexdocumentsresponsetypedef).
 
+<a id="list_domain_names"></a>
+
 ### list_domain_names
 
 Lists all search domains owned by an account.
@@ -572,6 +631,8 @@ Boto3 documentation:
 
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
+
+<a id="update_availability_options"></a>
 
 ### update_availability_options
 
@@ -593,6 +654,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAvailabilityOptionsResponseTypeDef](./type_defs.md#updateavailabilityoptionsresponsetypedef).
+
+<a id="update_domain_endpoint_options"></a>
 
 ### update_domain_endpoint_options
 
@@ -618,6 +681,8 @@ Keyword-only arguments:
 Returns
 [UpdateDomainEndpointOptionsResponseTypeDef](./type_defs.md#updatedomainendpointoptionsresponsetypedef).
 
+<a id="update_scaling_parameters"></a>
+
 ### update_scaling_parameters
 
 Configures scaling parameters for a domain.
@@ -640,6 +705,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateScalingParametersResponseTypeDef](./type_defs.md#updatescalingparametersresponsetypedef).
+
+<a id="update_service_access_policies"></a>
 
 ### update_service_access_policies
 

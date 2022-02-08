@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-cognitoidentity-module"></a>
+
 # Type annotations for boto3 CognitoIdentity module
 
 > [Index](..) > CognitoIdentity
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [CognitoIdentity](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cognito-identity.html#CognitoIdentity)
 type annotations stubs module
-[mypy_boto3_cognito_identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
+[mypy-boto3-cognito-identity](https://pypi.org/project/mypy-boto3-cognito-identity/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[cognito-identity]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[cognito-identity]'
+
+# standalone installation
 pip install mypy-boto3-cognito-identity
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-cognito-identity
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="cognitoidentityclient"></a>
+
 ## CognitoIdentityClient
 
 Type annotations for `boto3.client("cognito-identity")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -60,6 +74,8 @@ from mypy_boto3_cognito_identity.client import CognitoIdentityClient
 - [untag_resource](./client.md#untag_resource)
 - [update_identity_pool](./client.md#update_identity_pool)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 CognitoIdentityClient [exceptions](./client.md#exceptions)
@@ -77,6 +93,8 @@ CognitoIdentityClient [exceptions](./client.md#exceptions)
 - ResourceNotFoundException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -85,10 +103,12 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_cognito_identity.paginators import ListIdentityPoolsPaginator, ...
+from mypy_boto3_cognito_identity.paginator import ListIdentityPoolsPaginator, ...
 ```
 
 - [ListIdentityPoolsPaginator](./paginators.md#listidentitypoolspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -107,6 +127,8 @@ from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType
 - [RoleMappingTypeType](./literals.md#rolemappingtypetype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-kms-module"></a>
+
 # Literals for boto3 KMS module
 
 > [Index](..) > [KMS](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module
-[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [Literals for boto3 KMS module](#literals-for-boto3-kms-module)
   - [AlgorithmSpecType](#algorithmspectype)
@@ -33,6 +35,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="algorithmspectype"></a>
+
 ## AlgorithmSpecType
 
 ```python
@@ -44,6 +48,8 @@ Values:
 - `RSAES_OAEP_SHA_1`
 - `RSAES_OAEP_SHA_256`
 - `RSAES_PKCS1_V1_5`
+
+<a id="connectionerrorcodetypetype"></a>
 
 ## ConnectionErrorCodeTypeType
 
@@ -63,6 +69,8 @@ Values:
 - `USER_LOGGED_IN`
 - `USER_NOT_FOUND`
 
+<a id="connectionstatetypetype"></a>
+
 ## ConnectionStateTypeType
 
 ```python
@@ -76,6 +84,8 @@ Values:
 - `DISCONNECTED`
 - `DISCONNECTING`
 - `FAILED`
+
+<a id="customermasterkeyspectype"></a>
 
 ## CustomerMasterKeySpecType
 
@@ -94,6 +104,8 @@ Values:
 - `RSA_4096`
 - `SYMMETRIC_DEFAULT`
 
+<a id="datakeypairspectype"></a>
+
 ## DataKeyPairSpecType
 
 ```python
@@ -110,6 +122,8 @@ Values:
 - `RSA_3072`
 - `RSA_4096`
 
+<a id="datakeyspectype"></a>
+
 ## DataKeySpecType
 
 ```python
@@ -120,6 +134,8 @@ Values:
 
 - `AES_128`
 - `AES_256`
+
+<a id="encryptionalgorithmspectype"></a>
 
 ## EncryptionAlgorithmSpecType
 
@@ -133,6 +149,8 @@ Values:
 - `RSAES_OAEP_SHA_256`
 - `SYMMETRIC_DEFAULT`
 
+<a id="expirationmodeltypetype"></a>
+
 ## ExpirationModelTypeType
 
 ```python
@@ -143,6 +161,8 @@ Values:
 
 - `KEY_MATERIAL_DOES_NOT_EXPIRE`
 - `KEY_MATERIAL_EXPIRES`
+
+<a id="grantoperationtype"></a>
 
 ## GrantOperationType
 
@@ -167,6 +187,8 @@ Values:
 - `Sign`
 - `Verify`
 
+<a id="keymanagertypetype"></a>
+
 ## KeyManagerTypeType
 
 ```python
@@ -177,6 +199,8 @@ Values:
 
 - `AWS`
 - `CUSTOMER`
+
+<a id="keyspectype"></a>
 
 ## KeySpecType
 
@@ -195,6 +219,8 @@ Values:
 - `RSA_4096`
 - `SYMMETRIC_DEFAULT`
 
+<a id="keystatetype"></a>
+
 ## KeyStateType
 
 ```python
@@ -212,6 +238,8 @@ Values:
 - `Unavailable`
 - `Updating`
 
+<a id="keyusagetypetype"></a>
+
 ## KeyUsageTypeType
 
 ```python
@@ -223,6 +251,8 @@ Values:
 - `ENCRYPT_DECRYPT`
 - `SIGN_VERIFY`
 
+<a id="listaliasespaginatorname"></a>
+
 ## ListAliasesPaginatorName
 
 ```python
@@ -232,6 +262,8 @@ from mypy_boto3_kms.literals import ListAliasesPaginatorName
 Values:
 
 - `list_aliases`
+
+<a id="listgrantspaginatorname"></a>
 
 ## ListGrantsPaginatorName
 
@@ -243,6 +275,8 @@ Values:
 
 - `list_grants`
 
+<a id="listkeypoliciespaginatorname"></a>
+
 ## ListKeyPoliciesPaginatorName
 
 ```python
@@ -253,6 +287,8 @@ Values:
 
 - `list_key_policies`
 
+<a id="listkeyspaginatorname"></a>
+
 ## ListKeysPaginatorName
 
 ```python
@@ -262,6 +298,8 @@ from mypy_boto3_kms.literals import ListKeysPaginatorName
 Values:
 
 - `list_keys`
+
+<a id="messagetypetype"></a>
 
 ## MessageTypeType
 
@@ -274,6 +312,8 @@ Values:
 - `DIGEST`
 - `RAW`
 
+<a id="multiregionkeytypetype"></a>
+
 ## MultiRegionKeyTypeType
 
 ```python
@@ -284,6 +324,8 @@ Values:
 
 - `PRIMARY`
 - `REPLICA`
+
+<a id="origintypetype"></a>
 
 ## OriginTypeType
 
@@ -296,6 +338,8 @@ Values:
 - `AWS_CLOUDHSM`
 - `AWS_KMS`
 - `EXTERNAL`
+
+<a id="signingalgorithmspectype"></a>
 
 ## SigningAlgorithmSpecType
 
@@ -315,6 +359,8 @@ Values:
 - `RSASSA_PSS_SHA_384`
 - `RSASSA_PSS_SHA_512`
 
+<a id="wrappingkeyspectype"></a>
+
 ## WrappingKeySpecType
 
 ```python
@@ -324,6 +370,8 @@ from mypy_boto3_kms.literals import WrappingKeySpecType
 Values:
 
 - `RSA_2048`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -632,6 +680,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

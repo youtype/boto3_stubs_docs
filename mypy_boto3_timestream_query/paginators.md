@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-timestreamquery-module"></a>
+
 # Paginators for boto3 TimestreamQuery module
 
 > [Index](..) > [TimestreamQuery](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [TimestreamQuery](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/timestream-query.html#TimestreamQuery)
 type annotations stubs module
-[mypy_boto3_timestream_query](https://pypi.org/project/mypy-boto3-timestream-query/).
+[mypy-boto3-timestream-query](https://pypi.org/project/mypy-boto3-timestream-query/).
 
 - [Paginators for boto3 TimestreamQuery module](#paginators-for-boto3-timestreamquery-module)
   - [ListScheduledQueriesPaginator](#listscheduledqueriespaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
   - [QueryPaginator](#querypaginator)
+
+<a id="listscheduledqueriespaginator"></a>
 
 ## ListScheduledQueriesPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_timestream_query.paginator import ListScheduledQueriesPaginator
 
 def get_list_scheduled_queries_paginator() -> ListScheduledQueriesPaginator:
-    return boto3.client("timestream-query").get_paginator("list_scheduled_queries")
+    return Session().client("timestream-query").get_paginator("list_scheduled_queries")
 ```
 
 Boto3 documentation:
@@ -37,6 +43,8 @@ Arguments for `ListScheduledQueriesPaginator.paginate` method:
 `ListScheduledQueriesPaginator.paginate` returns
 `_PageIterator`\[[ListScheduledQueriesResponseTypeDef](./type_defs.md#listscheduledqueriesresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -45,10 +53,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_timestream_query.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("timestream-query").get_paginator("list_tags_for_resource")
+    return Session().client("timestream-query").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:
@@ -63,6 +73,8 @@ Arguments for `ListTagsForResourcePaginator.paginate` method:
 `ListTagsForResourcePaginator.paginate` returns
 `_PageIterator`\[[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)\].
 
+<a id="querypaginator"></a>
+
 ## QueryPaginator
 
 Type annotations for `boto3.client("timestream-query").get_paginator("query")`.
@@ -70,10 +82,12 @@ Type annotations for `boto3.client("timestream-query").get_paginator("query")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_timestream_query.paginator import QueryPaginator
 
 def get_query_paginator() -> QueryPaginator:
-    return boto3.client("timestream-query").get_paginator("query")
+    return Session().client("timestream-query").get_paginator("query")
 ```
 
 Boto3 documentation:

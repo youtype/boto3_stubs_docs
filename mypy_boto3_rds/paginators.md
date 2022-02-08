@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-rds-module"></a>
+
 # Paginators for boto3 RDS module
 
 > [Index](..) > [RDS](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RDS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds.html#RDS)
 type annotations stubs module
-[mypy_boto3_rds](https://pypi.org/project/mypy-boto3-rds/).
+[mypy-boto3-rds](https://pypi.org/project/mypy-boto3-rds/).
 
 - [Paginators for boto3 RDS module](#paginators-for-boto3-rds-module)
   - [DescribeCertificatesPaginator](#describecertificatespaginator)
@@ -45,6 +47,8 @@ type annotations stubs module
   - [DescribeSourceRegionsPaginator](#describesourceregionspaginator)
   - [DownloadDBLogFilePortionPaginator](#downloaddblogfileportionpaginator)
 
+<a id="describecertificatespaginator"></a>
+
 ## DescribeCertificatesPaginator
 
 Type annotations for
@@ -53,10 +57,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeCertificatesPaginator
 
 def get_describe_certificates_paginator() -> DescribeCertificatesPaginator:
-    return boto3.client("rds").get_paginator("describe_certificates")
+    return Session().client("rds").get_paginator("describe_certificates")
 ```
 
 Boto3 documentation:
@@ -72,6 +78,8 @@ Arguments for `DescribeCertificatesPaginator.paginate` method:
 `DescribeCertificatesPaginator.paginate` returns
 `_PageIterator`\[[CertificateMessageTypeDef](./type_defs.md#certificatemessagetypedef)\].
 
+<a id="describecustomavailabilityzonespaginator"></a>
+
 ## DescribeCustomAvailabilityZonesPaginator
 
 Type annotations for
@@ -80,10 +88,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeCustomAvailabilityZonesPaginator
 
 def get_describe_custom_availability_zones_paginator() -> DescribeCustomAvailabilityZonesPaginator:
-    return boto3.client("rds").get_paginator("describe_custom_availability_zones")
+    return Session().client("rds").get_paginator("describe_custom_availability_zones")
 ```
 
 Boto3 documentation:
@@ -99,6 +109,8 @@ Arguments for `DescribeCustomAvailabilityZonesPaginator.paginate` method:
 `DescribeCustomAvailabilityZonesPaginator.paginate` returns
 `_PageIterator`\[[CustomAvailabilityZoneMessageTypeDef](./type_defs.md#customavailabilityzonemessagetypedef)\].
 
+<a id="describedbclusterbacktrackspaginator"></a>
+
 ## DescribeDBClusterBacktracksPaginator
 
 Type annotations for
@@ -107,10 +119,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBClusterBacktracksPaginator
 
 def get_describe_db_cluster_backtracks_paginator() -> DescribeDBClusterBacktracksPaginator:
-    return boto3.client("rds").get_paginator("describe_db_cluster_backtracks")
+    return Session().client("rds").get_paginator("describe_db_cluster_backtracks")
 ```
 
 Boto3 documentation:
@@ -127,6 +141,8 @@ Arguments for `DescribeDBClusterBacktracksPaginator.paginate` method:
 `DescribeDBClusterBacktracksPaginator.paginate` returns
 `_PageIterator`\[[DBClusterBacktrackMessageTypeDef](./type_defs.md#dbclusterbacktrackmessagetypedef)\].
 
+<a id="describedbclusterendpointspaginator"></a>
+
 ## DescribeDBClusterEndpointsPaginator
 
 Type annotations for
@@ -135,10 +151,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBClusterEndpointsPaginator
 
 def get_describe_db_cluster_endpoints_paginator() -> DescribeDBClusterEndpointsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_cluster_endpoints")
+    return Session().client("rds").get_paginator("describe_db_cluster_endpoints")
 ```
 
 Boto3 documentation:
@@ -155,6 +173,8 @@ Arguments for `DescribeDBClusterEndpointsPaginator.paginate` method:
 `DescribeDBClusterEndpointsPaginator.paginate` returns
 `_PageIterator`\[[DBClusterEndpointMessageTypeDef](./type_defs.md#dbclusterendpointmessagetypedef)\].
 
+<a id="describedbclusterparametergroupspaginator"></a>
+
 ## DescribeDBClusterParameterGroupsPaginator
 
 Type annotations for
@@ -163,10 +183,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBClusterParameterGroupsPaginator
 
 def get_describe_db_cluster_parameter_groups_paginator() -> DescribeDBClusterParameterGroupsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_cluster_parameter_groups")
+    return Session().client("rds").get_paginator("describe_db_cluster_parameter_groups")
 ```
 
 Boto3 documentation:
@@ -182,6 +204,8 @@ Arguments for `DescribeDBClusterParameterGroupsPaginator.paginate` method:
 `DescribeDBClusterParameterGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBClusterParameterGroupsMessageTypeDef](./type_defs.md#dbclusterparametergroupsmessagetypedef)\].
 
+<a id="describedbclusterparameterspaginator"></a>
+
 ## DescribeDBClusterParametersPaginator
 
 Type annotations for
@@ -190,10 +214,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBClusterParametersPaginator
 
 def get_describe_db_cluster_parameters_paginator() -> DescribeDBClusterParametersPaginator:
-    return boto3.client("rds").get_paginator("describe_db_cluster_parameters")
+    return Session().client("rds").get_paginator("describe_db_cluster_parameters")
 ```
 
 Boto3 documentation:
@@ -210,6 +236,8 @@ Arguments for `DescribeDBClusterParametersPaginator.paginate` method:
 `DescribeDBClusterParametersPaginator.paginate` returns
 `_PageIterator`\[[DBClusterParameterGroupDetailsTypeDef](./type_defs.md#dbclusterparametergroupdetailstypedef)\].
 
+<a id="describedbclustersnapshotspaginator"></a>
+
 ## DescribeDBClusterSnapshotsPaginator
 
 Type annotations for
@@ -218,10 +246,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBClusterSnapshotsPaginator
 
 def get_describe_db_cluster_snapshots_paginator() -> DescribeDBClusterSnapshotsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_cluster_snapshots")
+    return Session().client("rds").get_paginator("describe_db_cluster_snapshots")
 ```
 
 Boto3 documentation:
@@ -241,6 +271,8 @@ Arguments for `DescribeDBClusterSnapshotsPaginator.paginate` method:
 `DescribeDBClusterSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[DBClusterSnapshotMessageTypeDef](./type_defs.md#dbclustersnapshotmessagetypedef)\].
 
+<a id="describedbclusterspaginator"></a>
+
 ## DescribeDBClustersPaginator
 
 Type annotations for
@@ -249,10 +281,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBClustersPaginator
 
 def get_describe_db_clusters_paginator() -> DescribeDBClustersPaginator:
-    return boto3.client("rds").get_paginator("describe_db_clusters")
+    return Session().client("rds").get_paginator("describe_db_clusters")
 ```
 
 Boto3 documentation:
@@ -269,6 +303,8 @@ Arguments for `DescribeDBClustersPaginator.paginate` method:
 `DescribeDBClustersPaginator.paginate` returns
 `_PageIterator`\[[DBClusterMessageTypeDef](./type_defs.md#dbclustermessagetypedef)\].
 
+<a id="describedbengineversionspaginator"></a>
+
 ## DescribeDBEngineVersionsPaginator
 
 Type annotations for
@@ -277,10 +313,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBEngineVersionsPaginator
 
 def get_describe_db_engine_versions_paginator() -> DescribeDBEngineVersionsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_engine_versions")
+    return Session().client("rds").get_paginator("describe_db_engine_versions")
 ```
 
 Boto3 documentation:
@@ -302,6 +340,8 @@ Arguments for `DescribeDBEngineVersionsPaginator.paginate` method:
 `DescribeDBEngineVersionsPaginator.paginate` returns
 `_PageIterator`\[[DBEngineVersionMessageTypeDef](./type_defs.md#dbengineversionmessagetypedef)\].
 
+<a id="describedbinstanceautomatedbackupspaginator"></a>
+
 ## DescribeDBInstanceAutomatedBackupsPaginator
 
 Type annotations for
@@ -310,10 +350,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBInstanceAutomatedBackupsPaginator
 
 def get_describe_db_instance_automated_backups_paginator() -> DescribeDBInstanceAutomatedBackupsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_instance_automated_backups")
+    return Session().client("rds").get_paginator("describe_db_instance_automated_backups")
 ```
 
 Boto3 documentation:
@@ -331,6 +373,8 @@ Arguments for `DescribeDBInstanceAutomatedBackupsPaginator.paginate` method:
 `DescribeDBInstanceAutomatedBackupsPaginator.paginate` returns
 `_PageIterator`\[[DBInstanceAutomatedBackupMessageTypeDef](./type_defs.md#dbinstanceautomatedbackupmessagetypedef)\].
 
+<a id="describedbinstancespaginator"></a>
+
 ## DescribeDBInstancesPaginator
 
 Type annotations for
@@ -339,10 +383,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBInstancesPaginator
 
 def get_describe_db_instances_paginator() -> DescribeDBInstancesPaginator:
-    return boto3.client("rds").get_paginator("describe_db_instances")
+    return Session().client("rds").get_paginator("describe_db_instances")
 ```
 
 Boto3 documentation:
@@ -358,6 +404,8 @@ Arguments for `DescribeDBInstancesPaginator.paginate` method:
 `DescribeDBInstancesPaginator.paginate` returns
 `_PageIterator`\[[DBInstanceMessageTypeDef](./type_defs.md#dbinstancemessagetypedef)\].
 
+<a id="describedblogfilespaginator"></a>
+
 ## DescribeDBLogFilesPaginator
 
 Type annotations for
@@ -366,10 +414,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBLogFilesPaginator
 
 def get_describe_db_log_files_paginator() -> DescribeDBLogFilesPaginator:
-    return boto3.client("rds").get_paginator("describe_db_log_files")
+    return Session().client("rds").get_paginator("describe_db_log_files")
 ```
 
 Boto3 documentation:
@@ -388,6 +438,8 @@ Arguments for `DescribeDBLogFilesPaginator.paginate` method:
 `DescribeDBLogFilesPaginator.paginate` returns
 `_PageIterator`\[[DescribeDBLogFilesResponseTypeDef](./type_defs.md#describedblogfilesresponsetypedef)\].
 
+<a id="describedbparametergroupspaginator"></a>
+
 ## DescribeDBParameterGroupsPaginator
 
 Type annotations for
@@ -396,10 +448,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBParameterGroupsPaginator
 
 def get_describe_db_parameter_groups_paginator() -> DescribeDBParameterGroupsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_parameter_groups")
+    return Session().client("rds").get_paginator("describe_db_parameter_groups")
 ```
 
 Boto3 documentation:
@@ -415,6 +469,8 @@ Arguments for `DescribeDBParameterGroupsPaginator.paginate` method:
 `DescribeDBParameterGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBParameterGroupsMessageTypeDef](./type_defs.md#dbparametergroupsmessagetypedef)\].
 
+<a id="describedbparameterspaginator"></a>
+
 ## DescribeDBParametersPaginator
 
 Type annotations for
@@ -423,10 +479,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBParametersPaginator
 
 def get_describe_db_parameters_paginator() -> DescribeDBParametersPaginator:
-    return boto3.client("rds").get_paginator("describe_db_parameters")
+    return Session().client("rds").get_paginator("describe_db_parameters")
 ```
 
 Boto3 documentation:
@@ -443,6 +501,8 @@ Arguments for `DescribeDBParametersPaginator.paginate` method:
 `DescribeDBParametersPaginator.paginate` returns
 `_PageIterator`\[[DBParameterGroupDetailsTypeDef](./type_defs.md#dbparametergroupdetailstypedef)\].
 
+<a id="describedbproxiespaginator"></a>
+
 ## DescribeDBProxiesPaginator
 
 Type annotations for
@@ -451,10 +511,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBProxiesPaginator
 
 def get_describe_db_proxies_paginator() -> DescribeDBProxiesPaginator:
-    return boto3.client("rds").get_paginator("describe_db_proxies")
+    return Session().client("rds").get_paginator("describe_db_proxies")
 ```
 
 Boto3 documentation:
@@ -470,6 +532,8 @@ Arguments for `DescribeDBProxiesPaginator.paginate` method:
 `DescribeDBProxiesPaginator.paginate` returns
 `_PageIterator`\[[DescribeDBProxiesResponseTypeDef](./type_defs.md#describedbproxiesresponsetypedef)\].
 
+<a id="describedbproxyendpointspaginator"></a>
+
 ## DescribeDBProxyEndpointsPaginator
 
 Type annotations for
@@ -478,10 +542,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBProxyEndpointsPaginator
 
 def get_describe_db_proxy_endpoints_paginator() -> DescribeDBProxyEndpointsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_proxy_endpoints")
+    return Session().client("rds").get_paginator("describe_db_proxy_endpoints")
 ```
 
 Boto3 documentation:
@@ -498,6 +564,8 @@ Arguments for `DescribeDBProxyEndpointsPaginator.paginate` method:
 `DescribeDBProxyEndpointsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDBProxyEndpointsResponseTypeDef](./type_defs.md#describedbproxyendpointsresponsetypedef)\].
 
+<a id="describedbproxytargetgroupspaginator"></a>
+
 ## DescribeDBProxyTargetGroupsPaginator
 
 Type annotations for
@@ -506,10 +574,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBProxyTargetGroupsPaginator
 
 def get_describe_db_proxy_target_groups_paginator() -> DescribeDBProxyTargetGroupsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_proxy_target_groups")
+    return Session().client("rds").get_paginator("describe_db_proxy_target_groups")
 ```
 
 Boto3 documentation:
@@ -526,6 +596,8 @@ Arguments for `DescribeDBProxyTargetGroupsPaginator.paginate` method:
 `DescribeDBProxyTargetGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDBProxyTargetGroupsResponseTypeDef](./type_defs.md#describedbproxytargetgroupsresponsetypedef)\].
 
+<a id="describedbproxytargetspaginator"></a>
+
 ## DescribeDBProxyTargetsPaginator
 
 Type annotations for
@@ -534,10 +606,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBProxyTargetsPaginator
 
 def get_describe_db_proxy_targets_paginator() -> DescribeDBProxyTargetsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_proxy_targets")
+    return Session().client("rds").get_paginator("describe_db_proxy_targets")
 ```
 
 Boto3 documentation:
@@ -554,6 +628,8 @@ Arguments for `DescribeDBProxyTargetsPaginator.paginate` method:
 `DescribeDBProxyTargetsPaginator.paginate` returns
 `_PageIterator`\[[DescribeDBProxyTargetsResponseTypeDef](./type_defs.md#describedbproxytargetsresponsetypedef)\].
 
+<a id="describedbsecuritygroupspaginator"></a>
+
 ## DescribeDBSecurityGroupsPaginator
 
 Type annotations for
@@ -562,10 +638,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBSecurityGroupsPaginator
 
 def get_describe_db_security_groups_paginator() -> DescribeDBSecurityGroupsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_security_groups")
+    return Session().client("rds").get_paginator("describe_db_security_groups")
 ```
 
 Boto3 documentation:
@@ -581,6 +659,8 @@ Arguments for `DescribeDBSecurityGroupsPaginator.paginate` method:
 `DescribeDBSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBSecurityGroupMessageTypeDef](./type_defs.md#dbsecuritygroupmessagetypedef)\].
 
+<a id="describedbsnapshotspaginator"></a>
+
 ## DescribeDBSnapshotsPaginator
 
 Type annotations for
@@ -589,10 +669,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBSnapshotsPaginator
 
 def get_describe_db_snapshots_paginator() -> DescribeDBSnapshotsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_snapshots")
+    return Session().client("rds").get_paginator("describe_db_snapshots")
 ```
 
 Boto3 documentation:
@@ -613,6 +695,8 @@ Arguments for `DescribeDBSnapshotsPaginator.paginate` method:
 `DescribeDBSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[DBSnapshotMessageTypeDef](./type_defs.md#dbsnapshotmessagetypedef)\].
 
+<a id="describedbsubnetgroupspaginator"></a>
+
 ## DescribeDBSubnetGroupsPaginator
 
 Type annotations for
@@ -621,10 +705,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeDBSubnetGroupsPaginator
 
 def get_describe_db_subnet_groups_paginator() -> DescribeDBSubnetGroupsPaginator:
-    return boto3.client("rds").get_paginator("describe_db_subnet_groups")
+    return Session().client("rds").get_paginator("describe_db_subnet_groups")
 ```
 
 Boto3 documentation:
@@ -640,6 +726,8 @@ Arguments for `DescribeDBSubnetGroupsPaginator.paginate` method:
 `DescribeDBSubnetGroupsPaginator.paginate` returns
 `_PageIterator`\[[DBSubnetGroupMessageTypeDef](./type_defs.md#dbsubnetgroupmessagetypedef)\].
 
+<a id="describeenginedefaultclusterparameterspaginator"></a>
+
 ## DescribeEngineDefaultClusterParametersPaginator
 
 Type annotations for
@@ -648,10 +736,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeEngineDefaultClusterParametersPaginator
 
 def get_describe_engine_default_cluster_parameters_paginator() -> DescribeEngineDefaultClusterParametersPaginator:
-    return boto3.client("rds").get_paginator("describe_engine_default_cluster_parameters")
+    return Session().client("rds").get_paginator("describe_engine_default_cluster_parameters")
 ```
 
 Boto3 documentation:
@@ -668,6 +758,8 @@ method:
 `DescribeEngineDefaultClusterParametersPaginator.paginate` returns
 `_PageIterator`\[[DescribeEngineDefaultClusterParametersResultTypeDef](./type_defs.md#describeenginedefaultclusterparametersresulttypedef)\].
 
+<a id="describeenginedefaultparameterspaginator"></a>
+
 ## DescribeEngineDefaultParametersPaginator
 
 Type annotations for
@@ -676,10 +768,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeEngineDefaultParametersPaginator
 
 def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultParametersPaginator:
-    return boto3.client("rds").get_paginator("describe_engine_default_parameters")
+    return Session().client("rds").get_paginator("describe_engine_default_parameters")
 ```
 
 Boto3 documentation:
@@ -695,6 +789,8 @@ Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 `DescribeEngineDefaultParametersPaginator.paginate` returns
 `_PageIterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
 
+<a id="describeeventsubscriptionspaginator"></a>
+
 ## DescribeEventSubscriptionsPaginator
 
 Type annotations for
@@ -703,10 +799,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeEventSubscriptionsPaginator
 
 def get_describe_event_subscriptions_paginator() -> DescribeEventSubscriptionsPaginator:
-    return boto3.client("rds").get_paginator("describe_event_subscriptions")
+    return Session().client("rds").get_paginator("describe_event_subscriptions")
 ```
 
 Boto3 documentation:
@@ -722,6 +820,8 @@ Arguments for `DescribeEventSubscriptionsPaginator.paginate` method:
 `DescribeEventSubscriptionsPaginator.paginate` returns
 `_PageIterator`\[[EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef)\].
 
+<a id="describeeventspaginator"></a>
+
 ## DescribeEventsPaginator
 
 Type annotations for `boto3.client("rds").get_paginator("describe_events")`.
@@ -729,10 +829,12 @@ Type annotations for `boto3.client("rds").get_paginator("describe_events")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
-    return boto3.client("rds").get_paginator("describe_events")
+    return Session().client("rds").get_paginator("describe_events")
 ```
 
 Boto3 documentation:
@@ -753,6 +855,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 `DescribeEventsPaginator.paginate` returns
 `_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
+<a id="describeexporttaskspaginator"></a>
+
 ## DescribeExportTasksPaginator
 
 Type annotations for
@@ -761,10 +865,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeExportTasksPaginator
 
 def get_describe_export_tasks_paginator() -> DescribeExportTasksPaginator:
-    return boto3.client("rds").get_paginator("describe_export_tasks")
+    return Session().client("rds").get_paginator("describe_export_tasks")
 ```
 
 Boto3 documentation:
@@ -781,6 +887,8 @@ Arguments for `DescribeExportTasksPaginator.paginate` method:
 `DescribeExportTasksPaginator.paginate` returns
 `_PageIterator`\[[ExportTasksMessageTypeDef](./type_defs.md#exporttasksmessagetypedef)\].
 
+<a id="describeglobalclusterspaginator"></a>
+
 ## DescribeGlobalClustersPaginator
 
 Type annotations for
@@ -789,10 +897,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeGlobalClustersPaginator
 
 def get_describe_global_clusters_paginator() -> DescribeGlobalClustersPaginator:
-    return boto3.client("rds").get_paginator("describe_global_clusters")
+    return Session().client("rds").get_paginator("describe_global_clusters")
 ```
 
 Boto3 documentation:
@@ -808,6 +918,8 @@ Arguments for `DescribeGlobalClustersPaginator.paginate` method:
 `DescribeGlobalClustersPaginator.paginate` returns
 `_PageIterator`\[[GlobalClustersMessageTypeDef](./type_defs.md#globalclustersmessagetypedef)\].
 
+<a id="describeinstallationmediapaginator"></a>
+
 ## DescribeInstallationMediaPaginator
 
 Type annotations for
@@ -816,10 +928,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeInstallationMediaPaginator
 
 def get_describe_installation_media_paginator() -> DescribeInstallationMediaPaginator:
-    return boto3.client("rds").get_paginator("describe_installation_media")
+    return Session().client("rds").get_paginator("describe_installation_media")
 ```
 
 Boto3 documentation:
@@ -835,6 +949,8 @@ Arguments for `DescribeInstallationMediaPaginator.paginate` method:
 `DescribeInstallationMediaPaginator.paginate` returns
 `_PageIterator`\[[InstallationMediaMessageTypeDef](./type_defs.md#installationmediamessagetypedef)\].
 
+<a id="describeoptiongroupoptionspaginator"></a>
+
 ## DescribeOptionGroupOptionsPaginator
 
 Type annotations for
@@ -843,10 +959,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeOptionGroupOptionsPaginator
 
 def get_describe_option_group_options_paginator() -> DescribeOptionGroupOptionsPaginator:
-    return boto3.client("rds").get_paginator("describe_option_group_options")
+    return Session().client("rds").get_paginator("describe_option_group_options")
 ```
 
 Boto3 documentation:
@@ -863,6 +981,8 @@ Arguments for `DescribeOptionGroupOptionsPaginator.paginate` method:
 `DescribeOptionGroupOptionsPaginator.paginate` returns
 `_PageIterator`\[[OptionGroupOptionsMessageTypeDef](./type_defs.md#optiongroupoptionsmessagetypedef)\].
 
+<a id="describeoptiongroupspaginator"></a>
+
 ## DescribeOptionGroupsPaginator
 
 Type annotations for
@@ -871,10 +991,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeOptionGroupsPaginator
 
 def get_describe_option_groups_paginator() -> DescribeOptionGroupsPaginator:
-    return boto3.client("rds").get_paginator("describe_option_groups")
+    return Session().client("rds").get_paginator("describe_option_groups")
 ```
 
 Boto3 documentation:
@@ -892,6 +1014,8 @@ Arguments for `DescribeOptionGroupsPaginator.paginate` method:
 `DescribeOptionGroupsPaginator.paginate` returns
 `_PageIterator`\[[OptionGroupsTypeDef](./type_defs.md#optiongroupstypedef)\].
 
+<a id="describeorderabledbinstanceoptionspaginator"></a>
+
 ## DescribeOrderableDBInstanceOptionsPaginator
 
 Type annotations for
@@ -900,10 +1024,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeOrderableDBInstanceOptionsPaginator
 
 def get_describe_orderable_db_instance_options_paginator() -> DescribeOrderableDBInstanceOptionsPaginator:
-    return boto3.client("rds").get_paginator("describe_orderable_db_instance_options")
+    return Session().client("rds").get_paginator("describe_orderable_db_instance_options")
 ```
 
 Boto3 documentation:
@@ -924,6 +1050,8 @@ Arguments for `DescribeOrderableDBInstanceOptionsPaginator.paginate` method:
 `DescribeOrderableDBInstanceOptionsPaginator.paginate` returns
 `_PageIterator`\[[OrderableDBInstanceOptionsMessageTypeDef](./type_defs.md#orderabledbinstanceoptionsmessagetypedef)\].
 
+<a id="describependingmaintenanceactionspaginator"></a>
+
 ## DescribePendingMaintenanceActionsPaginator
 
 Type annotations for
@@ -932,10 +1060,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribePendingMaintenanceActionsPaginator
 
 def get_describe_pending_maintenance_actions_paginator() -> DescribePendingMaintenanceActionsPaginator:
-    return boto3.client("rds").get_paginator("describe_pending_maintenance_actions")
+    return Session().client("rds").get_paginator("describe_pending_maintenance_actions")
 ```
 
 Boto3 documentation:
@@ -951,6 +1081,8 @@ Arguments for `DescribePendingMaintenanceActionsPaginator.paginate` method:
 `DescribePendingMaintenanceActionsPaginator.paginate` returns
 `_PageIterator`\[[PendingMaintenanceActionsMessageTypeDef](./type_defs.md#pendingmaintenanceactionsmessagetypedef)\].
 
+<a id="describereserveddbinstancespaginator"></a>
+
 ## DescribeReservedDBInstancesPaginator
 
 Type annotations for
@@ -959,10 +1091,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeReservedDBInstancesPaginator
 
 def get_describe_reserved_db_instances_paginator() -> DescribeReservedDBInstancesPaginator:
-    return boto3.client("rds").get_paginator("describe_reserved_db_instances")
+    return Session().client("rds").get_paginator("describe_reserved_db_instances")
 ```
 
 Boto3 documentation:
@@ -985,6 +1119,8 @@ Arguments for `DescribeReservedDBInstancesPaginator.paginate` method:
 `DescribeReservedDBInstancesPaginator.paginate` returns
 `_PageIterator`\[[ReservedDBInstanceMessageTypeDef](./type_defs.md#reserveddbinstancemessagetypedef)\].
 
+<a id="describereserveddbinstancesofferingspaginator"></a>
+
 ## DescribeReservedDBInstancesOfferingsPaginator
 
 Type annotations for
@@ -993,10 +1129,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeReservedDBInstancesOfferingsPaginator
 
 def get_describe_reserved_db_instances_offerings_paginator() -> DescribeReservedDBInstancesOfferingsPaginator:
-    return boto3.client("rds").get_paginator("describe_reserved_db_instances_offerings")
+    return Session().client("rds").get_paginator("describe_reserved_db_instances_offerings")
 ```
 
 Boto3 documentation:
@@ -1017,6 +1155,8 @@ Arguments for `DescribeReservedDBInstancesOfferingsPaginator.paginate` method:
 `DescribeReservedDBInstancesOfferingsPaginator.paginate` returns
 `_PageIterator`\[[ReservedDBInstancesOfferingMessageTypeDef](./type_defs.md#reserveddbinstancesofferingmessagetypedef)\].
 
+<a id="describesourceregionspaginator"></a>
+
 ## DescribeSourceRegionsPaginator
 
 Type annotations for
@@ -1025,10 +1165,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DescribeSourceRegionsPaginator
 
 def get_describe_source_regions_paginator() -> DescribeSourceRegionsPaginator:
-    return boto3.client("rds").get_paginator("describe_source_regions")
+    return Session().client("rds").get_paginator("describe_source_regions")
 ```
 
 Boto3 documentation:
@@ -1044,6 +1186,8 @@ Arguments for `DescribeSourceRegionsPaginator.paginate` method:
 `DescribeSourceRegionsPaginator.paginate` returns
 `_PageIterator`\[[SourceRegionMessageTypeDef](./type_defs.md#sourceregionmessagetypedef)\].
 
+<a id="downloaddblogfileportionpaginator"></a>
+
 ## DownloadDBLogFilePortionPaginator
 
 Type annotations for
@@ -1052,10 +1196,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_rds.paginator import DownloadDBLogFilePortionPaginator
 
 def get_download_db_log_file_portion_paginator() -> DownloadDBLogFilePortionPaginator:
-    return boto3.client("rds").get_paginator("download_db_log_file_portion")
+    return Session().client("rds").get_paginator("download_db_log_file_portion")
 ```
 
 Boto3 documentation:

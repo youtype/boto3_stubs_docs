@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-identitystore-module"></a>
+
 # Literals for boto3 IdentityStore module
 
 > [Index](..) > [IdentityStore](.) > Literals
@@ -5,10 +7,12 @@
 Auto-generated documentation for
 [IdentityStore](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/identitystore.html#IdentityStore)
 type annotations stubs module
-[mypy_boto3_identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
+[mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 - [Literals for boto3 IdentityStore module](#literals-for-boto3-identitystore-module)
   - [ServiceName](#servicename)
+
+<a id="servicename"></a>
 
 ## ServiceName
 

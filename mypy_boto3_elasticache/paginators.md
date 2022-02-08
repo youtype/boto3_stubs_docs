@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-elasticache-module"></a>
+
 # Paginators for boto3 ElastiCache module
 
 > [Index](..) > [ElastiCache](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElastiCache](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elasticache.html#ElastiCache)
 type annotations stubs module
-[mypy_boto3_elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
+[mypy-boto3-elasticache](https://pypi.org/project/mypy-boto3-elasticache/).
 
 - [Paginators for boto3 ElastiCache module](#paginators-for-boto3-elasticache-module)
   - [DescribeCacheClustersPaginator](#describecacheclusterspaginator)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [DescribeUserGroupsPaginator](#describeusergroupspaginator)
   - [DescribeUsersPaginator](#describeuserspaginator)
 
+<a id="describecacheclusterspaginator"></a>
+
 ## DescribeCacheClustersPaginator
 
 Type annotations for
@@ -34,10 +38,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeCacheClustersPaginator
 
 def get_describe_cache_clusters_paginator() -> DescribeCacheClustersPaginator:
-    return boto3.client("elasticache").get_paginator("describe_cache_clusters")
+    return Session().client("elasticache").get_paginator("describe_cache_clusters")
 ```
 
 Boto3 documentation:
@@ -54,6 +60,8 @@ Arguments for `DescribeCacheClustersPaginator.paginate` method:
 `DescribeCacheClustersPaginator.paginate` returns
 `_PageIterator`\[[CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef)\].
 
+<a id="describecacheengineversionspaginator"></a>
+
 ## DescribeCacheEngineVersionsPaginator
 
 Type annotations for
@@ -62,10 +70,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeCacheEngineVersionsPaginator
 
 def get_describe_cache_engine_versions_paginator() -> DescribeCacheEngineVersionsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_cache_engine_versions")
+    return Session().client("elasticache").get_paginator("describe_cache_engine_versions")
 ```
 
 Boto3 documentation:
@@ -83,6 +93,8 @@ Arguments for `DescribeCacheEngineVersionsPaginator.paginate` method:
 `DescribeCacheEngineVersionsPaginator.paginate` returns
 `_PageIterator`\[[CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef)\].
 
+<a id="describecacheparametergroupspaginator"></a>
+
 ## DescribeCacheParameterGroupsPaginator
 
 Type annotations for
@@ -91,10 +103,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeCacheParameterGroupsPaginator
 
 def get_describe_cache_parameter_groups_paginator() -> DescribeCacheParameterGroupsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_cache_parameter_groups")
+    return Session().client("elasticache").get_paginator("describe_cache_parameter_groups")
 ```
 
 Boto3 documentation:
@@ -109,6 +123,8 @@ Arguments for `DescribeCacheParameterGroupsPaginator.paginate` method:
 `DescribeCacheParameterGroupsPaginator.paginate` returns
 `_PageIterator`\[[CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef)\].
 
+<a id="describecacheparameterspaginator"></a>
+
 ## DescribeCacheParametersPaginator
 
 Type annotations for
@@ -117,10 +133,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeCacheParametersPaginator
 
 def get_describe_cache_parameters_paginator() -> DescribeCacheParametersPaginator:
-    return boto3.client("elasticache").get_paginator("describe_cache_parameters")
+    return Session().client("elasticache").get_paginator("describe_cache_parameters")
 ```
 
 Boto3 documentation:
@@ -136,6 +154,8 @@ Arguments for `DescribeCacheParametersPaginator.paginate` method:
 `DescribeCacheParametersPaginator.paginate` returns
 `_PageIterator`\[[CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef)\].
 
+<a id="describecachesecuritygroupspaginator"></a>
+
 ## DescribeCacheSecurityGroupsPaginator
 
 Type annotations for
@@ -144,10 +164,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeCacheSecurityGroupsPaginator
 
 def get_describe_cache_security_groups_paginator() -> DescribeCacheSecurityGroupsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_cache_security_groups")
+    return Session().client("elasticache").get_paginator("describe_cache_security_groups")
 ```
 
 Boto3 documentation:
@@ -162,6 +184,8 @@ Arguments for `DescribeCacheSecurityGroupsPaginator.paginate` method:
 `DescribeCacheSecurityGroupsPaginator.paginate` returns
 `_PageIterator`\[[CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef)\].
 
+<a id="describecachesubnetgroupspaginator"></a>
+
 ## DescribeCacheSubnetGroupsPaginator
 
 Type annotations for
@@ -170,10 +194,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeCacheSubnetGroupsPaginator
 
 def get_describe_cache_subnet_groups_paginator() -> DescribeCacheSubnetGroupsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_cache_subnet_groups")
+    return Session().client("elasticache").get_paginator("describe_cache_subnet_groups")
 ```
 
 Boto3 documentation:
@@ -188,6 +214,8 @@ Arguments for `DescribeCacheSubnetGroupsPaginator.paginate` method:
 `DescribeCacheSubnetGroupsPaginator.paginate` returns
 `_PageIterator`\[[CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef)\].
 
+<a id="describeenginedefaultparameterspaginator"></a>
+
 ## DescribeEngineDefaultParametersPaginator
 
 Type annotations for
@@ -196,10 +224,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeEngineDefaultParametersPaginator
 
 def get_describe_engine_default_parameters_paginator() -> DescribeEngineDefaultParametersPaginator:
-    return boto3.client("elasticache").get_paginator("describe_engine_default_parameters")
+    return Session().client("elasticache").get_paginator("describe_engine_default_parameters")
 ```
 
 Boto3 documentation:
@@ -214,6 +244,8 @@ Arguments for `DescribeEngineDefaultParametersPaginator.paginate` method:
 `DescribeEngineDefaultParametersPaginator.paginate` returns
 `_PageIterator`\[[DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef)\].
 
+<a id="describeeventspaginator"></a>
+
 ## DescribeEventsPaginator
 
 Type annotations for
@@ -222,10 +254,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeEventsPaginator
 
 def get_describe_events_paginator() -> DescribeEventsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_events")
+    return Session().client("elasticache").get_paginator("describe_events")
 ```
 
 Boto3 documentation:
@@ -244,6 +278,8 @@ Arguments for `DescribeEventsPaginator.paginate` method:
 `DescribeEventsPaginator.paginate` returns
 `_PageIterator`\[[EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef)\].
 
+<a id="describeglobalreplicationgroupspaginator"></a>
+
 ## DescribeGlobalReplicationGroupsPaginator
 
 Type annotations for
@@ -252,10 +288,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeGlobalReplicationGroupsPaginator
 
 def get_describe_global_replication_groups_paginator() -> DescribeGlobalReplicationGroupsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_global_replication_groups")
+    return Session().client("elasticache").get_paginator("describe_global_replication_groups")
 ```
 
 Boto3 documentation:
@@ -271,6 +309,8 @@ Arguments for `DescribeGlobalReplicationGroupsPaginator.paginate` method:
 `DescribeGlobalReplicationGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef)\].
 
+<a id="describereplicationgroupspaginator"></a>
+
 ## DescribeReplicationGroupsPaginator
 
 Type annotations for
@@ -279,10 +319,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeReplicationGroupsPaginator
 
 def get_describe_replication_groups_paginator() -> DescribeReplicationGroupsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_replication_groups")
+    return Session().client("elasticache").get_paginator("describe_replication_groups")
 ```
 
 Boto3 documentation:
@@ -297,6 +339,8 @@ Arguments for `DescribeReplicationGroupsPaginator.paginate` method:
 `DescribeReplicationGroupsPaginator.paginate` returns
 `_PageIterator`\[[ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef)\].
 
+<a id="describereservedcachenodespaginator"></a>
+
 ## DescribeReservedCacheNodesPaginator
 
 Type annotations for
@@ -305,10 +349,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeReservedCacheNodesPaginator
 
 def get_describe_reserved_cache_nodes_paginator() -> DescribeReservedCacheNodesPaginator:
-    return boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes")
+    return Session().client("elasticache").get_paginator("describe_reserved_cache_nodes")
 ```
 
 Boto3 documentation:
@@ -328,6 +374,8 @@ Arguments for `DescribeReservedCacheNodesPaginator.paginate` method:
 `DescribeReservedCacheNodesPaginator.paginate` returns
 `_PageIterator`\[[ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef)\].
 
+<a id="describereservedcachenodesofferingspaginator"></a>
+
 ## DescribeReservedCacheNodesOfferingsPaginator
 
 Type annotations for
@@ -336,10 +384,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeReservedCacheNodesOfferingsPaginator
 
 def get_describe_reserved_cache_nodes_offerings_paginator() -> DescribeReservedCacheNodesOfferingsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")
+    return Session().client("elasticache").get_paginator("describe_reserved_cache_nodes_offerings")
 ```
 
 Boto3 documentation:
@@ -358,6 +408,8 @@ Arguments for `DescribeReservedCacheNodesOfferingsPaginator.paginate` method:
 `DescribeReservedCacheNodesOfferingsPaginator.paginate` returns
 `_PageIterator`\[[ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef)\].
 
+<a id="describeserviceupdatespaginator"></a>
+
 ## DescribeServiceUpdatesPaginator
 
 Type annotations for
@@ -366,10 +418,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeServiceUpdatesPaginator
 
 def get_describe_service_updates_paginator() -> DescribeServiceUpdatesPaginator:
-    return boto3.client("elasticache").get_paginator("describe_service_updates")
+    return Session().client("elasticache").get_paginator("describe_service_updates")
 ```
 
 Boto3 documentation:
@@ -386,6 +440,8 @@ Arguments for `DescribeServiceUpdatesPaginator.paginate` method:
 `DescribeServiceUpdatesPaginator.paginate` returns
 `_PageIterator`\[[ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef)\].
 
+<a id="describesnapshotspaginator"></a>
+
 ## DescribeSnapshotsPaginator
 
 Type annotations for
@@ -394,10 +450,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeSnapshotsPaginator
 
 def get_describe_snapshots_paginator() -> DescribeSnapshotsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_snapshots")
+    return Session().client("elasticache").get_paginator("describe_snapshots")
 ```
 
 Boto3 documentation:
@@ -416,6 +474,8 @@ Arguments for `DescribeSnapshotsPaginator.paginate` method:
 `DescribeSnapshotsPaginator.paginate` returns
 `_PageIterator`\[[DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef)\].
 
+<a id="describeupdateactionspaginator"></a>
+
 ## DescribeUpdateActionsPaginator
 
 Type annotations for
@@ -424,10 +484,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeUpdateActionsPaginator
 
 def get_describe_update_actions_paginator() -> DescribeUpdateActionsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_update_actions")
+    return Session().client("elasticache").get_paginator("describe_update_actions")
 ```
 
 Boto3 documentation:
@@ -452,6 +514,8 @@ Arguments for `DescribeUpdateActionsPaginator.paginate` method:
 `DescribeUpdateActionsPaginator.paginate` returns
 `_PageIterator`\[[UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef)\].
 
+<a id="describeusergroupspaginator"></a>
+
 ## DescribeUserGroupsPaginator
 
 Type annotations for
@@ -460,10 +524,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeUserGroupsPaginator
 
 def get_describe_user_groups_paginator() -> DescribeUserGroupsPaginator:
-    return boto3.client("elasticache").get_paginator("describe_user_groups")
+    return Session().client("elasticache").get_paginator("describe_user_groups")
 ```
 
 Boto3 documentation:
@@ -478,6 +544,8 @@ Arguments for `DescribeUserGroupsPaginator.paginate` method:
 `DescribeUserGroupsPaginator.paginate` returns
 `_PageIterator`\[[DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef)\].
 
+<a id="describeuserspaginator"></a>
+
 ## DescribeUsersPaginator
 
 Type annotations for
@@ -486,10 +554,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_elasticache.paginator import DescribeUsersPaginator
 
 def get_describe_users_paginator() -> DescribeUsersPaginator:
-    return boto3.client("elasticache").get_paginator("describe_users")
+    return Session().client("elasticache").get_paginator("describe_users")
 ```
 
 Boto3 documentation:

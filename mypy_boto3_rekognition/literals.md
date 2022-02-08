@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-rekognition-module"></a>
+
 # Literals for boto3 Rekognition module
 
 > [Index](..) > [Rekognition](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Rekognition](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rekognition.html#Rekognition)
 type annotations stubs module
-[mypy_boto3_rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
+[mypy-boto3-rekognition](https://pypi.org/project/mypy-boto3-rekognition/).
 
 - [Literals for boto3 Rekognition module](#literals-for-boto3-rekognition-module)
   - [AttributeType](#attributetype)
@@ -49,6 +51,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="attributetype"></a>
+
 ## AttributeType
 
 ```python
@@ -59,6 +63,8 @@ Values:
 
 - `ALL`
 - `DEFAULT`
+
+<a id="bodyparttype"></a>
 
 ## BodyPartType
 
@@ -73,6 +79,8 @@ Values:
 - `LEFT_HAND`
 - `RIGHT_HAND`
 
+<a id="celebrityrecognitionsortbytype"></a>
+
 ## CelebrityRecognitionSortByType
 
 ```python
@@ -83,6 +91,8 @@ Values:
 
 - `ID`
 - `TIMESTAMP`
+
+<a id="contentclassifiertype"></a>
 
 ## ContentClassifierType
 
@@ -95,6 +105,8 @@ Values:
 - `FreeOfAdultContent`
 - `FreeOfPersonallyIdentifiableInformation`
 
+<a id="contentmoderationsortbytype"></a>
+
 ## ContentModerationSortByType
 
 ```python
@@ -105,6 +117,8 @@ Values:
 
 - `NAME`
 - `TIMESTAMP`
+
+<a id="datasetstatusmessagecodetype"></a>
 
 ## DatasetStatusMessageCodeType
 
@@ -117,6 +131,8 @@ Values:
 - `CLIENT_ERROR`
 - `SERVICE_ERROR`
 - `SUCCESS`
+
+<a id="datasetstatustype"></a>
 
 ## DatasetStatusType
 
@@ -134,6 +150,8 @@ Values:
 - `UPDATE_FAILED`
 - `UPDATE_IN_PROGRESS`
 
+<a id="datasettypetype"></a>
+
 ## DatasetTypeType
 
 ```python
@@ -145,6 +163,8 @@ Values:
 - `TEST`
 - `TRAIN`
 
+<a id="describeprojectversionspaginatorname"></a>
+
 ## DescribeProjectVersionsPaginatorName
 
 ```python
@@ -155,6 +175,8 @@ Values:
 
 - `describe_project_versions`
 
+<a id="describeprojectspaginatorname"></a>
+
 ## DescribeProjectsPaginatorName
 
 ```python
@@ -164,6 +186,8 @@ from mypy_boto3_rekognition.literals import DescribeProjectsPaginatorName
 Values:
 
 - `describe_projects`
+
+<a id="emotionnametype"></a>
 
 ## EmotionNameType
 
@@ -183,6 +207,8 @@ Values:
 - `SURPRISED`
 - `UNKNOWN`
 
+<a id="faceattributestype"></a>
+
 ## FaceAttributesType
 
 ```python
@@ -193,6 +219,8 @@ Values:
 
 - `ALL`
 - `DEFAULT`
+
+<a id="facesearchsortbytype"></a>
 
 ## FaceSearchSortByType
 
@@ -205,6 +233,8 @@ Values:
 - `INDEX`
 - `TIMESTAMP`
 
+<a id="gendertypetype"></a>
+
 ## GenderTypeType
 
 ```python
@@ -215,6 +245,8 @@ Values:
 
 - `Female`
 - `Male`
+
+<a id="knowngendertypetype"></a>
 
 ## KnownGenderTypeType
 
@@ -229,6 +261,8 @@ Values:
 - `Nonbinary`
 - `Unlisted`
 
+<a id="labeldetectionsortbytype"></a>
+
 ## LabelDetectionSortByType
 
 ```python
@@ -239,6 +273,8 @@ Values:
 
 - `NAME`
 - `TIMESTAMP`
+
+<a id="landmarktypetype"></a>
 
 ## LandmarkTypeType
 
@@ -279,6 +315,8 @@ Values:
 - `upperJawlineLeft`
 - `upperJawlineRight`
 
+<a id="listcollectionspaginatorname"></a>
+
 ## ListCollectionsPaginatorName
 
 ```python
@@ -288,6 +326,8 @@ from mypy_boto3_rekognition.literals import ListCollectionsPaginatorName
 Values:
 
 - `list_collections`
+
+<a id="listdatasetentriespaginatorname"></a>
 
 ## ListDatasetEntriesPaginatorName
 
@@ -299,6 +339,8 @@ Values:
 
 - `list_dataset_entries`
 
+<a id="listdatasetlabelspaginatorname"></a>
+
 ## ListDatasetLabelsPaginatorName
 
 ```python
@@ -308,6 +350,8 @@ from mypy_boto3_rekognition.literals import ListDatasetLabelsPaginatorName
 Values:
 
 - `list_dataset_labels`
+
+<a id="listfacespaginatorname"></a>
 
 ## ListFacesPaginatorName
 
@@ -319,6 +363,8 @@ Values:
 
 - `list_faces`
 
+<a id="liststreamprocessorspaginatorname"></a>
+
 ## ListStreamProcessorsPaginatorName
 
 ```python
@@ -328,6 +374,8 @@ from mypy_boto3_rekognition.literals import ListStreamProcessorsPaginatorName
 Values:
 
 - `list_stream_processors`
+
+<a id="orientationcorrectiontype"></a>
 
 ## OrientationCorrectionType
 
@@ -342,6 +390,8 @@ Values:
 - `ROTATE_270`
 - `ROTATE_90`
 
+<a id="persontrackingsortbytype"></a>
+
 ## PersonTrackingSortByType
 
 ```python
@@ -352,6 +402,8 @@ Values:
 
 - `INDEX`
 - `TIMESTAMP`
+
+<a id="projectstatustype"></a>
 
 ## ProjectStatusType
 
@@ -365,6 +417,8 @@ Values:
 - `CREATING`
 - `DELETING`
 
+<a id="projectversionrunningwaitername"></a>
+
 ## ProjectVersionRunningWaiterName
 
 ```python
@@ -374,6 +428,8 @@ from mypy_boto3_rekognition.literals import ProjectVersionRunningWaiterName
 Values:
 
 - `project_version_running`
+
+<a id="projectversionstatustype"></a>
 
 ## ProjectVersionStatusType
 
@@ -393,6 +449,8 @@ Values:
 - `TRAINING_FAILED`
 - `TRAINING_IN_PROGRESS`
 
+<a id="projectversiontrainingcompletedwaitername"></a>
+
 ## ProjectVersionTrainingCompletedWaiterName
 
 ```python
@@ -402,6 +460,8 @@ from mypy_boto3_rekognition.literals import ProjectVersionTrainingCompletedWaite
 Values:
 
 - `project_version_training_completed`
+
+<a id="protectiveequipmenttypetype"></a>
 
 ## ProtectiveEquipmentTypeType
 
@@ -414,6 +474,8 @@ Values:
 - `FACE_COVER`
 - `HAND_COVER`
 - `HEAD_COVER`
+
+<a id="qualityfiltertype"></a>
 
 ## QualityFilterType
 
@@ -428,6 +490,8 @@ Values:
 - `LOW`
 - `MEDIUM`
 - `NONE`
+
+<a id="reasontype"></a>
 
 ## ReasonType
 
@@ -445,6 +509,8 @@ Values:
 - `LOW_SHARPNESS`
 - `SMALL_BOUNDING_BOX`
 
+<a id="segmenttypetype"></a>
+
 ## SegmentTypeType
 
 ```python
@@ -455,6 +521,8 @@ Values:
 
 - `SHOT`
 - `TECHNICAL_CUE`
+
+<a id="streamprocessorstatustype"></a>
 
 ## StreamProcessorStatusType
 
@@ -469,6 +537,8 @@ Values:
 - `STARTING`
 - `STOPPED`
 - `STOPPING`
+
+<a id="technicalcuetypetype"></a>
 
 ## TechnicalCueTypeType
 
@@ -486,6 +556,8 @@ Values:
 - `Slate`
 - `StudioLogo`
 
+<a id="texttypestype"></a>
+
 ## TextTypesType
 
 ```python
@@ -496,6 +568,8 @@ Values:
 
 - `LINE`
 - `WORD`
+
+<a id="videocolorrangetype"></a>
 
 ## VideoColorRangeType
 
@@ -508,6 +582,8 @@ Values:
 - `FULL`
 - `LIMITED`
 
+<a id="videojobstatustype"></a>
+
 ## VideoJobStatusType
 
 ```python
@@ -519,6 +595,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -828,6 +906,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -843,6 +923,8 @@ Values:
 - `list_dataset_labels`
 - `list_faces`
 - `list_stream_processors`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

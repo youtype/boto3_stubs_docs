@@ -1,3 +1,5 @@
+<a id="quicksightclient-for-boto3-quicksight-module"></a>
+
 # QuickSightClient for boto3 QuickSight module
 
 > [Index](..) > [QuickSight](.) > QuickSightClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QuickSight](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight)
 type annotations stubs module
-[mypy_boto3_quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
+[mypy-boto3-quicksight](https://pypi.org/project/mypy-boto3-quicksight/).
 
 - [QuickSightClient for boto3 QuickSight module](#quicksightclient-for-boto3-quicksight-module)
   - [QuickSightClient](#quicksightclient)
@@ -131,6 +133,8 @@ type annotations stubs module
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
 
+<a id="quicksightclient"></a>
+
 ## QuickSightClient
 
 Type annotations for `boto3.client("quicksight")`
@@ -138,14 +142,17 @@ Type annotations for `boto3.client("quicksight")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_quicksight.client import QuickSightClient
 
 def get_quicksight_client() -> QuickSightClient:
-    return boto3.client("quicksight")
+    return Session().client("quicksight")
 ```
 
 Boto3 documentation:
 [QuickSight.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -181,7 +188,11 @@ Exceptions:
 - `Exceptions.UnsupportedPricingPlanException`
 - `Exceptions.UnsupportedUserEditionException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -193,6 +204,8 @@ Boto3 documentation:
 [QuickSight.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -208,6 +221,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_ingestion"></a>
 
 ### cancel_ingestion
 
@@ -229,6 +244,8 @@ Keyword-only arguments:
 
 Returns
 [CancelIngestionResponseTypeDef](./type_defs.md#cancelingestionresponsetypedef).
+
+<a id="create_account_customization"></a>
 
 ### create_account_customization
 
@@ -255,6 +272,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAccountCustomizationResponseTypeDef](./type_defs.md#createaccountcustomizationresponsetypedef).
+
+<a id="create_analysis"></a>
 
 ### create_analysis
 
@@ -284,6 +303,8 @@ Keyword-only arguments:
 
 Returns
 [CreateAnalysisResponseTypeDef](./type_defs.md#createanalysisresponsetypedef).
+
+<a id="create_dashboard"></a>
 
 ### create_dashboard
 
@@ -316,6 +337,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDashboardResponseTypeDef](./type_defs.md#createdashboardresponsetypedef).
+
+<a id="create_data_set"></a>
 
 ### create_data_set
 
@@ -359,6 +382,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
+<a id="create_data_source"></a>
+
 ### create_data_source
 
 Creates a data source.
@@ -391,6 +416,8 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
+<a id="create_folder"></a>
+
 ### create_folder
 
 Creates an empty shared folder.
@@ -418,6 +445,8 @@ Keyword-only arguments:
 Returns
 [CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
 
+<a id="create_folder_membership"></a>
+
 ### create_folder_membership
 
 Adds an asset, such as a dashboard, analysis, or dataset into a folder.
@@ -441,6 +470,8 @@ Keyword-only arguments:
 Returns
 [CreateFolderMembershipResponseTypeDef](./type_defs.md#createfoldermembershipresponsetypedef).
 
+<a id="create_group"></a>
+
 ### create_group
 
 Creates an Amazon QuickSight group.
@@ -462,6 +493,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGroupResponseTypeDef](./type_defs.md#creategroupresponsetypedef).
+
+<a id="create_group_membership"></a>
 
 ### create_group_membership
 
@@ -485,6 +518,8 @@ Keyword-only arguments:
 
 Returns
 [CreateGroupMembershipResponseTypeDef](./type_defs.md#creategroupmembershipresponsetypedef).
+
+<a id="create_iam_policy_assignment"></a>
 
 ### create_iam_policy_assignment
 
@@ -513,6 +548,8 @@ Keyword-only arguments:
 Returns
 [CreateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#createiampolicyassignmentresponsetypedef).
 
+<a id="create_ingestion"></a>
+
 ### create_ingestion
 
 Creates and starts a new SPICE ingestion for a dataset.
@@ -534,6 +571,8 @@ Keyword-only arguments:
 
 Returns
 [CreateIngestionResponseTypeDef](./type_defs.md#createingestionresponsetypedef).
+
+<a id="create_namespace"></a>
 
 ### create_namespace
 
@@ -558,6 +597,8 @@ Keyword-only arguments:
 
 Returns
 [CreateNamespaceResponseTypeDef](./type_defs.md#createnamespaceresponsetypedef).
+
+<a id="create_template"></a>
 
 ### create_template
 
@@ -587,6 +628,8 @@ Keyword-only arguments:
 Returns
 [CreateTemplateResponseTypeDef](./type_defs.md#createtemplateresponsetypedef).
 
+<a id="create_template_alias"></a>
+
 ### create_template_alias
 
 Creates a template alias for a template.
@@ -608,6 +651,8 @@ Keyword-only arguments:
 
 Returns
 [CreateTemplateAliasResponseTypeDef](./type_defs.md#createtemplatealiasresponsetypedef).
+
+<a id="create_theme"></a>
 
 ### create_theme
 
@@ -638,6 +683,8 @@ Keyword-only arguments:
 Returns
 [CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
 
+<a id="create_theme_alias"></a>
+
 ### create_theme_alias
 
 Creates a theme alias for a theme.
@@ -659,6 +706,8 @@ Keyword-only arguments:
 
 Returns
 [CreateThemeAliasResponseTypeDef](./type_defs.md#createthemealiasresponsetypedef).
+
+<a id="delete_account_customization"></a>
 
 ### delete_account_customization
 
@@ -682,6 +731,8 @@ Keyword-only arguments:
 Returns
 [DeleteAccountCustomizationResponseTypeDef](./type_defs.md#deleteaccountcustomizationresponsetypedef).
 
+<a id="delete_analysis"></a>
+
 ### delete_analysis
 
 Deletes an analysis from Amazon QuickSight.
@@ -704,6 +755,8 @@ Keyword-only arguments:
 Returns
 [DeleteAnalysisResponseTypeDef](./type_defs.md#deleteanalysisresponsetypedef).
 
+<a id="delete_dashboard"></a>
+
 ### delete_dashboard
 
 Deletes a dashboard.
@@ -725,6 +778,8 @@ Keyword-only arguments:
 Returns
 [DeleteDashboardResponseTypeDef](./type_defs.md#deletedashboardresponsetypedef).
 
+<a id="delete_data_set"></a>
+
 ### delete_data_set
 
 Deletes a dataset.
@@ -744,6 +799,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteDataSetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
+
+<a id="delete_data_source"></a>
 
 ### delete_data_source
 
@@ -765,6 +822,8 @@ Keyword-only arguments:
 Returns
 [DeleteDataSourceResponseTypeDef](./type_defs.md#deletedatasourceresponsetypedef).
 
+<a id="delete_folder"></a>
+
 ### delete_folder
 
 Deletes an empty folder.
@@ -784,6 +843,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteFolderResponseTypeDef](./type_defs.md#deletefolderresponsetypedef).
+
+<a id="delete_folder_membership"></a>
 
 ### delete_folder_membership
 
@@ -808,6 +869,8 @@ Keyword-only arguments:
 Returns
 [DeleteFolderMembershipResponseTypeDef](./type_defs.md#deletefoldermembershipresponsetypedef).
 
+<a id="delete_group"></a>
+
 ### delete_group
 
 Removes a user group from Amazon QuickSight.
@@ -828,6 +891,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteGroupResponseTypeDef](./type_defs.md#deletegroupresponsetypedef).
+
+<a id="delete_group_membership"></a>
 
 ### delete_group_membership
 
@@ -853,6 +918,8 @@ Keyword-only arguments:
 Returns
 [DeleteGroupMembershipResponseTypeDef](./type_defs.md#deletegroupmembershipresponsetypedef).
 
+<a id="delete_iam_policy_assignment"></a>
+
 ### delete_iam_policy_assignment
 
 Deletes an existing IAM policy assignment.
@@ -875,6 +942,8 @@ Keyword-only arguments:
 Returns
 [DeleteIAMPolicyAssignmentResponseTypeDef](./type_defs.md#deleteiampolicyassignmentresponsetypedef).
 
+<a id="delete_namespace"></a>
+
 ### delete_namespace
 
 Deletes a namespace and the users and groups that are associated with the
@@ -895,6 +964,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
+
+<a id="delete_template"></a>
 
 ### delete_template
 
@@ -917,6 +988,8 @@ Keyword-only arguments:
 Returns
 [DeleteTemplateResponseTypeDef](./type_defs.md#deletetemplateresponsetypedef).
 
+<a id="delete_template_alias"></a>
+
 ### delete_template_alias
 
 Deletes the item that the specified template alias points to.
@@ -937,6 +1010,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteTemplateAliasResponseTypeDef](./type_defs.md#deletetemplatealiasresponsetypedef).
+
+<a id="delete_theme"></a>
 
 ### delete_theme
 
@@ -959,6 +1034,8 @@ Keyword-only arguments:
 Returns
 [DeleteThemeResponseTypeDef](./type_defs.md#deletethemeresponsetypedef).
 
+<a id="delete_theme_alias"></a>
+
 ### delete_theme_alias
 
 Deletes the version of the theme that the specified theme alias points to.
@@ -979,6 +1056,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteThemeAliasResponseTypeDef](./type_defs.md#deletethemealiasresponsetypedef).
+
+<a id="delete_user"></a>
 
 ### delete_user
 
@@ -1001,6 +1080,8 @@ Keyword-only arguments:
 
 Returns [DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef).
 
+<a id="delete_user_by_principal_id"></a>
+
 ### delete_user_by_principal_id
 
 Deletes a user identified by its principal ID.
@@ -1022,6 +1103,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteUserByPrincipalIdResponseTypeDef](./type_defs.md#deleteuserbyprincipalidresponsetypedef).
+
+<a id="describe_account_customization"></a>
 
 ### describe_account_customization
 
@@ -1047,6 +1130,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccountCustomizationResponseTypeDef](./type_defs.md#describeaccountcustomizationresponsetypedef).
 
+<a id="describe_account_settings"></a>
+
 ### describe_account_settings
 
 Describes the settings that were used when your Amazon QuickSight subscription
@@ -1068,6 +1153,8 @@ Keyword-only arguments:
 Returns
 [DescribeAccountSettingsResponseTypeDef](./type_defs.md#describeaccountsettingsresponsetypedef).
 
+<a id="describe_analysis"></a>
+
 ### describe_analysis
 
 Provides a summary of the metadata for an analysis.
@@ -1087,6 +1174,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAnalysisResponseTypeDef](./type_defs.md#describeanalysisresponsetypedef).
+
+<a id="describe_analysis_permissions"></a>
 
 ### describe_analysis_permissions
 
@@ -1108,6 +1197,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeAnalysisPermissionsResponseTypeDef](./type_defs.md#describeanalysispermissionsresponsetypedef).
+
+<a id="describe_dashboard"></a>
 
 ### describe_dashboard
 
@@ -1131,6 +1222,8 @@ Keyword-only arguments:
 Returns
 [DescribeDashboardResponseTypeDef](./type_defs.md#describedashboardresponsetypedef).
 
+<a id="describe_dashboard_permissions"></a>
+
 ### describe_dashboard_permissions
 
 Describes read and write permissions for a dashboard.
@@ -1152,6 +1245,8 @@ Keyword-only arguments:
 Returns
 [DescribeDashboardPermissionsResponseTypeDef](./type_defs.md#describedashboardpermissionsresponsetypedef).
 
+<a id="describe_data_set"></a>
+
 ### describe_data_set
 
 Describes a dataset.
@@ -1171,6 +1266,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataSetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
+
+<a id="describe_data_set_permissions"></a>
 
 ### describe_data_set_permissions
 
@@ -1193,6 +1290,8 @@ Keyword-only arguments:
 Returns
 [DescribeDataSetPermissionsResponseTypeDef](./type_defs.md#describedatasetpermissionsresponsetypedef).
 
+<a id="describe_data_source"></a>
+
 ### describe_data_source
 
 Describes a data source.
@@ -1212,6 +1311,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
+
+<a id="describe_data_source_permissions"></a>
 
 ### describe_data_source_permissions
 
@@ -1234,6 +1335,8 @@ Keyword-only arguments:
 Returns
 [DescribeDataSourcePermissionsResponseTypeDef](./type_defs.md#describedatasourcepermissionsresponsetypedef).
 
+<a id="describe_folder"></a>
+
 ### describe_folder
 
 Describes a folder.
@@ -1253,6 +1356,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFolderResponseTypeDef](./type_defs.md#describefolderresponsetypedef).
+
+<a id="describe_folder_permissions"></a>
 
 ### describe_folder_permissions
 
@@ -1275,6 +1380,8 @@ Keyword-only arguments:
 Returns
 [DescribeFolderPermissionsResponseTypeDef](./type_defs.md#describefolderpermissionsresponsetypedef).
 
+<a id="describe_folder_resolved_permissions"></a>
+
 ### describe_folder_resolved_permissions
 
 Describes the folder resolved permissions.
@@ -1295,6 +1402,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeFolderResolvedPermissionsResponseTypeDef](./type_defs.md#describefolderresolvedpermissionsresponsetypedef).
+
+<a id="describe_group"></a>
 
 ### describe_group
 
@@ -1317,6 +1426,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
+
+<a id="describe_iam_policy_assignment"></a>
 
 ### describe_iam_policy_assignment
 
@@ -1341,6 +1452,8 @@ Keyword-only arguments:
 Returns
 [DescribeIAMPolicyAssignmentResponseTypeDef](./type_defs.md#describeiampolicyassignmentresponsetypedef).
 
+<a id="describe_ingestion"></a>
+
 ### describe_ingestion
 
 Describes a SPICE ingestion.
@@ -1362,6 +1475,8 @@ Keyword-only arguments:
 Returns
 [DescribeIngestionResponseTypeDef](./type_defs.md#describeingestionresponsetypedef).
 
+<a id="describe_ip_restriction"></a>
+
 ### describe_ip_restriction
 
 Provides a summary and status of IP rules.
@@ -1382,6 +1497,8 @@ Keyword-only arguments:
 Returns
 [DescribeIpRestrictionResponseTypeDef](./type_defs.md#describeiprestrictionresponsetypedef).
 
+<a id="describe_namespace"></a>
+
 ### describe_namespace
 
 Describes the current namespace.
@@ -1401,6 +1518,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeNamespaceResponseTypeDef](./type_defs.md#describenamespaceresponsetypedef).
+
+<a id="describe_template"></a>
 
 ### describe_template
 
@@ -1424,6 +1543,8 @@ Keyword-only arguments:
 Returns
 [DescribeTemplateResponseTypeDef](./type_defs.md#describetemplateresponsetypedef).
 
+<a id="describe_template_alias"></a>
+
 ### describe_template_alias
 
 Describes the template alias for a template.
@@ -1446,6 +1567,8 @@ Keyword-only arguments:
 Returns
 [DescribeTemplateAliasResponseTypeDef](./type_defs.md#describetemplatealiasresponsetypedef).
 
+<a id="describe_template_permissions"></a>
+
 ### describe_template_permissions
 
 Describes read and write permissions on a template.
@@ -1466,6 +1589,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTemplatePermissionsResponseTypeDef](./type_defs.md#describetemplatepermissionsresponsetypedef).
+
+<a id="describe_theme"></a>
 
 ### describe_theme
 
@@ -1489,6 +1614,8 @@ Keyword-only arguments:
 Returns
 [DescribeThemeResponseTypeDef](./type_defs.md#describethemeresponsetypedef).
 
+<a id="describe_theme_alias"></a>
+
 ### describe_theme_alias
 
 Describes the alias for a theme.
@@ -1509,6 +1636,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeThemeAliasResponseTypeDef](./type_defs.md#describethemealiasresponsetypedef).
+
+<a id="describe_theme_permissions"></a>
 
 ### describe_theme_permissions
 
@@ -1531,6 +1660,8 @@ Keyword-only arguments:
 Returns
 [DescribeThemePermissionsResponseTypeDef](./type_defs.md#describethemepermissionsresponsetypedef).
 
+<a id="describe_user"></a>
+
 ### describe_user
 
 Returns information about a user, given the user name.
@@ -1551,6 +1682,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
+
+<a id="generate_embed_url_for_anonymous_user"></a>
 
 ### generate_embed_url_for_anonymous_user
 
@@ -1581,6 +1714,8 @@ Keyword-only arguments:
 Returns
 [GenerateEmbedUrlForAnonymousUserResponseTypeDef](./type_defs.md#generateembedurlforanonymoususerresponsetypedef).
 
+<a id="generate_embed_url_for_registered_user"></a>
+
 ### generate_embed_url_for_registered_user
 
 Generates an embed URL that you can use to embed an Amazon QuickSight
@@ -1607,6 +1742,8 @@ Keyword-only arguments:
 Returns
 [GenerateEmbedUrlForRegisteredUserResponseTypeDef](./type_defs.md#generateembedurlforregistereduserresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1625,6 +1762,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_dashboard_embed_url"></a>
 
 ### get_dashboard_embed_url
 
@@ -1658,6 +1797,8 @@ Keyword-only arguments:
 Returns
 [GetDashboardEmbedUrlResponseTypeDef](./type_defs.md#getdashboardembedurlresponsetypedef).
 
+<a id="get_session_embed_url"></a>
+
 ### get_session_embed_url
 
 Generates a session URL and authorization code that you can use to embed the
@@ -1681,6 +1822,8 @@ Keyword-only arguments:
 Returns
 [GetSessionEmbedUrlResponseTypeDef](./type_defs.md#getsessionembedurlresponsetypedef).
 
+<a id="list_analyses"></a>
+
 ### list_analyses
 
 Lists Amazon QuickSight analyses that exist in the specified Amazon Web
@@ -1702,6 +1845,8 @@ Keyword-only arguments:
 
 Returns
 [ListAnalysesResponseTypeDef](./type_defs.md#listanalysesresponsetypedef).
+
+<a id="list_dashboard_versions"></a>
 
 ### list_dashboard_versions
 
@@ -1726,6 +1871,8 @@ Keyword-only arguments:
 Returns
 [ListDashboardVersionsResponseTypeDef](./type_defs.md#listdashboardversionsresponsetypedef).
 
+<a id="list_dashboards"></a>
+
 ### list_dashboards
 
 Lists dashboards in an Amazon Web Services account.
@@ -1746,6 +1893,8 @@ Keyword-only arguments:
 
 Returns
 [ListDashboardsResponseTypeDef](./type_defs.md#listdashboardsresponsetypedef).
+
+<a id="list_data_sets"></a>
 
 ### list_data_sets
 
@@ -1769,6 +1918,8 @@ Keyword-only arguments:
 Returns
 [ListDataSetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
+<a id="list_data_sources"></a>
+
 ### list_data_sources
 
 Lists data sources in current Amazon Web Services Region that belong to this
@@ -1790,6 +1941,8 @@ Keyword-only arguments:
 
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
+
+<a id="list_folder_members"></a>
 
 ### list_folder_members
 
@@ -1813,6 +1966,8 @@ Keyword-only arguments:
 Returns
 [ListFolderMembersResponseTypeDef](./type_defs.md#listfoldermembersresponsetypedef).
 
+<a id="list_folders"></a>
+
 ### list_folders
 
 Lists all folders in an account.
@@ -1833,6 +1988,8 @@ Keyword-only arguments:
 
 Returns
 [ListFoldersResponseTypeDef](./type_defs.md#listfoldersresponsetypedef).
+
+<a id="list_group_memberships"></a>
 
 ### list_group_memberships
 
@@ -1858,6 +2015,8 @@ Keyword-only arguments:
 Returns
 [ListGroupMembershipsResponseTypeDef](./type_defs.md#listgroupmembershipsresponsetypedef).
 
+<a id="list_groups"></a>
+
 ### list_groups
 
 Lists all user groups in Amazon QuickSight.
@@ -1878,6 +2037,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
+
+<a id="list_iam_policy_assignments"></a>
 
 ### list_iam_policy_assignments
 
@@ -1903,6 +2064,8 @@ Keyword-only arguments:
 
 Returns
 [ListIAMPolicyAssignmentsResponseTypeDef](./type_defs.md#listiampolicyassignmentsresponsetypedef).
+
+<a id="list_iam_policy_assignments_for_user"></a>
 
 ### list_iam_policy_assignments_for_user
 
@@ -1930,6 +2093,8 @@ Keyword-only arguments:
 Returns
 [ListIAMPolicyAssignmentsForUserResponseTypeDef](./type_defs.md#listiampolicyassignmentsforuserresponsetypedef).
 
+<a id="list_ingestions"></a>
+
 ### list_ingestions
 
 Lists the history of SPICE ingestions for a dataset.
@@ -1952,6 +2117,8 @@ Keyword-only arguments:
 Returns
 [ListIngestionsResponseTypeDef](./type_defs.md#listingestionsresponsetypedef).
 
+<a id="list_namespaces"></a>
+
 ### list_namespaces
 
 Lists the namespaces for the specified Amazon Web Services account.
@@ -1973,6 +2140,8 @@ Keyword-only arguments:
 Returns
 [ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags assigned to a resource.
@@ -1992,6 +2161,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_template_aliases"></a>
 
 ### list_template_aliases
 
@@ -2014,6 +2185,8 @@ Keyword-only arguments:
 
 Returns
 [ListTemplateAliasesResponseTypeDef](./type_defs.md#listtemplatealiasesresponsetypedef).
+
+<a id="list_template_versions"></a>
 
 ### list_template_versions
 
@@ -2039,6 +2212,8 @@ Keyword-only arguments:
 Returns
 [ListTemplateVersionsResponseTypeDef](./type_defs.md#listtemplateversionsresponsetypedef).
 
+<a id="list_templates"></a>
+
 ### list_templates
 
 Lists all the templates in the current Amazon QuickSight account.
@@ -2059,6 +2234,8 @@ Keyword-only arguments:
 
 Returns
 [ListTemplatesResponseTypeDef](./type_defs.md#listtemplatesresponsetypedef).
+
+<a id="list_theme_aliases"></a>
 
 ### list_theme_aliases
 
@@ -2081,6 +2258,8 @@ Keyword-only arguments:
 
 Returns
 [ListThemeAliasesResponseTypeDef](./type_defs.md#listthemealiasesresponsetypedef).
+
+<a id="list_theme_versions"></a>
 
 ### list_theme_versions
 
@@ -2105,6 +2284,8 @@ Keyword-only arguments:
 Returns
 [ListThemeVersionsResponseTypeDef](./type_defs.md#listthemeversionsresponsetypedef).
 
+<a id="list_themes"></a>
+
 ### list_themes
 
 Lists all the themes in the current Amazon Web Services account.
@@ -2125,6 +2306,8 @@ Keyword-only arguments:
 - `Type`: [ThemeTypeType](./literals.md#themetypetype)
 
 Returns [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef).
+
+<a id="list_user_groups"></a>
 
 ### list_user_groups
 
@@ -2150,6 +2333,8 @@ Keyword-only arguments:
 Returns
 [ListUserGroupsResponseTypeDef](./type_defs.md#listusergroupsresponsetypedef).
 
+<a id="list_users"></a>
+
 ### list_users
 
 Returns a list of all of the Amazon QuickSight users belonging to this account.
@@ -2170,6 +2355,8 @@ Keyword-only arguments:
 - `MaxResults`: `int`
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
+
+<a id="register_user"></a>
 
 ### register_user
 
@@ -2202,6 +2389,8 @@ Keyword-only arguments:
 Returns
 [RegisterUserResponseTypeDef](./type_defs.md#registeruserresponsetypedef).
 
+<a id="restore_analysis"></a>
+
 ### restore_analysis
 
 Restores an analysis.
@@ -2221,6 +2410,8 @@ Keyword-only arguments:
 
 Returns
 [RestoreAnalysisResponseTypeDef](./type_defs.md#restoreanalysisresponsetypedef).
+
+<a id="search_analyses"></a>
 
 ### search_analyses
 
@@ -2246,6 +2437,8 @@ Keyword-only arguments:
 Returns
 [SearchAnalysesResponseTypeDef](./type_defs.md#searchanalysesresponsetypedef).
 
+<a id="search_dashboards"></a>
+
 ### search_dashboards
 
 Searches for dashboards that belong to a user.
@@ -2269,6 +2462,8 @@ Keyword-only arguments:
 
 Returns
 [SearchDashboardsResponseTypeDef](./type_defs.md#searchdashboardsresponsetypedef).
+
+<a id="search_folders"></a>
 
 ### search_folders
 
@@ -2294,6 +2489,8 @@ Keyword-only arguments:
 Returns
 [SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Assigns one or more tags (key-value pairs) to the specified Amazon QuickSight
@@ -2315,6 +2512,8 @@ Keyword-only arguments:
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag or tags from a resource.
@@ -2334,6 +2533,8 @@ Keyword-only arguments:
 
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
+
+<a id="update_account_customization"></a>
 
 ### update_account_customization
 
@@ -2360,6 +2561,8 @@ Keyword-only arguments:
 Returns
 [UpdateAccountCustomizationResponseTypeDef](./type_defs.md#updateaccountcustomizationresponsetypedef).
 
+<a id="update_account_settings"></a>
+
 ### update_account_settings
 
 Updates the Amazon QuickSight settings in your Amazon Web Services account.
@@ -2381,6 +2584,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAccountSettingsResponseTypeDef](./type_defs.md#updateaccountsettingsresponsetypedef).
+
+<a id="update_analysis"></a>
 
 ### update_analysis
 
@@ -2409,6 +2614,8 @@ Keyword-only arguments:
 Returns
 [UpdateAnalysisResponseTypeDef](./type_defs.md#updateanalysisresponsetypedef).
 
+<a id="update_analysis_permissions"></a>
+
 ### update_analysis_permissions
 
 Updates the read and write permissions for an analysis.
@@ -2433,6 +2640,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateAnalysisPermissionsResponseTypeDef](./type_defs.md#updateanalysispermissionsresponsetypedef).
+
+<a id="update_dashboard"></a>
 
 ### update_dashboard
 
@@ -2463,6 +2672,8 @@ Keyword-only arguments:
 Returns
 [UpdateDashboardResponseTypeDef](./type_defs.md#updatedashboardresponsetypedef).
 
+<a id="update_dashboard_permissions"></a>
+
 ### update_dashboard_permissions
 
 Updates read and write permissions on a dashboard.
@@ -2492,6 +2703,8 @@ Keyword-only arguments:
 Returns
 [UpdateDashboardPermissionsResponseTypeDef](./type_defs.md#updatedashboardpermissionsresponsetypedef).
 
+<a id="update_dashboard_published_version"></a>
+
 ### update_dashboard_published_version
 
 Updates the published version of a dashboard.
@@ -2513,6 +2726,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDashboardPublishedVersionResponseTypeDef](./type_defs.md#updatedashboardpublishedversionresponsetypedef).
+
+<a id="update_data_set"></a>
 
 ### update_data_set
 
@@ -2553,6 +2768,8 @@ Keyword-only arguments:
 Returns
 [UpdateDataSetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
+<a id="update_data_set_permissions"></a>
+
 ### update_data_set_permissions
 
 Updates the permissions on a dataset.
@@ -2577,6 +2794,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateDataSetPermissionsResponseTypeDef](./type_defs.md#updatedatasetpermissionsresponsetypedef).
+
+<a id="update_data_source"></a>
 
 ### update_data_source
 
@@ -2606,6 +2825,8 @@ Keyword-only arguments:
 Returns
 [UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
 
+<a id="update_data_source_permissions"></a>
+
 ### update_data_source_permissions
 
 Updates the permissions to a data source.
@@ -2631,6 +2852,8 @@ Keyword-only arguments:
 Returns
 [UpdateDataSourcePermissionsResponseTypeDef](./type_defs.md#updatedatasourcepermissionsresponsetypedef).
 
+<a id="update_folder"></a>
+
 ### update_folder
 
 Updates the name of a folder.
@@ -2651,6 +2874,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateFolderResponseTypeDef](./type_defs.md#updatefolderresponsetypedef).
+
+<a id="update_folder_permissions"></a>
 
 ### update_folder_permissions
 
@@ -2677,6 +2902,8 @@ Keyword-only arguments:
 Returns
 [UpdateFolderPermissionsResponseTypeDef](./type_defs.md#updatefolderpermissionsresponsetypedef).
 
+<a id="update_group"></a>
+
 ### update_group
 
 Changes a group description.
@@ -2698,6 +2925,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateGroupResponseTypeDef](./type_defs.md#updategroupresponsetypedef).
+
+<a id="update_iam_policy_assignment"></a>
 
 ### update_iam_policy_assignment
 
@@ -2725,6 +2954,8 @@ Keyword-only arguments:
 Returns
 [UpdateIAMPolicyAssignmentResponseTypeDef](./type_defs.md#updateiampolicyassignmentresponsetypedef).
 
+<a id="update_ip_restriction"></a>
+
 ### update_ip_restriction
 
 Updates the content and status of IP rules.
@@ -2745,6 +2976,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateIpRestrictionResponseTypeDef](./type_defs.md#updateiprestrictionresponsetypedef).
+
+<a id="update_template"></a>
 
 ### update_template
 
@@ -2772,6 +3005,8 @@ Keyword-only arguments:
 Returns
 [UpdateTemplateResponseTypeDef](./type_defs.md#updatetemplateresponsetypedef).
 
+<a id="update_template_alias"></a>
+
 ### update_template_alias
 
 Updates the template alias of a template.
@@ -2793,6 +3028,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateTemplateAliasResponseTypeDef](./type_defs.md#updatetemplatealiasresponsetypedef).
+
+<a id="update_template_permissions"></a>
 
 ### update_template_permissions
 
@@ -2819,6 +3056,8 @@ Keyword-only arguments:
 Returns
 [UpdateTemplatePermissionsResponseTypeDef](./type_defs.md#updatetemplatepermissionsresponsetypedef).
 
+<a id="update_theme"></a>
+
 ### update_theme
 
 Updates a theme.
@@ -2844,6 +3083,8 @@ Keyword-only arguments:
 Returns
 [UpdateThemeResponseTypeDef](./type_defs.md#updatethemeresponsetypedef).
 
+<a id="update_theme_alias"></a>
+
 ### update_theme_alias
 
 Updates an alias of a theme.
@@ -2865,6 +3106,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateThemeAliasResponseTypeDef](./type_defs.md#updatethemealiasresponsetypedef).
+
+<a id="update_theme_permissions"></a>
 
 ### update_theme_permissions
 
@@ -2890,6 +3133,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateThemePermissionsResponseTypeDef](./type_defs.md#updatethemepermissionsresponsetypedef).
+
+<a id="update_user"></a>
 
 ### update_user
 
@@ -2917,6 +3162,8 @@ Keyword-only arguments:
 - `ExternalLoginId`: `str`
 
 Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

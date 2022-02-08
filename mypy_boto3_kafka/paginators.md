@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-kafka-module"></a>
+
 # Paginators for boto3 Kafka module
 
 > [Index](..) > [Kafka](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Kafka](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafka.html#Kafka)
 type annotations stubs module
-[mypy_boto3_kafka](https://pypi.org/project/mypy-boto3-kafka/).
+[mypy-boto3-kafka](https://pypi.org/project/mypy-boto3-kafka/).
 
 - [Paginators for boto3 Kafka module](#paginators-for-boto3-kafka-module)
   - [ListClusterOperationsPaginator](#listclusteroperationspaginator)
@@ -17,6 +19,8 @@ type annotations stubs module
   - [ListNodesPaginator](#listnodespaginator)
   - [ListScramSecretsPaginator](#listscramsecretspaginator)
 
+<a id="listclusteroperationspaginator"></a>
+
 ## ListClusterOperationsPaginator
 
 Type annotations for
@@ -25,10 +29,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListClusterOperationsPaginator
 
 def get_list_cluster_operations_paginator() -> ListClusterOperationsPaginator:
-    return boto3.client("kafka").get_paginator("list_cluster_operations")
+    return Session().client("kafka").get_paginator("list_cluster_operations")
 ```
 
 Boto3 documentation:
@@ -43,6 +49,8 @@ Arguments for `ListClusterOperationsPaginator.paginate` method:
 `ListClusterOperationsPaginator.paginate` returns
 `_PageIterator`\[[ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef)\].
 
+<a id="listclusterspaginator"></a>
+
 ## ListClustersPaginator
 
 Type annotations for `boto3.client("kafka").get_paginator("list_clusters")`.
@@ -50,10 +58,12 @@ Type annotations for `boto3.client("kafka").get_paginator("list_clusters")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListClustersPaginator
 
 def get_list_clusters_paginator() -> ListClustersPaginator:
-    return boto3.client("kafka").get_paginator("list_clusters")
+    return Session().client("kafka").get_paginator("list_clusters")
 ```
 
 Boto3 documentation:
@@ -68,6 +78,8 @@ Arguments for `ListClustersPaginator.paginate` method:
 `ListClustersPaginator.paginate` returns
 `_PageIterator`\[[ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef)\].
 
+<a id="listclustersv2paginator"></a>
+
 ## ListClustersV2Paginator
 
 Type annotations for `boto3.client("kafka").get_paginator("list_clusters_v2")`.
@@ -75,10 +87,12 @@ Type annotations for `boto3.client("kafka").get_paginator("list_clusters_v2")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListClustersV2Paginator
 
 def get_list_clusters_v2_paginator() -> ListClustersV2Paginator:
-    return boto3.client("kafka").get_paginator("list_clusters_v2")
+    return Session().client("kafka").get_paginator("list_clusters_v2")
 ```
 
 Boto3 documentation:
@@ -94,6 +108,8 @@ Arguments for `ListClustersV2Paginator.paginate` method:
 `ListClustersV2Paginator.paginate` returns
 `_PageIterator`\[[ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef)\].
 
+<a id="listconfigurationrevisionspaginator"></a>
+
 ## ListConfigurationRevisionsPaginator
 
 Type annotations for
@@ -102,10 +118,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListConfigurationRevisionsPaginator
 
 def get_list_configuration_revisions_paginator() -> ListConfigurationRevisionsPaginator:
-    return boto3.client("kafka").get_paginator("list_configuration_revisions")
+    return Session().client("kafka").get_paginator("list_configuration_revisions")
 ```
 
 Boto3 documentation:
@@ -120,6 +138,8 @@ Arguments for `ListConfigurationRevisionsPaginator.paginate` method:
 `ListConfigurationRevisionsPaginator.paginate` returns
 `_PageIterator`\[[ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef)\].
 
+<a id="listconfigurationspaginator"></a>
+
 ## ListConfigurationsPaginator
 
 Type annotations for
@@ -128,10 +148,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListConfigurationsPaginator
 
 def get_list_configurations_paginator() -> ListConfigurationsPaginator:
-    return boto3.client("kafka").get_paginator("list_configurations")
+    return Session().client("kafka").get_paginator("list_configurations")
 ```
 
 Boto3 documentation:
@@ -145,6 +167,8 @@ Arguments for `ListConfigurationsPaginator.paginate` method:
 `ListConfigurationsPaginator.paginate` returns
 `_PageIterator`\[[ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef)\].
 
+<a id="listkafkaversionspaginator"></a>
+
 ## ListKafkaVersionsPaginator
 
 Type annotations for
@@ -153,10 +177,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListKafkaVersionsPaginator
 
 def get_list_kafka_versions_paginator() -> ListKafkaVersionsPaginator:
-    return boto3.client("kafka").get_paginator("list_kafka_versions")
+    return Session().client("kafka").get_paginator("list_kafka_versions")
 ```
 
 Boto3 documentation:
@@ -170,6 +196,8 @@ Arguments for `ListKafkaVersionsPaginator.paginate` method:
 `ListKafkaVersionsPaginator.paginate` returns
 `_PageIterator`\[[ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef)\].
 
+<a id="listnodespaginator"></a>
+
 ## ListNodesPaginator
 
 Type annotations for `boto3.client("kafka").get_paginator("list_nodes")`.
@@ -177,10 +205,12 @@ Type annotations for `boto3.client("kafka").get_paginator("list_nodes")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListNodesPaginator
 
 def get_list_nodes_paginator() -> ListNodesPaginator:
-    return boto3.client("kafka").get_paginator("list_nodes")
+    return Session().client("kafka").get_paginator("list_nodes")
 ```
 
 Boto3 documentation:
@@ -195,6 +225,8 @@ Arguments for `ListNodesPaginator.paginate` method:
 `ListNodesPaginator.paginate` returns
 `_PageIterator`\[[ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef)\].
 
+<a id="listscramsecretspaginator"></a>
+
 ## ListScramSecretsPaginator
 
 Type annotations for
@@ -203,10 +235,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafka.paginator import ListScramSecretsPaginator
 
 def get_list_scram_secrets_paginator() -> ListScramSecretsPaginator:
-    return boto3.client("kafka").get_paginator("list_scram_secrets")
+    return Session().client("kafka").get_paginator("list_scram_secrets")
 ```
 
 Boto3 documentation:

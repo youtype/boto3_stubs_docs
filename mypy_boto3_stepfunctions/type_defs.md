@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-sfn-module"></a>
+
 # Typed dictionaries for boto3 SFN module
 
 > [Index](..) > [SFN](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SFN](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/stepfunctions.html#SFN)
 type annotations stubs module
-[mypy_boto3_stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
+[mypy-boto3-stepfunctions](https://pypi.org/project/mypy-boto3-stepfunctions/).
 
 - [Typed dictionaries for boto3 SFN module](#typed-dictionaries-for-boto3-sfn-module)
   - [ActivityFailedEventDetailsTypeDef](#activityfailedeventdetailstypedef)
@@ -91,6 +93,8 @@ type annotations stubs module
   - [UpdateStateMachineInputRequestTypeDef](#updatestatemachineinputrequesttypedef)
   - [UpdateStateMachineOutputTypeDef](#updatestatemachineoutputtypedef)
 
+<a id="activityfailedeventdetailstypedef"></a>
+
 ## ActivityFailedEventDetailsTypeDef
 
 ```python
@@ -101,6 +105,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="activitylistitemtypedef"></a>
 
 ## ActivityListItemTypeDef
 
@@ -114,6 +120,8 @@ Required fields:
 - `name`: `str`
 - `creationDate`: `datetime`
 
+<a id="activityschedulefailedeventdetailstypedef"></a>
+
 ## ActivityScheduleFailedEventDetailsTypeDef
 
 ```python
@@ -124,6 +132,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="activityscheduledeventdetailstypedef"></a>
 
 ## ActivityScheduledEventDetailsTypeDef
 
@@ -143,6 +153,8 @@ Optional fields:
 - `timeoutInSeconds`: `int`
 - `heartbeatInSeconds`: `int`
 
+<a id="activitystartedeventdetailstypedef"></a>
+
 ## ActivityStartedEventDetailsTypeDef
 
 ```python
@@ -152,6 +164,8 @@ from mypy_boto3_stepfunctions.type_defs import ActivityStartedEventDetailsTypeDe
 Optional fields:
 
 - `workerName`: `str`
+
+<a id="activitysucceededeventdetailstypedef"></a>
 
 ## ActivitySucceededEventDetailsTypeDef
 
@@ -165,6 +179,8 @@ Optional fields:
 - `outputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 
+<a id="activitytimedouteventdetailstypedef"></a>
+
 ## ActivityTimedOutEventDetailsTypeDef
 
 ```python
@@ -175,6 +191,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="billingdetailstypedef"></a>
 
 ## BillingDetailsTypeDef
 
@@ -187,6 +205,8 @@ Optional fields:
 - `billedMemoryUsedInMB`: `int`
 - `billedDurationInMilliseconds`: `int`
 
+<a id="cloudwatcheventsexecutiondatadetailstypedef"></a>
+
 ## CloudWatchEventsExecutionDataDetailsTypeDef
 
 ```python
@@ -197,6 +217,8 @@ Optional fields:
 
 - `included`: `bool`
 
+<a id="cloudwatchlogsloggrouptypedef"></a>
+
 ## CloudWatchLogsLogGroupTypeDef
 
 ```python
@@ -206,6 +228,8 @@ from mypy_boto3_stepfunctions.type_defs import CloudWatchLogsLogGroupTypeDef
 Optional fields:
 
 - `logGroupArn`: `str`
+
+<a id="createactivityinputrequesttypedef"></a>
 
 ## CreateActivityInputRequestTypeDef
 
@@ -221,6 +245,8 @@ Optional fields:
 
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="createactivityoutputtypedef"></a>
+
 ## CreateActivityOutputTypeDef
 
 ```python
@@ -233,6 +259,8 @@ Required fields:
 - `creationDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createstatemachineinputrequesttypedef"></a>
 
 ## CreateStateMachineInputRequestTypeDef
 
@@ -255,6 +283,8 @@ Optional fields:
 - `tracingConfiguration`:
   [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
 
+<a id="createstatemachineoutputtypedef"></a>
+
 ## CreateStateMachineOutputTypeDef
 
 ```python
@@ -268,6 +298,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteactivityinputrequesttypedef"></a>
+
 ## DeleteActivityInputRequestTypeDef
 
 ```python
@@ -277,6 +309,8 @@ from mypy_boto3_stepfunctions.type_defs import DeleteActivityInputRequestTypeDef
 Required fields:
 
 - `activityArn`: `str`
+
+<a id="deletestatemachineinputrequesttypedef"></a>
 
 ## DeleteStateMachineInputRequestTypeDef
 
@@ -288,6 +322,8 @@ Required fields:
 
 - `stateMachineArn`: `str`
 
+<a id="describeactivityinputrequesttypedef"></a>
+
 ## DescribeActivityInputRequestTypeDef
 
 ```python
@@ -297,6 +333,8 @@ from mypy_boto3_stepfunctions.type_defs import DescribeActivityInputRequestTypeD
 Required fields:
 
 - `activityArn`: `str`
+
+<a id="describeactivityoutputtypedef"></a>
 
 ## DescribeActivityOutputTypeDef
 
@@ -312,6 +350,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeexecutioninputrequesttypedef"></a>
+
 ## DescribeExecutionInputRequestTypeDef
 
 ```python
@@ -321,6 +361,8 @@ from mypy_boto3_stepfunctions.type_defs import DescribeExecutionInputRequestType
 Required fields:
 
 - `executionArn`: `str`
+
+<a id="describeexecutionoutputtypedef"></a>
 
 ## DescribeExecutionOutputTypeDef
 
@@ -346,6 +388,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestatemachineforexecutioninputrequesttypedef"></a>
+
 ## DescribeStateMachineForExecutionInputRequestTypeDef
 
 ```python
@@ -355,6 +399,8 @@ from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineForExecutionI
 Required fields:
 
 - `executionArn`: `str`
+
+<a id="describestatemachineforexecutionoutputtypedef"></a>
 
 ## DescribeStateMachineForExecutionOutputTypeDef
 
@@ -376,6 +422,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describestatemachineinputrequesttypedef"></a>
+
 ## DescribeStateMachineInputRequestTypeDef
 
 ```python
@@ -385,6 +433,8 @@ from mypy_boto3_stepfunctions.type_defs import DescribeStateMachineInputRequestT
 Required fields:
 
 - `stateMachineArn`: `str`
+
+<a id="describestatemachineoutputtypedef"></a>
 
 ## DescribeStateMachineOutputTypeDef
 
@@ -408,6 +458,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="executionabortedeventdetailstypedef"></a>
+
 ## ExecutionAbortedEventDetailsTypeDef
 
 ```python
@@ -419,6 +471,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="executionfailedeventdetailstypedef"></a>
+
 ## ExecutionFailedEventDetailsTypeDef
 
 ```python
@@ -429,6 +483,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="executionlistitemtypedef"></a>
 
 ## ExecutionListItemTypeDef
 
@@ -448,6 +504,8 @@ Optional fields:
 
 - `stopDate`: `datetime`
 
+<a id="executionstartedeventdetailstypedef"></a>
+
 ## ExecutionStartedEventDetailsTypeDef
 
 ```python
@@ -461,6 +519,8 @@ Optional fields:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 - `roleArn`: `str`
 
+<a id="executionsucceededeventdetailstypedef"></a>
+
 ## ExecutionSucceededEventDetailsTypeDef
 
 ```python
@@ -473,6 +533,8 @@ Optional fields:
 - `outputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 
+<a id="executiontimedouteventdetailstypedef"></a>
+
 ## ExecutionTimedOutEventDetailsTypeDef
 
 ```python
@@ -483,6 +545,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="getactivitytaskinputrequesttypedef"></a>
 
 ## GetActivityTaskInputRequestTypeDef
 
@@ -498,6 +562,8 @@ Optional fields:
 
 - `workerName`: `str`
 
+<a id="getactivitytaskoutputtypedef"></a>
+
 ## GetActivityTaskOutputTypeDef
 
 ```python
@@ -510,6 +576,8 @@ Required fields:
 - `input`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getexecutionhistoryinputrequesttypedef"></a>
 
 ## GetExecutionHistoryInputRequestTypeDef
 
@@ -528,6 +596,8 @@ Optional fields:
 - `nextToken`: `str`
 - `includeExecutionData`: `bool`
 
+<a id="getexecutionhistoryoutputtypedef"></a>
+
 ## GetExecutionHistoryOutputTypeDef
 
 ```python
@@ -541,6 +611,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="historyeventexecutiondatadetailstypedef"></a>
+
 ## HistoryEventExecutionDataDetailsTypeDef
 
 ```python
@@ -550,6 +622,8 @@ from mypy_boto3_stepfunctions.type_defs import HistoryEventExecutionDataDetailsT
 Optional fields:
 
 - `truncated`: `bool`
+
+<a id="historyeventtypedef"></a>
 
 ## HistoryEventTypeDef
 
@@ -631,6 +705,8 @@ Optional fields:
 - `stateExitedEventDetails`:
   [StateExitedEventDetailsTypeDef](./type_defs.md#stateexitedeventdetailstypedef)
 
+<a id="lambdafunctionfailedeventdetailstypedef"></a>
+
 ## LambdaFunctionFailedEventDetailsTypeDef
 
 ```python
@@ -642,6 +718,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="lambdafunctionschedulefailedeventdetailstypedef"></a>
+
 ## LambdaFunctionScheduleFailedEventDetailsTypeDef
 
 ```python
@@ -652,6 +730,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="lambdafunctionscheduledeventdetailstypedef"></a>
 
 ## LambdaFunctionScheduledEventDetailsTypeDef
 
@@ -670,6 +750,8 @@ Optional fields:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 - `timeoutInSeconds`: `int`
 
+<a id="lambdafunctionstartfailedeventdetailstypedef"></a>
+
 ## LambdaFunctionStartFailedEventDetailsTypeDef
 
 ```python
@@ -680,6 +762,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="lambdafunctionsucceededeventdetailstypedef"></a>
 
 ## LambdaFunctionSucceededEventDetailsTypeDef
 
@@ -693,6 +777,8 @@ Optional fields:
 - `outputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 
+<a id="lambdafunctiontimedouteventdetailstypedef"></a>
+
 ## LambdaFunctionTimedOutEventDetailsTypeDef
 
 ```python
@@ -704,6 +790,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="listactivitiesinputrequesttypedef"></a>
+
 ## ListActivitiesInputRequestTypeDef
 
 ```python
@@ -714,6 +802,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="listactivitiesoutputtypedef"></a>
 
 ## ListActivitiesOutputTypeDef
 
@@ -728,6 +818,8 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listexecutionsinputrequesttypedef"></a>
 
 ## ListExecutionsInputRequestTypeDef
 
@@ -745,6 +837,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 
+<a id="listexecutionsoutputtypedef"></a>
+
 ## ListExecutionsOutputTypeDef
 
 ```python
@@ -759,6 +853,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="liststatemachinesinputrequesttypedef"></a>
+
 ## ListStateMachinesInputRequestTypeDef
 
 ```python
@@ -769,6 +865,8 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="liststatemachinesoutputtypedef"></a>
 
 ## ListStateMachinesOutputTypeDef
 
@@ -784,6 +882,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourceinputrequesttypedef"></a>
+
 ## ListTagsForResourceInputRequestTypeDef
 
 ```python
@@ -793,6 +893,8 @@ from mypy_boto3_stepfunctions.type_defs import ListTagsForResourceInputRequestTy
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceoutputtypedef"></a>
 
 ## ListTagsForResourceOutputTypeDef
 
@@ -806,6 +908,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="logdestinationtypedef"></a>
+
 ## LogDestinationTypeDef
 
 ```python
@@ -816,6 +920,8 @@ Optional fields:
 
 - `cloudWatchLogsLogGroup`:
   [CloudWatchLogsLogGroupTypeDef](./type_defs.md#cloudwatchlogsloggrouptypedef)
+
+<a id="loggingconfigurationtypedef"></a>
 
 ## LoggingConfigurationTypeDef
 
@@ -830,6 +936,8 @@ Optional fields:
 - `destinations`:
   `Sequence`\[[LogDestinationTypeDef](./type_defs.md#logdestinationtypedef)\]
 
+<a id="mapiterationeventdetailstypedef"></a>
+
 ## MapIterationEventDetailsTypeDef
 
 ```python
@@ -841,6 +949,8 @@ Optional fields:
 - `name`: `str`
 - `index`: `int`
 
+<a id="mapstatestartedeventdetailstypedef"></a>
+
 ## MapStateStartedEventDetailsTypeDef
 
 ```python
@@ -850,6 +960,8 @@ from mypy_boto3_stepfunctions.type_defs import MapStateStartedEventDetailsTypeDe
 Optional fields:
 
 - `length`: `int`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -862,6 +974,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -876,6 +990,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sendtaskfailureinputrequesttypedef"></a>
 
 ## SendTaskFailureInputRequestTypeDef
 
@@ -892,6 +1008,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="sendtaskheartbeatinputrequesttypedef"></a>
+
 ## SendTaskHeartbeatInputRequestTypeDef
 
 ```python
@@ -901,6 +1019,8 @@ from mypy_boto3_stepfunctions.type_defs import SendTaskHeartbeatInputRequestType
 Required fields:
 
 - `taskToken`: `str`
+
+<a id="sendtasksuccessinputrequesttypedef"></a>
 
 ## SendTaskSuccessInputRequestTypeDef
 
@@ -912,6 +1032,8 @@ Required fields:
 
 - `taskToken`: `str`
 - `output`: `str`
+
+<a id="startexecutioninputrequesttypedef"></a>
 
 ## StartExecutionInputRequestTypeDef
 
@@ -929,6 +1051,8 @@ Optional fields:
 - `input`: `str`
 - `traceHeader`: `str`
 
+<a id="startexecutionoutputtypedef"></a>
+
 ## StartExecutionOutputTypeDef
 
 ```python
@@ -941,6 +1065,8 @@ Required fields:
 - `startDate`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="startsyncexecutioninputrequesttypedef"></a>
 
 ## StartSyncExecutionInputRequestTypeDef
 
@@ -957,6 +1083,8 @@ Optional fields:
 - `name`: `str`
 - `input`: `str`
 - `traceHeader`: `str`
+
+<a id="startsyncexecutionoutputtypedef"></a>
 
 ## StartSyncExecutionOutputTypeDef
 
@@ -986,6 +1114,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stateenteredeventdetailstypedef"></a>
+
 ## StateEnteredEventDetailsTypeDef
 
 ```python
@@ -1001,6 +1131,8 @@ Optional fields:
 - `input`: `str`
 - `inputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
+
+<a id="stateexitedeventdetailstypedef"></a>
 
 ## StateExitedEventDetailsTypeDef
 
@@ -1018,6 +1150,8 @@ Optional fields:
 - `outputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 
+<a id="statemachinelistitemtypedef"></a>
+
 ## StateMachineListItemTypeDef
 
 ```python
@@ -1030,6 +1164,8 @@ Required fields:
 - `name`: `str`
 - `type`: [StateMachineTypeType](./literals.md#statemachinetypetype)
 - `creationDate`: `datetime`
+
+<a id="stopexecutioninputrequesttypedef"></a>
 
 ## StopExecutionInputRequestTypeDef
 
@@ -1046,6 +1182,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="stopexecutionoutputtypedef"></a>
+
 ## StopExecutionOutputTypeDef
 
 ```python
@@ -1058,6 +1196,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourceinputrequesttypedef"></a>
+
 ## TagResourceInputRequestTypeDef
 
 ```python
@@ -1069,6 +1209,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1079,6 +1221,8 @@ Optional fields:
 
 - `key`: `str`
 - `value`: `str`
+
+<a id="taskfailedeventdetailstypedef"></a>
 
 ## TaskFailedEventDetailsTypeDef
 
@@ -1095,6 +1239,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="taskscheduledeventdetailstypedef"></a>
 
 ## TaskScheduledEventDetailsTypeDef
 
@@ -1114,6 +1260,8 @@ Optional fields:
 - `timeoutInSeconds`: `int`
 - `heartbeatInSeconds`: `int`
 
+<a id="taskstartfailedeventdetailstypedef"></a>
+
 ## TaskStartFailedEventDetailsTypeDef
 
 ```python
@@ -1130,6 +1278,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="taskstartedeventdetailstypedef"></a>
+
 ## TaskStartedEventDetailsTypeDef
 
 ```python
@@ -1140,6 +1290,8 @@ Required fields:
 
 - `resourceType`: `str`
 - `resource`: `str`
+
+<a id="tasksubmitfailedeventdetailstypedef"></a>
 
 ## TaskSubmitFailedEventDetailsTypeDef
 
@@ -1156,6 +1308,8 @@ Optional fields:
 
 - `error`: `str`
 - `cause`: `str`
+
+<a id="tasksubmittedeventdetailstypedef"></a>
 
 ## TaskSubmittedEventDetailsTypeDef
 
@@ -1174,6 +1328,8 @@ Optional fields:
 - `outputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 
+<a id="tasksucceededeventdetailstypedef"></a>
+
 ## TaskSucceededEventDetailsTypeDef
 
 ```python
@@ -1191,6 +1347,8 @@ Optional fields:
 - `outputDetails`:
   [HistoryEventExecutionDataDetailsTypeDef](./type_defs.md#historyeventexecutiondatadetailstypedef)
 
+<a id="tasktimedouteventdetailstypedef"></a>
+
 ## TaskTimedOutEventDetailsTypeDef
 
 ```python
@@ -1207,6 +1365,8 @@ Optional fields:
 - `error`: `str`
 - `cause`: `str`
 
+<a id="tracingconfigurationtypedef"></a>
+
 ## TracingConfigurationTypeDef
 
 ```python
@@ -1216,6 +1376,8 @@ from mypy_boto3_stepfunctions.type_defs import TracingConfigurationTypeDef
 Optional fields:
 
 - `enabled`: `bool`
+
+<a id="untagresourceinputrequesttypedef"></a>
 
 ## UntagResourceInputRequestTypeDef
 
@@ -1227,6 +1389,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updatestatemachineinputrequesttypedef"></a>
 
 ## UpdateStateMachineInputRequestTypeDef
 
@@ -1246,6 +1410,8 @@ Optional fields:
   [LoggingConfigurationTypeDef](./type_defs.md#loggingconfigurationtypedef)
 - `tracingConfiguration`:
   [TracingConfigurationTypeDef](./type_defs.md#tracingconfigurationtypedef)
+
+<a id="updatestatemachineoutputtypedef"></a>
 
 ## UpdateStateMachineOutputTypeDef
 

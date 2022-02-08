@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-kafkaconnect-module"></a>
+
 # Paginators for boto3 KafkaConnect module
 
 > [Index](..) > [KafkaConnect](.) > Paginators
@@ -5,12 +7,14 @@
 Auto-generated documentation for
 [KafkaConnect](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect)
 type annotations stubs module
-[mypy_boto3_kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
+[mypy-boto3-kafkaconnect](https://pypi.org/project/mypy-boto3-kafkaconnect/).
 
 - [Paginators for boto3 KafkaConnect module](#paginators-for-boto3-kafkaconnect-module)
   - [ListConnectorsPaginator](#listconnectorspaginator)
   - [ListCustomPluginsPaginator](#listcustompluginspaginator)
   - [ListWorkerConfigurationsPaginator](#listworkerconfigurationspaginator)
+
+<a id="listconnectorspaginator"></a>
 
 ## ListConnectorsPaginator
 
@@ -20,10 +24,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafkaconnect.paginator import ListConnectorsPaginator
 
 def get_list_connectors_paginator() -> ListConnectorsPaginator:
-    return boto3.client("kafkaconnect").get_paginator("list_connectors")
+    return Session().client("kafkaconnect").get_paginator("list_connectors")
 ```
 
 Boto3 documentation:
@@ -38,6 +44,8 @@ Arguments for `ListConnectorsPaginator.paginate` method:
 `ListConnectorsPaginator.paginate` returns
 `_PageIterator`\[[ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef)\].
 
+<a id="listcustompluginspaginator"></a>
+
 ## ListCustomPluginsPaginator
 
 Type annotations for
@@ -46,10 +54,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafkaconnect.paginator import ListCustomPluginsPaginator
 
 def get_list_custom_plugins_paginator() -> ListCustomPluginsPaginator:
-    return boto3.client("kafkaconnect").get_paginator("list_custom_plugins")
+    return Session().client("kafkaconnect").get_paginator("list_custom_plugins")
 ```
 
 Boto3 documentation:
@@ -63,6 +73,8 @@ Arguments for `ListCustomPluginsPaginator.paginate` method:
 `ListCustomPluginsPaginator.paginate` returns
 `_PageIterator`\[[ListCustomPluginsResponseTypeDef](./type_defs.md#listcustompluginsresponsetypedef)\].
 
+<a id="listworkerconfigurationspaginator"></a>
+
 ## ListWorkerConfigurationsPaginator
 
 Type annotations for
@@ -71,10 +83,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_kafkaconnect.paginator import ListWorkerConfigurationsPaginator
 
 def get_list_worker_configurations_paginator() -> ListWorkerConfigurationsPaginator:
-    return boto3.client("kafkaconnect").get_paginator("list_worker_configurations")
+    return Session().client("kafkaconnect").get_paginator("list_worker_configurations")
 ```
 
 Boto3 documentation:

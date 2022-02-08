@@ -1,3 +1,5 @@
+<a id="apigatewayclient-for-boto3-apigateway-module"></a>
+
 # APIGatewayClient for boto3 APIGateway module
 
 > [Index](..) > [APIGateway](.) > APIGatewayClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [APIGateway](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway)
 type annotations stubs module
-[mypy_boto3_apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
+[mypy-boto3-apigateway](https://pypi.org/project/mypy-boto3-apigateway/).
 
 - [APIGatewayClient for boto3 APIGateway module](#apigatewayclient-for-boto3-apigateway-module)
   - [APIGatewayClient](#apigatewayclient)
@@ -136,6 +138,8 @@ type annotations stubs module
     - [update_vpc_link](#update_vpc_link)
     - [get_paginator](#get_paginator)
 
+<a id="apigatewayclient"></a>
+
 ## APIGatewayClient
 
 Type annotations for `boto3.client("apigateway")`
@@ -143,14 +147,17 @@ Type annotations for `boto3.client("apigateway")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_apigateway.client import APIGatewayClient
 
 def get_apigateway_client() -> APIGatewayClient:
-    return boto3.client("apigateway")
+    return Session().client("apigateway")
 ```
 
 Boto3 documentation:
 [APIGateway.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -175,7 +182,11 @@ Exceptions:
 - `Exceptions.TooManyRequestsException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -187,6 +198,8 @@ Boto3 documentation:
 [APIGateway.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -202,6 +215,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_api_key"></a>
 
 ### create_api_key
 
@@ -228,6 +243,8 @@ Keyword-only arguments:
 
 Returns
 [ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
+
+<a id="create_authorizer"></a>
 
 ### create_authorizer
 
@@ -257,6 +274,8 @@ Keyword-only arguments:
 Returns
 [AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
 
+<a id="create_base_path_mapping"></a>
+
 ### create_base_path_mapping
 
 Creates a new BasePathMapping resource.
@@ -279,6 +298,8 @@ Keyword-only arguments:
 
 Returns
 [BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
+
+<a id="create_deployment"></a>
 
 ### create_deployment
 
@@ -310,6 +331,8 @@ Keyword-only arguments:
 Returns
 [DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
 
+<a id="create_documentation_part"></a>
+
 ### create_documentation_part
 
 See also:
@@ -335,6 +358,8 @@ Keyword-only arguments:
 Returns
 [DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
 
+<a id="create_documentation_version"></a>
+
 ### create_documentation_version
 
 See also:
@@ -358,6 +383,8 @@ Keyword-only arguments:
 
 Returns
 [DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
+
+<a id="create_domain_name"></a>
 
 ### create_domain_name
 
@@ -392,6 +419,8 @@ Keyword-only arguments:
 Returns
 [DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
 
+<a id="create_model"></a>
+
 ### create_model
 
 Adds a new Model resource to an existing RestApi resource.
@@ -414,6 +443,8 @@ Keyword-only arguments:
 
 Returns
 [ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
+
+<a id="create_request_validator"></a>
 
 ### create_request_validator
 
@@ -438,6 +469,8 @@ Keyword-only arguments:
 Returns
 [RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
 
+<a id="create_resource"></a>
+
 ### create_resource
 
 Creates a Resource resource.
@@ -458,6 +491,8 @@ Keyword-only arguments:
 
 Returns
 [ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
+
+<a id="create_rest_api"></a>
 
 ### create_rest_api
 
@@ -488,6 +523,8 @@ Keyword-only arguments:
 
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+
+<a id="create_stage"></a>
 
 ### create_stage
 
@@ -521,6 +558,8 @@ Keyword-only arguments:
 Returns
 [StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
 
+<a id="create_usage_plan"></a>
+
 ### create_usage_plan
 
 Creates a usage plan with the throttle and quota limits, as well as the
@@ -546,6 +585,8 @@ Keyword-only arguments:
 Returns
 [UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
 
+<a id="create_usage_plan_key"></a>
+
 ### create_usage_plan_key
 
 Creates a usage plan key for adding an existing API key to a usage plan.
@@ -566,6 +607,8 @@ Keyword-only arguments:
 
 Returns
 [UsagePlanKeyResponseMetadataTypeDef](./type_defs.md#usageplankeyresponsemetadatatypedef).
+
+<a id="create_vpc_link"></a>
 
 ### create_vpc_link
 
@@ -591,6 +634,8 @@ Keyword-only arguments:
 Returns
 [VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
 
+<a id="delete_api_key"></a>
+
 ### delete_api_key
 
 Deletes the ApiKey resource.
@@ -606,6 +651,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `apiKey`: `str` *(required)*
+
+<a id="delete_authorizer"></a>
 
 ### delete_authorizer
 
@@ -623,6 +670,8 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `authorizerId`: `str` *(required)*
+
+<a id="delete_base_path_mapping"></a>
 
 ### delete_base_path_mapping
 
@@ -642,6 +691,8 @@ Keyword-only arguments:
 - `domainName`: `str` *(required)*
 - `basePath`: `str` *(required)*
 
+<a id="delete_client_certificate"></a>
+
 ### delete_client_certificate
 
 Deletes the ClientCertificate resource.
@@ -659,6 +710,8 @@ Keyword-only arguments:
 
 - `clientCertificateId`: `str` *(required)*
 
+<a id="delete_deployment"></a>
+
 ### delete_deployment
 
 Deletes a Deployment resource.
@@ -675,6 +728,8 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `deploymentId`: `str` *(required)*
+
+<a id="delete_documentation_part"></a>
 
 ### delete_documentation_part
 
@@ -695,6 +750,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `documentationPartId`: `str` *(required)*
 
+<a id="delete_documentation_version"></a>
+
 ### delete_documentation_version
 
 See also:
@@ -714,6 +771,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `documentationVersion`: `str` *(required)*
 
+<a id="delete_domain_name"></a>
+
 ### delete_domain_name
 
 Deletes the DomainName resource.
@@ -729,6 +788,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `domainName`: `str` *(required)*
+
+<a id="delete_gateway_response"></a>
 
 ### delete_gateway_response
 
@@ -750,6 +811,8 @@ Keyword-only arguments:
 - `responseType`:
   [GatewayResponseTypeType](./literals.md#gatewayresponsetypetype) *(required)*
 
+<a id="delete_integration"></a>
+
 ### delete_integration
 
 Represents a delete integration.
@@ -767,6 +830,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
 - `httpMethod`: `str` *(required)*
+
+<a id="delete_integration_response"></a>
 
 ### delete_integration_response
 
@@ -788,6 +853,8 @@ Keyword-only arguments:
 - `httpMethod`: `str` *(required)*
 - `statusCode`: `str` *(required)*
 
+<a id="delete_method"></a>
+
 ### delete_method
 
 Deletes an existing Method resource.
@@ -805,6 +872,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
 - `httpMethod`: `str` *(required)*
+
+<a id="delete_method_response"></a>
 
 ### delete_method_response
 
@@ -826,6 +895,8 @@ Keyword-only arguments:
 - `httpMethod`: `str` *(required)*
 - `statusCode`: `str` *(required)*
 
+<a id="delete_model"></a>
+
 ### delete_model
 
 Deletes a model.
@@ -842,6 +913,8 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `modelName`: `str` *(required)*
+
+<a id="delete_request_validator"></a>
 
 ### delete_request_validator
 
@@ -861,6 +934,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `requestValidatorId`: `str` *(required)*
 
+<a id="delete_resource"></a>
+
 ### delete_resource
 
 Deletes a Resource resource.
@@ -878,6 +953,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `resourceId`: `str` *(required)*
 
+<a id="delete_rest_api"></a>
+
 ### delete_rest_api
 
 Deletes the specified API.
@@ -893,6 +970,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
+
+<a id="delete_stage"></a>
 
 ### delete_stage
 
@@ -911,6 +990,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
 
+<a id="delete_usage_plan"></a>
+
 ### delete_usage_plan
 
 Deletes a usage plan of a given plan Id.
@@ -926,6 +1007,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `usagePlanId`: `str` *(required)*
+
+<a id="delete_usage_plan_key"></a>
 
 ### delete_usage_plan_key
 
@@ -945,6 +1028,8 @@ Keyword-only arguments:
 - `usagePlanId`: `str` *(required)*
 - `keyId`: `str` *(required)*
 
+<a id="delete_vpc_link"></a>
+
 ### delete_vpc_link
 
 Deletes an existing VpcLink of a specified identifier.
@@ -960,6 +1045,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `vpcLinkId`: `str` *(required)*
+
+<a id="flush_stage_authorizers_cache"></a>
 
 ### flush_stage_authorizers_cache
 
@@ -979,6 +1066,8 @@ Keyword-only arguments:
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
 
+<a id="flush_stage_cache"></a>
+
 ### flush_stage_cache
 
 Flushes a stage's cache.
@@ -995,6 +1084,8 @@ Keyword-only arguments:
 
 - `restApiId`: `str` *(required)*
 - `stageName`: `str` *(required)*
+
+<a id="generate_client_certificate"></a>
 
 ### generate_client_certificate
 
@@ -1017,6 +1108,8 @@ Keyword-only arguments:
 Returns
 [ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -1036,6 +1129,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_account"></a>
+
 ### get_account
 
 Gets information about the current Account resource.
@@ -1046,6 +1141,8 @@ Boto3 documentation:
 [APIGateway.Client.get_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigateway.html#APIGateway.Client.get_account)
 
 Returns [AccountTypeDef](./type_defs.md#accounttypedef).
+
+<a id="get_api_key"></a>
 
 ### get_api_key
 
@@ -1066,6 +1163,8 @@ Keyword-only arguments:
 
 Returns
 [ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
+
+<a id="get_api_keys"></a>
 
 ### get_api_keys
 
@@ -1089,6 +1188,8 @@ Keyword-only arguments:
 
 Returns [ApiKeysTypeDef](./type_defs.md#apikeystypedef).
 
+<a id="get_authorizer"></a>
+
 ### get_authorizer
 
 Describe an existing Authorizer resource.
@@ -1108,6 +1209,8 @@ Keyword-only arguments:
 
 Returns
 [AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
+
+<a id="get_authorizers"></a>
 
 ### get_authorizers
 
@@ -1129,6 +1232,8 @@ Keyword-only arguments:
 
 Returns [AuthorizersTypeDef](./type_defs.md#authorizerstypedef).
 
+<a id="get_base_path_mapping"></a>
+
 ### get_base_path_mapping
 
 Describe a BasePathMapping resource.
@@ -1148,6 +1253,8 @@ Keyword-only arguments:
 
 Returns
 [BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
+
+<a id="get_base_path_mappings"></a>
 
 ### get_base_path_mappings
 
@@ -1170,6 +1277,8 @@ Keyword-only arguments:
 
 Returns [BasePathMappingsTypeDef](./type_defs.md#basepathmappingstypedef).
 
+<a id="get_client_certificate"></a>
+
 ### get_client_certificate
 
 Gets information about the current ClientCertificate resource.
@@ -1190,6 +1299,8 @@ Keyword-only arguments:
 Returns
 [ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
 
+<a id="get_client_certificates"></a>
+
 ### get_client_certificates
 
 Gets a collection of ClientCertificate resources.
@@ -1209,6 +1320,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [ClientCertificatesTypeDef](./type_defs.md#clientcertificatestypedef).
+
+<a id="get_deployment"></a>
 
 ### get_deployment
 
@@ -1231,6 +1344,8 @@ Keyword-only arguments:
 Returns
 [DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
 
+<a id="get_deployments"></a>
+
 ### get_deployments
 
 Gets information about a Deployments collection.
@@ -1250,6 +1365,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [DeploymentsTypeDef](./type_defs.md#deploymentstypedef).
+
+<a id="get_documentation_part"></a>
 
 ### get_documentation_part
 
@@ -1272,6 +1389,8 @@ Keyword-only arguments:
 
 Returns
 [DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
+
+<a id="get_documentation_parts"></a>
 
 ### get_documentation_parts
 
@@ -1300,6 +1419,8 @@ Keyword-only arguments:
 
 Returns [DocumentationPartsTypeDef](./type_defs.md#documentationpartstypedef).
 
+<a id="get_documentation_version"></a>
+
 ### get_documentation_version
 
 See also:
@@ -1321,6 +1442,8 @@ Keyword-only arguments:
 
 Returns
 [DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
+
+<a id="get_documentation_versions"></a>
 
 ### get_documentation_versions
 
@@ -1345,6 +1468,8 @@ Keyword-only arguments:
 Returns
 [DocumentationVersionsTypeDef](./type_defs.md#documentationversionstypedef).
 
+<a id="get_domain_name"></a>
+
 ### get_domain_name
 
 Represents a domain name that is contained in a simpler, more intuitive URL
@@ -1365,6 +1490,8 @@ Keyword-only arguments:
 Returns
 [DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
 
+<a id="get_domain_names"></a>
+
 ### get_domain_names
 
 Represents a collection of DomainName resources.
@@ -1383,6 +1510,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [DomainNamesTypeDef](./type_defs.md#domainnamestypedef).
+
+<a id="get_export"></a>
 
 ### get_export
 
@@ -1406,6 +1535,8 @@ Keyword-only arguments:
 
 Returns [ExportResponseTypeDef](./type_defs.md#exportresponsetypedef).
 
+<a id="get_gateway_response"></a>
+
 ### get_gateway_response
 
 Gets a GatewayResponse of a specified response type on the given RestApi .
@@ -1427,6 +1558,8 @@ Keyword-only arguments:
 Returns
 [GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
 
+<a id="get_gateway_responses"></a>
+
 ### get_gateway_responses
 
 Gets the GatewayResponses collection on the given RestApi.
@@ -1446,6 +1579,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [GatewayResponsesTypeDef](./type_defs.md#gatewayresponsestypedef).
+
+<a id="get_integration"></a>
 
 ### get_integration
 
@@ -1467,6 +1602,8 @@ Keyword-only arguments:
 
 Returns
 [IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
+
+<a id="get_integration_response"></a>
 
 ### get_integration_response
 
@@ -1491,6 +1628,8 @@ Keyword-only arguments:
 Returns
 [IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
 
+<a id="get_method"></a>
+
 ### get_method
 
 Describe an existing Method resource.
@@ -1511,6 +1650,8 @@ Keyword-only arguments:
 
 Returns
 [MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
+
+<a id="get_method_response"></a>
 
 ### get_method_response
 
@@ -1534,6 +1675,8 @@ Keyword-only arguments:
 Returns
 [MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
 
+<a id="get_model"></a>
+
 ### get_model
 
 Describes an existing model defined for a RestApi resource.
@@ -1555,6 +1698,8 @@ Keyword-only arguments:
 Returns
 [ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
 
+<a id="get_model_template"></a>
+
 ### get_model_template
 
 Generates a sample mapping template that can be used to transform a payload
@@ -1574,6 +1719,8 @@ Keyword-only arguments:
 - `modelName`: `str` *(required)*
 
 Returns [TemplateTypeDef](./type_defs.md#templatetypedef).
+
+<a id="get_models"></a>
 
 ### get_models
 
@@ -1595,6 +1742,8 @@ Keyword-only arguments:
 
 Returns [ModelsTypeDef](./type_defs.md#modelstypedef).
 
+<a id="get_request_validator"></a>
+
 ### get_request_validator
 
 Gets a RequestValidator of a given RestApi .
@@ -1614,6 +1763,8 @@ Keyword-only arguments:
 
 Returns
 [RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
+
+<a id="get_request_validators"></a>
 
 ### get_request_validators
 
@@ -1636,6 +1787,8 @@ Keyword-only arguments:
 
 Returns [RequestValidatorsTypeDef](./type_defs.md#requestvalidatorstypedef).
 
+<a id="get_resource"></a>
+
 ### get_resource
 
 Lists information about a resource.
@@ -1656,6 +1809,8 @@ Keyword-only arguments:
 
 Returns
 [ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
+
+<a id="get_resources"></a>
 
 ### get_resources
 
@@ -1678,6 +1833,8 @@ Keyword-only arguments:
 
 Returns [ResourcesTypeDef](./type_defs.md#resourcestypedef).
 
+<a id="get_rest_api"></a>
+
 ### get_rest_api
 
 Lists the RestApi resource in the collection.
@@ -1697,6 +1854,8 @@ Keyword-only arguments:
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
 
+<a id="get_rest_apis"></a>
+
 ### get_rest_apis
 
 Lists the RestApis resources for your collection.
@@ -1715,6 +1874,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [RestApisTypeDef](./type_defs.md#restapistypedef).
+
+<a id="get_sdk"></a>
 
 ### get_sdk
 
@@ -1737,6 +1898,8 @@ Keyword-only arguments:
 
 Returns [SdkResponseTypeDef](./type_defs.md#sdkresponsetypedef).
 
+<a id="get_sdk_type"></a>
+
 ### get_sdk_type
 
 See also:
@@ -1756,6 +1919,8 @@ Keyword-only arguments:
 
 Returns
 [SdkTypeResponseMetadataTypeDef](./type_defs.md#sdktyperesponsemetadatatypedef).
+
+<a id="get_sdk_types"></a>
 
 ### get_sdk_types
 
@@ -1777,6 +1942,8 @@ Keyword-only arguments:
 
 Returns [SdkTypesTypeDef](./type_defs.md#sdktypestypedef).
 
+<a id="get_stage"></a>
+
 ### get_stage
 
 Gets information about a Stage resource.
@@ -1797,6 +1964,8 @@ Keyword-only arguments:
 Returns
 [StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
 
+<a id="get_stages"></a>
+
 ### get_stages
 
 Gets information about one or more Stage resources.
@@ -1815,6 +1984,8 @@ Keyword-only arguments:
 - `deploymentId`: `str`
 
 Returns [StagesTypeDef](./type_defs.md#stagestypedef).
+
+<a id="get_tags"></a>
 
 ### get_tags
 
@@ -1835,6 +2006,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [TagsTypeDef](./type_defs.md#tagstypedef).
+
+<a id="get_usage"></a>
 
 ### get_usage
 
@@ -1859,6 +2032,8 @@ Keyword-only arguments:
 
 Returns [UsageTypeDef](./type_defs.md#usagetypedef).
 
+<a id="get_usage_plan"></a>
+
 ### get_usage_plan
 
 Gets a usage plan of a given plan identifier.
@@ -1877,6 +2052,8 @@ Keyword-only arguments:
 
 Returns
 [UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
+
+<a id="get_usage_plan_key"></a>
 
 ### get_usage_plan_key
 
@@ -1897,6 +2074,8 @@ Keyword-only arguments:
 
 Returns
 [UsagePlanKeyResponseMetadataTypeDef](./type_defs.md#usageplankeyresponsemetadatatypedef).
+
+<a id="get_usage_plan_keys"></a>
 
 ### get_usage_plan_keys
 
@@ -1920,6 +2099,8 @@ Keyword-only arguments:
 
 Returns [UsagePlanKeysTypeDef](./type_defs.md#usageplankeystypedef).
 
+<a id="get_usage_plans"></a>
+
 ### get_usage_plans
 
 Gets all the usage plans of the caller's account.
@@ -1940,6 +2121,8 @@ Keyword-only arguments:
 
 Returns [UsagePlansTypeDef](./type_defs.md#usageplanstypedef).
 
+<a id="get_vpc_link"></a>
+
 ### get_vpc_link
 
 Gets a specified VPC link under the caller's account in a region.
@@ -1959,6 +2142,8 @@ Keyword-only arguments:
 Returns
 [VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
 
+<a id="get_vpc_links"></a>
+
 ### get_vpc_links
 
 Gets the VpcLinks collection under the caller's account in a selected region.
@@ -1977,6 +2162,8 @@ Keyword-only arguments:
 - `limit`: `int`
 
 Returns [VpcLinksTypeDef](./type_defs.md#vpclinkstypedef).
+
+<a id="import_api_keys"></a>
 
 ### import_api_keys
 
@@ -1998,6 +2185,8 @@ Keyword-only arguments:
 - `failOnWarnings`: `bool`
 
 Returns [ApiKeyIdsTypeDef](./type_defs.md#apikeyidstypedef).
+
+<a id="import_documentation_parts"></a>
 
 ### import_documentation_parts
 
@@ -2023,6 +2212,8 @@ Keyword-only arguments:
 Returns
 [DocumentationPartIdsTypeDef](./type_defs.md#documentationpartidstypedef).
 
+<a id="import_rest_api"></a>
+
 ### import_rest_api
 
 A feature of the API Gateway control service for creating a new API from an
@@ -2044,6 +2235,8 @@ Keyword-only arguments:
 
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+
+<a id="put_gateway_response"></a>
 
 ### put_gateway_response
 
@@ -2069,6 +2262,8 @@ Keyword-only arguments:
 
 Returns
 [GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
+
+<a id="put_integration"></a>
 
 ### put_integration
 
@@ -2106,6 +2301,8 @@ Keyword-only arguments:
 Returns
 [IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
 
+<a id="put_integration_response"></a>
+
 ### put_integration_response
 
 Represents a put integration.
@@ -2133,6 +2330,8 @@ Keyword-only arguments:
 
 Returns
 [IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
+
+<a id="put_method"></a>
 
 ### put_method
 
@@ -2163,6 +2362,8 @@ Keyword-only arguments:
 Returns
 [MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
 
+<a id="put_method_response"></a>
+
 ### put_method_response
 
 Adds a MethodResponse to an existing Method resource.
@@ -2186,6 +2387,8 @@ Keyword-only arguments:
 
 Returns
 [MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
+
+<a id="put_rest_api"></a>
 
 ### put_rest_api
 
@@ -2211,6 +2414,8 @@ Keyword-only arguments:
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Adds or updates a tag on a given resource.
@@ -2227,6 +2432,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
+
+<a id="test_invoke_authorizer"></a>
 
 ### test_invoke_authorizer
 
@@ -2256,6 +2463,8 @@ Keyword-only arguments:
 Returns
 [TestInvokeAuthorizerResponseTypeDef](./type_defs.md#testinvokeauthorizerresponsetypedef).
 
+<a id="test_invoke_method"></a>
+
 ### test_invoke_method
 
 Simulate the execution of a Method in your RestApi with headers, parameters,
@@ -2284,6 +2493,8 @@ Keyword-only arguments:
 Returns
 [TestInvokeMethodResponseTypeDef](./type_defs.md#testinvokemethodresponsetypedef).
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from a given resource.
@@ -2300,6 +2511,8 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update_account"></a>
 
 ### update_account
 
@@ -2319,6 +2532,8 @@ Keyword-only arguments:
   `Sequence`\[[PatchOperationTypeDef](./type_defs.md#patchoperationtypedef)\]
 
 Returns [AccountTypeDef](./type_defs.md#accounttypedef).
+
+<a id="update_api_key"></a>
 
 ### update_api_key
 
@@ -2341,6 +2556,8 @@ Keyword-only arguments:
 Returns
 [ApiKeyResponseMetadataTypeDef](./type_defs.md#apikeyresponsemetadatatypedef).
 
+<a id="update_authorizer"></a>
+
 ### update_authorizer
 
 Updates an existing Authorizer resource.
@@ -2362,6 +2579,8 @@ Keyword-only arguments:
 
 Returns
 [AuthorizerResponseMetadataTypeDef](./type_defs.md#authorizerresponsemetadatatypedef).
+
+<a id="update_base_path_mapping"></a>
 
 ### update_base_path_mapping
 
@@ -2386,6 +2605,8 @@ Keyword-only arguments:
 Returns
 [BasePathMappingResponseMetadataTypeDef](./type_defs.md#basepathmappingresponsemetadatatypedef).
 
+<a id="update_client_certificate"></a>
+
 ### update_client_certificate
 
 Changes information about an ClientCertificate resource.
@@ -2408,6 +2629,8 @@ Keyword-only arguments:
 Returns
 [ClientCertificateResponseMetadataTypeDef](./type_defs.md#clientcertificateresponsemetadatatypedef).
 
+<a id="update_deployment"></a>
+
 ### update_deployment
 
 Changes information about a Deployment resource.
@@ -2429,6 +2652,8 @@ Keyword-only arguments:
 
 Returns
 [DeploymentResponseMetadataTypeDef](./type_defs.md#deploymentresponsemetadatatypedef).
+
+<a id="update_documentation_part"></a>
 
 ### update_documentation_part
 
@@ -2454,6 +2679,8 @@ Keyword-only arguments:
 Returns
 [DocumentationPartResponseMetadataTypeDef](./type_defs.md#documentationpartresponsemetadatatypedef).
 
+<a id="update_documentation_version"></a>
+
 ### update_documentation_version
 
 See also:
@@ -2478,6 +2705,8 @@ Keyword-only arguments:
 Returns
 [DocumentationVersionResponseMetadataTypeDef](./type_defs.md#documentationversionresponsemetadatatypedef).
 
+<a id="update_domain_name"></a>
+
 ### update_domain_name
 
 Changes information about the DomainName resource.
@@ -2498,6 +2727,8 @@ Keyword-only arguments:
 
 Returns
 [DomainNameResponseMetadataTypeDef](./type_defs.md#domainnameresponsemetadatatypedef).
+
+<a id="update_gateway_response"></a>
 
 ### update_gateway_response
 
@@ -2523,6 +2754,8 @@ Keyword-only arguments:
 Returns
 [GatewayResponseResponseMetadataTypeDef](./type_defs.md#gatewayresponseresponsemetadatatypedef).
 
+<a id="update_integration"></a>
+
 ### update_integration
 
 Represents an update integration.
@@ -2545,6 +2778,8 @@ Keyword-only arguments:
 
 Returns
 [IntegrationResponseMetadataTypeDef](./type_defs.md#integrationresponsemetadatatypedef).
+
+<a id="update_integration_response"></a>
 
 ### update_integration_response
 
@@ -2571,6 +2806,8 @@ Keyword-only arguments:
 Returns
 [IntegrationResponseResponseMetadataTypeDef](./type_defs.md#integrationresponseresponsemetadatatypedef).
 
+<a id="update_method"></a>
+
 ### update_method
 
 Updates an existing Method resource.
@@ -2593,6 +2830,8 @@ Keyword-only arguments:
 
 Returns
 [MethodResponseMetadataTypeDef](./type_defs.md#methodresponsemetadatatypedef).
+
+<a id="update_method_response"></a>
 
 ### update_method_response
 
@@ -2619,6 +2858,8 @@ Keyword-only arguments:
 Returns
 [MethodResponseResponseMetadataTypeDef](./type_defs.md#methodresponseresponsemetadatatypedef).
 
+<a id="update_model"></a>
+
 ### update_model
 
 Changes information about a model.
@@ -2640,6 +2881,8 @@ Keyword-only arguments:
 
 Returns
 [ModelResponseMetadataTypeDef](./type_defs.md#modelresponsemetadatatypedef).
+
+<a id="update_request_validator"></a>
 
 ### update_request_validator
 
@@ -2664,6 +2907,8 @@ Keyword-only arguments:
 Returns
 [RequestValidatorResponseMetadataTypeDef](./type_defs.md#requestvalidatorresponsemetadatatypedef).
 
+<a id="update_resource"></a>
+
 ### update_resource
 
 Changes information about a Resource resource.
@@ -2686,6 +2931,8 @@ Keyword-only arguments:
 Returns
 [ResourceResponseMetadataTypeDef](./type_defs.md#resourceresponsemetadatatypedef).
 
+<a id="update_rest_api"></a>
+
 ### update_rest_api
 
 Changes information about the specified API.
@@ -2706,6 +2953,8 @@ Keyword-only arguments:
 
 Returns
 [RestApiResponseMetadataTypeDef](./type_defs.md#restapiresponsemetadatatypedef).
+
+<a id="update_stage"></a>
 
 ### update_stage
 
@@ -2729,6 +2978,8 @@ Keyword-only arguments:
 Returns
 [StageResponseMetadataTypeDef](./type_defs.md#stageresponsemetadatatypedef).
 
+<a id="update_usage"></a>
+
 ### update_usage
 
 Grants a temporary extension to the remaining quota of a usage plan associated
@@ -2751,6 +3002,8 @@ Keyword-only arguments:
 
 Returns [UsageTypeDef](./type_defs.md#usagetypedef).
 
+<a id="update_usage_plan"></a>
+
 ### update_usage_plan
 
 Updates a usage plan of a given plan Id.
@@ -2772,6 +3025,8 @@ Keyword-only arguments:
 Returns
 [UsagePlanResponseMetadataTypeDef](./type_defs.md#usageplanresponsemetadatatypedef).
 
+<a id="update_vpc_link"></a>
+
 ### update_vpc_link
 
 Updates an existing VpcLink of a specified identifier.
@@ -2792,6 +3047,8 @@ Keyword-only arguments:
 
 Returns
 [VpcLinkResponseMetadataTypeDef](./type_defs.md#vpclinkresponsemetadatatypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

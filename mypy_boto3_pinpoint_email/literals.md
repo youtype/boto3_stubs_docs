@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-pinpointemail-module"></a>
+
 # Literals for boto3 PinpointEmail module
 
 > [Index](..) > [PinpointEmail](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PinpointEmail](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pinpoint-email.html#PinpointEmail)
 type annotations stubs module
-[mypy_boto3_pinpoint_email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
+[mypy-boto3-pinpoint-email](https://pypi.org/project/mypy-boto3-pinpoint-email/).
 
 - [Literals for boto3 PinpointEmail module](#literals-for-boto3-pinpointemail-module)
   - [BehaviorOnMxFailureType](#behavioronmxfailuretype)
@@ -26,6 +28,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="behavioronmxfailuretype"></a>
+
 ## BehaviorOnMxFailureType
 
 ```python
@@ -36,6 +40,8 @@ Values:
 
 - `REJECT_MESSAGE`
 - `USE_DEFAULT_VALUE`
+
+<a id="deliverabilitydashboardaccountstatustype"></a>
 
 ## DeliverabilityDashboardAccountStatusType
 
@@ -49,6 +55,8 @@ Values:
 - `DISABLED`
 - `PENDING_EXPIRATION`
 
+<a id="deliverabilityteststatustype"></a>
+
 ## DeliverabilityTestStatusType
 
 ```python
@@ -59,6 +67,8 @@ Values:
 
 - `COMPLETED`
 - `IN_PROGRESS`
+
+<a id="dimensionvaluesourcetype"></a>
 
 ## DimensionValueSourceType
 
@@ -71,6 +81,8 @@ Values:
 - `EMAIL_HEADER`
 - `LINK_TAG`
 - `MESSAGE_TAG`
+
+<a id="dkimstatustype"></a>
 
 ## DkimStatusType
 
@@ -85,6 +97,8 @@ Values:
 - `PENDING`
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
+
+<a id="eventtypetype"></a>
 
 ## EventTypeType
 
@@ -103,6 +117,8 @@ Values:
 - `RENDERING_FAILURE`
 - `SEND`
 
+<a id="getdedicatedipspaginatorname"></a>
+
 ## GetDedicatedIpsPaginatorName
 
 ```python
@@ -112,6 +128,8 @@ from mypy_boto3_pinpoint_email.literals import GetDedicatedIpsPaginatorName
 Values:
 
 - `get_dedicated_ips`
+
+<a id="identitytypetype"></a>
 
 ## IdentityTypeType
 
@@ -125,6 +143,8 @@ Values:
 - `EMAIL_ADDRESS`
 - `MANAGED_DOMAIN`
 
+<a id="listconfigurationsetspaginatorname"></a>
+
 ## ListConfigurationSetsPaginatorName
 
 ```python
@@ -134,6 +154,8 @@ from mypy_boto3_pinpoint_email.literals import ListConfigurationSetsPaginatorNam
 Values:
 
 - `list_configuration_sets`
+
+<a id="listdedicatedippoolspaginatorname"></a>
 
 ## ListDedicatedIpPoolsPaginatorName
 
@@ -145,6 +167,8 @@ Values:
 
 - `list_dedicated_ip_pools`
 
+<a id="listdeliverabilitytestreportspaginatorname"></a>
+
 ## ListDeliverabilityTestReportsPaginatorName
 
 ```python
@@ -155,6 +179,8 @@ Values:
 
 - `list_deliverability_test_reports`
 
+<a id="listemailidentitiespaginatorname"></a>
+
 ## ListEmailIdentitiesPaginatorName
 
 ```python
@@ -164,6 +190,8 @@ from mypy_boto3_pinpoint_email.literals import ListEmailIdentitiesPaginatorName
 Values:
 
 - `list_email_identities`
+
+<a id="mailfromdomainstatustype"></a>
 
 ## MailFromDomainStatusType
 
@@ -178,6 +206,8 @@ Values:
 - `SUCCESS`
 - `TEMPORARY_FAILURE`
 
+<a id="tlspolicytype"></a>
+
 ## TlsPolicyType
 
 ```python
@@ -189,6 +219,8 @@ Values:
 - `OPTIONAL`
 - `REQUIRE`
 
+<a id="warmupstatustype"></a>
+
 ## WarmupStatusType
 
 ```python
@@ -199,6 +231,8 @@ Values:
 
 - `DONE`
 - `IN_PROGRESS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -507,6 +541,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

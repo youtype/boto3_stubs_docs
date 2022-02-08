@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-robomaker-module"></a>
+
 # Typed dictionaries for boto3 RoboMaker module
 
 > [Index](..) > [RoboMaker](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RoboMaker](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/robomaker.html#RoboMaker)
 type annotations stubs module
-[mypy_boto3_robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
+[mypy-boto3-robomaker](https://pypi.org/project/mypy-boto3-robomaker/).
 
 - [Typed dictionaries for boto3 RoboMaker module](#typed-dictionaries-for-boto3-robomaker-module)
   - [BatchDeleteWorldsRequestRequestTypeDef](#batchdeleteworldsrequestrequesttypedef)
@@ -163,6 +165,8 @@ type annotations stubs module
   - [WorldGenerationJobSummaryTypeDef](#worldgenerationjobsummarytypedef)
   - [WorldSummaryTypeDef](#worldsummarytypedef)
 
+<a id="batchdeleteworldsrequestrequesttypedef"></a>
+
 ## BatchDeleteWorldsRequestRequestTypeDef
 
 ```python
@@ -172,6 +176,8 @@ from mypy_boto3_robomaker.type_defs import BatchDeleteWorldsRequestRequestTypeDe
 Required fields:
 
 - `worlds`: `Sequence`\[`str`\]
+
+<a id="batchdeleteworldsresponsetypedef"></a>
 
 ## BatchDeleteWorldsResponseTypeDef
 
@@ -185,6 +191,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchdescribesimulationjobrequestrequesttypedef"></a>
+
 ## BatchDescribeSimulationJobRequestRequestTypeDef
 
 ```python
@@ -194,6 +202,8 @@ from mypy_boto3_robomaker.type_defs import BatchDescribeSimulationJobRequestRequ
 Required fields:
 
 - `jobs`: `Sequence`\[`str`\]
+
+<a id="batchdescribesimulationjobresponsetypedef"></a>
 
 ## BatchDescribeSimulationJobResponseTypeDef
 
@@ -208,6 +218,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="batchpolicytypedef"></a>
+
 ## BatchPolicyTypeDef
 
 ```python
@@ -219,6 +231,8 @@ Optional fields:
 - `timeoutInSeconds`: `int`
 - `maxConcurrency`: `int`
 
+<a id="canceldeploymentjobrequestrequesttypedef"></a>
+
 ## CancelDeploymentJobRequestRequestTypeDef
 
 ```python
@@ -228,6 +242,8 @@ from mypy_boto3_robomaker.type_defs import CancelDeploymentJobRequestRequestType
 Required fields:
 
 - `job`: `str`
+
+<a id="cancelsimulationjobbatchrequestrequesttypedef"></a>
 
 ## CancelSimulationJobBatchRequestRequestTypeDef
 
@@ -239,6 +255,8 @@ Required fields:
 
 - `batch`: `str`
 
+<a id="cancelsimulationjobrequestrequesttypedef"></a>
+
 ## CancelSimulationJobRequestRequestTypeDef
 
 ```python
@@ -248,6 +266,8 @@ from mypy_boto3_robomaker.type_defs import CancelSimulationJobRequestRequestType
 Required fields:
 
 - `job`: `str`
+
+<a id="cancelworldexportjobrequestrequesttypedef"></a>
 
 ## CancelWorldExportJobRequestRequestTypeDef
 
@@ -259,6 +279,8 @@ Required fields:
 
 - `job`: `str`
 
+<a id="cancelworldgenerationjobrequestrequesttypedef"></a>
+
 ## CancelWorldGenerationJobRequestRequestTypeDef
 
 ```python
@@ -268,6 +290,8 @@ from mypy_boto3_robomaker.type_defs import CancelWorldGenerationJobRequestReques
 Required fields:
 
 - `job`: `str`
+
+<a id="computeresponsetypedef"></a>
 
 ## ComputeResponseTypeDef
 
@@ -281,6 +305,8 @@ Optional fields:
 - `computeType`: [ComputeTypeType](./literals.md#computetypetype)
 - `gpuUnitLimit`: `int`
 
+<a id="computetypedef"></a>
+
 ## ComputeTypeDef
 
 ```python
@@ -292,6 +318,8 @@ Optional fields:
 - `simulationUnitLimit`: `int`
 - `computeType`: [ComputeTypeType](./literals.md#computetypetype)
 - `gpuUnitLimit`: `int`
+
+<a id="createdeploymentjobrequestrequesttypedef"></a>
 
 ## CreateDeploymentJobRequestRequestTypeDef
 
@@ -311,6 +339,8 @@ Optional fields:
 - `deploymentConfig`:
   [DeploymentConfigTypeDef](./type_defs.md#deploymentconfigtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createdeploymentjobresponsetypedef"></a>
 
 ## CreateDeploymentJobResponseTypeDef
 
@@ -335,6 +365,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfleetrequestrequesttypedef"></a>
+
 ## CreateFleetRequestRequestTypeDef
 
 ```python
@@ -348,6 +380,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createfleetresponsetypedef"></a>
 
 ## CreateFleetResponseTypeDef
 
@@ -363,6 +397,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrobotapplicationrequestrequesttypedef"></a>
 
 ## CreateRobotApplicationRequestRequestTypeDef
 
@@ -382,6 +418,8 @@ Optional fields:
   `Sequence`\[[SourceConfigTypeDef](./type_defs.md#sourceconfigtypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+
+<a id="createrobotapplicationresponsetypedef"></a>
 
 ## CreateRobotApplicationResponseTypeDef
 
@@ -404,6 +442,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrobotapplicationversionrequestrequesttypedef"></a>
+
 ## CreateRobotApplicationVersionRequestRequestTypeDef
 
 ```python
@@ -419,6 +459,8 @@ Optional fields:
 - `currentRevisionId`: `str`
 - `s3Etags`: `Sequence`\[`str`\]
 - `imageDigest`: `str`
+
+<a id="createrobotapplicationversionresponsetypedef"></a>
 
 ## CreateRobotApplicationVersionResponseTypeDef
 
@@ -440,6 +482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrobotrequestrequesttypedef"></a>
+
 ## CreateRobotRequestRequestTypeDef
 
 ```python
@@ -455,6 +499,8 @@ Required fields:
 Optional fields:
 
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createrobotresponsetypedef"></a>
 
 ## CreateRobotResponseTypeDef
 
@@ -472,6 +518,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsimulationapplicationrequestrequesttypedef"></a>
 
 ## CreateSimulationApplicationRequestRequestTypeDef
 
@@ -495,6 +543,8 @@ Optional fields:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+
+<a id="createsimulationapplicationresponsetypedef"></a>
 
 ## CreateSimulationApplicationResponseTypeDef
 
@@ -521,6 +571,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsimulationapplicationversionrequestrequesttypedef"></a>
+
 ## CreateSimulationApplicationVersionRequestRequestTypeDef
 
 ```python
@@ -536,6 +588,8 @@ Optional fields:
 - `currentRevisionId`: `str`
 - `s3Etags`: `Sequence`\[`str`\]
 - `imageDigest`: `str`
+
+<a id="createsimulationapplicationversionresponsetypedef"></a>
 
 ## CreateSimulationApplicationVersionResponseTypeDef
 
@@ -560,6 +614,8 @@ Required fields:
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsimulationjobrequestrequesttypedef"></a>
 
 ## CreateSimulationJobRequestRequestTypeDef
 
@@ -588,6 +644,8 @@ Optional fields:
 - `tags`: `Mapping`\[`str`, `str`\]
 - `vpcConfig`: [VPCConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
+
+<a id="createsimulationjobresponsetypedef"></a>
 
 ## CreateSimulationJobResponseTypeDef
 
@@ -624,6 +682,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createworldexportjobrequestrequesttypedef"></a>
+
 ## CreateWorldExportJobRequestRequestTypeDef
 
 ```python
@@ -641,6 +701,8 @@ Optional fields:
 
 - `clientRequestToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createworldexportjobresponsetypedef"></a>
 
 ## CreateWorldExportJobResponseTypeDef
 
@@ -663,6 +725,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createworldgenerationjobrequestrequesttypedef"></a>
+
 ## CreateWorldGenerationJobRequestRequestTypeDef
 
 ```python
@@ -679,6 +743,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 - `worldTags`: `Mapping`\[`str`, `str`\]
+
+<a id="createworldgenerationjobresponsetypedef"></a>
 
 ## CreateWorldGenerationJobResponseTypeDef
 
@@ -702,6 +768,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createworldtemplaterequestrequesttypedef"></a>
+
 ## CreateWorldTemplateRequestRequestTypeDef
 
 ```python
@@ -716,6 +784,8 @@ Optional fields:
 - `templateLocation`:
   [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="createworldtemplateresponsetypedef"></a>
 
 ## CreateWorldTemplateResponseTypeDef
 
@@ -732,6 +802,8 @@ Required fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datasourceconfigtypedef"></a>
 
 ## DataSourceConfigTypeDef
 
@@ -750,6 +822,8 @@ Optional fields:
 - `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
 - `destination`: `str`
 
+<a id="datasourcetypedef"></a>
+
 ## DataSourceTypeDef
 
 ```python
@@ -764,6 +838,8 @@ Optional fields:
 - `type`: [DataSourceTypeType](./literals.md#datasourcetypetype)
 - `destination`: `str`
 
+<a id="deletefleetrequestrequesttypedef"></a>
+
 ## DeleteFleetRequestRequestTypeDef
 
 ```python
@@ -773,6 +849,8 @@ from mypy_boto3_robomaker.type_defs import DeleteFleetRequestRequestTypeDef
 Required fields:
 
 - `fleet`: `str`
+
+<a id="deleterobotapplicationrequestrequesttypedef"></a>
 
 ## DeleteRobotApplicationRequestRequestTypeDef
 
@@ -788,6 +866,8 @@ Optional fields:
 
 - `applicationVersion`: `str`
 
+<a id="deleterobotrequestrequesttypedef"></a>
+
 ## DeleteRobotRequestRequestTypeDef
 
 ```python
@@ -797,6 +877,8 @@ from mypy_boto3_robomaker.type_defs import DeleteRobotRequestRequestTypeDef
 Required fields:
 
 - `robot`: `str`
+
+<a id="deletesimulationapplicationrequestrequesttypedef"></a>
 
 ## DeleteSimulationApplicationRequestRequestTypeDef
 
@@ -812,6 +894,8 @@ Optional fields:
 
 - `applicationVersion`: `str`
 
+<a id="deleteworldtemplaterequestrequesttypedef"></a>
+
 ## DeleteWorldTemplateRequestRequestTypeDef
 
 ```python
@@ -821,6 +905,8 @@ from mypy_boto3_robomaker.type_defs import DeleteWorldTemplateRequestRequestType
 Required fields:
 
 - `template`: `str`
+
+<a id="deploymentapplicationconfigtypedef"></a>
 
 ## DeploymentApplicationConfigTypeDef
 
@@ -835,6 +921,8 @@ Required fields:
 - `launchConfig`:
   [DeploymentLaunchConfigTypeDef](./type_defs.md#deploymentlaunchconfigtypedef)
 
+<a id="deploymentconfigtypedef"></a>
+
 ## DeploymentConfigTypeDef
 
 ```python
@@ -847,6 +935,8 @@ Optional fields:
 - `failureThresholdPercentage`: `int`
 - `robotDeploymentTimeoutInSeconds`: `int`
 - `downloadConditionFile`: [S3ObjectTypeDef](./type_defs.md#s3objecttypedef)
+
+<a id="deploymentjobtypedef"></a>
 
 ## DeploymentJobTypeDef
 
@@ -868,6 +958,8 @@ Optional fields:
   [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 - `createdAt`: `datetime`
 
+<a id="deploymentlaunchconfigtypedef"></a>
+
 ## DeploymentLaunchConfigTypeDef
 
 ```python
@@ -885,6 +977,8 @@ Optional fields:
 - `postLaunchFile`: `str`
 - `environmentVariables`: `Mapping`\[`str`, `str`\]
 
+<a id="deregisterrobotrequestrequesttypedef"></a>
+
 ## DeregisterRobotRequestRequestTypeDef
 
 ```python
@@ -895,6 +989,8 @@ Required fields:
 
 - `fleet`: `str`
 - `robot`: `str`
+
+<a id="deregisterrobotresponsetypedef"></a>
 
 ## DeregisterRobotResponseTypeDef
 
@@ -909,6 +1005,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedeploymentjobrequestrequesttypedef"></a>
+
 ## DescribeDeploymentJobRequestRequestTypeDef
 
 ```python
@@ -918,6 +1016,8 @@ from mypy_boto3_robomaker.type_defs import DescribeDeploymentJobRequestRequestTy
 Required fields:
 
 - `job`: `str`
+
+<a id="describedeploymentjobresponsetypedef"></a>
 
 ## DescribeDeploymentJobResponseTypeDef
 
@@ -944,6 +1044,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefleetrequestrequesttypedef"></a>
+
 ## DescribeFleetRequestRequestTypeDef
 
 ```python
@@ -953,6 +1055,8 @@ from mypy_boto3_robomaker.type_defs import DescribeFleetRequestRequestTypeDef
 Required fields:
 
 - `fleet`: `str`
+
+<a id="describefleetresponsetypedef"></a>
 
 ## DescribeFleetResponseTypeDef
 
@@ -974,6 +1078,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerobotapplicationrequestrequesttypedef"></a>
+
 ## DescribeRobotApplicationRequestRequestTypeDef
 
 ```python
@@ -987,6 +1093,8 @@ Required fields:
 Optional fields:
 
 - `applicationVersion`: `str`
+
+<a id="describerobotapplicationresponsetypedef"></a>
 
 ## DescribeRobotApplicationResponseTypeDef
 
@@ -1010,6 +1118,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerobotrequestrequesttypedef"></a>
+
 ## DescribeRobotRequestRequestTypeDef
 
 ```python
@@ -1019,6 +1129,8 @@ from mypy_boto3_robomaker.type_defs import DescribeRobotRequestRequestTypeDef
 Required fields:
 
 - `robot`: `str`
+
+<a id="describerobotresponsetypedef"></a>
 
 ## DescribeRobotResponseTypeDef
 
@@ -1041,6 +1153,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesimulationapplicationrequestrequesttypedef"></a>
+
 ## DescribeSimulationApplicationRequestRequestTypeDef
 
 ```python
@@ -1054,6 +1168,8 @@ Required fields:
 Optional fields:
 
 - `applicationVersion`: `str`
+
+<a id="describesimulationapplicationresponsetypedef"></a>
 
 ## DescribeSimulationApplicationResponseTypeDef
 
@@ -1081,6 +1197,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesimulationjobbatchrequestrequesttypedef"></a>
+
 ## DescribeSimulationJobBatchRequestRequestTypeDef
 
 ```python
@@ -1090,6 +1208,8 @@ from mypy_boto3_robomaker.type_defs import DescribeSimulationJobBatchRequestRequ
 Required fields:
 
 - `batch`: `str`
+
+<a id="describesimulationjobbatchresponsetypedef"></a>
 
 ## DescribeSimulationJobBatchResponseTypeDef
 
@@ -1119,6 +1239,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesimulationjobrequestrequesttypedef"></a>
+
 ## DescribeSimulationJobRequestRequestTypeDef
 
 ```python
@@ -1128,6 +1250,8 @@ from mypy_boto3_robomaker.type_defs import DescribeSimulationJobRequestRequestTy
 Required fields:
 
 - `job`: `str`
+
+<a id="describesimulationjobresponsetypedef"></a>
 
 ## DescribeSimulationJobResponseTypeDef
 
@@ -1168,6 +1292,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworldexportjobrequestrequesttypedef"></a>
+
 ## DescribeWorldExportJobRequestRequestTypeDef
 
 ```python
@@ -1177,6 +1303,8 @@ from mypy_boto3_robomaker.type_defs import DescribeWorldExportJobRequestRequestT
 Required fields:
 
 - `job`: `str`
+
+<a id="describeworldexportjobresponsetypedef"></a>
 
 ## DescribeWorldExportJobResponseTypeDef
 
@@ -1201,6 +1329,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworldgenerationjobrequestrequesttypedef"></a>
+
 ## DescribeWorldGenerationJobRequestRequestTypeDef
 
 ```python
@@ -1210,6 +1340,8 @@ from mypy_boto3_robomaker.type_defs import DescribeWorldGenerationJobRequestRequ
 Required fields:
 
 - `job`: `str`
+
+<a id="describeworldgenerationjobresponsetypedef"></a>
 
 ## DescribeWorldGenerationJobResponseTypeDef
 
@@ -1236,6 +1368,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworldrequestrequesttypedef"></a>
+
 ## DescribeWorldRequestRequestTypeDef
 
 ```python
@@ -1245,6 +1379,8 @@ from mypy_boto3_robomaker.type_defs import DescribeWorldRequestRequestTypeDef
 Required fields:
 
 - `world`: `str`
+
+<a id="describeworldresponsetypedef"></a>
 
 ## DescribeWorldResponseTypeDef
 
@@ -1263,6 +1399,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeworldtemplaterequestrequesttypedef"></a>
+
 ## DescribeWorldTemplateRequestRequestTypeDef
 
 ```python
@@ -1272,6 +1410,8 @@ from mypy_boto3_robomaker.type_defs import DescribeWorldTemplateRequestRequestTy
 Required fields:
 
 - `template`: `str`
+
+<a id="describeworldtemplateresponsetypedef"></a>
 
 ## DescribeWorldTemplateResponseTypeDef
 
@@ -1291,6 +1431,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="environmenttypedef"></a>
+
 ## EnvironmentTypeDef
 
 ```python
@@ -1300,6 +1442,8 @@ from mypy_boto3_robomaker.type_defs import EnvironmentTypeDef
 Optional fields:
 
 - `uri`: `str`
+
+<a id="failedcreatesimulationjobrequesttypedef"></a>
 
 ## FailedCreateSimulationJobRequestTypeDef
 
@@ -1316,6 +1460,8 @@ Optional fields:
   [SimulationJobErrorCodeType](./literals.md#simulationjoberrorcodetype)
 - `failedAt`: `datetime`
 
+<a id="failuresummarytypedef"></a>
+
 ## FailureSummaryTypeDef
 
 ```python
@@ -1328,6 +1474,8 @@ Optional fields:
 - `failures`:
   `List`\[[WorldFailureTypeDef](./type_defs.md#worldfailuretypedef)\]
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -1338,6 +1486,8 @@ Optional fields:
 
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
+
+<a id="finishedworldssummarytypedef"></a>
 
 ## FinishedWorldsSummaryTypeDef
 
@@ -1351,6 +1501,8 @@ Optional fields:
 - `succeededWorlds`: `List`\[`str`\]
 - `failureSummary`:
   [FailureSummaryTypeDef](./type_defs.md#failuresummarytypedef)
+
+<a id="fleettypedef"></a>
 
 ## FleetTypeDef
 
@@ -1368,6 +1520,8 @@ Optional fields:
 - `lastDeploymentJob`: `str`
 - `lastDeploymentTime`: `datetime`
 
+<a id="getworldtemplatebodyrequestrequesttypedef"></a>
+
 ## GetWorldTemplateBodyRequestRequestTypeDef
 
 ```python
@@ -1378,6 +1532,8 @@ Optional fields:
 
 - `template`: `str`
 - `generationJob`: `str`
+
+<a id="getworldtemplatebodyresponsetypedef"></a>
 
 ## GetWorldTemplateBodyResponseTypeDef
 
@@ -1390,6 +1546,8 @@ Required fields:
 - `templateBody`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="launchconfigtypedef"></a>
 
 ## LaunchConfigTypeDef
 
@@ -1407,6 +1565,8 @@ Optional fields:
 - `streamUI`: `bool`
 - `command`: `List`\[`str`\]
 
+<a id="listdeploymentjobsrequestrequesttypedef"></a>
+
 ## ListDeploymentJobsRequestRequestTypeDef
 
 ```python
@@ -1418,6 +1578,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdeploymentjobsresponsetypedef"></a>
 
 ## ListDeploymentJobsResponseTypeDef
 
@@ -1433,6 +1595,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfleetsrequestrequesttypedef"></a>
+
 ## ListFleetsRequestRequestTypeDef
 
 ```python
@@ -1444,6 +1608,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listfleetsresponsetypedef"></a>
 
 ## ListFleetsResponseTypeDef
 
@@ -1458,6 +1624,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrobotapplicationsrequestrequesttypedef"></a>
+
 ## ListRobotApplicationsRequestRequestTypeDef
 
 ```python
@@ -1470,6 +1638,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listrobotapplicationsresponsetypedef"></a>
 
 ## ListRobotApplicationsResponseTypeDef
 
@@ -1485,6 +1655,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrobotsrequestrequesttypedef"></a>
+
 ## ListRobotsRequestRequestTypeDef
 
 ```python
@@ -1496,6 +1668,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listrobotsresponsetypedef"></a>
 
 ## ListRobotsResponseTypeDef
 
@@ -1510,6 +1684,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsimulationapplicationsrequestrequesttypedef"></a>
+
 ## ListSimulationApplicationsRequestRequestTypeDef
 
 ```python
@@ -1522,6 +1698,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listsimulationapplicationsresponsetypedef"></a>
 
 ## ListSimulationApplicationsResponseTypeDef
 
@@ -1537,6 +1715,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsimulationjobbatchesrequestrequesttypedef"></a>
+
 ## ListSimulationJobBatchesRequestRequestTypeDef
 
 ```python
@@ -1548,6 +1728,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listsimulationjobbatchesresponsetypedef"></a>
 
 ## ListSimulationJobBatchesResponseTypeDef
 
@@ -1563,6 +1745,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsimulationjobsrequestrequesttypedef"></a>
+
 ## ListSimulationJobsRequestRequestTypeDef
 
 ```python
@@ -1574,6 +1758,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listsimulationjobsresponsetypedef"></a>
 
 ## ListSimulationJobsResponseTypeDef
 
@@ -1589,6 +1775,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1598,6 +1786,8 @@ from mypy_boto3_robomaker.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1611,6 +1801,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworldexportjobsrequestrequesttypedef"></a>
+
 ## ListWorldExportJobsRequestRequestTypeDef
 
 ```python
@@ -1622,6 +1814,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listworldexportjobsresponsetypedef"></a>
 
 ## ListWorldExportJobsResponseTypeDef
 
@@ -1637,6 +1831,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworldgenerationjobsrequestrequesttypedef"></a>
+
 ## ListWorldGenerationJobsRequestRequestTypeDef
 
 ```python
@@ -1648,6 +1844,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listworldgenerationjobsresponsetypedef"></a>
 
 ## ListWorldGenerationJobsResponseTypeDef
 
@@ -1663,6 +1861,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworldtemplatesrequestrequesttypedef"></a>
+
 ## ListWorldTemplatesRequestRequestTypeDef
 
 ```python
@@ -1673,6 +1873,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listworldtemplatesresponsetypedef"></a>
 
 ## ListWorldTemplatesResponseTypeDef
 
@@ -1688,6 +1890,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listworldsrequestrequesttypedef"></a>
+
 ## ListWorldsRequestRequestTypeDef
 
 ```python
@@ -1699,6 +1903,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
+
+<a id="listworldsresponsetypedef"></a>
 
 ## ListWorldsResponseTypeDef
 
@@ -1714,6 +1920,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="loggingconfigtypedef"></a>
+
 ## LoggingConfigTypeDef
 
 ```python
@@ -1723,6 +1931,8 @@ from mypy_boto3_robomaker.type_defs import LoggingConfigTypeDef
 Required fields:
 
 - `recordAllRosTopics`: `bool`
+
+<a id="networkinterfacetypedef"></a>
 
 ## NetworkInterfaceTypeDef
 
@@ -1736,6 +1946,8 @@ Optional fields:
 - `privateIpAddress`: `str`
 - `publicIpAddress`: `str`
 
+<a id="outputlocationtypedef"></a>
+
 ## OutputLocationTypeDef
 
 ```python
@@ -1746,6 +1958,8 @@ Optional fields:
 
 - `s3Bucket`: `str`
 - `s3Prefix`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1759,6 +1973,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="portforwardingconfigtypedef"></a>
+
 ## PortForwardingConfigTypeDef
 
 ```python
@@ -1769,6 +1985,8 @@ Optional fields:
 
 - `portMappings`:
   `List`\[[PortMappingTypeDef](./type_defs.md#portmappingtypedef)\]
+
+<a id="portmappingtypedef"></a>
 
 ## PortMappingTypeDef
 
@@ -1785,6 +2003,8 @@ Optional fields:
 
 - `enableOnPublicIp`: `bool`
 
+<a id="progressdetailtypedef"></a>
+
 ## ProgressDetailTypeDef
 
 ```python
@@ -1799,6 +2019,8 @@ Optional fields:
 - `estimatedTimeRemainingSeconds`: `int`
 - `targetResource`: `str`
 
+<a id="registerrobotrequestrequesttypedef"></a>
+
 ## RegisterRobotRequestRequestTypeDef
 
 ```python
@@ -1809,6 +2031,8 @@ Required fields:
 
 - `fleet`: `str`
 - `robot`: `str`
+
+<a id="registerrobotresponsetypedef"></a>
 
 ## RegisterRobotResponseTypeDef
 
@@ -1823,6 +2047,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="renderingenginetypedef"></a>
+
 ## RenderingEngineTypeDef
 
 ```python
@@ -1834,6 +2060,8 @@ Optional fields:
 - `name`: `Literal['OGRE']` (see
   [RenderingEngineTypeType](./literals.md#renderingenginetypetype))
 - `version`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1849,6 +2077,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="restartsimulationjobrequestrequesttypedef"></a>
+
 ## RestartSimulationJobRequestRequestTypeDef
 
 ```python
@@ -1858,6 +2088,8 @@ from mypy_boto3_robomaker.type_defs import RestartSimulationJobRequestRequestTyp
 Required fields:
 
 - `job`: `str`
+
+<a id="robotapplicationconfigtypedef"></a>
 
 ## RobotApplicationConfigTypeDef
 
@@ -1879,6 +2111,8 @@ Optional fields:
 - `tools`: `List`\[[ToolTypeDef](./type_defs.md#tooltypedef)\]
 - `useDefaultTools`: `bool`
 
+<a id="robotapplicationsummarytypedef"></a>
+
 ## RobotApplicationSummaryTypeDef
 
 ```python
@@ -1893,6 +2127,8 @@ Optional fields:
 - `lastUpdatedAt`: `datetime`
 - `robotSoftwareSuite`:
   [RobotSoftwareSuiteTypeDef](./type_defs.md#robotsoftwaresuitetypedef)
+
+<a id="robotdeploymenttypedef"></a>
 
 ## RobotDeploymentTypeDef
 
@@ -1912,6 +2148,8 @@ Optional fields:
 - `failureCode`:
   [DeploymentJobErrorCodeType](./literals.md#deploymentjoberrorcodetype)
 
+<a id="robotsoftwaresuitetypedef"></a>
+
 ## RobotSoftwareSuiteTypeDef
 
 ```python
@@ -1924,6 +2162,8 @@ Optional fields:
   [RobotSoftwareSuiteTypeType](./literals.md#robotsoftwaresuitetypetype)
 - `version`:
   [RobotSoftwareSuiteVersionTypeType](./literals.md#robotsoftwaresuiteversiontypetype)
+
+<a id="robottypedef"></a>
 
 ## RobotTypeDef
 
@@ -1943,6 +2183,8 @@ Optional fields:
 - `lastDeploymentJob`: `str`
 - `lastDeploymentTime`: `datetime`
 
+<a id="s3keyoutputtypedef"></a>
+
 ## S3KeyOutputTypeDef
 
 ```python
@@ -1953,6 +2195,8 @@ Optional fields:
 
 - `s3Key`: `str`
 - `etag`: `str`
+
+<a id="s3objecttypedef"></a>
 
 ## S3ObjectTypeDef
 
@@ -1968,6 +2212,8 @@ Required fields:
 Optional fields:
 
 - `etag`: `str`
+
+<a id="simulationapplicationconfigtypedef"></a>
 
 ## SimulationApplicationConfigTypeDef
 
@@ -1991,6 +2237,8 @@ Optional fields:
 - `tools`: `List`\[[ToolTypeDef](./type_defs.md#tooltypedef)\]
 - `useDefaultTools`: `bool`
 
+<a id="simulationapplicationsummarytypedef"></a>
+
 ## SimulationApplicationSummaryTypeDef
 
 ```python
@@ -2008,6 +2256,8 @@ Optional fields:
 - `simulationSoftwareSuite`:
   [SimulationSoftwareSuiteTypeDef](./type_defs.md#simulationsoftwaresuitetypedef)
 
+<a id="simulationjobbatchsummarytypedef"></a>
+
 ## SimulationJobBatchSummaryTypeDef
 
 ```python
@@ -2024,6 +2274,8 @@ Optional fields:
 - `failedRequestCount`: `int`
 - `pendingRequestCount`: `int`
 - `createdRequestCount`: `int`
+
+<a id="simulationjobrequesttypedef"></a>
 
 ## SimulationJobRequestTypeDef
 
@@ -2053,6 +2305,8 @@ Optional fields:
 - `compute`: [ComputeTypeDef](./type_defs.md#computetypedef)
 - `tags`: `Dict`\[`str`, `str`\]
 
+<a id="simulationjobsummarytypedef"></a>
+
 ## SimulationJobSummaryTypeDef
 
 ```python
@@ -2069,6 +2323,8 @@ Optional fields:
 - `robotApplicationNames`: `List`\[`str`\]
 - `dataSourceNames`: `List`\[`str`\]
 - `computeType`: [ComputeTypeType](./literals.md#computetypetype)
+
+<a id="simulationjobtypedef"></a>
 
 ## SimulationJobTypeDef
 
@@ -2107,6 +2363,8 @@ Optional fields:
   [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - `compute`: [ComputeResponseTypeDef](./type_defs.md#computeresponsetypedef)
 
+<a id="simulationsoftwaresuitetypedef"></a>
+
 ## SimulationSoftwareSuiteTypeDef
 
 ```python
@@ -2118,6 +2376,8 @@ Optional fields:
 - `name`:
   [SimulationSoftwareSuiteTypeType](./literals.md#simulationsoftwaresuitetypetype)
 - `version`: `str`
+
+<a id="sourceconfigtypedef"></a>
 
 ## SourceConfigTypeDef
 
@@ -2131,6 +2391,8 @@ Optional fields:
 - `s3Key`: `str`
 - `architecture`: [ArchitectureType](./literals.md#architecturetype)
 
+<a id="sourcetypedef"></a>
+
 ## SourceTypeDef
 
 ```python
@@ -2143,6 +2405,8 @@ Optional fields:
 - `s3Key`: `str`
 - `etag`: `str`
 - `architecture`: [ArchitectureType](./literals.md#architecturetype)
+
+<a id="startsimulationjobbatchrequestrequesttypedef"></a>
 
 ## StartSimulationJobBatchRequestRequestTypeDef
 
@@ -2160,6 +2424,8 @@ Optional fields:
 - `clientRequestToken`: `str`
 - `batchPolicy`: [BatchPolicyTypeDef](./type_defs.md#batchpolicytypedef)
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="startsimulationjobbatchresponsetypedef"></a>
 
 ## StartSimulationJobBatchResponseTypeDef
 
@@ -2188,6 +2454,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="syncdeploymentjobrequestrequesttypedef"></a>
+
 ## SyncDeploymentJobRequestRequestTypeDef
 
 ```python
@@ -2198,6 +2466,8 @@ Required fields:
 
 - `clientRequestToken`: `str`
 - `fleet`: `str`
+
+<a id="syncdeploymentjobresponsetypedef"></a>
 
 ## SyncDeploymentJobResponseTypeDef
 
@@ -2221,6 +2491,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2232,6 +2504,8 @@ Required fields:
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
+<a id="templatelocationtypedef"></a>
+
 ## TemplateLocationTypeDef
 
 ```python
@@ -2242,6 +2516,8 @@ Required fields:
 
 - `s3Bucket`: `str`
 - `s3Key`: `str`
+
+<a id="templatesummarytypedef"></a>
 
 ## TemplateSummaryTypeDef
 
@@ -2256,6 +2532,8 @@ Optional fields:
 - `lastUpdatedAt`: `datetime`
 - `name`: `str`
 - `version`: `str`
+
+<a id="tooltypedef"></a>
 
 ## ToolTypeDef
 
@@ -2274,6 +2552,8 @@ Optional fields:
 - `streamOutputToCloudWatch`: `bool`
 - `exitBehavior`: [ExitBehaviorType](./literals.md#exitbehaviortype)
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2284,6 +2564,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tagKeys`: `Sequence`\[`str`\]
+
+<a id="updaterobotapplicationrequestrequesttypedef"></a>
 
 ## UpdateRobotApplicationRequestRequestTypeDef
 
@@ -2304,6 +2586,8 @@ Optional fields:
 - `currentRevisionId`: `str`
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 
+<a id="updaterobotapplicationresponsetypedef"></a>
+
 ## UpdateRobotApplicationResponseTypeDef
 
 ```python
@@ -2323,6 +2607,8 @@ Required fields:
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatesimulationapplicationrequestrequesttypedef"></a>
 
 ## UpdateSimulationApplicationRequestRequestTypeDef
 
@@ -2346,6 +2632,8 @@ Optional fields:
   [RenderingEngineTypeDef](./type_defs.md#renderingenginetypedef)
 - `currentRevisionId`: `str`
 - `environment`: [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+
+<a id="updatesimulationapplicationresponsetypedef"></a>
 
 ## UpdateSimulationApplicationResponseTypeDef
 
@@ -2371,6 +2659,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateworldtemplaterequestrequesttypedef"></a>
+
 ## UpdateWorldTemplateRequestRequestTypeDef
 
 ```python
@@ -2388,6 +2678,8 @@ Optional fields:
 - `templateLocation`:
   [TemplateLocationTypeDef](./type_defs.md#templatelocationtypedef)
 
+<a id="updateworldtemplateresponsetypedef"></a>
+
 ## UpdateWorldTemplateResponseTypeDef
 
 ```python
@@ -2403,6 +2695,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="uploadconfigurationtypedef"></a>
+
 ## UploadConfigurationTypeDef
 
 ```python
@@ -2414,6 +2708,8 @@ Required fields:
 - `name`: `str`
 - `path`: `str`
 - `uploadBehavior`: [UploadBehaviorType](./literals.md#uploadbehaviortype)
+
+<a id="vpcconfigresponsetypedef"></a>
 
 ## VPCConfigResponseTypeDef
 
@@ -2427,6 +2723,8 @@ Optional fields:
 - `securityGroups`: `List`\[`str`\]
 - `vpcId`: `str`
 - `assignPublicIp`: `bool`
+
+<a id="vpcconfigtypedef"></a>
 
 ## VPCConfigTypeDef
 
@@ -2443,6 +2741,8 @@ Optional fields:
 - `securityGroups`: `Sequence`\[`str`\]
 - `assignPublicIp`: `bool`
 
+<a id="worldconfigtypedef"></a>
+
 ## WorldConfigTypeDef
 
 ```python
@@ -2452,6 +2752,8 @@ from mypy_boto3_robomaker.type_defs import WorldConfigTypeDef
 Optional fields:
 
 - `world`: `str`
+
+<a id="worldcounttypedef"></a>
 
 ## WorldCountTypeDef
 
@@ -2463,6 +2765,8 @@ Optional fields:
 
 - `floorplanCount`: `int`
 - `interiorCountPerFloorplan`: `int`
+
+<a id="worldexportjobsummarytypedef"></a>
 
 ## WorldExportJobSummaryTypeDef
 
@@ -2477,6 +2781,8 @@ Optional fields:
 - `createdAt`: `datetime`
 - `worlds`: `List`\[`str`\]
 
+<a id="worldfailuretypedef"></a>
+
 ## WorldFailureTypeDef
 
 ```python
@@ -2489,6 +2795,8 @@ Optional fields:
   [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - `sampleFailureReason`: `str`
 - `failureCount`: `int`
+
+<a id="worldgenerationjobsummarytypedef"></a>
 
 ## WorldGenerationJobSummaryTypeDef
 
@@ -2506,6 +2814,8 @@ Optional fields:
 - `worldCount`: [WorldCountTypeDef](./type_defs.md#worldcounttypedef)
 - `succeededWorldCount`: `int`
 - `failedWorldCount`: `int`
+
+<a id="worldsummarytypedef"></a>
 
 ## WorldSummaryTypeDef
 

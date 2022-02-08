@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-guardduty-module"></a>
+
 # Typed dictionaries for boto3 GuardDuty module
 
 > [Index](..) > [GuardDuty](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [GuardDuty](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/guardduty.html#GuardDuty)
 type annotations stubs module
-[mypy_boto3_guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
+[mypy-boto3-guardduty](https://pypi.org/project/mypy-boto3-guardduty/).
 
 - [Typed dictionaries for boto3 GuardDuty module](#typed-dictionaries-for-boto3-guardduty-module)
   - [AcceptInvitationRequestRequestTypeDef](#acceptinvitationrequestrequesttypedef)
@@ -193,6 +195,8 @@ type annotations stubs module
   - [VolumeMountTypeDef](#volumemounttypedef)
   - [VolumeTypeDef](#volumetypedef)
 
+<a id="acceptinvitationrequestrequesttypedef"></a>
+
 ## AcceptInvitationRequestRequestTypeDef
 
 ```python
@@ -205,6 +209,8 @@ Required fields:
 - `MasterId`: `str`
 - `InvitationId`: `str`
 
+<a id="accesscontrollisttypedef"></a>
+
 ## AccessControlListTypeDef
 
 ```python
@@ -215,6 +221,8 @@ Optional fields:
 
 - `AllowsPublicReadAccess`: `bool`
 - `AllowsPublicWriteAccess`: `bool`
+
+<a id="accesskeydetailstypedef"></a>
 
 ## AccessKeyDetailsTypeDef
 
@@ -229,6 +237,8 @@ Optional fields:
 - `UserName`: `str`
 - `UserType`: `str`
 
+<a id="accountdetailtypedef"></a>
+
 ## AccountDetailTypeDef
 
 ```python
@@ -240,6 +250,8 @@ Required fields:
 - `AccountId`: `str`
 - `Email`: `str`
 
+<a id="accountlevelpermissionstypedef"></a>
+
 ## AccountLevelPermissionsTypeDef
 
 ```python
@@ -250,6 +262,8 @@ Optional fields:
 
 - `BlockPublicAccess`:
   [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
+
+<a id="actiontypedef"></a>
 
 ## ActionTypeDef
 
@@ -271,6 +285,8 @@ Optional fields:
 - `KubernetesApiCallAction`:
   [KubernetesApiCallActionTypeDef](./type_defs.md#kubernetesapicallactiontypedef)
 
+<a id="adminaccounttypedef"></a>
+
 ## AdminAccountTypeDef
 
 ```python
@@ -282,6 +298,8 @@ Optional fields:
 - `AdminAccountId`: `str`
 - `AdminStatus`: [AdminStatusType](./literals.md#adminstatustype)
 
+<a id="archivefindingsrequestrequesttypedef"></a>
+
 ## ArchiveFindingsRequestRequestTypeDef
 
 ```python
@@ -292,6 +310,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `FindingIds`: `Sequence`\[`str`\]
+
+<a id="awsapicallactiontypedef"></a>
 
 ## AwsApiCallActionTypeDef
 
@@ -312,6 +332,8 @@ Optional fields:
 - `RemoteAccountDetails`:
   [RemoteAccountDetailsTypeDef](./type_defs.md#remoteaccountdetailstypedef)
 
+<a id="blockpublicaccesstypedef"></a>
+
 ## BlockPublicAccessTypeDef
 
 ```python
@@ -324,6 +346,8 @@ Optional fields:
 - `RestrictPublicBuckets`: `bool`
 - `BlockPublicAcls`: `bool`
 - `BlockPublicPolicy`: `bool`
+
+<a id="bucketlevelpermissionstypedef"></a>
 
 ## BucketLevelPermissionsTypeDef
 
@@ -339,6 +363,8 @@ Optional fields:
 - `BlockPublicAccess`:
   [BlockPublicAccessTypeDef](./type_defs.md#blockpublicaccesstypedef)
 
+<a id="bucketpolicytypedef"></a>
+
 ## BucketPolicyTypeDef
 
 ```python
@@ -350,6 +376,8 @@ Optional fields:
 - `AllowsPublicReadAccess`: `bool`
 - `AllowsPublicWriteAccess`: `bool`
 
+<a id="citytypedef"></a>
+
 ## CityTypeDef
 
 ```python
@@ -360,6 +388,8 @@ Optional fields:
 
 - `CityName`: `str`
 
+<a id="cloudtrailconfigurationresulttypedef"></a>
+
 ## CloudTrailConfigurationResultTypeDef
 
 ```python
@@ -369,6 +399,8 @@ from mypy_boto3_guardduty.type_defs import CloudTrailConfigurationResultTypeDef
 Required fields:
 
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
+
+<a id="conditiontypedef"></a>
 
 ## ConditionTypeDef
 
@@ -391,6 +423,8 @@ Optional fields:
 - `LessThan`: `int`
 - `LessThanOrEqual`: `int`
 
+<a id="containertypedef"></a>
+
 ## ContainerTypeDef
 
 ```python
@@ -409,6 +443,8 @@ Optional fields:
 - `SecurityContext`:
   [SecurityContextTypeDef](./type_defs.md#securitycontexttypedef)
 
+<a id="countrytypedef"></a>
+
 ## CountryTypeDef
 
 ```python
@@ -419,6 +455,8 @@ Optional fields:
 
 - `CountryCode`: `str`
 - `CountryName`: `str`
+
+<a id="createdetectorrequestrequesttypedef"></a>
 
 ## CreateDetectorRequestRequestTypeDef
 
@@ -439,6 +477,8 @@ Optional fields:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createdetectorresponsetypedef"></a>
+
 ## CreateDetectorResponseTypeDef
 
 ```python
@@ -450,6 +490,8 @@ Required fields:
 - `DetectorId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createfilterrequestrequesttypedef"></a>
 
 ## CreateFilterRequestRequestTypeDef
 
@@ -472,6 +514,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createfilterresponsetypedef"></a>
+
 ## CreateFilterResponseTypeDef
 
 ```python
@@ -483,6 +527,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createipsetrequestrequesttypedef"></a>
 
 ## CreateIPSetRequestRequestTypeDef
 
@@ -503,6 +549,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createipsetresponsetypedef"></a>
+
 ## CreateIPSetResponseTypeDef
 
 ```python
@@ -514,6 +562,8 @@ Required fields:
 - `IpSetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmembersrequestrequesttypedef"></a>
 
 ## CreateMembersRequestRequestTypeDef
 
@@ -527,6 +577,8 @@ Required fields:
 - `AccountDetails`:
   `Sequence`\[[AccountDetailTypeDef](./type_defs.md#accountdetailtypedef)\]
 
+<a id="createmembersresponsetypedef"></a>
+
 ## CreateMembersResponseTypeDef
 
 ```python
@@ -539,6 +591,8 @@ Required fields:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpublishingdestinationrequestrequesttypedef"></a>
 
 ## CreatePublishingDestinationRequestRequestTypeDef
 
@@ -558,6 +612,8 @@ Optional fields:
 
 - `ClientToken`: `str`
 
+<a id="createpublishingdestinationresponsetypedef"></a>
+
 ## CreatePublishingDestinationResponseTypeDef
 
 ```python
@@ -569,6 +625,8 @@ Required fields:
 - `DestinationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsamplefindingsrequestrequesttypedef"></a>
 
 ## CreateSampleFindingsRequestRequestTypeDef
 
@@ -583,6 +641,8 @@ Required fields:
 Optional fields:
 
 - `FindingTypes`: `Sequence`\[`str`\]
+
+<a id="createthreatintelsetrequestrequesttypedef"></a>
 
 ## CreateThreatIntelSetRequestRequestTypeDef
 
@@ -603,6 +663,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createthreatintelsetresponsetypedef"></a>
+
 ## CreateThreatIntelSetResponseTypeDef
 
 ```python
@@ -615,6 +677,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dnslogsconfigurationresulttypedef"></a>
+
 ## DNSLogsConfigurationResultTypeDef
 
 ```python
@@ -624,6 +688,8 @@ from mypy_boto3_guardduty.type_defs import DNSLogsConfigurationResultTypeDef
 Required fields:
 
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
+
+<a id="datasourceconfigurationsresulttypedef"></a>
 
 ## DataSourceConfigurationsResultTypeDef
 
@@ -647,6 +713,8 @@ Optional fields:
 - `Kubernetes`:
   [KubernetesConfigurationResultTypeDef](./type_defs.md#kubernetesconfigurationresulttypedef)
 
+<a id="datasourceconfigurationstypedef"></a>
+
 ## DataSourceConfigurationsTypeDef
 
 ```python
@@ -660,6 +728,8 @@ Optional fields:
 - `Kubernetes`:
   [KubernetesConfigurationTypeDef](./type_defs.md#kubernetesconfigurationtypedef)
 
+<a id="declineinvitationsrequestrequesttypedef"></a>
+
 ## DeclineInvitationsRequestRequestTypeDef
 
 ```python
@@ -669,6 +739,8 @@ from mypy_boto3_guardduty.type_defs import DeclineInvitationsRequestRequestTypeD
 Required fields:
 
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="declineinvitationsresponsetypedef"></a>
 
 ## DeclineInvitationsResponseTypeDef
 
@@ -683,6 +755,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="defaultserversideencryptiontypedef"></a>
+
 ## DefaultServerSideEncryptionTypeDef
 
 ```python
@@ -694,6 +768,8 @@ Optional fields:
 - `EncryptionType`: `str`
 - `KmsMasterKeyArn`: `str`
 
+<a id="deletedetectorrequestrequesttypedef"></a>
+
 ## DeleteDetectorRequestRequestTypeDef
 
 ```python
@@ -703,6 +779,8 @@ from mypy_boto3_guardduty.type_defs import DeleteDetectorRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
+
+<a id="deletefilterrequestrequesttypedef"></a>
 
 ## DeleteFilterRequestRequestTypeDef
 
@@ -715,6 +793,8 @@ Required fields:
 - `DetectorId`: `str`
 - `FilterName`: `str`
 
+<a id="deleteipsetrequestrequesttypedef"></a>
+
 ## DeleteIPSetRequestRequestTypeDef
 
 ```python
@@ -726,6 +806,8 @@ Required fields:
 - `DetectorId`: `str`
 - `IpSetId`: `str`
 
+<a id="deleteinvitationsrequestrequesttypedef"></a>
+
 ## DeleteInvitationsRequestRequestTypeDef
 
 ```python
@@ -735,6 +817,8 @@ from mypy_boto3_guardduty.type_defs import DeleteInvitationsRequestRequestTypeDe
 Required fields:
 
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="deleteinvitationsresponsetypedef"></a>
 
 ## DeleteInvitationsResponseTypeDef
 
@@ -749,6 +833,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemembersrequestrequesttypedef"></a>
+
 ## DeleteMembersRequestRequestTypeDef
 
 ```python
@@ -759,6 +845,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="deletemembersresponsetypedef"></a>
 
 ## DeleteMembersResponseTypeDef
 
@@ -773,6 +861,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletepublishingdestinationrequestrequesttypedef"></a>
+
 ## DeletePublishingDestinationRequestRequestTypeDef
 
 ```python
@@ -783,6 +873,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `DestinationId`: `str`
+
+<a id="deletethreatintelsetrequestrequesttypedef"></a>
 
 ## DeleteThreatIntelSetRequestRequestTypeDef
 
@@ -795,6 +887,8 @@ Required fields:
 - `DetectorId`: `str`
 - `ThreatIntelSetId`: `str`
 
+<a id="describeorganizationconfigurationrequestrequesttypedef"></a>
+
 ## DescribeOrganizationConfigurationRequestRequestTypeDef
 
 ```python
@@ -804,6 +898,8 @@ from mypy_boto3_guardduty.type_defs import DescribeOrganizationConfigurationRequ
 Required fields:
 
 - `DetectorId`: `str`
+
+<a id="describeorganizationconfigurationresponsetypedef"></a>
 
 ## DescribeOrganizationConfigurationResponseTypeDef
 
@@ -820,6 +916,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describepublishingdestinationrequestrequesttypedef"></a>
+
 ## DescribePublishingDestinationRequestRequestTypeDef
 
 ```python
@@ -830,6 +928,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `DestinationId`: `str`
+
+<a id="describepublishingdestinationresponsetypedef"></a>
 
 ## DescribePublishingDestinationResponseTypeDef
 
@@ -849,6 +949,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationpropertiestypedef"></a>
+
 ## DestinationPropertiesTypeDef
 
 ```python
@@ -859,6 +961,8 @@ Optional fields:
 
 - `DestinationArn`: `str`
 - `KmsKeyArn`: `str`
+
+<a id="destinationtypedef"></a>
 
 ## DestinationTypeDef
 
@@ -873,6 +977,8 @@ Required fields:
   [DestinationTypeType](./literals.md#destinationtypetype))
 - `Status`: [PublishingStatusType](./literals.md#publishingstatustype)
 
+<a id="disableorganizationadminaccountrequestrequesttypedef"></a>
+
 ## DisableOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
@@ -882,6 +988,8 @@ from mypy_boto3_guardduty.type_defs import DisableOrganizationAdminAccountReques
 Required fields:
 
 - `AdminAccountId`: `str`
+
+<a id="disassociatefrommasteraccountrequestrequesttypedef"></a>
 
 ## DisassociateFromMasterAccountRequestRequestTypeDef
 
@@ -893,6 +1001,8 @@ Required fields:
 
 - `DetectorId`: `str`
 
+<a id="disassociatemembersrequestrequesttypedef"></a>
+
 ## DisassociateMembersRequestRequestTypeDef
 
 ```python
@@ -903,6 +1013,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="disassociatemembersresponsetypedef"></a>
 
 ## DisassociateMembersResponseTypeDef
 
@@ -917,6 +1029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dnsrequestactiontypedef"></a>
+
 ## DnsRequestActionTypeDef
 
 ```python
@@ -927,6 +1041,8 @@ Optional fields:
 
 - `Domain`: `str`
 
+<a id="domaindetailstypedef"></a>
+
 ## DomainDetailsTypeDef
 
 ```python
@@ -936,6 +1052,8 @@ from mypy_boto3_guardduty.type_defs import DomainDetailsTypeDef
 Optional fields:
 
 - `Domain`: `str`
+
+<a id="eksclusterdetailstypedef"></a>
 
 ## EksClusterDetailsTypeDef
 
@@ -952,6 +1070,8 @@ Optional fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `CreatedAt`: `datetime`
 
+<a id="enableorganizationadminaccountrequestrequesttypedef"></a>
+
 ## EnableOrganizationAdminAccountRequestRequestTypeDef
 
 ```python
@@ -961,6 +1081,8 @@ from mypy_boto3_guardduty.type_defs import EnableOrganizationAdminAccountRequest
 Required fields:
 
 - `AdminAccountId`: `str`
+
+<a id="evidencetypedef"></a>
 
 ## EvidenceTypeDef
 
@@ -973,6 +1095,8 @@ Optional fields:
 - `ThreatIntelligenceDetails`:
   `List`\[[ThreatIntelligenceDetailTypeDef](./type_defs.md#threatintelligencedetailtypedef)\]
 
+<a id="findingcriteriatypedef"></a>
+
 ## FindingCriteriaTypeDef
 
 ```python
@@ -984,6 +1108,8 @@ Optional fields:
 - `Criterion`: `Mapping`\[`str`,
   [ConditionTypeDef](./type_defs.md#conditiontypedef)\]
 
+<a id="findingstatisticstypedef"></a>
+
 ## FindingStatisticsTypeDef
 
 ```python
@@ -993,6 +1119,8 @@ from mypy_boto3_guardduty.type_defs import FindingStatisticsTypeDef
 Optional fields:
 
 - `CountBySeverity`: `Dict`\[`str`, `int`\]
+
+<a id="findingtypedef"></a>
 
 ## FindingTypeDef
 
@@ -1021,6 +1149,8 @@ Optional fields:
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `Title`: `str`
 
+<a id="flowlogsconfigurationresulttypedef"></a>
+
 ## FlowLogsConfigurationResultTypeDef
 
 ```python
@@ -1030,6 +1160,8 @@ from mypy_boto3_guardduty.type_defs import FlowLogsConfigurationResultTypeDef
 Required fields:
 
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
+
+<a id="geolocationtypedef"></a>
 
 ## GeoLocationTypeDef
 
@@ -1042,6 +1174,8 @@ Optional fields:
 - `Lat`: `float`
 - `Lon`: `float`
 
+<a id="getdetectorrequestrequesttypedef"></a>
+
 ## GetDetectorRequestRequestTypeDef
 
 ```python
@@ -1051,6 +1185,8 @@ from mypy_boto3_guardduty.type_defs import GetDetectorRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
+
+<a id="getdetectorresponsetypedef"></a>
 
 ## GetDetectorResponseTypeDef
 
@@ -1072,6 +1208,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfilterrequestrequesttypedef"></a>
+
 ## GetFilterRequestRequestTypeDef
 
 ```python
@@ -1082,6 +1220,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `FilterName`: `str`
+
+<a id="getfilterresponsetypedef"></a>
 
 ## GetFilterResponseTypeDef
 
@@ -1101,6 +1241,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getfindingsrequestrequesttypedef"></a>
+
 ## GetFindingsRequestRequestTypeDef
 
 ```python
@@ -1116,6 +1258,8 @@ Optional fields:
 
 - `SortCriteria`: [SortCriteriaTypeDef](./type_defs.md#sortcriteriatypedef)
 
+<a id="getfindingsresponsetypedef"></a>
+
 ## GetFindingsResponseTypeDef
 
 ```python
@@ -1127,6 +1271,8 @@ Required fields:
 - `Findings`: `List`\[[FindingTypeDef](./type_defs.md#findingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getfindingsstatisticsrequestrequesttypedef"></a>
 
 ## GetFindingsStatisticsRequestRequestTypeDef
 
@@ -1145,6 +1291,8 @@ Optional fields:
 - `FindingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
+<a id="getfindingsstatisticsresponsetypedef"></a>
+
 ## GetFindingsStatisticsResponseTypeDef
 
 ```python
@@ -1158,6 +1306,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getipsetrequestrequesttypedef"></a>
+
 ## GetIPSetRequestRequestTypeDef
 
 ```python
@@ -1168,6 +1318,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `IpSetId`: `str`
+
+<a id="getipsetresponsetypedef"></a>
 
 ## GetIPSetResponseTypeDef
 
@@ -1185,6 +1337,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getinvitationscountresponsetypedef"></a>
+
 ## GetInvitationsCountResponseTypeDef
 
 ```python
@@ -1197,6 +1351,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmasteraccountrequestrequesttypedef"></a>
+
 ## GetMasterAccountRequestRequestTypeDef
 
 ```python
@@ -1206,6 +1362,8 @@ from mypy_boto3_guardduty.type_defs import GetMasterAccountRequestRequestTypeDef
 Required fields:
 
 - `DetectorId`: `str`
+
+<a id="getmasteraccountresponsetypedef"></a>
 
 ## GetMasterAccountResponseTypeDef
 
@@ -1219,6 +1377,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmemberdetectorsrequestrequesttypedef"></a>
+
 ## GetMemberDetectorsRequestRequestTypeDef
 
 ```python
@@ -1229,6 +1389,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="getmemberdetectorsresponsetypedef"></a>
 
 ## GetMemberDetectorsResponseTypeDef
 
@@ -1245,6 +1407,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmembersrequestrequesttypedef"></a>
+
 ## GetMembersRequestRequestTypeDef
 
 ```python
@@ -1255,6 +1419,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="getmembersresponsetypedef"></a>
 
 ## GetMembersResponseTypeDef
 
@@ -1270,6 +1436,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getthreatintelsetrequestrequesttypedef"></a>
+
 ## GetThreatIntelSetRequestRequestTypeDef
 
 ```python
@@ -1280,6 +1448,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `ThreatIntelSetId`: `str`
+
+<a id="getthreatintelsetresponsetypedef"></a>
 
 ## GetThreatIntelSetResponseTypeDef
 
@@ -1296,6 +1466,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getusagestatisticsrequestrequesttypedef"></a>
 
 ## GetUsageStatisticsRequestRequestTypeDef
 
@@ -1316,6 +1488,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="getusagestatisticsresponsetypedef"></a>
+
 ## GetUsageStatisticsResponseTypeDef
 
 ```python
@@ -1330,6 +1504,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="hostpathtypedef"></a>
+
 ## HostPathTypeDef
 
 ```python
@@ -1339,6 +1515,8 @@ from mypy_boto3_guardduty.type_defs import HostPathTypeDef
 Optional fields:
 
 - `Path`: `str`
+
+<a id="iaminstanceprofiletypedef"></a>
 
 ## IamInstanceProfileTypeDef
 
@@ -1350,6 +1528,8 @@ Optional fields:
 
 - `Arn`: `str`
 - `Id`: `str`
+
+<a id="instancedetailstypedef"></a>
 
 ## InstanceDetailsTypeDef
 
@@ -1376,6 +1556,8 @@ Optional fields:
   `List`\[[ProductCodeTypeDef](./type_defs.md#productcodetypedef)\]
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="invitationtypedef"></a>
+
 ## InvitationTypeDef
 
 ```python
@@ -1388,6 +1570,8 @@ Optional fields:
 - `InvitationId`: `str`
 - `RelationshipStatus`: `str`
 - `InvitedAt`: `str`
+
+<a id="invitemembersrequestrequesttypedef"></a>
 
 ## InviteMembersRequestRequestTypeDef
 
@@ -1405,6 +1589,8 @@ Optional fields:
 - `DisableEmailNotification`: `bool`
 - `Message`: `str`
 
+<a id="invitemembersresponsetypedef"></a>
+
 ## InviteMembersResponseTypeDef
 
 ```python
@@ -1417,6 +1603,8 @@ Required fields:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="kubernetesapicallactiontypedef"></a>
 
 ## KubernetesApiCallActionTypeDef
 
@@ -1435,6 +1623,8 @@ Optional fields:
 - `StatusCode`: `int`
 - `Parameters`: `str`
 
+<a id="kubernetesauditlogsconfigurationresulttypedef"></a>
+
 ## KubernetesAuditLogsConfigurationResultTypeDef
 
 ```python
@@ -1445,6 +1635,8 @@ Required fields:
 
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
 
+<a id="kubernetesauditlogsconfigurationtypedef"></a>
+
 ## KubernetesAuditLogsConfigurationTypeDef
 
 ```python
@@ -1454,6 +1646,8 @@ from mypy_boto3_guardduty.type_defs import KubernetesAuditLogsConfigurationTypeD
 Required fields:
 
 - `Enable`: `bool`
+
+<a id="kubernetesconfigurationresulttypedef"></a>
 
 ## KubernetesConfigurationResultTypeDef
 
@@ -1466,6 +1660,8 @@ Required fields:
 - `AuditLogs`:
   [KubernetesAuditLogsConfigurationResultTypeDef](./type_defs.md#kubernetesauditlogsconfigurationresulttypedef)
 
+<a id="kubernetesconfigurationtypedef"></a>
+
 ## KubernetesConfigurationTypeDef
 
 ```python
@@ -1476,6 +1672,8 @@ Required fields:
 
 - `AuditLogs`:
   [KubernetesAuditLogsConfigurationTypeDef](./type_defs.md#kubernetesauditlogsconfigurationtypedef)
+
+<a id="kubernetesdetailstypedef"></a>
 
 ## KubernetesDetailsTypeDef
 
@@ -1490,6 +1688,8 @@ Optional fields:
 - `KubernetesWorkloadDetails`:
   [KubernetesWorkloadDetailsTypeDef](./type_defs.md#kubernetesworkloaddetailstypedef)
 
+<a id="kubernetesuserdetailstypedef"></a>
+
 ## KubernetesUserDetailsTypeDef
 
 ```python
@@ -1501,6 +1701,8 @@ Optional fields:
 - `Username`: `str`
 - `Uid`: `str`
 - `Groups`: `List`\[`str`\]
+
+<a id="kubernetesworkloaddetailstypedef"></a>
 
 ## KubernetesWorkloadDetailsTypeDef
 
@@ -1518,6 +1720,8 @@ Optional fields:
 - `Containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
 - `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 
+<a id="listdetectorsrequestrequesttypedef"></a>
+
 ## ListDetectorsRequestRequestTypeDef
 
 ```python
@@ -1528,6 +1732,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listdetectorsresponsetypedef"></a>
 
 ## ListDetectorsResponseTypeDef
 
@@ -1541,6 +1747,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfiltersrequestrequesttypedef"></a>
 
 ## ListFiltersRequestRequestTypeDef
 
@@ -1557,6 +1765,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfiltersresponsetypedef"></a>
+
 ## ListFiltersResponseTypeDef
 
 ```python
@@ -1569,6 +1779,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listfindingsrequestrequesttypedef"></a>
 
 ## ListFindingsRequestRequestTypeDef
 
@@ -1588,6 +1800,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listfindingsresponsetypedef"></a>
+
 ## ListFindingsResponseTypeDef
 
 ```python
@@ -1600,6 +1814,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listipsetsrequestrequesttypedef"></a>
 
 ## ListIPSetsRequestRequestTypeDef
 
@@ -1616,6 +1832,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listipsetsresponsetypedef"></a>
+
 ## ListIPSetsResponseTypeDef
 
 ```python
@@ -1629,6 +1847,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listinvitationsrequestrequesttypedef"></a>
+
 ## ListInvitationsRequestRequestTypeDef
 
 ```python
@@ -1639,6 +1859,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listinvitationsresponsetypedef"></a>
 
 ## ListInvitationsResponseTypeDef
 
@@ -1653,6 +1875,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listmembersrequestrequesttypedef"></a>
 
 ## ListMembersRequestRequestTypeDef
 
@@ -1670,6 +1894,8 @@ Optional fields:
 - `NextToken`: `str`
 - `OnlyAssociated`: `str`
 
+<a id="listmembersresponsetypedef"></a>
+
 ## ListMembersResponseTypeDef
 
 ```python
@@ -1683,6 +1909,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listorganizationadminaccountsrequestrequesttypedef"></a>
+
 ## ListOrganizationAdminAccountsRequestRequestTypeDef
 
 ```python
@@ -1693,6 +1921,8 @@ Optional fields:
 
 - `MaxResults`: `int`
 - `NextToken`: `str`
+
+<a id="listorganizationadminaccountsresponsetypedef"></a>
 
 ## ListOrganizationAdminAccountsResponseTypeDef
 
@@ -1707,6 +1937,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpublishingdestinationsrequestrequesttypedef"></a>
 
 ## ListPublishingDestinationsRequestRequestTypeDef
 
@@ -1723,6 +1955,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listpublishingdestinationsresponsetypedef"></a>
+
 ## ListPublishingDestinationsResponseTypeDef
 
 ```python
@@ -1737,6 +1971,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -1746,6 +1982,8 @@ from mypy_boto3_guardduty.type_defs import ListTagsForResourceRequestRequestType
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -1758,6 +1996,8 @@ Required fields:
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listthreatintelsetsrequestrequesttypedef"></a>
 
 ## ListThreatIntelSetsRequestRequestTypeDef
 
@@ -1774,6 +2014,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 
+<a id="listthreatintelsetsresponsetypedef"></a>
+
 ## ListThreatIntelSetsResponseTypeDef
 
 ```python
@@ -1787,6 +2029,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="localipdetailstypedef"></a>
+
 ## LocalIpDetailsTypeDef
 
 ```python
@@ -1796,6 +2040,8 @@ from mypy_boto3_guardduty.type_defs import LocalIpDetailsTypeDef
 Optional fields:
 
 - `IpAddressV4`: `str`
+
+<a id="localportdetailstypedef"></a>
 
 ## LocalPortDetailsTypeDef
 
@@ -1807,6 +2053,8 @@ Optional fields:
 
 - `Port`: `int`
 - `PortName`: `str`
+
+<a id="mastertypedef"></a>
 
 ## MasterTypeDef
 
@@ -1821,6 +2069,8 @@ Optional fields:
 - `RelationshipStatus`: `str`
 - `InvitedAt`: `str`
 
+<a id="memberdatasourceconfigurationtypedef"></a>
+
 ## MemberDataSourceConfigurationTypeDef
 
 ```python
@@ -1832,6 +2082,8 @@ Required fields:
 - `AccountId`: `str`
 - `DataSources`:
   [DataSourceConfigurationsResultTypeDef](./type_defs.md#datasourceconfigurationsresulttypedef)
+
+<a id="membertypedef"></a>
 
 ## MemberTypeDef
 
@@ -1852,6 +2104,8 @@ Optional fields:
 - `DetectorId`: `str`
 - `InvitedAt`: `str`
 
+<a id="networkconnectionactiontypedef"></a>
+
 ## NetworkConnectionActionTypeDef
 
 ```python
@@ -1871,6 +2125,8 @@ Optional fields:
   [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - `RemotePortDetails`:
   [RemotePortDetailsTypeDef](./type_defs.md#remoteportdetailstypedef)
+
+<a id="networkinterfacetypedef"></a>
 
 ## NetworkInterfaceTypeDef
 
@@ -1893,6 +2149,8 @@ Optional fields:
 - `SubnetId`: `str`
 - `VpcId`: `str`
 
+<a id="organizationdatasourceconfigurationsresulttypedef"></a>
+
 ## OrganizationDataSourceConfigurationsResultTypeDef
 
 ```python
@@ -1909,6 +2167,8 @@ Optional fields:
 - `Kubernetes`:
   [OrganizationKubernetesConfigurationResultTypeDef](./type_defs.md#organizationkubernetesconfigurationresulttypedef)
 
+<a id="organizationdatasourceconfigurationstypedef"></a>
+
 ## OrganizationDataSourceConfigurationsTypeDef
 
 ```python
@@ -1922,6 +2182,8 @@ Optional fields:
 - `Kubernetes`:
   [OrganizationKubernetesConfigurationTypeDef](./type_defs.md#organizationkubernetesconfigurationtypedef)
 
+<a id="organizationkubernetesauditlogsconfigurationresulttypedef"></a>
+
 ## OrganizationKubernetesAuditLogsConfigurationResultTypeDef
 
 ```python
@@ -1932,6 +2194,8 @@ Required fields:
 
 - `AutoEnable`: `bool`
 
+<a id="organizationkubernetesauditlogsconfigurationtypedef"></a>
+
 ## OrganizationKubernetesAuditLogsConfigurationTypeDef
 
 ```python
@@ -1941,6 +2205,8 @@ from mypy_boto3_guardduty.type_defs import OrganizationKubernetesAuditLogsConfig
 Required fields:
 
 - `AutoEnable`: `bool`
+
+<a id="organizationkubernetesconfigurationresulttypedef"></a>
 
 ## OrganizationKubernetesConfigurationResultTypeDef
 
@@ -1953,6 +2219,8 @@ Required fields:
 - `AuditLogs`:
   [OrganizationKubernetesAuditLogsConfigurationResultTypeDef](./type_defs.md#organizationkubernetesauditlogsconfigurationresulttypedef)
 
+<a id="organizationkubernetesconfigurationtypedef"></a>
+
 ## OrganizationKubernetesConfigurationTypeDef
 
 ```python
@@ -1964,6 +2232,8 @@ Required fields:
 - `AuditLogs`:
   [OrganizationKubernetesAuditLogsConfigurationTypeDef](./type_defs.md#organizationkubernetesauditlogsconfigurationtypedef)
 
+<a id="organizations3logsconfigurationresulttypedef"></a>
+
 ## OrganizationS3LogsConfigurationResultTypeDef
 
 ```python
@@ -1974,6 +2244,8 @@ Required fields:
 
 - `AutoEnable`: `bool`
 
+<a id="organizations3logsconfigurationtypedef"></a>
+
 ## OrganizationS3LogsConfigurationTypeDef
 
 ```python
@@ -1983,6 +2255,8 @@ from mypy_boto3_guardduty.type_defs import OrganizationS3LogsConfigurationTypeDe
 Required fields:
 
 - `AutoEnable`: `bool`
+
+<a id="organizationtypedef"></a>
 
 ## OrganizationTypeDef
 
@@ -1997,6 +2271,8 @@ Optional fields:
 - `Isp`: `str`
 - `Org`: `str`
 
+<a id="ownertypedef"></a>
+
 ## OwnerTypeDef
 
 ```python
@@ -2006,6 +2282,8 @@ from mypy_boto3_guardduty.type_defs import OwnerTypeDef
 Optional fields:
 
 - `Id`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -2018,6 +2296,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="permissionconfigurationtypedef"></a>
 
 ## PermissionConfigurationTypeDef
 
@@ -2032,6 +2312,8 @@ Optional fields:
 - `AccountLevelPermissions`:
   [AccountLevelPermissionsTypeDef](./type_defs.md#accountlevelpermissionstypedef)
 
+<a id="portprobeactiontypedef"></a>
+
 ## PortProbeActionTypeDef
 
 ```python
@@ -2043,6 +2325,8 @@ Optional fields:
 - `Blocked`: `bool`
 - `PortProbeDetails`:
   `List`\[[PortProbeDetailTypeDef](./type_defs.md#portprobedetailtypedef)\]
+
+<a id="portprobedetailtypedef"></a>
 
 ## PortProbeDetailTypeDef
 
@@ -2059,6 +2343,8 @@ Optional fields:
 - `RemoteIpDetails`:
   [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 
+<a id="privateipaddressdetailstypedef"></a>
+
 ## PrivateIpAddressDetailsTypeDef
 
 ```python
@@ -2070,6 +2356,8 @@ Optional fields:
 - `PrivateDnsName`: `str`
 - `PrivateIpAddress`: `str`
 
+<a id="productcodetypedef"></a>
+
 ## ProductCodeTypeDef
 
 ```python
@@ -2080,6 +2368,8 @@ Optional fields:
 
 - `Code`: `str`
 - `ProductType`: `str`
+
+<a id="publicaccesstypedef"></a>
 
 ## PublicAccessTypeDef
 
@@ -2093,6 +2383,8 @@ Optional fields:
   [PermissionConfigurationTypeDef](./type_defs.md#permissionconfigurationtypedef)
 - `EffectivePermission`: `str`
 
+<a id="remoteaccountdetailstypedef"></a>
+
 ## RemoteAccountDetailsTypeDef
 
 ```python
@@ -2103,6 +2395,8 @@ Optional fields:
 
 - `AccountId`: `str`
 - `Affiliated`: `bool`
+
+<a id="remoteipdetailstypedef"></a>
 
 ## RemoteIpDetailsTypeDef
 
@@ -2118,6 +2412,8 @@ Optional fields:
 - `IpAddressV4`: `str`
 - `Organization`: [OrganizationTypeDef](./type_defs.md#organizationtypedef)
 
+<a id="remoteportdetailstypedef"></a>
+
 ## RemotePortDetailsTypeDef
 
 ```python
@@ -2128,6 +2424,8 @@ Optional fields:
 
 - `Port`: `int`
 - `PortName`: `str`
+
+<a id="resourcetypedef"></a>
 
 ## ResourceTypeDef
 
@@ -2149,6 +2447,8 @@ Optional fields:
   [KubernetesDetailsTypeDef](./type_defs.md#kubernetesdetailstypedef)
 - `ResourceType`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2162,6 +2462,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3bucketdetailtypedef"></a>
 
 ## S3BucketDetailTypeDef
 
@@ -2181,6 +2483,8 @@ Optional fields:
   [DefaultServerSideEncryptionTypeDef](./type_defs.md#defaultserversideencryptiontypedef)
 - `PublicAccess`: [PublicAccessTypeDef](./type_defs.md#publicaccesstypedef)
 
+<a id="s3logsconfigurationresulttypedef"></a>
+
 ## S3LogsConfigurationResultTypeDef
 
 ```python
@@ -2190,6 +2494,8 @@ from mypy_boto3_guardduty.type_defs import S3LogsConfigurationResultTypeDef
 Required fields:
 
 - `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
+
+<a id="s3logsconfigurationtypedef"></a>
 
 ## S3LogsConfigurationTypeDef
 
@@ -2201,6 +2507,8 @@ Required fields:
 
 - `Enable`: `bool`
 
+<a id="securitycontexttypedef"></a>
+
 ## SecurityContextTypeDef
 
 ```python
@@ -2210,6 +2518,8 @@ from mypy_boto3_guardduty.type_defs import SecurityContextTypeDef
 Optional fields:
 
 - `Privileged`: `bool`
+
+<a id="securitygrouptypedef"></a>
 
 ## SecurityGroupTypeDef
 
@@ -2221,6 +2531,8 @@ Optional fields:
 
 - `GroupId`: `str`
 - `GroupName`: `str`
+
+<a id="servicetypedef"></a>
 
 ## ServiceTypeDef
 
@@ -2241,6 +2553,8 @@ Optional fields:
 - `ServiceName`: `str`
 - `UserFeedback`: `str`
 
+<a id="sortcriteriatypedef"></a>
+
 ## SortCriteriaTypeDef
 
 ```python
@@ -2252,6 +2566,8 @@ Optional fields:
 - `AttributeName`: `str`
 - `OrderBy`: [OrderByType](./literals.md#orderbytype)
 
+<a id="startmonitoringmembersrequestrequesttypedef"></a>
+
 ## StartMonitoringMembersRequestRequestTypeDef
 
 ```python
@@ -2262,6 +2578,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="startmonitoringmembersresponsetypedef"></a>
 
 ## StartMonitoringMembersResponseTypeDef
 
@@ -2276,6 +2594,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stopmonitoringmembersrequestrequesttypedef"></a>
+
 ## StopMonitoringMembersRequestRequestTypeDef
 
 ```python
@@ -2286,6 +2606,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `AccountIds`: `Sequence`\[`str`\]
+
+<a id="stopmonitoringmembersresponsetypedef"></a>
 
 ## StopMonitoringMembersResponseTypeDef
 
@@ -2300,6 +2622,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -2310,6 +2634,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -2322,6 +2648,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="threatintelligencedetailtypedef"></a>
+
 ## ThreatIntelligenceDetailTypeDef
 
 ```python
@@ -2332,6 +2660,8 @@ Optional fields:
 
 - `ThreatListName`: `str`
 - `ThreatNames`: `List`\[`str`\]
+
+<a id="totaltypedef"></a>
 
 ## TotalTypeDef
 
@@ -2344,6 +2674,8 @@ Optional fields:
 - `Amount`: `str`
 - `Unit`: `str`
 
+<a id="unarchivefindingsrequestrequesttypedef"></a>
+
 ## UnarchiveFindingsRequestRequestTypeDef
 
 ```python
@@ -2354,6 +2686,8 @@ Required fields:
 
 - `DetectorId`: `str`
 - `FindingIds`: `Sequence`\[`str`\]
+
+<a id="unprocessedaccounttypedef"></a>
 
 ## UnprocessedAccountTypeDef
 
@@ -2366,6 +2700,8 @@ Required fields:
 - `AccountId`: `str`
 - `Result`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -2376,6 +2712,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatedetectorrequestrequesttypedef"></a>
 
 ## UpdateDetectorRequestRequestTypeDef
 
@@ -2394,6 +2732,8 @@ Optional fields:
   [FindingPublishingFrequencyType](./literals.md#findingpublishingfrequencytype)
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
+
+<a id="updatefilterrequestrequesttypedef"></a>
 
 ## UpdateFilterRequestRequestTypeDef
 
@@ -2414,6 +2754,8 @@ Optional fields:
 - `FindingCriteria`:
   [FindingCriteriaTypeDef](./type_defs.md#findingcriteriatypedef)
 
+<a id="updatefilterresponsetypedef"></a>
+
 ## UpdateFilterResponseTypeDef
 
 ```python
@@ -2425,6 +2767,8 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatefindingsfeedbackrequestrequesttypedef"></a>
 
 ## UpdateFindingsFeedbackRequestRequestTypeDef
 
@@ -2441,6 +2785,8 @@ Required fields:
 Optional fields:
 
 - `Comments`: `str`
+
+<a id="updateipsetrequestrequesttypedef"></a>
 
 ## UpdateIPSetRequestRequestTypeDef
 
@@ -2459,6 +2805,8 @@ Optional fields:
 - `Location`: `str`
 - `Activate`: `bool`
 
+<a id="updatememberdetectorsrequestrequesttypedef"></a>
+
 ## UpdateMemberDetectorsRequestRequestTypeDef
 
 ```python
@@ -2475,6 +2823,8 @@ Optional fields:
 - `DataSources`:
   [DataSourceConfigurationsTypeDef](./type_defs.md#datasourceconfigurationstypedef)
 
+<a id="updatememberdetectorsresponsetypedef"></a>
+
 ## UpdateMemberDetectorsResponseTypeDef
 
 ```python
@@ -2487,6 +2837,8 @@ Required fields:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateorganizationconfigurationrequestrequesttypedef"></a>
 
 ## UpdateOrganizationConfigurationRequestRequestTypeDef
 
@@ -2504,6 +2856,8 @@ Optional fields:
 - `DataSources`:
   [OrganizationDataSourceConfigurationsTypeDef](./type_defs.md#organizationdatasourceconfigurationstypedef)
 
+<a id="updatepublishingdestinationrequestrequesttypedef"></a>
+
 ## UpdatePublishingDestinationRequestRequestTypeDef
 
 ```python
@@ -2519,6 +2873,8 @@ Optional fields:
 
 - `DestinationProperties`:
   [DestinationPropertiesTypeDef](./type_defs.md#destinationpropertiestypedef)
+
+<a id="updatethreatintelsetrequestrequesttypedef"></a>
 
 ## UpdateThreatIntelSetRequestRequestTypeDef
 
@@ -2537,6 +2893,8 @@ Optional fields:
 - `Location`: `str`
 - `Activate`: `bool`
 
+<a id="usageaccountresulttypedef"></a>
+
 ## UsageAccountResultTypeDef
 
 ```python
@@ -2547,6 +2905,8 @@ Optional fields:
 
 - `AccountId`: `str`
 - `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
+
+<a id="usagecriteriatypedef"></a>
 
 ## UsageCriteriaTypeDef
 
@@ -2563,6 +2923,8 @@ Optional fields:
 - `AccountIds`: `Sequence`\[`str`\]
 - `Resources`: `Sequence`\[`str`\]
 
+<a id="usagedatasourceresulttypedef"></a>
+
 ## UsageDataSourceResultTypeDef
 
 ```python
@@ -2574,6 +2936,8 @@ Optional fields:
 - `DataSource`: [DataSourceType](./literals.md#datasourcetype)
 - `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
 
+<a id="usageresourceresulttypedef"></a>
+
 ## UsageResourceResultTypeDef
 
 ```python
@@ -2584,6 +2948,8 @@ Optional fields:
 
 - `Resource`: `str`
 - `Total`: [TotalTypeDef](./type_defs.md#totaltypedef)
+
+<a id="usagestatisticstypedef"></a>
 
 ## UsageStatisticsTypeDef
 
@@ -2602,6 +2968,8 @@ Optional fields:
 - `TopResources`:
   `List`\[[UsageResourceResultTypeDef](./type_defs.md#usageresourceresulttypedef)\]
 
+<a id="volumemounttypedef"></a>
+
 ## VolumeMountTypeDef
 
 ```python
@@ -2612,6 +2980,8 @@ Optional fields:
 
 - `Name`: `str`
 - `MountPath`: `str`
+
+<a id="volumetypedef"></a>
 
 ## VolumeTypeDef
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-apigatewayv2-module"></a>
+
 # Type annotations for boto3 ApiGatewayV2 module
 
 > [Index](..) > ApiGatewayV2
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [ApiGatewayV2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apigatewayv2.html#ApiGatewayV2)
 type annotations stubs module
-[mypy_boto3_apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
+[mypy-boto3-apigatewayv2](https://pypi.org/project/mypy-boto3-apigatewayv2/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[apigatewayv2]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[apigatewayv2]'
+
+# standalone installation
 pip install mypy-boto3-apigatewayv2
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-apigatewayv2
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="apigatewayv2client"></a>
+
 ## ApiGatewayV2Client
 
 Type annotations for `boto3.client("apigatewayv2")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_apigatewayv2.client import ApiGatewayV2Client
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -109,6 +123,8 @@ from mypy_boto3_apigatewayv2.client import ApiGatewayV2Client
 - [update_stage](./client.md#update_stage)
 - [update_vpc_link](./client.md#update_vpc_link)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 ApiGatewayV2Client [exceptions](./client.md#exceptions)
@@ -120,6 +136,8 @@ ApiGatewayV2Client [exceptions](./client.md#exceptions)
 - NotFoundException
 - TooManyRequestsException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -128,7 +146,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_apigatewayv2.paginators import GetApisPaginator, ...
+from mypy_boto3_apigatewayv2.paginator import GetApisPaginator, ...
 ```
 
 - [GetApisPaginator](./paginators.md#getapispaginator)
@@ -141,6 +159,8 @@ from mypy_boto3_apigatewayv2.paginators import GetApisPaginator, ...
 - [GetRouteResponsesPaginator](./paginators.md#getrouteresponsespaginator)
 - [GetRoutesPaginator](./paginators.md#getroutespaginator)
 - [GetStagesPaginator](./paginators.md#getstagespaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -180,6 +200,8 @@ from mypy_boto3_apigatewayv2.literals import AuthorizationTypeType, ...
 - [VpcLinkVersionType](./literals.md#vpclinkversiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

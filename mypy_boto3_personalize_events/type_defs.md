@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-personalizeevents-module"></a>
+
 # Typed dictionaries for boto3 PersonalizeEvents module
 
 > [Index](..) > [PersonalizeEvents](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [PersonalizeEvents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-events.html#PersonalizeEvents)
 type annotations stubs module
-[mypy_boto3_personalize_events](https://pypi.org/project/mypy-boto3-personalize-events/).
+[mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 - [Typed dictionaries for boto3 PersonalizeEvents module](#typed-dictionaries-for-boto3-personalizeevents-module)
   - [EventTypeDef](#eventtypedef)
@@ -14,6 +16,8 @@ type annotations stubs module
   - [PutItemsRequestRequestTypeDef](#putitemsrequestrequesttypedef)
   - [PutUsersRequestRequestTypeDef](#putusersrequestrequesttypedef)
   - [UserTypeDef](#usertypedef)
+
+<a id="eventtypedef"></a>
 
 ## EventTypeDef
 
@@ -35,6 +39,8 @@ Optional fields:
 - `recommendationId`: `str`
 - `impression`: `Sequence`\[`str`\]
 
+<a id="itemtypedef"></a>
+
 ## ItemTypeDef
 
 ```python
@@ -48,6 +54,8 @@ Required fields:
 Optional fields:
 
 - `properties`: `str`
+
+<a id="puteventsrequestrequesttypedef"></a>
 
 ## PutEventsRequestRequestTypeDef
 
@@ -65,6 +73,8 @@ Optional fields:
 
 - `userId`: `str`
 
+<a id="putitemsrequestrequesttypedef"></a>
+
 ## PutItemsRequestRequestTypeDef
 
 ```python
@@ -76,6 +86,8 @@ Required fields:
 - `datasetArn`: `str`
 - `items`: `Sequence`\[[ItemTypeDef](./type_defs.md#itemtypedef)\]
 
+<a id="putusersrequestrequesttypedef"></a>
+
 ## PutUsersRequestRequestTypeDef
 
 ```python
@@ -86,6 +98,8 @@ Required fields:
 
 - `datasetArn`: `str`
 - `users`: `Sequence`\[[UserTypeDef](./type_defs.md#usertypedef)\]
+
+<a id="usertypedef"></a>
 
 ## UserTypeDef
 

@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-honeycode-module"></a>
+
 # Type annotations for boto3 Honeycode module
 
 > [Index](..) > Honeycode
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [Honeycode](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode)
 type annotations stubs module
-[mypy_boto3_honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
+[mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[honeycode]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[honeycode]'
+
+# standalone installation
 pip install mypy-boto3-honeycode
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-honeycode
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="honeycodeclient"></a>
+
 ## HoneycodeClient
 
 Type annotations for `boto3.client("honeycode")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_honeycode.client import HoneycodeClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -52,6 +66,8 @@ from mypy_boto3_honeycode.client import HoneycodeClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 HoneycodeClient [exceptions](./client.md#exceptions)
@@ -68,6 +84,8 @@ HoneycodeClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -76,13 +94,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_honeycode.paginators import ListTableColumnsPaginator, ...
+from mypy_boto3_honeycode.paginator import ListTableColumnsPaginator, ...
 ```
 
 - [ListTableColumnsPaginator](./paginators.md#listtablecolumnspaginator)
 - [ListTableRowsPaginator](./paginators.md#listtablerowspaginator)
 - [ListTablesPaginator](./paginators.md#listtablespaginator)
 - [QueryTableRowsPaginator](./paginators.md#querytablerowspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -106,6 +126,8 @@ from mypy_boto3_honeycode.literals import ErrorCodeType, ...
 - [UpsertActionType](./literals.md#upsertactiontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

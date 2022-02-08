@@ -1,3 +1,5 @@
+<a id="amplifyclient-for-boto3-amplify-module"></a>
+
 # AmplifyClient for boto3 Amplify module
 
 > [Index](..) > [Amplify](.) > AmplifyClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Amplify](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify)
 type annotations stubs module
-[mypy_boto3_amplify](https://pypi.org/project/mypy-boto3-amplify/).
+[mypy-boto3-amplify](https://pypi.org/project/mypy-boto3-amplify/).
 
 - [AmplifyClient for boto3 Amplify module](#amplifyclient-for-boto3-amplify-module)
   - [AmplifyClient](#amplifyclient)
@@ -53,6 +55,8 @@ type annotations stubs module
     - [update_webhook](#update_webhook)
     - [get_paginator](#get_paginator)
 
+<a id="amplifyclient"></a>
+
 ## AmplifyClient
 
 Type annotations for `boto3.client("amplify")`
@@ -60,14 +64,17 @@ Type annotations for `boto3.client("amplify")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_amplify.client import AmplifyClient
 
 def get_amplify_client() -> AmplifyClient:
-    return boto3.client("amplify")
+    return Session().client("amplify")
 ```
 
 Boto3 documentation:
 [Amplify.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -92,7 +99,11 @@ Exceptions:
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.UnauthorizedException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -104,6 +115,8 @@ Boto3 documentation:
 [Amplify.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/amplify.html#Amplify.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -119,6 +132,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_app"></a>
 
 ### create_app
 
@@ -158,6 +173,8 @@ Keyword-only arguments:
 
 Returns [CreateAppResultTypeDef](./type_defs.md#createappresulttypedef).
 
+<a id="create_backend_environment"></a>
+
 ### create_backend_environment
 
 Creates a new backend environment for an Amplify app.
@@ -180,6 +197,8 @@ Keyword-only arguments:
 
 Returns
 [CreateBackendEnvironmentResultTypeDef](./type_defs.md#createbackendenvironmentresulttypedef).
+
+<a id="create_branch"></a>
 
 ### create_branch
 
@@ -216,6 +235,8 @@ Keyword-only arguments:
 
 Returns [CreateBranchResultTypeDef](./type_defs.md#createbranchresulttypedef).
 
+<a id="create_deployment"></a>
+
 ### create_deployment
 
 Creates a deployment for a manually deployed Amplify app.
@@ -236,6 +257,8 @@ Keyword-only arguments:
 
 Returns
 [CreateDeploymentResultTypeDef](./type_defs.md#createdeploymentresulttypedef).
+
+<a id="create_domain_association"></a>
 
 ### create_domain_association
 
@@ -264,6 +287,8 @@ Keyword-only arguments:
 Returns
 [CreateDomainAssociationResultTypeDef](./type_defs.md#createdomainassociationresulttypedef).
 
+<a id="create_webhook"></a>
+
 ### create_webhook
 
 Creates a new webhook on an Amplify app.
@@ -285,6 +310,8 @@ Keyword-only arguments:
 Returns
 [CreateWebhookResultTypeDef](./type_defs.md#createwebhookresulttypedef).
 
+<a id="delete_app"></a>
+
 ### delete_app
 
 Deletes an existing Amplify app specified by an app ID.
@@ -302,6 +329,8 @@ Keyword-only arguments:
 - `appId`: `str` *(required)*
 
 Returns [DeleteAppResultTypeDef](./type_defs.md#deleteappresulttypedef).
+
+<a id="delete_backend_environment"></a>
 
 ### delete_backend_environment
 
@@ -324,6 +353,8 @@ Keyword-only arguments:
 Returns
 [DeleteBackendEnvironmentResultTypeDef](./type_defs.md#deletebackendenvironmentresulttypedef).
 
+<a id="delete_branch"></a>
+
 ### delete_branch
 
 Deletes a branch for an Amplify app.
@@ -342,6 +373,8 @@ Keyword-only arguments:
 - `branchName`: `str` *(required)*
 
 Returns [DeleteBranchResultTypeDef](./type_defs.md#deletebranchresulttypedef).
+
+<a id="delete_domain_association"></a>
 
 ### delete_domain_association
 
@@ -364,6 +397,8 @@ Keyword-only arguments:
 Returns
 [DeleteDomainAssociationResultTypeDef](./type_defs.md#deletedomainassociationresulttypedef).
 
+<a id="delete_job"></a>
+
 ### delete_job
 
 Deletes a job for a branch of an Amplify app.
@@ -384,6 +419,8 @@ Keyword-only arguments:
 
 Returns [DeleteJobResultTypeDef](./type_defs.md#deletejobresulttypedef).
 
+<a id="delete_webhook"></a>
+
 ### delete_webhook
 
 Deletes a webhook.
@@ -402,6 +439,8 @@ Keyword-only arguments:
 
 Returns
 [DeleteWebhookResultTypeDef](./type_defs.md#deletewebhookresulttypedef).
+
+<a id="generate_access_logs"></a>
 
 ### generate_access_logs
 
@@ -426,6 +465,8 @@ Keyword-only arguments:
 Returns
 [GenerateAccessLogsResultTypeDef](./type_defs.md#generateaccesslogsresulttypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -443,6 +484,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="get_app"></a>
 
 ### get_app
 
@@ -462,6 +505,8 @@ Keyword-only arguments:
 
 Returns [GetAppResultTypeDef](./type_defs.md#getappresulttypedef).
 
+<a id="get_artifact_url"></a>
+
 ### get_artifact_url
 
 Returns the artifact info that corresponds to an artifact id.
@@ -480,6 +525,8 @@ Keyword-only arguments:
 
 Returns
 [GetArtifactUrlResultTypeDef](./type_defs.md#getartifacturlresulttypedef).
+
+<a id="get_backend_environment"></a>
 
 ### get_backend_environment
 
@@ -501,6 +548,8 @@ Keyword-only arguments:
 Returns
 [GetBackendEnvironmentResultTypeDef](./type_defs.md#getbackendenvironmentresulttypedef).
 
+<a id="get_branch"></a>
+
 ### get_branch
 
 Returns a branch for an Amplify app.
@@ -519,6 +568,8 @@ Keyword-only arguments:
 - `branchName`: `str` *(required)*
 
 Returns [GetBranchResultTypeDef](./type_defs.md#getbranchresulttypedef).
+
+<a id="get_domain_association"></a>
 
 ### get_domain_association
 
@@ -540,6 +591,8 @@ Keyword-only arguments:
 Returns
 [GetDomainAssociationResultTypeDef](./type_defs.md#getdomainassociationresulttypedef).
 
+<a id="get_job"></a>
+
 ### get_job
 
 Returns a job for a branch of an Amplify app.
@@ -560,6 +613,8 @@ Keyword-only arguments:
 
 Returns [GetJobResultTypeDef](./type_defs.md#getjobresulttypedef).
 
+<a id="get_webhook"></a>
+
 ### get_webhook
 
 Returns the webhook information that corresponds to a specified webhook ID.
@@ -577,6 +632,8 @@ Keyword-only arguments:
 - `webhookId`: `str` *(required)*
 
 Returns [GetWebhookResultTypeDef](./type_defs.md#getwebhookresulttypedef).
+
+<a id="list_apps"></a>
 
 ### list_apps
 
@@ -596,6 +653,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [ListAppsResultTypeDef](./type_defs.md#listappsresulttypedef).
+
+<a id="list_artifacts"></a>
 
 ### list_artifacts
 
@@ -620,6 +679,8 @@ Keyword-only arguments:
 Returns
 [ListArtifactsResultTypeDef](./type_defs.md#listartifactsresulttypedef).
 
+<a id="list_backend_environments"></a>
+
 ### list_backend_environments
 
 Lists the backend environments for an Amplify app.
@@ -643,6 +704,8 @@ Keyword-only arguments:
 Returns
 [ListBackendEnvironmentsResultTypeDef](./type_defs.md#listbackendenvironmentsresulttypedef).
 
+<a id="list_branches"></a>
+
 ### list_branches
 
 Lists the branches of an Amplify app.
@@ -662,6 +725,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [ListBranchesResultTypeDef](./type_defs.md#listbranchesresulttypedef).
+
+<a id="list_domain_associations"></a>
 
 ### list_domain_associations
 
@@ -684,6 +749,8 @@ Keyword-only arguments:
 Returns
 [ListDomainAssociationsResultTypeDef](./type_defs.md#listdomainassociationsresulttypedef).
 
+<a id="list_jobs"></a>
+
 ### list_jobs
 
 Lists the jobs for a branch of an Amplify app.
@@ -705,6 +772,8 @@ Keyword-only arguments:
 
 Returns [ListJobsResultTypeDef](./type_defs.md#listjobsresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns a list of tags for a specified Amazon Resource Name (ARN).
@@ -723,6 +792,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_webhooks"></a>
 
 ### list_webhooks
 
@@ -743,6 +814,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 
 Returns [ListWebhooksResultTypeDef](./type_defs.md#listwebhooksresulttypedef).
+
+<a id="start_deployment"></a>
 
 ### start_deployment
 
@@ -765,6 +838,8 @@ Keyword-only arguments:
 
 Returns
 [StartDeploymentResultTypeDef](./type_defs.md#startdeploymentresulttypedef).
+
+<a id="start_job"></a>
 
 ### start_job
 
@@ -791,6 +866,8 @@ Keyword-only arguments:
 
 Returns [StartJobResultTypeDef](./type_defs.md#startjobresulttypedef).
 
+<a id="stop_job"></a>
+
 ### stop_job
 
 Stops a job that is in progress for a branch of an Amplify app.
@@ -811,6 +888,8 @@ Keyword-only arguments:
 
 Returns [StopJobResultTypeDef](./type_defs.md#stopjobresulttypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags the resource with a tag key and value.
@@ -830,6 +909,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Untags a resource with a specified Amazon Resource Name (ARN).
@@ -848,6 +929,8 @@ Keyword-only arguments:
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_app"></a>
 
 ### update_app
 
@@ -887,6 +970,8 @@ Keyword-only arguments:
 
 Returns [UpdateAppResultTypeDef](./type_defs.md#updateappresulttypedef).
 
+<a id="update_branch"></a>
+
 ### update_branch
 
 Updates a branch for an Amplify app.
@@ -921,6 +1006,8 @@ Keyword-only arguments:
 
 Returns [UpdateBranchResultTypeDef](./type_defs.md#updatebranchresulttypedef).
 
+<a id="update_domain_association"></a>
+
 ### update_domain_association
 
 Creates a new domain association for an Amplify app.
@@ -948,6 +1035,8 @@ Keyword-only arguments:
 Returns
 [UpdateDomainAssociationResultTypeDef](./type_defs.md#updatedomainassociationresulttypedef).
 
+<a id="update_webhook"></a>
+
 ### update_webhook
 
 Updates a webhook.
@@ -968,6 +1057,8 @@ Keyword-only arguments:
 
 Returns
 [UpdateWebhookResultTypeDef](./type_defs.md#updatewebhookresulttypedef).
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

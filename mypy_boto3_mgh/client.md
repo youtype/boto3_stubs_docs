@@ -1,3 +1,5 @@
+<a id="migrationhubclient-for-boto3-migrationhub-module"></a>
+
 # MigrationHubClient for boto3 MigrationHub module
 
 > [Index](..) > [MigrationHub](.) > MigrationHubClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MigrationHub](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub)
 type annotations stubs module
-[mypy_boto3_mgh](https://pypi.org/project/mypy-boto3-mgh/).
+[mypy-boto3-mgh](https://pypi.org/project/mypy-boto3-mgh/).
 
 - [MigrationHubClient for boto3 MigrationHub module](#migrationhubclient-for-boto3-migrationhub-module)
   - [MigrationHubClient](#migrationhubclient)
@@ -33,6 +35,8 @@ type annotations stubs module
     - [put_resource_attributes](#put_resource_attributes)
     - [get_paginator](#get_paginator)
 
+<a id="migrationhubclient"></a>
+
 ## MigrationHubClient
 
 Type annotations for `boto3.client("mgh")`
@@ -40,14 +44,17 @@ Type annotations for `boto3.client("mgh")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_mgh.client import MigrationHubClient
 
 def get_mgh_client() -> MigrationHubClient:
-    return boto3.client("mgh")
+    return Session().client("mgh")
 ```
 
 Boto3 documentation:
 [MigrationHub.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -75,7 +82,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.UnauthorizedOperation`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -87,6 +98,8 @@ Boto3 documentation:
 [MigrationHub.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mgh.html#MigrationHub.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="associate_created_artifact"></a>
 
 ### associate_created_artifact
 
@@ -110,6 +123,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="associate_discovered_resource"></a>
 
 ### associate_discovered_resource
 
@@ -136,6 +151,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -150,6 +167,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_progress_update_stream"></a>
 
 ### create_progress_update_stream
 
@@ -173,6 +192,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_progress_update_stream"></a>
+
 ### delete_progress_update_stream
 
 Deletes a progress update stream, including all of its tasks, which was
@@ -194,6 +215,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_application_state"></a>
+
 ### describe_application_state
 
 Gets the migration status of an application.
@@ -212,6 +235,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeApplicationStateResultTypeDef](./type_defs.md#describeapplicationstateresulttypedef).
+
+<a id="describe_migration_task"></a>
 
 ### describe_migration_task
 
@@ -232,6 +257,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeMigrationTaskResultTypeDef](./type_defs.md#describemigrationtaskresulttypedef).
+
+<a id="disassociate_created_artifact"></a>
 
 ### disassociate_created_artifact
 
@@ -256,6 +283,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate_discovered_resource"></a>
+
 ### disassociate_discovered_resource
 
 Disassociate an Application Discovery Service discovered resource from a
@@ -279,6 +308,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -296,6 +327,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="import_migration_task"></a>
 
 ### import_migration_task
 
@@ -318,6 +351,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="list_application_states"></a>
+
 ### list_application_states
 
 Lists all the migration statuses for your applications.
@@ -338,6 +373,8 @@ Keyword-only arguments:
 
 Returns
 [ListApplicationStatesResultTypeDef](./type_defs.md#listapplicationstatesresulttypedef).
+
+<a id="list_created_artifacts"></a>
 
 ### list_created_artifacts
 
@@ -362,6 +399,8 @@ Keyword-only arguments:
 Returns
 [ListCreatedArtifactsResultTypeDef](./type_defs.md#listcreatedartifactsresulttypedef).
 
+<a id="list_discovered_resources"></a>
+
 ### list_discovered_resources
 
 Lists discovered resources associated with the given `MigrationTask` .
@@ -383,6 +422,8 @@ Keyword-only arguments:
 
 Returns
 [ListDiscoveredResourcesResultTypeDef](./type_defs.md#listdiscoveredresourcesresulttypedef).
+
+<a id="list_migration_tasks"></a>
 
 ### list_migration_tasks
 
@@ -406,6 +447,8 @@ Keyword-only arguments:
 Returns
 [ListMigrationTasksResultTypeDef](./type_defs.md#listmigrationtasksresulttypedef).
 
+<a id="list_progress_update_streams"></a>
+
 ### list_progress_update_streams
 
 Lists progress update streams associated with the user account making this
@@ -426,6 +469,8 @@ Keyword-only arguments:
 
 Returns
 [ListProgressUpdateStreamsResultTypeDef](./type_defs.md#listprogressupdatestreamsresulttypedef).
+
+<a id="notify_application_state"></a>
 
 ### notify_application_state
 
@@ -448,6 +493,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="notify_migration_task_state"></a>
 
 ### notify_migration_task_state
 
@@ -473,6 +520,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="put_resource_attributes"></a>
+
 ### put_resource_attributes
 
 .
@@ -495,6 +544,8 @@ Keyword-only arguments:
 - `DryRun`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

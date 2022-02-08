@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-lookoutforvision-module"></a>
+
 # Type annotations for boto3 LookoutforVision module
 
 > [Index](..) > LookoutforVision
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [LookoutforVision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutvision.html#LookoutforVision)
 type annotations stubs module
-[mypy_boto3_lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
+[mypy-boto3-lookoutvision](https://pypi.org/project/mypy-boto3-lookoutvision/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[lookoutvision]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[lookoutvision]'
+
+# standalone installation
 pip install mypy-boto3-lookoutvision
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-lookoutvision
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="lookoutforvisionclient"></a>
+
 ## LookoutforVisionClient
 
 Type annotations for `boto3.client("lookoutvision")` as
@@ -29,6 +41,8 @@ Can be used directly:
 ```python
 from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -59,6 +73,8 @@ from mypy_boto3_lookoutvision.client import LookoutforVisionClient
 - [untag_resource](./client.md#untag_resource)
 - [update_dataset_entries](./client.md#update_dataset_entries)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 LookoutforVisionClient [exceptions](./client.md#exceptions)
@@ -72,6 +88,8 @@ LookoutforVisionClient [exceptions](./client.md#exceptions)
 - ThrottlingException
 - ValidationException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -80,13 +98,15 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_lookoutvision.paginators import ListDatasetEntriesPaginator, ...
+from mypy_boto3_lookoutvision.paginator import ListDatasetEntriesPaginator, ...
 ```
 
 - [ListDatasetEntriesPaginator](./paginators.md#listdatasetentriespaginator)
 - [ListModelPackagingJobsPaginator](./paginators.md#listmodelpackagingjobspaginator)
 - [ListModelsPaginator](./paginators.md#listmodelspaginator)
 - [ListProjectsPaginator](./paginators.md#listprojectspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -112,6 +132,8 @@ from mypy_boto3_lookoutvision.literals import DatasetStatusType, ...
 - [TargetPlatformOsType](./literals.md#targetplatformostype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

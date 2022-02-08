@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-route53resolver-module"></a>
+
 # Paginators for boto3 Route53Resolver module
 
 > [Index](..) > [Route53Resolver](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53Resolver](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53resolver.html#Route53Resolver)
 type annotations stubs module
-[mypy_boto3_route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
+[mypy-boto3-route53resolver](https://pypi.org/project/mypy-boto3-route53resolver/).
 
 - [Paginators for boto3 Route53Resolver module](#paginators-for-boto3-route53resolver-module)
   - [ListFirewallConfigsPaginator](#listfirewallconfigspaginator)
@@ -24,6 +26,8 @@ type annotations stubs module
   - [ListResolverRulesPaginator](#listresolverrulespaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
 
+<a id="listfirewallconfigspaginator"></a>
+
 ## ListFirewallConfigsPaginator
 
 Type annotations for
@@ -32,10 +36,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListFirewallConfigsPaginator
 
 def get_list_firewall_configs_paginator() -> ListFirewallConfigsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_firewall_configs")
+    return Session().client("route53resolver").get_paginator("list_firewall_configs")
 ```
 
 Boto3 documentation:
@@ -49,6 +55,8 @@ Arguments for `ListFirewallConfigsPaginator.paginate` method:
 `ListFirewallConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef)\].
 
+<a id="listfirewalldomainlistspaginator"></a>
+
 ## ListFirewallDomainListsPaginator
 
 Type annotations for
@@ -57,10 +65,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListFirewallDomainListsPaginator
 
 def get_list_firewall_domain_lists_paginator() -> ListFirewallDomainListsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_firewall_domain_lists")
+    return Session().client("route53resolver").get_paginator("list_firewall_domain_lists")
 ```
 
 Boto3 documentation:
@@ -74,6 +84,8 @@ Arguments for `ListFirewallDomainListsPaginator.paginate` method:
 `ListFirewallDomainListsPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef)\].
 
+<a id="listfirewalldomainspaginator"></a>
+
 ## ListFirewallDomainsPaginator
 
 Type annotations for
@@ -82,10 +94,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListFirewallDomainsPaginator
 
 def get_list_firewall_domains_paginator() -> ListFirewallDomainsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_firewall_domains")
+    return Session().client("route53resolver").get_paginator("list_firewall_domains")
 ```
 
 Boto3 documentation:
@@ -100,6 +114,8 @@ Arguments for `ListFirewallDomainsPaginator.paginate` method:
 `ListFirewallDomainsPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef)\].
 
+<a id="listfirewallrulegroupassociationspaginator"></a>
+
 ## ListFirewallRuleGroupAssociationsPaginator
 
 Type annotations for
@@ -108,10 +124,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupAssociationsPaginator
 
 def get_list_firewall_rule_group_associations_paginator() -> ListFirewallRuleGroupAssociationsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_firewall_rule_group_associations")
+    return Session().client("route53resolver").get_paginator("list_firewall_rule_group_associations")
 ```
 
 Boto3 documentation:
@@ -130,6 +148,8 @@ Arguments for `ListFirewallRuleGroupAssociationsPaginator.paginate` method:
 `ListFirewallRuleGroupAssociationsPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef)\].
 
+<a id="listfirewallrulegroupspaginator"></a>
+
 ## ListFirewallRuleGroupsPaginator
 
 Type annotations for
@@ -138,10 +158,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListFirewallRuleGroupsPaginator
 
 def get_list_firewall_rule_groups_paginator() -> ListFirewallRuleGroupsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_firewall_rule_groups")
+    return Session().client("route53resolver").get_paginator("list_firewall_rule_groups")
 ```
 
 Boto3 documentation:
@@ -155,6 +177,8 @@ Arguments for `ListFirewallRuleGroupsPaginator.paginate` method:
 `ListFirewallRuleGroupsPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef)\].
 
+<a id="listfirewallrulespaginator"></a>
+
 ## ListFirewallRulesPaginator
 
 Type annotations for
@@ -163,10 +187,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListFirewallRulesPaginator
 
 def get_list_firewall_rules_paginator() -> ListFirewallRulesPaginator:
-    return boto3.client("route53resolver").get_paginator("list_firewall_rules")
+    return Session().client("route53resolver").get_paginator("list_firewall_rules")
 ```
 
 Boto3 documentation:
@@ -183,6 +209,8 @@ Arguments for `ListFirewallRulesPaginator.paginate` method:
 `ListFirewallRulesPaginator.paginate` returns
 `_PageIterator`\[[ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef)\].
 
+<a id="listresolverconfigspaginator"></a>
+
 ## ListResolverConfigsPaginator
 
 Type annotations for
@@ -191,10 +219,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverConfigsPaginator
 
 def get_list_resolver_configs_paginator() -> ListResolverConfigsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_configs")
+    return Session().client("route53resolver").get_paginator("list_resolver_configs")
 ```
 
 Boto3 documentation:
@@ -208,6 +238,8 @@ Arguments for `ListResolverConfigsPaginator.paginate` method:
 `ListResolverConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef)\].
 
+<a id="listresolverdnssecconfigspaginator"></a>
+
 ## ListResolverDnssecConfigsPaginator
 
 Type annotations for
@@ -216,10 +248,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverDnssecConfigsPaginator
 
 def get_list_resolver_dnssec_configs_paginator() -> ListResolverDnssecConfigsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_dnssec_configs")
+    return Session().client("route53resolver").get_paginator("list_resolver_dnssec_configs")
 ```
 
 Boto3 documentation:
@@ -234,6 +268,8 @@ Arguments for `ListResolverDnssecConfigsPaginator.paginate` method:
 `ListResolverDnssecConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef)\].
 
+<a id="listresolverendpointipaddressespaginator"></a>
+
 ## ListResolverEndpointIpAddressesPaginator
 
 Type annotations for
@@ -242,10 +278,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverEndpointIpAddressesPaginator
 
 def get_list_resolver_endpoint_ip_addresses_paginator() -> ListResolverEndpointIpAddressesPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")
+    return Session().client("route53resolver").get_paginator("list_resolver_endpoint_ip_addresses")
 ```
 
 Boto3 documentation:
@@ -260,6 +298,8 @@ Arguments for `ListResolverEndpointIpAddressesPaginator.paginate` method:
 `ListResolverEndpointIpAddressesPaginator.paginate` returns
 `_PageIterator`\[[ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef)\].
 
+<a id="listresolverendpointspaginator"></a>
+
 ## ListResolverEndpointsPaginator
 
 Type annotations for
@@ -268,10 +308,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverEndpointsPaginator
 
 def get_list_resolver_endpoints_paginator() -> ListResolverEndpointsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_endpoints")
+    return Session().client("route53resolver").get_paginator("list_resolver_endpoints")
 ```
 
 Boto3 documentation:
@@ -286,6 +328,8 @@ Arguments for `ListResolverEndpointsPaginator.paginate` method:
 `ListResolverEndpointsPaginator.paginate` returns
 `_PageIterator`\[[ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef)\].
 
+<a id="listresolverquerylogconfigassociationspaginator"></a>
+
 ## ListResolverQueryLogConfigAssociationsPaginator
 
 Type annotations for
@@ -294,10 +338,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigAssociationsPaginator
 
 def get_list_resolver_query_log_config_associations_paginator() -> ListResolverQueryLogConfigAssociationsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_query_log_config_associations")
+    return Session().client("route53resolver").get_paginator("list_resolver_query_log_config_associations")
 ```
 
 Boto3 documentation:
@@ -315,6 +361,8 @@ method:
 `ListResolverQueryLogConfigAssociationsPaginator.paginate` returns
 `_PageIterator`\[[ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef)\].
 
+<a id="listresolverquerylogconfigspaginator"></a>
+
 ## ListResolverQueryLogConfigsPaginator
 
 Type annotations for
@@ -323,10 +371,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverQueryLogConfigsPaginator
 
 def get_list_resolver_query_log_configs_paginator() -> ListResolverQueryLogConfigsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_query_log_configs")
+    return Session().client("route53resolver").get_paginator("list_resolver_query_log_configs")
 ```
 
 Boto3 documentation:
@@ -343,6 +393,8 @@ Arguments for `ListResolverQueryLogConfigsPaginator.paginate` method:
 `ListResolverQueryLogConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef)\].
 
+<a id="listresolverruleassociationspaginator"></a>
+
 ## ListResolverRuleAssociationsPaginator
 
 Type annotations for
@@ -351,10 +403,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverRuleAssociationsPaginator
 
 def get_list_resolver_rule_associations_paginator() -> ListResolverRuleAssociationsPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_rule_associations")
+    return Session().client("route53resolver").get_paginator("list_resolver_rule_associations")
 ```
 
 Boto3 documentation:
@@ -369,6 +423,8 @@ Arguments for `ListResolverRuleAssociationsPaginator.paginate` method:
 `ListResolverRuleAssociationsPaginator.paginate` returns
 `_PageIterator`\[[ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef)\].
 
+<a id="listresolverrulespaginator"></a>
+
 ## ListResolverRulesPaginator
 
 Type annotations for
@@ -377,10 +433,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListResolverRulesPaginator
 
 def get_list_resolver_rules_paginator() -> ListResolverRulesPaginator:
-    return boto3.client("route53resolver").get_paginator("list_resolver_rules")
+    return Session().client("route53resolver").get_paginator("list_resolver_rules")
 ```
 
 Boto3 documentation:
@@ -395,6 +453,8 @@ Arguments for `ListResolverRulesPaginator.paginate` method:
 `ListResolverRulesPaginator.paginate` returns
 `_PageIterator`\[[ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -403,10 +463,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53resolver.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("route53resolver").get_paginator("list_tags_for_resource")
+    return Session().client("route53resolver").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

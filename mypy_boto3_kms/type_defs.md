@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-kms-module"></a>
+
 # Typed dictionaries for boto3 KMS module
 
 > [Index](..) > [KMS](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [KMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kms.html#KMS)
 type annotations stubs module
-[mypy_boto3_kms](https://pypi.org/project/mypy-boto3-kms/).
+[mypy-boto3-kms](https://pypi.org/project/mypy-boto3-kms/).
 
 - [Typed dictionaries for boto3 KMS module](#typed-dictionaries-for-boto3-kms-module)
   - [AliasListEntryTypeDef](#aliaslistentrytypedef)
@@ -95,6 +97,8 @@ type annotations stubs module
   - [VerifyRequestRequestTypeDef](#verifyrequestrequesttypedef)
   - [VerifyResponseTypeDef](#verifyresponsetypedef)
 
+<a id="aliaslistentrytypedef"></a>
+
 ## AliasListEntryTypeDef
 
 ```python
@@ -109,6 +113,8 @@ Optional fields:
 - `CreationDate`: `datetime`
 - `LastUpdatedDate`: `datetime`
 
+<a id="cancelkeydeletionrequestrequesttypedef"></a>
+
 ## CancelKeyDeletionRequestRequestTypeDef
 
 ```python
@@ -118,6 +124,8 @@ from mypy_boto3_kms.type_defs import CancelKeyDeletionRequestRequestTypeDef
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="cancelkeydeletionresponsetypedef"></a>
 
 ## CancelKeyDeletionResponseTypeDef
 
@@ -131,6 +139,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="connectcustomkeystorerequestrequesttypedef"></a>
+
 ## ConnectCustomKeyStoreRequestRequestTypeDef
 
 ```python
@@ -140,6 +150,8 @@ from mypy_boto3_kms.type_defs import ConnectCustomKeyStoreRequestRequestTypeDef
 Required fields:
 
 - `CustomKeyStoreId`: `str`
+
+<a id="createaliasrequestrequesttypedef"></a>
 
 ## CreateAliasRequestRequestTypeDef
 
@@ -151,6 +163,8 @@ Required fields:
 
 - `AliasName`: `str`
 - `TargetKeyId`: `str`
+
+<a id="createcustomkeystorerequestrequesttypedef"></a>
 
 ## CreateCustomKeyStoreRequestRequestTypeDef
 
@@ -165,6 +179,8 @@ Required fields:
 - `TrustAnchorCertificate`: `str`
 - `KeyStorePassword`: `str`
 
+<a id="createcustomkeystoreresponsetypedef"></a>
+
 ## CreateCustomKeyStoreResponseTypeDef
 
 ```python
@@ -176,6 +192,8 @@ Required fields:
 - `CustomKeyStoreId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="creategrantrequestrequesttypedef"></a>
 
 ## CreateGrantRequestRequestTypeDef
 
@@ -198,6 +216,8 @@ Optional fields:
 - `GrantTokens`: `Sequence`\[`str`\]
 - `Name`: `str`
 
+<a id="creategrantresponsetypedef"></a>
+
 ## CreateGrantResponseTypeDef
 
 ```python
@@ -210,6 +230,8 @@ Required fields:
 - `GrantId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createkeyrequestrequesttypedef"></a>
 
 ## CreateKeyRequestRequestTypeDef
 
@@ -231,6 +253,8 @@ Optional fields:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `MultiRegion`: `bool`
 
+<a id="createkeyresponsetypedef"></a>
+
 ## CreateKeyResponseTypeDef
 
 ```python
@@ -242,6 +266,8 @@ Required fields:
 - `KeyMetadata`: [KeyMetadataTypeDef](./type_defs.md#keymetadatatypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="customkeystoreslistentrytypedef"></a>
 
 ## CustomKeyStoresListEntryTypeDef
 
@@ -261,6 +287,8 @@ Optional fields:
   [ConnectionErrorCodeTypeType](./literals.md#connectionerrorcodetypetype)
 - `CreationDate`: `datetime`
 
+<a id="decryptrequestrequesttypedef"></a>
+
 ## DecryptRequestRequestTypeDef
 
 ```python
@@ -279,6 +307,8 @@ Optional fields:
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
+<a id="decryptresponsetypedef"></a>
+
 ## DecryptResponseTypeDef
 
 ```python
@@ -294,6 +324,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletealiasrequestrequesttypedef"></a>
+
 ## DeleteAliasRequestRequestTypeDef
 
 ```python
@@ -303,6 +335,8 @@ from mypy_boto3_kms.type_defs import DeleteAliasRequestRequestTypeDef
 Required fields:
 
 - `AliasName`: `str`
+
+<a id="deletecustomkeystorerequestrequesttypedef"></a>
 
 ## DeleteCustomKeyStoreRequestRequestTypeDef
 
@@ -314,6 +348,8 @@ Required fields:
 
 - `CustomKeyStoreId`: `str`
 
+<a id="deleteimportedkeymaterialrequestrequesttypedef"></a>
+
 ## DeleteImportedKeyMaterialRequestRequestTypeDef
 
 ```python
@@ -323,6 +359,8 @@ from mypy_boto3_kms.type_defs import DeleteImportedKeyMaterialRequestRequestType
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="describecustomkeystoresrequestrequesttypedef"></a>
 
 ## DescribeCustomKeyStoresRequestRequestTypeDef
 
@@ -336,6 +374,8 @@ Optional fields:
 - `CustomKeyStoreName`: `str`
 - `Limit`: `int`
 - `Marker`: `str`
+
+<a id="describecustomkeystoresresponsetypedef"></a>
 
 ## DescribeCustomKeyStoresResponseTypeDef
 
@@ -352,6 +392,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describekeyrequestrequesttypedef"></a>
+
 ## DescribeKeyRequestRequestTypeDef
 
 ```python
@@ -366,6 +408,8 @@ Optional fields:
 
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="describekeyresponsetypedef"></a>
+
 ## DescribeKeyResponseTypeDef
 
 ```python
@@ -378,6 +422,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="disablekeyrequestrequesttypedef"></a>
+
 ## DisableKeyRequestRequestTypeDef
 
 ```python
@@ -387,6 +433,8 @@ from mypy_boto3_kms.type_defs import DisableKeyRequestRequestTypeDef
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="disablekeyrotationrequestrequesttypedef"></a>
 
 ## DisableKeyRotationRequestRequestTypeDef
 
@@ -398,6 +446,8 @@ Required fields:
 
 - `KeyId`: `str`
 
+<a id="disconnectcustomkeystorerequestrequesttypedef"></a>
+
 ## DisconnectCustomKeyStoreRequestRequestTypeDef
 
 ```python
@@ -407,6 +457,8 @@ from mypy_boto3_kms.type_defs import DisconnectCustomKeyStoreRequestRequestTypeD
 Required fields:
 
 - `CustomKeyStoreId`: `str`
+
+<a id="enablekeyrequestrequesttypedef"></a>
 
 ## EnableKeyRequestRequestTypeDef
 
@@ -418,6 +470,8 @@ Required fields:
 
 - `KeyId`: `str`
 
+<a id="enablekeyrotationrequestrequesttypedef"></a>
+
 ## EnableKeyRotationRequestRequestTypeDef
 
 ```python
@@ -427,6 +481,8 @@ from mypy_boto3_kms.type_defs import EnableKeyRotationRequestRequestTypeDef
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="encryptrequestrequesttypedef"></a>
 
 ## EncryptRequestRequestTypeDef
 
@@ -446,6 +502,8 @@ Optional fields:
 - `EncryptionAlgorithm`:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 
+<a id="encryptresponsetypedef"></a>
+
 ## EncryptResponseTypeDef
 
 ```python
@@ -460,6 +518,8 @@ Required fields:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="generatedatakeypairrequestrequesttypedef"></a>
 
 ## GenerateDataKeyPairRequestRequestTypeDef
 
@@ -477,6 +537,8 @@ Optional fields:
 - `EncryptionContext`: `Mapping`\[`str`, `str`\]
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="generatedatakeypairresponsetypedef"></a>
+
 ## GenerateDataKeyPairResponseTypeDef
 
 ```python
@@ -492,6 +554,8 @@ Required fields:
 - `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="generatedatakeypairwithoutplaintextrequestrequesttypedef"></a>
 
 ## GenerateDataKeyPairWithoutPlaintextRequestRequestTypeDef
 
@@ -509,6 +573,8 @@ Optional fields:
 - `EncryptionContext`: `Mapping`\[`str`, `str`\]
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="generatedatakeypairwithoutplaintextresponsetypedef"></a>
+
 ## GenerateDataKeyPairWithoutPlaintextResponseTypeDef
 
 ```python
@@ -523,6 +589,8 @@ Required fields:
 - `KeyPairSpec`: [DataKeyPairSpecType](./literals.md#datakeypairspectype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="generatedatakeyrequestrequesttypedef"></a>
 
 ## GenerateDataKeyRequestRequestTypeDef
 
@@ -541,6 +609,8 @@ Optional fields:
 - `KeySpec`: [DataKeySpecType](./literals.md#datakeyspectype)
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="generatedatakeyresponsetypedef"></a>
+
 ## GenerateDataKeyResponseTypeDef
 
 ```python
@@ -554,6 +624,8 @@ Required fields:
 - `KeyId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="generatedatakeywithoutplaintextrequestrequesttypedef"></a>
 
 ## GenerateDataKeyWithoutPlaintextRequestRequestTypeDef
 
@@ -572,6 +644,8 @@ Optional fields:
 - `NumberOfBytes`: `int`
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="generatedatakeywithoutplaintextresponsetypedef"></a>
+
 ## GenerateDataKeyWithoutPlaintextResponseTypeDef
 
 ```python
@@ -585,6 +659,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="generaterandomrequestrequesttypedef"></a>
+
 ## GenerateRandomRequestRequestTypeDef
 
 ```python
@@ -595,6 +671,8 @@ Optional fields:
 
 - `NumberOfBytes`: `int`
 - `CustomKeyStoreId`: `str`
+
+<a id="generaterandomresponsetypedef"></a>
 
 ## GenerateRandomResponseTypeDef
 
@@ -608,6 +686,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getkeypolicyrequestrequesttypedef"></a>
+
 ## GetKeyPolicyRequestRequestTypeDef
 
 ```python
@@ -618,6 +698,8 @@ Required fields:
 
 - `KeyId`: `str`
 - `PolicyName`: `str`
+
+<a id="getkeypolicyresponsetypedef"></a>
 
 ## GetKeyPolicyResponseTypeDef
 
@@ -631,6 +713,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getkeyrotationstatusrequestrequesttypedef"></a>
+
 ## GetKeyRotationStatusRequestRequestTypeDef
 
 ```python
@@ -640,6 +724,8 @@ from mypy_boto3_kms.type_defs import GetKeyRotationStatusRequestRequestTypeDef
 Required fields:
 
 - `KeyId`: `str`
+
+<a id="getkeyrotationstatusresponsetypedef"></a>
 
 ## GetKeyRotationStatusResponseTypeDef
 
@@ -653,6 +739,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getparametersforimportrequestrequesttypedef"></a>
+
 ## GetParametersForImportRequestRequestTypeDef
 
 ```python
@@ -665,6 +753,8 @@ Required fields:
 - `WrappingAlgorithm`: [AlgorithmSpecType](./literals.md#algorithmspectype)
 - `WrappingKeySpec`: `Literal['RSA_2048']` (see
   [WrappingKeySpecType](./literals.md#wrappingkeyspectype))
+
+<a id="getparametersforimportresponsetypedef"></a>
 
 ## GetParametersForImportResponseTypeDef
 
@@ -681,6 +771,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpublickeyrequestrequesttypedef"></a>
+
 ## GetPublicKeyRequestRequestTypeDef
 
 ```python
@@ -694,6 +786,8 @@ Required fields:
 Optional fields:
 
 - `GrantTokens`: `Sequence`\[`str`\]
+
+<a id="getpublickeyresponsetypedef"></a>
 
 ## GetPublicKeyResponseTypeDef
 
@@ -716,6 +810,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="grantconstraintstypedef"></a>
+
 ## GrantConstraintsTypeDef
 
 ```python
@@ -726,6 +822,8 @@ Optional fields:
 
 - `EncryptionContextSubset`: `Mapping`\[`str`, `str`\]
 - `EncryptionContextEquals`: `Mapping`\[`str`, `str`\]
+
+<a id="grantlistentrytypedef"></a>
 
 ## GrantListEntryTypeDef
 
@@ -747,6 +845,8 @@ Optional fields:
 - `Constraints`:
   [GrantConstraintsTypeDef](./type_defs.md#grantconstraintstypedef)
 
+<a id="importkeymaterialrequestrequesttypedef"></a>
+
 ## ImportKeyMaterialRequestRequestTypeDef
 
 ```python
@@ -765,6 +865,8 @@ Optional fields:
 - `ExpirationModel`:
   [ExpirationModelTypeType](./literals.md#expirationmodeltypetype)
 
+<a id="keylistentrytypedef"></a>
+
 ## KeyListEntryTypeDef
 
 ```python
@@ -775,6 +877,8 @@ Optional fields:
 
 - `KeyId`: `str`
 - `KeyArn`: `str`
+
+<a id="keymetadatatypedef"></a>
 
 ## KeyMetadataTypeDef
 
@@ -815,6 +919,8 @@ Optional fields:
   [MultiRegionConfigurationTypeDef](./type_defs.md#multiregionconfigurationtypedef)
 - `PendingDeletionWindowInDays`: `int`
 
+<a id="listaliasesrequestrequesttypedef"></a>
+
 ## ListAliasesRequestRequestTypeDef
 
 ```python
@@ -826,6 +932,8 @@ Optional fields:
 - `KeyId`: `str`
 - `Limit`: `int`
 - `Marker`: `str`
+
+<a id="listaliasesresponsetypedef"></a>
 
 ## ListAliasesResponseTypeDef
 
@@ -841,6 +949,8 @@ Required fields:
 - `Truncated`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listgrantsrequestrequesttypedef"></a>
 
 ## ListGrantsRequestRequestTypeDef
 
@@ -859,6 +969,8 @@ Optional fields:
 - `GrantId`: `str`
 - `GranteePrincipal`: `str`
 
+<a id="listgrantsresponsetypedef"></a>
+
 ## ListGrantsResponseTypeDef
 
 ```python
@@ -873,6 +985,8 @@ Required fields:
 - `Truncated`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listkeypoliciesrequestrequesttypedef"></a>
 
 ## ListKeyPoliciesRequestRequestTypeDef
 
@@ -889,6 +1003,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="listkeypoliciesresponsetypedef"></a>
+
 ## ListKeyPoliciesResponseTypeDef
 
 ```python
@@ -903,6 +1019,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listkeysrequestrequesttypedef"></a>
+
 ## ListKeysRequestRequestTypeDef
 
 ```python
@@ -913,6 +1031,8 @@ Optional fields:
 
 - `Limit`: `int`
 - `Marker`: `str`
+
+<a id="listkeysresponsetypedef"></a>
 
 ## ListKeysResponseTypeDef
 
@@ -927,6 +1047,8 @@ Required fields:
 - `Truncated`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listresourcetagsrequestrequesttypedef"></a>
 
 ## ListResourceTagsRequestRequestTypeDef
 
@@ -943,6 +1065,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="listresourcetagsresponsetypedef"></a>
+
 ## ListResourceTagsResponseTypeDef
 
 ```python
@@ -956,6 +1080,8 @@ Required fields:
 - `Truncated`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listretirablegrantsrequestrequesttypedef"></a>
 
 ## ListRetirableGrantsRequestRequestTypeDef
 
@@ -972,6 +1098,8 @@ Optional fields:
 - `Limit`: `int`
 - `Marker`: `str`
 
+<a id="multiregionconfigurationtypedef"></a>
+
 ## MultiRegionConfigurationTypeDef
 
 ```python
@@ -986,6 +1114,8 @@ Optional fields:
 - `ReplicaKeys`:
   `List`\[[MultiRegionKeyTypeDef](./type_defs.md#multiregionkeytypedef)\]
 
+<a id="multiregionkeytypedef"></a>
+
 ## MultiRegionKeyTypeDef
 
 ```python
@@ -996,6 +1126,8 @@ Optional fields:
 
 - `Arn`: `str`
 - `Region`: `str`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -1008,6 +1140,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="putkeypolicyrequestrequesttypedef"></a>
 
 ## PutKeyPolicyRequestRequestTypeDef
 
@@ -1024,6 +1158,8 @@ Required fields:
 Optional fields:
 
 - `BypassPolicyLockoutSafetyCheck`: `bool`
+
+<a id="reencryptrequestrequesttypedef"></a>
 
 ## ReEncryptRequestRequestTypeDef
 
@@ -1047,6 +1183,8 @@ Optional fields:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="reencryptresponsetypedef"></a>
+
 ## ReEncryptResponseTypeDef
 
 ```python
@@ -1064,6 +1202,8 @@ Required fields:
   [EncryptionAlgorithmSpecType](./literals.md#encryptionalgorithmspectype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="replicatekeyrequestrequesttypedef"></a>
 
 ## ReplicateKeyRequestRequestTypeDef
 
@@ -1083,6 +1223,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
+<a id="replicatekeyresponsetypedef"></a>
+
 ## ReplicateKeyResponseTypeDef
 
 ```python
@@ -1096,6 +1238,8 @@ Required fields:
 - `ReplicaTags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -1111,6 +1255,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="retiregrantrequestrequesttypedef"></a>
+
 ## RetireGrantRequestRequestTypeDef
 
 ```python
@@ -1123,6 +1269,8 @@ Optional fields:
 - `KeyId`: `str`
 - `GrantId`: `str`
 
+<a id="revokegrantrequestrequesttypedef"></a>
+
 ## RevokeGrantRequestRequestTypeDef
 
 ```python
@@ -1133,6 +1281,8 @@ Required fields:
 
 - `KeyId`: `str`
 - `GrantId`: `str`
+
+<a id="schedulekeydeletionrequestrequesttypedef"></a>
 
 ## ScheduleKeyDeletionRequestRequestTypeDef
 
@@ -1148,6 +1298,8 @@ Optional fields:
 
 - `PendingWindowInDays`: `int`
 
+<a id="schedulekeydeletionresponsetypedef"></a>
+
 ## ScheduleKeyDeletionResponseTypeDef
 
 ```python
@@ -1162,6 +1314,8 @@ Required fields:
 - `PendingWindowInDays`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="signrequestrequesttypedef"></a>
 
 ## SignRequestRequestTypeDef
 
@@ -1181,6 +1335,8 @@ Optional fields:
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `GrantTokens`: `Sequence`\[`str`\]
 
+<a id="signresponsetypedef"></a>
+
 ## SignResponseTypeDef
 
 ```python
@@ -1196,6 +1352,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -1206,6 +1364,8 @@ Required fields:
 
 - `KeyId`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 
@@ -1218,6 +1378,8 @@ Required fields:
 - `TagKey`: `str`
 - `TagValue`: `str`
 
+<a id="untagresourcerequestrequesttypedef"></a>
+
 ## UntagResourceRequestRequestTypeDef
 
 ```python
@@ -1229,6 +1391,8 @@ Required fields:
 - `KeyId`: `str`
 - `TagKeys`: `Sequence`\[`str`\]
 
+<a id="updatealiasrequestrequesttypedef"></a>
+
 ## UpdateAliasRequestRequestTypeDef
 
 ```python
@@ -1239,6 +1403,8 @@ Required fields:
 
 - `AliasName`: `str`
 - `TargetKeyId`: `str`
+
+<a id="updatecustomkeystorerequestrequesttypedef"></a>
 
 ## UpdateCustomKeyStoreRequestRequestTypeDef
 
@@ -1256,6 +1422,8 @@ Optional fields:
 - `KeyStorePassword`: `str`
 - `CloudHsmClusterId`: `str`
 
+<a id="updatekeydescriptionrequestrequesttypedef"></a>
+
 ## UpdateKeyDescriptionRequestRequestTypeDef
 
 ```python
@@ -1267,6 +1435,8 @@ Required fields:
 - `KeyId`: `str`
 - `Description`: `str`
 
+<a id="updateprimaryregionrequestrequesttypedef"></a>
+
 ## UpdatePrimaryRegionRequestRequestTypeDef
 
 ```python
@@ -1277,6 +1447,8 @@ Required fields:
 
 - `KeyId`: `str`
 - `PrimaryRegion`: `str`
+
+<a id="verifyrequestrequesttypedef"></a>
 
 ## VerifyRequestRequestTypeDef
 
@@ -1296,6 +1468,8 @@ Optional fields:
 
 - `MessageType`: [MessageTypeType](./literals.md#messagetypetype)
 - `GrantTokens`: `Sequence`\[`str`\]
+
+<a id="verifyresponsetypedef"></a>
 
 ## VerifyResponseTypeDef
 

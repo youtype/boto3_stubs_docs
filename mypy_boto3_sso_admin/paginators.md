@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ssoadmin-module"></a>
+
 # Paginators for boto3 SSOAdmin module
 
 > [Index](..) > [SSOAdmin](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSOAdmin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sso-admin.html#SSOAdmin)
 type annotations stubs module
-[mypy_boto3_sso_admin](https://pypi.org/project/mypy-boto3-sso-admin/).
+[mypy-boto3-sso-admin](https://pypi.org/project/mypy-boto3-sso-admin/).
 
 - [Paginators for boto3 SSOAdmin module](#paginators-for-boto3-ssoadmin-module)
   - [ListAccountAssignmentCreationStatusPaginator](#listaccountassignmentcreationstatuspaginator)
@@ -19,6 +21,8 @@ type annotations stubs module
   - [ListPermissionSetsProvisionedToAccountPaginator](#listpermissionsetsprovisionedtoaccountpaginator)
   - [ListTagsForResourcePaginator](#listtagsforresourcepaginator)
 
+<a id="listaccountassignmentcreationstatuspaginator"></a>
+
 ## ListAccountAssignmentCreationStatusPaginator
 
 Type annotations for
@@ -27,10 +31,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListAccountAssignmentCreationStatusPaginator
 
 def get_list_account_assignment_creation_status_paginator() -> ListAccountAssignmentCreationStatusPaginator:
-    return boto3.client("sso-admin").get_paginator("list_account_assignment_creation_status")
+    return Session().client("sso-admin").get_paginator("list_account_assignment_creation_status")
 ```
 
 Boto3 documentation:
@@ -47,6 +53,8 @@ Arguments for `ListAccountAssignmentCreationStatusPaginator.paginate` method:
 `ListAccountAssignmentCreationStatusPaginator.paginate` returns
 `_PageIterator`\[[ListAccountAssignmentCreationStatusResponseTypeDef](./type_defs.md#listaccountassignmentcreationstatusresponsetypedef)\].
 
+<a id="listaccountassignmentdeletionstatuspaginator"></a>
+
 ## ListAccountAssignmentDeletionStatusPaginator
 
 Type annotations for
@@ -55,10 +63,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListAccountAssignmentDeletionStatusPaginator
 
 def get_list_account_assignment_deletion_status_paginator() -> ListAccountAssignmentDeletionStatusPaginator:
-    return boto3.client("sso-admin").get_paginator("list_account_assignment_deletion_status")
+    return Session().client("sso-admin").get_paginator("list_account_assignment_deletion_status")
 ```
 
 Boto3 documentation:
@@ -75,6 +85,8 @@ Arguments for `ListAccountAssignmentDeletionStatusPaginator.paginate` method:
 `ListAccountAssignmentDeletionStatusPaginator.paginate` returns
 `_PageIterator`\[[ListAccountAssignmentDeletionStatusResponseTypeDef](./type_defs.md#listaccountassignmentdeletionstatusresponsetypedef)\].
 
+<a id="listaccountassignmentspaginator"></a>
+
 ## ListAccountAssignmentsPaginator
 
 Type annotations for
@@ -83,10 +95,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListAccountAssignmentsPaginator
 
 def get_list_account_assignments_paginator() -> ListAccountAssignmentsPaginator:
-    return boto3.client("sso-admin").get_paginator("list_account_assignments")
+    return Session().client("sso-admin").get_paginator("list_account_assignments")
 ```
 
 Boto3 documentation:
@@ -103,6 +117,8 @@ Arguments for `ListAccountAssignmentsPaginator.paginate` method:
 `ListAccountAssignmentsPaginator.paginate` returns
 `_PageIterator`\[[ListAccountAssignmentsResponseTypeDef](./type_defs.md#listaccountassignmentsresponsetypedef)\].
 
+<a id="listaccountsforprovisionedpermissionsetpaginator"></a>
+
 ## ListAccountsForProvisionedPermissionSetPaginator
 
 Type annotations for
@@ -111,10 +127,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListAccountsForProvisionedPermissionSetPaginator
 
 def get_list_accounts_for_provisioned_permission_set_paginator() -> ListAccountsForProvisionedPermissionSetPaginator:
-    return boto3.client("sso-admin").get_paginator("list_accounts_for_provisioned_permission_set")
+    return Session().client("sso-admin").get_paginator("list_accounts_for_provisioned_permission_set")
 ```
 
 Boto3 documentation:
@@ -133,6 +151,8 @@ method:
 `ListAccountsForProvisionedPermissionSetPaginator.paginate` returns
 `_PageIterator`\[[ListAccountsForProvisionedPermissionSetResponseTypeDef](./type_defs.md#listaccountsforprovisionedpermissionsetresponsetypedef)\].
 
+<a id="listinstancespaginator"></a>
+
 ## ListInstancesPaginator
 
 Type annotations for
@@ -141,10 +161,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListInstancesPaginator
 
 def get_list_instances_paginator() -> ListInstancesPaginator:
-    return boto3.client("sso-admin").get_paginator("list_instances")
+    return Session().client("sso-admin").get_paginator("list_instances")
 ```
 
 Boto3 documentation:
@@ -158,6 +180,8 @@ Arguments for `ListInstancesPaginator.paginate` method:
 `ListInstancesPaginator.paginate` returns
 `_PageIterator`\[[ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef)\].
 
+<a id="listmanagedpoliciesinpermissionsetpaginator"></a>
+
 ## ListManagedPoliciesInPermissionSetPaginator
 
 Type annotations for
@@ -166,10 +190,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListManagedPoliciesInPermissionSetPaginator
 
 def get_list_managed_policies_in_permission_set_paginator() -> ListManagedPoliciesInPermissionSetPaginator:
-    return boto3.client("sso-admin").get_paginator("list_managed_policies_in_permission_set")
+    return Session().client("sso-admin").get_paginator("list_managed_policies_in_permission_set")
 ```
 
 Boto3 documentation:
@@ -185,6 +211,8 @@ Arguments for `ListManagedPoliciesInPermissionSetPaginator.paginate` method:
 `ListManagedPoliciesInPermissionSetPaginator.paginate` returns
 `_PageIterator`\[[ListManagedPoliciesInPermissionSetResponseTypeDef](./type_defs.md#listmanagedpoliciesinpermissionsetresponsetypedef)\].
 
+<a id="listpermissionsetprovisioningstatuspaginator"></a>
+
 ## ListPermissionSetProvisioningStatusPaginator
 
 Type annotations for
@@ -193,10 +221,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListPermissionSetProvisioningStatusPaginator
 
 def get_list_permission_set_provisioning_status_paginator() -> ListPermissionSetProvisioningStatusPaginator:
-    return boto3.client("sso-admin").get_paginator("list_permission_set_provisioning_status")
+    return Session().client("sso-admin").get_paginator("list_permission_set_provisioning_status")
 ```
 
 Boto3 documentation:
@@ -213,6 +243,8 @@ Arguments for `ListPermissionSetProvisioningStatusPaginator.paginate` method:
 `ListPermissionSetProvisioningStatusPaginator.paginate` returns
 `_PageIterator`\[[ListPermissionSetProvisioningStatusResponseTypeDef](./type_defs.md#listpermissionsetprovisioningstatusresponsetypedef)\].
 
+<a id="listpermissionsetspaginator"></a>
+
 ## ListPermissionSetsPaginator
 
 Type annotations for
@@ -221,10 +253,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListPermissionSetsPaginator
 
 def get_list_permission_sets_paginator() -> ListPermissionSetsPaginator:
-    return boto3.client("sso-admin").get_paginator("list_permission_sets")
+    return Session().client("sso-admin").get_paginator("list_permission_sets")
 ```
 
 Boto3 documentation:
@@ -239,6 +273,8 @@ Arguments for `ListPermissionSetsPaginator.paginate` method:
 `ListPermissionSetsPaginator.paginate` returns
 `_PageIterator`\[[ListPermissionSetsResponseTypeDef](./type_defs.md#listpermissionsetsresponsetypedef)\].
 
+<a id="listpermissionsetsprovisionedtoaccountpaginator"></a>
+
 ## ListPermissionSetsProvisionedToAccountPaginator
 
 Type annotations for
@@ -247,10 +283,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListPermissionSetsProvisionedToAccountPaginator
 
 def get_list_permission_sets_provisioned_to_account_paginator() -> ListPermissionSetsProvisionedToAccountPaginator:
-    return boto3.client("sso-admin").get_paginator("list_permission_sets_provisioned_to_account")
+    return Session().client("sso-admin").get_paginator("list_permission_sets_provisioned_to_account")
 ```
 
 Boto3 documentation:
@@ -269,6 +307,8 @@ method:
 `ListPermissionSetsProvisionedToAccountPaginator.paginate` returns
 `_PageIterator`\[[ListPermissionSetsProvisionedToAccountResponseTypeDef](./type_defs.md#listpermissionsetsprovisionedtoaccountresponsetypedef)\].
 
+<a id="listtagsforresourcepaginator"></a>
+
 ## ListTagsForResourcePaginator
 
 Type annotations for
@@ -277,10 +317,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_sso_admin.paginator import ListTagsForResourcePaginator
 
 def get_list_tags_for_resource_paginator() -> ListTagsForResourcePaginator:
-    return boto3.client("sso-admin").get_paginator("list_tags_for_resource")
+    return Session().client("sso-admin").get_paginator("list_tags_for_resource")
 ```
 
 Boto3 documentation:

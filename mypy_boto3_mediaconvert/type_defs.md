@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-mediaconvert-module"></a>
+
 # Typed dictionaries for boto3 MediaConvert module
 
 > [Index](..) > [MediaConvert](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MediaConvert](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/mediaconvert.html#MediaConvert)
 type annotations stubs module
-[mypy_boto3_mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
+[mypy-boto3-mediaconvert](https://pypi.org/project/mypy-boto3-mediaconvert/).
 
 - [Typed dictionaries for boto3 MediaConvert module](#typed-dictionaries-for-boto3-mediaconvert-module)
   - [AacSettingsTypeDef](#aacsettingstypedef)
@@ -221,6 +223,8 @@ type annotations stubs module
   - [XavcHdProfileSettingsTypeDef](#xavchdprofilesettingstypedef)
   - [XavcSettingsTypeDef](#xavcsettingstypedef)
 
+<a id="aacsettingstypedef"></a>
+
 ## AacSettingsTypeDef
 
 ```python
@@ -240,6 +244,8 @@ Optional fields:
 - `SampleRate`: `int`
 - `Specification`: [AacSpecificationType](./literals.md#aacspecificationtype)
 - `VbrQuality`: [AacVbrQualityType](./literals.md#aacvbrqualitytype)
+
+<a id="ac3settingstypedef"></a>
 
 ## Ac3SettingsTypeDef
 
@@ -264,6 +270,8 @@ Optional fields:
   [Ac3MetadataControlType](./literals.md#ac3metadatacontroltype)
 - `SampleRate`: `int`
 
+<a id="accelerationsettingstypedef"></a>
+
 ## AccelerationSettingsTypeDef
 
 ```python
@@ -273,6 +281,8 @@ from mypy_boto3_mediaconvert.type_defs import AccelerationSettingsTypeDef
 Required fields:
 
 - `Mode`: [AccelerationModeType](./literals.md#accelerationmodetype)
+
+<a id="aiffsettingstypedef"></a>
 
 ## AiffSettingsTypeDef
 
@@ -285,6 +295,8 @@ Optional fields:
 - `BitDepth`: `int`
 - `Channels`: `int`
 - `SampleRate`: `int`
+
+<a id="ancillarysourcesettingstypedef"></a>
 
 ## AncillarySourceSettingsTypeDef
 
@@ -300,6 +312,8 @@ Optional fields:
 - `TerminateCaptions`:
   [AncillaryTerminateCaptionsType](./literals.md#ancillaryterminatecaptionstype)
 
+<a id="associatecertificaterequestrequesttypedef"></a>
+
 ## AssociateCertificateRequestRequestTypeDef
 
 ```python
@@ -310,6 +324,8 @@ Required fields:
 
 - `Arn`: `str`
 
+<a id="audiochanneltaggingsettingstypedef"></a>
+
 ## AudioChannelTaggingSettingsTypeDef
 
 ```python
@@ -319,6 +335,8 @@ from mypy_boto3_mediaconvert.type_defs import AudioChannelTaggingSettingsTypeDef
 Optional fields:
 
 - `ChannelTag`: [AudioChannelTagType](./literals.md#audiochanneltagtype)
+
+<a id="audiocodecsettingstypedef"></a>
 
 ## AudioCodecSettingsTypeDef
 
@@ -341,6 +359,8 @@ Optional fields:
 - `VorbisSettings`:
   [VorbisSettingsTypeDef](./type_defs.md#vorbissettingstypedef)
 - `WavSettings`: [WavSettingsTypeDef](./type_defs.md#wavsettingstypedef)
+
+<a id="audiodescriptiontypedef"></a>
 
 ## AudioDescriptionTypeDef
 
@@ -367,6 +387,8 @@ Optional fields:
 - `RemixSettings`: [RemixSettingsTypeDef](./type_defs.md#remixsettingstypedef)
 - `StreamName`: `str`
 
+<a id="audionormalizationsettingstypedef"></a>
+
 ## AudioNormalizationSettingsTypeDef
 
 ```python
@@ -386,6 +408,8 @@ Optional fields:
   [AudioNormalizationPeakCalculationType](./literals.md#audionormalizationpeakcalculationtype)
 - `TargetLkfs`: `float`
 
+<a id="audioselectorgrouptypedef"></a>
+
 ## AudioSelectorGroupTypeDef
 
 ```python
@@ -395,6 +419,8 @@ from mypy_boto3_mediaconvert.type_defs import AudioSelectorGroupTypeDef
 Optional fields:
 
 - `AudioSelectorNames`: `Sequence`\[`str`\]
+
+<a id="audioselectortypedef"></a>
 
 ## AudioSelectorTypeDef
 
@@ -418,6 +444,8 @@ Optional fields:
 - `SelectorType`: [AudioSelectorTypeType](./literals.md#audioselectortypetype)
 - `Tracks`: `Sequence`\[`int`\]
 
+<a id="automatedabrsettingstypedef"></a>
+
 ## AutomatedAbrSettingsTypeDef
 
 ```python
@@ -430,6 +458,8 @@ Optional fields:
 - `MaxRenditions`: `int`
 - `MinAbrBitrate`: `int`
 
+<a id="automatedencodingsettingstypedef"></a>
+
 ## AutomatedEncodingSettingsTypeDef
 
 ```python
@@ -441,6 +471,8 @@ Optional fields:
 - `AbrSettings`:
   [AutomatedAbrSettingsTypeDef](./type_defs.md#automatedabrsettingstypedef)
 
+<a id="av1qvbrsettingstypedef"></a>
+
 ## Av1QvbrSettingsTypeDef
 
 ```python
@@ -451,6 +483,8 @@ Optional fields:
 
 - `QvbrQualityLevel`: `int`
 - `QvbrQualityLevelFineTune`: `float`
+
+<a id="av1settingstypedef"></a>
 
 ## Av1SettingsTypeDef
 
@@ -480,6 +514,8 @@ Optional fields:
 - `SpatialAdaptiveQuantization`:
   [Av1SpatialAdaptiveQuantizationType](./literals.md#av1spatialadaptivequantizationtype)
 
+<a id="availblankingtypedef"></a>
+
 ## AvailBlankingTypeDef
 
 ```python
@@ -489,6 +525,8 @@ from mypy_boto3_mediaconvert.type_defs import AvailBlankingTypeDef
 Optional fields:
 
 - `AvailBlankingImage`: `str`
+
+<a id="avcintrasettingstypedef"></a>
 
 ## AvcIntraSettingsTypeDef
 
@@ -514,6 +552,8 @@ Optional fields:
 - `SlowPal`: [AvcIntraSlowPalType](./literals.md#avcintraslowpaltype)
 - `Telecine`: [AvcIntraTelecineType](./literals.md#avcintratelecinetype)
 
+<a id="avcintrauhdsettingstypedef"></a>
+
 ## AvcIntraUhdSettingsTypeDef
 
 ```python
@@ -524,6 +564,8 @@ Optional fields:
 
 - `QualityTuningLevel`:
   [AvcIntraUhdQualityTuningLevelType](./literals.md#avcintrauhdqualitytuningleveltype)
+
+<a id="burnindestinationsettingstypedef"></a>
 
 ## BurninDestinationSettingsTypeDef
 
@@ -564,6 +606,8 @@ Optional fields:
 - `XPosition`: `int`
 - `YPosition`: `int`
 
+<a id="canceljobrequestrequesttypedef"></a>
+
 ## CancelJobRequestRequestTypeDef
 
 ```python
@@ -573,6 +617,8 @@ from mypy_boto3_mediaconvert.type_defs import CancelJobRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="captiondescriptionpresettypedef"></a>
 
 ## CaptionDescriptionPresetTypeDef
 
@@ -588,6 +634,8 @@ Optional fields:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LanguageDescription`: `str`
 
+<a id="captiondescriptiontypedef"></a>
+
 ## CaptionDescriptionTypeDef
 
 ```python
@@ -602,6 +650,8 @@ Optional fields:
   [CaptionDestinationSettingsTypeDef](./type_defs.md#captiondestinationsettingstypedef)
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LanguageDescription`: `str`
+
+<a id="captiondestinationsettingstypedef"></a>
 
 ## CaptionDestinationSettingsTypeDef
 
@@ -632,6 +682,8 @@ Optional fields:
 - `WebvttDestinationSettings`:
   [WebvttDestinationSettingsTypeDef](./type_defs.md#webvttdestinationsettingstypedef)
 
+<a id="captionselectortypedef"></a>
+
 ## CaptionSelectorTypeDef
 
 ```python
@@ -645,6 +697,8 @@ Optional fields:
 - `SourceSettings`:
   [CaptionSourceSettingsTypeDef](./type_defs.md#captionsourcesettingstypedef)
 
+<a id="captionsourceframeratetypedef"></a>
+
 ## CaptionSourceFramerateTypeDef
 
 ```python
@@ -655,6 +709,8 @@ Optional fields:
 
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
+
+<a id="captionsourcesettingstypedef"></a>
 
 ## CaptionSourceSettingsTypeDef
 
@@ -680,6 +736,8 @@ Optional fields:
 - `WebvttHlsSourceSettings`:
   [WebvttHlsSourceSettingsTypeDef](./type_defs.md#webvtthlssourcesettingstypedef)
 
+<a id="channelmappingtypedef"></a>
+
 ## ChannelMappingTypeDef
 
 ```python
@@ -691,6 +749,8 @@ Optional fields:
 - `OutputChannels`:
   `Sequence`\[[OutputChannelMappingTypeDef](./type_defs.md#outputchannelmappingtypedef)\]
 
+<a id="cmafadditionalmanifesttypedef"></a>
+
 ## CmafAdditionalManifestTypeDef
 
 ```python
@@ -701,6 +761,8 @@ Optional fields:
 
 - `ManifestNameModifier`: `str`
 - `SelectedOutputs`: `Sequence`\[`str`\]
+
+<a id="cmafencryptionsettingstypedef"></a>
 
 ## CmafEncryptionSettingsTypeDef
 
@@ -720,6 +782,8 @@ Optional fields:
 - `StaticKeyProvider`:
   [StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef)
 - `Type`: [CmafKeyProviderTypeType](./literals.md#cmafkeyprovidertypetype)
+
+<a id="cmafgroupsettingstypedef"></a>
 
 ## CmafGroupSettingsTypeDef
 
@@ -770,6 +834,8 @@ Optional fields:
 - `WriteSegmentTimelineInRepresentation`:
   [CmafWriteSegmentTimelineInRepresentationType](./literals.md#cmafwritesegmenttimelineinrepresentationtype)
 
+<a id="cmafimagebasedtrickplaysettingstypedef"></a>
+
 ## CmafImageBasedTrickPlaySettingsTypeDef
 
 ```python
@@ -785,6 +851,8 @@ Optional fields:
 - `ThumbnailWidth`: `int`
 - `TileHeight`: `int`
 - `TileWidth`: `int`
+
+<a id="cmfcsettingstypedef"></a>
 
 ## CmfcSettingsTypeDef
 
@@ -807,6 +875,8 @@ Optional fields:
 - `Scte35Source`: [CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype)
 - `TimedMetadata`: [CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype)
 
+<a id="colorcorrectortypedef"></a>
+
 ## ColorCorrectorTypeDef
 
 ```python
@@ -825,6 +895,8 @@ Optional fields:
   [SampleRangeConversionType](./literals.md#samplerangeconversiontype)
 - `Saturation`: `int`
 
+<a id="containersettingstypedef"></a>
+
 ## ContainerSettingsTypeDef
 
 ```python
@@ -842,6 +914,8 @@ Optional fields:
 - `Mp4Settings`: [Mp4SettingsTypeDef](./type_defs.md#mp4settingstypedef)
 - `MpdSettings`: [MpdSettingsTypeDef](./type_defs.md#mpdsettingstypedef)
 - `MxfSettings`: [MxfSettingsTypeDef](./type_defs.md#mxfsettingstypedef)
+
+<a id="createjobrequestrequesttypedef"></a>
 
 ## CreateJobRequestRequestTypeDef
 
@@ -873,6 +947,8 @@ Optional fields:
 - `Tags`: `Mapping`\[`str`, `str`\]
 - `UserMetadata`: `Mapping`\[`str`, `str`\]
 
+<a id="createjobresponsetypedef"></a>
+
 ## CreateJobResponseTypeDef
 
 ```python
@@ -884,6 +960,8 @@ Required fields:
 - `Job`: [JobTypeDef](./type_defs.md#jobtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createjobtemplaterequestrequesttypedef"></a>
 
 ## CreateJobTemplateRequestRequestTypeDef
 
@@ -911,6 +989,8 @@ Optional fields:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createjobtemplateresponsetypedef"></a>
+
 ## CreateJobTemplateResponseTypeDef
 
 ```python
@@ -922,6 +1002,8 @@ Required fields:
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createpresetrequestrequesttypedef"></a>
 
 ## CreatePresetRequestRequestTypeDef
 
@@ -940,6 +1022,8 @@ Optional fields:
 - `Description`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createpresetresponsetypedef"></a>
+
 ## CreatePresetResponseTypeDef
 
 ```python
@@ -951,6 +1035,8 @@ Required fields:
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createqueuerequestrequesttypedef"></a>
 
 ## CreateQueueRequestRequestTypeDef
 
@@ -971,6 +1057,8 @@ Optional fields:
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
 - `Tags`: `Mapping`\[`str`, `str`\]
 
+<a id="createqueueresponsetypedef"></a>
+
 ## CreateQueueResponseTypeDef
 
 ```python
@@ -983,6 +1071,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="dashadditionalmanifesttypedef"></a>
+
 ## DashAdditionalManifestTypeDef
 
 ```python
@@ -993,6 +1083,8 @@ Optional fields:
 
 - `ManifestNameModifier`: `str`
 - `SelectedOutputs`: `Sequence`\[`str`\]
+
+<a id="dashisoencryptionsettingstypedef"></a>
 
 ## DashIsoEncryptionSettingsTypeDef
 
@@ -1006,6 +1098,8 @@ Optional fields:
   [DashIsoPlaybackDeviceCompatibilityType](./literals.md#dashisoplaybackdevicecompatibilitytype)
 - `SpekeKeyProvider`:
   [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
+
+<a id="dashisogroupsettingstypedef"></a>
 
 ## DashIsoGroupSettingsTypeDef
 
@@ -1045,6 +1139,8 @@ Optional fields:
 - `WriteSegmentTimelineInRepresentation`:
   [DashIsoWriteSegmentTimelineInRepresentationType](./literals.md#dashisowritesegmenttimelineinrepresentationtype)
 
+<a id="dashisoimagebasedtrickplaysettingstypedef"></a>
+
 ## DashIsoImageBasedTrickPlaySettingsTypeDef
 
 ```python
@@ -1061,6 +1157,8 @@ Optional fields:
 - `TileHeight`: `int`
 - `TileWidth`: `int`
 
+<a id="deinterlacertypedef"></a>
+
 ## DeinterlacerTypeDef
 
 ```python
@@ -1074,6 +1172,8 @@ Optional fields:
 - `Control`: [DeinterlacerControlType](./literals.md#deinterlacercontroltype)
 - `Mode`: [DeinterlacerModeType](./literals.md#deinterlacermodetype)
 
+<a id="deletejobtemplaterequestrequesttypedef"></a>
+
 ## DeleteJobTemplateRequestRequestTypeDef
 
 ```python
@@ -1083,6 +1183,8 @@ from mypy_boto3_mediaconvert.type_defs import DeleteJobTemplateRequestRequestTyp
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletepresetrequestrequesttypedef"></a>
 
 ## DeletePresetRequestRequestTypeDef
 
@@ -1094,6 +1196,8 @@ Required fields:
 
 - `Name`: `str`
 
+<a id="deletequeuerequestrequesttypedef"></a>
+
 ## DeleteQueueRequestRequestTypeDef
 
 ```python
@@ -1103,6 +1207,8 @@ from mypy_boto3_mediaconvert.type_defs import DeleteQueueRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="describeendpointsrequestrequesttypedef"></a>
 
 ## DescribeEndpointsRequestRequestTypeDef
 
@@ -1115,6 +1221,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `Mode`: [DescribeEndpointsModeType](./literals.md#describeendpointsmodetype)
 - `NextToken`: `str`
+
+<a id="describeendpointsresponsetypedef"></a>
 
 ## DescribeEndpointsResponseTypeDef
 
@@ -1129,6 +1237,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="destinationsettingstypedef"></a>
+
 ## DestinationSettingsTypeDef
 
 ```python
@@ -1140,6 +1250,8 @@ Optional fields:
 - `S3Settings`:
   [S3DestinationSettingsTypeDef](./type_defs.md#s3destinationsettingstypedef)
 
+<a id="disassociatecertificaterequestrequesttypedef"></a>
+
 ## DisassociateCertificateRequestRequestTypeDef
 
 ```python
@@ -1149,6 +1261,8 @@ from mypy_boto3_mediaconvert.type_defs import DisassociateCertificateRequestRequ
 Required fields:
 
 - `Arn`: `str`
+
+<a id="dolbyvisionlevel6metadatatypedef"></a>
 
 ## DolbyVisionLevel6MetadataTypeDef
 
@@ -1160,6 +1274,8 @@ Optional fields:
 
 - `MaxCll`: `int`
 - `MaxFall`: `int`
+
+<a id="dolbyvisiontypedef"></a>
 
 ## DolbyVisionTypeDef
 
@@ -1176,6 +1292,8 @@ Optional fields:
 - `Profile`: `Literal['PROFILE_5']` (see
   [DolbyVisionProfileType](./literals.md#dolbyvisionprofiletype))
 
+<a id="dvbnitsettingstypedef"></a>
+
 ## DvbNitSettingsTypeDef
 
 ```python
@@ -1187,6 +1305,8 @@ Optional fields:
 - `NetworkId`: `int`
 - `NetworkName`: `str`
 - `NitInterval`: `int`
+
+<a id="dvbsdtsettingstypedef"></a>
 
 ## DvbSdtSettingsTypeDef
 
@@ -1200,6 +1320,8 @@ Optional fields:
 - `SdtInterval`: `int`
 - `ServiceName`: `str`
 - `ServiceProviderName`: `str`
+
+<a id="dvbsubdestinationsettingstypedef"></a>
 
 ## DvbSubDestinationSettingsTypeDef
 
@@ -1247,6 +1369,8 @@ Optional fields:
 - `XPosition`: `int`
 - `YPosition`: `int`
 
+<a id="dvbsubsourcesettingstypedef"></a>
+
 ## DvbSubSourceSettingsTypeDef
 
 ```python
@@ -1257,6 +1381,8 @@ Optional fields:
 
 - `Pid`: `int`
 
+<a id="dvbtdtsettingstypedef"></a>
+
 ## DvbTdtSettingsTypeDef
 
 ```python
@@ -1266,6 +1392,8 @@ from mypy_boto3_mediaconvert.type_defs import DvbTdtSettingsTypeDef
 Optional fields:
 
 - `TdtInterval`: `int`
+
+<a id="eac3atmossettingstypedef"></a>
 
 ## Eac3AtmosSettingsTypeDef
 
@@ -1303,6 +1431,8 @@ Optional fields:
 - `SurroundExMode`:
   [Eac3AtmosSurroundExModeType](./literals.md#eac3atmossurroundexmodetype)
 
+<a id="eac3settingstypedef"></a>
+
 ## Eac3SettingsTypeDef
 
 ```python
@@ -1339,6 +1469,8 @@ Optional fields:
   [Eac3SurroundExModeType](./literals.md#eac3surroundexmodetype)
 - `SurroundMode`: [Eac3SurroundModeType](./literals.md#eac3surroundmodetype)
 
+<a id="embeddeddestinationsettingstypedef"></a>
+
 ## EmbeddedDestinationSettingsTypeDef
 
 ```python
@@ -1349,6 +1481,8 @@ Optional fields:
 
 - `Destination608ChannelNumber`: `int`
 - `Destination708ServiceNumber`: `int`
+
+<a id="embeddedsourcesettingstypedef"></a>
 
 ## EmbeddedSourceSettingsTypeDef
 
@@ -1365,6 +1499,8 @@ Optional fields:
 - `TerminateCaptions`:
   [EmbeddedTerminateCaptionsType](./literals.md#embeddedterminatecaptionstype)
 
+<a id="endpointtypedef"></a>
+
 ## EndpointTypeDef
 
 ```python
@@ -1375,6 +1511,8 @@ Optional fields:
 
 - `Url`: `str`
 
+<a id="esammanifestconfirmconditionnotificationtypedef"></a>
+
 ## EsamManifestConfirmConditionNotificationTypeDef
 
 ```python
@@ -1384,6 +1522,8 @@ from mypy_boto3_mediaconvert.type_defs import EsamManifestConfirmConditionNotifi
 Optional fields:
 
 - `MccXml`: `str`
+
+<a id="esamsettingstypedef"></a>
 
 ## EsamSettingsTypeDef
 
@@ -1399,6 +1539,8 @@ Optional fields:
 - `SignalProcessingNotification`:
   [EsamSignalProcessingNotificationTypeDef](./type_defs.md#esamsignalprocessingnotificationtypedef)
 
+<a id="esamsignalprocessingnotificationtypedef"></a>
+
 ## EsamSignalProcessingNotificationTypeDef
 
 ```python
@@ -1408,6 +1550,8 @@ from mypy_boto3_mediaconvert.type_defs import EsamSignalProcessingNotificationTy
 Optional fields:
 
 - `SccXml`: `str`
+
+<a id="extendeddataservicestypedef"></a>
 
 ## ExtendedDataServicesTypeDef
 
@@ -1421,6 +1565,8 @@ Optional fields:
   [CopyProtectionActionType](./literals.md#copyprotectionactiontype)
 - `VchipAction`: [VchipActionType](./literals.md#vchipactiontype)
 
+<a id="f4vsettingstypedef"></a>
+
 ## F4vSettingsTypeDef
 
 ```python
@@ -1430,6 +1576,8 @@ from mypy_boto3_mediaconvert.type_defs import F4vSettingsTypeDef
 Optional fields:
 
 - `MoovPlacement`: [F4vMoovPlacementType](./literals.md#f4vmoovplacementtype)
+
+<a id="filegroupsettingstypedef"></a>
 
 ## FileGroupSettingsTypeDef
 
@@ -1442,6 +1590,8 @@ Optional fields:
 - `Destination`: `str`
 - `DestinationSettings`:
   [DestinationSettingsTypeDef](./type_defs.md#destinationsettingstypedef)
+
+<a id="filesourcesettingstypedef"></a>
 
 ## FileSourceSettingsTypeDef
 
@@ -1460,6 +1610,8 @@ Optional fields:
 - `TimeDeltaUnits`:
   [FileSourceTimeDeltaUnitsType](./literals.md#filesourcetimedeltaunitstype)
 
+<a id="framecapturesettingstypedef"></a>
+
 ## FrameCaptureSettingsTypeDef
 
 ```python
@@ -1473,6 +1625,8 @@ Optional fields:
 - `MaxCaptures`: `int`
 - `Quality`: `int`
 
+<a id="getjobrequestrequesttypedef"></a>
+
 ## GetJobRequestRequestTypeDef
 
 ```python
@@ -1482,6 +1636,8 @@ from mypy_boto3_mediaconvert.type_defs import GetJobRequestRequestTypeDef
 Required fields:
 
 - `Id`: `str`
+
+<a id="getjobresponsetypedef"></a>
 
 ## GetJobResponseTypeDef
 
@@ -1495,6 +1651,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getjobtemplaterequestrequesttypedef"></a>
+
 ## GetJobTemplateRequestRequestTypeDef
 
 ```python
@@ -1504,6 +1662,8 @@ from mypy_boto3_mediaconvert.type_defs import GetJobTemplateRequestRequestTypeDe
 Required fields:
 
 - `Name`: `str`
+
+<a id="getjobtemplateresponsetypedef"></a>
 
 ## GetJobTemplateResponseTypeDef
 
@@ -1517,6 +1677,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpolicyresponsetypedef"></a>
+
 ## GetPolicyResponseTypeDef
 
 ```python
@@ -1529,6 +1691,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getpresetrequestrequesttypedef"></a>
+
 ## GetPresetRequestRequestTypeDef
 
 ```python
@@ -1538,6 +1702,8 @@ from mypy_boto3_mediaconvert.type_defs import GetPresetRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getpresetresponsetypedef"></a>
 
 ## GetPresetResponseTypeDef
 
@@ -1551,6 +1717,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getqueuerequestrequesttypedef"></a>
+
 ## GetQueueRequestRequestTypeDef
 
 ```python
@@ -1560,6 +1728,8 @@ from mypy_boto3_mediaconvert.type_defs import GetQueueRequestRequestTypeDef
 Required fields:
 
 - `Name`: `str`
+
+<a id="getqueueresponsetypedef"></a>
 
 ## GetQueueResponseTypeDef
 
@@ -1573,6 +1743,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="h264qvbrsettingstypedef"></a>
+
 ## H264QvbrSettingsTypeDef
 
 ```python
@@ -1584,6 +1756,8 @@ Optional fields:
 - `MaxAverageBitrate`: `int`
 - `QvbrQualityLevel`: `int`
 - `QvbrQualityLevelFineTune`: `float`
+
+<a id="h264settingstypedef"></a>
 
 ## H264SettingsTypeDef
 
@@ -1647,6 +1821,8 @@ Optional fields:
 - `UnregisteredSeiTimecode`:
   [H264UnregisteredSeiTimecodeType](./literals.md#h264unregisteredseitimecodetype)
 
+<a id="h265qvbrsettingstypedef"></a>
+
 ## H265QvbrSettingsTypeDef
 
 ```python
@@ -1658,6 +1834,8 @@ Optional fields:
 - `MaxAverageBitrate`: `int`
 - `QvbrQualityLevel`: `int`
 - `QvbrQualityLevelFineTune`: `float`
+
+<a id="h265settingstypedef"></a>
 
 ## H265SettingsTypeDef
 
@@ -1723,6 +1901,8 @@ Optional fields:
 - `WriteMp4PackagingType`:
   [H265WriteMp4PackagingTypeType](./literals.md#h265writemp4packagingtypetype)
 
+<a id="hdr10metadatatypedef"></a>
+
 ## Hdr10MetadataTypeDef
 
 ```python
@@ -1744,6 +1924,8 @@ Optional fields:
 - `WhitePointX`: `int`
 - `WhitePointY`: `int`
 
+<a id="hdr10plustypedef"></a>
+
 ## Hdr10PlusTypeDef
 
 ```python
@@ -1755,6 +1937,8 @@ Optional fields:
 - `MasteringMonitorNits`: `int`
 - `TargetMonitorNits`: `int`
 
+<a id="hlsadditionalmanifesttypedef"></a>
+
 ## HlsAdditionalManifestTypeDef
 
 ```python
@@ -1765,6 +1949,8 @@ Optional fields:
 
 - `ManifestNameModifier`: `str`
 - `SelectedOutputs`: `Sequence`\[`str`\]
+
+<a id="hlscaptionlanguagemappingtypedef"></a>
 
 ## HlsCaptionLanguageMappingTypeDef
 
@@ -1778,6 +1964,8 @@ Optional fields:
 - `CustomLanguageCode`: `str`
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `LanguageDescription`: `str`
+
+<a id="hlsencryptionsettingstypedef"></a>
 
 ## HlsEncryptionSettingsTypeDef
 
@@ -1799,6 +1987,8 @@ Optional fields:
 - `StaticKeyProvider`:
   [StaticKeyProviderTypeDef](./type_defs.md#statickeyprovidertypedef)
 - `Type`: [HlsKeyProviderTypeType](./literals.md#hlskeyprovidertypetype)
+
+<a id="hlsgroupsettingstypedef"></a>
 
 ## HlsGroupSettingsTypeDef
 
@@ -1858,6 +2048,8 @@ Optional fields:
 - `TimedMetadataId3Period`: `int`
 - `TimestampDeltaMilliseconds`: `int`
 
+<a id="hlsimagebasedtrickplaysettingstypedef"></a>
+
 ## HlsImageBasedTrickPlaySettingsTypeDef
 
 ```python
@@ -1874,6 +2066,8 @@ Optional fields:
 - `TileHeight`: `int`
 - `TileWidth`: `int`
 
+<a id="hlsrenditiongroupsettingstypedef"></a>
+
 ## HlsRenditionGroupSettingsTypeDef
 
 ```python
@@ -1885,6 +2079,8 @@ Optional fields:
 - `RenditionGroupId`: `str`
 - `RenditionLanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `RenditionName`: `str`
+
+<a id="hlssettingstypedef"></a>
 
 ## HlsSettingsTypeDef
 
@@ -1906,6 +2102,8 @@ Optional fields:
   [HlsIFrameOnlyManifestType](./literals.md#hlsiframeonlymanifesttype)
 - `SegmentModifier`: `str`
 
+<a id="hopdestinationtypedef"></a>
+
 ## HopDestinationTypeDef
 
 ```python
@@ -1918,6 +2116,8 @@ Optional fields:
 - `Queue`: `str`
 - `WaitMinutes`: `int`
 
+<a id="id3insertiontypedef"></a>
+
 ## Id3InsertionTypeDef
 
 ```python
@@ -1929,6 +2129,8 @@ Optional fields:
 - `Id3`: `str`
 - `Timecode`: `str`
 
+<a id="imageinsertertypedef"></a>
+
 ## ImageInserterTypeDef
 
 ```python
@@ -1939,6 +2141,8 @@ Optional fields:
 
 - `InsertableImages`:
   `Sequence`\[[InsertableImageTypeDef](./type_defs.md#insertableimagetypedef)\]
+
+<a id="imscdestinationsettingstypedef"></a>
 
 ## ImscDestinationSettingsTypeDef
 
@@ -1953,6 +2157,8 @@ Optional fields:
 - `StylePassthrough`:
   [ImscStylePassthroughType](./literals.md#imscstylepassthroughtype)
 
+<a id="inputclippingtypedef"></a>
+
 ## InputClippingTypeDef
 
 ```python
@@ -1963,6 +2169,8 @@ Optional fields:
 
 - `EndTimecode`: `str`
 - `StartTimecode`: `str`
+
+<a id="inputdecryptionsettingstypedef"></a>
 
 ## InputDecryptionSettingsTypeDef
 
@@ -1976,6 +2184,8 @@ Optional fields:
 - `EncryptedDecryptionKey`: `str`
 - `InitializationVector`: `str`
 - `KmsKeyRegion`: `str`
+
+<a id="inputtemplatetypedef"></a>
 
 ## InputTemplateTypeDef
 
@@ -2010,6 +2220,8 @@ Optional fields:
   [InputTimecodeSourceType](./literals.md#inputtimecodesourcetype)
 - `TimecodeStart`: `str`
 - `VideoSelector`: [VideoSelectorTypeDef](./type_defs.md#videoselectortypedef)
+
+<a id="inputtypedef"></a>
 
 ## InputTypeDef
 
@@ -2049,6 +2261,8 @@ Optional fields:
 - `TimecodeStart`: `str`
 - `VideoSelector`: [VideoSelectorTypeDef](./type_defs.md#videoselectortypedef)
 
+<a id="insertableimagetypedef"></a>
+
 ## InsertableImageTypeDef
 
 ```python
@@ -2069,6 +2283,8 @@ Optional fields:
 - `StartTime`: `str`
 - `Width`: `int`
 
+<a id="jobmessagestypedef"></a>
+
 ## JobMessagesTypeDef
 
 ```python
@@ -2079,6 +2295,8 @@ Optional fields:
 
 - `Info`: `List`\[`str`\]
 - `Warning`: `List`\[`str`\]
+
+<a id="jobsettingstypedef"></a>
 
 ## JobSettingsTypeDef
 
@@ -2108,6 +2326,8 @@ Optional fields:
   [TimecodeConfigTypeDef](./type_defs.md#timecodeconfigtypedef)
 - `TimedMetadataInsertion`:
   [TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef)
+
+<a id="jobtemplatesettingstypedef"></a>
 
 ## JobTemplateSettingsTypeDef
 
@@ -2139,6 +2359,8 @@ Optional fields:
 - `TimedMetadataInsertion`:
   [TimedMetadataInsertionTypeDef](./type_defs.md#timedmetadatainsertiontypedef)
 
+<a id="jobtemplatetypedef"></a>
+
 ## JobTemplateTypeDef
 
 ```python
@@ -2167,6 +2389,8 @@ Optional fields:
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="jobtypedef"></a>
 
 ## JobTypeDef
 
@@ -2213,6 +2437,8 @@ Optional fields:
 - `Timing`: [TimingTypeDef](./type_defs.md#timingtypedef)
 - `UserMetadata`: `Dict`\[`str`, `str`\]
 
+<a id="kantarwatermarksettingstypedef"></a>
+
 ## KantarWatermarkSettingsTypeDef
 
 ```python
@@ -2235,6 +2461,8 @@ Optional fields:
 - `Metadata7`: `str`
 - `Metadata8`: `str`
 
+<a id="listjobtemplatesrequestrequesttypedef"></a>
+
 ## ListJobTemplatesRequestRequestTypeDef
 
 ```python
@@ -2248,6 +2476,8 @@ Optional fields:
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
+
+<a id="listjobtemplatesresponsetypedef"></a>
 
 ## ListJobTemplatesResponseTypeDef
 
@@ -2263,6 +2493,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listjobsrequestrequesttypedef"></a>
+
 ## ListJobsRequestRequestTypeDef
 
 ```python
@@ -2277,6 +2509,8 @@ Optional fields:
 - `Queue`: `str`
 - `Status`: [JobStatusType](./literals.md#jobstatustype)
 
+<a id="listjobsresponsetypedef"></a>
+
 ## ListJobsResponseTypeDef
 
 ```python
@@ -2289,6 +2523,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpresetsrequestrequesttypedef"></a>
 
 ## ListPresetsRequestRequestTypeDef
 
@@ -2304,6 +2540,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
 
+<a id="listpresetsresponsetypedef"></a>
+
 ## ListPresetsResponseTypeDef
 
 ```python
@@ -2316,6 +2554,8 @@ Required fields:
 - `Presets`: `List`\[[PresetTypeDef](./type_defs.md#presettypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listqueuesrequestrequesttypedef"></a>
 
 ## ListQueuesRequestRequestTypeDef
 
@@ -2330,6 +2570,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Order`: [OrderType](./literals.md#ordertype)
 
+<a id="listqueuesresponsetypedef"></a>
+
 ## ListQueuesResponseTypeDef
 
 ```python
@@ -2343,6 +2585,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -2352,6 +2596,8 @@ from mypy_boto3_mediaconvert.type_defs import ListTagsForResourceRequestRequestT
 Required fields:
 
 - `Arn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -2365,6 +2611,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="m2tsscte35esamtypedef"></a>
+
 ## M2tsScte35EsamTypeDef
 
 ```python
@@ -2374,6 +2622,8 @@ from mypy_boto3_mediaconvert.type_defs import M2tsScte35EsamTypeDef
 Optional fields:
 
 - `Scte35EsamPid`: `int`
+
+<a id="m2tssettingstypedef"></a>
 
 ## M2tsSettingsTypeDef
 
@@ -2431,6 +2681,8 @@ Optional fields:
 - `TransportStreamId`: `int`
 - `VideoPid`: `int`
 
+<a id="m3u8settingstypedef"></a>
+
 ## M3u8SettingsTypeDef
 
 ```python
@@ -2460,6 +2712,8 @@ Optional fields:
 - `TransportStreamId`: `int`
 - `VideoPid`: `int`
 
+<a id="motionimageinsertertypedef"></a>
+
 ## MotionImageInserterTypeDef
 
 ```python
@@ -2478,6 +2732,8 @@ Optional fields:
 - `Playback`: [MotionImagePlaybackType](./literals.md#motionimageplaybacktype)
 - `StartTime`: `str`
 
+<a id="motionimageinsertionframeratetypedef"></a>
+
 ## MotionImageInsertionFramerateTypeDef
 
 ```python
@@ -2489,6 +2745,8 @@ Optional fields:
 - `FramerateDenominator`: `int`
 - `FramerateNumerator`: `int`
 
+<a id="motionimageinsertionoffsettypedef"></a>
+
 ## MotionImageInsertionOffsetTypeDef
 
 ```python
@@ -2499,6 +2757,8 @@ Optional fields:
 
 - `ImageX`: `int`
 - `ImageY`: `int`
+
+<a id="movsettingstypedef"></a>
 
 ## MovSettingsTypeDef
 
@@ -2516,6 +2776,8 @@ Optional fields:
   [MovPaddingControlType](./literals.md#movpaddingcontroltype)
 - `Reference`: [MovReferenceType](./literals.md#movreferencetype)
 
+<a id="mp2settingstypedef"></a>
+
 ## Mp2SettingsTypeDef
 
 ```python
@@ -2527,6 +2789,8 @@ Optional fields:
 - `Bitrate`: `int`
 - `Channels`: `int`
 - `SampleRate`: `int`
+
+<a id="mp3settingstypedef"></a>
 
 ## Mp3SettingsTypeDef
 
@@ -2543,6 +2807,8 @@ Optional fields:
 - `SampleRate`: `int`
 - `VbrQuality`: `int`
 
+<a id="mp4settingstypedef"></a>
+
 ## Mp4SettingsTypeDef
 
 ```python
@@ -2557,6 +2823,8 @@ Optional fields:
 - `FreeSpaceBox`: [Mp4FreeSpaceBoxType](./literals.md#mp4freespaceboxtype)
 - `MoovPlacement`: [Mp4MoovPlacementType](./literals.md#mp4moovplacementtype)
 - `Mp4MajorBrand`: `str`
+
+<a id="mpdsettingstypedef"></a>
 
 ## MpdSettingsTypeDef
 
@@ -2574,6 +2842,8 @@ Optional fields:
 - `Scte35Esam`: [MpdScte35EsamType](./literals.md#mpdscte35esamtype)
 - `Scte35Source`: [MpdScte35SourceType](./literals.md#mpdscte35sourcetype)
 - `TimedMetadata`: [MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype)
+
+<a id="mpeg2settingstypedef"></a>
 
 ## Mpeg2SettingsTypeDef
 
@@ -2628,6 +2898,8 @@ Optional fields:
 - `TemporalAdaptiveQuantization`:
   [Mpeg2TemporalAdaptiveQuantizationType](./literals.md#mpeg2temporaladaptivequantizationtype)
 
+<a id="mssmoothadditionalmanifesttypedef"></a>
+
 ## MsSmoothAdditionalManifestTypeDef
 
 ```python
@@ -2639,6 +2911,8 @@ Optional fields:
 - `ManifestNameModifier`: `str`
 - `SelectedOutputs`: `Sequence`\[`str`\]
 
+<a id="mssmoothencryptionsettingstypedef"></a>
+
 ## MsSmoothEncryptionSettingsTypeDef
 
 ```python
@@ -2649,6 +2923,8 @@ Optional fields:
 
 - `SpekeKeyProvider`:
   [SpekeKeyProviderTypeDef](./type_defs.md#spekekeyprovidertypedef)
+
+<a id="mssmoothgroupsettingstypedef"></a>
 
 ## MsSmoothGroupSettingsTypeDef
 
@@ -2673,6 +2949,8 @@ Optional fields:
 - `ManifestEncoding`:
   [MsSmoothManifestEncodingType](./literals.md#mssmoothmanifestencodingtype)
 
+<a id="mxfsettingstypedef"></a>
+
 ## MxfSettingsTypeDef
 
 ```python
@@ -2686,6 +2964,8 @@ Optional fields:
 - `XavcProfileSettings`:
   [MxfXavcProfileSettingsTypeDef](./type_defs.md#mxfxavcprofilesettingstypedef)
 
+<a id="mxfxavcprofilesettingstypedef"></a>
+
 ## MxfXavcProfileSettingsTypeDef
 
 ```python
@@ -2697,6 +2977,8 @@ Optional fields:
 - `DurationMode`:
   [MxfXavcDurationModeType](./literals.md#mxfxavcdurationmodetype)
 - `MaxAncDataSize`: `int`
+
+<a id="nexguardfilemarkersettingstypedef"></a>
 
 ## NexGuardFileMarkerSettingsTypeDef
 
@@ -2712,6 +2994,8 @@ Optional fields:
 - `Strength`:
   [WatermarkingStrengthType](./literals.md#watermarkingstrengthtype)
 
+<a id="nielsenconfigurationtypedef"></a>
+
 ## NielsenConfigurationTypeDef
 
 ```python
@@ -2722,6 +3006,8 @@ Optional fields:
 
 - `BreakoutCode`: `int`
 - `DistributorId`: `str`
+
+<a id="nielsennonlinearwatermarksettingstypedef"></a>
 
 ## NielsenNonLinearWatermarkSettingsTypeDef
 
@@ -2746,6 +3032,8 @@ Optional fields:
 - `UniqueTicPerAudioTrack`:
   [NielsenUniqueTicPerAudioTrackTypeType](./literals.md#nielsenuniqueticperaudiotracktypetype)
 
+<a id="noisereducerfiltersettingstypedef"></a>
+
 ## NoiseReducerFilterSettingsTypeDef
 
 ```python
@@ -2755,6 +3043,8 @@ from mypy_boto3_mediaconvert.type_defs import NoiseReducerFilterSettingsTypeDef
 Optional fields:
 
 - `Strength`: `int`
+
+<a id="noisereducerspatialfiltersettingstypedef"></a>
 
 ## NoiseReducerSpatialFilterSettingsTypeDef
 
@@ -2767,6 +3057,8 @@ Optional fields:
 - `PostFilterSharpenStrength`: `int`
 - `Speed`: `int`
 - `Strength`: `int`
+
+<a id="noisereducertemporalfiltersettingstypedef"></a>
 
 ## NoiseReducerTemporalFilterSettingsTypeDef
 
@@ -2784,6 +3076,8 @@ Optional fields:
 - `Speed`: `int`
 - `Strength`: `int`
 
+<a id="noisereducertypedef"></a>
+
 ## NoiseReducerTypeDef
 
 ```python
@@ -2800,6 +3094,8 @@ Optional fields:
 - `TemporalFilterSettings`:
   [NoiseReducerTemporalFilterSettingsTypeDef](./type_defs.md#noisereducertemporalfiltersettingstypedef)
 
+<a id="opussettingstypedef"></a>
+
 ## OpusSettingsTypeDef
 
 ```python
@@ -2812,6 +3108,8 @@ Optional fields:
 - `Channels`: `int`
 - `SampleRate`: `int`
 
+<a id="outputchannelmappingtypedef"></a>
+
 ## OutputChannelMappingTypeDef
 
 ```python
@@ -2822,6 +3120,8 @@ Optional fields:
 
 - `InputChannels`: `Sequence`\[`int`\]
 - `InputChannelsFineTune`: `Sequence`\[`float`\]
+
+<a id="outputdetailtypedef"></a>
 
 ## OutputDetailTypeDef
 
@@ -2834,6 +3134,8 @@ Optional fields:
 - `DurationInMs`: `int`
 - `VideoDetails`: [VideoDetailTypeDef](./type_defs.md#videodetailtypedef)
 
+<a id="outputgroupdetailtypedef"></a>
+
 ## OutputGroupDetailTypeDef
 
 ```python
@@ -2844,6 +3146,8 @@ Optional fields:
 
 - `OutputDetails`:
   `List`\[[OutputDetailTypeDef](./type_defs.md#outputdetailtypedef)\]
+
+<a id="outputgroupsettingstypedef"></a>
 
 ## OutputGroupSettingsTypeDef
 
@@ -2865,6 +3169,8 @@ Optional fields:
   [MsSmoothGroupSettingsTypeDef](./type_defs.md#mssmoothgroupsettingstypedef)
 - `Type`: [OutputGroupTypeType](./literals.md#outputgrouptypetype)
 
+<a id="outputgrouptypedef"></a>
+
 ## OutputGroupTypeDef
 
 ```python
@@ -2881,6 +3187,8 @@ Optional fields:
   [OutputGroupSettingsTypeDef](./type_defs.md#outputgroupsettingstypedef)
 - `Outputs`: `Sequence`\[[OutputTypeDef](./type_defs.md#outputtypedef)\]
 
+<a id="outputsettingstypedef"></a>
+
 ## OutputSettingsTypeDef
 
 ```python
@@ -2890,6 +3198,8 @@ from mypy_boto3_mediaconvert.type_defs import OutputSettingsTypeDef
 Optional fields:
 
 - `HlsSettings`: [HlsSettingsTypeDef](./type_defs.md#hlssettingstypedef)
+
+<a id="outputtypedef"></a>
 
 ## OutputTypeDef
 
@@ -2913,6 +3223,8 @@ Optional fields:
 - `VideoDescription`:
   [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2925,6 +3237,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="partnerwatermarkingtypedef"></a>
+
 ## PartnerWatermarkingTypeDef
 
 ```python
@@ -2935,6 +3249,8 @@ Optional fields:
 
 - `NexguardFileMarkerSettings`:
   [NexGuardFileMarkerSettingsTypeDef](./type_defs.md#nexguardfilemarkersettingstypedef)
+
+<a id="policytypedef"></a>
 
 ## PolicyTypeDef
 
@@ -2947,6 +3263,8 @@ Optional fields:
 - `HttpInputs`: [InputPolicyType](./literals.md#inputpolicytype)
 - `HttpsInputs`: [InputPolicyType](./literals.md#inputpolicytype)
 - `S3Inputs`: [InputPolicyType](./literals.md#inputpolicytype)
+
+<a id="presetsettingstypedef"></a>
 
 ## PresetSettingsTypeDef
 
@@ -2964,6 +3282,8 @@ Optional fields:
   [ContainerSettingsTypeDef](./type_defs.md#containersettingstypedef)
 - `VideoDescription`:
   [VideoDescriptionTypeDef](./type_defs.md#videodescriptiontypedef)
+
+<a id="presettypedef"></a>
 
 ## PresetTypeDef
 
@@ -2984,6 +3304,8 @@ Optional fields:
 - `Description`: `str`
 - `LastUpdated`: `datetime`
 - `Type`: [TypeType](./literals.md#typetype)
+
+<a id="proressettingstypedef"></a>
 
 ## ProresSettingsTypeDef
 
@@ -3013,6 +3335,8 @@ Optional fields:
 - `SlowPal`: [ProresSlowPalType](./literals.md#proresslowpaltype)
 - `Telecine`: [ProresTelecineType](./literals.md#prorestelecinetype)
 
+<a id="putpolicyrequestrequesttypedef"></a>
+
 ## PutPolicyRequestRequestTypeDef
 
 ```python
@@ -3022,6 +3346,8 @@ from mypy_boto3_mediaconvert.type_defs import PutPolicyRequestRequestTypeDef
 Required fields:
 
 - `Policy`: [PolicyTypeDef](./type_defs.md#policytypedef)
+
+<a id="putpolicyresponsetypedef"></a>
 
 ## PutPolicyResponseTypeDef
 
@@ -3035,6 +3361,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="queuetransitiontypedef"></a>
+
 ## QueueTransitionTypeDef
 
 ```python
@@ -3046,6 +3374,8 @@ Optional fields:
 - `DestinationQueue`: `str`
 - `SourceQueue`: `str`
 - `Timestamp`: `datetime`
+
+<a id="queuetypedef"></a>
 
 ## QueueTypeDef
 
@@ -3071,6 +3401,8 @@ Optional fields:
 - `SubmittedJobsCount`: `int`
 - `Type`: [TypeType](./literals.md#typetype)
 
+<a id="rectangletypedef"></a>
+
 ## RectangleTypeDef
 
 ```python
@@ -3083,6 +3415,8 @@ Optional fields:
 - `Width`: `int`
 - `X`: `int`
 - `Y`: `int`
+
+<a id="remixsettingstypedef"></a>
 
 ## RemixSettingsTypeDef
 
@@ -3097,6 +3431,8 @@ Optional fields:
 - `ChannelsIn`: `int`
 - `ChannelsOut`: `int`
 
+<a id="reservationplansettingstypedef"></a>
+
 ## ReservationPlanSettingsTypeDef
 
 ```python
@@ -3109,6 +3445,8 @@ Required fields:
   [CommitmentType](./literals.md#commitmenttype))
 - `RenewalType`: [RenewalTypeType](./literals.md#renewaltypetype)
 - `ReservedSlots`: `int`
+
+<a id="reservationplantypedef"></a>
 
 ## ReservationPlanTypeDef
 
@@ -3127,6 +3465,8 @@ Optional fields:
 - `Status`:
   [ReservationPlanStatusType](./literals.md#reservationplanstatustype)
 
+<a id="resourcetagstypedef"></a>
+
 ## ResourceTagsTypeDef
 
 ```python
@@ -3137,6 +3477,8 @@ Optional fields:
 
 - `Arn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -3152,6 +3494,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3destinationaccesscontroltypedef"></a>
+
 ## S3DestinationAccessControlTypeDef
 
 ```python
@@ -3161,6 +3505,8 @@ from mypy_boto3_mediaconvert.type_defs import S3DestinationAccessControlTypeDef
 Optional fields:
 
 - `CannedAcl`: [S3ObjectCannedAclType](./literals.md#s3objectcannedacltype)
+
+<a id="s3destinationsettingstypedef"></a>
 
 ## S3DestinationSettingsTypeDef
 
@@ -3175,6 +3521,8 @@ Optional fields:
 - `Encryption`:
   [S3EncryptionSettingsTypeDef](./type_defs.md#s3encryptionsettingstypedef)
 
+<a id="s3encryptionsettingstypedef"></a>
+
 ## S3EncryptionSettingsTypeDef
 
 ```python
@@ -3188,6 +3536,8 @@ Optional fields:
 - `KmsEncryptionContext`: `str`
 - `KmsKeyArn`: `str`
 
+<a id="sccdestinationsettingstypedef"></a>
+
 ## SccDestinationSettingsTypeDef
 
 ```python
@@ -3198,6 +3548,8 @@ Optional fields:
 
 - `Framerate`:
   [SccDestinationFramerateType](./literals.md#sccdestinationframeratetype)
+
+<a id="spekekeyprovidercmaftypedef"></a>
 
 ## SpekeKeyProviderCmafTypeDef
 
@@ -3213,6 +3565,8 @@ Optional fields:
 - `ResourceId`: `str`
 - `Url`: `str`
 
+<a id="spekekeyprovidertypedef"></a>
+
 ## SpekeKeyProviderTypeDef
 
 ```python
@@ -3226,6 +3580,8 @@ Optional fields:
 - `SystemIds`: `Sequence`\[`str`\]
 - `Url`: `str`
 
+<a id="srtdestinationsettingstypedef"></a>
+
 ## SrtDestinationSettingsTypeDef
 
 ```python
@@ -3236,6 +3592,8 @@ Optional fields:
 
 - `StylePassthrough`:
   [SrtStylePassthroughType](./literals.md#srtstylepassthroughtype)
+
+<a id="statickeyprovidertypedef"></a>
 
 ## StaticKeyProviderTypeDef
 
@@ -3250,6 +3608,8 @@ Optional fields:
 - `StaticKeyValue`: `str`
 - `Url`: `str`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -3260,6 +3620,8 @@ Required fields:
 
 - `Arn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
+
+<a id="teletextdestinationsettingstypedef"></a>
 
 ## TeletextDestinationSettingsTypeDef
 
@@ -3273,6 +3635,8 @@ Optional fields:
 - `PageTypes`:
   `Sequence`\[[TeletextPageTypeType](./literals.md#teletextpagetypetype)\]
 
+<a id="teletextsourcesettingstypedef"></a>
+
 ## TeletextSourceSettingsTypeDef
 
 ```python
@@ -3282,6 +3646,8 @@ from mypy_boto3_mediaconvert.type_defs import TeletextSourceSettingsTypeDef
 Optional fields:
 
 - `PageNumber`: `str`
+
+<a id="timecodeburnintypedef"></a>
 
 ## TimecodeBurninTypeDef
 
@@ -3296,6 +3662,8 @@ Optional fields:
   [TimecodeBurninPositionType](./literals.md#timecodeburninpositiontype)
 - `Prefix`: `str`
 
+<a id="timecodeconfigtypedef"></a>
+
 ## TimecodeConfigTypeDef
 
 ```python
@@ -3309,6 +3677,8 @@ Optional fields:
 - `Start`: `str`
 - `TimestampOffset`: `str`
 
+<a id="timedmetadatainsertiontypedef"></a>
+
 ## TimedMetadataInsertionTypeDef
 
 ```python
@@ -3319,6 +3689,8 @@ Optional fields:
 
 - `Id3Insertions`:
   `Sequence`\[[Id3InsertionTypeDef](./type_defs.md#id3insertiontypedef)\]
+
+<a id="timingtypedef"></a>
 
 ## TimingTypeDef
 
@@ -3332,6 +3704,8 @@ Optional fields:
 - `StartTime`: `datetime`
 - `SubmitTime`: `datetime`
 
+<a id="tracksourcesettingstypedef"></a>
+
 ## TrackSourceSettingsTypeDef
 
 ```python
@@ -3341,6 +3715,8 @@ from mypy_boto3_mediaconvert.type_defs import TrackSourceSettingsTypeDef
 Optional fields:
 
 - `TrackNumber`: `int`
+
+<a id="ttmldestinationsettingstypedef"></a>
 
 ## TtmlDestinationSettingsTypeDef
 
@@ -3352,6 +3728,8 @@ Optional fields:
 
 - `StylePassthrough`:
   [TtmlStylePassthroughType](./literals.md#ttmlstylepassthroughtype)
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 
@@ -3366,6 +3744,8 @@ Required fields:
 Optional fields:
 
 - `TagKeys`: `Sequence`\[`str`\]
+
+<a id="updatejobtemplaterequestrequesttypedef"></a>
 
 ## UpdateJobTemplateRequestRequestTypeDef
 
@@ -3392,6 +3772,8 @@ Optional fields:
 - `StatusUpdateInterval`:
   [StatusUpdateIntervalType](./literals.md#statusupdateintervaltype)
 
+<a id="updatejobtemplateresponsetypedef"></a>
+
 ## UpdateJobTemplateResponseTypeDef
 
 ```python
@@ -3403,6 +3785,8 @@ Required fields:
 - `JobTemplate`: [JobTemplateTypeDef](./type_defs.md#jobtemplatetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepresetrequestrequesttypedef"></a>
 
 ## UpdatePresetRequestRequestTypeDef
 
@@ -3420,6 +3804,8 @@ Optional fields:
 - `Description`: `str`
 - `Settings`: [PresetSettingsTypeDef](./type_defs.md#presetsettingstypedef)
 
+<a id="updatepresetresponsetypedef"></a>
+
 ## UpdatePresetResponseTypeDef
 
 ```python
@@ -3431,6 +3817,8 @@ Required fields:
 - `Preset`: [PresetTypeDef](./type_defs.md#presettypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatequeuerequestrequesttypedef"></a>
 
 ## UpdateQueueRequestRequestTypeDef
 
@@ -3449,6 +3837,8 @@ Optional fields:
   [ReservationPlanSettingsTypeDef](./type_defs.md#reservationplansettingstypedef)
 - `Status`: [QueueStatusType](./literals.md#queuestatustype)
 
+<a id="updatequeueresponsetypedef"></a>
+
 ## UpdateQueueResponseTypeDef
 
 ```python
@@ -3460,6 +3850,8 @@ Required fields:
 - `Queue`: [QueueTypeDef](./type_defs.md#queuetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vc3settingstypedef"></a>
 
 ## Vc3SettingsTypeDef
 
@@ -3481,6 +3873,8 @@ Optional fields:
 - `SlowPal`: [Vc3SlowPalType](./literals.md#vc3slowpaltype)
 - `Telecine`: [Vc3TelecineType](./literals.md#vc3telecinetype)
 - `Vc3Class`: [Vc3ClassType](./literals.md#vc3classtype)
+
+<a id="videocodecsettingstypedef"></a>
 
 ## VideoCodecSettingsTypeDef
 
@@ -3505,6 +3899,8 @@ Optional fields:
 - `Vp8Settings`: [Vp8SettingsTypeDef](./type_defs.md#vp8settingstypedef)
 - `Vp9Settings`: [Vp9SettingsTypeDef](./type_defs.md#vp9settingstypedef)
 - `XavcSettings`: [XavcSettingsTypeDef](./type_defs.md#xavcsettingstypedef)
+
+<a id="videodescriptiontypedef"></a>
 
 ## VideoDescriptionTypeDef
 
@@ -3534,6 +3930,8 @@ Optional fields:
   [VideoPreprocessorTypeDef](./type_defs.md#videopreprocessortypedef)
 - `Width`: `int`
 
+<a id="videodetailtypedef"></a>
+
 ## VideoDetailTypeDef
 
 ```python
@@ -3544,6 +3942,8 @@ Optional fields:
 
 - `HeightInPx`: `int`
 - `WidthInPx`: `int`
+
+<a id="videopreprocessortypedef"></a>
 
 ## VideoPreprocessorTypeDef
 
@@ -3565,6 +3965,8 @@ Optional fields:
 - `TimecodeBurnin`:
   [TimecodeBurninTypeDef](./type_defs.md#timecodeburnintypedef)
 
+<a id="videoselectortypedef"></a>
+
 ## VideoSelectorTypeDef
 
 ```python
@@ -3582,6 +3984,8 @@ Optional fields:
 - `Rotate`: [InputRotateType](./literals.md#inputrotatetype)
 - `SampleRange`: [InputSampleRangeType](./literals.md#inputsamplerangetype)
 
+<a id="vorbissettingstypedef"></a>
+
 ## VorbisSettingsTypeDef
 
 ```python
@@ -3593,6 +3997,8 @@ Optional fields:
 - `Channels`: `int`
 - `SampleRate`: `int`
 - `VbrQuality`: `int`
+
+<a id="vp8settingstypedef"></a>
 
 ## Vp8SettingsTypeDef
 
@@ -3620,6 +4026,8 @@ Optional fields:
 - `RateControlMode`: `Literal['VBR']` (see
   [Vp8RateControlModeType](./literals.md#vp8ratecontrolmodetype))
 
+<a id="vp9settingstypedef"></a>
+
 ## Vp9SettingsTypeDef
 
 ```python
@@ -3646,6 +4054,8 @@ Optional fields:
 - `RateControlMode`: `Literal['VBR']` (see
   [Vp9RateControlModeType](./literals.md#vp9ratecontrolmodetype))
 
+<a id="wavsettingstypedef"></a>
+
 ## WavSettingsTypeDef
 
 ```python
@@ -3658,6 +4068,8 @@ Optional fields:
 - `Channels`: `int`
 - `Format`: [WavFormatType](./literals.md#wavformattype)
 - `SampleRate`: `int`
+
+<a id="webvttdestinationsettingstypedef"></a>
 
 ## WebvttDestinationSettingsTypeDef
 
@@ -3672,6 +4084,8 @@ Optional fields:
 - `StylePassthrough`:
   [WebvttStylePassthroughType](./literals.md#webvttstylepassthroughtype)
 
+<a id="webvtthlssourcesettingstypedef"></a>
+
 ## WebvttHlsSourceSettingsTypeDef
 
 ```python
@@ -3684,6 +4098,8 @@ Optional fields:
 - `RenditionLanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `RenditionName`: `str`
 
+<a id="xavc4kintracbgprofilesettingstypedef"></a>
+
 ## Xavc4kIntraCbgProfileSettingsTypeDef
 
 ```python
@@ -3695,6 +4111,8 @@ Optional fields:
 - `XavcClass`:
   [Xavc4kIntraCbgProfileClassType](./literals.md#xavc4kintracbgprofileclasstype)
 
+<a id="xavc4kintravbrprofilesettingstypedef"></a>
+
 ## Xavc4kIntraVbrProfileSettingsTypeDef
 
 ```python
@@ -3705,6 +4123,8 @@ Optional fields:
 
 - `XavcClass`:
   [Xavc4kIntraVbrProfileClassType](./literals.md#xavc4kintravbrprofileclasstype)
+
+<a id="xavc4kprofilesettingstypedef"></a>
 
 ## Xavc4kProfileSettingsTypeDef
 
@@ -3727,6 +4147,8 @@ Optional fields:
   [Xavc4kProfileQualityTuningLevelType](./literals.md#xavc4kprofilequalitytuningleveltype)
 - `Slices`: `int`
 
+<a id="xavchdintracbgprofilesettingstypedef"></a>
+
 ## XavcHdIntraCbgProfileSettingsTypeDef
 
 ```python
@@ -3737,6 +4159,8 @@ Optional fields:
 
 - `XavcClass`:
   [XavcHdIntraCbgProfileClassType](./literals.md#xavchdintracbgprofileclasstype)
+
+<a id="xavchdprofilesettingstypedef"></a>
 
 ## XavcHdProfileSettingsTypeDef
 
@@ -3759,6 +4183,8 @@ Optional fields:
 - `Slices`: `int`
 - `Telecine`:
   [XavcHdProfileTelecineType](./literals.md#xavchdprofiletelecinetype)
+
+<a id="xavcsettingstypedef"></a>
 
 ## XavcSettingsTypeDef
 

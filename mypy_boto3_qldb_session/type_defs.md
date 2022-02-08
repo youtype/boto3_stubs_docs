@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-qldbsession-module"></a>
+
 # Typed dictionaries for boto3 QLDBSession module
 
 > [Index](..) > [QLDBSession](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [QLDBSession](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/qldb-session.html#QLDBSession)
 type annotations stubs module
-[mypy_boto3_qldb_session](https://pypi.org/project/mypy-boto3-qldb-session/).
+[mypy-boto3-qldb-session](https://pypi.org/project/mypy-boto3-qldb-session/).
 
 - [Typed dictionaries for boto3 QLDBSession module](#typed-dictionaries-for-boto3-qldbsession-module)
   - [AbortTransactionResultTypeDef](#aborttransactionresulttypedef)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [TimingInformationTypeDef](#timinginformationtypedef)
   - [ValueHolderTypeDef](#valueholdertypedef)
 
+<a id="aborttransactionresulttypedef"></a>
+
 ## AbortTransactionResultTypeDef
 
 ```python
@@ -38,6 +42,8 @@ Optional fields:
 - `TimingInformation`:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
+<a id="committransactionrequesttypedef"></a>
+
 ## CommitTransactionRequestTypeDef
 
 ```python
@@ -48,6 +54,8 @@ Required fields:
 
 - `TransactionId`: `str`
 - `CommitDigest`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
+
+<a id="committransactionresulttypedef"></a>
 
 ## CommitTransactionResultTypeDef
 
@@ -63,6 +71,8 @@ Optional fields:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 
+<a id="endsessionresulttypedef"></a>
+
 ## EndSessionResultTypeDef
 
 ```python
@@ -73,6 +83,8 @@ Optional fields:
 
 - `TimingInformation`:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
+
+<a id="executestatementrequesttypedef"></a>
 
 ## ExecuteStatementRequestTypeDef
 
@@ -90,6 +102,8 @@ Optional fields:
 - `Parameters`:
   `Sequence`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 
+<a id="executestatementresulttypedef"></a>
+
 ## ExecuteStatementResultTypeDef
 
 ```python
@@ -103,6 +117,8 @@ Optional fields:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 
+<a id="fetchpagerequesttypedef"></a>
+
 ## FetchPageRequestTypeDef
 
 ```python
@@ -113,6 +129,8 @@ Required fields:
 
 - `TransactionId`: `str`
 - `NextPageToken`: `str`
+
+<a id="fetchpageresulttypedef"></a>
 
 ## FetchPageResultTypeDef
 
@@ -127,6 +145,8 @@ Optional fields:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 - `ConsumedIOs`: [IOUsageTypeDef](./type_defs.md#iousagetypedef)
 
+<a id="iousagetypedef"></a>
+
 ## IOUsageTypeDef
 
 ```python
@@ -138,6 +158,8 @@ Optional fields:
 - `ReadIOs`: `int`
 - `WriteIOs`: `int`
 
+<a id="pagetypedef"></a>
+
 ## PageTypeDef
 
 ```python
@@ -148,6 +170,8 @@ Optional fields:
 
 - `Values`: `List`\[[ValueHolderTypeDef](./type_defs.md#valueholdertypedef)\]
 - `NextPageToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -162,6 +186,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="sendcommandrequestrequesttypedef"></a>
 
 ## SendCommandRequestRequestTypeDef
 
@@ -183,6 +209,8 @@ Optional fields:
   [ExecuteStatementRequestTypeDef](./type_defs.md#executestatementrequesttypedef)
 - `FetchPage`:
   [FetchPageRequestTypeDef](./type_defs.md#fetchpagerequesttypedef)
+
+<a id="sendcommandresulttypedef"></a>
 
 ## SendCommandResultTypeDef
 
@@ -208,6 +236,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="startsessionrequesttypedef"></a>
+
 ## StartSessionRequestTypeDef
 
 ```python
@@ -217,6 +247,8 @@ from mypy_boto3_qldb_session.type_defs import StartSessionRequestTypeDef
 Required fields:
 
 - `LedgerName`: `str`
+
+<a id="startsessionresulttypedef"></a>
 
 ## StartSessionResultTypeDef
 
@@ -230,6 +262,8 @@ Optional fields:
 - `TimingInformation`:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
+<a id="starttransactionresulttypedef"></a>
+
 ## StartTransactionResultTypeDef
 
 ```python
@@ -242,6 +276,8 @@ Optional fields:
 - `TimingInformation`:
   [TimingInformationTypeDef](./type_defs.md#timinginformationtypedef)
 
+<a id="timinginformationtypedef"></a>
+
 ## TimingInformationTypeDef
 
 ```python
@@ -251,6 +287,8 @@ from mypy_boto3_qldb_session.type_defs import TimingInformationTypeDef
 Optional fields:
 
 - `ProcessingTimeMilliseconds`: `int`
+
+<a id="valueholdertypedef"></a>
 
 ## ValueHolderTypeDef
 

@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-dynamodbstreams-module"></a>
+
 # Typed dictionaries for boto3 DynamoDBStreams module
 
 > [Index](..) > [DynamoDBStreams](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DynamoDBStreams](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodbstreams.html#DynamoDBStreams)
 type annotations stubs module
-[mypy_boto3_dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
+[mypy-boto3-dynamodbstreams](https://pypi.org/project/mypy-boto3-dynamodbstreams/).
 
 - [Typed dictionaries for boto3 DynamoDBStreams module](#typed-dictionaries-for-boto3-dynamodbstreams-module)
   - [AttributeValueTypeDef](#attributevaluetypedef)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [StreamRecordTypeDef](#streamrecordtypedef)
   - [StreamTypeDef](#streamtypedef)
 
+<a id="attributevaluetypedef"></a>
+
 ## AttributeValueTypeDef
 
 ```python
@@ -47,6 +51,8 @@ Optional fields:
 - `NULL`: `bool`
 - `BOOL`: `bool`
 
+<a id="describestreaminputrequesttypedef"></a>
+
 ## DescribeStreamInputRequestTypeDef
 
 ```python
@@ -62,6 +68,8 @@ Optional fields:
 - `Limit`: `int`
 - `ExclusiveStartShardId`: `str`
 
+<a id="describestreamoutputtypedef"></a>
+
 ## DescribeStreamOutputTypeDef
 
 ```python
@@ -74,6 +82,8 @@ Required fields:
   [StreamDescriptionTypeDef](./type_defs.md#streamdescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getrecordsinputrequesttypedef"></a>
 
 ## GetRecordsInputRequestTypeDef
 
@@ -89,6 +99,8 @@ Optional fields:
 
 - `Limit`: `int`
 
+<a id="getrecordsoutputtypedef"></a>
+
 ## GetRecordsOutputTypeDef
 
 ```python
@@ -101,6 +113,8 @@ Required fields:
 - `NextShardIterator`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getsharditeratorinputrequesttypedef"></a>
 
 ## GetShardIteratorInputRequestTypeDef
 
@@ -119,6 +133,8 @@ Optional fields:
 
 - `SequenceNumber`: `str`
 
+<a id="getsharditeratoroutputtypedef"></a>
+
 ## GetShardIteratorOutputTypeDef
 
 ```python
@@ -131,6 +147,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="identitytypedef"></a>
+
 ## IdentityTypeDef
 
 ```python
@@ -142,6 +160,8 @@ Optional fields:
 - `PrincipalId`: `str`
 - `Type`: `str`
 
+<a id="keyschemaelementtypedef"></a>
+
 ## KeySchemaElementTypeDef
 
 ```python
@@ -152,6 +172,8 @@ Required fields:
 
 - `AttributeName`: `str`
 - `KeyType`: [KeyTypeType](./literals.md#keytypetype)
+
+<a id="liststreamsinputrequesttypedef"></a>
 
 ## ListStreamsInputRequestTypeDef
 
@@ -165,6 +187,8 @@ Optional fields:
 - `Limit`: `int`
 - `ExclusiveStartStreamArn`: `str`
 
+<a id="liststreamsoutputtypedef"></a>
+
 ## ListStreamsOutputTypeDef
 
 ```python
@@ -177,6 +201,8 @@ Required fields:
 - `LastEvaluatedStreamArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="recordtypedef"></a>
 
 ## RecordTypeDef
 
@@ -194,6 +220,8 @@ Optional fields:
 - `dynamodb`: [StreamRecordTypeDef](./type_defs.md#streamrecordtypedef)
 - `userIdentity`: [IdentityTypeDef](./type_defs.md#identitytypedef)
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -208,6 +236,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="sequencenumberrangetypedef"></a>
+
 ## SequenceNumberRangeTypeDef
 
 ```python
@@ -218,6 +248,8 @@ Optional fields:
 
 - `StartingSequenceNumber`: `str`
 - `EndingSequenceNumber`: `str`
+
+<a id="shardtypedef"></a>
 
 ## ShardTypeDef
 
@@ -231,6 +263,8 @@ Optional fields:
 - `SequenceNumberRange`:
   [SequenceNumberRangeTypeDef](./type_defs.md#sequencenumberrangetypedef)
 - `ParentShardId`: `str`
+
+<a id="streamdescriptiontypedef"></a>
 
 ## StreamDescriptionTypeDef
 
@@ -251,6 +285,8 @@ Optional fields:
 - `Shards`: `List`\[[ShardTypeDef](./type_defs.md#shardtypedef)\]
 - `LastEvaluatedShardId`: `str`
 
+<a id="streamrecordtypedef"></a>
+
 ## StreamRecordTypeDef
 
 ```python
@@ -269,6 +305,8 @@ Optional fields:
 - `SequenceNumber`: `str`
 - `SizeBytes`: `int`
 - `StreamViewType`: [StreamViewTypeType](./literals.md#streamviewtypetype)
+
+<a id="streamtypedef"></a>
 
 ## StreamTypeDef
 

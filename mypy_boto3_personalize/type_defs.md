@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-personalize-module"></a>
+
 # Typed dictionaries for boto3 Personalize module
 
 > [Index](..) > [Personalize](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Personalize](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize.html#Personalize)
 type annotations stubs module
-[mypy_boto3_personalize](https://pypi.org/project/mypy-boto3-personalize/).
+[mypy-boto3-personalize](https://pypi.org/project/mypy-boto3-personalize/).
 
 - [Typed dictionaries for boto3 Personalize module](#typed-dictionaries-for-boto3-personalize-module)
   - [AlgorithmImageTypeDef](#algorithmimagetypedef)
@@ -171,6 +173,8 @@ type annotations stubs module
   - [UpdateRecommenderRequestRequestTypeDef](#updaterecommenderrequestrequesttypedef)
   - [UpdateRecommenderResponseTypeDef](#updaterecommenderresponsetypedef)
 
+<a id="algorithmimagetypedef"></a>
+
 ## AlgorithmImageTypeDef
 
 ```python
@@ -184,6 +188,8 @@ Required fields:
 Optional fields:
 
 - `name`: `str`
+
+<a id="algorithmtypedef"></a>
 
 ## AlgorithmTypeDef
 
@@ -206,6 +212,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="automlconfigtypedef"></a>
+
 ## AutoMLConfigTypeDef
 
 ```python
@@ -217,6 +225,8 @@ Optional fields:
 - `metricName`: `str`
 - `recipeList`: `Sequence`\[`str`\]
 
+<a id="automlresulttypedef"></a>
+
 ## AutoMLResultTypeDef
 
 ```python
@@ -226,6 +236,8 @@ from mypy_boto3_personalize.type_defs import AutoMLResultTypeDef
 Optional fields:
 
 - `bestRecipeArn`: `str`
+
+<a id="batchinferencejobconfigtypedef"></a>
 
 ## BatchInferenceJobConfigTypeDef
 
@@ -237,6 +249,8 @@ Optional fields:
 
 - `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
 
+<a id="batchinferencejobinputtypedef"></a>
+
 ## BatchInferenceJobInputTypeDef
 
 ```python
@@ -246,6 +260,8 @@ from mypy_boto3_personalize.type_defs import BatchInferenceJobInputTypeDef
 Required fields:
 
 - `s3DataSource`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+<a id="batchinferencejoboutputtypedef"></a>
 
 ## BatchInferenceJobOutputTypeDef
 
@@ -257,6 +273,8 @@ Required fields:
 
 - `s3DataDestination`:
   [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+<a id="batchinferencejobsummarytypedef"></a>
 
 ## BatchInferenceJobSummaryTypeDef
 
@@ -273,6 +291,8 @@ Optional fields:
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
 - `solutionVersionArn`: `str`
+
+<a id="batchinferencejobtypedef"></a>
 
 ## BatchInferenceJobTypeDef
 
@@ -299,6 +319,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="batchsegmentjobinputtypedef"></a>
+
 ## BatchSegmentJobInputTypeDef
 
 ```python
@@ -308,6 +330,8 @@ from mypy_boto3_personalize.type_defs import BatchSegmentJobInputTypeDef
 Required fields:
 
 - `s3DataSource`: [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+<a id="batchsegmentjoboutputtypedef"></a>
 
 ## BatchSegmentJobOutputTypeDef
 
@@ -319,6 +343,8 @@ Required fields:
 
 - `s3DataDestination`:
   [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+<a id="batchsegmentjobsummarytypedef"></a>
 
 ## BatchSegmentJobSummaryTypeDef
 
@@ -335,6 +361,8 @@ Optional fields:
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
 - `solutionVersionArn`: `str`
+
+<a id="batchsegmentjobtypedef"></a>
 
 ## BatchSegmentJobTypeDef
 
@@ -359,6 +387,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="campaignconfigtypedef"></a>
+
 ## CampaignConfigTypeDef
 
 ```python
@@ -368,6 +398,8 @@ from mypy_boto3_personalize.type_defs import CampaignConfigTypeDef
 Optional fields:
 
 - `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
+
+<a id="campaignsummarytypedef"></a>
 
 ## CampaignSummaryTypeDef
 
@@ -383,6 +415,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
+
+<a id="campaigntypedef"></a>
 
 ## CampaignTypeDef
 
@@ -405,6 +439,8 @@ Optional fields:
 - `latestCampaignUpdate`:
   [CampaignUpdateSummaryTypeDef](./type_defs.md#campaignupdatesummarytypedef)
 
+<a id="campaignupdatesummarytypedef"></a>
+
 ## CampaignUpdateSummaryTypeDef
 
 ```python
@@ -422,6 +458,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="categoricalhyperparameterrangetypedef"></a>
+
 ## CategoricalHyperParameterRangeTypeDef
 
 ```python
@@ -432,6 +470,8 @@ Optional fields:
 
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
+
+<a id="continuoushyperparameterrangetypedef"></a>
 
 ## ContinuousHyperParameterRangeTypeDef
 
@@ -444,6 +484,8 @@ Optional fields:
 - `name`: `str`
 - `minValue`: `float`
 - `maxValue`: `float`
+
+<a id="createbatchinferencejobrequestrequesttypedef"></a>
 
 ## CreateBatchInferenceJobRequestRequestTypeDef
 
@@ -468,6 +510,8 @@ Optional fields:
 - `batchInferenceJobConfig`:
   [BatchInferenceJobConfigTypeDef](./type_defs.md#batchinferencejobconfigtypedef)
 
+<a id="createbatchinferencejobresponsetypedef"></a>
+
 ## CreateBatchInferenceJobResponseTypeDef
 
 ```python
@@ -479,6 +523,8 @@ Required fields:
 - `batchInferenceJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createbatchsegmentjobrequestrequesttypedef"></a>
 
 ## CreateBatchSegmentJobRequestRequestTypeDef
 
@@ -501,6 +547,8 @@ Optional fields:
 - `filterArn`: `str`
 - `numResults`: `int`
 
+<a id="createbatchsegmentjobresponsetypedef"></a>
+
 ## CreateBatchSegmentJobResponseTypeDef
 
 ```python
@@ -512,6 +560,8 @@ Required fields:
 - `batchSegmentJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createcampaignrequestrequesttypedef"></a>
 
 ## CreateCampaignRequestRequestTypeDef
 
@@ -530,6 +580,8 @@ Optional fields:
 - `campaignConfig`:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
+<a id="createcampaignresponsetypedef"></a>
+
 ## CreateCampaignResponseTypeDef
 
 ```python
@@ -541,6 +593,8 @@ Required fields:
 - `campaignArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetexportjobrequestrequesttypedef"></a>
 
 ## CreateDatasetExportJobRequestRequestTypeDef
 
@@ -560,6 +614,8 @@ Optional fields:
 
 - `ingestionMode`: [IngestionModeType](./literals.md#ingestionmodetype)
 
+<a id="createdatasetexportjobresponsetypedef"></a>
+
 ## CreateDatasetExportJobResponseTypeDef
 
 ```python
@@ -571,6 +627,8 @@ Required fields:
 - `datasetExportJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetgrouprequestrequesttypedef"></a>
 
 ## CreateDatasetGroupRequestRequestTypeDef
 
@@ -588,6 +646,8 @@ Optional fields:
 - `kmsKeyArn`: `str`
 - `domain`: [DomainType](./literals.md#domaintype)
 
+<a id="createdatasetgroupresponsetypedef"></a>
+
 ## CreateDatasetGroupResponseTypeDef
 
 ```python
@@ -600,6 +660,8 @@ Required fields:
 - `domain`: [DomainType](./literals.md#domaintype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetimportjobrequestrequesttypedef"></a>
 
 ## CreateDatasetImportJobRequestRequestTypeDef
 
@@ -614,6 +676,8 @@ Required fields:
 - `dataSource`: [DataSourceTypeDef](./type_defs.md#datasourcetypedef)
 - `roleArn`: `str`
 
+<a id="createdatasetimportjobresponsetypedef"></a>
+
 ## CreateDatasetImportJobResponseTypeDef
 
 ```python
@@ -625,6 +689,8 @@ Required fields:
 - `datasetImportJobArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasetrequestrequesttypedef"></a>
 
 ## CreateDatasetRequestRequestTypeDef
 
@@ -639,6 +705,8 @@ Required fields:
 - `datasetGroupArn`: `str`
 - `datasetType`: `str`
 
+<a id="createdatasetresponsetypedef"></a>
+
 ## CreateDatasetResponseTypeDef
 
 ```python
@@ -651,6 +719,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createeventtrackerrequestrequesttypedef"></a>
+
 ## CreateEventTrackerRequestRequestTypeDef
 
 ```python
@@ -661,6 +731,8 @@ Required fields:
 
 - `name`: `str`
 - `datasetGroupArn`: `str`
+
+<a id="createeventtrackerresponsetypedef"></a>
 
 ## CreateEventTrackerResponseTypeDef
 
@@ -675,6 +747,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createfilterrequestrequesttypedef"></a>
+
 ## CreateFilterRequestRequestTypeDef
 
 ```python
@@ -687,6 +761,8 @@ Required fields:
 - `datasetGroupArn`: `str`
 - `filterExpression`: `str`
 
+<a id="createfilterresponsetypedef"></a>
+
 ## CreateFilterResponseTypeDef
 
 ```python
@@ -698,6 +774,8 @@ Required fields:
 - `filterArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createrecommenderrequestrequesttypedef"></a>
 
 ## CreateRecommenderRequestRequestTypeDef
 
@@ -716,6 +794,8 @@ Optional fields:
 - `recommenderConfig`:
   [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
 
+<a id="createrecommenderresponsetypedef"></a>
+
 ## CreateRecommenderResponseTypeDef
 
 ```python
@@ -727,6 +807,8 @@ Required fields:
 - `recommenderArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createschemarequestrequesttypedef"></a>
 
 ## CreateSchemaRequestRequestTypeDef
 
@@ -743,6 +825,8 @@ Optional fields:
 
 - `domain`: [DomainType](./literals.md#domaintype)
 
+<a id="createschemaresponsetypedef"></a>
+
 ## CreateSchemaResponseTypeDef
 
 ```python
@@ -754,6 +838,8 @@ Required fields:
 - `schemaArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsolutionrequestrequesttypedef"></a>
 
 ## CreateSolutionRequestRequestTypeDef
 
@@ -775,6 +861,8 @@ Optional fields:
 - `solutionConfig`:
   [SolutionConfigTypeDef](./type_defs.md#solutionconfigtypedef)
 
+<a id="createsolutionresponsetypedef"></a>
+
 ## CreateSolutionResponseTypeDef
 
 ```python
@@ -786,6 +874,8 @@ Required fields:
 - `solutionArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createsolutionversionrequestrequesttypedef"></a>
 
 ## CreateSolutionVersionRequestRequestTypeDef
 
@@ -801,6 +891,8 @@ Optional fields:
 
 - `trainingMode`: [TrainingModeType](./literals.md#trainingmodetype)
 
+<a id="createsolutionversionresponsetypedef"></a>
+
 ## CreateSolutionVersionResponseTypeDef
 
 ```python
@@ -813,6 +905,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="datasourcetypedef"></a>
+
 ## DataSourceTypeDef
 
 ```python
@@ -822,6 +916,8 @@ from mypy_boto3_personalize.type_defs import DataSourceTypeDef
 Optional fields:
 
 - `dataLocation`: `str`
+
+<a id="datasetexportjoboutputtypedef"></a>
 
 ## DatasetExportJobOutputTypeDef
 
@@ -833,6 +929,8 @@ Required fields:
 
 - `s3DataDestination`:
   [S3DataConfigTypeDef](./type_defs.md#s3dataconfigtypedef)
+
+<a id="datasetexportjobsummarytypedef"></a>
 
 ## DatasetExportJobSummaryTypeDef
 
@@ -848,6 +946,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
+
+<a id="datasetexportjobtypedef"></a>
 
 ## DatasetExportJobTypeDef
 
@@ -869,6 +969,8 @@ Optional fields:
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
 
+<a id="datasetgroupsummarytypedef"></a>
+
 ## DatasetGroupSummaryTypeDef
 
 ```python
@@ -884,6 +986,8 @@ Optional fields:
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
 - `domain`: [DomainType](./literals.md#domaintype)
+
+<a id="datasetgrouptypedef"></a>
 
 ## DatasetGroupTypeDef
 
@@ -903,6 +1007,8 @@ Optional fields:
 - `failureReason`: `str`
 - `domain`: [DomainType](./literals.md#domaintype)
 
+<a id="datasetimportjobsummarytypedef"></a>
+
 ## DatasetImportJobSummaryTypeDef
 
 ```python
@@ -917,6 +1023,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
+
+<a id="datasetimportjobtypedef"></a>
 
 ## DatasetImportJobTypeDef
 
@@ -936,6 +1044,8 @@ Optional fields:
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
 
+<a id="datasetschemasummarytypedef"></a>
+
 ## DatasetSchemaSummaryTypeDef
 
 ```python
@@ -949,6 +1059,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `domain`: [DomainType](./literals.md#domaintype)
+
+<a id="datasetschematypedef"></a>
 
 ## DatasetSchemaTypeDef
 
@@ -965,6 +1077,8 @@ Optional fields:
 - `lastUpdatedDateTime`: `datetime`
 - `domain`: [DomainType](./literals.md#domaintype)
 
+<a id="datasetsummarytypedef"></a>
+
 ## DatasetSummaryTypeDef
 
 ```python
@@ -979,6 +1093,8 @@ Optional fields:
 - `status`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+
+<a id="datasettypedef"></a>
 
 ## DatasetTypeDef
 
@@ -997,6 +1113,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="defaultcategoricalhyperparameterrangetypedef"></a>
+
 ## DefaultCategoricalHyperParameterRangeTypeDef
 
 ```python
@@ -1008,6 +1126,8 @@ Optional fields:
 - `name`: `str`
 - `values`: `List`\[`str`\]
 - `isTunable`: `bool`
+
+<a id="defaultcontinuoushyperparameterrangetypedef"></a>
 
 ## DefaultContinuousHyperParameterRangeTypeDef
 
@@ -1021,6 +1141,8 @@ Optional fields:
 - `minValue`: `float`
 - `maxValue`: `float`
 - `isTunable`: `bool`
+
+<a id="defaulthyperparameterrangestypedef"></a>
 
 ## DefaultHyperParameterRangesTypeDef
 
@@ -1037,6 +1159,8 @@ Optional fields:
 - `categoricalHyperParameterRanges`:
   `List`\[[DefaultCategoricalHyperParameterRangeTypeDef](./type_defs.md#defaultcategoricalhyperparameterrangetypedef)\]
 
+<a id="defaultintegerhyperparameterrangetypedef"></a>
+
 ## DefaultIntegerHyperParameterRangeTypeDef
 
 ```python
@@ -1050,6 +1174,8 @@ Optional fields:
 - `maxValue`: `int`
 - `isTunable`: `bool`
 
+<a id="deletecampaignrequestrequesttypedef"></a>
+
 ## DeleteCampaignRequestRequestTypeDef
 
 ```python
@@ -1059,6 +1185,8 @@ from mypy_boto3_personalize.type_defs import DeleteCampaignRequestRequestTypeDef
 Required fields:
 
 - `campaignArn`: `str`
+
+<a id="deletedatasetgrouprequestrequesttypedef"></a>
 
 ## DeleteDatasetGroupRequestRequestTypeDef
 
@@ -1070,6 +1198,8 @@ Required fields:
 
 - `datasetGroupArn`: `str`
 
+<a id="deletedatasetrequestrequesttypedef"></a>
+
 ## DeleteDatasetRequestRequestTypeDef
 
 ```python
@@ -1079,6 +1209,8 @@ from mypy_boto3_personalize.type_defs import DeleteDatasetRequestRequestTypeDef
 Required fields:
 
 - `datasetArn`: `str`
+
+<a id="deleteeventtrackerrequestrequesttypedef"></a>
 
 ## DeleteEventTrackerRequestRequestTypeDef
 
@@ -1090,6 +1222,8 @@ Required fields:
 
 - `eventTrackerArn`: `str`
 
+<a id="deletefilterrequestrequesttypedef"></a>
+
 ## DeleteFilterRequestRequestTypeDef
 
 ```python
@@ -1099,6 +1233,8 @@ from mypy_boto3_personalize.type_defs import DeleteFilterRequestRequestTypeDef
 Required fields:
 
 - `filterArn`: `str`
+
+<a id="deleterecommenderrequestrequesttypedef"></a>
 
 ## DeleteRecommenderRequestRequestTypeDef
 
@@ -1110,6 +1246,8 @@ Required fields:
 
 - `recommenderArn`: `str`
 
+<a id="deleteschemarequestrequesttypedef"></a>
+
 ## DeleteSchemaRequestRequestTypeDef
 
 ```python
@@ -1119,6 +1257,8 @@ from mypy_boto3_personalize.type_defs import DeleteSchemaRequestRequestTypeDef
 Required fields:
 
 - `schemaArn`: `str`
+
+<a id="deletesolutionrequestrequesttypedef"></a>
 
 ## DeleteSolutionRequestRequestTypeDef
 
@@ -1130,6 +1270,8 @@ Required fields:
 
 - `solutionArn`: `str`
 
+<a id="describealgorithmrequestrequesttypedef"></a>
+
 ## DescribeAlgorithmRequestRequestTypeDef
 
 ```python
@@ -1139,6 +1281,8 @@ from mypy_boto3_personalize.type_defs import DescribeAlgorithmRequestRequestType
 Required fields:
 
 - `algorithmArn`: `str`
+
+<a id="describealgorithmresponsetypedef"></a>
 
 ## DescribeAlgorithmResponseTypeDef
 
@@ -1152,6 +1296,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebatchinferencejobrequestrequesttypedef"></a>
+
 ## DescribeBatchInferenceJobRequestRequestTypeDef
 
 ```python
@@ -1161,6 +1307,8 @@ from mypy_boto3_personalize.type_defs import DescribeBatchInferenceJobRequestReq
 Required fields:
 
 - `batchInferenceJobArn`: `str`
+
+<a id="describebatchinferencejobresponsetypedef"></a>
 
 ## DescribeBatchInferenceJobResponseTypeDef
 
@@ -1175,6 +1323,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebatchsegmentjobrequestrequesttypedef"></a>
+
 ## DescribeBatchSegmentJobRequestRequestTypeDef
 
 ```python
@@ -1184,6 +1334,8 @@ from mypy_boto3_personalize.type_defs import DescribeBatchSegmentJobRequestReque
 Required fields:
 
 - `batchSegmentJobArn`: `str`
+
+<a id="describebatchsegmentjobresponsetypedef"></a>
 
 ## DescribeBatchSegmentJobResponseTypeDef
 
@@ -1198,6 +1350,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describecampaignrequestrequesttypedef"></a>
+
 ## DescribeCampaignRequestRequestTypeDef
 
 ```python
@@ -1207,6 +1361,8 @@ from mypy_boto3_personalize.type_defs import DescribeCampaignRequestRequestTypeD
 Required fields:
 
 - `campaignArn`: `str`
+
+<a id="describecampaignresponsetypedef"></a>
 
 ## DescribeCampaignResponseTypeDef
 
@@ -1220,6 +1376,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetexportjobrequestrequesttypedef"></a>
+
 ## DescribeDatasetExportJobRequestRequestTypeDef
 
 ```python
@@ -1229,6 +1387,8 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetExportJobRequestRequ
 Required fields:
 
 - `datasetExportJobArn`: `str`
+
+<a id="describedatasetexportjobresponsetypedef"></a>
 
 ## DescribeDatasetExportJobResponseTypeDef
 
@@ -1243,6 +1403,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetgrouprequestrequesttypedef"></a>
+
 ## DescribeDatasetGroupRequestRequestTypeDef
 
 ```python
@@ -1252,6 +1414,8 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetGroupRequestRequestT
 Required fields:
 
 - `datasetGroupArn`: `str`
+
+<a id="describedatasetgroupresponsetypedef"></a>
 
 ## DescribeDatasetGroupResponseTypeDef
 
@@ -1265,6 +1429,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetimportjobrequestrequesttypedef"></a>
+
 ## DescribeDatasetImportJobRequestRequestTypeDef
 
 ```python
@@ -1274,6 +1440,8 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetImportJobRequestRequ
 Required fields:
 
 - `datasetImportJobArn`: `str`
+
+<a id="describedatasetimportjobresponsetypedef"></a>
 
 ## DescribeDatasetImportJobResponseTypeDef
 
@@ -1288,6 +1456,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describedatasetrequestrequesttypedef"></a>
+
 ## DescribeDatasetRequestRequestTypeDef
 
 ```python
@@ -1297,6 +1467,8 @@ from mypy_boto3_personalize.type_defs import DescribeDatasetRequestRequestTypeDe
 Required fields:
 
 - `datasetArn`: `str`
+
+<a id="describedatasetresponsetypedef"></a>
 
 ## DescribeDatasetResponseTypeDef
 
@@ -1310,6 +1482,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeeventtrackerrequestrequesttypedef"></a>
+
 ## DescribeEventTrackerRequestRequestTypeDef
 
 ```python
@@ -1319,6 +1493,8 @@ from mypy_boto3_personalize.type_defs import DescribeEventTrackerRequestRequestT
 Required fields:
 
 - `eventTrackerArn`: `str`
+
+<a id="describeeventtrackerresponsetypedef"></a>
 
 ## DescribeEventTrackerResponseTypeDef
 
@@ -1332,6 +1508,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefeaturetransformationrequestrequesttypedef"></a>
+
 ## DescribeFeatureTransformationRequestRequestTypeDef
 
 ```python
@@ -1341,6 +1519,8 @@ from mypy_boto3_personalize.type_defs import DescribeFeatureTransformationReques
 Required fields:
 
 - `featureTransformationArn`: `str`
+
+<a id="describefeaturetransformationresponsetypedef"></a>
 
 ## DescribeFeatureTransformationResponseTypeDef
 
@@ -1355,6 +1535,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describefilterrequestrequesttypedef"></a>
+
 ## DescribeFilterRequestRequestTypeDef
 
 ```python
@@ -1364,6 +1546,8 @@ from mypy_boto3_personalize.type_defs import DescribeFilterRequestRequestTypeDef
 Required fields:
 
 - `filterArn`: `str`
+
+<a id="describefilterresponsetypedef"></a>
 
 ## DescribeFilterResponseTypeDef
 
@@ -1377,6 +1561,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereciperequestrequesttypedef"></a>
+
 ## DescribeRecipeRequestRequestTypeDef
 
 ```python
@@ -1386,6 +1572,8 @@ from mypy_boto3_personalize.type_defs import DescribeRecipeRequestRequestTypeDef
 Required fields:
 
 - `recipeArn`: `str`
+
+<a id="describereciperesponsetypedef"></a>
 
 ## DescribeRecipeResponseTypeDef
 
@@ -1399,6 +1587,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describerecommenderrequestrequesttypedef"></a>
+
 ## DescribeRecommenderRequestRequestTypeDef
 
 ```python
@@ -1408,6 +1598,8 @@ from mypy_boto3_personalize.type_defs import DescribeRecommenderRequestRequestTy
 Required fields:
 
 - `recommenderArn`: `str`
+
+<a id="describerecommenderresponsetypedef"></a>
 
 ## DescribeRecommenderResponseTypeDef
 
@@ -1421,6 +1613,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeschemarequestrequesttypedef"></a>
+
 ## DescribeSchemaRequestRequestTypeDef
 
 ```python
@@ -1430,6 +1624,8 @@ from mypy_boto3_personalize.type_defs import DescribeSchemaRequestRequestTypeDef
 Required fields:
 
 - `schemaArn`: `str`
+
+<a id="describeschemaresponsetypedef"></a>
 
 ## DescribeSchemaResponseTypeDef
 
@@ -1443,6 +1639,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesolutionrequestrequesttypedef"></a>
+
 ## DescribeSolutionRequestRequestTypeDef
 
 ```python
@@ -1452,6 +1650,8 @@ from mypy_boto3_personalize.type_defs import DescribeSolutionRequestRequestTypeD
 Required fields:
 
 - `solutionArn`: `str`
+
+<a id="describesolutionresponsetypedef"></a>
 
 ## DescribeSolutionResponseTypeDef
 
@@ -1465,6 +1665,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describesolutionversionrequestrequesttypedef"></a>
+
 ## DescribeSolutionVersionRequestRequestTypeDef
 
 ```python
@@ -1474,6 +1676,8 @@ from mypy_boto3_personalize.type_defs import DescribeSolutionVersionRequestReque
 Required fields:
 
 - `solutionVersionArn`: `str`
+
+<a id="describesolutionversionresponsetypedef"></a>
 
 ## DescribeSolutionVersionResponseTypeDef
 
@@ -1488,6 +1692,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="eventtrackersummarytypedef"></a>
+
 ## EventTrackerSummaryTypeDef
 
 ```python
@@ -1501,6 +1707,8 @@ Optional fields:
 - `status`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+
+<a id="eventtrackertypedef"></a>
 
 ## EventTrackerTypeDef
 
@@ -1519,6 +1727,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="featuretransformationtypedef"></a>
+
 ## FeatureTransformationTypeDef
 
 ```python
@@ -1533,6 +1743,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `status`: `str`
+
+<a id="filtersummarytypedef"></a>
 
 ## FilterSummaryTypeDef
 
@@ -1549,6 +1761,8 @@ Optional fields:
 - `datasetGroupArn`: `str`
 - `failureReason`: `str`
 - `status`: `str`
+
+<a id="filtertypedef"></a>
 
 ## FilterTypeDef
 
@@ -1567,6 +1781,8 @@ Optional fields:
 - `filterExpression`: `str`
 - `status`: `str`
 
+<a id="getsolutionmetricsrequestrequesttypedef"></a>
+
 ## GetSolutionMetricsRequestRequestTypeDef
 
 ```python
@@ -1576,6 +1792,8 @@ from mypy_boto3_personalize.type_defs import GetSolutionMetricsRequestRequestTyp
 Required fields:
 
 - `solutionVersionArn`: `str`
+
+<a id="getsolutionmetricsresponsetypedef"></a>
 
 ## GetSolutionMetricsResponseTypeDef
 
@@ -1589,6 +1807,8 @@ Required fields:
 - `metrics`: `Dict`\[`str`, `float`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="hpoconfigtypedef"></a>
 
 ## HPOConfigTypeDef
 
@@ -1604,6 +1824,8 @@ Optional fields:
 - `algorithmHyperParameterRanges`:
   [HyperParameterRangesTypeDef](./type_defs.md#hyperparameterrangestypedef)
 
+<a id="hpoobjectivetypedef"></a>
+
 ## HPOObjectiveTypeDef
 
 ```python
@@ -1616,6 +1838,8 @@ Optional fields:
 - `metricName`: `str`
 - `metricRegex`: `str`
 
+<a id="hporesourceconfigtypedef"></a>
+
 ## HPOResourceConfigTypeDef
 
 ```python
@@ -1626,6 +1850,8 @@ Optional fields:
 
 - `maxNumberOfTrainingJobs`: `str`
 - `maxParallelTrainingJobs`: `str`
+
+<a id="hyperparameterrangestypedef"></a>
 
 ## HyperParameterRangesTypeDef
 
@@ -1642,6 +1868,8 @@ Optional fields:
 - `categoricalHyperParameterRanges`:
   `Sequence`\[[CategoricalHyperParameterRangeTypeDef](./type_defs.md#categoricalhyperparameterrangetypedef)\]
 
+<a id="integerhyperparameterrangetypedef"></a>
+
 ## IntegerHyperParameterRangeTypeDef
 
 ```python
@@ -1654,6 +1882,8 @@ Optional fields:
 - `minValue`: `int`
 - `maxValue`: `int`
 
+<a id="listbatchinferencejobsrequestrequesttypedef"></a>
+
 ## ListBatchInferenceJobsRequestRequestTypeDef
 
 ```python
@@ -1665,6 +1895,8 @@ Optional fields:
 - `solutionVersionArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listbatchinferencejobsresponsetypedef"></a>
 
 ## ListBatchInferenceJobsResponseTypeDef
 
@@ -1680,6 +1912,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listbatchsegmentjobsrequestrequesttypedef"></a>
+
 ## ListBatchSegmentJobsRequestRequestTypeDef
 
 ```python
@@ -1691,6 +1925,8 @@ Optional fields:
 - `solutionVersionArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listbatchsegmentjobsresponsetypedef"></a>
 
 ## ListBatchSegmentJobsResponseTypeDef
 
@@ -1706,6 +1942,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listcampaignsrequestrequesttypedef"></a>
+
 ## ListCampaignsRequestRequestTypeDef
 
 ```python
@@ -1717,6 +1955,8 @@ Optional fields:
 - `solutionArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listcampaignsresponsetypedef"></a>
 
 ## ListCampaignsResponseTypeDef
 
@@ -1732,6 +1972,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetexportjobsrequestrequesttypedef"></a>
+
 ## ListDatasetExportJobsRequestRequestTypeDef
 
 ```python
@@ -1743,6 +1985,8 @@ Optional fields:
 - `datasetArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatasetexportjobsresponsetypedef"></a>
 
 ## ListDatasetExportJobsResponseTypeDef
 
@@ -1758,6 +2002,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetgroupsrequestrequesttypedef"></a>
+
 ## ListDatasetGroupsRequestRequestTypeDef
 
 ```python
@@ -1768,6 +2014,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatasetgroupsresponsetypedef"></a>
 
 ## ListDatasetGroupsResponseTypeDef
 
@@ -1783,6 +2031,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetimportjobsrequestrequesttypedef"></a>
+
 ## ListDatasetImportJobsRequestRequestTypeDef
 
 ```python
@@ -1794,6 +2044,8 @@ Optional fields:
 - `datasetArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatasetimportjobsresponsetypedef"></a>
 
 ## ListDatasetImportJobsResponseTypeDef
 
@@ -1809,6 +2061,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listdatasetsrequestrequesttypedef"></a>
+
 ## ListDatasetsRequestRequestTypeDef
 
 ```python
@@ -1820,6 +2074,8 @@ Optional fields:
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listdatasetsresponsetypedef"></a>
 
 ## ListDatasetsResponseTypeDef
 
@@ -1835,6 +2091,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listeventtrackersrequestrequesttypedef"></a>
+
 ## ListEventTrackersRequestRequestTypeDef
 
 ```python
@@ -1846,6 +2104,8 @@ Optional fields:
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listeventtrackersresponsetypedef"></a>
 
 ## ListEventTrackersResponseTypeDef
 
@@ -1861,6 +2121,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listfiltersrequestrequesttypedef"></a>
+
 ## ListFiltersRequestRequestTypeDef
 
 ```python
@@ -1872,6 +2134,8 @@ Optional fields:
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listfiltersresponsetypedef"></a>
 
 ## ListFiltersResponseTypeDef
 
@@ -1887,6 +2151,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrecipesrequestrequesttypedef"></a>
+
 ## ListRecipesRequestRequestTypeDef
 
 ```python
@@ -1900,6 +2166,8 @@ Optional fields:
 - `nextToken`: `str`
 - `maxResults`: `int`
 - `domain`: [DomainType](./literals.md#domaintype)
+
+<a id="listrecipesresponsetypedef"></a>
 
 ## ListRecipesResponseTypeDef
 
@@ -1915,6 +2183,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listrecommendersrequestrequesttypedef"></a>
+
 ## ListRecommendersRequestRequestTypeDef
 
 ```python
@@ -1926,6 +2196,8 @@ Optional fields:
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listrecommendersresponsetypedef"></a>
 
 ## ListRecommendersResponseTypeDef
 
@@ -1941,6 +2213,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listschemasrequestrequesttypedef"></a>
+
 ## ListSchemasRequestRequestTypeDef
 
 ```python
@@ -1951,6 +2225,8 @@ Optional fields:
 
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listschemasresponsetypedef"></a>
 
 ## ListSchemasResponseTypeDef
 
@@ -1966,6 +2242,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsolutionversionsrequestrequesttypedef"></a>
+
 ## ListSolutionVersionsRequestRequestTypeDef
 
 ```python
@@ -1977,6 +2255,8 @@ Optional fields:
 - `solutionArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listsolutionversionsresponsetypedef"></a>
 
 ## ListSolutionVersionsResponseTypeDef
 
@@ -1992,6 +2272,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsolutionsrequestrequesttypedef"></a>
+
 ## ListSolutionsRequestRequestTypeDef
 
 ```python
@@ -2003,6 +2285,8 @@ Optional fields:
 - `datasetGroupArn`: `str`
 - `nextToken`: `str`
 - `maxResults`: `int`
+
+<a id="listsolutionsresponsetypedef"></a>
 
 ## ListSolutionsResponseTypeDef
 
@@ -2018,6 +2302,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="optimizationobjectivetypedef"></a>
+
 ## OptimizationObjectiveTypeDef
 
 ```python
@@ -2030,6 +2316,8 @@ Optional fields:
 - `objectiveSensitivity`:
   [ObjectiveSensitivityType](./literals.md#objectivesensitivitytype)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -2041,6 +2329,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="recipesummarytypedef"></a>
 
 ## RecipeSummaryTypeDef
 
@@ -2056,6 +2346,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `domain`: [DomainType](./literals.md#domaintype)
+
+<a id="recipetypedef"></a>
 
 ## RecipeTypeDef
 
@@ -2075,6 +2367,8 @@ Optional fields:
 - `recipeType`: `str`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="recommenderconfigtypedef"></a>
+
 ## RecommenderConfigTypeDef
 
 ```python
@@ -2085,6 +2379,8 @@ Optional fields:
 
 - `itemExplorationConfig`: `Mapping`\[`str`, `str`\]
 - `minRecommendationRequestsPerSecond`: `int`
+
+<a id="recommendersummarytypedef"></a>
 
 ## RecommenderSummaryTypeDef
 
@@ -2103,6 +2399,8 @@ Optional fields:
 - `status`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+
+<a id="recommendertypedef"></a>
 
 ## RecommenderTypeDef
 
@@ -2125,6 +2423,8 @@ Optional fields:
 - `latestRecommenderUpdate`:
   [RecommenderUpdateSummaryTypeDef](./type_defs.md#recommenderupdatesummarytypedef)
 
+<a id="recommenderupdatesummarytypedef"></a>
+
 ## RecommenderUpdateSummaryTypeDef
 
 ```python
@@ -2140,6 +2440,8 @@ Optional fields:
 - `status`: `str`
 - `failureReason`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -2154,6 +2456,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="s3dataconfigtypedef"></a>
+
 ## S3DataConfigTypeDef
 
 ```python
@@ -2167,6 +2471,8 @@ Required fields:
 Optional fields:
 
 - `kmsKeyArn`: `str`
+
+<a id="solutionconfigtypedef"></a>
 
 ## SolutionConfigTypeDef
 
@@ -2184,6 +2490,8 @@ Optional fields:
 - `optimizationObjective`:
   [OptimizationObjectiveTypeDef](./type_defs.md#optimizationobjectivetypedef)
 
+<a id="solutionsummarytypedef"></a>
+
 ## SolutionSummaryTypeDef
 
 ```python
@@ -2197,6 +2505,8 @@ Optional fields:
 - `status`: `str`
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
+
+<a id="solutiontypedef"></a>
 
 ## SolutionTypeDef
 
@@ -2222,6 +2532,8 @@ Optional fields:
 - `latestSolutionVersion`:
   [SolutionVersionSummaryTypeDef](./type_defs.md#solutionversionsummarytypedef)
 
+<a id="solutionversionsummarytypedef"></a>
+
 ## SolutionVersionSummaryTypeDef
 
 ```python
@@ -2235,6 +2547,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 - `failureReason`: `str`
+
+<a id="solutionversiontypedef"></a>
 
 ## SolutionVersionTypeDef
 
@@ -2262,6 +2576,8 @@ Optional fields:
 - `creationDateTime`: `datetime`
 - `lastUpdatedDateTime`: `datetime`
 
+<a id="stopsolutionversioncreationrequestrequesttypedef"></a>
+
 ## StopSolutionVersionCreationRequestRequestTypeDef
 
 ```python
@@ -2272,6 +2588,8 @@ Required fields:
 
 - `solutionVersionArn`: `str`
 
+<a id="tunedhpoparamstypedef"></a>
+
 ## TunedHPOParamsTypeDef
 
 ```python
@@ -2281,6 +2599,8 @@ from mypy_boto3_personalize.type_defs import TunedHPOParamsTypeDef
 Optional fields:
 
 - `algorithmHyperParameters`: `Dict`\[`str`, `str`\]
+
+<a id="updatecampaignrequestrequesttypedef"></a>
 
 ## UpdateCampaignRequestRequestTypeDef
 
@@ -2299,6 +2619,8 @@ Optional fields:
 - `campaignConfig`:
   [CampaignConfigTypeDef](./type_defs.md#campaignconfigtypedef)
 
+<a id="updatecampaignresponsetypedef"></a>
+
 ## UpdateCampaignResponseTypeDef
 
 ```python
@@ -2311,6 +2633,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updaterecommenderrequestrequesttypedef"></a>
+
 ## UpdateRecommenderRequestRequestTypeDef
 
 ```python
@@ -2322,6 +2646,8 @@ Required fields:
 - `recommenderArn`: `str`
 - `recommenderConfig`:
   [RecommenderConfigTypeDef](./type_defs.md#recommenderconfigtypedef)
+
+<a id="updaterecommenderresponsetypedef"></a>
 
 ## UpdateRecommenderResponseTypeDef
 

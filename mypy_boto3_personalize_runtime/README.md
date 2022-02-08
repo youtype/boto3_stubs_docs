@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-personalizeruntime-module"></a>
+
 # Type annotations for boto3 PersonalizeRuntime module
 
 > [Index](..) > PersonalizeRuntime
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [PersonalizeRuntime](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/personalize-runtime.html#PersonalizeRuntime)
 type annotations stubs module
-[mypy_boto3_personalize_runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
+[mypy-boto3-personalize-runtime](https://pypi.org/project/mypy-boto3-personalize-runtime/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[personalize-runtime]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[personalize-runtime]'
+
+# standalone installation
 pip install mypy-boto3-personalize-runtime
 ```
 
@@ -17,6 +27,8 @@ pip install mypy-boto3-personalize-runtime
     - [Exceptions](#exceptions)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="personalizeruntimeclient"></a>
 
 ## PersonalizeRuntimeClient
 
@@ -29,6 +41,8 @@ Can be used directly:
 from mypy_boto3_personalize_runtime.client import PersonalizeRuntimeClient
 ```
 
+<a id="methods"></a>
+
 ### Methods
 
 - [can_paginate](./client.md#can_paginate)
@@ -37,6 +51,8 @@ from mypy_boto3_personalize_runtime.client import PersonalizeRuntimeClient
 - [get_personalized_ranking](./client.md#get_personalized_ranking)
 - [get_recommendations](./client.md#get_recommendations)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 PersonalizeRuntimeClient [exceptions](./client.md#exceptions)
@@ -44,6 +60,8 @@ PersonalizeRuntimeClient [exceptions](./client.md#exceptions)
 - ClientError
 - InvalidInputException
 - ResourceNotFoundException
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -56,6 +74,8 @@ from mypy_boto3_personalize_runtime.literals import ServiceName, ...
 ```
 
 - [ServiceName](./literals.md#servicename)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

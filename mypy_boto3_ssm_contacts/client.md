@@ -1,3 +1,5 @@
+<a id="ssmcontactsclient-for-boto3-ssmcontacts-module"></a>
+
 # SSMContactsClient for boto3 SSMContacts module
 
 > [Index](..) > [SSMContacts](.) > SSMContactsClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMContacts](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts)
 type annotations stubs module
-[mypy_boto3_ssm_contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
+[mypy-boto3-ssm-contacts](https://pypi.org/project/mypy-boto3-ssm-contacts/).
 
 - [SSMContactsClient for boto3 SSMContacts module](#ssmcontactsclient-for-boto3-ssmcontacts-module)
   - [SSMContactsClient](#ssmcontactsclient)
@@ -43,6 +45,8 @@ type annotations stubs module
     - [update_contact_channel](#update_contact_channel)
     - [get_paginator](#get_paginator)
 
+<a id="ssmcontactsclient"></a>
+
 ## SSMContactsClient
 
 Type annotations for `boto3.client("ssm-contacts")`
@@ -50,14 +54,17 @@ Type annotations for `boto3.client("ssm-contacts")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_ssm_contacts.client import SSMContactsClient
 
 def get_ssm-contacts_client() -> SSMContactsClient:
-    return boto3.client("ssm-contacts")
+    return Session().client("ssm-contacts")
 ```
 
 Boto3 documentation:
 [SSMContacts.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -83,7 +90,11 @@ Exceptions:
 - `Exceptions.ThrottlingException`
 - `Exceptions.ValidationException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -95,6 +106,8 @@ Boto3 documentation:
 [SSMContacts.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-contacts.html#SSMContacts.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="accept_page"></a>
 
 ### accept_page
 
@@ -120,6 +133,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="activate_contact_channel"></a>
+
 ### activate_contact_channel
 
 Activates a contact's contact channel.
@@ -140,6 +155,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -154,6 +171,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="create_contact"></a>
 
 ### create_contact
 
@@ -180,6 +199,8 @@ Keyword-only arguments:
 
 Returns
 [CreateContactResultTypeDef](./type_defs.md#createcontactresulttypedef).
+
+<a id="create_contact_channel"></a>
 
 ### create_contact_channel
 
@@ -209,6 +230,8 @@ Keyword-only arguments:
 Returns
 [CreateContactChannelResultTypeDef](./type_defs.md#createcontactchannelresulttypedef).
 
+<a id="deactivate_contact_channel"></a>
+
 ### deactivate_contact_channel
 
 To no longer receive Incident Manager engagements to a contact channel, you can
@@ -229,6 +252,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_contact"></a>
+
 ### delete_contact
 
 To remove a contact from Incident Manager, you can delete the contact.
@@ -246,6 +271,8 @@ Keyword-only arguments:
 - `ContactId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_contact_channel"></a>
 
 ### delete_contact_channel
 
@@ -267,6 +294,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="describe_engagement"></a>
+
 ### describe_engagement
 
 Incident Manager uses engagements to engage contacts and escalation plans
@@ -287,6 +316,8 @@ Keyword-only arguments:
 Returns
 [DescribeEngagementResultTypeDef](./type_defs.md#describeengagementresulttypedef).
 
+<a id="describe_page"></a>
+
 ### describe_page
 
 Lists details of the engagement to a contact channel.
@@ -304,6 +335,8 @@ Keyword-only arguments:
 - `PageId`: `str` *(required)*
 
 Returns [DescribePageResultTypeDef](./type_defs.md#describepageresulttypedef).
+
+<a id="generate_presigned_url"></a>
 
 ### generate_presigned_url
 
@@ -324,6 +357,8 @@ Arguments:
 
 Returns `str`.
 
+<a id="get_contact"></a>
+
 ### get_contact
 
 Retrieves information about the specified contact or escalation plan.
@@ -341,6 +376,8 @@ Keyword-only arguments:
 - `ContactId`: `str` *(required)*
 
 Returns [GetContactResultTypeDef](./type_defs.md#getcontactresulttypedef).
+
+<a id="get_contact_channel"></a>
 
 ### get_contact_channel
 
@@ -361,6 +398,8 @@ Keyword-only arguments:
 Returns
 [GetContactChannelResultTypeDef](./type_defs.md#getcontactchannelresulttypedef).
 
+<a id="get_contact_policy"></a>
+
 ### get_contact_policy
 
 Retrieves the resource policies attached to the specified contact or escalation
@@ -380,6 +419,8 @@ Keyword-only arguments:
 
 Returns
 [GetContactPolicyResultTypeDef](./type_defs.md#getcontactpolicyresulttypedef).
+
+<a id="list_contact_channels"></a>
 
 ### list_contact_channels
 
@@ -403,6 +444,8 @@ Keyword-only arguments:
 Returns
 [ListContactChannelsResultTypeDef](./type_defs.md#listcontactchannelsresulttypedef).
 
+<a id="list_contacts"></a>
+
 ### list_contacts
 
 Lists all contacts and escalation plans in Incident Manager.
@@ -423,6 +466,8 @@ Keyword-only arguments:
 - `Type`: [ContactTypeType](./literals.md#contacttypetype)
 
 Returns [ListContactsResultTypeDef](./type_defs.md#listcontactsresulttypedef).
+
+<a id="list_engagements"></a>
 
 ### list_engagements
 
@@ -446,6 +491,8 @@ Keyword-only arguments:
 Returns
 [ListEngagementsResultTypeDef](./type_defs.md#listengagementsresulttypedef).
 
+<a id="list_page_receipts"></a>
+
 ### list_page_receipts
 
 Lists all of the engagements to contact channels that have been acknowledged.
@@ -466,6 +513,8 @@ Keyword-only arguments:
 
 Returns
 [ListPageReceiptsResultTypeDef](./type_defs.md#listpagereceiptsresulttypedef).
+
+<a id="list_pages_by_contact"></a>
 
 ### list_pages_by_contact
 
@@ -489,6 +538,8 @@ Keyword-only arguments:
 Returns
 [ListPagesByContactResultTypeDef](./type_defs.md#listpagesbycontactresulttypedef).
 
+<a id="list_pages_by_engagement"></a>
+
 ### list_pages_by_engagement
 
 Lists the engagements to contact channels that occurred by engaging a contact.
@@ -511,6 +562,8 @@ Keyword-only arguments:
 Returns
 [ListPagesByEngagementResultTypeDef](./type_defs.md#listpagesbyengagementresulttypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Lists the tags of an escalation plan or contact.
@@ -531,6 +584,8 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
+<a id="put_contact_policy"></a>
+
 ### put_contact_policy
 
 Adds a resource to the specified contact or escalation plan.
@@ -550,6 +605,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="send_activation_code"></a>
+
 ### send_activation_code
 
 Sends an activation code to a contact channel.
@@ -568,6 +625,8 @@ Keyword-only arguments:
 - `ContactChannelId`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="start_engagement"></a>
 
 ### start_engagement
 
@@ -595,6 +654,8 @@ Keyword-only arguments:
 Returns
 [StartEngagementResultTypeDef](./type_defs.md#startengagementresulttypedef).
 
+<a id="stop_engagement"></a>
+
 ### stop_engagement
 
 Stops an engagement before it finishes the final stage of the escalation plan
@@ -615,6 +676,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Tags a contact or escalation plan.
@@ -633,6 +696,8 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag_resource"></a>
 
 ### untag_resource
 
@@ -653,6 +718,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_contact"></a>
+
 ### update_contact
 
 Updates the contact or escalation plan specified.
@@ -672,6 +739,8 @@ Keyword-only arguments:
 - `Plan`: [PlanTypeDef](./type_defs.md#plantypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_contact_channel"></a>
 
 ### update_contact_channel
 
@@ -694,6 +763,8 @@ Keyword-only arguments:
   [ContactChannelAddressTypeDef](./type_defs.md#contactchanneladdresstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-ses-module"></a>
+
 # Paginators for boto3 SES module
 
 > [Index](..) > [SES](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SES](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ses.html#SES)
 type annotations stubs module
-[mypy_boto3_ses](https://pypi.org/project/mypy-boto3-ses/).
+[mypy-boto3-ses](https://pypi.org/project/mypy-boto3-ses/).
 
 - [Paginators for boto3 SES module](#paginators-for-boto3-ses-module)
   - [ListConfigurationSetsPaginator](#listconfigurationsetspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListIdentitiesPaginator](#listidentitiespaginator)
   - [ListReceiptRuleSetsPaginator](#listreceiptrulesetspaginator)
   - [ListTemplatesPaginator](#listtemplatespaginator)
+
+<a id="listconfigurationsetspaginator"></a>
 
 ## ListConfigurationSetsPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ses.paginator import ListConfigurationSetsPaginator
 
 def get_list_configuration_sets_paginator() -> ListConfigurationSetsPaginator:
-    return boto3.client("ses").get_paginator("list_configuration_sets")
+    return Session().client("ses").get_paginator("list_configuration_sets")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListConfigurationSetsPaginator.paginate` method:
 `ListConfigurationSetsPaginator.paginate` returns
 `_PageIterator`\[[ListConfigurationSetsResponseTypeDef](./type_defs.md#listconfigurationsetsresponsetypedef)\].
 
+<a id="listcustomverificationemailtemplatespaginator"></a>
+
 ## ListCustomVerificationEmailTemplatesPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ses.paginator import ListCustomVerificationEmailTemplatesPaginator
 
 def get_list_custom_verification_email_templates_paginator() -> ListCustomVerificationEmailTemplatesPaginator:
-    return boto3.client("ses").get_paginator("list_custom_verification_email_templates")
+    return Session().client("ses").get_paginator("list_custom_verification_email_templates")
 ```
 
 Boto3 documentation:
@@ -64,6 +74,8 @@ Arguments for `ListCustomVerificationEmailTemplatesPaginator.paginate` method:
 `ListCustomVerificationEmailTemplatesPaginator.paginate` returns
 `_PageIterator`\[[ListCustomVerificationEmailTemplatesResponseTypeDef](./type_defs.md#listcustomverificationemailtemplatesresponsetypedef)\].
 
+<a id="listidentitiespaginator"></a>
+
 ## ListIdentitiesPaginator
 
 Type annotations for `boto3.client("ses").get_paginator("list_identities")`.
@@ -71,10 +83,12 @@ Type annotations for `boto3.client("ses").get_paginator("list_identities")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ses.paginator import ListIdentitiesPaginator
 
 def get_list_identities_paginator() -> ListIdentitiesPaginator:
-    return boto3.client("ses").get_paginator("list_identities")
+    return Session().client("ses").get_paginator("list_identities")
 ```
 
 Boto3 documentation:
@@ -89,6 +103,8 @@ Arguments for `ListIdentitiesPaginator.paginate` method:
 `ListIdentitiesPaginator.paginate` returns
 `_PageIterator`\[[ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef)\].
 
+<a id="listreceiptrulesetspaginator"></a>
+
 ## ListReceiptRuleSetsPaginator
 
 Type annotations for
@@ -97,10 +113,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ses.paginator import ListReceiptRuleSetsPaginator
 
 def get_list_receipt_rule_sets_paginator() -> ListReceiptRuleSetsPaginator:
-    return boto3.client("ses").get_paginator("list_receipt_rule_sets")
+    return Session().client("ses").get_paginator("list_receipt_rule_sets")
 ```
 
 Boto3 documentation:
@@ -114,6 +132,8 @@ Arguments for `ListReceiptRuleSetsPaginator.paginate` method:
 `ListReceiptRuleSetsPaginator.paginate` returns
 `_PageIterator`\[[ListReceiptRuleSetsResponseTypeDef](./type_defs.md#listreceiptrulesetsresponsetypedef)\].
 
+<a id="listtemplatespaginator"></a>
+
 ## ListTemplatesPaginator
 
 Type annotations for `boto3.client("ses").get_paginator("list_templates")`.
@@ -121,10 +141,12 @@ Type annotations for `boto3.client("ses").get_paginator("list_templates")`.
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_ses.paginator import ListTemplatesPaginator
 
 def get_list_templates_paginator() -> ListTemplatesPaginator:
-    return boto3.client("ses").get_paginator("list_templates")
+    return Session().client("ses").get_paginator("list_templates")
 ```
 
 Boto3 documentation:

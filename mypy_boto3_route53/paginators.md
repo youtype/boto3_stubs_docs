@@ -1,3 +1,5 @@
+<a id="paginators-for-boto3-route53-module"></a>
+
 # Paginators for boto3 Route53 module
 
 > [Index](..) > [Route53](.) > Paginators
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Route53](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/route53.html#Route53)
 type annotations stubs module
-[mypy_boto3_route53](https://pypi.org/project/mypy-boto3-route53/).
+[mypy-boto3-route53](https://pypi.org/project/mypy-boto3-route53/).
 
 - [Paginators for boto3 Route53 module](#paginators-for-boto3-route53-module)
   - [ListHealthChecksPaginator](#listhealthcheckspaginator)
@@ -13,6 +15,8 @@ type annotations stubs module
   - [ListQueryLoggingConfigsPaginator](#listqueryloggingconfigspaginator)
   - [ListResourceRecordSetsPaginator](#listresourcerecordsetspaginator)
   - [ListVPCAssociationAuthorizationsPaginator](#listvpcassociationauthorizationspaginator)
+
+<a id="listhealthcheckspaginator"></a>
 
 ## ListHealthChecksPaginator
 
@@ -22,10 +26,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53.paginator import ListHealthChecksPaginator
 
 def get_list_health_checks_paginator() -> ListHealthChecksPaginator:
-    return boto3.client("route53").get_paginator("list_health_checks")
+    return Session().client("route53").get_paginator("list_health_checks")
 ```
 
 Boto3 documentation:
@@ -39,6 +45,8 @@ Arguments for `ListHealthChecksPaginator.paginate` method:
 `ListHealthChecksPaginator.paginate` returns
 `_PageIterator`\[[ListHealthChecksResponseTypeDef](./type_defs.md#listhealthchecksresponsetypedef)\].
 
+<a id="listhostedzonespaginator"></a>
+
 ## ListHostedZonesPaginator
 
 Type annotations for
@@ -47,10 +55,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53.paginator import ListHostedZonesPaginator
 
 def get_list_hosted_zones_paginator() -> ListHostedZonesPaginator:
-    return boto3.client("route53").get_paginator("list_hosted_zones")
+    return Session().client("route53").get_paginator("list_hosted_zones")
 ```
 
 Boto3 documentation:
@@ -65,6 +75,8 @@ Arguments for `ListHostedZonesPaginator.paginate` method:
 `ListHostedZonesPaginator.paginate` returns
 `_PageIterator`\[[ListHostedZonesResponseTypeDef](./type_defs.md#listhostedzonesresponsetypedef)\].
 
+<a id="listqueryloggingconfigspaginator"></a>
+
 ## ListQueryLoggingConfigsPaginator
 
 Type annotations for
@@ -73,10 +85,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53.paginator import ListQueryLoggingConfigsPaginator
 
 def get_list_query_logging_configs_paginator() -> ListQueryLoggingConfigsPaginator:
-    return boto3.client("route53").get_paginator("list_query_logging_configs")
+    return Session().client("route53").get_paginator("list_query_logging_configs")
 ```
 
 Boto3 documentation:
@@ -91,6 +105,8 @@ Arguments for `ListQueryLoggingConfigsPaginator.paginate` method:
 `ListQueryLoggingConfigsPaginator.paginate` returns
 `_PageIterator`\[[ListQueryLoggingConfigsResponseTypeDef](./type_defs.md#listqueryloggingconfigsresponsetypedef)\].
 
+<a id="listresourcerecordsetspaginator"></a>
+
 ## ListResourceRecordSetsPaginator
 
 Type annotations for
@@ -99,10 +115,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53.paginator import ListResourceRecordSetsPaginator
 
 def get_list_resource_record_sets_paginator() -> ListResourceRecordSetsPaginator:
-    return boto3.client("route53").get_paginator("list_resource_record_sets")
+    return Session().client("route53").get_paginator("list_resource_record_sets")
 ```
 
 Boto3 documentation:
@@ -117,6 +135,8 @@ Arguments for `ListResourceRecordSetsPaginator.paginate` method:
 `ListResourceRecordSetsPaginator.paginate` returns
 `_PageIterator`\[[ListResourceRecordSetsResponseTypeDef](./type_defs.md#listresourcerecordsetsresponsetypedef)\].
 
+<a id="listvpcassociationauthorizationspaginator"></a>
+
 ## ListVPCAssociationAuthorizationsPaginator
 
 Type annotations for
@@ -125,10 +145,12 @@ Type annotations for
 Can be used directly:
 
 ```python
+from boto3.session import Session
+
 from mypy_boto3_route53.paginator import ListVPCAssociationAuthorizationsPaginator
 
 def get_list_vpc_association_authorizations_paginator() -> ListVPCAssociationAuthorizationsPaginator:
-    return boto3.client("route53").get_paginator("list_vpc_association_authorizations")
+    return Session().client("route53").get_paginator("list_vpc_association_authorizations")
 ```
 
 Boto3 documentation:

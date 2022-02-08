@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-resourcegroupstaggingapi-module"></a>
+
 # Literals for boto3 ResourceGroupsTaggingAPI module
 
 > [Index](..) > [ResourceGroupsTaggingAPI](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ResourceGroupsTaggingAPI](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/resourcegroupstaggingapi.html#ResourceGroupsTaggingAPI)
 type annotations stubs module
-[mypy_boto3_resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
+[mypy-boto3-resourcegroupstaggingapi](https://pypi.org/project/mypy-boto3-resourcegroupstaggingapi/).
 
 - [Literals for boto3 ResourceGroupsTaggingAPI module](#literals-for-boto3-resourcegroupstaggingapi-module)
   - [ErrorCodeType](#errorcodetype)
@@ -18,6 +20,8 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
 
+<a id="errorcodetype"></a>
+
 ## ErrorCodeType
 
 ```python
@@ -29,6 +33,8 @@ Values:
 - `InternalServiceException`
 - `InvalidParameterException`
 
+<a id="getcompliancesummarypaginatorname"></a>
+
 ## GetComplianceSummaryPaginatorName
 
 ```python
@@ -38,6 +44,8 @@ from mypy_boto3_resourcegroupstaggingapi.literals import GetComplianceSummaryPag
 Values:
 
 - `get_compliance_summary`
+
+<a id="getresourcespaginatorname"></a>
 
 ## GetResourcesPaginatorName
 
@@ -49,6 +57,8 @@ Values:
 
 - `get_resources`
 
+<a id="gettagkeyspaginatorname"></a>
+
 ## GetTagKeysPaginatorName
 
 ```python
@@ -59,6 +69,8 @@ Values:
 
 - `get_tag_keys`
 
+<a id="gettagvaluespaginatorname"></a>
+
 ## GetTagValuesPaginatorName
 
 ```python
@@ -68,6 +80,8 @@ from mypy_boto3_resourcegroupstaggingapi.literals import GetTagValuesPaginatorNa
 Values:
 
 - `get_tag_values`
+
+<a id="groupbyattributetype"></a>
 
 ## GroupByAttributeType
 
@@ -81,6 +95,8 @@ Values:
 - `RESOURCE_TYPE`
 - `TARGET_ID`
 
+<a id="targetidtypetype"></a>
+
 ## TargetIdTypeType
 
 ```python
@@ -92,6 +108,8 @@ Values:
 - `ACCOUNT`
 - `OU`
 - `ROOT`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -400,6 +418,8 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="paginatorname"></a>
 
 ## PaginatorName
 

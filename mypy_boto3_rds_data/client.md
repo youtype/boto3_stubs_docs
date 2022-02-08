@@ -1,3 +1,5 @@
+<a id="rdsdataserviceclient-for-boto3-rdsdataservice-module"></a>
+
 # RDSDataServiceClient for boto3 RDSDataService module
 
 > [Index](..) > [RDSDataService](.) > RDSDataServiceClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [RDSDataService](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService)
 type annotations stubs module
-[mypy_boto3_rds_data](https://pypi.org/project/mypy-boto3-rds-data/).
+[mypy-boto3-rds-data](https://pypi.org/project/mypy-boto3-rds-data/).
 
 - [RDSDataServiceClient for boto3 RDSDataService module](#rdsdataserviceclient-for-boto3-rdsdataservice-module)
   - [RDSDataServiceClient](#rdsdataserviceclient)
@@ -21,6 +23,8 @@ type annotations stubs module
     - [generate_presigned_url](#generate_presigned_url)
     - [rollback_transaction](#rollback_transaction)
 
+<a id="rdsdataserviceclient"></a>
+
 ## RDSDataServiceClient
 
 Type annotations for `boto3.client("rds-data")`
@@ -28,14 +32,17 @@ Type annotations for `boto3.client("rds-data")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_rds_data.client import RDSDataServiceClient
 
 def get_rds-data_client() -> RDSDataServiceClient:
-    return boto3.client("rds-data")
+    return Session().client("rds-data")
 ```
 
 Boto3 documentation:
 [RDSDataService.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -59,7 +66,11 @@ Exceptions:
 - `Exceptions.ServiceUnavailableError`
 - `Exceptions.StatementTimeoutException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -71,6 +82,8 @@ Boto3 documentation:
 [RDSDataService.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/rds-data.html#RDSDataService.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="batch_execute_statement"></a>
 
 ### batch_execute_statement
 
@@ -98,6 +111,8 @@ Keyword-only arguments:
 Returns
 [BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef).
 
+<a id="begin_transaction"></a>
+
 ### begin_transaction
 
 Starts a SQL transaction.
@@ -120,6 +135,8 @@ Keyword-only arguments:
 Returns
 [BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef).
 
+<a id="can_paginate"></a>
+
 ### can_paginate
 
 Check if an operation can be paginated.
@@ -134,6 +151,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="commit_transaction"></a>
 
 ### commit_transaction
 
@@ -157,6 +176,8 @@ Keyword-only arguments:
 Returns
 [CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
 
+<a id="execute_sql"></a>
+
 ### execute_sql
 
 Runs one or more SQL statements.
@@ -178,6 +199,8 @@ Keyword-only arguments:
 - `schema`: `str`
 
 Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
+
+<a id="execute_statement"></a>
 
 ### execute_statement
 
@@ -209,6 +232,8 @@ Keyword-only arguments:
 Returns
 [ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -226,6 +251,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="rollback_transaction"></a>
 
 ### rollback_transaction
 

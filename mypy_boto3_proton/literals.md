@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-proton-module"></a>
+
 # Literals for boto3 Proton module
 
 > [Index](..) > [Proton](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [Proton](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/proton.html#Proton)
 type annotations stubs module
-[mypy_boto3_proton](https://pypi.org/project/mypy-boto3-proton/).
+[mypy-boto3-proton](https://pypi.org/project/mypy-boto3-proton/).
 
 - [Literals for boto3 Proton module](#literals-for-boto3-proton-module)
   - [DeploymentStatusType](#deploymentstatustype)
@@ -51,6 +53,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="deploymentstatustype"></a>
+
 ## DeploymentStatusType
 
 ```python
@@ -68,6 +72,8 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
+<a id="deploymentupdatetypetype"></a>
+
 ## DeploymentUpdateTypeType
 
 ```python
@@ -81,6 +87,8 @@ Values:
 - `MINOR_VERSION`
 - `NONE`
 
+<a id="environmentaccountconnectionrequesteraccounttypetype"></a>
+
 ## EnvironmentAccountConnectionRequesterAccountTypeType
 
 ```python
@@ -91,6 +99,8 @@ Values:
 
 - `ENVIRONMENT_ACCOUNT`
 - `MANAGEMENT_ACCOUNT`
+
+<a id="environmentaccountconnectionstatustype"></a>
 
 ## EnvironmentAccountConnectionStatusType
 
@@ -104,6 +114,8 @@ Values:
 - `PENDING`
 - `REJECTED`
 
+<a id="environmentdeployedwaitername"></a>
+
 ## EnvironmentDeployedWaiterName
 
 ```python
@@ -113,6 +125,8 @@ from mypy_boto3_proton.literals import EnvironmentDeployedWaiterName
 Values:
 
 - `environment_deployed`
+
+<a id="environmenttemplateversionregisteredwaitername"></a>
 
 ## EnvironmentTemplateVersionRegisteredWaiterName
 
@@ -124,6 +138,8 @@ Values:
 
 - `environment_template_version_registered`
 
+<a id="listenvironmentaccountconnectionspaginatorname"></a>
+
 ## ListEnvironmentAccountConnectionsPaginatorName
 
 ```python
@@ -133,6 +149,8 @@ from mypy_boto3_proton.literals import ListEnvironmentAccountConnectionsPaginato
 Values:
 
 - `list_environment_account_connections`
+
+<a id="listenvironmentoutputspaginatorname"></a>
 
 ## ListEnvironmentOutputsPaginatorName
 
@@ -144,6 +162,8 @@ Values:
 
 - `list_environment_outputs`
 
+<a id="listenvironmentprovisionedresourcespaginatorname"></a>
+
 ## ListEnvironmentProvisionedResourcesPaginatorName
 
 ```python
@@ -153,6 +173,8 @@ from mypy_boto3_proton.literals import ListEnvironmentProvisionedResourcesPagina
 Values:
 
 - `list_environment_provisioned_resources`
+
+<a id="listenvironmenttemplateversionspaginatorname"></a>
 
 ## ListEnvironmentTemplateVersionsPaginatorName
 
@@ -164,6 +186,8 @@ Values:
 
 - `list_environment_template_versions`
 
+<a id="listenvironmenttemplatespaginatorname"></a>
+
 ## ListEnvironmentTemplatesPaginatorName
 
 ```python
@@ -173,6 +197,8 @@ from mypy_boto3_proton.literals import ListEnvironmentTemplatesPaginatorName
 Values:
 
 - `list_environment_templates`
+
+<a id="listenvironmentspaginatorname"></a>
 
 ## ListEnvironmentsPaginatorName
 
@@ -184,6 +210,8 @@ Values:
 
 - `list_environments`
 
+<a id="listrepositoriespaginatorname"></a>
+
 ## ListRepositoriesPaginatorName
 
 ```python
@@ -193,6 +221,8 @@ from mypy_boto3_proton.literals import ListRepositoriesPaginatorName
 Values:
 
 - `list_repositories`
+
+<a id="listrepositorysyncdefinitionspaginatorname"></a>
 
 ## ListRepositorySyncDefinitionsPaginatorName
 
@@ -204,6 +234,8 @@ Values:
 
 - `list_repository_sync_definitions`
 
+<a id="listserviceinstanceoutputspaginatorname"></a>
+
 ## ListServiceInstanceOutputsPaginatorName
 
 ```python
@@ -213,6 +245,8 @@ from mypy_boto3_proton.literals import ListServiceInstanceOutputsPaginatorName
 Values:
 
 - `list_service_instance_outputs`
+
+<a id="listserviceinstanceprovisionedresourcespaginatorname"></a>
 
 ## ListServiceInstanceProvisionedResourcesPaginatorName
 
@@ -224,6 +258,8 @@ Values:
 
 - `list_service_instance_provisioned_resources`
 
+<a id="listserviceinstancespaginatorname"></a>
+
 ## ListServiceInstancesPaginatorName
 
 ```python
@@ -233,6 +269,8 @@ from mypy_boto3_proton.literals import ListServiceInstancesPaginatorName
 Values:
 
 - `list_service_instances`
+
+<a id="listservicepipelineoutputspaginatorname"></a>
 
 ## ListServicePipelineOutputsPaginatorName
 
@@ -244,6 +282,8 @@ Values:
 
 - `list_service_pipeline_outputs`
 
+<a id="listservicepipelineprovisionedresourcespaginatorname"></a>
+
 ## ListServicePipelineProvisionedResourcesPaginatorName
 
 ```python
@@ -253,6 +293,8 @@ from mypy_boto3_proton.literals import ListServicePipelineProvisionedResourcesPa
 Values:
 
 - `list_service_pipeline_provisioned_resources`
+
+<a id="listservicetemplateversionspaginatorname"></a>
 
 ## ListServiceTemplateVersionsPaginatorName
 
@@ -264,6 +306,8 @@ Values:
 
 - `list_service_template_versions`
 
+<a id="listservicetemplatespaginatorname"></a>
+
 ## ListServiceTemplatesPaginatorName
 
 ```python
@@ -273,6 +317,8 @@ from mypy_boto3_proton.literals import ListServiceTemplatesPaginatorName
 Values:
 
 - `list_service_templates`
+
+<a id="listservicespaginatorname"></a>
 
 ## ListServicesPaginatorName
 
@@ -284,6 +330,8 @@ Values:
 
 - `list_services`
 
+<a id="listtagsforresourcepaginatorname"></a>
+
 ## ListTagsForResourcePaginatorName
 
 ```python
@@ -293,6 +341,8 @@ from mypy_boto3_proton.literals import ListTagsForResourcePaginatorName
 Values:
 
 - `list_tags_for_resource`
+
+<a id="provisionedresourceenginetype"></a>
 
 ## ProvisionedResourceEngineType
 
@@ -305,6 +355,8 @@ Values:
 - `CLOUDFORMATION`
 - `TERRAFORM`
 
+<a id="provisioningtype"></a>
+
 ## ProvisioningType
 
 ```python
@@ -314,6 +366,8 @@ from mypy_boto3_proton.literals import ProvisioningType
 Values:
 
 - `CUSTOMER_MANAGED`
+
+<a id="repositoryprovidertype"></a>
 
 ## RepositoryProviderType
 
@@ -326,6 +380,8 @@ Values:
 - `BITBUCKET`
 - `GITHUB`
 - `GITHUB_ENTERPRISE`
+
+<a id="repositorysyncstatustype"></a>
 
 ## RepositorySyncStatusType
 
@@ -341,6 +397,8 @@ Values:
 - `QUEUED`
 - `SUCCEEDED`
 
+<a id="resourcedeploymentstatustype"></a>
+
 ## ResourceDeploymentStatusType
 
 ```python
@@ -352,6 +410,8 @@ Values:
 - `FAILED`
 - `IN_PROGRESS`
 - `SUCCEEDED`
+
+<a id="resourcesyncstatustype"></a>
 
 ## ResourceSyncStatusType
 
@@ -366,6 +426,8 @@ Values:
 - `INITIATED`
 - `SUCCEEDED`
 
+<a id="servicecreatedwaitername"></a>
+
 ## ServiceCreatedWaiterName
 
 ```python
@@ -375,6 +437,8 @@ from mypy_boto3_proton.literals import ServiceCreatedWaiterName
 Values:
 
 - `service_created`
+
+<a id="servicedeletedwaitername"></a>
 
 ## ServiceDeletedWaiterName
 
@@ -386,6 +450,8 @@ Values:
 
 - `service_deleted`
 
+<a id="serviceinstancedeployedwaitername"></a>
+
 ## ServiceInstanceDeployedWaiterName
 
 ```python
@@ -396,6 +462,8 @@ Values:
 
 - `service_instance_deployed`
 
+<a id="servicepipelinedeployedwaitername"></a>
+
 ## ServicePipelineDeployedWaiterName
 
 ```python
@@ -405,6 +473,8 @@ from mypy_boto3_proton.literals import ServicePipelineDeployedWaiterName
 Values:
 
 - `service_pipeline_deployed`
+
+<a id="servicestatustype"></a>
 
 ## ServiceStatusType
 
@@ -429,6 +499,8 @@ Values:
 - `UPDATE_FAILED_CLEANUP_IN_PROGRESS`
 - `UPDATE_IN_PROGRESS`
 
+<a id="servicetemplateversionregisteredwaitername"></a>
+
 ## ServiceTemplateVersionRegisteredWaiterName
 
 ```python
@@ -438,6 +510,8 @@ from mypy_boto3_proton.literals import ServiceTemplateVersionRegisteredWaiterNam
 Values:
 
 - `service_template_version_registered`
+
+<a id="serviceupdatedwaitername"></a>
 
 ## ServiceUpdatedWaiterName
 
@@ -449,6 +523,8 @@ Values:
 
 - `service_updated`
 
+<a id="synctypetype"></a>
+
 ## SyncTypeType
 
 ```python
@@ -458,6 +534,8 @@ from mypy_boto3_proton.literals import SyncTypeType
 Values:
 
 - `TEMPLATE_SYNC`
+
+<a id="templatetypetype"></a>
 
 ## TemplateTypeType
 
@@ -469,6 +547,8 @@ Values:
 
 - `ENVIRONMENT`
 - `SERVICE`
+
+<a id="templateversionstatustype"></a>
 
 ## TemplateVersionStatusType
 
@@ -482,6 +562,8 @@ Values:
 - `PUBLISHED`
 - `REGISTRATION_FAILED`
 - `REGISTRATION_IN_PROGRESS`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -791,6 +873,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -816,6 +900,8 @@ Values:
 - `list_service_templates`
 - `list_services`
 - `list_tags_for_resource`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

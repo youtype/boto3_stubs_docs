@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-elasticinference-module"></a>
+
 # Typed dictionaries for boto3 ElasticInference module
 
 > [Index](..) > [ElasticInference](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [ElasticInference](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/elastic-inference.html#ElasticInference)
 type annotations stubs module
-[mypy_boto3_elastic_inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
+[mypy-boto3-elastic-inference](https://pypi.org/project/mypy-boto3-elastic-inference/).
 
 - [Typed dictionaries for boto3 ElasticInference module](#typed-dictionaries-for-boto3-elasticinference-module)
   - [AcceleratorTypeOfferingTypeDef](#acceleratortypeofferingtypedef)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
 
+<a id="acceleratortypeofferingtypedef"></a>
+
 ## AcceleratorTypeOfferingTypeDef
 
 ```python
@@ -38,6 +42,8 @@ Optional fields:
 - `acceleratorType`: `str`
 - `locationType`: [LocationTypeType](./literals.md#locationtypetype)
 - `location`: `str`
+
+<a id="acceleratortypetypedef"></a>
 
 ## AcceleratorTypeTypeDef
 
@@ -51,6 +57,8 @@ Optional fields:
 - `memoryInfo`: [MemoryInfoTypeDef](./type_defs.md#memoryinfotypedef)
 - `throughputInfo`:
   `List`\[[KeyValuePairTypeDef](./type_defs.md#keyvaluepairtypedef)\]
+
+<a id="describeacceleratorofferingsrequestrequesttypedef"></a>
 
 ## DescribeAcceleratorOfferingsRequestRequestTypeDef
 
@@ -66,6 +74,8 @@ Optional fields:
 
 - `acceleratorTypes`: `Sequence`\[`str`\]
 
+<a id="describeacceleratorofferingsresponsetypedef"></a>
+
 ## DescribeAcceleratorOfferingsResponseTypeDef
 
 ```python
@@ -78,6 +88,8 @@ Required fields:
   `List`\[[AcceleratorTypeOfferingTypeDef](./type_defs.md#acceleratortypeofferingtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeacceleratortypesresponsetypedef"></a>
 
 ## DescribeAcceleratorTypesResponseTypeDef
 
@@ -92,6 +104,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeacceleratorsrequestrequesttypedef"></a>
+
 ## DescribeAcceleratorsRequestRequestTypeDef
 
 ```python
@@ -104,6 +118,8 @@ Optional fields:
 - `filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `maxResults`: `int`
 - `nextToken`: `str`
+
+<a id="describeacceleratorsresponsetypedef"></a>
 
 ## DescribeAcceleratorsResponseTypeDef
 
@@ -119,6 +135,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="elasticinferenceacceleratorhealthtypedef"></a>
+
 ## ElasticInferenceAcceleratorHealthTypeDef
 
 ```python
@@ -128,6 +146,8 @@ from mypy_boto3_elastic_inference.type_defs import ElasticInferenceAcceleratorHe
 Optional fields:
 
 - `status`: `str`
+
+<a id="elasticinferenceacceleratortypedef"></a>
 
 ## ElasticInferenceAcceleratorTypeDef
 
@@ -144,6 +164,8 @@ Optional fields:
 - `availabilityZone`: `str`
 - `attachedResource`: `str`
 
+<a id="filtertypedef"></a>
+
 ## FilterTypeDef
 
 ```python
@@ -154,6 +176,8 @@ Optional fields:
 
 - `name`: `str`
 - `values`: `Sequence`\[`str`\]
+
+<a id="keyvaluepairtypedef"></a>
 
 ## KeyValuePairTypeDef
 
@@ -166,6 +190,8 @@ Optional fields:
 - `key`: `str`
 - `value`: `int`
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -175,6 +201,8 @@ from mypy_boto3_elastic_inference.type_defs import ListTagsForResourceRequestReq
 Required fields:
 
 - `resourceArn`: `str`
+
+<a id="listtagsforresourceresulttypedef"></a>
 
 ## ListTagsForResourceResultTypeDef
 
@@ -188,6 +216,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="memoryinfotypedef"></a>
+
 ## MemoryInfoTypeDef
 
 ```python
@@ -197,6 +227,8 @@ from mypy_boto3_elastic_inference.type_defs import MemoryInfoTypeDef
 Optional fields:
 
 - `sizeInMiB`: `int`
+
+<a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
 
@@ -209,6 +241,8 @@ Optional fields:
 - `MaxItems`: `int`
 - `PageSize`: `int`
 - `StartingToken`: `str`
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -224,6 +258,8 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
 ## TagResourceRequestRequestTypeDef
 
 ```python
@@ -234,6 +270,8 @@ Required fields:
 
 - `resourceArn`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
 

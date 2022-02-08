@@ -1,3 +1,5 @@
+<a id="type-annotations-for-boto3-fms-module"></a>
+
 # Type annotations for boto3 FMS module
 
 > [Index](..) > FMS
@@ -5,9 +7,17 @@
 Auto-generated documentation for
 [FMS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fms.html#FMS)
 type annotations stubs module
-[mypy_boto3_fms](https://pypi.org/project/mypy-boto3-fms/).
+[mypy-boto3-fms](https://pypi.org/project/mypy-boto3-fms/).
 
 ```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[fms]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[fms]'
+
+# standalone installation
 pip install mypy-boto3-fms
 ```
 
@@ -19,6 +29,8 @@ pip install mypy-boto3-fms
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
+<a id="fmsclient"></a>
+
 ## FMSClient
 
 Type annotations for `boto3.client("fms")` as [FMSClient](./client.md)
@@ -28,6 +40,8 @@ Can be used directly:
 ```python
 from mypy_boto3_fms.client import FMSClient
 ```
+
+<a id="methods"></a>
 
 ### Methods
 
@@ -62,6 +76,8 @@ from mypy_boto3_fms.client import FMSClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 
+<a id="exceptions"></a>
+
 ### Exceptions
 
 FMSClient [exceptions](./client.md#exceptions)
@@ -74,6 +90,8 @@ FMSClient [exceptions](./client.md#exceptions)
 - LimitExceededException
 - ResourceNotFoundException
 
+<a id="paginators"></a>
+
 ## Paginators
 
 Type annotations for [paginators](./paginators.md) from
@@ -82,7 +100,7 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_fms.paginators import ListAppsListsPaginator, ...
+from mypy_boto3_fms.paginator import ListAppsListsPaginator, ...
 ```
 
 - [ListAppsListsPaginator](./paginators.md#listappslistspaginator)
@@ -90,6 +108,8 @@ from mypy_boto3_fms.paginators import ListAppsListsPaginator, ...
 - [ListMemberAccountsPaginator](./paginators.md#listmemberaccountspaginator)
 - [ListPoliciesPaginator](./paginators.md#listpoliciespaginator)
 - [ListProtocolsListsPaginator](./paginators.md#listprotocolslistspaginator)
+
+<a id="literals"></a>
 
 ## Literals
 
@@ -117,6 +137,8 @@ from mypy_boto3_fms.literals import AccountRoleStatusType, ...
 - [ViolationReasonType](./literals.md#violationreasontype)
 - [ServiceName](./literals.md#servicename)
 - [PaginatorName](./literals.md#paginatorname)
+
+<a id="typed-dictionaries"></a>
 
 ## Typed dictionaries
 

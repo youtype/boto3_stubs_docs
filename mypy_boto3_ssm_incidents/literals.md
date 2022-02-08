@@ -1,3 +1,5 @@
+<a id="literals-for-boto3-ssmincidents-module"></a>
+
 # Literals for boto3 SSMIncidents module
 
 > [Index](..) > [SSMIncidents](.) > Literals
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [SSMIncidents](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ssm-incidents.html#SSMIncidents)
 type annotations stubs module
-[mypy_boto3_ssm_incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
+[mypy-boto3-ssm-incidents](https://pypi.org/project/mypy-boto3-ssm-incidents/).
 
 - [Literals for boto3 SSMIncidents module](#literals-for-boto3-ssmincidents-module)
   - [GetResourcePoliciesPaginatorName](#getresourcepoliciespaginatorname)
@@ -27,6 +29,8 @@ type annotations stubs module
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
+<a id="getresourcepoliciespaginatorname"></a>
+
 ## GetResourcePoliciesPaginatorName
 
 ```python
@@ -36,6 +40,8 @@ from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName
 Values:
 
 - `get_resource_policies`
+
+<a id="incidentrecordstatustype"></a>
 
 ## IncidentRecordStatusType
 
@@ -48,6 +54,8 @@ Values:
 - `OPEN`
 - `RESOLVED`
 
+<a id="itemtypetype"></a>
+
 ## ItemTypeType
 
 ```python
@@ -58,10 +66,13 @@ Values:
 
 - `ANALYSIS`
 - `ATTACHMENT`
+- `AUTOMATION`
 - `INCIDENT`
 - `METRIC`
 - `OTHER`
 - `PARENT`
+
+<a id="listincidentrecordspaginatorname"></a>
 
 ## ListIncidentRecordsPaginatorName
 
@@ -73,6 +84,8 @@ Values:
 
 - `list_incident_records`
 
+<a id="listrelateditemspaginatorname"></a>
+
 ## ListRelatedItemsPaginatorName
 
 ```python
@@ -82,6 +95,8 @@ from mypy_boto3_ssm_incidents.literals import ListRelatedItemsPaginatorName
 Values:
 
 - `list_related_items`
+
+<a id="listreplicationsetspaginatorname"></a>
 
 ## ListReplicationSetsPaginatorName
 
@@ -93,6 +108,8 @@ Values:
 
 - `list_replication_sets`
 
+<a id="listresponseplanspaginatorname"></a>
+
 ## ListResponsePlansPaginatorName
 
 ```python
@@ -103,6 +120,8 @@ Values:
 
 - `list_response_plans`
 
+<a id="listtimelineeventspaginatorname"></a>
+
 ## ListTimelineEventsPaginatorName
 
 ```python
@@ -112,6 +131,8 @@ from mypy_boto3_ssm_incidents.literals import ListTimelineEventsPaginatorName
 Values:
 
 - `list_timeline_events`
+
+<a id="regionstatustype"></a>
 
 ## RegionStatusType
 
@@ -125,6 +146,8 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+
+<a id="replicationsetstatustype"></a>
 
 ## ReplicationSetStatusType
 
@@ -140,6 +163,8 @@ Values:
 - `FAILED`
 - `UPDATING`
 
+<a id="sortordertype"></a>
+
 ## SortOrderType
 
 ```python
@@ -150,6 +175,8 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="ssmtargetaccounttype"></a>
 
 ## SsmTargetAccountType
 
@@ -162,6 +189,8 @@ Values:
 - `IMPACTED_ACCOUNT`
 - `RESPONSE_PLAN_OWNER_ACCOUNT`
 
+<a id="timelineeventsorttype"></a>
+
 ## TimelineEventSortType
 
 ```python
@@ -171,6 +200,8 @@ from mypy_boto3_ssm_incidents.literals import TimelineEventSortType
 Values:
 
 - `EVENT_TIME`
+
+<a id="waitforreplicationsetactivewaitername"></a>
 
 ## WaitForReplicationSetActiveWaiterName
 
@@ -182,6 +213,8 @@ Values:
 
 - `wait_for_replication_set_active`
 
+<a id="waitforreplicationsetdeletedwaitername"></a>
+
 ## WaitForReplicationSetDeletedWaiterName
 
 ```python
@@ -191,6 +224,8 @@ from mypy_boto3_ssm_incidents.literals import WaitForReplicationSetDeletedWaiter
 Values:
 
 - `wait_for_replication_set_deleted`
+
+<a id="servicename"></a>
 
 ## ServiceName
 
@@ -500,6 +535,8 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="paginatorname"></a>
+
 ## PaginatorName
 
 ```python
@@ -514,6 +551,8 @@ Values:
 - `list_replication_sets`
 - `list_response_plans`
 - `list_timeline_events`
+
+<a id="waitername"></a>
 
 ## WaiterName
 

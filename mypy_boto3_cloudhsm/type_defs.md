@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-cloudhsm-module"></a>
+
 # Typed dictionaries for boto3 CloudHSM module
 
 > [Index](..) > [CloudHSM](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [CloudHSM](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudhsm.html#CloudHSM)
 type annotations stubs module
-[mypy_boto3_cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
+[mypy-boto3-cloudhsm](https://pypi.org/project/mypy-boto3-cloudhsm/).
 
 - [Typed dictionaries for boto3 CloudHSM module](#typed-dictionaries-for-boto3-cloudhsm-module)
   - [AddTagsToResourceRequestRequestTypeDef](#addtagstoresourcerequestrequesttypedef)
@@ -51,6 +53,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [TagTypeDef](#tagtypedef)
 
+<a id="addtagstoresourcerequestrequesttypedef"></a>
+
 ## AddTagsToResourceRequestRequestTypeDef
 
 ```python
@@ -61,6 +65,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagList`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="addtagstoresourceresponsetypedef"></a>
 
 ## AddTagsToResourceResponseTypeDef
 
@@ -74,6 +80,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createhapgrequestrequesttypedef"></a>
+
 ## CreateHapgRequestRequestTypeDef
 
 ```python
@@ -83,6 +91,8 @@ from mypy_boto3_cloudhsm.type_defs import CreateHapgRequestRequestTypeDef
 Required fields:
 
 - `Label`: `str`
+
+<a id="createhapgresponsetypedef"></a>
 
 ## CreateHapgResponseTypeDef
 
@@ -95,6 +105,8 @@ Required fields:
 - `HapgArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createhsmrequestrequesttypedef"></a>
 
 ## CreateHsmRequestRequestTypeDef
 
@@ -117,6 +129,8 @@ Optional fields:
 - `ClientToken`: `str`
 - `SyslogIp`: `str`
 
+<a id="createhsmresponsetypedef"></a>
+
 ## CreateHsmResponseTypeDef
 
 ```python
@@ -128,6 +142,8 @@ Required fields:
 - `HsmArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createlunaclientrequestrequesttypedef"></a>
 
 ## CreateLunaClientRequestRequestTypeDef
 
@@ -143,6 +159,8 @@ Optional fields:
 
 - `Label`: `str`
 
+<a id="createlunaclientresponsetypedef"></a>
+
 ## CreateLunaClientResponseTypeDef
 
 ```python
@@ -155,6 +173,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletehapgrequestrequesttypedef"></a>
+
 ## DeleteHapgRequestRequestTypeDef
 
 ```python
@@ -164,6 +184,8 @@ from mypy_boto3_cloudhsm.type_defs import DeleteHapgRequestRequestTypeDef
 Required fields:
 
 - `HapgArn`: `str`
+
+<a id="deletehapgresponsetypedef"></a>
 
 ## DeleteHapgResponseTypeDef
 
@@ -177,6 +199,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletehsmrequestrequesttypedef"></a>
+
 ## DeleteHsmRequestRequestTypeDef
 
 ```python
@@ -186,6 +210,8 @@ from mypy_boto3_cloudhsm.type_defs import DeleteHsmRequestRequestTypeDef
 Required fields:
 
 - `HsmArn`: `str`
+
+<a id="deletehsmresponsetypedef"></a>
 
 ## DeleteHsmResponseTypeDef
 
@@ -199,6 +225,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletelunaclientrequestrequesttypedef"></a>
+
 ## DeleteLunaClientRequestRequestTypeDef
 
 ```python
@@ -208,6 +236,8 @@ from mypy_boto3_cloudhsm.type_defs import DeleteLunaClientRequestRequestTypeDef
 Required fields:
 
 - `ClientArn`: `str`
+
+<a id="deletelunaclientresponsetypedef"></a>
 
 ## DeleteLunaClientResponseTypeDef
 
@@ -221,6 +251,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describehapgrequestrequesttypedef"></a>
+
 ## DescribeHapgRequestRequestTypeDef
 
 ```python
@@ -230,6 +262,8 @@ from mypy_boto3_cloudhsm.type_defs import DescribeHapgRequestRequestTypeDef
 Required fields:
 
 - `HapgArn`: `str`
+
+<a id="describehapgresponsetypedef"></a>
 
 ## DescribeHapgResponseTypeDef
 
@@ -251,6 +285,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describehsmrequestrequesttypedef"></a>
+
 ## DescribeHsmRequestRequestTypeDef
 
 ```python
@@ -261,6 +297,8 @@ Optional fields:
 
 - `HsmArn`: `str`
 - `HsmSerialNumber`: `str`
+
+<a id="describehsmresponsetypedef"></a>
 
 ## DescribeHsmResponseTypeDef
 
@@ -295,6 +333,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describelunaclientrequestrequesttypedef"></a>
+
 ## DescribeLunaClientRequestRequestTypeDef
 
 ```python
@@ -305,6 +345,8 @@ Optional fields:
 
 - `ClientArn`: `str`
 - `CertificateFingerprint`: `str`
+
+<a id="describelunaclientresponsetypedef"></a>
 
 ## DescribeLunaClientResponseTypeDef
 
@@ -322,6 +364,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getconfigrequestrequesttypedef"></a>
+
 ## GetConfigRequestRequestTypeDef
 
 ```python
@@ -333,6 +377,8 @@ Required fields:
 - `ClientArn`: `str`
 - `ClientVersion`: [ClientVersionType](./literals.md#clientversiontype)
 - `HapgList`: `Sequence`\[`str`\]
+
+<a id="getconfigresponsetypedef"></a>
 
 ## GetConfigResponseTypeDef
 
@@ -348,6 +394,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listavailablezonesresponsetypedef"></a>
+
 ## ListAvailableZonesResponseTypeDef
 
 ```python
@@ -360,6 +408,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listhapgsrequestrequesttypedef"></a>
+
 ## ListHapgsRequestRequestTypeDef
 
 ```python
@@ -369,6 +419,8 @@ from mypy_boto3_cloudhsm.type_defs import ListHapgsRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listhapgsresponsetypedef"></a>
 
 ## ListHapgsResponseTypeDef
 
@@ -383,6 +435,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listhsmsrequestrequesttypedef"></a>
+
 ## ListHsmsRequestRequestTypeDef
 
 ```python
@@ -392,6 +446,8 @@ from mypy_boto3_cloudhsm.type_defs import ListHsmsRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listhsmsresponsetypedef"></a>
 
 ## ListHsmsResponseTypeDef
 
@@ -406,6 +462,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listlunaclientsrequestrequesttypedef"></a>
+
 ## ListLunaClientsRequestRequestTypeDef
 
 ```python
@@ -415,6 +473,8 @@ from mypy_boto3_cloudhsm.type_defs import ListLunaClientsRequestRequestTypeDef
 Optional fields:
 
 - `NextToken`: `str`
+
+<a id="listlunaclientsresponsetypedef"></a>
 
 ## ListLunaClientsResponseTypeDef
 
@@ -429,6 +489,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
 ## ListTagsForResourceRequestRequestTypeDef
 
 ```python
@@ -438,6 +500,8 @@ from mypy_boto3_cloudhsm.type_defs import ListTagsForResourceRequestRequestTypeD
 Required fields:
 
 - `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
 
 ## ListTagsForResourceResponseTypeDef
 
@@ -450,6 +514,8 @@ Required fields:
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyhapgrequestrequesttypedef"></a>
 
 ## ModifyHapgRequestRequestTypeDef
 
@@ -466,6 +532,8 @@ Optional fields:
 - `Label`: `str`
 - `PartitionSerialList`: `Sequence`\[`str`\]
 
+<a id="modifyhapgresponsetypedef"></a>
+
 ## ModifyHapgResponseTypeDef
 
 ```python
@@ -477,6 +545,8 @@ Required fields:
 - `HapgArn`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="modifyhsmrequestrequesttypedef"></a>
 
 ## ModifyHsmRequestRequestTypeDef
 
@@ -496,6 +566,8 @@ Optional fields:
 - `ExternalId`: `str`
 - `SyslogIp`: `str`
 
+<a id="modifyhsmresponsetypedef"></a>
+
 ## ModifyHsmResponseTypeDef
 
 ```python
@@ -508,6 +580,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="modifylunaclientrequestrequesttypedef"></a>
+
 ## ModifyLunaClientRequestRequestTypeDef
 
 ```python
@@ -518,6 +592,8 @@ Required fields:
 
 - `ClientArn`: `str`
 - `Certificate`: `str`
+
+<a id="modifylunaclientresponsetypedef"></a>
 
 ## ModifyLunaClientResponseTypeDef
 
@@ -531,6 +607,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -543,6 +621,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="removetagsfromresourcerequestrequesttypedef"></a>
+
 ## RemoveTagsFromResourceRequestRequestTypeDef
 
 ```python
@@ -553,6 +633,8 @@ Required fields:
 
 - `ResourceArn`: `str`
 - `TagKeyList`: `Sequence`\[`str`\]
+
+<a id="removetagsfromresourceresponsetypedef"></a>
 
 ## RemoveTagsFromResourceResponseTypeDef
 
@@ -565,6 +647,8 @@ Required fields:
 - `Status`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="responsemetadatatypedef"></a>
 
 ## ResponseMetadataTypeDef
 
@@ -579,6 +663,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="tagtypedef"></a>
 
 ## TagTypeDef
 

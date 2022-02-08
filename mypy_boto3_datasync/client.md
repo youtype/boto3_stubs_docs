@@ -1,3 +1,5 @@
+<a id="datasyncclient-for-boto3-datasync-module"></a>
+
 # DataSyncClient for boto3 DataSync module
 
 > [Index](..) > [DataSync](.) > DataSyncClient
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [DataSync](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync)
 type annotations stubs module
-[mypy_boto3_datasync](https://pypi.org/project/mypy-boto3-datasync/).
+[mypy-boto3-datasync](https://pypi.org/project/mypy-boto3-datasync/).
 
 - [DataSyncClient for boto3 DataSync module](#datasyncclient-for-boto3-datasync-module)
   - [DataSyncClient](#datasyncclient)
@@ -56,6 +58,8 @@ type annotations stubs module
     - [update_task_execution](#update_task_execution)
     - [get_paginator](#get_paginator)
 
+<a id="datasyncclient"></a>
+
 ## DataSyncClient
 
 Type annotations for `boto3.client("datasync")`
@@ -63,14 +67,17 @@ Type annotations for `boto3.client("datasync")`
 Can be used directly:
 
 ```python
+from boto3.session import Session
 from mypy_boto3_datasync.client import DataSyncClient
 
 def get_datasync_client() -> DataSyncClient:
-    return boto3.client("datasync")
+    return Session().client("datasync")
 ```
 
 Boto3 documentation:
 [DataSync.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client)
+
+<a id="exceptions"></a>
 
 ## Exceptions
 
@@ -90,7 +97,11 @@ Exceptions:
 - `Exceptions.InternalException`
 - `Exceptions.InvalidRequestException`
 
+<a id="methods"></a>
+
 ## Methods
+
+<a id="exceptions"></a>
 
 ### exceptions
 
@@ -102,6 +113,8 @@ Boto3 documentation:
 [DataSync.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/datasync.html#DataSync.Client.exceptions)
 
 Returns [Exceptions](#exceptions).
+
+<a id="can_paginate"></a>
 
 ### can_paginate
 
@@ -117,6 +130,8 @@ Arguments:
 - `operation_name`: `str` *(required)*
 
 Returns `bool`.
+
+<a id="cancel_task_execution"></a>
 
 ### cancel_task_execution
 
@@ -135,6 +150,8 @@ Keyword-only arguments:
 - `TaskExecutionArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="create_agent"></a>
 
 ### create_agent
 
@@ -161,6 +178,8 @@ Keyword-only arguments:
 Returns
 [CreateAgentResponseTypeDef](./type_defs.md#createagentresponsetypedef).
 
+<a id="create_location_efs"></a>
+
 ### create_location_efs
 
 Creates an endpoint for an Amazon EFS file system.
@@ -183,6 +202,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationEfsResponseTypeDef](./type_defs.md#createlocationefsresponsetypedef).
+
+<a id="create_location_fsx_lustre"></a>
 
 ### create_location_fsx_lustre
 
@@ -207,6 +228,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationFsxLustreResponseTypeDef](./type_defs.md#createlocationfsxlustreresponsetypedef).
+
+<a id="create_location_fsx_windows"></a>
 
 ### create_location_fsx_windows
 
@@ -234,6 +257,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationFsxWindowsResponseTypeDef](./type_defs.md#createlocationfsxwindowsresponsetypedef).
+
+<a id="create_location_hdfs"></a>
 
 ### create_location_hdfs
 
@@ -272,6 +297,8 @@ Keyword-only arguments:
 Returns
 [CreateLocationHdfsResponseTypeDef](./type_defs.md#createlocationhdfsresponsetypedef).
 
+<a id="create_location_nfs"></a>
+
 ### create_location_nfs
 
 Defines a file system on a Network File System (NFS) server that can be read
@@ -298,6 +325,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationNfsResponseTypeDef](./type_defs.md#createlocationnfsresponsetypedef).
+
+<a id="create_location_object_storage"></a>
 
 ### create_location_object_storage
 
@@ -329,6 +358,8 @@ Keyword-only arguments:
 Returns
 [CreateLocationObjectStorageResponseTypeDef](./type_defs.md#createlocationobjectstorageresponsetypedef).
 
+<a id="create_location_s3"></a>
+
 ### create_location_s3
 
 Creates an endpoint for an Amazon S3 bucket.
@@ -353,6 +384,8 @@ Keyword-only arguments:
 
 Returns
 [CreateLocationS3ResponseTypeDef](./type_defs.md#createlocations3responsetypedef).
+
+<a id="create_location_smb"></a>
 
 ### create_location_smb
 
@@ -383,6 +416,8 @@ Keyword-only arguments:
 Returns
 [CreateLocationSmbResponseTypeDef](./type_defs.md#createlocationsmbresponsetypedef).
 
+<a id="create_task"></a>
+
 ### create_task
 
 Creates a task.
@@ -412,6 +447,8 @@ Keyword-only arguments:
 
 Returns [CreateTaskResponseTypeDef](./type_defs.md#createtaskresponsetypedef).
 
+<a id="delete_agent"></a>
+
 ### delete_agent
 
 Deletes an agent.
@@ -429,6 +466,8 @@ Keyword-only arguments:
 - `AgentArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete_location"></a>
 
 ### delete_location
 
@@ -448,6 +487,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete_task"></a>
+
 ### delete_task
 
 Deletes a task.
@@ -465,6 +506,8 @@ Keyword-only arguments:
 - `TaskArn`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="describe_agent"></a>
 
 ### describe_agent
 
@@ -486,6 +529,8 @@ Keyword-only arguments:
 Returns
 [DescribeAgentResponseTypeDef](./type_defs.md#describeagentresponsetypedef).
 
+<a id="describe_location_efs"></a>
+
 ### describe_location_efs
 
 Returns metadata, such as the path information about an Amazon EFS location.
@@ -504,6 +549,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocationEfsResponseTypeDef](./type_defs.md#describelocationefsresponsetypedef).
+
+<a id="describe_location_fsx_lustre"></a>
 
 ### describe_location_fsx_lustre
 
@@ -526,6 +573,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocationFsxLustreResponseTypeDef](./type_defs.md#describelocationfsxlustreresponsetypedef).
 
+<a id="describe_location_fsx_windows"></a>
+
 ### describe_location_fsx_windows
 
 Returns metadata, such as the path information about an Amazon FSx for Windows
@@ -547,6 +596,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocationFsxWindowsResponseTypeDef](./type_defs.md#describelocationfsxwindowsresponsetypedef).
 
+<a id="describe_location_hdfs"></a>
+
 ### describe_location_hdfs
 
 Returns metadata, such as the authentication information about the Hadoop
@@ -567,6 +618,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocationHdfsResponseTypeDef](./type_defs.md#describelocationhdfsresponsetypedef).
 
+<a id="describe_location_nfs"></a>
+
 ### describe_location_nfs
 
 Returns metadata, such as the path information, about an NFS location.
@@ -585,6 +638,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocationNfsResponseTypeDef](./type_defs.md#describelocationnfsresponsetypedef).
+
+<a id="describe_location_object_storage"></a>
 
 ### describe_location_object_storage
 
@@ -606,6 +661,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocationObjectStorageResponseTypeDef](./type_defs.md#describelocationobjectstorageresponsetypedef).
 
+<a id="describe_location_s3"></a>
+
 ### describe_location_s3
 
 Returns metadata, such as bucket name, about an Amazon S3 bucket location.
@@ -624,6 +681,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeLocationS3ResponseTypeDef](./type_defs.md#describelocations3responsetypedef).
+
+<a id="describe_location_smb"></a>
 
 ### describe_location_smb
 
@@ -644,6 +703,8 @@ Keyword-only arguments:
 Returns
 [DescribeLocationSmbResponseTypeDef](./type_defs.md#describelocationsmbresponsetypedef).
 
+<a id="describe_task"></a>
+
 ### describe_task
 
 Returns metadata about a task.
@@ -662,6 +723,8 @@ Keyword-only arguments:
 
 Returns
 [DescribeTaskResponseTypeDef](./type_defs.md#describetaskresponsetypedef).
+
+<a id="describe_task_execution"></a>
 
 ### describe_task_execution
 
@@ -682,6 +745,8 @@ Keyword-only arguments:
 Returns
 [DescribeTaskExecutionResponseTypeDef](./type_defs.md#describetaskexecutionresponsetypedef).
 
+<a id="generate_presigned_url"></a>
+
 ### generate_presigned_url
 
 Generate a presigned url given a client, its method, and arguments.
@@ -699,6 +764,8 @@ Arguments:
 - `HttpMethod`: `str`
 
 Returns `str`.
+
+<a id="list_agents"></a>
 
 ### list_agents
 
@@ -719,6 +786,8 @@ Keyword-only arguments:
 - `NextToken`: `str`
 
 Returns [ListAgentsResponseTypeDef](./type_defs.md#listagentsresponsetypedef).
+
+<a id="list_locations"></a>
 
 ### list_locations
 
@@ -742,6 +811,8 @@ Keyword-only arguments:
 Returns
 [ListLocationsResponseTypeDef](./type_defs.md#listlocationsresponsetypedef).
 
+<a id="list_tags_for_resource"></a>
+
 ### list_tags_for_resource
 
 Returns all the tags associated with a specified resource.
@@ -762,6 +833,8 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list_task_executions"></a>
 
 ### list_task_executions
 
@@ -784,6 +857,8 @@ Keyword-only arguments:
 Returns
 [ListTaskExecutionsResponseTypeDef](./type_defs.md#listtaskexecutionsresponsetypedef).
 
+<a id="list_tasks"></a>
+
 ### list_tasks
 
 Returns a list of all the tasks.
@@ -804,6 +879,8 @@ Keyword-only arguments:
   `Sequence`\[[TaskFilterTypeDef](./type_defs.md#taskfiltertypedef)\]
 
 Returns [ListTasksResponseTypeDef](./type_defs.md#listtasksresponsetypedef).
+
+<a id="start_task_execution"></a>
 
 ### start_task_execution
 
@@ -829,6 +906,8 @@ Keyword-only arguments:
 Returns
 [StartTaskExecutionResponseTypeDef](./type_defs.md#starttaskexecutionresponsetypedef).
 
+<a id="tag_resource"></a>
+
 ### tag_resource
 
 Applies a key-value pair to an Amazon Web Services resource.
@@ -850,6 +929,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="untag_resource"></a>
+
 ### untag_resource
 
 Removes a tag from an Amazon Web Services resource.
@@ -869,6 +950,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_agent"></a>
+
 ### update_agent
 
 Updates the name of an agent.
@@ -887,6 +970,8 @@ Keyword-only arguments:
 - `Name`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_location_hdfs"></a>
 
 ### update_location_hdfs
 
@@ -922,6 +1007,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_location_nfs"></a>
+
 ### update_location_nfs
 
 Updates some of the parameters of a previously created location for Network
@@ -944,6 +1031,8 @@ Keyword-only arguments:
   [NfsMountOptionsTypeDef](./type_defs.md#nfsmountoptionstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_location_object_storage"></a>
 
 ### update_location_object_storage
 
@@ -972,6 +1061,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_location_smb"></a>
+
 ### update_location_smb
 
 Updates some of the parameters of a previously created location for Server
@@ -997,6 +1088,8 @@ Keyword-only arguments:
   [SmbMountOptionsTypeDef](./type_defs.md#smbmountoptionstypedef)
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="update_task"></a>
 
 ### update_task
 
@@ -1024,6 +1117,8 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="update_task_execution"></a>
+
 ### update_task_execution
 
 Updates execution of a task.
@@ -1042,6 +1137,8 @@ Keyword-only arguments:
 - `Options`: [OptionsTypeDef](./type_defs.md#optionstypedef) *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="get_paginator"></a>
 
 ### get_paginator
 

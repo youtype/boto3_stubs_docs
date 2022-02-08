@@ -1,3 +1,5 @@
+<a id="typed-dictionaries-for-boto3-machinelearning-module"></a>
+
 # Typed dictionaries for boto3 MachineLearning module
 
 > [Index](..) > [MachineLearning](.) > Typed dictionaries
@@ -5,7 +7,7 @@
 Auto-generated documentation for
 [MachineLearning](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/machinelearning.html#MachineLearning)
 type annotations stubs module
-[mypy_boto3_machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
+[mypy-boto3-machinelearning](https://pypi.org/project/mypy-boto3-machinelearning/).
 
 - [Typed dictionaries for boto3 MachineLearning module](#typed-dictionaries-for-boto3-machinelearning-module)
   - [AddTagsInputRequestTypeDef](#addtagsinputrequesttypedef)
@@ -85,6 +87,8 @@ type annotations stubs module
   - [UpdateMLModelOutputTypeDef](#updatemlmodeloutputtypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
+<a id="addtagsinputrequesttypedef"></a>
+
 ## AddTagsInputRequestTypeDef
 
 ```python
@@ -97,6 +101,8 @@ Required fields:
 - `ResourceId`: `str`
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+
+<a id="addtagsoutputtypedef"></a>
 
 ## AddTagsOutputTypeDef
 
@@ -111,6 +117,8 @@ Required fields:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="batchpredictiontypedef"></a>
 
 ## BatchPredictionTypeDef
 
@@ -137,6 +145,8 @@ Optional fields:
 - `TotalRecordCount`: `int`
 - `InvalidRecordCount`: `int`
 
+<a id="createbatchpredictioninputrequesttypedef"></a>
+
 ## CreateBatchPredictionInputRequestTypeDef
 
 ```python
@@ -154,6 +164,8 @@ Optional fields:
 
 - `BatchPredictionName`: `str`
 
+<a id="createbatchpredictionoutputtypedef"></a>
+
 ## CreateBatchPredictionOutputTypeDef
 
 ```python
@@ -165,6 +177,8 @@ Required fields:
 - `BatchPredictionId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasourcefromrdsinputrequesttypedef"></a>
 
 ## CreateDataSourceFromRDSInputRequestTypeDef
 
@@ -183,6 +197,8 @@ Optional fields:
 - `DataSourceName`: `str`
 - `ComputeStatistics`: `bool`
 
+<a id="createdatasourcefromrdsoutputtypedef"></a>
+
 ## CreateDataSourceFromRDSOutputTypeDef
 
 ```python
@@ -194,6 +210,8 @@ Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasourcefromredshiftinputrequesttypedef"></a>
 
 ## CreateDataSourceFromRedshiftInputRequestTypeDef
 
@@ -212,6 +230,8 @@ Optional fields:
 - `DataSourceName`: `str`
 - `ComputeStatistics`: `bool`
 
+<a id="createdatasourcefromredshiftoutputtypedef"></a>
+
 ## CreateDataSourceFromRedshiftOutputTypeDef
 
 ```python
@@ -223,6 +243,8 @@ Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createdatasourcefroms3inputrequesttypedef"></a>
 
 ## CreateDataSourceFromS3InputRequestTypeDef
 
@@ -240,6 +262,8 @@ Optional fields:
 - `DataSourceName`: `str`
 - `ComputeStatistics`: `bool`
 
+<a id="createdatasourcefroms3outputtypedef"></a>
+
 ## CreateDataSourceFromS3OutputTypeDef
 
 ```python
@@ -251,6 +275,8 @@ Required fields:
 - `DataSourceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createevaluationinputrequesttypedef"></a>
 
 ## CreateEvaluationInputRequestTypeDef
 
@@ -268,6 +294,8 @@ Optional fields:
 
 - `EvaluationName`: `str`
 
+<a id="createevaluationoutputtypedef"></a>
+
 ## CreateEvaluationOutputTypeDef
 
 ```python
@@ -279,6 +307,8 @@ Required fields:
 - `EvaluationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createmlmodelinputrequesttypedef"></a>
 
 ## CreateMLModelInputRequestTypeDef
 
@@ -299,6 +329,8 @@ Optional fields:
 - `Recipe`: `str`
 - `RecipeUri`: `str`
 
+<a id="createmlmodeloutputtypedef"></a>
+
 ## CreateMLModelOutputTypeDef
 
 ```python
@@ -311,6 +343,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createrealtimeendpointinputrequesttypedef"></a>
+
 ## CreateRealtimeEndpointInputRequestTypeDef
 
 ```python
@@ -320,6 +354,8 @@ from mypy_boto3_machinelearning.type_defs import CreateRealtimeEndpointInputRequ
 Required fields:
 
 - `MLModelId`: `str`
+
+<a id="createrealtimeendpointoutputtypedef"></a>
 
 ## CreateRealtimeEndpointOutputTypeDef
 
@@ -334,6 +370,8 @@ Required fields:
   [RealtimeEndpointInfoTypeDef](./type_defs.md#realtimeendpointinfotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="datasourcetypedef"></a>
 
 ## DataSourceTypeDef
 
@@ -363,6 +401,8 @@ Optional fields:
 - `FinishedAt`: `datetime`
 - `StartedAt`: `datetime`
 
+<a id="deletebatchpredictioninputrequesttypedef"></a>
+
 ## DeleteBatchPredictionInputRequestTypeDef
 
 ```python
@@ -372,6 +412,8 @@ from mypy_boto3_machinelearning.type_defs import DeleteBatchPredictionInputReque
 Required fields:
 
 - `BatchPredictionId`: `str`
+
+<a id="deletebatchpredictionoutputtypedef"></a>
 
 ## DeleteBatchPredictionOutputTypeDef
 
@@ -385,6 +427,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletedatasourceinputrequesttypedef"></a>
+
 ## DeleteDataSourceInputRequestTypeDef
 
 ```python
@@ -394,6 +438,8 @@ from mypy_boto3_machinelearning.type_defs import DeleteDataSourceInputRequestTyp
 Required fields:
 
 - `DataSourceId`: `str`
+
+<a id="deletedatasourceoutputtypedef"></a>
 
 ## DeleteDataSourceOutputTypeDef
 
@@ -407,6 +453,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleteevaluationinputrequesttypedef"></a>
+
 ## DeleteEvaluationInputRequestTypeDef
 
 ```python
@@ -416,6 +464,8 @@ from mypy_boto3_machinelearning.type_defs import DeleteEvaluationInputRequestTyp
 Required fields:
 
 - `EvaluationId`: `str`
+
+<a id="deleteevaluationoutputtypedef"></a>
 
 ## DeleteEvaluationOutputTypeDef
 
@@ -429,6 +479,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletemlmodelinputrequesttypedef"></a>
+
 ## DeleteMLModelInputRequestTypeDef
 
 ```python
@@ -438,6 +490,8 @@ from mypy_boto3_machinelearning.type_defs import DeleteMLModelInputRequestTypeDe
 Required fields:
 
 - `MLModelId`: `str`
+
+<a id="deletemlmodeloutputtypedef"></a>
 
 ## DeleteMLModelOutputTypeDef
 
@@ -451,6 +505,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deleterealtimeendpointinputrequesttypedef"></a>
+
 ## DeleteRealtimeEndpointInputRequestTypeDef
 
 ```python
@@ -460,6 +516,8 @@ from mypy_boto3_machinelearning.type_defs import DeleteRealtimeEndpointInputRequ
 Required fields:
 
 - `MLModelId`: `str`
+
+<a id="deleterealtimeendpointoutputtypedef"></a>
 
 ## DeleteRealtimeEndpointOutputTypeDef
 
@@ -475,6 +533,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletetagsinputrequesttypedef"></a>
+
 ## DeleteTagsInputRequestTypeDef
 
 ```python
@@ -487,6 +547,8 @@ Required fields:
 - `ResourceId`: `str`
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+
+<a id="deletetagsoutputtypedef"></a>
 
 ## DeleteTagsOutputTypeDef
 
@@ -501,6 +563,8 @@ Required fields:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describebatchpredictionsinputrequesttypedef"></a>
 
 ## DescribeBatchPredictionsInputRequestTypeDef
 
@@ -523,6 +587,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describebatchpredictionsoutputtypedef"></a>
+
 ## DescribeBatchPredictionsOutputTypeDef
 
 ```python
@@ -536,6 +602,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describedatasourcesinputrequesttypedef"></a>
 
 ## DescribeDataSourcesInputRequestTypeDef
 
@@ -558,6 +626,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describedatasourcesoutputtypedef"></a>
+
 ## DescribeDataSourcesOutputTypeDef
 
 ```python
@@ -570,6 +640,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeevaluationsinputrequesttypedef"></a>
 
 ## DescribeEvaluationsInputRequestTypeDef
 
@@ -592,6 +664,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describeevaluationsoutputtypedef"></a>
+
 ## DescribeEvaluationsOutputTypeDef
 
 ```python
@@ -604,6 +678,8 @@ Required fields:
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describemlmodelsinputrequesttypedef"></a>
 
 ## DescribeMLModelsInputRequestTypeDef
 
@@ -626,6 +702,8 @@ Optional fields:
 - `NextToken`: `str`
 - `Limit`: `int`
 
+<a id="describemlmodelsoutputtypedef"></a>
+
 ## DescribeMLModelsOutputTypeDef
 
 ```python
@@ -639,6 +717,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describetagsinputrequesttypedef"></a>
+
 ## DescribeTagsInputRequestTypeDef
 
 ```python
@@ -650,6 +730,8 @@ Required fields:
 - `ResourceId`: `str`
 - `ResourceType`:
   [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+
+<a id="describetagsoutputtypedef"></a>
 
 ## DescribeTagsOutputTypeDef
 
@@ -665,6 +747,8 @@ Required fields:
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="evaluationtypedef"></a>
 
 ## EvaluationTypeDef
 
@@ -690,6 +774,8 @@ Optional fields:
 - `FinishedAt`: `datetime`
 - `StartedAt`: `datetime`
 
+<a id="getbatchpredictioninputrequesttypedef"></a>
+
 ## GetBatchPredictionInputRequestTypeDef
 
 ```python
@@ -699,6 +785,8 @@ from mypy_boto3_machinelearning.type_defs import GetBatchPredictionInputRequestT
 Required fields:
 
 - `BatchPredictionId`: `str`
+
+<a id="getbatchpredictionoutputtypedef"></a>
 
 ## GetBatchPredictionOutputTypeDef
 
@@ -728,6 +816,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getdatasourceinputrequesttypedef"></a>
+
 ## GetDataSourceInputRequestTypeDef
 
 ```python
@@ -741,6 +831,8 @@ Required fields:
 Optional fields:
 
 - `Verbose`: `bool`
+
+<a id="getdatasourceoutputtypedef"></a>
 
 ## GetDataSourceOutputTypeDef
 
@@ -774,6 +866,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getevaluationinputrequesttypedef"></a>
+
 ## GetEvaluationInputRequestTypeDef
 
 ```python
@@ -783,6 +877,8 @@ from mypy_boto3_machinelearning.type_defs import GetEvaluationInputRequestTypeDe
 Required fields:
 
 - `EvaluationId`: `str`
+
+<a id="getevaluationoutputtypedef"></a>
 
 ## GetEvaluationOutputTypeDef
 
@@ -811,6 +907,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getmlmodelinputrequesttypedef"></a>
+
 ## GetMLModelInputRequestTypeDef
 
 ```python
@@ -824,6 +922,8 @@ Required fields:
 Optional fields:
 
 - `Verbose`: `bool`
+
+<a id="getmlmodeloutputtypedef"></a>
 
 ## GetMLModelOutputTypeDef
 
@@ -858,6 +958,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="mlmodeltypedef"></a>
+
 ## MLModelTypeDef
 
 ```python
@@ -888,6 +990,8 @@ Optional fields:
 - `FinishedAt`: `datetime`
 - `StartedAt`: `datetime`
 
+<a id="paginatorconfigtypedef"></a>
+
 ## PaginatorConfigTypeDef
 
 ```python
@@ -900,6 +1004,8 @@ Optional fields:
 - `PageSize`: `int`
 - `StartingToken`: `str`
 
+<a id="performancemetricstypedef"></a>
+
 ## PerformanceMetricsTypeDef
 
 ```python
@@ -909,6 +1015,8 @@ from mypy_boto3_machinelearning.type_defs import PerformanceMetricsTypeDef
 Optional fields:
 
 - `Properties`: `Dict`\[`str`, `str`\]
+
+<a id="predictinputrequesttypedef"></a>
 
 ## PredictInputRequestTypeDef
 
@@ -922,6 +1030,8 @@ Required fields:
 - `Record`: `Mapping`\[`str`, `str`\]
 - `PredictEndpoint`: `str`
 
+<a id="predictoutputtypedef"></a>
+
 ## PredictOutputTypeDef
 
 ```python
@@ -933,6 +1043,8 @@ Required fields:
 - `Prediction`: [PredictionTypeDef](./type_defs.md#predictiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="predictiontypedef"></a>
 
 ## PredictionTypeDef
 
@@ -947,6 +1059,8 @@ Optional fields:
 - `predictedScores`: `Dict`\[`str`, `float`\]
 - `details`:
   `Dict`\[[DetailsAttributesType](./literals.md#detailsattributestype), `str`\]
+
+<a id="rdsdataspectypedef"></a>
 
 ## RDSDataSpecTypeDef
 
@@ -973,6 +1087,8 @@ Optional fields:
 - `DataSchema`: `str`
 - `DataSchemaUri`: `str`
 
+<a id="rdsdatabasecredentialstypedef"></a>
+
 ## RDSDatabaseCredentialsTypeDef
 
 ```python
@@ -984,6 +1100,8 @@ Required fields:
 - `Username`: `str`
 - `Password`: `str`
 
+<a id="rdsdatabasetypedef"></a>
+
 ## RDSDatabaseTypeDef
 
 ```python
@@ -994,6 +1112,8 @@ Required fields:
 
 - `InstanceIdentifier`: `str`
 - `DatabaseName`: `str`
+
+<a id="rdsmetadatatypedef"></a>
 
 ## RDSMetadataTypeDef
 
@@ -1010,6 +1130,8 @@ Optional fields:
 - `ServiceRole`: `str`
 - `DataPipelineId`: `str`
 
+<a id="realtimeendpointinfotypedef"></a>
+
 ## RealtimeEndpointInfoTypeDef
 
 ```python
@@ -1023,6 +1145,8 @@ Optional fields:
 - `EndpointUrl`: `str`
 - `EndpointStatus`:
   [RealtimeEndpointStatusType](./literals.md#realtimeendpointstatustype)
+
+<a id="redshiftdataspectypedef"></a>
 
 ## RedshiftDataSpecTypeDef
 
@@ -1045,6 +1169,8 @@ Optional fields:
 - `DataSchema`: `str`
 - `DataSchemaUri`: `str`
 
+<a id="redshiftdatabasecredentialstypedef"></a>
+
 ## RedshiftDatabaseCredentialsTypeDef
 
 ```python
@@ -1056,6 +1182,8 @@ Required fields:
 - `Username`: `str`
 - `Password`: `str`
 
+<a id="redshiftdatabasetypedef"></a>
+
 ## RedshiftDatabaseTypeDef
 
 ```python
@@ -1066,6 +1194,8 @@ Required fields:
 
 - `DatabaseName`: `str`
 - `ClusterIdentifier`: `str`
+
+<a id="redshiftmetadatatypedef"></a>
 
 ## RedshiftMetadataTypeDef
 
@@ -1080,6 +1210,8 @@ Optional fields:
 - `DatabaseUserName`: `str`
 - `SelectSqlQuery`: `str`
 
+<a id="responsemetadatatypedef"></a>
+
 ## ResponseMetadataTypeDef
 
 ```python
@@ -1093,6 +1225,8 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="s3dataspectypedef"></a>
 
 ## S3DataSpecTypeDef
 
@@ -1110,6 +1244,8 @@ Optional fields:
 - `DataSchema`: `str`
 - `DataSchemaLocationS3`: `str`
 
+<a id="tagtypedef"></a>
+
 ## TagTypeDef
 
 ```python
@@ -1121,6 +1257,8 @@ Optional fields:
 - `Key`: `str`
 - `Value`: `str`
 
+<a id="updatebatchpredictioninputrequesttypedef"></a>
+
 ## UpdateBatchPredictionInputRequestTypeDef
 
 ```python
@@ -1131,6 +1269,8 @@ Required fields:
 
 - `BatchPredictionId`: `str`
 - `BatchPredictionName`: `str`
+
+<a id="updatebatchpredictionoutputtypedef"></a>
 
 ## UpdateBatchPredictionOutputTypeDef
 
@@ -1144,6 +1284,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updatedatasourceinputrequesttypedef"></a>
+
 ## UpdateDataSourceInputRequestTypeDef
 
 ```python
@@ -1154,6 +1296,8 @@ Required fields:
 
 - `DataSourceId`: `str`
 - `DataSourceName`: `str`
+
+<a id="updatedatasourceoutputtypedef"></a>
 
 ## UpdateDataSourceOutputTypeDef
 
@@ -1167,6 +1311,8 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="updateevaluationinputrequesttypedef"></a>
+
 ## UpdateEvaluationInputRequestTypeDef
 
 ```python
@@ -1177,6 +1323,8 @@ Required fields:
 
 - `EvaluationId`: `str`
 - `EvaluationName`: `str`
+
+<a id="updateevaluationoutputtypedef"></a>
 
 ## UpdateEvaluationOutputTypeDef
 
@@ -1189,6 +1337,8 @@ Required fields:
 - `EvaluationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemlmodelinputrequesttypedef"></a>
 
 ## UpdateMLModelInputRequestTypeDef
 
@@ -1205,6 +1355,8 @@ Optional fields:
 - `MLModelName`: `str`
 - `ScoreThreshold`: `float`
 
+<a id="updatemlmodeloutputtypedef"></a>
+
 ## UpdateMLModelOutputTypeDef
 
 ```python
@@ -1216,6 +1368,8 @@ Required fields:
 - `MLModelId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="waiterconfigtypedef"></a>
 
 ## WaiterConfigTypeDef
 
