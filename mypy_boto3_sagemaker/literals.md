@@ -572,9 +572,11 @@ Values:
 - `Failed`
 - `FeatureEngineering`
 - `GeneratingExplainabilityReport`
+- `GeneratingModelInsightsReport`
 - `MaxAutoMLJobRuntimeReached`
 - `MaxCandidatesReached`
 - `ModelDeploymentError`
+- `ModelInsightsError`
 - `ModelTuning`
 - `Starting`
 - `Stopped`

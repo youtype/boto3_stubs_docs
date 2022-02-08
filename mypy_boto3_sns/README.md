@@ -9,19 +9,11 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-sns](https://pypi.org/project/mypy-boto3-sns/).
 
-```bash
-# install with boto3 type annotations
-python -m pip install 'boto3-stubs[sns]'
-
-# Lite version does not provide session.client/resource overloads
-# it is more RAM-friendly, but requires explicit type annotations
-python -m pip install 'boto3-stubs-lite[sns]'
-
-# standalone installation
-pip install mypy-boto3-sns
-```
-
 - [Type annotations for boto3 SNS module](#type-annotations-for-boto3-sns-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
   - [SNSClient](#snsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -31,6 +23,46 @@ pip install mypy-boto3-sns
   - [Paginators](#paginators)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `SNS`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `SNS` service.
+
+```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[sns]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[sns]'
+
+# standalone installation
+python -m pip install mypy-boto3-sns
+```
+
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-sns
+```
 
 <a id="snsclient"></a>
 

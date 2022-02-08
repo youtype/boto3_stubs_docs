@@ -1717,6 +1717,10 @@ Required fields:
 
 - `Explainability`: `str`
 
+Optional fields:
+
+- `ModelInsights`: `str`
+
 <a id="candidatepropertiestypedef"></a>
 
 ## CandidatePropertiesTypeDef

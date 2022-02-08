@@ -27,6 +27,8 @@ type annotations stubs module
   - [CreateConnectionResponseTypeDef](#createconnectionresponsetypedef)
   - [CreateServiceRequestRequestTypeDef](#createservicerequestrequesttypedef)
   - [CreateServiceResponseTypeDef](#createserviceresponsetypedef)
+  - [CreateVpcConnectorRequestRequestTypeDef](#createvpcconnectorrequestrequesttypedef)
+  - [CreateVpcConnectorResponseTypeDef](#createvpcconnectorresponsetypedef)
   - [CustomDomainTypeDef](#customdomaintypedef)
   - [DeleteAutoScalingConfigurationRequestRequestTypeDef](#deleteautoscalingconfigurationrequestrequesttypedef)
   - [DeleteAutoScalingConfigurationResponseTypeDef](#deleteautoscalingconfigurationresponsetypedef)
@@ -34,14 +36,19 @@ type annotations stubs module
   - [DeleteConnectionResponseTypeDef](#deleteconnectionresponsetypedef)
   - [DeleteServiceRequestRequestTypeDef](#deleteservicerequestrequesttypedef)
   - [DeleteServiceResponseTypeDef](#deleteserviceresponsetypedef)
+  - [DeleteVpcConnectorRequestRequestTypeDef](#deletevpcconnectorrequestrequesttypedef)
+  - [DeleteVpcConnectorResponseTypeDef](#deletevpcconnectorresponsetypedef)
   - [DescribeAutoScalingConfigurationRequestRequestTypeDef](#describeautoscalingconfigurationrequestrequesttypedef)
   - [DescribeAutoScalingConfigurationResponseTypeDef](#describeautoscalingconfigurationresponsetypedef)
   - [DescribeCustomDomainsRequestRequestTypeDef](#describecustomdomainsrequestrequesttypedef)
   - [DescribeCustomDomainsResponseTypeDef](#describecustomdomainsresponsetypedef)
   - [DescribeServiceRequestRequestTypeDef](#describeservicerequestrequesttypedef)
   - [DescribeServiceResponseTypeDef](#describeserviceresponsetypedef)
+  - [DescribeVpcConnectorRequestRequestTypeDef](#describevpcconnectorrequestrequesttypedef)
+  - [DescribeVpcConnectorResponseTypeDef](#describevpcconnectorresponsetypedef)
   - [DisassociateCustomDomainRequestRequestTypeDef](#disassociatecustomdomainrequestrequesttypedef)
   - [DisassociateCustomDomainResponseTypeDef](#disassociatecustomdomainresponsetypedef)
+  - [EgressConfigurationTypeDef](#egressconfigurationtypedef)
   - [EncryptionConfigurationTypeDef](#encryptionconfigurationtypedef)
   - [HealthCheckConfigurationTypeDef](#healthcheckconfigurationtypedef)
   - [ImageConfigurationTypeDef](#imageconfigurationtypedef)
@@ -57,6 +64,9 @@ type annotations stubs module
   - [ListServicesResponseTypeDef](#listservicesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListVpcConnectorsRequestRequestTypeDef](#listvpcconnectorsrequestrequesttypedef)
+  - [ListVpcConnectorsResponseTypeDef](#listvpcconnectorsresponsetypedef)
+  - [NetworkConfigurationTypeDef](#networkconfigurationtypedef)
   - [OperationSummaryTypeDef](#operationsummarytypedef)
   - [PauseServiceRequestRequestTypeDef](#pauseservicerequestrequesttypedef)
   - [PauseServiceResponseTypeDef](#pauseserviceresponsetypedef)
@@ -74,6 +84,7 @@ type annotations stubs module
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateServiceRequestRequestTypeDef](#updateservicerequestrequesttypedef)
   - [UpdateServiceResponseTypeDef](#updateserviceresponsetypedef)
+  - [VpcConnectorTypeDef](#vpcconnectortypedef)
 
 <a id="associatecustomdomainrequestrequesttypedef"></a>
 
@@ -353,6 +364,8 @@ Optional fields:
 - `HealthCheckConfiguration`:
   [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
 - `AutoScalingConfigurationArn`: `str`
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 
 <a id="createserviceresponsetypedef"></a>
 
@@ -366,6 +379,38 @@ Required fields:
 
 - `Service`: [ServiceTypeDef](./type_defs.md#servicetypedef)
 - `OperationId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createvpcconnectorrequestrequesttypedef"></a>
+
+## CreateVpcConnectorRequestRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import CreateVpcConnectorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VpcConnectorName`: `str`
+- `Subnets`: `Sequence`\[`str`\]
+
+Optional fields:
+
+- `SecurityGroups`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="createvpcconnectorresponsetypedef"></a>
+
+## CreateVpcConnectorResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import CreateVpcConnectorResponseTypeDef
+```
+
+Required fields:
+
+- `VpcConnector`: [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -469,6 +514,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletevpcconnectorrequestrequesttypedef"></a>
+
+## DeleteVpcConnectorRequestRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DeleteVpcConnectorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VpcConnectorArn`: `str`
+
+<a id="deletevpcconnectorresponsetypedef"></a>
+
+## DeleteVpcConnectorResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DeleteVpcConnectorResponseTypeDef
+```
+
+Required fields:
+
+- `VpcConnector`: [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="describeautoscalingconfigurationrequestrequesttypedef"></a>
 
 ## DescribeAutoScalingConfigurationRequestRequestTypeDef
@@ -557,6 +628,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describevpcconnectorrequestrequesttypedef"></a>
+
+## DescribeVpcConnectorRequestRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DescribeVpcConnectorRequestRequestTypeDef
+```
+
+Required fields:
+
+- `VpcConnectorArn`: `str`
+
+<a id="describevpcconnectorresponsetypedef"></a>
+
+## DescribeVpcConnectorResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import DescribeVpcConnectorResponseTypeDef
+```
+
+Required fields:
+
+- `VpcConnector`: [VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="disassociatecustomdomainrequestrequesttypedef"></a>
 
 ## DisassociateCustomDomainRequestRequestTypeDef
@@ -585,6 +682,19 @@ Required fields:
 - `CustomDomain`: [CustomDomainTypeDef](./type_defs.md#customdomaintypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="egressconfigurationtypedef"></a>
+
+## EgressConfigurationTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import EgressConfigurationTypeDef
+```
+
+Optional fields:
+
+- `EgressType`: [EgressTypeType](./literals.md#egresstypetype)
+- `VpcConnectorArn`: `str`
 
 <a id="encryptionconfigurationtypedef"></a>
 
@@ -811,6 +921,48 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listvpcconnectorsrequestrequesttypedef"></a>
+
+## ListVpcConnectorsRequestRequestTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListVpcConnectorsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+<a id="listvpcconnectorsresponsetypedef"></a>
+
+## ListVpcConnectorsResponseTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import ListVpcConnectorsResponseTypeDef
+```
+
+Required fields:
+
+- `VpcConnectors`:
+  `List`\[[VpcConnectorTypeDef](./type_defs.md#vpcconnectortypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="networkconfigurationtypedef"></a>
+
+## NetworkConfigurationTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import NetworkConfigurationTypeDef
+```
+
+Optional fields:
+
+- `EgressConfiguration`:
+  [EgressConfigurationTypeDef](./type_defs.md#egressconfigurationtypedef)
+
 <a id="operationsummarytypedef"></a>
 
 ## OperationSummaryTypeDef
@@ -940,6 +1092,8 @@ Required fields:
   [InstanceConfigurationTypeDef](./type_defs.md#instanceconfigurationtypedef)
 - `AutoScalingConfigurationSummary`:
   [AutoScalingConfigurationSummaryTypeDef](./type_defs.md#autoscalingconfigurationsummarytypedef)
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 
 Optional fields:
 
@@ -1067,6 +1221,8 @@ Optional fields:
 - `AutoScalingConfigurationArn`: `str`
 - `HealthCheckConfiguration`:
   [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 
 <a id="updateserviceresponsetypedef"></a>
 
@@ -1082,3 +1238,22 @@ Required fields:
 - `OperationId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="vpcconnectortypedef"></a>
+
+## VpcConnectorTypeDef
+
+```python
+from mypy_boto3_apprunner.type_defs import VpcConnectorTypeDef
+```
+
+Optional fields:
+
+- `VpcConnectorName`: `str`
+- `VpcConnectorArn`: `str`
+- `VpcConnectorRevision`: `int`
+- `Subnets`: `List`\[`str`\]
+- `SecurityGroups`: `List`\[`str`\]
+- `Status`: [VpcConnectorStatusType](./literals.md#vpcconnectorstatustype)
+- `CreatedAt`: `datetime`
+- `DeletedAt`: `datetime`

@@ -263,13 +263,14 @@ Keyword-only arguments:
   *(required)*
 - `Report`: [JobReportTypeDef](./type_defs.md#jobreporttypedef) *(required)*
 - `ClientRequestToken`: `str` *(required)*
-- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
-  *(required)*
 - `Priority`: `int` *(required)*
 - `RoleArn`: `str` *(required)*
 - `ConfirmationRequired`: `bool`
+- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
 - `Description`: `str`
 - `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `ManifestGenerator`:
+  [JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef)
 
 Returns [CreateJobResultTypeDef](./type_defs.md#createjobresulttypedef).
 
@@ -1077,8 +1078,8 @@ Returns
 
 ### list_access_points_for_object_lambda
 
-Returns a list of the access points associated with the Object Lambda Access
-Point.
+Returns some or all (up to 1,000) access points associated with the Object
+Lambda Access Point per call.
 
 Type annotations for
 `boto3.client("s3control").list_access_points_for_object_lambda` method.

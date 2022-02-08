@@ -9,6 +9,38 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-codestar](https://pypi.org/project/mypy-boto3-codestar/).
 
+- [Type annotations for boto3 CodeStar module](#type-annotations-for-boto3-codestar-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
+  - [CodeStarClient](#codestarclient)
+    - [Methods](#methods)
+    - [Exceptions](#exceptions)
+  - [Paginators](#paginators)
+  - [Literals](#literals)
+  - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `CodeStar`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `CodeStar` service.
+
 ```bash
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[codestar]'
@@ -18,16 +50,16 @@ python -m pip install 'boto3-stubs[codestar]'
 python -m pip install 'boto3-stubs-lite[codestar]'
 
 # standalone installation
-pip install mypy-boto3-codestar
+python -m pip install mypy-boto3-codestar
 ```
 
-- [Type annotations for boto3 CodeStar module](#type-annotations-for-boto3-codestar-module)
-  - [CodeStarClient](#codestarclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-codestar
+```
 
 <a id="codestarclient"></a>
 

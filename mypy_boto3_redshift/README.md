@@ -9,6 +9,39 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-redshift](https://pypi.org/project/mypy-boto3-redshift/).
 
+- [Type annotations for boto3 Redshift module](#type-annotations-for-boto3-redshift-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
+  - [RedshiftClient](#redshiftclient)
+    - [Methods](#methods)
+    - [Exceptions](#exceptions)
+  - [Paginators](#paginators)
+  - [Waiters](#waiters)
+  - [Literals](#literals)
+  - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `Redshift`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `Redshift` service.
+
 ```bash
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[redshift]'
@@ -18,17 +51,16 @@ python -m pip install 'boto3-stubs[redshift]'
 python -m pip install 'boto3-stubs-lite[redshift]'
 
 # standalone installation
-pip install mypy-boto3-redshift
+python -m pip install mypy-boto3-redshift
 ```
 
-- [Type annotations for boto3 Redshift module](#type-annotations-for-boto3-redshift-module)
-  - [RedshiftClient](#redshiftclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Waiters](#waiters)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-redshift
+```
 
 <a id="redshiftclient"></a>
 

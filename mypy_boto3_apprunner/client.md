@@ -19,12 +19,15 @@ type annotations stubs module
     - [create_auto_scaling_configuration](#create_auto_scaling_configuration)
     - [create_connection](#create_connection)
     - [create_service](#create_service)
+    - [create_vpc_connector](#create_vpc_connector)
     - [delete_auto_scaling_configuration](#delete_auto_scaling_configuration)
     - [delete_connection](#delete_connection)
     - [delete_service](#delete_service)
+    - [delete_vpc_connector](#delete_vpc_connector)
     - [describe_auto_scaling_configuration](#describe_auto_scaling_configuration)
     - [describe_custom_domains](#describe_custom_domains)
     - [describe_service](#describe_service)
+    - [describe_vpc_connector](#describe_vpc_connector)
     - [disassociate_custom_domain](#disassociate_custom_domain)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_auto_scaling_configurations](#list_auto_scaling_configurations)
@@ -32,6 +35,7 @@ type annotations stubs module
     - [list_operations](#list_operations)
     - [list_services](#list_services)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [list_vpc_connectors](#list_vpc_connectors)
     - [pause_service](#pause_service)
     - [resume_service](#resume_service)
     - [start_deployment](#start_deployment)
@@ -218,9 +222,35 @@ Keyword-only arguments:
 - `HealthCheckConfiguration`:
   [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
 - `AutoScalingConfigurationArn`: `str`
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 
 Returns
 [CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
+
+<a id="create_vpc_connector"></a>
+
+### create_vpc_connector
+
+Create an App Runner VPC connector resource.
+
+Type annotations for `boto3.client("apprunner").create_vpc_connector` method.
+
+Boto3 documentation:
+[AppRunner.Client.create_vpc_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.create_vpc_connector)
+
+Arguments mapping described in
+[CreateVpcConnectorRequestRequestTypeDef](./type_defs.md#createvpcconnectorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VpcConnectorName`: `str` *(required)*
+- `Subnets`: `Sequence`\[`str`\] *(required)*
+- `SecurityGroups`: `Sequence`\[`str`\]
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[CreateVpcConnectorResponseTypeDef](./type_defs.md#createvpcconnectorresponsetypedef).
 
 <a id="delete_auto_scaling_configuration"></a>
 
@@ -285,6 +315,27 @@ Keyword-only arguments:
 
 Returns
 [DeleteServiceResponseTypeDef](./type_defs.md#deleteserviceresponsetypedef).
+
+<a id="delete_vpc_connector"></a>
+
+### delete_vpc_connector
+
+Delete an App Runner VPC connector resource.
+
+Type annotations for `boto3.client("apprunner").delete_vpc_connector` method.
+
+Boto3 documentation:
+[AppRunner.Client.delete_vpc_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.delete_vpc_connector)
+
+Arguments mapping described in
+[DeleteVpcConnectorRequestRequestTypeDef](./type_defs.md#deletevpcconnectorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VpcConnectorArn`: `str` *(required)*
+
+Returns
+[DeleteVpcConnectorResponseTypeDef](./type_defs.md#deletevpcconnectorresponsetypedef).
 
 <a id="describe_auto_scaling_configuration"></a>
 
@@ -354,6 +405,27 @@ Keyword-only arguments:
 
 Returns
 [DescribeServiceResponseTypeDef](./type_defs.md#describeserviceresponsetypedef).
+
+<a id="describe_vpc_connector"></a>
+
+### describe_vpc_connector
+
+Return a description of an App Runner VPC connector resource.
+
+Type annotations for `boto3.client("apprunner").describe_vpc_connector` method.
+
+Boto3 documentation:
+[AppRunner.Client.describe_vpc_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.describe_vpc_connector)
+
+Arguments mapping described in
+[DescribeVpcConnectorRequestRequestTypeDef](./type_defs.md#describevpcconnectorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `VpcConnectorArn`: `str` *(required)*
+
+Returns
+[DescribeVpcConnectorResponseTypeDef](./type_defs.md#describevpcconnectorresponsetypedef).
 
 <a id="disassociate_custom_domain"></a>
 
@@ -515,6 +587,29 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list_vpc_connectors"></a>
+
+### list_vpc_connectors
+
+Returns a list of App Runner VPC connectors in your Amazon Web Services
+account.
+
+Type annotations for `boto3.client("apprunner").list_vpc_connectors` method.
+
+Boto3 documentation:
+[AppRunner.Client.list_vpc_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/apprunner.html#AppRunner.Client.list_vpc_connectors)
+
+Arguments mapping described in
+[ListVpcConnectorsRequestRequestTypeDef](./type_defs.md#listvpcconnectorsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListVpcConnectorsResponseTypeDef](./type_defs.md#listvpcconnectorsresponsetypedef).
+
 <a id="pause_service"></a>
 
 ### pause_service
@@ -645,6 +740,8 @@ Keyword-only arguments:
 - `AutoScalingConfigurationArn`: `str`
 - `HealthCheckConfiguration`:
   [HealthCheckConfigurationTypeDef](./type_defs.md#healthcheckconfigurationtypedef)
+- `NetworkConfiguration`:
+  [NetworkConfigurationTypeDef](./type_defs.md#networkconfigurationtypedef)
 
 Returns
 [UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).

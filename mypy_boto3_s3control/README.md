@@ -9,6 +9,38 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-s3control](https://pypi.org/project/mypy-boto3-s3control/).
 
+- [Type annotations for boto3 S3Control module](#type-annotations-for-boto3-s3control-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
+  - [S3ControlClient](#s3controlclient)
+    - [Methods](#methods)
+    - [Exceptions](#exceptions)
+  - [Paginators](#paginators)
+  - [Literals](#literals)
+  - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `S3Control`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `S3Control` service.
+
 ```bash
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[s3control]'
@@ -18,16 +50,16 @@ python -m pip install 'boto3-stubs[s3control]'
 python -m pip install 'boto3-stubs-lite[s3control]'
 
 # standalone installation
-pip install mypy-boto3-s3control
+python -m pip install mypy-boto3-s3control
 ```
 
-- [Type annotations for boto3 S3Control module](#type-annotations-for-boto3-s3control-module)
-  - [S3ControlClient](#s3controlclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-s3control
+```
 
 <a id="s3controlclient"></a>
 
@@ -160,6 +192,7 @@ from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
 - [BucketLocationConstraintType](./literals.md#bucketlocationconstrainttype)
 - [ExpirationStatusType](./literals.md#expirationstatustype)
 - [FormatType](./literals.md#formattype)
+- [GeneratedManifestFormatType](./literals.md#generatedmanifestformattype)
 - [JobManifestFieldNameType](./literals.md#jobmanifestfieldnametype)
 - [JobManifestFormatType](./literals.md#jobmanifestformattype)
 - [JobReportFormatType](./literals.md#jobreportformattype)
@@ -172,6 +205,7 @@ from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
 - [ObjectLambdaTransformationConfigurationActionType](./literals.md#objectlambdatransformationconfigurationactiontype)
 - [OperationNameType](./literals.md#operationnametype)
 - [OutputSchemaVersionType](./literals.md#outputschemaversiontype)
+- [ReplicationStatusType](./literals.md#replicationstatustype)
 - [RequestedJobStatusType](./literals.md#requestedjobstatustype)
 - [S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype)
 - [S3GlacierJobTierType](./literals.md#s3glacierjobtiertype)
@@ -244,6 +278,7 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [DescribeMultiRegionAccessPointOperationResultTypeDef](./type_defs.md#describemultiregionaccesspointoperationresulttypedef)
 - [EstablishedMultiRegionAccessPointPolicyTypeDef](./type_defs.md#establishedmultiregionaccesspointpolicytypedef)
 - [ExcludeTypeDef](./type_defs.md#excludetypedef)
+- [GeneratedManifestEncryptionTypeDef](./type_defs.md#generatedmanifestencryptiontypedef)
 - [GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdarequestrequesttypedef)
 - [GetAccessPointConfigurationForObjectLambdaResultTypeDef](./type_defs.md#getaccesspointconfigurationforobjectlambdaresulttypedef)
 - [GetAccessPointForObjectLambdaRequestRequestTypeDef](./type_defs.md#getaccesspointforobjectlambdarequestrequesttypedef)
@@ -284,12 +319,15 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [JobDescriptorTypeDef](./type_defs.md#jobdescriptortypedef)
 - [JobFailureTypeDef](./type_defs.md#jobfailuretypedef)
 - [JobListDescriptorTypeDef](./type_defs.md#joblistdescriptortypedef)
+- [JobManifestGeneratorFilterTypeDef](./type_defs.md#jobmanifestgeneratorfiltertypedef)
+- [JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef)
 - [JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef)
 - [JobManifestSpecTypeDef](./type_defs.md#jobmanifestspectypedef)
 - [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
 - [JobOperationTypeDef](./type_defs.md#joboperationtypedef)
 - [JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef)
 - [JobReportTypeDef](./type_defs.md#jobreporttypedef)
+- [JobTimersTypeDef](./type_defs.md#jobtimerstypedef)
 - [LambdaInvokeOperationTypeDef](./type_defs.md#lambdainvokeoperationtypedef)
 - [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - [LifecycleExpirationTypeDef](./type_defs.md#lifecycleexpirationtypedef)
@@ -346,9 +384,12 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [S3AccessControlPolicyTypeDef](./type_defs.md#s3accesscontrolpolicytypedef)
 - [S3BucketDestinationTypeDef](./type_defs.md#s3bucketdestinationtypedef)
 - [S3CopyObjectOperationTypeDef](./type_defs.md#s3copyobjectoperationtypedef)
+- [S3GeneratedManifestDescriptorTypeDef](./type_defs.md#s3generatedmanifestdescriptortypedef)
 - [S3GrantTypeDef](./type_defs.md#s3granttypedef)
 - [S3GranteeTypeDef](./type_defs.md#s3granteetypedef)
 - [S3InitiateRestoreObjectOperationTypeDef](./type_defs.md#s3initiaterestoreobjectoperationtypedef)
+- [S3JobManifestGeneratorTypeDef](./type_defs.md#s3jobmanifestgeneratortypedef)
+- [S3ManifestOutputLocationTypeDef](./type_defs.md#s3manifestoutputlocationtypedef)
 - [S3ObjectLockLegalHoldTypeDef](./type_defs.md#s3objectlocklegalholdtypedef)
 - [S3ObjectMetadataTypeDef](./type_defs.md#s3objectmetadatatypedef)
 - [S3ObjectOwnerTypeDef](./type_defs.md#s3objectownertypedef)
@@ -358,6 +399,7 @@ from mypy_boto3_s3control.type_defs import AbortIncompleteMultipartUploadTypeDef
 - [S3SetObjectRetentionOperationTypeDef](./type_defs.md#s3setobjectretentionoperationtypedef)
 - [S3SetObjectTaggingOperationTypeDef](./type_defs.md#s3setobjecttaggingoperationtypedef)
 - [S3TagTypeDef](./type_defs.md#s3tagtypedef)
+- [SSEKMSEncryptionTypeDef](./type_defs.md#ssekmsencryptiontypedef)
 - [SSEKMSTypeDef](./type_defs.md#ssekmstypedef)
 - [SelectionCriteriaTypeDef](./type_defs.md#selectioncriteriatypedef)
 - [StorageLensAwsOrgTypeDef](./type_defs.md#storagelensawsorgtypedef)

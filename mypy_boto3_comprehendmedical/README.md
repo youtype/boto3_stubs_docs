@@ -9,6 +9,37 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-comprehendmedical](https://pypi.org/project/mypy-boto3-comprehendmedical/).
 
+- [Type annotations for boto3 ComprehendMedical module](#type-annotations-for-boto3-comprehendmedical-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
+  - [ComprehendMedicalClient](#comprehendmedicalclient)
+    - [Methods](#methods)
+    - [Exceptions](#exceptions)
+  - [Literals](#literals)
+  - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `ComprehendMedical`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `ComprehendMedical` service.
+
 ```bash
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[comprehendmedical]'
@@ -18,15 +49,16 @@ python -m pip install 'boto3-stubs[comprehendmedical]'
 python -m pip install 'boto3-stubs-lite[comprehendmedical]'
 
 # standalone installation
-pip install mypy-boto3-comprehendmedical
+python -m pip install mypy-boto3-comprehendmedical
 ```
 
-- [Type annotations for boto3 ComprehendMedical module](#type-annotations-for-boto3-comprehendmedical-module)
-  - [ComprehendMedicalClient](#comprehendmedicalclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-comprehendmedical
+```
 
 <a id="comprehendmedicalclient"></a>
 

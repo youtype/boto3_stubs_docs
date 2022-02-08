@@ -9,6 +9,38 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-xray](https://pypi.org/project/mypy-boto3-xray/).
 
+- [Type annotations for boto3 XRay module](#type-annotations-for-boto3-xray-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
+  - [XRayClient](#xrayclient)
+    - [Methods](#methods)
+    - [Exceptions](#exceptions)
+  - [Paginators](#paginators)
+  - [Literals](#literals)
+  - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `XRay`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `XRay` service.
+
 ```bash
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[xray]'
@@ -18,16 +50,16 @@ python -m pip install 'boto3-stubs[xray]'
 python -m pip install 'boto3-stubs-lite[xray]'
 
 # standalone installation
-pip install mypy-boto3-xray
+python -m pip install mypy-boto3-xray
 ```
 
-- [Type annotations for boto3 XRay module](#type-annotations-for-boto3-xray-module)
-  - [XRayClient](#xrayclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Paginators](#paginators)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-xray
+```
 
 <a id="xrayclient"></a>
 

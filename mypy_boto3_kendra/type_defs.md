@@ -116,6 +116,7 @@ type annotations stubs module
   - [FailedEntityTypeDef](#failedentitytypedef)
   - [FaqStatisticsTypeDef](#faqstatisticstypedef)
   - [FaqSummaryTypeDef](#faqsummarytypedef)
+  - [FsxConfigurationTypeDef](#fsxconfigurationtypedef)
   - [GetQuerySuggestionsRequestRequestTypeDef](#getquerysuggestionsrequestrequesttypedef)
   - [GetQuerySuggestionsResponseTypeDef](#getquerysuggestionsresponsetypedef)
   - [GetSnapshotsRequestRequestTypeDef](#getsnapshotsrequestrequesttypedef)
@@ -1036,6 +1037,8 @@ Optional fields:
   [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
 - `WorkDocsConfiguration`:
   [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
+- `FsxConfiguration`:
+  [FsxConfigurationTypeDef](./type_defs.md#fsxconfigurationtypedef)
 
 <a id="datasourcegrouptypedef"></a>
 
@@ -1981,6 +1984,30 @@ Optional fields:
 - `UpdatedAt`: `datetime`
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `LanguageCode`: `str`
+
+<a id="fsxconfigurationtypedef"></a>
+
+## FsxConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import FsxConfigurationTypeDef
+```
+
+Required fields:
+
+- `FileSystemId`: `str`
+- `FileSystemType`: `Literal['WINDOWS']` (see
+  [FsxFileSystemTypeType](./literals.md#fsxfilesystemtypetype))
+- `VpcConfiguration`:
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
+
+Optional fields:
+
+- `SecretArn`: `str`
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
+- `FieldMappings`:
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 <a id="getquerysuggestionsrequestrequesttypedef"></a>
 

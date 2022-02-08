@@ -221,7 +221,7 @@ Returns
 
 Returns the indexing status for one or more documents submitted with the
 [BatchPutDocument](https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html)\_
-operation.
+API.
 
 Type annotations for `boto3.client("kendra").batch_get_document_status` method.
 
@@ -621,7 +621,7 @@ Keyword-only arguments:
 
 ### describe_data_source
 
-Gets information about a Amazon Kendra data source.
+Gets information about an Amazon Kendra data source.
 
 Type annotations for `boto3.client("kendra").describe_data_source` method.
 
@@ -1267,7 +1267,7 @@ Returns
 
 ### stop_data_source_sync_job
 
-Stops a running synchronization job.
+Stops a synchronization job that is currently running.
 
 Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 

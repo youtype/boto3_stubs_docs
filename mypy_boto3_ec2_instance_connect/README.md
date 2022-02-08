@@ -9,6 +9,37 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
+- [Type annotations for boto3 EC2InstanceConnect module](#type-annotations-for-boto3-ec2instanceconnect-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+  - [How to uninstall](#how-to-uninstall)
+  - [EC2InstanceConnectClient](#ec2instanceconnectclient)
+    - [Methods](#methods)
+    - [Exceptions](#exceptions)
+  - [Literals](#literals)
+  - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `EC2InstanceConnect`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `EC2InstanceConnect` service.
+
 ```bash
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[ec2-instance-connect]'
@@ -18,15 +49,16 @@ python -m pip install 'boto3-stubs[ec2-instance-connect]'
 python -m pip install 'boto3-stubs-lite[ec2-instance-connect]'
 
 # standalone installation
-pip install mypy-boto3-ec2-instance-connect
+python -m pip install mypy-boto3-ec2-instance-connect
 ```
 
-- [Type annotations for boto3 EC2InstanceConnect module](#type-annotations-for-boto3-ec2instanceconnect-module)
-  - [EC2InstanceConnectClient](#ec2instanceconnectclient)
-    - [Methods](#methods)
-    - [Exceptions](#exceptions)
-  - [Literals](#literals)
-  - [Typed dictionaries](#typed-dictionaries)
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-ec2-instance-connect
+```
 
 <a id="ec2instanceconnectclient"></a>
 

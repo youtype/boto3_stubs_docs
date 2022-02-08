@@ -30,6 +30,7 @@ type annotations stubs module
   - [ExperienceStatusType](#experiencestatustype)
   - [FaqFileFormatType](#faqfileformattype)
   - [FaqStatusType](#faqstatustype)
+  - [FsxFileSystemTypeType](#fsxfilesystemtypetype)
   - [HighlightTypeType](#highlighttypetype)
   - [IndexEditionType](#indexeditiontype)
   - [IndexStatusType](#indexstatustype)
@@ -252,6 +253,7 @@ Values:
 - `CONFLUENCE`
 - `CUSTOM`
 - `DATABASE`
+- `FSX`
 - `GOOGLEDRIVE`
 - `ONEDRIVE`
 - `S3`
@@ -390,6 +392,18 @@ Values:
 - `DELETING`
 - `FAILED`
 - `UPDATING`
+
+<a id="fsxfilesystemtypetype"></a>
+
+## FsxFileSystemTypeType
+
+```python
+from mypy_boto3_kendra.literals import FsxFileSystemTypeType
+```
+
+Values:
+
+- `WINDOWS`
 
 <a id="highlighttypetype"></a>
 

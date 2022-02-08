@@ -9,19 +9,12 @@ Auto-generated documentation for
 type annotations stubs module
 [mypy-boto3-s3](https://pypi.org/project/mypy-boto3-s3/).
 
-```bash
-# install with boto3 type annotations
-python -m pip install 'boto3-stubs[s3]'
-
-# Lite version does not provide session.client/resource overloads
-# it is more RAM-friendly, but requires explicit type annotations
-python -m pip install 'boto3-stubs-lite[s3]'
-
-# standalone installation
-pip install mypy-boto3-s3
-```
-
 - [Type annotations for boto3 S3 module](#type-annotations-for-boto3-s3-module)
+  - [How to install](#how-to-install)
+    - [VSCode extension](#vscode-extension)
+    - [From PyPI with pip](#from-pypi-with-pip)
+    - [From conda-forge](#from-conda-forge)
+  - [How to uninstall](#how-to-uninstall)
   - [S3Client](#s3client)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -32,6 +25,72 @@ pip install mypy-boto3-s3
   - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
+
+<a id="how-to-install"></a>
+
+## How to install
+
+<a id="vscode-extension"></a>
+
+### VSCode extension
+
+Add
+[AWS Boto3](https://marketplace.visualstudio.com/items?itemName=Boto3typed.boto3-ide)
+extension to your VSCode and run `AWS boto3: Quick Start` command.
+
+Click `Modify` and select `boto3 common` and `S3`.
+
+<a id="from-pypi-with-pip"></a>
+
+### From PyPI with pip
+
+Install `boto3-stubs` for `S3` service.
+
+```bash
+# install with boto3 type annotations
+python -m pip install 'boto3-stubs[s3]'
+
+# Lite version does not provide session.client/resource overloads
+# it is more RAM-friendly, but requires explicit type annotations
+python -m pip install 'boto3-stubs-lite[s3]'
+
+# standalone installation
+python -m pip install mypy-boto3-s3
+```
+
+<a id="from-conda-forge"></a>
+
+### From conda-forge
+
+Installing `mypy-boto3-s3` from the `conda-forge` channel can be achieved by
+adding `conda-forge` to your channels with:
+
+```bash
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+```
+
+Once the `conda-forge` channel has been enabled, `mypy-boto3-s3` can be
+installed with:
+
+```bash
+conda install mypy-boto3-s3
+```
+
+It is possible to list all of the versions of `mypy-boto3-s3` available on your
+platform with:
+
+```bash
+conda search mypy-boto3-s3 --channel conda-forge
+```
+
+<a id="how-to-uninstall"></a>
+
+## How to uninstall
+
+```bash
+python -m pip uninstall -y mypy-boto3-s3
+```
 
 <a id="s3client"></a>
 
