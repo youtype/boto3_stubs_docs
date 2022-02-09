@@ -31,6 +31,7 @@ type annotations stubs module
     - [deregister_type](#deregister_type)
     - [describe_account_limits](#describe_account_limits)
     - [describe_change_set](#describe_change_set)
+    - [describe_change_set_hooks](#describe_change_set_hooks)
     - [describe_publisher](#describe_publisher)
     - [describe_stack_drift_detection_status](#describe_stack_drift_detection_status)
     - [describe_stack_events](#describe_stack_events)
@@ -256,7 +257,7 @@ Keyword-only arguments:
 
 ### continue_update_rollback
 
-For a specified stack that is in the `UPDATE_ROLLBACK_FAILED` state, continues
+For a specified stack that's in the `UPDATE_ROLLBACK_FAILED` state, continues
 rolling it back to the `UPDATE_ROLLBACK_COMPLETE` state.
 
 Type annotations for `boto3.client("cloudformation").continue_update_rollback`
@@ -494,7 +495,8 @@ Keyword-only arguments:
 
 ### delete_stack_instances
 
-Deletes stack instances for the specified accounts, in the specified Regions.
+Deletes stack instances for the specified accounts, in the specified Amazon Web
+Services Regions.
 
 Type annotations for `boto3.client("cloudformation").delete_stack_instances`
 method.
@@ -612,6 +614,32 @@ Keyword-only arguments:
 
 Returns
 [DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
+
+<a id="describe_change_set_hooks"></a>
+
+### describe_change_set_hooks
+
+Returns hook-related information for the change set and a list of changes that
+CloudFormation makes when you run the change set.
+
+Type annotations for `boto3.client("cloudformation").describe_change_set_hooks`
+method.
+
+Boto3 documentation:
+[CloudFormation.Client.describe_change_set_hooks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/cloudformation.html#CloudFormation.Client.describe_change_set_hooks)
+
+Arguments mapping described in
+[DescribeChangeSetHooksInputRequestTypeDef](./type_defs.md#describechangesethooksinputrequesttypedef).
+
+Keyword-only arguments:
+
+- `ChangeSetName`: `str` *(required)*
+- `StackName`: `str`
+- `NextToken`: `str`
+- `LogicalResourceId`: `str`
+
+Returns
+[DescribeChangeSetHooksOutputTypeDef](./type_defs.md#describechangesethooksoutputtypedef).
 
 <a id="describe_publisher"></a>
 
@@ -1118,7 +1146,7 @@ Returns
 
 ### import_stacks_to_stack_set
 
-Use the stack import operations for self-managed or service-managed StackSets.
+Import existing stacks into a new stack sets.
 
 Type annotations for
 `boto3.client("cloudformation").import_stacks_to_stack_set` method.

@@ -20,6 +20,9 @@ type annotations stubs module
   - [BatchDescribeTypeConfigurationsOutputTypeDef](#batchdescribetypeconfigurationsoutputtypedef)
   - [CancelUpdateStackInputRequestTypeDef](#cancelupdatestackinputrequesttypedef)
   - [CancelUpdateStackInputStackTypeDef](#cancelupdatestackinputstacktypedef)
+  - [ChangeSetHookResourceTargetDetailsTypeDef](#changesethookresourcetargetdetailstypedef)
+  - [ChangeSetHookTargetDetailsTypeDef](#changesethooktargetdetailstypedef)
+  - [ChangeSetHookTypeDef](#changesethooktypedef)
   - [ChangeSetSummaryTypeDef](#changesetsummarytypedef)
   - [ChangeTypeDef](#changetypedef)
   - [ContinueUpdateRollbackInputRequestTypeDef](#continueupdaterollbackinputrequesttypedef)
@@ -43,6 +46,8 @@ type annotations stubs module
   - [DeregisterTypeInputRequestTypeDef](#deregistertypeinputrequesttypedef)
   - [DescribeAccountLimitsInputRequestTypeDef](#describeaccountlimitsinputrequesttypedef)
   - [DescribeAccountLimitsOutputTypeDef](#describeaccountlimitsoutputtypedef)
+  - [DescribeChangeSetHooksInputRequestTypeDef](#describechangesethooksinputrequesttypedef)
+  - [DescribeChangeSetHooksOutputTypeDef](#describechangesethooksoutputtypedef)
   - [DescribeChangeSetInputRequestTypeDef](#describechangesetinputrequesttypedef)
   - [DescribeChangeSetOutputTypeDef](#describechangesetoutputtypedef)
   - [DescribePublisherInputRequestTypeDef](#describepublisherinputrequesttypedef)
@@ -348,6 +353,54 @@ Optional fields:
 
 - `ClientRequestToken`: `str`
 
+<a id="changesethookresourcetargetdetailstypedef"></a>
+
+## ChangeSetHookResourceTargetDetailsTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ChangeSetHookResourceTargetDetailsTypeDef
+```
+
+Optional fields:
+
+- `LogicalResourceId`: `str`
+- `ResourceType`: `str`
+- `ResourceAction`: [ChangeActionType](./literals.md#changeactiontype)
+
+<a id="changesethooktargetdetailstypedef"></a>
+
+## ChangeSetHookTargetDetailsTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ChangeSetHookTargetDetailsTypeDef
+```
+
+Optional fields:
+
+- `TargetType`: `Literal['RESOURCE']` (see
+  [HookTargetTypeType](./literals.md#hooktargettypetype))
+- `ResourceTargetDetails`:
+  [ChangeSetHookResourceTargetDetailsTypeDef](./type_defs.md#changesethookresourcetargetdetailstypedef)
+
+<a id="changesethooktypedef"></a>
+
+## ChangeSetHookTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import ChangeSetHookTypeDef
+```
+
+Optional fields:
+
+- `InvocationPoint`: `Literal['PRE_PROVISION']` (see
+  [HookInvocationPointType](./literals.md#hookinvocationpointtype))
+- `FailureMode`: [HookFailureModeType](./literals.md#hookfailuremodetype)
+- `TypeName`: `str`
+- `TypeVersionId`: `str`
+- `TypeConfigurationVersionId`: `str`
+- `TargetDetails`:
+  [ChangeSetHookTargetDetailsTypeDef](./type_defs.md#changesethooktargetdetailstypedef)
+
 <a id="changesetsummarytypedef"></a>
 
 ## ChangeSetSummaryTypeDef
@@ -383,6 +436,7 @@ Optional fields:
 
 - `Type`: `Literal['Resource']` (see
   [ChangeTypeType](./literals.md#changetypetype))
+- `HookInvocationCount`: `int`
 - `ResourceChange`:
   [ResourceChangeTypeDef](./type_defs.md#resourcechangetypedef)
 
@@ -788,6 +842,45 @@ Required fields:
 - `AccountLimits`:
   `List`\[[AccountLimitTypeDef](./type_defs.md#accountlimittypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describechangesethooksinputrequesttypedef"></a>
+
+## DescribeChangeSetHooksInputRequestTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeChangeSetHooksInputRequestTypeDef
+```
+
+Required fields:
+
+- `ChangeSetName`: `str`
+
+Optional fields:
+
+- `StackName`: `str`
+- `NextToken`: `str`
+- `LogicalResourceId`: `str`
+
+<a id="describechangesethooksoutputtypedef"></a>
+
+## DescribeChangeSetHooksOutputTypeDef
+
+```python
+from mypy_boto3_cloudformation.type_defs import DescribeChangeSetHooksOutputTypeDef
+```
+
+Required fields:
+
+- `ChangeSetId`: `str`
+- `ChangeSetName`: `str`
+- `Hooks`:
+  `List`\[[ChangeSetHookTypeDef](./type_defs.md#changesethooktypedef)\]
+- `Status`: [ChangeSetHooksStatusType](./literals.md#changesethooksstatustype)
+- `NextToken`: `str`
+- `StackId`: `str`
+- `StackName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2573,6 +2666,12 @@ Optional fields:
 - `ResourceStatusReason`: `str`
 - `ResourceProperties`: `str`
 - `ClientRequestToken`: `str`
+- `HookType`: `str`
+- `HookStatus`: [HookStatusType](./literals.md#hookstatustype)
+- `HookStatusReason`: `str`
+- `HookInvocationPoint`: `Literal['PRE_PROVISION']` (see
+  [HookInvocationPointType](./literals.md#hookinvocationpointtype))
+- `HookFailureMode`: [HookFailureModeType](./literals.md#hookfailuremodetype)
 
 <a id="stackinstancecomprehensivestatustypedef"></a>
 
