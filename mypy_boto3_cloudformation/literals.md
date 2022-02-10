@@ -364,11 +364,13 @@ Values:
 - `AccessDenied`
 - `AlreadyExists`
 - `GeneralServiceException`
+- `HandlerInternalFailure`
 - `InternalFailure`
 - `InvalidCredentials`
 - `InvalidRequest`
 - `InvalidTypeConfiguration`
 - `NetworkFailure`
+- `NonCompliant`
 - `NotFound`
 - `NotStabilized`
 - `NotUpdatable`
@@ -376,6 +378,7 @@ Values:
 - `ServiceInternalError`
 - `ServiceLimitExceeded`
 - `Throttling`
+- `Unknown`
 
 <a id="hookfailuremodetype"></a>
 

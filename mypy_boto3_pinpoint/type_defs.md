@@ -888,6 +888,7 @@ Required fields:
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `CreationDate`: `str`
 
 <a id="applicationsettingsresourcetypedef"></a>
 
