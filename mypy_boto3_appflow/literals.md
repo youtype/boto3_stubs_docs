@@ -715,6 +715,7 @@ Values:
 - `Map_all`
 - `Mask`
 - `Merge`
+- `Passthrough`
 - `Truncate`
 - `Validate`
 

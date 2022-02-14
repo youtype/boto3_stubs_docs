@@ -114,6 +114,7 @@ type annotations stubs module
   - [S3SourcePropertiesTypeDef](#s3sourcepropertiestypedef)
   - [SAPODataConnectorProfileCredentialsTypeDef](#sapodataconnectorprofilecredentialstypedef)
   - [SAPODataConnectorProfilePropertiesTypeDef](#sapodataconnectorprofilepropertiestypedef)
+  - [SAPODataDestinationPropertiesTypeDef](#sapodatadestinationpropertiestypedef)
   - [SAPODataSourcePropertiesTypeDef](#sapodatasourcepropertiestypedef)
   - [SalesforceConnectorProfileCredentialsTypeDef](#salesforceconnectorprofilecredentialstypedef)
   - [SalesforceConnectorProfilePropertiesTypeDef](#salesforceconnectorprofilepropertiestypedef)
@@ -141,6 +142,7 @@ type annotations stubs module
   - [StartFlowResponseTypeDef](#startflowresponsetypedef)
   - [StopFlowRequestRequestTypeDef](#stopflowrequestrequesttypedef)
   - [StopFlowResponseTypeDef](#stopflowresponsetypedef)
+  - [SuccessResponseHandlingConfigTypeDef](#successresponsehandlingconfigtypedef)
   - [SupportedFieldTypeDetailsTypeDef](#supportedfieldtypedetailstypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TaskTypeDef](#tasktypedef)
@@ -1129,6 +1131,8 @@ Optional fields:
   [ZendeskDestinationPropertiesTypeDef](./type_defs.md#zendeskdestinationpropertiestypedef)
 - `CustomConnector`:
   [CustomConnectorDestinationPropertiesTypeDef](./type_defs.md#customconnectordestinationpropertiestypedef)
+- `SAPOData`:
+  [SAPODataDestinationPropertiesTypeDef](./type_defs.md#sapodatadestinationpropertiestypedef)
 
 <a id="destinationfieldpropertiestypedef"></a>
 
@@ -1972,6 +1976,28 @@ Optional fields:
 - `oAuthProperties`:
   [OAuthPropertiesTypeDef](./type_defs.md#oauthpropertiestypedef)
 
+<a id="sapodatadestinationpropertiestypedef"></a>
+
+## SAPODataDestinationPropertiesTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import SAPODataDestinationPropertiesTypeDef
+```
+
+Required fields:
+
+- `objectPath`: `str`
+
+Optional fields:
+
+- `successResponseHandlingConfig`:
+  [SuccessResponseHandlingConfigTypeDef](./type_defs.md#successresponsehandlingconfigtypedef)
+- `idFieldNames`: `Sequence`\[`str`\]
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
+- `writeOperationType`:
+  [WriteOperationTypeType](./literals.md#writeoperationtypetype)
+
 <a id="sapodatasourcepropertiestypedef"></a>
 
 ## SAPODataSourcePropertiesTypeDef
@@ -2395,6 +2421,19 @@ Required fields:
 - `flowStatus`: [FlowStatusType](./literals.md#flowstatustype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="successresponsehandlingconfigtypedef"></a>
+
+## SuccessResponseHandlingConfigTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import SuccessResponseHandlingConfigTypeDef
+```
+
+Optional fields:
+
+- `bucketPrefix`: `str`
+- `bucketName`: `str`
 
 <a id="supportedfieldtypedetailstypedef"></a>
 

@@ -108,6 +108,7 @@ from mypy_boto3_athena.type_defs import AthenaErrorTypeDef
 Optional fields:
 
 - `ErrorCategory`: `int`
+- `ErrorType`: `int`
 
 <a id="batchgetnamedqueryinputrequesttypedef"></a>
 
