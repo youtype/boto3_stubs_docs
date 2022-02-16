@@ -4287,6 +4287,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
 - `TransactionId`: `str`
+- `VersionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

@@ -14,6 +14,7 @@ type annotations stubs module
   - [ActionSubTypeType](#actionsubtypetype)
   - [ActionTypeType](#actiontypetype)
   - [ApprovalModelType](#approvalmodeltype)
+  - [AutoAdjustTypeType](#autoadjusttypetype)
   - [BudgetTypeType](#budgettypetype)
   - [ComparisonOperatorType](#comparisonoperatortype)
   - [DescribeBudgetActionHistoriesPaginatorName](#describebudgetactionhistoriespaginatorname)
@@ -93,6 +94,19 @@ Values:
 
 - `AUTOMATIC`
 - `MANUAL`
+
+<a id="autoadjusttypetype"></a>
+
+## AutoAdjustTypeType
+
+```python
+from mypy_boto3_budgets.literals import AutoAdjustTypeType
+```
+
+Values:
+
+- `FORECAST`
+- `HISTORICAL`
 
 <a id="budgettypetype"></a>
 

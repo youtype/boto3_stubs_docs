@@ -4949,10 +4949,23 @@ from mypy_boto3_ec2.literals import NetworkInterfaceTypeType
 
 Values:
 
+- `api_gateway_managed`
+- `aws_codestar_connections_managed`
+- `branch`
 - `efa`
+- `gateway_load_balancer`
+- `gateway_load_balancer_endpoint`
+- `global_accelerator_managed`
 - `interface`
+- `iot_rules_managed`
+- `lambda`
+- `load_balancer`
 - `natGateway`
+- `network_load_balancer`
+- `quicksight`
+- `transit_gateway`
 - `trunk`
+- `vpc_endpoint`
 
 <a id="offeringclasstypetype"></a>
 

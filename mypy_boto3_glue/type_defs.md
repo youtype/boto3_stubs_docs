@@ -7060,6 +7060,7 @@ Optional fields:
 - `TargetTable`:
   [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 - `CatalogId`: `str`
+- `VersionId`: `str`
 
 <a id="tableversionerrortypedef"></a>
 
@@ -7766,6 +7767,7 @@ Optional fields:
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
 - `TransactionId`: `str`
+- `VersionId`: `str`
 
 <a id="updatetriggerrequestrequesttypedef"></a>
 

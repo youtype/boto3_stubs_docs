@@ -5244,7 +5244,7 @@ Keyword-only arguments:
 
 ### deregister_instance_event_notification_attributes
 
-c Deregisters tag keys to prevent tags that have the specified tag keys from
+Deregisters tag keys to prevent tags that have the specified tag keys from
 being included in scheduled event notifications for resources in the Region.
 
 Type annotations for
