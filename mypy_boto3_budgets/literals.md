@@ -20,6 +20,7 @@ type annotations stubs module
   - [DescribeBudgetActionHistoriesPaginatorName](#describebudgetactionhistoriespaginatorname)
   - [DescribeBudgetActionsForAccountPaginatorName](#describebudgetactionsforaccountpaginatorname)
   - [DescribeBudgetActionsForBudgetPaginatorName](#describebudgetactionsforbudgetpaginatorname)
+  - [DescribeBudgetNotificationsForAccountPaginatorName](#describebudgetnotificationsforaccountpaginatorname)
   - [DescribeBudgetPerformanceHistoryPaginatorName](#describebudgetperformancehistorypaginatorname)
   - [DescribeBudgetsPaginatorName](#describebudgetspaginatorname)
   - [DescribeNotificationsForBudgetPaginatorName](#describenotificationsforbudgetpaginatorname)
@@ -174,6 +175,18 @@ from mypy_boto3_budgets.literals import DescribeBudgetActionsForBudgetPaginatorN
 Values:
 
 - `describe_budget_actions_for_budget`
+
+<a id="describebudgetnotificationsforaccountpaginatorname"></a>
+
+## DescribeBudgetNotificationsForAccountPaginatorName
+
+```python
+from mypy_boto3_budgets.literals import DescribeBudgetNotificationsForAccountPaginatorName
+```
+
+Values:
+
+- `describe_budget_notifications_for_account`
 
 <a id="describebudgetperformancehistorypaginatorname"></a>
 
@@ -644,6 +657,7 @@ Values:
 - `describe_budget_action_histories`
 - `describe_budget_actions_for_account`
 - `describe_budget_actions_for_budget`
+- `describe_budget_notifications_for_account`
 - `describe_budget_performance_history`
 - `describe_budgets`
 - `describe_notifications_for_budget`

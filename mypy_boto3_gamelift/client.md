@@ -275,7 +275,8 @@ Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
 
 ### create_build
 
-Creates a new Amazon GameLift build resource for your game server binary files.
+Creates a new Amazon Web Services build resource for your game server binary
+files.
 
 Type annotations for `boto3.client("gamelift").create_build` method.
 
@@ -299,8 +300,8 @@ Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
 
 ### create_fleet
 
-Creates a fleet of Amazon Elastic Compute Cloud (Amazon EC2) instances to host
-your custom game server or Realtime Servers.
+Creates a fleet of Amazon Elastic Compute Cloud (Amazon Elastic Compute Cloud)
+instances to host your custom game server or Realtime Servers.
 
 Type annotations for `boto3.client("gamelift").create_fleet` method.
 
@@ -373,7 +374,8 @@ Returns
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Creates a GameLift FleetIQ game server group for managing game
-hosting on a collection of Amazon EC2 instances for game hosting.
+hosting on a collection of Amazon Elastic Compute Cloud instances for game
+hosting.
 
 Type annotations for `boto3.client("gamelift").create_game_server_group`
 method.
@@ -609,8 +611,8 @@ Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
 ### create_vpc_peering_authorization
 
 Requests authorization to create or delete a peer connection between the VPC
-for your Amazon GameLift fleet and a virtual private cloud (VPC) in your AWS
-account.
+for your Amazon Web Services fleet and a virtual private cloud (VPC) in your
+Amazon Web Services account.
 
 Type annotations for
 `boto3.client("gamelift").create_vpc_peering_authorization` method.
@@ -634,7 +636,7 @@ Returns
 ### create_vpc_peering_connection
 
 Establishes a VPC peering connection between a virtual private cloud (VPC) in
-an AWS account with the VPC for your Amazon GameLift fleet.
+an Amazon Web Services account with the VPC for your Amazon Web Services fleet.
 
 Type annotations for `boto3.client("gamelift").create_vpc_peering_connection`
 method.
@@ -965,8 +967,8 @@ Returns
 
 ### describe_ec2_instance_limits
 
-The GameLift service limits and current utilization for an AWS Region or
-location.
+The GameLift service limits and current utilization for an Amazon Web Services
+Region or location.
 
 Type annotations for `boto3.client("gamelift").describe_ec2_instance_limits`
 method.
@@ -1550,8 +1552,8 @@ Returns
 
 ### describe_vpc_peering_authorizations
 
-Retrieves valid VPC peering authorizations that are pending for the AWS
-account.
+Retrieves valid VPC peering authorizations that are pending for the Amazon Web
+Services account.
 
 Type annotations for
 `boto3.client("gamelift").describe_vpc_peering_authorizations` method.
@@ -1653,7 +1655,7 @@ Returns
 
 ### list_aliases
 
-Retrieves all aliases for this AWS account.
+Retrieves all aliases for this Amazon Web Services account.
 
 Type annotations for `boto3.client("gamelift").list_aliases` method.
 
@@ -1677,8 +1679,8 @@ Returns [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef).
 
 ### list_builds
 
-Retrieves build resources for all builds associated with the AWS account in
-use.
+Retrieves build resources for all builds associated with the Amazon Web
+Services account in use.
 
 Type annotations for `boto3.client("gamelift").list_builds` method.
 
@@ -1700,7 +1702,7 @@ Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
 
 ### list_fleets
 
-Retrieves a collection of fleet resources in an AWS Region.
+Retrieves a collection of fleet resources in an Amazon Web Services Region.
 
 Type annotations for `boto3.client("gamelift").list_fleets` method.
 
@@ -1725,7 +1727,7 @@ Returns [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef).
 
 **This operation is used with the GameLift FleetIQ solution and game server
 groups.** Retrieves information on all game servers groups that exist in the
-current AWS account for the selected Region.
+current Amazon Web Services account for the selected Region.
 
 Type annotations for `boto3.client("gamelift").list_game_server_groups` method.
 
@@ -1774,7 +1776,7 @@ Returns
 ### list_scripts
 
 Retrieves script records for all Realtime scripts that are associated with the
-AWS account in use.
+Amazon Web Services account in use.
 
 Type annotations for `boto3.client("gamelift").list_scripts` method.
 
@@ -1877,7 +1879,7 @@ Returns
 ### request_upload_credentials
 
 Retrieves a fresh set of credentials for use when uploading a new set of game
-build files to Amazon GameLift's Amazon S3.
+build files to Amazon Web Services's Amazon S3.
 
 Type annotations for `boto3.client("gamelift").request_upload_credentials`
 method.

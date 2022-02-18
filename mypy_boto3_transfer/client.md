@@ -190,6 +190,8 @@ Keyword-only arguments:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
+- `PostAuthenticationLoginBanner`: `str`
+- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `ProtocolDetails`:
   [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
@@ -887,6 +889,8 @@ Keyword-only arguments:
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `LoggingRole`: `str`
+- `PostAuthenticationLoginBanner`: `str`
+- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `WorkflowDetails`:
