@@ -74,7 +74,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -91,7 +91,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -112,7 +112,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_device_registration"></a>
+<a id="get\_device\_registration"></a>
 
 ### get_device_registration
 
@@ -135,7 +135,7 @@ Keyword-only arguments:
 Returns
 [GetDeviceRegistrationResultTypeDef](./type_defs.md#getdeviceregistrationresulttypedef).
 
-<a id="send_heartbeat"></a>
+<a id="send\_heartbeat"></a>
 
 ### send_heartbeat
 

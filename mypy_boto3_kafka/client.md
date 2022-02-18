@@ -115,7 +115,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_associate_scram_secret"></a>
+<a id="batch\_associate\_scram\_secret"></a>
 
 ### batch_associate_scram_secret
 
@@ -138,7 +138,7 @@ Keyword-only arguments:
 Returns
 [BatchAssociateScramSecretResponseTypeDef](./type_defs.md#batchassociatescramsecretresponsetypedef).
 
-<a id="batch_disassociate_scram_secret"></a>
+<a id="batch\_disassociate\_scram\_secret"></a>
 
 ### batch_disassociate_scram_secret
 
@@ -161,7 +161,7 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateScramSecretResponseTypeDef](./type_defs.md#batchdisassociatescramsecretresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -178,7 +178,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_cluster"></a>
+<a id="create\_cluster"></a>
 
 ### create_cluster
 
@@ -216,7 +216,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
-<a id="create_cluster_v2"></a>
+<a id="create\_cluster\_v2"></a>
 
 ### create_cluster_v2
 
@@ -242,7 +242,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterV2ResponseTypeDef](./type_defs.md#createclusterv2responsetypedef).
 
-<a id="create_configuration"></a>
+<a id="create\_configuration"></a>
 
 ### create_configuration
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 Returns
 [CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
-<a id="delete_cluster"></a>
+<a id="delete\_cluster"></a>
 
 ### delete_cluster
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
-<a id="delete_configuration"></a>
+<a id="delete\_configuration"></a>
 
 ### delete_configuration
 
@@ -311,7 +311,7 @@ Keyword-only arguments:
 Returns
 [DeleteConfigurationResponseTypeDef](./type_defs.md#deleteconfigurationresponsetypedef).
 
-<a id="describe_cluster"></a>
+<a id="describe\_cluster"></a>
 
 ### describe_cluster
 
@@ -333,7 +333,7 @@ Keyword-only arguments:
 Returns
 [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
-<a id="describe_cluster_operation"></a>
+<a id="describe\_cluster\_operation"></a>
 
 ### describe_cluster_operation
 
@@ -354,7 +354,7 @@ Keyword-only arguments:
 Returns
 [DescribeClusterOperationResponseTypeDef](./type_defs.md#describeclusteroperationresponsetypedef).
 
-<a id="describe_cluster_v2"></a>
+<a id="describe\_cluster\_v2"></a>
 
 ### describe_cluster_v2
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [DescribeClusterV2ResponseTypeDef](./type_defs.md#describeclusterv2responsetypedef).
 
-<a id="describe_configuration"></a>
+<a id="describe\_configuration"></a>
 
 ### describe_configuration
 
@@ -397,7 +397,7 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
 
-<a id="describe_configuration_revision"></a>
+<a id="describe\_configuration\_revision"></a>
 
 ### describe_configuration_revision
 
@@ -420,7 +420,7 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -440,7 +440,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_bootstrap_brokers"></a>
+<a id="get\_bootstrap\_brokers"></a>
 
 ### get_bootstrap_brokers
 
@@ -461,7 +461,7 @@ Keyword-only arguments:
 Returns
 [GetBootstrapBrokersResponseTypeDef](./type_defs.md#getbootstrapbrokersresponsetypedef).
 
-<a id="get_compatible_kafka_versions"></a>
+<a id="get\_compatible\_kafka\_versions"></a>
 
 ### get_compatible_kafka_versions
 
@@ -483,7 +483,7 @@ Keyword-only arguments:
 Returns
 [GetCompatibleKafkaVersionsResponseTypeDef](./type_defs.md#getcompatiblekafkaversionsresponsetypedef).
 
-<a id="list_cluster_operations"></a>
+<a id="list\_cluster\_operations"></a>
 
 ### list_cluster_operations
 
@@ -507,7 +507,7 @@ Keyword-only arguments:
 Returns
 [ListClusterOperationsResponseTypeDef](./type_defs.md#listclusteroperationsresponsetypedef).
 
-<a id="list_clusters"></a>
+<a id="list\_clusters"></a>
 
 ### list_clusters
 
@@ -530,7 +530,7 @@ Keyword-only arguments:
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
-<a id="list_clusters_v2"></a>
+<a id="list\_clusters\_v2"></a>
 
 ### list_clusters_v2
 
@@ -554,7 +554,7 @@ Keyword-only arguments:
 Returns
 [ListClustersV2ResponseTypeDef](./type_defs.md#listclustersv2responsetypedef).
 
-<a id="list_configuration_revisions"></a>
+<a id="list\_configuration\_revisions"></a>
 
 ### list_configuration_revisions
 
@@ -578,7 +578,7 @@ Keyword-only arguments:
 Returns
 [ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
-<a id="list_configurations"></a>
+<a id="list\_configurations"></a>
 
 ### list_configurations
 
@@ -600,7 +600,7 @@ Keyword-only arguments:
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
-<a id="list_kafka_versions"></a>
+<a id="list\_kafka\_versions"></a>
 
 ### list_kafka_versions
 
@@ -622,7 +622,7 @@ Keyword-only arguments:
 Returns
 [ListKafkaVersionsResponseTypeDef](./type_defs.md#listkafkaversionsresponsetypedef).
 
-<a id="list_nodes"></a>
+<a id="list\_nodes"></a>
 
 ### list_nodes
 
@@ -644,7 +644,7 @@ Keyword-only arguments:
 
 Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
 
-<a id="list_scram_secrets"></a>
+<a id="list\_scram\_secrets"></a>
 
 ### list_scram_secrets
 
@@ -667,7 +667,7 @@ Keyword-only arguments:
 Returns
 [ListScramSecretsResponseTypeDef](./type_defs.md#listscramsecretsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -688,7 +688,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="reboot_broker"></a>
+<a id="reboot\_broker"></a>
 
 ### reboot_broker
 
@@ -710,7 +710,7 @@ Keyword-only arguments:
 Returns
 [RebootBrokerResponseTypeDef](./type_defs.md#rebootbrokerresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -729,7 +729,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -748,7 +748,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_broker_count"></a>
+<a id="update\_broker\_count"></a>
 
 ### update_broker_count
 
@@ -771,7 +771,7 @@ Keyword-only arguments:
 Returns
 [UpdateBrokerCountResponseTypeDef](./type_defs.md#updatebrokercountresponsetypedef).
 
-<a id="update_broker_storage"></a>
+<a id="update\_broker\_storage"></a>
 
 ### update_broker_storage
 
@@ -796,7 +796,7 @@ Keyword-only arguments:
 Returns
 [UpdateBrokerStorageResponseTypeDef](./type_defs.md#updatebrokerstorageresponsetypedef).
 
-<a id="update_broker_type"></a>
+<a id="update\_broker\_type"></a>
 
 ### update_broker_type
 
@@ -819,7 +819,7 @@ Keyword-only arguments:
 Returns
 [UpdateBrokerTypeResponseTypeDef](./type_defs.md#updatebrokertyperesponsetypedef).
 
-<a id="update_cluster_configuration"></a>
+<a id="update\_cluster\_configuration"></a>
 
 ### update_cluster_configuration
 
@@ -846,7 +846,7 @@ Keyword-only arguments:
 Returns
 [UpdateClusterConfigurationResponseTypeDef](./type_defs.md#updateclusterconfigurationresponsetypedef).
 
-<a id="update_cluster_kafka_version"></a>
+<a id="update\_cluster\_kafka\_version"></a>
 
 ### update_cluster_kafka_version
 
@@ -872,7 +872,7 @@ Keyword-only arguments:
 Returns
 [UpdateClusterKafkaVersionResponseTypeDef](./type_defs.md#updateclusterkafkaversionresponsetypedef).
 
-<a id="update_configuration"></a>
+<a id="update\_configuration"></a>
 
 ### update_configuration
 
@@ -896,7 +896,7 @@ Keyword-only arguments:
 Returns
 [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
 
-<a id="update_connectivity"></a>
+<a id="update\_connectivity"></a>
 
 ### update_connectivity
 
@@ -921,7 +921,7 @@ Keyword-only arguments:
 Returns
 [UpdateConnectivityResponseTypeDef](./type_defs.md#updateconnectivityresponsetypedef).
 
-<a id="update_monitoring"></a>
+<a id="update\_monitoring"></a>
 
 ### update_monitoring
 
@@ -948,7 +948,7 @@ Keyword-only arguments:
 Returns
 [UpdateMonitoringResponseTypeDef](./type_defs.md#updatemonitoringresponsetypedef).
 
-<a id="update_security"></a>
+<a id="update\_security"></a>
 
 ### update_security
 

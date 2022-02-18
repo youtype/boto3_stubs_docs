@@ -94,7 +94,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_repository"></a>
+<a id="associate\_repository"></a>
 
 ### associate_repository
 
@@ -120,7 +120,7 @@ Keyword-only arguments:
 Returns
 [AssociateRepositoryResponseTypeDef](./type_defs.md#associaterepositoryresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -137,7 +137,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_code_review"></a>
+<a id="create\_code\_review"></a>
 
 ### create_code_review
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [CreateCodeReviewResponseTypeDef](./type_defs.md#createcodereviewresponsetypedef).
 
-<a id="describe_code_review"></a>
+<a id="describe\_code\_review"></a>
 
 ### describe_code_review
 
@@ -185,7 +185,7 @@ Keyword-only arguments:
 Returns
 [DescribeCodeReviewResponseTypeDef](./type_defs.md#describecodereviewresponsetypedef).
 
-<a id="describe_recommendation_feedback"></a>
+<a id="describe\_recommendation\_feedback"></a>
 
 ### describe_recommendation_feedback
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [DescribeRecommendationFeedbackResponseTypeDef](./type_defs.md#describerecommendationfeedbackresponsetypedef).
 
-<a id="describe_repository_association"></a>
+<a id="describe\_repository\_association"></a>
 
 ### describe_repository_association
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 Returns
 [DescribeRepositoryAssociationResponseTypeDef](./type_defs.md#describerepositoryassociationresponsetypedef).
 
-<a id="disassociate_repository"></a>
+<a id="disassociate\_repository"></a>
 
 ### disassociate_repository
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
 Returns
 [DisassociateRepositoryResponseTypeDef](./type_defs.md#disassociaterepositoryresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -274,7 +274,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_code_reviews"></a>
+<a id="list\_code\_reviews"></a>
 
 ### list_code_reviews
 
@@ -302,7 +302,7 @@ Keyword-only arguments:
 Returns
 [ListCodeReviewsResponseTypeDef](./type_defs.md#listcodereviewsresponsetypedef).
 
-<a id="list_recommendation_feedback"></a>
+<a id="list\_recommendation\_feedback"></a>
 
 ### list_recommendation_feedback
 
@@ -328,7 +328,7 @@ Keyword-only arguments:
 Returns
 [ListRecommendationFeedbackResponseTypeDef](./type_defs.md#listrecommendationfeedbackresponsetypedef).
 
-<a id="list_recommendations"></a>
+<a id="list\_recommendations"></a>
 
 ### list_recommendations
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 Returns
 [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
-<a id="list_repository_associations"></a>
+<a id="list\_repository\_associations"></a>
 
 ### list_repository_associations
 
@@ -381,7 +381,7 @@ Keyword-only arguments:
 Returns
 [ListRepositoryAssociationsResponseTypeDef](./type_defs.md#listrepositoryassociationsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -403,7 +403,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_recommendation_feedback"></a>
+<a id="put\_recommendation\_feedback"></a>
 
 ### put_recommendation_feedback
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

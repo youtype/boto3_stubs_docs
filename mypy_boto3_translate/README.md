@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [TranslateClient](#translateclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `Translate` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[translate]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[translate]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-translate
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-translate
 ```bash
 python -m pip uninstall -y mypy-boto3-translate
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="translateclient"></a>
 

@@ -127,7 +127,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_eulas"></a>
+<a id="accept\_eulas"></a>
 
 ### accept_eulas
 
@@ -150,7 +150,7 @@ Keyword-only arguments:
 Returns
 [AcceptEulasResponseTypeDef](./type_defs.md#accepteulasresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -167,7 +167,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_launch_profile"></a>
+<a id="create\_launch\_profile"></a>
 
 ### create_launch_profile
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 Returns
 [CreateLaunchProfileResponseTypeDef](./type_defs.md#createlaunchprofileresponsetypedef).
 
-<a id="create_streaming_image"></a>
+<a id="create\_streaming\_image"></a>
 
 ### create_streaming_image
 
@@ -224,7 +224,7 @@ Keyword-only arguments:
 Returns
 [CreateStreamingImageResponseTypeDef](./type_defs.md#createstreamingimageresponsetypedef).
 
-<a id="create_streaming_session"></a>
+<a id="create\_streaming\_session"></a>
 
 ### create_streaming_session
 
@@ -252,7 +252,7 @@ Keyword-only arguments:
 Returns
 [CreateStreamingSessionResponseTypeDef](./type_defs.md#createstreamingsessionresponsetypedef).
 
-<a id="create_streaming_session_stream"></a>
+<a id="create\_streaming\_session\_stream"></a>
 
 ### create_streaming_session_stream
 
@@ -277,7 +277,7 @@ Keyword-only arguments:
 Returns
 [CreateStreamingSessionStreamResponseTypeDef](./type_defs.md#createstreamingsessionstreamresponsetypedef).
 
-<a id="create_studio"></a>
+<a id="create\_studio"></a>
 
 ### create_studio
 
@@ -305,7 +305,7 @@ Keyword-only arguments:
 Returns
 [CreateStudioResponseTypeDef](./type_defs.md#createstudioresponsetypedef).
 
-<a id="create_studio_component"></a>
+<a id="create\_studio\_component"></a>
 
 ### create_studio_component
 
@@ -341,7 +341,7 @@ Keyword-only arguments:
 Returns
 [CreateStudioComponentResponseTypeDef](./type_defs.md#createstudiocomponentresponsetypedef).
 
-<a id="delete_launch_profile"></a>
+<a id="delete\_launch\_profile"></a>
 
 ### delete_launch_profile
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 Returns
 [DeleteLaunchProfileResponseTypeDef](./type_defs.md#deletelaunchprofileresponsetypedef).
 
-<a id="delete_launch_profile_member"></a>
+<a id="delete\_launch\_profile\_member"></a>
 
 ### delete_launch_profile_member
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_streaming_image"></a>
+<a id="delete\_streaming\_image"></a>
 
 ### delete_streaming_image
 
@@ -411,7 +411,7 @@ Keyword-only arguments:
 Returns
 [DeleteStreamingImageResponseTypeDef](./type_defs.md#deletestreamingimageresponsetypedef).
 
-<a id="delete_streaming_session"></a>
+<a id="delete\_streaming\_session"></a>
 
 ### delete_streaming_session
 
@@ -434,7 +434,7 @@ Keyword-only arguments:
 Returns
 [DeleteStreamingSessionResponseTypeDef](./type_defs.md#deletestreamingsessionresponsetypedef).
 
-<a id="delete_studio"></a>
+<a id="delete\_studio"></a>
 
 ### delete_studio
 
@@ -456,7 +456,7 @@ Keyword-only arguments:
 Returns
 [DeleteStudioResponseTypeDef](./type_defs.md#deletestudioresponsetypedef).
 
-<a id="delete_studio_component"></a>
+<a id="delete\_studio\_component"></a>
 
 ### delete_studio_component
 
@@ -479,7 +479,7 @@ Keyword-only arguments:
 Returns
 [DeleteStudioComponentResponseTypeDef](./type_defs.md#deletestudiocomponentresponsetypedef).
 
-<a id="delete_studio_member"></a>
+<a id="delete\_studio\_member"></a>
 
 ### delete_studio_member
 
@@ -501,7 +501,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -521,7 +521,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_eula"></a>
+<a id="get\_eula"></a>
 
 ### get_eula
 
@@ -541,7 +541,7 @@ Keyword-only arguments:
 
 Returns [GetEulaResponseTypeDef](./type_defs.md#geteularesponsetypedef).
 
-<a id="get_launch_profile"></a>
+<a id="get\_launch\_profile"></a>
 
 ### get_launch_profile
 
@@ -563,7 +563,7 @@ Keyword-only arguments:
 Returns
 [GetLaunchProfileResponseTypeDef](./type_defs.md#getlaunchprofileresponsetypedef).
 
-<a id="get_launch_profile_details"></a>
+<a id="get\_launch\_profile\_details"></a>
 
 ### get_launch_profile_details
 
@@ -587,7 +587,7 @@ Keyword-only arguments:
 Returns
 [GetLaunchProfileDetailsResponseTypeDef](./type_defs.md#getlaunchprofiledetailsresponsetypedef).
 
-<a id="get_launch_profile_initialization"></a>
+<a id="get\_launch\_profile\_initialization"></a>
 
 ### get_launch_profile_initialization
 
@@ -613,7 +613,7 @@ Keyword-only arguments:
 Returns
 [GetLaunchProfileInitializationResponseTypeDef](./type_defs.md#getlaunchprofileinitializationresponsetypedef).
 
-<a id="get_launch_profile_member"></a>
+<a id="get\_launch\_profile\_member"></a>
 
 ### get_launch_profile_member
 
@@ -636,7 +636,7 @@ Keyword-only arguments:
 Returns
 [GetLaunchProfileMemberResponseTypeDef](./type_defs.md#getlaunchprofilememberresponsetypedef).
 
-<a id="get_streaming_image"></a>
+<a id="get\_streaming\_image"></a>
 
 ### get_streaming_image
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 Returns
 [GetStreamingImageResponseTypeDef](./type_defs.md#getstreamingimageresponsetypedef).
 
-<a id="get_streaming_session"></a>
+<a id="get\_streaming\_session"></a>
 
 ### get_streaming_session
 
@@ -680,7 +680,7 @@ Keyword-only arguments:
 Returns
 [GetStreamingSessionResponseTypeDef](./type_defs.md#getstreamingsessionresponsetypedef).
 
-<a id="get_streaming_session_stream"></a>
+<a id="get\_streaming\_session\_stream"></a>
 
 ### get_streaming_session_stream
 
@@ -704,7 +704,7 @@ Keyword-only arguments:
 Returns
 [GetStreamingSessionStreamResponseTypeDef](./type_defs.md#getstreamingsessionstreamresponsetypedef).
 
-<a id="get_studio"></a>
+<a id="get\_studio"></a>
 
 ### get_studio
 
@@ -724,7 +724,7 @@ Keyword-only arguments:
 
 Returns [GetStudioResponseTypeDef](./type_defs.md#getstudioresponsetypedef).
 
-<a id="get_studio_component"></a>
+<a id="get\_studio\_component"></a>
 
 ### get_studio_component
 
@@ -746,7 +746,7 @@ Keyword-only arguments:
 Returns
 [GetStudioComponentResponseTypeDef](./type_defs.md#getstudiocomponentresponsetypedef).
 
-<a id="get_studio_member"></a>
+<a id="get\_studio\_member"></a>
 
 ### get_studio_member
 
@@ -768,7 +768,7 @@ Keyword-only arguments:
 Returns
 [GetStudioMemberResponseTypeDef](./type_defs.md#getstudiomemberresponsetypedef).
 
-<a id="list_eula_acceptances"></a>
+<a id="list\_eula\_acceptances"></a>
 
 ### list_eula_acceptances
 
@@ -791,7 +791,7 @@ Keyword-only arguments:
 Returns
 [ListEulaAcceptancesResponseTypeDef](./type_defs.md#listeulaacceptancesresponsetypedef).
 
-<a id="list_eulas"></a>
+<a id="list\_eulas"></a>
 
 ### list_eulas
 
@@ -812,7 +812,7 @@ Keyword-only arguments:
 
 Returns [ListEulasResponseTypeDef](./type_defs.md#listeulasresponsetypedef).
 
-<a id="list_launch_profile_members"></a>
+<a id="list\_launch\_profile\_members"></a>
 
 ### list_launch_profile_members
 
@@ -837,7 +837,7 @@ Keyword-only arguments:
 Returns
 [ListLaunchProfileMembersResponseTypeDef](./type_defs.md#listlaunchprofilemembersresponsetypedef).
 
-<a id="list_launch_profiles"></a>
+<a id="list\_launch\_profiles"></a>
 
 ### list_launch_profiles
 
@@ -863,7 +863,7 @@ Keyword-only arguments:
 Returns
 [ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
 
-<a id="list_streaming_images"></a>
+<a id="list\_streaming\_images"></a>
 
 ### list_streaming_images
 
@@ -886,7 +886,7 @@ Keyword-only arguments:
 Returns
 [ListStreamingImagesResponseTypeDef](./type_defs.md#liststreamingimagesresponsetypedef).
 
-<a id="list_streaming_sessions"></a>
+<a id="list\_streaming\_sessions"></a>
 
 ### list_streaming_sessions
 
@@ -911,7 +911,7 @@ Keyword-only arguments:
 Returns
 [ListStreamingSessionsResponseTypeDef](./type_defs.md#liststreamingsessionsresponsetypedef).
 
-<a id="list_studio_components"></a>
+<a id="list\_studio\_components"></a>
 
 ### list_studio_components
 
@@ -938,7 +938,7 @@ Keyword-only arguments:
 Returns
 [ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).
 
-<a id="list_studio_members"></a>
+<a id="list\_studio\_members"></a>
 
 ### list_studio_members
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 Returns
 [ListStudioMembersResponseTypeDef](./type_defs.md#liststudiomembersresponsetypedef).
 
-<a id="list_studios"></a>
+<a id="list\_studios"></a>
 
 ### list_studios
 
@@ -983,7 +983,7 @@ Keyword-only arguments:
 Returns
 [ListStudiosResponseTypeDef](./type_defs.md#liststudiosresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1004,7 +1004,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_launch_profile_members"></a>
+<a id="put\_launch\_profile\_members"></a>
 
 ### put_launch_profile_members
 
@@ -1031,7 +1031,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_studio_members"></a>
+<a id="put\_studio\_members"></a>
 
 ### put_studio_members
 
@@ -1056,7 +1056,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_streaming_session"></a>
+<a id="start\_streaming\_session"></a>
 
 ### start_streaming_session
 
@@ -1079,7 +1079,7 @@ Keyword-only arguments:
 Returns
 [StartStreamingSessionResponseTypeDef](./type_defs.md#startstreamingsessionresponsetypedef).
 
-<a id="start_studio_sso_configuration_repair"></a>
+<a id="start\_studio\_sso\_configuration\_repair"></a>
 
 ### start_studio_sso_configuration_repair
 
@@ -1102,7 +1102,7 @@ Keyword-only arguments:
 Returns
 [StartStudioSSOConfigurationRepairResponseTypeDef](./type_defs.md#startstudiossoconfigurationrepairresponsetypedef).
 
-<a id="stop_streaming_session"></a>
+<a id="stop\_streaming\_session"></a>
 
 ### stop_streaming_session
 
@@ -1125,7 +1125,7 @@ Keyword-only arguments:
 Returns
 [StopStreamingSessionResponseTypeDef](./type_defs.md#stopstreamingsessionresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1146,7 +1146,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1167,7 +1167,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_launch_profile"></a>
+<a id="update\_launch\_profile"></a>
 
 ### update_launch_profile
 
@@ -1196,7 +1196,7 @@ Keyword-only arguments:
 Returns
 [UpdateLaunchProfileResponseTypeDef](./type_defs.md#updatelaunchprofileresponsetypedef).
 
-<a id="update_launch_profile_member"></a>
+<a id="update\_launch\_profile\_member"></a>
 
 ### update_launch_profile_member
 
@@ -1224,7 +1224,7 @@ Keyword-only arguments:
 Returns
 [UpdateLaunchProfileMemberResponseTypeDef](./type_defs.md#updatelaunchprofilememberresponsetypedef).
 
-<a id="update_streaming_image"></a>
+<a id="update\_streaming\_image"></a>
 
 ### update_streaming_image
 
@@ -1249,7 +1249,7 @@ Keyword-only arguments:
 Returns
 [UpdateStreamingImageResponseTypeDef](./type_defs.md#updatestreamingimageresponsetypedef).
 
-<a id="update_studio"></a>
+<a id="update\_studio"></a>
 
 ### update_studio
 
@@ -1274,7 +1274,7 @@ Keyword-only arguments:
 Returns
 [UpdateStudioResponseTypeDef](./type_defs.md#updatestudioresponsetypedef).
 
-<a id="update_studio_component"></a>
+<a id="update\_studio\_component"></a>
 
 ### update_studio_component
 

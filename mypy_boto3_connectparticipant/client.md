@@ -85,7 +85,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -102,7 +102,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="complete_attachment_upload"></a>
+<a id="complete\_attachment\_upload"></a>
 
 ### complete_attachment_upload
 
@@ -126,7 +126,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_participant_connection"></a>
+<a id="create\_participant\_connection"></a>
 
 ### create_participant_connection
 
@@ -151,7 +151,7 @@ Keyword-only arguments:
 Returns
 [CreateParticipantConnectionResponseTypeDef](./type_defs.md#createparticipantconnectionresponsetypedef).
 
-<a id="disconnect_participant"></a>
+<a id="disconnect\_participant"></a>
 
 ### disconnect_participant
 
@@ -173,7 +173,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -194,7 +194,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_attachment"></a>
+<a id="get\_attachment"></a>
 
 ### get_attachment
 
@@ -217,7 +217,7 @@ Keyword-only arguments:
 Returns
 [GetAttachmentResponseTypeDef](./type_defs.md#getattachmentresponsetypedef).
 
-<a id="get_transcript"></a>
+<a id="get\_transcript"></a>
 
 ### get_transcript
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 Returns
 [GetTranscriptResponseTypeDef](./type_defs.md#gettranscriptresponsetypedef).
 
-<a id="send_event"></a>
+<a id="send\_event"></a>
 
 ### send_event
 
@@ -268,7 +268,7 @@ Keyword-only arguments:
 
 Returns [SendEventResponseTypeDef](./type_defs.md#sendeventresponsetypedef).
 
-<a id="send_message"></a>
+<a id="send\_message"></a>
 
 ### send_message
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 Returns
 [SendMessageResponseTypeDef](./type_defs.md#sendmessageresponsetypedef).
 
-<a id="start_attachment_upload"></a>
+<a id="start\_attachment\_upload"></a>
 
 ### start_attachment_upload
 

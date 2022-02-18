@@ -83,7 +83,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_member_account"></a>
+<a id="associate\_member\_account"></a>
 
 ### associate_member_account
 
@@ -102,7 +102,7 @@ Keyword-only arguments:
 
 - `memberAccountId`: `str` *(required)*
 
-<a id="associate_s3_resources"></a>
+<a id="associate\_s3\_resources"></a>
 
 ### associate_s3_resources
 
@@ -127,7 +127,7 @@ Keyword-only arguments:
 Returns
 [AssociateS3ResourcesResultTypeDef](./type_defs.md#associates3resourcesresulttypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -144,7 +144,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="disassociate_member_account"></a>
+<a id="disassociate\_member\_account"></a>
 
 ### disassociate_member_account
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 
 - `memberAccountId`: `str` *(required)*
 
-<a id="disassociate_s3_resources"></a>
+<a id="disassociate\_s3\_resources"></a>
 
 ### disassociate_s3_resources
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 Returns
 [DisassociateS3ResourcesResultTypeDef](./type_defs.md#disassociates3resourcesresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -207,7 +207,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_member_accounts"></a>
+<a id="list\_member\_accounts"></a>
 
 ### list_member_accounts
 
@@ -230,7 +230,7 @@ Keyword-only arguments:
 Returns
 [ListMemberAccountsResultTypeDef](./type_defs.md#listmemberaccountsresulttypedef).
 
-<a id="list_s3_resources"></a>
+<a id="list\_s3\_resources"></a>
 
 ### list_s3_resources
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
 Returns
 [ListS3ResourcesResultTypeDef](./type_defs.md#lists3resourcesresulttypedef).
 
-<a id="update_s3_resources"></a>
+<a id="update\_s3\_resources"></a>
 
 ### update_s3_resources
 

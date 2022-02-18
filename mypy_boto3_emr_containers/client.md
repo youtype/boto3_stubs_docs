@@ -90,7 +90,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -107,7 +107,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_job_run"></a>
+<a id="cancel\_job\_run"></a>
 
 ### cancel_job_run
 
@@ -129,7 +129,7 @@ Keyword-only arguments:
 Returns
 [CancelJobRunResponseTypeDef](./type_defs.md#canceljobrunresponsetypedef).
 
-<a id="create_managed_endpoint"></a>
+<a id="create\_managed\_endpoint"></a>
 
 ### create_managed_endpoint
 
@@ -160,7 +160,7 @@ Keyword-only arguments:
 Returns
 [CreateManagedEndpointResponseTypeDef](./type_defs.md#createmanagedendpointresponsetypedef).
 
-<a id="create_virtual_cluster"></a>
+<a id="create\_virtual\_cluster"></a>
 
 ### create_virtual_cluster
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 Returns
 [CreateVirtualClusterResponseTypeDef](./type_defs.md#createvirtualclusterresponsetypedef).
 
-<a id="delete_managed_endpoint"></a>
+<a id="delete\_managed\_endpoint"></a>
 
 ### delete_managed_endpoint
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 Returns
 [DeleteManagedEndpointResponseTypeDef](./type_defs.md#deletemanagedendpointresponsetypedef).
 
-<a id="delete_virtual_cluster"></a>
+<a id="delete\_virtual\_cluster"></a>
 
 ### delete_virtual_cluster
 
@@ -232,7 +232,7 @@ Keyword-only arguments:
 Returns
 [DeleteVirtualClusterResponseTypeDef](./type_defs.md#deletevirtualclusterresponsetypedef).
 
-<a id="describe_job_run"></a>
+<a id="describe\_job\_run"></a>
 
 ### describe_job_run
 
@@ -254,7 +254,7 @@ Keyword-only arguments:
 Returns
 [DescribeJobRunResponseTypeDef](./type_defs.md#describejobrunresponsetypedef).
 
-<a id="describe_managed_endpoint"></a>
+<a id="describe\_managed\_endpoint"></a>
 
 ### describe_managed_endpoint
 
@@ -277,7 +277,7 @@ Keyword-only arguments:
 Returns
 [DescribeManagedEndpointResponseTypeDef](./type_defs.md#describemanagedendpointresponsetypedef).
 
-<a id="describe_virtual_cluster"></a>
+<a id="describe\_virtual\_cluster"></a>
 
 ### describe_virtual_cluster
 
@@ -299,7 +299,7 @@ Keyword-only arguments:
 Returns
 [DescribeVirtualClusterResponseTypeDef](./type_defs.md#describevirtualclusterresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -320,7 +320,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_job_runs"></a>
+<a id="list\_job\_runs"></a>
 
 ### list_job_runs
 
@@ -347,7 +347,7 @@ Keyword-only arguments:
 Returns
 [ListJobRunsResponseTypeDef](./type_defs.md#listjobrunsresponsetypedef).
 
-<a id="list_managed_endpoints"></a>
+<a id="list\_managed\_endpoints"></a>
 
 ### list_managed_endpoints
 
@@ -375,7 +375,7 @@ Keyword-only arguments:
 Returns
 [ListManagedEndpointsResponseTypeDef](./type_defs.md#listmanagedendpointsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -397,7 +397,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_virtual_clusters"></a>
+<a id="list\_virtual\_clusters"></a>
 
 ### list_virtual_clusters
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 Returns
 [ListVirtualClustersResponseTypeDef](./type_defs.md#listvirtualclustersresponsetypedef).
 
-<a id="start_job_run"></a>
+<a id="start\_job\_run"></a>
 
 ### start_job_run
 
@@ -456,7 +456,7 @@ Keyword-only arguments:
 Returns
 [StartJobRunResponseTypeDef](./type_defs.md#startjobrunresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -477,7 +477,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

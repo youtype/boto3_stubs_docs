@@ -104,7 +104,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -121,7 +121,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_signaling_channel"></a>
+<a id="create\_signaling\_channel"></a>
 
 ### create_signaling_channel
 
@@ -148,7 +148,7 @@ Keyword-only arguments:
 Returns
 [CreateSignalingChannelOutputTypeDef](./type_defs.md#createsignalingchanneloutputtypedef).
 
-<a id="create_stream"></a>
+<a id="create\_stream"></a>
 
 ### create_stream
 
@@ -173,7 +173,7 @@ Keyword-only arguments:
 
 Returns [CreateStreamOutputTypeDef](./type_defs.md#createstreamoutputtypedef).
 
-<a id="delete_signaling_channel"></a>
+<a id="delete\_signaling\_channel"></a>
 
 ### delete_signaling_channel
 
@@ -195,7 +195,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_stream"></a>
+<a id="delete\_stream"></a>
 
 ### delete_stream
 
@@ -216,7 +216,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_signaling_channel"></a>
+<a id="describe\_signaling\_channel"></a>
 
 ### describe_signaling_channel
 
@@ -239,7 +239,7 @@ Keyword-only arguments:
 Returns
 [DescribeSignalingChannelOutputTypeDef](./type_defs.md#describesignalingchanneloutputtypedef).
 
-<a id="describe_stream"></a>
+<a id="describe\_stream"></a>
 
 ### describe_stream
 
@@ -261,7 +261,7 @@ Keyword-only arguments:
 Returns
 [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -282,7 +282,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_data_endpoint"></a>
+<a id="get\_data\_endpoint"></a>
 
 ### get_data_endpoint
 
@@ -305,7 +305,7 @@ Keyword-only arguments:
 Returns
 [GetDataEndpointOutputTypeDef](./type_defs.md#getdataendpointoutputtypedef).
 
-<a id="get_signaling_channel_endpoint"></a>
+<a id="get\_signaling\_channel\_endpoint"></a>
 
 ### get_signaling_channel_endpoint
 
@@ -330,7 +330,7 @@ Keyword-only arguments:
 Returns
 [GetSignalingChannelEndpointOutputTypeDef](./type_defs.md#getsignalingchannelendpointoutputtypedef).
 
-<a id="list_signaling_channels"></a>
+<a id="list\_signaling\_channels"></a>
 
 ### list_signaling_channels
 
@@ -355,7 +355,7 @@ Keyword-only arguments:
 Returns
 [ListSignalingChannelsOutputTypeDef](./type_defs.md#listsignalingchannelsoutputtypedef).
 
-<a id="list_streams"></a>
+<a id="list\_streams"></a>
 
 ### list_streams
 
@@ -378,7 +378,7 @@ Keyword-only arguments:
 
 Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -401,7 +401,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="list_tags_for_stream"></a>
+<a id="list\_tags\_for\_stream"></a>
 
 ### list_tags_for_stream
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -446,7 +446,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_stream"></a>
+<a id="tag\_stream"></a>
 
 ### tag_stream
 
@@ -468,7 +468,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -489,7 +489,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_stream"></a>
+<a id="untag\_stream"></a>
 
 ### untag_stream
 
@@ -511,7 +511,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_data_retention"></a>
+<a id="update\_data\_retention"></a>
 
 ### update_data_retention
 
@@ -539,7 +539,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_signaling_channel"></a>
+<a id="update\_signaling\_channel"></a>
 
 ### update_signaling_channel
 
@@ -563,7 +563,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_stream"></a>
+<a id="update\_stream"></a>
 
 ### update_stream
 

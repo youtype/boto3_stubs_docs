@@ -89,7 +89,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_execute_statement"></a>
+<a id="batch\_execute\_statement"></a>
 
 ### batch_execute_statement
 
@@ -118,7 +118,7 @@ Keyword-only arguments:
 Returns
 [BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -135,7 +135,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_statement"></a>
+<a id="cancel\_statement"></a>
 
 ### cancel_statement
 
@@ -156,7 +156,7 @@ Keyword-only arguments:
 Returns
 [CancelStatementResponseTypeDef](./type_defs.md#cancelstatementresponsetypedef).
 
-<a id="describe_statement"></a>
+<a id="describe\_statement"></a>
 
 ### describe_statement
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 Returns
 [DescribeStatementResponseTypeDef](./type_defs.md#describestatementresponsetypedef).
 
-<a id="describe_table"></a>
+<a id="describe\_table"></a>
 
 ### describe_table
 
@@ -207,7 +207,7 @@ Keyword-only arguments:
 Returns
 [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
-<a id="execute_statement"></a>
+<a id="execute\_statement"></a>
 
 ### execute_statement
 
@@ -237,7 +237,7 @@ Keyword-only arguments:
 Returns
 [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -258,7 +258,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_statement_result"></a>
+<a id="get\_statement\_result"></a>
 
 ### get_statement_result
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 Returns
 [GetStatementResultResponseTypeDef](./type_defs.md#getstatementresultresponsetypedef).
 
-<a id="list_databases"></a>
+<a id="list\_databases"></a>
 
 ### list_databases
 
@@ -307,7 +307,7 @@ Keyword-only arguments:
 Returns
 [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
 
-<a id="list_schemas"></a>
+<a id="list\_schemas"></a>
 
 ### list_schemas
 
@@ -335,7 +335,7 @@ Keyword-only arguments:
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
-<a id="list_statements"></a>
+<a id="list\_statements"></a>
 
 ### list_statements
 
@@ -360,7 +360,7 @@ Keyword-only arguments:
 Returns
 [ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
 
-<a id="list_tables"></a>
+<a id="list\_tables"></a>
 
 ### list_tables
 

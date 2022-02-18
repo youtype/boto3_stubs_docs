@@ -117,7 +117,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_tags_to_stream"></a>
+<a id="add\_tags\_to\_stream"></a>
 
 ### add_tags_to_stream
 
@@ -136,7 +136,7 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -153,7 +153,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_stream"></a>
+<a id="create\_stream"></a>
 
 ### create_stream
 
@@ -174,7 +174,7 @@ Keyword-only arguments:
 - `StreamModeDetails`:
   [StreamModeDetailsTypeDef](./type_defs.md#streammodedetailstypedef)
 
-<a id="decrease_stream_retention_period"></a>
+<a id="decrease\_stream\_retention\_period"></a>
 
 ### decrease_stream_retention_period
 
@@ -195,7 +195,7 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `RetentionPeriodHours`: `int` *(required)*
 
-<a id="delete_stream"></a>
+<a id="delete\_stream"></a>
 
 ### delete_stream
 
@@ -214,7 +214,7 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `EnforceConsumerDeletion`: `bool`
 
-<a id="deregister_stream_consumer"></a>
+<a id="deregister\_stream\_consumer"></a>
 
 ### deregister_stream_consumer
 
@@ -235,7 +235,7 @@ Keyword-only arguments:
 - `ConsumerName`: `str`
 - `ConsumerARN`: `str`
 
-<a id="describe_limits"></a>
+<a id="describe\_limits"></a>
 
 ### describe_limits
 
@@ -249,7 +249,7 @@ Boto3 documentation:
 Returns
 [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
 
-<a id="describe_stream"></a>
+<a id="describe\_stream"></a>
 
 ### describe_stream
 
@@ -272,7 +272,7 @@ Keyword-only arguments:
 Returns
 [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
-<a id="describe_stream_consumer"></a>
+<a id="describe\_stream\_consumer"></a>
 
 ### describe_stream_consumer
 
@@ -296,7 +296,7 @@ Keyword-only arguments:
 Returns
 [DescribeStreamConsumerOutputTypeDef](./type_defs.md#describestreamconsumeroutputtypedef).
 
-<a id="describe_stream_summary"></a>
+<a id="describe\_stream\_summary"></a>
 
 ### describe_stream_summary
 
@@ -318,7 +318,7 @@ Keyword-only arguments:
 Returns
 [DescribeStreamSummaryOutputTypeDef](./type_defs.md#describestreamsummaryoutputtypedef).
 
-<a id="disable_enhanced_monitoring"></a>
+<a id="disable\_enhanced\_monitoring"></a>
 
 ### disable_enhanced_monitoring
 
@@ -342,7 +342,7 @@ Keyword-only arguments:
 Returns
 [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
-<a id="enable_enhanced_monitoring"></a>
+<a id="enable\_enhanced\_monitoring"></a>
 
 ### enable_enhanced_monitoring
 
@@ -366,7 +366,7 @@ Keyword-only arguments:
 Returns
 [EnhancedMonitoringOutputTypeDef](./type_defs.md#enhancedmonitoringoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -386,7 +386,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_records"></a>
+<a id="get\_records"></a>
 
 ### get_records
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 
 Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 
-<a id="get_shard_iterator"></a>
+<a id="get\_shard\_iterator"></a>
 
 ### get_shard_iterator
 
@@ -433,7 +433,7 @@ Keyword-only arguments:
 Returns
 [GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
-<a id="increase_stream_retention_period"></a>
+<a id="increase\_stream\_retention\_period"></a>
 
 ### increase_stream_retention_period
 
@@ -454,7 +454,7 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `RetentionPeriodHours`: `int` *(required)*
 
-<a id="list_shards"></a>
+<a id="list\_shards"></a>
 
 ### list_shards
 
@@ -479,7 +479,7 @@ Keyword-only arguments:
 
 Returns [ListShardsOutputTypeDef](./type_defs.md#listshardsoutputtypedef).
 
-<a id="list_stream_consumers"></a>
+<a id="list\_stream\_consumers"></a>
 
 ### list_stream_consumers
 
@@ -504,7 +504,7 @@ Keyword-only arguments:
 Returns
 [ListStreamConsumersOutputTypeDef](./type_defs.md#liststreamconsumersoutputtypedef).
 
-<a id="list_streams"></a>
+<a id="list\_streams"></a>
 
 ### list_streams
 
@@ -525,7 +525,7 @@ Keyword-only arguments:
 
 Returns [ListStreamsOutputTypeDef](./type_defs.md#liststreamsoutputtypedef).
 
-<a id="list_tags_for_stream"></a>
+<a id="list\_tags\_for\_stream"></a>
 
 ### list_tags_for_stream
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForStreamOutputTypeDef](./type_defs.md#listtagsforstreamoutputtypedef).
 
-<a id="merge_shards"></a>
+<a id="merge\_shards"></a>
 
 ### merge_shards
 
@@ -569,7 +569,7 @@ Keyword-only arguments:
 - `ShardToMerge`: `str` *(required)*
 - `AdjacentShardToMerge`: `str` *(required)*
 
-<a id="put_record"></a>
+<a id="put\_record"></a>
 
 ### put_record
 
@@ -593,7 +593,7 @@ Keyword-only arguments:
 
 Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
-<a id="put_records"></a>
+<a id="put\_records"></a>
 
 ### put_records
 
@@ -617,7 +617,7 @@ Keyword-only arguments:
 
 Returns [PutRecordsOutputTypeDef](./type_defs.md#putrecordsoutputtypedef).
 
-<a id="register_stream_consumer"></a>
+<a id="register\_stream\_consumer"></a>
 
 ### register_stream_consumer
 
@@ -639,7 +639,7 @@ Keyword-only arguments:
 Returns
 [RegisterStreamConsumerOutputTypeDef](./type_defs.md#registerstreamconsumeroutputtypedef).
 
-<a id="remove_tags_from_stream"></a>
+<a id="remove\_tags\_from\_stream"></a>
 
 ### remove_tags_from_stream
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 - `StreamName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="split_shard"></a>
+<a id="split\_shard"></a>
 
 ### split_shard
 
@@ -679,7 +679,7 @@ Keyword-only arguments:
 - `ShardToSplit`: `str` *(required)*
 - `NewStartingHashKey`: `str` *(required)*
 
-<a id="start_stream_encryption"></a>
+<a id="start\_stream\_encryption"></a>
 
 ### start_stream_encryption
 
@@ -701,7 +701,7 @@ Keyword-only arguments:
   *(required)*
 - `KeyId`: `str` *(required)*
 
-<a id="stop_stream_encryption"></a>
+<a id="stop\_stream\_encryption"></a>
 
 ### stop_stream_encryption
 
@@ -722,7 +722,7 @@ Keyword-only arguments:
   *(required)*
 - `KeyId`: `str` *(required)*
 
-<a id="subscribe_to_shard"></a>
+<a id="subscribe\_to\_shard"></a>
 
 ### subscribe_to_shard
 
@@ -749,7 +749,7 @@ Keyword-only arguments:
 Returns
 [SubscribeToShardOutputTypeDef](./type_defs.md#subscribetoshardoutputtypedef).
 
-<a id="update_shard_count"></a>
+<a id="update\_shard\_count"></a>
 
 ### update_shard_count
 
@@ -774,7 +774,7 @@ Keyword-only arguments:
 Returns
 [UpdateShardCountOutputTypeDef](./type_defs.md#updateshardcountoutputtypedef).
 
-<a id="update_stream_mode"></a>
+<a id="update\_stream\_mode"></a>
 
 ### update_stream_mode
 

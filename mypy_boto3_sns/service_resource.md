@@ -220,7 +220,7 @@ Arguments:
 
 Returns [Topic](#topic).
 
-<a id="snsserviceresourcecreate_platform_application-method"></a>
+<a id="snsserviceresourcecreate\_platform\_application-method"></a>
 
 ### SNSServiceResource.create_platform_application method
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 
 Returns [PlatformApplication](#platformapplication).
 
-<a id="snsserviceresourcecreate_topic-method"></a>
+<a id="snsserviceresourcecreate\_topic-method"></a>
 
 ### SNSServiceResource.create_topic method
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 
 Returns [Topic](#topic).
 
-<a id="snsserviceresourceget_available_subresources-method"></a>
+<a id="snsserviceresourceget\_available\_subresources-method"></a>
 
 ### SNSServiceResource.get_available_subresources method
 
@@ -337,7 +337,7 @@ Boto3 documentation:
 
 ### PlatformApplication methods
 
-<a id="platformapplicationcreate_platform_endpoint-method"></a>
+<a id="platformapplicationcreate\_platform\_endpoint-method"></a>
 
 #### PlatformApplication.create_platform_endpoint method
 
@@ -372,7 +372,7 @@ Type annotations for `boto3.resource("sns").delete` method.
 Boto3 documentation:
 [SNS.PlatformApplication.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.delete)
 
-<a id="platformapplicationget_available_subresources-method"></a>
+<a id="platformapplicationget\_available\_subresources-method"></a>
 
 #### PlatformApplication.get_available_subresources method
 
@@ -409,7 +409,7 @@ Type annotations for `boto3.resource("sns").reload` method.
 Boto3 documentation:
 [SNS.PlatformApplication.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformApplication.reload)
 
-<a id="platformapplicationset_attributes-method"></a>
+<a id="platformapplicationset\_attributes-method"></a>
 
 #### PlatformApplication.set_attributes method
 
@@ -468,7 +468,7 @@ Type annotations for `boto3.resource("sns").delete` method.
 Boto3 documentation:
 [SNS.PlatformEndpoint.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.delete)
 
-<a id="platformendpointget_available_subresources-method"></a>
+<a id="platformendpointget\_available\_subresources-method"></a>
 
 #### PlatformEndpoint.get_available_subresources method
 
@@ -535,7 +535,7 @@ Type annotations for `boto3.resource("sns").reload` method.
 Boto3 documentation:
 [SNS.PlatformEndpoint.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.PlatformEndpoint.reload)
 
-<a id="platformendpointset_attributes-method"></a>
+<a id="platformendpointset\_attributes-method"></a>
 
 #### PlatformEndpoint.set_attributes method
 
@@ -594,7 +594,7 @@ Type annotations for `boto3.resource("sns").delete` method.
 Boto3 documentation:
 [SNS.Subscription.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.delete)
 
-<a id="subscriptionget_available_subresources-method"></a>
+<a id="subscriptionget\_available\_subresources-method"></a>
 
 #### Subscription.get_available_subresources method
 
@@ -631,7 +631,7 @@ Type annotations for `boto3.resource("sns").reload` method.
 Boto3 documentation:
 [SNS.Subscription.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Subscription.reload)
 
-<a id="subscriptionset_attributes-method"></a>
+<a id="subscriptionset\_attributes-method"></a>
 
 #### Subscription.set_attributes method
 
@@ -708,7 +708,7 @@ Boto3 documentation:
 
 ### Topic methods
 
-<a id="topicadd_permission-method"></a>
+<a id="topicadd\_permission-method"></a>
 
 #### Topic.add_permission method
 
@@ -729,7 +729,7 @@ Keyword-only arguments:
 - `AWSAccountId`: `Sequence`\[`str`\] *(required)*
 - `ActionName`: `Sequence`\[`str`\] *(required)*
 
-<a id="topicconfirm_subscription-method"></a>
+<a id="topicconfirm\_subscription-method"></a>
 
 #### Topic.confirm_subscription method
 
@@ -762,7 +762,7 @@ Type annotations for `boto3.resource("sns").delete` method.
 Boto3 documentation:
 [SNS.Topic.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.delete)
 
-<a id="topicget_available_subresources-method"></a>
+<a id="topicget\_available\_subresources-method"></a>
 
 #### Topic.get_available_subresources method
 
@@ -829,7 +829,7 @@ Type annotations for `boto3.resource("sns").reload` method.
 Boto3 documentation:
 [SNS.Topic.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sns.html#SNS.Topic.reload)
 
-<a id="topicremove_permission-method"></a>
+<a id="topicremove\_permission-method"></a>
 
 #### Topic.remove_permission method
 
@@ -847,7 +847,7 @@ Keyword-only arguments:
 
 - `Label`: `str` *(required)*
 
-<a id="topicset_attributes-method"></a>
+<a id="topicset\_attributes-method"></a>
 
 #### Topic.set_attributes method
 

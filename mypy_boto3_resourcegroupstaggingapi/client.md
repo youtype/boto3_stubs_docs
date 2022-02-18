@@ -87,7 +87,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -105,7 +105,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_report_creation"></a>
+<a id="describe\_report\_creation"></a>
 
 ### describe_report_creation
 
@@ -120,7 +120,7 @@ Boto3 documentation:
 Returns
 [DescribeReportCreationOutputTypeDef](./type_defs.md#describereportcreationoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -141,7 +141,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_compliance_summary"></a>
+<a id="get\_compliance\_summary"></a>
 
 ### get_compliance_summary
 
@@ -171,7 +171,7 @@ Keyword-only arguments:
 Returns
 [GetComplianceSummaryOutputTypeDef](./type_defs.md#getcompliancesummaryoutputtypedef).
 
-<a id="get_resources"></a>
+<a id="get\_resources"></a>
 
 ### get_resources
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 
 Returns [GetResourcesOutputTypeDef](./type_defs.md#getresourcesoutputtypedef).
 
-<a id="get_tag_keys"></a>
+<a id="get\_tag\_keys"></a>
 
 ### get_tag_keys
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 
 Returns [GetTagKeysOutputTypeDef](./type_defs.md#gettagkeysoutputtypedef).
 
-<a id="get_tag_values"></a>
+<a id="get\_tag\_values"></a>
 
 ### get_tag_values
 
@@ -246,7 +246,7 @@ Keyword-only arguments:
 
 Returns [GetTagValuesOutputTypeDef](./type_defs.md#gettagvaluesoutputtypedef).
 
-<a id="start_report_creation"></a>
+<a id="start\_report\_creation"></a>
 
 ### start_report_creation
 
@@ -269,7 +269,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resources"></a>
+<a id="tag\_resources"></a>
 
 ### tag_resources
 
@@ -291,7 +291,7 @@ Keyword-only arguments:
 
 Returns [TagResourcesOutputTypeDef](./type_defs.md#tagresourcesoutputtypedef).
 
-<a id="untag_resources"></a>
+<a id="untag\_resources"></a>
 
 ### untag_resources
 

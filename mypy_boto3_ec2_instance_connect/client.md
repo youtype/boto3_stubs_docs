@@ -83,7 +83,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -101,7 +101,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -122,7 +122,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="send_serial_console_ssh_public_key"></a>
+<a id="send\_serial\_console\_ssh\_public\_key"></a>
 
 ### send_serial_console_ssh_public_key
 
@@ -147,7 +147,7 @@ Keyword-only arguments:
 Returns
 [SendSerialConsoleSSHPublicKeyResponseTypeDef](./type_defs.md#sendserialconsolesshpublickeyresponsetypedef).
 
-<a id="send_ssh_public_key"></a>
+<a id="send\_ssh\_public\_key"></a>
 
 ### send_ssh_public_key
 

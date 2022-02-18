@@ -102,7 +102,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -119,7 +119,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_lexicon"></a>
+<a id="delete\_lexicon"></a>
 
 ### delete_lexicon
 
@@ -140,7 +140,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_voices"></a>
+<a id="describe\_voices"></a>
 
 ### describe_voices
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [DescribeVoicesOutputTypeDef](./type_defs.md#describevoicesoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -185,7 +185,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_lexicon"></a>
+<a id="get\_lexicon"></a>
 
 ### get_lexicon
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 
 Returns [GetLexiconOutputTypeDef](./type_defs.md#getlexiconoutputtypedef).
 
-<a id="get_speech_synthesis_task"></a>
+<a id="get\_speech\_synthesis\_task"></a>
 
 ### get_speech_synthesis_task
 
@@ -227,7 +227,7 @@ Keyword-only arguments:
 Returns
 [GetSpeechSynthesisTaskOutputTypeDef](./type_defs.md#getspeechsynthesistaskoutputtypedef).
 
-<a id="list_lexicons"></a>
+<a id="list\_lexicons"></a>
 
 ### list_lexicons
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 
 Returns [ListLexiconsOutputTypeDef](./type_defs.md#listlexiconsoutputtypedef).
 
-<a id="list_speech_synthesis_tasks"></a>
+<a id="list\_speech\_synthesis\_tasks"></a>
 
 ### list_speech_synthesis_tasks
 
@@ -272,7 +272,7 @@ Keyword-only arguments:
 Returns
 [ListSpeechSynthesisTasksOutputTypeDef](./type_defs.md#listspeechsynthesistasksoutputtypedef).
 
-<a id="put_lexicon"></a>
+<a id="put\_lexicon"></a>
 
 ### put_lexicon
 
@@ -293,7 +293,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_speech_synthesis_task"></a>
+<a id="start\_speech\_synthesis\_task"></a>
 
 ### start_speech_synthesis_task
 
@@ -329,7 +329,7 @@ Keyword-only arguments:
 Returns
 [StartSpeechSynthesisTaskOutputTypeDef](./type_defs.md#startspeechsynthesistaskoutputtypedef).
 
-<a id="synthesize_speech"></a>
+<a id="synthesize\_speech"></a>
 
 ### synthesize_speech
 

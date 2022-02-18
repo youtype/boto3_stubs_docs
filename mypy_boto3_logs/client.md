@@ -125,7 +125,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_kms_key"></a>
+<a id="associate\_kms\_key"></a>
 
 ### associate_kms_key
 
@@ -145,7 +145,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `kmsKeyId`: `str` *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -162,7 +162,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_export_task"></a>
+<a id="cancel\_export\_task"></a>
 
 ### cancel_export_task
 
@@ -180,7 +180,7 @@ Keyword-only arguments:
 
 - `taskId`: `str` *(required)*
 
-<a id="create_export_task"></a>
+<a id="create\_export\_task"></a>
 
 ### create_export_task
 
@@ -208,7 +208,7 @@ Keyword-only arguments:
 Returns
 [CreateExportTaskResponseTypeDef](./type_defs.md#createexporttaskresponsetypedef).
 
-<a id="create_log_group"></a>
+<a id="create\_log\_group"></a>
 
 ### create_log_group
 
@@ -228,7 +228,7 @@ Keyword-only arguments:
 - `kmsKeyId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
-<a id="create_log_stream"></a>
+<a id="create\_log\_stream"></a>
 
 ### create_log_stream
 
@@ -247,7 +247,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
 
-<a id="delete_destination"></a>
+<a id="delete\_destination"></a>
 
 ### delete_destination
 
@@ -266,7 +266,7 @@ Keyword-only arguments:
 
 - `destinationName`: `str` *(required)*
 
-<a id="delete_log_group"></a>
+<a id="delete\_log\_group"></a>
 
 ### delete_log_group
 
@@ -285,7 +285,7 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
-<a id="delete_log_stream"></a>
+<a id="delete\_log\_stream"></a>
 
 ### delete_log_stream
 
@@ -305,7 +305,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `logStreamName`: `str` *(required)*
 
-<a id="delete_metric_filter"></a>
+<a id="delete\_metric\_filter"></a>
 
 ### delete_metric_filter
 
@@ -324,7 +324,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
 
-<a id="delete_query_definition"></a>
+<a id="delete\_query\_definition"></a>
 
 ### delete_query_definition
 
@@ -345,7 +345,7 @@ Keyword-only arguments:
 Returns
 [DeleteQueryDefinitionResponseTypeDef](./type_defs.md#deletequerydefinitionresponsetypedef).
 
-<a id="delete_resource_policy"></a>
+<a id="delete\_resource\_policy"></a>
 
 ### delete_resource_policy
 
@@ -363,7 +363,7 @@ Keyword-only arguments:
 
 - `policyName`: `str`
 
-<a id="delete_retention_policy"></a>
+<a id="delete\_retention\_policy"></a>
 
 ### delete_retention_policy
 
@@ -381,7 +381,7 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
-<a id="delete_subscription_filter"></a>
+<a id="delete\_subscription\_filter"></a>
 
 ### delete_subscription_filter
 
@@ -400,7 +400,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `filterName`: `str` *(required)*
 
-<a id="describe_destinations"></a>
+<a id="describe\_destinations"></a>
 
 ### describe_destinations
 
@@ -423,7 +423,7 @@ Keyword-only arguments:
 Returns
 [DescribeDestinationsResponseTypeDef](./type_defs.md#describedestinationsresponsetypedef).
 
-<a id="describe_export_tasks"></a>
+<a id="describe\_export\_tasks"></a>
 
 ### describe_export_tasks
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 Returns
 [DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
 
-<a id="describe_log_groups"></a>
+<a id="describe\_log\_groups"></a>
 
 ### describe_log_groups
 
@@ -471,7 +471,7 @@ Keyword-only arguments:
 Returns
 [DescribeLogGroupsResponseTypeDef](./type_defs.md#describeloggroupsresponsetypedef).
 
-<a id="describe_log_streams"></a>
+<a id="describe\_log\_streams"></a>
 
 ### describe_log_streams
 
@@ -497,7 +497,7 @@ Keyword-only arguments:
 Returns
 [DescribeLogStreamsResponseTypeDef](./type_defs.md#describelogstreamsresponsetypedef).
 
-<a id="describe_metric_filters"></a>
+<a id="describe\_metric\_filters"></a>
 
 ### describe_metric_filters
 
@@ -523,7 +523,7 @@ Keyword-only arguments:
 Returns
 [DescribeMetricFiltersResponseTypeDef](./type_defs.md#describemetricfiltersresponsetypedef).
 
-<a id="describe_queries"></a>
+<a id="describe\_queries"></a>
 
 ### describe_queries
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 Returns
 [DescribeQueriesResponseTypeDef](./type_defs.md#describequeriesresponsetypedef).
 
-<a id="describe_query_definitions"></a>
+<a id="describe\_query\_definitions"></a>
 
 ### describe_query_definitions
 
@@ -572,7 +572,7 @@ Keyword-only arguments:
 Returns
 [DescribeQueryDefinitionsResponseTypeDef](./type_defs.md#describequerydefinitionsresponsetypedef).
 
-<a id="describe_resource_policies"></a>
+<a id="describe\_resource\_policies"></a>
 
 ### describe_resource_policies
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 Returns
 [DescribeResourcePoliciesResponseTypeDef](./type_defs.md#describeresourcepoliciesresponsetypedef).
 
-<a id="describe_subscription_filters"></a>
+<a id="describe\_subscription\_filters"></a>
 
 ### describe_subscription_filters
 
@@ -619,7 +619,7 @@ Keyword-only arguments:
 Returns
 [DescribeSubscriptionFiltersResponseTypeDef](./type_defs.md#describesubscriptionfiltersresponsetypedef).
 
-<a id="disassociate_kms_key"></a>
+<a id="disassociate\_kms\_key"></a>
 
 ### disassociate_kms_key
 
@@ -638,7 +638,7 @@ Keyword-only arguments:
 
 - `logGroupName`: `str` *(required)*
 
-<a id="filter_log_events"></a>
+<a id="filter\_log\_events"></a>
 
 ### filter_log_events
 
@@ -667,7 +667,7 @@ Keyword-only arguments:
 Returns
 [FilterLogEventsResponseTypeDef](./type_defs.md#filterlogeventsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -687,7 +687,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_log_events"></a>
+<a id="get\_log\_events"></a>
 
 ### get_log_events
 
@@ -714,7 +714,7 @@ Keyword-only arguments:
 Returns
 [GetLogEventsResponseTypeDef](./type_defs.md#getlogeventsresponsetypedef).
 
-<a id="get_log_group_fields"></a>
+<a id="get\_log\_group\_fields"></a>
 
 ### get_log_group_fields
 
@@ -737,7 +737,7 @@ Keyword-only arguments:
 Returns
 [GetLogGroupFieldsResponseTypeDef](./type_defs.md#getloggroupfieldsresponsetypedef).
 
-<a id="get_log_record"></a>
+<a id="get\_log\_record"></a>
 
 ### get_log_record
 
@@ -758,7 +758,7 @@ Keyword-only arguments:
 Returns
 [GetLogRecordResponseTypeDef](./type_defs.md#getlogrecordresponsetypedef).
 
-<a id="get_query_results"></a>
+<a id="get\_query\_results"></a>
 
 ### get_query_results
 
@@ -779,7 +779,7 @@ Keyword-only arguments:
 Returns
 [GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
 
-<a id="list_tags_log_group"></a>
+<a id="list\_tags\_log\_group"></a>
 
 ### list_tags_log_group
 
@@ -800,7 +800,7 @@ Keyword-only arguments:
 Returns
 [ListTagsLogGroupResponseTypeDef](./type_defs.md#listtagsloggroupresponsetypedef).
 
-<a id="put_destination"></a>
+<a id="put\_destination"></a>
 
 ### put_destination
 
@@ -823,7 +823,7 @@ Keyword-only arguments:
 Returns
 [PutDestinationResponseTypeDef](./type_defs.md#putdestinationresponsetypedef).
 
-<a id="put_destination_policy"></a>
+<a id="put\_destination\_policy"></a>
 
 ### put_destination_policy
 
@@ -843,7 +843,7 @@ Keyword-only arguments:
 - `accessPolicy`: `str` *(required)*
 - `forceUpdate`: `bool`
 
-<a id="put_log_events"></a>
+<a id="put\_log\_events"></a>
 
 ### put_log_events
 
@@ -869,7 +869,7 @@ Keyword-only arguments:
 Returns
 [PutLogEventsResponseTypeDef](./type_defs.md#putlogeventsresponsetypedef).
 
-<a id="put_metric_filter"></a>
+<a id="put\_metric\_filter"></a>
 
 ### put_metric_filter
 
@@ -893,7 +893,7 @@ Keyword-only arguments:
   `Sequence`\[[MetricTransformationTypeDef](./type_defs.md#metrictransformationtypedef)\]
   *(required)*
 
-<a id="put_query_definition"></a>
+<a id="put\_query\_definition"></a>
 
 ### put_query_definition
 
@@ -917,7 +917,7 @@ Keyword-only arguments:
 Returns
 [PutQueryDefinitionResponseTypeDef](./type_defs.md#putquerydefinitionresponsetypedef).
 
-<a id="put_resource_policy"></a>
+<a id="put\_resource\_policy"></a>
 
 ### put_resource_policy
 
@@ -940,7 +940,7 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
-<a id="put_retention_policy"></a>
+<a id="put\_retention\_policy"></a>
 
 ### put_retention_policy
 
@@ -959,7 +959,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `retentionInDays`: `int` *(required)*
 
-<a id="put_subscription_filter"></a>
+<a id="put\_subscription\_filter"></a>
 
 ### put_subscription_filter
 
@@ -983,7 +983,7 @@ Keyword-only arguments:
 - `roleArn`: `str`
 - `distribution`: [DistributionType](./literals.md#distributiontype)
 
-<a id="start_query"></a>
+<a id="start\_query"></a>
 
 ### start_query
 
@@ -1008,7 +1008,7 @@ Keyword-only arguments:
 
 Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
 
-<a id="stop_query"></a>
+<a id="stop\_query"></a>
 
 ### stop_query
 
@@ -1028,7 +1028,7 @@ Keyword-only arguments:
 
 Returns [StopQueryResponseTypeDef](./type_defs.md#stopqueryresponsetypedef).
 
-<a id="tag_log_group"></a>
+<a id="tag\_log\_group"></a>
 
 ### tag_log_group
 
@@ -1047,7 +1047,7 @@ Keyword-only arguments:
 - `logGroupName`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="test_metric_filter"></a>
+<a id="test\_metric\_filter"></a>
 
 ### test_metric_filter
 
@@ -1070,7 +1070,7 @@ Keyword-only arguments:
 Returns
 [TestMetricFilterResponseTypeDef](./type_defs.md#testmetricfilterresponsetypedef).
 
-<a id="untag_log_group"></a>
+<a id="untag\_log\_group"></a>
 
 ### untag_log_group
 

@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -117,7 +117,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_role_credentials"></a>
+<a id="get\_role\_credentials"></a>
 
 ### get_role_credentials
 
@@ -141,7 +141,7 @@ Keyword-only arguments:
 Returns
 [GetRoleCredentialsResponseTypeDef](./type_defs.md#getrolecredentialsresponsetypedef).
 
-<a id="list_account_roles"></a>
+<a id="list\_account\_roles"></a>
 
 ### list_account_roles
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [ListAccountRolesResponseTypeDef](./type_defs.md#listaccountrolesresponsetypedef).
 
-<a id="list_accounts"></a>
+<a id="list\_accounts"></a>
 
 ### list_accounts
 

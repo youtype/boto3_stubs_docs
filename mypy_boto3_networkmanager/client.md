@@ -156,7 +156,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_attachment"></a>
+<a id="accept\_attachment"></a>
 
 ### accept_attachment
 
@@ -177,7 +177,7 @@ Keyword-only arguments:
 Returns
 [AcceptAttachmentResponseTypeDef](./type_defs.md#acceptattachmentresponsetypedef).
 
-<a id="associate_connect_peer"></a>
+<a id="associate\_connect\_peer"></a>
 
 ### associate_connect_peer
 
@@ -203,7 +203,7 @@ Keyword-only arguments:
 Returns
 [AssociateConnectPeerResponseTypeDef](./type_defs.md#associateconnectpeerresponsetypedef).
 
-<a id="associate_customer_gateway"></a>
+<a id="associate\_customer\_gateway"></a>
 
 ### associate_customer_gateway
 
@@ -228,7 +228,7 @@ Keyword-only arguments:
 Returns
 [AssociateCustomerGatewayResponseTypeDef](./type_defs.md#associatecustomergatewayresponsetypedef).
 
-<a id="associate_link"></a>
+<a id="associate\_link"></a>
 
 ### associate_link
 
@@ -251,7 +251,7 @@ Keyword-only arguments:
 Returns
 [AssociateLinkResponseTypeDef](./type_defs.md#associatelinkresponsetypedef).
 
-<a id="associate_transit_gateway_connect_peer"></a>
+<a id="associate\_transit\_gateway\_connect\_peer"></a>
 
 ### associate_transit_gateway_connect_peer
 
@@ -277,7 +277,7 @@ Keyword-only arguments:
 Returns
 [AssociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#associatetransitgatewayconnectpeerresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -294,7 +294,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_connect_attachment"></a>
+<a id="create\_connect\_attachment"></a>
 
 ### create_connect_attachment
 
@@ -324,7 +324,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectAttachmentResponseTypeDef](./type_defs.md#createconnectattachmentresponsetypedef).
 
-<a id="create_connect_peer"></a>
+<a id="create\_connect\_peer"></a>
 
 ### create_connect_peer
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectPeerResponseTypeDef](./type_defs.md#createconnectpeerresponsetypedef).
 
-<a id="create_connection"></a>
+<a id="create\_connection"></a>
 
 ### create_connection
 
@@ -380,7 +380,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
-<a id="create_core_network"></a>
+<a id="create\_core\_network"></a>
 
 ### create_core_network
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 Returns
 [CreateCoreNetworkResponseTypeDef](./type_defs.md#createcorenetworkresponsetypedef).
 
-<a id="create_device"></a>
+<a id="create\_device"></a>
 
 ### create_device
 
@@ -437,7 +437,7 @@ Keyword-only arguments:
 Returns
 [CreateDeviceResponseTypeDef](./type_defs.md#createdeviceresponsetypedef).
 
-<a id="create_global_network"></a>
+<a id="create\_global\_network"></a>
 
 ### create_global_network
 
@@ -460,7 +460,7 @@ Keyword-only arguments:
 Returns
 [CreateGlobalNetworkResponseTypeDef](./type_defs.md#createglobalnetworkresponsetypedef).
 
-<a id="create_link"></a>
+<a id="create\_link"></a>
 
 ### create_link
 
@@ -486,7 +486,7 @@ Keyword-only arguments:
 
 Returns [CreateLinkResponseTypeDef](./type_defs.md#createlinkresponsetypedef).
 
-<a id="create_site"></a>
+<a id="create\_site"></a>
 
 ### create_site
 
@@ -509,7 +509,7 @@ Keyword-only arguments:
 
 Returns [CreateSiteResponseTypeDef](./type_defs.md#createsiteresponsetypedef).
 
-<a id="create_site_to_site_vpn_attachment"></a>
+<a id="create\_site\_to\_site\_vpn\_attachment"></a>
 
 ### create_site_to_site_vpn_attachment
 
@@ -534,7 +534,7 @@ Keyword-only arguments:
 Returns
 [CreateSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#createsitetositevpnattachmentresponsetypedef).
 
-<a id="create_vpc_attachment"></a>
+<a id="create\_vpc\_attachment"></a>
 
 ### create_vpc_attachment
 
@@ -561,7 +561,7 @@ Keyword-only arguments:
 Returns
 [CreateVpcAttachmentResponseTypeDef](./type_defs.md#createvpcattachmentresponsetypedef).
 
-<a id="delete_attachment"></a>
+<a id="delete\_attachment"></a>
 
 ### delete_attachment
 
@@ -582,7 +582,7 @@ Keyword-only arguments:
 Returns
 [DeleteAttachmentResponseTypeDef](./type_defs.md#deleteattachmentresponsetypedef).
 
-<a id="delete_connect_peer"></a>
+<a id="delete\_connect\_peer"></a>
 
 ### delete_connect_peer
 
@@ -604,7 +604,7 @@ Keyword-only arguments:
 Returns
 [DeleteConnectPeerResponseTypeDef](./type_defs.md#deleteconnectpeerresponsetypedef).
 
-<a id="delete_connection"></a>
+<a id="delete\_connection"></a>
 
 ### delete_connection
 
@@ -626,7 +626,7 @@ Keyword-only arguments:
 Returns
 [DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
-<a id="delete_core_network"></a>
+<a id="delete\_core\_network"></a>
 
 ### delete_core_network
 
@@ -648,7 +648,7 @@ Keyword-only arguments:
 Returns
 [DeleteCoreNetworkResponseTypeDef](./type_defs.md#deletecorenetworkresponsetypedef).
 
-<a id="delete_core_network_policy_version"></a>
+<a id="delete\_core\_network\_policy\_version"></a>
 
 ### delete_core_network_policy_version
 
@@ -671,7 +671,7 @@ Keyword-only arguments:
 Returns
 [DeleteCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#deletecorenetworkpolicyversionresponsetypedef).
 
-<a id="delete_device"></a>
+<a id="delete\_device"></a>
 
 ### delete_device
 
@@ -693,7 +693,7 @@ Keyword-only arguments:
 Returns
 [DeleteDeviceResponseTypeDef](./type_defs.md#deletedeviceresponsetypedef).
 
-<a id="delete_global_network"></a>
+<a id="delete\_global\_network"></a>
 
 ### delete_global_network
 
@@ -715,7 +715,7 @@ Keyword-only arguments:
 Returns
 [DeleteGlobalNetworkResponseTypeDef](./type_defs.md#deleteglobalnetworkresponsetypedef).
 
-<a id="delete_link"></a>
+<a id="delete\_link"></a>
 
 ### delete_link
 
@@ -736,7 +736,7 @@ Keyword-only arguments:
 
 Returns [DeleteLinkResponseTypeDef](./type_defs.md#deletelinkresponsetypedef).
 
-<a id="delete_resource_policy"></a>
+<a id="delete\_resource\_policy"></a>
 
 ### delete_resource_policy
 
@@ -757,7 +757,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_site"></a>
+<a id="delete\_site"></a>
 
 ### delete_site
 
@@ -778,7 +778,7 @@ Keyword-only arguments:
 
 Returns [DeleteSiteResponseTypeDef](./type_defs.md#deletesiteresponsetypedef).
 
-<a id="deregister_transit_gateway"></a>
+<a id="deregister\_transit\_gateway"></a>
 
 ### deregister_transit_gateway
 
@@ -801,7 +801,7 @@ Keyword-only arguments:
 Returns
 [DeregisterTransitGatewayResponseTypeDef](./type_defs.md#deregistertransitgatewayresponsetypedef).
 
-<a id="describe_global_networks"></a>
+<a id="describe\_global\_networks"></a>
 
 ### describe_global_networks
 
@@ -825,7 +825,7 @@ Keyword-only arguments:
 Returns
 [DescribeGlobalNetworksResponseTypeDef](./type_defs.md#describeglobalnetworksresponsetypedef).
 
-<a id="disassociate_connect_peer"></a>
+<a id="disassociate\_connect\_peer"></a>
 
 ### disassociate_connect_peer
 
@@ -848,7 +848,7 @@ Keyword-only arguments:
 Returns
 [DisassociateConnectPeerResponseTypeDef](./type_defs.md#disassociateconnectpeerresponsetypedef).
 
-<a id="disassociate_customer_gateway"></a>
+<a id="disassociate\_customer\_gateway"></a>
 
 ### disassociate_customer_gateway
 
@@ -871,7 +871,7 @@ Keyword-only arguments:
 Returns
 [DisassociateCustomerGatewayResponseTypeDef](./type_defs.md#disassociatecustomergatewayresponsetypedef).
 
-<a id="disassociate_link"></a>
+<a id="disassociate\_link"></a>
 
 ### disassociate_link
 
@@ -894,7 +894,7 @@ Keyword-only arguments:
 Returns
 [DisassociateLinkResponseTypeDef](./type_defs.md#disassociatelinkresponsetypedef).
 
-<a id="disassociate_transit_gateway_connect_peer"></a>
+<a id="disassociate\_transit\_gateway\_connect\_peer"></a>
 
 ### disassociate_transit_gateway_connect_peer
 
@@ -918,7 +918,7 @@ Keyword-only arguments:
 Returns
 [DisassociateTransitGatewayConnectPeerResponseTypeDef](./type_defs.md#disassociatetransitgatewayconnectpeerresponsetypedef).
 
-<a id="execute_core_network_change_set"></a>
+<a id="execute\_core\_network\_change\_set"></a>
 
 ### execute_core_network_change_set
 
@@ -940,7 +940,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -961,7 +961,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_connect_attachment"></a>
+<a id="get\_connect\_attachment"></a>
 
 ### get_connect_attachment
 
@@ -983,7 +983,7 @@ Keyword-only arguments:
 Returns
 [GetConnectAttachmentResponseTypeDef](./type_defs.md#getconnectattachmentresponsetypedef).
 
-<a id="get_connect_peer"></a>
+<a id="get\_connect\_peer"></a>
 
 ### get_connect_peer
 
@@ -1004,7 +1004,7 @@ Keyword-only arguments:
 Returns
 [GetConnectPeerResponseTypeDef](./type_defs.md#getconnectpeerresponsetypedef).
 
-<a id="get_connect_peer_associations"></a>
+<a id="get\_connect\_peer\_associations"></a>
 
 ### get_connect_peer_associations
 
@@ -1029,7 +1029,7 @@ Keyword-only arguments:
 Returns
 [GetConnectPeerAssociationsResponseTypeDef](./type_defs.md#getconnectpeerassociationsresponsetypedef).
 
-<a id="get_connections"></a>
+<a id="get\_connections"></a>
 
 ### get_connections
 
@@ -1054,7 +1054,7 @@ Keyword-only arguments:
 Returns
 [GetConnectionsResponseTypeDef](./type_defs.md#getconnectionsresponsetypedef).
 
-<a id="get_core_network"></a>
+<a id="get\_core\_network"></a>
 
 ### get_core_network
 
@@ -1075,7 +1075,7 @@ Keyword-only arguments:
 Returns
 [GetCoreNetworkResponseTypeDef](./type_defs.md#getcorenetworkresponsetypedef).
 
-<a id="get_core_network_change_set"></a>
+<a id="get\_core\_network\_change\_set"></a>
 
 ### get_core_network_change_set
 
@@ -1101,7 +1101,7 @@ Keyword-only arguments:
 Returns
 [GetCoreNetworkChangeSetResponseTypeDef](./type_defs.md#getcorenetworkchangesetresponsetypedef).
 
-<a id="get_core_network_policy"></a>
+<a id="get\_core\_network\_policy"></a>
 
 ### get_core_network_policy
 
@@ -1126,7 +1126,7 @@ Keyword-only arguments:
 Returns
 [GetCoreNetworkPolicyResponseTypeDef](./type_defs.md#getcorenetworkpolicyresponsetypedef).
 
-<a id="get_customer_gateway_associations"></a>
+<a id="get\_customer\_gateway\_associations"></a>
 
 ### get_customer_gateway_associations
 
@@ -1152,7 +1152,7 @@ Keyword-only arguments:
 Returns
 [GetCustomerGatewayAssociationsResponseTypeDef](./type_defs.md#getcustomergatewayassociationsresponsetypedef).
 
-<a id="get_devices"></a>
+<a id="get\_devices"></a>
 
 ### get_devices
 
@@ -1176,7 +1176,7 @@ Keyword-only arguments:
 
 Returns [GetDevicesResponseTypeDef](./type_defs.md#getdevicesresponsetypedef).
 
-<a id="get_link_associations"></a>
+<a id="get\_link\_associations"></a>
 
 ### get_link_associations
 
@@ -1202,7 +1202,7 @@ Keyword-only arguments:
 Returns
 [GetLinkAssociationsResponseTypeDef](./type_defs.md#getlinkassociationsresponsetypedef).
 
-<a id="get_links"></a>
+<a id="get\_links"></a>
 
 ### get_links
 
@@ -1228,7 +1228,7 @@ Keyword-only arguments:
 
 Returns [GetLinksResponseTypeDef](./type_defs.md#getlinksresponsetypedef).
 
-<a id="get_network_resource_counts"></a>
+<a id="get\_network\_resource\_counts"></a>
 
 ### get_network_resource_counts
 
@@ -1254,7 +1254,7 @@ Keyword-only arguments:
 Returns
 [GetNetworkResourceCountsResponseTypeDef](./type_defs.md#getnetworkresourcecountsresponsetypedef).
 
-<a id="get_network_resource_relationships"></a>
+<a id="get\_network\_resource\_relationships"></a>
 
 ### get_network_resource_relationships
 
@@ -1284,7 +1284,7 @@ Keyword-only arguments:
 Returns
 [GetNetworkResourceRelationshipsResponseTypeDef](./type_defs.md#getnetworkresourcerelationshipsresponsetypedef).
 
-<a id="get_network_resources"></a>
+<a id="get\_network\_resources"></a>
 
 ### get_network_resources
 
@@ -1314,7 +1314,7 @@ Keyword-only arguments:
 Returns
 [GetNetworkResourcesResponseTypeDef](./type_defs.md#getnetworkresourcesresponsetypedef).
 
-<a id="get_network_routes"></a>
+<a id="get\_network\_routes"></a>
 
 ### get_network_routes
 
@@ -1347,7 +1347,7 @@ Keyword-only arguments:
 Returns
 [GetNetworkRoutesResponseTypeDef](./type_defs.md#getnetworkroutesresponsetypedef).
 
-<a id="get_network_telemetry"></a>
+<a id="get\_network\_telemetry"></a>
 
 ### get_network_telemetry
 
@@ -1377,7 +1377,7 @@ Keyword-only arguments:
 Returns
 [GetNetworkTelemetryResponseTypeDef](./type_defs.md#getnetworktelemetryresponsetypedef).
 
-<a id="get_resource_policy"></a>
+<a id="get\_resource\_policy"></a>
 
 ### get_resource_policy
 
@@ -1399,7 +1399,7 @@ Keyword-only arguments:
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
-<a id="get_route_analysis"></a>
+<a id="get\_route\_analysis"></a>
 
 ### get_route_analysis
 
@@ -1422,7 +1422,7 @@ Keyword-only arguments:
 Returns
 [GetRouteAnalysisResponseTypeDef](./type_defs.md#getrouteanalysisresponsetypedef).
 
-<a id="get_site_to_site_vpn_attachment"></a>
+<a id="get\_site\_to\_site\_vpn\_attachment"></a>
 
 ### get_site_to_site_vpn_attachment
 
@@ -1444,7 +1444,7 @@ Keyword-only arguments:
 Returns
 [GetSiteToSiteVpnAttachmentResponseTypeDef](./type_defs.md#getsitetositevpnattachmentresponsetypedef).
 
-<a id="get_sites"></a>
+<a id="get\_sites"></a>
 
 ### get_sites
 
@@ -1467,7 +1467,7 @@ Keyword-only arguments:
 
 Returns [GetSitesResponseTypeDef](./type_defs.md#getsitesresponsetypedef).
 
-<a id="get_transit_gateway_connect_peer_associations"></a>
+<a id="get\_transit\_gateway\_connect\_peer\_associations"></a>
 
 ### get_transit_gateway_connect_peer_associations
 
@@ -1494,7 +1494,7 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayConnectPeerAssociationsResponseTypeDef](./type_defs.md#gettransitgatewayconnectpeerassociationsresponsetypedef).
 
-<a id="get_transit_gateway_registrations"></a>
+<a id="get\_transit\_gateway\_registrations"></a>
 
 ### get_transit_gateway_registrations
 
@@ -1520,7 +1520,7 @@ Keyword-only arguments:
 Returns
 [GetTransitGatewayRegistrationsResponseTypeDef](./type_defs.md#gettransitgatewayregistrationsresponsetypedef).
 
-<a id="get_vpc_attachment"></a>
+<a id="get\_vpc\_attachment"></a>
 
 ### get_vpc_attachment
 
@@ -1542,7 +1542,7 @@ Keyword-only arguments:
 Returns
 [GetVpcAttachmentResponseTypeDef](./type_defs.md#getvpcattachmentresponsetypedef).
 
-<a id="list_attachments"></a>
+<a id="list\_attachments"></a>
 
 ### list_attachments
 
@@ -1568,7 +1568,7 @@ Keyword-only arguments:
 Returns
 [ListAttachmentsResponseTypeDef](./type_defs.md#listattachmentsresponsetypedef).
 
-<a id="list_connect_peers"></a>
+<a id="list\_connect\_peers"></a>
 
 ### list_connect_peers
 
@@ -1593,7 +1593,7 @@ Keyword-only arguments:
 Returns
 [ListConnectPeersResponseTypeDef](./type_defs.md#listconnectpeersresponsetypedef).
 
-<a id="list_core_network_policy_versions"></a>
+<a id="list\_core\_network\_policy\_versions"></a>
 
 ### list_core_network_policy_versions
 
@@ -1617,7 +1617,7 @@ Keyword-only arguments:
 Returns
 [ListCoreNetworkPolicyVersionsResponseTypeDef](./type_defs.md#listcorenetworkpolicyversionsresponsetypedef).
 
-<a id="list_core_networks"></a>
+<a id="list\_core\_networks"></a>
 
 ### list_core_networks
 
@@ -1640,7 +1640,7 @@ Keyword-only arguments:
 Returns
 [ListCoreNetworksResponseTypeDef](./type_defs.md#listcorenetworksresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1662,7 +1662,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_core_network_policy"></a>
+<a id="put\_core\_network\_policy"></a>
 
 ### put_core_network_policy
 
@@ -1688,7 +1688,7 @@ Keyword-only arguments:
 Returns
 [PutCoreNetworkPolicyResponseTypeDef](./type_defs.md#putcorenetworkpolicyresponsetypedef).
 
-<a id="put_resource_policy"></a>
+<a id="put\_resource\_policy"></a>
 
 ### put_resource_policy
 
@@ -1710,7 +1710,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="register_transit_gateway"></a>
+<a id="register\_transit\_gateway"></a>
 
 ### register_transit_gateway
 
@@ -1733,7 +1733,7 @@ Keyword-only arguments:
 Returns
 [RegisterTransitGatewayResponseTypeDef](./type_defs.md#registertransitgatewayresponsetypedef).
 
-<a id="reject_attachment"></a>
+<a id="reject\_attachment"></a>
 
 ### reject_attachment
 
@@ -1754,7 +1754,7 @@ Keyword-only arguments:
 Returns
 [RejectAttachmentResponseTypeDef](./type_defs.md#rejectattachmentresponsetypedef).
 
-<a id="restore_core_network_policy_version"></a>
+<a id="restore\_core\_network\_policy\_version"></a>
 
 ### restore_core_network_policy_version
 
@@ -1778,7 +1778,7 @@ Keyword-only arguments:
 Returns
 [RestoreCoreNetworkPolicyVersionResponseTypeDef](./type_defs.md#restorecorenetworkpolicyversionresponsetypedef).
 
-<a id="start_route_analysis"></a>
+<a id="start\_route\_analysis"></a>
 
 ### start_route_analysis
 
@@ -1808,7 +1808,7 @@ Keyword-only arguments:
 Returns
 [StartRouteAnalysisResponseTypeDef](./type_defs.md#startrouteanalysisresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1829,7 +1829,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1850,7 +1850,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_connection"></a>
+<a id="update\_connection"></a>
 
 ### update_connection
 
@@ -1875,7 +1875,7 @@ Keyword-only arguments:
 Returns
 [UpdateConnectionResponseTypeDef](./type_defs.md#updateconnectionresponsetypedef).
 
-<a id="update_core_network"></a>
+<a id="update\_core\_network"></a>
 
 ### update_core_network
 
@@ -1898,7 +1898,7 @@ Keyword-only arguments:
 Returns
 [UpdateCoreNetworkResponseTypeDef](./type_defs.md#updatecorenetworkresponsetypedef).
 
-<a id="update_device"></a>
+<a id="update\_device"></a>
 
 ### update_device
 
@@ -1928,7 +1928,7 @@ Keyword-only arguments:
 Returns
 [UpdateDeviceResponseTypeDef](./type_defs.md#updatedeviceresponsetypedef).
 
-<a id="update_global_network"></a>
+<a id="update\_global\_network"></a>
 
 ### update_global_network
 
@@ -1951,7 +1951,7 @@ Keyword-only arguments:
 Returns
 [UpdateGlobalNetworkResponseTypeDef](./type_defs.md#updateglobalnetworkresponsetypedef).
 
-<a id="update_link"></a>
+<a id="update\_link"></a>
 
 ### update_link
 
@@ -1976,7 +1976,7 @@ Keyword-only arguments:
 
 Returns [UpdateLinkResponseTypeDef](./type_defs.md#updatelinkresponsetypedef).
 
-<a id="update_network_resource_metadata"></a>
+<a id="update\_network\_resource\_metadata"></a>
 
 ### update_network_resource_metadata
 
@@ -2000,7 +2000,7 @@ Keyword-only arguments:
 Returns
 [UpdateNetworkResourceMetadataResponseTypeDef](./type_defs.md#updatenetworkresourcemetadataresponsetypedef).
 
-<a id="update_site"></a>
+<a id="update\_site"></a>
 
 ### update_site
 
@@ -2023,7 +2023,7 @@ Keyword-only arguments:
 
 Returns [UpdateSiteResponseTypeDef](./type_defs.md#updatesiteresponsetypedef).
 
-<a id="update_vpc_attachment"></a>
+<a id="update\_vpc\_attachment"></a>
 
 ### update_vpc_attachment
 

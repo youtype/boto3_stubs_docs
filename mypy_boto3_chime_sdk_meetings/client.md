@@ -89,7 +89,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_create_attendee"></a>
+<a id="batch\_create\_attendee"></a>
 
 ### batch_create_attendee
 
@@ -114,7 +114,7 @@ Keyword-only arguments:
 Returns
 [BatchCreateAttendeeResponseTypeDef](./type_defs.md#batchcreateattendeeresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -131,7 +131,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_attendee"></a>
+<a id="create\_attendee"></a>
 
 ### create_attendee
 
@@ -154,7 +154,7 @@ Keyword-only arguments:
 Returns
 [CreateAttendeeResponseTypeDef](./type_defs.md#createattendeeresponsetypedef).
 
-<a id="create_meeting"></a>
+<a id="create\_meeting"></a>
 
 ### create_meeting
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 Returns
 [CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
 
-<a id="create_meeting_with_attendees"></a>
+<a id="create\_meeting\_with\_attendees"></a>
 
 ### create_meeting_with_attendees
 
@@ -217,7 +217,7 @@ Keyword-only arguments:
 Returns
 [CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).
 
-<a id="delete_attendee"></a>
+<a id="delete\_attendee"></a>
 
 ### delete_attendee
 
@@ -238,7 +238,7 @@ Keyword-only arguments:
 - `MeetingId`: `str` *(required)*
 - `AttendeeId`: `str` *(required)*
 
-<a id="delete_meeting"></a>
+<a id="delete\_meeting"></a>
 
 ### delete_meeting
 
@@ -257,7 +257,7 @@ Keyword-only arguments:
 
 - `MeetingId`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -278,7 +278,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_attendee"></a>
+<a id="get\_attendee"></a>
 
 ### get_attendee
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 Returns
 [GetAttendeeResponseTypeDef](./type_defs.md#getattendeeresponsetypedef).
 
-<a id="get_meeting"></a>
+<a id="get\_meeting"></a>
 
 ### get_meeting
 
@@ -321,7 +321,7 @@ Keyword-only arguments:
 
 Returns [GetMeetingResponseTypeDef](./type_defs.md#getmeetingresponsetypedef).
 
-<a id="list_attendees"></a>
+<a id="list\_attendees"></a>
 
 ### list_attendees
 
@@ -345,7 +345,7 @@ Keyword-only arguments:
 Returns
 [ListAttendeesResponseTypeDef](./type_defs.md#listattendeesresponsetypedef).
 
-<a id="start_meeting_transcription"></a>
+<a id="start\_meeting\_transcription"></a>
 
 ### start_meeting_transcription
 
@@ -367,7 +367,7 @@ Keyword-only arguments:
   [TranscriptionConfigurationTypeDef](./type_defs.md#transcriptionconfigurationtypedef)
   *(required)*
 
-<a id="stop_meeting_transcription"></a>
+<a id="stop\_meeting\_transcription"></a>
 
 ### stop_meeting_transcription
 

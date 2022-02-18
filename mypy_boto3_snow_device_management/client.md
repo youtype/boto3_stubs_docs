@@ -92,7 +92,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -110,7 +110,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_task"></a>
+<a id="cancel\_task"></a>
 
 ### cancel_task
 
@@ -131,7 +131,7 @@ Keyword-only arguments:
 
 Returns [CancelTaskOutputTypeDef](./type_defs.md#canceltaskoutputtypedef).
 
-<a id="create_task"></a>
+<a id="create\_task"></a>
 
 ### create_task
 
@@ -156,7 +156,7 @@ Keyword-only arguments:
 
 Returns [CreateTaskOutputTypeDef](./type_defs.md#createtaskoutputtypedef).
 
-<a id="describe_device"></a>
+<a id="describe\_device"></a>
 
 ### describe_device
 
@@ -179,7 +179,7 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceOutputTypeDef](./type_defs.md#describedeviceoutputtypedef).
 
-<a id="describe_device_ec2_instances"></a>
+<a id="describe\_device\_ec2\_instances"></a>
 
 ### describe_device_ec2_instances
 
@@ -202,7 +202,7 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceEc2OutputTypeDef](./type_defs.md#describedeviceec2outputtypedef).
 
-<a id="describe_execution"></a>
+<a id="describe\_execution"></a>
 
 ### describe_execution
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 Returns
 [DescribeExecutionOutputTypeDef](./type_defs.md#describeexecutionoutputtypedef).
 
-<a id="describe_task"></a>
+<a id="describe\_task"></a>
 
 ### describe_task
 
@@ -246,7 +246,7 @@ Keyword-only arguments:
 
 Returns [DescribeTaskOutputTypeDef](./type_defs.md#describetaskoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -267,7 +267,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_device_resources"></a>
+<a id="list\_device\_resources"></a>
 
 ### list_device_resources
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 Returns
 [ListDeviceResourcesOutputTypeDef](./type_defs.md#listdeviceresourcesoutputtypedef).
 
-<a id="list_devices"></a>
+<a id="list\_devices"></a>
 
 ### list_devices
 
@@ -317,7 +317,7 @@ Keyword-only arguments:
 
 Returns [ListDevicesOutputTypeDef](./type_defs.md#listdevicesoutputtypedef).
 
-<a id="list_executions"></a>
+<a id="list\_executions"></a>
 
 ### list_executions
 
@@ -342,7 +342,7 @@ Keyword-only arguments:
 Returns
 [ListExecutionsOutputTypeDef](./type_defs.md#listexecutionsoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="list_tasks"></a>
+<a id="list\_tasks"></a>
 
 ### list_tasks
 
@@ -387,7 +387,7 @@ Keyword-only arguments:
 
 Returns [ListTasksOutputTypeDef](./type_defs.md#listtasksoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

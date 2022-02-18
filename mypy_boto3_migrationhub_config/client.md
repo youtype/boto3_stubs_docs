@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_home_region_control"></a>
+<a id="create\_home\_region\_control"></a>
 
 ### create_home_region_control
 
@@ -121,7 +121,7 @@ Keyword-only arguments:
 Returns
 [CreateHomeRegionControlResultTypeDef](./type_defs.md#createhomeregioncontrolresulttypedef).
 
-<a id="describe_home_region_controls"></a>
+<a id="describe\_home\_region\_controls"></a>
 
 ### describe_home_region_controls
 
@@ -147,7 +147,7 @@ Keyword-only arguments:
 Returns
 [DescribeHomeRegionControlsResultTypeDef](./type_defs.md#describehomeregioncontrolsresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -168,7 +168,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_home_region"></a>
+<a id="get\_home\_region"></a>
 
 ### get_home_region
 

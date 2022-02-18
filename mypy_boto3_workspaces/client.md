@@ -144,7 +144,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_connection_alias"></a>
+<a id="associate\_connection\_alias"></a>
 
 ### associate_connection_alias
 
@@ -168,7 +168,7 @@ Keyword-only arguments:
 Returns
 [AssociateConnectionAliasResultTypeDef](./type_defs.md#associateconnectionaliasresulttypedef).
 
-<a id="associate_ip_groups"></a>
+<a id="associate\_ip\_groups"></a>
 
 ### associate_ip_groups
 
@@ -189,7 +189,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="authorize_ip_rules"></a>
+<a id="authorize\_ip\_rules"></a>
 
 ### authorize_ip_rules
 
@@ -212,7 +212,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -229,7 +229,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="copy_workspace_image"></a>
+<a id="copy\_workspace\_image"></a>
 
 ### copy_workspace_image
 
@@ -254,7 +254,7 @@ Keyword-only arguments:
 Returns
 [CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
 
-<a id="create_connect_client_add_in"></a>
+<a id="create\_connect\_client\_add\_in"></a>
 
 ### create_connect_client_add_in
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectClientAddInResultTypeDef](./type_defs.md#createconnectclientaddinresulttypedef).
 
-<a id="create_connection_alias"></a>
+<a id="create\_connection\_alias"></a>
 
 ### create_connection_alias
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectionAliasResultTypeDef](./type_defs.md#createconnectionaliasresulttypedef).
 
-<a id="create_ip_group"></a>
+<a id="create\_ip\_group"></a>
 
 ### create_ip_group
 
@@ -326,7 +326,7 @@ Keyword-only arguments:
 Returns
 [CreateIpGroupResultTypeDef](./type_defs.md#createipgroupresulttypedef).
 
-<a id="create_tags"></a>
+<a id="create\_tags"></a>
 
 ### create_tags
 
@@ -347,7 +347,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_updated_workspace_image"></a>
+<a id="create\_updated\_workspace\_image"></a>
 
 ### create_updated_workspace_image
 
@@ -372,7 +372,7 @@ Keyword-only arguments:
 Returns
 [CreateUpdatedWorkspaceImageResultTypeDef](./type_defs.md#createupdatedworkspaceimageresulttypedef).
 
-<a id="create_workspace_bundle"></a>
+<a id="create\_workspace\_bundle"></a>
 
 ### create_workspace_bundle
 
@@ -402,7 +402,7 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceBundleResultTypeDef](./type_defs.md#createworkspacebundleresulttypedef).
 
-<a id="create_workspaces"></a>
+<a id="create\_workspaces"></a>
 
 ### create_workspaces
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 Returns
 [CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
 
-<a id="delete_connect_client_add_in"></a>
+<a id="delete\_connect\_client\_add\_in"></a>
 
 ### delete_connect_client_add_in
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_connection_alias"></a>
+<a id="delete\_connection\_alias"></a>
 
 ### delete_connection_alias
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_ip_group"></a>
+<a id="delete\_ip\_group"></a>
 
 ### delete_ip_group
 
@@ -489,7 +489,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_tags"></a>
+<a id="delete\_tags"></a>
 
 ### delete_tags
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_workspace_bundle"></a>
+<a id="delete\_workspace\_bundle"></a>
 
 ### delete_workspace_bundle
 
@@ -531,7 +531,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_workspace_image"></a>
+<a id="delete\_workspace\_image"></a>
 
 ### delete_workspace_image
 
@@ -552,7 +552,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="deregister_workspace_directory"></a>
+<a id="deregister\_workspace\_directory"></a>
 
 ### deregister_workspace_directory
 
@@ -573,7 +573,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_account"></a>
+<a id="describe\_account"></a>
 
 ### describe_account
 
@@ -588,7 +588,7 @@ Boto3 documentation:
 Returns
 [DescribeAccountResultTypeDef](./type_defs.md#describeaccountresulttypedef).
 
-<a id="describe_account_modifications"></a>
+<a id="describe\_account\_modifications"></a>
 
 ### describe_account_modifications
 
@@ -611,7 +611,7 @@ Keyword-only arguments:
 Returns
 [DescribeAccountModificationsResultTypeDef](./type_defs.md#describeaccountmodificationsresulttypedef).
 
-<a id="describe_client_properties"></a>
+<a id="describe\_client\_properties"></a>
 
 ### describe_client_properties
 
@@ -634,7 +634,7 @@ Keyword-only arguments:
 Returns
 [DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
 
-<a id="describe_connect_client_add_ins"></a>
+<a id="describe\_connect\_client\_add\_ins"></a>
 
 ### describe_connect_client_add_ins
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 Returns
 [DescribeConnectClientAddInsResultTypeDef](./type_defs.md#describeconnectclientaddinsresulttypedef).
 
-<a id="describe_connection_alias_permissions"></a>
+<a id="describe\_connection\_alias\_permissions"></a>
 
 ### describe_connection_alias_permissions
 
@@ -683,7 +683,7 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionAliasPermissionsResultTypeDef](./type_defs.md#describeconnectionaliaspermissionsresulttypedef).
 
-<a id="describe_connection_aliases"></a>
+<a id="describe\_connection\_aliases"></a>
 
 ### describe_connection_aliases
 
@@ -709,7 +709,7 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionAliasesResultTypeDef](./type_defs.md#describeconnectionaliasesresulttypedef).
 
-<a id="describe_ip_groups"></a>
+<a id="describe\_ip\_groups"></a>
 
 ### describe_ip_groups
 
@@ -732,7 +732,7 @@ Keyword-only arguments:
 Returns
 [DescribeIpGroupsResultTypeDef](./type_defs.md#describeipgroupsresulttypedef).
 
-<a id="describe_tags"></a>
+<a id="describe\_tags"></a>
 
 ### describe_tags
 
@@ -752,7 +752,7 @@ Keyword-only arguments:
 
 Returns [DescribeTagsResultTypeDef](./type_defs.md#describetagsresulttypedef).
 
-<a id="describe_workspace_bundles"></a>
+<a id="describe\_workspace\_bundles"></a>
 
 ### describe_workspace_bundles
 
@@ -776,7 +776,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceBundlesResultTypeDef](./type_defs.md#describeworkspacebundlesresulttypedef).
 
-<a id="describe_workspace_directories"></a>
+<a id="describe\_workspace\_directories"></a>
 
 ### describe_workspace_directories
 
@@ -800,7 +800,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceDirectoriesResultTypeDef](./type_defs.md#describeworkspacedirectoriesresulttypedef).
 
-<a id="describe_workspace_image_permissions"></a>
+<a id="describe\_workspace\_image\_permissions"></a>
 
 ### describe_workspace_image_permissions
 
@@ -825,7 +825,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceImagePermissionsResultTypeDef](./type_defs.md#describeworkspaceimagepermissionsresulttypedef).
 
-<a id="describe_workspace_images"></a>
+<a id="describe\_workspace\_images"></a>
 
 ### describe_workspace_images
 
@@ -851,7 +851,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceImagesResultTypeDef](./type_defs.md#describeworkspaceimagesresulttypedef).
 
-<a id="describe_workspace_snapshots"></a>
+<a id="describe\_workspace\_snapshots"></a>
 
 ### describe_workspace_snapshots
 
@@ -873,7 +873,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceSnapshotsResultTypeDef](./type_defs.md#describeworkspacesnapshotsresulttypedef).
 
-<a id="describe_workspaces"></a>
+<a id="describe\_workspaces"></a>
 
 ### describe_workspaces
 
@@ -899,7 +899,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspacesResultTypeDef](./type_defs.md#describeworkspacesresulttypedef).
 
-<a id="describe_workspaces_connection_status"></a>
+<a id="describe\_workspaces\_connection\_status"></a>
 
 ### describe_workspaces_connection_status
 
@@ -922,7 +922,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspacesConnectionStatusResultTypeDef](./type_defs.md#describeworkspacesconnectionstatusresulttypedef).
 
-<a id="disassociate_connection_alias"></a>
+<a id="disassociate\_connection\_alias"></a>
 
 ### disassociate_connection_alias
 
@@ -943,7 +943,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_ip_groups"></a>
+<a id="disassociate\_ip\_groups"></a>
 
 ### disassociate_ip_groups
 
@@ -966,7 +966,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -987,7 +987,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="import_workspace_image"></a>
+<a id="import\_workspace\_image"></a>
 
 ### import_workspace_image
 
@@ -1018,7 +1018,7 @@ Keyword-only arguments:
 Returns
 [ImportWorkspaceImageResultTypeDef](./type_defs.md#importworkspaceimageresulttypedef).
 
-<a id="list_available_management_cidr_ranges"></a>
+<a id="list\_available\_management\_cidr\_ranges"></a>
 
 ### list_available_management_cidr_ranges
 
@@ -1044,7 +1044,7 @@ Keyword-only arguments:
 Returns
 [ListAvailableManagementCidrRangesResultTypeDef](./type_defs.md#listavailablemanagementcidrrangesresulttypedef).
 
-<a id="migrate_workspace"></a>
+<a id="migrate\_workspace"></a>
 
 ### migrate_workspace
 
@@ -1067,7 +1067,7 @@ Keyword-only arguments:
 Returns
 [MigrateWorkspaceResultTypeDef](./type_defs.md#migrateworkspaceresulttypedef).
 
-<a id="modify_account"></a>
+<a id="modify\_account"></a>
 
 ### modify_account
 
@@ -1090,7 +1090,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="modify_client_properties"></a>
+<a id="modify\_client\_properties"></a>
 
 ### modify_client_properties
 
@@ -1114,7 +1114,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="modify_selfservice_permissions"></a>
+<a id="modify\_selfservice\_permissions"></a>
 
 ### modify_selfservice_permissions
 
@@ -1138,7 +1138,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="modify_workspace_access_properties"></a>
+<a id="modify\_workspace\_access\_properties"></a>
 
 ### modify_workspace_access_properties
 
@@ -1163,7 +1163,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="modify_workspace_creation_properties"></a>
+<a id="modify\_workspace\_creation\_properties"></a>
 
 ### modify_workspace_creation_properties
 
@@ -1187,7 +1187,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="modify_workspace_properties"></a>
+<a id="modify\_workspace\_properties"></a>
 
 ### modify_workspace_properties
 
@@ -1211,7 +1211,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="modify_workspace_state"></a>
+<a id="modify\_workspace\_state"></a>
 
 ### modify_workspace_state
 
@@ -1235,7 +1235,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="reboot_workspaces"></a>
+<a id="reboot\_workspaces"></a>
 
 ### reboot_workspaces
 
@@ -1258,7 +1258,7 @@ Keyword-only arguments:
 Returns
 [RebootWorkspacesResultTypeDef](./type_defs.md#rebootworkspacesresulttypedef).
 
-<a id="rebuild_workspaces"></a>
+<a id="rebuild\_workspaces"></a>
 
 ### rebuild_workspaces
 
@@ -1281,7 +1281,7 @@ Keyword-only arguments:
 Returns
 [RebuildWorkspacesResultTypeDef](./type_defs.md#rebuildworkspacesresulttypedef).
 
-<a id="register_workspace_directory"></a>
+<a id="register\_workspace\_directory"></a>
 
 ### register_workspace_directory
 
@@ -1307,7 +1307,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="restore_workspace"></a>
+<a id="restore\_workspace"></a>
 
 ### restore_workspace
 
@@ -1327,7 +1327,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="revoke_ip_rules"></a>
+<a id="revoke\_ip\_rules"></a>
 
 ### revoke_ip_rules
 
@@ -1348,7 +1348,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_workspaces"></a>
+<a id="start\_workspaces"></a>
 
 ### start_workspaces
 
@@ -1371,7 +1371,7 @@ Keyword-only arguments:
 Returns
 [StartWorkspacesResultTypeDef](./type_defs.md#startworkspacesresulttypedef).
 
-<a id="stop_workspaces"></a>
+<a id="stop\_workspaces"></a>
 
 ### stop_workspaces
 
@@ -1394,7 +1394,7 @@ Keyword-only arguments:
 Returns
 [StopWorkspacesResultTypeDef](./type_defs.md#stopworkspacesresulttypedef).
 
-<a id="terminate_workspaces"></a>
+<a id="terminate\_workspaces"></a>
 
 ### terminate_workspaces
 
@@ -1417,7 +1417,7 @@ Keyword-only arguments:
 Returns
 [TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
 
-<a id="update_connect_client_add_in"></a>
+<a id="update\_connect\_client\_add\_in"></a>
 
 ### update_connect_client_add_in
 
@@ -1441,7 +1441,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_connection_alias_permission"></a>
+<a id="update\_connection\_alias\_permission"></a>
 
 ### update_connection_alias_permission
 
@@ -1466,7 +1466,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_rules_of_ip_group"></a>
+<a id="update\_rules\_of\_ip\_group"></a>
 
 ### update_rules_of_ip_group
 
@@ -1491,7 +1491,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_workspace_bundle"></a>
+<a id="update\_workspace\_bundle"></a>
 
 ### update_workspace_bundle
 
@@ -1513,7 +1513,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_workspace_image_permission"></a>
+<a id="update\_workspace\_image\_permission"></a>
 
 ### update_workspace_image_permission
 

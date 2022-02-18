@@ -93,7 +93,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_device_with_placement"></a>
+<a id="associate\_device\_with\_placement"></a>
 
 ### associate_device_with_placement
 
@@ -117,7 +117,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -134,7 +134,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_placement"></a>
+<a id="create\_placement"></a>
 
 ### create_placement
 
@@ -157,7 +157,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_project"></a>
+<a id="create\_project"></a>
 
 ### create_project
 
@@ -182,7 +182,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_placement"></a>
+<a id="delete\_placement"></a>
 
 ### delete_placement
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_project"></a>
+<a id="delete\_project"></a>
 
 ### delete_project
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_placement"></a>
+<a id="describe\_placement"></a>
 
 ### describe_placement
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 Returns
 [DescribePlacementResponseTypeDef](./type_defs.md#describeplacementresponsetypedef).
 
-<a id="describe_project"></a>
+<a id="describe\_project"></a>
 
 ### describe_project
 
@@ -270,7 +270,7 @@ Keyword-only arguments:
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
-<a id="disassociate_device_from_placement"></a>
+<a id="disassociate\_device\_from\_placement"></a>
 
 ### disassociate_device_from_placement
 
@@ -293,7 +293,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -314,7 +314,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_devices_in_placement"></a>
+<a id="get\_devices\_in\_placement"></a>
 
 ### get_devices_in_placement
 
@@ -337,7 +337,7 @@ Keyword-only arguments:
 Returns
 [GetDevicesInPlacementResponseTypeDef](./type_defs.md#getdevicesinplacementresponsetypedef).
 
-<a id="list_placements"></a>
+<a id="list\_placements"></a>
 
 ### list_placements
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 Returns
 [ListPlacementsResponseTypeDef](./type_defs.md#listplacementsresponsetypedef).
 
-<a id="list_projects"></a>
+<a id="list\_projects"></a>
 
 ### list_projects
 
@@ -384,7 +384,7 @@ Keyword-only arguments:
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -428,7 +428,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_placement"></a>
+<a id="update\_placement"></a>
 
 ### update_placement
 
@@ -473,7 +473,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_project"></a>
+<a id="update\_project"></a>
 
 ### update_project
 

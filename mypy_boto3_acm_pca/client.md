@@ -115,7 +115,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -132,7 +132,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_certificate_authority"></a>
+<a id="create\_certificate\_authority"></a>
 
 ### create_certificate_authority
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [CreateCertificateAuthorityResponseTypeDef](./type_defs.md#createcertificateauthorityresponsetypedef).
 
-<a id="create_certificate_authority_audit_report"></a>
+<a id="create\_certificate\_authority\_audit\_report"></a>
 
 ### create_certificate_authority_audit_report
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [CreateCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#createcertificateauthorityauditreportresponsetypedef).
 
-<a id="create_permission"></a>
+<a id="create\_permission"></a>
 
 ### create_permission
 
@@ -214,7 +214,7 @@ Keyword-only arguments:
   *(required)*
 - `SourceAccount`: `str`
 
-<a id="delete_certificate_authority"></a>
+<a id="delete\_certificate\_authority"></a>
 
 ### delete_certificate_authority
 
@@ -234,7 +234,7 @@ Keyword-only arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 - `PermanentDeletionTimeInDays`: `int`
 
-<a id="delete_permission"></a>
+<a id="delete\_permission"></a>
 
 ### delete_permission
 
@@ -255,7 +255,7 @@ Keyword-only arguments:
 - `Principal`: `str` *(required)*
 - `SourceAccount`: `str`
 
-<a id="delete_policy"></a>
+<a id="delete\_policy"></a>
 
 ### delete_policy
 
@@ -273,7 +273,7 @@ Keyword-only arguments:
 
 - `ResourceArn`: `str` *(required)*
 
-<a id="describe_certificate_authority"></a>
+<a id="describe\_certificate\_authority"></a>
 
 ### describe_certificate_authority
 
@@ -296,7 +296,7 @@ Keyword-only arguments:
 Returns
 [DescribeCertificateAuthorityResponseTypeDef](./type_defs.md#describecertificateauthorityresponsetypedef).
 
-<a id="describe_certificate_authority_audit_report"></a>
+<a id="describe\_certificate\_authority\_audit\_report"></a>
 
 ### describe_certificate_authority_audit_report
 
@@ -322,7 +322,7 @@ Keyword-only arguments:
 Returns
 [DescribeCertificateAuthorityAuditReportResponseTypeDef](./type_defs.md#describecertificateauthorityauditreportresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -342,7 +342,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_certificate"></a>
+<a id="get\_certificate"></a>
 
 ### get_certificate
 
@@ -365,7 +365,7 @@ Keyword-only arguments:
 Returns
 [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
 
-<a id="get_certificate_authority_certificate"></a>
+<a id="get\_certificate\_authority\_certificate"></a>
 
 ### get_certificate_authority_certificate
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 Returns
 [GetCertificateAuthorityCertificateResponseTypeDef](./type_defs.md#getcertificateauthoritycertificateresponsetypedef).
 
-<a id="get_certificate_authority_csr"></a>
+<a id="get\_certificate\_authority\_csr"></a>
 
 ### get_certificate_authority_csr
 
@@ -411,7 +411,7 @@ Keyword-only arguments:
 Returns
 [GetCertificateAuthorityCsrResponseTypeDef](./type_defs.md#getcertificateauthoritycsrresponsetypedef).
 
-<a id="get_policy"></a>
+<a id="get\_policy"></a>
 
 ### get_policy
 
@@ -431,7 +431,7 @@ Keyword-only arguments:
 
 Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
-<a id="import_certificate_authority_certificate"></a>
+<a id="import\_certificate\_authority\_certificate"></a>
 
 ### import_certificate_authority_certificate
 
@@ -453,7 +453,7 @@ Keyword-only arguments:
   *(required)*
 - `CertificateChain`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-<a id="issue_certificate"></a>
+<a id="issue\_certificate"></a>
 
 ### issue_certificate
 
@@ -484,7 +484,7 @@ Keyword-only arguments:
 Returns
 [IssueCertificateResponseTypeDef](./type_defs.md#issuecertificateresponsetypedef).
 
-<a id="list_certificate_authorities"></a>
+<a id="list\_certificate\_authorities"></a>
 
 ### list_certificate_authorities
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 Returns
 [ListCertificateAuthoritiesResponseTypeDef](./type_defs.md#listcertificateauthoritiesresponsetypedef).
 
-<a id="list_permissions"></a>
+<a id="list\_permissions"></a>
 
 ### list_permissions
 
@@ -534,7 +534,7 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
-<a id="list_tags"></a>
+<a id="list\_tags"></a>
 
 ### list_tags
 
@@ -557,7 +557,7 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
-<a id="put_policy"></a>
+<a id="put\_policy"></a>
 
 ### put_policy
 
@@ -576,7 +576,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Policy`: `str` *(required)*
 
-<a id="restore_certificate_authority"></a>
+<a id="restore\_certificate\_authority"></a>
 
 ### restore_certificate_authority
 
@@ -595,7 +595,7 @@ Keyword-only arguments:
 
 - `CertificateAuthorityArn`: `str` *(required)*
 
-<a id="revoke_certificate"></a>
+<a id="revoke\_certificate"></a>
 
 ### revoke_certificate
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 - `RevocationReason`:
   [RevocationReasonType](./literals.md#revocationreasontype) *(required)*
 
-<a id="tag_certificate_authority"></a>
+<a id="tag\_certificate\_authority"></a>
 
 ### tag_certificate_authority
 
@@ -636,7 +636,7 @@ Keyword-only arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="untag_certificate_authority"></a>
+<a id="untag\_certificate\_authority"></a>
 
 ### untag_certificate_authority
 
@@ -656,7 +656,7 @@ Keyword-only arguments:
 - `CertificateAuthorityArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="update_certificate_authority"></a>
+<a id="update\_certificate\_authority"></a>
 
 ### update_certificate_authority
 

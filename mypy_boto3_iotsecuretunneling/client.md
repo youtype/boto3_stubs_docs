@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="close_tunnel"></a>
+<a id="close\_tunnel"></a>
 
 ### close_tunnel
 
@@ -118,7 +118,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_tunnel"></a>
+<a id="describe\_tunnel"></a>
 
 ### describe_tunnel
 
@@ -140,7 +140,7 @@ Keyword-only arguments:
 Returns
 [DescribeTunnelResponseTypeDef](./type_defs.md#describetunnelresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -161,7 +161,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -183,7 +183,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_tunnels"></a>
+<a id="list\_tunnels"></a>
 
 ### list_tunnels
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 Returns
 [ListTunnelsResponseTypeDef](./type_defs.md#listtunnelsresponsetypedef).
 
-<a id="open_tunnel"></a>
+<a id="open\_tunnel"></a>
 
 ### open_tunnel
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 
 Returns [OpenTunnelResponseTypeDef](./type_defs.md#opentunnelresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -252,7 +252,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

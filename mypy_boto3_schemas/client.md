@@ -114,7 +114,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -131,7 +131,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_discoverer"></a>
+<a id="create\_discoverer"></a>
 
 ### create_discoverer
 
@@ -155,7 +155,7 @@ Keyword-only arguments:
 Returns
 [CreateDiscovererResponseTypeDef](./type_defs.md#creatediscovererresponsetypedef).
 
-<a id="create_registry"></a>
+<a id="create\_registry"></a>
 
 ### create_registry
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 Returns
 [CreateRegistryResponseTypeDef](./type_defs.md#createregistryresponsetypedef).
 
-<a id="create_schema"></a>
+<a id="create\_schema"></a>
 
 ### create_schema
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
-<a id="delete_discoverer"></a>
+<a id="delete\_discoverer"></a>
 
 ### delete_discoverer
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 
 - `DiscovererId`: `str` *(required)*
 
-<a id="delete_registry"></a>
+<a id="delete\_registry"></a>
 
 ### delete_registry
 
@@ -240,7 +240,7 @@ Keyword-only arguments:
 
 - `RegistryName`: `str` *(required)*
 
-<a id="delete_resource_policy"></a>
+<a id="delete\_resource\_policy"></a>
 
 ### delete_resource_policy
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 
 - `RegistryName`: `str`
 
-<a id="delete_schema"></a>
+<a id="delete\_schema"></a>
 
 ### delete_schema
 
@@ -277,7 +277,7 @@ Keyword-only arguments:
 - `RegistryName`: `str` *(required)*
 - `SchemaName`: `str` *(required)*
 
-<a id="delete_schema_version"></a>
+<a id="delete\_schema\_version"></a>
 
 ### delete_schema_version
 
@@ -298,7 +298,7 @@ Keyword-only arguments:
 - `SchemaName`: `str` *(required)*
 - `SchemaVersion`: `str` *(required)*
 
-<a id="describe_code_binding"></a>
+<a id="describe\_code\_binding"></a>
 
 ### describe_code_binding
 
@@ -322,7 +322,7 @@ Keyword-only arguments:
 Returns
 [DescribeCodeBindingResponseTypeDef](./type_defs.md#describecodebindingresponsetypedef).
 
-<a id="describe_discoverer"></a>
+<a id="describe\_discoverer"></a>
 
 ### describe_discoverer
 
@@ -343,7 +343,7 @@ Keyword-only arguments:
 Returns
 [DescribeDiscovererResponseTypeDef](./type_defs.md#describediscovererresponsetypedef).
 
-<a id="describe_registry"></a>
+<a id="describe\_registry"></a>
 
 ### describe_registry
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 Returns
 [DescribeRegistryResponseTypeDef](./type_defs.md#describeregistryresponsetypedef).
 
-<a id="describe_schema"></a>
+<a id="describe\_schema"></a>
 
 ### describe_schema
 
@@ -387,7 +387,7 @@ Keyword-only arguments:
 Returns
 [DescribeSchemaResponseTypeDef](./type_defs.md#describeschemaresponsetypedef).
 
-<a id="export_schema"></a>
+<a id="export\_schema"></a>
 
 ### export_schema
 
@@ -412,7 +412,7 @@ Keyword-only arguments:
 Returns
 [ExportSchemaResponseTypeDef](./type_defs.md#exportschemaresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -432,7 +432,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_code_binding_source"></a>
+<a id="get\_code\_binding\_source"></a>
 
 ### get_code_binding_source
 
@@ -456,7 +456,7 @@ Keyword-only arguments:
 Returns
 [GetCodeBindingSourceResponseTypeDef](./type_defs.md#getcodebindingsourceresponsetypedef).
 
-<a id="get_discovered_schema"></a>
+<a id="get\_discovered\_schema"></a>
 
 ### get_discovered_schema
 
@@ -478,7 +478,7 @@ Keyword-only arguments:
 Returns
 [GetDiscoveredSchemaResponseTypeDef](./type_defs.md#getdiscoveredschemaresponsetypedef).
 
-<a id="get_resource_policy"></a>
+<a id="get\_resource\_policy"></a>
 
 ### get_resource_policy
 
@@ -499,7 +499,7 @@ Keyword-only arguments:
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
-<a id="list_discoverers"></a>
+<a id="list\_discoverers"></a>
 
 ### list_discoverers
 
@@ -523,7 +523,7 @@ Keyword-only arguments:
 Returns
 [ListDiscoverersResponseTypeDef](./type_defs.md#listdiscoverersresponsetypedef).
 
-<a id="list_registries"></a>
+<a id="list\_registries"></a>
 
 ### list_registries
 
@@ -547,7 +547,7 @@ Keyword-only arguments:
 Returns
 [ListRegistriesResponseTypeDef](./type_defs.md#listregistriesresponsetypedef).
 
-<a id="list_schema_versions"></a>
+<a id="list\_schema\_versions"></a>
 
 ### list_schema_versions
 
@@ -571,7 +571,7 @@ Keyword-only arguments:
 Returns
 [ListSchemaVersionsResponseTypeDef](./type_defs.md#listschemaversionsresponsetypedef).
 
-<a id="list_schemas"></a>
+<a id="list\_schemas"></a>
 
 ### list_schemas
 
@@ -595,7 +595,7 @@ Keyword-only arguments:
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_code_binding"></a>
+<a id="put\_code\_binding"></a>
 
 ### put_code_binding
 
@@ -641,7 +641,7 @@ Keyword-only arguments:
 Returns
 [PutCodeBindingResponseTypeDef](./type_defs.md#putcodebindingresponsetypedef).
 
-<a id="put_resource_policy"></a>
+<a id="put\_resource\_policy"></a>
 
 ### put_resource_policy
 
@@ -664,7 +664,7 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
-<a id="search_schemas"></a>
+<a id="search\_schemas"></a>
 
 ### search_schemas
 
@@ -689,7 +689,7 @@ Keyword-only arguments:
 Returns
 [SearchSchemasResponseTypeDef](./type_defs.md#searchschemasresponsetypedef).
 
-<a id="start_discoverer"></a>
+<a id="start\_discoverer"></a>
 
 ### start_discoverer
 
@@ -711,7 +711,7 @@ Keyword-only arguments:
 Returns
 [StartDiscovererResponseTypeDef](./type_defs.md#startdiscovererresponsetypedef).
 
-<a id="stop_discoverer"></a>
+<a id="stop\_discoverer"></a>
 
 ### stop_discoverer
 
@@ -733,7 +733,7 @@ Keyword-only arguments:
 Returns
 [StopDiscovererResponseTypeDef](./type_defs.md#stopdiscovererresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -752,7 +752,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -771,7 +771,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_discoverer"></a>
+<a id="update\_discoverer"></a>
 
 ### update_discoverer
 
@@ -795,7 +795,7 @@ Keyword-only arguments:
 Returns
 [UpdateDiscovererResponseTypeDef](./type_defs.md#updatediscovererresponsetypedef).
 
-<a id="update_registry"></a>
+<a id="update\_registry"></a>
 
 ### update_registry
 
@@ -817,7 +817,7 @@ Keyword-only arguments:
 Returns
 [UpdateRegistryResponseTypeDef](./type_defs.md#updateregistryresponsetypedef).
 
-<a id="update_schema"></a>
+<a id="update\_schema"></a>
 
 ### update_schema
 

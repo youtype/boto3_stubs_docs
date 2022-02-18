@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [ServiceQuotasClient](#servicequotasclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `ServiceQuotas` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[service-quotas]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[service-quotas]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-service-quotas
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-service-quotas
 ```bash
 python -m pip uninstall -y mypy-boto3-service-quotas
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="servicequotasclient"></a>
 

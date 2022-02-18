@@ -147,7 +147,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -164,7 +164,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_backup_plan"></a>
+<a id="create\_backup\_plan"></a>
 
 ### create_backup_plan
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 Returns
 [CreateBackupPlanOutputTypeDef](./type_defs.md#createbackupplanoutputtypedef).
 
-<a id="create_backup_selection"></a>
+<a id="create\_backup\_selection"></a>
 
 ### create_backup_selection
 
@@ -212,7 +212,7 @@ Keyword-only arguments:
 Returns
 [CreateBackupSelectionOutputTypeDef](./type_defs.md#createbackupselectionoutputtypedef).
 
-<a id="create_backup_vault"></a>
+<a id="create\_backup\_vault"></a>
 
 ### create_backup_vault
 
@@ -236,7 +236,7 @@ Keyword-only arguments:
 Returns
 [CreateBackupVaultOutputTypeDef](./type_defs.md#createbackupvaultoutputtypedef).
 
-<a id="create_framework"></a>
+<a id="create\_framework"></a>
 
 ### create_framework
 
@@ -263,7 +263,7 @@ Keyword-only arguments:
 Returns
 [CreateFrameworkOutputTypeDef](./type_defs.md#createframeworkoutputtypedef).
 
-<a id="create_report_plan"></a>
+<a id="create\_report\_plan"></a>
 
 ### create_report_plan
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 Returns
 [CreateReportPlanOutputTypeDef](./type_defs.md#createreportplanoutputtypedef).
 
-<a id="delete_backup_plan"></a>
+<a id="delete\_backup\_plan"></a>
 
 ### delete_backup_plan
 
@@ -313,7 +313,7 @@ Keyword-only arguments:
 Returns
 [DeleteBackupPlanOutputTypeDef](./type_defs.md#deletebackupplanoutputtypedef).
 
-<a id="delete_backup_selection"></a>
+<a id="delete\_backup\_selection"></a>
 
 ### delete_backup_selection
 
@@ -333,7 +333,7 @@ Keyword-only arguments:
 - `BackupPlanId`: `str` *(required)*
 - `SelectionId`: `str` *(required)*
 
-<a id="delete_backup_vault"></a>
+<a id="delete\_backup\_vault"></a>
 
 ### delete_backup_vault
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
-<a id="delete_backup_vault_access_policy"></a>
+<a id="delete\_backup\_vault\_access\_policy"></a>
 
 ### delete_backup_vault_access_policy
 
@@ -370,7 +370,7 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
-<a id="delete_backup_vault_lock_configuration"></a>
+<a id="delete\_backup\_vault\_lock\_configuration"></a>
 
 ### delete_backup_vault_lock_configuration
 
@@ -389,7 +389,7 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
-<a id="delete_backup_vault_notifications"></a>
+<a id="delete\_backup\_vault\_notifications"></a>
 
 ### delete_backup_vault_notifications
 
@@ -408,7 +408,7 @@ Keyword-only arguments:
 
 - `BackupVaultName`: `str` *(required)*
 
-<a id="delete_framework"></a>
+<a id="delete\_framework"></a>
 
 ### delete_framework
 
@@ -426,7 +426,7 @@ Keyword-only arguments:
 
 - `FrameworkName`: `str` *(required)*
 
-<a id="delete_recovery_point"></a>
+<a id="delete\_recovery\_point"></a>
 
 ### delete_recovery_point
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
 
-<a id="delete_report_plan"></a>
+<a id="delete\_report\_plan"></a>
 
 ### delete_report_plan
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 
 - `ReportPlanName`: `str` *(required)*
 
-<a id="describe_backup_job"></a>
+<a id="describe\_backup\_job"></a>
 
 ### describe_backup_job
 
@@ -484,7 +484,7 @@ Keyword-only arguments:
 Returns
 [DescribeBackupJobOutputTypeDef](./type_defs.md#describebackupjoboutputtypedef).
 
-<a id="describe_backup_vault"></a>
+<a id="describe\_backup\_vault"></a>
 
 ### describe_backup_vault
 
@@ -505,7 +505,7 @@ Keyword-only arguments:
 Returns
 [DescribeBackupVaultOutputTypeDef](./type_defs.md#describebackupvaultoutputtypedef).
 
-<a id="describe_copy_job"></a>
+<a id="describe\_copy\_job"></a>
 
 ### describe_copy_job
 
@@ -526,7 +526,7 @@ Keyword-only arguments:
 Returns
 [DescribeCopyJobOutputTypeDef](./type_defs.md#describecopyjoboutputtypedef).
 
-<a id="describe_framework"></a>
+<a id="describe\_framework"></a>
 
 ### describe_framework
 
@@ -547,7 +547,7 @@ Keyword-only arguments:
 Returns
 [DescribeFrameworkOutputTypeDef](./type_defs.md#describeframeworkoutputtypedef).
 
-<a id="describe_global_settings"></a>
+<a id="describe\_global\_settings"></a>
 
 ### describe_global_settings
 
@@ -562,7 +562,7 @@ Boto3 documentation:
 Returns
 [DescribeGlobalSettingsOutputTypeDef](./type_defs.md#describeglobalsettingsoutputtypedef).
 
-<a id="describe_protected_resource"></a>
+<a id="describe\_protected\_resource"></a>
 
 ### describe_protected_resource
 
@@ -586,7 +586,7 @@ Keyword-only arguments:
 Returns
 [DescribeProtectedResourceOutputTypeDef](./type_defs.md#describeprotectedresourceoutputtypedef).
 
-<a id="describe_recovery_point"></a>
+<a id="describe\_recovery\_point"></a>
 
 ### describe_recovery_point
 
@@ -609,7 +609,7 @@ Keyword-only arguments:
 Returns
 [DescribeRecoveryPointOutputTypeDef](./type_defs.md#describerecoverypointoutputtypedef).
 
-<a id="describe_region_settings"></a>
+<a id="describe\_region\_settings"></a>
 
 ### describe_region_settings
 
@@ -623,7 +623,7 @@ Boto3 documentation:
 Returns
 [DescribeRegionSettingsOutputTypeDef](./type_defs.md#describeregionsettingsoutputtypedef).
 
-<a id="describe_report_job"></a>
+<a id="describe\_report\_job"></a>
 
 ### describe_report_job
 
@@ -645,7 +645,7 @@ Keyword-only arguments:
 Returns
 [DescribeReportJobOutputTypeDef](./type_defs.md#describereportjoboutputtypedef).
 
-<a id="describe_report_plan"></a>
+<a id="describe\_report\_plan"></a>
 
 ### describe_report_plan
 
@@ -667,7 +667,7 @@ Keyword-only arguments:
 Returns
 [DescribeReportPlanOutputTypeDef](./type_defs.md#describereportplanoutputtypedef).
 
-<a id="describe_restore_job"></a>
+<a id="describe\_restore\_job"></a>
 
 ### describe_restore_job
 
@@ -688,7 +688,7 @@ Keyword-only arguments:
 Returns
 [DescribeRestoreJobOutputTypeDef](./type_defs.md#describerestorejoboutputtypedef).
 
-<a id="disassociate_recovery_point"></a>
+<a id="disassociate\_recovery\_point"></a>
 
 ### disassociate_recovery_point
 
@@ -709,7 +709,7 @@ Keyword-only arguments:
 - `BackupVaultName`: `str` *(required)*
 - `RecoveryPointArn`: `str` *(required)*
 
-<a id="export_backup_plan_template"></a>
+<a id="export\_backup\_plan\_template"></a>
 
 ### export_backup_plan_template
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [ExportBackupPlanTemplateOutputTypeDef](./type_defs.md#exportbackupplantemplateoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -751,7 +751,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_backup_plan"></a>
+<a id="get\_backup\_plan"></a>
 
 ### get_backup_plan
 
@@ -773,7 +773,7 @@ Keyword-only arguments:
 Returns
 [GetBackupPlanOutputTypeDef](./type_defs.md#getbackupplanoutputtypedef).
 
-<a id="get_backup_plan_from_json"></a>
+<a id="get\_backup\_plan\_from\_json"></a>
 
 ### get_backup_plan_from_json
 
@@ -794,7 +794,7 @@ Keyword-only arguments:
 Returns
 [GetBackupPlanFromJSONOutputTypeDef](./type_defs.md#getbackupplanfromjsonoutputtypedef).
 
-<a id="get_backup_plan_from_template"></a>
+<a id="get\_backup\_plan\_from\_template"></a>
 
 ### get_backup_plan_from_template
 
@@ -816,7 +816,7 @@ Keyword-only arguments:
 Returns
 [GetBackupPlanFromTemplateOutputTypeDef](./type_defs.md#getbackupplanfromtemplateoutputtypedef).
 
-<a id="get_backup_selection"></a>
+<a id="get\_backup\_selection"></a>
 
 ### get_backup_selection
 
@@ -838,7 +838,7 @@ Keyword-only arguments:
 Returns
 [GetBackupSelectionOutputTypeDef](./type_defs.md#getbackupselectionoutputtypedef).
 
-<a id="get_backup_vault_access_policy"></a>
+<a id="get\_backup\_vault\_access\_policy"></a>
 
 ### get_backup_vault_access_policy
 
@@ -861,7 +861,7 @@ Keyword-only arguments:
 Returns
 [GetBackupVaultAccessPolicyOutputTypeDef](./type_defs.md#getbackupvaultaccesspolicyoutputtypedef).
 
-<a id="get_backup_vault_notifications"></a>
+<a id="get\_backup\_vault\_notifications"></a>
 
 ### get_backup_vault_notifications
 
@@ -883,7 +883,7 @@ Keyword-only arguments:
 Returns
 [GetBackupVaultNotificationsOutputTypeDef](./type_defs.md#getbackupvaultnotificationsoutputtypedef).
 
-<a id="get_recovery_point_restore_metadata"></a>
+<a id="get\_recovery\_point\_restore\_metadata"></a>
 
 ### get_recovery_point_restore_metadata
 
@@ -906,7 +906,7 @@ Keyword-only arguments:
 Returns
 [GetRecoveryPointRestoreMetadataOutputTypeDef](./type_defs.md#getrecoverypointrestoremetadataoutputtypedef).
 
-<a id="get_supported_resource_types"></a>
+<a id="get\_supported\_resource\_types"></a>
 
 ### get_supported_resource_types
 
@@ -921,7 +921,7 @@ Boto3 documentation:
 Returns
 [GetSupportedResourceTypesOutputTypeDef](./type_defs.md#getsupportedresourcetypesoutputtypedef).
 
-<a id="list_backup_jobs"></a>
+<a id="list\_backup\_jobs"></a>
 
 ### list_backup_jobs
 
@@ -951,7 +951,7 @@ Keyword-only arguments:
 Returns
 [ListBackupJobsOutputTypeDef](./type_defs.md#listbackupjobsoutputtypedef).
 
-<a id="list_backup_plan_templates"></a>
+<a id="list\_backup\_plan\_templates"></a>
 
 ### list_backup_plan_templates
 
@@ -975,7 +975,7 @@ Keyword-only arguments:
 Returns
 [ListBackupPlanTemplatesOutputTypeDef](./type_defs.md#listbackupplantemplatesoutputtypedef).
 
-<a id="list_backup_plan_versions"></a>
+<a id="list\_backup\_plan\_versions"></a>
 
 ### list_backup_plan_versions
 
@@ -1000,7 +1000,7 @@ Keyword-only arguments:
 Returns
 [ListBackupPlanVersionsOutputTypeDef](./type_defs.md#listbackupplanversionsoutputtypedef).
 
-<a id="list_backup_plans"></a>
+<a id="list\_backup\_plans"></a>
 
 ### list_backup_plans
 
@@ -1023,7 +1023,7 @@ Keyword-only arguments:
 Returns
 [ListBackupPlansOutputTypeDef](./type_defs.md#listbackupplansoutputtypedef).
 
-<a id="list_backup_selections"></a>
+<a id="list\_backup\_selections"></a>
 
 ### list_backup_selections
 
@@ -1047,7 +1047,7 @@ Keyword-only arguments:
 Returns
 [ListBackupSelectionsOutputTypeDef](./type_defs.md#listbackupselectionsoutputtypedef).
 
-<a id="list_backup_vaults"></a>
+<a id="list\_backup\_vaults"></a>
 
 ### list_backup_vaults
 
@@ -1070,7 +1070,7 @@ Keyword-only arguments:
 Returns
 [ListBackupVaultsOutputTypeDef](./type_defs.md#listbackupvaultsoutputtypedef).
 
-<a id="list_copy_jobs"></a>
+<a id="list\_copy\_jobs"></a>
 
 ### list_copy_jobs
 
@@ -1098,7 +1098,7 @@ Keyword-only arguments:
 
 Returns [ListCopyJobsOutputTypeDef](./type_defs.md#listcopyjobsoutputtypedef).
 
-<a id="list_frameworks"></a>
+<a id="list\_frameworks"></a>
 
 ### list_frameworks
 
@@ -1121,7 +1121,7 @@ Keyword-only arguments:
 Returns
 [ListFrameworksOutputTypeDef](./type_defs.md#listframeworksoutputtypedef).
 
-<a id="list_protected_resources"></a>
+<a id="list\_protected\_resources"></a>
 
 ### list_protected_resources
 
@@ -1145,7 +1145,7 @@ Keyword-only arguments:
 Returns
 [ListProtectedResourcesOutputTypeDef](./type_defs.md#listprotectedresourcesoutputtypedef).
 
-<a id="list_recovery_points_by_backup_vault"></a>
+<a id="list\_recovery\_points\_by\_backup\_vault"></a>
 
 ### list_recovery_points_by_backup_vault
 
@@ -1175,7 +1175,7 @@ Keyword-only arguments:
 Returns
 [ListRecoveryPointsByBackupVaultOutputTypeDef](./type_defs.md#listrecoverypointsbybackupvaultoutputtypedef).
 
-<a id="list_recovery_points_by_resource"></a>
+<a id="list\_recovery\_points\_by\_resource"></a>
 
 ### list_recovery_points_by_resource
 
@@ -1200,7 +1200,7 @@ Keyword-only arguments:
 Returns
 [ListRecoveryPointsByResourceOutputTypeDef](./type_defs.md#listrecoverypointsbyresourceoutputtypedef).
 
-<a id="list_report_jobs"></a>
+<a id="list\_report\_jobs"></a>
 
 ### list_report_jobs
 
@@ -1226,7 +1226,7 @@ Keyword-only arguments:
 Returns
 [ListReportJobsOutputTypeDef](./type_defs.md#listreportjobsoutputtypedef).
 
-<a id="list_report_plans"></a>
+<a id="list\_report\_plans"></a>
 
 ### list_report_plans
 
@@ -1248,7 +1248,7 @@ Keyword-only arguments:
 Returns
 [ListReportPlansOutputTypeDef](./type_defs.md#listreportplansoutputtypedef).
 
-<a id="list_restore_jobs"></a>
+<a id="list\_restore\_jobs"></a>
 
 ### list_restore_jobs
 
@@ -1275,7 +1275,7 @@ Keyword-only arguments:
 Returns
 [ListRestoreJobsOutputTypeDef](./type_defs.md#listrestorejobsoutputtypedef).
 
-<a id="list_tags"></a>
+<a id="list\_tags"></a>
 
 ### list_tags
 
@@ -1298,7 +1298,7 @@ Keyword-only arguments:
 
 Returns [ListTagsOutputTypeDef](./type_defs.md#listtagsoutputtypedef).
 
-<a id="put_backup_vault_access_policy"></a>
+<a id="put\_backup\_vault\_access\_policy"></a>
 
 ### put_backup_vault_access_policy
 
@@ -1319,7 +1319,7 @@ Keyword-only arguments:
 - `BackupVaultName`: `str` *(required)*
 - `Policy`: `str`
 
-<a id="put_backup_vault_lock_configuration"></a>
+<a id="put\_backup\_vault\_lock\_configuration"></a>
 
 ### put_backup_vault_lock_configuration
 
@@ -1342,7 +1342,7 @@ Keyword-only arguments:
 - `MaxRetentionDays`: `int`
 - `ChangeableForDays`: `int`
 
-<a id="put_backup_vault_notifications"></a>
+<a id="put\_backup\_vault\_notifications"></a>
 
 ### put_backup_vault_notifications
 
@@ -1365,7 +1365,7 @@ Keyword-only arguments:
   `Sequence`\[[BackupVaultEventType](./literals.md#backupvaulteventtype)\]
   *(required)*
 
-<a id="start_backup_job"></a>
+<a id="start\_backup\_job"></a>
 
 ### start_backup_job
 
@@ -1394,7 +1394,7 @@ Keyword-only arguments:
 Returns
 [StartBackupJobOutputTypeDef](./type_defs.md#startbackupjoboutputtypedef).
 
-<a id="start_copy_job"></a>
+<a id="start\_copy\_job"></a>
 
 ### start_copy_job
 
@@ -1419,7 +1419,7 @@ Keyword-only arguments:
 
 Returns [StartCopyJobOutputTypeDef](./type_defs.md#startcopyjoboutputtypedef).
 
-<a id="start_report_job"></a>
+<a id="start\_report\_job"></a>
 
 ### start_report_job
 
@@ -1441,7 +1441,7 @@ Keyword-only arguments:
 Returns
 [StartReportJobOutputTypeDef](./type_defs.md#startreportjoboutputtypedef).
 
-<a id="start_restore_job"></a>
+<a id="start\_restore\_job"></a>
 
 ### start_restore_job
 
@@ -1466,7 +1466,7 @@ Keyword-only arguments:
 Returns
 [StartRestoreJobOutputTypeDef](./type_defs.md#startrestorejoboutputtypedef).
 
-<a id="stop_backup_job"></a>
+<a id="stop\_backup\_job"></a>
 
 ### stop_backup_job
 
@@ -1484,7 +1484,7 @@ Keyword-only arguments:
 
 - `BackupJobId`: `str` *(required)*
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1504,7 +1504,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1525,7 +1525,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeyList`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_backup_plan"></a>
+<a id="update\_backup\_plan"></a>
 
 ### update_backup_plan
 
@@ -1549,7 +1549,7 @@ Keyword-only arguments:
 Returns
 [UpdateBackupPlanOutputTypeDef](./type_defs.md#updatebackupplanoutputtypedef).
 
-<a id="update_framework"></a>
+<a id="update\_framework"></a>
 
 ### update_framework
 
@@ -1575,7 +1575,7 @@ Keyword-only arguments:
 Returns
 [UpdateFrameworkOutputTypeDef](./type_defs.md#updateframeworkoutputtypedef).
 
-<a id="update_global_settings"></a>
+<a id="update\_global\_settings"></a>
 
 ### update_global_settings
 
@@ -1594,7 +1594,7 @@ Keyword-only arguments:
 
 - `GlobalSettings`: `Mapping`\[`str`, `str`\]
 
-<a id="update_recovery_point_lifecycle"></a>
+<a id="update\_recovery\_point\_lifecycle"></a>
 
 ### update_recovery_point_lifecycle
 
@@ -1618,7 +1618,7 @@ Keyword-only arguments:
 Returns
 [UpdateRecoveryPointLifecycleOutputTypeDef](./type_defs.md#updaterecoverypointlifecycleoutputtypedef).
 
-<a id="update_region_settings"></a>
+<a id="update\_region\_settings"></a>
 
 ### update_region_settings
 
@@ -1637,7 +1637,7 @@ Keyword-only arguments:
 - `ResourceTypeOptInPreference`: `Mapping`\[`str`, `bool`\]
 - `ResourceTypeManagementPreference`: `Mapping`\[`str`, `bool`\]
 
-<a id="update_report_plan"></a>
+<a id="update\_report\_plan"></a>
 
 ### update_report_plan
 

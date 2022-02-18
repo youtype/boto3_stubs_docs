@@ -139,7 +139,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_direct_connect_gateway_association_proposal"></a>
+<a id="accept\_direct\_connect\_gateway\_association\_proposal"></a>
 
 ### accept_direct_connect_gateway_association_proposal
 
@@ -167,7 +167,7 @@ Keyword-only arguments:
 Returns
 [AcceptDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#acceptdirectconnectgatewayassociationproposalresulttypedef).
 
-<a id="allocate_connection_on_interconnect"></a>
+<a id="allocate\_connection\_on\_interconnect"></a>
 
 ### allocate_connection_on_interconnect
 
@@ -193,7 +193,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="allocate_hosted_connection"></a>
+<a id="allocate\_hosted\_connection"></a>
 
 ### allocate_hosted_connection
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="allocate_private_virtual_interface"></a>
+<a id="allocate\_private\_virtual\_interface"></a>
 
 ### allocate_private_virtual_interface
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
-<a id="allocate_public_virtual_interface"></a>
+<a id="allocate\_public\_virtual\_interface"></a>
 
 ### allocate_public_virtual_interface
 
@@ -275,7 +275,7 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
-<a id="allocate_transit_virtual_interface"></a>
+<a id="allocate\_transit\_virtual\_interface"></a>
 
 ### allocate_transit_virtual_interface
 
@@ -302,7 +302,7 @@ Keyword-only arguments:
 Returns
 [AllocateTransitVirtualInterfaceResultTypeDef](./type_defs.md#allocatetransitvirtualinterfaceresulttypedef).
 
-<a id="associate_connection_with_lag"></a>
+<a id="associate\_connection\_with\_lag"></a>
 
 ### associate_connection_with_lag
 
@@ -325,7 +325,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="associate_hosted_connection"></a>
+<a id="associate\_hosted\_connection"></a>
 
 ### associate_hosted_connection
 
@@ -349,7 +349,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="associate_mac_sec_key"></a>
+<a id="associate\_mac\_sec\_key"></a>
 
 ### associate_mac_sec_key
 
@@ -375,7 +375,7 @@ Keyword-only arguments:
 Returns
 [AssociateMacSecKeyResponseTypeDef](./type_defs.md#associatemacseckeyresponsetypedef).
 
-<a id="associate_virtual_interface"></a>
+<a id="associate\_virtual\_interface"></a>
 
 ### associate_virtual_interface
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -416,7 +416,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="confirm_connection"></a>
+<a id="confirm\_connection"></a>
 
 ### confirm_connection
 
@@ -437,7 +437,7 @@ Keyword-only arguments:
 Returns
 [ConfirmConnectionResponseTypeDef](./type_defs.md#confirmconnectionresponsetypedef).
 
-<a id="confirm_customer_agreement"></a>
+<a id="confirm\_customer\_agreement"></a>
 
 ### confirm_customer_agreement
 
@@ -460,7 +460,7 @@ Keyword-only arguments:
 Returns
 [ConfirmCustomerAgreementResponseTypeDef](./type_defs.md#confirmcustomeragreementresponsetypedef).
 
-<a id="confirm_private_virtual_interface"></a>
+<a id="confirm\_private\_virtual\_interface"></a>
 
 ### confirm_private_virtual_interface
 
@@ -485,7 +485,7 @@ Keyword-only arguments:
 Returns
 [ConfirmPrivateVirtualInterfaceResponseTypeDef](./type_defs.md#confirmprivatevirtualinterfaceresponsetypedef).
 
-<a id="confirm_public_virtual_interface"></a>
+<a id="confirm\_public\_virtual\_interface"></a>
 
 ### confirm_public_virtual_interface
 
@@ -508,7 +508,7 @@ Keyword-only arguments:
 Returns
 [ConfirmPublicVirtualInterfaceResponseTypeDef](./type_defs.md#confirmpublicvirtualinterfaceresponsetypedef).
 
-<a id="confirm_transit_virtual_interface"></a>
+<a id="confirm\_transit\_virtual\_interface"></a>
 
 ### confirm_transit_virtual_interface
 
@@ -532,7 +532,7 @@ Keyword-only arguments:
 Returns
 [ConfirmTransitVirtualInterfaceResponseTypeDef](./type_defs.md#confirmtransitvirtualinterfaceresponsetypedef).
 
-<a id="create_bgp_peer"></a>
+<a id="create\_bgp\_peer"></a>
 
 ### create_bgp_peer
 
@@ -554,7 +554,7 @@ Keyword-only arguments:
 Returns
 [CreateBGPPeerResponseTypeDef](./type_defs.md#createbgppeerresponsetypedef).
 
-<a id="create_connection"></a>
+<a id="create\_connection"></a>
 
 ### create_connection
 
@@ -582,7 +582,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="create_direct_connect_gateway"></a>
+<a id="create\_direct\_connect\_gateway"></a>
 
 ### create_direct_connect_gateway
 
@@ -606,7 +606,7 @@ Keyword-only arguments:
 Returns
 [CreateDirectConnectGatewayResultTypeDef](./type_defs.md#createdirectconnectgatewayresulttypedef).
 
-<a id="create_direct_connect_gateway_association"></a>
+<a id="create\_direct\_connect\_gateway\_association"></a>
 
 ### create_direct_connect_gateway_association
 
@@ -634,7 +634,7 @@ Keyword-only arguments:
 Returns
 [CreateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationresulttypedef).
 
-<a id="create_direct_connect_gateway_association_proposal"></a>
+<a id="create\_direct\_connect\_gateway\_association\_proposal"></a>
 
 ### create_direct_connect_gateway_association_proposal
 
@@ -664,7 +664,7 @@ Keyword-only arguments:
 Returns
 [CreateDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#createdirectconnectgatewayassociationproposalresulttypedef).
 
-<a id="create_interconnect"></a>
+<a id="create\_interconnect"></a>
 
 ### create_interconnect
 
@@ -692,7 +692,7 @@ Keyword-only arguments:
 Returns
 [InterconnectResponseMetadataTypeDef](./type_defs.md#interconnectresponsemetadatatypedef).
 
-<a id="create_lag"></a>
+<a id="create\_lag"></a>
 
 ### create_lag
 
@@ -723,7 +723,7 @@ Keyword-only arguments:
 Returns
 [LagResponseMetadataTypeDef](./type_defs.md#lagresponsemetadatatypedef).
 
-<a id="create_private_virtual_interface"></a>
+<a id="create\_private\_virtual\_interface"></a>
 
 ### create_private_virtual_interface
 
@@ -748,7 +748,7 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
-<a id="create_public_virtual_interface"></a>
+<a id="create\_public\_virtual\_interface"></a>
 
 ### create_public_virtual_interface
 
@@ -773,7 +773,7 @@ Keyword-only arguments:
 Returns
 [VirtualInterfaceResponseMetadataTypeDef](./type_defs.md#virtualinterfaceresponsemetadatatypedef).
 
-<a id="create_transit_virtual_interface"></a>
+<a id="create\_transit\_virtual\_interface"></a>
 
 ### create_transit_virtual_interface
 
@@ -798,7 +798,7 @@ Keyword-only arguments:
 Returns
 [CreateTransitVirtualInterfaceResultTypeDef](./type_defs.md#createtransitvirtualinterfaceresulttypedef).
 
-<a id="delete_bgp_peer"></a>
+<a id="delete\_bgp\_peer"></a>
 
 ### delete_bgp_peer
 
@@ -823,7 +823,7 @@ Keyword-only arguments:
 Returns
 [DeleteBGPPeerResponseTypeDef](./type_defs.md#deletebgppeerresponsetypedef).
 
-<a id="delete_connection"></a>
+<a id="delete\_connection"></a>
 
 ### delete_connection
 
@@ -844,7 +844,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="delete_direct_connect_gateway"></a>
+<a id="delete\_direct\_connect\_gateway"></a>
 
 ### delete_direct_connect_gateway
 
@@ -866,7 +866,7 @@ Keyword-only arguments:
 Returns
 [DeleteDirectConnectGatewayResultTypeDef](./type_defs.md#deletedirectconnectgatewayresulttypedef).
 
-<a id="delete_direct_connect_gateway_association"></a>
+<a id="delete\_direct\_connect\_gateway\_association"></a>
 
 ### delete_direct_connect_gateway_association
 
@@ -892,7 +892,7 @@ Keyword-only arguments:
 Returns
 [DeleteDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationresulttypedef).
 
-<a id="delete_direct_connect_gateway_association_proposal"></a>
+<a id="delete\_direct\_connect\_gateway\_association\_proposal"></a>
 
 ### delete_direct_connect_gateway_association_proposal
 
@@ -916,7 +916,7 @@ Keyword-only arguments:
 Returns
 [DeleteDirectConnectGatewayAssociationProposalResultTypeDef](./type_defs.md#deletedirectconnectgatewayassociationproposalresulttypedef).
 
-<a id="delete_interconnect"></a>
+<a id="delete\_interconnect"></a>
 
 ### delete_interconnect
 
@@ -938,7 +938,7 @@ Keyword-only arguments:
 Returns
 [DeleteInterconnectResponseTypeDef](./type_defs.md#deleteinterconnectresponsetypedef).
 
-<a id="delete_lag"></a>
+<a id="delete\_lag"></a>
 
 ### delete_lag
 
@@ -959,7 +959,7 @@ Keyword-only arguments:
 Returns
 [LagResponseMetadataTypeDef](./type_defs.md#lagresponsemetadatatypedef).
 
-<a id="delete_virtual_interface"></a>
+<a id="delete\_virtual\_interface"></a>
 
 ### delete_virtual_interface
 
@@ -981,7 +981,7 @@ Keyword-only arguments:
 Returns
 [DeleteVirtualInterfaceResponseTypeDef](./type_defs.md#deletevirtualinterfaceresponsetypedef).
 
-<a id="describe_connection_loa"></a>
+<a id="describe\_connection\_loa"></a>
 
 ### describe_connection_loa
 
@@ -1006,7 +1006,7 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionLoaResponseTypeDef](./type_defs.md#describeconnectionloaresponsetypedef).
 
-<a id="describe_connections"></a>
+<a id="describe\_connections"></a>
 
 ### describe_connections
 
@@ -1027,7 +1027,7 @@ Keyword-only arguments:
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
-<a id="describe_connections_on_interconnect"></a>
+<a id="describe\_connections\_on\_interconnect"></a>
 
 ### describe_connections_on_interconnect
 
@@ -1048,7 +1048,7 @@ Keyword-only arguments:
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
-<a id="describe_customer_metadata"></a>
+<a id="describe\_customer\_metadata"></a>
 
 ### describe_customer_metadata
 
@@ -1064,7 +1064,7 @@ Boto3 documentation:
 Returns
 [DescribeCustomerMetadataResponseTypeDef](./type_defs.md#describecustomermetadataresponsetypedef).
 
-<a id="describe_direct_connect_gateway_association_proposals"></a>
+<a id="describe\_direct\_connect\_gateway\_association\_proposals"></a>
 
 ### describe_direct_connect_gateway_association_proposals
 
@@ -1092,7 +1092,7 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewayAssociationProposalsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationproposalsresulttypedef).
 
-<a id="describe_direct_connect_gateway_associations"></a>
+<a id="describe\_direct\_connect\_gateway\_associations"></a>
 
 ### describe_direct_connect_gateway_associations
 
@@ -1121,7 +1121,7 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewayAssociationsResultTypeDef](./type_defs.md#describedirectconnectgatewayassociationsresulttypedef).
 
-<a id="describe_direct_connect_gateway_attachments"></a>
+<a id="describe\_direct\_connect\_gateway\_attachments"></a>
 
 ### describe_direct_connect_gateway_attachments
 
@@ -1148,7 +1148,7 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewayAttachmentsResultTypeDef](./type_defs.md#describedirectconnectgatewayattachmentsresulttypedef).
 
-<a id="describe_direct_connect_gateways"></a>
+<a id="describe\_direct\_connect\_gateways"></a>
 
 ### describe_direct_connect_gateways
 
@@ -1173,7 +1173,7 @@ Keyword-only arguments:
 Returns
 [DescribeDirectConnectGatewaysResultTypeDef](./type_defs.md#describedirectconnectgatewaysresulttypedef).
 
-<a id="describe_hosted_connections"></a>
+<a id="describe\_hosted\_connections"></a>
 
 ### describe_hosted_connections
 
@@ -1195,7 +1195,7 @@ Keyword-only arguments:
 
 Returns [ConnectionsTypeDef](./type_defs.md#connectionstypedef).
 
-<a id="describe_interconnect_loa"></a>
+<a id="describe\_interconnect\_loa"></a>
 
 ### describe_interconnect_loa
 
@@ -1220,7 +1220,7 @@ Keyword-only arguments:
 Returns
 [DescribeInterconnectLoaResponseTypeDef](./type_defs.md#describeinterconnectloaresponsetypedef).
 
-<a id="describe_interconnects"></a>
+<a id="describe\_interconnects"></a>
 
 ### describe_interconnects
 
@@ -1242,7 +1242,7 @@ Keyword-only arguments:
 
 Returns [InterconnectsTypeDef](./type_defs.md#interconnectstypedef).
 
-<a id="describe_lags"></a>
+<a id="describe\_lags"></a>
 
 ### describe_lags
 
@@ -1262,7 +1262,7 @@ Keyword-only arguments:
 
 Returns [LagsTypeDef](./type_defs.md#lagstypedef).
 
-<a id="describe_loa"></a>
+<a id="describe\_loa"></a>
 
 ### describe_loa
 
@@ -1287,7 +1287,7 @@ Keyword-only arguments:
 Returns
 [LoaResponseMetadataTypeDef](./type_defs.md#loaresponsemetadatatypedef).
 
-<a id="describe_locations"></a>
+<a id="describe\_locations"></a>
 
 ### describe_locations
 
@@ -1300,7 +1300,7 @@ Boto3 documentation:
 
 Returns [LocationsTypeDef](./type_defs.md#locationstypedef).
 
-<a id="describe_router_configuration"></a>
+<a id="describe\_router\_configuration"></a>
 
 ### describe_router_configuration
 
@@ -1323,7 +1323,7 @@ Keyword-only arguments:
 Returns
 [DescribeRouterConfigurationResponseTypeDef](./type_defs.md#describerouterconfigurationresponsetypedef).
 
-<a id="describe_tags"></a>
+<a id="describe\_tags"></a>
 
 ### describe_tags
 
@@ -1344,7 +1344,7 @@ Keyword-only arguments:
 Returns
 [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
-<a id="describe_virtual_gateways"></a>
+<a id="describe\_virtual\_gateways"></a>
 
 ### describe_virtual_gateways
 
@@ -1358,7 +1358,7 @@ Boto3 documentation:
 
 Returns [VirtualGatewaysTypeDef](./type_defs.md#virtualgatewaystypedef).
 
-<a id="describe_virtual_interfaces"></a>
+<a id="describe\_virtual\_interfaces"></a>
 
 ### describe_virtual_interfaces
 
@@ -1380,7 +1380,7 @@ Keyword-only arguments:
 
 Returns [VirtualInterfacesTypeDef](./type_defs.md#virtualinterfacestypedef).
 
-<a id="disassociate_connection_from_lag"></a>
+<a id="disassociate\_connection\_from\_lag"></a>
 
 ### disassociate_connection_from_lag
 
@@ -1403,7 +1403,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="disassociate_mac_sec_key"></a>
+<a id="disassociate\_mac\_sec\_key"></a>
 
 ### disassociate_mac_sec_key
 
@@ -1427,7 +1427,7 @@ Keyword-only arguments:
 Returns
 [DisassociateMacSecKeyResponseTypeDef](./type_defs.md#disassociatemacseckeyresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -1448,7 +1448,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_virtual_interface_test_history"></a>
+<a id="list\_virtual\_interface\_test\_history"></a>
 
 ### list_virtual_interface_test_history
 
@@ -1475,7 +1475,7 @@ Keyword-only arguments:
 Returns
 [ListVirtualInterfaceTestHistoryResponseTypeDef](./type_defs.md#listvirtualinterfacetesthistoryresponsetypedef).
 
-<a id="start_bgp_failover_test"></a>
+<a id="start\_bgp\_failover\_test"></a>
 
 ### start_bgp_failover_test
 
@@ -1501,7 +1501,7 @@ Keyword-only arguments:
 Returns
 [StartBgpFailoverTestResponseTypeDef](./type_defs.md#startbgpfailovertestresponsetypedef).
 
-<a id="stop_bgp_failover_test"></a>
+<a id="stop\_bgp\_failover\_test"></a>
 
 ### stop_bgp_failover_test
 
@@ -1523,7 +1523,7 @@ Keyword-only arguments:
 Returns
 [StopBgpFailoverTestResponseTypeDef](./type_defs.md#stopbgpfailovertestresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1544,7 +1544,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1565,7 +1565,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_connection"></a>
+<a id="update\_connection"></a>
 
 ### update_connection
 
@@ -1588,7 +1588,7 @@ Keyword-only arguments:
 Returns
 [ConnectionResponseMetadataTypeDef](./type_defs.md#connectionresponsemetadatatypedef).
 
-<a id="update_direct_connect_gateway"></a>
+<a id="update\_direct\_connect\_gateway"></a>
 
 ### update_direct_connect_gateway
 
@@ -1611,7 +1611,7 @@ Keyword-only arguments:
 Returns
 [UpdateDirectConnectGatewayResponseTypeDef](./type_defs.md#updatedirectconnectgatewayresponsetypedef).
 
-<a id="update_direct_connect_gateway_association"></a>
+<a id="update\_direct\_connect\_gateway\_association"></a>
 
 ### update_direct_connect_gateway_association
 
@@ -1638,7 +1638,7 @@ Keyword-only arguments:
 Returns
 [UpdateDirectConnectGatewayAssociationResultTypeDef](./type_defs.md#updatedirectconnectgatewayassociationresulttypedef).
 
-<a id="update_lag"></a>
+<a id="update\_lag"></a>
 
 ### update_lag
 
@@ -1662,7 +1662,7 @@ Keyword-only arguments:
 Returns
 [LagResponseMetadataTypeDef](./type_defs.md#lagresponsemetadatatypedef).
 
-<a id="update_virtual_interface_attributes"></a>
+<a id="update\_virtual\_interface\_attributes"></a>
 
 ### update_virtual_interface_attributes
 

@@ -89,7 +89,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -106,7 +106,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_thing_shadow"></a>
+<a id="delete\_thing\_shadow"></a>
 
 ### delete_thing_shadow
 
@@ -128,7 +128,7 @@ Keyword-only arguments:
 Returns
 [DeleteThingShadowResponseTypeDef](./type_defs.md#deletethingshadowresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -148,7 +148,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_retained_message"></a>
+<a id="get\_retained\_message"></a>
 
 ### get_retained_message
 
@@ -169,7 +169,7 @@ Keyword-only arguments:
 Returns
 [GetRetainedMessageResponseTypeDef](./type_defs.md#getretainedmessageresponsetypedef).
 
-<a id="get_thing_shadow"></a>
+<a id="get\_thing\_shadow"></a>
 
 ### get_thing_shadow
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [GetThingShadowResponseTypeDef](./type_defs.md#getthingshadowresponsetypedef).
 
-<a id="list_named_shadows_for_thing"></a>
+<a id="list\_named\_shadows\_for\_thing"></a>
 
 ### list_named_shadows_for_thing
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 Returns
 [ListNamedShadowsForThingResponseTypeDef](./type_defs.md#listnamedshadowsforthingresponsetypedef).
 
-<a id="list_retained_messages"></a>
+<a id="list\_retained\_messages"></a>
 
 ### list_retained_messages
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 - `retain`: `bool`
 - `payload`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 
-<a id="update_thing_shadow"></a>
+<a id="update\_thing\_shadow"></a>
 
 ### update_thing_shadow
 

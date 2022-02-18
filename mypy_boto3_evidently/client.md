@@ -112,7 +112,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_evaluate_feature"></a>
+<a id="batch\_evaluate\_feature"></a>
 
 ### batch_evaluate_feature
 
@@ -136,7 +136,7 @@ Keyword-only arguments:
 Returns
 [BatchEvaluateFeatureResponseTypeDef](./type_defs.md#batchevaluatefeatureresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -153,7 +153,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_experiment"></a>
+<a id="create\_experiment"></a>
 
 ### create_experiment
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 Returns
 [CreateExperimentResponseTypeDef](./type_defs.md#createexperimentresponsetypedef).
 
-<a id="create_feature"></a>
+<a id="create\_feature"></a>
 
 ### create_feature
 
@@ -218,7 +218,7 @@ Keyword-only arguments:
 Returns
 [CreateFeatureResponseTypeDef](./type_defs.md#createfeatureresponsetypedef).
 
-<a id="create_launch"></a>
+<a id="create\_launch"></a>
 
 ### create_launch
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 Returns
 [CreateLaunchResponseTypeDef](./type_defs.md#createlaunchresponsetypedef).
 
-<a id="create_project"></a>
+<a id="create\_project"></a>
 
 ### create_project
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
-<a id="delete_experiment"></a>
+<a id="delete\_experiment"></a>
 
 ### delete_experiment
 
@@ -297,7 +297,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_feature"></a>
+<a id="delete\_feature"></a>
 
 ### delete_feature
 
@@ -318,7 +318,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_launch"></a>
+<a id="delete\_launch"></a>
 
 ### delete_launch
 
@@ -339,7 +339,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_project"></a>
+<a id="delete\_project"></a>
 
 ### delete_project
 
@@ -359,7 +359,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="evaluate_feature"></a>
+<a id="evaluate\_feature"></a>
 
 ### evaluate_feature
 
@@ -383,7 +383,7 @@ Keyword-only arguments:
 Returns
 [EvaluateFeatureResponseTypeDef](./type_defs.md#evaluatefeatureresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -403,7 +403,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_experiment"></a>
+<a id="get\_experiment"></a>
 
 ### get_experiment
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 Returns
 [GetExperimentResponseTypeDef](./type_defs.md#getexperimentresponsetypedef).
 
-<a id="get_experiment_results"></a>
+<a id="get\_experiment\_results"></a>
 
 ### get_experiment_results
 
@@ -458,7 +458,7 @@ Keyword-only arguments:
 Returns
 [GetExperimentResultsResponseTypeDef](./type_defs.md#getexperimentresultsresponsetypedef).
 
-<a id="get_feature"></a>
+<a id="get\_feature"></a>
 
 ### get_feature
 
@@ -479,7 +479,7 @@ Keyword-only arguments:
 
 Returns [GetFeatureResponseTypeDef](./type_defs.md#getfeatureresponsetypedef).
 
-<a id="get_launch"></a>
+<a id="get\_launch"></a>
 
 ### get_launch
 
@@ -500,7 +500,7 @@ Keyword-only arguments:
 
 Returns [GetLaunchResponseTypeDef](./type_defs.md#getlaunchresponsetypedef).
 
-<a id="get_project"></a>
+<a id="get\_project"></a>
 
 ### get_project
 
@@ -520,7 +520,7 @@ Keyword-only arguments:
 
 Returns [GetProjectResponseTypeDef](./type_defs.md#getprojectresponsetypedef).
 
-<a id="list_experiments"></a>
+<a id="list\_experiments"></a>
 
 ### list_experiments
 
@@ -540,11 +540,12 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
 
 Returns
 [ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
 
-<a id="list_features"></a>
+<a id="list\_features"></a>
 
 ### list_features
 
@@ -567,7 +568,7 @@ Keyword-only arguments:
 Returns
 [ListFeaturesResponseTypeDef](./type_defs.md#listfeaturesresponsetypedef).
 
-<a id="list_launches"></a>
+<a id="list\_launches"></a>
 
 ### list_launches
 
@@ -586,11 +587,12 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `status`: [LaunchStatusType](./literals.md#launchstatustype)
 
 Returns
 [ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef).
 
-<a id="list_projects"></a>
+<a id="list\_projects"></a>
 
 ### list_projects
 
@@ -613,7 +615,7 @@ Keyword-only arguments:
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -634,7 +636,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_project_events"></a>
+<a id="put\_project\_events"></a>
 
 ### put_project_events
 
@@ -657,7 +659,7 @@ Keyword-only arguments:
 Returns
 [PutProjectEventsResponseTypeDef](./type_defs.md#putprojecteventsresponsetypedef).
 
-<a id="start_experiment"></a>
+<a id="start\_experiment"></a>
 
 ### start_experiment
 
@@ -680,7 +682,7 @@ Keyword-only arguments:
 Returns
 [StartExperimentResponseTypeDef](./type_defs.md#startexperimentresponsetypedef).
 
-<a id="start_launch"></a>
+<a id="start\_launch"></a>
 
 ### start_launch
 
@@ -702,7 +704,7 @@ Keyword-only arguments:
 Returns
 [StartLaunchResponseTypeDef](./type_defs.md#startlaunchresponsetypedef).
 
-<a id="stop_experiment"></a>
+<a id="stop\_experiment"></a>
 
 ### stop_experiment
 
@@ -727,7 +729,7 @@ Keyword-only arguments:
 Returns
 [StopExperimentResponseTypeDef](./type_defs.md#stopexperimentresponsetypedef).
 
-<a id="stop_launch"></a>
+<a id="stop\_launch"></a>
 
 ### stop_launch
 
@@ -751,7 +753,7 @@ Keyword-only arguments:
 
 Returns [StopLaunchResponseTypeDef](./type_defs.md#stoplaunchresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -773,7 +775,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -794,7 +796,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_experiment"></a>
+<a id="update\_experiment"></a>
 
 ### update_experiment
 
@@ -825,7 +827,7 @@ Keyword-only arguments:
 Returns
 [UpdateExperimentResponseTypeDef](./type_defs.md#updateexperimentresponsetypedef).
 
-<a id="update_feature"></a>
+<a id="update\_feature"></a>
 
 ### update_feature
 
@@ -855,7 +857,7 @@ Keyword-only arguments:
 Returns
 [UpdateFeatureResponseTypeDef](./type_defs.md#updatefeatureresponsetypedef).
 
-<a id="update_launch"></a>
+<a id="update\_launch"></a>
 
 ### update_launch
 
@@ -885,7 +887,7 @@ Keyword-only arguments:
 Returns
 [UpdateLaunchResponseTypeDef](./type_defs.md#updatelaunchresponsetypedef).
 
-<a id="update_project"></a>
+<a id="update\_project"></a>
 
 ### update_project
 
@@ -907,7 +909,7 @@ Keyword-only arguments:
 Returns
 [UpdateProjectResponseTypeDef](./type_defs.md#updateprojectresponsetypedef).
 
-<a id="update_project_data_delivery"></a>
+<a id="update\_project\_data\_delivery"></a>
 
 ### update_project_data_delivery
 

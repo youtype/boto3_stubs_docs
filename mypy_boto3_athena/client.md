@@ -111,7 +111,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_get_named_query"></a>
+<a id="batch\_get\_named\_query"></a>
 
 ### batch_get_named_query
 
@@ -133,7 +133,7 @@ Keyword-only arguments:
 Returns
 [BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef).
 
-<a id="batch_get_query_execution"></a>
+<a id="batch\_get\_query\_execution"></a>
 
 ### batch_get_query_execution
 
@@ -155,7 +155,7 @@ Keyword-only arguments:
 Returns
 [BatchGetQueryExecutionOutputTypeDef](./type_defs.md#batchgetqueryexecutionoutputtypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -172,7 +172,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_data_catalog"></a>
+<a id="create\_data\_catalog"></a>
 
 ### create_data_catalog
 
@@ -196,7 +196,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_named_query"></a>
+<a id="create\_named\_query"></a>
 
 ### create_named_query
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 Returns
 [CreateNamedQueryOutputTypeDef](./type_defs.md#createnamedqueryoutputtypedef).
 
-<a id="create_prepared_statement"></a>
+<a id="create\_prepared\_statement"></a>
 
 ### create_prepared_statement
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_work_group"></a>
+<a id="create\_work\_group"></a>
 
 ### create_work_group
 
@@ -269,7 +269,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_data_catalog"></a>
+<a id="delete\_data\_catalog"></a>
 
 ### delete_data_catalog
 
@@ -289,7 +289,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_named_query"></a>
+<a id="delete\_named\_query"></a>
 
 ### delete_named_query
 
@@ -310,7 +310,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_prepared_statement"></a>
+<a id="delete\_prepared\_statement"></a>
 
 ### delete_prepared_statement
 
@@ -332,7 +332,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_work_group"></a>
+<a id="delete\_work\_group"></a>
 
 ### delete_work_group
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -373,7 +373,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_data_catalog"></a>
+<a id="get\_data\_catalog"></a>
 
 ### get_data_catalog
 
@@ -394,7 +394,7 @@ Keyword-only arguments:
 Returns
 [GetDataCatalogOutputTypeDef](./type_defs.md#getdatacatalogoutputtypedef).
 
-<a id="get_database"></a>
+<a id="get\_database"></a>
 
 ### get_database
 
@@ -415,7 +415,7 @@ Keyword-only arguments:
 
 Returns [GetDatabaseOutputTypeDef](./type_defs.md#getdatabaseoutputtypedef).
 
-<a id="get_named_query"></a>
+<a id="get\_named\_query"></a>
 
 ### get_named_query
 
@@ -436,7 +436,7 @@ Keyword-only arguments:
 Returns
 [GetNamedQueryOutputTypeDef](./type_defs.md#getnamedqueryoutputtypedef).
 
-<a id="get_prepared_statement"></a>
+<a id="get\_prepared\_statement"></a>
 
 ### get_prepared_statement
 
@@ -459,7 +459,7 @@ Keyword-only arguments:
 Returns
 [GetPreparedStatementOutputTypeDef](./type_defs.md#getpreparedstatementoutputtypedef).
 
-<a id="get_query_execution"></a>
+<a id="get\_query\_execution"></a>
 
 ### get_query_execution
 
@@ -481,7 +481,7 @@ Keyword-only arguments:
 Returns
 [GetQueryExecutionOutputTypeDef](./type_defs.md#getqueryexecutionoutputtypedef).
 
-<a id="get_query_results"></a>
+<a id="get\_query\_results"></a>
 
 ### get_query_results
 
@@ -505,7 +505,7 @@ Keyword-only arguments:
 Returns
 [GetQueryResultsOutputTypeDef](./type_defs.md#getqueryresultsoutputtypedef).
 
-<a id="get_table_metadata"></a>
+<a id="get\_table\_metadata"></a>
 
 ### get_table_metadata
 
@@ -528,7 +528,7 @@ Keyword-only arguments:
 Returns
 [GetTableMetadataOutputTypeDef](./type_defs.md#gettablemetadataoutputtypedef).
 
-<a id="get_work_group"></a>
+<a id="get\_work\_group"></a>
 
 ### get_work_group
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 
 Returns [GetWorkGroupOutputTypeDef](./type_defs.md#getworkgroupoutputtypedef).
 
-<a id="list_data_catalogs"></a>
+<a id="list\_data\_catalogs"></a>
 
 ### list_data_catalogs
 
@@ -570,7 +570,7 @@ Keyword-only arguments:
 Returns
 [ListDataCatalogsOutputTypeDef](./type_defs.md#listdatacatalogsoutputtypedef).
 
-<a id="list_databases"></a>
+<a id="list\_databases"></a>
 
 ### list_databases
 
@@ -593,7 +593,7 @@ Keyword-only arguments:
 Returns
 [ListDatabasesOutputTypeDef](./type_defs.md#listdatabasesoutputtypedef).
 
-<a id="list_engine_versions"></a>
+<a id="list\_engine\_versions"></a>
 
 ### list_engine_versions
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 Returns
 [ListEngineVersionsOutputTypeDef](./type_defs.md#listengineversionsoutputtypedef).
 
-<a id="list_named_queries"></a>
+<a id="list\_named\_queries"></a>
 
 ### list_named_queries
 
@@ -640,7 +640,7 @@ Keyword-only arguments:
 Returns
 [ListNamedQueriesOutputTypeDef](./type_defs.md#listnamedqueriesoutputtypedef).
 
-<a id="list_prepared_statements"></a>
+<a id="list\_prepared\_statements"></a>
 
 ### list_prepared_statements
 
@@ -663,7 +663,7 @@ Keyword-only arguments:
 Returns
 [ListPreparedStatementsOutputTypeDef](./type_defs.md#listpreparedstatementsoutputtypedef).
 
-<a id="list_query_executions"></a>
+<a id="list\_query\_executions"></a>
 
 ### list_query_executions
 
@@ -687,7 +687,7 @@ Keyword-only arguments:
 Returns
 [ListQueryExecutionsOutputTypeDef](./type_defs.md#listqueryexecutionsoutputtypedef).
 
-<a id="list_table_metadata"></a>
+<a id="list\_table\_metadata"></a>
 
 ### list_table_metadata
 
@@ -712,7 +712,7 @@ Keyword-only arguments:
 Returns
 [ListTableMetadataOutputTypeDef](./type_defs.md#listtablemetadataoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -735,7 +735,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="list_work_groups"></a>
+<a id="list\_work\_groups"></a>
 
 ### list_work_groups
 
@@ -757,7 +757,7 @@ Keyword-only arguments:
 Returns
 [ListWorkGroupsOutputTypeDef](./type_defs.md#listworkgroupsoutputtypedef).
 
-<a id="start_query_execution"></a>
+<a id="start\_query\_execution"></a>
 
 ### start_query_execution
 
@@ -784,7 +784,7 @@ Keyword-only arguments:
 Returns
 [StartQueryExecutionOutputTypeDef](./type_defs.md#startqueryexecutionoutputtypedef).
 
-<a id="stop_query_execution"></a>
+<a id="stop\_query\_execution"></a>
 
 ### stop_query_execution
 
@@ -804,7 +804,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -825,7 +825,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -846,7 +846,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_data_catalog"></a>
+<a id="update\_data\_catalog"></a>
 
 ### update_data_catalog
 
@@ -869,7 +869,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_prepared_statement"></a>
+<a id="update\_prepared\_statement"></a>
 
 ### update_prepared_statement
 
@@ -892,7 +892,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_work_group"></a>
+<a id="update\_work\_group"></a>
 
 ### update_work_group
 

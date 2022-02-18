@@ -106,7 +106,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -123,7 +123,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_identity_pool"></a>
+<a id="create\_identity\_pool"></a>
 
 ### create_identity_pool
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
-<a id="delete_identities"></a>
+<a id="delete\_identities"></a>
 
 ### delete_identities
 
@@ -175,7 +175,7 @@ Keyword-only arguments:
 Returns
 [DeleteIdentitiesResponseTypeDef](./type_defs.md#deleteidentitiesresponsetypedef).
 
-<a id="delete_identity_pool"></a>
+<a id="delete\_identity\_pool"></a>
 
 ### delete_identity_pool
 
@@ -194,7 +194,7 @@ Keyword-only arguments:
 
 - `IdentityPoolId`: `str` *(required)*
 
-<a id="describe_identity"></a>
+<a id="describe\_identity"></a>
 
 ### describe_identity
 
@@ -217,7 +217,7 @@ Keyword-only arguments:
 Returns
 [IdentityDescriptionResponseMetadataTypeDef](./type_defs.md#identitydescriptionresponsemetadatatypedef).
 
-<a id="describe_identity_pool"></a>
+<a id="describe\_identity\_pool"></a>
 
 ### describe_identity_pool
 
@@ -239,7 +239,7 @@ Keyword-only arguments:
 
 Returns [IdentityPoolTypeDef](./type_defs.md#identitypooltypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -260,7 +260,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_credentials_for_identity"></a>
+<a id="get\_credentials\_for\_identity"></a>
 
 ### get_credentials_for_identity
 
@@ -284,7 +284,7 @@ Keyword-only arguments:
 Returns
 [GetCredentialsForIdentityResponseTypeDef](./type_defs.md#getcredentialsforidentityresponsetypedef).
 
-<a id="get_id"></a>
+<a id="get\_id"></a>
 
 ### get_id
 
@@ -306,7 +306,7 @@ Keyword-only arguments:
 
 Returns [GetIdResponseTypeDef](./type_defs.md#getidresponsetypedef).
 
-<a id="get_identity_pool_roles"></a>
+<a id="get\_identity\_pool\_roles"></a>
 
 ### get_identity_pool_roles
 
@@ -328,7 +328,7 @@ Keyword-only arguments:
 Returns
 [GetIdentityPoolRolesResponseTypeDef](./type_defs.md#getidentitypoolrolesresponsetypedef).
 
-<a id="get_open_id_token"></a>
+<a id="get\_open\_id\_token"></a>
 
 ### get_open_id_token
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 Returns
 [GetOpenIdTokenResponseTypeDef](./type_defs.md#getopenidtokenresponsetypedef).
 
-<a id="get_open_id_token_for_developer_identity"></a>
+<a id="get\_open\_id\_token\_for\_developer\_identity"></a>
 
 ### get_open_id_token_for_developer_identity
 
@@ -379,7 +379,7 @@ Keyword-only arguments:
 Returns
 [GetOpenIdTokenForDeveloperIdentityResponseTypeDef](./type_defs.md#getopenidtokenfordeveloperidentityresponsetypedef).
 
-<a id="get_principal_tag_attribute_map"></a>
+<a id="get\_principal\_tag\_attribute\_map"></a>
 
 ### get_principal_tag_attribute_map
 
@@ -403,7 +403,7 @@ Keyword-only arguments:
 Returns
 [GetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#getprincipaltagattributemapresponsetypedef).
 
-<a id="list_identities"></a>
+<a id="list\_identities"></a>
 
 ### list_identities
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 Returns
 [ListIdentitiesResponseTypeDef](./type_defs.md#listidentitiesresponsetypedef).
 
-<a id="list_identity_pools"></a>
+<a id="list\_identity\_pools"></a>
 
 ### list_identity_pools
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 Returns
 [ListIdentityPoolsResponseTypeDef](./type_defs.md#listidentitypoolsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -472,7 +472,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="lookup_developer_identity"></a>
+<a id="lookup\_developer\_identity"></a>
 
 ### lookup_developer_identity
 
@@ -500,7 +500,7 @@ Keyword-only arguments:
 Returns
 [LookupDeveloperIdentityResponseTypeDef](./type_defs.md#lookupdeveloperidentityresponsetypedef).
 
-<a id="merge_developer_identities"></a>
+<a id="merge\_developer\_identities"></a>
 
 ### merge_developer_identities
 
@@ -526,7 +526,7 @@ Keyword-only arguments:
 Returns
 [MergeDeveloperIdentitiesResponseTypeDef](./type_defs.md#mergedeveloperidentitiesresponsetypedef).
 
-<a id="set_identity_pool_roles"></a>
+<a id="set\_identity\_pool\_roles"></a>
 
 ### set_identity_pool_roles
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 - `RoleMappings`: `Mapping`\[`str`,
   [RoleMappingTypeDef](./type_defs.md#rolemappingtypedef)\]
 
-<a id="set_principal_tag_attribute_map"></a>
+<a id="set\_principal\_tag\_attribute\_map"></a>
 
 ### set_principal_tag_attribute_map
 
@@ -574,7 +574,7 @@ Keyword-only arguments:
 Returns
 [SetPrincipalTagAttributeMapResponseTypeDef](./type_defs.md#setprincipaltagattributemapresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -595,7 +595,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="unlink_developer_identity"></a>
+<a id="unlink\_developer\_identity"></a>
 
 ### unlink_developer_identity
 
@@ -617,7 +617,7 @@ Keyword-only arguments:
 - `DeveloperProviderName`: `str` *(required)*
 - `DeveloperUserIdentifier`: `str` *(required)*
 
-<a id="unlink_identity"></a>
+<a id="unlink\_identity"></a>
 
 ### unlink_identity
 
@@ -637,7 +637,7 @@ Keyword-only arguments:
 - `Logins`: `Mapping`\[`str`, `str`\] *(required)*
 - `LoginsToRemove`: `Sequence`\[`str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_identity_pool"></a>
+<a id="update\_identity\_pool"></a>
 
 ### update_identity_pool
 

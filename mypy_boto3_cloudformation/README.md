@@ -15,6 +15,7 @@ type annotations stubs module
     - [From PyPI with pip](#from-pypi-with-pip)
     - [From conda-forge](#from-conda-forge)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [CloudFormationClient](#cloudformationclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -50,9 +51,11 @@ Install `boto3-stubs` for `CloudFormation` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[cloudformation]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[cloudformation]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-cloudformation
@@ -91,6 +94,12 @@ conda search mypy-boto3-cloudformation --channel conda-forge
 ```bash
 python -m pip uninstall -y mypy-boto3-cloudformation
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="cloudformationclient"></a>
 

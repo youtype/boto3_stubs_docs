@@ -76,7 +76,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -94,7 +94,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_data_set"></a>
+<a id="generate\_data\_set"></a>
 
 ### generate_data_set
 
@@ -124,7 +124,7 @@ Keyword-only arguments:
 Returns
 [GenerateDataSetResultTypeDef](./type_defs.md#generatedatasetresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -145,7 +145,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="start_support_data_export"></a>
+<a id="start\_support\_data\_export"></a>
 
 ### start_support_data_export
 

@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [PersonalizeClient](#personalizeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `Personalize` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[personalize]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[personalize]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-personalize
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-personalize
 ```bash
 python -m pip uninstall -y mypy-boto3-personalize
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="personalizeclient"></a>
 

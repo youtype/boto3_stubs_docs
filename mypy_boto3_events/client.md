@@ -134,7 +134,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="activate_event_source"></a>
+<a id="activate\_event\_source"></a>
 
 ### activate_event_source
 
@@ -152,7 +152,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -169,7 +169,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_replay"></a>
+<a id="cancel\_replay"></a>
 
 ### cancel_replay
 
@@ -190,7 +190,7 @@ Keyword-only arguments:
 Returns
 [CancelReplayResponseTypeDef](./type_defs.md#cancelreplayresponsetypedef).
 
-<a id="create_api_destination"></a>
+<a id="create\_api\_destination"></a>
 
 ### create_api_destination
 
@@ -219,7 +219,7 @@ Keyword-only arguments:
 Returns
 [CreateApiDestinationResponseTypeDef](./type_defs.md#createapidestinationresponsetypedef).
 
-<a id="create_archive"></a>
+<a id="create\_archive"></a>
 
 ### create_archive
 
@@ -244,7 +244,7 @@ Keyword-only arguments:
 Returns
 [CreateArchiveResponseTypeDef](./type_defs.md#createarchiveresponsetypedef).
 
-<a id="create_connection"></a>
+<a id="create\_connection"></a>
 
 ### create_connection
 
@@ -272,7 +272,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectionResponseTypeDef](./type_defs.md#createconnectionresponsetypedef).
 
-<a id="create_event_bus"></a>
+<a id="create\_event\_bus"></a>
 
 ### create_event_bus
 
@@ -295,7 +295,7 @@ Keyword-only arguments:
 Returns
 [CreateEventBusResponseTypeDef](./type_defs.md#createeventbusresponsetypedef).
 
-<a id="create_partner_event_source"></a>
+<a id="create\_partner\_event\_source"></a>
 
 ### create_partner_event_source
 
@@ -318,7 +318,7 @@ Keyword-only arguments:
 Returns
 [CreatePartnerEventSourceResponseTypeDef](./type_defs.md#createpartnereventsourceresponsetypedef).
 
-<a id="deactivate_event_source"></a>
+<a id="deactivate\_event\_source"></a>
 
 ### deactivate_event_source
 
@@ -337,7 +337,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-<a id="deauthorize_connection"></a>
+<a id="deauthorize\_connection"></a>
 
 ### deauthorize_connection
 
@@ -358,7 +358,7 @@ Keyword-only arguments:
 Returns
 [DeauthorizeConnectionResponseTypeDef](./type_defs.md#deauthorizeconnectionresponsetypedef).
 
-<a id="delete_api_destination"></a>
+<a id="delete\_api\_destination"></a>
 
 ### delete_api_destination
 
@@ -378,7 +378,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_archive"></a>
+<a id="delete\_archive"></a>
 
 ### delete_archive
 
@@ -398,7 +398,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_connection"></a>
+<a id="delete\_connection"></a>
 
 ### delete_connection
 
@@ -419,7 +419,7 @@ Keyword-only arguments:
 Returns
 [DeleteConnectionResponseTypeDef](./type_defs.md#deleteconnectionresponsetypedef).
 
-<a id="delete_event_bus"></a>
+<a id="delete\_event\_bus"></a>
 
 ### delete_event_bus
 
@@ -437,7 +437,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-<a id="delete_partner_event_source"></a>
+<a id="delete\_partner\_event\_source"></a>
 
 ### delete_partner_event_source
 
@@ -457,7 +457,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `Account`: `str` *(required)*
 
-<a id="delete_rule"></a>
+<a id="delete\_rule"></a>
 
 ### delete_rule
 
@@ -477,7 +477,7 @@ Keyword-only arguments:
 - `EventBusName`: `str`
 - `Force`: `bool`
 
-<a id="describe_api_destination"></a>
+<a id="describe\_api\_destination"></a>
 
 ### describe_api_destination
 
@@ -498,7 +498,7 @@ Keyword-only arguments:
 Returns
 [DescribeApiDestinationResponseTypeDef](./type_defs.md#describeapidestinationresponsetypedef).
 
-<a id="describe_archive"></a>
+<a id="describe\_archive"></a>
 
 ### describe_archive
 
@@ -519,7 +519,7 @@ Keyword-only arguments:
 Returns
 [DescribeArchiveResponseTypeDef](./type_defs.md#describearchiveresponsetypedef).
 
-<a id="describe_connection"></a>
+<a id="describe\_connection"></a>
 
 ### describe_connection
 
@@ -540,7 +540,7 @@ Keyword-only arguments:
 Returns
 [DescribeConnectionResponseTypeDef](./type_defs.md#describeconnectionresponsetypedef).
 
-<a id="describe_event_bus"></a>
+<a id="describe\_event\_bus"></a>
 
 ### describe_event_bus
 
@@ -561,7 +561,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventBusResponseTypeDef](./type_defs.md#describeeventbusresponsetypedef).
 
-<a id="describe_event_source"></a>
+<a id="describe\_event\_source"></a>
 
 ### describe_event_source
 
@@ -583,7 +583,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventSourceResponseTypeDef](./type_defs.md#describeeventsourceresponsetypedef).
 
-<a id="describe_partner_event_source"></a>
+<a id="describe\_partner\_event\_source"></a>
 
 ### describe_partner_event_source
 
@@ -606,7 +606,7 @@ Keyword-only arguments:
 Returns
 [DescribePartnerEventSourceResponseTypeDef](./type_defs.md#describepartnereventsourceresponsetypedef).
 
-<a id="describe_replay"></a>
+<a id="describe\_replay"></a>
 
 ### describe_replay
 
@@ -627,7 +627,7 @@ Keyword-only arguments:
 Returns
 [DescribeReplayResponseTypeDef](./type_defs.md#describereplayresponsetypedef).
 
-<a id="describe_rule"></a>
+<a id="describe\_rule"></a>
 
 ### describe_rule
 
@@ -649,7 +649,7 @@ Keyword-only arguments:
 Returns
 [DescribeRuleResponseTypeDef](./type_defs.md#describeruleresponsetypedef).
 
-<a id="disable_rule"></a>
+<a id="disable\_rule"></a>
 
 ### disable_rule
 
@@ -668,7 +668,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
 
-<a id="enable_rule"></a>
+<a id="enable\_rule"></a>
 
 ### enable_rule
 
@@ -687,7 +687,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `EventBusName`: `str`
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -707,7 +707,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_api_destinations"></a>
+<a id="list\_api\_destinations"></a>
 
 ### list_api_destinations
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [ListApiDestinationsResponseTypeDef](./type_defs.md#listapidestinationsresponsetypedef).
 
-<a id="list_archives"></a>
+<a id="list\_archives"></a>
 
 ### list_archives
 
@@ -756,7 +756,7 @@ Keyword-only arguments:
 Returns
 [ListArchivesResponseTypeDef](./type_defs.md#listarchivesresponsetypedef).
 
-<a id="list_connections"></a>
+<a id="list\_connections"></a>
 
 ### list_connections
 
@@ -780,7 +780,7 @@ Keyword-only arguments:
 Returns
 [ListConnectionsResponseTypeDef](./type_defs.md#listconnectionsresponsetypedef).
 
-<a id="list_event_buses"></a>
+<a id="list\_event\_buses"></a>
 
 ### list_event_buses
 
@@ -804,7 +804,7 @@ Keyword-only arguments:
 Returns
 [ListEventBusesResponseTypeDef](./type_defs.md#listeventbusesresponsetypedef).
 
-<a id="list_event_sources"></a>
+<a id="list\_event\_sources"></a>
 
 ### list_event_sources
 
@@ -828,7 +828,7 @@ Keyword-only arguments:
 Returns
 [ListEventSourcesResponseTypeDef](./type_defs.md#listeventsourcesresponsetypedef).
 
-<a id="list_partner_event_source_accounts"></a>
+<a id="list\_partner\_event\_source\_accounts"></a>
 
 ### list_partner_event_source_accounts
 
@@ -853,7 +853,7 @@ Keyword-only arguments:
 Returns
 [ListPartnerEventSourceAccountsResponseTypeDef](./type_defs.md#listpartnereventsourceaccountsresponsetypedef).
 
-<a id="list_partner_event_sources"></a>
+<a id="list\_partner\_event\_sources"></a>
 
 ### list_partner_event_sources
 
@@ -878,7 +878,7 @@ Keyword-only arguments:
 Returns
 [ListPartnerEventSourcesResponseTypeDef](./type_defs.md#listpartnereventsourcesresponsetypedef).
 
-<a id="list_replays"></a>
+<a id="list\_replays"></a>
 
 ### list_replays
 
@@ -903,7 +903,7 @@ Keyword-only arguments:
 Returns
 [ListReplaysResponseTypeDef](./type_defs.md#listreplaysresponsetypedef).
 
-<a id="list_rule_names_by_target"></a>
+<a id="list\_rule\_names\_by\_target"></a>
 
 ### list_rule_names_by_target
 
@@ -927,7 +927,7 @@ Keyword-only arguments:
 Returns
 [ListRuleNamesByTargetResponseTypeDef](./type_defs.md#listrulenamesbytargetresponsetypedef).
 
-<a id="list_rules"></a>
+<a id="list\_rules"></a>
 
 ### list_rules
 
@@ -950,7 +950,7 @@ Keyword-only arguments:
 
 Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -971,7 +971,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_targets_by_rule"></a>
+<a id="list\_targets\_by\_rule"></a>
 
 ### list_targets_by_rule
 
@@ -995,7 +995,7 @@ Keyword-only arguments:
 Returns
 [ListTargetsByRuleResponseTypeDef](./type_defs.md#listtargetsbyruleresponsetypedef).
 
-<a id="put_events"></a>
+<a id="put\_events"></a>
 
 ### put_events
 
@@ -1017,7 +1017,7 @@ Keyword-only arguments:
 
 Returns [PutEventsResponseTypeDef](./type_defs.md#puteventsresponsetypedef).
 
-<a id="put_partner_events"></a>
+<a id="put\_partner\_events"></a>
 
 ### put_partner_events
 
@@ -1041,7 +1041,7 @@ Keyword-only arguments:
 Returns
 [PutPartnerEventsResponseTypeDef](./type_defs.md#putpartnereventsresponsetypedef).
 
-<a id="put_permission"></a>
+<a id="put\_permission"></a>
 
 ### put_permission
 
@@ -1065,7 +1065,7 @@ Keyword-only arguments:
 - `Condition`: [ConditionTypeDef](./type_defs.md#conditiontypedef)
 - `Policy`: `str`
 
-<a id="put_rule"></a>
+<a id="put\_rule"></a>
 
 ### put_rule
 
@@ -1092,7 +1092,7 @@ Keyword-only arguments:
 
 Returns [PutRuleResponseTypeDef](./type_defs.md#putruleresponsetypedef).
 
-<a id="put_targets"></a>
+<a id="put\_targets"></a>
 
 ### put_targets
 
@@ -1116,7 +1116,7 @@ Keyword-only arguments:
 
 Returns [PutTargetsResponseTypeDef](./type_defs.md#puttargetsresponsetypedef).
 
-<a id="remove_permission"></a>
+<a id="remove\_permission"></a>
 
 ### remove_permission
 
@@ -1137,7 +1137,7 @@ Keyword-only arguments:
 - `RemoveAllPermissions`: `bool`
 - `EventBusName`: `str`
 
-<a id="remove_targets"></a>
+<a id="remove\_targets"></a>
 
 ### remove_targets
 
@@ -1161,7 +1161,7 @@ Keyword-only arguments:
 Returns
 [RemoveTargetsResponseTypeDef](./type_defs.md#removetargetsresponsetypedef).
 
-<a id="start_replay"></a>
+<a id="start\_replay"></a>
 
 ### start_replay
 
@@ -1189,7 +1189,7 @@ Keyword-only arguments:
 Returns
 [StartReplayResponseTypeDef](./type_defs.md#startreplayresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1211,7 +1211,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="test_event_pattern"></a>
+<a id="test\_event\_pattern"></a>
 
 ### test_event_pattern
 
@@ -1233,7 +1233,7 @@ Keyword-only arguments:
 Returns
 [TestEventPatternResponseTypeDef](./type_defs.md#testeventpatternresponsetypedef).
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1254,7 +1254,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_api_destination"></a>
+<a id="update\_api\_destination"></a>
 
 ### update_api_destination
 
@@ -1281,7 +1281,7 @@ Keyword-only arguments:
 Returns
 [UpdateApiDestinationResponseTypeDef](./type_defs.md#updateapidestinationresponsetypedef).
 
-<a id="update_archive"></a>
+<a id="update\_archive"></a>
 
 ### update_archive
 
@@ -1305,7 +1305,7 @@ Keyword-only arguments:
 Returns
 [UpdateArchiveResponseTypeDef](./type_defs.md#updatearchiveresponsetypedef).
 
-<a id="update_connection"></a>
+<a id="update\_connection"></a>
 
 ### update_connection
 

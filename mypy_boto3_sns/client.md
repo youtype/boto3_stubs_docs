@@ -144,7 +144,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_permission"></a>
+<a id="add\_permission"></a>
 
 ### add_permission
 
@@ -166,7 +166,7 @@ Keyword-only arguments:
 - `AWSAccountId`: `Sequence`\[`str`\] *(required)*
 - `ActionName`: `Sequence`\[`str`\] *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -183,7 +183,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="check_if_phone_number_is_opted_out"></a>
+<a id="check\_if\_phone\_number\_is\_opted\_out"></a>
 
 ### check_if_phone_number_is_opted_out
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 Returns
 [CheckIfPhoneNumberIsOptedOutResponseTypeDef](./type_defs.md#checkifphonenumberisoptedoutresponsetypedef).
 
-<a id="confirm_subscription"></a>
+<a id="confirm\_subscription"></a>
 
 ### confirm_subscription
 
@@ -230,7 +230,7 @@ Keyword-only arguments:
 Returns
 [ConfirmSubscriptionResponseTypeDef](./type_defs.md#confirmsubscriptionresponsetypedef).
 
-<a id="create_platform_application"></a>
+<a id="create\_platform\_application"></a>
 
 ### create_platform_application
 
@@ -255,7 +255,7 @@ Keyword-only arguments:
 Returns
 [CreatePlatformApplicationResponseTypeDef](./type_defs.md#createplatformapplicationresponsetypedef).
 
-<a id="create_platform_endpoint"></a>
+<a id="create\_platform\_endpoint"></a>
 
 ### create_platform_endpoint
 
@@ -280,7 +280,7 @@ Keyword-only arguments:
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
-<a id="create_sms_sandbox_phone_number"></a>
+<a id="create\_sms\_sandbox\_phone\_number"></a>
 
 ### create_sms_sandbox_phone_number
 
@@ -304,7 +304,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_topic"></a>
+<a id="create\_topic"></a>
 
 ### create_topic
 
@@ -327,7 +327,7 @@ Keyword-only arguments:
 Returns
 [CreateTopicResponseTypeDef](./type_defs.md#createtopicresponsetypedef).
 
-<a id="delete_endpoint"></a>
+<a id="delete\_endpoint"></a>
 
 ### delete_endpoint
 
@@ -345,7 +345,7 @@ Keyword-only arguments:
 
 - `EndpointArn`: `str` *(required)*
 
-<a id="delete_platform_application"></a>
+<a id="delete\_platform\_application"></a>
 
 ### delete_platform_application
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 
 - `PlatformApplicationArn`: `str` *(required)*
 
-<a id="delete_sms_sandbox_phone_number"></a>
+<a id="delete\_sms\_sandbox\_phone\_number"></a>
 
 ### delete_sms_sandbox_phone_number
 
@@ -386,7 +386,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_topic"></a>
+<a id="delete\_topic"></a>
 
 ### delete_topic
 
@@ -404,7 +404,7 @@ Keyword-only arguments:
 
 - `TopicArn`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -424,7 +424,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_endpoint_attributes"></a>
+<a id="get\_endpoint\_attributes"></a>
 
 ### get_endpoint_attributes
 
@@ -446,7 +446,7 @@ Keyword-only arguments:
 Returns
 [GetEndpointAttributesResponseTypeDef](./type_defs.md#getendpointattributesresponsetypedef).
 
-<a id="get_platform_application_attributes"></a>
+<a id="get\_platform\_application\_attributes"></a>
 
 ### get_platform_application_attributes
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 Returns
 [GetPlatformApplicationAttributesResponseTypeDef](./type_defs.md#getplatformapplicationattributesresponsetypedef).
 
-<a id="get_sms_attributes"></a>
+<a id="get\_sms\_attributes"></a>
 
 ### get_sms_attributes
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 Returns
 [GetSMSAttributesResponseTypeDef](./type_defs.md#getsmsattributesresponsetypedef).
 
-<a id="get_sms_sandbox_account_status"></a>
+<a id="get\_sms\_sandbox\_account\_status"></a>
 
 ### get_sms_sandbox_account_status
 
@@ -507,7 +507,7 @@ Boto3 documentation:
 Returns
 [GetSMSSandboxAccountStatusResultTypeDef](./type_defs.md#getsmssandboxaccountstatusresulttypedef).
 
-<a id="get_subscription_attributes"></a>
+<a id="get\_subscription\_attributes"></a>
 
 ### get_subscription_attributes
 
@@ -528,7 +528,7 @@ Keyword-only arguments:
 Returns
 [GetSubscriptionAttributesResponseTypeDef](./type_defs.md#getsubscriptionattributesresponsetypedef).
 
-<a id="get_topic_attributes"></a>
+<a id="get\_topic\_attributes"></a>
 
 ### get_topic_attributes
 
@@ -549,7 +549,7 @@ Keyword-only arguments:
 Returns
 [GetTopicAttributesResponseTypeDef](./type_defs.md#gettopicattributesresponsetypedef).
 
-<a id="list_endpoints_by_platform_application"></a>
+<a id="list\_endpoints\_by\_platform\_application"></a>
 
 ### list_endpoints_by_platform_application
 
@@ -573,7 +573,7 @@ Keyword-only arguments:
 Returns
 [ListEndpointsByPlatformApplicationResponseTypeDef](./type_defs.md#listendpointsbyplatformapplicationresponsetypedef).
 
-<a id="list_origination_numbers"></a>
+<a id="list\_origination\_numbers"></a>
 
 ### list_origination_numbers
 
@@ -596,7 +596,7 @@ Keyword-only arguments:
 Returns
 [ListOriginationNumbersResultTypeDef](./type_defs.md#listoriginationnumbersresulttypedef).
 
-<a id="list_phone_numbers_opted_out"></a>
+<a id="list\_phone\_numbers\_opted\_out"></a>
 
 ### list_phone_numbers_opted_out
 
@@ -618,7 +618,7 @@ Keyword-only arguments:
 Returns
 [ListPhoneNumbersOptedOutResponseTypeDef](./type_defs.md#listphonenumbersoptedoutresponsetypedef).
 
-<a id="list_platform_applications"></a>
+<a id="list\_platform\_applications"></a>
 
 ### list_platform_applications
 
@@ -640,7 +640,7 @@ Keyword-only arguments:
 Returns
 [ListPlatformApplicationsResponseTypeDef](./type_defs.md#listplatformapplicationsresponsetypedef).
 
-<a id="list_sms_sandbox_phone_numbers"></a>
+<a id="list\_sms\_sandbox\_phone\_numbers"></a>
 
 ### list_sms_sandbox_phone_numbers
 
@@ -664,7 +664,7 @@ Keyword-only arguments:
 Returns
 [ListSMSSandboxPhoneNumbersResultTypeDef](./type_defs.md#listsmssandboxphonenumbersresulttypedef).
 
-<a id="list_subscriptions"></a>
+<a id="list\_subscriptions"></a>
 
 ### list_subscriptions
 
@@ -685,7 +685,7 @@ Keyword-only arguments:
 Returns
 [ListSubscriptionsResponseTypeDef](./type_defs.md#listsubscriptionsresponsetypedef).
 
-<a id="list_subscriptions_by_topic"></a>
+<a id="list\_subscriptions\_by\_topic"></a>
 
 ### list_subscriptions_by_topic
 
@@ -707,7 +707,7 @@ Keyword-only arguments:
 Returns
 [ListSubscriptionsByTopicResponseTypeDef](./type_defs.md#listsubscriptionsbytopicresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -728,7 +728,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_topics"></a>
+<a id="list\_topics"></a>
 
 ### list_topics
 
@@ -748,7 +748,7 @@ Keyword-only arguments:
 
 Returns [ListTopicsResponseTypeDef](./type_defs.md#listtopicsresponsetypedef).
 
-<a id="opt_in_phone_number"></a>
+<a id="opt\_in\_phone\_number"></a>
 
 ### opt_in_phone_number
 
@@ -800,7 +800,7 @@ Keyword-only arguments:
 
 Returns [PublishResponseTypeDef](./type_defs.md#publishresponsetypedef).
 
-<a id="publish_batch"></a>
+<a id="publish\_batch"></a>
 
 ### publish_batch
 
@@ -824,7 +824,7 @@ Keyword-only arguments:
 Returns
 [PublishBatchResponseTypeDef](./type_defs.md#publishbatchresponsetypedef).
 
-<a id="remove_permission"></a>
+<a id="remove\_permission"></a>
 
 ### remove_permission
 
@@ -843,7 +843,7 @@ Keyword-only arguments:
 - `TopicArn`: `str` *(required)*
 - `Label`: `str` *(required)*
 
-<a id="set_endpoint_attributes"></a>
+<a id="set\_endpoint\_attributes"></a>
 
 ### set_endpoint_attributes
 
@@ -863,7 +863,7 @@ Keyword-only arguments:
 - `EndpointArn`: `str` *(required)*
 - `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="set_platform_application_attributes"></a>
+<a id="set\_platform\_application\_attributes"></a>
 
 ### set_platform_application_attributes
 
@@ -884,7 +884,7 @@ Keyword-only arguments:
 - `PlatformApplicationArn`: `str` *(required)*
 - `Attributes`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="set_sms_attributes"></a>
+<a id="set\_sms\_attributes"></a>
 
 ### set_sms_attributes
 
@@ -905,7 +905,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="set_subscription_attributes"></a>
+<a id="set\_subscription\_attributes"></a>
 
 ### set_subscription_attributes
 
@@ -926,7 +926,7 @@ Keyword-only arguments:
 - `AttributeName`: `str` *(required)*
 - `AttributeValue`: `str`
 
-<a id="set_topic_attributes"></a>
+<a id="set\_topic\_attributes"></a>
 
 ### set_topic_attributes
 
@@ -970,7 +970,7 @@ Keyword-only arguments:
 
 Returns [SubscribeResponseTypeDef](./type_defs.md#subscriberesponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1009,7 +1009,7 @@ Keyword-only arguments:
 
 - `SubscriptionArn`: `str` *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1030,7 +1030,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="verify_sms_sandbox_phone_number"></a>
+<a id="verify\_sms\_sandbox\_phone\_number"></a>
 
 ### verify_sms_sandbox_phone_number
 

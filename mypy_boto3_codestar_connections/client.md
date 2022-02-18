@@ -88,7 +88,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -106,7 +106,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_connection"></a>
+<a id="create\_connection"></a>
 
 ### create_connection
 
@@ -132,7 +132,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectionOutputTypeDef](./type_defs.md#createconnectionoutputtypedef).
 
-<a id="create_host"></a>
+<a id="create\_host"></a>
 
 ### create_host
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 
 Returns [CreateHostOutputTypeDef](./type_defs.md#createhostoutputtypedef).
 
-<a id="delete_connection"></a>
+<a id="delete\_connection"></a>
 
 ### delete_connection
 
@@ -180,7 +180,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_host"></a>
+<a id="delete\_host"></a>
 
 ### delete_host
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -221,7 +221,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_connection"></a>
+<a id="get\_connection"></a>
 
 ### get_connection
 
@@ -244,7 +244,7 @@ Keyword-only arguments:
 Returns
 [GetConnectionOutputTypeDef](./type_defs.md#getconnectionoutputtypedef).
 
-<a id="get_host"></a>
+<a id="get\_host"></a>
 
 ### get_host
 
@@ -265,7 +265,7 @@ Keyword-only arguments:
 
 Returns [GetHostOutputTypeDef](./type_defs.md#gethostoutputtypedef).
 
-<a id="list_connections"></a>
+<a id="list\_connections"></a>
 
 ### list_connections
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 Returns
 [ListConnectionsOutputTypeDef](./type_defs.md#listconnectionsoutputtypedef).
 
-<a id="list_hosts"></a>
+<a id="list\_hosts"></a>
 
 ### list_hosts
 
@@ -311,7 +311,7 @@ Keyword-only arguments:
 
 Returns [ListHostsOutputTypeDef](./type_defs.md#listhostsoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -334,7 +334,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -356,7 +356,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -378,7 +378,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_host"></a>
+<a id="update\_host"></a>
 
 ### update_host
 

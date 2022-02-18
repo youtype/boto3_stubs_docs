@@ -95,7 +95,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -112,7 +112,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_group"></a>
+<a id="create\_group"></a>
 
 ### create_group
 
@@ -137,7 +137,7 @@ Keyword-only arguments:
 
 Returns [CreateGroupOutputTypeDef](./type_defs.md#creategroupoutputtypedef).
 
-<a id="delete_group"></a>
+<a id="delete\_group"></a>
 
 ### delete_group
 
@@ -158,7 +158,7 @@ Keyword-only arguments:
 
 Returns [DeleteGroupOutputTypeDef](./type_defs.md#deletegroupoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -179,7 +179,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_group"></a>
+<a id="get\_group"></a>
 
 ### get_group
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 
 Returns [GetGroupOutputTypeDef](./type_defs.md#getgroupoutputtypedef).
 
-<a id="get_group_configuration"></a>
+<a id="get\_group\_configuration"></a>
 
 ### get_group_configuration
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 Returns
 [GetGroupConfigurationOutputTypeDef](./type_defs.md#getgroupconfigurationoutputtypedef).
 
-<a id="get_group_query"></a>
+<a id="get\_group\_query"></a>
 
 ### get_group_query
 
@@ -244,7 +244,7 @@ Keyword-only arguments:
 Returns
 [GetGroupQueryOutputTypeDef](./type_defs.md#getgroupqueryoutputtypedef).
 
-<a id="get_tags"></a>
+<a id="get\_tags"></a>
 
 ### get_tags
 
@@ -265,7 +265,7 @@ Keyword-only arguments:
 
 Returns [GetTagsOutputTypeDef](./type_defs.md#gettagsoutputtypedef).
 
-<a id="group_resources"></a>
+<a id="group\_resources"></a>
 
 ### group_resources
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 Returns
 [GroupResourcesOutputTypeDef](./type_defs.md#groupresourcesoutputtypedef).
 
-<a id="list_group_resources"></a>
+<a id="list\_group\_resources"></a>
 
 ### list_group_resources
 
@@ -315,7 +315,7 @@ Keyword-only arguments:
 Returns
 [ListGroupResourcesOutputTypeDef](./type_defs.md#listgroupresourcesoutputtypedef).
 
-<a id="list_groups"></a>
+<a id="list\_groups"></a>
 
 ### list_groups
 
@@ -338,7 +338,7 @@ Keyword-only arguments:
 
 Returns [ListGroupsOutputTypeDef](./type_defs.md#listgroupsoutputtypedef).
 
-<a id="put_group_configuration"></a>
+<a id="put\_group\_configuration"></a>
 
 ### put_group_configuration
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="search_resources"></a>
+<a id="search\_resources"></a>
 
 ### search_resources
 
@@ -406,7 +406,7 @@ Keyword-only arguments:
 
 Returns [TagOutputTypeDef](./type_defs.md#tagoutputtypedef).
 
-<a id="ungroup_resources"></a>
+<a id="ungroup\_resources"></a>
 
 ### ungroup_resources
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 
 Returns [UntagOutputTypeDef](./type_defs.md#untagoutputtypedef).
 
-<a id="update_group"></a>
+<a id="update\_group"></a>
 
 ### update_group
 
@@ -472,7 +472,7 @@ Keyword-only arguments:
 
 Returns [UpdateGroupOutputTypeDef](./type_defs.md#updategroupoutputtypedef).
 
-<a id="update_group_query"></a>
+<a id="update\_group\_query"></a>
 
 ### update_group_query
 

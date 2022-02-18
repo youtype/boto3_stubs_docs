@@ -146,7 +146,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_create_variable"></a>
+<a id="batch\_create\_variable"></a>
 
 ### batch_create_variable
 
@@ -171,7 +171,7 @@ Keyword-only arguments:
 Returns
 [BatchCreateVariableResultTypeDef](./type_defs.md#batchcreatevariableresulttypedef).
 
-<a id="batch_get_variable"></a>
+<a id="batch\_get\_variable"></a>
 
 ### batch_get_variable
 
@@ -192,7 +192,7 @@ Keyword-only arguments:
 Returns
 [BatchGetVariableResultTypeDef](./type_defs.md#batchgetvariableresulttypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -209,7 +209,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_batch_import_job"></a>
+<a id="cancel\_batch\_import\_job"></a>
 
 ### cancel_batch_import_job
 
@@ -230,7 +230,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="cancel_batch_prediction_job"></a>
+<a id="cancel\_batch\_prediction\_job"></a>
 
 ### cancel_batch_prediction_job
 
@@ -251,7 +251,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_batch_import_job"></a>
+<a id="create\_batch\_import\_job"></a>
 
 ### create_batch_import_job
 
@@ -277,7 +277,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_batch_prediction_job"></a>
+<a id="create\_batch\_prediction\_job"></a>
 
 ### create_batch_prediction_job
 
@@ -305,7 +305,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_detector_version"></a>
+<a id="create\_detector\_version"></a>
 
 ### create_detector_version
 
@@ -335,7 +335,7 @@ Keyword-only arguments:
 Returns
 [CreateDetectorVersionResultTypeDef](./type_defs.md#createdetectorversionresulttypedef).
 
-<a id="create_model"></a>
+<a id="create\_model"></a>
 
 ### create_model
 
@@ -360,7 +360,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_model_version"></a>
+<a id="create\_model\_version"></a>
 
 ### create_model_version
 
@@ -395,7 +395,7 @@ Keyword-only arguments:
 Returns
 [CreateModelVersionResultTypeDef](./type_defs.md#createmodelversionresulttypedef).
 
-<a id="create_rule"></a>
+<a id="create\_rule"></a>
 
 ### create_rule
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 
 Returns [CreateRuleResultTypeDef](./type_defs.md#createruleresulttypedef).
 
-<a id="create_variable"></a>
+<a id="create\_variable"></a>
 
 ### create_variable
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_batch_import_job"></a>
+<a id="delete\_batch\_import\_job"></a>
 
 ### delete_batch_import_job
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_batch_prediction_job"></a>
+<a id="delete\_batch\_prediction\_job"></a>
 
 ### delete_batch_prediction_job
 
@@ -490,7 +490,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_detector"></a>
+<a id="delete\_detector"></a>
 
 ### delete_detector
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_detector_version"></a>
+<a id="delete\_detector\_version"></a>
 
 ### delete_detector_version
 
@@ -532,7 +532,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_entity_type"></a>
+<a id="delete\_entity\_type"></a>
 
 ### delete_entity_type
 
@@ -552,7 +552,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_event"></a>
+<a id="delete\_event"></a>
 
 ### delete_event
 
@@ -574,7 +574,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_event_type"></a>
+<a id="delete\_event\_type"></a>
 
 ### delete_event_type
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_events_by_event_type"></a>
+<a id="delete\_events\_by\_event\_type"></a>
 
 ### delete_events_by_event_type
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 Returns
 [DeleteEventsByEventTypeResultTypeDef](./type_defs.md#deleteeventsbyeventtyperesulttypedef).
 
-<a id="delete_external_model"></a>
+<a id="delete\_external\_model"></a>
 
 ### delete_external_model
 
@@ -637,7 +637,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_label"></a>
+<a id="delete\_label"></a>
 
 ### delete_label
 
@@ -657,7 +657,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_model"></a>
+<a id="delete\_model"></a>
 
 ### delete_model
 
@@ -679,7 +679,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_model_version"></a>
+<a id="delete\_model\_version"></a>
 
 ### delete_model_version
 
@@ -703,7 +703,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_outcome"></a>
+<a id="delete\_outcome"></a>
 
 ### delete_outcome
 
@@ -723,7 +723,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_rule"></a>
+<a id="delete\_rule"></a>
 
 ### delete_rule
 
@@ -743,7 +743,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_variable"></a>
+<a id="delete\_variable"></a>
 
 ### delete_variable
 
@@ -763,7 +763,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_detector"></a>
+<a id="describe\_detector"></a>
 
 ### describe_detector
 
@@ -786,7 +786,7 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorResultTypeDef](./type_defs.md#describedetectorresulttypedef).
 
-<a id="describe_model_versions"></a>
+<a id="describe\_model\_versions"></a>
 
 ### describe_model_versions
 
@@ -813,7 +813,7 @@ Keyword-only arguments:
 Returns
 [DescribeModelVersionsResultTypeDef](./type_defs.md#describemodelversionsresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -834,7 +834,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_batch_import_jobs"></a>
+<a id="get\_batch\_import\_jobs"></a>
 
 ### get_batch_import_jobs
 
@@ -858,7 +858,7 @@ Keyword-only arguments:
 Returns
 [GetBatchImportJobsResultTypeDef](./type_defs.md#getbatchimportjobsresulttypedef).
 
-<a id="get_batch_prediction_jobs"></a>
+<a id="get\_batch\_prediction\_jobs"></a>
 
 ### get_batch_prediction_jobs
 
@@ -882,7 +882,7 @@ Keyword-only arguments:
 Returns
 [GetBatchPredictionJobsResultTypeDef](./type_defs.md#getbatchpredictionjobsresulttypedef).
 
-<a id="get_delete_events_by_event_type_status"></a>
+<a id="get\_delete\_events\_by\_event\_type\_status"></a>
 
 ### get_delete_events_by_event_type_status
 
@@ -904,7 +904,7 @@ Keyword-only arguments:
 Returns
 [GetDeleteEventsByEventTypeStatusResultTypeDef](./type_defs.md#getdeleteeventsbyeventtypestatusresulttypedef).
 
-<a id="get_detector_version"></a>
+<a id="get\_detector\_version"></a>
 
 ### get_detector_version
 
@@ -927,7 +927,7 @@ Keyword-only arguments:
 Returns
 [GetDetectorVersionResultTypeDef](./type_defs.md#getdetectorversionresulttypedef).
 
-<a id="get_detectors"></a>
+<a id="get\_detectors"></a>
 
 ### get_detectors
 
@@ -949,7 +949,7 @@ Keyword-only arguments:
 
 Returns [GetDetectorsResultTypeDef](./type_defs.md#getdetectorsresulttypedef).
 
-<a id="get_entity_types"></a>
+<a id="get\_entity\_types"></a>
 
 ### get_entity_types
 
@@ -972,7 +972,7 @@ Keyword-only arguments:
 Returns
 [GetEntityTypesResultTypeDef](./type_defs.md#getentitytypesresulttypedef).
 
-<a id="get_event"></a>
+<a id="get\_event"></a>
 
 ### get_event
 
@@ -993,7 +993,7 @@ Keyword-only arguments:
 
 Returns [GetEventResultTypeDef](./type_defs.md#geteventresulttypedef).
 
-<a id="get_event_prediction"></a>
+<a id="get\_event\_prediction"></a>
 
 ### get_event_prediction
 
@@ -1024,7 +1024,7 @@ Keyword-only arguments:
 Returns
 [GetEventPredictionResultTypeDef](./type_defs.md#geteventpredictionresulttypedef).
 
-<a id="get_event_prediction_metadata"></a>
+<a id="get\_event\_prediction\_metadata"></a>
 
 ### get_event_prediction_metadata
 
@@ -1052,7 +1052,7 @@ Keyword-only arguments:
 Returns
 [GetEventPredictionMetadataResultTypeDef](./type_defs.md#geteventpredictionmetadataresulttypedef).
 
-<a id="get_event_types"></a>
+<a id="get\_event\_types"></a>
 
 ### get_event_types
 
@@ -1075,7 +1075,7 @@ Keyword-only arguments:
 Returns
 [GetEventTypesResultTypeDef](./type_defs.md#geteventtypesresulttypedef).
 
-<a id="get_external_models"></a>
+<a id="get\_external\_models"></a>
 
 ### get_external_models
 
@@ -1100,7 +1100,7 @@ Keyword-only arguments:
 Returns
 [GetExternalModelsResultTypeDef](./type_defs.md#getexternalmodelsresulttypedef).
 
-<a id="get_kms_encryption_key"></a>
+<a id="get\_kms\_encryption\_key"></a>
 
 ### get_kms_encryption_key
 
@@ -1116,7 +1116,7 @@ Boto3 documentation:
 Returns
 [GetKMSEncryptionKeyResultTypeDef](./type_defs.md#getkmsencryptionkeyresulttypedef).
 
-<a id="get_labels"></a>
+<a id="get\_labels"></a>
 
 ### get_labels
 
@@ -1138,7 +1138,7 @@ Keyword-only arguments:
 
 Returns [GetLabelsResultTypeDef](./type_defs.md#getlabelsresulttypedef).
 
-<a id="get_model_version"></a>
+<a id="get\_model\_version"></a>
 
 ### get_model_version
 
@@ -1162,7 +1162,7 @@ Keyword-only arguments:
 Returns
 [GetModelVersionResultTypeDef](./type_defs.md#getmodelversionresulttypedef).
 
-<a id="get_models"></a>
+<a id="get\_models"></a>
 
 ### get_models
 
@@ -1185,7 +1185,7 @@ Keyword-only arguments:
 
 Returns [GetModelsResultTypeDef](./type_defs.md#getmodelsresulttypedef).
 
-<a id="get_outcomes"></a>
+<a id="get\_outcomes"></a>
 
 ### get_outcomes
 
@@ -1207,7 +1207,7 @@ Keyword-only arguments:
 
 Returns [GetOutcomesResultTypeDef](./type_defs.md#getoutcomesresulttypedef).
 
-<a id="get_rules"></a>
+<a id="get\_rules"></a>
 
 ### get_rules
 
@@ -1232,7 +1232,7 @@ Keyword-only arguments:
 
 Returns [GetRulesResultTypeDef](./type_defs.md#getrulesresulttypedef).
 
-<a id="get_variables"></a>
+<a id="get\_variables"></a>
 
 ### get_variables
 
@@ -1254,7 +1254,7 @@ Keyword-only arguments:
 
 Returns [GetVariablesResultTypeDef](./type_defs.md#getvariablesresulttypedef).
 
-<a id="list_event_predictions"></a>
+<a id="list\_event\_predictions"></a>
 
 ### list_event_predictions
 
@@ -1284,7 +1284,7 @@ Keyword-only arguments:
 Returns
 [ListEventPredictionsResultTypeDef](./type_defs.md#listeventpredictionsresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1308,7 +1308,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
-<a id="put_detector"></a>
+<a id="put\_detector"></a>
 
 ### put_detector
 
@@ -1331,7 +1331,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_entity_type"></a>
+<a id="put\_entity\_type"></a>
 
 ### put_entity_type
 
@@ -1353,7 +1353,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_event_type"></a>
+<a id="put\_event\_type"></a>
 
 ### put_event_type
 
@@ -1379,7 +1379,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_external_model"></a>
+<a id="put\_external\_model"></a>
 
 ### put_external_model
 
@@ -1411,7 +1411,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_kms_encryption_key"></a>
+<a id="put\_kms\_encryption\_key"></a>
 
 ### put_kms_encryption_key
 
@@ -1432,7 +1432,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_label"></a>
+<a id="put\_label"></a>
 
 ### put_label
 
@@ -1454,7 +1454,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_outcome"></a>
+<a id="put\_outcome"></a>
 
 ### put_outcome
 
@@ -1476,7 +1476,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="send_event"></a>
+<a id="send\_event"></a>
 
 ### send_event
 
@@ -1504,7 +1504,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1525,7 +1525,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1546,7 +1546,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_detector_version"></a>
+<a id="update\_detector\_version"></a>
 
 ### update_detector_version
 
@@ -1575,7 +1575,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_detector_version_metadata"></a>
+<a id="update\_detector\_version\_metadata"></a>
 
 ### update_detector_version_metadata
 
@@ -1598,7 +1598,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_detector_version_status"></a>
+<a id="update\_detector\_version\_status"></a>
 
 ### update_detector_version_status
 
@@ -1623,7 +1623,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_event_label"></a>
+<a id="update\_event\_label"></a>
 
 ### update_event_label
 
@@ -1646,7 +1646,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_model"></a>
+<a id="update\_model"></a>
 
 ### update_model
 
@@ -1669,7 +1669,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_model_version"></a>
+<a id="update\_model\_version"></a>
 
 ### update_model_version
 
@@ -1699,7 +1699,7 @@ Keyword-only arguments:
 Returns
 [UpdateModelVersionResultTypeDef](./type_defs.md#updatemodelversionresulttypedef).
 
-<a id="update_model_version_status"></a>
+<a id="update\_model\_version\_status"></a>
 
 ### update_model_version_status
 
@@ -1725,7 +1725,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_rule_metadata"></a>
+<a id="update\_rule\_metadata"></a>
 
 ### update_rule_metadata
 
@@ -1747,7 +1747,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_rule_version"></a>
+<a id="update\_rule\_version"></a>
 
 ### update_rule_version
 
@@ -1775,7 +1775,7 @@ Keyword-only arguments:
 Returns
 [UpdateRuleVersionResultTypeDef](./type_defs.md#updateruleversionresulttypedef).
 
-<a id="update_variable"></a>
+<a id="update\_variable"></a>
 
 ### update_variable
 

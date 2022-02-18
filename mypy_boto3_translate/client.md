@@ -99,7 +99,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -116,7 +116,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_parallel_data"></a>
+<a id="create\_parallel\_data"></a>
 
 ### create_parallel_data
 
@@ -144,7 +144,7 @@ Keyword-only arguments:
 Returns
 [CreateParallelDataResponseTypeDef](./type_defs.md#createparalleldataresponsetypedef).
 
-<a id="delete_parallel_data"></a>
+<a id="delete\_parallel\_data"></a>
 
 ### delete_parallel_data
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [DeleteParallelDataResponseTypeDef](./type_defs.md#deleteparalleldataresponsetypedef).
 
-<a id="delete_terminology"></a>
+<a id="delete\_terminology"></a>
 
 ### delete_terminology
 
@@ -183,7 +183,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-<a id="describe_text_translation_job"></a>
+<a id="describe\_text\_translation\_job"></a>
 
 ### describe_text_translation_job
 
@@ -207,7 +207,7 @@ Keyword-only arguments:
 Returns
 [DescribeTextTranslationJobResponseTypeDef](./type_defs.md#describetexttranslationjobresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -227,7 +227,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_parallel_data"></a>
+<a id="get\_parallel\_data"></a>
 
 ### get_parallel_data
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 Returns
 [GetParallelDataResponseTypeDef](./type_defs.md#getparalleldataresponsetypedef).
 
-<a id="get_terminology"></a>
+<a id="get\_terminology"></a>
 
 ### get_terminology
 
@@ -271,7 +271,7 @@ Keyword-only arguments:
 Returns
 [GetTerminologyResponseTypeDef](./type_defs.md#getterminologyresponsetypedef).
 
-<a id="import_terminology"></a>
+<a id="import\_terminology"></a>
 
 ### import_terminology
 
@@ -299,7 +299,7 @@ Keyword-only arguments:
 Returns
 [ImportTerminologyResponseTypeDef](./type_defs.md#importterminologyresponsetypedef).
 
-<a id="list_parallel_data"></a>
+<a id="list\_parallel\_data"></a>
 
 ### list_parallel_data
 
@@ -321,7 +321,7 @@ Keyword-only arguments:
 Returns
 [ListParallelDataResponseTypeDef](./type_defs.md#listparalleldataresponsetypedef).
 
-<a id="list_terminologies"></a>
+<a id="list\_terminologies"></a>
 
 ### list_terminologies
 
@@ -343,7 +343,7 @@ Keyword-only arguments:
 Returns
 [ListTerminologiesResponseTypeDef](./type_defs.md#listterminologiesresponsetypedef).
 
-<a id="list_text_translation_jobs"></a>
+<a id="list\_text\_translation\_jobs"></a>
 
 ### list_text_translation_jobs
 
@@ -368,7 +368,7 @@ Keyword-only arguments:
 Returns
 [ListTextTranslationJobsResponseTypeDef](./type_defs.md#listtexttranslationjobsresponsetypedef).
 
-<a id="start_text_translation_job"></a>
+<a id="start\_text\_translation\_job"></a>
 
 ### start_text_translation_job
 
@@ -403,7 +403,7 @@ Keyword-only arguments:
 Returns
 [StartTextTranslationJobResponseTypeDef](./type_defs.md#starttexttranslationjobresponsetypedef).
 
-<a id="stop_text_translation_job"></a>
+<a id="stop\_text\_translation\_job"></a>
 
 ### stop_text_translation_job
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 Returns
 [StopTextTranslationJobResponseTypeDef](./type_defs.md#stoptexttranslationjobresponsetypedef).
 
-<a id="translate_text"></a>
+<a id="translate\_text"></a>
 
 ### translate_text
 
@@ -451,7 +451,7 @@ Keyword-only arguments:
 Returns
 [TranslateTextResponseTypeDef](./type_defs.md#translatetextresponsetypedef).
 
-<a id="update_parallel_data"></a>
+<a id="update\_parallel\_data"></a>
 
 ### update_parallel_data
 

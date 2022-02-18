@@ -134,7 +134,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_lf_tags_to_resource"></a>
+<a id="add\_lf\_tags\_to\_resource"></a>
 
 ### add_lf_tags_to_resource
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 Returns
 [AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef).
 
-<a id="batch_grant_permissions"></a>
+<a id="batch\_grant\_permissions"></a>
 
 ### batch_grant_permissions
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 Returns
 [BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef).
 
-<a id="batch_revoke_permissions"></a>
+<a id="batch\_revoke\_permissions"></a>
 
 ### batch_revoke_permissions
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [BatchRevokePermissionsResponseTypeDef](./type_defs.md#batchrevokepermissionsresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -226,7 +226,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_transaction"></a>
+<a id="cancel\_transaction"></a>
 
 ### cancel_transaction
 
@@ -246,7 +246,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="commit_transaction"></a>
+<a id="commit\_transaction"></a>
 
 ### commit_transaction
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 Returns
 [CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
 
-<a id="create_data_cells_filter"></a>
+<a id="create\_data\_cells\_filter"></a>
 
 ### create_data_cells_filter
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_lf_tag"></a>
+<a id="create\_lf\_tag"></a>
 
 ### create_lf_tag
 
@@ -312,7 +312,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_data_cells_filter"></a>
+<a id="delete\_data\_cells\_filter"></a>
 
 ### delete_data_cells_filter
 
@@ -336,7 +336,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_lf_tag"></a>
+<a id="delete\_lf\_tag"></a>
 
 ### delete_lf_tag
 
@@ -357,7 +357,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_objects_on_cancel"></a>
+<a id="delete\_objects\_on\_cancel"></a>
 
 ### delete_objects_on_cancel
 
@@ -386,7 +386,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="deregister_resource"></a>
+<a id="deregister\_resource"></a>
 
 ### deregister_resource
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_resource"></a>
+<a id="describe\_resource"></a>
 
 ### describe_resource
 
@@ -429,7 +429,7 @@ Keyword-only arguments:
 Returns
 [DescribeResourceResponseTypeDef](./type_defs.md#describeresourceresponsetypedef).
 
-<a id="describe_transaction"></a>
+<a id="describe\_transaction"></a>
 
 ### describe_transaction
 
@@ -451,7 +451,7 @@ Keyword-only arguments:
 Returns
 [DescribeTransactionResponseTypeDef](./type_defs.md#describetransactionresponsetypedef).
 
-<a id="extend_transaction"></a>
+<a id="extend\_transaction"></a>
 
 ### extend_transaction
 
@@ -472,7 +472,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -493,7 +493,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_data_lake_settings"></a>
+<a id="get\_data\_lake\_settings"></a>
 
 ### get_data_lake_settings
 
@@ -516,7 +516,7 @@ Keyword-only arguments:
 Returns
 [GetDataLakeSettingsResponseTypeDef](./type_defs.md#getdatalakesettingsresponsetypedef).
 
-<a id="get_effective_permissions_for_path"></a>
+<a id="get\_effective\_permissions\_for\_path"></a>
 
 ### get_effective_permissions_for_path
 
@@ -542,7 +542,7 @@ Keyword-only arguments:
 Returns
 [GetEffectivePermissionsForPathResponseTypeDef](./type_defs.md#geteffectivepermissionsforpathresponsetypedef).
 
-<a id="get_lf_tag"></a>
+<a id="get\_lf\_tag"></a>
 
 ### get_lf_tag
 
@@ -563,7 +563,7 @@ Keyword-only arguments:
 
 Returns [GetLFTagResponseTypeDef](./type_defs.md#getlftagresponsetypedef).
 
-<a id="get_query_state"></a>
+<a id="get\_query\_state"></a>
 
 ### get_query_state
 
@@ -584,7 +584,7 @@ Keyword-only arguments:
 Returns
 [GetQueryStateResponseTypeDef](./type_defs.md#getquerystateresponsetypedef).
 
-<a id="get_query_statistics"></a>
+<a id="get\_query\_statistics"></a>
 
 ### get_query_statistics
 
@@ -606,7 +606,7 @@ Keyword-only arguments:
 Returns
 [GetQueryStatisticsResponseTypeDef](./type_defs.md#getquerystatisticsresponsetypedef).
 
-<a id="get_resource_lf_tags"></a>
+<a id="get\_resource\_lf\_tags"></a>
 
 ### get_resource_lf_tags
 
@@ -630,7 +630,7 @@ Keyword-only arguments:
 Returns
 [GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef).
 
-<a id="get_table_objects"></a>
+<a id="get\_table\_objects"></a>
 
 ### get_table_objects
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 Returns
 [GetTableObjectsResponseTypeDef](./type_defs.md#gettableobjectsresponsetypedef).
 
-<a id="get_temporary_glue_partition_credentials"></a>
+<a id="get\_temporary\_glue\_partition\_credentials"></a>
 
 ### get_temporary_glue_partition_credentials
 
@@ -691,7 +691,7 @@ Keyword-only arguments:
 Returns
 [GetTemporaryGluePartitionCredentialsResponseTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsresponsetypedef).
 
-<a id="get_temporary_glue_table_credentials"></a>
+<a id="get\_temporary\_glue\_table\_credentials"></a>
 
 ### get_temporary_glue_table_credentials
 
@@ -720,7 +720,7 @@ Keyword-only arguments:
 Returns
 [GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef).
 
-<a id="get_work_unit_results"></a>
+<a id="get\_work\_unit\_results"></a>
 
 ### get_work_unit_results
 
@@ -744,7 +744,7 @@ Keyword-only arguments:
 Returns
 [GetWorkUnitResultsResponseTypeDef](./type_defs.md#getworkunitresultsresponsetypedef).
 
-<a id="get_work_units"></a>
+<a id="get\_work\_units"></a>
 
 ### get_work_units
 
@@ -767,7 +767,7 @@ Keyword-only arguments:
 Returns
 [GetWorkUnitsResponseTypeDef](./type_defs.md#getworkunitsresponsetypedef).
 
-<a id="grant_permissions"></a>
+<a id="grant\_permissions"></a>
 
 ### grant_permissions
 
@@ -796,7 +796,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="list_data_cells_filter"></a>
+<a id="list\_data\_cells\_filter"></a>
 
 ### list_data_cells_filter
 
@@ -820,7 +820,7 @@ Keyword-only arguments:
 Returns
 [ListDataCellsFilterResponseTypeDef](./type_defs.md#listdatacellsfilterresponsetypedef).
 
-<a id="list_lf_tags"></a>
+<a id="list\_lf\_tags"></a>
 
 ### list_lf_tags
 
@@ -844,7 +844,7 @@ Keyword-only arguments:
 
 Returns [ListLFTagsResponseTypeDef](./type_defs.md#listlftagsresponsetypedef).
 
-<a id="list_permissions"></a>
+<a id="list\_permissions"></a>
 
 ### list_permissions
 
@@ -874,7 +874,7 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
-<a id="list_resources"></a>
+<a id="list\_resources"></a>
 
 ### list_resources
 
@@ -898,7 +898,7 @@ Keyword-only arguments:
 Returns
 [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
-<a id="list_table_storage_optimizers"></a>
+<a id="list\_table\_storage\_optimizers"></a>
 
 ### list_table_storage_optimizers
 
@@ -926,7 +926,7 @@ Keyword-only arguments:
 Returns
 [ListTableStorageOptimizersResponseTypeDef](./type_defs.md#listtablestorageoptimizersresponsetypedef).
 
-<a id="list_transactions"></a>
+<a id="list\_transactions"></a>
 
 ### list_transactions
 
@@ -951,7 +951,7 @@ Keyword-only arguments:
 Returns
 [ListTransactionsResponseTypeDef](./type_defs.md#listtransactionsresponsetypedef).
 
-<a id="put_data_lake_settings"></a>
+<a id="put\_data\_lake\_settings"></a>
 
 ### put_data_lake_settings
 
@@ -976,7 +976,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="register_resource"></a>
+<a id="register\_resource"></a>
 
 ### register_resource
 
@@ -998,7 +998,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="remove_lf_tags_from_resource"></a>
+<a id="remove\_lf\_tags\_from\_resource"></a>
 
 ### remove_lf_tags_from_resource
 
@@ -1023,7 +1023,7 @@ Keyword-only arguments:
 Returns
 [RemoveLFTagsFromResourceResponseTypeDef](./type_defs.md#removelftagsfromresourceresponsetypedef).
 
-<a id="revoke_permissions"></a>
+<a id="revoke\_permissions"></a>
 
 ### revoke_permissions
 
@@ -1052,7 +1052,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="search_databases_by_lf_tags"></a>
+<a id="search\_databases\_by\_lf\_tags"></a>
 
 ### search_databases_by_lf_tags
 
@@ -1078,7 +1078,7 @@ Keyword-only arguments:
 Returns
 [SearchDatabasesByLFTagsResponseTypeDef](./type_defs.md#searchdatabasesbylftagsresponsetypedef).
 
-<a id="search_tables_by_lf_tags"></a>
+<a id="search\_tables\_by\_lf\_tags"></a>
 
 ### search_tables_by_lf_tags
 
@@ -1104,7 +1104,7 @@ Keyword-only arguments:
 Returns
 [SearchTablesByLFTagsResponseTypeDef](./type_defs.md#searchtablesbylftagsresponsetypedef).
 
-<a id="start_query_planning"></a>
+<a id="start\_query\_planning"></a>
 
 ### start_query_planning
 
@@ -1129,7 +1129,7 @@ Keyword-only arguments:
 Returns
 [StartQueryPlanningResponseTypeDef](./type_defs.md#startqueryplanningresponsetypedef).
 
-<a id="start_transaction"></a>
+<a id="start\_transaction"></a>
 
 ### start_transaction
 
@@ -1150,7 +1150,7 @@ Keyword-only arguments:
 Returns
 [StartTransactionResponseTypeDef](./type_defs.md#starttransactionresponsetypedef).
 
-<a id="update_lf_tag"></a>
+<a id="update\_lf\_tag"></a>
 
 ### update_lf_tag
 
@@ -1173,7 +1173,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_resource"></a>
+<a id="update\_resource"></a>
 
 ### update_resource
 
@@ -1195,7 +1195,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_table_objects"></a>
+<a id="update\_table\_objects"></a>
 
 ### update_table_objects
 
@@ -1223,7 +1223,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_table_storage_optimizer"></a>
+<a id="update\_table\_storage\_optimizer"></a>
 
 ### update_table_storage_optimizer
 

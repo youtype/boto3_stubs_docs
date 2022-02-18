@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [OpsWorksClient](#opsworksclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -49,9 +50,11 @@ Install `boto3-stubs` for `OpsWorks` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[opsworks]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[opsworks]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-opsworks
@@ -64,6 +67,12 @@ python -m pip install mypy-boto3-opsworks
 ```bash
 python -m pip uninstall -y mypy-boto3-opsworks
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="opsworksclient"></a>
 

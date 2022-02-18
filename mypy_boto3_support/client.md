@@ -95,7 +95,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_attachments_to_set"></a>
+<a id="add\_attachments\_to\_set"></a>
 
 ### add_attachments_to_set
 
@@ -119,7 +119,7 @@ Keyword-only arguments:
 Returns
 [AddAttachmentsToSetResponseTypeDef](./type_defs.md#addattachmentstosetresponsetypedef).
 
-<a id="add_communication_to_case"></a>
+<a id="add\_communication\_to\_case"></a>
 
 ### add_communication_to_case
 
@@ -144,7 +144,7 @@ Keyword-only arguments:
 Returns
 [AddCommunicationToCaseResponseTypeDef](./type_defs.md#addcommunicationtocaseresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -161,7 +161,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_case"></a>
+<a id="create\_case"></a>
 
 ### create_case
 
@@ -189,7 +189,7 @@ Keyword-only arguments:
 
 Returns [CreateCaseResponseTypeDef](./type_defs.md#createcaseresponsetypedef).
 
-<a id="describe_attachment"></a>
+<a id="describe\_attachment"></a>
 
 ### describe_attachment
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 Returns
 [DescribeAttachmentResponseTypeDef](./type_defs.md#describeattachmentresponsetypedef).
 
-<a id="describe_cases"></a>
+<a id="describe\_cases"></a>
 
 ### describe_cases
 
@@ -239,7 +239,7 @@ Keyword-only arguments:
 Returns
 [DescribeCasesResponseTypeDef](./type_defs.md#describecasesresponsetypedef).
 
-<a id="describe_communications"></a>
+<a id="describe\_communications"></a>
 
 ### describe_communications
 
@@ -264,7 +264,7 @@ Keyword-only arguments:
 Returns
 [DescribeCommunicationsResponseTypeDef](./type_defs.md#describecommunicationsresponsetypedef).
 
-<a id="describe_services"></a>
+<a id="describe\_services"></a>
 
 ### describe_services
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 Returns
 [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
-<a id="describe_severity_levels"></a>
+<a id="describe\_severity\_levels"></a>
 
 ### describe_severity_levels
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 Returns
 [DescribeSeverityLevelsResponseTypeDef](./type_defs.md#describeseveritylevelsresponsetypedef).
 
-<a id="describe_trusted_advisor_check_refresh_statuses"></a>
+<a id="describe\_trusted\_advisor\_check\_refresh\_statuses"></a>
 
 ### describe_trusted_advisor_check_refresh_statuses
 
@@ -332,7 +332,7 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorCheckRefreshStatusesResponseTypeDef](./type_defs.md#describetrustedadvisorcheckrefreshstatusesresponsetypedef).
 
-<a id="describe_trusted_advisor_check_result"></a>
+<a id="describe\_trusted\_advisor\_check\_result"></a>
 
 ### describe_trusted_advisor_check_result
 
@@ -356,7 +356,7 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorCheckResultResponseTypeDef](./type_defs.md#describetrustedadvisorcheckresultresponsetypedef).
 
-<a id="describe_trusted_advisor_check_summaries"></a>
+<a id="describe\_trusted\_advisor\_check\_summaries"></a>
 
 ### describe_trusted_advisor_check_summaries
 
@@ -379,7 +379,7 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorCheckSummariesResponseTypeDef](./type_defs.md#describetrustedadvisorchecksummariesresponsetypedef).
 
-<a id="describe_trusted_advisor_checks"></a>
+<a id="describe\_trusted\_advisor\_checks"></a>
 
 ### describe_trusted_advisor_checks
 
@@ -402,7 +402,7 @@ Keyword-only arguments:
 Returns
 [DescribeTrustedAdvisorChecksResponseTypeDef](./type_defs.md#describetrustedadvisorchecksresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -422,7 +422,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="refresh_trusted_advisor_check"></a>
+<a id="refresh\_trusted\_advisor\_check"></a>
 
 ### refresh_trusted_advisor_check
 
@@ -444,7 +444,7 @@ Keyword-only arguments:
 Returns
 [RefreshTrustedAdvisorCheckResponseTypeDef](./type_defs.md#refreshtrustedadvisorcheckresponsetypedef).
 
-<a id="resolve_case"></a>
+<a id="resolve\_case"></a>
 
 ### resolve_case
 

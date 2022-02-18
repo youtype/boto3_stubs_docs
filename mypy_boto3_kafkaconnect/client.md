@@ -91,7 +91,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -108,7 +108,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_connector"></a>
+<a id="create\_connector"></a>
 
 ### create_connector
 
@@ -147,7 +147,7 @@ Keyword-only arguments:
 Returns
 [CreateConnectorResponseTypeDef](./type_defs.md#createconnectorresponsetypedef).
 
-<a id="create_custom_plugin"></a>
+<a id="create\_custom\_plugin"></a>
 
 ### create_custom_plugin
 
@@ -176,7 +176,7 @@ Keyword-only arguments:
 Returns
 [CreateCustomPluginResponseTypeDef](./type_defs.md#createcustompluginresponsetypedef).
 
-<a id="create_worker_configuration"></a>
+<a id="create\_worker\_configuration"></a>
 
 ### create_worker_configuration
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 Returns
 [CreateWorkerConfigurationResponseTypeDef](./type_defs.md#createworkerconfigurationresponsetypedef).
 
-<a id="delete_connector"></a>
+<a id="delete\_connector"></a>
 
 ### delete_connector
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 Returns
 [DeleteConnectorResponseTypeDef](./type_defs.md#deleteconnectorresponsetypedef).
 
-<a id="describe_connector"></a>
+<a id="describe\_connector"></a>
 
 ### describe_connector
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 Returns
 [DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef).
 
-<a id="describe_custom_plugin"></a>
+<a id="describe\_custom\_plugin"></a>
 
 ### describe_custom_plugin
 
@@ -265,7 +265,7 @@ Keyword-only arguments:
 Returns
 [DescribeCustomPluginResponseTypeDef](./type_defs.md#describecustompluginresponsetypedef).
 
-<a id="describe_worker_configuration"></a>
+<a id="describe\_worker\_configuration"></a>
 
 ### describe_worker_configuration
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkerConfigurationResponseTypeDef](./type_defs.md#describeworkerconfigurationresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -308,7 +308,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_connectors"></a>
+<a id="list\_connectors"></a>
 
 ### list_connectors
 
@@ -331,7 +331,7 @@ Keyword-only arguments:
 Returns
 [ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef).
 
-<a id="list_custom_plugins"></a>
+<a id="list\_custom\_plugins"></a>
 
 ### list_custom_plugins
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 Returns
 [ListCustomPluginsResponseTypeDef](./type_defs.md#listcustompluginsresponsetypedef).
 
-<a id="list_worker_configurations"></a>
+<a id="list\_worker\_configurations"></a>
 
 ### list_worker_configurations
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [ListWorkerConfigurationsResponseTypeDef](./type_defs.md#listworkerconfigurationsresponsetypedef).
 
-<a id="update_connector"></a>
+<a id="update\_connector"></a>
 
 ### update_connector
 

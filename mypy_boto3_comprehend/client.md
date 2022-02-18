@@ -155,7 +155,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_detect_dominant_language"></a>
+<a id="batch\_detect\_dominant\_language"></a>
 
 ### batch_detect_dominant_language
 
@@ -177,7 +177,7 @@ Keyword-only arguments:
 Returns
 [BatchDetectDominantLanguageResponseTypeDef](./type_defs.md#batchdetectdominantlanguageresponsetypedef).
 
-<a id="batch_detect_entities"></a>
+<a id="batch\_detect\_entities"></a>
 
 ### batch_detect_entities
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 Returns
 [BatchDetectEntitiesResponseTypeDef](./type_defs.md#batchdetectentitiesresponsetypedef).
 
-<a id="batch_detect_key_phrases"></a>
+<a id="batch\_detect\_key\_phrases"></a>
 
 ### batch_detect_key_phrases
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 Returns
 [BatchDetectKeyPhrasesResponseTypeDef](./type_defs.md#batchdetectkeyphrasesresponsetypedef).
 
-<a id="batch_detect_sentiment"></a>
+<a id="batch\_detect\_sentiment"></a>
 
 ### batch_detect_sentiment
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 Returns
 [BatchDetectSentimentResponseTypeDef](./type_defs.md#batchdetectsentimentresponsetypedef).
 
-<a id="batch_detect_syntax"></a>
+<a id="batch\_detect\_syntax"></a>
 
 ### batch_detect_syntax
 
@@ -274,7 +274,7 @@ Keyword-only arguments:
 Returns
 [BatchDetectSyntaxResponseTypeDef](./type_defs.md#batchdetectsyntaxresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -291,7 +291,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="classify_document"></a>
+<a id="classify\_document"></a>
 
 ### classify_document
 
@@ -314,7 +314,7 @@ Keyword-only arguments:
 Returns
 [ClassifyDocumentResponseTypeDef](./type_defs.md#classifydocumentresponsetypedef).
 
-<a id="contains_pii_entities"></a>
+<a id="contains\_pii\_entities"></a>
 
 ### contains_pii_entities
 
@@ -339,7 +339,7 @@ Keyword-only arguments:
 Returns
 [ContainsPiiEntitiesResponseTypeDef](./type_defs.md#containspiientitiesresponsetypedef).
 
-<a id="create_document_classifier"></a>
+<a id="create\_document\_classifier"></a>
 
 ### create_document_classifier
 
@@ -378,7 +378,7 @@ Keyword-only arguments:
 Returns
 [CreateDocumentClassifierResponseTypeDef](./type_defs.md#createdocumentclassifierresponsetypedef).
 
-<a id="create_endpoint"></a>
+<a id="create\_endpoint"></a>
 
 ### create_endpoint
 
@@ -406,7 +406,7 @@ Keyword-only arguments:
 Returns
 [CreateEndpointResponseTypeDef](./type_defs.md#createendpointresponsetypedef).
 
-<a id="create_entity_recognizer"></a>
+<a id="create\_entity\_recognizer"></a>
 
 ### create_entity_recognizer
 
@@ -441,7 +441,7 @@ Keyword-only arguments:
 Returns
 [CreateEntityRecognizerResponseTypeDef](./type_defs.md#createentityrecognizerresponsetypedef).
 
-<a id="delete_document_classifier"></a>
+<a id="delete\_document\_classifier"></a>
 
 ### delete_document_classifier
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_endpoint"></a>
+<a id="delete\_endpoint"></a>
 
 ### delete_endpoint
 
@@ -483,7 +483,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_entity_recognizer"></a>
+<a id="delete\_entity\_recognizer"></a>
 
 ### delete_entity_recognizer
 
@@ -504,7 +504,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_resource_policy"></a>
+<a id="delete\_resource\_policy"></a>
 
 ### delete_resource_policy
 
@@ -526,7 +526,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_document_classification_job"></a>
+<a id="describe\_document\_classification\_job"></a>
 
 ### describe_document_classification_job
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 Returns
 [DescribeDocumentClassificationJobResponseTypeDef](./type_defs.md#describedocumentclassificationjobresponsetypedef).
 
-<a id="describe_document_classifier"></a>
+<a id="describe\_document\_classifier"></a>
 
 ### describe_document_classifier
 
@@ -570,7 +570,7 @@ Keyword-only arguments:
 Returns
 [DescribeDocumentClassifierResponseTypeDef](./type_defs.md#describedocumentclassifierresponsetypedef).
 
-<a id="describe_dominant_language_detection_job"></a>
+<a id="describe\_dominant\_language\_detection\_job"></a>
 
 ### describe_dominant_language_detection_job
 
@@ -592,7 +592,7 @@ Keyword-only arguments:
 Returns
 [DescribeDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#describedominantlanguagedetectionjobresponsetypedef).
 
-<a id="describe_endpoint"></a>
+<a id="describe\_endpoint"></a>
 
 ### describe_endpoint
 
@@ -613,7 +613,7 @@ Keyword-only arguments:
 Returns
 [DescribeEndpointResponseTypeDef](./type_defs.md#describeendpointresponsetypedef).
 
-<a id="describe_entities_detection_job"></a>
+<a id="describe\_entities\_detection\_job"></a>
 
 ### describe_entities_detection_job
 
@@ -635,7 +635,7 @@ Keyword-only arguments:
 Returns
 [DescribeEntitiesDetectionJobResponseTypeDef](./type_defs.md#describeentitiesdetectionjobresponsetypedef).
 
-<a id="describe_entity_recognizer"></a>
+<a id="describe\_entity\_recognizer"></a>
 
 ### describe_entity_recognizer
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 Returns
 [DescribeEntityRecognizerResponseTypeDef](./type_defs.md#describeentityrecognizerresponsetypedef).
 
-<a id="describe_events_detection_job"></a>
+<a id="describe\_events\_detection\_job"></a>
 
 ### describe_events_detection_job
 
@@ -680,7 +680,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventsDetectionJobResponseTypeDef](./type_defs.md#describeeventsdetectionjobresponsetypedef).
 
-<a id="describe_key_phrases_detection_job"></a>
+<a id="describe\_key\_phrases\_detection\_job"></a>
 
 ### describe_key_phrases_detection_job
 
@@ -702,7 +702,7 @@ Keyword-only arguments:
 Returns
 [DescribeKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#describekeyphrasesdetectionjobresponsetypedef).
 
-<a id="describe_pii_entities_detection_job"></a>
+<a id="describe\_pii\_entities\_detection\_job"></a>
 
 ### describe_pii_entities_detection_job
 
@@ -724,7 +724,7 @@ Keyword-only arguments:
 Returns
 [DescribePiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#describepiientitiesdetectionjobresponsetypedef).
 
-<a id="describe_resource_policy"></a>
+<a id="describe\_resource\_policy"></a>
 
 ### describe_resource_policy
 
@@ -747,7 +747,7 @@ Keyword-only arguments:
 Returns
 [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
 
-<a id="describe_sentiment_detection_job"></a>
+<a id="describe\_sentiment\_detection\_job"></a>
 
 ### describe_sentiment_detection_job
 
@@ -769,7 +769,7 @@ Keyword-only arguments:
 Returns
 [DescribeSentimentDetectionJobResponseTypeDef](./type_defs.md#describesentimentdetectionjobresponsetypedef).
 
-<a id="describe_topics_detection_job"></a>
+<a id="describe\_topics\_detection\_job"></a>
 
 ### describe_topics_detection_job
 
@@ -791,7 +791,7 @@ Keyword-only arguments:
 Returns
 [DescribeTopicsDetectionJobResponseTypeDef](./type_defs.md#describetopicsdetectionjobresponsetypedef).
 
-<a id="detect_dominant_language"></a>
+<a id="detect\_dominant\_language"></a>
 
 ### detect_dominant_language
 
@@ -813,7 +813,7 @@ Keyword-only arguments:
 Returns
 [DetectDominantLanguageResponseTypeDef](./type_defs.md#detectdominantlanguageresponsetypedef).
 
-<a id="detect_entities"></a>
+<a id="detect\_entities"></a>
 
 ### detect_entities
 
@@ -836,7 +836,7 @@ Keyword-only arguments:
 Returns
 [DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
 
-<a id="detect_key_phrases"></a>
+<a id="detect\_key\_phrases"></a>
 
 ### detect_key_phrases
 
@@ -859,7 +859,7 @@ Keyword-only arguments:
 Returns
 [DetectKeyPhrasesResponseTypeDef](./type_defs.md#detectkeyphrasesresponsetypedef).
 
-<a id="detect_pii_entities"></a>
+<a id="detect\_pii\_entities"></a>
 
 ### detect_pii_entities
 
@@ -883,7 +883,7 @@ Keyword-only arguments:
 Returns
 [DetectPiiEntitiesResponseTypeDef](./type_defs.md#detectpiientitiesresponsetypedef).
 
-<a id="detect_sentiment"></a>
+<a id="detect\_sentiment"></a>
 
 ### detect_sentiment
 
@@ -907,7 +907,7 @@ Keyword-only arguments:
 Returns
 [DetectSentimentResponseTypeDef](./type_defs.md#detectsentimentresponsetypedef).
 
-<a id="detect_syntax"></a>
+<a id="detect\_syntax"></a>
 
 ### detect_syntax
 
@@ -930,7 +930,7 @@ Keyword-only arguments:
 Returns
 [DetectSyntaxResponseTypeDef](./type_defs.md#detectsyntaxresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -951,7 +951,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="import_model"></a>
+<a id="import\_model"></a>
 
 ### import_model
 
@@ -978,7 +978,7 @@ Keyword-only arguments:
 Returns
 [ImportModelResponseTypeDef](./type_defs.md#importmodelresponsetypedef).
 
-<a id="list_document_classification_jobs"></a>
+<a id="list\_document\_classification\_jobs"></a>
 
 ### list_document_classification_jobs
 
@@ -1003,7 +1003,7 @@ Keyword-only arguments:
 Returns
 [ListDocumentClassificationJobsResponseTypeDef](./type_defs.md#listdocumentclassificationjobsresponsetypedef).
 
-<a id="list_document_classifier_summaries"></a>
+<a id="list\_document\_classifier\_summaries"></a>
 
 ### list_document_classifier_summaries
 
@@ -1028,7 +1028,7 @@ Keyword-only arguments:
 Returns
 [ListDocumentClassifierSummariesResponseTypeDef](./type_defs.md#listdocumentclassifiersummariesresponsetypedef).
 
-<a id="list_document_classifiers"></a>
+<a id="list\_document\_classifiers"></a>
 
 ### list_document_classifiers
 
@@ -1053,7 +1053,7 @@ Keyword-only arguments:
 Returns
 [ListDocumentClassifiersResponseTypeDef](./type_defs.md#listdocumentclassifiersresponsetypedef).
 
-<a id="list_dominant_language_detection_jobs"></a>
+<a id="list\_dominant\_language\_detection\_jobs"></a>
 
 ### list_dominant_language_detection_jobs
 
@@ -1078,7 +1078,7 @@ Keyword-only arguments:
 Returns
 [ListDominantLanguageDetectionJobsResponseTypeDef](./type_defs.md#listdominantlanguagedetectionjobsresponsetypedef).
 
-<a id="list_endpoints"></a>
+<a id="list\_endpoints"></a>
 
 ### list_endpoints
 
@@ -1101,7 +1101,7 @@ Keyword-only arguments:
 Returns
 [ListEndpointsResponseTypeDef](./type_defs.md#listendpointsresponsetypedef).
 
-<a id="list_entities_detection_jobs"></a>
+<a id="list\_entities\_detection\_jobs"></a>
 
 ### list_entities_detection_jobs
 
@@ -1126,7 +1126,7 @@ Keyword-only arguments:
 Returns
 [ListEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listentitiesdetectionjobsresponsetypedef).
 
-<a id="list_entity_recognizer_summaries"></a>
+<a id="list\_entity\_recognizer\_summaries"></a>
 
 ### list_entity_recognizer_summaries
 
@@ -1149,7 +1149,7 @@ Keyword-only arguments:
 Returns
 [ListEntityRecognizerSummariesResponseTypeDef](./type_defs.md#listentityrecognizersummariesresponsetypedef).
 
-<a id="list_entity_recognizers"></a>
+<a id="list\_entity\_recognizers"></a>
 
 ### list_entity_recognizers
 
@@ -1175,7 +1175,7 @@ Keyword-only arguments:
 Returns
 [ListEntityRecognizersResponseTypeDef](./type_defs.md#listentityrecognizersresponsetypedef).
 
-<a id="list_events_detection_jobs"></a>
+<a id="list\_events\_detection\_jobs"></a>
 
 ### list_events_detection_jobs
 
@@ -1200,7 +1200,7 @@ Keyword-only arguments:
 Returns
 [ListEventsDetectionJobsResponseTypeDef](./type_defs.md#listeventsdetectionjobsresponsetypedef).
 
-<a id="list_key_phrases_detection_jobs"></a>
+<a id="list\_key\_phrases\_detection\_jobs"></a>
 
 ### list_key_phrases_detection_jobs
 
@@ -1225,7 +1225,7 @@ Keyword-only arguments:
 Returns
 [ListKeyPhrasesDetectionJobsResponseTypeDef](./type_defs.md#listkeyphrasesdetectionjobsresponsetypedef).
 
-<a id="list_pii_entities_detection_jobs"></a>
+<a id="list\_pii\_entities\_detection\_jobs"></a>
 
 ### list_pii_entities_detection_jobs
 
@@ -1250,7 +1250,7 @@ Keyword-only arguments:
 Returns
 [ListPiiEntitiesDetectionJobsResponseTypeDef](./type_defs.md#listpiientitiesdetectionjobsresponsetypedef).
 
-<a id="list_sentiment_detection_jobs"></a>
+<a id="list\_sentiment\_detection\_jobs"></a>
 
 ### list_sentiment_detection_jobs
 
@@ -1275,7 +1275,7 @@ Keyword-only arguments:
 Returns
 [ListSentimentDetectionJobsResponseTypeDef](./type_defs.md#listsentimentdetectionjobsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1297,7 +1297,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_topics_detection_jobs"></a>
+<a id="list\_topics\_detection\_jobs"></a>
 
 ### list_topics_detection_jobs
 
@@ -1322,7 +1322,7 @@ Keyword-only arguments:
 Returns
 [ListTopicsDetectionJobsResponseTypeDef](./type_defs.md#listtopicsdetectionjobsresponsetypedef).
 
-<a id="put_resource_policy"></a>
+<a id="put\_resource\_policy"></a>
 
 ### put_resource_policy
 
@@ -1345,7 +1345,7 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
-<a id="start_document_classification_job"></a>
+<a id="start\_document\_classification\_job"></a>
 
 ### start_document_classification_job
 
@@ -1378,7 +1378,7 @@ Keyword-only arguments:
 Returns
 [StartDocumentClassificationJobResponseTypeDef](./type_defs.md#startdocumentclassificationjobresponsetypedef).
 
-<a id="start_dominant_language_detection_job"></a>
+<a id="start\_dominant\_language\_detection\_job"></a>
 
 ### start_dominant_language_detection_job
 
@@ -1411,7 +1411,7 @@ Keyword-only arguments:
 Returns
 [StartDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#startdominantlanguagedetectionjobresponsetypedef).
 
-<a id="start_entities_detection_job"></a>
+<a id="start\_entities\_detection\_job"></a>
 
 ### start_entities_detection_job
 
@@ -1446,7 +1446,7 @@ Keyword-only arguments:
 Returns
 [StartEntitiesDetectionJobResponseTypeDef](./type_defs.md#startentitiesdetectionjobresponsetypedef).
 
-<a id="start_events_detection_job"></a>
+<a id="start\_events\_detection\_job"></a>
 
 ### start_events_detection_job
 
@@ -1479,7 +1479,7 @@ Keyword-only arguments:
 Returns
 [StartEventsDetectionJobResponseTypeDef](./type_defs.md#starteventsdetectionjobresponsetypedef).
 
-<a id="start_key_phrases_detection_job"></a>
+<a id="start\_key\_phrases\_detection\_job"></a>
 
 ### start_key_phrases_detection_job
 
@@ -1513,7 +1513,7 @@ Keyword-only arguments:
 Returns
 [StartKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#startkeyphrasesdetectionjobresponsetypedef).
 
-<a id="start_pii_entities_detection_job"></a>
+<a id="start\_pii\_entities\_detection\_job"></a>
 
 ### start_pii_entities_detection_job
 
@@ -1550,7 +1550,7 @@ Keyword-only arguments:
 Returns
 [StartPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#startpiientitiesdetectionjobresponsetypedef).
 
-<a id="start_sentiment_detection_job"></a>
+<a id="start\_sentiment\_detection\_job"></a>
 
 ### start_sentiment_detection_job
 
@@ -1584,7 +1584,7 @@ Keyword-only arguments:
 Returns
 [StartSentimentDetectionJobResponseTypeDef](./type_defs.md#startsentimentdetectionjobresponsetypedef).
 
-<a id="start_topics_detection_job"></a>
+<a id="start\_topics\_detection\_job"></a>
 
 ### start_topics_detection_job
 
@@ -1617,7 +1617,7 @@ Keyword-only arguments:
 Returns
 [StartTopicsDetectionJobResponseTypeDef](./type_defs.md#starttopicsdetectionjobresponsetypedef).
 
-<a id="stop_dominant_language_detection_job"></a>
+<a id="stop\_dominant\_language\_detection\_job"></a>
 
 ### stop_dominant_language_detection_job
 
@@ -1639,7 +1639,7 @@ Keyword-only arguments:
 Returns
 [StopDominantLanguageDetectionJobResponseTypeDef](./type_defs.md#stopdominantlanguagedetectionjobresponsetypedef).
 
-<a id="stop_entities_detection_job"></a>
+<a id="stop\_entities\_detection\_job"></a>
 
 ### stop_entities_detection_job
 
@@ -1661,7 +1661,7 @@ Keyword-only arguments:
 Returns
 [StopEntitiesDetectionJobResponseTypeDef](./type_defs.md#stopentitiesdetectionjobresponsetypedef).
 
-<a id="stop_events_detection_job"></a>
+<a id="stop\_events\_detection\_job"></a>
 
 ### stop_events_detection_job
 
@@ -1683,7 +1683,7 @@ Keyword-only arguments:
 Returns
 [StopEventsDetectionJobResponseTypeDef](./type_defs.md#stopeventsdetectionjobresponsetypedef).
 
-<a id="stop_key_phrases_detection_job"></a>
+<a id="stop\_key\_phrases\_detection\_job"></a>
 
 ### stop_key_phrases_detection_job
 
@@ -1705,7 +1705,7 @@ Keyword-only arguments:
 Returns
 [StopKeyPhrasesDetectionJobResponseTypeDef](./type_defs.md#stopkeyphrasesdetectionjobresponsetypedef).
 
-<a id="stop_pii_entities_detection_job"></a>
+<a id="stop\_pii\_entities\_detection\_job"></a>
 
 ### stop_pii_entities_detection_job
 
@@ -1727,7 +1727,7 @@ Keyword-only arguments:
 Returns
 [StopPiiEntitiesDetectionJobResponseTypeDef](./type_defs.md#stoppiientitiesdetectionjobresponsetypedef).
 
-<a id="stop_sentiment_detection_job"></a>
+<a id="stop\_sentiment\_detection\_job"></a>
 
 ### stop_sentiment_detection_job
 
@@ -1749,7 +1749,7 @@ Keyword-only arguments:
 Returns
 [StopSentimentDetectionJobResponseTypeDef](./type_defs.md#stopsentimentdetectionjobresponsetypedef).
 
-<a id="stop_training_document_classifier"></a>
+<a id="stop\_training\_document\_classifier"></a>
 
 ### stop_training_document_classifier
 
@@ -1770,7 +1770,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="stop_training_entity_recognizer"></a>
+<a id="stop\_training\_entity\_recognizer"></a>
 
 ### stop_training_entity_recognizer
 
@@ -1791,7 +1791,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1812,7 +1812,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1833,7 +1833,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_endpoint"></a>
+<a id="update\_endpoint"></a>
 
 ### update_endpoint
 

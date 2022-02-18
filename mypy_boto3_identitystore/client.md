@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_group"></a>
+<a id="describe\_group"></a>
 
 ### describe_group
 
@@ -120,7 +120,7 @@ Keyword-only arguments:
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
-<a id="describe_user"></a>
+<a id="describe\_user"></a>
 
 ### describe_user
 
@@ -142,7 +142,7 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -163,7 +163,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_groups"></a>
+<a id="list\_groups"></a>
 
 ### list_groups
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 
 Returns [ListGroupsResponseTypeDef](./type_defs.md#listgroupsresponsetypedef).
 
-<a id="list_users"></a>
+<a id="list\_users"></a>
 
 ### list_users
 

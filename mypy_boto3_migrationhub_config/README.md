@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [MigrationHubConfigClient](#migrationhubconfigclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -44,9 +45,11 @@ Install `boto3-stubs` for `MigrationHubConfig` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[migrationhub-config]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[migrationhub-config]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-migrationhub-config
@@ -59,6 +62,12 @@ python -m pip install mypy-boto3-migrationhub-config
 ```bash
 python -m pip uninstall -y mypy-boto3-migrationhub-config
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="migrationhubconfigclient"></a>
 

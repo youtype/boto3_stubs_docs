@@ -93,7 +93,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_gateway_to_server"></a>
+<a id="associate\_gateway\_to\_server"></a>
 
 ### associate_gateway_to_server
 
@@ -116,7 +116,7 @@ Keyword-only arguments:
 Returns
 [AssociateGatewayToServerOutputTypeDef](./type_defs.md#associategatewaytoserveroutputtypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -133,7 +133,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_gateway"></a>
+<a id="create\_gateway"></a>
 
 ### create_gateway
 
@@ -158,7 +158,7 @@ Keyword-only arguments:
 Returns
 [CreateGatewayOutputTypeDef](./type_defs.md#creategatewayoutputtypedef).
 
-<a id="delete_gateway"></a>
+<a id="delete\_gateway"></a>
 
 ### delete_gateway
 
@@ -179,7 +179,7 @@ Keyword-only arguments:
 Returns
 [DeleteGatewayOutputTypeDef](./type_defs.md#deletegatewayoutputtypedef).
 
-<a id="delete_hypervisor"></a>
+<a id="delete\_hypervisor"></a>
 
 ### delete_hypervisor
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 Returns
 [DeleteHypervisorOutputTypeDef](./type_defs.md#deletehypervisoroutputtypedef).
 
-<a id="disassociate_gateway_from_server"></a>
+<a id="disassociate\_gateway\_from\_server"></a>
 
 ### disassociate_gateway_from_server
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 Returns
 [DisassociateGatewayFromServerOutputTypeDef](./type_defs.md#disassociategatewayfromserveroutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -243,7 +243,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="import_hypervisor_configuration"></a>
+<a id="import\_hypervisor\_configuration"></a>
 
 ### import_hypervisor_configuration
 
@@ -270,7 +270,7 @@ Keyword-only arguments:
 Returns
 [ImportHypervisorConfigurationOutputTypeDef](./type_defs.md#importhypervisorconfigurationoutputtypedef).
 
-<a id="list_gateways"></a>
+<a id="list\_gateways"></a>
 
 ### list_gateways
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 
 Returns [ListGatewaysOutputTypeDef](./type_defs.md#listgatewaysoutputtypedef).
 
-<a id="list_hypervisors"></a>
+<a id="list\_hypervisors"></a>
 
 ### list_hypervisors
 
@@ -314,7 +314,7 @@ Keyword-only arguments:
 Returns
 [ListHypervisorsOutputTypeDef](./type_defs.md#listhypervisorsoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -337,7 +337,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="list_virtual_machines"></a>
+<a id="list\_virtual\_machines"></a>
 
 ### list_virtual_machines
 
@@ -360,7 +360,7 @@ Keyword-only arguments:
 Returns
 [ListVirtualMachinesOutputTypeDef](./type_defs.md#listvirtualmachinesoutputtypedef).
 
-<a id="put_maintenance_start_time"></a>
+<a id="put\_maintenance\_start\_time"></a>
 
 ### put_maintenance_start_time
 
@@ -386,7 +386,7 @@ Keyword-only arguments:
 Returns
 [PutMaintenanceStartTimeOutputTypeDef](./type_defs.md#putmaintenancestarttimeoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 
 Returns [TagResourceOutputTypeDef](./type_defs.md#tagresourceoutputtypedef).
 
-<a id="test_hypervisor_configuration"></a>
+<a id="test\_hypervisor\_configuration"></a>
 
 ### test_hypervisor_configuration
 
@@ -432,7 +432,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -454,7 +454,7 @@ Keyword-only arguments:
 Returns
 [UntagResourceOutputTypeDef](./type_defs.md#untagresourceoutputtypedef).
 
-<a id="update_gateway_information"></a>
+<a id="update\_gateway\_information"></a>
 
 ### update_gateway_information
 
@@ -477,7 +477,7 @@ Keyword-only arguments:
 Returns
 [UpdateGatewayInformationOutputTypeDef](./type_defs.md#updategatewayinformationoutputtypedef).
 
-<a id="update_hypervisor"></a>
+<a id="update\_hypervisor"></a>
 
 ### update_hypervisor
 

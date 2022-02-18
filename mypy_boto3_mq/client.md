@@ -100,7 +100,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -117,7 +117,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_broker"></a>
+<a id="create\_broker"></a>
 
 ### create_broker
 
@@ -162,7 +162,7 @@ Keyword-only arguments:
 Returns
 [CreateBrokerResponseTypeDef](./type_defs.md#createbrokerresponsetypedef).
 
-<a id="create_configuration"></a>
+<a id="create\_configuration"></a>
 
 ### create_configuration
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 Returns
 [CreateConfigurationResponseTypeDef](./type_defs.md#createconfigurationresponsetypedef).
 
-<a id="create_tags"></a>
+<a id="create\_tags"></a>
 
 ### create_tags
 
@@ -207,7 +207,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
 
-<a id="create_user"></a>
+<a id="create\_user"></a>
 
 ### create_user
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_broker"></a>
+<a id="delete\_broker"></a>
 
 ### delete_broker
 
@@ -252,7 +252,7 @@ Keyword-only arguments:
 Returns
 [DeleteBrokerResponseTypeDef](./type_defs.md#deletebrokerresponsetypedef).
 
-<a id="delete_tags"></a>
+<a id="delete\_tags"></a>
 
 ### delete_tags
 
@@ -271,7 +271,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="delete_user"></a>
+<a id="delete\_user"></a>
 
 ### delete_user
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_broker"></a>
+<a id="describe\_broker"></a>
 
 ### describe_broker
 
@@ -313,7 +313,7 @@ Keyword-only arguments:
 Returns
 [DescribeBrokerResponseTypeDef](./type_defs.md#describebrokerresponsetypedef).
 
-<a id="describe_broker_engine_types"></a>
+<a id="describe\_broker\_engine\_types"></a>
 
 ### describe_broker_engine_types
 
@@ -336,7 +336,7 @@ Keyword-only arguments:
 Returns
 [DescribeBrokerEngineTypesResponseTypeDef](./type_defs.md#describebrokerenginetypesresponsetypedef).
 
-<a id="describe_broker_instance_options"></a>
+<a id="describe\_broker\_instance\_options"></a>
 
 ### describe_broker_instance_options
 
@@ -362,7 +362,7 @@ Keyword-only arguments:
 Returns
 [DescribeBrokerInstanceOptionsResponseTypeDef](./type_defs.md#describebrokerinstanceoptionsresponsetypedef).
 
-<a id="describe_configuration"></a>
+<a id="describe\_configuration"></a>
 
 ### describe_configuration
 
@@ -383,7 +383,7 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationResponseTypeDef](./type_defs.md#describeconfigurationresponsetypedef).
 
-<a id="describe_configuration_revision"></a>
+<a id="describe\_configuration\_revision"></a>
 
 ### describe_configuration_revision
 
@@ -406,7 +406,7 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationRevisionResponseTypeDef](./type_defs.md#describeconfigurationrevisionresponsetypedef).
 
-<a id="describe_user"></a>
+<a id="describe\_user"></a>
 
 ### describe_user
 
@@ -428,7 +428,7 @@ Keyword-only arguments:
 Returns
 [DescribeUserResponseTypeDef](./type_defs.md#describeuserresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -448,7 +448,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_brokers"></a>
+<a id="list\_brokers"></a>
 
 ### list_brokers
 
@@ -470,7 +470,7 @@ Keyword-only arguments:
 Returns
 [ListBrokersResponseTypeDef](./type_defs.md#listbrokersresponsetypedef).
 
-<a id="list_configuration_revisions"></a>
+<a id="list\_configuration\_revisions"></a>
 
 ### list_configuration_revisions
 
@@ -493,7 +493,7 @@ Keyword-only arguments:
 Returns
 [ListConfigurationRevisionsResponseTypeDef](./type_defs.md#listconfigurationrevisionsresponsetypedef).
 
-<a id="list_configurations"></a>
+<a id="list\_configurations"></a>
 
 ### list_configurations
 
@@ -515,7 +515,7 @@ Keyword-only arguments:
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
-<a id="list_tags"></a>
+<a id="list\_tags"></a>
 
 ### list_tags
 
@@ -535,7 +535,7 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
-<a id="list_users"></a>
+<a id="list\_users"></a>
 
 ### list_users
 
@@ -557,7 +557,7 @@ Keyword-only arguments:
 
 Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
 
-<a id="reboot_broker"></a>
+<a id="reboot\_broker"></a>
 
 ### reboot_broker
 
@@ -577,7 +577,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_broker"></a>
+<a id="update\_broker"></a>
 
 ### update_broker
 
@@ -611,7 +611,7 @@ Keyword-only arguments:
 Returns
 [UpdateBrokerResponseTypeDef](./type_defs.md#updatebrokerresponsetypedef).
 
-<a id="update_configuration"></a>
+<a id="update\_configuration"></a>
 
 ### update_configuration
 
@@ -634,7 +634,7 @@ Keyword-only arguments:
 Returns
 [UpdateConfigurationResponseTypeDef](./type_defs.md#updateconfigurationresponsetypedef).
 
-<a id="update_user"></a>
+<a id="update\_user"></a>
 
 ### update_user
 

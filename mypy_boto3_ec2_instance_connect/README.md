@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [EC2InstanceConnectClient](#ec2instanceconnectclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -44,9 +45,11 @@ Install `boto3-stubs` for `EC2InstanceConnect` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[ec2-instance-connect]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[ec2-instance-connect]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-ec2-instance-connect
@@ -59,6 +62,12 @@ python -m pip install mypy-boto3-ec2-instance-connect
 ```bash
 python -m pip uninstall -y mypy-boto3-ec2-instance-connect
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="ec2instanceconnectclient"></a>
 

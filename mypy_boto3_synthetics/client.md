@@ -89,7 +89,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -106,7 +106,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_canary"></a>
+<a id="create\_canary"></a>
 
 ### create_canary
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 Returns
 [CreateCanaryResponseTypeDef](./type_defs.md#createcanaryresponsetypedef).
 
-<a id="delete_canary"></a>
+<a id="delete\_canary"></a>
 
 ### delete_canary
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_canaries"></a>
+<a id="describe\_canaries"></a>
 
 ### describe_canaries
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 Returns
 [DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef).
 
-<a id="describe_canaries_last_run"></a>
+<a id="describe\_canaries\_last\_run"></a>
 
 ### describe_canaries_last_run
 
@@ -212,7 +212,7 @@ Keyword-only arguments:
 Returns
 [DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef).
 
-<a id="describe_runtime_versions"></a>
+<a id="describe\_runtime\_versions"></a>
 
 ### describe_runtime_versions
 
@@ -235,7 +235,7 @@ Keyword-only arguments:
 Returns
 [DescribeRuntimeVersionsResponseTypeDef](./type_defs.md#describeruntimeversionsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -256,7 +256,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_canary"></a>
+<a id="get\_canary"></a>
 
 ### get_canary
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 
 Returns [GetCanaryResponseTypeDef](./type_defs.md#getcanaryresponsetypedef).
 
-<a id="get_canary_runs"></a>
+<a id="get\_canary\_runs"></a>
 
 ### get_canary_runs
 
@@ -299,7 +299,7 @@ Keyword-only arguments:
 Returns
 [GetCanaryRunsResponseTypeDef](./type_defs.md#getcanaryrunsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -321,7 +321,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="start_canary"></a>
+<a id="start\_canary"></a>
 
 ### start_canary
 
@@ -341,7 +341,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="stop_canary"></a>
+<a id="stop\_canary"></a>
 
 ### stop_canary
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -382,7 +382,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -403,7 +403,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_canary"></a>
+<a id="update\_canary"></a>
 
 ### update_canary
 

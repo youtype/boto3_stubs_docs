@@ -110,7 +110,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_get_channel"></a>
+<a id="batch\_get\_channel"></a>
 
 ### batch_get_channel
 
@@ -131,7 +131,7 @@ Keyword-only arguments:
 Returns
 [BatchGetChannelResponseTypeDef](./type_defs.md#batchgetchannelresponsetypedef).
 
-<a id="batch_get_stream_key"></a>
+<a id="batch\_get\_stream\_key"></a>
 
 ### batch_get_stream_key
 
@@ -152,7 +152,7 @@ Keyword-only arguments:
 Returns
 [BatchGetStreamKeyResponseTypeDef](./type_defs.md#batchgetstreamkeyresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -169,7 +169,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_channel"></a>
+<a id="create\_channel"></a>
 
 ### create_channel
 
@@ -195,7 +195,7 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
-<a id="create_recording_configuration"></a>
+<a id="create\_recording\_configuration"></a>
 
 ### create_recording_configuration
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 Returns
 [CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).
 
-<a id="create_stream_key"></a>
+<a id="create\_stream\_key"></a>
 
 ### create_stream_key
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 Returns
 [CreateStreamKeyResponseTypeDef](./type_defs.md#createstreamkeyresponsetypedef).
 
-<a id="delete_channel"></a>
+<a id="delete\_channel"></a>
 
 ### delete_channel
 
@@ -263,7 +263,7 @@ Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-<a id="delete_playback_key_pair"></a>
+<a id="delete\_playback\_key\_pair"></a>
 
 ### delete_playback_key_pair
 
@@ -283,7 +283,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_recording_configuration"></a>
+<a id="delete\_recording\_configuration"></a>
 
 ### delete_recording_configuration
 
@@ -302,7 +302,7 @@ Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-<a id="delete_stream_key"></a>
+<a id="delete\_stream\_key"></a>
 
 ### delete_stream_key
 
@@ -321,7 +321,7 @@ Keyword-only arguments:
 
 - `arn`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -341,7 +341,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_channel"></a>
+<a id="get\_channel"></a>
 
 ### get_channel
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 
 Returns [GetChannelResponseTypeDef](./type_defs.md#getchannelresponsetypedef).
 
-<a id="get_playback_key_pair"></a>
+<a id="get\_playback\_key\_pair"></a>
 
 ### get_playback_key_pair
 
@@ -383,7 +383,7 @@ Keyword-only arguments:
 Returns
 [GetPlaybackKeyPairResponseTypeDef](./type_defs.md#getplaybackkeypairresponsetypedef).
 
-<a id="get_recording_configuration"></a>
+<a id="get\_recording\_configuration"></a>
 
 ### get_recording_configuration
 
@@ -404,7 +404,7 @@ Keyword-only arguments:
 Returns
 [GetRecordingConfigurationResponseTypeDef](./type_defs.md#getrecordingconfigurationresponsetypedef).
 
-<a id="get_stream"></a>
+<a id="get\_stream"></a>
 
 ### get_stream
 
@@ -424,7 +424,7 @@ Keyword-only arguments:
 
 Returns [GetStreamResponseTypeDef](./type_defs.md#getstreamresponsetypedef).
 
-<a id="get_stream_key"></a>
+<a id="get\_stream\_key"></a>
 
 ### get_stream_key
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 Returns
 [GetStreamKeyResponseTypeDef](./type_defs.md#getstreamkeyresponsetypedef).
 
-<a id="get_stream_session"></a>
+<a id="get\_stream\_session"></a>
 
 ### get_stream_session
 
@@ -467,7 +467,7 @@ Keyword-only arguments:
 Returns
 [GetStreamSessionResponseTypeDef](./type_defs.md#getstreamsessionresponsetypedef).
 
-<a id="import_playback_key_pair"></a>
+<a id="import\_playback\_key\_pair"></a>
 
 ### import_playback_key_pair
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 Returns
 [ImportPlaybackKeyPairResponseTypeDef](./type_defs.md#importplaybackkeypairresponsetypedef).
 
-<a id="list_channels"></a>
+<a id="list\_channels"></a>
 
 ### list_channels
 
@@ -516,7 +516,7 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
-<a id="list_playback_key_pairs"></a>
+<a id="list\_playback\_key\_pairs"></a>
 
 ### list_playback_key_pairs
 
@@ -538,7 +538,7 @@ Keyword-only arguments:
 Returns
 [ListPlaybackKeyPairsResponseTypeDef](./type_defs.md#listplaybackkeypairsresponsetypedef).
 
-<a id="list_recording_configurations"></a>
+<a id="list\_recording\_configurations"></a>
 
 ### list_recording_configurations
 
@@ -562,7 +562,7 @@ Keyword-only arguments:
 Returns
 [ListRecordingConfigurationsResponseTypeDef](./type_defs.md#listrecordingconfigurationsresponsetypedef).
 
-<a id="list_stream_keys"></a>
+<a id="list\_stream\_keys"></a>
 
 ### list_stream_keys
 
@@ -585,7 +585,7 @@ Keyword-only arguments:
 Returns
 [ListStreamKeysResponseTypeDef](./type_defs.md#liststreamkeysresponsetypedef).
 
-<a id="list_stream_sessions"></a>
+<a id="list\_stream\_sessions"></a>
 
 ### list_stream_sessions
 
@@ -609,7 +609,7 @@ Keyword-only arguments:
 Returns
 [ListStreamSessionsResponseTypeDef](./type_defs.md#liststreamsessionsresponsetypedef).
 
-<a id="list_streams"></a>
+<a id="list\_streams"></a>
 
 ### list_streams
 
@@ -633,7 +633,7 @@ Keyword-only arguments:
 Returns
 [ListStreamsResponseTypeDef](./type_defs.md#liststreamsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -654,7 +654,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_metadata"></a>
+<a id="put\_metadata"></a>
 
 ### put_metadata
 
@@ -673,7 +673,7 @@ Keyword-only arguments:
 - `channelArn`: `str` *(required)*
 - `metadata`: `str` *(required)*
 
-<a id="stop_stream"></a>
+<a id="stop\_stream"></a>
 
 ### stop_stream
 
@@ -693,7 +693,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -715,7 +715,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -736,7 +736,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_channel"></a>
+<a id="update\_channel"></a>
 
 ### update_channel
 

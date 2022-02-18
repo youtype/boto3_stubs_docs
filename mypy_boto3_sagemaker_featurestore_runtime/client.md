@@ -82,7 +82,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_get_record"></a>
+<a id="batch\_get\_record"></a>
 
 ### batch_get_record
 
@@ -106,7 +106,7 @@ Keyword-only arguments:
 Returns
 [BatchGetRecordResponseTypeDef](./type_defs.md#batchgetrecordresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -124,7 +124,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_record"></a>
+<a id="delete\_record"></a>
 
 ### delete_record
 
@@ -145,7 +145,7 @@ Keyword-only arguments:
 - `RecordIdentifierValueAsString`: `str` *(required)*
 - `EventTime`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -166,7 +166,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_record"></a>
+<a id="get\_record"></a>
 
 ### get_record
 
@@ -189,7 +189,7 @@ Keyword-only arguments:
 
 Returns [GetRecordResponseTypeDef](./type_defs.md#getrecordresponsetypedef).
 
-<a id="put_record"></a>
+<a id="put\_record"></a>
 
 ### put_record
 

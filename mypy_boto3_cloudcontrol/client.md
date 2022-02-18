@@ -101,7 +101,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -118,7 +118,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_resource_request"></a>
+<a id="cancel\_resource\_request"></a>
 
 ### cancel_resource_request
 
@@ -140,7 +140,7 @@ Keyword-only arguments:
 Returns
 [CancelResourceRequestOutputTypeDef](./type_defs.md#cancelresourcerequestoutputtypedef).
 
-<a id="create_resource"></a>
+<a id="create\_resource"></a>
 
 ### create_resource
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [CreateResourceOutputTypeDef](./type_defs.md#createresourceoutputtypedef).
 
-<a id="delete_resource"></a>
+<a id="delete\_resource"></a>
 
 ### delete_resource
 
@@ -190,7 +190,7 @@ Keyword-only arguments:
 Returns
 [DeleteResourceOutputTypeDef](./type_defs.md#deleteresourceoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -211,7 +211,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_resource"></a>
+<a id="get\_resource"></a>
 
 ### get_resource
 
@@ -234,7 +234,7 @@ Keyword-only arguments:
 
 Returns [GetResourceOutputTypeDef](./type_defs.md#getresourceoutputtypedef).
 
-<a id="get_resource_request_status"></a>
+<a id="get\_resource\_request\_status"></a>
 
 ### get_resource_request_status
 
@@ -256,7 +256,7 @@ Keyword-only arguments:
 Returns
 [GetResourceRequestStatusOutputTypeDef](./type_defs.md#getresourcerequeststatusoutputtypedef).
 
-<a id="list_resource_requests"></a>
+<a id="list\_resource\_requests"></a>
 
 ### list_resource_requests
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 Returns
 [ListResourceRequestsOutputTypeDef](./type_defs.md#listresourcerequestsoutputtypedef).
 
-<a id="list_resources"></a>
+<a id="list\_resources"></a>
 
 ### list_resources
 
@@ -307,7 +307,7 @@ Keyword-only arguments:
 Returns
 [ListResourcesOutputTypeDef](./type_defs.md#listresourcesoutputtypedef).
 
-<a id="update_resource"></a>
+<a id="update\_resource"></a>
 
 ### update_resource
 

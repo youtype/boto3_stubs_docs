@@ -97,7 +97,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -114,7 +114,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_alert_manager_definition"></a>
+<a id="create\_alert\_manager\_definition"></a>
 
 ### create_alert_manager_definition
 
@@ -138,7 +138,7 @@ Keyword-only arguments:
 Returns
 [CreateAlertManagerDefinitionResponseTypeDef](./type_defs.md#createalertmanagerdefinitionresponsetypedef).
 
-<a id="create_rule_groups_namespace"></a>
+<a id="create\_rule\_groups\_namespace"></a>
 
 ### create_rule_groups_namespace
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [CreateRuleGroupsNamespaceResponseTypeDef](./type_defs.md#createrulegroupsnamespaceresponsetypedef).
 
-<a id="create_workspace"></a>
+<a id="create\_workspace"></a>
 
 ### create_workspace
 
@@ -186,7 +186,7 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
-<a id="delete_alert_manager_definition"></a>
+<a id="delete\_alert\_manager\_definition"></a>
 
 ### delete_alert_manager_definition
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
 
-<a id="delete_rule_groups_namespace"></a>
+<a id="delete\_rule\_groups\_namespace"></a>
 
 ### delete_rule_groups_namespace
 
@@ -226,7 +226,7 @@ Keyword-only arguments:
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
 
-<a id="delete_workspace"></a>
+<a id="delete\_workspace"></a>
 
 ### delete_workspace
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 - `workspaceId`: `str` *(required)*
 - `clientToken`: `str`
 
-<a id="describe_alert_manager_definition"></a>
+<a id="describe\_alert\_manager\_definition"></a>
 
 ### describe_alert_manager_definition
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 Returns
 [DescribeAlertManagerDefinitionResponseTypeDef](./type_defs.md#describealertmanagerdefinitionresponsetypedef).
 
-<a id="describe_rule_groups_namespace"></a>
+<a id="describe\_rule\_groups\_namespace"></a>
 
 ### describe_rule_groups_namespace
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 Returns
 [DescribeRuleGroupsNamespaceResponseTypeDef](./type_defs.md#describerulegroupsnamespaceresponsetypedef).
 
-<a id="describe_workspace"></a>
+<a id="describe\_workspace"></a>
 
 ### describe_workspace
 
@@ -311,7 +311,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -331,7 +331,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_rule_groups_namespaces"></a>
+<a id="list\_rule\_groups\_namespaces"></a>
 
 ### list_rule_groups_namespaces
 
@@ -355,7 +355,7 @@ Keyword-only arguments:
 Returns
 [ListRuleGroupsNamespacesResponseTypeDef](./type_defs.md#listrulegroupsnamespacesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_workspaces"></a>
+<a id="list\_workspaces"></a>
 
 ### list_workspaces
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 Returns
 [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
 
-<a id="put_alert_manager_definition"></a>
+<a id="put\_alert\_manager\_definition"></a>
 
 ### put_alert_manager_definition
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 Returns
 [PutAlertManagerDefinitionResponseTypeDef](./type_defs.md#putalertmanagerdefinitionresponsetypedef).
 
-<a id="put_rule_groups_namespace"></a>
+<a id="put\_rule\_groups\_namespace"></a>
 
 ### put_rule_groups_namespace
 
@@ -446,7 +446,7 @@ Keyword-only arguments:
 Returns
 [PutRuleGroupsNamespaceResponseTypeDef](./type_defs.md#putrulegroupsnamespaceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -467,7 +467,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -488,7 +488,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_workspace_alias"></a>
+<a id="update\_workspace\_alias"></a>
 
 ### update_workspace_alias
 

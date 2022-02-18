@@ -139,7 +139,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_input_device_transfer"></a>
+<a id="accept\_input\_device\_transfer"></a>
 
 ### accept_input_device_transfer
 
@@ -160,7 +160,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="batch_delete"></a>
+<a id="batch\_delete"></a>
 
 ### batch_delete
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 Returns
 [BatchDeleteResponseTypeDef](./type_defs.md#batchdeleteresponsetypedef).
 
-<a id="batch_start"></a>
+<a id="batch\_start"></a>
 
 ### batch_start
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 
 Returns [BatchStartResponseTypeDef](./type_defs.md#batchstartresponsetypedef).
 
-<a id="batch_stop"></a>
+<a id="batch\_stop"></a>
 
 ### batch_stop
 
@@ -228,7 +228,7 @@ Keyword-only arguments:
 
 Returns [BatchStopResponseTypeDef](./type_defs.md#batchstopresponsetypedef).
 
-<a id="batch_update_schedule"></a>
+<a id="batch\_update\_schedule"></a>
 
 ### batch_update_schedule
 
@@ -254,7 +254,7 @@ Keyword-only arguments:
 Returns
 [BatchUpdateScheduleResponseTypeDef](./type_defs.md#batchupdatescheduleresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -271,7 +271,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_input_device_transfer"></a>
+<a id="cancel\_input\_device\_transfer"></a>
 
 ### cancel_input_device_transfer
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="claim_device"></a>
+<a id="claim\_device"></a>
 
 ### claim_device
 
@@ -313,7 +313,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_channel"></a>
+<a id="create\_channel"></a>
 
 ### create_channel
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
-<a id="create_input"></a>
+<a id="create\_input"></a>
 
 ### create_input
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 Returns
 [CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
-<a id="create_input_security_group"></a>
+<a id="create\_input\_security\_group"></a>
 
 ### create_input_security_group
 
@@ -413,7 +413,7 @@ Keyword-only arguments:
 Returns
 [CreateInputSecurityGroupResponseTypeDef](./type_defs.md#createinputsecuritygroupresponsetypedef).
 
-<a id="create_multiplex"></a>
+<a id="create\_multiplex"></a>
 
 ### create_multiplex
 
@@ -440,7 +440,7 @@ Keyword-only arguments:
 Returns
 [CreateMultiplexResponseTypeDef](./type_defs.md#createmultiplexresponsetypedef).
 
-<a id="create_multiplex_program"></a>
+<a id="create\_multiplex\_program"></a>
 
 ### create_multiplex_program
 
@@ -467,7 +467,7 @@ Keyword-only arguments:
 Returns
 [CreateMultiplexProgramResponseTypeDef](./type_defs.md#createmultiplexprogramresponsetypedef).
 
-<a id="create_partner_input"></a>
+<a id="create\_partner\_input"></a>
 
 ### create_partner_input
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 Returns
 [CreatePartnerInputResponseTypeDef](./type_defs.md#createpartnerinputresponsetypedef).
 
-<a id="create_tags"></a>
+<a id="create\_tags"></a>
 
 ### create_tags
 
@@ -511,7 +511,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\]
 
-<a id="delete_channel"></a>
+<a id="delete\_channel"></a>
 
 ### delete_channel
 
@@ -532,7 +532,7 @@ Keyword-only arguments:
 Returns
 [DeleteChannelResponseTypeDef](./type_defs.md#deletechannelresponsetypedef).
 
-<a id="delete_input"></a>
+<a id="delete\_input"></a>
 
 ### delete_input
 
@@ -553,7 +553,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_input_security_group"></a>
+<a id="delete\_input\_security\_group"></a>
 
 ### delete_input_security_group
 
@@ -575,7 +575,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_multiplex"></a>
+<a id="delete\_multiplex"></a>
 
 ### delete_multiplex
 
@@ -596,7 +596,7 @@ Keyword-only arguments:
 Returns
 [DeleteMultiplexResponseTypeDef](./type_defs.md#deletemultiplexresponsetypedef).
 
-<a id="delete_multiplex_program"></a>
+<a id="delete\_multiplex\_program"></a>
 
 ### delete_multiplex_program
 
@@ -619,7 +619,7 @@ Keyword-only arguments:
 Returns
 [DeleteMultiplexProgramResponseTypeDef](./type_defs.md#deletemultiplexprogramresponsetypedef).
 
-<a id="delete_reservation"></a>
+<a id="delete\_reservation"></a>
 
 ### delete_reservation
 
@@ -640,7 +640,7 @@ Keyword-only arguments:
 Returns
 [DeleteReservationResponseTypeDef](./type_defs.md#deletereservationresponsetypedef).
 
-<a id="delete_schedule"></a>
+<a id="delete\_schedule"></a>
 
 ### delete_schedule
 
@@ -660,7 +660,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_tags"></a>
+<a id="delete\_tags"></a>
 
 ### delete_tags
 
@@ -680,7 +680,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="describe_channel"></a>
+<a id="describe\_channel"></a>
 
 ### describe_channel
 
@@ -702,7 +702,7 @@ Keyword-only arguments:
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
-<a id="describe_input"></a>
+<a id="describe\_input"></a>
 
 ### describe_input
 
@@ -724,7 +724,7 @@ Keyword-only arguments:
 Returns
 [DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
-<a id="describe_input_device"></a>
+<a id="describe\_input\_device"></a>
 
 ### describe_input_device
 
@@ -746,7 +746,7 @@ Keyword-only arguments:
 Returns
 [DescribeInputDeviceResponseTypeDef](./type_defs.md#describeinputdeviceresponsetypedef).
 
-<a id="describe_input_device_thumbnail"></a>
+<a id="describe\_input\_device\_thumbnail"></a>
 
 ### describe_input_device_thumbnail
 
@@ -770,7 +770,7 @@ Keyword-only arguments:
 Returns
 [DescribeInputDeviceThumbnailResponseTypeDef](./type_defs.md#describeinputdevicethumbnailresponsetypedef).
 
-<a id="describe_input_security_group"></a>
+<a id="describe\_input\_security\_group"></a>
 
 ### describe_input_security_group
 
@@ -793,7 +793,7 @@ Keyword-only arguments:
 Returns
 [DescribeInputSecurityGroupResponseTypeDef](./type_defs.md#describeinputsecuritygroupresponsetypedef).
 
-<a id="describe_multiplex"></a>
+<a id="describe\_multiplex"></a>
 
 ### describe_multiplex
 
@@ -814,7 +814,7 @@ Keyword-only arguments:
 Returns
 [DescribeMultiplexResponseTypeDef](./type_defs.md#describemultiplexresponsetypedef).
 
-<a id="describe_multiplex_program"></a>
+<a id="describe\_multiplex\_program"></a>
 
 ### describe_multiplex_program
 
@@ -837,7 +837,7 @@ Keyword-only arguments:
 Returns
 [DescribeMultiplexProgramResponseTypeDef](./type_defs.md#describemultiplexprogramresponsetypedef).
 
-<a id="describe_offering"></a>
+<a id="describe\_offering"></a>
 
 ### describe_offering
 
@@ -858,7 +858,7 @@ Keyword-only arguments:
 Returns
 [DescribeOfferingResponseTypeDef](./type_defs.md#describeofferingresponsetypedef).
 
-<a id="describe_reservation"></a>
+<a id="describe\_reservation"></a>
 
 ### describe_reservation
 
@@ -879,7 +879,7 @@ Keyword-only arguments:
 Returns
 [DescribeReservationResponseTypeDef](./type_defs.md#describereservationresponsetypedef).
 
-<a id="describe_schedule"></a>
+<a id="describe\_schedule"></a>
 
 ### describe_schedule
 
@@ -903,7 +903,7 @@ Keyword-only arguments:
 Returns
 [DescribeScheduleResponseTypeDef](./type_defs.md#describescheduleresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -923,7 +923,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_channels"></a>
+<a id="list\_channels"></a>
 
 ### list_channels
 
@@ -946,7 +946,7 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
-<a id="list_input_device_transfers"></a>
+<a id="list\_input\_device\_transfers"></a>
 
 ### list_input_device_transfers
 
@@ -970,7 +970,7 @@ Keyword-only arguments:
 Returns
 [ListInputDeviceTransfersResponseTypeDef](./type_defs.md#listinputdevicetransfersresponsetypedef).
 
-<a id="list_input_devices"></a>
+<a id="list\_input\_devices"></a>
 
 ### list_input_devices
 
@@ -993,7 +993,7 @@ Keyword-only arguments:
 Returns
 [ListInputDevicesResponseTypeDef](./type_defs.md#listinputdevicesresponsetypedef).
 
-<a id="list_input_security_groups"></a>
+<a id="list\_input\_security\_groups"></a>
 
 ### list_input_security_groups
 
@@ -1017,7 +1017,7 @@ Keyword-only arguments:
 Returns
 [ListInputSecurityGroupsResponseTypeDef](./type_defs.md#listinputsecuritygroupsresponsetypedef).
 
-<a id="list_inputs"></a>
+<a id="list\_inputs"></a>
 
 ### list_inputs
 
@@ -1039,7 +1039,7 @@ Keyword-only arguments:
 
 Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
 
-<a id="list_multiplex_programs"></a>
+<a id="list\_multiplex\_programs"></a>
 
 ### list_multiplex_programs
 
@@ -1063,7 +1063,7 @@ Keyword-only arguments:
 Returns
 [ListMultiplexProgramsResponseTypeDef](./type_defs.md#listmultiplexprogramsresponsetypedef).
 
-<a id="list_multiplexes"></a>
+<a id="list\_multiplexes"></a>
 
 ### list_multiplexes
 
@@ -1085,7 +1085,7 @@ Keyword-only arguments:
 Returns
 [ListMultiplexesResponseTypeDef](./type_defs.md#listmultiplexesresponsetypedef).
 
-<a id="list_offerings"></a>
+<a id="list\_offerings"></a>
 
 ### list_offerings
 
@@ -1117,7 +1117,7 @@ Keyword-only arguments:
 Returns
 [ListOfferingsResponseTypeDef](./type_defs.md#listofferingsresponsetypedef).
 
-<a id="list_reservations"></a>
+<a id="list\_reservations"></a>
 
 ### list_reservations
 
@@ -1147,7 +1147,7 @@ Keyword-only arguments:
 Returns
 [ListReservationsResponseTypeDef](./type_defs.md#listreservationsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1169,7 +1169,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="purchase_offering"></a>
+<a id="purchase\_offering"></a>
 
 ### purchase_offering
 
@@ -1195,7 +1195,7 @@ Keyword-only arguments:
 Returns
 [PurchaseOfferingResponseTypeDef](./type_defs.md#purchaseofferingresponsetypedef).
 
-<a id="reject_input_device_transfer"></a>
+<a id="reject\_input\_device\_transfer"></a>
 
 ### reject_input_device_transfer
 
@@ -1216,7 +1216,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_channel"></a>
+<a id="start\_channel"></a>
 
 ### start_channel
 
@@ -1238,7 +1238,7 @@ Keyword-only arguments:
 Returns
 [StartChannelResponseTypeDef](./type_defs.md#startchannelresponsetypedef).
 
-<a id="start_multiplex"></a>
+<a id="start\_multiplex"></a>
 
 ### start_multiplex
 
@@ -1259,7 +1259,7 @@ Keyword-only arguments:
 Returns
 [StartMultiplexResponseTypeDef](./type_defs.md#startmultiplexresponsetypedef).
 
-<a id="stop_channel"></a>
+<a id="stop\_channel"></a>
 
 ### stop_channel
 
@@ -1281,7 +1281,7 @@ Keyword-only arguments:
 Returns
 [StopChannelResponseTypeDef](./type_defs.md#stopchannelresponsetypedef).
 
-<a id="stop_multiplex"></a>
+<a id="stop\_multiplex"></a>
 
 ### stop_multiplex
 
@@ -1302,7 +1302,7 @@ Keyword-only arguments:
 Returns
 [StopMultiplexResponseTypeDef](./type_defs.md#stopmultiplexresponsetypedef).
 
-<a id="transfer_input_device"></a>
+<a id="transfer\_input\_device"></a>
 
 ### transfer_input_device
 
@@ -1325,7 +1325,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_channel"></a>
+<a id="update\_channel"></a>
 
 ### update_channel
 
@@ -1359,7 +1359,7 @@ Keyword-only arguments:
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
-<a id="update_channel_class"></a>
+<a id="update\_channel\_class"></a>
 
 ### update_channel_class
 
@@ -1384,7 +1384,7 @@ Keyword-only arguments:
 Returns
 [UpdateChannelClassResponseTypeDef](./type_defs.md#updatechannelclassresponsetypedef).
 
-<a id="update_input"></a>
+<a id="update\_input"></a>
 
 ### update_input
 
@@ -1416,7 +1416,7 @@ Keyword-only arguments:
 Returns
 [UpdateInputResponseTypeDef](./type_defs.md#updateinputresponsetypedef).
 
-<a id="update_input_device"></a>
+<a id="update\_input\_device"></a>
 
 ### update_input_device
 
@@ -1442,7 +1442,7 @@ Keyword-only arguments:
 Returns
 [UpdateInputDeviceResponseTypeDef](./type_defs.md#updateinputdeviceresponsetypedef).
 
-<a id="update_input_security_group"></a>
+<a id="update\_input\_security\_group"></a>
 
 ### update_input_security_group
 
@@ -1467,7 +1467,7 @@ Keyword-only arguments:
 Returns
 [UpdateInputSecurityGroupResponseTypeDef](./type_defs.md#updateinputsecuritygroupresponsetypedef).
 
-<a id="update_multiplex"></a>
+<a id="update\_multiplex"></a>
 
 ### update_multiplex
 
@@ -1491,7 +1491,7 @@ Keyword-only arguments:
 Returns
 [UpdateMultiplexResponseTypeDef](./type_defs.md#updatemultiplexresponsetypedef).
 
-<a id="update_multiplex_program"></a>
+<a id="update\_multiplex\_program"></a>
 
 ### update_multiplex_program
 
@@ -1516,7 +1516,7 @@ Keyword-only arguments:
 Returns
 [UpdateMultiplexProgramResponseTypeDef](./type_defs.md#updatemultiplexprogramresponsetypedef).
 
-<a id="update_reservation"></a>
+<a id="update\_reservation"></a>
 
 ### update_reservation
 

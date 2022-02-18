@@ -122,7 +122,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -139,7 +139,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_alarms"></a>
+<a id="delete\_alarms"></a>
 
 ### delete_alarms
 
@@ -157,7 +157,7 @@ Keyword-only arguments:
 
 - `AlarmNames`: `Sequence`\[`str`\] *(required)*
 
-<a id="delete_anomaly_detector"></a>
+<a id="delete\_anomaly\_detector"></a>
 
 ### delete_anomaly_detector
 
@@ -186,7 +186,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_dashboards"></a>
+<a id="delete\_dashboards"></a>
 
 ### delete_dashboards
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_insight_rules"></a>
+<a id="delete\_insight\_rules"></a>
 
 ### delete_insight_rules
 
@@ -227,7 +227,7 @@ Keyword-only arguments:
 Returns
 [DeleteInsightRulesOutputTypeDef](./type_defs.md#deleteinsightrulesoutputtypedef).
 
-<a id="delete_metric_stream"></a>
+<a id="delete\_metric\_stream"></a>
 
 ### delete_metric_stream
 
@@ -247,7 +247,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_alarm_history"></a>
+<a id="describe\_alarm\_history"></a>
 
 ### describe_alarm_history
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmHistoryOutputTypeDef](./type_defs.md#describealarmhistoryoutputtypedef).
 
-<a id="describe_alarms"></a>
+<a id="describe\_alarms"></a>
 
 ### describe_alarms
 
@@ -305,7 +305,7 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmsOutputTypeDef](./type_defs.md#describealarmsoutputtypedef).
 
-<a id="describe_alarms_for_metric"></a>
+<a id="describe\_alarms\_for\_metric"></a>
 
 ### describe_alarms_for_metric
 
@@ -334,7 +334,7 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmsForMetricOutputTypeDef](./type_defs.md#describealarmsformetricoutputtypedef).
 
-<a id="describe_anomaly_detectors"></a>
+<a id="describe\_anomaly\_detectors"></a>
 
 ### describe_anomaly_detectors
 
@@ -363,7 +363,7 @@ Keyword-only arguments:
 Returns
 [DescribeAnomalyDetectorsOutputTypeDef](./type_defs.md#describeanomalydetectorsoutputtypedef).
 
-<a id="describe_insight_rules"></a>
+<a id="describe\_insight\_rules"></a>
 
 ### describe_insight_rules
 
@@ -386,7 +386,7 @@ Keyword-only arguments:
 Returns
 [DescribeInsightRulesOutputTypeDef](./type_defs.md#describeinsightrulesoutputtypedef).
 
-<a id="disable_alarm_actions"></a>
+<a id="disable\_alarm\_actions"></a>
 
 ### disable_alarm_actions
 
@@ -404,7 +404,7 @@ Keyword-only arguments:
 
 - `AlarmNames`: `Sequence`\[`str`\] *(required)*
 
-<a id="disable_insight_rules"></a>
+<a id="disable\_insight\_rules"></a>
 
 ### disable_insight_rules
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 Returns
 [DisableInsightRulesOutputTypeDef](./type_defs.md#disableinsightrulesoutputtypedef).
 
-<a id="enable_alarm_actions"></a>
+<a id="enable\_alarm\_actions"></a>
 
 ### enable_alarm_actions
 
@@ -443,7 +443,7 @@ Keyword-only arguments:
 
 - `AlarmNames`: `Sequence`\[`str`\] *(required)*
 
-<a id="enable_insight_rules"></a>
+<a id="enable\_insight\_rules"></a>
 
 ### enable_insight_rules
 
@@ -464,7 +464,7 @@ Keyword-only arguments:
 Returns
 [EnableInsightRulesOutputTypeDef](./type_defs.md#enableinsightrulesoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -485,7 +485,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_dashboard"></a>
+<a id="get\_dashboard"></a>
 
 ### get_dashboard
 
@@ -505,7 +505,7 @@ Keyword-only arguments:
 
 Returns [GetDashboardOutputTypeDef](./type_defs.md#getdashboardoutputtypedef).
 
-<a id="get_insight_rule_report"></a>
+<a id="get\_insight\_rule\_report"></a>
 
 ### get_insight_rule_report
 
@@ -534,7 +534,7 @@ Keyword-only arguments:
 Returns
 [GetInsightRuleReportOutputTypeDef](./type_defs.md#getinsightrulereportoutputtypedef).
 
-<a id="get_metric_data"></a>
+<a id="get\_metric\_data"></a>
 
 ### get_metric_data
 
@@ -564,7 +564,7 @@ Keyword-only arguments:
 Returns
 [GetMetricDataOutputTypeDef](./type_defs.md#getmetricdataoutputtypedef).
 
-<a id="get_metric_statistics"></a>
+<a id="get\_metric\_statistics"></a>
 
 ### get_metric_statistics
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 Returns
 [GetMetricStatisticsOutputTypeDef](./type_defs.md#getmetricstatisticsoutputtypedef).
 
-<a id="get_metric_stream"></a>
+<a id="get\_metric\_stream"></a>
 
 ### get_metric_stream
 
@@ -615,7 +615,7 @@ Keyword-only arguments:
 Returns
 [GetMetricStreamOutputTypeDef](./type_defs.md#getmetricstreamoutputtypedef).
 
-<a id="get_metric_widget_image"></a>
+<a id="get\_metric\_widget\_image"></a>
 
 ### get_metric_widget_image
 
@@ -639,7 +639,7 @@ Keyword-only arguments:
 Returns
 [GetMetricWidgetImageOutputTypeDef](./type_defs.md#getmetricwidgetimageoutputtypedef).
 
-<a id="list_dashboards"></a>
+<a id="list\_dashboards"></a>
 
 ### list_dashboards
 
@@ -661,7 +661,7 @@ Keyword-only arguments:
 Returns
 [ListDashboardsOutputTypeDef](./type_defs.md#listdashboardsoutputtypedef).
 
-<a id="list_metric_streams"></a>
+<a id="list\_metric\_streams"></a>
 
 ### list_metric_streams
 
@@ -683,7 +683,7 @@ Keyword-only arguments:
 Returns
 [ListMetricStreamsOutputTypeDef](./type_defs.md#listmetricstreamsoutputtypedef).
 
-<a id="list_metrics"></a>
+<a id="list\_metrics"></a>
 
 ### list_metrics
 
@@ -709,7 +709,7 @@ Keyword-only arguments:
 
 Returns [ListMetricsOutputTypeDef](./type_defs.md#listmetricsoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="put_anomaly_detector"></a>
+<a id="put\_anomaly\_detector"></a>
 
 ### put_anomaly_detector
 
@@ -761,7 +761,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_composite_alarm"></a>
+<a id="put\_composite\_alarm"></a>
 
 ### put_composite_alarm
 
@@ -786,7 +786,7 @@ Keyword-only arguments:
 - `OKActions`: `Sequence`\[`str`\]
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 
-<a id="put_dashboard"></a>
+<a id="put\_dashboard"></a>
 
 ### put_dashboard
 
@@ -808,7 +808,7 @@ Keyword-only arguments:
 
 Returns [PutDashboardOutputTypeDef](./type_defs.md#putdashboardoutputtypedef).
 
-<a id="put_insight_rule"></a>
+<a id="put\_insight\_rule"></a>
 
 ### put_insight_rule
 
@@ -831,7 +831,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_metric_alarm"></a>
+<a id="put\_metric\_alarm"></a>
 
 ### put_metric_alarm
 
@@ -874,7 +874,7 @@ Keyword-only arguments:
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ThresholdMetricId`: `str`
 
-<a id="put_metric_data"></a>
+<a id="put\_metric\_data"></a>
 
 ### put_metric_data
 
@@ -895,7 +895,7 @@ Keyword-only arguments:
   `Sequence`\[[MetricDatumTypeDef](./type_defs.md#metricdatumtypedef)\]
   *(required)*
 
-<a id="put_metric_stream"></a>
+<a id="put\_metric\_stream"></a>
 
 ### put_metric_stream
 
@@ -926,7 +926,7 @@ Keyword-only arguments:
 Returns
 [PutMetricStreamOutputTypeDef](./type_defs.md#putmetricstreamoutputtypedef).
 
-<a id="set_alarm_state"></a>
+<a id="set\_alarm\_state"></a>
 
 ### set_alarm_state
 
@@ -947,7 +947,7 @@ Keyword-only arguments:
 - `StateReason`: `str` *(required)*
 - `StateReasonData`: `str`
 
-<a id="start_metric_streams"></a>
+<a id="start\_metric\_streams"></a>
 
 ### start_metric_streams
 
@@ -967,7 +967,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="stop_metric_streams"></a>
+<a id="stop\_metric\_streams"></a>
 
 ### stop_metric_streams
 
@@ -987,7 +987,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1009,7 +1009,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

@@ -93,7 +93,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -110,7 +110,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_data_integration"></a>
+<a id="create\_data\_integration"></a>
 
 ### create_data_integration
 
@@ -139,7 +139,7 @@ Keyword-only arguments:
 Returns
 [CreateDataIntegrationResponseTypeDef](./type_defs.md#createdataintegrationresponsetypedef).
 
-<a id="create_event_integration"></a>
+<a id="create\_event\_integration"></a>
 
 ### create_event_integration
 
@@ -169,7 +169,7 @@ Keyword-only arguments:
 Returns
 [CreateEventIntegrationResponseTypeDef](./type_defs.md#createeventintegrationresponsetypedef).
 
-<a id="delete_data_integration"></a>
+<a id="delete\_data\_integration"></a>
 
 ### delete_data_integration
 
@@ -190,7 +190,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_event_integration"></a>
+<a id="delete\_event\_integration"></a>
 
 ### delete_event_integration
 
@@ -211,7 +211,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -232,7 +232,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_data_integration"></a>
+<a id="get\_data\_integration"></a>
 
 ### get_data_integration
 
@@ -254,7 +254,7 @@ Keyword-only arguments:
 Returns
 [GetDataIntegrationResponseTypeDef](./type_defs.md#getdataintegrationresponsetypedef).
 
-<a id="get_event_integration"></a>
+<a id="get\_event\_integration"></a>
 
 ### get_event_integration
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 Returns
 [GetEventIntegrationResponseTypeDef](./type_defs.md#geteventintegrationresponsetypedef).
 
-<a id="list_data_integration_associations"></a>
+<a id="list\_data\_integration\_associations"></a>
 
 ### list_data_integration_associations
 
@@ -300,7 +300,7 @@ Keyword-only arguments:
 Returns
 [ListDataIntegrationAssociationsResponseTypeDef](./type_defs.md#listdataintegrationassociationsresponsetypedef).
 
-<a id="list_data_integrations"></a>
+<a id="list\_data\_integrations"></a>
 
 ### list_data_integrations
 
@@ -323,7 +323,7 @@ Keyword-only arguments:
 Returns
 [ListDataIntegrationsResponseTypeDef](./type_defs.md#listdataintegrationsresponsetypedef).
 
-<a id="list_event_integration_associations"></a>
+<a id="list\_event\_integration\_associations"></a>
 
 ### list_event_integration_associations
 
@@ -347,7 +347,7 @@ Keyword-only arguments:
 Returns
 [ListEventIntegrationAssociationsResponseTypeDef](./type_defs.md#listeventintegrationassociationsresponsetypedef).
 
-<a id="list_event_integrations"></a>
+<a id="list\_event\_integrations"></a>
 
 ### list_event_integrations
 
@@ -370,7 +370,7 @@ Keyword-only arguments:
 Returns
 [ListEventIntegrationsResponseTypeDef](./type_defs.md#listeventintegrationsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -392,7 +392,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -413,7 +413,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -434,7 +434,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_data_integration"></a>
+<a id="update\_data\_integration"></a>
 
 ### update_data_integration
 
@@ -457,7 +457,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_event_integration"></a>
+<a id="update\_event\_integration"></a>
 
 ### update_event_integration
 

@@ -83,7 +83,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -100,7 +100,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_lifecycle_policy"></a>
+<a id="create\_lifecycle\_policy"></a>
 
 ### create_lifecycle_policy
 
@@ -129,7 +129,7 @@ Keyword-only arguments:
 Returns
 [CreateLifecyclePolicyResponseTypeDef](./type_defs.md#createlifecyclepolicyresponsetypedef).
 
-<a id="delete_lifecycle_policy"></a>
+<a id="delete\_lifecycle\_policy"></a>
 
 ### delete_lifecycle_policy
 
@@ -150,7 +150,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -170,7 +170,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_lifecycle_policies"></a>
+<a id="get\_lifecycle\_policies"></a>
 
 ### get_lifecycle_policies
 
@@ -197,7 +197,7 @@ Keyword-only arguments:
 Returns
 [GetLifecyclePoliciesResponseTypeDef](./type_defs.md#getlifecyclepoliciesresponsetypedef).
 
-<a id="get_lifecycle_policy"></a>
+<a id="get\_lifecycle\_policy"></a>
 
 ### get_lifecycle_policy
 
@@ -218,7 +218,7 @@ Keyword-only arguments:
 Returns
 [GetLifecyclePolicyResponseTypeDef](./type_defs.md#getlifecyclepolicyresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -239,7 +239,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -260,7 +260,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_lifecycle_policy"></a>
+<a id="update\_lifecycle\_policy"></a>
 
 ### update_lifecycle_policy
 

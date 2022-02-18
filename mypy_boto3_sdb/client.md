@@ -99,7 +99,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_delete_attributes"></a>
+<a id="batch\_delete\_attributes"></a>
 
 ### batch_delete_attributes
 
@@ -121,7 +121,7 @@ Keyword-only arguments:
   `Sequence`\[[DeletableItemTypeDef](./type_defs.md#deletableitemtypedef)\]
   *(required)*
 
-<a id="batch_put_attributes"></a>
+<a id="batch\_put\_attributes"></a>
 
 ### batch_put_attributes
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
   `Sequence`\[[ReplaceableItemTypeDef](./type_defs.md#replaceableitemtypedef)\]
   *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -160,7 +160,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_domain"></a>
+<a id="create\_domain"></a>
 
 ### create_domain
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
-<a id="delete_attributes"></a>
+<a id="delete\_attributes"></a>
 
 ### delete_attributes
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
   `Sequence`\[[AttributeTypeDef](./type_defs.md#attributetypedef)\]
 - `Expected`: [UpdateConditionTypeDef](./type_defs.md#updateconditiontypedef)
 
-<a id="delete_domain"></a>
+<a id="delete\_domain"></a>
 
 ### delete_domain
 
@@ -218,7 +218,7 @@ Keyword-only arguments:
 
 - `DomainName`: `str` *(required)*
 
-<a id="domain_metadata"></a>
+<a id="domain\_metadata"></a>
 
 ### domain_metadata
 
@@ -241,7 +241,7 @@ Keyword-only arguments:
 Returns
 [DomainMetadataResultTypeDef](./type_defs.md#domainmetadataresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -261,7 +261,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_attributes"></a>
+<a id="get\_attributes"></a>
 
 ### get_attributes
 
@@ -285,7 +285,7 @@ Keyword-only arguments:
 Returns
 [GetAttributesResultTypeDef](./type_defs.md#getattributesresulttypedef).
 
-<a id="list_domains"></a>
+<a id="list\_domains"></a>
 
 ### list_domains
 
@@ -307,7 +307,7 @@ Keyword-only arguments:
 
 Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
 
-<a id="put_attributes"></a>
+<a id="put\_attributes"></a>
 
 ### put_attributes
 

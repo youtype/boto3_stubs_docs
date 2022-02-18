@@ -317,7 +317,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_reserved_node_exchange"></a>
+<a id="accept\_reserved\_node\_exchange"></a>
 
 ### accept_reserved_node_exchange
 
@@ -341,7 +341,7 @@ Keyword-only arguments:
 Returns
 [AcceptReservedNodeExchangeOutputMessageTypeDef](./type_defs.md#acceptreservednodeexchangeoutputmessagetypedef).
 
-<a id="add_partner"></a>
+<a id="add\_partner"></a>
 
 ### add_partner
 
@@ -365,7 +365,7 @@ Keyword-only arguments:
 Returns
 [PartnerIntegrationOutputMessageTypeDef](./type_defs.md#partnerintegrationoutputmessagetypedef).
 
-<a id="associate_data_share_consumer"></a>
+<a id="associate\_data\_share\_consumer"></a>
 
 ### associate_data_share_consumer
 
@@ -386,11 +386,12 @@ Keyword-only arguments:
 - `DataShareArn`: `str` *(required)*
 - `AssociateEntireAccount`: `bool`
 - `ConsumerArn`: `str`
+- `ConsumerRegion`: `str`
 
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
-<a id="authorize_cluster_security_group_ingress"></a>
+<a id="authorize\_cluster\_security\_group\_ingress"></a>
 
 ### authorize_cluster_security_group_ingress
 
@@ -415,7 +416,7 @@ Keyword-only arguments:
 Returns
 [AuthorizeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#authorizeclustersecuritygroupingressresulttypedef).
 
-<a id="authorize_data_share"></a>
+<a id="authorize\_data\_share"></a>
 
 ### authorize_data_share
 
@@ -438,7 +439,7 @@ Keyword-only arguments:
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
-<a id="authorize_endpoint_access"></a>
+<a id="authorize\_endpoint\_access"></a>
 
 ### authorize_endpoint_access
 
@@ -462,7 +463,7 @@ Keyword-only arguments:
 Returns
 [EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef).
 
-<a id="authorize_snapshot_access"></a>
+<a id="authorize\_snapshot\_access"></a>
 
 ### authorize_snapshot_access
 
@@ -487,7 +488,7 @@ Keyword-only arguments:
 Returns
 [AuthorizeSnapshotAccessResultTypeDef](./type_defs.md#authorizesnapshotaccessresulttypedef).
 
-<a id="batch_delete_cluster_snapshots"></a>
+<a id="batch\_delete\_cluster\_snapshots"></a>
 
 ### batch_delete_cluster_snapshots
 
@@ -511,7 +512,7 @@ Keyword-only arguments:
 Returns
 [BatchDeleteClusterSnapshotsResultTypeDef](./type_defs.md#batchdeleteclustersnapshotsresulttypedef).
 
-<a id="batch_modify_cluster_snapshots"></a>
+<a id="batch\_modify\_cluster\_snapshots"></a>
 
 ### batch_modify_cluster_snapshots
 
@@ -535,7 +536,7 @@ Keyword-only arguments:
 Returns
 [BatchModifyClusterSnapshotsOutputMessageTypeDef](./type_defs.md#batchmodifyclustersnapshotsoutputmessagetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -552,7 +553,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_resize"></a>
+<a id="cancel\_resize"></a>
 
 ### cancel_resize
 
@@ -573,7 +574,7 @@ Keyword-only arguments:
 Returns
 [ResizeProgressMessageTypeDef](./type_defs.md#resizeprogressmessagetypedef).
 
-<a id="copy_cluster_snapshot"></a>
+<a id="copy\_cluster\_snapshot"></a>
 
 ### copy_cluster_snapshot
 
@@ -598,7 +599,7 @@ Keyword-only arguments:
 Returns
 [CopyClusterSnapshotResultTypeDef](./type_defs.md#copyclustersnapshotresulttypedef).
 
-<a id="create_authentication_profile"></a>
+<a id="create\_authentication\_profile"></a>
 
 ### create_authentication_profile
 
@@ -621,7 +622,7 @@ Keyword-only arguments:
 Returns
 [CreateAuthenticationProfileResultTypeDef](./type_defs.md#createauthenticationprofileresulttypedef).
 
-<a id="create_cluster"></a>
+<a id="create\_cluster"></a>
 
 ### create_cluster
 
@@ -675,7 +676,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterResultTypeDef](./type_defs.md#createclusterresulttypedef).
 
-<a id="create_cluster_parameter_group"></a>
+<a id="create\_cluster\_parameter\_group"></a>
 
 ### create_cluster_parameter_group
 
@@ -700,7 +701,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterParameterGroupResultTypeDef](./type_defs.md#createclusterparametergroupresulttypedef).
 
-<a id="create_cluster_security_group"></a>
+<a id="create\_cluster\_security\_group"></a>
 
 ### create_cluster_security_group
 
@@ -724,7 +725,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterSecurityGroupResultTypeDef](./type_defs.md#createclustersecuritygroupresulttypedef).
 
-<a id="create_cluster_snapshot"></a>
+<a id="create\_cluster\_snapshot"></a>
 
 ### create_cluster_snapshot
 
@@ -748,7 +749,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterSnapshotResultTypeDef](./type_defs.md#createclustersnapshotresulttypedef).
 
-<a id="create_cluster_subnet_group"></a>
+<a id="create\_cluster\_subnet\_group"></a>
 
 ### create_cluster_subnet_group
 
@@ -773,7 +774,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterSubnetGroupResultTypeDef](./type_defs.md#createclustersubnetgroupresulttypedef).
 
-<a id="create_endpoint_access"></a>
+<a id="create\_endpoint\_access"></a>
 
 ### create_endpoint_access
 
@@ -798,7 +799,7 @@ Keyword-only arguments:
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
 
-<a id="create_event_subscription"></a>
+<a id="create\_event\_subscription"></a>
 
 ### create_event_subscription
 
@@ -827,7 +828,7 @@ Keyword-only arguments:
 Returns
 [CreateEventSubscriptionResultTypeDef](./type_defs.md#createeventsubscriptionresulttypedef).
 
-<a id="create_hsm_client_certificate"></a>
+<a id="create\_hsm\_client\_certificate"></a>
 
 ### create_hsm_client_certificate
 
@@ -852,7 +853,7 @@ Keyword-only arguments:
 Returns
 [CreateHsmClientCertificateResultTypeDef](./type_defs.md#createhsmclientcertificateresulttypedef).
 
-<a id="create_hsm_configuration"></a>
+<a id="create\_hsm\_configuration"></a>
 
 ### create_hsm_configuration
 
@@ -882,7 +883,7 @@ Keyword-only arguments:
 Returns
 [CreateHsmConfigurationResultTypeDef](./type_defs.md#createhsmconfigurationresulttypedef).
 
-<a id="create_scheduled_action"></a>
+<a id="create\_scheduled\_action"></a>
 
 ### create_scheduled_action
 
@@ -912,13 +913,13 @@ Keyword-only arguments:
 Returns
 [ScheduledActionResponseMetadataTypeDef](./type_defs.md#scheduledactionresponsemetadatatypedef).
 
-<a id="create_snapshot_copy_grant"></a>
+<a id="create\_snapshot\_copy\_grant"></a>
 
 ### create_snapshot_copy_grant
 
-Creates a snapshot copy grant that permits Amazon Redshift to use a customer
-master key (CMK) from Key Management Service (KMS) to encrypt copied snapshots
-in a destination region.
+Creates a snapshot copy grant that permits Amazon Redshift to use an encrypted
+symmetric key from Key Management Service (KMS) to encrypt copied snapshots in
+a destination region.
 
 Type annotations for `boto3.client("redshift").create_snapshot_copy_grant`
 method.
@@ -938,7 +939,7 @@ Keyword-only arguments:
 Returns
 [CreateSnapshotCopyGrantResultTypeDef](./type_defs.md#createsnapshotcopygrantresulttypedef).
 
-<a id="create_snapshot_schedule"></a>
+<a id="create\_snapshot\_schedule"></a>
 
 ### create_snapshot_schedule
 
@@ -966,7 +967,7 @@ Keyword-only arguments:
 Returns
 [SnapshotScheduleResponseMetadataTypeDef](./type_defs.md#snapshotscheduleresponsemetadatatypedef).
 
-<a id="create_tags"></a>
+<a id="create\_tags"></a>
 
 ### create_tags
 
@@ -985,7 +986,7 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="create_usage_limit"></a>
+<a id="create\_usage\_limit"></a>
 
 ### create_usage_limit
 
@@ -1016,7 +1017,7 @@ Keyword-only arguments:
 Returns
 [UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
 
-<a id="deauthorize_data_share"></a>
+<a id="deauthorize\_data\_share"></a>
 
 ### deauthorize_data_share
 
@@ -1038,7 +1039,7 @@ Keyword-only arguments:
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
-<a id="delete_authentication_profile"></a>
+<a id="delete\_authentication\_profile"></a>
 
 ### delete_authentication_profile
 
@@ -1060,7 +1061,7 @@ Keyword-only arguments:
 Returns
 [DeleteAuthenticationProfileResultTypeDef](./type_defs.md#deleteauthenticationprofileresulttypedef).
 
-<a id="delete_cluster"></a>
+<a id="delete\_cluster"></a>
 
 ### delete_cluster
 
@@ -1085,7 +1086,7 @@ Keyword-only arguments:
 Returns
 [DeleteClusterResultTypeDef](./type_defs.md#deleteclusterresulttypedef).
 
-<a id="delete_cluster_parameter_group"></a>
+<a id="delete\_cluster\_parameter\_group"></a>
 
 ### delete_cluster_parameter_group
 
@@ -1104,7 +1105,7 @@ Keyword-only arguments:
 
 - `ParameterGroupName`: `str` *(required)*
 
-<a id="delete_cluster_security_group"></a>
+<a id="delete\_cluster\_security\_group"></a>
 
 ### delete_cluster_security_group
 
@@ -1123,7 +1124,7 @@ Keyword-only arguments:
 
 - `ClusterSecurityGroupName`: `str` *(required)*
 
-<a id="delete_cluster_snapshot"></a>
+<a id="delete\_cluster\_snapshot"></a>
 
 ### delete_cluster_snapshot
 
@@ -1145,7 +1146,7 @@ Keyword-only arguments:
 Returns
 [DeleteClusterSnapshotResultTypeDef](./type_defs.md#deleteclustersnapshotresulttypedef).
 
-<a id="delete_cluster_subnet_group"></a>
+<a id="delete\_cluster\_subnet\_group"></a>
 
 ### delete_cluster_subnet_group
 
@@ -1164,7 +1165,7 @@ Keyword-only arguments:
 
 - `ClusterSubnetGroupName`: `str` *(required)*
 
-<a id="delete_endpoint_access"></a>
+<a id="delete\_endpoint\_access"></a>
 
 ### delete_endpoint_access
 
@@ -1185,7 +1186,7 @@ Keyword-only arguments:
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
 
-<a id="delete_event_subscription"></a>
+<a id="delete\_event\_subscription"></a>
 
 ### delete_event_subscription
 
@@ -1204,7 +1205,7 @@ Keyword-only arguments:
 
 - `SubscriptionName`: `str` *(required)*
 
-<a id="delete_hsm_client_certificate"></a>
+<a id="delete\_hsm\_client\_certificate"></a>
 
 ### delete_hsm_client_certificate
 
@@ -1223,7 +1224,7 @@ Keyword-only arguments:
 
 - `HsmClientCertificateIdentifier`: `str` *(required)*
 
-<a id="delete_hsm_configuration"></a>
+<a id="delete\_hsm\_configuration"></a>
 
 ### delete_hsm_configuration
 
@@ -1242,7 +1243,7 @@ Keyword-only arguments:
 
 - `HsmConfigurationIdentifier`: `str` *(required)*
 
-<a id="delete_partner"></a>
+<a id="delete\_partner"></a>
 
 ### delete_partner
 
@@ -1266,7 +1267,7 @@ Keyword-only arguments:
 Returns
 [PartnerIntegrationOutputMessageTypeDef](./type_defs.md#partnerintegrationoutputmessagetypedef).
 
-<a id="delete_scheduled_action"></a>
+<a id="delete\_scheduled\_action"></a>
 
 ### delete_scheduled_action
 
@@ -1284,7 +1285,7 @@ Keyword-only arguments:
 
 - `ScheduledActionName`: `str` *(required)*
 
-<a id="delete_snapshot_copy_grant"></a>
+<a id="delete\_snapshot\_copy\_grant"></a>
 
 ### delete_snapshot_copy_grant
 
@@ -1303,7 +1304,7 @@ Keyword-only arguments:
 
 - `SnapshotCopyGrantName`: `str` *(required)*
 
-<a id="delete_snapshot_schedule"></a>
+<a id="delete\_snapshot\_schedule"></a>
 
 ### delete_snapshot_schedule
 
@@ -1322,7 +1323,7 @@ Keyword-only arguments:
 
 - `ScheduleIdentifier`: `str` *(required)*
 
-<a id="delete_tags"></a>
+<a id="delete\_tags"></a>
 
 ### delete_tags
 
@@ -1341,7 +1342,7 @@ Keyword-only arguments:
 - `ResourceName`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="delete_usage_limit"></a>
+<a id="delete\_usage\_limit"></a>
 
 ### delete_usage_limit
 
@@ -1359,7 +1360,7 @@ Keyword-only arguments:
 
 - `UsageLimitId`: `str` *(required)*
 
-<a id="describe_account_attributes"></a>
+<a id="describe\_account\_attributes"></a>
 
 ### describe_account_attributes
 
@@ -1382,7 +1383,7 @@ Keyword-only arguments:
 Returns
 [AccountAttributeListTypeDef](./type_defs.md#accountattributelisttypedef).
 
-<a id="describe_authentication_profiles"></a>
+<a id="describe\_authentication\_profiles"></a>
 
 ### describe_authentication_profiles
 
@@ -1404,7 +1405,7 @@ Keyword-only arguments:
 Returns
 [DescribeAuthenticationProfilesResultTypeDef](./type_defs.md#describeauthenticationprofilesresulttypedef).
 
-<a id="describe_cluster_db_revisions"></a>
+<a id="describe\_cluster\_db\_revisions"></a>
 
 ### describe_cluster_db_revisions
 
@@ -1428,7 +1429,7 @@ Keyword-only arguments:
 Returns
 [ClusterDbRevisionsMessageTypeDef](./type_defs.md#clusterdbrevisionsmessagetypedef).
 
-<a id="describe_cluster_parameter_groups"></a>
+<a id="describe\_cluster\_parameter\_groups"></a>
 
 ### describe_cluster_parameter_groups
 
@@ -1455,7 +1456,7 @@ Keyword-only arguments:
 Returns
 [ClusterParameterGroupsMessageTypeDef](./type_defs.md#clusterparametergroupsmessagetypedef).
 
-<a id="describe_cluster_parameters"></a>
+<a id="describe\_cluster\_parameters"></a>
 
 ### describe_cluster_parameters
 
@@ -1481,7 +1482,7 @@ Keyword-only arguments:
 Returns
 [ClusterParameterGroupDetailsTypeDef](./type_defs.md#clusterparametergroupdetailstypedef).
 
-<a id="describe_cluster_security_groups"></a>
+<a id="describe\_cluster\_security\_groups"></a>
 
 ### describe_cluster_security_groups
 
@@ -1507,7 +1508,7 @@ Keyword-only arguments:
 Returns
 [ClusterSecurityGroupMessageTypeDef](./type_defs.md#clustersecuritygroupmessagetypedef).
 
-<a id="describe_cluster_snapshots"></a>
+<a id="describe\_cluster\_snapshots"></a>
 
 ### describe_cluster_snapshots
 
@@ -1541,7 +1542,7 @@ Keyword-only arguments:
 
 Returns [SnapshotMessageTypeDef](./type_defs.md#snapshotmessagetypedef).
 
-<a id="describe_cluster_subnet_groups"></a>
+<a id="describe\_cluster\_subnet\_groups"></a>
 
 ### describe_cluster_subnet_groups
 
@@ -1568,7 +1569,7 @@ Keyword-only arguments:
 Returns
 [ClusterSubnetGroupMessageTypeDef](./type_defs.md#clustersubnetgroupmessagetypedef).
 
-<a id="describe_cluster_tracks"></a>
+<a id="describe\_cluster\_tracks"></a>
 
 ### describe_cluster_tracks
 
@@ -1590,7 +1591,7 @@ Keyword-only arguments:
 
 Returns [TrackListMessageTypeDef](./type_defs.md#tracklistmessagetypedef).
 
-<a id="describe_cluster_versions"></a>
+<a id="describe\_cluster\_versions"></a>
 
 ### describe_cluster_versions
 
@@ -1615,7 +1616,7 @@ Keyword-only arguments:
 Returns
 [ClusterVersionsMessageTypeDef](./type_defs.md#clusterversionsmessagetypedef).
 
-<a id="describe_clusters"></a>
+<a id="describe\_clusters"></a>
 
 ### describe_clusters
 
@@ -1641,7 +1642,7 @@ Keyword-only arguments:
 
 Returns [ClustersMessageTypeDef](./type_defs.md#clustersmessagetypedef).
 
-<a id="describe_data_shares"></a>
+<a id="describe\_data\_shares"></a>
 
 ### describe_data_shares
 
@@ -1665,7 +1666,7 @@ Keyword-only arguments:
 Returns
 [DescribeDataSharesResultTypeDef](./type_defs.md#describedatasharesresulttypedef).
 
-<a id="describe_data_shares_for_consumer"></a>
+<a id="describe\_data\_shares\_for\_consumer"></a>
 
 ### describe_data_shares_for_consumer
 
@@ -1692,7 +1693,7 @@ Keyword-only arguments:
 Returns
 [DescribeDataSharesForConsumerResultTypeDef](./type_defs.md#describedatasharesforconsumerresulttypedef).
 
-<a id="describe_data_shares_for_producer"></a>
+<a id="describe\_data\_shares\_for\_producer"></a>
 
 ### describe_data_shares_for_producer
 
@@ -1719,7 +1720,7 @@ Keyword-only arguments:
 Returns
 [DescribeDataSharesForProducerResultTypeDef](./type_defs.md#describedatasharesforproducerresulttypedef).
 
-<a id="describe_default_cluster_parameters"></a>
+<a id="describe\_default\_cluster\_parameters"></a>
 
 ### describe_default_cluster_parameters
 
@@ -1743,7 +1744,7 @@ Keyword-only arguments:
 Returns
 [DescribeDefaultClusterParametersResultTypeDef](./type_defs.md#describedefaultclusterparametersresulttypedef).
 
-<a id="describe_endpoint_access"></a>
+<a id="describe\_endpoint\_access"></a>
 
 ### describe_endpoint_access
 
@@ -1769,7 +1770,7 @@ Keyword-only arguments:
 
 Returns [EndpointAccessListTypeDef](./type_defs.md#endpointaccesslisttypedef).
 
-<a id="describe_endpoint_authorization"></a>
+<a id="describe\_endpoint\_authorization"></a>
 
 ### describe_endpoint_authorization
 
@@ -1795,7 +1796,7 @@ Keyword-only arguments:
 Returns
 [EndpointAuthorizationListTypeDef](./type_defs.md#endpointauthorizationlisttypedef).
 
-<a id="describe_event_categories"></a>
+<a id="describe\_event\_categories"></a>
 
 ### describe_event_categories
 
@@ -1818,7 +1819,7 @@ Keyword-only arguments:
 Returns
 [EventCategoriesMessageTypeDef](./type_defs.md#eventcategoriesmessagetypedef).
 
-<a id="describe_event_subscriptions"></a>
+<a id="describe\_event\_subscriptions"></a>
 
 ### describe_event_subscriptions
 
@@ -1845,7 +1846,7 @@ Keyword-only arguments:
 Returns
 [EventSubscriptionsMessageTypeDef](./type_defs.md#eventsubscriptionsmessagetypedef).
 
-<a id="describe_events"></a>
+<a id="describe\_events"></a>
 
 ### describe_events
 
@@ -1872,7 +1873,7 @@ Keyword-only arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
-<a id="describe_hsm_client_certificates"></a>
+<a id="describe\_hsm\_client\_certificates"></a>
 
 ### describe_hsm_client_certificates
 
@@ -1898,7 +1899,7 @@ Keyword-only arguments:
 Returns
 [HsmClientCertificateMessageTypeDef](./type_defs.md#hsmclientcertificatemessagetypedef).
 
-<a id="describe_hsm_configurations"></a>
+<a id="describe\_hsm\_configurations"></a>
 
 ### describe_hsm_configurations
 
@@ -1924,7 +1925,7 @@ Keyword-only arguments:
 Returns
 [HsmConfigurationMessageTypeDef](./type_defs.md#hsmconfigurationmessagetypedef).
 
-<a id="describe_logging_status"></a>
+<a id="describe\_logging\_status"></a>
 
 ### describe_logging_status
 
@@ -1945,7 +1946,7 @@ Keyword-only arguments:
 
 Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 
-<a id="describe_node_configuration_options"></a>
+<a id="describe\_node\_configuration\_options"></a>
 
 ### describe_node_configuration_options
 
@@ -1975,7 +1976,7 @@ Keyword-only arguments:
 Returns
 [NodeConfigurationOptionsMessageTypeDef](./type_defs.md#nodeconfigurationoptionsmessagetypedef).
 
-<a id="describe_orderable_cluster_options"></a>
+<a id="describe\_orderable\_cluster\_options"></a>
 
 ### describe_orderable_cluster_options
 
@@ -2000,7 +2001,7 @@ Keyword-only arguments:
 Returns
 [OrderableClusterOptionsMessageTypeDef](./type_defs.md#orderableclusteroptionsmessagetypedef).
 
-<a id="describe_partners"></a>
+<a id="describe\_partners"></a>
 
 ### describe_partners
 
@@ -2024,7 +2025,7 @@ Keyword-only arguments:
 Returns
 [DescribePartnersOutputMessageTypeDef](./type_defs.md#describepartnersoutputmessagetypedef).
 
-<a id="describe_reserved_node_exchange_status"></a>
+<a id="describe\_reserved\_node\_exchange\_status"></a>
 
 ### describe_reserved_node_exchange_status
 
@@ -2050,7 +2051,7 @@ Keyword-only arguments:
 Returns
 [DescribeReservedNodeExchangeStatusOutputMessageTypeDef](./type_defs.md#describereservednodeexchangestatusoutputmessagetypedef).
 
-<a id="describe_reserved_node_offerings"></a>
+<a id="describe\_reserved\_node\_offerings"></a>
 
 ### describe_reserved_node_offerings
 
@@ -2076,7 +2077,7 @@ Keyword-only arguments:
 Returns
 [ReservedNodeOfferingsMessageTypeDef](./type_defs.md#reservednodeofferingsmessagetypedef).
 
-<a id="describe_reserved_nodes"></a>
+<a id="describe\_reserved\_nodes"></a>
 
 ### describe_reserved_nodes
 
@@ -2099,7 +2100,7 @@ Keyword-only arguments:
 Returns
 [ReservedNodesMessageTypeDef](./type_defs.md#reservednodesmessagetypedef).
 
-<a id="describe_resize"></a>
+<a id="describe\_resize"></a>
 
 ### describe_resize
 
@@ -2120,7 +2121,7 @@ Keyword-only arguments:
 Returns
 [ResizeProgressMessageTypeDef](./type_defs.md#resizeprogressmessagetypedef).
 
-<a id="describe_scheduled_actions"></a>
+<a id="describe\_scheduled\_actions"></a>
 
 ### describe_scheduled_actions
 
@@ -2151,7 +2152,7 @@ Keyword-only arguments:
 Returns
 [ScheduledActionsMessageTypeDef](./type_defs.md#scheduledactionsmessagetypedef).
 
-<a id="describe_snapshot_copy_grants"></a>
+<a id="describe\_snapshot\_copy\_grants"></a>
 
 ### describe_snapshot_copy_grants
 
@@ -2178,7 +2179,7 @@ Keyword-only arguments:
 Returns
 [SnapshotCopyGrantMessageTypeDef](./type_defs.md#snapshotcopygrantmessagetypedef).
 
-<a id="describe_snapshot_schedules"></a>
+<a id="describe\_snapshot\_schedules"></a>
 
 ### describe_snapshot_schedules
 
@@ -2205,7 +2206,7 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotSchedulesOutputMessageTypeDef](./type_defs.md#describesnapshotschedulesoutputmessagetypedef).
 
-<a id="describe_storage"></a>
+<a id="describe\_storage"></a>
 
 ### describe_storage
 
@@ -2219,7 +2220,7 @@ Boto3 documentation:
 Returns
 [CustomerStorageMessageTypeDef](./type_defs.md#customerstoragemessagetypedef).
 
-<a id="describe_table_restore_status"></a>
+<a id="describe\_table\_restore\_status"></a>
 
 ### describe_table_restore_status
 
@@ -2245,7 +2246,7 @@ Keyword-only arguments:
 Returns
 [TableRestoreStatusMessageTypeDef](./type_defs.md#tablerestorestatusmessagetypedef).
 
-<a id="describe_tags"></a>
+<a id="describe\_tags"></a>
 
 ### describe_tags
 
@@ -2271,7 +2272,7 @@ Keyword-only arguments:
 Returns
 [TaggedResourceListMessageTypeDef](./type_defs.md#taggedresourcelistmessagetypedef).
 
-<a id="describe_usage_limits"></a>
+<a id="describe\_usage\_limits"></a>
 
 ### describe_usage_limits
 
@@ -2298,7 +2299,7 @@ Keyword-only arguments:
 
 Returns [UsageLimitListTypeDef](./type_defs.md#usagelimitlisttypedef).
 
-<a id="disable_logging"></a>
+<a id="disable\_logging"></a>
 
 ### disable_logging
 
@@ -2319,7 +2320,7 @@ Keyword-only arguments:
 
 Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 
-<a id="disable_snapshot_copy"></a>
+<a id="disable\_snapshot\_copy"></a>
 
 ### disable_snapshot_copy
 
@@ -2341,7 +2342,7 @@ Keyword-only arguments:
 Returns
 [DisableSnapshotCopyResultTypeDef](./type_defs.md#disablesnapshotcopyresulttypedef).
 
-<a id="disassociate_data_share_consumer"></a>
+<a id="disassociate\_data\_share\_consumer"></a>
 
 ### disassociate_data_share_consumer
 
@@ -2361,11 +2362,12 @@ Keyword-only arguments:
 - `DataShareArn`: `str` *(required)*
 - `DisassociateEntireAccount`: `bool`
 - `ConsumerArn`: `str`
+- `ConsumerRegion`: `str`
 
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
-<a id="enable_logging"></a>
+<a id="enable\_logging"></a>
 
 ### enable_logging
 
@@ -2388,7 +2390,7 @@ Keyword-only arguments:
 
 Returns [LoggingStatusTypeDef](./type_defs.md#loggingstatustypedef).
 
-<a id="enable_snapshot_copy"></a>
+<a id="enable\_snapshot\_copy"></a>
 
 ### enable_snapshot_copy
 
@@ -2414,7 +2416,7 @@ Keyword-only arguments:
 Returns
 [EnableSnapshotCopyResultTypeDef](./type_defs.md#enablesnapshotcopyresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -2434,7 +2436,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_cluster_credentials"></a>
+<a id="get\_cluster\_credentials"></a>
 
 ### get_cluster_credentials
 
@@ -2460,7 +2462,7 @@ Keyword-only arguments:
 
 Returns [ClusterCredentialsTypeDef](./type_defs.md#clustercredentialstypedef).
 
-<a id="get_reserved_node_exchange_configuration_options"></a>
+<a id="get\_reserved\_node\_exchange\_configuration\_options"></a>
 
 ### get_reserved_node_exchange_configuration_options
 
@@ -2489,7 +2491,7 @@ Keyword-only arguments:
 Returns
 [GetReservedNodeExchangeConfigurationOptionsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeconfigurationoptionsoutputmessagetypedef).
 
-<a id="get_reserved_node_exchange_offerings"></a>
+<a id="get\_reserved\_node\_exchange\_offerings"></a>
 
 ### get_reserved_node_exchange_offerings
 
@@ -2514,7 +2516,7 @@ Keyword-only arguments:
 Returns
 [GetReservedNodeExchangeOfferingsOutputMessageTypeDef](./type_defs.md#getreservednodeexchangeofferingsoutputmessagetypedef).
 
-<a id="modify_aqua_configuration"></a>
+<a id="modify\_aqua\_configuration"></a>
 
 ### modify_aqua_configuration
 
@@ -2538,7 +2540,7 @@ Keyword-only arguments:
 Returns
 [ModifyAquaOutputMessageTypeDef](./type_defs.md#modifyaquaoutputmessagetypedef).
 
-<a id="modify_authentication_profile"></a>
+<a id="modify\_authentication\_profile"></a>
 
 ### modify_authentication_profile
 
@@ -2561,7 +2563,7 @@ Keyword-only arguments:
 Returns
 [ModifyAuthenticationProfileResultTypeDef](./type_defs.md#modifyauthenticationprofileresulttypedef).
 
-<a id="modify_cluster"></a>
+<a id="modify\_cluster"></a>
 
 ### modify_cluster
 
@@ -2606,7 +2608,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterResultTypeDef](./type_defs.md#modifyclusterresulttypedef).
 
-<a id="modify_cluster_db_revision"></a>
+<a id="modify\_cluster\_db\_revision"></a>
 
 ### modify_cluster_db_revision
 
@@ -2629,7 +2631,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterDbRevisionResultTypeDef](./type_defs.md#modifyclusterdbrevisionresulttypedef).
 
-<a id="modify_cluster_iam_roles"></a>
+<a id="modify\_cluster\_iam\_roles"></a>
 
 ### modify_cluster_iam_roles
 
@@ -2655,7 +2657,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterIamRolesResultTypeDef](./type_defs.md#modifyclusteriamrolesresulttypedef).
 
-<a id="modify_cluster_maintenance"></a>
+<a id="modify\_cluster\_maintenance"></a>
 
 ### modify_cluster_maintenance
 
@@ -2682,7 +2684,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterMaintenanceResultTypeDef](./type_defs.md#modifyclustermaintenanceresulttypedef).
 
-<a id="modify_cluster_parameter_group"></a>
+<a id="modify\_cluster\_parameter\_group"></a>
 
 ### modify_cluster_parameter_group
 
@@ -2707,7 +2709,7 @@ Keyword-only arguments:
 Returns
 [ClusterParameterGroupNameMessageTypeDef](./type_defs.md#clusterparametergroupnamemessagetypedef).
 
-<a id="modify_cluster_snapshot"></a>
+<a id="modify\_cluster\_snapshot"></a>
 
 ### modify_cluster_snapshot
 
@@ -2730,7 +2732,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterSnapshotResultTypeDef](./type_defs.md#modifyclustersnapshotresulttypedef).
 
-<a id="modify_cluster_snapshot_schedule"></a>
+<a id="modify\_cluster\_snapshot\_schedule"></a>
 
 ### modify_cluster_snapshot_schedule
 
@@ -2751,7 +2753,7 @@ Keyword-only arguments:
 - `ScheduleIdentifier`: `str`
 - `DisassociateSchedule`: `bool`
 
-<a id="modify_cluster_subnet_group"></a>
+<a id="modify\_cluster\_subnet\_group"></a>
 
 ### modify_cluster_subnet_group
 
@@ -2775,7 +2777,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterSubnetGroupResultTypeDef](./type_defs.md#modifyclustersubnetgroupresulttypedef).
 
-<a id="modify_endpoint_access"></a>
+<a id="modify\_endpoint\_access"></a>
 
 ### modify_endpoint_access
 
@@ -2797,7 +2799,7 @@ Keyword-only arguments:
 Returns
 [EndpointAccessResponseMetadataTypeDef](./type_defs.md#endpointaccessresponsemetadatatypedef).
 
-<a id="modify_event_subscription"></a>
+<a id="modify\_event\_subscription"></a>
 
 ### modify_event_subscription
 
@@ -2825,7 +2827,7 @@ Keyword-only arguments:
 Returns
 [ModifyEventSubscriptionResultTypeDef](./type_defs.md#modifyeventsubscriptionresulttypedef).
 
-<a id="modify_scheduled_action"></a>
+<a id="modify\_scheduled\_action"></a>
 
 ### modify_scheduled_action
 
@@ -2854,7 +2856,7 @@ Keyword-only arguments:
 Returns
 [ScheduledActionResponseMetadataTypeDef](./type_defs.md#scheduledactionresponsemetadatatypedef).
 
-<a id="modify_snapshot_copy_retention_period"></a>
+<a id="modify\_snapshot\_copy\_retention\_period"></a>
 
 ### modify_snapshot_copy_retention_period
 
@@ -2880,7 +2882,7 @@ Keyword-only arguments:
 Returns
 [ModifySnapshotCopyRetentionPeriodResultTypeDef](./type_defs.md#modifysnapshotcopyretentionperiodresulttypedef).
 
-<a id="modify_snapshot_schedule"></a>
+<a id="modify\_snapshot\_schedule"></a>
 
 ### modify_snapshot_schedule
 
@@ -2903,7 +2905,7 @@ Keyword-only arguments:
 Returns
 [SnapshotScheduleResponseMetadataTypeDef](./type_defs.md#snapshotscheduleresponsemetadatatypedef).
 
-<a id="modify_usage_limit"></a>
+<a id="modify\_usage\_limit"></a>
 
 ### modify_usage_limit
 
@@ -2927,7 +2929,7 @@ Keyword-only arguments:
 Returns
 [UsageLimitResponseMetadataTypeDef](./type_defs.md#usagelimitresponsemetadatatypedef).
 
-<a id="pause_cluster"></a>
+<a id="pause\_cluster"></a>
 
 ### pause_cluster
 
@@ -2947,7 +2949,7 @@ Keyword-only arguments:
 
 Returns [PauseClusterResultTypeDef](./type_defs.md#pauseclusterresulttypedef).
 
-<a id="purchase_reserved_node_offering"></a>
+<a id="purchase\_reserved\_node\_offering"></a>
 
 ### purchase_reserved_node_offering
 
@@ -2970,7 +2972,7 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedNodeOfferingResultTypeDef](./type_defs.md#purchasereservednodeofferingresulttypedef).
 
-<a id="reboot_cluster"></a>
+<a id="reboot\_cluster"></a>
 
 ### reboot_cluster
 
@@ -2991,7 +2993,7 @@ Keyword-only arguments:
 Returns
 [RebootClusterResultTypeDef](./type_defs.md#rebootclusterresulttypedef).
 
-<a id="reject_data_share"></a>
+<a id="reject\_data\_share"></a>
 
 ### reject_data_share
 
@@ -3012,7 +3014,7 @@ Keyword-only arguments:
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
 
-<a id="reset_cluster_parameter_group"></a>
+<a id="reset\_cluster\_parameter\_group"></a>
 
 ### reset_cluster_parameter_group
 
@@ -3038,7 +3040,7 @@ Keyword-only arguments:
 Returns
 [ClusterParameterGroupNameMessageTypeDef](./type_defs.md#clusterparametergroupnamemessagetypedef).
 
-<a id="resize_cluster"></a>
+<a id="resize\_cluster"></a>
 
 ### resize_cluster
 
@@ -3065,7 +3067,7 @@ Keyword-only arguments:
 Returns
 [ResizeClusterResultTypeDef](./type_defs.md#resizeclusterresulttypedef).
 
-<a id="restore_from_cluster_snapshot"></a>
+<a id="restore\_from\_cluster\_snapshot"></a>
 
 ### restore_from_cluster_snapshot
 
@@ -3118,7 +3120,7 @@ Keyword-only arguments:
 Returns
 [RestoreFromClusterSnapshotResultTypeDef](./type_defs.md#restorefromclustersnapshotresulttypedef).
 
-<a id="restore_table_from_cluster_snapshot"></a>
+<a id="restore\_table\_from\_cluster\_snapshot"></a>
 
 ### restore_table_from_cluster_snapshot
 
@@ -3148,7 +3150,7 @@ Keyword-only arguments:
 Returns
 [RestoreTableFromClusterSnapshotResultTypeDef](./type_defs.md#restoretablefromclustersnapshotresulttypedef).
 
-<a id="resume_cluster"></a>
+<a id="resume\_cluster"></a>
 
 ### resume_cluster
 
@@ -3169,7 +3171,7 @@ Keyword-only arguments:
 Returns
 [ResumeClusterResultTypeDef](./type_defs.md#resumeclusterresulttypedef).
 
-<a id="revoke_cluster_security_group_ingress"></a>
+<a id="revoke\_cluster\_security\_group\_ingress"></a>
 
 ### revoke_cluster_security_group_ingress
 
@@ -3195,7 +3197,7 @@ Keyword-only arguments:
 Returns
 [RevokeClusterSecurityGroupIngressResultTypeDef](./type_defs.md#revokeclustersecuritygroupingressresulttypedef).
 
-<a id="revoke_endpoint_access"></a>
+<a id="revoke\_endpoint\_access"></a>
 
 ### revoke_endpoint_access
 
@@ -3219,7 +3221,7 @@ Keyword-only arguments:
 Returns
 [EndpointAuthorizationResponseMetadataTypeDef](./type_defs.md#endpointauthorizationresponsemetadatatypedef).
 
-<a id="revoke_snapshot_access"></a>
+<a id="revoke\_snapshot\_access"></a>
 
 ### revoke_snapshot_access
 
@@ -3243,7 +3245,7 @@ Keyword-only arguments:
 Returns
 [RevokeSnapshotAccessResultTypeDef](./type_defs.md#revokesnapshotaccessresulttypedef).
 
-<a id="rotate_encryption_key"></a>
+<a id="rotate\_encryption\_key"></a>
 
 ### rotate_encryption_key
 
@@ -3264,7 +3266,7 @@ Keyword-only arguments:
 Returns
 [RotateEncryptionKeyResultTypeDef](./type_defs.md#rotateencryptionkeyresulttypedef).
 
-<a id="update_partner_status"></a>
+<a id="update\_partner\_status"></a>
 
 ### update_partner_status
 

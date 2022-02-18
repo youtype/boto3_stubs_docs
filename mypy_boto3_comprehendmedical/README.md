@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [ComprehendMedicalClient](#comprehendmedicalclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -44,9 +45,11 @@ Install `boto3-stubs` for `ComprehendMedical` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[comprehendmedical]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[comprehendmedical]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-comprehendmedical
@@ -59,6 +62,12 @@ python -m pip install mypy-boto3-comprehendmedical
 ```bash
 python -m pip uninstall -y mypy-boto3-comprehendmedical
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="comprehendmedicalclient"></a>
 

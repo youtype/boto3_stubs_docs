@@ -89,7 +89,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -106,7 +106,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_app_monitor"></a>
+<a id="create\_app\_monitor"></a>
 
 ### create_app_monitor
 
@@ -133,7 +133,7 @@ Keyword-only arguments:
 Returns
 [CreateAppMonitorResponseTypeDef](./type_defs.md#createappmonitorresponsetypedef).
 
-<a id="delete_app_monitor"></a>
+<a id="delete\_app\_monitor"></a>
 
 ### delete_app_monitor
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -173,7 +173,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_app_monitor"></a>
+<a id="get\_app\_monitor"></a>
 
 ### get_app_monitor
 
@@ -194,7 +194,7 @@ Keyword-only arguments:
 Returns
 [GetAppMonitorResponseTypeDef](./type_defs.md#getappmonitorresponsetypedef).
 
-<a id="get_app_monitor_data"></a>
+<a id="get\_app\_monitor\_data"></a>
 
 ### get_app_monitor_data
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [GetAppMonitorDataResponseTypeDef](./type_defs.md#getappmonitordataresponsetypedef).
 
-<a id="list_app_monitors"></a>
+<a id="list\_app\_monitors"></a>
 
 ### list_app_monitors
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 Returns
 [ListAppMonitorsResponseTypeDef](./type_defs.md#listappmonitorsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -264,7 +264,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_rum_events"></a>
+<a id="put\_rum\_events"></a>
 
 ### put_rum_events
 
@@ -293,7 +293,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -315,7 +315,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -336,7 +336,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_app_monitor"></a>
+<a id="update\_app\_monitor"></a>
 
 ### update_app_monitor
 

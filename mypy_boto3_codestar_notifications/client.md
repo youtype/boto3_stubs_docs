@@ -94,7 +94,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -112,7 +112,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_notification_rule"></a>
+<a id="create\_notification\_rule"></a>
 
 ### create_notification_rule
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 Returns
 [CreateNotificationRuleResultTypeDef](./type_defs.md#createnotificationruleresulttypedef).
 
-<a id="delete_notification_rule"></a>
+<a id="delete\_notification\_rule"></a>
 
 ### delete_notification_rule
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [DeleteNotificationRuleResultTypeDef](./type_defs.md#deletenotificationruleresulttypedef).
 
-<a id="delete_target"></a>
+<a id="delete\_target"></a>
 
 ### delete_target
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_notification_rule"></a>
+<a id="describe\_notification\_rule"></a>
 
 ### describe_notification_rule
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [DescribeNotificationRuleResultTypeDef](./type_defs.md#describenotificationruleresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -230,7 +230,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_event_types"></a>
+<a id="list\_event\_types"></a>
 
 ### list_event_types
 
@@ -256,7 +256,7 @@ Keyword-only arguments:
 Returns
 [ListEventTypesResultTypeDef](./type_defs.md#listeventtypesresulttypedef).
 
-<a id="list_notification_rules"></a>
+<a id="list\_notification\_rules"></a>
 
 ### list_notification_rules
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 Returns
 [ListNotificationRulesResultTypeDef](./type_defs.md#listnotificationrulesresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -303,7 +303,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
-<a id="list_targets"></a>
+<a id="list\_targets"></a>
 
 ### list_targets
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 
 Returns [SubscribeResultTypeDef](./type_defs.md#subscriberesulttypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -397,7 +397,7 @@ Keyword-only arguments:
 
 Returns [UnsubscribeResultTypeDef](./type_defs.md#unsubscriberesulttypedef).
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -420,7 +420,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_notification_rule"></a>
+<a id="update\_notification\_rule"></a>
 
 ### update_notification_rule
 

@@ -81,7 +81,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -98,7 +98,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_accelerator_offerings"></a>
+<a id="describe\_accelerator\_offerings"></a>
 
 ### describe_accelerator_offerings
 
@@ -123,7 +123,7 @@ Keyword-only arguments:
 Returns
 [DescribeAcceleratorOfferingsResponseTypeDef](./type_defs.md#describeacceleratorofferingsresponsetypedef).
 
-<a id="describe_accelerator_types"></a>
+<a id="describe\_accelerator\_types"></a>
 
 ### describe_accelerator_types
 
@@ -139,7 +139,7 @@ Boto3 documentation:
 Returns
 [DescribeAcceleratorTypesResponseTypeDef](./type_defs.md#describeacceleratortypesresponsetypedef).
 
-<a id="describe_accelerators"></a>
+<a id="describe\_accelerators"></a>
 
 ### describe_accelerators
 
@@ -165,7 +165,7 @@ Keyword-only arguments:
 Returns
 [DescribeAcceleratorsResponseTypeDef](./type_defs.md#describeacceleratorsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -186,7 +186,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -208,7 +208,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -229,7 +229,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

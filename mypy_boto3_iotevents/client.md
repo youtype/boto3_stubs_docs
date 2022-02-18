@@ -106,7 +106,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -123,7 +123,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_alarm_model"></a>
+<a id="create\_alarm\_model"></a>
 
 ### create_alarm_model
 
@@ -156,7 +156,7 @@ Keyword-only arguments:
 Returns
 [CreateAlarmModelResponseTypeDef](./type_defs.md#createalarmmodelresponsetypedef).
 
-<a id="create_detector_model"></a>
+<a id="create\_detector\_model"></a>
 
 ### create_detector_model
 
@@ -186,7 +186,7 @@ Keyword-only arguments:
 Returns
 [CreateDetectorModelResponseTypeDef](./type_defs.md#createdetectormodelresponsetypedef).
 
-<a id="create_input"></a>
+<a id="create\_input"></a>
 
 ### create_input
 
@@ -211,7 +211,7 @@ Keyword-only arguments:
 Returns
 [CreateInputResponseTypeDef](./type_defs.md#createinputresponsetypedef).
 
-<a id="delete_alarm_model"></a>
+<a id="delete\_alarm\_model"></a>
 
 ### delete_alarm_model
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_detector_model"></a>
+<a id="delete\_detector\_model"></a>
 
 ### delete_detector_model
 
@@ -251,7 +251,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_input"></a>
+<a id="delete\_input"></a>
 
 ### delete_input
 
@@ -271,7 +271,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_alarm_model"></a>
+<a id="describe\_alarm\_model"></a>
 
 ### describe_alarm_model
 
@@ -293,7 +293,7 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmModelResponseTypeDef](./type_defs.md#describealarmmodelresponsetypedef).
 
-<a id="describe_detector_model"></a>
+<a id="describe\_detector\_model"></a>
 
 ### describe_detector_model
 
@@ -316,7 +316,7 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorModelResponseTypeDef](./type_defs.md#describedetectormodelresponsetypedef).
 
-<a id="describe_detector_model_analysis"></a>
+<a id="describe\_detector\_model\_analysis"></a>
 
 ### describe_detector_model_analysis
 
@@ -338,7 +338,7 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorModelAnalysisResponseTypeDef](./type_defs.md#describedetectormodelanalysisresponsetypedef).
 
-<a id="describe_input"></a>
+<a id="describe\_input"></a>
 
 ### describe_input
 
@@ -359,7 +359,7 @@ Keyword-only arguments:
 Returns
 [DescribeInputResponseTypeDef](./type_defs.md#describeinputresponsetypedef).
 
-<a id="describe_logging_options"></a>
+<a id="describe\_logging\_options"></a>
 
 ### describe_logging_options
 
@@ -374,7 +374,7 @@ Boto3 documentation:
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -394,7 +394,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_detector_model_analysis_results"></a>
+<a id="get\_detector\_model\_analysis\_results"></a>
 
 ### get_detector_model_analysis_results
 
@@ -418,7 +418,7 @@ Keyword-only arguments:
 Returns
 [GetDetectorModelAnalysisResultsResponseTypeDef](./type_defs.md#getdetectormodelanalysisresultsresponsetypedef).
 
-<a id="list_alarm_model_versions"></a>
+<a id="list\_alarm\_model\_versions"></a>
 
 ### list_alarm_model_versions
 
@@ -442,7 +442,7 @@ Keyword-only arguments:
 Returns
 [ListAlarmModelVersionsResponseTypeDef](./type_defs.md#listalarmmodelversionsresponsetypedef).
 
-<a id="list_alarm_models"></a>
+<a id="list\_alarm\_models"></a>
 
 ### list_alarm_models
 
@@ -464,7 +464,7 @@ Keyword-only arguments:
 Returns
 [ListAlarmModelsResponseTypeDef](./type_defs.md#listalarmmodelsresponsetypedef).
 
-<a id="list_detector_model_versions"></a>
+<a id="list\_detector\_model\_versions"></a>
 
 ### list_detector_model_versions
 
@@ -488,7 +488,7 @@ Keyword-only arguments:
 Returns
 [ListDetectorModelVersionsResponseTypeDef](./type_defs.md#listdetectormodelversionsresponsetypedef).
 
-<a id="list_detector_models"></a>
+<a id="list\_detector\_models"></a>
 
 ### list_detector_models
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 Returns
 [ListDetectorModelsResponseTypeDef](./type_defs.md#listdetectormodelsresponsetypedef).
 
-<a id="list_input_routings"></a>
+<a id="list\_input\_routings"></a>
 
 ### list_input_routings
 
@@ -534,7 +534,7 @@ Keyword-only arguments:
 Returns
 [ListInputRoutingsResponseTypeDef](./type_defs.md#listinputroutingsresponsetypedef).
 
-<a id="list_inputs"></a>
+<a id="list\_inputs"></a>
 
 ### list_inputs
 
@@ -555,7 +555,7 @@ Keyword-only arguments:
 
 Returns [ListInputsResponseTypeDef](./type_defs.md#listinputsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -576,7 +576,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_logging_options"></a>
+<a id="put\_logging\_options"></a>
 
 ### put_logging_options
 
@@ -595,7 +595,7 @@ Keyword-only arguments:
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
 
-<a id="start_detector_model_analysis"></a>
+<a id="start\_detector\_model\_analysis"></a>
 
 ### start_detector_model_analysis
 
@@ -619,7 +619,7 @@ Keyword-only arguments:
 Returns
 [StartDetectorModelAnalysisResponseTypeDef](./type_defs.md#startdetectormodelanalysisresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -640,7 +640,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -661,7 +661,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_alarm_model"></a>
+<a id="update\_alarm\_model"></a>
 
 ### update_alarm_model
 
@@ -692,7 +692,7 @@ Keyword-only arguments:
 Returns
 [UpdateAlarmModelResponseTypeDef](./type_defs.md#updatealarmmodelresponsetypedef).
 
-<a id="update_detector_model"></a>
+<a id="update\_detector\_model"></a>
 
 ### update_detector_model
 
@@ -720,7 +720,7 @@ Keyword-only arguments:
 Returns
 [UpdateDetectorModelResponseTypeDef](./type_defs.md#updatedetectormodelresponsetypedef).
 
-<a id="update_input"></a>
+<a id="update\_input"></a>
 
 ### update_input
 

@@ -107,7 +107,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_configuration_items_to_application"></a>
+<a id="associate\_configuration\_items\_to\_application"></a>
 
 ### associate_configuration_items_to_application
 
@@ -130,7 +130,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="batch_delete_import_data"></a>
+<a id="batch\_delete\_import\_data"></a>
 
 ### batch_delete_import_data
 
@@ -152,7 +152,7 @@ Keyword-only arguments:
 Returns
 [BatchDeleteImportDataResponseTypeDef](./type_defs.md#batchdeleteimportdataresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -169,7 +169,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_application"></a>
+<a id="create\_application"></a>
 
 ### create_application
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
-<a id="create_tags"></a>
+<a id="create\_tags"></a>
 
 ### create_tags
 
@@ -212,7 +212,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_applications"></a>
+<a id="delete\_applications"></a>
 
 ### delete_applications
 
@@ -232,7 +232,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_tags"></a>
+<a id="delete\_tags"></a>
 
 ### delete_tags
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_agents"></a>
+<a id="describe\_agents"></a>
 
 ### describe_agents
 
@@ -277,7 +277,7 @@ Keyword-only arguments:
 Returns
 [DescribeAgentsResponseTypeDef](./type_defs.md#describeagentsresponsetypedef).
 
-<a id="describe_configurations"></a>
+<a id="describe\_configurations"></a>
 
 ### describe_configurations
 
@@ -299,7 +299,7 @@ Keyword-only arguments:
 Returns
 [DescribeConfigurationsResponseTypeDef](./type_defs.md#describeconfigurationsresponsetypedef).
 
-<a id="describe_continuous_exports"></a>
+<a id="describe\_continuous\_exports"></a>
 
 ### describe_continuous_exports
 
@@ -323,7 +323,7 @@ Keyword-only arguments:
 Returns
 [DescribeContinuousExportsResponseTypeDef](./type_defs.md#describecontinuousexportsresponsetypedef).
 
-<a id="describe_export_configurations"></a>
+<a id="describe\_export\_configurations"></a>
 
 ### describe_export_configurations
 
@@ -347,7 +347,7 @@ Keyword-only arguments:
 Returns
 [DescribeExportConfigurationsResponseTypeDef](./type_defs.md#describeexportconfigurationsresponsetypedef).
 
-<a id="describe_export_tasks"></a>
+<a id="describe\_export\_tasks"></a>
 
 ### describe_export_tasks
 
@@ -372,7 +372,7 @@ Keyword-only arguments:
 Returns
 [DescribeExportTasksResponseTypeDef](./type_defs.md#describeexporttasksresponsetypedef).
 
-<a id="describe_import_tasks"></a>
+<a id="describe\_import\_tasks"></a>
 
 ### describe_import_tasks
 
@@ -398,7 +398,7 @@ Keyword-only arguments:
 Returns
 [DescribeImportTasksResponseTypeDef](./type_defs.md#describeimporttasksresponsetypedef).
 
-<a id="describe_tags"></a>
+<a id="describe\_tags"></a>
 
 ### describe_tags
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 Returns
 [DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
 
-<a id="disassociate_configuration_items_from_application"></a>
+<a id="disassociate\_configuration\_items\_from\_application"></a>
 
 ### disassociate_configuration_items_from_application
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="export_configurations"></a>
+<a id="export\_configurations"></a>
 
 ### export_configurations
 
@@ -459,7 +459,7 @@ Boto3 documentation:
 Returns
 [ExportConfigurationsResponseTypeDef](./type_defs.md#exportconfigurationsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -479,7 +479,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_discovery_summary"></a>
+<a id="get\_discovery\_summary"></a>
 
 ### get_discovery_summary
 
@@ -493,7 +493,7 @@ Boto3 documentation:
 Returns
 [GetDiscoverySummaryResponseTypeDef](./type_defs.md#getdiscoverysummaryresponsetypedef).
 
-<a id="list_configurations"></a>
+<a id="list\_configurations"></a>
 
 ### list_configurations
 
@@ -522,7 +522,7 @@ Keyword-only arguments:
 Returns
 [ListConfigurationsResponseTypeDef](./type_defs.md#listconfigurationsresponsetypedef).
 
-<a id="list_server_neighbors"></a>
+<a id="list\_server\_neighbors"></a>
 
 ### list_server_neighbors
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 Returns
 [ListServerNeighborsResponseTypeDef](./type_defs.md#listserverneighborsresponsetypedef).
 
-<a id="start_continuous_export"></a>
+<a id="start\_continuous\_export"></a>
 
 ### start_continuous_export
 
@@ -563,7 +563,7 @@ Boto3 documentation:
 Returns
 [StartContinuousExportResponseTypeDef](./type_defs.md#startcontinuousexportresponsetypedef).
 
-<a id="start_data_collection_by_agent_ids"></a>
+<a id="start\_data\_collection\_by\_agent\_ids"></a>
 
 ### start_data_collection_by_agent_ids
 
@@ -585,7 +585,7 @@ Keyword-only arguments:
 Returns
 [StartDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#startdatacollectionbyagentidsresponsetypedef).
 
-<a id="start_export_task"></a>
+<a id="start\_export\_task"></a>
 
 ### start_export_task
 
@@ -611,7 +611,7 @@ Keyword-only arguments:
 Returns
 [StartExportTaskResponseTypeDef](./type_defs.md#startexporttaskresponsetypedef).
 
-<a id="start_import_task"></a>
+<a id="start\_import\_task"></a>
 
 ### start_import_task
 
@@ -637,7 +637,7 @@ Keyword-only arguments:
 Returns
 [StartImportTaskResponseTypeDef](./type_defs.md#startimporttaskresponsetypedef).
 
-<a id="stop_continuous_export"></a>
+<a id="stop\_continuous\_export"></a>
 
 ### stop_continuous_export
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 Returns
 [StopContinuousExportResponseTypeDef](./type_defs.md#stopcontinuousexportresponsetypedef).
 
-<a id="stop_data_collection_by_agent_ids"></a>
+<a id="stop\_data\_collection\_by\_agent\_ids"></a>
 
 ### stop_data_collection_by_agent_ids
 
@@ -680,7 +680,7 @@ Keyword-only arguments:
 Returns
 [StopDataCollectionByAgentIdsResponseTypeDef](./type_defs.md#stopdatacollectionbyagentidsresponsetypedef).
 
-<a id="update_application"></a>
+<a id="update\_application"></a>
 
 ### update_application
 

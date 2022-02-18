@@ -90,7 +90,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_license"></a>
+<a id="associate\_license"></a>
 
 ### associate_license
 
@@ -112,7 +112,7 @@ Keyword-only arguments:
 Returns
 [AssociateLicenseResponseTypeDef](./type_defs.md#associatelicenseresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -129,7 +129,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_workspace"></a>
+<a id="create\_workspace"></a>
 
 ### create_workspace
 
@@ -167,7 +167,7 @@ Keyword-only arguments:
 Returns
 [CreateWorkspaceResponseTypeDef](./type_defs.md#createworkspaceresponsetypedef).
 
-<a id="delete_workspace"></a>
+<a id="delete\_workspace"></a>
 
 ### delete_workspace
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 Returns
 [DeleteWorkspaceResponseTypeDef](./type_defs.md#deleteworkspaceresponsetypedef).
 
-<a id="describe_workspace"></a>
+<a id="describe\_workspace"></a>
 
 ### describe_workspace
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceResponseTypeDef](./type_defs.md#describeworkspaceresponsetypedef).
 
-<a id="describe_workspace_authentication"></a>
+<a id="describe\_workspace\_authentication"></a>
 
 ### describe_workspace_authentication
 
@@ -232,7 +232,7 @@ Keyword-only arguments:
 Returns
 [DescribeWorkspaceAuthenticationResponseTypeDef](./type_defs.md#describeworkspaceauthenticationresponsetypedef).
 
-<a id="disassociate_license"></a>
+<a id="disassociate\_license"></a>
 
 ### disassociate_license
 
@@ -254,7 +254,7 @@ Keyword-only arguments:
 Returns
 [DisassociateLicenseResponseTypeDef](./type_defs.md#disassociatelicenseresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -274,7 +274,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_permissions"></a>
+<a id="list\_permissions"></a>
 
 ### list_permissions
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
-<a id="list_workspaces"></a>
+<a id="list\_workspaces"></a>
 
 ### list_workspaces
 
@@ -324,7 +324,7 @@ Keyword-only arguments:
 Returns
 [ListWorkspacesResponseTypeDef](./type_defs.md#listworkspacesresponsetypedef).
 
-<a id="update_permissions"></a>
+<a id="update\_permissions"></a>
 
 ### update_permissions
 
@@ -348,7 +348,7 @@ Keyword-only arguments:
 Returns
 [UpdatePermissionsResponseTypeDef](./type_defs.md#updatepermissionsresponsetypedef).
 
-<a id="update_workspace"></a>
+<a id="update\_workspace"></a>
 
 ### update_workspace
 
@@ -382,7 +382,7 @@ Keyword-only arguments:
 Returns
 [UpdateWorkspaceResponseTypeDef](./type_defs.md#updateworkspaceresponsetypedef).
 
-<a id="update_workspace_authentication"></a>
+<a id="update\_workspace\_authentication"></a>
 
 ### update_workspace_authentication
 

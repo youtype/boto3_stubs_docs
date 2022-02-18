@@ -84,7 +84,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -101,7 +101,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_scaling_plan"></a>
+<a id="create\_scaling\_plan"></a>
 
 ### create_scaling_plan
 
@@ -129,7 +129,7 @@ Keyword-only arguments:
 Returns
 [CreateScalingPlanResponseTypeDef](./type_defs.md#createscalingplanresponsetypedef).
 
-<a id="delete_scaling_plan"></a>
+<a id="delete\_scaling\_plan"></a>
 
 ### delete_scaling_plan
 
@@ -151,7 +151,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_scaling_plan_resources"></a>
+<a id="describe\_scaling\_plan\_resources"></a>
 
 ### describe_scaling_plan_resources
 
@@ -176,7 +176,7 @@ Keyword-only arguments:
 Returns
 [DescribeScalingPlanResourcesResponseTypeDef](./type_defs.md#describescalingplanresourcesresponsetypedef).
 
-<a id="describe_scaling_plans"></a>
+<a id="describe\_scaling\_plans"></a>
 
 ### describe_scaling_plans
 
@@ -203,7 +203,7 @@ Keyword-only arguments:
 Returns
 [DescribeScalingPlansResponseTypeDef](./type_defs.md#describescalingplansresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -224,7 +224,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_scaling_plan_resource_forecast_data"></a>
+<a id="get\_scaling\_plan\_resource\_forecast\_data"></a>
 
 ### get_scaling_plan_resource_forecast_data
 
@@ -257,7 +257,7 @@ Keyword-only arguments:
 Returns
 [GetScalingPlanResourceForecastDataResponseTypeDef](./type_defs.md#getscalingplanresourceforecastdataresponsetypedef).
 
-<a id="update_scaling_plan"></a>
+<a id="update\_scaling\_plan"></a>
 
 ### update_scaling_plan
 

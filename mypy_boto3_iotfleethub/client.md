@@ -86,7 +86,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -103,7 +103,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_application"></a>
+<a id="create\_application"></a>
 
 ### create_application
 
@@ -128,7 +128,7 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
-<a id="delete_application"></a>
+<a id="delete\_application"></a>
 
 ### delete_application
 
@@ -149,7 +149,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_application"></a>
+<a id="describe\_application"></a>
 
 ### describe_application
 
@@ -171,7 +171,7 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -192,7 +192,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_applications"></a>
+<a id="list\_applications"></a>
 
 ### list_applications
 
@@ -214,7 +214,7 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -236,7 +236,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -257,7 +257,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_application"></a>
+<a id="update\_application"></a>
 
 ### update_application
 

@@ -173,7 +173,7 @@ Arguments:
 
 Returns [StackResourceSummary](#stackresourcesummary).
 
-<a id="cloudformationserviceresourcecreate_stack-method"></a>
+<a id="cloudformationserviceresourcecreate\_stack-method"></a>
 
 ### CloudFormationServiceResource.create_stack method
 
@@ -211,7 +211,7 @@ Keyword-only arguments:
 
 Returns [Stack](#stack).
 
-<a id="cloudformationserviceresourceget_available_subresources-method"></a>
+<a id="cloudformationserviceresourceget\_available\_subresources-method"></a>
 
 ### CloudFormationServiceResource.get_available_subresources method
 
@@ -270,7 +270,7 @@ Boto3 documentation:
 
 ### Event methods
 
-<a id="eventget_available_subresources-method"></a>
+<a id="eventget\_available\_subresources-method"></a>
 
 #### Event.get_available_subresources method
 
@@ -407,7 +407,7 @@ Arguments:
 
 Returns [StackResource](#stackresource).
 
-<a id="stackcancel_update-method"></a>
+<a id="stackcancel\_update-method"></a>
 
 #### Stack.cancel_update method
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
-<a id="stackget_available_subresources-method"></a>
+<a id="stackget\_available\_subresources-method"></a>
 
 #### Stack.get_available_subresources method
 
@@ -575,7 +575,7 @@ Boto3 documentation:
 
 Returns [Stack](#stack).
 
-<a id="stackresourceget_available_subresources-method"></a>
+<a id="stackresourceget\_available\_subresources-method"></a>
 
 #### StackResource.get_available_subresources method
 
@@ -666,7 +666,7 @@ Boto3 documentation:
 
 Returns [StackResource](#stackresource).
 
-<a id="stackresourcesummaryget_available_subresources-method"></a>
+<a id="stackresourcesummaryget\_available\_subresources-method"></a>
 
 #### StackResourceSummary.get_available_subresources method
 

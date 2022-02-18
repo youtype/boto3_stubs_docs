@@ -161,7 +161,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="activate_type"></a>
+<a id="activate\_type"></a>
 
 ### activate_type
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 
 Returns [ActivateTypeOutputTypeDef](./type_defs.md#activatetypeoutputtypedef).
 
-<a id="batch_describe_type_configurations"></a>
+<a id="batch\_describe\_type\_configurations"></a>
 
 ### batch_describe_type_configurations
 
@@ -216,7 +216,7 @@ Keyword-only arguments:
 Returns
 [BatchDescribeTypeConfigurationsOutputTypeDef](./type_defs.md#batchdescribetypeconfigurationsoutputtypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -233,7 +233,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_update_stack"></a>
+<a id="cancel\_update\_stack"></a>
 
 ### cancel_update_stack
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
 - `StackName`: `str` *(required)*
 - `ClientRequestToken`: `str`
 
-<a id="continue_update_rollback"></a>
+<a id="continue\_update\_rollback"></a>
 
 ### continue_update_rollback
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_change_set"></a>
+<a id="create\_change\_set"></a>
 
 ### create_change_set
 
@@ -318,7 +318,7 @@ Keyword-only arguments:
 Returns
 [CreateChangeSetOutputTypeDef](./type_defs.md#createchangesetoutputtypedef).
 
-<a id="create_stack"></a>
+<a id="create\_stack"></a>
 
 ### create_stack
 
@@ -356,7 +356,7 @@ Keyword-only arguments:
 
 Returns [CreateStackOutputTypeDef](./type_defs.md#createstackoutputtypedef).
 
-<a id="create_stack_instances"></a>
+<a id="create\_stack\_instances"></a>
 
 ### create_stack_instances
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 Returns
 [CreateStackInstancesOutputTypeDef](./type_defs.md#createstackinstancesoutputtypedef).
 
-<a id="create_stack_set"></a>
+<a id="create\_stack\_set"></a>
 
 ### create_stack_set
 
@@ -426,7 +426,7 @@ Keyword-only arguments:
 Returns
 [CreateStackSetOutputTypeDef](./type_defs.md#createstacksetoutputtypedef).
 
-<a id="deactivate_type"></a>
+<a id="deactivate\_type"></a>
 
 ### deactivate_type
 
@@ -449,7 +449,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_change_set"></a>
+<a id="delete\_change\_set"></a>
 
 ### delete_change_set
 
@@ -470,7 +470,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_stack"></a>
+<a id="delete\_stack"></a>
 
 ### delete_stack
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 - `RoleARN`: `str`
 - `ClientRequestToken`: `str`
 
-<a id="delete_stack_instances"></a>
+<a id="delete\_stack\_instances"></a>
 
 ### delete_stack_instances
 
@@ -523,7 +523,7 @@ Keyword-only arguments:
 Returns
 [DeleteStackInstancesOutputTypeDef](./type_defs.md#deletestackinstancesoutputtypedef).
 
-<a id="delete_stack_set"></a>
+<a id="delete\_stack\_set"></a>
 
 ### delete_stack_set
 
@@ -544,7 +544,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="deregister_type"></a>
+<a id="deregister\_type"></a>
 
 ### deregister_type
 
@@ -568,7 +568,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_account_limits"></a>
+<a id="describe\_account\_limits"></a>
 
 ### describe_account_limits
 
@@ -591,7 +591,7 @@ Keyword-only arguments:
 Returns
 [DescribeAccountLimitsOutputTypeDef](./type_defs.md#describeaccountlimitsoutputtypedef).
 
-<a id="describe_change_set"></a>
+<a id="describe\_change\_set"></a>
 
 ### describe_change_set
 
@@ -615,7 +615,7 @@ Keyword-only arguments:
 Returns
 [DescribeChangeSetOutputTypeDef](./type_defs.md#describechangesetoutputtypedef).
 
-<a id="describe_change_set_hooks"></a>
+<a id="describe\_change\_set\_hooks"></a>
 
 ### describe_change_set_hooks
 
@@ -641,7 +641,7 @@ Keyword-only arguments:
 Returns
 [DescribeChangeSetHooksOutputTypeDef](./type_defs.md#describechangesethooksoutputtypedef).
 
-<a id="describe_publisher"></a>
+<a id="describe\_publisher"></a>
 
 ### describe_publisher
 
@@ -663,7 +663,7 @@ Keyword-only arguments:
 Returns
 [DescribePublisherOutputTypeDef](./type_defs.md#describepublisheroutputtypedef).
 
-<a id="describe_stack_drift_detection_status"></a>
+<a id="describe\_stack\_drift\_detection\_status"></a>
 
 ### describe_stack_drift_detection_status
 
@@ -685,7 +685,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackDriftDetectionStatusOutputTypeDef](./type_defs.md#describestackdriftdetectionstatusoutputtypedef).
 
-<a id="describe_stack_events"></a>
+<a id="describe\_stack\_events"></a>
 
 ### describe_stack_events
 
@@ -709,7 +709,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackEventsOutputTypeDef](./type_defs.md#describestackeventsoutputtypedef).
 
-<a id="describe_stack_instance"></a>
+<a id="describe\_stack\_instance"></a>
 
 ### describe_stack_instance
 
@@ -734,7 +734,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackInstanceOutputTypeDef](./type_defs.md#describestackinstanceoutputtypedef).
 
-<a id="describe_stack_resource"></a>
+<a id="describe\_stack\_resource"></a>
 
 ### describe_stack_resource
 
@@ -757,7 +757,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackResourceOutputTypeDef](./type_defs.md#describestackresourceoutputtypedef).
 
-<a id="describe_stack_resource_drifts"></a>
+<a id="describe\_stack\_resource\_drifts"></a>
 
 ### describe_stack_resource_drifts
 
@@ -784,7 +784,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackResourceDriftsOutputTypeDef](./type_defs.md#describestackresourcedriftsoutputtypedef).
 
-<a id="describe_stack_resources"></a>
+<a id="describe\_stack\_resources"></a>
 
 ### describe_stack_resources
 
@@ -809,7 +809,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackResourcesOutputTypeDef](./type_defs.md#describestackresourcesoutputtypedef).
 
-<a id="describe_stack_set"></a>
+<a id="describe\_stack\_set"></a>
 
 ### describe_stack_set
 
@@ -832,7 +832,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackSetOutputTypeDef](./type_defs.md#describestacksetoutputtypedef).
 
-<a id="describe_stack_set_operation"></a>
+<a id="describe\_stack\_set\_operation"></a>
 
 ### describe_stack_set_operation
 
@@ -856,7 +856,7 @@ Keyword-only arguments:
 Returns
 [DescribeStackSetOperationOutputTypeDef](./type_defs.md#describestacksetoperationoutputtypedef).
 
-<a id="describe_stacks"></a>
+<a id="describe\_stacks"></a>
 
 ### describe_stacks
 
@@ -878,7 +878,7 @@ Keyword-only arguments:
 Returns
 [DescribeStacksOutputTypeDef](./type_defs.md#describestacksoutputtypedef).
 
-<a id="describe_type"></a>
+<a id="describe\_type"></a>
 
 ### describe_type
 
@@ -903,7 +903,7 @@ Keyword-only arguments:
 
 Returns [DescribeTypeOutputTypeDef](./type_defs.md#describetypeoutputtypedef).
 
-<a id="describe_type_registration"></a>
+<a id="describe\_type\_registration"></a>
 
 ### describe_type_registration
 
@@ -926,7 +926,7 @@ Keyword-only arguments:
 Returns
 [DescribeTypeRegistrationOutputTypeDef](./type_defs.md#describetyperegistrationoutputtypedef).
 
-<a id="detect_stack_drift"></a>
+<a id="detect\_stack\_drift"></a>
 
 ### detect_stack_drift
 
@@ -951,7 +951,7 @@ Keyword-only arguments:
 Returns
 [DetectStackDriftOutputTypeDef](./type_defs.md#detectstackdriftoutputtypedef).
 
-<a id="detect_stack_resource_drift"></a>
+<a id="detect\_stack\_resource\_drift"></a>
 
 ### detect_stack_resource_drift
 
@@ -976,7 +976,7 @@ Keyword-only arguments:
 Returns
 [DetectStackResourceDriftOutputTypeDef](./type_defs.md#detectstackresourcedriftoutputtypedef).
 
-<a id="detect_stack_set_drift"></a>
+<a id="detect\_stack\_set\_drift"></a>
 
 ### detect_stack_set_drift
 
@@ -1002,7 +1002,7 @@ Keyword-only arguments:
 Returns
 [DetectStackSetDriftOutputTypeDef](./type_defs.md#detectstacksetdriftoutputtypedef).
 
-<a id="estimate_template_cost"></a>
+<a id="estimate\_template\_cost"></a>
 
 ### estimate_template_cost
 
@@ -1027,7 +1027,7 @@ Keyword-only arguments:
 Returns
 [EstimateTemplateCostOutputTypeDef](./type_defs.md#estimatetemplatecostoutputtypedef).
 
-<a id="execute_change_set"></a>
+<a id="execute\_change\_set"></a>
 
 ### execute_change_set
 
@@ -1052,7 +1052,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -1073,7 +1073,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_stack_policy"></a>
+<a id="get\_stack\_policy"></a>
 
 ### get_stack_policy
 
@@ -1094,7 +1094,7 @@ Keyword-only arguments:
 Returns
 [GetStackPolicyOutputTypeDef](./type_defs.md#getstackpolicyoutputtypedef).
 
-<a id="get_template"></a>
+<a id="get\_template"></a>
 
 ### get_template
 
@@ -1116,7 +1116,7 @@ Keyword-only arguments:
 
 Returns [GetTemplateOutputTypeDef](./type_defs.md#gettemplateoutputtypedef).
 
-<a id="get_template_summary"></a>
+<a id="get\_template\_summary"></a>
 
 ### get_template_summary
 
@@ -1142,7 +1142,7 @@ Keyword-only arguments:
 Returns
 [GetTemplateSummaryOutputTypeDef](./type_defs.md#gettemplatesummaryoutputtypedef).
 
-<a id="import_stacks_to_stack_set"></a>
+<a id="import\_stacks\_to\_stack\_set"></a>
 
 ### import_stacks_to_stack_set
 
@@ -1171,7 +1171,7 @@ Keyword-only arguments:
 Returns
 [ImportStacksToStackSetOutputTypeDef](./type_defs.md#importstackstostacksetoutputtypedef).
 
-<a id="list_change_sets"></a>
+<a id="list\_change\_sets"></a>
 
 ### list_change_sets
 
@@ -1193,7 +1193,7 @@ Keyword-only arguments:
 Returns
 [ListChangeSetsOutputTypeDef](./type_defs.md#listchangesetsoutputtypedef).
 
-<a id="list_exports"></a>
+<a id="list\_exports"></a>
 
 ### list_exports
 
@@ -1213,7 +1213,7 @@ Keyword-only arguments:
 
 Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 
-<a id="list_imports"></a>
+<a id="list\_imports"></a>
 
 ### list_imports
 
@@ -1234,7 +1234,7 @@ Keyword-only arguments:
 
 Returns [ListImportsOutputTypeDef](./type_defs.md#listimportsoutputtypedef).
 
-<a id="list_stack_instances"></a>
+<a id="list\_stack\_instances"></a>
 
 ### list_stack_instances
 
@@ -1264,7 +1264,7 @@ Keyword-only arguments:
 Returns
 [ListStackInstancesOutputTypeDef](./type_defs.md#liststackinstancesoutputtypedef).
 
-<a id="list_stack_resources"></a>
+<a id="list\_stack\_resources"></a>
 
 ### list_stack_resources
 
@@ -1287,7 +1287,7 @@ Keyword-only arguments:
 Returns
 [ListStackResourcesOutputTypeDef](./type_defs.md#liststackresourcesoutputtypedef).
 
-<a id="list_stack_set_operation_results"></a>
+<a id="list\_stack\_set\_operation\_results"></a>
 
 ### list_stack_set_operation_results
 
@@ -1313,7 +1313,7 @@ Keyword-only arguments:
 Returns
 [ListStackSetOperationResultsOutputTypeDef](./type_defs.md#liststacksetoperationresultsoutputtypedef).
 
-<a id="list_stack_set_operations"></a>
+<a id="list\_stack\_set\_operations"></a>
 
 ### list_stack_set_operations
 
@@ -1338,7 +1338,7 @@ Keyword-only arguments:
 Returns
 [ListStackSetOperationsOutputTypeDef](./type_defs.md#liststacksetoperationsoutputtypedef).
 
-<a id="list_stack_sets"></a>
+<a id="list\_stack\_sets"></a>
 
 ### list_stack_sets
 
@@ -1362,7 +1362,7 @@ Keyword-only arguments:
 Returns
 [ListStackSetsOutputTypeDef](./type_defs.md#liststacksetsoutputtypedef).
 
-<a id="list_stacks"></a>
+<a id="list\_stacks"></a>
 
 ### list_stacks
 
@@ -1385,7 +1385,7 @@ Keyword-only arguments:
 
 Returns [ListStacksOutputTypeDef](./type_defs.md#liststacksoutputtypedef).
 
-<a id="list_type_registrations"></a>
+<a id="list\_type\_registrations"></a>
 
 ### list_type_registrations
 
@@ -1413,7 +1413,7 @@ Keyword-only arguments:
 Returns
 [ListTypeRegistrationsOutputTypeDef](./type_defs.md#listtyperegistrationsoutputtypedef).
 
-<a id="list_type_versions"></a>
+<a id="list\_type\_versions"></a>
 
 ### list_type_versions
 
@@ -1442,7 +1442,7 @@ Keyword-only arguments:
 Returns
 [ListTypeVersionsOutputTypeDef](./type_defs.md#listtypeversionsoutputtypedef).
 
-<a id="list_types"></a>
+<a id="list\_types"></a>
 
 ### list_types
 
@@ -1471,7 +1471,7 @@ Keyword-only arguments:
 
 Returns [ListTypesOutputTypeDef](./type_defs.md#listtypesoutputtypedef).
 
-<a id="publish_type"></a>
+<a id="publish\_type"></a>
 
 ### publish_type
 
@@ -1495,7 +1495,7 @@ Keyword-only arguments:
 
 Returns [PublishTypeOutputTypeDef](./type_defs.md#publishtypeoutputtypedef).
 
-<a id="record_handler_progress"></a>
+<a id="record\_handler\_progress"></a>
 
 ### record_handler_progress
 
@@ -1524,7 +1524,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="register_publisher"></a>
+<a id="register\_publisher"></a>
 
 ### register_publisher
 
@@ -1548,7 +1548,7 @@ Keyword-only arguments:
 Returns
 [RegisterPublisherOutputTypeDef](./type_defs.md#registerpublisheroutputtypedef).
 
-<a id="register_type"></a>
+<a id="register\_type"></a>
 
 ### register_type
 
@@ -1573,7 +1573,7 @@ Keyword-only arguments:
 
 Returns [RegisterTypeOutputTypeDef](./type_defs.md#registertypeoutputtypedef).
 
-<a id="rollback_stack"></a>
+<a id="rollback\_stack"></a>
 
 ### rollback_stack
 
@@ -1597,7 +1597,7 @@ Keyword-only arguments:
 Returns
 [RollbackStackOutputTypeDef](./type_defs.md#rollbackstackoutputtypedef).
 
-<a id="set_stack_policy"></a>
+<a id="set\_stack\_policy"></a>
 
 ### set_stack_policy
 
@@ -1617,7 +1617,7 @@ Keyword-only arguments:
 - `StackPolicyBody`: `str`
 - `StackPolicyURL`: `str`
 
-<a id="set_type_configuration"></a>
+<a id="set\_type\_configuration"></a>
 
 ### set_type_configuration
 
@@ -1644,7 +1644,7 @@ Keyword-only arguments:
 Returns
 [SetTypeConfigurationOutputTypeDef](./type_defs.md#settypeconfigurationoutputtypedef).
 
-<a id="set_type_default_version"></a>
+<a id="set\_type\_default\_version"></a>
 
 ### set_type_default_version
 
@@ -1668,7 +1668,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="signal_resource"></a>
+<a id="signal\_resource"></a>
 
 ### signal_resource
 
@@ -1690,7 +1690,7 @@ Keyword-only arguments:
 - `Status`: [ResourceSignalStatusType](./literals.md#resourcesignalstatustype)
   *(required)*
 
-<a id="stop_stack_set_operation"></a>
+<a id="stop\_stack\_set\_operation"></a>
 
 ### stop_stack_set_operation
 
@@ -1714,7 +1714,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="test_type"></a>
+<a id="test\_type"></a>
 
 ### test_type
 
@@ -1739,7 +1739,7 @@ Keyword-only arguments:
 
 Returns [TestTypeOutputTypeDef](./type_defs.md#testtypeoutputtypedef).
 
-<a id="update_stack"></a>
+<a id="update\_stack"></a>
 
 ### update_stack
 
@@ -1777,7 +1777,7 @@ Keyword-only arguments:
 
 Returns [UpdateStackOutputTypeDef](./type_defs.md#updatestackoutputtypedef).
 
-<a id="update_stack_instances"></a>
+<a id="update\_stack\_instances"></a>
 
 ### update_stack_instances
 
@@ -1809,7 +1809,7 @@ Keyword-only arguments:
 Returns
 [UpdateStackInstancesOutputTypeDef](./type_defs.md#updatestackinstancesoutputtypedef).
 
-<a id="update_stack_set"></a>
+<a id="update\_stack\_set"></a>
 
 ### update_stack_set
 
@@ -1853,7 +1853,7 @@ Keyword-only arguments:
 Returns
 [UpdateStackSetOutputTypeDef](./type_defs.md#updatestacksetoutputtypedef).
 
-<a id="update_termination_protection"></a>
+<a id="update\_termination\_protection"></a>
 
 ### update_termination_protection
 
@@ -1876,7 +1876,7 @@ Keyword-only arguments:
 Returns
 [UpdateTerminationProtectionOutputTypeDef](./type_defs.md#updateterminationprotectionoutputtypedef).
 
-<a id="validate_template"></a>
+<a id="validate\_template"></a>
 
 ### validate_template
 

@@ -86,7 +86,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -103,7 +103,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_token"></a>
+<a id="create\_token"></a>
 
 ### create_token
 
@@ -131,7 +131,7 @@ Keyword-only arguments:
 Returns
 [CreateTokenResponseTypeDef](./type_defs.md#createtokenresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -151,7 +151,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="register_client"></a>
+<a id="register\_client"></a>
 
 ### register_client
 
@@ -174,7 +174,7 @@ Keyword-only arguments:
 Returns
 [RegisterClientResponseTypeDef](./type_defs.md#registerclientresponsetypedef).
 
-<a id="start_device_authorization"></a>
+<a id="start\_device\_authorization"></a>
 
 ### start_device_authorization
 

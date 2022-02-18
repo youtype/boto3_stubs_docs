@@ -111,7 +111,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -128,7 +128,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_anomaly_monitor"></a>
+<a id="create\_anomaly\_monitor"></a>
 
 ### create_anomaly_monitor
 
@@ -151,7 +151,7 @@ Keyword-only arguments:
 Returns
 [CreateAnomalyMonitorResponseTypeDef](./type_defs.md#createanomalymonitorresponsetypedef).
 
-<a id="create_anomaly_subscription"></a>
+<a id="create\_anomaly\_subscription"></a>
 
 ### create_anomaly_subscription
 
@@ -174,7 +174,7 @@ Keyword-only arguments:
 Returns
 [CreateAnomalySubscriptionResponseTypeDef](./type_defs.md#createanomalysubscriptionresponsetypedef).
 
-<a id="create_cost_category_definition"></a>
+<a id="create\_cost\_category\_definition"></a>
 
 ### create_cost_category_definition
 
@@ -205,7 +205,7 @@ Keyword-only arguments:
 Returns
 [CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
 
-<a id="delete_anomaly_monitor"></a>
+<a id="delete\_anomaly\_monitor"></a>
 
 ### delete_anomaly_monitor
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_anomaly_subscription"></a>
+<a id="delete\_anomaly\_subscription"></a>
 
 ### delete_anomaly_subscription
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_cost_category_definition"></a>
+<a id="delete\_cost\_category\_definition"></a>
 
 ### delete_cost_category_definition
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 Returns
 [DeleteCostCategoryDefinitionResponseTypeDef](./type_defs.md#deletecostcategorydefinitionresponsetypedef).
 
-<a id="describe_cost_category_definition"></a>
+<a id="describe\_cost\_category\_definition"></a>
 
 ### describe_cost_category_definition
 
@@ -291,7 +291,7 @@ Keyword-only arguments:
 Returns
 [DescribeCostCategoryDefinitionResponseTypeDef](./type_defs.md#describecostcategorydefinitionresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -311,7 +311,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_anomalies"></a>
+<a id="get\_anomalies"></a>
 
 ### get_anomalies
 
@@ -341,7 +341,7 @@ Keyword-only arguments:
 Returns
 [GetAnomaliesResponseTypeDef](./type_defs.md#getanomaliesresponsetypedef).
 
-<a id="get_anomaly_monitors"></a>
+<a id="get\_anomaly\_monitors"></a>
 
 ### get_anomaly_monitors
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 Returns
 [GetAnomalyMonitorsResponseTypeDef](./type_defs.md#getanomalymonitorsresponsetypedef).
 
-<a id="get_anomaly_subscriptions"></a>
+<a id="get\_anomaly\_subscriptions"></a>
 
 ### get_anomaly_subscriptions
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 Returns
 [GetAnomalySubscriptionsResponseTypeDef](./type_defs.md#getanomalysubscriptionsresponsetypedef).
 
-<a id="get_cost_and_usage"></a>
+<a id="get\_cost\_and\_usage"></a>
 
 ### get_cost_and_usage
 
@@ -416,7 +416,7 @@ Keyword-only arguments:
 Returns
 [GetCostAndUsageResponseTypeDef](./type_defs.md#getcostandusageresponsetypedef).
 
-<a id="get_cost_and_usage_with_resources"></a>
+<a id="get\_cost\_and\_usage\_with\_resources"></a>
 
 ### get_cost_and_usage_with_resources
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 Returns
 [GetCostAndUsageWithResourcesResponseTypeDef](./type_defs.md#getcostandusagewithresourcesresponsetypedef).
 
-<a id="get_cost_categories"></a>
+<a id="get\_cost\_categories"></a>
 
 ### get_cost_categories
 
@@ -474,7 +474,7 @@ Keyword-only arguments:
 Returns
 [GetCostCategoriesResponseTypeDef](./type_defs.md#getcostcategoriesresponsetypedef).
 
-<a id="get_cost_forecast"></a>
+<a id="get\_cost\_forecast"></a>
 
 ### get_cost_forecast
 
@@ -501,7 +501,7 @@ Keyword-only arguments:
 Returns
 [GetCostForecastResponseTypeDef](./type_defs.md#getcostforecastresponsetypedef).
 
-<a id="get_dimension_values"></a>
+<a id="get\_dimension\_values"></a>
 
 ### get_dimension_values
 
@@ -532,7 +532,7 @@ Keyword-only arguments:
 Returns
 [GetDimensionValuesResponseTypeDef](./type_defs.md#getdimensionvaluesresponsetypedef).
 
-<a id="get_reservation_coverage"></a>
+<a id="get\_reservation\_coverage"></a>
 
 ### get_reservation_coverage
 
@@ -562,7 +562,7 @@ Keyword-only arguments:
 Returns
 [GetReservationCoverageResponseTypeDef](./type_defs.md#getreservationcoverageresponsetypedef).
 
-<a id="get_reservation_purchase_recommendation"></a>
+<a id="get\_reservation\_purchase\_recommendation"></a>
 
 ### get_reservation_purchase_recommendation
 
@@ -595,7 +595,7 @@ Keyword-only arguments:
 Returns
 [GetReservationPurchaseRecommendationResponseTypeDef](./type_defs.md#getreservationpurchaserecommendationresponsetypedef).
 
-<a id="get_reservation_utilization"></a>
+<a id="get\_reservation\_utilization"></a>
 
 ### get_reservation_utilization
 
@@ -624,7 +624,7 @@ Keyword-only arguments:
 Returns
 [GetReservationUtilizationResponseTypeDef](./type_defs.md#getreservationutilizationresponsetypedef).
 
-<a id="get_rightsizing_recommendation"></a>
+<a id="get\_rightsizing\_recommendation"></a>
 
 ### get_rightsizing_recommendation
 
@@ -652,7 +652,7 @@ Keyword-only arguments:
 Returns
 [GetRightsizingRecommendationResponseTypeDef](./type_defs.md#getrightsizingrecommendationresponsetypedef).
 
-<a id="get_savings_plans_coverage"></a>
+<a id="get\_savings\_plans\_coverage"></a>
 
 ### get_savings_plans_coverage
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 Returns
 [GetSavingsPlansCoverageResponseTypeDef](./type_defs.md#getsavingsplanscoverageresponsetypedef).
 
-<a id="get_savings_plans_purchase_recommendation"></a>
+<a id="get\_savings\_plans\_purchase\_recommendation"></a>
 
 ### get_savings_plans_purchase_recommendation
 
@@ -717,7 +717,7 @@ Keyword-only arguments:
 Returns
 [GetSavingsPlansPurchaseRecommendationResponseTypeDef](./type_defs.md#getsavingsplanspurchaserecommendationresponsetypedef).
 
-<a id="get_savings_plans_utilization"></a>
+<a id="get\_savings\_plans\_utilization"></a>
 
 ### get_savings_plans_utilization
 
@@ -743,7 +743,7 @@ Keyword-only arguments:
 Returns
 [GetSavingsPlansUtilizationResponseTypeDef](./type_defs.md#getsavingsplansutilizationresponsetypedef).
 
-<a id="get_savings_plans_utilization_details"></a>
+<a id="get\_savings\_plans\_utilization\_details"></a>
 
 ### get_savings_plans_utilization_details
 
@@ -773,7 +773,7 @@ Keyword-only arguments:
 Returns
 [GetSavingsPlansUtilizationDetailsResponseTypeDef](./type_defs.md#getsavingsplansutilizationdetailsresponsetypedef).
 
-<a id="get_tags"></a>
+<a id="get\_tags"></a>
 
 ### get_tags
 
@@ -801,7 +801,7 @@ Keyword-only arguments:
 
 Returns [GetTagsResponseTypeDef](./type_defs.md#gettagsresponsetypedef).
 
-<a id="get_usage_forecast"></a>
+<a id="get\_usage\_forecast"></a>
 
 ### get_usage_forecast
 
@@ -828,7 +828,7 @@ Keyword-only arguments:
 Returns
 [GetUsageForecastResponseTypeDef](./type_defs.md#getusageforecastresponsetypedef).
 
-<a id="list_cost_category_definitions"></a>
+<a id="list\_cost\_category\_definitions"></a>
 
 ### list_cost_category_definitions
 
@@ -853,7 +853,7 @@ Keyword-only arguments:
 Returns
 [ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef).
 
-<a id="provide_anomaly_feedback"></a>
+<a id="provide\_anomaly\_feedback"></a>
 
 ### provide_anomaly_feedback
 
@@ -876,7 +876,7 @@ Keyword-only arguments:
 Returns
 [ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef).
 
-<a id="update_anomaly_monitor"></a>
+<a id="update\_anomaly\_monitor"></a>
 
 ### update_anomaly_monitor
 
@@ -898,7 +898,7 @@ Keyword-only arguments:
 Returns
 [UpdateAnomalyMonitorResponseTypeDef](./type_defs.md#updateanomalymonitorresponsetypedef).
 
-<a id="update_anomaly_subscription"></a>
+<a id="update\_anomaly\_subscription"></a>
 
 ### update_anomaly_subscription
 
@@ -926,7 +926,7 @@ Keyword-only arguments:
 Returns
 [UpdateAnomalySubscriptionResponseTypeDef](./type_defs.md#updateanomalysubscriptionresponsetypedef).
 
-<a id="update_cost_category_definition"></a>
+<a id="update\_cost\_category\_definition"></a>
 
 ### update_cost_category_definition
 

@@ -83,7 +83,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_execute_statement"></a>
+<a id="batch\_execute\_statement"></a>
 
 ### batch_execute_statement
 
@@ -111,7 +111,7 @@ Keyword-only arguments:
 Returns
 [BatchExecuteStatementResponseTypeDef](./type_defs.md#batchexecutestatementresponsetypedef).
 
-<a id="begin_transaction"></a>
+<a id="begin\_transaction"></a>
 
 ### begin_transaction
 
@@ -135,7 +135,7 @@ Keyword-only arguments:
 Returns
 [BeginTransactionResponseTypeDef](./type_defs.md#begintransactionresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -152,7 +152,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="commit_transaction"></a>
+<a id="commit\_transaction"></a>
 
 ### commit_transaction
 
@@ -176,7 +176,7 @@ Keyword-only arguments:
 Returns
 [CommitTransactionResponseTypeDef](./type_defs.md#committransactionresponsetypedef).
 
-<a id="execute_sql"></a>
+<a id="execute\_sql"></a>
 
 ### execute_sql
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 
 Returns [ExecuteSqlResponseTypeDef](./type_defs.md#executesqlresponsetypedef).
 
-<a id="execute_statement"></a>
+<a id="execute\_statement"></a>
 
 ### execute_statement
 
@@ -232,7 +232,7 @@ Keyword-only arguments:
 Returns
 [ExecuteStatementResponseTypeDef](./type_defs.md#executestatementresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -252,7 +252,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="rollback_transaction"></a>
+<a id="rollback\_transaction"></a>
 
 ### rollback_transaction
 

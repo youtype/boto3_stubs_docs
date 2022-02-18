@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_stream"></a>
+<a id="describe\_stream"></a>
 
 ### describe_stream
 
@@ -122,7 +122,7 @@ Keyword-only arguments:
 Returns
 [DescribeStreamOutputTypeDef](./type_defs.md#describestreamoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -143,7 +143,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_records"></a>
+<a id="get\_records"></a>
 
 ### get_records
 
@@ -164,7 +164,7 @@ Keyword-only arguments:
 
 Returns [GetRecordsOutputTypeDef](./type_defs.md#getrecordsoutputtypedef).
 
-<a id="get_shard_iterator"></a>
+<a id="get\_shard\_iterator"></a>
 
 ### get_shard_iterator
 
@@ -190,7 +190,7 @@ Keyword-only arguments:
 Returns
 [GetShardIteratorOutputTypeDef](./type_defs.md#getsharditeratoroutputtypedef).
 
-<a id="list_streams"></a>
+<a id="list\_streams"></a>
 
 ### list_streams
 

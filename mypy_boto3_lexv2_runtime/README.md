@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [LexRuntimeV2Client](#lexruntimev2client)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -44,9 +45,11 @@ Install `boto3-stubs` for `LexRuntimeV2` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[lexv2-runtime]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[lexv2-runtime]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-lexv2-runtime
@@ -59,6 +62,12 @@ python -m pip install mypy-boto3-lexv2-runtime
 ```bash
 python -m pip uninstall -y mypy-boto3-lexv2-runtime
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="lexruntimev2client"></a>
 

@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [Inspector2Client](#inspector2client)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `Inspector2` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[inspector2]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[inspector2]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-inspector2
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-inspector2
 ```bash
 python -m pip uninstall -y mypy-boto3-inspector2
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="inspector2client"></a>
 

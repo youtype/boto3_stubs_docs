@@ -152,7 +152,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_execute_statement"></a>
+<a id="batch\_execute\_statement"></a>
 
 ### batch_execute_statement
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 Returns
 [BatchExecuteStatementOutputTypeDef](./type_defs.md#batchexecutestatementoutputtypedef).
 
-<a id="batch_get_item"></a>
+<a id="batch\_get\_item"></a>
 
 ### batch_get_item
 
@@ -203,7 +203,7 @@ Keyword-only arguments:
 
 Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
-<a id="batch_write_item"></a>
+<a id="batch\_write\_item"></a>
 
 ### batch_write_item
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 Returns
 [BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -248,7 +248,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_backup"></a>
+<a id="create\_backup"></a>
 
 ### create_backup
 
@@ -269,7 +269,7 @@ Keyword-only arguments:
 
 Returns [CreateBackupOutputTypeDef](./type_defs.md#createbackupoutputtypedef).
 
-<a id="create_global_table"></a>
+<a id="create\_global\_table"></a>
 
 ### create_global_table
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 Returns
 [CreateGlobalTableOutputTypeDef](./type_defs.md#createglobaltableoutputtypedef).
 
-<a id="create_table"></a>
+<a id="create\_table"></a>
 
 ### create_table
 
@@ -331,7 +331,7 @@ Keyword-only arguments:
 
 Returns [CreateTableOutputTypeDef](./type_defs.md#createtableoutputtypedef).
 
-<a id="delete_backup"></a>
+<a id="delete\_backup"></a>
 
 ### delete_backup
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 
 Returns [DeleteBackupOutputTypeDef](./type_defs.md#deletebackupoutputtypedef).
 
-<a id="delete_item"></a>
+<a id="delete\_item"></a>
 
 ### delete_item
 
@@ -390,7 +390,7 @@ Keyword-only arguments:
 
 Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
-<a id="delete_table"></a>
+<a id="delete\_table"></a>
 
 ### delete_table
 
@@ -410,7 +410,7 @@ Keyword-only arguments:
 
 Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
-<a id="describe_backup"></a>
+<a id="describe\_backup"></a>
 
 ### describe_backup
 
@@ -431,7 +431,7 @@ Keyword-only arguments:
 Returns
 [DescribeBackupOutputTypeDef](./type_defs.md#describebackupoutputtypedef).
 
-<a id="describe_continuous_backups"></a>
+<a id="describe\_continuous\_backups"></a>
 
 ### describe_continuous_backups
 
@@ -454,7 +454,7 @@ Keyword-only arguments:
 Returns
 [DescribeContinuousBackupsOutputTypeDef](./type_defs.md#describecontinuousbackupsoutputtypedef).
 
-<a id="describe_contributor_insights"></a>
+<a id="describe\_contributor\_insights"></a>
 
 ### describe_contributor_insights
 
@@ -478,7 +478,7 @@ Keyword-only arguments:
 Returns
 [DescribeContributorInsightsOutputTypeDef](./type_defs.md#describecontributorinsightsoutputtypedef).
 
-<a id="describe_endpoints"></a>
+<a id="describe\_endpoints"></a>
 
 ### describe_endpoints
 
@@ -492,7 +492,7 @@ Boto3 documentation:
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
-<a id="describe_export"></a>
+<a id="describe\_export"></a>
 
 ### describe_export
 
@@ -513,7 +513,7 @@ Keyword-only arguments:
 Returns
 [DescribeExportOutputTypeDef](./type_defs.md#describeexportoutputtypedef).
 
-<a id="describe_global_table"></a>
+<a id="describe\_global\_table"></a>
 
 ### describe_global_table
 
@@ -534,7 +534,7 @@ Keyword-only arguments:
 Returns
 [DescribeGlobalTableOutputTypeDef](./type_defs.md#describeglobaltableoutputtypedef).
 
-<a id="describe_global_table_settings"></a>
+<a id="describe\_global\_table\_settings"></a>
 
 ### describe_global_table_settings
 
@@ -556,7 +556,7 @@ Keyword-only arguments:
 Returns
 [DescribeGlobalTableSettingsOutputTypeDef](./type_defs.md#describeglobaltablesettingsoutputtypedef).
 
-<a id="describe_kinesis_streaming_destination"></a>
+<a id="describe\_kinesis\_streaming\_destination"></a>
 
 ### describe_kinesis_streaming_destination
 
@@ -578,7 +578,7 @@ Keyword-only arguments:
 Returns
 [DescribeKinesisStreamingDestinationOutputTypeDef](./type_defs.md#describekinesisstreamingdestinationoutputtypedef).
 
-<a id="describe_limits"></a>
+<a id="describe\_limits"></a>
 
 ### describe_limits
 
@@ -594,7 +594,7 @@ Boto3 documentation:
 Returns
 [DescribeLimitsOutputTypeDef](./type_defs.md#describelimitsoutputtypedef).
 
-<a id="describe_table"></a>
+<a id="describe\_table"></a>
 
 ### describe_table
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 Returns
 [DescribeTableOutputTypeDef](./type_defs.md#describetableoutputtypedef).
 
-<a id="describe_table_replica_auto_scaling"></a>
+<a id="describe\_table\_replica\_auto\_scaling"></a>
 
 ### describe_table_replica_auto_scaling
 
@@ -638,7 +638,7 @@ Keyword-only arguments:
 Returns
 [DescribeTableReplicaAutoScalingOutputTypeDef](./type_defs.md#describetablereplicaautoscalingoutputtypedef).
 
-<a id="describe_time_to_live"></a>
+<a id="describe\_time\_to\_live"></a>
 
 ### describe_time_to_live
 
@@ -659,7 +659,7 @@ Keyword-only arguments:
 Returns
 [DescribeTimeToLiveOutputTypeDef](./type_defs.md#describetimetoliveoutputtypedef).
 
-<a id="disable_kinesis_streaming_destination"></a>
+<a id="disable\_kinesis\_streaming\_destination"></a>
 
 ### disable_kinesis_streaming_destination
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 Returns
 [KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef).
 
-<a id="enable_kinesis_streaming_destination"></a>
+<a id="enable\_kinesis\_streaming\_destination"></a>
 
 ### enable_kinesis_streaming_destination
 
@@ -706,7 +706,7 @@ Keyword-only arguments:
 Returns
 [KinesisStreamingDestinationOutputTypeDef](./type_defs.md#kinesisstreamingdestinationoutputtypedef).
 
-<a id="execute_statement"></a>
+<a id="execute\_statement"></a>
 
 ### execute_statement
 
@@ -736,7 +736,7 @@ Keyword-only arguments:
 Returns
 [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).
 
-<a id="execute_transaction"></a>
+<a id="execute\_transaction"></a>
 
 ### execute_transaction
 
@@ -763,7 +763,7 @@ Keyword-only arguments:
 Returns
 [ExecuteTransactionOutputTypeDef](./type_defs.md#executetransactionoutputtypedef).
 
-<a id="export_table_to_point_in_time"></a>
+<a id="export\_table\_to\_point\_in\_time"></a>
 
 ### export_table_to_point_in_time
 
@@ -793,7 +793,7 @@ Keyword-only arguments:
 Returns
 [ExportTableToPointInTimeOutputTypeDef](./type_defs.md#exporttabletopointintimeoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -813,7 +813,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_item"></a>
+<a id="get\_item"></a>
 
 ### get_item
 
@@ -844,7 +844,7 @@ Keyword-only arguments:
 
 Returns [GetItemOutputTypeDef](./type_defs.md#getitemoutputtypedef).
 
-<a id="list_backups"></a>
+<a id="list\_backups"></a>
 
 ### list_backups
 
@@ -869,7 +869,7 @@ Keyword-only arguments:
 
 Returns [ListBackupsOutputTypeDef](./type_defs.md#listbackupsoutputtypedef).
 
-<a id="list_contributor_insights"></a>
+<a id="list\_contributor\_insights"></a>
 
 ### list_contributor_insights
 
@@ -894,7 +894,7 @@ Keyword-only arguments:
 Returns
 [ListContributorInsightsOutputTypeDef](./type_defs.md#listcontributorinsightsoutputtypedef).
 
-<a id="list_exports"></a>
+<a id="list\_exports"></a>
 
 ### list_exports
 
@@ -916,7 +916,7 @@ Keyword-only arguments:
 
 Returns [ListExportsOutputTypeDef](./type_defs.md#listexportsoutputtypedef).
 
-<a id="list_global_tables"></a>
+<a id="list\_global\_tables"></a>
 
 ### list_global_tables
 
@@ -939,7 +939,7 @@ Keyword-only arguments:
 Returns
 [ListGlobalTablesOutputTypeDef](./type_defs.md#listglobaltablesoutputtypedef).
 
-<a id="list_tables"></a>
+<a id="list\_tables"></a>
 
 ### list_tables
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 
 Returns [ListTablesOutputTypeDef](./type_defs.md#listtablesoutputtypedef).
 
-<a id="list_tags_of_resource"></a>
+<a id="list\_tags\_of\_resource"></a>
 
 ### list_tags_of_resource
 
@@ -983,7 +983,7 @@ Keyword-only arguments:
 Returns
 [ListTagsOfResourceOutputTypeDef](./type_defs.md#listtagsofresourceoutputtypedef).
 
-<a id="put_item"></a>
+<a id="put\_item"></a>
 
 ### put_item
 
@@ -1069,7 +1069,7 @@ Keyword-only arguments:
 
 Returns [QueryOutputTypeDef](./type_defs.md#queryoutputtypedef).
 
-<a id="restore_table_from_backup"></a>
+<a id="restore\_table\_from\_backup"></a>
 
 ### restore_table_from_backup
 
@@ -1101,7 +1101,7 @@ Keyword-only arguments:
 Returns
 [RestoreTableFromBackupOutputTypeDef](./type_defs.md#restoretablefrombackupoutputtypedef).
 
-<a id="restore_table_to_point_in_time"></a>
+<a id="restore\_table\_to\_point\_in\_time"></a>
 
 ### restore_table_to_point_in_time
 
@@ -1182,7 +1182,7 @@ Keyword-only arguments:
 
 Returns [ScanOutputTypeDef](./type_defs.md#scanoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1201,7 +1201,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="transact_get_items"></a>
+<a id="transact\_get\_items"></a>
 
 ### transact_get_items
 
@@ -1228,7 +1228,7 @@ Keyword-only arguments:
 Returns
 [TransactGetItemsOutputTypeDef](./type_defs.md#transactgetitemsoutputtypedef).
 
-<a id="transact_write_items"></a>
+<a id="transact\_write\_items"></a>
 
 ### transact_write_items
 
@@ -1257,7 +1257,7 @@ Keyword-only arguments:
 Returns
 [TransactWriteItemsOutputTypeDef](./type_defs.md#transactwriteitemsoutputtypedef).
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1276,7 +1276,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_continuous_backups"></a>
+<a id="update\_continuous\_backups"></a>
 
 ### update_continuous_backups
 
@@ -1302,7 +1302,7 @@ Keyword-only arguments:
 Returns
 [UpdateContinuousBackupsOutputTypeDef](./type_defs.md#updatecontinuousbackupsoutputtypedef).
 
-<a id="update_contributor_insights"></a>
+<a id="update\_contributor\_insights"></a>
 
 ### update_contributor_insights
 
@@ -1328,7 +1328,7 @@ Keyword-only arguments:
 Returns
 [UpdateContributorInsightsOutputTypeDef](./type_defs.md#updatecontributorinsightsoutputtypedef).
 
-<a id="update_global_table"></a>
+<a id="update\_global\_table"></a>
 
 ### update_global_table
 
@@ -1352,7 +1352,7 @@ Keyword-only arguments:
 Returns
 [UpdateGlobalTableOutputTypeDef](./type_defs.md#updateglobaltableoutputtypedef).
 
-<a id="update_global_table_settings"></a>
+<a id="update\_global\_table\_settings"></a>
 
 ### update_global_table_settings
 
@@ -1382,7 +1382,7 @@ Keyword-only arguments:
 Returns
 [UpdateGlobalTableSettingsOutputTypeDef](./type_defs.md#updateglobaltablesettingsoutputtypedef).
 
-<a id="update_item"></a>
+<a id="update\_item"></a>
 
 ### update_item
 
@@ -1425,7 +1425,7 @@ Keyword-only arguments:
 
 Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 
-<a id="update_table"></a>
+<a id="update\_table"></a>
 
 ### update_table
 
@@ -1460,7 +1460,7 @@ Keyword-only arguments:
 
 Returns [UpdateTableOutputTypeDef](./type_defs.md#updatetableoutputtypedef).
 
-<a id="update_table_replica_auto_scaling"></a>
+<a id="update\_table\_replica\_auto\_scaling"></a>
 
 ### update_table_replica_auto_scaling
 
@@ -1488,7 +1488,7 @@ Keyword-only arguments:
 Returns
 [UpdateTableReplicaAutoScalingOutputTypeDef](./type_defs.md#updatetablereplicaautoscalingoutputtypedef).
 
-<a id="update_time_to_live"></a>
+<a id="update\_time\_to\_live"></a>
 
 ### update_time_to_live
 

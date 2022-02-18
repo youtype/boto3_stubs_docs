@@ -116,7 +116,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_application_cloud_watch_logging_option"></a>
+<a id="add\_application\_cloud\_watch\_logging\_option"></a>
 
 ### add_application_cloud_watch_logging_option
 
@@ -145,7 +145,7 @@ Keyword-only arguments:
 Returns
 [AddApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#addapplicationcloudwatchloggingoptionresponsetypedef).
 
-<a id="add_application_input"></a>
+<a id="add\_application\_input"></a>
 
 ### add_application_input
 
@@ -169,7 +169,7 @@ Keyword-only arguments:
 Returns
 [AddApplicationInputResponseTypeDef](./type_defs.md#addapplicationinputresponsetypedef).
 
-<a id="add_application_input_processing_configuration"></a>
+<a id="add\_application\_input\_processing\_configuration"></a>
 
 ### add_application_input_processing_configuration
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 Returns
 [AddApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#addapplicationinputprocessingconfigurationresponsetypedef).
 
-<a id="add_application_output"></a>
+<a id="add\_application\_output"></a>
 
 ### add_application_output
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 Returns
 [AddApplicationOutputResponseTypeDef](./type_defs.md#addapplicationoutputresponsetypedef).
 
-<a id="add_application_reference_data_source"></a>
+<a id="add\_application\_reference\_data\_source"></a>
 
 ### add_application_reference_data_source
 
@@ -251,7 +251,7 @@ Keyword-only arguments:
 Returns
 [AddApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#addapplicationreferencedatasourceresponsetypedef).
 
-<a id="add_application_vpc_configuration"></a>
+<a id="add\_application\_vpc\_configuration"></a>
 
 ### add_application_vpc_configuration
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 Returns
 [AddApplicationVpcConfigurationResponseTypeDef](./type_defs.md#addapplicationvpcconfigurationresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -295,7 +295,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_application"></a>
+<a id="create\_application"></a>
 
 ### create_application
 
@@ -327,7 +327,7 @@ Keyword-only arguments:
 Returns
 [CreateApplicationResponseTypeDef](./type_defs.md#createapplicationresponsetypedef).
 
-<a id="create_application_presigned_url"></a>
+<a id="create\_application\_presigned\_url"></a>
 
 ### create_application_presigned_url
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 Returns
 [CreateApplicationPresignedUrlResponseTypeDef](./type_defs.md#createapplicationpresignedurlresponsetypedef).
 
-<a id="create_application_snapshot"></a>
+<a id="create\_application\_snapshot"></a>
 
 ### create_application_snapshot
 
@@ -374,7 +374,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_application"></a>
+<a id="delete\_application"></a>
 
 ### delete_application
 
@@ -396,7 +396,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_application_cloud_watch_logging_option"></a>
+<a id="delete\_application\_cloud\_watch\_logging\_option"></a>
 
 ### delete_application_cloud_watch_logging_option
 
@@ -423,7 +423,7 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationCloudWatchLoggingOptionResponseTypeDef](./type_defs.md#deleteapplicationcloudwatchloggingoptionresponsetypedef).
 
-<a id="delete_application_input_processing_configuration"></a>
+<a id="delete\_application\_input\_processing\_configuration"></a>
 
 ### delete_application_input_processing_configuration
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationInputProcessingConfigurationResponseTypeDef](./type_defs.md#deleteapplicationinputprocessingconfigurationresponsetypedef).
 
-<a id="delete_application_output"></a>
+<a id="delete\_application\_output"></a>
 
 ### delete_application_output
 
@@ -473,7 +473,7 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationOutputResponseTypeDef](./type_defs.md#deleteapplicationoutputresponsetypedef).
 
-<a id="delete_application_reference_data_source"></a>
+<a id="delete\_application\_reference\_data\_source"></a>
 
 ### delete_application_reference_data_source
 
@@ -499,7 +499,7 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationReferenceDataSourceResponseTypeDef](./type_defs.md#deleteapplicationreferencedatasourceresponsetypedef).
 
-<a id="delete_application_snapshot"></a>
+<a id="delete\_application\_snapshot"></a>
 
 ### delete_application_snapshot
 
@@ -522,7 +522,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_application_vpc_configuration"></a>
+<a id="delete\_application\_vpc\_configuration"></a>
 
 ### delete_application_vpc_configuration
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 Returns
 [DeleteApplicationVpcConfigurationResponseTypeDef](./type_defs.md#deleteapplicationvpcconfigurationresponsetypedef).
 
-<a id="describe_application"></a>
+<a id="describe\_application"></a>
 
 ### describe_application
 
@@ -571,7 +571,7 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationResponseTypeDef](./type_defs.md#describeapplicationresponsetypedef).
 
-<a id="describe_application_snapshot"></a>
+<a id="describe\_application\_snapshot"></a>
 
 ### describe_application_snapshot
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationSnapshotResponseTypeDef](./type_defs.md#describeapplicationsnapshotresponsetypedef).
 
-<a id="describe_application_version"></a>
+<a id="describe\_application\_version"></a>
 
 ### describe_application_version
 
@@ -617,7 +617,7 @@ Keyword-only arguments:
 Returns
 [DescribeApplicationVersionResponseTypeDef](./type_defs.md#describeapplicationversionresponsetypedef).
 
-<a id="discover_input_schema"></a>
+<a id="discover\_input\_schema"></a>
 
 ### discover_input_schema
 
@@ -648,7 +648,7 @@ Keyword-only arguments:
 Returns
 [DiscoverInputSchemaResponseTypeDef](./type_defs.md#discoverinputschemaresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -669,7 +669,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_application_snapshots"></a>
+<a id="list\_application\_snapshots"></a>
 
 ### list_application_snapshots
 
@@ -693,7 +693,7 @@ Keyword-only arguments:
 Returns
 [ListApplicationSnapshotsResponseTypeDef](./type_defs.md#listapplicationsnapshotsresponsetypedef).
 
-<a id="list_application_versions"></a>
+<a id="list\_application\_versions"></a>
 
 ### list_application_versions
 
@@ -718,7 +718,7 @@ Keyword-only arguments:
 Returns
 [ListApplicationVersionsResponseTypeDef](./type_defs.md#listapplicationversionsresponsetypedef).
 
-<a id="list_applications"></a>
+<a id="list\_applications"></a>
 
 ### list_applications
 
@@ -741,7 +741,7 @@ Keyword-only arguments:
 Returns
 [ListApplicationsResponseTypeDef](./type_defs.md#listapplicationsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -763,7 +763,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="rollback_application"></a>
+<a id="rollback\_application"></a>
 
 ### rollback_application
 
@@ -786,7 +786,7 @@ Keyword-only arguments:
 Returns
 [RollbackApplicationResponseTypeDef](./type_defs.md#rollbackapplicationresponsetypedef).
 
-<a id="start_application"></a>
+<a id="start\_application"></a>
 
 ### start_application
 
@@ -809,7 +809,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="stop_application"></a>
+<a id="stop\_application"></a>
 
 ### stop_application
 
@@ -831,7 +831,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -852,7 +852,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -874,7 +874,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_application"></a>
+<a id="update\_application"></a>
 
 ### update_application
 
@@ -905,7 +905,7 @@ Keyword-only arguments:
 Returns
 [UpdateApplicationResponseTypeDef](./type_defs.md#updateapplicationresponsetypedef).
 
-<a id="update_application_maintenance_configuration"></a>
+<a id="update\_application\_maintenance\_configuration"></a>
 
 ### update_application_maintenance_configuration
 

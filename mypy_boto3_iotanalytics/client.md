@@ -113,7 +113,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_put_message"></a>
+<a id="batch\_put\_message"></a>
 
 ### batch_put_message
 
@@ -136,7 +136,7 @@ Keyword-only arguments:
 Returns
 [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -153,7 +153,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_pipeline_reprocessing"></a>
+<a id="cancel\_pipeline\_reprocessing"></a>
 
 ### cancel_pipeline_reprocessing
 
@@ -175,7 +175,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_channel"></a>
+<a id="create\_channel"></a>
 
 ### create_channel
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
-<a id="create_dataset"></a>
+<a id="create\_dataset"></a>
 
 ### create_dataset
 
@@ -236,7 +236,7 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
-<a id="create_dataset_content"></a>
+<a id="create\_dataset\_content"></a>
 
 ### create_dataset_content
 
@@ -260,7 +260,7 @@ Keyword-only arguments:
 Returns
 [CreateDatasetContentResponseTypeDef](./type_defs.md#createdatasetcontentresponsetypedef).
 
-<a id="create_datastore"></a>
+<a id="create\_datastore"></a>
 
 ### create_datastore
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 Returns
 [CreateDatastoreResponseTypeDef](./type_defs.md#createdatastoreresponsetypedef).
 
-<a id="create_pipeline"></a>
+<a id="create\_pipeline"></a>
 
 ### create_pipeline
 
@@ -315,7 +315,7 @@ Keyword-only arguments:
 Returns
 [CreatePipelineResponseTypeDef](./type_defs.md#createpipelineresponsetypedef).
 
-<a id="delete_channel"></a>
+<a id="delete\_channel"></a>
 
 ### delete_channel
 
@@ -333,7 +333,7 @@ Keyword-only arguments:
 
 - `channelName`: `str` *(required)*
 
-<a id="delete_dataset"></a>
+<a id="delete\_dataset"></a>
 
 ### delete_dataset
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 
 - `datasetName`: `str` *(required)*
 
-<a id="delete_dataset_content"></a>
+<a id="delete\_dataset\_content"></a>
 
 ### delete_dataset_content
 
@@ -371,7 +371,7 @@ Keyword-only arguments:
 - `datasetName`: `str` *(required)*
 - `versionId`: `str`
 
-<a id="delete_datastore"></a>
+<a id="delete\_datastore"></a>
 
 ### delete_datastore
 
@@ -389,7 +389,7 @@ Keyword-only arguments:
 
 - `datastoreName`: `str` *(required)*
 
-<a id="delete_pipeline"></a>
+<a id="delete\_pipeline"></a>
 
 ### delete_pipeline
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 
 - `pipelineName`: `str` *(required)*
 
-<a id="describe_channel"></a>
+<a id="describe\_channel"></a>
 
 ### describe_channel
 
@@ -429,7 +429,7 @@ Keyword-only arguments:
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
-<a id="describe_dataset"></a>
+<a id="describe\_dataset"></a>
 
 ### describe_dataset
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
-<a id="describe_datastore"></a>
+<a id="describe\_datastore"></a>
 
 ### describe_datastore
 
@@ -472,7 +472,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatastoreResponseTypeDef](./type_defs.md#describedatastoreresponsetypedef).
 
-<a id="describe_logging_options"></a>
+<a id="describe\_logging\_options"></a>
 
 ### describe_logging_options
 
@@ -487,7 +487,7 @@ Boto3 documentation:
 Returns
 [DescribeLoggingOptionsResponseTypeDef](./type_defs.md#describeloggingoptionsresponsetypedef).
 
-<a id="describe_pipeline"></a>
+<a id="describe\_pipeline"></a>
 
 ### describe_pipeline
 
@@ -508,7 +508,7 @@ Keyword-only arguments:
 Returns
 [DescribePipelineResponseTypeDef](./type_defs.md#describepipelineresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -529,7 +529,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_dataset_content"></a>
+<a id="get\_dataset\_content"></a>
 
 ### get_dataset_content
 
@@ -551,7 +551,7 @@ Keyword-only arguments:
 Returns
 [GetDatasetContentResponseTypeDef](./type_defs.md#getdatasetcontentresponsetypedef).
 
-<a id="list_channels"></a>
+<a id="list\_channels"></a>
 
 ### list_channels
 
@@ -573,7 +573,7 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
-<a id="list_dataset_contents"></a>
+<a id="list\_dataset\_contents"></a>
 
 ### list_dataset_contents
 
@@ -599,7 +599,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetContentsResponseTypeDef](./type_defs.md#listdatasetcontentsresponsetypedef).
 
-<a id="list_datasets"></a>
+<a id="list\_datasets"></a>
 
 ### list_datasets
 
@@ -621,7 +621,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
-<a id="list_datastores"></a>
+<a id="list\_datastores"></a>
 
 ### list_datastores
 
@@ -643,7 +643,7 @@ Keyword-only arguments:
 Returns
 [ListDatastoresResponseTypeDef](./type_defs.md#listdatastoresresponsetypedef).
 
-<a id="list_pipelines"></a>
+<a id="list\_pipelines"></a>
 
 ### list_pipelines
 
@@ -665,7 +665,7 @@ Keyword-only arguments:
 Returns
 [ListPipelinesResponseTypeDef](./type_defs.md#listpipelinesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -687,7 +687,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_logging_options"></a>
+<a id="put\_logging\_options"></a>
 
 ### put_logging_options
 
@@ -706,7 +706,7 @@ Keyword-only arguments:
 - `loggingOptions`:
   [LoggingOptionsTypeDef](./type_defs.md#loggingoptionstypedef) *(required)*
 
-<a id="run_pipeline_activity"></a>
+<a id="run\_pipeline\_activity"></a>
 
 ### run_pipeline_activity
 
@@ -732,7 +732,7 @@ Keyword-only arguments:
 Returns
 [RunPipelineActivityResponseTypeDef](./type_defs.md#runpipelineactivityresponsetypedef).
 
-<a id="sample_channel_data"></a>
+<a id="sample\_channel\_data"></a>
 
 ### sample_channel_data
 
@@ -757,7 +757,7 @@ Keyword-only arguments:
 Returns
 [SampleChannelDataResponseTypeDef](./type_defs.md#samplechanneldataresponsetypedef).
 
-<a id="start_pipeline_reprocessing"></a>
+<a id="start\_pipeline\_reprocessing"></a>
 
 ### start_pipeline_reprocessing
 
@@ -783,7 +783,7 @@ Keyword-only arguments:
 Returns
 [StartPipelineReprocessingResponseTypeDef](./type_defs.md#startpipelinereprocessingresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -804,7 +804,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -825,7 +825,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_channel"></a>
+<a id="update\_channel"></a>
 
 ### update_channel
 
@@ -847,7 +847,7 @@ Keyword-only arguments:
 - `retentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 
-<a id="update_dataset"></a>
+<a id="update\_dataset"></a>
 
 ### update_dataset
 
@@ -878,7 +878,7 @@ Keyword-only arguments:
 - `lateDataRules`:
   `Sequence`\[[LateDataRuleTypeDef](./type_defs.md#latedataruletypedef)\]
 
-<a id="update_datastore"></a>
+<a id="update\_datastore"></a>
 
 ### update_datastore
 
@@ -902,7 +902,7 @@ Keyword-only arguments:
 - `fileFormatConfiguration`:
   [FileFormatConfigurationTypeDef](./type_defs.md#fileformatconfigurationtypedef)
 
-<a id="update_pipeline"></a>
+<a id="update\_pipeline"></a>
 
 ### update_pipeline
 

@@ -92,7 +92,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_meter_usage"></a>
+<a id="batch\_meter\_usage"></a>
 
 ### batch_meter_usage
 
@@ -118,7 +118,7 @@ Keyword-only arguments:
 Returns
 [BatchMeterUsageResultTypeDef](./type_defs.md#batchmeterusageresulttypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -135,7 +135,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -156,7 +156,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="meter_usage"></a>
+<a id="meter\_usage"></a>
 
 ### meter_usage
 
@@ -182,7 +182,7 @@ Keyword-only arguments:
 
 Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
 
-<a id="register_usage"></a>
+<a id="register\_usage"></a>
 
 ### register_usage
 
@@ -208,7 +208,7 @@ Keyword-only arguments:
 Returns
 [RegisterUsageResultTypeDef](./type_defs.md#registerusageresulttypedef).
 
-<a id="resolve_customer"></a>
+<a id="resolve\_customer"></a>
 
 ### resolve_customer
 

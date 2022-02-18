@@ -88,7 +88,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -105,7 +105,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_affected_accounts_for_organization"></a>
+<a id="describe\_affected\_accounts\_for\_organization"></a>
 
 ### describe_affected_accounts_for_organization
 
@@ -130,7 +130,7 @@ Keyword-only arguments:
 Returns
 [DescribeAffectedAccountsForOrganizationResponseTypeDef](./type_defs.md#describeaffectedaccountsfororganizationresponsetypedef).
 
-<a id="describe_affected_entities"></a>
+<a id="describe\_affected\_entities"></a>
 
 ### describe_affected_entities
 
@@ -157,7 +157,7 @@ Keyword-only arguments:
 Returns
 [DescribeAffectedEntitiesResponseTypeDef](./type_defs.md#describeaffectedentitiesresponsetypedef).
 
-<a id="describe_affected_entities_for_organization"></a>
+<a id="describe\_affected\_entities\_for\_organization"></a>
 
 ### describe_affected_entities_for_organization
 
@@ -186,7 +186,7 @@ Keyword-only arguments:
 Returns
 [DescribeAffectedEntitiesForOrganizationResponseTypeDef](./type_defs.md#describeaffectedentitiesfororganizationresponsetypedef).
 
-<a id="describe_entity_aggregates"></a>
+<a id="describe\_entity\_aggregates"></a>
 
 ### describe_entity_aggregates
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [DescribeEntityAggregatesResponseTypeDef](./type_defs.md#describeentityaggregatesresponsetypedef).
 
-<a id="describe_event_aggregates"></a>
+<a id="describe\_event\_aggregates"></a>
 
 ### describe_event_aggregates
 
@@ -236,7 +236,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventAggregatesResponseTypeDef](./type_defs.md#describeeventaggregatesresponsetypedef).
 
-<a id="describe_event_details"></a>
+<a id="describe\_event\_details"></a>
 
 ### describe_event_details
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventDetailsResponseTypeDef](./type_defs.md#describeeventdetailsresponsetypedef).
 
-<a id="describe_event_details_for_organization"></a>
+<a id="describe\_event\_details\_for\_organization"></a>
 
 ### describe_event_details_for_organization
 
@@ -284,7 +284,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventDetailsForOrganizationResponseTypeDef](./type_defs.md#describeeventdetailsfororganizationresponsetypedef).
 
-<a id="describe_event_types"></a>
+<a id="describe\_event\_types"></a>
 
 ### describe_event_types
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventTypesResponseTypeDef](./type_defs.md#describeeventtypesresponsetypedef).
 
-<a id="describe_events"></a>
+<a id="describe\_events"></a>
 
 ### describe_events
 
@@ -332,7 +332,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
-<a id="describe_events_for_organization"></a>
+<a id="describe\_events\_for\_organization"></a>
 
 ### describe_events_for_organization
 
@@ -358,7 +358,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventsForOrganizationResponseTypeDef](./type_defs.md#describeeventsfororganizationresponsetypedef).
 
-<a id="describe_health_service_status_for_organization"></a>
+<a id="describe\_health\_service\_status\_for\_organization"></a>
 
 ### describe_health_service_status_for_organization
 
@@ -375,7 +375,7 @@ Boto3 documentation:
 Returns
 [DescribeHealthServiceStatusForOrganizationResponseTypeDef](./type_defs.md#describehealthservicestatusfororganizationresponsetypedef).
 
-<a id="disable_health_service_access_for_organization"></a>
+<a id="disable\_health\_service\_access\_for\_organization"></a>
 
 ### disable_health_service_access_for_organization
 
@@ -387,7 +387,7 @@ Type annotations for
 Boto3 documentation:
 [Health.Client.disable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.disable_health_service_access_for_organization)
 
-<a id="enable_health_service_access_for_organization"></a>
+<a id="enable\_health\_service\_access\_for\_organization"></a>
 
 ### enable_health_service_access_for_organization
 
@@ -399,7 +399,7 @@ Type annotations for
 Boto3 documentation:
 [Health.Client.enable_health_service_access_for_organization](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/health.html#Health.Client.enable_health_service_access_for_organization)
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 

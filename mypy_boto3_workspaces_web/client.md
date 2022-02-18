@@ -123,7 +123,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_browser_settings"></a>
+<a id="associate\_browser\_settings"></a>
 
 ### associate_browser_settings
 
@@ -146,7 +146,7 @@ Keyword-only arguments:
 Returns
 [AssociateBrowserSettingsResponseTypeDef](./type_defs.md#associatebrowsersettingsresponsetypedef).
 
-<a id="associate_network_settings"></a>
+<a id="associate\_network\_settings"></a>
 
 ### associate_network_settings
 
@@ -169,7 +169,7 @@ Keyword-only arguments:
 Returns
 [AssociateNetworkSettingsResponseTypeDef](./type_defs.md#associatenetworksettingsresponsetypedef).
 
-<a id="associate_trust_store"></a>
+<a id="associate\_trust\_store"></a>
 
 ### associate_trust_store
 
@@ -192,7 +192,7 @@ Keyword-only arguments:
 Returns
 [AssociateTrustStoreResponseTypeDef](./type_defs.md#associatetruststoreresponsetypedef).
 
-<a id="associate_user_settings"></a>
+<a id="associate\_user\_settings"></a>
 
 ### associate_user_settings
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 Returns
 [AssociateUserSettingsResponseTypeDef](./type_defs.md#associateusersettingsresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -232,7 +232,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_browser_settings"></a>
+<a id="create\_browser\_settings"></a>
 
 ### create_browser_settings
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 Returns
 [CreateBrowserSettingsResponseTypeDef](./type_defs.md#createbrowsersettingsresponsetypedef).
 
-<a id="create_identity_provider"></a>
+<a id="create\_identity\_provider"></a>
 
 ### create_identity_provider
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 Returns
 [CreateIdentityProviderResponseTypeDef](./type_defs.md#createidentityproviderresponsetypedef).
 
-<a id="create_network_settings"></a>
+<a id="create\_network\_settings"></a>
 
 ### create_network_settings
 
@@ -313,7 +313,7 @@ Keyword-only arguments:
 Returns
 [CreateNetworkSettingsResponseTypeDef](./type_defs.md#createnetworksettingsresponsetypedef).
 
-<a id="create_portal"></a>
+<a id="create\_portal"></a>
 
 ### create_portal
 
@@ -338,7 +338,7 @@ Keyword-only arguments:
 Returns
 [CreatePortalResponseTypeDef](./type_defs.md#createportalresponsetypedef).
 
-<a id="create_trust_store"></a>
+<a id="create\_trust\_store"></a>
 
 ### create_trust_store
 
@@ -363,7 +363,7 @@ Keyword-only arguments:
 Returns
 [CreateTrustStoreResponseTypeDef](./type_defs.md#createtruststoreresponsetypedef).
 
-<a id="create_user_settings"></a>
+<a id="create\_user\_settings"></a>
 
 ### create_user_settings
 
@@ -393,7 +393,7 @@ Keyword-only arguments:
 Returns
 [CreateUserSettingsResponseTypeDef](./type_defs.md#createusersettingsresponsetypedef).
 
-<a id="delete_browser_settings"></a>
+<a id="delete\_browser\_settings"></a>
 
 ### delete_browser_settings
 
@@ -414,7 +414,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_identity_provider"></a>
+<a id="delete\_identity\_provider"></a>
 
 ### delete_identity_provider
 
@@ -435,7 +435,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_network_settings"></a>
+<a id="delete\_network\_settings"></a>
 
 ### delete_network_settings
 
@@ -456,7 +456,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_portal"></a>
+<a id="delete\_portal"></a>
 
 ### delete_portal
 
@@ -476,7 +476,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_trust_store"></a>
+<a id="delete\_trust\_store"></a>
 
 ### delete_trust_store
 
@@ -497,7 +497,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_user_settings"></a>
+<a id="delete\_user\_settings"></a>
 
 ### delete_user_settings
 
@@ -518,7 +518,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_browser_settings"></a>
+<a id="disassociate\_browser\_settings"></a>
 
 ### disassociate_browser_settings
 
@@ -539,7 +539,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_network_settings"></a>
+<a id="disassociate\_network\_settings"></a>
 
 ### disassociate_network_settings
 
@@ -560,7 +560,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_trust_store"></a>
+<a id="disassociate\_trust\_store"></a>
 
 ### disassociate_trust_store
 
@@ -581,7 +581,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_user_settings"></a>
+<a id="disassociate\_user\_settings"></a>
 
 ### disassociate_user_settings
 
@@ -602,7 +602,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -623,7 +623,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_browser_settings"></a>
+<a id="get\_browser\_settings"></a>
 
 ### get_browser_settings
 
@@ -645,7 +645,7 @@ Keyword-only arguments:
 Returns
 [GetBrowserSettingsResponseTypeDef](./type_defs.md#getbrowsersettingsresponsetypedef).
 
-<a id="get_identity_provider"></a>
+<a id="get\_identity\_provider"></a>
 
 ### get_identity_provider
 
@@ -667,7 +667,7 @@ Keyword-only arguments:
 Returns
 [GetIdentityProviderResponseTypeDef](./type_defs.md#getidentityproviderresponsetypedef).
 
-<a id="get_network_settings"></a>
+<a id="get\_network\_settings"></a>
 
 ### get_network_settings
 
@@ -689,7 +689,7 @@ Keyword-only arguments:
 Returns
 [GetNetworkSettingsResponseTypeDef](./type_defs.md#getnetworksettingsresponsetypedef).
 
-<a id="get_portal"></a>
+<a id="get\_portal"></a>
 
 ### get_portal
 
@@ -709,7 +709,7 @@ Keyword-only arguments:
 
 Returns [GetPortalResponseTypeDef](./type_defs.md#getportalresponsetypedef).
 
-<a id="get_portal_service_provider_metadata"></a>
+<a id="get\_portal\_service\_provider\_metadata"></a>
 
 ### get_portal_service_provider_metadata
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [GetPortalServiceProviderMetadataResponseTypeDef](./type_defs.md#getportalserviceprovidermetadataresponsetypedef).
 
-<a id="get_trust_store"></a>
+<a id="get\_trust\_store"></a>
 
 ### get_trust_store
 
@@ -752,7 +752,7 @@ Keyword-only arguments:
 Returns
 [GetTrustStoreResponseTypeDef](./type_defs.md#gettruststoreresponsetypedef).
 
-<a id="get_trust_store_certificate"></a>
+<a id="get\_trust\_store\_certificate"></a>
 
 ### get_trust_store_certificate
 
@@ -775,7 +775,7 @@ Keyword-only arguments:
 Returns
 [GetTrustStoreCertificateResponseTypeDef](./type_defs.md#gettruststorecertificateresponsetypedef).
 
-<a id="get_user_settings"></a>
+<a id="get\_user\_settings"></a>
 
 ### get_user_settings
 
@@ -796,7 +796,7 @@ Keyword-only arguments:
 Returns
 [GetUserSettingsResponseTypeDef](./type_defs.md#getusersettingsresponsetypedef).
 
-<a id="list_browser_settings"></a>
+<a id="list\_browser\_settings"></a>
 
 ### list_browser_settings
 
@@ -819,7 +819,7 @@ Keyword-only arguments:
 Returns
 [ListBrowserSettingsResponseTypeDef](./type_defs.md#listbrowsersettingsresponsetypedef).
 
-<a id="list_identity_providers"></a>
+<a id="list\_identity\_providers"></a>
 
 ### list_identity_providers
 
@@ -843,7 +843,7 @@ Keyword-only arguments:
 Returns
 [ListIdentityProvidersResponseTypeDef](./type_defs.md#listidentityprovidersresponsetypedef).
 
-<a id="list_network_settings"></a>
+<a id="list\_network\_settings"></a>
 
 ### list_network_settings
 
@@ -866,7 +866,7 @@ Keyword-only arguments:
 Returns
 [ListNetworkSettingsResponseTypeDef](./type_defs.md#listnetworksettingsresponsetypedef).
 
-<a id="list_portals"></a>
+<a id="list\_portals"></a>
 
 ### list_portals
 
@@ -888,7 +888,7 @@ Keyword-only arguments:
 Returns
 [ListPortalsResponseTypeDef](./type_defs.md#listportalsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -910,7 +910,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_trust_store_certificates"></a>
+<a id="list\_trust\_store\_certificates"></a>
 
 ### list_trust_store_certificates
 
@@ -934,7 +934,7 @@ Keyword-only arguments:
 Returns
 [ListTrustStoreCertificatesResponseTypeDef](./type_defs.md#listtruststorecertificatesresponsetypedef).
 
-<a id="list_trust_stores"></a>
+<a id="list\_trust\_stores"></a>
 
 ### list_trust_stores
 
@@ -956,7 +956,7 @@ Keyword-only arguments:
 Returns
 [ListTrustStoresResponseTypeDef](./type_defs.md#listtruststoresresponsetypedef).
 
-<a id="list_user_settings"></a>
+<a id="list\_user\_settings"></a>
 
 ### list_user_settings
 
@@ -979,7 +979,7 @@ Keyword-only arguments:
 Returns
 [ListUserSettingsResponseTypeDef](./type_defs.md#listusersettingsresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1001,7 +1001,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1022,7 +1022,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_browser_settings"></a>
+<a id="update\_browser\_settings"></a>
 
 ### update_browser_settings
 
@@ -1046,7 +1046,7 @@ Keyword-only arguments:
 Returns
 [UpdateBrowserSettingsResponseTypeDef](./type_defs.md#updatebrowsersettingsresponsetypedef).
 
-<a id="update_identity_provider"></a>
+<a id="update\_identity\_provider"></a>
 
 ### update_identity_provider
 
@@ -1073,7 +1073,7 @@ Keyword-only arguments:
 Returns
 [UpdateIdentityProviderResponseTypeDef](./type_defs.md#updateidentityproviderresponsetypedef).
 
-<a id="update_network_settings"></a>
+<a id="update\_network\_settings"></a>
 
 ### update_network_settings
 
@@ -1099,7 +1099,7 @@ Keyword-only arguments:
 Returns
 [UpdateNetworkSettingsResponseTypeDef](./type_defs.md#updatenetworksettingsresponsetypedef).
 
-<a id="update_portal"></a>
+<a id="update\_portal"></a>
 
 ### update_portal
 
@@ -1121,7 +1121,7 @@ Keyword-only arguments:
 Returns
 [UpdatePortalResponseTypeDef](./type_defs.md#updateportalresponsetypedef).
 
-<a id="update_trust_store"></a>
+<a id="update\_trust\_store"></a>
 
 ### update_trust_store
 
@@ -1147,7 +1147,7 @@ Keyword-only arguments:
 Returns
 [UpdateTrustStoreResponseTypeDef](./type_defs.md#updatetruststoreresponsetypedef).
 
-<a id="update_user_settings"></a>
+<a id="update\_user\_settings"></a>
 
 ### update_user_settings
 

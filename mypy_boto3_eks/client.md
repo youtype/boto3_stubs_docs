@@ -120,7 +120,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_encryption_config"></a>
+<a id="associate\_encryption\_config"></a>
 
 ### associate_encryption_config
 
@@ -145,7 +145,7 @@ Keyword-only arguments:
 Returns
 [AssociateEncryptionConfigResponseTypeDef](./type_defs.md#associateencryptionconfigresponsetypedef).
 
-<a id="associate_identity_provider_config"></a>
+<a id="associate\_identity\_provider\_config"></a>
 
 ### associate_identity_provider_config
 
@@ -172,7 +172,7 @@ Keyword-only arguments:
 Returns
 [AssociateIdentityProviderConfigResponseTypeDef](./type_defs.md#associateidentityproviderconfigresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -189,7 +189,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_addon"></a>
+<a id="create\_addon"></a>
 
 ### create_addon
 
@@ -217,7 +217,7 @@ Keyword-only arguments:
 Returns
 [CreateAddonResponseTypeDef](./type_defs.md#createaddonresponsetypedef).
 
-<a id="create_cluster"></a>
+<a id="create\_cluster"></a>
 
 ### create_cluster
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
-<a id="create_fargate_profile"></a>
+<a id="create\_fargate\_profile"></a>
 
 ### create_fargate_profile
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 Returns
 [CreateFargateProfileResponseTypeDef](./type_defs.md#createfargateprofileresponsetypedef).
 
-<a id="create_nodegroup"></a>
+<a id="create\_nodegroup"></a>
 
 ### create_nodegroup
 
@@ -320,7 +320,7 @@ Keyword-only arguments:
 Returns
 [CreateNodegroupResponseTypeDef](./type_defs.md#createnodegroupresponsetypedef).
 
-<a id="delete_addon"></a>
+<a id="delete\_addon"></a>
 
 ### delete_addon
 
@@ -343,7 +343,7 @@ Keyword-only arguments:
 Returns
 [DeleteAddonResponseTypeDef](./type_defs.md#deleteaddonresponsetypedef).
 
-<a id="delete_cluster"></a>
+<a id="delete\_cluster"></a>
 
 ### delete_cluster
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
-<a id="delete_fargate_profile"></a>
+<a id="delete\_fargate\_profile"></a>
 
 ### delete_fargate_profile
 
@@ -386,7 +386,7 @@ Keyword-only arguments:
 Returns
 [DeleteFargateProfileResponseTypeDef](./type_defs.md#deletefargateprofileresponsetypedef).
 
-<a id="delete_nodegroup"></a>
+<a id="delete\_nodegroup"></a>
 
 ### delete_nodegroup
 
@@ -408,7 +408,7 @@ Keyword-only arguments:
 Returns
 [DeleteNodegroupResponseTypeDef](./type_defs.md#deletenodegroupresponsetypedef).
 
-<a id="deregister_cluster"></a>
+<a id="deregister\_cluster"></a>
 
 ### deregister_cluster
 
@@ -429,7 +429,7 @@ Keyword-only arguments:
 Returns
 [DeregisterClusterResponseTypeDef](./type_defs.md#deregisterclusterresponsetypedef).
 
-<a id="describe_addon"></a>
+<a id="describe\_addon"></a>
 
 ### describe_addon
 
@@ -451,7 +451,7 @@ Keyword-only arguments:
 Returns
 [DescribeAddonResponseTypeDef](./type_defs.md#describeaddonresponsetypedef).
 
-<a id="describe_addon_versions"></a>
+<a id="describe\_addon\_versions"></a>
 
 ### describe_addon_versions
 
@@ -475,7 +475,7 @@ Keyword-only arguments:
 Returns
 [DescribeAddonVersionsResponseTypeDef](./type_defs.md#describeaddonversionsresponsetypedef).
 
-<a id="describe_cluster"></a>
+<a id="describe\_cluster"></a>
 
 ### describe_cluster
 
@@ -496,7 +496,7 @@ Keyword-only arguments:
 Returns
 [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
-<a id="describe_fargate_profile"></a>
+<a id="describe\_fargate\_profile"></a>
 
 ### describe_fargate_profile
 
@@ -518,7 +518,7 @@ Keyword-only arguments:
 Returns
 [DescribeFargateProfileResponseTypeDef](./type_defs.md#describefargateprofileresponsetypedef).
 
-<a id="describe_identity_provider_config"></a>
+<a id="describe\_identity\_provider\_config"></a>
 
 ### describe_identity_provider_config
 
@@ -543,7 +543,7 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityProviderConfigResponseTypeDef](./type_defs.md#describeidentityproviderconfigresponsetypedef).
 
-<a id="describe_nodegroup"></a>
+<a id="describe\_nodegroup"></a>
 
 ### describe_nodegroup
 
@@ -565,7 +565,7 @@ Keyword-only arguments:
 Returns
 [DescribeNodegroupResponseTypeDef](./type_defs.md#describenodegroupresponsetypedef).
 
-<a id="describe_update"></a>
+<a id="describe\_update"></a>
 
 ### describe_update
 
@@ -589,7 +589,7 @@ Keyword-only arguments:
 Returns
 [DescribeUpdateResponseTypeDef](./type_defs.md#describeupdateresponsetypedef).
 
-<a id="disassociate_identity_provider_config"></a>
+<a id="disassociate\_identity\_provider\_config"></a>
 
 ### disassociate_identity_provider_config
 
@@ -615,7 +615,7 @@ Keyword-only arguments:
 Returns
 [DisassociateIdentityProviderConfigResponseTypeDef](./type_defs.md#disassociateidentityproviderconfigresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -635,7 +635,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_addons"></a>
+<a id="list\_addons"></a>
 
 ### list_addons
 
@@ -657,7 +657,7 @@ Keyword-only arguments:
 
 Returns [ListAddonsResponseTypeDef](./type_defs.md#listaddonsresponsetypedef).
 
-<a id="list_clusters"></a>
+<a id="list\_clusters"></a>
 
 ### list_clusters
 
@@ -681,7 +681,7 @@ Keyword-only arguments:
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
-<a id="list_fargate_profiles"></a>
+<a id="list\_fargate\_profiles"></a>
 
 ### list_fargate_profiles
 
@@ -705,7 +705,7 @@ Keyword-only arguments:
 Returns
 [ListFargateProfilesResponseTypeDef](./type_defs.md#listfargateprofilesresponsetypedef).
 
-<a id="list_identity_provider_configs"></a>
+<a id="list\_identity\_provider\_configs"></a>
 
 ### list_identity_provider_configs
 
@@ -729,7 +729,7 @@ Keyword-only arguments:
 Returns
 [ListIdentityProviderConfigsResponseTypeDef](./type_defs.md#listidentityproviderconfigsresponsetypedef).
 
-<a id="list_nodegroups"></a>
+<a id="list\_nodegroups"></a>
 
 ### list_nodegroups
 
@@ -753,7 +753,7 @@ Keyword-only arguments:
 Returns
 [ListNodegroupsResponseTypeDef](./type_defs.md#listnodegroupsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -774,7 +774,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_updates"></a>
+<a id="list\_updates"></a>
 
 ### list_updates
 
@@ -800,7 +800,7 @@ Keyword-only arguments:
 Returns
 [ListUpdatesResponseTypeDef](./type_defs.md#listupdatesresponsetypedef).
 
-<a id="register_cluster"></a>
+<a id="register\_cluster"></a>
 
 ### register_cluster
 
@@ -826,7 +826,7 @@ Keyword-only arguments:
 Returns
 [RegisterClusterResponseTypeDef](./type_defs.md#registerclusterresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -847,7 +847,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -868,7 +868,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_addon"></a>
+<a id="update\_addon"></a>
 
 ### update_addon
 
@@ -895,7 +895,7 @@ Keyword-only arguments:
 Returns
 [UpdateAddonResponseTypeDef](./type_defs.md#updateaddonresponsetypedef).
 
-<a id="update_cluster_config"></a>
+<a id="update\_cluster\_config"></a>
 
 ### update_cluster_config
 
@@ -920,7 +920,7 @@ Keyword-only arguments:
 Returns
 [UpdateClusterConfigResponseTypeDef](./type_defs.md#updateclusterconfigresponsetypedef).
 
-<a id="update_cluster_version"></a>
+<a id="update\_cluster\_version"></a>
 
 ### update_cluster_version
 
@@ -943,7 +943,7 @@ Keyword-only arguments:
 Returns
 [UpdateClusterVersionResponseTypeDef](./type_defs.md#updateclusterversionresponsetypedef).
 
-<a id="update_nodegroup_config"></a>
+<a id="update\_nodegroup\_config"></a>
 
 ### update_nodegroup_config
 
@@ -974,7 +974,7 @@ Keyword-only arguments:
 Returns
 [UpdateNodegroupConfigResponseTypeDef](./type_defs.md#updatenodegroupconfigresponsetypedef).
 
-<a id="update_nodegroup_version"></a>
+<a id="update\_nodegroup\_version"></a>
 
 ### update_nodegroup_version
 

@@ -173,7 +173,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_facet_to_object"></a>
+<a id="add\_facet\_to\_object"></a>
 
 ### add_facet_to_object
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="apply_schema"></a>
+<a id="apply\_schema"></a>
 
 ### apply_schema
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 Returns
 [ApplySchemaResponseTypeDef](./type_defs.md#applyschemaresponsetypedef).
 
-<a id="attach_object"></a>
+<a id="attach\_object"></a>
 
 ### attach_object
 
@@ -249,7 +249,7 @@ Keyword-only arguments:
 Returns
 [AttachObjectResponseTypeDef](./type_defs.md#attachobjectresponsetypedef).
 
-<a id="attach_policy"></a>
+<a id="attach\_policy"></a>
 
 ### attach_policy
 
@@ -273,7 +273,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="attach_to_index"></a>
+<a id="attach\_to\_index"></a>
 
 ### attach_to_index
 
@@ -298,7 +298,7 @@ Keyword-only arguments:
 Returns
 [AttachToIndexResponseTypeDef](./type_defs.md#attachtoindexresponsetypedef).
 
-<a id="attach_typed_link"></a>
+<a id="attach\_typed\_link"></a>
 
 ### attach_typed_link
 
@@ -329,7 +329,7 @@ Keyword-only arguments:
 Returns
 [AttachTypedLinkResponseTypeDef](./type_defs.md#attachtypedlinkresponsetypedef).
 
-<a id="batch_read"></a>
+<a id="batch\_read"></a>
 
 ### batch_read
 
@@ -354,7 +354,7 @@ Keyword-only arguments:
 
 Returns [BatchReadResponseTypeDef](./type_defs.md#batchreadresponsetypedef).
 
-<a id="batch_write"></a>
+<a id="batch\_write"></a>
 
 ### batch_write
 
@@ -377,7 +377,7 @@ Keyword-only arguments:
 
 Returns [BatchWriteResponseTypeDef](./type_defs.md#batchwriteresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -394,7 +394,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_directory"></a>
+<a id="create\_directory"></a>
 
 ### create_directory
 
@@ -416,7 +416,7 @@ Keyword-only arguments:
 Returns
 [CreateDirectoryResponseTypeDef](./type_defs.md#createdirectoryresponsetypedef).
 
-<a id="create_facet"></a>
+<a id="create\_facet"></a>
 
 ### create_facet
 
@@ -441,7 +441,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_index"></a>
+<a id="create\_index"></a>
 
 ### create_index
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
-<a id="create_object"></a>
+<a id="create\_object"></a>
 
 ### create_object
 
@@ -498,7 +498,7 @@ Keyword-only arguments:
 Returns
 [CreateObjectResponseTypeDef](./type_defs.md#createobjectresponsetypedef).
 
-<a id="create_schema"></a>
+<a id="create\_schema"></a>
 
 ### create_schema
 
@@ -519,7 +519,7 @@ Keyword-only arguments:
 Returns
 [CreateSchemaResponseTypeDef](./type_defs.md#createschemaresponsetypedef).
 
-<a id="create_typed_link_facet"></a>
+<a id="create\_typed\_link\_facet"></a>
 
 ### create_typed_link_facet
 
@@ -542,7 +542,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_directory"></a>
+<a id="delete\_directory"></a>
 
 ### delete_directory
 
@@ -563,7 +563,7 @@ Keyword-only arguments:
 Returns
 [DeleteDirectoryResponseTypeDef](./type_defs.md#deletedirectoryresponsetypedef).
 
-<a id="delete_facet"></a>
+<a id="delete\_facet"></a>
 
 ### delete_facet
 
@@ -584,7 +584,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_object"></a>
+<a id="delete\_object"></a>
 
 ### delete_object
 
@@ -606,7 +606,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_schema"></a>
+<a id="delete\_schema"></a>
 
 ### delete_schema
 
@@ -627,7 +627,7 @@ Keyword-only arguments:
 Returns
 [DeleteSchemaResponseTypeDef](./type_defs.md#deleteschemaresponsetypedef).
 
-<a id="delete_typed_link_facet"></a>
+<a id="delete\_typed\_link\_facet"></a>
 
 ### delete_typed_link_facet
 
@@ -649,7 +649,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="detach_from_index"></a>
+<a id="detach\_from\_index"></a>
 
 ### detach_from_index
 
@@ -674,7 +674,7 @@ Keyword-only arguments:
 Returns
 [DetachFromIndexResponseTypeDef](./type_defs.md#detachfromindexresponsetypedef).
 
-<a id="detach_object"></a>
+<a id="detach\_object"></a>
 
 ### detach_object
 
@@ -698,7 +698,7 @@ Keyword-only arguments:
 Returns
 [DetachObjectResponseTypeDef](./type_defs.md#detachobjectresponsetypedef).
 
-<a id="detach_policy"></a>
+<a id="detach\_policy"></a>
 
 ### detach_policy
 
@@ -722,7 +722,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="detach_typed_link"></a>
+<a id="detach\_typed\_link"></a>
 
 ### detach_typed_link
 
@@ -743,7 +743,7 @@ Keyword-only arguments:
   [TypedLinkSpecifierTypeDef](./type_defs.md#typedlinkspecifiertypedef)
   *(required)*
 
-<a id="disable_directory"></a>
+<a id="disable\_directory"></a>
 
 ### disable_directory
 
@@ -764,7 +764,7 @@ Keyword-only arguments:
 Returns
 [DisableDirectoryResponseTypeDef](./type_defs.md#disabledirectoryresponsetypedef).
 
-<a id="enable_directory"></a>
+<a id="enable\_directory"></a>
 
 ### enable_directory
 
@@ -785,7 +785,7 @@ Keyword-only arguments:
 Returns
 [EnableDirectoryResponseTypeDef](./type_defs.md#enabledirectoryresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -806,7 +806,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_applied_schema_version"></a>
+<a id="get\_applied\_schema\_version"></a>
 
 ### get_applied_schema_version
 
@@ -828,7 +828,7 @@ Keyword-only arguments:
 Returns
 [GetAppliedSchemaVersionResponseTypeDef](./type_defs.md#getappliedschemaversionresponsetypedef).
 
-<a id="get_directory"></a>
+<a id="get\_directory"></a>
 
 ### get_directory
 
@@ -849,7 +849,7 @@ Keyword-only arguments:
 Returns
 [GetDirectoryResponseTypeDef](./type_defs.md#getdirectoryresponsetypedef).
 
-<a id="get_facet"></a>
+<a id="get\_facet"></a>
 
 ### get_facet
 
@@ -871,7 +871,7 @@ Keyword-only arguments:
 
 Returns [GetFacetResponseTypeDef](./type_defs.md#getfacetresponsetypedef).
 
-<a id="get_link_attributes"></a>
+<a id="get\_link\_attributes"></a>
 
 ### get_link_attributes
 
@@ -899,7 +899,7 @@ Keyword-only arguments:
 Returns
 [GetLinkAttributesResponseTypeDef](./type_defs.md#getlinkattributesresponsetypedef).
 
-<a id="get_object_attributes"></a>
+<a id="get\_object\_attributes"></a>
 
 ### get_object_attributes
 
@@ -928,7 +928,7 @@ Keyword-only arguments:
 Returns
 [GetObjectAttributesResponseTypeDef](./type_defs.md#getobjectattributesresponsetypedef).
 
-<a id="get_object_information"></a>
+<a id="get\_object\_information"></a>
 
 ### get_object_information
 
@@ -954,7 +954,7 @@ Keyword-only arguments:
 Returns
 [GetObjectInformationResponseTypeDef](./type_defs.md#getobjectinformationresponsetypedef).
 
-<a id="get_schema_as_json"></a>
+<a id="get\_schema\_as\_json"></a>
 
 ### get_schema_as_json
 
@@ -976,7 +976,7 @@ Keyword-only arguments:
 Returns
 [GetSchemaAsJsonResponseTypeDef](./type_defs.md#getschemaasjsonresponsetypedef).
 
-<a id="get_typed_link_facet_information"></a>
+<a id="get\_typed\_link\_facet\_information"></a>
 
 ### get_typed_link_facet_information
 
@@ -999,7 +999,7 @@ Keyword-only arguments:
 Returns
 [GetTypedLinkFacetInformationResponseTypeDef](./type_defs.md#gettypedlinkfacetinformationresponsetypedef).
 
-<a id="list_applied_schema_arns"></a>
+<a id="list\_applied\_schema\_arns"></a>
 
 ### list_applied_schema_arns
 
@@ -1024,7 +1024,7 @@ Keyword-only arguments:
 Returns
 [ListAppliedSchemaArnsResponseTypeDef](./type_defs.md#listappliedschemaarnsresponsetypedef).
 
-<a id="list_attached_indices"></a>
+<a id="list\_attached\_indices"></a>
 
 ### list_attached_indices
 
@@ -1052,7 +1052,7 @@ Keyword-only arguments:
 Returns
 [ListAttachedIndicesResponseTypeDef](./type_defs.md#listattachedindicesresponsetypedef).
 
-<a id="list_development_schema_arns"></a>
+<a id="list\_development\_schema\_arns"></a>
 
 ### list_development_schema_arns
 
@@ -1075,7 +1075,7 @@ Keyword-only arguments:
 Returns
 [ListDevelopmentSchemaArnsResponseTypeDef](./type_defs.md#listdevelopmentschemaarnsresponsetypedef).
 
-<a id="list_directories"></a>
+<a id="list\_directories"></a>
 
 ### list_directories
 
@@ -1098,7 +1098,7 @@ Keyword-only arguments:
 Returns
 [ListDirectoriesResponseTypeDef](./type_defs.md#listdirectoriesresponsetypedef).
 
-<a id="list_facet_attributes"></a>
+<a id="list\_facet\_attributes"></a>
 
 ### list_facet_attributes
 
@@ -1123,7 +1123,7 @@ Keyword-only arguments:
 Returns
 [ListFacetAttributesResponseTypeDef](./type_defs.md#listfacetattributesresponsetypedef).
 
-<a id="list_facet_names"></a>
+<a id="list\_facet\_names"></a>
 
 ### list_facet_names
 
@@ -1146,7 +1146,7 @@ Keyword-only arguments:
 Returns
 [ListFacetNamesResponseTypeDef](./type_defs.md#listfacetnamesresponsetypedef).
 
-<a id="list_incoming_typed_links"></a>
+<a id="list\_incoming\_typed\_links"></a>
 
 ### list_incoming_typed_links
 
@@ -1179,7 +1179,7 @@ Keyword-only arguments:
 Returns
 [ListIncomingTypedLinksResponseTypeDef](./type_defs.md#listincomingtypedlinksresponsetypedef).
 
-<a id="list_index"></a>
+<a id="list\_index"></a>
 
 ### list_index
 
@@ -1207,7 +1207,7 @@ Keyword-only arguments:
 
 Returns [ListIndexResponseTypeDef](./type_defs.md#listindexresponsetypedef).
 
-<a id="list_managed_schema_arns"></a>
+<a id="list\_managed\_schema\_arns"></a>
 
 ### list_managed_schema_arns
 
@@ -1231,7 +1231,7 @@ Keyword-only arguments:
 Returns
 [ListManagedSchemaArnsResponseTypeDef](./type_defs.md#listmanagedschemaarnsresponsetypedef).
 
-<a id="list_object_attributes"></a>
+<a id="list\_object\_attributes"></a>
 
 ### list_object_attributes
 
@@ -1260,7 +1260,7 @@ Keyword-only arguments:
 Returns
 [ListObjectAttributesResponseTypeDef](./type_defs.md#listobjectattributesresponsetypedef).
 
-<a id="list_object_children"></a>
+<a id="list\_object\_children"></a>
 
 ### list_object_children
 
@@ -1289,7 +1289,7 @@ Keyword-only arguments:
 Returns
 [ListObjectChildrenResponseTypeDef](./type_defs.md#listobjectchildrenresponsetypedef).
 
-<a id="list_object_parent_paths"></a>
+<a id="list\_object\_parent\_paths"></a>
 
 ### list_object_parent_paths
 
@@ -1316,7 +1316,7 @@ Keyword-only arguments:
 Returns
 [ListObjectParentPathsResponseTypeDef](./type_defs.md#listobjectparentpathsresponsetypedef).
 
-<a id="list_object_parents"></a>
+<a id="list\_object\_parents"></a>
 
 ### list_object_parents
 
@@ -1346,7 +1346,7 @@ Keyword-only arguments:
 Returns
 [ListObjectParentsResponseTypeDef](./type_defs.md#listobjectparentsresponsetypedef).
 
-<a id="list_object_policies"></a>
+<a id="list\_object\_policies"></a>
 
 ### list_object_policies
 
@@ -1374,7 +1374,7 @@ Keyword-only arguments:
 Returns
 [ListObjectPoliciesResponseTypeDef](./type_defs.md#listobjectpoliciesresponsetypedef).
 
-<a id="list_outgoing_typed_links"></a>
+<a id="list\_outgoing\_typed\_links"></a>
 
 ### list_outgoing_typed_links
 
@@ -1407,7 +1407,7 @@ Keyword-only arguments:
 Returns
 [ListOutgoingTypedLinksResponseTypeDef](./type_defs.md#listoutgoingtypedlinksresponsetypedef).
 
-<a id="list_policy_attachments"></a>
+<a id="list\_policy\_attachments"></a>
 
 ### list_policy_attachments
 
@@ -1435,7 +1435,7 @@ Keyword-only arguments:
 Returns
 [ListPolicyAttachmentsResponseTypeDef](./type_defs.md#listpolicyattachmentsresponsetypedef).
 
-<a id="list_published_schema_arns"></a>
+<a id="list\_published\_schema\_arns"></a>
 
 ### list_published_schema_arns
 
@@ -1459,7 +1459,7 @@ Keyword-only arguments:
 Returns
 [ListPublishedSchemaArnsResponseTypeDef](./type_defs.md#listpublishedschemaarnsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1483,7 +1483,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_typed_link_facet_attributes"></a>
+<a id="list\_typed\_link\_facet\_attributes"></a>
 
 ### list_typed_link_facet_attributes
 
@@ -1509,7 +1509,7 @@ Keyword-only arguments:
 Returns
 [ListTypedLinkFacetAttributesResponseTypeDef](./type_defs.md#listtypedlinkfacetattributesresponsetypedef).
 
-<a id="list_typed_link_facet_names"></a>
+<a id="list\_typed\_link\_facet\_names"></a>
 
 ### list_typed_link_facet_names
 
@@ -1533,7 +1533,7 @@ Keyword-only arguments:
 Returns
 [ListTypedLinkFacetNamesResponseTypeDef](./type_defs.md#listtypedlinkfacetnamesresponsetypedef).
 
-<a id="lookup_policy"></a>
+<a id="lookup\_policy"></a>
 
 ### lookup_policy
 
@@ -1558,7 +1558,7 @@ Keyword-only arguments:
 Returns
 [LookupPolicyResponseTypeDef](./type_defs.md#lookuppolicyresponsetypedef).
 
-<a id="publish_schema"></a>
+<a id="publish\_schema"></a>
 
 ### publish_schema
 
@@ -1583,7 +1583,7 @@ Keyword-only arguments:
 Returns
 [PublishSchemaResponseTypeDef](./type_defs.md#publishschemaresponsetypedef).
 
-<a id="put_schema_from_json"></a>
+<a id="put\_schema\_from\_json"></a>
 
 ### put_schema_from_json
 
@@ -1606,7 +1606,7 @@ Keyword-only arguments:
 Returns
 [PutSchemaFromJsonResponseTypeDef](./type_defs.md#putschemafromjsonresponsetypedef).
 
-<a id="remove_facet_from_object"></a>
+<a id="remove\_facet\_from\_object"></a>
 
 ### remove_facet_from_object
 
@@ -1631,7 +1631,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1652,7 +1652,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1673,7 +1673,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_facet"></a>
+<a id="update\_facet"></a>
 
 ### update_facet
 
@@ -1697,7 +1697,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_link_attributes"></a>
+<a id="update\_link\_attributes"></a>
 
 ### update_link_attributes
 
@@ -1724,7 +1724,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_object_attributes"></a>
+<a id="update\_object\_attributes"></a>
 
 ### update_object_attributes
 
@@ -1751,7 +1751,7 @@ Keyword-only arguments:
 Returns
 [UpdateObjectAttributesResponseTypeDef](./type_defs.md#updateobjectattributesresponsetypedef).
 
-<a id="update_schema"></a>
+<a id="update\_schema"></a>
 
 ### update_schema
 
@@ -1773,7 +1773,7 @@ Keyword-only arguments:
 Returns
 [UpdateSchemaResponseTypeDef](./type_defs.md#updateschemaresponsetypedef).
 
-<a id="update_typed_link_facet"></a>
+<a id="update\_typed\_link\_facet"></a>
 
 ### update_typed_link_facet
 
@@ -1799,7 +1799,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="upgrade_applied_schema"></a>
+<a id="upgrade\_applied\_schema"></a>
 
 ### upgrade_applied_schema
 
@@ -1824,7 +1824,7 @@ Keyword-only arguments:
 Returns
 [UpgradeAppliedSchemaResponseTypeDef](./type_defs.md#upgradeappliedschemaresponsetypedef).
 
-<a id="upgrade_published_schema"></a>
+<a id="upgrade\_published\_schema"></a>
 
 ### upgrade_published_schema
 

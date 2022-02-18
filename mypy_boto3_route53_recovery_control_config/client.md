@@ -104,7 +104,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -122,7 +122,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_cluster"></a>
+<a id="create\_cluster"></a>
 
 ### create_cluster
 
@@ -146,7 +146,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
-<a id="create_control_panel"></a>
+<a id="create\_control\_panel"></a>
 
 ### create_control_panel
 
@@ -171,7 +171,7 @@ Keyword-only arguments:
 Returns
 [CreateControlPanelResponseTypeDef](./type_defs.md#createcontrolpanelresponsetypedef).
 
-<a id="create_routing_control"></a>
+<a id="create\_routing\_control"></a>
 
 ### create_routing_control
 
@@ -197,7 +197,7 @@ Keyword-only arguments:
 Returns
 [CreateRoutingControlResponseTypeDef](./type_defs.md#createroutingcontrolresponsetypedef).
 
-<a id="create_safety_rule"></a>
+<a id="create\_safety\_rule"></a>
 
 ### create_safety_rule
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 Returns
 [CreateSafetyRuleResponseTypeDef](./type_defs.md#createsafetyruleresponsetypedef).
 
-<a id="delete_cluster"></a>
+<a id="delete\_cluster"></a>
 
 ### delete_cluster
 
@@ -244,7 +244,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_control_panel"></a>
+<a id="delete\_control\_panel"></a>
 
 ### delete_control_panel
 
@@ -265,7 +265,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_routing_control"></a>
+<a id="delete\_routing\_control"></a>
 
 ### delete_routing_control
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_safety_rule"></a>
+<a id="delete\_safety\_rule"></a>
 
 ### delete_safety_rule
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_cluster"></a>
+<a id="describe\_cluster"></a>
 
 ### describe_cluster
 
@@ -330,7 +330,7 @@ Keyword-only arguments:
 Returns
 [DescribeClusterResponseTypeDef](./type_defs.md#describeclusterresponsetypedef).
 
-<a id="describe_control_panel"></a>
+<a id="describe\_control\_panel"></a>
 
 ### describe_control_panel
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 Returns
 [DescribeControlPanelResponseTypeDef](./type_defs.md#describecontrolpanelresponsetypedef).
 
-<a id="describe_routing_control"></a>
+<a id="describe\_routing\_control"></a>
 
 ### describe_routing_control
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [DescribeRoutingControlResponseTypeDef](./type_defs.md#describeroutingcontrolresponsetypedef).
 
-<a id="describe_safety_rule"></a>
+<a id="describe\_safety\_rule"></a>
 
 ### describe_safety_rule
 
@@ -398,7 +398,7 @@ Keyword-only arguments:
 Returns
 [DescribeSafetyRuleResponseTypeDef](./type_defs.md#describesafetyruleresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -420,7 +420,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_associated_route53_health_checks"></a>
+<a id="list\_associated\_route53\_health\_checks"></a>
 
 ### list_associated_route53_health_checks
 
@@ -446,7 +446,7 @@ Keyword-only arguments:
 Returns
 [ListAssociatedRoute53HealthChecksResponseTypeDef](./type_defs.md#listassociatedroute53healthchecksresponsetypedef).
 
-<a id="list_clusters"></a>
+<a id="list\_clusters"></a>
 
 ### list_clusters
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 Returns
 [ListClustersResponseTypeDef](./type_defs.md#listclustersresponsetypedef).
 
-<a id="list_control_panels"></a>
+<a id="list\_control\_panels"></a>
 
 ### list_control_panels
 
@@ -493,7 +493,7 @@ Keyword-only arguments:
 Returns
 [ListControlPanelsResponseTypeDef](./type_defs.md#listcontrolpanelsresponsetypedef).
 
-<a id="list_routing_controls"></a>
+<a id="list\_routing\_controls"></a>
 
 ### list_routing_controls
 
@@ -517,7 +517,7 @@ Keyword-only arguments:
 Returns
 [ListRoutingControlsResponseTypeDef](./type_defs.md#listroutingcontrolsresponsetypedef).
 
-<a id="list_safety_rules"></a>
+<a id="list\_safety\_rules"></a>
 
 ### list_safety_rules
 
@@ -542,7 +542,7 @@ Keyword-only arguments:
 Returns
 [ListSafetyRulesResponseTypeDef](./type_defs.md#listsafetyrulesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -565,7 +565,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -587,7 +587,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -609,7 +609,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_control_panel"></a>
+<a id="update\_control\_panel"></a>
 
 ### update_control_panel
 
@@ -632,7 +632,7 @@ Keyword-only arguments:
 Returns
 [UpdateControlPanelResponseTypeDef](./type_defs.md#updatecontrolpanelresponsetypedef).
 
-<a id="update_routing_control"></a>
+<a id="update\_routing\_control"></a>
 
 ### update_routing_control
 
@@ -656,7 +656,7 @@ Keyword-only arguments:
 Returns
 [UpdateRoutingControlResponseTypeDef](./type_defs.md#updateroutingcontrolresponsetypedef).
 
-<a id="update_safety_rule"></a>
+<a id="update\_safety\_rule"></a>
 
 ### update_safety_rule
 

@@ -153,7 +153,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -170,7 +170,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_key_deletion"></a>
+<a id="cancel\_key\_deletion"></a>
 
 ### cancel_key_deletion
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [CancelKeyDeletionResponseTypeDef](./type_defs.md#cancelkeydeletionresponsetypedef).
 
-<a id="connect_custom_key_store"></a>
+<a id="connect\_custom\_key\_store"></a>
 
 ### connect_custom_key_store
 
@@ -213,7 +213,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_alias"></a>
+<a id="create\_alias"></a>
 
 ### create_alias
 
@@ -232,7 +232,7 @@ Keyword-only arguments:
 - `AliasName`: `str` *(required)*
 - `TargetKeyId`: `str` *(required)*
 
-<a id="create_custom_key_store"></a>
+<a id="create\_custom\_key\_store"></a>
 
 ### create_custom_key_store
 
@@ -260,7 +260,7 @@ Keyword-only arguments:
 Returns
 [CreateCustomKeyStoreResponseTypeDef](./type_defs.md#createcustomkeystoreresponsetypedef).
 
-<a id="create_grant"></a>
+<a id="create\_grant"></a>
 
 ### create_grant
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 Returns
 [CreateGrantResponseTypeDef](./type_defs.md#creategrantresponsetypedef).
 
-<a id="create_key"></a>
+<a id="create\_key"></a>
 
 ### create_key
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 
 Returns [DecryptResponseTypeDef](./type_defs.md#decryptresponsetypedef).
 
-<a id="delete_alias"></a>
+<a id="delete\_alias"></a>
 
 ### delete_alias
 
@@ -369,7 +369,7 @@ Keyword-only arguments:
 
 - `AliasName`: `str` *(required)*
 
-<a id="delete_custom_key_store"></a>
+<a id="delete\_custom\_key\_store"></a>
 
 ### delete_custom_key_store
 
@@ -391,7 +391,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_imported_key_material"></a>
+<a id="delete\_imported\_key\_material"></a>
 
 ### delete_imported_key_material
 
@@ -409,7 +409,7 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
-<a id="describe_custom_key_stores"></a>
+<a id="describe\_custom\_key\_stores"></a>
 
 ### describe_custom_key_stores
 
@@ -435,7 +435,7 @@ Keyword-only arguments:
 Returns
 [DescribeCustomKeyStoresResponseTypeDef](./type_defs.md#describecustomkeystoresresponsetypedef).
 
-<a id="describe_key"></a>
+<a id="describe\_key"></a>
 
 ### describe_key
 
@@ -457,7 +457,7 @@ Keyword-only arguments:
 Returns
 [DescribeKeyResponseTypeDef](./type_defs.md#describekeyresponsetypedef).
 
-<a id="disable_key"></a>
+<a id="disable\_key"></a>
 
 ### disable_key
 
@@ -475,7 +475,7 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
-<a id="disable_key_rotation"></a>
+<a id="disable\_key\_rotation"></a>
 
 ### disable_key_rotation
 
@@ -495,7 +495,7 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
-<a id="disconnect_custom_key_store"></a>
+<a id="disconnect\_custom\_key\_store"></a>
 
 ### disconnect_custom_key_store
 
@@ -517,7 +517,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="enable_key"></a>
+<a id="enable\_key"></a>
 
 ### enable_key
 
@@ -535,7 +535,7 @@ Keyword-only arguments:
 
 - `KeyId`: `str` *(required)*
 
-<a id="enable_key_rotation"></a>
+<a id="enable\_key\_rotation"></a>
 
 ### enable_key_rotation
 
@@ -581,7 +581,7 @@ Keyword-only arguments:
 
 Returns [EncryptResponseTypeDef](./type_defs.md#encryptresponsetypedef).
 
-<a id="generate_data_key"></a>
+<a id="generate\_data\_key"></a>
 
 ### generate_data_key
 
@@ -606,7 +606,7 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyResponseTypeDef](./type_defs.md#generatedatakeyresponsetypedef).
 
-<a id="generate_data_key_pair"></a>
+<a id="generate\_data\_key\_pair"></a>
 
 ### generate_data_key_pair
 
@@ -631,7 +631,7 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyPairResponseTypeDef](./type_defs.md#generatedatakeypairresponsetypedef).
 
-<a id="generate_data_key_pair_without_plaintext"></a>
+<a id="generate\_data\_key\_pair\_without\_plaintext"></a>
 
 ### generate_data_key_pair_without_plaintext
 
@@ -657,7 +657,7 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyPairWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeypairwithoutplaintextresponsetypedef).
 
-<a id="generate_data_key_without_plaintext"></a>
+<a id="generate\_data\_key\_without\_plaintext"></a>
 
 ### generate_data_key_without_plaintext
 
@@ -683,7 +683,7 @@ Keyword-only arguments:
 Returns
 [GenerateDataKeyWithoutPlaintextResponseTypeDef](./type_defs.md#generatedatakeywithoutplaintextresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -703,7 +703,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="generate_random"></a>
+<a id="generate\_random"></a>
 
 ### generate_random
 
@@ -725,7 +725,7 @@ Keyword-only arguments:
 Returns
 [GenerateRandomResponseTypeDef](./type_defs.md#generaterandomresponsetypedef).
 
-<a id="get_key_policy"></a>
+<a id="get\_key\_policy"></a>
 
 ### get_key_policy
 
@@ -747,7 +747,7 @@ Keyword-only arguments:
 Returns
 [GetKeyPolicyResponseTypeDef](./type_defs.md#getkeypolicyresponsetypedef).
 
-<a id="get_key_rotation_status"></a>
+<a id="get\_key\_rotation\_status"></a>
 
 ### get_key_rotation_status
 
@@ -770,7 +770,7 @@ Keyword-only arguments:
 Returns
 [GetKeyRotationStatusResponseTypeDef](./type_defs.md#getkeyrotationstatusresponsetypedef).
 
-<a id="get_parameters_for_import"></a>
+<a id="get\_parameters\_for\_import"></a>
 
 ### get_parameters_for_import
 
@@ -796,7 +796,7 @@ Keyword-only arguments:
 Returns
 [GetParametersForImportResponseTypeDef](./type_defs.md#getparametersforimportresponsetypedef).
 
-<a id="get_public_key"></a>
+<a id="get\_public\_key"></a>
 
 ### get_public_key
 
@@ -818,7 +818,7 @@ Keyword-only arguments:
 Returns
 [GetPublicKeyResponseTypeDef](./type_defs.md#getpublickeyresponsetypedef).
 
-<a id="import_key_material"></a>
+<a id="import\_key\_material"></a>
 
 ### import_key_material
 
@@ -846,7 +846,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="list_aliases"></a>
+<a id="list\_aliases"></a>
 
 ### list_aliases
 
@@ -869,7 +869,7 @@ Keyword-only arguments:
 Returns
 [ListAliasesResponseTypeDef](./type_defs.md#listaliasesresponsetypedef).
 
-<a id="list_grants"></a>
+<a id="list\_grants"></a>
 
 ### list_grants
 
@@ -893,7 +893,7 @@ Keyword-only arguments:
 
 Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
-<a id="list_key_policies"></a>
+<a id="list\_key\_policies"></a>
 
 ### list_key_policies
 
@@ -916,7 +916,7 @@ Keyword-only arguments:
 Returns
 [ListKeyPoliciesResponseTypeDef](./type_defs.md#listkeypoliciesresponsetypedef).
 
-<a id="list_keys"></a>
+<a id="list\_keys"></a>
 
 ### list_keys
 
@@ -938,7 +938,7 @@ Keyword-only arguments:
 
 Returns [ListKeysResponseTypeDef](./type_defs.md#listkeysresponsetypedef).
 
-<a id="list_resource_tags"></a>
+<a id="list\_resource\_tags"></a>
 
 ### list_resource_tags
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 Returns
 [ListResourceTagsResponseTypeDef](./type_defs.md#listresourcetagsresponsetypedef).
 
-<a id="list_retirable_grants"></a>
+<a id="list\_retirable\_grants"></a>
 
 ### list_retirable_grants
 
@@ -984,7 +984,7 @@ Keyword-only arguments:
 
 Returns [ListGrantsResponseTypeDef](./type_defs.md#listgrantsresponsetypedef).
 
-<a id="put_key_policy"></a>
+<a id="put\_key\_policy"></a>
 
 ### put_key_policy
 
@@ -1005,7 +1005,7 @@ Keyword-only arguments:
 - `Policy`: `str` *(required)*
 - `BypassPolicyLockoutSafetyCheck`: `bool`
 
-<a id="re_encrypt"></a>
+<a id="re\_encrypt"></a>
 
 ### re_encrypt
 
@@ -1035,7 +1035,7 @@ Keyword-only arguments:
 
 Returns [ReEncryptResponseTypeDef](./type_defs.md#reencryptresponsetypedef).
 
-<a id="replicate_key"></a>
+<a id="replicate\_key"></a>
 
 ### replicate_key
 
@@ -1061,7 +1061,7 @@ Keyword-only arguments:
 Returns
 [ReplicateKeyResponseTypeDef](./type_defs.md#replicatekeyresponsetypedef).
 
-<a id="retire_grant"></a>
+<a id="retire\_grant"></a>
 
 ### retire_grant
 
@@ -1081,7 +1081,7 @@ Keyword-only arguments:
 - `KeyId`: `str`
 - `GrantId`: `str`
 
-<a id="revoke_grant"></a>
+<a id="revoke\_grant"></a>
 
 ### revoke_grant
 
@@ -1100,7 +1100,7 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `GrantId`: `str` *(required)*
 
-<a id="schedule_key_deletion"></a>
+<a id="schedule\_key\_deletion"></a>
 
 ### schedule_key_deletion
 
@@ -1150,7 +1150,7 @@ Keyword-only arguments:
 
 Returns [SignResponseTypeDef](./type_defs.md#signresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1171,7 +1171,7 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1192,7 +1192,7 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_alias"></a>
+<a id="update\_alias"></a>
 
 ### update_alias
 
@@ -1211,7 +1211,7 @@ Keyword-only arguments:
 - `AliasName`: `str` *(required)*
 - `TargetKeyId`: `str` *(required)*
 
-<a id="update_custom_key_store"></a>
+<a id="update\_custom\_key\_store"></a>
 
 ### update_custom_key_store
 
@@ -1234,7 +1234,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_key_description"></a>
+<a id="update\_key\_description"></a>
 
 ### update_key_description
 
@@ -1253,7 +1253,7 @@ Keyword-only arguments:
 - `KeyId`: `str` *(required)*
 - `Description`: `str` *(required)*
 
-<a id="update_primary_region"></a>
+<a id="update\_primary\_region"></a>
 
 ### update_primary_region
 

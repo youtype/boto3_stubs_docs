@@ -84,7 +84,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -101,7 +101,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_session"></a>
+<a id="delete\_session"></a>
 
 ### delete_session
 
@@ -125,7 +125,7 @@ Keyword-only arguments:
 Returns
 [DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -146,7 +146,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_session"></a>
+<a id="get\_session"></a>
 
 ### get_session
 
@@ -169,7 +169,7 @@ Keyword-only arguments:
 
 Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
-<a id="put_session"></a>
+<a id="put\_session"></a>
 
 ### put_session
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 
 Returns [PutSessionResponseTypeDef](./type_defs.md#putsessionresponsetypedef).
 
-<a id="recognize_text"></a>
+<a id="recognize\_text"></a>
 
 ### recognize_text
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 Returns
 [RecognizeTextResponseTypeDef](./type_defs.md#recognizetextresponsetypedef).
 
-<a id="recognize_utterance"></a>
+<a id="recognize\_utterance"></a>
 
 ### recognize_utterance
 

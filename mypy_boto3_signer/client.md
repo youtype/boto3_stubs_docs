@@ -100,7 +100,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_profile_permission"></a>
+<a id="add\_profile\_permission"></a>
 
 ### add_profile_permission
 
@@ -126,7 +126,7 @@ Keyword-only arguments:
 Returns
 [AddProfilePermissionResponseTypeDef](./type_defs.md#addprofilepermissionresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -143,7 +143,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_signing_profile"></a>
+<a id="cancel\_signing\_profile"></a>
 
 ### cancel_signing_profile
 
@@ -161,7 +161,7 @@ Keyword-only arguments:
 
 - `profileName`: `str` *(required)*
 
-<a id="describe_signing_job"></a>
+<a id="describe\_signing\_job"></a>
 
 ### describe_signing_job
 
@@ -182,7 +182,7 @@ Keyword-only arguments:
 Returns
 [DescribeSigningJobResponseTypeDef](./type_defs.md#describesigningjobresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -202,7 +202,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_signing_platform"></a>
+<a id="get\_signing\_platform"></a>
 
 ### get_signing_platform
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 Returns
 [GetSigningPlatformResponseTypeDef](./type_defs.md#getsigningplatformresponsetypedef).
 
-<a id="get_signing_profile"></a>
+<a id="get\_signing\_profile"></a>
 
 ### get_signing_profile
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 Returns
 [GetSigningProfileResponseTypeDef](./type_defs.md#getsigningprofileresponsetypedef).
 
-<a id="list_profile_permissions"></a>
+<a id="list\_profile\_permissions"></a>
 
 ### list_profile_permissions
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 Returns
 [ListProfilePermissionsResponseTypeDef](./type_defs.md#listprofilepermissionsresponsetypedef).
 
-<a id="list_signing_jobs"></a>
+<a id="list\_signing\_jobs"></a>
 
 ### list_signing_jobs
 
@@ -296,7 +296,7 @@ Keyword-only arguments:
 Returns
 [ListSigningJobsResponseTypeDef](./type_defs.md#listsigningjobsresponsetypedef).
 
-<a id="list_signing_platforms"></a>
+<a id="list\_signing\_platforms"></a>
 
 ### list_signing_platforms
 
@@ -322,7 +322,7 @@ Keyword-only arguments:
 Returns
 [ListSigningPlatformsResponseTypeDef](./type_defs.md#listsigningplatformsresponsetypedef).
 
-<a id="list_signing_profiles"></a>
+<a id="list\_signing\_profiles"></a>
 
 ### list_signing_profiles
 
@@ -348,7 +348,7 @@ Keyword-only arguments:
 Returns
 [ListSigningProfilesResponseTypeDef](./type_defs.md#listsigningprofilesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -369,7 +369,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_signing_profile"></a>
+<a id="put\_signing\_profile"></a>
 
 ### put_signing_profile
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 Returns
 [PutSigningProfileResponseTypeDef](./type_defs.md#putsigningprofileresponsetypedef).
 
-<a id="remove_profile_permission"></a>
+<a id="remove\_profile\_permission"></a>
 
 ### remove_profile_permission
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 Returns
 [RemoveProfilePermissionResponseTypeDef](./type_defs.md#removeprofilepermissionresponsetypedef).
 
-<a id="revoke_signature"></a>
+<a id="revoke\_signature"></a>
 
 ### revoke_signature
 
@@ -442,7 +442,7 @@ Keyword-only arguments:
 - `reason`: `str` *(required)*
 - `jobOwner`: `str`
 
-<a id="revoke_signing_profile"></a>
+<a id="revoke\_signing\_profile"></a>
 
 ### revoke_signing_profile
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 - `reason`: `str` *(required)*
 - `effectiveTime`: `Union`\[`datetime`, `str`\] *(required)*
 
-<a id="start_signing_job"></a>
+<a id="start\_signing\_job"></a>
 
 ### start_signing_job
 
@@ -489,7 +489,7 @@ Keyword-only arguments:
 Returns
 [StartSigningJobResponseTypeDef](./type_defs.md#startsigningjobresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_services"></a>
+<a id="describe\_services"></a>
 
 ### describe_services
 
@@ -122,7 +122,7 @@ Keyword-only arguments:
 Returns
 [DescribeServicesResponseTypeDef](./type_defs.md#describeservicesresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -142,7 +142,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_attribute_values"></a>
+<a id="get\_attribute\_values"></a>
 
 ### get_attribute_values
 
@@ -166,7 +166,7 @@ Keyword-only arguments:
 Returns
 [GetAttributeValuesResponseTypeDef](./type_defs.md#getattributevaluesresponsetypedef).
 
-<a id="get_products"></a>
+<a id="get\_products"></a>
 
 ### get_products
 

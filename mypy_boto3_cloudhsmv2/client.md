@@ -93,7 +93,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -110,7 +110,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="copy_backup_to_region"></a>
+<a id="copy\_backup\_to\_region"></a>
 
 ### copy_backup_to_region
 
@@ -133,7 +133,7 @@ Keyword-only arguments:
 Returns
 [CopyBackupToRegionResponseTypeDef](./type_defs.md#copybackuptoregionresponsetypedef).
 
-<a id="create_cluster"></a>
+<a id="create\_cluster"></a>
 
 ### create_cluster
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
-<a id="create_hsm"></a>
+<a id="create\_hsm"></a>
 
 ### create_hsm
 
@@ -182,7 +182,7 @@ Keyword-only arguments:
 
 Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
-<a id="delete_backup"></a>
+<a id="delete\_backup"></a>
 
 ### delete_backup
 
@@ -203,7 +203,7 @@ Keyword-only arguments:
 Returns
 [DeleteBackupResponseTypeDef](./type_defs.md#deletebackupresponsetypedef).
 
-<a id="delete_cluster"></a>
+<a id="delete\_cluster"></a>
 
 ### delete_cluster
 
@@ -224,7 +224,7 @@ Keyword-only arguments:
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
-<a id="delete_hsm"></a>
+<a id="delete\_hsm"></a>
 
 ### delete_hsm
 
@@ -247,7 +247,7 @@ Keyword-only arguments:
 
 Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 
-<a id="describe_backups"></a>
+<a id="describe\_backups"></a>
 
 ### describe_backups
 
@@ -271,7 +271,7 @@ Keyword-only arguments:
 Returns
 [DescribeBackupsResponseTypeDef](./type_defs.md#describebackupsresponsetypedef).
 
-<a id="describe_clusters"></a>
+<a id="describe\_clusters"></a>
 
 ### describe_clusters
 
@@ -294,7 +294,7 @@ Keyword-only arguments:
 Returns
 [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -315,7 +315,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="initialize_cluster"></a>
+<a id="initialize\_cluster"></a>
 
 ### initialize_cluster
 
@@ -339,7 +339,7 @@ Keyword-only arguments:
 Returns
 [InitializeClusterResponseTypeDef](./type_defs.md#initializeclusterresponsetypedef).
 
-<a id="list_tags"></a>
+<a id="list\_tags"></a>
 
 ### list_tags
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
-<a id="modify_backup_attributes"></a>
+<a id="modify\_backup\_attributes"></a>
 
 ### modify_backup_attributes
 
@@ -384,7 +384,7 @@ Keyword-only arguments:
 Returns
 [ModifyBackupAttributesResponseTypeDef](./type_defs.md#modifybackupattributesresponsetypedef).
 
-<a id="modify_cluster"></a>
+<a id="modify\_cluster"></a>
 
 ### modify_cluster
 
@@ -408,7 +408,7 @@ Keyword-only arguments:
 Returns
 [ModifyClusterResponseTypeDef](./type_defs.md#modifyclusterresponsetypedef).
 
-<a id="restore_backup"></a>
+<a id="restore\_backup"></a>
 
 ### restore_backup
 
@@ -430,7 +430,7 @@ Keyword-only arguments:
 Returns
 [RestoreBackupResponseTypeDef](./type_defs.md#restorebackupresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -451,7 +451,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

@@ -118,7 +118,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_check_layer_availability"></a>
+<a id="batch\_check\_layer\_availability"></a>
 
 ### batch_check_layer_availability
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 Returns
 [BatchCheckLayerAvailabilityResponseTypeDef](./type_defs.md#batchchecklayeravailabilityresponsetypedef).
 
-<a id="batch_delete_image"></a>
+<a id="batch\_delete\_image"></a>
 
 ### batch_delete_image
 
@@ -168,7 +168,7 @@ Keyword-only arguments:
 Returns
 [BatchDeleteImageResponseTypeDef](./type_defs.md#batchdeleteimageresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -185,7 +185,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="complete_layer_upload"></a>
+<a id="complete\_layer\_upload"></a>
 
 ### complete_layer_upload
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 Returns
 [CompleteLayerUploadResponseTypeDef](./type_defs.md#completelayeruploadresponsetypedef).
 
-<a id="create_repository"></a>
+<a id="create\_repository"></a>
 
 ### create_repository
 
@@ -234,7 +234,7 @@ Keyword-only arguments:
 Returns
 [CreateRepositoryResponseTypeDef](./type_defs.md#createrepositoryresponsetypedef).
 
-<a id="delete_repository"></a>
+<a id="delete\_repository"></a>
 
 ### delete_repository
 
@@ -257,7 +257,7 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryResponseTypeDef](./type_defs.md#deleterepositoryresponsetypedef).
 
-<a id="delete_repository_policy"></a>
+<a id="delete\_repository\_policy"></a>
 
 ### delete_repository_policy
 
@@ -280,7 +280,7 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryPolicyResponseTypeDef](./type_defs.md#deleterepositorypolicyresponsetypedef).
 
-<a id="describe_image_tags"></a>
+<a id="describe\_image\_tags"></a>
 
 ### describe_image_tags
 
@@ -304,7 +304,7 @@ Keyword-only arguments:
 Returns
 [DescribeImageTagsResponseTypeDef](./type_defs.md#describeimagetagsresponsetypedef).
 
-<a id="describe_images"></a>
+<a id="describe\_images"></a>
 
 ### describe_images
 
@@ -330,7 +330,7 @@ Keyword-only arguments:
 Returns
 [DescribeImagesResponseTypeDef](./type_defs.md#describeimagesresponsetypedef).
 
-<a id="describe_registries"></a>
+<a id="describe\_registries"></a>
 
 ### describe_registries
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 Returns
 [DescribeRegistriesResponseTypeDef](./type_defs.md#describeregistriesresponsetypedef).
 
-<a id="describe_repositories"></a>
+<a id="describe\_repositories"></a>
 
 ### describe_repositories
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [DescribeRepositoriesResponseTypeDef](./type_defs.md#describerepositoriesresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -397,7 +397,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_authorization_token"></a>
+<a id="get\_authorization\_token"></a>
 
 ### get_authorization_token
 
@@ -412,7 +412,7 @@ Boto3 documentation:
 Returns
 [GetAuthorizationTokenResponseTypeDef](./type_defs.md#getauthorizationtokenresponsetypedef).
 
-<a id="get_registry_catalog_data"></a>
+<a id="get\_registry\_catalog\_data"></a>
 
 ### get_registry_catalog_data
 
@@ -427,7 +427,7 @@ Boto3 documentation:
 Returns
 [GetRegistryCatalogDataResponseTypeDef](./type_defs.md#getregistrycatalogdataresponsetypedef).
 
-<a id="get_repository_catalog_data"></a>
+<a id="get\_repository\_catalog\_data"></a>
 
 ### get_repository_catalog_data
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 Returns
 [GetRepositoryCatalogDataResponseTypeDef](./type_defs.md#getrepositorycatalogdataresponsetypedef).
 
-<a id="get_repository_policy"></a>
+<a id="get\_repository\_policy"></a>
 
 ### get_repository_policy
 
@@ -472,7 +472,7 @@ Keyword-only arguments:
 Returns
 [GetRepositoryPolicyResponseTypeDef](./type_defs.md#getrepositorypolicyresponsetypedef).
 
-<a id="initiate_layer_upload"></a>
+<a id="initiate\_layer\_upload"></a>
 
 ### initiate_layer_upload
 
@@ -494,7 +494,7 @@ Keyword-only arguments:
 Returns
 [InitiateLayerUploadResponseTypeDef](./type_defs.md#initiatelayeruploadresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -516,7 +516,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_image"></a>
+<a id="put\_image"></a>
 
 ### put_image
 
@@ -541,7 +541,7 @@ Keyword-only arguments:
 
 Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
 
-<a id="put_registry_catalog_data"></a>
+<a id="put\_registry\_catalog\_data"></a>
 
 ### put_registry_catalog_data
 
@@ -563,7 +563,7 @@ Keyword-only arguments:
 Returns
 [PutRegistryCatalogDataResponseTypeDef](./type_defs.md#putregistrycatalogdataresponsetypedef).
 
-<a id="put_repository_catalog_data"></a>
+<a id="put\_repository\_catalog\_data"></a>
 
 ### put_repository_catalog_data
 
@@ -589,7 +589,7 @@ Keyword-only arguments:
 Returns
 [PutRepositoryCatalogDataResponseTypeDef](./type_defs.md#putrepositorycatalogdataresponsetypedef).
 
-<a id="set_repository_policy"></a>
+<a id="set\_repository\_policy"></a>
 
 ### set_repository_policy
 
@@ -614,7 +614,7 @@ Keyword-only arguments:
 Returns
 [SetRepositoryPolicyResponseTypeDef](./type_defs.md#setrepositorypolicyresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -635,7 +635,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -656,7 +656,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="upload_layer_part"></a>
+<a id="upload\_layer\_part"></a>
 
 ### upload_layer_part
 

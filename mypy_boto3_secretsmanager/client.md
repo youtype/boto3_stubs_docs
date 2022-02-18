@@ -106,7 +106,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -123,7 +123,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_rotate_secret"></a>
+<a id="cancel\_rotate\_secret"></a>
 
 ### cancel_rotate_secret
 
@@ -146,7 +146,7 @@ Keyword-only arguments:
 Returns
 [CancelRotateSecretResponseTypeDef](./type_defs.md#cancelrotatesecretresponsetypedef).
 
-<a id="create_secret"></a>
+<a id="create\_secret"></a>
 
 ### create_secret
 
@@ -176,7 +176,7 @@ Keyword-only arguments:
 Returns
 [CreateSecretResponseTypeDef](./type_defs.md#createsecretresponsetypedef).
 
-<a id="delete_resource_policy"></a>
+<a id="delete\_resource\_policy"></a>
 
 ### delete_resource_policy
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 Returns
 [DeleteResourcePolicyResponseTypeDef](./type_defs.md#deleteresourcepolicyresponsetypedef).
 
-<a id="delete_secret"></a>
+<a id="delete\_secret"></a>
 
 ### delete_secret
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [DeleteSecretResponseTypeDef](./type_defs.md#deletesecretresponsetypedef).
 
-<a id="describe_secret"></a>
+<a id="describe\_secret"></a>
 
 ### describe_secret
 
@@ -242,7 +242,7 @@ Keyword-only arguments:
 Returns
 [DescribeSecretResponseTypeDef](./type_defs.md#describesecretresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -263,7 +263,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_random_password"></a>
+<a id="get\_random\_password"></a>
 
 ### get_random_password
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 Returns
 [GetRandomPasswordResponseTypeDef](./type_defs.md#getrandompasswordresponsetypedef).
 
-<a id="get_resource_policy"></a>
+<a id="get\_resource\_policy"></a>
 
 ### get_resource_policy
 
@@ -315,7 +315,7 @@ Keyword-only arguments:
 Returns
 [GetResourcePolicyResponseTypeDef](./type_defs.md#getresourcepolicyresponsetypedef).
 
-<a id="get_secret_value"></a>
+<a id="get\_secret\_value"></a>
 
 ### get_secret_value
 
@@ -339,7 +339,7 @@ Keyword-only arguments:
 Returns
 [GetSecretValueResponseTypeDef](./type_defs.md#getsecretvalueresponsetypedef).
 
-<a id="list_secret_version_ids"></a>
+<a id="list\_secret\_version\_ids"></a>
 
 ### list_secret_version_ids
 
@@ -364,7 +364,7 @@ Keyword-only arguments:
 Returns
 [ListSecretVersionIdsResponseTypeDef](./type_defs.md#listsecretversionidsresponsetypedef).
 
-<a id="list_secrets"></a>
+<a id="list\_secrets"></a>
 
 ### list_secrets
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 Returns
 [ListSecretsResponseTypeDef](./type_defs.md#listsecretsresponsetypedef).
 
-<a id="put_resource_policy"></a>
+<a id="put\_resource\_policy"></a>
 
 ### put_resource_policy
 
@@ -412,7 +412,7 @@ Keyword-only arguments:
 Returns
 [PutResourcePolicyResponseTypeDef](./type_defs.md#putresourcepolicyresponsetypedef).
 
-<a id="put_secret_value"></a>
+<a id="put\_secret\_value"></a>
 
 ### put_secret_value
 
@@ -438,7 +438,7 @@ Keyword-only arguments:
 Returns
 [PutSecretValueResponseTypeDef](./type_defs.md#putsecretvalueresponsetypedef).
 
-<a id="remove_regions_from_replication"></a>
+<a id="remove\_regions\_from\_replication"></a>
 
 ### remove_regions_from_replication
 
@@ -462,7 +462,7 @@ Keyword-only arguments:
 Returns
 [RemoveRegionsFromReplicationResponseTypeDef](./type_defs.md#removeregionsfromreplicationresponsetypedef).
 
-<a id="replicate_secret_to_regions"></a>
+<a id="replicate\_secret\_to\_regions"></a>
 
 ### replicate_secret_to_regions
 
@@ -488,7 +488,7 @@ Keyword-only arguments:
 Returns
 [ReplicateSecretToRegionsResponseTypeDef](./type_defs.md#replicatesecrettoregionsresponsetypedef).
 
-<a id="restore_secret"></a>
+<a id="restore\_secret"></a>
 
 ### restore_secret
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 Returns
 [RestoreSecretResponseTypeDef](./type_defs.md#restoresecretresponsetypedef).
 
-<a id="rotate_secret"></a>
+<a id="rotate\_secret"></a>
 
 ### rotate_secret
 
@@ -536,7 +536,7 @@ Keyword-only arguments:
 Returns
 [RotateSecretResponseTypeDef](./type_defs.md#rotatesecretresponsetypedef).
 
-<a id="stop_replication_to_replica"></a>
+<a id="stop\_replication\_to\_replica"></a>
 
 ### stop_replication_to_replica
 
@@ -559,7 +559,7 @@ Keyword-only arguments:
 Returns
 [StopReplicationToReplicaResponseTypeDef](./type_defs.md#stopreplicationtoreplicaresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -578,7 +578,7 @@ Keyword-only arguments:
 - `SecretId`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -597,7 +597,7 @@ Keyword-only arguments:
 - `SecretId`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_secret"></a>
+<a id="update\_secret"></a>
 
 ### update_secret
 
@@ -623,7 +623,7 @@ Keyword-only arguments:
 Returns
 [UpdateSecretResponseTypeDef](./type_defs.md#updatesecretresponsetypedef).
 
-<a id="update_secret_version_stage"></a>
+<a id="update\_secret\_version\_stage"></a>
 
 ### update_secret_version_stage
 
@@ -648,7 +648,7 @@ Keyword-only arguments:
 Returns
 [UpdateSecretVersionStageResponseTypeDef](./type_defs.md#updatesecretversionstageresponsetypedef).
 
-<a id="validate_resource_policy"></a>
+<a id="validate\_resource\_policy"></a>
 
 ### validate_resource_policy
 

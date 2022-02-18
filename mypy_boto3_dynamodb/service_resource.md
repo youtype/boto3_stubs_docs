@@ -99,7 +99,7 @@ Arguments:
 
 Returns [Table](#table).
 
-<a id="dynamodbserviceresourcebatch_get_item-method"></a>
+<a id="dynamodbserviceresourcebatch\_get\_item-method"></a>
 
 ### DynamoDBServiceResource.batch_get_item method
 
@@ -124,7 +124,7 @@ Keyword-only arguments:
 
 Returns [BatchGetItemOutputTypeDef](./type_defs.md#batchgetitemoutputtypedef).
 
-<a id="dynamodbserviceresourcebatch_write_item-method"></a>
+<a id="dynamodbserviceresourcebatch\_write\_item-method"></a>
 
 ### DynamoDBServiceResource.batch_write_item method
 
@@ -152,7 +152,7 @@ Keyword-only arguments:
 Returns
 [BatchWriteItemOutputTypeDef](./type_defs.md#batchwriteitemoutputtypedef).
 
-<a id="dynamodbserviceresourcecreate_table-method"></a>
+<a id="dynamodbserviceresourcecreate\_table-method"></a>
 
 ### DynamoDBServiceResource.create_table method
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 
 Returns [Table](#table).
 
-<a id="dynamodbserviceresourceget_available_subresources-method"></a>
+<a id="dynamodbserviceresourceget\_available\_subresources-method"></a>
 
 ### DynamoDBServiceResource.get_available_subresources method
 
@@ -267,7 +267,7 @@ Boto3 documentation:
 
 ### Table methods
 
-<a id="tablebatch_writer-method"></a>
+<a id="tablebatch\_writer-method"></a>
 
 #### Table.batch_writer method
 
@@ -300,7 +300,7 @@ Boto3 documentation:
 
 Returns [DeleteTableOutputTypeDef](./type_defs.md#deletetableoutputtypedef).
 
-<a id="tabledelete_item-method"></a>
+<a id="tabledelete\_item-method"></a>
 
 #### Table.delete_item method
 
@@ -338,7 +338,7 @@ Keyword-only arguments:
 
 Returns [DeleteItemOutputTypeDef](./type_defs.md#deleteitemoutputtypedef).
 
-<a id="tableget_available_subresources-method"></a>
+<a id="tableget\_available\_subresources-method"></a>
 
 #### Table.get_available_subresources method
 
@@ -352,7 +352,7 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
-<a id="tableget_item-method"></a>
+<a id="tableget\_item-method"></a>
 
 #### Table.get_item method
 
@@ -394,7 +394,7 @@ Type annotations for `boto3.resource("dynamodb").load` method.
 Boto3 documentation:
 [DynamoDB.Table.load](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.load)
 
-<a id="tableput_item-method"></a>
+<a id="tableput\_item-method"></a>
 
 #### Table.put_item method
 
@@ -568,7 +568,7 @@ Keyword-only arguments:
 
 Returns [Table](#table).
 
-<a id="tableupdate_item-method"></a>
+<a id="tableupdate\_item-method"></a>
 
 #### Table.update_item method
 
@@ -610,7 +610,7 @@ Keyword-only arguments:
 
 Returns [UpdateItemOutputTypeDef](./type_defs.md#updateitemoutputtypedef).
 
-<a id="tablewait_until_exists-method"></a>
+<a id="tablewait\_until\_exists-method"></a>
 
 #### Table.wait_until_exists method
 
@@ -621,7 +621,7 @@ Type annotations for `boto3.resource("dynamodb").wait_until_exists` method.
 Boto3 documentation:
 [DynamoDB.Table.wait_until_exists](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dynamodb.html#DynamoDB.Table.wait_until_exists)
 
-<a id="tablewait_until_not_exists-method"></a>
+<a id="tablewait\_until\_not\_exists-method"></a>
 
 #### Table.wait_until_not_exists method
 

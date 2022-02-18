@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [SimpleDBClient](#simpledbclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `SimpleDB` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[sdb]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[sdb]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-sdb
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-sdb
 ```bash
 python -m pip uninstall -y mypy-boto3-sdb
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="simpledbclient"></a>
 

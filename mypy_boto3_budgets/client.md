@@ -103,7 +103,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -120,7 +120,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_budget"></a>
+<a id="create\_budget"></a>
 
 ### create_budget
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_budget_action"></a>
+<a id="create\_budget\_action"></a>
 
 ### create_budget_action
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 Returns
 [CreateBudgetActionResponseTypeDef](./type_defs.md#createbudgetactionresponsetypedef).
 
-<a id="create_notification"></a>
+<a id="create\_notification"></a>
 
 ### create_notification
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_subscriber"></a>
+<a id="create\_subscriber"></a>
 
 ### create_subscriber
 
@@ -229,7 +229,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_budget"></a>
+<a id="delete\_budget"></a>
 
 ### delete_budget
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_budget_action"></a>
+<a id="delete\_budget\_action"></a>
 
 ### delete_budget_action
 
@@ -273,7 +273,7 @@ Keyword-only arguments:
 Returns
 [DeleteBudgetActionResponseTypeDef](./type_defs.md#deletebudgetactionresponsetypedef).
 
-<a id="delete_notification"></a>
+<a id="delete\_notification"></a>
 
 ### delete_notification
 
@@ -296,7 +296,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_subscriber"></a>
+<a id="delete\_subscriber"></a>
 
 ### delete_subscriber
 
@@ -321,7 +321,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_budget"></a>
+<a id="describe\_budget"></a>
 
 ### describe_budget
 
@@ -343,7 +343,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetResponseTypeDef](./type_defs.md#describebudgetresponsetypedef).
 
-<a id="describe_budget_action"></a>
+<a id="describe\_budget\_action"></a>
 
 ### describe_budget_action
 
@@ -366,7 +366,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetActionResponseTypeDef](./type_defs.md#describebudgetactionresponsetypedef).
 
-<a id="describe_budget_action_histories"></a>
+<a id="describe\_budget\_action\_histories"></a>
 
 ### describe_budget_action_histories
 
@@ -393,7 +393,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetActionHistoriesResponseTypeDef](./type_defs.md#describebudgetactionhistoriesresponsetypedef).
 
-<a id="describe_budget_actions_for_account"></a>
+<a id="describe\_budget\_actions\_for\_account"></a>
 
 ### describe_budget_actions_for_account
 
@@ -417,7 +417,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetActionsForAccountResponseTypeDef](./type_defs.md#describebudgetactionsforaccountresponsetypedef).
 
-<a id="describe_budget_actions_for_budget"></a>
+<a id="describe\_budget\_actions\_for\_budget"></a>
 
 ### describe_budget_actions_for_budget
 
@@ -442,7 +442,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef).
 
-<a id="describe_budget_performance_history"></a>
+<a id="describe\_budget\_performance\_history"></a>
 
 ### describe_budget_performance_history
 
@@ -468,7 +468,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetPerformanceHistoryResponseTypeDef](./type_defs.md#describebudgetperformancehistoryresponsetypedef).
 
-<a id="describe_budgets"></a>
+<a id="describe\_budgets"></a>
 
 ### describe_budgets
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetsResponseTypeDef](./type_defs.md#describebudgetsresponsetypedef).
 
-<a id="describe_notifications_for_budget"></a>
+<a id="describe\_notifications\_for\_budget"></a>
 
 ### describe_notifications_for_budget
 
@@ -516,7 +516,7 @@ Keyword-only arguments:
 Returns
 [DescribeNotificationsForBudgetResponseTypeDef](./type_defs.md#describenotificationsforbudgetresponsetypedef).
 
-<a id="describe_subscribers_for_notification"></a>
+<a id="describe\_subscribers\_for\_notification"></a>
 
 ### describe_subscribers_for_notification
 
@@ -543,7 +543,7 @@ Keyword-only arguments:
 Returns
 [DescribeSubscribersForNotificationResponseTypeDef](./type_defs.md#describesubscribersfornotificationresponsetypedef).
 
-<a id="execute_budget_action"></a>
+<a id="execute\_budget\_action"></a>
 
 ### execute_budget_action
 
@@ -568,7 +568,7 @@ Keyword-only arguments:
 Returns
 [ExecuteBudgetActionResponseTypeDef](./type_defs.md#executebudgetactionresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -588,7 +588,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="update_budget"></a>
+<a id="update\_budget"></a>
 
 ### update_budget
 
@@ -609,7 +609,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_budget_action"></a>
+<a id="update\_budget\_action"></a>
 
 ### update_budget_action
 
@@ -641,7 +641,7 @@ Keyword-only arguments:
 Returns
 [UpdateBudgetActionResponseTypeDef](./type_defs.md#updatebudgetactionresponsetypedef).
 
-<a id="update_notification"></a>
+<a id="update\_notification"></a>
 
 ### update_notification
 
@@ -666,7 +666,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_subscriber"></a>
+<a id="update\_subscriber"></a>
 
 ### update_subscriber
 

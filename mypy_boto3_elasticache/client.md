@@ -205,7 +205,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_tags_to_resource"></a>
+<a id="add\_tags\_to\_resource"></a>
 
 ### add_tags_to_resource
 
@@ -226,7 +226,7 @@ Keyword-only arguments:
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
-<a id="authorize_cache_security_group_ingress"></a>
+<a id="authorize\_cache\_security\_group\_ingress"></a>
 
 ### authorize_cache_security_group_ingress
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 Returns
 [AuthorizeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#authorizecachesecuritygroupingressresulttypedef).
 
-<a id="batch_apply_update_action"></a>
+<a id="batch\_apply\_update\_action"></a>
 
 ### batch_apply_update_action
 
@@ -274,7 +274,7 @@ Keyword-only arguments:
 Returns
 [UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
-<a id="batch_stop_update_action"></a>
+<a id="batch\_stop\_update\_action"></a>
 
 ### batch_stop_update_action
 
@@ -298,7 +298,7 @@ Keyword-only arguments:
 Returns
 [UpdateActionResultsMessageTypeDef](./type_defs.md#updateactionresultsmessagetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -315,7 +315,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="complete_migration"></a>
+<a id="complete\_migration"></a>
 
 ### complete_migration
 
@@ -337,7 +337,7 @@ Keyword-only arguments:
 Returns
 [CompleteMigrationResponseTypeDef](./type_defs.md#completemigrationresponsetypedef).
 
-<a id="copy_snapshot"></a>
+<a id="copy\_snapshot"></a>
 
 ### copy_snapshot
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 
 Returns [CopySnapshotResultTypeDef](./type_defs.md#copysnapshotresulttypedef).
 
-<a id="create_cache_cluster"></a>
+<a id="create\_cache\_cluster"></a>
 
 ### create_cache_cluster
 
@@ -409,7 +409,7 @@ Keyword-only arguments:
 Returns
 [CreateCacheClusterResultTypeDef](./type_defs.md#createcacheclusterresulttypedef).
 
-<a id="create_cache_parameter_group"></a>
+<a id="create\_cache\_parameter\_group"></a>
 
 ### create_cache_parameter_group
 
@@ -434,7 +434,7 @@ Keyword-only arguments:
 Returns
 [CreateCacheParameterGroupResultTypeDef](./type_defs.md#createcacheparametergroupresulttypedef).
 
-<a id="create_cache_security_group"></a>
+<a id="create\_cache\_security\_group"></a>
 
 ### create_cache_security_group
 
@@ -458,7 +458,7 @@ Keyword-only arguments:
 Returns
 [CreateCacheSecurityGroupResultTypeDef](./type_defs.md#createcachesecuritygroupresulttypedef).
 
-<a id="create_cache_subnet_group"></a>
+<a id="create\_cache\_subnet\_group"></a>
 
 ### create_cache_subnet_group
 
@@ -483,7 +483,7 @@ Keyword-only arguments:
 Returns
 [CreateCacheSubnetGroupResultTypeDef](./type_defs.md#createcachesubnetgroupresulttypedef).
 
-<a id="create_global_replication_group"></a>
+<a id="create\_global\_replication\_group"></a>
 
 ### create_global_replication_group
 
@@ -508,7 +508,7 @@ Keyword-only arguments:
 Returns
 [CreateGlobalReplicationGroupResultTypeDef](./type_defs.md#createglobalreplicationgroupresulttypedef).
 
-<a id="create_replication_group"></a>
+<a id="create\_replication\_group"></a>
 
 ### create_replication_group
 
@@ -566,7 +566,7 @@ Keyword-only arguments:
 Returns
 [CreateReplicationGroupResultTypeDef](./type_defs.md#createreplicationgroupresulttypedef).
 
-<a id="create_snapshot"></a>
+<a id="create\_snapshot"></a>
 
 ### create_snapshot
 
@@ -592,7 +592,7 @@ Keyword-only arguments:
 Returns
 [CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
 
-<a id="create_user"></a>
+<a id="create\_user"></a>
 
 ### create_user
 
@@ -619,7 +619,7 @@ Keyword-only arguments:
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
-<a id="create_user_group"></a>
+<a id="create\_user\_group"></a>
 
 ### create_user_group
 
@@ -643,7 +643,7 @@ Keyword-only arguments:
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
 
-<a id="decrease_node_groups_in_global_replication_group"></a>
+<a id="decrease\_node\_groups\_in\_global\_replication\_group"></a>
 
 ### decrease_node_groups_in_global_replication_group
 
@@ -671,7 +671,7 @@ Keyword-only arguments:
 Returns
 [DecreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#decreasenodegroupsinglobalreplicationgroupresulttypedef).
 
-<a id="decrease_replica_count"></a>
+<a id="decrease\_replica\_count"></a>
 
 ### decrease_replica_count
 
@@ -700,7 +700,7 @@ Keyword-only arguments:
 Returns
 [DecreaseReplicaCountResultTypeDef](./type_defs.md#decreasereplicacountresulttypedef).
 
-<a id="delete_cache_cluster"></a>
+<a id="delete\_cache\_cluster"></a>
 
 ### delete_cache_cluster
 
@@ -722,7 +722,7 @@ Keyword-only arguments:
 Returns
 [DeleteCacheClusterResultTypeDef](./type_defs.md#deletecacheclusterresulttypedef).
 
-<a id="delete_cache_parameter_group"></a>
+<a id="delete\_cache\_parameter\_group"></a>
 
 ### delete_cache_parameter_group
 
@@ -741,7 +741,7 @@ Keyword-only arguments:
 
 - `CacheParameterGroupName`: `str` *(required)*
 
-<a id="delete_cache_security_group"></a>
+<a id="delete\_cache\_security\_group"></a>
 
 ### delete_cache_security_group
 
@@ -760,7 +760,7 @@ Keyword-only arguments:
 
 - `CacheSecurityGroupName`: `str` *(required)*
 
-<a id="delete_cache_subnet_group"></a>
+<a id="delete\_cache\_subnet\_group"></a>
 
 ### delete_cache_subnet_group
 
@@ -779,7 +779,7 @@ Keyword-only arguments:
 
 - `CacheSubnetGroupName`: `str` *(required)*
 
-<a id="delete_global_replication_group"></a>
+<a id="delete\_global\_replication\_group"></a>
 
 ### delete_global_replication_group
 
@@ -804,7 +804,7 @@ Keyword-only arguments:
 Returns
 [DeleteGlobalReplicationGroupResultTypeDef](./type_defs.md#deleteglobalreplicationgroupresulttypedef).
 
-<a id="delete_replication_group"></a>
+<a id="delete\_replication\_group"></a>
 
 ### delete_replication_group
 
@@ -828,7 +828,7 @@ Keyword-only arguments:
 Returns
 [DeleteReplicationGroupResultTypeDef](./type_defs.md#deletereplicationgroupresulttypedef).
 
-<a id="delete_snapshot"></a>
+<a id="delete\_snapshot"></a>
 
 ### delete_snapshot
 
@@ -849,7 +849,7 @@ Keyword-only arguments:
 Returns
 [DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
 
-<a id="delete_user"></a>
+<a id="delete\_user"></a>
 
 ### delete_user
 
@@ -870,7 +870,7 @@ Keyword-only arguments:
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
-<a id="delete_user_group"></a>
+<a id="delete\_user\_group"></a>
 
 ### delete_user_group
 
@@ -891,7 +891,7 @@ Keyword-only arguments:
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
 
-<a id="describe_cache_clusters"></a>
+<a id="describe\_cache\_clusters"></a>
 
 ### describe_cache_clusters
 
@@ -919,7 +919,7 @@ Keyword-only arguments:
 Returns
 [CacheClusterMessageTypeDef](./type_defs.md#cacheclustermessagetypedef).
 
-<a id="describe_cache_engine_versions"></a>
+<a id="describe\_cache\_engine\_versions"></a>
 
 ### describe_cache_engine_versions
 
@@ -946,7 +946,7 @@ Keyword-only arguments:
 Returns
 [CacheEngineVersionMessageTypeDef](./type_defs.md#cacheengineversionmessagetypedef).
 
-<a id="describe_cache_parameter_groups"></a>
+<a id="describe\_cache\_parameter\_groups"></a>
 
 ### describe_cache_parameter_groups
 
@@ -970,7 +970,7 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupsMessageTypeDef](./type_defs.md#cacheparametergroupsmessagetypedef).
 
-<a id="describe_cache_parameters"></a>
+<a id="describe\_cache\_parameters"></a>
 
 ### describe_cache_parameters
 
@@ -995,7 +995,7 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupDetailsTypeDef](./type_defs.md#cacheparametergroupdetailstypedef).
 
-<a id="describe_cache_security_groups"></a>
+<a id="describe\_cache\_security\_groups"></a>
 
 ### describe_cache_security_groups
 
@@ -1019,7 +1019,7 @@ Keyword-only arguments:
 Returns
 [CacheSecurityGroupMessageTypeDef](./type_defs.md#cachesecuritygroupmessagetypedef).
 
-<a id="describe_cache_subnet_groups"></a>
+<a id="describe\_cache\_subnet\_groups"></a>
 
 ### describe_cache_subnet_groups
 
@@ -1043,7 +1043,7 @@ Keyword-only arguments:
 Returns
 [CacheSubnetGroupMessageTypeDef](./type_defs.md#cachesubnetgroupmessagetypedef).
 
-<a id="describe_engine_default_parameters"></a>
+<a id="describe\_engine\_default\_parameters"></a>
 
 ### describe_engine_default_parameters
 
@@ -1068,7 +1068,7 @@ Keyword-only arguments:
 Returns
 [DescribeEngineDefaultParametersResultTypeDef](./type_defs.md#describeenginedefaultparametersresulttypedef).
 
-<a id="describe_events"></a>
+<a id="describe\_events"></a>
 
 ### describe_events
 
@@ -1095,7 +1095,7 @@ Keyword-only arguments:
 
 Returns [EventsMessageTypeDef](./type_defs.md#eventsmessagetypedef).
 
-<a id="describe_global_replication_groups"></a>
+<a id="describe\_global\_replication\_groups"></a>
 
 ### describe_global_replication_groups
 
@@ -1120,7 +1120,7 @@ Keyword-only arguments:
 Returns
 [DescribeGlobalReplicationGroupsResultTypeDef](./type_defs.md#describeglobalreplicationgroupsresulttypedef).
 
-<a id="describe_replication_groups"></a>
+<a id="describe\_replication\_groups"></a>
 
 ### describe_replication_groups
 
@@ -1144,7 +1144,7 @@ Keyword-only arguments:
 Returns
 [ReplicationGroupMessageTypeDef](./type_defs.md#replicationgroupmessagetypedef).
 
-<a id="describe_reserved_cache_nodes"></a>
+<a id="describe\_reserved\_cache\_nodes"></a>
 
 ### describe_reserved_cache_nodes
 
@@ -1174,7 +1174,7 @@ Keyword-only arguments:
 Returns
 [ReservedCacheNodeMessageTypeDef](./type_defs.md#reservedcachenodemessagetypedef).
 
-<a id="describe_reserved_cache_nodes_offerings"></a>
+<a id="describe\_reserved\_cache\_nodes\_offerings"></a>
 
 ### describe_reserved_cache_nodes_offerings
 
@@ -1202,7 +1202,7 @@ Keyword-only arguments:
 Returns
 [ReservedCacheNodesOfferingMessageTypeDef](./type_defs.md#reservedcachenodesofferingmessagetypedef).
 
-<a id="describe_service_updates"></a>
+<a id="describe\_service\_updates"></a>
 
 ### describe_service_updates
 
@@ -1229,7 +1229,7 @@ Keyword-only arguments:
 Returns
 [ServiceUpdatesMessageTypeDef](./type_defs.md#serviceupdatesmessagetypedef).
 
-<a id="describe_snapshots"></a>
+<a id="describe\_snapshots"></a>
 
 ### describe_snapshots
 
@@ -1256,7 +1256,7 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotsListMessageTypeDef](./type_defs.md#describesnapshotslistmessagetypedef).
 
-<a id="describe_update_actions"></a>
+<a id="describe\_update\_actions"></a>
 
 ### describe_update_actions
 
@@ -1291,7 +1291,7 @@ Keyword-only arguments:
 Returns
 [UpdateActionsMessageTypeDef](./type_defs.md#updateactionsmessagetypedef).
 
-<a id="describe_user_groups"></a>
+<a id="describe\_user\_groups"></a>
 
 ### describe_user_groups
 
@@ -1314,7 +1314,7 @@ Keyword-only arguments:
 Returns
 [DescribeUserGroupsResultTypeDef](./type_defs.md#describeusergroupsresulttypedef).
 
-<a id="describe_users"></a>
+<a id="describe\_users"></a>
 
 ### describe_users
 
@@ -1339,7 +1339,7 @@ Keyword-only arguments:
 Returns
 [DescribeUsersResultTypeDef](./type_defs.md#describeusersresulttypedef).
 
-<a id="disassociate_global_replication_group"></a>
+<a id="disassociate\_global\_replication\_group"></a>
 
 ### disassociate_global_replication_group
 
@@ -1364,7 +1364,7 @@ Keyword-only arguments:
 Returns
 [DisassociateGlobalReplicationGroupResultTypeDef](./type_defs.md#disassociateglobalreplicationgroupresulttypedef).
 
-<a id="failover_global_replication_group"></a>
+<a id="failover\_global\_replication\_group"></a>
 
 ### failover_global_replication_group
 
@@ -1388,7 +1388,7 @@ Keyword-only arguments:
 Returns
 [FailoverGlobalReplicationGroupResultTypeDef](./type_defs.md#failoverglobalreplicationgroupresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -1409,7 +1409,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="increase_node_groups_in_global_replication_group"></a>
+<a id="increase\_node\_groups\_in\_global\_replication\_group"></a>
 
 ### increase_node_groups_in_global_replication_group
 
@@ -1437,7 +1437,7 @@ Keyword-only arguments:
 Returns
 [IncreaseNodeGroupsInGlobalReplicationGroupResultTypeDef](./type_defs.md#increasenodegroupsinglobalreplicationgroupresulttypedef).
 
-<a id="increase_replica_count"></a>
+<a id="increase\_replica\_count"></a>
 
 ### increase_replica_count
 
@@ -1465,7 +1465,7 @@ Keyword-only arguments:
 Returns
 [IncreaseReplicaCountResultTypeDef](./type_defs.md#increasereplicacountresulttypedef).
 
-<a id="list_allowed_node_type_modifications"></a>
+<a id="list\_allowed\_node\_type\_modifications"></a>
 
 ### list_allowed_node_type_modifications
 
@@ -1489,7 +1489,7 @@ Keyword-only arguments:
 Returns
 [AllowedNodeTypeModificationsMessageTypeDef](./type_defs.md#allowednodetypemodificationsmessagetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1510,7 +1510,7 @@ Keyword-only arguments:
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
-<a id="modify_cache_cluster"></a>
+<a id="modify\_cache\_cluster"></a>
 
 ### modify_cache_cluster
 
@@ -1552,7 +1552,7 @@ Keyword-only arguments:
 Returns
 [ModifyCacheClusterResultTypeDef](./type_defs.md#modifycacheclusterresulttypedef).
 
-<a id="modify_cache_parameter_group"></a>
+<a id="modify\_cache\_parameter\_group"></a>
 
 ### modify_cache_parameter_group
 
@@ -1577,7 +1577,7 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
-<a id="modify_cache_subnet_group"></a>
+<a id="modify\_cache\_subnet\_group"></a>
 
 ### modify_cache_subnet_group
 
@@ -1601,7 +1601,7 @@ Keyword-only arguments:
 Returns
 [ModifyCacheSubnetGroupResultTypeDef](./type_defs.md#modifycachesubnetgroupresulttypedef).
 
-<a id="modify_global_replication_group"></a>
+<a id="modify\_global\_replication\_group"></a>
 
 ### modify_global_replication_group
 
@@ -1629,7 +1629,7 @@ Keyword-only arguments:
 Returns
 [ModifyGlobalReplicationGroupResultTypeDef](./type_defs.md#modifyglobalreplicationgroupresulttypedef).
 
-<a id="modify_replication_group"></a>
+<a id="modify\_replication\_group"></a>
 
 ### modify_replication_group
 
@@ -1677,7 +1677,7 @@ Keyword-only arguments:
 Returns
 [ModifyReplicationGroupResultTypeDef](./type_defs.md#modifyreplicationgroupresulttypedef).
 
-<a id="modify_replication_group_shard_configuration"></a>
+<a id="modify\_replication\_group\_shard\_configuration"></a>
 
 ### modify_replication_group_shard_configuration
 
@@ -1707,7 +1707,7 @@ Keyword-only arguments:
 Returns
 [ModifyReplicationGroupShardConfigurationResultTypeDef](./type_defs.md#modifyreplicationgroupshardconfigurationresulttypedef).
 
-<a id="modify_user"></a>
+<a id="modify\_user"></a>
 
 ### modify_user
 
@@ -1732,7 +1732,7 @@ Keyword-only arguments:
 Returns
 [UserResponseMetadataTypeDef](./type_defs.md#userresponsemetadatatypedef).
 
-<a id="modify_user_group"></a>
+<a id="modify\_user\_group"></a>
 
 ### modify_user_group
 
@@ -1755,7 +1755,7 @@ Keyword-only arguments:
 Returns
 [UserGroupResponseMetadataTypeDef](./type_defs.md#usergroupresponsemetadatatypedef).
 
-<a id="purchase_reserved_cache_nodes_offering"></a>
+<a id="purchase\_reserved\_cache\_nodes\_offering"></a>
 
 ### purchase_reserved_cache_nodes_offering
 
@@ -1780,7 +1780,7 @@ Keyword-only arguments:
 Returns
 [PurchaseReservedCacheNodesOfferingResultTypeDef](./type_defs.md#purchasereservedcachenodesofferingresulttypedef).
 
-<a id="rebalance_slots_in_global_replication_group"></a>
+<a id="rebalance\_slots\_in\_global\_replication\_group"></a>
 
 ### rebalance_slots_in_global_replication_group
 
@@ -1805,7 +1805,7 @@ Keyword-only arguments:
 Returns
 [RebalanceSlotsInGlobalReplicationGroupResultTypeDef](./type_defs.md#rebalanceslotsinglobalreplicationgroupresulttypedef).
 
-<a id="reboot_cache_cluster"></a>
+<a id="reboot\_cache\_cluster"></a>
 
 ### reboot_cache_cluster
 
@@ -1827,7 +1827,7 @@ Keyword-only arguments:
 Returns
 [RebootCacheClusterResultTypeDef](./type_defs.md#rebootcacheclusterresulttypedef).
 
-<a id="remove_tags_from_resource"></a>
+<a id="remove\_tags\_from\_resource"></a>
 
 ### remove_tags_from_resource
 
@@ -1849,7 +1849,7 @@ Keyword-only arguments:
 
 Returns [TagListMessageTypeDef](./type_defs.md#taglistmessagetypedef).
 
-<a id="reset_cache_parameter_group"></a>
+<a id="reset\_cache\_parameter\_group"></a>
 
 ### reset_cache_parameter_group
 
@@ -1875,7 +1875,7 @@ Keyword-only arguments:
 Returns
 [CacheParameterGroupNameMessageTypeDef](./type_defs.md#cacheparametergroupnamemessagetypedef).
 
-<a id="revoke_cache_security_group_ingress"></a>
+<a id="revoke\_cache\_security\_group\_ingress"></a>
 
 ### revoke_cache_security_group_ingress
 
@@ -1899,7 +1899,7 @@ Keyword-only arguments:
 Returns
 [RevokeCacheSecurityGroupIngressResultTypeDef](./type_defs.md#revokecachesecuritygroupingressresulttypedef).
 
-<a id="start_migration"></a>
+<a id="start\_migration"></a>
 
 ### start_migration
 
@@ -1923,7 +1923,7 @@ Keyword-only arguments:
 Returns
 [StartMigrationResponseTypeDef](./type_defs.md#startmigrationresponsetypedef).
 
-<a id="test_failover"></a>
+<a id="test\_failover"></a>
 
 ### test_failover
 

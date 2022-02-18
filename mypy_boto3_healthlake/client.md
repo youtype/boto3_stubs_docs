@@ -90,7 +90,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -107,7 +107,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_fhir_datastore"></a>
+<a id="create\_fhir\_datastore"></a>
 
 ### create_fhir_datastore
 
@@ -136,7 +136,7 @@ Keyword-only arguments:
 Returns
 [CreateFHIRDatastoreResponseTypeDef](./type_defs.md#createfhirdatastoreresponsetypedef).
 
-<a id="delete_fhir_datastore"></a>
+<a id="delete\_fhir\_datastore"></a>
 
 ### delete_fhir_datastore
 
@@ -157,7 +157,7 @@ Keyword-only arguments:
 Returns
 [DeleteFHIRDatastoreResponseTypeDef](./type_defs.md#deletefhirdatastoreresponsetypedef).
 
-<a id="describe_fhir_datastore"></a>
+<a id="describe\_fhir\_datastore"></a>
 
 ### describe_fhir_datastore
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 Returns
 [DescribeFHIRDatastoreResponseTypeDef](./type_defs.md#describefhirdatastoreresponsetypedef).
 
-<a id="describe_fhir_export_job"></a>
+<a id="describe\_fhir\_export\_job"></a>
 
 ### describe_fhir_export_job
 
@@ -205,7 +205,7 @@ Keyword-only arguments:
 Returns
 [DescribeFHIRExportJobResponseTypeDef](./type_defs.md#describefhirexportjobresponsetypedef).
 
-<a id="describe_fhir_import_job"></a>
+<a id="describe\_fhir\_import\_job"></a>
 
 ### describe_fhir_import_job
 
@@ -229,7 +229,7 @@ Keyword-only arguments:
 Returns
 [DescribeFHIRImportJobResponseTypeDef](./type_defs.md#describefhirimportjobresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -250,7 +250,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_fhir_datastores"></a>
+<a id="list\_fhir\_datastores"></a>
 
 ### list_fhir_datastores
 
@@ -274,7 +274,7 @@ Keyword-only arguments:
 Returns
 [ListFHIRDatastoresResponseTypeDef](./type_defs.md#listfhirdatastoresresponsetypedef).
 
-<a id="list_fhir_export_jobs"></a>
+<a id="list\_fhir\_export\_jobs"></a>
 
 ### list_fhir_export_jobs
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 Returns
 [ListFHIRExportJobsResponseTypeDef](./type_defs.md#listfhirexportjobsresponsetypedef).
 
-<a id="list_fhir_import_jobs"></a>
+<a id="list\_fhir\_import\_jobs"></a>
 
 ### list_fhir_import_jobs
 
@@ -328,7 +328,7 @@ Keyword-only arguments:
 Returns
 [ListFHIRImportJobsResponseTypeDef](./type_defs.md#listfhirimportjobsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -350,7 +350,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="start_fhir_export_job"></a>
+<a id="start\_fhir\_export\_job"></a>
 
 ### start_fhir_export_job
 
@@ -377,7 +377,7 @@ Keyword-only arguments:
 Returns
 [StartFHIRExportJobResponseTypeDef](./type_defs.md#startfhirexportjobresponsetypedef).
 
-<a id="start_fhir_import_job"></a>
+<a id="start\_fhir\_import\_job"></a>
 
 ### start_fhir_import_job
 
@@ -406,7 +406,7 @@ Keyword-only arguments:
 Returns
 [StartFHIRImportJobResponseTypeDef](./type_defs.md#startfhirimportjobresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [XRayClient](#xrayclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `XRay` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[xray]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[xray]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-xray
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-xray
 ```bash
 python -m pip uninstall -y mypy-boto3-xray
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="xrayclient"></a>
 

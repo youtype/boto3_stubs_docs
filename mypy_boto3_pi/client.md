@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_dimension_keys"></a>
+<a id="describe\_dimension\_keys"></a>
 
 ### describe_dimension_keys
 
@@ -130,7 +130,7 @@ Keyword-only arguments:
 Returns
 [DescribeDimensionKeysResponseTypeDef](./type_defs.md#describedimensionkeysresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -150,7 +150,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_dimension_key_details"></a>
+<a id="get\_dimension\_key\_details"></a>
 
 ### get_dimension_key_details
 
@@ -176,7 +176,7 @@ Keyword-only arguments:
 Returns
 [GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
 
-<a id="get_resource_metadata"></a>
+<a id="get\_resource\_metadata"></a>
 
 ### get_resource_metadata
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 Returns
 [GetResourceMetadataResponseTypeDef](./type_defs.md#getresourcemetadataresponsetypedef).
 
-<a id="get_resource_metrics"></a>
+<a id="get\_resource\_metrics"></a>
 
 ### get_resource_metrics
 
@@ -229,7 +229,7 @@ Keyword-only arguments:
 Returns
 [GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).
 
-<a id="list_available_resource_dimensions"></a>
+<a id="list\_available\_resource\_dimensions"></a>
 
 ### list_available_resource_dimensions
 
@@ -256,7 +256,7 @@ Keyword-only arguments:
 Returns
 [ListAvailableResourceDimensionsResponseTypeDef](./type_defs.md#listavailableresourcedimensionsresponsetypedef).
 
-<a id="list_available_resource_metrics"></a>
+<a id="list\_available\_resource\_metrics"></a>
 
 ### list_available_resource_metrics
 

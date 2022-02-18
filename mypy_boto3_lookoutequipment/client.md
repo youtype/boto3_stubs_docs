@@ -100,7 +100,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -117,7 +117,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_dataset"></a>
+<a id="create\_dataset"></a>
 
 ### create_dataset
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
-<a id="create_inference_scheduler"></a>
+<a id="create\_inference\_scheduler"></a>
 
 ### create_inference_scheduler
 
@@ -179,7 +179,7 @@ Keyword-only arguments:
 Returns
 [CreateInferenceSchedulerResponseTypeDef](./type_defs.md#createinferenceschedulerresponsetypedef).
 
-<a id="create_model"></a>
+<a id="create\_model"></a>
 
 ### create_model
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
-<a id="delete_dataset"></a>
+<a id="delete\_dataset"></a>
 
 ### delete_dataset
 
@@ -233,7 +233,7 @@ Keyword-only arguments:
 
 - `DatasetName`: `str` *(required)*
 
-<a id="delete_inference_scheduler"></a>
+<a id="delete\_inference\_scheduler"></a>
 
 ### delete_inference_scheduler
 
@@ -252,7 +252,7 @@ Keyword-only arguments:
 
 - `InferenceSchedulerName`: `str` *(required)*
 
-<a id="delete_model"></a>
+<a id="delete\_model"></a>
 
 ### delete_model
 
@@ -270,7 +270,7 @@ Keyword-only arguments:
 
 - `ModelName`: `str` *(required)*
 
-<a id="describe_data_ingestion_job"></a>
+<a id="describe\_data\_ingestion\_job"></a>
 
 ### describe_data_ingestion_job
 
@@ -293,7 +293,7 @@ Keyword-only arguments:
 Returns
 [DescribeDataIngestionJobResponseTypeDef](./type_defs.md#describedataingestionjobresponsetypedef).
 
-<a id="describe_dataset"></a>
+<a id="describe\_dataset"></a>
 
 ### describe_dataset
 
@@ -316,7 +316,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
-<a id="describe_inference_scheduler"></a>
+<a id="describe\_inference\_scheduler"></a>
 
 ### describe_inference_scheduler
 
@@ -340,7 +340,7 @@ Keyword-only arguments:
 Returns
 [DescribeInferenceSchedulerResponseTypeDef](./type_defs.md#describeinferenceschedulerresponsetypedef).
 
-<a id="describe_model"></a>
+<a id="describe\_model"></a>
 
 ### describe_model
 
@@ -363,7 +363,7 @@ Keyword-only arguments:
 Returns
 [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -384,7 +384,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_data_ingestion_jobs"></a>
+<a id="list\_data\_ingestion\_jobs"></a>
 
 ### list_data_ingestion_jobs
 
@@ -410,7 +410,7 @@ Keyword-only arguments:
 Returns
 [ListDataIngestionJobsResponseTypeDef](./type_defs.md#listdataingestionjobsresponsetypedef).
 
-<a id="list_datasets"></a>
+<a id="list\_datasets"></a>
 
 ### list_datasets
 
@@ -434,7 +434,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
-<a id="list_inference_executions"></a>
+<a id="list\_inference\_executions"></a>
 
 ### list_inference_executions
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 Returns
 [ListInferenceExecutionsResponseTypeDef](./type_defs.md#listinferenceexecutionsresponsetypedef).
 
-<a id="list_inference_schedulers"></a>
+<a id="list\_inference\_schedulers"></a>
 
 ### list_inference_schedulers
 
@@ -489,7 +489,7 @@ Keyword-only arguments:
 Returns
 [ListInferenceSchedulersResponseTypeDef](./type_defs.md#listinferenceschedulersresponsetypedef).
 
-<a id="list_models"></a>
+<a id="list\_models"></a>
 
 ### list_models
 
@@ -514,7 +514,7 @@ Keyword-only arguments:
 
 Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -536,7 +536,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="start_data_ingestion_job"></a>
+<a id="start\_data\_ingestion\_job"></a>
 
 ### start_data_ingestion_job
 
@@ -563,7 +563,7 @@ Keyword-only arguments:
 Returns
 [StartDataIngestionJobResponseTypeDef](./type_defs.md#startdataingestionjobresponsetypedef).
 
-<a id="start_inference_scheduler"></a>
+<a id="start\_inference\_scheduler"></a>
 
 ### start_inference_scheduler
 
@@ -585,7 +585,7 @@ Keyword-only arguments:
 Returns
 [StartInferenceSchedulerResponseTypeDef](./type_defs.md#startinferenceschedulerresponsetypedef).
 
-<a id="stop_inference_scheduler"></a>
+<a id="stop\_inference\_scheduler"></a>
 
 ### stop_inference_scheduler
 
@@ -607,7 +607,7 @@ Keyword-only arguments:
 Returns
 [StopInferenceSchedulerResponseTypeDef](./type_defs.md#stopinferenceschedulerresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -628,7 +628,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -649,7 +649,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_inference_scheduler"></a>
+<a id="update\_inference\_scheduler"></a>
 
 ### update_inference_scheduler
 

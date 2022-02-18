@@ -747,7 +747,7 @@ Arguments:
 
 Returns [VirtualMfaDevice](#virtualmfadevice).
 
-<a id="iamserviceresourcechange_password-method"></a>
+<a id="iamserviceresourcechange\_password-method"></a>
 
 ### IAMServiceResource.change_password method
 
@@ -766,7 +766,7 @@ Keyword-only arguments:
 - `OldPassword`: `str` *(required)*
 - `NewPassword`: `str` *(required)*
 
-<a id="iamserviceresourcecreate_account_alias-method"></a>
+<a id="iamserviceresourcecreate\_account\_alias-method"></a>
 
 ### IAMServiceResource.create_account_alias method
 
@@ -784,7 +784,7 @@ Keyword-only arguments:
 
 - `AccountAlias`: `str` *(required)*
 
-<a id="iamserviceresourcecreate_account_password_policy-method"></a>
+<a id="iamserviceresourcecreate\_account\_password\_policy-method"></a>
 
 ### IAMServiceResource.create_account_password_policy method
 
@@ -813,7 +813,7 @@ Keyword-only arguments:
 
 Returns [AccountPasswordPolicy](#accountpasswordpolicy).
 
-<a id="iamserviceresourcecreate_group-method"></a>
+<a id="iamserviceresourcecreate\_group-method"></a>
 
 ### IAMServiceResource.create_group method
 
@@ -834,7 +834,7 @@ Keyword-only arguments:
 
 Returns [Group](#group).
 
-<a id="iamserviceresourcecreate_instance_profile-method"></a>
+<a id="iamserviceresourcecreate\_instance\_profile-method"></a>
 
 ### IAMServiceResource.create_instance_profile method
 
@@ -856,7 +856,7 @@ Keyword-only arguments:
 
 Returns [InstanceProfile](#instanceprofile).
 
-<a id="iamserviceresourcecreate_policy-method"></a>
+<a id="iamserviceresourcecreate\_policy-method"></a>
 
 ### IAMServiceResource.create_policy method
 
@@ -880,7 +880,7 @@ Keyword-only arguments:
 
 Returns [Policy](#policy).
 
-<a id="iamserviceresourcecreate_role-method"></a>
+<a id="iamserviceresourcecreate\_role-method"></a>
 
 ### IAMServiceResource.create_role method
 
@@ -906,7 +906,7 @@ Keyword-only arguments:
 
 Returns [Role](#role).
 
-<a id="iamserviceresourcecreate_saml_provider-method"></a>
+<a id="iamserviceresourcecreate\_saml\_provider-method"></a>
 
 ### IAMServiceResource.create_saml_provider method
 
@@ -929,7 +929,7 @@ Keyword-only arguments:
 
 Returns [SamlProvider](#samlprovider).
 
-<a id="iamserviceresourcecreate_server_certificate-method"></a>
+<a id="iamserviceresourcecreate\_server\_certificate-method"></a>
 
 ### IAMServiceResource.create_server_certificate method
 
@@ -954,7 +954,7 @@ Keyword-only arguments:
 
 Returns [ServerCertificate](#servercertificate).
 
-<a id="iamserviceresourcecreate_signing_certificate-method"></a>
+<a id="iamserviceresourcecreate\_signing\_certificate-method"></a>
 
 ### IAMServiceResource.create_signing_certificate method
 
@@ -976,7 +976,7 @@ Keyword-only arguments:
 
 Returns [SigningCertificate](#signingcertificate).
 
-<a id="iamserviceresourcecreate_user-method"></a>
+<a id="iamserviceresourcecreate\_user-method"></a>
 
 ### IAMServiceResource.create_user method
 
@@ -999,7 +999,7 @@ Keyword-only arguments:
 
 Returns [User](#user).
 
-<a id="iamserviceresourcecreate_virtual_mfa_device-method"></a>
+<a id="iamserviceresourcecreate\_virtual\_mfa\_device-method"></a>
 
 ### IAMServiceResource.create_virtual_mfa_device method
 
@@ -1021,7 +1021,7 @@ Keyword-only arguments:
 
 Returns [VirtualMfaDevice](#virtualmfadevice).
 
-<a id="iamserviceresourceget_available_subresources-method"></a>
+<a id="iamserviceresourceget\_available\_subresources-method"></a>
 
 ### IAMServiceResource.get_available_subresources method
 
@@ -1128,7 +1128,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.AccessKey.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKey.delete)
 
-<a id="accesskeyget_available_subresources-method"></a>
+<a id="accesskeyget\_available\_subresources-method"></a>
 
 #### AccessKey.get_available_subresources method
 
@@ -1224,7 +1224,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.AccessKeyPair.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccessKeyPair.delete)
 
-<a id="accesskeypairget_available_subresources-method"></a>
+<a id="accesskeypairget\_available\_subresources-method"></a>
 
 #### AccessKeyPair.get_available_subresources method
 
@@ -1285,7 +1285,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.AccountPasswordPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.AccountPasswordPolicy.delete)
 
-<a id="accountpasswordpolicyget_available_subresources-method"></a>
+<a id="accountpasswordpolicyget\_available\_subresources-method"></a>
 
 #### AccountPasswordPolicy.get_available_subresources method
 
@@ -1377,7 +1377,7 @@ Boto3 documentation:
 
 ### AccountSummary methods
 
-<a id="accountsummaryget_available_subresources-method"></a>
+<a id="accountsummaryget\_available\_subresources-method"></a>
 
 #### AccountSummary.get_available_subresources method
 
@@ -1455,7 +1455,7 @@ Boto3 documentation:
 
 Returns [Role](#role).
 
-<a id="assumerolepolicyget_available_subresources-method"></a>
+<a id="assumerolepolicyget\_available\_subresources-method"></a>
 
 #### AssumeRolePolicy.get_available_subresources method
 
@@ -1599,7 +1599,7 @@ Boto3 documentation:
 
 ### CurrentUser methods
 
-<a id="currentuserget_available_subresources-method"></a>
+<a id="currentuserget\_available\_subresources-method"></a>
 
 #### CurrentUser.get_available_subresources method
 
@@ -1761,7 +1761,7 @@ Arguments:
 
 Returns [GroupPolicy](#grouppolicy).
 
-<a id="groupadd_user-method"></a>
+<a id="groupadd\_user-method"></a>
 
 #### Group.add_user method
 
@@ -1779,7 +1779,7 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
-<a id="groupattach_policy-method"></a>
+<a id="groupattach\_policy-method"></a>
 
 #### Group.attach_policy method
 
@@ -1817,7 +1817,7 @@ Keyword-only arguments:
 
 Returns [Group](#group).
 
-<a id="groupcreate_policy-method"></a>
+<a id="groupcreate\_policy-method"></a>
 
 #### Group.create_policy method
 
@@ -1850,7 +1850,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.Group.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.delete)
 
-<a id="groupdetach_policy-method"></a>
+<a id="groupdetach\_policy-method"></a>
 
 #### Group.detach_policy method
 
@@ -1868,7 +1868,7 @@ Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
-<a id="groupget_available_subresources-method"></a>
+<a id="groupget\_available\_subresources-method"></a>
 
 #### Group.get_available_subresources method
 
@@ -1905,7 +1905,7 @@ Type annotations for `boto3.resource("iam").reload` method.
 Boto3 documentation:
 [IAM.Group.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Group.reload)
 
-<a id="groupremove_user-method"></a>
+<a id="groupremove\_user-method"></a>
 
 #### Group.remove_user method
 
@@ -2000,7 +2000,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.GroupPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.GroupPolicy.delete)
 
-<a id="grouppolicyget_available_subresources-method"></a>
+<a id="grouppolicyget\_available\_subresources-method"></a>
 
 #### GroupPolicy.get_available_subresources method
 
@@ -2092,7 +2092,7 @@ Boto3 documentation:
 
 ### InstanceProfile methods
 
-<a id="instanceprofileadd_role-method"></a>
+<a id="instanceprofileadd\_role-method"></a>
 
 #### InstanceProfile.add_role method
 
@@ -2121,7 +2121,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.InstanceProfile.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.delete)
 
-<a id="instanceprofileget_available_subresources-method"></a>
+<a id="instanceprofileget\_available\_subresources-method"></a>
 
 #### InstanceProfile.get_available_subresources method
 
@@ -2158,7 +2158,7 @@ Type annotations for `boto3.resource("iam").reload` method.
 Boto3 documentation:
 [IAM.InstanceProfile.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.InstanceProfile.reload)
 
-<a id="instanceprofileremove_role-method"></a>
+<a id="instanceprofileremove\_role-method"></a>
 
 #### InstanceProfile.remove_role method
 
@@ -2253,7 +2253,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.LoginProfile.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.LoginProfile.delete)
 
-<a id="loginprofileget_available_subresources-method"></a>
+<a id="loginprofileget\_available\_subresources-method"></a>
 
 #### LoginProfile.get_available_subresources method
 
@@ -2383,7 +2383,7 @@ Type annotations for `boto3.resource("iam").disassociate` method.
 Boto3 documentation:
 [IAM.MfaDevice.disassociate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.MfaDevice.disassociate)
 
-<a id="mfadeviceget_available_subresources-method"></a>
+<a id="mfadeviceget\_available\_subresources-method"></a>
 
 #### MfaDevice.get_available_subresources method
 
@@ -2554,7 +2554,7 @@ Boto3 documentation:
 
 ### Policy methods
 
-<a id="policyattach_group-method"></a>
+<a id="policyattach\_group-method"></a>
 
 #### Policy.attach_group method
 
@@ -2572,7 +2572,7 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
-<a id="policyattach_role-method"></a>
+<a id="policyattach\_role-method"></a>
 
 #### Policy.attach_role method
 
@@ -2590,7 +2590,7 @@ Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
-<a id="policyattach_user-method"></a>
+<a id="policyattach\_user-method"></a>
 
 #### Policy.attach_user method
 
@@ -2608,7 +2608,7 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
-<a id="policycreate_version-method"></a>
+<a id="policycreate\_version-method"></a>
 
 #### Policy.create_version method
 
@@ -2640,7 +2640,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.Policy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Policy.delete)
 
-<a id="policydetach_group-method"></a>
+<a id="policydetach\_group-method"></a>
 
 #### Policy.detach_group method
 
@@ -2658,7 +2658,7 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
-<a id="policydetach_role-method"></a>
+<a id="policydetach\_role-method"></a>
 
 #### Policy.detach_role method
 
@@ -2676,7 +2676,7 @@ Keyword-only arguments:
 
 - `RoleName`: `str` *(required)*
 
-<a id="policydetach_user-method"></a>
+<a id="policydetach\_user-method"></a>
 
 #### Policy.detach_user method
 
@@ -2694,7 +2694,7 @@ Keyword-only arguments:
 
 - `UserName`: `str` *(required)*
 
-<a id="policyget_available_subresources-method"></a>
+<a id="policyget\_available\_subresources-method"></a>
 
 #### Policy.get_available_subresources method
 
@@ -2774,7 +2774,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.PolicyVersion.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.delete)
 
-<a id="policyversionget_available_subresources-method"></a>
+<a id="policyversionget\_available\_subresources-method"></a>
 
 #### PolicyVersion.get_available_subresources method
 
@@ -2811,7 +2811,7 @@ Type annotations for `boto3.resource("iam").reload` method.
 Boto3 documentation:
 [IAM.PolicyVersion.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.PolicyVersion.reload)
 
-<a id="policyversionset_as_default-method"></a>
+<a id="policyversionset\_as\_default-method"></a>
 
 #### PolicyVersion.set_as_default method
 
@@ -2971,7 +2971,7 @@ Arguments:
 
 Returns [RolePolicy](#rolepolicy).
 
-<a id="roleattach_policy-method"></a>
+<a id="roleattach\_policy-method"></a>
 
 #### Role.attach_policy method
 
@@ -3000,7 +3000,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.Role.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.Role.delete)
 
-<a id="roledetach_policy-method"></a>
+<a id="roledetach\_policy-method"></a>
 
 #### Role.detach_policy method
 
@@ -3018,7 +3018,7 @@ Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
-<a id="roleget_available_subresources-method"></a>
+<a id="roleget\_available\_subresources-method"></a>
 
 #### Role.get_available_subresources method
 
@@ -3110,7 +3110,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.RolePolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.RolePolicy.delete)
 
-<a id="rolepolicyget_available_subresources-method"></a>
+<a id="rolepolicyget\_available\_subresources-method"></a>
 
 #### RolePolicy.get_available_subresources method
 
@@ -3209,7 +3209,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.SamlProvider.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SamlProvider.delete)
 
-<a id="samlproviderget_available_subresources-method"></a>
+<a id="samlproviderget\_available\_subresources-method"></a>
 
 #### SamlProvider.get_available_subresources method
 
@@ -3311,7 +3311,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.ServerCertificate.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.ServerCertificate.delete)
 
-<a id="servercertificateget_available_subresources-method"></a>
+<a id="servercertificateget\_available\_subresources-method"></a>
 
 #### ServerCertificate.get_available_subresources method
 
@@ -3465,7 +3465,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.SigningCertificate.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.SigningCertificate.delete)
 
-<a id="signingcertificateget_available_subresources-method"></a>
+<a id="signingcertificateget\_available\_subresources-method"></a>
 
 #### SigningCertificate.get_available_subresources method
 
@@ -3748,7 +3748,7 @@ Arguments:
 
 Returns [SigningCertificate](#signingcertificate).
 
-<a id="useradd_group-method"></a>
+<a id="useradd\_group-method"></a>
 
 #### User.add_group method
 
@@ -3766,7 +3766,7 @@ Keyword-only arguments:
 
 - `GroupName`: `str` *(required)*
 
-<a id="userattach_policy-method"></a>
+<a id="userattach\_policy-method"></a>
 
 #### User.attach_policy method
 
@@ -3806,7 +3806,7 @@ Keyword-only arguments:
 
 Returns [User](#user).
 
-<a id="usercreate_access_key_pair-method"></a>
+<a id="usercreate\_access\_key\_pair-method"></a>
 
 #### User.create_access_key_pair method
 
@@ -3820,7 +3820,7 @@ Boto3 documentation:
 
 Returns [AccessKeyPair](#accesskeypair).
 
-<a id="usercreate_login_profile-method"></a>
+<a id="usercreate\_login\_profile-method"></a>
 
 #### User.create_login_profile method
 
@@ -3841,7 +3841,7 @@ Keyword-only arguments:
 
 Returns [LoginProfile](#loginprofile).
 
-<a id="usercreate_policy-method"></a>
+<a id="usercreate\_policy-method"></a>
 
 #### User.create_policy method
 
@@ -3874,7 +3874,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.User.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.delete)
 
-<a id="userdetach_policy-method"></a>
+<a id="userdetach\_policy-method"></a>
 
 #### User.detach_policy method
 
@@ -3892,7 +3892,7 @@ Keyword-only arguments:
 
 - `PolicyArn`: `str` *(required)*
 
-<a id="userenable_mfa-method"></a>
+<a id="userenable\_mfa-method"></a>
 
 #### User.enable_mfa method
 
@@ -3914,7 +3914,7 @@ Keyword-only arguments:
 
 Returns [MfaDevice](#mfadevice).
 
-<a id="userget_available_subresources-method"></a>
+<a id="userget\_available\_subresources-method"></a>
 
 #### User.get_available_subresources method
 
@@ -3951,7 +3951,7 @@ Type annotations for `boto3.resource("iam").reload` method.
 Boto3 documentation:
 [IAM.User.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.User.reload)
 
-<a id="userremove_group-method"></a>
+<a id="userremove\_group-method"></a>
 
 #### User.remove_group method
 
@@ -4045,7 +4045,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.UserPolicy.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.UserPolicy.delete)
 
-<a id="userpolicyget_available_subresources-method"></a>
+<a id="userpolicyget\_available\_subresources-method"></a>
 
 #### UserPolicy.get_available_subresources method
 
@@ -4147,7 +4147,7 @@ Type annotations for `boto3.resource("iam").delete` method.
 Boto3 documentation:
 [IAM.VirtualMfaDevice.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/iam.html#IAM.VirtualMfaDevice.delete)
 
-<a id="virtualmfadeviceget_available_subresources-method"></a>
+<a id="virtualmfadeviceget\_available\_subresources-method"></a>
 
 #### VirtualMfaDevice.get_available_subresources method
 

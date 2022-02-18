@@ -77,7 +77,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -94,7 +94,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -115,7 +115,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_latest_configuration"></a>
+<a id="get\_latest\_configuration"></a>
 
 ### get_latest_configuration
 
@@ -137,7 +137,7 @@ Keyword-only arguments:
 Returns
 [GetLatestConfigurationResponseTypeDef](./type_defs.md#getlatestconfigurationresponsetypedef).
 
-<a id="start_configuration_session"></a>
+<a id="start\_configuration\_session"></a>
 
 ### start_configuration_session
 

@@ -149,7 +149,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -166,7 +166,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="compare_faces"></a>
+<a id="compare\_faces"></a>
 
 ### compare_faces
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [CompareFacesResponseTypeDef](./type_defs.md#comparefacesresponsetypedef).
 
-<a id="create_collection"></a>
+<a id="create\_collection"></a>
 
 ### create_collection
 
@@ -213,7 +213,7 @@ Keyword-only arguments:
 Returns
 [CreateCollectionResponseTypeDef](./type_defs.md#createcollectionresponsetypedef).
 
-<a id="create_dataset"></a>
+<a id="create\_dataset"></a>
 
 ### create_dataset
 
@@ -236,7 +236,7 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
-<a id="create_project"></a>
+<a id="create\_project"></a>
 
 ### create_project
 
@@ -257,7 +257,7 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
-<a id="create_project_version"></a>
+<a id="create\_project\_version"></a>
 
 ### create_project_version
 
@@ -286,7 +286,7 @@ Keyword-only arguments:
 Returns
 [CreateProjectVersionResponseTypeDef](./type_defs.md#createprojectversionresponsetypedef).
 
-<a id="create_stream_processor"></a>
+<a id="create\_stream\_processor"></a>
 
 ### create_stream_processor
 
@@ -320,7 +320,7 @@ Keyword-only arguments:
 Returns
 [CreateStreamProcessorResponseTypeDef](./type_defs.md#createstreamprocessorresponsetypedef).
 
-<a id="delete_collection"></a>
+<a id="delete\_collection"></a>
 
 ### delete_collection
 
@@ -341,7 +341,7 @@ Keyword-only arguments:
 Returns
 [DeleteCollectionResponseTypeDef](./type_defs.md#deletecollectionresponsetypedef).
 
-<a id="delete_dataset"></a>
+<a id="delete\_dataset"></a>
 
 ### delete_dataset
 
@@ -361,7 +361,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_faces"></a>
+<a id="delete\_faces"></a>
 
 ### delete_faces
 
@@ -383,7 +383,7 @@ Keyword-only arguments:
 Returns
 [DeleteFacesResponseTypeDef](./type_defs.md#deletefacesresponsetypedef).
 
-<a id="delete_project"></a>
+<a id="delete\_project"></a>
 
 ### delete_project
 
@@ -404,7 +404,7 @@ Keyword-only arguments:
 Returns
 [DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
-<a id="delete_project_version"></a>
+<a id="delete\_project\_version"></a>
 
 ### delete_project_version
 
@@ -426,7 +426,7 @@ Keyword-only arguments:
 Returns
 [DeleteProjectVersionResponseTypeDef](./type_defs.md#deleteprojectversionresponsetypedef).
 
-<a id="delete_stream_processor"></a>
+<a id="delete\_stream\_processor"></a>
 
 ### delete_stream_processor
 
@@ -447,7 +447,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_collection"></a>
+<a id="describe\_collection"></a>
 
 ### describe_collection
 
@@ -468,7 +468,7 @@ Keyword-only arguments:
 Returns
 [DescribeCollectionResponseTypeDef](./type_defs.md#describecollectionresponsetypedef).
 
-<a id="describe_dataset"></a>
+<a id="describe\_dataset"></a>
 
 ### describe_dataset
 
@@ -489,7 +489,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
-<a id="describe_project_versions"></a>
+<a id="describe\_project\_versions"></a>
 
 ### describe_project_versions
 
@@ -515,7 +515,7 @@ Keyword-only arguments:
 Returns
 [DescribeProjectVersionsResponseTypeDef](./type_defs.md#describeprojectversionsresponsetypedef).
 
-<a id="describe_projects"></a>
+<a id="describe\_projects"></a>
 
 ### describe_projects
 
@@ -538,7 +538,7 @@ Keyword-only arguments:
 Returns
 [DescribeProjectsResponseTypeDef](./type_defs.md#describeprojectsresponsetypedef).
 
-<a id="describe_stream_processor"></a>
+<a id="describe\_stream\_processor"></a>
 
 ### describe_stream_processor
 
@@ -560,7 +560,7 @@ Keyword-only arguments:
 Returns
 [DescribeStreamProcessorResponseTypeDef](./type_defs.md#describestreamprocessorresponsetypedef).
 
-<a id="detect_custom_labels"></a>
+<a id="detect\_custom\_labels"></a>
 
 ### detect_custom_labels
 
@@ -585,7 +585,7 @@ Keyword-only arguments:
 Returns
 [DetectCustomLabelsResponseTypeDef](./type_defs.md#detectcustomlabelsresponsetypedef).
 
-<a id="detect_faces"></a>
+<a id="detect\_faces"></a>
 
 ### detect_faces
 
@@ -607,7 +607,7 @@ Keyword-only arguments:
 Returns
 [DetectFacesResponseTypeDef](./type_defs.md#detectfacesresponsetypedef).
 
-<a id="detect_labels"></a>
+<a id="detect\_labels"></a>
 
 ### detect_labels
 
@@ -631,7 +631,7 @@ Keyword-only arguments:
 Returns
 [DetectLabelsResponseTypeDef](./type_defs.md#detectlabelsresponsetypedef).
 
-<a id="detect_moderation_labels"></a>
+<a id="detect\_moderation\_labels"></a>
 
 ### detect_moderation_labels
 
@@ -656,7 +656,7 @@ Keyword-only arguments:
 Returns
 [DetectModerationLabelsResponseTypeDef](./type_defs.md#detectmoderationlabelsresponsetypedef).
 
-<a id="detect_protective_equipment"></a>
+<a id="detect\_protective\_equipment"></a>
 
 ### detect_protective_equipment
 
@@ -681,7 +681,7 @@ Keyword-only arguments:
 Returns
 [DetectProtectiveEquipmentResponseTypeDef](./type_defs.md#detectprotectiveequipmentresponsetypedef).
 
-<a id="detect_text"></a>
+<a id="detect\_text"></a>
 
 ### detect_text
 
@@ -703,7 +703,7 @@ Keyword-only arguments:
 
 Returns [DetectTextResponseTypeDef](./type_defs.md#detecttextresponsetypedef).
 
-<a id="distribute_dataset_entries"></a>
+<a id="distribute\_dataset\_entries"></a>
 
 ### distribute_dataset_entries
 
@@ -727,7 +727,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -748,7 +748,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_celebrity_info"></a>
+<a id="get\_celebrity\_info"></a>
 
 ### get_celebrity_info
 
@@ -770,7 +770,7 @@ Keyword-only arguments:
 Returns
 [GetCelebrityInfoResponseTypeDef](./type_defs.md#getcelebrityinforesponsetypedef).
 
-<a id="get_celebrity_recognition"></a>
+<a id="get\_celebrity\_recognition"></a>
 
 ### get_celebrity_recognition
 
@@ -797,7 +797,7 @@ Keyword-only arguments:
 Returns
 [GetCelebrityRecognitionResponseTypeDef](./type_defs.md#getcelebrityrecognitionresponsetypedef).
 
-<a id="get_content_moderation"></a>
+<a id="get\_content\_moderation"></a>
 
 ### get_content_moderation
 
@@ -824,7 +824,7 @@ Keyword-only arguments:
 Returns
 [GetContentModerationResponseTypeDef](./type_defs.md#getcontentmoderationresponsetypedef).
 
-<a id="get_face_detection"></a>
+<a id="get\_face\_detection"></a>
 
 ### get_face_detection
 
@@ -848,7 +848,7 @@ Keyword-only arguments:
 Returns
 [GetFaceDetectionResponseTypeDef](./type_defs.md#getfacedetectionresponsetypedef).
 
-<a id="get_face_search"></a>
+<a id="get\_face\_search"></a>
 
 ### get_face_search
 
@@ -873,7 +873,7 @@ Keyword-only arguments:
 Returns
 [GetFaceSearchResponseTypeDef](./type_defs.md#getfacesearchresponsetypedef).
 
-<a id="get_label_detection"></a>
+<a id="get\_label\_detection"></a>
 
 ### get_label_detection
 
@@ -898,7 +898,7 @@ Keyword-only arguments:
 Returns
 [GetLabelDetectionResponseTypeDef](./type_defs.md#getlabeldetectionresponsetypedef).
 
-<a id="get_person_tracking"></a>
+<a id="get\_person\_tracking"></a>
 
 ### get_person_tracking
 
@@ -923,7 +923,7 @@ Keyword-only arguments:
 Returns
 [GetPersonTrackingResponseTypeDef](./type_defs.md#getpersontrackingresponsetypedef).
 
-<a id="get_segment_detection"></a>
+<a id="get\_segment\_detection"></a>
 
 ### get_segment_detection
 
@@ -948,7 +948,7 @@ Keyword-only arguments:
 Returns
 [GetSegmentDetectionResponseTypeDef](./type_defs.md#getsegmentdetectionresponsetypedef).
 
-<a id="get_text_detection"></a>
+<a id="get\_text\_detection"></a>
 
 ### get_text_detection
 
@@ -972,7 +972,7 @@ Keyword-only arguments:
 Returns
 [GetTextDetectionResponseTypeDef](./type_defs.md#gettextdetectionresponsetypedef).
 
-<a id="index_faces"></a>
+<a id="index\_faces"></a>
 
 ### index_faces
 
@@ -998,7 +998,7 @@ Keyword-only arguments:
 
 Returns [IndexFacesResponseTypeDef](./type_defs.md#indexfacesresponsetypedef).
 
-<a id="list_collections"></a>
+<a id="list\_collections"></a>
 
 ### list_collections
 
@@ -1020,7 +1020,7 @@ Keyword-only arguments:
 Returns
 [ListCollectionsResponseTypeDef](./type_defs.md#listcollectionsresponsetypedef).
 
-<a id="list_dataset_entries"></a>
+<a id="list\_dataset\_entries"></a>
 
 ### list_dataset_entries
 
@@ -1047,7 +1047,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
-<a id="list_dataset_labels"></a>
+<a id="list\_dataset\_labels"></a>
 
 ### list_dataset_labels
 
@@ -1070,7 +1070,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetLabelsResponseTypeDef](./type_defs.md#listdatasetlabelsresponsetypedef).
 
-<a id="list_faces"></a>
+<a id="list\_faces"></a>
 
 ### list_faces
 
@@ -1092,7 +1092,7 @@ Keyword-only arguments:
 
 Returns [ListFacesResponseTypeDef](./type_defs.md#listfacesresponsetypedef).
 
-<a id="list_stream_processors"></a>
+<a id="list\_stream\_processors"></a>
 
 ### list_stream_processors
 
@@ -1116,7 +1116,7 @@ Keyword-only arguments:
 Returns
 [ListStreamProcessorsResponseTypeDef](./type_defs.md#liststreamprocessorsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1139,7 +1139,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="recognize_celebrities"></a>
+<a id="recognize\_celebrities"></a>
 
 ### recognize_celebrities
 
@@ -1161,7 +1161,7 @@ Keyword-only arguments:
 Returns
 [RecognizeCelebritiesResponseTypeDef](./type_defs.md#recognizecelebritiesresponsetypedef).
 
-<a id="search_faces"></a>
+<a id="search\_faces"></a>
 
 ### search_faces
 
@@ -1186,7 +1186,7 @@ Keyword-only arguments:
 Returns
 [SearchFacesResponseTypeDef](./type_defs.md#searchfacesresponsetypedef).
 
-<a id="search_faces_by_image"></a>
+<a id="search\_faces\_by\_image"></a>
 
 ### search_faces_by_image
 
@@ -1213,7 +1213,7 @@ Keyword-only arguments:
 Returns
 [SearchFacesByImageResponseTypeDef](./type_defs.md#searchfacesbyimageresponsetypedef).
 
-<a id="start_celebrity_recognition"></a>
+<a id="start\_celebrity\_recognition"></a>
 
 ### start_celebrity_recognition
 
@@ -1239,7 +1239,7 @@ Keyword-only arguments:
 Returns
 [StartCelebrityRecognitionResponseTypeDef](./type_defs.md#startcelebrityrecognitionresponsetypedef).
 
-<a id="start_content_moderation"></a>
+<a id="start\_content\_moderation"></a>
 
 ### start_content_moderation
 
@@ -1267,7 +1267,7 @@ Keyword-only arguments:
 Returns
 [StartContentModerationResponseTypeDef](./type_defs.md#startcontentmoderationresponsetypedef).
 
-<a id="start_face_detection"></a>
+<a id="start\_face\_detection"></a>
 
 ### start_face_detection
 
@@ -1293,7 +1293,7 @@ Keyword-only arguments:
 Returns
 [StartFaceDetectionResponseTypeDef](./type_defs.md#startfacedetectionresponsetypedef).
 
-<a id="start_face_search"></a>
+<a id="start\_face\_search"></a>
 
 ### start_face_search
 
@@ -1321,7 +1321,7 @@ Keyword-only arguments:
 Returns
 [StartFaceSearchResponseTypeDef](./type_defs.md#startfacesearchresponsetypedef).
 
-<a id="start_label_detection"></a>
+<a id="start\_label\_detection"></a>
 
 ### start_label_detection
 
@@ -1348,7 +1348,7 @@ Keyword-only arguments:
 Returns
 [StartLabelDetectionResponseTypeDef](./type_defs.md#startlabeldetectionresponsetypedef).
 
-<a id="start_person_tracking"></a>
+<a id="start\_person\_tracking"></a>
 
 ### start_person_tracking
 
@@ -1374,7 +1374,7 @@ Keyword-only arguments:
 Returns
 [StartPersonTrackingResponseTypeDef](./type_defs.md#startpersontrackingresponsetypedef).
 
-<a id="start_project_version"></a>
+<a id="start\_project\_version"></a>
 
 ### start_project_version
 
@@ -1397,7 +1397,7 @@ Keyword-only arguments:
 Returns
 [StartProjectVersionResponseTypeDef](./type_defs.md#startprojectversionresponsetypedef).
 
-<a id="start_segment_detection"></a>
+<a id="start\_segment\_detection"></a>
 
 ### start_segment_detection
 
@@ -1427,7 +1427,7 @@ Keyword-only arguments:
 Returns
 [StartSegmentDetectionResponseTypeDef](./type_defs.md#startsegmentdetectionresponsetypedef).
 
-<a id="start_stream_processor"></a>
+<a id="start\_stream\_processor"></a>
 
 ### start_stream_processor
 
@@ -1448,7 +1448,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_text_detection"></a>
+<a id="start\_text\_detection"></a>
 
 ### start_text_detection
 
@@ -1475,7 +1475,7 @@ Keyword-only arguments:
 Returns
 [StartTextDetectionResponseTypeDef](./type_defs.md#starttextdetectionresponsetypedef).
 
-<a id="stop_project_version"></a>
+<a id="stop\_project\_version"></a>
 
 ### stop_project_version
 
@@ -1496,7 +1496,7 @@ Keyword-only arguments:
 Returns
 [StopProjectVersionResponseTypeDef](./type_defs.md#stopprojectversionresponsetypedef).
 
-<a id="stop_stream_processor"></a>
+<a id="stop\_stream\_processor"></a>
 
 ### stop_stream_processor
 
@@ -1517,7 +1517,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1539,7 +1539,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1561,7 +1561,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_dataset_entries"></a>
+<a id="update\_dataset\_entries"></a>
 
 ### update_dataset_entries
 

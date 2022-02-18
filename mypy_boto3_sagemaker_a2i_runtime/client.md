@@ -83,7 +83,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -101,7 +101,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_human_loop"></a>
+<a id="delete\_human\_loop"></a>
 
 ### delete_human_loop
 
@@ -122,7 +122,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_human_loop"></a>
+<a id="describe\_human\_loop"></a>
 
 ### describe_human_loop
 
@@ -144,7 +144,7 @@ Keyword-only arguments:
 Returns
 [DescribeHumanLoopResponseTypeDef](./type_defs.md#describehumanloopresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -165,7 +165,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_human_loops"></a>
+<a id="list\_human\_loops"></a>
 
 ### list_human_loops
 
@@ -192,7 +192,7 @@ Keyword-only arguments:
 Returns
 [ListHumanLoopsResponseTypeDef](./type_defs.md#listhumanloopsresponsetypedef).
 
-<a id="start_human_loop"></a>
+<a id="start\_human\_loop"></a>
 
 ### start_human_loop
 
@@ -219,7 +219,7 @@ Keyword-only arguments:
 Returns
 [StartHumanLoopResponseTypeDef](./type_defs.md#starthumanloopresponsetypedef).
 
-<a id="stop_human_loop"></a>
+<a id="stop\_human\_loop"></a>
 
 ### stop_human_loop
 

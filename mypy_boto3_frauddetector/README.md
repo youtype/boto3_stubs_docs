@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [FraudDetectorClient](#frauddetectorclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -44,9 +45,11 @@ Install `boto3-stubs` for `FraudDetector` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[frauddetector]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[frauddetector]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-frauddetector
@@ -59,6 +62,12 @@ python -m pip install mypy-boto3-frauddetector
 ```bash
 python -m pip uninstall -y mypy-boto3-frauddetector
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="frauddetectorclient"></a>
 

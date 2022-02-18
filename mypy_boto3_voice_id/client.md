@@ -99,7 +99,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -116,7 +116,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_domain"></a>
+<a id="create\_domain"></a>
 
 ### create_domain
 
@@ -144,7 +144,7 @@ Keyword-only arguments:
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
 
-<a id="delete_domain"></a>
+<a id="delete\_domain"></a>
 
 ### delete_domain
 
@@ -162,7 +162,7 @@ Keyword-only arguments:
 
 - `DomainId`: `str` *(required)*
 
-<a id="delete_fraudster"></a>
+<a id="delete\_fraudster"></a>
 
 ### delete_fraudster
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 - `DomainId`: `str` *(required)*
 - `FraudsterId`: `str` *(required)*
 
-<a id="delete_speaker"></a>
+<a id="delete\_speaker"></a>
 
 ### delete_speaker
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 - `DomainId`: `str` *(required)*
 - `SpeakerId`: `str` *(required)*
 
-<a id="describe_domain"></a>
+<a id="describe\_domain"></a>
 
 ### describe_domain
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [DescribeDomainResponseTypeDef](./type_defs.md#describedomainresponsetypedef).
 
-<a id="describe_fraudster"></a>
+<a id="describe\_fraudster"></a>
 
 ### describe_fraudster
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 Returns
 [DescribeFraudsterResponseTypeDef](./type_defs.md#describefraudsterresponsetypedef).
 
-<a id="describe_fraudster_registration_job"></a>
+<a id="describe\_fraudster\_registration\_job"></a>
 
 ### describe_fraudster_registration_job
 
@@ -266,7 +266,7 @@ Keyword-only arguments:
 Returns
 [DescribeFraudsterRegistrationJobResponseTypeDef](./type_defs.md#describefraudsterregistrationjobresponsetypedef).
 
-<a id="describe_speaker"></a>
+<a id="describe\_speaker"></a>
 
 ### describe_speaker
 
@@ -288,7 +288,7 @@ Keyword-only arguments:
 Returns
 [DescribeSpeakerResponseTypeDef](./type_defs.md#describespeakerresponsetypedef).
 
-<a id="describe_speaker_enrollment_job"></a>
+<a id="describe\_speaker\_enrollment\_job"></a>
 
 ### describe_speaker_enrollment_job
 
@@ -311,7 +311,7 @@ Keyword-only arguments:
 Returns
 [DescribeSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#describespeakerenrollmentjobresponsetypedef).
 
-<a id="evaluate_session"></a>
+<a id="evaluate\_session"></a>
 
 ### evaluate_session
 
@@ -334,7 +334,7 @@ Keyword-only arguments:
 Returns
 [EvaluateSessionResponseTypeDef](./type_defs.md#evaluatesessionresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -354,7 +354,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_domains"></a>
+<a id="list\_domains"></a>
 
 ### list_domains
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [ListDomainsResponseTypeDef](./type_defs.md#listdomainsresponsetypedef).
 
-<a id="list_fraudster_registration_jobs"></a>
+<a id="list\_fraudster\_registration\_jobs"></a>
 
 ### list_fraudster_registration_jobs
 
@@ -403,7 +403,7 @@ Keyword-only arguments:
 Returns
 [ListFraudsterRegistrationJobsResponseTypeDef](./type_defs.md#listfraudsterregistrationjobsresponsetypedef).
 
-<a id="list_speaker_enrollment_jobs"></a>
+<a id="list\_speaker\_enrollment\_jobs"></a>
 
 ### list_speaker_enrollment_jobs
 
@@ -430,7 +430,7 @@ Keyword-only arguments:
 Returns
 [ListSpeakerEnrollmentJobsResponseTypeDef](./type_defs.md#listspeakerenrollmentjobsresponsetypedef).
 
-<a id="list_speakers"></a>
+<a id="list\_speakers"></a>
 
 ### list_speakers
 
@@ -453,7 +453,7 @@ Keyword-only arguments:
 Returns
 [ListSpeakersResponseTypeDef](./type_defs.md#listspeakersresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -474,7 +474,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="opt_out_speaker"></a>
+<a id="opt\_out\_speaker"></a>
 
 ### opt_out_speaker
 
@@ -496,7 +496,7 @@ Keyword-only arguments:
 Returns
 [OptOutSpeakerResponseTypeDef](./type_defs.md#optoutspeakerresponsetypedef).
 
-<a id="start_fraudster_registration_job"></a>
+<a id="start\_fraudster\_registration\_job"></a>
 
 ### start_fraudster_registration_job
 
@@ -528,7 +528,7 @@ Keyword-only arguments:
 Returns
 [StartFraudsterRegistrationJobResponseTypeDef](./type_defs.md#startfraudsterregistrationjobresponsetypedef).
 
-<a id="start_speaker_enrollment_job"></a>
+<a id="start\_speaker\_enrollment\_job"></a>
 
 ### start_speaker_enrollment_job
 
@@ -560,7 +560,7 @@ Keyword-only arguments:
 Returns
 [StartSpeakerEnrollmentJobResponseTypeDef](./type_defs.md#startspeakerenrollmentjobresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -581,7 +581,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -602,7 +602,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_domain"></a>
+<a id="update\_domain"></a>
 
 ### update_domain
 

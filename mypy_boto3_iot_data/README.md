@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [IoTDataPlaneClient](#iotdataplaneclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `IoTDataPlane` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[iot-data]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[iot-data]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-iot-data
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-iot-data
 ```bash
 python -m pip uninstall -y mypy-boto3-iot-data
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="iotdataplaneclient"></a>
 

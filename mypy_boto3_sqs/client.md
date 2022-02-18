@@ -108,7 +108,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_permission"></a>
+<a id="add\_permission"></a>
 
 ### add_permission
 
@@ -130,7 +130,7 @@ Keyword-only arguments:
 - `AWSAccountIds`: `Sequence`\[`str`\] *(required)*
 - `Actions`: `Sequence`\[`str`\] *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -147,7 +147,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="change_message_visibility"></a>
+<a id="change\_message\_visibility"></a>
 
 ### change_message_visibility
 
@@ -168,7 +168,7 @@ Keyword-only arguments:
 - `ReceiptHandle`: `str` *(required)*
 - `VisibilityTimeout`: `int` *(required)*
 
-<a id="change_message_visibility_batch"></a>
+<a id="change\_message\_visibility\_batch"></a>
 
 ### change_message_visibility_batch
 
@@ -193,7 +193,7 @@ Keyword-only arguments:
 Returns
 [ChangeMessageVisibilityBatchResultTypeDef](./type_defs.md#changemessagevisibilitybatchresulttypedef).
 
-<a id="create_queue"></a>
+<a id="create\_queue"></a>
 
 ### create_queue
 
@@ -217,7 +217,7 @@ Keyword-only arguments:
 
 Returns [CreateQueueResultTypeDef](./type_defs.md#createqueueresulttypedef).
 
-<a id="delete_message"></a>
+<a id="delete\_message"></a>
 
 ### delete_message
 
@@ -236,7 +236,7 @@ Keyword-only arguments:
 - `QueueUrl`: `str` *(required)*
 - `ReceiptHandle`: `str` *(required)*
 
-<a id="delete_message_batch"></a>
+<a id="delete\_message\_batch"></a>
 
 ### delete_message_batch
 
@@ -260,7 +260,7 @@ Keyword-only arguments:
 Returns
 [DeleteMessageBatchResultTypeDef](./type_defs.md#deletemessagebatchresulttypedef).
 
-<a id="delete_queue"></a>
+<a id="delete\_queue"></a>
 
 ### delete_queue
 
@@ -279,7 +279,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -299,7 +299,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_queue_attributes"></a>
+<a id="get\_queue\_attributes"></a>
 
 ### get_queue_attributes
 
@@ -322,7 +322,7 @@ Keyword-only arguments:
 Returns
 [GetQueueAttributesResultTypeDef](./type_defs.md#getqueueattributesresulttypedef).
 
-<a id="get_queue_url"></a>
+<a id="get\_queue\_url"></a>
 
 ### get_queue_url
 
@@ -343,7 +343,7 @@ Keyword-only arguments:
 
 Returns [GetQueueUrlResultTypeDef](./type_defs.md#getqueueurlresulttypedef).
 
-<a id="list_dead_letter_source_queues"></a>
+<a id="list\_dead\_letter\_source\_queues"></a>
 
 ### list_dead_letter_source_queues
 
@@ -368,7 +368,7 @@ Keyword-only arguments:
 Returns
 [ListDeadLetterSourceQueuesResultTypeDef](./type_defs.md#listdeadlettersourcequeuesresulttypedef).
 
-<a id="list_queue_tags"></a>
+<a id="list\_queue\_tags"></a>
 
 ### list_queue_tags
 
@@ -389,7 +389,7 @@ Keyword-only arguments:
 Returns
 [ListQueueTagsResultTypeDef](./type_defs.md#listqueuetagsresulttypedef).
 
-<a id="list_queues"></a>
+<a id="list\_queues"></a>
 
 ### list_queues
 
@@ -411,7 +411,7 @@ Keyword-only arguments:
 
 Returns [ListQueuesResultTypeDef](./type_defs.md#listqueuesresulttypedef).
 
-<a id="purge_queue"></a>
+<a id="purge\_queue"></a>
 
 ### purge_queue
 
@@ -429,7 +429,7 @@ Keyword-only arguments:
 
 - `QueueUrl`: `str` *(required)*
 
-<a id="receive_message"></a>
+<a id="receive\_message"></a>
 
 ### receive_message
 
@@ -457,7 +457,7 @@ Keyword-only arguments:
 Returns
 [ReceiveMessageResultTypeDef](./type_defs.md#receivemessageresulttypedef).
 
-<a id="remove_permission"></a>
+<a id="remove\_permission"></a>
 
 ### remove_permission
 
@@ -477,7 +477,7 @@ Keyword-only arguments:
 - `QueueUrl`: `str` *(required)*
 - `Label`: `str` *(required)*
 
-<a id="send_message"></a>
+<a id="send\_message"></a>
 
 ### send_message
 
@@ -506,7 +506,7 @@ Keyword-only arguments:
 
 Returns [SendMessageResultTypeDef](./type_defs.md#sendmessageresulttypedef).
 
-<a id="send_message_batch"></a>
+<a id="send\_message\_batch"></a>
 
 ### send_message_batch
 
@@ -530,7 +530,7 @@ Keyword-only arguments:
 Returns
 [SendMessageBatchResultTypeDef](./type_defs.md#sendmessagebatchresulttypedef).
 
-<a id="set_queue_attributes"></a>
+<a id="set\_queue\_attributes"></a>
 
 ### set_queue_attributes
 
@@ -551,7 +551,7 @@ Keyword-only arguments:
   `Mapping`\[[QueueAttributeNameType](./literals.md#queueattributenametype),
   `str`\] *(required)*
 
-<a id="tag_queue"></a>
+<a id="tag\_queue"></a>
 
 ### tag_queue
 
@@ -570,7 +570,7 @@ Keyword-only arguments:
 - `QueueUrl`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_queue"></a>
+<a id="untag\_queue"></a>
 
 ### untag_queue
 

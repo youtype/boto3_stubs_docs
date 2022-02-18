@@ -113,7 +113,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_external_connection"></a>
+<a id="associate\_external\_connection"></a>
 
 ### associate_external_connection
 
@@ -138,7 +138,7 @@ Keyword-only arguments:
 Returns
 [AssociateExternalConnectionResultTypeDef](./type_defs.md#associateexternalconnectionresulttypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -155,7 +155,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="copy_package_versions"></a>
+<a id="copy\_package\_versions"></a>
 
 ### copy_package_versions
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 Returns
 [CopyPackageVersionsResultTypeDef](./type_defs.md#copypackageversionsresulttypedef).
 
-<a id="create_domain"></a>
+<a id="create\_domain"></a>
 
 ### create_domain
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 
 Returns [CreateDomainResultTypeDef](./type_defs.md#createdomainresulttypedef).
 
-<a id="create_repository"></a>
+<a id="create\_repository"></a>
 
 ### create_repository
 
@@ -237,7 +237,7 @@ Keyword-only arguments:
 Returns
 [CreateRepositoryResultTypeDef](./type_defs.md#createrepositoryresulttypedef).
 
-<a id="delete_domain"></a>
+<a id="delete\_domain"></a>
 
 ### delete_domain
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 
 Returns [DeleteDomainResultTypeDef](./type_defs.md#deletedomainresulttypedef).
 
-<a id="delete_domain_permissions_policy"></a>
+<a id="delete\_domain\_permissions\_policy"></a>
 
 ### delete_domain_permissions_policy
 
@@ -282,7 +282,7 @@ Keyword-only arguments:
 Returns
 [DeleteDomainPermissionsPolicyResultTypeDef](./type_defs.md#deletedomainpermissionspolicyresulttypedef).
 
-<a id="delete_package_versions"></a>
+<a id="delete\_package\_versions"></a>
 
 ### delete_package_versions
 
@@ -312,7 +312,7 @@ Keyword-only arguments:
 Returns
 [DeletePackageVersionsResultTypeDef](./type_defs.md#deletepackageversionsresulttypedef).
 
-<a id="delete_repository"></a>
+<a id="delete\_repository"></a>
 
 ### delete_repository
 
@@ -335,7 +335,7 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryResultTypeDef](./type_defs.md#deleterepositoryresulttypedef).
 
-<a id="delete_repository_permissions_policy"></a>
+<a id="delete\_repository\_permissions\_policy"></a>
 
 ### delete_repository_permissions_policy
 
@@ -360,7 +360,7 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#deleterepositorypermissionspolicyresulttypedef).
 
-<a id="describe_domain"></a>
+<a id="describe\_domain"></a>
 
 ### describe_domain
 
@@ -384,7 +384,7 @@ Keyword-only arguments:
 Returns
 [DescribeDomainResultTypeDef](./type_defs.md#describedomainresulttypedef).
 
-<a id="describe_package_version"></a>
+<a id="describe\_package\_version"></a>
 
 ### describe_package_version
 
@@ -414,7 +414,7 @@ Keyword-only arguments:
 Returns
 [DescribePackageVersionResultTypeDef](./type_defs.md#describepackageversionresulttypedef).
 
-<a id="describe_repository"></a>
+<a id="describe\_repository"></a>
 
 ### describe_repository
 
@@ -438,7 +438,7 @@ Keyword-only arguments:
 Returns
 [DescribeRepositoryResultTypeDef](./type_defs.md#describerepositoryresulttypedef).
 
-<a id="disassociate_external_connection"></a>
+<a id="disassociate\_external\_connection"></a>
 
 ### disassociate_external_connection
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 Returns
 [DisassociateExternalConnectionResultTypeDef](./type_defs.md#disassociateexternalconnectionresulttypedef).
 
-<a id="dispose_package_versions"></a>
+<a id="dispose\_package\_versions"></a>
 
 ### dispose_package_versions
 
@@ -495,7 +495,7 @@ Keyword-only arguments:
 Returns
 [DisposePackageVersionsResultTypeDef](./type_defs.md#disposepackageversionsresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -516,7 +516,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_authorization_token"></a>
+<a id="get\_authorization\_token"></a>
 
 ### get_authorization_token
 
@@ -541,7 +541,7 @@ Keyword-only arguments:
 Returns
 [GetAuthorizationTokenResultTypeDef](./type_defs.md#getauthorizationtokenresulttypedef).
 
-<a id="get_domain_permissions_policy"></a>
+<a id="get\_domain\_permissions\_policy"></a>
 
 ### get_domain_permissions_policy
 
@@ -564,7 +564,7 @@ Keyword-only arguments:
 Returns
 [GetDomainPermissionsPolicyResultTypeDef](./type_defs.md#getdomainpermissionspolicyresulttypedef).
 
-<a id="get_package_version_asset"></a>
+<a id="get\_package\_version\_asset"></a>
 
 ### get_package_version_asset
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 Returns
 [GetPackageVersionAssetResultTypeDef](./type_defs.md#getpackageversionassetresulttypedef).
 
-<a id="get_package_version_readme"></a>
+<a id="get\_package\_version\_readme"></a>
 
 ### get_package_version_readme
 
@@ -622,7 +622,7 @@ Keyword-only arguments:
 Returns
 [GetPackageVersionReadmeResultTypeDef](./type_defs.md#getpackageversionreadmeresulttypedef).
 
-<a id="get_repository_endpoint"></a>
+<a id="get\_repository\_endpoint"></a>
 
 ### get_repository_endpoint
 
@@ -647,7 +647,7 @@ Keyword-only arguments:
 Returns
 [GetRepositoryEndpointResultTypeDef](./type_defs.md#getrepositoryendpointresulttypedef).
 
-<a id="get_repository_permissions_policy"></a>
+<a id="get\_repository\_permissions\_policy"></a>
 
 ### get_repository_permissions_policy
 
@@ -671,7 +671,7 @@ Keyword-only arguments:
 Returns
 [GetRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#getrepositorypermissionspolicyresulttypedef).
 
-<a id="list_domains"></a>
+<a id="list\_domains"></a>
 
 ### list_domains
 
@@ -694,7 +694,7 @@ Keyword-only arguments:
 
 Returns [ListDomainsResultTypeDef](./type_defs.md#listdomainsresulttypedef).
 
-<a id="list_package_version_assets"></a>
+<a id="list\_package\_version\_assets"></a>
 
 ### list_package_version_assets
 
@@ -726,7 +726,7 @@ Keyword-only arguments:
 Returns
 [ListPackageVersionAssetsResultTypeDef](./type_defs.md#listpackageversionassetsresulttypedef).
 
-<a id="list_package_version_dependencies"></a>
+<a id="list\_package\_version\_dependencies"></a>
 
 ### list_package_version_dependencies
 
@@ -755,7 +755,7 @@ Keyword-only arguments:
 Returns
 [ListPackageVersionDependenciesResultTypeDef](./type_defs.md#listpackageversiondependenciesresulttypedef).
 
-<a id="list_package_versions"></a>
+<a id="list\_package\_versions"></a>
 
 ### list_package_versions
 
@@ -789,7 +789,7 @@ Keyword-only arguments:
 Returns
 [ListPackageVersionsResultTypeDef](./type_defs.md#listpackageversionsresulttypedef).
 
-<a id="list_packages"></a>
+<a id="list\_packages"></a>
 
 ### list_packages
 
@@ -818,7 +818,7 @@ Keyword-only arguments:
 
 Returns [ListPackagesResultTypeDef](./type_defs.md#listpackagesresulttypedef).
 
-<a id="list_repositories"></a>
+<a id="list\_repositories"></a>
 
 ### list_repositories
 
@@ -843,7 +843,7 @@ Keyword-only arguments:
 Returns
 [ListRepositoriesResultTypeDef](./type_defs.md#listrepositoriesresulttypedef).
 
-<a id="list_repositories_in_domain"></a>
+<a id="list\_repositories\_in\_domain"></a>
 
 ### list_repositories_in_domain
 
@@ -872,7 +872,7 @@ Keyword-only arguments:
 Returns
 [ListRepositoriesInDomainResultTypeDef](./type_defs.md#listrepositoriesindomainresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -895,7 +895,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
-<a id="put_domain_permissions_policy"></a>
+<a id="put\_domain\_permissions\_policy"></a>
 
 ### put_domain_permissions_policy
 
@@ -920,7 +920,7 @@ Keyword-only arguments:
 Returns
 [PutDomainPermissionsPolicyResultTypeDef](./type_defs.md#putdomainpermissionspolicyresulttypedef).
 
-<a id="put_repository_permissions_policy"></a>
+<a id="put\_repository\_permissions\_policy"></a>
 
 ### put_repository_permissions_policy
 
@@ -947,7 +947,7 @@ Keyword-only arguments:
 Returns
 [PutRepositoryPermissionsPolicyResultTypeDef](./type_defs.md#putrepositorypermissionspolicyresulttypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -968,7 +968,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -989,7 +989,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_package_versions_status"></a>
+<a id="update\_package\_versions\_status"></a>
 
 ### update_package_versions_status
 
@@ -1023,7 +1023,7 @@ Keyword-only arguments:
 Returns
 [UpdatePackageVersionsStatusResultTypeDef](./type_defs.md#updatepackageversionsstatusresulttypedef).
 
-<a id="update_repository"></a>
+<a id="update\_repository"></a>
 
 ### update_repository
 

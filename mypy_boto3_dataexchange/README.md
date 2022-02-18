@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [DataExchangeClient](#dataexchangeclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `DataExchange` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[dataexchange]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[dataexchange]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-dataexchange
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-dataexchange
 ```bash
 python -m pip uninstall -y mypy-boto3-dataexchange
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="dataexchangeclient"></a>
 

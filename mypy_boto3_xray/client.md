@@ -104,7 +104,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_get_traces"></a>
+<a id="batch\_get\_traces"></a>
 
 ### batch_get_traces
 
@@ -126,7 +126,7 @@ Keyword-only arguments:
 Returns
 [BatchGetTracesResultTypeDef](./type_defs.md#batchgettracesresulttypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -143,7 +143,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_group"></a>
+<a id="create\_group"></a>
 
 ### create_group
 
@@ -167,7 +167,7 @@ Keyword-only arguments:
 
 Returns [CreateGroupResultTypeDef](./type_defs.md#creategroupresulttypedef).
 
-<a id="create_sampling_rule"></a>
+<a id="create\_sampling\_rule"></a>
 
 ### create_sampling_rule
 
@@ -190,7 +190,7 @@ Keyword-only arguments:
 Returns
 [CreateSamplingRuleResultTypeDef](./type_defs.md#createsamplingruleresulttypedef).
 
-<a id="delete_group"></a>
+<a id="delete\_group"></a>
 
 ### delete_group
 
@@ -211,7 +211,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_sampling_rule"></a>
+<a id="delete\_sampling\_rule"></a>
 
 ### delete_sampling_rule
 
@@ -233,7 +233,7 @@ Keyword-only arguments:
 Returns
 [DeleteSamplingRuleResultTypeDef](./type_defs.md#deletesamplingruleresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -253,7 +253,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_encryption_config"></a>
+<a id="get\_encryption\_config"></a>
 
 ### get_encryption_config
 
@@ -267,7 +267,7 @@ Boto3 documentation:
 Returns
 [GetEncryptionConfigResultTypeDef](./type_defs.md#getencryptionconfigresulttypedef).
 
-<a id="get_group"></a>
+<a id="get\_group"></a>
 
 ### get_group
 
@@ -288,7 +288,7 @@ Keyword-only arguments:
 
 Returns [GetGroupResultTypeDef](./type_defs.md#getgroupresulttypedef).
 
-<a id="get_groups"></a>
+<a id="get\_groups"></a>
 
 ### get_groups
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 
 Returns [GetGroupsResultTypeDef](./type_defs.md#getgroupsresulttypedef).
 
-<a id="get_insight"></a>
+<a id="get\_insight"></a>
 
 ### get_insight
 
@@ -328,7 +328,7 @@ Keyword-only arguments:
 
 Returns [GetInsightResultTypeDef](./type_defs.md#getinsightresulttypedef).
 
-<a id="get_insight_events"></a>
+<a id="get\_insight\_events"></a>
 
 ### get_insight_events
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 Returns
 [GetInsightEventsResultTypeDef](./type_defs.md#getinsighteventsresulttypedef).
 
-<a id="get_insight_impact_graph"></a>
+<a id="get\_insight\_impact\_graph"></a>
 
 ### get_insight_impact_graph
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [GetInsightImpactGraphResultTypeDef](./type_defs.md#getinsightimpactgraphresulttypedef).
 
-<a id="get_insight_summaries"></a>
+<a id="get\_insight\_summaries"></a>
 
 ### get_insight_summaries
 
@@ -404,7 +404,7 @@ Keyword-only arguments:
 Returns
 [GetInsightSummariesResultTypeDef](./type_defs.md#getinsightsummariesresulttypedef).
 
-<a id="get_sampling_rules"></a>
+<a id="get\_sampling\_rules"></a>
 
 ### get_sampling_rules
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 Returns
 [GetSamplingRulesResultTypeDef](./type_defs.md#getsamplingrulesresulttypedef).
 
-<a id="get_sampling_statistic_summaries"></a>
+<a id="get\_sampling\_statistic\_summaries"></a>
 
 ### get_sampling_statistic_summaries
 
@@ -447,7 +447,7 @@ Keyword-only arguments:
 Returns
 [GetSamplingStatisticSummariesResultTypeDef](./type_defs.md#getsamplingstatisticsummariesresulttypedef).
 
-<a id="get_sampling_targets"></a>
+<a id="get\_sampling\_targets"></a>
 
 ### get_sampling_targets
 
@@ -471,7 +471,7 @@ Keyword-only arguments:
 Returns
 [GetSamplingTargetsResultTypeDef](./type_defs.md#getsamplingtargetsresulttypedef).
 
-<a id="get_service_graph"></a>
+<a id="get\_service\_graph"></a>
 
 ### get_service_graph
 
@@ -497,7 +497,7 @@ Keyword-only arguments:
 Returns
 [GetServiceGraphResultTypeDef](./type_defs.md#getservicegraphresulttypedef).
 
-<a id="get_time_series_service_statistics"></a>
+<a id="get\_time\_series\_service\_statistics"></a>
 
 ### get_time_series_service_statistics
 
@@ -526,7 +526,7 @@ Keyword-only arguments:
 Returns
 [GetTimeSeriesServiceStatisticsResultTypeDef](./type_defs.md#gettimeseriesservicestatisticsresulttypedef).
 
-<a id="get_trace_graph"></a>
+<a id="get\_trace\_graph"></a>
 
 ### get_trace_graph
 
@@ -548,7 +548,7 @@ Keyword-only arguments:
 Returns
 [GetTraceGraphResultTypeDef](./type_defs.md#gettracegraphresulttypedef).
 
-<a id="get_trace_summaries"></a>
+<a id="get\_trace\_summaries"></a>
 
 ### get_trace_summaries
 
@@ -577,7 +577,7 @@ Keyword-only arguments:
 Returns
 [GetTraceSummariesResultTypeDef](./type_defs.md#gettracesummariesresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -600,7 +600,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_encryption_config"></a>
+<a id="put\_encryption\_config"></a>
 
 ### put_encryption_config
 
@@ -622,7 +622,7 @@ Keyword-only arguments:
 Returns
 [PutEncryptionConfigResultTypeDef](./type_defs.md#putencryptionconfigresulttypedef).
 
-<a id="put_telemetry_records"></a>
+<a id="put\_telemetry\_records"></a>
 
 ### put_telemetry_records
 
@@ -647,7 +647,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_trace_segments"></a>
+<a id="put\_trace\_segments"></a>
 
 ### put_trace_segments
 
@@ -668,7 +668,7 @@ Keyword-only arguments:
 Returns
 [PutTraceSegmentsResultTypeDef](./type_defs.md#puttracesegmentsresulttypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -689,7 +689,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -710,7 +710,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_group"></a>
+<a id="update\_group"></a>
 
 ### update_group
 
@@ -734,7 +734,7 @@ Keyword-only arguments:
 
 Returns [UpdateGroupResultTypeDef](./type_defs.md#updategroupresulttypedef).
 
-<a id="update_sampling_rule"></a>
+<a id="update\_sampling\_rule"></a>
 
 ### update_sampling_rule
 

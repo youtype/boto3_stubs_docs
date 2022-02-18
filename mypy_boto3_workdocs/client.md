@@ -138,7 +138,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="abort_document_version_upload"></a>
+<a id="abort\_document\_version\_upload"></a>
 
 ### abort_document_version_upload
 
@@ -160,7 +160,7 @@ Keyword-only arguments:
 - `VersionId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="activate_user"></a>
+<a id="activate\_user"></a>
 
 ### activate_user
 
@@ -182,7 +182,7 @@ Keyword-only arguments:
 Returns
 [ActivateUserResponseTypeDef](./type_defs.md#activateuserresponsetypedef).
 
-<a id="add_resource_permissions"></a>
+<a id="add\_resource\_permissions"></a>
 
 ### add_resource_permissions
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 Returns
 [AddResourcePermissionsResponseTypeDef](./type_defs.md#addresourcepermissionsresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -227,7 +227,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_comment"></a>
+<a id="create\_comment"></a>
 
 ### create_comment
 
@@ -256,7 +256,7 @@ Keyword-only arguments:
 Returns
 [CreateCommentResponseTypeDef](./type_defs.md#createcommentresponsetypedef).
 
-<a id="create_custom_metadata"></a>
+<a id="create\_custom\_metadata"></a>
 
 ### create_custom_metadata
 
@@ -280,7 +280,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_folder"></a>
+<a id="create\_folder"></a>
 
 ### create_folder
 
@@ -303,7 +303,7 @@ Keyword-only arguments:
 Returns
 [CreateFolderResponseTypeDef](./type_defs.md#createfolderresponsetypedef).
 
-<a id="create_labels"></a>
+<a id="create\_labels"></a>
 
 ### create_labels
 
@@ -327,7 +327,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_notification_subscription"></a>
+<a id="create\_notification\_subscription"></a>
 
 ### create_notification_subscription
 
@@ -355,7 +355,7 @@ Keyword-only arguments:
 Returns
 [CreateNotificationSubscriptionResponseTypeDef](./type_defs.md#createnotificationsubscriptionresponsetypedef).
 
-<a id="create_user"></a>
+<a id="create\_user"></a>
 
 ### create_user
 
@@ -384,7 +384,7 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
-<a id="deactivate_user"></a>
+<a id="deactivate\_user"></a>
 
 ### deactivate_user
 
@@ -404,7 +404,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="delete_comment"></a>
+<a id="delete\_comment"></a>
 
 ### delete_comment
 
@@ -425,7 +425,7 @@ Keyword-only arguments:
 - `CommentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="delete_custom_metadata"></a>
+<a id="delete\_custom\_metadata"></a>
 
 ### delete_custom_metadata
 
@@ -449,7 +449,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_document"></a>
+<a id="delete\_document"></a>
 
 ### delete_document
 
@@ -468,7 +468,7 @@ Keyword-only arguments:
 - `DocumentId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="delete_folder"></a>
+<a id="delete\_folder"></a>
 
 ### delete_folder
 
@@ -487,7 +487,7 @@ Keyword-only arguments:
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="delete_folder_contents"></a>
+<a id="delete\_folder\_contents"></a>
 
 ### delete_folder_contents
 
@@ -506,7 +506,7 @@ Keyword-only arguments:
 - `FolderId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="delete_labels"></a>
+<a id="delete\_labels"></a>
 
 ### delete_labels
 
@@ -529,7 +529,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_notification_subscription"></a>
+<a id="delete\_notification\_subscription"></a>
 
 ### delete_notification_subscription
 
@@ -549,7 +549,7 @@ Keyword-only arguments:
 - `SubscriptionId`: `str` *(required)*
 - `OrganizationId`: `str` *(required)*
 
-<a id="delete_user"></a>
+<a id="delete\_user"></a>
 
 ### delete_user
 
@@ -568,7 +568,7 @@ Keyword-only arguments:
 - `UserId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="describe_activities"></a>
+<a id="describe\_activities"></a>
 
 ### describe_activities
 
@@ -598,7 +598,7 @@ Keyword-only arguments:
 Returns
 [DescribeActivitiesResponseTypeDef](./type_defs.md#describeactivitiesresponsetypedef).
 
-<a id="describe_comments"></a>
+<a id="describe\_comments"></a>
 
 ### describe_comments
 
@@ -623,7 +623,7 @@ Keyword-only arguments:
 Returns
 [DescribeCommentsResponseTypeDef](./type_defs.md#describecommentsresponsetypedef).
 
-<a id="describe_document_versions"></a>
+<a id="describe\_document\_versions"></a>
 
 ### describe_document_versions
 
@@ -650,7 +650,7 @@ Keyword-only arguments:
 Returns
 [DescribeDocumentVersionsResponseTypeDef](./type_defs.md#describedocumentversionsresponsetypedef).
 
-<a id="describe_folder_contents"></a>
+<a id="describe\_folder\_contents"></a>
 
 ### describe_folder_contents
 
@@ -680,7 +680,7 @@ Keyword-only arguments:
 Returns
 [DescribeFolderContentsResponseTypeDef](./type_defs.md#describefoldercontentsresponsetypedef).
 
-<a id="describe_groups"></a>
+<a id="describe\_groups"></a>
 
 ### describe_groups
 
@@ -705,7 +705,7 @@ Keyword-only arguments:
 Returns
 [DescribeGroupsResponseTypeDef](./type_defs.md#describegroupsresponsetypedef).
 
-<a id="describe_notification_subscriptions"></a>
+<a id="describe\_notification\_subscriptions"></a>
 
 ### describe_notification_subscriptions
 
@@ -729,7 +729,7 @@ Keyword-only arguments:
 Returns
 [DescribeNotificationSubscriptionsResponseTypeDef](./type_defs.md#describenotificationsubscriptionsresponsetypedef).
 
-<a id="describe_resource_permissions"></a>
+<a id="describe\_resource\_permissions"></a>
 
 ### describe_resource_permissions
 
@@ -755,7 +755,7 @@ Keyword-only arguments:
 Returns
 [DescribeResourcePermissionsResponseTypeDef](./type_defs.md#describeresourcepermissionsresponsetypedef).
 
-<a id="describe_root_folders"></a>
+<a id="describe\_root\_folders"></a>
 
 ### describe_root_folders
 
@@ -779,7 +779,7 @@ Keyword-only arguments:
 Returns
 [DescribeRootFoldersResponseTypeDef](./type_defs.md#describerootfoldersresponsetypedef).
 
-<a id="describe_users"></a>
+<a id="describe\_users"></a>
 
 ### describe_users
 
@@ -809,7 +809,7 @@ Keyword-only arguments:
 Returns
 [DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -829,7 +829,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_current_user"></a>
+<a id="get\_current\_user"></a>
 
 ### get_current_user
 
@@ -851,7 +851,7 @@ Keyword-only arguments:
 Returns
 [GetCurrentUserResponseTypeDef](./type_defs.md#getcurrentuserresponsetypedef).
 
-<a id="get_document"></a>
+<a id="get\_document"></a>
 
 ### get_document
 
@@ -874,7 +874,7 @@ Keyword-only arguments:
 Returns
 [GetDocumentResponseTypeDef](./type_defs.md#getdocumentresponsetypedef).
 
-<a id="get_document_path"></a>
+<a id="get\_document\_path"></a>
 
 ### get_document_path
 
@@ -900,7 +900,7 @@ Keyword-only arguments:
 Returns
 [GetDocumentPathResponseTypeDef](./type_defs.md#getdocumentpathresponsetypedef).
 
-<a id="get_document_version"></a>
+<a id="get\_document\_version"></a>
 
 ### get_document_version
 
@@ -925,7 +925,7 @@ Keyword-only arguments:
 Returns
 [GetDocumentVersionResponseTypeDef](./type_defs.md#getdocumentversionresponsetypedef).
 
-<a id="get_folder"></a>
+<a id="get\_folder"></a>
 
 ### get_folder
 
@@ -947,7 +947,7 @@ Keyword-only arguments:
 
 Returns [GetFolderResponseTypeDef](./type_defs.md#getfolderresponsetypedef).
 
-<a id="get_folder_path"></a>
+<a id="get\_folder\_path"></a>
 
 ### get_folder_path
 
@@ -973,7 +973,7 @@ Keyword-only arguments:
 Returns
 [GetFolderPathResponseTypeDef](./type_defs.md#getfolderpathresponsetypedef).
 
-<a id="get_resources"></a>
+<a id="get\_resources"></a>
 
 ### get_resources
 
@@ -999,7 +999,7 @@ Keyword-only arguments:
 Returns
 [GetResourcesResponseTypeDef](./type_defs.md#getresourcesresponsetypedef).
 
-<a id="initiate_document_version_upload"></a>
+<a id="initiate\_document\_version\_upload"></a>
 
 ### initiate_document_version_upload
 
@@ -1028,7 +1028,7 @@ Keyword-only arguments:
 Returns
 [InitiateDocumentVersionUploadResponseTypeDef](./type_defs.md#initiatedocumentversionuploadresponsetypedef).
 
-<a id="remove_all_resource_permissions"></a>
+<a id="remove\_all\_resource\_permissions"></a>
 
 ### remove_all_resource_permissions
 
@@ -1048,7 +1048,7 @@ Keyword-only arguments:
 - `ResourceId`: `str` *(required)*
 - `AuthenticationToken`: `str`
 
-<a id="remove_resource_permission"></a>
+<a id="remove\_resource\_permission"></a>
 
 ### remove_resource_permission
 
@@ -1070,7 +1070,7 @@ Keyword-only arguments:
 - `AuthenticationToken`: `str`
 - `PrincipalType`: [PrincipalTypeType](./literals.md#principaltypetype)
 
-<a id="update_document"></a>
+<a id="update\_document"></a>
 
 ### update_document
 
@@ -1092,7 +1092,7 @@ Keyword-only arguments:
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 
-<a id="update_document_version"></a>
+<a id="update\_document\_version"></a>
 
 ### update_document_version
 
@@ -1114,7 +1114,7 @@ Keyword-only arguments:
 - `VersionStatus`: `Literal['ACTIVE']` (see
   [DocumentVersionStatusType](./literals.md#documentversionstatustype))
 
-<a id="update_folder"></a>
+<a id="update\_folder"></a>
 
 ### update_folder
 
@@ -1136,7 +1136,7 @@ Keyword-only arguments:
 - `ParentFolderId`: `str`
 - `ResourceState`: [ResourceStateTypeType](./literals.md#resourcestatetypetype)
 
-<a id="update_user"></a>
+<a id="update\_user"></a>
 
 ### update_user
 

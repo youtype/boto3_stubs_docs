@@ -90,7 +90,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -107,7 +107,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_delivery_stream"></a>
+<a id="create\_delivery\_stream"></a>
 
 ### create_delivery_stream
 
@@ -149,7 +149,7 @@ Keyword-only arguments:
 Returns
 [CreateDeliveryStreamOutputTypeDef](./type_defs.md#createdeliverystreamoutputtypedef).
 
-<a id="delete_delivery_stream"></a>
+<a id="delete\_delivery\_stream"></a>
 
 ### delete_delivery_stream
 
@@ -170,7 +170,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_delivery_stream"></a>
+<a id="describe\_delivery\_stream"></a>
 
 ### describe_delivery_stream
 
@@ -194,7 +194,7 @@ Keyword-only arguments:
 Returns
 [DescribeDeliveryStreamOutputTypeDef](./type_defs.md#describedeliverystreamoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -214,7 +214,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_delivery_streams"></a>
+<a id="list\_delivery\_streams"></a>
 
 ### list_delivery_streams
 
@@ -238,7 +238,7 @@ Keyword-only arguments:
 Returns
 [ListDeliveryStreamsOutputTypeDef](./type_defs.md#listdeliverystreamsoutputtypedef).
 
-<a id="list_tags_for_delivery_stream"></a>
+<a id="list\_tags\_for\_delivery\_stream"></a>
 
 ### list_tags_for_delivery_stream
 
@@ -262,7 +262,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForDeliveryStreamOutputTypeDef](./type_defs.md#listtagsfordeliverystreamoutputtypedef).
 
-<a id="put_record"></a>
+<a id="put\_record"></a>
 
 ### put_record
 
@@ -284,7 +284,7 @@ Keyword-only arguments:
 
 Returns [PutRecordOutputTypeDef](./type_defs.md#putrecordoutputtypedef).
 
-<a id="put_record_batch"></a>
+<a id="put\_record\_batch"></a>
 
 ### put_record_batch
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 Returns
 [PutRecordBatchOutputTypeDef](./type_defs.md#putrecordbatchoutputtypedef).
 
-<a id="start_delivery_stream_encryption"></a>
+<a id="start\_delivery\_stream\_encryption"></a>
 
 ### start_delivery_stream_encryption
 
@@ -331,7 +331,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="stop_delivery_stream_encryption"></a>
+<a id="stop\_delivery\_stream\_encryption"></a>
 
 ### stop_delivery_stream_encryption
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_delivery_stream"></a>
+<a id="tag\_delivery\_stream"></a>
 
 ### tag_delivery_stream
 
@@ -373,7 +373,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_delivery_stream"></a>
+<a id="untag\_delivery\_stream"></a>
 
 ### untag_delivery_stream
 
@@ -394,7 +394,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_destination"></a>
+<a id="update\_destination"></a>
 
 ### update_destination
 

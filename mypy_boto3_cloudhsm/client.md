@@ -95,7 +95,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_tags_to_resource"></a>
+<a id="add\_tags\_to\_resource"></a>
 
 ### add_tags_to_resource
 
@@ -117,7 +117,7 @@ Keyword-only arguments:
 Returns
 [AddTagsToResourceResponseTypeDef](./type_defs.md#addtagstoresourceresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -134,7 +134,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_hapg"></a>
+<a id="create\_hapg"></a>
 
 ### create_hapg
 
@@ -154,7 +154,7 @@ Keyword-only arguments:
 
 Returns [CreateHapgResponseTypeDef](./type_defs.md#createhapgresponsetypedef).
 
-<a id="create_hsm"></a>
+<a id="create\_hsm"></a>
 
 ### create_hsm
 
@@ -182,7 +182,7 @@ Keyword-only arguments:
 
 Returns [CreateHsmResponseTypeDef](./type_defs.md#createhsmresponsetypedef).
 
-<a id="create_luna_client"></a>
+<a id="create\_luna\_client"></a>
 
 ### create_luna_client
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 Returns
 [CreateLunaClientResponseTypeDef](./type_defs.md#createlunaclientresponsetypedef).
 
-<a id="delete_hapg"></a>
+<a id="delete\_hapg"></a>
 
 ### delete_hapg
 
@@ -224,7 +224,7 @@ Keyword-only arguments:
 
 Returns [DeleteHapgResponseTypeDef](./type_defs.md#deletehapgresponsetypedef).
 
-<a id="delete_hsm"></a>
+<a id="delete\_hsm"></a>
 
 ### delete_hsm
 
@@ -244,7 +244,7 @@ Keyword-only arguments:
 
 Returns [DeleteHsmResponseTypeDef](./type_defs.md#deletehsmresponsetypedef).
 
-<a id="delete_luna_client"></a>
+<a id="delete\_luna\_client"></a>
 
 ### delete_luna_client
 
@@ -265,7 +265,7 @@ Keyword-only arguments:
 Returns
 [DeleteLunaClientResponseTypeDef](./type_defs.md#deletelunaclientresponsetypedef).
 
-<a id="describe_hapg"></a>
+<a id="describe\_hapg"></a>
 
 ### describe_hapg
 
@@ -286,7 +286,7 @@ Keyword-only arguments:
 Returns
 [DescribeHapgResponseTypeDef](./type_defs.md#describehapgresponsetypedef).
 
-<a id="describe_hsm"></a>
+<a id="describe\_hsm"></a>
 
 ### describe_hsm
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 Returns
 [DescribeHsmResponseTypeDef](./type_defs.md#describehsmresponsetypedef).
 
-<a id="describe_luna_client"></a>
+<a id="describe\_luna\_client"></a>
 
 ### describe_luna_client
 
@@ -330,7 +330,7 @@ Keyword-only arguments:
 Returns
 [DescribeLunaClientResponseTypeDef](./type_defs.md#describelunaclientresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -350,7 +350,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_config"></a>
+<a id="get\_config"></a>
 
 ### get_config
 
@@ -373,7 +373,7 @@ Keyword-only arguments:
 
 Returns [GetConfigResponseTypeDef](./type_defs.md#getconfigresponsetypedef).
 
-<a id="list_available_zones"></a>
+<a id="list\_available\_zones"></a>
 
 ### list_available_zones
 
@@ -387,7 +387,7 @@ Boto3 documentation:
 Returns
 [ListAvailableZonesResponseTypeDef](./type_defs.md#listavailablezonesresponsetypedef).
 
-<a id="list_hapgs"></a>
+<a id="list\_hapgs"></a>
 
 ### list_hapgs
 
@@ -407,7 +407,7 @@ Keyword-only arguments:
 
 Returns [ListHapgsResponseTypeDef](./type_defs.md#listhapgsresponsetypedef).
 
-<a id="list_hsms"></a>
+<a id="list\_hsms"></a>
 
 ### list_hsms
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 
 Returns [ListHsmsResponseTypeDef](./type_defs.md#listhsmsresponsetypedef).
 
-<a id="list_luna_clients"></a>
+<a id="list\_luna\_clients"></a>
 
 ### list_luna_clients
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 Returns
 [ListLunaClientsResponseTypeDef](./type_defs.md#listlunaclientsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="modify_hapg"></a>
+<a id="modify\_hapg"></a>
 
 ### modify_hapg
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 
 Returns [ModifyHapgResponseTypeDef](./type_defs.md#modifyhapgresponsetypedef).
 
-<a id="modify_hsm"></a>
+<a id="modify\_hsm"></a>
 
 ### modify_hsm
 
@@ -516,7 +516,7 @@ Keyword-only arguments:
 
 Returns [ModifyHsmResponseTypeDef](./type_defs.md#modifyhsmresponsetypedef).
 
-<a id="modify_luna_client"></a>
+<a id="modify\_luna\_client"></a>
 
 ### modify_luna_client
 
@@ -538,7 +538,7 @@ Keyword-only arguments:
 Returns
 [ModifyLunaClientResponseTypeDef](./type_defs.md#modifylunaclientresponsetypedef).
 
-<a id="remove_tags_from_resource"></a>
+<a id="remove\_tags\_from\_resource"></a>
 
 ### remove_tags_from_resource
 

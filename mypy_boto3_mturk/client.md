@@ -113,7 +113,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_qualification_request"></a>
+<a id="accept\_qualification\_request"></a>
 
 ### accept_qualification_request
 
@@ -136,7 +136,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="approve_assignment"></a>
+<a id="approve\_assignment"></a>
 
 ### approve_assignment
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="associate_qualification_with_worker"></a>
+<a id="associate\_qualification\_with\_worker"></a>
 
 ### associate_qualification_with_worker
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -201,7 +201,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_additional_assignments_for_hit"></a>
+<a id="create\_additional\_assignments\_for\_hit"></a>
 
 ### create_additional_assignments_for_hit
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_hit"></a>
+<a id="create\_hit"></a>
 
 ### create_hit
 
@@ -263,7 +263,7 @@ Keyword-only arguments:
 
 Returns [CreateHITResponseTypeDef](./type_defs.md#createhitresponsetypedef).
 
-<a id="create_hit_type"></a>
+<a id="create\_hit\_type"></a>
 
 ### create_hit_type
 
@@ -291,7 +291,7 @@ Keyword-only arguments:
 Returns
 [CreateHITTypeResponseTypeDef](./type_defs.md#createhittyperesponsetypedef).
 
-<a id="create_hit_with_hit_type"></a>
+<a id="create\_hit\_with\_hit\_type"></a>
 
 ### create_hit_with_hit_type
 
@@ -324,7 +324,7 @@ Keyword-only arguments:
 Returns
 [CreateHITWithHITTypeResponseTypeDef](./type_defs.md#createhitwithhittyperesponsetypedef).
 
-<a id="create_qualification_type"></a>
+<a id="create\_qualification\_type"></a>
 
 ### create_qualification_type
 
@@ -357,7 +357,7 @@ Keyword-only arguments:
 Returns
 [CreateQualificationTypeResponseTypeDef](./type_defs.md#createqualificationtyperesponsetypedef).
 
-<a id="create_worker_block"></a>
+<a id="create\_worker\_block"></a>
 
 ### create_worker_block
 
@@ -379,7 +379,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_hit"></a>
+<a id="delete\_hit"></a>
 
 ### delete_hit
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_qualification_type"></a>
+<a id="delete\_qualification\_type"></a>
 
 ### delete_qualification_type
 
@@ -420,7 +420,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_worker_block"></a>
+<a id="delete\_worker\_block"></a>
 
 ### delete_worker_block
 
@@ -442,7 +442,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_qualification_from_worker"></a>
+<a id="disassociate\_qualification\_from\_worker"></a>
 
 ### disassociate_qualification_from_worker
 
@@ -466,7 +466,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -486,7 +486,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_account_balance"></a>
+<a id="get\_account\_balance"></a>
 
 ### get_account_balance
 
@@ -501,7 +501,7 @@ Boto3 documentation:
 Returns
 [GetAccountBalanceResponseTypeDef](./type_defs.md#getaccountbalanceresponsetypedef).
 
-<a id="get_assignment"></a>
+<a id="get\_assignment"></a>
 
 ### get_assignment
 
@@ -523,7 +523,7 @@ Keyword-only arguments:
 Returns
 [GetAssignmentResponseTypeDef](./type_defs.md#getassignmentresponsetypedef).
 
-<a id="get_file_upload_url"></a>
+<a id="get\_file\_upload\_url"></a>
 
 ### get_file_upload_url
 
@@ -545,7 +545,7 @@ Keyword-only arguments:
 Returns
 [GetFileUploadURLResponseTypeDef](./type_defs.md#getfileuploadurlresponsetypedef).
 
-<a id="get_hit"></a>
+<a id="get\_hit"></a>
 
 ### get_hit
 
@@ -565,7 +565,7 @@ Keyword-only arguments:
 
 Returns [GetHITResponseTypeDef](./type_defs.md#gethitresponsetypedef).
 
-<a id="get_qualification_score"></a>
+<a id="get\_qualification\_score"></a>
 
 ### get_qualification_score
 
@@ -588,7 +588,7 @@ Keyword-only arguments:
 Returns
 [GetQualificationScoreResponseTypeDef](./type_defs.md#getqualificationscoreresponsetypedef).
 
-<a id="get_qualification_type"></a>
+<a id="get\_qualification\_type"></a>
 
 ### get_qualification_type
 
@@ -610,7 +610,7 @@ Keyword-only arguments:
 Returns
 [GetQualificationTypeResponseTypeDef](./type_defs.md#getqualificationtyperesponsetypedef).
 
-<a id="list_assignments_for_hit"></a>
+<a id="list\_assignments\_for\_hit"></a>
 
 ### list_assignments_for_hit
 
@@ -636,7 +636,7 @@ Keyword-only arguments:
 Returns
 [ListAssignmentsForHITResponseTypeDef](./type_defs.md#listassignmentsforhitresponsetypedef).
 
-<a id="list_bonus_payments"></a>
+<a id="list\_bonus\_payments"></a>
 
 ### list_bonus_payments
 
@@ -661,7 +661,7 @@ Keyword-only arguments:
 Returns
 [ListBonusPaymentsResponseTypeDef](./type_defs.md#listbonuspaymentsresponsetypedef).
 
-<a id="list_hits"></a>
+<a id="list\_hits"></a>
 
 ### list_hits
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 
 Returns [ListHITsResponseTypeDef](./type_defs.md#listhitsresponsetypedef).
 
-<a id="list_hits_for_qualification_type"></a>
+<a id="list\_hits\_for\_qualification\_type"></a>
 
 ### list_hits_for_qualification_type
 
@@ -707,7 +707,7 @@ Keyword-only arguments:
 Returns
 [ListHITsForQualificationTypeResponseTypeDef](./type_defs.md#listhitsforqualificationtyperesponsetypedef).
 
-<a id="list_qualification_requests"></a>
+<a id="list\_qualification\_requests"></a>
 
 ### list_qualification_requests
 
@@ -732,7 +732,7 @@ Keyword-only arguments:
 Returns
 [ListQualificationRequestsResponseTypeDef](./type_defs.md#listqualificationrequestsresponsetypedef).
 
-<a id="list_qualification_types"></a>
+<a id="list\_qualification\_types"></a>
 
 ### list_qualification_types
 
@@ -758,7 +758,7 @@ Keyword-only arguments:
 Returns
 [ListQualificationTypesResponseTypeDef](./type_defs.md#listqualificationtypesresponsetypedef).
 
-<a id="list_review_policy_results_for_hit"></a>
+<a id="list\_review\_policy\_results\_for\_hit"></a>
 
 ### list_review_policy_results_for_hit
 
@@ -788,7 +788,7 @@ Keyword-only arguments:
 Returns
 [ListReviewPolicyResultsForHITResponseTypeDef](./type_defs.md#listreviewpolicyresultsforhitresponsetypedef).
 
-<a id="list_reviewable_hits"></a>
+<a id="list\_reviewable\_hits"></a>
 
 ### list_reviewable_hits
 
@@ -814,7 +814,7 @@ Keyword-only arguments:
 Returns
 [ListReviewableHITsResponseTypeDef](./type_defs.md#listreviewablehitsresponsetypedef).
 
-<a id="list_worker_blocks"></a>
+<a id="list\_worker\_blocks"></a>
 
 ### list_worker_blocks
 
@@ -837,7 +837,7 @@ Keyword-only arguments:
 Returns
 [ListWorkerBlocksResponseTypeDef](./type_defs.md#listworkerblocksresponsetypedef).
 
-<a id="list_workers_with_qualification_type"></a>
+<a id="list\_workers\_with\_qualification\_type"></a>
 
 ### list_workers_with_qualification_type
 
@@ -863,7 +863,7 @@ Keyword-only arguments:
 Returns
 [ListWorkersWithQualificationTypeResponseTypeDef](./type_defs.md#listworkerswithqualificationtyperesponsetypedef).
 
-<a id="notify_workers"></a>
+<a id="notify\_workers"></a>
 
 ### notify_workers
 
@@ -887,7 +887,7 @@ Keyword-only arguments:
 Returns
 [NotifyWorkersResponseTypeDef](./type_defs.md#notifyworkersresponsetypedef).
 
-<a id="reject_assignment"></a>
+<a id="reject\_assignment"></a>
 
 ### reject_assignment
 
@@ -908,7 +908,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="reject_qualification_request"></a>
+<a id="reject\_qualification\_request"></a>
 
 ### reject_qualification_request
 
@@ -931,7 +931,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="send_bonus"></a>
+<a id="send\_bonus"></a>
 
 ### send_bonus
 
@@ -956,7 +956,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="send_test_event_notification"></a>
+<a id="send\_test\_event\_notification"></a>
 
 ### send_test_event_notification
 
@@ -982,7 +982,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_expiration_for_hit"></a>
+<a id="update\_expiration\_for\_hit"></a>
 
 ### update_expiration_for_hit
 
@@ -1004,7 +1004,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_hit_review_status"></a>
+<a id="update\_hit\_review\_status"></a>
 
 ### update_hit_review_status
 
@@ -1025,7 +1025,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_hit_type_of_hit"></a>
+<a id="update\_hit\_type\_of\_hit"></a>
 
 ### update_hit_type_of_hit
 
@@ -1047,7 +1047,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_notification_settings"></a>
+<a id="update\_notification\_settings"></a>
 
 ### update_notification_settings
 
@@ -1072,7 +1072,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_qualification_type"></a>
+<a id="update\_qualification\_type"></a>
 
 ### update_qualification_type
 

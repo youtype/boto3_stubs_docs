@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [S3OutpostsClient](#s3outpostsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `S3Outposts` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[s3outposts]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[s3outposts]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-s3outposts
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-s3outposts
 ```bash
 python -m pip uninstall -y mypy-boto3-s3outposts
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="s3outpostsclient"></a>
 

@@ -101,7 +101,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -119,7 +119,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -140,7 +140,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_application_component_details"></a>
+<a id="get\_application\_component\_details"></a>
 
 ### get_application_component_details
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [GetApplicationComponentDetailsResponseTypeDef](./type_defs.md#getapplicationcomponentdetailsresponsetypedef).
 
-<a id="get_application_component_strategies"></a>
+<a id="get\_application\_component\_strategies"></a>
 
 ### get_application_component_strategies
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 Returns
 [GetApplicationComponentStrategiesResponseTypeDef](./type_defs.md#getapplicationcomponentstrategiesresponsetypedef).
 
-<a id="get_assessment"></a>
+<a id="get\_assessment"></a>
 
 ### get_assessment
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [GetAssessmentResponseTypeDef](./type_defs.md#getassessmentresponsetypedef).
 
-<a id="get_import_file_task"></a>
+<a id="get\_import\_file\_task"></a>
 
 ### get_import_file_task
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 Returns
 [GetImportFileTaskResponseTypeDef](./type_defs.md#getimportfiletaskresponsetypedef).
 
-<a id="get_portfolio_preferences"></a>
+<a id="get\_portfolio\_preferences"></a>
 
 ### get_portfolio_preferences
 
@@ -246,7 +246,7 @@ Boto3 documentation:
 Returns
 [GetPortfolioPreferencesResponseTypeDef](./type_defs.md#getportfoliopreferencesresponsetypedef).
 
-<a id="get_portfolio_summary"></a>
+<a id="get\_portfolio\_summary"></a>
 
 ### get_portfolio_summary
 
@@ -262,7 +262,7 @@ Boto3 documentation:
 Returns
 [GetPortfolioSummaryResponseTypeDef](./type_defs.md#getportfoliosummaryresponsetypedef).
 
-<a id="get_recommendation_report_details"></a>
+<a id="get\_recommendation\_report\_details"></a>
 
 ### get_recommendation_report_details
 
@@ -285,7 +285,7 @@ Keyword-only arguments:
 Returns
 [GetRecommendationReportDetailsResponseTypeDef](./type_defs.md#getrecommendationreportdetailsresponsetypedef).
 
-<a id="get_server_details"></a>
+<a id="get\_server\_details"></a>
 
 ### get_server_details
 
@@ -309,7 +309,7 @@ Keyword-only arguments:
 Returns
 [GetServerDetailsResponseTypeDef](./type_defs.md#getserverdetailsresponsetypedef).
 
-<a id="get_server_strategies"></a>
+<a id="get\_server\_strategies"></a>
 
 ### get_server_strategies
 
@@ -331,7 +331,7 @@ Keyword-only arguments:
 Returns
 [GetServerStrategiesResponseTypeDef](./type_defs.md#getserverstrategiesresponsetypedef).
 
-<a id="list_application_components"></a>
+<a id="list\_application\_components"></a>
 
 ### list_application_components
 
@@ -359,7 +359,7 @@ Keyword-only arguments:
 Returns
 [ListApplicationComponentsResponseTypeDef](./type_defs.md#listapplicationcomponentsresponsetypedef).
 
-<a id="list_collectors"></a>
+<a id="list\_collectors"></a>
 
 ### list_collectors
 
@@ -382,7 +382,7 @@ Keyword-only arguments:
 Returns
 [ListCollectorsResponseTypeDef](./type_defs.md#listcollectorsresponsetypedef).
 
-<a id="list_import_file_task"></a>
+<a id="list\_import\_file\_task"></a>
 
 ### list_import_file_task
 
@@ -405,7 +405,7 @@ Keyword-only arguments:
 Returns
 [ListImportFileTaskResponseTypeDef](./type_defs.md#listimportfiletaskresponsetypedef).
 
-<a id="list_servers"></a>
+<a id="list\_servers"></a>
 
 ### list_servers
 
@@ -432,7 +432,7 @@ Keyword-only arguments:
 Returns
 [ListServersResponseTypeDef](./type_defs.md#listserversresponsetypedef).
 
-<a id="put_portfolio_preferences"></a>
+<a id="put\_portfolio\_preferences"></a>
 
 ### put_portfolio_preferences
 
@@ -458,7 +458,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_assessment"></a>
+<a id="start\_assessment"></a>
 
 ### start_assessment
 
@@ -481,7 +481,7 @@ Keyword-only arguments:
 Returns
 [StartAssessmentResponseTypeDef](./type_defs.md#startassessmentresponsetypedef).
 
-<a id="start_import_file_task"></a>
+<a id="start\_import\_file\_task"></a>
 
 ### start_import_file_task
 
@@ -508,7 +508,7 @@ Keyword-only arguments:
 Returns
 [StartImportFileTaskResponseTypeDef](./type_defs.md#startimportfiletaskresponsetypedef).
 
-<a id="start_recommendation_report_generation"></a>
+<a id="start\_recommendation\_report\_generation"></a>
 
 ### start_recommendation_report_generation
 
@@ -532,7 +532,7 @@ Keyword-only arguments:
 Returns
 [StartRecommendationReportGenerationResponseTypeDef](./type_defs.md#startrecommendationreportgenerationresponsetypedef).
 
-<a id="stop_assessment"></a>
+<a id="stop\_assessment"></a>
 
 ### stop_assessment
 
@@ -553,7 +553,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_application_component_config"></a>
+<a id="update\_application\_component\_config"></a>
 
 ### update_application_component_config
 
@@ -581,7 +581,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_server_config"></a>
+<a id="update\_server\_config"></a>
 
 ### update_server_config
 

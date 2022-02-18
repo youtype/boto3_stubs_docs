@@ -88,7 +88,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -106,7 +106,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -127,7 +127,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_clip"></a>
+<a id="get\_clip"></a>
 
 ### get_clip
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 
 Returns [GetClipOutputTypeDef](./type_defs.md#getclipoutputtypedef).
 
-<a id="get_dash_streaming_session_url"></a>
+<a id="get\_dash\_streaming\_session\_url"></a>
 
 ### get_dash_streaming_session_url
 
@@ -187,7 +187,7 @@ Keyword-only arguments:
 Returns
 [GetDASHStreamingSessionURLOutputTypeDef](./type_defs.md#getdashstreamingsessionurloutputtypedef).
 
-<a id="get_hls_streaming_session_url"></a>
+<a id="get\_hls\_streaming\_session\_url"></a>
 
 ### get_hls_streaming_session_url
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [GetHLSStreamingSessionURLOutputTypeDef](./type_defs.md#gethlsstreamingsessionurloutputtypedef).
 
-<a id="get_media_for_fragment_list"></a>
+<a id="get\_media\_for\_fragment\_list"></a>
 
 ### get_media_for_fragment_list
 
@@ -247,7 +247,7 @@ Keyword-only arguments:
 Returns
 [GetMediaForFragmentListOutputTypeDef](./type_defs.md#getmediaforfragmentlistoutputtypedef).
 
-<a id="list_fragments"></a>
+<a id="list\_fragments"></a>
 
 ### list_fragments
 

@@ -139,7 +139,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="abort_environment_update"></a>
+<a id="abort\_environment\_update"></a>
 
 ### abort_environment_update
 
@@ -160,7 +160,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-<a id="apply_environment_managed_action"></a>
+<a id="apply\_environment\_managed\_action"></a>
 
 ### apply_environment_managed_action
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 Returns
 [ApplyEnvironmentManagedActionResultTypeDef](./type_defs.md#applyenvironmentmanagedactionresulttypedef).
 
-<a id="associate_environment_operations_role"></a>
+<a id="associate\_environment\_operations\_role"></a>
 
 ### associate_environment_operations_role
 
@@ -205,7 +205,7 @@ Keyword-only arguments:
 - `EnvironmentName`: `str` *(required)*
 - `OperationsRole`: `str` *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -222,7 +222,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="check_dns_availability"></a>
+<a id="check\_dns\_availability"></a>
 
 ### check_dns_availability
 
@@ -244,7 +244,7 @@ Keyword-only arguments:
 Returns
 [CheckDNSAvailabilityResultMessageTypeDef](./type_defs.md#checkdnsavailabilityresultmessagetypedef).
 
-<a id="compose_environments"></a>
+<a id="compose\_environments"></a>
 
 ### compose_environments
 
@@ -269,7 +269,7 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
 
-<a id="create_application"></a>
+<a id="create\_application"></a>
 
 ### create_application
 
@@ -296,7 +296,7 @@ Keyword-only arguments:
 Returns
 [ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
 
-<a id="create_application_version"></a>
+<a id="create\_application\_version"></a>
 
 ### create_application_version
 
@@ -328,7 +328,7 @@ Keyword-only arguments:
 Returns
 [ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
 
-<a id="create_configuration_template"></a>
+<a id="create\_configuration\_template"></a>
 
 ### create_configuration_template
 
@@ -360,7 +360,7 @@ Keyword-only arguments:
 Returns
 [ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
 
-<a id="create_environment"></a>
+<a id="create\_environment"></a>
 
 ### create_environment
 
@@ -398,7 +398,7 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
-<a id="create_platform_version"></a>
+<a id="create\_platform\_version"></a>
 
 ### create_platform_version
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 Returns
 [CreatePlatformVersionResultTypeDef](./type_defs.md#createplatformversionresulttypedef).
 
-<a id="create_storage_location"></a>
+<a id="create\_storage\_location"></a>
 
 ### create_storage_location
 
@@ -443,7 +443,7 @@ Boto3 documentation:
 Returns
 [CreateStorageLocationResultMessageTypeDef](./type_defs.md#createstoragelocationresultmessagetypedef).
 
-<a id="delete_application"></a>
+<a id="delete\_application"></a>
 
 ### delete_application
 
@@ -464,7 +464,7 @@ Keyword-only arguments:
 - `ApplicationName`: `str` *(required)*
 - `TerminateEnvByForce`: `bool`
 
-<a id="delete_application_version"></a>
+<a id="delete\_application\_version"></a>
 
 ### delete_application_version
 
@@ -485,7 +485,7 @@ Keyword-only arguments:
 - `VersionLabel`: `str` *(required)*
 - `DeleteSourceBundle`: `bool`
 
-<a id="delete_configuration_template"></a>
+<a id="delete\_configuration\_template"></a>
 
 ### delete_configuration_template
 
@@ -505,7 +505,7 @@ Keyword-only arguments:
 - `ApplicationName`: `str` *(required)*
 - `TemplateName`: `str` *(required)*
 
-<a id="delete_environment_configuration"></a>
+<a id="delete\_environment\_configuration"></a>
 
 ### delete_environment_configuration
 
@@ -525,7 +525,7 @@ Keyword-only arguments:
 - `ApplicationName`: `str` *(required)*
 - `EnvironmentName`: `str` *(required)*
 
-<a id="delete_platform_version"></a>
+<a id="delete\_platform\_version"></a>
 
 ### delete_platform_version
 
@@ -547,7 +547,7 @@ Keyword-only arguments:
 Returns
 [DeletePlatformVersionResultTypeDef](./type_defs.md#deleteplatformversionresulttypedef).
 
-<a id="describe_account_attributes"></a>
+<a id="describe\_account\_attributes"></a>
 
 ### describe_account_attributes
 
@@ -563,7 +563,7 @@ Boto3 documentation:
 Returns
 [DescribeAccountAttributesResultTypeDef](./type_defs.md#describeaccountattributesresulttypedef).
 
-<a id="describe_application_versions"></a>
+<a id="describe\_application\_versions"></a>
 
 ### describe_application_versions
 
@@ -588,7 +588,7 @@ Keyword-only arguments:
 Returns
 [ApplicationVersionDescriptionsMessageTypeDef](./type_defs.md#applicationversiondescriptionsmessagetypedef).
 
-<a id="describe_applications"></a>
+<a id="describe\_applications"></a>
 
 ### describe_applications
 
@@ -610,7 +610,7 @@ Keyword-only arguments:
 Returns
 [ApplicationDescriptionsMessageTypeDef](./type_defs.md#applicationdescriptionsmessagetypedef).
 
-<a id="describe_configuration_options"></a>
+<a id="describe\_configuration\_options"></a>
 
 ### describe_configuration_options
 
@@ -639,7 +639,7 @@ Keyword-only arguments:
 Returns
 [ConfigurationOptionsDescriptionTypeDef](./type_defs.md#configurationoptionsdescriptiontypedef).
 
-<a id="describe_configuration_settings"></a>
+<a id="describe\_configuration\_settings"></a>
 
 ### describe_configuration_settings
 
@@ -665,7 +665,7 @@ Keyword-only arguments:
 Returns
 [ConfigurationSettingsDescriptionsTypeDef](./type_defs.md#configurationsettingsdescriptionstypedef).
 
-<a id="describe_environment_health"></a>
+<a id="describe\_environment\_health"></a>
 
 ### describe_environment_health
 
@@ -690,7 +690,7 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentHealthResultTypeDef](./type_defs.md#describeenvironmenthealthresulttypedef).
 
-<a id="describe_environment_managed_action_history"></a>
+<a id="describe\_environment\_managed\_action\_history"></a>
 
 ### describe_environment_managed_action_history
 
@@ -716,7 +716,7 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentManagedActionHistoryResultTypeDef](./type_defs.md#describeenvironmentmanagedactionhistoryresulttypedef).
 
-<a id="describe_environment_managed_actions"></a>
+<a id="describe\_environment\_managed\_actions"></a>
 
 ### describe_environment_managed_actions
 
@@ -740,7 +740,7 @@ Keyword-only arguments:
 Returns
 [DescribeEnvironmentManagedActionsResultTypeDef](./type_defs.md#describeenvironmentmanagedactionsresulttypedef).
 
-<a id="describe_environment_resources"></a>
+<a id="describe\_environment\_resources"></a>
 
 ### describe_environment_resources
 
@@ -763,7 +763,7 @@ Keyword-only arguments:
 Returns
 [EnvironmentResourceDescriptionsMessageTypeDef](./type_defs.md#environmentresourcedescriptionsmessagetypedef).
 
-<a id="describe_environments"></a>
+<a id="describe\_environments"></a>
 
 ### describe_environments
 
@@ -792,7 +792,7 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionsMessageTypeDef](./type_defs.md#environmentdescriptionsmessagetypedef).
 
-<a id="describe_events"></a>
+<a id="describe\_events"></a>
 
 ### describe_events
 
@@ -824,7 +824,7 @@ Keyword-only arguments:
 Returns
 [EventDescriptionsMessageTypeDef](./type_defs.md#eventdescriptionsmessagetypedef).
 
-<a id="describe_instances_health"></a>
+<a id="describe\_instances\_health"></a>
 
 ### describe_instances_health
 
@@ -851,7 +851,7 @@ Keyword-only arguments:
 Returns
 [DescribeInstancesHealthResultTypeDef](./type_defs.md#describeinstanceshealthresulttypedef).
 
-<a id="describe_platform_version"></a>
+<a id="describe\_platform\_version"></a>
 
 ### describe_platform_version
 
@@ -873,7 +873,7 @@ Keyword-only arguments:
 Returns
 [DescribePlatformVersionResultTypeDef](./type_defs.md#describeplatformversionresulttypedef).
 
-<a id="disassociate_environment_operations_role"></a>
+<a id="disassociate\_environment\_operations\_role"></a>
 
 ### disassociate_environment_operations_role
 
@@ -893,7 +893,7 @@ Keyword-only arguments:
 
 - `EnvironmentName`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -914,7 +914,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_available_solution_stacks"></a>
+<a id="list\_available\_solution\_stacks"></a>
 
 ### list_available_solution_stacks
 
@@ -930,7 +930,7 @@ Boto3 documentation:
 Returns
 [ListAvailableSolutionStacksResultMessageTypeDef](./type_defs.md#listavailablesolutionstacksresultmessagetypedef).
 
-<a id="list_platform_branches"></a>
+<a id="list\_platform\_branches"></a>
 
 ### list_platform_branches
 
@@ -955,7 +955,7 @@ Keyword-only arguments:
 Returns
 [ListPlatformBranchesResultTypeDef](./type_defs.md#listplatformbranchesresulttypedef).
 
-<a id="list_platform_versions"></a>
+<a id="list\_platform\_versions"></a>
 
 ### list_platform_versions
 
@@ -980,7 +980,7 @@ Keyword-only arguments:
 Returns
 [ListPlatformVersionsResultTypeDef](./type_defs.md#listplatformversionsresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1002,7 +1002,7 @@ Keyword-only arguments:
 Returns
 [ResourceTagsDescriptionMessageTypeDef](./type_defs.md#resourcetagsdescriptionmessagetypedef).
 
-<a id="rebuild_environment"></a>
+<a id="rebuild\_environment"></a>
 
 ### rebuild_environment
 
@@ -1023,7 +1023,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-<a id="request_environment_info"></a>
+<a id="request\_environment\_info"></a>
 
 ### request_environment_info
 
@@ -1046,7 +1046,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-<a id="restart_app_server"></a>
+<a id="restart\_app\_server"></a>
 
 ### restart_app_server
 
@@ -1067,7 +1067,7 @@ Keyword-only arguments:
 - `EnvironmentId`: `str`
 - `EnvironmentName`: `str`
 
-<a id="retrieve_environment_info"></a>
+<a id="retrieve\_environment\_info"></a>
 
 ### retrieve_environment_info
 
@@ -1092,7 +1092,7 @@ Keyword-only arguments:
 Returns
 [RetrieveEnvironmentInfoResultMessageTypeDef](./type_defs.md#retrieveenvironmentinforesultmessagetypedef).
 
-<a id="swap_environment_cnames"></a>
+<a id="swap\_environment\_cnames"></a>
 
 ### swap_environment_cnames
 
@@ -1114,7 +1114,7 @@ Keyword-only arguments:
 - `DestinationEnvironmentId`: `str`
 - `DestinationEnvironmentName`: `str`
 
-<a id="terminate_environment"></a>
+<a id="terminate\_environment"></a>
 
 ### terminate_environment
 
@@ -1139,7 +1139,7 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
-<a id="update_application"></a>
+<a id="update\_application"></a>
 
 ### update_application
 
@@ -1162,7 +1162,7 @@ Keyword-only arguments:
 Returns
 [ApplicationDescriptionMessageTypeDef](./type_defs.md#applicationdescriptionmessagetypedef).
 
-<a id="update_application_resource_lifecycle"></a>
+<a id="update\_application\_resource\_lifecycle"></a>
 
 ### update_application_resource_lifecycle
 
@@ -1188,7 +1188,7 @@ Keyword-only arguments:
 Returns
 [ApplicationResourceLifecycleDescriptionMessageTypeDef](./type_defs.md#applicationresourcelifecycledescriptionmessagetypedef).
 
-<a id="update_application_version"></a>
+<a id="update\_application\_version"></a>
 
 ### update_application_version
 
@@ -1212,7 +1212,7 @@ Keyword-only arguments:
 Returns
 [ApplicationVersionDescriptionMessageTypeDef](./type_defs.md#applicationversiondescriptionmessagetypedef).
 
-<a id="update_configuration_template"></a>
+<a id="update\_configuration\_template"></a>
 
 ### update_configuration_template
 
@@ -1241,7 +1241,7 @@ Keyword-only arguments:
 Returns
 [ConfigurationSettingsDescriptionResponseMetadataTypeDef](./type_defs.md#configurationsettingsdescriptionresponsemetadatatypedef).
 
-<a id="update_environment"></a>
+<a id="update\_environment"></a>
 
 ### update_environment
 
@@ -1278,7 +1278,7 @@ Keyword-only arguments:
 Returns
 [EnvironmentDescriptionResponseMetadataTypeDef](./type_defs.md#environmentdescriptionresponsemetadatatypedef).
 
-<a id="update_tags_for_resource"></a>
+<a id="update\_tags\_for\_resource"></a>
 
 ### update_tags_for_resource
 
@@ -1299,7 +1299,7 @@ Keyword-only arguments:
 - `TagsToAdd`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `TagsToRemove`: `Sequence`\[`str`\]
 
-<a id="validate_configuration_settings"></a>
+<a id="validate\_configuration\_settings"></a>
 
 ### validate_configuration_settings
 

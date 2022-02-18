@@ -97,7 +97,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_create_table_rows"></a>
+<a id="batch\_create\_table\_rows"></a>
 
 ### batch_create_table_rows
 
@@ -125,7 +125,7 @@ Keyword-only arguments:
 Returns
 [BatchCreateTableRowsResultTypeDef](./type_defs.md#batchcreatetablerowsresulttypedef).
 
-<a id="batch_delete_table_rows"></a>
+<a id="batch\_delete\_table\_rows"></a>
 
 ### batch_delete_table_rows
 
@@ -151,7 +151,7 @@ Keyword-only arguments:
 Returns
 [BatchDeleteTableRowsResultTypeDef](./type_defs.md#batchdeletetablerowsresulttypedef).
 
-<a id="batch_update_table_rows"></a>
+<a id="batch\_update\_table\_rows"></a>
 
 ### batch_update_table_rows
 
@@ -179,7 +179,7 @@ Keyword-only arguments:
 Returns
 [BatchUpdateTableRowsResultTypeDef](./type_defs.md#batchupdatetablerowsresulttypedef).
 
-<a id="batch_upsert_table_rows"></a>
+<a id="batch\_upsert\_table\_rows"></a>
 
 ### batch_upsert_table_rows
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 Returns
 [BatchUpsertTableRowsResultTypeDef](./type_defs.md#batchupserttablerowsresulttypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -223,7 +223,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_table_data_import_job"></a>
+<a id="describe\_table\_data\_import\_job"></a>
 
 ### describe_table_data_import_job
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 Returns
 [DescribeTableDataImportJobResultTypeDef](./type_defs.md#describetabledataimportjobresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -268,7 +268,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_screen_data"></a>
+<a id="get\_screen\_data"></a>
 
 ### get_screen_data
 
@@ -296,7 +296,7 @@ Keyword-only arguments:
 Returns
 [GetScreenDataResultTypeDef](./type_defs.md#getscreendataresulttypedef).
 
-<a id="invoke_screen_automation"></a>
+<a id="invoke\_screen\_automation"></a>
 
 ### invoke_screen_automation
 
@@ -326,7 +326,7 @@ Keyword-only arguments:
 Returns
 [InvokeScreenAutomationResultTypeDef](./type_defs.md#invokescreenautomationresulttypedef).
 
-<a id="list_table_columns"></a>
+<a id="list\_table\_columns"></a>
 
 ### list_table_columns
 
@@ -350,7 +350,7 @@ Keyword-only arguments:
 Returns
 [ListTableColumnsResultTypeDef](./type_defs.md#listtablecolumnsresulttypedef).
 
-<a id="list_table_rows"></a>
+<a id="list\_table\_rows"></a>
 
 ### list_table_rows
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [ListTableRowsResultTypeDef](./type_defs.md#listtablerowsresulttypedef).
 
-<a id="list_tables"></a>
+<a id="list\_tables"></a>
 
 ### list_tables
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 
 Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -420,7 +420,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
-<a id="query_table_rows"></a>
+<a id="query\_table\_rows"></a>
 
 ### query_table_rows
 
@@ -446,7 +446,7 @@ Keyword-only arguments:
 Returns
 [QueryTableRowsResultTypeDef](./type_defs.md#querytablerowsresulttypedef).
 
-<a id="start_table_data_import_job"></a>
+<a id="start\_table\_data\_import\_job"></a>
 
 ### start_table_data_import_job
 
@@ -478,7 +478,7 @@ Keyword-only arguments:
 Returns
 [StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -499,7 +499,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

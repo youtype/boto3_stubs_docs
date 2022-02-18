@@ -77,7 +77,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -94,7 +94,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -115,7 +115,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="put_events"></a>
+<a id="put\_events"></a>
 
 ### put_events
 
@@ -137,7 +137,7 @@ Keyword-only arguments:
   *(required)*
 - `userId`: `str`
 
-<a id="put_items"></a>
+<a id="put\_items"></a>
 
 ### put_items
 
@@ -156,7 +156,7 @@ Keyword-only arguments:
 - `datasetArn`: `str` *(required)*
 - `items`: `Sequence`\[[ItemTypeDef](./type_defs.md#itemtypedef)\] *(required)*
 
-<a id="put_users"></a>
+<a id="put\_users"></a>
 
 ### put_users
 

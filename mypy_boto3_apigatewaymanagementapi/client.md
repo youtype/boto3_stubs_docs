@@ -79,7 +79,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_connection"></a>
+<a id="delete\_connection"></a>
 
 ### delete_connection
 
@@ -116,7 +116,7 @@ Keyword-only arguments:
 
 - `ConnectionId`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -137,7 +137,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_connection"></a>
+<a id="get\_connection"></a>
 
 ### get_connection
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 Returns
 [GetConnectionResponseTypeDef](./type_defs.md#getconnectionresponsetypedef).
 
-<a id="post_to_connection"></a>
+<a id="post\_to\_connection"></a>
 
 ### post_to_connection
 

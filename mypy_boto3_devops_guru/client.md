@@ -105,7 +105,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_notification_channel"></a>
+<a id="add\_notification\_channel"></a>
 
 ### add_notification_channel
 
@@ -129,7 +129,7 @@ Keyword-only arguments:
 Returns
 [AddNotificationChannelResponseTypeDef](./type_defs.md#addnotificationchannelresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -146,7 +146,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_account_health"></a>
+<a id="describe\_account\_health"></a>
 
 ### describe_account_health
 
@@ -163,7 +163,7 @@ Boto3 documentation:
 Returns
 [DescribeAccountHealthResponseTypeDef](./type_defs.md#describeaccounthealthresponsetypedef).
 
-<a id="describe_account_overview"></a>
+<a id="describe\_account\_overview"></a>
 
 ### describe_account_overview
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 Returns
 [DescribeAccountOverviewResponseTypeDef](./type_defs.md#describeaccountoverviewresponsetypedef).
 
-<a id="describe_anomaly"></a>
+<a id="describe\_anomaly"></a>
 
 ### describe_anomaly
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 Returns
 [DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
 
-<a id="describe_feedback"></a>
+<a id="describe\_feedback"></a>
 
 ### describe_feedback
 
@@ -232,7 +232,7 @@ Keyword-only arguments:
 Returns
 [DescribeFeedbackResponseTypeDef](./type_defs.md#describefeedbackresponsetypedef).
 
-<a id="describe_insight"></a>
+<a id="describe\_insight"></a>
 
 ### describe_insight
 
@@ -254,7 +254,7 @@ Keyword-only arguments:
 Returns
 [DescribeInsightResponseTypeDef](./type_defs.md#describeinsightresponsetypedef).
 
-<a id="describe_organization_health"></a>
+<a id="describe\_organization\_health"></a>
 
 ### describe_organization_health
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationHealthResponseTypeDef](./type_defs.md#describeorganizationhealthresponsetypedef).
 
-<a id="describe_organization_overview"></a>
+<a id="describe\_organization\_overview"></a>
 
 ### describe_organization_overview
 
@@ -304,7 +304,7 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationOverviewResponseTypeDef](./type_defs.md#describeorganizationoverviewresponsetypedef).
 
-<a id="describe_organization_resource_collection_health"></a>
+<a id="describe\_organization\_resource\_collection\_health"></a>
 
 ### describe_organization_resource_collection_health
 
@@ -333,7 +333,7 @@ Keyword-only arguments:
 Returns
 [DescribeOrganizationResourceCollectionHealthResponseTypeDef](./type_defs.md#describeorganizationresourcecollectionhealthresponsetypedef).
 
-<a id="describe_resource_collection_health"></a>
+<a id="describe\_resource\_collection\_health"></a>
 
 ### describe_resource_collection_health
 
@@ -360,7 +360,7 @@ Keyword-only arguments:
 Returns
 [DescribeResourceCollectionHealthResponseTypeDef](./type_defs.md#describeresourcecollectionhealthresponsetypedef).
 
-<a id="describe_service_integration"></a>
+<a id="describe\_service\_integration"></a>
 
 ### describe_service_integration
 
@@ -376,7 +376,7 @@ Boto3 documentation:
 Returns
 [DescribeServiceIntegrationResponseTypeDef](./type_defs.md#describeserviceintegrationresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -397,7 +397,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_cost_estimation"></a>
+<a id="get\_cost\_estimation"></a>
 
 ### get_cost_estimation
 
@@ -419,7 +419,7 @@ Keyword-only arguments:
 Returns
 [GetCostEstimationResponseTypeDef](./type_defs.md#getcostestimationresponsetypedef).
 
-<a id="get_resource_collection"></a>
+<a id="get\_resource\_collection"></a>
 
 ### get_resource_collection
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 Returns
 [GetResourceCollectionResponseTypeDef](./type_defs.md#getresourcecollectionresponsetypedef).
 
-<a id="list_anomalies_for_insight"></a>
+<a id="list\_anomalies\_for\_insight"></a>
 
 ### list_anomalies_for_insight
 
@@ -473,7 +473,7 @@ Keyword-only arguments:
 Returns
 [ListAnomaliesForInsightResponseTypeDef](./type_defs.md#listanomaliesforinsightresponsetypedef).
 
-<a id="list_events"></a>
+<a id="list\_events"></a>
 
 ### list_events
 
@@ -499,7 +499,7 @@ Keyword-only arguments:
 
 Returns [ListEventsResponseTypeDef](./type_defs.md#listeventsresponsetypedef).
 
-<a id="list_insights"></a>
+<a id="list\_insights"></a>
 
 ### list_insights
 
@@ -524,7 +524,7 @@ Keyword-only arguments:
 Returns
 [ListInsightsResponseTypeDef](./type_defs.md#listinsightsresponsetypedef).
 
-<a id="list_notification_channels"></a>
+<a id="list\_notification\_channels"></a>
 
 ### list_notification_channels
 
@@ -546,7 +546,7 @@ Keyword-only arguments:
 Returns
 [ListNotificationChannelsResponseTypeDef](./type_defs.md#listnotificationchannelsresponsetypedef).
 
-<a id="list_organization_insights"></a>
+<a id="list\_organization\_insights"></a>
 
 ### list_organization_insights
 
@@ -574,7 +574,7 @@ Keyword-only arguments:
 Returns
 [ListOrganizationInsightsResponseTypeDef](./type_defs.md#listorganizationinsightsresponsetypedef).
 
-<a id="list_recommendations"></a>
+<a id="list\_recommendations"></a>
 
 ### list_recommendations
 
@@ -598,7 +598,7 @@ Keyword-only arguments:
 Returns
 [ListRecommendationsResponseTypeDef](./type_defs.md#listrecommendationsresponsetypedef).
 
-<a id="put_feedback"></a>
+<a id="put\_feedback"></a>
 
 ### put_feedback
 
@@ -619,7 +619,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="remove_notification_channel"></a>
+<a id="remove\_notification\_channel"></a>
 
 ### remove_notification_channel
 
@@ -640,7 +640,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="search_insights"></a>
+<a id="search\_insights"></a>
 
 ### search_insights
 
@@ -667,7 +667,7 @@ Keyword-only arguments:
 Returns
 [SearchInsightsResponseTypeDef](./type_defs.md#searchinsightsresponsetypedef).
 
-<a id="search_organization_insights"></a>
+<a id="search\_organization\_insights"></a>
 
 ### search_organization_insights
 
@@ -696,7 +696,7 @@ Keyword-only arguments:
 Returns
 [SearchOrganizationInsightsResponseTypeDef](./type_defs.md#searchorganizationinsightsresponsetypedef).
 
-<a id="start_cost_estimation"></a>
+<a id="start\_cost\_estimation"></a>
 
 ### start_cost_estimation
 
@@ -721,7 +721,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_resource_collection"></a>
+<a id="update\_resource\_collection"></a>
 
 ### update_resource_collection
 
@@ -747,7 +747,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_service_integration"></a>
+<a id="update\_service\_integration"></a>
 
 ### update_service_integration
 

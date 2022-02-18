@@ -95,7 +95,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -112,7 +112,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="configure_logs"></a>
+<a id="configure\_logs"></a>
 
 ### configure_logs
 
@@ -138,7 +138,7 @@ Keyword-only arguments:
 Returns
 [ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
-<a id="create_asset"></a>
+<a id="create\_asset"></a>
 
 ### create_asset
 
@@ -164,7 +164,7 @@ Keyword-only arguments:
 Returns
 [CreateAssetResponseTypeDef](./type_defs.md#createassetresponsetypedef).
 
-<a id="create_packaging_configuration"></a>
+<a id="create\_packaging\_configuration"></a>
 
 ### create_packaging_configuration
 
@@ -192,7 +192,7 @@ Keyword-only arguments:
 Returns
 [CreatePackagingConfigurationResponseTypeDef](./type_defs.md#createpackagingconfigurationresponsetypedef).
 
-<a id="create_packaging_group"></a>
+<a id="create\_packaging\_group"></a>
 
 ### create_packaging_group
 
@@ -218,7 +218,7 @@ Keyword-only arguments:
 Returns
 [CreatePackagingGroupResponseTypeDef](./type_defs.md#createpackaginggroupresponsetypedef).
 
-<a id="delete_asset"></a>
+<a id="delete\_asset"></a>
 
 ### delete_asset
 
@@ -238,7 +238,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_packaging_configuration"></a>
+<a id="delete\_packaging\_configuration"></a>
 
 ### delete_packaging_configuration
 
@@ -259,7 +259,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_packaging_group"></a>
+<a id="delete\_packaging\_group"></a>
 
 ### delete_packaging_group
 
@@ -280,7 +280,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_asset"></a>
+<a id="describe\_asset"></a>
 
 ### describe_asset
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 Returns
 [DescribeAssetResponseTypeDef](./type_defs.md#describeassetresponsetypedef).
 
-<a id="describe_packaging_configuration"></a>
+<a id="describe\_packaging\_configuration"></a>
 
 ### describe_packaging_configuration
 
@@ -323,7 +323,7 @@ Keyword-only arguments:
 Returns
 [DescribePackagingConfigurationResponseTypeDef](./type_defs.md#describepackagingconfigurationresponsetypedef).
 
-<a id="describe_packaging_group"></a>
+<a id="describe\_packaging\_group"></a>
 
 ### describe_packaging_group
 
@@ -345,7 +345,7 @@ Keyword-only arguments:
 Returns
 [DescribePackagingGroupResponseTypeDef](./type_defs.md#describepackaginggroupresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -366,7 +366,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_assets"></a>
+<a id="list\_assets"></a>
 
 ### list_assets
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 
 Returns [ListAssetsResponseTypeDef](./type_defs.md#listassetsresponsetypedef).
 
-<a id="list_packaging_configurations"></a>
+<a id="list\_packaging\_configurations"></a>
 
 ### list_packaging_configurations
 
@@ -412,7 +412,7 @@ Keyword-only arguments:
 Returns
 [ListPackagingConfigurationsResponseTypeDef](./type_defs.md#listpackagingconfigurationsresponsetypedef).
 
-<a id="list_packaging_groups"></a>
+<a id="list\_packaging\_groups"></a>
 
 ### list_packaging_groups
 
@@ -435,7 +435,7 @@ Keyword-only arguments:
 Returns
 [ListPackagingGroupsResponseTypeDef](./type_defs.md#listpackaginggroupsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -457,7 +457,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -476,7 +476,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -495,7 +495,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_packaging_group"></a>
+<a id="update\_packaging\_group"></a>
 
 ### update_packaging_group
 

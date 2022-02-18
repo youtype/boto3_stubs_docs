@@ -104,7 +104,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_tags_to_certificate"></a>
+<a id="add\_tags\_to\_certificate"></a>
 
 ### add_tags_to_certificate
 
@@ -123,7 +123,7 @@ Keyword-only arguments:
 - `CertificateArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -140,7 +140,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_certificate"></a>
+<a id="delete\_certificate"></a>
 
 ### delete_certificate
 
@@ -158,7 +158,7 @@ Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
-<a id="describe_certificate"></a>
+<a id="describe\_certificate"></a>
 
 ### describe_certificate
 
@@ -179,7 +179,7 @@ Keyword-only arguments:
 Returns
 [DescribeCertificateResponseTypeDef](./type_defs.md#describecertificateresponsetypedef).
 
-<a id="export_certificate"></a>
+<a id="export\_certificate"></a>
 
 ### export_certificate
 
@@ -203,7 +203,7 @@ Keyword-only arguments:
 Returns
 [ExportCertificateResponseTypeDef](./type_defs.md#exportcertificateresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -223,7 +223,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_account_configuration"></a>
+<a id="get\_account\_configuration"></a>
 
 ### get_account_configuration
 
@@ -238,7 +238,7 @@ Boto3 documentation:
 Returns
 [GetAccountConfigurationResponseTypeDef](./type_defs.md#getaccountconfigurationresponsetypedef).
 
-<a id="get_certificate"></a>
+<a id="get\_certificate"></a>
 
 ### get_certificate
 
@@ -259,7 +259,7 @@ Keyword-only arguments:
 Returns
 [GetCertificateResponseTypeDef](./type_defs.md#getcertificateresponsetypedef).
 
-<a id="import_certificate"></a>
+<a id="import\_certificate"></a>
 
 ### import_certificate
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 Returns
 [ImportCertificateResponseTypeDef](./type_defs.md#importcertificateresponsetypedef).
 
-<a id="list_certificates"></a>
+<a id="list\_certificates"></a>
 
 ### list_certificates
 
@@ -312,7 +312,7 @@ Keyword-only arguments:
 Returns
 [ListCertificatesResponseTypeDef](./type_defs.md#listcertificatesresponsetypedef).
 
-<a id="list_tags_for_certificate"></a>
+<a id="list\_tags\_for\_certificate"></a>
 
 ### list_tags_for_certificate
 
@@ -333,7 +333,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForCertificateResponseTypeDef](./type_defs.md#listtagsforcertificateresponsetypedef).
 
-<a id="put_account_configuration"></a>
+<a id="put\_account\_configuration"></a>
 
 ### put_account_configuration
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 - `ExpiryEvents`:
   [ExpiryEventsConfigurationTypeDef](./type_defs.md#expiryeventsconfigurationtypedef)
 
-<a id="remove_tags_from_certificate"></a>
+<a id="remove\_tags\_from\_certificate"></a>
 
 ### remove_tags_from_certificate
 
@@ -372,7 +372,7 @@ Keyword-only arguments:
 - `CertificateArn`: `str` *(required)*
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
 
-<a id="renew_certificate"></a>
+<a id="renew\_certificate"></a>
 
 ### renew_certificate
 
@@ -390,7 +390,7 @@ Keyword-only arguments:
 
 - `CertificateArn`: `str` *(required)*
 
-<a id="request_certificate"></a>
+<a id="request\_certificate"></a>
 
 ### request_certificate
 
@@ -421,7 +421,7 @@ Keyword-only arguments:
 Returns
 [RequestCertificateResponseTypeDef](./type_defs.md#requestcertificateresponsetypedef).
 
-<a id="resend_validation_email"></a>
+<a id="resend\_validation\_email"></a>
 
 ### resend_validation_email
 
@@ -441,7 +441,7 @@ Keyword-only arguments:
 - `Domain`: `str` *(required)*
 - `ValidationDomain`: `str` *(required)*
 
-<a id="update_certificate_options"></a>
+<a id="update\_certificate\_options"></a>
 
 ### update_certificate_options
 

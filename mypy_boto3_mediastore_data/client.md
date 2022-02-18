@@ -81,7 +81,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -98,7 +98,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_object"></a>
+<a id="delete\_object"></a>
 
 ### delete_object
 
@@ -118,7 +118,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_object"></a>
+<a id="describe\_object"></a>
 
 ### describe_object
 
@@ -139,7 +139,7 @@ Keyword-only arguments:
 Returns
 [DescribeObjectResponseTypeDef](./type_defs.md#describeobjectresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -160,7 +160,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_object"></a>
+<a id="get\_object"></a>
 
 ### get_object
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 
 Returns [GetObjectResponseTypeDef](./type_defs.md#getobjectresponsetypedef).
 
-<a id="list_items"></a>
+<a id="list\_items"></a>
 
 ### list_items
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 
 Returns [ListItemsResponseTypeDef](./type_defs.md#listitemsresponsetypedef).
 
-<a id="put_object"></a>
+<a id="put\_object"></a>
 
 ### put_object
 

@@ -84,7 +84,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -102,7 +102,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_report_definition"></a>
+<a id="delete\_report\_definition"></a>
 
 ### delete_report_definition
 
@@ -124,7 +124,7 @@ Keyword-only arguments:
 Returns
 [DeleteReportDefinitionResultTypeDef](./type_defs.md#deletereportdefinitionresulttypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -145,7 +145,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_report_definition"></a>
+<a id="get\_report\_definition"></a>
 
 ### get_report_definition
 
@@ -168,7 +168,7 @@ Keyword-only arguments:
 Returns
 [GetReportDefinitionResultTypeDef](./type_defs.md#getreportdefinitionresulttypedef).
 
-<a id="import_application_usage"></a>
+<a id="import\_application\_usage"></a>
 
 ### import_application_usage
 
@@ -192,7 +192,7 @@ Keyword-only arguments:
 Returns
 [ImportApplicationUsageResultTypeDef](./type_defs.md#importapplicationusageresulttypedef).
 
-<a id="list_report_definitions"></a>
+<a id="list\_report\_definitions"></a>
 
 ### list_report_definitions
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 Returns
 [ListReportDefinitionsResultTypeDef](./type_defs.md#listreportdefinitionsresulttypedef).
 
-<a id="put_report_definition"></a>
+<a id="put\_report\_definition"></a>
 
 ### put_report_definition
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 Returns
 [PutReportDefinitionResultTypeDef](./type_defs.md#putreportdefinitionresulttypedef).
 
-<a id="update_report_definition"></a>
+<a id="update\_report\_definition"></a>
 
 ### update_report_definition
 

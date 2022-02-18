@@ -91,7 +91,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -108,7 +108,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_component"></a>
+<a id="create\_component"></a>
 
 ### create_component
 
@@ -135,7 +135,7 @@ Keyword-only arguments:
 Returns
 [CreateComponentResponseTypeDef](./type_defs.md#createcomponentresponsetypedef).
 
-<a id="create_theme"></a>
+<a id="create\_theme"></a>
 
 ### create_theme
 
@@ -160,7 +160,7 @@ Keyword-only arguments:
 Returns
 [CreateThemeResponseTypeDef](./type_defs.md#createthemeresponsetypedef).
 
-<a id="delete_component"></a>
+<a id="delete\_component"></a>
 
 ### delete_component
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 - `environmentName`: `str` *(required)*
 - `id`: `str` *(required)*
 
-<a id="delete_theme"></a>
+<a id="delete\_theme"></a>
 
 ### delete_theme
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 - `environmentName`: `str` *(required)*
 - `id`: `str` *(required)*
 
-<a id="exchange_code_for_token"></a>
+<a id="exchange\_code\_for\_token"></a>
 
 ### exchange_code_for_token
 
@@ -227,7 +227,7 @@ Keyword-only arguments:
 Returns
 [ExchangeCodeForTokenResponseTypeDef](./type_defs.md#exchangecodefortokenresponsetypedef).
 
-<a id="export_components"></a>
+<a id="export\_components"></a>
 
 ### export_components
 
@@ -251,7 +251,7 @@ Keyword-only arguments:
 Returns
 [ExportComponentsResponseTypeDef](./type_defs.md#exportcomponentsresponsetypedef).
 
-<a id="export_themes"></a>
+<a id="export\_themes"></a>
 
 ### export_themes
 
@@ -274,7 +274,7 @@ Keyword-only arguments:
 Returns
 [ExportThemesResponseTypeDef](./type_defs.md#exportthemesresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -295,7 +295,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_component"></a>
+<a id="get\_component"></a>
 
 ### get_component
 
@@ -318,7 +318,7 @@ Keyword-only arguments:
 Returns
 [GetComponentResponseTypeDef](./type_defs.md#getcomponentresponsetypedef).
 
-<a id="get_theme"></a>
+<a id="get\_theme"></a>
 
 ### get_theme
 
@@ -340,7 +340,7 @@ Keyword-only arguments:
 
 Returns [GetThemeResponseTypeDef](./type_defs.md#getthemeresponsetypedef).
 
-<a id="list_components"></a>
+<a id="list\_components"></a>
 
 ### list_components
 
@@ -365,7 +365,7 @@ Keyword-only arguments:
 Returns
 [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef).
 
-<a id="list_themes"></a>
+<a id="list\_themes"></a>
 
 ### list_themes
 
@@ -388,7 +388,7 @@ Keyword-only arguments:
 
 Returns [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef).
 
-<a id="refresh_token"></a>
+<a id="refresh\_token"></a>
 
 ### refresh_token
 
@@ -413,7 +413,7 @@ Keyword-only arguments:
 Returns
 [RefreshTokenResponseTypeDef](./type_defs.md#refreshtokenresponsetypedef).
 
-<a id="update_component"></a>
+<a id="update\_component"></a>
 
 ### update_component
 
@@ -441,7 +441,7 @@ Keyword-only arguments:
 Returns
 [UpdateComponentResponseTypeDef](./type_defs.md#updatecomponentresponsetypedef).
 
-<a id="update_theme"></a>
+<a id="update\_theme"></a>
 
 ### update_theme
 

@@ -137,7 +137,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_entities_to_experience"></a>
+<a id="associate\_entities\_to\_experience"></a>
 
 ### associate_entities_to_experience
 
@@ -164,7 +164,7 @@ Keyword-only arguments:
 Returns
 [AssociateEntitiesToExperienceResponseTypeDef](./type_defs.md#associateentitiestoexperienceresponsetypedef).
 
-<a id="associate_personas_to_entities"></a>
+<a id="associate\_personas\_to\_entities"></a>
 
 ### associate_personas_to_entities
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [AssociatePersonasToEntitiesResponseTypeDef](./type_defs.md#associatepersonastoentitiesresponsetypedef).
 
-<a id="batch_delete_document"></a>
+<a id="batch\_delete\_document"></a>
 
 ### batch_delete_document
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 Returns
 [BatchDeleteDocumentResponseTypeDef](./type_defs.md#batchdeletedocumentresponsetypedef).
 
-<a id="batch_get_document_status"></a>
+<a id="batch\_get\_document\_status"></a>
 
 ### batch_get_document_status
 
@@ -241,7 +241,7 @@ Keyword-only arguments:
 Returns
 [BatchGetDocumentStatusResponseTypeDef](./type_defs.md#batchgetdocumentstatusresponsetypedef).
 
-<a id="batch_put_document"></a>
+<a id="batch\_put\_document"></a>
 
 ### batch_put_document
 
@@ -267,7 +267,7 @@ Keyword-only arguments:
 Returns
 [BatchPutDocumentResponseTypeDef](./type_defs.md#batchputdocumentresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -284,7 +284,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="clear_query_suggestions"></a>
+<a id="clear\_query\_suggestions"></a>
 
 ### clear_query_suggestions
 
@@ -302,7 +302,7 @@ Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
 
-<a id="create_data_source"></a>
+<a id="create\_data\_source"></a>
 
 ### create_data_source
 
@@ -335,7 +335,7 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
-<a id="create_experience"></a>
+<a id="create\_experience"></a>
 
 ### create_experience
 
@@ -362,7 +362,7 @@ Keyword-only arguments:
 Returns
 [CreateExperienceResponseTypeDef](./type_defs.md#createexperienceresponsetypedef).
 
-<a id="create_faq"></a>
+<a id="create\_faq"></a>
 
 ### create_faq
 
@@ -390,7 +390,7 @@ Keyword-only arguments:
 
 Returns [CreateFaqResponseTypeDef](./type_defs.md#createfaqresponsetypedef).
 
-<a id="create_index"></a>
+<a id="create\_index"></a>
 
 ### create_index
 
@@ -424,7 +424,7 @@ Keyword-only arguments:
 Returns
 [CreateIndexResponseTypeDef](./type_defs.md#createindexresponsetypedef).
 
-<a id="create_query_suggestions_block_list"></a>
+<a id="create\_query\_suggestions\_block\_list"></a>
 
 ### create_query_suggestions_block_list
 
@@ -452,7 +452,7 @@ Keyword-only arguments:
 Returns
 [CreateQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#createquerysuggestionsblocklistresponsetypedef).
 
-<a id="create_thesaurus"></a>
+<a id="create\_thesaurus"></a>
 
 ### create_thesaurus
 
@@ -479,7 +479,7 @@ Keyword-only arguments:
 Returns
 [CreateThesaurusResponseTypeDef](./type_defs.md#createthesaurusresponsetypedef).
 
-<a id="delete_data_source"></a>
+<a id="delete\_data\_source"></a>
 
 ### delete_data_source
 
@@ -498,7 +498,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
-<a id="delete_experience"></a>
+<a id="delete\_experience"></a>
 
 ### delete_experience
 
@@ -519,7 +519,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_faq"></a>
+<a id="delete\_faq"></a>
 
 ### delete_faq
 
@@ -538,7 +538,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
-<a id="delete_index"></a>
+<a id="delete\_index"></a>
 
 ### delete_index
 
@@ -556,7 +556,7 @@ Keyword-only arguments:
 
 - `Id`: `str` *(required)*
 
-<a id="delete_principal_mapping"></a>
+<a id="delete\_principal\_mapping"></a>
 
 ### delete_principal_mapping
 
@@ -578,7 +578,7 @@ Keyword-only arguments:
 - `DataSourceId`: `str`
 - `OrderingId`: `int`
 
-<a id="delete_query_suggestions_block_list"></a>
+<a id="delete\_query\_suggestions\_block\_list"></a>
 
 ### delete_query_suggestions_block_list
 
@@ -598,7 +598,7 @@ Keyword-only arguments:
 - `IndexId`: `str` *(required)*
 - `Id`: `str` *(required)*
 
-<a id="delete_thesaurus"></a>
+<a id="delete\_thesaurus"></a>
 
 ### delete_thesaurus
 
@@ -617,7 +617,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
-<a id="describe_data_source"></a>
+<a id="describe\_data\_source"></a>
 
 ### describe_data_source
 
@@ -639,7 +639,7 @@ Keyword-only arguments:
 Returns
 [DescribeDataSourceResponseTypeDef](./type_defs.md#describedatasourceresponsetypedef).
 
-<a id="describe_experience"></a>
+<a id="describe\_experience"></a>
 
 ### describe_experience
 
@@ -662,7 +662,7 @@ Keyword-only arguments:
 Returns
 [DescribeExperienceResponseTypeDef](./type_defs.md#describeexperienceresponsetypedef).
 
-<a id="describe_faq"></a>
+<a id="describe\_faq"></a>
 
 ### describe_faq
 
@@ -684,7 +684,7 @@ Keyword-only arguments:
 Returns
 [DescribeFaqResponseTypeDef](./type_defs.md#describefaqresponsetypedef).
 
-<a id="describe_index"></a>
+<a id="describe\_index"></a>
 
 ### describe_index
 
@@ -706,7 +706,7 @@ Keyword-only arguments:
 Returns
 [DescribeIndexResponseTypeDef](./type_defs.md#describeindexresponsetypedef).
 
-<a id="describe_principal_mapping"></a>
+<a id="describe\_principal\_mapping"></a>
 
 ### describe_principal_mapping
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [DescribePrincipalMappingResponseTypeDef](./type_defs.md#describeprincipalmappingresponsetypedef).
 
-<a id="describe_query_suggestions_block_list"></a>
+<a id="describe\_query\_suggestions\_block\_list"></a>
 
 ### describe_query_suggestions_block_list
 
@@ -754,7 +754,7 @@ Keyword-only arguments:
 Returns
 [DescribeQuerySuggestionsBlockListResponseTypeDef](./type_defs.md#describequerysuggestionsblocklistresponsetypedef).
 
-<a id="describe_query_suggestions_config"></a>
+<a id="describe\_query\_suggestions\_config"></a>
 
 ### describe_query_suggestions_config
 
@@ -776,7 +776,7 @@ Keyword-only arguments:
 Returns
 [DescribeQuerySuggestionsConfigResponseTypeDef](./type_defs.md#describequerysuggestionsconfigresponsetypedef).
 
-<a id="describe_thesaurus"></a>
+<a id="describe\_thesaurus"></a>
 
 ### describe_thesaurus
 
@@ -798,7 +798,7 @@ Keyword-only arguments:
 Returns
 [DescribeThesaurusResponseTypeDef](./type_defs.md#describethesaurusresponsetypedef).
 
-<a id="disassociate_entities_from_experience"></a>
+<a id="disassociate\_entities\_from\_experience"></a>
 
 ### disassociate_entities_from_experience
 
@@ -825,7 +825,7 @@ Keyword-only arguments:
 Returns
 [DisassociateEntitiesFromExperienceResponseTypeDef](./type_defs.md#disassociateentitiesfromexperienceresponsetypedef).
 
-<a id="disassociate_personas_from_entities"></a>
+<a id="disassociate\_personas\_from\_entities"></a>
 
 ### disassociate_personas_from_entities
 
@@ -850,7 +850,7 @@ Keyword-only arguments:
 Returns
 [DisassociatePersonasFromEntitiesResponseTypeDef](./type_defs.md#disassociatepersonasfromentitiesresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -870,7 +870,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_query_suggestions"></a>
+<a id="get\_query\_suggestions"></a>
 
 ### get_query_suggestions
 
@@ -893,7 +893,7 @@ Keyword-only arguments:
 Returns
 [GetQuerySuggestionsResponseTypeDef](./type_defs.md#getquerysuggestionsresponsetypedef).
 
-<a id="get_snapshots"></a>
+<a id="get\_snapshots"></a>
 
 ### get_snapshots
 
@@ -918,7 +918,7 @@ Keyword-only arguments:
 Returns
 [GetSnapshotsResponseTypeDef](./type_defs.md#getsnapshotsresponsetypedef).
 
-<a id="list_data_source_sync_jobs"></a>
+<a id="list\_data\_source\_sync\_jobs"></a>
 
 ### list_data_source_sync_jobs
 
@@ -946,7 +946,7 @@ Keyword-only arguments:
 Returns
 [ListDataSourceSyncJobsResponseTypeDef](./type_defs.md#listdatasourcesyncjobsresponsetypedef).
 
-<a id="list_data_sources"></a>
+<a id="list\_data\_sources"></a>
 
 ### list_data_sources
 
@@ -969,7 +969,7 @@ Keyword-only arguments:
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
-<a id="list_entity_personas"></a>
+<a id="list\_entity\_personas"></a>
 
 ### list_entity_personas
 
@@ -994,7 +994,7 @@ Keyword-only arguments:
 Returns
 [ListEntityPersonasResponseTypeDef](./type_defs.md#listentitypersonasresponsetypedef).
 
-<a id="list_experience_entities"></a>
+<a id="list\_experience\_entities"></a>
 
 ### list_experience_entities
 
@@ -1018,7 +1018,7 @@ Keyword-only arguments:
 Returns
 [ListExperienceEntitiesResponseTypeDef](./type_defs.md#listexperienceentitiesresponsetypedef).
 
-<a id="list_experiences"></a>
+<a id="list\_experiences"></a>
 
 ### list_experiences
 
@@ -1041,7 +1041,7 @@ Keyword-only arguments:
 Returns
 [ListExperiencesResponseTypeDef](./type_defs.md#listexperiencesresponsetypedef).
 
-<a id="list_faqs"></a>
+<a id="list\_faqs"></a>
 
 ### list_faqs
 
@@ -1063,7 +1063,7 @@ Keyword-only arguments:
 
 Returns [ListFaqsResponseTypeDef](./type_defs.md#listfaqsresponsetypedef).
 
-<a id="list_groups_older_than_ordering_id"></a>
+<a id="list\_groups\_older\_than\_ordering\_id"></a>
 
 ### list_groups_older_than_ordering_id
 
@@ -1090,7 +1090,7 @@ Keyword-only arguments:
 Returns
 [ListGroupsOlderThanOrderingIdResponseTypeDef](./type_defs.md#listgroupsolderthanorderingidresponsetypedef).
 
-<a id="list_indices"></a>
+<a id="list\_indices"></a>
 
 ### list_indices
 
@@ -1112,7 +1112,7 @@ Keyword-only arguments:
 Returns
 [ListIndicesResponseTypeDef](./type_defs.md#listindicesresponsetypedef).
 
-<a id="list_query_suggestions_block_lists"></a>
+<a id="list\_query\_suggestions\_block\_lists"></a>
 
 ### list_query_suggestions_block_lists
 
@@ -1136,7 +1136,7 @@ Keyword-only arguments:
 Returns
 [ListQuerySuggestionsBlockListsResponseTypeDef](./type_defs.md#listquerysuggestionsblocklistsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1157,7 +1157,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_thesauri"></a>
+<a id="list\_thesauri"></a>
 
 ### list_thesauri
 
@@ -1180,7 +1180,7 @@ Keyword-only arguments:
 Returns
 [ListThesauriResponseTypeDef](./type_defs.md#listthesauriresponsetypedef).
 
-<a id="put_principal_mapping"></a>
+<a id="put\_principal\_mapping"></a>
 
 ### put_principal_mapping
 
@@ -1240,7 +1240,7 @@ Keyword-only arguments:
 
 Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
 
-<a id="start_data_source_sync_job"></a>
+<a id="start\_data\_source\_sync\_job"></a>
 
 ### start_data_source_sync_job
 
@@ -1263,7 +1263,7 @@ Keyword-only arguments:
 Returns
 [StartDataSourceSyncJobResponseTypeDef](./type_defs.md#startdatasourcesyncjobresponsetypedef).
 
-<a id="stop_data_source_sync_job"></a>
+<a id="stop\_data\_source\_sync\_job"></a>
 
 ### stop_data_source_sync_job
 
@@ -1282,7 +1282,7 @@ Keyword-only arguments:
 - `Id`: `str` *(required)*
 - `IndexId`: `str` *(required)*
 
-<a id="submit_feedback"></a>
+<a id="submit\_feedback"></a>
 
 ### submit_feedback
 
@@ -1306,7 +1306,7 @@ Keyword-only arguments:
 - `RelevanceFeedbackItems`:
   `Sequence`\[[RelevanceFeedbackTypeDef](./type_defs.md#relevancefeedbacktypedef)\]
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1327,7 +1327,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1348,7 +1348,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_data_source"></a>
+<a id="update\_data\_source"></a>
 
 ### update_data_source
 
@@ -1376,7 +1376,7 @@ Keyword-only arguments:
 - `CustomDocumentEnrichmentConfiguration`:
   [CustomDocumentEnrichmentConfigurationTypeDef](./type_defs.md#customdocumentenrichmentconfigurationtypedef)
 
-<a id="update_experience"></a>
+<a id="update\_experience"></a>
 
 ### update_experience
 
@@ -1400,7 +1400,7 @@ Keyword-only arguments:
   [ExperienceConfigurationTypeDef](./type_defs.md#experienceconfigurationtypedef)
 - `Description`: `str`
 
-<a id="update_index"></a>
+<a id="update\_index"></a>
 
 ### update_index
 
@@ -1431,7 +1431,7 @@ Keyword-only arguments:
 - `UserGroupResolutionConfiguration`:
   [UserGroupResolutionConfigurationTypeDef](./type_defs.md#usergroupresolutionconfigurationtypedef)
 
-<a id="update_query_suggestions_block_list"></a>
+<a id="update\_query\_suggestions\_block\_list"></a>
 
 ### update_query_suggestions_block_list
 
@@ -1455,7 +1455,7 @@ Keyword-only arguments:
 - `SourceS3Path`: [S3PathTypeDef](./type_defs.md#s3pathtypedef)
 - `RoleArn`: `str`
 
-<a id="update_query_suggestions_config"></a>
+<a id="update\_query\_suggestions\_config"></a>
 
 ### update_query_suggestions_config
 
@@ -1479,7 +1479,7 @@ Keyword-only arguments:
 - `MinimumNumberOfQueryingUsers`: `int`
 - `MinimumQueryCount`: `int`
 
-<a id="update_thesaurus"></a>
+<a id="update\_thesaurus"></a>
 
 ### update_thesaurus
 

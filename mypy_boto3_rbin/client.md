@@ -84,7 +84,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -101,7 +101,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_rule"></a>
+<a id="create\_rule"></a>
 
 ### create_rule
 
@@ -128,7 +128,7 @@ Keyword-only arguments:
 
 Returns [CreateRuleResponseTypeDef](./type_defs.md#createruleresponsetypedef).
 
-<a id="delete_rule"></a>
+<a id="delete\_rule"></a>
 
 ### delete_rule
 
@@ -148,7 +148,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -168,7 +168,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_rule"></a>
+<a id="get\_rule"></a>
 
 ### get_rule
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 
 Returns [GetRuleResponseTypeDef](./type_defs.md#getruleresponsetypedef).
 
-<a id="list_rules"></a>
+<a id="list\_rules"></a>
 
 ### list_rules
 
@@ -213,7 +213,7 @@ Keyword-only arguments:
 
 Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -234,7 +234,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -255,7 +255,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_rule"></a>
+<a id="update\_rule"></a>
 
 ### update_rule
 

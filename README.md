@@ -40,9 +40,11 @@ python -m pip install 'boto3-stubs[essential]'
 # or install annotations for services you use
 python -m pip install 'boto3-stubs[acm,apigateway]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[essential]'
+
 ```
 
 ### From conda-forge
@@ -72,7 +74,7 @@ conda search boto3-stubs --channel conda-forge
 
 ```bash
 # uninstall boto3-stubs
-python -m pip uninstall -y boto3-stubs botocore-stubs
+python -m pip uninstall -y boto3-stubs
 ```
 
 ## Packages

@@ -95,7 +95,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -112,7 +112,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_database"></a>
+<a id="create\_database"></a>
 
 ### create_database
 
@@ -135,7 +135,7 @@ Keyword-only arguments:
 Returns
 [CreateDatabaseResponseTypeDef](./type_defs.md#createdatabaseresponsetypedef).
 
-<a id="create_table"></a>
+<a id="create\_table"></a>
 
 ### create_table
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [CreateTableResponseTypeDef](./type_defs.md#createtableresponsetypedef).
 
-<a id="delete_database"></a>
+<a id="delete\_database"></a>
 
 ### delete_database
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 
-<a id="delete_table"></a>
+<a id="delete\_table"></a>
 
 ### delete_table
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
 
-<a id="describe_database"></a>
+<a id="describe\_database"></a>
 
 ### describe_database
 
@@ -224,7 +224,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatabaseResponseTypeDef](./type_defs.md#describedatabaseresponsetypedef).
 
-<a id="describe_endpoints"></a>
+<a id="describe\_endpoints"></a>
 
 ### describe_endpoints
 
@@ -240,7 +240,7 @@ Boto3 documentation:
 Returns
 [DescribeEndpointsResponseTypeDef](./type_defs.md#describeendpointsresponsetypedef).
 
-<a id="describe_table"></a>
+<a id="describe\_table"></a>
 
 ### describe_table
 
@@ -263,7 +263,7 @@ Keyword-only arguments:
 Returns
 [DescribeTableResponseTypeDef](./type_defs.md#describetableresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -284,7 +284,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_databases"></a>
+<a id="list\_databases"></a>
 
 ### list_databases
 
@@ -306,7 +306,7 @@ Keyword-only arguments:
 Returns
 [ListDatabasesResponseTypeDef](./type_defs.md#listdatabasesresponsetypedef).
 
-<a id="list_tables"></a>
+<a id="list\_tables"></a>
 
 ### list_tables
 
@@ -329,7 +329,7 @@ Keyword-only arguments:
 
 Returns [ListTablesResponseTypeDef](./type_defs.md#listtablesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -351,7 +351,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -372,7 +372,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -393,7 +393,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_database"></a>
+<a id="update\_database"></a>
 
 ### update_database
 
@@ -415,7 +415,7 @@ Keyword-only arguments:
 Returns
 [UpdateDatabaseResponseTypeDef](./type_defs.md#updatedatabaseresponsetypedef).
 
-<a id="update_table"></a>
+<a id="update\_table"></a>
 
 ### update_table
 
@@ -442,7 +442,7 @@ Keyword-only arguments:
 Returns
 [UpdateTableResponseTypeDef](./type_defs.md#updatetableresponsetypedef).
 
-<a id="write_records"></a>
+<a id="write\_records"></a>
 
 ### write_records
 

@@ -87,7 +87,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -104,7 +104,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_session"></a>
+<a id="delete\_session"></a>
 
 ### delete_session
 
@@ -127,7 +127,7 @@ Keyword-only arguments:
 Returns
 [DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -148,7 +148,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_session"></a>
+<a id="get\_session"></a>
 
 ### get_session
 
@@ -171,7 +171,7 @@ Keyword-only arguments:
 
 Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
-<a id="post_content"></a>
+<a id="post\_content"></a>
 
 ### post_content
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 Returns
 [PostContentResponseTypeDef](./type_defs.md#postcontentresponsetypedef).
 
-<a id="post_text"></a>
+<a id="post\_text"></a>
 
 ### post_text
 
@@ -228,7 +228,7 @@ Keyword-only arguments:
 
 Returns [PostTextResponseTypeDef](./type_defs.md#posttextresponsetypedef).
 
-<a id="put_session"></a>
+<a id="put\_session"></a>
 
 ### put_session
 

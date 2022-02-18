@@ -110,7 +110,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -127,7 +127,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_assistant"></a>
+<a id="create\_assistant"></a>
 
 ### create_assistant
 
@@ -155,7 +155,7 @@ Keyword-only arguments:
 Returns
 [CreateAssistantResponseTypeDef](./type_defs.md#createassistantresponsetypedef).
 
-<a id="create_assistant_association"></a>
+<a id="create\_assistant\_association"></a>
 
 ### create_assistant_association
 
@@ -185,7 +185,7 @@ Keyword-only arguments:
 Returns
 [CreateAssistantAssociationResponseTypeDef](./type_defs.md#createassistantassociationresponsetypedef).
 
-<a id="create_content"></a>
+<a id="create\_content"></a>
 
 ### create_content
 
@@ -213,7 +213,7 @@ Keyword-only arguments:
 Returns
 [CreateContentResponseTypeDef](./type_defs.md#createcontentresponsetypedef).
 
-<a id="create_knowledge_base"></a>
+<a id="create\_knowledge\_base"></a>
 
 ### create_knowledge_base
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 Returns
 [CreateKnowledgeBaseResponseTypeDef](./type_defs.md#createknowledgebaseresponsetypedef).
 
-<a id="create_session"></a>
+<a id="create\_session"></a>
 
 ### create_session
 
@@ -270,7 +270,7 @@ Keyword-only arguments:
 Returns
 [CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef).
 
-<a id="delete_assistant"></a>
+<a id="delete\_assistant"></a>
 
 ### delete_assistant
 
@@ -290,7 +290,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_assistant_association"></a>
+<a id="delete\_assistant\_association"></a>
 
 ### delete_assistant_association
 
@@ -312,7 +312,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_content"></a>
+<a id="delete\_content"></a>
 
 ### delete_content
 
@@ -333,7 +333,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_knowledge_base"></a>
+<a id="delete\_knowledge\_base"></a>
 
 ### delete_knowledge_base
 
@@ -353,7 +353,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -373,7 +373,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_assistant"></a>
+<a id="get\_assistant"></a>
 
 ### get_assistant
 
@@ -394,7 +394,7 @@ Keyword-only arguments:
 Returns
 [GetAssistantResponseTypeDef](./type_defs.md#getassistantresponsetypedef).
 
-<a id="get_assistant_association"></a>
+<a id="get\_assistant\_association"></a>
 
 ### get_assistant_association
 
@@ -416,7 +416,7 @@ Keyword-only arguments:
 Returns
 [GetAssistantAssociationResponseTypeDef](./type_defs.md#getassistantassociationresponsetypedef).
 
-<a id="get_content"></a>
+<a id="get\_content"></a>
 
 ### get_content
 
@@ -437,7 +437,7 @@ Keyword-only arguments:
 
 Returns [GetContentResponseTypeDef](./type_defs.md#getcontentresponsetypedef).
 
-<a id="get_content_summary"></a>
+<a id="get\_content\_summary"></a>
 
 ### get_content_summary
 
@@ -459,7 +459,7 @@ Keyword-only arguments:
 Returns
 [GetContentSummaryResponseTypeDef](./type_defs.md#getcontentsummaryresponsetypedef).
 
-<a id="get_knowledge_base"></a>
+<a id="get\_knowledge\_base"></a>
 
 ### get_knowledge_base
 
@@ -480,7 +480,7 @@ Keyword-only arguments:
 Returns
 [GetKnowledgeBaseResponseTypeDef](./type_defs.md#getknowledgebaseresponsetypedef).
 
-<a id="get_recommendations"></a>
+<a id="get\_recommendations"></a>
 
 ### get_recommendations
 
@@ -504,7 +504,7 @@ Keyword-only arguments:
 Returns
 [GetRecommendationsResponseTypeDef](./type_defs.md#getrecommendationsresponsetypedef).
 
-<a id="get_session"></a>
+<a id="get\_session"></a>
 
 ### get_session
 
@@ -525,7 +525,7 @@ Keyword-only arguments:
 
 Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
 
-<a id="list_assistant_associations"></a>
+<a id="list\_assistant\_associations"></a>
 
 ### list_assistant_associations
 
@@ -549,7 +549,7 @@ Keyword-only arguments:
 Returns
 [ListAssistantAssociationsResponseTypeDef](./type_defs.md#listassistantassociationsresponsetypedef).
 
-<a id="list_assistants"></a>
+<a id="list\_assistants"></a>
 
 ### list_assistants
 
@@ -571,7 +571,7 @@ Keyword-only arguments:
 Returns
 [ListAssistantsResponseTypeDef](./type_defs.md#listassistantsresponsetypedef).
 
-<a id="list_contents"></a>
+<a id="list\_contents"></a>
 
 ### list_contents
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 Returns
 [ListContentsResponseTypeDef](./type_defs.md#listcontentsresponsetypedef).
 
-<a id="list_knowledge_bases"></a>
+<a id="list\_knowledge\_bases"></a>
 
 ### list_knowledge_bases
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 Returns
 [ListKnowledgeBasesResponseTypeDef](./type_defs.md#listknowledgebasesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -637,7 +637,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="notify_recommendations_received"></a>
+<a id="notify\_recommendations\_received"></a>
 
 ### notify_recommendations_received
 
@@ -662,7 +662,7 @@ Keyword-only arguments:
 Returns
 [NotifyRecommendationsReceivedResponseTypeDef](./type_defs.md#notifyrecommendationsreceivedresponsetypedef).
 
-<a id="query_assistant"></a>
+<a id="query\_assistant"></a>
 
 ### query_assistant
 
@@ -686,7 +686,7 @@ Keyword-only arguments:
 Returns
 [QueryAssistantResponseTypeDef](./type_defs.md#queryassistantresponsetypedef).
 
-<a id="remove_knowledge_base_template_uri"></a>
+<a id="remove\_knowledge\_base\_template\_uri"></a>
 
 ### remove_knowledge_base_template_uri
 
@@ -707,7 +707,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="search_content"></a>
+<a id="search\_content"></a>
 
 ### search_content
 
@@ -733,7 +733,7 @@ Keyword-only arguments:
 Returns
 [SearchContentResponseTypeDef](./type_defs.md#searchcontentresponsetypedef).
 
-<a id="search_sessions"></a>
+<a id="search\_sessions"></a>
 
 ### search_sessions
 
@@ -759,7 +759,7 @@ Keyword-only arguments:
 Returns
 [SearchSessionsResponseTypeDef](./type_defs.md#searchsessionsresponsetypedef).
 
-<a id="start_content_upload"></a>
+<a id="start\_content\_upload"></a>
 
 ### start_content_upload
 
@@ -781,7 +781,7 @@ Keyword-only arguments:
 Returns
 [StartContentUploadResponseTypeDef](./type_defs.md#startcontentuploadresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -802,7 +802,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -823,7 +823,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_content"></a>
+<a id="update\_content"></a>
 
 ### update_content
 
@@ -851,7 +851,7 @@ Keyword-only arguments:
 Returns
 [UpdateContentResponseTypeDef](./type_defs.md#updatecontentresponsetypedef).
 
-<a id="update_knowledge_base_template_uri"></a>
+<a id="update\_knowledge\_base\_template\_uri"></a>
 
 ### update_knowledge_base_template_uri
 

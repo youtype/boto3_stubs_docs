@@ -159,7 +159,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="add_tags"></a>
+<a id="add\_tags"></a>
 
 ### add_tags
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -198,7 +198,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_query"></a>
+<a id="cancel\_query"></a>
 
 ### cancel_query
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [CancelQueryResponseTypeDef](./type_defs.md#cancelqueryresponsetypedef).
 
-<a id="create_event_data_store"></a>
+<a id="create\_event\_data\_store"></a>
 
 ### create_event_data_store
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 Returns
 [CreateEventDataStoreResponseTypeDef](./type_defs.md#createeventdatastoreresponsetypedef).
 
-<a id="create_trail"></a>
+<a id="create\_trail"></a>
 
 ### create_trail
 
@@ -283,7 +283,7 @@ Keyword-only arguments:
 Returns
 [CreateTrailResponseTypeDef](./type_defs.md#createtrailresponsetypedef).
 
-<a id="delete_event_data_store"></a>
+<a id="delete\_event\_data\_store"></a>
 
 ### delete_event_data_store
 
@@ -305,7 +305,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_trail"></a>
+<a id="delete\_trail"></a>
 
 ### delete_trail
 
@@ -325,7 +325,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_query"></a>
+<a id="describe\_query"></a>
 
 ### describe_query
 
@@ -348,7 +348,7 @@ Keyword-only arguments:
 Returns
 [DescribeQueryResponseTypeDef](./type_defs.md#describequeryresponsetypedef).
 
-<a id="describe_trails"></a>
+<a id="describe\_trails"></a>
 
 ### describe_trails
 
@@ -371,7 +371,7 @@ Keyword-only arguments:
 Returns
 [DescribeTrailsResponseTypeDef](./type_defs.md#describetrailsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -392,7 +392,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_event_data_store"></a>
+<a id="get\_event\_data\_store"></a>
 
 ### get_event_data_store
 
@@ -414,7 +414,7 @@ Keyword-only arguments:
 Returns
 [GetEventDataStoreResponseTypeDef](./type_defs.md#geteventdatastoreresponsetypedef).
 
-<a id="get_event_selectors"></a>
+<a id="get\_event\_selectors"></a>
 
 ### get_event_selectors
 
@@ -436,7 +436,7 @@ Keyword-only arguments:
 Returns
 [GetEventSelectorsResponseTypeDef](./type_defs.md#geteventselectorsresponsetypedef).
 
-<a id="get_insight_selectors"></a>
+<a id="get\_insight\_selectors"></a>
 
 ### get_insight_selectors
 
@@ -458,7 +458,7 @@ Keyword-only arguments:
 Returns
 [GetInsightSelectorsResponseTypeDef](./type_defs.md#getinsightselectorsresponsetypedef).
 
-<a id="get_query_results"></a>
+<a id="get\_query\_results"></a>
 
 ### get_query_results
 
@@ -482,7 +482,7 @@ Keyword-only arguments:
 Returns
 [GetQueryResultsResponseTypeDef](./type_defs.md#getqueryresultsresponsetypedef).
 
-<a id="get_trail"></a>
+<a id="get\_trail"></a>
 
 ### get_trail
 
@@ -502,7 +502,7 @@ Keyword-only arguments:
 
 Returns [GetTrailResponseTypeDef](./type_defs.md#gettrailresponsetypedef).
 
-<a id="get_trail_status"></a>
+<a id="get\_trail\_status"></a>
 
 ### get_trail_status
 
@@ -523,7 +523,7 @@ Keyword-only arguments:
 Returns
 [GetTrailStatusResponseTypeDef](./type_defs.md#gettrailstatusresponsetypedef).
 
-<a id="list_event_data_stores"></a>
+<a id="list\_event\_data\_stores"></a>
 
 ### list_event_data_stores
 
@@ -547,7 +547,7 @@ Keyword-only arguments:
 Returns
 [ListEventDataStoresResponseTypeDef](./type_defs.md#listeventdatastoresresponsetypedef).
 
-<a id="list_public_keys"></a>
+<a id="list\_public\_keys"></a>
 
 ### list_public_keys
 
@@ -571,7 +571,7 @@ Keyword-only arguments:
 Returns
 [ListPublicKeysResponseTypeDef](./type_defs.md#listpublickeysresponsetypedef).
 
-<a id="list_queries"></a>
+<a id="list\_queries"></a>
 
 ### list_queries
 
@@ -597,7 +597,7 @@ Keyword-only arguments:
 Returns
 [ListQueriesResponseTypeDef](./type_defs.md#listqueriesresponsetypedef).
 
-<a id="list_tags"></a>
+<a id="list\_tags"></a>
 
 ### list_tags
 
@@ -618,7 +618,7 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
-<a id="list_trails"></a>
+<a id="list\_trails"></a>
 
 ### list_trails
 
@@ -638,7 +638,7 @@ Keyword-only arguments:
 
 Returns [ListTrailsResponseTypeDef](./type_defs.md#listtrailsresponsetypedef).
 
-<a id="lookup_events"></a>
+<a id="lookup\_events"></a>
 
 ### lookup_events
 
@@ -669,7 +669,7 @@ Keyword-only arguments:
 Returns
 [LookupEventsResponseTypeDef](./type_defs.md#lookupeventsresponsetypedef).
 
-<a id="put_event_selectors"></a>
+<a id="put\_event\_selectors"></a>
 
 ### put_event_selectors
 
@@ -694,7 +694,7 @@ Keyword-only arguments:
 Returns
 [PutEventSelectorsResponseTypeDef](./type_defs.md#puteventselectorsresponsetypedef).
 
-<a id="put_insight_selectors"></a>
+<a id="put\_insight\_selectors"></a>
 
 ### put_insight_selectors
 
@@ -719,7 +719,7 @@ Keyword-only arguments:
 Returns
 [PutInsightSelectorsResponseTypeDef](./type_defs.md#putinsightselectorsresponsetypedef).
 
-<a id="remove_tags"></a>
+<a id="remove\_tags"></a>
 
 ### remove_tags
 
@@ -741,7 +741,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="restore_event_data_store"></a>
+<a id="restore\_event\_data\_store"></a>
 
 ### restore_event_data_store
 
@@ -764,7 +764,7 @@ Keyword-only arguments:
 Returns
 [RestoreEventDataStoreResponseTypeDef](./type_defs.md#restoreeventdatastoreresponsetypedef).
 
-<a id="start_logging"></a>
+<a id="start\_logging"></a>
 
 ### start_logging
 
@@ -785,7 +785,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="start_query"></a>
+<a id="start\_query"></a>
 
 ### start_query
 
@@ -805,7 +805,7 @@ Keyword-only arguments:
 
 Returns [StartQueryResponseTypeDef](./type_defs.md#startqueryresponsetypedef).
 
-<a id="stop_logging"></a>
+<a id="stop\_logging"></a>
 
 ### stop_logging
 
@@ -826,7 +826,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_event_data_store"></a>
+<a id="update\_event\_data\_store"></a>
 
 ### update_event_data_store
 
@@ -855,7 +855,7 @@ Keyword-only arguments:
 Returns
 [UpdateEventDataStoreResponseTypeDef](./type_defs.md#updateeventdatastoreresponsetypedef).
 
-<a id="update_trail"></a>
+<a id="update\_trail"></a>
 
 ### update_trail
 

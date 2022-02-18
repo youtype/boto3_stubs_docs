@@ -119,7 +119,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_resource_share_invitation"></a>
+<a id="accept\_resource\_share\_invitation"></a>
 
 ### accept_resource_share_invitation
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 Returns
 [AcceptResourceShareInvitationResponseTypeDef](./type_defs.md#acceptresourceshareinvitationresponsetypedef).
 
-<a id="associate_resource_share"></a>
+<a id="associate\_resource\_share"></a>
 
 ### associate_resource_share
 
@@ -168,7 +168,7 @@ Keyword-only arguments:
 Returns
 [AssociateResourceShareResponseTypeDef](./type_defs.md#associateresourceshareresponsetypedef).
 
-<a id="associate_resource_share_permission"></a>
+<a id="associate\_resource\_share\_permission"></a>
 
 ### associate_resource_share_permission
 
@@ -195,7 +195,7 @@ Keyword-only arguments:
 Returns
 [AssociateResourceSharePermissionResponseTypeDef](./type_defs.md#associateresourcesharepermissionresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -212,7 +212,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_resource_share"></a>
+<a id="create\_resource\_share"></a>
 
 ### create_resource_share
 
@@ -239,7 +239,7 @@ Keyword-only arguments:
 Returns
 [CreateResourceShareResponseTypeDef](./type_defs.md#createresourceshareresponsetypedef).
 
-<a id="delete_resource_share"></a>
+<a id="delete\_resource\_share"></a>
 
 ### delete_resource_share
 
@@ -261,7 +261,7 @@ Keyword-only arguments:
 Returns
 [DeleteResourceShareResponseTypeDef](./type_defs.md#deleteresourceshareresponsetypedef).
 
-<a id="disassociate_resource_share"></a>
+<a id="disassociate\_resource\_share"></a>
 
 ### disassociate_resource_share
 
@@ -286,7 +286,7 @@ Keyword-only arguments:
 Returns
 [DisassociateResourceShareResponseTypeDef](./type_defs.md#disassociateresourceshareresponsetypedef).
 
-<a id="disassociate_resource_share_permission"></a>
+<a id="disassociate\_resource\_share\_permission"></a>
 
 ### disassociate_resource_share_permission
 
@@ -310,7 +310,7 @@ Keyword-only arguments:
 Returns
 [DisassociateResourceSharePermissionResponseTypeDef](./type_defs.md#disassociateresourcesharepermissionresponsetypedef).
 
-<a id="enable_sharing_with_aws_organization"></a>
+<a id="enable\_sharing\_with\_aws\_organization"></a>
 
 ### enable_sharing_with_aws_organization
 
@@ -325,7 +325,7 @@ Boto3 documentation:
 Returns
 [EnableSharingWithAwsOrganizationResponseTypeDef](./type_defs.md#enablesharingwithawsorganizationresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -345,7 +345,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_permission"></a>
+<a id="get\_permission"></a>
 
 ### get_permission
 
@@ -367,7 +367,7 @@ Keyword-only arguments:
 Returns
 [GetPermissionResponseTypeDef](./type_defs.md#getpermissionresponsetypedef).
 
-<a id="get_resource_policies"></a>
+<a id="get\_resource\_policies"></a>
 
 ### get_resource_policies
 
@@ -392,7 +392,7 @@ Keyword-only arguments:
 Returns
 [GetResourcePoliciesResponseTypeDef](./type_defs.md#getresourcepoliciesresponsetypedef).
 
-<a id="get_resource_share_associations"></a>
+<a id="get\_resource\_share\_associations"></a>
 
 ### get_resource_share_associations
 
@@ -424,7 +424,7 @@ Keyword-only arguments:
 Returns
 [GetResourceShareAssociationsResponseTypeDef](./type_defs.md#getresourceshareassociationsresponsetypedef).
 
-<a id="get_resource_share_invitations"></a>
+<a id="get\_resource\_share\_invitations"></a>
 
 ### get_resource_share_invitations
 
@@ -449,7 +449,7 @@ Keyword-only arguments:
 Returns
 [GetResourceShareInvitationsResponseTypeDef](./type_defs.md#getresourceshareinvitationsresponsetypedef).
 
-<a id="get_resource_shares"></a>
+<a id="get\_resource\_shares"></a>
 
 ### get_resource_shares
 
@@ -481,7 +481,7 @@ Keyword-only arguments:
 Returns
 [GetResourceSharesResponseTypeDef](./type_defs.md#getresourcesharesresponsetypedef).
 
-<a id="list_pending_invitation_resources"></a>
+<a id="list\_pending\_invitation\_resources"></a>
 
 ### list_pending_invitation_resources
 
@@ -508,7 +508,7 @@ Keyword-only arguments:
 Returns
 [ListPendingInvitationResourcesResponseTypeDef](./type_defs.md#listpendinginvitationresourcesresponsetypedef).
 
-<a id="list_permission_versions"></a>
+<a id="list\_permission\_versions"></a>
 
 ### list_permission_versions
 
@@ -531,7 +531,7 @@ Keyword-only arguments:
 Returns
 [ListPermissionVersionsResponseTypeDef](./type_defs.md#listpermissionversionsresponsetypedef).
 
-<a id="list_permissions"></a>
+<a id="list\_permissions"></a>
 
 ### list_permissions
 
@@ -555,7 +555,7 @@ Keyword-only arguments:
 Returns
 [ListPermissionsResponseTypeDef](./type_defs.md#listpermissionsresponsetypedef).
 
-<a id="list_principals"></a>
+<a id="list\_principals"></a>
 
 ### list_principals
 
@@ -584,7 +584,7 @@ Keyword-only arguments:
 Returns
 [ListPrincipalsResponseTypeDef](./type_defs.md#listprincipalsresponsetypedef).
 
-<a id="list_resource_share_permissions"></a>
+<a id="list\_resource\_share\_permissions"></a>
 
 ### list_resource_share_permissions
 
@@ -608,7 +608,7 @@ Keyword-only arguments:
 Returns
 [ListResourceSharePermissionsResponseTypeDef](./type_defs.md#listresourcesharepermissionsresponsetypedef).
 
-<a id="list_resource_types"></a>
+<a id="list\_resource\_types"></a>
 
 ### list_resource_types
 
@@ -632,7 +632,7 @@ Keyword-only arguments:
 Returns
 [ListResourceTypesResponseTypeDef](./type_defs.md#listresourcetypesresponsetypedef).
 
-<a id="list_resources"></a>
+<a id="list\_resources"></a>
 
 ### list_resources
 
@@ -663,7 +663,7 @@ Keyword-only arguments:
 Returns
 [ListResourcesResponseTypeDef](./type_defs.md#listresourcesresponsetypedef).
 
-<a id="promote_resource_share_created_from_policy"></a>
+<a id="promote\_resource\_share\_created\_from\_policy"></a>
 
 ### promote_resource_share_created_from_policy
 
@@ -686,7 +686,7 @@ Keyword-only arguments:
 Returns
 [PromoteResourceShareCreatedFromPolicyResponseTypeDef](./type_defs.md#promoteresourcesharecreatedfrompolicyresponsetypedef).
 
-<a id="reject_resource_share_invitation"></a>
+<a id="reject\_resource\_share\_invitation"></a>
 
 ### reject_resource_share_invitation
 
@@ -710,7 +710,7 @@ Keyword-only arguments:
 Returns
 [RejectResourceShareInvitationResponseTypeDef](./type_defs.md#rejectresourceshareinvitationresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -753,7 +753,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_resource_share"></a>
+<a id="update\_resource\_share"></a>
 
 ### update_resource_share
 

@@ -114,7 +114,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_firewall_policy"></a>
+<a id="associate\_firewall\_policy"></a>
 
 ### associate_firewall_policy
 
@@ -139,7 +139,7 @@ Keyword-only arguments:
 Returns
 [AssociateFirewallPolicyResponseTypeDef](./type_defs.md#associatefirewallpolicyresponsetypedef).
 
-<a id="associate_subnets"></a>
+<a id="associate\_subnets"></a>
 
 ### associate_subnets
 
@@ -166,7 +166,7 @@ Keyword-only arguments:
 Returns
 [AssociateSubnetsResponseTypeDef](./type_defs.md#associatesubnetsresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -183,7 +183,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_firewall"></a>
+<a id="create\_firewall"></a>
 
 ### create_firewall
 
@@ -215,7 +215,7 @@ Keyword-only arguments:
 Returns
 [CreateFirewallResponseTypeDef](./type_defs.md#createfirewallresponsetypedef).
 
-<a id="create_firewall_policy"></a>
+<a id="create\_firewall\_policy"></a>
 
 ### create_firewall_policy
 
@@ -242,7 +242,7 @@ Keyword-only arguments:
 Returns
 [CreateFirewallPolicyResponseTypeDef](./type_defs.md#createfirewallpolicyresponsetypedef).
 
-<a id="create_rule_group"></a>
+<a id="create\_rule\_group"></a>
 
 ### create_rule_group
 
@@ -272,7 +272,7 @@ Keyword-only arguments:
 Returns
 [CreateRuleGroupResponseTypeDef](./type_defs.md#createrulegroupresponsetypedef).
 
-<a id="delete_firewall"></a>
+<a id="delete\_firewall"></a>
 
 ### delete_firewall
 
@@ -294,7 +294,7 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallResponseTypeDef](./type_defs.md#deletefirewallresponsetypedef).
 
-<a id="delete_firewall_policy"></a>
+<a id="delete\_firewall\_policy"></a>
 
 ### delete_firewall_policy
 
@@ -317,7 +317,7 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallPolicyResponseTypeDef](./type_defs.md#deletefirewallpolicyresponsetypedef).
 
-<a id="delete_resource_policy"></a>
+<a id="delete\_resource\_policy"></a>
 
 ### delete_resource_policy
 
@@ -338,7 +338,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_rule_group"></a>
+<a id="delete\_rule\_group"></a>
 
 ### delete_rule_group
 
@@ -362,7 +362,7 @@ Keyword-only arguments:
 Returns
 [DeleteRuleGroupResponseTypeDef](./type_defs.md#deleterulegroupresponsetypedef).
 
-<a id="describe_firewall"></a>
+<a id="describe\_firewall"></a>
 
 ### describe_firewall
 
@@ -385,7 +385,7 @@ Keyword-only arguments:
 Returns
 [DescribeFirewallResponseTypeDef](./type_defs.md#describefirewallresponsetypedef).
 
-<a id="describe_firewall_policy"></a>
+<a id="describe\_firewall\_policy"></a>
 
 ### describe_firewall_policy
 
@@ -408,7 +408,7 @@ Keyword-only arguments:
 Returns
 [DescribeFirewallPolicyResponseTypeDef](./type_defs.md#describefirewallpolicyresponsetypedef).
 
-<a id="describe_logging_configuration"></a>
+<a id="describe\_logging\_configuration"></a>
 
 ### describe_logging_configuration
 
@@ -431,7 +431,7 @@ Keyword-only arguments:
 Returns
 [DescribeLoggingConfigurationResponseTypeDef](./type_defs.md#describeloggingconfigurationresponsetypedef).
 
-<a id="describe_resource_policy"></a>
+<a id="describe\_resource\_policy"></a>
 
 ### describe_resource_policy
 
@@ -453,7 +453,7 @@ Keyword-only arguments:
 Returns
 [DescribeResourcePolicyResponseTypeDef](./type_defs.md#describeresourcepolicyresponsetypedef).
 
-<a id="describe_rule_group"></a>
+<a id="describe\_rule\_group"></a>
 
 ### describe_rule_group
 
@@ -477,7 +477,7 @@ Keyword-only arguments:
 Returns
 [DescribeRuleGroupResponseTypeDef](./type_defs.md#describerulegroupresponsetypedef).
 
-<a id="describe_rule_group_metadata"></a>
+<a id="describe\_rule\_group\_metadata"></a>
 
 ### describe_rule_group_metadata
 
@@ -502,7 +502,7 @@ Keyword-only arguments:
 Returns
 [DescribeRuleGroupMetadataResponseTypeDef](./type_defs.md#describerulegroupmetadataresponsetypedef).
 
-<a id="disassociate_subnets"></a>
+<a id="disassociate\_subnets"></a>
 
 ### disassociate_subnets
 
@@ -527,7 +527,7 @@ Keyword-only arguments:
 Returns
 [DisassociateSubnetsResponseTypeDef](./type_defs.md#disassociatesubnetsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -548,7 +548,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_firewall_policies"></a>
+<a id="list\_firewall\_policies"></a>
 
 ### list_firewall_policies
 
@@ -571,7 +571,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallPoliciesResponseTypeDef](./type_defs.md#listfirewallpoliciesresponsetypedef).
 
-<a id="list_firewalls"></a>
+<a id="list\_firewalls"></a>
 
 ### list_firewalls
 
@@ -594,7 +594,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallsResponseTypeDef](./type_defs.md#listfirewallsresponsetypedef).
 
-<a id="list_rule_groups"></a>
+<a id="list\_rule\_groups"></a>
 
 ### list_rule_groups
 
@@ -618,7 +618,7 @@ Keyword-only arguments:
 Returns
 [ListRuleGroupsResponseTypeDef](./type_defs.md#listrulegroupsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -642,7 +642,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_resource_policy"></a>
+<a id="put\_resource\_policy"></a>
 
 ### put_resource_policy
 
@@ -665,7 +665,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -686,7 +686,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -707,7 +707,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_firewall_delete_protection"></a>
+<a id="update\_firewall\_delete\_protection"></a>
 
 ### update_firewall_delete_protection
 
@@ -733,7 +733,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallDeleteProtectionResponseTypeDef](./type_defs.md#updatefirewalldeleteprotectionresponsetypedef).
 
-<a id="update_firewall_description"></a>
+<a id="update\_firewall\_description"></a>
 
 ### update_firewall_description
 
@@ -758,7 +758,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallDescriptionResponseTypeDef](./type_defs.md#updatefirewalldescriptionresponsetypedef).
 
-<a id="update_firewall_policy"></a>
+<a id="update\_firewall\_policy"></a>
 
 ### update_firewall_policy
 
@@ -786,7 +786,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallPolicyResponseTypeDef](./type_defs.md#updatefirewallpolicyresponsetypedef).
 
-<a id="update_firewall_policy_change_protection"></a>
+<a id="update\_firewall\_policy\_change\_protection"></a>
 
 ### update_firewall_policy_change_protection
 
@@ -813,7 +813,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallPolicyChangeProtectionResponseTypeDef](./type_defs.md#updatefirewallpolicychangeprotectionresponsetypedef).
 
-<a id="update_logging_configuration"></a>
+<a id="update\_logging\_configuration"></a>
 
 ### update_logging_configuration
 
@@ -838,7 +838,7 @@ Keyword-only arguments:
 Returns
 [UpdateLoggingConfigurationResponseTypeDef](./type_defs.md#updateloggingconfigurationresponsetypedef).
 
-<a id="update_rule_group"></a>
+<a id="update\_rule\_group"></a>
 
 ### update_rule_group
 
@@ -867,7 +867,7 @@ Keyword-only arguments:
 Returns
 [UpdateRuleGroupResponseTypeDef](./type_defs.md#updaterulegroupresponsetypedef).
 
-<a id="update_subnet_change_protection"></a>
+<a id="update\_subnet\_change\_protection"></a>
 
 ### update_subnet_change_protection
 

@@ -169,7 +169,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_shared_directory"></a>
+<a id="accept\_shared\_directory"></a>
 
 ### accept_shared_directory
 
@@ -191,7 +191,7 @@ Keyword-only arguments:
 Returns
 [AcceptSharedDirectoryResultTypeDef](./type_defs.md#acceptshareddirectoryresulttypedef).
 
-<a id="add_ip_routes"></a>
+<a id="add\_ip\_routes"></a>
 
 ### add_ip_routes
 
@@ -216,7 +216,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="add_region"></a>
+<a id="add\_region"></a>
 
 ### add_region
 
@@ -241,7 +241,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="add_tags_to_resource"></a>
+<a id="add\_tags\_to\_resource"></a>
 
 ### add_tags_to_resource
 
@@ -262,7 +262,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -279,7 +279,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_schema_extension"></a>
+<a id="cancel\_schema\_extension"></a>
 
 ### cancel_schema_extension
 
@@ -300,7 +300,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="connect_directory"></a>
+<a id="connect\_directory"></a>
 
 ### connect_directory
 
@@ -329,7 +329,7 @@ Keyword-only arguments:
 Returns
 [ConnectDirectoryResultTypeDef](./type_defs.md#connectdirectoryresulttypedef).
 
-<a id="create_alias"></a>
+<a id="create\_alias"></a>
 
 ### create_alias
 
@@ -350,7 +350,7 @@ Keyword-only arguments:
 
 Returns [CreateAliasResultTypeDef](./type_defs.md#createaliasresulttypedef).
 
-<a id="create_computer"></a>
+<a id="create\_computer"></a>
 
 ### create_computer
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [CreateComputerResultTypeDef](./type_defs.md#createcomputerresulttypedef).
 
-<a id="create_conditional_forwarder"></a>
+<a id="create\_conditional\_forwarder"></a>
 
 ### create_conditional_forwarder
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_directory"></a>
+<a id="create\_directory"></a>
 
 ### create_directory
 
@@ -427,7 +427,7 @@ Keyword-only arguments:
 Returns
 [CreateDirectoryResultTypeDef](./type_defs.md#createdirectoryresulttypedef).
 
-<a id="create_log_subscription"></a>
+<a id="create\_log\_subscription"></a>
 
 ### create_log_subscription
 
@@ -450,7 +450,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="create_microsoft_ad"></a>
+<a id="create\_microsoft\_ad"></a>
 
 ### create_microsoft_ad
 
@@ -479,7 +479,7 @@ Keyword-only arguments:
 Returns
 [CreateMicrosoftADResultTypeDef](./type_defs.md#createmicrosoftadresulttypedef).
 
-<a id="create_snapshot"></a>
+<a id="create\_snapshot"></a>
 
 ### create_snapshot
 
@@ -502,7 +502,7 @@ Keyword-only arguments:
 Returns
 [CreateSnapshotResultTypeDef](./type_defs.md#createsnapshotresulttypedef).
 
-<a id="create_trust"></a>
+<a id="create\_trust"></a>
 
 ### create_trust
 
@@ -530,7 +530,7 @@ Keyword-only arguments:
 
 Returns [CreateTrustResultTypeDef](./type_defs.md#createtrustresulttypedef).
 
-<a id="delete_conditional_forwarder"></a>
+<a id="delete\_conditional\_forwarder"></a>
 
 ### delete_conditional_forwarder
 
@@ -552,7 +552,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_directory"></a>
+<a id="delete\_directory"></a>
 
 ### delete_directory
 
@@ -573,7 +573,7 @@ Keyword-only arguments:
 Returns
 [DeleteDirectoryResultTypeDef](./type_defs.md#deletedirectoryresulttypedef).
 
-<a id="delete_log_subscription"></a>
+<a id="delete\_log\_subscription"></a>
 
 ### delete_log_subscription
 
@@ -593,7 +593,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_snapshot"></a>
+<a id="delete\_snapshot"></a>
 
 ### delete_snapshot
 
@@ -614,7 +614,7 @@ Keyword-only arguments:
 Returns
 [DeleteSnapshotResultTypeDef](./type_defs.md#deletesnapshotresulttypedef).
 
-<a id="delete_trust"></a>
+<a id="delete\_trust"></a>
 
 ### delete_trust
 
@@ -636,7 +636,7 @@ Keyword-only arguments:
 
 Returns [DeleteTrustResultTypeDef](./type_defs.md#deletetrustresulttypedef).
 
-<a id="deregister_certificate"></a>
+<a id="deregister\_certificate"></a>
 
 ### deregister_certificate
 
@@ -658,7 +658,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="deregister_event_topic"></a>
+<a id="deregister\_event\_topic"></a>
 
 ### deregister_event_topic
 
@@ -680,7 +680,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_certificate"></a>
+<a id="describe\_certificate"></a>
 
 ### describe_certificate
 
@@ -703,7 +703,7 @@ Keyword-only arguments:
 Returns
 [DescribeCertificateResultTypeDef](./type_defs.md#describecertificateresulttypedef).
 
-<a id="describe_client_authentication_settings"></a>
+<a id="describe\_client\_authentication\_settings"></a>
 
 ### describe_client_authentication_settings
 
@@ -730,7 +730,7 @@ Keyword-only arguments:
 Returns
 [DescribeClientAuthenticationSettingsResultTypeDef](./type_defs.md#describeclientauthenticationsettingsresulttypedef).
 
-<a id="describe_conditional_forwarders"></a>
+<a id="describe\_conditional\_forwarders"></a>
 
 ### describe_conditional_forwarders
 
@@ -753,7 +753,7 @@ Keyword-only arguments:
 Returns
 [DescribeConditionalForwardersResultTypeDef](./type_defs.md#describeconditionalforwardersresulttypedef).
 
-<a id="describe_directories"></a>
+<a id="describe\_directories"></a>
 
 ### describe_directories
 
@@ -776,7 +776,7 @@ Keyword-only arguments:
 Returns
 [DescribeDirectoriesResultTypeDef](./type_defs.md#describedirectoriesresulttypedef).
 
-<a id="describe_domain_controllers"></a>
+<a id="describe\_domain\_controllers"></a>
 
 ### describe_domain_controllers
 
@@ -800,7 +800,7 @@ Keyword-only arguments:
 Returns
 [DescribeDomainControllersResultTypeDef](./type_defs.md#describedomaincontrollersresulttypedef).
 
-<a id="describe_event_topics"></a>
+<a id="describe\_event\_topics"></a>
 
 ### describe_event_topics
 
@@ -823,7 +823,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventTopicsResultTypeDef](./type_defs.md#describeeventtopicsresulttypedef).
 
-<a id="describe_ldaps_settings"></a>
+<a id="describe\_ldaps\_settings"></a>
 
 ### describe_ldaps_settings
 
@@ -848,7 +848,7 @@ Keyword-only arguments:
 Returns
 [DescribeLDAPSSettingsResultTypeDef](./type_defs.md#describeldapssettingsresulttypedef).
 
-<a id="describe_regions"></a>
+<a id="describe\_regions"></a>
 
 ### describe_regions
 
@@ -872,7 +872,7 @@ Keyword-only arguments:
 Returns
 [DescribeRegionsResultTypeDef](./type_defs.md#describeregionsresulttypedef).
 
-<a id="describe_shared_directories"></a>
+<a id="describe\_shared\_directories"></a>
 
 ### describe_shared_directories
 
@@ -896,7 +896,7 @@ Keyword-only arguments:
 Returns
 [DescribeSharedDirectoriesResultTypeDef](./type_defs.md#describeshareddirectoriesresulttypedef).
 
-<a id="describe_snapshots"></a>
+<a id="describe\_snapshots"></a>
 
 ### describe_snapshots
 
@@ -920,7 +920,7 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotsResultTypeDef](./type_defs.md#describesnapshotsresulttypedef).
 
-<a id="describe_trusts"></a>
+<a id="describe\_trusts"></a>
 
 ### describe_trusts
 
@@ -944,7 +944,7 @@ Keyword-only arguments:
 Returns
 [DescribeTrustsResultTypeDef](./type_defs.md#describetrustsresulttypedef).
 
-<a id="disable_client_authentication"></a>
+<a id="disable\_client\_authentication"></a>
 
 ### disable_client_authentication
 
@@ -967,7 +967,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disable_ldaps"></a>
+<a id="disable\_ldaps"></a>
 
 ### disable_ldaps
 
@@ -989,7 +989,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disable_radius"></a>
+<a id="disable\_radius"></a>
 
 ### disable_radius
 
@@ -1010,7 +1010,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disable_sso"></a>
+<a id="disable\_sso"></a>
 
 ### disable_sso
 
@@ -1032,7 +1032,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="enable_client_authentication"></a>
+<a id="enable\_client\_authentication"></a>
 
 ### enable_client_authentication
 
@@ -1055,7 +1055,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="enable_ldaps"></a>
+<a id="enable\_ldaps"></a>
 
 ### enable_ldaps
 
@@ -1078,7 +1078,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="enable_radius"></a>
+<a id="enable\_radius"></a>
 
 ### enable_radius
 
@@ -1101,7 +1101,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="enable_sso"></a>
+<a id="enable\_sso"></a>
 
 ### enable_sso
 
@@ -1123,7 +1123,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -1143,7 +1143,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_directory_limits"></a>
+<a id="get\_directory\_limits"></a>
 
 ### get_directory_limits
 
@@ -1157,7 +1157,7 @@ Boto3 documentation:
 Returns
 [GetDirectoryLimitsResultTypeDef](./type_defs.md#getdirectorylimitsresulttypedef).
 
-<a id="get_snapshot_limits"></a>
+<a id="get\_snapshot\_limits"></a>
 
 ### get_snapshot_limits
 
@@ -1178,7 +1178,7 @@ Keyword-only arguments:
 Returns
 [GetSnapshotLimitsResultTypeDef](./type_defs.md#getsnapshotlimitsresulttypedef).
 
-<a id="list_certificates"></a>
+<a id="list\_certificates"></a>
 
 ### list_certificates
 
@@ -1202,7 +1202,7 @@ Keyword-only arguments:
 Returns
 [ListCertificatesResultTypeDef](./type_defs.md#listcertificatesresulttypedef).
 
-<a id="list_ip_routes"></a>
+<a id="list\_ip\_routes"></a>
 
 ### list_ip_routes
 
@@ -1224,7 +1224,7 @@ Keyword-only arguments:
 
 Returns [ListIpRoutesResultTypeDef](./type_defs.md#listiproutesresulttypedef).
 
-<a id="list_log_subscriptions"></a>
+<a id="list\_log\_subscriptions"></a>
 
 ### list_log_subscriptions
 
@@ -1247,7 +1247,7 @@ Keyword-only arguments:
 Returns
 [ListLogSubscriptionsResultTypeDef](./type_defs.md#listlogsubscriptionsresulttypedef).
 
-<a id="list_schema_extensions"></a>
+<a id="list\_schema\_extensions"></a>
 
 ### list_schema_extensions
 
@@ -1270,7 +1270,7 @@ Keyword-only arguments:
 Returns
 [ListSchemaExtensionsResultTypeDef](./type_defs.md#listschemaextensionsresulttypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1293,7 +1293,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
 
-<a id="register_certificate"></a>
+<a id="register\_certificate"></a>
 
 ### register_certificate
 
@@ -1318,7 +1318,7 @@ Keyword-only arguments:
 Returns
 [RegisterCertificateResultTypeDef](./type_defs.md#registercertificateresulttypedef).
 
-<a id="register_event_topic"></a>
+<a id="register\_event\_topic"></a>
 
 ### register_event_topic
 
@@ -1339,7 +1339,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="reject_shared_directory"></a>
+<a id="reject\_shared\_directory"></a>
 
 ### reject_shared_directory
 
@@ -1361,7 +1361,7 @@ Keyword-only arguments:
 Returns
 [RejectSharedDirectoryResultTypeDef](./type_defs.md#rejectshareddirectoryresulttypedef).
 
-<a id="remove_ip_routes"></a>
+<a id="remove\_ip\_routes"></a>
 
 ### remove_ip_routes
 
@@ -1382,7 +1382,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="remove_region"></a>
+<a id="remove\_region"></a>
 
 ### remove_region
 
@@ -1403,7 +1403,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="remove_tags_from_resource"></a>
+<a id="remove\_tags\_from\_resource"></a>
 
 ### remove_tags_from_resource
 
@@ -1424,7 +1424,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="reset_user_password"></a>
+<a id="reset\_user\_password"></a>
 
 ### reset_user_password
 
@@ -1447,7 +1447,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="restore_from_snapshot"></a>
+<a id="restore\_from\_snapshot"></a>
 
 ### restore_from_snapshot
 
@@ -1467,7 +1467,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="share_directory"></a>
+<a id="share\_directory"></a>
 
 ### share_directory
 
@@ -1494,7 +1494,7 @@ Keyword-only arguments:
 Returns
 [ShareDirectoryResultTypeDef](./type_defs.md#sharedirectoryresulttypedef).
 
-<a id="start_schema_extension"></a>
+<a id="start\_schema\_extension"></a>
 
 ### start_schema_extension
 
@@ -1518,7 +1518,7 @@ Keyword-only arguments:
 Returns
 [StartSchemaExtensionResultTypeDef](./type_defs.md#startschemaextensionresulttypedef).
 
-<a id="unshare_directory"></a>
+<a id="unshare\_directory"></a>
 
 ### unshare_directory
 
@@ -1541,7 +1541,7 @@ Keyword-only arguments:
 Returns
 [UnshareDirectoryResultTypeDef](./type_defs.md#unsharedirectoryresulttypedef).
 
-<a id="update_conditional_forwarder"></a>
+<a id="update\_conditional\_forwarder"></a>
 
 ### update_conditional_forwarder
 
@@ -1564,7 +1564,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_number_of_domain_controllers"></a>
+<a id="update\_number\_of\_domain\_controllers"></a>
 
 ### update_number_of_domain_controllers
 
@@ -1586,7 +1586,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_radius"></a>
+<a id="update\_radius"></a>
 
 ### update_radius
 
@@ -1609,7 +1609,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_trust"></a>
+<a id="update\_trust"></a>
 
 ### update_trust
 
@@ -1631,7 +1631,7 @@ Keyword-only arguments:
 
 Returns [UpdateTrustResultTypeDef](./type_defs.md#updatetrustresulttypedef).
 
-<a id="verify_trust"></a>
+<a id="verify\_trust"></a>
 
 ### verify_trust
 

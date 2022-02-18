@@ -132,7 +132,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_api"></a>
+<a id="associate\_api"></a>
 
 ### associate_api
 
@@ -154,7 +154,7 @@ Keyword-only arguments:
 Returns
 [AssociateApiResponseTypeDef](./type_defs.md#associateapiresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -171,7 +171,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_api_cache"></a>
+<a id="create\_api\_cache"></a>
 
 ### create_api_cache
 
@@ -198,7 +198,7 @@ Keyword-only arguments:
 Returns
 [CreateApiCacheResponseTypeDef](./type_defs.md#createapicacheresponsetypedef).
 
-<a id="create_api_key"></a>
+<a id="create\_api\_key"></a>
 
 ### create_api_key
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [CreateApiKeyResponseTypeDef](./type_defs.md#createapikeyresponsetypedef).
 
-<a id="create_data_source"></a>
+<a id="create\_data\_source"></a>
 
 ### create_data_source
 
@@ -258,7 +258,7 @@ Keyword-only arguments:
 Returns
 [CreateDataSourceResponseTypeDef](./type_defs.md#createdatasourceresponsetypedef).
 
-<a id="create_domain_name"></a>
+<a id="create\_domain\_name"></a>
 
 ### create_domain_name
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 Returns
 [CreateDomainNameResponseTypeDef](./type_defs.md#createdomainnameresponsetypedef).
 
-<a id="create_function"></a>
+<a id="create\_function"></a>
 
 ### create_function
 
@@ -310,7 +310,7 @@ Keyword-only arguments:
 Returns
 [CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef).
 
-<a id="create_graphql_api"></a>
+<a id="create\_graphql\_api"></a>
 
 ### create_graphql_api
 
@@ -344,7 +344,7 @@ Keyword-only arguments:
 Returns
 [CreateGraphqlApiResponseTypeDef](./type_defs.md#creategraphqlapiresponsetypedef).
 
-<a id="create_resolver"></a>
+<a id="create\_resolver"></a>
 
 ### create_resolver
 
@@ -376,7 +376,7 @@ Keyword-only arguments:
 Returns
 [CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef).
 
-<a id="create_type"></a>
+<a id="create\_type"></a>
 
 ### create_type
 
@@ -399,7 +399,7 @@ Keyword-only arguments:
 
 Returns [CreateTypeResponseTypeDef](./type_defs.md#createtyperesponsetypedef).
 
-<a id="delete_api_cache"></a>
+<a id="delete\_api\_cache"></a>
 
 ### delete_api_cache
 
@@ -419,7 +419,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_api_key"></a>
+<a id="delete\_api\_key"></a>
 
 ### delete_api_key
 
@@ -440,7 +440,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_data_source"></a>
+<a id="delete\_data\_source"></a>
 
 ### delete_data_source
 
@@ -461,7 +461,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_domain_name"></a>
+<a id="delete\_domain\_name"></a>
 
 ### delete_domain_name
 
@@ -481,7 +481,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_function"></a>
+<a id="delete\_function"></a>
 
 ### delete_function
 
@@ -502,7 +502,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_graphql_api"></a>
+<a id="delete\_graphql\_api"></a>
 
 ### delete_graphql_api
 
@@ -522,7 +522,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_resolver"></a>
+<a id="delete\_resolver"></a>
 
 ### delete_resolver
 
@@ -544,7 +544,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_type"></a>
+<a id="delete\_type"></a>
 
 ### delete_type
 
@@ -565,7 +565,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="disassociate_api"></a>
+<a id="disassociate\_api"></a>
 
 ### disassociate_api
 
@@ -585,7 +585,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="flush_api_cache"></a>
+<a id="flush\_api\_cache"></a>
 
 ### flush_api_cache
 
@@ -605,7 +605,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -625,7 +625,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_api_association"></a>
+<a id="get\_api\_association"></a>
 
 ### get_api_association
 
@@ -646,7 +646,7 @@ Keyword-only arguments:
 Returns
 [GetApiAssociationResponseTypeDef](./type_defs.md#getapiassociationresponsetypedef).
 
-<a id="get_api_cache"></a>
+<a id="get\_api\_cache"></a>
 
 ### get_api_cache
 
@@ -667,7 +667,7 @@ Keyword-only arguments:
 Returns
 [GetApiCacheResponseTypeDef](./type_defs.md#getapicacheresponsetypedef).
 
-<a id="get_data_source"></a>
+<a id="get\_data\_source"></a>
 
 ### get_data_source
 
@@ -689,7 +689,7 @@ Keyword-only arguments:
 Returns
 [GetDataSourceResponseTypeDef](./type_defs.md#getdatasourceresponsetypedef).
 
-<a id="get_domain_name"></a>
+<a id="get\_domain\_name"></a>
 
 ### get_domain_name
 
@@ -710,7 +710,7 @@ Keyword-only arguments:
 Returns
 [GetDomainNameResponseTypeDef](./type_defs.md#getdomainnameresponsetypedef).
 
-<a id="get_function"></a>
+<a id="get\_function"></a>
 
 ### get_function
 
@@ -732,7 +732,7 @@ Keyword-only arguments:
 Returns
 [GetFunctionResponseTypeDef](./type_defs.md#getfunctionresponsetypedef).
 
-<a id="get_graphql_api"></a>
+<a id="get\_graphql\_api"></a>
 
 ### get_graphql_api
 
@@ -753,7 +753,7 @@ Keyword-only arguments:
 Returns
 [GetGraphqlApiResponseTypeDef](./type_defs.md#getgraphqlapiresponsetypedef).
 
-<a id="get_introspection_schema"></a>
+<a id="get\_introspection\_schema"></a>
 
 ### get_introspection_schema
 
@@ -776,7 +776,7 @@ Keyword-only arguments:
 Returns
 [GetIntrospectionSchemaResponseTypeDef](./type_defs.md#getintrospectionschemaresponsetypedef).
 
-<a id="get_resolver"></a>
+<a id="get\_resolver"></a>
 
 ### get_resolver
 
@@ -799,7 +799,7 @@ Keyword-only arguments:
 Returns
 [GetResolverResponseTypeDef](./type_defs.md#getresolverresponsetypedef).
 
-<a id="get_schema_creation_status"></a>
+<a id="get\_schema\_creation\_status"></a>
 
 ### get_schema_creation_status
 
@@ -821,7 +821,7 @@ Keyword-only arguments:
 Returns
 [GetSchemaCreationStatusResponseTypeDef](./type_defs.md#getschemacreationstatusresponsetypedef).
 
-<a id="get_type"></a>
+<a id="get\_type"></a>
 
 ### get_type
 
@@ -844,7 +844,7 @@ Keyword-only arguments:
 
 Returns [GetTypeResponseTypeDef](./type_defs.md#gettyperesponsetypedef).
 
-<a id="list_api_keys"></a>
+<a id="list\_api\_keys"></a>
 
 ### list_api_keys
 
@@ -867,7 +867,7 @@ Keyword-only arguments:
 Returns
 [ListApiKeysResponseTypeDef](./type_defs.md#listapikeysresponsetypedef).
 
-<a id="list_data_sources"></a>
+<a id="list\_data\_sources"></a>
 
 ### list_data_sources
 
@@ -890,7 +890,7 @@ Keyword-only arguments:
 Returns
 [ListDataSourcesResponseTypeDef](./type_defs.md#listdatasourcesresponsetypedef).
 
-<a id="list_domain_names"></a>
+<a id="list\_domain\_names"></a>
 
 ### list_domain_names
 
@@ -912,7 +912,7 @@ Keyword-only arguments:
 Returns
 [ListDomainNamesResponseTypeDef](./type_defs.md#listdomainnamesresponsetypedef).
 
-<a id="list_functions"></a>
+<a id="list\_functions"></a>
 
 ### list_functions
 
@@ -935,7 +935,7 @@ Keyword-only arguments:
 Returns
 [ListFunctionsResponseTypeDef](./type_defs.md#listfunctionsresponsetypedef).
 
-<a id="list_graphql_apis"></a>
+<a id="list\_graphql\_apis"></a>
 
 ### list_graphql_apis
 
@@ -957,7 +957,7 @@ Keyword-only arguments:
 Returns
 [ListGraphqlApisResponseTypeDef](./type_defs.md#listgraphqlapisresponsetypedef).
 
-<a id="list_resolvers"></a>
+<a id="list\_resolvers"></a>
 
 ### list_resolvers
 
@@ -981,7 +981,7 @@ Keyword-only arguments:
 Returns
 [ListResolversResponseTypeDef](./type_defs.md#listresolversresponsetypedef).
 
-<a id="list_resolvers_by_function"></a>
+<a id="list\_resolvers\_by\_function"></a>
 
 ### list_resolvers_by_function
 
@@ -1006,7 +1006,7 @@ Keyword-only arguments:
 Returns
 [ListResolversByFunctionResponseTypeDef](./type_defs.md#listresolversbyfunctionresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1027,7 +1027,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="list_types"></a>
+<a id="list\_types"></a>
 
 ### list_types
 
@@ -1051,7 +1051,7 @@ Keyword-only arguments:
 
 Returns [ListTypesResponseTypeDef](./type_defs.md#listtypesresponsetypedef).
 
-<a id="start_schema_creation"></a>
+<a id="start\_schema\_creation"></a>
 
 ### start_schema_creation
 
@@ -1074,7 +1074,7 @@ Keyword-only arguments:
 Returns
 [StartSchemaCreationResponseTypeDef](./type_defs.md#startschemacreationresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1095,7 +1095,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1116,7 +1116,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_api_cache"></a>
+<a id="update\_api\_cache"></a>
 
 ### update_api_cache
 
@@ -1141,7 +1141,7 @@ Keyword-only arguments:
 Returns
 [UpdateApiCacheResponseTypeDef](./type_defs.md#updateapicacheresponsetypedef).
 
-<a id="update_api_key"></a>
+<a id="update\_api\_key"></a>
 
 ### update_api_key
 
@@ -1165,7 +1165,7 @@ Keyword-only arguments:
 Returns
 [UpdateApiKeyResponseTypeDef](./type_defs.md#updateapikeyresponsetypedef).
 
-<a id="update_data_source"></a>
+<a id="update\_data\_source"></a>
 
 ### update_data_source
 
@@ -1202,7 +1202,7 @@ Keyword-only arguments:
 Returns
 [UpdateDataSourceResponseTypeDef](./type_defs.md#updatedatasourceresponsetypedef).
 
-<a id="update_domain_name"></a>
+<a id="update\_domain\_name"></a>
 
 ### update_domain_name
 
@@ -1224,7 +1224,7 @@ Keyword-only arguments:
 Returns
 [UpdateDomainNameResponseTypeDef](./type_defs.md#updatedomainnameresponsetypedef).
 
-<a id="update_function"></a>
+<a id="update\_function"></a>
 
 ### update_function
 
@@ -1254,7 +1254,7 @@ Keyword-only arguments:
 Returns
 [UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef).
 
-<a id="update_graphql_api"></a>
+<a id="update\_graphql\_api"></a>
 
 ### update_graphql_api
 
@@ -1288,7 +1288,7 @@ Keyword-only arguments:
 Returns
 [UpdateGraphqlApiResponseTypeDef](./type_defs.md#updategraphqlapiresponsetypedef).
 
-<a id="update_resolver"></a>
+<a id="update\_resolver"></a>
 
 ### update_resolver
 
@@ -1320,7 +1320,7 @@ Keyword-only arguments:
 Returns
 [UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef).
 
-<a id="update_type"></a>
+<a id="update\_type"></a>
 
 ### update_type
 

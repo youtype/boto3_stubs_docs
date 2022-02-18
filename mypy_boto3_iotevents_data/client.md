@@ -87,7 +87,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_acknowledge_alarm"></a>
+<a id="batch\_acknowledge\_alarm"></a>
 
 ### batch_acknowledge_alarm
 
@@ -111,7 +111,7 @@ Keyword-only arguments:
 Returns
 [BatchAcknowledgeAlarmResponseTypeDef](./type_defs.md#batchacknowledgealarmresponsetypedef).
 
-<a id="batch_disable_alarm"></a>
+<a id="batch\_disable\_alarm"></a>
 
 ### batch_disable_alarm
 
@@ -135,7 +135,7 @@ Keyword-only arguments:
 Returns
 [BatchDisableAlarmResponseTypeDef](./type_defs.md#batchdisablealarmresponsetypedef).
 
-<a id="batch_enable_alarm"></a>
+<a id="batch\_enable\_alarm"></a>
 
 ### batch_enable_alarm
 
@@ -159,7 +159,7 @@ Keyword-only arguments:
 Returns
 [BatchEnableAlarmResponseTypeDef](./type_defs.md#batchenablealarmresponsetypedef).
 
-<a id="batch_put_message"></a>
+<a id="batch\_put\_message"></a>
 
 ### batch_put_message
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 Returns
 [BatchPutMessageResponseTypeDef](./type_defs.md#batchputmessageresponsetypedef).
 
-<a id="batch_reset_alarm"></a>
+<a id="batch\_reset\_alarm"></a>
 
 ### batch_reset_alarm
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 Returns
 [BatchResetAlarmResponseTypeDef](./type_defs.md#batchresetalarmresponsetypedef).
 
-<a id="batch_snooze_alarm"></a>
+<a id="batch\_snooze\_alarm"></a>
 
 ### batch_snooze_alarm
 
@@ -228,7 +228,7 @@ Keyword-only arguments:
 Returns
 [BatchSnoozeAlarmResponseTypeDef](./type_defs.md#batchsnoozealarmresponsetypedef).
 
-<a id="batch_update_detector"></a>
+<a id="batch\_update\_detector"></a>
 
 ### batch_update_detector
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
 Returns
 [BatchUpdateDetectorResponseTypeDef](./type_defs.md#batchupdatedetectorresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -270,7 +270,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_alarm"></a>
+<a id="describe\_alarm"></a>
 
 ### describe_alarm
 
@@ -292,7 +292,7 @@ Keyword-only arguments:
 Returns
 [DescribeAlarmResponseTypeDef](./type_defs.md#describealarmresponsetypedef).
 
-<a id="describe_detector"></a>
+<a id="describe\_detector"></a>
 
 ### describe_detector
 
@@ -314,7 +314,7 @@ Keyword-only arguments:
 Returns
 [DescribeDetectorResponseTypeDef](./type_defs.md#describedetectorresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -335,7 +335,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_alarms"></a>
+<a id="list\_alarms"></a>
 
 ### list_alarms
 
@@ -357,7 +357,7 @@ Keyword-only arguments:
 
 Returns [ListAlarmsResponseTypeDef](./type_defs.md#listalarmsresponsetypedef).
 
-<a id="list_detectors"></a>
+<a id="list\_detectors"></a>
 
 ### list_detectors
 

@@ -112,7 +112,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -129,7 +129,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_http_namespace"></a>
+<a id="create\_http\_namespace"></a>
 
 ### create_http_namespace
 
@@ -154,7 +154,7 @@ Keyword-only arguments:
 Returns
 [CreateHttpNamespaceResponseTypeDef](./type_defs.md#createhttpnamespaceresponsetypedef).
 
-<a id="create_private_dns_namespace"></a>
+<a id="create\_private\_dns\_namespace"></a>
 
 ### create_private_dns_namespace
 
@@ -183,7 +183,7 @@ Keyword-only arguments:
 Returns
 [CreatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#createprivatednsnamespaceresponsetypedef).
 
-<a id="create_public_dns_namespace"></a>
+<a id="create\_public\_dns\_namespace"></a>
 
 ### create_public_dns_namespace
 
@@ -210,7 +210,7 @@ Keyword-only arguments:
 Returns
 [CreatePublicDnsNamespaceResponseTypeDef](./type_defs.md#createpublicdnsnamespaceresponsetypedef).
 
-<a id="create_service"></a>
+<a id="create\_service"></a>
 
 ### create_service
 
@@ -242,7 +242,7 @@ Keyword-only arguments:
 Returns
 [CreateServiceResponseTypeDef](./type_defs.md#createserviceresponsetypedef).
 
-<a id="delete_namespace"></a>
+<a id="delete\_namespace"></a>
 
 ### delete_namespace
 
@@ -264,7 +264,7 @@ Keyword-only arguments:
 Returns
 [DeleteNamespaceResponseTypeDef](./type_defs.md#deletenamespaceresponsetypedef).
 
-<a id="delete_service"></a>
+<a id="delete\_service"></a>
 
 ### delete_service
 
@@ -284,7 +284,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="deregister_instance"></a>
+<a id="deregister\_instance"></a>
 
 ### deregister_instance
 
@@ -308,7 +308,7 @@ Keyword-only arguments:
 Returns
 [DeregisterInstanceResponseTypeDef](./type_defs.md#deregisterinstanceresponsetypedef).
 
-<a id="discover_instances"></a>
+<a id="discover\_instances"></a>
 
 ### discover_instances
 
@@ -336,7 +336,7 @@ Keyword-only arguments:
 Returns
 [DiscoverInstancesResponseTypeDef](./type_defs.md#discoverinstancesresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -357,7 +357,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_instance"></a>
+<a id="get\_instance"></a>
 
 ### get_instance
 
@@ -379,7 +379,7 @@ Keyword-only arguments:
 Returns
 [GetInstanceResponseTypeDef](./type_defs.md#getinstanceresponsetypedef).
 
-<a id="get_instances_health_status"></a>
+<a id="get\_instances\_health\_status"></a>
 
 ### get_instances_health_status
 
@@ -405,7 +405,7 @@ Keyword-only arguments:
 Returns
 [GetInstancesHealthStatusResponseTypeDef](./type_defs.md#getinstanceshealthstatusresponsetypedef).
 
-<a id="get_namespace"></a>
+<a id="get\_namespace"></a>
 
 ### get_namespace
 
@@ -426,7 +426,7 @@ Keyword-only arguments:
 Returns
 [GetNamespaceResponseTypeDef](./type_defs.md#getnamespaceresponsetypedef).
 
-<a id="get_operation"></a>
+<a id="get\_operation"></a>
 
 ### get_operation
 
@@ -448,7 +448,7 @@ Keyword-only arguments:
 Returns
 [GetOperationResponseTypeDef](./type_defs.md#getoperationresponsetypedef).
 
-<a id="get_service"></a>
+<a id="get\_service"></a>
 
 ### get_service
 
@@ -468,7 +468,7 @@ Keyword-only arguments:
 
 Returns [GetServiceResponseTypeDef](./type_defs.md#getserviceresponsetypedef).
 
-<a id="list_instances"></a>
+<a id="list\_instances"></a>
 
 ### list_instances
 
@@ -492,7 +492,7 @@ Keyword-only arguments:
 Returns
 [ListInstancesResponseTypeDef](./type_defs.md#listinstancesresponsetypedef).
 
-<a id="list_namespaces"></a>
+<a id="list\_namespaces"></a>
 
 ### list_namespaces
 
@@ -517,7 +517,7 @@ Keyword-only arguments:
 Returns
 [ListNamespacesResponseTypeDef](./type_defs.md#listnamespacesresponsetypedef).
 
-<a id="list_operations"></a>
+<a id="list\_operations"></a>
 
 ### list_operations
 
@@ -541,7 +541,7 @@ Keyword-only arguments:
 Returns
 [ListOperationsResponseTypeDef](./type_defs.md#listoperationsresponsetypedef).
 
-<a id="list_services"></a>
+<a id="list\_services"></a>
 
 ### list_services
 
@@ -566,7 +566,7 @@ Keyword-only arguments:
 Returns
 [ListServicesResponseTypeDef](./type_defs.md#listservicesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -588,7 +588,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="register_instance"></a>
+<a id="register\_instance"></a>
 
 ### register_instance
 
@@ -614,7 +614,7 @@ Keyword-only arguments:
 Returns
 [RegisterInstanceResponseTypeDef](./type_defs.md#registerinstanceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -635,7 +635,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -656,7 +656,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_http_namespace"></a>
+<a id="update\_http\_namespace"></a>
 
 ### update_http_namespace
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 Returns
 [UpdateHttpNamespaceResponseTypeDef](./type_defs.md#updatehttpnamespaceresponsetypedef).
 
-<a id="update_instance_custom_health_status"></a>
+<a id="update\_instance\_custom\_health\_status"></a>
 
 ### update_instance_custom_health_status
 
@@ -705,7 +705,7 @@ Keyword-only arguments:
 - `Status`: [CustomHealthStatusType](./literals.md#customhealthstatustype)
   *(required)*
 
-<a id="update_private_dns_namespace"></a>
+<a id="update\_private\_dns\_namespace"></a>
 
 ### update_private_dns_namespace
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [UpdatePrivateDnsNamespaceResponseTypeDef](./type_defs.md#updateprivatednsnamespaceresponsetypedef).
 
-<a id="update_public_dns_namespace"></a>
+<a id="update\_public\_dns\_namespace"></a>
 
 ### update_public_dns_namespace
 
@@ -757,7 +757,7 @@ Keyword-only arguments:
 Returns
 [UpdatePublicDnsNamespaceResponseTypeDef](./type_defs.md#updatepublicdnsnamespaceresponsetypedef).
 
-<a id="update_service"></a>
+<a id="update\_service"></a>
 
 ### update_service
 

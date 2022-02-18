@@ -92,7 +92,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -109,7 +109,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="claim_devices_by_claim_code"></a>
+<a id="claim\_devices\_by\_claim\_code"></a>
 
 ### claim_devices_by_claim_code
 
@@ -132,7 +132,7 @@ Keyword-only arguments:
 Returns
 [ClaimDevicesByClaimCodeResponseTypeDef](./type_defs.md#claimdevicesbyclaimcoderesponsetypedef).
 
-<a id="describe_device"></a>
+<a id="describe\_device"></a>
 
 ### describe_device
 
@@ -155,7 +155,7 @@ Keyword-only arguments:
 Returns
 [DescribeDeviceResponseTypeDef](./type_defs.md#describedeviceresponsetypedef).
 
-<a id="finalize_device_claim"></a>
+<a id="finalize\_device\_claim"></a>
 
 ### finalize_device_claim
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 Returns
 [FinalizeDeviceClaimResponseTypeDef](./type_defs.md#finalizedeviceclaimresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -199,7 +199,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_device_methods"></a>
+<a id="get\_device\_methods"></a>
 
 ### get_device_methods
 
@@ -221,7 +221,7 @@ Keyword-only arguments:
 Returns
 [GetDeviceMethodsResponseTypeDef](./type_defs.md#getdevicemethodsresponsetypedef).
 
-<a id="initiate_device_claim"></a>
+<a id="initiate\_device\_claim"></a>
 
 ### initiate_device_claim
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 Returns
 [InitiateDeviceClaimResponseTypeDef](./type_defs.md#initiatedeviceclaimresponsetypedef).
 
-<a id="invoke_device_method"></a>
+<a id="invoke\_device\_method"></a>
 
 ### invoke_device_method
 
@@ -268,7 +268,7 @@ Keyword-only arguments:
 Returns
 [InvokeDeviceMethodResponseTypeDef](./type_defs.md#invokedevicemethodresponsetypedef).
 
-<a id="list_device_events"></a>
+<a id="list\_device\_events"></a>
 
 ### list_device_events
 
@@ -295,7 +295,7 @@ Keyword-only arguments:
 Returns
 [ListDeviceEventsResponseTypeDef](./type_defs.md#listdeviceeventsresponsetypedef).
 
-<a id="list_devices"></a>
+<a id="list\_devices"></a>
 
 ### list_devices
 
@@ -318,7 +318,7 @@ Keyword-only arguments:
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -340,7 +340,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -359,7 +359,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="unclaim_device"></a>
+<a id="unclaim\_device"></a>
 
 ### unclaim_device
 
@@ -380,7 +380,7 @@ Keyword-only arguments:
 Returns
 [UnclaimDeviceResponseTypeDef](./type_defs.md#unclaimdeviceresponsetypedef).
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -400,7 +400,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_device_state"></a>
+<a id="update\_device\_state"></a>
 
 ### update_device_state
 

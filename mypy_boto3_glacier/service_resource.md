@@ -227,7 +227,7 @@ Arguments:
 
 Returns [Vault](#vault).
 
-<a id="glacierserviceresourcecreate_vault-method"></a>
+<a id="glacierserviceresourcecreate\_vault-method"></a>
 
 ### GlacierServiceResource.create_vault method
 
@@ -248,7 +248,7 @@ Keyword-only arguments:
 
 Returns [Vault](#vault).
 
-<a id="glacierserviceresourceget_available_subresources-method"></a>
+<a id="glacierserviceresourceget\_available\_subresources-method"></a>
 
 ### GlacierServiceResource.get_available_subresources method
 
@@ -337,7 +337,7 @@ Arguments:
 
 Returns [Vault](#vault).
 
-<a id="accountcreate_vault-method"></a>
+<a id="accountcreate\_vault-method"></a>
 
 #### Account.create_vault method
 
@@ -357,7 +357,7 @@ Keyword-only arguments:
 
 Returns [Vault](#vault).
 
-<a id="accountget_available_subresources-method"></a>
+<a id="accountget\_available\_subresources-method"></a>
 
 #### Account.get_available_subresources method
 
@@ -425,7 +425,7 @@ Type annotations for `boto3.resource("glacier").delete` method.
 Boto3 documentation:
 [Glacier.Archive.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Archive.delete)
 
-<a id="archiveget_available_subresources-method"></a>
+<a id="archiveget\_available\_subresources-method"></a>
 
 #### Archive.get_available_subresources method
 
@@ -439,7 +439,7 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
-<a id="archiveinitiate_archive_retrieval-method"></a>
+<a id="archiveinitiate\_archive\_retrieval-method"></a>
 
 #### Archive.initiate_archive_retrieval method
 
@@ -528,7 +528,7 @@ Boto3 documentation:
 
 Returns [Vault](#vault).
 
-<a id="jobget_available_subresources-method"></a>
+<a id="jobget\_available\_subresources-method"></a>
 
 #### Job.get_available_subresources method
 
@@ -542,7 +542,7 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
-<a id="jobget_output-method"></a>
+<a id="jobget\_output-method"></a>
 
 #### Job.get_output method
 
@@ -669,7 +669,7 @@ Keyword-only arguments:
 Returns
 [ArchiveCreationOutputTypeDef](./type_defs.md#archivecreationoutputtypedef).
 
-<a id="multipartuploadget_available_subresources-method"></a>
+<a id="multipartuploadget\_available\_subresources-method"></a>
 
 #### MultipartUpload.get_available_subresources method
 
@@ -705,7 +705,7 @@ Keyword-only arguments:
 
 Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
-<a id="multipartuploadupload_part-method"></a>
+<a id="multipartuploadupload\_part-method"></a>
 
 #### MultipartUpload.upload_part method
 
@@ -783,7 +783,7 @@ Type annotations for `boto3.resource("glacier").delete` method.
 Boto3 documentation:
 [Glacier.Notification.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Notification.delete)
 
-<a id="notificationget_available_subresources-method"></a>
+<a id="notificationget\_available\_subresources-method"></a>
 
 #### Notification.get_available_subresources method
 
@@ -1155,7 +1155,7 @@ Type annotations for `boto3.resource("glacier").delete` method.
 Boto3 documentation:
 [Glacier.Vault.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.delete)
 
-<a id="vaultget_available_subresources-method"></a>
+<a id="vaultget\_available\_subresources-method"></a>
 
 #### Vault.get_available_subresources method
 
@@ -1169,7 +1169,7 @@ Boto3 documentation:
 
 Returns `Sequence`\[`str`\].
 
-<a id="vaultinitiate_inventory_retrieval-method"></a>
+<a id="vaultinitiate\_inventory\_retrieval-method"></a>
 
 #### Vault.initiate_inventory_retrieval method
 
@@ -1191,7 +1191,7 @@ Keyword-only arguments:
 
 Returns [Job](#job).
 
-<a id="vaultinitiate_multipart_upload-method"></a>
+<a id="vaultinitiate\_multipart\_upload-method"></a>
 
 #### Vault.initiate_multipart_upload method
 
@@ -1237,7 +1237,7 @@ Type annotations for `boto3.resource("glacier").reload` method.
 Boto3 documentation:
 [Glacier.Vault.reload](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier.Vault.reload)
 
-<a id="vaultupload_archive-method"></a>
+<a id="vaultupload\_archive-method"></a>
 
 #### Vault.upload_archive method
 

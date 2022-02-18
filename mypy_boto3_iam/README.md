@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [IAMClient](#iamclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -49,9 +50,11 @@ Install `boto3-stubs` for `IAM` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[iam]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[iam]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-iam
@@ -64,6 +67,12 @@ python -m pip install mypy-boto3-iam
 ```bash
 python -m pip uninstall -y mypy-boto3-iam
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="iamclient"></a>
 

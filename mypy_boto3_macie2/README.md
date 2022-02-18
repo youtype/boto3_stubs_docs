@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [Macie2Client](#macie2client)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `Macie2` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[macie2]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[macie2]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-macie2
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-macie2
 ```bash
 python -m pip uninstall -y mypy-boto3-macie2
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="macie2client"></a>
 

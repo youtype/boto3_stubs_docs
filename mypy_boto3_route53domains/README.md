@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [Route53DomainsClient](#route53domainsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -45,9 +46,11 @@ Install `boto3-stubs` for `Route53Domains` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[route53domains]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[route53domains]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-route53domains
@@ -60,6 +63,12 @@ python -m pip install mypy-boto3-route53domains
 ```bash
 python -m pip uninstall -y mypy-boto3-route53domains
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="route53domainsclient"></a>
 

@@ -97,7 +97,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -114,7 +114,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="configure_logs"></a>
+<a id="configure\_logs"></a>
 
 ### configure_logs
 
@@ -140,7 +140,7 @@ Keyword-only arguments:
 Returns
 [ConfigureLogsResponseTypeDef](./type_defs.md#configurelogsresponsetypedef).
 
-<a id="create_channel"></a>
+<a id="create\_channel"></a>
 
 ### create_channel
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [CreateChannelResponseTypeDef](./type_defs.md#createchannelresponsetypedef).
 
-<a id="create_harvest_job"></a>
+<a id="create\_harvest\_job"></a>
 
 ### create_harvest_job
 
@@ -189,7 +189,7 @@ Keyword-only arguments:
 Returns
 [CreateHarvestJobResponseTypeDef](./type_defs.md#createharvestjobresponsetypedef).
 
-<a id="create_origin_endpoint"></a>
+<a id="create\_origin\_endpoint"></a>
 
 ### create_origin_endpoint
 
@@ -225,7 +225,7 @@ Keyword-only arguments:
 Returns
 [CreateOriginEndpointResponseTypeDef](./type_defs.md#createoriginendpointresponsetypedef).
 
-<a id="delete_channel"></a>
+<a id="delete\_channel"></a>
 
 ### delete_channel
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_origin_endpoint"></a>
+<a id="delete\_origin\_endpoint"></a>
 
 ### delete_origin_endpoint
 
@@ -266,7 +266,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_channel"></a>
+<a id="describe\_channel"></a>
 
 ### describe_channel
 
@@ -287,7 +287,7 @@ Keyword-only arguments:
 Returns
 [DescribeChannelResponseTypeDef](./type_defs.md#describechannelresponsetypedef).
 
-<a id="describe_harvest_job"></a>
+<a id="describe\_harvest\_job"></a>
 
 ### describe_harvest_job
 
@@ -309,7 +309,7 @@ Keyword-only arguments:
 Returns
 [DescribeHarvestJobResponseTypeDef](./type_defs.md#describeharvestjobresponsetypedef).
 
-<a id="describe_origin_endpoint"></a>
+<a id="describe\_origin\_endpoint"></a>
 
 ### describe_origin_endpoint
 
@@ -331,7 +331,7 @@ Keyword-only arguments:
 Returns
 [DescribeOriginEndpointResponseTypeDef](./type_defs.md#describeoriginendpointresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -352,7 +352,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_channels"></a>
+<a id="list\_channels"></a>
 
 ### list_channels
 
@@ -374,7 +374,7 @@ Keyword-only arguments:
 Returns
 [ListChannelsResponseTypeDef](./type_defs.md#listchannelsresponsetypedef).
 
-<a id="list_harvest_jobs"></a>
+<a id="list\_harvest\_jobs"></a>
 
 ### list_harvest_jobs
 
@@ -398,7 +398,7 @@ Keyword-only arguments:
 Returns
 [ListHarvestJobsResponseTypeDef](./type_defs.md#listharvestjobsresponsetypedef).
 
-<a id="list_origin_endpoints"></a>
+<a id="list\_origin\_endpoints"></a>
 
 ### list_origin_endpoints
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 Returns
 [ListOriginEndpointsResponseTypeDef](./type_defs.md#listoriginendpointsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -445,7 +445,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="rotate_channel_credentials"></a>
+<a id="rotate\_channel\_credentials"></a>
 
 ### rotate_channel_credentials
 
@@ -467,7 +467,7 @@ Keyword-only arguments:
 Returns
 [RotateChannelCredentialsResponseTypeDef](./type_defs.md#rotatechannelcredentialsresponsetypedef).
 
-<a id="rotate_ingest_endpoint_credentials"></a>
+<a id="rotate\_ingest\_endpoint\_credentials"></a>
 
 ### rotate_ingest_endpoint_credentials
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 Returns
 [RotateIngestEndpointCredentialsResponseTypeDef](./type_defs.md#rotateingestendpointcredentialsresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -511,7 +511,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `Tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -531,7 +531,7 @@ Keyword-only arguments:
 - `ResourceArn`: `str` *(required)*
 - `TagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_channel"></a>
+<a id="update\_channel"></a>
 
 ### update_channel
 
@@ -553,7 +553,7 @@ Keyword-only arguments:
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
 
-<a id="update_origin_endpoint"></a>
+<a id="update\_origin\_endpoint"></a>
 
 ### update_origin_endpoint
 

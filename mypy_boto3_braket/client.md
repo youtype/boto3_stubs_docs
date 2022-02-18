@@ -94,7 +94,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -111,7 +111,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_job"></a>
+<a id="cancel\_job"></a>
 
 ### cancel_job
 
@@ -131,7 +131,7 @@ Keyword-only arguments:
 
 Returns [CancelJobResponseTypeDef](./type_defs.md#canceljobresponsetypedef).
 
-<a id="cancel_quantum_task"></a>
+<a id="cancel\_quantum\_task"></a>
 
 ### cancel_quantum_task
 
@@ -153,7 +153,7 @@ Keyword-only arguments:
 Returns
 [CancelQuantumTaskResponseTypeDef](./type_defs.md#cancelquantumtaskresponsetypedef).
 
-<a id="create_job"></a>
+<a id="create\_job"></a>
 
 ### create_job
 
@@ -193,7 +193,7 @@ Keyword-only arguments:
 
 Returns [CreateJobResponseTypeDef](./type_defs.md#createjobresponsetypedef).
 
-<a id="create_quantum_task"></a>
+<a id="create\_quantum\_task"></a>
 
 ### create_quantum_task
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 Returns
 [CreateQuantumTaskResponseTypeDef](./type_defs.md#createquantumtaskresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -242,7 +242,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_device"></a>
+<a id="get\_device"></a>
 
 ### get_device
 
@@ -262,7 +262,7 @@ Keyword-only arguments:
 
 Returns [GetDeviceResponseTypeDef](./type_defs.md#getdeviceresponsetypedef).
 
-<a id="get_job"></a>
+<a id="get\_job"></a>
 
 ### get_job
 
@@ -282,7 +282,7 @@ Keyword-only arguments:
 
 Returns [GetJobResponseTypeDef](./type_defs.md#getjobresponsetypedef).
 
-<a id="get_quantum_task"></a>
+<a id="get\_quantum\_task"></a>
 
 ### get_quantum_task
 
@@ -303,7 +303,7 @@ Keyword-only arguments:
 Returns
 [GetQuantumTaskResponseTypeDef](./type_defs.md#getquantumtaskresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -324,7 +324,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="search_devices"></a>
+<a id="search\_devices"></a>
 
 ### search_devices
 
@@ -349,7 +349,7 @@ Keyword-only arguments:
 Returns
 [SearchDevicesResponseTypeDef](./type_defs.md#searchdevicesresponsetypedef).
 
-<a id="search_jobs"></a>
+<a id="search\_jobs"></a>
 
 ### search_jobs
 
@@ -373,7 +373,7 @@ Keyword-only arguments:
 
 Returns [SearchJobsResponseTypeDef](./type_defs.md#searchjobsresponsetypedef).
 
-<a id="search_quantum_tasks"></a>
+<a id="search\_quantum\_tasks"></a>
 
 ### search_quantum_tasks
 
@@ -398,7 +398,7 @@ Keyword-only arguments:
 Returns
 [SearchQuantumTasksResponseTypeDef](./type_defs.md#searchquantumtasksresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -419,7 +419,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

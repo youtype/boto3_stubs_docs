@@ -15,6 +15,7 @@ type annotations stubs module
     - [From PyPI with pip](#from-pypi-with-pip)
     - [From conda-forge](#from-conda-forge)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [SQSClient](#sqsclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -49,9 +50,11 @@ Install `boto3-stubs` for `SQS` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[sqs]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[sqs]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-sqs
@@ -90,6 +93,12 @@ conda search mypy-boto3-sqs --channel conda-forge
 ```bash
 python -m pip uninstall -y mypy-boto3-sqs
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="sqsclient"></a>
 

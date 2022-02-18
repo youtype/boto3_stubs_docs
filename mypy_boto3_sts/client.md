@@ -87,7 +87,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="assume_role"></a>
+<a id="assume\_role"></a>
 
 ### assume_role
 
@@ -119,7 +119,7 @@ Keyword-only arguments:
 
 Returns [AssumeRoleResponseTypeDef](./type_defs.md#assumeroleresponsetypedef).
 
-<a id="assume_role_with_saml"></a>
+<a id="assume\_role\_with\_saml"></a>
 
 ### assume_role_with_saml
 
@@ -147,7 +147,7 @@ Keyword-only arguments:
 Returns
 [AssumeRoleWithSAMLResponseTypeDef](./type_defs.md#assumerolewithsamlresponsetypedef).
 
-<a id="assume_role_with_web_identity"></a>
+<a id="assume\_role\_with\_web\_identity"></a>
 
 ### assume_role_with_web_identity
 
@@ -177,7 +177,7 @@ Keyword-only arguments:
 Returns
 [AssumeRoleWithWebIdentityResponseTypeDef](./type_defs.md#assumerolewithwebidentityresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -194,7 +194,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="decode_authorization_message"></a>
+<a id="decode\_authorization\_message"></a>
 
 ### decode_authorization_message
 
@@ -216,7 +216,7 @@ Keyword-only arguments:
 Returns
 [DecodeAuthorizationMessageResponseTypeDef](./type_defs.md#decodeauthorizationmessageresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -236,7 +236,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_access_key_info"></a>
+<a id="get\_access\_key\_info"></a>
 
 ### get_access_key_info
 
@@ -257,7 +257,7 @@ Keyword-only arguments:
 Returns
 [GetAccessKeyInfoResponseTypeDef](./type_defs.md#getaccesskeyinforesponsetypedef).
 
-<a id="get_caller_identity"></a>
+<a id="get\_caller\_identity"></a>
 
 ### get_caller_identity
 
@@ -272,7 +272,7 @@ Boto3 documentation:
 Returns
 [GetCallerIdentityResponseTypeDef](./type_defs.md#getcalleridentityresponsetypedef).
 
-<a id="get_federation_token"></a>
+<a id="get\_federation\_token"></a>
 
 ### get_federation_token
 
@@ -299,7 +299,7 @@ Keyword-only arguments:
 Returns
 [GetFederationTokenResponseTypeDef](./type_defs.md#getfederationtokenresponsetypedef).
 
-<a id="get_session_token"></a>
+<a id="get\_session\_token"></a>
 
 ### get_session_token
 

@@ -80,7 +80,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -97,7 +97,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_endpoint"></a>
+<a id="create\_endpoint"></a>
 
 ### create_endpoint
 
@@ -123,7 +123,7 @@ Keyword-only arguments:
 Returns
 [CreateEndpointResultTypeDef](./type_defs.md#createendpointresulttypedef).
 
-<a id="delete_endpoint"></a>
+<a id="delete\_endpoint"></a>
 
 ### delete_endpoint
 
@@ -143,7 +143,7 @@ Keyword-only arguments:
 - `EndpointId`: `str` *(required)*
 - `OutpostId`: `str` *(required)*
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -164,7 +164,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_endpoints"></a>
+<a id="list\_endpoints"></a>
 
 ### list_endpoints
 

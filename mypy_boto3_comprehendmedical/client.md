@@ -105,7 +105,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -122,7 +122,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="describe_entities_detection_v2_job"></a>
+<a id="describe\_entities\_detection\_v2\_job"></a>
 
 ### describe_entities_detection_v2_job
 
@@ -144,7 +144,7 @@ Keyword-only arguments:
 Returns
 [DescribeEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#describeentitiesdetectionv2jobresponsetypedef).
 
-<a id="describe_icd10_cm_inference_job"></a>
+<a id="describe\_icd10\_cm\_inference\_job"></a>
 
 ### describe_icd10_cm_inference_job
 
@@ -166,7 +166,7 @@ Keyword-only arguments:
 Returns
 [DescribeICD10CMInferenceJobResponseTypeDef](./type_defs.md#describeicd10cminferencejobresponsetypedef).
 
-<a id="describe_phi_detection_job"></a>
+<a id="describe\_phi\_detection\_job"></a>
 
 ### describe_phi_detection_job
 
@@ -189,7 +189,7 @@ Keyword-only arguments:
 Returns
 [DescribePHIDetectionJobResponseTypeDef](./type_defs.md#describephidetectionjobresponsetypedef).
 
-<a id="describe_rx_norm_inference_job"></a>
+<a id="describe\_rx\_norm\_inference\_job"></a>
 
 ### describe_rx_norm_inference_job
 
@@ -211,7 +211,7 @@ Keyword-only arguments:
 Returns
 [DescribeRxNormInferenceJobResponseTypeDef](./type_defs.md#describerxnorminferencejobresponsetypedef).
 
-<a id="describe_snomedct_inference_job"></a>
+<a id="describe\_snomedct\_inference\_job"></a>
 
 ### describe_snomedct_inference_job
 
@@ -233,7 +233,7 @@ Keyword-only arguments:
 Returns
 [DescribeSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#describesnomedctinferencejobresponsetypedef).
 
-<a id="detect_entities"></a>
+<a id="detect\_entities"></a>
 
 ### detect_entities
 
@@ -255,7 +255,7 @@ Keyword-only arguments:
 Returns
 [DetectEntitiesResponseTypeDef](./type_defs.md#detectentitiesresponsetypedef).
 
-<a id="detect_entities_v2"></a>
+<a id="detect\_entities\_v2"></a>
 
 ### detect_entities_v2
 
@@ -279,7 +279,7 @@ Keyword-only arguments:
 Returns
 [DetectEntitiesV2ResponseTypeDef](./type_defs.md#detectentitiesv2responsetypedef).
 
-<a id="detect_phi"></a>
+<a id="detect\_phi"></a>
 
 ### detect_phi
 
@@ -300,7 +300,7 @@ Keyword-only arguments:
 
 Returns [DetectPHIResponseTypeDef](./type_defs.md#detectphiresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -321,7 +321,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="infer_icd10_cm"></a>
+<a id="infer\_icd10\_cm"></a>
 
 ### infer_icd10_cm
 
@@ -344,7 +344,7 @@ Keyword-only arguments:
 Returns
 [InferICD10CMResponseTypeDef](./type_defs.md#infericd10cmresponsetypedef).
 
-<a id="infer_rx_norm"></a>
+<a id="infer\_rx\_norm"></a>
 
 ### infer_rx_norm
 
@@ -367,7 +367,7 @@ Keyword-only arguments:
 Returns
 [InferRxNormResponseTypeDef](./type_defs.md#inferrxnormresponsetypedef).
 
-<a id="infer_snomedct"></a>
+<a id="infer\_snomedct"></a>
 
 ### infer_snomedct
 
@@ -392,7 +392,7 @@ Keyword-only arguments:
 Returns
 [InferSNOMEDCTResponseTypeDef](./type_defs.md#infersnomedctresponsetypedef).
 
-<a id="list_entities_detection_v2_jobs"></a>
+<a id="list\_entities\_detection\_v2\_jobs"></a>
 
 ### list_entities_detection_v2_jobs
 
@@ -417,7 +417,7 @@ Keyword-only arguments:
 Returns
 [ListEntitiesDetectionV2JobsResponseTypeDef](./type_defs.md#listentitiesdetectionv2jobsresponsetypedef).
 
-<a id="list_icd10_cm_inference_jobs"></a>
+<a id="list\_icd10\_cm\_inference\_jobs"></a>
 
 ### list_icd10_cm_inference_jobs
 
@@ -442,7 +442,7 @@ Keyword-only arguments:
 Returns
 [ListICD10CMInferenceJobsResponseTypeDef](./type_defs.md#listicd10cminferencejobsresponsetypedef).
 
-<a id="list_phi_detection_jobs"></a>
+<a id="list\_phi\_detection\_jobs"></a>
 
 ### list_phi_detection_jobs
 
@@ -468,7 +468,7 @@ Keyword-only arguments:
 Returns
 [ListPHIDetectionJobsResponseTypeDef](./type_defs.md#listphidetectionjobsresponsetypedef).
 
-<a id="list_rx_norm_inference_jobs"></a>
+<a id="list\_rx\_norm\_inference\_jobs"></a>
 
 ### list_rx_norm_inference_jobs
 
@@ -493,7 +493,7 @@ Keyword-only arguments:
 Returns
 [ListRxNormInferenceJobsResponseTypeDef](./type_defs.md#listrxnorminferencejobsresponsetypedef).
 
-<a id="list_snomedct_inference_jobs"></a>
+<a id="list\_snomedct\_inference\_jobs"></a>
 
 ### list_snomedct_inference_jobs
 
@@ -518,7 +518,7 @@ Keyword-only arguments:
 Returns
 [ListSNOMEDCTInferenceJobsResponseTypeDef](./type_defs.md#listsnomedctinferencejobsresponsetypedef).
 
-<a id="start_entities_detection_v2_job"></a>
+<a id="start\_entities\_detection\_v2\_job"></a>
 
 ### start_entities_detection_v2_job
 
@@ -551,7 +551,7 @@ Keyword-only arguments:
 Returns
 [StartEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#startentitiesdetectionv2jobresponsetypedef).
 
-<a id="start_icd10_cm_inference_job"></a>
+<a id="start\_icd10\_cm\_inference\_job"></a>
 
 ### start_icd10_cm_inference_job
 
@@ -584,7 +584,7 @@ Keyword-only arguments:
 Returns
 [StartICD10CMInferenceJobResponseTypeDef](./type_defs.md#starticd10cminferencejobresponsetypedef).
 
-<a id="start_phi_detection_job"></a>
+<a id="start\_phi\_detection\_job"></a>
 
 ### start_phi_detection_job
 
@@ -616,7 +616,7 @@ Keyword-only arguments:
 Returns
 [StartPHIDetectionJobResponseTypeDef](./type_defs.md#startphidetectionjobresponsetypedef).
 
-<a id="start_rx_norm_inference_job"></a>
+<a id="start\_rx\_norm\_inference\_job"></a>
 
 ### start_rx_norm_inference_job
 
@@ -649,7 +649,7 @@ Keyword-only arguments:
 Returns
 [StartRxNormInferenceJobResponseTypeDef](./type_defs.md#startrxnorminferencejobresponsetypedef).
 
-<a id="start_snomedct_inference_job"></a>
+<a id="start\_snomedct\_inference\_job"></a>
 
 ### start_snomedct_inference_job
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 Returns
 [StartSNOMEDCTInferenceJobResponseTypeDef](./type_defs.md#startsnomedctinferencejobresponsetypedef).
 
-<a id="stop_entities_detection_v2_job"></a>
+<a id="stop\_entities\_detection\_v2\_job"></a>
 
 ### stop_entities_detection_v2_job
 
@@ -704,7 +704,7 @@ Keyword-only arguments:
 Returns
 [StopEntitiesDetectionV2JobResponseTypeDef](./type_defs.md#stopentitiesdetectionv2jobresponsetypedef).
 
-<a id="stop_icd10_cm_inference_job"></a>
+<a id="stop\_icd10\_cm\_inference\_job"></a>
 
 ### stop_icd10_cm_inference_job
 
@@ -726,7 +726,7 @@ Keyword-only arguments:
 Returns
 [StopICD10CMInferenceJobResponseTypeDef](./type_defs.md#stopicd10cminferencejobresponsetypedef).
 
-<a id="stop_phi_detection_job"></a>
+<a id="stop\_phi\_detection\_job"></a>
 
 ### stop_phi_detection_job
 
@@ -748,7 +748,7 @@ Keyword-only arguments:
 Returns
 [StopPHIDetectionJobResponseTypeDef](./type_defs.md#stopphidetectionjobresponsetypedef).
 
-<a id="stop_rx_norm_inference_job"></a>
+<a id="stop\_rx\_norm\_inference\_job"></a>
 
 ### stop_rx_norm_inference_job
 
@@ -770,7 +770,7 @@ Keyword-only arguments:
 Returns
 [StopRxNormInferenceJobResponseTypeDef](./type_defs.md#stoprxnorminferencejobresponsetypedef).
 
-<a id="stop_snomedct_inference_job"></a>
+<a id="stop\_snomedct\_inference\_job"></a>
 
 ### stop_snomedct_inference_job
 

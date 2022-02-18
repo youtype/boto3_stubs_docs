@@ -182,7 +182,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="accept_match"></a>
+<a id="accept\_match"></a>
 
 ### accept_match
 
@@ -205,7 +205,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -222,7 +222,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="claim_game_server"></a>
+<a id="claim\_game\_server"></a>
 
 ### claim_game_server
 
@@ -247,7 +247,7 @@ Keyword-only arguments:
 Returns
 [ClaimGameServerOutputTypeDef](./type_defs.md#claimgameserveroutputtypedef).
 
-<a id="create_alias"></a>
+<a id="create\_alias"></a>
 
 ### create_alias
 
@@ -271,7 +271,7 @@ Keyword-only arguments:
 
 Returns [CreateAliasOutputTypeDef](./type_defs.md#createaliasoutputtypedef).
 
-<a id="create_build"></a>
+<a id="create\_build"></a>
 
 ### create_build
 
@@ -295,7 +295,7 @@ Keyword-only arguments:
 
 Returns [CreateBuildOutputTypeDef](./type_defs.md#createbuildoutputtypedef).
 
-<a id="create_fleet"></a>
+<a id="create\_fleet"></a>
 
 ### create_fleet
 
@@ -342,7 +342,7 @@ Keyword-only arguments:
 
 Returns [CreateFleetOutputTypeDef](./type_defs.md#createfleetoutputtypedef).
 
-<a id="create_fleet_locations"></a>
+<a id="create\_fleet\_locations"></a>
 
 ### create_fleet_locations
 
@@ -367,7 +367,7 @@ Keyword-only arguments:
 Returns
 [CreateFleetLocationsOutputTypeDef](./type_defs.md#createfleetlocationsoutputtypedef).
 
-<a id="create_game_server_group"></a>
+<a id="create\_game\_server\_group"></a>
 
 ### create_game_server_group
 
@@ -408,7 +408,7 @@ Keyword-only arguments:
 Returns
 [CreateGameServerGroupOutputTypeDef](./type_defs.md#creategameservergroupoutputtypedef).
 
-<a id="create_game_session"></a>
+<a id="create\_game\_session"></a>
 
 ### create_game_session
 
@@ -439,7 +439,7 @@ Keyword-only arguments:
 Returns
 [CreateGameSessionOutputTypeDef](./type_defs.md#creategamesessionoutputtypedef).
 
-<a id="create_game_session_queue"></a>
+<a id="create\_game\_session\_queue"></a>
 
 ### create_game_session_queue
 
@@ -473,7 +473,7 @@ Keyword-only arguments:
 Returns
 [CreateGameSessionQueueOutputTypeDef](./type_defs.md#creategamesessionqueueoutputtypedef).
 
-<a id="create_matchmaking_configuration"></a>
+<a id="create\_matchmaking\_configuration"></a>
 
 ### create_matchmaking_configuration
 
@@ -510,7 +510,7 @@ Keyword-only arguments:
 Returns
 [CreateMatchmakingConfigurationOutputTypeDef](./type_defs.md#creatematchmakingconfigurationoutputtypedef).
 
-<a id="create_matchmaking_rule_set"></a>
+<a id="create\_matchmaking\_rule\_set"></a>
 
 ### create_matchmaking_rule_set
 
@@ -534,7 +534,7 @@ Keyword-only arguments:
 Returns
 [CreateMatchmakingRuleSetOutputTypeDef](./type_defs.md#creatematchmakingrulesetoutputtypedef).
 
-<a id="create_player_session"></a>
+<a id="create\_player\_session"></a>
 
 ### create_player_session
 
@@ -557,7 +557,7 @@ Keyword-only arguments:
 Returns
 [CreatePlayerSessionOutputTypeDef](./type_defs.md#createplayersessionoutputtypedef).
 
-<a id="create_player_sessions"></a>
+<a id="create\_player\_sessions"></a>
 
 ### create_player_sessions
 
@@ -580,7 +580,7 @@ Keyword-only arguments:
 Returns
 [CreatePlayerSessionsOutputTypeDef](./type_defs.md#createplayersessionsoutputtypedef).
 
-<a id="create_script"></a>
+<a id="create\_script"></a>
 
 ### create_script
 
@@ -604,7 +604,7 @@ Keyword-only arguments:
 
 Returns [CreateScriptOutputTypeDef](./type_defs.md#createscriptoutputtypedef).
 
-<a id="create_vpc_peering_authorization"></a>
+<a id="create\_vpc\_peering\_authorization"></a>
 
 ### create_vpc_peering_authorization
 
@@ -629,7 +629,7 @@ Keyword-only arguments:
 Returns
 [CreateVpcPeeringAuthorizationOutputTypeDef](./type_defs.md#createvpcpeeringauthorizationoutputtypedef).
 
-<a id="create_vpc_peering_connection"></a>
+<a id="create\_vpc\_peering\_connection"></a>
 
 ### create_vpc_peering_connection
 
@@ -653,7 +653,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_alias"></a>
+<a id="delete\_alias"></a>
 
 ### delete_alias
 
@@ -671,7 +671,7 @@ Keyword-only arguments:
 
 - `AliasId`: `str` *(required)*
 
-<a id="delete_build"></a>
+<a id="delete\_build"></a>
 
 ### delete_build
 
@@ -689,7 +689,7 @@ Keyword-only arguments:
 
 - `BuildId`: `str` *(required)*
 
-<a id="delete_fleet"></a>
+<a id="delete\_fleet"></a>
 
 ### delete_fleet
 
@@ -707,7 +707,7 @@ Keyword-only arguments:
 
 - `FleetId`: `str` *(required)*
 
-<a id="delete_fleet_locations"></a>
+<a id="delete\_fleet\_locations"></a>
 
 ### delete_fleet_locations
 
@@ -729,7 +729,7 @@ Keyword-only arguments:
 Returns
 [DeleteFleetLocationsOutputTypeDef](./type_defs.md#deletefleetlocationsoutputtypedef).
 
-<a id="delete_game_server_group"></a>
+<a id="delete\_game\_server\_group"></a>
 
 ### delete_game_server_group
 
@@ -755,7 +755,7 @@ Keyword-only arguments:
 Returns
 [DeleteGameServerGroupOutputTypeDef](./type_defs.md#deletegameservergroupoutputtypedef).
 
-<a id="delete_game_session_queue"></a>
+<a id="delete\_game\_session\_queue"></a>
 
 ### delete_game_session_queue
 
@@ -776,7 +776,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_matchmaking_configuration"></a>
+<a id="delete\_matchmaking\_configuration"></a>
 
 ### delete_matchmaking_configuration
 
@@ -797,7 +797,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_matchmaking_rule_set"></a>
+<a id="delete\_matchmaking\_rule\_set"></a>
 
 ### delete_matchmaking_rule_set
 
@@ -818,7 +818,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_scaling_policy"></a>
+<a id="delete\_scaling\_policy"></a>
 
 ### delete_scaling_policy
 
@@ -837,7 +837,7 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 - `FleetId`: `str` *(required)*
 
-<a id="delete_script"></a>
+<a id="delete\_script"></a>
 
 ### delete_script
 
@@ -855,7 +855,7 @@ Keyword-only arguments:
 
 - `ScriptId`: `str` *(required)*
 
-<a id="delete_vpc_peering_authorization"></a>
+<a id="delete\_vpc\_peering\_authorization"></a>
 
 ### delete_vpc_peering_authorization
 
@@ -877,7 +877,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_vpc_peering_connection"></a>
+<a id="delete\_vpc\_peering\_connection"></a>
 
 ### delete_vpc_peering_connection
 
@@ -899,7 +899,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="deregister_game_server"></a>
+<a id="deregister\_game\_server"></a>
 
 ### deregister_game_server
 
@@ -919,7 +919,7 @@ Keyword-only arguments:
 - `GameServerGroupName`: `str` *(required)*
 - `GameServerId`: `str` *(required)*
 
-<a id="describe_alias"></a>
+<a id="describe\_alias"></a>
 
 ### describe_alias
 
@@ -940,7 +940,7 @@ Keyword-only arguments:
 Returns
 [DescribeAliasOutputTypeDef](./type_defs.md#describealiasoutputtypedef).
 
-<a id="describe_build"></a>
+<a id="describe\_build"></a>
 
 ### describe_build
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 Returns
 [DescribeBuildOutputTypeDef](./type_defs.md#describebuildoutputtypedef).
 
-<a id="describe_ec2_instance_limits"></a>
+<a id="describe\_ec2\_instance\_limits"></a>
 
 ### describe_ec2_instance_limits
 
@@ -985,7 +985,7 @@ Keyword-only arguments:
 Returns
 [DescribeEC2InstanceLimitsOutputTypeDef](./type_defs.md#describeec2instancelimitsoutputtypedef).
 
-<a id="describe_fleet_attributes"></a>
+<a id="describe\_fleet\_attributes"></a>
 
 ### describe_fleet_attributes
 
@@ -1010,7 +1010,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetAttributesOutputTypeDef](./type_defs.md#describefleetattributesoutputtypedef).
 
-<a id="describe_fleet_capacity"></a>
+<a id="describe\_fleet\_capacity"></a>
 
 ### describe_fleet_capacity
 
@@ -1033,7 +1033,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetCapacityOutputTypeDef](./type_defs.md#describefleetcapacityoutputtypedef).
 
-<a id="describe_fleet_events"></a>
+<a id="describe\_fleet\_events"></a>
 
 ### describe_fleet_events
 
@@ -1058,7 +1058,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetEventsOutputTypeDef](./type_defs.md#describefleeteventsoutputtypedef).
 
-<a id="describe_fleet_location_attributes"></a>
+<a id="describe\_fleet\_location\_attributes"></a>
 
 ### describe_fleet_location_attributes
 
@@ -1084,7 +1084,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetLocationAttributesOutputTypeDef](./type_defs.md#describefleetlocationattributesoutputtypedef).
 
-<a id="describe_fleet_location_capacity"></a>
+<a id="describe\_fleet\_location\_capacity"></a>
 
 ### describe_fleet_location_capacity
 
@@ -1107,7 +1107,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetLocationCapacityOutputTypeDef](./type_defs.md#describefleetlocationcapacityoutputtypedef).
 
-<a id="describe_fleet_location_utilization"></a>
+<a id="describe\_fleet\_location\_utilization"></a>
 
 ### describe_fleet_location_utilization
 
@@ -1130,7 +1130,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetLocationUtilizationOutputTypeDef](./type_defs.md#describefleetlocationutilizationoutputtypedef).
 
-<a id="describe_fleet_port_settings"></a>
+<a id="describe\_fleet\_port\_settings"></a>
 
 ### describe_fleet_port_settings
 
@@ -1153,7 +1153,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetPortSettingsOutputTypeDef](./type_defs.md#describefleetportsettingsoutputtypedef).
 
-<a id="describe_fleet_utilization"></a>
+<a id="describe\_fleet\_utilization"></a>
 
 ### describe_fleet_utilization
 
@@ -1177,7 +1177,7 @@ Keyword-only arguments:
 Returns
 [DescribeFleetUtilizationOutputTypeDef](./type_defs.md#describefleetutilizationoutputtypedef).
 
-<a id="describe_game_server"></a>
+<a id="describe\_game\_server"></a>
 
 ### describe_game_server
 
@@ -1200,7 +1200,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameServerOutputTypeDef](./type_defs.md#describegameserveroutputtypedef).
 
-<a id="describe_game_server_group"></a>
+<a id="describe\_game\_server\_group"></a>
 
 ### describe_game_server_group
 
@@ -1223,7 +1223,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameServerGroupOutputTypeDef](./type_defs.md#describegameservergroupoutputtypedef).
 
-<a id="describe_game_server_instances"></a>
+<a id="describe\_game\_server\_instances"></a>
 
 ### describe_game_server_instances
 
@@ -1250,7 +1250,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameServerInstancesOutputTypeDef](./type_defs.md#describegameserverinstancesoutputtypedef).
 
-<a id="describe_game_session_details"></a>
+<a id="describe\_game\_session\_details"></a>
 
 ### describe_game_session_details
 
@@ -1280,7 +1280,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameSessionDetailsOutputTypeDef](./type_defs.md#describegamesessiondetailsoutputtypedef).
 
-<a id="describe_game_session_placement"></a>
+<a id="describe\_game\_session\_placement"></a>
 
 ### describe_game_session_placement
 
@@ -1303,7 +1303,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameSessionPlacementOutputTypeDef](./type_defs.md#describegamesessionplacementoutputtypedef).
 
-<a id="describe_game_session_queues"></a>
+<a id="describe\_game\_session\_queues"></a>
 
 ### describe_game_session_queues
 
@@ -1327,7 +1327,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameSessionQueuesOutputTypeDef](./type_defs.md#describegamesessionqueuesoutputtypedef).
 
-<a id="describe_game_sessions"></a>
+<a id="describe\_game\_sessions"></a>
 
 ### describe_game_sessions
 
@@ -1354,7 +1354,7 @@ Keyword-only arguments:
 Returns
 [DescribeGameSessionsOutputTypeDef](./type_defs.md#describegamesessionsoutputtypedef).
 
-<a id="describe_instances"></a>
+<a id="describe\_instances"></a>
 
 ### describe_instances
 
@@ -1380,7 +1380,7 @@ Keyword-only arguments:
 Returns
 [DescribeInstancesOutputTypeDef](./type_defs.md#describeinstancesoutputtypedef).
 
-<a id="describe_matchmaking"></a>
+<a id="describe\_matchmaking"></a>
 
 ### describe_matchmaking
 
@@ -1401,7 +1401,7 @@ Keyword-only arguments:
 Returns
 [DescribeMatchmakingOutputTypeDef](./type_defs.md#describematchmakingoutputtypedef).
 
-<a id="describe_matchmaking_configurations"></a>
+<a id="describe\_matchmaking\_configurations"></a>
 
 ### describe_matchmaking_configurations
 
@@ -1426,7 +1426,7 @@ Keyword-only arguments:
 Returns
 [DescribeMatchmakingConfigurationsOutputTypeDef](./type_defs.md#describematchmakingconfigurationsoutputtypedef).
 
-<a id="describe_matchmaking_rule_sets"></a>
+<a id="describe\_matchmaking\_rule\_sets"></a>
 
 ### describe_matchmaking_rule_sets
 
@@ -1450,7 +1450,7 @@ Keyword-only arguments:
 Returns
 [DescribeMatchmakingRuleSetsOutputTypeDef](./type_defs.md#describematchmakingrulesetsoutputtypedef).
 
-<a id="describe_player_sessions"></a>
+<a id="describe\_player\_sessions"></a>
 
 ### describe_player_sessions
 
@@ -1477,7 +1477,7 @@ Keyword-only arguments:
 Returns
 [DescribePlayerSessionsOutputTypeDef](./type_defs.md#describeplayersessionsoutputtypedef).
 
-<a id="describe_runtime_configuration"></a>
+<a id="describe\_runtime\_configuration"></a>
 
 ### describe_runtime_configuration
 
@@ -1499,7 +1499,7 @@ Keyword-only arguments:
 Returns
 [DescribeRuntimeConfigurationOutputTypeDef](./type_defs.md#describeruntimeconfigurationoutputtypedef).
 
-<a id="describe_scaling_policies"></a>
+<a id="describe\_scaling\_policies"></a>
 
 ### describe_scaling_policies
 
@@ -1525,7 +1525,7 @@ Keyword-only arguments:
 Returns
 [DescribeScalingPoliciesOutputTypeDef](./type_defs.md#describescalingpoliciesoutputtypedef).
 
-<a id="describe_script"></a>
+<a id="describe\_script"></a>
 
 ### describe_script
 
@@ -1546,7 +1546,7 @@ Keyword-only arguments:
 Returns
 [DescribeScriptOutputTypeDef](./type_defs.md#describescriptoutputtypedef).
 
-<a id="describe_vpc_peering_authorizations"></a>
+<a id="describe\_vpc\_peering\_authorizations"></a>
 
 ### describe_vpc_peering_authorizations
 
@@ -1562,7 +1562,7 @@ Boto3 documentation:
 Returns
 [DescribeVpcPeeringAuthorizationsOutputTypeDef](./type_defs.md#describevpcpeeringauthorizationsoutputtypedef).
 
-<a id="describe_vpc_peering_connections"></a>
+<a id="describe\_vpc\_peering\_connections"></a>
 
 ### describe_vpc_peering_connections
 
@@ -1584,7 +1584,7 @@ Keyword-only arguments:
 Returns
 [DescribeVpcPeeringConnectionsOutputTypeDef](./type_defs.md#describevpcpeeringconnectionsoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -1604,7 +1604,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_game_session_log_url"></a>
+<a id="get\_game\_session\_log\_url"></a>
 
 ### get_game_session_log_url
 
@@ -1627,7 +1627,7 @@ Keyword-only arguments:
 Returns
 [GetGameSessionLogUrlOutputTypeDef](./type_defs.md#getgamesessionlogurloutputtypedef).
 
-<a id="get_instance_access"></a>
+<a id="get\_instance\_access"></a>
 
 ### get_instance_access
 
@@ -1649,7 +1649,7 @@ Keyword-only arguments:
 Returns
 [GetInstanceAccessOutputTypeDef](./type_defs.md#getinstanceaccessoutputtypedef).
 
-<a id="list_aliases"></a>
+<a id="list\_aliases"></a>
 
 ### list_aliases
 
@@ -1673,7 +1673,7 @@ Keyword-only arguments:
 
 Returns [ListAliasesOutputTypeDef](./type_defs.md#listaliasesoutputtypedef).
 
-<a id="list_builds"></a>
+<a id="list\_builds"></a>
 
 ### list_builds
 
@@ -1696,7 +1696,7 @@ Keyword-only arguments:
 
 Returns [ListBuildsOutputTypeDef](./type_defs.md#listbuildsoutputtypedef).
 
-<a id="list_fleets"></a>
+<a id="list\_fleets"></a>
 
 ### list_fleets
 
@@ -1719,7 +1719,7 @@ Keyword-only arguments:
 
 Returns [ListFleetsOutputTypeDef](./type_defs.md#listfleetsoutputtypedef).
 
-<a id="list_game_server_groups"></a>
+<a id="list\_game\_server\_groups"></a>
 
 ### list_game_server_groups
 
@@ -1743,7 +1743,7 @@ Keyword-only arguments:
 Returns
 [ListGameServerGroupsOutputTypeDef](./type_defs.md#listgameservergroupsoutputtypedef).
 
-<a id="list_game_servers"></a>
+<a id="list\_game\_servers"></a>
 
 ### list_game_servers
 
@@ -1769,7 +1769,7 @@ Keyword-only arguments:
 Returns
 [ListGameServersOutputTypeDef](./type_defs.md#listgameserversoutputtypedef).
 
-<a id="list_scripts"></a>
+<a id="list\_scripts"></a>
 
 ### list_scripts
 
@@ -1791,7 +1791,7 @@ Keyword-only arguments:
 
 Returns [ListScriptsOutputTypeDef](./type_defs.md#listscriptsoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1812,7 +1812,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_scaling_policy"></a>
+<a id="put\_scaling\_policy"></a>
 
 ### put_scaling_policy
 
@@ -1845,7 +1845,7 @@ Keyword-only arguments:
 Returns
 [PutScalingPolicyOutputTypeDef](./type_defs.md#putscalingpolicyoutputtypedef).
 
-<a id="register_game_server"></a>
+<a id="register\_game\_server"></a>
 
 ### register_game_server
 
@@ -1872,7 +1872,7 @@ Keyword-only arguments:
 Returns
 [RegisterGameServerOutputTypeDef](./type_defs.md#registergameserveroutputtypedef).
 
-<a id="request_upload_credentials"></a>
+<a id="request\_upload\_credentials"></a>
 
 ### request_upload_credentials
 
@@ -1895,7 +1895,7 @@ Keyword-only arguments:
 Returns
 [RequestUploadCredentialsOutputTypeDef](./type_defs.md#requestuploadcredentialsoutputtypedef).
 
-<a id="resolve_alias"></a>
+<a id="resolve\_alias"></a>
 
 ### resolve_alias
 
@@ -1915,7 +1915,7 @@ Keyword-only arguments:
 
 Returns [ResolveAliasOutputTypeDef](./type_defs.md#resolvealiasoutputtypedef).
 
-<a id="resume_game_server_group"></a>
+<a id="resume\_game\_server\_group"></a>
 
 ### resume_game_server_group
 
@@ -1942,7 +1942,7 @@ Keyword-only arguments:
 Returns
 [ResumeGameServerGroupOutputTypeDef](./type_defs.md#resumegameservergroupoutputtypedef).
 
-<a id="search_game_sessions"></a>
+<a id="search\_game\_sessions"></a>
 
 ### search_game_sessions
 
@@ -1970,7 +1970,7 @@ Keyword-only arguments:
 Returns
 [SearchGameSessionsOutputTypeDef](./type_defs.md#searchgamesessionsoutputtypedef).
 
-<a id="start_fleet_actions"></a>
+<a id="start\_fleet\_actions"></a>
 
 ### start_fleet_actions
 
@@ -1995,7 +1995,7 @@ Keyword-only arguments:
 Returns
 [StartFleetActionsOutputTypeDef](./type_defs.md#startfleetactionsoutputtypedef).
 
-<a id="start_game_session_placement"></a>
+<a id="start\_game\_session\_placement"></a>
 
 ### start_game_session_placement
 
@@ -2028,7 +2028,7 @@ Keyword-only arguments:
 Returns
 [StartGameSessionPlacementOutputTypeDef](./type_defs.md#startgamesessionplacementoutputtypedef).
 
-<a id="start_match_backfill"></a>
+<a id="start\_match\_backfill"></a>
 
 ### start_match_backfill
 
@@ -2053,7 +2053,7 @@ Keyword-only arguments:
 Returns
 [StartMatchBackfillOutputTypeDef](./type_defs.md#startmatchbackfilloutputtypedef).
 
-<a id="start_matchmaking"></a>
+<a id="start\_matchmaking"></a>
 
 ### start_matchmaking
 
@@ -2078,7 +2078,7 @@ Keyword-only arguments:
 Returns
 [StartMatchmakingOutputTypeDef](./type_defs.md#startmatchmakingoutputtypedef).
 
-<a id="stop_fleet_actions"></a>
+<a id="stop\_fleet\_actions"></a>
 
 ### stop_fleet_actions
 
@@ -2102,7 +2102,7 @@ Keyword-only arguments:
 Returns
 [StopFleetActionsOutputTypeDef](./type_defs.md#stopfleetactionsoutputtypedef).
 
-<a id="stop_game_session_placement"></a>
+<a id="stop\_game\_session\_placement"></a>
 
 ### stop_game_session_placement
 
@@ -2124,7 +2124,7 @@ Keyword-only arguments:
 Returns
 [StopGameSessionPlacementOutputTypeDef](./type_defs.md#stopgamesessionplacementoutputtypedef).
 
-<a id="stop_matchmaking"></a>
+<a id="stop\_matchmaking"></a>
 
 ### stop_matchmaking
 
@@ -2145,7 +2145,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="suspend_game_server_group"></a>
+<a id="suspend\_game\_server\_group"></a>
 
 ### suspend_game_server_group
 
@@ -2172,7 +2172,7 @@ Keyword-only arguments:
 Returns
 [SuspendGameServerGroupOutputTypeDef](./type_defs.md#suspendgameservergroupoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -2193,7 +2193,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -2214,7 +2214,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_alias"></a>
+<a id="update\_alias"></a>
 
 ### update_alias
 
@@ -2238,7 +2238,7 @@ Keyword-only arguments:
 
 Returns [UpdateAliasOutputTypeDef](./type_defs.md#updatealiasoutputtypedef).
 
-<a id="update_build"></a>
+<a id="update\_build"></a>
 
 ### update_build
 
@@ -2260,7 +2260,7 @@ Keyword-only arguments:
 
 Returns [UpdateBuildOutputTypeDef](./type_defs.md#updatebuildoutputtypedef).
 
-<a id="update_fleet_attributes"></a>
+<a id="update\_fleet\_attributes"></a>
 
 ### update_fleet_attributes
 
@@ -2289,7 +2289,7 @@ Keyword-only arguments:
 Returns
 [UpdateFleetAttributesOutputTypeDef](./type_defs.md#updatefleetattributesoutputtypedef).
 
-<a id="update_fleet_capacity"></a>
+<a id="update\_fleet\_capacity"></a>
 
 ### update_fleet_capacity
 
@@ -2314,7 +2314,7 @@ Keyword-only arguments:
 Returns
 [UpdateFleetCapacityOutputTypeDef](./type_defs.md#updatefleetcapacityoutputtypedef).
 
-<a id="update_fleet_port_settings"></a>
+<a id="update\_fleet\_port\_settings"></a>
 
 ### update_fleet_port_settings
 
@@ -2341,7 +2341,7 @@ Keyword-only arguments:
 Returns
 [UpdateFleetPortSettingsOutputTypeDef](./type_defs.md#updatefleetportsettingsoutputtypedef).
 
-<a id="update_game_server"></a>
+<a id="update\_game\_server"></a>
 
 ### update_game_server
 
@@ -2370,7 +2370,7 @@ Keyword-only arguments:
 Returns
 [UpdateGameServerOutputTypeDef](./type_defs.md#updategameserveroutputtypedef).
 
-<a id="update_game_server_group"></a>
+<a id="update\_game\_server\_group"></a>
 
 ### update_game_server_group
 
@@ -2400,7 +2400,7 @@ Keyword-only arguments:
 Returns
 [UpdateGameServerGroupOutputTypeDef](./type_defs.md#updategameservergroupoutputtypedef).
 
-<a id="update_game_session"></a>
+<a id="update\_game\_session"></a>
 
 ### update_game_session
 
@@ -2427,7 +2427,7 @@ Keyword-only arguments:
 Returns
 [UpdateGameSessionOutputTypeDef](./type_defs.md#updategamesessionoutputtypedef).
 
-<a id="update_game_session_queue"></a>
+<a id="update\_game\_session\_queue"></a>
 
 ### update_game_session_queue
 
@@ -2461,7 +2461,7 @@ Keyword-only arguments:
 Returns
 [UpdateGameSessionQueueOutputTypeDef](./type_defs.md#updategamesessionqueueoutputtypedef).
 
-<a id="update_matchmaking_configuration"></a>
+<a id="update\_matchmaking\_configuration"></a>
 
 ### update_matchmaking_configuration
 
@@ -2497,7 +2497,7 @@ Keyword-only arguments:
 Returns
 [UpdateMatchmakingConfigurationOutputTypeDef](./type_defs.md#updatematchmakingconfigurationoutputtypedef).
 
-<a id="update_runtime_configuration"></a>
+<a id="update\_runtime\_configuration"></a>
 
 ### update_runtime_configuration
 
@@ -2523,7 +2523,7 @@ Keyword-only arguments:
 Returns
 [UpdateRuntimeConfigurationOutputTypeDef](./type_defs.md#updateruntimeconfigurationoutputtypedef).
 
-<a id="update_script"></a>
+<a id="update\_script"></a>
 
 ### update_script
 
@@ -2547,7 +2547,7 @@ Keyword-only arguments:
 
 Returns [UpdateScriptOutputTypeDef](./type_defs.md#updatescriptoutputtypedef).
 
-<a id="validate_matchmaking_rule_set"></a>
+<a id="validate\_matchmaking\_rule\_set"></a>
 
 ### validate_matchmaking_rule_set
 

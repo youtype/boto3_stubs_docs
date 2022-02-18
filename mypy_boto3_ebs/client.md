@@ -85,7 +85,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -102,7 +102,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="complete_snapshot"></a>
+<a id="complete\_snapshot"></a>
 
 ### complete_snapshot
 
@@ -130,7 +130,7 @@ Keyword-only arguments:
 Returns
 [CompleteSnapshotResponseTypeDef](./type_defs.md#completesnapshotresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -150,7 +150,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_snapshot_block"></a>
+<a id="get\_snapshot\_block"></a>
 
 ### get_snapshot_block
 
@@ -173,7 +173,7 @@ Keyword-only arguments:
 Returns
 [GetSnapshotBlockResponseTypeDef](./type_defs.md#getsnapshotblockresponsetypedef).
 
-<a id="list_changed_blocks"></a>
+<a id="list\_changed\_blocks"></a>
 
 ### list_changed_blocks
 
@@ -199,7 +199,7 @@ Keyword-only arguments:
 Returns
 [ListChangedBlocksResponseTypeDef](./type_defs.md#listchangedblocksresponsetypedef).
 
-<a id="list_snapshot_blocks"></a>
+<a id="list\_snapshot\_blocks"></a>
 
 ### list_snapshot_blocks
 
@@ -223,7 +223,7 @@ Keyword-only arguments:
 Returns
 [ListSnapshotBlocksResponseTypeDef](./type_defs.md#listsnapshotblocksresponsetypedef).
 
-<a id="put_snapshot_block"></a>
+<a id="put\_snapshot\_block"></a>
 
 ### put_snapshot_block
 
@@ -252,7 +252,7 @@ Keyword-only arguments:
 Returns
 [PutSnapshotBlockResponseTypeDef](./type_defs.md#putsnapshotblockresponsetypedef).
 
-<a id="start_snapshot"></a>
+<a id="start\_snapshot"></a>
 
 ### start_snapshot
 

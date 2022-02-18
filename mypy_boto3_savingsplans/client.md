@@ -84,7 +84,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -101,7 +101,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_savings_plan"></a>
+<a id="create\_savings\_plan"></a>
 
 ### create_savings_plan
 
@@ -127,7 +127,7 @@ Keyword-only arguments:
 Returns
 [CreateSavingsPlanResponseTypeDef](./type_defs.md#createsavingsplanresponsetypedef).
 
-<a id="delete_queued_savings_plan"></a>
+<a id="delete\_queued\_savings\_plan"></a>
 
 ### delete_queued_savings_plan
 
@@ -148,7 +148,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_savings_plan_rates"></a>
+<a id="describe\_savings\_plan\_rates"></a>
 
 ### describe_savings_plan_rates
 
@@ -174,7 +174,7 @@ Keyword-only arguments:
 Returns
 [DescribeSavingsPlanRatesResponseTypeDef](./type_defs.md#describesavingsplanratesresponsetypedef).
 
-<a id="describe_savings_plans"></a>
+<a id="describe\_savings\_plans"></a>
 
 ### describe_savings_plans
 
@@ -203,7 +203,7 @@ Keyword-only arguments:
 Returns
 [DescribeSavingsPlansResponseTypeDef](./type_defs.md#describesavingsplansresponsetypedef).
 
-<a id="describe_savings_plans_offering_rates"></a>
+<a id="describe\_savings\_plans\_offering\_rates"></a>
 
 ### describe_savings_plans_offering_rates
 
@@ -239,7 +239,7 @@ Keyword-only arguments:
 Returns
 [DescribeSavingsPlansOfferingRatesResponseTypeDef](./type_defs.md#describesavingsplansofferingratesresponsetypedef).
 
-<a id="describe_savings_plans_offerings"></a>
+<a id="describe\_savings\_plans\_offerings"></a>
 
 ### describe_savings_plans_offerings
 
@@ -278,7 +278,7 @@ Keyword-only arguments:
 Returns
 [DescribeSavingsPlansOfferingsResponseTypeDef](./type_defs.md#describesavingsplansofferingsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -299,7 +299,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -321,7 +321,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -342,7 +342,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

@@ -81,7 +81,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -98,7 +98,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_report_definition"></a>
+<a id="delete\_report\_definition"></a>
 
 ### delete_report_definition
 
@@ -119,7 +119,7 @@ Keyword-only arguments:
 Returns
 [DeleteReportDefinitionResponseTypeDef](./type_defs.md#deletereportdefinitionresponsetypedef).
 
-<a id="describe_report_definitions"></a>
+<a id="describe\_report\_definitions"></a>
 
 ### describe_report_definitions
 
@@ -141,7 +141,7 @@ Keyword-only arguments:
 Returns
 [DescribeReportDefinitionsResponseTypeDef](./type_defs.md#describereportdefinitionsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -161,7 +161,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="modify_report_definition"></a>
+<a id="modify\_report\_definition"></a>
 
 ### modify_report_definition
 
@@ -184,7 +184,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="put_report_definition"></a>
+<a id="put\_report\_definition"></a>
 
 ### put_report_definition
 

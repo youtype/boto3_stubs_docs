@@ -98,7 +98,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -115,7 +115,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_recommendation_preferences"></a>
+<a id="delete\_recommendation\_preferences"></a>
 
 ### delete_recommendation_preferences
 
@@ -141,7 +141,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe_recommendation_export_jobs"></a>
+<a id="describe\_recommendation\_export\_jobs"></a>
 
 ### describe_recommendation_export_jobs
 
@@ -166,7 +166,7 @@ Keyword-only arguments:
 Returns
 [DescribeRecommendationExportJobsResponseTypeDef](./type_defs.md#describerecommendationexportjobsresponsetypedef).
 
-<a id="export_auto_scaling_group_recommendations"></a>
+<a id="export\_auto\_scaling\_group\_recommendations"></a>
 
 ### export_auto_scaling_group_recommendations
 
@@ -200,7 +200,7 @@ Keyword-only arguments:
 Returns
 [ExportAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#exportautoscalinggrouprecommendationsresponsetypedef).
 
-<a id="export_ebs_volume_recommendations"></a>
+<a id="export\_ebs\_volume\_recommendations"></a>
 
 ### export_ebs_volume_recommendations
 
@@ -231,7 +231,7 @@ Keyword-only arguments:
 Returns
 [ExportEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#exportebsvolumerecommendationsresponsetypedef).
 
-<a id="export_ec2_instance_recommendations"></a>
+<a id="export\_ec2\_instance\_recommendations"></a>
 
 ### export_ec2_instance_recommendations
 
@@ -264,7 +264,7 @@ Keyword-only arguments:
 Returns
 [ExportEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#exportec2instancerecommendationsresponsetypedef).
 
-<a id="export_lambda_function_recommendations"></a>
+<a id="export\_lambda\_function\_recommendations"></a>
 
 ### export_lambda_function_recommendations
 
@@ -297,7 +297,7 @@ Keyword-only arguments:
 Returns
 [ExportLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#exportlambdafunctionrecommendationsresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -318,7 +318,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_auto_scaling_group_recommendations"></a>
+<a id="get\_auto\_scaling\_group\_recommendations"></a>
 
 ### get_auto_scaling_group_recommendations
 
@@ -347,7 +347,7 @@ Keyword-only arguments:
 Returns
 [GetAutoScalingGroupRecommendationsResponseTypeDef](./type_defs.md#getautoscalinggrouprecommendationsresponsetypedef).
 
-<a id="get_ebs_volume_recommendations"></a>
+<a id="get\_ebs\_volume\_recommendations"></a>
 
 ### get_ebs_volume_recommendations
 
@@ -373,7 +373,7 @@ Keyword-only arguments:
 Returns
 [GetEBSVolumeRecommendationsResponseTypeDef](./type_defs.md#getebsvolumerecommendationsresponsetypedef).
 
-<a id="get_ec2_instance_recommendations"></a>
+<a id="get\_ec2\_instance\_recommendations"></a>
 
 ### get_ec2_instance_recommendations
 
@@ -401,7 +401,7 @@ Keyword-only arguments:
 Returns
 [GetEC2InstanceRecommendationsResponseTypeDef](./type_defs.md#getec2instancerecommendationsresponsetypedef).
 
-<a id="get_ec2_recommendation_projected_metrics"></a>
+<a id="get\_ec2\_recommendation\_projected\_metrics"></a>
 
 ### get_ec2_recommendation_projected_metrics
 
@@ -431,7 +431,7 @@ Keyword-only arguments:
 Returns
 [GetEC2RecommendationProjectedMetricsResponseTypeDef](./type_defs.md#getec2recommendationprojectedmetricsresponsetypedef).
 
-<a id="get_effective_recommendation_preferences"></a>
+<a id="get\_effective\_recommendation\_preferences"></a>
 
 ### get_effective_recommendation_preferences
 
@@ -455,7 +455,7 @@ Keyword-only arguments:
 Returns
 [GetEffectiveRecommendationPreferencesResponseTypeDef](./type_defs.md#geteffectiverecommendationpreferencesresponsetypedef).
 
-<a id="get_enrollment_status"></a>
+<a id="get\_enrollment\_status"></a>
 
 ### get_enrollment_status
 
@@ -471,7 +471,7 @@ Boto3 documentation:
 Returns
 [GetEnrollmentStatusResponseTypeDef](./type_defs.md#getenrollmentstatusresponsetypedef).
 
-<a id="get_enrollment_statuses_for_organization"></a>
+<a id="get\_enrollment\_statuses\_for\_organization"></a>
 
 ### get_enrollment_statuses_for_organization
 
@@ -498,7 +498,7 @@ Keyword-only arguments:
 Returns
 [GetEnrollmentStatusesForOrganizationResponseTypeDef](./type_defs.md#getenrollmentstatusesfororganizationresponsetypedef).
 
-<a id="get_lambda_function_recommendations"></a>
+<a id="get\_lambda\_function\_recommendations"></a>
 
 ### get_lambda_function_recommendations
 
@@ -525,7 +525,7 @@ Keyword-only arguments:
 Returns
 [GetLambdaFunctionRecommendationsResponseTypeDef](./type_defs.md#getlambdafunctionrecommendationsresponsetypedef).
 
-<a id="get_recommendation_preferences"></a>
+<a id="get\_recommendation\_preferences"></a>
 
 ### get_recommendation_preferences
 
@@ -552,7 +552,7 @@ Keyword-only arguments:
 Returns
 [GetRecommendationPreferencesResponseTypeDef](./type_defs.md#getrecommendationpreferencesresponsetypedef).
 
-<a id="get_recommendation_summaries"></a>
+<a id="get\_recommendation\_summaries"></a>
 
 ### get_recommendation_summaries
 
@@ -576,7 +576,7 @@ Keyword-only arguments:
 Returns
 [GetRecommendationSummariesResponseTypeDef](./type_defs.md#getrecommendationsummariesresponsetypedef).
 
-<a id="put_recommendation_preferences"></a>
+<a id="put\_recommendation\_preferences"></a>
 
 ### put_recommendation_preferences
 
@@ -604,7 +604,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_enrollment_status"></a>
+<a id="update\_enrollment\_status"></a>
 
 ### update_enrollment_status
 

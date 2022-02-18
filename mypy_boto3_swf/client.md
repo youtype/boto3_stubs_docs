@@ -119,7 +119,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -136,7 +136,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="count_closed_workflow_executions"></a>
+<a id="count\_closed\_workflow\_executions"></a>
 
 ### count_closed_workflow_executions
 
@@ -170,7 +170,7 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
-<a id="count_open_workflow_executions"></a>
+<a id="count\_open\_workflow\_executions"></a>
 
 ### count_open_workflow_executions
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionCountTypeDef](./type_defs.md#workflowexecutioncounttypedef).
 
-<a id="count_pending_activity_tasks"></a>
+<a id="count\_pending\_activity\_tasks"></a>
 
 ### count_pending_activity_tasks
 
@@ -222,7 +222,7 @@ Keyword-only arguments:
 
 Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
-<a id="count_pending_decision_tasks"></a>
+<a id="count\_pending\_decision\_tasks"></a>
 
 ### count_pending_decision_tasks
 
@@ -243,7 +243,7 @@ Keyword-only arguments:
 
 Returns [PendingTaskCountTypeDef](./type_defs.md#pendingtaskcounttypedef).
 
-<a id="deprecate_activity_type"></a>
+<a id="deprecate\_activity\_type"></a>
 
 ### deprecate_activity_type
 
@@ -263,7 +263,7 @@ Keyword-only arguments:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
-<a id="deprecate_domain"></a>
+<a id="deprecate\_domain"></a>
 
 ### deprecate_domain
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
-<a id="deprecate_workflow_type"></a>
+<a id="deprecate\_workflow\_type"></a>
 
 ### deprecate_workflow_type
 
@@ -301,7 +301,7 @@ Keyword-only arguments:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
-<a id="describe_activity_type"></a>
+<a id="describe\_activity\_type"></a>
 
 ### describe_activity_type
 
@@ -323,7 +323,7 @@ Keyword-only arguments:
 
 Returns [ActivityTypeDetailTypeDef](./type_defs.md#activitytypedetailtypedef).
 
-<a id="describe_domain"></a>
+<a id="describe\_domain"></a>
 
 ### describe_domain
 
@@ -344,7 +344,7 @@ Keyword-only arguments:
 
 Returns [DomainDetailTypeDef](./type_defs.md#domaindetailtypedef).
 
-<a id="describe_workflow_execution"></a>
+<a id="describe\_workflow\_execution"></a>
 
 ### describe_workflow_execution
 
@@ -369,7 +369,7 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionDetailTypeDef](./type_defs.md#workflowexecutiondetailtypedef).
 
-<a id="describe_workflow_type"></a>
+<a id="describe\_workflow\_type"></a>
 
 ### describe_workflow_type
 
@@ -391,7 +391,7 @@ Keyword-only arguments:
 
 Returns [WorkflowTypeDetailTypeDef](./type_defs.md#workflowtypedetailtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -411,7 +411,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_workflow_execution_history"></a>
+<a id="get\_workflow\_execution\_history"></a>
 
 ### get_workflow_execution_history
 
@@ -438,7 +438,7 @@ Keyword-only arguments:
 
 Returns [HistoryTypeDef](./type_defs.md#historytypedef).
 
-<a id="list_activity_types"></a>
+<a id="list\_activity\_types"></a>
 
 ### list_activity_types
 
@@ -465,7 +465,7 @@ Keyword-only arguments:
 
 Returns [ActivityTypeInfosTypeDef](./type_defs.md#activitytypeinfostypedef).
 
-<a id="list_closed_workflow_executions"></a>
+<a id="list\_closed\_workflow\_executions"></a>
 
 ### list_closed_workflow_executions
 
@@ -502,7 +502,7 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
-<a id="list_domains"></a>
+<a id="list\_domains"></a>
 
 ### list_domains
 
@@ -526,7 +526,7 @@ Keyword-only arguments:
 
 Returns [DomainInfosTypeDef](./type_defs.md#domaininfostypedef).
 
-<a id="list_open_workflow_executions"></a>
+<a id="list\_open\_workflow\_executions"></a>
 
 ### list_open_workflow_executions
 
@@ -560,7 +560,7 @@ Keyword-only arguments:
 Returns
 [WorkflowExecutionInfosTypeDef](./type_defs.md#workflowexecutioninfostypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -581,7 +581,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="list_workflow_types"></a>
+<a id="list\_workflow\_types"></a>
 
 ### list_workflow_types
 
@@ -607,7 +607,7 @@ Keyword-only arguments:
 
 Returns [WorkflowTypeInfosTypeDef](./type_defs.md#workflowtypeinfostypedef).
 
-<a id="poll_for_activity_task"></a>
+<a id="poll\_for\_activity\_task"></a>
 
 ### poll_for_activity_task
 
@@ -629,7 +629,7 @@ Keyword-only arguments:
 
 Returns [ActivityTaskTypeDef](./type_defs.md#activitytasktypedef).
 
-<a id="poll_for_decision_task"></a>
+<a id="poll\_for\_decision\_task"></a>
 
 ### poll_for_decision_task
 
@@ -654,7 +654,7 @@ Keyword-only arguments:
 
 Returns [DecisionTaskTypeDef](./type_defs.md#decisiontasktypedef).
 
-<a id="record_activity_task_heartbeat"></a>
+<a id="record\_activity\_task\_heartbeat"></a>
 
 ### record_activity_task_heartbeat
 
@@ -677,7 +677,7 @@ Keyword-only arguments:
 
 Returns [ActivityTaskStatusTypeDef](./type_defs.md#activitytaskstatustypedef).
 
-<a id="register_activity_type"></a>
+<a id="register\_activity\_type"></a>
 
 ### register_activity_type
 
@@ -705,7 +705,7 @@ Keyword-only arguments:
 - `defaultTaskScheduleToStartTimeout`: `str`
 - `defaultTaskScheduleToCloseTimeout`: `str`
 
-<a id="register_domain"></a>
+<a id="register\_domain"></a>
 
 ### register_domain
 
@@ -726,7 +726,7 @@ Keyword-only arguments:
 - `description`: `str`
 - `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
-<a id="register_workflow_type"></a>
+<a id="register\_workflow\_type"></a>
 
 ### register_workflow_type
 
@@ -754,7 +754,7 @@ Keyword-only arguments:
 - `defaultChildPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 - `defaultLambdaRole`: `str`
 
-<a id="request_cancel_workflow_execution"></a>
+<a id="request\_cancel\_workflow\_execution"></a>
 
 ### request_cancel_workflow_execution
 
@@ -776,7 +776,7 @@ Keyword-only arguments:
 - `workflowId`: `str` *(required)*
 - `runId`: `str`
 
-<a id="respond_activity_task_canceled"></a>
+<a id="respond\_activity\_task\_canceled"></a>
 
 ### respond_activity_task_canceled
 
@@ -797,7 +797,7 @@ Keyword-only arguments:
 - `taskToken`: `str` *(required)*
 - `details`: `str`
 
-<a id="respond_activity_task_completed"></a>
+<a id="respond\_activity\_task\_completed"></a>
 
 ### respond_activity_task_completed
 
@@ -818,7 +818,7 @@ Keyword-only arguments:
 - `taskToken`: `str` *(required)*
 - `result`: `str`
 
-<a id="respond_activity_task_failed"></a>
+<a id="respond\_activity\_task\_failed"></a>
 
 ### respond_activity_task_failed
 
@@ -839,7 +839,7 @@ Keyword-only arguments:
 - `reason`: `str`
 - `details`: `str`
 
-<a id="respond_decision_task_completed"></a>
+<a id="respond\_decision\_task\_completed"></a>
 
 ### respond_decision_task_completed
 
@@ -861,7 +861,7 @@ Keyword-only arguments:
 - `decisions`: `Sequence`\[[DecisionTypeDef](./type_defs.md#decisiontypedef)\]
 - `executionContext`: `str`
 
-<a id="signal_workflow_execution"></a>
+<a id="signal\_workflow\_execution"></a>
 
 ### signal_workflow_execution
 
@@ -885,7 +885,7 @@ Keyword-only arguments:
 - `runId`: `str`
 - `input`: `str`
 
-<a id="start_workflow_execution"></a>
+<a id="start\_workflow\_execution"></a>
 
 ### start_workflow_execution
 
@@ -917,7 +917,7 @@ Keyword-only arguments:
 
 Returns [RunTypeDef](./type_defs.md#runtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -937,7 +937,7 @@ Keyword-only arguments:
 - `tags`: `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
   *(required)*
 
-<a id="terminate_workflow_execution"></a>
+<a id="terminate\_workflow\_execution"></a>
 
 ### terminate_workflow_execution
 
@@ -961,7 +961,7 @@ Keyword-only arguments:
 - `details`: `str`
 - `childPolicy`: [ChildPolicyType](./literals.md#childpolicytype)
 
-<a id="undeprecate_activity_type"></a>
+<a id="undeprecate\_activity\_type"></a>
 
 ### undeprecate_activity_type
 
@@ -981,7 +981,7 @@ Keyword-only arguments:
 - `activityType`: [ActivityTypeTypeDef](./type_defs.md#activitytypetypedef)
   *(required)*
 
-<a id="undeprecate_domain"></a>
+<a id="undeprecate\_domain"></a>
 
 ### undeprecate_domain
 
@@ -999,7 +999,7 @@ Keyword-only arguments:
 
 - `name`: `str` *(required)*
 
-<a id="undeprecate_workflow_type"></a>
+<a id="undeprecate\_workflow\_type"></a>
 
 ### undeprecate_workflow_type
 
@@ -1019,7 +1019,7 @@ Keyword-only arguments:
 - `workflowType`: [WorkflowTypeTypeDef](./type_defs.md#workflowtypetypedef)
   *(required)*
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 

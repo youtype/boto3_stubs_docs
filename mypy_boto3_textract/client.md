@@ -95,7 +95,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="analyze_document"></a>
+<a id="analyze\_document"></a>
 
 ### analyze_document
 
@@ -120,7 +120,7 @@ Keyword-only arguments:
 Returns
 [AnalyzeDocumentResponseTypeDef](./type_defs.md#analyzedocumentresponsetypedef).
 
-<a id="analyze_expense"></a>
+<a id="analyze\_expense"></a>
 
 ### analyze_expense
 
@@ -142,7 +142,7 @@ Keyword-only arguments:
 Returns
 [AnalyzeExpenseResponseTypeDef](./type_defs.md#analyzeexpenseresponsetypedef).
 
-<a id="analyze_id"></a>
+<a id="analyze\_id"></a>
 
 ### analyze_id
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 
 Returns [AnalyzeIDResponseTypeDef](./type_defs.md#analyzeidresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -180,7 +180,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="detect_document_text"></a>
+<a id="detect\_document\_text"></a>
 
 ### detect_document_text
 
@@ -201,7 +201,7 @@ Keyword-only arguments:
 Returns
 [DetectDocumentTextResponseTypeDef](./type_defs.md#detectdocumenttextresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -221,7 +221,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_document_analysis"></a>
+<a id="get\_document\_analysis"></a>
 
 ### get_document_analysis
 
@@ -245,7 +245,7 @@ Keyword-only arguments:
 Returns
 [GetDocumentAnalysisResponseTypeDef](./type_defs.md#getdocumentanalysisresponsetypedef).
 
-<a id="get_document_text_detection"></a>
+<a id="get\_document\_text\_detection"></a>
 
 ### get_document_text_detection
 
@@ -270,7 +270,7 @@ Keyword-only arguments:
 Returns
 [GetDocumentTextDetectionResponseTypeDef](./type_defs.md#getdocumenttextdetectionresponsetypedef).
 
-<a id="get_expense_analysis"></a>
+<a id="get\_expense\_analysis"></a>
 
 ### get_expense_analysis
 
@@ -294,7 +294,7 @@ Keyword-only arguments:
 Returns
 [GetExpenseAnalysisResponseTypeDef](./type_defs.md#getexpenseanalysisresponsetypedef).
 
-<a id="start_document_analysis"></a>
+<a id="start\_document\_analysis"></a>
 
 ### start_document_analysis
 
@@ -326,7 +326,7 @@ Keyword-only arguments:
 Returns
 [StartDocumentAnalysisResponseTypeDef](./type_defs.md#startdocumentanalysisresponsetypedef).
 
-<a id="start_document_text_detection"></a>
+<a id="start\_document\_text\_detection"></a>
 
 ### start_document_text_detection
 
@@ -356,7 +356,7 @@ Keyword-only arguments:
 Returns
 [StartDocumentTextDetectionResponseTypeDef](./type_defs.md#startdocumenttextdetectionresponsetypedef).
 
-<a id="start_expense_analysis"></a>
+<a id="start\_expense\_analysis"></a>
 
 ### start_expense_analysis
 

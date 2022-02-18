@@ -97,7 +97,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -114,7 +114,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="cancel_journal_kinesis_stream"></a>
+<a id="cancel\_journal\_kinesis\_stream"></a>
 
 ### cancel_journal_kinesis_stream
 
@@ -137,7 +137,7 @@ Keyword-only arguments:
 Returns
 [CancelJournalKinesisStreamResponseTypeDef](./type_defs.md#canceljournalkinesisstreamresponsetypedef).
 
-<a id="create_ledger"></a>
+<a id="create\_ledger"></a>
 
 ### create_ledger
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [CreateLedgerResponseTypeDef](./type_defs.md#createledgerresponsetypedef).
 
-<a id="delete_ledger"></a>
+<a id="delete\_ledger"></a>
 
 ### delete_ledger
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 
-<a id="describe_journal_kinesis_stream"></a>
+<a id="describe\_journal\_kinesis\_stream"></a>
 
 ### describe_journal_kinesis_stream
 
@@ -204,7 +204,7 @@ Keyword-only arguments:
 Returns
 [DescribeJournalKinesisStreamResponseTypeDef](./type_defs.md#describejournalkinesisstreamresponsetypedef).
 
-<a id="describe_journal_s3_export"></a>
+<a id="describe\_journal\_s3\_export"></a>
 
 ### describe_journal_s3_export
 
@@ -228,7 +228,7 @@ Keyword-only arguments:
 Returns
 [DescribeJournalS3ExportResponseTypeDef](./type_defs.md#describejournals3exportresponsetypedef).
 
-<a id="describe_ledger"></a>
+<a id="describe\_ledger"></a>
 
 ### describe_ledger
 
@@ -250,7 +250,7 @@ Keyword-only arguments:
 Returns
 [DescribeLedgerResponseTypeDef](./type_defs.md#describeledgerresponsetypedef).
 
-<a id="export_journal_to_s3"></a>
+<a id="export\_journal\_to\_s3"></a>
 
 ### export_journal_to_s3
 
@@ -279,7 +279,7 @@ Keyword-only arguments:
 Returns
 [ExportJournalToS3ResponseTypeDef](./type_defs.md#exportjournaltos3responsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -299,7 +299,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_block"></a>
+<a id="get\_block"></a>
 
 ### get_block
 
@@ -322,7 +322,7 @@ Keyword-only arguments:
 
 Returns [GetBlockResponseTypeDef](./type_defs.md#getblockresponsetypedef).
 
-<a id="get_digest"></a>
+<a id="get\_digest"></a>
 
 ### get_digest
 
@@ -342,7 +342,7 @@ Keyword-only arguments:
 
 Returns [GetDigestResponseTypeDef](./type_defs.md#getdigestresponsetypedef).
 
-<a id="get_revision"></a>
+<a id="get\_revision"></a>
 
 ### get_revision
 
@@ -367,7 +367,7 @@ Keyword-only arguments:
 Returns
 [GetRevisionResponseTypeDef](./type_defs.md#getrevisionresponsetypedef).
 
-<a id="list_journal_kinesis_streams_for_ledger"></a>
+<a id="list\_journal\_kinesis\_streams\_for\_ledger"></a>
 
 ### list_journal_kinesis_streams_for_ledger
 
@@ -392,7 +392,7 @@ Keyword-only arguments:
 Returns
 [ListJournalKinesisStreamsForLedgerResponseTypeDef](./type_defs.md#listjournalkinesisstreamsforledgerresponsetypedef).
 
-<a id="list_journal_s3_exports"></a>
+<a id="list\_journal\_s3\_exports"></a>
 
 ### list_journal_s3_exports
 
@@ -415,7 +415,7 @@ Keyword-only arguments:
 Returns
 [ListJournalS3ExportsResponseTypeDef](./type_defs.md#listjournals3exportsresponsetypedef).
 
-<a id="list_journal_s3_exports_for_ledger"></a>
+<a id="list\_journal\_s3\_exports\_for\_ledger"></a>
 
 ### list_journal_s3_exports_for_ledger
 
@@ -439,7 +439,7 @@ Keyword-only arguments:
 Returns
 [ListJournalS3ExportsForLedgerResponseTypeDef](./type_defs.md#listjournals3exportsforledgerresponsetypedef).
 
-<a id="list_ledgers"></a>
+<a id="list\_ledgers"></a>
 
 ### list_ledgers
 
@@ -462,7 +462,7 @@ Keyword-only arguments:
 Returns
 [ListLedgersResponseTypeDef](./type_defs.md#listledgersresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -483,7 +483,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="stream_journal_to_kinesis"></a>
+<a id="stream\_journal\_to\_kinesis"></a>
 
 ### stream_journal_to_kinesis
 
@@ -512,7 +512,7 @@ Keyword-only arguments:
 Returns
 [StreamJournalToKinesisResponseTypeDef](./type_defs.md#streamjournaltokinesisresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -533,7 +533,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -554,7 +554,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_ledger"></a>
+<a id="update\_ledger"></a>
 
 ### update_ledger
 
@@ -577,7 +577,7 @@ Keyword-only arguments:
 Returns
 [UpdateLedgerResponseTypeDef](./type_defs.md#updateledgerresponsetypedef).
 
-<a id="update_ledger_permissions_mode"></a>
+<a id="update\_ledger\_permissions\_mode"></a>
 
 ### update_ledger_permissions_mode
 

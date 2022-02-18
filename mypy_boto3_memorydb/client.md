@@ -155,7 +155,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="batch_update_cluster"></a>
+<a id="batch\_update\_cluster"></a>
 
 ### batch_update_cluster
 
@@ -178,7 +178,7 @@ Keyword-only arguments:
 Returns
 [BatchUpdateClusterResponseTypeDef](./type_defs.md#batchupdateclusterresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -195,7 +195,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="copy_snapshot"></a>
+<a id="copy\_snapshot"></a>
 
 ### copy_snapshot
 
@@ -220,7 +220,7 @@ Keyword-only arguments:
 Returns
 [CopySnapshotResponseTypeDef](./type_defs.md#copysnapshotresponsetypedef).
 
-<a id="create_acl"></a>
+<a id="create\_acl"></a>
 
 ### create_acl
 
@@ -242,7 +242,7 @@ Keyword-only arguments:
 
 Returns [CreateACLResponseTypeDef](./type_defs.md#createaclresponsetypedef).
 
-<a id="create_cluster"></a>
+<a id="create\_cluster"></a>
 
 ### create_cluster
 
@@ -283,7 +283,7 @@ Keyword-only arguments:
 Returns
 [CreateClusterResponseTypeDef](./type_defs.md#createclusterresponsetypedef).
 
-<a id="create_parameter_group"></a>
+<a id="create\_parameter\_group"></a>
 
 ### create_parameter_group
 
@@ -307,7 +307,7 @@ Keyword-only arguments:
 Returns
 [CreateParameterGroupResponseTypeDef](./type_defs.md#createparametergroupresponsetypedef).
 
-<a id="create_snapshot"></a>
+<a id="create\_snapshot"></a>
 
 ### create_snapshot
 
@@ -331,7 +331,7 @@ Keyword-only arguments:
 Returns
 [CreateSnapshotResponseTypeDef](./type_defs.md#createsnapshotresponsetypedef).
 
-<a id="create_subnet_group"></a>
+<a id="create\_subnet\_group"></a>
 
 ### create_subnet_group
 
@@ -355,7 +355,7 @@ Keyword-only arguments:
 Returns
 [CreateSubnetGroupResponseTypeDef](./type_defs.md#createsubnetgroupresponsetypedef).
 
-<a id="create_user"></a>
+<a id="create\_user"></a>
 
 ### create_user
 
@@ -380,7 +380,7 @@ Keyword-only arguments:
 
 Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
 
-<a id="delete_acl"></a>
+<a id="delete\_acl"></a>
 
 ### delete_acl
 
@@ -400,7 +400,7 @@ Keyword-only arguments:
 
 Returns [DeleteACLResponseTypeDef](./type_defs.md#deleteaclresponsetypedef).
 
-<a id="delete_cluster"></a>
+<a id="delete\_cluster"></a>
 
 ### delete_cluster
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 Returns
 [DeleteClusterResponseTypeDef](./type_defs.md#deleteclusterresponsetypedef).
 
-<a id="delete_parameter_group"></a>
+<a id="delete\_parameter\_group"></a>
 
 ### delete_parameter_group
 
@@ -443,7 +443,7 @@ Keyword-only arguments:
 Returns
 [DeleteParameterGroupResponseTypeDef](./type_defs.md#deleteparametergroupresponsetypedef).
 
-<a id="delete_snapshot"></a>
+<a id="delete\_snapshot"></a>
 
 ### delete_snapshot
 
@@ -464,7 +464,7 @@ Keyword-only arguments:
 Returns
 [DeleteSnapshotResponseTypeDef](./type_defs.md#deletesnapshotresponsetypedef).
 
-<a id="delete_subnet_group"></a>
+<a id="delete\_subnet\_group"></a>
 
 ### delete_subnet_group
 
@@ -485,7 +485,7 @@ Keyword-only arguments:
 Returns
 [DeleteSubnetGroupResponseTypeDef](./type_defs.md#deletesubnetgroupresponsetypedef).
 
-<a id="delete_user"></a>
+<a id="delete\_user"></a>
 
 ### delete_user
 
@@ -505,7 +505,7 @@ Keyword-only arguments:
 
 Returns [DeleteUserResponseTypeDef](./type_defs.md#deleteuserresponsetypedef).
 
-<a id="describe_acls"></a>
+<a id="describe\_acls"></a>
 
 ### describe_acls
 
@@ -529,7 +529,7 @@ Keyword-only arguments:
 Returns
 [DescribeACLsResponseTypeDef](./type_defs.md#describeaclsresponsetypedef).
 
-<a id="describe_clusters"></a>
+<a id="describe\_clusters"></a>
 
 ### describe_clusters
 
@@ -554,7 +554,7 @@ Keyword-only arguments:
 Returns
 [DescribeClustersResponseTypeDef](./type_defs.md#describeclustersresponsetypedef).
 
-<a id="describe_engine_versions"></a>
+<a id="describe\_engine\_versions"></a>
 
 ### describe_engine_versions
 
@@ -580,7 +580,7 @@ Keyword-only arguments:
 Returns
 [DescribeEngineVersionsResponseTypeDef](./type_defs.md#describeengineversionsresponsetypedef).
 
-<a id="describe_events"></a>
+<a id="describe\_events"></a>
 
 ### describe_events
 
@@ -607,7 +607,7 @@ Keyword-only arguments:
 Returns
 [DescribeEventsResponseTypeDef](./type_defs.md#describeeventsresponsetypedef).
 
-<a id="describe_parameter_groups"></a>
+<a id="describe\_parameter\_groups"></a>
 
 ### describe_parameter_groups
 
@@ -631,7 +631,7 @@ Keyword-only arguments:
 Returns
 [DescribeParameterGroupsResponseTypeDef](./type_defs.md#describeparametergroupsresponsetypedef).
 
-<a id="describe_parameters"></a>
+<a id="describe\_parameters"></a>
 
 ### describe_parameters
 
@@ -654,7 +654,7 @@ Keyword-only arguments:
 Returns
 [DescribeParametersResponseTypeDef](./type_defs.md#describeparametersresponsetypedef).
 
-<a id="describe_service_updates"></a>
+<a id="describe\_service\_updates"></a>
 
 ### describe_service_updates
 
@@ -682,7 +682,7 @@ Keyword-only arguments:
 Returns
 [DescribeServiceUpdatesResponseTypeDef](./type_defs.md#describeserviceupdatesresponsetypedef).
 
-<a id="describe_snapshots"></a>
+<a id="describe\_snapshots"></a>
 
 ### describe_snapshots
 
@@ -708,7 +708,7 @@ Keyword-only arguments:
 Returns
 [DescribeSnapshotsResponseTypeDef](./type_defs.md#describesnapshotsresponsetypedef).
 
-<a id="describe_subnet_groups"></a>
+<a id="describe\_subnet\_groups"></a>
 
 ### describe_subnet_groups
 
@@ -731,7 +731,7 @@ Keyword-only arguments:
 Returns
 [DescribeSubnetGroupsResponseTypeDef](./type_defs.md#describesubnetgroupsresponsetypedef).
 
-<a id="describe_users"></a>
+<a id="describe\_users"></a>
 
 ### describe_users
 
@@ -755,7 +755,7 @@ Keyword-only arguments:
 Returns
 [DescribeUsersResponseTypeDef](./type_defs.md#describeusersresponsetypedef).
 
-<a id="failover_shard"></a>
+<a id="failover\_shard"></a>
 
 ### failover_shard
 
@@ -778,7 +778,7 @@ Keyword-only arguments:
 Returns
 [FailoverShardResponseTypeDef](./type_defs.md#failovershardresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -798,7 +798,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_allowed_node_type_updates"></a>
+<a id="list\_allowed\_node\_type\_updates"></a>
 
 ### list_allowed_node_type_updates
 
@@ -821,7 +821,7 @@ Keyword-only arguments:
 Returns
 [ListAllowedNodeTypeUpdatesResponseTypeDef](./type_defs.md#listallowednodetypeupdatesresponsetypedef).
 
-<a id="list_tags"></a>
+<a id="list\_tags"></a>
 
 ### list_tags
 
@@ -841,7 +841,7 @@ Keyword-only arguments:
 
 Returns [ListTagsResponseTypeDef](./type_defs.md#listtagsresponsetypedef).
 
-<a id="reset_parameter_group"></a>
+<a id="reset\_parameter\_group"></a>
 
 ### reset_parameter_group
 
@@ -865,7 +865,7 @@ Keyword-only arguments:
 Returns
 [ResetParameterGroupResponseTypeDef](./type_defs.md#resetparametergroupresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -887,7 +887,7 @@ Keyword-only arguments:
 Returns
 [TagResourceResponseTypeDef](./type_defs.md#tagresourceresponsetypedef).
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -910,7 +910,7 @@ Keyword-only arguments:
 Returns
 [UntagResourceResponseTypeDef](./type_defs.md#untagresourceresponsetypedef).
 
-<a id="update_acl"></a>
+<a id="update\_acl"></a>
 
 ### update_acl
 
@@ -932,7 +932,7 @@ Keyword-only arguments:
 
 Returns [UpdateACLResponseTypeDef](./type_defs.md#updateaclresponsetypedef).
 
-<a id="update_cluster"></a>
+<a id="update\_cluster"></a>
 
 ### update_cluster
 
@@ -968,7 +968,7 @@ Keyword-only arguments:
 Returns
 [UpdateClusterResponseTypeDef](./type_defs.md#updateclusterresponsetypedef).
 
-<a id="update_parameter_group"></a>
+<a id="update\_parameter\_group"></a>
 
 ### update_parameter_group
 
@@ -992,7 +992,7 @@ Keyword-only arguments:
 Returns
 [UpdateParameterGroupResponseTypeDef](./type_defs.md#updateparametergroupresponsetypedef).
 
-<a id="update_subnet_group"></a>
+<a id="update\_subnet\_group"></a>
 
 ### update_subnet_group
 
@@ -1015,7 +1015,7 @@ Keyword-only arguments:
 Returns
 [UpdateSubnetGroupResponseTypeDef](./type_defs.md#updatesubnetgroupresponsetypedef).
 
-<a id="update_user"></a>
+<a id="update\_user"></a>
 
 ### update_user
 

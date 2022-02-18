@@ -334,7 +334,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_approval_rule_template_with_repository"></a>
+<a id="associate\_approval\_rule\_template\_with\_repository"></a>
 
 ### associate_approval_rule_template_with_repository
 
@@ -356,7 +356,7 @@ Keyword-only arguments:
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
 
-<a id="batch_associate_approval_rule_template_with_repositories"></a>
+<a id="batch\_associate\_approval\_rule\_template\_with\_repositories"></a>
 
 ### batch_associate_approval_rule_template_with_repositories
 
@@ -381,7 +381,7 @@ Keyword-only arguments:
 Returns
 [BatchAssociateApprovalRuleTemplateWithRepositoriesOutputTypeDef](./type_defs.md#batchassociateapprovalruletemplatewithrepositoriesoutputtypedef).
 
-<a id="batch_describe_merge_conflicts"></a>
+<a id="batch\_describe\_merge\_conflicts"></a>
 
 ### batch_describe_merge_conflicts
 
@@ -416,7 +416,7 @@ Keyword-only arguments:
 Returns
 [BatchDescribeMergeConflictsOutputTypeDef](./type_defs.md#batchdescribemergeconflictsoutputtypedef).
 
-<a id="batch_disassociate_approval_rule_template_from_repositories"></a>
+<a id="batch\_disassociate\_approval\_rule\_template\_from\_repositories"></a>
 
 ### batch_disassociate_approval_rule_template_from_repositories
 
@@ -441,7 +441,7 @@ Keyword-only arguments:
 Returns
 [BatchDisassociateApprovalRuleTemplateFromRepositoriesOutputTypeDef](./type_defs.md#batchdisassociateapprovalruletemplatefromrepositoriesoutputtypedef).
 
-<a id="batch_get_commits"></a>
+<a id="batch\_get\_commits"></a>
 
 ### batch_get_commits
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 Returns
 [BatchGetCommitsOutputTypeDef](./type_defs.md#batchgetcommitsoutputtypedef).
 
-<a id="batch_get_repositories"></a>
+<a id="batch\_get\_repositories"></a>
 
 ### batch_get_repositories
 
@@ -485,7 +485,7 @@ Keyword-only arguments:
 Returns
 [BatchGetRepositoriesOutputTypeDef](./type_defs.md#batchgetrepositoriesoutputtypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -502,7 +502,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_approval_rule_template"></a>
+<a id="create\_approval\_rule\_template"></a>
 
 ### create_approval_rule_template
 
@@ -527,7 +527,7 @@ Keyword-only arguments:
 Returns
 [CreateApprovalRuleTemplateOutputTypeDef](./type_defs.md#createapprovalruletemplateoutputtypedef).
 
-<a id="create_branch"></a>
+<a id="create\_branch"></a>
 
 ### create_branch
 
@@ -547,7 +547,7 @@ Keyword-only arguments:
 - `branchName`: `str` *(required)*
 - `commitId`: `str` *(required)*
 
-<a id="create_commit"></a>
+<a id="create\_commit"></a>
 
 ### create_commit
 
@@ -579,7 +579,7 @@ Keyword-only arguments:
 
 Returns [CreateCommitOutputTypeDef](./type_defs.md#createcommitoutputtypedef).
 
-<a id="create_pull_request"></a>
+<a id="create\_pull\_request"></a>
 
 ### create_pull_request
 
@@ -604,7 +604,7 @@ Keyword-only arguments:
 Returns
 [CreatePullRequestOutputTypeDef](./type_defs.md#createpullrequestoutputtypedef).
 
-<a id="create_pull_request_approval_rule"></a>
+<a id="create\_pull\_request\_approval\_rule"></a>
 
 ### create_pull_request_approval_rule
 
@@ -628,7 +628,7 @@ Keyword-only arguments:
 Returns
 [CreatePullRequestApprovalRuleOutputTypeDef](./type_defs.md#createpullrequestapprovalruleoutputtypedef).
 
-<a id="create_repository"></a>
+<a id="create\_repository"></a>
 
 ### create_repository
 
@@ -651,7 +651,7 @@ Keyword-only arguments:
 Returns
 [CreateRepositoryOutputTypeDef](./type_defs.md#createrepositoryoutputtypedef).
 
-<a id="create_unreferenced_merge_commit"></a>
+<a id="create\_unreferenced\_merge\_commit"></a>
 
 ### create_unreferenced_merge_commit
 
@@ -688,7 +688,7 @@ Keyword-only arguments:
 Returns
 [CreateUnreferencedMergeCommitOutputTypeDef](./type_defs.md#createunreferencedmergecommitoutputtypedef).
 
-<a id="delete_approval_rule_template"></a>
+<a id="delete\_approval\_rule\_template"></a>
 
 ### delete_approval_rule_template
 
@@ -710,7 +710,7 @@ Keyword-only arguments:
 Returns
 [DeleteApprovalRuleTemplateOutputTypeDef](./type_defs.md#deleteapprovalruletemplateoutputtypedef).
 
-<a id="delete_branch"></a>
+<a id="delete\_branch"></a>
 
 ### delete_branch
 
@@ -732,7 +732,7 @@ Keyword-only arguments:
 
 Returns [DeleteBranchOutputTypeDef](./type_defs.md#deletebranchoutputtypedef).
 
-<a id="delete_comment_content"></a>
+<a id="delete\_comment\_content"></a>
 
 ### delete_comment_content
 
@@ -755,7 +755,7 @@ Keyword-only arguments:
 Returns
 [DeleteCommentContentOutputTypeDef](./type_defs.md#deletecommentcontentoutputtypedef).
 
-<a id="delete_file"></a>
+<a id="delete\_file"></a>
 
 ### delete_file
 
@@ -782,7 +782,7 @@ Keyword-only arguments:
 
 Returns [DeleteFileOutputTypeDef](./type_defs.md#deletefileoutputtypedef).
 
-<a id="delete_pull_request_approval_rule"></a>
+<a id="delete\_pull\_request\_approval\_rule"></a>
 
 ### delete_pull_request_approval_rule
 
@@ -805,7 +805,7 @@ Keyword-only arguments:
 Returns
 [DeletePullRequestApprovalRuleOutputTypeDef](./type_defs.md#deletepullrequestapprovalruleoutputtypedef).
 
-<a id="delete_repository"></a>
+<a id="delete\_repository"></a>
 
 ### delete_repository
 
@@ -826,7 +826,7 @@ Keyword-only arguments:
 Returns
 [DeleteRepositoryOutputTypeDef](./type_defs.md#deleterepositoryoutputtypedef).
 
-<a id="describe_merge_conflicts"></a>
+<a id="describe\_merge\_conflicts"></a>
 
 ### describe_merge_conflicts
 
@@ -860,7 +860,7 @@ Keyword-only arguments:
 Returns
 [DescribeMergeConflictsOutputTypeDef](./type_defs.md#describemergeconflictsoutputtypedef).
 
-<a id="describe_pull_request_events"></a>
+<a id="describe\_pull\_request\_events"></a>
 
 ### describe_pull_request_events
 
@@ -887,7 +887,7 @@ Keyword-only arguments:
 Returns
 [DescribePullRequestEventsOutputTypeDef](./type_defs.md#describepullrequesteventsoutputtypedef).
 
-<a id="disassociate_approval_rule_template_from_repository"></a>
+<a id="disassociate\_approval\_rule\_template\_from\_repository"></a>
 
 ### disassociate_approval_rule_template_from_repository
 
@@ -910,7 +910,7 @@ Keyword-only arguments:
 - `approvalRuleTemplateName`: `str` *(required)*
 - `repositoryName`: `str` *(required)*
 
-<a id="evaluate_pull_request_approval_rules"></a>
+<a id="evaluate\_pull\_request\_approval\_rules"></a>
 
 ### evaluate_pull_request_approval_rules
 
@@ -934,7 +934,7 @@ Keyword-only arguments:
 Returns
 [EvaluatePullRequestApprovalRulesOutputTypeDef](./type_defs.md#evaluatepullrequestapprovalrulesoutputtypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -955,7 +955,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_approval_rule_template"></a>
+<a id="get\_approval\_rule\_template"></a>
 
 ### get_approval_rule_template
 
@@ -977,7 +977,7 @@ Keyword-only arguments:
 Returns
 [GetApprovalRuleTemplateOutputTypeDef](./type_defs.md#getapprovalruletemplateoutputtypedef).
 
-<a id="get_blob"></a>
+<a id="get\_blob"></a>
 
 ### get_blob
 
@@ -998,7 +998,7 @@ Keyword-only arguments:
 
 Returns [GetBlobOutputTypeDef](./type_defs.md#getbloboutputtypedef).
 
-<a id="get_branch"></a>
+<a id="get\_branch"></a>
 
 ### get_branch
 
@@ -1020,7 +1020,7 @@ Keyword-only arguments:
 
 Returns [GetBranchOutputTypeDef](./type_defs.md#getbranchoutputtypedef).
 
-<a id="get_comment"></a>
+<a id="get\_comment"></a>
 
 ### get_comment
 
@@ -1041,7 +1041,7 @@ Keyword-only arguments:
 
 Returns [GetCommentOutputTypeDef](./type_defs.md#getcommentoutputtypedef).
 
-<a id="get_comment_reactions"></a>
+<a id="get\_comment\_reactions"></a>
 
 ### get_comment_reactions
 
@@ -1065,7 +1065,7 @@ Keyword-only arguments:
 Returns
 [GetCommentReactionsOutputTypeDef](./type_defs.md#getcommentreactionsoutputtypedef).
 
-<a id="get_comments_for_compared_commit"></a>
+<a id="get\_comments\_for\_compared\_commit"></a>
 
 ### get_comments_for_compared_commit
 
@@ -1091,7 +1091,7 @@ Keyword-only arguments:
 Returns
 [GetCommentsForComparedCommitOutputTypeDef](./type_defs.md#getcommentsforcomparedcommitoutputtypedef).
 
-<a id="get_comments_for_pull_request"></a>
+<a id="get\_comments\_for\_pull\_request"></a>
 
 ### get_comments_for_pull_request
 
@@ -1118,7 +1118,7 @@ Keyword-only arguments:
 Returns
 [GetCommentsForPullRequestOutputTypeDef](./type_defs.md#getcommentsforpullrequestoutputtypedef).
 
-<a id="get_commit"></a>
+<a id="get\_commit"></a>
 
 ### get_commit
 
@@ -1140,7 +1140,7 @@ Keyword-only arguments:
 
 Returns [GetCommitOutputTypeDef](./type_defs.md#getcommitoutputtypedef).
 
-<a id="get_differences"></a>
+<a id="get\_differences"></a>
 
 ### get_differences
 
@@ -1168,7 +1168,7 @@ Keyword-only arguments:
 Returns
 [GetDifferencesOutputTypeDef](./type_defs.md#getdifferencesoutputtypedef).
 
-<a id="get_file"></a>
+<a id="get\_file"></a>
 
 ### get_file
 
@@ -1190,7 +1190,7 @@ Keyword-only arguments:
 
 Returns [GetFileOutputTypeDef](./type_defs.md#getfileoutputtypedef).
 
-<a id="get_folder"></a>
+<a id="get\_folder"></a>
 
 ### get_folder
 
@@ -1212,7 +1212,7 @@ Keyword-only arguments:
 
 Returns [GetFolderOutputTypeDef](./type_defs.md#getfolderoutputtypedef).
 
-<a id="get_merge_commit"></a>
+<a id="get\_merge\_commit"></a>
 
 ### get_merge_commit
 
@@ -1239,7 +1239,7 @@ Keyword-only arguments:
 Returns
 [GetMergeCommitOutputTypeDef](./type_defs.md#getmergecommitoutputtypedef).
 
-<a id="get_merge_conflicts"></a>
+<a id="get\_merge\_conflicts"></a>
 
 ### get_merge_conflicts
 
@@ -1271,7 +1271,7 @@ Keyword-only arguments:
 Returns
 [GetMergeConflictsOutputTypeDef](./type_defs.md#getmergeconflictsoutputtypedef).
 
-<a id="get_merge_options"></a>
+<a id="get\_merge\_options"></a>
 
 ### get_merge_options
 
@@ -1299,7 +1299,7 @@ Keyword-only arguments:
 Returns
 [GetMergeOptionsOutputTypeDef](./type_defs.md#getmergeoptionsoutputtypedef).
 
-<a id="get_pull_request"></a>
+<a id="get\_pull\_request"></a>
 
 ### get_pull_request
 
@@ -1320,7 +1320,7 @@ Keyword-only arguments:
 Returns
 [GetPullRequestOutputTypeDef](./type_defs.md#getpullrequestoutputtypedef).
 
-<a id="get_pull_request_approval_states"></a>
+<a id="get\_pull\_request\_approval\_states"></a>
 
 ### get_pull_request_approval_states
 
@@ -1343,7 +1343,7 @@ Keyword-only arguments:
 Returns
 [GetPullRequestApprovalStatesOutputTypeDef](./type_defs.md#getpullrequestapprovalstatesoutputtypedef).
 
-<a id="get_pull_request_override_state"></a>
+<a id="get\_pull\_request\_override\_state"></a>
 
 ### get_pull_request_override_state
 
@@ -1369,7 +1369,7 @@ Keyword-only arguments:
 Returns
 [GetPullRequestOverrideStateOutputTypeDef](./type_defs.md#getpullrequestoverridestateoutputtypedef).
 
-<a id="get_repository"></a>
+<a id="get\_repository"></a>
 
 ### get_repository
 
@@ -1390,7 +1390,7 @@ Keyword-only arguments:
 Returns
 [GetRepositoryOutputTypeDef](./type_defs.md#getrepositoryoutputtypedef).
 
-<a id="get_repository_triggers"></a>
+<a id="get\_repository\_triggers"></a>
 
 ### get_repository_triggers
 
@@ -1412,7 +1412,7 @@ Keyword-only arguments:
 Returns
 [GetRepositoryTriggersOutputTypeDef](./type_defs.md#getrepositorytriggersoutputtypedef).
 
-<a id="list_approval_rule_templates"></a>
+<a id="list\_approval\_rule\_templates"></a>
 
 ### list_approval_rule_templates
 
@@ -1436,7 +1436,7 @@ Keyword-only arguments:
 Returns
 [ListApprovalRuleTemplatesOutputTypeDef](./type_defs.md#listapprovalruletemplatesoutputtypedef).
 
-<a id="list_associated_approval_rule_templates_for_repository"></a>
+<a id="list\_associated\_approval\_rule\_templates\_for\_repository"></a>
 
 ### list_associated_approval_rule_templates_for_repository
 
@@ -1462,7 +1462,7 @@ Keyword-only arguments:
 Returns
 [ListAssociatedApprovalRuleTemplatesForRepositoryOutputTypeDef](./type_defs.md#listassociatedapprovalruletemplatesforrepositoryoutputtypedef).
 
-<a id="list_branches"></a>
+<a id="list\_branches"></a>
 
 ### list_branches
 
@@ -1483,7 +1483,7 @@ Keyword-only arguments:
 
 Returns [ListBranchesOutputTypeDef](./type_defs.md#listbranchesoutputtypedef).
 
-<a id="list_pull_requests"></a>
+<a id="list\_pull\_requests"></a>
 
 ### list_pull_requests
 
@@ -1509,7 +1509,7 @@ Keyword-only arguments:
 Returns
 [ListPullRequestsOutputTypeDef](./type_defs.md#listpullrequestsoutputtypedef).
 
-<a id="list_repositories"></a>
+<a id="list\_repositories"></a>
 
 ### list_repositories
 
@@ -1532,7 +1532,7 @@ Keyword-only arguments:
 Returns
 [ListRepositoriesOutputTypeDef](./type_defs.md#listrepositoriesoutputtypedef).
 
-<a id="list_repositories_for_approval_rule_template"></a>
+<a id="list\_repositories\_for\_approval\_rule\_template"></a>
 
 ### list_repositories_for_approval_rule_template
 
@@ -1557,7 +1557,7 @@ Keyword-only arguments:
 Returns
 [ListRepositoriesForApprovalRuleTemplateOutputTypeDef](./type_defs.md#listrepositoriesforapprovalruletemplateoutputtypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1581,7 +1581,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceOutputTypeDef](./type_defs.md#listtagsforresourceoutputtypedef).
 
-<a id="merge_branches_by_fast_forward"></a>
+<a id="merge\_branches\_by\_fast\_forward"></a>
 
 ### merge_branches_by_fast_forward
 
@@ -1606,7 +1606,7 @@ Keyword-only arguments:
 Returns
 [MergeBranchesByFastForwardOutputTypeDef](./type_defs.md#mergebranchesbyfastforwardoutputtypedef).
 
-<a id="merge_branches_by_squash"></a>
+<a id="merge\_branches\_by\_squash"></a>
 
 ### merge_branches_by_squash
 
@@ -1641,7 +1641,7 @@ Keyword-only arguments:
 Returns
 [MergeBranchesBySquashOutputTypeDef](./type_defs.md#mergebranchesbysquashoutputtypedef).
 
-<a id="merge_branches_by_three_way"></a>
+<a id="merge\_branches\_by\_three\_way"></a>
 
 ### merge_branches_by_three_way
 
@@ -1676,7 +1676,7 @@ Keyword-only arguments:
 Returns
 [MergeBranchesByThreeWayOutputTypeDef](./type_defs.md#mergebranchesbythreewayoutputtypedef).
 
-<a id="merge_pull_request_by_fast_forward"></a>
+<a id="merge\_pull\_request\_by\_fast\_forward"></a>
 
 ### merge_pull_request_by_fast_forward
 
@@ -1702,7 +1702,7 @@ Keyword-only arguments:
 Returns
 [MergePullRequestByFastForwardOutputTypeDef](./type_defs.md#mergepullrequestbyfastforwardoutputtypedef).
 
-<a id="merge_pull_request_by_squash"></a>
+<a id="merge\_pull\_request\_by\_squash"></a>
 
 ### merge_pull_request_by_squash
 
@@ -1738,7 +1738,7 @@ Keyword-only arguments:
 Returns
 [MergePullRequestBySquashOutputTypeDef](./type_defs.md#mergepullrequestbysquashoutputtypedef).
 
-<a id="merge_pull_request_by_three_way"></a>
+<a id="merge\_pull\_request\_by\_three\_way"></a>
 
 ### merge_pull_request_by_three_way
 
@@ -1774,7 +1774,7 @@ Keyword-only arguments:
 Returns
 [MergePullRequestByThreeWayOutputTypeDef](./type_defs.md#mergepullrequestbythreewayoutputtypedef).
 
-<a id="override_pull_request_approval_rules"></a>
+<a id="override\_pull\_request\_approval\_rules"></a>
 
 ### override_pull_request_approval_rules
 
@@ -1797,7 +1797,7 @@ Keyword-only arguments:
 - `overrideStatus`: [OverrideStatusType](./literals.md#overridestatustype)
   *(required)*
 
-<a id="post_comment_for_compared_commit"></a>
+<a id="post\_comment\_for\_compared\_commit"></a>
 
 ### post_comment_for_compared_commit
 
@@ -1824,7 +1824,7 @@ Keyword-only arguments:
 Returns
 [PostCommentForComparedCommitOutputTypeDef](./type_defs.md#postcommentforcomparedcommitoutputtypedef).
 
-<a id="post_comment_for_pull_request"></a>
+<a id="post\_comment\_for\_pull\_request"></a>
 
 ### post_comment_for_pull_request
 
@@ -1852,7 +1852,7 @@ Keyword-only arguments:
 Returns
 [PostCommentForPullRequestOutputTypeDef](./type_defs.md#postcommentforpullrequestoutputtypedef).
 
-<a id="post_comment_reply"></a>
+<a id="post\_comment\_reply"></a>
 
 ### post_comment_reply
 
@@ -1876,7 +1876,7 @@ Keyword-only arguments:
 Returns
 [PostCommentReplyOutputTypeDef](./type_defs.md#postcommentreplyoutputtypedef).
 
-<a id="put_comment_reaction"></a>
+<a id="put\_comment\_reaction"></a>
 
 ### put_comment_reaction
 
@@ -1896,7 +1896,7 @@ Keyword-only arguments:
 - `commentId`: `str` *(required)*
 - `reactionValue`: `str` *(required)*
 
-<a id="put_file"></a>
+<a id="put\_file"></a>
 
 ### put_file
 
@@ -1926,7 +1926,7 @@ Keyword-only arguments:
 
 Returns [PutFileOutputTypeDef](./type_defs.md#putfileoutputtypedef).
 
-<a id="put_repository_triggers"></a>
+<a id="put\_repository\_triggers"></a>
 
 ### put_repository_triggers
 
@@ -1951,7 +1951,7 @@ Keyword-only arguments:
 Returns
 [PutRepositoryTriggersOutputTypeDef](./type_defs.md#putrepositorytriggersoutputtypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1970,7 +1970,7 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="test_repository_triggers"></a>
+<a id="test\_repository\_triggers"></a>
 
 ### test_repository_triggers
 
@@ -1996,7 +1996,7 @@ Keyword-only arguments:
 Returns
 [TestRepositoryTriggersOutputTypeDef](./type_defs.md#testrepositorytriggersoutputtypedef).
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -2015,7 +2015,7 @@ Keyword-only arguments:
 - `resourceArn`: `str` *(required)*
 - `tagKeys`: `Sequence`\[`str`\] *(required)*
 
-<a id="update_approval_rule_template_content"></a>
+<a id="update\_approval\_rule\_template\_content"></a>
 
 ### update_approval_rule_template_content
 
@@ -2039,7 +2039,7 @@ Keyword-only arguments:
 Returns
 [UpdateApprovalRuleTemplateContentOutputTypeDef](./type_defs.md#updateapprovalruletemplatecontentoutputtypedef).
 
-<a id="update_approval_rule_template_description"></a>
+<a id="update\_approval\_rule\_template\_description"></a>
 
 ### update_approval_rule_template_description
 
@@ -2062,7 +2062,7 @@ Keyword-only arguments:
 Returns
 [UpdateApprovalRuleTemplateDescriptionOutputTypeDef](./type_defs.md#updateapprovalruletemplatedescriptionoutputtypedef).
 
-<a id="update_approval_rule_template_name"></a>
+<a id="update\_approval\_rule\_template\_name"></a>
 
 ### update_approval_rule_template_name
 
@@ -2085,7 +2085,7 @@ Keyword-only arguments:
 Returns
 [UpdateApprovalRuleTemplateNameOutputTypeDef](./type_defs.md#updateapprovalruletemplatenameoutputtypedef).
 
-<a id="update_comment"></a>
+<a id="update\_comment"></a>
 
 ### update_comment
 
@@ -2107,7 +2107,7 @@ Keyword-only arguments:
 Returns
 [UpdateCommentOutputTypeDef](./type_defs.md#updatecommentoutputtypedef).
 
-<a id="update_default_branch"></a>
+<a id="update\_default\_branch"></a>
 
 ### update_default_branch
 
@@ -2126,7 +2126,7 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `defaultBranchName`: `str` *(required)*
 
-<a id="update_pull_request_approval_rule_content"></a>
+<a id="update\_pull\_request\_approval\_rule\_content"></a>
 
 ### update_pull_request_approval_rule_content
 
@@ -2152,7 +2152,7 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestApprovalRuleContentOutputTypeDef](./type_defs.md#updatepullrequestapprovalrulecontentoutputtypedef).
 
-<a id="update_pull_request_approval_state"></a>
+<a id="update\_pull\_request\_approval\_state"></a>
 
 ### update_pull_request_approval_state
 
@@ -2174,7 +2174,7 @@ Keyword-only arguments:
 - `approvalState`: [ApprovalStateType](./literals.md#approvalstatetype)
   *(required)*
 
-<a id="update_pull_request_description"></a>
+<a id="update\_pull\_request\_description"></a>
 
 ### update_pull_request_description
 
@@ -2197,7 +2197,7 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestDescriptionOutputTypeDef](./type_defs.md#updatepullrequestdescriptionoutputtypedef).
 
-<a id="update_pull_request_status"></a>
+<a id="update\_pull\_request\_status"></a>
 
 ### update_pull_request_status
 
@@ -2222,7 +2222,7 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestStatusOutputTypeDef](./type_defs.md#updatepullrequeststatusoutputtypedef).
 
-<a id="update_pull_request_title"></a>
+<a id="update\_pull\_request\_title"></a>
 
 ### update_pull_request_title
 
@@ -2245,7 +2245,7 @@ Keyword-only arguments:
 Returns
 [UpdatePullRequestTitleOutputTypeDef](./type_defs.md#updatepullrequesttitleoutputtypedef).
 
-<a id="update_repository_description"></a>
+<a id="update\_repository\_description"></a>
 
 ### update_repository_description
 
@@ -2265,7 +2265,7 @@ Keyword-only arguments:
 - `repositoryName`: `str` *(required)*
 - `repositoryDescription`: `str`
 
-<a id="update_repository_name"></a>
+<a id="update\_repository\_name"></a>
 
 ### update_repository_name
 

@@ -14,6 +14,7 @@ type annotations stubs module
     - [VSCode extension](#vscode-extension)
     - [From PyPI with pip](#from-pypi-with-pip)
   - [How to uninstall](#how-to-uninstall)
+  - [Usage](#usage)
   - [IoTWirelessClient](#iotwirelessclient)
     - [Methods](#methods)
     - [Exceptions](#exceptions)
@@ -44,9 +45,11 @@ Install `boto3-stubs` for `IoTWireless` service.
 # install with boto3 type annotations
 python -m pip install 'boto3-stubs[iotwireless]'
 
+
 # Lite version does not provide session.client/resource overloads
 # it is more RAM-friendly, but requires explicit type annotations
 python -m pip install 'boto3-stubs-lite[iotwireless]'
+
 
 # standalone installation
 python -m pip install mypy-boto3-iotwireless
@@ -59,6 +62,12 @@ python -m pip install mypy-boto3-iotwireless
 ```bash
 python -m pip uninstall -y mypy-boto3-iotwireless
 ```
+
+<a id="usage"></a>
+
+## Usage
+
+Code samples can be found [here](./usage.md).
 
 <a id="iotwirelessclient"></a>
 

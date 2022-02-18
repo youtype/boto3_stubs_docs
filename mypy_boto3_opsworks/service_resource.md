@@ -146,7 +146,7 @@ Arguments:
 
 Returns [StackSummary](#stacksummary).
 
-<a id="opsworksserviceresourcecreate_stack-method"></a>
+<a id="opsworksserviceresourcecreate\_stack-method"></a>
 
 ### OpsWorksServiceResource.create_stack method
 
@@ -188,7 +188,7 @@ Keyword-only arguments:
 
 Returns [Stack](#stack).
 
-<a id="opsworksserviceresourceget_available_subresources-method"></a>
+<a id="opsworksserviceresourceget\_available\_subresources-method"></a>
 
 ### OpsWorksServiceResource.get_available_subresources method
 
@@ -272,7 +272,7 @@ Type annotations for `boto3.resource("opsworks").delete` method.
 Boto3 documentation:
 [OpsWorks.Layer.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Layer.delete)
 
-<a id="layerget_available_subresources-method"></a>
+<a id="layerget\_available\_subresources-method"></a>
 
 #### Layer.get_available_subresources method
 
@@ -404,7 +404,7 @@ Boto3 documentation:
 
 Returns [StackSummary](#stacksummary).
 
-<a id="stackcreate_layer-method"></a>
+<a id="stackcreate\_layer-method"></a>
 
 #### Stack.create_layer method
 
@@ -456,7 +456,7 @@ Type annotations for `boto3.resource("opsworks").delete` method.
 Boto3 documentation:
 [OpsWorks.Stack.delete](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/opsworks.html#OpsWorks.Stack.delete)
 
-<a id="stackget_available_subresources-method"></a>
+<a id="stackget\_available\_subresources-method"></a>
 
 #### Stack.get_available_subresources method
 
@@ -541,7 +541,7 @@ Boto3 documentation:
 
 Returns [Stack](#stack).
 
-<a id="stacksummaryget_available_subresources-method"></a>
+<a id="stacksummaryget\_available\_subresources-method"></a>
 
 #### StackSummary.get_available_subresources method
 

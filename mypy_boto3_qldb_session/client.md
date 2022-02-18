@@ -78,7 +78,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -95,7 +95,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -116,7 +116,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="send_command"></a>
+<a id="send\_command"></a>
 
 ### send_command
 

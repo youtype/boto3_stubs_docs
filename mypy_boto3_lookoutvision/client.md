@@ -101,7 +101,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -118,7 +118,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_dataset"></a>
+<a id="create\_dataset"></a>
 
 ### create_dataset
 
@@ -142,7 +142,7 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
-<a id="create_model"></a>
+<a id="create\_model"></a>
 
 ### create_model
 
@@ -170,7 +170,7 @@ Keyword-only arguments:
 Returns
 [CreateModelResponseTypeDef](./type_defs.md#createmodelresponsetypedef).
 
-<a id="create_project"></a>
+<a id="create\_project"></a>
 
 ### create_project
 
@@ -192,7 +192,7 @@ Keyword-only arguments:
 Returns
 [CreateProjectResponseTypeDef](./type_defs.md#createprojectresponsetypedef).
 
-<a id="delete_dataset"></a>
+<a id="delete\_dataset"></a>
 
 ### delete_dataset
 
@@ -214,7 +214,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="delete_model"></a>
+<a id="delete\_model"></a>
 
 ### delete_model
 
@@ -237,7 +237,7 @@ Keyword-only arguments:
 Returns
 [DeleteModelResponseTypeDef](./type_defs.md#deletemodelresponsetypedef).
 
-<a id="delete_project"></a>
+<a id="delete\_project"></a>
 
 ### delete_project
 
@@ -259,7 +259,7 @@ Keyword-only arguments:
 Returns
 [DeleteProjectResponseTypeDef](./type_defs.md#deleteprojectresponsetypedef).
 
-<a id="describe_dataset"></a>
+<a id="describe\_dataset"></a>
 
 ### describe_dataset
 
@@ -281,7 +281,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
-<a id="describe_model"></a>
+<a id="describe\_model"></a>
 
 ### describe_model
 
@@ -303,7 +303,7 @@ Keyword-only arguments:
 Returns
 [DescribeModelResponseTypeDef](./type_defs.md#describemodelresponsetypedef).
 
-<a id="describe_model_packaging_job"></a>
+<a id="describe\_model\_packaging\_job"></a>
 
 ### describe_model_packaging_job
 
@@ -326,7 +326,7 @@ Keyword-only arguments:
 Returns
 [DescribeModelPackagingJobResponseTypeDef](./type_defs.md#describemodelpackagingjobresponsetypedef).
 
-<a id="describe_project"></a>
+<a id="describe\_project"></a>
 
 ### describe_project
 
@@ -347,7 +347,7 @@ Keyword-only arguments:
 Returns
 [DescribeProjectResponseTypeDef](./type_defs.md#describeprojectresponsetypedef).
 
-<a id="detect_anomalies"></a>
+<a id="detect\_anomalies"></a>
 
 ### detect_anomalies
 
@@ -371,7 +371,7 @@ Keyword-only arguments:
 Returns
 [DetectAnomaliesResponseTypeDef](./type_defs.md#detectanomaliesresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -392,7 +392,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="list_dataset_entries"></a>
+<a id="list\_dataset\_entries"></a>
 
 ### list_dataset_entries
 
@@ -422,7 +422,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetEntriesResponseTypeDef](./type_defs.md#listdatasetentriesresponsetypedef).
 
-<a id="list_model_packaging_jobs"></a>
+<a id="list\_model\_packaging\_jobs"></a>
 
 ### list_model_packaging_jobs
 
@@ -447,7 +447,7 @@ Keyword-only arguments:
 Returns
 [ListModelPackagingJobsResponseTypeDef](./type_defs.md#listmodelpackagingjobsresponsetypedef).
 
-<a id="list_models"></a>
+<a id="list\_models"></a>
 
 ### list_models
 
@@ -469,7 +469,7 @@ Keyword-only arguments:
 
 Returns [ListModelsResponseTypeDef](./type_defs.md#listmodelsresponsetypedef).
 
-<a id="list_projects"></a>
+<a id="list\_projects"></a>
 
 ### list_projects
 
@@ -491,7 +491,7 @@ Keyword-only arguments:
 Returns
 [ListProjectsResponseTypeDef](./type_defs.md#listprojectsresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -514,7 +514,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="start_model"></a>
+<a id="start\_model"></a>
 
 ### start_model
 
@@ -537,7 +537,7 @@ Keyword-only arguments:
 
 Returns [StartModelResponseTypeDef](./type_defs.md#startmodelresponsetypedef).
 
-<a id="start_model_packaging_job"></a>
+<a id="start\_model\_packaging\_job"></a>
 
 ### start_model_packaging_job
 
@@ -566,7 +566,7 @@ Keyword-only arguments:
 Returns
 [StartModelPackagingJobResponseTypeDef](./type_defs.md#startmodelpackagingjobresponsetypedef).
 
-<a id="stop_model"></a>
+<a id="stop\_model"></a>
 
 ### stop_model
 
@@ -588,7 +588,7 @@ Keyword-only arguments:
 
 Returns [StopModelResponseTypeDef](./type_defs.md#stopmodelresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -609,7 +609,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -630,7 +630,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_dataset_entries"></a>
+<a id="update\_dataset\_entries"></a>
 
 ### update_dataset_entries
 

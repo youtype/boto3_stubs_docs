@@ -101,7 +101,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="bulk_publish"></a>
+<a id="bulk\_publish"></a>
 
 ### bulk_publish
 
@@ -123,7 +123,7 @@ Keyword-only arguments:
 Returns
 [BulkPublishResponseTypeDef](./type_defs.md#bulkpublishresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -140,7 +140,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_dataset"></a>
+<a id="delete\_dataset"></a>
 
 ### delete_dataset
 
@@ -163,7 +163,7 @@ Keyword-only arguments:
 Returns
 [DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
 
-<a id="describe_dataset"></a>
+<a id="describe\_dataset"></a>
 
 ### describe_dataset
 
@@ -186,7 +186,7 @@ Keyword-only arguments:
 Returns
 [DescribeDatasetResponseTypeDef](./type_defs.md#describedatasetresponsetypedef).
 
-<a id="describe_identity_pool_usage"></a>
+<a id="describe\_identity\_pool\_usage"></a>
 
 ### describe_identity_pool_usage
 
@@ -209,7 +209,7 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityPoolUsageResponseTypeDef](./type_defs.md#describeidentitypoolusageresponsetypedef).
 
-<a id="describe_identity_usage"></a>
+<a id="describe\_identity\_usage"></a>
 
 ### describe_identity_usage
 
@@ -233,7 +233,7 @@ Keyword-only arguments:
 Returns
 [DescribeIdentityUsageResponseTypeDef](./type_defs.md#describeidentityusageresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -254,7 +254,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_bulk_publish_details"></a>
+<a id="get\_bulk\_publish\_details"></a>
 
 ### get_bulk_publish_details
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 Returns
 [GetBulkPublishDetailsResponseTypeDef](./type_defs.md#getbulkpublishdetailsresponsetypedef).
 
-<a id="get_cognito_events"></a>
+<a id="get\_cognito\_events"></a>
 
 ### get_cognito_events
 
@@ -298,7 +298,7 @@ Keyword-only arguments:
 Returns
 [GetCognitoEventsResponseTypeDef](./type_defs.md#getcognitoeventsresponsetypedef).
 
-<a id="get_identity_pool_configuration"></a>
+<a id="get\_identity\_pool\_configuration"></a>
 
 ### get_identity_pool_configuration
 
@@ -320,7 +320,7 @@ Keyword-only arguments:
 Returns
 [GetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#getidentitypoolconfigurationresponsetypedef).
 
-<a id="list_datasets"></a>
+<a id="list\_datasets"></a>
 
 ### list_datasets
 
@@ -344,7 +344,7 @@ Keyword-only arguments:
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
-<a id="list_identity_pool_usage"></a>
+<a id="list\_identity\_pool\_usage"></a>
 
 ### list_identity_pool_usage
 
@@ -367,7 +367,7 @@ Keyword-only arguments:
 Returns
 [ListIdentityPoolUsageResponseTypeDef](./type_defs.md#listidentitypoolusageresponsetypedef).
 
-<a id="list_records"></a>
+<a id="list\_records"></a>
 
 ### list_records
 
@@ -395,7 +395,7 @@ Keyword-only arguments:
 Returns
 [ListRecordsResponseTypeDef](./type_defs.md#listrecordsresponsetypedef).
 
-<a id="register_device"></a>
+<a id="register\_device"></a>
 
 ### register_device
 
@@ -419,7 +419,7 @@ Keyword-only arguments:
 Returns
 [RegisterDeviceResponseTypeDef](./type_defs.md#registerdeviceresponsetypedef).
 
-<a id="set_cognito_events"></a>
+<a id="set\_cognito\_events"></a>
 
 ### set_cognito_events
 
@@ -438,7 +438,7 @@ Keyword-only arguments:
 - `IdentityPoolId`: `str` *(required)*
 - `Events`: `Mapping`\[`str`, `str`\] *(required)*
 
-<a id="set_identity_pool_configuration"></a>
+<a id="set\_identity\_pool\_configuration"></a>
 
 ### set_identity_pool_configuration
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 Returns
 [SetIdentityPoolConfigurationResponseTypeDef](./type_defs.md#setidentitypoolconfigurationresponsetypedef).
 
-<a id="subscribe_to_dataset"></a>
+<a id="subscribe\_to\_dataset"></a>
 
 ### subscribe_to_dataset
 
@@ -488,7 +488,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="unsubscribe_from_dataset"></a>
+<a id="unsubscribe\_from\_dataset"></a>
 
 ### unsubscribe_from_dataset
 
@@ -513,7 +513,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_records"></a>
+<a id="update\_records"></a>
 
 ### update_records
 

@@ -151,7 +151,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="associate_firewall_rule_group"></a>
+<a id="associate\_firewall\_rule\_group"></a>
 
 ### associate_firewall_rule_group
 
@@ -181,7 +181,7 @@ Keyword-only arguments:
 Returns
 [AssociateFirewallRuleGroupResponseTypeDef](./type_defs.md#associatefirewallrulegroupresponsetypedef).
 
-<a id="associate_resolver_endpoint_ip_address"></a>
+<a id="associate\_resolver\_endpoint\_ip\_address"></a>
 
 ### associate_resolver_endpoint_ip_address
 
@@ -206,7 +206,7 @@ Keyword-only arguments:
 Returns
 [AssociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#associateresolverendpointipaddressresponsetypedef).
 
-<a id="associate_resolver_query_log_config"></a>
+<a id="associate\_resolver\_query\_log\_config"></a>
 
 ### associate_resolver_query_log_config
 
@@ -229,7 +229,7 @@ Keyword-only arguments:
 Returns
 [AssociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#associateresolverquerylogconfigresponsetypedef).
 
-<a id="associate_resolver_rule"></a>
+<a id="associate\_resolver\_rule"></a>
 
 ### associate_resolver_rule
 
@@ -253,7 +253,7 @@ Keyword-only arguments:
 Returns
 [AssociateResolverRuleResponseTypeDef](./type_defs.md#associateresolverruleresponsetypedef).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -270,7 +270,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="create_firewall_domain_list"></a>
+<a id="create\_firewall\_domain\_list"></a>
 
 ### create_firewall_domain_list
 
@@ -294,7 +294,7 @@ Keyword-only arguments:
 Returns
 [CreateFirewallDomainListResponseTypeDef](./type_defs.md#createfirewalldomainlistresponsetypedef).
 
-<a id="create_firewall_rule"></a>
+<a id="create\_firewall\_rule"></a>
 
 ### create_firewall_rule
 
@@ -327,7 +327,7 @@ Keyword-only arguments:
 Returns
 [CreateFirewallRuleResponseTypeDef](./type_defs.md#createfirewallruleresponsetypedef).
 
-<a id="create_firewall_rule_group"></a>
+<a id="create\_firewall\_rule\_group"></a>
 
 ### create_firewall_rule_group
 
@@ -352,7 +352,7 @@ Keyword-only arguments:
 Returns
 [CreateFirewallRuleGroupResponseTypeDef](./type_defs.md#createfirewallrulegroupresponsetypedef).
 
-<a id="create_resolver_endpoint"></a>
+<a id="create\_resolver\_endpoint"></a>
 
 ### create_resolver_endpoint
 
@@ -383,7 +383,7 @@ Keyword-only arguments:
 Returns
 [CreateResolverEndpointResponseTypeDef](./type_defs.md#createresolverendpointresponsetypedef).
 
-<a id="create_resolver_query_log_config"></a>
+<a id="create\_resolver\_query\_log\_config"></a>
 
 ### create_resolver_query_log_config
 
@@ -409,7 +409,7 @@ Keyword-only arguments:
 Returns
 [CreateResolverQueryLogConfigResponseTypeDef](./type_defs.md#createresolverquerylogconfigresponsetypedef).
 
-<a id="create_resolver_rule"></a>
+<a id="create\_resolver\_rule"></a>
 
 ### create_resolver_rule
 
@@ -441,7 +441,7 @@ Keyword-only arguments:
 Returns
 [CreateResolverRuleResponseTypeDef](./type_defs.md#createresolverruleresponsetypedef).
 
-<a id="delete_firewall_domain_list"></a>
+<a id="delete\_firewall\_domain\_list"></a>
 
 ### delete_firewall_domain_list
 
@@ -463,7 +463,7 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallDomainListResponseTypeDef](./type_defs.md#deletefirewalldomainlistresponsetypedef).
 
-<a id="delete_firewall_rule"></a>
+<a id="delete\_firewall\_rule"></a>
 
 ### delete_firewall_rule
 
@@ -486,7 +486,7 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallRuleResponseTypeDef](./type_defs.md#deletefirewallruleresponsetypedef).
 
-<a id="delete_firewall_rule_group"></a>
+<a id="delete\_firewall\_rule\_group"></a>
 
 ### delete_firewall_rule_group
 
@@ -508,7 +508,7 @@ Keyword-only arguments:
 Returns
 [DeleteFirewallRuleGroupResponseTypeDef](./type_defs.md#deletefirewallrulegroupresponsetypedef).
 
-<a id="delete_resolver_endpoint"></a>
+<a id="delete\_resolver\_endpoint"></a>
 
 ### delete_resolver_endpoint
 
@@ -530,7 +530,7 @@ Keyword-only arguments:
 Returns
 [DeleteResolverEndpointResponseTypeDef](./type_defs.md#deleteresolverendpointresponsetypedef).
 
-<a id="delete_resolver_query_log_config"></a>
+<a id="delete\_resolver\_query\_log\_config"></a>
 
 ### delete_resolver_query_log_config
 
@@ -552,7 +552,7 @@ Keyword-only arguments:
 Returns
 [DeleteResolverQueryLogConfigResponseTypeDef](./type_defs.md#deleteresolverquerylogconfigresponsetypedef).
 
-<a id="delete_resolver_rule"></a>
+<a id="delete\_resolver\_rule"></a>
 
 ### delete_resolver_rule
 
@@ -574,7 +574,7 @@ Keyword-only arguments:
 Returns
 [DeleteResolverRuleResponseTypeDef](./type_defs.md#deleteresolverruleresponsetypedef).
 
-<a id="disassociate_firewall_rule_group"></a>
+<a id="disassociate\_firewall\_rule\_group"></a>
 
 ### disassociate_firewall_rule_group
 
@@ -597,7 +597,7 @@ Keyword-only arguments:
 Returns
 [DisassociateFirewallRuleGroupResponseTypeDef](./type_defs.md#disassociatefirewallrulegroupresponsetypedef).
 
-<a id="disassociate_resolver_endpoint_ip_address"></a>
+<a id="disassociate\_resolver\_endpoint\_ip\_address"></a>
 
 ### disassociate_resolver_endpoint_ip_address
 
@@ -622,7 +622,7 @@ Keyword-only arguments:
 Returns
 [DisassociateResolverEndpointIpAddressResponseTypeDef](./type_defs.md#disassociateresolverendpointipaddressresponsetypedef).
 
-<a id="disassociate_resolver_query_log_config"></a>
+<a id="disassociate\_resolver\_query\_log\_config"></a>
 
 ### disassociate_resolver_query_log_config
 
@@ -646,7 +646,7 @@ Keyword-only arguments:
 Returns
 [DisassociateResolverQueryLogConfigResponseTypeDef](./type_defs.md#disassociateresolverquerylogconfigresponsetypedef).
 
-<a id="disassociate_resolver_rule"></a>
+<a id="disassociate\_resolver\_rule"></a>
 
 ### disassociate_resolver_rule
 
@@ -669,7 +669,7 @@ Keyword-only arguments:
 Returns
 [DisassociateResolverRuleResponseTypeDef](./type_defs.md#disassociateresolverruleresponsetypedef).
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -690,7 +690,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_firewall_config"></a>
+<a id="get\_firewall\_config"></a>
 
 ### get_firewall_config
 
@@ -713,7 +713,7 @@ Keyword-only arguments:
 Returns
 [GetFirewallConfigResponseTypeDef](./type_defs.md#getfirewallconfigresponsetypedef).
 
-<a id="get_firewall_domain_list"></a>
+<a id="get\_firewall\_domain\_list"></a>
 
 ### get_firewall_domain_list
 
@@ -735,7 +735,7 @@ Keyword-only arguments:
 Returns
 [GetFirewallDomainListResponseTypeDef](./type_defs.md#getfirewalldomainlistresponsetypedef).
 
-<a id="get_firewall_rule_group"></a>
+<a id="get\_firewall\_rule\_group"></a>
 
 ### get_firewall_rule_group
 
@@ -757,7 +757,7 @@ Keyword-only arguments:
 Returns
 [GetFirewallRuleGroupResponseTypeDef](./type_defs.md#getfirewallrulegroupresponsetypedef).
 
-<a id="get_firewall_rule_group_association"></a>
+<a id="get\_firewall\_rule\_group\_association"></a>
 
 ### get_firewall_rule_group_association
 
@@ -780,7 +780,7 @@ Keyword-only arguments:
 Returns
 [GetFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#getfirewallrulegroupassociationresponsetypedef).
 
-<a id="get_firewall_rule_group_policy"></a>
+<a id="get\_firewall\_rule\_group\_policy"></a>
 
 ### get_firewall_rule_group_policy
 
@@ -803,7 +803,7 @@ Keyword-only arguments:
 Returns
 [GetFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#getfirewallrulegrouppolicyresponsetypedef).
 
-<a id="get_resolver_config"></a>
+<a id="get\_resolver\_config"></a>
 
 ### get_resolver_config
 
@@ -826,7 +826,7 @@ Keyword-only arguments:
 Returns
 [GetResolverConfigResponseTypeDef](./type_defs.md#getresolverconfigresponsetypedef).
 
-<a id="get_resolver_dnssec_config"></a>
+<a id="get\_resolver\_dnssec\_config"></a>
 
 ### get_resolver_dnssec_config
 
@@ -848,7 +848,7 @@ Keyword-only arguments:
 Returns
 [GetResolverDnssecConfigResponseTypeDef](./type_defs.md#getresolverdnssecconfigresponsetypedef).
 
-<a id="get_resolver_endpoint"></a>
+<a id="get\_resolver\_endpoint"></a>
 
 ### get_resolver_endpoint
 
@@ -872,7 +872,7 @@ Keyword-only arguments:
 Returns
 [GetResolverEndpointResponseTypeDef](./type_defs.md#getresolverendpointresponsetypedef).
 
-<a id="get_resolver_query_log_config"></a>
+<a id="get\_resolver\_query\_log\_config"></a>
 
 ### get_resolver_query_log_config
 
@@ -896,7 +896,7 @@ Keyword-only arguments:
 Returns
 [GetResolverQueryLogConfigResponseTypeDef](./type_defs.md#getresolverquerylogconfigresponsetypedef).
 
-<a id="get_resolver_query_log_config_association"></a>
+<a id="get\_resolver\_query\_log\_config\_association"></a>
 
 ### get_resolver_query_log_config_association
 
@@ -920,7 +920,7 @@ Keyword-only arguments:
 Returns
 [GetResolverQueryLogConfigAssociationResponseTypeDef](./type_defs.md#getresolverquerylogconfigassociationresponsetypedef).
 
-<a id="get_resolver_query_log_config_policy"></a>
+<a id="get\_resolver\_query\_log\_config\_policy"></a>
 
 ### get_resolver_query_log_config_policy
 
@@ -942,7 +942,7 @@ Keyword-only arguments:
 Returns
 [GetResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#getresolverquerylogconfigpolicyresponsetypedef).
 
-<a id="get_resolver_rule"></a>
+<a id="get\_resolver\_rule"></a>
 
 ### get_resolver_rule
 
@@ -966,7 +966,7 @@ Keyword-only arguments:
 Returns
 [GetResolverRuleResponseTypeDef](./type_defs.md#getresolverruleresponsetypedef).
 
-<a id="get_resolver_rule_association"></a>
+<a id="get\_resolver\_rule\_association"></a>
 
 ### get_resolver_rule_association
 
@@ -989,7 +989,7 @@ Keyword-only arguments:
 Returns
 [GetResolverRuleAssociationResponseTypeDef](./type_defs.md#getresolverruleassociationresponsetypedef).
 
-<a id="get_resolver_rule_policy"></a>
+<a id="get\_resolver\_rule\_policy"></a>
 
 ### get_resolver_rule_policy
 
@@ -1011,7 +1011,7 @@ Keyword-only arguments:
 Returns
 [GetResolverRulePolicyResponseTypeDef](./type_defs.md#getresolverrulepolicyresponsetypedef).
 
-<a id="import_firewall_domains"></a>
+<a id="import\_firewall\_domains"></a>
 
 ### import_firewall_domains
 
@@ -1038,7 +1038,7 @@ Keyword-only arguments:
 Returns
 [ImportFirewallDomainsResponseTypeDef](./type_defs.md#importfirewalldomainsresponsetypedef).
 
-<a id="list_firewall_configs"></a>
+<a id="list\_firewall\_configs"></a>
 
 ### list_firewall_configs
 
@@ -1061,7 +1061,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallConfigsResponseTypeDef](./type_defs.md#listfirewallconfigsresponsetypedef).
 
-<a id="list_firewall_domain_lists"></a>
+<a id="list\_firewall\_domain\_lists"></a>
 
 ### list_firewall_domain_lists
 
@@ -1084,7 +1084,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallDomainListsResponseTypeDef](./type_defs.md#listfirewalldomainlistsresponsetypedef).
 
-<a id="list_firewall_domains"></a>
+<a id="list\_firewall\_domains"></a>
 
 ### list_firewall_domains
 
@@ -1109,7 +1109,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallDomainsResponseTypeDef](./type_defs.md#listfirewalldomainsresponsetypedef).
 
-<a id="list_firewall_rule_group_associations"></a>
+<a id="list\_firewall\_rule\_group\_associations"></a>
 
 ### list_firewall_rule_group_associations
 
@@ -1137,7 +1137,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallRuleGroupAssociationsResponseTypeDef](./type_defs.md#listfirewallrulegroupassociationsresponsetypedef).
 
-<a id="list_firewall_rule_groups"></a>
+<a id="list\_firewall\_rule\_groups"></a>
 
 ### list_firewall_rule_groups
 
@@ -1161,7 +1161,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallRuleGroupsResponseTypeDef](./type_defs.md#listfirewallrulegroupsresponsetypedef).
 
-<a id="list_firewall_rules"></a>
+<a id="list\_firewall\_rules"></a>
 
 ### list_firewall_rules
 
@@ -1188,7 +1188,7 @@ Keyword-only arguments:
 Returns
 [ListFirewallRulesResponseTypeDef](./type_defs.md#listfirewallrulesresponsetypedef).
 
-<a id="list_resolver_configs"></a>
+<a id="list\_resolver\_configs"></a>
 
 ### list_resolver_configs
 
@@ -1211,7 +1211,7 @@ Keyword-only arguments:
 Returns
 [ListResolverConfigsResponseTypeDef](./type_defs.md#listresolverconfigsresponsetypedef).
 
-<a id="list_resolver_dnssec_configs"></a>
+<a id="list\_resolver\_dnssec\_configs"></a>
 
 ### list_resolver_dnssec_configs
 
@@ -1236,7 +1236,7 @@ Keyword-only arguments:
 Returns
 [ListResolverDnssecConfigsResponseTypeDef](./type_defs.md#listresolverdnssecconfigsresponsetypedef).
 
-<a id="list_resolver_endpoint_ip_addresses"></a>
+<a id="list\_resolver\_endpoint\_ip\_addresses"></a>
 
 ### list_resolver_endpoint_ip_addresses
 
@@ -1260,7 +1260,7 @@ Keyword-only arguments:
 Returns
 [ListResolverEndpointIpAddressesResponseTypeDef](./type_defs.md#listresolverendpointipaddressesresponsetypedef).
 
-<a id="list_resolver_endpoints"></a>
+<a id="list\_resolver\_endpoints"></a>
 
 ### list_resolver_endpoints
 
@@ -1285,7 +1285,7 @@ Keyword-only arguments:
 Returns
 [ListResolverEndpointsResponseTypeDef](./type_defs.md#listresolverendpointsresponsetypedef).
 
-<a id="list_resolver_query_log_config_associations"></a>
+<a id="list\_resolver\_query\_log\_config\_associations"></a>
 
 ### list_resolver_query_log_config_associations
 
@@ -1313,7 +1313,7 @@ Keyword-only arguments:
 Returns
 [ListResolverQueryLogConfigAssociationsResponseTypeDef](./type_defs.md#listresolverquerylogconfigassociationsresponsetypedef).
 
-<a id="list_resolver_query_log_configs"></a>
+<a id="list\_resolver\_query\_log\_configs"></a>
 
 ### list_resolver_query_log_configs
 
@@ -1339,7 +1339,7 @@ Keyword-only arguments:
 Returns
 [ListResolverQueryLogConfigsResponseTypeDef](./type_defs.md#listresolverquerylogconfigsresponsetypedef).
 
-<a id="list_resolver_rule_associations"></a>
+<a id="list\_resolver\_rule\_associations"></a>
 
 ### list_resolver_rule_associations
 
@@ -1364,7 +1364,7 @@ Keyword-only arguments:
 Returns
 [ListResolverRuleAssociationsResponseTypeDef](./type_defs.md#listresolverruleassociationsresponsetypedef).
 
-<a id="list_resolver_rules"></a>
+<a id="list\_resolver\_rules"></a>
 
 ### list_resolver_rules
 
@@ -1389,7 +1389,7 @@ Keyword-only arguments:
 Returns
 [ListResolverRulesResponseTypeDef](./type_defs.md#listresolverrulesresponsetypedef).
 
-<a id="list_tags_for_resource"></a>
+<a id="list\_tags\_for\_resource"></a>
 
 ### list_tags_for_resource
 
@@ -1413,7 +1413,7 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
-<a id="put_firewall_rule_group_policy"></a>
+<a id="put\_firewall\_rule\_group\_policy"></a>
 
 ### put_firewall_rule_group_policy
 
@@ -1437,7 +1437,7 @@ Keyword-only arguments:
 Returns
 [PutFirewallRuleGroupPolicyResponseTypeDef](./type_defs.md#putfirewallrulegrouppolicyresponsetypedef).
 
-<a id="put_resolver_query_log_config_policy"></a>
+<a id="put\_resolver\_query\_log\_config\_policy"></a>
 
 ### put_resolver_query_log_config_policy
 
@@ -1463,7 +1463,7 @@ Keyword-only arguments:
 Returns
 [PutResolverQueryLogConfigPolicyResponseTypeDef](./type_defs.md#putresolverquerylogconfigpolicyresponsetypedef).
 
-<a id="put_resolver_rule_policy"></a>
+<a id="put\_resolver\_rule\_policy"></a>
 
 ### put_resolver_rule_policy
 
@@ -1488,7 +1488,7 @@ Keyword-only arguments:
 Returns
 [PutResolverRulePolicyResponseTypeDef](./type_defs.md#putresolverrulepolicyresponsetypedef).
 
-<a id="tag_resource"></a>
+<a id="tag\_resource"></a>
 
 ### tag_resource
 
@@ -1509,7 +1509,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="untag_resource"></a>
+<a id="untag\_resource"></a>
 
 ### untag_resource
 
@@ -1530,7 +1530,7 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="update_firewall_config"></a>
+<a id="update\_firewall\_config"></a>
 
 ### update_firewall_config
 
@@ -1556,7 +1556,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallConfigResponseTypeDef](./type_defs.md#updatefirewallconfigresponsetypedef).
 
-<a id="update_firewall_domains"></a>
+<a id="update\_firewall\_domains"></a>
 
 ### update_firewall_domains
 
@@ -1582,7 +1582,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallDomainsResponseTypeDef](./type_defs.md#updatefirewalldomainsresponsetypedef).
 
-<a id="update_firewall_rule"></a>
+<a id="update\_firewall\_rule"></a>
 
 ### update_firewall_rule
 
@@ -1613,7 +1613,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallRuleResponseTypeDef](./type_defs.md#updatefirewallruleresponsetypedef).
 
-<a id="update_firewall_rule_group_association"></a>
+<a id="update\_firewall\_rule\_group\_association"></a>
 
 ### update_firewall_rule_group_association
 
@@ -1640,7 +1640,7 @@ Keyword-only arguments:
 Returns
 [UpdateFirewallRuleGroupAssociationResponseTypeDef](./type_defs.md#updatefirewallrulegroupassociationresponsetypedef).
 
-<a id="update_resolver_config"></a>
+<a id="update\_resolver\_config"></a>
 
 ### update_resolver_config
 
@@ -1666,7 +1666,7 @@ Keyword-only arguments:
 Returns
 [UpdateResolverConfigResponseTypeDef](./type_defs.md#updateresolverconfigresponsetypedef).
 
-<a id="update_resolver_dnssec_config"></a>
+<a id="update\_resolver\_dnssec\_config"></a>
 
 ### update_resolver_dnssec_config
 
@@ -1689,7 +1689,7 @@ Keyword-only arguments:
 Returns
 [UpdateResolverDnssecConfigResponseTypeDef](./type_defs.md#updateresolverdnssecconfigresponsetypedef).
 
-<a id="update_resolver_endpoint"></a>
+<a id="update\_resolver\_endpoint"></a>
 
 ### update_resolver_endpoint
 
@@ -1712,7 +1712,7 @@ Keyword-only arguments:
 Returns
 [UpdateResolverEndpointResponseTypeDef](./type_defs.md#updateresolverendpointresponsetypedef).
 
-<a id="update_resolver_rule"></a>
+<a id="update\_resolver\_rule"></a>
 
 ### update_resolver_rule
 

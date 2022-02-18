@@ -75,7 +75,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -92,7 +92,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -113,7 +113,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_personalized_ranking"></a>
+<a id="get\_personalized\_ranking"></a>
 
 ### get_personalized_ranking
 
@@ -140,7 +140,7 @@ Keyword-only arguments:
 Returns
 [GetPersonalizedRankingResponseTypeDef](./type_defs.md#getpersonalizedrankingresponsetypedef).
 
-<a id="get_recommendations"></a>
+<a id="get\_recommendations"></a>
 
 ### get_recommendations
 

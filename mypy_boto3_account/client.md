@@ -79,7 +79,7 @@ Boto3 documentation:
 
 Returns [Exceptions](#exceptions).
 
-<a id="can_paginate"></a>
+<a id="can\_paginate"></a>
 
 ### can_paginate
 
@@ -96,7 +96,7 @@ Arguments:
 
 Returns `bool`.
 
-<a id="delete_alternate_contact"></a>
+<a id="delete\_alternate\_contact"></a>
 
 ### delete_alternate_contact
 
@@ -117,7 +117,7 @@ Keyword-only arguments:
   *(required)*
 - `AccountId`: `str`
 
-<a id="generate_presigned_url"></a>
+<a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
 
@@ -137,7 +137,7 @@ Arguments:
 
 Returns `str`.
 
-<a id="get_alternate_contact"></a>
+<a id="get\_alternate\_contact"></a>
 
 ### get_alternate_contact
 
@@ -162,7 +162,7 @@ Keyword-only arguments:
 Returns
 [GetAlternateContactResponseTypeDef](./type_defs.md#getalternatecontactresponsetypedef).
 
-<a id="put_alternate_contact"></a>
+<a id="put\_alternate\_contact"></a>
 
 ### put_alternate_contact
 
