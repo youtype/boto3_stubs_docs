@@ -24,8 +24,10 @@ type annotations stubs module
   - [ServiceNowConnectorOperatorType](#servicenowconnectoroperatortype)
   - [SourceConnectorTypeType](#sourceconnectortypetype)
   - [StandardIdentifierType](#standardidentifiertype)
+  - [StatusType](#statustype)
   - [TaskTypeType](#tasktypetype)
   - [TriggerTypeType](#triggertypetype)
+  - [WorkflowTypeType](#workflowtypetype)
   - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
   - [ServiceName](#servicename)
 
@@ -317,6 +319,24 @@ Values:
 - `SECONDARY`
 - `UNIQUE`
 
+<a id="statustype"></a>
+
+## StatusType
+
+```python
+from mypy_boto3_customer_profiles.literals import StatusType
+```
+
+Values:
+
+- `CANCELLED`
+- `COMPLETE`
+- `FAILED`
+- `IN_PROGRESS`
+- `NOT_STARTED`
+- `RETRY`
+- `SPLIT`
+
 <a id="tasktypetype"></a>
 
 ## TaskTypeType
@@ -348,6 +368,18 @@ Values:
 - `Event`
 - `OnDemand`
 - `Scheduled`
+
+<a id="workflowtypetype"></a>
+
+## WorkflowTypeType
+
+```python
+from mypy_boto3_customer_profiles.literals import WorkflowTypeType
+```
+
+Values:
+
+- `APPFLOW_INTEGRATION`
 
 <a id="zendeskconnectoroperatortype"></a>
 
