@@ -195,7 +195,10 @@ from mypy_boto3_apprunner.literals import RuntimeType
 
 Values:
 
+- `CORRETTO_11`
+- `CORRETTO_8`
 - `NODEJS_12`
+- `NODEJS_14`
 - `PYTHON_3`
 
 <a id="servicestatustype"></a>
