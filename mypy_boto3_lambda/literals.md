@@ -14,9 +14,11 @@ type annotations stubs module
   - [CodeSigningPolicyType](#codesigningpolicytype)
   - [EndPointTypeType](#endpointtypetype)
   - [EventSourcePositionType](#eventsourcepositiontype)
+  - [FunctionActiveV2WaiterName](#functionactivev2waitername)
   - [FunctionActiveWaiterName](#functionactivewaitername)
   - [FunctionExistsWaiterName](#functionexistswaitername)
   - [FunctionResponseTypeType](#functionresponsetypetype)
+  - [FunctionUpdatedV2WaiterName](#functionupdatedv2waitername)
   - [FunctionUpdatedWaiterName](#functionupdatedwaitername)
   - [FunctionVersionType](#functionversiontype)
   - [InvocationTypeType](#invocationtypetype)
@@ -96,6 +98,18 @@ Values:
 - `LATEST`
 - `TRIM_HORIZON`
 
+<a id="functionactivev2waitername"></a>
+
+## FunctionActiveV2WaiterName
+
+```python
+from mypy_boto3_lambda.literals import FunctionActiveV2WaiterName
+```
+
+Values:
+
+- `function_active_v2`
+
 <a id="functionactivewaitername"></a>
 
 ## FunctionActiveWaiterName
@@ -131,6 +145,18 @@ from mypy_boto3_lambda.literals import FunctionResponseTypeType
 Values:
 
 - `ReportBatchItemFailures`
+
+<a id="functionupdatedv2waitername"></a>
+
+## FunctionUpdatedV2WaiterName
+
+```python
+from mypy_boto3_lambda.literals import FunctionUpdatedV2WaiterName
+```
+
+Values:
+
+- `function_updated_v2`
 
 <a id="functionupdatedwaitername"></a>
 
@@ -375,6 +401,7 @@ from mypy_boto3_lambda.literals import RuntimeType
 
 Values:
 
+- `dotnet6`
 - `dotnetcore1.0`
 - `dotnetcore2.0`
 - `dotnetcore2.1`
@@ -814,5 +841,7 @@ from mypy_boto3_lambda.literals import WaiterName
 Values:
 
 - `function_active`
+- `function_active_v2`
 - `function_exists`
 - `function_updated`
+- `function_updated_v2`

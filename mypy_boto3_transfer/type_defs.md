@@ -119,6 +119,7 @@ Optional fields:
   [InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef)
 - `OverwriteExisting`:
   [OverwriteExistingType](./literals.md#overwriteexistingtype)
+- `SourceFileLocation`: `str`
 
 <a id="createaccessrequestrequesttypedef"></a>
 
@@ -292,6 +293,7 @@ Optional fields:
 - `Name`: `str`
 - `Target`: `str`
 - `TimeoutSeconds`: `int`
+- `SourceFileLocation`: `str`
 
 <a id="deleteaccessrequestrequesttypedef"></a>
 
@@ -343,6 +345,7 @@ from mypy_boto3_transfer.type_defs import DeleteStepDetailsTypeDef
 Optional fields:
 
 - `Name`: `str`
+- `SourceFileLocation`: `str`
 
 <a id="deleteuserrequestrequesttypedef"></a>
 
@@ -1358,6 +1361,7 @@ Optional fields:
 
 - `Name`: `str`
 - `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
+- `SourceFileLocation`: `str`
 
 <a id="tagtypedef"></a>
 
