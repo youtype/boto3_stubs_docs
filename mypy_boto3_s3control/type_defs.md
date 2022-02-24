@@ -2480,6 +2480,8 @@ Optional fields:
 - `ObjectLockMode`: [S3ObjectLockModeType](./literals.md#s3objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `BucketKeyEnabled`: `bool`
+- `ChecksumAlgorithm`:
+  [S3ChecksumAlgorithmType](./literals.md#s3checksumalgorithmtype)
 
 <a id="s3generatedmanifestdescriptortypedef"></a>
 

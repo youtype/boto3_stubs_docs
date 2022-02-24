@@ -31,6 +31,7 @@ type annotations stubs module
   - [ReplicationStatusType](#replicationstatustype)
   - [RequestedJobStatusType](#requestedjobstatustype)
   - [S3CannedAccessControlListType](#s3cannedaccesscontrollisttype)
+  - [S3ChecksumAlgorithmType](#s3checksumalgorithmtype)
   - [S3GlacierJobTierType](#s3glacierjobtiertype)
   - [S3GranteeTypeIdentifierType](#s3granteetypeidentifiertype)
   - [S3MetadataDirectiveType](#s3metadatadirectivetype)
@@ -354,6 +355,21 @@ Values:
 - `private`
 - `public-read`
 - `public-read-write`
+
+<a id="s3checksumalgorithmtype"></a>
+
+## S3ChecksumAlgorithmType
+
+```python
+from mypy_boto3_s3control.literals import S3ChecksumAlgorithmType
+```
+
+Values:
+
+- `CRC32`
+- `CRC32C`
+- `SHA1`
+- `SHA256`
 
 <a id="s3glacierjobtiertype"></a>
 

@@ -151,10 +151,16 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_transfer.paginator import ListServersPaginator, ...
+from mypy_boto3_transfer.paginator import ListAccessesPaginator, ...
 ```
 
+- [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+- [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
 - [ListServersPaginator](./paginators.md#listserverspaginator)
+- [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- [ListUsersPaginator](./paginators.md#listuserspaginator)
+- [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
 
 <a id="literals"></a>
 
@@ -175,7 +181,13 @@ from mypy_boto3_transfer.literals import CustomStepStatusType, ...
 - [ExecutionStatusType](./literals.md#executionstatustype)
 - [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+- [ListAccessesPaginatorName](./literals.md#listaccessespaginatorname)
+- [ListExecutionsPaginatorName](./literals.md#listexecutionspaginatorname)
+- [ListSecurityPoliciesPaginatorName](./literals.md#listsecuritypoliciespaginatorname)
 - [ListServersPaginatorName](./literals.md#listserverspaginatorname)
+- [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
+- [ListUsersPaginatorName](./literals.md#listuserspaginatorname)
+- [ListWorkflowsPaginatorName](./literals.md#listworkflowspaginatorname)
 - [OverwriteExistingType](./literals.md#overwriteexistingtype)
 - [ProtocolType](./literals.md#protocoltype)
 - [StateType](./literals.md#statetype)

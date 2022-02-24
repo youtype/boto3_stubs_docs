@@ -2433,6 +2433,10 @@ Required fields:
 
 - `keyPairName`: `str`
 
+Optional fields:
+
+- `expectedFingerprint`: `str`
+
 <a id="deletekeypairresulttypedef"></a>
 
 ## DeleteKeyPairResultTypeDef
@@ -2906,6 +2910,7 @@ Required fields:
 
 - `publicKeyBase64`: `str`
 - `privateKeyBase64`: `str`
+- `createdAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4095,6 +4100,7 @@ from mypy_boto3_lightsail.type_defs import GetKeyPairsRequestRequestTypeDef
 Optional fields:
 
 - `pageToken`: `str`
+- `includeDefaultKeyPair`: `bool`
 
 <a id="getkeypairsresulttypedef"></a>
 

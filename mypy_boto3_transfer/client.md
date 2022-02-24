@@ -935,5 +935,17 @@ Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 Type annotations for `boto3.client("transfer").get_paginator` method with
 overloads.
 
+- `client.get_paginator("list_accesses")` ->
+  [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+- `client.get_paginator("list_executions")` ->
+  [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_security_policies")` ->
+  [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
 - `client.get_paginator("list_servers")` ->
   [ListServersPaginator](./paginators.md#listserverspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_users")` ->
+  [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_workflows")` ->
+  [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)

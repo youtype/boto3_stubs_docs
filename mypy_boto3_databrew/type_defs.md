@@ -1621,6 +1621,7 @@ Optional fields:
 - `Overwrite`: `bool`
 - `FormatOptions`:
   [OutputFormatOptionsTypeDef](./type_defs.md#outputformatoptionstypedef)
+- `MaxOutputFiles`: `int`
 
 <a id="paginatorconfigtypedef"></a>
 

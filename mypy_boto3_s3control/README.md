@@ -217,6 +217,7 @@ from mypy_boto3_s3control.literals import AsyncOperationNameType, ...
 - [ReplicationStatusType](./literals.md#replicationstatustype)
 - [RequestedJobStatusType](./literals.md#requestedjobstatustype)
 - [S3CannedAccessControlListType](./literals.md#s3cannedaccesscontrollisttype)
+- [S3ChecksumAlgorithmType](./literals.md#s3checksumalgorithmtype)
 - [S3GlacierJobTierType](./literals.md#s3glacierjobtiertype)
 - [S3GranteeTypeIdentifierType](./literals.md#s3granteetypeidentifiertype)
 - [S3MetadataDirectiveType](./literals.md#s3metadatadirectivetype)

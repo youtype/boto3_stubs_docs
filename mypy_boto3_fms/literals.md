@@ -14,6 +14,7 @@ type annotations stubs module
   - [CustomerPolicyScopeIdTypeType](#customerpolicyscopeidtypetype)
   - [DependentServiceNameType](#dependentservicenametype)
   - [DestinationTypeType](#destinationtypetype)
+  - [FirewallDeploymentModelType](#firewalldeploymentmodeltype)
   - [ListAppsListsPaginatorName](#listappslistspaginatorname)
   - [ListComplianceStatusPaginatorName](#listcompliancestatuspaginatorname)
   - [ListMemberAccountsPaginatorName](#listmemberaccountspaginatorname)
@@ -84,6 +85,18 @@ Values:
 - `IPV4`
 - `IPV6`
 - `PREFIX_LIST`
+
+<a id="firewalldeploymentmodeltype"></a>
+
+## FirewallDeploymentModelType
+
+```python
+from mypy_boto3_fms.literals import FirewallDeploymentModelType
+```
+
+Values:
+
+- `CENTRALIZED`
 
 <a id="listappslistspaginatorname"></a>
 
@@ -223,6 +236,7 @@ Values:
 
 - `BLACK_HOLE_ROUTE_DETECTED`
 - `BLACK_HOLE_ROUTE_DETECTED_IN_FIREWALL_SUBNET`
+- `FIREWALL_SUBNET_IS_OUT_OF_SCOPE`
 - `FIREWALL_SUBNET_MISSING_EXPECTED_ROUTE`
 - `FMS_CREATED_SECURITY_GROUP_EDITED`
 - `INTERNET_GATEWAY_MISSING_EXPECTED_ROUTE`
@@ -240,6 +254,7 @@ Values:
 - `RESOURCE_MISSING_WEB_ACL`
 - `RESOURCE_MISSING_WEB_ACL_OR_SHIELD_PROTECTION`
 - `RESOURCE_VIOLATES_AUDIT_SECURITY_GROUP`
+- `ROUTE_HAS_OUT_OF_SCOPE_ENDPOINT`
 - `SECURITY_GROUP_REDUNDANT`
 - `SECURITY_GROUP_UNUSED`
 - `TRAFFIC_INSPECTION_CROSSES_AZ_BOUNDARY`

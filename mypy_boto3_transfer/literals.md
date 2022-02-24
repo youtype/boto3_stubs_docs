@@ -17,7 +17,13 @@ type annotations stubs module
   - [ExecutionStatusType](#executionstatustype)
   - [HomeDirectoryTypeType](#homedirectorytypetype)
   - [IdentityProviderTypeType](#identityprovidertypetype)
+  - [ListAccessesPaginatorName](#listaccessespaginatorname)
+  - [ListExecutionsPaginatorName](#listexecutionspaginatorname)
+  - [ListSecurityPoliciesPaginatorName](#listsecuritypoliciespaginatorname)
   - [ListServersPaginatorName](#listserverspaginatorname)
+  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
+  - [ListUsersPaginatorName](#listuserspaginatorname)
+  - [ListWorkflowsPaginatorName](#listworkflowspaginatorname)
   - [OverwriteExistingType](#overwriteexistingtype)
   - [ProtocolType](#protocoltype)
   - [StateType](#statetype)
@@ -121,6 +127,42 @@ Values:
 - `AWS_LAMBDA`
 - `SERVICE_MANAGED`
 
+<a id="listaccessespaginatorname"></a>
+
+## ListAccessesPaginatorName
+
+```python
+from mypy_boto3_transfer.literals import ListAccessesPaginatorName
+```
+
+Values:
+
+- `list_accesses`
+
+<a id="listexecutionspaginatorname"></a>
+
+## ListExecutionsPaginatorName
+
+```python
+from mypy_boto3_transfer.literals import ListExecutionsPaginatorName
+```
+
+Values:
+
+- `list_executions`
+
+<a id="listsecuritypoliciespaginatorname"></a>
+
+## ListSecurityPoliciesPaginatorName
+
+```python
+from mypy_boto3_transfer.literals import ListSecurityPoliciesPaginatorName
+```
+
+Values:
+
+- `list_security_policies`
+
 <a id="listserverspaginatorname"></a>
 
 ## ListServersPaginatorName
@@ -132,6 +174,42 @@ from mypy_boto3_transfer.literals import ListServersPaginatorName
 Values:
 
 - `list_servers`
+
+<a id="listtagsforresourcepaginatorname"></a>
+
+## ListTagsForResourcePaginatorName
+
+```python
+from mypy_boto3_transfer.literals import ListTagsForResourcePaginatorName
+```
+
+Values:
+
+- `list_tags_for_resource`
+
+<a id="listuserspaginatorname"></a>
+
+## ListUsersPaginatorName
+
+```python
+from mypy_boto3_transfer.literals import ListUsersPaginatorName
+```
+
+Values:
+
+- `list_users`
+
+<a id="listworkflowspaginatorname"></a>
+
+## ListWorkflowsPaginatorName
+
+```python
+from mypy_boto3_transfer.literals import ListWorkflowsPaginatorName
+```
+
+Values:
+
+- `list_workflows`
 
 <a id="overwriteexistingtype"></a>
 
@@ -526,4 +604,10 @@ from mypy_boto3_transfer.literals import PaginatorName
 
 Values:
 
+- `list_accesses`
+- `list_executions`
+- `list_security_policies`
 - `list_servers`
+- `list_tags_for_resource`
+- `list_users`
+- `list_workflows`
