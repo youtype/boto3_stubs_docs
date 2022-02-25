@@ -180,9 +180,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_panorama.type_defs import ApplicationInstanceTypeDef, ...
+from mypy_boto3_panorama.type_defs import AlternateSoftwareMetadataTypeDef, ...
 ```
 
+- [AlternateSoftwareMetadataTypeDef](./type_defs.md#alternatesoftwaremetadatatypedef)
 - [ApplicationInstanceTypeDef](./type_defs.md#applicationinstancetypedef)
 - [CreateApplicationInstanceRequestRequestTypeDef](./type_defs.md#createapplicationinstancerequestrequesttypedef)
 - [CreateApplicationInstanceResponseTypeDef](./type_defs.md#createapplicationinstanceresponsetypedef)
@@ -253,6 +254,8 @@ from mypy_boto3_panorama.type_defs import ApplicationInstanceTypeDef, ...
 - [NodeInterfaceTypeDef](./type_defs.md#nodeinterfacetypedef)
 - [NodeOutputPortTypeDef](./type_defs.md#nodeoutputporttypedef)
 - [NodeTypeDef](./type_defs.md#nodetypedef)
+- [NtpPayloadTypeDef](./type_defs.md#ntppayloadtypedef)
+- [NtpStatusTypeDef](./type_defs.md#ntpstatustypedef)
 - [OTAJobConfigTypeDef](./type_defs.md#otajobconfigtypedef)
 - [OutPutS3LocationTypeDef](./type_defs.md#outputs3locationtypedef)
 - [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)

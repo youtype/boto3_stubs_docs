@@ -160,6 +160,7 @@ from mypy_boto3_panorama.literals import NetworkConnectionStatusType
 Values:
 
 - `CONNECTED`
+- `CONNECTING`
 - `NOT_CONNECTED`
 
 <a id="nodecategorytype"></a>
@@ -229,6 +230,7 @@ from mypy_boto3_panorama.literals import PackageImportJobTypeType
 
 Values:
 
+- `MARKETPLACE_NODE_PACKAGE_VERSION`
 - `NODE_PACKAGE_VERSION`
 
 <a id="packageversionstatustype"></a>

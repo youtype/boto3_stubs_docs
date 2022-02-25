@@ -144,14 +144,14 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
+- `DefaultRuntimeContextDevice`: `str` *(required)*
 - `ManifestPayload`:
   [ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef) *(required)*
-- `DefaultRuntimeContextDevice`: `str` *(required)*
-- `Name`: `str`
+- `ApplicationInstanceIdToReplace`: `str`
 - `Description`: `str`
 - `ManifestOverridesPayload`:
   [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
-- `ApplicationInstanceIdToReplace`: `str`
+- `Name`: `str`
 - `RuntimeRoleArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
@@ -200,15 +200,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
-  [TemplateTypeType](./literals.md#templatetypetype)) *(required)*
+- `NodeName`: `str` *(required)*
 - `OutputPackageName`: `str` *(required)*
 - `OutputPackageVersion`: `str` *(required)*
-- `NodeName`: `str` *(required)*
 - `TemplateParameters`: `Mapping`\[`str`, `str`\] *(required)*
-- `NodeDescription`: `str`
+- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
+  [TemplateTypeType](./literals.md#templatetypetype)) *(required)*
 - `JobTags`:
   `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
+- `NodeDescription`: `str`
 
 Returns
 [CreateNodeFromTemplateJobResponseTypeDef](./type_defs.md#createnodefromtemplatejobresponsetypedef).
@@ -252,16 +252,15 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `JobType`: `Literal['NODE_PACKAGE_VERSION']` (see
-  [PackageImportJobTypeType](./literals.md#packageimportjobtypetype))
-  *(required)*
+- `ClientToken`: `str` *(required)*
 - `InputConfig`:
   [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)
+  *(required)*
+- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
   *(required)*
 - `OutputConfig`:
   [PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef)
   *(required)*
-- `ClientToken`: `str` *(required)*
 - `JobTags`:
   `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
 
@@ -619,9 +618,9 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeviceId`: `str`
-- `StatusFilter`: [StatusFilterType](./literals.md#statusfiltertype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
+- `StatusFilter`: [StatusFilterType](./literals.md#statusfiltertype)
 
 Returns
 [ListApplicationInstancesResponseTypeDef](./type_defs.md#listapplicationinstancesresponsetypedef).
@@ -642,8 +641,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NextToken`: `str`
 - `MaxResults`: `int`
+- `NextToken`: `str`
 
 Returns
 [ListDevicesResponseTypeDef](./type_defs.md#listdevicesresponsetypedef).
@@ -665,8 +664,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `DeviceId`: `str`
-- `NextToken`: `str`
 - `MaxResults`: `int`
+- `NextToken`: `str`
 
 Returns
 [ListDevicesJobsResponseTypeDef](./type_defs.md#listdevicesjobsresponsetypedef).
@@ -688,8 +687,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NextToken`: `str`
 - `MaxResults`: `int`
+- `NextToken`: `str`
 
 Returns
 [ListNodeFromTemplateJobsResponseTypeDef](./type_defs.md#listnodefromtemplatejobsresponsetypedef).
@@ -711,12 +710,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
+- `MaxResults`: `int`
+- `NextToken`: `str`
 - `OwnerAccount`: `str`
 - `PackageName`: `str`
 - `PackageVersion`: `str`
 - `PatchVersion`: `str`
-- `NextToken`: `str`
-- `MaxResults`: `int`
 
 Returns [ListNodesResponseTypeDef](./type_defs.md#listnodesresponsetypedef).
 
@@ -737,8 +736,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `NextToken`: `str`
 - `MaxResults`: `int`
+- `NextToken`: `str`
 
 Returns
 [ListPackageImportJobsResponseTypeDef](./type_defs.md#listpackageimportjobsresponsetypedef).
@@ -804,9 +803,9 @@ Keyword-only arguments:
 
 - `Name`: `str` *(required)*
 - `Description`: `str`
-- `Tags`: `Mapping`\[`str`, `str`\]
 - `NetworkingConfiguration`:
   [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
+- `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
 [ProvisionDeviceResponseTypeDef](./type_defs.md#provisiondeviceresponsetypedef).
@@ -831,8 +830,8 @@ Keyword-only arguments:
 - `PackageId`: `str` *(required)*
 - `PackageVersion`: `str` *(required)*
 - `PatchVersion`: `str` *(required)*
-- `OwnerAccount`: `str`
 - `MarkLatest`: `bool`
+- `OwnerAccount`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 
