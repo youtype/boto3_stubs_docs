@@ -18988,6 +18988,8 @@ Required fields:
 - `SriovNetSupport`:
   [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `BootMode`: [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
+- `LastLaunchedTime`:
+  [AttributeValueTypeDef](./type_defs.md#attributevaluetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

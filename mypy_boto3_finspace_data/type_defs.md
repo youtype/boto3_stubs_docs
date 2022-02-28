@@ -19,6 +19,10 @@ type annotations stubs module
   - [CreateDataViewResponseTypeDef](#createdataviewresponsetypedef)
   - [CreateDatasetRequestRequestTypeDef](#createdatasetrequestrequesttypedef)
   - [CreateDatasetResponseTypeDef](#createdatasetresponsetypedef)
+  - [CreatePermissionGroupRequestRequestTypeDef](#createpermissiongrouprequestrequesttypedef)
+  - [CreatePermissionGroupResponseTypeDef](#createpermissiongroupresponsetypedef)
+  - [CreateUserRequestRequestTypeDef](#createuserrequestrequesttypedef)
+  - [CreateUserResponseTypeDef](#createuserresponsetypedef)
   - [CredentialsTypeDef](#credentialstypedef)
   - [DataViewDestinationTypeParamsTypeDef](#dataviewdestinationtypeparamstypedef)
   - [DataViewErrorInfoTypeDef](#dataviewerrorinfotypedef)
@@ -27,6 +31,12 @@ type annotations stubs module
   - [DatasetTypeDef](#datasettypedef)
   - [DeleteDatasetRequestRequestTypeDef](#deletedatasetrequestrequesttypedef)
   - [DeleteDatasetResponseTypeDef](#deletedatasetresponsetypedef)
+  - [DeletePermissionGroupRequestRequestTypeDef](#deletepermissiongrouprequestrequesttypedef)
+  - [DeletePermissionGroupResponseTypeDef](#deletepermissiongroupresponsetypedef)
+  - [DisableUserRequestRequestTypeDef](#disableuserrequestrequesttypedef)
+  - [DisableUserResponseTypeDef](#disableuserresponsetypedef)
+  - [EnableUserRequestRequestTypeDef](#enableuserrequestrequesttypedef)
+  - [EnableUserResponseTypeDef](#enableuserresponsetypedef)
   - [GetChangesetRequestRequestTypeDef](#getchangesetrequestrequesttypedef)
   - [GetChangesetResponseTypeDef](#getchangesetresponsetypedef)
   - [GetDataViewRequestRequestTypeDef](#getdataviewrequestrequesttypedef)
@@ -35,6 +45,8 @@ type annotations stubs module
   - [GetDatasetResponseTypeDef](#getdatasetresponsetypedef)
   - [GetProgrammaticAccessCredentialsRequestRequestTypeDef](#getprogrammaticaccesscredentialsrequestrequesttypedef)
   - [GetProgrammaticAccessCredentialsResponseTypeDef](#getprogrammaticaccesscredentialsresponsetypedef)
+  - [GetUserRequestRequestTypeDef](#getuserrequestrequesttypedef)
+  - [GetUserResponseTypeDef](#getuserresponsetypedef)
   - [GetWorkingLocationRequestRequestTypeDef](#getworkinglocationrequestrequesttypedef)
   - [GetWorkingLocationResponseTypeDef](#getworkinglocationresponsetypedef)
   - [ListChangesetsRequestRequestTypeDef](#listchangesetsrequestrequesttypedef)
@@ -43,8 +55,15 @@ type annotations stubs module
   - [ListDataViewsResponseTypeDef](#listdataviewsresponsetypedef)
   - [ListDatasetsRequestRequestTypeDef](#listdatasetsrequestrequesttypedef)
   - [ListDatasetsResponseTypeDef](#listdatasetsresponsetypedef)
+  - [ListPermissionGroupsRequestRequestTypeDef](#listpermissiongroupsrequestrequesttypedef)
+  - [ListPermissionGroupsResponseTypeDef](#listpermissiongroupsresponsetypedef)
+  - [ListUsersRequestRequestTypeDef](#listusersrequestrequesttypedef)
+  - [ListUsersResponseTypeDef](#listusersresponsetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PermissionGroupParamsTypeDef](#permissiongroupparamstypedef)
+  - [PermissionGroupTypeDef](#permissiongrouptypedef)
+  - [ResetUserPasswordRequestRequestTypeDef](#resetuserpasswordrequestrequesttypedef)
+  - [ResetUserPasswordResponseTypeDef](#resetuserpasswordresponsetypedef)
   - [ResourcePermissionTypeDef](#resourcepermissiontypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SchemaDefinitionTypeDef](#schemadefinitiontypedef)
@@ -53,6 +72,11 @@ type annotations stubs module
   - [UpdateChangesetResponseTypeDef](#updatechangesetresponsetypedef)
   - [UpdateDatasetRequestRequestTypeDef](#updatedatasetrequestrequesttypedef)
   - [UpdateDatasetResponseTypeDef](#updatedatasetresponsetypedef)
+  - [UpdatePermissionGroupRequestRequestTypeDef](#updatepermissiongrouprequestrequesttypedef)
+  - [UpdatePermissionGroupResponseTypeDef](#updatepermissiongroupresponsetypedef)
+  - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
+  - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
+  - [UserTypeDef](#usertypedef)
 
 <a id="changeseterrorinfotypedef"></a>
 
@@ -215,6 +239,74 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createpermissiongrouprequestrequesttypedef"></a>
+
+## CreatePermissionGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreatePermissionGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `name`: `str`
+- `applicationPermissions`:
+  `Sequence`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
+
+Optional fields:
+
+- `description`: `str`
+- `clientToken`: `str`
+
+<a id="createpermissiongroupresponsetypedef"></a>
+
+## CreatePermissionGroupResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreatePermissionGroupResponseTypeDef
+```
+
+Required fields:
+
+- `permissionGroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createuserrequestrequesttypedef"></a>
+
+## CreateUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreateUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `emailAddress`: `str`
+- `type`: [UserTypeType](./literals.md#usertypetype)
+
+Optional fields:
+
+- `firstName`: `str`
+- `lastName`: `str`
+- `ApiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
+- `apiAccessPrincipalArn`: `str`
+- `clientToken`: `str`
+
+<a id="createuserresponsetypedef"></a>
+
+## CreateUserResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import CreateUserResponseTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="credentialstypedef"></a>
 
 ## CredentialsTypeDef
@@ -348,6 +440,96 @@ from mypy_boto3_finspace_data.type_defs import DeleteDatasetResponseTypeDef
 Required fields:
 
 - `datasetId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="deletepermissiongrouprequestrequesttypedef"></a>
+
+## DeletePermissionGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DeletePermissionGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `permissionGroupId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+<a id="deletepermissiongroupresponsetypedef"></a>
+
+## DeletePermissionGroupResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DeletePermissionGroupResponseTypeDef
+```
+
+Required fields:
+
+- `permissionGroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="disableuserrequestrequesttypedef"></a>
+
+## DisableUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DisableUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+<a id="disableuserresponsetypedef"></a>
+
+## DisableUserResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import DisableUserResponseTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="enableuserrequestrequesttypedef"></a>
+
+## EnableUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import EnableUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+<a id="enableuserresponsetypedef"></a>
+
+## EnableUserResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import EnableUserResponseTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -497,6 +679,44 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getuserrequestrequesttypedef"></a>
+
+## GetUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+
+<a id="getuserresponsetypedef"></a>
+
+## GetUserResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import GetUserResponseTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+- `status`: [UserStatusType](./literals.md#userstatustype)
+- `firstName`: `str`
+- `lastName`: `str`
+- `emailAddress`: `str`
+- `type`: [UserTypeType](./literals.md#usertypetype)
+- `apiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
+- `apiAccessPrincipalArn`: `str`
+- `createTime`: `int`
+- `lastEnabledTime`: `int`
+- `lastDisabledTime`: `int`
+- `lastModifiedTime`: `int`
+- `lastLoginTime`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="getworkinglocationrequestrequesttypedef"></a>
 
 ## GetWorkingLocationRequestRequestTypeDef
@@ -619,6 +839,69 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listpermissiongroupsrequestrequesttypedef"></a>
+
+## ListPermissionGroupsRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListPermissionGroupsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `maxResults`: `int`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+<a id="listpermissiongroupsresponsetypedef"></a>
+
+## ListPermissionGroupsResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListPermissionGroupsResponseTypeDef
+```
+
+Required fields:
+
+- `permissionGroups`:
+  `List`\[[PermissionGroupTypeDef](./type_defs.md#permissiongrouptypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listusersrequestrequesttypedef"></a>
+
+## ListUsersRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListUsersRequestRequestTypeDef
+```
+
+Required fields:
+
+- `maxResults`: `int`
+
+Optional fields:
+
+- `nextToken`: `str`
+
+<a id="listusersresponsetypedef"></a>
+
+## ListUsersResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ListUsersResponseTypeDef
+```
+
+Required fields:
+
+- `users`: `List`\[[UserTypeDef](./type_defs.md#usertypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
@@ -646,6 +929,55 @@ Optional fields:
 - `permissionGroupId`: `str`
 - `datasetPermissions`:
   `Sequence`\[[ResourcePermissionTypeDef](./type_defs.md#resourcepermissiontypedef)\]
+
+<a id="permissiongrouptypedef"></a>
+
+## PermissionGroupTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import PermissionGroupTypeDef
+```
+
+Optional fields:
+
+- `permissionGroupId`: `str`
+- `name`: `str`
+- `description`: `str`
+- `applicationPermissions`:
+  `List`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
+- `createTime`: `int`
+- `lastModifiedTime`: `int`
+
+<a id="resetuserpasswordrequestrequesttypedef"></a>
+
+## ResetUserPasswordRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ResetUserPasswordRequestRequestTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+
+Optional fields:
+
+- `clientToken`: `str`
+
+<a id="resetuserpasswordresponsetypedef"></a>
+
+## ResetUserPasswordResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import ResetUserPasswordResponseTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+- `temporaryPassword`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 <a id="resourcepermissiontypedef"></a>
 
@@ -770,3 +1102,96 @@ Required fields:
 - `datasetId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatepermissiongrouprequestrequesttypedef"></a>
+
+## UpdatePermissionGroupRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdatePermissionGroupRequestRequestTypeDef
+```
+
+Required fields:
+
+- `permissionGroupId`: `str`
+
+Optional fields:
+
+- `name`: `str`
+- `description`: `str`
+- `applicationPermissions`:
+  `Sequence`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
+- `clientToken`: `str`
+
+<a id="updatepermissiongroupresponsetypedef"></a>
+
+## UpdatePermissionGroupResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdatePermissionGroupResponseTypeDef
+```
+
+Required fields:
+
+- `permissionGroupId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateuserrequestrequesttypedef"></a>
+
+## UpdateUserRequestRequestTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdateUserRequestRequestTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+
+Optional fields:
+
+- `type`: [UserTypeType](./literals.md#usertypetype)
+- `firstName`: `str`
+- `lastName`: `str`
+- `apiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
+- `apiAccessPrincipalArn`: `str`
+- `clientToken`: `str`
+
+<a id="updateuserresponsetypedef"></a>
+
+## UpdateUserResponseTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UpdateUserResponseTypeDef
+```
+
+Required fields:
+
+- `userId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="usertypedef"></a>
+
+## UserTypeDef
+
+```python
+from mypy_boto3_finspace_data.type_defs import UserTypeDef
+```
+
+Optional fields:
+
+- `userId`: `str`
+- `status`: [UserStatusType](./literals.md#userstatustype)
+- `firstName`: `str`
+- `lastName`: `str`
+- `emailAddress`: `str`
+- `type`: [UserTypeType](./literals.md#usertypetype)
+- `apiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
+- `apiAccessPrincipalArn`: `str`
+- `createTime`: `int`
+- `lastEnabledTime`: `int`
+- `lastDisabledTime`: `int`
+- `lastModifiedTime`: `int`
+- `lastLoginTime`: `int`

@@ -136,6 +136,8 @@ Keyword-only arguments:
 - `targets`: `Mapping`\[`str`,
   [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
+- `logConfiguration`:
+  [CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef)
 
 Returns
 [CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
@@ -484,6 +486,8 @@ Keyword-only arguments:
 - `actions`: `Mapping`\[`str`,
   [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
 - `roleArn`: `str`
+- `logConfiguration`:
+  [UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef)
 
 Returns
 [UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef).

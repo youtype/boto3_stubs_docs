@@ -89,6 +89,10 @@ Required fields:
 - `RoutingControlState`:
   [RoutingControlStateType](./literals.md#routingcontrolstatetype)
 
+Optional fields:
+
+- `SafetyRulesToOverride`: `Sequence`\[`str`\]
+
 <a id="updateroutingcontrolstatesrequestrequesttypedef"></a>
 
 ## UpdateRoutingControlStatesRequestRequestTypeDef
@@ -101,3 +105,7 @@ Required fields:
 
 - `UpdateRoutingControlStateEntries`:
   `Sequence`\[[UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)\]
+
+Optional fields:
+
+- `SafetyRulesToOverride`: `Sequence`\[`str`\]

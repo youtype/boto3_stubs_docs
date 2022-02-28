@@ -122,6 +122,7 @@ from mypy_boto3_athena.client import AthenaClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_data_catalog](./client.md#update_data_catalog)
+- [update_named_query](./client.md#update_named_query)
 - [update_prepared_statement](./client.md#update_prepared_statement)
 - [update_work_group](./client.md#update_work_group)
 
@@ -280,6 +281,7 @@ from mypy_boto3_athena.type_defs import AthenaErrorTypeDef, ...
 - [UnprocessedQueryExecutionIdTypeDef](./type_defs.md#unprocessedqueryexecutionidtypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
 - [UpdateDataCatalogInputRequestTypeDef](./type_defs.md#updatedatacataloginputrequesttypedef)
+- [UpdateNamedQueryInputRequestTypeDef](./type_defs.md#updatenamedqueryinputrequesttypedef)
 - [UpdatePreparedStatementInputRequestTypeDef](./type_defs.md#updatepreparedstatementinputrequesttypedef)
 - [UpdateWorkGroupInputRequestTypeDef](./type_defs.md#updateworkgroupinputrequesttypedef)
 - [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)

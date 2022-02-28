@@ -3427,6 +3427,7 @@ Values:
 - `bootMode`
 - `description`
 - `kernel`
+- `lastLaunchedTime`
 - `launchPermission`
 - `productCodes`
 - `ramdisk`
@@ -5428,6 +5429,7 @@ Values:
 - `spot-fleet-request`
 - `spot-instances-request`
 - `subnet`
+- `subnet-cidr-reservation`
 - `traffic-mirror-filter`
 - `traffic-mirror-session`
 - `traffic-mirror-target`

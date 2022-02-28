@@ -90,6 +90,7 @@ type annotations stubs module
   - [UnprocessedQueryExecutionIdTypeDef](#unprocessedqueryexecutionidtypedef)
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
   - [UpdateDataCatalogInputRequestTypeDef](#updatedatacataloginputrequesttypedef)
+  - [UpdateNamedQueryInputRequestTypeDef](#updatenamedqueryinputrequesttypedef)
   - [UpdatePreparedStatementInputRequestTypeDef](#updatepreparedstatementinputrequesttypedef)
   - [UpdateWorkGroupInputRequestTypeDef](#updateworkgroupinputrequesttypedef)
   - [WorkGroupConfigurationTypeDef](#workgroupconfigurationtypedef)
@@ -1313,6 +1314,24 @@ Optional fields:
 
 - `Description`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
+
+<a id="updatenamedqueryinputrequesttypedef"></a>
+
+## UpdateNamedQueryInputRequestTypeDef
+
+```python
+from mypy_boto3_athena.type_defs import UpdateNamedQueryInputRequestTypeDef
+```
+
+Required fields:
+
+- `NamedQueryId`: `str`
+- `Name`: `str`
+- `QueryString`: `str`
+
+Optional fields:
+
+- `Description`: `str`
 
 <a id="updatepreparedstatementinputrequesttypedef"></a>
 

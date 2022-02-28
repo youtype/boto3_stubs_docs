@@ -15,6 +15,7 @@ type annotations stubs module
   - [ActionTargetTypeDef](#actiontargettypedef)
   - [ActionTypeDef](#actiontypedef)
   - [CreateExperimentTemplateActionInputTypeDef](#createexperimenttemplateactioninputtypedef)
+  - [CreateExperimentTemplateLogConfigurationInputTypeDef](#createexperimenttemplatelogconfigurationinputtypedef)
   - [CreateExperimentTemplateRequestRequestTypeDef](#createexperimenttemplaterequestrequesttypedef)
   - [CreateExperimentTemplateResponseTypeDef](#createexperimenttemplateresponsetypedef)
   - [CreateExperimentTemplateStopConditionInputTypeDef](#createexperimenttemplatestopconditioninputtypedef)
@@ -23,12 +24,20 @@ type annotations stubs module
   - [DeleteExperimentTemplateResponseTypeDef](#deleteexperimenttemplateresponsetypedef)
   - [ExperimentActionStateTypeDef](#experimentactionstatetypedef)
   - [ExperimentActionTypeDef](#experimentactiontypedef)
+  - [ExperimentCloudWatchLogsLogConfigurationTypeDef](#experimentcloudwatchlogslogconfigurationtypedef)
+  - [ExperimentLogConfigurationTypeDef](#experimentlogconfigurationtypedef)
+  - [ExperimentS3LogConfigurationTypeDef](#experiments3logconfigurationtypedef)
   - [ExperimentStateTypeDef](#experimentstatetypedef)
   - [ExperimentStopConditionTypeDef](#experimentstopconditiontypedef)
   - [ExperimentSummaryTypeDef](#experimentsummarytypedef)
   - [ExperimentTargetFilterTypeDef](#experimenttargetfiltertypedef)
   - [ExperimentTargetTypeDef](#experimenttargettypedef)
   - [ExperimentTemplateActionTypeDef](#experimenttemplateactiontypedef)
+  - [ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](#experimenttemplatecloudwatchlogslogconfigurationinputtypedef)
+  - [ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef](#experimenttemplatecloudwatchlogslogconfigurationtypedef)
+  - [ExperimentTemplateLogConfigurationTypeDef](#experimenttemplatelogconfigurationtypedef)
+  - [ExperimentTemplateS3LogConfigurationInputTypeDef](#experimenttemplates3logconfigurationinputtypedef)
+  - [ExperimentTemplateS3LogConfigurationTypeDef](#experimenttemplates3logconfigurationtypedef)
   - [ExperimentTemplateStopConditionTypeDef](#experimenttemplatestopconditiontypedef)
   - [ExperimentTemplateSummaryTypeDef](#experimenttemplatesummarytypedef)
   - [ExperimentTemplateTargetFilterTypeDef](#experimenttemplatetargetfiltertypedef)
@@ -65,6 +74,7 @@ type annotations stubs module
   - [TargetResourceTypeTypeDef](#targetresourcetypetypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateExperimentTemplateActionInputItemTypeDef](#updateexperimenttemplateactioninputitemtypedef)
+  - [UpdateExperimentTemplateLogConfigurationInputTypeDef](#updateexperimenttemplatelogconfigurationinputtypedef)
   - [UpdateExperimentTemplateRequestRequestTypeDef](#updateexperimenttemplaterequestrequesttypedef)
   - [UpdateExperimentTemplateResponseTypeDef](#updateexperimenttemplateresponsetypedef)
   - [UpdateExperimentTemplateStopConditionInputTypeDef](#updateexperimenttemplatestopconditioninputtypedef)
@@ -148,6 +158,25 @@ Optional fields:
 - `targets`: `Mapping`\[`str`, `str`\]
 - `startAfter`: `Sequence`\[`str`\]
 
+<a id="createexperimenttemplatelogconfigurationinputtypedef"></a>
+
+## CreateExperimentTemplateLogConfigurationInputTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import CreateExperimentTemplateLogConfigurationInputTypeDef
+```
+
+Required fields:
+
+- `logSchemaVersion`: `int`
+
+Optional fields:
+
+- `cloudWatchLogsConfiguration`:
+  [ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationinputtypedef)
+- `s3Configuration`:
+  [ExperimentTemplateS3LogConfigurationInputTypeDef](./type_defs.md#experimenttemplates3logconfigurationinputtypedef)
+
 <a id="createexperimenttemplaterequestrequesttypedef"></a>
 
 ## CreateExperimentTemplateRequestRequestTypeDef
@@ -171,6 +200,8 @@ Optional fields:
 - `targets`: `Mapping`\[`str`,
   [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
+- `logConfiguration`:
+  [CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef)
 
 <a id="createexperimenttemplateresponsetypedef"></a>
 
@@ -285,6 +316,47 @@ Optional fields:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 
+<a id="experimentcloudwatchlogslogconfigurationtypedef"></a>
+
+## ExperimentCloudWatchLogsLogConfigurationTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentCloudWatchLogsLogConfigurationTypeDef
+```
+
+Optional fields:
+
+- `logGroupArn`: `str`
+
+<a id="experimentlogconfigurationtypedef"></a>
+
+## ExperimentLogConfigurationTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentLogConfigurationTypeDef
+```
+
+Optional fields:
+
+- `cloudWatchLogsConfiguration`:
+  [ExperimentCloudWatchLogsLogConfigurationTypeDef](./type_defs.md#experimentcloudwatchlogslogconfigurationtypedef)
+- `s3Configuration`:
+  [ExperimentS3LogConfigurationTypeDef](./type_defs.md#experiments3logconfigurationtypedef)
+- `logSchemaVersion`: `int`
+
+<a id="experiments3logconfigurationtypedef"></a>
+
+## ExperimentS3LogConfigurationTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentS3LogConfigurationTypeDef
+```
+
+Optional fields:
+
+- `bucketName`: `str`
+- `prefix`: `str`
+
 <a id="experimentstatetypedef"></a>
 
 ## ExperimentStateTypeDef
@@ -373,6 +445,75 @@ Optional fields:
 - `parameters`: `Dict`\[`str`, `str`\]
 - `targets`: `Dict`\[`str`, `str`\]
 - `startAfter`: `List`\[`str`\]
+
+<a id="experimenttemplatecloudwatchlogslogconfigurationinputtypedef"></a>
+
+## ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef
+```
+
+Required fields:
+
+- `logGroupArn`: `str`
+
+<a id="experimenttemplatecloudwatchlogslogconfigurationtypedef"></a>
+
+## ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef
+```
+
+Optional fields:
+
+- `logGroupArn`: `str`
+
+<a id="experimenttemplatelogconfigurationtypedef"></a>
+
+## ExperimentTemplateLogConfigurationTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentTemplateLogConfigurationTypeDef
+```
+
+Optional fields:
+
+- `cloudWatchLogsConfiguration`:
+  [ExperimentTemplateCloudWatchLogsLogConfigurationTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationtypedef)
+- `s3Configuration`:
+  [ExperimentTemplateS3LogConfigurationTypeDef](./type_defs.md#experimenttemplates3logconfigurationtypedef)
+- `logSchemaVersion`: `int`
+
+<a id="experimenttemplates3logconfigurationinputtypedef"></a>
+
+## ExperimentTemplateS3LogConfigurationInputTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentTemplateS3LogConfigurationInputTypeDef
+```
+
+Required fields:
+
+- `bucketName`: `str`
+
+Optional fields:
+
+- `prefix`: `str`
+
+<a id="experimenttemplates3logconfigurationtypedef"></a>
+
+## ExperimentTemplateS3LogConfigurationTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import ExperimentTemplateS3LogConfigurationTypeDef
+```
+
+Optional fields:
+
+- `bucketName`: `str`
+- `prefix`: `str`
 
 <a id="experimenttemplatestopconditiontypedef"></a>
 
@@ -469,6 +610,8 @@ Optional fields:
 - `lastUpdateTime`: `datetime`
 - `roleArn`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
+- `logConfiguration`:
+  [ExperimentTemplateLogConfigurationTypeDef](./type_defs.md#experimenttemplatelogconfigurationtypedef)
 
 <a id="experimenttypedef"></a>
 
@@ -494,6 +637,8 @@ Optional fields:
 - `startTime`: `datetime`
 - `endTime`: `datetime`
 - `tags`: `Dict`\[`str`, `str`\]
+- `logConfiguration`:
+  [ExperimentLogConfigurationTypeDef](./type_defs.md#experimentlogconfigurationtypedef)
 
 <a id="getactionrequestrequesttypedef"></a>
 
@@ -902,6 +1047,22 @@ Optional fields:
 - `targets`: `Mapping`\[`str`, `str`\]
 - `startAfter`: `Sequence`\[`str`\]
 
+<a id="updateexperimenttemplatelogconfigurationinputtypedef"></a>
+
+## UpdateExperimentTemplateLogConfigurationInputTypeDef
+
+```python
+from mypy_boto3_fis.type_defs import UpdateExperimentTemplateLogConfigurationInputTypeDef
+```
+
+Optional fields:
+
+- `cloudWatchLogsConfiguration`:
+  [ExperimentTemplateCloudWatchLogsLogConfigurationInputTypeDef](./type_defs.md#experimenttemplatecloudwatchlogslogconfigurationinputtypedef)
+- `s3Configuration`:
+  [ExperimentTemplateS3LogConfigurationInputTypeDef](./type_defs.md#experimenttemplates3logconfigurationinputtypedef)
+- `logSchemaVersion`: `int`
+
 <a id="updateexperimenttemplaterequestrequesttypedef"></a>
 
 ## UpdateExperimentTemplateRequestRequestTypeDef
@@ -924,6 +1085,8 @@ Optional fields:
 - `actions`: `Mapping`\[`str`,
   [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
 - `roleArn`: `str`
+- `logConfiguration`:
+  [UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef)
 
 <a id="updateexperimenttemplateresponsetypedef"></a>
 
