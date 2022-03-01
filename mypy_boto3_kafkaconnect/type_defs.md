@@ -36,6 +36,8 @@ type annotations stubs module
   - [CustomPluginTypeDef](#customplugintypedef)
   - [DeleteConnectorRequestRequestTypeDef](#deleteconnectorrequestrequesttypedef)
   - [DeleteConnectorResponseTypeDef](#deleteconnectorresponsetypedef)
+  - [DeleteCustomPluginRequestRequestTypeDef](#deletecustompluginrequestrequesttypedef)
+  - [DeleteCustomPluginResponseTypeDef](#deletecustompluginresponsetypedef)
   - [DescribeConnectorRequestRequestTypeDef](#describeconnectorrequestrequesttypedef)
   - [DescribeConnectorResponseTypeDef](#describeconnectorresponsetypedef)
   - [DescribeCustomPluginRequestRequestTypeDef](#describecustompluginrequestrequesttypedef)
@@ -75,6 +77,7 @@ type annotations stubs module
   - [ScaleOutPolicyDescriptionTypeDef](#scaleoutpolicydescriptiontypedef)
   - [ScaleOutPolicyTypeDef](#scaleoutpolicytypedef)
   - [ScaleOutPolicyUpdateTypeDef](#scaleoutpolicyupdatetypedef)
+  - [StateDescriptionTypeDef](#statedescriptiontypedef)
   - [UpdateConnectorRequestRequestTypeDef](#updateconnectorrequestrequesttypedef)
   - [UpdateConnectorResponseTypeDef](#updateconnectorresponsetypedef)
   - [VpcDescriptionTypeDef](#vpcdescriptiontypedef)
@@ -527,6 +530,34 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="deletecustompluginrequestrequesttypedef"></a>
+
+## DeleteCustomPluginRequestRequestTypeDef
+
+```python
+from mypy_boto3_kafkaconnect.type_defs import DeleteCustomPluginRequestRequestTypeDef
+```
+
+Required fields:
+
+- `customPluginArn`: `str`
+
+<a id="deletecustompluginresponsetypedef"></a>
+
+## DeleteCustomPluginResponseTypeDef
+
+```python
+from mypy_boto3_kafkaconnect.type_defs import DeleteCustomPluginResponseTypeDef
+```
+
+Required fields:
+
+- `customPluginArn`: `str`
+- `customPluginState`:
+  [CustomPluginStateType](./literals.md#custompluginstatetype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="describeconnectorrequestrequesttypedef"></a>
 
 ## DescribeConnectorRequestRequestTypeDef
@@ -570,6 +601,8 @@ Required fields:
 - `plugins`:
   `List`\[[PluginDescriptionTypeDef](./type_defs.md#plugindescriptiontypedef)\]
 - `serviceExecutionRoleArn`: `str`
+- `stateDescription`:
+  [StateDescriptionTypeDef](./type_defs.md#statedescriptiontypedef)
 - `workerConfiguration`:
   [WorkerConfigurationDescriptionTypeDef](./type_defs.md#workerconfigurationdescriptiontypedef)
 - `ResponseMetadata`:
@@ -605,6 +638,8 @@ Required fields:
 - `latestRevision`:
   [CustomPluginRevisionSummaryTypeDef](./type_defs.md#custompluginrevisionsummarytypedef)
 - `name`: `str`
+- `stateDescription`:
+  [StateDescriptionTypeDef](./type_defs.md#statedescriptiontypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1087,6 +1122,19 @@ from mypy_boto3_kafkaconnect.type_defs import ScaleOutPolicyUpdateTypeDef
 Required fields:
 
 - `cpuUtilizationPercentage`: `int`
+
+<a id="statedescriptiontypedef"></a>
+
+## StateDescriptionTypeDef
+
+```python
+from mypy_boto3_kafkaconnect.type_defs import StateDescriptionTypeDef
+```
+
+Optional fields:
+
+- `code`: `str`
+- `message`: `str`
 
 <a id="updateconnectorrequestrequesttypedef"></a>
 

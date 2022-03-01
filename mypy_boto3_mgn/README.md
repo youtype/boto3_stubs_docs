@@ -164,9 +164,10 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_mgn.literals import ChangeServerLifeCycleStateSourceServerLifecycleStateType, ...
+from mypy_boto3_mgn.literals import BootModeType, ...
 ```
 
+- [BootModeType](./literals.md#bootmodetype)
 - [ChangeServerLifeCycleStateSourceServerLifecycleStateType](./literals.md#changeserverlifecyclestatesourceserverlifecyclestatetype)
 - [DataReplicationErrorStringType](./literals.md#datareplicationerrorstringtype)
 - [DataReplicationInitiationStepNameType](./literals.md#datareplicationinitiationstepnametype)

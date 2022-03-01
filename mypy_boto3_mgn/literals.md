@@ -10,6 +10,7 @@ type annotations stubs module
 [mypy-boto3-mgn](https://pypi.org/project/mypy-boto3-mgn/).
 
 - [Literals for boto3 mgn module](#literals-for-boto3-mgn-module)
+  - [BootModeType](#bootmodetype)
   - [ChangeServerLifeCycleStateSourceServerLifecycleStateType](#changeserverlifecyclestatesourceserverlifecyclestatetype)
   - [DataReplicationErrorStringType](#datareplicationerrorstringtype)
   - [DataReplicationInitiationStepNameType](#datareplicationinitiationstepnametype)
@@ -36,6 +37,19 @@ type annotations stubs module
   - [TargetInstanceTypeRightSizingMethodType](#targetinstancetyperightsizingmethodtype)
   - [ServiceName](#servicename)
   - [PaginatorName](#paginatorname)
+
+<a id="bootmodetype"></a>
+
+## BootModeType
+
+```python
+from mypy_boto3_mgn.literals import BootModeType
+```
+
+Values:
+
+- `LEGACY_BIOS`
+- `UEFI`
 
 <a id="changeserverlifecyclestatesourceserverlifecyclestatetype"></a>
 
@@ -356,6 +370,7 @@ from mypy_boto3_mgn.literals import ReplicationConfigurationDefaultLargeStagingD
 Values:
 
 - `GP2`
+- `GP3`
 - `ST1`
 
 <a id="replicationconfigurationebsencryptiontype"></a>
@@ -383,7 +398,9 @@ Values:
 
 - `AUTO`
 - `GP2`
+- `GP3`
 - `IO1`
+- `IO2`
 - `SC1`
 - `ST1`
 - `STANDARD`

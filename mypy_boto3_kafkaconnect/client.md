@@ -19,6 +19,7 @@ type annotations stubs module
     - [create_custom_plugin](#create_custom_plugin)
     - [create_worker_configuration](#create_worker_configuration)
     - [delete_connector](#delete_connector)
+    - [delete_custom_plugin](#delete_custom_plugin)
     - [describe_connector](#describe_connector)
     - [describe_custom_plugin](#describe_custom_plugin)
     - [describe_worker_configuration](#describe_worker_configuration)
@@ -221,6 +222,28 @@ Keyword-only arguments:
 
 Returns
 [DeleteConnectorResponseTypeDef](./type_defs.md#deleteconnectorresponsetypedef).
+
+<a id="delete\_custom\_plugin"></a>
+
+### delete_custom_plugin
+
+Deletes a custom plugin.
+
+Type annotations for `boto3.client("kafkaconnect").delete_custom_plugin`
+method.
+
+Boto3 documentation:
+[KafkaConnect.Client.delete_custom_plugin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kafkaconnect.html#KafkaConnect.Client.delete_custom_plugin)
+
+Arguments mapping described in
+[DeleteCustomPluginRequestRequestTypeDef](./type_defs.md#deletecustompluginrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `customPluginArn`: `str` *(required)*
+
+Returns
+[DeleteCustomPluginResponseTypeDef](./type_defs.md#deletecustompluginresponsetypedef).
 
 <a id="describe\_connector"></a>
 

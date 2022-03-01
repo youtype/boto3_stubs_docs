@@ -216,6 +216,7 @@ from mypy_boto3_mediapackage.literals import ProfileType
 Values:
 
 - `HBBTV_1_5`
+- `HYBRIDCAST`
 - `NONE`
 
 <a id="segmenttemplateformattype"></a>

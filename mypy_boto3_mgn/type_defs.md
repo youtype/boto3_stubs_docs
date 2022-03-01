@@ -618,6 +618,7 @@ from mypy_boto3_mgn.type_defs import LaunchConfigurationTypeDef
 
 Required fields:
 
+- `bootMode`: [BootModeType](./literals.md#bootmodetype)
 - `copyPrivateIp`: `bool`
 - `copyTags`: `bool`
 - `ec2LaunchTemplateID`: `str`
@@ -891,6 +892,7 @@ Optional fields:
 - `isBootDisk`: `bool`
 - `stagingDiskType`:
   [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
+- `throughput`: `int`
 
 <a id="replicationconfigurationtemplateresponsemetadatatypedef"></a>
 
@@ -1228,6 +1230,7 @@ Required fields:
 
 Optional fields:
 
+- `bootMode`: [BootModeType](./literals.md#bootmodetype)
 - `copyPrivateIp`: `bool`
 - `copyTags`: `bool`
 - `launchDisposition`:
