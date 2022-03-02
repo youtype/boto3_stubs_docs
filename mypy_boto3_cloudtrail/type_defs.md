@@ -934,6 +934,7 @@ Optional fields:
 
 - `EventsMatched`: `int`
 - `EventsScanned`: `int`
+- `BytesScanned`: `int`
 - `ExecutionTimeInMillis`: `int`
 - `CreationTime`: `datetime`
 
@@ -949,6 +950,7 @@ Optional fields:
 
 - `ResultsCount`: `int`
 - `TotalResultsCount`: `int`
+- `BytesScanned`: `int`
 
 <a id="querytypedef"></a>
 

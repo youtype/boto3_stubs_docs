@@ -21,6 +21,7 @@ type annotations stubs module
   - [ListTableMetadataPaginatorName](#listtablemetadatapaginatorname)
   - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
   - [QueryExecutionStateType](#queryexecutionstatetype)
+  - [S3AclOptionType](#s3acloptiontype)
   - [StatementTypeType](#statementtypetype)
   - [WorkGroupStateType](#workgroupstatetype)
   - [ServiceName](#servicename)
@@ -167,6 +168,18 @@ Values:
 - `QUEUED`
 - `RUNNING`
 - `SUCCEEDED`
+
+<a id="s3acloptiontype"></a>
+
+## S3AclOptionType
+
+```python
+from mypy_boto3_athena.literals import S3AclOptionType
+```
+
+Values:
+
+- `BUCKET_OWNER_FULL_CONTROL`
 
 <a id="statementtypetype"></a>
 
@@ -357,6 +370,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

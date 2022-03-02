@@ -203,7 +203,7 @@ Returns `bool`.
 ### cancel_query
 
 Cancels a query if the query is not in a terminated state, such as `CANCELLED`
-, `FAILED` or `FINISHED`.
+, `FAILED` , `TIMED_OUT` , or `FINISHED`.
 
 Type annotations for `boto3.client("cloudtrail").cancel_query` method.
 

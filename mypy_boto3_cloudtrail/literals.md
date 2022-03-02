@@ -144,6 +144,7 @@ Values:
 - `FINISHED`
 - `QUEUED`
 - `RUNNING`
+- `TIMED_OUT`
 
 <a id="readwritetypetype"></a>
 
@@ -321,6 +322,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

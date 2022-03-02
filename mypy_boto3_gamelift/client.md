@@ -967,8 +967,8 @@ Returns
 
 ### describe_ec2_instance_limits
 
-The GameLift service limits and current utilization for an Amazon Web Services
-Region or location.
+Retrieves the instance limits and current utilization for an Amazon Web
+Services Region or location.
 
 Type annotations for `boto3.client("gamelift").describe_ec2_instance_limits`
 method.

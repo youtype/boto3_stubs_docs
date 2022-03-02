@@ -10,6 +10,7 @@ type annotations stubs module
 [mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Typed dictionaries for boto3 Athena module](#typed-dictionaries-for-boto3-athena-module)
+  - [AclConfigurationTypeDef](#aclconfigurationtypedef)
   - [AthenaErrorTypeDef](#athenaerrortypedef)
   - [BatchGetNamedQueryInputRequestTypeDef](#batchgetnamedqueryinputrequesttypedef)
   - [BatchGetNamedQueryOutputTypeDef](#batchgetnamedqueryoutputtypedef)
@@ -97,6 +98,19 @@ type annotations stubs module
   - [WorkGroupConfigurationUpdatesTypeDef](#workgroupconfigurationupdatestypedef)
   - [WorkGroupSummaryTypeDef](#workgroupsummarytypedef)
   - [WorkGroupTypeDef](#workgrouptypedef)
+
+<a id="aclconfigurationtypedef"></a>
+
+## AclConfigurationTypeDef
+
+```python
+from mypy_boto3_athena.type_defs import AclConfigurationTypeDef
+```
+
+Required fields:
+
+- `S3AclOption`: `Literal['BUCKET_OWNER_FULL_CONTROL']` (see
+  [S3AclOptionType](./literals.md#s3acloptiontype))
 
 <a id="athenaerrortypedef"></a>
 
@@ -1105,6 +1119,8 @@ Optional fields:
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
+- `AclConfiguration`:
+  [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
 
 <a id="resultconfigurationupdatestypedef"></a>
 
@@ -1123,6 +1139,9 @@ Optional fields:
 - `RemoveEncryptionConfiguration`: `bool`
 - `ExpectedBucketOwner`: `str`
 - `RemoveExpectedBucketOwner`: `bool`
+- `AclConfiguration`:
+  [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
+- `RemoveAclConfiguration`: `bool`
 
 <a id="resultsetmetadatatypedef"></a>
 

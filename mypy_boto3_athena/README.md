@@ -183,6 +183,7 @@ from mypy_boto3_athena.literals import ColumnNullableType, ...
 - [ListTableMetadataPaginatorName](./literals.md#listtablemetadatapaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
 - [QueryExecutionStateType](./literals.md#queryexecutionstatetype)
+- [S3AclOptionType](./literals.md#s3acloptiontype)
 - [StatementTypeType](./literals.md#statementtypetype)
 - [WorkGroupStateType](./literals.md#workgroupstatetype)
 - [ServiceName](./literals.md#servicename)
@@ -198,9 +199,10 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_athena.type_defs import AthenaErrorTypeDef, ...
+from mypy_boto3_athena.type_defs import AclConfigurationTypeDef, ...
 ```
 
+- [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
 - [AthenaErrorTypeDef](./type_defs.md#athenaerrortypedef)
 - [BatchGetNamedQueryInputRequestTypeDef](./type_defs.md#batchgetnamedqueryinputrequesttypedef)
 - [BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef)
