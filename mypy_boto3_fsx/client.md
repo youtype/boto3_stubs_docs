@@ -451,8 +451,7 @@ Returns
 
 ### create_volume
 
-Creates an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS storage
-volume.
+Creates an FSx for ONTAP or Amazon FSx for OpenZFS storage volume.
 
 Type annotations for `boto3.client("fsx").create_volume` method.
 

@@ -276,6 +276,7 @@ from mypy_boto3_appflow.type_defs import AggregationConfigTypeDef, ...
 - [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MarketoConnectorProfileCredentialsTypeDef](./type_defs.md#marketoconnectorprofilecredentialstypedef)
 - [MarketoConnectorProfilePropertiesTypeDef](./type_defs.md#marketoconnectorprofilepropertiestypedef)
+- [MarketoDestinationPropertiesTypeDef](./type_defs.md#marketodestinationpropertiestypedef)
 - [MarketoSourcePropertiesTypeDef](./type_defs.md#marketosourcepropertiestypedef)
 - [OAuth2CredentialsTypeDef](./type_defs.md#oauth2credentialstypedef)
 - [OAuth2DefaultsTypeDef](./type_defs.md#oauth2defaultstypedef)

@@ -1237,6 +1237,8 @@ Keyword-only arguments:
   [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
+- `SpellCorrectionConfiguration`:
+  [SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef)
 
 Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
 

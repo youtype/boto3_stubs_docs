@@ -93,6 +93,7 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MarketoConnectorProfileCredentialsTypeDef](#marketoconnectorprofilecredentialstypedef)
   - [MarketoConnectorProfilePropertiesTypeDef](#marketoconnectorprofilepropertiestypedef)
+  - [MarketoDestinationPropertiesTypeDef](#marketodestinationpropertiestypedef)
   - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
   - [OAuth2CredentialsTypeDef](#oauth2credentialstypedef)
   - [OAuth2DefaultsTypeDef](#oauth2defaultstypedef)
@@ -1129,6 +1130,8 @@ Optional fields:
   [CustomerProfilesDestinationPropertiesTypeDef](./type_defs.md#customerprofilesdestinationpropertiestypedef)
 - `Zendesk`:
   [ZendeskDestinationPropertiesTypeDef](./type_defs.md#zendeskdestinationpropertiestypedef)
+- `Marketo`:
+  [MarketoDestinationPropertiesTypeDef](./type_defs.md#marketodestinationpropertiestypedef)
 - `CustomConnector`:
   [CustomConnectorDestinationPropertiesTypeDef](./type_defs.md#customconnectordestinationpropertiestypedef)
 - `SAPOData`:
@@ -1644,6 +1647,23 @@ from mypy_boto3_appflow.type_defs import MarketoConnectorProfilePropertiesTypeDe
 Required fields:
 
 - `instanceUrl`: `str`
+
+<a id="marketodestinationpropertiestypedef"></a>
+
+## MarketoDestinationPropertiesTypeDef
+
+```python
+from mypy_boto3_appflow.type_defs import MarketoDestinationPropertiesTypeDef
+```
+
+Required fields:
+
+- `object`: `str`
+
+Optional fields:
+
+- `errorHandlingConfig`:
+  [ErrorHandlingConfigTypeDef](./type_defs.md#errorhandlingconfigtypedef)
 
 <a id="marketosourcepropertiestypedef"></a>
 

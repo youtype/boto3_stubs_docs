@@ -45,6 +45,7 @@ type annotations stubs module
   - [ConfluenceSpaceToIndexFieldMappingTypeDef](#confluencespacetoindexfieldmappingtypedef)
   - [ConnectionConfigurationTypeDef](#connectionconfigurationtypedef)
   - [ContentSourceConfigurationTypeDef](#contentsourceconfigurationtypedef)
+  - [CorrectionTypeDef](#correctiontypedef)
   - [CreateDataSourceRequestRequestTypeDef](#createdatasourcerequestrequesttypedef)
   - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
   - [CreateExperienceRequestRequestTypeDef](#createexperiencerequestrequesttypedef)
@@ -189,6 +190,8 @@ type annotations stubs module
   - [SharePointConfigurationTypeDef](#sharepointconfigurationtypedef)
   - [SiteMapsConfigurationTypeDef](#sitemapsconfigurationtypedef)
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
+  - [SpellCorrectedQueryTypeDef](#spellcorrectedquerytypedef)
+  - [SpellCorrectionConfigurationTypeDef](#spellcorrectionconfigurationtypedef)
   - [SqlConfigurationTypeDef](#sqlconfigurationtypedef)
   - [StartDataSourceSyncJobRequestRequestTypeDef](#startdatasourcesyncjobrequestrequesttypedef)
   - [StartDataSourceSyncJobResponseTypeDef](#startdatasourcesyncjobresponsetypedef)
@@ -763,6 +766,21 @@ Optional fields:
 - `DataSourceIds`: `Sequence`\[`str`\]
 - `FaqIds`: `Sequence`\[`str`\]
 - `DirectPutContent`: `bool`
+
+<a id="correctiontypedef"></a>
+
+## CorrectionTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CorrectionTypeDef
+```
+
+Optional fields:
+
+- `BeginOffset`: `int`
+- `EndOffset`: `int`
+- `Term`: `str`
+- `CorrectedTerm`: `str`
 
 <a id="createdatasourcerequestrequesttypedef"></a>
 
@@ -2800,6 +2818,8 @@ Optional fields:
   [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
+- `SpellCorrectionConfiguration`:
+  [SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef)
 
 <a id="queryresultitemtypedef"></a>
 
@@ -2844,6 +2864,8 @@ Required fields:
   `List`\[[FacetResultTypeDef](./type_defs.md#facetresulttypedef)\]
 - `TotalNumberOfResults`: `int`
 - `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
+- `SpellCorrectedQueries`:
+  `List`\[[SpellCorrectedQueryTypeDef](./type_defs.md#spellcorrectedquerytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3258,6 +3280,32 @@ Required fields:
 
 - `DocumentAttributeKey`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="spellcorrectedquerytypedef"></a>
+
+## SpellCorrectedQueryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SpellCorrectedQueryTypeDef
+```
+
+Optional fields:
+
+- `SuggestedQueryText`: `str`
+- `Corrections`:
+  `List`\[[CorrectionTypeDef](./type_defs.md#correctiontypedef)\]
+
+<a id="spellcorrectionconfigurationtypedef"></a>
+
+## SpellCorrectionConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SpellCorrectionConfigurationTypeDef
+```
+
+Required fields:
+
+- `IncludeQuerySpellCheckSuggestions`: `bool`
 
 <a id="sqlconfigurationtypedef"></a>
 
