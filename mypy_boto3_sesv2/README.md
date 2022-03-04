@@ -225,7 +225,9 @@ from mypy_boto3_sesv2.literals import BehaviorOnMxFailureType, ...
 - [SuppressionListReasonType](./literals.md#suppressionlistreasontype)
 - [TlsPolicyType](./literals.md#tlspolicytype)
 - [WarmupStatusType](./literals.md#warmupstatustype)
+- [SESV2ServiceName](./literals.md#sesv2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -154,7 +154,9 @@ from mypy_boto3_autoscaling_plans.literals import DescribeScalingPlanResourcesPa
 - [ScalingPolicyUpdateBehaviorType](./literals.md#scalingpolicyupdatebehaviortype)
 - [ScalingStatusCodeType](./literals.md#scalingstatuscodetype)
 - [ServiceNamespaceType](./literals.md#servicenamespacetype)
+- [AutoScalingPlansServiceName](./literals.md#autoscalingplansservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

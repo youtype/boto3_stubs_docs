@@ -30,7 +30,9 @@ type annotations stubs module
   - [ServiceFilterNameType](#servicefilternametype)
   - [ServiceTypeOptionType](#servicetypeoptiontype)
   - [ServiceTypeType](#servicetypetype)
+  - [ServiceDiscoveryServiceName](#servicediscoveryservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="customhealthstatustype"></a>
@@ -304,6 +306,18 @@ Values:
 - `DNS`
 - `DNS_HTTP`
 - `HTTP`
+
+<a id="servicediscoveryservicename"></a>
+
+## ServiceDiscoveryServiceName
+
+```python
+from mypy_boto3_servicediscovery.literals import ServiceDiscoveryServiceName
+```
+
+Values:
+
+- `servicediscovery`
 
 <a id="servicename"></a>
 
@@ -615,6 +629,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_servicediscovery.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

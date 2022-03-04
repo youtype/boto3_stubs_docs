@@ -36,7 +36,9 @@ type annotations stubs module
   - [SecurityPolicyType](#securitypolicytype)
   - [VpcLinkStatusType](#vpclinkstatustype)
   - [VpcLinkVersionType](#vpclinkversiontype)
+  - [ApiGatewayV2ServiceName](#apigatewayv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="authorizationtypetype"></a>
@@ -378,6 +380,18 @@ Values:
 
 - `V2`
 
+<a id="apigatewayv2servicename"></a>
+
+## ApiGatewayV2ServiceName
+
+```python
+from mypy_boto3_apigatewayv2.literals import ApiGatewayV2ServiceName
+```
+
+Values:
+
+- `apigatewayv2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -688,6 +702,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_apigatewayv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -219,7 +219,9 @@ from mypy_boto3_lex_models.literals import ChannelStatusType, ...
 - [SortOrderType](./literals.md#sortordertype)
 - [StatusType](./literals.md#statustype)
 - [StatusTypeType](./literals.md#statustypetype)
+- [LexModelBuildingServiceServiceName](./literals.md#lexmodelbuildingserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -34,7 +34,9 @@ type annotations stubs module
   - [ServerValidationStrategyType](#servervalidationstrategytype)
   - [ValidationStatusType](#validationstatustype)
   - [VmManagerTypeType](#vmmanagertypetype)
+  - [SMSServiceName](#smsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="applaunchconfigurationstatustype"></a>
@@ -393,6 +395,18 @@ Values:
 - `SCVMM`
 - `VSPHERE`
 
+<a id="smsservicename"></a>
+
+## SMSServiceName
+
+```python
+from mypy_boto3_sms.literals import SMSServiceName
+```
+
+Values:
+
+- `sms`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -703,6 +717,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sms.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

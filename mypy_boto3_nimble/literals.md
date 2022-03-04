@@ -57,7 +57,9 @@ type annotations stubs module
   - [StudioReadyWaiterName](#studioreadywaitername)
   - [StudioStateType](#studiostatetype)
   - [StudioStatusCodeType](#studiostatuscodetype)
+  - [NimbleStudioServiceName](#nimblestudioservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -763,6 +765,18 @@ Values:
 - `STUDIO_WITH_STREAMING_IMAGES_NOT_DELETED`
 - `STUDIO_WITH_STUDIO_COMPONENTS_NOT_DELETED`
 
+<a id="nimblestudioservicename"></a>
+
+## NimbleStudioServiceName
+
+```python
+from mypy_boto3_nimble.literals import NimbleStudioServiceName
+```
+
+Values:
+
+- `nimble`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1073,6 +1087,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_nimble.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

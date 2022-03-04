@@ -151,7 +151,9 @@ from mypy_boto3_cloudsearch.literals import AlgorithmicStemmingType, ...
 - [PartitionInstanceTypeType](./literals.md#partitioninstancetypetype)
 - [SuggesterFuzzyMatchingType](./literals.md#suggesterfuzzymatchingtype)
 - [TLSSecurityPolicyType](./literals.md#tlssecuritypolicytype)
+- [CloudSearchServiceName](./literals.md#cloudsearchservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

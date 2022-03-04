@@ -15,7 +15,9 @@ type annotations stubs module
   - [ShardIteratorTypeType](#sharditeratortypetype)
   - [StreamStatusType](#streamstatustype)
   - [StreamViewTypeType](#streamviewtypetype)
+  - [DynamoDBStreamsServiceName](#dynamodbstreamsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="keytypetype"></a>
 
@@ -88,6 +90,18 @@ Values:
 - `NEW_AND_OLD_IMAGES`
 - `NEW_IMAGE`
 - `OLD_IMAGE`
+
+<a id="dynamodbstreamsservicename"></a>
+
+## DynamoDBStreamsServiceName
+
+```python
+from mypy_boto3_dynamodbstreams.literals import DynamoDBStreamsServiceName
+```
+
+Values:
+
+- `dynamodbstreams`
 
 <a id="servicename"></a>
 
@@ -399,3 +413,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_dynamodbstreams.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

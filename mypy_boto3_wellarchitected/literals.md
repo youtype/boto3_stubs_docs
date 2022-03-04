@@ -26,7 +26,9 @@ type annotations stubs module
   - [ShareStatusType](#sharestatustype)
   - [WorkloadEnvironmentType](#workloadenvironmenttype)
   - [WorkloadImprovementStatusType](#workloadimprovementstatustype)
+  - [WellArchitectedServiceName](#wellarchitectedservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="answerreasontype"></a>
 
@@ -258,6 +260,18 @@ Values:
 - `NOT_APPLICABLE`
 - `NOT_STARTED`
 - `RISK_ACKNOWLEDGED`
+
+<a id="wellarchitectedservicename"></a>
+
+## WellArchitectedServiceName
+
+```python
+from mypy_boto3_wellarchitected.literals import WellArchitectedServiceName
+```
+
+Values:
+
+- `wellarchitected`
 
 <a id="servicename"></a>
 
@@ -569,3 +583,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_wellarchitected.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

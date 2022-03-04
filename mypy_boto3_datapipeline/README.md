@@ -158,7 +158,9 @@ from mypy_boto3_datapipeline.literals import DescribeObjectsPaginatorName, ...
 - [OperatorTypeType](./literals.md#operatortypetype)
 - [QueryObjectsPaginatorName](./literals.md#queryobjectspaginatorname)
 - [TaskStatusType](./literals.md#taskstatustype)
+- [DataPipelineServiceName](./literals.md#datapipelineservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -151,7 +151,9 @@ from mypy_boto3_iot1click_projects.literals import ListPlacementsPaginatorName, 
 
 - [ListPlacementsPaginatorName](./literals.md#listplacementspaginatorname)
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
+- [IoT1ClickProjectsServiceName](./literals.md#iot1clickprojectsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

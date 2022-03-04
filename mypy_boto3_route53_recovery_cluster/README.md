@@ -121,7 +121,9 @@ from mypy_boto3_route53_recovery_cluster.literals import RoutingControlStateType
 ```
 
 - [RoutingControlStateType](./literals.md#routingcontrolstatetype)
+- [Route53RecoveryClusterServiceName](./literals.md#route53recoveryclusterservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

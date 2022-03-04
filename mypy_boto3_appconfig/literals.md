@@ -17,7 +17,9 @@ type annotations stubs module
   - [ReplicateToType](#replicatetotype)
   - [TriggeredByType](#triggeredbytype)
   - [ValidatorTypeType](#validatortypetype)
+  - [AppConfigServiceName](#appconfigservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="deploymenteventtypetype"></a>
 
@@ -121,6 +123,18 @@ Values:
 
 - `JSON_SCHEMA`
 - `LAMBDA`
+
+<a id="appconfigservicename"></a>
+
+## AppConfigServiceName
+
+```python
+from mypy_boto3_appconfig.literals import AppConfigServiceName
+```
+
+Values:
+
+- `appconfig`
 
 <a id="servicename"></a>
 
@@ -432,3 +446,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_appconfig.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

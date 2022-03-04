@@ -137,7 +137,9 @@ from mypy_boto3_sso.literals import ListAccountRolesPaginatorName, ...
 
 - [ListAccountRolesPaginatorName](./literals.md#listaccountrolespaginatorname)
 - [ListAccountsPaginatorName](./literals.md#listaccountspaginatorname)
+- [SSOServiceName](./literals.md#ssoservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

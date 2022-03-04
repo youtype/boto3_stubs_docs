@@ -168,7 +168,9 @@ from mypy_boto3_panorama.literals import ApplicationInstanceHealthStatusType, ..
 - [StatusFilterType](./literals.md#statusfiltertype)
 - [TemplateTypeType](./literals.md#templatetypetype)
 - [UpdateProgressType](./literals.md#updateprogresstype)
+- [PanoramaServiceName](./literals.md#panoramaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

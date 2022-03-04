@@ -69,7 +69,9 @@ type annotations stubs module
   - [ScalingStatusTypeType](#scalingstatustypetype)
   - [SearchGameSessionsPaginatorName](#searchgamesessionspaginatorname)
   - [SortOrderType](#sortordertype)
+  - [GameLiftServiceName](#gameliftservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="acceptancetypetype"></a>
@@ -1061,6 +1063,18 @@ Values:
 - `ASCENDING`
 - `DESCENDING`
 
+<a id="gameliftservicename"></a>
+
+## GameLiftServiceName
+
+```python
+from mypy_boto3_gamelift.literals import GameLiftServiceName
+```
+
+Values:
+
+- `gamelift`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1371,6 +1385,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_gamelift.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

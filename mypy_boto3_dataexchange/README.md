@@ -180,7 +180,9 @@ from mypy_boto3_dataexchange.literals import AssetTypeType, ...
 - [ServerSideEncryptionTypesType](./literals.md#serversideencryptiontypestype)
 - [StateType](./literals.md#statetype)
 - [TypeType](./literals.md#typetype)
+- [DataExchangeServiceName](./literals.md#dataexchangeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

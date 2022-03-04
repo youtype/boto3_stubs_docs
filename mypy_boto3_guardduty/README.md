@@ -218,7 +218,9 @@ from mypy_boto3_guardduty.literals import AdminStatusType, ...
 - [ThreatIntelSetFormatType](./literals.md#threatintelsetformattype)
 - [ThreatIntelSetStatusType](./literals.md#threatintelsetstatustype)
 - [UsageStatisticTypeType](./literals.md#usagestatistictypetype)
+- [GuardDutyServiceName](./literals.md#guarddutyservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

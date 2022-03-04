@@ -157,7 +157,9 @@ from mypy_boto3_keyspaces.literals import EncryptionTypeType, ...
 - [TableStatusType](./literals.md#tablestatustype)
 - [ThroughputModeType](./literals.md#throughputmodetype)
 - [TimeToLiveStatusType](./literals.md#timetolivestatustype)
+- [KeyspacesServiceName](./literals.md#keyspacesservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

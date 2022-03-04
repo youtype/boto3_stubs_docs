@@ -18,7 +18,9 @@ type annotations stubs module
   - [DescribeClustersPaginatorName](#describeclusterspaginatorname)
   - [HsmStateType](#hsmstatetype)
   - [ListTagsPaginatorName](#listtagspaginatorname)
+  - [CloudHSMV2ServiceName](#cloudhsmv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="backuppolicytype"></a>
@@ -131,6 +133,18 @@ from mypy_boto3_cloudhsmv2.literals import ListTagsPaginatorName
 Values:
 
 - `list_tags`
+
+<a id="cloudhsmv2servicename"></a>
+
+## CloudHSMV2ServiceName
+
+```python
+from mypy_boto3_cloudhsmv2.literals import CloudHSMV2ServiceName
+```
+
+Values:
+
+- `cloudhsmv2`
 
 <a id="servicename"></a>
 
@@ -442,6 +456,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudhsmv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

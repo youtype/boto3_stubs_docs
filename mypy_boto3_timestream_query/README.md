@@ -161,7 +161,9 @@ from mypy_boto3_timestream_query.literals import DimensionValueTypeType, ...
 - [ScalarTypeType](./literals.md#scalartypetype)
 - [ScheduledQueryRunStatusType](./literals.md#scheduledqueryrunstatustype)
 - [ScheduledQueryStateType](./literals.md#scheduledquerystatetype)
+- [TimestreamQueryServiceName](./literals.md#timestreamqueryservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

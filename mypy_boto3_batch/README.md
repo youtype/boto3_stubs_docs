@@ -179,7 +179,9 @@ from mypy_boto3_batch.literals import ArrayJobDependencyType, ...
 - [PlatformCapabilityType](./literals.md#platformcapabilitytype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [RetryActionType](./literals.md#retryactiontype)
+- [BatchServiceName](./literals.md#batchservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

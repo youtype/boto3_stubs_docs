@@ -236,7 +236,9 @@ from mypy_boto3_workdocs.literals import ActivityTypeType, ...
 - [UserSortTypeType](./literals.md#usersorttypetype)
 - [UserStatusTypeType](./literals.md#userstatustypetype)
 - [UserTypeType](./literals.md#usertypetype)
+- [WorkDocsServiceName](./literals.md#workdocsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

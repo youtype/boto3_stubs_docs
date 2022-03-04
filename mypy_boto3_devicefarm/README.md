@@ -283,7 +283,9 @@ from mypy_boto3_devicefarm.literals import ArtifactCategoryType, ...
 - [UploadCategoryType](./literals.md#uploadcategorytype)
 - [UploadStatusType](./literals.md#uploadstatustype)
 - [UploadTypeType](./literals.md#uploadtypetype)
+- [DeviceFarmServiceName](./literals.md#devicefarmservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

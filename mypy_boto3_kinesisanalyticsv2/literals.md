@@ -25,7 +25,9 @@ type annotations stubs module
   - [RuntimeEnvironmentType](#runtimeenvironmenttype)
   - [SnapshotStatusType](#snapshotstatustype)
   - [UrlTypeType](#urltypetype)
+  - [KinesisAnalyticsV2ServiceName](#kinesisanalyticsv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="applicationmodetype"></a>
@@ -242,6 +244,18 @@ Values:
 
 - `FLINK_DASHBOARD_URL`
 - `ZEPPELIN_UI_URL`
+
+<a id="kinesisanalyticsv2servicename"></a>
+
+## KinesisAnalyticsV2ServiceName
+
+```python
+from mypy_boto3_kinesisanalyticsv2.literals import KinesisAnalyticsV2ServiceName
+```
+
+Values:
+
+- `kinesisanalyticsv2`
 
 <a id="servicename"></a>
 
@@ -553,6 +567,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kinesisanalyticsv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

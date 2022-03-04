@@ -20,7 +20,9 @@ type annotations stubs module
   - [ResourceTypeValuesType](#resourcetypevaluestype)
   - [RetentionIntervalUnitValuesType](#retentionintervalunitvaluestype)
   - [SettablePolicyStateValuesType](#settablepolicystatevaluestype)
+  - [DLMServiceName](#dlmservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="eventsourcevaluestype"></a>
 
@@ -152,6 +154,18 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="dlmservicename"></a>
+
+## DLMServiceName
+
+```python
+from mypy_boto3_dlm.literals import DLMServiceName
+```
+
+Values:
+
+- `dlm`
 
 <a id="servicename"></a>
 
@@ -463,3 +477,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_dlm.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -16,7 +16,9 @@ type annotations stubs module
   - [UnitType](#unittype)
   - [UpdateStatusType](#updatestatustype)
   - [WebserverAccessModeType](#webserveraccessmodetype)
+  - [MWAAServiceName](#mwaaservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="environmentstatustype"></a>
@@ -130,6 +132,18 @@ Values:
 
 - `PRIVATE_ONLY`
 - `PUBLIC_ONLY`
+
+<a id="mwaaservicename"></a>
+
+## MWAAServiceName
+
+```python
+from mypy_boto3_mwaa.literals import MWAAServiceName
+```
+
+Values:
+
+- `mwaa`
 
 <a id="servicename"></a>
 
@@ -441,6 +455,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mwaa.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

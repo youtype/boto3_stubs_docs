@@ -32,7 +32,9 @@ type annotations stubs module
   - [StopScopeType](#stopscopetype)
   - [TlsPolicyType](#tlspolicytype)
   - [VerificationStatusType](#verificationstatustype)
+  - [SESServiceName](#sesservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -349,6 +351,18 @@ Values:
 - `Success`
 - `TemporaryFailure`
 
+<a id="sesservicename"></a>
+
+## SESServiceName
+
+```python
+from mypy_boto3_ses.literals import SESServiceName
+```
+
+Values:
+
+- `ses`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -659,6 +673,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ses.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

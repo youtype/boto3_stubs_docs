@@ -44,7 +44,9 @@ type annotations stubs module
   - [ScalingActivityStatusCodeType](#scalingactivitystatuscodetype)
   - [WarmPoolStateType](#warmpoolstatetype)
   - [WarmPoolStatusType](#warmpoolstatustype)
+  - [AutoScalingServiceName](#autoscalingservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="acceleratormanufacturertype"></a>
@@ -536,6 +538,18 @@ Values:
 
 - `PendingDelete`
 
+<a id="autoscalingservicename"></a>
+
+## AutoScalingServiceName
+
+```python
+from mypy_boto3_autoscaling.literals import AutoScalingServiceName
+```
+
+Values:
+
+- `autoscaling`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -846,6 +860,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_autoscaling.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

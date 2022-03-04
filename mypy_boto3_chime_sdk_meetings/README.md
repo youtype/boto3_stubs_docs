@@ -140,7 +140,9 @@ from mypy_boto3_chime_sdk_meetings.literals import MeetingFeatureStatusType, ...
 - [TranscribePartialResultsStabilityType](./literals.md#transcribepartialresultsstabilitytype)
 - [TranscribeRegionType](./literals.md#transcriberegiontype)
 - [TranscribeVocabularyFilterMethodType](./literals.md#transcribevocabularyfiltermethodtype)
+- [ChimeSDKMeetingsServiceName](./literals.md#chimesdkmeetingsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

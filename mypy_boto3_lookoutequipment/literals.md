@@ -17,7 +17,9 @@ type annotations stubs module
   - [IngestionJobStatusType](#ingestionjobstatustype)
   - [ModelStatusType](#modelstatustype)
   - [TargetSamplingRateType](#targetsamplingratetype)
+  - [LookoutEquipmentServiceName](#lookoutequipmentservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="datauploadfrequencytype"></a>
 
@@ -127,6 +129,18 @@ Values:
 - `PT30S`
 - `PT5M`
 - `PT5S`
+
+<a id="lookoutequipmentservicename"></a>
+
+## LookoutEquipmentServiceName
+
+```python
+from mypy_boto3_lookoutequipment.literals import LookoutEquipmentServiceName
+```
+
+Values:
+
+- `lookoutequipment`
 
 <a id="servicename"></a>
 
@@ -438,3 +452,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lookoutequipment.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

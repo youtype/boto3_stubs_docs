@@ -119,10 +119,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_ec2_instance_connect.literals import ServiceName, ...
+from mypy_boto3_ec2_instance_connect.literals import EC2InstanceConnectServiceName, ...
 ```
 
+- [EC2InstanceConnectServiceName](./literals.md#ec2instanceconnectservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

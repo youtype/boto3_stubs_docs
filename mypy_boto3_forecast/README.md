@@ -203,7 +203,9 @@ from mypy_boto3_forecast.literals import AttributeTypeType, ...
 - [StateType](./literals.md#statetype)
 - [TimePointGranularityType](./literals.md#timepointgranularitytype)
 - [TimeSeriesGranularityType](./literals.md#timeseriesgranularitytype)
+- [ForecastServiceServiceName](./literals.md#forecastserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

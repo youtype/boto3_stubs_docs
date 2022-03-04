@@ -213,7 +213,9 @@ from mypy_boto3_es.literals import AutoTuneDesiredStateType, ...
 - [UpgradeStatusType](./literals.md#upgradestatustype)
 - [UpgradeStepType](./literals.md#upgradesteptype)
 - [VolumeTypeType](./literals.md#volumetypetype)
+- [ElasticsearchServiceServiceName](./literals.md#elasticsearchserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 IoTDeviceAdvisor module](#literals-for-boto3-iotdeviceadvisor-module)
   - [StatusType](#statustype)
   - [SuiteRunStatusType](#suiterunstatustype)
+  - [IoTDeviceAdvisorServiceName](#iotdeviceadvisorservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="statustype"></a>
 
@@ -53,6 +55,18 @@ Values:
 - `RUNNING`
 - `STOPPED`
 - `STOPPING`
+
+<a id="iotdeviceadvisorservicename"></a>
+
+## IoTDeviceAdvisorServiceName
+
+```python
+from mypy_boto3_iotdeviceadvisor.literals import IoTDeviceAdvisorServiceName
+```
+
+Values:
+
+- `iotdeviceadvisor`
 
 <a id="servicename"></a>
 
@@ -364,3 +378,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotdeviceadvisor.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

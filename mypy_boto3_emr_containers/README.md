@@ -156,7 +156,9 @@ from mypy_boto3_emr_containers.literals import ContainerProviderTypeType, ...
 - [ListVirtualClustersPaginatorName](./literals.md#listvirtualclusterspaginatorname)
 - [PersistentAppUIType](./literals.md#persistentappuitype)
 - [VirtualClusterStateType](./literals.md#virtualclusterstatetype)
+- [EMRContainersServiceName](./literals.md#emrcontainersservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

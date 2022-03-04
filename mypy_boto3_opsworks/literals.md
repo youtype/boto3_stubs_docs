@@ -32,7 +32,9 @@ type annotations stubs module
   - [StackAttributesKeysType](#stackattributeskeystype)
   - [VirtualizationTypeType](#virtualizationtypetype)
   - [VolumeTypeType](#volumetypetype)
+  - [OpsWorksServiceName](#opsworksservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -457,6 +459,18 @@ Values:
 - `io1`
 - `standard`
 
+<a id="opsworksservicename"></a>
+
+## OpsWorksServiceName
+
+```python
+from mypy_boto3_opsworks.literals import OpsWorksServiceName
+```
+
+Values:
+
+- `opsworks`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -767,6 +781,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_opsworks.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

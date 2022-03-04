@@ -45,7 +45,9 @@ type annotations stubs module
   - [UserSortTypeType](#usersorttypetype)
   - [UserStatusTypeType](#userstatustypetype)
   - [UserTypeType](#usertypetype)
+  - [WorkDocsServiceName](#workdocsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="activitytypetype"></a>
@@ -547,6 +549,18 @@ Values:
 - `USER`
 - `WORKSPACESUSER`
 
+<a id="workdocsservicename"></a>
+
+## WorkDocsServiceName
+
+```python
+from mypy_boto3_workdocs.literals import WorkDocsServiceName
+```
+
+Values:
+
+- `workdocs`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -857,6 +871,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_workdocs.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -35,7 +35,9 @@ type annotations stubs module
   - [StateType](#statetype)
   - [TemplateTypeType](#templatetypetype)
   - [TypeType](#typetype)
+  - [PinpointServiceName](#pinpointservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="actiontype"></a>
 
@@ -430,6 +432,18 @@ Values:
 - `ANY`
 - `NONE`
 
+<a id="pinpointservicename"></a>
+
+## PinpointServiceName
+
+```python
+from mypy_boto3_pinpoint.literals import PinpointServiceName
+```
+
+Values:
+
+- `pinpoint`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -740,3 +754,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_pinpoint.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

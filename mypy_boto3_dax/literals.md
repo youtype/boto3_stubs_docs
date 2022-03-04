@@ -23,7 +23,9 @@ type annotations stubs module
   - [ParameterTypeType](#parametertypetype)
   - [SSEStatusType](#ssestatustype)
   - [SourceTypeType](#sourcetypetype)
+  - [DAXServiceName](#daxservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="changetypetype"></a>
@@ -191,6 +193,18 @@ Values:
 - `CLUSTER`
 - `PARAMETER_GROUP`
 - `SUBNET_GROUP`
+
+<a id="daxservicename"></a>
+
+## DAXServiceName
+
+```python
+from mypy_boto3_dax.literals import DAXServiceName
+```
+
+Values:
+
+- `dax`
 
 <a id="servicename"></a>
 
@@ -502,6 +516,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_dax.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

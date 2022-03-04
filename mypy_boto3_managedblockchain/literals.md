@@ -20,7 +20,9 @@ type annotations stubs module
   - [StateDBTypeType](#statedbtypetype)
   - [ThresholdComparatorType](#thresholdcomparatortype)
   - [VoteValueType](#votevaluetype)
+  - [ManagedBlockchainServiceName](#managedblockchainservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="editiontype"></a>
 
@@ -172,6 +174,18 @@ Values:
 
 - `NO`
 - `YES`
+
+<a id="managedblockchainservicename"></a>
+
+## ManagedBlockchainServiceName
+
+```python
+from mypy_boto3_managedblockchain.literals import ManagedBlockchainServiceName
+```
+
+Values:
+
+- `managedblockchain`
 
 <a id="servicename"></a>
 
@@ -483,3 +497,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_managedblockchain.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

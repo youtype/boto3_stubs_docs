@@ -264,7 +264,9 @@ from mypy_boto3_nimble.literals import LaunchProfileDeletedWaiterName, ...
 - [StudioReadyWaiterName](./literals.md#studioreadywaitername)
 - [StudioStateType](./literals.md#studiostatetype)
 - [StudioStatusCodeType](./literals.md#studiostatuscodetype)
+- [NimbleStudioServiceName](./literals.md#nimblestudioservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

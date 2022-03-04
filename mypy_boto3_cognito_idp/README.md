@@ -321,7 +321,9 @@ from mypy_boto3_cognito_idp.literals import AccountTakeoverEventActionTypeType, 
 - [UsernameAttributeTypeType](./literals.md#usernameattributetypetype)
 - [VerifiedAttributeTypeType](./literals.md#verifiedattributetypetype)
 - [VerifySoftwareTokenResponseTypeType](./literals.md#verifysoftwaretokenresponsetypetype)
+- [CognitoIdentityProviderServiceName](./literals.md#cognitoidentityproviderservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

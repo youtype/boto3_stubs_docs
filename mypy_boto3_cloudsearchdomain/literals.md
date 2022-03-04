@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 CloudSearchDomain module](#literals-for-boto3-cloudsearchdomain-module)
   - [ContentTypeType](#contenttypetype)
   - [QueryParserType](#queryparsertype)
+  - [CloudSearchDomainServiceName](#cloudsearchdomainservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="contenttypetype"></a>
 
@@ -41,6 +43,18 @@ Values:
 - `lucene`
 - `simple`
 - `structured`
+
+<a id="cloudsearchdomainservicename"></a>
+
+## CloudSearchDomainServiceName
+
+```python
+from mypy_boto3_cloudsearchdomain.literals import CloudSearchDomainServiceName
+```
+
+Values:
+
+- `cloudsearchdomain`
 
 <a id="servicename"></a>
 
@@ -352,3 +366,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudsearchdomain.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

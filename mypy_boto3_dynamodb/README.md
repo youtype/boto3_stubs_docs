@@ -339,7 +339,9 @@ from mypy_boto3_dynamodb.literals import AttributeActionType, ...
 - [TableNotExistsWaiterName](./literals.md#tablenotexistswaitername)
 - [TableStatusType](./literals.md#tablestatustype)
 - [TimeToLiveStatusType](./literals.md#timetolivestatustype)
+- [DynamoDBServiceName](./literals.md#dynamodbservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

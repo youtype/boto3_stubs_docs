@@ -14,7 +14,9 @@ type annotations stubs module
   - [ContainerStatusType](#containerstatustype)
   - [ListContainersPaginatorName](#listcontainerspaginatorname)
   - [MethodNameType](#methodnametype)
+  - [MediaStoreServiceName](#mediastoreservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="containerlevelmetricstype"></a>
@@ -70,6 +72,18 @@ Values:
 - `GET`
 - `HEAD`
 - `PUT`
+
+<a id="mediastoreservicename"></a>
+
+## MediaStoreServiceName
+
+```python
+from mypy_boto3_mediastore.literals import MediaStoreServiceName
+```
+
+Values:
+
+- `mediastore`
 
 <a id="servicename"></a>
 
@@ -381,6 +395,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mediastore.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

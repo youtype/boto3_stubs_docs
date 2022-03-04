@@ -132,7 +132,9 @@ from mypy_boto3_lex_runtime.literals import ConfirmationStatusType, ...
 - [DialogStateType](./literals.md#dialogstatetype)
 - [FulfillmentStateType](./literals.md#fulfillmentstatetype)
 - [MessageFormatTypeType](./literals.md#messageformattypetype)
+- [LexRuntimeServiceServiceName](./literals.md#lexruntimeserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

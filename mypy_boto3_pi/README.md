@@ -121,7 +121,9 @@ from mypy_boto3_pi.literals import DetailStatusType, ...
 - [DetailStatusType](./literals.md#detailstatustype)
 - [FeatureStatusType](./literals.md#featurestatustype)
 - [ServiceTypeType](./literals.md#servicetypetype)
+- [PIServiceName](./literals.md#piservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -184,7 +184,9 @@ from mypy_boto3_ecr_public.literals import DescribeImageTagsPaginatorName, ...
 - [LayerAvailabilityType](./literals.md#layeravailabilitytype)
 - [LayerFailureCodeType](./literals.md#layerfailurecodetype)
 - [RegistryAliasStatusType](./literals.md#registryaliasstatustype)
+- [ECRPublicServiceName](./literals.md#ecrpublicservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

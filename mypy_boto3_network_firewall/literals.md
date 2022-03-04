@@ -31,7 +31,9 @@ type annotations stubs module
   - [StatefulRuleProtocolType](#statefulruleprotocoltype)
   - [TCPFlagType](#tcpflagtype)
   - [TargetTypeType](#targettypetype)
+  - [NetworkFirewallServiceName](#networkfirewallservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="attachmentstatustype"></a>
@@ -329,6 +331,18 @@ Values:
 
 - `HTTP_HOST`
 - `TLS_SNI`
+
+<a id="networkfirewallservicename"></a>
+
+## NetworkFirewallServiceName
+
+```python
+from mypy_boto3_network_firewall.literals import NetworkFirewallServiceName
+```
+
+Values:
+
+- `network-firewall`
 
 <a id="servicename"></a>
 
@@ -640,6 +654,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_network_firewall.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

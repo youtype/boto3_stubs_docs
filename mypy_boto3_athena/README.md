@@ -186,7 +186,9 @@ from mypy_boto3_athena.literals import ColumnNullableType, ...
 - [S3AclOptionType](./literals.md#s3acloptiontype)
 - [StatementTypeType](./literals.md#statementtypetype)
 - [WorkGroupStateType](./literals.md#workgroupstatetype)
+- [AthenaServiceName](./literals.md#athenaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

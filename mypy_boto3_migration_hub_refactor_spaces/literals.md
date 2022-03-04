@@ -28,7 +28,9 @@ type annotations stubs module
   - [RouteTypeType](#routetypetype)
   - [ServiceEndpointTypeType](#serviceendpointtypetype)
   - [ServiceStateType](#servicestatetype)
+  - [MigrationHubRefactorSpacesServiceName](#migrationhubrefactorspacesservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="apigatewayendpointtypetype"></a>
@@ -299,6 +301,18 @@ Values:
 - `CREATING`
 - `DELETING`
 - `FAILED`
+
+<a id="migrationhubrefactorspacesservicename"></a>
+
+## MigrationHubRefactorSpacesServiceName
+
+```python
+from mypy_boto3_migration_hub_refactor_spaces.literals import MigrationHubRefactorSpacesServiceName
+```
+
+Values:
+
+- `migration-hub-refactor-spaces`
 
 <a id="servicename"></a>
 
@@ -610,6 +624,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_migration_hub_refactor_spaces.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

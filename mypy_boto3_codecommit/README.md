@@ -417,7 +417,9 @@ from mypy_boto3_codecommit.literals import ApprovalStateType, ...
 - [ReplacementTypeEnumType](./literals.md#replacementtypeenumtype)
 - [RepositoryTriggerEventEnumType](./literals.md#repositorytriggereventenumtype)
 - [SortByEnumType](./literals.md#sortbyenumtype)
+- [CodeCommitServiceName](./literals.md#codecommitservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

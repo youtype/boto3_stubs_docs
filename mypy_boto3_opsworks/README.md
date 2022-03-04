@@ -293,7 +293,9 @@ from mypy_boto3_opsworks.literals import AppAttributesKeysType, ...
 - [StackAttributesKeysType](./literals.md#stackattributeskeystype)
 - [VirtualizationTypeType](./literals.md#virtualizationtypetype)
 - [VolumeTypeType](./literals.md#volumetypetype)
+- [OpsWorksServiceName](./literals.md#opsworksservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

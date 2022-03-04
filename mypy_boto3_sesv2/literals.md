@@ -33,7 +33,9 @@ type annotations stubs module
   - [SuppressionListReasonType](#suppressionlistreasontype)
   - [TlsPolicyType](#tlspolicytype)
   - [WarmupStatusType](#warmupstatustype)
+  - [SESV2ServiceName](#sesv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="behavioronmxfailuretype"></a>
 
@@ -366,6 +368,18 @@ Values:
 - `DONE`
 - `IN_PROGRESS`
 
+<a id="sesv2servicename"></a>
+
+## SESV2ServiceName
+
+```python
+from mypy_boto3_sesv2.literals import SESV2ServiceName
+```
+
+Values:
+
+- `sesv2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -676,3 +690,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sesv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

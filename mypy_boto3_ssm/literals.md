@@ -141,7 +141,9 @@ type annotations stubs module
   - [SourceTypeType](#sourcetypetype)
   - [StepExecutionFilterKeyType](#stepexecutionfilterkeytype)
   - [StopTypeType](#stoptypetype)
+  - [SSMServiceName](#ssmservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -2021,6 +2023,18 @@ Values:
 - `Cancel`
 - `Complete`
 
+<a id="ssmservicename"></a>
+
+## SSMServiceName
+
+```python
+from mypy_boto3_ssm.literals import SSMServiceName
+```
+
+Values:
+
+- `ssm`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -2331,6 +2345,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ssm.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

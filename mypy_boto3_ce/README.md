@@ -181,7 +181,9 @@ from mypy_boto3_ce.literals import AccountScopeType, ...
 - [SubscriberTypeType](./literals.md#subscribertypetype)
 - [SupportedSavingsPlansTypeType](./literals.md#supportedsavingsplanstypetype)
 - [TermInYearsType](./literals.md#terminyearstype)
+- [CostExplorerServiceName](./literals.md#costexplorerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

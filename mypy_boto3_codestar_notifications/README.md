@@ -159,7 +159,9 @@ from mypy_boto3_codestar_notifications.literals import DetailTypeType, ...
 - [ListTargetsPaginatorName](./literals.md#listtargetspaginatorname)
 - [NotificationRuleStatusType](./literals.md#notificationrulestatustype)
 - [TargetStatusType](./literals.md#targetstatustype)
+- [CodeStarNotificationsServiceName](./literals.md#codestarnotificationsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -187,7 +187,9 @@ from mypy_boto3_stepfunctions.literals import ExecutionStatusType, ...
 - [StateMachineStatusType](./literals.md#statemachinestatustype)
 - [StateMachineTypeType](./literals.md#statemachinetypetype)
 - [SyncExecutionStatusType](./literals.md#syncexecutionstatustype)
+- [SFNServiceName](./literals.md#sfnservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

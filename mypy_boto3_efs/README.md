@@ -199,7 +199,9 @@ from mypy_boto3_efs.literals import DescribeFileSystemsPaginatorName, ...
 - [ThroughputModeType](./literals.md#throughputmodetype)
 - [TransitionToIARulesType](./literals.md#transitiontoiarulestype)
 - [TransitionToPrimaryStorageClassRulesType](./literals.md#transitiontoprimarystorageclassrulestype)
+- [EFSServiceName](./literals.md#efsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

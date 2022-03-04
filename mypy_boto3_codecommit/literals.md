@@ -32,7 +32,9 @@ type annotations stubs module
   - [ReplacementTypeEnumType](#replacementtypeenumtype)
   - [RepositoryTriggerEventEnumType](#repositorytriggereventenumtype)
   - [SortByEnumType](#sortbyenumtype)
+  - [CodeCommitServiceName](#codecommitservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="approvalstatetype"></a>
@@ -331,6 +333,18 @@ Values:
 
 - `lastModifiedDate`
 - `repositoryName`
+
+<a id="codecommitservicename"></a>
+
+## CodeCommitServiceName
+
+```python
+from mypy_boto3_codecommit.literals import CodeCommitServiceName
+```
+
+Values:
+
+- `codecommit`
 
 <a id="servicename"></a>
 
@@ -642,6 +656,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_codecommit.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -20,7 +20,9 @@ type annotations stubs module
   - [StateMachineStatusType](#statemachinestatustype)
   - [StateMachineTypeType](#statemachinetypetype)
   - [SyncExecutionStatusType](#syncexecutionstatustype)
+  - [SFNServiceName](#sfnservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="executionstatustype"></a>
@@ -207,6 +209,18 @@ Values:
 - `FAILED`
 - `SUCCEEDED`
 - `TIMED_OUT`
+
+<a id="sfnservicename"></a>
+
+## SFNServiceName
+
+```python
+from mypy_boto3_stepfunctions.literals import SFNServiceName
+```
+
+Values:
+
+- `stepfunctions`
 
 <a id="servicename"></a>
 
@@ -518,6 +532,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_stepfunctions.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

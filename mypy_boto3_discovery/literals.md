@@ -26,7 +26,9 @@ type annotations stubs module
   - [ImportTaskFilterNameType](#importtaskfilternametype)
   - [ListConfigurationsPaginatorName](#listconfigurationspaginatorname)
   - [orderStringType](#orderstringtype)
+  - [ApplicationDiscoveryServiceServiceName](#applicationdiscoveryserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="agentstatustype"></a>
@@ -252,6 +254,18 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="applicationdiscoveryserviceservicename"></a>
+
+## ApplicationDiscoveryServiceServiceName
+
+```python
+from mypy_boto3_discovery.literals import ApplicationDiscoveryServiceServiceName
+```
+
+Values:
+
+- `discovery`
 
 <a id="servicename"></a>
 
@@ -563,6 +577,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_discovery.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

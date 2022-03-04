@@ -215,7 +215,9 @@ from mypy_boto3_mediaconnect.literals import AlgorithmType, ...
 - [StateType](./literals.md#statetype)
 - [StatusType](./literals.md#statustype)
 - [TcsType](./literals.md#tcstype)
+- [MediaConnectServiceName](./literals.md#mediaconnectservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

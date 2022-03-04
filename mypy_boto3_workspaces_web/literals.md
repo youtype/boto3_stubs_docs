@@ -15,7 +15,9 @@ type annotations stubs module
   - [IdentityProviderTypeType](#identityprovidertypetype)
   - [PortalStatusType](#portalstatustype)
   - [RendererTypeType](#renderertypetype)
+  - [WorkSpacesWebServiceName](#workspaceswebservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="browsertypetype"></a>
 
@@ -84,6 +86,18 @@ from mypy_boto3_workspaces_web.literals import RendererTypeType
 Values:
 
 - `AppStream`
+
+<a id="workspaceswebservicename"></a>
+
+## WorkSpacesWebServiceName
+
+```python
+from mypy_boto3_workspaces_web.literals import WorkSpacesWebServiceName
+```
+
+Values:
+
+- `workspaces-web`
 
 <a id="servicename"></a>
 
@@ -395,3 +409,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_workspaces_web.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

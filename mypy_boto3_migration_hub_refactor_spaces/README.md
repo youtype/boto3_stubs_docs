@@ -180,7 +180,9 @@ from mypy_boto3_migration_hub_refactor_spaces.literals import ApiGatewayEndpoint
 - [RouteTypeType](./literals.md#routetypetype)
 - [ServiceEndpointTypeType](./literals.md#serviceendpointtypetype)
 - [ServiceStateType](./literals.md#servicestatetype)
+- [MigrationHubRefactorSpacesServiceName](./literals.md#migrationhubrefactorspacesservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

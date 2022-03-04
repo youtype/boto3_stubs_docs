@@ -81,7 +81,9 @@ type annotations stubs module
   - [UpdateBehaviorType](#updatebehaviortype)
   - [WorkerTypeType](#workertypetype)
   - [WorkflowRunStatusType](#workflowrunstatustype)
+  - [GlueServiceName](#glueservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="backfillerrorcodetype"></a>
@@ -1096,6 +1098,18 @@ Values:
 - `STOPPED`
 - `STOPPING`
 
+<a id="glueservicename"></a>
+
+## GlueServiceName
+
+```python
+from mypy_boto3_glue.literals import GlueServiceName
+```
+
+Values:
+
+- `glue`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1406,6 +1420,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_glue.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

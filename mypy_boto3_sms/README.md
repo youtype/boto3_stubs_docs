@@ -201,7 +201,9 @@ from mypy_boto3_sms.literals import AppLaunchConfigurationStatusType, ...
 - [ServerValidationStrategyType](./literals.md#servervalidationstrategytype)
 - [ValidationStatusType](./literals.md#validationstatustype)
 - [VmManagerTypeType](./literals.md#vmmanagertypetype)
+- [SMSServiceName](./literals.md#smsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

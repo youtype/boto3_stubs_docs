@@ -211,7 +211,9 @@ from mypy_boto3_acm_pca.literals import AccessMethodTypeType, ...
 - [S3ObjectAclType](./literals.md#s3objectacltype)
 - [SigningAlgorithmType](./literals.md#signingalgorithmtype)
 - [ValidityPeriodTypeType](./literals.md#validityperiodtypetype)
+- [ACMPCAServiceName](./literals.md#acmpcaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

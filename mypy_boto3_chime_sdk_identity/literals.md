@@ -14,7 +14,9 @@ type annotations stubs module
   - [AppInstanceUserEndpointTypeType](#appinstanceuserendpointtypetype)
   - [EndpointStatusReasonType](#endpointstatusreasontype)
   - [EndpointStatusType](#endpointstatustype)
+  - [ChimeSDKIdentityServiceName](#chimesdkidentityservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="allowmessagestype"></a>
 
@@ -68,6 +70,18 @@ Values:
 
 - `ACTIVE`
 - `INACTIVE`
+
+<a id="chimesdkidentityservicename"></a>
+
+## ChimeSDKIdentityServiceName
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import ChimeSDKIdentityServiceName
+```
+
+Values:
+
+- `chime-sdk-identity`
 
 <a id="servicename"></a>
 
@@ -379,3 +393,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_chime_sdk_identity.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

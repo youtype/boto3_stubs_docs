@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-sagemaker-edge](https://pypi.org/project/mypy-boto3-sagemaker-edge/).
 
 - [Literals for boto3 SagemakerEdgeManager module](#literals-for-boto3-sagemakeredgemanager-module)
+  - [SagemakerEdgeManagerServiceName](#sagemakeredgemanagerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="sagemakeredgemanagerservicename"></a>
+
+## SagemakerEdgeManagerServiceName
+
+```python
+from mypy_boto3_sagemaker_edge.literals import SagemakerEdgeManagerServiceName
+```
+
+Values:
+
+- `sagemaker-edge`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sagemaker_edge.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -13,7 +13,9 @@ type annotations stubs module
   - [ApplicationStatusType](#applicationstatustype)
   - [InputStartingPositionType](#inputstartingpositiontype)
   - [RecordFormatTypeType](#recordformattypetype)
+  - [KinesisAnalyticsServiceName](#kinesisanalyticsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="applicationstatustype"></a>
 
@@ -58,6 +60,18 @@ Values:
 
 - `CSV`
 - `JSON`
+
+<a id="kinesisanalyticsservicename"></a>
+
+## KinesisAnalyticsServiceName
+
+```python
+from mypy_boto3_kinesisanalytics.literals import KinesisAnalyticsServiceName
+```
+
+Values:
+
+- `kinesisanalytics`
 
 <a id="servicename"></a>
 
@@ -369,3 +383,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kinesisanalytics.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

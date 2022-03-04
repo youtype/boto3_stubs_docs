@@ -14,7 +14,9 @@ type annotations stubs module
   - [HumanLoopStatusType](#humanloopstatustype)
   - [ListHumanLoopsPaginatorName](#listhumanloopspaginatorname)
   - [SortOrderType](#sortordertype)
+  - [AugmentedAIRuntimeServiceName](#augmentedairuntimeservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="contentclassifiertype"></a>
@@ -70,6 +72,18 @@ Values:
 
 - `Ascending`
 - `Descending`
+
+<a id="augmentedairuntimeservicename"></a>
+
+## AugmentedAIRuntimeServiceName
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.literals import AugmentedAIRuntimeServiceName
+```
+
+Values:
+
+- `sagemaker-a2i-runtime`
 
 <a id="servicename"></a>
 
@@ -381,6 +395,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sagemaker_a2i_runtime.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

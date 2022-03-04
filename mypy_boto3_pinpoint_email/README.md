@@ -198,7 +198,9 @@ from mypy_boto3_pinpoint_email.literals import BehaviorOnMxFailureType, ...
 - [MailFromDomainStatusType](./literals.md#mailfromdomainstatustype)
 - [TlsPolicyType](./literals.md#tlspolicytype)
 - [WarmupStatusType](./literals.md#warmupstatustype)
+- [PinpointEmailServiceName](./literals.md#pinpointemailservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

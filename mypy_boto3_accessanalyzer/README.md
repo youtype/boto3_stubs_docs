@@ -196,7 +196,9 @@ from mypy_boto3_accessanalyzer.literals import AccessPreviewStatusReasonCodeType
 - [ValidatePolicyFindingTypeType](./literals.md#validatepolicyfindingtypetype)
 - [ValidatePolicyPaginatorName](./literals.md#validatepolicypaginatorname)
 - [ValidatePolicyResourceTypeType](./literals.md#validatepolicyresourcetypetype)
+- [AccessAnalyzerServiceName](./literals.md#accessanalyzerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

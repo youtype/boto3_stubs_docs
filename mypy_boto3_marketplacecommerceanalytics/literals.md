@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 MarketplaceCommerceAnalytics module](#literals-for-boto3-marketplacecommerceanalytics-module)
   - [DataSetTypeType](#datasettypetype)
   - [SupportDataSetTypeType](#supportdatasettypetype)
+  - [MarketplaceCommerceAnalyticsServiceName](#marketplacecommerceanalyticsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="datasettypetype"></a>
 
@@ -62,6 +64,18 @@ Values:
 
 - `customer_support_contacts_data`
 - `test_customer_support_contacts_data`
+
+<a id="marketplacecommerceanalyticsservicename"></a>
+
+## MarketplaceCommerceAnalyticsServiceName
+
+```python
+from mypy_boto3_marketplacecommerceanalytics.literals import MarketplaceCommerceAnalyticsServiceName
+```
+
+Values:
+
+- `marketplacecommerceanalytics`
 
 <a id="servicename"></a>
 
@@ -373,3 +387,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_marketplacecommerceanalytics.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

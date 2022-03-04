@@ -156,7 +156,9 @@ from mypy_boto3_application_insights.literals import CloudWatchEventSourceType, 
 - [SeverityLevelType](./literals.md#severityleveltype)
 - [StatusType](./literals.md#statustype)
 - [TierType](./literals.md#tiertype)
+- [ApplicationInsightsServiceName](./literals.md#applicationinsightsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -284,7 +284,9 @@ type annotations stubs module
   - [VideoSelectorColorSpaceUsageType](#videoselectorcolorspaceusagetype)
   - [WavCodingModeType](#wavcodingmodetype)
   - [WebvttDestinationStyleControlType](#webvttdestinationstylecontroltype)
+  - [MediaLiveServiceName](#medialiveservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -4039,6 +4041,18 @@ Values:
 - `NO_STYLE_DATA`
 - `PASSTHROUGH`
 
+<a id="medialiveservicename"></a>
+
+## MediaLiveServiceName
+
+```python
+from mypy_boto3_medialive.literals import MediaLiveServiceName
+```
+
+Values:
+
+- `medialive`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -4349,6 +4363,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_medialive.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

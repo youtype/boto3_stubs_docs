@@ -551,7 +551,9 @@ from mypy_boto3_mediaconvert.literals import AacAudioDescriptionBroadcasterMixTy
 - [XavcSlowPalType](./literals.md#xavcslowpaltype)
 - [XavcSpatialAdaptiveQuantizationType](./literals.md#xavcspatialadaptivequantizationtype)
 - [XavcTemporalAdaptiveQuantizationType](./literals.md#xavctemporaladaptivequantizationtype)
+- [MediaConvertServiceName](./literals.md#mediaconvertservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

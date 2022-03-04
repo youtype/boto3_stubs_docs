@@ -264,7 +264,9 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [TimeDimensionType](./literals.md#timedimensiontype)
 - [TranscriptFormatType](./literals.md#transcriptformattype)
 - [VoiceEngineType](./literals.md#voiceenginetype)
+- [LexModelsV2ServiceName](./literals.md#lexmodelsv2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [WaiterName](./literals.md#waitername)
 
 <a id="typed-dictionaries"></a>

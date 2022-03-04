@@ -315,7 +315,9 @@ from mypy_boto3_gamelift.literals import AcceptanceTypeType, ...
 - [ScalingStatusTypeType](./literals.md#scalingstatustypetype)
 - [SearchGameSessionsPaginatorName](./literals.md#searchgamesessionspaginatorname)
 - [SortOrderType](./literals.md#sortordertype)
+- [GameLiftServiceName](./literals.md#gameliftservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

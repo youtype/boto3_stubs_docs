@@ -15,7 +15,9 @@ type annotations stubs module
   - [S3EncryptionOptionType](#s3encryptionoptiontype)
   - [TableStatusType](#tablestatustype)
   - [TimeUnitType](#timeunittype)
+  - [TimestreamWriteServiceName](#timestreamwriteservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="dimensionvaluetypetype"></a>
 
@@ -86,6 +88,18 @@ Values:
 - `MILLISECONDS`
 - `NANOSECONDS`
 - `SECONDS`
+
+<a id="timestreamwriteservicename"></a>
+
+## TimestreamWriteServiceName
+
+```python
+from mypy_boto3_timestream_write.literals import TimestreamWriteServiceName
+```
+
+Values:
+
+- `timestream-write`
 
 <a id="servicename"></a>
 
@@ -397,3 +411,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_timestream_write.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

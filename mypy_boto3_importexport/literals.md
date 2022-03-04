@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 ImportExport module](#literals-for-boto3-importexport-module)
   - [JobTypeType](#jobtypetype)
   - [ListJobsPaginatorName](#listjobspaginatorname)
+  - [ImportExportServiceName](#importexportservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="jobtypetype"></a>
@@ -39,6 +41,18 @@ from mypy_boto3_importexport.literals import ListJobsPaginatorName
 Values:
 
 - `list_jobs`
+
+<a id="importexportservicename"></a>
+
+## ImportExportServiceName
+
+```python
+from mypy_boto3_importexport.literals import ImportExportServiceName
+```
+
+Values:
+
+- `importexport`
 
 <a id="servicename"></a>
 
@@ -350,6 +364,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_importexport.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

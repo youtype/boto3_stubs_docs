@@ -17,7 +17,9 @@ type annotations stubs module
   - [GetTagValuesPaginatorName](#gettagvaluespaginatorname)
   - [GroupByAttributeType](#groupbyattributetype)
   - [TargetIdTypeType](#targetidtypetype)
+  - [ResourceGroupsTaggingAPIServiceName](#resourcegroupstaggingapiservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="errorcodetype"></a>
@@ -108,6 +110,18 @@ Values:
 - `ACCOUNT`
 - `OU`
 - `ROOT`
+
+<a id="resourcegroupstaggingapiservicename"></a>
+
+## ResourceGroupsTaggingAPIServiceName
+
+```python
+from mypy_boto3_resourcegroupstaggingapi.literals import ResourceGroupsTaggingAPIServiceName
+```
+
+Values:
+
+- `resourcegroupstaggingapi`
 
 <a id="servicename"></a>
 
@@ -419,6 +433,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_resourcegroupstaggingapi.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

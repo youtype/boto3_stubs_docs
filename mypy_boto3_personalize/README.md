@@ -220,7 +220,9 @@ from mypy_boto3_personalize.literals import DomainType, ...
 - [ObjectiveSensitivityType](./literals.md#objectivesensitivitytype)
 - [RecipeProviderType](./literals.md#recipeprovidertype)
 - [TrainingModeType](./literals.md#trainingmodetype)
+- [PersonalizeServiceName](./literals.md#personalizeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

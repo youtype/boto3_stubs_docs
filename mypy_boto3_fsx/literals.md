@@ -60,7 +60,9 @@ type annotations stubs module
   - [VolumeTypeType](#volumetypetype)
   - [WindowsAccessAuditLogLevelType](#windowsaccessauditlogleveltype)
   - [WindowsDeploymentTypeType](#windowsdeploymenttypetype)
+  - [FSxServiceName](#fsxservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="administrativeactiontypetype"></a>
@@ -768,6 +770,18 @@ Values:
 - `SINGLE_AZ_1`
 - `SINGLE_AZ_2`
 
+<a id="fsxservicename"></a>
+
+## FSxServiceName
+
+```python
+from mypy_boto3_fsx.literals import FSxServiceName
+```
+
+Values:
+
+- `fsx`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1078,6 +1092,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_fsx.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

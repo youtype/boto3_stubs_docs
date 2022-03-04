@@ -47,7 +47,9 @@ type annotations stubs module
   - [SecurityPolicyType](#securitypolicytype)
   - [UnauthorizedCacheControlHeaderStrategyType](#unauthorizedcachecontrolheaderstrategytype)
   - [VpcLinkStatusType](#vpclinkstatustype)
+  - [APIGatewayServiceName](#apigatewayservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="apikeysourcetypetype"></a>
@@ -566,6 +568,18 @@ Values:
 - `FAILED`
 - `PENDING`
 
+<a id="apigatewayservicename"></a>
+
+## APIGatewayServiceName
+
+```python
+from mypy_boto3_apigateway.literals import APIGatewayServiceName
+```
+
+Values:
+
+- `apigateway`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -876,6 +890,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_apigateway.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

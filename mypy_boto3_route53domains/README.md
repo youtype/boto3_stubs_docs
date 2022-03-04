@@ -181,7 +181,9 @@ from mypy_boto3_route53domains.literals import ContactTypeType, ...
 - [SortOrderType](./literals.md#sortordertype)
 - [TransferableType](./literals.md#transferabletype)
 - [ViewBillingPaginatorName](./literals.md#viewbillingpaginatorname)
+- [Route53DomainsServiceName](./literals.md#route53domainsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

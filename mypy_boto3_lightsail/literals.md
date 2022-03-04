@@ -92,7 +92,9 @@ type annotations stubs module
   - [ResourceTypeType](#resourcetypetype)
   - [StatusTypeType](#statustypetype)
   - [TreatMissingDataType](#treatmissingdatatype)
+  - [LightsailServiceName](#lightsailservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accessdirectiontype"></a>
@@ -1421,6 +1423,18 @@ Values:
 - `missing`
 - `notBreaching`
 
+<a id="lightsailservicename"></a>
+
+## LightsailServiceName
+
+```python
+from mypy_boto3_lightsail.literals import LightsailServiceName
+```
+
+Values:
+
+- `lightsail`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1731,6 +1745,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lightsail.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

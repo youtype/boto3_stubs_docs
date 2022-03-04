@@ -25,7 +25,9 @@ type annotations stubs module
   - [TimelineEventSortType](#timelineeventsorttype)
   - [WaitForReplicationSetActiveWaiterName](#waitforreplicationsetactivewaitername)
   - [WaitForReplicationSetDeletedWaiterName](#waitforreplicationsetdeletedwaitername)
+  - [SSMIncidentsServiceName](#ssmincidentsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -224,6 +226,18 @@ from mypy_boto3_ssm_incidents.literals import WaitForReplicationSetDeletedWaiter
 Values:
 
 - `wait_for_replication_set_deleted`
+
+<a id="ssmincidentsservicename"></a>
+
+## SSMIncidentsServiceName
+
+```python
+from mypy_boto3_ssm_incidents.literals import SSMIncidentsServiceName
+```
+
+Values:
+
+- `ssm-incidents`
 
 <a id="servicename"></a>
 
@@ -535,6 +549,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ssm_incidents.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

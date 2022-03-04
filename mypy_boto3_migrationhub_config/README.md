@@ -120,7 +120,9 @@ from mypy_boto3_migrationhub_config.literals import TargetTypeType, ...
 ```
 
 - [TargetTypeType](./literals.md#targettypetype)
+- [MigrationHubConfigServiceName](./literals.md#migrationhubconfigservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

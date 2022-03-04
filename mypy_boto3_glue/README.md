@@ -412,7 +412,9 @@ from mypy_boto3_glue.literals import BackfillErrorCodeType, ...
 - [UpdateBehaviorType](./literals.md#updatebehaviortype)
 - [WorkerTypeType](./literals.md#workertypetype)
 - [WorkflowRunStatusType](./literals.md#workflowrunstatustype)
+- [GlueServiceName](./literals.md#glueservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

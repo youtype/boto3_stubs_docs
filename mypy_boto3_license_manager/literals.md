@@ -33,7 +33,9 @@ type annotations stubs module
   - [ReportTypeType](#reporttypetype)
   - [ResourceTypeType](#resourcetypetype)
   - [TokenTypeType](#tokentypetype)
+  - [LicenseManagerServiceName](#licensemanagerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="allowedoperationtype"></a>
@@ -411,6 +413,18 @@ Values:
 
 - `REFRESH_TOKEN`
 
+<a id="licensemanagerservicename"></a>
+
+## LicenseManagerServiceName
+
+```python
+from mypy_boto3_license_manager.literals import LicenseManagerServiceName
+```
+
+Values:
+
+- `license-manager`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -721,6 +735,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_license_manager.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

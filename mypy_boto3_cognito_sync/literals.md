@@ -14,7 +14,9 @@ type annotations stubs module
   - [OperationType](#operationtype)
   - [PlatformType](#platformtype)
   - [StreamingStatusType](#streamingstatustype)
+  - [CognitoSyncServiceName](#cognitosyncservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="bulkpublishstatustype"></a>
 
@@ -71,6 +73,18 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="cognitosyncservicename"></a>
+
+## CognitoSyncServiceName
+
+```python
+from mypy_boto3_cognito_sync.literals import CognitoSyncServiceName
+```
+
+Values:
+
+- `cognito-sync`
 
 <a id="servicename"></a>
 
@@ -382,3 +396,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cognito_sync.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

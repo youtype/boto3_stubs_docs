@@ -130,7 +130,9 @@ from mypy_boto3_lexv2_runtime.literals import ConfirmationStateType, ...
 - [SentimentTypeType](./literals.md#sentimenttypetype)
 - [ShapeType](./literals.md#shapetype)
 - [StyleTypeType](./literals.md#styletypetype)
+- [LexRuntimeV2ServiceName](./literals.md#lexruntimev2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

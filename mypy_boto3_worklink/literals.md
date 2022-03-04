@@ -15,7 +15,9 @@ type annotations stubs module
   - [DomainStatusType](#domainstatustype)
   - [FleetStatusType](#fleetstatustype)
   - [IdentityProviderTypeType](#identityprovidertypetype)
+  - [WorkLinkServiceName](#worklinkservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="authorizationprovidertypetype"></a>
 
@@ -89,6 +91,18 @@ from mypy_boto3_worklink.literals import IdentityProviderTypeType
 Values:
 
 - `SAML`
+
+<a id="worklinkservicename"></a>
+
+## WorkLinkServiceName
+
+```python
+from mypy_boto3_worklink.literals import WorkLinkServiceName
+```
+
+Values:
+
+- `worklink`
 
 <a id="servicename"></a>
 
@@ -400,3 +414,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_worklink.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

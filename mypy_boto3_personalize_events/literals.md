@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-personalize-events](https://pypi.org/project/mypy-boto3-personalize-events/).
 
 - [Literals for boto3 PersonalizeEvents module](#literals-for-boto3-personalizeevents-module)
+  - [PersonalizeEventsServiceName](#personalizeeventsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="personalizeeventsservicename"></a>
+
+## PersonalizeEventsServiceName
+
+```python
+from mypy_boto3_personalize_events.literals import PersonalizeEventsServiceName
+```
+
+Values:
+
+- `personalize-events`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_personalize_events.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

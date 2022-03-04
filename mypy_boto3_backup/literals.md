@@ -17,7 +17,9 @@ type annotations stubs module
   - [RecoveryPointStatusType](#recoverypointstatustype)
   - [RestoreJobStatusType](#restorejobstatustype)
   - [StorageClassType](#storageclasstype)
+  - [BackupServiceName](#backupservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="backupjobstatetype"></a>
 
@@ -137,6 +139,18 @@ Values:
 - `COLD`
 - `DELETED`
 - `WARM`
+
+<a id="backupservicename"></a>
+
+## BackupServiceName
+
+```python
+from mypy_boto3_backup.literals import BackupServiceName
+```
+
+Values:
+
+- `backup`
 
 <a id="servicename"></a>
 
@@ -448,3 +462,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_backup.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

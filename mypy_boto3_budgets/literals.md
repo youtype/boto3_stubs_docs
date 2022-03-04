@@ -32,7 +32,9 @@ type annotations stubs module
   - [SubscriptionTypeType](#subscriptiontypetype)
   - [ThresholdTypeType](#thresholdtypetype)
   - [TimeUnitType](#timeunittype)
+  - [BudgetsServiceName](#budgetsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="actionstatustype"></a>
@@ -333,6 +335,18 @@ Values:
 - `DAILY`
 - `MONTHLY`
 - `QUARTERLY`
+
+<a id="budgetsservicename"></a>
+
+## BudgetsServiceName
+
+```python
+from mypy_boto3_budgets.literals import BudgetsServiceName
+```
+
+Values:
+
+- `budgets`
 
 <a id="servicename"></a>
 
@@ -644,6 +658,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_budgets.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

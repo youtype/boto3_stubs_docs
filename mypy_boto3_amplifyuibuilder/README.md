@@ -155,7 +155,9 @@ from mypy_boto3_amplifyuibuilder.literals import ExportComponentsPaginatorName, 
 - [ListThemesPaginatorName](./literals.md#listthemespaginatorname)
 - [SortDirectionType](./literals.md#sortdirectiontype)
 - [TokenProvidersType](./literals.md#tokenproviderstype)
+- [AmplifyUIBuilderServiceName](./literals.md#amplifyuibuilderservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

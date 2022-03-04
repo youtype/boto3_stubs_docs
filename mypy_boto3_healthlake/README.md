@@ -134,7 +134,9 @@ from mypy_boto3_healthlake.literals import CmkTypeType, ...
 - [FHIRVersionType](./literals.md#fhirversiontype)
 - [JobStatusType](./literals.md#jobstatustype)
 - [PreloadDataTypeType](./literals.md#preloaddatatypetype)
+- [HealthLakeServiceName](./literals.md#healthlakeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

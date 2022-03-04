@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 IoTDataPlane module](#literals-for-boto3-iotdataplane-module)
   - [ListRetainedMessagesPaginatorName](#listretainedmessagespaginatorname)
+  - [IoTDataPlaneServiceName](#iotdataplaneservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listretainedmessagespaginatorname"></a>
@@ -25,6 +27,18 @@ from mypy_boto3_iot_data.literals import ListRetainedMessagesPaginatorName
 Values:
 
 - `list_retained_messages`
+
+<a id="iotdataplaneservicename"></a>
+
+## IoTDataPlaneServiceName
+
+```python
+from mypy_boto3_iot_data.literals import IoTDataPlaneServiceName
+```
+
+Values:
+
+- `iot-data`
 
 <a id="servicename"></a>
 
@@ -336,6 +350,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iot_data.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

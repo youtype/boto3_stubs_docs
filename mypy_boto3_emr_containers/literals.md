@@ -19,7 +19,9 @@ type annotations stubs module
   - [ListVirtualClustersPaginatorName](#listvirtualclusterspaginatorname)
   - [PersistentAppUIType](#persistentappuitype)
   - [VirtualClusterStateType](#virtualclusterstatetype)
+  - [EMRContainersServiceName](#emrcontainersservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="containerprovidertypetype"></a>
@@ -146,6 +148,18 @@ Values:
 - `RUNNING`
 - `TERMINATED`
 - `TERMINATING`
+
+<a id="emrcontainersservicename"></a>
+
+## EMRContainersServiceName
+
+```python
+from mypy_boto3_emr_containers.literals import EMRContainersServiceName
+```
+
+Values:
+
+- `emr-containers`
 
 <a id="servicename"></a>
 
@@ -457,6 +471,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_emr_containers.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

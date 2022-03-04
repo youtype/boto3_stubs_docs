@@ -215,7 +215,9 @@ from mypy_boto3_appsync.literals import ApiCacheStatusType, ...
 - [ResolverKindType](./literals.md#resolverkindtype)
 - [SchemaStatusType](./literals.md#schemastatustype)
 - [TypeDefinitionFormatType](./literals.md#typedefinitionformattype)
+- [AppSyncServiceName](./literals.md#appsyncservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

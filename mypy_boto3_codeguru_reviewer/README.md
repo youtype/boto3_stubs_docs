@@ -179,7 +179,9 @@ from mypy_boto3_codeguru_reviewer.literals import AnalysisTypeType, ...
 - [SeverityType](./literals.md#severitytype)
 - [TypeType](./literals.md#typetype)
 - [VendorNameType](./literals.md#vendornametype)
+- [CodeGuruReviewerServiceName](./literals.md#codegurureviewerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

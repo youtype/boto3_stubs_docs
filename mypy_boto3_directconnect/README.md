@@ -215,7 +215,9 @@ from mypy_boto3_directconnect.literals import AddressFamilyType, ...
 - [LoaContentTypeType](./literals.md#loacontenttypetype)
 - [NniPartnerTypeType](./literals.md#nnipartnertypetype)
 - [VirtualInterfaceStateType](./literals.md#virtualinterfacestatetype)
+- [DirectConnectServiceName](./literals.md#directconnectservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

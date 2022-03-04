@@ -43,7 +43,9 @@ type annotations stubs module
   - [WorldExportJobStatusType](#worldexportjobstatustype)
   - [WorldGenerationJobErrorCodeType](#worldgenerationjoberrorcodetype)
   - [WorldGenerationJobStatusType](#worldgenerationjobstatustype)
+  - [RoboMakerServiceName](#robomakerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="architecturetype"></a>
@@ -565,6 +567,18 @@ Values:
 - `Pending`
 - `Running`
 
+<a id="robomakerservicename"></a>
+
+## RoboMakerServiceName
+
+```python
+from mypy_boto3_robomaker.literals import RoboMakerServiceName
+```
+
+Values:
+
+- `robomaker`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -875,6 +889,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_robomaker.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

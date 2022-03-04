@@ -328,7 +328,9 @@ from mypy_boto3_quicksight.literals import AnalysisErrorTypeType, ...
 - [ThemeErrorTypeType](./literals.md#themeerrortypetype)
 - [ThemeTypeType](./literals.md#themetypetype)
 - [UserRoleType](./literals.md#userroletype)
+- [QuickSightServiceName](./literals.md#quicksightservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

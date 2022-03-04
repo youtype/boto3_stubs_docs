@@ -23,7 +23,9 @@ type annotations stubs module
   - [SearchJobsPaginatorName](#searchjobspaginatorname)
   - [SearchQuantumTasksFilterOperatorType](#searchquantumtasksfilteroperatortype)
   - [SearchQuantumTasksPaginatorName](#searchquantumtaskspaginatorname)
+  - [BraketServiceName](#braketservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="cancellationstatustype"></a>
@@ -256,6 +258,18 @@ from mypy_boto3_braket.literals import SearchQuantumTasksPaginatorName
 Values:
 
 - `search_quantum_tasks`
+
+<a id="braketservicename"></a>
+
+## BraketServiceName
+
+```python
+from mypy_boto3_braket.literals import BraketServiceName
+```
+
+Values:
+
+- `braket`
 
 <a id="servicename"></a>
 
@@ -567,6 +581,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_braket.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

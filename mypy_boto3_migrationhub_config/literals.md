@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 MigrationHubConfig module](#literals-for-boto3-migrationhubconfig-module)
   - [TargetTypeType](#targettypetype)
+  - [MigrationHubConfigServiceName](#migrationhubconfigservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="targettypetype"></a>
 
@@ -24,6 +26,18 @@ from mypy_boto3_migrationhub_config.literals import TargetTypeType
 Values:
 
 - `ACCOUNT`
+
+<a id="migrationhubconfigservicename"></a>
+
+## MigrationHubConfigServiceName
+
+```python
+from mypy_boto3_migrationhub_config.literals import MigrationHubConfigServiceName
+```
+
+Values:
+
+- `migrationhub-config`
 
 <a id="servicename"></a>
 
@@ -335,3 +349,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_migrationhub_config.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

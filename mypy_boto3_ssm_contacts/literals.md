@@ -22,7 +22,9 @@ type annotations stubs module
   - [ListPagesByContactPaginatorName](#listpagesbycontactpaginatorname)
   - [ListPagesByEngagementPaginatorName](#listpagesbyengagementpaginatorname)
   - [ReceiptTypeType](#receipttypetype)
+  - [SSMContactsServiceName](#ssmcontactsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="acceptcodevalidationtype"></a>
@@ -178,6 +180,18 @@ Values:
 - `READ`
 - `SENT`
 - `STOP`
+
+<a id="ssmcontactsservicename"></a>
+
+## SSMContactsServiceName
+
+```python
+from mypy_boto3_ssm_contacts.literals import SSMContactsServiceName
+```
+
+Values:
+
+- `ssm-contacts`
 
 <a id="servicename"></a>
 
@@ -489,6 +503,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ssm_contacts.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

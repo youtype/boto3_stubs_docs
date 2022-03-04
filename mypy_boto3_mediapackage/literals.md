@@ -28,7 +28,9 @@ type annotations stubs module
   - [StatusType](#statustype)
   - [StreamOrderType](#streamordertype)
   - [UtcTimingType](#utctimingtype)
+  - [MediaPackageServiceName](#mediapackageservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="admarkerstype"></a>
@@ -274,6 +276,18 @@ Values:
 - `HTTP-HEAD`
 - `HTTP-ISO`
 - `NONE`
+
+<a id="mediapackageservicename"></a>
+
+## MediaPackageServiceName
+
+```python
+from mypy_boto3_mediapackage.literals import MediaPackageServiceName
+```
+
+Values:
+
+- `mediapackage`
 
 <a id="servicename"></a>
 
@@ -585,6 +599,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mediapackage.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

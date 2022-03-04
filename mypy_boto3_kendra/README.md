@@ -226,7 +226,9 @@ from mypy_boto3_kendra.literals import AdditionalResultAttributeValueTypeType, .
 - [UserGroupResolutionModeType](./literals.md#usergroupresolutionmodetype)
 - [WarningCodeType](./literals.md#warningcodetype)
 - [WebCrawlerModeType](./literals.md#webcrawlermodetype)
+- [kendraServiceName](./literals.md#kendraservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

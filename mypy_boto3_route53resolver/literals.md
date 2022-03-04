@@ -50,7 +50,9 @@ type annotations stubs module
   - [ShareStatusType](#sharestatustype)
   - [SortOrderType](#sortordertype)
   - [ValidationType](#validationtype)
+  - [Route53ResolverServiceName](#route53resolverservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="actiontype"></a>
@@ -594,6 +596,18 @@ Values:
 - `DISABLE`
 - `ENABLE`
 
+<a id="route53resolverservicename"></a>
+
+## Route53ResolverServiceName
+
+```python
+from mypy_boto3_route53resolver.literals import Route53ResolverServiceName
+```
+
+Values:
+
+- `route53resolver`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -904,6 +918,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_route53resolver.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

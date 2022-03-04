@@ -29,7 +29,9 @@ type annotations stubs module
   - [DescribeOrderableDBInstanceOptionsPaginatorName](#describeorderabledbinstanceoptionspaginatorname)
   - [DescribePendingMaintenanceActionsPaginatorName](#describependingmaintenanceactionspaginatorname)
   - [SourceTypeType](#sourcetypetype)
+  - [NeptuneServiceName](#neptuneservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -266,6 +268,18 @@ Values:
 - `db-parameter-group`
 - `db-security-group`
 - `db-snapshot`
+
+<a id="neptuneservicename"></a>
+
+## NeptuneServiceName
+
+```python
+from mypy_boto3_neptune.literals import NeptuneServiceName
+```
+
+Values:
+
+- `neptune`
 
 <a id="servicename"></a>
 
@@ -577,6 +591,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_neptune.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

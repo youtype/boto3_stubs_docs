@@ -139,7 +139,9 @@ from mypy_boto3_detective.literals import InvitationTypeType, ...
 - [InvitationTypeType](./literals.md#invitationtypetype)
 - [MemberDisabledReasonType](./literals.md#memberdisabledreasontype)
 - [MemberStatusType](./literals.md#memberstatustype)
+- [DetectiveServiceName](./literals.md#detectiveservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

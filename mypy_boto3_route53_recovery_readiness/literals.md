@@ -21,7 +21,9 @@ type annotations stubs module
   - [ListResourceSetsPaginatorName](#listresourcesetspaginatorname)
   - [ListRulesPaginatorName](#listrulespaginatorname)
   - [ReadinessType](#readinesstype)
+  - [Route53RecoveryReadinessServiceName](#route53recoveryreadinessservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="getcellreadinesssummarypaginatorname"></a>
@@ -158,6 +160,18 @@ Values:
 - `NOT_READY`
 - `READY`
 - `UNKNOWN`
+
+<a id="route53recoveryreadinessservicename"></a>
+
+## Route53RecoveryReadinessServiceName
+
+```python
+from mypy_boto3_route53_recovery_readiness.literals import Route53RecoveryReadinessServiceName
+```
+
+Values:
+
+- `route53-recovery-readiness`
 
 <a id="servicename"></a>
 
@@ -469,6 +483,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_route53_recovery_readiness.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-sts](https://pypi.org/project/mypy-boto3-sts/).
 
 - [Literals for boto3 STS module](#literals-for-boto3-sts-module)
+  - [STSServiceName](#stsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="stsservicename"></a>
+
+## STSServiceName
+
+```python
+from mypy_boto3_sts.literals import STSServiceName
+```
+
+Values:
+
+- `sts`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sts.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

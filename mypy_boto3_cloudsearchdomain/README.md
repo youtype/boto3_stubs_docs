@@ -117,7 +117,9 @@ from mypy_boto3_cloudsearchdomain.literals import ContentTypeType, ...
 
 - [ContentTypeType](./literals.md#contenttypetype)
 - [QueryParserType](./literals.md#queryparsertype)
+- [CloudSearchDomainServiceName](./literals.md#cloudsearchdomainservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

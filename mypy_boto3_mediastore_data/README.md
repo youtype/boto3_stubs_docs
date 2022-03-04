@@ -140,7 +140,9 @@ from mypy_boto3_mediastore_data.literals import ItemTypeType, ...
 - [ListItemsPaginatorName](./literals.md#listitemspaginatorname)
 - [StorageClassType](./literals.md#storageclasstype)
 - [UploadAvailabilityType](./literals.md#uploadavailabilitytype)
+- [MediaStoreDataServiceName](./literals.md#mediastoredataservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

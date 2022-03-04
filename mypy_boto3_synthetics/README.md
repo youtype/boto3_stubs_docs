@@ -133,7 +133,9 @@ from mypy_boto3_synthetics.literals import CanaryRunStateReasonCodeType, ...
 - [CanaryStateReasonCodeType](./literals.md#canarystatereasoncodetype)
 - [CanaryStateType](./literals.md#canarystatetype)
 - [EncryptionModeType](./literals.md#encryptionmodetype)
+- [SyntheticsServiceName](./literals.md#syntheticsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

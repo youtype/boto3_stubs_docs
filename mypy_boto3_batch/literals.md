@@ -33,7 +33,9 @@ type annotations stubs module
   - [PlatformCapabilityType](#platformcapabilitytype)
   - [ResourceTypeType](#resourcetypetype)
   - [RetryActionType](#retryactiontype)
+  - [BatchServiceName](#batchservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="arrayjobdependencytype"></a>
@@ -353,6 +355,18 @@ Values:
 - `EXIT`
 - `RETRY`
 
+<a id="batchservicename"></a>
+
+## BatchServiceName
+
+```python
+from mypy_boto3_batch.literals import BatchServiceName
+```
+
+Values:
+
+- `batch`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -663,6 +677,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_batch.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

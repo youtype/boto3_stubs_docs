@@ -196,7 +196,9 @@ from mypy_boto3_auditmanager.literals import AccountStatusType, ...
 - [SourceFrequencyType](./literals.md#sourcefrequencytype)
 - [SourceSetUpOptionType](./literals.md#sourcesetupoptiontype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [AuditManagerServiceName](./literals.md#auditmanagerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

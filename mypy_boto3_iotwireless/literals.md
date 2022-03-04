@@ -36,7 +36,9 @@ type annotations stubs module
   - [WirelessGatewayTaskDefinitionTypeType](#wirelessgatewaytaskdefinitiontypetype)
   - [WirelessGatewayTaskStatusType](#wirelessgatewaytaskstatustype)
   - [WirelessGatewayTypeType](#wirelessgatewaytypetype)
+  - [IoTWirelessServiceName](#iotwirelessservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="batteryleveltype"></a>
 
@@ -404,6 +406,18 @@ Values:
 
 - `LoRaWAN`
 
+<a id="iotwirelessservicename"></a>
+
+## IoTWirelessServiceName
+
+```python
+from mypy_boto3_iotwireless.literals import IoTWirelessServiceName
+```
+
+Values:
+
+- `iotwireless`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -714,3 +728,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotwireless.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

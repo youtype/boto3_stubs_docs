@@ -32,7 +32,9 @@ type annotations stubs module
   - [RetentionLockTypeType](#retentionlocktypetype)
   - [SMBSecurityStrategyType](#smbsecuritystrategytype)
   - [TapeStorageClassType](#tapestorageclasstype)
+  - [StorageGatewayServiceName](#storagegatewayservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="activedirectorystatustype"></a>
@@ -327,6 +329,18 @@ Values:
 
 - `DEEP_ARCHIVE`
 - `GLACIER`
+
+<a id="storagegatewayservicename"></a>
+
+## StorageGatewayServiceName
+
+```python
+from mypy_boto3_storagegateway.literals import StorageGatewayServiceName
+```
+
+Values:
+
+- `storagegateway`
 
 <a id="servicename"></a>
 
@@ -638,6 +652,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_storagegateway.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

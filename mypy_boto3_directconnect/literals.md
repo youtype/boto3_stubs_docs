@@ -29,7 +29,9 @@ type annotations stubs module
   - [LoaContentTypeType](#loacontenttypetype)
   - [NniPartnerTypeType](#nnipartnertypetype)
   - [VirtualInterfaceStateType](#virtualinterfacestatetype)
+  - [DirectConnectServiceName](#directconnectservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="addressfamilytype"></a>
@@ -312,6 +314,18 @@ Values:
 - `rejected`
 - `unknown`
 - `verifying`
+
+<a id="directconnectservicename"></a>
+
+## DirectConnectServiceName
+
+```python
+from mypy_boto3_directconnect.literals import DirectConnectServiceName
+```
+
+Values:
+
+- `directconnect`
 
 <a id="servicename"></a>
 
@@ -623,6 +637,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_directconnect.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

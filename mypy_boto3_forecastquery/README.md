@@ -113,10 +113,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_forecastquery.literals import ServiceName, ...
+from mypy_boto3_forecastquery.literals import ForecastQueryServiceServiceName, ...
 ```
 
+- [ForecastQueryServiceServiceName](./literals.md#forecastqueryserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

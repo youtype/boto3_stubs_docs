@@ -226,7 +226,9 @@ from mypy_boto3_waf_regional.literals import ChangeActionType, ...
 - [WafActionTypeType](./literals.md#wafactiontypetype)
 - [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
 - [WafRuleTypeType](./literals.md#wafruletypetype)
+- [WAFRegionalServiceName](./literals.md#wafregionalservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

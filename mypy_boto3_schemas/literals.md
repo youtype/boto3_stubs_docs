@@ -19,7 +19,9 @@ type annotations stubs module
   - [ListSchemasPaginatorName](#listschemaspaginatorname)
   - [SearchSchemasPaginatorName](#searchschemaspaginatorname)
   - [TypeType](#typetype)
+  - [SchemasServiceName](#schemasservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -134,6 +136,18 @@ Values:
 
 - `JSONSchemaDraft4`
 - `OpenApi3`
+
+<a id="schemasservicename"></a>
+
+## SchemasServiceName
+
+```python
+from mypy_boto3_schemas.literals import SchemasServiceName
+```
+
+Values:
+
+- `schemas`
 
 <a id="servicename"></a>
 
@@ -445,6 +459,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_schemas.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

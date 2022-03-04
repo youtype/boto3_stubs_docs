@@ -50,7 +50,9 @@ type annotations stubs module
   - [TableNotExistsWaiterName](#tablenotexistswaitername)
   - [TableStatusType](#tablestatustype)
   - [TimeToLiveStatusType](#timetolivestatustype)
+  - [DynamoDBServiceName](#dynamodbservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -628,6 +630,18 @@ Values:
 - `ENABLED`
 - `ENABLING`
 
+<a id="dynamodbservicename"></a>
+
+## DynamoDBServiceName
+
+```python
+from mypy_boto3_dynamodb.literals import DynamoDBServiceName
+```
+
+Values:
+
+- `dynamodb`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -938,6 +952,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_dynamodb.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

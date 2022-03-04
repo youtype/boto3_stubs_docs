@@ -174,7 +174,9 @@ from mypy_boto3_compute_optimizer.literals import CpuVendorArchitectureType, ...
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [ScopeNameType](./literals.md#scopenametype)
 - [StatusType](./literals.md#statustype)
+- [ComputeOptimizerServiceName](./literals.md#computeoptimizerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

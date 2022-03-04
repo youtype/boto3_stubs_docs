@@ -16,7 +16,9 @@ type annotations stubs module
   - [ServiceUpdateStatusType](#serviceupdatestatustype)
   - [ServiceUpdateTypeType](#serviceupdatetypetype)
   - [SourceTypeType](#sourcetypetype)
+  - [MemoryDBServiceName](#memorydbservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="azstatustype"></a>
 
@@ -99,6 +101,18 @@ Values:
 - `parameter-group`
 - `subnet-group`
 - `user`
+
+<a id="memorydbservicename"></a>
+
+## MemoryDBServiceName
+
+```python
+from mypy_boto3_memorydb.literals import MemoryDBServiceName
+```
+
+Values:
+
+- `memorydb`
 
 <a id="servicename"></a>
 
@@ -410,3 +424,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_memorydb.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

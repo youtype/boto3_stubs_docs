@@ -503,7 +503,9 @@ from mypy_boto3_medialive.literals import AacCodingModeType, ...
 - [VideoSelectorColorSpaceUsageType](./literals.md#videoselectorcolorspaceusagetype)
 - [WavCodingModeType](./literals.md#wavcodingmodetype)
 - [WebvttDestinationStyleControlType](./literals.md#webvttdestinationstylecontroltype)
+- [MediaLiveServiceName](./literals.md#medialiveservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

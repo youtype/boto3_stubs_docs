@@ -178,7 +178,9 @@ from mypy_boto3_appflow.literals import AggregationTypeType, ...
 - [VeevaConnectorOperatorType](./literals.md#veevaconnectoroperatortype)
 - [WriteOperationTypeType](./literals.md#writeoperationtypetype)
 - [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
+- [AppflowServiceName](./literals.md#appflowservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

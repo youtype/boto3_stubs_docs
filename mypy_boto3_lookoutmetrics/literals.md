@@ -20,7 +20,9 @@ type annotations stubs module
   - [FrequencyType](#frequencytype)
   - [JsonFileCompressionType](#jsonfilecompressiontype)
   - [RelationshipTypeType](#relationshiptypetype)
+  - [LookoutMetricsServiceName](#lookoutmetricsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="aggregationfunctiontype"></a>
 
@@ -167,6 +169,18 @@ Values:
 
 - `CAUSE_OF_INPUT_ANOMALY_GROUP`
 - `EFFECT_OF_INPUT_ANOMALY_GROUP`
+
+<a id="lookoutmetricsservicename"></a>
+
+## LookoutMetricsServiceName
+
+```python
+from mypy_boto3_lookoutmetrics.literals import LookoutMetricsServiceName
+```
+
+Values:
+
+- `lookoutmetrics`
 
 <a id="servicename"></a>
 
@@ -478,3 +492,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lookoutmetrics.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

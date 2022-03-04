@@ -158,7 +158,9 @@ from mypy_boto3_cloud9.literals import ConnectionTypeType, ...
 - [ManagedCredentialsStatusType](./literals.md#managedcredentialsstatustype)
 - [MemberPermissionsType](./literals.md#memberpermissionstype)
 - [PermissionsType](./literals.md#permissionstype)
+- [Cloud9ServiceName](./literals.md#cloud9servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

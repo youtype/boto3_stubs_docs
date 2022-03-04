@@ -18,7 +18,9 @@ type annotations stubs module
   - [RoutingControlDeletedWaiterName](#routingcontroldeletedwaitername)
   - [RuleTypeType](#ruletypetype)
   - [StatusType](#statustype)
+  - [Route53RecoveryControlConfigServiceName](#route53recoverycontrolconfigservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [WaiterName](#waitername)
 
 <a id="clustercreatedwaitername"></a>
@@ -120,6 +122,18 @@ Values:
 - `DEPLOYED`
 - `PENDING`
 - `PENDING_DELETION`
+
+<a id="route53recoverycontrolconfigservicename"></a>
+
+## Route53RecoveryControlConfigServiceName
+
+```python
+from mypy_boto3_route53_recovery_control_config.literals import Route53RecoveryControlConfigServiceName
+```
+
+Values:
+
+- `route53-recovery-control-config`
 
 <a id="servicename"></a>
 
@@ -431,6 +445,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_route53_recovery_control_config.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="waitername"></a>
 

@@ -24,7 +24,9 @@ type annotations stubs module
   - [ServerSideEncryptionTypesType](#serversideencryptiontypestype)
   - [StateType](#statetype)
   - [TypeType](#typetype)
+  - [DataExchangeServiceName](#dataexchangeservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="assettypetype"></a>
@@ -219,6 +221,18 @@ Values:
 - `IMPORT_ASSET_FROM_SIGNED_URL`
 - `IMPORT_ASSETS_FROM_REDSHIFT_DATA_SHARES`
 - `IMPORT_ASSETS_FROM_S3`
+
+<a id="dataexchangeservicename"></a>
+
+## DataExchangeServiceName
+
+```python
+from mypy_boto3_dataexchange.literals import DataExchangeServiceName
+```
+
+Values:
+
+- `dataexchange`
 
 <a id="servicename"></a>
 
@@ -530,6 +544,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_dataexchange.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

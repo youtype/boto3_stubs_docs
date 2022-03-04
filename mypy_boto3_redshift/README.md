@@ -485,7 +485,9 @@ from mypy_boto3_redshift.literals import ActionTypeType, ...
 - [UsageLimitFeatureTypeType](./literals.md#usagelimitfeaturetypetype)
 - [UsageLimitLimitTypeType](./literals.md#usagelimitlimittypetype)
 - [UsageLimitPeriodType](./literals.md#usagelimitperiodtype)
+- [RedshiftServiceName](./literals.md#redshiftservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

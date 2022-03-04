@@ -207,7 +207,9 @@ from mypy_boto3_datasync.literals import AgentStatusType, ...
 - [TransferModeType](./literals.md#transfermodetype)
 - [UidType](./literals.md#uidtype)
 - [VerifyModeType](./literals.md#verifymodetype)
+- [DataSyncServiceName](./literals.md#datasyncservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

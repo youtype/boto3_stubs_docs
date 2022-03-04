@@ -718,7 +718,9 @@ from mypy_boto3_sagemaker.literals import ActionStatusType, ...
 - [UserProfileStatusType](./literals.md#userprofilestatustype)
 - [VariantPropertyTypeType](./literals.md#variantpropertytypetype)
 - [VariantStatusType](./literals.md#variantstatustype)
+- [SageMakerServiceName](./literals.md#sagemakerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

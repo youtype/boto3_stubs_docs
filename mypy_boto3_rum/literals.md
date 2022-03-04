@@ -14,7 +14,9 @@ type annotations stubs module
   - [ListAppMonitorsPaginatorName](#listappmonitorspaginatorname)
   - [StateEnumType](#stateenumtype)
   - [TelemetryType](#telemetrytype)
+  - [CloudWatchRUMServiceName](#cloudwatchrumservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="getappmonitordatapaginatorname"></a>
@@ -68,6 +70,18 @@ Values:
 - `errors`
 - `http`
 - `performance`
+
+<a id="cloudwatchrumservicename"></a>
+
+## CloudWatchRUMServiceName
+
+```python
+from mypy_boto3_rum.literals import CloudWatchRUMServiceName
+```
+
+Values:
+
+- `rum`
 
 <a id="servicename"></a>
 
@@ -379,6 +393,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_rum.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

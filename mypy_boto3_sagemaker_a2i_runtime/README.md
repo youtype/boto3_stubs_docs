@@ -142,7 +142,9 @@ from mypy_boto3_sagemaker_a2i_runtime.literals import ContentClassifierType, ...
 - [HumanLoopStatusType](./literals.md#humanloopstatustype)
 - [ListHumanLoopsPaginatorName](./literals.md#listhumanloopspaginatorname)
 - [SortOrderType](./literals.md#sortordertype)
+- [AugmentedAIRuntimeServiceName](./literals.md#augmentedairuntimeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

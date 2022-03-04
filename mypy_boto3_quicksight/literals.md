@@ -65,7 +65,9 @@ type annotations stubs module
   - [ThemeErrorTypeType](#themeerrortypetype)
   - [ThemeTypeType](#themetypetype)
   - [UserRoleType](#userroletype)
+  - [QuickSightServiceName](#quicksightservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="analysiserrortypetype"></a>
@@ -889,6 +891,18 @@ Values:
 - `RESTRICTED_AUTHOR`
 - `RESTRICTED_READER`
 
+<a id="quicksightservicename"></a>
+
+## QuickSightServiceName
+
+```python
+from mypy_boto3_quicksight.literals import QuickSightServiceName
+```
+
+Values:
+
+- `quicksight`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1199,6 +1213,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_quicksight.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

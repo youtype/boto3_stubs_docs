@@ -193,7 +193,9 @@ from mypy_boto3_dax.literals import ChangeTypeType, ...
 - [ParameterTypeType](./literals.md#parametertypetype)
 - [SSEStatusType](./literals.md#ssestatustype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [DAXServiceName](./literals.md#daxservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

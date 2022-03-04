@@ -29,7 +29,9 @@ type annotations stubs module
   - [TriggerTypeType](#triggertypetype)
   - [WorkflowTypeType](#workflowtypetype)
   - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
+  - [CustomerProfilesServiceName](#customerprofilesservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="conflictresolvingmodeltype"></a>
 
@@ -406,6 +408,18 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="customerprofilesservicename"></a>
+
+## CustomerProfilesServiceName
+
+```python
+from mypy_boto3_customer_profiles.literals import CustomerProfilesServiceName
+```
+
+Values:
+
+- `customer-profiles`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -716,3 +730,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_customer_profiles.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

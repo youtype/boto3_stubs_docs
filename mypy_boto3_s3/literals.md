@@ -77,7 +77,9 @@ type annotations stubs module
   - [TierType](#tiertype)
   - [TransitionStorageClassType](#transitionstorageclasstype)
   - [TypeType](#typetype)
+  - [S3ServiceName](#s3servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -1033,6 +1035,18 @@ Values:
 - `CanonicalUser`
 - `Group`
 
+<a id="s3servicename"></a>
+
+## S3ServiceName
+
+```python
+from mypy_boto3_s3.literals import S3ServiceName
+```
+
+Values:
+
+- `s3`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1343,6 +1357,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_s3.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

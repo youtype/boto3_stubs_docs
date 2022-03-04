@@ -20,7 +20,9 @@ type annotations stubs module
   - [ProfileType](#profiletype)
   - [SegmentTemplateFormatType](#segmenttemplateformattype)
   - [StreamOrderType](#streamordertype)
+  - [MediaPackageVodServiceName](#mediapackagevodservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="admarkerstype"></a>
@@ -151,6 +153,18 @@ Values:
 - `ORIGINAL`
 - `VIDEO_BITRATE_ASCENDING`
 - `VIDEO_BITRATE_DESCENDING`
+
+<a id="mediapackagevodservicename"></a>
+
+## MediaPackageVodServiceName
+
+```python
+from mypy_boto3_mediapackage_vod.literals import MediaPackageVodServiceName
+```
+
+Values:
+
+- `mediapackage-vod`
 
 <a id="servicename"></a>
 
@@ -462,6 +476,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mediapackage_vod.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

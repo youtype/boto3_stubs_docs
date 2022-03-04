@@ -172,7 +172,9 @@ from mypy_boto3_customer_profiles.literals import ConflictResolvingModelType, ..
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [WorkflowTypeType](./literals.md#workflowtypetype)
 - [ZendeskConnectorOperatorType](./literals.md#zendeskconnectoroperatortype)
+- [CustomerProfilesServiceName](./literals.md#customerprofilesservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

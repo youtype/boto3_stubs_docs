@@ -55,7 +55,9 @@ type annotations stubs module
   - [UsernameAttributeTypeType](#usernameattributetypetype)
   - [VerifiedAttributeTypeType](#verifiedattributetypetype)
   - [VerifySoftwareTokenResponseTypeType](#verifysoftwaretokenresponsetypetype)
+  - [CognitoIdentityProviderServiceName](#cognitoidentityproviderservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accounttakeovereventactiontypetype"></a>
@@ -684,6 +686,18 @@ Values:
 - `ERROR`
 - `SUCCESS`
 
+<a id="cognitoidentityproviderservicename"></a>
+
+## CognitoIdentityProviderServiceName
+
+```python
+from mypy_boto3_cognito_idp.literals import CognitoIdentityProviderServiceName
+```
+
+Values:
+
+- `cognito-idp`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -994,6 +1008,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cognito_idp.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

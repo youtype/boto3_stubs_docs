@@ -158,7 +158,9 @@ from mypy_boto3_cloudhsmv2.literals import BackupPolicyType, ...
 - [DescribeClustersPaginatorName](./literals.md#describeclusterspaginatorname)
 - [HsmStateType](./literals.md#hsmstatetype)
 - [ListTagsPaginatorName](./literals.md#listtagspaginatorname)
+- [CloudHSMV2ServiceName](./literals.md#cloudhsmv2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -53,7 +53,9 @@ type annotations stubs module
   - [SlaMetType](#slamettype)
   - [SourceTypeType](#sourcetypetype)
   - [UpdateActionStatusType](#updateactionstatustype)
+  - [ElastiCacheServiceName](#elasticacheservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -620,6 +622,18 @@ Values:
 - `stopping`
 - `waiting-to-start`
 
+<a id="elasticacheservicename"></a>
+
+## ElastiCacheServiceName
+
+```python
+from mypy_boto3_elasticache.literals import ElastiCacheServiceName
+```
+
+Values:
+
+- `elasticache`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -930,6 +944,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_elasticache.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

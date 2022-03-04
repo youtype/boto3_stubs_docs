@@ -16,7 +16,9 @@ type annotations stubs module
   - [ParticipantRoleType](#participantroletype)
   - [ScanDirectionType](#scandirectiontype)
   - [SortKeyType](#sortkeytype)
+  - [ConnectParticipantServiceName](#connectparticipantservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="artifactstatustype"></a>
 
@@ -105,6 +107,18 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="connectparticipantservicename"></a>
+
+## ConnectParticipantServiceName
+
+```python
+from mypy_boto3_connectparticipant.literals import ConnectParticipantServiceName
+```
+
+Values:
+
+- `connectparticipant`
 
 <a id="servicename"></a>
 
@@ -416,3 +430,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_connectparticipant.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

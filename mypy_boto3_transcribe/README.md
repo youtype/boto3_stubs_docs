@@ -174,7 +174,9 @@ from mypy_boto3_transcribe.literals import BaseModelNameType, ...
 - [TypeType](./literals.md#typetype)
 - [VocabularyFilterMethodType](./literals.md#vocabularyfiltermethodtype)
 - [VocabularyStateType](./literals.md#vocabularystatetype)
+- [TranscribeServiceServiceName](./literals.md#transcribeserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

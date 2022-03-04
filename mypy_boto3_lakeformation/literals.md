@@ -27,7 +27,9 @@ type annotations stubs module
   - [TransactionStatusFilterType](#transactionstatusfiltertype)
   - [TransactionStatusType](#transactionstatustype)
   - [TransactionTypeType](#transactiontypetype)
+  - [LakeFormationServiceName](#lakeformationservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="comparisonoperatortype"></a>
@@ -283,6 +285,18 @@ Values:
 
 - `READ_AND_WRITE`
 - `READ_ONLY`
+
+<a id="lakeformationservicename"></a>
+
+## LakeFormationServiceName
+
+```python
+from mypy_boto3_lakeformation.literals import LakeFormationServiceName
+```
+
+Values:
+
+- `lakeformation`
 
 <a id="servicename"></a>
 
@@ -594,6 +608,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lakeformation.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

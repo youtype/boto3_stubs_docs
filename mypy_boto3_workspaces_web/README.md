@@ -167,7 +167,9 @@ from mypy_boto3_workspaces_web.literals import BrowserTypeType, ...
 - [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - [PortalStatusType](./literals.md#portalstatustype)
 - [RendererTypeType](./literals.md#renderertypetype)
+- [WorkSpacesWebServiceName](./literals.md#workspaceswebservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

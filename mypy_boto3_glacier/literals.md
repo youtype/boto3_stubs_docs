@@ -26,7 +26,9 @@ type annotations stubs module
   - [TypeType](#typetype)
   - [VaultExistsWaiterName](#vaultexistswaitername)
   - [VaultNotExistsWaiterName](#vaultnotexistswaitername)
+  - [GlacierServiceName](#glacierservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -243,6 +245,18 @@ from mypy_boto3_glacier.literals import VaultNotExistsWaiterName
 Values:
 
 - `vault_not_exists`
+
+<a id="glacierservicename"></a>
+
+## GlacierServiceName
+
+```python
+from mypy_boto3_glacier.literals import GlacierServiceName
+```
+
+Values:
+
+- `glacier`
 
 <a id="servicename"></a>
 
@@ -554,6 +568,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_glacier.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

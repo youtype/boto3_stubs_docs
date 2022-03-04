@@ -87,8 +87,8 @@ Returns [Exceptions](#exceptions).
 
 ### associate_member_account
 
-Associates a specified AWS account with Amazon Macie Classic as a member
-account.
+(Discontinued) Associates a specified Amazon Web Services account with Amazon
+Macie Classic as a member account.
 
 Type annotations for `boto3.client("macie").associate_member_account` method.
 
@@ -106,8 +106,8 @@ Keyword-only arguments:
 
 ### associate_s3_resources
 
-Associates specified S3 resources with Amazon Macie Classic for monitoring and
-data classification.
+(Discontinued) Associates specified S3 resources with Amazon Macie Classic for
+monitoring and data classification.
 
 Type annotations for `boto3.client("macie").associate_s3_resources` method.
 
@@ -148,7 +148,7 @@ Returns `bool`.
 
 ### disassociate_member_account
 
-Removes the specified member account from Amazon Macie Classic.
+(Discontinued) Removes the specified member account from Amazon Macie Classic.
 
 Type annotations for `boto3.client("macie").disassociate_member_account`
 method.
@@ -167,7 +167,8 @@ Keyword-only arguments:
 
 ### disassociate_s3_resources
 
-Removes specified S3 resources from being monitored by Amazon Macie Classic.
+(Discontinued) Removes specified S3 resources from being monitored by Amazon
+Macie Classic.
 
 Type annotations for `boto3.client("macie").disassociate_s3_resources` method.
 
@@ -211,8 +212,8 @@ Returns `str`.
 
 ### list_member_accounts
 
-Lists all Amazon Macie Classic member accounts for the current Macie Classic
-administrator account.
+(Discontinued) Lists all Amazon Macie Classic member accounts for the current
+Macie Classic administrator account.
 
 Type annotations for `boto3.client("macie").list_member_accounts` method.
 
@@ -234,7 +235,7 @@ Returns
 
 ### list_s3_resources
 
-Lists all the S3 resources associated with Amazon Macie Classic.
+(Discontinued) Lists all the S3 resources associated with Amazon Macie Classic.
 
 Type annotations for `boto3.client("macie").list_s3_resources` method.
 
@@ -257,7 +258,7 @@ Returns
 
 ### update_s3_resources
 
-Updates the classification types for the specified S3 resources.
+(Discontinued) Updates the classification types for the specified S3 resources.
 
 Type annotations for `boto3.client("macie").update_s3_resources` method.
 

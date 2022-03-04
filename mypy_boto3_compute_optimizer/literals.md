@@ -47,7 +47,9 @@ type annotations stubs module
   - [ResourceTypeType](#resourcetypetype)
   - [ScopeNameType](#scopenametype)
   - [StatusType](#statustype)
+  - [ComputeOptimizerServiceName](#computeoptimizerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="cpuvendorarchitecturetype"></a>
 
@@ -736,6 +738,18 @@ Values:
 - `Inactive`
 - `Pending`
 
+<a id="computeoptimizerservicename"></a>
+
+## ComputeOptimizerServiceName
+
+```python
+from mypy_boto3_compute_optimizer.literals import ComputeOptimizerServiceName
+```
+
+Values:
+
+- `compute-optimizer`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1046,3 +1060,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_compute_optimizer.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

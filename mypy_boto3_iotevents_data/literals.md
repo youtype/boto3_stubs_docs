@@ -16,7 +16,9 @@ type annotations stubs module
   - [ErrorCodeType](#errorcodetype)
   - [EventTypeType](#eventtypetype)
   - [TriggerTypeType](#triggertypetype)
+  - [IoTEventsDataServiceName](#ioteventsdataservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="alarmstatenametype"></a>
 
@@ -107,6 +109,18 @@ from mypy_boto3_iotevents_data.literals import TriggerTypeType
 Values:
 
 - `SNOOZE_TIMEOUT`
+
+<a id="ioteventsdataservicename"></a>
+
+## IoTEventsDataServiceName
+
+```python
+from mypy_boto3_iotevents_data.literals import IoTEventsDataServiceName
+```
+
+Values:
+
+- `iotevents-data`
 
 <a id="servicename"></a>
 
@@ -418,3 +432,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotevents_data.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

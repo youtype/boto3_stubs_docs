@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-sso-oidc](https://pypi.org/project/mypy-boto3-sso-oidc/).
 
 - [Literals for boto3 SSOOIDC module](#literals-for-boto3-ssooidc-module)
+  - [SSOOIDCServiceName](#ssooidcservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="ssooidcservicename"></a>
+
+## SSOOIDCServiceName
+
+```python
+from mypy_boto3_sso_oidc.literals import SSOOIDCServiceName
+```
+
+Values:
+
+- `sso-oidc`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sso_oidc.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -245,7 +245,9 @@ from mypy_boto3_comprehend.literals import AugmentedManifestsDocumentTypeFormatT
 - [SentimentTypeType](./literals.md#sentimenttypetype)
 - [SplitType](./literals.md#splittype)
 - [SyntaxLanguageCodeType](./literals.md#syntaxlanguagecodetype)
+- [ComprehendServiceName](./literals.md#comprehendservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

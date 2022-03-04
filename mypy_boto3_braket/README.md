@@ -163,7 +163,9 @@ from mypy_boto3_braket.literals import CancellationStatusType, ...
 - [SearchJobsPaginatorName](./literals.md#searchjobspaginatorname)
 - [SearchQuantumTasksFilterOperatorType](./literals.md#searchquantumtasksfilteroperatortype)
 - [SearchQuantumTasksPaginatorName](./literals.md#searchquantumtaskspaginatorname)
+- [BraketServiceName](./literals.md#braketservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

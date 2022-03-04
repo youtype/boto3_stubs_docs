@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-sagemaker-featurestore-runtime](https://pypi.org/project/mypy-boto3-sagemaker-featurestore-runtime/).
 
 - [Literals for boto3 SageMakerFeatureStoreRuntime module](#literals-for-boto3-sagemakerfeaturestoreruntime-module)
+  - [SageMakerFeatureStoreRuntimeServiceName](#sagemakerfeaturestoreruntimeservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="sagemakerfeaturestoreruntimeservicename"></a>
+
+## SageMakerFeatureStoreRuntimeServiceName
+
+```python
+from mypy_boto3_sagemaker_featurestore_runtime.literals import SageMakerFeatureStoreRuntimeServiceName
+```
+
+Values:
+
+- `sagemaker-featurestore-runtime`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sagemaker_featurestore_runtime.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

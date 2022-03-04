@@ -190,7 +190,9 @@ from mypy_boto3_servicediscovery.literals import CustomHealthStatusType, ...
 - [ServiceFilterNameType](./literals.md#servicefilternametype)
 - [ServiceTypeOptionType](./literals.md#servicetypeoptiontype)
 - [ServiceTypeType](./literals.md#servicetypetype)
+- [ServiceDiscoveryServiceName](./literals.md#servicediscoveryservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

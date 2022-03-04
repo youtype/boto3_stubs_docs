@@ -132,7 +132,9 @@ from mypy_boto3_meteringmarketplace.literals import UsageRecordResultStatusType,
 ```
 
 - [UsageRecordResultStatusType](./literals.md#usagerecordresultstatustype)
+- [MarketplaceMeteringServiceName](./literals.md#marketplacemeteringservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

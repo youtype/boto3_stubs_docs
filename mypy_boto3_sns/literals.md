@@ -22,7 +22,9 @@ type annotations stubs module
   - [NumberCapabilityType](#numbercapabilitytype)
   - [RouteTypeType](#routetypetype)
   - [SMSSandboxPhoneNumberVerificationStatusType](#smssandboxphonenumberverificationstatustype)
+  - [SNSServiceName](#snsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="languagecodestringtype"></a>
@@ -185,6 +187,18 @@ Values:
 
 - `Pending`
 - `Verified`
+
+<a id="snsservicename"></a>
+
+## SNSServiceName
+
+```python
+from mypy_boto3_sns.literals import SNSServiceName
+```
+
+Values:
+
+- `sns`
 
 <a id="servicename"></a>
 
@@ -496,6 +510,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sns.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

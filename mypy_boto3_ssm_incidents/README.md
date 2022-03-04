@@ -201,7 +201,9 @@ from mypy_boto3_ssm_incidents.literals import GetResourcePoliciesPaginatorName, 
 - [TimelineEventSortType](./literals.md#timelineeventsorttype)
 - [WaitForReplicationSetActiveWaiterName](./literals.md#waitforreplicationsetactivewaitername)
 - [WaitForReplicationSetDeletedWaiterName](./literals.md#waitforreplicationsetdeletedwaitername)
+- [SSMIncidentsServiceName](./literals.md#ssmincidentsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

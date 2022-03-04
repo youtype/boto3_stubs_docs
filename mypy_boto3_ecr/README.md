@@ -247,7 +247,9 @@ from mypy_boto3_ecr.literals import DescribeImageScanFindingsPaginatorName, ...
 - [ScanningConfigurationFailureCodeType](./literals.md#scanningconfigurationfailurecodetype)
 - [ScanningRepositoryFilterTypeType](./literals.md#scanningrepositoryfiltertypetype)
 - [TagStatusType](./literals.md#tagstatustype)
+- [ECRServiceName](./literals.md#ecrservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

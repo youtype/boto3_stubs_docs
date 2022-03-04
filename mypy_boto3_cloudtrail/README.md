@@ -227,7 +227,9 @@ from mypy_boto3_cloudtrail.literals import EventCategoryType, ...
 - [LookupEventsPaginatorName](./literals.md#lookupeventspaginatorname)
 - [QueryStatusType](./literals.md#querystatustype)
 - [ReadWriteTypeType](./literals.md#readwritetypetype)
+- [CloudTrailServiceName](./literals.md#cloudtrailservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

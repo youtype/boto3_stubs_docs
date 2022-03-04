@@ -30,7 +30,9 @@ type annotations stubs module
   - [SNOMEDCTEntityTypeType](#snomedctentitytypetype)
   - [SNOMEDCTRelationshipTypeType](#snomedctrelationshiptypetype)
   - [SNOMEDCTTraitNameType](#snomedcttraitnametype)
+  - [ComprehendMedicalServiceName](#comprehendmedicalservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="attributenametype"></a>
 
@@ -377,6 +379,18 @@ Values:
 - `SIGN`
 - `SYMPTOM`
 
+<a id="comprehendmedicalservicename"></a>
+
+## ComprehendMedicalServiceName
+
+```python
+from mypy_boto3_comprehendmedical.literals import ComprehendMedicalServiceName
+```
+
+Values:
+
+- `comprehendmedical`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -687,3 +701,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_comprehendmedical.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

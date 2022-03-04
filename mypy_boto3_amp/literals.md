@@ -17,7 +17,9 @@ type annotations stubs module
   - [WorkspaceActiveWaiterName](#workspaceactivewaitername)
   - [WorkspaceDeletedWaiterName](#workspacedeletedwaitername)
   - [WorkspaceStatusCodeType](#workspacestatuscodetype)
+  - [PrometheusServiceServiceName](#prometheusserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -118,6 +120,18 @@ Values:
 - `CREATION_FAILED`
 - `DELETING`
 - `UPDATING`
+
+<a id="prometheusserviceservicename"></a>
+
+## PrometheusServiceServiceName
+
+```python
+from mypy_boto3_amp.literals import PrometheusServiceServiceName
+```
+
+Values:
+
+- `amp`
 
 <a id="servicename"></a>
 
@@ -429,6 +443,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_amp.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

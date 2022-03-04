@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-appintegrations](https://pypi.org/project/mypy-boto3-appintegrations/).
 
 - [Literals for boto3 AppIntegrationsService module](#literals-for-boto3-appintegrationsservice-module)
+  - [AppIntegrationsServiceServiceName](#appintegrationsserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="appintegrationsserviceservicename"></a>
+
+## AppIntegrationsServiceServiceName
+
+```python
+from mypy_boto3_appintegrations.literals import AppIntegrationsServiceServiceName
+```
+
+Values:
+
+- `appintegrations`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_appintegrations.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

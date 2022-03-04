@@ -21,7 +21,9 @@ type annotations stubs module
   - [SigningStatusType](#signingstatustype)
   - [SuccessfulSigningJobWaiterName](#successfulsigningjobwaitername)
   - [ValidityTypeType](#validitytypetype)
+  - [signerServiceName](#signerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -166,6 +168,18 @@ Values:
 - `DAYS`
 - `MONTHS`
 - `YEARS`
+
+<a id="signerservicename"></a>
+
+## signerServiceName
+
+```python
+from mypy_boto3_signer.literals import signerServiceName
+```
+
+Values:
+
+- `signer`
 
 <a id="servicename"></a>
 
@@ -477,6 +491,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_signer.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

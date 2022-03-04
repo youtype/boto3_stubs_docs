@@ -42,7 +42,9 @@ type annotations stubs module
   - [StateReasonCodeType](#statereasoncodetype)
   - [StateType](#statetype)
   - [TracingModeType](#tracingmodetype)
+  - [LambdaServiceName](#lambdaservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -499,6 +501,18 @@ Values:
 - `Active`
 - `PassThrough`
 
+<a id="lambdaservicename"></a>
+
+## LambdaServiceName
+
+```python
+from mypy_boto3_lambda.literals import LambdaServiceName
+```
+
+Values:
+
+- `lambda`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -809,6 +823,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lambda.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

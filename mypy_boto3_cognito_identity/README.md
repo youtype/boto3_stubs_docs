@@ -166,7 +166,9 @@ from mypy_boto3_cognito_identity.literals import AmbiguousRoleResolutionTypeType
 - [ListIdentityPoolsPaginatorName](./literals.md#listidentitypoolspaginatorname)
 - [MappingRuleMatchTypeType](./literals.md#mappingrulematchtypetype)
 - [RoleMappingTypeType](./literals.md#rolemappingtypetype)
+- [CognitoIdentityServiceName](./literals.md#cognitoidentityservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

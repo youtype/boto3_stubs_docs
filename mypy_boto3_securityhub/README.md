@@ -237,7 +237,9 @@ from mypy_boto3_securityhub.literals import AdminStatusType, ...
 - [VerificationStateType](./literals.md#verificationstatetype)
 - [WorkflowStateType](./literals.md#workflowstatetype)
 - [WorkflowStatusType](./literals.md#workflowstatustype)
+- [SecurityHubServiceName](./literals.md#securityhubservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

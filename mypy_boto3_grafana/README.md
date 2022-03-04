@@ -159,7 +159,9 @@ from mypy_boto3_grafana.literals import AccountAccessTypeType, ...
 - [UpdateActionType](./literals.md#updateactiontype)
 - [UserTypeType](./literals.md#usertypetype)
 - [WorkspaceStatusType](./literals.md#workspacestatustype)
+- [ManagedGrafanaServiceName](./literals.md#managedgrafanaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

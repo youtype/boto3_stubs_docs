@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 IoT1ClickDevicesService module](#literals-for-boto3-iot1clickdevicesservice-module)
   - [ListDeviceEventsPaginatorName](#listdeviceeventspaginatorname)
   - [ListDevicesPaginatorName](#listdevicespaginatorname)
+  - [IoT1ClickDevicesServiceServiceName](#iot1clickdevicesserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listdeviceeventspaginatorname"></a>
@@ -38,6 +40,18 @@ from mypy_boto3_iot1click_devices.literals import ListDevicesPaginatorName
 Values:
 
 - `list_devices`
+
+<a id="iot1clickdevicesserviceservicename"></a>
+
+## IoT1ClickDevicesServiceServiceName
+
+```python
+from mypy_boto3_iot1click_devices.literals import IoT1ClickDevicesServiceServiceName
+```
+
+Values:
+
+- `iot1click-devices`
 
 <a id="servicename"></a>
 
@@ -349,6 +363,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iot1click_devices.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

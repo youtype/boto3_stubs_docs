@@ -261,7 +261,9 @@ from mypy_boto3_emr.literals import ActionOnFailureType, ...
 - [StepStateChangeReasonCodeType](./literals.md#stepstatechangereasoncodetype)
 - [StepStateType](./literals.md#stepstatetype)
 - [UnitType](./literals.md#unittype)
+- [EMRServiceName](./literals.md#emrservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

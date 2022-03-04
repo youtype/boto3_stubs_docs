@@ -63,7 +63,9 @@ type annotations stubs module
   - [UserTypeType](#usertypetype)
   - [VideoMuxTypeType](#videomuxtypetype)
   - [VoiceConnectorAwsRegionType](#voiceconnectorawsregiontype)
+  - [ChimeServiceName](#chimeservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accountstatustype"></a>
@@ -816,6 +818,18 @@ Values:
 - `us-east-1`
 - `us-west-2`
 
+<a id="chimeservicename"></a>
+
+## ChimeServiceName
+
+```python
+from mypy_boto3_chime.literals import ChimeServiceName
+```
+
+Values:
+
+- `chime`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1126,6 +1140,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_chime.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

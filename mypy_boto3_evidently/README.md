@@ -190,7 +190,9 @@ from mypy_boto3_evidently.literals import ChangeDirectionEnumType, ...
 - [ListProjectsPaginatorName](./literals.md#listprojectspaginatorname)
 - [ProjectStatusType](./literals.md#projectstatustype)
 - [VariationValueTypeType](./literals.md#variationvaluetypetype)
+- [CloudWatchEvidentlyServiceName](./literals.md#cloudwatchevidentlyservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -18,7 +18,9 @@ type annotations stubs module
   - [PermissionsModeType](#permissionsmodetype)
   - [S3ObjectEncryptionTypeType](#s3objectencryptiontypetype)
   - [StreamStatusType](#streamstatustype)
+  - [QLDBServiceName](#qldbservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="encryptionstatustype"></a>
 
@@ -132,6 +134,18 @@ Values:
 - `COMPLETED`
 - `FAILED`
 - `IMPAIRED`
+
+<a id="qldbservicename"></a>
+
+## QLDBServiceName
+
+```python
+from mypy_boto3_qldb.literals import QLDBServiceName
+```
+
+Values:
+
+- `qldb`
 
 <a id="servicename"></a>
 
@@ -443,3 +457,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_qldb.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

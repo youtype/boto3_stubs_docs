@@ -111,10 +111,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_personalize_runtime.literals import ServiceName, ...
+from mypy_boto3_personalize_runtime.literals import PersonalizeRuntimeServiceName, ...
 ```
 
+- [PersonalizeRuntimeServiceName](./literals.md#personalizeruntimeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

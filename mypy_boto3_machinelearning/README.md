@@ -205,7 +205,9 @@ from mypy_boto3_machinelearning.literals import AlgorithmType, ...
 - [RealtimeEndpointStatusType](./literals.md#realtimeendpointstatustype)
 - [SortOrderType](./literals.md#sortordertype)
 - [TaggableResourceTypeType](./literals.md#taggableresourcetypetype)
+- [MachineLearningServiceName](./literals.md#machinelearningservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

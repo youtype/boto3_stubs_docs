@@ -179,7 +179,9 @@ from mypy_boto3_ivs.literals import ChannelLatencyModeType, ...
 - [RecordingModeType](./literals.md#recordingmodetype)
 - [StreamHealthType](./literals.md#streamhealthtype)
 - [StreamStateType](./literals.md#streamstatetype)
+- [IVSServiceName](./literals.md#ivsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

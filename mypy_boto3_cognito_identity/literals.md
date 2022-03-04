@@ -15,7 +15,9 @@ type annotations stubs module
   - [ListIdentityPoolsPaginatorName](#listidentitypoolspaginatorname)
   - [MappingRuleMatchTypeType](#mappingrulematchtypetype)
   - [RoleMappingTypeType](#rolemappingtypetype)
+  - [CognitoIdentityServiceName](#cognitoidentityservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="ambiguousroleresolutiontypetype"></a>
@@ -83,6 +85,18 @@ Values:
 
 - `Rules`
 - `Token`
+
+<a id="cognitoidentityservicename"></a>
+
+## CognitoIdentityServiceName
+
+```python
+from mypy_boto3_cognito_identity.literals import CognitoIdentityServiceName
+```
+
+Values:
+
+- `cognito-identity`
 
 <a id="servicename"></a>
 
@@ -394,6 +408,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cognito_identity.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -160,7 +160,9 @@ from mypy_boto3_cloudcontrol.literals import HandlerErrorCodeType, ...
 - [OperationStatusType](./literals.md#operationstatustype)
 - [OperationType](./literals.md#operationtype)
 - [ResourceRequestSuccessWaiterName](./literals.md#resourcerequestsuccesswaitername)
+- [CloudControlApiServiceName](./literals.md#cloudcontrolapiservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [WaiterName](./literals.md#waitername)
 
 <a id="typed-dictionaries"></a>

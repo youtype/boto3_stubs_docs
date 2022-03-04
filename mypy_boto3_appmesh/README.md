@@ -208,7 +208,9 @@ from mypy_boto3_appmesh.literals import DefaultGatewayRouteRewriteType, ...
 - [VirtualNodeStatusCodeType](./literals.md#virtualnodestatuscodetype)
 - [VirtualRouterStatusCodeType](./literals.md#virtualrouterstatuscodetype)
 - [VirtualServiceStatusCodeType](./literals.md#virtualservicestatuscodetype)
+- [AppMeshServiceName](./literals.md#appmeshservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -41,6 +41,11 @@ paginator = client.get_paginator("list_accesses")
 for item in paginator.paginate(...):
     # item has type ListAccessesResponseTypeDef
     print(item)
+
+# waiter has type ServerOfflineWaiter and provides type checking
+# and code completion for wait method
+waiter = client.get_waiter("server_offline")
+waiter.wait()
 ```
 
 <a id="explicit-type-annotations"></a>
@@ -60,9 +65,9 @@ import boto3
 
 from mypy_boto3_transfer.client import TransferClient
 from mypy_boto3_transfer.paginator import ListAccessesPaginator
-
+from mypy_boto3_transfer.waiter import ServerOfflineWaiter
 from mypy_boto3_transfer.literals import PaginatorName
-
+from mypy_boto3_transfer.literals import WaiterName
 from mypy_boto3_transfer.type_defs import bool
 from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
 
@@ -78,4 +83,8 @@ paginator: ListAccessesPaginator = client.get_paginator(paginator_name)
 for item in paginator.paginate(...):
     item: ListAccessesResponseTypeDef
     print(item)
+
+waiter_name: WaiterName = "server_offline"
+waiter: ServerOfflineWaiter = client.get_waiter(waiter_name)
+waiter.wait()
 ```

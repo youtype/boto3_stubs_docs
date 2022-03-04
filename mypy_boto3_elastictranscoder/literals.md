@@ -15,7 +15,9 @@ type annotations stubs module
   - [ListJobsByStatusPaginatorName](#listjobsbystatuspaginatorname)
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
   - [ListPresetsPaginatorName](#listpresetspaginatorname)
+  - [ElasticTranscoderServiceName](#elastictranscoderservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -78,6 +80,18 @@ from mypy_boto3_elastictranscoder.literals import ListPresetsPaginatorName
 Values:
 
 - `list_presets`
+
+<a id="elastictranscoderservicename"></a>
+
+## ElasticTranscoderServiceName
+
+```python
+from mypy_boto3_elastictranscoder.literals import ElasticTranscoderServiceName
+```
+
+Values:
+
+- `elastictranscoder`
 
 <a id="servicename"></a>
 
@@ -389,6 +403,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_elastictranscoder.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -51,7 +51,9 @@ type annotations stubs module
   - [SortValueType](#sortvaluetype)
   - [TemperatureUnitType](#temperatureunittype)
   - [WakeWordType](#wakewordtype)
+  - [AlexaForBusinessServiceName](#alexaforbusinessservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="businessreportfailurecodetype"></a>
@@ -619,6 +621,18 @@ Values:
 - `COMPUTER`
 - `ECHO`
 
+<a id="alexaforbusinessservicename"></a>
+
+## AlexaForBusinessServiceName
+
+```python
+from mypy_boto3_alexaforbusiness.literals import AlexaForBusinessServiceName
+```
+
+Values:
+
+- `alexaforbusiness`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -929,6 +943,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_alexaforbusiness.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

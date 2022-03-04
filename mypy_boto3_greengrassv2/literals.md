@@ -34,7 +34,9 @@ type annotations stubs module
   - [ListEffectiveDeploymentsPaginatorName](#listeffectivedeploymentspaginatorname)
   - [ListInstalledComponentsPaginatorName](#listinstalledcomponentspaginatorname)
   - [RecipeOutputFormatType](#recipeoutputformattype)
+  - [GreengrassV2ServiceName](#greengrassv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="cloudcomponentstatetype"></a>
@@ -360,6 +362,18 @@ Values:
 - `JSON`
 - `YAML`
 
+<a id="greengrassv2servicename"></a>
+
+## GreengrassV2ServiceName
+
+```python
+from mypy_boto3_greengrassv2.literals import GreengrassV2ServiceName
+```
+
+Values:
+
+- `greengrassv2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -670,6 +684,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_greengrassv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

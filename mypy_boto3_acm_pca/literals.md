@@ -32,7 +32,9 @@ type annotations stubs module
   - [S3ObjectAclType](#s3objectacltype)
   - [SigningAlgorithmType](#signingalgorithmtype)
   - [ValidityPeriodTypeType](#validityperiodtypetype)
+  - [ACMPCAServiceName](#acmpcaservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -346,6 +348,18 @@ Values:
 - `MONTHS`
 - `YEARS`
 
+<a id="acmpcaservicename"></a>
+
+## ACMPCAServiceName
+
+```python
+from mypy_boto3_acm_pca.literals import ACMPCAServiceName
+```
+
+Values:
+
+- `acm-pca`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -656,6 +670,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_acm_pca.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

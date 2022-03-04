@@ -479,7 +479,9 @@ from mypy_boto3_iam.literals import AccessAdvisorUsageGranularityTypeType, ...
 - [sortKeyTypeType](./literals.md#sortkeytypetype)
 - [statusTypeType](./literals.md#statustypetype)
 - [summaryKeyTypeType](./literals.md#summarykeytypetype)
+- [IAMServiceName](./literals.md#iamservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

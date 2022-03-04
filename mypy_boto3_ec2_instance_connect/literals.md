@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-ec2-instance-connect](https://pypi.org/project/mypy-boto3-ec2-instance-connect/).
 
 - [Literals for boto3 EC2InstanceConnect module](#literals-for-boto3-ec2instanceconnect-module)
+  - [EC2InstanceConnectServiceName](#ec2instanceconnectservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="ec2instanceconnectservicename"></a>
+
+## EC2InstanceConnectServiceName
+
+```python
+from mypy_boto3_ec2_instance_connect.literals import EC2InstanceConnectServiceName
+```
+
+Values:
+
+- `ec2-instance-connect`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ec2_instance_connect.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

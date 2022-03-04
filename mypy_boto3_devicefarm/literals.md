@@ -58,7 +58,9 @@ type annotations stubs module
   - [UploadCategoryType](#uploadcategorytype)
   - [UploadStatusType](#uploadstatustype)
   - [UploadTypeType](#uploadtypetype)
+  - [DeviceFarmServiceName](#devicefarmservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="artifactcategorytype"></a>
@@ -802,6 +804,18 @@ Values:
 - `XCTEST_UI_TEST_PACKAGE`
 - `XCTEST_UI_TEST_SPEC`
 
+<a id="devicefarmservicename"></a>
+
+## DeviceFarmServiceName
+
+```python
+from mypy_boto3_devicefarm.literals import DeviceFarmServiceName
+```
+
+Values:
+
+- `devicefarm`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1112,6 +1126,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_devicefarm.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

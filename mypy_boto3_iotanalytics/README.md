@@ -186,7 +186,9 @@ from mypy_boto3_iotanalytics.literals import ChannelStatusType, ...
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
 - [LoggingLevelType](./literals.md#loggingleveltype)
 - [ReprocessingStatusType](./literals.md#reprocessingstatustype)
+- [IoTAnalyticsServiceName](./literals.md#iotanalyticsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

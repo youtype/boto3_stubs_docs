@@ -188,7 +188,9 @@ from mypy_boto3_mediatailor.literals import AccessTypeType, ...
 - [RelativePositionType](./literals.md#relativepositiontype)
 - [ScheduleEntryTypeType](./literals.md#scheduleentrytypetype)
 - [TypeType](./literals.md#typetype)
+- [MediaTailorServiceName](./literals.md#mediatailorservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -400,7 +400,9 @@ from mypy_boto3_cloudformation.literals import AccountGateStatusType, ...
 - [TypeTestsStatusType](./literals.md#typetestsstatustype)
 - [VersionBumpType](./literals.md#versionbumptype)
 - [VisibilityType](./literals.md#visibilitytype)
+- [CloudFormationServiceName](./literals.md#cloudformationservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

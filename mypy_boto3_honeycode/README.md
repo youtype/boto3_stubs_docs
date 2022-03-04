@@ -165,7 +165,9 @@ from mypy_boto3_honeycode.literals import ErrorCodeType, ...
 - [QueryTableRowsPaginatorName](./literals.md#querytablerowspaginatorname)
 - [TableDataImportJobStatusType](./literals.md#tabledataimportjobstatustype)
 - [UpsertActionType](./literals.md#upsertactiontype)
+- [HoneycodeServiceName](./literals.md#honeycodeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

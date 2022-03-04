@@ -126,7 +126,9 @@ from mypy_boto3_ebs.literals import ChecksumAggregationMethodType, ...
 - [ChecksumAggregationMethodType](./literals.md#checksumaggregationmethodtype)
 - [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - [StatusType](./literals.md#statustype)
+- [EBSServiceName](./literals.md#ebsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

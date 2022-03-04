@@ -18,7 +18,9 @@ type annotations stubs module
   - [ReportVersioningType](#reportversioningtype)
   - [SchemaElementType](#schemaelementtype)
   - [TimeUnitType](#timeunittype)
+  - [CostandUsageReportServiceServiceName](#costandusagereportserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="awsregiontype"></a>
@@ -146,6 +148,18 @@ Values:
 - `DAILY`
 - `HOURLY`
 - `MONTHLY`
+
+<a id="costandusagereportserviceservicename"></a>
+
+## CostandUsageReportServiceServiceName
+
+```python
+from mypy_boto3_cur.literals import CostandUsageReportServiceServiceName
+```
+
+Values:
+
+- `cur`
 
 <a id="servicename"></a>
 
@@ -457,6 +471,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cur.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

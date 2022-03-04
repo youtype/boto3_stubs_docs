@@ -192,7 +192,9 @@ from mypy_boto3_backup.literals import BackupJobStateType, ...
 - [RecoveryPointStatusType](./literals.md#recoverypointstatustype)
 - [RestoreJobStatusType](./literals.md#restorejobstatustype)
 - [StorageClassType](./literals.md#storageclasstype)
+- [BackupServiceName](./literals.md#backupservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

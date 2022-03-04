@@ -34,7 +34,9 @@ type annotations stubs module
   - [ScanningConfigurationFailureCodeType](#scanningconfigurationfailurecodetype)
   - [ScanningRepositoryFilterTypeType](#scanningrepositoryfiltertypetype)
   - [TagStatusType](#tagstatustype)
+  - [ECRServiceName](#ecrservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -358,6 +360,18 @@ Values:
 - `TAGGED`
 - `UNTAGGED`
 
+<a id="ecrservicename"></a>
+
+## ECRServiceName
+
+```python
+from mypy_boto3_ecr.literals import ECRServiceName
+```
+
+Values:
+
+- `ecr`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -668,6 +682,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ecr.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

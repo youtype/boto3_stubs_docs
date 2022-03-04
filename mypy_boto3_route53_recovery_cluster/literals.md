@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 Route53RecoveryCluster module](#literals-for-boto3-route53recoverycluster-module)
   - [RoutingControlStateType](#routingcontrolstatetype)
+  - [Route53RecoveryClusterServiceName](#route53recoveryclusterservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="routingcontrolstatetype"></a>
 
@@ -25,6 +27,18 @@ Values:
 
 - `Off`
 - `On`
+
+<a id="route53recoveryclusterservicename"></a>
+
+## Route53RecoveryClusterServiceName
+
+```python
+from mypy_boto3_route53_recovery_cluster.literals import Route53RecoveryClusterServiceName
+```
+
+Values:
+
+- `route53-recovery-cluster`
 
 <a id="servicename"></a>
 
@@ -336,3 +350,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_route53_recovery_cluster.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

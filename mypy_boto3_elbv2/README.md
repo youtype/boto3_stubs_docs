@@ -250,7 +250,9 @@ from mypy_boto3_elbv2.literals import ActionTypeEnumType, ...
 - [TargetHealthStateEnumType](./literals.md#targethealthstateenumtype)
 - [TargetInServiceWaiterName](./literals.md#targetinservicewaitername)
 - [TargetTypeEnumType](./literals.md#targettypeenumtype)
+- [ElasticLoadBalancingv2ServiceName](./literals.md#elasticloadbalancingv2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

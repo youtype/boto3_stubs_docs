@@ -287,7 +287,9 @@ from mypy_boto3_servicecatalog.literals import AccessLevelFilterKeyType, ...
 - [StackInstanceStatusType](./literals.md#stackinstancestatustype)
 - [StackSetOperationTypeType](./literals.md#stacksetoperationtypetype)
 - [StatusType](./literals.md#statustype)
+- [ServiceCatalogServiceName](./literals.md#servicecatalogservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -66,7 +66,9 @@ type annotations stubs module
   - [StringComparisonType](#stringcomparisontype)
   - [TitleSortByType](#titlesortbytype)
   - [UsageTypeType](#usagetypetype)
+  - [Inspector2ServiceName](#inspector2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accountsortbytype"></a>
@@ -882,6 +884,18 @@ Values:
 - `ECR_INITIAL_SCAN`
 - `ECR_RESCAN`
 
+<a id="inspector2servicename"></a>
+
+## Inspector2ServiceName
+
+```python
+from mypy_boto3_inspector2.literals import Inspector2ServiceName
+```
+
+Values:
+
+- `inspector2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1192,6 +1206,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_inspector2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

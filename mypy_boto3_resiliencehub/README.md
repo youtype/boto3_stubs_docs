@@ -180,7 +180,9 @@ from mypy_boto3_resiliencehub.literals import AlarmTypeType, ...
 - [TemplateFormatType](./literals.md#templateformattype)
 - [TestRiskType](./literals.md#testrisktype)
 - [TestTypeType](./literals.md#testtypetype)
+- [ResilienceHubServiceName](./literals.md#resiliencehubservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

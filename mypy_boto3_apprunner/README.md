@@ -156,7 +156,9 @@ from mypy_boto3_apprunner.literals import AutoScalingConfigurationStatusType, ..
 - [ServiceStatusType](./literals.md#servicestatustype)
 - [SourceCodeVersionTypeType](./literals.md#sourcecodeversiontypetype)
 - [VpcConnectorStatusType](./literals.md#vpcconnectorstatustype)
+- [AppRunnerServiceName](./literals.md#apprunnerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

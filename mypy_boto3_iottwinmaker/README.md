@@ -155,7 +155,9 @@ from mypy_boto3_iottwinmaker.literals import ComponentUpdateTypeType, ...
 - [ScopeType](./literals.md#scopetype)
 - [StateType](./literals.md#statetype)
 - [TypeType](./literals.md#typetype)
+- [IoTTwinMakerServiceName](./literals.md#iottwinmakerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

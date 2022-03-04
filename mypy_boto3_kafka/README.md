@@ -192,7 +192,9 @@ from mypy_boto3_kafka.literals import BrokerAZDistributionType, ...
 - [ListNodesPaginatorName](./literals.md#listnodespaginatorname)
 - [ListScramSecretsPaginatorName](./literals.md#listscramsecretspaginatorname)
 - [NodeTypeType](./literals.md#nodetypetype)
+- [KafkaServiceName](./literals.md#kafkaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -20,7 +20,9 @@ type annotations stubs module
   - [ManagedCredentialsStatusType](#managedcredentialsstatustype)
   - [MemberPermissionsType](#memberpermissionstype)
   - [PermissionsType](#permissionstype)
+  - [Cloud9ServiceName](#cloud9servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="connectiontypetype"></a>
@@ -168,6 +170,18 @@ Values:
 - `owner`
 - `read-only`
 - `read-write`
+
+<a id="cloud9servicename"></a>
+
+## Cloud9ServiceName
+
+```python
+from mypy_boto3_cloud9.literals import Cloud9ServiceName
+```
+
+Values:
+
+- `cloud9`
 
 <a id="servicename"></a>
 
@@ -479,6 +493,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloud9.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

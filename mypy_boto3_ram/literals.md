@@ -25,7 +25,9 @@ type annotations stubs module
   - [ResourceShareInvitationStatusType](#resourceshareinvitationstatustype)
   - [ResourceShareStatusType](#resourcesharestatustype)
   - [ResourceStatusType](#resourcestatustype)
+  - [RAMServiceName](#ramservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="getresourcepoliciespaginatorname"></a>
@@ -229,6 +231,18 @@ Values:
 - `PENDING`
 - `UNAVAILABLE`
 - `ZONAL_RESOURCE_INACCESSIBLE`
+
+<a id="ramservicename"></a>
+
+## RAMServiceName
+
+```python
+from mypy_boto3_ram.literals import RAMServiceName
+```
+
+Values:
+
+- `ram`
 
 <a id="servicename"></a>
 
@@ -540,6 +554,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ram.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

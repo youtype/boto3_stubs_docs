@@ -166,7 +166,9 @@ from mypy_boto3_codeguruprofiler.literals import ActionGroupType, ...
 - [MetadataFieldType](./literals.md#metadatafieldtype)
 - [MetricTypeType](./literals.md#metrictypetype)
 - [OrderByType](./literals.md#orderbytype)
+- [CodeGuruProfilerServiceName](./literals.md#codeguruprofilerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

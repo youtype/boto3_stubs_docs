@@ -433,7 +433,9 @@ type annotations stubs module
   - [VpnStaticRouteSourceType](#vpnstaticroutesourcetype)
   - [WeekDayType](#weekdaytype)
   - [scopeType](#scopetype)
+  - [EC2ServiceName](#ec2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -6717,6 +6719,18 @@ Values:
 - `Availability Zone`
 - `Region`
 
+<a id="ec2servicename"></a>
+
+## EC2ServiceName
+
+```python
+from mypy_boto3_ec2.literals import EC2ServiceName
+```
+
+Values:
+
+- `ec2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -7027,6 +7041,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ec2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

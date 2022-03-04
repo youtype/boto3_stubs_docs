@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-identitystore](https://pypi.org/project/mypy-boto3-identitystore/).
 
 - [Literals for boto3 IdentityStore module](#literals-for-boto3-identitystore-module)
+  - [IdentityStoreServiceName](#identitystoreservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="identitystoreservicename"></a>
+
+## IdentityStoreServiceName
+
+```python
+from mypy_boto3_identitystore.literals import IdentityStoreServiceName
+```
+
+Values:
+
+- `identitystore`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_identitystore.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

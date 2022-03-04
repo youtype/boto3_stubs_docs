@@ -14,7 +14,9 @@ type annotations stubs module
   - [FilterTypeType](#filtertypetype)
   - [GetAttributeValuesPaginatorName](#getattributevaluespaginatorname)
   - [GetProductsPaginatorName](#getproductspaginatorname)
+  - [PricingServiceName](#pricingservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="describeservicespaginatorname"></a>
@@ -64,6 +66,18 @@ from mypy_boto3_pricing.literals import GetProductsPaginatorName
 Values:
 
 - `get_products`
+
+<a id="pricingservicename"></a>
+
+## PricingServiceName
+
+```python
+from mypy_boto3_pricing.literals import PricingServiceName
+```
+
+Values:
+
+- `pricing`
 
 <a id="servicename"></a>
 
@@ -375,6 +389,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_pricing.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

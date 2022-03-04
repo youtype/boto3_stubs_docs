@@ -164,7 +164,9 @@ from mypy_boto3_translate.literals import DirectionalityType, ...
 - [ParallelDataStatusType](./literals.md#paralleldatastatustype)
 - [ProfanityType](./literals.md#profanitytype)
 - [TerminologyDataFormatType](./literals.md#terminologydataformattype)
+- [TranslateServiceName](./literals.md#translateservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

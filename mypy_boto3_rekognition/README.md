@@ -264,7 +264,9 @@ from mypy_boto3_rekognition.literals import AttributeType, ...
 - [TextTypesType](./literals.md#texttypestype)
 - [VideoColorRangeType](./literals.md#videocolorrangetype)
 - [VideoJobStatusType](./literals.md#videojobstatustype)
+- [RekognitionServiceName](./literals.md#rekognitionservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

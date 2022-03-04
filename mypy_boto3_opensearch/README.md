@@ -186,7 +186,9 @@ from mypy_boto3_opensearch.literals import AutoTuneDesiredStateType, ...
 - [UpgradeStatusType](./literals.md#upgradestatustype)
 - [UpgradeStepType](./literals.md#upgradesteptype)
 - [VolumeTypeType](./literals.md#volumetypetype)
+- [OpenSearchServiceServiceName](./literals.md#opensearchserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

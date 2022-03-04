@@ -219,7 +219,9 @@ from mypy_boto3_license_manager.literals import AllowedOperationType, ...
 - [ReportTypeType](./literals.md#reporttypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [TokenTypeType](./literals.md#tokentypetype)
+- [LicenseManagerServiceName](./literals.md#licensemanagerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -236,7 +236,9 @@ from mypy_boto3_robomaker.literals import ArchitectureType, ...
 - [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - [WorldGenerationJobErrorCodeType](./literals.md#worldgenerationjoberrorcodetype)
 - [WorldGenerationJobStatusType](./literals.md#worldgenerationjobstatustype)
+- [RoboMakerServiceName](./literals.md#robomakerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

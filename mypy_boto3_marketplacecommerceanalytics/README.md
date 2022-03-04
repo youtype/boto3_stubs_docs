@@ -115,7 +115,9 @@ from mypy_boto3_marketplacecommerceanalytics.literals import DataSetTypeType, ..
 
 - [DataSetTypeType](./literals.md#datasettypetype)
 - [SupportDataSetTypeType](./literals.md#supportdatasettypetype)
+- [MarketplaceCommerceAnalyticsServiceName](./literals.md#marketplacecommerceanalyticsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

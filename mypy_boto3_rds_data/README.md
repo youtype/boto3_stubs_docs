@@ -124,7 +124,9 @@ from mypy_boto3_rds_data.literals import DecimalReturnTypeType, ...
 
 - [DecimalReturnTypeType](./literals.md#decimalreturntypetype)
 - [TypeHintType](./literals.md#typehinttype)
+- [RDSDataServiceServiceName](./literals.md#rdsdataserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

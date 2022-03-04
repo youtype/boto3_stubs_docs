@@ -22,7 +22,9 @@ type annotations stubs module
   - [TranscribePartialResultsStabilityType](#transcribepartialresultsstabilitytype)
   - [TranscribeRegionType](#transcriberegiontype)
   - [TranscribeVocabularyFilterMethodType](#transcribevocabularyfiltermethodtype)
+  - [ChimeSDKMeetingsServiceName](#chimesdkmeetingsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="meetingfeaturestatustype"></a>
 
@@ -206,6 +208,18 @@ Values:
 - `mask`
 - `remove`
 - `tag`
+
+<a id="chimesdkmeetingsservicename"></a>
+
+## ChimeSDKMeetingsServiceName
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import ChimeSDKMeetingsServiceName
+```
+
+Values:
+
+- `chime-sdk-meetings`
 
 <a id="servicename"></a>
 
@@ -517,3 +531,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_chime_sdk_meetings.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

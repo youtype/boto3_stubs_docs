@@ -13,7 +13,9 @@ type annotations stubs module
   - [EndpointAccessTypeType](#endpointaccesstypetype)
   - [EndpointStatusType](#endpointstatustype)
   - [ListEndpointsPaginatorName](#listendpointspaginatorname)
+  - [S3OutpostsServiceName](#s3outpostsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="endpointaccesstypetype"></a>
@@ -54,6 +56,18 @@ from mypy_boto3_s3outposts.literals import ListEndpointsPaginatorName
 Values:
 
 - `list_endpoints`
+
+<a id="s3outpostsservicename"></a>
+
+## S3OutpostsServiceName
+
+```python
+from mypy_boto3_s3outposts.literals import S3OutpostsServiceName
+```
+
+Values:
+
+- `s3outposts`
 
 <a id="servicename"></a>
 
@@ -365,6 +379,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_s3outposts.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

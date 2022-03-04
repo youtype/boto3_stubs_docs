@@ -13,7 +13,9 @@ type annotations stubs module
   - [DetailStatusType](#detailstatustype)
   - [FeatureStatusType](#featurestatustype)
   - [ServiceTypeType](#servicetypetype)
+  - [PIServiceName](#piservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="detailstatustype"></a>
 
@@ -58,6 +60,18 @@ Values:
 
 - `DOCDB`
 - `RDS`
+
+<a id="piservicename"></a>
+
+## PIServiceName
+
+```python
+from mypy_boto3_pi.literals import PIServiceName
+```
+
+Values:
+
+- `pi`
 
 <a id="servicename"></a>
 
@@ -369,3 +383,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_pi.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

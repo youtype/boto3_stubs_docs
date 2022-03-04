@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 MarketplaceEntitlementService module](#literals-for-boto3-marketplaceentitlementservice-module)
   - [GetEntitlementFilterNameType](#getentitlementfilternametype)
   - [GetEntitlementsPaginatorName](#getentitlementspaginatorname)
+  - [MarketplaceEntitlementServiceServiceName](#marketplaceentitlementserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="getentitlementfilternametype"></a>
@@ -39,6 +41,18 @@ from mypy_boto3_marketplace_entitlement.literals import GetEntitlementsPaginator
 Values:
 
 - `get_entitlements`
+
+<a id="marketplaceentitlementserviceservicename"></a>
+
+## MarketplaceEntitlementServiceServiceName
+
+```python
+from mypy_boto3_marketplace_entitlement.literals import MarketplaceEntitlementServiceServiceName
+```
+
+Values:
+
+- `marketplace-entitlement`
 
 <a id="servicename"></a>
 
@@ -350,6 +364,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_marketplace_entitlement.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

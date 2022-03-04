@@ -21,7 +21,9 @@ type annotations stubs module
   - [TaskStatusType](#taskstatustype)
   - [TextTypeType](#texttypetype)
   - [VoiceIdType](#voiceidtype)
+  - [PollyServiceName](#pollyservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="describevoicespaginatorname"></a>
@@ -261,6 +263,18 @@ Values:
 - `Vitoria`
 - `Zeina`
 - `Zhiyu`
+
+<a id="pollyservicename"></a>
+
+## PollyServiceName
+
+```python
+from mypy_boto3_polly.literals import PollyServiceName
+```
+
+Values:
+
+- `polly`
 
 <a id="servicename"></a>
 
@@ -572,6 +586,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_polly.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

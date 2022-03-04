@@ -22,7 +22,9 @@ type annotations stubs module
   - [ThroughputModeType](#throughputmodetype)
   - [TransitionToIARulesType](#transitiontoiarulestype)
   - [TransitionToPrimaryStorageClassRulesType](#transitiontoprimarystorageclassrulestype)
+  - [EFSServiceName](#efsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="describefilesystemspaginatorname"></a>
@@ -187,6 +189,18 @@ from mypy_boto3_efs.literals import TransitionToPrimaryStorageClassRulesType
 Values:
 
 - `AFTER_1_ACCESS`
+
+<a id="efsservicename"></a>
+
+## EFSServiceName
+
+```python
+from mypy_boto3_efs.literals import EFSServiceName
+```
+
+Values:
+
+- `efs`
 
 <a id="servicename"></a>
 
@@ -498,6 +512,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_efs.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -157,7 +157,9 @@ from mypy_boto3_kafkaconnect.literals import ConnectorStateType, ...
 - [ListConnectorsPaginatorName](./literals.md#listconnectorspaginatorname)
 - [ListCustomPluginsPaginatorName](./literals.md#listcustompluginspaginatorname)
 - [ListWorkerConfigurationsPaginatorName](./literals.md#listworkerconfigurationspaginatorname)
+- [KafkaConnectServiceName](./literals.md#kafkaconnectservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

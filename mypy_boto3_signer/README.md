@@ -183,7 +183,9 @@ from mypy_boto3_signer.literals import CategoryType, ...
 - [SigningStatusType](./literals.md#signingstatustype)
 - [SuccessfulSigningJobWaiterName](./literals.md#successfulsigningjobwaitername)
 - [ValidityTypeType](./literals.md#validitytypetype)
+- [signerServiceName](./literals.md#signerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

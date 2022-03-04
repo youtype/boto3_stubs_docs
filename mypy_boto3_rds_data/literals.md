@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 RDSDataService module](#literals-for-boto3-rdsdataservice-module)
   - [DecimalReturnTypeType](#decimalreturntypetype)
   - [TypeHintType](#typehinttype)
+  - [RDSDataServiceServiceName](#rdsdataserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="decimalreturntypetype"></a>
 
@@ -43,6 +45,18 @@ Values:
 - `TIME`
 - `TIMESTAMP`
 - `UUID`
+
+<a id="rdsdataserviceservicename"></a>
+
+## RDSDataServiceServiceName
+
+```python
+from mypy_boto3_rds_data.literals import RDSDataServiceServiceName
+```
+
+Values:
+
+- `rds-data`
 
 <a id="servicename"></a>
 
@@ -354,3 +368,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_rds_data.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

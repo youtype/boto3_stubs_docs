@@ -19,7 +19,9 @@ type annotations stubs module
   - [InputStatusType](#inputstatustype)
   - [LoggingLevelType](#loggingleveltype)
   - [PayloadTypeType](#payloadtypetype)
+  - [IoTEventsServiceName](#ioteventsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="alarmmodelversionstatustype"></a>
 
@@ -153,6 +155,18 @@ Values:
 
 - `JSON`
 - `STRING`
+
+<a id="ioteventsservicename"></a>
+
+## IoTEventsServiceName
+
+```python
+from mypy_boto3_iotevents.literals import IoTEventsServiceName
+```
+
+Values:
+
+- `iotevents`
 
 <a id="servicename"></a>
 
@@ -464,3 +478,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotevents.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -193,7 +193,9 @@ from mypy_boto3_greengrassv2.literals import CloudComponentStateType, ...
 - [ListEffectiveDeploymentsPaginatorName](./literals.md#listeffectivedeploymentspaginatorname)
 - [ListInstalledComponentsPaginatorName](./literals.md#listinstalledcomponentspaginatorname)
 - [RecipeOutputFormatType](./literals.md#recipeoutputformattype)
+- [GreengrassV2ServiceName](./literals.md#greengrassv2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

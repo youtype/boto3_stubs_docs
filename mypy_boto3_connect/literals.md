@@ -76,7 +76,9 @@ type annotations stubs module
   - [VocabularyLanguageCodeType](#vocabularylanguagecodetype)
   - [VocabularyStateType](#vocabularystatetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
+  - [ConnectServiceName](#connectservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="agentstatusstatetype"></a>
@@ -384,6 +386,7 @@ Values:
 - `CHAT_TRANSCRIPTS`
 - `CONTACT_TRACE_RECORDS`
 - `MEDIA_STREAMS`
+- `REAL_TIME_CONTACT_ANALYSIS_SEGMENTS`
 - `SCHEDULED_REPORTS`
 
 <a id="integrationtypetype"></a>
@@ -1234,6 +1237,18 @@ Values:
 - `FROM_AGENT`
 - `TO_AGENT`
 
+<a id="connectservicename"></a>
+
+## ConnectServiceName
+
+```python
+from mypy_boto3_connect.literals import ConnectServiceName
+```
+
+Values:
+
+- `connect`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1544,6 +1559,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_connect.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

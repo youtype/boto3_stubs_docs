@@ -128,7 +128,9 @@ from mypy_boto3_finspace.literals import EnvironmentStatusType, ...
 
 - [EnvironmentStatusType](./literals.md#environmentstatustype)
 - [FederationModeType](./literals.md#federationmodetype)
+- [finspaceServiceName](./literals.md#finspaceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

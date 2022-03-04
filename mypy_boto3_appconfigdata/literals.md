@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-appconfigdata](https://pypi.org/project/mypy-boto3-appconfigdata/).
 
 - [Literals for boto3 AppConfigData module](#literals-for-boto3-appconfigdata-module)
+  - [AppConfigDataServiceName](#appconfigdataservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="appconfigdataservicename"></a>
+
+## AppConfigDataServiceName
+
+```python
+from mypy_boto3_appconfigdata.literals import AppConfigDataServiceName
+```
+
+Values:
+
+- `appconfigdata`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_appconfigdata.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

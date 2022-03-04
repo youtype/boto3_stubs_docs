@@ -179,7 +179,9 @@ from mypy_boto3_amplifybackend.literals import AdditionalConstraintsElementType,
 - [SignInMethodType](./literals.md#signinmethodtype)
 - [StatusType](./literals.md#statustype)
 - [UnAuthenticatedElementType](./literals.md#unauthenticatedelementtype)
+- [AmplifyBackendServiceName](./literals.md#amplifybackendservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

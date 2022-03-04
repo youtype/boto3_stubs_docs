@@ -28,7 +28,9 @@ type annotations stubs module
   - [ListEndpointGroupsPaginatorName](#listendpointgroupspaginatorname)
   - [ListListenersPaginatorName](#listlistenerspaginatorname)
   - [ProtocolType](#protocoltype)
+  - [GlobalAcceleratorServiceName](#globalacceleratorservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="acceleratorstatustype"></a>
@@ -266,6 +268,18 @@ Values:
 
 - `TCP`
 - `UDP`
+
+<a id="globalacceleratorservicename"></a>
+
+## GlobalAcceleratorServiceName
+
+```python
+from mypy_boto3_globalaccelerator.literals import GlobalAcceleratorServiceName
+```
+
+Values:
+
+- `globalaccelerator`
 
 <a id="servicename"></a>
 
@@ -577,6 +591,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_globalaccelerator.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

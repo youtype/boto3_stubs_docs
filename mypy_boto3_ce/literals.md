@@ -42,7 +42,9 @@ type annotations stubs module
   - [SubscriberTypeType](#subscribertypetype)
   - [SupportedSavingsPlansTypeType](#supportedsavingsplanstypetype)
   - [TermInYearsType](#terminyearstype)
+  - [CostExplorerServiceName](#costexplorerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="accountscopetype"></a>
 
@@ -531,6 +533,18 @@ Values:
 - `ONE_YEAR`
 - `THREE_YEARS`
 
+<a id="costexplorerservicename"></a>
+
+## CostExplorerServiceName
+
+```python
+from mypy_boto3_ce.literals import CostExplorerServiceName
+```
+
+Values:
+
+- `ce`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -841,3 +855,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ce.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

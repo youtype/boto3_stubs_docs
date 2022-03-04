@@ -83,7 +83,9 @@ type annotations stubs module
   - [TypeTestsStatusType](#typetestsstatustype)
   - [VersionBumpType](#versionbumptype)
   - [VisibilityType](#visibilitytype)
+  - [CloudFormationServiceName](#cloudformationservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -1133,6 +1135,18 @@ Values:
 - `PRIVATE`
 - `PUBLIC`
 
+<a id="cloudformationservicename"></a>
+
+## CloudFormationServiceName
+
+```python
+from mypy_boto3_cloudformation.literals import CloudFormationServiceName
+```
+
+Values:
+
+- `cloudformation`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1443,6 +1457,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudformation.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

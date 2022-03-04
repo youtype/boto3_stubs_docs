@@ -13,7 +13,9 @@ type annotations stubs module
   - [ChecksumAggregationMethodType](#checksumaggregationmethodtype)
   - [ChecksumAlgorithmType](#checksumalgorithmtype)
   - [StatusType](#statustype)
+  - [EBSServiceName](#ebsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="checksumaggregationmethodtype"></a>
 
@@ -52,6 +54,18 @@ Values:
 - `completed`
 - `error`
 - `pending`
+
+<a id="ebsservicename"></a>
+
+## EBSServiceName
+
+```python
+from mypy_boto3_ebs.literals import EBSServiceName
+```
+
+Values:
+
+- `ebs`
 
 <a id="servicename"></a>
 
@@ -363,3 +377,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_ebs.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -146,7 +146,9 @@ from mypy_boto3_lookoutequipment.literals import DataUploadFrequencyType, ...
 - [IngestionJobStatusType](./literals.md#ingestionjobstatustype)
 - [ModelStatusType](./literals.md#modelstatustype)
 - [TargetSamplingRateType](./literals.md#targetsamplingratetype)
+- [LookoutEquipmentServiceName](./literals.md#lookoutequipmentservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

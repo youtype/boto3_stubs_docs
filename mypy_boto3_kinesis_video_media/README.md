@@ -118,7 +118,9 @@ from mypy_boto3_kinesis_video_media.literals import StartSelectorTypeType, ...
 ```
 
 - [StartSelectorTypeType](./literals.md#startselectortypetype)
+- [KinesisVideoMediaServiceName](./literals.md#kinesisvideomediaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

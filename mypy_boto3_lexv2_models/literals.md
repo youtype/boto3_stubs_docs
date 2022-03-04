@@ -67,7 +67,9 @@ type annotations stubs module
   - [TimeDimensionType](#timedimensiontype)
   - [TranscriptFormatType](#transcriptformattype)
   - [VoiceEngineType](#voiceenginetype)
+  - [LexModelsV2ServiceName](#lexmodelsv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [WaiterName](#waitername)
 
 <a id="aggregatedutterancesfilternametype"></a>
@@ -817,6 +819,18 @@ Values:
 - `neural`
 - `standard`
 
+<a id="lexmodelsv2servicename"></a>
+
+## LexModelsV2ServiceName
+
+```python
+from mypy_boto3_lexv2_models.literals import LexModelsV2ServiceName
+```
+
+Values:
+
+- `lexv2-models`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1127,6 +1141,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lexv2_models.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="waitername"></a>
 

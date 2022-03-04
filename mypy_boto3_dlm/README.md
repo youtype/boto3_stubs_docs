@@ -131,7 +131,9 @@ from mypy_boto3_dlm.literals import EventSourceValuesType, ...
 - [ResourceTypeValuesType](./literals.md#resourcetypevaluestype)
 - [RetentionIntervalUnitValuesType](./literals.md#retentionintervalunitvaluestype)
 - [SettablePolicyStateValuesType](./literals.md#settablepolicystatevaluestype)
+- [DLMServiceName](./literals.md#dlmservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -160,7 +160,9 @@ from mypy_boto3_health.literals import DescribeAffectedAccountsForOrganizationPa
 - [eventScopeCodeType](./literals.md#eventscopecodetype)
 - [eventStatusCodeType](./literals.md#eventstatuscodetype)
 - [eventTypeCategoryType](./literals.md#eventtypecategorytype)
+- [HealthServiceName](./literals.md#healthservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -146,7 +146,9 @@ from mypy_boto3_chime_sdk_identity.literals import AllowMessagesType, ...
 - [AppInstanceUserEndpointTypeType](./literals.md#appinstanceuserendpointtypetype)
 - [EndpointStatusReasonType](./literals.md#endpointstatusreasontype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
+- [ChimeSDKIdentityServiceName](./literals.md#chimesdkidentityservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

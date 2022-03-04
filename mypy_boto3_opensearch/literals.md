@@ -35,7 +35,9 @@ type annotations stubs module
   - [UpgradeStatusType](#upgradestatustype)
   - [UpgradeStepType](#upgradesteptype)
   - [VolumeTypeType](#volumetypetype)
+  - [OpenSearchServiceServiceName](#opensearchserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="autotunedesiredstatetype"></a>
 
@@ -498,6 +500,18 @@ Values:
 - `io1`
 - `standard`
 
+<a id="opensearchserviceservicename"></a>
+
+## OpenSearchServiceServiceName
+
+```python
+from mypy_boto3_opensearch.literals import OpenSearchServiceServiceName
+```
+
+Values:
+
+- `opensearch`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -808,3 +822,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_opensearch.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -19,7 +19,9 @@ type annotations stubs module
   - [ScopeType](#scopetype)
   - [StateType](#statetype)
   - [TypeType](#typetype)
+  - [IoTTwinMakerServiceName](#iottwinmakerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="componentupdatetypetype"></a>
 
@@ -146,6 +148,18 @@ Values:
 - `MAP`
 - `RELATIONSHIP`
 - `STRING`
+
+<a id="iottwinmakerservicename"></a>
+
+## IoTTwinMakerServiceName
+
+```python
+from mypy_boto3_iottwinmaker.literals import IoTTwinMakerServiceName
+```
+
+Values:
+
+- `iottwinmaker`
 
 <a id="servicename"></a>
 
@@ -457,3 +471,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iottwinmaker.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

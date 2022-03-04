@@ -290,7 +290,9 @@ from mypy_boto3_dms.literals import AuthMechanismValueType, ...
 - [StartReplicationTaskTypeValueType](./literals.md#startreplicationtasktypevaluetype)
 - [TargetDbTypeType](./literals.md#targetdbtypetype)
 - [TestConnectionSucceedsWaiterName](./literals.md#testconnectionsucceedswaitername)
+- [DatabaseMigrationServiceServiceName](./literals.md#databasemigrationserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

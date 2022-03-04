@@ -232,7 +232,9 @@ from mypy_boto3_codepipeline.literals import ActionCategoryType, ...
 - [StageTransitionTypeType](./literals.md#stagetransitiontypetype)
 - [TriggerTypeType](./literals.md#triggertypetype)
 - [WebhookAuthenticationTypeType](./literals.md#webhookauthenticationtypetype)
+- [CodePipelineServiceName](./literals.md#codepipelineservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

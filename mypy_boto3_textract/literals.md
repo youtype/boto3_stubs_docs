@@ -19,7 +19,9 @@ type annotations stubs module
   - [SelectionStatusType](#selectionstatustype)
   - [TextTypeType](#texttypetype)
   - [ValueTypeType](#valuetypetype)
+  - [TextractServiceName](#textractservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="blocktypetype"></a>
 
@@ -149,6 +151,18 @@ from mypy_boto3_textract.literals import ValueTypeType
 Values:
 
 - `DATE`
+
+<a id="textractservicename"></a>
+
+## TextractServiceName
+
+```python
+from mypy_boto3_textract.literals import TextractServiceName
+```
+
+Values:
+
+- `textract`
 
 <a id="servicename"></a>
 
@@ -460,3 +474,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_textract.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

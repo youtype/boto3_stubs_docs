@@ -24,7 +24,9 @@ type annotations stubs module
   - [OrderByType](#orderbytype)
   - [QueryStatusType](#querystatustype)
   - [StandardUnitType](#standardunittype)
+  - [CloudWatchLogsServiceName](#cloudwatchlogsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="describedestinationspaginatorname"></a>
@@ -233,6 +235,18 @@ Values:
 - `Terabits/Second`
 - `Terabytes`
 - `Terabytes/Second`
+
+<a id="cloudwatchlogsservicename"></a>
+
+## CloudWatchLogsServiceName
+
+```python
+from mypy_boto3_logs.literals import CloudWatchLogsServiceName
+```
+
+Values:
+
+- `logs`
 
 <a id="servicename"></a>
 
@@ -544,6 +558,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_logs.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

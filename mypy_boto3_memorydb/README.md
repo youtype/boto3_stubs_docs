@@ -200,7 +200,9 @@ from mypy_boto3_memorydb.literals import AZStatusType, ...
 - [ServiceUpdateStatusType](./literals.md#serviceupdatestatustype)
 - [ServiceUpdateTypeType](./literals.md#serviceupdatetypetype)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [MemoryDBServiceName](./literals.md#memorydbservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

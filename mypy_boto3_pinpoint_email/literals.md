@@ -25,7 +25,9 @@ type annotations stubs module
   - [MailFromDomainStatusType](#mailfromdomainstatustype)
   - [TlsPolicyType](#tlspolicytype)
   - [WarmupStatusType](#warmupstatustype)
+  - [PinpointEmailServiceName](#pinpointemailservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="behavioronmxfailuretype"></a>
@@ -231,6 +233,18 @@ Values:
 
 - `DONE`
 - `IN_PROGRESS`
+
+<a id="pinpointemailservicename"></a>
+
+## PinpointEmailServiceName
+
+```python
+from mypy_boto3_pinpoint_email.literals import PinpointEmailServiceName
+```
+
+Values:
+
+- `pinpoint-email`
 
 <a id="servicename"></a>
 
@@ -542,6 +556,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_pinpoint_email.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

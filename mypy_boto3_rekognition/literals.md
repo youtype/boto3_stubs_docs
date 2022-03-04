@@ -47,7 +47,9 @@ type annotations stubs module
   - [TextTypesType](#texttypestype)
   - [VideoColorRangeType](#videocolorrangetype)
   - [VideoJobStatusType](#videojobstatustype)
+  - [RekognitionServiceName](#rekognitionservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -596,6 +598,18 @@ Values:
 - `IN_PROGRESS`
 - `SUCCEEDED`
 
+<a id="rekognitionservicename"></a>
+
+## RekognitionServiceName
+
+```python
+from mypy_boto3_rekognition.literals import RekognitionServiceName
+```
+
+Values:
+
+- `rekognition`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -906,6 +920,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_rekognition.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

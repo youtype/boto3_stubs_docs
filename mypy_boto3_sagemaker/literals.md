@@ -261,7 +261,9 @@ type annotations stubs module
   - [UserProfileStatusType](#userprofilestatustype)
   - [VariantPropertyTypeType](#variantpropertytypetype)
   - [VariantStatusType](#variantstatustype)
+  - [SageMakerServiceName](#sagemakerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -4026,6 +4028,18 @@ Values:
 - `Deleting`
 - `Updating`
 
+<a id="sagemakerservicename"></a>
+
+## SageMakerServiceName
+
+```python
+from mypy_boto3_sagemaker.literals import SageMakerServiceName
+```
+
+Values:
+
+- `sagemaker`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -4336,6 +4350,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sagemaker.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

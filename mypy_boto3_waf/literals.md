@@ -40,7 +40,9 @@ type annotations stubs module
   - [WafActionTypeType](#wafactiontypetype)
   - [WafOverrideActionTypeType](#wafoverrideactiontypetype)
   - [WafRuleTypeType](#wafruletypetype)
+  - [WAFServiceName](#wafservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="changeactiontype"></a>
@@ -686,6 +688,18 @@ Values:
 - `RATE_BASED`
 - `REGULAR`
 
+<a id="wafservicename"></a>
+
+## WAFServiceName
+
+```python
+from mypy_boto3_waf.literals import WAFServiceName
+```
+
+Values:
+
+- `waf`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -996,6 +1010,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_waf.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

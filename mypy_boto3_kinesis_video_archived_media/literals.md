@@ -22,7 +22,9 @@ type annotations stubs module
   - [HLSFragmentSelectorTypeType](#hlsfragmentselectortypetype)
   - [HLSPlaybackModeType](#hlsplaybackmodetype)
   - [ListFragmentsPaginatorName](#listfragmentspaginatorname)
+  - [KinesisVideoArchivedMediaServiceName](#kinesisvideoarchivedmediaservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="clipfragmentselectortypetype"></a>
@@ -182,6 +184,18 @@ from mypy_boto3_kinesis_video_archived_media.literals import ListFragmentsPagina
 Values:
 
 - `list_fragments`
+
+<a id="kinesisvideoarchivedmediaservicename"></a>
+
+## KinesisVideoArchivedMediaServiceName
+
+```python
+from mypy_boto3_kinesis_video_archived_media.literals import KinesisVideoArchivedMediaServiceName
+```
+
+Values:
+
+- `kinesis-video-archived-media`
 
 <a id="servicename"></a>
 
@@ -493,6 +507,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kinesis_video_archived_media.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

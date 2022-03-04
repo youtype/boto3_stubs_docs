@@ -275,7 +275,9 @@ from mypy_boto3_networkmanager.literals import AttachmentStateType, ...
 - [TransitGatewayConnectPeerAssociationStateType](./literals.md#transitgatewayconnectpeerassociationstatetype)
 - [TransitGatewayRegistrationStateType](./literals.md#transitgatewayregistrationstatetype)
 - [TunnelProtocolType](./literals.md#tunnelprotocoltype)
+- [NetworkManagerServiceName](./literals.md#networkmanagerservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

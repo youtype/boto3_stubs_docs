@@ -25,7 +25,9 @@ type annotations stubs module
   - [SecurityServiceTypeType](#securityservicetypetype)
   - [TargetTypeType](#targettypetype)
   - [ViolationReasonType](#violationreasontype)
+  - [FMSServiceName](#fmsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accountrolestatustype"></a>
@@ -261,6 +263,18 @@ Values:
 - `UNEXPECTED_FIREWALL_ROUTES`
 - `UNEXPECTED_TARGET_GATEWAY_ROUTES`
 - `WEB_ACL_MISSING_RULE_GROUP`
+
+<a id="fmsservicename"></a>
+
+## FMSServiceName
+
+```python
+from mypy_boto3_fms.literals import FMSServiceName
+```
+
+Values:
+
+- `fms`
 
 <a id="servicename"></a>
 
@@ -572,6 +586,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_fms.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

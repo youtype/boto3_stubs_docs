@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 finspace module](#literals-for-boto3-finspace-module)
   - [EnvironmentStatusType](#environmentstatustype)
   - [FederationModeType](#federationmodetype)
+  - [finspaceServiceName](#finspaceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="environmentstatustype"></a>
 
@@ -47,6 +49,18 @@ Values:
 
 - `FEDERATED`
 - `LOCAL`
+
+<a id="finspaceservicename"></a>
+
+## finspaceServiceName
+
+```python
+from mypy_boto3_finspace.literals import finspaceServiceName
+```
+
+Values:
+
+- `finspace`
 
 <a id="servicename"></a>
 
@@ -358,3 +372,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_finspace.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

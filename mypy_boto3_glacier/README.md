@@ -253,7 +253,9 @@ from mypy_boto3_glacier.literals import ActionCodeType, ...
 - [TypeType](./literals.md#typetype)
 - [VaultExistsWaiterName](./literals.md#vaultexistswaitername)
 - [VaultNotExistsWaiterName](./literals.md#vaultnotexistswaitername)
+- [GlacierServiceName](./literals.md#glacierservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

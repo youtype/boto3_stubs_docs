@@ -196,7 +196,9 @@ from mypy_boto3_migrationhubstrategy.literals import AntipatternReportStatusType
 - [TargetDestinationType](./literals.md#targetdestinationtype)
 - [TransformationToolNameType](./literals.md#transformationtoolnametype)
 - [VersionControlType](./literals.md#versioncontroltype)
+- [MigrationHubStrategyRecommendationsServiceName](./literals.md#migrationhubstrategyrecommendationsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -20,7 +20,9 @@ type annotations stubs module
   - [MetadataFieldType](#metadatafieldtype)
   - [MetricTypeType](#metrictypetype)
   - [OrderByType](#orderbytype)
+  - [CodeGuruProfilerServiceName](#codeguruprofilerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="actiongrouptype"></a>
@@ -159,6 +161,18 @@ Values:
 
 - `TimestampAscending`
 - `TimestampDescending`
+
+<a id="codeguruprofilerservicename"></a>
+
+## CodeGuruProfilerServiceName
+
+```python
+from mypy_boto3_codeguruprofiler.literals import CodeGuruProfilerServiceName
+```
+
+Values:
+
+- `codeguruprofiler`
 
 <a id="servicename"></a>
 
@@ -470,6 +484,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_codeguruprofiler.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

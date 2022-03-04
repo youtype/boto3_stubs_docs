@@ -67,7 +67,9 @@ type annotations stubs module
   - [ResourceValueTypeType](#resourcevaluetypetype)
   - [SelectAggregateResourceConfigPaginatorName](#selectaggregateresourceconfigpaginatorname)
   - [SelectResourceConfigPaginatorName](#selectresourceconfigpaginatorname)
+  - [ConfigServiceServiceName](#configserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="aggregateconformancepackcompliancesummarygroupkeytype"></a>
@@ -943,6 +945,18 @@ Values:
 
 - `select_resource_config`
 
+<a id="configserviceservicename"></a>
+
+## ConfigServiceServiceName
+
+```python
+from mypy_boto3_config.literals import ConfigServiceServiceName
+```
+
+Values:
+
+- `config`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1253,6 +1267,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_config.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -187,7 +187,9 @@ from mypy_boto3_wisdom.literals import AssistantStatusType, ...
 - [RelevanceLevelType](./literals.md#relevanceleveltype)
 - [SearchContentPaginatorName](./literals.md#searchcontentpaginatorname)
 - [SearchSessionsPaginatorName](./literals.md#searchsessionspaginatorname)
+- [ConnectWisdomServiceServiceName](./literals.md#connectwisdomserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

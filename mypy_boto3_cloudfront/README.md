@@ -404,7 +404,9 @@ from mypy_boto3_cloudfront.literals import CachePolicyCookieBehaviorType, ...
 - [SslProtocolType](./literals.md#sslprotocoltype)
 - [StreamingDistributionDeployedWaiterName](./literals.md#streamingdistributiondeployedwaitername)
 - [ViewerProtocolPolicyType](./literals.md#viewerprotocolpolicytype)
+- [CloudFrontServiceName](./literals.md#cloudfrontservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

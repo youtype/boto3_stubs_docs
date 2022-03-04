@@ -41,7 +41,9 @@ type annotations stubs module
   - [WorkspaceImageRequiredTenancyType](#workspaceimagerequiredtenancytype)
   - [WorkspaceImageStateType](#workspaceimagestatetype)
   - [WorkspaceStateType](#workspacestatetype)
+  - [WorkSpacesServiceName](#workspacesservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accesspropertyvaluetype"></a>
@@ -471,6 +473,18 @@ Values:
 - `UNHEALTHY`
 - `UPDATING`
 
+<a id="workspacesservicename"></a>
+
+## WorkSpacesServiceName
+
+```python
+from mypy_boto3_workspaces.literals import WorkSpacesServiceName
+```
+
+Values:
+
+- `workspaces`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -781,6 +795,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_workspaces.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

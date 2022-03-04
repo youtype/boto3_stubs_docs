@@ -164,7 +164,9 @@ from mypy_boto3_comprehendmedical.literals import AttributeNameType, ...
 - [SNOMEDCTEntityTypeType](./literals.md#snomedctentitytypetype)
 - [SNOMEDCTRelationshipTypeType](./literals.md#snomedctrelationshiptypetype)
 - [SNOMEDCTTraitNameType](./literals.md#snomedcttraitnametype)
+- [ComprehendMedicalServiceName](./literals.md#comprehendmedicalservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

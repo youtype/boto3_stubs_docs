@@ -182,7 +182,9 @@ from mypy_boto3_opsworkscm.literals import BackupStatusType, ...
 - [NodeAssociatedWaiterName](./literals.md#nodeassociatedwaitername)
 - [NodeAssociationStatusType](./literals.md#nodeassociationstatustype)
 - [ServerStatusType](./literals.md#serverstatustype)
+- [OpsWorksCMServiceName](./literals.md#opsworkscmservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

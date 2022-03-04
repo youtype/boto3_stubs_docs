@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 MarketplaceMetering module](#literals-for-boto3-marketplacemetering-module)
   - [UsageRecordResultStatusType](#usagerecordresultstatustype)
+  - [MarketplaceMeteringServiceName](#marketplacemeteringservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="usagerecordresultstatustype"></a>
 
@@ -26,6 +28,18 @@ Values:
 - `CustomerNotSubscribed`
 - `DuplicateRecord`
 - `Success`
+
+<a id="marketplacemeteringservicename"></a>
+
+## MarketplaceMeteringServiceName
+
+```python
+from mypy_boto3_meteringmarketplace.literals import MarketplaceMeteringServiceName
+```
+
+Values:
+
+- `meteringmarketplace`
 
 <a id="servicename"></a>
 
@@ -337,3 +351,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_meteringmarketplace.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

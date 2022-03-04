@@ -32,7 +32,9 @@ type annotations stubs module
   - [ReviewActionStatusType](#reviewactionstatustype)
   - [ReviewPolicyLevelType](#reviewpolicyleveltype)
   - [ReviewableHITStatusType](#reviewablehitstatustype)
+  - [MTurkServiceName](#mturkservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="assignmentstatustype"></a>
@@ -339,6 +341,18 @@ Values:
 
 - `Reviewable`
 - `Reviewing`
+
+<a id="mturkservicename"></a>
+
+## MTurkServiceName
+
+```python
+from mypy_boto3_mturk.literals import MTurkServiceName
+```
+
+Values:
+
+- `mturk`
 
 <a id="servicename"></a>
 
@@ -650,6 +664,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mturk.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

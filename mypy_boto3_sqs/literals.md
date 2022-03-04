@@ -15,7 +15,9 @@ type annotations stubs module
   - [MessageSystemAttributeNameForSendsType](#messagesystemattributenameforsendstype)
   - [MessageSystemAttributeNameType](#messagesystemattributenametype)
   - [QueueAttributeNameType](#queueattributenametype)
+  - [SQSServiceName](#sqsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listdeadlettersourcequeuespaginatorname"></a>
@@ -105,6 +107,18 @@ Values:
 - `RedrivePolicy`
 - `SqsManagedSseEnabled`
 - `VisibilityTimeout`
+
+<a id="sqsservicename"></a>
+
+## SQSServiceName
+
+```python
+from mypy_boto3_sqs.literals import SQSServiceName
+```
+
+Values:
+
+- `sqs`
 
 <a id="servicename"></a>
 
@@ -416,6 +430,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sqs.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

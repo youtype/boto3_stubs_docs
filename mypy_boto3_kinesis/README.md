@@ -205,7 +205,9 @@ from mypy_boto3_kinesis.literals import ConsumerStatusType, ...
 - [StreamModeType](./literals.md#streammodetype)
 - [StreamNotExistsWaiterName](./literals.md#streamnotexistswaitername)
 - [StreamStatusType](./literals.md#streamstatustype)
+- [KinesisServiceName](./literals.md#kinesisservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

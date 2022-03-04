@@ -14,7 +14,9 @@ type annotations stubs module
   - [ResourceTypeType](#resourcetypetype)
   - [RetentionPeriodUnitType](#retentionperiodunittype)
   - [RuleStatusType](#rulestatustype)
+  - [RecycleBinServiceName](#recyclebinservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listrulespaginatorname"></a>
@@ -66,6 +68,18 @@ Values:
 
 - `available`
 - `pending`
+
+<a id="recyclebinservicename"></a>
+
+## RecycleBinServiceName
+
+```python
+from mypy_boto3_rbin.literals import RecycleBinServiceName
+```
+
+Values:
+
+- `rbin`
 
 <a id="servicename"></a>
 
@@ -377,6 +391,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_rbin.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -248,7 +248,9 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [VolumeTypeType](./literals.md#volumetypetype)
 - [WindowsAccessAuditLogLevelType](./literals.md#windowsaccessauditlogleveltype)
 - [WindowsDeploymentTypeType](./literals.md#windowsdeploymenttypetype)
+- [FSxServiceName](./literals.md#fsxservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

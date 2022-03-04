@@ -31,7 +31,9 @@ type annotations stubs module
   - [SourceFrequencyType](#sourcefrequencytype)
   - [SourceSetUpOptionType](#sourcesetupoptiontype)
   - [SourceTypeType](#sourcetypetype)
+  - [AuditManagerServiceName](#auditmanagerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="accountstatustype"></a>
 
@@ -333,6 +335,18 @@ Values:
 - `AWS_Config`
 - `AWS_Security_Hub`
 - `MANUAL`
+
+<a id="auditmanagerservicename"></a>
+
+## AuditManagerServiceName
+
+```python
+from mypy_boto3_auditmanager.literals import AuditManagerServiceName
+```
+
+Values:
+
+- `auditmanager`
 
 <a id="servicename"></a>
 
@@ -644,3 +658,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_auditmanager.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

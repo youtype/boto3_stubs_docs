@@ -118,7 +118,9 @@ from mypy_boto3_account.literals import AlternateContactTypeType, ...
 ```
 
 - [AlternateContactTypeType](./literals.md#alternatecontacttypetype)
+- [AccountServiceName](./literals.md#accountservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

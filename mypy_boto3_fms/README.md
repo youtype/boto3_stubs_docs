@@ -177,7 +177,9 @@ from mypy_boto3_fms.literals import AccountRoleStatusType, ...
 - [SecurityServiceTypeType](./literals.md#securityservicetypetype)
 - [TargetTypeType](./literals.md#targettypetype)
 - [ViolationReasonType](./literals.md#violationreasontype)
+- [FMSServiceName](./literals.md#fmsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

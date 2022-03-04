@@ -142,7 +142,9 @@ from mypy_boto3_rbin.literals import ListRulesPaginatorName, ...
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [RetentionPeriodUnitType](./literals.md#retentionperiodunittype)
 - [RuleStatusType](./literals.md#rulestatustype)
+- [RecycleBinServiceName](./literals.md#recyclebinservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

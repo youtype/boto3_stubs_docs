@@ -269,7 +269,9 @@ from mypy_boto3_organizations.literals import AccountJoinedMethodType, ...
 - [PolicyTypeStatusType](./literals.md#policytypestatustype)
 - [PolicyTypeType](./literals.md#policytypetype)
 - [TargetTypeType](./literals.md#targettypetype)
+- [OrganizationsServiceName](./literals.md#organizationsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

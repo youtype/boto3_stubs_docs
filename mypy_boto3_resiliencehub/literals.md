@@ -34,7 +34,9 @@ type annotations stubs module
   - [TemplateFormatType](#templateformattype)
   - [TestRiskType](#testrisktype)
   - [TestTypeType](#testtypetype)
+  - [ResilienceHubServiceName](#resiliencehubservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="alarmtypetype"></a>
 
@@ -383,6 +385,18 @@ Values:
 - `Region`
 - `Software`
 
+<a id="resiliencehubservicename"></a>
+
+## ResilienceHubServiceName
+
+```python
+from mypy_boto3_resiliencehub.literals import ResilienceHubServiceName
+```
+
+Values:
+
+- `resiliencehub`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -693,3 +707,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_resiliencehub.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -163,7 +163,9 @@ from mypy_boto3_mq.literals import AuthenticationStrategyType, ...
 - [EngineTypeType](./literals.md#enginetypetype)
 - [ListBrokersPaginatorName](./literals.md#listbrokerspaginatorname)
 - [SanitizationWarningReasonType](./literals.md#sanitizationwarningreasontype)
+- [MQServiceName](./literals.md#mqservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

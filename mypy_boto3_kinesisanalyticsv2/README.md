@@ -187,7 +187,9 @@ from mypy_boto3_kinesisanalyticsv2.literals import ApplicationModeType, ...
 - [RuntimeEnvironmentType](./literals.md#runtimeenvironmenttype)
 - [SnapshotStatusType](./literals.md#snapshotstatustype)
 - [UrlTypeType](./literals.md#urltypetype)
+- [KinesisAnalyticsV2ServiceName](./literals.md#kinesisanalyticsv2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

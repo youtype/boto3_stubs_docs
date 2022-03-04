@@ -2349,11 +2349,12 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IpamScopeId`: `str` *(required)*
+- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
+  *(required)*
 - `DryRun`: `bool`
 - `Locale`: `str`
 - `SourceIpamPoolId`: `str`
 - `Description`: `str`
-- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `AutoImport`: `bool`
 - `PubliclyAdvertisable`: `bool`
 - `AllocationMinNetmaskLength`: `int`

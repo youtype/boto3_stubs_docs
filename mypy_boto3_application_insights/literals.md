@@ -21,7 +21,9 @@ type annotations stubs module
   - [SeverityLevelType](#severityleveltype)
   - [StatusType](#statustype)
   - [TierType](#tiertype)
+  - [ApplicationInsightsServiceName](#applicationinsightsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="cloudwatcheventsourcetype"></a>
 
@@ -190,6 +192,18 @@ Values:
 - `SQL_SERVER`
 - `SQL_SERVER_ALWAYSON_AVAILABILITY_GROUP`
 - `SQL_SERVER_FAILOVER_CLUSTER_INSTANCE`
+
+<a id="applicationinsightsservicename"></a>
+
+## ApplicationInsightsServiceName
+
+```python
+from mypy_boto3_application_insights.literals import ApplicationInsightsServiceName
+```
+
+Values:
+
+- `application-insights`
 
 <a id="servicename"></a>
 
@@ -501,3 +515,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_application_insights.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

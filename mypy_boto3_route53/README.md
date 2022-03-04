@@ -297,7 +297,9 @@ from mypy_boto3_route53.literals import AccountLimitTypeType, ...
 - [StatisticType](./literals.md#statistictype)
 - [TagResourceTypeType](./literals.md#tagresourcetypetype)
 - [VPCRegionType](./literals.md#vpcregiontype)
+- [Route53ServiceName](./literals.md#route53servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

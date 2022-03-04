@@ -145,7 +145,9 @@ from mypy_boto3_iot_data.literals import ListRetainedMessagesPaginatorName, ...
 ```
 
 - [ListRetainedMessagesPaginatorName](./literals.md#listretainedmessagespaginatorname)
+- [IoTDataPlaneServiceName](./literals.md#iotdataplaneservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

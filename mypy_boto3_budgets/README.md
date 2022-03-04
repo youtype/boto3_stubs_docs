@@ -187,7 +187,9 @@ from mypy_boto3_budgets.literals import ActionStatusType, ...
 - [SubscriptionTypeType](./literals.md#subscriptiontypetype)
 - [ThresholdTypeType](./literals.md#thresholdtypetype)
 - [TimeUnitType](./literals.md#timeunittype)
+- [BudgetsServiceName](./literals.md#budgetsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -125,7 +125,9 @@ from mypy_boto3_sms_voice.literals import EventTypeType, ...
 ```
 
 - [EventTypeType](./literals.md#eventtypetype)
+- [PinpointSMSVoiceServiceName](./literals.md#pinpointsmsvoiceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

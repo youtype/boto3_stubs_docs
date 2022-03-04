@@ -396,7 +396,9 @@ type annotations stubs module
   - [XavcSlowPalType](#xavcslowpaltype)
   - [XavcSpatialAdaptiveQuantizationType](#xavcspatialadaptivequantizationtype)
   - [XavcTemporalAdaptiveQuantizationType](#xavctemporaladaptivequantizationtype)
+  - [MediaConvertServiceName](#mediaconvertservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="aacaudiodescriptionbroadcastermixtype"></a>
@@ -5974,6 +5976,18 @@ Values:
 - `DISABLED`
 - `ENABLED`
 
+<a id="mediaconvertservicename"></a>
+
+## MediaConvertServiceName
+
+```python
+from mypy_boto3_mediaconvert.literals import MediaConvertServiceName
+```
+
+Values:
+
+- `mediaconvert`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -6284,6 +6298,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mediaconvert.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

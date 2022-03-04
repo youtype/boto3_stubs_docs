@@ -72,7 +72,9 @@ type annotations stubs module
   - [TargetStateType](#targetstatetype)
   - [TargetTypeType](#targettypetype)
   - [WriteForwardingStatusType](#writeforwardingstatustype)
+  - [RDSServiceName](#rdsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -868,6 +870,18 @@ Values:
 - `enabling`
 - `unknown`
 
+<a id="rdsservicename"></a>
+
+## RDSServiceName
+
+```python
+from mypy_boto3_rds.literals import RDSServiceName
+```
+
+Values:
+
+- `rds`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1178,6 +1192,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_rds.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

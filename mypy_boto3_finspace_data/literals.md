@@ -28,7 +28,9 @@ type annotations stubs module
   - [UserStatusType](#userstatustype)
   - [UserTypeType](#usertypetype)
   - [locationTypeType](#locationtypetype)
+  - [FinSpaceDataServiceName](#finspacedataservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="apiaccesstype"></a>
@@ -293,6 +295,18 @@ Values:
 
 - `INGESTION`
 - `SAGEMAKER`
+
+<a id="finspacedataservicename"></a>
+
+## FinSpaceDataServiceName
+
+```python
+from mypy_boto3_finspace_data.literals import FinSpaceDataServiceName
+```
+
+Values:
+
+- `finspace-data`
 
 <a id="servicename"></a>
 
@@ -604,6 +618,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_finspace_data.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

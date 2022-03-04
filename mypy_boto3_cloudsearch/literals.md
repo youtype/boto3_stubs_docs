@@ -17,7 +17,9 @@ type annotations stubs module
   - [PartitionInstanceTypeType](#partitioninstancetypetype)
   - [SuggesterFuzzyMatchingType](#suggesterfuzzymatchingtype)
   - [TLSSecurityPolicyType](#tlssecuritypolicytype)
+  - [CloudSearchServiceName](#cloudsearchservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="algorithmicstemmingtype"></a>
 
@@ -171,6 +173,18 @@ Values:
 
 - `Policy-Min-TLS-1-0-2019-07`
 - `Policy-Min-TLS-1-2-2019-07`
+
+<a id="cloudsearchservicename"></a>
+
+## CloudSearchServiceName
+
+```python
+from mypy_boto3_cloudsearch.literals import CloudSearchServiceName
+```
+
+Values:
+
+- `cloudsearch`
 
 <a id="servicename"></a>
 
@@ -482,3 +496,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudsearch.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -66,7 +66,9 @@ type annotations stubs module
   - [UsageStatisticsSortKeyType](#usagestatisticssortkeytype)
   - [UsageTypeType](#usagetypetype)
   - [UserIdentityTypeType](#useridentitytypetype)
+  - [Macie2ServiceName](#macie2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="adminstatustype"></a>
@@ -861,6 +863,18 @@ Values:
 - `IAMUser`
 - `Root`
 
+<a id="macie2servicename"></a>
+
+## Macie2ServiceName
+
+```python
+from mypy_boto3_macie2.literals import Macie2ServiceName
+```
+
+Values:
+
+- `macie2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1171,6 +1185,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_macie2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

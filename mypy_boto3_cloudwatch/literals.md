@@ -29,7 +29,9 @@ type annotations stubs module
   - [StateValueType](#statevaluetype)
   - [StatisticType](#statistictype)
   - [StatusCodeType](#statuscodetype)
+  - [CloudWatchServiceName](#cloudwatchservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -308,6 +310,18 @@ Values:
 - `Complete`
 - `InternalError`
 - `PartialData`
+
+<a id="cloudwatchservicename"></a>
+
+## CloudWatchServiceName
+
+```python
+from mypy_boto3_cloudwatch.literals import CloudWatchServiceName
+```
+
+Values:
+
+- `cloudwatch`
 
 <a id="servicename"></a>
 
@@ -619,6 +633,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudwatch.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

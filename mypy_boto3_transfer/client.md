@@ -49,6 +49,7 @@ type annotations stubs module
     - [update_server](#update_server)
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
+    - [get_waiter](#get_waiter)
 
 <a id="transferclient"></a>
 
@@ -949,3 +950,15 @@ overloads.
   [ListUsersPaginator](./paginators.md#listuserspaginator)
 - `client.get_paginator("list_workflows")` ->
   [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
+
+<a id="get_waiter"></a>
+
+### get_waiter
+
+Type annotations for `boto3.client("transfer").get_waiter` method with
+overloads.
+
+- `client.get_waiter("server_offline")` ->
+  [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
+- `client.get_waiter("server_online")` ->
+  [ServerOnlineWaiter](./waiters.md#serveronlinewaiter)

@@ -22,7 +22,9 @@ type annotations stubs module
   - [eventScopeCodeType](#eventscopecodetype)
   - [eventStatusCodeType](#eventstatuscodetype)
   - [eventTypeCategoryType](#eventtypecategorytype)
+  - [HealthServiceName](#healthservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="describeaffectedaccountsfororganizationpaginatorname"></a>
@@ -177,6 +179,18 @@ Values:
 - `investigation`
 - `issue`
 - `scheduledChange`
+
+<a id="healthservicename"></a>
+
+## HealthServiceName
+
+```python
+from mypy_boto3_health.literals import HealthServiceName
+```
+
+Values:
+
+- `health`
 
 <a id="servicename"></a>
 
@@ -488,6 +502,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_health.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

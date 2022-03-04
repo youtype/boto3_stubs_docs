@@ -42,7 +42,9 @@ type annotations stubs module
   - [PolicyTypeStatusType](#policytypestatustype)
   - [PolicyTypeType](#policytypetype)
   - [TargetTypeType](#targettypetype)
+  - [OrganizationsServiceName](#organizationsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="accountjoinedmethodtype"></a>
@@ -475,6 +477,18 @@ Values:
 - `ORGANIZATIONAL_UNIT`
 - `ROOT`
 
+<a id="organizationsservicename"></a>
+
+## OrganizationsServiceName
+
+```python
+from mypy_boto3_organizations.literals import OrganizationsServiceName
+```
+
+Values:
+
+- `organizations`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -785,6 +799,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_organizations.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -272,7 +272,9 @@ from mypy_boto3_greengrass.literals import BulkDeploymentStatusType, ...
 - [UpdateAgentLogLevelType](./literals.md#updateagentlogleveltype)
 - [UpdateTargetsArchitectureType](./literals.md#updatetargetsarchitecturetype)
 - [UpdateTargetsOperatingSystemType](./literals.md#updatetargetsoperatingsystemtype)
+- [GreengrassServiceName](./literals.md#greengrassservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

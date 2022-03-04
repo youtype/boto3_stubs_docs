@@ -13,7 +13,9 @@ type annotations stubs module
   - [ChangeStatusType](#changestatustype)
   - [FailureCodeType](#failurecodetype)
   - [SortOrderType](#sortordertype)
+  - [MarketplaceCatalogServiceName](#marketplacecatalogservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="changestatustype"></a>
 
@@ -56,6 +58,18 @@ Values:
 
 - `ASCENDING`
 - `DESCENDING`
+
+<a id="marketplacecatalogservicename"></a>
+
+## MarketplaceCatalogServiceName
+
+```python
+from mypy_boto3_marketplace_catalog.literals import MarketplaceCatalogServiceName
+```
+
+Values:
+
+- `marketplace-catalog`
 
 <a id="servicename"></a>
 
@@ -367,3 +381,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_marketplace_catalog.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

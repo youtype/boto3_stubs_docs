@@ -202,7 +202,9 @@ from mypy_boto3_logs.literals import DescribeDestinationsPaginatorName, ...
 - [OrderByType](./literals.md#orderbytype)
 - [QueryStatusType](./literals.md#querystatustype)
 - [StandardUnitType](./literals.md#standardunittype)
+- [CloudWatchLogsServiceName](./literals.md#cloudwatchlogsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

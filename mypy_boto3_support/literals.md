@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 Support module](#literals-for-boto3-support-module)
   - [DescribeCasesPaginatorName](#describecasespaginatorname)
   - [DescribeCommunicationsPaginatorName](#describecommunicationspaginatorname)
+  - [SupportServiceName](#supportservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="describecasespaginatorname"></a>
@@ -38,6 +40,18 @@ from mypy_boto3_support.literals import DescribeCommunicationsPaginatorName
 Values:
 
 - `describe_communications`
+
+<a id="supportservicename"></a>
+
+## SupportServiceName
+
+```python
+from mypy_boto3_support.literals import SupportServiceName
+```
+
+Values:
+
+- `support`
 
 <a id="servicename"></a>
 
@@ -349,6 +363,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_support.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

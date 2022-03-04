@@ -33,7 +33,9 @@ type annotations stubs module
   - [RedshiftS3BackupModeType](#redshifts3backupmodetype)
   - [S3BackupModeType](#s3backupmodetype)
   - [SplunkS3BackupModeType](#splunks3backupmodetype)
+  - [FirehoseServiceName](#firehoseservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="amazonopensearchserviceindexrotationperiodtype"></a>
 
@@ -373,6 +375,18 @@ Values:
 - `AllEvents`
 - `FailedEventsOnly`
 
+<a id="firehoseservicename"></a>
+
+## FirehoseServiceName
+
+```python
+from mypy_boto3_firehose.literals import FirehoseServiceName
+```
+
+Values:
+
+- `firehose`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -683,3 +697,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_firehose.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

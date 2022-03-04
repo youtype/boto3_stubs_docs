@@ -155,7 +155,9 @@ from mypy_boto3_backup_gateway.literals import GatewayTypeType, ...
 - [ListGatewaysPaginatorName](./literals.md#listgatewayspaginatorname)
 - [ListHypervisorsPaginatorName](./literals.md#listhypervisorspaginatorname)
 - [ListVirtualMachinesPaginatorName](./literals.md#listvirtualmachinespaginatorname)
+- [BackupGatewayServiceName](./literals.md#backupgatewayservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

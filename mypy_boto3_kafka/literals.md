@@ -26,7 +26,9 @@ type annotations stubs module
   - [ListNodesPaginatorName](#listnodespaginatorname)
   - [ListScramSecretsPaginatorName](#listscramsecretspaginatorname)
   - [NodeTypeType](#nodetypetype)
+  - [KafkaServiceName](#kafkaservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="brokerazdistributiontype"></a>
@@ -236,6 +238,18 @@ from mypy_boto3_kafka.literals import NodeTypeType
 Values:
 
 - `BROKER`
+
+<a id="kafkaservicename"></a>
+
+## KafkaServiceName
+
+```python
+from mypy_boto3_kafka.literals import KafkaServiceName
+```
+
+Values:
+
+- `kafka`
 
 <a id="servicename"></a>
 
@@ -547,6 +561,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kafka.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

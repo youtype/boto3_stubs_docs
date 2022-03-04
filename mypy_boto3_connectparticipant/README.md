@@ -130,7 +130,9 @@ from mypy_boto3_connectparticipant.literals import ArtifactStatusType, ...
 - [ParticipantRoleType](./literals.md#participantroletype)
 - [ScanDirectionType](./literals.md#scandirectiontype)
 - [SortKeyType](./literals.md#sortkeytype)
+- [ConnectParticipantServiceName](./literals.md#connectparticipantservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

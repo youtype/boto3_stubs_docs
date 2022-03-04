@@ -27,7 +27,9 @@ type annotations stubs module
   - [SignInMethodType](#signinmethodtype)
   - [StatusType](#statustype)
   - [UnAuthenticatedElementType](#unauthenticatedelementtype)
+  - [AmplifyBackendServiceName](#amplifybackendservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="additionalconstraintselementtype"></a>
@@ -276,6 +278,18 @@ Values:
 - `CREATE_AND_UPDATE`
 - `DELETE`
 - `READ`
+
+<a id="amplifybackendservicename"></a>
+
+## AmplifyBackendServiceName
+
+```python
+from mypy_boto3_amplifybackend.literals import AmplifyBackendServiceName
+```
+
+Values:
+
+- `amplifybackend`
 
 <a id="servicename"></a>
 
@@ -587,6 +601,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_amplifybackend.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

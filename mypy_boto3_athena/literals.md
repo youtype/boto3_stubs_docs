@@ -24,7 +24,9 @@ type annotations stubs module
   - [S3AclOptionType](#s3acloptiontype)
   - [StatementTypeType](#statementtypetype)
   - [WorkGroupStateType](#workgroupstatetype)
+  - [AthenaServiceName](#athenaservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="columnnullabletype"></a>
@@ -207,6 +209,18 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="athenaservicename"></a>
+
+## AthenaServiceName
+
+```python
+from mypy_boto3_athena.literals import AthenaServiceName
+```
+
+Values:
+
+- `athena`
 
 <a id="servicename"></a>
 
@@ -518,6 +532,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_athena.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

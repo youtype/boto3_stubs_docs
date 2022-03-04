@@ -189,7 +189,9 @@ from mypy_boto3_shield.literals import ApplicationLayerAutomaticResponseStatusTy
 - [SubResourceTypeType](./literals.md#subresourcetypetype)
 - [SubscriptionStateType](./literals.md#subscriptionstatetype)
 - [UnitType](./literals.md#unittype)
+- [ShieldServiceName](./literals.md#shieldservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

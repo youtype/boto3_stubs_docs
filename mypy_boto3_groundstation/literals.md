@@ -25,7 +25,9 @@ type annotations stubs module
   - [ListMissionProfilesPaginatorName](#listmissionprofilespaginatorname)
   - [ListSatellitesPaginatorName](#listsatellitespaginatorname)
   - [PolarizationType](#polarizationtype)
+  - [GroundStationServiceName](#groundstationservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="angleunitstype"></a>
@@ -238,6 +240,18 @@ Values:
 - `LEFT_HAND`
 - `NONE`
 - `RIGHT_HAND`
+
+<a id="groundstationservicename"></a>
+
+## GroundStationServiceName
+
+```python
+from mypy_boto3_groundstation.literals import GroundStationServiceName
+```
+
+Values:
+
+- `groundstation`
 
 <a id="servicename"></a>
 
@@ -549,6 +563,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_groundstation.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

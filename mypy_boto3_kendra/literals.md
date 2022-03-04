@@ -61,7 +61,9 @@ type annotations stubs module
   - [UserGroupResolutionModeType](#usergroupresolutionmodetype)
   - [WarningCodeType](#warningcodetype)
   - [WebCrawlerModeType](#webcrawlermodetype)
+  - [kendraServiceName](#kendraservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="additionalresultattributevaluetypetype"></a>
 
@@ -839,6 +841,18 @@ Values:
 - `HOST_ONLY`
 - `SUBDOMAINS`
 
+<a id="kendraservicename"></a>
+
+## kendraServiceName
+
+```python
+from mypy_boto3_kendra.literals import kendraServiceName
+```
+
+Values:
+
+- `kendra`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1149,3 +1163,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kendra.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

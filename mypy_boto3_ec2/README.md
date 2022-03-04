@@ -1346,7 +1346,9 @@ from mypy_boto3_ec2.literals import AcceleratorManufacturerType, ...
 - [VpnStaticRouteSourceType](./literals.md#vpnstaticroutesourcetype)
 - [WeekDayType](./literals.md#weekdaytype)
 - [scopeType](./literals.md#scopetype)
+- [EC2ServiceName](./literals.md#ec2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

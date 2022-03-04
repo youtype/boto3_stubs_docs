@@ -47,7 +47,9 @@ type annotations stubs module
   - [VeevaConnectorOperatorType](#veevaconnectoroperatortype)
   - [WriteOperationTypeType](#writeoperationtypetype)
   - [ZendeskConnectorOperatorType](#zendeskconnectoroperatortype)
+  - [AppflowServiceName](#appflowservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="aggregationtypetype"></a>
 
@@ -830,6 +832,18 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
+<a id="appflowservicename"></a>
+
+## AppflowServiceName
+
+```python
+from mypy_boto3_appflow.literals import AppflowServiceName
+```
+
+Values:
+
+- `appflow`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1140,3 +1154,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_appflow.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

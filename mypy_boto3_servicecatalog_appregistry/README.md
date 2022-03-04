@@ -163,7 +163,9 @@ from mypy_boto3_servicecatalog_appregistry.literals import ListApplicationsPagin
 - [ResourceGroupStateType](./literals.md#resourcegroupstatetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
 - [SyncActionType](./literals.md#syncactiontype)
+- [AppRegistryServiceName](./literals.md#appregistryservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

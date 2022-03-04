@@ -338,7 +338,9 @@ from mypy_boto3_elasticache.literals import AZModeType, ...
 - [SlaMetType](./literals.md#slamettype)
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [UpdateActionStatusType](./literals.md#updateactionstatustype)
+- [ElastiCacheServiceName](./literals.md#elasticacheservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

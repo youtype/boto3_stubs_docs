@@ -264,7 +264,9 @@ from mypy_boto3_cloudwatch.literals import AlarmExistsWaiterName, ...
 - [StateValueType](./literals.md#statevaluetype)
 - [StatisticType](./literals.md#statistictype)
 - [StatusCodeType](./literals.md#statuscodetype)
+- [CloudWatchServiceName](./literals.md#cloudwatchservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

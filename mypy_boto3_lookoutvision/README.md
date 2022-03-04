@@ -171,7 +171,9 @@ from mypy_boto3_lookoutvision.literals import DatasetStatusType, ...
 - [TargetPlatformAcceleratorType](./literals.md#targetplatformacceleratortype)
 - [TargetPlatformArchType](./literals.md#targetplatformarchtype)
 - [TargetPlatformOsType](./literals.md#targetplatformostype)
+- [LookoutforVisionServiceName](./literals.md#lookoutforvisionservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

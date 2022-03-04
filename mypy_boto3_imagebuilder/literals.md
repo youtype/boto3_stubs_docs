@@ -24,7 +24,9 @@ type annotations stubs module
   - [PipelineExecutionStartConditionType](#pipelineexecutionstartconditiontype)
   - [PipelineStatusType](#pipelinestatustype)
   - [PlatformType](#platformtype)
+  - [imagebuilderServiceName](#imagebuilderservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="buildtypetype"></a>
 
@@ -220,6 +222,18 @@ Values:
 
 - `Linux`
 - `Windows`
+
+<a id="imagebuilderservicename"></a>
+
+## imagebuilderServiceName
+
+```python
+from mypy_boto3_imagebuilder.literals import imagebuilderServiceName
+```
+
+Values:
+
+- `imagebuilder`
 
 <a id="servicename"></a>
 
@@ -531,3 +545,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_imagebuilder.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -165,7 +165,9 @@ from mypy_boto3_mgh.literals import ApplicationStatusType, ...
 - [ListProgressUpdateStreamsPaginatorName](./literals.md#listprogressupdatestreamspaginatorname)
 - [ResourceAttributeTypeType](./literals.md#resourceattributetypetype)
 - [StatusType](./literals.md#statustype)
+- [MigrationHubServiceName](./literals.md#migrationhubservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

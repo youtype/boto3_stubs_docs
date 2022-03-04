@@ -183,7 +183,9 @@ from mypy_boto3_amplify.literals import DomainStatusType, ...
 - [PlatformType](./literals.md#platformtype)
 - [RepositoryCloneMethodType](./literals.md#repositoryclonemethodtype)
 - [StageType](./literals.md#stagetype)
+- [AmplifyServiceName](./literals.md#amplifyservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

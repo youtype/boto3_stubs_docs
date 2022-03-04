@@ -23,7 +23,9 @@ type annotations stubs module
   - [SavingsPlanStateType](#savingsplanstatetype)
   - [SavingsPlanTypeType](#savingsplantypetype)
   - [SavingsPlansFilterNameType](#savingsplansfilternametype)
+  - [SavingsPlansServiceName](#savingsplansservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="currencycodetype"></a>
 
@@ -225,6 +227,18 @@ Values:
 - `start`
 - `term`
 - `upfront`
+
+<a id="savingsplansservicename"></a>
+
+## SavingsPlansServiceName
+
+```python
+from mypy_boto3_savingsplans.literals import SavingsPlansServiceName
+```
+
+Values:
+
+- `savingsplans`
 
 <a id="servicename"></a>
 
@@ -536,3 +550,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_savingsplans.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

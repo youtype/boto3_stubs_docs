@@ -19,7 +19,9 @@ type annotations stubs module
   - [ListTargetsPaginatorName](#listtargetspaginatorname)
   - [NotificationRuleStatusType](#notificationrulestatustype)
   - [TargetStatusType](#targetstatustype)
+  - [CodeStarNotificationsServiceName](#codestarnotificationsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="detailtypetype"></a>
@@ -141,6 +143,18 @@ Values:
 - `INACTIVE`
 - `PENDING`
 - `UNREACHABLE`
+
+<a id="codestarnotificationsservicename"></a>
+
+## CodeStarNotificationsServiceName
+
+```python
+from mypy_boto3_codestar_notifications.literals import CodeStarNotificationsServiceName
+```
+
+Values:
+
+- `codestar-notifications`
 
 <a id="servicename"></a>
 
@@ -452,6 +466,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_codestar_notifications.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

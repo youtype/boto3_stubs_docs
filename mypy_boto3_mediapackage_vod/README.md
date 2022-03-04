@@ -162,7 +162,9 @@ from mypy_boto3_mediapackage_vod.literals import AdMarkersType, ...
 - [ProfileType](./literals.md#profiletype)
 - [SegmentTemplateFormatType](./literals.md#segmenttemplateformattype)
 - [StreamOrderType](./literals.md#streamordertype)
+- [MediaPackageVodServiceName](./literals.md#mediapackagevodservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -22,7 +22,9 @@ type annotations stubs module
   - [TargetPlatformAcceleratorType](#targetplatformacceleratortype)
   - [TargetPlatformArchType](#targetplatformarchtype)
   - [TargetPlatformOsType](#targetplatformostype)
+  - [LookoutforVisionServiceName](#lookoutforvisionservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="datasetstatustype"></a>
@@ -193,6 +195,18 @@ from mypy_boto3_lookoutvision.literals import TargetPlatformOsType
 Values:
 
 - `LINUX`
+
+<a id="lookoutforvisionservicename"></a>
+
+## LookoutforVisionServiceName
+
+```python
+from mypy_boto3_lookoutvision.literals import LookoutforVisionServiceName
+```
+
+Values:
+
+- `lookoutvision`
 
 <a id="servicename"></a>
 
@@ -504,6 +518,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lookoutvision.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

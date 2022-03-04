@@ -177,7 +177,9 @@ from mypy_boto3_amp.literals import AlertManagerDefinitionStatusCodeType, ...
 - [WorkspaceActiveWaiterName](./literals.md#workspaceactivewaitername)
 - [WorkspaceDeletedWaiterName](./literals.md#workspacedeletedwaitername)
 - [WorkspaceStatusCodeType](./literals.md#workspacestatuscodetype)
+- [PrometheusServiceServiceName](./literals.md#prometheusserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

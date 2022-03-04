@@ -34,7 +34,9 @@ type annotations stubs module
   - [ScopeTypeType](#scopetypetype)
   - [SeverityType](#severitytype)
   - [StopActionType](#stopactiontype)
+  - [InspectorServiceName](#inspectorservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="agenthealthcodetype"></a>
@@ -367,6 +369,18 @@ Values:
 - `SKIP_EVALUATION`
 - `START_EVALUATION`
 
+<a id="inspectorservicename"></a>
+
+## InspectorServiceName
+
+```python
+from mypy_boto3_inspector.literals import InspectorServiceName
+```
+
+Values:
+
+- `inspector`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -677,6 +691,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_inspector.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

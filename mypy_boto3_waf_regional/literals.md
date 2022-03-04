@@ -25,7 +25,9 @@ type annotations stubs module
   - [WafActionTypeType](#wafactiontypetype)
   - [WafOverrideActionTypeType](#wafoverrideactiontypetype)
   - [WafRuleTypeType](#wafruletypetype)
+  - [WAFRegionalServiceName](#wafregionalservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="changeactiontype"></a>
 
@@ -491,6 +493,18 @@ Values:
 - `RATE_BASED`
 - `REGULAR`
 
+<a id="wafregionalservicename"></a>
+
+## WAFRegionalServiceName
+
+```python
+from mypy_boto3_waf_regional.literals import WAFRegionalServiceName
+```
+
+Values:
+
+- `waf-regional`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -801,3 +815,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_waf_regional.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

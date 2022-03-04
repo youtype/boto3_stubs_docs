@@ -165,7 +165,9 @@ from mypy_boto3_codestar.literals import ListProjectsPaginatorName, ...
 - [ListResourcesPaginatorName](./literals.md#listresourcespaginatorname)
 - [ListTeamMembersPaginatorName](./literals.md#listteammemberspaginatorname)
 - [ListUserProfilesPaginatorName](./literals.md#listuserprofilespaginatorname)
+- [CodeStarServiceName](./literals.md#codestarservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

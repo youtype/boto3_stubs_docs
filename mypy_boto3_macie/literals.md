@@ -14,7 +14,9 @@ type annotations stubs module
   - [ListS3ResourcesPaginatorName](#lists3resourcespaginatorname)
   - [S3ContinuousClassificationTypeType](#s3continuousclassificationtypetype)
   - [S3OneTimeClassificationTypeType](#s3onetimeclassificationtypetype)
+  - [MacieServiceName](#macieservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listmemberaccountspaginatorname"></a>
@@ -65,6 +67,18 @@ Values:
 
 - `FULL`
 - `NONE`
+
+<a id="macieservicename"></a>
+
+## MacieServiceName
+
+```python
+from mypy_boto3_macie.literals import MacieServiceName
+```
+
+Values:
+
+- `macie`
 
 <a id="servicename"></a>
 
@@ -376,6 +390,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_macie.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

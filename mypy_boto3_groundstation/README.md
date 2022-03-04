@@ -176,7 +176,9 @@ from mypy_boto3_groundstation.literals import AngleUnitsType, ...
 - [ListMissionProfilesPaginatorName](./literals.md#listmissionprofilespaginatorname)
 - [ListSatellitesPaginatorName](./literals.md#listsatellitespaginatorname)
 - [PolarizationType](./literals.md#polarizationtype)
+- [GroundStationServiceName](./literals.md#groundstationservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

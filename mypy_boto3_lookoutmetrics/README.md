@@ -154,7 +154,9 @@ from mypy_boto3_lookoutmetrics.literals import AggregationFunctionType, ...
 - [FrequencyType](./literals.md#frequencytype)
 - [JsonFileCompressionType](./literals.md#jsonfilecompressiontype)
 - [RelationshipTypeType](./literals.md#relationshiptypetype)
+- [LookoutMetricsServiceName](./literals.md#lookoutmetricsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

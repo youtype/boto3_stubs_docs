@@ -262,7 +262,9 @@ from mypy_boto3_pinpoint.literals import ActionType, ...
 - [StateType](./literals.md#statetype)
 - [TemplateTypeType](./literals.md#templatetypetype)
 - [TypeType](./literals.md#typetype)
+- [PinpointServiceName](./literals.md#pinpointservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

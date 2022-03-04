@@ -43,7 +43,9 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [StatusType](#statustype)
   - [StatusTypeType](#statustypetype)
+  - [LexModelBuildingServiceServiceName](#lexmodelbuildingserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="channelstatustype"></a>
@@ -487,6 +489,18 @@ Values:
 - `Detected`
 - `Missed`
 
+<a id="lexmodelbuildingserviceservicename"></a>
+
+## LexModelBuildingServiceServiceName
+
+```python
+from mypy_boto3_lex_models.literals import LexModelBuildingServiceServiceName
+```
+
+Values:
+
+- `lex-models`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -797,6 +811,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lex_models.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

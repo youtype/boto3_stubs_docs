@@ -147,7 +147,9 @@ from mypy_boto3_mwaa.literals import EnvironmentStatusType, ...
 - [UnitType](./literals.md#unittype)
 - [UpdateStatusType](./literals.md#updatestatustype)
 - [WebserverAccessModeType](./literals.md#webserveraccessmodetype)
+- [MWAAServiceName](./literals.md#mwaaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

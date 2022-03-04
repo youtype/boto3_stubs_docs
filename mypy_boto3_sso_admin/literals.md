@@ -26,7 +26,9 @@ type annotations stubs module
   - [ProvisioningStatusType](#provisioningstatustype)
   - [StatusValuesType](#statusvaluestype)
   - [TargetTypeType](#targettypetype)
+  - [SSOAdminServiceName](#ssoadminservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="instanceaccesscontrolattributeconfigurationstatustype"></a>
@@ -227,6 +229,18 @@ from mypy_boto3_sso_admin.literals import TargetTypeType
 Values:
 
 - `AWS_ACCOUNT`
+
+<a id="ssoadminservicename"></a>
+
+## SSOAdminServiceName
+
+```python
+from mypy_boto3_sso_admin.literals import SSOAdminServiceName
+```
+
+Values:
+
+- `sso-admin`
 
 <a id="servicename"></a>
 
@@ -538,6 +552,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sso_admin.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

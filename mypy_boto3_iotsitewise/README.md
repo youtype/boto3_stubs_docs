@@ -288,7 +288,9 @@ from mypy_boto3_iotsitewise.literals import AggregateTypeType, ...
 - [TimeOrderingType](./literals.md#timeorderingtype)
 - [TraversalDirectionType](./literals.md#traversaldirectiontype)
 - [TraversalTypeType](./literals.md#traversaltypetype)
+- [IoTSiteWiseServiceName](./literals.md#iotsitewiseservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

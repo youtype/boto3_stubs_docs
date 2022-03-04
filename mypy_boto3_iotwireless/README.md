@@ -230,7 +230,9 @@ from mypy_boto3_iotwireless.literals import BatteryLevelType, ...
 - [WirelessGatewayTaskDefinitionTypeType](./literals.md#wirelessgatewaytaskdefinitiontypetype)
 - [WirelessGatewayTaskStatusType](./literals.md#wirelessgatewaytaskstatustype)
 - [WirelessGatewayTypeType](./literals.md#wirelessgatewaytypetype)
+- [IoTWirelessServiceName](./literals.md#iotwirelessservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -143,7 +143,9 @@ from mypy_boto3_cur.literals import AWSRegionType, ...
 - [ReportVersioningType](./literals.md#reportversioningtype)
 - [SchemaElementType](./literals.md#schemaelementtype)
 - [TimeUnitType](./literals.md#timeunittype)
+- [CostandUsageReportServiceServiceName](./literals.md#costandusagereportserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

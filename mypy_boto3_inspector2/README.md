@@ -229,7 +229,9 @@ from mypy_boto3_inspector2.literals import AccountSortByType, ...
 - [StringComparisonType](./literals.md#stringcomparisontype)
 - [TitleSortByType](./literals.md#titlesortbytype)
 - [UsageTypeType](./literals.md#usagetypetype)
+- [Inspector2ServiceName](./literals.md#inspector2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

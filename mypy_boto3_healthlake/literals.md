@@ -15,7 +15,9 @@ type annotations stubs module
   - [FHIRVersionType](#fhirversiontype)
   - [JobStatusType](#jobstatustype)
   - [PreloadDataTypeType](#preloaddatatypetype)
+  - [HealthLakeServiceName](#healthlakeservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="cmktypetype"></a>
 
@@ -84,6 +86,18 @@ from mypy_boto3_healthlake.literals import PreloadDataTypeType
 Values:
 
 - `SYNTHEA`
+
+<a id="healthlakeservicename"></a>
+
+## HealthLakeServiceName
+
+```python
+from mypy_boto3_healthlake.literals import HealthLakeServiceName
+```
+
+Values:
+
+- `healthlake`
 
 <a id="servicename"></a>
 
@@ -395,3 +409,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_healthlake.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

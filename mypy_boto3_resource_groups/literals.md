@@ -19,7 +19,9 @@ type annotations stubs module
   - [ResourceFilterNameType](#resourcefilternametype)
   - [ResourceStatusValueType](#resourcestatusvaluetype)
   - [SearchResourcesPaginatorName](#searchresourcespaginatorname)
+  - [ResourceGroupsServiceName](#resourcegroupsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="groupconfigurationstatustype"></a>
@@ -134,6 +136,18 @@ from mypy_boto3_resource_groups.literals import SearchResourcesPaginatorName
 Values:
 
 - `search_resources`
+
+<a id="resourcegroupsservicename"></a>
+
+## ResourceGroupsServiceName
+
+```python
+from mypy_boto3_resource_groups.literals import ResourceGroupsServiceName
+```
+
+Values:
+
+- `resource-groups`
 
 <a id="servicename"></a>
 
@@ -445,6 +459,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_resource_groups.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -34,7 +34,9 @@ type annotations stubs module
   - [StageTransitionTypeType](#stagetransitiontypetype)
   - [TriggerTypeType](#triggertypetype)
   - [WebhookAuthenticationTypeType](#webhookauthenticationtypetype)
+  - [CodePipelineServiceName](#codepipelineservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="actioncategorytype"></a>
@@ -369,6 +371,18 @@ Values:
 - `IP`
 - `UNAUTHENTICATED`
 
+<a id="codepipelineservicename"></a>
+
+## CodePipelineServiceName
+
+```python
+from mypy_boto3_codepipeline.literals import CodePipelineServiceName
+```
+
+Values:
+
+- `codepipeline`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -679,6 +693,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_codepipeline.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

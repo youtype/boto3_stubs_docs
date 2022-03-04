@@ -34,7 +34,9 @@ type annotations stubs module
   - [ThreatIntelSetFormatType](#threatintelsetformattype)
   - [ThreatIntelSetStatusType](#threatintelsetstatustype)
   - [UsageStatisticTypeType](#usagestatistictypetype)
+  - [GuardDutyServiceName](#guarddutyservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="adminstatustype"></a>
@@ -365,6 +367,18 @@ Values:
 - `SUM_BY_RESOURCE`
 - `TOP_RESOURCES`
 
+<a id="guarddutyservicename"></a>
+
+## GuardDutyServiceName
+
+```python
+from mypy_boto3_guardduty.literals import GuardDutyServiceName
+```
+
+Values:
+
+- `guardduty`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -675,6 +689,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_guardduty.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

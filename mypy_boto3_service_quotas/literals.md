@@ -20,7 +20,9 @@ type annotations stubs module
   - [PeriodUnitType](#periodunittype)
   - [RequestStatusType](#requeststatustype)
   - [ServiceQuotaTemplateAssociationStatusType](#servicequotatemplateassociationstatustype)
+  - [ServiceQuotasServiceName](#servicequotasservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="errorcodetype"></a>
@@ -156,6 +158,18 @@ Values:
 
 - `ASSOCIATED`
 - `DISASSOCIATED`
+
+<a id="servicequotasservicename"></a>
+
+## ServiceQuotasServiceName
+
+```python
+from mypy_boto3_service_quotas.literals import ServiceQuotasServiceName
+```
+
+Values:
+
+- `service-quotas`
 
 <a id="servicename"></a>
 
@@ -467,6 +481,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_service_quotas.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

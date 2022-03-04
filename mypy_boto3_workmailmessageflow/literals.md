@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-workmailmessageflow](https://pypi.org/project/mypy-boto3-workmailmessageflow/).
 
 - [Literals for boto3 WorkMailMessageFlow module](#literals-for-boto3-workmailmessageflow-module)
+  - [WorkMailMessageFlowServiceName](#workmailmessageflowservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="workmailmessageflowservicename"></a>
+
+## WorkMailMessageFlowServiceName
+
+```python
+from mypy_boto3_workmailmessageflow.literals import WorkMailMessageFlowServiceName
+```
+
+Values:
+
+- `workmailmessageflow`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_workmailmessageflow.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -211,7 +211,9 @@ from mypy_boto3_databrew.literals import AnalyticsModeType, ...
 - [ThresholdTypeType](./literals.md#thresholdtypetype)
 - [ThresholdUnitType](./literals.md#thresholdunittype)
 - [ValidationModeType](./literals.md#validationmodetype)
+- [GlueDataBrewServiceName](./literals.md#gluedatabrewservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

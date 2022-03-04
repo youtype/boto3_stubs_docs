@@ -15,7 +15,9 @@ type annotations stubs module
   - [ListGatewaysPaginatorName](#listgatewayspaginatorname)
   - [ListHypervisorsPaginatorName](#listhypervisorspaginatorname)
   - [ListVirtualMachinesPaginatorName](#listvirtualmachinespaginatorname)
+  - [BackupGatewayServiceName](#backupgatewayservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="gatewaytypetype"></a>
@@ -80,6 +82,18 @@ from mypy_boto3_backup_gateway.literals import ListVirtualMachinesPaginatorName
 Values:
 
 - `list_virtual_machines`
+
+<a id="backupgatewayservicename"></a>
+
+## BackupGatewayServiceName
+
+```python
+from mypy_boto3_backup_gateway.literals import BackupGatewayServiceName
+```
+
+Values:
+
+- `backup-gateway`
 
 <a id="servicename"></a>
 
@@ -391,6 +405,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_backup_gateway.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -131,7 +131,9 @@ from mypy_boto3_fis.literals import ExperimentActionStatusType, ...
 
 - [ExperimentActionStatusType](./literals.md#experimentactionstatustype)
 - [ExperimentStatusType](./literals.md#experimentstatustype)
+- [FISServiceName](./literals.md#fisservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 PinpointSMSVoice module](#literals-for-boto3-pinpointsmsvoice-module)
   - [EventTypeType](#eventtypetype)
+  - [PinpointSMSVoiceServiceName](#pinpointsmsvoiceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="eventtypetype"></a>
 
@@ -30,6 +32,18 @@ Values:
 - `INITIATED_CALL`
 - `NO_ANSWER`
 - `RINGING`
+
+<a id="pinpointsmsvoiceservicename"></a>
+
+## PinpointSMSVoiceServiceName
+
+```python
+from mypy_boto3_sms_voice.literals import PinpointSMSVoiceServiceName
+```
+
+Values:
+
+- `sms-voice`
 
 <a id="servicename"></a>
 
@@ -341,3 +355,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sms_voice.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

@@ -17,7 +17,9 @@ type annotations stubs module
   - [ResourceGroupStateType](#resourcegroupstatetype)
   - [ResourceTypeType](#resourcetypetype)
   - [SyncActionType](#syncactiontype)
+  - [AppRegistryServiceName](#appregistryservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listapplicationspaginatorname"></a>
@@ -109,6 +111,18 @@ Values:
 
 - `NO_ACTION`
 - `START_SYNC`
+
+<a id="appregistryservicename"></a>
+
+## AppRegistryServiceName
+
+```python
+from mypy_boto3_servicecatalog_appregistry.literals import AppRegistryServiceName
+```
+
+Values:
+
+- `servicecatalog-appregistry`
 
 <a id="servicename"></a>
 
@@ -420,6 +434,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_servicecatalog_appregistry.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -61,7 +61,9 @@ type annotations stubs module
   - [TimeOrderingType](#timeorderingtype)
   - [TraversalDirectionType](#traversaldirectiontype)
   - [TraversalTypeType](#traversaltypetype)
+  - [IoTSiteWiseServiceName](#iotsitewiseservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -735,6 +737,18 @@ Values:
 
 - `PATH_TO_ROOT`
 
+<a id="iotsitewiseservicename"></a>
+
+## IoTSiteWiseServiceName
+
+```python
+from mypy_boto3_iotsitewise.literals import IoTSiteWiseServiceName
+```
+
+Values:
+
+- `iotsitewise`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -1045,6 +1059,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotsitewise.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

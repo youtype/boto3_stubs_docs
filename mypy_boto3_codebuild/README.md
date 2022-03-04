@@ -238,7 +238,9 @@ from mypy_boto3_codebuild.literals import ArtifactNamespaceType, ...
 - [StatusTypeType](./literals.md#statustypetype)
 - [WebhookBuildTypeType](./literals.md#webhookbuildtypetype)
 - [WebhookFilterTypeType](./literals.md#webhookfiltertypetype)
+- [CodeBuildServiceName](./literals.md#codebuildservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

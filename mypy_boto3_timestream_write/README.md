@@ -139,7 +139,9 @@ from mypy_boto3_timestream_write.literals import DimensionValueTypeType, ...
 - [S3EncryptionOptionType](./literals.md#s3encryptionoptiontype)
 - [TableStatusType](./literals.md#tablestatustype)
 - [TimeUnitType](./literals.md#timeunittype)
+- [TimestreamWriteServiceName](./literals.md#timestreamwriteservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

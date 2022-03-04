@@ -37,7 +37,9 @@ type annotations stubs module
   - [StateType](#statetype)
   - [StatusType](#statustype)
   - [TcsType](#tcstype)
+  - [MediaConnectServiceName](#mediaconnectservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -415,6 +417,18 @@ Values:
 - `ST2065-1`
 - `ST428-1`
 
+<a id="mediaconnectservicename"></a>
+
+## MediaConnectServiceName
+
+```python
+from mypy_boto3_mediaconnect.literals import MediaConnectServiceName
+```
+
+Values:
+
+- `mediaconnect`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -725,6 +739,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mediaconnect.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -182,7 +182,9 @@ from mypy_boto3_discovery.literals import AgentStatusType, ...
 - [ImportTaskFilterNameType](./literals.md#importtaskfilternametype)
 - [ListConfigurationsPaginatorName](./literals.md#listconfigurationspaginatorname)
 - [orderStringType](./literals.md#orderstringtype)
+- [ApplicationDiscoveryServiceServiceName](./literals.md#applicationdiscoveryserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

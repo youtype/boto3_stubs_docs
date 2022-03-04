@@ -33,7 +33,9 @@ type annotations stubs module
   - [StatisticType](#statistictype)
   - [TagResourceTypeType](#tagresourcetypetype)
   - [VPCRegionType](#vpcregiontype)
+  - [Route53ServiceName](#route53servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -439,6 +441,18 @@ Values:
 - `us-west-1`
 - `us-west-2`
 
+<a id="route53servicename"></a>
+
+## Route53ServiceName
+
+```python
+from mypy_boto3_route53.literals import Route53ServiceName
+```
+
+Values:
+
+- `route53`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -749,6 +763,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_route53.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

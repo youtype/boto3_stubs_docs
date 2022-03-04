@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 SSO module](#literals-for-boto3-sso-module)
   - [ListAccountRolesPaginatorName](#listaccountrolespaginatorname)
   - [ListAccountsPaginatorName](#listaccountspaginatorname)
+  - [SSOServiceName](#ssoservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listaccountrolespaginatorname"></a>
@@ -38,6 +40,18 @@ from mypy_boto3_sso.literals import ListAccountsPaginatorName
 Values:
 
 - `list_accounts`
+
+<a id="ssoservicename"></a>
+
+## SSOServiceName
+
+```python
+from mypy_boto3_sso.literals import SSOServiceName
+```
+
+Values:
+
+- `sso`
 
 <a id="servicename"></a>
 
@@ -349,6 +363,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sso.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

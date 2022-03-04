@@ -26,7 +26,9 @@ type annotations stubs module
   - [RelevanceLevelType](#relevanceleveltype)
   - [SearchContentPaginatorName](#searchcontentpaginatorname)
   - [SearchSessionsPaginatorName](#searchsessionspaginatorname)
+  - [ConnectWisdomServiceServiceName](#connectwisdomserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="assistantstatustype"></a>
@@ -239,6 +241,18 @@ from mypy_boto3_wisdom.literals import SearchSessionsPaginatorName
 Values:
 
 - `search_sessions`
+
+<a id="connectwisdomserviceservicename"></a>
+
+## ConnectWisdomServiceServiceName
+
+```python
+from mypy_boto3_wisdom.literals import ConnectWisdomServiceServiceName
+```
+
+Values:
+
+- `wisdom`
 
 <a id="servicename"></a>
 
@@ -550,6 +564,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_wisdom.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

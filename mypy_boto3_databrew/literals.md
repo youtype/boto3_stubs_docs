@@ -37,7 +37,9 @@ type annotations stubs module
   - [ThresholdTypeType](#thresholdtypetype)
   - [ThresholdUnitType](#thresholdunittype)
   - [ValidationModeType](#validationmodetype)
+  - [GlueDataBrewServiceName](#gluedatabrewservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="analyticsmodetype"></a>
@@ -413,6 +415,18 @@ Values:
 
 - `CHECK_ALL`
 
+<a id="gluedatabrewservicename"></a>
+
+## GlueDataBrewServiceName
+
+```python
+from mypy_boto3_databrew.literals import GlueDataBrewServiceName
+```
+
+Values:
+
+- `databrew`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -723,6 +737,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_databrew.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

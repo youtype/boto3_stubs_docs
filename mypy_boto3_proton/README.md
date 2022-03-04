@@ -279,7 +279,9 @@ from mypy_boto3_proton.literals import DeploymentStatusType, ...
 - [SyncTypeType](./literals.md#synctypetype)
 - [TemplateTypeType](./literals.md#templatetypetype)
 - [TemplateVersionStatusType](./literals.md#templateversionstatustype)
+- [ProtonServiceName](./literals.md#protonservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

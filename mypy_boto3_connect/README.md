@@ -373,7 +373,9 @@ from mypy_boto3_connect.literals import AgentStatusStateType, ...
 - [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
 - [VocabularyStateType](./literals.md#vocabularystatetype)
 - [VoiceRecordingTrackType](./literals.md#voicerecordingtracktype)
+- [ConnectServiceName](./literals.md#connectservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -121,7 +121,9 @@ from mypy_boto3_iotsecuretunneling.literals import ConnectionStatusType, ...
 
 - [ConnectionStatusType](./literals.md#connectionstatustype)
 - [TunnelStatusType](./literals.md#tunnelstatustype)
+- [IoTSecureTunnelingServiceName](./literals.md#iotsecuretunnelingservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

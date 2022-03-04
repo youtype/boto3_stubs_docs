@@ -116,10 +116,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_sagemaker_featurestore_runtime.literals import ServiceName, ...
+from mypy_boto3_sagemaker_featurestore_runtime.literals import SageMakerFeatureStoreRuntimeServiceName, ...
 ```
 
+- [SageMakerFeatureStoreRuntimeServiceName](./literals.md#sagemakerfeaturestoreruntimeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

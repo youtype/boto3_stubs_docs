@@ -35,7 +35,9 @@ type annotations stubs module
   - [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](#replicationconfigurationreplicateddiskstagingdisktypetype)
   - [ReplicationTypeType](#replicationtypetype)
   - [TargetInstanceTypeRightSizingMethodType](#targetinstancetyperightsizingmethodtype)
+  - [mgnServiceName](#mgnservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="bootmodetype"></a>
@@ -431,6 +433,18 @@ Values:
 - `BASIC`
 - `NONE`
 
+<a id="mgnservicename"></a>
+
+## mgnServiceName
+
+```python
+from mypy_boto3_mgn.literals import mgnServiceName
+```
+
+Values:
+
+- `mgn`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -741,6 +755,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mgn.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

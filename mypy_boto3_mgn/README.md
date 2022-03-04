@@ -192,7 +192,9 @@ from mypy_boto3_mgn.literals import BootModeType, ...
 - [ReplicationConfigurationReplicatedDiskStagingDiskTypeType](./literals.md#replicationconfigurationreplicateddiskstagingdisktypetype)
 - [ReplicationTypeType](./literals.md#replicationtypetype)
 - [TargetInstanceTypeRightSizingMethodType](./literals.md#targetinstancetyperightsizingmethodtype)
+- [mgnServiceName](./literals.md#mgnservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

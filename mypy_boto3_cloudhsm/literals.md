@@ -17,7 +17,9 @@ type annotations stubs module
   - [ListHsmsPaginatorName](#listhsmspaginatorname)
   - [ListLunaClientsPaginatorName](#listlunaclientspaginatorname)
   - [SubscriptionTypeType](#subscriptiontypetype)
+  - [CloudHSMServiceName](#cloudhsmservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="clientversiontype"></a>
@@ -112,6 +114,18 @@ from mypy_boto3_cloudhsm.literals import SubscriptionTypeType
 Values:
 
 - `PRODUCTION`
+
+<a id="cloudhsmservicename"></a>
+
+## CloudHSMServiceName
+
+```python
+from mypy_boto3_cloudhsm.literals import CloudHSMServiceName
+```
+
+Values:
+
+- `cloudhsm`
 
 <a id="servicename"></a>
 
@@ -423,6 +437,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudhsm.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

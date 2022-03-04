@@ -26,11 +26,16 @@ type annotations stubs module
   - [ListWorkflowsPaginatorName](#listworkflowspaginatorname)
   - [OverwriteExistingType](#overwriteexistingtype)
   - [ProtocolType](#protocoltype)
+  - [ServerOfflineWaiterName](#serverofflinewaitername)
+  - [ServerOnlineWaiterName](#serveronlinewaitername)
   - [StateType](#statetype)
   - [TlsSessionResumptionModeType](#tlssessionresumptionmodetype)
   - [WorkflowStepTypeType](#workflowsteptypetype)
+  - [TransferServiceName](#transferservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
+  - [WaiterName](#waitername)
 
 <a id="customstepstatustype"></a>
 
@@ -238,6 +243,30 @@ Values:
 - `FTPS`
 - `SFTP`
 
+<a id="serverofflinewaitername"></a>
+
+## ServerOfflineWaiterName
+
+```python
+from mypy_boto3_transfer.literals import ServerOfflineWaiterName
+```
+
+Values:
+
+- `server_offline`
+
+<a id="serveronlinewaitername"></a>
+
+## ServerOnlineWaiterName
+
+```python
+from mypy_boto3_transfer.literals import ServerOnlineWaiterName
+```
+
+Values:
+
+- `server_online`
+
 <a id="statetype"></a>
 
 ## StateType
@@ -283,6 +312,18 @@ Values:
 - `CUSTOM`
 - `DELETE`
 - `TAG`
+
+<a id="transferservicename"></a>
+
+## TransferServiceName
+
+```python
+from mypy_boto3_transfer.literals import TransferServiceName
+```
+
+Values:
+
+- `transfer`
 
 <a id="servicename"></a>
 
@@ -595,6 +636,27 @@ Values:
 - `workspaces-web`
 - `xray`
 
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_transfer.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
+
 <a id="paginatorname"></a>
 
 ## PaginatorName
@@ -612,3 +674,16 @@ Values:
 - `list_tags_for_resource`
 - `list_users`
 - `list_workflows`
+
+<a id="waitername"></a>
+
+## WaiterName
+
+```python
+from mypy_boto3_transfer.literals import WaiterName
+```
+
+Values:
+
+- `server_offline`
+- `server_online`

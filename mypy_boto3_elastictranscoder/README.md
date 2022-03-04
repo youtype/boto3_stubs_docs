@@ -176,7 +176,9 @@ from mypy_boto3_elastictranscoder.literals import JobCompleteWaiterName, ...
 - [ListJobsByStatusPaginatorName](./literals.md#listjobsbystatuspaginatorname)
 - [ListPipelinesPaginatorName](./literals.md#listpipelinespaginatorname)
 - [ListPresetsPaginatorName](./literals.md#listpresetspaginatorname)
+- [ElasticTranscoderServiceName](./literals.md#elastictranscoderservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

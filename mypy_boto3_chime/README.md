@@ -381,7 +381,9 @@ from mypy_boto3_chime.literals import AccountStatusType, ...
 - [UserTypeType](./literals.md#usertypetype)
 - [VideoMuxTypeType](./literals.md#videomuxtypetype)
 - [VoiceConnectorAwsRegionType](./literals.md#voiceconnectorawsregiontype)
+- [ChimeServiceName](./literals.md#chimeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

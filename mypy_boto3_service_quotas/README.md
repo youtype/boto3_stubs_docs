@@ -178,7 +178,9 @@ from mypy_boto3_service_quotas.literals import ErrorCodeType, ...
 - [PeriodUnitType](./literals.md#periodunittype)
 - [RequestStatusType](./literals.md#requeststatustype)
 - [ServiceQuotaTemplateAssociationStatusType](./literals.md#servicequotatemplateassociationstatustype)
+- [ServiceQuotasServiceName](./literals.md#servicequotasservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

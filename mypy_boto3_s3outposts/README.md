@@ -138,7 +138,9 @@ from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
 - [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
+- [S3OutpostsServiceName](./literals.md#s3outpostsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

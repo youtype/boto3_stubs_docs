@@ -266,7 +266,9 @@ from mypy_boto3_sns.literals import LanguageCodeStringType, ...
 - [NumberCapabilityType](./literals.md#numbercapabilitytype)
 - [RouteTypeType](./literals.md#routetypetype)
 - [SMSSandboxPhoneNumberVerificationStatusType](./literals.md#smssandboxphonenumberverificationstatustype)
+- [SNSServiceName](./literals.md#snsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

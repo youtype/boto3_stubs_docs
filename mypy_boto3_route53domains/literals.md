@@ -25,7 +25,9 @@ type annotations stubs module
   - [SortOrderType](#sortordertype)
   - [TransferableType](#transferabletype)
   - [ViewBillingPaginatorName](#viewbillingpaginatorname)
+  - [Route53DomainsServiceName](#route53domainsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="contacttypetype"></a>
@@ -527,6 +529,18 @@ Values:
 
 - `view_billing`
 
+<a id="route53domainsservicename"></a>
+
+## Route53DomainsServiceName
+
+```python
+from mypy_boto3_route53domains.literals import Route53DomainsServiceName
+```
+
+Values:
+
+- `route53domains`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -837,6 +851,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_route53domains.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

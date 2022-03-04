@@ -24,7 +24,9 @@ type annotations stubs module
   - [InsightStateType](#insightstatetype)
   - [SamplingStrategyNameType](#samplingstrategynametype)
   - [TimeRangeTypeType](#timerangetypetype)
+  - [XRayServiceName](#xrayservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="batchgettracespaginatorname"></a>
@@ -199,6 +201,18 @@ Values:
 
 - `Event`
 - `TraceId`
+
+<a id="xrayservicename"></a>
+
+## XRayServiceName
+
+```python
+from mypy_boto3_xray.literals import XRayServiceName
+```
+
+Values:
+
+- `xray`
 
 <a id="servicename"></a>
 
@@ -510,6 +524,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_xray.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

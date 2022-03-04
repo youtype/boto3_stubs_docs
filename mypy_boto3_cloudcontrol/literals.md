@@ -14,7 +14,9 @@ type annotations stubs module
   - [OperationStatusType](#operationstatustype)
   - [OperationType](#operationtype)
   - [ResourceRequestSuccessWaiterName](#resourcerequestsuccesswaitername)
+  - [CloudControlApiServiceName](#cloudcontrolapiservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [WaiterName](#waitername)
 
 <a id="handlererrorcodetype"></a>
@@ -85,6 +87,18 @@ from mypy_boto3_cloudcontrol.literals import ResourceRequestSuccessWaiterName
 Values:
 
 - `resource_request_success`
+
+<a id="cloudcontrolapiservicename"></a>
+
+## CloudControlApiServiceName
+
+```python
+from mypy_boto3_cloudcontrol.literals import CloudControlApiServiceName
+```
+
+Values:
+
+- `cloudcontrol`
 
 <a id="servicename"></a>
 
@@ -396,6 +410,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_cloudcontrol.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="waitername"></a>
 

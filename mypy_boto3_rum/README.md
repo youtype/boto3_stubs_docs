@@ -149,7 +149,9 @@ from mypy_boto3_rum.literals import GetAppMonitorDataPaginatorName, ...
 - [ListAppMonitorsPaginatorName](./literals.md#listappmonitorspaginatorname)
 - [StateEnumType](./literals.md#stateenumtype)
 - [TelemetryType](./literals.md#telemetrytype)
+- [CloudWatchRUMServiceName](./literals.md#cloudwatchrumservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

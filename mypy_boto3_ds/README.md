@@ -268,7 +268,9 @@ from mypy_boto3_ds.literals import CertificateStateType, ...
 - [TrustDirectionType](./literals.md#trustdirectiontype)
 - [TrustStateType](./literals.md#truststatetype)
 - [TrustTypeType](./literals.md#trusttypetype)
+- [DirectoryServiceServiceName](./literals.md#directoryserviceservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

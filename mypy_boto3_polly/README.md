@@ -169,7 +169,9 @@ from mypy_boto3_polly.literals import DescribeVoicesPaginatorName, ...
 - [TaskStatusType](./literals.md#taskstatustype)
 - [TextTypeType](./literals.md#texttypetype)
 - [VoiceIdType](./literals.md#voiceidtype)
+- [PollyServiceName](./literals.md#pollyservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

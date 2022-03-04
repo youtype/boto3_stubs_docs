@@ -189,7 +189,9 @@ from mypy_boto3_acm.literals import CertificateStatusType, ...
 - [RenewalStatusType](./literals.md#renewalstatustype)
 - [RevocationReasonType](./literals.md#revocationreasontype)
 - [ValidationMethodType](./literals.md#validationmethodtype)
+- [ACMServiceName](./literals.md#acmservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

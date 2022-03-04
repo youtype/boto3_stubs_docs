@@ -119,7 +119,9 @@ from mypy_boto3_kinesis_video_signaling.literals import ServiceType, ...
 ```
 
 - [ServiceType](./literals.md#servicetype)
+- [KinesisVideoSignalingChannelsServiceName](./literals.md#kinesisvideosignalingchannelsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

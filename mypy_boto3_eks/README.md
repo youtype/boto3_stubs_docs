@@ -236,7 +236,9 @@ from mypy_boto3_eks.literals import AMITypesType, ...
 - [UpdateStatusType](./literals.md#updatestatustype)
 - [UpdateTypeType](./literals.md#updatetypetype)
 - [configStatusType](./literals.md#configstatustype)
+- [EKSServiceName](./literals.md#eksservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

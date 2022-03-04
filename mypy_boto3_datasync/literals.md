@@ -44,7 +44,9 @@ type annotations stubs module
   - [TransferModeType](#transfermodetype)
   - [UidType](#uidtype)
   - [VerifyModeType](#verifymodetype)
+  - [DataSyncServiceName](#datasyncservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="agentstatustype"></a>
@@ -521,6 +523,18 @@ Values:
 - `ONLY_FILES_TRANSFERRED`
 - `POINT_IN_TIME_CONSISTENT`
 
+<a id="datasyncservicename"></a>
+
+## DataSyncServiceName
+
+```python
+from mypy_boto3_datasync.literals import DataSyncServiceName
+```
+
+Values:
+
+- `datasync`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -831,6 +845,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_datasync.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

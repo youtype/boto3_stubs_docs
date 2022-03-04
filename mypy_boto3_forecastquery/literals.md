@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-forecastquery](https://pypi.org/project/mypy-boto3-forecastquery/).
 
 - [Literals for boto3 ForecastQueryService module](#literals-for-boto3-forecastqueryservice-module)
+  - [ForecastQueryServiceServiceName](#forecastqueryserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="forecastqueryserviceservicename"></a>
+
+## ForecastQueryServiceServiceName
+
+```python
+from mypy_boto3_forecastquery.literals import ForecastQueryServiceServiceName
+```
+
+Values:
+
+- `forecastquery`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_forecastquery.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

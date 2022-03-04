@@ -32,7 +32,9 @@ type annotations stubs module
   - [OriginTypeType](#origintypetype)
   - [SigningAlgorithmSpecType](#signingalgorithmspectype)
   - [WrappingKeySpecType](#wrappingkeyspectype)
+  - [KMSServiceName](#kmsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="algorithmspectype"></a>
@@ -371,6 +373,18 @@ Values:
 
 - `RSA_2048`
 
+<a id="kmsservicename"></a>
+
+## KMSServiceName
+
+```python
+from mypy_boto3_kms.literals import KMSServiceName
+```
+
+Values:
+
+- `kms`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -681,6 +695,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kms.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

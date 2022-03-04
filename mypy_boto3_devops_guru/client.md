@@ -19,6 +19,7 @@ type annotations stubs module
     - [describe_account_health](#describe_account_health)
     - [describe_account_overview](#describe_account_overview)
     - [describe_anomaly](#describe_anomaly)
+    - [describe_event_sources_config](#describe_event_sources_config)
     - [describe_feedback](#describe_feedback)
     - [describe_insight](#describe_insight)
     - [describe_organization_health](#describe_organization_health)
@@ -40,6 +41,7 @@ type annotations stubs module
     - [search_insights](#search_insights)
     - [search_organization_insights](#search_organization_insights)
     - [start_cost_estimation](#start_cost_estimation)
+    - [update_event_sources_config](#update_event_sources_config)
     - [update_resource_collection](#update_resource_collection)
     - [update_service_integration](#update_service_integration)
     - [get_paginator](#get_paginator)
@@ -209,6 +211,22 @@ Keyword-only arguments:
 
 Returns
 [DescribeAnomalyResponseTypeDef](./type_defs.md#describeanomalyresponsetypedef).
+
+<a id="describe\_event\_sources\_config"></a>
+
+### describe_event_sources_config
+
+This operation lists details about a DevOps Guru event source that is shared
+with your account.
+
+Type annotations for
+`boto3.client("devops-guru").describe_event_sources_config` method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.describe_event_sources_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.describe_event_sources_config)
+
+Returns
+[DescribeEventSourcesConfigResponseTypeDef](./type_defs.md#describeeventsourcesconfigresponsetypedef).
 
 <a id="describe\_feedback"></a>
 
@@ -718,6 +736,28 @@ Keyword-only arguments:
   [CostEstimationResourceCollectionFilterTypeDef](./type_defs.md#costestimationresourcecollectionfiltertypedef)
   *(required)*
 - `ClientToken`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
+
+<a id="update\_event\_sources\_config"></a>
+
+### update_event_sources_config
+
+Updates the event source configuration.
+
+Type annotations for `boto3.client("devops-guru").update_event_sources_config`
+method.
+
+Boto3 documentation:
+[DevOpsGuru.Client.update_event_sources_config](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/devops-guru.html#DevOpsGuru.Client.update_event_sources_config)
+
+Arguments mapping described in
+[UpdateEventSourcesConfigRequestRequestTypeDef](./type_defs.md#updateeventsourcesconfigrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `EventSources`:
+  [EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

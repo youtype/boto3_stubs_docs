@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 Account module](#literals-for-boto3-account-module)
   - [AlternateContactTypeType](#alternatecontacttypetype)
+  - [AccountServiceName](#accountservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="alternatecontacttypetype"></a>
 
@@ -26,6 +28,18 @@ Values:
 - `BILLING`
 - `OPERATIONS`
 - `SECURITY`
+
+<a id="accountservicename"></a>
+
+## AccountServiceName
+
+```python
+from mypy_boto3_account.literals import AccountServiceName
+```
+
+Values:
+
+- `account`
 
 <a id="servicename"></a>
 
@@ -337,3 +351,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_account.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

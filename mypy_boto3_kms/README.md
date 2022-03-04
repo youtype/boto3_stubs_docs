@@ -232,7 +232,9 @@ from mypy_boto3_kms.literals import AlgorithmSpecType, ...
 - [OriginTypeType](./literals.md#origintypetype)
 - [SigningAlgorithmSpecType](./literals.md#signingalgorithmspectype)
 - [WrappingKeySpecType](./literals.md#wrappingkeyspectype)
+- [KMSServiceName](./literals.md#kmsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

@@ -23,7 +23,9 @@ type annotations stubs module
   - [SeverityType](#severitytype)
   - [TypeType](#typetype)
   - [VendorNameType](#vendornametype)
+  - [CodeGuruReviewerServiceName](#codegurureviewerservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -213,6 +215,18 @@ Values:
 - `GitHub`
 - `GitLab`
 - `NativeS3`
+
+<a id="codegurureviewerservicename"></a>
+
+## CodeGuruReviewerServiceName
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import CodeGuruReviewerServiceName
+```
+
+Values:
+
+- `codeguru-reviewer`
 
 <a id="servicename"></a>
 
@@ -524,6 +538,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_codeguru_reviewer.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

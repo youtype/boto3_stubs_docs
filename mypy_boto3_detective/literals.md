@@ -13,7 +13,9 @@ type annotations stubs module
   - [InvitationTypeType](#invitationtypetype)
   - [MemberDisabledReasonType](#memberdisabledreasontype)
   - [MemberStatusType](#memberstatustype)
+  - [DetectiveServiceName](#detectiveservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="invitationtypetype"></a>
 
@@ -56,6 +58,18 @@ Values:
 - `INVITED`
 - `VERIFICATION_FAILED`
 - `VERIFICATION_IN_PROGRESS`
+
+<a id="detectiveservicename"></a>
+
+## DetectiveServiceName
+
+```python
+from mypy_boto3_detective.literals import DetectiveServiceName
+```
+
+Values:
+
+- `detective`
 
 <a id="servicename"></a>
 
@@ -367,3 +381,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_detective.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

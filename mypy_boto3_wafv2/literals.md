@@ -30,7 +30,9 @@ type annotations stubs module
   - [ResponseContentTypeType](#responsecontenttypetype)
   - [ScopeType](#scopetype)
   - [TextTransformationTypeType](#texttransformationtypetype)
+  - [WAFV2ServiceName](#wafv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="actionvaluetype"></a>
 
@@ -573,6 +575,18 @@ Values:
 - `URL_DECODE_UNI`
 - `UTF8_TO_UNICODE`
 
+<a id="wafv2servicename"></a>
+
+## WAFV2ServiceName
+
+```python
+from mypy_boto3_wafv2.literals import WAFV2ServiceName
+```
+
+Values:
+
+- `wafv2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -883,3 +897,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_wafv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

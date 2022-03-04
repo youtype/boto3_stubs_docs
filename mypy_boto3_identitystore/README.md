@@ -116,10 +116,12 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_identitystore.literals import ServiceName, ...
+from mypy_boto3_identitystore.literals import IdentityStoreServiceName, ...
 ```
 
+- [IdentityStoreServiceName](./literals.md#identitystoreservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

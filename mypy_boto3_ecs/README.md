@@ -298,7 +298,9 @@ from mypy_boto3_ecs.literals import AgentUpdateStatusType, ...
 - [TasksStoppedWaiterName](./literals.md#tasksstoppedwaitername)
 - [TransportProtocolType](./literals.md#transportprotocoltype)
 - [UlimitNameType](./literals.md#ulimitnametype)
+- [ECSServiceName](./literals.md#ecsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 KinesisVideoSignalingChannels module](#literals-for-boto3-kinesisvideosignalingchannels-module)
   - [ServiceType](#servicetype)
+  - [KinesisVideoSignalingChannelsServiceName](#kinesisvideosignalingchannelsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="servicetype"></a>
 
@@ -24,6 +26,18 @@ from mypy_boto3_kinesis_video_signaling.literals import ServiceType
 Values:
 
 - `TURN`
+
+<a id="kinesisvideosignalingchannelsservicename"></a>
+
+## KinesisVideoSignalingChannelsServiceName
+
+```python
+from mypy_boto3_kinesis_video_signaling.literals import KinesisVideoSignalingChannelsServiceName
+```
+
+Values:
+
+- `kinesis-video-signaling`
 
 <a id="servicename"></a>
 
@@ -335,3 +349,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kinesis_video_signaling.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

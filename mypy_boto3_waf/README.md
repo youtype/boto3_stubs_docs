@@ -267,7 +267,9 @@ from mypy_boto3_waf.literals import ChangeActionType, ...
 - [WafActionTypeType](./literals.md#wafactiontypetype)
 - [WafOverrideActionTypeType](./literals.md#wafoverrideactiontypetype)
 - [WafRuleTypeType](./literals.md#wafruletypetype)
+- [WAFServiceName](./literals.md#wafservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

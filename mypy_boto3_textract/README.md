@@ -143,7 +143,9 @@ from mypy_boto3_textract.literals import BlockTypeType, ...
 - [SelectionStatusType](./literals.md#selectionstatustype)
 - [TextTypeType](./literals.md#texttypetype)
 - [ValueTypeType](./literals.md#valuetypetype)
+- [TextractServiceName](./literals.md#textractservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

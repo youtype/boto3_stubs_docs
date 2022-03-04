@@ -240,7 +240,9 @@ from mypy_boto3_autoscaling.literals import AcceleratorManufacturerType, ...
 - [ScalingActivityStatusCodeType](./literals.md#scalingactivitystatuscodetype)
 - [WarmPoolStateType](./literals.md#warmpoolstatetype)
 - [WarmPoolStatusType](./literals.md#warmpoolstatustype)
+- [AutoScalingServiceName](./literals.md#autoscalingservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

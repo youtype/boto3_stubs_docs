@@ -255,7 +255,9 @@ from mypy_boto3_macie2.literals import AdminStatusType, ...
 - [UsageStatisticsSortKeyType](./literals.md#usagestatisticssortkeytype)
 - [UsageTypeType](./literals.md#usagetypetype)
 - [UserIdentityTypeType](./literals.md#useridentitytypetype)
+- [Macie2ServiceName](./literals.md#macie2servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

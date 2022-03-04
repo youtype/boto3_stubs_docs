@@ -148,7 +148,9 @@ from mypy_boto3_voice_id.literals import AuthenticationDecisionType, ...
 - [SpeakerEnrollmentJobStatusType](./literals.md#speakerenrollmentjobstatustype)
 - [SpeakerStatusType](./literals.md#speakerstatustype)
 - [StreamingStatusType](./literals.md#streamingstatustype)
+- [VoiceIDServiceName](./literals.md#voiceidservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

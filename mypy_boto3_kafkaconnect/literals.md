@@ -18,7 +18,9 @@ type annotations stubs module
   - [ListConnectorsPaginatorName](#listconnectorspaginatorname)
   - [ListCustomPluginsPaginatorName](#listcustompluginspaginatorname)
   - [ListWorkerConfigurationsPaginatorName](#listworkerconfigurationspaginatorname)
+  - [KafkaConnectServiceName](#kafkaconnectservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="connectorstatetype"></a>
@@ -128,6 +130,18 @@ from mypy_boto3_kafkaconnect.literals import ListWorkerConfigurationsPaginatorNa
 Values:
 
 - `list_worker_configurations`
+
+<a id="kafkaconnectservicename"></a>
+
+## KafkaConnectServiceName
+
+```python
+from mypy_boto3_kafkaconnect.literals import KafkaConnectServiceName
+```
+
+Values:
+
+- `kafkaconnect`
 
 <a id="servicename"></a>
 
@@ -439,6 +453,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kafkaconnect.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

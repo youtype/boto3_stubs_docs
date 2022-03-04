@@ -29,7 +29,9 @@ type annotations stubs module
   - [StateType](#statetype)
   - [TimePointGranularityType](#timepointgranularitytype)
   - [TimeSeriesGranularityType](#timeseriesgranularitytype)
+  - [ForecastServiceServiceName](#forecastserviceservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="attributetypetype"></a>
@@ -284,6 +286,18 @@ Values:
 
 - `ALL`
 - `SPECIFIC`
+
+<a id="forecastserviceservicename"></a>
+
+## ForecastServiceServiceName
+
+```python
+from mypy_boto3_forecast.literals import ForecastServiceServiceName
+```
+
+Values:
+
+- `forecast`
 
 <a id="servicename"></a>
 
@@ -595,6 +609,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_forecast.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

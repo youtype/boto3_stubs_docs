@@ -5747,6 +5747,7 @@ from mypy_boto3_ec2.type_defs import CreateIpamPoolRequestRequestTypeDef
 Required fields:
 
 - `IpamScopeId`: `str`
+- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 
 Optional fields:
 
@@ -5754,7 +5755,6 @@ Optional fields:
 - `Locale`: `str`
 - `SourceIpamPoolId`: `str`
 - `Description`: `str`
-- `AddressFamily`: [AddressFamilyType](./literals.md#addressfamilytype)
 - `AutoImport`: `bool`
 - `PubliclyAdvertisable`: `bool`
 - `AllocationMinNetmaskLength`: `int`

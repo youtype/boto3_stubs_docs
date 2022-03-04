@@ -176,7 +176,9 @@ from mypy_boto3_chime_sdk_messaging.literals import AllowNotificationsType, ...
 - [InvocationTypeType](./literals.md#invocationtypetype)
 - [PushNotificationTypeType](./literals.md#pushnotificationtypetype)
 - [SortOrderType](./literals.md#sortordertype)
+- [ChimeSDKMessagingServiceName](./literals.md#chimesdkmessagingservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

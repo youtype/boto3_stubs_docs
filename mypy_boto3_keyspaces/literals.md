@@ -19,7 +19,9 @@ type annotations stubs module
   - [TableStatusType](#tablestatustype)
   - [ThroughputModeType](#throughputmodetype)
   - [TimeToLiveStatusType](#timetolivestatustype)
+  - [KeyspacesServiceName](#keyspacesservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="encryptiontypetype"></a>
@@ -139,6 +141,18 @@ from mypy_boto3_keyspaces.literals import TimeToLiveStatusType
 Values:
 
 - `ENABLED`
+
+<a id="keyspacesservicename"></a>
+
+## KeyspacesServiceName
+
+```python
+from mypy_boto3_keyspaces.literals import KeyspacesServiceName
+```
+
+Values:
+
+- `keyspaces`
 
 <a id="servicename"></a>
 
@@ -450,6 +464,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_keyspaces.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

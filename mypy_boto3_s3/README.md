@@ -416,7 +416,9 @@ from mypy_boto3_s3.literals import AnalyticsS3ExportFileFormatType, ...
 - [TierType](./literals.md#tiertype)
 - [TransitionStorageClassType](./literals.md#transitionstorageclasstype)
 - [TypeType](./literals.md#typetype)
+- [S3ServiceName](./literals.md#s3servicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

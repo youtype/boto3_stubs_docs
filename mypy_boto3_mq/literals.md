@@ -19,7 +19,9 @@ type annotations stubs module
   - [EngineTypeType](#enginetypetype)
   - [ListBrokersPaginatorName](#listbrokerspaginatorname)
   - [SanitizationWarningReasonType](#sanitizationwarningreasontype)
+  - [MQServiceName](#mqservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="authenticationstrategytype"></a>
@@ -148,6 +150,18 @@ Values:
 - `DISALLOWED_ATTRIBUTE_REMOVED`
 - `DISALLOWED_ELEMENT_REMOVED`
 - `INVALID_ATTRIBUTE_VALUE_REMOVED`
+
+<a id="mqservicename"></a>
+
+## MQServiceName
+
+```python
+from mypy_boto3_mq.literals import MQServiceName
+```
+
+Values:
+
+- `mq`
 
 <a id="servicename"></a>
 
@@ -459,6 +473,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mq.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

@@ -158,7 +158,9 @@ from mypy_boto3_outposts.literals import AddressTypeType, ...
 - [SupportedStorageEnumType](./literals.md#supportedstorageenumtype)
 - [UplinkCountType](./literals.md#uplinkcounttype)
 - [UplinkGbpsType](./literals.md#uplinkgbpstype)
+- [OutpostsServiceName](./literals.md#outpostsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

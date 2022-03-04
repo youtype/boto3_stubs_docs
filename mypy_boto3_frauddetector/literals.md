@@ -25,7 +25,9 @@ type annotations stubs module
   - [RuleExecutionModeType](#ruleexecutionmodetype)
   - [TrainingDataSourceEnumType](#trainingdatasourceenumtype)
   - [UnlabeledEventsTreatmentType](#unlabeledeventstreatmenttype)
+  - [FraudDetectorServiceName](#frauddetectorservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="asyncjobstatustype"></a>
 
@@ -229,6 +231,18 @@ Values:
 - `FRAUD`
 - `IGNORE`
 - `LEGIT`
+
+<a id="frauddetectorservicename"></a>
+
+## FraudDetectorServiceName
+
+```python
+from mypy_boto3_frauddetector.literals import FraudDetectorServiceName
+```
+
+Values:
+
+- `frauddetector`
 
 <a id="servicename"></a>
 
@@ -540,3 +554,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_frauddetector.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

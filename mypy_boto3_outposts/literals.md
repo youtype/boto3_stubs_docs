@@ -29,7 +29,9 @@ type annotations stubs module
   - [SupportedStorageEnumType](#supportedstorageenumtype)
   - [UplinkCountType](#uplinkcounttype)
   - [UplinkGbpsType](#uplinkgbpstype)
+  - [OutpostsServiceName](#outpostsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="addresstypetype"></a>
 
@@ -318,6 +320,18 @@ Values:
 - `UPLINK_10G`
 - `UPLINK_1G`
 - `UPLINK_40G`
+
+<a id="outpostsservicename"></a>
+
+## OutpostsServiceName
+
+```python
+from mypy_boto3_outposts.literals import OutpostsServiceName
+```
+
+Values:
+
+- `outposts`
 
 <a id="servicename"></a>
 
@@ -629,3 +643,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_outposts.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

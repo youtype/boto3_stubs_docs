@@ -21,7 +21,9 @@ type annotations stubs module
   - [SpeakerEnrollmentJobStatusType](#speakerenrollmentjobstatustype)
   - [SpeakerStatusType](#speakerstatustype)
   - [StreamingStatusType](#streamingstatustype)
+  - [VoiceIDServiceName](#voiceidservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="authenticationdecisiontype"></a>
 
@@ -179,6 +181,18 @@ Values:
 - `ENDED`
 - `ONGOING`
 - `PENDING_CONFIGURATION`
+
+<a id="voiceidservicename"></a>
+
+## VoiceIDServiceName
+
+```python
+from mypy_boto3_voice_id.literals import VoiceIDServiceName
+```
+
+Values:
+
+- `voice-id`
 
 <a id="servicename"></a>
 
@@ -490,3 +504,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_voice_id.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

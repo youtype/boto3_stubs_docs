@@ -283,7 +283,9 @@ from mypy_boto3_docdb.literals import ApplyMethodType, ...
 - [DescribeOrderableDBInstanceOptionsPaginatorName](./literals.md#describeorderabledbinstanceoptionspaginatorname)
 - [DescribePendingMaintenanceActionsPaginatorName](./literals.md#describependingmaintenanceactionspaginatorname)
 - [SourceTypeType](./literals.md#sourcetypetype)
+- [DocDBServiceName](./literals.md#docdbservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

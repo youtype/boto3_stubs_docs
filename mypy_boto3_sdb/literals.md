@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 SimpleDB module](#literals-for-boto3-simpledb-module)
   - [ListDomainsPaginatorName](#listdomainspaginatorname)
   - [SelectPaginatorName](#selectpaginatorname)
+  - [SimpleDBServiceName](#simpledbservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listdomainspaginatorname"></a>
@@ -38,6 +40,18 @@ from mypy_boto3_sdb.literals import SelectPaginatorName
 Values:
 
 - `select`
+
+<a id="simpledbservicename"></a>
+
+## SimpleDBServiceName
+
+```python
+from mypy_boto3_sdb.literals import SimpleDBServiceName
+```
+
+Values:
+
+- `sdb`
 
 <a id="servicename"></a>
 
@@ -349,6 +363,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_sdb.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

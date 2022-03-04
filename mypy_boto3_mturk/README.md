@@ -197,7 +197,9 @@ from mypy_boto3_mturk.literals import AssignmentStatusType, ...
 - [ReviewActionStatusType](./literals.md#reviewactionstatustype)
 - [ReviewPolicyLevelType](./literals.md#reviewpolicyleveltype)
 - [ReviewableHITStatusType](./literals.md#reviewablehitstatustype)
+- [MTurkServiceName](./literals.md#mturkservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

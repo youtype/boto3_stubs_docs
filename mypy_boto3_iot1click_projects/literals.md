@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 IoT1ClickProjects module](#literals-for-boto3-iot1clickprojects-module)
   - [ListPlacementsPaginatorName](#listplacementspaginatorname)
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
+  - [IoT1ClickProjectsServiceName](#iot1clickprojectsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listplacementspaginatorname"></a>
@@ -38,6 +40,18 @@ from mypy_boto3_iot1click_projects.literals import ListProjectsPaginatorName
 Values:
 
 - `list_projects`
+
+<a id="iot1clickprojectsservicename"></a>
+
+## IoT1ClickProjectsServiceName
+
+```python
+from mypy_boto3_iot1click_projects.literals import IoT1ClickProjectsServiceName
+```
+
+Values:
+
+- `iot1click-projects`
 
 <a id="servicename"></a>
 
@@ -349,6 +363,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iot1click_projects.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

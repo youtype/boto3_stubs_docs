@@ -185,7 +185,9 @@ from mypy_boto3_snowball.literals import ClusterStateType, ...
 - [SnowballTypeType](./literals.md#snowballtypetype)
 - [StorageUnitType](./literals.md#storageunittype)
 - [TransferOptionType](./literals.md#transferoptiontype)
+- [SnowballServiceName](./literals.md#snowballservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

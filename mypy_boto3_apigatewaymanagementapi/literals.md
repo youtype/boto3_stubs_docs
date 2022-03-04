@@ -10,7 +10,21 @@ type annotations stubs module
 [mypy-boto3-apigatewaymanagementapi](https://pypi.org/project/mypy-boto3-apigatewaymanagementapi/).
 
 - [Literals for boto3 ApiGatewayManagementApi module](#literals-for-boto3-apigatewaymanagementapi-module)
+  - [ApiGatewayManagementApiServiceName](#apigatewaymanagementapiservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
+
+<a id="apigatewaymanagementapiservicename"></a>
+
+## ApiGatewayManagementApiServiceName
+
+```python
+from mypy_boto3_apigatewaymanagementapi.literals import ApiGatewayManagementApiServiceName
+```
+
+Values:
+
+- `apigatewaymanagementapi`
 
 <a id="servicename"></a>
 
@@ -322,3 +336,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_apigatewaymanagementapi.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

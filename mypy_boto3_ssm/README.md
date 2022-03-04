@@ -576,7 +576,9 @@ from mypy_boto3_ssm.literals import AssociationComplianceSeverityType, ...
 - [SourceTypeType](./literals.md#sourcetypetype)
 - [StepExecutionFilterKeyType](./literals.md#stepexecutionfilterkeytype)
 - [StopTypeType](./literals.md#stoptypetype)
+- [SSMServiceName](./literals.md#ssmservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

@@ -19,7 +19,9 @@ type annotations stubs module
   - [ListStreamsPaginatorName](#liststreamspaginatorname)
   - [StatusType](#statustype)
   - [UpdateDataRetentionOperationType](#updatedataretentionoperationtype)
+  - [KinesisVideoServiceName](#kinesisvideoservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="apinametype"></a>
@@ -141,6 +143,18 @@ Values:
 
 - `DECREASE_DATA_RETENTION`
 - `INCREASE_DATA_RETENTION`
+
+<a id="kinesisvideoservicename"></a>
+
+## KinesisVideoServiceName
+
+```python
+from mypy_boto3_kinesisvideo.literals import KinesisVideoServiceName
+```
+
+Values:
+
+- `kinesisvideo`
 
 <a id="servicename"></a>
 
@@ -452,6 +466,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_kinesisvideo.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

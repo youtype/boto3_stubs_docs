@@ -181,7 +181,9 @@ from mypy_boto3_finspace_data.literals import ApiAccessType, ...
 - [UserStatusType](./literals.md#userstatustype)
 - [UserTypeType](./literals.md#usertypetype)
 - [locationTypeType](./literals.md#locationtypetype)
+- [FinSpaceDataServiceName](./literals.md#finspacedataservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

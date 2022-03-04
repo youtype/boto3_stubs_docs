@@ -20,7 +20,9 @@ type annotations stubs module
   - [ScalarTypeType](#scalartypetype)
   - [ScheduledQueryRunStatusType](#scheduledqueryrunstatustype)
   - [ScheduledQueryStateType](#scheduledquerystatetype)
+  - [TimestreamQueryServiceName](#timestreamqueryservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="dimensionvaluetypetype"></a>
@@ -164,6 +166,18 @@ Values:
 
 - `DISABLED`
 - `ENABLED`
+
+<a id="timestreamqueryservicename"></a>
+
+## TimestreamQueryServiceName
+
+```python
+from mypy_boto3_timestream_query.literals import TimestreamQueryServiceName
+```
+
+Values:
+
+- `timestream-query`
 
 <a id="servicename"></a>
 
@@ -475,6 +489,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_timestream_query.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

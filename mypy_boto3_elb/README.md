@@ -203,7 +203,9 @@ from mypy_boto3_elb.literals import AnyInstanceInServiceWaiterName, ...
 - [DescribeLoadBalancersPaginatorName](./literals.md#describeloadbalancerspaginatorname)
 - [InstanceDeregisteredWaiterName](./literals.md#instancederegisteredwaitername)
 - [InstanceInServiceWaiterName](./literals.md#instanceinservicewaitername)
+- [ElasticLoadBalancingServiceName](./literals.md#elasticloadbalancingservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

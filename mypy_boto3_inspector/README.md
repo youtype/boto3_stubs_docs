@@ -207,7 +207,9 @@ from mypy_boto3_inspector.literals import AgentHealthCodeType, ...
 - [ScopeTypeType](./literals.md#scopetypetype)
 - [SeverityType](./literals.md#severitytype)
 - [StopActionType](./literals.md#stopactiontype)
+- [InspectorServiceName](./literals.md#inspectorservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

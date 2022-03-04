@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 ConnectContactLens module](#literals-for-boto3-connectcontactlens-module)
   - [SentimentValueType](#sentimentvaluetype)
+  - [ConnectContactLensServiceName](#connectcontactlensservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="sentimentvaluetype"></a>
 
@@ -26,6 +28,18 @@ Values:
 - `NEGATIVE`
 - `NEUTRAL`
 - `POSITIVE`
+
+<a id="connectcontactlensservicename"></a>
+
+## ConnectContactLensServiceName
+
+```python
+from mypy_boto3_connect_contact_lens.literals import ConnectContactLensServiceName
+```
+
+Values:
+
+- `connect-contact-lens`
 
 <a id="servicename"></a>
 
@@ -337,3 +351,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_connect_contact_lens.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

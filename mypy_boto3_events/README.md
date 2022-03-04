@@ -208,7 +208,9 @@ from mypy_boto3_events.literals import ApiDestinationHttpMethodType, ...
 - [PropagateTagsType](./literals.md#propagatetagstype)
 - [ReplayStateType](./literals.md#replaystatetype)
 - [RuleStateType](./literals.md#rulestatetype)
+- [EventBridgeServiceName](./literals.md#eventbridgeservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

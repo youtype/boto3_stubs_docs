@@ -39,7 +39,9 @@ type annotations stubs module
   - [RequiredAttributeBehaviorType](#requiredattributebehaviortype)
   - [RuleTypeType](#ruletypetype)
   - [UpdateActionTypeType](#updateactiontypetype)
+  - [CloudDirectoryServiceName](#clouddirectoryservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="batchreadexceptiontypetype"></a>
@@ -423,6 +425,18 @@ Values:
 - `CREATE_OR_UPDATE`
 - `DELETE`
 
+<a id="clouddirectoryservicename"></a>
+
+## CloudDirectoryServiceName
+
+```python
+from mypy_boto3_clouddirectory.literals import CloudDirectoryServiceName
+```
+
+Values:
+
+- `clouddirectory`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -733,6 +747,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_clouddirectory.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

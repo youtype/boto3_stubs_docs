@@ -536,7 +536,9 @@ from mypy_boto3_rds.literals import ActivityStreamModeType, ...
 - [TargetStateType](./literals.md#targetstatetype)
 - [TargetTypeType](./literals.md#targettypetype)
 - [WriteForwardingStatusType](./literals.md#writeforwardingstatustype)
+- [RDSServiceName](./literals.md#rdsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

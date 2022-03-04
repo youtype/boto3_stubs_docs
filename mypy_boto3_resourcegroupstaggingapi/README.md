@@ -151,7 +151,9 @@ from mypy_boto3_resourcegroupstaggingapi.literals import ErrorCodeType, ...
 - [GetTagValuesPaginatorName](./literals.md#gettagvaluespaginatorname)
 - [GroupByAttributeType](./literals.md#groupbyattributetype)
 - [TargetIdTypeType](./literals.md#targetidtypetype)
+- [ResourceGroupsTaggingAPIServiceName](./literals.md#resourcegroupstaggingapiservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

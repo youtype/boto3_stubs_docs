@@ -17,7 +17,9 @@ type annotations stubs module
   - [SentimentTypeType](#sentimenttypetype)
   - [ShapeType](#shapetype)
   - [StyleTypeType](#styletypetype)
+  - [LexRuntimeV2ServiceName](#lexruntimev2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="confirmationstatetype"></a>
 
@@ -123,6 +125,18 @@ Values:
 - `Default`
 - `SpellByLetter`
 - `SpellByWord`
+
+<a id="lexruntimev2servicename"></a>
+
+## LexRuntimeV2ServiceName
+
+```python
+from mypy_boto3_lexv2_runtime.literals import LexRuntimeV2ServiceName
+```
+
+Values:
+
+- `lexv2-runtime`
 
 <a id="servicename"></a>
 
@@ -434,3 +448,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_lexv2_runtime.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

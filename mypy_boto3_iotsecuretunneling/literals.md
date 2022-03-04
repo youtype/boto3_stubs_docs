@@ -12,7 +12,9 @@ type annotations stubs module
 - [Literals for boto3 IoTSecureTunneling module](#literals-for-boto3-iotsecuretunneling-module)
   - [ConnectionStatusType](#connectionstatustype)
   - [TunnelStatusType](#tunnelstatustype)
+  - [IoTSecureTunnelingServiceName](#iotsecuretunnelingservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="connectionstatustype"></a>
 
@@ -39,6 +41,18 @@ Values:
 
 - `CLOSED`
 - `OPEN`
+
+<a id="iotsecuretunnelingservicename"></a>
+
+## IoTSecureTunnelingServiceName
+
+```python
+from mypy_boto3_iotsecuretunneling.literals import IoTSecureTunnelingServiceName
+```
+
+Values:
+
+- `iotsecuretunneling`
 
 <a id="servicename"></a>
 
@@ -350,3 +364,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotsecuretunneling.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

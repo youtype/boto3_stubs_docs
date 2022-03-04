@@ -307,7 +307,9 @@ from mypy_boto3_lambda.literals import ArchitectureType, ...
 - [StateReasonCodeType](./literals.md#statereasoncodetype)
 - [StateType](./literals.md#statetype)
 - [TracingModeType](./literals.md#tracingmodetype)
+- [LambdaServiceName](./literals.md#lambdaservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

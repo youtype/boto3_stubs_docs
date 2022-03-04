@@ -271,7 +271,9 @@ from mypy_boto3_appstream.literals import AccessEndpointTypeType, ...
 - [UsageReportScheduleType](./literals.md#usagereportscheduletype)
 - [UserStackAssociationErrorCodeType](./literals.md#userstackassociationerrorcodetype)
 - [VisibilityTypeType](./literals.md#visibilitytypetype)
+- [AppStreamServiceName](./literals.md#appstreamservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

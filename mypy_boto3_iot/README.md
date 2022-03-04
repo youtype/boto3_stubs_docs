@@ -566,7 +566,9 @@ from mypy_boto3_iot.literals import AbortActionType, ...
 - [TopicRuleDestinationStatusType](./literals.md#topicruledestinationstatustype)
 - [VerificationStateType](./literals.md#verificationstatetype)
 - [ViolationEventTypeType](./literals.md#violationeventtypetype)
+- [IoTServiceName](./literals.md#iotservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

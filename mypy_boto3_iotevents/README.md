@@ -154,7 +154,9 @@ from mypy_boto3_iotevents.literals import AlarmModelVersionStatusType, ...
 - [InputStatusType](./literals.md#inputstatustype)
 - [LoggingLevelType](./literals.md#loggingleveltype)
 - [PayloadTypeType](./literals.md#payloadtypetype)
+- [IoTEventsServiceName](./literals.md#ioteventsservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

@@ -154,7 +154,9 @@ from mypy_boto3_worklink.literals import AuthorizationProviderTypeType, ...
 - [DomainStatusType](./literals.md#domainstatustype)
 - [FleetStatusType](./literals.md#fleetstatustype)
 - [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
+- [WorkLinkServiceName](./literals.md#worklinkservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

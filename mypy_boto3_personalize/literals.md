@@ -29,7 +29,9 @@ type annotations stubs module
   - [ObjectiveSensitivityType](#objectivesensitivitytype)
   - [RecipeProviderType](#recipeprovidertype)
   - [TrainingModeType](#trainingmodetype)
+  - [PersonalizeServiceName](#personalizeservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="domaintype"></a>
@@ -266,6 +268,18 @@ Values:
 
 - `FULL`
 - `UPDATE`
+
+<a id="personalizeservicename"></a>
+
+## PersonalizeServiceName
+
+```python
+from mypy_boto3_personalize.literals import PersonalizeServiceName
+```
+
+Values:
+
+- `personalize`
 
 <a id="servicename"></a>
 
@@ -577,6 +591,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_personalize.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

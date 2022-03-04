@@ -11,7 +11,9 @@ type annotations stubs module
 
 - [Literals for boto3 IoTJobsDataPlane module](#literals-for-boto3-iotjobsdataplane-module)
   - [JobExecutionStatusType](#jobexecutionstatustype)
+  - [IoTJobsDataPlaneServiceName](#iotjobsdataplaneservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
 
 <a id="jobexecutionstatustype"></a>
 
@@ -31,6 +33,18 @@ Values:
 - `REMOVED`
 - `SUCCEEDED`
 - `TIMED_OUT`
+
+<a id="iotjobsdataplaneservicename"></a>
+
+## IoTJobsDataPlaneServiceName
+
+```python
+from mypy_boto3_iot_jobs_data.literals import IoTJobsDataPlaneServiceName
+```
+
+Values:
+
+- `iot-jobs-data`
 
 <a id="servicename"></a>
 
@@ -342,3 +356,24 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iot_jobs_data.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`

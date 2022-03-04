@@ -127,7 +127,9 @@ from mypy_boto3_marketplace_catalog.literals import ChangeStatusType, ...
 - [ChangeStatusType](./literals.md#changestatustype)
 - [FailureCodeType](./literals.md#failurecodetype)
 - [SortOrderType](./literals.md#sortordertype)
+- [MarketplaceCatalogServiceName](./literals.md#marketplacecatalogservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

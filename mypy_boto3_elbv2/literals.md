@@ -35,7 +35,9 @@ type annotations stubs module
   - [TargetHealthStateEnumType](#targethealthstateenumtype)
   - [TargetInServiceWaiterName](#targetinservicewaitername)
   - [TargetTypeEnumType](#targettypeenumtype)
+  - [ElasticLoadBalancingv2ServiceName](#elasticloadbalancingv2servicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
   - [WaiterName](#waitername)
 
@@ -381,6 +383,18 @@ Values:
 - `ip`
 - `lambda`
 
+<a id="elasticloadbalancingv2servicename"></a>
+
+## ElasticLoadBalancingv2ServiceName
+
+```python
+from mypy_boto3_elbv2.literals import ElasticLoadBalancingv2ServiceName
+```
+
+Values:
+
+- `elbv2`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -691,6 +705,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_elbv2.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

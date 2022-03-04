@@ -354,7 +354,9 @@ from mypy_boto3_codedeploy.literals import ApplicationRevisionSortByType, ...
 - [TargetStatusType](./literals.md#targetstatustype)
 - [TrafficRoutingTypeType](./literals.md#trafficroutingtypetype)
 - [TriggerEventTypeType](./literals.md#triggereventtypetype)
+- [CodeDeployServiceName](./literals.md#codedeployservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 - [WaiterName](./literals.md#waitername)
 

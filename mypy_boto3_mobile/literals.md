@@ -14,7 +14,9 @@ type annotations stubs module
   - [ListProjectsPaginatorName](#listprojectspaginatorname)
   - [PlatformType](#platformtype)
   - [ProjectStateType](#projectstatetype)
+  - [MobileServiceName](#mobileservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="listbundlespaginatorname"></a>
@@ -72,6 +74,18 @@ Values:
 - `IMPORTING`
 - `NORMAL`
 - `SYNCING`
+
+<a id="mobileservicename"></a>
+
+## MobileServiceName
+
+```python
+from mypy_boto3_mobile.literals import MobileServiceName
+```
+
+Values:
+
+- `mobile`
 
 <a id="servicename"></a>
 
@@ -383,6 +397,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mobile.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

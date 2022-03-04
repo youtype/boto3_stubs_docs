@@ -100,6 +100,7 @@ type annotations stubs module
   - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
   - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
   - [UserDetailsTypeDef](#userdetailstypedef)
+  - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WorkflowDetailTypeDef](#workflowdetailtypedef)
   - [WorkflowDetailsTypeDef](#workflowdetailstypedef)
   - [WorkflowStepTypeDef](#workflowsteptypedef)
@@ -1564,6 +1565,19 @@ Required fields:
 Optional fields:
 
 - `SessionId`: `str`
+
+<a id="waiterconfigtypedef"></a>
+
+## WaiterConfigTypeDef
+
+```python
+from mypy_boto3_transfer.type_defs import WaiterConfigTypeDef
+```
+
+Optional fields:
+
+- `Delay`: `int`
+- `MaxAttempts`: `int`
 
 <a id="workflowdetailtypedef"></a>
 

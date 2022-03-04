@@ -43,7 +43,9 @@ type annotations stubs module
   - [WorkflowExecutionCancelRequestedCauseType](#workflowexecutioncancelrequestedcausetype)
   - [WorkflowExecutionTerminatedCauseType](#workflowexecutionterminatedcausetype)
   - [WorkflowExecutionTimeoutTypeType](#workflowexecutiontimeouttypetype)
+  - [SWFServiceName](#swfservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="activitytasktimeouttypetype"></a>
@@ -564,6 +566,18 @@ Values:
 
 - `START_TO_CLOSE`
 
+<a id="swfservicename"></a>
+
+## SWFServiceName
+
+```python
+from mypy_boto3_swf.literals import SWFServiceName
+```
+
+Values:
+
+- `swf`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -874,6 +888,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_swf.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

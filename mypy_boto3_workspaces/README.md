@@ -237,7 +237,9 @@ from mypy_boto3_workspaces.literals import AccessPropertyValueType, ...
 - [WorkspaceImageRequiredTenancyType](./literals.md#workspaceimagerequiredtenancytype)
 - [WorkspaceImageStateType](./literals.md#workspaceimagestatetype)
 - [WorkspaceStateType](./literals.md#workspacestatetype)
+- [WorkSpacesServiceName](./literals.md#workspacesservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>

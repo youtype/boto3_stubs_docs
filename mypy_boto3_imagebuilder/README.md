@@ -191,7 +191,9 @@ from mypy_boto3_imagebuilder.literals import BuildTypeType, ...
 - [PipelineExecutionStartConditionType](./literals.md#pipelineexecutionstartconditiontype)
 - [PipelineStatusType](./literals.md#pipelinestatustype)
 - [PlatformType](./literals.md#platformtype)
+- [imagebuilderServiceName](./literals.md#imagebuilderservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

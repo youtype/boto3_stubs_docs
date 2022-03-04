@@ -24,7 +24,9 @@ type annotations stubs module
   - [ListPipelinesPaginatorName](#listpipelinespaginatorname)
   - [LoggingLevelType](#loggingleveltype)
   - [ReprocessingStatusType](#reprocessingstatustype)
+  - [IoTAnalyticsServiceName](#iotanalyticsservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="channelstatustype"></a>
@@ -208,6 +210,18 @@ Values:
 - `FAILED`
 - `RUNNING`
 - `SUCCEEDED`
+
+<a id="iotanalyticsservicename"></a>
+
+## IoTAnalyticsServiceName
+
+```python
+from mypy_boto3_iotanalytics.literals import IoTAnalyticsServiceName
+```
+
+Values:
+
+- `iotanalytics`
 
 <a id="servicename"></a>
 
@@ -519,6 +533,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_iotanalytics.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

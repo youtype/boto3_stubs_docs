@@ -43,7 +43,9 @@ type annotations stubs module
   - [UpdateAgentLogLevelType](#updateagentlogleveltype)
   - [UpdateTargetsArchitectureType](#updatetargetsarchitecturetype)
   - [UpdateTargetsOperatingSystemType](#updatetargetsoperatingsystemtype)
+  - [GreengrassServiceName](#greengrassservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="bulkdeploymentstatustype"></a>
@@ -475,6 +477,18 @@ Values:
 - `raspbian`
 - `ubuntu`
 
+<a id="greengrassservicename"></a>
+
+## GreengrassServiceName
+
+```python
+from mypy_boto3_greengrass.literals import GreengrassServiceName
+```
+
+Values:
+
+- `greengrass`
+
 <a id="servicename"></a>
 
 ## ServiceName
@@ -785,6 +799,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_greengrass.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

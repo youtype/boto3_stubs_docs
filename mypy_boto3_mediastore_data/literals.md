@@ -14,7 +14,9 @@ type annotations stubs module
   - [ListItemsPaginatorName](#listitemspaginatorname)
   - [StorageClassType](#storageclasstype)
   - [UploadAvailabilityType](#uploadavailabilitytype)
+  - [MediaStoreDataServiceName](#mediastoredataservicename)
   - [ServiceName](#servicename)
+  - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
 
 <a id="itemtypetype"></a>
@@ -66,6 +68,18 @@ Values:
 
 - `STANDARD`
 - `STREAMING`
+
+<a id="mediastoredataservicename"></a>
+
+## MediaStoreDataServiceName
+
+```python
+from mypy_boto3_mediastore_data.literals import MediaStoreDataServiceName
+```
+
+Values:
+
+- `mediastore-data`
 
 <a id="servicename"></a>
 
@@ -377,6 +391,27 @@ Values:
 - `workspaces`
 - `workspaces-web`
 - `xray`
+
+<a id="resourceservicename"></a>
+
+## ResourceServiceName
+
+```python
+from mypy_boto3_mediastore_data.literals import ResourceServiceName
+```
+
+Values:
+
+- `cloudformation`
+- `cloudwatch`
+- `dynamodb`
+- `ec2`
+- `glacier`
+- `iam`
+- `opsworks`
+- `s3`
+- `sns`
+- `sqs`
 
 <a id="paginatorname"></a>
 

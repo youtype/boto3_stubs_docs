@@ -152,7 +152,9 @@ from mypy_boto3_firehose.literals import AmazonopensearchserviceIndexRotationPer
 - [RedshiftS3BackupModeType](./literals.md#redshifts3backupmodetype)
 - [S3BackupModeType](./literals.md#s3backupmodetype)
 - [SplunkS3BackupModeType](./literals.md#splunks3backupmodetype)
+- [FirehoseServiceName](./literals.md#firehoseservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 
 <a id="typed-dictionaries"></a>
 

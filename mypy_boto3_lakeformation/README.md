@@ -210,7 +210,9 @@ from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
 - [TransactionStatusFilterType](./literals.md#transactionstatusfiltertype)
 - [TransactionStatusType](./literals.md#transactionstatustype)
 - [TransactionTypeType](./literals.md#transactiontypetype)
+- [LakeFormationServiceName](./literals.md#lakeformationservicename)
 - [ServiceName](./literals.md#servicename)
+- [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
 
 <a id="typed-dictionaries"></a>
