@@ -708,6 +708,7 @@ from mypy_boto3_ecs.literals import PropagateTagsType
 
 Values:
 
+- `NONE`
 - `SERVICE`
 - `TASK_DEFINITION`
 

@@ -521,8 +521,8 @@ Returns
 
 ### list_environment_vpcs
 
-Lists all the virtual private clouds (VPCs) that are part of an Amazon Web
-Services Migration Hub Refactor Spaces environment.
+Lists all Amazon Web Services Migration Hub Refactor Spaces service virtual
+private clouds (VPCs) that are part of the environment.
 
 Type annotations for
 `boto3.client("migration-hub-refactor-spaces").list_environment_vpcs` method.
