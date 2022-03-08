@@ -426,6 +426,7 @@ Values:
 - `Ec2SecurityGroupDeletionFailure`
 - `Ec2SecurityGroupNotFound`
 - `Ec2SubnetInvalidConfiguration`
+- `Ec2SubnetMissingIpv6Assignment`
 - `Ec2SubnetNotFound`
 - `IamInstanceProfileNotFound`
 - `IamLimitExceeded`

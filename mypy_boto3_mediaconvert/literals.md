@@ -155,6 +155,7 @@ type annotations stubs module
   - [Eac3SurroundModeType](#eac3surroundmodetype)
   - [EmbeddedConvert608To708Type](#embeddedconvert608to708type)
   - [EmbeddedTerminateCaptionsType](#embeddedterminatecaptionstype)
+  - [EmbeddedTimecodeOverrideType](#embeddedtimecodeoverridetype)
   - [F4vMoovPlacementType](#f4vmoovplacementtype)
   - [FileSourceConvert608To708Type](#filesourceconvert608to708type)
   - [FileSourceTimeDeltaUnitsType](#filesourcetimedeltaunitstype)
@@ -213,6 +214,7 @@ type annotations stubs module
   - [HlsAudioOnlyHeaderType](#hlsaudioonlyheadertype)
   - [HlsAudioTrackTypeType](#hlsaudiotracktypetype)
   - [HlsCaptionLanguageSettingType](#hlscaptionlanguagesettingtype)
+  - [HlsCaptionSegmentLengthControlType](#hlscaptionsegmentlengthcontroltype)
   - [HlsClientCacheType](#hlsclientcachetype)
   - [HlsCodecSpecificationType](#hlscodecspecificationtype)
   - [HlsDescriptiveVideoServiceFlagType](#hlsdescriptivevideoserviceflagtype)
@@ -2466,6 +2468,19 @@ Values:
 - `DISABLED`
 - `END_OF_INPUT`
 
+<a id="embeddedtimecodeoverridetype"></a>
+
+## EmbeddedTimecodeOverrideType
+
+```python
+from mypy_boto3_mediaconvert.literals import EmbeddedTimecodeOverrideType
+```
+
+Values:
+
+- `NONE`
+- `USE_MDPM`
+
 <a id="f4vmoovplacementtype"></a>
 
 ## F4vMoovPlacementType
@@ -3290,6 +3305,19 @@ Values:
 - `INSERT`
 - `NONE`
 - `OMIT`
+
+<a id="hlscaptionsegmentlengthcontroltype"></a>
+
+## HlsCaptionSegmentLengthControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import HlsCaptionSegmentLengthControlType
+```
+
+Values:
+
+- `LARGE_SEGMENTS`
+- `MATCH_VIDEO`
 
 <a id="hlsclientcachetype"></a>
 

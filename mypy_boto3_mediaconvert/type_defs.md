@@ -2008,6 +2008,8 @@ Optional fields:
   `Sequence`\[[HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef)\]
 - `CaptionLanguageSetting`:
   [HlsCaptionLanguageSettingType](./literals.md#hlscaptionlanguagesettingtype)
+- `CaptionSegmentLengthControl`:
+  [HlsCaptionSegmentLengthControlType](./literals.md#hlscaptionsegmentlengthcontroltype)
 - `ClientCache`: [HlsClientCacheType](./literals.md#hlsclientcachetype)
 - `CodecSpecification`:
   [HlsCodecSpecificationType](./literals.md#hlscodecspecificationtype)
@@ -3978,6 +3980,8 @@ Optional fields:
 - `AlphaBehavior`: [AlphaBehaviorType](./literals.md#alphabehaviortype)
 - `ColorSpace`: [ColorSpaceType](./literals.md#colorspacetype)
 - `ColorSpaceUsage`: [ColorSpaceUsageType](./literals.md#colorspaceusagetype)
+- `EmbeddedTimecodeOverride`:
+  [EmbeddedTimecodeOverrideType](./literals.md#embeddedtimecodeoverridetype)
 - `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
 - `Pid`: `int`
 - `ProgramNumber`: `int`
