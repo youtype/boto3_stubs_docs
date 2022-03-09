@@ -40,6 +40,7 @@ type annotations stubs module
     - [describe_pii_entities_detection_job](#describe_pii_entities_detection_job)
     - [describe_resource_policy](#describe_resource_policy)
     - [describe_sentiment_detection_job](#describe_sentiment_detection_job)
+    - [describe_targeted_sentiment_detection_job](#describe_targeted_sentiment_detection_job)
     - [describe_topics_detection_job](#describe_topics_detection_job)
     - [detect_dominant_language](#detect_dominant_language)
     - [detect_entities](#detect_entities)
@@ -62,6 +63,7 @@ type annotations stubs module
     - [list_pii_entities_detection_jobs](#list_pii_entities_detection_jobs)
     - [list_sentiment_detection_jobs](#list_sentiment_detection_jobs)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [list_targeted_sentiment_detection_jobs](#list_targeted_sentiment_detection_jobs)
     - [list_topics_detection_jobs](#list_topics_detection_jobs)
     - [put_resource_policy](#put_resource_policy)
     - [start_document_classification_job](#start_document_classification_job)
@@ -71,6 +73,7 @@ type annotations stubs module
     - [start_key_phrases_detection_job](#start_key_phrases_detection_job)
     - [start_pii_entities_detection_job](#start_pii_entities_detection_job)
     - [start_sentiment_detection_job](#start_sentiment_detection_job)
+    - [start_targeted_sentiment_detection_job](#start_targeted_sentiment_detection_job)
     - [start_topics_detection_job](#start_topics_detection_job)
     - [stop_dominant_language_detection_job](#stop_dominant_language_detection_job)
     - [stop_entities_detection_job](#stop_entities_detection_job)
@@ -78,6 +81,7 @@ type annotations stubs module
     - [stop_key_phrases_detection_job](#stop_key_phrases_detection_job)
     - [stop_pii_entities_detection_job](#stop_pii_entities_detection_job)
     - [stop_sentiment_detection_job](#stop_sentiment_detection_job)
+    - [stop_targeted_sentiment_detection_job](#stop_targeted_sentiment_detection_job)
     - [stop_training_document_classifier](#stop_training_document_classifier)
     - [stop_training_entity_recognizer](#stop_training_entity_recognizer)
     - [tag_resource](#tag_resource)
@@ -769,6 +773,28 @@ Keyword-only arguments:
 Returns
 [DescribeSentimentDetectionJobResponseTypeDef](./type_defs.md#describesentimentdetectionjobresponsetypedef).
 
+<a id="describe\_targeted\_sentiment\_detection\_job"></a>
+
+### describe_targeted_sentiment_detection_job
+
+Gets the properties associated with a targeted sentiment detection job.
+
+Type annotations for
+`boto3.client("comprehend").describe_targeted_sentiment_detection_job` method.
+
+Boto3 documentation:
+[Comprehend.Client.describe_targeted_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.describe_targeted_sentiment_detection_job)
+
+Arguments mapping described in
+[DescribeTargetedSentimentDetectionJobRequestRequestTypeDef](./type_defs.md#describetargetedsentimentdetectionjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[DescribeTargetedSentimentDetectionJobResponseTypeDef](./type_defs.md#describetargetedsentimentdetectionjobresponsetypedef).
+
 <a id="describe\_topics\_detection\_job"></a>
 
 ### describe_topics_detection_job
@@ -1297,6 +1323,31 @@ Keyword-only arguments:
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
 
+<a id="list\_targeted\_sentiment\_detection\_jobs"></a>
+
+### list_targeted_sentiment_detection_jobs
+
+Gets a list of targeted sentiment detection jobs that you have submitted.
+
+Type annotations for
+`boto3.client("comprehend").list_targeted_sentiment_detection_jobs` method.
+
+Boto3 documentation:
+[Comprehend.Client.list_targeted_sentiment_detection_jobs](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.list_targeted_sentiment_detection_jobs)
+
+Arguments mapping described in
+[ListTargetedSentimentDetectionJobsRequestRequestTypeDef](./type_defs.md#listtargetedsentimentdetectionjobsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Filter`:
+  [TargetedSentimentDetectionJobFilterTypeDef](./type_defs.md#targetedsentimentdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListTargetedSentimentDetectionJobsResponseTypeDef](./type_defs.md#listtargetedsentimentdetectionjobsresponsetypedef).
+
 <a id="list\_topics\_detection\_jobs"></a>
 
 ### list_topics_detection_jobs
@@ -1584,6 +1635,41 @@ Keyword-only arguments:
 Returns
 [StartSentimentDetectionJobResponseTypeDef](./type_defs.md#startsentimentdetectionjobresponsetypedef).
 
+<a id="start\_targeted\_sentiment\_detection\_job"></a>
+
+### start_targeted_sentiment_detection_job
+
+Starts an asynchronous targeted sentiment detection job for a collection of
+documents.
+
+Type annotations for
+`boto3.client("comprehend").start_targeted_sentiment_detection_job` method.
+
+Boto3 documentation:
+[Comprehend.Client.start_targeted_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.start_targeted_sentiment_detection_job)
+
+Arguments mapping described in
+[StartTargetedSentimentDetectionJobRequestRequestTypeDef](./type_defs.md#starttargetedsentimentdetectionjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef) *(required)*
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+  *(required)*
+- `DataAccessRoleArn`: `str` *(required)*
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+  *(required)*
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[StartTargetedSentimentDetectionJobResponseTypeDef](./type_defs.md#starttargetedsentimentdetectionjobresponsetypedef).
+
 <a id="start\_topics\_detection\_job"></a>
 
 ### start_topics_detection_job
@@ -1748,6 +1834,28 @@ Keyword-only arguments:
 
 Returns
 [StopSentimentDetectionJobResponseTypeDef](./type_defs.md#stopsentimentdetectionjobresponsetypedef).
+
+<a id="stop\_targeted\_sentiment\_detection\_job"></a>
+
+### stop_targeted_sentiment_detection_job
+
+Stops a targeted sentiment detection job in progress.
+
+Type annotations for
+`boto3.client("comprehend").stop_targeted_sentiment_detection_job` method.
+
+Boto3 documentation:
+[Comprehend.Client.stop_targeted_sentiment_detection_job](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/comprehend.html#Comprehend.Client.stop_targeted_sentiment_detection_job)
+
+Arguments mapping described in
+[StopTargetedSentimentDetectionJobRequestRequestTypeDef](./type_defs.md#stoptargetedsentimentdetectionjobrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `JobId`: `str` *(required)*
+
+Returns
+[StopTargetedSentimentDetectionJobResponseTypeDef](./type_defs.md#stoptargetedsentimentdetectionjobresponsetypedef).
 
 <a id="stop\_training\_document\_classifier"></a>
 
