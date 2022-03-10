@@ -433,7 +433,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `slotName`: `str` *(required)*
-- `slotTypeId`: `str` *(required)*
 - `valueElicitationSetting`:
   [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
   *(required)*
@@ -442,6 +441,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `intentId`: `str` *(required)*
 - `description`: `str`
+- `slotTypeId`: `str`
 - `obfuscationSetting`:
   [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 - `multipleValuesSetting`:
@@ -1835,7 +1835,6 @@ Keyword-only arguments:
 
 - `slotId`: `str` *(required)*
 - `slotName`: `str` *(required)*
-- `slotTypeId`: `str` *(required)*
 - `valueElicitationSetting`:
   [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
   *(required)*
@@ -1844,6 +1843,7 @@ Keyword-only arguments:
 - `localeId`: `str` *(required)*
 - `intentId`: `str` *(required)*
 - `description`: `str`
+- `slotTypeId`: `str`
 - `obfuscationSetting`:
   [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 - `multipleValuesSetting`:

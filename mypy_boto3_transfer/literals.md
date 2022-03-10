@@ -87,7 +87,14 @@ from mypy_boto3_transfer.literals import ExecutionErrorTypeType
 
 Values:
 
+- `ALREADY_EXISTS`
+- `BAD_REQUEST`
+- `CUSTOM_STEP_FAILED`
+- `INTERNAL_SERVER_ERROR`
+- `NOT_FOUND`
 - `PERMISSION_DENIED`
+- `THROTTLED`
+- `TIMEOUT`
 
 <a id="executionstatustype"></a>
 

@@ -725,8 +725,7 @@ from mypy_boto3_transfer.type_defs import ExecutionErrorTypeDef
 
 Required fields:
 
-- `Type`: `Literal['PERMISSION_DENIED']` (see
-  [ExecutionErrorTypeType](./literals.md#executionerrortypetype))
+- `Type`: [ExecutionErrorTypeType](./literals.md#executionerrortypetype)
 - `Message`: `str`
 
 <a id="executionresultstypedef"></a>

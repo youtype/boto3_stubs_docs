@@ -1176,7 +1176,6 @@ from mypy_boto3_lexv2_models.type_defs import CreateSlotRequestRequestTypeDef
 Required fields:
 
 - `slotName`: `str`
-- `slotTypeId`: `str`
 - `valueElicitationSetting`:
   [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
 - `botId`: `str`
@@ -1187,6 +1186,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
+- `slotTypeId`: `str`
 - `obfuscationSetting`:
   [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 - `multipleValuesSetting`:
@@ -4254,7 +4254,6 @@ Required fields:
 
 - `slotId`: `str`
 - `slotName`: `str`
-- `slotTypeId`: `str`
 - `valueElicitationSetting`:
   [SlotValueElicitationSettingTypeDef](./type_defs.md#slotvalueelicitationsettingtypedef)
 - `botId`: `str`
@@ -4265,6 +4264,7 @@ Required fields:
 Optional fields:
 
 - `description`: `str`
+- `slotTypeId`: `str`
 - `obfuscationSetting`:
   [ObfuscationSettingTypeDef](./type_defs.md#obfuscationsettingtypedef)
 - `multipleValuesSetting`:
