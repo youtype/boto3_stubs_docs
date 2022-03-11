@@ -3938,6 +3938,7 @@ Optional fields:
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 - `ChatDurationInMinutes`: `int`
+- `SupportedMessagingContentTypes`: `Sequence`\[`str`\]
 
 <a id="startchatcontactresponsetypedef"></a>
 

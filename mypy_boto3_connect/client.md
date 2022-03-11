@@ -2455,6 +2455,7 @@ Keyword-only arguments:
 - `InitialMessage`: [ChatMessageTypeDef](./type_defs.md#chatmessagetypedef)
 - `ClientToken`: `str`
 - `ChatDurationInMinutes`: `int`
+- `SupportedMessagingContentTypes`: `Sequence`\[`str`\]
 
 Returns
 [StartChatContactResponseTypeDef](./type_defs.md#startchatcontactresponsetypedef).
@@ -2463,7 +2464,8 @@ Returns
 
 ### start_contact_recording
 
-Starts recording the contact when the agent joins the call.
+Starts recording the contact * If the API is called *before* the agent joins
+the call, recording starts when the agent joins the call.
 
 Type annotations for `boto3.client("connect").start_contact_recording` method.
 

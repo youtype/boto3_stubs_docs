@@ -198,8 +198,8 @@ Returns
 
 ### add_permission
 
-Grants an Amazon Web Services service or another account permission to use a
-function.
+Grants an Amazon Web Services service, account, or organization permission to
+use a function.
 
 Type annotations for `boto3.client("lambda").add_permission` method.
 
@@ -220,6 +220,7 @@ Keyword-only arguments:
 - `EventSourceToken`: `str`
 - `Qualifier`: `str`
 - `RevisionId`: `str`
+- `PrincipalOrgID`: `str`
 
 Returns
 [AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef).
