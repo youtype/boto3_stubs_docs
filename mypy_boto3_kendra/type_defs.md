@@ -189,6 +189,7 @@ type annotations stubs module
   - [ServiceNowServiceCatalogConfigurationTypeDef](#servicenowservicecatalogconfigurationtypedef)
   - [SharePointConfigurationTypeDef](#sharepointconfigurationtypedef)
   - [SiteMapsConfigurationTypeDef](#sitemapsconfigurationtypedef)
+  - [SlackConfigurationTypeDef](#slackconfigurationtypedef)
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
   - [SpellCorrectedQueryTypeDef](#spellcorrectedquerytypedef)
   - [SpellCorrectionConfigurationTypeDef](#spellcorrectionconfigurationtypedef)
@@ -1057,6 +1058,8 @@ Optional fields:
   [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
 - `FsxConfiguration`:
   [FsxConfigurationTypeDef](./type_defs.md#fsxconfigurationtypedef)
+- `SlackConfiguration`:
+  [SlackConfigurationTypeDef](./type_defs.md#slackconfigurationtypedef)
 
 <a id="datasourcegrouptypedef"></a>
 
@@ -3267,6 +3270,37 @@ from mypy_boto3_kendra.type_defs import SiteMapsConfigurationTypeDef
 Required fields:
 
 - `SiteMaps`: `Sequence`\[`str`\]
+
+<a id="slackconfigurationtypedef"></a>
+
+## SlackConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SlackConfigurationTypeDef
+```
+
+Required fields:
+
+- `TeamId`: `str`
+- `SecretArn`: `str`
+- `SlackEntityList`:
+  `Sequence`\[[SlackEntityType](./literals.md#slackentitytype)\]
+- `SinceCrawlDate`: `str`
+
+Optional fields:
+
+- `VpcConfiguration`:
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
+- `UseChangeLog`: `bool`
+- `CrawlBotMessage`: `bool`
+- `ExcludeArchived`: `bool`
+- `LookBackPeriod`: `int`
+- `PrivateChannelFilter`: `Sequence`\[`str`\]
+- `PublicChannelFilter`: `Sequence`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
+- `FieldMappings`:
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
 
 <a id="sortingconfigurationtypedef"></a>
 

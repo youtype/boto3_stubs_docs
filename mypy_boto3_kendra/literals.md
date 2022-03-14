@@ -55,6 +55,7 @@ type annotations stubs module
   - [ServiceNowAuthenticationTypeType](#servicenowauthenticationtypetype)
   - [ServiceNowBuildVersionTypeType](#servicenowbuildversiontypetype)
   - [SharePointVersionType](#sharepointversiontype)
+  - [SlackEntityType](#slackentitytype)
   - [SortOrderType](#sortordertype)
   - [ThesaurusStatusType](#thesaurusstatustype)
   - [UserContextPolicyType](#usercontextpolicytype)
@@ -262,6 +263,7 @@ Values:
 - `SALESFORCE`
 - `SERVICENOW`
 - `SHAREPOINT`
+- `SLACK`
 - `WEBCRAWLER`
 - `WORKDOCS`
 
@@ -758,6 +760,21 @@ Values:
 - `SHAREPOINT_2013`
 - `SHAREPOINT_2016`
 - `SHAREPOINT_ONLINE`
+
+<a id="slackentitytype"></a>
+
+## SlackEntityType
+
+```python
+from mypy_boto3_kendra.literals import SlackEntityType
+```
+
+Values:
+
+- `DIRECT_MESSAGE`
+- `GROUP_MESSAGE`
+- `PRIVATE_CHANNEL`
+- `PUBLIC_CHANNEL`
 
 <a id="sortordertype"></a>
 

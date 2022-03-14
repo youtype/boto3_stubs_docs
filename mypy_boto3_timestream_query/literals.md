@@ -115,6 +115,7 @@ Values:
 - `BIGINT`
 - `BOOLEAN`
 - `DOUBLE`
+- `TIMESTAMP`
 - `VARCHAR`
 
 <a id="scalartypetype"></a>

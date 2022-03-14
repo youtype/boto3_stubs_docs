@@ -826,6 +826,7 @@ Values:
 - `AWS::EC2::Host`
 - `AWS::EC2::Instance`
 - `AWS::EC2::InternetGateway`
+- `AWS::EC2::LaunchTemplate`
 - `AWS::EC2::NatGateway`
 - `AWS::EC2::NetworkAcl`
 - `AWS::EC2::NetworkInterface`
@@ -841,6 +842,7 @@ Values:
 - `AWS::EC2::VPCPeeringConnection`
 - `AWS::EC2::VPNConnection`
 - `AWS::EC2::VPNGateway`
+- `AWS::ECR::PublicRepository`
 - `AWS::ECR::Repository`
 - `AWS::ECS::Cluster`
 - `AWS::ECS::Service`
