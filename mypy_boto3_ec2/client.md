@@ -4061,6 +4061,7 @@ Keyword-only arguments:
 
 - `IpamId`: `str` *(required)*
 - `DryRun`: `bool`
+- `Cascade`: `bool`
 
 Returns [DeleteIpamResultTypeDef](./type_defs.md#deleteipamresulttypedef).
 
@@ -12798,8 +12799,8 @@ Keyword-only arguments:
 
 - `IpamPoolId`: `str` *(required)*
 - `Cidr`: `str` *(required)*
+- `IpamPoolAllocationId`: `str` *(required)*
 - `DryRun`: `bool`
-- `IpamPoolAllocationId`: `str`
 
 Returns
 [ReleaseIpamPoolAllocationResultTypeDef](./type_defs.md#releaseipampoolallocationresulttypedef).

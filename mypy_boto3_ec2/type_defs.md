@@ -8714,6 +8714,7 @@ Required fields:
 Optional fields:
 
 - `DryRun`: `bool`
+- `Cascade`: `bool`
 
 <a id="deleteipamresulttypedef"></a>
 
@@ -26135,11 +26136,11 @@ Required fields:
 
 - `IpamPoolId`: `str`
 - `Cidr`: `str`
+- `IpamPoolAllocationId`: `str`
 
 Optional fields:
 
 - `DryRun`: `bool`
-- `IpamPoolAllocationId`: `str`
 
 <a id="releaseipampoolallocationresulttypedef"></a>
 

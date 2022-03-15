@@ -2824,7 +2824,7 @@ Returns
 
 ### modify_current_db_cluster_capacity
 
-Set the capacity of an Aurora Serverless DB cluster to a specific value.
+Set the capacity of an Aurora Serverless v1 DB cluster to a specific value.
 
 Type annotations for `boto3.client("rds").modify_current_db_cluster_capacity`
 method.

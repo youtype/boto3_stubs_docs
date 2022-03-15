@@ -1928,7 +1928,7 @@ Required fields:
 from mypy_boto3_robomaker.type_defs import LoggingConfigTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `recordAllRosTopics`: `bool`
 
@@ -2780,6 +2780,8 @@ Optional fields:
 - `status`: [WorldExportJobStatusType](./literals.md#worldexportjobstatustype)
 - `createdAt`: `datetime`
 - `worlds`: `List`\[`str`\]
+- `outputLocation`:
+  [OutputLocationTypeDef](./type_defs.md#outputlocationtypedef)
 
 <a id="worldfailuretypedef"></a>
 

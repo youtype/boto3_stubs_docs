@@ -3268,6 +3268,7 @@ Required fields:
 Optional fields:
 
 - `ExternalId`: `str`
+- `SnsRegion`: `str`
 
 <a id="smsmfaconfigtypetypedef"></a>
 

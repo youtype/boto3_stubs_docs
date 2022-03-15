@@ -359,7 +359,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### admin_disable_provider_for_user
 
-Disables the user from signing in with the specified external (SAML or social)
+Prevents the user from signing in with the specified external (SAML or social)
 identity provider.
 
 Type annotations for
