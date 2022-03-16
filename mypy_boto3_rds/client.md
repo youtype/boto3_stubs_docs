@@ -1142,7 +1142,7 @@ Returns
 
 ### create_event_subscription
 
-.
+Creates an RDS event notification subscription.
 
 Type annotations for `boto3.client("rds").create_event_subscription` method.
 
@@ -2273,7 +2273,8 @@ Returns
 
 ### describe_event_categories
 
-.
+Displays a list of categories for all event source types, or, if specified, for
+a specified source type.
 
 Type annotations for `boto3.client("rds").describe_event_categories` method.
 
@@ -2320,8 +2321,7 @@ Returns
 ### describe_events
 
 Returns events related to DB instances, DB clusters, DB parameter groups, DB
-security groups, DB snapshots, DB cluster snapshots, and RDS Proxies for the
-past 14 days.
+security groups, DB snapshots, and DB cluster snapshots for the past 14 days.
 
 Type annotations for `boto3.client("rds").describe_events` method.
 
@@ -2824,7 +2824,7 @@ Returns
 
 ### modify_current_db_cluster_capacity
 
-Set the capacity of an Aurora Serverless v1 DB cluster to a specific value.
+Set the capacity of an Aurora Serverless DB cluster to a specific value.
 
 Type annotations for `boto3.client("rds").modify_current_db_cluster_capacity`
 method.

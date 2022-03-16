@@ -218,7 +218,6 @@ from mypy_boto3_mediapackage.literals import ProfileType
 Values:
 
 - `HBBTV_1_5`
-- `HYBRIDCAST`
 - `NONE`
 
 <a id="segmenttemplateformattype"></a>
@@ -451,7 +450,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

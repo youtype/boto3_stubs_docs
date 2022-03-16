@@ -33,9 +33,6 @@ type annotations stubs module
   - [BatchUpdateDevicePositionRequestRequestTypeDef](#batchupdatedevicepositionrequestrequesttypedef)
   - [BatchUpdateDevicePositionResponseTypeDef](#batchupdatedevicepositionresponsetypedef)
   - [CalculateRouteCarModeOptionsTypeDef](#calculateroutecarmodeoptionstypedef)
-  - [CalculateRouteMatrixRequestRequestTypeDef](#calculateroutematrixrequestrequesttypedef)
-  - [CalculateRouteMatrixResponseTypeDef](#calculateroutematrixresponsetypedef)
-  - [CalculateRouteMatrixSummaryTypeDef](#calculateroutematrixsummarytypedef)
   - [CalculateRouteRequestRequestTypeDef](#calculaterouterequestrequesttypedef)
   - [CalculateRouteResponseTypeDef](#calculaterouteresponsetypedef)
   - [CalculateRouteSummaryTypeDef](#calculateroutesummarytypedef)
@@ -119,8 +116,6 @@ type annotations stubs module
   - [PutGeofenceRequestRequestTypeDef](#putgeofencerequestrequesttypedef)
   - [PutGeofenceResponseTypeDef](#putgeofenceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RouteMatrixEntryErrorTypeDef](#routematrixentryerrortypedef)
-  - [RouteMatrixEntryTypeDef](#routematrixentrytypedef)
   - [SearchForPositionResultTypeDef](#searchforpositionresulttypedef)
   - [SearchForSuggestionsResultTypeDef](#searchforsuggestionsresulttypedef)
   - [SearchForTextResultTypeDef](#searchfortextresulttypedef)
@@ -470,65 +465,6 @@ Optional fields:
 
 - `AvoidFerries`: `bool`
 - `AvoidTolls`: `bool`
-
-<a id="calculateroutematrixrequestrequesttypedef"></a>
-
-## CalculateRouteMatrixRequestRequestTypeDef
-
-```python
-from mypy_boto3_location.type_defs import CalculateRouteMatrixRequestRequestTypeDef
-```
-
-Required fields:
-
-- `CalculatorName`: `str`
-- `DeparturePositions`: `Sequence`\[`Sequence`\[`float`\]\]
-- `DestinationPositions`: `Sequence`\[`Sequence`\[`float`\]\]
-
-Optional fields:
-
-- `CarModeOptions`:
-  [CalculateRouteCarModeOptionsTypeDef](./type_defs.md#calculateroutecarmodeoptionstypedef)
-- `DepartNow`: `bool`
-- `DepartureTime`: `Union`\[`datetime`, `str`\]
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `TravelMode`: [TravelModeType](./literals.md#travelmodetype)
-- `TruckModeOptions`:
-  [CalculateRouteTruckModeOptionsTypeDef](./type_defs.md#calculateroutetruckmodeoptionstypedef)
-
-<a id="calculateroutematrixresponsetypedef"></a>
-
-## CalculateRouteMatrixResponseTypeDef
-
-```python
-from mypy_boto3_location.type_defs import CalculateRouteMatrixResponseTypeDef
-```
-
-Required fields:
-
-- `RouteMatrix`:
-  `List`\[`List`\[[RouteMatrixEntryTypeDef](./type_defs.md#routematrixentrytypedef)\]\]
-- `SnappedDeparturePositions`: `List`\[`List`\[`float`\]\]
-- `SnappedDestinationPositions`: `List`\[`List`\[`float`\]\]
-- `Summary`:
-  [CalculateRouteMatrixSummaryTypeDef](./type_defs.md#calculateroutematrixsummarytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="calculateroutematrixsummarytypedef"></a>
-
-## CalculateRouteMatrixSummaryTypeDef
-
-```python
-from mypy_boto3_location.type_defs import CalculateRouteMatrixSummaryTypeDef
-```
-
-Required fields:
-
-- `DataSource`: `str`
-- `DistanceUnit`: [DistanceUnitType](./literals.md#distanceunittype)
-- `ErrorCount`: `int`
-- `RouteCount`: `int`
 
 <a id="calculaterouterequestrequesttypedef"></a>
 
@@ -1421,11 +1357,11 @@ Required fields:
 - `CollectionName`: `str`
 - `CreateTime`: `datetime`
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `UpdateTime`: `datetime`
 
 Optional fields:
 
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 
 <a id="listgeofencecollectionsresponsetypedef"></a>
@@ -1519,11 +1455,8 @@ Required fields:
 - `DataSource`: `str`
 - `Description`: `str`
 - `MapName`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `UpdateTime`: `datetime`
 
 <a id="listmapsresponsetypedef"></a>
 
@@ -1568,11 +1501,8 @@ Required fields:
 - `DataSource`: `str`
 - `Description`: `str`
 - `IndexName`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `UpdateTime`: `datetime`
 
 <a id="listplaceindexesresponsetypedef"></a>
 
@@ -1617,11 +1547,8 @@ Required fields:
 - `CreateTime`: `datetime`
 - `DataSource`: `str`
 - `Description`: `str`
-- `UpdateTime`: `datetime`
-
-Optional fields:
-
 - `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
+- `UpdateTime`: `datetime`
 
 <a id="listroutecalculatorsresponsetypedef"></a>
 
@@ -1722,12 +1649,12 @@ Required fields:
 
 - `CreateTime`: `datetime`
 - `Description`: `str`
+- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `TrackerName`: `str`
 - `UpdateTime`: `datetime`
 
 Optional fields:
 
-- `PricingPlan`: [PricingPlanType](./literals.md#pricingplantype)
 - `PricingPlanDataSource`: `str`
 
 <a id="listtrackersresponsetypedef"></a>
@@ -1867,37 +1794,6 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
-
-<a id="routematrixentryerrortypedef"></a>
-
-## RouteMatrixEntryErrorTypeDef
-
-```python
-from mypy_boto3_location.type_defs import RouteMatrixEntryErrorTypeDef
-```
-
-Required fields:
-
-- `Code`: [RouteMatrixErrorCodeType](./literals.md#routematrixerrorcodetype)
-
-Optional fields:
-
-- `Message`: `str`
-
-<a id="routematrixentrytypedef"></a>
-
-## RouteMatrixEntryTypeDef
-
-```python
-from mypy_boto3_location.type_defs import RouteMatrixEntryTypeDef
-```
-
-Optional fields:
-
-- `Distance`: `float`
-- `DurationSeconds`: `float`
-- `Error`:
-  [RouteMatrixEntryErrorTypeDef](./type_defs.md#routematrixentryerrortypedef)
 
 <a id="searchforpositionresulttypedef"></a>
 

@@ -396,7 +396,7 @@ Returns
 
 ### create_snapshot
 
-Creates a snapshot of an existing Amazon FSx for OpenZFS volume.
+Creates a snapshot of an existing Amazon FSx for OpenZFS file system.
 
 Type annotations for `boto3.client("fsx").create_snapshot` method.
 
@@ -451,7 +451,8 @@ Returns
 
 ### create_volume
 
-Creates an FSx for ONTAP or Amazon FSx for OpenZFS storage volume.
+Creates an Amazon FSx for NetApp ONTAP or Amazon FSx for OpenZFS storage
+volume.
 
 Type annotations for `boto3.client("fsx").create_volume` method.
 
@@ -580,7 +581,7 @@ Returns
 
 ### delete_snapshot
 
-Deletes an Amazon FSx for OpenZFS snapshot.
+Deletes the Amazon FSx snapshot.
 
 Type annotations for `boto3.client("fsx").delete_snapshot` method.
 
@@ -780,8 +781,8 @@ Returns
 
 ### describe_snapshots
 
-Returns the description of specific Amazon FSx for OpenZFS snapshots, if a
-`SnapshotIds` value is provided.
+Returns the description of specific Amazon FSx snapshots, if a `SnapshotIds`
+value is provided.
 
 Type annotations for `boto3.client("fsx").describe_snapshots` method.
 
@@ -1078,7 +1079,7 @@ Returns
 
 ### update_snapshot
 
-Updates the name of an Amazon FSx for OpenZFS snapshot.
+Updates the name of a snapshot.
 
 Type annotations for `boto3.client("fsx").update_snapshot` method.
 

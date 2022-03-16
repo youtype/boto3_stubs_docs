@@ -36,11 +36,9 @@ Values:
 - `CELL`
 - `KEY_VALUE_SET`
 - `LINE`
-- `MERGED_CELL`
 - `PAGE`
 - `SELECTION_ELEMENT`
 - `TABLE`
-- `TITLE`
 - `WORD`
 
 <a id="contentclassifiertype"></a>
@@ -66,7 +64,6 @@ from mypy_boto3_textract.literals import EntityTypeType
 
 Values:
 
-- `COLUMN_HEADER`
 - `KEY`
 - `VALUE`
 
@@ -110,8 +107,6 @@ Values:
 
 - `CHILD`
 - `COMPLEX_FEATURES`
-- `MERGED_CELL`
-- `TITLE`
 - `VALUE`
 
 <a id="selectionstatustype"></a>
@@ -326,7 +321,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

@@ -433,7 +433,6 @@ from mypy_boto3_elasticache.literals import LogTypeType
 
 Values:
 
-- `engine-log`
 - `slow-log`
 
 <a id="multiazstatustype"></a>
@@ -796,7 +795,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

@@ -251,13 +251,13 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `name`: `str` *(required)*
-- `regex`: `str` *(required)*
 - `clientToken`: `str`
 - `description`: `str`
 - `ignoreWords`: `Sequence`\[`str`\]
 - `keywords`: `Sequence`\[`str`\]
 - `maximumMatchDistance`: `int`
+- `name`: `str`
+- `regex`: `str`
 - `severityLevels`:
   `Sequence`\[[SeverityLevelTypeDef](./type_defs.md#severityleveltypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]

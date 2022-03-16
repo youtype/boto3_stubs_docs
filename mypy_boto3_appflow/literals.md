@@ -12,9 +12,7 @@ type annotations stubs module
 - [Literals for boto3 Appflow module](#literals-for-boto3-appflow-module)
   - [AggregationTypeType](#aggregationtypetype)
   - [AmplitudeConnectorOperatorType](#amplitudeconnectoroperatortype)
-  - [AuthenticationTypeType](#authenticationtypetype)
   - [ConnectionModeType](#connectionmodetype)
-  - [ConnectorProvisioningTypeType](#connectorprovisioningtypetype)
   - [ConnectorTypeType](#connectortypetype)
   - [DataPullModeType](#datapullmodetype)
   - [DatadogConnectorOperatorType](#datadogconnectoroperatortype)
@@ -25,10 +23,8 @@ type annotations stubs module
   - [GoogleAnalyticsConnectorOperatorType](#googleanalyticsconnectoroperatortype)
   - [InforNexusConnectorOperatorType](#infornexusconnectoroperatortype)
   - [MarketoConnectorOperatorType](#marketoconnectoroperatortype)
-  - [OAuth2GrantTypeType](#oauth2granttypetype)
   - [OperatorPropertiesKeysType](#operatorpropertieskeystype)
   - [OperatorType](#operatortype)
-  - [OperatorsType](#operatorstype)
   - [PrefixFormatType](#prefixformattype)
   - [PrefixTypeType](#prefixtypetype)
   - [PrivateConnectionProvisioningFailureCauseType](#privateconnectionprovisioningfailurecausetype)
@@ -76,21 +72,6 @@ Values:
 
 - `BETWEEN`
 
-<a id="authenticationtypetype"></a>
-
-## AuthenticationTypeType
-
-```python
-from mypy_boto3_appflow.literals import AuthenticationTypeType
-```
-
-Values:
-
-- `APIKEY`
-- `BASIC`
-- `CUSTOM`
-- `OAUTH2`
-
 <a id="connectionmodetype"></a>
 
 ## ConnectionModeType
@@ -104,18 +85,6 @@ Values:
 - `Private`
 - `Public`
 
-<a id="connectorprovisioningtypetype"></a>
-
-## ConnectorProvisioningTypeType
-
-```python
-from mypy_boto3_appflow.literals import ConnectorProvisioningTypeType
-```
-
-Values:
-
-- `LAMBDA`
-
 <a id="connectortypetype"></a>
 
 ## ConnectorTypeType
@@ -127,7 +96,6 @@ from mypy_boto3_appflow.literals import ConnectorTypeType
 Values:
 
 - `Amplitude`
-- `CustomConnector`
 - `CustomerProfiles`
 - `Datadog`
 - `Dynatrace`
@@ -326,19 +294,6 @@ Values:
 - `VALIDATE_NON_ZERO`
 - `VALIDATE_NUMERIC`
 
-<a id="oauth2granttypetype"></a>
-
-## OAuth2GrantTypeType
-
-```python
-from mypy_boto3_appflow.literals import OAuth2GrantTypeType
-```
-
-Values:
-
-- `AUTHORIZATION_CODE`
-- `CLIENT_CREDENTIALS`
-
 <a id="operatorpropertieskeystype"></a>
 
 ## OperatorPropertiesKeysType
@@ -371,38 +326,6 @@ Values:
 
 ```python
 from mypy_boto3_appflow.literals import OperatorType
-```
-
-Values:
-
-- `ADDITION`
-- `BETWEEN`
-- `CONTAINS`
-- `DIVISION`
-- `EQUAL_TO`
-- `GREATER_THAN`
-- `GREATER_THAN_OR_EQUAL_TO`
-- `LESS_THAN`
-- `LESS_THAN_OR_EQUAL_TO`
-- `MASK_ALL`
-- `MASK_FIRST_N`
-- `MASK_LAST_N`
-- `MULTIPLICATION`
-- `NO_OP`
-- `NOT_EQUAL_TO`
-- `PROJECTION`
-- `SUBTRACTION`
-- `VALIDATE_NON_NEGATIVE`
-- `VALIDATE_NON_NULL`
-- `VALIDATE_NON_ZERO`
-- `VALIDATE_NUMERIC`
-
-<a id="operatorstype"></a>
-
-## OperatorsType
-
-```python
-from mypy_boto3_appflow.literals import OperatorsType
 ```
 
 Values:
@@ -717,7 +640,6 @@ Values:
 - `Map_all`
 - `Mask`
 - `Merge`
-- `Passthrough`
 - `Truncate`
 - `Validate`
 
@@ -802,7 +724,6 @@ from mypy_boto3_appflow.literals import WriteOperationTypeType
 
 Values:
 
-- `DELETE`
 - `INSERT`
 - `UPDATE`
 - `UPSERT`
@@ -1006,7 +927,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

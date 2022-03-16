@@ -394,7 +394,6 @@ Optional fields:
 
 - `AssociateEntireAccount`: `bool`
 - `ConsumerArn`: `str`
-- `ConsumerRegion`: `str`
 
 <a id="attributevaluetargettypedef"></a>
 
@@ -1506,7 +1505,6 @@ Optional fields:
 
 - `ConsumerIdentifier`: `str`
 - `Status`: [DataShareStatusType](./literals.md#datasharestatustype)
-- `ConsumerRegion`: `str`
 - `CreatedDate`: `datetime`
 - `StatusChangeDate`: `datetime`
 
@@ -2603,7 +2601,6 @@ Optional fields:
 
 - `DisassociateEntireAccount`: `bool`
 - `ConsumerArn`: `str`
-- `ConsumerRegion`: `str`
 
 <a id="ec2securitygrouptypedef"></a>
 

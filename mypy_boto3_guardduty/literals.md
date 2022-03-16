@@ -78,7 +78,6 @@ Values:
 - `CLOUD_TRAIL`
 - `DNS_LOGS`
 - `FLOW_LOGS`
-- `KUBERNETES_AUDIT_LOGS`
 - `S3_LOGS`
 
 <a id="destinationtypetype"></a>
@@ -541,7 +540,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

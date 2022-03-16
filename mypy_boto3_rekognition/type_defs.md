@@ -1445,7 +1445,6 @@ Optional fields:
 - `ImageId`: `str`
 - `ExternalImageId`: `str`
 - `Confidence`: `float`
-- `IndexFacesModelVersion`: `str`
 
 <a id="gendertypedef"></a>
 

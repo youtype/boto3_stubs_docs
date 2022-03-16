@@ -448,7 +448,6 @@ Optional fields:
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `maxBatchSize`: `int`
 
 <a id="createfunctionresponsetypedef"></a>
 
@@ -531,7 +530,6 @@ Optional fields:
   [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
-- `maxBatchSize`: `int`
 
 <a id="createresolverresponsetypedef"></a>
 
@@ -811,7 +809,6 @@ Optional fields:
 - `responseMappingTemplate`: `str`
 - `functionVersion`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `maxBatchSize`: `int`
 
 <a id="getapiassociationrequestrequesttypedef"></a>
 
@@ -1579,7 +1576,6 @@ Optional fields:
   [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
-- `maxBatchSize`: `int`
 
 <a id="responsemetadatatypedef"></a>
 
@@ -1843,7 +1839,6 @@ Optional fields:
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
-- `maxBatchSize`: `int`
 
 <a id="updatefunctionresponsetypedef"></a>
 
@@ -1926,7 +1921,6 @@ Optional fields:
   [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
-- `maxBatchSize`: `int`
 
 <a id="updateresolverresponsetypedef"></a>
 

@@ -493,12 +493,12 @@ from mypy_boto3_lookoutvision.type_defs import GreengrassConfigurationTypeDef
 
 Required fields:
 
+- `CompilerOptions`: `str`
 - `S3OutputLocation`: [S3LocationTypeDef](./type_defs.md#s3locationtypedef)
 - `ComponentName`: `str`
 
 Optional fields:
 
-- `CompilerOptions`: `str`
 - `TargetDevice`: `Literal['jetson_xavier']` (see
   [TargetDeviceType](./literals.md#targetdevicetype))
 - `TargetPlatform`:

@@ -10,13 +10,11 @@ type annotations stubs module
 [mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 - [Typed dictionaries for boto3 AmplifyUIBuilder module](#typed-dictionaries-for-boto3-amplifyuibuilder-module)
-  - [ActionParametersTypeDef](#actionparameterstypedef)
   - [ComponentBindingPropertiesValuePropertiesTypeDef](#componentbindingpropertiesvaluepropertiestypedef)
   - [ComponentBindingPropertiesValueTypeDef](#componentbindingpropertiesvaluetypedef)
   - [ComponentChildTypeDef](#componentchildtypedef)
   - [ComponentConditionPropertyTypeDef](#componentconditionpropertytypedef)
   - [ComponentDataConfigurationTypeDef](#componentdataconfigurationtypedef)
-  - [ComponentEventTypeDef](#componenteventtypedef)
   - [ComponentPropertyBindingPropertiesTypeDef](#componentpropertybindingpropertiestypedef)
   - [ComponentPropertyTypeDef](#componentpropertytypedef)
   - [ComponentSummaryTypeDef](#componentsummarytypedef)
@@ -46,7 +44,6 @@ type annotations stubs module
   - [ListComponentsResponseTypeDef](#listcomponentsresponsetypedef)
   - [ListThemesRequestRequestTypeDef](#listthemesrequestrequesttypedef)
   - [ListThemesResponseTypeDef](#listthemesresponsetypedef)
-  - [MutationActionSetStateParameterTypeDef](#mutationactionsetstateparametertypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PredicateTypeDef](#predicatetypedef)
   - [RefreshTokenRequestBodyTypeDef](#refreshtokenrequestbodytypedef)
@@ -64,28 +61,6 @@ type annotations stubs module
   - [UpdateThemeDataTypeDef](#updatethemedatatypedef)
   - [UpdateThemeRequestRequestTypeDef](#updatethemerequestrequesttypedef)
   - [UpdateThemeResponseTypeDef](#updatethemeresponsetypedef)
-
-<a id="actionparameterstypedef"></a>
-
-## ActionParametersTypeDef
-
-```python
-from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef
-```
-
-Optional fields:
-
-- `anchor`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `fields`: `Mapping`\[`str`,
-  [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `global`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `id`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `model`: `str`
-- `state`:
-  [MutationActionSetStateParameterTypeDef](./type_defs.md#mutationactionsetstateparametertypedef)
-- `target`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `type`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
-- `url`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
 
 <a id="componentbindingpropertiesvaluepropertiestypedef"></a>
 
@@ -140,8 +115,6 @@ Optional fields:
 
 - `children`:
   `Sequence`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
-- `events`: `Mapping`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
 
 <a id="componentconditionpropertytypedef"></a>
 
@@ -156,7 +129,6 @@ Optional fields:
 - `else`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
 - `field`: `str`
 - `operand`: `str`
-- `operandType`: `str`
 - `operator`: `str`
 - `property`: `str`
 - `then`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
@@ -179,20 +151,6 @@ Optional fields:
 - `predicate`: [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - `sort`:
   `Sequence`\[[SortPropertyTypeDef](./type_defs.md#sortpropertytypedef)\]
-
-<a id="componenteventtypedef"></a>
-
-## ComponentEventTypeDef
-
-```python
-from mypy_boto3_amplifyuibuilder.type_defs import ComponentEventTypeDef
-```
-
-Optional fields:
-
-- `action`: `str`
-- `parameters`:
-  [ActionParametersTypeDef](./type_defs.md#actionparameterstypedef)
 
 <a id="componentpropertybindingpropertiestypedef"></a>
 
@@ -226,7 +184,6 @@ Optional fields:
   [FormBindingElementTypeDef](./type_defs.md#formbindingelementtypedef)\]
 - `collectionBindingProperties`:
   [ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef)
-- `componentName`: `str`
 - `concat`:
   `Sequence`\[[ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
 - `condition`:
@@ -236,7 +193,6 @@ Optional fields:
 - `event`: `str`
 - `importedValue`: `str`
 - `model`: `str`
-- `property`: `str`
 - `type`: `str`
 - `userAttribute`: `str`
 - `value`: `str`
@@ -287,10 +243,7 @@ Optional fields:
   `List`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
 - `collectionProperties`: `Dict`\[`str`,
   [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)\]
-- `events`: `Dict`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
 - `modifiedAt`: `datetime`
-- `schemaVersion`: `str`
 - `sourceId`: `str`
 - `tags`: `Dict`\[`str`, `str`\]
 
@@ -333,9 +286,6 @@ Optional fields:
   `Sequence`\[[ComponentChildTypeDef](./type_defs.md#componentchildtypedef)\]
 - `collectionProperties`: `Mapping`\[`str`,
   [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)\]
-- `events`: `Mapping`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
-- `schemaVersion`: `str`
 - `sourceId`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
 
@@ -510,10 +460,6 @@ Required fields:
 - `appId`: `str`
 - `environmentName`: `str`
 
-Optional fields:
-
-- `nextToken`: `str`
-
 <a id="exportcomponentsresponsetypedef"></a>
 
 ## ExportComponentsResponseTypeDef
@@ -525,7 +471,6 @@ from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsResponseTypeDe
 Required fields:
 
 - `entities`: `List`\[[ComponentTypeDef](./type_defs.md#componenttypedef)\]
-- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -542,10 +487,6 @@ Required fields:
 - `appId`: `str`
 - `environmentName`: `str`
 
-Optional fields:
-
-- `nextToken`: `str`
-
 <a id="exportthemesresponsetypedef"></a>
 
 ## ExportThemesResponseTypeDef
@@ -557,7 +498,6 @@ from mypy_boto3_amplifyuibuilder.type_defs import ExportThemesResponseTypeDef
 Required fields:
 
 - `entities`: `List`\[[ThemeTypeDef](./type_defs.md#themetypedef)\]
-- `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -697,20 +637,6 @@ Required fields:
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="mutationactionsetstateparametertypedef"></a>
-
-## MutationActionSetStateParameterTypeDef
-
-```python
-from mypy_boto3_amplifyuibuilder.type_defs import MutationActionSetStateParameterTypeDef
-```
-
-Required fields:
-
-- `componentName`: `str`
-- `property`: `str`
-- `set`: [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
 
 <a id="paginatorconfigtypedef"></a>
 
@@ -896,14 +822,11 @@ Optional fields:
 - `collectionProperties`: `Mapping`\[`str`,
   [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)\]
 - `componentType`: `str`
-- `events`: `Mapping`\[`str`,
-  [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)\]
 - `id`: `str`
 - `name`: `str`
 - `overrides`: `Mapping`\[`str`, `Mapping`\[`str`, `str`\]\]
 - `properties`: `Mapping`\[`str`,
   [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)\]
-- `schemaVersion`: `str`
 - `sourceId`: `str`
 - `variants`:
   `Sequence`\[[ComponentVariantTypeDef](./type_defs.md#componentvarianttypedef)\]

@@ -258,7 +258,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_vcenter_client
 
-Deletes a given vCenter client by ID.
+Deletes a single vCenter client by ID.
 
 Type annotations for `boto3.client("mgn").delete_vcenter_client` method.
 
@@ -276,7 +276,7 @@ Keyword-only arguments:
 
 ### describe_job_log_items
 
-Retrieves detailed job log items with paging.
+Retrieves detailed Job log with paging.
 
 Type annotations for `boto3.client("mgn").describe_job_log_items` method.
 
@@ -373,7 +373,7 @@ Returns
 
 ### describe_vcenter_clients
 
-Returns a list of the installed vCenter clients.
+Lists all vCenter clients.
 
 Type annotations for `boto3.client("mgn").describe_vcenter_clients` method.
 
@@ -601,7 +601,7 @@ Returns
 
 ### start_replication
 
-Starts replication for SNAPSHOT_SHIPPING agents.
+Starts replication on source server by ID.
 
 Type annotations for `boto3.client("mgn").start_replication` method.
 
@@ -622,7 +622,7 @@ Returns
 
 ### start_test
 
-Launches a Test Instance for specific Source Servers.
+Lauches a Test Instance for specific Source Servers.
 
 Type annotations for `boto3.client("mgn").start_test` method.
 
@@ -718,7 +718,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `sourceServerID`: `str` *(required)*
-- `bootMode`: [BootModeType](./literals.md#bootmodetype)
 - `copyPrivateIp`: `bool`
 - `copyTags`: `bool`
 - `launchDisposition`:
@@ -813,8 +812,7 @@ Returns
 
 ### update_source_server_replication_type
 
-Allows you to change between the AGENT_BASED replication type and the
-SNAPSHOT_SHIPPING replication type.
+Updates source server Replication Type by ID.
 
 Type annotations for
 `boto3.client("mgn").update_source_server_replication_type` method.

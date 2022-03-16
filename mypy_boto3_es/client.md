@@ -28,7 +28,6 @@ type annotations stubs module
     - [delete_outbound_cross_cluster_search_connection](#delete_outbound_cross_cluster_search_connection)
     - [delete_package](#delete_package)
     - [describe_domain_auto_tunes](#describe_domain_auto_tunes)
-    - [describe_domain_change_progress](#describe_domain_change_progress)
     - [describe_elasticsearch_domain](#describe_elasticsearch_domain)
     - [describe_elasticsearch_domain_config](#describe_elasticsearch_domain_config)
     - [describe_elasticsearch_domains](#describe_elasticsearch_domains)
@@ -451,30 +450,6 @@ Keyword-only arguments:
 
 Returns
 [DescribeDomainAutoTunesResponseTypeDef](./type_defs.md#describedomainautotunesresponsetypedef).
-
-<a id="describe\_domain\_change\_progress"></a>
-
-### describe_domain_change_progress
-
-Returns information about the current blue/green deployment happening on a
-domain, including a change ID, status, and progress stages.
-
-Type annotations for `boto3.client("es").describe_domain_change_progress`
-method.
-
-Boto3 documentation:
-[ElasticsearchService.Client.describe_domain_change_progress](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/es.html#ElasticsearchService.Client.describe_domain_change_progress)
-
-Arguments mapping described in
-[DescribeDomainChangeProgressRequestRequestTypeDef](./type_defs.md#describedomainchangeprogressrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DomainName`: `str` *(required)*
-- `ChangeId`: `str`
-
-Returns
-[DescribeDomainChangeProgressResponseTypeDef](./type_defs.md#describedomainchangeprogressresponsetypedef).
 
 <a id="describe\_elasticsearch\_domain"></a>
 

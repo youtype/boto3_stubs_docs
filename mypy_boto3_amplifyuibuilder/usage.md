@@ -35,11 +35,11 @@ client = session.client("amplifyuibuilder")
 # IDE should show a hint with argument names and types
 result = client.can_paginate()
 
-# paginator has type ExportComponentsPaginator and provides type checking
+# paginator has type ListComponentsPaginator and provides type checking
 # and code completion for paginate method
-paginator = client.get_paginator("export_components")
+paginator = client.get_paginator("list_components")
 for item in paginator.paginate(...):
-    # item has type ExportComponentsResponseTypeDef
+    # item has type ListComponentsResponseTypeDef
     print(item)
 ```
 
@@ -59,12 +59,12 @@ and methods.
 import boto3
 
 from mypy_boto3_amplifyuibuilder.client import AmplifyUIBuilderClient
-from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator
+from mypy_boto3_amplifyuibuilder.paginator import ListComponentsPaginator
 
 from mypy_boto3_amplifyuibuilder.literals import PaginatorName
 
 from mypy_boto3_amplifyuibuilder.type_defs import bool
-from mypy_boto3_amplifyuibuilder.type_defs import ExportComponentsResponseTypeDef
+from mypy_boto3_amplifyuibuilder.type_defs import ListComponentsResponseTypeDef
 
 
 session = boto3.Session()
@@ -73,9 +73,9 @@ client: AmplifyUIBuilderClient = session.client("amplifyuibuilder")
 
 result: bool = client.can_paginate()
 
-paginator_name: PaginatorName = "export_components"
-paginator: ExportComponentsPaginator = client.get_paginator(paginator_name)
+paginator_name: PaginatorName = "list_components"
+paginator: ListComponentsPaginator = client.get_paginator(paginator_name)
 for item in paginator.paginate(...):
-    item: ExportComponentsResponseTypeDef
+    item: ListComponentsResponseTypeDef
     print(item)
 ```

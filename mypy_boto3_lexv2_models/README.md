@@ -104,7 +104,6 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [delete_bot_alias](./client.md#delete_bot_alias)
 - [delete_bot_locale](./client.md#delete_bot_locale)
 - [delete_bot_version](./client.md#delete_bot_version)
-- [delete_custom_vocabulary](./client.md#delete_custom_vocabulary)
 - [delete_export](./client.md#delete_export)
 - [delete_import](./client.md#delete_import)
 - [delete_intent](./client.md#delete_intent)
@@ -118,7 +117,6 @@ from mypy_boto3_lexv2_models.client import LexModelsV2Client
 - [describe_bot_locale](./client.md#describe_bot_locale)
 - [describe_bot_recommendation](./client.md#describe_bot_recommendation)
 - [describe_bot_version](./client.md#describe_bot_version)
-- [describe_custom_vocabulary_metadata](./client.md#describe_custom_vocabulary_metadata)
 - [describe_export](./client.md#describe_export)
 - [describe_import](./client.md#describe_import)
 - [describe_intent](./client.md#describe_intent)
@@ -211,7 +209,6 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [AggregatedUtterancesFilterOperatorType](./literals.md#aggregatedutterancesfilteroperatortype)
 - [AggregatedUtterancesSortAttributeType](./literals.md#aggregatedutterancessortattributetype)
 - [AssociatedTranscriptFilterNameType](./literals.md#associatedtranscriptfilternametype)
-- [AudioRecognitionStrategyType](./literals.md#audiorecognitionstrategytype)
 - [BotAliasAvailableWaiterName](./literals.md#botaliasavailablewaitername)
 - [BotAliasStatusType](./literals.md#botaliasstatustype)
 - [BotAvailableWaiterName](./literals.md#botavailablewaitername)
@@ -233,7 +230,6 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [BotVersionSortAttributeType](./literals.md#botversionsortattributetype)
 - [BuiltInIntentSortAttributeType](./literals.md#builtinintentsortattributetype)
 - [BuiltInSlotTypeSortAttributeType](./literals.md#builtinslottypesortattributetype)
-- [CustomVocabularyStatusType](./literals.md#customvocabularystatustype)
 - [EffectType](./literals.md#effecttype)
 - [ExportFilterNameType](./literals.md#exportfilternametype)
 - [ExportFilterOperatorType](./literals.md#exportfilteroperatortype)
@@ -242,7 +238,6 @@ from mypy_boto3_lexv2_models.literals import AggregatedUtterancesFilterNameType,
 - [ImportExportFileFormatType](./literals.md#importexportfileformattype)
 - [ImportFilterNameType](./literals.md#importfilternametype)
 - [ImportFilterOperatorType](./literals.md#importfilteroperatortype)
-- [ImportResourceTypeType](./literals.md#importresourcetypetype)
 - [ImportSortAttributeType](./literals.md#importsortattributetype)
 - [ImportStatusType](./literals.md#importstatustype)
 - [IntentFilterNameType](./literals.md#intentfilternametype)
@@ -279,10 +274,9 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef, ...
+from mypy_boto3_lexv2_models.type_defs import AggregatedUtterancesFilterTypeDef, ...
 ```
 
-- [AdvancedRecognitionSettingTypeDef](./type_defs.md#advancedrecognitionsettingtypedef)
 - [AggregatedUtterancesFilterTypeDef](./type_defs.md#aggregatedutterancesfiltertypedef)
 - [AggregatedUtterancesSortByTypeDef](./type_defs.md#aggregatedutterancessortbytypedef)
 - [AggregatedUtterancesSummaryTypeDef](./type_defs.md#aggregatedutterancessummarytypedef)
@@ -342,8 +336,6 @@ from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef,
 - [CreateSlotTypeResponseTypeDef](./type_defs.md#createslottyperesponsetypedef)
 - [CreateUploadUrlResponseTypeDef](./type_defs.md#createuploadurlresponsetypedef)
 - [CustomPayloadTypeDef](./type_defs.md#custompayloadtypedef)
-- [CustomVocabularyExportSpecificationTypeDef](./type_defs.md#customvocabularyexportspecificationtypedef)
-- [CustomVocabularyImportSpecificationTypeDef](./type_defs.md#customvocabularyimportspecificationtypedef)
 - [DataPrivacyTypeDef](./type_defs.md#dataprivacytypedef)
 - [DateRangeFilterTypeDef](./type_defs.md#daterangefiltertypedef)
 - [DeleteBotAliasRequestRequestTypeDef](./type_defs.md#deletebotaliasrequestrequesttypedef)
@@ -354,8 +346,6 @@ from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef,
 - [DeleteBotResponseTypeDef](./type_defs.md#deletebotresponsetypedef)
 - [DeleteBotVersionRequestRequestTypeDef](./type_defs.md#deletebotversionrequestrequesttypedef)
 - [DeleteBotVersionResponseTypeDef](./type_defs.md#deletebotversionresponsetypedef)
-- [DeleteCustomVocabularyRequestRequestTypeDef](./type_defs.md#deletecustomvocabularyrequestrequesttypedef)
-- [DeleteCustomVocabularyResponseTypeDef](./type_defs.md#deletecustomvocabularyresponsetypedef)
 - [DeleteExportRequestRequestTypeDef](./type_defs.md#deleteexportrequestrequesttypedef)
 - [DeleteExportResponseTypeDef](./type_defs.md#deleteexportresponsetypedef)
 - [DeleteImportRequestRequestTypeDef](./type_defs.md#deleteimportrequestrequesttypedef)
@@ -378,8 +368,6 @@ from mypy_boto3_lexv2_models.type_defs import AdvancedRecognitionSettingTypeDef,
 - [DescribeBotResponseTypeDef](./type_defs.md#describebotresponsetypedef)
 - [DescribeBotVersionRequestRequestTypeDef](./type_defs.md#describebotversionrequestrequesttypedef)
 - [DescribeBotVersionResponseTypeDef](./type_defs.md#describebotversionresponsetypedef)
-- [DescribeCustomVocabularyMetadataRequestRequestTypeDef](./type_defs.md#describecustomvocabularymetadatarequestrequesttypedef)
-- [DescribeCustomVocabularyMetadataResponseTypeDef](./type_defs.md#describecustomvocabularymetadataresponsetypedef)
 - [DescribeExportRequestRequestTypeDef](./type_defs.md#describeexportrequestrequesttypedef)
 - [DescribeExportResponseTypeDef](./type_defs.md#describeexportresponsetypedef)
 - [DescribeImportRequestRequestTypeDef](./type_defs.md#describeimportrequestrequesttypedef)

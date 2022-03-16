@@ -741,7 +741,6 @@ from mypy_boto3_translate.type_defs import TranslationSettingsTypeDef
 
 Optional fields:
 
-- `Formality`: [FormalityType](./literals.md#formalitytype)
 - `Profanity`: `Literal['MASK']` (see
   [ProfanityType](./literals.md#profanitytype))
 

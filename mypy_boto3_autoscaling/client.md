@@ -1363,8 +1363,6 @@ Keyword-only arguments:
 - `MaxGroupPreparedCapacity`: `int`
 - `MinSize`: `int`
 - `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
-- `InstanceReusePolicy`:
-  [InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef)
 
 Returns `Dict`\[`str`, `Any`\].
 

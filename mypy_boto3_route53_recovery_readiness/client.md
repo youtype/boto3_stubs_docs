@@ -133,7 +133,7 @@ Returns `bool`.
 
 ### create_cell
 
-Creates a cell in an account.
+Creates a new Cell.
 
 Type annotations for `boto3.client("route53-recovery-readiness").create_cell`
 method.
@@ -156,7 +156,7 @@ Returns [CreateCellResponseTypeDef](./type_defs.md#createcellresponsetypedef).
 
 ### create_cross_account_authorization
 
-Creates a cross-account readiness authorization.
+Create a new cross account readiness authorization.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").create_cross_account_authorization`
@@ -179,7 +179,7 @@ Returns
 
 ### create_readiness_check
 
-Creates a readiness check in an account.
+Creates a new Readiness Check.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").create_readiness_check` method.
@@ -203,7 +203,7 @@ Returns
 
 ### create_recovery_group
 
-Creates a recovery group in an account.
+Creates a new Recovery Group.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").create_recovery_group` method.
@@ -227,7 +227,7 @@ Returns
 
 ### create_resource_set
 
-Creates a resource set.
+Creates a new Resource Set.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").create_resource_set` method.
@@ -253,7 +253,7 @@ Returns
 
 ### delete_cell
 
-Delete a cell.
+Deletes an existing Cell.
 
 Type annotations for `boto3.client("route53-recovery-readiness").delete_cell`
 method.
@@ -272,7 +272,9 @@ Keyword-only arguments:
 
 ### delete_cross_account_authorization
 
-Deletes cross account readiness authorization.
+Delete cross account readiness authorization See also: \[AWS API
+Documentation\](https://docs.aws.amazon.com/goto/WebAPI/route53-recovery-
+readiness-2019-12-02/DeleteCrossAccountAuthorization).
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").delete_cross_account_authorization`
@@ -294,7 +296,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_readiness_check
 
-Deletes a readiness check.
+Deletes an existing Readiness Check.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").delete_readiness_check` method.
@@ -313,7 +315,7 @@ Keyword-only arguments:
 
 ### delete_recovery_group
 
-Deletes a recovery group.
+Deletes an existing Recovery Group.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").delete_recovery_group` method.
@@ -332,7 +334,7 @@ Keyword-only arguments:
 
 ### delete_resource_set
 
-Deletes a resource set.
+Deletes an existing Resource Set.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").delete_resource_set` method.
@@ -372,8 +374,8 @@ Returns `str`.
 
 ### get_architecture_recommendations
 
-Gets recommendations about architecture designs for improving resiliency for an
-application, based on a recovery group.
+Returns a collection of recommendations to improve resilliance and readiness
+check quality for a Recovery Group.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_architecture_recommendations`
@@ -398,9 +400,7 @@ Returns
 
 ### get_cell
 
-Gets information about a cell including cell name, cell Amazon Resource Name
-(ARN), ARNs of nested cells for this cell, and a list of those cell ARNs with
-their associated recovery group ARNs.
+Returns information about a Cell.
 
 Type annotations for `boto3.client("route53-recovery-readiness").get_cell`
 method.
@@ -421,7 +421,7 @@ Returns [GetCellResponseTypeDef](./type_defs.md#getcellresponsetypedef).
 
 ### get_cell_readiness_summary
 
-Gets readiness for a cell.
+Returns information about readiness of a Cell.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_cell_readiness_summary` method.
@@ -445,7 +445,7 @@ Returns
 
 ### get_readiness_check
 
-Gets details about a readiness check.
+Returns information about a ReadinessCheck.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_readiness_check` method.
@@ -467,7 +467,8 @@ Returns
 
 ### get_readiness_check_resource_status
 
-Gets individual readiness status for a readiness check.
+Returns detailed information about the status of an individual resource within
+a Readiness Check's Resource Set.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_readiness_check_resource_status`
@@ -493,7 +494,7 @@ Returns
 
 ### get_readiness_check_status
 
-Gets the readiness status for an individual readiness check.
+Returns information about the status of a Readiness Check.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_readiness_check_status` method.
@@ -517,8 +518,7 @@ Returns
 
 ### get_recovery_group
 
-Gets details about a recovery group, including a list of the cells that are
-included in it.
+Returns information about a Recovery Group.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_recovery_group` method.
@@ -540,7 +540,7 @@ Returns
 
 ### get_recovery_group_readiness_summary
 
-Displays a summary of information about a recovery group's readiness status.
+Returns information about a Recovery Group.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_recovery_group_readiness_summary`
@@ -565,8 +565,7 @@ Returns
 
 ### get_resource_set
 
-Displays the details about a resource set, including a list of the resources in
-the set.
+Returns information about a Resource Set.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").get_resource_set` method.
@@ -588,7 +587,7 @@ Returns
 
 ### list_cells
 
-Lists the cells for an account.
+Returns a collection of Cells.
 
 Type annotations for `boto3.client("route53-recovery-readiness").list_cells`
 method.
@@ -610,8 +609,7 @@ Returns [ListCellsResponseTypeDef](./type_defs.md#listcellsresponsetypedef).
 
 ### list_cross_account_authorizations
 
-Lists the cross-account readiness authorizations that are in place for an
-account.
+Returns a collection of cross account readiness authorizations.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").list_cross_account_authorizations`
@@ -635,7 +633,7 @@ Returns
 
 ### list_readiness_checks
 
-Lists the readiness checks for an account.
+Returns a collection of Readiness Checks.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").list_readiness_checks` method.
@@ -658,7 +656,7 @@ Returns
 
 ### list_recovery_groups
 
-Lists the recovery groups in an account.
+Returns a collection of Recovery Groups.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").list_recovery_groups` method.
@@ -681,7 +679,7 @@ Returns
 
 ### list_resource_sets
 
-Lists the resource sets in an account.
+Returns a collection of Resource Sets.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").list_resource_sets` method.
@@ -704,8 +702,7 @@ Returns
 
 ### list_rules
 
-Lists all readiness rules, or lists the readiness rules for a specific resource
-type.
+Returns a collection of rules that are applied as part of Readiness Checks.
 
 Type annotations for `boto3.client("route53-recovery-readiness").list_rules`
 method.
@@ -728,7 +725,7 @@ Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
 ### list_tags_for_resources
 
-Lists the tags for a resource.
+Returns a list of the tags assigned to the specified resource.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").list_tags_for_resources` method.
@@ -750,7 +747,7 @@ Returns
 
 ### tag_resource
 
-Adds a tag to a resource.
+Adds tags to the specified resource.
 
 Type annotations for `boto3.client("route53-recovery-readiness").tag_resource`
 method.
@@ -772,7 +769,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Removes a tag from a resource.
+Removes tags from the specified resource.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").untag_resource` method.
@@ -792,8 +789,7 @@ Keyword-only arguments:
 
 ### update_cell
 
-Updates a cell to replace the list of nested cells with a new list of nested
-cells.
+Updates an existing Cell.
 
 Type annotations for `boto3.client("route53-recovery-readiness").update_cell`
 method.
@@ -815,7 +811,7 @@ Returns [UpdateCellResponseTypeDef](./type_defs.md#updatecellresponsetypedef).
 
 ### update_readiness_check
 
-Updates a readiness check.
+Updates an exisiting Readiness Check.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").update_readiness_check` method.
@@ -838,7 +834,7 @@ Returns
 
 ### update_recovery_group
 
-Updates a recovery group.
+Updates an existing Recovery Group.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").update_recovery_group` method.
@@ -861,7 +857,7 @@ Returns
 
 ### update_resource_set
 
-Updates a resource set.
+Updates an existing Resource Set.
 
 Type annotations for
 `boto3.client("route53-recovery-readiness").update_resource_set` method.

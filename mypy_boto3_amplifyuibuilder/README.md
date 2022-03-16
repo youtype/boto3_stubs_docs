@@ -129,11 +129,9 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifyuibuilder.paginator import ExportComponentsPaginator, ...
+from mypy_boto3_amplifyuibuilder.paginator import ListComponentsPaginator, ...
 ```
 
-- [ExportComponentsPaginator](./paginators.md#exportcomponentspaginator)
-- [ExportThemesPaginator](./paginators.md#exportthemespaginator)
 - [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - [ListThemesPaginator](./paginators.md#listthemespaginator)
 
@@ -146,11 +144,9 @@ Type annotations for [literals](./literals.md) used in methods and schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifyuibuilder.literals import ExportComponentsPaginatorName, ...
+from mypy_boto3_amplifyuibuilder.literals import ListComponentsPaginatorName, ...
 ```
 
-- [ExportComponentsPaginatorName](./literals.md#exportcomponentspaginatorname)
-- [ExportThemesPaginatorName](./literals.md#exportthemespaginatorname)
 - [ListComponentsPaginatorName](./literals.md#listcomponentspaginatorname)
 - [ListThemesPaginatorName](./literals.md#listthemespaginatorname)
 - [SortDirectionType](./literals.md#sortdirectiontype)
@@ -170,16 +166,14 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef, ...
+from mypy_boto3_amplifyuibuilder.type_defs import ComponentBindingPropertiesValuePropertiesTypeDef, ...
 ```
 
-- [ActionParametersTypeDef](./type_defs.md#actionparameterstypedef)
 - [ComponentBindingPropertiesValuePropertiesTypeDef](./type_defs.md#componentbindingpropertiesvaluepropertiestypedef)
 - [ComponentBindingPropertiesValueTypeDef](./type_defs.md#componentbindingpropertiesvaluetypedef)
 - [ComponentChildTypeDef](./type_defs.md#componentchildtypedef)
 - [ComponentConditionPropertyTypeDef](./type_defs.md#componentconditionpropertytypedef)
 - [ComponentDataConfigurationTypeDef](./type_defs.md#componentdataconfigurationtypedef)
-- [ComponentEventTypeDef](./type_defs.md#componenteventtypedef)
 - [ComponentPropertyBindingPropertiesTypeDef](./type_defs.md#componentpropertybindingpropertiestypedef)
 - [ComponentPropertyTypeDef](./type_defs.md#componentpropertytypedef)
 - [ComponentSummaryTypeDef](./type_defs.md#componentsummarytypedef)
@@ -209,7 +203,6 @@ from mypy_boto3_amplifyuibuilder.type_defs import ActionParametersTypeDef, ...
 - [ListComponentsResponseTypeDef](./type_defs.md#listcomponentsresponsetypedef)
 - [ListThemesRequestRequestTypeDef](./type_defs.md#listthemesrequestrequesttypedef)
 - [ListThemesResponseTypeDef](./type_defs.md#listthemesresponsetypedef)
-- [MutationActionSetStateParameterTypeDef](./type_defs.md#mutationactionsetstateparametertypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PredicateTypeDef](./type_defs.md#predicatetypedef)
 - [RefreshTokenRequestBodyTypeDef](./type_defs.md#refreshtokenrequestbodytypedef)

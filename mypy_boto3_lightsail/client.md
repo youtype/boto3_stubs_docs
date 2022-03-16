@@ -879,8 +879,7 @@ Returns
 
 ### create_key_pair
 
-Creates a custom SSH key pair that you can use with an Amazon Lightsail
-instance.
+Creates an SSH key pair.
 
 Type annotations for `boto3.client("lightsail").create_key_pair` method.
 
@@ -1365,8 +1364,7 @@ Returns
 
 ### delete_key_pair
 
-Deletes the specified key pair by removing the public key from Amazon
-Lightsail.
+Deletes a specific SSH key pair.
 
 Type annotations for `boto3.client("lightsail").delete_key_pair` method.
 
@@ -1379,7 +1377,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `keyPairName`: `str` *(required)*
-- `expectedFingerprint`: `str`
 
 Returns
 [DeleteKeyPairResultTypeDef](./type_defs.md#deletekeypairresulttypedef).
@@ -1611,7 +1608,7 @@ Returns [DisableAddOnResultTypeDef](./type_defs.md#disableaddonresulttypedef).
 
 ### download_default_key_pair
 
-Downloads the regional Amazon Lightsail default key pair.
+Downloads the default SSH key pair from the user's account.
 
 Type annotations for `boto3.client("lightsail").download_default_key_pair`
 method.
@@ -2580,7 +2577,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `pageToken`: `str`
-- `includeDefaultKeyPair`: `bool`
 
 Returns [GetKeyPairsResultTypeDef](./type_defs.md#getkeypairsresulttypedef).
 

@@ -10,8 +10,6 @@ type annotations stubs module
 [mypy-boto3-finspace-data](https://pypi.org/project/mypy-boto3-finspace-data/).
 
 - [Literals for boto3 FinSpaceData module](#literals-for-boto3-finspacedata-module)
-  - [ApiAccessType](#apiaccesstype)
-  - [ApplicationPermissionType](#applicationpermissiontype)
   - [ChangeTypeType](#changetypetype)
   - [ColumnDataTypeType](#columndatatypetype)
   - [DataViewStatusType](#dataviewstatustype)
@@ -23,46 +21,11 @@ type annotations stubs module
   - [ListChangesetsPaginatorName](#listchangesetspaginatorname)
   - [ListDataViewsPaginatorName](#listdataviewspaginatorname)
   - [ListDatasetsPaginatorName](#listdatasetspaginatorname)
-  - [ListPermissionGroupsPaginatorName](#listpermissiongroupspaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [UserStatusType](#userstatustype)
-  - [UserTypeType](#usertypetype)
   - [locationTypeType](#locationtypetype)
   - [FinSpaceDataServiceName](#finspacedataservicename)
   - [ServiceName](#servicename)
   - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
-
-<a id="apiaccesstype"></a>
-
-## ApiAccessType
-
-```python
-from mypy_boto3_finspace_data.literals import ApiAccessType
-```
-
-Values:
-
-- `DISABLED`
-- `ENABLED`
-
-<a id="applicationpermissiontype"></a>
-
-## ApplicationPermissionType
-
-```python
-from mypy_boto3_finspace_data.literals import ApplicationPermissionType
-```
-
-Values:
-
-- `AccessNotebooks`
-- `CreateDataset`
-- `GetTemporaryCredentials`
-- `ManageAttributeSets`
-- `ManageClusters`
-- `ManageUsersAndGroups`
-- `ViewAuditData`
 
 <a id="changetypetype"></a>
 
@@ -231,57 +194,6 @@ from mypy_boto3_finspace_data.literals import ListDatasetsPaginatorName
 Values:
 
 - `list_datasets`
-
-<a id="listpermissiongroupspaginatorname"></a>
-
-## ListPermissionGroupsPaginatorName
-
-```python
-from mypy_boto3_finspace_data.literals import ListPermissionGroupsPaginatorName
-```
-
-Values:
-
-- `list_permission_groups`
-
-<a id="listuserspaginatorname"></a>
-
-## ListUsersPaginatorName
-
-```python
-from mypy_boto3_finspace_data.literals import ListUsersPaginatorName
-```
-
-Values:
-
-- `list_users`
-
-<a id="userstatustype"></a>
-
-## UserStatusType
-
-```python
-from mypy_boto3_finspace_data.literals import UserStatusType
-```
-
-Values:
-
-- `CREATING`
-- `DISABLED`
-- `ENABLED`
-
-<a id="usertypetype"></a>
-
-## UserTypeType
-
-```python
-from mypy_boto3_finspace_data.literals import UserTypeType
-```
-
-Values:
-
-- `APP_USER`
-- `SUPER_USER`
 
 <a id="locationtypetype"></a>
 
@@ -470,7 +382,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`
@@ -653,5 +564,3 @@ Values:
 - `list_changesets`
 - `list_data_views`
 - `list_datasets`
-- `list_permission_groups`
-- `list_users`

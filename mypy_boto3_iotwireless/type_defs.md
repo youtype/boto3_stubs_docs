@@ -45,7 +45,6 @@ type annotations stubs module
   - [DeleteDeviceProfileRequestRequestTypeDef](#deletedeviceprofilerequestrequesttypedef)
   - [DeleteFuotaTaskRequestRequestTypeDef](#deletefuotataskrequestrequesttypedef)
   - [DeleteMulticastGroupRequestRequestTypeDef](#deletemulticastgrouprequestrequesttypedef)
-  - [DeleteQueuedMessagesRequestRequestTypeDef](#deletequeuedmessagesrequestrequesttypedef)
   - [DeleteServiceProfileRequestRequestTypeDef](#deleteserviceprofilerequestrequesttypedef)
   - [DeleteWirelessDeviceRequestRequestTypeDef](#deletewirelessdevicerequestrequesttypedef)
   - [DeleteWirelessGatewayRequestRequestTypeDef](#deletewirelessgatewayrequestrequesttypedef)
@@ -61,7 +60,6 @@ type annotations stubs module
   - [DisassociateWirelessDeviceFromThingRequestRequestTypeDef](#disassociatewirelessdevicefromthingrequestrequesttypedef)
   - [DisassociateWirelessGatewayFromCertificateRequestRequestTypeDef](#disassociatewirelessgatewayfromcertificaterequestrequesttypedef)
   - [DisassociateWirelessGatewayFromThingRequestRequestTypeDef](#disassociatewirelessgatewayfromthingrequestrequesttypedef)
-  - [DownlinkQueueMessageTypeDef](#downlinkqueuemessagetypedef)
   - [FPortsTypeDef](#fportstypedef)
   - [FuotaTaskTypeDef](#fuotatasktypedef)
   - [GetDestinationRequestRequestTypeDef](#getdestinationrequestrequesttypedef)
@@ -115,8 +113,6 @@ type annotations stubs module
   - [ListMulticastGroupsResponseTypeDef](#listmulticastgroupsresponsetypedef)
   - [ListPartnerAccountsRequestRequestTypeDef](#listpartneraccountsrequestrequesttypedef)
   - [ListPartnerAccountsResponseTypeDef](#listpartneraccountsresponsetypedef)
-  - [ListQueuedMessagesRequestRequestTypeDef](#listqueuedmessagesrequestrequesttypedef)
-  - [ListQueuedMessagesResponseTypeDef](#listqueuedmessagesresponsetypedef)
   - [ListServiceProfilesRequestRequestTypeDef](#listserviceprofilesrequestrequesttypedef)
   - [ListServiceProfilesResponseTypeDef](#listserviceprofilesresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
@@ -730,24 +726,6 @@ Required fields:
 
 - `Id`: `str`
 
-<a id="deletequeuedmessagesrequestrequesttypedef"></a>
-
-## DeleteQueuedMessagesRequestRequestTypeDef
-
-```python
-from mypy_boto3_iotwireless.type_defs import DeleteQueuedMessagesRequestRequestTypeDef
-```
-
-Required fields:
-
-- `Id`: `str`
-- `MessageId`: `str`
-
-Optional fields:
-
-- `WirelessDeviceType`:
-  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-
 <a id="deleteserviceprofilerequestrequesttypedef"></a>
 
 ## DeleteServiceProfileRequestRequestTypeDef
@@ -940,22 +918,6 @@ from mypy_boto3_iotwireless.type_defs import DisassociateWirelessGatewayFromThin
 Required fields:
 
 - `Id`: `str`
-
-<a id="downlinkqueuemessagetypedef"></a>
-
-## DownlinkQueueMessageTypeDef
-
-```python
-from mypy_boto3_iotwireless.type_defs import DownlinkQueueMessageTypeDef
-```
-
-Optional fields:
-
-- `MessageId`: `str`
-- `TransmitMode`: `int`
-- `ReceivedAt`: `str`
-- `LoRaWAN`:
-  [LoRaWANSendDataToDeviceTypeDef](./type_defs.md#lorawansenddatatodevicetypedef)
 
 <a id="fportstypedef"></a>
 
@@ -1761,41 +1723,6 @@ Required fields:
 - `NextToken`: `str`
 - `Sidewalk`:
   `List`\[[SidewalkAccountInfoWithFingerprintTypeDef](./type_defs.md#sidewalkaccountinfowithfingerprinttypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listqueuedmessagesrequestrequesttypedef"></a>
-
-## ListQueuedMessagesRequestRequestTypeDef
-
-```python
-from mypy_boto3_iotwireless.type_defs import ListQueuedMessagesRequestRequestTypeDef
-```
-
-Required fields:
-
-- `Id`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-- `WirelessDeviceType`:
-  [WirelessDeviceTypeType](./literals.md#wirelessdevicetypetype)
-
-<a id="listqueuedmessagesresponsetypedef"></a>
-
-## ListQueuedMessagesResponseTypeDef
-
-```python
-from mypy_boto3_iotwireless.type_defs import ListQueuedMessagesResponseTypeDef
-```
-
-Required fields:
-
-- `NextToken`: `str`
-- `DownlinkQueueMessagesList`:
-  `List`\[[DownlinkQueueMessageTypeDef](./type_defs.md#downlinkqueuemessagetypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

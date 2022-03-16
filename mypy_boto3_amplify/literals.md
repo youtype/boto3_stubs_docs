@@ -18,7 +18,6 @@ type annotations stubs module
   - [ListDomainAssociationsPaginatorName](#listdomainassociationspaginatorname)
   - [ListJobsPaginatorName](#listjobspaginatorname)
   - [PlatformType](#platformtype)
-  - [RepositoryCloneMethodType](#repositoryclonemethodtype)
   - [StageType](#stagetype)
   - [AmplifyServiceName](#amplifyservicename)
   - [ServiceName](#servicename)
@@ -136,21 +135,6 @@ from mypy_boto3_amplify.literals import PlatformType
 Values:
 
 - `WEB`
-- `WEB_DYNAMIC`
-
-<a id="repositoryclonemethodtype"></a>
-
-## RepositoryCloneMethodType
-
-```python
-from mypy_boto3_amplify.literals import RepositoryCloneMethodType
-```
-
-Values:
-
-- `SIGV4`
-- `SSH`
-- `TOKEN`
 
 <a id="stagetype"></a>
 
@@ -342,7 +326,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

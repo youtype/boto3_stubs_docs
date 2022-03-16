@@ -701,10 +701,6 @@ python -m pip uninstall -y boto3-stubs
   [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
   service
 
-- [mypy-boto3-keyspaces](./mypy_boto3_keyspaces) for
-  [Keyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces)
-  service
-
 - [mypy-boto3-kinesis](./mypy_boto3_kinesis) for
   [Kinesis](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kinesis.html#Kinesis)
   service

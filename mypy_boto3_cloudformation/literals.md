@@ -16,7 +16,6 @@ type annotations stubs module
   - [CategoryType](#categorytype)
   - [ChangeActionType](#changeactiontype)
   - [ChangeSetCreateCompleteWaiterName](#changesetcreatecompletewaitername)
-  - [ChangeSetHooksStatusType](#changesethooksstatustype)
   - [ChangeSetStatusType](#changesetstatustype)
   - [ChangeSetTypeType](#changesettypetype)
   - [ChangeSourceType](#changesourcetype)
@@ -30,10 +29,6 @@ type annotations stubs module
   - [EvaluationTypeType](#evaluationtypetype)
   - [ExecutionStatusType](#executionstatustype)
   - [HandlerErrorCodeType](#handlererrorcodetype)
-  - [HookFailureModeType](#hookfailuremodetype)
-  - [HookInvocationPointType](#hookinvocationpointtype)
-  - [HookStatusType](#hookstatustype)
-  - [HookTargetTypeType](#hooktargettypetype)
   - [IdentityProviderType](#identityprovidertype)
   - [ListChangeSetsPaginatorName](#listchangesetspaginatorname)
   - [ListExportsPaginatorName](#listexportspaginatorname)
@@ -172,20 +167,6 @@ from mypy_boto3_cloudformation.literals import ChangeSetCreateCompleteWaiterName
 Values:
 
 - `change_set_create_complete`
-
-<a id="changesethooksstatustype"></a>
-
-## ChangeSetHooksStatusType
-
-```python
-from mypy_boto3_cloudformation.literals import ChangeSetHooksStatusType
-```
-
-Values:
-
-- `PLANNED`
-- `PLANNING`
-- `UNAVAILABLE`
 
 <a id="changesetstatustype"></a>
 
@@ -366,13 +347,11 @@ Values:
 - `AccessDenied`
 - `AlreadyExists`
 - `GeneralServiceException`
-- `HandlerInternalFailure`
 - `InternalFailure`
 - `InvalidCredentials`
 - `InvalidRequest`
 - `InvalidTypeConfiguration`
 - `NetworkFailure`
-- `NonCompliant`
 - `NotFound`
 - `NotStabilized`
 - `NotUpdatable`
@@ -380,59 +359,6 @@ Values:
 - `ServiceInternalError`
 - `ServiceLimitExceeded`
 - `Throttling`
-- `Unknown`
-
-<a id="hookfailuremodetype"></a>
-
-## HookFailureModeType
-
-```python
-from mypy_boto3_cloudformation.literals import HookFailureModeType
-```
-
-Values:
-
-- `FAIL`
-- `WARN`
-
-<a id="hookinvocationpointtype"></a>
-
-## HookInvocationPointType
-
-```python
-from mypy_boto3_cloudformation.literals import HookInvocationPointType
-```
-
-Values:
-
-- `PRE_PROVISION`
-
-<a id="hookstatustype"></a>
-
-## HookStatusType
-
-```python
-from mypy_boto3_cloudformation.literals import HookStatusType
-```
-
-Values:
-
-- `HOOK_COMPLETE_FAILED`
-- `HOOK_COMPLETE_SUCCEEDED`
-- `HOOK_FAILED`
-- `HOOK_IN_PROGRESS`
-
-<a id="hooktargettypetype"></a>
-
-## HookTargetTypeType
-
-```python
-from mypy_boto3_cloudformation.literals import HookTargetTypeType
-```
-
-Values:
-
-- `RESOURCE`
 
 <a id="identityprovidertype"></a>
 
@@ -674,7 +600,6 @@ from mypy_boto3_cloudformation.literals import RegistryTypeType
 
 Values:
 
-- `HOOK`
 - `MODULE`
 - `RESOURCE`
 
@@ -1078,7 +1003,6 @@ from mypy_boto3_cloudformation.literals import ThirdPartyTypeType
 
 Values:
 
-- `HOOK`
 - `MODULE`
 - `RESOURCE`
 
@@ -1309,7 +1233,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

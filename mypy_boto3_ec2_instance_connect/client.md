@@ -57,7 +57,6 @@ Exceptions:
 - `Exceptions.AuthException`
 - `Exceptions.ClientError`
 - `Exceptions.EC2InstanceNotFoundException`
-- `Exceptions.EC2InstanceStateInvalidException`
 - `Exceptions.EC2InstanceTypeInvalidException`
 - `Exceptions.InvalidArgsException`
 - `Exceptions.SerialConsoleAccessDisabledException`
@@ -168,7 +167,7 @@ Keyword-only arguments:
 - `InstanceId`: `str` *(required)*
 - `InstanceOSUser`: `str` *(required)*
 - `SSHPublicKey`: `str` *(required)*
-- `AvailabilityZone`: `str`
+- `AvailabilityZone`: `str` *(required)*
 
 Returns
 [SendSSHPublicKeyResponseTypeDef](./type_defs.md#sendsshpublickeyresponsetypedef).

@@ -58,9 +58,6 @@ type annotations stubs module
   - [DistributionConfigurationTypeDef](#distributionconfigurationtypedef)
   - [DistributionTypeDef](#distributiontypedef)
   - [EbsInstanceBlockDeviceSpecificationTypeDef](#ebsinstanceblockdevicespecificationtypedef)
-  - [FastLaunchConfigurationTypeDef](#fastlaunchconfigurationtypedef)
-  - [FastLaunchLaunchTemplateSpecificationTypeDef](#fastlaunchlaunchtemplatespecificationtypedef)
-  - [FastLaunchSnapshotConfigurationTypeDef](#fastlaunchsnapshotconfigurationtypedef)
   - [FilterTypeDef](#filtertypedef)
   - [GetComponentPolicyRequestRequestTypeDef](#getcomponentpolicyrequestrequesttypedef)
   - [GetComponentPolicyResponseTypeDef](#getcomponentpolicyresponsetypedef)
@@ -999,8 +996,6 @@ Optional fields:
   `Sequence`\[[LaunchTemplateConfigurationTypeDef](./type_defs.md#launchtemplateconfigurationtypedef)\]
 - `s3ExportConfiguration`:
   [S3ExportConfigurationTypeDef](./type_defs.md#s3exportconfigurationtypedef)
-- `fastLaunchConfigurations`:
-  `Sequence`\[[FastLaunchConfigurationTypeDef](./type_defs.md#fastlaunchconfigurationtypedef)\]
 
 <a id="ebsinstanceblockdevicespecificationtypedef"></a>
 
@@ -1020,53 +1015,6 @@ Optional fields:
 - `volumeSize`: `int`
 - `volumeType`: [EbsVolumeTypeType](./literals.md#ebsvolumetypetype)
 - `throughput`: `int`
-
-<a id="fastlaunchconfigurationtypedef"></a>
-
-## FastLaunchConfigurationTypeDef
-
-```python
-from mypy_boto3_imagebuilder.type_defs import FastLaunchConfigurationTypeDef
-```
-
-Required fields:
-
-- `enabled`: `bool`
-
-Optional fields:
-
-- `snapshotConfiguration`:
-  [FastLaunchSnapshotConfigurationTypeDef](./type_defs.md#fastlaunchsnapshotconfigurationtypedef)
-- `maxParallelLaunches`: `int`
-- `launchTemplate`:
-  [FastLaunchLaunchTemplateSpecificationTypeDef](./type_defs.md#fastlaunchlaunchtemplatespecificationtypedef)
-- `accountId`: `str`
-
-<a id="fastlaunchlaunchtemplatespecificationtypedef"></a>
-
-## FastLaunchLaunchTemplateSpecificationTypeDef
-
-```python
-from mypy_boto3_imagebuilder.type_defs import FastLaunchLaunchTemplateSpecificationTypeDef
-```
-
-Optional fields:
-
-- `launchTemplateId`: `str`
-- `launchTemplateName`: `str`
-- `launchTemplateVersion`: `str`
-
-<a id="fastlaunchsnapshotconfigurationtypedef"></a>
-
-## FastLaunchSnapshotConfigurationTypeDef
-
-```python
-from mypy_boto3_imagebuilder.type_defs import FastLaunchSnapshotConfigurationTypeDef
-```
-
-Optional fields:
-
-- `targetResourceCount`: `int`
 
 <a id="filtertypedef"></a>
 

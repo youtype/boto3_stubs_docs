@@ -45,9 +45,6 @@ Required fields:
 - `InstanceId`: `str`
 - `InstanceOSUser`: `str`
 - `SSHPublicKey`: `str`
-
-Optional fields:
-
 - `AvailabilityZone`: `str`
 
 <a id="sendsshpublickeyresponsetypedef"></a>

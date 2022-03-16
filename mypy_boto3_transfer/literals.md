@@ -17,17 +17,9 @@ type annotations stubs module
   - [ExecutionStatusType](#executionstatustype)
   - [HomeDirectoryTypeType](#homedirectorytypetype)
   - [IdentityProviderTypeType](#identityprovidertypetype)
-  - [ListAccessesPaginatorName](#listaccessespaginatorname)
-  - [ListExecutionsPaginatorName](#listexecutionspaginatorname)
-  - [ListSecurityPoliciesPaginatorName](#listsecuritypoliciespaginatorname)
   - [ListServersPaginatorName](#listserverspaginatorname)
-  - [ListTagsForResourcePaginatorName](#listtagsforresourcepaginatorname)
-  - [ListUsersPaginatorName](#listuserspaginatorname)
-  - [ListWorkflowsPaginatorName](#listworkflowspaginatorname)
   - [OverwriteExistingType](#overwriteexistingtype)
   - [ProtocolType](#protocoltype)
-  - [ServerOfflineWaiterName](#serverofflinewaitername)
-  - [ServerOnlineWaiterName](#serveronlinewaitername)
   - [StateType](#statetype)
   - [TlsSessionResumptionModeType](#tlssessionresumptionmodetype)
   - [WorkflowStepTypeType](#workflowsteptypetype)
@@ -35,7 +27,6 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
-  - [WaiterName](#waitername)
 
 <a id="customstepstatustype"></a>
 
@@ -87,14 +78,7 @@ from mypy_boto3_transfer.literals import ExecutionErrorTypeType
 
 Values:
 
-- `ALREADY_EXISTS`
-- `BAD_REQUEST`
-- `CUSTOM_STEP_FAILED`
-- `INTERNAL_SERVER_ERROR`
-- `NOT_FOUND`
 - `PERMISSION_DENIED`
-- `THROTTLED`
-- `TIMEOUT`
 
 <a id="executionstatustype"></a>
 
@@ -139,42 +123,6 @@ Values:
 - `AWS_LAMBDA`
 - `SERVICE_MANAGED`
 
-<a id="listaccessespaginatorname"></a>
-
-## ListAccessesPaginatorName
-
-```python
-from mypy_boto3_transfer.literals import ListAccessesPaginatorName
-```
-
-Values:
-
-- `list_accesses`
-
-<a id="listexecutionspaginatorname"></a>
-
-## ListExecutionsPaginatorName
-
-```python
-from mypy_boto3_transfer.literals import ListExecutionsPaginatorName
-```
-
-Values:
-
-- `list_executions`
-
-<a id="listsecuritypoliciespaginatorname"></a>
-
-## ListSecurityPoliciesPaginatorName
-
-```python
-from mypy_boto3_transfer.literals import ListSecurityPoliciesPaginatorName
-```
-
-Values:
-
-- `list_security_policies`
-
 <a id="listserverspaginatorname"></a>
 
 ## ListServersPaginatorName
@@ -186,42 +134,6 @@ from mypy_boto3_transfer.literals import ListServersPaginatorName
 Values:
 
 - `list_servers`
-
-<a id="listtagsforresourcepaginatorname"></a>
-
-## ListTagsForResourcePaginatorName
-
-```python
-from mypy_boto3_transfer.literals import ListTagsForResourcePaginatorName
-```
-
-Values:
-
-- `list_tags_for_resource`
-
-<a id="listuserspaginatorname"></a>
-
-## ListUsersPaginatorName
-
-```python
-from mypy_boto3_transfer.literals import ListUsersPaginatorName
-```
-
-Values:
-
-- `list_users`
-
-<a id="listworkflowspaginatorname"></a>
-
-## ListWorkflowsPaginatorName
-
-```python
-from mypy_boto3_transfer.literals import ListWorkflowsPaginatorName
-```
-
-Values:
-
-- `list_workflows`
 
 <a id="overwriteexistingtype"></a>
 
@@ -249,30 +161,6 @@ Values:
 - `FTP`
 - `FTPS`
 - `SFTP`
-
-<a id="serverofflinewaitername"></a>
-
-## ServerOfflineWaiterName
-
-```python
-from mypy_boto3_transfer.literals import ServerOfflineWaiterName
-```
-
-Values:
-
-- `server_offline`
-
-<a id="serveronlinewaitername"></a>
-
-## ServerOnlineWaiterName
-
-```python
-from mypy_boto3_transfer.literals import ServerOnlineWaiterName
-```
-
-Values:
-
-- `server_online`
 
 <a id="statetype"></a>
 
@@ -494,7 +382,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`
@@ -674,23 +561,4 @@ from mypy_boto3_transfer.literals import PaginatorName
 
 Values:
 
-- `list_accesses`
-- `list_executions`
-- `list_security_policies`
 - `list_servers`
-- `list_tags_for_resource`
-- `list_users`
-- `list_workflows`
-
-<a id="waitername"></a>
-
-## WaiterName
-
-```python
-from mypy_boto3_transfer.literals import WaiterName
-```
-
-Values:
-
-- `server_offline`
-- `server_online`

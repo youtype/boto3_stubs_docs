@@ -17,7 +17,6 @@ type annotations stubs module
     - [add_profile_key](#add_profile_key)
     - [can_paginate](#can_paginate)
     - [create_domain](#create_domain)
-    - [create_integration_workflow](#create_integration_workflow)
     - [create_profile](#create_profile)
     - [delete_domain](#delete_domain)
     - [delete_integration](#delete_integration)
@@ -25,7 +24,6 @@ type annotations stubs module
     - [delete_profile_key](#delete_profile_key)
     - [delete_profile_object](#delete_profile_object)
     - [delete_profile_object_type](#delete_profile_object_type)
-    - [delete_workflow](#delete_workflow)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_auto_merging_preview](#get_auto_merging_preview)
     - [get_domain](#get_domain)
@@ -34,8 +32,6 @@ type annotations stubs module
     - [get_matches](#get_matches)
     - [get_profile_object_type](#get_profile_object_type)
     - [get_profile_object_type_template](#get_profile_object_type_template)
-    - [get_workflow](#get_workflow)
-    - [get_workflow_steps](#get_workflow_steps)
     - [list_account_integrations](#list_account_integrations)
     - [list_domains](#list_domains)
     - [list_identity_resolution_jobs](#list_identity_resolution_jobs)
@@ -44,7 +40,6 @@ type annotations stubs module
     - [list_profile_object_types](#list_profile_object_types)
     - [list_profile_objects](#list_profile_objects)
     - [list_tags_for_resource](#list_tags_for_resource)
-    - [list_workflows](#list_workflows)
     - [merge_profiles](#merge_profiles)
     - [put_integration](#put_integration)
     - [put_profile_object](#put_profile_object)
@@ -183,36 +178,6 @@ Keyword-only arguments:
 
 Returns
 [CreateDomainResponseTypeDef](./type_defs.md#createdomainresponsetypedef).
-
-<a id="create\_integration\_workflow"></a>
-
-### create_integration_workflow
-
-Creates an integration workflow.
-
-Type annotations for
-`boto3.client("customer-profiles").create_integration_workflow` method.
-
-Boto3 documentation:
-[CustomerProfiles.Client.create_integration_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.create_integration_workflow)
-
-Arguments mapping described in
-[CreateIntegrationWorkflowRequestRequestTypeDef](./type_defs.md#createintegrationworkflowrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DomainName`: `str` *(required)*
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype)) *(required)*
-- `IntegrationConfig`:
-  [IntegrationConfigTypeDef](./type_defs.md#integrationconfigtypedef)
-  *(required)*
-- `ObjectTypeName`: `str` *(required)*
-- `RoleArn`: `str` *(required)*
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-Returns
-[CreateIntegrationWorkflowResponseTypeDef](./type_defs.md#createintegrationworkflowresponsetypedef).
 
 <a id="create\_profile"></a>
 
@@ -396,28 +361,6 @@ Keyword-only arguments:
 
 Returns
 [DeleteProfileObjectTypeResponseTypeDef](./type_defs.md#deleteprofileobjecttyperesponsetypedef).
-
-<a id="delete\_workflow"></a>
-
-### delete_workflow
-
-Deletes the specified workflow and all its corresponding resources.
-
-Type annotations for `boto3.client("customer-profiles").delete_workflow`
-method.
-
-Boto3 documentation:
-[CustomerProfiles.Client.delete_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.delete_workflow)
-
-Arguments mapping described in
-[DeleteWorkflowRequestRequestTypeDef](./type_defs.md#deleteworkflowrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DomainName`: `str` *(required)*
-- `WorkflowId`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
 
 <a id="generate\_presigned\_url"></a>
 
@@ -605,53 +548,6 @@ Keyword-only arguments:
 Returns
 [GetProfileObjectTypeTemplateResponseTypeDef](./type_defs.md#getprofileobjecttypetemplateresponsetypedef).
 
-<a id="get\_workflow"></a>
-
-### get_workflow
-
-Get details of specified workflow.
-
-Type annotations for `boto3.client("customer-profiles").get_workflow` method.
-
-Boto3 documentation:
-[CustomerProfiles.Client.get_workflow](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_workflow)
-
-Arguments mapping described in
-[GetWorkflowRequestRequestTypeDef](./type_defs.md#getworkflowrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DomainName`: `str` *(required)*
-- `WorkflowId`: `str` *(required)*
-
-Returns
-[GetWorkflowResponseTypeDef](./type_defs.md#getworkflowresponsetypedef).
-
-<a id="get\_workflow\_steps"></a>
-
-### get_workflow_steps
-
-Get granular list of steps in workflow.
-
-Type annotations for `boto3.client("customer-profiles").get_workflow_steps`
-method.
-
-Boto3 documentation:
-[CustomerProfiles.Client.get_workflow_steps](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.get_workflow_steps)
-
-Arguments mapping described in
-[GetWorkflowStepsRequestRequestTypeDef](./type_defs.md#getworkflowstepsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DomainName`: `str` *(required)*
-- `WorkflowId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[GetWorkflowStepsResponseTypeDef](./type_defs.md#getworkflowstepsresponsetypedef).
-
 <a id="list\_account\_integrations"></a>
 
 ### list_account_integrations
@@ -672,7 +568,6 @@ Keyword-only arguments:
 - `Uri`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `IncludeHidden`: `bool`
 
 Returns
 [ListAccountIntegrationsResponseTypeDef](./type_defs.md#listaccountintegrationsresponsetypedef).
@@ -743,7 +638,6 @@ Keyword-only arguments:
 - `DomainName`: `str` *(required)*
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `IncludeHidden`: `bool`
 
 Returns
 [ListIntegrationsResponseTypeDef](./type_defs.md#listintegrationsresponsetypedef).
@@ -844,34 +738,6 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
-
-<a id="list\_workflows"></a>
-
-### list_workflows
-
-Query to list all workflows.
-
-Type annotations for `boto3.client("customer-profiles").list_workflows` method.
-
-Boto3 documentation:
-[CustomerProfiles.Client.list_workflows](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/customer-profiles.html#CustomerProfiles.Client.list_workflows)
-
-Arguments mapping described in
-[ListWorkflowsRequestRequestTypeDef](./type_defs.md#listworkflowsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DomainName`: `str` *(required)*
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Status`: [StatusType](./literals.md#statustype)
-- `QueryStartDate`: `Union`\[`datetime`, `str`\]
-- `QueryEndDate`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[ListWorkflowsResponseTypeDef](./type_defs.md#listworkflowsresponsetypedef).
 
 <a id="merge\_profiles"></a>
 

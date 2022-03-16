@@ -100,7 +100,6 @@ type annotations stubs module
   - [UpdateUserRequestRequestTypeDef](#updateuserrequestrequesttypedef)
   - [UpdateUserResponseTypeDef](#updateuserresponsetypedef)
   - [UserDetailsTypeDef](#userdetailstypedef)
-  - [WaiterConfigTypeDef](#waiterconfigtypedef)
   - [WorkflowDetailTypeDef](#workflowdetailtypedef)
   - [WorkflowDetailsTypeDef](#workflowdetailstypedef)
   - [WorkflowStepTypeDef](#workflowsteptypedef)
@@ -120,7 +119,6 @@ Optional fields:
   [InputFileLocationTypeDef](./type_defs.md#inputfilelocationtypedef)
 - `OverwriteExisting`:
   [OverwriteExistingType](./literals.md#overwriteexistingtype)
-- `SourceFileLocation`: `str`
 
 <a id="createaccessrequestrequesttypedef"></a>
 
@@ -182,8 +180,6 @@ Optional fields:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
-- `PostAuthenticationLoginBanner`: `str`
-- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `ProtocolDetails`:
   [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
@@ -294,7 +290,6 @@ Optional fields:
 - `Name`: `str`
 - `Target`: `str`
 - `TimeoutSeconds`: `int`
-- `SourceFileLocation`: `str`
 
 <a id="deleteaccessrequestrequesttypedef"></a>
 
@@ -346,7 +341,6 @@ from mypy_boto3_transfer.type_defs import DeleteStepDetailsTypeDef
 Optional fields:
 
 - `Name`: `str`
-- `SourceFileLocation`: `str`
 
 <a id="deleteuserrequestrequesttypedef"></a>
 
@@ -627,8 +621,6 @@ Optional fields:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
-- `PostAuthenticationLoginBanner`: `str`
-- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `List`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `ServerId`: `str`
@@ -725,7 +717,8 @@ from mypy_boto3_transfer.type_defs import ExecutionErrorTypeDef
 
 Required fields:
 
-- `Type`: [ExecutionErrorTypeType](./literals.md#executionerrortypetype)
+- `Type`: `Literal['PERMISSION_DENIED']` (see
+  [ExecutionErrorTypeType](./literals.md#executionerrortypetype))
 - `Message`: `str`
 
 <a id="executionresultstypedef"></a>
@@ -1361,7 +1354,6 @@ Optional fields:
 
 - `Name`: `str`
 - `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
-- `SourceFileLocation`: `str`
 
 <a id="tagtypedef"></a>
 
@@ -1488,8 +1480,6 @@ Optional fields:
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `LoggingRole`: `str`
-- `PostAuthenticationLoginBanner`: `str`
-- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `WorkflowDetails`:
@@ -1564,19 +1554,6 @@ Required fields:
 Optional fields:
 
 - `SessionId`: `str`
-
-<a id="waiterconfigtypedef"></a>
-
-## WaiterConfigTypeDef
-
-```python
-from mypy_boto3_transfer.type_defs import WaiterConfigTypeDef
-```
-
-Optional fields:
-
-- `Delay`: `int`
-- `MaxAttempts`: `int`
 
 <a id="workflowdetailtypedef"></a>
 

@@ -104,8 +104,6 @@ Arguments for `ObjectExistsWaiter.wait` method:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 
 <a id="objectnotexistswaiter"></a>
@@ -145,6 +143,4 @@ Arguments for `ObjectNotExistsWaiter.wait` method:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 - `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)

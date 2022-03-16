@@ -14,7 +14,6 @@ type annotations stubs module
   - [AggregatedUtterancesFilterOperatorType](#aggregatedutterancesfilteroperatortype)
   - [AggregatedUtterancesSortAttributeType](#aggregatedutterancessortattributetype)
   - [AssociatedTranscriptFilterNameType](#associatedtranscriptfilternametype)
-  - [AudioRecognitionStrategyType](#audiorecognitionstrategytype)
   - [BotAliasAvailableWaiterName](#botaliasavailablewaitername)
   - [BotAliasStatusType](#botaliasstatustype)
   - [BotAvailableWaiterName](#botavailablewaitername)
@@ -36,7 +35,6 @@ type annotations stubs module
   - [BotVersionSortAttributeType](#botversionsortattributetype)
   - [BuiltInIntentSortAttributeType](#builtinintentsortattributetype)
   - [BuiltInSlotTypeSortAttributeType](#builtinslottypesortattributetype)
-  - [CustomVocabularyStatusType](#customvocabularystatustype)
   - [EffectType](#effecttype)
   - [ExportFilterNameType](#exportfilternametype)
   - [ExportFilterOperatorType](#exportfilteroperatortype)
@@ -45,7 +43,6 @@ type annotations stubs module
   - [ImportExportFileFormatType](#importexportfileformattype)
   - [ImportFilterNameType](#importfilternametype)
   - [ImportFilterOperatorType](#importfilteroperatortype)
-  - [ImportResourceTypeType](#importresourcetypetype)
   - [ImportSortAttributeType](#importsortattributetype)
   - [ImportStatusType](#importstatustype)
   - [IntentFilterNameType](#intentfilternametype)
@@ -122,18 +119,6 @@ Values:
 
 - `IntentId`
 - `SlotTypeId`
-
-<a id="audiorecognitionstrategytype"></a>
-
-## AudioRecognitionStrategyType
-
-```python
-from mypy_boto3_lexv2_models.literals import AudioRecognitionStrategyType
-```
-
-Values:
-
-- `UseSlotValuesAsCustomVocabulary`
 
 <a id="botaliasavailablewaitername"></a>
 
@@ -412,22 +397,6 @@ Values:
 
 - `SlotTypeSignature`
 
-<a id="customvocabularystatustype"></a>
-
-## CustomVocabularyStatusType
-
-```python
-from mypy_boto3_lexv2_models.literals import CustomVocabularyStatusType
-```
-
-Values:
-
-- `Creating`
-- `Deleting`
-- `Exporting`
-- `Importing`
-- `Ready`
-
 <a id="effecttype"></a>
 
 ## EffectType
@@ -504,7 +473,6 @@ from mypy_boto3_lexv2_models.literals import ImportExportFileFormatType
 Values:
 
 - `LexJson`
-- `TSV`
 
 <a id="importfilternametype"></a>
 
@@ -530,20 +498,6 @@ Values:
 
 - `CO`
 - `EQ`
-
-<a id="importresourcetypetype"></a>
-
-## ImportResourceTypeType
-
-```python
-from mypy_boto3_lexv2_models.literals import ImportResourceTypeType
-```
-
-Values:
-
-- `Bot`
-- `BotLocale`
-- `CustomVocabulary`
 
 <a id="importsortattributetype"></a>
 
@@ -993,7 +947,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

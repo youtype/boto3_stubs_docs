@@ -240,11 +240,6 @@ Required fields:
   [RedactionTypeType](./literals.md#redactiontypetype))
 - `RedactionOutput`: [RedactionOutputType](./literals.md#redactionoutputtype)
 
-Optional fields:
-
-- `PiiEntityTypes`:
-  `List`\[[PiiEntityTypeType](./literals.md#piientitytypetype)\]
-
 <a id="createcallanalyticscategoryrequestrequesttypedef"></a>
 
 ## CreateCallAnalyticsCategoryRequestRequestTypeDef

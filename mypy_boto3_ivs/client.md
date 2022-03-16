@@ -217,8 +217,6 @@ Keyword-only arguments:
   *(required)*
 - `name`: `str`
 - `tags`: `Mapping`\[`str`, `str`\]
-- `thumbnailConfiguration`:
-  [ThumbnailConfigurationTypeDef](./type_defs.md#thumbnailconfigurationtypedef)
 
 Returns
 [CreateRecordingConfigurationResponseTypeDef](./type_defs.md#createrecordingconfigurationresponsetypedef).

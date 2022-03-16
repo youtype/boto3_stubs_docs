@@ -25,7 +25,6 @@ type annotations stubs module
   - [ListTrackersPaginatorName](#listtrackerspaginatorname)
   - [PositionFilteringType](#positionfilteringtype)
   - [PricingPlanType](#pricingplantype)
-  - [RouteMatrixErrorCodeType](#routematrixerrorcodetype)
   - [TravelModeType](#travelmodetype)
   - [VehicleWeightUnitType](#vehicleweightunittype)
   - [LocationServiceServiceName](#locationserviceservicename)
@@ -224,23 +223,6 @@ Values:
 - `MobileAssetManagement`
 - `MobileAssetTracking`
 - `RequestBasedUsage`
-
-<a id="routematrixerrorcodetype"></a>
-
-## RouteMatrixErrorCodeType
-
-```python
-from mypy_boto3_location.literals import RouteMatrixErrorCodeType
-```
-
-Values:
-
-- `DeparturePositionNotFound`
-- `DestinationPositionNotFound`
-- `OtherValidationError`
-- `PositionsNotFound`
-- `RouteNotFound`
-- `RouteTooLong`
 
 <a id="travelmodetype"></a>
 
@@ -443,7 +425,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

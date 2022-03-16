@@ -112,8 +112,6 @@ from mypy_boto3_lakeformation.client import LakeFormationClient
 - [get_query_statistics](./client.md#get_query_statistics)
 - [get_resource_lf_tags](./client.md#get_resource_lf_tags)
 - [get_table_objects](./client.md#get_table_objects)
-- [get_temporary_glue_partition_credentials](./client.md#get_temporary_glue_partition_credentials)
-- [get_temporary_glue_table_credentials](./client.md#get_temporary_glue_table_credentials)
 - [get_work_unit_results](./client.md#get_work_unit_results)
 - [get_work_units](./client.md#get_work_units)
 - [grant_permissions](./client.md#grant_permissions)
@@ -152,7 +150,6 @@ LakeFormationClient [exceptions](./client.md#exceptions)
 - InternalServiceException
 - InvalidInputException
 - OperationTimeoutException
-- PermissionTypeMismatchException
 - ResourceNotReadyException
 - ResourceNumberLimitExceededException
 - StatisticsNotReadyYetException
@@ -201,7 +198,6 @@ from mypy_boto3_lakeformation.literals import ComparisonOperatorType, ...
 - [ListLFTagsPaginatorName](./literals.md#listlftagspaginatorname)
 - [OptimizerTypeType](./literals.md#optimizertypetype)
 - [PermissionType](./literals.md#permissiontype)
-- [PermissionTypeType](./literals.md#permissiontypetype)
 - [QueryStateStringType](./literals.md#querystatestringtype)
 - [ResourceShareTypeType](./literals.md#resourcesharetypetype)
 - [ResourceTypeType](./literals.md#resourcetypetype)
@@ -231,7 +227,6 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [AddLFTagsToResourceRequestRequestTypeDef](./type_defs.md#addlftagstoresourcerequestrequesttypedef)
 - [AddLFTagsToResourceResponseTypeDef](./type_defs.md#addlftagstoresourceresponsetypedef)
 - [AddObjectInputTypeDef](./type_defs.md#addobjectinputtypedef)
-- [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
 - [BatchGrantPermissionsRequestRequestTypeDef](./type_defs.md#batchgrantpermissionsrequestrequesttypedef)
 - [BatchGrantPermissionsResponseTypeDef](./type_defs.md#batchgrantpermissionsresponsetypedef)
 - [BatchPermissionsFailureEntryTypeDef](./type_defs.md#batchpermissionsfailureentrytypedef)
@@ -279,10 +274,6 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [GetResourceLFTagsResponseTypeDef](./type_defs.md#getresourcelftagsresponsetypedef)
 - [GetTableObjectsRequestRequestTypeDef](./type_defs.md#gettableobjectsrequestrequesttypedef)
 - [GetTableObjectsResponseTypeDef](./type_defs.md#gettableobjectsresponsetypedef)
-- [GetTemporaryGluePartitionCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsrequestrequesttypedef)
-- [GetTemporaryGluePartitionCredentialsResponseTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsresponsetypedef)
-- [GetTemporaryGlueTableCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluetablecredentialsrequestrequesttypedef)
-- [GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef)
 - [GetWorkUnitResultsRequestRequestTypeDef](./type_defs.md#getworkunitresultsrequestrequesttypedef)
 - [GetWorkUnitResultsResponseTypeDef](./type_defs.md#getworkunitresultsresponsetypedef)
 - [GetWorkUnitsRequestRequestTypeDef](./type_defs.md#getworkunitsrequestrequesttypedef)
@@ -307,7 +298,6 @@ from mypy_boto3_lakeformation.type_defs import AddLFTagsToResourceRequestRequest
 - [ListTransactionsResponseTypeDef](./type_defs.md#listtransactionsresponsetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [PartitionObjectsTypeDef](./type_defs.md#partitionobjectstypedef)
-- [PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)
 - [PlanningStatisticsTypeDef](./type_defs.md#planningstatisticstypedef)
 - [PrincipalPermissionsTypeDef](./type_defs.md#principalpermissionstypedef)
 - [PrincipalResourcePermissionsTypeDef](./type_defs.md#principalresourcepermissionstypedef)

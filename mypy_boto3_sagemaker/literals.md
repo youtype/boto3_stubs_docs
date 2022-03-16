@@ -574,11 +574,9 @@ Values:
 - `Failed`
 - `FeatureEngineering`
 - `GeneratingExplainabilityReport`
-- `GeneratingModelInsightsReport`
 - `MaxAutoMLJobRuntimeReached`
 - `MaxCandidatesReached`
 - `ModelDeploymentError`
-- `ModelInsightsError`
 - `ModelTuning`
 - `Starting`
 - `Stopped`
@@ -3694,7 +3692,6 @@ Values:
 
 - `INTEL_GRAPHICS`
 - `MALI`
-- `NNA`
 - `NVIDIA`
 
 <a id="targetplatformarchtype"></a>
@@ -3796,14 +3793,6 @@ Values:
 - `ml.g4dn.4xlarge`
 - `ml.g4dn.8xlarge`
 - `ml.g4dn.xlarge`
-- `ml.g5.12xlarge`
-- `ml.g5.16xlarge`
-- `ml.g5.24xlarge`
-- `ml.g5.2xlarge`
-- `ml.g5.48xlarge`
-- `ml.g5.4xlarge`
-- `ml.g5.8xlarge`
-- `ml.g5.xlarge`
 - `ml.m4.10xlarge`
 - `ml.m4.16xlarge`
 - `ml.m4.2xlarge`
@@ -4202,7 +4191,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

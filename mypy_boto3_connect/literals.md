@@ -37,7 +37,6 @@ type annotations stubs module
   - [ListContactFlowModulesPaginatorName](#listcontactflowmodulespaginatorname)
   - [ListContactFlowsPaginatorName](#listcontactflowspaginatorname)
   - [ListContactReferencesPaginatorName](#listcontactreferencespaginatorname)
-  - [ListDefaultVocabulariesPaginatorName](#listdefaultvocabulariespaginatorname)
   - [ListHoursOfOperationsPaginatorName](#listhoursofoperationspaginatorname)
   - [ListInstanceAttributesPaginatorName](#listinstanceattributespaginatorname)
   - [ListInstanceStorageConfigsPaginatorName](#listinstancestorageconfigspaginatorname)
@@ -66,15 +65,12 @@ type annotations stubs module
   - [QuickConnectTypeType](#quickconnecttypetype)
   - [ReferenceStatusType](#referencestatustype)
   - [ReferenceTypeType](#referencetypetype)
-  - [SearchVocabulariesPaginatorName](#searchvocabulariespaginatorname)
   - [SourceTypeType](#sourcetypetype)
   - [StatisticType](#statistictype)
   - [StorageTypeType](#storagetypetype)
   - [TrafficTypeType](#traffictypetype)
   - [UnitType](#unittype)
   - [UseCaseTypeType](#usecasetypetype)
-  - [VocabularyLanguageCodeType](#vocabularylanguagecodetype)
-  - [VocabularyStateType](#vocabularystatetype)
   - [VoiceRecordingTrackType](#voicerecordingtracktype)
   - [ConnectServiceName](#connectservicename)
   - [ServiceName](#servicename)
@@ -386,7 +382,6 @@ Values:
 - `CHAT_TRANSCRIPTS`
 - `CONTACT_TRACE_RECORDS`
 - `MEDIA_STREAMS`
-- `REAL_TIME_CONTACT_ANALYSIS_SEGMENTS`
 - `SCHEDULED_REPORTS`
 
 <a id="integrationtypetype"></a>
@@ -489,18 +484,6 @@ from mypy_boto3_connect.literals import ListContactReferencesPaginatorName
 Values:
 
 - `list_contact_references`
-
-<a id="listdefaultvocabulariespaginatorname"></a>
-
-## ListDefaultVocabulariesPaginatorName
-
-```python
-from mypy_boto3_connect.literals import ListDefaultVocabulariesPaginatorName
-```
-
-Values:
-
-- `list_default_vocabularies`
 
 <a id="listhoursofoperationspaginatorname"></a>
 
@@ -1082,18 +1065,6 @@ Values:
 - `ATTACHMENT`
 - `URL`
 
-<a id="searchvocabulariespaginatorname"></a>
-
-## SearchVocabulariesPaginatorName
-
-```python
-from mypy_boto3_connect.literals import SearchVocabulariesPaginatorName
-```
-
-Values:
-
-- `search_vocabularies`
-
 <a id="sourcetypetype"></a>
 
 ## SourceTypeType
@@ -1175,53 +1146,6 @@ Values:
 
 - `CONNECT_CAMPAIGNS`
 - `RULES_EVALUATION`
-
-<a id="vocabularylanguagecodetype"></a>
-
-## VocabularyLanguageCodeType
-
-```python
-from mypy_boto3_connect.literals import VocabularyLanguageCodeType
-```
-
-Values:
-
-- `ar-AE`
-- `de-CH`
-- `de-DE`
-- `en-AB`
-- `en-AU`
-- `en-GB`
-- `en-IE`
-- `en-IN`
-- `en-US`
-- `en-WL`
-- `es-ES`
-- `es-US`
-- `fr-CA`
-- `fr-FR`
-- `hi-IN`
-- `it-IT`
-- `ja-JP`
-- `ko-KR`
-- `pt-BR`
-- `pt-PT`
-- `zh-CN`
-
-<a id="vocabularystatetype"></a>
-
-## VocabularyStateType
-
-```python
-from mypy_boto3_connect.literals import VocabularyStateType
-```
-
-Values:
-
-- `ACTIVE`
-- `CREATION_FAILED`
-- `CREATION_IN_PROGRESS`
-- `DELETE_IN_PROGRESS`
 
 <a id="voicerecordingtracktype"></a>
 
@@ -1411,7 +1335,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`
@@ -1598,7 +1521,6 @@ Values:
 - `list_contact_flow_modules`
 - `list_contact_flows`
 - `list_contact_references`
-- `list_default_vocabularies`
 - `list_hours_of_operations`
 - `list_instance_attributes`
 - `list_instance_storage_configs`
@@ -1619,4 +1541,3 @@ Values:
 - `list_use_cases`
 - `list_user_hierarchy_groups`
 - `list_users`
-- `search_vocabularies`

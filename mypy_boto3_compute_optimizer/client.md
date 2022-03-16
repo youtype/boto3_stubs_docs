@@ -135,7 +135,8 @@ Keyword-only arguments:
 - `resourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
   *(required)*
 - `recommendationPreferenceNames`:
-  `Sequence`\[[RecommendationPreferenceNameType](./literals.md#recommendationpreferencenametype)\]
+  `Sequence`\[`Literal['EnhancedInfrastructureMetrics']` (see
+  [RecommendationPreferenceNameType](./literals.md#recommendationpreferencenametype))\]
   *(required)*
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 
@@ -599,8 +600,6 @@ Keyword-only arguments:
 - `scope`: [ScopeTypeDef](./type_defs.md#scopetypedef)
 - `enhancedInfrastructureMetrics`:
   [EnhancedInfrastructureMetricsType](./literals.md#enhancedinfrastructuremetricstype)
-- `inferredWorkloadTypes`:
-  [InferredWorkloadTypesPreferenceType](./literals.md#inferredworkloadtypespreferencetype)
 
 Returns `Dict`\[`str`, `Any`\].
 

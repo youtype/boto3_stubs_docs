@@ -42,7 +42,6 @@ from mypy_boto3_rbin.literals import ResourceTypeType
 Values:
 
 - `EBS_SNAPSHOT`
-- `EC2_IMAGE`
 
 <a id="retentionperiodunittype"></a>
 
@@ -243,7 +242,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

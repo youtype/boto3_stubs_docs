@@ -386,7 +386,6 @@ Keyword-only arguments:
 - `DataShareArn`: `str` *(required)*
 - `AssociateEntireAccount`: `bool`
 - `ConsumerArn`: `str`
-- `ConsumerRegion`: `str`
 
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).
@@ -917,9 +916,9 @@ Returns
 
 ### create_snapshot_copy_grant
 
-Creates a snapshot copy grant that permits Amazon Redshift to use an encrypted
-symmetric key from Key Management Service (KMS) to encrypt copied snapshots in
-a destination region.
+Creates a snapshot copy grant that permits Amazon Redshift to use a customer
+master key (CMK) from Key Management Service (KMS) to encrypt copied snapshots
+in a destination region.
 
 Type annotations for `boto3.client("redshift").create_snapshot_copy_grant`
 method.
@@ -2362,7 +2361,6 @@ Keyword-only arguments:
 - `DataShareArn`: `str` *(required)*
 - `DisassociateEntireAccount`: `bool`
 - `ConsumerArn`: `str`
-- `ConsumerRegion`: `str`
 
 Returns
 [DataShareResponseMetadataTypeDef](./type_defs.md#datashareresponsemetadatatypedef).

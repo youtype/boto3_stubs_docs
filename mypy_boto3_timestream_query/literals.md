@@ -115,7 +115,6 @@ Values:
 - `BIGINT`
 - `BOOLEAN`
 - `DOUBLE`
-- `TIMESTAMP`
 - `VARCHAR`
 
 <a id="scalartypetype"></a>
@@ -342,7 +341,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

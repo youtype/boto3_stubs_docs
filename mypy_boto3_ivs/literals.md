@@ -18,7 +18,6 @@ type annotations stubs module
   - [ListStreamKeysPaginatorName](#liststreamkeyspaginatorname)
   - [ListStreamsPaginatorName](#liststreamspaginatorname)
   - [RecordingConfigurationStateType](#recordingconfigurationstatetype)
-  - [RecordingModeType](#recordingmodetype)
   - [StreamHealthType](#streamhealthtype)
   - [StreamStateType](#streamstatetype)
   - [IVSServiceName](#ivsservicename)
@@ -125,19 +124,6 @@ Values:
 - `ACTIVE`
 - `CREATE_FAILED`
 - `CREATING`
-
-<a id="recordingmodetype"></a>
-
-## RecordingModeType
-
-```python
-from mypy_boto3_ivs.literals import RecordingModeType
-```
-
-Values:
-
-- `DISABLED`
-- `INTERVAL`
 
 <a id="streamhealthtype"></a>
 
@@ -340,7 +326,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

@@ -13,8 +13,6 @@ type annotations stubs module
   - [ListChangesetsPaginator](#listchangesetspaginator)
   - [ListDataViewsPaginator](#listdataviewspaginator)
   - [ListDatasetsPaginator](#listdatasetspaginator)
-  - [ListPermissionGroupsPaginator](#listpermissiongroupspaginator)
-  - [ListUsersPaginator](#listuserspaginator)
 
 <a id="listchangesetspaginator"></a>
 
@@ -104,61 +102,3 @@ Arguments for `ListDatasetsPaginator.paginate` method:
 
 `ListDatasetsPaginator.paginate` returns
 `_PageIterator`\[[ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef)\].
-
-<a id="listpermissiongroupspaginator"></a>
-
-## ListPermissionGroupsPaginator
-
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_permission_groups")`.
-
-Can be used directly:
-
-```python
-from boto3.session import Session
-
-from mypy_boto3_finspace_data.paginator import ListPermissionGroupsPaginator
-
-def get_list_permission_groups_paginator() -> ListPermissionGroupsPaginator:
-    return Session().client("finspace-data").get_paginator("list_permission_groups")
-```
-
-Boto3 documentation:
-[FinSpaceData.Paginator.ListPermissionGroups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListPermissionGroups)
-
-Arguments for `ListPermissionGroupsPaginator.paginate` method:
-
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-
-`ListPermissionGroupsPaginator.paginate` returns
-`_PageIterator`\[[ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef)\].
-
-<a id="listuserspaginator"></a>
-
-## ListUsersPaginator
-
-Type annotations for
-`boto3.client("finspace-data").get_paginator("list_users")`.
-
-Can be used directly:
-
-```python
-from boto3.session import Session
-
-from mypy_boto3_finspace_data.paginator import ListUsersPaginator
-
-def get_list_users_paginator() -> ListUsersPaginator:
-    return Session().client("finspace-data").get_paginator("list_users")
-```
-
-Boto3 documentation:
-[FinSpaceData.Paginator.ListUsers](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Paginator.ListUsers)
-
-Arguments for `ListUsersPaginator.paginate` method:
-
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-
-`ListUsersPaginator.paginate` returns
-`_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].

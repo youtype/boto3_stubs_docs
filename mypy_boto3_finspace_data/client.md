@@ -18,29 +18,18 @@ type annotations stubs module
     - [create_changeset](#create_changeset)
     - [create_data_view](#create_data_view)
     - [create_dataset](#create_dataset)
-    - [create_permission_group](#create_permission_group)
-    - [create_user](#create_user)
     - [delete_dataset](#delete_dataset)
-    - [delete_permission_group](#delete_permission_group)
-    - [disable_user](#disable_user)
-    - [enable_user](#enable_user)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_changeset](#get_changeset)
     - [get_data_view](#get_data_view)
     - [get_dataset](#get_dataset)
     - [get_programmatic_access_credentials](#get_programmatic_access_credentials)
-    - [get_user](#get_user)
     - [get_working_location](#get_working_location)
     - [list_changesets](#list_changesets)
     - [list_data_views](#list_data_views)
     - [list_datasets](#list_datasets)
-    - [list_permission_groups](#list_permission_groups)
-    - [list_users](#list_users)
-    - [reset_user_password](#reset_user_password)
     - [update_changeset](#update_changeset)
     - [update_dataset](#update_dataset)
-    - [update_permission_group](#update_permission_group)
-    - [update_user](#update_user)
     - [get_paginator](#get_paginator)
 
 <a id="finspacedataclient"></a>
@@ -206,60 +195,6 @@ Keyword-only arguments:
 Returns
 [CreateDatasetResponseTypeDef](./type_defs.md#createdatasetresponsetypedef).
 
-<a id="create\_permission\_group"></a>
-
-### create_permission_group
-
-Creates a group of permissions for various actions that a user can perform in
-FinSpace.
-
-Type annotations for `boto3.client("finspace-data").create_permission_group`
-method.
-
-Boto3 documentation:
-[FinSpaceData.Client.create_permission_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_permission_group)
-
-Arguments mapping described in
-[CreatePermissionGroupRequestRequestTypeDef](./type_defs.md#createpermissiongrouprequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `name`: `str` *(required)*
-- `applicationPermissions`:
-  `Sequence`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
-  *(required)*
-- `description`: `str`
-- `clientToken`: `str`
-
-Returns
-[CreatePermissionGroupResponseTypeDef](./type_defs.md#createpermissiongroupresponsetypedef).
-
-<a id="create\_user"></a>
-
-### create_user
-
-Creates a new user in FinSpace.
-
-Type annotations for `boto3.client("finspace-data").create_user` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.create_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.create_user)
-
-Arguments mapping described in
-[CreateUserRequestRequestTypeDef](./type_defs.md#createuserrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `emailAddress`: `str` *(required)*
-- `type`: [UserTypeType](./literals.md#usertypetype) *(required)*
-- `firstName`: `str`
-- `lastName`: `str`
-- `ApiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
-- `apiAccessPrincipalArn`: `str`
-- `clientToken`: `str`
-
-Returns [CreateUserResponseTypeDef](./type_defs.md#createuserresponsetypedef).
-
 <a id="delete\_dataset"></a>
 
 ### delete_dataset
@@ -281,72 +216,6 @@ Keyword-only arguments:
 
 Returns
 [DeleteDatasetResponseTypeDef](./type_defs.md#deletedatasetresponsetypedef).
-
-<a id="delete\_permission\_group"></a>
-
-### delete_permission_group
-
-Deletes a permission group.
-
-Type annotations for `boto3.client("finspace-data").delete_permission_group`
-method.
-
-Boto3 documentation:
-[FinSpaceData.Client.delete_permission_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.delete_permission_group)
-
-Arguments mapping described in
-[DeletePermissionGroupRequestRequestTypeDef](./type_defs.md#deletepermissiongrouprequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `permissionGroupId`: `str` *(required)*
-- `clientToken`: `str`
-
-Returns
-[DeletePermissionGroupResponseTypeDef](./type_defs.md#deletepermissiongroupresponsetypedef).
-
-<a id="disable\_user"></a>
-
-### disable_user
-
-Denies access to the FinSpace web application and API for the specified user.
-
-Type annotations for `boto3.client("finspace-data").disable_user` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.disable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.disable_user)
-
-Arguments mapping described in
-[DisableUserRequestRequestTypeDef](./type_defs.md#disableuserrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `userId`: `str` *(required)*
-- `clientToken`: `str`
-
-Returns
-[DisableUserResponseTypeDef](./type_defs.md#disableuserresponsetypedef).
-
-<a id="enable\_user"></a>
-
-### enable_user
-
-Allows the specified user to access the FinSpace web application and API.
-
-Type annotations for `boto3.client("finspace-data").enable_user` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.enable_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.enable_user)
-
-Arguments mapping described in
-[EnableUserRequestRequestTypeDef](./type_defs.md#enableuserrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `userId`: `str` *(required)*
-- `clientToken`: `str`
-
-Returns [EnableUserResponseTypeDef](./type_defs.md#enableuserresponsetypedef).
 
 <a id="generate\_presigned\_url"></a>
 
@@ -456,26 +325,6 @@ Keyword-only arguments:
 Returns
 [GetProgrammaticAccessCredentialsResponseTypeDef](./type_defs.md#getprogrammaticaccesscredentialsresponsetypedef).
 
-<a id="get\_user"></a>
-
-### get_user
-
-Retrieves details for a specific user.
-
-Type annotations for `boto3.client("finspace-data").get_user` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.get_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.get_user)
-
-Arguments mapping described in
-[GetUserRequestRequestTypeDef](./type_defs.md#getuserrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `userId`: `str` *(required)*
-
-Returns [GetUserResponseTypeDef](./type_defs.md#getuserresponsetypedef).
-
 <a id="get\_working\_location"></a>
 
 ### get_working_location
@@ -567,73 +416,6 @@ Keyword-only arguments:
 Returns
 [ListDatasetsResponseTypeDef](./type_defs.md#listdatasetsresponsetypedef).
 
-<a id="list\_permission\_groups"></a>
-
-### list_permission_groups
-
-Lists all available permission groups in FinSpace.
-
-Type annotations for `boto3.client("finspace-data").list_permission_groups`
-method.
-
-Boto3 documentation:
-[FinSpaceData.Client.list_permission_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_permission_groups)
-
-Arguments mapping described in
-[ListPermissionGroupsRequestRequestTypeDef](./type_defs.md#listpermissiongroupsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `maxResults`: `int` *(required)*
-- `nextToken`: `str`
-
-Returns
-[ListPermissionGroupsResponseTypeDef](./type_defs.md#listpermissiongroupsresponsetypedef).
-
-<a id="list\_users"></a>
-
-### list_users
-
-Lists all available user accounts in FinSpace.
-
-Type annotations for `boto3.client("finspace-data").list_users` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.list_users](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.list_users)
-
-Arguments mapping described in
-[ListUsersRequestRequestTypeDef](./type_defs.md#listusersrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `maxResults`: `int` *(required)*
-- `nextToken`: `str`
-
-Returns [ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef).
-
-<a id="reset\_user\_password"></a>
-
-### reset_user_password
-
-Resets the password for a specified user ID and generates a temporary one.
-
-Type annotations for `boto3.client("finspace-data").reset_user_password`
-method.
-
-Boto3 documentation:
-[FinSpaceData.Client.reset_user_password](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.reset_user_password)
-
-Arguments mapping described in
-[ResetUserPasswordRequestRequestTypeDef](./type_defs.md#resetuserpasswordrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `userId`: `str` *(required)*
-- `clientToken`: `str`
-
-Returns
-[ResetUserPasswordResponseTypeDef](./type_defs.md#resetuserpasswordresponsetypedef).
-
 <a id="update\_changeset"></a>
 
 ### update_changeset
@@ -686,59 +468,6 @@ Keyword-only arguments:
 Returns
 [UpdateDatasetResponseTypeDef](./type_defs.md#updatedatasetresponsetypedef).
 
-<a id="update\_permission\_group"></a>
-
-### update_permission_group
-
-Modifies the details of a permission group.
-
-Type annotations for `boto3.client("finspace-data").update_permission_group`
-method.
-
-Boto3 documentation:
-[FinSpaceData.Client.update_permission_group](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_permission_group)
-
-Arguments mapping described in
-[UpdatePermissionGroupRequestRequestTypeDef](./type_defs.md#updatepermissiongrouprequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `permissionGroupId`: `str` *(required)*
-- `name`: `str`
-- `description`: `str`
-- `applicationPermissions`:
-  `Sequence`\[[ApplicationPermissionType](./literals.md#applicationpermissiontype)\]
-- `clientToken`: `str`
-
-Returns
-[UpdatePermissionGroupResponseTypeDef](./type_defs.md#updatepermissiongroupresponsetypedef).
-
-<a id="update\_user"></a>
-
-### update_user
-
-Modifies the details of the specified user account.
-
-Type annotations for `boto3.client("finspace-data").update_user` method.
-
-Boto3 documentation:
-[FinSpaceData.Client.update_user](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/finspace-data.html#FinSpaceData.Client.update_user)
-
-Arguments mapping described in
-[UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `userId`: `str` *(required)*
-- `type`: [UserTypeType](./literals.md#usertypetype)
-- `firstName`: `str`
-- `lastName`: `str`
-- `apiAccess`: [ApiAccessType](./literals.md#apiaccesstype)
-- `apiAccessPrincipalArn`: `str`
-- `clientToken`: `str`
-
-Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
-
 <a id="get_paginator"></a>
 
 ### get_paginator
@@ -752,7 +481,3 @@ overloads.
   [ListDataViewsPaginator](./paginators.md#listdataviewspaginator)
 - `client.get_paginator("list_datasets")` ->
   [ListDatasetsPaginator](./paginators.md#listdatasetspaginator)
-- `client.get_paginator("list_permission_groups")` ->
-  [ListPermissionGroupsPaginator](./paginators.md#listpermissiongroupspaginator)
-- `client.get_paginator("list_users")` ->
-  [ListUsersPaginator](./paginators.md#listuserspaginator)

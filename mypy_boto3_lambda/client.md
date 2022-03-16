@@ -198,8 +198,8 @@ Returns
 
 ### add_permission
 
-Grants an Amazon Web Services service, account, or organization permission to
-use a function.
+Grants an Amazon Web Services service or another account permission to use a
+function.
 
 Type annotations for `boto3.client("lambda").add_permission` method.
 
@@ -220,7 +220,6 @@ Keyword-only arguments:
 - `EventSourceToken`: `str`
 - `Qualifier`: `str`
 - `RevisionId`: `str`
-- `PrincipalOrgID`: `str`
 
 Returns
 [AddPermissionResponseTypeDef](./type_defs.md#addpermissionresponsetypedef).
@@ -1690,11 +1689,7 @@ Type annotations for `boto3.client("lambda").get_waiter` method with overloads.
 
 - `client.get_waiter("function_active")` ->
   [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
-- `client.get_waiter("function_active_v2")` ->
-  [FunctionActiveV2Waiter](./waiters.md#functionactivev2waiter)
 - `client.get_waiter("function_exists")` ->
   [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
 - `client.get_waiter("function_updated")` ->
   [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
-- `client.get_waiter("function_updated_v2")` ->
-  [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)

@@ -285,10 +285,13 @@ Optional fields:
 from mypy_boto3_chime_sdk_meetings.type_defs import EngineTranscribeSettingsTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `LanguageCode`:
   [TranscribeLanguageCodeType](./literals.md#transcribelanguagecodetype)
+
+Optional fields:
+
 - `VocabularyFilterMethod`:
   [TranscribeVocabularyFilterMethodType](./literals.md#transcribevocabularyfiltermethodtype)
 - `VocabularyFilterName`: `str`
@@ -303,10 +306,6 @@ Optional fields:
   [TranscribeContentRedactionTypeType](./literals.md#transcribecontentredactiontypetype))
 - `PiiEntityTypes`: `str`
 - `LanguageModelName`: `str`
-- `IdentifyLanguage`: `bool`
-- `LanguageOptions`: `str`
-- `PreferredLanguage`:
-  [TranscribeLanguageCodeType](./literals.md#transcribelanguagecodetype)
 
 <a id="getattendeerequestrequesttypedef"></a>
 

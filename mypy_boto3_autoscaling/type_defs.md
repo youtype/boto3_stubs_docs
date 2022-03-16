@@ -94,7 +94,6 @@ type annotations stubs module
   - [InstanceRefreshTypeDef](#instancerefreshtypedef)
   - [InstanceRefreshWarmPoolProgressTypeDef](#instancerefreshwarmpoolprogresstypedef)
   - [InstanceRequirementsTypeDef](#instancerequirementstypedef)
-  - [InstanceReusePolicyTypeDef](#instancereusepolicytypedef)
   - [InstanceTypeDef](#instancetypedef)
   - [InstancesDistributionTypeDef](#instancesdistributiontypedef)
   - [LaunchConfigurationNameTypeRequestTypeDef](#launchconfigurationnametyperequesttypedef)
@@ -1579,18 +1578,6 @@ Optional fields:
 - `AcceleratorTotalMemoryMiB`:
   [AcceleratorTotalMemoryMiBRequestTypeDef](./type_defs.md#acceleratortotalmemorymibrequesttypedef)
 
-<a id="instancereusepolicytypedef"></a>
-
-## InstanceReusePolicyTypeDef
-
-```python
-from mypy_boto3_autoscaling.type_defs import InstanceReusePolicyTypeDef
-```
-
-Optional fields:
-
-- `ReuseOnScaleIn`: `bool`
-
 <a id="instancetypedef"></a>
 
 ## InstanceTypeDef
@@ -2335,8 +2322,6 @@ Optional fields:
 - `MaxGroupPreparedCapacity`: `int`
 - `MinSize`: `int`
 - `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
-- `InstanceReusePolicy`:
-  [InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef)
 
 <a id="recordlifecycleactionheartbeattyperequesttypedef"></a>
 
@@ -2771,5 +2756,3 @@ Optional fields:
 - `PoolState`: [WarmPoolStateType](./literals.md#warmpoolstatetype)
 - `Status`: `Literal['PendingDelete']` (see
   [WarmPoolStatusType](./literals.md#warmpoolstatustype))
-- `InstanceReusePolicy`:
-  [InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef)

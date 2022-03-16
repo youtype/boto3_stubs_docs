@@ -101,7 +101,6 @@ EC2InstanceConnectClient [exceptions](./client.md#exceptions)
 - AuthException
 - ClientError
 - EC2InstanceNotFoundException
-- EC2InstanceStateInvalidException
 - EC2InstanceTypeInvalidException
 - InvalidArgsException
 - SerialConsoleAccessDisabledException

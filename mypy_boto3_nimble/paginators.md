@@ -136,8 +136,7 @@ Arguments for `ListLaunchProfilesPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
 - `principalId`: `str`
-- `states`:
-  `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
+- `states`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -232,10 +231,8 @@ Boto3 documentation:
 Arguments for `ListStudioComponentsPaginator.paginate` method:
 
 - `studioId`: `str` *(required)*
-- `states`:
-  `Sequence`\[[StudioComponentStateType](./literals.md#studiocomponentstatetype)\]
-- `types`:
-  `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
+- `states`: `Sequence`\[`str`\]
+- `types`: `Sequence`\[`str`\]
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

@@ -247,7 +247,6 @@ Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `environmentName`: `str` *(required)*
-- `nextToken`: `str`
 
 Returns
 [ExportComponentsResponseTypeDef](./type_defs.md#exportcomponentsresponsetypedef).
@@ -271,7 +270,6 @@ Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `environmentName`: `str` *(required)*
-- `nextToken`: `str`
 
 Returns
 [ExportThemesResponseTypeDef](./type_defs.md#exportthemesresponsetypedef).
@@ -476,10 +474,6 @@ Returns
 Type annotations for `boto3.client("amplifyuibuilder").get_paginator` method
 with overloads.
 
-- `client.get_paginator("export_components")` ->
-  [ExportComponentsPaginator](./paginators.md#exportcomponentspaginator)
-- `client.get_paginator("export_themes")` ->
-  [ExportThemesPaginator](./paginators.md#exportthemespaginator)
 - `client.get_paginator("list_components")` ->
   [ListComponentsPaginator](./paginators.md#listcomponentspaginator)
 - `client.get_paginator("list_themes")` ->

@@ -10,7 +10,6 @@ type annotations stubs module
 [mypy-boto3-panorama](https://pypi.org/project/mypy-boto3-panorama/).
 
 - [Typed dictionaries for boto3 Panorama module](#typed-dictionaries-for-boto3-panorama-module)
-  - [AlternateSoftwareMetadataTypeDef](#alternatesoftwaremetadatatypedef)
   - [ApplicationInstanceTypeDef](#applicationinstancetypedef)
   - [CreateApplicationInstanceRequestRequestTypeDef](#createapplicationinstancerequestrequesttypedef)
   - [CreateApplicationInstanceResponseTypeDef](#createapplicationinstanceresponsetypedef)
@@ -81,8 +80,6 @@ type annotations stubs module
   - [NodeInterfaceTypeDef](#nodeinterfacetypedef)
   - [NodeOutputPortTypeDef](#nodeoutputporttypedef)
   - [NodeTypeDef](#nodetypedef)
-  - [NtpPayloadTypeDef](#ntppayloadtypedef)
-  - [NtpStatusTypeDef](#ntpstatustypedef)
   - [OTAJobConfigTypeDef](#otajobconfigtypedef)
   - [OutPutS3LocationTypeDef](#outputs3locationtypedef)
   - [PackageImportJobInputConfigTypeDef](#packageimportjobinputconfigtypedef)
@@ -106,18 +103,6 @@ type annotations stubs module
   - [UpdateDeviceMetadataRequestRequestTypeDef](#updatedevicemetadatarequestrequesttypedef)
   - [UpdateDeviceMetadataResponseTypeDef](#updatedevicemetadataresponsetypedef)
 
-<a id="alternatesoftwaremetadatatypedef"></a>
-
-## AlternateSoftwareMetadataTypeDef
-
-```python
-from mypy_boto3_panorama.type_defs import AlternateSoftwareMetadataTypeDef
-```
-
-Optional fields:
-
-- `Version`: `str`
-
 <a id="applicationinstancetypedef"></a>
 
 ## ApplicationInstanceTypeDef
@@ -128,18 +113,18 @@ from mypy_boto3_panorama.type_defs import ApplicationInstanceTypeDef
 
 Optional fields:
 
+- `Name`: `str`
 - `ApplicationInstanceId`: `str`
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
 - `DefaultRuntimeContextDevice`: `str`
 - `DefaultRuntimeContextDeviceName`: `str`
 - `Description`: `str`
-- `HealthStatus`:
-  [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
-- `Name`: `str`
 - `Status`:
   [ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype)
+- `HealthStatus`:
+  [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
 - `StatusDescription`: `str`
+- `CreatedTime`: `datetime`
+- `Arn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 <a id="createapplicationinstancerequestrequesttypedef"></a>
@@ -152,17 +137,17 @@ from mypy_boto3_panorama.type_defs import CreateApplicationInstanceRequestReques
 
 Required fields:
 
-- `DefaultRuntimeContextDevice`: `str`
 - `ManifestPayload`:
   [ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef)
+- `DefaultRuntimeContextDevice`: `str`
 
 Optional fields:
 
-- `ApplicationInstanceIdToReplace`: `str`
+- `Name`: `str`
 - `Description`: `str`
 - `ManifestOverridesPayload`:
   [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
-- `Name`: `str`
+- `ApplicationInstanceIdToReplace`: `str`
 - `RuntimeRoleArn`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
 
@@ -219,18 +204,18 @@ from mypy_boto3_panorama.type_defs import CreateNodeFromTemplateJobRequestReques
 
 Required fields:
 
-- `NodeName`: `str`
-- `OutputPackageName`: `str`
-- `OutputPackageVersion`: `str`
-- `TemplateParameters`: `Mapping`\[`str`, `str`\]
 - `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
   [TemplateTypeType](./literals.md#templatetypetype))
+- `OutputPackageName`: `str`
+- `OutputPackageVersion`: `str`
+- `NodeName`: `str`
+- `TemplateParameters`: `Mapping`\[`str`, `str`\]
 
 Optional fields:
 
+- `NodeDescription`: `str`
 - `JobTags`:
   `Sequence`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `NodeDescription`: `str`
 
 <a id="createnodefromtemplatejobresponsetypedef"></a>
 
@@ -256,12 +241,13 @@ from mypy_boto3_panorama.type_defs import CreatePackageImportJobRequestRequestTy
 
 Required fields:
 
-- `ClientToken`: `str`
+- `JobType`: `Literal['NODE_PACKAGE_VERSION']` (see
+  [PackageImportJobTypeType](./literals.md#packageimportjobtypetype))
 - `InputConfig`:
   [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
 - `OutputConfig`:
   [PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef)
+- `ClientToken`: `str`
 
 Optional fields:
 
@@ -308,8 +294,8 @@ from mypy_boto3_panorama.type_defs import CreatePackageResponseTypeDef
 
 Required fields:
 
-- `Arn`: `str`
 - `PackageId`: `str`
+- `Arn`: `str`
 - `StorageLocation`:
   [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef)
 - `ResponseMetadata`:
@@ -398,16 +384,16 @@ from mypy_boto3_panorama.type_defs import DescribeApplicationInstanceDetailsResp
 
 Required fields:
 
-- `ApplicationInstanceId`: `str`
-- `ApplicationInstanceIdToReplace`: `str`
-- `CreatedTime`: `datetime`
-- `DefaultRuntimeContextDevice`: `str`
+- `Name`: `str`
 - `Description`: `str`
-- `ManifestOverridesPayload`:
-  [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
+- `DefaultRuntimeContextDevice`: `str`
 - `ManifestPayload`:
   [ManifestPayloadTypeDef](./type_defs.md#manifestpayloadtypedef)
-- `Name`: `str`
+- `ManifestOverridesPayload`:
+  [ManifestOverridesPayloadTypeDef](./type_defs.md#manifestoverridespayloadtypedef)
+- `ApplicationInstanceIdToReplace`: `str`
+- `CreatedTime`: `datetime`
+- `ApplicationInstanceId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -433,21 +419,21 @@ from mypy_boto3_panorama.type_defs import DescribeApplicationInstanceResponseTyp
 
 Required fields:
 
-- `ApplicationInstanceId`: `str`
-- `ApplicationInstanceIdToReplace`: `str`
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
+- `Name`: `str`
+- `Description`: `str`
 - `DefaultRuntimeContextDevice`: `str`
 - `DefaultRuntimeContextDeviceName`: `str`
-- `Description`: `str`
-- `HealthStatus`:
-  [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
+- `ApplicationInstanceIdToReplace`: `str`
 - `RuntimeRoleArn`: `str`
 - `Status`:
   [ApplicationInstanceStatusType](./literals.md#applicationinstancestatustype)
+- `HealthStatus`:
+  [ApplicationInstanceHealthStatusType](./literals.md#applicationinstancehealthstatustype)
 - `StatusDescription`: `str`
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
+- `ApplicationInstanceId`: `str`
+- `Arn`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -474,14 +460,14 @@ from mypy_boto3_panorama.type_defs import DescribeDeviceJobResponseTypeDef
 
 Required fields:
 
-- `CreatedTime`: `datetime`
-- `DeviceArn`: `str`
+- `JobId`: `str`
 - `DeviceId`: `str`
+- `DeviceArn`: `str`
 - `DeviceName`: `str`
 - `DeviceType`: [DeviceTypeType](./literals.md#devicetypetype)
 - `ImageVersion`: `str`
-- `JobId`: `str`
 - `Status`: [UpdateProgressType](./literals.md#updateprogresstype)
+- `CreatedTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -507,27 +493,24 @@ from mypy_boto3_panorama.type_defs import DescribeDeviceResponseTypeDef
 
 Required fields:
 
-- `AlternateSoftwares`:
-  `List`\[[AlternateSoftwareMetadataTypeDef](./type_defs.md#alternatesoftwaremetadatatypedef)\]
+- `DeviceId`: `str`
+- `Name`: `str`
 - `Arn`: `str`
-- `CreatedTime`: `datetime`
-- `CurrentNetworkingStatus`:
-  [NetworkStatusTypeDef](./type_defs.md#networkstatustypedef)
-- `CurrentSoftware`: `str`
 - `Description`: `str`
+- `Type`: [DeviceTypeType](./literals.md#devicetypetype)
 - `DeviceConnectionStatus`:
   [DeviceConnectionStatusType](./literals.md#deviceconnectionstatustype)
-- `DeviceId`: `str`
-- `LatestAlternateSoftware`: `str`
-- `LatestSoftware`: `str`
-- `LeaseExpirationTime`: `datetime`
-- `Name`: `str`
-- `NetworkingConfiguration`:
-  [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
+- `CreatedTime`: `datetime`
 - `ProvisioningStatus`: [DeviceStatusType](./literals.md#devicestatustype)
+- `LatestSoftware`: `str`
+- `CurrentSoftware`: `str`
 - `SerialNumber`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `Type`: [DeviceTypeType](./literals.md#devicetypetype)
+- `NetworkingConfiguration`:
+  [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
+- `CurrentNetworkingStatus`:
+  [NetworkStatusTypeDef](./type_defs.md#networkstatustypedef)
+- `LeaseExpirationTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -553,21 +536,21 @@ from mypy_boto3_panorama.type_defs import DescribeNodeFromTemplateJobResponseTyp
 
 Required fields:
 
-- `CreatedTime`: `datetime`
 - `JobId`: `str`
-- `JobTags`:
-  `List`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `LastUpdatedTime`: `datetime`
-- `NodeDescription`: `str`
-- `NodeName`: `str`
-- `OutputPackageName`: `str`
-- `OutputPackageVersion`: `str`
 - `Status`:
   [NodeFromTemplateJobStatusType](./literals.md#nodefromtemplatejobstatustype)
 - `StatusMessage`: `str`
-- `TemplateParameters`: `Dict`\[`str`, `str`\]
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
+- `OutputPackageName`: `str`
+- `OutputPackageVersion`: `str`
+- `NodeName`: `str`
+- `NodeDescription`: `str`
 - `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
   [TemplateTypeType](./literals.md#templatetypetype))
+- `TemplateParameters`: `Dict`\[`str`, `str`\]
+- `JobTags`:
+  `List`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -597,20 +580,20 @@ from mypy_boto3_panorama.type_defs import DescribeNodeResponseTypeDef
 
 Required fields:
 
-- `AssetName`: `str`
-- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `CreatedTime`: `datetime`
-- `Description`: `str`
-- `LastUpdatedTime`: `datetime`
-- `Name`: `str`
 - `NodeId`: `str`
-- `NodeInterface`: [NodeInterfaceTypeDef](./type_defs.md#nodeinterfacetypedef)
+- `Name`: `str`
+- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
 - `OwnerAccount`: `str`
-- `PackageArn`: `str`
-- `PackageId`: `str`
 - `PackageName`: `str`
+- `PackageId`: `str`
+- `PackageArn`: `str`
 - `PackageVersion`: `str`
 - `PatchVersion`: `str`
+- `NodeInterface`: [NodeInterfaceTypeDef](./type_defs.md#nodeinterfacetypedef)
+- `AssetName`: `str`
+- `Description`: `str`
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -636,22 +619,23 @@ from mypy_boto3_panorama.type_defs import DescribePackageImportJobResponseTypeDe
 
 Required fields:
 
+- `JobId`: `str`
 - `ClientToken`: `str`
-- `CreatedTime`: `datetime`
+- `JobType`: `Literal['NODE_PACKAGE_VERSION']` (see
+  [PackageImportJobTypeType](./literals.md#packageimportjobtypetype))
 - `InputConfig`:
   [PackageImportJobInputConfigTypeDef](./type_defs.md#packageimportjobinputconfigtypedef)
-- `JobId`: `str`
-- `JobTags`:
-  `List`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
-- `LastUpdatedTime`: `datetime`
-- `Output`:
-  [PackageImportJobOutputTypeDef](./type_defs.md#packageimportjoboutputtypedef)
 - `OutputConfig`:
   [PackageImportJobOutputConfigTypeDef](./type_defs.md#packageimportjoboutputconfigtypedef)
+- `Output`:
+  [PackageImportJobOutputTypeDef](./type_defs.md#packageimportjoboutputtypedef)
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
 - `Status`:
   [PackageImportJobStatusType](./literals.md#packageimportjobstatustype)
 - `StatusMessage`: `str`
+- `JobTags`:
+  `List`\[[JobResourceTagsTypeDef](./type_defs.md#jobresourcetagstypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -677,15 +661,15 @@ from mypy_boto3_panorama.type_defs import DescribePackageResponseTypeDef
 
 Required fields:
 
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
 - `PackageId`: `str`
 - `PackageName`: `str`
-- `ReadAccessPrincipalArns`: `List`\[`str`\]
+- `Arn`: `str`
 - `StorageLocation`:
   [StorageLocationTypeDef](./type_defs.md#storagelocationtypedef)
-- `Tags`: `Dict`\[`str`, `str`\]
+- `ReadAccessPrincipalArns`: `List`\[`str`\]
 - `WriteAccessPrincipalArns`: `List`\[`str`\]
+- `CreatedTime`: `datetime`
+- `Tags`: `Dict`\[`str`, `str`\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -717,16 +701,16 @@ from mypy_boto3_panorama.type_defs import DescribePackageVersionResponseTypeDef
 
 Required fields:
 
-- `IsLatestPatch`: `bool`
 - `OwnerAccount`: `str`
-- `PackageArn`: `str`
 - `PackageId`: `str`
+- `PackageArn`: `str`
 - `PackageName`: `str`
 - `PackageVersion`: `str`
 - `PatchVersion`: `str`
-- `RegisteredTime`: `datetime`
+- `IsLatestPatch`: `bool`
 - `Status`: [PackageVersionStatusType](./literals.md#packageversionstatustype)
 - `StatusDescription`: `str`
+- `RegisteredTime`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -752,10 +736,10 @@ from mypy_boto3_panorama.type_defs import DeviceJobTypeDef
 
 Optional fields:
 
-- `CreatedTime`: `datetime`
-- `DeviceId`: `str`
 - `DeviceName`: `str`
+- `DeviceId`: `str`
 - `JobId`: `str`
+- `CreatedTime`: `datetime`
 
 <a id="devicetypedef"></a>
 
@@ -767,12 +751,12 @@ from mypy_boto3_panorama.type_defs import DeviceTypeDef
 
 Optional fields:
 
-- `CreatedTime`: `datetime`
 - `DeviceId`: `str`
+- `Name`: `str`
+- `CreatedTime`: `datetime`
+- `ProvisioningStatus`: [DeviceStatusType](./literals.md#devicestatustype)
 - `LastUpdatedTime`: `datetime`
 - `LeaseExpirationTime`: `datetime`
-- `Name`: `str`
-- `ProvisioningStatus`: [DeviceStatusType](./literals.md#devicestatustype)
 
 <a id="ethernetpayloadtypedef"></a>
 
@@ -801,10 +785,10 @@ from mypy_boto3_panorama.type_defs import EthernetStatusTypeDef
 
 Optional fields:
 
+- `IpAddress`: `str`
 - `ConnectionStatus`:
   [NetworkConnectionStatusType](./literals.md#networkconnectionstatustype)
 - `HwAddress`: `str`
-- `IpAddress`: `str`
 
 <a id="jobresourcetagstypedef"></a>
 
@@ -830,8 +814,8 @@ from mypy_boto3_panorama.type_defs import JobTypeDef
 
 Optional fields:
 
-- `DeviceId`: `str`
 - `JobId`: `str`
+- `DeviceId`: `str`
 
 <a id="listapplicationinstancedependenciesrequestrequesttypedef"></a>
 
@@ -860,9 +844,9 @@ from mypy_boto3_panorama.type_defs import ListApplicationInstanceDependenciesRes
 
 Required fields:
 
-- `NextToken`: `str`
 - `PackageObjects`:
   `List`\[[PackageObjectTypeDef](./type_defs.md#packageobjecttypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -893,9 +877,9 @@ from mypy_boto3_panorama.type_defs import ListApplicationInstanceNodeInstancesRe
 
 Required fields:
 
-- `NextToken`: `str`
 - `NodeInstances`:
   `List`\[[NodeInstanceTypeDef](./type_defs.md#nodeinstancetypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -910,9 +894,9 @@ from mypy_boto3_panorama.type_defs import ListApplicationInstancesRequestRequest
 Optional fields:
 
 - `DeviceId`: `str`
+- `StatusFilter`: [StatusFilterType](./literals.md#statusfiltertype)
 - `MaxResults`: `int`
 - `NextToken`: `str`
-- `StatusFilter`: [StatusFilterType](./literals.md#statusfiltertype)
 
 <a id="listapplicationinstancesresponsetypedef"></a>
 
@@ -941,8 +925,8 @@ from mypy_boto3_panorama.type_defs import ListDevicesJobsRequestRequestTypeDef
 Optional fields:
 
 - `DeviceId`: `str`
-- `MaxResults`: `int`
 - `NextToken`: `str`
+- `MaxResults`: `int`
 
 <a id="listdevicesjobsresponsetypedef"></a>
 
@@ -969,8 +953,8 @@ from mypy_boto3_panorama.type_defs import ListDevicesRequestRequestTypeDef
 
 Optional fields:
 
-- `MaxResults`: `int`
 - `NextToken`: `str`
+- `MaxResults`: `int`
 
 <a id="listdevicesresponsetypedef"></a>
 
@@ -997,8 +981,8 @@ from mypy_boto3_panorama.type_defs import ListNodeFromTemplateJobsRequestRequest
 
 Optional fields:
 
-- `MaxResults`: `int`
 - `NextToken`: `str`
+- `MaxResults`: `int`
 
 <a id="listnodefromtemplatejobsresponsetypedef"></a>
 
@@ -1010,9 +994,9 @@ from mypy_boto3_panorama.type_defs import ListNodeFromTemplateJobsResponseTypeDe
 
 Required fields:
 
-- `NextToken`: `str`
 - `NodeFromTemplateJobs`:
   `List`\[[NodeFromTemplateJobTypeDef](./type_defs.md#nodefromtemplatejobtypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1027,12 +1011,12 @@ from mypy_boto3_panorama.type_defs import ListNodesRequestRequestTypeDef
 Optional fields:
 
 - `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `MaxResults`: `int`
-- `NextToken`: `str`
 - `OwnerAccount`: `str`
 - `PackageName`: `str`
 - `PackageVersion`: `str`
 - `PatchVersion`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
 
 <a id="listnodesresponsetypedef"></a>
 
@@ -1044,8 +1028,8 @@ from mypy_boto3_panorama.type_defs import ListNodesResponseTypeDef
 
 Required fields:
 
-- `NextToken`: `str`
 - `Nodes`: `List`\[[NodeTypeDef](./type_defs.md#nodetypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1059,8 +1043,8 @@ from mypy_boto3_panorama.type_defs import ListPackageImportJobsRequestRequestTyp
 
 Optional fields:
 
-- `MaxResults`: `int`
 - `NextToken`: `str`
+- `MaxResults`: `int`
 
 <a id="listpackageimportjobsresponsetypedef"></a>
 
@@ -1072,9 +1056,9 @@ from mypy_boto3_panorama.type_defs import ListPackageImportJobsResponseTypeDef
 
 Required fields:
 
-- `NextToken`: `str`
 - `PackageImportJobs`:
   `List`\[[PackageImportJobTypeDef](./type_defs.md#packageimportjobtypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1101,9 +1085,9 @@ from mypy_boto3_panorama.type_defs import ListPackagesResponseTypeDef
 
 Required fields:
 
-- `NextToken`: `str`
 - `Packages`:
   `List`\[[PackageListItemTypeDef](./type_defs.md#packagelistitemtypedef)\]
+- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1169,7 +1153,6 @@ Optional fields:
 
 - `Ethernet0`: [EthernetPayloadTypeDef](./type_defs.md#ethernetpayloadtypedef)
 - `Ethernet1`: [EthernetPayloadTypeDef](./type_defs.md#ethernetpayloadtypedef)
-- `Ntp`: [NtpPayloadTypeDef](./type_defs.md#ntppayloadtypedef)
 
 <a id="networkstatustypedef"></a>
 
@@ -1185,8 +1168,6 @@ Optional fields:
   [EthernetStatusTypeDef](./type_defs.md#ethernetstatustypedef)
 - `Ethernet1Status`:
   [EthernetStatusTypeDef](./type_defs.md#ethernetstatustypedef)
-- `LastUpdatedTime`: `datetime`
-- `NtpStatus`: [NtpStatusTypeDef](./type_defs.md#ntpstatustypedef)
 
 <a id="nodefromtemplatejobtypedef"></a>
 
@@ -1198,14 +1179,14 @@ from mypy_boto3_panorama.type_defs import NodeFromTemplateJobTypeDef
 
 Optional fields:
 
-- `CreatedTime`: `datetime`
 - `JobId`: `str`
-- `NodeName`: `str`
+- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
+  [TemplateTypeType](./literals.md#templatetypetype))
 - `Status`:
   [NodeFromTemplateJobStatusType](./literals.md#nodefromtemplatejobstatustype)
 - `StatusMessage`: `str`
-- `TemplateType`: `Literal['RTSP_CAMERA_STREAM']` (see
-  [TemplateTypeType](./literals.md#templatetypetype))
+- `CreatedTime`: `datetime`
+- `NodeName`: `str`
 
 <a id="nodeinputporttypedef"></a>
 
@@ -1217,11 +1198,11 @@ from mypy_boto3_panorama.type_defs import NodeInputPortTypeDef
 
 Optional fields:
 
-- `DefaultValue`: `str`
-- `Description`: `str`
-- `MaxConnections`: `int`
 - `Name`: `str`
+- `Description`: `str`
 - `Type`: [PortTypeType](./literals.md#porttypetype)
+- `DefaultValue`: `str`
+- `MaxConnections`: `int`
 
 <a id="nodeinstancetypedef"></a>
 
@@ -1233,17 +1214,17 @@ from mypy_boto3_panorama.type_defs import NodeInstanceTypeDef
 
 Required fields:
 
+- `NodeInstanceId`: `str`
 - `CurrentStatus`:
   [NodeInstanceStatusType](./literals.md#nodeinstancestatustype)
-- `NodeInstanceId`: `str`
 
 Optional fields:
 
 - `NodeId`: `str`
-- `NodeName`: `str`
 - `PackageName`: `str`
-- `PackagePatchVersion`: `str`
 - `PackageVersion`: `str`
+- `PackagePatchVersion`: `str`
+- `NodeName`: `str`
 
 <a id="nodeinterfacetypedef"></a>
 
@@ -1270,8 +1251,8 @@ from mypy_boto3_panorama.type_defs import NodeOutputPortTypeDef
 
 Optional fields:
 
-- `Description`: `str`
 - `Name`: `str`
+- `Description`: `str`
 - `Type`: [PortTypeType](./literals.md#porttypetype)
 
 <a id="nodetypedef"></a>
@@ -1284,47 +1265,20 @@ from mypy_boto3_panorama.type_defs import NodeTypeDef
 
 Required fields:
 
-- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
-- `CreatedTime`: `datetime`
-- `Name`: `str`
 - `NodeId`: `str`
-- `PackageId`: `str`
+- `Name`: `str`
+- `Category`: [NodeCategoryType](./literals.md#nodecategorytype)
 - `PackageName`: `str`
+- `PackageId`: `str`
 - `PackageVersion`: `str`
 - `PatchVersion`: `str`
+- `CreatedTime`: `datetime`
 
 Optional fields:
 
-- `Description`: `str`
 - `OwnerAccount`: `str`
 - `PackageArn`: `str`
-
-<a id="ntppayloadtypedef"></a>
-
-## NtpPayloadTypeDef
-
-```python
-from mypy_boto3_panorama.type_defs import NtpPayloadTypeDef
-```
-
-Required fields:
-
-- `NtpServers`: `List`\[`str`\]
-
-<a id="ntpstatustypedef"></a>
-
-## NtpStatusTypeDef
-
-```python
-from mypy_boto3_panorama.type_defs import NtpStatusTypeDef
-```
-
-Optional fields:
-
-- `ConnectionStatus`:
-  [NetworkConnectionStatusType](./literals.md#networkconnectionstatustype)
-- `IpAddress`: `str`
-- `NtpServerName`: `str`
+- `Description`: `str`
 
 <a id="otajobconfigtypedef"></a>
 
@@ -1387,11 +1341,11 @@ from mypy_boto3_panorama.type_defs import PackageImportJobOutputTypeDef
 
 Required fields:
 
-- `OutputS3Location`:
-  [OutPutS3LocationTypeDef](./type_defs.md#outputs3locationtypedef)
 - `PackageId`: `str`
 - `PackageVersion`: `str`
 - `PatchVersion`: `str`
+- `OutputS3Location`:
+  [OutPutS3LocationTypeDef](./type_defs.md#outputs3locationtypedef)
 
 <a id="packageimportjobtypedef"></a>
 
@@ -1403,13 +1357,14 @@ from mypy_boto3_panorama.type_defs import PackageImportJobTypeDef
 
 Optional fields:
 
-- `CreatedTime`: `datetime`
 - `JobId`: `str`
-- `JobType`: [PackageImportJobTypeType](./literals.md#packageimportjobtypetype)
-- `LastUpdatedTime`: `datetime`
+- `JobType`: `Literal['NODE_PACKAGE_VERSION']` (see
+  [PackageImportJobTypeType](./literals.md#packageimportjobtypetype))
 - `Status`:
   [PackageImportJobStatusType](./literals.md#packageimportjobstatustype)
 - `StatusMessage`: `str`
+- `CreatedTime`: `datetime`
+- `LastUpdatedTime`: `datetime`
 
 <a id="packagelistitemtypedef"></a>
 
@@ -1421,10 +1376,10 @@ from mypy_boto3_panorama.type_defs import PackageListItemTypeDef
 
 Optional fields:
 
-- `Arn`: `str`
-- `CreatedTime`: `datetime`
 - `PackageId`: `str`
 - `PackageName`: `str`
+- `Arn`: `str`
+- `CreatedTime`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 
 <a id="packageobjecttypedef"></a>
@@ -1485,9 +1440,9 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
 - `NetworkingConfiguration`:
   [NetworkPayloadTypeDef](./type_defs.md#networkpayloadtypedef)
-- `Tags`: `Mapping`\[`str`, `str`\]
 
 <a id="provisiondeviceresponsetypedef"></a>
 
@@ -1499,11 +1454,11 @@ from mypy_boto3_panorama.type_defs import ProvisionDeviceResponseTypeDef
 
 Required fields:
 
-- `Arn`: `str`
-- `Certificates`: `bytes`
 - `DeviceId`: `str`
-- `IotThingName`: `str`
+- `Arn`: `str`
 - `Status`: [DeviceStatusType](./literals.md#devicestatustype)
+- `Certificates`: `bytes`
+- `IotThingName`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1523,8 +1478,8 @@ Required fields:
 
 Optional fields:
 
-- `MarkLatest`: `bool`
 - `OwnerAccount`: `str`
+- `MarkLatest`: `bool`
 
 <a id="removeapplicationinstancerequestrequesttypedef"></a>
 
@@ -1581,10 +1536,10 @@ from mypy_boto3_panorama.type_defs import StaticIpConnectionInfoTypeDef
 
 Required fields:
 
-- `DefaultGateway`: `str`
-- `Dns`: `List`\[`str`\]
 - `IpAddress`: `str`
 - `Mask`: `str`
+- `Dns`: `List`\[`str`\]
+- `DefaultGateway`: `str`
 
 <a id="storagelocationtypedef"></a>
 
@@ -1596,11 +1551,11 @@ from mypy_boto3_panorama.type_defs import StorageLocationTypeDef
 
 Required fields:
 
-- `BinaryPrefixLocation`: `str`
 - `Bucket`: `str`
-- `GeneratedPrefixLocation`: `str`
-- `ManifestPrefixLocation`: `str`
 - `RepoPrefixLocation`: `str`
+- `GeneratedPrefixLocation`: `str`
+- `BinaryPrefixLocation`: `str`
+- `ManifestPrefixLocation`: `str`
 
 <a id="tagresourcerequestrequesttypedef"></a>
 

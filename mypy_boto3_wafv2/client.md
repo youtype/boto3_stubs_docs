@@ -30,12 +30,10 @@ type annotations stubs module
     - [delete_web_acl](#delete_web_acl)
     - [describe_managed_rule_group](#describe_managed_rule_group)
     - [disassociate_web_acl](#disassociate_web_acl)
-    - [generate_mobile_sdk_release_url](#generate_mobile_sdk_release_url)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_ip_set](#get_ip_set)
     - [get_logging_configuration](#get_logging_configuration)
     - [get_managed_rule_set](#get_managed_rule_set)
-    - [get_mobile_sdk_release](#get_mobile_sdk_release)
     - [get_permission_policy](#get_permission_policy)
     - [get_rate_based_statement_managed_keys](#get_rate_based_statement_managed_keys)
     - [get_regex_pattern_set](#get_regex_pattern_set)
@@ -48,7 +46,6 @@ type annotations stubs module
     - [list_ip_sets](#list_ip_sets)
     - [list_logging_configurations](#list_logging_configurations)
     - [list_managed_rule_sets](#list_managed_rule_sets)
-    - [list_mobile_sdk_releases](#list_mobile_sdk_releases)
     - [list_regex_pattern_sets](#list_regex_pattern_sets)
     - [list_resources_for_web_acl](#list_resources_for_web_acl)
     - [list_rule_groups](#list_rule_groups)
@@ -521,29 +518,6 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="generate\_mobile\_sdk\_release\_url"></a>
-
-### generate_mobile_sdk_release_url
-
-Generates a presigned download URL for the specified release of the mobile SDK.
-
-Type annotations for `boto3.client("wafv2").generate_mobile_sdk_release_url`
-method.
-
-Boto3 documentation:
-[WAFV2.Client.generate_mobile_sdk_release_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.generate_mobile_sdk_release_url)
-
-Arguments mapping described in
-[GenerateMobileSdkReleaseUrlRequestRequestTypeDef](./type_defs.md#generatemobilesdkreleaseurlrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `ReleaseVersion`: `str` *(required)*
-
-Returns
-[GenerateMobileSdkReleaseUrlResponseTypeDef](./type_defs.md#generatemobilesdkreleaseurlresponsetypedef).
-
 <a id="generate\_presigned\_url"></a>
 
 ### generate_presigned_url
@@ -629,29 +603,6 @@ Keyword-only arguments:
 
 Returns
 [GetManagedRuleSetResponseTypeDef](./type_defs.md#getmanagedrulesetresponsetypedef).
-
-<a id="get\_mobile\_sdk\_release"></a>
-
-### get_mobile_sdk_release
-
-Retrieves information for the specified mobile SDK release, including release
-notes and tags.
-
-Type annotations for `boto3.client("wafv2").get_mobile_sdk_release` method.
-
-Boto3 documentation:
-[WAFV2.Client.get_mobile_sdk_release](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.get_mobile_sdk_release)
-
-Arguments mapping described in
-[GetMobileSdkReleaseRequestRequestTypeDef](./type_defs.md#getmobilesdkreleaserequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `ReleaseVersion`: `str` *(required)*
-
-Returns
-[GetMobileSdkReleaseResponseTypeDef](./type_defs.md#getmobilesdkreleaseresponsetypedef).
 
 <a id="get\_permission\_policy"></a>
 
@@ -936,30 +887,6 @@ Keyword-only arguments:
 
 Returns
 [ListManagedRuleSetsResponseTypeDef](./type_defs.md#listmanagedrulesetsresponsetypedef).
-
-<a id="list\_mobile\_sdk\_releases"></a>
-
-### list_mobile_sdk_releases
-
-Retrieves a list of the available releases for the mobile SDK and the specified
-device platform.
-
-Type annotations for `boto3.client("wafv2").list_mobile_sdk_releases` method.
-
-Boto3 documentation:
-[WAFV2.Client.list_mobile_sdk_releases](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/wafv2.html#WAFV2.Client.list_mobile_sdk_releases)
-
-Arguments mapping described in
-[ListMobileSdkReleasesRequestRequestTypeDef](./type_defs.md#listmobilesdkreleasesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Platform`: [PlatformType](./literals.md#platformtype) *(required)*
-- `NextMarker`: `str`
-- `Limit`: `int`
-
-Returns
-[ListMobileSdkReleasesResponseTypeDef](./type_defs.md#listmobilesdkreleasesresponsetypedef).
 
 <a id="list\_regex\_pattern\_sets"></a>
 

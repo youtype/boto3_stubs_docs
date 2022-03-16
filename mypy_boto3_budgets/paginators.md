@@ -13,7 +13,6 @@ type annotations stubs module
   - [DescribeBudgetActionHistoriesPaginator](#describebudgetactionhistoriespaginator)
   - [DescribeBudgetActionsForAccountPaginator](#describebudgetactionsforaccountpaginator)
   - [DescribeBudgetActionsForBudgetPaginator](#describebudgetactionsforbudgetpaginator)
-  - [DescribeBudgetNotificationsForAccountPaginator](#describebudgetnotificationsforaccountpaginator)
   - [DescribeBudgetPerformanceHistoryPaginator](#describebudgetperformancehistorypaginator)
   - [DescribeBudgetsPaginator](#describebudgetspaginator)
   - [DescribeNotificationsForBudgetPaginator](#describenotificationsforbudgetpaginator)
@@ -112,36 +111,6 @@ Arguments for `DescribeBudgetActionsForBudgetPaginator.paginate` method:
 
 `DescribeBudgetActionsForBudgetPaginator.paginate` returns
 `_PageIterator`\[[DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef)\].
-
-<a id="describebudgetnotificationsforaccountpaginator"></a>
-
-## DescribeBudgetNotificationsForAccountPaginator
-
-Type annotations for
-`boto3.client("budgets").get_paginator("describe_budget_notifications_for_account")`.
-
-Can be used directly:
-
-```python
-from boto3.session import Session
-
-from mypy_boto3_budgets.paginator import DescribeBudgetNotificationsForAccountPaginator
-
-def get_describe_budget_notifications_for_account_paginator() -> DescribeBudgetNotificationsForAccountPaginator:
-    return Session().client("budgets").get_paginator("describe_budget_notifications_for_account")
-```
-
-Boto3 documentation:
-[Budgets.Paginator.DescribeBudgetNotificationsForAccount](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Paginator.DescribeBudgetNotificationsForAccount)
-
-Arguments for `DescribeBudgetNotificationsForAccountPaginator.paginate` method:
-
-- `AccountId`: `str` *(required)*
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-
-`DescribeBudgetNotificationsForAccountPaginator.paginate` returns
-`_PageIterator`\[[DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef)\].
 
 <a id="describebudgetperformancehistorypaginator"></a>
 

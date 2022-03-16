@@ -4784,7 +4784,6 @@ from mypy_boto3_chime.type_defs import LoggingConfigurationTypeDef
 Optional fields:
 
 - `EnableSIPLogs`: `bool`
-- `EnableMediaMetricLogs`: `bool`
 
 <a id="logoutuserrequestrequesttypedef"></a>
 

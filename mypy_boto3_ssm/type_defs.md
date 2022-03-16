@@ -2955,8 +2955,6 @@ Optional fields:
 - `ApprovedVersion`: `str`
 - `PendingReviewVersion`: `str`
 - `ReviewStatus`: [ReviewStatusType](./literals.md#reviewstatustype)
-- `Category`: `List`\[`str`\]
-- `CategoryEnum`: `List`\[`str`\]
 
 <a id="documentfiltertypedef"></a>
 

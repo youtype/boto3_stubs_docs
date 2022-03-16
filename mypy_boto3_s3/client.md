@@ -66,7 +66,6 @@ type annotations stubs module
     - [get_bucket_website](#get_bucket_website)
     - [get_object](#get_object)
     - [get_object_acl](#get_object_acl)
-    - [get_object_attributes](#get_object_attributes)
     - [get_object_legal_hold](#get_object_legal_hold)
     - [get_object_lock_configuration](#get_object_lock_configuration)
     - [get_object_retention](#get_object_retention)
@@ -248,16 +247,9 @@ Keyword-only arguments:
 - `UploadId`: `str` *(required)*
 - `MultipartUpload`:
   [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
 
 Returns
 [CompleteMultipartUploadOutputTypeDef](./type_defs.md#completemultipartuploadoutputtypedef).
@@ -309,8 +301,6 @@ Keyword-only arguments:
 - `Key`: `str` *(required)*
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
@@ -432,8 +422,6 @@ Keyword-only arguments:
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 Returns
 [CreateMultipartUploadOutputTypeDef](./type_defs.md#createmultipartuploadoutputtypedef).
@@ -774,8 +762,6 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 Returns
 [DeleteObjectsOutputTypeDef](./type_defs.md#deleteobjectsoutputtypedef).
@@ -965,8 +951,7 @@ Returns
 
 ### get_bucket_cors
 
-Returns the Cross-Origin Resource Sharing (CORS) configuration information set
-for the bucket.
+Returns the cors configuration information set for the bucket.
 
 Type annotations for `boto3.client("s3").get_bucket_cors` method.
 
@@ -1430,8 +1415,6 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 Returns [GetObjectOutputTypeDef](./type_defs.md#getobjectoutputtypedef).
 
@@ -1460,45 +1443,11 @@ Keyword-only arguments:
 
 Returns [GetObjectAclOutputTypeDef](./type_defs.md#getobjectacloutputtypedef).
 
-<a id="get\_object\_attributes"></a>
-
-### get_object_attributes
-
-Retrieves all the metadata from an object without returning the object itself.
-
-Type annotations for `boto3.client("s3").get_object_attributes` method.
-
-Boto3 documentation:
-[S3.Client.get_object_attributes](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.get_object_attributes)
-
-Arguments mapping described in
-[GetObjectAttributesRequestRequestTypeDef](./type_defs.md#getobjectattributesrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `Bucket`: `str` *(required)*
-- `Key`: `str` *(required)*
-- `ObjectAttributes`:
-  `Sequence`\[[ObjectAttributesType](./literals.md#objectattributestype)\]
-  *(required)*
-- `VersionId`: `str`
-- `MaxParts`: `int`
-- `PartNumberMarker`: `int`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
-Returns
-[GetObjectAttributesOutputTypeDef](./type_defs.md#getobjectattributesoutputtypedef).
-
 <a id="get\_object\_legal\_hold"></a>
 
 ### get_object_legal_hold
 
-Gets an object's current legal hold status.
+Gets an object's current Legal Hold status.
 
 Type annotations for `boto3.client("s3").get_object_legal_hold` method.
 
@@ -1693,8 +1642,6 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 Returns [HeadObjectOutputTypeDef](./type_defs.md#headobjectoutputtypedef).
 
@@ -1949,9 +1896,6 @@ Keyword-only arguments:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
 
 Returns [ListPartsOutputTypeDef](./type_defs.md#listpartsoutputtypedef).
 
@@ -1977,8 +1921,6 @@ Keyword-only arguments:
   [AccelerateConfigurationTypeDef](./type_defs.md#accelerateconfigurationtypedef)
   *(required)*
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="put\_bucket\_acl"></a>
 
@@ -2000,8 +1942,6 @@ Keyword-only arguments:
 - `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -2054,8 +1994,6 @@ Keyword-only arguments:
 - `CORSConfiguration`:
   [CORSConfigurationTypeDef](./type_defs.md#corsconfigurationtypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_bucket\_encryption"></a>
@@ -2080,8 +2018,6 @@ Keyword-only arguments:
   [ServerSideEncryptionConfigurationTypeDef](./type_defs.md#serversideencryptionconfigurationtypedef)
   *(required)*
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_bucket\_intelligent\_tiering\_configuration"></a>
@@ -2149,8 +2085,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
@@ -2174,8 +2108,6 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `LifecycleConfiguration`:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
@@ -2201,8 +2133,6 @@ Keyword-only arguments:
 - `BucketLoggingStatus`:
   [BucketLoggingStatusTypeDef](./type_defs.md#bucketloggingstatustypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_bucket\_metrics\_configuration"></a>
@@ -2252,8 +2182,6 @@ Keyword-only arguments:
 - `NotificationConfiguration`:
   [NotificationConfigurationDeprecatedTypeDef](./type_defs.md#notificationconfigurationdeprecatedtypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_bucket\_notification\_configuration"></a>
@@ -2321,8 +2249,6 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Policy`: `str` *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
 
@@ -2346,8 +2272,6 @@ Keyword-only arguments:
 - `ReplicationConfiguration`:
   [ReplicationConfigurationTypeDef](./type_defs.md#replicationconfigurationtypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `Token`: `str`
 - `ExpectedBucketOwner`: `str`
 
@@ -2371,8 +2295,6 @@ Keyword-only arguments:
 - `RequestPaymentConfiguration`:
   [RequestPaymentConfigurationTypeDef](./type_defs.md#requestpaymentconfigurationtypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_bucket\_tagging"></a>
@@ -2393,8 +2315,6 @@ Keyword-only arguments:
 
 - `Bucket`: `str` *(required)*
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_bucket\_versioning"></a>
@@ -2417,8 +2337,6 @@ Keyword-only arguments:
 - `VersioningConfiguration`:
   [VersioningConfigurationTypeDef](./type_defs.md#versioningconfigurationtypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
 
@@ -2443,8 +2361,6 @@ Keyword-only arguments:
 - `WebsiteConfiguration`:
   [WebsiteConfigurationTypeDef](./type_defs.md#websiteconfigurationtypedef)
   *(required)*
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="put\_object"></a>
@@ -2474,12 +2390,6 @@ Keyword-only arguments:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
@@ -2529,8 +2439,6 @@ Keyword-only arguments:
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -2547,7 +2455,7 @@ Returns [PutObjectAclOutputTypeDef](./type_defs.md#putobjectacloutputtypedef).
 
 ### put_object_legal_hold
 
-Applies a legal hold configuration to the specified object.
+Applies a Legal Hold configuration to the specified object.
 
 Type annotations for `boto3.client("s3").put_object_legal_hold` method.
 
@@ -2567,8 +2475,6 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `VersionId`: `str`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -2597,8 +2503,6 @@ Keyword-only arguments:
   [RequestPayerType](./literals.md#requestpayertype))
 - `Token`: `str`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -2629,8 +2533,6 @@ Keyword-only arguments:
 - `VersionId`: `str`
 - `BypassGovernanceRetention`: `bool`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -2657,8 +2559,6 @@ Keyword-only arguments:
 - `Tagging`: [TaggingTypeDef](./type_defs.md#taggingtypedef) *(required)*
 - `VersionId`: `str`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
@@ -2688,8 +2588,6 @@ Keyword-only arguments:
   [PublicAccessBlockConfigurationTypeDef](./type_defs.md#publicaccessblockconfigurationtypedef)
   *(required)*
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="restore\_object"></a>
@@ -2716,8 +2614,6 @@ Keyword-only arguments:
   [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 Returns
@@ -2831,12 +2727,6 @@ Keyword-only arguments:
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
@@ -2918,10 +2808,6 @@ Keyword-only arguments:
 - `ContentLength`: `int`
 - `ContentRange`: `str`
 - `ContentType`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `DeleteMarker`: `bool`
 - `ETag`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]

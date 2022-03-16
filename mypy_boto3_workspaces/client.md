@@ -19,14 +19,12 @@ type annotations stubs module
     - [authorize_ip_rules](#authorize_ip_rules)
     - [can_paginate](#can_paginate)
     - [copy_workspace_image](#copy_workspace_image)
-    - [create_connect_client_add_in](#create_connect_client_add_in)
     - [create_connection_alias](#create_connection_alias)
     - [create_ip_group](#create_ip_group)
     - [create_tags](#create_tags)
     - [create_updated_workspace_image](#create_updated_workspace_image)
     - [create_workspace_bundle](#create_workspace_bundle)
     - [create_workspaces](#create_workspaces)
-    - [delete_connect_client_add_in](#delete_connect_client_add_in)
     - [delete_connection_alias](#delete_connection_alias)
     - [delete_ip_group](#delete_ip_group)
     - [delete_tags](#delete_tags)
@@ -36,7 +34,6 @@ type annotations stubs module
     - [describe_account](#describe_account)
     - [describe_account_modifications](#describe_account_modifications)
     - [describe_client_properties](#describe_client_properties)
-    - [describe_connect_client_add_ins](#describe_connect_client_add_ins)
     - [describe_connection_alias_permissions](#describe_connection_alias_permissions)
     - [describe_connection_aliases](#describe_connection_aliases)
     - [describe_ip_groups](#describe_ip_groups)
@@ -69,7 +66,6 @@ type annotations stubs module
     - [start_workspaces](#start_workspaces)
     - [stop_workspaces](#stop_workspaces)
     - [terminate_workspaces](#terminate_workspaces)
-    - [update_connect_client_add_in](#update_connect_client_add_in)
     - [update_connection_alias_permission](#update_connection_alias_permission)
     - [update_rules_of_ip_group](#update_rules_of_ip_group)
     - [update_workspace_bundle](#update_workspace_bundle)
@@ -254,30 +250,6 @@ Keyword-only arguments:
 Returns
 [CopyWorkspaceImageResultTypeDef](./type_defs.md#copyworkspaceimageresulttypedef).
 
-<a id="create\_connect\_client\_add\_in"></a>
-
-### create_connect_client_add_in
-
-Creates a client-add-in for Amazon Connect within a directory.
-
-Type annotations for `boto3.client("workspaces").create_connect_client_add_in`
-method.
-
-Boto3 documentation:
-[WorkSpaces.Client.create_connect_client_add_in](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.create_connect_client_add_in)
-
-Arguments mapping described in
-[CreateConnectClientAddInRequestRequestTypeDef](./type_defs.md#createconnectclientaddinrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `URL`: `str` *(required)*
-
-Returns
-[CreateConnectClientAddInResultTypeDef](./type_defs.md#createconnectclientaddinresulttypedef).
-
 <a id="create\_connection\_alias"></a>
 
 ### create_connection_alias
@@ -424,29 +396,6 @@ Keyword-only arguments:
 
 Returns
 [CreateWorkspacesResultTypeDef](./type_defs.md#createworkspacesresulttypedef).
-
-<a id="delete\_connect\_client\_add\_in"></a>
-
-### delete_connect_client_add_in
-
-Deletes a client-add-in for Amazon Connect that is configured within a
-directory.
-
-Type annotations for `boto3.client("workspaces").delete_connect_client_add_in`
-method.
-
-Boto3 documentation:
-[WorkSpaces.Client.delete_connect_client_add_in](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.delete_connect_client_add_in)
-
-Arguments mapping described in
-[DeleteConnectClientAddInRequestRequestTypeDef](./type_defs.md#deleteconnectclientaddinrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AddInId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
 
 <a id="delete\_connection\_alias"></a>
 
@@ -633,30 +582,6 @@ Keyword-only arguments:
 
 Returns
 [DescribeClientPropertiesResultTypeDef](./type_defs.md#describeclientpropertiesresulttypedef).
-
-<a id="describe\_connect\_client\_add\_ins"></a>
-
-### describe_connect_client_add_ins
-
-Retrieves a list of Amazon Connect client add-ins that have been created.
-
-Type annotations for
-`boto3.client("workspaces").describe_connect_client_add_ins` method.
-
-Boto3 documentation:
-[WorkSpaces.Client.describe_connect_client_add_ins](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.describe_connect_client_add_ins)
-
-Arguments mapping described in
-[DescribeConnectClientAddInsRequestRequestTypeDef](./type_defs.md#describeconnectclientaddinsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `ResourceId`: `str` *(required)*
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-Returns
-[DescribeConnectClientAddInsResultTypeDef](./type_defs.md#describeconnectclientaddinsresulttypedef).
 
 <a id="describe\_connection\_alias\_permissions"></a>
 
@@ -1416,30 +1341,6 @@ Keyword-only arguments:
 
 Returns
 [TerminateWorkspacesResultTypeDef](./type_defs.md#terminateworkspacesresulttypedef).
-
-<a id="update\_connect\_client\_add\_in"></a>
-
-### update_connect_client_add_in
-
-Updates a Amazon Connect client add-in.
-
-Type annotations for `boto3.client("workspaces").update_connect_client_add_in`
-method.
-
-Boto3 documentation:
-[WorkSpaces.Client.update_connect_client_add_in](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/workspaces.html#WorkSpaces.Client.update_connect_client_add_in)
-
-Arguments mapping described in
-[UpdateConnectClientAddInRequestRequestTypeDef](./type_defs.md#updateconnectclientaddinrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AddInId`: `str` *(required)*
-- `ResourceId`: `str` *(required)*
-- `Name`: `str`
-- `URL`: `str`
-
-Returns `Dict`\[`str`, `Any`\].
 
 <a id="update\_connection\_alias\_permission"></a>
 

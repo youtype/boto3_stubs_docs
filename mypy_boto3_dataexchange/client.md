@@ -36,7 +36,6 @@ type annotations stubs module
     - [list_jobs](#list_jobs)
     - [list_revision_assets](#list_revision_assets)
     - [list_tags_for_resource](#list_tags_for_resource)
-    - [revoke_revision](#revoke_revision)
     - [send_api_asset](#send_api_asset)
     - [start_job](#start_job)
     - [tag_resource](#tag_resource)
@@ -576,29 +575,6 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
-
-<a id="revoke\_revision"></a>
-
-### revoke_revision
-
-This operation revokes subscribers' access to a revision.
-
-Type annotations for `boto3.client("dataexchange").revoke_revision` method.
-
-Boto3 documentation:
-[DataExchange.Client.revoke_revision](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/dataexchange.html#DataExchange.Client.revoke_revision)
-
-Arguments mapping described in
-[RevokeRevisionRequestRequestTypeDef](./type_defs.md#revokerevisionrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `DataSetId`: `str` *(required)*
-- `RevisionId`: `str` *(required)*
-- `RevocationComment`: `str` *(required)*
-
-Returns
-[RevokeRevisionResponseTypeDef](./type_defs.md#revokerevisionresponsetypedef).
 
 <a id="send\_api\_asset"></a>
 

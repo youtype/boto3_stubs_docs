@@ -1021,7 +1021,6 @@ from mypy_boto3_eks.type_defs import KubernetesNetworkConfigRequestTypeDef
 Optional fields:
 
 - `serviceIpv4Cidr`: `str`
-- `ipFamily`: [IpFamilyType](./literals.md#ipfamilytype)
 
 <a id="kubernetesnetworkconfigresponsetypedef"></a>
 
@@ -1034,8 +1033,6 @@ from mypy_boto3_eks.type_defs import KubernetesNetworkConfigResponseTypeDef
 Optional fields:
 
 - `serviceIpv4Cidr`: `str`
-- `serviceIpv6Cidr`: `str`
-- `ipFamily`: [IpFamilyType](./literals.md#ipfamilytype)
 
 <a id="launchtemplatespecificationtypedef"></a>
 

@@ -579,9 +579,6 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `OperatingAddressCountryCodeFilter`: `Sequence`\[`str`\]
-- `OperatingAddressStateOrRegionFilter`: `Sequence`\[`str`\]
-- `OperatingAddressCityFilter`: `Sequence`\[`str`\]
 
 <a id="listsitesoutputtypedef"></a>
 

@@ -337,7 +337,6 @@ type annotations stubs module
   - [BatchUpdateFindingsRequestRequestTypeDef](#batchupdatefindingsrequestrequesttypedef)
   - [BatchUpdateFindingsResponseTypeDef](#batchupdatefindingsresponsetypedef)
   - [BatchUpdateFindingsUnprocessedFindingTypeDef](#batchupdatefindingsunprocessedfindingtypedef)
-  - [BooleanFilterTypeDef](#booleanfiltertypedef)
   - [CellTypeDef](#celltypedef)
   - [CidrBlockAssociationTypeDef](#cidrblockassociationtypedef)
   - [CityTypeDef](#citytypedef)
@@ -5784,8 +5783,6 @@ Optional fields:
   `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
 - `FindingProviderFieldsTypes`:
   `Sequence`\[[StringFilterTypeDef](./type_defs.md#stringfiltertypedef)\]
-- `Sample`:
-  `Sequence`\[[BooleanFilterTypeDef](./type_defs.md#booleanfiltertypedef)\]
 
 <a id="awssecurityfindingidentifiertypedef"></a>
 
@@ -5858,7 +5855,6 @@ Optional fields:
 - `Action`: [ActionTypeDef](./type_defs.md#actiontypedef)
 - `FindingProviderFields`:
   [FindingProviderFieldsTypeDef](./type_defs.md#findingproviderfieldstypedef)
-- `Sample`: `bool`
 
 <a id="awssnstopicdetailstypedef"></a>
 
@@ -6214,18 +6210,6 @@ Required fields:
   [AwsSecurityFindingIdentifierTypeDef](./type_defs.md#awssecurityfindingidentifiertypedef)
 - `ErrorCode`: `str`
 - `ErrorMessage`: `str`
-
-<a id="booleanfiltertypedef"></a>
-
-## BooleanFilterTypeDef
-
-```python
-from mypy_boto3_securityhub.type_defs import BooleanFilterTypeDef
-```
-
-Optional fields:
-
-- `Value`: `bool`
 
 <a id="celltypedef"></a>
 

@@ -1100,7 +1100,6 @@ from mypy_boto3_sagemaker.type_defs import ActionSourceTypeDef, ...
 - [ExperimentSummaryTypeDef](./type_defs.md#experimentsummarytypedef)
 - [ExperimentTypeDef](./type_defs.md#experimenttypedef)
 - [ExplainabilityTypeDef](./type_defs.md#explainabilitytypedef)
-- [FailStepMetadataTypeDef](./type_defs.md#failstepmetadatatypedef)
 - [FeatureDefinitionTypeDef](./type_defs.md#featuredefinitiontypedef)
 - [FeatureGroupSummaryTypeDef](./type_defs.md#featuregroupsummarytypedef)
 - [FeatureGroupTypeDef](./type_defs.md#featuregrouptypedef)

@@ -2012,7 +2012,8 @@ from mypy_boto3_elasticache.type_defs import LogDeliveryConfigurationRequestType
 
 Optional fields:
 
-- `LogType`: [LogTypeType](./literals.md#logtypetype)
+- `LogType`: `Literal['slow-log']` (see
+  [LogTypeType](./literals.md#logtypetype))
 - `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
@@ -2029,7 +2030,8 @@ from mypy_boto3_elasticache.type_defs import LogDeliveryConfigurationTypeDef
 
 Optional fields:
 
-- `LogType`: [LogTypeType](./literals.md#logtypetype)
+- `LogType`: `Literal['slow-log']` (see
+  [LogTypeType](./literals.md#logtypetype))
 - `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)
@@ -2476,7 +2478,8 @@ from mypy_boto3_elasticache.type_defs import PendingLogDeliveryConfigurationType
 
 Optional fields:
 
-- `LogType`: [LogTypeType](./literals.md#logtypetype)
+- `LogType`: `Literal['slow-log']` (see
+  [LogTypeType](./literals.md#logtypetype))
 - `DestinationType`: [DestinationTypeType](./literals.md#destinationtypetype)
 - `DestinationDetails`:
   [DestinationDetailsTypeDef](./type_defs.md#destinationdetailstypedef)

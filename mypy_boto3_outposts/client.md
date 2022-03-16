@@ -483,7 +483,7 @@ Returns [ListOutpostsOutputTypeDef](./type_defs.md#listoutpostsoutputtypedef).
 
 ### list_sites
 
-Create a list of the Outpost sites for your Amazon Web Services account.
+Lists the sites for your Amazon Web Services account.
 
 Type annotations for `boto3.client("outposts").list_sites` method.
 
@@ -497,9 +497,6 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `OperatingAddressCountryCodeFilter`: `Sequence`\[`str`\]
-- `OperatingAddressStateOrRegionFilter`: `Sequence`\[`str`\]
-- `OperatingAddressCityFilter`: `Sequence`\[`str`\]
 
 Returns [ListSitesOutputTypeDef](./type_defs.md#listsitesoutputtypedef).
 

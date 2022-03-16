@@ -261,8 +261,6 @@ Keyword-only arguments:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `SegmentDeliveryConfigurations`:
-  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 - `Tags`: `Mapping`\[`str`, `str`\]
 
 Returns
@@ -961,7 +959,6 @@ Keyword-only arguments:
 - `Outputs`:
   `Sequence`\[[RequestOutputItemTypeDef](./type_defs.md#requestoutputitemtypedef)\]
   *(required)*
-- `FillerSlate`: [SlateSourceTypeDef](./type_defs.md#slatesourcetypedef)
 
 Returns
 [UpdateChannelResponseTypeDef](./type_defs.md#updatechannelresponsetypedef).
@@ -991,8 +988,6 @@ Keyword-only arguments:
   [AccessConfigurationTypeDef](./type_defs.md#accessconfigurationtypedef)
 - `DefaultSegmentDeliveryConfiguration`:
   [DefaultSegmentDeliveryConfigurationTypeDef](./type_defs.md#defaultsegmentdeliveryconfigurationtypedef)
-- `SegmentDeliveryConfigurations`:
-  `Sequence`\[[SegmentDeliveryConfigurationTypeDef](./type_defs.md#segmentdeliveryconfigurationtypedef)\]
 
 Returns
 [UpdateSourceLocationResponseTypeDef](./type_defs.md#updatesourcelocationresponsetypedef).

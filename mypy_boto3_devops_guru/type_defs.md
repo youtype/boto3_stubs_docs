@@ -14,11 +14,9 @@ type annotations stubs module
   - [AccountInsightHealthTypeDef](#accountinsighthealthtypedef)
   - [AddNotificationChannelRequestRequestTypeDef](#addnotificationchannelrequestrequesttypedef)
   - [AddNotificationChannelResponseTypeDef](#addnotificationchannelresponsetypedef)
-  - [AmazonCodeGuruProfilerIntegrationTypeDef](#amazoncodeguruprofilerintegrationtypedef)
   - [AnomalyReportedTimeRangeTypeDef](#anomalyreportedtimerangetypedef)
   - [AnomalyResourceTypeDef](#anomalyresourcetypedef)
   - [AnomalySourceDetailsTypeDef](#anomalysourcedetailstypedef)
-  - [AnomalySourceMetadataTypeDef](#anomalysourcemetadatatypedef)
   - [AnomalyTimeRangeTypeDef](#anomalytimerangetypedef)
   - [CloudFormationCollectionFilterTypeDef](#cloudformationcollectionfiltertypedef)
   - [CloudFormationCollectionTypeDef](#cloudformationcollectiontypedef)
@@ -34,7 +32,6 @@ type annotations stubs module
   - [DescribeAccountOverviewResponseTypeDef](#describeaccountoverviewresponsetypedef)
   - [DescribeAnomalyRequestRequestTypeDef](#describeanomalyrequestrequesttypedef)
   - [DescribeAnomalyResponseTypeDef](#describeanomalyresponsetypedef)
-  - [DescribeEventSourcesConfigResponseTypeDef](#describeeventsourcesconfigresponsetypedef)
   - [DescribeFeedbackRequestRequestTypeDef](#describefeedbackrequestrequesttypedef)
   - [DescribeFeedbackResponseTypeDef](#describefeedbackresponsetypedef)
   - [DescribeInsightRequestRequestTypeDef](#describeinsightrequestrequesttypedef)
@@ -50,7 +47,6 @@ type annotations stubs module
   - [DescribeServiceIntegrationResponseTypeDef](#describeserviceintegrationresponsetypedef)
   - [EndTimeRangeTypeDef](#endtimerangetypedef)
   - [EventResourceTypeDef](#eventresourcetypedef)
-  - [EventSourcesConfigTypeDef](#eventsourcesconfigtypedef)
   - [EventTimeRangeTypeDef](#eventtimerangetypedef)
   - [EventTypeDef](#eventtypedef)
   - [GetCostEstimationRequestRequestTypeDef](#getcostestimationrequestrequesttypedef)
@@ -133,7 +129,6 @@ type annotations stubs module
   - [TagHealthTypeDef](#taghealthtypedef)
   - [TimestampMetricValuePairTypeDef](#timestampmetricvaluepairtypedef)
   - [UpdateCloudFormationCollectionFilterTypeDef](#updatecloudformationcollectionfiltertypedef)
-  - [UpdateEventSourcesConfigRequestRequestTypeDef](#updateeventsourcesconfigrequestrequesttypedef)
   - [UpdateResourceCollectionFilterTypeDef](#updateresourcecollectionfiltertypedef)
   - [UpdateResourceCollectionRequestRequestTypeDef](#updateresourcecollectionrequestrequesttypedef)
   - [UpdateServiceIntegrationConfigTypeDef](#updateserviceintegrationconfigtypedef)
@@ -194,19 +189,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-<a id="amazoncodeguruprofilerintegrationtypedef"></a>
-
-## AmazonCodeGuruProfilerIntegrationTypeDef
-
-```python
-from mypy_boto3_devops_guru.type_defs import AmazonCodeGuruProfilerIntegrationTypeDef
-```
-
-Optional fields:
-
-- `Status`:
-  [EventSourceOptInStatusType](./literals.md#eventsourceoptinstatustype)
-
 <a id="anomalyreportedtimerangetypedef"></a>
 
 ## AnomalyReportedTimeRangeTypeDef
@@ -250,20 +232,6 @@ Optional fields:
   `List`\[[CloudWatchMetricsDetailTypeDef](./type_defs.md#cloudwatchmetricsdetailtypedef)\]
 - `PerformanceInsightsMetrics`:
   `List`\[[PerformanceInsightsMetricsDetailTypeDef](./type_defs.md#performanceinsightsmetricsdetailtypedef)\]
-
-<a id="anomalysourcemetadatatypedef"></a>
-
-## AnomalySourceMetadataTypeDef
-
-```python
-from mypy_boto3_devops_guru.type_defs import AnomalySourceMetadataTypeDef
-```
-
-Optional fields:
-
-- `Source`: `str`
-- `SourceResourceName`: `str`
-- `SourceResourceType`: `str`
 
 <a id="anomalytimerangetypedef"></a>
 
@@ -485,21 +453,6 @@ Required fields:
   [ProactiveAnomalyTypeDef](./type_defs.md#proactiveanomalytypedef)
 - `ReactiveAnomaly`:
   [ReactiveAnomalyTypeDef](./type_defs.md#reactiveanomalytypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="describeeventsourcesconfigresponsetypedef"></a>
-
-## DescribeEventSourcesConfigResponseTypeDef
-
-```python
-from mypy_boto3_devops_guru.type_defs import DescribeEventSourcesConfigResponseTypeDef
-```
-
-Required fields:
-
-- `EventSources`:
-  [EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -744,19 +697,6 @@ Optional fields:
 - `Type`: `str`
 - `Name`: `str`
 - `Arn`: `str`
-
-<a id="eventsourcesconfigtypedef"></a>
-
-## EventSourcesConfigTypeDef
-
-```python
-from mypy_boto3_devops_guru.type_defs import EventSourcesConfigTypeDef
-```
-
-Optional fields:
-
-- `AmazonCodeGuruProfiler`:
-  [AmazonCodeGuruProfilerIntegrationTypeDef](./type_defs.md#amazoncodeguruprofilerintegrationtypedef)
 
 <a id="eventtimerangetypedef"></a>
 
@@ -1409,10 +1349,6 @@ Optional fields:
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `Limit`: `float`
-- `SourceMetadata`:
-  [AnomalySourceMetadataTypeDef](./type_defs.md#anomalysourcemetadatatypedef)
-- `AnomalyResources`:
-  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
 
 <a id="proactiveanomalytypedef"></a>
 
@@ -1440,10 +1376,6 @@ Optional fields:
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `Limit`: `float`
-- `SourceMetadata`:
-  [AnomalySourceMetadataTypeDef](./type_defs.md#anomalysourcemetadatatypedef)
-- `AnomalyResources`:
-  `List`\[[AnomalyResourceTypeDef](./type_defs.md#anomalyresourcetypedef)\]
 
 <a id="proactiveinsightsummarytypedef"></a>
 
@@ -1490,7 +1422,6 @@ Optional fields:
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
-- `Description`: `str`
 
 <a id="proactiveorganizationinsightsummarytypedef"></a>
 
@@ -1629,7 +1560,6 @@ Optional fields:
 - `ResourceCollection`:
   [ResourceCollectionTypeDef](./type_defs.md#resourcecollectiontypedef)
 - `SsmOpsItemId`: `str`
-- `Description`: `str`
 
 <a id="reactiveorganizationinsightsummarytypedef"></a>
 
@@ -1754,7 +1684,6 @@ Optional fields:
   `List`\[[RecommendationRelatedEventTypeDef](./type_defs.md#recommendationrelatedeventtypedef)\]
 - `RelatedAnomalies`:
   `List`\[[RecommendationRelatedAnomalyTypeDef](./type_defs.md#recommendationrelatedanomalytypedef)\]
-- `Category`: `str`
 
 <a id="removenotificationchannelrequestrequesttypedef"></a>
 
@@ -2118,19 +2047,6 @@ from mypy_boto3_devops_guru.type_defs import UpdateCloudFormationCollectionFilte
 Optional fields:
 
 - `StackNames`: `Sequence`\[`str`\]
-
-<a id="updateeventsourcesconfigrequestrequesttypedef"></a>
-
-## UpdateEventSourcesConfigRequestRequestTypeDef
-
-```python
-from mypy_boto3_devops_guru.type_defs import UpdateEventSourcesConfigRequestRequestTypeDef
-```
-
-Optional fields:
-
-- `EventSources`:
-  [EventSourcesConfigTypeDef](./type_defs.md#eventsourcesconfigtypedef)
 
 <a id="updateresourcecollectionfiltertypedef"></a>
 

@@ -10,8 +10,6 @@ type annotations stubs module
 [mypy-boto3-amplifyuibuilder](https://pypi.org/project/mypy-boto3-amplifyuibuilder/).
 
 - [Literals for boto3 AmplifyUIBuilder module](#literals-for-boto3-amplifyuibuilder-module)
-  - [ExportComponentsPaginatorName](#exportcomponentspaginatorname)
-  - [ExportThemesPaginatorName](#exportthemespaginatorname)
   - [ListComponentsPaginatorName](#listcomponentspaginatorname)
   - [ListThemesPaginatorName](#listthemespaginatorname)
   - [SortDirectionType](#sortdirectiontype)
@@ -20,30 +18,6 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
-
-<a id="exportcomponentspaginatorname"></a>
-
-## ExportComponentsPaginatorName
-
-```python
-from mypy_boto3_amplifyuibuilder.literals import ExportComponentsPaginatorName
-```
-
-Values:
-
-- `export_components`
-
-<a id="exportthemespaginatorname"></a>
-
-## ExportThemesPaginatorName
-
-```python
-from mypy_boto3_amplifyuibuilder.literals import ExportThemesPaginatorName
-```
-
-Values:
-
-- `export_themes`
 
 <a id="listcomponentspaginatorname"></a>
 
@@ -268,7 +242,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`
@@ -448,7 +421,5 @@ from mypy_boto3_amplifyuibuilder.literals import PaginatorName
 
 Values:
 
-- `export_components`
-- `export_themes`
 - `list_components`
 - `list_themes`

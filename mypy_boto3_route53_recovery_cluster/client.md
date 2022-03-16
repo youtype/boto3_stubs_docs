@@ -163,7 +163,6 @@ Keyword-only arguments:
 - `RoutingControlArn`: `str` *(required)*
 - `RoutingControlState`:
   [RoutingControlStateType](./literals.md#routingcontrolstatetype) *(required)*
-- `SafetyRulesToOverride`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].
 
@@ -188,6 +187,5 @@ Keyword-only arguments:
 - `UpdateRoutingControlStateEntries`:
   `Sequence`\[[UpdateRoutingControlStateEntryTypeDef](./type_defs.md#updateroutingcontrolstateentrytypedef)\]
   *(required)*
-- `SafetyRulesToOverride`: `Sequence`\[`str`\]
 
 Returns `Dict`\[`str`, `Any`\].

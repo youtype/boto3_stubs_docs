@@ -35,17 +35,12 @@ client = session.client("transfer")
 # IDE should show a hint with argument names and types
 result = client.can_paginate()
 
-# paginator has type ListAccessesPaginator and provides type checking
+# paginator has type ListServersPaginator and provides type checking
 # and code completion for paginate method
-paginator = client.get_paginator("list_accesses")
+paginator = client.get_paginator("list_servers")
 for item in paginator.paginate(...):
-    # item has type ListAccessesResponseTypeDef
+    # item has type ListServersResponseTypeDef
     print(item)
-
-# waiter has type ServerOfflineWaiter and provides type checking
-# and code completion for wait method
-waiter = client.get_waiter("server_offline")
-waiter.wait()
 ```
 
 <a id="explicit-type-annotations"></a>
@@ -64,12 +59,12 @@ and methods.
 import boto3
 
 from mypy_boto3_transfer.client import TransferClient
-from mypy_boto3_transfer.paginator import ListAccessesPaginator
-from mypy_boto3_transfer.waiter import ServerOfflineWaiter
+from mypy_boto3_transfer.paginator import ListServersPaginator
+
 from mypy_boto3_transfer.literals import PaginatorName
-from mypy_boto3_transfer.literals import WaiterName
+
 from mypy_boto3_transfer.type_defs import bool
-from mypy_boto3_transfer.type_defs import ListAccessesResponseTypeDef
+from mypy_boto3_transfer.type_defs import ListServersResponseTypeDef
 
 
 session = boto3.Session()
@@ -78,13 +73,9 @@ client: TransferClient = session.client("transfer")
 
 result: bool = client.can_paginate()
 
-paginator_name: PaginatorName = "list_accesses"
-paginator: ListAccessesPaginator = client.get_paginator(paginator_name)
+paginator_name: PaginatorName = "list_servers"
+paginator: ListServersPaginator = client.get_paginator(paginator_name)
 for item in paginator.paginate(...):
-    item: ListAccessesResponseTypeDef
+    item: ListServersResponseTypeDef
     print(item)
-
-waiter_name: WaiterName = "server_offline"
-waiter: ServerOfflineWaiter = client.get_waiter(waiter_name)
-waiter.wait()
 ```

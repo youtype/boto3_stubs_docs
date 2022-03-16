@@ -208,7 +208,6 @@ from mypy_boto3_fsx.literals import AdministrativeActionTypeType, ...
 - [DataRepositoryTaskFilterNameType](./literals.md#datarepositorytaskfilternametype)
 - [DataRepositoryTaskLifecycleType](./literals.md#datarepositorytasklifecycletype)
 - [DataRepositoryTaskTypeType](./literals.md#datarepositorytasktypetype)
-- [DeleteFileSystemOpenZFSOptionType](./literals.md#deletefilesystemopenzfsoptiontype)
 - [DeleteOpenZFSVolumeOptionType](./literals.md#deleteopenzfsvolumeoptiontype)
 - [DescribeBackupsPaginatorName](./literals.md#describebackupspaginatorname)
 - [DescribeFileSystemsPaginatorName](./literals.md#describefilesystemspaginatorname)

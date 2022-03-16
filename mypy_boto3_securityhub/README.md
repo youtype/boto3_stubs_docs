@@ -582,7 +582,6 @@ from mypy_boto3_securityhub.type_defs import AcceptAdministratorInvitationReques
 - [BatchUpdateFindingsRequestRequestTypeDef](./type_defs.md#batchupdatefindingsrequestrequesttypedef)
 - [BatchUpdateFindingsResponseTypeDef](./type_defs.md#batchupdatefindingsresponsetypedef)
 - [BatchUpdateFindingsUnprocessedFindingTypeDef](./type_defs.md#batchupdatefindingsunprocessedfindingtypedef)
-- [BooleanFilterTypeDef](./type_defs.md#booleanfiltertypedef)
 - [CellTypeDef](./type_defs.md#celltypedef)
 - [CidrBlockAssociationTypeDef](./type_defs.md#cidrblockassociationtypedef)
 - [CityTypeDef](./type_defs.md#citytypedef)

@@ -382,8 +382,8 @@ Returns
 
 ### decline_invitations
 
-Declines invitations sent to the current member account by Amazon Web Services
-accounts specified by their account IDs.
+Declines invitations sent to the current member account by AWS accounts
+specified by their account IDs.
 
 Type annotations for `boto3.client("guardduty").decline_invitations` method.
 
@@ -445,8 +445,8 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_invitations
 
-Deletes invitations sent to the current member account by Amazon Web Services
-accounts specified by their account IDs.
+Deletes invitations sent to the current member account by AWS accounts
+specified by their account IDs.
 
 Type annotations for `boto3.client("guardduty").delete_invitations` method.
 
@@ -602,8 +602,8 @@ Returns
 
 ### disable_organization_admin_account
 
-Disables an Amazon Web Services account within the Organization as the
-GuardDuty delegated administrator.
+Disables an AWS account within the Organization as the GuardDuty delegated
+administrator.
 
 Type annotations for
 `boto3.client("guardduty").disable_organization_admin_account` method.
@@ -669,8 +669,8 @@ Returns
 
 ### enable_organization_admin_account
 
-Enables an Amazon Web Services account within the organization as the GuardDuty
-delegated administrator.
+Enables an AWS account within the organization as the GuardDuty delegated
+administrator.
 
 Type annotations for
 `boto3.client("guardduty").enable_organization_admin_account` method.
@@ -956,10 +956,10 @@ Returns
 
 ### invite_members
 
-Invites other Amazon Web Services accounts (created as members of the current
-Amazon Web Services account by CreateMembers) to enable GuardDuty, and allow
-the current Amazon Web Services account to view and manage these accounts'
-findings on their behalf as the GuardDuty administrator account.
+Invites other AWS accounts (created as members of the current AWS account by
+CreateMembers) to enable GuardDuty, and allow the current AWS account to view
+and manage these accounts' findings on their behalf as the GuardDuty
+administrator account.
 
 Type annotations for `boto3.client("guardduty").invite_members` method.
 
@@ -1054,8 +1054,8 @@ Returns
 
 ### list_invitations
 
-Lists all GuardDuty membership invitations that were sent to the current Amazon
-Web Services account.
+Lists all GuardDuty membership invitations that were sent to the current AWS
+account.
 
 Type annotations for `boto3.client("guardduty").list_invitations` method.
 
@@ -1148,7 +1148,7 @@ Returns
 ### list_publishing_destinations
 
 Returns a list of publishing destinations associated with the specified
-`detectorId` .
+`dectectorId` .
 
 Type annotations for `boto3.client("guardduty").list_publishing_destinations`
 method.

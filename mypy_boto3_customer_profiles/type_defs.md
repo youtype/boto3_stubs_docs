@@ -13,19 +13,12 @@ type annotations stubs module
   - [AddProfileKeyRequestRequestTypeDef](#addprofilekeyrequestrequesttypedef)
   - [AddProfileKeyResponseTypeDef](#addprofilekeyresponsetypedef)
   - [AddressTypeDef](#addresstypedef)
-  - [AppflowIntegrationTypeDef](#appflowintegrationtypedef)
-  - [AppflowIntegrationWorkflowAttributesTypeDef](#appflowintegrationworkflowattributestypedef)
-  - [AppflowIntegrationWorkflowMetricsTypeDef](#appflowintegrationworkflowmetricstypedef)
-  - [AppflowIntegrationWorkflowStepTypeDef](#appflowintegrationworkflowsteptypedef)
   - [AutoMergingTypeDef](#automergingtypedef)
-  - [BatchTypeDef](#batchtypedef)
   - [ConflictResolutionTypeDef](#conflictresolutiontypedef)
   - [ConnectorOperatorTypeDef](#connectoroperatortypedef)
   - [ConsolidationTypeDef](#consolidationtypedef)
   - [CreateDomainRequestRequestTypeDef](#createdomainrequestrequesttypedef)
   - [CreateDomainResponseTypeDef](#createdomainresponsetypedef)
-  - [CreateIntegrationWorkflowRequestRequestTypeDef](#createintegrationworkflowrequestrequesttypedef)
-  - [CreateIntegrationWorkflowResponseTypeDef](#createintegrationworkflowresponsetypedef)
   - [CreateProfileRequestRequestTypeDef](#createprofilerequestrequesttypedef)
   - [CreateProfileResponseTypeDef](#createprofileresponsetypedef)
   - [DeleteDomainRequestRequestTypeDef](#deletedomainrequestrequesttypedef)
@@ -40,7 +33,6 @@ type annotations stubs module
   - [DeleteProfileObjectTypeResponseTypeDef](#deleteprofileobjecttyperesponsetypedef)
   - [DeleteProfileRequestRequestTypeDef](#deleteprofilerequestrequesttypedef)
   - [DeleteProfileResponseTypeDef](#deleteprofileresponsetypedef)
-  - [DeleteWorkflowRequestRequestTypeDef](#deleteworkflowrequestrequesttypedef)
   - [DomainStatsTypeDef](#domainstatstypedef)
   - [ExportingConfigTypeDef](#exportingconfigtypedef)
   - [ExportingLocationTypeDef](#exportinglocationtypedef)
@@ -60,13 +52,8 @@ type annotations stubs module
   - [GetProfileObjectTypeResponseTypeDef](#getprofileobjecttyperesponsetypedef)
   - [GetProfileObjectTypeTemplateRequestRequestTypeDef](#getprofileobjecttypetemplaterequestrequesttypedef)
   - [GetProfileObjectTypeTemplateResponseTypeDef](#getprofileobjecttypetemplateresponsetypedef)
-  - [GetWorkflowRequestRequestTypeDef](#getworkflowrequestrequesttypedef)
-  - [GetWorkflowResponseTypeDef](#getworkflowresponsetypedef)
-  - [GetWorkflowStepsRequestRequestTypeDef](#getworkflowstepsrequestrequesttypedef)
-  - [GetWorkflowStepsResponseTypeDef](#getworkflowstepsresponsetypedef)
   - [IdentityResolutionJobTypeDef](#identityresolutionjobtypedef)
   - [IncrementalPullConfigTypeDef](#incrementalpullconfigtypedef)
-  - [IntegrationConfigTypeDef](#integrationconfigtypedef)
   - [JobScheduleTypeDef](#jobscheduletypedef)
   - [JobStatsTypeDef](#jobstatstypedef)
   - [ListAccountIntegrationsRequestRequestTypeDef](#listaccountintegrationsrequestrequesttypedef)
@@ -90,9 +77,6 @@ type annotations stubs module
   - [ListProfileObjectsResponseTypeDef](#listprofileobjectsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
-  - [ListWorkflowsItemTypeDef](#listworkflowsitemtypedef)
-  - [ListWorkflowsRequestRequestTypeDef](#listworkflowsrequestrequesttypedef)
-  - [ListWorkflowsResponseTypeDef](#listworkflowsresponsetypedef)
   - [MarketoSourcePropertiesTypeDef](#marketosourcepropertiestypedef)
   - [MatchItemTypeDef](#matchitemtypedef)
   - [MatchingRequestTypeDef](#matchingrequesttypedef)
@@ -130,9 +114,6 @@ type annotations stubs module
   - [UpdateDomainResponseTypeDef](#updatedomainresponsetypedef)
   - [UpdateProfileRequestRequestTypeDef](#updateprofilerequestrequesttypedef)
   - [UpdateProfileResponseTypeDef](#updateprofileresponsetypedef)
-  - [WorkflowAttributesTypeDef](#workflowattributestypedef)
-  - [WorkflowMetricsTypeDef](#workflowmetricstypedef)
-  - [WorkflowStepItemTypeDef](#workflowstepitemtypedef)
   - [ZendeskSourcePropertiesTypeDef](#zendesksourcepropertiestypedef)
 
 <a id="addprofilekeyrequestrequesttypedef"></a>
@@ -186,74 +167,6 @@ Optional fields:
 - `Country`: `str`
 - `PostalCode`: `str`
 
-<a id="appflowintegrationtypedef"></a>
-
-## AppflowIntegrationTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationTypeDef
-```
-
-Required fields:
-
-- `FlowDefinition`:
-  [FlowDefinitionTypeDef](./type_defs.md#flowdefinitiontypedef)
-
-Optional fields:
-
-- `Batches`: `Sequence`\[[BatchTypeDef](./type_defs.md#batchtypedef)\]
-
-<a id="appflowintegrationworkflowattributestypedef"></a>
-
-## AppflowIntegrationWorkflowAttributesTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationWorkflowAttributesTypeDef
-```
-
-Required fields:
-
-- `SourceConnectorType`:
-  [SourceConnectorTypeType](./literals.md#sourceconnectortypetype)
-- `ConnectorProfileName`: `str`
-
-Optional fields:
-
-- `RoleArn`: `str`
-
-<a id="appflowintegrationworkflowmetricstypedef"></a>
-
-## AppflowIntegrationWorkflowMetricsTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationWorkflowMetricsTypeDef
-```
-
-Required fields:
-
-- `RecordsProcessed`: `int`
-- `StepsCompleted`: `int`
-- `TotalSteps`: `int`
-
-<a id="appflowintegrationworkflowsteptypedef"></a>
-
-## AppflowIntegrationWorkflowStepTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import AppflowIntegrationWorkflowStepTypeDef
-```
-
-Required fields:
-
-- `FlowName`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `ExecutionMessage`: `str`
-- `RecordsProcessed`: `int`
-- `BatchRecordsStartTime`: `str`
-- `BatchRecordsEndTime`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-
 <a id="automergingtypedef"></a>
 
 ## AutoMergingTypeDef
@@ -271,19 +184,6 @@ Optional fields:
 - `Consolidation`: [ConsolidationTypeDef](./type_defs.md#consolidationtypedef)
 - `ConflictResolution`:
   [ConflictResolutionTypeDef](./type_defs.md#conflictresolutiontypedef)
-
-<a id="batchtypedef"></a>
-
-## BatchTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import BatchTypeDef
-```
-
-Required fields:
-
-- `StartTime`: `Union`\[`datetime`, `str`\]
-- `EndTime`: `Union`\[`datetime`, `str`\]
 
 <a id="conflictresolutiontypedef"></a>
 
@@ -372,43 +272,6 @@ Required fields:
 - `CreatedAt`: `datetime`
 - `LastUpdatedAt`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="createintegrationworkflowrequestrequesttypedef"></a>
-
-## CreateIntegrationWorkflowRequestRequestTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import CreateIntegrationWorkflowRequestRequestTypeDef
-```
-
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `IntegrationConfig`:
-  [IntegrationConfigTypeDef](./type_defs.md#integrationconfigtypedef)
-- `ObjectTypeName`: `str`
-- `RoleArn`: `str`
-
-Optional fields:
-
-- `Tags`: `Mapping`\[`str`, `str`\]
-
-<a id="createintegrationworkflowresponsetypedef"></a>
-
-## CreateIntegrationWorkflowResponseTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import CreateIntegrationWorkflowResponseTypeDef
-```
-
-Required fields:
-
-- `WorkflowId`: `str`
-- `Message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -626,19 +489,6 @@ Required fields:
 - `Message`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deleteworkflowrequestrequesttypedef"></a>
-
-## DeleteWorkflowRequestRequestTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import DeleteWorkflowRequestRequestTypeDef
-```
-
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowId`: `str`
 
 <a id="domainstatstypedef"></a>
 
@@ -869,7 +719,6 @@ Required fields:
 - `LastUpdatedAt`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ObjectTypeNames`: `Dict`\[`str`, `str`\]
-- `WorkflowId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -981,79 +830,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-<a id="getworkflowrequestrequesttypedef"></a>
-
-## GetWorkflowRequestRequestTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import GetWorkflowRequestRequestTypeDef
-```
-
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowId`: `str`
-
-<a id="getworkflowresponsetypedef"></a>
-
-## GetWorkflowResponseTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import GetWorkflowResponseTypeDef
-```
-
-Required fields:
-
-- `WorkflowId`: `str`
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Status`: [StatusType](./literals.md#statustype)
-- `ErrorDescription`: `str`
-- `StartDate`: `datetime`
-- `LastUpdatedAt`: `datetime`
-- `Attributes`:
-  [WorkflowAttributesTypeDef](./type_defs.md#workflowattributestypedef)
-- `Metrics`: [WorkflowMetricsTypeDef](./type_defs.md#workflowmetricstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getworkflowstepsrequestrequesttypedef"></a>
-
-## GetWorkflowStepsRequestRequestTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import GetWorkflowStepsRequestRequestTypeDef
-```
-
-Required fields:
-
-- `DomainName`: `str`
-- `WorkflowId`: `str`
-
-Optional fields:
-
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="getworkflowstepsresponsetypedef"></a>
-
-## GetWorkflowStepsResponseTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import GetWorkflowStepsResponseTypeDef
-```
-
-Required fields:
-
-- `WorkflowId`: `str`
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Items`:
-  `List`\[[WorkflowStepItemTypeDef](./type_defs.md#workflowstepitemtypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 <a id="identityresolutionjobtypedef"></a>
 
 ## IdentityResolutionJobTypeDef
@@ -1086,19 +862,6 @@ from mypy_boto3_customer_profiles.type_defs import IncrementalPullConfigTypeDef
 Optional fields:
 
 - `DatetimeTypeFieldName`: `str`
-
-<a id="integrationconfigtypedef"></a>
-
-## IntegrationConfigTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import IntegrationConfigTypeDef
-```
-
-Optional fields:
-
-- `AppflowIntegration`:
-  [AppflowIntegrationTypeDef](./type_defs.md#appflowintegrationtypedef)
 
 <a id="jobscheduletypedef"></a>
 
@@ -1144,7 +907,6 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `IncludeHidden`: `bool`
 
 <a id="listaccountintegrationsresponsetypedef"></a>
 
@@ -1262,7 +1024,6 @@ Optional fields:
 - `ObjectTypeName`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ObjectTypeNames`: `Dict`\[`str`, `str`\]
-- `WorkflowId`: `str`
 
 <a id="listintegrationsrequestrequesttypedef"></a>
 
@@ -1280,7 +1041,6 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
-- `IncludeHidden`: `bool`
 
 <a id="listintegrationsresponsetypedef"></a>
 
@@ -1466,62 +1226,6 @@ from mypy_boto3_customer_profiles.type_defs import ListTagsForResourceResponseTy
 Required fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="listworkflowsitemtypedef"></a>
-
-## ListWorkflowsItemTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import ListWorkflowsItemTypeDef
-```
-
-Required fields:
-
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `WorkflowId`: `str`
-- `Status`: [StatusType](./literals.md#statustype)
-- `StatusDescription`: `str`
-- `CreatedAt`: `datetime`
-- `LastUpdatedAt`: `datetime`
-
-<a id="listworkflowsrequestrequesttypedef"></a>
-
-## ListWorkflowsRequestRequestTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import ListWorkflowsRequestRequestTypeDef
-```
-
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `WorkflowType`: `Literal['APPFLOW_INTEGRATION']` (see
-  [WorkflowTypeType](./literals.md#workflowtypetype))
-- `Status`: [StatusType](./literals.md#statustype)
-- `QueryStartDate`: `Union`\[`datetime`, `str`\]
-- `QueryEndDate`: `Union`\[`datetime`, `str`\]
-- `NextToken`: `str`
-- `MaxResults`: `int`
-
-<a id="listworkflowsresponsetypedef"></a>
-
-## ListWorkflowsResponseTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import ListWorkflowsResponseTypeDef
-```
-
-Required fields:
-
-- `Items`:
-  `List`\[[ListWorkflowsItemTypeDef](./type_defs.md#listworkflowsitemtypedef)\]
-- `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1731,7 +1435,6 @@ Required fields:
 - `LastUpdatedAt`: `datetime`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `ObjectTypeNames`: `Dict`\[`str`, `str`\]
-- `WorkflowId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2194,45 +1897,6 @@ Required fields:
 - `ProfileId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="workflowattributestypedef"></a>
-
-## WorkflowAttributesTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import WorkflowAttributesTypeDef
-```
-
-Optional fields:
-
-- `AppflowIntegration`:
-  [AppflowIntegrationWorkflowAttributesTypeDef](./type_defs.md#appflowintegrationworkflowattributestypedef)
-
-<a id="workflowmetricstypedef"></a>
-
-## WorkflowMetricsTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import WorkflowMetricsTypeDef
-```
-
-Optional fields:
-
-- `AppflowIntegration`:
-  [AppflowIntegrationWorkflowMetricsTypeDef](./type_defs.md#appflowintegrationworkflowmetricstypedef)
-
-<a id="workflowstepitemtypedef"></a>
-
-## WorkflowStepItemTypeDef
-
-```python
-from mypy_boto3_customer_profiles.type_defs import WorkflowStepItemTypeDef
-```
-
-Optional fields:
-
-- `AppflowIntegration`:
-  [AppflowIntegrationWorkflowStepTypeDef](./type_defs.md#appflowintegrationworkflowsteptypedef)
 
 <a id="zendesksourcepropertiestypedef"></a>
 

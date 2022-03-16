@@ -209,7 +209,6 @@ Values:
 - `DEPLOYMENT_OPTION`
 - `INSTANCE_TYPE`
 - `INSTANCE_TYPE_FAMILY`
-- `INVOICING_ENTITY`
 - `LEGAL_ENTITY_NAME`
 - `LINKED_ACCOUNT`
 - `LINKED_ACCOUNT_NAME`
@@ -707,7 +706,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

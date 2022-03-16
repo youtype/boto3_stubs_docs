@@ -28,7 +28,6 @@ type annotations stubs module
     - [describe_budget_action_histories](#describe_budget_action_histories)
     - [describe_budget_actions_for_account](#describe_budget_actions_for_account)
     - [describe_budget_actions_for_budget](#describe_budget_actions_for_budget)
-    - [describe_budget_notifications_for_account](#describe_budget_notifications_for_account)
     - [describe_budget_performance_history](#describe_budget_performance_history)
     - [describe_budgets](#describe_budgets)
     - [describe_notifications_for_budget](#describe_notifications_for_budget)
@@ -443,30 +442,6 @@ Keyword-only arguments:
 Returns
 [DescribeBudgetActionsForBudgetResponseTypeDef](./type_defs.md#describebudgetactionsforbudgetresponsetypedef).
 
-<a id="describe\_budget\_notifications\_for\_account"></a>
-
-### describe_budget_notifications_for_account
-
-Lists the budget names and notifications that are associated with an account.
-
-Type annotations for
-`boto3.client("budgets").describe_budget_notifications_for_account` method.
-
-Boto3 documentation:
-[Budgets.Client.describe_budget_notifications_for_account](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/budgets.html#Budgets.Client.describe_budget_notifications_for_account)
-
-Arguments mapping described in
-[DescribeBudgetNotificationsForAccountRequestRequestTypeDef](./type_defs.md#describebudgetnotificationsforaccountrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `AccountId`: `str` *(required)*
-- `MaxResults`: `int`
-- `NextToken`: `str`
-
-Returns
-[DescribeBudgetNotificationsForAccountResponseTypeDef](./type_defs.md#describebudgetnotificationsforaccountresponsetypedef).
-
 <a id="describe\_budget\_performance\_history"></a>
 
 ### describe_budget_performance_history
@@ -731,8 +706,6 @@ overloads.
   [DescribeBudgetActionsForAccountPaginator](./paginators.md#describebudgetactionsforaccountpaginator)
 - `client.get_paginator("describe_budget_actions_for_budget")` ->
   [DescribeBudgetActionsForBudgetPaginator](./paginators.md#describebudgetactionsforbudgetpaginator)
-- `client.get_paginator("describe_budget_notifications_for_account")` ->
-  [DescribeBudgetNotificationsForAccountPaginator](./paginators.md#describebudgetnotificationsforaccountpaginator)
 - `client.get_paginator("describe_budget_performance_history")` ->
   [DescribeBudgetPerformanceHistoryPaginator](./paginators.md#describebudgetperformancehistorypaginator)
 - `client.get_paginator("describe_budgets")` ->

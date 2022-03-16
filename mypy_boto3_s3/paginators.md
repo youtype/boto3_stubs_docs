@@ -188,9 +188,6 @@ Arguments for `ListPartsPaginator.paginate` method:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

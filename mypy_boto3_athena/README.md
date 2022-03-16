@@ -122,7 +122,6 @@ from mypy_boto3_athena.client import AthenaClient
 - [tag_resource](./client.md#tag_resource)
 - [untag_resource](./client.md#untag_resource)
 - [update_data_catalog](./client.md#update_data_catalog)
-- [update_named_query](./client.md#update_named_query)
 - [update_prepared_statement](./client.md#update_prepared_statement)
 - [update_work_group](./client.md#update_work_group)
 
@@ -183,7 +182,6 @@ from mypy_boto3_athena.literals import ColumnNullableType, ...
 - [ListTableMetadataPaginatorName](./literals.md#listtablemetadatapaginatorname)
 - [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
 - [QueryExecutionStateType](./literals.md#queryexecutionstatetype)
-- [S3AclOptionType](./literals.md#s3acloptiontype)
 - [StatementTypeType](./literals.md#statementtypetype)
 - [WorkGroupStateType](./literals.md#workgroupstatetype)
 - [AthenaServiceName](./literals.md#athenaservicename)
@@ -201,11 +199,9 @@ schema.
 Can be used directly:
 
 ```python
-from mypy_boto3_athena.type_defs import AclConfigurationTypeDef, ...
+from mypy_boto3_athena.type_defs import BatchGetNamedQueryInputRequestTypeDef, ...
 ```
 
-- [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
-- [AthenaErrorTypeDef](./type_defs.md#athenaerrortypedef)
 - [BatchGetNamedQueryInputRequestTypeDef](./type_defs.md#batchgetnamedqueryinputrequesttypedef)
 - [BatchGetNamedQueryOutputTypeDef](./type_defs.md#batchgetnamedqueryoutputtypedef)
 - [BatchGetQueryExecutionInputRequestTypeDef](./type_defs.md#batchgetqueryexecutioninputrequesttypedef)
@@ -285,7 +281,6 @@ from mypy_boto3_athena.type_defs import AclConfigurationTypeDef, ...
 - [UnprocessedQueryExecutionIdTypeDef](./type_defs.md#unprocessedqueryexecutionidtypedef)
 - [UntagResourceInputRequestTypeDef](./type_defs.md#untagresourceinputrequesttypedef)
 - [UpdateDataCatalogInputRequestTypeDef](./type_defs.md#updatedatacataloginputrequesttypedef)
-- [UpdateNamedQueryInputRequestTypeDef](./type_defs.md#updatenamedqueryinputrequesttypedef)
 - [UpdatePreparedStatementInputRequestTypeDef](./type_defs.md#updatepreparedstatementinputrequesttypedef)
 - [UpdateWorkGroupInputRequestTypeDef](./type_defs.md#updateworkgroupinputrequesttypedef)
 - [WorkGroupConfigurationTypeDef](./type_defs.md#workgroupconfigurationtypedef)

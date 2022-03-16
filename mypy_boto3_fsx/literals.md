@@ -20,7 +20,6 @@ type annotations stubs module
   - [DataRepositoryTaskFilterNameType](#datarepositorytaskfilternametype)
   - [DataRepositoryTaskLifecycleType](#datarepositorytasklifecycletype)
   - [DataRepositoryTaskTypeType](#datarepositorytasktypetype)
-  - [DeleteFileSystemOpenZFSOptionType](#deletefilesystemopenzfsoptiontype)
   - [DeleteOpenZFSVolumeOptionType](#deleteopenzfsvolumeoptiontype)
   - [DescribeBackupsPaginatorName](#describebackupspaginatorname)
   - [DescribeFileSystemsPaginatorName](#describefilesystemspaginatorname)
@@ -219,18 +218,6 @@ Values:
 
 - `EXPORT_TO_REPOSITORY`
 - `IMPORT_METADATA_FROM_REPOSITORY`
-
-<a id="deletefilesystemopenzfsoptiontype"></a>
-
-## DeleteFileSystemOpenZFSOptionType
-
-```python
-from mypy_boto3_fsx.literals import DeleteFileSystemOpenZFSOptionType
-```
-
-Values:
-
-- `DELETE_CHILD_VOLUMES_AND_SNAPSHOTS`
 
 <a id="deleteopenzfsvolumeoptiontype"></a>
 
@@ -474,7 +461,6 @@ from mypy_boto3_fsx.literals import OpenZFSDataCompressionTypeType
 
 Values:
 
-- `LZ4`
 - `NONE`
 - `ZSTD`
 
@@ -944,7 +930,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

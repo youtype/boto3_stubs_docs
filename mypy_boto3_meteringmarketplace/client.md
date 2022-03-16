@@ -96,7 +96,7 @@ Returns [Exceptions](#exceptions).
 
 ### batch_meter_usage
 
-`BatchMeterUsage` is called from a SaaS application listed on AWS Marketplace
+BatchMeterUsage is called from a SaaS application listed on the AWS Marketplace
 to post metering records for a set of customers.
 
 Type annotations for `boto3.client("meteringmarketplace").batch_meter_usage`
@@ -187,8 +187,8 @@ Returns [MeterUsageResultTypeDef](./type_defs.md#meterusageresulttypedef).
 ### register_usage
 
 Paid container software products sold through AWS Marketplace must integrate
-with the AWS Marketplace Metering Service and call the `RegisterUsage`
-operation for software entitlement and metering.
+with the AWS Marketplace Metering Service and call the RegisterUsage operation
+for software entitlement and metering.
 
 Type annotations for `boto3.client("meteringmarketplace").register_usage`
 method.
@@ -212,7 +212,7 @@ Returns
 
 ### resolve_customer
 
-`ResolveCustomer` is called by a SaaS application during the registration
+ResolveCustomer is called by a SaaS application during the registration
 process.
 
 Type annotations for `boto3.client("meteringmarketplace").resolve_customer`

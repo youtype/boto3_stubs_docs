@@ -19,7 +19,6 @@ type annotations stubs module
     - [Methods](#methods)
     - [Exceptions](#exceptions)
   - [Paginators](#paginators)
-  - [Waiters](#waiters)
   - [Literals](#literals)
   - [Typed dictionaries](#typed-dictionaries)
 
@@ -107,7 +106,6 @@ from mypy_boto3_transfer.client import TransferClient
 - [exceptions](./client.md#exceptions)
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
-- [get_waiter](./client.md#get_waiter)
 - [import_ssh_public_key](./client.md#import_ssh_public_key)
 - [list_accesses](./client.md#list_accesses)
 - [list_executions](./client.md#list_executions)
@@ -153,32 +151,10 @@ Type annotations for [paginators](./paginators.md) from
 Can be used directly:
 
 ```python
-from mypy_boto3_transfer.paginator import ListAccessesPaginator, ...
+from mypy_boto3_transfer.paginator import ListServersPaginator, ...
 ```
 
-- [ListAccessesPaginator](./paginators.md#listaccessespaginator)
-- [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
-- [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
 - [ListServersPaginator](./paginators.md#listserverspaginator)
-- [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
-- [ListUsersPaginator](./paginators.md#listuserspaginator)
-- [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
-
-<a id="waiters"></a>
-
-## Waiters
-
-Type annotations for [waiters](./waiters.md) from
-`boto3.client("transfer").get_waiter("...")`.
-
-Can be used directly:
-
-```python
-from mypy_boto3_transfer.waiter import ServerOfflineWaiter, ...
-```
-
-- [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
-- [ServerOnlineWaiter](./waiters.md#serveronlinewaiter)
 
 <a id="literals"></a>
 
@@ -199,17 +175,9 @@ from mypy_boto3_transfer.literals import CustomStepStatusType, ...
 - [ExecutionStatusType](./literals.md#executionstatustype)
 - [HomeDirectoryTypeType](./literals.md#homedirectorytypetype)
 - [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
-- [ListAccessesPaginatorName](./literals.md#listaccessespaginatorname)
-- [ListExecutionsPaginatorName](./literals.md#listexecutionspaginatorname)
-- [ListSecurityPoliciesPaginatorName](./literals.md#listsecuritypoliciespaginatorname)
 - [ListServersPaginatorName](./literals.md#listserverspaginatorname)
-- [ListTagsForResourcePaginatorName](./literals.md#listtagsforresourcepaginatorname)
-- [ListUsersPaginatorName](./literals.md#listuserspaginatorname)
-- [ListWorkflowsPaginatorName](./literals.md#listworkflowspaginatorname)
 - [OverwriteExistingType](./literals.md#overwriteexistingtype)
 - [ProtocolType](./literals.md#protocoltype)
-- [ServerOfflineWaiterName](./literals.md#serverofflinewaitername)
-- [ServerOnlineWaiterName](./literals.md#serveronlinewaitername)
 - [StateType](./literals.md#statetype)
 - [TlsSessionResumptionModeType](./literals.md#tlssessionresumptionmodetype)
 - [WorkflowStepTypeType](./literals.md#workflowsteptypetype)
@@ -217,7 +185,6 @@ from mypy_boto3_transfer.literals import CustomStepStatusType, ...
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
 - [PaginatorName](./literals.md#paginatorname)
-- [WaiterName](./literals.md#waitername)
 
 <a id="typed-dictionaries"></a>
 
@@ -322,7 +289,6 @@ from mypy_boto3_transfer.type_defs import CopyStepDetailsTypeDef, ...
 - [UpdateUserRequestRequestTypeDef](./type_defs.md#updateuserrequestrequesttypedef)
 - [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef)
 - [UserDetailsTypeDef](./type_defs.md#userdetailstypedef)
-- [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
 - [WorkflowDetailTypeDef](./type_defs.md#workflowdetailtypedef)
 - [WorkflowDetailsTypeDef](./type_defs.md#workflowdetailstypedef)
 - [WorkflowStepTypeDef](./type_defs.md#workflowsteptypedef)

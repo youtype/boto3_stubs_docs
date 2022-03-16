@@ -114,7 +114,7 @@ Required fields:
 - `name`: `str`
 - `description`: `str`
 - `repository`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
+- `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
 - `createTime`: `datetime`
 - `updateTime`: `datetime`
 - `environmentVariables`: `Dict`\[`str`, `str`\]
@@ -138,8 +138,6 @@ Optional fields:
 - `autoBranchCreationPatterns`: `List`\[`str`\]
 - `autoBranchCreationConfig`:
   [AutoBranchCreationConfigTypeDef](./type_defs.md#autobranchcreationconfigtypedef)
-- `repositoryCloneMethod`:
-  [RepositoryCloneMethodType](./literals.md#repositoryclonemethodtype)
 
 <a id="artifacttypedef"></a>
 
@@ -252,7 +250,7 @@ Optional fields:
 
 - `description`: `str`
 - `repository`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
+- `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
 - `iamServiceRoleArn`: `str`
 - `oauthToken`: `str`
 - `accessToken`: `str`
@@ -1415,7 +1413,7 @@ Optional fields:
 
 - `name`: `str`
 - `description`: `str`
-- `platform`: [PlatformType](./literals.md#platformtype)
+- `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
 - `iamServiceRoleArn`: `str`
 - `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `enableBranchAutoBuild`: `bool`
@@ -1505,12 +1503,12 @@ Required fields:
 
 - `appId`: `str`
 - `domainName`: `str`
+- `subDomainSettings`:
+  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
 
 Optional fields:
 
 - `enableAutoSubDomain`: `bool`
-- `subDomainSettings`:
-  `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
 - `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 

@@ -32,9 +32,6 @@ type annotations stubs module
   - [AutoTuneTypeDef](#autotunetypedef)
   - [CancelServiceSoftwareUpdateRequestRequestTypeDef](#cancelservicesoftwareupdaterequestrequesttypedef)
   - [CancelServiceSoftwareUpdateResponseTypeDef](#cancelservicesoftwareupdateresponsetypedef)
-  - [ChangeProgressDetailsTypeDef](#changeprogressdetailstypedef)
-  - [ChangeProgressStageTypeDef](#changeprogressstagetypedef)
-  - [ChangeProgressStatusDetailsTypeDef](#changeprogressstatusdetailstypedef)
   - [ClusterConfigStatusTypeDef](#clusterconfigstatustypedef)
   - [ClusterConfigTypeDef](#clusterconfigtypedef)
   - [CognitoOptionsStatusTypeDef](#cognitooptionsstatustypedef)
@@ -57,8 +54,6 @@ type annotations stubs module
   - [DeletePackageResponseTypeDef](#deletepackageresponsetypedef)
   - [DescribeDomainAutoTunesRequestRequestTypeDef](#describedomainautotunesrequestrequesttypedef)
   - [DescribeDomainAutoTunesResponseTypeDef](#describedomainautotunesresponsetypedef)
-  - [DescribeDomainChangeProgressRequestRequestTypeDef](#describedomainchangeprogressrequestrequesttypedef)
-  - [DescribeDomainChangeProgressResponseTypeDef](#describedomainchangeprogressresponsetypedef)
   - [DescribeDomainConfigRequestRequestTypeDef](#describedomainconfigrequestrequesttypedef)
   - [DescribeDomainConfigResponseTypeDef](#describedomainconfigresponsetypedef)
   - [DescribeDomainRequestRequestTypeDef](#describedomainrequestrequesttypedef)
@@ -279,7 +274,6 @@ Optional fields:
   [MasterUserOptionsTypeDef](./type_defs.md#masteruseroptionstypedef)
 - `SAMLOptions`:
   [SAMLOptionsInputTypeDef](./type_defs.md#samloptionsinputtypedef)
-- `AnonymousAuthEnabled`: `bool`
 
 <a id="advancedsecurityoptionsstatustypedef"></a>
 
@@ -309,8 +303,6 @@ Optional fields:
 - `InternalUserDatabaseEnabled`: `bool`
 - `SAMLOptions`:
   [SAMLOptionsOutputTypeDef](./type_defs.md#samloptionsoutputtypedef)
-- `AnonymousAuthDisableDate`: `datetime`
-- `AnonymousAuthEnabled`: `bool`
 
 <a id="associatepackagerequestrequesttypedef"></a>
 
@@ -486,53 +478,6 @@ Required fields:
   [ServiceSoftwareOptionsTypeDef](./type_defs.md#servicesoftwareoptionstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="changeprogressdetailstypedef"></a>
-
-## ChangeProgressDetailsTypeDef
-
-```python
-from mypy_boto3_opensearch.type_defs import ChangeProgressDetailsTypeDef
-```
-
-Optional fields:
-
-- `ChangeId`: `str`
-- `Message`: `str`
-
-<a id="changeprogressstagetypedef"></a>
-
-## ChangeProgressStageTypeDef
-
-```python
-from mypy_boto3_opensearch.type_defs import ChangeProgressStageTypeDef
-```
-
-Optional fields:
-
-- `Name`: `str`
-- `Status`: `str`
-- `Description`: `str`
-- `LastUpdated`: `datetime`
-
-<a id="changeprogressstatusdetailstypedef"></a>
-
-## ChangeProgressStatusDetailsTypeDef
-
-```python
-from mypy_boto3_opensearch.type_defs import ChangeProgressStatusDetailsTypeDef
-```
-
-Optional fields:
-
-- `ChangeId`: `str`
-- `StartTime`: `datetime`
-- `Status`: [OverallChangeStatusType](./literals.md#overallchangestatustype)
-- `PendingProperties`: `List`\[`str`\]
-- `CompletedProperties`: `List`\[`str`\]
-- `TotalNumberOfStages`: `int`
-- `ChangeProgressStages`:
-  `List`\[[ChangeProgressStageTypeDef](./type_defs.md#changeprogressstagetypedef)\]
 
 <a id="clusterconfigstatustypedef"></a>
 
@@ -889,37 +834,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-<a id="describedomainchangeprogressrequestrequesttypedef"></a>
-
-## DescribeDomainChangeProgressRequestRequestTypeDef
-
-```python
-from mypy_boto3_opensearch.type_defs import DescribeDomainChangeProgressRequestRequestTypeDef
-```
-
-Required fields:
-
-- `DomainName`: `str`
-
-Optional fields:
-
-- `ChangeId`: `str`
-
-<a id="describedomainchangeprogressresponsetypedef"></a>
-
-## DescribeDomainChangeProgressResponseTypeDef
-
-```python
-from mypy_boto3_opensearch.type_defs import DescribeDomainChangeProgressResponseTypeDef
-```
-
-Required fields:
-
-- `ChangeProgressStatus`:
-  [ChangeProgressStatusDetailsTypeDef](./type_defs.md#changeprogressstatusdetailstypedef)
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 <a id="describedomainconfigrequestrequesttypedef"></a>
 
 ## DescribeDomainConfigRequestRequestTypeDef
@@ -1262,8 +1176,6 @@ Optional fields:
   [AdvancedSecurityOptionsStatusTypeDef](./type_defs.md#advancedsecurityoptionsstatustypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsStatusTypeDef](./type_defs.md#autotuneoptionsstatustypedef)
-- `ChangeProgressDetails`:
-  [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 
 <a id="domainendpointoptionsstatustypedef"></a>
 
@@ -1390,8 +1302,6 @@ Optional fields:
   [AdvancedSecurityOptionsTypeDef](./type_defs.md#advancedsecurityoptionstypedef)
 - `AutoTuneOptions`:
   [AutoTuneOptionsOutputTypeDef](./type_defs.md#autotuneoptionsoutputtypedef)
-- `ChangeProgressDetails`:
-  [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 
 <a id="dryrunresultstypedef"></a>
 
@@ -2509,8 +2419,6 @@ Required fields:
 - `TargetVersion`: `str`
 - `PerformCheckOnly`: `bool`
 - `AdvancedOptions`: `Dict`\[`str`, `str`\]
-- `ChangeProgressDetails`:
-  [ChangeProgressDetailsTypeDef](./type_defs.md#changeprogressdetailstypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -68,7 +68,6 @@ Values:
 
 - `ANALYSIS`
 - `ATTACHMENT`
-- `AUTOMATION`
 - `INCIDENT`
 - `METRIC`
 - `OTHER`
@@ -401,7 +400,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

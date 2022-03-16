@@ -35,7 +35,6 @@ type annotations stubs module
   - [CORSRuleTypeDef](#corsruletypedef)
   - [CSVInputTypeDef](#csvinputtypedef)
   - [CSVOutputTypeDef](#csvoutputtypedef)
-  - [ChecksumTypeDef](#checksumtypedef)
   - [ClientCopyRequestTypeDef](#clientcopyrequesttypedef)
   - [ClientDownloadFileRequestTypeDef](#clientdownloadfilerequesttypedef)
   - [ClientDownloadFileobjRequestTypeDef](#clientdownloadfileobjrequesttypedef)
@@ -153,9 +152,6 @@ type annotations stubs module
   - [GetBucketWebsiteRequestRequestTypeDef](#getbucketwebsiterequestrequesttypedef)
   - [GetObjectAclOutputTypeDef](#getobjectacloutputtypedef)
   - [GetObjectAclRequestRequestTypeDef](#getobjectaclrequestrequesttypedef)
-  - [GetObjectAttributesOutputTypeDef](#getobjectattributesoutputtypedef)
-  - [GetObjectAttributesPartsTypeDef](#getobjectattributespartstypedef)
-  - [GetObjectAttributesRequestRequestTypeDef](#getobjectattributesrequestrequesttypedef)
   - [GetObjectLegalHoldOutputTypeDef](#getobjectlegalholdoutputtypedef)
   - [GetObjectLegalHoldRequestRequestTypeDef](#getobjectlegalholdrequestrequesttypedef)
   - [GetObjectLockConfigurationOutputTypeDef](#getobjectlockconfigurationoutputtypedef)
@@ -246,7 +242,6 @@ type annotations stubs module
   - [ObjectLockRetentionTypeDef](#objectlockretentiontypedef)
   - [ObjectLockRuleTypeDef](#objectlockruletypedef)
   - [ObjectMultipartUploadRequestTypeDef](#objectmultipartuploadrequesttypedef)
-  - [ObjectPartTypeDef](#objectparttypedef)
   - [ObjectSummaryMultipartUploadRequestTypeDef](#objectsummarymultipartuploadrequesttypedef)
   - [ObjectSummaryVersionRequestTypeDef](#objectsummaryversionrequesttypedef)
   - [ObjectTypeDef](#objecttypedef)
@@ -781,21 +776,6 @@ Optional fields:
 - `FieldDelimiter`: `str`
 - `QuoteCharacter`: `str`
 
-<a id="checksumtypedef"></a>
-
-## ChecksumTypeDef
-
-```python
-from mypy_boto3_s3.type_defs import ChecksumTypeDef
-```
-
-Optional fields:
-
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
 <a id="clientcopyrequesttypedef"></a>
 
 ## ClientCopyRequestTypeDef
@@ -959,10 +939,6 @@ Required fields:
 - `Key`: `str`
 - `Expiration`: `str`
 - `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `VersionId`: `str`
@@ -985,16 +961,9 @@ Optional fields:
 
 - `MultipartUpload`:
   [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
 
 <a id="completemultipartuploadrequestrequesttypedef"></a>
 
@@ -1014,16 +983,9 @@ Optional fields:
 
 - `MultipartUpload`:
   [CompletedMultipartUploadTypeDef](./type_defs.md#completedmultipartuploadtypedef)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
 
 <a id="completedmultipartuploadtypedef"></a>
 
@@ -1049,10 +1011,6 @@ from mypy_boto3_s3.type_defs import CompletedPartTypeDef
 Optional fields:
 
 - `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `PartNumber`: `int`
 
 <a id="conditiontypedef"></a>
@@ -1111,8 +1069,6 @@ Optional fields:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
@@ -1170,8 +1126,6 @@ Optional fields:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
@@ -1232,8 +1186,6 @@ Optional fields:
 
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `CacheControl`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ContentDisposition`: `str`
 - `ContentEncoding`: `str`
 - `ContentLanguage`: `str`
@@ -1287,10 +1239,6 @@ Optional fields:
 
 - `ETag`: `str`
 - `LastModified`: `datetime`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 
 <a id="copypartresulttypedef"></a>
 
@@ -1304,10 +1252,6 @@ Optional fields:
 
 - `ETag`: `str`
 - `LastModified`: `datetime`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 
 <a id="copysourcetypedef"></a>
 
@@ -1448,8 +1392,6 @@ Required fields:
 - `BucketKeyEnabled`: `bool`
 - `RequestCharged`: `Literal['requester']` (see
   [RequestChargedType](./literals.md#requestchargedtype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1493,8 +1435,6 @@ Optional fields:
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="createmultipartuploadrequestobjecttypedef"></a>
 
@@ -1536,8 +1476,6 @@ Optional fields:
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="createmultipartuploadrequestrequesttypedef"></a>
 
@@ -1584,8 +1522,6 @@ Optional fields:
 - `ObjectLockLegalHoldStatus`:
   [ObjectLockLegalHoldStatusType](./literals.md#objectlocklegalholdstatustype)
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="defaultretentiontypedef"></a>
 
@@ -2081,8 +2017,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="deleteobjectsrequestrequesttypedef"></a>
 
@@ -2104,8 +2038,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `BypassGovernanceRetention`: `bool`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="deletepublicaccessblockrequestrequesttypedef"></a>
 
@@ -2948,74 +2880,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
 
-<a id="getobjectattributesoutputtypedef"></a>
-
-## GetObjectAttributesOutputTypeDef
-
-```python
-from mypy_boto3_s3.type_defs import GetObjectAttributesOutputTypeDef
-```
-
-Required fields:
-
-- `DeleteMarker`: `bool`
-- `LastModified`: `datetime`
-- `VersionId`: `str`
-- `RequestCharged`: `Literal['requester']` (see
-  [RequestChargedType](./literals.md#requestchargedtype))
-- `ETag`: `str`
-- `Checksum`: [ChecksumTypeDef](./type_defs.md#checksumtypedef)
-- `ObjectParts`:
-  [GetObjectAttributesPartsTypeDef](./type_defs.md#getobjectattributespartstypedef)
-- `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
-- `ObjectSize`: `int`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getobjectattributespartstypedef"></a>
-
-## GetObjectAttributesPartsTypeDef
-
-```python
-from mypy_boto3_s3.type_defs import GetObjectAttributesPartsTypeDef
-```
-
-Optional fields:
-
-- `TotalPartsCount`: `int`
-- `PartNumberMarker`: `int`
-- `NextPartNumberMarker`: `int`
-- `MaxParts`: `int`
-- `IsTruncated`: `bool`
-- `Parts`: `List`\[[ObjectPartTypeDef](./type_defs.md#objectparttypedef)\]
-
-<a id="getobjectattributesrequestrequesttypedef"></a>
-
-## GetObjectAttributesRequestRequestTypeDef
-
-```python
-from mypy_boto3_s3.type_defs import GetObjectAttributesRequestRequestTypeDef
-```
-
-Required fields:
-
-- `Bucket`: `str`
-- `Key`: `str`
-- `ObjectAttributes`:
-  `Sequence`\[[ObjectAttributesType](./literals.md#objectattributestype)\]
-
-Optional fields:
-
-- `VersionId`: `str`
-- `MaxParts`: `int`
-- `PartNumberMarker`: `int`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
-- `RequestPayer`: `Literal['requester']` (see
-  [RequestPayerType](./literals.md#requestpayertype))
-- `ExpectedBucketOwner`: `str`
-
 <a id="getobjectlegalholdoutputtypedef"></a>
 
 ## GetObjectLegalHoldOutputTypeDef
@@ -3100,10 +2964,6 @@ Required fields:
 - `LastModified`: `datetime`
 - `ContentLength`: `int`
 - `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `MissingMeta`: `int`
 - `VersionId`: `str`
 - `CacheControl`: `str`
@@ -3164,8 +3024,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 <a id="getobjectrequestobjecttypedef"></a>
 
@@ -3196,8 +3054,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 <a id="getobjectrequestobjectversiontypedef"></a>
 
@@ -3227,8 +3083,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 <a id="getobjectrequestrequesttypedef"></a>
 
@@ -3264,8 +3118,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 <a id="getobjectretentionoutputtypedef"></a>
 
@@ -3480,10 +3332,6 @@ Required fields:
 - `ArchiveStatus`: [ArchiveStatusType](./literals.md#archivestatustype)
 - `LastModified`: `datetime`
 - `ContentLength`: `int`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `ETag`: `str`
 - `MissingMeta`: `int`
 - `VersionId`: `str`
@@ -3536,8 +3384,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 <a id="headobjectrequestrequesttypedef"></a>
 
@@ -3567,8 +3413,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `PartNumber`: `int`
 - `ExpectedBucketOwner`: `str`
-- `ChecksumMode`: `Literal['ENABLED']` (see
-  [ChecksumModeType](./literals.md#checksummodetype))
 
 <a id="indexdocumentresponsemetadatatypedef"></a>
 
@@ -4297,8 +4141,6 @@ Required fields:
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `RequestCharged`: `Literal['requester']` (see
   [RequestChargedType](./literals.md#requestchargedtype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -4323,9 +4165,6 @@ Optional fields:
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
 - `ExpectedBucketOwner`: `str`
-- `SSECustomerAlgorithm`: `str`
-- `SSECustomerKey`: `str`
-- `SSECustomerKeyMD5`: `str`
 
 <a id="loggingenabledresponsemetadatatypedef"></a>
 
@@ -4465,8 +4304,6 @@ Optional fields:
 - `StorageClass`: [StorageClassType](./literals.md#storageclasstype)
 - `Owner`: [OwnerTypeDef](./type_defs.md#ownertypedef)
 - `Initiator`: [InitiatorTypeDef](./type_defs.md#initiatortypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="noncurrentversionexpirationtypedef"></a>
 
@@ -4719,23 +4556,6 @@ Required fields:
 
 - `id`: `str`
 
-<a id="objectparttypedef"></a>
-
-## ObjectPartTypeDef
-
-```python
-from mypy_boto3_s3.type_defs import ObjectPartTypeDef
-```
-
-Optional fields:
-
-- `PartNumber`: `int`
-- `Size`: `int`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
-
 <a id="objectsummarymultipartuploadrequesttypedef"></a>
 
 ## ObjectSummaryMultipartUploadRequestTypeDef
@@ -4773,8 +4593,6 @@ Optional fields:
 - `Key`: `str`
 - `LastModified`: `datetime`
 - `ETag`: `str`
-- `ChecksumAlgorithm`:
-  `List`\[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)\]
 - `Size`: `int`
 - `StorageClass`:
   [ObjectStorageClassType](./literals.md#objectstorageclasstype)
@@ -4839,8 +4657,6 @@ from mypy_boto3_s3.type_defs import ObjectVersionTypeDef
 Optional fields:
 
 - `ETag`: `str`
-- `ChecksumAlgorithm`:
-  `List`\[[ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)\]
 - `Size`: `int`
 - `StorageClass`: `Literal['STANDARD']` (see
   [ObjectVersionStorageClassType](./literals.md#objectversionstorageclasstype))
@@ -4956,10 +4772,6 @@ Optional fields:
 - `LastModified`: `datetime`
 - `ETag`: `str`
 - `Size`: `int`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 
 <a id="policystatustypedef"></a>
 
@@ -5031,8 +4843,6 @@ Required fields:
 Optional fields:
 
 - `ExpectedBucketOwner`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 
 <a id="putbucketaclrequestbucketacltypedef"></a>
 
@@ -5047,8 +4857,6 @@ Optional fields:
 - `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -5073,8 +4881,6 @@ Optional fields:
 - `ACL`: [BucketCannedACLType](./literals.md#bucketcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -5116,8 +4922,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketcorsrequestrequesttypedef"></a>
@@ -5136,8 +4940,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketencryptionrequestrequesttypedef"></a>
@@ -5157,8 +4959,6 @@ Required fields:
 Optional fields:
 
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketintelligenttieringconfigurationrequestrequesttypedef"></a>
@@ -5205,8 +5005,6 @@ from mypy_boto3_s3.type_defs import PutBucketLifecycleConfigurationRequestBucket
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `LifecycleConfiguration`:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
@@ -5225,8 +5023,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `LifecycleConfiguration`:
   [BucketLifecycleConfigurationTypeDef](./type_defs.md#bucketlifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
@@ -5241,8 +5037,6 @@ from mypy_boto3_s3.type_defs import PutBucketLifecycleRequestBucketLifecycleType
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
@@ -5261,8 +5055,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `LifecycleConfiguration`:
   [LifecycleConfigurationTypeDef](./type_defs.md#lifecycleconfigurationtypedef)
 - `ExpectedBucketOwner`: `str`
@@ -5282,8 +5074,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketloggingrequestrequesttypedef"></a>
@@ -5302,8 +5092,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketmetricsconfigurationrequestrequesttypedef"></a>
@@ -5378,8 +5166,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketownershipcontrolsrequestrequesttypedef"></a>
@@ -5415,8 +5201,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
 
@@ -5435,8 +5219,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ConfirmRemoveSelfBucketAccess`: `bool`
 - `ExpectedBucketOwner`: `str`
 
@@ -5456,8 +5238,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `Token`: `str`
 - `ExpectedBucketOwner`: `str`
 
@@ -5476,8 +5256,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketrequestpaymentrequestrequesttypedef"></a>
@@ -5496,8 +5274,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbuckettaggingrequestbuckettaggingtypedef"></a>
@@ -5514,8 +5290,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbuckettaggingrequestrequesttypedef"></a>
@@ -5533,8 +5307,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketversioningrequestbucketversioningtypedef"></a>
@@ -5552,8 +5324,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
 
@@ -5573,8 +5343,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `MFA`: `str`
 - `ExpectedBucketOwner`: `str`
 
@@ -5593,8 +5361,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putbucketwebsiterequestrequesttypedef"></a>
@@ -5613,8 +5379,6 @@ Required fields:
 
 Optional fields:
 
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putobjectacloutputtypedef"></a>
@@ -5645,8 +5409,6 @@ Optional fields:
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -5675,8 +5437,6 @@ Optional fields:
 - `ACL`: [ObjectCannedACLType](./literals.md#objectcannedacltype)
 - `AccessControlPolicy`:
   [AccessControlPolicyTypeDef](./type_defs.md#accesscontrolpolicytypedef)
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
 - `GrantReadACP`: `str`
@@ -5723,8 +5483,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `VersionId`: `str`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putobjectlockconfigurationoutputtypedef"></a>
@@ -5762,8 +5520,6 @@ Optional fields:
   [RequestPayerType](./literals.md#requestpayertype))
 - `Token`: `str`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putobjectoutputtypedef"></a>
@@ -5778,10 +5534,6 @@ Required fields:
 
 - `Expiration`: `str`
 - `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `VersionId`: `str`
@@ -5818,12 +5570,6 @@ Optional fields:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
@@ -5868,12 +5614,6 @@ Optional fields:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
@@ -5918,12 +5658,6 @@ Optional fields:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
@@ -5973,12 +5707,6 @@ Optional fields:
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
 - `ContentType`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]
 - `GrantFullControl`: `str`
 - `GrantRead`: `str`
@@ -6041,8 +5769,6 @@ Optional fields:
 - `VersionId`: `str`
 - `BypassGovernanceRetention`: `bool`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="putobjecttaggingoutputtypedef"></a>
@@ -6077,8 +5803,6 @@ Optional fields:
 
 - `VersionId`: `str`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
@@ -6100,8 +5824,6 @@ Required fields:
 Optional fields:
 
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="queueconfigurationdeprecatedtypedef"></a>
@@ -6378,8 +6100,6 @@ Optional fields:
   [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="restoreobjectrequestobjecttypedef"></a>
@@ -6397,8 +6117,6 @@ Optional fields:
   [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="restoreobjectrequestrequesttypedef"></a>
@@ -6421,8 +6139,6 @@ Optional fields:
   [RestoreRequestTypeDef](./type_defs.md#restorerequesttypedef)
 - `RequestPayer`: `Literal['requester']` (see
   [RequestPayerType](./literals.md#requestpayertype))
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
 - `ExpectedBucketOwner`: `str`
 
 <a id="restorerequesttypedef"></a>
@@ -7186,10 +6902,6 @@ Required fields:
 - `ServerSideEncryption`:
   [ServerSideEncryptionType](./literals.md#serversideencryptiontype)
 - `ETag`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKeyMD5`: `str`
 - `SSEKMSKeyId`: `str`
@@ -7212,12 +6924,6 @@ Optional fields:
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
@@ -7245,12 +6951,6 @@ Optional fields:
 - `Body`: `Union`\[`bytes`, `IO`\[`bytes`\], `StreamingBody`\]
 - `ContentLength`: `int`
 - `ContentMD5`: `str`
-- `ChecksumAlgorithm`:
-  [ChecksumAlgorithmType](./literals.md#checksumalgorithmtype)
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `SSECustomerAlgorithm`: `str`
 - `SSECustomerKey`: `str`
 - `SSECustomerKeyMD5`: `str`
@@ -7329,10 +7029,6 @@ Optional fields:
 - `ContentLength`: `int`
 - `ContentRange`: `str`
 - `ContentType`: `str`
-- `ChecksumCRC32`: `str`
-- `ChecksumCRC32C`: `str`
-- `ChecksumSHA1`: `str`
-- `ChecksumSHA256`: `str`
 - `DeleteMarker`: `bool`
 - `ETag`: `str`
 - `Expires`: `Union`\[`datetime`, `str`\]

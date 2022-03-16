@@ -48,7 +48,6 @@ type annotations stubs module
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_data_catalog](#update_data_catalog)
-    - [update_named_query](#update_named_query)
     - [update_prepared_statement](#update_prepared_statement)
     - [update_work_group](#update_work_group)
     - [get_paginator](#get_paginator)
@@ -867,29 +866,6 @@ Keyword-only arguments:
 - `Type`: [DataCatalogTypeType](./literals.md#datacatalogtypetype) *(required)*
 - `Description`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="update\_named\_query"></a>
-
-### update_named_query
-
-Updates a NamedQuery object.
-
-Type annotations for `boto3.client("athena").update_named_query` method.
-
-Boto3 documentation:
-[Athena.Client.update_named_query](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html#Athena.Client.update_named_query)
-
-Arguments mapping described in
-[UpdateNamedQueryInputRequestTypeDef](./type_defs.md#updatenamedqueryinputrequesttypedef).
-
-Keyword-only arguments:
-
-- `NamedQueryId`: `str` *(required)*
-- `Name`: `str` *(required)*
-- `QueryString`: `str` *(required)*
-- `Description`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

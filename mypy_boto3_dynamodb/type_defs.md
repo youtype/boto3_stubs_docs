@@ -1539,7 +1539,6 @@ Optional fields:
 - `NextToken`: `str`
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
-- `Limit`: `int`
 
 <a id="executestatementoutputtypedef"></a>
 
@@ -1558,10 +1557,6 @@ Required fields:
 - `NextToken`: `str`
 - `ConsumedCapacity`:
   [ConsumedCapacityTypeDef](./type_defs.md#consumedcapacitytypedef)
-- `LastEvaluatedKey`: `Dict`\[`str`, `Union`\[`bytes`, `bytearray`, `str`,
-  `int`, `Decimal`, `bool`, `Set`\[`int`\], `Set`\[`Decimal`\], `Set`\[`str`\],
-  `Set`\[`bytes`\], `Set`\[`bytearray`\], `Sequence`\[`Any`\],
-  `Mapping`\[`str`, `Any`\], `None`\]\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

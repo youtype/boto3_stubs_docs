@@ -19,7 +19,6 @@ type annotations stubs module
     - [create_flow](#create_flow)
     - [delete_connector_profile](#delete_connector_profile)
     - [delete_flow](#delete_flow)
-    - [describe_connector](#describe_connector)
     - [describe_connector_entity](#describe_connector_entity)
     - [describe_connector_profiles](#describe_connector_profiles)
     - [describe_connectors](#describe_connectors)
@@ -27,14 +26,11 @@ type annotations stubs module
     - [describe_flow_execution_records](#describe_flow_execution_records)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_connector_entities](#list_connector_entities)
-    - [list_connectors](#list_connectors)
     - [list_flows](#list_flows)
     - [list_tags_for_resource](#list_tags_for_resource)
-    - [register_connector](#register_connector)
     - [start_flow](#start_flow)
     - [stop_flow](#stop_flow)
     - [tag_resource](#tag_resource)
-    - [unregister_connector](#unregister_connector)
     - [untag_resource](#untag_resource)
     - [update_connector_profile](#update_connector_profile)
     - [update_flow](#update_flow)
@@ -68,13 +64,12 @@ static analysis directly:
 ```python
 from mypy_boto3_appflow.client import Exceptions
 
-def handle_error(exc: Exceptions.AccessDeniedException) -> None:
+def handle_error(exc: Exceptions.ClientError) -> None:
     ...
 ```
 
 Exceptions:
 
-- `Exceptions.AccessDeniedException`
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
 - `Exceptions.ConnectorAuthenticationException`
@@ -82,7 +77,6 @@ Exceptions:
 - `Exceptions.InternalServerException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
-- `Exceptions.ThrottlingException`
 - `Exceptions.UnsupportedOperationException`
 - `Exceptions.ValidationException`
 
@@ -146,7 +140,6 @@ Keyword-only arguments:
   [ConnectorProfileConfigTypeDef](./type_defs.md#connectorprofileconfigtypedef)
   *(required)*
 - `kmsArn`: `str`
-- `connectorLabel`: `str`
 
 Returns
 [CreateConnectorProfileResponseTypeDef](./type_defs.md#createconnectorprofileresponsetypedef).
@@ -225,30 +218,6 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
-<a id="describe\_connector"></a>
-
-### describe_connector
-
-Describes the given custom connector registered in your Amazon Web Services
-account.
-
-Type annotations for `boto3.client("appflow").describe_connector` method.
-
-Boto3 documentation:
-[Appflow.Client.describe_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.describe_connector)
-
-Arguments mapping described in
-[DescribeConnectorRequestRequestTypeDef](./type_defs.md#describeconnectorrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-  *(required)*
-- `connectorLabel`: `str`
-
-Returns
-[DescribeConnectorResponseTypeDef](./type_defs.md#describeconnectorresponsetypedef).
-
 <a id="describe\_connector\_entity"></a>
 
 ### describe_connector_entity
@@ -270,7 +239,6 @@ Keyword-only arguments:
 - `connectorEntityName`: `str` *(required)*
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `connectorProfileName`: `str`
-- `apiVersion`: `str`
 
 Returns
 [DescribeConnectorEntityResponseTypeDef](./type_defs.md#describeconnectorentityresponsetypedef).
@@ -295,7 +263,6 @@ Keyword-only arguments:
 
 - `connectorProfileNames`: `Sequence`\[`str`\]
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
-- `connectorLabel`: `str`
 - `maxResults`: `int`
 - `nextToken`: `str`
 
@@ -321,7 +288,6 @@ Keyword-only arguments:
 
 - `connectorTypes`:
   `Sequence`\[[ConnectorTypeType](./literals.md#connectortypetype)\]
-- `maxResults`: `int`
 - `nextToken`: `str`
 
 Returns
@@ -411,33 +377,9 @@ Keyword-only arguments:
 - `connectorProfileName`: `str`
 - `connectorType`: [ConnectorTypeType](./literals.md#connectortypetype)
 - `entitiesPath`: `str`
-- `apiVersion`: `str`
 
 Returns
 [ListConnectorEntitiesResponseTypeDef](./type_defs.md#listconnectorentitiesresponsetypedef).
-
-<a id="list\_connectors"></a>
-
-### list_connectors
-
-Returns the list of all registered custom connectors in your Amazon Web
-Services account.
-
-Type annotations for `boto3.client("appflow").list_connectors` method.
-
-Boto3 documentation:
-[Appflow.Client.list_connectors](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.list_connectors)
-
-Arguments mapping described in
-[ListConnectorsRequestRequestTypeDef](./type_defs.md#listconnectorsrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `maxResults`: `int`
-- `nextToken`: `str`
-
-Returns
-[ListConnectorsResponseTypeDef](./type_defs.md#listconnectorsresponsetypedef).
 
 <a id="list\_flows"></a>
 
@@ -480,32 +422,6 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
-
-<a id="register\_connector"></a>
-
-### register_connector
-
-Registers a new connector with your Amazon Web Services account.
-
-Type annotations for `boto3.client("appflow").register_connector` method.
-
-Boto3 documentation:
-[Appflow.Client.register_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.register_connector)
-
-Arguments mapping described in
-[RegisterConnectorRequestRequestTypeDef](./type_defs.md#registerconnectorrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `connectorLabel`: `str`
-- `description`: `str`
-- `connectorProvisioningType`: `Literal['LAMBDA']` (see
-  [ConnectorProvisioningTypeType](./literals.md#connectorprovisioningtypetype))
-- `connectorProvisioningConfig`:
-  [ConnectorProvisioningConfigTypeDef](./type_defs.md#connectorprovisioningconfigtypedef)
-
-Returns
-[RegisterConnectorResponseTypeDef](./type_defs.md#registerconnectorresponsetypedef).
 
 <a id="start\_flow"></a>
 
@@ -565,28 +481,6 @@ Keyword-only arguments:
 
 - `resourceArn`: `str` *(required)*
 - `tags`: `Mapping`\[`str`, `str`\] *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="unregister\_connector"></a>
-
-### unregister_connector
-
-Unregisters the custom connector registered in your account that matches the
-connectorLabel provided in the request.
-
-Type annotations for `boto3.client("appflow").unregister_connector` method.
-
-Boto3 documentation:
-[Appflow.Client.unregister_connector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appflow.html#Appflow.Client.unregister_connector)
-
-Arguments mapping described in
-[UnregisterConnectorRequestRequestTypeDef](./type_defs.md#unregisterconnectorrequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `connectorLabel`: `str` *(required)*
-- `forceDelete`: `bool`
 
 Returns `Dict`\[`str`, `Any`\].
 

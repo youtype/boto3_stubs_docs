@@ -25,7 +25,6 @@ type annotations stubs module
   - [DescribeDhcpOptionsPaginator](#describedhcpoptionspaginator)
   - [DescribeEgressOnlyInternetGatewaysPaginator](#describeegressonlyinternetgatewayspaginator)
   - [DescribeExportImageTasksPaginator](#describeexportimagetaskspaginator)
-  - [DescribeFastLaunchImagesPaginator](#describefastlaunchimagespaginator)
   - [DescribeFastSnapshotRestoresPaginator](#describefastsnapshotrestorespaginator)
   - [DescribeFleetsPaginator](#describefleetspaginator)
   - [DescribeFlowLogsPaginator](#describeflowlogspaginator)
@@ -126,7 +125,6 @@ type annotations stubs module
   - [GetTransitGatewayRouteTableAssociationsPaginator](#gettransitgatewayroutetableassociationspaginator)
   - [GetTransitGatewayRouteTablePropagationsPaginator](#gettransitgatewayroutetablepropagationspaginator)
   - [GetVpnConnectionDeviceTypesPaginator](#getvpnconnectiondevicetypespaginator)
-  - [ListImagesInRecycleBinPaginator](#listimagesinrecyclebinpaginator)
   - [ListSnapshotsInRecycleBinPaginator](#listsnapshotsinrecyclebinpaginator)
   - [SearchLocalGatewayRoutesPaginator](#searchlocalgatewayroutespaginator)
   - [SearchTransitGatewayMulticastGroupsPaginator](#searchtransitgatewaymulticastgroupspaginator)
@@ -610,38 +608,6 @@ Arguments for `DescribeExportImageTasksPaginator.paginate` method:
 
 `DescribeExportImageTasksPaginator.paginate` returns
 `_PageIterator`\[[DescribeExportImageTasksResultTypeDef](./type_defs.md#describeexportimagetasksresulttypedef)\].
-
-<a id="describefastlaunchimagespaginator"></a>
-
-## DescribeFastLaunchImagesPaginator
-
-Type annotations for
-`boto3.client("ec2").get_paginator("describe_fast_launch_images")`.
-
-Can be used directly:
-
-```python
-from boto3.session import Session
-
-from mypy_boto3_ec2.paginator import DescribeFastLaunchImagesPaginator
-
-def get_describe_fast_launch_images_paginator() -> DescribeFastLaunchImagesPaginator:
-    return Session().client("ec2").get_paginator("describe_fast_launch_images")
-```
-
-Boto3 documentation:
-[EC2.Paginator.DescribeFastLaunchImages](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.DescribeFastLaunchImages)
-
-Arguments for `DescribeFastLaunchImagesPaginator.paginate` method:
-
-- `ImageIds`: `Sequence`\[`str`\]
-- `Filters`: `Sequence`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-
-`DescribeFastLaunchImagesPaginator.paginate` returns
-`_PageIterator`\[[DescribeFastLaunchImagesResultTypeDef](./type_defs.md#describefastlaunchimagesresulttypedef)\].
 
 <a id="describefastsnapshotrestorespaginator"></a>
 
@@ -3896,37 +3862,6 @@ Arguments for `GetVpnConnectionDeviceTypesPaginator.paginate` method:
 
 `GetVpnConnectionDeviceTypesPaginator.paginate` returns
 `_PageIterator`\[[GetVpnConnectionDeviceTypesResultTypeDef](./type_defs.md#getvpnconnectiondevicetypesresulttypedef)\].
-
-<a id="listimagesinrecyclebinpaginator"></a>
-
-## ListImagesInRecycleBinPaginator
-
-Type annotations for
-`boto3.client("ec2").get_paginator("list_images_in_recycle_bin")`.
-
-Can be used directly:
-
-```python
-from boto3.session import Session
-
-from mypy_boto3_ec2.paginator import ListImagesInRecycleBinPaginator
-
-def get_list_images_in_recycle_bin_paginator() -> ListImagesInRecycleBinPaginator:
-    return Session().client("ec2").get_paginator("list_images_in_recycle_bin")
-```
-
-Boto3 documentation:
-[EC2.Paginator.ListImagesInRecycleBin](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2.html#EC2.Paginator.ListImagesInRecycleBin)
-
-Arguments for `ListImagesInRecycleBinPaginator.paginate` method:
-
-- `ImageIds`: `Sequence`\[`str`\]
-- `DryRun`: `bool`
-- `PaginationConfig`:
-  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
-
-`ListImagesInRecycleBinPaginator.paginate` returns
-`_PageIterator`\[[ListImagesInRecycleBinResultTypeDef](./type_defs.md#listimagesinrecyclebinresulttypedef)\].
 
 <a id="listsnapshotsinrecyclebinpaginator"></a>
 

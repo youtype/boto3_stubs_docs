@@ -540,7 +540,6 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
 
 Returns
 [ListExperimentsResponseTypeDef](./type_defs.md#listexperimentsresponsetypedef).
@@ -587,7 +586,6 @@ Keyword-only arguments:
 - `project`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `status`: [LaunchStatusType](./literals.md#launchstatustype)
 
 Returns
 [ListLaunchesResponseTypeDef](./type_defs.md#listlaunchesresponsetypedef).

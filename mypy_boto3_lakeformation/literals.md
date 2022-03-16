@@ -18,7 +18,6 @@ type annotations stubs module
   - [ListLFTagsPaginatorName](#listlftagspaginatorname)
   - [OptimizerTypeType](#optimizertypetype)
   - [PermissionType](#permissiontype)
-  - [PermissionTypeType](#permissiontypetype)
   - [QueryStateStringType](#querystatestringtype)
   - [ResourceShareTypeType](#resourcesharetypetype)
   - [ResourceTypeType](#resourcetypetype)
@@ -162,19 +161,6 @@ Values:
 - `DROP`
 - `INSERT`
 - `SELECT`
-
-<a id="permissiontypetype"></a>
-
-## PermissionTypeType
-
-```python
-from mypy_boto3_lakeformation.literals import PermissionTypeType
-```
-
-Values:
-
-- `CELL_FILTER_PERMISSION`
-- `COLUMN_PERMISSION`
 
 <a id="querystatestringtype"></a>
 
@@ -460,7 +446,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

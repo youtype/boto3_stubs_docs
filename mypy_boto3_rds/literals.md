@@ -792,7 +792,6 @@ Values:
 - `db-cluster-snapshot`
 - `db-instance`
 - `db-parameter-group`
-- `db-proxy`
 - `db-security-group`
 - `db-snapshot`
 
@@ -1044,7 +1043,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

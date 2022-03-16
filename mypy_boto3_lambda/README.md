@@ -258,10 +258,8 @@ from mypy_boto3_lambda.waiter import FunctionActiveWaiter, ...
 ```
 
 - [FunctionActiveWaiter](./waiters.md#functionactivewaiter)
-- [FunctionActiveV2Waiter](./waiters.md#functionactivev2waiter)
 - [FunctionExistsWaiter](./waiters.md#functionexistswaiter)
 - [FunctionUpdatedWaiter](./waiters.md#functionupdatedwaiter)
-- [FunctionUpdatedV2Waiter](./waiters.md#functionupdatedv2waiter)
 
 <a id="literals"></a>
 
@@ -279,11 +277,9 @@ from mypy_boto3_lambda.literals import ArchitectureType, ...
 - [CodeSigningPolicyType](./literals.md#codesigningpolicytype)
 - [EndPointTypeType](./literals.md#endpointtypetype)
 - [EventSourcePositionType](./literals.md#eventsourcepositiontype)
-- [FunctionActiveV2WaiterName](./literals.md#functionactivev2waitername)
 - [FunctionActiveWaiterName](./literals.md#functionactivewaitername)
 - [FunctionExistsWaiterName](./literals.md#functionexistswaitername)
 - [FunctionResponseTypeType](./literals.md#functionresponsetypetype)
-- [FunctionUpdatedV2WaiterName](./literals.md#functionupdatedv2waitername)
 - [FunctionUpdatedWaiterName](./literals.md#functionupdatedwaitername)
 - [FunctionVersionType](./literals.md#functionversiontype)
 - [InvocationTypeType](./literals.md#invocationtypetype)

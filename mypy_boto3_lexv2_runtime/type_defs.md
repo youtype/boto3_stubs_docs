@@ -30,9 +30,6 @@ type annotations stubs module
   - [RecognizeUtteranceRequestRequestTypeDef](#recognizeutterancerequestrequesttypedef)
   - [RecognizeUtteranceResponseTypeDef](#recognizeutteranceresponsetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
-  - [RuntimeHintDetailsTypeDef](#runtimehintdetailstypedef)
-  - [RuntimeHintValueTypeDef](#runtimehintvaluetypedef)
-  - [RuntimeHintsTypeDef](#runtimehintstypedef)
   - [SentimentResponseTypeDef](#sentimentresponsetypedef)
   - [SentimentScoreTypeDef](#sentimentscoretypedef)
   - [SessionStateTypeDef](#sessionstatetypedef)
@@ -387,44 +384,6 @@ Required fields:
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
 
-<a id="runtimehintdetailstypedef"></a>
-
-## RuntimeHintDetailsTypeDef
-
-```python
-from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintDetailsTypeDef
-```
-
-Required fields:
-
-- `runtimeHintValues`:
-  `List`\[[RuntimeHintValueTypeDef](./type_defs.md#runtimehintvaluetypedef)\]
-
-<a id="runtimehintvaluetypedef"></a>
-
-## RuntimeHintValueTypeDef
-
-```python
-from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintValueTypeDef
-```
-
-Required fields:
-
-- `phrase`: `str`
-
-<a id="runtimehintstypedef"></a>
-
-## RuntimeHintsTypeDef
-
-```python
-from mypy_boto3_lexv2_runtime.type_defs import RuntimeHintsTypeDef
-```
-
-Optional fields:
-
-- `slotHints`: `Dict`\[`str`, `Dict`\[`str`,
-  [RuntimeHintDetailsTypeDef](./type_defs.md#runtimehintdetailstypedef)\]\]
-
 <a id="sentimentresponsetypedef"></a>
 
 ## SentimentResponseTypeDef
@@ -470,7 +429,6 @@ Optional fields:
   `List`\[[ActiveContextTypeDef](./type_defs.md#activecontexttypedef)\]
 - `sessionAttributes`: `Dict`\[`str`, `str`\]
 - `originatingRequestId`: `str`
-- `runtimeHints`: [RuntimeHintsTypeDef](./type_defs.md#runtimehintstypedef)
 
 <a id="slottypedef"></a>
 

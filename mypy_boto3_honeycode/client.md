@@ -26,11 +26,8 @@ type annotations stubs module
     - [list_table_columns](#list_table_columns)
     - [list_table_rows](#list_table_rows)
     - [list_tables](#list_tables)
-    - [list_tags_for_resource](#list_tags_for_resource)
     - [query_table_rows](#query_table_rows)
     - [start_table_data_import_job](#start_table_data_import_job)
-    - [tag_resource](#tag_resource)
-    - [untag_resource](#untag_resource)
     - [get_paginator](#get_paginator)
 
 <a id="honeycodeclient"></a>
@@ -399,27 +396,6 @@ Keyword-only arguments:
 
 Returns [ListTablesResultTypeDef](./type_defs.md#listtablesresulttypedef).
 
-<a id="list\_tags\_for\_resource"></a>
-
-### list_tags_for_resource
-
-The ListTagsForResource API allows you to return a resource's tags.
-
-Type annotations for `boto3.client("honeycode").list_tags_for_resource` method.
-
-Boto3 documentation:
-[Honeycode.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.list_tags_for_resource)
-
-Arguments mapping described in
-[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `resourceArn`: `str` *(required)*
-
-Returns
-[ListTagsForResourceResultTypeDef](./type_defs.md#listtagsforresourceresulttypedef).
-
 <a id="query\_table\_rows"></a>
 
 ### query_table_rows
@@ -477,48 +453,6 @@ Keyword-only arguments:
 
 Returns
 [StartTableDataImportJobResultTypeDef](./type_defs.md#starttabledataimportjobresulttypedef).
-
-<a id="tag\_resource"></a>
-
-### tag_resource
-
-The TagResource API allows you to add tags to an ARN-able resource.
-
-Type annotations for `boto3.client("honeycode").tag_resource` method.
-
-Boto3 documentation:
-[Honeycode.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.tag_resource)
-
-Arguments mapping described in
-[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `resourceArn`: `str` *(required)*
-- `tags`: `Mapping`\[`str`, `str`\] *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
-
-<a id="untag\_resource"></a>
-
-### untag_resource
-
-The UntagResource API allows you to removes tags from an ARN-able resource.
-
-Type annotations for `boto3.client("honeycode").untag_resource` method.
-
-Boto3 documentation:
-[Honeycode.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/honeycode.html#Honeycode.Client.untag_resource)
-
-Arguments mapping described in
-[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
-
-Keyword-only arguments:
-
-- `resourceArn`: `str` *(required)*
-- `tagKeys`: `Sequence`\[`str`\] *(required)*
-
-Returns `Dict`\[`str`, `Any`\].
 
 <a id="get_paginator"></a>
 

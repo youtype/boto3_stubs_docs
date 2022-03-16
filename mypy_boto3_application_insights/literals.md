@@ -174,7 +174,6 @@ from mypy_boto3_application_insights.literals import TierType
 
 Values:
 
-- `ACTIVE_DIRECTORY`
 - `CUSTOM`
 - `DEFAULT`
 - `DOT_NET_CORE`
@@ -188,7 +187,6 @@ Values:
 - `SAP_HANA_HIGH_AVAILABILITY`
 - `SAP_HANA_MULTI_NODE`
 - `SAP_HANA_SINGLE_NODE`
-- `SHAREPOINT`
 - `SQL_SERVER`
 - `SQL_SERVER_ALWAYSON_AVAILABILITY_GROUP`
 - `SQL_SERVER_FAILOVER_CLUSTER_INSTANCE`
@@ -367,7 +365,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

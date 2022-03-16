@@ -852,7 +852,7 @@ Optional fields:
 from mypy_boto3_auditmanager.type_defs import CreateAssessmentFrameworkControlTypeDef
 ```
 
-Required fields:
+Optional fields:
 
 - `id`: `str`
 
@@ -2435,12 +2435,12 @@ from mypy_boto3_auditmanager.type_defs import UpdateAssessmentFrameworkControlSe
 Required fields:
 
 - `name`: `str`
-- `controls`:
-  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 Optional fields:
 
 - `id`: `str`
+- `controls`:
+  `Sequence`\[[CreateAssessmentFrameworkControlTypeDef](./type_defs.md#createassessmentframeworkcontroltypedef)\]
 
 <a id="updateassessmentframeworkrequestrequesttypedef"></a>
 

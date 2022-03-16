@@ -11,7 +11,6 @@ type annotations stubs module
 
 - [Typed dictionaries for boto3 Glue module](#typed-dictionaries-for-boto3-glue-module)
   - [ActionTypeDef](#actiontypedef)
-  - [AuditContextTypeDef](#auditcontexttypedef)
   - [BackfillErrorTypeDef](#backfillerrortypedef)
   - [BatchCreatePartitionRequestRequestTypeDef](#batchcreatepartitionrequestrequesttypedef)
   - [BatchCreatePartitionResponseTypeDef](#batchcreatepartitionresponsetypedef)
@@ -64,7 +63,6 @@ type annotations stubs module
   - [CodeGenNodeTypeDef](#codegennodetypedef)
   - [ColumnErrorTypeDef](#columnerrortypedef)
   - [ColumnImportanceTypeDef](#columnimportancetypedef)
-  - [ColumnRowFilterTypeDef](#columnrowfiltertypedef)
   - [ColumnStatisticsDataTypeDef](#columnstatisticsdatatypedef)
   - [ColumnStatisticsErrorTypeDef](#columnstatisticserrortypedef)
   - [ColumnStatisticsTypeDef](#columnstatisticstypedef)
@@ -151,7 +149,6 @@ type annotations stubs module
   - [DeleteUserDefinedFunctionRequestRequestTypeDef](#deleteuserdefinedfunctionrequestrequesttypedef)
   - [DeleteWorkflowRequestRequestTypeDef](#deleteworkflowrequestrequesttypedef)
   - [DeleteWorkflowResponseTypeDef](#deleteworkflowresponsetypedef)
-  - [DeltaTargetTypeDef](#deltatargettypedef)
   - [DevEndpointCustomLibrariesTypeDef](#devendpointcustomlibrariestypedef)
   - [DevEndpointTypeDef](#devendpointtypedef)
   - [DoubleColumnStatisticsDataTypeDef](#doublecolumnstatisticsdatatypedef)
@@ -267,12 +264,6 @@ type annotations stubs module
   - [GetTriggerResponseTypeDef](#gettriggerresponsetypedef)
   - [GetTriggersRequestRequestTypeDef](#gettriggersrequestrequesttypedef)
   - [GetTriggersResponseTypeDef](#gettriggersresponsetypedef)
-  - [GetUnfilteredPartitionMetadataRequestRequestTypeDef](#getunfilteredpartitionmetadatarequestrequesttypedef)
-  - [GetUnfilteredPartitionMetadataResponseTypeDef](#getunfilteredpartitionmetadataresponsetypedef)
-  - [GetUnfilteredPartitionsMetadataRequestRequestTypeDef](#getunfilteredpartitionsmetadatarequestrequesttypedef)
-  - [GetUnfilteredPartitionsMetadataResponseTypeDef](#getunfilteredpartitionsmetadataresponsetypedef)
-  - [GetUnfilteredTableMetadataRequestRequestTypeDef](#getunfilteredtablemetadatarequestrequesttypedef)
-  - [GetUnfilteredTableMetadataResponseTypeDef](#getunfilteredtablemetadataresponsetypedef)
   - [GetUserDefinedFunctionRequestRequestTypeDef](#getuserdefinedfunctionrequestrequesttypedef)
   - [GetUserDefinedFunctionResponseTypeDef](#getuserdefinedfunctionresponsetypedef)
   - [GetUserDefinedFunctionsRequestRequestTypeDef](#getuserdefinedfunctionsrequestrequesttypedef)
@@ -301,7 +292,6 @@ type annotations stubs module
   - [JsonClassifierTypeDef](#jsonclassifiertypedef)
   - [KeySchemaElementTypeDef](#keyschemaelementtypedef)
   - [LabelingSetGenerationTaskRunPropertiesTypeDef](#labelingsetgenerationtaskrunpropertiestypedef)
-  - [LakeFormationConfigurationTypeDef](#lakeformationconfigurationtypedef)
   - [LastActiveDefinitionTypeDef](#lastactivedefinitiontypedef)
   - [LastCrawlInfoTypeDef](#lastcrawlinfotypedef)
   - [LineageConfigurationTypeDef](#lineageconfigurationtypedef)
@@ -432,7 +422,6 @@ type annotations stubs module
   - [TriggerNodeDetailsTypeDef](#triggernodedetailstypedef)
   - [TriggerTypeDef](#triggertypedef)
   - [TriggerUpdateTypeDef](#triggerupdatetypedef)
-  - [UnfilteredPartitionTypeDef](#unfilteredpartitiontypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateBlueprintRequestRequestTypeDef](#updateblueprintrequestrequesttypedef)
   - [UpdateBlueprintResponseTypeDef](#updateblueprintresponsetypedef)
@@ -490,18 +479,6 @@ Optional fields:
 - `NotificationProperty`:
   [NotificationPropertyTypeDef](./type_defs.md#notificationpropertytypedef)
 - `CrawlerName`: `str`
-
-<a id="auditcontexttypedef"></a>
-
-## AuditContextTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import AuditContextTypeDef
-```
-
-Optional fields:
-
-- `AdditionalAuditContext`: `str`
 
 <a id="backfillerrortypedef"></a>
 
@@ -1160,10 +1137,6 @@ Required fields:
 - `DatabaseName`: `str`
 - `Tables`: `List`\[`str`\]
 
-Optional fields:
-
-- `ConnectionName`: `str`
-
 <a id="checkschemaversionvalidityinputrequesttypedef"></a>
 
 ## CheckSchemaVersionValidityInputRequestTypeDef
@@ -1301,19 +1274,6 @@ Optional fields:
 
 - `ColumnName`: `str`
 - `Importance`: `float`
-
-<a id="columnrowfiltertypedef"></a>
-
-## ColumnRowFilterTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import ColumnRowFilterTypeDef
-```
-
-Optional fields:
-
-- `ColumnName`: `str`
-- `RowFilterExpression`: `str`
 
 <a id="columnstatisticsdatatypedef"></a>
 
@@ -1565,8 +1525,6 @@ Optional fields:
   `List`\[[DynamoDBTargetTypeDef](./type_defs.md#dynamodbtargettypedef)\]
 - `CatalogTargets`:
   `List`\[[CatalogTargetTypeDef](./type_defs.md#catalogtargettypedef)\]
-- `DeltaTargets`:
-  `List`\[[DeltaTargetTypeDef](./type_defs.md#deltatargettypedef)\]
 
 <a id="crawlertypedef"></a>
 
@@ -1599,8 +1557,6 @@ Optional fields:
 - `Version`: `int`
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
 
 <a id="createblueprintrequestrequesttypedef"></a>
 
@@ -1697,8 +1653,6 @@ Optional fields:
 - `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `LineageConfiguration`:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
@@ -2825,20 +2779,6 @@ Required fields:
 - `Name`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="deltatargettypedef"></a>
-
-## DeltaTargetTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import DeltaTargetTypeDef
-```
-
-Optional fields:
-
-- `DeltaTables`: `List`\[`str`\]
-- `ConnectionName`: `str`
-- `WriteManifest`: `bool`
 
 <a id="devendpointcustomlibrariestypedef"></a>
 
@@ -4648,121 +4588,6 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
-<a id="getunfilteredpartitionmetadatarequestrequesttypedef"></a>
-
-## GetUnfilteredPartitionMetadataRequestRequestTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import GetUnfilteredPartitionMetadataRequestRequestTypeDef
-```
-
-Required fields:
-
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `PartitionValues`: `Sequence`\[`str`\]
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-
-<a id="getunfilteredpartitionmetadataresponsetypedef"></a>
-
-## GetUnfilteredPartitionMetadataResponseTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import GetUnfilteredPartitionMetadataResponseTypeDef
-```
-
-Required fields:
-
-- `Partition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
-- `AuthorizedColumns`: `List`\[`str`\]
-- `IsRegisteredWithLakeFormation`: `bool`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getunfilteredpartitionsmetadatarequestrequesttypedef"></a>
-
-## GetUnfilteredPartitionsMetadataRequestRequestTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import GetUnfilteredPartitionsMetadataRequestRequestTypeDef
-```
-
-Required fields:
-
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `TableName`: `str`
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `Expression`: `str`
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-- `NextToken`: `str`
-- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
-- `MaxResults`: `int`
-
-<a id="getunfilteredpartitionsmetadataresponsetypedef"></a>
-
-## GetUnfilteredPartitionsMetadataResponseTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import GetUnfilteredPartitionsMetadataResponseTypeDef
-```
-
-Required fields:
-
-- `UnfilteredPartitions`:
-  `List`\[[UnfilteredPartitionTypeDef](./type_defs.md#unfilteredpartitiontypedef)\]
-- `NextToken`: `str`
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
-<a id="getunfilteredtablemetadatarequestrequesttypedef"></a>
-
-## GetUnfilteredTableMetadataRequestRequestTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import GetUnfilteredTableMetadataRequestRequestTypeDef
-```
-
-Required fields:
-
-- `CatalogId`: `str`
-- `DatabaseName`: `str`
-- `Name`: `str`
-- `SupportedPermissionTypes`:
-  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
-
-Optional fields:
-
-- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
-
-<a id="getunfilteredtablemetadataresponsetypedef"></a>
-
-## GetUnfilteredTableMetadataResponseTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import GetUnfilteredTableMetadataResponseTypeDef
-```
-
-Required fields:
-
-- `Table`: [TableTypeDef](./type_defs.md#tabletypedef)
-- `AuthorizedColumns`: `List`\[`str`\]
-- `IsRegisteredWithLakeFormation`: `bool`
-- `CellFilters`:
-  `List`\[[ColumnRowFilterTypeDef](./type_defs.md#columnrowfiltertypedef)\]
-- `ResponseMetadata`:
-  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
-
 <a id="getuserdefinedfunctionrequestrequesttypedef"></a>
 
 ## GetUserDefinedFunctionRequestRequestTypeDef
@@ -5245,19 +5070,6 @@ from mypy_boto3_glue.type_defs import LabelingSetGenerationTaskRunPropertiesType
 Optional fields:
 
 - `OutputS3Path`: `str`
-
-<a id="lakeformationconfigurationtypedef"></a>
-
-## LakeFormationConfigurationTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import LakeFormationConfigurationTypeDef
-```
-
-Optional fields:
-
-- `UseLakeFormationCredentials`: `bool`
-- `AccountId`: `str`
 
 <a id="lastactivedefinitiontypedef"></a>
 
@@ -6835,10 +6647,6 @@ Required fields:
 
 - `Name`: `str`
 
-Optional fields:
-
-- `RunProperties`: `Mapping`\[`str`, `str`\]
-
 <a id="startworkflowrunresponsetypedef"></a>
 
 ## StartWorkflowRunResponseTypeDef
@@ -6941,7 +6749,6 @@ Optional fields:
 
 - `Columns`: `Sequence`\[[ColumnTypeDef](./type_defs.md#columntypedef)\]
 - `Location`: `str`
-- `AdditionalLocations`: `Sequence`\[`str`\]
 - `InputFormat`: `str`
 - `OutputFormat`: `str`
 - `Compressed`: `bool`
@@ -7060,7 +6867,6 @@ Optional fields:
 - `TargetTable`:
   [TableIdentifierTypeDef](./type_defs.md#tableidentifiertypedef)
 - `CatalogId`: `str`
-- `VersionId`: `str`
 
 <a id="tableversionerrortypedef"></a>
 
@@ -7293,20 +7099,6 @@ Optional fields:
 - `EventBatchingCondition`:
   [EventBatchingConditionTypeDef](./type_defs.md#eventbatchingconditiontypedef)
 
-<a id="unfilteredpartitiontypedef"></a>
-
-## UnfilteredPartitionTypeDef
-
-```python
-from mypy_boto3_glue.type_defs import UnfilteredPartitionTypeDef
-```
-
-Optional fields:
-
-- `Partition`: [PartitionTypeDef](./type_defs.md#partitiontypedef)
-- `AuthorizedColumns`: `List`\[`str`\]
-- `IsRegisteredWithLakeFormation`: `bool`
-
 <a id="untagresourcerequestrequesttypedef"></a>
 
 ## UntagResourceRequestRequestTypeDef
@@ -7483,8 +7275,6 @@ Optional fields:
 - `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `LineageConfiguration`:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
-- `LakeFormationConfiguration`:
-  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 
@@ -7767,7 +7557,6 @@ Optional fields:
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
 - `TransactionId`: `str`
-- `VersionId`: `str`
 
 <a id="updatetriggerrequestrequesttypedef"></a>
 

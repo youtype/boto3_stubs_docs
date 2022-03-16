@@ -54,7 +54,6 @@ type annotations stubs module
   - [DescribeMultiRegionAccessPointOperationResultTypeDef](#describemultiregionaccesspointoperationresulttypedef)
   - [EstablishedMultiRegionAccessPointPolicyTypeDef](#establishedmultiregionaccesspointpolicytypedef)
   - [ExcludeTypeDef](#excludetypedef)
-  - [GeneratedManifestEncryptionTypeDef](#generatedmanifestencryptiontypedef)
   - [GetAccessPointConfigurationForObjectLambdaRequestRequestTypeDef](#getaccesspointconfigurationforobjectlambdarequestrequesttypedef)
   - [GetAccessPointConfigurationForObjectLambdaResultTypeDef](#getaccesspointconfigurationforobjectlambdaresulttypedef)
   - [GetAccessPointForObjectLambdaRequestRequestTypeDef](#getaccesspointforobjectlambdarequestrequesttypedef)
@@ -95,15 +94,12 @@ type annotations stubs module
   - [JobDescriptorTypeDef](#jobdescriptortypedef)
   - [JobFailureTypeDef](#jobfailuretypedef)
   - [JobListDescriptorTypeDef](#joblistdescriptortypedef)
-  - [JobManifestGeneratorFilterTypeDef](#jobmanifestgeneratorfiltertypedef)
-  - [JobManifestGeneratorTypeDef](#jobmanifestgeneratortypedef)
   - [JobManifestLocationTypeDef](#jobmanifestlocationtypedef)
   - [JobManifestSpecTypeDef](#jobmanifestspectypedef)
   - [JobManifestTypeDef](#jobmanifesttypedef)
   - [JobOperationTypeDef](#joboperationtypedef)
   - [JobProgressSummaryTypeDef](#jobprogresssummarytypedef)
   - [JobReportTypeDef](#jobreporttypedef)
-  - [JobTimersTypeDef](#jobtimerstypedef)
   - [LambdaInvokeOperationTypeDef](#lambdainvokeoperationtypedef)
   - [LifecycleConfigurationTypeDef](#lifecycleconfigurationtypedef)
   - [LifecycleExpirationTypeDef](#lifecycleexpirationtypedef)
@@ -160,12 +156,9 @@ type annotations stubs module
   - [S3AccessControlPolicyTypeDef](#s3accesscontrolpolicytypedef)
   - [S3BucketDestinationTypeDef](#s3bucketdestinationtypedef)
   - [S3CopyObjectOperationTypeDef](#s3copyobjectoperationtypedef)
-  - [S3GeneratedManifestDescriptorTypeDef](#s3generatedmanifestdescriptortypedef)
   - [S3GrantTypeDef](#s3granttypedef)
   - [S3GranteeTypeDef](#s3granteetypedef)
   - [S3InitiateRestoreObjectOperationTypeDef](#s3initiaterestoreobjectoperationtypedef)
-  - [S3JobManifestGeneratorTypeDef](#s3jobmanifestgeneratortypedef)
-  - [S3ManifestOutputLocationTypeDef](#s3manifestoutputlocationtypedef)
   - [S3ObjectLockLegalHoldTypeDef](#s3objectlocklegalholdtypedef)
   - [S3ObjectMetadataTypeDef](#s3objectmetadatatypedef)
   - [S3ObjectOwnerTypeDef](#s3objectownertypedef)
@@ -175,7 +168,6 @@ type annotations stubs module
   - [S3SetObjectRetentionOperationTypeDef](#s3setobjectretentionoperationtypedef)
   - [S3SetObjectTaggingOperationTypeDef](#s3setobjecttaggingoperationtypedef)
   - [S3TagTypeDef](#s3tagtypedef)
-  - [SSEKMSEncryptionTypeDef](#ssekmsencryptiontypedef)
   - [SSEKMSTypeDef](#ssekmstypedef)
   - [SelectionCriteriaTypeDef](#selectioncriteriatypedef)
   - [StorageLensAwsOrgTypeDef](#storagelensawsorgtypedef)
@@ -493,17 +485,15 @@ Required fields:
 - `Operation`: [JobOperationTypeDef](./type_defs.md#joboperationtypedef)
 - `Report`: [JobReportTypeDef](./type_defs.md#jobreporttypedef)
 - `ClientRequestToken`: `str`
+- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
 - `Priority`: `int`
 - `RoleArn`: `str`
 
 Optional fields:
 
 - `ConfirmationRequired`: `bool`
-- `Manifest`: [JobManifestTypeDef](./type_defs.md#jobmanifesttypedef)
 - `Description`: `str`
 - `Tags`: `Sequence`\[[S3TagTypeDef](./type_defs.md#s3tagtypedef)\]
-- `ManifestGenerator`:
-  [JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef)
 
 <a id="createjobresulttypedef"></a>
 
@@ -841,19 +831,6 @@ Optional fields:
 
 - `Buckets`: `List`\[`str`\]
 - `Regions`: `List`\[`str`\]
-
-<a id="generatedmanifestencryptiontypedef"></a>
-
-## GeneratedManifestEncryptionTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import GeneratedManifestEncryptionTypeDef
-```
-
-Optional fields:
-
-- `SSES3`: `Mapping`\[`str`, `Any`\]
-- `SSEKMS`: [SSEKMSEncryptionTypeDef](./type_defs.md#ssekmsencryptiontypedef)
 
 <a id="getaccesspointconfigurationforobjectlambdarequestrequesttypedef"></a>
 
@@ -1404,10 +1381,6 @@ Optional fields:
 - `RoleArn`: `str`
 - `SuspendedDate`: `datetime`
 - `SuspendedCause`: `str`
-- `ManifestGenerator`:
-  [JobManifestGeneratorTypeDef](./type_defs.md#jobmanifestgeneratortypedef)
-- `GeneratedManifestDescriptor`:
-  [S3GeneratedManifestDescriptorTypeDef](./type_defs.md#s3generatedmanifestdescriptortypedef)
 
 <a id="jobfailuretypedef"></a>
 
@@ -1441,35 +1414,6 @@ Optional fields:
 - `TerminationDate`: `datetime`
 - `ProgressSummary`:
   [JobProgressSummaryTypeDef](./type_defs.md#jobprogresssummarytypedef)
-
-<a id="jobmanifestgeneratorfiltertypedef"></a>
-
-## JobManifestGeneratorFilterTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import JobManifestGeneratorFilterTypeDef
-```
-
-Optional fields:
-
-- `EligibleForReplication`: `bool`
-- `CreatedAfter`: `Union`\[`datetime`, `str`\]
-- `CreatedBefore`: `Union`\[`datetime`, `str`\]
-- `ObjectReplicationStatuses`:
-  `Sequence`\[[ReplicationStatusType](./literals.md#replicationstatustype)\]
-
-<a id="jobmanifestgeneratortypedef"></a>
-
-## JobManifestGeneratorTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import JobManifestGeneratorTypeDef
-```
-
-Optional fields:
-
-- `S3JobManifestGenerator`:
-  [S3JobManifestGeneratorTypeDef](./type_defs.md#s3jobmanifestgeneratortypedef)
 
 <a id="jobmanifestlocationtypedef"></a>
 
@@ -1544,7 +1488,6 @@ Optional fields:
   [S3SetObjectLegalHoldOperationTypeDef](./type_defs.md#s3setobjectlegalholdoperationtypedef)
 - `S3PutObjectRetention`:
   [S3SetObjectRetentionOperationTypeDef](./type_defs.md#s3setobjectretentionoperationtypedef)
-- `S3ReplicateObject`: `Mapping`\[`str`, `Any`\]
 
 <a id="jobprogresssummarytypedef"></a>
 
@@ -1559,7 +1502,6 @@ Optional fields:
 - `TotalNumberOfTasks`: `int`
 - `NumberOfTasksSucceeded`: `int`
 - `NumberOfTasksFailed`: `int`
-- `Timers`: [JobTimersTypeDef](./type_defs.md#jobtimerstypedef)
 
 <a id="jobreporttypedef"></a>
 
@@ -1580,18 +1522,6 @@ Optional fields:
   [JobReportFormatType](./literals.md#jobreportformattype))
 - `Prefix`: `str`
 - `ReportScope`: [JobReportScopeType](./literals.md#jobreportscopetype)
-
-<a id="jobtimerstypedef"></a>
-
-## JobTimersTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import JobTimersTypeDef
-```
-
-Optional fields:
-
-- `ElapsedTimeInActiveSeconds`: `int`
 
 <a id="lambdainvokeoperationtypedef"></a>
 
@@ -2480,23 +2410,6 @@ Optional fields:
 - `ObjectLockMode`: [S3ObjectLockModeType](./literals.md#s3objectlockmodetype)
 - `ObjectLockRetainUntilDate`: `Union`\[`datetime`, `str`\]
 - `BucketKeyEnabled`: `bool`
-- `ChecksumAlgorithm`:
-  [S3ChecksumAlgorithmType](./literals.md#s3checksumalgorithmtype)
-
-<a id="s3generatedmanifestdescriptortypedef"></a>
-
-## S3GeneratedManifestDescriptorTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import S3GeneratedManifestDescriptorTypeDef
-```
-
-Optional fields:
-
-- `Format`: `Literal['S3InventoryReport_CSV_20211130']` (see
-  [GeneratedManifestFormatType](./literals.md#generatedmanifestformattype))
-- `Location`:
-  [JobManifestLocationTypeDef](./type_defs.md#jobmanifestlocationtypedef)
 
 <a id="s3granttypedef"></a>
 
@@ -2538,48 +2451,6 @@ Optional fields:
 
 - `ExpirationInDays`: `int`
 - `GlacierJobTier`: [S3GlacierJobTierType](./literals.md#s3glacierjobtiertype)
-
-<a id="s3jobmanifestgeneratortypedef"></a>
-
-## S3JobManifestGeneratorTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import S3JobManifestGeneratorTypeDef
-```
-
-Required fields:
-
-- `SourceBucket`: `str`
-- `EnableManifestOutput`: `bool`
-
-Optional fields:
-
-- `ExpectedBucketOwner`: `str`
-- `ManifestOutputLocation`:
-  [S3ManifestOutputLocationTypeDef](./type_defs.md#s3manifestoutputlocationtypedef)
-- `Filter`:
-  [JobManifestGeneratorFilterTypeDef](./type_defs.md#jobmanifestgeneratorfiltertypedef)
-
-<a id="s3manifestoutputlocationtypedef"></a>
-
-## S3ManifestOutputLocationTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import S3ManifestOutputLocationTypeDef
-```
-
-Required fields:
-
-- `Bucket`: `str`
-- `ManifestFormat`: `Literal['S3InventoryReport_CSV_20211130']` (see
-  [GeneratedManifestFormatType](./literals.md#generatedmanifestformattype))
-
-Optional fields:
-
-- `ExpectedManifestBucketOwner`: `str`
-- `ManifestPrefix`: `str`
-- `ManifestEncryption`:
-  [GeneratedManifestEncryptionTypeDef](./type_defs.md#generatedmanifestencryptiontypedef)
 
 <a id="s3objectlocklegalholdtypedef"></a>
 
@@ -2709,18 +2580,6 @@ Required fields:
 
 - `Key`: `str`
 - `Value`: `str`
-
-<a id="ssekmsencryptiontypedef"></a>
-
-## SSEKMSEncryptionTypeDef
-
-```python
-from mypy_boto3_s3control.type_defs import SSEKMSEncryptionTypeDef
-```
-
-Required fields:
-
-- `KeyId`: `str`
 
 <a id="ssekmstypedef"></a>
 

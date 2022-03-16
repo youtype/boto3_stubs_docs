@@ -294,7 +294,6 @@ from mypy_boto3_kafka.type_defs import BatchAssociateScramSecretRequestRequestTy
 - [PrometheusInfoTypeDef](./type_defs.md#prometheusinfotypedef)
 - [PrometheusTypeDef](./type_defs.md#prometheustypedef)
 - [ProvisionedRequestTypeDef](./type_defs.md#provisionedrequesttypedef)
-- [ProvisionedThroughputTypeDef](./type_defs.md#provisionedthroughputtypedef)
 - [ProvisionedTypeDef](./type_defs.md#provisionedtypedef)
 - [PublicAccessTypeDef](./type_defs.md#publicaccesstypedef)
 - [RebootBrokerRequestRequestTypeDef](./type_defs.md#rebootbrokerrequestrequesttypedef)

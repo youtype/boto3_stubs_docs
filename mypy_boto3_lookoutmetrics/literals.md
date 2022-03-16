@@ -14,7 +14,6 @@ type annotations stubs module
   - [AlertStatusType](#alertstatustype)
   - [AlertTypeType](#alerttypetype)
   - [AnomalyDetectionTaskStatusType](#anomalydetectiontaskstatustype)
-  - [AnomalyDetectorFailureTypeType](#anomalydetectorfailuretypetype)
   - [AnomalyDetectorStatusType](#anomalydetectorstatustype)
   - [CSVFileCompressionType](#csvfilecompressiontype)
   - [FrequencyType](#frequencytype)
@@ -79,21 +78,6 @@ Values:
 - `IN_PROGRESS`
 - `PENDING`
 
-<a id="anomalydetectorfailuretypetype"></a>
-
-## AnomalyDetectorFailureTypeType
-
-```python
-from mypy_boto3_lookoutmetrics.literals import AnomalyDetectorFailureTypeType
-```
-
-Values:
-
-- `ACTIVATION_FAILURE`
-- `BACK_TEST_ACTIVATION_FAILURE`
-- `DEACTIVATION_FAILURE`
-- `DELETION_FAILURE`
-
 <a id="anomalydetectorstatustype"></a>
 
 ## AnomalyDetectorStatusType
@@ -109,8 +93,6 @@ Values:
 - `BACK_TEST_ACTIVATING`
 - `BACK_TEST_ACTIVE`
 - `BACK_TEST_COMPLETE`
-- `DEACTIVATED`
-- `DEACTIVATING`
 - `DELETING`
 - `FAILED`
 - `INACTIVE`
@@ -344,7 +326,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

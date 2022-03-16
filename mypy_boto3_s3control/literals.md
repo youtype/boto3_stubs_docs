@@ -15,7 +15,6 @@ type annotations stubs module
   - [BucketLocationConstraintType](#bucketlocationconstrainttype)
   - [ExpirationStatusType](#expirationstatustype)
   - [FormatType](#formattype)
-  - [GeneratedManifestFormatType](#generatedmanifestformattype)
   - [JobManifestFieldNameType](#jobmanifestfieldnametype)
   - [JobManifestFormatType](#jobmanifestformattype)
   - [JobReportFormatType](#jobreportformattype)
@@ -28,10 +27,8 @@ type annotations stubs module
   - [ObjectLambdaTransformationConfigurationActionType](#objectlambdatransformationconfigurationactiontype)
   - [OperationNameType](#operationnametype)
   - [OutputSchemaVersionType](#outputschemaversiontype)
-  - [ReplicationStatusType](#replicationstatustype)
   - [RequestedJobStatusType](#requestedjobstatustype)
   - [S3CannedAccessControlListType](#s3cannedaccesscontrollisttype)
-  - [S3ChecksumAlgorithmType](#s3checksumalgorithmtype)
   - [S3GlacierJobTierType](#s3glacierjobtiertype)
   - [S3GranteeTypeIdentifierType](#s3granteetypeidentifiertype)
   - [S3MetadataDirectiveType](#s3metadatadirectivetype)
@@ -123,18 +120,6 @@ Values:
 
 - `CSV`
 - `Parquet`
-
-<a id="generatedmanifestformattype"></a>
-
-## GeneratedManifestFormatType
-
-```python
-from mypy_boto3_s3control.literals import GeneratedManifestFormatType
-```
-
-Values:
-
-- `S3InventoryReport_CSV_20211130`
 
 <a id="jobmanifestfieldnametype"></a>
 
@@ -298,7 +283,6 @@ Values:
 - `S3PutObjectLegalHold`
 - `S3PutObjectRetention`
 - `S3PutObjectTagging`
-- `S3ReplicateObject`
 
 <a id="outputschemaversiontype"></a>
 
@@ -311,21 +295,6 @@ from mypy_boto3_s3control.literals import OutputSchemaVersionType
 Values:
 
 - `V_1`
-
-<a id="replicationstatustype"></a>
-
-## ReplicationStatusType
-
-```python
-from mypy_boto3_s3control.literals import ReplicationStatusType
-```
-
-Values:
-
-- `COMPLETED`
-- `FAILED`
-- `NONE`
-- `REPLICA`
 
 <a id="requestedjobstatustype"></a>
 
@@ -357,21 +326,6 @@ Values:
 - `private`
 - `public-read`
 - `public-read-write`
-
-<a id="s3checksumalgorithmtype"></a>
-
-## S3ChecksumAlgorithmType
-
-```python
-from mypy_boto3_s3control.literals import S3ChecksumAlgorithmType
-```
-
-Values:
-
-- `CRC32`
-- `CRC32C`
-- `SHA1`
-- `SHA256`
 
 <a id="s3glacierjobtiertype"></a>
 
@@ -493,7 +447,6 @@ Values:
 
 - `DEEP_ARCHIVE`
 - `GLACIER`
-- `GLACIER_IR`
 - `INTELLIGENT_TIERING`
 - `ONEZONE_IA`
 - `STANDARD`
@@ -689,7 +642,6 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
-- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

@@ -3721,7 +3721,6 @@ Boto3 documentation:
 - `partition_count`: `int`
 - `group_id`: `str`
 - `tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
-- `group_arn`: `str`
 - `name`: `str`
 - `instances`:
   [PlacementGroupInstancesCollection](#placementgroupinstancescollection)

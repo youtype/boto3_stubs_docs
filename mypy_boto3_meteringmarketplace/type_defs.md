@@ -146,7 +146,6 @@ Required fields:
 
 - `CustomerIdentifier`: `str`
 - `ProductCode`: `str`
-- `CustomerAWSAccountId`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
