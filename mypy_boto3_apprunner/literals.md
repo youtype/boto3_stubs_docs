@@ -15,6 +15,7 @@ type annotations stubs module
   - [ConfigurationSourceType](#configurationsourcetype)
   - [ConnectionStatusType](#connectionstatustype)
   - [CustomDomainAssociationStatusType](#customdomainassociationstatustype)
+  - [EgressTypeType](#egresstypetype)
   - [HealthCheckProtocolType](#healthcheckprotocoltype)
   - [ImageRepositoryTypeType](#imagerepositorytypetype)
   - [OperationStatusType](#operationstatustype)
@@ -23,6 +24,7 @@ type annotations stubs module
   - [RuntimeType](#runtimetype)
   - [ServiceStatusType](#servicestatustype)
   - [SourceCodeVersionTypeType](#sourcecodeversiontypetype)
+  - [VpcConnectorStatusType](#vpcconnectorstatustype)
   - [AppRunnerServiceName](#apprunnerservicename)
   - [ServiceName](#servicename)
   - [ResourceServiceName](#resourceservicename)
@@ -99,6 +101,19 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 - `PENDING_CERTIFICATE_DNS_VALIDATION`
+
+<a id="egresstypetype"></a>
+
+## EgressTypeType
+
+```python
+from mypy_boto3_apprunner.literals import EgressTypeType
+```
+
+Values:
+
+- `DEFAULT`
+- `VPC`
 
 <a id="healthcheckprotocoltype"></a>
 
@@ -182,7 +197,10 @@ from mypy_boto3_apprunner.literals import RuntimeType
 
 Values:
 
+- `CORRETTO_11`
+- `CORRETTO_8`
 - `NODEJS_12`
+- `NODEJS_14`
 - `PYTHON_3`
 
 <a id="servicestatustype"></a>
@@ -213,6 +231,19 @@ from mypy_boto3_apprunner.literals import SourceCodeVersionTypeType
 Values:
 
 - `BRANCH`
+
+<a id="vpcconnectorstatustype"></a>
+
+## VpcConnectorStatusType
+
+```python
+from mypy_boto3_apprunner.literals import VpcConnectorStatusType
+```
+
+Values:
+
+- `ACTIVE`
+- `INACTIVE`
 
 <a id="apprunnerservicename"></a>
 
@@ -266,6 +297,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -388,6 +420,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

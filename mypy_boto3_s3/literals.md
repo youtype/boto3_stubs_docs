@@ -19,6 +19,8 @@ type annotations stubs module
   - [BucketLogsPermissionType](#bucketlogspermissiontype)
   - [BucketNotExistsWaiterName](#bucketnotexistswaitername)
   - [BucketVersioningStatusType](#bucketversioningstatustype)
+  - [ChecksumAlgorithmType](#checksumalgorithmtype)
+  - [ChecksumModeType](#checksummodetype)
   - [CompressionTypeType](#compressiontypetype)
   - [DeleteMarkerReplicationStatusType](#deletemarkerreplicationstatustype)
   - [EncodingTypeType](#encodingtypetype)
@@ -44,6 +46,7 @@ type annotations stubs module
   - [MFADeleteType](#mfadeletetype)
   - [MetadataDirectiveType](#metadatadirectivetype)
   - [MetricsStatusType](#metricsstatustype)
+  - [ObjectAttributesType](#objectattributestype)
   - [ObjectCannedACLType](#objectcannedacltype)
   - [ObjectExistsWaiterName](#objectexistswaitername)
   - [ObjectLockEnabledType](#objectlockenabledtype)
@@ -219,6 +222,33 @@ Values:
 
 - `Enabled`
 - `Suspended`
+
+<a id="checksumalgorithmtype"></a>
+
+## ChecksumAlgorithmType
+
+```python
+from mypy_boto3_s3.literals import ChecksumAlgorithmType
+```
+
+Values:
+
+- `CRC32`
+- `CRC32C`
+- `SHA1`
+- `SHA256`
+
+<a id="checksummodetype"></a>
+
+## ChecksumModeType
+
+```python
+from mypy_boto3_s3.literals import ChecksumModeType
+```
+
+Values:
+
+- `ENABLED`
 
 <a id="compressiontypetype"></a>
 
@@ -439,6 +469,7 @@ from mypy_boto3_s3.literals import InventoryOptionalFieldType
 Values:
 
 - `BucketKeyStatus`
+- `ChecksumAlgorithm`
 - `EncryptionStatus`
 - `ETag`
 - `IntelligentTieringAccessTier`
@@ -575,6 +606,22 @@ Values:
 
 - `Disabled`
 - `Enabled`
+
+<a id="objectattributestype"></a>
+
+## ObjectAttributesType
+
+```python
+from mypy_boto3_s3.literals import ObjectAttributesType
+```
+
+Values:
+
+- `Checksum`
+- `ETag`
+- `ObjectParts`
+- `ObjectSize`
+- `StorageClass`
 
 <a id="objectcannedacltype"></a>
 
@@ -1040,6 +1087,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -1162,6 +1210,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

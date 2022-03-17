@@ -38,10 +38,10 @@ from mypy_boto3_appconfigdata.type_defs import GetLatestConfigurationResponseTyp
 
 Required fields:
 
-- `Configuration`: `StreamingBody`
-- `ContentType`: `str`
 - `NextPollConfigurationToken`: `str`
 - `NextPollIntervalInSeconds`: `int`
+- `ContentType`: `str`
+- `Configuration`: `StreamingBody`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -72,8 +72,8 @@ from mypy_boto3_appconfigdata.type_defs import StartConfigurationSessionRequestR
 Required fields:
 
 - `ApplicationIdentifier`: `str`
-- `ConfigurationProfileIdentifier`: `str`
 - `EnvironmentIdentifier`: `str`
+- `ConfigurationProfileIdentifier`: `str`
 
 Optional fields:
 

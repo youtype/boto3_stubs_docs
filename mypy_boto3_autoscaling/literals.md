@@ -337,6 +337,7 @@ Values:
 - `Terminating`
 - `Terminating:Proceed`
 - `Terminating:Wait`
+- `Warmed:Hibernated`
 - `Warmed:Pending`
 - `Warmed:Pending:Proceed`
 - `Warmed:Pending:Wait`
@@ -521,6 +522,7 @@ from mypy_boto3_autoscaling.literals import WarmPoolStateType
 
 Values:
 
+- `Hibernated`
 - `Running`
 - `Stopped`
 
@@ -588,6 +590,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -710,6 +713,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

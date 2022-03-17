@@ -23,6 +23,8 @@ type annotations stubs module
   - [CreatePermissionRequestRequestTypeDef](#createpermissionrequestrequesttypedef)
   - [CrlConfigurationTypeDef](#crlconfigurationtypedef)
   - [CsrExtensionsTypeDef](#csrextensionstypedef)
+  - [CustomAttributeTypeDef](#customattributetypedef)
+  - [CustomExtensionTypeDef](#customextensiontypedef)
   - [DeleteCertificateAuthorityRequestRequestTypeDef](#deletecertificateauthorityrequestrequesttypedef)
   - [DeletePermissionRequestRequestTypeDef](#deletepermissionrequestrequesttypedef)
   - [DeletePolicyRequestRequestTypeDef](#deletepolicyrequestrequesttypedef)
@@ -95,6 +97,8 @@ Optional fields:
 - `Initials`: `str`
 - `Pseudonym`: `str`
 - `GenerationQualifier`: `str`
+- `CustomAttributes`:
+  `Sequence`\[[CustomAttributeTypeDef](./type_defs.md#customattributetypedef)\]
 
 <a id="accessdescriptiontypedef"></a>
 
@@ -304,6 +308,36 @@ Optional fields:
 - `SubjectInformationAccess`:
   `Sequence`\[[AccessDescriptionTypeDef](./type_defs.md#accessdescriptiontypedef)\]
 
+<a id="customattributetypedef"></a>
+
+## CustomAttributeTypeDef
+
+```python
+from mypy_boto3_acm_pca.type_defs import CustomAttributeTypeDef
+```
+
+Required fields:
+
+- `ObjectIdentifier`: `str`
+- `Value`: `str`
+
+<a id="customextensiontypedef"></a>
+
+## CustomExtensionTypeDef
+
+```python
+from mypy_boto3_acm_pca.type_defs import CustomExtensionTypeDef
+```
+
+Required fields:
+
+- `ObjectIdentifier`: `str`
+- `Value`: `str`
+
+Optional fields:
+
+- `Critical`: `bool`
+
 <a id="deletecertificateauthorityrequestrequesttypedef"></a>
 
 ## DeleteCertificateAuthorityRequestRequestTypeDef
@@ -454,6 +488,8 @@ Optional fields:
 - `KeyUsage`: [KeyUsageTypeDef](./type_defs.md#keyusagetypedef)
 - `SubjectAlternativeNames`:
   `Sequence`\[[GeneralNameTypeDef](./type_defs.md#generalnametypedef)\]
+- `CustomExtensions`:
+  `Sequence`\[[CustomExtensionTypeDef](./type_defs.md#customextensiontypedef)\]
 
 <a id="generalnametypedef"></a>
 

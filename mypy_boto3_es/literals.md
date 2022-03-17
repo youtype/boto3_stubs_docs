@@ -28,6 +28,7 @@ type annotations stubs module
   - [LogTypeType](#logtypetype)
   - [OptionStateType](#optionstatetype)
   - [OutboundCrossClusterSearchConnectionStatusCodeType](#outboundcrossclustersearchconnectionstatuscodetype)
+  - [OverallChangeStatusType](#overallchangestatustype)
   - [PackageStatusType](#packagestatustype)
   - [PackageTypeType](#packagetypetype)
   - [ReservedElasticsearchInstancePaymentOptionType](#reservedelasticsearchinstancepaymentoptiontype)
@@ -355,6 +356,21 @@ Values:
 - `VALIDATING`
 - `VALIDATION_FAILED`
 
+<a id="overallchangestatustype"></a>
+
+## OverallChangeStatusType
+
+```python
+from mypy_boto3_es.literals import OverallChangeStatusType
+```
+
+Values:
+
+- `COMPLETED`
+- `FAILED`
+- `PENDING`
+- `PROCESSING`
+
 <a id="packagestatustype"></a>
 
 ## PackageStatusType
@@ -560,6 +576,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -682,6 +699,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

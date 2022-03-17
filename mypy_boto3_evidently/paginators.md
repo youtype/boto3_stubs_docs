@@ -39,6 +39,7 @@ Boto3 documentation:
 Arguments for `ListExperimentsPaginator.paginate` method:
 
 - `project`: `str` *(required)*
+- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 
@@ -99,6 +100,7 @@ Boto3 documentation:
 Arguments for `ListLaunchesPaginator.paginate` method:
 
 - `project`: `str` *(required)*
+- `status`: [LaunchStatusType](./literals.md#launchstatustype)
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

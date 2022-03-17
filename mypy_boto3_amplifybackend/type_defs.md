@@ -31,6 +31,7 @@ type annotations stubs module
   - [CreateBackendAuthResourceConfigTypeDef](#createbackendauthresourceconfigtypedef)
   - [CreateBackendAuthResponseTypeDef](#createbackendauthresponsetypedef)
   - [CreateBackendAuthUserPoolConfigTypeDef](#createbackendauthuserpoolconfigtypedef)
+  - [CreateBackendAuthVerificationMessageConfigTypeDef](#createbackendauthverificationmessageconfigtypedef)
   - [CreateBackendConfigRequestRequestTypeDef](#createbackendconfigrequestrequesttypedef)
   - [CreateBackendConfigResponseTypeDef](#createbackendconfigresponsetypedef)
   - [CreateBackendRequestRequestTypeDef](#createbackendrequestrequesttypedef)
@@ -98,6 +99,7 @@ type annotations stubs module
   - [UpdateBackendAuthResourceConfigTypeDef](#updatebackendauthresourceconfigtypedef)
   - [UpdateBackendAuthResponseTypeDef](#updatebackendauthresponsetypedef)
   - [UpdateBackendAuthUserPoolConfigTypeDef](#updatebackendauthuserpoolconfigtypedef)
+  - [UpdateBackendAuthVerificationMessageConfigTypeDef](#updatebackendauthverificationmessageconfigtypedef)
   - [UpdateBackendConfigRequestRequestTypeDef](#updatebackendconfigrequestrequesttypedef)
   - [UpdateBackendConfigResponseTypeDef](#updatebackendconfigresponsetypedef)
   - [UpdateBackendJobRequestRequestTypeDef](#updatebackendjobrequestrequesttypedef)
@@ -474,6 +476,25 @@ Optional fields:
   [CreateBackendAuthOAuthConfigTypeDef](./type_defs.md#createbackendauthoauthconfigtypedef)
 - `PasswordPolicy`:
   [CreateBackendAuthPasswordPolicyConfigTypeDef](./type_defs.md#createbackendauthpasswordpolicyconfigtypedef)
+- `VerificationMessage`:
+  [CreateBackendAuthVerificationMessageConfigTypeDef](./type_defs.md#createbackendauthverificationmessageconfigtypedef)
+
+<a id="createbackendauthverificationmessageconfigtypedef"></a>
+
+## CreateBackendAuthVerificationMessageConfigTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import CreateBackendAuthVerificationMessageConfigTypeDef
+```
+
+Required fields:
+
+- `DeliveryMethod`: [DeliveryMethodType](./literals.md#deliverymethodtype)
+
+Optional fields:
+
+- `EmailSettings`: [EmailSettingsTypeDef](./type_defs.md#emailsettingstypedef)
+- `SmsSettings`: [SmsSettingsTypeDef](./type_defs.md#smssettingstypedef)
 
 <a id="createbackendconfigrequestrequesttypedef"></a>
 
@@ -1576,6 +1597,25 @@ Optional fields:
   [UpdateBackendAuthOAuthConfigTypeDef](./type_defs.md#updatebackendauthoauthconfigtypedef)
 - `PasswordPolicy`:
   [UpdateBackendAuthPasswordPolicyConfigTypeDef](./type_defs.md#updatebackendauthpasswordpolicyconfigtypedef)
+- `VerificationMessage`:
+  [UpdateBackendAuthVerificationMessageConfigTypeDef](./type_defs.md#updatebackendauthverificationmessageconfigtypedef)
+
+<a id="updatebackendauthverificationmessageconfigtypedef"></a>
+
+## UpdateBackendAuthVerificationMessageConfigTypeDef
+
+```python
+from mypy_boto3_amplifybackend.type_defs import UpdateBackendAuthVerificationMessageConfigTypeDef
+```
+
+Required fields:
+
+- `DeliveryMethod`: [DeliveryMethodType](./literals.md#deliverymethodtype)
+
+Optional fields:
+
+- `EmailSettings`: [EmailSettingsTypeDef](./type_defs.md#emailsettingstypedef)
+- `SmsSettings`: [SmsSettingsTypeDef](./type_defs.md#smssettingstypedef)
 
 <a id="updatebackendconfigrequestrequesttypedef"></a>
 

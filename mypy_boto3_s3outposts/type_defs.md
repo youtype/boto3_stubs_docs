@@ -16,6 +16,8 @@ type annotations stubs module
   - [EndpointTypeDef](#endpointtypedef)
   - [ListEndpointsRequestRequestTypeDef](#listendpointsrequestrequesttypedef)
   - [ListEndpointsResultTypeDef](#listendpointsresulttypedef)
+  - [ListSharedEndpointsRequestRequestTypeDef](#listsharedendpointsrequestrequesttypedef)
+  - [ListSharedEndpointsResultTypeDef](#listsharedendpointsresulttypedef)
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
@@ -108,6 +110,38 @@ Optional fields:
 
 ```python
 from mypy_boto3_s3outposts.type_defs import ListEndpointsResultTypeDef
+```
+
+Required fields:
+
+- `Endpoints`: `List`\[[EndpointTypeDef](./type_defs.md#endpointtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listsharedendpointsrequestrequesttypedef"></a>
+
+## ListSharedEndpointsRequestRequestTypeDef
+
+```python
+from mypy_boto3_s3outposts.type_defs import ListSharedEndpointsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OutpostId`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+<a id="listsharedendpointsresulttypedef"></a>
+
+## ListSharedEndpointsResultTypeDef
+
+```python
+from mypy_boto3_s3outposts.type_defs import ListSharedEndpointsResultTypeDef
 ```
 
 Required fields:

@@ -19,6 +19,7 @@ type annotations stubs module
     - [delete_endpoint](#delete_endpoint)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_endpoints](#list_endpoints)
+    - [list_shared_endpoints](#list_shared_endpoints)
     - [get_paginator](#get_paginator)
 
 <a id="s3outpostsclient"></a>
@@ -101,8 +102,7 @@ Returns `bool`.
 
 ### create_endpoint
 
-Amazon S3 on Outposts Access Points simplify managing data access at scale for
-shared datasets in S3 on Outposts.
+Creates an endpoint and associates it with the specified Outpost.
 
 Type annotations for `boto3.client("s3outposts").create_endpoint` method.
 
@@ -127,8 +127,7 @@ Returns
 
 ### delete_endpoint
 
-Amazon S3 on Outposts Access Points simplify managing data access at scale for
-shared datasets in S3 on Outposts.
+Deletes an endpoint.
 
 Type annotations for `boto3.client("s3outposts").delete_endpoint` method.
 
@@ -168,8 +167,7 @@ Returns `str`.
 
 ### list_endpoints
 
-Amazon S3 on Outposts Access Points simplify managing data access at scale for
-shared datasets in S3 on Outposts.
+Lists endpoints associated with the specified Outpost.
 
 Type annotations for `boto3.client("s3outposts").list_endpoints` method.
 
@@ -187,6 +185,30 @@ Keyword-only arguments:
 Returns
 [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef).
 
+<a id="list\_shared\_endpoints"></a>
+
+### list_shared_endpoints
+
+Lists all endpoints associated with an Outpost that has been shared by Amazon
+Web Services Resource Access Manager (RAM).
+
+Type annotations for `boto3.client("s3outposts").list_shared_endpoints` method.
+
+Boto3 documentation:
+[S3Outposts.Client.list_shared_endpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Client.list_shared_endpoints)
+
+Arguments mapping described in
+[ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OutpostId`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef).
+
 <a id="get_paginator"></a>
 
 ### get_paginator
@@ -196,3 +218,5 @@ overloads.
 
 - `client.get_paginator("list_endpoints")` ->
   [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+- `client.get_paginator("list_shared_endpoints")` ->
+  [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)

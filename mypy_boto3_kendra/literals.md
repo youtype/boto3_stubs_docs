@@ -30,6 +30,7 @@ type annotations stubs module
   - [ExperienceStatusType](#experiencestatustype)
   - [FaqFileFormatType](#faqfileformattype)
   - [FaqStatusType](#faqstatustype)
+  - [FsxFileSystemTypeType](#fsxfilesystemtypetype)
   - [HighlightTypeType](#highlighttypetype)
   - [IndexEditionType](#indexeditiontype)
   - [IndexStatusType](#indexstatustype)
@@ -54,10 +55,12 @@ type annotations stubs module
   - [ServiceNowAuthenticationTypeType](#servicenowauthenticationtypetype)
   - [ServiceNowBuildVersionTypeType](#servicenowbuildversiontypetype)
   - [SharePointVersionType](#sharepointversiontype)
+  - [SlackEntityType](#slackentitytype)
   - [SortOrderType](#sortordertype)
   - [ThesaurusStatusType](#thesaurusstatustype)
   - [UserContextPolicyType](#usercontextpolicytype)
   - [UserGroupResolutionModeType](#usergroupresolutionmodetype)
+  - [WarningCodeType](#warningcodetype)
   - [WebCrawlerModeType](#webcrawlermodetype)
   - [kendraServiceName](#kendraservicename)
   - [ServiceName](#servicename)
@@ -253,12 +256,14 @@ Values:
 - `CONFLUENCE`
 - `CUSTOM`
 - `DATABASE`
+- `FSX`
 - `GOOGLEDRIVE`
 - `ONEDRIVE`
 - `S3`
 - `SALESFORCE`
 - `SERVICENOW`
 - `SHAREPOINT`
+- `SLACK`
 - `WEBCRAWLER`
 - `WORKDOCS`
 
@@ -391,6 +396,18 @@ Values:
 - `DELETING`
 - `FAILED`
 - `UPDATING`
+
+<a id="fsxfilesystemtypetype"></a>
+
+## FsxFileSystemTypeType
+
+```python
+from mypy_boto3_kendra.literals import FsxFileSystemTypeType
+```
+
+Values:
+
+- `WINDOWS`
 
 <a id="highlighttypetype"></a>
 
@@ -744,6 +761,21 @@ Values:
 - `SHAREPOINT_2016`
 - `SHAREPOINT_ONLINE`
 
+<a id="slackentitytype"></a>
+
+## SlackEntityType
+
+```python
+from mypy_boto3_kendra.literals import SlackEntityType
+```
+
+Values:
+
+- `DIRECT_MESSAGE`
+- `GROUP_MESSAGE`
+- `PRIVATE_CHANNEL`
+- `PUBLIC_CHANNEL`
+
 <a id="sortordertype"></a>
 
 ## SortOrderType
@@ -799,6 +831,18 @@ Values:
 
 - `AWS_SSO`
 - `NONE`
+
+<a id="warningcodetype"></a>
+
+## WarningCodeType
+
+```python
+from mypy_boto3_kendra.literals import WarningCodeType
+```
+
+Values:
+
+- `QUERY_LANGUAGE_INVALID_SYNTAX`
 
 <a id="webcrawlermodetype"></a>
 
@@ -866,6 +910,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -988,6 +1033,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

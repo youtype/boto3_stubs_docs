@@ -25,6 +25,7 @@ type annotations stubs module
   - [CityTypeDef](#citytypedef)
   - [CloudTrailConfigurationResultTypeDef](#cloudtrailconfigurationresulttypedef)
   - [ConditionTypeDef](#conditiontypedef)
+  - [ContainerTypeDef](#containertypedef)
   - [CountryTypeDef](#countrytypedef)
   - [CreateDetectorRequestRequestTypeDef](#createdetectorrequestrequesttypedef)
   - [CreateDetectorResponseTypeDef](#createdetectorresponsetypedef)
@@ -66,6 +67,7 @@ type annotations stubs module
   - [DisassociateMembersResponseTypeDef](#disassociatemembersresponsetypedef)
   - [DnsRequestActionTypeDef](#dnsrequestactiontypedef)
   - [DomainDetailsTypeDef](#domaindetailstypedef)
+  - [EksClusterDetailsTypeDef](#eksclusterdetailstypedef)
   - [EnableOrganizationAdminAccountRequestRequestTypeDef](#enableorganizationadminaccountrequestrequesttypedef)
   - [EvidenceTypeDef](#evidencetypedef)
   - [FindingCriteriaTypeDef](#findingcriteriatypedef)
@@ -94,11 +96,20 @@ type annotations stubs module
   - [GetThreatIntelSetResponseTypeDef](#getthreatintelsetresponsetypedef)
   - [GetUsageStatisticsRequestRequestTypeDef](#getusagestatisticsrequestrequesttypedef)
   - [GetUsageStatisticsResponseTypeDef](#getusagestatisticsresponsetypedef)
+  - [HostPathTypeDef](#hostpathtypedef)
   - [IamInstanceProfileTypeDef](#iaminstanceprofiletypedef)
   - [InstanceDetailsTypeDef](#instancedetailstypedef)
   - [InvitationTypeDef](#invitationtypedef)
   - [InviteMembersRequestRequestTypeDef](#invitemembersrequestrequesttypedef)
   - [InviteMembersResponseTypeDef](#invitemembersresponsetypedef)
+  - [KubernetesApiCallActionTypeDef](#kubernetesapicallactiontypedef)
+  - [KubernetesAuditLogsConfigurationResultTypeDef](#kubernetesauditlogsconfigurationresulttypedef)
+  - [KubernetesAuditLogsConfigurationTypeDef](#kubernetesauditlogsconfigurationtypedef)
+  - [KubernetesConfigurationResultTypeDef](#kubernetesconfigurationresulttypedef)
+  - [KubernetesConfigurationTypeDef](#kubernetesconfigurationtypedef)
+  - [KubernetesDetailsTypeDef](#kubernetesdetailstypedef)
+  - [KubernetesUserDetailsTypeDef](#kubernetesuserdetailstypedef)
+  - [KubernetesWorkloadDetailsTypeDef](#kubernetesworkloaddetailstypedef)
   - [ListDetectorsRequestRequestTypeDef](#listdetectorsrequestrequesttypedef)
   - [ListDetectorsResponseTypeDef](#listdetectorsresponsetypedef)
   - [ListFiltersRequestRequestTypeDef](#listfiltersrequestrequesttypedef)
@@ -128,6 +139,10 @@ type annotations stubs module
   - [NetworkInterfaceTypeDef](#networkinterfacetypedef)
   - [OrganizationDataSourceConfigurationsResultTypeDef](#organizationdatasourceconfigurationsresulttypedef)
   - [OrganizationDataSourceConfigurationsTypeDef](#organizationdatasourceconfigurationstypedef)
+  - [OrganizationKubernetesAuditLogsConfigurationResultTypeDef](#organizationkubernetesauditlogsconfigurationresulttypedef)
+  - [OrganizationKubernetesAuditLogsConfigurationTypeDef](#organizationkubernetesauditlogsconfigurationtypedef)
+  - [OrganizationKubernetesConfigurationResultTypeDef](#organizationkubernetesconfigurationresulttypedef)
+  - [OrganizationKubernetesConfigurationTypeDef](#organizationkubernetesconfigurationtypedef)
   - [OrganizationS3LogsConfigurationResultTypeDef](#organizations3logsconfigurationresulttypedef)
   - [OrganizationS3LogsConfigurationTypeDef](#organizations3logsconfigurationtypedef)
   - [OrganizationTypeDef](#organizationtypedef)
@@ -139,6 +154,7 @@ type annotations stubs module
   - [PrivateIpAddressDetailsTypeDef](#privateipaddressdetailstypedef)
   - [ProductCodeTypeDef](#productcodetypedef)
   - [PublicAccessTypeDef](#publicaccesstypedef)
+  - [RemoteAccountDetailsTypeDef](#remoteaccountdetailstypedef)
   - [RemoteIpDetailsTypeDef](#remoteipdetailstypedef)
   - [RemotePortDetailsTypeDef](#remoteportdetailstypedef)
   - [ResourceTypeDef](#resourcetypedef)
@@ -146,6 +162,7 @@ type annotations stubs module
   - [S3BucketDetailTypeDef](#s3bucketdetailtypedef)
   - [S3LogsConfigurationResultTypeDef](#s3logsconfigurationresulttypedef)
   - [S3LogsConfigurationTypeDef](#s3logsconfigurationtypedef)
+  - [SecurityContextTypeDef](#securitycontexttypedef)
   - [SecurityGroupTypeDef](#securitygrouptypedef)
   - [ServiceTypeDef](#servicetypedef)
   - [SortCriteriaTypeDef](#sortcriteriatypedef)
@@ -175,6 +192,8 @@ type annotations stubs module
   - [UsageDataSourceResultTypeDef](#usagedatasourceresulttypedef)
   - [UsageResourceResultTypeDef](#usageresourceresulttypedef)
   - [UsageStatisticsTypeDef](#usagestatisticstypedef)
+  - [VolumeMountTypeDef](#volumemounttypedef)
+  - [VolumeTypeDef](#volumetypedef)
 
 <a id="acceptinvitationrequestrequesttypedef"></a>
 
@@ -263,6 +282,8 @@ Optional fields:
   [NetworkConnectionActionTypeDef](./type_defs.md#networkconnectionactiontypedef)
 - `PortProbeAction`:
   [PortProbeActionTypeDef](./type_defs.md#portprobeactiontypedef)
+- `KubernetesApiCallAction`:
+  [KubernetesApiCallActionTypeDef](./type_defs.md#kubernetesapicallactiontypedef)
 
 <a id="adminaccounttypedef"></a>
 
@@ -304,9 +325,12 @@ Optional fields:
 - `CallerType`: `str`
 - `DomainDetails`: [DomainDetailsTypeDef](./type_defs.md#domaindetailstypedef)
 - `ErrorCode`: `str`
+- `UserAgent`: `str`
 - `RemoteIpDetails`:
   [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
 - `ServiceName`: `str`
+- `RemoteAccountDetails`:
+  [RemoteAccountDetailsTypeDef](./type_defs.md#remoteaccountdetailstypedef)
 
 <a id="blockpublicaccesstypedef"></a>
 
@@ -398,6 +422,26 @@ Optional fields:
 - `GreaterThanOrEqual`: `int`
 - `LessThan`: `int`
 - `LessThanOrEqual`: `int`
+
+<a id="containertypedef"></a>
+
+## ContainerTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import ContainerTypeDef
+```
+
+Optional fields:
+
+- `ContainerRuntime`: `str`
+- `Id`: `str`
+- `Name`: `str`
+- `Image`: `str`
+- `ImagePrefix`: `str`
+- `VolumeMounts`:
+  `List`\[[VolumeMountTypeDef](./type_defs.md#volumemounttypedef)\]
+- `SecurityContext`:
+  [SecurityContextTypeDef](./type_defs.md#securitycontexttypedef)
 
 <a id="countrytypedef"></a>
 
@@ -664,6 +708,11 @@ Required fields:
 - `S3Logs`:
   [S3LogsConfigurationResultTypeDef](./type_defs.md#s3logsconfigurationresulttypedef)
 
+Optional fields:
+
+- `Kubernetes`:
+  [KubernetesConfigurationResultTypeDef](./type_defs.md#kubernetesconfigurationresulttypedef)
+
 <a id="datasourceconfigurationstypedef"></a>
 
 ## DataSourceConfigurationsTypeDef
@@ -676,6 +725,8 @@ Optional fields:
 
 - `S3Logs`:
   [S3LogsConfigurationTypeDef](./type_defs.md#s3logsconfigurationtypedef)
+- `Kubernetes`:
+  [KubernetesConfigurationTypeDef](./type_defs.md#kubernetesconfigurationtypedef)
 
 <a id="declineinvitationsrequestrequesttypedef"></a>
 
@@ -1001,6 +1052,23 @@ from mypy_boto3_guardduty.type_defs import DomainDetailsTypeDef
 Optional fields:
 
 - `Domain`: `str`
+
+<a id="eksclusterdetailstypedef"></a>
+
+## EksClusterDetailsTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import EksClusterDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Arn`: `str`
+- `VpcId`: `str`
+- `Status`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `CreatedAt`: `datetime`
 
 <a id="enableorganizationadminaccountrequestrequesttypedef"></a>
 
@@ -1436,6 +1504,18 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="hostpathtypedef"></a>
+
+## HostPathTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import HostPathTypeDef
+```
+
+Optional fields:
+
+- `Path`: `str`
+
 <a id="iaminstanceprofiletypedef"></a>
 
 ## IamInstanceProfileTypeDef
@@ -1523,6 +1603,122 @@ Required fields:
   `List`\[[UnprocessedAccountTypeDef](./type_defs.md#unprocessedaccounttypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="kubernetesapicallactiontypedef"></a>
+
+## KubernetesApiCallActionTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesApiCallActionTypeDef
+```
+
+Optional fields:
+
+- `RequestUri`: `str`
+- `Verb`: `str`
+- `SourceIps`: `List`\[`str`\]
+- `UserAgent`: `str`
+- `RemoteIpDetails`:
+  [RemoteIpDetailsTypeDef](./type_defs.md#remoteipdetailstypedef)
+- `StatusCode`: `int`
+- `Parameters`: `str`
+
+<a id="kubernetesauditlogsconfigurationresulttypedef"></a>
+
+## KubernetesAuditLogsConfigurationResultTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesAuditLogsConfigurationResultTypeDef
+```
+
+Required fields:
+
+- `Status`: [DataSourceStatusType](./literals.md#datasourcestatustype)
+
+<a id="kubernetesauditlogsconfigurationtypedef"></a>
+
+## KubernetesAuditLogsConfigurationTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesAuditLogsConfigurationTypeDef
+```
+
+Required fields:
+
+- `Enable`: `bool`
+
+<a id="kubernetesconfigurationresulttypedef"></a>
+
+## KubernetesConfigurationResultTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesConfigurationResultTypeDef
+```
+
+Required fields:
+
+- `AuditLogs`:
+  [KubernetesAuditLogsConfigurationResultTypeDef](./type_defs.md#kubernetesauditlogsconfigurationresulttypedef)
+
+<a id="kubernetesconfigurationtypedef"></a>
+
+## KubernetesConfigurationTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesConfigurationTypeDef
+```
+
+Required fields:
+
+- `AuditLogs`:
+  [KubernetesAuditLogsConfigurationTypeDef](./type_defs.md#kubernetesauditlogsconfigurationtypedef)
+
+<a id="kubernetesdetailstypedef"></a>
+
+## KubernetesDetailsTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesDetailsTypeDef
+```
+
+Optional fields:
+
+- `KubernetesUserDetails`:
+  [KubernetesUserDetailsTypeDef](./type_defs.md#kubernetesuserdetailstypedef)
+- `KubernetesWorkloadDetails`:
+  [KubernetesWorkloadDetailsTypeDef](./type_defs.md#kubernetesworkloaddetailstypedef)
+
+<a id="kubernetesuserdetailstypedef"></a>
+
+## KubernetesUserDetailsTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesUserDetailsTypeDef
+```
+
+Optional fields:
+
+- `Username`: `str`
+- `Uid`: `str`
+- `Groups`: `List`\[`str`\]
+
+<a id="kubernetesworkloaddetailstypedef"></a>
+
+## KubernetesWorkloadDetailsTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import KubernetesWorkloadDetailsTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `Type`: `str`
+- `Uid`: `str`
+- `Namespace`: `str`
+- `HostNetwork`: `bool`
+- `Containers`: `List`\[[ContainerTypeDef](./type_defs.md#containertypedef)\]
+- `Volumes`: `List`\[[VolumeTypeDef](./type_defs.md#volumetypedef)\]
 
 <a id="listdetectorsrequestrequesttypedef"></a>
 
@@ -1966,6 +2162,11 @@ Required fields:
 - `S3Logs`:
   [OrganizationS3LogsConfigurationResultTypeDef](./type_defs.md#organizations3logsconfigurationresulttypedef)
 
+Optional fields:
+
+- `Kubernetes`:
+  [OrganizationKubernetesConfigurationResultTypeDef](./type_defs.md#organizationkubernetesconfigurationresulttypedef)
+
 <a id="organizationdatasourceconfigurationstypedef"></a>
 
 ## OrganizationDataSourceConfigurationsTypeDef
@@ -1978,6 +2179,58 @@ Optional fields:
 
 - `S3Logs`:
   [OrganizationS3LogsConfigurationTypeDef](./type_defs.md#organizations3logsconfigurationtypedef)
+- `Kubernetes`:
+  [OrganizationKubernetesConfigurationTypeDef](./type_defs.md#organizationkubernetesconfigurationtypedef)
+
+<a id="organizationkubernetesauditlogsconfigurationresulttypedef"></a>
+
+## OrganizationKubernetesAuditLogsConfigurationResultTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import OrganizationKubernetesAuditLogsConfigurationResultTypeDef
+```
+
+Required fields:
+
+- `AutoEnable`: `bool`
+
+<a id="organizationkubernetesauditlogsconfigurationtypedef"></a>
+
+## OrganizationKubernetesAuditLogsConfigurationTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import OrganizationKubernetesAuditLogsConfigurationTypeDef
+```
+
+Required fields:
+
+- `AutoEnable`: `bool`
+
+<a id="organizationkubernetesconfigurationresulttypedef"></a>
+
+## OrganizationKubernetesConfigurationResultTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import OrganizationKubernetesConfigurationResultTypeDef
+```
+
+Required fields:
+
+- `AuditLogs`:
+  [OrganizationKubernetesAuditLogsConfigurationResultTypeDef](./type_defs.md#organizationkubernetesauditlogsconfigurationresulttypedef)
+
+<a id="organizationkubernetesconfigurationtypedef"></a>
+
+## OrganizationKubernetesConfigurationTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import OrganizationKubernetesConfigurationTypeDef
+```
+
+Required fields:
+
+- `AuditLogs`:
+  [OrganizationKubernetesAuditLogsConfigurationTypeDef](./type_defs.md#organizationkubernetesauditlogsconfigurationtypedef)
 
 <a id="organizations3logsconfigurationresulttypedef"></a>
 
@@ -2130,6 +2383,19 @@ Optional fields:
   [PermissionConfigurationTypeDef](./type_defs.md#permissionconfigurationtypedef)
 - `EffectivePermission`: `str`
 
+<a id="remoteaccountdetailstypedef"></a>
+
+## RemoteAccountDetailsTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import RemoteAccountDetailsTypeDef
+```
+
+Optional fields:
+
+- `AccountId`: `str`
+- `Affiliated`: `bool`
+
 <a id="remoteipdetailstypedef"></a>
 
 ## RemoteIpDetailsTypeDef
@@ -2175,6 +2441,10 @@ Optional fields:
   `List`\[[S3BucketDetailTypeDef](./type_defs.md#s3bucketdetailtypedef)\]
 - `InstanceDetails`:
   [InstanceDetailsTypeDef](./type_defs.md#instancedetailstypedef)
+- `EksClusterDetails`:
+  [EksClusterDetailsTypeDef](./type_defs.md#eksclusterdetailstypedef)
+- `KubernetesDetails`:
+  [KubernetesDetailsTypeDef](./type_defs.md#kubernetesdetailstypedef)
 - `ResourceType`: `str`
 
 <a id="responsemetadatatypedef"></a>
@@ -2236,6 +2506,18 @@ from mypy_boto3_guardduty.type_defs import S3LogsConfigurationTypeDef
 Required fields:
 
 - `Enable`: `bool`
+
+<a id="securitycontexttypedef"></a>
+
+## SecurityContextTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import SecurityContextTypeDef
+```
+
+Optional fields:
+
+- `Privileged`: `bool`
 
 <a id="securitygrouptypedef"></a>
 
@@ -2685,3 +2967,29 @@ Optional fields:
   `List`\[[UsageResourceResultTypeDef](./type_defs.md#usageresourceresulttypedef)\]
 - `TopResources`:
   `List`\[[UsageResourceResultTypeDef](./type_defs.md#usageresourceresulttypedef)\]
+
+<a id="volumemounttypedef"></a>
+
+## VolumeMountTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import VolumeMountTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `MountPath`: `str`
+
+<a id="volumetypedef"></a>
+
+## VolumeTypeDef
+
+```python
+from mypy_boto3_guardduty.type_defs import VolumeTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `HostPath`: [HostPathTypeDef](./type_defs.md#hostpathtypedef)

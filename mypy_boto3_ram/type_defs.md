@@ -37,6 +37,8 @@ type annotations stubs module
   - [GetResourceSharesResponseTypeDef](#getresourcesharesresponsetypedef)
   - [ListPendingInvitationResourcesRequestRequestTypeDef](#listpendinginvitationresourcesrequestrequesttypedef)
   - [ListPendingInvitationResourcesResponseTypeDef](#listpendinginvitationresourcesresponsetypedef)
+  - [ListPermissionVersionsRequestRequestTypeDef](#listpermissionversionsrequestrequesttypedef)
+  - [ListPermissionVersionsResponseTypeDef](#listpermissionversionsresponsetypedef)
   - [ListPermissionsRequestRequestTypeDef](#listpermissionsrequestrequesttypedef)
   - [ListPermissionsResponseTypeDef](#listpermissionsresponsetypedef)
   - [ListPrincipalsRequestRequestTypeDef](#listprincipalsrequestrequesttypedef)
@@ -519,6 +521,39 @@ from mypy_boto3_ram.type_defs import ListPendingInvitationResourcesResponseTypeD
 Required fields:
 
 - `resources`: `List`\[[ResourceTypeDef](./type_defs.md#resourcetypedef)\]
+- `nextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listpermissionversionsrequestrequesttypedef"></a>
+
+## ListPermissionVersionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_ram.type_defs import ListPermissionVersionsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `permissionArn`: `str`
+
+Optional fields:
+
+- `nextToken`: `str`
+- `maxResults`: `int`
+
+<a id="listpermissionversionsresponsetypedef"></a>
+
+## ListPermissionVersionsResponseTypeDef
+
+```python
+from mypy_boto3_ram.type_defs import ListPermissionVersionsResponseTypeDef
+```
+
+Required fields:
+
+- `permissions`:
+  `List`\[[ResourceSharePermissionSummaryTypeDef](./type_defs.md#resourcesharepermissionsummarytypedef)\]
 - `nextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

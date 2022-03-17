@@ -112,6 +112,7 @@ SyntheticsClient [exceptions](./client.md#exceptions)
 - ClientError
 - ConflictException
 - InternalServerException
+- RequestEntityTooLargeException
 - ResourceNotFoundException
 - ValidationException
 

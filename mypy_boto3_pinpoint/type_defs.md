@@ -888,6 +888,7 @@ Required fields:
 Optional fields:
 
 - `tags`: `Dict`\[`str`, `str`\]
+- `CreationDate`: `str`
 
 <a id="applicationsettingsresourcetypedef"></a>
 
@@ -7489,6 +7490,8 @@ Optional fields:
 - `State`: [StateType](./literals.md#statetype)
 - `WaitForQuietTime`: `bool`
 - `RefreshOnSegmentUpdate`: `bool`
+- `JourneyChannelSettings`:
+  [JourneyChannelSettingsTypeDef](./type_defs.md#journeychannelsettingstypedef)
 
 <a id="writesegmentrequesttypedef"></a>
 

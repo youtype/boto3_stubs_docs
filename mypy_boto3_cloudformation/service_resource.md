@@ -258,6 +258,12 @@ Boto3 documentation:
 - `resource_status_reason`: `str`
 - `resource_properties`: `str`
 - `client_request_token`: `str`
+- `hook_type`: `str`
+- `hook_status`: [HookStatusType](./literals.md#hookstatustype)
+- `hook_status_reason`: `str`
+- `hook_invocation_point`: `Literal['PRE_PROVISION']` (see
+  [HookInvocationPointType](./literals.md#hookinvocationpointtype))
+- `hook_failure_mode`: [HookFailureModeType](./literals.md#hookfailuremodetype)
 - `id`: `str`
 
 <a id="event-methods"></a>

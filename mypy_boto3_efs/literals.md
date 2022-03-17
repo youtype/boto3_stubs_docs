@@ -15,6 +15,7 @@ type annotations stubs module
   - [DescribeTagsPaginatorName](#describetagspaginatorname)
   - [LifeCycleStateType](#lifecyclestatetype)
   - [PerformanceModeType](#performancemodetype)
+  - [ReplicationStatusType](#replicationstatustype)
   - [ResourceIdTypeType](#resourceidtypetype)
   - [ResourceType](#resourcetype)
   - [StatusType](#statustype)
@@ -91,6 +92,21 @@ Values:
 
 - `generalPurpose`
 - `maxIO`
+
+<a id="replicationstatustype"></a>
+
+## ReplicationStatusType
+
+```python
+from mypy_boto3_efs.literals import ReplicationStatusType
+```
+
+Values:
+
+- `DELETING`
+- `ENABLED`
+- `ENABLING`
+- `ERROR`
 
 <a id="resourceidtypetype"></a>
 
@@ -226,6 +242,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -348,6 +365,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

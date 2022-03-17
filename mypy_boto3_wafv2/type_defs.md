@@ -53,6 +53,8 @@ type annotations stubs module
   - [FirewallManagerRuleGroupTypeDef](#firewallmanagerrulegrouptypedef)
   - [FirewallManagerStatementTypeDef](#firewallmanagerstatementtypedef)
   - [ForwardedIPConfigTypeDef](#forwardedipconfigtypedef)
+  - [GenerateMobileSdkReleaseUrlRequestRequestTypeDef](#generatemobilesdkreleaseurlrequestrequesttypedef)
+  - [GenerateMobileSdkReleaseUrlResponseTypeDef](#generatemobilesdkreleaseurlresponsetypedef)
   - [GeoMatchStatementTypeDef](#geomatchstatementtypedef)
   - [GetIPSetRequestRequestTypeDef](#getipsetrequestrequesttypedef)
   - [GetIPSetResponseTypeDef](#getipsetresponsetypedef)
@@ -60,6 +62,8 @@ type annotations stubs module
   - [GetLoggingConfigurationResponseTypeDef](#getloggingconfigurationresponsetypedef)
   - [GetManagedRuleSetRequestRequestTypeDef](#getmanagedrulesetrequestrequesttypedef)
   - [GetManagedRuleSetResponseTypeDef](#getmanagedrulesetresponsetypedef)
+  - [GetMobileSdkReleaseRequestRequestTypeDef](#getmobilesdkreleaserequestrequesttypedef)
+  - [GetMobileSdkReleaseResponseTypeDef](#getmobilesdkreleaseresponsetypedef)
   - [GetPermissionPolicyRequestRequestTypeDef](#getpermissionpolicyrequestrequesttypedef)
   - [GetPermissionPolicyResponseTypeDef](#getpermissionpolicyresponsetypedef)
   - [GetRateBasedStatementManagedKeysRequestRequestTypeDef](#getratebasedstatementmanagedkeysrequestrequesttypedef)
@@ -97,6 +101,8 @@ type annotations stubs module
   - [ListLoggingConfigurationsResponseTypeDef](#listloggingconfigurationsresponsetypedef)
   - [ListManagedRuleSetsRequestRequestTypeDef](#listmanagedrulesetsrequestrequesttypedef)
   - [ListManagedRuleSetsResponseTypeDef](#listmanagedrulesetsresponsetypedef)
+  - [ListMobileSdkReleasesRequestRequestTypeDef](#listmobilesdkreleasesrequestrequesttypedef)
+  - [ListMobileSdkReleasesResponseTypeDef](#listmobilesdkreleasesresponsetypedef)
   - [ListRegexPatternSetsRequestRequestTypeDef](#listregexpatternsetsrequestrequesttypedef)
   - [ListRegexPatternSetsResponseTypeDef](#listregexpatternsetsresponsetypedef)
   - [ListResourcesForWebACLRequestRequestTypeDef](#listresourcesforwebaclrequestrequesttypedef)
@@ -109,15 +115,18 @@ type annotations stubs module
   - [ListWebACLsResponseTypeDef](#listwebaclsresponsetypedef)
   - [LoggingConfigurationTypeDef](#loggingconfigurationtypedef)
   - [LoggingFilterTypeDef](#loggingfiltertypedef)
+  - [ManagedRuleGroupConfigTypeDef](#managedrulegroupconfigtypedef)
   - [ManagedRuleGroupStatementTypeDef](#managedrulegroupstatementtypedef)
   - [ManagedRuleGroupSummaryTypeDef](#managedrulegroupsummarytypedef)
   - [ManagedRuleGroupVersionTypeDef](#managedrulegroupversiontypedef)
   - [ManagedRuleSetSummaryTypeDef](#managedrulesetsummarytypedef)
   - [ManagedRuleSetTypeDef](#managedrulesettypedef)
   - [ManagedRuleSetVersionTypeDef](#managedrulesetversiontypedef)
+  - [MobileSdkReleaseTypeDef](#mobilesdkreleasetypedef)
   - [NotStatementTypeDef](#notstatementtypedef)
   - [OrStatementTypeDef](#orstatementtypedef)
   - [OverrideActionTypeDef](#overrideactiontypedef)
+  - [PasswordFieldTypeDef](#passwordfieldtypedef)
   - [PutLoggingConfigurationRequestRequestTypeDef](#putloggingconfigurationrequestrequesttypedef)
   - [PutLoggingConfigurationResponseTypeDef](#putloggingconfigurationresponsetypedef)
   - [PutManagedRuleSetVersionsRequestRequestTypeDef](#putmanagedrulesetversionsrequestrequesttypedef)
@@ -130,6 +139,7 @@ type annotations stubs module
   - [RegexPatternSetSummaryTypeDef](#regexpatternsetsummarytypedef)
   - [RegexPatternSetTypeDef](#regexpatternsettypedef)
   - [RegexTypeDef](#regextypedef)
+  - [ReleaseSummaryTypeDef](#releasesummarytypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RuleActionTypeDef](#ruleactiontypedef)
   - [RuleGroupReferenceStatementTypeDef](#rulegroupreferencestatementtypedef)
@@ -159,6 +169,7 @@ type annotations stubs module
   - [UpdateRuleGroupResponseTypeDef](#updaterulegroupresponsetypedef)
   - [UpdateWebACLRequestRequestTypeDef](#updatewebaclrequestrequesttypedef)
   - [UpdateWebACLResponseTypeDef](#updatewebaclresponsetypedef)
+  - [UsernameFieldTypeDef](#usernamefieldtypedef)
   - [VersionToPublishTypeDef](#versiontopublishtypedef)
   - [VisibilityConfigTypeDef](#visibilityconfigtypedef)
   - [WebACLSummaryTypeDef](#webaclsummarytypedef)
@@ -816,6 +827,33 @@ Required fields:
 - `FallbackBehavior`:
   [FallbackBehaviorType](./literals.md#fallbackbehaviortype)
 
+<a id="generatemobilesdkreleaseurlrequestrequesttypedef"></a>
+
+## GenerateMobileSdkReleaseUrlRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GenerateMobileSdkReleaseUrlRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Platform`: [PlatformType](./literals.md#platformtype)
+- `ReleaseVersion`: `str`
+
+<a id="generatemobilesdkreleaseurlresponsetypedef"></a>
+
+## GenerateMobileSdkReleaseUrlResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GenerateMobileSdkReleaseUrlResponseTypeDef
+```
+
+Required fields:
+
+- `Url`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="geomatchstatementtypedef"></a>
 
 ## GeoMatchStatementTypeDef
@@ -914,6 +952,34 @@ Required fields:
 - `ManagedRuleSet`:
   [ManagedRuleSetTypeDef](./type_defs.md#managedrulesettypedef)
 - `LockToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getmobilesdkreleaserequestrequesttypedef"></a>
+
+## GetMobileSdkReleaseRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetMobileSdkReleaseRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Platform`: [PlatformType](./literals.md#platformtype)
+- `ReleaseVersion`: `str`
+
+<a id="getmobilesdkreleaseresponsetypedef"></a>
+
+## GetMobileSdkReleaseResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import GetMobileSdkReleaseResponseTypeDef
+```
+
+Required fields:
+
+- `MobileSdkRelease`:
+  [MobileSdkReleaseTypeDef](./type_defs.md#mobilesdkreleasetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1124,6 +1190,7 @@ Required fields:
 
 - `WebACL`: [WebACLTypeDef](./type_defs.md#webacltypedef)
 - `LockToken`: `str`
+- `ApplicationIntegrationURL`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1485,6 +1552,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listmobilesdkreleasesrequestrequesttypedef"></a>
+
+## ListMobileSdkReleasesRequestRequestTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListMobileSdkReleasesRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Platform`: [PlatformType](./literals.md#platformtype)
+
+Optional fields:
+
+- `NextMarker`: `str`
+- `Limit`: `int`
+
+<a id="listmobilesdkreleasesresponsetypedef"></a>
+
+## ListMobileSdkReleasesResponseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ListMobileSdkReleasesResponseTypeDef
+```
+
+Required fields:
+
+- `ReleaseSummaries`:
+  `List`\[[ReleaseSummaryTypeDef](./type_defs.md#releasesummarytypedef)\]
+- `NextMarker`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="listregexpatternsetsrequestrequesttypedef"></a>
 
 ## ListRegexPatternSetsRequestRequestTypeDef
@@ -1680,6 +1780,21 @@ Required fields:
 - `Filters`: `List`\[[FilterTypeDef](./type_defs.md#filtertypedef)\]
 - `DefaultBehavior`: [FilterBehaviorType](./literals.md#filterbehaviortype)
 
+<a id="managedrulegroupconfigtypedef"></a>
+
+## ManagedRuleGroupConfigTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ManagedRuleGroupConfigTypeDef
+```
+
+Optional fields:
+
+- `LoginPath`: `str`
+- `PayloadType`: [PayloadTypeType](./literals.md#payloadtypetype)
+- `UsernameField`: [UsernameFieldTypeDef](./type_defs.md#usernamefieldtypedef)
+- `PasswordField`: [PasswordFieldTypeDef](./type_defs.md#passwordfieldtypedef)
+
 <a id="managedrulegroupstatementtypedef"></a>
 
 ## ManagedRuleGroupStatementTypeDef
@@ -1699,6 +1814,8 @@ Optional fields:
 - `ExcludedRules`:
   `Sequence`\[[ExcludedRuleTypeDef](./type_defs.md#excludedruletypedef)\]
 - `ScopeDownStatement`: [StatementTypeDef](./type_defs.md#statementtypedef)
+- `ManagedRuleGroupConfigs`:
+  `Sequence`\[[ManagedRuleGroupConfigTypeDef](./type_defs.md#managedrulegroupconfigtypedef)\]
 
 <a id="managedrulegroupsummarytypedef"></a>
 
@@ -1783,6 +1900,21 @@ Optional fields:
 - `LastUpdateTimestamp`: `datetime`
 - `ExpiryTimestamp`: `datetime`
 
+<a id="mobilesdkreleasetypedef"></a>
+
+## MobileSdkReleaseTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import MobileSdkReleaseTypeDef
+```
+
+Optional fields:
+
+- `ReleaseVersion`: `str`
+- `Timestamp`: `datetime`
+- `ReleaseNotes`: `str`
+- `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
 <a id="notstatementtypedef"></a>
 
 ## NotStatementTypeDef
@@ -1820,6 +1952,18 @@ Optional fields:
 
 - `Count`: [CountActionTypeDef](./type_defs.md#countactiontypedef)
 - `None`: `Mapping`\[`str`, `Any`\]
+
+<a id="passwordfieldtypedef"></a>
+
+## PasswordFieldTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import PasswordFieldTypeDef
+```
+
+Required fields:
+
+- `Identifier`: `str`
 
 <a id="putloggingconfigurationrequestrequesttypedef"></a>
 
@@ -2005,6 +2149,19 @@ from mypy_boto3_wafv2.type_defs import RegexTypeDef
 Optional fields:
 
 - `RegexString`: `str`
+
+<a id="releasesummarytypedef"></a>
+
+## ReleaseSummaryTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import ReleaseSummaryTypeDef
+```
+
+Optional fields:
+
+- `ReleaseVersion`: `str`
+- `Timestamp`: `datetime`
 
 <a id="responsemetadatatypedef"></a>
 
@@ -2512,6 +2669,18 @@ Required fields:
 - `NextLockToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="usernamefieldtypedef"></a>
+
+## UsernameFieldTypeDef
+
+```python
+from mypy_boto3_wafv2.type_defs import UsernameFieldTypeDef
+```
+
+Required fields:
+
+- `Identifier`: `str`
 
 <a id="versiontopublishtypedef"></a>
 

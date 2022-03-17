@@ -181,6 +181,7 @@ from mypy_boto3_amplify.literals import DomainStatusType, ...
 - [ListDomainAssociationsPaginatorName](./literals.md#listdomainassociationspaginatorname)
 - [ListJobsPaginatorName](./literals.md#listjobspaginatorname)
 - [PlatformType](./literals.md#platformtype)
+- [RepositoryCloneMethodType](./literals.md#repositoryclonemethodtype)
 - [StageType](./literals.md#stagetype)
 - [AmplifyServiceName](./literals.md#amplifyservicename)
 - [ServiceName](./literals.md#servicename)

@@ -1507,6 +1507,12 @@ Keyword-only arguments:
 - `forceNewDeployment`: `bool`
 - `healthCheckGracePeriodSeconds`: `int`
 - `enableExecuteCommand`: `bool`
+- `enableECSManagedTags`: `bool`
+- `loadBalancers`:
+  `Sequence`\[[LoadBalancerTypeDef](./type_defs.md#loadbalancertypedef)\]
+- `propagateTags`: [PropagateTagsType](./literals.md#propagatetagstype)
+- `serviceRegistries`:
+  `Sequence`\[[ServiceRegistryTypeDef](./type_defs.md#serviceregistrytypedef)\]
 
 Returns
 [UpdateServiceResponseTypeDef](./type_defs.md#updateserviceresponsetypedef).

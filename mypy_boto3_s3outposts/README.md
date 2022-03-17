@@ -94,6 +94,7 @@ from mypy_boto3_s3outposts.client import S3OutpostsClient
 - [generate_presigned_url](./client.md#generate_presigned_url)
 - [get_paginator](./client.md#get_paginator)
 - [list_endpoints](./client.md#list_endpoints)
+- [list_shared_endpoints](./client.md#list_shared_endpoints)
 
 <a id="exceptions"></a>
 
@@ -122,6 +123,7 @@ from mypy_boto3_s3outposts.paginator import ListEndpointsPaginator, ...
 ```
 
 - [ListEndpointsPaginator](./paginators.md#listendpointspaginator)
+- [ListSharedEndpointsPaginator](./paginators.md#listsharedendpointspaginator)
 
 <a id="literals"></a>
 
@@ -138,6 +140,7 @@ from mypy_boto3_s3outposts.literals import EndpointAccessTypeType, ...
 - [EndpointAccessTypeType](./literals.md#endpointaccesstypetype)
 - [EndpointStatusType](./literals.md#endpointstatustype)
 - [ListEndpointsPaginatorName](./literals.md#listendpointspaginatorname)
+- [ListSharedEndpointsPaginatorName](./literals.md#listsharedendpointspaginatorname)
 - [S3OutpostsServiceName](./literals.md#s3outpostsservicename)
 - [ServiceName](./literals.md#servicename)
 - [ResourceServiceName](./literals.md#resourceservicename)
@@ -162,6 +165,8 @@ from mypy_boto3_s3outposts.type_defs import CreateEndpointRequestRequestTypeDef,
 - [EndpointTypeDef](./type_defs.md#endpointtypedef)
 - [ListEndpointsRequestRequestTypeDef](./type_defs.md#listendpointsrequestrequesttypedef)
 - [ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)
+- [ListSharedEndpointsRequestRequestTypeDef](./type_defs.md#listsharedendpointsrequestrequesttypedef)
+- [ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef)
 - [NetworkInterfaceTypeDef](./type_defs.md#networkinterfacetypedef)
 - [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

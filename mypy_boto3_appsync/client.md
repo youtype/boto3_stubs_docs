@@ -305,6 +305,7 @@ Keyword-only arguments:
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
+- `maxBatchSize`: `int`
 
 Returns
 [CreateFunctionResponseTypeDef](./type_defs.md#createfunctionresponsetypedef).
@@ -370,6 +371,7 @@ Keyword-only arguments:
   [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
+- `maxBatchSize`: `int`
 
 Returns
 [CreateResolverResponseTypeDef](./type_defs.md#createresolverresponsetypedef).
@@ -1247,6 +1249,7 @@ Keyword-only arguments:
 - `requestMappingTemplate`: `str`
 - `responseMappingTemplate`: `str`
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
+- `maxBatchSize`: `int`
 
 Returns
 [UpdateFunctionResponseTypeDef](./type_defs.md#updatefunctionresponsetypedef).
@@ -1312,6 +1315,7 @@ Keyword-only arguments:
   [PipelineConfigTypeDef](./type_defs.md#pipelineconfigtypedef)
 - `syncConfig`: [SyncConfigTypeDef](./type_defs.md#syncconfigtypedef)
 - `cachingConfig`: [CachingConfigTypeDef](./type_defs.md#cachingconfigtypedef)
+- `maxBatchSize`: `int`
 
 Returns
 [UpdateResolverResponseTypeDef](./type_defs.md#updateresolverresponsetypedef).

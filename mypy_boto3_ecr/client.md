@@ -848,7 +848,7 @@ Returns [PutImageResponseTypeDef](./type_defs.md#putimageresponsetypedef).
 
 ### put_image_scanning_configuration
 
-Updates the image scanning configuration for the specified repository.
+.
 
 Type annotations for `boto3.client("ecr").put_image_scanning_configuration`
 method.

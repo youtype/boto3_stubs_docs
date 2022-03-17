@@ -213,6 +213,10 @@ python -m pip uninstall -y boto3-stubs
   [Batch](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/batch.html#Batch)
   service
 
+- [mypy-boto3-billingconductor](./mypy_boto3_billingconductor) for
+  [BillingConductor](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/billingconductor.html#BillingConductor)
+  service
+
 - [mypy-boto3-braket](./mypy_boto3_braket) for
   [Braket](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/braket.html#Braket)
   service
@@ -699,6 +703,10 @@ python -m pip uninstall -y boto3-stubs
 
 - [mypy-boto3-kendra](./mypy_boto3_kendra) for
   [kendra](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/kendra.html#kendra)
+  service
+
+- [mypy-boto3-keyspaces](./mypy_boto3_keyspaces) for
+  [Keyspaces](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/keyspaces.html#Keyspaces)
   service
 
 - [mypy-boto3-kinesis](./mypy_boto3_kinesis) for

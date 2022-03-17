@@ -650,6 +650,7 @@ Optional fields:
 - `RotationLambdaARN`: `str`
 - `RotationRules`:
   [RotationRulesTypeTypeDef](./type_defs.md#rotationrulestypetypedef)
+- `RotateImmediately`: `bool`
 
 <a id="rotatesecretresponsetypedef"></a>
 
@@ -678,6 +679,8 @@ from mypy_boto3_secretsmanager.type_defs import RotationRulesTypeTypeDef
 Optional fields:
 
 - `AutomaticallyAfterDays`: `int`
+- `Duration`: `str`
+- `ScheduleExpression`: `str`
 
 <a id="secretlistentrytypedef"></a>
 

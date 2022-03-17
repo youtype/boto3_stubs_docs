@@ -85,6 +85,8 @@ type annotations stubs module
   - [RevisionDestinationEntryTypeDef](#revisiondestinationentrytypedef)
   - [RevisionEntryTypeDef](#revisionentrytypedef)
   - [RevisionPublishedTypeDef](#revisionpublishedtypedef)
+  - [RevokeRevisionRequestRequestTypeDef](#revokerevisionrequestrequesttypedef)
+  - [RevokeRevisionResponseTypeDef](#revokerevisionresponsetypedef)
   - [S3SnapshotAssetTypeDef](#s3snapshotassettypedef)
   - [SendApiAssetRequestRequestTypeDef](#sendapiassetrequestrequesttypedef)
   - [SendApiAssetResponseTypeDef](#sendapiassetresponsetypedef)
@@ -395,6 +397,9 @@ Required fields:
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UpdatedAt`: `datetime`
+- `RevocationComment`: `str`
+- `Revoked`: `bool`
+- `RevokedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -816,6 +821,9 @@ Required fields:
 - `SourceId`: `str`
 - `Tags`: `Dict`\[`str`, `str`\]
 - `UpdatedAt`: `datetime`
+- `RevocationComment`: `str`
+- `Revoked`: `bool`
+- `RevokedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1356,6 +1364,9 @@ Optional fields:
 - `Comment`: `str`
 - `Finalized`: `bool`
 - `SourceId`: `str`
+- `RevocationComment`: `str`
+- `Revoked`: `bool`
+- `RevokedAt`: `datetime`
 
 <a id="revisionpublishedtypedef"></a>
 
@@ -1368,6 +1379,44 @@ from mypy_boto3_dataexchange.type_defs import RevisionPublishedTypeDef
 Required fields:
 
 - `DataSetId`: `str`
+
+<a id="revokerevisionrequestrequesttypedef"></a>
+
+## RevokeRevisionRequestRequestTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import RevokeRevisionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `DataSetId`: `str`
+- `RevisionId`: `str`
+- `RevocationComment`: `str`
+
+<a id="revokerevisionresponsetypedef"></a>
+
+## RevokeRevisionResponseTypeDef
+
+```python
+from mypy_boto3_dataexchange.type_defs import RevokeRevisionResponseTypeDef
+```
+
+Required fields:
+
+- `Arn`: `str`
+- `Comment`: `str`
+- `CreatedAt`: `datetime`
+- `DataSetId`: `str`
+- `Finalized`: `bool`
+- `Id`: `str`
+- `SourceId`: `str`
+- `UpdatedAt`: `datetime`
+- `RevocationComment`: `str`
+- `Revoked`: `bool`
+- `RevokedAt`: `datetime`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 <a id="s3snapshotassettypedef"></a>
 
@@ -1605,5 +1654,8 @@ Required fields:
 - `Id`: `str`
 - `SourceId`: `str`
 - `UpdatedAt`: `datetime`
+- `RevocationComment`: `str`
+- `Revoked`: `bool`
+- `RevokedAt`: `datetime`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)

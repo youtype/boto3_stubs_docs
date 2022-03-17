@@ -37,6 +37,8 @@ type annotations stubs module
     - [get_query_statistics](#get_query_statistics)
     - [get_resource_lf_tags](#get_resource_lf_tags)
     - [get_table_objects](#get_table_objects)
+    - [get_temporary_glue_partition_credentials](#get_temporary_glue_partition_credentials)
+    - [get_temporary_glue_table_credentials](#get_temporary_glue_table_credentials)
     - [get_work_unit_results](#get_work_unit_results)
     - [get_work_units](#get_work_units)
     - [grant_permissions](#grant_permissions)
@@ -105,6 +107,7 @@ Exceptions:
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidInputException`
 - `Exceptions.OperationTimeoutException`
+- `Exceptions.PermissionTypeMismatchException`
 - `Exceptions.ResourceNotReadyException`
 - `Exceptions.ResourceNumberLimitExceededException`
 - `Exceptions.StatisticsNotReadyYetException`
@@ -655,6 +658,68 @@ Keyword-only arguments:
 Returns
 [GetTableObjectsResponseTypeDef](./type_defs.md#gettableobjectsresponsetypedef).
 
+<a id="get\_temporary\_glue\_partition\_credentials"></a>
+
+### get_temporary_glue_partition_credentials
+
+This API is identical to `GetTemporaryTableCredentials` except that this is
+used when the target Data Catalog resource is of type Partition.
+
+Type annotations for
+`boto3.client("lakeformation").get_temporary_glue_partition_credentials`
+method.
+
+Boto3 documentation:
+[LakeFormation.Client.get_temporary_glue_partition_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_temporary_glue_partition_credentials)
+
+Arguments mapping described in
+[GetTemporaryGluePartitionCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TableArn`: `str` *(required)*
+- `Partition`:
+  [PartitionValueListTypeDef](./type_defs.md#partitionvaluelisttypedef)
+  *(required)*
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+- `DurationSeconds`: `int`
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+
+Returns
+[GetTemporaryGluePartitionCredentialsResponseTypeDef](./type_defs.md#gettemporarygluepartitioncredentialsresponsetypedef).
+
+<a id="get\_temporary\_glue\_table\_credentials"></a>
+
+### get_temporary_glue_table_credentials
+
+Allows a caller in a secure environment to assume a role with permission to
+access Amazon S3.
+
+Type annotations for
+`boto3.client("lakeformation").get_temporary_glue_table_credentials` method.
+
+Boto3 documentation:
+[LakeFormation.Client.get_temporary_glue_table_credentials](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lakeformation.html#LakeFormation.Client.get_temporary_glue_table_credentials)
+
+Arguments mapping described in
+[GetTemporaryGlueTableCredentialsRequestRequestTypeDef](./type_defs.md#gettemporarygluetablecredentialsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `TableArn`: `str` *(required)*
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
+- `Permissions`: `Sequence`\[[PermissionType](./literals.md#permissiontype)\]
+- `DurationSeconds`: `int`
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+
+Returns
+[GetTemporaryGlueTableCredentialsResponseTypeDef](./type_defs.md#gettemporarygluetablecredentialsresponsetypedef).
+
 <a id="get\_work\_unit\_results"></a>
 
 ### get_work_unit_results
@@ -1150,11 +1215,11 @@ Keyword-only arguments:
 
 - `DatabaseName`: `str` *(required)*
 - `TableName`: `str` *(required)*
-- `TransactionId`: `str` *(required)*
 - `WriteOperations`:
   `Sequence`\[[WriteOperationTypeDef](./type_defs.md#writeoperationtypedef)\]
   *(required)*
 - `CatalogId`: `str`
+- `TransactionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

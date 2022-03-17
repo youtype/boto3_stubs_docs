@@ -857,7 +857,8 @@ Keyword-only arguments:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `principalId`: `str`
-- `states`: `Sequence`\[`str`\]
+- `states`:
+  `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
 
 Returns
 [ListLaunchProfilesResponseTypeDef](./type_defs.md#listlaunchprofilesresponsetypedef).
@@ -929,8 +930,10 @@ Keyword-only arguments:
 - `studioId`: `str` *(required)*
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `states`: `Sequence`\[`str`\]
-- `types`: `Sequence`\[`str`\]
+- `states`:
+  `Sequence`\[[StudioComponentStateType](./literals.md#studiocomponentstatetype)\]
+- `types`:
+  `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
 
 Returns
 [ListStudioComponentsResponseTypeDef](./type_defs.md#liststudiocomponentsresponsetypedef).

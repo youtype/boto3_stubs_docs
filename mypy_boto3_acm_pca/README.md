@@ -243,6 +243,8 @@ from mypy_boto3_acm_pca.type_defs import ASN1SubjectTypeDef, ...
 - [CreatePermissionRequestRequestTypeDef](./type_defs.md#createpermissionrequestrequesttypedef)
 - [CrlConfigurationTypeDef](./type_defs.md#crlconfigurationtypedef)
 - [CsrExtensionsTypeDef](./type_defs.md#csrextensionstypedef)
+- [CustomAttributeTypeDef](./type_defs.md#customattributetypedef)
+- [CustomExtensionTypeDef](./type_defs.md#customextensiontypedef)
 - [DeleteCertificateAuthorityRequestRequestTypeDef](./type_defs.md#deletecertificateauthorityrequestrequesttypedef)
 - [DeletePermissionRequestRequestTypeDef](./type_defs.md#deletepermissionrequestrequesttypedef)
 - [DeletePolicyRequestRequestTypeDef](./type_defs.md#deletepolicyrequestrequesttypedef)

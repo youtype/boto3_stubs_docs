@@ -230,6 +230,7 @@ Optional fields:
 - `EventSourceToken`: `str`
 - `Qualifier`: `str`
 - `RevisionId`: `str`
+- `PrincipalOrgID`: `str`
 
 <a id="addpermissionresponsetypedef"></a>
 

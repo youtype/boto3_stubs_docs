@@ -21,10 +21,12 @@ type annotations stubs module
     - [get_action](#get_action)
     - [get_experiment](#get_experiment)
     - [get_experiment_template](#get_experiment_template)
+    - [get_target_resource_type](#get_target_resource_type)
     - [list_actions](#list_actions)
     - [list_experiment_templates](#list_experiment_templates)
     - [list_experiments](#list_experiments)
     - [list_tags_for_resource](#list_tags_for_resource)
+    - [list_target_resource_types](#list_target_resource_types)
     - [start_experiment](#start_experiment)
     - [stop_experiment](#stop_experiment)
     - [tag_resource](#tag_resource)
@@ -134,6 +136,8 @@ Keyword-only arguments:
 - `targets`: `Mapping`\[`str`,
   [CreateExperimentTemplateTargetInputTypeDef](./type_defs.md#createexperimenttemplatetargetinputtypedef)\]
 - `tags`: `Mapping`\[`str`, `str`\]
+- `logConfiguration`:
+  [CreateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#createexperimenttemplatelogconfigurationinputtypedef)
 
 Returns
 [CreateExperimentTemplateResponseTypeDef](./type_defs.md#createexperimenttemplateresponsetypedef).
@@ -183,7 +187,7 @@ Returns `str`.
 
 ### get_action
 
-Gets information about the specified AWS FIS action.
+Gets information about the specified FIS action.
 
 Type annotations for `boto3.client("fis").get_action` method.
 
@@ -241,11 +245,32 @@ Keyword-only arguments:
 Returns
 [GetExperimentTemplateResponseTypeDef](./type_defs.md#getexperimenttemplateresponsetypedef).
 
+<a id="get\_target\_resource\_type"></a>
+
+### get_target_resource_type
+
+Gets information about the specified resource type.
+
+Type annotations for `boto3.client("fis").get_target_resource_type` method.
+
+Boto3 documentation:
+[FIS.Client.get_target_resource_type](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.get_target_resource_type)
+
+Arguments mapping described in
+[GetTargetResourceTypeRequestRequestTypeDef](./type_defs.md#gettargetresourcetyperequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `resourceType`: `str` *(required)*
+
+Returns
+[GetTargetResourceTypeResponseTypeDef](./type_defs.md#gettargetresourcetyperesponsetypedef).
+
 <a id="list\_actions"></a>
 
 ### list_actions
 
-Lists the available AWS FIS actions.
+Lists the available FIS actions.
 
 Type annotations for `boto3.client("fis").list_actions` method.
 
@@ -327,6 +352,28 @@ Keyword-only arguments:
 
 Returns
 [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="list\_target\_resource\_types"></a>
+
+### list_target_resource_types
+
+Lists the target resource types.
+
+Type annotations for `boto3.client("fis").list_target_resource_types` method.
+
+Boto3 documentation:
+[FIS.Client.list_target_resource_types](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/fis.html#FIS.Client.list_target_resource_types)
+
+Arguments mapping described in
+[ListTargetResourceTypesRequestRequestTypeDef](./type_defs.md#listtargetresourcetypesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `maxResults`: `int`
+- `nextToken`: `str`
+
+Returns
+[ListTargetResourceTypesResponseTypeDef](./type_defs.md#listtargetresourcetypesresponsetypedef).
 
 <a id="start\_experiment"></a>
 
@@ -439,6 +486,8 @@ Keyword-only arguments:
 - `actions`: `Mapping`\[`str`,
   [UpdateExperimentTemplateActionInputItemTypeDef](./type_defs.md#updateexperimenttemplateactioninputitemtypedef)\]
 - `roleArn`: `str`
+- `logConfiguration`:
+  [UpdateExperimentTemplateLogConfigurationInputTypeDef](./type_defs.md#updateexperimenttemplatelogconfigurationinputtypedef)
 
 Returns
 [UpdateExperimentTemplateResponseTypeDef](./type_defs.md#updateexperimenttemplateresponsetypedef).

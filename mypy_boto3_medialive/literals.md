@@ -142,6 +142,7 @@ type annotations stubs module
   - [HlsMediaStoreStorageClassType](#hlsmediastorestorageclasstype)
   - [HlsModeType](#hlsmodetype)
   - [HlsOutputSelectionType](#hlsoutputselectiontype)
+  - [HlsProgramDateTimeClockType](#hlsprogramdatetimeclocktype)
   - [HlsProgramDateTimeType](#hlsprogramdatetimetype)
   - [HlsRedundantManifestType](#hlsredundantmanifesttype)
   - [HlsScte35SourceTypeType](#hlsscte35sourcetypetype)
@@ -2128,6 +2129,19 @@ Values:
 - `SEGMENTS_ONLY`
 - `VARIANT_MANIFESTS_AND_SEGMENTS`
 
+<a id="hlsprogramdatetimeclocktype"></a>
+
+## HlsProgramDateTimeClockType
+
+```python
+from mypy_boto3_medialive.literals import HlsProgramDateTimeClockType
+```
+
+Values:
+
+- `INITIALIZE_FROM_OUTPUT_TIMECODE`
+- `SYSTEM_CLOCK`
+
 <a id="hlsprogramdatetimetype"></a>
 
 ## HlsProgramDateTimeType
@@ -4079,6 +4093,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -4201,6 +4216,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

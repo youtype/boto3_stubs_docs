@@ -155,8 +155,8 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `ApplicationIdentifier`: `str` *(required)*
-- `ConfigurationProfileIdentifier`: `str` *(required)*
 - `EnvironmentIdentifier`: `str` *(required)*
+- `ConfigurationProfileIdentifier`: `str` *(required)*
 - `RequiredMinimumPollIntervalInSeconds`: `int`
 
 Returns

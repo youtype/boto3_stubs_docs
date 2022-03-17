@@ -119,8 +119,8 @@ Keyword-only arguments:
 
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef) *(required)*
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype)) *(required)*
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `Description`: `str`
 - `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `ResourceTags`:
@@ -204,8 +204,8 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype)) *(required)*
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `MaxResults`: `int`
 - `NextToken`: `str`
 - `ResourceTags`:
@@ -217,7 +217,7 @@ Returns [ListRulesResponseTypeDef](./type_defs.md#listrulesresponsetypedef).
 
 ### list_tags_for_resource
 
-Lists the tags assigned a specific resource.
+Lists the tags assigned to a retention rule.
 
 Type annotations for `boto3.client("rbin").list_tags_for_resource` method.
 
@@ -238,7 +238,7 @@ Returns
 
 ### tag_resource
 
-Assigns tags to the specified resource.
+Assigns tags to the specified retention rule.
 
 Type annotations for `boto3.client("rbin").tag_resource` method.
 
@@ -259,7 +259,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### untag_resource
 
-Unassigns a tag from a resource.
+Unassigns a tag from a retention rule.
 
 Type annotations for `boto3.client("rbin").untag_resource` method.
 
@@ -296,8 +296,7 @@ Keyword-only arguments:
 - `RetentionPeriod`:
   [RetentionPeriodTypeDef](./type_defs.md#retentionperiodtypedef)
 - `Description`: `str`
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype))
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
 - `ResourceTags`:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 

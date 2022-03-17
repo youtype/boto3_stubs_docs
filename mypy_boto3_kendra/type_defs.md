@@ -45,6 +45,7 @@ type annotations stubs module
   - [ConfluenceSpaceToIndexFieldMappingTypeDef](#confluencespacetoindexfieldmappingtypedef)
   - [ConnectionConfigurationTypeDef](#connectionconfigurationtypedef)
   - [ContentSourceConfigurationTypeDef](#contentsourceconfigurationtypedef)
+  - [CorrectionTypeDef](#correctiontypedef)
   - [CreateDataSourceRequestRequestTypeDef](#createdatasourcerequestrequesttypedef)
   - [CreateDataSourceResponseTypeDef](#createdatasourceresponsetypedef)
   - [CreateExperienceRequestRequestTypeDef](#createexperiencerequestrequesttypedef)
@@ -116,6 +117,7 @@ type annotations stubs module
   - [FailedEntityTypeDef](#failedentitytypedef)
   - [FaqStatisticsTypeDef](#faqstatisticstypedef)
   - [FaqSummaryTypeDef](#faqsummarytypedef)
+  - [FsxConfigurationTypeDef](#fsxconfigurationtypedef)
   - [GetQuerySuggestionsRequestRequestTypeDef](#getquerysuggestionsrequestrequesttypedef)
   - [GetQuerySuggestionsResponseTypeDef](#getquerysuggestionsresponsetypedef)
   - [GetSnapshotsRequestRequestTypeDef](#getsnapshotsrequestrequesttypedef)
@@ -187,7 +189,10 @@ type annotations stubs module
   - [ServiceNowServiceCatalogConfigurationTypeDef](#servicenowservicecatalogconfigurationtypedef)
   - [SharePointConfigurationTypeDef](#sharepointconfigurationtypedef)
   - [SiteMapsConfigurationTypeDef](#sitemapsconfigurationtypedef)
+  - [SlackConfigurationTypeDef](#slackconfigurationtypedef)
   - [SortingConfigurationTypeDef](#sortingconfigurationtypedef)
+  - [SpellCorrectedQueryTypeDef](#spellcorrectedquerytypedef)
+  - [SpellCorrectionConfigurationTypeDef](#spellcorrectionconfigurationtypedef)
   - [SqlConfigurationTypeDef](#sqlconfigurationtypedef)
   - [StartDataSourceSyncJobRequestRequestTypeDef](#startdatasourcesyncjobrequestrequesttypedef)
   - [StartDataSourceSyncJobResponseTypeDef](#startdatasourcesyncjobresponsetypedef)
@@ -216,6 +221,7 @@ type annotations stubs module
   - [UserGroupResolutionConfigurationTypeDef](#usergroupresolutionconfigurationtypedef)
   - [UserIdentityConfigurationTypeDef](#useridentityconfigurationtypedef)
   - [UserTokenConfigurationTypeDef](#usertokenconfigurationtypedef)
+  - [WarningTypeDef](#warningtypedef)
   - [WebCrawlerConfigurationTypeDef](#webcrawlerconfigurationtypedef)
   - [WorkDocsConfigurationTypeDef](#workdocsconfigurationtypedef)
 
@@ -762,6 +768,21 @@ Optional fields:
 - `FaqIds`: `Sequence`\[`str`\]
 - `DirectPutContent`: `bool`
 
+<a id="correctiontypedef"></a>
+
+## CorrectionTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import CorrectionTypeDef
+```
+
+Optional fields:
+
+- `BeginOffset`: `int`
+- `EndOffset`: `int`
+- `Term`: `str`
+- `CorrectedTerm`: `str`
+
 <a id="createdatasourcerequestrequesttypedef"></a>
 
 ## CreateDataSourceRequestRequestTypeDef
@@ -1035,6 +1056,10 @@ Optional fields:
   [WebCrawlerConfigurationTypeDef](./type_defs.md#webcrawlerconfigurationtypedef)
 - `WorkDocsConfiguration`:
   [WorkDocsConfigurationTypeDef](./type_defs.md#workdocsconfigurationtypedef)
+- `FsxConfiguration`:
+  [FsxConfigurationTypeDef](./type_defs.md#fsxconfigurationtypedef)
+- `SlackConfiguration`:
+  [SlackConfigurationTypeDef](./type_defs.md#slackconfigurationtypedef)
 
 <a id="datasourcegrouptypedef"></a>
 
@@ -1981,6 +2006,30 @@ Optional fields:
 - `FileFormat`: [FaqFileFormatType](./literals.md#faqfileformattype)
 - `LanguageCode`: `str`
 
+<a id="fsxconfigurationtypedef"></a>
+
+## FsxConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import FsxConfigurationTypeDef
+```
+
+Required fields:
+
+- `FileSystemId`: `str`
+- `FileSystemType`: `Literal['WINDOWS']` (see
+  [FsxFileSystemTypeType](./literals.md#fsxfilesystemtypetype))
+- `VpcConfiguration`:
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
+
+Optional fields:
+
+- `SecretArn`: `str`
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
+- `FieldMappings`:
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+
 <a id="getquerysuggestionsrequestrequesttypedef"></a>
 
 ## GetQuerySuggestionsRequestRequestTypeDef
@@ -2754,10 +2803,10 @@ from mypy_boto3_kendra.type_defs import QueryRequestRequestTypeDef
 Required fields:
 
 - `IndexId`: `str`
-- `QueryText`: `str`
 
 Optional fields:
 
+- `QueryText`: `str`
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
 - `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
@@ -2772,6 +2821,8 @@ Optional fields:
   [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
+- `SpellCorrectionConfiguration`:
+  [SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef)
 
 <a id="queryresultitemtypedef"></a>
 
@@ -2815,6 +2866,9 @@ Required fields:
 - `FacetResults`:
   `List`\[[FacetResultTypeDef](./type_defs.md#facetresulttypedef)\]
 - `TotalNumberOfResults`: `int`
+- `Warnings`: `List`\[[WarningTypeDef](./type_defs.md#warningtypedef)\]
+- `SpellCorrectedQueries`:
+  `List`\[[SpellCorrectedQueryTypeDef](./type_defs.md#spellcorrectedquerytypedef)\]
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -3217,6 +3271,37 @@ Required fields:
 
 - `SiteMaps`: `Sequence`\[`str`\]
 
+<a id="slackconfigurationtypedef"></a>
+
+## SlackConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SlackConfigurationTypeDef
+```
+
+Required fields:
+
+- `TeamId`: `str`
+- `SecretArn`: `str`
+- `SlackEntityList`:
+  `Sequence`\[[SlackEntityType](./literals.md#slackentitytype)\]
+- `SinceCrawlDate`: `str`
+
+Optional fields:
+
+- `VpcConfiguration`:
+  [DataSourceVpcConfigurationTypeDef](./type_defs.md#datasourcevpcconfigurationtypedef)
+- `UseChangeLog`: `bool`
+- `CrawlBotMessage`: `bool`
+- `ExcludeArchived`: `bool`
+- `LookBackPeriod`: `int`
+- `PrivateChannelFilter`: `Sequence`\[`str`\]
+- `PublicChannelFilter`: `Sequence`\[`str`\]
+- `InclusionPatterns`: `Sequence`\[`str`\]
+- `ExclusionPatterns`: `Sequence`\[`str`\]
+- `FieldMappings`:
+  `Sequence`\[[DataSourceToIndexFieldMappingTypeDef](./type_defs.md#datasourcetoindexfieldmappingtypedef)\]
+
 <a id="sortingconfigurationtypedef"></a>
 
 ## SortingConfigurationTypeDef
@@ -3229,6 +3314,32 @@ Required fields:
 
 - `DocumentAttributeKey`: `str`
 - `SortOrder`: [SortOrderType](./literals.md#sortordertype)
+
+<a id="spellcorrectedquerytypedef"></a>
+
+## SpellCorrectedQueryTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SpellCorrectedQueryTypeDef
+```
+
+Optional fields:
+
+- `SuggestedQueryText`: `str`
+- `Corrections`:
+  `List`\[[CorrectionTypeDef](./type_defs.md#correctiontypedef)\]
+
+<a id="spellcorrectionconfigurationtypedef"></a>
+
+## SpellCorrectionConfigurationTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import SpellCorrectionConfigurationTypeDef
+```
+
+Required fields:
+
+- `IncludeQuerySpellCheckSuggestions`: `bool`
 
 <a id="sqlconfigurationtypedef"></a>
 
@@ -3669,6 +3780,20 @@ Optional fields:
   [JwtTokenTypeConfigurationTypeDef](./type_defs.md#jwttokentypeconfigurationtypedef)
 - `JsonTokenTypeConfiguration`:
   [JsonTokenTypeConfigurationTypeDef](./type_defs.md#jsontokentypeconfigurationtypedef)
+
+<a id="warningtypedef"></a>
+
+## WarningTypeDef
+
+```python
+from mypy_boto3_kendra.type_defs import WarningTypeDef
+```
+
+Optional fields:
+
+- `Message`: `str`
+- `Code`: `Literal['QUERY_LANGUAGE_INVALID_SYNTAX']` (see
+  [WarningCodeType](./literals.md#warningcodetype))
 
 <a id="webcrawlerconfigurationtypedef"></a>
 

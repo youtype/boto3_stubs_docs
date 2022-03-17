@@ -121,6 +121,9 @@ type annotations stubs module
     - [get_tags](#get_tags)
     - [get_trigger](#get_trigger)
     - [get_triggers](#get_triggers)
+    - [get_unfiltered_partition_metadata](#get_unfiltered_partition_metadata)
+    - [get_unfiltered_partitions_metadata](#get_unfiltered_partitions_metadata)
+    - [get_unfiltered_table_metadata](#get_unfiltered_table_metadata)
     - [get_user_defined_function](#get_user_defined_function)
     - [get_user_defined_functions](#get_user_defined_functions)
     - [get_workflow](#get_workflow)
@@ -240,6 +243,7 @@ Exceptions:
 - `Exceptions.MLTransformNotReadyException`
 - `Exceptions.NoScheduleException`
 - `Exceptions.OperationTimeoutException`
+- `Exceptions.PermissionTypeMismatchException`
 - `Exceptions.ResourceNotReadyException`
 - `Exceptions.ResourceNumberLimitExceededException`
 - `Exceptions.SchedulerNotRunningException`
@@ -758,6 +762,8 @@ Keyword-only arguments:
 - `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `LineageConfiguration`:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
+- `LakeFormationConfiguration`:
+  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 - `Tags`: `Mapping`\[`str`, `str`\]
@@ -2789,6 +2795,98 @@ Keyword-only arguments:
 Returns
 [GetTriggersResponseTypeDef](./type_defs.md#gettriggersresponsetypedef).
 
+<a id="get\_unfiltered\_partition\_metadata"></a>
+
+### get_unfiltered_partition_metadata
+
+See also:
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionMetadata).
+
+Type annotations for `boto3.client("glue").get_unfiltered_partition_metadata`
+method.
+
+Boto3 documentation:
+[Glue.Client.get_unfiltered_partition_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partition_metadata)
+
+Arguments mapping described in
+[GetUnfilteredPartitionMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionmetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CatalogId`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `PartitionValues`: `Sequence`\[`str`\] *(required)*
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+
+Returns
+[GetUnfilteredPartitionMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionmetadataresponsetypedef).
+
+<a id="get\_unfiltered\_partitions\_metadata"></a>
+
+### get_unfiltered_partitions_metadata
+
+See also:
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredPartitionsMetadata).
+
+Type annotations for `boto3.client("glue").get_unfiltered_partitions_metadata`
+method.
+
+Boto3 documentation:
+[Glue.Client.get_unfiltered_partitions_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_partitions_metadata)
+
+Arguments mapping described in
+[GetUnfilteredPartitionsMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredpartitionsmetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CatalogId`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `TableName`: `str` *(required)*
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
+- `Expression`: `str`
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+- `NextToken`: `str`
+- `Segment`: [SegmentTypeDef](./type_defs.md#segmenttypedef)
+- `MaxResults`: `int`
+
+Returns
+[GetUnfilteredPartitionsMetadataResponseTypeDef](./type_defs.md#getunfilteredpartitionsmetadataresponsetypedef).
+
+<a id="get\_unfiltered\_table\_metadata"></a>
+
+### get_unfiltered_table_metadata
+
+See also:
+[AWS API Documentation](https://docs.aws.amazon.com/goto/WebAPI/glue-2017-03-31/GetUnfilteredTableMetadata).
+
+Type annotations for `boto3.client("glue").get_unfiltered_table_metadata`
+method.
+
+Boto3 documentation:
+[Glue.Client.get_unfiltered_table_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_unfiltered_table_metadata)
+
+Arguments mapping described in
+[GetUnfilteredTableMetadataRequestRequestTypeDef](./type_defs.md#getunfilteredtablemetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CatalogId`: `str` *(required)*
+- `DatabaseName`: `str` *(required)*
+- `Name`: `str` *(required)*
+- `SupportedPermissionTypes`:
+  `Sequence`\[[PermissionTypeType](./literals.md#permissiontypetype)\]
+  *(required)*
+- `AuditContext`: [AuditContextTypeDef](./type_defs.md#auditcontexttypedef)
+
+Returns
+[GetUnfilteredTableMetadataResponseTypeDef](./type_defs.md#getunfilteredtablemetadataresponsetypedef).
+
 <a id="get\_user\_defined\_function"></a>
 
 ### get_user_defined_function
@@ -3673,6 +3771,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `Name`: `str` *(required)*
+- `RunProperties`: `Mapping`\[`str`, `str`\]
 
 Returns
 [StartWorkflowRunResponseTypeDef](./type_defs.md#startworkflowrunresponsetypedef).
@@ -3960,6 +4059,8 @@ Keyword-only arguments:
 - `RecrawlPolicy`: [RecrawlPolicyTypeDef](./type_defs.md#recrawlpolicytypedef)
 - `LineageConfiguration`:
   [LineageConfigurationTypeDef](./type_defs.md#lineageconfigurationtypedef)
+- `LakeFormationConfiguration`:
+  [LakeFormationConfigurationTypeDef](./type_defs.md#lakeformationconfigurationtypedef)
 - `Configuration`: `str`
 - `CrawlerSecurityConfiguration`: `str`
 
@@ -4186,6 +4287,7 @@ Keyword-only arguments:
 - `CatalogId`: `str`
 - `SkipArchive`: `bool`
 - `TransactionId`: `str`
+- `VersionId`: `str`
 
 Returns `Dict`\[`str`, `Any`\].
 

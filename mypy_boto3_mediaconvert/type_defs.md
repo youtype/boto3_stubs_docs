@@ -496,6 +496,7 @@ Optional fields:
 
 - `AdaptiveQuantization`:
   [Av1AdaptiveQuantizationType](./literals.md#av1adaptivequantizationtype)
+- `BitDepth`: [Av1BitDepthType](./literals.md#av1bitdepthtype)
 - `FramerateControl`:
   [Av1FramerateControlType](./literals.md#av1frameratecontroltype)
 - `FramerateConversionAlgorithm`:
@@ -872,6 +873,7 @@ Optional fields:
   [CmfcIFrameOnlyManifestType](./literals.md#cmfciframeonlymanifesttype)
 - `Scte35Esam`: [CmfcScte35EsamType](./literals.md#cmfcscte35esamtype)
 - `Scte35Source`: [CmfcScte35SourceType](./literals.md#cmfcscte35sourcetype)
+- `TimedMetadata`: [CmfcTimedMetadataType](./literals.md#cmfctimedmetadatatype)
 
 <a id="colorcorrectortypedef"></a>
 
@@ -2006,6 +2008,8 @@ Optional fields:
   `Sequence`\[[HlsCaptionLanguageMappingTypeDef](./type_defs.md#hlscaptionlanguagemappingtypedef)\]
 - `CaptionLanguageSetting`:
   [HlsCaptionLanguageSettingType](./literals.md#hlscaptionlanguagesettingtype)
+- `CaptionSegmentLengthControl`:
+  [HlsCaptionSegmentLengthControlType](./literals.md#hlscaptionsegmentlengthcontroltype)
 - `ClientCache`: [HlsClientCacheType](./literals.md#hlsclientcachetype)
 - `CodecSpecification`:
   [HlsCodecSpecificationType](./literals.md#hlscodecspecificationtype)
@@ -2150,6 +2154,8 @@ from mypy_boto3_mediaconvert.type_defs import ImscDestinationSettingsTypeDef
 
 Optional fields:
 
+- `Accessibility`:
+  [ImscAccessibilitySubsType](./literals.md#imscaccessibilitysubstype)
 - `StylePassthrough`:
   [ImscStylePassthroughType](./literals.md#imscstylepassthroughtype)
 
@@ -2202,6 +2208,7 @@ Optional fields:
   [InputDeblockFilterType](./literals.md#inputdeblockfiltertype)
 - `DenoiseFilter`:
   [InputDenoiseFilterType](./literals.md#inputdenoisefiltertype)
+- `DolbyVisionMetadataXml`: `str`
 - `FilterEnable`: [InputFilterEnableType](./literals.md#inputfilterenabletype)
 - `FilterStrength`: `int`
 - `ImageInserter`: [ImageInserterTypeDef](./type_defs.md#imageinsertertypedef)
@@ -2239,6 +2246,7 @@ Optional fields:
   [InputDecryptionSettingsTypeDef](./type_defs.md#inputdecryptionsettingstypedef)
 - `DenoiseFilter`:
   [InputDenoiseFilterType](./literals.md#inputdenoisefiltertype)
+- `DolbyVisionMetadataXml`: `str`
 - `FileInput`: `str`
 - `FilterEnable`: [InputFilterEnableType](./literals.md#inputfilterenabletype)
 - `FilterStrength`: `int`
@@ -2835,6 +2843,7 @@ Optional fields:
   [MpdCaptionContainerTypeType](./literals.md#mpdcaptioncontainertypetype)
 - `Scte35Esam`: [MpdScte35EsamType](./literals.md#mpdscte35esamtype)
 - `Scte35Source`: [MpdScte35SourceType](./literals.md#mpdscte35sourcetype)
+- `TimedMetadata`: [MpdTimedMetadataType](./literals.md#mpdtimedmetadatatype)
 
 <a id="mpeg2settingstypedef"></a>
 
@@ -3971,6 +3980,8 @@ Optional fields:
 - `AlphaBehavior`: [AlphaBehaviorType](./literals.md#alphabehaviortype)
 - `ColorSpace`: [ColorSpaceType](./literals.md#colorspacetype)
 - `ColorSpaceUsage`: [ColorSpaceUsageType](./literals.md#colorspaceusagetype)
+- `EmbeddedTimecodeOverride`:
+  [EmbeddedTimecodeOverrideType](./literals.md#embeddedtimecodeoverridetype)
 - `Hdr10Metadata`: [Hdr10MetadataTypeDef](./type_defs.md#hdr10metadatatypedef)
 - `Pid`: `int`
 - `ProgramNumber`: `int`
@@ -4072,6 +4083,8 @@ from mypy_boto3_mediaconvert.type_defs import WebvttDestinationSettingsTypeDef
 
 Optional fields:
 
+- `Accessibility`:
+  [WebvttAccessibilitySubsType](./literals.md#webvttaccessibilitysubstype)
 - `StylePassthrough`:
   [WebvttStylePassthroughType](./literals.md#webvttstylepassthroughtype)
 

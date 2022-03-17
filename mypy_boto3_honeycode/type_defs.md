@@ -43,6 +43,8 @@ type annotations stubs module
   - [ListTableRowsResultTypeDef](#listtablerowsresulttypedef)
   - [ListTablesRequestRequestTypeDef](#listtablesrequestrequesttypedef)
   - [ListTablesResultTypeDef](#listtablesresulttypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResultTypeDef](#listtagsforresourceresulttypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [QueryTableRowsRequestRequestTypeDef](#querytablerowsrequestrequesttypedef)
   - [QueryTableRowsResultTypeDef](#querytablerowsresulttypedef)
@@ -56,6 +58,8 @@ type annotations stubs module
   - [TableDataImportJobMetadataTypeDef](#tabledataimportjobmetadatatypedef)
   - [TableRowTypeDef](#tablerowtypedef)
   - [TableTypeDef](#tabletypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateRowDataTypeDef](#updaterowdatatypedef)
   - [UpsertRowDataTypeDef](#upsertrowdatatypedef)
   - [UpsertRowsResultTypeDef](#upsertrowsresulttypedef)
@@ -214,6 +218,7 @@ from mypy_boto3_honeycode.type_defs import CellInputTypeDef
 Optional fields:
 
 - `fact`: `str`
+- `facts`: `Sequence`\[`str`\]
 
 <a id="celltypedef"></a>
 
@@ -229,6 +234,7 @@ Optional fields:
 - `format`: [FormatType](./literals.md#formattype)
 - `rawValue`: `str`
 - `formattedValue`: `str`
+- `formattedValues`: `List`\[`str`\]
 
 <a id="columnmetadatatypedef"></a>
 
@@ -319,6 +325,7 @@ Required fields:
 - `message`: `str`
 - `jobMetadata`:
   [TableDataImportJobMetadataTypeDef](./type_defs.md#tabledataimportjobmetadatatypedef)
+- `errorCode`: [ErrorCodeType](./literals.md#errorcodetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -595,6 +602,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+
+<a id="listtagsforresourceresulttypedef"></a>
+
+## ListTagsForResourceResultTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import ListTagsForResourceResultTypeDef
+```
+
+Required fields:
+
+- `tags`: `Dict`\[`str`, `str`\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="paginatorconfigtypedef"></a>
 
 ## PaginatorConfigTypeDef
@@ -794,6 +827,32 @@ Optional fields:
 
 - `tableId`: `str`
 - `tableName`: `str`
+
+<a id="tagresourcerequestrequesttypedef"></a>
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tags`: `Mapping`\[`str`, `str`\]
+
+<a id="untagresourcerequestrequesttypedef"></a>
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_honeycode.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `resourceArn`: `str`
+- `tagKeys`: `Sequence`\[`str`\]
 
 <a id="updaterowdatatypedef"></a>
 

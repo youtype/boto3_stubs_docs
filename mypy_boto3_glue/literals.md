@@ -57,6 +57,7 @@ type annotations stubs module
   - [NodeTypeType](#nodetypetype)
   - [PartitionIndexStatusType](#partitionindexstatustype)
   - [PermissionType](#permissiontype)
+  - [PermissionTypeType](#permissiontypetype)
   - [PrincipalTypeType](#principaltypetype)
   - [RecrawlBehaviorType](#recrawlbehaviortype)
   - [RegistryStatusType](#registrystatustype)
@@ -338,6 +339,7 @@ Values:
 
 - `AVRO`
 - `JSON`
+- `PROTOBUF`
 
 <a id="deletebehaviortype"></a>
 
@@ -753,6 +755,19 @@ Values:
 - `INSERT`
 - `SELECT`
 
+<a id="permissiontypetype"></a>
+
+## PermissionTypeType
+
+```python
+from mypy_boto3_glue.literals import PermissionTypeType
+```
+
+Values:
+
+- `CELL_FILTER_PERMISSION`
+- `COLUMN_PERMISSION`
+
 <a id="principaltypetype"></a>
 
 ## PrincipalTypeType
@@ -1135,6 +1150,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -1257,6 +1273,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

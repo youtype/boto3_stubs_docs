@@ -343,6 +343,7 @@ Boto3 documentation:
 
 Arguments for `GetKeyPairsPaginator.paginate` method:
 
+- `includeDefaultKeyPair`: `bool`
 - `PaginationConfig`:
   [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
 

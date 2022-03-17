@@ -25,6 +25,7 @@ type annotations stubs module
   - [FargateProfileActiveWaiterName](#fargateprofileactivewaitername)
   - [FargateProfileDeletedWaiterName](#fargateprofiledeletedwaitername)
   - [FargateProfileStatusType](#fargateprofilestatustype)
+  - [IpFamilyType](#ipfamilytype)
   - [ListAddonsPaginatorName](#listaddonspaginatorname)
   - [ListClustersPaginatorName](#listclusterspaginatorname)
   - [ListFargateProfilesPaginatorName](#listfargateprofilespaginatorname)
@@ -280,6 +281,19 @@ Values:
 - `DELETE_FAILED`
 - `DELETING`
 
+<a id="ipfamilytype"></a>
+
+## IpFamilyType
+
+```python
+from mypy_boto3_eks.literals import IpFamilyType
+```
+
+Values:
+
+- `ipv4`
+- `ipv6`
+
 <a id="listaddonspaginatorname"></a>
 
 ## ListAddonsPaginatorName
@@ -412,6 +426,7 @@ Values:
 - `Ec2SecurityGroupDeletionFailure`
 - `Ec2SecurityGroupNotFound`
 - `Ec2SubnetInvalidConfiguration`
+- `Ec2SubnetMissingIpv6Assignment`
 - `Ec2SubnetNotFound`
 - `IamInstanceProfileNotFound`
 - `IamLimitExceeded`
@@ -600,6 +615,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -722,6 +738,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

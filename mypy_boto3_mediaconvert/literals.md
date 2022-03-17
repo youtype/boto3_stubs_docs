@@ -42,6 +42,7 @@ type annotations stubs module
   - [AudioSelectorTypeType](#audioselectortypetype)
   - [AudioTypeControlType](#audiotypecontroltype)
   - [Av1AdaptiveQuantizationType](#av1adaptivequantizationtype)
+  - [Av1BitDepthType](#av1bitdepthtype)
   - [Av1FramerateControlType](#av1frameratecontroltype)
   - [Av1FramerateConversionAlgorithmType](#av1framerateconversionalgorithmtype)
   - [Av1RateControlModeType](#av1ratecontrolmodetype)
@@ -90,6 +91,7 @@ type annotations stubs module
   - [CmfcIFrameOnlyManifestType](#cmfciframeonlymanifesttype)
   - [CmfcScte35EsamType](#cmfcscte35esamtype)
   - [CmfcScte35SourceType](#cmfcscte35sourcetype)
+  - [CmfcTimedMetadataType](#cmfctimedmetadatatype)
   - [ColorMetadataType](#colormetadatatype)
   - [ColorSpaceConversionType](#colorspaceconversiontype)
   - [ColorSpaceType](#colorspacetype)
@@ -153,6 +155,7 @@ type annotations stubs module
   - [Eac3SurroundModeType](#eac3surroundmodetype)
   - [EmbeddedConvert608To708Type](#embeddedconvert608to708type)
   - [EmbeddedTerminateCaptionsType](#embeddedterminatecaptionstype)
+  - [EmbeddedTimecodeOverrideType](#embeddedtimecodeoverridetype)
   - [F4vMoovPlacementType](#f4vmoovplacementtype)
   - [FileSourceConvert608To708Type](#filesourceconvert608to708type)
   - [FileSourceTimeDeltaUnitsType](#filesourcetimedeltaunitstype)
@@ -211,6 +214,7 @@ type annotations stubs module
   - [HlsAudioOnlyHeaderType](#hlsaudioonlyheadertype)
   - [HlsAudioTrackTypeType](#hlsaudiotracktypetype)
   - [HlsCaptionLanguageSettingType](#hlscaptionlanguagesettingtype)
+  - [HlsCaptionSegmentLengthControlType](#hlscaptionsegmentlengthcontroltype)
   - [HlsClientCacheType](#hlsclientcachetype)
   - [HlsCodecSpecificationType](#hlscodecspecificationtype)
   - [HlsDescriptiveVideoServiceFlagType](#hlsdescriptivevideoserviceflagtype)
@@ -231,6 +235,7 @@ type annotations stubs module
   - [HlsStreamInfResolutionType](#hlsstreaminfresolutiontype)
   - [HlsTargetDurationCompatibilityModeType](#hlstargetdurationcompatibilitymodetype)
   - [HlsTimedMetadataId3FrameType](#hlstimedmetadataid3frametype)
+  - [ImscAccessibilitySubsType](#imscaccessibilitysubstype)
   - [ImscStylePassthroughType](#imscstylepassthroughtype)
   - [InputDeblockFilterType](#inputdeblockfiltertype)
   - [InputDenoiseFilterType](#inputdenoisefiltertype)
@@ -284,6 +289,7 @@ type annotations stubs module
   - [MpdCaptionContainerTypeType](#mpdcaptioncontainertypetype)
   - [MpdScte35EsamType](#mpdscte35esamtype)
   - [MpdScte35SourceType](#mpdscte35sourcetype)
+  - [MpdTimedMetadataType](#mpdtimedmetadatatype)
   - [Mpeg2AdaptiveQuantizationType](#mpeg2adaptivequantizationtype)
   - [Mpeg2CodecLevelType](#mpeg2codecleveltype)
   - [Mpeg2CodecProfileType](#mpeg2codecprofiletype)
@@ -370,6 +376,7 @@ type annotations stubs module
   - [Vp9RateControlModeType](#vp9ratecontrolmodetype)
   - [WatermarkingStrengthType](#watermarkingstrengthtype)
   - [WavFormatType](#wavformattype)
+  - [WebvttAccessibilitySubsType](#webvttaccessibilitysubstype)
   - [WebvttStylePassthroughType](#webvttstylepassthroughtype)
   - [Xavc4kIntraCbgProfileClassType](#xavc4kintracbgprofileclasstype)
   - [Xavc4kIntraVbrProfileClassType](#xavc4kintravbrprofileclasstype)
@@ -867,6 +874,19 @@ Values:
 - `MAX`
 - `MEDIUM`
 - `OFF`
+
+<a id="av1bitdepthtype"></a>
+
+## Av1BitDepthType
+
+```python
+from mypy_boto3_mediaconvert.literals import Av1BitDepthType
+```
+
+Values:
+
+- `BIT_10`
+- `BIT_8`
 
 <a id="av1frameratecontroltype"></a>
 
@@ -1538,6 +1558,19 @@ Values:
 
 ```python
 from mypy_boto3_mediaconvert.literals import CmfcScte35SourceType
+```
+
+Values:
+
+- `NONE`
+- `PASSTHROUGH`
+
+<a id="cmfctimedmetadatatype"></a>
+
+## CmfcTimedMetadataType
+
+```python
+from mypy_boto3_mediaconvert.literals import CmfcTimedMetadataType
 ```
 
 Values:
@@ -2435,6 +2468,19 @@ Values:
 - `DISABLED`
 - `END_OF_INPUT`
 
+<a id="embeddedtimecodeoverridetype"></a>
+
+## EmbeddedTimecodeOverrideType
+
+```python
+from mypy_boto3_mediaconvert.literals import EmbeddedTimecodeOverrideType
+```
+
+Values:
+
+- `NONE`
+- `USE_MDPM`
+
 <a id="f4vmoovplacementtype"></a>
 
 ## F4vMoovPlacementType
@@ -2844,6 +2890,7 @@ from mypy_boto3_mediaconvert.literals import H265AdaptiveQuantizationType
 
 Values:
 
+- `AUTO`
 - `HIGH`
 - `HIGHER`
 - `LOW`
@@ -3259,6 +3306,19 @@ Values:
 - `NONE`
 - `OMIT`
 
+<a id="hlscaptionsegmentlengthcontroltype"></a>
+
+## HlsCaptionSegmentLengthControlType
+
+```python
+from mypy_boto3_mediaconvert.literals import HlsCaptionSegmentLengthControlType
+```
+
+Values:
+
+- `LARGE_SEGMENTS`
+- `MATCH_VIDEO`
+
 <a id="hlsclientcachetype"></a>
 
 ## HlsClientCacheType
@@ -3521,6 +3581,19 @@ Values:
 - `NONE`
 - `PRIV`
 - `TDRL`
+
+<a id="imscaccessibilitysubstype"></a>
+
+## ImscAccessibilitySubsType
+
+```python
+from mypy_boto3_mediaconvert.literals import ImscAccessibilitySubsType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 <a id="imscstylepassthroughtype"></a>
 
@@ -3869,6 +3942,7 @@ Values:
 - `SQI`
 - `SRB`
 - `SRD`
+- `SRP`
 - `SSW`
 - `SUN`
 - `SWA`
@@ -4404,6 +4478,19 @@ Values:
 
 ```python
 from mypy_boto3_mediaconvert.literals import MpdScte35SourceType
+```
+
+Values:
+
+- `NONE`
+- `PASSTHROUGH`
+
+<a id="mpdtimedmetadatatype"></a>
+
+## MpdTimedMetadataType
+
+```python
+from mypy_boto3_mediaconvert.literals import MpdTimedMetadataType
 ```
 
 Values:
@@ -5611,6 +5698,19 @@ Values:
 - `RF64`
 - `RIFF`
 
+<a id="webvttaccessibilitysubstype"></a>
+
+## WebvttAccessibilitySubsType
+
+```python
+from mypy_boto3_mediaconvert.literals import WebvttAccessibilitySubsType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
+
 <a id="webvttstylepassthroughtype"></a>
 
 ## WebvttStylePassthroughType
@@ -5956,6 +6056,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -6078,6 +6179,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

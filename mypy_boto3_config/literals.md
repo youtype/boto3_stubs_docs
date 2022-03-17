@@ -812,6 +812,9 @@ Values:
 - `AWS::CloudTrail::Trail`
 - `AWS::CloudWatch::Alarm`
 - `AWS::CodeBuild::Project`
+- `AWS::CodeDeploy::Application`
+- `AWS::CodeDeploy::DeploymentConfig`
+- `AWS::CodeDeploy::DeploymentGroup`
 - `AWS::CodePipeline::Pipeline`
 - `AWS::Config::ConformancePackCompliance`
 - `AWS::Config::ResourceCompliance`
@@ -823,6 +826,7 @@ Values:
 - `AWS::EC2::Host`
 - `AWS::EC2::Instance`
 - `AWS::EC2::InternetGateway`
+- `AWS::EC2::LaunchTemplate`
 - `AWS::EC2::NatGateway`
 - `AWS::EC2::NetworkAcl`
 - `AWS::EC2::NetworkInterface`
@@ -830,6 +834,7 @@ Values:
 - `AWS::EC2::RouteTable`
 - `AWS::EC2::SecurityGroup`
 - `AWS::EC2::Subnet`
+- `AWS::EC2::TransitGateway`
 - `AWS::EC2::Volume`
 - `AWS::EC2::VPC`
 - `AWS::EC2::VPCEndpoint`
@@ -837,6 +842,7 @@ Values:
 - `AWS::EC2::VPCPeeringConnection`
 - `AWS::EC2::VPNConnection`
 - `AWS::EC2::VPNGateway`
+- `AWS::ECR::PublicRepository`
 - `AWS::ECR::Repository`
 - `AWS::ECS::Cluster`
 - `AWS::ECS::Service`
@@ -854,6 +860,8 @@ Values:
 - `AWS::IAM::Policy`
 - `AWS::IAM::Role`
 - `AWS::IAM::User`
+- `AWS::Kinesis::Stream`
+- `AWS::Kinesis::StreamConsumer`
 - `AWS::KMS::Key`
 - `AWS::Lambda::Function`
 - `AWS::NetworkFirewall::Firewall`
@@ -991,6 +999,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -1113,6 +1122,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

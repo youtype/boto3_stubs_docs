@@ -20,6 +20,7 @@ type annotations stubs module
     - [create_alert](#create_alert)
     - [create_anomaly_detector](#create_anomaly_detector)
     - [create_metric_set](#create_metric_set)
+    - [deactivate_anomaly_detector](#deactivate_anomaly_detector)
     - [delete_alert](#delete_alert)
     - [delete_anomaly_detector](#delete_anomaly_detector)
     - [describe_alert](#describe_alert)
@@ -250,6 +251,27 @@ Keyword-only arguments:
 
 Returns
 [CreateMetricSetResponseTypeDef](./type_defs.md#createmetricsetresponsetypedef).
+
+<a id="deactivate\_anomaly\_detector"></a>
+
+### deactivate_anomaly_detector
+
+Deactivates an anomaly detector.
+
+Type annotations for
+`boto3.client("lookoutmetrics").deactivate_anomaly_detector` method.
+
+Boto3 documentation:
+[LookoutMetrics.Client.deactivate_anomaly_detector](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lookoutmetrics.html#LookoutMetrics.Client.deactivate_anomaly_detector)
+
+Arguments mapping described in
+[DeactivateAnomalyDetectorRequestRequestTypeDef](./type_defs.md#deactivateanomalydetectorrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AnomalyDetectorArn`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 <a id="delete\_alert"></a>
 

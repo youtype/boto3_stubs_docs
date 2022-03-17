@@ -49,6 +49,7 @@ type annotations stubs module
     - [update_server](#update_server)
     - [update_user](#update_user)
     - [get_paginator](#get_paginator)
+    - [get_waiter](#get_waiter)
 
 <a id="transferclient"></a>
 
@@ -190,6 +191,8 @@ Keyword-only arguments:
 - `IdentityProviderType`:
   [IdentityProviderTypeType](./literals.md#identityprovidertypetype)
 - `LoggingRole`: `str`
+- `PostAuthenticationLoginBanner`: `str`
+- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `ProtocolDetails`:
   [ProtocolDetailsTypeDef](./type_defs.md#protocoldetailstypedef)
@@ -887,6 +890,8 @@ Keyword-only arguments:
 - `IdentityProviderDetails`:
   [IdentityProviderDetailsTypeDef](./type_defs.md#identityproviderdetailstypedef)
 - `LoggingRole`: `str`
+- `PostAuthenticationLoginBanner`: `str`
+- `PreAuthenticationLoginBanner`: `str`
 - `Protocols`: `Sequence`\[[ProtocolType](./literals.md#protocoltype)\]
 - `SecurityPolicyName`: `str`
 - `WorkflowDetails`:
@@ -931,5 +936,29 @@ Returns [UpdateUserResponseTypeDef](./type_defs.md#updateuserresponsetypedef).
 Type annotations for `boto3.client("transfer").get_paginator` method with
 overloads.
 
+- `client.get_paginator("list_accesses")` ->
+  [ListAccessesPaginator](./paginators.md#listaccessespaginator)
+- `client.get_paginator("list_executions")` ->
+  [ListExecutionsPaginator](./paginators.md#listexecutionspaginator)
+- `client.get_paginator("list_security_policies")` ->
+  [ListSecurityPoliciesPaginator](./paginators.md#listsecuritypoliciespaginator)
 - `client.get_paginator("list_servers")` ->
   [ListServersPaginator](./paginators.md#listserverspaginator)
+- `client.get_paginator("list_tags_for_resource")` ->
+  [ListTagsForResourcePaginator](./paginators.md#listtagsforresourcepaginator)
+- `client.get_paginator("list_users")` ->
+  [ListUsersPaginator](./paginators.md#listuserspaginator)
+- `client.get_paginator("list_workflows")` ->
+  [ListWorkflowsPaginator](./paginators.md#listworkflowspaginator)
+
+<a id="get_waiter"></a>
+
+### get_waiter
+
+Type annotations for `boto3.client("transfer").get_waiter` method with
+overloads.
+
+- `client.get_waiter("server_offline")` ->
+  [ServerOfflineWaiter](./waiters.md#serverofflinewaiter)
+- `client.get_waiter("server_online")` ->
+  [ServerOnlineWaiter](./waiters.md#serveronlinewaiter)

@@ -2044,6 +2044,7 @@ Required fields:
 - `KMSKeyId`: `str`
 - `CreateTime`: `datetime`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SupportsBabelfish`: `bool`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2087,6 +2088,7 @@ Optional fields:
 - `KMSKeyId`: `str`
 - `CreateTime`: `datetime`
 - `TagList`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `SupportsBabelfish`: `bool`
 
 <a id="dbinstanceautomatedbackupmessagetypedef"></a>
 
@@ -6627,6 +6629,7 @@ Optional fields:
 - `SupportedEngineModes`: `List`\[`str`\]
 - `SupportsParallelQuery`: `bool`
 - `SupportsGlobalDatabases`: `bool`
+- `SupportsBabelfish`: `bool`
 
 <a id="userauthconfiginfotypedef"></a>
 

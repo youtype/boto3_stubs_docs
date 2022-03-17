@@ -65,6 +65,8 @@ Values:
 - `RESTORE_JOB_FAILED`
 - `RESTORE_JOB_STARTED`
 - `RESTORE_JOB_SUCCESSFUL`
+- `S3_BACKUP_OBJECT_FAILED`
+- `S3_RESTORE_OBJECT_FAILED`
 
 <a id="conditiontypetype"></a>
 
@@ -190,6 +192,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -312,6 +315,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

@@ -34,6 +34,8 @@ type annotations stubs module
   - [EC2ReplaceRouteTableAssociationActionTypeDef](#ec2replaceroutetableassociationactiontypedef)
   - [EvaluationResultTypeDef](#evaluationresulttypedef)
   - [ExpectedRouteTypeDef](#expectedroutetypedef)
+  - [FMSPolicyUpdateFirewallCreationConfigActionTypeDef](#fmspolicyupdatefirewallcreationconfigactiontypedef)
+  - [FirewallSubnetIsOutOfScopeViolationTypeDef](#firewallsubnetisoutofscopeviolationtypedef)
   - [GetAdminAccountResponseTypeDef](#getadminaccountresponsetypedef)
   - [GetAppsListRequestRequestTypeDef](#getappslistrequestrequesttypedef)
   - [GetAppsListResponseTypeDef](#getappslistresponsetypedef)
@@ -69,12 +71,14 @@ type annotations stubs module
   - [NetworkFirewallMissingSubnetViolationTypeDef](#networkfirewallmissingsubnetviolationtypedef)
   - [NetworkFirewallPolicyDescriptionTypeDef](#networkfirewallpolicydescriptiontypedef)
   - [NetworkFirewallPolicyModifiedViolationTypeDef](#networkfirewallpolicymodifiedviolationtypedef)
+  - [NetworkFirewallPolicyTypeDef](#networkfirewallpolicytypedef)
   - [NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef](#networkfirewallunexpectedfirewallroutesviolationtypedef)
   - [NetworkFirewallUnexpectedGatewayRoutesViolationTypeDef](#networkfirewallunexpectedgatewayroutesviolationtypedef)
   - [PaginatorConfigTypeDef](#paginatorconfigtypedef)
   - [PartialMatchTypeDef](#partialmatchtypedef)
   - [PolicyComplianceDetailTypeDef](#policycompliancedetailtypedef)
   - [PolicyComplianceStatusTypeDef](#policycompliancestatustypedef)
+  - [PolicyOptionTypeDef](#policyoptiontypedef)
   - [PolicySummaryTypeDef](#policysummarytypedef)
   - [PolicyTypeDef](#policytypedef)
   - [PossibleRemediationActionTypeDef](#possibleremediationactiontypedef)
@@ -93,6 +97,7 @@ type annotations stubs module
   - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResourceViolationTypeDef](#resourceviolationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
+  - [RouteHasOutOfScopeEndpointViolationTypeDef](#routehasoutofscopeendpointviolationtypedef)
   - [RouteTypeDef](#routetypedef)
   - [SecurityGroupRemediationActionTypeDef](#securitygroupremediationactiontypedef)
   - [SecurityGroupRuleDescriptionTypeDef](#securitygroupruledescriptiontypedef)
@@ -237,6 +242,7 @@ Optional fields:
 - `ResourceId`: `str`
 - `ViolationReason`: [ViolationReasonType](./literals.md#violationreasontype)
 - `ResourceType`: `str`
+- `Metadata`: `Dict`\[`str`, `str`\]
 
 <a id="deleteappslistrequestrequesttypedef"></a>
 
@@ -480,6 +486,35 @@ Optional fields:
 - `ContributingSubnets`: `List`\[`str`\]
 - `AllowedTargets`: `List`\[`str`\]
 - `RouteTableId`: `str`
+
+<a id="fmspolicyupdatefirewallcreationconfigactiontypedef"></a>
+
+## FMSPolicyUpdateFirewallCreationConfigActionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import FMSPolicyUpdateFirewallCreationConfigActionTypeDef
+```
+
+Optional fields:
+
+- `Description`: `str`
+- `FirewallCreationConfig`: `str`
+
+<a id="firewallsubnetisoutofscopeviolationtypedef"></a>
+
+## FirewallSubnetIsOutOfScopeViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import FirewallSubnetIsOutOfScopeViolationTypeDef
+```
+
+Optional fields:
+
+- `FirewallSubnetId`: `str`
+- `VpcId`: `str`
+- `SubnetAvailabilityZone`: `str`
+- `SubnetAvailabilityZoneId`: `str`
+- `VpcEndpointId`: `str`
 
 <a id="getadminaccountresponsetypedef"></a>
 
@@ -1050,6 +1085,19 @@ Optional fields:
 - `ExpectedPolicyDescription`:
   [NetworkFirewallPolicyDescriptionTypeDef](./type_defs.md#networkfirewallpolicydescriptiontypedef)
 
+<a id="networkfirewallpolicytypedef"></a>
+
+## NetworkFirewallPolicyTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import NetworkFirewallPolicyTypeDef
+```
+
+Optional fields:
+
+- `FirewallDeploymentModel`: `Literal['CENTRALIZED']` (see
+  [FirewallDeploymentModelType](./literals.md#firewalldeploymentmodeltype))
+
 <a id="networkfirewallunexpectedfirewallroutesviolationtypedef"></a>
 
 ## NetworkFirewallUnexpectedFirewallRoutesViolationTypeDef
@@ -1149,6 +1197,19 @@ Optional fields:
 - `IssueInfoMap`:
   `Dict`\[[DependentServiceNameType](./literals.md#dependentservicenametype),
   `str`\]
+
+<a id="policyoptiontypedef"></a>
+
+## PolicyOptionTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import PolicyOptionTypeDef
+```
+
+Optional fields:
+
+- `NetworkFirewallPolicy`:
+  [NetworkFirewallPolicyTypeDef](./type_defs.md#networkfirewallpolicytypedef)
 
 <a id="policysummarytypedef"></a>
 
@@ -1402,6 +1463,8 @@ Optional fields:
   [EC2AssociateRouteTableActionTypeDef](./type_defs.md#ec2associateroutetableactiontypedef)
 - `EC2CreateRouteTableAction`:
   [EC2CreateRouteTableActionTypeDef](./type_defs.md#ec2createroutetableactiontypedef)
+- `FMSPolicyUpdateFirewallCreationConfigAction`:
+  [FMSPolicyUpdateFirewallCreationConfigActionTypeDef](./type_defs.md#fmspolicyupdatefirewallcreationconfigactiontypedef)
 
 <a id="remediationactionwithordertypedef"></a>
 
@@ -1477,6 +1540,10 @@ Optional fields:
   [DnsRuleGroupLimitExceededViolationTypeDef](./type_defs.md#dnsrulegrouplimitexceededviolationtypedef)
 - `PossibleRemediationActions`:
   [PossibleRemediationActionsTypeDef](./type_defs.md#possibleremediationactionstypedef)
+- `FirewallSubnetIsOutOfScopeViolation`:
+  [FirewallSubnetIsOutOfScopeViolationTypeDef](./type_defs.md#firewallsubnetisoutofscopeviolationtypedef)
+- `RouteHasOutOfScopeEndpointViolation`:
+  [RouteHasOutOfScopeEndpointViolationTypeDef](./type_defs.md#routehasoutofscopeendpointviolationtypedef)
 
 <a id="responsemetadatatypedef"></a>
 
@@ -1493,6 +1560,30 @@ Required fields:
 - `HTTPStatusCode`: `int`
 - `HTTPHeaders`: `Dict`\[`str`, `str`\]
 - `RetryAttempts`: `int`
+
+<a id="routehasoutofscopeendpointviolationtypedef"></a>
+
+## RouteHasOutOfScopeEndpointViolationTypeDef
+
+```python
+from mypy_boto3_fms.type_defs import RouteHasOutOfScopeEndpointViolationTypeDef
+```
+
+Optional fields:
+
+- `SubnetId`: `str`
+- `VpcId`: `str`
+- `RouteTableId`: `str`
+- `ViolatingRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `SubnetAvailabilityZone`: `str`
+- `SubnetAvailabilityZoneId`: `str`
+- `CurrentFirewallSubnetRouteTable`: `str`
+- `FirewallSubnetId`: `str`
+- `FirewallSubnetRoutes`: `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
+- `InternetGatewayId`: `str`
+- `CurrentInternetGatewayRouteTable`: `str`
+- `InternetGatewayRoutes`:
+  `List`\[[RouteTypeDef](./type_defs.md#routetypedef)\]
 
 <a id="routetypedef"></a>
 
@@ -1558,6 +1649,7 @@ Required fields:
 Optional fields:
 
 - `ManagedServiceData`: `str`
+- `PolicyOption`: [PolicyOptionTypeDef](./type_defs.md#policyoptiontypedef)
 
 <a id="statefulrulegrouptypedef"></a>
 

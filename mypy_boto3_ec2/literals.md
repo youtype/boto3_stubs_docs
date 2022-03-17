@@ -90,6 +90,7 @@ type annotations stubs module
   - [DescribeDhcpOptionsPaginatorName](#describedhcpoptionspaginatorname)
   - [DescribeEgressOnlyInternetGatewaysPaginatorName](#describeegressonlyinternetgatewayspaginatorname)
   - [DescribeExportImageTasksPaginatorName](#describeexportimagetaskspaginatorname)
+  - [DescribeFastLaunchImagesPaginatorName](#describefastlaunchimagespaginatorname)
   - [DescribeFastSnapshotRestoresPaginatorName](#describefastsnapshotrestorespaginatorname)
   - [DescribeFleetsPaginatorName](#describefleetspaginatorname)
   - [DescribeFlowLogsPaginatorName](#describeflowlogspaginatorname)
@@ -196,6 +197,8 @@ type annotations stubs module
   - [ExportTaskCancelledWaiterName](#exporttaskcancelledwaitername)
   - [ExportTaskCompletedWaiterName](#exporttaskcompletedwaitername)
   - [ExportTaskStateType](#exporttaskstatetype)
+  - [FastLaunchResourceTypeType](#fastlaunchresourcetypetype)
+  - [FastLaunchStateCodeType](#fastlaunchstatecodetype)
   - [FastSnapshotRestoreStateCodeType](#fastsnapshotrestorestatecodetype)
   - [FindingsFoundType](#findingsfoundtype)
   - [FleetActivityStatusType](#fleetactivitystatustype)
@@ -253,6 +256,7 @@ type annotations stubs module
   - [InstanceMetadataEndpointStateType](#instancemetadataendpointstatetype)
   - [InstanceMetadataOptionsStateType](#instancemetadataoptionsstatetype)
   - [InstanceMetadataProtocolStateType](#instancemetadataprotocolstatetype)
+  - [InstanceMetadataTagsStateType](#instancemetadatatagsstatetype)
   - [InstanceRunningWaiterName](#instancerunningwaitername)
   - [InstanceStateNameType](#instancestatenametype)
   - [InstanceStatusOkWaiterName](#instancestatusokwaitername)
@@ -285,6 +289,8 @@ type annotations stubs module
   - [LaunchTemplateInstanceMetadataEndpointStateType](#launchtemplateinstancemetadataendpointstatetype)
   - [LaunchTemplateInstanceMetadataOptionsStateType](#launchtemplateinstancemetadataoptionsstatetype)
   - [LaunchTemplateInstanceMetadataProtocolIpv6Type](#launchtemplateinstancemetadataprotocolipv6type)
+  - [LaunchTemplateInstanceMetadataTagsStateType](#launchtemplateinstancemetadatatagsstatetype)
+  - [ListImagesInRecycleBinPaginatorName](#listimagesinrecyclebinpaginatorname)
   - [ListSnapshotsInRecycleBinPaginatorName](#listsnapshotsinrecyclebinpaginatorname)
   - [ListingStateType](#listingstatetype)
   - [ListingStatusType](#listingstatustype)
@@ -314,6 +320,7 @@ type annotations stubs module
   - [OperationTypeType](#operationtypetype)
   - [PartitionLoadFrequencyType](#partitionloadfrequencytype)
   - [PasswordDataAvailableWaiterName](#passworddataavailablewaitername)
+  - [PayerResponsibilityType](#payerresponsibilitytype)
   - [PaymentOptionType](#paymentoptiontype)
   - [PermissionGroupType](#permissiongrouptype)
   - [PlacementGroupStateType](#placementgroupstatetype)
@@ -958,6 +965,12 @@ Values:
 - `Linux with SQL Server Web`
 - `Linux/UNIX`
 - `Red Hat Enterprise Linux`
+- `RHEL with HA`
+- `RHEL with HA and SQL Server Enterprise`
+- `RHEL with HA and SQL Server Standard`
+- `RHEL with SQL Server Enterprise`
+- `RHEL with SQL Server Standard`
+- `RHEL with SQL Server Web`
 - `SUSE Linux`
 - `Windows`
 - `Windows with SQL Server`
@@ -1533,6 +1546,18 @@ from mypy_boto3_ec2.literals import DescribeExportImageTasksPaginatorName
 Values:
 
 - `describe_export_image_tasks`
+
+<a id="describefastlaunchimagespaginatorname"></a>
+
+## DescribeFastLaunchImagesPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import DescribeFastLaunchImagesPaginatorName
+```
+
+Values:
+
+- `describe_fast_launch_images`
 
 <a id="describefastsnapshotrestorespaginatorname"></a>
 
@@ -2839,6 +2864,35 @@ Values:
 - `cancelling`
 - `completed`
 
+<a id="fastlaunchresourcetypetype"></a>
+
+## FastLaunchResourceTypeType
+
+```python
+from mypy_boto3_ec2.literals import FastLaunchResourceTypeType
+```
+
+Values:
+
+- `snapshot`
+
+<a id="fastlaunchstatecodetype"></a>
+
+## FastLaunchStateCodeType
+
+```python
+from mypy_boto3_ec2.literals import FastLaunchStateCodeType
+```
+
+Values:
+
+- `disabling`
+- `disabling-failed`
+- `enabled`
+- `enabled-failed`
+- `enabling`
+- `enabling-failed`
+
 <a id="fastsnapshotrestorestatecodetype"></a>
 
 ## FastSnapshotRestoreStateCodeType
@@ -3375,6 +3429,7 @@ Values:
 - `bootMode`
 - `description`
 - `kernel`
+- `lastLaunchedTime`
 - `launchPermission`
 - `productCodes`
 - `ramdisk`
@@ -3607,6 +3662,19 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="instancemetadatatagsstatetype"></a>
+
+## InstanceMetadataTagsStateType
+
+```python
+from mypy_boto3_ec2.literals import InstanceMetadataTagsStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
 <a id="instancerunningwaitername"></a>
 
 ## InstanceRunningWaiterName
@@ -3801,6 +3869,7 @@ Values:
 - `c6i.4xlarge`
 - `c6i.8xlarge`
 - `c6i.large`
+- `c6i.metal`
 - `c6i.xlarge`
 - `cc1.4xlarge`
 - `cc2.8xlarge`
@@ -3861,6 +3930,7 @@ Values:
 - `h1.4xlarge`
 - `h1.8xlarge`
 - `hi1.4xlarge`
+- `hpc6a.48xlarge`
 - `hs1.8xlarge`
 - `i2.2xlarge`
 - `i2.4xlarge`
@@ -4009,6 +4079,7 @@ Values:
 - `m6i.4xlarge`
 - `m6i.8xlarge`
 - `m6i.large`
+- `m6i.metal`
 - `m6i.xlarge`
 - `mac1.metal`
 - `p2.16xlarge`
@@ -4109,6 +4180,16 @@ Values:
 - `r6gd.medium`
 - `r6gd.metal`
 - `r6gd.xlarge`
+- `r6i.12xlarge`
+- `r6i.16xlarge`
+- `r6i.24xlarge`
+- `r6i.2xlarge`
+- `r6i.32xlarge`
+- `r6i.4xlarge`
+- `r6i.8xlarge`
+- `r6i.large`
+- `r6i.metal`
+- `r6i.xlarge`
 - `t1.micro`
 - `t2.2xlarge`
 - `t2.large`
@@ -4167,6 +4248,12 @@ Values:
 - `x2gd.medium`
 - `x2gd.metal`
 - `x2gd.xlarge`
+- `x2iezn.12xlarge`
+- `x2iezn.2xlarge`
+- `x2iezn.4xlarge`
+- `x2iezn.6xlarge`
+- `x2iezn.8xlarge`
+- `x2iezn.metal`
 - `z1d.12xlarge`
 - `z1d.2xlarge`
 - `z1d.3xlarge`
@@ -4526,6 +4613,31 @@ Values:
 - `disabled`
 - `enabled`
 
+<a id="launchtemplateinstancemetadatatagsstatetype"></a>
+
+## LaunchTemplateInstanceMetadataTagsStateType
+
+```python
+from mypy_boto3_ec2.literals import LaunchTemplateInstanceMetadataTagsStateType
+```
+
+Values:
+
+- `disabled`
+- `enabled`
+
+<a id="listimagesinrecyclebinpaginatorname"></a>
+
+## ListImagesInRecycleBinPaginatorName
+
+```python
+from mypy_boto3_ec2.literals import ListImagesInRecycleBinPaginatorName
+```
+
+Values:
+
+- `list_images_in_recycle_bin`
+
 <a id="listsnapshotsinrecyclebinpaginatorname"></a>
 
 ## ListSnapshotsInRecycleBinPaginatorName
@@ -4840,10 +4952,23 @@ from mypy_boto3_ec2.literals import NetworkInterfaceTypeType
 
 Values:
 
+- `api_gateway_managed`
+- `aws_codestar_connections_managed`
+- `branch`
 - `efa`
+- `gateway_load_balancer`
+- `gateway_load_balancer_endpoint`
+- `global_accelerator_managed`
 - `interface`
+- `iot_rules_managed`
+- `lambda`
+- `load_balancer`
 - `natGateway`
+- `network_load_balancer`
+- `quicksight`
+- `transit_gateway`
 - `trunk`
+- `vpc_endpoint`
 
 <a id="offeringclasstypetype"></a>
 
@@ -4927,6 +5052,18 @@ from mypy_boto3_ec2.literals import PasswordDataAvailableWaiterName
 Values:
 
 - `password_data_available`
+
+<a id="payerresponsibilitytype"></a>
+
+## PayerResponsibilityType
+
+```python
+from mypy_boto3_ec2.literals import PayerResponsibilityType
+```
+
+Values:
+
+- `ServiceOwner`
 
 <a id="paymentoptiontype"></a>
 
@@ -5294,6 +5431,7 @@ Values:
 - `spot-fleet-request`
 - `spot-instances-request`
 - `subnet`
+- `subnet-cidr-reservation`
 - `traffic-mirror-filter`
 - `traffic-mirror-session`
 - `traffic-mirror-target`
@@ -6633,6 +6771,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -6755,6 +6894,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`
@@ -6949,6 +7089,7 @@ Values:
 - `describe_dhcp_options`
 - `describe_egress_only_internet_gateways`
 - `describe_export_image_tasks`
+- `describe_fast_launch_images`
 - `describe_fast_snapshot_restores`
 - `describe_fleets`
 - `describe_flow_logs`
@@ -7049,6 +7190,7 @@ Values:
 - `get_transit_gateway_route_table_associations`
 - `get_transit_gateway_route_table_propagations`
 - `get_vpn_connection_device_types`
+- `list_images_in_recycle_bin`
 - `list_snapshots_in_recycle_bin`
 - `search_local_gateway_routes`
 - `search_transit_gateway_multicast_groups`

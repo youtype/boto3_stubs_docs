@@ -156,6 +156,7 @@ from mypy_boto3_translate.literals import DirectionalityType, ...
 
 - [DirectionalityType](./literals.md#directionalitytype)
 - [EncryptionKeyTypeType](./literals.md#encryptionkeytypetype)
+- [FormalityType](./literals.md#formalitytype)
 - [JobStatusType](./literals.md#jobstatustype)
 - [ListTerminologiesPaginatorName](./literals.md#listterminologiespaginatorname)
 - [MergeStrategyType](./literals.md#mergestrategytype)

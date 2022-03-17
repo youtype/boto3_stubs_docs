@@ -867,6 +867,7 @@ from mypy_boto3_redshift.literals import UsageLimitFeatureTypeType
 Values:
 
 - `concurrency-scaling`
+- `cross-region-datasharing`
 - `spectrum`
 
 <a id="usagelimitlimittypetype"></a>
@@ -948,6 +949,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -1070,6 +1072,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

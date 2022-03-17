@@ -18,6 +18,7 @@ type annotations stubs module
   - [ApplicationTypeDef](#applicationtypedef)
   - [AssociateApplicationFleetRequestRequestTypeDef](#associateapplicationfleetrequestrequesttypedef)
   - [AssociateApplicationFleetResultTypeDef](#associateapplicationfleetresulttypedef)
+  - [AssociateApplicationToEntitlementRequestRequestTypeDef](#associateapplicationtoentitlementrequestrequesttypedef)
   - [AssociateFleetRequestRequestTypeDef](#associatefleetrequestrequesttypedef)
   - [BatchAssociateUserStackRequestRequestTypeDef](#batchassociateuserstackrequestrequesttypedef)
   - [BatchAssociateUserStackResultTypeDef](#batchassociateuserstackresulttypedef)
@@ -33,6 +34,8 @@ type annotations stubs module
   - [CreateApplicationResultTypeDef](#createapplicationresulttypedef)
   - [CreateDirectoryConfigRequestRequestTypeDef](#createdirectoryconfigrequestrequesttypedef)
   - [CreateDirectoryConfigResultTypeDef](#createdirectoryconfigresulttypedef)
+  - [CreateEntitlementRequestRequestTypeDef](#createentitlementrequestrequesttypedef)
+  - [CreateEntitlementResultTypeDef](#createentitlementresulttypedef)
   - [CreateFleetRequestRequestTypeDef](#createfleetrequestrequesttypedef)
   - [CreateFleetResultTypeDef](#createfleetresulttypedef)
   - [CreateImageBuilderRequestRequestTypeDef](#createimagebuilderrequestrequesttypedef)
@@ -50,6 +53,7 @@ type annotations stubs module
   - [DeleteAppBlockRequestRequestTypeDef](#deleteappblockrequestrequesttypedef)
   - [DeleteApplicationRequestRequestTypeDef](#deleteapplicationrequestrequesttypedef)
   - [DeleteDirectoryConfigRequestRequestTypeDef](#deletedirectoryconfigrequestrequesttypedef)
+  - [DeleteEntitlementRequestRequestTypeDef](#deleteentitlementrequestrequesttypedef)
   - [DeleteFleetRequestRequestTypeDef](#deletefleetrequestrequesttypedef)
   - [DeleteImageBuilderRequestRequestTypeDef](#deleteimagebuilderrequestrequesttypedef)
   - [DeleteImageBuilderResultTypeDef](#deleteimagebuilderresulttypedef)
@@ -66,6 +70,8 @@ type annotations stubs module
   - [DescribeApplicationsResultTypeDef](#describeapplicationsresulttypedef)
   - [DescribeDirectoryConfigsRequestRequestTypeDef](#describedirectoryconfigsrequestrequesttypedef)
   - [DescribeDirectoryConfigsResultTypeDef](#describedirectoryconfigsresulttypedef)
+  - [DescribeEntitlementsRequestRequestTypeDef](#describeentitlementsrequestrequesttypedef)
+  - [DescribeEntitlementsResultTypeDef](#describeentitlementsresulttypedef)
   - [DescribeFleetsRequestRequestTypeDef](#describefleetsrequestrequesttypedef)
   - [DescribeFleetsResultTypeDef](#describefleetsresulttypedef)
   - [DescribeImageBuildersRequestRequestTypeDef](#describeimagebuildersrequestrequesttypedef)
@@ -87,9 +93,13 @@ type annotations stubs module
   - [DirectoryConfigTypeDef](#directoryconfigtypedef)
   - [DisableUserRequestRequestTypeDef](#disableuserrequestrequesttypedef)
   - [DisassociateApplicationFleetRequestRequestTypeDef](#disassociateapplicationfleetrequestrequesttypedef)
+  - [DisassociateApplicationFromEntitlementRequestRequestTypeDef](#disassociateapplicationfromentitlementrequestrequesttypedef)
   - [DisassociateFleetRequestRequestTypeDef](#disassociatefleetrequestrequesttypedef)
   - [DomainJoinInfoTypeDef](#domainjoininfotypedef)
   - [EnableUserRequestRequestTypeDef](#enableuserrequestrequesttypedef)
+  - [EntitledApplicationTypeDef](#entitledapplicationtypedef)
+  - [EntitlementAttributeTypeDef](#entitlementattributetypedef)
+  - [EntitlementTypeDef](#entitlementtypedef)
   - [ExpireSessionRequestRequestTypeDef](#expiresessionrequestrequesttypedef)
   - [FleetErrorTypeDef](#fleeterrortypedef)
   - [FleetTypeDef](#fleettypedef)
@@ -103,6 +113,8 @@ type annotations stubs module
   - [ListAssociatedFleetsResultTypeDef](#listassociatedfleetsresulttypedef)
   - [ListAssociatedStacksRequestRequestTypeDef](#listassociatedstacksrequestrequesttypedef)
   - [ListAssociatedStacksResultTypeDef](#listassociatedstacksresulttypedef)
+  - [ListEntitledApplicationsRequestRequestTypeDef](#listentitledapplicationsrequestrequesttypedef)
+  - [ListEntitledApplicationsResultTypeDef](#listentitledapplicationsresulttypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [NetworkAccessConfigurationTypeDef](#networkaccessconfigurationtypedef)
@@ -129,6 +141,8 @@ type annotations stubs module
   - [UpdateApplicationResultTypeDef](#updateapplicationresulttypedef)
   - [UpdateDirectoryConfigRequestRequestTypeDef](#updatedirectoryconfigrequestrequesttypedef)
   - [UpdateDirectoryConfigResultTypeDef](#updatedirectoryconfigresulttypedef)
+  - [UpdateEntitlementRequestRequestTypeDef](#updateentitlementrequestrequesttypedef)
+  - [UpdateEntitlementResultTypeDef](#updateentitlementresulttypedef)
   - [UpdateFleetRequestRequestTypeDef](#updatefleetrequestrequesttypedef)
   - [UpdateFleetResultTypeDef](#updatefleetresulttypedef)
   - [UpdateImagePermissionsRequestRequestTypeDef](#updateimagepermissionsrequestrequesttypedef)
@@ -277,6 +291,20 @@ Required fields:
   [ApplicationFleetAssociationTypeDef](./type_defs.md#applicationfleetassociationtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="associateapplicationtoentitlementrequestrequesttypedef"></a>
+
+## AssociateApplicationToEntitlementRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import AssociateApplicationToEntitlementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `EntitlementName`: `str`
+- `ApplicationIdentifier`: `str`
 
 <a id="associatefleetrequestrequesttypedef"></a>
 
@@ -513,6 +541,40 @@ Required fields:
 
 - `DirectoryConfig`:
   [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="createentitlementrequestrequesttypedef"></a>
+
+## CreateEntitlementRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateEntitlementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `StackName`: `str`
+- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
+- `Attributes`:
+  `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+
+<a id="createentitlementresulttypedef"></a>
+
+## CreateEntitlementResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import CreateEntitlementResultTypeDef
+```
+
+Required fields:
+
+- `Entitlement`: [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -825,6 +887,19 @@ Required fields:
 
 - `DirectoryName`: `str`
 
+<a id="deleteentitlementrequestrequesttypedef"></a>
+
+## DeleteEntitlementRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DeleteEntitlementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `StackName`: `str`
+
 <a id="deletefleetrequestrequesttypedef"></a>
 
 ## DeleteFleetRequestRequestTypeDef
@@ -1044,6 +1119,40 @@ Required fields:
 
 - `DirectoryConfigs`:
   `List`\[[DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describeentitlementsrequestrequesttypedef"></a>
+
+## DescribeEntitlementsRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeEntitlementsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+
+Optional fields:
+
+- `Name`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+<a id="describeentitlementsresulttypedef"></a>
+
+## DescribeEntitlementsResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DescribeEntitlementsResultTypeDef
+```
+
+Required fields:
+
+- `Entitlements`:
+  `List`\[[EntitlementTypeDef](./type_defs.md#entitlementtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -1377,6 +1486,20 @@ Required fields:
 - `FleetName`: `str`
 - `ApplicationArn`: `str`
 
+<a id="disassociateapplicationfromentitlementrequestrequesttypedef"></a>
+
+## DisassociateApplicationFromEntitlementRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import DisassociateApplicationFromEntitlementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `EntitlementName`: `str`
+- `ApplicationIdentifier`: `str`
+
 <a id="disassociatefleetrequestrequesttypedef"></a>
 
 ## DisassociateFleetRequestRequestTypeDef
@@ -1416,6 +1539,53 @@ Required fields:
 - `UserName`: `str`
 - `AuthenticationType`:
   [AuthenticationTypeType](./literals.md#authenticationtypetype)
+
+<a id="entitledapplicationtypedef"></a>
+
+## EntitledApplicationTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import EntitledApplicationTypeDef
+```
+
+Required fields:
+
+- `ApplicationIdentifier`: `str`
+
+<a id="entitlementattributetypedef"></a>
+
+## EntitlementAttributeTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import EntitlementAttributeTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `Value`: `str`
+
+<a id="entitlementtypedef"></a>
+
+## EntitlementTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import EntitlementTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `StackName`: `str`
+- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
+- `Attributes`:
+  `List`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
+
+Optional fields:
+
+- `Description`: `str`
+- `CreatedTime`: `datetime`
+- `LastModifiedTime`: `datetime`
 
 <a id="expiresessionrequestrequesttypedef"></a>
 
@@ -1667,6 +1837,40 @@ from mypy_boto3_appstream.type_defs import ListAssociatedStacksResultTypeDef
 Required fields:
 
 - `Names`: `List`\[`str`\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="listentitledapplicationsrequestrequesttypedef"></a>
+
+## ListEntitledApplicationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ListEntitledApplicationsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `StackName`: `str`
+- `EntitlementName`: `str`
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+<a id="listentitledapplicationsresulttypedef"></a>
+
+## ListEntitledApplicationsResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import ListEntitledApplicationsResultTypeDef
+```
+
+Required fields:
+
+- `EntitledApplications`:
+  `List`\[[EntitledApplicationTypeDef](./type_defs.md#entitledapplicationtypedef)\]
 - `NextToken`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
@@ -2076,6 +2280,40 @@ Required fields:
 
 - `DirectoryConfig`:
   [DirectoryConfigTypeDef](./type_defs.md#directoryconfigtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updateentitlementrequestrequesttypedef"></a>
+
+## UpdateEntitlementRequestRequestTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateEntitlementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Name`: `str`
+- `StackName`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
+- `Attributes`:
+  `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
+
+<a id="updateentitlementresulttypedef"></a>
+
+## UpdateEntitlementResultTypeDef
+
+```python
+from mypy_boto3_appstream.type_defs import UpdateEntitlementResultTypeDef
+```
+
+Required fields:
+
+- `Entitlement`: [EntitlementTypeDef](./type_defs.md#entitlementtypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

@@ -13,6 +13,7 @@ type annotations stubs module
   - [EndpointAccessTypeType](#endpointaccesstypetype)
   - [EndpointStatusType](#endpointstatustype)
   - [ListEndpointsPaginatorName](#listendpointspaginatorname)
+  - [ListSharedEndpointsPaginatorName](#listsharedendpointspaginatorname)
   - [S3OutpostsServiceName](#s3outpostsservicename)
   - [ServiceName](#servicename)
   - [ResourceServiceName](#resourceservicename)
@@ -56,6 +57,18 @@ from mypy_boto3_s3outposts.literals import ListEndpointsPaginatorName
 Values:
 
 - `list_endpoints`
+
+<a id="listsharedendpointspaginatorname"></a>
+
+## ListSharedEndpointsPaginatorName
+
+```python
+from mypy_boto3_s3outposts.literals import ListSharedEndpointsPaginatorName
+```
+
+Values:
+
+- `list_shared_endpoints`
 
 <a id="s3outpostsservicename"></a>
 
@@ -109,6 +122,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -231,6 +245,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`
@@ -411,3 +426,4 @@ from mypy_boto3_s3outposts.literals import PaginatorName
 Values:
 
 - `list_endpoints`
+- `list_shared_endpoints`

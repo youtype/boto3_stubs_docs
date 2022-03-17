@@ -195,8 +195,8 @@ Returns
 
 ### create_permission
 
-Grants one or more permissions on a private CA to the AWS Certificate Manager
-(ACM) service principal (`acm.amazonaws.com` ).
+Grants one or more permissions on a private CA to the Certificate Manager (ACM)
+service principal (`acm.amazonaws.com` ).
 
 Type annotations for `boto3.client("acm-pca").create_permission` method.
 
@@ -238,8 +238,8 @@ Keyword-only arguments:
 
 ### delete_permission
 
-Revokes permissions on a private CA granted to the AWS Certificate Manager
-(ACM) service principal (acm.amazonaws.com).
+Revokes permissions on a private CA granted to the Certificate Manager (ACM)
+service principal (acm.amazonaws.com).
 
 Type annotations for `boto3.client("acm-pca").delete_permission` method.
 
@@ -435,7 +435,7 @@ Returns [GetPolicyResponseTypeDef](./type_defs.md#getpolicyresponsetypedef).
 
 ### import_certificate_authority_certificate
 
-Imports a signed private CA certificate into ACM Private CA.
+Imports a signed private CA certificate into Amazon Web Services Private CA.
 
 Type annotations for
 `boto3.client("acm-pca").import_certificate_authority_certificate` method.
@@ -514,7 +514,7 @@ Returns
 
 ### list_permissions
 
-List all permissions on a private CA, if any, granted to the AWS Certificate
+List all permissions on a private CA, if any, granted to the Certificate
 Manager (ACM) service principal (acm.amazonaws.com).
 
 Type annotations for `boto3.client("acm-pca").list_permissions` method.
@@ -599,7 +599,7 @@ Keyword-only arguments:
 
 ### revoke_certificate
 
-Revokes a certificate that was issued inside ACM Private CA.
+Revokes a certificate that was issued inside Amazon Web Services Private CA.
 
 Type annotations for `boto3.client("acm-pca").revoke_certificate` method.
 

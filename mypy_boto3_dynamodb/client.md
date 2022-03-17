@@ -732,6 +732,7 @@ Keyword-only arguments:
 - `NextToken`: `str`
 - `ReturnConsumedCapacity`:
   [ReturnConsumedCapacityType](./literals.md#returnconsumedcapacitytype)
+- `Limit`: `int`
 
 Returns
 [ExecuteStatementOutputTypeDef](./type_defs.md#executestatementoutputtypedef).

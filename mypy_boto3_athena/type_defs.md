@@ -10,6 +10,8 @@ type annotations stubs module
 [mypy-boto3-athena](https://pypi.org/project/mypy-boto3-athena/).
 
 - [Typed dictionaries for boto3 Athena module](#typed-dictionaries-for-boto3-athena-module)
+  - [AclConfigurationTypeDef](#aclconfigurationtypedef)
+  - [AthenaErrorTypeDef](#athenaerrortypedef)
   - [BatchGetNamedQueryInputRequestTypeDef](#batchgetnamedqueryinputrequesttypedef)
   - [BatchGetNamedQueryOutputTypeDef](#batchgetnamedqueryoutputtypedef)
   - [BatchGetQueryExecutionInputRequestTypeDef](#batchgetqueryexecutioninputrequesttypedef)
@@ -89,12 +91,39 @@ type annotations stubs module
   - [UnprocessedQueryExecutionIdTypeDef](#unprocessedqueryexecutionidtypedef)
   - [UntagResourceInputRequestTypeDef](#untagresourceinputrequesttypedef)
   - [UpdateDataCatalogInputRequestTypeDef](#updatedatacataloginputrequesttypedef)
+  - [UpdateNamedQueryInputRequestTypeDef](#updatenamedqueryinputrequesttypedef)
   - [UpdatePreparedStatementInputRequestTypeDef](#updatepreparedstatementinputrequesttypedef)
   - [UpdateWorkGroupInputRequestTypeDef](#updateworkgroupinputrequesttypedef)
   - [WorkGroupConfigurationTypeDef](#workgroupconfigurationtypedef)
   - [WorkGroupConfigurationUpdatesTypeDef](#workgroupconfigurationupdatestypedef)
   - [WorkGroupSummaryTypeDef](#workgroupsummarytypedef)
   - [WorkGroupTypeDef](#workgrouptypedef)
+
+<a id="aclconfigurationtypedef"></a>
+
+## AclConfigurationTypeDef
+
+```python
+from mypy_boto3_athena.type_defs import AclConfigurationTypeDef
+```
+
+Required fields:
+
+- `S3AclOption`: `Literal['BUCKET_OWNER_FULL_CONTROL']` (see
+  [S3AclOptionType](./literals.md#s3acloptiontype))
+
+<a id="athenaerrortypedef"></a>
+
+## AthenaErrorTypeDef
+
+```python
+from mypy_boto3_athena.type_defs import AthenaErrorTypeDef
+```
+
+Optional fields:
+
+- `ErrorCategory`: `int`
+- `ErrorType`: `int`
 
 <a id="batchgetnamedqueryinputrequesttypedef"></a>
 
@@ -1034,6 +1063,7 @@ Optional fields:
 - `StateChangeReason`: `str`
 - `SubmissionDateTime`: `datetime`
 - `CompletionDateTime`: `datetime`
+- `AthenaError`: [AthenaErrorTypeDef](./type_defs.md#athenaerrortypedef)
 
 <a id="queryexecutiontypedef"></a>
 
@@ -1088,6 +1118,9 @@ Optional fields:
 - `OutputLocation`: `str`
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
+- `ExpectedBucketOwner`: `str`
+- `AclConfiguration`:
+  [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
 
 <a id="resultconfigurationupdatestypedef"></a>
 
@@ -1104,6 +1137,11 @@ Optional fields:
 - `EncryptionConfiguration`:
   [EncryptionConfigurationTypeDef](./type_defs.md#encryptionconfigurationtypedef)
 - `RemoveEncryptionConfiguration`: `bool`
+- `ExpectedBucketOwner`: `str`
+- `RemoveExpectedBucketOwner`: `bool`
+- `AclConfiguration`:
+  [AclConfigurationTypeDef](./type_defs.md#aclconfigurationtypedef)
+- `RemoveAclConfiguration`: `bool`
 
 <a id="resultsetmetadatatypedef"></a>
 
@@ -1295,6 +1333,24 @@ Optional fields:
 
 - `Description`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
+
+<a id="updatenamedqueryinputrequesttypedef"></a>
+
+## UpdateNamedQueryInputRequestTypeDef
+
+```python
+from mypy_boto3_athena.type_defs import UpdateNamedQueryInputRequestTypeDef
+```
+
+Required fields:
+
+- `NamedQueryId`: `str`
+- `Name`: `str`
+- `QueryString`: `str`
+
+Optional fields:
+
+- `Description`: `str`
 
 <a id="updatepreparedstatementinputrequesttypedef"></a>
 

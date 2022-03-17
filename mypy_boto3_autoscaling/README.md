@@ -342,6 +342,7 @@ from mypy_boto3_autoscaling.type_defs import AcceleratorCountRequestTypeDef, ...
 - [InstanceRefreshTypeDef](./type_defs.md#instancerefreshtypedef)
 - [InstanceRefreshWarmPoolProgressTypeDef](./type_defs.md#instancerefreshwarmpoolprogresstypedef)
 - [InstanceRequirementsTypeDef](./type_defs.md#instancerequirementstypedef)
+- [InstanceReusePolicyTypeDef](./type_defs.md#instancereusepolicytypedef)
 - [InstanceTypeDef](./type_defs.md#instancetypedef)
 - [InstancesDistributionTypeDef](./type_defs.md#instancesdistributiontypedef)
 - [LaunchConfigurationNameTypeRequestTypeDef](./type_defs.md#launchconfigurationnametyperequesttypedef)

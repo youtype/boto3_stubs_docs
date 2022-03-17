@@ -18,11 +18,13 @@ type annotations stubs module
     - [create_access_point](#create_access_point)
     - [create_file_system](#create_file_system)
     - [create_mount_target](#create_mount_target)
+    - [create_replication_configuration](#create_replication_configuration)
     - [create_tags](#create_tags)
     - [delete_access_point](#delete_access_point)
     - [delete_file_system](#delete_file_system)
     - [delete_file_system_policy](#delete_file_system_policy)
     - [delete_mount_target](#delete_mount_target)
+    - [delete_replication_configuration](#delete_replication_configuration)
     - [delete_tags](#delete_tags)
     - [describe_access_points](#describe_access_points)
     - [describe_account_preferences](#describe_account_preferences)
@@ -32,6 +34,7 @@ type annotations stubs module
     - [describe_lifecycle_configuration](#describe_lifecycle_configuration)
     - [describe_mount_target_security_groups](#describe_mount_target_security_groups)
     - [describe_mount_targets](#describe_mount_targets)
+    - [describe_replication_configurations](#describe_replication_configurations)
     - [describe_tags](#describe_tags)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_tags_for_resource](#list_tags_for_resource)
@@ -102,6 +105,7 @@ Exceptions:
 - `Exceptions.NetworkInterfaceLimitExceeded`
 - `Exceptions.NoFreeAddressesInSubnet`
 - `Exceptions.PolicyNotFound`
+- `Exceptions.ReplicationNotFound`
 - `Exceptions.SecurityGroupLimitExceeded`
 - `Exceptions.SecurityGroupNotFound`
 - `Exceptions.SubnetNotFound`
@@ -222,6 +226,32 @@ Keyword-only arguments:
 Returns
 [MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef).
 
+<a id="create\_replication\_configuration"></a>
+
+### create_replication_configuration
+
+Creates a replication configuration that replicates an existing EFS file system
+to a new, read-only file system.
+
+Type annotations for `boto3.client("efs").create_replication_configuration`
+method.
+
+Boto3 documentation:
+[EFS.Client.create_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_replication_configuration)
+
+Arguments mapping described in
+[CreateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SourceFileSystemId`: `str` *(required)*
+- `Destinations`:
+  `Sequence`\[[DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)\]
+  *(required)*
+
+Returns
+[ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef).
+
 <a id="create\_tags"></a>
 
 ### create_tags
@@ -312,6 +342,25 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `MountTargetId`: `str` *(required)*
+
+<a id="delete\_replication\_configuration"></a>
+
+### delete_replication_configuration
+
+Deletes an existing replication configuration.
+
+Type annotations for `boto3.client("efs").delete_replication_configuration`
+method.
+
+Boto3 documentation:
+[EFS.Client.delete_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_replication_configuration)
+
+Arguments mapping described in
+[DeleteReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SourceFileSystemId`: `str` *(required)*
 
 <a id="delete\_tags"></a>
 
@@ -518,6 +567,32 @@ Keyword-only arguments:
 
 Returns
 [DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef).
+
+<a id="describe\_replication\_configurations"></a>
+
+### describe_replication_configurations
+
+Retrieves the replication configurations for either a specific file system, or
+all configurations for the Amazon Web Services account in an Amazon Web
+Services Region if a file system is not specified.
+
+Type annotations for `boto3.client("efs").describe_replication_configurations`
+method.
+
+Boto3 documentation:
+[EFS.Client.describe_replication_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_replication_configurations)
+
+Arguments mapping described in
+[DescribeReplicationConfigurationsRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef).
 
 <a id="describe\_tags"></a>
 

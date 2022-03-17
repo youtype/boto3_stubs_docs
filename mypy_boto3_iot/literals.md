@@ -119,6 +119,7 @@ type annotations stubs module
   - [ProtocolType](#protocoltype)
   - [ReportTypeType](#reporttypetype)
   - [ResourceTypeType](#resourcetypetype)
+  - [RetryableFailureTypeType](#retryablefailuretypetype)
   - [ServerCertificateStatusType](#servercertificatestatustype)
   - [ServiceTypeType](#servicetypetype)
   - [StatusType](#statustype)
@@ -1474,7 +1475,10 @@ from mypy_boto3_iot.literals import LogTargetTypeType
 
 Values:
 
+- `CLIENT_ID`
 - `DEFAULT`
+- `PRINCIPAL_ID`
+- `SOURCE_IP`
 - `THING_GROUP`
 
 <a id="messageformattype"></a>
@@ -1605,6 +1609,20 @@ Values:
 - `IAM_ROLE`
 - `IOT_POLICY`
 - `ROLE_ALIAS`
+
+<a id="retryablefailuretypetype"></a>
+
+## RetryableFailureTypeType
+
+```python
+from mypy_boto3_iot.literals import RetryableFailureTypeType
+```
+
+Values:
+
+- `ALL`
+- `FAILED`
+- `TIMED_OUT`
 
 <a id="servercertificatestatustype"></a>
 
@@ -1799,6 +1817,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -1921,6 +1940,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

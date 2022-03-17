@@ -14,6 +14,8 @@ type annotations stubs module
   - [ActionHistoryTypeDef](#actionhistorytypedef)
   - [ActionThresholdTypeDef](#actionthresholdtypedef)
   - [ActionTypeDef](#actiontypedef)
+  - [AutoAdjustDataTypeDef](#autoadjustdatatypedef)
+  - [BudgetNotificationsForAccountTypeDef](#budgetnotificationsforaccounttypedef)
   - [BudgetPerformanceHistoryTypeDef](#budgetperformancehistorytypedef)
   - [BudgetTypeDef](#budgettypedef)
   - [BudgetedAndActualAmountsTypeDef](#budgetedandactualamountstypedef)
@@ -38,6 +40,8 @@ type annotations stubs module
   - [DescribeBudgetActionsForAccountResponseTypeDef](#describebudgetactionsforaccountresponsetypedef)
   - [DescribeBudgetActionsForBudgetRequestRequestTypeDef](#describebudgetactionsforbudgetrequestrequesttypedef)
   - [DescribeBudgetActionsForBudgetResponseTypeDef](#describebudgetactionsforbudgetresponsetypedef)
+  - [DescribeBudgetNotificationsForAccountRequestRequestTypeDef](#describebudgetnotificationsforaccountrequestrequesttypedef)
+  - [DescribeBudgetNotificationsForAccountResponseTypeDef](#describebudgetnotificationsforaccountresponsetypedef)
   - [DescribeBudgetPerformanceHistoryRequestRequestTypeDef](#describebudgetperformancehistoryrequestrequesttypedef)
   - [DescribeBudgetPerformanceHistoryResponseTypeDef](#describebudgetperformancehistoryresponsetypedef)
   - [DescribeBudgetRequestRequestTypeDef](#describebudgetrequestrequesttypedef)
@@ -50,6 +54,7 @@ type annotations stubs module
   - [DescribeSubscribersForNotificationResponseTypeDef](#describesubscribersfornotificationresponsetypedef)
   - [ExecuteBudgetActionRequestRequestTypeDef](#executebudgetactionrequestrequesttypedef)
   - [ExecuteBudgetActionResponseTypeDef](#executebudgetactionresponsetypedef)
+  - [HistoricalOptionsTypeDef](#historicaloptionstypedef)
   - [IamActionDefinitionTypeDef](#iamactiondefinitiontypedef)
   - [NotificationTypeDef](#notificationtypedef)
   - [NotificationWithSubscribersTypeDef](#notificationwithsubscriberstypedef)
@@ -132,6 +137,38 @@ Required fields:
 - `Subscribers`:
   `List`\[[SubscriberTypeDef](./type_defs.md#subscribertypedef)\]
 
+<a id="autoadjustdatatypedef"></a>
+
+## AutoAdjustDataTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import AutoAdjustDataTypeDef
+```
+
+Required fields:
+
+- `AutoAdjustType`: [AutoAdjustTypeType](./literals.md#autoadjusttypetype)
+
+Optional fields:
+
+- `HistoricalOptions`:
+  [HistoricalOptionsTypeDef](./type_defs.md#historicaloptionstypedef)
+- `LastAutoAdjustTime`: `Union`\[`datetime`, `str`\]
+
+<a id="budgetnotificationsforaccounttypedef"></a>
+
+## BudgetNotificationsForAccountTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import BudgetNotificationsForAccountTypeDef
+```
+
+Optional fields:
+
+- `Notifications`:
+  `List`\[[NotificationTypeDef](./type_defs.md#notificationtypedef)\]
+- `BudgetName`: `str`
+
 <a id="budgetperformancehistorytypedef"></a>
 
 ## BudgetPerformanceHistoryTypeDef
@@ -175,6 +212,8 @@ Optional fields:
 - `CalculatedSpend`:
   [CalculatedSpendTypeDef](./type_defs.md#calculatedspendtypedef)
 - `LastUpdatedTime`: `Union`\[`datetime`, `str`\]
+- `AutoAdjustData`:
+  [AutoAdjustDataTypeDef](./type_defs.md#autoadjustdatatypedef)
 
 <a id="budgetedandactualamountstypedef"></a>
 
@@ -536,6 +575,39 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describebudgetnotificationsforaccountrequestrequesttypedef"></a>
+
+## DescribeBudgetNotificationsForAccountRequestRequestTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetNotificationsForAccountRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AccountId`: `str`
+
+Optional fields:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+<a id="describebudgetnotificationsforaccountresponsetypedef"></a>
+
+## DescribeBudgetNotificationsForAccountResponseTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import DescribeBudgetNotificationsForAccountResponseTypeDef
+```
+
+Required fields:
+
+- `BudgetNotificationsForAccount`:
+  `List`\[[BudgetNotificationsForAccountTypeDef](./type_defs.md#budgetnotificationsforaccounttypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="describebudgetperformancehistoryrequestrequesttypedef"></a>
 
 ## DescribeBudgetPerformanceHistoryRequestRequestTypeDef
@@ -730,6 +802,22 @@ Required fields:
 - `ExecutionType`: [ExecutionTypeType](./literals.md#executiontypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="historicaloptionstypedef"></a>
+
+## HistoricalOptionsTypeDef
+
+```python
+from mypy_boto3_budgets.type_defs import HistoricalOptionsTypeDef
+```
+
+Required fields:
+
+- `BudgetAdjustmentPeriod`: `int`
+
+Optional fields:
+
+- `LookBackAvailablePeriods`: `int`
 
 <a id="iamactiondefinitiontypedef"></a>
 

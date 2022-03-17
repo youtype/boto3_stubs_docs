@@ -17,6 +17,7 @@ type annotations stubs module
   - [ListContactFlowModulesPaginator](#listcontactflowmodulespaginator)
   - [ListContactFlowsPaginator](#listcontactflowspaginator)
   - [ListContactReferencesPaginator](#listcontactreferencespaginator)
+  - [ListDefaultVocabulariesPaginator](#listdefaultvocabulariespaginator)
   - [ListHoursOfOperationsPaginator](#listhoursofoperationspaginator)
   - [ListInstanceAttributesPaginator](#listinstanceattributespaginator)
   - [ListInstanceStorageConfigsPaginator](#listinstancestorageconfigspaginator)
@@ -37,6 +38,7 @@ type annotations stubs module
   - [ListUseCasesPaginator](#listusecasespaginator)
   - [ListUserHierarchyGroupsPaginator](#listuserhierarchygroupspaginator)
   - [ListUsersPaginator](#listuserspaginator)
+  - [SearchVocabulariesPaginator](#searchvocabulariespaginator)
 
 <a id="getmetricdatapaginator"></a>
 
@@ -264,6 +266,38 @@ Arguments for `ListContactReferencesPaginator.paginate` method:
 
 `ListContactReferencesPaginator.paginate` returns
 `_PageIterator`\[[ListContactReferencesResponseTypeDef](./type_defs.md#listcontactreferencesresponsetypedef)\].
+
+<a id="listdefaultvocabulariespaginator"></a>
+
+## ListDefaultVocabulariesPaginator
+
+Type annotations for
+`boto3.client("connect").get_paginator("list_default_vocabularies")`.
+
+Can be used directly:
+
+```python
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import ListDefaultVocabulariesPaginator
+
+def get_list_default_vocabularies_paginator() -> ListDefaultVocabulariesPaginator:
+    return Session().client("connect").get_paginator("list_default_vocabularies")
+```
+
+Boto3 documentation:
+[Connect.Paginator.ListDefaultVocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.ListDefaultVocabularies)
+
+Arguments for `ListDefaultVocabulariesPaginator.paginate` method:
+
+- `InstanceId`: `str` *(required)*
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListDefaultVocabulariesPaginator.paginate` returns
+`_PageIterator`\[[ListDefaultVocabulariesResponseTypeDef](./type_defs.md#listdefaultvocabulariesresponsetypedef)\].
 
 <a id="listhoursofoperationspaginator"></a>
 
@@ -872,3 +906,37 @@ Arguments for `ListUsersPaginator.paginate` method:
 
 `ListUsersPaginator.paginate` returns
 `_PageIterator`\[[ListUsersResponseTypeDef](./type_defs.md#listusersresponsetypedef)\].
+
+<a id="searchvocabulariespaginator"></a>
+
+## SearchVocabulariesPaginator
+
+Type annotations for
+`boto3.client("connect").get_paginator("search_vocabularies")`.
+
+Can be used directly:
+
+```python
+from boto3.session import Session
+
+from mypy_boto3_connect.paginator import SearchVocabulariesPaginator
+
+def get_search_vocabularies_paginator() -> SearchVocabulariesPaginator:
+    return Session().client("connect").get_paginator("search_vocabularies")
+```
+
+Boto3 documentation:
+[Connect.Paginator.SearchVocabularies](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/connect.html#Connect.Paginator.SearchVocabularies)
+
+Arguments for `SearchVocabulariesPaginator.paginate` method:
+
+- `InstanceId`: `str` *(required)*
+- `State`: [VocabularyStateType](./literals.md#vocabularystatetype)
+- `NameStartsWith`: `str`
+- `LanguageCode`:
+  [VocabularyLanguageCodeType](./literals.md#vocabularylanguagecodetype)
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`SearchVocabulariesPaginator.paginate` returns
+`_PageIterator`\[[SearchVocabulariesResponseTypeDef](./type_defs.md#searchvocabulariesresponsetypedef)\].

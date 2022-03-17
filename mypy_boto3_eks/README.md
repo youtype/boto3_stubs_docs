@@ -218,6 +218,7 @@ from mypy_boto3_eks.literals import AMITypesType, ...
 - [FargateProfileActiveWaiterName](./literals.md#fargateprofileactivewaitername)
 - [FargateProfileDeletedWaiterName](./literals.md#fargateprofiledeletedwaitername)
 - [FargateProfileStatusType](./literals.md#fargateprofilestatustype)
+- [IpFamilyType](./literals.md#ipfamilytype)
 - [ListAddonsPaginatorName](./literals.md#listaddonspaginatorname)
 - [ListClustersPaginatorName](./literals.md#listclusterspaginatorname)
 - [ListFargateProfilesPaginatorName](./literals.md#listfargateprofilespaginatorname)

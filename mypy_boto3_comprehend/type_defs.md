@@ -42,6 +42,7 @@ type annotations stubs module
   - [DeleteDocumentClassifierRequestRequestTypeDef](#deletedocumentclassifierrequestrequesttypedef)
   - [DeleteEndpointRequestRequestTypeDef](#deleteendpointrequestrequesttypedef)
   - [DeleteEntityRecognizerRequestRequestTypeDef](#deleteentityrecognizerrequestrequesttypedef)
+  - [DeleteResourcePolicyRequestRequestTypeDef](#deleteresourcepolicyrequestrequesttypedef)
   - [DescribeDocumentClassificationJobRequestRequestTypeDef](#describedocumentclassificationjobrequestrequesttypedef)
   - [DescribeDocumentClassificationJobResponseTypeDef](#describedocumentclassificationjobresponsetypedef)
   - [DescribeDocumentClassifierRequestRequestTypeDef](#describedocumentclassifierrequestrequesttypedef)
@@ -60,8 +61,12 @@ type annotations stubs module
   - [DescribeKeyPhrasesDetectionJobResponseTypeDef](#describekeyphrasesdetectionjobresponsetypedef)
   - [DescribePiiEntitiesDetectionJobRequestRequestTypeDef](#describepiientitiesdetectionjobrequestrequesttypedef)
   - [DescribePiiEntitiesDetectionJobResponseTypeDef](#describepiientitiesdetectionjobresponsetypedef)
+  - [DescribeResourcePolicyRequestRequestTypeDef](#describeresourcepolicyrequestrequesttypedef)
+  - [DescribeResourcePolicyResponseTypeDef](#describeresourcepolicyresponsetypedef)
   - [DescribeSentimentDetectionJobRequestRequestTypeDef](#describesentimentdetectionjobrequestrequesttypedef)
   - [DescribeSentimentDetectionJobResponseTypeDef](#describesentimentdetectionjobresponsetypedef)
+  - [DescribeTargetedSentimentDetectionJobRequestRequestTypeDef](#describetargetedsentimentdetectionjobrequestrequesttypedef)
+  - [DescribeTargetedSentimentDetectionJobResponseTypeDef](#describetargetedsentimentdetectionjobresponsetypedef)
   - [DescribeTopicsDetectionJobRequestRequestTypeDef](#describetopicsdetectionjobrequestrequesttypedef)
   - [DescribeTopicsDetectionJobResponseTypeDef](#describetopicsdetectionjobresponsetypedef)
   - [DetectDominantLanguageRequestRequestTypeDef](#detectdominantlanguagerequestrequesttypedef)
@@ -109,6 +114,8 @@ type annotations stubs module
   - [EntityTypesListItemTypeDef](#entitytypeslistitemtypedef)
   - [EventsDetectionJobFilterTypeDef](#eventsdetectionjobfiltertypedef)
   - [EventsDetectionJobPropertiesTypeDef](#eventsdetectionjobpropertiestypedef)
+  - [ImportModelRequestRequestTypeDef](#importmodelrequestrequesttypedef)
+  - [ImportModelResponseTypeDef](#importmodelresponsetypedef)
   - [InputDataConfigTypeDef](#inputdataconfigtypedef)
   - [KeyPhraseTypeDef](#keyphrasetypedef)
   - [KeyPhrasesDetectionJobFilterTypeDef](#keyphrasesdetectionjobfiltertypedef)
@@ -139,6 +146,8 @@ type annotations stubs module
   - [ListSentimentDetectionJobsResponseTypeDef](#listsentimentdetectionjobsresponsetypedef)
   - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
+  - [ListTargetedSentimentDetectionJobsRequestRequestTypeDef](#listtargetedsentimentdetectionjobsrequestrequesttypedef)
+  - [ListTargetedSentimentDetectionJobsResponseTypeDef](#listtargetedsentimentdetectionjobsresponsetypedef)
   - [ListTopicsDetectionJobsRequestRequestTypeDef](#listtopicsdetectionjobsrequestrequesttypedef)
   - [ListTopicsDetectionJobsResponseTypeDef](#listtopicsdetectionjobsresponsetypedef)
   - [OutputDataConfigTypeDef](#outputdataconfigtypedef)
@@ -148,6 +157,8 @@ type annotations stubs module
   - [PiiEntitiesDetectionJobPropertiesTypeDef](#piientitiesdetectionjobpropertiestypedef)
   - [PiiEntityTypeDef](#piientitytypedef)
   - [PiiOutputDataConfigTypeDef](#piioutputdataconfigtypedef)
+  - [PutResourcePolicyRequestRequestTypeDef](#putresourcepolicyrequestrequesttypedef)
+  - [PutResourcePolicyResponseTypeDef](#putresourcepolicyresponsetypedef)
   - [RedactionConfigTypeDef](#redactionconfigtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [SentimentDetectionJobFilterTypeDef](#sentimentdetectionjobfiltertypedef)
@@ -167,6 +178,8 @@ type annotations stubs module
   - [StartPiiEntitiesDetectionJobResponseTypeDef](#startpiientitiesdetectionjobresponsetypedef)
   - [StartSentimentDetectionJobRequestRequestTypeDef](#startsentimentdetectionjobrequestrequesttypedef)
   - [StartSentimentDetectionJobResponseTypeDef](#startsentimentdetectionjobresponsetypedef)
+  - [StartTargetedSentimentDetectionJobRequestRequestTypeDef](#starttargetedsentimentdetectionjobrequestrequesttypedef)
+  - [StartTargetedSentimentDetectionJobResponseTypeDef](#starttargetedsentimentdetectionjobresponsetypedef)
   - [StartTopicsDetectionJobRequestRequestTypeDef](#starttopicsdetectionjobrequestrequesttypedef)
   - [StartTopicsDetectionJobResponseTypeDef](#starttopicsdetectionjobresponsetypedef)
   - [StopDominantLanguageDetectionJobRequestRequestTypeDef](#stopdominantlanguagedetectionjobrequestrequesttypedef)
@@ -181,11 +194,15 @@ type annotations stubs module
   - [StopPiiEntitiesDetectionJobResponseTypeDef](#stoppiientitiesdetectionjobresponsetypedef)
   - [StopSentimentDetectionJobRequestRequestTypeDef](#stopsentimentdetectionjobrequestrequesttypedef)
   - [StopSentimentDetectionJobResponseTypeDef](#stopsentimentdetectionjobresponsetypedef)
+  - [StopTargetedSentimentDetectionJobRequestRequestTypeDef](#stoptargetedsentimentdetectionjobrequestrequesttypedef)
+  - [StopTargetedSentimentDetectionJobResponseTypeDef](#stoptargetedsentimentdetectionjobresponsetypedef)
   - [StopTrainingDocumentClassifierRequestRequestTypeDef](#stoptrainingdocumentclassifierrequestrequesttypedef)
   - [StopTrainingEntityRecognizerRequestRequestTypeDef](#stoptrainingentityrecognizerrequestrequesttypedef)
   - [SyntaxTokenTypeDef](#syntaxtokentypedef)
   - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagTypeDef](#tagtypedef)
+  - [TargetedSentimentDetectionJobFilterTypeDef](#targetedsentimentdetectionjobfiltertypedef)
+  - [TargetedSentimentDetectionJobPropertiesTypeDef](#targetedsentimentdetectionjobpropertiestypedef)
   - [TopicsDetectionJobFilterTypeDef](#topicsdetectionjobfiltertypedef)
   - [TopicsDetectionJobPropertiesTypeDef](#topicsdetectionjobpropertiestypedef)
   - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
@@ -566,6 +583,7 @@ Optional fields:
 - `Mode`:
   [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
+- `ModelPolicy`: `str`
 
 <a id="createdocumentclassifierresponsetypedef"></a>
 
@@ -639,6 +657,7 @@ Optional fields:
 - `VolumeKmsKeyId`: `str`
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
+- `ModelPolicy`: `str`
 
 <a id="createentityrecognizerresponsetypedef"></a>
 
@@ -689,6 +708,22 @@ from mypy_boto3_comprehend.type_defs import DeleteEntityRecognizerRequestRequest
 Required fields:
 
 - `EntityRecognizerArn`: `str`
+
+<a id="deleteresourcepolicyrequestrequesttypedef"></a>
+
+## DeleteResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DeleteResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+Optional fields:
+
+- `PolicyRevisionId`: `str`
 
 <a id="describedocumentclassificationjobrequestrequesttypedef"></a>
 
@@ -933,6 +968,35 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describeresourcepolicyrequestrequesttypedef"></a>
+
+## DescribeResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+<a id="describeresourcepolicyresponsetypedef"></a>
+
+## DescribeResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeResourcePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `ResourcePolicy`: `str`
+- `CreationTime`: `datetime`
+- `LastModifiedTime`: `datetime`
+- `PolicyRevisionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="describesentimentdetectionjobrequestrequesttypedef"></a>
 
 ## DescribeSentimentDetectionJobRequestRequestTypeDef
@@ -957,6 +1021,33 @@ Required fields:
 
 - `SentimentDetectionJobProperties`:
   [SentimentDetectionJobPropertiesTypeDef](./type_defs.md#sentimentdetectionjobpropertiestypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="describetargetedsentimentdetectionjobrequestrequesttypedef"></a>
+
+## DescribeTargetedSentimentDetectionJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeTargetedSentimentDetectionJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+<a id="describetargetedsentimentdetectionjobresponsetypedef"></a>
+
+## DescribeTargetedSentimentDetectionJobResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import DescribeTargetedSentimentDetectionJobResponseTypeDef
+```
+
+Required fields:
+
+- `TargetedSentimentDetectionJobProperties`:
+  [TargetedSentimentDetectionJobPropertiesTypeDef](./type_defs.md#targetedsentimentdetectionjobpropertiestypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -1288,6 +1379,7 @@ Optional fields:
   [DocumentClassifierModeType](./literals.md#documentclassifiermodetype)
 - `ModelKmsKeyId`: `str`
 - `VersionName`: `str`
+- `SourceModelArn`: `str`
 
 <a id="documentclassifiersummarytypedef"></a>
 
@@ -1642,6 +1734,7 @@ Optional fields:
 - `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 - `ModelKmsKeyId`: `str`
 - `VersionName`: `str`
+- `SourceModelArn`: `str`
 
 <a id="entityrecognizersummarytypedef"></a>
 
@@ -1740,6 +1833,40 @@ Optional fields:
 - `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
 - `DataAccessRoleArn`: `str`
 - `TargetEventTypes`: `List`\[`str`\]
+
+<a id="importmodelrequestrequesttypedef"></a>
+
+## ImportModelRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ImportModelRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SourceModelArn`: `str`
+
+Optional fields:
+
+- `ModelName`: `str`
+- `VersionName`: `str`
+- `ModelKmsKeyId`: `str`
+- `DataAccessRoleArn`: `str`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="importmodelresponsetypedef"></a>
+
+## ImportModelResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ImportModelResponseTypeDef
+```
+
+Required fields:
+
+- `ModelArn`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 <a id="inputdataconfigtypedef"></a>
 
@@ -2209,6 +2336,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtargetedsentimentdetectionjobsrequestrequesttypedef"></a>
+
+## ListTargetedSentimentDetectionJobsRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListTargetedSentimentDetectionJobsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `Filter`:
+  [TargetedSentimentDetectionJobFilterTypeDef](./type_defs.md#targetedsentimentdetectionjobfiltertypedef)
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+<a id="listtargetedsentimentdetectionjobsresponsetypedef"></a>
+
+## ListTargetedSentimentDetectionJobsResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import ListTargetedSentimentDetectionJobsResponseTypeDef
+```
+
+Required fields:
+
+- `TargetedSentimentDetectionJobPropertiesList`:
+  `List`\[[TargetedSentimentDetectionJobPropertiesTypeDef](./type_defs.md#targetedsentimentdetectionjobpropertiestypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="listtopicsdetectionjobsrequestrequesttypedef"></a>
 
 ## ListTopicsDetectionJobsRequestRequestTypeDef
@@ -2356,6 +2514,37 @@ Required fields:
 Optional fields:
 
 - `KmsKeyId`: `str`
+
+<a id="putresourcepolicyrequestrequesttypedef"></a>
+
+## PutResourcePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import PutResourcePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `ResourcePolicy`: `str`
+
+Optional fields:
+
+- `PolicyRevisionId`: `str`
+
+<a id="putresourcepolicyresponsetypedef"></a>
+
+## PutResourcePolicyResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import PutResourcePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `PolicyRevisionId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 <a id="redactionconfigtypedef"></a>
 
@@ -2733,6 +2922,47 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="starttargetedsentimentdetectionjobrequestrequesttypedef"></a>
+
+## StartTargetedSentimentDetectionJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartTargetedSentimentDetectionJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `DataAccessRoleArn`: `str`
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+
+Optional fields:
+
+- `JobName`: `str`
+- `ClientRequestToken`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+<a id="starttargetedsentimentdetectionjobresponsetypedef"></a>
+
+## StartTargetedSentimentDetectionJobResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StartTargetedSentimentDetectionJobResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobArn`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="starttopicsdetectionjobrequestrequesttypedef"></a>
 
 ## StartTopicsDetectionJobRequestRequestTypeDef
@@ -2936,6 +3166,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="stoptargetedsentimentdetectionjobrequestrequesttypedef"></a>
+
+## StopTargetedSentimentDetectionJobRequestRequestTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopTargetedSentimentDetectionJobRequestRequestTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+
+<a id="stoptargetedsentimentdetectionjobresponsetypedef"></a>
+
+## StopTargetedSentimentDetectionJobResponseTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import StopTargetedSentimentDetectionJobResponseTypeDef
+```
+
+Required fields:
+
+- `JobId`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="stoptrainingdocumentclassifierrequestrequesttypedef"></a>
 
 ## StopTrainingDocumentClassifierRequestRequestTypeDef
@@ -3005,6 +3262,47 @@ Required fields:
 Optional fields:
 
 - `Value`: `str`
+
+<a id="targetedsentimentdetectionjobfiltertypedef"></a>
+
+## TargetedSentimentDetectionJobFilterTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import TargetedSentimentDetectionJobFilterTypeDef
+```
+
+Optional fields:
+
+- `JobName`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `SubmitTimeBefore`: `Union`\[`datetime`, `str`\]
+- `SubmitTimeAfter`: `Union`\[`datetime`, `str`\]
+
+<a id="targetedsentimentdetectionjobpropertiestypedef"></a>
+
+## TargetedSentimentDetectionJobPropertiesTypeDef
+
+```python
+from mypy_boto3_comprehend.type_defs import TargetedSentimentDetectionJobPropertiesTypeDef
+```
+
+Optional fields:
+
+- `JobId`: `str`
+- `JobArn`: `str`
+- `JobName`: `str`
+- `JobStatus`: [JobStatusType](./literals.md#jobstatustype)
+- `Message`: `str`
+- `SubmitTime`: `datetime`
+- `EndTime`: `datetime`
+- `InputDataConfig`:
+  [InputDataConfigTypeDef](./type_defs.md#inputdataconfigtypedef)
+- `OutputDataConfig`:
+  [OutputDataConfigTypeDef](./type_defs.md#outputdataconfigtypedef)
+- `LanguageCode`: [LanguageCodeType](./literals.md#languagecodetype)
+- `DataAccessRoleArn`: `str`
+- `VolumeKmsKeyId`: `str`
+- `VpcConfig`: [VpcConfigTypeDef](./type_defs.md#vpcconfigtypedef)
 
 <a id="topicsdetectionjobfiltertypedef"></a>
 

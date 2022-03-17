@@ -17,12 +17,14 @@ type annotations stubs module
   - [CreateAccessPointRequestRequestTypeDef](#createaccesspointrequestrequesttypedef)
   - [CreateFileSystemRequestRequestTypeDef](#createfilesystemrequestrequesttypedef)
   - [CreateMountTargetRequestRequestTypeDef](#createmounttargetrequestrequesttypedef)
+  - [CreateReplicationConfigurationRequestRequestTypeDef](#createreplicationconfigurationrequestrequesttypedef)
   - [CreateTagsRequestRequestTypeDef](#createtagsrequestrequesttypedef)
   - [CreationInfoTypeDef](#creationinfotypedef)
   - [DeleteAccessPointRequestRequestTypeDef](#deleteaccesspointrequestrequesttypedef)
   - [DeleteFileSystemPolicyRequestRequestTypeDef](#deletefilesystempolicyrequestrequesttypedef)
   - [DeleteFileSystemRequestRequestTypeDef](#deletefilesystemrequestrequesttypedef)
   - [DeleteMountTargetRequestRequestTypeDef](#deletemounttargetrequestrequesttypedef)
+  - [DeleteReplicationConfigurationRequestRequestTypeDef](#deletereplicationconfigurationrequestrequesttypedef)
   - [DeleteTagsRequestRequestTypeDef](#deletetagsrequestrequesttypedef)
   - [DescribeAccessPointsRequestRequestTypeDef](#describeaccesspointsrequestrequesttypedef)
   - [DescribeAccessPointsResponseTypeDef](#describeaccesspointsresponsetypedef)
@@ -37,8 +39,12 @@ type annotations stubs module
   - [DescribeMountTargetSecurityGroupsResponseTypeDef](#describemounttargetsecuritygroupsresponsetypedef)
   - [DescribeMountTargetsRequestRequestTypeDef](#describemounttargetsrequestrequesttypedef)
   - [DescribeMountTargetsResponseTypeDef](#describemounttargetsresponsetypedef)
+  - [DescribeReplicationConfigurationsRequestRequestTypeDef](#describereplicationconfigurationsrequestrequesttypedef)
+  - [DescribeReplicationConfigurationsResponseTypeDef](#describereplicationconfigurationsresponsetypedef)
   - [DescribeTagsRequestRequestTypeDef](#describetagsrequestrequesttypedef)
   - [DescribeTagsResponseTypeDef](#describetagsresponsetypedef)
+  - [DestinationToCreateTypeDef](#destinationtocreatetypedef)
+  - [DestinationTypeDef](#destinationtypedef)
   - [FileSystemDescriptionResponseMetadataTypeDef](#filesystemdescriptionresponsemetadatatypedef)
   - [FileSystemDescriptionTypeDef](#filesystemdescriptiontypedef)
   - [FileSystemPolicyDescriptionTypeDef](#filesystempolicydescriptiontypedef)
@@ -57,6 +63,8 @@ type annotations stubs module
   - [PutBackupPolicyRequestRequestTypeDef](#putbackuppolicyrequestrequesttypedef)
   - [PutFileSystemPolicyRequestRequestTypeDef](#putfilesystempolicyrequestrequesttypedef)
   - [PutLifecycleConfigurationRequestRequestTypeDef](#putlifecycleconfigurationrequestrequesttypedef)
+  - [ReplicationConfigurationDescriptionResponseMetadataTypeDef](#replicationconfigurationdescriptionresponsemetadatatypedef)
+  - [ReplicationConfigurationDescriptionTypeDef](#replicationconfigurationdescriptiontypedef)
   - [ResourceIdPreferenceTypeDef](#resourceidpreferencetypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [RootDirectoryTypeDef](#rootdirectorytypedef)
@@ -195,6 +203,20 @@ Optional fields:
 - `IpAddress`: `str`
 - `SecurityGroups`: `Sequence`\[`str`\]
 
+<a id="createreplicationconfigurationrequestrequesttypedef"></a>
+
+## CreateReplicationConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import CreateReplicationConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SourceFileSystemId`: `str`
+- `Destinations`:
+  `Sequence`\[[DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)\]
+
 <a id="createtagsrequestrequesttypedef"></a>
 
 ## CreateTagsRequestRequestTypeDef
@@ -269,6 +291,18 @@ from mypy_boto3_efs.type_defs import DeleteMountTargetRequestRequestTypeDef
 Required fields:
 
 - `MountTargetId`: `str`
+
+<a id="deletereplicationconfigurationrequestrequesttypedef"></a>
+
+## DeleteReplicationConfigurationRequestRequestTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import DeleteReplicationConfigurationRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SourceFileSystemId`: `str`
 
 <a id="deletetagsrequestrequesttypedef"></a>
 
@@ -470,6 +504,36 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describereplicationconfigurationsrequestrequesttypedef"></a>
+
+## DescribeReplicationConfigurationsRequestRequestTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import DescribeReplicationConfigurationsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `FileSystemId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+<a id="describereplicationconfigurationsresponsetypedef"></a>
+
+## DescribeReplicationConfigurationsResponseTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import DescribeReplicationConfigurationsResponseTypeDef
+```
+
+Required fields:
+
+- `Replications`:
+  `List`\[[ReplicationConfigurationDescriptionTypeDef](./type_defs.md#replicationconfigurationdescriptiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="describetagsrequestrequesttypedef"></a>
 
 ## DescribeTagsRequestRequestTypeDef
@@ -502,6 +566,38 @@ Required fields:
 - `NextMarker`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="destinationtocreatetypedef"></a>
+
+## DestinationToCreateTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import DestinationToCreateTypeDef
+```
+
+Optional fields:
+
+- `Region`: `str`
+- `AvailabilityZoneName`: `str`
+- `KmsKeyId`: `str`
+
+<a id="destinationtypedef"></a>
+
+## DestinationTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import DestinationTypeDef
+```
+
+Required fields:
+
+- `Status`: [ReplicationStatusType](./literals.md#replicationstatustype)
+- `FileSystemId`: `str`
+- `Region`: `str`
+
+Optional fields:
+
+- `LastReplicatedTimestamp`: `datetime`
 
 <a id="filesystemdescriptionresponsemetadatatypedef"></a>
 
@@ -823,6 +919,44 @@ Required fields:
 - `FileSystemId`: `str`
 - `LifecyclePolicies`:
   `Sequence`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
+
+<a id="replicationconfigurationdescriptionresponsemetadatatypedef"></a>
+
+## ReplicationConfigurationDescriptionResponseMetadataTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import ReplicationConfigurationDescriptionResponseMetadataTypeDef
+```
+
+Required fields:
+
+- `SourceFileSystemId`: `str`
+- `SourceFileSystemRegion`: `str`
+- `SourceFileSystemArn`: `str`
+- `OriginalSourceFileSystemArn`: `str`
+- `CreationTime`: `datetime`
+- `Destinations`:
+  `List`\[[DestinationTypeDef](./type_defs.md#destinationtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="replicationconfigurationdescriptiontypedef"></a>
+
+## ReplicationConfigurationDescriptionTypeDef
+
+```python
+from mypy_boto3_efs.type_defs import ReplicationConfigurationDescriptionTypeDef
+```
+
+Required fields:
+
+- `SourceFileSystemId`: `str`
+- `SourceFileSystemRegion`: `str`
+- `SourceFileSystemArn`: `str`
+- `OriginalSourceFileSystemArn`: `str`
+- `CreationTime`: `datetime`
+- `Destinations`:
+  `List`\[[DestinationTypeDef](./type_defs.md#destinationtypedef)\]
 
 <a id="resourceidpreferencetypedef"></a>
 

@@ -1621,6 +1621,7 @@ Optional fields:
 - `Overwrite`: `bool`
 - `FormatOptions`:
   [OutputFormatOptionsTypeDef](./type_defs.md#outputformatoptionstypedef)
+- `MaxOutputFiles`: `int`
 
 <a id="paginatorconfigtypedef"></a>
 
@@ -1896,6 +1897,7 @@ Required fields:
 Optional fields:
 
 - `Key`: `str`
+- `BucketOwner`: `str`
 
 <a id="s3tableoutputoptionstypedef"></a>
 

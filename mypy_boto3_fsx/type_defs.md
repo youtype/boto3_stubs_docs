@@ -752,6 +752,7 @@ Optional fields:
 
 - `StorageCapacityReservationGiB`: `int`
 - `StorageCapacityQuotaGiB`: `int`
+- `RecordSizeKiB`: `int`
 - `DataCompressionType`:
   [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
 - `CopyTagsToSnapshots`: `bool`
@@ -1153,6 +1154,8 @@ Optional fields:
 
 - `SkipFinalBackup`: `bool`
 - `FinalBackupTags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `Options`: `Sequence`\[`Literal['DELETE_CHILD_VOLUMES_AND_SNAPSHOTS']` (see
+  [DeleteFileSystemOpenZFSOptionType](./literals.md#deletefilesystemopenzfsoptiontype))\]
 
 <a id="deletefilesystemopenzfsresponsetypedef"></a>
 
@@ -1934,6 +1937,7 @@ from mypy_boto3_fsx.type_defs import OpenZFSCreateRootVolumeConfigurationTypeDef
 
 Optional fields:
 
+- `RecordSizeKiB`: `int`
 - `DataCompressionType`:
   [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
 - `NfsExports`:
@@ -2020,6 +2024,7 @@ Optional fields:
 - `VolumePath`: `str`
 - `StorageCapacityReservationGiB`: `int`
 - `StorageCapacityQuotaGiB`: `int`
+- `RecordSizeKiB`: `int`
 - `DataCompressionType`:
   [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
 - `CopyTagsToSnapshots`: `bool`
@@ -2219,6 +2224,8 @@ Optional fields:
 - `VolumeId`: `str`
 - `CreationTime`: `datetime`
 - `Lifecycle`: [SnapshotLifecycleType](./literals.md#snapshotlifecycletype)
+- `LifecycleTransitionReason`:
+  [LifecycleTransitionReasonTypeDef](./type_defs.md#lifecycletransitionreasontypedef)
 - `Tags`: `List`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
 - `AdministrativeActions`:
   `List`\[[AdministrativeActionTypeDef](./type_defs.md#administrativeactiontypedef)\]
@@ -2428,6 +2435,8 @@ Optional fields:
 - `DailyAutomaticBackupStartTime`: `str`
 - `FsxAdminPassword`: `str`
 - `WeeklyMaintenanceStartTime`: `str`
+- `DiskIopsConfiguration`:
+  [DiskIopsConfigurationTypeDef](./type_defs.md#diskiopsconfigurationtypedef)
 
 <a id="updatefilesystemopenzfsconfigurationtypedef"></a>
 
@@ -2534,6 +2543,7 @@ Optional fields:
 
 - `StorageCapacityReservationGiB`: `int`
 - `StorageCapacityQuotaGiB`: `int`
+- `RecordSizeKiB`: `int`
 - `DataCompressionType`:
   [OpenZFSDataCompressionTypeType](./literals.md#openzfsdatacompressiontypetype)
 - `NfsExports`:

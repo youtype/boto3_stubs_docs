@@ -373,6 +373,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
 
 <a id="describecanarieslastrunresponsetypedef"></a>
 
@@ -402,6 +403,7 @@ Optional fields:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
 
 <a id="describecanariesresponsetypedef"></a>
 

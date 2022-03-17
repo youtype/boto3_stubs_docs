@@ -152,7 +152,7 @@ Keyword-only arguments:
 - `name`: `str` *(required)*
 - `description`: `str`
 - `repository`: `str`
-- `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `iamServiceRoleArn`: `str`
 - `oauthToken`: `str`
 - `accessToken`: `str`
@@ -949,7 +949,7 @@ Keyword-only arguments:
 - `appId`: `str` *(required)*
 - `name`: `str`
 - `description`: `str`
-- `platform`: `Literal['WEB']` (see [PlatformType](./literals.md#platformtype))
+- `platform`: [PlatformType](./literals.md#platformtype)
 - `iamServiceRoleArn`: `str`
 - `environmentVariables`: `Mapping`\[`str`, `str`\]
 - `enableBranchAutoBuild`: `bool`
@@ -1025,10 +1025,9 @@ Keyword-only arguments:
 
 - `appId`: `str` *(required)*
 - `domainName`: `str` *(required)*
+- `enableAutoSubDomain`: `bool`
 - `subDomainSettings`:
   `Sequence`\[[SubDomainSettingTypeDef](./type_defs.md#subdomainsettingtypedef)\]
-  *(required)*
-- `enableAutoSubDomain`: `bool`
 - `autoSubDomainCreationPatterns`: `Sequence`\[`str`\]
 - `autoSubDomainIAMRole`: `str`
 

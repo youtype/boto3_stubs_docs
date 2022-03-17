@@ -130,6 +130,7 @@ type annotations stubs module
   - [UpdateStudioComponentResponseTypeDef](#updatestudiocomponentresponsetypedef)
   - [UpdateStudioRequestRequestTypeDef](#updatestudiorequestrequesttypedef)
   - [UpdateStudioResponseTypeDef](#updatestudioresponsetypedef)
+  - [ValidationResultTypeDef](#validationresulttypedef)
   - [WaiterConfigTypeDef](#waiterconfigtypedef)
 
 <a id="accepteulasrequestrequesttypedef"></a>
@@ -1060,6 +1061,8 @@ Optional fields:
 - `tags`: `Dict`\[`str`, `str`\]
 - `updatedAt`: `datetime`
 - `updatedBy`: `str`
+- `validationResults`:
+  `List`\[[ValidationResultTypeDef](./type_defs.md#validationresulttypedef)\]
 
 <a id="licenseserviceconfigurationtypedef"></a>
 
@@ -1185,7 +1188,8 @@ Optional fields:
 - `maxResults`: `int`
 - `nextToken`: `str`
 - `principalId`: `str`
-- `states`: `Sequence`\[`str`\]
+- `states`:
+  `Sequence`\[[LaunchProfileStateType](./literals.md#launchprofilestatetype)\]
 
 <a id="listlaunchprofilesresponsetypedef"></a>
 
@@ -1287,8 +1291,10 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
-- `states`: `Sequence`\[`str`\]
-- `types`: `Sequence`\[`str`\]
+- `states`:
+  `Sequence`\[[StudioComponentStateType](./literals.md#studiocomponentstatetype)\]
+- `types`:
+  `Sequence`\[[StudioComponentTypeType](./literals.md#studiocomponenttypetype)\]
 
 <a id="liststudiocomponentsresponsetypedef"></a>
 
@@ -2146,6 +2152,24 @@ Required fields:
 - `studio`: [StudioTypeDef](./type_defs.md#studiotypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="validationresulttypedef"></a>
+
+## ValidationResultTypeDef
+
+```python
+from mypy_boto3_nimble.type_defs import ValidationResultTypeDef
+```
+
+Required fields:
+
+- `state`:
+  [LaunchProfileValidationStateType](./literals.md#launchprofilevalidationstatetype)
+- `statusCode`:
+  [LaunchProfileValidationStatusCodeType](./literals.md#launchprofilevalidationstatuscodetype)
+- `statusMessage`: `str`
+- `type`:
+  [LaunchProfileValidationTypeType](./literals.md#launchprofilevalidationtypetype)
 
 <a id="waiterconfigtypedef"></a>
 

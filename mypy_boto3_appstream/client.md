@@ -15,6 +15,7 @@ type annotations stubs module
   - [Methods](#methods)
     - [exceptions](#exceptions)
     - [associate_application_fleet](#associate_application_fleet)
+    - [associate_application_to_entitlement](#associate_application_to_entitlement)
     - [associate_fleet](#associate_fleet)
     - [batch_associate_user_stack](#batch_associate_user_stack)
     - [batch_disassociate_user_stack](#batch_disassociate_user_stack)
@@ -23,6 +24,7 @@ type annotations stubs module
     - [create_app_block](#create_app_block)
     - [create_application](#create_application)
     - [create_directory_config](#create_directory_config)
+    - [create_entitlement](#create_entitlement)
     - [create_fleet](#create_fleet)
     - [create_image_builder](#create_image_builder)
     - [create_image_builder_streaming_url](#create_image_builder_streaming_url)
@@ -34,6 +36,7 @@ type annotations stubs module
     - [delete_app_block](#delete_app_block)
     - [delete_application](#delete_application)
     - [delete_directory_config](#delete_directory_config)
+    - [delete_entitlement](#delete_entitlement)
     - [delete_fleet](#delete_fleet)
     - [delete_image](#delete_image)
     - [delete_image_builder](#delete_image_builder)
@@ -45,6 +48,7 @@ type annotations stubs module
     - [describe_application_fleet_associations](#describe_application_fleet_associations)
     - [describe_applications](#describe_applications)
     - [describe_directory_configs](#describe_directory_configs)
+    - [describe_entitlements](#describe_entitlements)
     - [describe_fleets](#describe_fleets)
     - [describe_image_builders](#describe_image_builders)
     - [describe_image_permissions](#describe_image_permissions)
@@ -56,12 +60,14 @@ type annotations stubs module
     - [describe_users](#describe_users)
     - [disable_user](#disable_user)
     - [disassociate_application_fleet](#disassociate_application_fleet)
+    - [disassociate_application_from_entitlement](#disassociate_application_from_entitlement)
     - [disassociate_fleet](#disassociate_fleet)
     - [enable_user](#enable_user)
     - [expire_session](#expire_session)
     - [generate_presigned_url](#generate_presigned_url)
     - [list_associated_fleets](#list_associated_fleets)
     - [list_associated_stacks](#list_associated_stacks)
+    - [list_entitled_applications](#list_entitled_applications)
     - [list_tags_for_resource](#list_tags_for_resource)
     - [start_fleet](#start_fleet)
     - [start_image_builder](#start_image_builder)
@@ -71,6 +77,7 @@ type annotations stubs module
     - [untag_resource](#untag_resource)
     - [update_application](#update_application)
     - [update_directory_config](#update_directory_config)
+    - [update_entitlement](#update_entitlement)
     - [update_fleet](#update_fleet)
     - [update_image_permissions](#update_image_permissions)
     - [update_stack](#update_stack)
@@ -114,6 +121,8 @@ Exceptions:
 
 - `Exceptions.ClientError`
 - `Exceptions.ConcurrentModificationException`
+- `Exceptions.EntitlementAlreadyExistsException`
+- `Exceptions.EntitlementNotFoundException`
 - `Exceptions.IncompatibleImageException`
 - `Exceptions.InvalidAccountStatusException`
 - `Exceptions.InvalidParameterCombinationException`
@@ -165,6 +174,29 @@ Keyword-only arguments:
 
 Returns
 [AssociateApplicationFleetResultTypeDef](./type_defs.md#associateapplicationfleetresulttypedef).
+
+<a id="associate\_application\_to\_entitlement"></a>
+
+### associate_application_to_entitlement
+
+Associates an application to entitle.
+
+Type annotations for
+`boto3.client("appstream").associate_application_to_entitlement` method.
+
+Boto3 documentation:
+[AppStream.Client.associate_application_to_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.associate_application_to_entitlement)
+
+Arguments mapping described in
+[AssociateApplicationToEntitlementRequestRequestTypeDef](./type_defs.md#associateapplicationtoentitlementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackName`: `str` *(required)*
+- `EntitlementName`: `str` *(required)*
+- `ApplicationIdentifier`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 <a id="associate\_fleet"></a>
 
@@ -361,6 +393,34 @@ Keyword-only arguments:
 
 Returns
 [CreateDirectoryConfigResultTypeDef](./type_defs.md#createdirectoryconfigresulttypedef).
+
+<a id="create\_entitlement"></a>
+
+### create_entitlement
+
+Creates a new entitlement.
+
+Type annotations for `boto3.client("appstream").create_entitlement` method.
+
+Boto3 documentation:
+[AppStream.Client.create_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.create_entitlement)
+
+Arguments mapping described in
+[CreateEntitlementRequestRequestTypeDef](./type_defs.md#createentitlementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `StackName`: `str` *(required)*
+- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
+  *(required)*
+- `Attributes`:
+  `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
+  *(required)*
+- `Description`: `str`
+
+Returns
+[CreateEntitlementResultTypeDef](./type_defs.md#createentitlementresulttypedef).
 
 <a id="create\_fleet"></a>
 
@@ -650,6 +710,27 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="delete\_entitlement"></a>
+
+### delete_entitlement
+
+Deletes the specified entitlement.
+
+Type annotations for `boto3.client("appstream").delete_entitlement` method.
+
+Boto3 documentation:
+[AppStream.Client.delete_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.delete_entitlement)
+
+Arguments mapping described in
+[DeleteEntitlementRequestRequestTypeDef](./type_defs.md#deleteentitlementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `StackName`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 <a id="delete\_fleet"></a>
 
 ### delete_fleet
@@ -884,6 +965,30 @@ Keyword-only arguments:
 
 Returns
 [DescribeDirectoryConfigsResultTypeDef](./type_defs.md#describedirectoryconfigsresulttypedef).
+
+<a id="describe\_entitlements"></a>
+
+### describe_entitlements
+
+Retrieves a list that describes one of more entitlements.
+
+Type annotations for `boto3.client("appstream").describe_entitlements` method.
+
+Boto3 documentation:
+[AppStream.Client.describe_entitlements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.describe_entitlements)
+
+Arguments mapping described in
+[DescribeEntitlementsRequestRequestTypeDef](./type_defs.md#describeentitlementsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackName`: `str` *(required)*
+- `Name`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeEntitlementsResultTypeDef](./type_defs.md#describeentitlementsresulttypedef).
 
 <a id="describe\_fleets"></a>
 
@@ -1154,6 +1259,29 @@ Keyword-only arguments:
 
 Returns `Dict`\[`str`, `Any`\].
 
+<a id="disassociate\_application\_from\_entitlement"></a>
+
+### disassociate_application_from_entitlement
+
+Deletes the specified application from the specified entitlement.
+
+Type annotations for
+`boto3.client("appstream").disassociate_application_from_entitlement` method.
+
+Boto3 documentation:
+[AppStream.Client.disassociate_application_from_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.disassociate_application_from_entitlement)
+
+Arguments mapping described in
+[DisassociateApplicationFromEntitlementRequestRequestTypeDef](./type_defs.md#disassociateapplicationfromentitlementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackName`: `str` *(required)*
+- `EntitlementName`: `str` *(required)*
+- `ApplicationIdentifier`: `str` *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
 <a id="disassociate\_fleet"></a>
 
 ### disassociate_fleet
@@ -1280,6 +1408,31 @@ Keyword-only arguments:
 
 Returns
 [ListAssociatedStacksResultTypeDef](./type_defs.md#listassociatedstacksresulttypedef).
+
+<a id="list\_entitled\_applications"></a>
+
+### list_entitled_applications
+
+Retrieves a list of entitled applications.
+
+Type annotations for `boto3.client("appstream").list_entitled_applications`
+method.
+
+Boto3 documentation:
+[AppStream.Client.list_entitled_applications](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.list_entitled_applications)
+
+Arguments mapping described in
+[ListEntitledApplicationsRequestRequestTypeDef](./type_defs.md#listentitledapplicationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `StackName`: `str` *(required)*
+- `EntitlementName`: `str` *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListEntitledApplicationsResultTypeDef](./type_defs.md#listentitledapplicationsresulttypedef).
 
 <a id="list\_tags\_for\_resource"></a>
 
@@ -1482,6 +1635,32 @@ Keyword-only arguments:
 
 Returns
 [UpdateDirectoryConfigResultTypeDef](./type_defs.md#updatedirectoryconfigresulttypedef).
+
+<a id="update\_entitlement"></a>
+
+### update_entitlement
+
+Updates the specified entitlement.
+
+Type annotations for `boto3.client("appstream").update_entitlement` method.
+
+Boto3 documentation:
+[AppStream.Client.update_entitlement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/appstream.html#AppStream.Client.update_entitlement)
+
+Arguments mapping described in
+[UpdateEntitlementRequestRequestTypeDef](./type_defs.md#updateentitlementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Name`: `str` *(required)*
+- `StackName`: `str` *(required)*
+- `Description`: `str`
+- `AppVisibility`: [AppVisibilityType](./literals.md#appvisibilitytype)
+- `Attributes`:
+  `Sequence`\[[EntitlementAttributeTypeDef](./type_defs.md#entitlementattributetypedef)\]
+
+Returns
+[UpdateEntitlementResultTypeDef](./type_defs.md#updateentitlementresulttypedef).
 
 <a id="update\_fleet"></a>
 

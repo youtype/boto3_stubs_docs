@@ -11,8 +11,10 @@ type annotations stubs module
 
 - [Waiters for boto3 Lambda module](#waiters-for-boto3-lambda-module)
   - [FunctionActiveWaiter](#functionactivewaiter)
+  - [FunctionActiveV2Waiter](#functionactivev2waiter)
   - [FunctionExistsWaiter](#functionexistswaiter)
   - [FunctionUpdatedWaiter](#functionupdatedwaiter)
+  - [FunctionUpdatedV2Waiter](#functionupdatedv2waiter)
 
 <a id="functionactivewaiter"></a>
 
@@ -35,6 +37,32 @@ Boto3 documentation:
 [Lambda.Waiter.function_active](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActive)
 
 Arguments for `FunctionActiveWaiter.wait` method:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+<a id="functionactivev2waiter"></a>
+
+## FunctionActiveV2Waiter
+
+Type annotations for `boto3.client("lambda").get_waiter("function_active_v2")`.
+
+Can be used directly:
+
+```python
+from boto3.session import Session
+
+from mypy_boto3_lambda.waiter import FunctionActiveV2Waiter
+
+def get_function_active_v2_waiter() -> FunctionActiveV2Waiter:
+    return Session().client("lambda").get_waiter("function_active_v2")
+```
+
+Boto3 documentation:
+[Lambda.Waiter.function_active_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionActiveV2)
+
+Arguments for `FunctionActiveV2Waiter.wait` method:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`
@@ -87,6 +115,33 @@ Boto3 documentation:
 [Lambda.Waiter.function_updated](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdated)
 
 Arguments for `FunctionUpdatedWaiter.wait` method:
+
+- `FunctionName`: `str` *(required)*
+- `Qualifier`: `str`
+- `WaiterConfig`: [WaiterConfigTypeDef](./type_defs.md#waiterconfigtypedef)
+
+<a id="functionupdatedv2waiter"></a>
+
+## FunctionUpdatedV2Waiter
+
+Type annotations for
+`boto3.client("lambda").get_waiter("function_updated_v2")`.
+
+Can be used directly:
+
+```python
+from boto3.session import Session
+
+from mypy_boto3_lambda.waiter import FunctionUpdatedV2Waiter
+
+def get_function_updated_v2_waiter() -> FunctionUpdatedV2Waiter:
+    return Session().client("lambda").get_waiter("function_updated_v2")
+```
+
+Boto3 documentation:
+[Lambda.Waiter.function_updated_v2](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/lambda.html#Lambda.Waiter.FunctionUpdatedV2)
+
+Arguments for `FunctionUpdatedV2Waiter.wait` method:
 
 - `FunctionName`: `str` *(required)*
 - `Qualifier`: `str`

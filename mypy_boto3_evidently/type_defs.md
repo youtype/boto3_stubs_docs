@@ -866,6 +866,7 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `status`: [ExperimentStatusType](./literals.md#experimentstatustype)
 
 <a id="listexperimentsresponsetypedef"></a>
 
@@ -932,6 +933,7 @@ Optional fields:
 
 - `maxResults`: `int`
 - `nextToken`: `str`
+- `status`: [LaunchStatusType](./literals.md#launchstatustype)
 
 <a id="listlaunchesresponsetypedef"></a>
 
@@ -1011,13 +1013,16 @@ Required fields:
 from mypy_boto3_evidently.type_defs import MetricDefinitionConfigTypeDef
 ```
 
-Optional fields:
+Required fields:
 
 - `entityIdKey`: `str`
-- `eventPattern`: `str`
 - `name`: `str`
-- `unitLabel`: `str`
 - `valueKey`: `str`
+
+Optional fields:
+
+- `eventPattern`: `str`
+- `unitLabel`: `str`
 
 <a id="metricdefinitiontypedef"></a>
 

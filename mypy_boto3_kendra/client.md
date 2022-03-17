@@ -221,7 +221,7 @@ Returns
 
 Returns the indexing status for one or more documents submitted with the
 [BatchPutDocument](https://docs.aws.amazon.com/kendra/latest/dg/API_BatchPutDocument.html)\_
-operation.
+API.
 
 Type annotations for `boto3.client("kendra").batch_get_document_status` method.
 
@@ -621,7 +621,7 @@ Keyword-only arguments:
 
 ### describe_data_source
 
-Gets information about a Amazon Kendra data source.
+Gets information about an Amazon Kendra data source.
 
 Type annotations for `boto3.client("kendra").describe_data_source` method.
 
@@ -1222,7 +1222,7 @@ Arguments mapping described in
 Keyword-only arguments:
 
 - `IndexId`: `str` *(required)*
-- `QueryText`: `str` *(required)*
+- `QueryText`: `str`
 - `AttributeFilter`:
   [AttributeFilterTypeDef](./type_defs.md#attributefiltertypedef)
 - `Facets`: `Sequence`\[[FacetTypeDef](./type_defs.md#facettypedef)\]
@@ -1237,6 +1237,8 @@ Keyword-only arguments:
   [SortingConfigurationTypeDef](./type_defs.md#sortingconfigurationtypedef)
 - `UserContext`: [UserContextTypeDef](./type_defs.md#usercontexttypedef)
 - `VisitorId`: `str`
+- `SpellCorrectionConfiguration`:
+  [SpellCorrectionConfigurationTypeDef](./type_defs.md#spellcorrectionconfigurationtypedef)
 
 Returns [QueryResultTypeDef](./type_defs.md#queryresulttypedef).
 
@@ -1267,7 +1269,7 @@ Returns
 
 ### stop_data_source_sync_job
 
-Stops a running synchronization job.
+Stops a synchronization job that is currently running.
 
 Type annotations for `boto3.client("kendra").stop_data_source_sync_job` method.
 

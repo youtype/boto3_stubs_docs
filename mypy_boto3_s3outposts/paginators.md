@@ -11,6 +11,7 @@ type annotations stubs module
 
 - [Paginators for boto3 S3Outposts module](#paginators-for-boto3-s3outposts-module)
   - [ListEndpointsPaginator](#listendpointspaginator)
+  - [ListSharedEndpointsPaginator](#listsharedendpointspaginator)
 
 <a id="listendpointspaginator"></a>
 
@@ -40,3 +41,33 @@ Arguments for `ListEndpointsPaginator.paginate` method:
 
 `ListEndpointsPaginator.paginate` returns
 `_PageIterator`\[[ListEndpointsResultTypeDef](./type_defs.md#listendpointsresulttypedef)\].
+
+<a id="listsharedendpointspaginator"></a>
+
+## ListSharedEndpointsPaginator
+
+Type annotations for
+`boto3.client("s3outposts").get_paginator("list_shared_endpoints")`.
+
+Can be used directly:
+
+```python
+from boto3.session import Session
+
+from mypy_boto3_s3outposts.paginator import ListSharedEndpointsPaginator
+
+def get_list_shared_endpoints_paginator() -> ListSharedEndpointsPaginator:
+    return Session().client("s3outposts").get_paginator("list_shared_endpoints")
+```
+
+Boto3 documentation:
+[S3Outposts.Paginator.ListSharedEndpoints](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3outposts.html#S3Outposts.Paginator.ListSharedEndpoints)
+
+Arguments for `ListSharedEndpointsPaginator.paginate` method:
+
+- `OutpostId`: `str` *(required)*
+- `PaginationConfig`:
+  [PaginatorConfigTypeDef](./type_defs.md#paginatorconfigtypedef)
+
+`ListSharedEndpointsPaginator.paginate` returns
+`_PageIterator`\[[ListSharedEndpointsResultTypeDef](./type_defs.md#listsharedendpointsresulttypedef)\].

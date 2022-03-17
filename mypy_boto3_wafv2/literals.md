@@ -22,6 +22,8 @@ type annotations stubs module
   - [IPAddressVersionType](#ipaddressversiontype)
   - [JsonMatchScopeType](#jsonmatchscopetype)
   - [LabelMatchScopeType](#labelmatchscopetype)
+  - [PayloadTypeType](#payloadtypetype)
+  - [PlatformType](#platformtype)
   - [PositionalConstraintType](#positionalconstrainttype)
   - [RateBasedStatementAggregateKeyTypeType](#ratebasedstatementaggregatekeytypetype)
   - [ResourceTypeType](#resourcetypetype)
@@ -445,6 +447,32 @@ Values:
 - `LABEL`
 - `NAMESPACE`
 
+<a id="payloadtypetype"></a>
+
+## PayloadTypeType
+
+```python
+from mypy_boto3_wafv2.literals import PayloadTypeType
+```
+
+Values:
+
+- `FORM_ENCODED`
+- `JSON`
+
+<a id="platformtype"></a>
+
+## PlatformType
+
+```python
+from mypy_boto3_wafv2.literals import PlatformType
+```
+
+Values:
+
+- `ANDROID`
+- `IOS`
+
 <a id="positionalconstrainttype"></a>
 
 ## PositionalConstraintType
@@ -599,6 +627,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -721,6 +750,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

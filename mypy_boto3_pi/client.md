@@ -18,7 +18,10 @@ type annotations stubs module
     - [describe_dimension_keys](#describe_dimension_keys)
     - [generate_presigned_url](#generate_presigned_url)
     - [get_dimension_key_details](#get_dimension_key_details)
+    - [get_resource_metadata](#get_resource_metadata)
     - [get_resource_metrics](#get_resource_metrics)
+    - [list_available_resource_dimensions](#list_available_resource_dimensions)
+    - [list_available_resource_metrics](#list_available_resource_metrics)
 
 <a id="piclient"></a>
 
@@ -110,8 +113,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ServiceType`: `Literal['RDS']` (see
-  [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
 - `Identifier`: `str` *(required)*
 - `StartTime`: `Union`\[`datetime`, `str`\] *(required)*
 - `EndTime`: `Union`\[`datetime`, `str`\] *(required)*
@@ -119,6 +121,7 @@ Keyword-only arguments:
 - `GroupBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
   *(required)*
 - `PeriodInSeconds`: `int`
+- `AdditionalMetrics`: `Sequence`\[`str`\]
 - `PartitionBy`: [DimensionGroupTypeDef](./type_defs.md#dimensiongrouptypedef)
 - `Filter`: `Mapping`\[`str`, `str`\]
 - `MaxResults`: `int`
@@ -164,8 +167,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ServiceType`: `Literal['RDS']` (see
-  [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
 - `Identifier`: `str` *(required)*
 - `Group`: `str` *(required)*
 - `GroupIdentifier`: `str` *(required)*
@@ -173,6 +175,28 @@ Keyword-only arguments:
 
 Returns
 [GetDimensionKeyDetailsResponseTypeDef](./type_defs.md#getdimensionkeydetailsresponsetypedef).
+
+<a id="get\_resource\_metadata"></a>
+
+### get_resource_metadata
+
+Retrieve the metadata for different features.
+
+Type annotations for `boto3.client("pi").get_resource_metadata` method.
+
+Boto3 documentation:
+[PI.Client.get_resource_metadata](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.get_resource_metadata)
+
+Arguments mapping described in
+[GetResourceMetadataRequestRequestTypeDef](./type_defs.md#getresourcemetadatarequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
+- `Identifier`: `str` *(required)*
+
+Returns
+[GetResourceMetadataResponseTypeDef](./type_defs.md#getresourcemetadataresponsetypedef).
 
 <a id="get\_resource\_metrics"></a>
 
@@ -191,8 +215,7 @@ Arguments mapping described in
 
 Keyword-only arguments:
 
-- `ServiceType`: `Literal['RDS']` (see
-  [ServiceTypeType](./literals.md#servicetypetype)) *(required)*
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
 - `Identifier`: `str` *(required)*
 - `MetricQueries`:
   `Sequence`\[[MetricQueryTypeDef](./type_defs.md#metricquerytypedef)\]
@@ -205,3 +228,57 @@ Keyword-only arguments:
 
 Returns
 [GetResourceMetricsResponseTypeDef](./type_defs.md#getresourcemetricsresponsetypedef).
+
+<a id="list\_available\_resource\_dimensions"></a>
+
+### list_available_resource_dimensions
+
+Retrieve the dimensions that can be queried for each specified metric type on a
+specified DB instance.
+
+Type annotations for `boto3.client("pi").list_available_resource_dimensions`
+method.
+
+Boto3 documentation:
+[PI.Client.list_available_resource_dimensions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.list_available_resource_dimensions)
+
+Arguments mapping described in
+[ListAvailableResourceDimensionsRequestRequestTypeDef](./type_defs.md#listavailableresourcedimensionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
+- `Identifier`: `str` *(required)*
+- `Metrics`: `Sequence`\[`str`\] *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListAvailableResourceDimensionsResponseTypeDef](./type_defs.md#listavailableresourcedimensionsresponsetypedef).
+
+<a id="list\_available\_resource\_metrics"></a>
+
+### list_available_resource_metrics
+
+Retrieve metrics of the specified types that can be queried for a specified DB
+instance.
+
+Type annotations for `boto3.client("pi").list_available_resource_metrics`
+method.
+
+Boto3 documentation:
+[PI.Client.list_available_resource_metrics](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/pi.html#PI.Client.list_available_resource_metrics)
+
+Arguments mapping described in
+[ListAvailableResourceMetricsRequestRequestTypeDef](./type_defs.md#listavailableresourcemetricsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ServiceType`: [ServiceTypeType](./literals.md#servicetypetype) *(required)*
+- `Identifier`: `str` *(required)*
+- `MetricTypes`: `Sequence`\[`str`\] *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[ListAvailableResourceMetricsResponseTypeDef](./type_defs.md#listavailableresourcemetricsresponsetypedef).

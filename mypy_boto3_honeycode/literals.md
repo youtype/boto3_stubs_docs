@@ -10,6 +10,7 @@ type annotations stubs module
 [mypy-boto3-honeycode](https://pypi.org/project/mypy-boto3-honeycode/).
 
 - [Literals for boto3 Honeycode module](#literals-for-boto3-honeycode-module)
+  - [ErrorCodeType](#errorcodetype)
   - [FormatType](#formattype)
   - [ImportDataCharacterEncodingType](#importdatacharacterencodingtype)
   - [ImportSourceDataFormatType](#importsourcedataformattype)
@@ -23,6 +24,31 @@ type annotations stubs module
   - [ServiceName](#servicename)
   - [ResourceServiceName](#resourceservicename)
   - [PaginatorName](#paginatorname)
+
+<a id="errorcodetype"></a>
+
+## ErrorCodeType
+
+```python
+from mypy_boto3_honeycode.literals import ErrorCodeType
+```
+
+Values:
+
+- `ACCESS_DENIED`
+- `FILE_EMPTY_ERROR`
+- `FILE_NOT_FOUND_ERROR`
+- `FILE_PARSING_ERROR`
+- `FILE_SIZE_LIMIT_ERROR`
+- `INVALID_FILE_TYPE_ERROR`
+- `INVALID_IMPORT_OPTIONS_ERROR`
+- `INVALID_TABLE_COLUMN_ID_ERROR`
+- `INVALID_TABLE_ID_ERROR`
+- `INVALID_URL_ERROR`
+- `RESOURCE_NOT_FOUND_ERROR`
+- `SYSTEM_LIMIT_ERROR`
+- `TABLE_NOT_FOUND_ERROR`
+- `UNKNOWN_ERROR`
 
 <a id="formattype"></a>
 
@@ -43,6 +69,7 @@ Values:
 - `NUMBER`
 - `PERCENTAGE`
 - `ROWLINK`
+- `ROWSET`
 - `TEXT`
 - `TIME`
 
@@ -203,6 +230,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -325,6 +353,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

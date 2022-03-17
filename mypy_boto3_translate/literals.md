@@ -12,6 +12,7 @@ type annotations stubs module
 - [Literals for boto3 Translate module](#literals-for-boto3-translate-module)
   - [DirectionalityType](#directionalitytype)
   - [EncryptionKeyTypeType](#encryptionkeytypetype)
+  - [FormalityType](#formalitytype)
   - [JobStatusType](#jobstatustype)
   - [ListTerminologiesPaginatorName](#listterminologiespaginatorname)
   - [MergeStrategyType](#mergestrategytype)
@@ -48,6 +49,19 @@ from mypy_boto3_translate.literals import EncryptionKeyTypeType
 Values:
 
 - `KMS`
+
+<a id="formalitytype"></a>
+
+## FormalityType
+
+```python
+from mypy_boto3_translate.literals import FormalityType
+```
+
+Values:
+
+- `FORMAL`
+- `INFORMAL`
 
 <a id="jobstatustype"></a>
 
@@ -199,6 +213,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -321,6 +336,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

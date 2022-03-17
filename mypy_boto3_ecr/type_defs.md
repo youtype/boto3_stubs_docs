@@ -1078,6 +1078,7 @@ Optional fields:
   [ImageScanFindingsSummaryTypeDef](./type_defs.md#imagescanfindingssummarytypedef)
 - `imageManifestMediaType`: `str`
 - `artifactMediaType`: `str`
+- `lastRecordedPullTime`: `datetime`
 
 <a id="imagefailuretypedef"></a>
 

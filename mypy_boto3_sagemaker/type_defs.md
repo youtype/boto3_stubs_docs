@@ -373,6 +373,7 @@ type annotations stubs module
   - [ExperimentSummaryTypeDef](#experimentsummarytypedef)
   - [ExperimentTypeDef](#experimenttypedef)
   - [ExplainabilityTypeDef](#explainabilitytypedef)
+  - [FailStepMetadataTypeDef](#failstepmetadatatypedef)
   - [FeatureDefinitionTypeDef](#featuredefinitiontypedef)
   - [FeatureGroupSummaryTypeDef](#featuregroupsummarytypedef)
   - [FeatureGroupTypeDef](#featuregrouptypedef)
@@ -1715,6 +1716,10 @@ from mypy_boto3_sagemaker.type_defs import CandidateArtifactLocationsTypeDef
 Required fields:
 
 - `Explainability`: `str`
+
+Optional fields:
+
+- `ModelInsights`: `str`
 
 <a id="candidatepropertiestypedef"></a>
 
@@ -7236,6 +7241,18 @@ Optional fields:
 
 - `Report`: [MetricsSourceTypeDef](./type_defs.md#metricssourcetypedef)
 
+<a id="failstepmetadatatypedef"></a>
+
+## FailStepMetadataTypeDef
+
+```python
+from mypy_boto3_sagemaker.type_defs import FailStepMetadataTypeDef
+```
+
+Optional fields:
+
+- `ErrorMessage`: `str`
+
 <a id="featuredefinitiontypedef"></a>
 
 ## FeatureDefinitionTypeDef
@@ -11915,6 +11932,7 @@ Optional fields:
 - `ClarifyCheck`:
   [ClarifyCheckStepMetadataTypeDef](./type_defs.md#clarifycheckstepmetadatatypedef)
 - `EMR`: [EMRStepMetadataTypeDef](./type_defs.md#emrstepmetadatatypedef)
+- `Fail`: [FailStepMetadataTypeDef](./type_defs.md#failstepmetadatatypedef)
 
 <a id="pipelineexecutionsteptypedef"></a>
 
@@ -11955,6 +11973,7 @@ Optional fields:
   [PipelineExecutionStatusType](./literals.md#pipelineexecutionstatustype)
 - `PipelineExecutionDescription`: `str`
 - `PipelineExecutionDisplayName`: `str`
+- `PipelineExecutionFailureReason`: `str`
 
 <a id="pipelineexecutiontypedef"></a>
 

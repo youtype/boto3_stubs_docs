@@ -68,6 +68,7 @@ Exceptions:
 - `Exceptions.ClientError`
 - `Exceptions.ConflictException`
 - `Exceptions.InternalServerException`
+- `Exceptions.RequestEntityTooLargeException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ValidationException`
 
@@ -181,6 +182,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
 
 Returns
 [DescribeCanariesResponseTypeDef](./type_defs.md#describecanariesresponsetypedef).
@@ -205,6 +207,7 @@ Keyword-only arguments:
 
 - `NextToken`: `str`
 - `MaxResults`: `int`
+- `Names`: `Sequence`\[`str`\]
 
 Returns
 [DescribeCanariesLastRunResponseTypeDef](./type_defs.md#describecanarieslastrunresponsetypedef).

@@ -11,12 +11,14 @@ type annotations stubs module
 
 - [Literals for boto3 CloudTrail module](#literals-for-boto3-cloudtrail-module)
   - [EventCategoryType](#eventcategorytype)
+  - [EventDataStoreStatusType](#eventdatastorestatustype)
   - [InsightTypeType](#insighttypetype)
   - [ListPublicKeysPaginatorName](#listpublickeyspaginatorname)
   - [ListTagsPaginatorName](#listtagspaginatorname)
   - [ListTrailsPaginatorName](#listtrailspaginatorname)
   - [LookupAttributeKeyType](#lookupattributekeytype)
   - [LookupEventsPaginatorName](#lookupeventspaginatorname)
+  - [QueryStatusType](#querystatustype)
   - [ReadWriteTypeType](#readwritetypetype)
   - [CloudTrailServiceName](#cloudtrailservicename)
   - [ServiceName](#servicename)
@@ -34,6 +36,20 @@ from mypy_boto3_cloudtrail.literals import EventCategoryType
 Values:
 
 - `insight`
+
+<a id="eventdatastorestatustype"></a>
+
+## EventDataStoreStatusType
+
+```python
+from mypy_boto3_cloudtrail.literals import EventDataStoreStatusType
+```
+
+Values:
+
+- `CREATED`
+- `ENABLED`
+- `PENDING_DELETION`
 
 <a id="insighttypetype"></a>
 
@@ -115,6 +131,23 @@ Values:
 
 - `lookup_events`
 
+<a id="querystatustype"></a>
+
+## QueryStatusType
+
+```python
+from mypy_boto3_cloudtrail.literals import QueryStatusType
+```
+
+Values:
+
+- `CANCELLED`
+- `FAILED`
+- `FINISHED`
+- `QUEUED`
+- `RUNNING`
+- `TIMED_OUT`
+
 <a id="readwritetypetype"></a>
 
 ## ReadWriteTypeType
@@ -181,6 +214,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -303,6 +337,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

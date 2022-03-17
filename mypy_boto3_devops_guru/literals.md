@@ -21,6 +21,7 @@ type annotations stubs module
   - [DescribeResourceCollectionHealthPaginatorName](#describeresourcecollectionhealthpaginatorname)
   - [EventClassType](#eventclasstype)
   - [EventDataSourceType](#eventdatasourcetype)
+  - [EventSourceOptInStatusType](#eventsourceoptinstatustype)
   - [GetCostEstimationPaginatorName](#getcostestimationpaginatorname)
   - [GetResourceCollectionPaginatorName](#getresourcecollectionpaginatorname)
   - [InsightFeedbackOptionType](#insightfeedbackoptiontype)
@@ -197,6 +198,19 @@ Values:
 
 - `AWS_CLOUD_TRAIL`
 - `AWS_CODE_DEPLOY`
+
+<a id="eventsourceoptinstatustype"></a>
+
+## EventSourceOptInStatusType
+
+```python
+from mypy_boto3_devops_guru.literals import EventSourceOptInStatusType
+```
+
+Values:
+
+- `DISABLED`
+- `ENABLED`
 
 <a id="getcostestimationpaginatorname"></a>
 
@@ -539,6 +553,7 @@ Values:
 - `backup`
 - `backup-gateway`
 - `batch`
+- `billingconductor`
 - `braket`
 - `budgets`
 - `ce`
@@ -661,6 +676,7 @@ Values:
 - `kafka`
 - `kafkaconnect`
 - `kendra`
+- `keyspaces`
 - `kinesis`
 - `kinesis-video-archived-media`
 - `kinesis-video-media`

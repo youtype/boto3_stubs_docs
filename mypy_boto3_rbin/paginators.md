@@ -34,8 +34,8 @@ Boto3 documentation:
 
 Arguments for `ListRulesPaginator.paginate` method:
 
-- `ResourceType`: `Literal['EBS_SNAPSHOT']` (see
-  [ResourceTypeType](./literals.md#resourcetypetype)) *(required)*
+- `ResourceType`: [ResourceTypeType](./literals.md#resourcetypetype)
+  *(required)*
 - `ResourceTags`:
   `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 - `PaginationConfig`:
