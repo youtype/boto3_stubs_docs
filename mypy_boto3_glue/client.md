@@ -30,6 +30,7 @@ type annotations stubs module
     - [batch_update_partition](#batch_update_partition)
     - [can_paginate](#can_paginate)
     - [cancel_ml_task_run](#cancel_ml_task_run)
+    - [cancel_statement](#cancel_statement)
     - [check_schema_version_validity](#check_schema_version_validity)
     - [create_blueprint](#create_blueprint)
     - [create_classifier](#create_classifier)
@@ -45,6 +46,7 @@ type annotations stubs module
     - [create_schema](#create_schema)
     - [create_script](#create_script)
     - [create_security_configuration](#create_security_configuration)
+    - [create_session](#create_session)
     - [create_table](#create_table)
     - [create_trigger](#create_trigger)
     - [create_user_defined_function](#create_user_defined_function)
@@ -66,6 +68,7 @@ type annotations stubs module
     - [delete_schema](#delete_schema)
     - [delete_schema_versions](#delete_schema_versions)
     - [delete_security_configuration](#delete_security_configuration)
+    - [delete_session](#delete_session)
     - [delete_table](#delete_table)
     - [delete_table_version](#delete_table_version)
     - [delete_trigger](#delete_trigger)
@@ -114,6 +117,8 @@ type annotations stubs module
     - [get_schema_versions_diff](#get_schema_versions_diff)
     - [get_security_configuration](#get_security_configuration)
     - [get_security_configurations](#get_security_configurations)
+    - [get_session](#get_session)
+    - [get_statement](#get_statement)
     - [get_table](#get_table)
     - [get_table_version](#get_table_version)
     - [get_table_versions](#get_table_versions)
@@ -139,6 +144,8 @@ type annotations stubs module
     - [list_registries](#list_registries)
     - [list_schema_versions](#list_schema_versions)
     - [list_schemas](#list_schemas)
+    - [list_sessions](#list_sessions)
+    - [list_statements](#list_statements)
     - [list_triggers](#list_triggers)
     - [list_workflows](#list_workflows)
     - [put_data_catalog_encryption_settings](#put_data_catalog_encryption_settings)
@@ -150,6 +157,7 @@ type annotations stubs module
     - [remove_schema_version_metadata](#remove_schema_version_metadata)
     - [reset_job_bookmark](#reset_job_bookmark)
     - [resume_workflow_run](#resume_workflow_run)
+    - [run_statement](#run_statement)
     - [search_tables](#search_tables)
     - [start_blueprint_run](#start_blueprint_run)
     - [start_crawler](#start_crawler)
@@ -163,6 +171,7 @@ type annotations stubs module
     - [start_workflow_run](#start_workflow_run)
     - [stop_crawler](#stop_crawler)
     - [stop_crawler_schedule](#stop_crawler_schedule)
+    - [stop_session](#stop_session)
     - [stop_trigger](#stop_trigger)
     - [stop_workflow_run](#stop_workflow_run)
     - [tag_resource](#tag_resource)
@@ -236,6 +245,7 @@ Exceptions:
 - `Exceptions.GlueEncryptionException`
 - `Exceptions.IdempotentParameterMismatchException`
 - `Exceptions.IllegalBlueprintStateException`
+- `Exceptions.IllegalSessionStateException`
 - `Exceptions.IllegalWorkflowStateException`
 - `Exceptions.InternalServiceException`
 - `Exceptions.InvalidInputException`
@@ -633,6 +643,28 @@ Keyword-only arguments:
 
 Returns
 [CancelMLTaskRunResponseTypeDef](./type_defs.md#cancelmltaskrunresponsetypedef).
+
+<a id="cancel\_statement"></a>
+
+### cancel_statement
+
+Cancels the statement..
+
+Type annotations for `boto3.client("glue").cancel_statement` method.
+
+Boto3 documentation:
+[Glue.Client.cancel_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.cancel_statement)
+
+Arguments mapping described in
+[CancelStatementRequestRequestTypeDef](./type_defs.md#cancelstatementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SessionId`: `str` *(required)*
+- `Id`: `int` *(required)*
+- `RequestOrigin`: `str`
+
+Returns `Dict`\[`str`, `Any`\].
 
 <a id="check\_schema\_version\_validity"></a>
 
@@ -1053,6 +1085,43 @@ Keyword-only arguments:
 
 Returns
 [CreateSecurityConfigurationResponseTypeDef](./type_defs.md#createsecurityconfigurationresponsetypedef).
+
+<a id="create\_session"></a>
+
+### create_session
+
+Creates a new session.
+
+Type annotations for `boto3.client("glue").create_session` method.
+
+Boto3 documentation:
+[Glue.Client.create_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.create_session)
+
+Arguments mapping described in
+[CreateSessionRequestRequestTypeDef](./type_defs.md#createsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `Role`: `str` *(required)*
+- `Command`: [SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef)
+  *(required)*
+- `Description`: `str`
+- `Timeout`: `int`
+- `IdleTimeout`: `int`
+- `DefaultArguments`: `Mapping`\[`str`, `str`\]
+- `Connections`:
+  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
+- `MaxCapacity`: `float`
+- `NumberOfWorkers`: `int`
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
+- `SecurityConfiguration`: `str`
+- `GlueVersion`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `RequestOrigin`: `str`
+
+Returns
+[CreateSessionResponseTypeDef](./type_defs.md#createsessionresponsetypedef).
 
 <a id="create\_table"></a>
 
@@ -1529,6 +1598,28 @@ Keyword-only arguments:
 - `Name`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="delete\_session"></a>
+
+### delete_session
+
+Deletes the session.
+
+Type annotations for `boto3.client("glue").delete_session` method.
+
+Boto3 documentation:
+[Glue.Client.delete_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.delete_session)
+
+Arguments mapping described in
+[DeleteSessionRequestRequestTypeDef](./type_defs.md#deletesessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `RequestOrigin`: `str`
+
+Returns
+[DeleteSessionResponseTypeDef](./type_defs.md#deletesessionresponsetypedef).
 
 <a id="delete\_table"></a>
 
@@ -2632,6 +2723,50 @@ Keyword-only arguments:
 Returns
 [GetSecurityConfigurationsResponseTypeDef](./type_defs.md#getsecurityconfigurationsresponsetypedef).
 
+<a id="get\_session"></a>
+
+### get_session
+
+Retrieves the session.
+
+Type annotations for `boto3.client("glue").get_session` method.
+
+Boto3 documentation:
+[Glue.Client.get_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_session)
+
+Arguments mapping described in
+[GetSessionRequestRequestTypeDef](./type_defs.md#getsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `RequestOrigin`: `str`
+
+Returns [GetSessionResponseTypeDef](./type_defs.md#getsessionresponsetypedef).
+
+<a id="get\_statement"></a>
+
+### get_statement
+
+Retrieves the statement.
+
+Type annotations for `boto3.client("glue").get_statement` method.
+
+Boto3 documentation:
+[Glue.Client.get_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.get_statement)
+
+Arguments mapping described in
+[GetStatementRequestRequestTypeDef](./type_defs.md#getstatementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SessionId`: `str` *(required)*
+- `Id`: `int` *(required)*
+- `RequestOrigin`: `str`
+
+Returns
+[GetStatementResponseTypeDef](./type_defs.md#getstatementresponsetypedef).
+
 <a id="get\_table"></a>
 
 ### get_table
@@ -3239,6 +3374,53 @@ Keyword-only arguments:
 Returns
 [ListSchemasResponseTypeDef](./type_defs.md#listschemasresponsetypedef).
 
+<a id="list\_sessions"></a>
+
+### list_sessions
+
+Retrieve a session..
+
+Type annotations for `boto3.client("glue").list_sessions` method.
+
+Boto3 documentation:
+[Glue.Client.list_sessions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_sessions)
+
+Arguments mapping described in
+[ListSessionsRequestRequestTypeDef](./type_defs.md#listsessionsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `RequestOrigin`: `str`
+
+Returns
+[ListSessionsResponseTypeDef](./type_defs.md#listsessionsresponsetypedef).
+
+<a id="list\_statements"></a>
+
+### list_statements
+
+Lists statements for the session.
+
+Type annotations for `boto3.client("glue").list_statements` method.
+
+Boto3 documentation:
+[Glue.Client.list_statements](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.list_statements)
+
+Arguments mapping described in
+[ListStatementsRequestRequestTypeDef](./type_defs.md#liststatementsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SessionId`: `str` *(required)*
+- `RequestOrigin`: `str`
+- `NextToken`: `str`
+
+Returns
+[ListStatementsResponseTypeDef](./type_defs.md#liststatementsresponsetypedef).
+
 <a id="list\_triggers"></a>
 
 ### list_triggers
@@ -3511,6 +3693,29 @@ Keyword-only arguments:
 
 Returns
 [ResumeWorkflowRunResponseTypeDef](./type_defs.md#resumeworkflowrunresponsetypedef).
+
+<a id="run\_statement"></a>
+
+### run_statement
+
+Executes the statement.
+
+Type annotations for `boto3.client("glue").run_statement` method.
+
+Boto3 documentation:
+[Glue.Client.run_statement](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.run_statement)
+
+Arguments mapping described in
+[RunStatementRequestRequestTypeDef](./type_defs.md#runstatementrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SessionId`: `str` *(required)*
+- `Code`: `str` *(required)*
+- `RequestOrigin`: `str`
+
+Returns
+[RunStatementResponseTypeDef](./type_defs.md#runstatementresponsetypedef).
 
 <a id="search\_tables"></a>
 
@@ -3816,6 +4021,28 @@ Keyword-only arguments:
 - `CrawlerName`: `str` *(required)*
 
 Returns `Dict`\[`str`, `Any`\].
+
+<a id="stop\_session"></a>
+
+### stop_session
+
+Stops the session.
+
+Type annotations for `boto3.client("glue").stop_session` method.
+
+Boto3 documentation:
+[Glue.Client.stop_session](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glue.html#Glue.Client.stop_session)
+
+Arguments mapping described in
+[StopSessionRequestRequestTypeDef](./type_defs.md#stopsessionrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `Id`: `str` *(required)*
+- `RequestOrigin`: `str`
+
+Returns
+[StopSessionResponseTypeDef](./type_defs.md#stopsessionresponsetypedef).
 
 <a id="stop\_trigger"></a>
 

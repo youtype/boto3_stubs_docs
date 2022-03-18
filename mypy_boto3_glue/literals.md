@@ -68,8 +68,10 @@ type annotations stubs module
   - [SchemaDiffTypeType](#schemadifftypetype)
   - [SchemaStatusType](#schemastatustype)
   - [SchemaVersionStatusType](#schemaversionstatustype)
+  - [SessionStatusType](#sessionstatustype)
   - [SortDirectionTypeType](#sortdirectiontypetype)
   - [SortType](#sorttype)
+  - [StatementStateType](#statementstatetype)
   - [TaskRunSortColumnTypeType](#taskrunsortcolumntypetype)
   - [TaskStatusTypeType](#taskstatustypetype)
   - [TaskTypeType](#tasktypetype)
@@ -905,6 +907,23 @@ Values:
 - `FAILURE`
 - `PENDING`
 
+<a id="sessionstatustype"></a>
+
+## SessionStatusType
+
+```python
+from mypy_boto3_glue.literals import SessionStatusType
+```
+
+Values:
+
+- `FAILED`
+- `PROVISIONING`
+- `READY`
+- `STOPPED`
+- `STOPPING`
+- `TIMEOUT`
+
 <a id="sortdirectiontypetype"></a>
 
 ## SortDirectionTypeType
@@ -930,6 +949,23 @@ Values:
 
 - `ASC`
 - `DESC`
+
+<a id="statementstatetype"></a>
+
+## StatementStateType
+
+```python
+from mypy_boto3_glue.literals import StatementStateType
+```
+
+Values:
+
+- `AVAILABLE`
+- `CANCELLED`
+- `CANCELLING`
+- `ERROR`
+- `RUNNING`
+- `WAITING`
 
 <a id="taskrunsortcolumntypetype"></a>
 

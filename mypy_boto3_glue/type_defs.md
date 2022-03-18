@@ -52,6 +52,7 @@ type annotations stubs module
   - [BooleanColumnStatisticsDataTypeDef](#booleancolumnstatisticsdatatypedef)
   - [CancelMLTaskRunRequestRequestTypeDef](#cancelmltaskrunrequestrequesttypedef)
   - [CancelMLTaskRunResponseTypeDef](#cancelmltaskrunresponsetypedef)
+  - [CancelStatementRequestRequestTypeDef](#cancelstatementrequestrequesttypedef)
   - [CatalogEntryTypeDef](#catalogentrytypedef)
   - [CatalogImportStatusTypeDef](#catalogimportstatustypedef)
   - [CatalogTargetTypeDef](#catalogtargettypedef)
@@ -105,6 +106,8 @@ type annotations stubs module
   - [CreateScriptResponseTypeDef](#createscriptresponsetypedef)
   - [CreateSecurityConfigurationRequestRequestTypeDef](#createsecurityconfigurationrequestrequesttypedef)
   - [CreateSecurityConfigurationResponseTypeDef](#createsecurityconfigurationresponsetypedef)
+  - [CreateSessionRequestRequestTypeDef](#createsessionrequestrequesttypedef)
+  - [CreateSessionResponseTypeDef](#createsessionresponsetypedef)
   - [CreateTableRequestRequestTypeDef](#createtablerequestrequesttypedef)
   - [CreateTriggerRequestRequestTypeDef](#createtriggerrequestrequesttypedef)
   - [CreateTriggerResponseTypeDef](#createtriggerresponsetypedef)
@@ -144,6 +147,8 @@ type annotations stubs module
   - [DeleteSchemaVersionsInputRequestTypeDef](#deleteschemaversionsinputrequesttypedef)
   - [DeleteSchemaVersionsResponseTypeDef](#deleteschemaversionsresponsetypedef)
   - [DeleteSecurityConfigurationRequestRequestTypeDef](#deletesecurityconfigurationrequestrequesttypedef)
+  - [DeleteSessionRequestRequestTypeDef](#deletesessionrequestrequesttypedef)
+  - [DeleteSessionResponseTypeDef](#deletesessionresponsetypedef)
   - [DeleteTableRequestRequestTypeDef](#deletetablerequestrequesttypedef)
   - [DeleteTableVersionRequestRequestTypeDef](#deletetableversionrequestrequesttypedef)
   - [DeleteTriggerRequestRequestTypeDef](#deletetriggerrequestrequesttypedef)
@@ -253,6 +258,10 @@ type annotations stubs module
   - [GetSecurityConfigurationResponseTypeDef](#getsecurityconfigurationresponsetypedef)
   - [GetSecurityConfigurationsRequestRequestTypeDef](#getsecurityconfigurationsrequestrequesttypedef)
   - [GetSecurityConfigurationsResponseTypeDef](#getsecurityconfigurationsresponsetypedef)
+  - [GetSessionRequestRequestTypeDef](#getsessionrequestrequesttypedef)
+  - [GetSessionResponseTypeDef](#getsessionresponsetypedef)
+  - [GetStatementRequestRequestTypeDef](#getstatementrequestrequesttypedef)
+  - [GetStatementResponseTypeDef](#getstatementresponsetypedef)
   - [GetTableRequestRequestTypeDef](#gettablerequestrequesttypedef)
   - [GetTableResponseTypeDef](#gettableresponsetypedef)
   - [GetTableVersionRequestRequestTypeDef](#gettableversionrequestrequesttypedef)
@@ -321,6 +330,10 @@ type annotations stubs module
   - [ListSchemaVersionsResponseTypeDef](#listschemaversionsresponsetypedef)
   - [ListSchemasInputRequestTypeDef](#listschemasinputrequesttypedef)
   - [ListSchemasResponseTypeDef](#listschemasresponsetypedef)
+  - [ListSessionsRequestRequestTypeDef](#listsessionsrequestrequesttypedef)
+  - [ListSessionsResponseTypeDef](#listsessionsresponsetypedef)
+  - [ListStatementsRequestRequestTypeDef](#liststatementsrequestrequesttypedef)
+  - [ListStatementsResponseTypeDef](#liststatementsresponsetypedef)
   - [ListTriggersRequestRequestTypeDef](#listtriggersrequestrequesttypedef)
   - [ListTriggersResponseTypeDef](#listtriggersresponsetypedef)
   - [ListWorkflowsRequestRequestTypeDef](#listworkflowsrequestrequesttypedef)
@@ -370,6 +383,8 @@ type annotations stubs module
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResumeWorkflowRunRequestRequestTypeDef](#resumeworkflowrunrequestrequesttypedef)
   - [ResumeWorkflowRunResponseTypeDef](#resumeworkflowrunresponsetypedef)
+  - [RunStatementRequestRequestTypeDef](#runstatementrequestrequesttypedef)
+  - [RunStatementResponseTypeDef](#runstatementresponsetypedef)
   - [S3EncryptionTypeDef](#s3encryptiontypedef)
   - [S3TargetTypeDef](#s3targettypedef)
   - [ScheduleTypeDef](#scheduletypedef)
@@ -386,6 +401,8 @@ type annotations stubs module
   - [SecurityConfigurationTypeDef](#securityconfigurationtypedef)
   - [SegmentTypeDef](#segmenttypedef)
   - [SerDeInfoTypeDef](#serdeinfotypedef)
+  - [SessionCommandTypeDef](#sessioncommandtypedef)
+  - [SessionTypeDef](#sessiontypedef)
   - [SkewedInfoTypeDef](#skewedinfotypedef)
   - [SortCriterionTypeDef](#sortcriteriontypedef)
   - [StartBlueprintRunRequestRequestTypeDef](#startblueprintrunrequestrequesttypedef)
@@ -407,8 +424,13 @@ type annotations stubs module
   - [StartWorkflowRunRequestRequestTypeDef](#startworkflowrunrequestrequesttypedef)
   - [StartWorkflowRunResponseTypeDef](#startworkflowrunresponsetypedef)
   - [StartingEventBatchConditionTypeDef](#startingeventbatchconditiontypedef)
+  - [StatementOutputDataTypeDef](#statementoutputdatatypedef)
+  - [StatementOutputTypeDef](#statementoutputtypedef)
+  - [StatementTypeDef](#statementtypedef)
   - [StopCrawlerRequestRequestTypeDef](#stopcrawlerrequestrequesttypedef)
   - [StopCrawlerScheduleRequestRequestTypeDef](#stopcrawlerschedulerequestrequesttypedef)
+  - [StopSessionRequestRequestTypeDef](#stopsessionrequestrequesttypedef)
+  - [StopSessionResponseTypeDef](#stopsessionresponsetypedef)
   - [StopTriggerRequestRequestTypeDef](#stoptriggerrequestrequesttypedef)
   - [StopTriggerResponseTypeDef](#stoptriggerresponsetypedef)
   - [StopWorkflowRunRequestRequestTypeDef](#stopworkflowrunrequestrequesttypedef)
@@ -502,6 +524,8 @@ from mypy_boto3_glue.type_defs import AuditContextTypeDef
 Optional fields:
 
 - `AdditionalAuditContext`: `str`
+- `RequestedColumns`: `Sequence`\[`str`\]
+- `AllColumnsRequested`: `bool`
 
 <a id="backfillerrortypedef"></a>
 
@@ -1119,6 +1143,23 @@ Required fields:
 - `Status`: [TaskStatusTypeType](./literals.md#taskstatustypetype)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="cancelstatementrequestrequesttypedef"></a>
+
+## CancelStatementRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import CancelStatementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SessionId`: `str`
+- `Id`: `int`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
 
 <a id="catalogentrytypedef"></a>
 
@@ -2107,6 +2148,50 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="createsessionrequestrequesttypedef"></a>
+
+## CreateSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import CreateSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `Role`: `str`
+- `Command`: [SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef)
+
+Optional fields:
+
+- `Description`: `str`
+- `Timeout`: `int`
+- `IdleTimeout`: `int`
+- `DefaultArguments`: `Mapping`\[`str`, `str`\]
+- `Connections`:
+  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
+- `MaxCapacity`: `float`
+- `NumberOfWorkers`: `int`
+- `WorkerType`: [WorkerTypeType](./literals.md#workertypetype)
+- `SecurityConfiguration`: `str`
+- `GlueVersion`: `str`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `RequestOrigin`: `str`
+
+<a id="createsessionresponsetypedef"></a>
+
+## CreateSessionResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import CreateSessionResponseTypeDef
+```
+
+Required fields:
+
+- `Session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="createtablerequestrequesttypedef"></a>
 
 ## CreateTableRequestRequestTypeDef
@@ -2720,6 +2805,36 @@ from mypy_boto3_glue.type_defs import DeleteSecurityConfigurationRequestRequestT
 Required fields:
 
 - `Name`: `str`
+
+<a id="deletesessionrequestrequesttypedef"></a>
+
+## DeleteSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import DeleteSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
+
+<a id="deletesessionresponsetypedef"></a>
+
+## DeleteSessionResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import DeleteSessionResponseTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 <a id="deletetablerequestrequesttypedef"></a>
 
@@ -4431,6 +4546,67 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getsessionrequestrequesttypedef"></a>
+
+## GetSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
+
+<a id="getsessionresponsetypedef"></a>
+
+## GetSessionResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetSessionResponseTypeDef
+```
+
+Required fields:
+
+- `Session`: [SessionTypeDef](./type_defs.md#sessiontypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getstatementrequestrequesttypedef"></a>
+
+## GetStatementRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetStatementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SessionId`: `str`
+- `Id`: `int`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
+
+<a id="getstatementresponsetypedef"></a>
+
+## GetStatementResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import GetStatementResponseTypeDef
+```
+
+Required fields:
+
+- `Statement`: [StatementTypeDef](./type_defs.md#statementtypedef)
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="gettablerequestrequesttypedef"></a>
 
 ## GetTableRequestRequestTypeDef
@@ -5546,6 +5722,69 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listsessionsrequestrequesttypedef"></a>
+
+## ListSessionsRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import ListSessionsRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+- `Tags`: `Mapping`\[`str`, `str`\]
+- `RequestOrigin`: `str`
+
+<a id="listsessionsresponsetypedef"></a>
+
+## ListSessionsResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import ListSessionsResponseTypeDef
+```
+
+Required fields:
+
+- `Ids`: `List`\[`str`\]
+- `Sessions`: `List`\[[SessionTypeDef](./type_defs.md#sessiontypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="liststatementsrequestrequesttypedef"></a>
+
+## ListStatementsRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import ListStatementsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SessionId`: `str`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
+- `NextToken`: `str`
+
+<a id="liststatementsresponsetypedef"></a>
+
+## ListStatementsResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import ListStatementsResponseTypeDef
+```
+
+Required fields:
+
+- `Statements`: `List`\[[StatementTypeDef](./type_defs.md#statementtypedef)\]
+- `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="listtriggersrequestrequesttypedef"></a>
 
 ## ListTriggersRequestRequestTypeDef
@@ -6329,6 +6568,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="runstatementrequestrequesttypedef"></a>
+
+## RunStatementRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import RunStatementRequestRequestTypeDef
+```
+
+Required fields:
+
+- `SessionId`: `str`
+- `Code`: `str`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
+
+<a id="runstatementresponsetypedef"></a>
+
+## RunStatementResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import RunStatementResponseTypeDef
+```
+
+Required fields:
+
+- `Id`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="s3encryptiontypedef"></a>
 
 ## S3EncryptionTypeDef
@@ -6564,6 +6834,44 @@ Optional fields:
 - `Name`: `str`
 - `SerializationLibrary`: `str`
 - `Parameters`: `Mapping`\[`str`, `str`\]
+
+<a id="sessioncommandtypedef"></a>
+
+## SessionCommandTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import SessionCommandTypeDef
+```
+
+Optional fields:
+
+- `Name`: `str`
+- `PythonVersion`: `str`
+
+<a id="sessiontypedef"></a>
+
+## SessionTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import SessionTypeDef
+```
+
+Optional fields:
+
+- `Id`: `str`
+- `CreatedOn`: `datetime`
+- `Status`: [SessionStatusType](./literals.md#sessionstatustype)
+- `ErrorMessage`: `str`
+- `Description`: `str`
+- `Role`: `str`
+- `Command`: [SessionCommandTypeDef](./type_defs.md#sessioncommandtypedef)
+- `DefaultArguments`: `Dict`\[`str`, `str`\]
+- `Connections`:
+  [ConnectionsListTypeDef](./type_defs.md#connectionslisttypedef)
+- `Progress`: `float`
+- `MaxCapacity`: `float`
+- `SecurityConfiguration`: `str`
+- `GlueVersion`: `str`
 
 <a id="skewedinfotypedef"></a>
 
@@ -6866,6 +7174,54 @@ Optional fields:
 - `BatchSize`: `int`
 - `BatchWindow`: `int`
 
+<a id="statementoutputdatatypedef"></a>
+
+## StatementOutputDataTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StatementOutputDataTypeDef
+```
+
+Optional fields:
+
+- `TextPlain`: `str`
+
+<a id="statementoutputtypedef"></a>
+
+## StatementOutputTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StatementOutputTypeDef
+```
+
+Optional fields:
+
+- `Data`:
+  [StatementOutputDataTypeDef](./type_defs.md#statementoutputdatatypedef)
+- `ExecutionCount`: `int`
+- `Status`: [StatementStateType](./literals.md#statementstatetype)
+- `ErrorName`: `str`
+- `ErrorValue`: `str`
+- `Traceback`: `List`\[`str`\]
+
+<a id="statementtypedef"></a>
+
+## StatementTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StatementTypeDef
+```
+
+Optional fields:
+
+- `Id`: `int`
+- `Code`: `str`
+- `State`: [StatementStateType](./literals.md#statementstatetype)
+- `Output`: [StatementOutputTypeDef](./type_defs.md#statementoutputtypedef)
+- `Progress`: `float`
+- `StartedOn`: `int`
+- `CompletedOn`: `int`
+
 <a id="stopcrawlerrequestrequesttypedef"></a>
 
 ## StopCrawlerRequestRequestTypeDef
@@ -6889,6 +7245,36 @@ from mypy_boto3_glue.type_defs import StopCrawlerScheduleRequestRequestTypeDef
 Required fields:
 
 - `CrawlerName`: `str`
+
+<a id="stopsessionrequestrequesttypedef"></a>
+
+## StopSessionRequestRequestTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StopSessionRequestRequestTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+
+Optional fields:
+
+- `RequestOrigin`: `str`
+
+<a id="stopsessionresponsetypedef"></a>
+
+## StopSessionResponseTypeDef
+
+```python
+from mypy_boto3_glue.type_defs import StopSessionResponseTypeDef
+```
+
+Required fields:
+
+- `Id`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
 <a id="stoptriggerrequestrequesttypedef"></a>
 
