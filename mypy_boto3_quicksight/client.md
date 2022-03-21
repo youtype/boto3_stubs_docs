@@ -63,6 +63,7 @@ type annotations stubs module
     - [describe_folder_permissions](#describe_folder_permissions)
     - [describe_folder_resolved_permissions](#describe_folder_resolved_permissions)
     - [describe_group](#describe_group)
+    - [describe_group_membership](#describe_group_membership)
     - [describe_iam_policy_assignment](#describe_iam_policy_assignment)
     - [describe_ingestion](#describe_ingestion)
     - [describe_ip_restriction](#describe_ip_restriction)
@@ -106,6 +107,7 @@ type annotations stubs module
     - [search_analyses](#search_analyses)
     - [search_dashboards](#search_dashboards)
     - [search_folders](#search_folders)
+    - [search_groups](#search_groups)
     - [tag_resource](#tag_resource)
     - [untag_resource](#untag_resource)
     - [update_account_customization](#update_account_customization)
@@ -1427,6 +1429,32 @@ Keyword-only arguments:
 Returns
 [DescribeGroupResponseTypeDef](./type_defs.md#describegroupresponsetypedef).
 
+<a id="describe\_group\_membership"></a>
+
+### describe_group_membership
+
+Use the `DescribeGroupMembership` operation to determine if a user is a member
+of the specified group.
+
+Type annotations for `boto3.client("quicksight").describe_group_membership`
+method.
+
+Boto3 documentation:
+[QuickSight.Client.describe_group_membership](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.describe_group_membership)
+
+Arguments mapping described in
+[DescribeGroupMembershipRequestRequestTypeDef](./type_defs.md#describegroupmembershiprequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MemberName`: `str` *(required)*
+- `GroupName`: `str` *(required)*
+- `AwsAccountId`: `str` *(required)*
+- `Namespace`: `str` *(required)*
+
+Returns
+[DescribeGroupMembershipResponseTypeDef](./type_defs.md#describegroupmembershipresponsetypedef).
+
 <a id="describe\_iam\_policy\_assignment"></a>
 
 ### describe_iam_policy_assignment
@@ -2488,6 +2516,34 @@ Keyword-only arguments:
 
 Returns
 [SearchFoldersResponseTypeDef](./type_defs.md#searchfoldersresponsetypedef).
+
+<a id="search\_groups"></a>
+
+### search_groups
+
+Use the `SearchGroups` operation to search groups in a specified Amazon
+QuickSight namespace using the supplied filters.
+
+Type annotations for `boto3.client("quicksight").search_groups` method.
+
+Boto3 documentation:
+[QuickSight.Client.search_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/quicksight.html#QuickSight.Client.search_groups)
+
+Arguments mapping described in
+[SearchGroupsRequestRequestTypeDef](./type_defs.md#searchgroupsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AwsAccountId`: `str` *(required)*
+- `Namespace`: `str` *(required)*
+- `Filters`:
+  `Sequence`\[[GroupSearchFilterTypeDef](./type_defs.md#groupsearchfiltertypedef)\]
+  *(required)*
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[SearchGroupsResponseTypeDef](./type_defs.md#searchgroupsresponsetypedef).
 
 <a id="tag\_resource"></a>
 

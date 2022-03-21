@@ -18,6 +18,7 @@ type annotations stubs module
   - [AddFlowSourcesResponseTypeDef](#addflowsourcesresponsetypedef)
   - [AddFlowVpcInterfacesRequestRequestTypeDef](#addflowvpcinterfacesrequestrequesttypedef)
   - [AddFlowVpcInterfacesResponseTypeDef](#addflowvpcinterfacesresponsetypedef)
+  - [AddMaintenanceTypeDef](#addmaintenancetypedef)
   - [AddMediaStreamRequestTypeDef](#addmediastreamrequesttypedef)
   - [AddOutputRequestTypeDef](#addoutputrequesttypedef)
   - [CreateFlowRequestRequestTypeDef](#createflowrequestrequesttypedef)
@@ -59,6 +60,7 @@ type annotations stubs module
   - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [ListedEntitlementTypeDef](#listedentitlementtypedef)
   - [ListedFlowTypeDef](#listedflowtypedef)
+  - [MaintenanceTypeDef](#maintenancetypedef)
   - [MediaStreamAttributesRequestTypeDef](#mediastreamattributesrequesttypedef)
   - [MediaStreamAttributesTypeDef](#mediastreamattributestypedef)
   - [MediaStreamOutputConfigurationRequestTypeDef](#mediastreamoutputconfigurationrequesttypedef)
@@ -107,6 +109,7 @@ type annotations stubs module
   - [UpdateFlowResponseTypeDef](#updateflowresponsetypedef)
   - [UpdateFlowSourceRequestRequestTypeDef](#updateflowsourcerequestrequesttypedef)
   - [UpdateFlowSourceResponseTypeDef](#updateflowsourceresponsetypedef)
+  - [UpdateMaintenanceTypeDef](#updatemaintenancetypedef)
   - [VpcInterfaceAttachmentTypeDef](#vpcinterfaceattachmenttypedef)
   - [VpcInterfaceRequestTypeDef](#vpcinterfacerequesttypedef)
   - [VpcInterfaceTypeDef](#vpcinterfacetypedef)
@@ -230,6 +233,19 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="addmaintenancetypedef"></a>
+
+## AddMaintenanceTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import AddMaintenanceTypeDef
+```
+
+Required fields:
+
+- `MaintenanceDay`: [MaintenanceDayType](./literals.md#maintenancedaytype)
+- `MaintenanceStartHour`: `str`
+
 <a id="addmediastreamrequesttypedef"></a>
 
 ## AddMediaStreamRequestTypeDef
@@ -311,6 +327,7 @@ Optional fields:
   `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
 - `VpcInterfaces`:
   `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+- `Maintenance`: [AddMaintenanceTypeDef](./type_defs.md#addmaintenancetypedef)
 
 <a id="createflowresponsetypedef"></a>
 
@@ -579,6 +596,7 @@ Optional fields:
 - `Sources`: `List`\[[SourceTypeDef](./type_defs.md#sourcetypedef)\]
 - `VpcInterfaces`:
   `List`\[[VpcInterfaceTypeDef](./type_defs.md#vpcinterfacetypedef)\]
+- `Maintenance`: [MaintenanceTypeDef](./type_defs.md#maintenancetypedef)
 
 <a id="fmtprequesttypedef"></a>
 
@@ -892,6 +910,25 @@ Required fields:
 - `Name`: `str`
 - `SourceType`: [SourceTypeType](./literals.md#sourcetypetype)
 - `Status`: [StatusType](./literals.md#statustype)
+
+Optional fields:
+
+- `Maintenance`: [MaintenanceTypeDef](./type_defs.md#maintenancetypedef)
+
+<a id="maintenancetypedef"></a>
+
+## MaintenanceTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import MaintenanceTypeDef
+```
+
+Optional fields:
+
+- `MaintenanceDay`: [MaintenanceDayType](./literals.md#maintenancedaytype)
+- `MaintenanceDeadline`: `str`
+- `MaintenanceScheduledDate`: `str`
+- `MaintenanceStartHour`: `str`
 
 <a id="mediastreamattributesrequesttypedef"></a>
 
@@ -1677,6 +1714,8 @@ Optional fields:
 
 - `SourceFailoverConfig`:
   [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
+- `Maintenance`:
+  [UpdateMaintenanceTypeDef](./type_defs.md#updatemaintenancetypedef)
 
 <a id="updateflowresponsetypedef"></a>
 
@@ -1739,6 +1778,20 @@ Required fields:
 - `Source`: [SourceTypeDef](./type_defs.md#sourcetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="updatemaintenancetypedef"></a>
+
+## UpdateMaintenanceTypeDef
+
+```python
+from mypy_boto3_mediaconnect.type_defs import UpdateMaintenanceTypeDef
+```
+
+Optional fields:
+
+- `MaintenanceDay`: [MaintenanceDayType](./literals.md#maintenancedaytype)
+- `MaintenanceScheduledDate`: `str`
+- `MaintenanceStartHour`: `str`
 
 <a id="vpcinterfaceattachmenttypedef"></a>
 

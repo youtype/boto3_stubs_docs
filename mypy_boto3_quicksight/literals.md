@@ -30,6 +30,8 @@ type annotations stubs module
   - [FolderTypeType](#foldertypetype)
   - [GeoSpatialCountryCodeType](#geospatialcountrycodetype)
   - [GeoSpatialDataRoleType](#geospatialdataroletype)
+  - [GroupFilterAttributeType](#groupfilterattributetype)
+  - [GroupFilterOperatorType](#groupfilteroperatortype)
   - [IdentityStoreType](#identitystoretype)
   - [IdentityTypeType](#identitytypetype)
   - [IngestionErrorTypeType](#ingestionerrortypetype)
@@ -381,6 +383,30 @@ Values:
 - `LONGITUDE`
 - `POSTCODE`
 - `STATE`
+
+<a id="groupfilterattributetype"></a>
+
+## GroupFilterAttributeType
+
+```python
+from mypy_boto3_quicksight.literals import GroupFilterAttributeType
+```
+
+Values:
+
+- `GROUP_NAME`
+
+<a id="groupfilteroperatortype"></a>
+
+## GroupFilterOperatorType
+
+```python
+from mypy_boto3_quicksight.literals import GroupFilterOperatorType
+```
+
+Values:
+
+- `StartsWith`
 
 <a id="identitystoretype"></a>
 

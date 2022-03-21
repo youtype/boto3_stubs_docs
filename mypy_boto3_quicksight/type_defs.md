@@ -157,6 +157,8 @@ type annotations stubs module
   - [DescribeFolderResolvedPermissionsRequestRequestTypeDef](#describefolderresolvedpermissionsrequestrequesttypedef)
   - [DescribeFolderResolvedPermissionsResponseTypeDef](#describefolderresolvedpermissionsresponsetypedef)
   - [DescribeFolderResponseTypeDef](#describefolderresponsetypedef)
+  - [DescribeGroupMembershipRequestRequestTypeDef](#describegroupmembershiprequestrequesttypedef)
+  - [DescribeGroupMembershipResponseTypeDef](#describegroupmembershipresponsetypedef)
   - [DescribeGroupRequestRequestTypeDef](#describegrouprequestrequesttypedef)
   - [DescribeGroupResponseTypeDef](#describegroupresponsetypedef)
   - [DescribeIAMPolicyAssignmentRequestRequestTypeDef](#describeiampolicyassignmentrequestrequesttypedef)
@@ -200,6 +202,7 @@ type annotations stubs module
   - [GetSessionEmbedUrlRequestRequestTypeDef](#getsessionembedurlrequestrequesttypedef)
   - [GetSessionEmbedUrlResponseTypeDef](#getsessionembedurlresponsetypedef)
   - [GroupMemberTypeDef](#groupmembertypedef)
+  - [GroupSearchFilterTypeDef](#groupsearchfiltertypedef)
   - [GroupTypeDef](#grouptypedef)
   - [GutterStyleTypeDef](#gutterstyletypedef)
   - [IAMPolicyAssignmentSummaryTypeDef](#iampolicyassignmentsummarytypedef)
@@ -299,6 +302,8 @@ type annotations stubs module
   - [SearchDashboardsResponseTypeDef](#searchdashboardsresponsetypedef)
   - [SearchFoldersRequestRequestTypeDef](#searchfoldersrequestrequesttypedef)
   - [SearchFoldersResponseTypeDef](#searchfoldersresponsetypedef)
+  - [SearchGroupsRequestRequestTypeDef](#searchgroupsrequestrequesttypedef)
+  - [SearchGroupsResponseTypeDef](#searchgroupsresponsetypedef)
   - [ServiceNowParametersTypeDef](#servicenowparameterstypedef)
   - [SessionTagTypeDef](#sessiontagtypedef)
   - [SheetControlsOptionTypeDef](#sheetcontrolsoptiontypedef)
@@ -2833,6 +2838,37 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="describegroupmembershiprequestrequesttypedef"></a>
+
+## DescribeGroupMembershipRequestRequestTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeGroupMembershipRequestRequestTypeDef
+```
+
+Required fields:
+
+- `MemberName`: `str`
+- `GroupName`: `str`
+- `AwsAccountId`: `str`
+- `Namespace`: `str`
+
+<a id="describegroupmembershipresponsetypedef"></a>
+
+## DescribeGroupMembershipResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import DescribeGroupMembershipResponseTypeDef
+```
+
+Required fields:
+
+- `GroupMember`: [GroupMemberTypeDef](./type_defs.md#groupmembertypedef)
+- `RequestId`: `str`
+- `Status`: `int`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="describegrouprequestrequesttypedef"></a>
 
 ## DescribeGroupRequestRequestTypeDef
@@ -3510,6 +3546,22 @@ Optional fields:
 
 - `Arn`: `str`
 - `MemberName`: `str`
+
+<a id="groupsearchfiltertypedef"></a>
+
+## GroupSearchFilterTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import GroupSearchFilterTypeDef
+```
+
+Required fields:
+
+- `Operator`: `Literal['StartsWith']` (see
+  [GroupFilterOperatorType](./literals.md#groupfilteroperatortype))
+- `Name`: `Literal['GROUP_NAME']` (see
+  [GroupFilterAttributeType](./literals.md#groupfilterattributetype))
+- `Value`: `str`
 
 <a id="grouptypedef"></a>
 
@@ -5150,6 +5202,43 @@ Required fields:
   `List`\[[FolderSummaryTypeDef](./type_defs.md#foldersummarytypedef)\]
 - `NextToken`: `str`
 - `RequestId`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="searchgroupsrequestrequesttypedef"></a>
+
+## SearchGroupsRequestRequestTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import SearchGroupsRequestRequestTypeDef
+```
+
+Required fields:
+
+- `AwsAccountId`: `str`
+- `Namespace`: `str`
+- `Filters`:
+  `Sequence`\[[GroupSearchFilterTypeDef](./type_defs.md#groupsearchfiltertypedef)\]
+
+Optional fields:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+<a id="searchgroupsresponsetypedef"></a>
+
+## SearchGroupsResponseTypeDef
+
+```python
+from mypy_boto3_quicksight.type_defs import SearchGroupsResponseTypeDef
+```
+
+Required fields:
+
+- `GroupList`: `List`\[[GroupTypeDef](./type_defs.md#grouptypedef)\]
+- `NextToken`: `str`
+- `RequestId`: `str`
+- `Status`: `int`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 

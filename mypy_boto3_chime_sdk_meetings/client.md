@@ -180,6 +180,7 @@ Keyword-only arguments:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
 - `MeetingFeatures`:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
+- `PrimaryMeetingId`: `str`
 
 Returns
 [CreateMeetingResponseTypeDef](./type_defs.md#createmeetingresponsetypedef).
@@ -213,6 +214,7 @@ Keyword-only arguments:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
+- `PrimaryMeetingId`: `str`
 
 Returns
 [CreateMeetingWithAttendeesResponseTypeDef](./type_defs.md#createmeetingwithattendeesresponsetypedef).

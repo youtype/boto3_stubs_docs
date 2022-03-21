@@ -172,6 +172,7 @@ Optional fields:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
 - `MeetingFeatures`:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
+- `PrimaryMeetingId`: `str`
 
 <a id="createmeetingresponsetypedef"></a>
 
@@ -210,6 +211,7 @@ Optional fields:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
 - `NotificationsConfiguration`:
   [NotificationsConfigurationTypeDef](./type_defs.md#notificationsconfigurationtypedef)
+- `PrimaryMeetingId`: `str`
 
 <a id="createmeetingwithattendeesresponsetypedef"></a>
 
@@ -442,6 +444,7 @@ Optional fields:
   [MediaPlacementTypeDef](./type_defs.md#mediaplacementtypedef)
 - `MeetingFeatures`:
   [MeetingFeaturesConfigurationTypeDef](./type_defs.md#meetingfeaturesconfigurationtypedef)
+- `PrimaryMeetingId`: `str`
 
 <a id="notificationsconfigurationtypedef"></a>
 

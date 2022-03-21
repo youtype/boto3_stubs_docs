@@ -636,7 +636,7 @@ Returns
 
 ### list_resources
 
-Lists the resources that you added to a resource shares or the resources that
+Lists the resources that you added to a resource share or the resources that
 are shared with you.
 
 Type annotations for `boto3.client("ram").list_resources` method.

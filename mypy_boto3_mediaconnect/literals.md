@@ -25,6 +25,7 @@ type annotations stubs module
   - [ListFlowsPaginatorName](#listflowspaginatorname)
   - [ListOfferingsPaginatorName](#listofferingspaginatorname)
   - [ListReservationsPaginatorName](#listreservationspaginatorname)
+  - [MaintenanceDayType](#maintenancedaytype)
   - [MediaStreamTypeType](#mediastreamtypetype)
   - [NetworkInterfaceTypeType](#networkinterfacetypetype)
   - [PriceUnitsType](#priceunitstype)
@@ -238,6 +239,24 @@ from mypy_boto3_mediaconnect.literals import ListReservationsPaginatorName
 Values:
 
 - `list_reservations`
+
+<a id="maintenancedaytype"></a>
+
+## MaintenanceDayType
+
+```python
+from mypy_boto3_mediaconnect.literals import MaintenanceDayType
+```
+
+Values:
+
+- `Friday`
+- `Monday`
+- `Saturday`
+- `Sunday`
+- `Thursday`
+- `Tuesday`
+- `Wednesday`
 
 <a id="mediastreamtypetype"></a>
 

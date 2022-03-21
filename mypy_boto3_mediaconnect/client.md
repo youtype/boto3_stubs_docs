@@ -260,6 +260,7 @@ Keyword-only arguments:
   `Sequence`\[[SetSourceRequestTypeDef](./type_defs.md#setsourcerequesttypedef)\]
 - `VpcInterfaces`:
   `Sequence`\[[VpcInterfaceRequestTypeDef](./type_defs.md#vpcinterfacerequesttypedef)\]
+- `Maintenance`: [AddMaintenanceTypeDef](./type_defs.md#addmaintenancetypedef)
 
 Returns [CreateFlowResponseTypeDef](./type_defs.md#createflowresponsetypedef).
 
@@ -739,6 +740,8 @@ Keyword-only arguments:
 - `FlowArn`: `str` *(required)*
 - `SourceFailoverConfig`:
   [UpdateFailoverConfigTypeDef](./type_defs.md#updatefailoverconfigtypedef)
+- `Maintenance`:
+  [UpdateMaintenanceTypeDef](./type_defs.md#updatemaintenancetypedef)
 
 Returns [UpdateFlowResponseTypeDef](./type_defs.md#updateflowresponsetypedef).
 
