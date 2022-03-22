@@ -104,4 +104,4 @@ jobs:
         env:
           TOKEN: ${{ secrets.RTD_TOKEN }}
         run: |
-          curl -X POST -H "Authorization: Token ${TOKEN}" https://readthedocs.org/api/v3/projects/type-annotations-for-boto3/versions/latest/builds/
+          curl -X POST -H "Authorization: Token ${TOKEN}" https://readthedocs.org/api/v3/projects/boto3-stubs/versions/latest/builds/
