@@ -1,6 +1,6 @@
 site_name: "Type annotations for boto3"
 repo_url: "https://github.com/vemel/boto3_stubs_docs/"
-site_dir: "site"
+site_dir: "../site"
 docs_dir: "."
 
 theme:
