@@ -99,3 +99,9 @@ jobs:
           git tag ${BOTO3_VERSION}
           git push --tags
           git push
+      - name: Update Read the docs
+        if: steps.vars.outputs.version
+        env:
+          TOKEN: ${{ secrets.RTD_TOKEN }}
+        run: |
+          curl -X POST -H "Authorization: Token ${TOKEN}" https://readthedocs.org/api/v3/projects/type-annotations-for-boto3/versions/latest/builds/
