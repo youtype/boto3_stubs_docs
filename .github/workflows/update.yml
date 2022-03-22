@@ -1,4 +1,5 @@
 name: Update docs
+concurrency: update
 
 on:
   schedule:
