@@ -96,6 +96,8 @@ type annotations stubs module
   - [InstanceDetailsTypeDef](#instancedetailstypedef)
   - [ListCostCategoryDefinitionsRequestRequestTypeDef](#listcostcategorydefinitionsrequestrequesttypedef)
   - [ListCostCategoryDefinitionsResponseTypeDef](#listcostcategorydefinitionsresponsetypedef)
+  - [ListTagsForResourceRequestRequestTypeDef](#listtagsforresourcerequestrequesttypedef)
+  - [ListTagsForResourceResponseTypeDef](#listtagsforresourceresponsetypedef)
   - [MetricValueTypeDef](#metricvaluetypedef)
   - [ModifyRecommendationDetailTypeDef](#modifyrecommendationdetailtypedef)
   - [NetworkResourceUtilizationTypeDef](#networkresourceutilizationtypedef)
@@ -111,6 +113,7 @@ type annotations stubs module
   - [ReservationPurchaseRecommendationTypeDef](#reservationpurchaserecommendationtypedef)
   - [ReservationUtilizationGroupTypeDef](#reservationutilizationgrouptypedef)
   - [ResourceDetailsTypeDef](#resourcedetailstypedef)
+  - [ResourceTagTypeDef](#resourcetagtypedef)
   - [ResourceUtilizationTypeDef](#resourceutilizationtypedef)
   - [ResponseMetadataTypeDef](#responsemetadatatypedef)
   - [ResultByTimeTypeDef](#resultbytimetypedef)
@@ -135,10 +138,12 @@ type annotations stubs module
   - [ServiceSpecificationTypeDef](#servicespecificationtypedef)
   - [SortDefinitionTypeDef](#sortdefinitiontypedef)
   - [SubscriberTypeDef](#subscribertypedef)
+  - [TagResourceRequestRequestTypeDef](#tagresourcerequestrequesttypedef)
   - [TagValuesTypeDef](#tagvaluestypedef)
   - [TargetInstanceTypeDef](#targetinstancetypedef)
   - [TerminateRecommendationDetailTypeDef](#terminaterecommendationdetailtypedef)
   - [TotalImpactFilterTypeDef](#totalimpactfiltertypedef)
+  - [UntagResourceRequestRequestTypeDef](#untagresourcerequestrequesttypedef)
   - [UpdateAnomalyMonitorRequestRequestTypeDef](#updateanomalymonitorrequestrequesttypedef)
   - [UpdateAnomalyMonitorResponseTypeDef](#updateanomalymonitorresponsetypedef)
   - [UpdateAnomalySubscriptionRequestRequestTypeDef](#updateanomalysubscriptionrequestrequesttypedef)
@@ -471,6 +476,11 @@ Required fields:
 - `AnomalyMonitor`:
   [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef)
 
+Optional fields:
+
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+
 <a id="createanomalymonitorresponsetypedef"></a>
 
 ## CreateAnomalyMonitorResponseTypeDef
@@ -497,6 +507,11 @@ Required fields:
 
 - `AnomalySubscription`:
   [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
+
+Optional fields:
+
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 <a id="createanomalysubscriptionresponsetypedef"></a>
 
@@ -533,6 +548,8 @@ Optional fields:
 - `DefaultValue`: `str`
 - `SplitChargeRules`:
   `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 <a id="createcostcategorydefinitionresponsetypedef"></a>
 
@@ -1648,6 +1665,33 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="listtagsforresourcerequestrequesttypedef"></a>
+
+## ListTagsForResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import ListTagsForResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+
+<a id="listtagsforresourceresponsetypedef"></a>
+
+## ListTagsForResourceResponseTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import ListTagsForResourceResponseTypeDef
+```
+
+Required fields:
+
+- `ResourceTags`:
+  `List`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="metricvaluetypedef"></a>
 
 ## MetricValueTypeDef
@@ -1901,6 +1945,19 @@ Optional fields:
 
 - `EC2ResourceDetails`:
   [EC2ResourceDetailsTypeDef](./type_defs.md#ec2resourcedetailstypedef)
+
+<a id="resourcetagtypedef"></a>
+
+## ResourceTagTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import ResourceTagTypeDef
+```
+
+Required fields:
+
+- `Key`: `str`
+- `Value`: `str`
 
 <a id="resourceutilizationtypedef"></a>
 
@@ -2303,6 +2360,20 @@ Optional fields:
 - `Type`: [SubscriberTypeType](./literals.md#subscribertypetype)
 - `Status`: [SubscriberStatusType](./literals.md#subscriberstatustype)
 
+<a id="tagresourcerequestrequesttypedef"></a>
+
+## TagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import TagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+
 <a id="tagvaluestypedef"></a>
 
 ## TagValuesTypeDef
@@ -2368,6 +2439,19 @@ Required fields:
 Optional fields:
 
 - `EndValue`: `float`
+
+<a id="untagresourcerequestrequesttypedef"></a>
+
+## UntagResourceRequestRequestTypeDef
+
+```python
+from mypy_boto3_ce.type_defs import UntagResourceRequestRequestTypeDef
+```
+
+Required fields:
+
+- `ResourceArn`: `str`
+- `ResourceTagKeys`: `Sequence`\[`str`\]
 
 <a id="updateanomalymonitorrequestrequesttypedef"></a>
 

@@ -3116,6 +3116,7 @@ Keyword-only arguments:
 - `DefaultIamRoleArn`: `str`
 - `ReservedNodeId`: `str`
 - `TargetReservedNodeOfferingId`: `str`
+- `Encrypted`: `bool`
 
 Returns
 [RestoreFromClusterSnapshotResultTypeDef](./type_defs.md#restorefromclustersnapshotresulttypedef).

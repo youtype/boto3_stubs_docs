@@ -324,6 +324,7 @@ Values:
 - `frauddetector`
 - `fsx`
 - `gamelift`
+- `gamesparks`
 - `glacier`
 - `globalaccelerator`
 - `glue`

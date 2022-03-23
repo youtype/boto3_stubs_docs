@@ -114,7 +114,10 @@ from mypy_boto3_ce.client import CostExplorerClient
 - [get_tags](./client.md#get_tags)
 - [get_usage_forecast](./client.md#get_usage_forecast)
 - [list_cost_category_definitions](./client.md#list_cost_category_definitions)
+- [list_tags_for_resource](./client.md#list_tags_for_resource)
 - [provide_anomaly_feedback](./client.md#provide_anomaly_feedback)
+- [tag_resource](./client.md#tag_resource)
+- [untag_resource](./client.md#untag_resource)
 - [update_anomaly_monitor](./client.md#update_anomaly_monitor)
 - [update_anomaly_subscription](./client.md#update_anomaly_subscription)
 - [update_cost_category_definition](./client.md#update_cost_category_definition)
@@ -133,6 +136,7 @@ CostExplorerClient [exceptions](./client.md#exceptions)
 - RequestChangedException
 - ResourceNotFoundException
 - ServiceQuotaExceededException
+- TooManyTagsException
 - UnknownMonitorException
 - UnknownSubscriptionException
 - UnresolvableUsageUnitException
@@ -284,6 +288,8 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [InstanceDetailsTypeDef](./type_defs.md#instancedetailstypedef)
 - [ListCostCategoryDefinitionsRequestRequestTypeDef](./type_defs.md#listcostcategorydefinitionsrequestrequesttypedef)
 - [ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef)
+- [ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef)
+- [ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef)
 - [MetricValueTypeDef](./type_defs.md#metricvaluetypedef)
 - [ModifyRecommendationDetailTypeDef](./type_defs.md#modifyrecommendationdetailtypedef)
 - [NetworkResourceUtilizationTypeDef](./type_defs.md#networkresourceutilizationtypedef)
@@ -299,6 +305,7 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [ReservationPurchaseRecommendationTypeDef](./type_defs.md#reservationpurchaserecommendationtypedef)
 - [ReservationUtilizationGroupTypeDef](./type_defs.md#reservationutilizationgrouptypedef)
 - [ResourceDetailsTypeDef](./type_defs.md#resourcedetailstypedef)
+- [ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)
 - [ResourceUtilizationTypeDef](./type_defs.md#resourceutilizationtypedef)
 - [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 - [ResultByTimeTypeDef](./type_defs.md#resultbytimetypedef)
@@ -323,10 +330,12 @@ from mypy_boto3_ce.type_defs import AnomalyDateIntervalTypeDef, ...
 - [ServiceSpecificationTypeDef](./type_defs.md#servicespecificationtypedef)
 - [SortDefinitionTypeDef](./type_defs.md#sortdefinitiontypedef)
 - [SubscriberTypeDef](./type_defs.md#subscribertypedef)
+- [TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef)
 - [TagValuesTypeDef](./type_defs.md#tagvaluestypedef)
 - [TargetInstanceTypeDef](./type_defs.md#targetinstancetypedef)
 - [TerminateRecommendationDetailTypeDef](./type_defs.md#terminaterecommendationdetailtypedef)
 - [TotalImpactFilterTypeDef](./type_defs.md#totalimpactfiltertypedef)
+- [UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef)
 - [UpdateAnomalyMonitorRequestRequestTypeDef](./type_defs.md#updateanomalymonitorrequestrequesttypedef)
 - [UpdateAnomalyMonitorResponseTypeDef](./type_defs.md#updateanomalymonitorresponsetypedef)
 - [UpdateAnomalySubscriptionRequestRequestTypeDef](./type_defs.md#updateanomalysubscriptionrequestrequesttypedef)

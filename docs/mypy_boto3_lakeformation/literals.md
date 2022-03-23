@@ -149,16 +149,13 @@ Values:
 
 - `ALL`
 - `ALTER`
-- `ALTER_TAG`
-- `ASSOCIATE_TAG`
+- `ASSOCIATE`
 - `CREATE_DATABASE`
 - `CREATE_TABLE`
 - `CREATE_TAG`
 - `DATA_LOCATION_ACCESS`
 - `DELETE`
-- `DELETE_TAG`
 - `DESCRIBE`
-- `DESCRIBE_TAG`
 - `DROP`
 - `INSERT`
 - `SELECT`
@@ -425,6 +422,7 @@ Values:
 - `frauddetector`
 - `fsx`
 - `gamelift`
+- `gamesparks`
 - `glacier`
 - `globalaccelerator`
 - `glue`

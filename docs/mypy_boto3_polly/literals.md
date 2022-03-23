@@ -75,6 +75,7 @@ from mypy_boto3_polly.literals import LanguageCodeType
 Values:
 
 - `arb`
+- `ca-ES`
 - `cmn-CN`
 - `cy-GB`
 - `da-DK`
@@ -201,6 +202,7 @@ Values:
 - `Aditi`
 - `Amy`
 - `Aria`
+- `Arlet`
 - `Astrid`
 - `Ayanda`
 - `Bianca`
@@ -403,6 +405,7 @@ Values:
 - `frauddetector`
 - `fsx`
 - `gamelift`
+- `gamesparks`
 - `glacier`
 - `globalaccelerator`
 - `glue`

@@ -804,6 +804,7 @@ Keyword-only arguments:
 - `DeviceId`: `str` *(required)*
 - `TrackerName`: `str` *(required)*
 - `EndTimeExclusive`: `Union`\[`datetime`, `str`\]
+- `MaxResults`: `int`
 - `NextToken`: `str`
 - `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
 

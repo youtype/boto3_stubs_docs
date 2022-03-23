@@ -570,6 +570,10 @@ python -m pip uninstall -y boto3-stubs
   [GameLift](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamelift.html#GameLift)
   service
 
+- [mypy-boto3-gamesparks](./mypy_boto3_gamesparks/README.md) for
+  [GameSparks](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/gamesparks.html#GameSparks)
+  service
+
 - [mypy-boto3-glacier](./mypy_boto3_glacier/README.md) for
   [Glacier](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/glacier.html#Glacier)
   service

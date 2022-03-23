@@ -42,7 +42,10 @@ type annotations stubs module
     - [get_tags](#get_tags)
     - [get_usage_forecast](#get_usage_forecast)
     - [list_cost_category_definitions](#list_cost_category_definitions)
+    - [list_tags_for_resource](#list_tags_for_resource)
     - [provide_anomaly_feedback](#provide_anomaly_feedback)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
     - [update_anomaly_monitor](#update_anomaly_monitor)
     - [update_anomaly_subscription](#update_anomaly_subscription)
     - [update_cost_category_definition](#update_cost_category_definition)
@@ -90,6 +93,7 @@ Exceptions:
 - `Exceptions.RequestChangedException`
 - `Exceptions.ResourceNotFoundException`
 - `Exceptions.ServiceQuotaExceededException`
+- `Exceptions.TooManyTagsException`
 - `Exceptions.UnknownMonitorException`
 - `Exceptions.UnknownSubscriptionException`
 - `Exceptions.UnresolvableUsageUnitException`
@@ -132,8 +136,7 @@ Returns `bool`.
 
 ### create_anomaly_monitor
 
-Creates a new cost anomaly detection monitor with the requested type and
-monitor specification.
+.
 
 Type annotations for `boto3.client("ce").create_anomaly_monitor` method.
 
@@ -147,6 +150,8 @@ Keyword-only arguments:
 
 - `AnomalyMonitor`:
   [AnomalyMonitorTypeDef](./type_defs.md#anomalymonitortypedef) *(required)*
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 Returns
 [CreateAnomalyMonitorResponseTypeDef](./type_defs.md#createanomalymonitorresponsetypedef).
@@ -155,7 +160,7 @@ Returns
 
 ### create_anomaly_subscription
 
-Adds a subscription to a cost anomaly detection monitor.
+.
 
 Type annotations for `boto3.client("ce").create_anomaly_subscription` method.
 
@@ -170,6 +175,8 @@ Keyword-only arguments:
 - `AnomalySubscription`:
   [AnomalySubscriptionTypeDef](./type_defs.md#anomalysubscriptiontypedef)
   *(required)*
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 Returns
 [CreateAnomalySubscriptionResponseTypeDef](./type_defs.md#createanomalysubscriptionresponsetypedef).
@@ -178,7 +185,7 @@ Returns
 
 ### create_cost_category_definition
 
-Creates a new Cost Category with the requested name and rules.
+.
 
 Type annotations for `boto3.client("ce").create_cost_category_definition`
 method.
@@ -201,6 +208,8 @@ Keyword-only arguments:
 - `DefaultValue`: `str`
 - `SplitChargeRules`:
   `Sequence`\[[CostCategorySplitChargeRuleTypeDef](./type_defs.md#costcategorysplitchargeruletypedef)\]
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
 
 Returns
 [CreateCostCategoryDefinitionResponseTypeDef](./type_defs.md#createcostcategorydefinitionresponsetypedef).
@@ -853,6 +862,27 @@ Keyword-only arguments:
 Returns
 [ListCostCategoryDefinitionsResponseTypeDef](./type_defs.md#listcostcategorydefinitionsresponsetypedef).
 
+<a id="list\_tags\_for\_resource"></a>
+
+### list_tags_for_resource
+
+.
+
+Type annotations for `boto3.client("ce").list_tags_for_resource` method.
+
+Boto3 documentation:
+[CostExplorer.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
 <a id="provide\_anomaly\_feedback"></a>
 
 ### provide_anomaly_feedback
@@ -875,6 +905,50 @@ Keyword-only arguments:
 
 Returns
 [ProvideAnomalyFeedbackResponseTypeDef](./type_defs.md#provideanomalyfeedbackresponsetypedef).
+
+<a id="tag\_resource"></a>
+
+### tag_resource
+
+.
+
+Type annotations for `boto3.client("ce").tag_resource` method.
+
+Boto3 documentation:
+[CostExplorer.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `ResourceTags`:
+  `Sequence`\[[ResourceTagTypeDef](./type_defs.md#resourcetagtypedef)\]
+  *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
+
+<a id="untag\_resource"></a>
+
+### untag_resource
+
+Removes one or more tags from a resource.
+
+Type annotations for `boto3.client("ce").untag_resource` method.
+
+Boto3 documentation:
+[CostExplorer.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ce.html#CostExplorer.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceArn`: `str` *(required)*
+- `ResourceTagKeys`: `Sequence`\[`str`\] *(required)*
+
+Returns `Dict`\[`str`, `Any`\].
 
 <a id="update\_anomaly\_monitor"></a>
 

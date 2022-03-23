@@ -1113,6 +1113,7 @@ Required fields:
 Optional fields:
 
 - `EndTimeExclusive`: `Union`\[`datetime`, `str`\]
+- `MaxResults`: `int`
 - `NextToken`: `str`
 - `StartTimeInclusive`: `Union`\[`datetime`, `str`\]
 

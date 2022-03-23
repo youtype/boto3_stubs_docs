@@ -1879,6 +1879,7 @@ from mypy_boto3_ssm.literals import ResourceTypeForTaggingType
 
 Values:
 
+- `Automation`
 - `Document`
 - `MaintenanceWindow`
 - `ManagedInstance`
@@ -2162,6 +2163,7 @@ Values:
 - `frauddetector`
 - `fsx`
 - `gamelift`
+- `gamesparks`
 - `glacier`
 - `globalaccelerator`
 - `glue`

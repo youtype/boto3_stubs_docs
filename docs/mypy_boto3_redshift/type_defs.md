@@ -4192,6 +4192,7 @@ Optional fields:
 - `DefaultIamRoleArn`: `str`
 - `ReservedNodeId`: `str`
 - `TargetReservedNodeOfferingId`: `str`
+- `Encrypted`: `bool`
 
 <a id="restorefromclustersnapshotresulttypedef"></a>
 
