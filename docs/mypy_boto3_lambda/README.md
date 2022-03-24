@@ -359,6 +359,7 @@ from mypy_boto3_lambda.type_defs import AccountLimitTypeDef, ...
 - [EnvironmentErrorTypeDef](./type_defs.md#environmenterrortypedef)
 - [EnvironmentResponseTypeDef](./type_defs.md#environmentresponsetypedef)
 - [EnvironmentTypeDef](./type_defs.md#environmenttypedef)
+- [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 - [EventSourceMappingConfigurationResponseMetadataTypeDef](./type_defs.md#eventsourcemappingconfigurationresponsemetadatatypedef)
 - [EventSourceMappingConfigurationTypeDef](./type_defs.md#eventsourcemappingconfigurationtypedef)
 - [FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)

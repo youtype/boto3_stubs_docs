@@ -1476,6 +1476,7 @@ Optional fields:
 
 - `Formats`: `List`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
 - `SubtitleFileUris`: `List`\[`str`\]
+- `OutputStartIndex`: `int`
 
 <a id="subtitlestypedef"></a>
 
@@ -1489,6 +1490,7 @@ Optional fields:
 
 - `Formats`:
   `Sequence`\[[SubtitleFormatType](./literals.md#subtitleformattype)\]
+- `OutputStartIndex`: `int`
 
 <a id="tagresourcerequestrequesttypedef"></a>
 

@@ -383,6 +383,8 @@ Keyword-only arguments:
 - `CodeSigningConfigArn`: `str`
 - `Architectures`:
   `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
+- `EphemeralStorage`:
+  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).
@@ -1622,6 +1624,8 @@ Keyword-only arguments:
 - `FileSystemConfigs`:
   `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
+- `EphemeralStorage`:
+  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 Returns
 [FunctionConfigurationResponseMetadataTypeDef](./type_defs.md#functionconfigurationresponsemetadatatypedef).

@@ -53,6 +53,7 @@ type annotations stubs module
   - [ConformancePackInputParameterTypeDef](#conformancepackinputparametertypedef)
   - [ConformancePackRuleComplianceTypeDef](#conformancepackrulecompliancetypedef)
   - [ConformancePackStatusDetailTypeDef](#conformancepackstatusdetailtypedef)
+  - [CustomPolicyDetailsTypeDef](#custompolicydetailstypedef)
   - [DeleteAggregationAuthorizationRequestRequestTypeDef](#deleteaggregationauthorizationrequestrequesttypedef)
   - [DeleteConfigRuleRequestRequestTypeDef](#deleteconfigrulerequestrequesttypedef)
   - [DeleteConfigurationAggregatorRequestRequestTypeDef](#deleteconfigurationaggregatorrequestrequesttypedef)
@@ -154,12 +155,16 @@ type annotations stubs module
   - [GetConformancePackComplianceDetailsResponseTypeDef](#getconformancepackcompliancedetailsresponsetypedef)
   - [GetConformancePackComplianceSummaryRequestRequestTypeDef](#getconformancepackcompliancesummaryrequestrequesttypedef)
   - [GetConformancePackComplianceSummaryResponseTypeDef](#getconformancepackcompliancesummaryresponsetypedef)
+  - [GetCustomRulePolicyRequestRequestTypeDef](#getcustomrulepolicyrequestrequesttypedef)
+  - [GetCustomRulePolicyResponseTypeDef](#getcustomrulepolicyresponsetypedef)
   - [GetDiscoveredResourceCountsRequestRequestTypeDef](#getdiscoveredresourcecountsrequestrequesttypedef)
   - [GetDiscoveredResourceCountsResponseTypeDef](#getdiscoveredresourcecountsresponsetypedef)
   - [GetOrganizationConfigRuleDetailedStatusRequestRequestTypeDef](#getorganizationconfigruledetailedstatusrequestrequesttypedef)
   - [GetOrganizationConfigRuleDetailedStatusResponseTypeDef](#getorganizationconfigruledetailedstatusresponsetypedef)
   - [GetOrganizationConformancePackDetailedStatusRequestRequestTypeDef](#getorganizationconformancepackdetailedstatusrequestrequesttypedef)
   - [GetOrganizationConformancePackDetailedStatusResponseTypeDef](#getorganizationconformancepackdetailedstatusresponsetypedef)
+  - [GetOrganizationCustomRulePolicyRequestRequestTypeDef](#getorganizationcustomrulepolicyrequestrequesttypedef)
+  - [GetOrganizationCustomRulePolicyResponseTypeDef](#getorganizationcustomrulepolicyresponsetypedef)
   - [GetResourceConfigHistoryRequestRequestTypeDef](#getresourceconfighistoryrequestrequesttypedef)
   - [GetResourceConfigHistoryResponseTypeDef](#getresourceconfighistoryresponsetypedef)
   - [GetStoredQueryRequestRequestTypeDef](#getstoredqueryrequestrequesttypedef)
@@ -180,6 +185,8 @@ type annotations stubs module
   - [OrganizationConformancePackDetailedStatusTypeDef](#organizationconformancepackdetailedstatustypedef)
   - [OrganizationConformancePackStatusTypeDef](#organizationconformancepackstatustypedef)
   - [OrganizationConformancePackTypeDef](#organizationconformancepacktypedef)
+  - [OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef](#organizationcustompolicyrulemetadatanopolicytypedef)
+  - [OrganizationCustomPolicyRuleMetadataTypeDef](#organizationcustompolicyrulemetadatatypedef)
   - [OrganizationCustomRuleMetadataTypeDef](#organizationcustomrulemetadatatypedef)
   - [OrganizationManagedRuleMetadataTypeDef](#organizationmanagedrulemetadatatypedef)
   - [OrganizationResourceDetailedStatusFiltersTypeDef](#organizationresourcedetailedstatusfilterstypedef)
@@ -693,6 +700,9 @@ Optional fields:
 - `LastErrorCode`: `str`
 - `LastErrorMessage`: `str`
 - `FirstEvaluationStarted`: `bool`
+- `LastDebugLogDeliveryStatus`: `str`
+- `LastDebugLogDeliveryStatusReason`: `str`
+- `LastDebugLogDeliveryTime`: `datetime`
 
 <a id="configruletypedef"></a>
 
@@ -970,6 +980,23 @@ Optional fields:
 
 - `ConformancePackStatusReason`: `str`
 - `LastUpdateCompletedTime`: `datetime`
+
+<a id="custompolicydetailstypedef"></a>
+
+## CustomPolicyDetailsTypeDef
+
+```python
+from mypy_boto3_config.type_defs import CustomPolicyDetailsTypeDef
+```
+
+Required fields:
+
+- `PolicyRuntime`: `str`
+- `PolicyText`: `str`
+
+Optional fields:
+
+- `EnableDebugLogDelivery`: `bool`
 
 <a id="deleteaggregationauthorizationrequestrequesttypedef"></a>
 
@@ -2515,6 +2542,32 @@ Required fields:
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
+<a id="getcustomrulepolicyrequestrequesttypedef"></a>
+
+## GetCustomRulePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetCustomRulePolicyRequestRequestTypeDef
+```
+
+Optional fields:
+
+- `ConfigRuleName`: `str`
+
+<a id="getcustomrulepolicyresponsetypedef"></a>
+
+## GetCustomRulePolicyResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetCustomRulePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `PolicyText`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
 <a id="getdiscoveredresourcecountsrequestrequesttypedef"></a>
 
 ## GetDiscoveredResourceCountsRequestRequestTypeDef
@@ -2613,6 +2666,32 @@ Required fields:
 - `OrganizationConformancePackDetailedStatuses`:
   `List`\[[OrganizationConformancePackDetailedStatusTypeDef](./type_defs.md#organizationconformancepackdetailedstatustypedef)\]
 - `NextToken`: `str`
+- `ResponseMetadata`:
+  [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
+
+<a id="getorganizationcustomrulepolicyrequestrequesttypedef"></a>
+
+## GetOrganizationCustomRulePolicyRequestRequestTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetOrganizationCustomRulePolicyRequestRequestTypeDef
+```
+
+Required fields:
+
+- `OrganizationConfigRuleName`: `str`
+
+<a id="getorganizationcustomrulepolicyresponsetypedef"></a>
+
+## GetOrganizationCustomRulePolicyResponseTypeDef
+
+```python
+from mypy_boto3_config.type_defs import GetOrganizationCustomRulePolicyResponseTypeDef
+```
+
+Required fields:
+
+- `PolicyText`: `str`
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -2904,6 +2983,8 @@ Optional fields:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
 - `ExcludedAccounts`: `List`\[`str`\]
 - `LastUpdateTime`: `datetime`
+- `OrganizationCustomPolicyRuleMetadata`:
+  [OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef](./type_defs.md#organizationcustompolicyrulemetadatanopolicytypedef)
 
 <a id="organizationconformancepackdetailedstatustypedef"></a>
 
@@ -2967,6 +3048,56 @@ Optional fields:
 - `ConformancePackInputParameters`:
   `List`\[[ConformancePackInputParameterTypeDef](./type_defs.md#conformancepackinputparametertypedef)\]
 - `ExcludedAccounts`: `List`\[`str`\]
+
+<a id="organizationcustompolicyrulemetadatanopolicytypedef"></a>
+
+## OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef
+
+```python
+from mypy_boto3_config.type_defs import OrganizationCustomPolicyRuleMetadataNoPolicyTypeDef
+```
+
+Optional fields:
+
+- `Description`: `str`
+- `OrganizationConfigRuleTriggerTypes`:
+  `List`\[[OrganizationConfigRuleTriggerTypeNoSNType](./literals.md#organizationconfigruletriggertypenosntype)\]
+- `InputParameters`: `str`
+- `MaximumExecutionFrequency`:
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
+- `ResourceTypesScope`: `List`\[`str`\]
+- `ResourceIdScope`: `str`
+- `TagKeyScope`: `str`
+- `TagValueScope`: `str`
+- `PolicyRuntime`: `str`
+- `DebugLogDeliveryAccounts`: `List`\[`str`\]
+
+<a id="organizationcustompolicyrulemetadatatypedef"></a>
+
+## OrganizationCustomPolicyRuleMetadataTypeDef
+
+```python
+from mypy_boto3_config.type_defs import OrganizationCustomPolicyRuleMetadataTypeDef
+```
+
+Required fields:
+
+- `PolicyRuntime`: `str`
+- `PolicyText`: `str`
+
+Optional fields:
+
+- `Description`: `str`
+- `OrganizationConfigRuleTriggerTypes`:
+  `Sequence`\[[OrganizationConfigRuleTriggerTypeNoSNType](./literals.md#organizationconfigruletriggertypenosntype)\]
+- `InputParameters`: `str`
+- `MaximumExecutionFrequency`:
+  [MaximumExecutionFrequencyType](./literals.md#maximumexecutionfrequencytype)
+- `ResourceTypesScope`: `Sequence`\[`str`\]
+- `ResourceIdScope`: `str`
+- `TagKeyScope`: `str`
+- `TagValueScope`: `str`
+- `DebugLogDeliveryAccounts`: `Sequence`\[`str`\]
 
 <a id="organizationcustomrulemetadatatypedef"></a>
 
@@ -3267,6 +3398,8 @@ Optional fields:
 - `OrganizationCustomRuleMetadata`:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
 - `ExcludedAccounts`: `Sequence`\[`str`\]
+- `OrganizationCustomPolicyRuleMetadata`:
+  [OrganizationCustomPolicyRuleMetadataTypeDef](./type_defs.md#organizationcustompolicyrulemetadatatypedef)
 
 <a id="putorganizationconfigruleresponsetypedef"></a>
 
@@ -3829,12 +3962,14 @@ from mypy_boto3_config.type_defs import SourceTypeDef
 Required fields:
 
 - `Owner`: [OwnerType](./literals.md#ownertype)
-- `SourceIdentifier`: `str`
 
 Optional fields:
 
+- `SourceIdentifier`: `str`
 - `SourceDetails`:
   `List`\[[SourceDetailTypeDef](./type_defs.md#sourcedetailtypedef)\]
+- `CustomPolicyDetails`:
+  [CustomPolicyDetailsTypeDef](./type_defs.md#custompolicydetailstypedef)
 
 <a id="ssmcontrolstypedef"></a>
 

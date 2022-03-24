@@ -70,9 +70,11 @@ type annotations stubs module
     - [get_compliance_summary_by_resource_type](#get_compliance_summary_by_resource_type)
     - [get_conformance_pack_compliance_details](#get_conformance_pack_compliance_details)
     - [get_conformance_pack_compliance_summary](#get_conformance_pack_compliance_summary)
+    - [get_custom_rule_policy](#get_custom_rule_policy)
     - [get_discovered_resource_counts](#get_discovered_resource_counts)
     - [get_organization_config_rule_detailed_status](#get_organization_config_rule_detailed_status)
     - [get_organization_conformance_pack_detailed_status](#get_organization_conformance_pack_detailed_status)
+    - [get_organization_custom_rule_policy](#get_organization_custom_rule_policy)
     - [get_resource_config_history](#get_resource_config_history)
     - [get_stored_query](#get_stored_query)
     - [list_aggregate_discovered_resources](#list_aggregate_discovered_resources)
@@ -416,7 +418,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### delete_organization_config_rule
 
-Deletes the specified organization config rule and all of its evaluation
+Deletes the specified organization Config rule and all of its evaluation
 results from all member accounts in that organization.
 
 Type annotations for `boto3.client("config").delete_organization_config_rule`
@@ -436,7 +438,7 @@ Keyword-only arguments:
 
 ### delete_organization_conformance_pack
 
-Deletes the specified organization conformance pack and all of the config rules
+Deletes the specified organization conformance pack and all of the Config rules
 and remediation actions from all member accounts in that organization.
 
 Type annotations for
@@ -996,7 +998,7 @@ Returns
 
 ### describe_organization_config_rule_statuses
 
-Provides organization config rule deployment status for an organization.
+Provides organization Config rule deployment status for an organization.
 
 Type annotations for
 `boto3.client("config").describe_organization_config_rule_statuses` method.
@@ -1020,7 +1022,7 @@ Returns
 
 ### describe_organization_config_rules
 
-Returns a list of organization config rules.
+Returns a list of organization Config rules.
 
 Type annotations for
 `boto3.client("config").describe_organization_config_rules` method.
@@ -1518,6 +1520,28 @@ Keyword-only arguments:
 Returns
 [GetConformancePackComplianceSummaryResponseTypeDef](./type_defs.md#getconformancepackcompliancesummaryresponsetypedef).
 
+<a id="get\_custom\_rule\_policy"></a>
+
+### get_custom_rule_policy
+
+Returns the policy definition containing the logic for your Config Custom
+Policy rule.
+
+Type annotations for `boto3.client("config").get_custom_rule_policy` method.
+
+Boto3 documentation:
+[ConfigService.Client.get_custom_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_custom_rule_policy)
+
+Arguments mapping described in
+[GetCustomRulePolicyRequestRequestTypeDef](./type_defs.md#getcustomrulepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ConfigRuleName`: `str`
+
+Returns
+[GetCustomRulePolicyResponseTypeDef](./type_defs.md#getcustomrulepolicyresponsetypedef).
+
 <a id="get\_discovered\_resource\_counts"></a>
 
 ### get_discovered_resource_counts
@@ -1549,7 +1573,7 @@ Returns
 ### get_organization_config_rule_detailed_status
 
 Returns detailed status for each member account within an organization for a
-given organization config rule.
+given organization Config rule.
 
 Type annotations for
 `boto3.client("config").get_organization_config_rule_detailed_status` method.
@@ -1598,6 +1622,29 @@ Keyword-only arguments:
 
 Returns
 [GetOrganizationConformancePackDetailedStatusResponseTypeDef](./type_defs.md#getorganizationconformancepackdetailedstatusresponsetypedef).
+
+<a id="get\_organization\_custom\_rule\_policy"></a>
+
+### get_organization_custom_rule_policy
+
+Returns the policy definition containing the logic for your organization Config
+Custom Policy rule.
+
+Type annotations for
+`boto3.client("config").get_organization_custom_rule_policy` method.
+
+Boto3 documentation:
+[ConfigService.Client.get_organization_custom_rule_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/config.html#ConfigService.Client.get_organization_custom_rule_policy)
+
+Arguments mapping described in
+[GetOrganizationCustomRulePolicyRequestRequestTypeDef](./type_defs.md#getorganizationcustomrulepolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `OrganizationConfigRuleName`: `str` *(required)*
+
+Returns
+[GetOrganizationCustomRulePolicyResponseTypeDef](./type_defs.md#getorganizationcustomrulepolicyresponsetypedef).
 
 <a id="get\_resource\_config\_history"></a>
 
@@ -1946,7 +1993,7 @@ Returns `Dict`\[`str`, `Any`\].
 
 ### put_organization_config_rule
 
-Adds or updates organization config rule for your entire organization
+Adds or updates organization Config rule for your entire organization
 evaluating whether your Amazon Web Services resources comply with your desired
 configurations.
 
@@ -1967,6 +2014,8 @@ Keyword-only arguments:
 - `OrganizationCustomRuleMetadata`:
   [OrganizationCustomRuleMetadataTypeDef](./type_defs.md#organizationcustomrulemetadatatypedef)
 - `ExcludedAccounts`: `Sequence`\[`str`\]
+- `OrganizationCustomPolicyRuleMetadata`:
+  [OrganizationCustomPolicyRuleMetadataTypeDef](./type_defs.md#organizationcustompolicyrulemetadatatypedef)
 
 Returns
 [PutOrganizationConfigRuleResponseTypeDef](./type_defs.md#putorganizationconfigruleresponsetypedef).

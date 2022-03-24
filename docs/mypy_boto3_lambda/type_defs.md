@@ -43,6 +43,7 @@ type annotations stubs module
   - [EnvironmentErrorTypeDef](#environmenterrortypedef)
   - [EnvironmentResponseTypeDef](#environmentresponsetypedef)
   - [EnvironmentTypeDef](#environmenttypedef)
+  - [EphemeralStorageTypeDef](#ephemeralstoragetypedef)
   - [EventSourceMappingConfigurationResponseMetadataTypeDef](#eventsourcemappingconfigurationresponsemetadatatypedef)
   - [EventSourceMappingConfigurationTypeDef](#eventsourcemappingconfigurationtypedef)
   - [FileSystemConfigTypeDef](#filesystemconfigtypedef)
@@ -499,6 +500,8 @@ Optional fields:
 - `CodeSigningConfigArn`: `str`
 - `Architectures`:
   `Sequence`\[[ArchitectureType](./literals.md#architecturetype)\]
+- `EphemeralStorage`:
+  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 <a id="deadletterconfigtypedef"></a>
 
@@ -681,6 +684,18 @@ from mypy_boto3_lambda.type_defs import EnvironmentTypeDef
 Optional fields:
 
 - `Variables`: `Mapping`\[`str`, `str`\]
+
+<a id="ephemeralstoragetypedef"></a>
+
+## EphemeralStorageTypeDef
+
+```python
+from mypy_boto3_lambda.type_defs import EphemeralStorageTypeDef
+```
+
+Required fields:
+
+- `Size`: `int`
 
 <a id="eventsourcemappingconfigurationresponsemetadatatypedef"></a>
 
@@ -882,6 +897,8 @@ Required fields:
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
 - `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
+- `EphemeralStorage`:
+  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 - `ResponseMetadata`:
   [ResponseMetadataTypeDef](./type_defs.md#responsemetadatatypedef)
 
@@ -935,6 +952,8 @@ Optional fields:
 - `SigningProfileVersionArn`: `str`
 - `SigningJobArn`: `str`
 - `Architectures`: `List`\[[ArchitectureType](./literals.md#architecturetype)\]
+- `EphemeralStorage`:
+  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 <a id="functioneventinvokeconfigresponsemetadatatypedef"></a>
 
@@ -2320,6 +2339,8 @@ Optional fields:
 - `FileSystemConfigs`:
   `Sequence`\[[FileSystemConfigTypeDef](./type_defs.md#filesystemconfigtypedef)\]
 - `ImageConfig`: [ImageConfigTypeDef](./type_defs.md#imageconfigtypedef)
+- `EphemeralStorage`:
+  [EphemeralStorageTypeDef](./type_defs.md#ephemeralstoragetypedef)
 
 <a id="updatefunctioneventinvokeconfigrequestrequesttypedef"></a>
 

@@ -53,6 +53,7 @@ type annotations stubs module
   - [MaximumExecutionFrequencyType](#maximumexecutionfrequencytype)
   - [MemberAccountRuleStatusType](#memberaccountrulestatustype)
   - [MessageTypeType](#messagetypetype)
+  - [OrganizationConfigRuleTriggerTypeNoSNType](#organizationconfigruletriggertypenosntype)
   - [OrganizationConfigRuleTriggerTypeType](#organizationconfigruletriggertypetype)
   - [OrganizationResourceDetailedStatusType](#organizationresourcedetailedstatustype)
   - [OrganizationResourceStatusType](#organizationresourcestatustype)
@@ -627,6 +628,19 @@ Values:
 - `OversizedConfigurationItemChangeNotification`
 - `ScheduledNotification`
 
+<a id="organizationconfigruletriggertypenosntype"></a>
+
+## OrganizationConfigRuleTriggerTypeNoSNType
+
+```python
+from mypy_boto3_config.literals import OrganizationConfigRuleTriggerTypeNoSNType
+```
+
+Values:
+
+- `ConfigurationItemChangeNotification`
+- `OversizedConfigurationItemChangeNotification`
+
 <a id="organizationconfigruletriggertypetype"></a>
 
 ## OrganizationConfigRuleTriggerTypeType
@@ -713,6 +727,7 @@ Values:
 
 - `AWS`
 - `CUSTOM_LAMBDA`
+- `CUSTOM_POLICY`
 
 <a id="recorderstatustype"></a>
 
@@ -856,6 +871,7 @@ Values:
 - `AWS::ElasticLoadBalancing::LoadBalancer`
 - `AWS::ElasticLoadBalancingV2::LoadBalancer`
 - `AWS::Elasticsearch::Domain`
+- `AWS::GuardDuty::Detector`
 - `AWS::IAM::Group`
 - `AWS::IAM::Policy`
 - `AWS::IAM::Role`
