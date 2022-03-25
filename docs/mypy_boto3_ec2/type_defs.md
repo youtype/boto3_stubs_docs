@@ -35,6 +35,7 @@ type annotations stubs module
   - [ActiveInstanceTypeDef](#activeinstancetypedef)
   - [AddIpamOperatingRegionTypeDef](#addipamoperatingregiontypedef)
   - [AddPrefixListEntryTypeDef](#addprefixlistentrytypedef)
+  - [AdditionalDetailTypeDef](#additionaldetailtypedef)
   - [AddressAttributeTypeDef](#addressattributetypedef)
   - [AddressTypeDef](#addresstypedef)
   - [AdvertiseByoipCidrRequestRequestTypeDef](#advertisebyoipcidrrequestrequesttypedef)
@@ -1724,6 +1725,7 @@ type annotations stubs module
   - [TransitGatewayRouteAttachmentTypeDef](#transitgatewayrouteattachmenttypedef)
   - [TransitGatewayRouteTableAssociationTypeDef](#transitgatewayroutetableassociationtypedef)
   - [TransitGatewayRouteTablePropagationTypeDef](#transitgatewayroutetablepropagationtypedef)
+  - [TransitGatewayRouteTableRouteTypeDef](#transitgatewayroutetableroutetypedef)
   - [TransitGatewayRouteTableTypeDef](#transitgatewayroutetabletypedef)
   - [TransitGatewayRouteTypeDef](#transitgatewayroutetypedef)
   - [TransitGatewayTypeDef](#transitgatewaytypedef)
@@ -2158,6 +2160,20 @@ Required fields:
 Optional fields:
 
 - `Description`: `str`
+
+<a id="additionaldetailtypedef"></a>
+
+## AdditionalDetailTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import AdditionalDetailTypeDef
+```
+
+Optional fields:
+
+- `AdditionalDetailType`: `str`
+- `Component`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 
 <a id="addressattributetypedef"></a>
 
@@ -16741,6 +16757,14 @@ Optional fields:
   [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `VpnGateway`:
   [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `TransitGateway`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `TransitGatewayRouteTable`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `TransitGatewayRouteTableRoute`:
+  [TransitGatewayRouteTableRouteTypeDef](./type_defs.md#transitgatewayroutetableroutetypedef)
+- `TransitGatewayAttachment`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 
 <a id="exportclientvpnclientcertificaterevocationlistrequestrequesttypedef"></a>
 
@@ -24714,6 +24738,12 @@ Optional fields:
   [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Subnet`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
 - `Vpc`: [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `AdditionalDetails`:
+  `List`\[[AdditionalDetailTypeDef](./type_defs.md#additionaldetailtypedef)\]
+- `TransitGateway`:
+  [AnalysisComponentTypeDef](./type_defs.md#analysiscomponenttypedef)
+- `TransitGatewayRouteTableRoute`:
+  [TransitGatewayRouteTableRouteTypeDef](./type_defs.md#transitgatewayroutetableroutetypedef)
 
 <a id="pathstatementrequesttypedef"></a>
 
@@ -30707,6 +30737,24 @@ Optional fields:
   [TransitGatewayAttachmentResourceTypeType](./literals.md#transitgatewayattachmentresourcetypetype)
 - `State`:
   [TransitGatewayPropagationStateType](./literals.md#transitgatewaypropagationstatetype)
+
+<a id="transitgatewayroutetableroutetypedef"></a>
+
+## TransitGatewayRouteTableRouteTypeDef
+
+```python
+from mypy_boto3_ec2.type_defs import TransitGatewayRouteTableRouteTypeDef
+```
+
+Optional fields:
+
+- `DestinationCidr`: `str`
+- `State`: `str`
+- `RouteOrigin`: `str`
+- `PrefixListId`: `str`
+- `AttachmentId`: `str`
+- `ResourceId`: `str`
+- `ResourceType`: `str`
 
 <a id="transitgatewayroutetabletypedef"></a>
 

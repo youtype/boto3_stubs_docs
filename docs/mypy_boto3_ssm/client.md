@@ -2204,7 +2204,7 @@ Returns
 
 ### get_maintenance_window_task
 
-Lists the tasks in a maintenance window.
+Retrieves the details of a maintenance window task.
 
 Type annotations for `boto3.client("ssm").get_maintenance_window_task` method.
 
