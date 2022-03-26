@@ -1,5 +1,6 @@
 site_name: "boto3-stubs documentation"
 repo_url: "https://github.com/vemel/mypy_boto3_builder/"
+edit_uri: ""
 site_dir: "docs"
 docs_dir: "docsmd"
 
@@ -14,6 +15,7 @@ theme:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
     - scheme: slate
+      primary: blue
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
