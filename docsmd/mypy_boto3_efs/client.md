@@ -1,0 +1,850 @@
+<a id="efsclient-for-boto3-efs-module"></a>
+
+# EFSClient for boto3 EFS module
+
+> [Index](../README.md) > [EFS](./README.md) > EFSClient
+
+Auto-generated documentation for
+[EFS](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS)
+type annotations stubs module
+[mypy-boto3-efs](https://pypi.org/project/mypy-boto3-efs/).
+
+- [EFSClient for boto3 EFS module](#efsclient-for-boto3-efs-module)
+  - [EFSClient](#efsclient)
+  - [Exceptions](#exceptions)
+  - [Methods](#methods)
+    - [exceptions](#exceptions)
+    - [can_paginate](#can_paginate)
+    - [create_access_point](#create_access_point)
+    - [create_file_system](#create_file_system)
+    - [create_mount_target](#create_mount_target)
+    - [create_replication_configuration](#create_replication_configuration)
+    - [create_tags](#create_tags)
+    - [delete_access_point](#delete_access_point)
+    - [delete_file_system](#delete_file_system)
+    - [delete_file_system_policy](#delete_file_system_policy)
+    - [delete_mount_target](#delete_mount_target)
+    - [delete_replication_configuration](#delete_replication_configuration)
+    - [delete_tags](#delete_tags)
+    - [describe_access_points](#describe_access_points)
+    - [describe_account_preferences](#describe_account_preferences)
+    - [describe_backup_policy](#describe_backup_policy)
+    - [describe_file_system_policy](#describe_file_system_policy)
+    - [describe_file_systems](#describe_file_systems)
+    - [describe_lifecycle_configuration](#describe_lifecycle_configuration)
+    - [describe_mount_target_security_groups](#describe_mount_target_security_groups)
+    - [describe_mount_targets](#describe_mount_targets)
+    - [describe_replication_configurations](#describe_replication_configurations)
+    - [describe_tags](#describe_tags)
+    - [generate_presigned_url](#generate_presigned_url)
+    - [list_tags_for_resource](#list_tags_for_resource)
+    - [modify_mount_target_security_groups](#modify_mount_target_security_groups)
+    - [put_account_preferences](#put_account_preferences)
+    - [put_backup_policy](#put_backup_policy)
+    - [put_file_system_policy](#put_file_system_policy)
+    - [put_lifecycle_configuration](#put_lifecycle_configuration)
+    - [tag_resource](#tag_resource)
+    - [untag_resource](#untag_resource)
+    - [update_file_system](#update_file_system)
+    - [get_paginator](#get_paginator)
+
+<a id="efsclient"></a>
+
+## EFSClient
+
+Type annotations for `boto3.client("efs")`
+
+Can be used directly:
+
+```python
+from boto3.session import Session
+from mypy_boto3_efs.client import EFSClient
+
+def get_efs_client() -> EFSClient:
+    return Session().client("efs")
+```
+
+Boto3 documentation:
+[EFS.Client](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client)
+
+<a id="exceptions"></a>
+
+## Exceptions
+
+`boto3` client exceptions are generated in runtime. This class can be used for
+static analysis directly:
+
+```python
+from mypy_boto3_efs.client import Exceptions
+
+def handle_error(exc: Exceptions.AccessPointAlreadyExists) -> None:
+    ...
+```
+
+Exceptions:
+
+- `Exceptions.AccessPointAlreadyExists`
+- `Exceptions.AccessPointLimitExceeded`
+- `Exceptions.AccessPointNotFound`
+- `Exceptions.AvailabilityZonesMismatch`
+- `Exceptions.BadRequest`
+- `Exceptions.ClientError`
+- `Exceptions.DependencyTimeout`
+- `Exceptions.FileSystemAlreadyExists`
+- `Exceptions.FileSystemInUse`
+- `Exceptions.FileSystemLimitExceeded`
+- `Exceptions.FileSystemNotFound`
+- `Exceptions.IncorrectFileSystemLifeCycleState`
+- `Exceptions.IncorrectMountTargetState`
+- `Exceptions.InsufficientThroughputCapacity`
+- `Exceptions.InternalServerError`
+- `Exceptions.InvalidPolicyException`
+- `Exceptions.IpAddressInUse`
+- `Exceptions.MountTargetConflict`
+- `Exceptions.MountTargetNotFound`
+- `Exceptions.NetworkInterfaceLimitExceeded`
+- `Exceptions.NoFreeAddressesInSubnet`
+- `Exceptions.PolicyNotFound`
+- `Exceptions.ReplicationNotFound`
+- `Exceptions.SecurityGroupLimitExceeded`
+- `Exceptions.SecurityGroupNotFound`
+- `Exceptions.SubnetNotFound`
+- `Exceptions.ThroughputLimitExceeded`
+- `Exceptions.TooManyRequests`
+- `Exceptions.UnsupportedAvailabilityZone`
+- `Exceptions.ValidationException`
+
+<a id="methods"></a>
+
+## Methods
+
+<a id="exceptions"></a>
+
+### exceptions
+
+EFSClient exceptions.
+
+Type annotations for `boto3.client("efs").exceptions` method.
+
+Boto3 documentation:
+[EFS.Client.exceptions](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.exceptions)
+
+Returns [Exceptions](#exceptions).
+
+<a id="can\_paginate"></a>
+
+### can_paginate
+
+Check if an operation can be paginated.
+
+Type annotations for `boto3.client("efs").can_paginate` method.
+
+Boto3 documentation:
+[EFS.Client.can_paginate](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.can_paginate)
+
+Arguments:
+
+- `operation_name`: `str` *(required)*
+
+Returns `bool`.
+
+<a id="create\_access\_point"></a>
+
+### create_access_point
+
+Creates an EFS access point.
+
+Type annotations for `boto3.client("efs").create_access_point` method.
+
+Boto3 documentation:
+[EFS.Client.create_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_access_point)
+
+Arguments mapping described in
+[CreateAccessPointRequestRequestTypeDef](./type_defs.md#createaccesspointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ClientToken`: `str` *(required)*
+- `FileSystemId`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+- `PosixUser`: [PosixUserTypeDef](./type_defs.md#posixusertypedef)
+- `RootDirectory`: [RootDirectoryTypeDef](./type_defs.md#rootdirectorytypedef)
+
+Returns
+[AccessPointDescriptionResponseMetadataTypeDef](./type_defs.md#accesspointdescriptionresponsemetadatatypedef).
+
+<a id="create\_file\_system"></a>
+
+### create_file_system
+
+Creates a new, empty file system.
+
+Type annotations for `boto3.client("efs").create_file_system` method.
+
+Boto3 documentation:
+[EFS.Client.create_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_file_system)
+
+Arguments mapping described in
+[CreateFileSystemRequestRequestTypeDef](./type_defs.md#createfilesystemrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `CreationToken`: `str` *(required)*
+- `PerformanceMode`: [PerformanceModeType](./literals.md#performancemodetype)
+- `Encrypted`: `bool`
+- `KmsKeyId`: `str`
+- `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)
+- `ProvisionedThroughputInMibps`: `float`
+- `AvailabilityZoneName`: `str`
+- `Backup`: `bool`
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\]
+
+Returns
+[FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
+
+<a id="create\_mount\_target"></a>
+
+### create_mount_target
+
+Creates a mount target for a file system.
+
+Type annotations for `boto3.client("efs").create_mount_target` method.
+
+Boto3 documentation:
+[EFS.Client.create_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_mount_target)
+
+Arguments mapping described in
+[CreateMountTargetRequestRequestTypeDef](./type_defs.md#createmounttargetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `SubnetId`: `str` *(required)*
+- `IpAddress`: `str`
+- `SecurityGroups`: `Sequence`\[`str`\]
+
+Returns
+[MountTargetDescriptionResponseMetadataTypeDef](./type_defs.md#mounttargetdescriptionresponsemetadatatypedef).
+
+<a id="create\_replication\_configuration"></a>
+
+### create_replication_configuration
+
+Creates a replication configuration that replicates an existing EFS file system
+to a new, read-only file system.
+
+Type annotations for `boto3.client("efs").create_replication_configuration`
+method.
+
+Boto3 documentation:
+[EFS.Client.create_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_replication_configuration)
+
+Arguments mapping described in
+[CreateReplicationConfigurationRequestRequestTypeDef](./type_defs.md#createreplicationconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SourceFileSystemId`: `str` *(required)*
+- `Destinations`:
+  `Sequence`\[[DestinationToCreateTypeDef](./type_defs.md#destinationtocreatetypedef)\]
+  *(required)*
+
+Returns
+[ReplicationConfigurationDescriptionResponseMetadataTypeDef](./type_defs.md#replicationconfigurationdescriptionresponsemetadatatypedef).
+
+<a id="create\_tags"></a>
+
+### create_tags
+
+.
+
+Type annotations for `boto3.client("efs").create_tags` method.
+
+Boto3 documentation:
+[EFS.Client.create_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.create_tags)
+
+Arguments mapping described in
+[CreateTagsRequestRequestTypeDef](./type_defs.md#createtagsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="delete\_access\_point"></a>
+
+### delete_access_point
+
+Deletes the specified access point.
+
+Type annotations for `boto3.client("efs").delete_access_point` method.
+
+Boto3 documentation:
+[EFS.Client.delete_access_point](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_access_point)
+
+Arguments mapping described in
+[DeleteAccessPointRequestRequestTypeDef](./type_defs.md#deleteaccesspointrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `AccessPointId`: `str` *(required)*
+
+<a id="delete\_file\_system"></a>
+
+### delete_file_system
+
+Deletes a file system, permanently severing access to its contents.
+
+Type annotations for `boto3.client("efs").delete_file_system` method.
+
+Boto3 documentation:
+[EFS.Client.delete_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system)
+
+Arguments mapping described in
+[DeleteFileSystemRequestRequestTypeDef](./type_defs.md#deletefilesystemrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+<a id="delete\_file\_system\_policy"></a>
+
+### delete_file_system_policy
+
+Deletes the `FileSystemPolicy` for the specified file system.
+
+Type annotations for `boto3.client("efs").delete_file_system_policy` method.
+
+Boto3 documentation:
+[EFS.Client.delete_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_file_system_policy)
+
+Arguments mapping described in
+[DeleteFileSystemPolicyRequestRequestTypeDef](./type_defs.md#deletefilesystempolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+<a id="delete\_mount\_target"></a>
+
+### delete_mount_target
+
+Deletes the specified mount target.
+
+Type annotations for `boto3.client("efs").delete_mount_target` method.
+
+Boto3 documentation:
+[EFS.Client.delete_mount_target](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_mount_target)
+
+Arguments mapping described in
+[DeleteMountTargetRequestRequestTypeDef](./type_defs.md#deletemounttargetrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MountTargetId`: `str` *(required)*
+
+<a id="delete\_replication\_configuration"></a>
+
+### delete_replication_configuration
+
+Deletes an existing replication configuration.
+
+Type annotations for `boto3.client("efs").delete_replication_configuration`
+method.
+
+Boto3 documentation:
+[EFS.Client.delete_replication_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_replication_configuration)
+
+Arguments mapping described in
+[DeleteReplicationConfigurationRequestRequestTypeDef](./type_defs.md#deletereplicationconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `SourceFileSystemId`: `str` *(required)*
+
+<a id="delete\_tags"></a>
+
+### delete_tags
+
+.
+
+Type annotations for `boto3.client("efs").delete_tags` method.
+
+Boto3 documentation:
+[EFS.Client.delete_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.delete_tags)
+
+Arguments mapping described in
+[DeleteTagsRequestRequestTypeDef](./type_defs.md#deletetagsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="describe\_access\_points"></a>
+
+### describe_access_points
+
+Returns the description of a specific Amazon EFS access point if the
+`AccessPointId` is provided.
+
+Type annotations for `boto3.client("efs").describe_access_points` method.
+
+Boto3 documentation:
+[EFS.Client.describe_access_points](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_access_points)
+
+Arguments mapping described in
+[DescribeAccessPointsRequestRequestTypeDef](./type_defs.md#describeaccesspointsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxResults`: `int`
+- `NextToken`: `str`
+- `AccessPointId`: `str`
+- `FileSystemId`: `str`
+
+Returns
+[DescribeAccessPointsResponseTypeDef](./type_defs.md#describeaccesspointsresponsetypedef).
+
+<a id="describe\_account\_preferences"></a>
+
+### describe_account_preferences
+
+Returns the account preferences settings for the Amazon Web Services account
+associated with the user making the request, in the current Amazon Web Services
+Region.
+
+Type annotations for `boto3.client("efs").describe_account_preferences` method.
+
+Boto3 documentation:
+[EFS.Client.describe_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_account_preferences)
+
+Arguments mapping described in
+[DescribeAccountPreferencesRequestRequestTypeDef](./type_defs.md#describeaccountpreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeAccountPreferencesResponseTypeDef](./type_defs.md#describeaccountpreferencesresponsetypedef).
+
+<a id="describe\_backup\_policy"></a>
+
+### describe_backup_policy
+
+Returns the backup policy for the specified EFS file system.
+
+Type annotations for `boto3.client("efs").describe_backup_policy` method.
+
+Boto3 documentation:
+[EFS.Client.describe_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_backup_policy)
+
+Arguments mapping described in
+[DescribeBackupPolicyRequestRequestTypeDef](./type_defs.md#describebackuppolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+Returns
+[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
+
+<a id="describe\_file\_system\_policy"></a>
+
+### describe_file_system_policy
+
+Returns the `FileSystemPolicy` for the specified EFS file system.
+
+Type annotations for `boto3.client("efs").describe_file_system_policy` method.
+
+Boto3 documentation:
+[EFS.Client.describe_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_system_policy)
+
+Arguments mapping described in
+[DescribeFileSystemPolicyRequestRequestTypeDef](./type_defs.md#describefilesystempolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+Returns
+[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
+
+<a id="describe\_file\_systems"></a>
+
+### describe_file_systems
+
+Returns the description of a specific Amazon EFS file system if either the file
+system `CreationToken` or the `FileSystemId` is provided.
+
+Type annotations for `boto3.client("efs").describe_file_systems` method.
+
+Boto3 documentation:
+[EFS.Client.describe_file_systems](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_file_systems)
+
+Arguments mapping described in
+[DescribeFileSystemsRequestRequestTypeDef](./type_defs.md#describefilesystemsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxItems`: `int`
+- `Marker`: `str`
+- `CreationToken`: `str`
+- `FileSystemId`: `str`
+
+Returns
+[DescribeFileSystemsResponseTypeDef](./type_defs.md#describefilesystemsresponsetypedef).
+
+<a id="describe\_lifecycle\_configuration"></a>
+
+### describe_lifecycle_configuration
+
+Returns the current `LifecycleConfiguration` object for the specified Amazon
+EFS file system.
+
+Type annotations for `boto3.client("efs").describe_lifecycle_configuration`
+method.
+
+Boto3 documentation:
+[EFS.Client.describe_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_lifecycle_configuration)
+
+Arguments mapping described in
+[DescribeLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#describelifecycleconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+
+Returns
+[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
+
+<a id="describe\_mount\_target\_security\_groups"></a>
+
+### describe_mount_target_security_groups
+
+Returns the security groups currently in effect for a mount target.
+
+Type annotations for
+`boto3.client("efs").describe_mount_target_security_groups` method.
+
+Boto3 documentation:
+[EFS.Client.describe_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_target_security_groups)
+
+Arguments mapping described in
+[DescribeMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#describemounttargetsecuritygroupsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MountTargetId`: `str` *(required)*
+
+Returns
+[DescribeMountTargetSecurityGroupsResponseTypeDef](./type_defs.md#describemounttargetsecuritygroupsresponsetypedef).
+
+<a id="describe\_mount\_targets"></a>
+
+### describe_mount_targets
+
+Returns the descriptions of all the current mount targets, or a specific mount
+target, for a file system.
+
+Type annotations for `boto3.client("efs").describe_mount_targets` method.
+
+Boto3 documentation:
+[EFS.Client.describe_mount_targets](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_mount_targets)
+
+Arguments mapping described in
+[DescribeMountTargetsRequestRequestTypeDef](./type_defs.md#describemounttargetsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MaxItems`: `int`
+- `Marker`: `str`
+- `FileSystemId`: `str`
+- `MountTargetId`: `str`
+- `AccessPointId`: `str`
+
+Returns
+[DescribeMountTargetsResponseTypeDef](./type_defs.md#describemounttargetsresponsetypedef).
+
+<a id="describe\_replication\_configurations"></a>
+
+### describe_replication_configurations
+
+Retrieves the replication configurations for either a specific file system, or
+all configurations for the Amazon Web Services account in an Amazon Web
+Services Region if a file system is not specified.
+
+Type annotations for `boto3.client("efs").describe_replication_configurations`
+method.
+
+Boto3 documentation:
+[EFS.Client.describe_replication_configurations](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_replication_configurations)
+
+Arguments mapping described in
+[DescribeReplicationConfigurationsRequestRequestTypeDef](./type_defs.md#describereplicationconfigurationsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str`
+- `NextToken`: `str`
+- `MaxResults`: `int`
+
+Returns
+[DescribeReplicationConfigurationsResponseTypeDef](./type_defs.md#describereplicationconfigurationsresponsetypedef).
+
+<a id="describe\_tags"></a>
+
+### describe_tags
+
+.
+
+Type annotations for `boto3.client("efs").describe_tags` method.
+
+Boto3 documentation:
+[EFS.Client.describe_tags](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.describe_tags)
+
+Arguments mapping described in
+[DescribeTagsRequestRequestTypeDef](./type_defs.md#describetagsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `MaxItems`: `int`
+- `Marker`: `str`
+
+Returns
+[DescribeTagsResponseTypeDef](./type_defs.md#describetagsresponsetypedef).
+
+<a id="generate\_presigned\_url"></a>
+
+### generate_presigned_url
+
+Generate a presigned url given a client, its method, and arguments.
+
+Type annotations for `boto3.client("efs").generate_presigned_url` method.
+
+Boto3 documentation:
+[EFS.Client.generate_presigned_url](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.generate_presigned_url)
+
+Arguments:
+
+- `ClientMethod`: `str` *(required)*
+- `Params`: `Mapping`\[`str`, `Any`\]
+- `ExpiresIn`: `int`
+- `HttpMethod`: `str`
+
+Returns `str`.
+
+<a id="list\_tags\_for\_resource"></a>
+
+### list_tags_for_resource
+
+Lists all tags for a top-level EFS resource.
+
+Type annotations for `boto3.client("efs").list_tags_for_resource` method.
+
+Boto3 documentation:
+[EFS.Client.list_tags_for_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.list_tags_for_resource)
+
+Arguments mapping described in
+[ListTagsForResourceRequestRequestTypeDef](./type_defs.md#listtagsforresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceId`: `str` *(required)*
+- `MaxResults`: `int`
+- `NextToken`: `str`
+
+Returns
+[ListTagsForResourceResponseTypeDef](./type_defs.md#listtagsforresourceresponsetypedef).
+
+<a id="modify\_mount\_target\_security\_groups"></a>
+
+### modify_mount_target_security_groups
+
+Modifies the set of security groups in effect for a mount target.
+
+Type annotations for `boto3.client("efs").modify_mount_target_security_groups`
+method.
+
+Boto3 documentation:
+[EFS.Client.modify_mount_target_security_groups](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.modify_mount_target_security_groups)
+
+Arguments mapping described in
+[ModifyMountTargetSecurityGroupsRequestRequestTypeDef](./type_defs.md#modifymounttargetsecuritygroupsrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `MountTargetId`: `str` *(required)*
+- `SecurityGroups`: `Sequence`\[`str`\]
+
+<a id="put\_account\_preferences"></a>
+
+### put_account_preferences
+
+Use this operation to set the account preference in the current Amazon Web
+Services Region to use long 17 character (63 bit) or short 8 character (32 bit)
+resource IDs for new EFS file system and mount target resources.
+
+Type annotations for `boto3.client("efs").put_account_preferences` method.
+
+Boto3 documentation:
+[EFS.Client.put_account_preferences](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_account_preferences)
+
+Arguments mapping described in
+[PutAccountPreferencesRequestRequestTypeDef](./type_defs.md#putaccountpreferencesrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceIdType`: [ResourceIdTypeType](./literals.md#resourceidtypetype)
+  *(required)*
+
+Returns
+[PutAccountPreferencesResponseTypeDef](./type_defs.md#putaccountpreferencesresponsetypedef).
+
+<a id="put\_backup\_policy"></a>
+
+### put_backup_policy
+
+Updates the file system's backup policy.
+
+Type annotations for `boto3.client("efs").put_backup_policy` method.
+
+Boto3 documentation:
+[EFS.Client.put_backup_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_backup_policy)
+
+Arguments mapping described in
+[PutBackupPolicyRequestRequestTypeDef](./type_defs.md#putbackuppolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `BackupPolicy`: [BackupPolicyTypeDef](./type_defs.md#backuppolicytypedef)
+  *(required)*
+
+Returns
+[BackupPolicyDescriptionTypeDef](./type_defs.md#backuppolicydescriptiontypedef).
+
+<a id="put\_file\_system\_policy"></a>
+
+### put_file_system_policy
+
+Applies an Amazon EFS `FileSystemPolicy` to an Amazon EFS file system.
+
+Type annotations for `boto3.client("efs").put_file_system_policy` method.
+
+Boto3 documentation:
+[EFS.Client.put_file_system_policy](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_file_system_policy)
+
+Arguments mapping described in
+[PutFileSystemPolicyRequestRequestTypeDef](./type_defs.md#putfilesystempolicyrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `Policy`: `str` *(required)*
+- `BypassPolicyLockoutSafetyCheck`: `bool`
+
+Returns
+[FileSystemPolicyDescriptionTypeDef](./type_defs.md#filesystempolicydescriptiontypedef).
+
+<a id="put\_lifecycle\_configuration"></a>
+
+### put_lifecycle_configuration
+
+Enables lifecycle management by creating a new `LifecycleConfiguration` object.
+
+Type annotations for `boto3.client("efs").put_lifecycle_configuration` method.
+
+Boto3 documentation:
+[EFS.Client.put_lifecycle_configuration](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.put_lifecycle_configuration)
+
+Arguments mapping described in
+[PutLifecycleConfigurationRequestRequestTypeDef](./type_defs.md#putlifecycleconfigurationrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `LifecyclePolicies`:
+  `Sequence`\[[LifecyclePolicyTypeDef](./type_defs.md#lifecyclepolicytypedef)\]
+  *(required)*
+
+Returns
+[LifecycleConfigurationDescriptionTypeDef](./type_defs.md#lifecycleconfigurationdescriptiontypedef).
+
+<a id="tag\_resource"></a>
+
+### tag_resource
+
+Creates a tag for an EFS resource.
+
+Type annotations for `boto3.client("efs").tag_resource` method.
+
+Boto3 documentation:
+[EFS.Client.tag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.tag_resource)
+
+Arguments mapping described in
+[TagResourceRequestRequestTypeDef](./type_defs.md#tagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceId`: `str` *(required)*
+- `Tags`: `Sequence`\[[TagTypeDef](./type_defs.md#tagtypedef)\] *(required)*
+
+<a id="untag\_resource"></a>
+
+### untag_resource
+
+Removes tags from an EFS resource.
+
+Type annotations for `boto3.client("efs").untag_resource` method.
+
+Boto3 documentation:
+[EFS.Client.untag_resource](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.untag_resource)
+
+Arguments mapping described in
+[UntagResourceRequestRequestTypeDef](./type_defs.md#untagresourcerequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `ResourceId`: `str` *(required)*
+- `TagKeys`: `Sequence`\[`str`\] *(required)*
+
+<a id="update\_file\_system"></a>
+
+### update_file_system
+
+Updates the throughput mode or the amount of provisioned throughput of an
+existing file system.
+
+Type annotations for `boto3.client("efs").update_file_system` method.
+
+Boto3 documentation:
+[EFS.Client.update_file_system](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/efs.html#EFS.Client.update_file_system)
+
+Arguments mapping described in
+[UpdateFileSystemRequestRequestTypeDef](./type_defs.md#updatefilesystemrequestrequesttypedef).
+
+Keyword-only arguments:
+
+- `FileSystemId`: `str` *(required)*
+- `ThroughputMode`: [ThroughputModeType](./literals.md#throughputmodetype)
+- `ProvisionedThroughputInMibps`: `float`
+
+Returns
+[FileSystemDescriptionResponseMetadataTypeDef](./type_defs.md#filesystemdescriptionresponsemetadatatypedef).
+
+<a id="get_paginator"></a>
+
+### get_paginator
+
+Type annotations for `boto3.client("efs").get_paginator` method with overloads.
+
+- `client.get_paginator("describe_file_systems")` ->
+  [DescribeFileSystemsPaginator](./paginators.md#describefilesystemspaginator)
+- `client.get_paginator("describe_mount_targets")` ->
+  [DescribeMountTargetsPaginator](./paginators.md#describemounttargetspaginator)
+- `client.get_paginator("describe_tags")` ->
+  [DescribeTagsPaginator](./paginators.md#describetagspaginator)
