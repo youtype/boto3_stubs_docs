@@ -100,6 +100,7 @@ jobs:
           git config --global user.name "github-actions@github.com"
           git add -A .
           git commit -m "Update docs to ${BOTO3_VERSION}"
+          git tag -d ${BOTO3_VERSION} || true
           git tag ${BOTO3_VERSION}
           git push -f --tags
           git push
