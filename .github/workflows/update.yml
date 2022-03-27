@@ -100,8 +100,8 @@ jobs:
           git config --global user.name "github-actions@github.com"
           git add -A .
           git commit -m "Update docs to ${BOTO3_VERSION}"
-          # git tag ${BOTO3_VERSION}
-          git push --tags
+          git tag ${BOTO3_VERSION}
+          git push -f --tags
           git push
       - name: Update Read the docs
         if: steps.vars.outputs.version
