@@ -25,6 +25,10 @@ theme:
     - navigation.tracking
     - content.code.annotate
 markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.highlight:
       use_pygments: true
       anchor_linenums: true
